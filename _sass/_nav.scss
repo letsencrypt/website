@@ -1,0 +1,140 @@
+/**
+ * Site nav
+ */
+.site-nav {
+    float: right;
+    line-height: 56px;
+    margin-top: 6px;
+
+    #menuIcon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+    
+    .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:last-child > a.pure-menu-link {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .pure-menu-horizontal > .pure-menu-list > .pure-menu-item a.pure-menu-link {
+        padding-left: 0.5em;
+        padding-right: 0.5em
+    }
+}
+#menuIcon {
+    display: none;
+}
+
+/**
+ * Pure menu customizations
+ */
+.pure-menu-active > .pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+  background-color: transparent;
+}
+.pure-menu-children {
+    padding-bottom: 0.5em;
+    border-radius: 0 0 10px 10px;
+}
+.pure-menu-children .pure-menu-link {
+    line-height: 1.3;
+}
+a.pure-menu-link:hover {
+    text-decoration: none;
+}
+.pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children {
+    top: 56px;
+    left: auto;
+    right:0;
+    text-align: right;
+    min-width: 146px;
+    background-color: #FDFDFD;
+}
+.pure-menu-link {
+    color: darken($brand-color, 20%);
+    &:visited {
+        color: darken($brand-color, 20%);
+    }
+}
+.pure-menu-has-children {
+    top: 1px;
+}
+// Mobile nav styles
+@include media-query($on-palm) {
+    #menuIcon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+        cursor: pointer;
+        cursor: hand;
+        margin-top:30px;
+
+        > svg {
+            width: 18px;
+            height: 15px;
+
+            path {
+                fill: $grey-color-dark;
+            }
+        }
+    }
+    .site-nav {
+        text-align: left;
+        margin-top: 20px;
+        right: 18px;
+        position: relative;
+        margin-bottom: 10px;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        top: 0px;
+    }
+
+    .pure-menu {
+        clear: both;
+        display: none;
+        position:relative;
+        padding-bottom:20px;
+    }
+
+    .pure-menu-has-children.isOpen > .pure-menu-link:after {
+        content: "\25BE";
+    }
+
+    .pure-menu-children {
+        display: none;
+        left: 0;
+        position: relative;
+        margin-left:20px;
+    }
+    .pure-menu-children.show-children {
+        display: block;
+    }
+
+    .page-link {
+        display: block;
+        padding: 5px 10px;
+    }
+}
+
+#menu.open {
+    .pure-menu-item {
+        line-height: 1.5;
+    }
+    .pure-menu {
+        display: block;
+    }
+}

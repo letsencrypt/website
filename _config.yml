@@ -1,0 +1,15 @@
+# Site settings
+title: Let's Encrypt - Free SSL/TLS Certificates
+description: >
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+baseurl: ""
+url: "https://letsencrypt.org/"
+github_username: letsencrypt 
+twitter_username: letsencrypt
+
+# Build settings
+markdown: kramdown
+safe: true
+timezone: America/Los_Angeles
+encoding: utf-8
