@@ -7,8 +7,7 @@ top_graphic: 1
 
 # Let's Encrypt Subscriber Agreement
 
-*Note: Subscriber Agreement v1.1, orginally schedule to take effect on June 30, 2016, has been pulled prior to have taking effect. It will be replaced with a v1.1.1 scheduled to take effect at a later date.*
-
+* [v1.1.1, July 28, 2016](/documents/LE-SA-v1.1.1-July-28-2016.pdf) (not yet in effect)
 * [v1.0.1, July 27, 2015](/documents/LE-SA-v1.0.1-July-27-2015.pdf) (currently in effect)
 * [U.S. Government Amendment, September 22, 2015](/documents/LE-USG-SA-Amendment-Sept-22-2015.pdf)
 
