@@ -238,3 +238,17 @@ pre {
         }
     }
 }
+
+/**
+ * Selection
+ */
+
+::-moz-selection {
+    background-color: lighten(#de8216, 10%);
+    color: $text-color;
+}
+
+::selection {
+    background-color: lighten(#de8216, 10%);
+    color: $text-color;
+}
