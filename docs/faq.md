@@ -7,10 +7,6 @@ top_graphic: 1
 
 [<- Back to Documentation List](/docs/)
 
-## Are certificates from Let’s Encrypt trusted by my browser?
-
-For most browsers and operating systems, yes. See the [compatibility list](https://community.letsencrypt.org/t/trust-of-dst-root-ca-x3-and-isrg-root/) for more detail.
-
 ## When can I get a certificate from Let's Encrypt?
 
 Today! [Visit this page to get started](https://letsencrypt.org/getting-started/).

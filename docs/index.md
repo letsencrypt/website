@@ -11,6 +11,8 @@ top_graphic: 1
 * [Staging Environment](/docs/staging-environment/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
+* [Certificate Compatibility](/docs/certificate-compatibility/)
+* [ACME Protocol Updates](/docs/acme-protocol-updates/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 
 # Large Scale Providers and Integrators
