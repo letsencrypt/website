@@ -7,19 +7,19 @@ top_graphic: 1
 
 ## Full IPv6 Support
 
-* ETA: Before June 30, 2016
+* ETA: Before August 31, 2016
 
 Parts of the Let's Encrypt infrastructure can communicate via IPv6 but some parts, notably our validation infrastructure, cannot. We'll be enabling full IPv6 support for all of our infrastructure.
 
 ## IDN Support
 
-* ETA: Before August 30, 2016
+* ETA: Before November 30, 2016
 
 Let's Encrypt does not currently support IDN issuance. We will be adding support.
 
 ## ECDSA Intermediates
 
-* ETA: Before August 30, 2016
+* ETA: Before March 31, 2017
 
 Let's Encrypt only signs end-entity certificates with RSA intermediates. We will add the ability to have end-entity certs signed by an ECDSA intermediate.
 
