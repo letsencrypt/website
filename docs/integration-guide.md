@@ -29,9 +29,9 @@ The upshot of this is that, if you are a hosting provider, you do not need to se
 
 # One Account or Many?
 
-In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer, or one per cert issued. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all their customers.
+In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all of their customers.
 
-However, for most hosting providers we expect it will be more straightforward to use a single account for all certificates, and guard the corresponding account key well. This will allow, for instance, updating the email address on the account.
+However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, easier to keep contact information up-to-date, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
 # Storing and Reusing Certificates and Keys
 
