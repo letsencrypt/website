@@ -24,4 +24,4 @@ This is limited to 20 certificates per domain per week. Exception: When you requ
 
 * **Registrations/IP address** limits the number of registrations you can make in a given time period; currently 500 per 3 hours. This limit should only affect the largest users of Let's Encrypt. Please utilize our [staging environment](/docs/staging-environment/) if you’re developing an ACME client.
 
-* **Pending Authorizations/Account** limits how many times an ACME client can request a domain name be authorized without actually fulfilling on the request itself. This is most commonly encountered when developing ACME clients, and this limit is set to 300 per account per week. Please utilize our [staging environment](docs/staging-environment/) if you’re developing an ACME client.
+* **Pending Authorizations/Account** limits how many times an ACME client can request a domain name be authorized without actually fulfilling on the request itself. This is most commonly encountered when developing ACME clients, and this limit is set to 300 per account per week. Please utilize our [staging environment](/docs/staging-environment/) if you’re developing an ACME client.
