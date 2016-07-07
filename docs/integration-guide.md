@@ -29,9 +29,9 @@ The upshot of this is that, if you are a hosting provider, you do not need to se
 
 # One Account or Many?
 
-In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all their customers.
+In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all of their customers.
 
-However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This is because it's easier to administer, both from the client side and the Let's Encrypt side. It's rare for Let's Encrypt to need to do anything on our side, even for large deploys, but if something does need to be done it can be very difficult or effectively impossible if there are many accounts in question.
+However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, easier to keep contact information up-to-date, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
 # Storing and Reusing Certificates and Keys
 

@@ -7,13 +7,17 @@ top_graphic: 1
 
 [<- Back to Documentation List](/docs/)
 
-This page contains lists of software which are known to be able or unable to validate Let's Encrpyt certificates.
+Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes IdenTrust's DST Root X3 certificate in its trust store. A secondary factor is whether the platform supports modern SHA-2 certificates, since all Let's Encrypt certificates use SHA-2.
+
+If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration, most likely failure to provide the correct certificate chain. Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
+
+You may want to visit [this particular community forum discussion](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) for more information about compatibility.
 
 # Known Compatible
 
 * Mozilla Firefox >= v2.0
 * Google Chrome
-* Internet Explorer on Windows XP SP3 and Higher
+* Internet Explorer on Windows XP SP3 and higher
 * Microsoft Edge
 * Android OS >= v2.3.6
 * Safari >= v4.0 on macOS

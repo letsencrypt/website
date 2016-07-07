@@ -11,6 +11,10 @@ top_graphic: 1
 
 Today! [Visit this page to get started](https://letsencrypt.org/getting-started/).
 
+## Are certificates from Let’s Encrypt trusted by my browser?
+
+For most browsers and operating systems, yes. See the [compatibility list](/docs/certificate-compatibility/) for more detail.
+
 ## Will Let’s Encrypt issue certificates for anything other than SSL/TLS for websites?
 
 Let’s Encrypt certificates will be standard Domain Validation certificates, so you can use them for any server that uses a domain name, like web servers.
