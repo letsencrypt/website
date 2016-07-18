@@ -58,8 +58,11 @@ visually:
 
 We are dedicated to transparency in our operations and in the certificates we
 issue. We submit all certificates to [Certificate Transparency
-logs](https://www.certificate-transparency.org/) as we issue them. You can view [all
-issued Let's Encrypt certificates at crt.sh](https://crt.sh/?Identity=%25&iCAID=7395).
+logs](https://www.certificate-transparency.org/) as we issue them. You can view all
+issued Let's Encrypt certificates via these links:
+
+* [Issued by Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
+* [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
 
 # More Info
 
