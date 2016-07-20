@@ -29,6 +29,7 @@ You may want to visit [this particular community forum discussion](https://commu
 * Cyanogen > v10
 * Jolla Sailfish OS > v1.1.2.16
 * Kindle > v3.4.1
+* Java >= JDK 8u101
 
 # Possibly Incompatible
 
@@ -41,5 +42,4 @@ You may want to visit [this particular community forum discussion](https://commu
 * Nintendo 3DS
 * Windows XP prior to SP3
   * cannot handle SHA256 signed certificates
-* Java
-  * Should work in upcoming versions 7u111 and 8u101
+* Java < JDK 8u101
