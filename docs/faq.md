@@ -52,7 +52,3 @@ Yes, but not all clients support this feature. [CertBot](https://certbot.eff.org
 ## What IP addresses will Let's Encrypt use to validate my web server?
 
 We don't publish a list of IP addresses we use to validate, because they may change at any time. In the future we may validate from multiple IP addresses at once.
-
-## What signing algorithms does Let's Encrypt support in a Certificate Signing Request (CSR)?
-
-We currently support RSA signatures and ECDSA signatures using the NIST curves P-256 and P-384. We do not support P-521.
