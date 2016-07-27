@@ -68,3 +68,9 @@ Additionally, OCSP Stapling forms the basis for two other technologies you may w
 Let's Encrypt will validate from a number of different IP addresses in the future, and will not announce which ones in advance. You should make sure your validation server is available to all IPs.
 
 Some people who are issuing for non-HTTP services want to avoid exposing port 80 to anyone except Let's Encrypt's validation server. If you're in that category you may want to use the DNS challenge instead.
+
+# Supported Key Algorithms
+
+Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P-384 ECDSA keys. That's true for both account keys and certificate keys. You can't reuse an account key as a certificate key.
+
+Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
