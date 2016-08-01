@@ -15,6 +15,8 @@ Both Let's Encrypt and the Web PKI will continue to evolve over time.  You shoul
 
 In the future, we're likely to change: the root and intermediate certificates from which we issue; the hash algorithms we use when signing certificates; the types of keys and key strength checks for which we are willing to sign end-entity certificates; and the ACME protocol. We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#certificate-issuance) header from the ACME protocol, since intermediates are likely to change.
 
+Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration) header to determine which ToS URL to submit with new registrations.
+
 You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
 
 We will be providing a low-volume developers' mailing list to receive news of important changes like the above (watch this space).
