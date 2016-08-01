@@ -7,10 +7,12 @@ top_graphic: 1
 
 # Let's Encrypt Subscriber Agreement
 
-* [v1.1.1, August 1, 2016](/documents/LE-SA-v1.1.1-August-1-2016.pdf) (not yet in effect)
-* [Differences from v1.0.1 to v1.1.1](/documents/LE-SA-v1.0.1-v1.1.1-diff.docx)
-* [v1.0.1, July 27, 2015](/documents/LE-SA-v1.0.1-July-27-2015.pdf) (currently in effect)
-* [U.S. Government Amendment, September 22, 2015](/documents/LE-USG-SA-Amendment-Sept-22-2015.pdf)
+* Currently in Effect
+  * [v1.1.1, August 1, 2016](/documents/LE-SA-v1.1.1-August-1-2016.pdf)
+  * [U.S. Government Amendment, September 22, 2015](/documents/LE-USG-SA-Amendment-Sept-22-2015.pdf)
+* Historical / Informational
+  * [Differences from v1.0.1 to v1.1.1](/documents/LE-SA-v1.0.1-v1.1.1-diff.docx)
+  * [v1.0.1, July 27, 2015](/documents/LE-SA-v1.0.1-July-27-2015.pdf)
 
 # ISRG Certificate Policy
 
