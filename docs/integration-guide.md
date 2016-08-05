@@ -13,7 +13,9 @@ This document contains helpful advice if you are a hosting provider or large web
 
 Both Let's Encrypt and the Web PKI will continue to evolve over time.  You should make sure you have the ability to easily update all services that use Let's Encrypt. If you're also deploying clients that rely on Let's Encrypt certificates, make especially sure that those clients receive regular updates.
 
-In the future, we're likely to change: the root and intermediate certificates from which we issue; the hash algorithms we use when signing certificates; the types of keys and key strength checks for which we are willing to sign end-entity certificates; and the ACME protocol. We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#certificate-issuance) header from the ACME protocol, since intermediates are likely to change.
+In the future, we're likely to change: the root and intermediate certificates from which we issue; the hash algorithms we use when signing certificates; the types of keys and key strength checks for which we are willing to sign end-entity certificates; and the ACME protocol. We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) header from the ACME protocol, since intermediates are likely to change.
+
+Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) header to determine which ToS URL to submit with new registrations.
 
 You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
 
@@ -74,3 +76,21 @@ Some people who are issuing for non-HTTP services want to avoid exposing port 80
 Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P-384 ECDSA keys. That's true for both account keys and certificate keys. You can't reuse an account key as a certificate key.
 
 Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
+
+# Spacing Out Renewals Over Time
+
+If you are issuing for more than 10,000 hostnames, we recommend spacing
+issuances over time rather than batch-issuing all of your certs at the same
+time. This reduces risk: If Let's Encrypt has an outage at the time you need to
+renew, or there is a temporary failure in your renewal systems, it will only
+affect a few of your certificates, rather than all of them. It also makes our
+capacity planning easier.
+
+You may want to bulk-issue certificates for all of your domains to get started
+quickly, which is fine. You can then spread out renewal times for your
+certificates by renewing some of them 1 day ahead of when you would normally
+renew, some of them 2 days ahead, and so on.
+
+Renewal failure should not be treated as a fatal error. You should implement
+graceful retry logic in your issuing services using an exponential backoff
+pattern.
