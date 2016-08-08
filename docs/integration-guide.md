@@ -77,7 +77,7 @@ Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P
 
 Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
 
-# When to renew
+# When to Renew
 
 We recommend renewing certificates automatically when they have a third of their
 total lifetime left. For Let's Encrypt's current 90-day certificates, that means
