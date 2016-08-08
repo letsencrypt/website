@@ -85,7 +85,7 @@ renewing 30 days before expiration.
 
 If you are issuing for more than 10,000 hostnames, we also recommend automated
 renewal in small runs, rather than batching up renewals into large chunks.
-his reduces risk: If Let's Encrypt has an outage at the time you need to
+This reduces risk: If Let's Encrypt has an outage at the time you need to
 renew, or there is a temporary failure in your renewal systems, it will only
 affect a few of your certificates, rather than all of them. It also makes our
 capacity planning easier.
