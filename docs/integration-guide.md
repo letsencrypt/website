@@ -77,20 +77,25 @@ Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P
 
 Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
 
-# Spacing Out Renewals Over Time
+# When to renew
 
-If you are issuing for more than 10,000 hostnames, we recommend spacing
-issuances over time rather than batch-issuing all of your certs at the same
-time. This reduces risk: If Let's Encrypt has an outage at the time you need to
+We recommend renewing certificates automatically when they have a third of their
+total lifetime left. For Let's Encrypt's current 90-day certificates, that means
+renewing 30 days before expiration.
+
+If you are issuing for more than 10,000 hostnames, we also recommend automated
+renewal in small runs, rather than batching up renewals into large chunks.
+his reduces risk: If Let's Encrypt has an outage at the time you need to
 renew, or there is a temporary failure in your renewal systems, it will only
 affect a few of your certificates, rather than all of them. It also makes our
 capacity planning easier.
 
 You may want to bulk-issue certificates for all of your domains to get started
-quickly, which is fine. You can then spread out renewal times for your
-certificates by renewing some of them 1 day ahead of when you would normally
-renew, some of them 2 days ahead, and so on.
+quickly, which is fine. You can then spread out renewal times by doing a
+one-time process of renewing some certificates 1 day ahead of when you would
+normally renew, some of them 2 days ahead, and so on.
 
 Renewal failure should not be treated as a fatal error. You should implement
 graceful retry logic in your issuing services using an exponential backoff
-pattern.
+pattern. However, errors should be sent to the administrator in charge, in order
+to see if problems need fixing.
