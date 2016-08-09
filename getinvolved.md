@@ -23,8 +23,6 @@ Certbot software development can be discussed via IRC chat on [OFTC](https://web
 
 [Boulder](https://github.com/letsencrypt/boulder) is the primary Let's Encrypt CA implementation. It's based on the [ACME](https://github.com/letsencrypt/acme-spec) protocol, and written primarily in Go.
 
-CA software development can be discussed on [this mailing list](https://groups.google.com/a/letsencrypt.org/forum/#!forum/ca-dev). To subscribe without a Google account, send mail to [ca-dev+subscribe@letsencrypt.org](mailto:ca-dev+subscribe@letsencrypt.org).
-
 ## Protocol
 
 The Let's Encrypt CA talks to certificate management software running on web servers.  The protocol for this is called ACME, for "Automated Certificate Management Environment." You can [view the draft ACME spec](https://github.com/letsencrypt/acme-spec) now.  We plan to propose work on this protocol in the IETF soon, to make it a truly open standard.
