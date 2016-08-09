@@ -6,7 +6,7 @@ top_graphic: 1
 date: 2016-07-27T00:00
 ---
 
-Last updated: {{ page.date | date: '%B %d, %Y' }}
+Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
 The ACME protocol is the cornerstone of how Let's Encrypt works. As the protocol specification evolves over time Let's Encrypt will implement updated versions of ACME. When doing so, security will be our primary concern, followed closely by backwards compatibility.
 

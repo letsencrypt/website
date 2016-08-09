@@ -6,7 +6,7 @@ top_graphic: 1
 date: 2016-07-07T00:00
 ---
 
-Last updated: {{ page.date | date: '%B %d, %Y' }}
+Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
 ## When can I get a certificate from Let's Encrypt?
 

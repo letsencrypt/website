@@ -6,7 +6,7 @@ top_graphic: 1
 date: 2016-08-08T00:00
 ---
 
-Last updated: {{ page.date | date: '%B %d, %Y' }}
+Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
 This document contains helpful advice if you are a hosting provider or large website integrating Let's Encrypt, or you are writing client software for Let's Encrypt.
 
