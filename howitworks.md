@@ -20,7 +20,7 @@ Once you've chosen Let's Encrypt client software, see the documentation for that
 
 # Limits on usage
 
-Let's Encrypt limits the number of certificates that can be issued to any particular domain each week. This is done in order to prevent abuse. [See this thread](/docs/rate-limits/) for more information about rate limits.
+Let's Encrypt limits the number of certificates that can be issued to any particular domain each week. This is done in order to prevent abuse. [See this page](/docs/rate-limits/) for more information about rate limits.
 
 We highly recommend testing against our [staging environment](/docs/staging-environment/) before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
 
