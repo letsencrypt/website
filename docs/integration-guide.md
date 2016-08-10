@@ -3,9 +3,10 @@ layout: page
 title: Integration Guide
 permalink: /docs/integration-guide/
 top_graphic: 1
+date: 2016-08-08T00:00
 ---
 
-[<- Back to Documentation List](/docs/)
+Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
 This document contains helpful advice if you are a hosting provider or large website integrating Let's Encrypt, or you are writing client software for Let's Encrypt.
 

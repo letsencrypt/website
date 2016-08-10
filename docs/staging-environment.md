@@ -3,9 +3,10 @@ layout: page
 title: Staging Environment
 permalink: /docs/staging-environment/
 top_graphic: 1
+date: 2016-07-02T00:00
 ---
 
-[<- Back to Documentation List](/docs/)
+Last updated: {{ page.date | date: "%B %d, %Y" }} | [See all Documentation](/docs/)
 
 We highly recommend testing against our staging environment before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
 

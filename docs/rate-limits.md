@@ -3,9 +3,10 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
+date: 2016-07-07T00:00
 ---
 
-[<- Back to Documentation List](/docs/)
+Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
 Let’s Encrypt has rate limits for certificate issuance. These limits are in place primarily to protect our services from both accidental and intentional abuse. We realize that rate limits can be frustrating, but they are an important part of how we make sure our services remain reliable and available for everyone.
 
