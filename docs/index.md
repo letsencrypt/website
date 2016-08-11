@@ -13,7 +13,7 @@ top_graphic: 1
 * [Expiration Emails](/docs/expiration-emails/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
-* [Finding Your Accout ID](/docs/account-id/)
+* [Finding Your Account ID](/docs/account-id/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 
 # Large Scale Providers and Integrators
