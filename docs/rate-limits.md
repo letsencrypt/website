@@ -86,9 +86,11 @@ Revoking certificates does not reset rate limits, because the resources involved
 in issuing the certificates have already been used.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
-integration, we have a [rate limiting form] that can be used to request
-a higher rate limit. It takes a few weeks to process requests, so this form is
-not suitable if you just need to reset a rate limit faster than it resets on its own.
+integration, we have a [rate limiting
+form](https://docs.google.com/forms/d/e/1FAIpQLSfg56b_wLmUN7n-WWhbwReE11YoHXs_fpJyZcEjDaR69Q-kJQ/viewform?c=0&w=1)
+that can be used to request a higher rate limit. It takes a few weeks to process
+requests, so this form is not suitable if you just need to reset a rate limit
+faster than it resets on its own.
 
 Note that most hosting providers don't need rate limit increases, because
 there's no limit on the number of distinct registered domains for which you can issue.
