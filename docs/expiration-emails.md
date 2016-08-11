@@ -10,16 +10,25 @@ Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/do
 
 # Subscribing
 
-If you provide an email address to Let's Encrypt when you create your account, we'll send you expiry notices when your certificate is coming up for renewal.
+If you provide an email address to Let's Encrypt when you create your
+account, we'll automatically send you expiry notices when your certificate
+is coming up for renewal. We send the first notice at 20 days before
+your certificate expires, and more notices at 10 days and 1 day before
+it expires.
 
-Our intention is to get this into a system whereby you won't receive a notice in most cases - it would be timed to be conditionally sent after your automated system should have renewed, so that it's an exceptional case to receive one of these notices.
+If your certificate is already renewed, we won't send an expiry notice. We
+consider a certificate to be renewed if there is a newer certificate
+with the exact same set of names, regardless of which account created it.
 
-Let's Encrypt's "[Expiration Mailer](https://github.com/letsencrypt/boulder/tree/master/cmd/expiration-mailer)" is still a work in progress. Right now it sends you emails even if you already renewed. We decided it was better to be a bit too verbose than it was to risk people missing renewals.
-
-Thanks for understanding as we keep making things smoother!
 
 # Unsubscribing
 
-The email body has a link to unsubscribe from future notices. If you hit that link, you won't get any future expiration notices. The list of "who's unsubscribed" is independent for Staging notices and Production notices, so you can feel free to unsubscribe from Staging.
+The email body has a link to unsubscribe from future notices. If you
+hit that link, you won't get any future expiration notices. The list of
+"who's unsubscribed" is independent for Staging notices and Production
+notices, so you can feel free to unsubscribe from Staging.
 
-There's not yet a way for us to efficiently re-subscribe you if you unsubscribe. Our email provider, Mandrill, [has a manual mechanism that we still need to automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+There's not yet a way for us to efficiently re-subscribe
+you if you unsubscribe. Our email provider, Mandrill,
+[has a manual mechanism that we still need to
+automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
