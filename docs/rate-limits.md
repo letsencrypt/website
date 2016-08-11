@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2016-07-07T00:00
+date: 2016-08-10T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
