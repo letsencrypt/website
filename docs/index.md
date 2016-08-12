@@ -7,7 +7,7 @@ top_graphic: 1
 
 # General
 
-* [Client Options](/docs/client-options/)
+* [ACME Client Software](/docs/client-options/)
 * [Staging Environment](/docs/staging-environment/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Client Options
+title: ACME Client Software
 permalink: /docs/client-options/
 top_graphic: 1
 date: 2016-07-02T00:00
@@ -8,13 +8,15 @@ date: 2016-07-02T00:00
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
-# Recommended Client
+Let's Encrypt uses the ACME protocol to verify that you control a given domain
+name and to issue you a certificate. To get a Let's Encrypt certificate, you'll
+need to choose a piece of ACME client software to use.
 
-We recommend that most people start with the [certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
+# Recommended: Certbot
 
-If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below.
+We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
 
-# Alternative Clients
+If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
 ## Bash
 
