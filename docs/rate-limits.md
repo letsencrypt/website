@@ -97,3 +97,22 @@ there's no limit on the number of distinct registered domains for which you can 
 So long as most of your customers don't have more than 2,000 subdomains on a
 registered domain, you most likely do not need an increase. See our [Integration
 Guide](/docs/integration-guide/) for more advice.
+
+# Clearing Pending Authorizations
+
+If you have a large number of pending authorization objects and are getting a
+rate limiting error, you can trigger a validation attempt for those
+authorization objects by submitting a JWS-signed POST to one of its challenges, as
+described in the
+[ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
+The pending authorization objects are represented by URLs of the form
+https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, and should show up in your
+client logs. Note that it doesn't matter whether validation succeeds or fails.
+Either will take the authorization out of 'pending' state. If you do not
+have logs containing the relevant authorization URLs, you need to wait for the
+rate limit to expire. As described above, there is a sliding window, so this may
+take less than a week depending on your pattern of issuance.
+
+Note that having a large number of pending authorizations is generally the
+result of a buggy client. If you're hitting this rate limit frequently you
+should double-check your client code.

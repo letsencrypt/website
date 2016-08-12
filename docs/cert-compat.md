@@ -8,7 +8,7 @@ date: 2016-07-19T00:00
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
-Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes IdenTrust's DST Root X3 certificate in its trust store. A secondary factor is whether the platform supports modern SHA-2 certificates, since all Let's Encrypt certificates use SHA-2.
+Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes IdenTrust's DST Root X3 certificate in its trust store. A secondary factor is whether the platform supports modern [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) certificates, since all Let's Encrypt certificates use SHA-2.
 
 If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration, most likely failure to provide the correct certificate chain. Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
 
@@ -42,5 +42,5 @@ You may want to visit [this particular community forum discussion](https://commu
 * Android < v2.3.6
 * Nintendo 3DS
 * Windows XP prior to SP3
-  * cannot handle SHA256 signed certificates
+  * cannot handle SHA-2 signed certificates
 * Java < JDK 8u101

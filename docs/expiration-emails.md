@@ -32,3 +32,11 @@ There's not yet a way for us to efficiently re-subscribe
 you if you unsubscribe. Our email provider, Mandrill,
 [has a manual mechanism that we still need to
 automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+
+However, you can change the email address on your account, which effectively
+re-subscribes you. Many common email services treat `yourname+1@example.com` the
+same as `yourname@example.com`. So if you update your email address to
+`yourname+1@example.com`, you can start getting expiry mail again. With Certbot,
+use:
+
+` ~/certbot/venv/bin/certbot  register --update-registration --email yourname+1@example.com`
