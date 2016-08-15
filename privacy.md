@@ -13,7 +13,7 @@ The Let's Encrypt Privacy Policy describes how we collect, use, and and disclose
 
 * When, as a Public User, you visit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
 * When you are a Subscriber, i.e., when you request and use certificates from Let's Encrypt,
-* When you are a Visitor to the Let's Encrypt web site, community discussion forum, other web pages under letsencrypt.org, or third-party social media sites on which Let's Encrypt operates an account.
+* When you are a Visitor to the Let's Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let's Encrypt operates an account.
 
 ## Public User
 
