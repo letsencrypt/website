@@ -7,7 +7,7 @@ top_graphic: 4
 
 # Let's Encrypt Privacy Policy
 
-<em>Updated September 9, 2015<em>
+<em>Updated August 15, 2016<em>
 
 The Let's Encrypt Privacy Policy describes how we collect, use, and and disclose your information in three different contexts:
 
