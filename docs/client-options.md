@@ -62,7 +62,7 @@ If certbot does not meet your needs, or you’d simply like to try something els
 
 - [kelunik/acme-client](https://github.com/kelunik/acme-client)
 - [CertLE](https://github.com/skoerfgen/CertLE)
-- [AcmePHP](https://github.com/acmephp/cli)
+- [AcmePHP](https://github.com/acmephp/acmephp)
 - [LE Manager](https://github.com/analogic/lemanager)
 - [WordPress Plugin](https://github.com/tollmanz/lets-encrypt-wp)
 - [Let's Encrypt for Hiawatha](https://github.com/hsleisink/hiawatha/tree/master/extra/letsencrypt)
