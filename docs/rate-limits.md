@@ -20,9 +20,9 @@ our [staging environment](/docs/staging-environment/) instead of the production 
 
 The main limit is **Certificates per Registered Domain** (20 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
-from your domain name registrar. For instance, in the name "www.example.com",
-the example.com part is the registered domain. In "new.blog.example.co.uk",
-example.co.uk is the registered domain. We use the
+from your domain name registrar. For instance, in the name `www.example.com`,
+the registered domain is `example.com`. In `new.blog.example.co.uk`,
+the registered domain is `example.co.uk`. We use the
 [Public Suffix List](https://publicsuffix.org) to calculate the registered
 domain.
 
