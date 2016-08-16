@@ -192,12 +192,26 @@
 }
 
 /**
+ * Donate footer
+ */
+.donate-footer {
+    border-top: 1px solid $grey-color-light;
+    background-color: #f8f8f8;
+    padding: ($spacing-unit - 4px) 0;
+    margin-top: 30px;
+
+    h2 {
+        margin-bottom: 10px;
+        line-height: 1;
+    }
+}
+
+/**
  * Site footer
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding-top: $spacing-unit;
-    margin-top:40px;
 }
 
 .footer-heading {
