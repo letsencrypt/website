@@ -94,6 +94,25 @@
         span {
             color: #de8216;
         }
+        a {
+            display: inline-block;
+            padding: 6px 18px;
+            margin-top: 20px;
+            border: 2px solid #2a7ae2;
+            border-radius: 8px;
+
+            @include media-query($on-palm) {
+                margin-top: 10px;
+                border-radius: 6px;
+            }
+        }
+        a:visited {
+            border-color: #1756a9;
+        }
+        a:hover {
+            text-decoration: none;
+            border-color: #000;
+        }
     }
     h2 {
         font-weight: normal;
