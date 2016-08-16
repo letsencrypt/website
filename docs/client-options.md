@@ -85,6 +85,10 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [Ruby on Rails Plugin](https://github.com/lgromanowski/letsencrypt-plugin)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 
+## Rust
+
+- [letsencrypt-rs](https://github.com/onur/letsencrypt-rs)
+
 ## Windows
 
 - [ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
@@ -132,6 +136,10 @@ If certbot does not meet your needs, or you’d simply like to try something els
 ## Ruby
 
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
+
+## Rust
+
+- [acme-client](https://crates.io/crates/acme-client)
 
 ## Windows
 
