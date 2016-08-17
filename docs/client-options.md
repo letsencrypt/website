@@ -157,4 +157,4 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [Froxlor Server Management Panel](https://www.froxlor.org/)
 - [Mesosphere DCOS](https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/)
 - [Virtualmin Web Hosting Control Panel](https://www.virtualmin.com/)
-- [Plesk Web Hosting Control Panel](https://www.virtualmin.com/)
+- [Plesk Web Hosting Control Panel](https://www.plesk.com/)
