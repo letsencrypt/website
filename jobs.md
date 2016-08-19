@@ -29,7 +29,7 @@ Key Qualifications:
 * Ability to effectively communicate and collaborate with development team
 * Hardware SAN experience
 * Scripting and coding experience
-* Networking management experience firewalls and switches)
+* Networking management experience (firewalls and switches)
 * Experience implementing monitoring, security, and logging systems
 * Database troubleshooting and HA maintenance experience
 * Ability to use and manage security tools such as FIM, IDM, SIEM, vulnerability scanner
