@@ -7,7 +7,7 @@ top_graphic: 4
 
 We're currently hiring for the following position:
 
-* [Systems Administrator]()
+* [Systems Administrator](#systems-administrator)
 
 All of our positions are remote, and we can only hire in the United States and Canada.
 
