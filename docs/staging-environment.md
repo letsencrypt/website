@@ -15,3 +15,11 @@ The ACME URL for our staging environment is:
 `https://acme-staging.api.letsencrypt.org/directory`
 
 Please see your client's instructions for information on testing with our staging environment.
+
+# Rate Limits
+
+The staging environment uses the same rate limits as [described for the production environment](/docs/rate-limits/) with the following exceptions:
+
+* The **Certificates per Registered Domain** limit is 30,000 per week.
+* The **Duplicate Certificate** limit is 30,000 per week.
+* The **Registrations Per IP Address** limit is 100 per week.
