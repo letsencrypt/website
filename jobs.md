@@ -17,7 +17,7 @@ Please submit resumes to: <it-jobs@linuxfoundation.org>
 
 In the past year our operations team has built the infrastructure needed to operate a secure, high availability, high volume certificate authority. There are high standards for the work that we do and the world is watching.
 
-A candidate for sysadmin at Let's Encrypt should have a solid background in 24/7 production operations and have experience with all the componenets of a modern datacenter environment. You should have experience with security and stability monitoring, virtualization, firewalls, configuration management, database management, rapid provisioning and systemd.
+A candidate for sysadmin at Let's Encrypt should have a solid background in 24/7 production operations and have experience with all the components of a modern datacenter environment. You should have experience with security and stability monitoring, virtualization, firewalls, configuration management, database management, rapid provisioning and systemd.
 
 Collaborating effectively with ISRG developers and the community is critical. You’ll be working with both fellow employees and our open-source community. ISRG staff live in various places in the U.S. and Canada, and we do the vast majority of our collaboration online.
 
