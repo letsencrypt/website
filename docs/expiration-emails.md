@@ -22,9 +22,9 @@ If your certificate is already renewed, we won't send an expiry notice. We
 consider a certificate to be renewed if there is a newer certificate
 with the exact same set of names, regardless of which account created it.
 If you've issued a new certificate that adds or removes a name relative to your
-old certificate, you will get expiration email about your old certificate. This
-is fine. If you check the certificate currently running on your website, and it
-shows the correct date, you are fine.
+old certificate, you will get expiration email about your old certificate.
+If you check the certificate currently running on your website, and it
+shows the correct date, no further action is needed.
 
 # Unsubscribing
 
