@@ -62,7 +62,7 @@ If certbot does not meet your needs, or you’d simply like to try something els
 
 - [kelunik/acme-client](https://github.com/kelunik/acme-client)
 - [CertLE](https://github.com/skoerfgen/CertLE)
-- [AcmePHP](https://github.com/acmephp/cli)
+- [AcmePHP](https://github.com/acmephp/acmephp)
 - [LE Manager](https://github.com/analogic/lemanager)
 - [WordPress Plugin](https://github.com/tollmanz/lets-encrypt-wp)
 - [Let's Encrypt for Hiawatha](https://github.com/hsleisink/hiawatha/tree/master/extra/letsencrypt)
@@ -84,6 +84,10 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [Let's Encrypt CLI](https://github.com/zealot128/ruby-letsencrypt-cli)
 - [Ruby on Rails Plugin](https://github.com/lgromanowski/letsencrypt-plugin)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
+
+## Rust
+
+- [letsencrypt-rs](https://github.com/onur/letsencrypt-rs)
 
 ## Windows
 
@@ -133,6 +137,10 @@ If certbot does not meet your needs, or you’d simply like to try something els
 
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 
+## Rust
+
+- [acme-client](https://crates.io/crates/acme-client)
+
 ## Windows
 
 - [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
@@ -149,4 +157,4 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [Froxlor Server Management Panel](https://www.froxlor.org/)
 - [Mesosphere DCOS](https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/)
 - [Virtualmin Web Hosting Control Panel](https://www.virtualmin.com/)
-- [Plesk Web Hosting Control Panel](https://www.virtualmin.com/)
+- [Plesk Web Hosting Control Panel](https://www.plesk.com/)

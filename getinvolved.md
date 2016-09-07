@@ -17,8 +17,6 @@ We can also use help with software development. All of our code and protocol spe
 
 [Certbot](https://github.com/certbot/certbot) is a Python-based utility that works alongside Apache to automatically obtain a certificate and convert a website to HTTPS.
 
-Certbot software development can be discussed via IRC chat on [OFTC](https://webchat.oftc.net/?channels=%23certbot).
-
 ### Server-side CA Software
 
 [Boulder](https://github.com/letsencrypt/boulder) is the primary Let's Encrypt CA implementation. It's based on the [ACME](https://github.com/letsencrypt/acme-spec) protocol, and written primarily in Go.

@@ -7,13 +7,13 @@ top_graphic: 4
 
 # Let's Encrypt Privacy Policy
 
-<em>Updated September 9, 2015<em>
+<em>Updated August 15, 2016<em>
 
 The Let's Encrypt Privacy Policy describes how we collect, use, and and disclose your information in three different contexts:
 
 * When, as a Public User, you visit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
 * When you are a Subscriber, i.e., when you request and use certificates from Let's Encrypt,
-* When you are a Visitor to the Let's Encrypt web site, community discussion forum and other web pages under letsencrypt.org.
+* When you are a Visitor to the Let's Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let's Encrypt operates an account.
 
 ## Public User
 
@@ -28,6 +28,8 @@ If you are a Subscriber, your rights and obligations are governed by the [applic
 When you are a Visitor browsing the Let's Encrypt web site, we collect personally identifying information only if you use the donate button or sign up to use the Let's Encrypt community support forum. If you use the Donate button, your interactions with PayPal are governed by the [PayPal privacy policy](https://www.paypal.com/us/webapps/mpp/ua/privacy-full). We will receive personally identifiable information from PayPal regarding your donation and retain it indefinitely as part of our record keeping. If you use the Let's Encrypt community support forum, your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](http://www.discourse.org/privacy-policy/). Data you provide when signing up for the forum, including email address and IP address, is retained indefinitely and we may share it as described below in "What We Share."
 
 Additionally, we may use third-party analytics services like Google Analytics to gauge traffic and popular pages on our web site. Third party analytics services will set and receive first-party cookies. These cookies do not contain personal information, but uniquely identify your browser software over time on our site. We respect the [Do Not Track header](http://donottrack.us/) by strictly limiting the information our analytics services can collect and share for all Visitors.
+
+We may use analytics services provided by third party social media vendors including, but not limited to, Twitter. Your participation and interaction with Let's Encrypt on third party social media sites will be governed by the relevant vendor's privacy policies.
 
 ## What We Share
 
