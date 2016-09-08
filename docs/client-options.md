@@ -31,7 +31,7 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
 
 ## C
-- [Letskencrypt](https://kristaps.bsd.lv/letskencrypt/)
+- [acme-client](https://kristaps.bsd.lv/acme-client/)
 
 ## Go
 
