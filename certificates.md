@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Certificates
+title: Chain of Trust
 permalink: /certificates/
 top_graphic: 5
 ---
