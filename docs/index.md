@@ -15,6 +15,9 @@ top_graphic: 1
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
 * [Finding Your Account ID](/docs/account-id/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [How Let's Encrypt Works](/how-it-works/)
+* [Root and Intermediate Certificates](/certificates/)
+* [Upcoming Features](/upcoming-features/)
 
 # Large Scale Providers and Integrators
 
