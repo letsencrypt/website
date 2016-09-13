@@ -22,7 +22,7 @@ If certbot does not meet your needs, or you’d simply like to try something els
 
 - [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh) 
 - [acme.sh](https://github.com/Neilpang/acme.sh) (Compatible to bash, dash and sh)
-- [letsencrypt.sh](https://github.com/lukas2511/letsencrypt.sh) (Compatible to bash and zsh)
+- [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
 - [gheift/letsencrypt.sh](https://github.com/gheift/letsencrypt.sh)
 
 ## Browser
