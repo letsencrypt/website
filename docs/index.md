@@ -7,12 +7,13 @@ top_graphic: 1
 
 # Overview
 
+* [Getting Started](/getting-started/)
 * [How Let's Encrypt Works](/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 
 # Subscriber Information
 
-* [ACME Client Software Options](/docs/client-options/)
+* [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
