@@ -17,17 +17,11 @@ The key principles behind Let's Encrypt are:
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
-## Technical Advisory Board (TAB)
+### More information:
 
-Our TAB consists of technical experts from major supporting organizations, as well as independent experts with strong CA/PKI industry experience.
-
-* <strong>Rich Salz</strong> (Akamai)
-* <strong>Joe Hildebrand</strong> (Cisco)
-* <strong>Jacob Hoffman-Andrews</strong> (Electronic Frontier Foundation)
-* <strong>J.C. Jones</strong> (Mozilla)
-* <strong>Russ Housley</strong> (Independent)
-* <strong>Ryan Hurst</strong> (Independent)
-* <strong>Stephen Kent</strong> (Independent)
-* <strong>Karen O'Donoghue</strong> (Internet Society)
-
-We also have a [corporate board](/isrg/).
+- [Internet Security Research Group (ISRG)](/isrg/)
+- [Policy and Legal Repository](/repository/)
+- [Service Status](https://letsencrypt.status.io/)
+- [Statistics](/stats/)
+- [Contact](/contact/)
+- [Jobs](/jobs/)
