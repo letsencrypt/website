@@ -16,12 +16,3 @@ The key principles behind Let's Encrypt are:
 * <strong>Transparent:</strong> All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
-
-### More information:
-
-- [Internet Security Research Group (ISRG)](/isrg/)
-- [Policy and Legal Repository](/repository/)
-- [Service Status](https://letsencrypt.status.io/)
-- [Statistics](/stats/)
-- [Contact](/contact/)
-- [Jobs](/jobs/)
