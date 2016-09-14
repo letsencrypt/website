@@ -30,7 +30,7 @@ top_graphic: 1
 
 # Let's Encrypt Privacy Policy
 
-* [September 9, 2015](/privacy/)
+* [August 15, 2016](/privacy/)
 
 # Let's Encrypt Trademark Policy
 
@@ -43,7 +43,7 @@ top_graphic: 1
 
 # ISRG Non-Discrimination Policy
 
-* [June 18, 2015](/documents/ISRG_Non-Discrimination_Policy.pdf)
+* [June 18, 2015](/nondiscrimination/)
 
 # WebTrust Audits
 

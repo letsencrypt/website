@@ -3,11 +3,12 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 top_graphic: 4
+date: 2016-08-15T00:00
 ---
 
 # Let's Encrypt Privacy Policy
 
-<em>Updated August 15, 2016<em>
+<em>Updated {{ page.date | date: "%B %d, %Y" }}</em>
 
 The Let's Encrypt Privacy Policy describes how we collect, use, and and disclose your information in three different contexts:
 
