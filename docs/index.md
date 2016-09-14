@@ -5,20 +5,26 @@ permalink: /docs/
 top_graphic: 1
 ---
 
-# General
+# General Subscriber Information
 
-* [ACME Client Software](/docs/client-options/)
-* [Staging Environment](/docs/staging-environment/)
+* [How Let's Encrypt Works](/how-it-works/)
+* [ACME Client Software Options](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
+
+# Advanced Subscriber Information
+
+* [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
-* [ACME Protocol Updates](/docs/acme-protocol-updates/)
-* [Finding Your Account ID](/docs/account-id/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
-* [How Let's Encrypt Works](/how-it-works/)
 * [Root and Intermediate Certificates](/certificates/)
 * [Upcoming Features](/upcoming-features/)
 
-# Large Scale Providers and Integrators
+# ACME Client Developer Information
 
-* [Integration Guide](/docs/integration-guide/)
+* [Client and Large Provider Integration Guide](/docs/integration-guide/)
+* [ACME Protocol Updates](/docs/acme-protocol-updates/)
+* [Finding Account IDs](/docs/account-id/)
+
+# FAQ
+
+* [Frequently Asked Questions (FAQ)](/docs/faq/)

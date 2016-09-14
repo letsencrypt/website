@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Finding Your Account ID
+title: Finding Account IDs
 permalink: /docs/account-id/
 top_graphic: 1
 date: 2016-08-10T00:00
