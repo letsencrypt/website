@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ACME Client Software
+title: ACME Client Implementations
 permalink: /docs/client-options/
 top_graphic: 1
 date: 2016-07-02T00:00

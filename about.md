@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About
+title: About Let's Encrypt
 permalink: /about/
 top_graphic: 1
 ---
 
-Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's benefit. Let's Encrypt is a service provided by the [Internet Security Research Group (ISRG)](/isrg/).
+Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's benefit. It is a service provided by the [Internet Security Research Group (ISRG)](/isrg/).
+
+We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
 
 The key principles behind Let's Encrypt are:
 
@@ -17,15 +19,4 @@ The key principles behind Let's Encrypt are:
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
-## Technical Advisory Board (TAB)
-
-Our TAB consists of technical experts from major supporting organizations, as well as independent experts with strong CA/PKI industry experience.
-
-* <strong>Rich Salz</strong> (Akamai)
-* <strong>Joe Hildebrand</strong> (Cisco)
-* <strong>Jacob Hoffman-Andrews</strong> (Electronic Frontier Foundation)
-* <strong>J.C. Jones</strong> (Mozilla)
-* <strong>Russ Housley</strong> (Independent)
-* <strong>Ryan Hurst</strong> (Independent)
-* <strong>Stephen Kent</strong> (Independent)
-* <strong>Karen O'Donoghue</strong> (Internet Society)
+We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works/).

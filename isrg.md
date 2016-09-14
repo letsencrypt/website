@@ -20,3 +20,16 @@ Our current board members are:
 * <strong>Peter Eckersley</strong> (EFF)
 * <strong>Alex Polvi</strong> (CoreOS)
 * <strong>Pascal Jaillon</strong> (OVH)
+
+## Technical Advisory Board (TAB)
+
+Our TAB consists of technical experts from major supporting organizations, as well as independent experts with strong CA/PKI industry experience.
+
+* <strong>Rich Salz</strong> (Akamai)
+* <strong>Joe Hildebrand</strong> (Cisco)
+* <strong>Jacob Hoffman-Andrews</strong> (Electronic Frontier Foundation)
+* <strong>J.C. Jones</strong> (Mozilla)
+* <strong>Russ Housley</strong> (Independent)
+* <strong>Ryan Hurst</strong> (Independent)
+* <strong>Stephen Kent</strong> (Independent)
+* <strong>Karen O'Donoghue</strong> (Internet Society)
