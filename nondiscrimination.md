@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Non-Discrimination Statement and Policy
-permalink: /nondiscrimination
+permalink: /nondiscrimination/
 top_graphic: 4
 date: 2015-06-18T00:00
 ---
