@@ -23,7 +23,8 @@ function tsvListener() {
   tIssued = { type: "scatter", name: "Issued", x:[], y:[],
               yaxis: 'y2', fill: "tozeroy", showlegend: false,
               line: { color: '#2a7ae2' } }
-  tActive = { type: "scatter", name: "Certificates Active", x:[], y:[] }
+  tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
+              line: { color: '#fa3a12' } }
   tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active", x:[], y:[] }
   tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
               marker: { symbol: "diamond" } }
@@ -45,11 +46,11 @@ function tsvListener() {
   traces = [ tActive, tFqdn, tRegDom, tIssued ];
   layout = {
     margin: { t: 0 },
-    yaxis: {title: 'Active Count'},
+    yaxis: { title: 'Active Count' },
     yaxis2: {
       title: 'Issued Per Day',
-      titlefont: {color: '#2a7ae2'},
-      tickfont: {color: '#2a7ae2'},
+      titlefont: { color: '#2a7ae2' },
+      tickfont: { color: '#2a7ae2' },
       overlaying: 'y',
       side: 'right',
       showgrid: false
