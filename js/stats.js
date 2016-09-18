@@ -1,3 +1,8 @@
+// stats.js is used by stats.md to download graph data from the webserver,
+// and then display it using plotly.js. Right now it displays a single graph.
+
+// Process a string `s` and, for each row (line), call `f()` with an
+// array of each tab-separated value within that row.
 function parse_tsv(s, f) {
   var ix_end = 0;
   for (var ix=0; ix<s.length; ix=ix_end+1) {
@@ -10,8 +15,9 @@ function parse_tsv(s, f) {
   }
 }
 
+// Add an (x,y) point to a Trace object if it is a real point.
 function insertPoint(trace, x, y) {
-  if (/\d+/.exec(y)) {
+  if (/\d+/.test(y)) {
     trace.x.push(x);
     trace.y.push(y);
   }
@@ -32,8 +38,8 @@ function tsvListener() {
   dateFormat = /\d{4}-\d{2}-\d{2}/;
   numFormat = /\d+/;
 
-  parse_tsv(this.responseText.trim(), function(row){
-    if (!dateFormat.exec(row[0])) {
+  parse_tsv(this.responseText, function(row){
+    if (!dateFormat.test(row[0])) {
       return;
     }
 
@@ -56,19 +62,19 @@ function tsvListener() {
       showgrid: false
     },
     legend: {
-      xanchor:"left",
-      yanchor:"top",
-      x:0,
-      y:1
+      xanchor: "left",
+      yanchor: "top",
+      x: 0,
+      y: 1
     }
   }
 
-  Plotly.plot( timeline, traces, layout);
+  Plotly.plot(timeline, traces, layout);
 }
 
 window.onload = function () {
   var oReq = new XMLHttpRequest();
   oReq.addEventListener("load", tsvListener);
-  oReq.open("GET", "/js/graphdata.tsv");
+  oReq.open("GET", "/js/certcounts.tsv");
   oReq.send();
 }
