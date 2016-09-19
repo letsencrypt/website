@@ -75,6 +75,6 @@ function tsvListener() {
 window.onload = function () {
   var oReq = new XMLHttpRequest();
   oReq.addEventListener("load", tsvListener);
-  oReq.open("GET", "/js/certcounts.tsv");
+  oReq.open("GET", "/js/cert-timeline.tsv");
   oReq.send();
 }

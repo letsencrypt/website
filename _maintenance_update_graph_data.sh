@@ -1,4 +1,4 @@
 #!/bin/bash
-outFile="$(dirname $0)/js/certcounts.tsv"
+outFile="$(dirname $0)/js/cert-timeline.tsv"
 
-curl --silent https://ct.tacticalsecret.com/certcounts.tsv >${outFile}
+curl --silent https://ct.tacticalsecret.com/cert-timeline.tsv >${outFile}
