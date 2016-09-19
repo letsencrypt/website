@@ -33,3 +33,4 @@ Our TAB consists of technical experts from major supporting organizations, as we
 * <strong>Ryan Hurst</strong> (Independent)
 * <strong>Stephen Kent</strong> (Independent)
 * <strong>Karen O'Donoghue</strong> (Internet Society)
+* <strong>Ivan Ristic</strong> (Independent)
