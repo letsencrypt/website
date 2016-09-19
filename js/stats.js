@@ -52,13 +52,16 @@ function tsvListener() {
   traces = [ tActive, tFqdn, tRegDom, tIssued ];
   layout = {
     margin: { t: 0 },
-    yaxis: { title: 'Active Count' },
+    yaxis: {
+      title: 'Active Count',
+      side: 'right'
+    },
     yaxis2: {
       title: 'Issued Per Day',
       titlefont: { color: '#2a7ae2' },
       tickfont: { color: '#2a7ae2' },
       overlaying: 'y',
-      side: 'right',
+      side: 'left',
       showgrid: false
     },
     legend: {
