@@ -1,4 +1,6 @@
 #!/bin/bash
+set -o errexit
+
 outFile="$(dirname $0)/js/cert-timeline.tsv"
 
 # Download to a temp file, then move over-top the original, so that the update is
