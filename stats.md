@@ -8,7 +8,13 @@ top_graphic: 3
 These statistics are updated periodically.
 
 <div class="figure">
-  <div id="timeline" title="Active Certificates" style="display: block; text-align: center; max-width: 100%; width: 100%;">
+  <h2>Growth Timeline</h2>
+  <div id="activeUsage" title="Growth Timeline" class="statsgraph">
+</div>
+
+<div class="figure">
+  <h2>Certificates Issued Per Day</h2>
+  <div id="issuancePerDay" title="Certificates Issued Per Day" class="statsgraph">
 </div>
 
 <script src="/js/plotly-min.js"></script>

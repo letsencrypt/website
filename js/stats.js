@@ -24,11 +24,8 @@ function insertPoint(trace, x, y) {
 }
 
 function tsvListener() {
-  timeline = document.getElementById('timeline');
-
   tIssued = { type: "scatter", name: "Issued", x:[], y:[],
-              yaxis: 'y2', fill: "tozeroy", showlegend: false,
-              line: { color: '#2a7ae2' } }
+              fill: "tozeroy", line: { color: '#2a7ae2' } }
   tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
               line: { color: '#fa3a12' } }
   tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active", x:[], y:[] }
@@ -49,30 +46,79 @@ function tsvListener() {
     insertPoint(tRegDom, row[0], row[4]);
   });
 
-  traces = [ tActive, tFqdn, tRegDom, tIssued ];
-  layout = {
-    margin: { t: 0 },
-    yaxis: {
-      title: 'Active Count',
-      side: 'right'
-    },
-    yaxis2: {
-      title: 'Issued Per Day',
-      titlefont: { color: '#2a7ae2' },
-      tickfont: { color: '#2a7ae2' },
-      overlaying: 'y',
-      side: 'left',
-      showgrid: false
-    },
-    legend: {
-      xanchor: "left",
-      yanchor: "top",
-      x: 0,
-      y: 1
+  // Various running aggregates over time
+  {
+    traces = [ tActive, tFqdn, tRegDom ];
+    layout = {
+      margin: { t: 0 },
+      yaxis: {
+        title: 'Active Count',
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
+      }
+    }
+    activeUsage = document.getElementById('activeUsage');
+    if (activeUsage) {
+      Plotly.plot(activeUsage, traces, layout);
     }
   }
 
-  Plotly.plot(timeline, traces, layout);
+  // Certificates issued over time
+  {
+    traces = [ tIssued ];
+    layout = {
+      margin: { t: 0 },
+      yaxis: {
+        title: 'Issued Per Day',
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
+      }
+    }
+    issuancePerDay = document.getElementById('issuancePerDay');
+    if (issuancePerDay) {
+      Plotly.plot(issuancePerDay, traces, layout);
+    }
+  }
+
+  // Combined Graph: issuancePerDay + activeUsage
+  {
+    // Override the axis for the combined graph
+    tIssued.yaxis = "y2";
+    traces = [ tActive, tFqdn, tRegDom, tIssued ];
+    layout = {
+      margin: { t: 0 },
+      yaxis: {
+        title: 'Active Count',
+        side: 'right'
+      },
+      yaxis2: {
+        title: 'Issued Per Day',
+        titlefont: { color: '#2a7ae2' },
+        tickfont: { color: '#2a7ae2' },
+        overlaying: 'y',
+        side: 'left',
+        showgrid: false
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
+      }
+    }
+    combinedTimeline = document.getElementById('combinedTimeline');
+    if (combinedTimeline) {
+      Plotly.plot(combinedTimeline, traces, layout);
+    }
+  }
 }
 
 window.onload = function () {
