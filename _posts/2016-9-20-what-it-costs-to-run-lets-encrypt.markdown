@@ -43,7 +43,7 @@ Here’s how our 2017 budget breaks down:
 </table>
 </p>
 
-Staffing is our dominant cost. We currently have eight full time employees, plus two full time staff that are employed by other entities (Mozilla and EFF). This includes five operations/sysadmin staff, three software developers, one communications and fundraising person, and an executive director.
+Staffing is our dominant cost. We currently have eight full time employees, plus two full time staff that are employed by other entities (Mozilla and EFF). This includes five operations/sysadmin staff, three software developers, one communications and fundraising person, and an executive director. Our 2017 budget covers salary and benefits for ten employees.
 
 Our systems administration staff are at the heart of our day to day operations. They are responsible for building and improving our server, networking, and deployed software infrastructure, as well as monitoring the systems every hour of every day. It’s the critical 24/7 nature of the work that makes this our biggest team. Any issues need to be dealt with immediately, ideally with multiple people on hand.
 
