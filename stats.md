@@ -17,5 +17,5 @@ These statistics are updated periodically.
   <div id="issuancePerDay" title="Certificates Issued Per Day" class="statsgraph">
 </div>
 
-<script src="/js/plotly-min.js"></script>
 <script src="/js/stats.js"></script>
+<script src="/js/plotly-min.js"></script>

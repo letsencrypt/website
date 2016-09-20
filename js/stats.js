@@ -24,16 +24,16 @@ function insertPoint(trace, x, y) {
 }
 
 function tsvListener() {
-  tIssued = { type: "scatter", name: "Issued", x:[], y:[],
+  var tIssued = { type: "scatter", name: "Issued", x:[], y:[],
               fill: "tozeroy", line: { color: '#2a7ae2' } }
-  tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
+  var tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
               line: { color: '#fa3a12' } }
-  tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active", x:[], y:[] }
-  tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
+  var tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active", x:[], y:[] }
+  var tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
               marker: { symbol: "diamond" } }
 
-  dateFormat = /\d{4}-\d{2}-\d{2}/;
-  numFormat = /\d+/;
+  var dateFormat = /\d{4}-\d{2}-\d{2}/;
+  var numFormat = /\d+/;
 
   parse_tsv(this.responseText, function(row){
     if (!dateFormat.test(row[0])) {
@@ -46,6 +46,15 @@ function tsvListener() {
     insertPoint(tRegDom, row[0], row[4]);
   });
 
+  var plotIt = plot.bind(null, tIssued, tActive, tFqdn, tRegDom);
+  if (document.readyState === "interactive") {
+    plotIt();
+  } else {
+    document.addEventListener("DOMContentLoaded", plotIt);
+  }
+}
+
+function plot(tIssued, tActive, tFqdn, tRegDom) {
   // Various running aggregates over time
   {
     traces = [ tActive, tFqdn, tRegDom ];
@@ -121,9 +130,7 @@ function tsvListener() {
   }
 }
 
-window.onload = function () {
-  var oReq = new XMLHttpRequest();
-  oReq.addEventListener("load", tsvListener);
-  oReq.open("GET", "/js/cert-timeline.tsv");
-  oReq.send();
-}
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", tsvListener);
+oReq.open("GET", "/js/cert-timeline.tsv");
+oReq.send();
