@@ -15,5 +15,5 @@ permalink: /stats-dashboard/
   <p><a href="/stats/">https://letsencrypt.org/stats/</a></p>
 </div>
 
-<script src="/js/plotly-min.js"></script>
 <script src="/js/stats.js"></script>
+<script src="/js/plotly-min.js"></script>
