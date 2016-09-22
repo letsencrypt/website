@@ -14,7 +14,7 @@ The ACME URL for our staging environment is:
 
 `https://acme-staging.api.letsencrypt.org/directory`
 
-Please see your client's instructions for information on testing with our staging environment.
+If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
 
 # Rate Limits
 
