@@ -7,9 +7,9 @@ redirect_from: "/howitworks"
 ---
 
 To enable HTTPS on your website, you need to get a certificate (a type of file)
-from a certificate authority. Let's Encrypt is a certificate authority. Like all
-certificate authorities, it verifies that you own a given domain name before issuing a
-certificate to you. It does so by communicating with software that uses
+from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
+certificate for your website's domain from Let's Encrypt, you have to demonstrate
+control over the domain. With Let's Encrypt, you do this using software that uses
 the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
 on your web host.
 
@@ -59,7 +59,7 @@ If your hosting provider doesn't want to integrate Let's Encrypt, but does
 support uploading custom certificates, you can install Certbot on your own
 computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
 In manual mode, you upload a specific file to your website to prove your
-ownership. Certbot will then retrieve a certificate that you can upload to your
+control. Certbot will then retrieve a certificate that you can upload to your
 hosting provider. We don't recommend this option because it is time-consuming
 and you will need to repeat it several times per year as your certificate
 expires. For most people it is better to request Let's Encrypt support from your
