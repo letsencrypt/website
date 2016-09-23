@@ -158,3 +158,4 @@ If certbot does not meet your needs, or you’d simply like to try something els
 - [Mesosphere DCOS](https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/)
 - [Virtualmin Web Hosting Control Panel](https://www.virtualmin.com/)
 - [Plesk Web Hosting Control Panel](https://www.plesk.com/)
+- [Zappa](https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation)
