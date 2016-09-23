@@ -6,24 +6,65 @@ top_graphic: 3
 redirect_from: "/howitworks"
 ---
 
-Anyone who has gone through the trouble of setting up a secure website knows what a hassle getting and maintaining a certificate can be. Let's Encrypt automates away the pain and lets site operators turn on and manage HTTPS with simple commands. Using Let's Encrypt is free, so there is no need to arrange payment.
+To enable HTTPS on your website, you need to get a certificate (a type of file)
+from a certificate authority. Let's Encrypt is a certificate authority. Like all
+certificate authorities, it verifies that you own a given domain name before issuing a
+certificate to you. It does so by communicating with software that uses
+the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
+on your web host.
 
-If you'd like to know more about how Let's Encrypt works behind the scenes, check out our [how it works](/how-it-works/) page.
+To figure out what method will work best for you, you will need to know whether
+you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
+as SSH access) to your web host. If you manage your website entirely through a
+control panel like [cPanel](https://cpanel.com/) or
+[WordPress](https://wordpress.org/), there's a good chance you don't have shell
+access. You can ask your hosting provider to be sure.
 
-# Choose a Let's Encrypt Client
+# With Shell Access
 
-We recommend that most people start with the <a href="https://certbot.eff.org/"><code>certbot</code></a> client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation. Simply click the word <a href="https://certbot.eff.org/"><code>certbot</code></a> to get started.
+We recommend that most people with shell access use the
+[Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
+It also has expert modes for people who don't want autoconfiguration. It's easy to use,
+works on many operating systems, and has great documentation. [Visit the
+Certbot site][Certbot] to get customized instructions for your operating system and web server.
 
-If <a href="https://certbot.eff.org/"><code>certbot</code></a> does not meet your needs, or you'd simply like to try something else, there are [many more clients to choose from](/docs/client-options/).
+If [Certbot] does not meet your needs, or you'd like to try something else, there are
+[many more ACME clients to choose from](/docs/client-options/).  Once you've chosen ACME client
+software, see the documentation for that client to proceed.
 
-Once you've chosen Let's Encrypt client software, see the documentation for that client to proceed.
+If you're experimenting with different ACME clients, use our
+[staging environment](/docs/staging-environment/) to avoid hitting
+[rate limits](/docs/rate-limits/).
 
-# Limits on usage
+[Certbot]: https://certbot.eff.org/  "Certbot"
 
-Let's Encrypt limits the number of certificates that can be issued to any particular domain each week. This is done in order to prevent abuse. [See this page](/docs/rate-limits/) for more information about rate limits.
+# Without Shell Access
 
-We highly recommend testing against our [staging environment](/docs/staging-environment/) before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
+The best way to use Let's Encrypt without shell access is by using built-in support
+from your hosting provider. If your hosting provider offers Let's Encrypt
+support, they can request a free certificate on your behalf, install it, and
+keep it up-to-date automatically. For some hosting providers, this is a
+configuration setting you need to turn on. Other providers automatically
+request and install certificates for all their customers.
+
+[Check our list of hosting providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
+to see if yours is on it. If so, follow their documentation to set up your
+Let's Encrypt certificate.
+
+If your hosting provider does not support Let's Encrypt, you can contact them to
+request support. We do our best to make it very easy to add Let's Encrypt
+support, and providers are often happy to hear suggestions from customers!
+
+If your hosting provider doesn't want to integrate Let's Encrypt, but does
+support uploading custom certificates, you can install Certbot on your own
+computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
+In manual mode, you upload a specific file to your website to prove your
+ownership. Certbot will then retrieve a certificate that you can upload to your
+hosting provider. We don't recommend this option because it is time-consuming
+and you will need to repeat it several times per year as your certificate
+expires. For most people it is better to request Let's Encrypt support from your
+hosting provider, or switch providers if they do not plan to implement it.
 
 # Getting Help
 
-If you have questions about selecting a client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
+If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
