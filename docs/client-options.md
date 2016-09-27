@@ -18,6 +18,9 @@ We recommend that most people start with the [Certbot](https://certbot.eff.org/)
 
 If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
+The ACME clients below are offered by third parties. Let's Encrypt doesn't review
+third party clients.
+
 ## Bash
 
 - [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh) 
