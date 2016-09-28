@@ -15,9 +15,9 @@ The ACME protocol is the cornerstone of how Let's Encrypt works. As the protocol
 We currently have the following API endpoints and associated ACME version implementations:
 
 * [Production] `https://acme-v01.api.letsencrypt.org/directory`
-  * ACME Version: [draft 01](https://tools.ietf.org/html/draft-ietf-acme-acme-01), with [some tweaks](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+  * ACME Version: [draft 03](https://tools.ietf.org/html/draft-ietf-acme-acme-03), with [some tweaks](https://github.com/letsencrypt/boulder/blob/release/docs/acme-divergences.md)
 * [Staging] `https://acme-staging.api.letsencrypt.org/directory`
-  * ACME Version: [draft 01](https://tools.ietf.org/html/draft-ietf-acme-acme-01), with [some tweaks](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+  * ACME Version: [draft 03](https://tools.ietf.org/html/draft-ietf-acme-acme-03), with [some tweaks](https://github.com/letsencrypt/boulder/blob/staging/docs/acme-divergences.md)
 
 # New Backwards-Compatible ACME Features
 
