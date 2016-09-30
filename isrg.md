@@ -16,7 +16,7 @@ Our current board members are:
 * <strong>J. Alex Halderman</strong> (University of Michigan)
 * <strong>Jennifer Granick</strong> (Stanford Law School)
 * <strong>Laura Thomson</strong> (Mozilla)
-* <strong>Joe Hildebrand</strong> (Cisco)
+* <strong>Cullen Jennings</strong> (Cisco)
 * <strong>Peter Eckersley</strong> (EFF)
 * <strong>Alex Polvi</strong> (CoreOS)
 * <strong>Pascal Jaillon</strong> (OVH)
