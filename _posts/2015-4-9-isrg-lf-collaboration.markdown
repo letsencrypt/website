@@ -3,7 +3,7 @@ layout: post
 title: "ISRG and The Linux Foundation to Collaborate"
 date: 2015-4-9T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: Internet Security Research Group (ISRG), the non-profit entity behind Let's Encrypt, is pleased to announce our collaboration with <a href="https://www.linuxfoundation.org/">The Linux Foundation</a>.
+excerpt: Internet Security Research Group (ISRG), the non-profit entity behind Let's Encrypt, is pleased to announce our collaboration with The Linux Foundation.
 ---
 
 Internet Security Research Group (ISRG), the non-profit entity behind Let's Encrypt, is pleased to announce our collaboration with <a href="https://www.linuxfoundation.org/">The Linux Foundation</a>. The Linux Foundation will provide general and administrative support services, as well as services related to fundraising, financial management, contract and vendor management, and human resources.

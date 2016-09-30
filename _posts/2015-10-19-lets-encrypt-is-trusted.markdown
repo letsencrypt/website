@@ -3,7 +3,7 @@ layout: post
 title: "Let's Encrypt is Trusted"
 date: 2015-10-19T19:00
 author: Josh Aas, ISRG Executive Director
-excerpt: We’re pleased to announce that we’ve received cross-signatures from <a href="https://identrustssl.com/">IdenTrust</a>, which means that our certificates are now trusted by all major browsers. This is a significant milestone since it means that visitors to websites using Let's Encrypt certificates can enjoy a secure browsing experience with no special configuration required.
+excerpt: We’re pleased to announce that we’ve received cross-signatures from IdenTrust, which means that our certificates are now trusted by all major browsers. This is a significant milestone since it means that visitors to websites using Let's Encrypt certificates can enjoy a secure browsing experience with no special configuration required.
 ---
 
 We’re pleased to announce that we’ve received cross-signatures from <a href="https://identrustssl.com/">IdenTrust</a>, which means that our certificates are now trusted by all major browsers. This is a significant milestone since it means that visitors to websites using Let's Encrypt certificates can enjoy a secure browsing experience with no special configuration required.

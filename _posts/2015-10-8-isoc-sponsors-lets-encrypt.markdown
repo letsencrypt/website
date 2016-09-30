@@ -3,7 +3,7 @@ layout: post
 title: "Internet Society Sponsors Let's Encrypt"
 date: 2015-10-8T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: We're pleased to announce that <a href="https://www.internetsociety.org/">Internet Society (ISOC)</a> has become a <a href="/sponsors/">Gold sponsor</a> of Let's Encrypt.
+excerpt: We're pleased to announce that Internet Society (ISOC) has become a Gold sponsor of Let's Encrypt.
 ---
 
 We're pleased to announce that <a href="https://www.internetsociety.org/">Internet Society (ISOC)</a> has become a <a href="/sponsors/">Gold sponsor</a> of Let's Encrypt.

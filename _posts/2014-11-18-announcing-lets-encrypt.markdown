@@ -3,7 +3,7 @@ layout: post
 title:  "Let’s Encrypt: Delivering SSL/TLS Everywhere"
 date:   2014-11-18T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: Vital personal and business information flows over the Internet more frequently than ever, and we don't always know when it's happening. It's clear at this point that encrypting is something all of us should be doing. Then why don’t we use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS (the successor to SSL)</a> everywhere? Every browser in every device supports it. Every server in every data center supports it. Why don’t we just flip the switch?
+excerpt: Vital personal and business information flows over the Internet more frequently than ever, and we don't always know when it's happening. It's clear at this point that encrypting is something all of us should be doing. Then why don’t we use TLS (the successor to SSL) everywhere? Every browser in every device supports it. Every server in every data center supports it. Why don’t we just flip the switch?
 ---
 
 Vital personal and business information flows over the Internet more frequently than ever, and we don't always know when it's happening. It's clear at this point that encrypting is something all of us should be doing. Then why don’t we use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS (the successor to SSL)</a> everywhere? Every browser in every device supports it. Every server in every data center supports it. Why don’t we just flip the switch?

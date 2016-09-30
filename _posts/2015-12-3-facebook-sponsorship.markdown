@@ -3,7 +3,7 @@ layout: post
 title: "Facebook Sponsors Let's Encrypt"
 date: 2015-12-03T9:00
 author: Josh Aas, ISRG Executive Director
-excerpt: We're happy to share today that <a href="https://www.facebook.com/">Facebook</a> is the newest <a href="/sponsors/">Gold sponsor</a> of Let’s Encrypt.
+excerpt: We're happy to share today that Facebook is the newest Gold sponsor of Let’s Encrypt.
 ---
 
 We're happy to share today that <a href="https://www.facebook.com/">Facebook</a> is the newest <a href="/sponsors/">Gold sponsor</a> of Let’s Encrypt. Facebook has taken multiple important steps to support and advance encryption this year, and we are glad to see Let's Encrypt as the latest example.

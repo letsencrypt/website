@@ -3,7 +3,7 @@ layout: post
 title: "Let's Encrypt Community Support"
 date: 2015-8-13T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: Let’s Encrypt's success depends on the support of a strong community. Nowhere is this more true than when it comes to subscriber support. Today we’re happy to announce <a href="https://community.letsencrypt.org/">Let’s Encrypt Community Support</a>, a place for our community to both give and receive support.
+excerpt: Let’s Encrypt's success depends on the support of a strong community. Nowhere is this more true than when it comes to subscriber support. Today we’re happy to announce Let’s Encrypt Community Support, a place for our community to both give and receive support.
 ---
 
 Let’s Encrypt's success depends on a strong community. Nowhere is this more true than when it comes to subscriber support. Today we’re happy to announce [Let’s Encrypt Community Support](https://community.letsencrypt.org/), a place for our community to both give and receive support.
