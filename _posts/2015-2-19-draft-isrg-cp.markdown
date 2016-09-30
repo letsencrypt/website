@@ -3,7 +3,7 @@ layout: post
 title:  "Draft ISRG Certificate Policy (CP)"
 date:   2015-2-19T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: Today we're publishing a <a href="/documents/ISRG-CP-May-5-2015.pdf">draft of our Certificate Policy (CP)</a>.
+excerpt: Today we're publishing a draft of our Certificate Policy (CP).
 ---
 
 Update 2015-10-12: These documents are now out of date. Please visit our <a

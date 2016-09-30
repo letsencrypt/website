@@ -3,7 +3,7 @@ layout: post
 title:  "Draft Let's Encrypt Subscriber Agreement"
 date:   2015-5-21T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: Today we're publishing the first public draft of the <a href="/documents/LE-SA-v1.0-June-23-2015.pdf">Let's Encrypt Subscriber Agreement</a>.
+excerpt: Today we're publishing the first public draft of the Let's Encrypt Subscriber Agreement.
 ---
 
 Update 2015-10-12: These documents are now out of date. Please visit our <a

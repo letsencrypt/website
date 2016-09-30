@@ -3,7 +3,7 @@ layout: post
 title: "ISRG Engages NCC Group for Let's Encrypt Audit"
 date: 2015-4-14T07:00
 author: Josh Aas, ISRG Executive Director
-excerpt: ISRG has engaged the <a href="https://cryptoservices.github.io/">NCC Group Crypto Services team</a> to perform a security review of Let's Encrypt's certificate authority software, <a href="https://github.com/letsencrypt/boulder">boulder</a>, and the <a href="https://github.com/letsencrypt/acme-spec/">ACME protocol</a>.
+excerpt: ISRG has engaged the NCC Group Crypto Services team to perform a security review of Let's Encrypt's certificate authority software, boulder, and the ACME protocol.
 ---
 
 ISRG has engaged the <a href="https://cryptoservices.github.io/">NCC Group Crypto Services team</a> to perform a security review of Let's Encrypt's certificate authority software, <a href="https://github.com/letsencrypt/boulder">boulder</a>, and the <a href="https://github.com/letsencrypt/acme-spec/">ACME protocol</a>. NCC Group's team was selected due to their strong reputation for cryptography expertise, which brought together Matasano Security, iSEC Partners, and Intrepidus Group.
