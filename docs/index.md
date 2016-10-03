@@ -28,4 +28,5 @@ top_graphic: 1
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
+* [Differences from Current ACME Draft](https://github.com/letsencrypt/boulder/blob/release/docs/acme-divergences.md)
 * [Finding Account IDs](/docs/account-id/)
