@@ -24,6 +24,12 @@ No. Never.
 
 The private key is always generated and managed on your own servers, not by the Let's Encrypt certificate authority.
 
+## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
+
+Our certificates are valid for 90 days. You can read about why [here](https://letsencrypt.org/2015/11/09/why-90-days.html).
+
+There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
+
 ## Will Let’s Encrypt issue Organization Validation (OV) or Extended Validation (EV) certificates?
 
 We have no plans to issue OV or EV certificates.
