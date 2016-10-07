@@ -7,21 +7,28 @@ top_graphic: 5
 
 # Root Certificates
 
-* ISRG Root X1 \[[txt](/certs/isrgrootx1.pem.txt)\] \[[pem](/certs/isrgrootx1.pem)\] \[[der](/certs/isrgrootx1.der)\]
+Our roots are kept safely offline, we issue end-entity certificates to subscribers from the intermediates in the next section.
+
+* Active
+  * ISRG Root X1 \[[txt](/certs/isrgrootx1.pem.txt)\] \[[pem](/certs/isrgrootx1.pem)\] \[[der](/certs/isrgrootx1.der)\]
 
 # Intermediate Certificates
 
-* Let's Encrypt Authority X3 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x3-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x3-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x3-cross-signed.der)\]
-* Let's Encrypt Authority X4 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x4-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x4-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x4-cross-signed.der)\]
-
-* Let's Encrypt Authority X1 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x1-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x1-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x1-cross-signed.der)\]
-  * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx1.pem.txt)\] \[[pem](/certs/letsencryptauthorityx1.pem)\] \[[der](/certs/letsencryptauthorityx1.der)\]
-* Let's Encrypt Authority X2 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x2-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x2-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x2-cross-signed.der)\]
-  * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx2.pem.txt)\] \[[pem](/certs/letsencryptauthorityx2.pem)\] \[[der](/certs/letsencryptauthorityx2.der)\]
-
-Let’s Encrypt will issue certificates to subscribers from its intermediate CAs, allowing us to keep our root CA safely offline. IdenTrust has cross-signed our intermediates. This allows our end certificates to be accepted by all major browsers while we propagate our own root.
+IdenTrust has cross-signed our intermediates. This allows our end certificates to be accepted by all major browsers while we propagate our own root.
 
 Under normal circumstances, certificates issued by Let’s Encrypt will come from “Let’s Encrypt Authority X3”. The other intermediate, “Let’s Encrypt Authority X4”, is reserved for disaster recovery and will only be used should we lose the ability to issue with “Let’s Encrypt Authority X3”. The X1 and X2 intermediates were our first generation of intermediates. We've replaced them with new intermediates that are more compatible with Windows XP.
+
+* Active
+  * Let's Encrypt Authority X3 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x3-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x3-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x3-cross-signed.der)\]
+    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx3.pem.txt)\] \[[pem](/certs/letsencryptauthorityx3.pem)\] \[[der](/certs/letsencryptauthorityx3.der)\]
+* Backup
+  * Let's Encrypt Authority X4 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x4-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x4-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x4-cross-signed.der)\]
+    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx4.pem.txt)\] \[[pem](/certs/letsencryptauthorityx4.pem)\] \[[der](/certs/letsencryptauthorityx4.der)\]
+* Retired
+  * Let's Encrypt Authority X2 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x2-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x2-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x2-cross-signed.der)\]
+    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx2.pem.txt)\] \[[pem](/certs/letsencryptauthorityx2.pem)\] \[[der](/certs/letsencryptauthorityx2.der)\]
+  * Let's Encrypt Authority X1 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x1-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x1-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x1-cross-signed.der)\]
+    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx1.pem.txt)\] \[[pem](/certs/letsencryptauthorityx1.pem)\] \[[der](/certs/letsencryptauthorityx1.der)\]
 
 # Cross Signing
 
@@ -69,4 +76,4 @@ issued Let's Encrypt certificates via these links:
 The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
 
 All ISRG keys are currently RSA keys. We are planning to generate ECDSA keys in
-early 2016.
+early 2017.
