@@ -32,7 +32,7 @@ Under normal circumstances, certificates issued by Let’s Encrypt will come fro
 
 # Cross Signing
 
-Our intermediate “Let’s Encrypt Authority X1” represents a single public/private
+Our intermediate “Let’s Encrypt Authority X3” represents a single public/private
 key pair. The private key of that pair generates the signature for all end-entity
 certificates (also known as leaf certificates), i.e. the certificates we issue
 for use on your server.
