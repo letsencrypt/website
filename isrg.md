@@ -11,7 +11,7 @@ ISRG is proudly sponsored by a diverse group of organizations, from non-profits 
 
 Our current board members are:
 
-* <strong>Josh Aas</strong> (Mozilla) &mdash; <i>ISRG Executive Director</i>
+* <strong>Josh Aas</strong> (ISRG) &mdash; <i>ISRG Executive Director</i>
 * <strong>Stephen Ludin</strong> (Akamai)
 * <strong>J. Alex Halderman</strong> (University of Michigan)
 * <strong>Jennifer Granick</strong> (Stanford Law School)
