@@ -1,5 +1,5 @@
 // stats.js is used by stats.md to download graph data from the webserver,
-// and then display it using plotly.js. Right now it displays a single graph.
+// and then display it using plotly.js.
 
 // Process a string `s` and, for each row (line), call `f()` with an
 // array of each tab-separated value within that row.
