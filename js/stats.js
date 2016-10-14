@@ -47,10 +47,10 @@ function tsvListener() {
   });
 
   var plotIt = plot.bind(null, tIssued, tActive, tFqdn, tRegDom);
-  if (document.readyState === "interactive") {
+  if (document.readyState === "complete") {
     plotIt();
   } else {
-    document.addEventListener("DOMContentLoaded", plotIt);
+    window.addEventListener("load", plotIt);
   }
 }
 
