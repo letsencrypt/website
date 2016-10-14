@@ -3,6 +3,7 @@ layout: page
 title: Let's Encrypt Stats
 permalink: /stats/
 top_graphic: 3
+excerpt: Let's Encrypt certificate statistics.
 ---
 
 These statistics are updated periodically.
