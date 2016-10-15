@@ -51,6 +51,7 @@ third party clients.
 ## nginx
 
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
+- [letsencrypt-nginx](https://github.com/kshcherban/letsencrypt-nginx)
 
 ## Node.js
 
