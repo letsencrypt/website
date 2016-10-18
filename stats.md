@@ -14,6 +14,7 @@ These statistics are updated periodically.
 
 <div class="figure">
   <h2>Percentage of Pageloads that are Secure</h2>
+  <p>(Calculated as a 14-day moving average)</p>
   <div id="pageloadPercent" title="Percent of Pageloads that are Secure" class="statsgraph"></div>
   <p>Source: <a href="https://telemetry.mozilla.org/">Firefox Telemetry</a></p>
 </div>
