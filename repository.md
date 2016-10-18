@@ -22,6 +22,7 @@ top_graphic: 1
 
 # ISRG Certification Practice Statement
 
+* [v1.5, October 18, 2016](/documents/ISRG-CPS-October-18-2016.pdf)
 * [v1.4, May 5, 2016](/documents/ISRG-CPS-May-5-2016.pdf)
 * [v1.3, March 16, 2016](/documents/ISRG-CPS-March-16-2016.pdf)
 * [v1.2, September 22, 2015](/documents/ISRG-CPS-September-22-2015.pdf)
