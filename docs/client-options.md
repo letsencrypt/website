@@ -88,6 +88,7 @@ third party clients.
 - [Let's Encrypt CLI](https://github.com/zealot128/ruby-letsencrypt-cli)
 - [Ruby on Rails Plugin](https://github.com/lgromanowski/letsencrypt-plugin)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
+- [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
 
 ## Rust
 
