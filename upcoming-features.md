@@ -5,12 +5,6 @@ permalink: /upcoming-features/
 top_graphic: 1
 ---
 
-## IDN Support
-
-* ETA: Before November 30, 2016
-
-Let's Encrypt does not currently support IDN issuance. We will be adding support.
-
 ## ECDSA Intermediates
 
 * ETA: Before March 31, 2017
@@ -18,6 +12,12 @@ Let's Encrypt does not currently support IDN issuance. We will be adding support
 Let's Encrypt only signs end-entity certificates with RSA intermediates. We will add the ability to have end-entity certs signed by an ECDSA intermediate.
 
 # Completed Features
+
+## IDN Support
+
+* Enabled: October 20, 2016
+
+Let's Encrypt now supports issuance for Internationalized Domain Names (IDNs).
 
 ## Full IPv6 Support
 
