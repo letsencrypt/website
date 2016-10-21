@@ -9,16 +9,21 @@ excerpt: Let's Encrypt certificate statistics.
 These statistics are updated periodically.
 
 <div class="figure">
-  <a href="https://plot.ly/~letsencrypt/7/" target="_blank" title="Active Certificates" style="display: block; text-align: center;"><img src="https://plot.ly/~letsencrypt/7.png" alt="Active Certificates" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-  <script data-plotly="letsencrypt:7"  src="https://plot.ly/embed.js" async></script>
+  <h2>Growth Timeline</h2>
+  <div id="activeUsage" title="Growth Timeline" class="statsgraph"></div>
 </div>
 
 <div class="figure">
-  <a href="https://plot.ly/~letsencrypt/9/" target="_blank" title="Certificates Issued and Revoked per day" style="display: block; text-align: center;"><img src="https://plot.ly/~letsencrypt/9.png" alt="Certificates Issued and Revoked per day" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-  <script data-plotly="letsencrypt:9"  src="https://plot.ly/embed.js" async></script>
+  <h2>Percentage of Pageloads that are Secure</h2>
+  <p>(Calculated as a 14-day moving average)</p>
+  <div id="pageloadPercent" title="Percent of Pageloads that are Secure" class="statsgraph"></div>
+  <p>Source: <a href="https://telemetry.mozilla.org/">Firefox Telemetry</a></p>
 </div>
 
 <div class="figure">
-  <a href="https://plot.ly/~letsencrypt/20/" target="_blank" title="Certificates by ~TLD" style="display: block; text-align: center;"><img src="https://plot.ly/~letsencrypt/20.png" alt="Certificates by ~TLD" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-  <script data-plotly="letsencrypt:20"  src="https://plot.ly/embed.js" async></script>
+  <h2>Certificates Issued Per Day</h2>
+  <div id="issuancePerDay" title="Certificates Issued Per Day" class="statsgraph"></div>
 </div>
+
+<script src="/js/stats.js" async></script>
+<script src="/js/plotly-min.js" async></script>

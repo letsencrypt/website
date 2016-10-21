@@ -16,7 +16,7 @@ $spacing-unit:     30px;
 $text-color:       #000000;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$secondary-color:  #1678D3;          
+$secondary-color:  #1678D3;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -40,7 +40,16 @@ $on-laptop:        800px;
     }
 }
 
+.dashboard {
+    text-align: center;
+}
 
+.statsgraph {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
