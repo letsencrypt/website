@@ -125,14 +125,15 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
     }
   }
 
-  // Firefox telemetry (TLS Pageloads) over time
+  // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
   {
     traces = [ tPctTLSAvg ];
     layout = {
       margin: { t: 0 },
       yaxis: {
-        title: 'Percent of Pageloads',
-        rangemode: 'tozero'
+        title: 'Percent of Pageloads over HTTPS',
+        rangemode: 'tozero',
+        ticksuffix: '%'
       },
       legend: {
         xanchor: "left",
