@@ -104,49 +104,47 @@
     p {
         color: #2C3C69;
     }
-    .buttons {
-        margin-top: 20px;
-        @include media-query($on-palm) {
-            margin-top: 10px;
-        }
-        .tal, .tar {
-            a {
-                text-align: center;
-            }
-        }
-        a {
-            font-size: 32px;
-            font-weight: 300;
-            padding: 6px 18px;
-            border: 2px solid #2a7ae2;
-            border-radius: 8px;
-            width: 175px;
+}
 
-            @include media-query($on-palm) {
-                font-size: 20px;
-                border-radius: 6px;
-                width: 110px;
-            }
-            &:visited {
-                border-color: #1756a9;
-            }
-            &:hover {
-                text-decoration: none;
-                border-color: #000;
-            }
+.buttons {
+    margin-top: 20px;
+    @include media-query($on-palm) {
+        margin-top: 10px;
+    }
+    .tal, .tar {
+        a {
+            text-align: center;
         }
-        a.accent {
-            background: #2a7ae2;
+    }
+    a {
+        font-size: 32px;
+        font-weight: 300;
+        padding: 6px 18px;
+        border: 2px solid #2a7ae2;
+        border-radius: 8px;
+        width: 175px;
+
+        @include media-query($on-palm) {
+            font-size: 20px;
+            border-radius: 6px;
+            width: 110px;
+        }
+        &:visited {
+            border-color: #1756a9;
+        }
+        &:hover {
+            text-decoration: none;
+            border-color: #000;
+        }
+    }
+    a.accent {
+        background: #2a7ae2;
+        color: #fff;
+        &:hover {
+            background: #1756a9;
+            border-color: #1756a9;
             color: #fff;
-            &:visited {
-                border-color: #de8216;
-            }
-            &:hover {
-                background: #1756a9;
-                border-color: #1756a9;
-                color: #fff;
-                text-decoration: none;
-            }
+            text-decoration: none;
         }
     }
 }
