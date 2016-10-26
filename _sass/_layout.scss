@@ -149,6 +149,14 @@
     }
 }
 
+.donate-footer {
+    .buttons {
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -395,4 +403,21 @@
 .howitworks-figure img {
   width: 600px;
   padding: 10px;
+}
+
+.well {
+    background-color: rgba(234,234,234,0.7);
+    border: 1px solid rgba(234,234,234,0.85);
+    border-radius: 10px;
+
+    padding: 30px;
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto 2em;
+
+    @include media-query($on-palm) {
+        max-width: 90%;
+        border-radius: 0;
+        padding: 10px 10px;
+    }
 }
