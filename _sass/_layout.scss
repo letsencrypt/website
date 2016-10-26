@@ -70,7 +70,7 @@
         border: 1px solid rgba(254,254,254,0.85);
         border-radius: 10px;
 
-        padding: 30px 10px;
+        padding: 30px;
         width: 90%;
         max-width: 950px;
         margin: 0 auto;
@@ -86,24 +86,46 @@
         font-size: 40px;
         color: #2C3C69;
         line-height: 1.4;
-        margin: 0;
+        margin: 0 0 0.35em;
 
         @include media-query($on-palm) {
             font-size: 26px;
         }
         span {
             color: #de8216;
+            font-weight: bold;
+        }
+    }
+    h2 {
+        font-weight: normal;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    p {
+        color: #2C3C69;
+    }
+    .buttons {
+        margin-top: 20px;
+        @include media-query($on-palm) {
+            margin-top: 10px;
+        }
+        .tal, .tar {
+            a {
+                text-align: center;
+            }
         }
         a {
-            display: inline-block;
+            font-size: 32px;
+            font-weight: 300;
             padding: 6px 18px;
-            margin-top: 20px;
             border: 2px solid #2a7ae2;
             border-radius: 8px;
+            width: 175px;
 
             @include media-query($on-palm) {
-                margin-top: 10px;
+                font-size: 20px;
                 border-radius: 6px;
+                width: 110px;
             }
         }
         a:visited {
@@ -113,11 +135,11 @@
             text-decoration: none;
             border-color: #000;
         }
-    }
-    h2 {
-        font-weight: normal;
-        margin-bottom: 0;
-        font-size: 20px;
+        a.reverse {
+            background: #2a7ae2;
+            border: 2px solid #fff;
+            color: #fff;
+        }
     }
 }
 
