@@ -6,7 +6,7 @@ top_graphic: 3
 excerpt: Let's Encrypt certificate statistics.
 ---
 
-These statistics are updated periodically.
+These statistics are updated daily.
 
 <div class="figure">
   <h2>Growth Timeline</h2>
@@ -14,10 +14,9 @@ These statistics are updated periodically.
 </div>
 
 <div class="figure">
-  <h2>Percentage of Pageloads that are Secure</h2>
-  <p>(Calculated as a 14-day moving average)</p>
-  <div id="pageloadPercent" title="Percent of Pageloads that are Secure" class="statsgraph"></div>
-  <p>Source: <a href="https://telemetry.mozilla.org/">Firefox Telemetry</a></p>
+  <h2>Percentage of Pageloads over HTTPS</h2>
+  <p>(14-day moving average, source: <a href="https://wiki.mozilla.org/Telemetry/FAQ#Telemetry_and_User_Control:_FAQ">Firefox Telemetry</a>)</p>
+  <div id="pageloadPercent" title="Percent of Pageloads over HTTPS" class="statsgraph"></div>
 </div>
 
 <div class="figure">
