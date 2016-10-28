@@ -24,5 +24,10 @@ These statistics are updated daily.
   <div id="issuancePerDay" title="Certificates Issued Per Day" class="statsgraph"></div>
 </div>
 
+## Code
+
+- [ct-sql](https://github.com/jcjones/ct-sql) ingests data from Censys.io, CT logs, and Firefox Telemetry.
+- [ct-sql-queries](https://github.com/jcjones/ct-sql-queries) contains the SQL queries run periodically to construct the data.
+
 <script src="/js/stats.js" async></script>
 <script src="/js/plotly-min.js" async></script>
