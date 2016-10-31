@@ -62,7 +62,7 @@ Related to the above two points, it may make sense, if you have a lot of fronten
 
 Many browsers will fetch OCSP from Let's Encrypt when they load your site. This is a [performance and privacy problem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideally, connections to your site should not wait for a secondary connection to Let's Encrypt. Also, OCSP requests tell Let's Encrypt which sites people are visiting. We have a good privacy policy and do not record individually identifying details from OCSP requests, we'd rather not even receive the data in the first place. Additionally, we anticipate our bandwidth costs for serving OCSP every time a browser visits a Let's Encrypt site for the first time will be a big part of our infrastructure expense.
 
-By turning on OCSP Stapling, you can improve the performance of your web site, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
+By turning on OCSP Stapling, you can improve the performance of your website, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
 
 Additionally, OCSP Stapling forms the basis for two other technologies you may want to use in the future: Must Staple, which provides for revocation that actually works, and Certificate Transparency proofs (which we will be delivering by OCSP, and which must be stapled for Chrome to recognize them).
 
@@ -77,6 +77,32 @@ Some people who are issuing for non-HTTP services want to avoid exposing port 80
 Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P-384 ECDSA keys. That's true for both account keys and certificate keys. You can't reuse an account key as a certificate key.
 
 Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
+
+# HTTPS by default
+
+For hosting providers, our recommendation is to automatically issue
+certificates and configure HTTPS for all hostnames you control, and to offer a
+user-configurable setting for whether to redirect HTTP URLs to their HTTPS
+equivalents. We recommend that for existing accounts, the setting be disabled by
+default, but for new accounts, the setting be enabled by default.
+
+Reasoning: Existing websites are likely to include some HTTP subresources
+(scripts, CSS, and images). If those sites are automatically redirected to
+their HTTPS versions, browsers will block some of those subresources due to
+Mixed Content Blocking. This can break functionality on the site. However,
+someone who creates a new site and finds that it redirects to HTTPS will
+most likely include only HTTPS subresources, because if they try to include
+an HTTP subresource they will notice immediately that it doesn't work.
+
+We recommend allowing customers to set an HTTP Strict-Transport-Security
+(HSTS) header with a default max-age of sixty days. However, this setting
+should be accompanied by a warning that if the customer needs to move to
+a hosting provider that doesn't offer HTTPS, the cached HSTS setting in
+browsers will make their site unavailable. Also, both customer and hosting
+provider should be aware that the HSTS header will make certificate errors into
+hard failures. For instance, while people can usually click through a browser
+warning about a name mismatch or expired certificate, browsers do not allow such
+a click through for hostnames with an active HSTS header.
 
 # When to Renew
 
