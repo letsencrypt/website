@@ -70,7 +70,7 @@
         border: 1px solid rgba(254,254,254,0.85);
         border-radius: 10px;
 
-        padding: 30px 10px;
+        padding: 30px;
         width: 90%;
         max-width: 950px;
         margin: 0 auto;
@@ -86,38 +86,74 @@
         font-size: 40px;
         color: #2C3C69;
         line-height: 1.4;
-        margin: 0;
+        margin: 0 0 0.35em;
 
         @include media-query($on-palm) {
             font-size: 26px;
         }
         span {
             color: #de8216;
-        }
-        a {
-            display: inline-block;
-            padding: 6px 18px;
-            margin-top: 20px;
-            border: 2px solid #2a7ae2;
-            border-radius: 8px;
-
-            @include media-query($on-palm) {
-                margin-top: 10px;
-                border-radius: 6px;
-            }
-        }
-        a:visited {
-            border-color: #1756a9;
-        }
-        a:hover {
-            text-decoration: none;
-            border-color: #000;
+            font-weight: bold;
         }
     }
     h2 {
         font-weight: normal;
         margin-bottom: 0;
         font-size: 20px;
+    }
+    p {
+        color: #2C3C69;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+    @include media-query($on-palm) {
+        margin-top: 10px;
+    }
+    .tal, .tar {
+        a {
+            text-align: center;
+        }
+    }
+    a {
+        font-size: 32px;
+        font-weight: 300;
+        padding: 6px 18px;
+        border: 2px solid #2a7ae2;
+        border-radius: 8px;
+        width: 175px;
+
+        @include media-query($on-palm) {
+            font-size: 20px;
+            border-radius: 6px;
+            width: 110px;
+        }
+        &:visited {
+            border-color: #1756a9;
+        }
+        &:hover {
+            text-decoration: none;
+            border-color: #000;
+        }
+    }
+    a.accent {
+        background: #2a7ae2;
+        color: #fff;
+        &:hover {
+            background: #1756a9;
+            border-color: #1756a9;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.donate-footer {
+    .buttons {
+        a {
+            font-size: 24px;
+        }
     }
 }
 
@@ -367,4 +403,21 @@
 .howitworks-figure img {
   width: 600px;
   padding: 10px;
+}
+
+.well {
+    background-color: rgba(234,234,234,0.7);
+    border: 1px solid rgba(234,234,234,0.85);
+    border-radius: 10px;
+
+    padding: 30px;
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto 2em;
+
+    @include media-query($on-palm) {
+        max-width: 90%;
+        border-radius: 0;
+        padding: 10px 10px;
+    }
 }

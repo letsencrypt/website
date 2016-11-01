@@ -238,3 +238,44 @@ pre {
         }
     }
 }
+
+/**
+ * Tachyons-esque stuff
+ */
+.flex {
+    display: flex;
+}
+.flex1 {
+    flex: 1;
+}
+.flex2 {
+    flex: 2;
+}
+.flex3 {
+    flex: 3;
+}
+.dib {
+    display: inline-block;
+}
+.di {
+    display: inline;
+}
+.justify {
+    text-align: justify;
+}
+.tal {
+    text-align: left;
+}
+.tar {
+    text-align: right;
+}
+.mlr20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.mr1m {
+    margin-right: 1em;
+}
+.ml1m {
+    margin-left: 1em;
+}

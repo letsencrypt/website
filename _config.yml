@@ -7,6 +7,7 @@ baseurl: ""
 url: "https://letsencrypt.org/"
 github_username: letsencrypt 
 twitter_username: letsencrypt
+crowdfunding_url: "https://www.generosity.com/community-fundraising/make-a-more-secure-web-with-let-s-encrypt"
 
 # Build settings
 markdown: kramdown
