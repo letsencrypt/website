@@ -6,6 +6,18 @@ top_graphic: 3
 redirect_from: "/howitworks"
 ---
 
+# What is Let's Encrypt?
+
+Let's Encrypt allows you to secure your website by concealing the data
+sent and received between your website and the users of your website from prying
+eyes. Prior to the creation of Let's Encrypt, securing your website with SSL/HTTPS
+was often costly and a hassle. Basic security measures shouldn't be a hassle, nor 
+should they be prohibitively expensive in an era where theft of data is becoming
+increasingly common. Let's Encrypt was created for and is here to solve that issue,
+by offering free and easy creation of security certificates for anyone.
+
+# Sounds great! What do I need to do?
+
 To enable HTTPS on your website, you need to get a certificate (a type of file)
 from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
