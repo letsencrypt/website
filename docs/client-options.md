@@ -36,6 +36,9 @@ third party clients.
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
 
+## Docker
+- [cloud_letsencrypt](https://github.com/leandromoreira/cloud_letsencrypt)
+
 ## Go
 
 - [Caddy](https://caddyserver.com)
