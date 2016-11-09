@@ -37,7 +37,7 @@ third party clients.
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
 
 ## Docker
-- [tls_certificate_generation](https://github.com/leandromoreira/tls_certificate_generation.git)
+- [tls_certificate_generation](https://github.com/leandromoreira/tls_certificate_generation)
 
 ## Go
 
