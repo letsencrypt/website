@@ -17,6 +17,8 @@ without requiring intervention from Let's Encrypt.
 
 If you're actively developing or testing a Let's Encrypt client, please utilize
 our [staging environment](/docs/staging-environment/) instead of the production API.
+If you're working on integrating Let's Encrypt as a provider or with a large
+website please [review our Integration Guide](/docs/integration-guide).
 
 The main limit is **Certificates per Registered Domain** (20 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
