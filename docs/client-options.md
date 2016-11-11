@@ -81,6 +81,7 @@ third party clients.
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
 - [Let's ACME](https://github.com/neurobin/letsacme)
 - [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
+- [wile](https://github.com/costela/wile)
 
 ## Ruby
 
