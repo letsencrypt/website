@@ -65,6 +65,8 @@ third party clients.
 ## Perl
 
 - [le.pl](https://github.com/do-know/Crypt-LE) (aka [ZeroSSL](https://ZeroSSL.com/))
+- [Net::ACME](https://metacpan.org/pod/Net::ACME)
+- [Protocol::ACME](https://metacpan.org/pod/Protocol::ACME)
 
 ## PHP
 
