@@ -26,7 +26,7 @@ Our current board members are:
 Our TAB consists of technical experts from major supporting organizations, as well as independent experts with strong CA/PKI industry experience.
 
 * <strong>Rich Salz</strong> (Akamai)
-* <strong>Joe Hildebrand</strong> (Cisco)
+* <strong>Joe Hildebrand</strong> (Independent)
 * <strong>Jacob Hoffman-Andrews</strong> (Electronic Frontier Foundation)
 * <strong>J.C. Jones</strong> (Mozilla)
 * <strong>Russ Housley</strong> (Independent)
