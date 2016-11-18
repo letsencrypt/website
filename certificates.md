@@ -15,11 +15,11 @@ Our roots are kept safely offline, we issue end-entity certificates to subscribe
 We've set up websites to test certificates chaining to our roots.
 
 * ISRG Root X1 Valid Certificate
-  * valid-isrgrootx1.letsencrypt.org
+  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
 * ISRG Root X1 Revoked Certificate
-  * revoked-isrgrootx1.letsencrypt.org
+  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
 * ISRG Root X1 Expired Certificate
-  * expired-isrgrootx1.letsencrypt.org
+  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
 
 # Intermediate Certificates
 
