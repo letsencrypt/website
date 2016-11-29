@@ -87,7 +87,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
   {
     traces = [ tActive, tFqdn, tRegDom ];
     layout = {
-      margin: { t: 0 },
+      margin: { t: 20 },
       yaxis: {
         title: 'Active Count',
       },
@@ -108,7 +108,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
   {
     traces = [ tIssued ];
     layout = {
-      margin: { t: 0 },
+      margin: { t: 20 },
       yaxis: {
         title: 'Issued Per Day',
       },
@@ -129,7 +129,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
   {
     traces = [ tPctTLSAvg ];
     layout = {
-      margin: { t: 0 },
+      margin: { t: 20 },
       yaxis: {
         title: 'Percent of Pageloads over HTTPS',
         rangemode: 'tozero',
@@ -154,7 +154,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
     tIssued.yaxis = "y2";
     traces = [ tActive, tFqdn, tRegDom, tIssued ];
     layout = {
-      margin: { t: 0 },
+      margin: { t: 20 },
       yaxis: {
         title: 'Active Count',
         side: 'right'
