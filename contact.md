@@ -39,4 +39,4 @@ sub   4096R/93665E86 2015-11-24 [expires: 2017-11-29]
 
 You can download the [GPG Public Key](/security_letsencrypt.org-publickey.asc) here, or utilize your favorite key server.
 
-The key fingerprint must match `0148 3B31 D8F9 DBA2 5D41 4DAA 718E 9F6D 10EC 230B`.
+The key fingerprint must match `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
