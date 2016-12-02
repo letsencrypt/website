@@ -30,7 +30,7 @@ You may want to visit [this particular community forum discussion](https://commu
 * Cyanogen > v10
 * Jolla Sailfish OS > v1.1.2.16
 * Kindle > v3.4.1
-* Java >= JDK 8u101
+* Java >= JDK 7u111, 8u101
 
 # Possibly Incompatible
 
