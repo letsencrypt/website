@@ -122,7 +122,18 @@ quickly, which is fine. You can then spread out renewal times by doing a
 one-time process of renewing some certificates 1 day ahead of when you would
 normally renew, some of them 2 days ahead, and so on.
 
+# Retrying failures
+
 Renewal failure should not be treated as a fatal error. You should implement
 graceful retry logic in your issuing services using an exponential backoff
-pattern. However, errors should be sent to the administrator in charge, in order
-to see if problems need fixing.
+pattern, maxing out at once per day per certificate. For instance, it would be
+suitable to automatically retry a failed renewal after 1 minute, 10 minutes,
+100 minutes, and 1440 minutes, absent specific administrator intervention. This
+means that your issuance software should keep track of failures as well as
+successes, and check if there was a recent failure before attempting a fresh
+issuance. There's no point in attempting issuance hundreds of times per hour,
+since repeated failures are likely to be persistent.
+
+Alternately, defaulting to once a day renewal attempts is reasonable. All
+errors should be sent to the administrator in charge, in order to see if
+specific problems need fixing.
