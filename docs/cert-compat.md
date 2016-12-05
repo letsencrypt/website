@@ -3,7 +3,7 @@ layout: page
 title: Certificate Compatibility
 permalink: /docs/certificate-compatibility/
 top_graphic: 1
-date: 2016-07-19T00:00
+date: 2016-12-05T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
