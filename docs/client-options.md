@@ -52,6 +52,10 @@ third party clients.
 
 - [HAProxy ACME validation plugin](https://github.com/janeczku/haproxy-acme-validation-plugin)
 
+## Java
+
+- [porunov/acme_client](https://github.com/porunov/acme_client)
+
 ## nginx
 
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
