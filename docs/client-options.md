@@ -48,6 +48,10 @@ third party clients.
 - [hlandau/acme](https://github.com/hlandau/acme)
 - [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
 
+## Java
+
+- [porunov/acme_client](https://github.com/porunov/acme_client)
+
 ## HAProxy
 
 - [HAProxy ACME validation plugin](https://github.com/janeczku/haproxy-acme-validation-plugin)
