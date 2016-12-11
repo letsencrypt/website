@@ -47,6 +47,7 @@ third party clients.
 - [GoACME](https://github.com/google/goacme)
 - [hlandau/acme](https://github.com/hlandau/acme)
 - [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
+- [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
 
 ## HAProxy
 
