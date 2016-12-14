@@ -10,6 +10,7 @@ top_graphic: 1
 * [Getting Started](/getting-started/)
 * [How Let's Encrypt Works](/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [What is a Certificate?](/docs/what-is-a-certificate/)
 
 # Subscriber Information
 
