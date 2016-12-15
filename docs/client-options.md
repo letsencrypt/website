@@ -85,7 +85,7 @@ third party clients.
 
 - [No Sudo Client](https://github.com/diafygi/letsencrypt-nosudo)
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
-- [simp_le](https://github.com/kuba/simp_le)
+- [simp_le](https://github.com/zenhack/simp_le)
 - [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient)
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
 - [Let's ACME](https://github.com/neurobin/letsacme)
