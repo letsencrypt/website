@@ -133,6 +133,7 @@ third party clients.
 ## Perl
 
 - [Crypt::LE](https://github.com/do-know/Crypt-LE)
+- [Net::ACME](https://metacpan.org/pod/Net::ACME)
 - [sludin/Protocol-ACME](https://github.com/sludin/Protocol-ACME)
 
 ## PHP
