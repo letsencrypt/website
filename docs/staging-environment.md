@@ -22,3 +22,7 @@ The staging environment uses the same rate limits as [described for the producti
 
 * The **Certificates per Registered Domain** limit is 30,000 per week.
 * The **Duplicate Certificate** limit is 30,000 per week.
+
+# Root Certificate
+
+The staging environment intermediate certificate (["Fake LE Intermediate X1"](/certs/fakeleintermediate.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a client to trust the staging environment for testing purposes you can do so by adding the ["Fake LE Root X1"](/certs/fakelerootx1.pem) certificate from the [certificates](/certificates/) page to your testing trust store.
