@@ -39,16 +39,6 @@ Under normal circumstances, certificates issued by Let’s Encrypt will come fro
   * Let's Encrypt Authority X1 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x1-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x1-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x1-cross-signed.der)\]
     * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx1.pem.txt)\] \[[pem](/certs/letsencryptauthorityx1.pem)\] \[[der](/certs/letsencryptauthorityx1.der)\]
 
-# Staging Environment
-
-Our [staging environment](/docs/staging-environment/) uses separate root and intermediate certificates that are not present in browser/client truststores.
-
-Root Certificate:
-* Fake LE Root X1: \[[txt](/certs/fakelerootx1.pem.txt)\] \[[pem](/certs/fakelerootx1.pem)\] \[[der](/certs/fakelerootx1.der)\]
-
-Intermediate Certificate:
-* Fake LE Intermediate X1: \[[txt](/certs/fakeleintermediatex1.pem.txt)\] \[[pem](/certs/fakeleintermediatex1.pem)\] \[[der](/certs/fakeleintermediatex1.der)\]
-
 # Cross Signing
 
 Our intermediate “Let’s Encrypt Authority X3” represents a single public/private
