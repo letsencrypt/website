@@ -26,6 +26,9 @@ task :test do
       # Compose.com seems to have load balancing and at least 1 server fails
       # with a hostname mismatch error
       /compose\.com/,
+      # Mojzis.com is failing with "SSL connect error", unclear why
+      # TODO(@cpu): diagnose mojzis.com TLS error
+      /mojzis\.com/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
