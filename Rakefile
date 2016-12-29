@@ -4,12 +4,26 @@ task :test do
   sh "bundle exec jekyll build"
   HTMLProofer.check_directory("./_site", {
     :url_ignore => [
+      # Do not check the ISRG Root test pages - the CI system won't have the X1
+      # root available in /etc/ssl/certs to verify "valid-isrgrootx1" and the
+      # others are deliberately expired & revoked.
       /expired-isrgrootx1\.letsencrypt\.org/,
       /revoked-isrgrootx1\.letsencrypt\.org/,
       /valid-isrgrootx1\.letsencrypt\.org/,
+      # Do not check the 'certificateautomation.com' website - it has a broken
+      # TLS configuration (missing intermediate)
+      /certificateautomation\.com/,
+      # TLS 1.2 only sites are currently broken
+      # TODO(@cpu): figure out how to upgrade Curl in CI
+      /www\.froxlor\.org/,
+      /kristaps\.bsd\.lv/,
+      # The ALA website seems to time out, skip it
+      # TODO(@cpu): figure out how to tweak typhoeus timeout
+      /www.ala.org/,
     ],
     :typhoeus => {
-      :capath => "/etc/ssl/certs"
+      :capath => "/etc/ssl/certs",
+      :verbose => true,
     }
   }).run
 end
