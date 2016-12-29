@@ -23,7 +23,6 @@ task :test do
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
-      :verbose => true,
     }
   }).run
 end
