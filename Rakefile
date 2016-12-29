@@ -23,6 +23,9 @@ task :test do
       # Crates.io returns errors when curl'd. Maybe UA/Content Type sniffing?
       # TODO(@cpu): figure out how to curl https://crates.io/ for HTML
       /crates\.io/,
+      # Compose.com seems to have load balancing and at least 1 server fails
+      # with a hostname mismatch error
+      /compose\.io/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
