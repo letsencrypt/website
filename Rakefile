@@ -19,7 +19,10 @@ task :test do
       /kristaps\.bsd\.lv/,
       # The ALA website seems to time out, skip it
       # TODO(@cpu): figure out how to tweak typhoeus timeout
-      /www.ala.org/,
+      /www\.ala\.org/,
+      # Crates.io returns errors when curl'd. Maybe UA/Content Type sniffing?
+      # TODO(@cpu): figure out how to curl https://crates.io/ for HTML
+      /crates\.io/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
