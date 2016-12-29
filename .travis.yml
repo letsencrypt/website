@@ -1,5 +1,6 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.2.2
 script:
   - bundle exec jekyll build
+  - rake test

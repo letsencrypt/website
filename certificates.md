@@ -68,7 +68,7 @@ configuration seamlessly.
 The following picture explains the relationships between our certificates
 visually:
 
-<img src="/certs/isrg-keys.png">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
 
 # Certificate Transparency
 
