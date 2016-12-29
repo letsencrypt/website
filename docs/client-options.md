@@ -62,11 +62,6 @@ third party clients.
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
 - [acme-nginx](https://github.com/kshcherban/acme-nginx)
 
-## Node.js
-
-- [Daplie/letsencrypt-cli](https://github.com/Daplie/letsencrypt-cli)
-- [Daplie/letsencrypt-express](https://github.com/Daplie/letsencrypt-express)
-
 ## Perl
 
 - [le.pl](https://github.com/do-know/Crypt-LE) (aka [ZeroSSL](https://ZeroSSL.com/))
@@ -128,7 +123,6 @@ third party clients.
 
 ## Node.js
 
-- [Daplie/letsencrypt](https://github.com/Daplie/node-letsencrypt)
 - [letsencrypt/boulder](https://github.com/letsencrypt/boulder/tree/master/test/js)
 
 ## Perl
