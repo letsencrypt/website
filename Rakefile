@@ -25,7 +25,7 @@ task :test do
       /crates\.io/,
       # Compose.com seems to have load balancing and at least 1 server fails
       # with a hostname mismatch error
-      /compose\.io/,
+      /compose\.com/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
