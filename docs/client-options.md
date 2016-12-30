@@ -87,6 +87,7 @@ third party clients.
 - [Let's ACME](https://github.com/neurobin/letsacme)
 - [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
 - [wile](https://github.com/costela/wile)
+- [acmebot](https://github.com/plinss/acmebot)
 
 ## Ruby
 
