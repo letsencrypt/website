@@ -64,8 +64,8 @@ third party clients.
 
 ## Node.js
 
-- [Daplie/letsencrypt-cli](https://github.com/Daplie/letsencrypt-cli)
-- [Daplie/letsencrypt-express](https://github.com/Daplie/letsencrypt-express)
+- [Daplie/letsencrypt-cli](https://gitlab.com/Daplie/letsencrypt-cli)
+- [Daplie/letsencrypt-express](https://gitlab.com/Daplie/letsencrypt-express)
 
 ## Perl
 
@@ -92,6 +92,7 @@ third party clients.
 - [Let's ACME](https://github.com/neurobin/letsacme)
 - [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
 - [wile](https://github.com/costela/wile)
+- [acmebot](https://github.com/plinss/acmebot)
 
 ## Ruby
 
@@ -128,7 +129,7 @@ third party clients.
 
 ## Node.js
 
-- [Daplie/letsencrypt](https://github.com/Daplie/node-letsencrypt)
+- [Daplie/letsencrypt](https://gitlab.com/Daplie/node-letsencrypt)
 - [letsencrypt/boulder](https://github.com/letsencrypt/boulder/tree/master/test/js)
 
 ## Perl

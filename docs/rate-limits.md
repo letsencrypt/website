@@ -63,6 +63,11 @@ renewals of existing certificates.
 Revoking certificates does not reset rate limits, because the resources used to
 issue those certificates have already been consumed.
 
+We have also recently (December 2016) introduced a rate limit on overall request
+volume. The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
+Request Per Second** rate limit of 20 requests per second. All other endpoints
+have a rate limit of 2000 requests per second.
+
 We have two other limits that you're very unlikely to run into.
 
 You can create a maximum of 500 **Registrations per IP Address** per 3 hours.
