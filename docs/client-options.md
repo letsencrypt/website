@@ -66,6 +66,7 @@ third party clients.
 
 - [Daplie/letsencrypt-cli](https://gitlab.com/Daplie/letsencrypt-cli)
 - [Daplie/letsencrypt-express](https://gitlab.com/Daplie/letsencrypt-express)
+- [rhabenbacher/letsencryptclient](https://github.com/rhabenbacher/letsencryptclient)
 
 ## Perl
 
