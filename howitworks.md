@@ -16,7 +16,7 @@ on your web host.
 To figure out what method will work best for you, you will need to know whether
 you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
 as SSH access) to your web host. If you manage your website entirely through a
-control panel like [cPanel](https://cpanel.com/) or
+control panel like [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
 [WordPress](https://wordpress.org/), there's a good chance you don't have shell
 access. You can ask your hosting provider to be sure.
 
