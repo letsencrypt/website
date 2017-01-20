@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2016-08-10T00:00
+date: 2017-01-20T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -63,14 +63,17 @@ renewals of existing certificates.
 Revoking certificates does not reset rate limits, because the resources used to
 issue those certificates have already been consumed.
 
-We have also recently (December 2016) introduced a rate limit on overall request
-volume. The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
-Request Per Second** rate limit of 20 requests per second. All other endpoints
-have a rate limit of 2000 requests per second.
+We will soon (January 2016) introduce a **Failed Validation** limit of 5 failures
+per account, per hostname, per hour. This limit will be higher on staging so you
+can use staging to debug connectivity problems.
+
+The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
+Requests** limit of 20 per second. All other endpoints have an Overall Requests
+limit of 2000 per second.
 
 We have two other limits that you're very unlikely to run into.
 
-You can create a maximum of 500 **Registrations per IP Address** per 3 hours.
+You can create a maximum of 500 **Accounts per IP Address** per 3 hours.
 Hitting this rate limit is very rare.
 
 You can have a maximum of 300 **Pending Authorizations** on your account. Hitting
