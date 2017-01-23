@@ -3,7 +3,7 @@ layout: page
 title: Staging Environment
 permalink: /docs/staging-environment/
 top_graphic: 1
-date: 2016-07-02T00:00
+date: 2017-01-23T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
