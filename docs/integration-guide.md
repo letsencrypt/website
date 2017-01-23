@@ -56,6 +56,16 @@ In ACME, it's possible to create one account and use it for all authorizations a
 
 However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, easier to keep contact information up-to-date, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
+# Few Names Per Certificate or Many?
+
+Our [rate limits](/docs/rate-limits/) allow for up to 100 names per certificate. How to distribute names across certificates is largely a question of individual needs.
+
+Favouring many certificates with few names on each means less moving parts are required to logically add and remove domains as they are provisioned and retired. Less names per certificate also means a smaller overall certificate size.
+
+Putting many names on one certificate has the advantage of requiring management and distribution of fewer certificates overall. For providers expecting to handle clients that do not support TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)) putting more names on each certificate can reduce the overhead costs associated with dedicated IP addresses for each certificate.
+
+For most deployments both choices offer the same security. Typically it will be the same hardware and software that will be accessing private key material and terminating the TLS connection whether the certificates are small or large.
+
 # Storing and Reusing Certificates and Keys
 
 A big part of Let's Encrypt's value is that it enables automatic issuance as part of provisioning a new website.  However, if you have infrastructure that may repeatedly create new frontends for the same website, those frontends should first try to use a certificate and private key from durable storage, and only issue a new one if no certificate is available, or all existing certificates are expired.
