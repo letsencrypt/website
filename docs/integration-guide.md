@@ -56,15 +56,15 @@ In ACME, it's possible to create one account and use it for all authorizations a
 
 However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, easier to keep contact information up-to-date, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
-# Few Names Per Certificate or Many?
+# Multi-domain (SAN) Certificates
 
-Our [rate limits](/docs/rate-limits/) allow for up to 100 names per certificate. How to distribute names across certificates is largely a question of individual needs.
+Our [issuance policy](/docs/rate-limits/) allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
 
-Favouring many certificates with few names on each means less moving parts are required to logically add and remove domains as they are provisioned and retired. Less names per certificate also means a smaller overall certificate size.
+Separate certificates per hostname on each means fewer moving parts are required to logically add and remove domains as they are provisioned and retired. Separate certificates also minimize certificate size, which can speed up HTTPS handshakes on low-bandwidth networks.
 
-Putting many names on one certificate has the advantage of requiring management and distribution of fewer certificates overall. For providers expecting to handle clients that do not support TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)) putting more names on each certificate can reduce the overhead costs associated with dedicated IP addresses for each certificate.
+On the other hand, using large certificates with many hostnames allows you to manage fewer certificates overall. If you need to support older clients like Windows XP that do not support TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), you'll need a unique IP address for every certificate, so putting more names on each certificate reduces the number of IP addresses you'll need.
 
-For most deployments both choices offer the same security. Typically it will be the same hardware and software that will be accessing private key material and terminating the TLS connection whether the certificates are small or large.
+For most deployments both choices offer the same security.
 
 # Storing and Reusing Certificates and Keys
 
