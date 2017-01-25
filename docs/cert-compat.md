@@ -46,3 +46,5 @@ You may want to visit [this particular community forum discussion](https://commu
   * cannot handle SHA-2 signed certificates
 * Java 7 < 7u111
 * Java 8 < 8u101
+* Windows Live Mail (2012 mail client, not webmail)
+  * cannot handle certificates without a CRL
