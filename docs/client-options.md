@@ -33,6 +33,7 @@ third party clients.
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
 - [Certificate Automation](https://www.certificateautomation.com/)
+- [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
