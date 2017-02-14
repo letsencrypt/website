@@ -131,7 +131,6 @@ third party clients.
 ## Node.js
 
 - [Daplie/node-greenlock](https://git.daplie.com/Daplie/node-greenlock)
-- [letsencrypt/boulder](https://github.com/letsencrypt/boulder/tree/master/test/js)
 
 ## Perl
 
