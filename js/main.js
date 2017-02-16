@@ -40,6 +40,10 @@ var dropdownListener = function(el) {
   el.addEventListener('click', function (e) {
     el.classList.toggle('isOpen');
     el.querySelector('.pure-menu-children').classList.toggle('show-children');
+
+    if (window.innerWidth < 731) {
+      e.preventDefault();
+    }
   });
 };
 
