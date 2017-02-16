@@ -67,5 +67,11 @@ document.getElementById('menuIcon').addEventListener('click', function (e) {
     toggleMenu();
 });
 
+[].forEach.call(
+  document.getElementById('menu').querySelectorAll('.pure-menu-has-children'), function(el) {
+    el.firstElementChild.addEventListener('click', function (e) {e.preventDefault();});
+  }
+);
+
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 })(this, this.document);
