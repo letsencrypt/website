@@ -3,10 +3,44 @@ layout: page
 title: FAQ
 permalink: /docs/faq/
 top_graphic: 1
-date: 2016-07-07T00:00
+date: 2017-2-22T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
+
+This FAQ is divided into the following sections:
+
+* [General Questions](#general)
+* [Technical Questions](#technical)
+
+# <a name="general">General Questions</a>
+
+## What services does Let's Encrypt offer?
+
+Let's Encrypt is global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
+
+Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV), Extended Validation (EV), or wildcard certificates, primarily because we cannot automate issuance for those types of certificates.
+
+To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
+
+## What does it cost to use Let's Encrypt? Is it really free?
+
+We do not charge a fee for our certificates. Let’s Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
+
+We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate/) or [becoming a sponsor](/become-a-sponsor/).
+
+In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let’s Encrypt certificates.
+
+## What kind of support do you offer?
+
+Let’s Encrypt is run by a small team and relies on automation to keep costs down. That being the case, we are not able to offer direct support to our subscribers. We do have some great support options though:
+
+1. We have really helpful [documentation](/docs/).
+2. We have very active and helpful [community support forums](https://community.letsencrypt.org/). Members of our community do a great job of answering questions, and many of the most common questions have already been answered.
+
+Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
+
+# <a name="technical">Technical Questions</a>
 
 ## Are certificates from Let’s Encrypt trusted by my browser?
 
