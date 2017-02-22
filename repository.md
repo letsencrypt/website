@@ -52,6 +52,8 @@ top_graphic: 1
 
 ## Operational Audits
 
+* December 15, 2016: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=2193)
+* December 15, 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](https://cert.webtrust.org/ViewSeal?id=2194)
 * December 15, 2015: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=1987)
 * December 15, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](https://cert.webtrust.org/ViewSeal?id=1988)
 
