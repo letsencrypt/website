@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.2.2
-dist: trusty
+sudo: required
 gemfile: Gemfile.ci
 script:
   - bundle exec jekyll build
