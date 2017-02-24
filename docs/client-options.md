@@ -32,7 +32,6 @@ third party clients.
 
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
-- [Key Manager Plus](https://www.manageengine.com/key-manager/) (ManageEngine Key Manager Plus)
 - [Certificate Automation](https://www.certificateautomation.com/)
 - [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
 
@@ -57,6 +56,7 @@ third party clients.
 
 ## Java
 
+- [Key Manager Plus](https://www.manageengine.com/key-manager/) (End-to-end Certificate Life-cycle Management with Let's Encrypt)
 - [porunov/acme_client](https://github.com/porunov/acme_client)
 
 ## nginx
