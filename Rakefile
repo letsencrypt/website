@@ -23,7 +23,7 @@ task :test do
       :forbid_reuse => true,
       # The default Typhoeus timeout is low enough to cause intermitent failures
       # (particularly for one or two slower websites).
-      :timeout => 15,
+      :timeout => 60,
     }
   }).run
 end
