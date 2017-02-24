@@ -24,6 +24,10 @@ task :test do
       # The default Typhoeus timeout is low enough to cause intermitent failures
       # (particularly for one or two slower websites).
       :timeout => 15,
+      # Without specifying a browser-like Accept header `crates.io` will return
+      # a JSON API error. This Accept header is sourced from Chrome to avoid
+      # server configurations blocking non-standard Accept headers (e.g. WAFs)
+      :headers => { :Accept => "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" },
     }
   }).run
 end
