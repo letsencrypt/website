@@ -56,8 +56,8 @@ third party clients.
 
 ## Java
 
-- [Key Manager Plus](https://www.manageengine.com/key-manager/) (End-to-end Certificate Life-cycle Management)
 - [porunov/acme_client](https://github.com/porunov/acme_client)
+- [Key Manager Plus](https://www.manageengine.com/key-manager/)
 
 ## nginx
 
