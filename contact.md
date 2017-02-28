@@ -19,7 +19,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailing Lists
 
-For information about various technical mailing lists, please visit our [Get Involved](/getinvolved/) page.
+For information about various technical mailing lists, please visit our [Get Involved](/getinvolved.md/) page.
 
 ## Security
 
