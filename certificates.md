@@ -10,7 +10,7 @@ top_graphic: 5
 Our roots are kept safely offline, we issue end-entity certificates to subscribers from the intermediates in the next section.
 
 * Active
-  * ISRG Root X1 \[[txt](/certs/isrgrootx1.pem.txt)\] \[[pem](/certs/isrgrootx1.pem)\] \[[der](/certs/isrgrootx1.der)\]
+  * [ISRG Root X1 (self-signed)](/certs/isrgrootx1.pem.txt)
 
 We've set up websites to test certificates chaining to our roots.
 
@@ -28,16 +28,16 @@ IdenTrust has cross-signed our intermediates. This allows our end certificates t
 Under normal circumstances, certificates issued by Let’s Encrypt will come from “Let’s Encrypt Authority X3”. The other intermediate, “Let’s Encrypt Authority X4”, is reserved for disaster recovery and will only be used should we lose the ability to issue with “Let’s Encrypt Authority X3”. The X1 and X2 intermediates were our first generation of intermediates. We've replaced them with new intermediates that are more compatible with Windows XP.
 
 * Active
-  * Let's Encrypt Authority X3 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x3-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x3-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x3-cross-signed.der)\]
-    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx3.pem.txt)\] \[[pem](/certs/letsencryptauthorityx3.pem)\] \[[der](/certs/letsencryptauthorityx3.der)\]
+  * [Let's Encrypt Authority X3 (IdenTrust cross-signed)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
+    * [Let's Encrypt Authority X3 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx3.pem.txt)
 * Backup
-  * Let's Encrypt Authority X4 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x4-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x4-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x4-cross-signed.der)\]
-    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx4.pem.txt)\] \[[pem](/certs/letsencryptauthorityx4.pem)\] \[[der](/certs/letsencryptauthorityx4.der)\]
+  * [Let's Encrypt Authority X4 (IdenTrust cross-signed)](/certs/lets-encrypt-x4-cross-signed.pem.txt)
+    * [Let's Encrypt Authority X4 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx4.pem.txt)
 * Retired
-  * Let's Encrypt Authority X2 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x2-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x2-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x2-cross-signed.der)\]
-    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx2.pem.txt)\] \[[pem](/certs/letsencryptauthorityx2.pem)\] \[[der](/certs/letsencryptauthorityx2.der)\]
-  * Let's Encrypt Authority X1 (IdenTrust cross-signed): \[[txt](/certs/lets-encrypt-x1-cross-signed.pem.txt)\] \[[pem](/certs/lets-encrypt-x1-cross-signed.pem)\] \[[der](/certs/lets-encrypt-x1-cross-signed.der)\]
-    * Signed by ISRG Root X1: \[[txt](/certs/letsencryptauthorityx1.pem.txt)\] \[[pem](/certs/letsencryptauthorityx1.pem)\] \[[der](/certs/letsencryptauthorityx1.der)\]
+  * [Let's Encrypt Authority X2 (IdenTrust cross-signed)](/certs/lets-encrypt-x2-cross-signed.pem.txt)
+    * [Let's Encrypt Authority X2 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx2.pem.txt)
+  * [Let's Encrypt Authority X1 (IdenTrust cross-signed)](/certs/lets-encrypt-x1-cross-signed.pem.txt)
+    * [Let's Encrypt Authority X1 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx1.pem.txt)
 
 # Cross Signing
 
@@ -69,6 +69,16 @@ The following picture explains the relationships between our certificates
 visually:
 
 <img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+
+# OCSP Signing Certificate
+
+This certificate is used to sign OCSP responses for the Let's Encrypt Authority
+intermediates, so that we don't need to bring the root key online in order to
+sign those responses. A copy of this certificate is included automatically in
+those OCSP responses, so Subscribers don't need to do anything with it. It is
+included here for informational purposes only.
+
+* [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
 # Certificate Transparency
 
