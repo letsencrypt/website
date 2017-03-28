@@ -15,6 +15,11 @@ task :test do
       # globally causes two other sites (likely using WAFs?) to forbid the
       # requests. For now, ignore crates.io.
       /crates\.io/,
+      # Presently the client-options page links to "https://www.froxlor.org",
+      # which has a certificate hostname mismatch. "http://froxlor.org"
+      # indicates they're having a major outage so for now their URL is added to
+      # the :url_ignore list.
+      /www\.froxlor\.org/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
