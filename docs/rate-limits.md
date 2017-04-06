@@ -63,7 +63,7 @@ renewals of existing certificates.
 Revoking certificates does not reset rate limits, because the resources used to
 issue those certificates have already been consumed.
 
-We will soon (February 2017) introduce a **Failed Validation** limit of 5 failures
+We recently (April 2017) introduced a **Failed Validation** limit of 5 failures
 per account, per hostname, per hour. This limit will be higher on staging so you
 can use staging to debug connectivity problems.
 
