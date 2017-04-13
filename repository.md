@@ -17,12 +17,14 @@ top_graphic: 1
 
 # ISRG Certificate Policy
 
+* [v1.3, April 13, 2017](/documents/ISRG-CP-v1.3.pdf)
 * [v1.2, May 5, 2016](/documents/ISRG-CP-May-5-2016.pdf)
 * [v1.1, September 9, 2015](/documents/ISRG-CP-September-9-2015.pdf)
 * [v1.0, May 5, 2015](/documents/ISRG-CP-May-5-2015.pdf)
 
 # ISRG Certification Practice Statement
 
+* [v2.0, April 13, 2017](/documents/isrg-cps-v2.0/)
 * [v1.5, October 18, 2016](/documents/ISRG-CPS-October-18-2016.pdf)
 * [v1.4, May 5, 2016](/documents/ISRG-CPS-May-5-2016.pdf)
 * [v1.3, March 16, 2016](/documents/ISRG-CPS-March-16-2016.pdf)
