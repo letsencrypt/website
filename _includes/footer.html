@@ -1,4 +1,6 @@
 {% if page.path != 'donate.html' %}
+{% if page.path contains 'documents/' %}
+{% else %}
 <div class="donate-footer">
   <div class="wrapper text-center">
     <h2>Support a more secure and privacy-respecting Web.</h2>
@@ -7,6 +9,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 {% endif %}
 
 <footer class="site-footer">
