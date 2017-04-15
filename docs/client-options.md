@@ -50,6 +50,7 @@ third party clients.
 - [hlandau/acme](https://github.com/hlandau/acme)
 - [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
+- [autocert] (https://godoc.org/golang.org/x/crypto/acme/autocert)
 
 ## HAProxy
 
