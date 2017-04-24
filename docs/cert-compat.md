@@ -32,6 +32,7 @@ You may want to visit [this particular community forum discussion](https://commu
 * Kindle > v3.4.1
 * Java 7 >= 7u111
 * Java 8 >= 8u101
+* Blackberry >= 10.3.3
 
 # Possibly Incompatible
 
@@ -39,7 +40,7 @@ You may want to visit [this particular community forum discussion](https://commu
 
 # Known Incompatible
 
-* Blackberry OS v10, v7, & v6
+* Blackberry < v10.3.3
 * Android < v2.3.6
 * Nintendo 3DS
 * Windows XP prior to SP3
