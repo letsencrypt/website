@@ -17,7 +17,7 @@ This FAQ is divided into the following sections:
 
 ## What services does Let's Encrypt offer?
 
-Let's Encrypt is global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
+Let's Encrypt is a global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
 
 Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV), Extended Validation (EV), or wildcard certificates, primarily because we cannot automate issuance for those types of certificates.
 
