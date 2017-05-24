@@ -87,3 +87,8 @@ Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org
 ## What IP addresses does Let's Encrypt use to validate my web server?
 
 We don't publish a list of IP addresses we use to validate, because they may change at any time. In the future we may validate from multiple IP addresses at once.
+
+## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
+
+Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. The cache lifetime was originally 10 months, but we have since reduced that to 60 days. Cached authorizations will have whatever cache lifetime was our policy when
+the authorization was created. If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
