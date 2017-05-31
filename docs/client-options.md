@@ -38,6 +38,9 @@ third party clients.
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
 
+## Clojure
+- [certificaat](https://github.com/danielsz/certificaat)
+
 ## Docker
 - [tls_certificate_generation](https://github.com/leandromoreira/tls_certificate_generation)
 - [ZeroSSL](https://hub.docker.com/r/zerossl/client/)
