@@ -62,7 +62,7 @@ The private key is always generated and managed on your own servers, not by the 
 
 Our certificates are valid for 90 days. You can read about why [here](https://letsencrypt.org/2015/11/09/why-90-days.html).
 
-There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 30 days.
+There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
 
 ## Will Let’s Encrypt issue Organization Validation (OV) or Extended Validation (EV) certificates?
 
@@ -90,5 +90,5 @@ We don't publish a list of IP addresses we use to validate, because they may cha
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. The cache lifetime was originally 10 months, but we have since reduced that to 60 days. Cached authorizations will have whatever cache lifetime was our policy when
+Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. The cache lifetime was originally 10 months, but we have since reduced that to 30 days. Cached authorizations will have whatever cache lifetime was our policy when
 the authorization was created. If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
