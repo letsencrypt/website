@@ -184,3 +184,4 @@ third party clients.
 - [Virtualmin Web Hosting Control Panel](https://www.virtualmin.com/)
 - [Plesk Web Hosting Control Panel](https://www.plesk.com/)
 - [Zappa](https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation)
+- [pfSense](https://www.pfsense.org/)
