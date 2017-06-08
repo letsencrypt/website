@@ -23,6 +23,7 @@ top_graphic: 1
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)
+* [Revoking Certificates](/docs/revoking/)
 
 # Client Developer Information
 
