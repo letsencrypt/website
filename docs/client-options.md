@@ -68,6 +68,7 @@ third party clients.
 
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
 - [acme-nginx](https://github.com/kshcherban/acme-nginx)
+- [ngxpkg](https://github.com/webpkg/ngxpkg)
 
 ## Node.js
 
