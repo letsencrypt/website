@@ -18,6 +18,9 @@ task :test do
       # The ICANN.org website seems to tiemout in the majority of builds.
       # Unclear why, ignoring for now!
       /www\.ICANN\.org/,
+      # www.vtex.com is failing with "Couldn't resolve host name" from CI, but
+      # appears to work fine with manual test.
+      /www\.vtex\.com/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
