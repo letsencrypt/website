@@ -15,11 +15,12 @@ task :test do
       # globally causes two other sites (likely using WAFs?) to forbid the
       # requests. For now, ignore crates.io.
       /crates\.io/,
-      # Presently the client-options page links to "https://www.froxlor.org",
-      # which has a certificate hostname mismatch. "http://froxlor.org"
-      # indicates they're having a major outage so for now their URL is added to
-      # the :url_ignore list.
-      /www\.froxlor\.org/,
+      # The ICANN.org website seems to tiemout in the majority of builds.
+      # Unclear why, ignoring for now!
+      /www\.ICANN\.org/,
+      # www.vtex.com is failing with "Couldn't resolve host name" from CI, but
+      # appears to work fine with manual test.
+      /www\.vtex\.com/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
