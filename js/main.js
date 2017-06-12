@@ -76,6 +76,17 @@ document.getElementById('menuIcon').addEventListener('click', function (e) {
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 
 
+function closeNavMenus(exclude) {
+  [].forEach.call(
+    menu.querySelectorAll('.pure-menu-active'), function(el) {
+      if (el !== exclude) {
+        el.classList.remove('pure-menu-active');
+        el.querySelector('.pure-menu-has-children > .pure-menu-link').setAttribute('aria-expanded', false);
+      }
+    }
+  );
+}
+
 // Initialize nav menu aria roles/state
 menu.querySelector('.pure-menu-list').setAttribute('role', 'menubar');
 
@@ -105,20 +116,26 @@ menu.addEventListener('focusin', function(e) {
 
     var listItemAnchor = listItem.querySelector('.pure-menu-link');
 
-    [].forEach.call(
-      menu.querySelectorAll('.pure-menu-active'), function(el) {
-        if (el !== listItem) {
-          el.classList.remove('pure-menu-active');
-          el.querySelector('.pure-menu-has-children > .pure-menu-link').setAttribute('aria-expanded', false);
-        }
-      }
-    );
+    closeNavMenus(listItem);
 
     if (listItem.classList.contains('pure-menu-has-children')) {
       listItem.classList.add('pure-menu-active');
       listItemAnchor.setAttribute('aria-expanded', true);
     }
   }
+});
+
+
+document.addEventListener('click', closeNavMenus);
+
+document.addEventListener('focusin', function(e) {
+  if (!e.target.classList.contains('pure-menu-link'))
+    closeNavMenus();
+});
+
+document.addEventListener('keyup', function(e) {
+  if (e.keyCode == 27)
+    closeNavMenus();
 });
 
 })(this, this.document);
