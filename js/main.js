@@ -134,7 +134,7 @@ document.addEventListener('focusin', function(e) {
 });
 
 document.addEventListener('keyup', function(e) {
-  if (e.keyCode == 27)
+  if (e.keyCode == 27 && e.target.classList.contains('pure-menu-link'))
     closeNavMenus();
 });
 
