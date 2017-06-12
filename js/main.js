@@ -74,4 +74,68 @@ document.getElementById('menuIcon').addEventListener('click', function (e) {
 );
 
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+
+
+function closeNavMenus(exclude) {
+  [].forEach.call(
+    menu.querySelectorAll('.pure-menu-active'), function(el) {
+      if (el !== exclude) {
+        el.classList.remove('pure-menu-active');
+        el.querySelector('.pure-menu-has-children > .pure-menu-link').setAttribute('aria-expanded', false);
+      }
+    }
+  );
+}
+
+// Initialize nav menu aria roles/state
+menu.querySelector('.pure-menu-list').setAttribute('role', 'menubar');
+
+[].forEach.call(
+  menu.querySelectorAll('.pure-menu-link'), function(el) {
+    el.setAttribute('role', 'menuitem');
+    el.parentNode.setAttribute('role', 'none');
+
+    if (el.parentNode.classList.contains('pure-menu-has-children')) {
+      el.setAttribute('aria-haspopup', true);
+      el.setAttribute('aria-expanded', false);
+
+      var childMenu = el.parentNode.querySelector('.pure-menu-children');
+      childMenu.setAttribute('role', 'menu');
+      childMenu.setAttribute('aria-label', el.text);
+    }
+  }
+);
+
+menu.addEventListener('focusin', function(e) {
+  if (e.target.classList.contains('pure-menu-link')) {
+    var anchor = e.target;
+
+    var listItem = anchor.parentNode;
+    if (listItem.parentNode.classList.contains('pure-menu-children'))
+      listItem = listItem.parentNode.parentNode;
+
+    var listItemAnchor = listItem.querySelector('.pure-menu-link');
+
+    closeNavMenus(listItem);
+
+    if (listItem.classList.contains('pure-menu-has-children')) {
+      listItem.classList.add('pure-menu-active');
+      listItemAnchor.setAttribute('aria-expanded', true);
+    }
+  }
+});
+
+
+document.addEventListener('click', closeNavMenus);
+
+document.addEventListener('focusin', function(e) {
+  if (!e.target.classList.contains('pure-menu-link'))
+    closeNavMenus();
+});
+
+document.addEventListener('keyup', function(e) {
+  if (e.keyCode == 27 && e.target.classList.contains('pure-menu-link'))
+    closeNavMenus();
+});
+
 })(this, this.document);

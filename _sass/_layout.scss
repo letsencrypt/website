@@ -1,6 +1,21 @@
 /**
  * Site header
  */
+
+#skiplink {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px;
+
+  &:focus {
+    position: static;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+  }
+}
+
 .site-header {
     min-height: 108px;
 
