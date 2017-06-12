@@ -74,4 +74,22 @@ document.getElementById('menuIcon').addEventListener('click', function (e) {
 );
 
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+
+
+menu.addEventListener('focusin', function(e) {
+  if (e.target.classList.contains('pure-menu-link')) {
+    var listItem = e.target.parentNode;
+    if (listItem.parentNode.classList.contains('pure-menu-children'))
+      listItem = listItem.parentNode.parentNode;
+
+    [].forEach.call(
+      menu.querySelectorAll('.pure-menu-active'), function(el) {
+        el.classList.remove('pure-menu-active');
+      }
+    );
+
+    listItem.classList.add('pure-menu-active');
+  }
+});
+
 })(this, this.document);
