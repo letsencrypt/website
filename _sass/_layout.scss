@@ -3,13 +3,13 @@
  */
 
 #skiplink {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px);
   overflow: hidden;
   height: 1px;
 
   &:focus {
-    position: static !important;
+    position: static;
     clip: auto;
     overflow: visible;
     height: auto;
