@@ -72,7 +72,7 @@ can use staging to debug connectivity problems.
 
 The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
 Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
-directory & subdirectories have a limit of 40 requests per second.
+directory & subdirectories have an Overall Requests limit of 40 requests per second.
 
 We have two other limits that you're very unlikely to run into.
 
