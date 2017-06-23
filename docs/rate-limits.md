@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2017-02-09T00:00
+date: 2017-06-21T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -71,8 +71,8 @@ per account, per hostname, per hour. This limit will be higher on staging so you
 can use staging to debug connectivity problems.
 
 The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
-Requests** limit of 20 per second. All other endpoints have an Overall Requests
-limit of 2000 per second.
+Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
+directory & subdirectories have an Overall Requests limit of 40 requests per second.
 
 We have two other limits that you're very unlikely to run into.
 
