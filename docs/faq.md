@@ -90,5 +90,5 @@ We don't publish a list of IP addresses we use to validate, because they may cha
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. The cache lifetime was originally 10 months, but we have since reduced that to 30 days. Cached authorizations will have whatever cache lifetime was our policy when
-the authorization was created. If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
+If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
