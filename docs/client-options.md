@@ -176,6 +176,7 @@ third party clients.
 # Projects integrating with Let's Encrypt
 
 - [Caddy](https://caddyserver.com/)
+- [cPanel](https://cpanel.com/)
 - [Own-Mailbox](https://www.own-mailbox.com/)
 - [Daplie](https://daplie.com/walnut)
 - [Cloudfleet](https://cloudfleet.io/)
@@ -189,4 +190,3 @@ third party clients.
 - [Zappa](https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation)
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
-
