@@ -22,7 +22,8 @@ The staging environment uses the same rate limits as [described for the producti
 
 * The **Certificates per Registered Domain** limit is 30,000 per week.
 * The **Duplicate Certificate** limit is 30,000 per week.
-* The **Failed Validations** limit will be 60 per hour.
+* The **Failed Validations** limit is 60 per hour.
+* The **Accounts per IP Address** limit is 50 accounts per three 3 hour period per IP.
 
 # Root Certificate
 
