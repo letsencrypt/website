@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2017-06-21T00:00
+date: 2017-06-30T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -76,8 +76,10 @@ directory & subdirectories have an Overall Requests limit of 40 requests per sec
 
 We have two other limits that you're very unlikely to run into.
 
-You can create a maximum of 500 **Accounts per IP Address** per 3 hours.
-Hitting this rate limit is very rare.
+You can create a maximum of 10 **Accounts per IP Address** per 3 hours. You can
+create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
+3 hours. Hitting either account rate limit is very rare, and we recommend that
+large integrators prefer a design [using one account for many customers](/docs/integration-guide).
 
 You can have a maximum of 300 **Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
