@@ -1,0 +1,39 @@
+.callout {
+  background-image: linear-gradient(#ecdfd6 50%, #c1ac8f 98%);
+}
+
+.secondary-callout {
+  // These are both derived from $brand-color
+  // background-image: linear-gradient(#dbe9fa 50%, #86b3ee 98%)
+  background-color: rgb(163, 200, 199);
+}
+
+.callout, .secondary-callout, .hero {
+  margin-bottom: 15px;
+  padding: 10px 40px;
+}
+
+.callout, .secondary-callout {
+  border: 1px solid rgb(50, 85, 143);
+
+  h2, h3 {
+    font-weight: bold;
+  }
+
+  .pop {
+    color: rgb(254, 229, 153);
+    text-shadow: 1px 1px 2px #444;
+  }
+}
+
+.secondary-callout {
+  h2 {
+    margin-bottom: 5px;
+  }
+  h3 {
+    margin-bottom: 25px;
+  }
+  img {
+    float: left;
+  }
+}
