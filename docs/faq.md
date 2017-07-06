@@ -3,7 +3,7 @@ layout: page
 title: FAQ
 permalink: /docs/faq/
 top_graphic: 1
-date: 2017-2-22T00:00
+date: 2017-7-06T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -19,7 +19,7 @@ This FAQ is divided into the following sections:
 
 Let's Encrypt is a global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
 
-Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV), Extended Validation (EV), or wildcard certificates, primarily because we cannot automate issuance for those types of certificates.
+Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
 
 To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
 
@@ -74,7 +74,7 @@ Yes, the same certificate can contain several different names using the Subject 
 
 ## Will Let’s Encrypt issue wildcard certificates?
 
-We currently have no plans to do so, but it is a possibility in the future. Hopefully wildcards aren’t necessary for the vast majority of our potential subscribers because it should be easy to get and manage certificates for all subdomains.
+We intend to support wildcard certificates [in January 2018](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html) as part of the [ACMEv2](https://letsencrypt.org/2017/06/14/acme-v2-api.html) endpoint. Wildcard issuance will require base domain validation using DNS-01 challenges.
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
