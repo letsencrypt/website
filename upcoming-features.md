@@ -5,6 +5,10 @@ permalink: /upcoming-features/
 top_graphic: 1
 ---
 
+## Wildcard Certificates
+
+* ETA: January, 2018
+
 ## ECDSA Root and Intermediates
 
 * ETA: Before September 1, 2017
