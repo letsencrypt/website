@@ -3,6 +3,11 @@
 
 var numFormat = /\d+/;
 
+var history_cutover = {
+  x: "2017-07-03", y: 33926513, xref: "x", yref: "y",
+  text: "Methodology Change", showarrow: true, arrowhead: 7, ax: -40, ay: 40
+};
+
 // Process a string `s` and, for each row (line), call `f()` with an
 // array of each tab-separated value within that row.
 function parse_tsv(s, f) {
@@ -96,7 +101,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
         yanchor: "top",
         x: 0,
         y: 1
-      }
+      },
+      annotations: [ history_cutover ]
     }
     activeUsage = document.getElementById('activeUsage');
     if (activeUsage) {
@@ -172,7 +178,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
         yanchor: "top",
         x: 0,
         y: 1
-      }
+      },
+      annotations: [ history_cutover ]
     }
     combinedTimeline = document.getElementById('combinedTimeline');
     if (combinedTimeline) {
