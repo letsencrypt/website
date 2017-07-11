@@ -25,7 +25,10 @@ These statistics are updated daily.
 </div>
 
 ## Code
+Since the [2017-07-03 methodology change](https://community.letsencrypt.org/t/adjustments-to-the-lets-encrypt-statistics-methodology/):
+- [ct-mapreduce](https://github.com/jcjones/ct-mapreduce) ingests data from CT logs and Firefox Telemetry, and produces statistics about Let's Encrypt.
 
+Before 2017-07-03:
 - [ct-sql](https://github.com/jcjones/ct-sql) ingests data from Censys.io, CT logs, and Firefox Telemetry.
 - [ct-sql-queries](https://github.com/jcjones/ct-sql-queries) contains the SQL queries run periodically to construct the data.
 
