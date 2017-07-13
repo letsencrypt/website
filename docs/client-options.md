@@ -102,6 +102,7 @@ third party clients.
 - [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
 - [wile](https://github.com/costela/wile)
 - [acmebot](https://github.com/plinss/acmebot)
+- [sewer](https://github.com/komuW/sewer)
 
 ## Ruby
 
