@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.Description }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@letsencrypt">
+    {{ if .Title }}
+    <meta name="twitter:title" content="{{ .Title }}">
+    {{ else }}
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    {{ end }}
+
+    {{ if .URL }}
+    <meta name="twitter:url" content="{{ .Site.BaseURL }}{{ .URL }}">
+    {{ end }}
+    {{ if .Description }}
+    <meta name="twitter:description" content="{{ .Description }}">
+    {{ else }}
+    <meta name="twitter:description" content="{{ .Site.Params.Description }}">
+    {{ end }}
+    <meta name="twitter:image:src" content="{{ .Site.BaseURL }}images/le-logo-twitter.png">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+    {{ if .URL }}
+    <link rel="canonical" href="{{ .Site.BaseURL }}{{ if ne "index.html" .URL }}{{ .URL }}{{ end }}">
+    {{ else }}
+    <!-- XXXJOSH make sure this is correct, only applies to home page -->
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
+    {{ end }}
+    <link rel="alternate" href="https://letsencrypt.org/feed.xml" type="application/rss+xml" title="Let's Encrypt Blog Feed" />
+</head>
