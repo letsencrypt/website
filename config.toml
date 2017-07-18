@@ -3,4 +3,6 @@ title = "Let's Encrypt - Free SSL/TLS Certificates"
 
 [params]
 
-description = "Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG)."
+description = "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG)."
+github_username = "letsencrypt"
+twitter_username = "letsencrypt"
