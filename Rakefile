@@ -21,6 +21,9 @@ task :test do
       # www.vtex.com is failing with "Couldn't resolve host name" from CI, but
       # appears to work fine with manual test.
       /www\.vtex\.com/,
+      # thebestvpn.com has been down for two days at the time of writing.
+      # Adding to the ignore list.
+      /thebestvpn\.com/,
     ],
     :typhoeus => {
       :capath => "/etc/ssl/certs",
