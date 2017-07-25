@@ -9,6 +9,10 @@ top_graphic: 1
 
 * ETA: January, 2018
 
+## Embed SCT receipts in certificates
+
+* ETA: December, 2017
+
 ## ECDSA Root and Intermediates
 
 * ETA: Before September 1, 2017
