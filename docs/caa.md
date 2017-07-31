@@ -29,6 +29,10 @@ provider is listed, you can use
 [SSLMate's CAA Record Generator](https://sslmate.com/labs/caa/) to generate a
 set of CAA records listing the CAs that you would like to allow.
 
+Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
+officially documented [in our Certification Practice Statement
+(CPS), section 4.2.1](https://letsencrypt.org/repository/).
+
 ## Where to put the record
 
 You can set CAA records on your main domain, or at any depth of subdomain.
@@ -38,7 +42,10 @@ will check each version, from left to right, and stop as soon as they see any
 CAA record. So for instance, a CAA record at `community.example.com` would take
 precedence over one at `example.com`. Most people who add CAA records will want
 to add them to their registered domain (`example.com`) so that they apply to all
-subdomains.
+subdomains. Also note that CAA records for subdomains take precedence over their
+parent domains regardless of whether they are more permissive or more
+restrictive. So a subdomain can loosen a restriction put in place by a parent
+domain.
 
 CAA validation follows CNAMEs, like all other DNS requests. If
 `www.community.example.com` is a CNAME to `web1.example.net`, the CA will first
@@ -56,7 +63,7 @@ list](https://mailarchive.ietf.org/arch/msg/spasm/vHL260X6Zb2C0VSwDwa8VZC1Kw0),
 we achieved consensus that tree-climbing in CAA is not ideal, and there's [an
 erratum](https://www.rfc-editor.org/errata/eid5065) for the CAA RFC removing it.
 That erratum still needs to be voted in by the CA/Browser Forum by September 8
-for it to be official.
+for it to to take effect for publicly trusted CAs.
 
 # CAA errors
 
@@ -67,7 +74,7 @@ affected domain, since there could be CAA records present that forbid issuance,
 but are not visible because of the error.
 
 If you receive CAA-related errors, try a few more times against our [staging
-environment](https://letsencrypt.org/docs/staging-environment/) to see if they
+environment](/docs/staging-environment/) to see if they
 are temporary or permanent. If they are permanent, you will need to file a
 support issue with your DNS provider, or switch providers. If you're not sure
 who your DNS provider is, ask your hosting provider.
@@ -77,7 +84,7 @@ reports with "We do not support CAA records." Your DNS provider does not need
 to specifically support CAA records; it only needs to reply with a
 NOERROR response for unknown query types (including CAA). Returning other
 opcodes, including NOTIMP, for unrecognized qtypes is a violation of [RFC
-1035](https://tools.ietf.org/html/rfc1035).
+1035](https://tools.ietf.org/html/rfc1035), and needs to be fixed.
 
 # SERVFAIL
 
@@ -100,7 +107,7 @@ available.
 
 # Timeout
 
-Sometimes CAA queries timeout. That is, the authoritative name server never
+Sometimes CAA queries time out. That is, the authoritative name server never
 replies with an answer at all, even after multiple retries. Most commonly this
 happens when your nameserver has a misconfigured firewall in front of it that
 drops DNS queries with unknown qtypes. File a support ticket with your DNS
