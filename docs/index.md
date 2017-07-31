@@ -24,6 +24,7 @@ top_graphic: 1
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
+* [Certificate Authority Authorization](/docs/caa/)
 
 # Client Developer Information
 
