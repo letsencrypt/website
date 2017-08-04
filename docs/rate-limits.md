@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2017-07-24T00:00
+date: 2017-08-03T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -20,7 +20,7 @@ our [staging environment](/docs/staging-environment/) instead of the production 
 If you're working on integrating Let's Encrypt as a provider or with a large
 website please [review our Integration Guide](/docs/integration-guide).
 
-The main limit is **Certificates per Registered Domain** (20 per week). A
+The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain**, (20 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
 from your domain name registrar. For instance, in the name `www.example.com`,
 the registered domain is `example.com`. In `new.blog.example.co.uk`,
@@ -29,12 +29,12 @@ the registered domain is `example.co.uk`. We use the
 domain.
 
 If you have a lot of subdomains, you may want to combine them into a single
-certificate, up to a limit of 100 **Names per Certificate**. Combined with the
+certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
 above limit, that means you can issue certificates containing up to 2,000 unique
 subdomains per week. A certificate with multiple names is often called a SAN
 certificate, or sometimes a UCC certificate.
 
-We also have a **Duplicate Certificate** limit of 5 certificates per week. A
+We also have a <a name="duplicate-certificate"></a>**Duplicate Certificate** limit of 5 certificates per week. A
 certificate is considered a duplicate of an earlier certificate if they contain
 the exact same set of hostnames, ignoring capitalization and ordering of
 hostnames.  For instance, if you requested a certificate for the names
@@ -44,7 +44,7 @@ by adding [`blog.example.com`], you would be able to request additional
 certificates.
 
 To make sure you can always renew your certificates when you need to, we have a
-**Renewal Exemption** to the Certificates per Registered Domain limit. Even if
+<a name="renewal-exemption"></a>**Renewal Exemption** to the Certificates per Registered Domain limit. Even if
 you've hit the limit for the week, you can still issue new certificates that
 count as renewals. An issuance request counts as a renewal if it contains the
 exact same set of hostnames as a previously issued certificate. This is the same
@@ -65,28 +65,30 @@ renewals of existing certificates.
 Revoking certificates does not reset rate limits, because the resources used to
 issue those certificates have already been consumed.
 
-We recently (April 2017) introduced a **Failed Validation** limit of 5 failures
-per account, per hostname, per hour. This limit will be higher on staging so you
-can use staging to debug connectivity problems.
+There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
+per account, per hostname, per hour. This limit is higher on our
+<a href="/docs/staging-environment/">staging environment</a>, so you
+can use that environment to debug connectivity problems.
 
-The "new-reg", "new-authz" and "new-cert" endpoints have an **Overall
+The "new-reg", "new-authz" and "new-cert" endpoints have an <a
+name="overall-requests"></a>**Overall
 Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
 directory & subdirectories have an Overall Requests limit of 40 requests per second.
 
 We have two other limits that you're very unlikely to run into.
 
-You can create a maximum of 10 **Accounts per IP Address** per 3 hours. You can
+You can create a maximum of 10 <a name="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
 create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
 3 hours. Hitting either account rate limit is very rare, and we recommend that
 large integrators prefer a design [using one account for many customers](/docs/integration-guide).
 
-You can have a maximum of 300 **Pending Authorizations** on your account. Hitting
+You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
 usually means that your client is creating authorizations and not fulfilling them.
 Please utilize our [staging environment](/docs/staging-environment/) if you’re
 developing an ACME client.
 
-# Overrides
+# <a name="overrides"></a>Overrides
 
 If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
 need to wait until the rate limit expires after a week. We use a sliding window,
@@ -112,7 +114,7 @@ So long as most of your customers don't have more than 2,000 subdomains on a
 registered domain, you most likely do not need an increase. See our [Integration
 Guide](/docs/integration-guide/) for more advice.
 
-# Clearing Pending Authorizations
+# <a name="clearing-pending"></a>Clearing Pending Authorizations
 
 If you have a large number of pending authorization objects and are getting a
 rate limiting error, you can trigger a validation attempt for those
