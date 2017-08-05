@@ -5,6 +5,10 @@ permalink: /upcoming-features/
 top_graphic: 1
 ---
 
+## ACME v2 API
+
+* ETA: January, 2018
+
 ## Wildcard Certificates
 
 * ETA: January, 2018
