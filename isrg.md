@@ -14,7 +14,7 @@ Our current board members are:
 * <strong>Josh Aas</strong> (ISRG) &mdash; <i>ISRG Executive Director</i>
 * <strong>Stephen Ludin</strong> (Akamai)
 * <strong>J. Alex Halderman</strong> (University of Michigan)
-* <strong>Jennifer Granick</strong> (Stanford Law School)
+* <strong>Jennifer Granick</strong> (Independent)
 * <strong>Laura Thomson</strong> (Mozilla)
 * <strong>Cullen Jennings</strong> (Cisco)
 * <strong>Peter Eckersley</strong> (EFF)
@@ -30,7 +30,7 @@ Our TAB consists of technical experts from major supporting organizations, as we
 * <strong>Jacob Hoffman-Andrews</strong> (Electronic Frontier Foundation)
 * <strong>J.C. Jones</strong> (Mozilla)
 * <strong>Russ Housley</strong> (Independent)
-* <strong>Ryan Hurst</strong> (Independent)
+* <strong>Ryan Hurst</strong> (Google)
 * <strong>Stephen Kent</strong> (Independent)
 * <strong>Karen O'Donoghue</strong> (Internet Society)
 * <strong>Ivan Ristic</strong> (Independent)
