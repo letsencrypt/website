@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2017-08-03T00:00
+date: 2017-08-09T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -49,9 +49,10 @@ you've hit the limit for the week, you can still issue new certificates that
 count as renewals. An issuance request counts as a renewal if it contains the
 exact same set of hostnames as a previously issued certificate. This is the same
 definition used for the Duplicate Certificate limit described above. Renewals
-*are* still subject to the Duplicate Certificate limit. The order of renewals
-and new certificate issuance is no longer important for the renewal exemption
-since July 20th, 2017.
+*are* still subject to the Duplicate Certificate limit. Also note: the order of
+renewals and new issuances matters. To get the maximum possible number of
+certificates, you must perform all new issuances before renewals during a given
+time window.
 
 The Duplicate Certificate limit and the Renewal Exemption ignore the public key
 and extensions requested. A certificate issuance can be considered a renewal even if
