@@ -1,0 +1,18 @@
+[output]
+status=0
+log=text
+warnings=0
+quiet=1
+
+[checking]
+sslverify=1
+allowedschemes=http,https
+
+[filtering]
+ignore=
+  google\-analytics\.com
+  googleadservices\.com
+  crates\.io
+  .*\-isrgrootx1\.letsencrypt\.org
+
+checkextern=1

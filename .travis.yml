@@ -1,8 +1,11 @@
+dist: trusty
 language: ruby
 rvm:
-  - 2.2.2
-sudo: required
-gemfile: Gemfile.ci
+  - 2.2.7
+python:
+  - 2.7
+before_install:
+  - pip install urllib3[secure] certifi requests==2.9.1 linkchecker
 script:
   - bundle exec jekyll build
-  - rake test
+  - ./util/linkcheck.sh
