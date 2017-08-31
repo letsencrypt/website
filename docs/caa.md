@@ -24,9 +24,9 @@ If you don't care about CAA, you generally don't have to do anything (but see
 CAA errors below). If you would like to use CAA to restrict which Certificate
 Authorities are allowed to issue certificates for your domain, you will need to
 use a DNS provider that supports setting CAA records. Check [SSLMate's CAA
-page](https://sslmate.com/labs/caa/#support) for a list of such providers. If your
+page](https://sslmate.com/caa/support) for a list of such providers. If your
 provider is listed, you can use
-[SSLMate's CAA Record Generator](https://sslmate.com/labs/caa/) to generate a
+[SSLMate's CAA Record Generator](https://sslmate.com/caa/) to generate a
 set of CAA records listing the CAs that you would like to allow.
 
 Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
