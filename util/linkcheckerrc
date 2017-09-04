@@ -14,5 +14,6 @@ ignore=
   googleadservices\.com
   crates\.io
   .*\-isrgrootx1\.letsencrypt\.org
+  www\.ietf\.org
 
 checkextern=1
