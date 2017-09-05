@@ -29,9 +29,13 @@ shows the correct date, no further action is needed.
 # Unsubscribing
 
 The email body has a link to unsubscribe from future notices. If you
-hit that link, you won't get any future expiration notices. The list of
-"who's unsubscribed" is independent for Staging notices and Production
-notices, so you can feel free to unsubscribe from Staging.
+hit that link, you won't get any expiration notices for the next year.
+The list of "who's unsubscribed" is independent for Staging notices and
+Production notices, so you can feel free to unsubscribe from Staging without
+affecting your Production status.
+
+Note that your unsubscribe is only valid for one year, so you will have to
+renew it every year.
 
 There's not yet a way for us to efficiently re-subscribe
 you if you unsubscribe. Our email provider, Mandrill,
