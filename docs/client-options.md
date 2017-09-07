@@ -179,7 +179,6 @@ third party clients.
 - [Caddy](https://caddyserver.com/)
 - [cPanel](https://cpanel.com/)
 - [Own-Mailbox](https://www.own-mailbox.com/)
-- [Daplie](https://daplie.com/walnut)
 - [Cloudfleet](https://cloudfleet.io/)
 - [Aerys](https://github.com/kelunik/aerys-acme)
 - [CentminMod LEMP Stack](https://centminmod.com/acmetool)
