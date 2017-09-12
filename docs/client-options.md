@@ -177,6 +177,7 @@ third party clients.
 
 # Projects integrating with Let's Encrypt
 
+- [Ponzu CMS](https://ponzu-cms.org)
 - [Caddy](https://caddyserver.com/)
 - [cPanel](https://cpanel.com/)
 - [Own-Mailbox](https://www.own-mailbox.com/)
