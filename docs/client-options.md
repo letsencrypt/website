@@ -54,6 +54,7 @@ third party clients.
 - [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
+- [Ponzu CMS](https://ponzu-cms.org)
 
 ## HAProxy
 
@@ -176,6 +177,7 @@ third party clients.
 
 # Projects integrating with Let's Encrypt
 
+- [Ponzu CMS](https://ponzu-cms.org)
 - [Caddy](https://caddyserver.com/)
 - [cPanel](https://cpanel.com/)
 - [Own-Mailbox](https://www.own-mailbox.com/)
