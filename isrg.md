@@ -14,9 +14,9 @@ Our current board members are:
 * <strong>Josh Aas</strong> (ISRG) &mdash; <i>ISRG Executive Director</i>
 * <strong>Stephen Ludin</strong> (Akamai)
 * <strong>J. Alex Halderman</strong> (University of Michigan)
-* <strong>Jennifer Granick</strong> (Independent)
+* <strong>Jennifer Granick</strong> (ACLU)
 * <strong>Laura Thomson</strong> (Mozilla)
-* <strong>Cullen Jennings</strong> (Cisco)
+* <strong>Richard Barnes</strong> (Cisco)
 * <strong>Peter Eckersley</strong> (EFF)
 * <strong>Alex Polvi</strong> (CoreOS)
 * <strong>Pascal Jaillon</strong> (OVH)
