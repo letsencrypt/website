@@ -18,8 +18,6 @@ if there's a bug in any one of the many public CAs' validation processes, every
 domain name is potentially affected. CAA provides a way for domain holders to
 reduce that risk.
 
-**Note (September 2017): [See this update in our API Announcements area](https://community.letsencrypt.org/t/legacy-caa-implementation/42335) for a recent, temporary change to our CAA processing behavior.**
-
 # Using CAA
 
 If you don't care about CAA, you generally don't have to do anything (but see
