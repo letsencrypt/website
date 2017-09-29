@@ -43,6 +43,7 @@ top_graphic: 1
 
 # ISRG Legal Transparency Reports
 
+* [October 1, 2017](/documents/ISRG-Legal-Transparency-Report-October-1-2017.pdf)
 * [April 1, 2017](/documents/ISRG-Legal-Transparency-Report-April-1-2017.pdf)
 * [October 1, 2016](/documents/ISRG-Legal-Transparency-Report-October-1-2016.pdf)
 * [April 1, 2016](/documents/ISRG-Legal-Transparency-Report-April-1-2016.pdf)
