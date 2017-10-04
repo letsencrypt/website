@@ -1,10 +1,9 @@
 # Site settings
-title: Let's Encrypt - Free SSL/TLS Certificates
+title: Baiduio | 免费空间
 description: >
-  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+  Baiduio 是一个免费空间提供商
 baseurl: ""
-url: "https://baiduio.github.io/website//"
+url: "https://www.baiduio.ga/"
 github_username: Baiduio 
 twitter_username: 
 crowdfunding_url: ""
