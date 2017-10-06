@@ -80,6 +80,10 @@ We intend to support wildcard certificates [in January 2018](https://letsencrypt
 
 There are a large number of [ACME clients](/docs/client-options/) available. Chances are something works well on your operating system. We recommend starting with [Certbot](https://certbot.eff.org/).
 
+## What draft of the ACME specification does Let's Encrypt implement?
+
+[Boulder](https://github.com/letsencrypt/boulder), the Let's Encrypt CA software, evolved alongside the ACME specification and does not implement one single draft version. We describe the places where Boulder diverges from the most recent ACME draft [here](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md).
+
 ## Can I use an existing private key or Certificate Signing Request (CSR)?
 
 Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org/) does.
