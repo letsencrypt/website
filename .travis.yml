@@ -8,4 +8,4 @@ before_install:
   - pip install urllib3[secure] certifi requests==2.9.1 linkchecker
 script:
   - bundle exec jekyll build
-  - ./util/linkcheck.sh
+  - ./util/linkcheck.s
