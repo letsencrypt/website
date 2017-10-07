@@ -5,4 +5,4 @@ permalink: /thankyou/
 top_graphic: 1
 ---
 
- *感谢来到本站，我是站长欢迎你！！
+ * 感谢来到本站，我是站长欢迎你！！
