@@ -33,10 +33,7 @@ You may want to visit [this particular community forum discussion](https://commu
 * Java 7 >= 7u111
 * Java 8 >= 8u101
 * Blackberry >= 10.3.3
-
-# Possibly Incompatible
-
-* Sony PS3 and PS4 Game Consoles
+* PS4 game console with firmware >= 5.00
 
 # Known Incompatible
 
@@ -49,3 +46,5 @@ You may want to visit [this particular community forum discussion](https://commu
 * Java 8 < 8u101
 * Windows Live Mail (2012 mail client, not webmail)
   * cannot handle certificates without a CRL
+* PS3 game console
+* PS4 game console with firmware < 5.00
