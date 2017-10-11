@@ -3,7 +3,7 @@ layout: page
 title: Rate Limits
 permalink: /docs/rate-limits/
 top_graphic: 1
-date: 2017-08-09T00:00
+date: 2017-10-10T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -104,7 +104,7 @@ in issuing the certificates have already been used.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
-form](https://docs.google.com/forms/d/e/1FAIpQLSfg56b_wLmUN7n-WWhbwReE11YoHXs_fpJyZcEjDaR69Q-kJQ/viewform?c=0&w=1)
+form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
 that can be used to request a higher rate limit. It takes a few weeks to process
 requests, so this form is not suitable if you just need to reset a rate limit
 faster than it resets on its own.
