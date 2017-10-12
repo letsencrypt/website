@@ -77,6 +77,10 @@ third party clients.
 - [Daplie/greenlock-express](https://git.daplie.com/Daplie/greenlock-express)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
 
+## OpenShift
+
+- [openshift-acme](https://github.com/tnozicka/openshift-acme)
+
 ## Perl
 
 - [le.pl](https://github.com/do-know/Crypt-LE) (aka [ZeroSSL](https://ZeroSSL.com/))
