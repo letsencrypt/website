@@ -108,6 +108,7 @@ third party clients.
 - [wile](https://github.com/costela/wile)
 - [acmebot](https://github.com/plinss/acmebot)
 - [sewer](https://github.com/komuW/sewer)
+- [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
 
 ## Ruby
 
