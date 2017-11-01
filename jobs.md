@@ -36,5 +36,4 @@ Nice to Have:
 * Hardware Security Module (HSM) experience
 * Coding experience
 * Hardware SAN experience
-* Experience using and managing security tools including FIM, IDM, SIEM,
-and vulnerability scanners
+* Experience using and managing security tools and vulnerability scanners
