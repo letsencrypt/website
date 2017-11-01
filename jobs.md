@@ -23,6 +23,7 @@ Collaborating effectively with ISRG developers and the community is critical. Yo
 Key Qualifications:
 
 * Experience working with highly-available, internet-facing sites
+* Experience in regulated environments
 * Configuration management experience (SaltStack, Ansible, Puppet, Chef)
 * Ability to effectively communicate and collaborate with development team
 * Database troubleshooting experience
@@ -33,7 +34,6 @@ Key Qualifications:
 Nice to Have:
 
 * Hardware Security Module (HSM) experience
-* Experience in regulated environments
 * Coding experience
 * Hardware SAN experience
 * Experience using and managing security tools including FIM, IDM, SIEM,
