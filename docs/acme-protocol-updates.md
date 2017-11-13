@@ -8,16 +8,14 @@ date: 2016-07-27T00:00
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
 
-The ACME protocol is the cornerstone of how Let's Encrypt works. As the protocol specification evolves over time Let's Encrypt will implement updated versions of ACME. When doing so, security will be our primary concern, followed closely by backwards compatibility.
+The ACME protocol is the cornerstone of how Let's Encrypt works. It is currently a draft standard and not yet a finalized RFC. As the protocol specification evolves over time Let's Encrypt will implement updated versions of ACME. When doing so, security will be our primary concern, followed closely by backwards compatibility.
 
 # Currently Implemented ACME Version
 
-We currently have the following API endpoints and associated ACME version implementations:
+We currently have the following API endpoints. They do not implement any one fixed draft of the ACME specificiation as they evolved alongside the draft protocol document. Please see [our divergences documentation](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) to compare their implementation to the current ACME draft.
 
 * [Production] `https://acme-v01.api.letsencrypt.org/directory`
-  * ACME Version: [draft 04](https://tools.ietf.org/html/draft-ietf-acme-acme-04), with [some tweaks](https://github.com/letsencrypt/boulder/blob/release/docs/acme-divergences.md)
 * [Staging] `https://acme-staging.api.letsencrypt.org/directory`
-  * ACME Version: [draft 04](https://tools.ietf.org/html/draft-ietf-acme-acme-04), with [some tweaks](https://github.com/letsencrypt/boulder/blob/staging/docs/acme-divergences.md)
 
 # New Backwards-Compatible ACME Features
 
