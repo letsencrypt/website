@@ -62,8 +62,10 @@ climbing because it makes expressing certain CAA policies impossible. After
 list](https://mailarchive.ietf.org/arch/msg/spasm/vHL260X6Zb2C0VSwDwa8VZC1Kw0),
 we achieved consensus that tree-climbing in CAA is not ideal, and there's [an
 erratum](https://www.rfc-editor.org/errata/eid5065) for the CAA RFC removing it.
-That erratum still needs to be voted in by the CA/Browser Forum by September 8
-for it to to take effect for publicly trusted CAs.
+This erratum was adopted by the CA/Browser Forum as mandatory behaviour for all
+publicly trusted CAs as a result of [Ballot 
+214](https://cabforum.org/2017/09/27/ballot-214-caa-discovery-cname-errata/)
+passing.
 
 # CAA errors
 
