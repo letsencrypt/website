@@ -19,7 +19,7 @@ top_graphic: 1
 
 ## ECDSA Root and Intermediates
 
-* ETA: March, 2018
+* ETA: July, 2018
 
 Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
