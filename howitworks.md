@@ -11,7 +11,7 @@ from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
 control over the domain. With Let's Encrypt, you do this using software that uses
 the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
-on your web host.
+on your web host. This software is called the "client".
 
 To figure out what method will work best for you, you will need to know whether
 you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
@@ -22,7 +22,8 @@ access. You can ask your hosting provider to be sure.
 
 # With Shell Access
 
-We recommend that most people with shell access use the
+We recommend that most people with shell access (and
+[root privileges](https://en.wikipedia.org/wiki/Superuser)) use the
 [Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
 It also has expert modes for people who don't want autoconfiguration. It's easy to use,
 works on many operating systems, and has great documentation. [Visit the
@@ -35,6 +36,17 @@ software, see the documentation for that client to proceed.
 If you're experimenting with different ACME clients, use our
 [staging environment](/docs/staging-environment/) to avoid hitting
 [rate limits](/docs/rate-limits/).
+
+## About root privileges
+
+For full automation and recommended use of [Certbot], root (also called "superuser") privileges
+are required. [Certbot] can also run
+[without root privileges](https://certbot.eff.org/faq/#does-certbot-require-root-administrator-privileges)
+but it isn't the standard operating mode. If you require a client running without root privileges
+and [Certbot] doesn't meet your demands, many of the [third party clients](/docs/client-options/)
+will run as normal user.
+Note: most of the time, you'll need root privileges to reconfigure your webserver to install
+the certificate.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
