@@ -11,7 +11,10 @@ from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
 control over the domain. With Let's Encrypt, you do this using software that uses
 the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
-on your web host. This software is called the "client".
+on your web host. This software is called the "ACME client". This client, which
+can come in many forms and sizes, including webbased or a built-in plugin for control
+panels, connects to the ACME server of the CA to request and (if all goes well)
+retrieve a certificate.
 
 To figure out what method will work best for you, you will need to know whether
 you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
