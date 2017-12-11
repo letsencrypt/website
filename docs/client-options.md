@@ -197,3 +197,4 @@ third party clients.
 - [Zappa](https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation)
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
+- [Aegir](https://gitlab.com/aegir/hosting_https)
