@@ -56,16 +56,9 @@ not allowed to have any other records according to the DNS standards.
 
 The [CAA RFC](https://tools.ietf.org/html/rfc6844) specifies an additional
 behavior called "tree-climbing" that requires CAs to also check the parent
-domains of the result of CNAME resolution. Let's Encrypt does not implement tree
-climbing because it makes expressing certain CAA policies impossible. After
-[discussion on the IETF mailing
-list](https://mailarchive.ietf.org/arch/msg/spasm/vHL260X6Zb2C0VSwDwa8VZC1Kw0),
-we achieved consensus that tree-climbing in CAA is not ideal, and there's [an
-erratum](https://www.rfc-editor.org/errata/eid5065) for the CAA RFC removing it.
-This erratum was adopted by the CA/Browser Forum as mandatory behaviour for all
-publicly trusted CAs as a result of [Ballot 
-214](https://cabforum.org/2017/09/27/ballot-214-caa-discovery-cname-errata/)
-passing.
+domains of the result of CNAME resolution. This additional behavior was later
+removed by [an erratum](https://www.rfc-editor.org/errata/eid5065), so Let's
+Encrypt and other CAs do not implement it.
 
 # CAA errors
 
