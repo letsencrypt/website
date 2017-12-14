@@ -57,7 +57,7 @@ not allowed to have any other records according to the DNS standards.
 The [CAA RFC](https://tools.ietf.org/html/rfc6844) specifies an additional
 behavior called "tree-climbing" that requires CAs to also check the parent
 domains of the result of CNAME resolution. This additional behavior was later
-removed by  [an erratum](https://www.rfc-editor.org/errata/eid5065), so Let's
+removed by [an erratum](https://www.rfc-editor.org/errata/eid5065), so Let's
 Encrypt and other CAs do not implement it.
 
 # CAA errors
