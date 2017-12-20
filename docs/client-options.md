@@ -50,7 +50,7 @@ third party clients.
 - [Caddy](https://caddyserver.com)
 - [Lego](https://github.com/xenolf/lego)
 - [GoACME](https://github.com/google/goacme)
-- [hlandau/acme](https://github.com/hlandau/acme)
+- [acmetool](https://github.com/hlandau/acme)
 - [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
