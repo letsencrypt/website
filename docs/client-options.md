@@ -98,18 +98,18 @@ third party clients.
 
 ## Python
 
-- [acmebot](https://github.com/plinss/acmebot)
-- [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
-- [ACMEproxy](https://github.com/adfinis-sygroup/acme-powerdns)
+- [No Sudo Client](https://github.com/diafygi/letsencrypt-nosudo)
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
-- [Let's ACME](https://github.com/neurobin/letsacme)
-- [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
+- [simp_le](https://github.com/zenhack/simp_le)
 - [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient)
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
-- [No Sudo Client](https://github.com/diafygi/letsencrypt-nosudo)
-- [sewer](https://github.com/komuW/sewer)
-- [simp_le](https://github.com/zenhack/simp_le)
+- [Let's ACME](https://github.com/neurobin/letsacme)
+- [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
 - [wile](https://github.com/costela/wile)
+- [acmebot](https://github.com/plinss/acmebot)
+- [sewer](https://github.com/komuW/sewer)
+- [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
+- [ACMEproxy](https://github.com/catalyst/acmeproxy)
 
 ## Ruby
 
