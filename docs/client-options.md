@@ -109,6 +109,7 @@ third party clients.
 - [acmebot](https://github.com/plinss/acmebot)
 - [sewer](https://github.com/komuW/sewer)
 - [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
+- [ACMEproxy](https://github.com/catalyst/acmeproxy)
 
 ## Ruby
 
