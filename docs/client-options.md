@@ -28,7 +28,7 @@ third party clients.
 - [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
 - [gheift/letsencrypt.sh](https://github.com/gheift/letsencrypt.sh)
 
-## Browser
+# Browser
 
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
