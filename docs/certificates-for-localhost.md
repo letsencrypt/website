@@ -42,7 +42,7 @@ web app would not be allowed to do. One common approach is for these native
 apps to offer a web service on localhost, and have the web app make requests
 to it via XMLHTTPRequest (XHR) or WebSockets. The web app almost always uses HTTPS, which
 means that browsers will forbid it from making XHR or WebSockets requests
-to non-secure URLs. This is called Mixed Content Blocking. To communcate with
+to non-secure URLs. This is called Mixed Content Blocking. To communicate with
 the web app, the native app needs to provide a secure web service.
 
 Fortunately, modern browsers [consider][mcb-localhost] "http://127.0.0.1:8000/" to be a
@@ -51,7 +51,7 @@ URL because it refers to a loopback address. Traffic sent to 127.0.0.1 is guaran
 not to leave your machine, and so is considered automatically secure against
 network interception. That means if your web app is HTTPS, and you offer a
 native app web service on 127.0.0.1, the two can happily communicate via XHR.
-Unfortunately, [localhost currently doesn't yet get the same treatment][let-localhost].
+Unfortunately, [localhost doesn't yet get the same treatment][let-localhost].
 Also, WebSockets don't get this treatment for either name.
 
 You might be tempted to work around these limitations by setting up
@@ -59,8 +59,8 @@ a domain name in the global DNS that happens to resolve to 127.0.0.1
 (for instance, localhost.example.com), getting a certificate for that
 domain name, shipping that certificate and corresponding private key
 with your native app, and telling your web app to
-communicate with https://localhost.example.com:8000/ instead of http://127.0.0.1:8000/. Don't do this. It
-will put your users at risk, and your certificate may get revoked.
+communicate with https://localhost.example.com:8000/ instead of http://127.0.0.1:8000/.
+*Don't do this.* It will put your users at risk, and your certificate may get revoked.
 
 By introducing a domain name instead of an IP address, you make it possible for
 an attacker to Man in the Middle (MitM) the DNS lookup and inject a response that
@@ -70,7 +70,7 @@ account on the web app side, depending on how it is designed.
 
 The successful MitM in this situation is possible because in order to make it
 work, you had to ship the private key to your certificate with your native app.
-That means that anybody who downloads a your native app gets a copy of
+That means that anybody who downloads your native app gets a copy of
 the private key, including the attacker. This is considered a compromise of your
 private key, and your Certificate Authority (CA) is required to revoke your
 certificate if they become aware of it. (Many native apps)[mdsp1] have (had their
