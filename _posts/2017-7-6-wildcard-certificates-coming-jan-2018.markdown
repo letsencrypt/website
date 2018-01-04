@@ -6,6 +6,10 @@ author: Josh Aas, ISRG Executive Director
 excerpt: Let’s Encrypt will begin issuing wildcard certificates in January of 2018.
 ---
 
+> **Update, January 4, 2018**
+> 
+> We introduced a public test API endpoint for the ACME v2 protocol and wildcard support on January 4, 2018. ACME v2 and wildcard support will be fully available on February 27, 2018.
+
 Let’s Encrypt will begin issuing wildcard certificates in January of 2018. Wildcard certificates are a commonly requested feature and we understand that there are some use cases where they make HTTPS deployment easier. Our hope is that offering wildcards will help to accelerate the Web’s progress towards 100% HTTPS.
 
 Let’s Encrypt is currently securing 47 million domains via our fully automated DV certificate issuance and management API. This has contributed heavily to the Web going from 40% to 58% encrypted page loads since Let’s Encrypt’s service became available in December 2015. If you’re excited about wildcard availability and our mission to get to a 100% encrypted Web, we ask that you contribute to our [summer fundraising campaign](https://letsencrypt.org/donate/).

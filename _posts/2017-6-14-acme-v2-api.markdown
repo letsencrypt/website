@@ -6,6 +6,10 @@ author: Josh Aas, ISRG Executive Director
 excerpt: Let’s Encrypt will add support for the IETF-standardized ACME v2 protocol in January of 2018.
 ---
 
+> **Update, January 4, 2018**
+> 
+> We introduced a public test API endpoint for the ACME v2 protocol and wildcard support on January 4, 2018. ACME v2 and wildcard support will be fully available on February 27, 2018.
+
 Let’s Encrypt will add support for the IETF-standardized ACME v2 protocol in January of 2018. We will be adding a new ACME v2 API endpoint alongside our existing ACME v1 protocol API endpoint. We are not setting an end-of-life date for our ACME v1 API at this time, though we recommend that people move to the ACME v2 endpoint as soon as possible once it’s available. For most subscribers, this will happen automatically via a hosting provider or normal ACME client software update.
 
 The ACME protocol, initially developed by the team behind Let’s Encrypt, is at the very heart of the CA service we provide. It’s the primary way in which we interact with our subscribers so that they can get and manage certificates. The ACME v1 protocol we use today was designed to ensure that our validation, issuance, and management methods are fully automated, consistent, compliant, and secure. In these respects, the current ACME v1 protocol has served us well.
