@@ -3,7 +3,7 @@ layout: page
 title: ACME Client Implementations
 permalink: /docs/client-options/
 top_graphic: 1
-date: 2016-07-02T00:00
+date: 2018-01-05T00:00
 ---
 
 Last updated: {{ page.date | date: "%B %d, %Y" }} \| [See all Documentation](/docs/)
@@ -20,6 +20,13 @@ If certbot does not meet your needs, or you’d simply like to try something els
 
 The ACME clients below are offered by third parties. Let's Encrypt doesn't review
 third party clients.
+
+## ACME v2 Compatible Clients
+
+These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
+
+- [ACME4J](https://github.com/shred/acme4j#future-compatibility) (`draft` branch)
+- [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 
 ## Bash
 
