@@ -31,11 +31,13 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 To communicate securely with the Security Team, please utilize our GPG key. It consists of several subkeys signed by an offline master key. Any recent version of GnuPG will support this kind of hybrid key. The current key structure is:
 
+```
 pub   4096R/10EC230B 2015-11-24 [expires: 2020-11-22]
 uid                  ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   4096R/12848870 2015-11-24 [expires: 2017-11-29]
-sub   4096R/CB3E6736 2015-11-24 [expires: 2017-11-29]
-sub   4096R/93665E86 2015-11-24 [expires: 2017-11-29]
+sub   4096R/12848870 2015-11-24 [expires: 2018-08-07]
+sub   4096R/CB3E6736 2015-11-24 [expires: 2018-08-07]
+sub   4096R/93665E86 2015-11-24 [expires: 2018-08-07]
+```
 
 You can download the [GPG Public Key](/security_letsencrypt.org-publickey.asc) here, or utilize your favorite key server.
 
