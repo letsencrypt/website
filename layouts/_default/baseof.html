@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{ partial "head" . }}
+	<body>
+		{{ partial "header" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</body>
+</html>

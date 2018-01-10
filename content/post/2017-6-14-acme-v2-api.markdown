@@ -1,0 +1,30 @@
+---
+author: Josh Aas, ISRG Executive Director
+date: 2017-06-14T00:00:00Z
+excerpt: Let’s Encrypt will add support for the IETF-standardized ACME v2 protocol
+  in January of 2018.
+title: ACME v2 API Endpoint Coming January 2018
+slug: acme-v2-api
+---
+
+> **Update, January 4, 2018**
+> 
+> We introduced a public test API endpoint for the ACME v2 protocol and wildcard support on January 4, 2018. ACME v2 and wildcard support will be fully available on February 27, 2018.
+
+Let’s Encrypt will add support for the IETF-standardized ACME v2 protocol in January of 2018. We will be adding a new ACME v2 API endpoint alongside our existing ACME v1 protocol API endpoint. We are not setting an end-of-life date for our ACME v1 API at this time, though we recommend that people move to the ACME v2 endpoint as soon as possible once it’s available. For most subscribers, this will happen automatically via a hosting provider or normal ACME client software update.
+
+The ACME protocol, initially developed by the team behind Let’s Encrypt, is at the very heart of the CA service we provide. It’s the primary way in which we interact with our subscribers so that they can get and manage certificates. The ACME v1 protocol we use today was designed to ensure that our validation, issuance, and management methods are fully automated, consistent, compliant, and secure. In these respects, the current ACME v1 protocol has served us well.
+
+There are three primary reasons why we’re starting a transition to ACME v2.
+
+First, ACME v2 will be an IETF standard, and it’s important to us that we support true standards. While ACME v1 is a well-documented public specification, developed in a relatively open manner by individuals from a number of different organizations (including Mozilla, the Electronic Frontier Foundation, and the University of Michigan), it did not benefit from having been developed within a standards body with a greater diversity of inputs and procedures based on years of experience. It was always our intent for ACME v1 to form the basis for an IETF standardization process.
+
+Second, ACME v2 was designed with additional input from other CAs besides Let’s Encrypt, so it should be easier for other CAs to use. We want a standardized ACME to work for many CAs, and ACME v1, while usable by other CAs, was designed with Let’s Encrypt in particular in mind. ACME v2 should meet more needs.
+
+Third, ACME v2 brings some technical improvements that will allow us to better serve our subscribers going forward.
+
+We are not setting an end-of-life date for the ACME v1 protocol because we don’t yet have enough data to determine when would be an appropriate date. Once we’re confident that we can predict an appropriate end-of-life date for our ACME v1 API endpoint we’ll announce one.
+
+ACME v2 is the result of great work by the ACME IETF working group. In particular, we were happy to see the ACME working group take into account the needs of other organizations that may use ACME in the future. Certificate issuance and management protocols are a critical component of the Web’s trust model, and the Web will be better off if CAs can use a standardized public protocol that has been thoroughly vetted.
+
+We’d like to thank our community, including our [sponsors](https://letsencrypt.org/sponsors/), for making everything we did this past year possible. Please consider [getting involved](https://letsencrypt.org/getinvolved/) or making a [donation](https://letsencrypt.org/donate/). If your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

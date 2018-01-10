@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}</title>
+    {{ if .IsHome }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ end }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@letsencrypt">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:url" content="{{ .Permalink }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+    <meta name="twitter:image:src" content="{{ "images/le-logo-twitter.png" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ with .Site.Home.OutputFormats.Get "RSS" -}}
+    <link rel="{{ .Rel }}" href="{{ .Permalink }}" type="application/rss+xml" title="Let's Encrypt Blog Feed" />
+    {{ end  }}
+</head>

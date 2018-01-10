@@ -1,6 +1,14 @@
-dist: trusty
-language: ruby
-rvm:
-  - 2.2.7
+language: go
+go:
+  - 1.9.x
+install:
+  - go get github.com/magefile/mage
+  # We currently need the unreleased Hugo 0.33 to build.
+  - go get -d github.com/gohugoio/hugo
 script:
-  - bundle exec jekyll build
+  - pushd $GOPATH/src/github.com/gohugoio/hugo
+  - mage vendor
+  - mage install
+  - popd
+  - hugo env
+  - hugo

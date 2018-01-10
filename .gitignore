@@ -3,3 +3,5 @@ _site/
 .jekyll-metadata
 js/*.tsv
 Gemfile.lock
+public/
+nohup.out

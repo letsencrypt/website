@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="blog">
+  <ul class="post-list">
+    {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") }}
+    {{ range $posts }}
+    <li>
+      <span class="post-meta">{{ .Date.Format $.Site.Params.time_format_default }}</span>
+      <h2>
+      <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      {{ with .Params.excerpt }}
+      {{ . | markdownify }}
+      {{ else }}
+      {{ .Summary }}
+      {{ end }}
+      <p><a href="{{ .Permalink }}">Read more</a></p>
+    </li>
+    {{ end }}
+  </ul>
+  {{ with .Site.Home.OutputFormats.Get "RSS" -}}
+  <p class="rss-subscribe">Subscribe <a href="{{ .Permalink }}">via RSS</a></p>
+  {{ end  }}
+</div>
+{{ end }}
