@@ -7,7 +7,7 @@ top_graphic: 5
 
 # Root Certificates
 
-Our roots are kept safely offline, we issue end-entity certificates to subscribers from the intermediates in the next section.
+Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.
 
 * Active
   * [ISRG Root X1 (self-signed)](/certs/isrgrootx1.pem.txt)
