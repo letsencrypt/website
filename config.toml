@@ -1,17 +1,17 @@
 baseURL = "https://letsencrypt.org/"
 languageCode= "en-us"
-title = "Let's Encrypt - Free SSL/TLS Certificates"
+
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
 
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
 
+
 [params]
-description = """
-  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit Internet Security Research Group (ISRG).
-"""
 
 # Default page top graphic if not set in page front matter. This is an integer representing the base filename.
 # See the JPEG files below /static/images.
@@ -25,6 +25,20 @@ crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
 time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700" 
 time_format_default = "Jan 2, 2006"
+
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+[languages]
+[languages.en]
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+# Weight used for sorting.
+weight = 1
+description = """
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+"""
+
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]

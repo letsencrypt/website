@@ -2,13 +2,13 @@
 <div class="hero tall">
   <div class="container">
 
-    <h1>Let&rsquo;s Encrypt is a <span>free</span>, <span>automated</span>, and <span>open</span> Certificate Authority.</h1>
+    <h1>{{ i18n "home_hero_title" | safeHTML }}</h1>
     <div class="buttons flex">
       <div class="flex1 tar mr1m">
-        <a class="dib" href="/getting-started/" onclick="goog_report_conversion('https://letsencrypt.org/getting-started/')">Get Started</a>
+        <a class="dib" href="/getting-started/" onclick="goog_report_conversion('https://letsencrypt.org/getting-started/')">{{ i18n "home_hero_getting_started" | safeHTML }}</a>
       </div>
       <div class="flex1 tal ml1m">
-        <a class="dib" href="/donate/">Donate</a>
+        <a class="dib" href="/donate/">{{ i18n "home_hero_donate" | safeHTML }}</a>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
       <div class="pure-g home">
         <div class="pure-u-1 pure-u-md-1-2">
           <div class="grid-container">
-            <h2 class="through-line"><a href="/blog/">From our blog</a></h2>
+            <h2 class="through-line"><a href="/blog/">{{ i18n "home_from_our_blog" }}</a></h2>
               <ul class="post-list">
                 {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 3 }}
                 {{ range $posts }}
@@ -34,19 +34,19 @@
                     {{ else }}
                       {{ .Summary }}
                     {{ end }}
-                    <p><a href="{{ .Permalink }}">Read more</a></p>
+                    <p><a href="{{ .Permalink }}">{{ i18n "read_more" }}</a></p>
                   </li>
                 {{ end }}
               </ul>
               {{ with .OutputFormats.Get "RSS" -}}
-                <p class="rss-subscribe">Subscribe <a href="{{ .Permalink }}">via RSS</a></p>
+                <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</a></p>
               {{ end  }}
           </div>
         </div>
 
         <div class="pure-u-1 pure-u-md-1-2">
           <div class='grid-container'>
-            <h2 class="through-line"><a href="/sponsors/">Major Sponsors and Donors</a></h2>
+            <h2 class="through-line"><a href="/sponsors/">{{ i18n "home_major_sponsors" }}</a></h2>
             <div class="text-center">
               <a href="https://www.mozilla.org/"><img src="/images/sponsors/small/mozilla-logo.png" alt="Mozilla" width="80" height="48" style="padding: 10px;"></a>
               <a href="https://www.akamai.com/"><img src="/images/sponsors/small/akamai-logo.png" alt="Akamai" width="80" height="48" style="padding: 10px;"></a>

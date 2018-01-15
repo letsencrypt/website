@@ -1,9 +1,9 @@
 {{ if and (ne .Section "docs") (not .Params.no_donate_footer) }}
 <div class="donate-footer">
   <div class="wrapper text-center">
-    <h2>Support a more secure and privacy-respecting Web.</h2>
+    <h2>{{ i18n "footer_support_us" }}</h2>
     <div class="buttons">
-      <a class="accent" href="/donate/">Donate</a>
+      <a class="accent" href="/donate/">{{ i18n "footer_donate" }}</a>
     </div>
   </div>
 </div>
@@ -44,9 +44,7 @@
           </li>
          {{ end }}
         </ul>
-        View our <a href="/privacy/">privacy policy</a>.<br>
-        View our <a href="/trademarks/">trademark policy</a>.
-      </div>
+        {{ i18n "footer_policies" | safeHTML }}    </div>
 
       <div class="footer-col  footer-col-2">
         <p class="text">{{ .Site.Params.description | safeHTML }}</p>
@@ -58,7 +56,7 @@
 
   <div class="linuxfoundation-collab-footer">
     <div class="wrapper">
-      <p>Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered trademark of Linus Torvalds.</p>
+      <p>{{ i18n "linux_foundation_trademark" }}</p>
     </div>
   </div>
 
