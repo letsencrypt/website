@@ -28,6 +28,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 - [acme.sh](https://github.com/Neilpang/acme.sh/tree/2) (`2` branch)
+- [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
 
 ## Bash
 
