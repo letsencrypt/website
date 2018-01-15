@@ -38,6 +38,26 @@ description = """
   Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
   authority brought to you by the non-profit Internet Security Research Group (ISRG).
 """
+[[languages.en.menu.main]]
+ title = "Get Help"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.en.menu.main]]
+ title = "Donate"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.en.menu.main]]
+ title = "About Us"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.en.menu.main]]
+ title = "Service Status"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
 
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.

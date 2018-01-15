@@ -2,6 +2,10 @@
 title: Contact
 slug: contact
 top_graphic: 1
+menu:
+  main:
+    weight: 80
+    parent: about
 ---
 
 ## Support

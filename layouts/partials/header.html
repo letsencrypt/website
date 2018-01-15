@@ -1,15 +1,11 @@
 <header class="site-header">
-
-  <a id="skiplink" href="#main-content">Skip navigation links</a>
-
+  <a id="skiplink" href="#main-content">{{ i18n "header_skip_nav"  }}Skip navigation links</a>
   <div class="wrapper">
-
     <div class="linux-foundation-link">
       <a href="https://collabprojects.linuxfoundation.org/" target="_blank"><img src="/images/linux-foundation.png" alt="Linux Foundation Collaborative Projects" /></a>
     </div>
-
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}"><img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt"></a>
-  
+    
     <span id="menuIcon">
       <svg viewBox="0 0 18 15">
         <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
@@ -17,70 +13,26 @@
         <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
       </svg>
     </span>
-
     <nav class="site-nav" id="menu">
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
-          <ul class="pure-menu-list">
+        <ul class="pure-menu-list">
+          {{ range .Site.Menus.main }}
+          <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
+            <a href="{{ .URL }}" class="pure-menu-link">{{ .Title }}</a>
+            {{ if .HasChildren }}
+            <ul class="pure-menu-children">
+              {{ range .Children }}
               <li class="pure-menu-item">
-                <a href="/docs/" class="pure-menu-link">Documentation</a>
+                <a href="{{ .URL }}" class="pure-menu-link">{{ .Title }}</a>
               </li>
-
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="https://community.letsencrypt.org/">Get Help</a>
-              </li>
-
-              <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                  <a href="/donate/" class="pure-menu-link">Donate</a>
-                  <ul class="pure-menu-children">
-                      <li class="pure-menu-item">
-                        <a href="/donate/" class="pure-menu-link">Make a Donation</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/become-a-sponsor/" class="pure-menu-link">Become a Sponsor</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/sponsors/" class="pure-menu-link">Current Sponsors and Donors</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/getinvolved/" class="pure-menu-link">Get Involved</a>
-                      </li>
-                  </ul>
-              </li>
-              <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                  <a href="/about/" class="pure-menu-link">About Us</a>
-                  <ul class="pure-menu-children">
-                      <li class="pure-menu-item">
-                        <a href="/about/" class="pure-menu-link">Let's Encrypt</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/isrg/" class="pure-menu-link">Internet Security Research Group (ISRG)</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/docs/faq/" class="pure-menu-link">Frequently Asked Questions (FAQ)</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/repository/" class="pure-menu-link">Policy and Legal Repository</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="https://letsencrypt.status.io/" class="pure-menu-link">Service Status</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/stats/" class="pure-menu-link">Statistics</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="/contact/">Contact</a>
-                      </li>
-                      <li class="pure-menu-item">
-                        <a href="/jobs/" class="pure-menu-link">Jobs</a>
-                      </li>
-                  </ul>
-              </li>
-          </ul>
+              {{ end }}
+            </ul>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
       </div>
     </nav>
-
   </div>
-
 </header>
-
 <div id="main-content"></div>

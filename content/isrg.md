@@ -2,6 +2,10 @@
 title: Internet Security Research Group (ISRG)
 slug: isrg
 top_graphic: 4
+menu:
+  main:
+    weight: 20
+    parent: about
 ---
 
 ISRG is a California public benefit corporation, and is recognized by the IRS as a tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code. ISRG's mission is to reduce financial, technological, and education barriers to secure communication over the Internet.

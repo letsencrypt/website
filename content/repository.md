@@ -2,6 +2,10 @@
 title: Policy and Legal Repository
 slug: repository
 top_graphic: 1
+menu:
+  main:
+    weight: 50
+    parent: about
 ---
 
 # Let's Encrypt Subscriber Agreement

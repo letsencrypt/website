@@ -2,6 +2,10 @@
 title: Get Involved
 slug: getinvolved
 top_graphic: 5
+menu:
+  main:
+    weight: 60
+    parent: donate
 ---
 
 ## Community

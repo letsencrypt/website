@@ -3,6 +3,10 @@ title: Let's Encrypt Stats
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt certificate statistics.
+menu:
+  main:
+    weight: 70
+    parent: about
 ---
 
 These statistics are updated daily.

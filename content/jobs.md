@@ -2,6 +2,10 @@
 title: Jobs at Let's Encrypt
 slug: jobs
 top_graphic: 4
+menu:
+  main:
+    weight: 90
+    parent: about
 ---
 
 All of our positions are remote and we can only hire in the United
