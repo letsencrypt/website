@@ -3,7 +3,7 @@ languageCode= "en-us"
 
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
 
