@@ -18,12 +18,12 @@
         <ul class="pure-menu-list">
           {{ range .Site.Menus.main }}
           <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
-            <a href="{{ .URL }}" class="pure-menu-link">{{ .Title }}</a>
+            <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
             {{ if .HasChildren }}
             <ul class="pure-menu-children">
               {{ range .Children }}
               <li class="pure-menu-item">
-                <a href="{{ .URL }}" class="pure-menu-link">{{ .Title }}</a>
+                <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
               </li>
               {{ end }}
             </ul>

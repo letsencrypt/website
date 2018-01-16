@@ -31,7 +31,7 @@ enableMissingTranslationPlaceholders = true
 
 [languages]
 [languages.en]
-title = "Let's Encrypt - Free SSL/TLS Certificates"
+name = "Let's Encrypt - Free SSL/TLS Certificates"
 # Weight used for sorting.
 weight = 1
 description = """
@@ -39,21 +39,21 @@ description = """
   authority brought to you by the non-profit Internet Security Research Group (ISRG).
 """
 [[languages.en.menu.main]]
- title = "Get Help"
+ name = "Get Help"
  weight = 20
  url = "https://community.letsencrypt.org/"
  [[languages.en.menu.main]]
- title = "Donate"
+ name = "Donate"
  weight = 30
  identifier = "donate"
  url = "/donate/"
  [[languages.en.menu.main]]
- title = "About Us"
+ name = "About Us"
  weight = 40
  identifier = "about"
  url = "/about/"
  [[languages.en.menu.main]]
- title = "Service Status"
+ name = "Service Status"
  weight = 60
  identifier = "status"
  parent = "about"
