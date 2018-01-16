@@ -13,12 +13,12 @@
       {{ else }}
       {{ .Summary }}
       {{ end }}
-      <p><a href="{{ .Permalink }}">Read more</a></p>
+      <p><a href="{{ .Permalink }}">{{ i18n "read_more" }}</a></p>
     </li>
     {{ end }}
   </ul>
   {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-  <p class="rss-subscribe">Subscribe <a href="{{ .Permalink }}">via RSS</a></p>
+  <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</a></p>
   {{ end  }}
 </div>
 {{ end }}

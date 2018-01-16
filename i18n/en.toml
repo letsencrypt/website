@@ -37,3 +37,6 @@ View our <a href="/trademarks/">trademark policy</a>.
 other = "Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered trademark of Linus Torvalds."
 
 
+[header_skip_nav]
+other = "Skip navigation links"
+
