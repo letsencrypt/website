@@ -30,6 +30,20 @@
           </li>
           {{ end }}
           {{ end }}
+          {{ $home := .Site.Home }}
+          {{ if gt (len $home.AllTranslations ) 1 }}
+          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="#" class="pure-menu-link">{{ i18n "languages" }} </a>
+            <ul class="pure-menu-children">
+              {{ range $home.AllTranslations }}
+              {{ $isCurrentLang := eq $home.Language .Language }}
+              <li class="pure-menu-item">
+                <a href="{{ .Permalink }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ end }}
         </ul>
       </div>
     </nav>
