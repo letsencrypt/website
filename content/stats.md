@@ -1,5 +1,6 @@
 ---
 title: Let's Encrypt Stats
+linkTitle: Statistics
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt certificate statistics.

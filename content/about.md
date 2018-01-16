@@ -1,5 +1,6 @@
 ---
 title: About Let's Encrypt
+linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
 menu:

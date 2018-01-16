@@ -1,5 +1,6 @@
 ---
 title: Jobs at Let's Encrypt
+linkTitle: Jobs
 slug: jobs
 top_graphic: 4
 menu:

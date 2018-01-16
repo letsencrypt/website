@@ -1,5 +1,6 @@
 ---
 title: FAQ
+linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
