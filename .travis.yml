@@ -1,14 +1,10 @@
-language: go
-go:
-  - 1.9.x
+language: generic
+
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.33/hugo_0.33_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.33_Linux-64bit.deb
+  - echo "6426dad5c5489b642ee9a635ef2c7239cad242fd1d65cc712a8fb815565362cd hugo_0.33_Linux-64bit.deb" | sha256sum -c - || exit 1;
+
 install:
-  - go get github.com/magefile/mage
-  # We currently need the unreleased Hugo 0.33 to build.
-  - go get -d github.com/gohugoio/hugo
-script:
-  - pushd $GOPATH/src/github.com/gohugoio/hugo
-  - mage vendor
-  - mage install
-  - popd
   - hugo env
   - hugo
