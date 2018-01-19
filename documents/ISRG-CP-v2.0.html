@@ -837,7 +837,7 @@ Requirements take precedence over this document.</p>
 <p>If a wildcard would fall within the label immediately to the left of a registry-controlled† or public suffix, CAs MUST refuse issuance unless the applicant proves its rightful control of the entire Domain Namespace. (e.g. CAs MUST NOT issue “*.co.uk” or “*.local”, but MAY issue “*.example.com” to Example Co.).
 Prior to September 1, 2013, each CA MUST revoke any valid certificate that does not comply with this section of the Requirements.</p>
 <p>†Determination of what is “registry-controlled” versus the registerable portion of a Country Code Top-Level Domain Namespace is not standardized at the time of writing and is not a property of the DNS itself. Current best practice is to consult a “public suffix list” such as <a href="http://publicsuffix.org/">http://publicsuffix.org/</a> (PSL), and to retrieve a fresh copy regularly. If using the PSL, a CA SHOULD consult the &quot;ICANN DOMAINS&quot; section only, not the &quot;PRIVATE DOMAINS&quot; section. The PSL is updated regularly to contain new gTLDs delegated by ICANN, which are listed in the &quot;ICANN DOMAINS&quot; section. A CA is not prohibited from issuing a Wildcard Certificate to the Registrant of an entire gTLD, provided that control of the entire namespace is demonstrated in an appropriate way.</p>
-<h4 id="data-source-accuracy">Data Source Accuracy</h4>
+<h4 id="3-2-2-7-data-source-accuracy">3.2.2.7 Data Source Accuracy</h4>
 <p>Prior to using any data source as a Reliable Data Source, the CA SHALL evaluate the source for its reliability, accuracy, and resistance to alteration or falsification. The CA SHOULD consider the following during its evaluation:</p>
 <ol>
 <li>The age of the information provided,</li>
