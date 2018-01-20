@@ -74,6 +74,10 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [porunov/acme_client](https://github.com/porunov/acme_client)
 - [ManageEngine Key Manager Plus](https://www.manageengine.com/key-manager/)
 
+## Microsoft Azure
+
+- [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/1.4.3/DisplayScript) (Compatible with any App Service)
+
 ## nginx
 
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
