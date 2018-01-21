@@ -51,7 +51,7 @@ key, even if you are not the person who originally issued those certificates.
 
 To use this method, you will first need to download the certificate to be
 revoked. Let's Encrypt logs all certificates to [Certificate
-Transparency](https://www.certificate-transparency.org/) logs, so you can can find
+Transparency](https://www.certificate-transparency.org/) logs, so you can find
 and download certificates from a log monitor like
 [crt.sh](https://crt.sh/).
 

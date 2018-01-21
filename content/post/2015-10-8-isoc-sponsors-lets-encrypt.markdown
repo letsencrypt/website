@@ -11,6 +11,6 @@ We're pleased to announce that <a href="https://www.internetsociety.org/">Intern
 
 According to Olaf Kolkman, "The Internet Society sees encryption as a new norm to enhance the security of, and thereby trust in, the Internet." We couldn't agree more.
 
-Internet Society's sponsorship comes at a key time, and will help us to pay for staff and other operation costs as we move from our beta program into general availablity.
+Internet Society's sponsorship comes at a key time, and will help us to pay for staff and other operation costs as we move from our beta program into general availability.
 
 If your company or organization would like to sponsor Let's Encrypt, please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
