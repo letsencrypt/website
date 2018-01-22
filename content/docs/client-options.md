@@ -64,6 +64,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
 - [Ponzu CMS](https://ponzu-cms.org)
+- [Traefik](https://traefik.io)
 
 ## HAProxy
 
