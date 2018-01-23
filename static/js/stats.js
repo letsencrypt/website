@@ -1,3 +1,5 @@
+/*global Plotly*/
+
 // stats.js is used by stats.md to download graph data from the webserver,
 // and then display it using plotly.js.
 
@@ -64,10 +66,6 @@ function tsvListener() {
                 x:[], y:[] }
   var tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
                   marker: { symbol: "diamond" } }
-  var tPctTLSAvg = { type: "scatter", name: "% of Firefox Pageloads use TLS (14 day moving average)",
-                     x:[], y:[] }
-
-  var stackPctTLSAvg = [];
 
   parse_delim(this.responseText, '\t', function(row){
     if (!dateFormat.test(row[0])) {
@@ -78,10 +76,9 @@ function tsvListener() {
     insertPoint(tActive, row[0], row[2]);
     insertPoint(tFqdn, row[0], row[3]);
     insertPoint(tRegDom, row[0], row[4]);
-    insertPoint(tPctTLSAvg, row[0], movingAvg(stackPctTLSAvg, row[5]))
   });
 
-  var plotIt = plot.bind(null, tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg);
+  var plotIt = plot.bind(null, tIssued, tActive, tFqdn, tRegDom);
   if (document.readyState === "complete") {
     plotIt();
   } else {
@@ -89,11 +86,11 @@ function tsvListener() {
   }
 }
 
-function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
+function plot(tIssued, tActive, tFqdn, tRegDom) {
   // Various running aggregates over time
   {
-    traces = [ tActive, tFqdn, tRegDom ];
-    layout = {
+    let traces = [ tActive, tFqdn, tRegDom ];
+    let layout = {
       margin: { t: 20 },
       yaxis: {
         title: 'Active Count',
@@ -106,7 +103,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
       },
       annotations: [ gHistoryCutover ]
     }
-    activeUsage = document.getElementById('activeUsage');
+    let activeUsage = document.getElementById('activeUsage');
     if (activeUsage) {
       Plotly.plot(activeUsage, traces, layout);
     }
@@ -114,8 +111,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
 
   // Certificates issued over time
   {
-    traces = [ tIssued ];
-    layout = {
+    let traces = [ tIssued ];
+    let layout = {
       margin: { t: 20 },
       yaxis: {
         title: 'Issued Per Day',
@@ -127,7 +124,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
         y: 1
       }
     }
-    issuancePerDay = document.getElementById('issuancePerDay');
+    let issuancePerDay = document.getElementById('issuancePerDay');
     if (issuancePerDay) {
       Plotly.plot(issuancePerDay, traces, layout);
     }
@@ -137,8 +134,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
   {
     // Override the axis for the combined graph
     tIssued.yaxis = "y2";
-    traces = [ tActive, tFqdn, tRegDom, tIssued ];
-    layout = {
+    let traces = [ tActive, tFqdn, tRegDom, tIssued ];
+    let layout = {
       margin: { t: 20 },
       yaxis: {
         title: 'Active Count',
@@ -160,7 +157,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom, tPctTLSAvg) {
       },
       annotations: [ gHistoryCutover ]
     }
-    combinedTimeline = document.getElementById('combinedTimeline');
+    let combinedTimeline = document.getElementById('combinedTimeline');
     if (combinedTimeline) {
       Plotly.plot(combinedTimeline, traces, layout);
     }
@@ -229,7 +226,6 @@ function httpsDerivePageloadsFromNormalizedData(traceObj, includeInHttpsAnalysis
     }
 
     // Now derive the reporting ratio and secure pageload ratio
-    let totalReportingRatio = 0.0;
     let totalSecurePageloadRatio = 0.0;
 
     for (let country in dateToCountryOSPageloadData[datestamp]) {
@@ -238,8 +234,6 @@ function httpsDerivePageloadsFromNormalizedData(traceObj, includeInHttpsAnalysis
           let row = dateToCountryOSPageloadData[datestamp][country][os];
           let dimensionNormalizedPageloads = parseFloat(row.normalized_pageloads)
                                                / totalNormalizedPageloads;
-          totalReportingRatio += parseFloat(row.reporting_ratio)
-                                   * dimensionNormalizedPageloads;
           totalSecurePageloadRatio += parseFloat(row.ratio)
                                          * dimensionNormalizedPageloads;
         }
@@ -283,7 +277,7 @@ function httpsPlot() {
     let traceObj = { type: "scatter", x:[], y:[], name: "Global users" }
     let stackMovingAvg = [];
     importHistoricalGlobalData(traceObj, stackMovingAvg);
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
+    httpsDerivePageloadsFromNormalizedData(traceObj, () => {
       return true;
     }, stackMovingAvg);
     traces.push(traceObj);
@@ -304,14 +298,14 @@ function httpsPlot() {
   }
   {
     let traceObj = { type: "scatter", x:[], y:[], name: "OSX users" }
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
+    httpsDerivePageloadsFromNormalizedData(traceObj, (os) => {
       return (os == "Darwin");
     });
     traces.push(traceObj);
   }
   {
     let traceObj = { type: "scatter", x:[], y:[], name: "Windows users" }
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
+    httpsDerivePageloadsFromNormalizedData(traceObj, (os) => {
       return (os == "Windows_NT");
     });
     traces.push(traceObj);
@@ -324,7 +318,7 @@ function httpsPlot() {
     traces.push(traceObj);
   }
 
-  layout = {
+  let layout = {
     margin: { t: 20 },
     yaxis: {
       title: 'Percent of Pageloads over HTTPS (14 day moving average)',
@@ -338,7 +332,7 @@ function httpsPlot() {
       y: 1
     }
   }
-  pageloadPercent = document.getElementById('pageloadPercent');
+  let pageloadPercent = document.getElementById('pageloadPercent');
   if (pageloadPercent) {
     Plotly.plot(pageloadPercent, traces, layout);
   }
