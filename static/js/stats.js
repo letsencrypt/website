@@ -297,23 +297,9 @@ function httpsPlot() {
     traces.push(traceObj);
   }
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "OSX users" }
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os) => {
-      return (os == "Darwin");
-    });
-    traces.push(traceObj);
-  }
-  {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Windows users" }
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os) => {
-      return (os == "Windows_NT");
-    });
-    traces.push(traceObj);
-  }
-  {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Windows users in France" }
+    let traceObj = { type: "scatter", x:[], y:[], name: "Japan users" }
     httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-      return (os == "Windows_NT" && country == "FR");
+      return (country == "JP");
     });
     traces.push(traceObj);
   }
