@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ .Site.Title }}</title>
-    <description>{{ .Site.Params.description }}</description>
+    <title>{{ .Site.Title | htmlEscape }}</title>
+    <description>{{ .Site.Params.description | htmlEscape }}</description>
     <link>{{ .Permalink }}</link>
      {{ with .OutputFormats.Get "RSS" }}
          <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
@@ -12,8 +12,8 @@
     {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 10 }}
     {{ range $posts }}
       <item>
-        <title>{{ .Title }}</title>
-        <description>{{ .Content }}</description>
+        <title>{{ .Title | htmlEscape }}</title>
+        <description>{{ .Content | htmlEscape }}</description>
         <pubDate>{{ .PubDate }}</pubDate>
         <link>{{ .Permalink }}</link>
         <guid isPermaLink="true">{{ .Permalink }}</guid>
