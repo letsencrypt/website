@@ -274,7 +274,7 @@ function httpsPlot() {
   let traces = [];
 
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Global users" }
+    let traceObj = { type: "scatter", x:[], y:[], name: "All users" }
     let stackMovingAvg = [];
     importHistoricalGlobalData(traceObj, stackMovingAvg);
     httpsDerivePageloadsFromNormalizedData(traceObj, () => {
