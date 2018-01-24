@@ -15,6 +15,6 @@ We’re a small organization hoping to help a large portion of the Web move to H
 
 [Clay Shirky once said](https://www.youtube.com/watch?v=Xe1TZaElTAs) that you’ll make more accurate predictions about the quality and longevity of services in a Web-driven world “if you ask yourself not what’s the business model, but rather do the people who like it take care of each other?”
 
-No amount of staffing could provide the level of support that a stong community of fellow users is capable of providing. We sincerely hope that our users will join us in taking care of each other.
+No amount of staffing could provide the level of support that a strong community of fellow users is capable of providing. We sincerely hope that our users will join us in taking care of each other.
 
 We’d like to thank [Discourse](https://www.discourse.org/) for providing the Let’s Encrypt Community Support platform and hosting.
