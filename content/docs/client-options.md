@@ -29,6 +29,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 - [acme.sh](https://github.com/Neilpang/acme.sh/tree/2) (`2` branch)
 - [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
+- [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
 
 ## Bash
 
@@ -43,6 +44,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
 - [Certificate Automation](https://www.certificateautomation.com/)
 - [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
+- [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
@@ -214,3 +216,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
 - [Aegir](https://gitlab.com/aegir/hosting_https)
+
+
+Note: * = Service may require payment.
