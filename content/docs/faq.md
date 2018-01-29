@@ -79,7 +79,7 @@ Yes, the same certificate can contain several different names using the Subject 
 
 ## Will Let’s Encrypt issue wildcard certificates?
 
-We intend to support wildcard certificates [in January 2018](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html) as part of the [ACMEv2](https://letsencrypt.org/2017/06/14/acme-v2-api.html) endpoint. Wildcard issuance will require base domain validation using DNS-01 challenges.
+We support wildcard certificates as part of the [ACMEv2 test environment](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) endpoint. Wildcard certificates issued by the ACMEv2 test environment are for testing only and not trusted by browsers. Wildcard issuance requires base domain validation using DNS-01 challenges. A production ready ACMEv2 environment for issuing trusted wildcard certificates will be available [Februrary 27th](https://letsencrypt.org/2017/12/07/looking-forward-to-2018.html).
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
