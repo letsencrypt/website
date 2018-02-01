@@ -26,11 +26,11 @@ third party clients.
 These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
 
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
-- [acme.sh](https://github.com/Neilpang/acme.sh/tree/2) (`2` branch)
-- [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
-- [Let's Encrypt for Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
+- [acme.sh](https://github.com/Neilpang/acme.sh/tree/2) (`2` branch)
 - [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
+- [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
+- [Let's Encrypt for Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 
 ## Bash
 
