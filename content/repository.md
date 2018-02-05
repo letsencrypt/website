@@ -22,6 +22,7 @@ menu:
 
 # ISRG Certificate Policy
 
+* [v2.1, February 6, 2018](/documents/isrg-cp-v2.1/)
 * [v2.0, May 22, 2017](/documents/isrg-cp-v2.0/)
 * [v1.3, April 13, 2017](/documents/ISRG-CP-v1.3.pdf)
 * [v1.2, May 5, 2016](/documents/ISRG-CP-May-5-2016.pdf)
