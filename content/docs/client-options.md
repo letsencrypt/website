@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-01-05
+lastmod: 2018-02-06
 ---
 
 {{< lastmod >}}
@@ -31,6 +31,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
 - [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
 - [Let's Encrypt for Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
+- [LEClient PHP library](https://github.com/yourivw/LEClient/)
 
 ## Bash
 
