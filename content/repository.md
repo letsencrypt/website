@@ -31,6 +31,7 @@ menu:
 
 # ISRG Certification Practice Statement
 
+* [v2.1, February 6, 2018](/documents/isrg-cps-v2.1/)
 * [v2.0, April 13, 2017](/documents/isrg-cps-v2.0/)
 * [v1.5, October 18, 2016](/documents/ISRG-CPS-October-18-2016.pdf)
 * [v1.4, May 5, 2016](/documents/ISRG-CPS-May-5-2016.pdf)
