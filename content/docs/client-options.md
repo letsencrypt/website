@@ -32,6 +32,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
 - [Let's Encrypt for Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [LEClient PHP library](https://github.com/yourivw/LEClient/)
+- [dehydrated](https://github.com/lukas2511/dehydrated)
 
 ## Bash
 
