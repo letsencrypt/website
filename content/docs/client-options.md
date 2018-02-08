@@ -18,8 +18,8 @@ We recommend that most people start with the [Certbot](https://certbot.eff.org/)
 
 If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-The ACME clients below are offered by third parties. Let's Encrypt doesn't review
-third party clients.
+The ACME clients below are offered by third parties. Let's Encrypt does not control or review
+third party clients and cannot make any guarantees about their safety or reliability.
 
 ## ACME v2 Compatible Clients
 
