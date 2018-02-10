@@ -73,8 +73,8 @@ work, you had to ship the private key to your certificate with your native app.
 That means that anybody who downloads your native app gets a copy of
 the private key, including the attacker. This is considered a compromise of your
 private key, and your Certificate Authority (CA) is required to revoke your
-certificate if they become aware of it. (Many native apps)[mdsp1] have (had their
-certificates)[mdsp2] revoked for (shipping their private key)[mdsp3].
+certificate if they become aware of it. [Many native apps][mdsp1] have [had their
+certificates][mdsp2] revoked for [shipping their private key][mdsp3].
 
 Unfortunately, this leaves native apps without a lot of good, secure options to
 communicate with their corresponding web site. And the situation may get
