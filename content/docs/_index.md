@@ -27,6 +27,7 @@ menu:
 * [Upcoming Features](/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
+* [Certificates for localhost](/docs/certificates-for-localhost/)
 
 # Client Developer Information
 
