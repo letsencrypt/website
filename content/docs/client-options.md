@@ -39,7 +39,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh) 
 - [acme.sh](https://github.com/Neilpang/acme.sh) (Compatible to bash, dash and sh)
 - [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
-- [gheift/letsencrypt.sh](https://github.com/gheift/letsencrypt.sh)
 
 ## Browser
 
@@ -65,7 +64,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Lego](https://github.com/xenolf/lego)
 - [GoACME](https://github.com/google/goacme)
 - [acmetool](https://github.com/hlandau/acme)
-- [ericchiang/letsencrypt](https://github.com/ericchiang/letsencrypt)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
 - [Ponzu CMS](https://ponzu-cms.org)
@@ -123,7 +121,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient)
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
 - [Let's ACME](https://github.com/neurobin/letsacme)
-- [letsencryptshell](https://mojzis.com/software/letsencryptshell/)
 - [wile](https://github.com/costela/wile)
 - [acmebot](https://github.com/plinss/acmebot)
 - [sewer](https://github.com/komuW/sewer)
@@ -139,14 +136,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
 
-## Rust
-
-- [letsencrypt-rs](https://github.com/onur/letsencrypt-rs)
-
 ## Windows / IIS
 
 - [ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
-- [letsencrypt-win-simple](https://github.com/Lone-Coder/letsencrypt-win-simple) (.NET)
 - [Certify](https://github.com/webprofusion/Certify) GUI (.NET, WinForms)
 - [oocx/acme.net](https://github.com/oocx/acme.net) (.NET)
 - [kelunik/acme-client](https://github.com/kelunik/acme-client) (PHP)
