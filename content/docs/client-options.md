@@ -121,6 +121,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient)
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
 - [Let's ACME](https://github.com/neurobin/letsacme)
+- [acmeshell](https://mojzis.com/software/acmeshell)
 - [wile](https://github.com/costela/wile)
 - [acmebot](https://github.com/plinss/acmebot)
 - [sewer](https://github.com/komuW/sewer)
