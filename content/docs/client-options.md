@@ -110,15 +110,13 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [CertLE](https://github.com/skoerfgen/CertLE)
 - [AcmePHP](https://github.com/acmephp/acmephp)
 - [LE Manager](https://github.com/analogic/lemanager)
-- [WordPress Plugin](https://github.com/tollmanz/lets-encrypt-wp)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 
 ## Python
 
-- [No Sudo Client](https://github.com/diafygi/letsencrypt-nosudo)
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
 - [simp_le](https://github.com/zenhack/simp_le)
-- [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient)
+- [mail-in-a-box/free_tls_certificates](https://github.com/mail-in-a-box/free_tls_certificates)
 - [ManuaLE](https://github.com/veeti/manuale) (Python 3)
 - [Let's ACME](https://github.com/neurobin/letsacme)
 - [acmeshell](https://mojzis.com/software/acmeshell)
@@ -132,8 +130,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Multi-Server ACME Cert Management Dashboard](https://github.com/myfreeweb/freshcerts)
-- [Let's Encrypt CLI](https://github.com/zealot128/ruby-letsencrypt-cli)
-- [Ruby on Rails Plugin](https://github.com/lgromanowski/letsencrypt-plugin)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
 
@@ -179,7 +175,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
   clients and is available as a standalone package
   via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), 
   [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions. 
-- [mail-in-a-box/letsencrypt_simpleclient](https://github.com/mail-in-a-box/letsencrypt_simpleclient) (Python 3)
+- [mail-in-a-box/free_tls_certificates](https://github.com/mail-in-a-box/free_tls_certificates) (Python 3)
 - [txacme](https://github.com/mithrandi/txacme) (Twisted client for Python 2 / 3)
 
 ## Ruby
