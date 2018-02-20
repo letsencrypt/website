@@ -6,19 +6,19 @@ top_graphic: 1
 
 ## ACME v2 API
 
-* ETA: February 27, 2018
+* ETA: Q1 2018
 
 ## Wildcard Certificates
 
-* ETA: February 27, 2018
+* ETA: Q1 2018
 
 ## Embed SCT receipts in certificates
 
-* ETA: February, 2018
+* ETA: Q1 2018
 
 ## ECDSA Root and Intermediates
 
-* ETA: July, 2018
+* ETA: Q3 2018
 
 Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
