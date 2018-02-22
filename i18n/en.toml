@@ -19,7 +19,7 @@ other = "From our blog"
 other = "Read more"
 
 [subscribe_rss]
-other = "Subscribe <a href=\"{{ .Permalink }}\">via RSS"
+other = "Subscribe <a href=\"{{ .Permalink }}\">via RSS</a>"
 
 [footer_support_us]
 other = "Support a more secure and privacy-respecting Web."

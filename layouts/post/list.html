@@ -18,7 +18,7 @@
     {{ end }}
   </ul>
   {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-  <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</a></p>
+  <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</p>
   {{ end  }}
 </div>
 {{ end }}
