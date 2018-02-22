@@ -3,7 +3,7 @@ title: Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2016-08-08
+lastmod: 2018-02-21
 ---
 
 {{< lastmod >}}
@@ -93,8 +93,6 @@ Related to the above two points, it may make sense, if you have a lot of fronten
 Many browsers will fetch OCSP from Let's Encrypt when they load your site. This is a [performance and privacy problem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideally, connections to your site should not wait for a secondary connection to Let's Encrypt. Also, OCSP requests tell Let's Encrypt which sites people are visiting. We have a good privacy policy and do not record individually identifying details from OCSP requests, we'd rather not even receive the data in the first place. Additionally, we anticipate our bandwidth costs for serving OCSP every time a browser visits a Let's Encrypt site for the first time will be a big part of our infrastructure expense.
 
 By turning on OCSP Stapling, you can improve the performance of your website, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
-
-Additionally, OCSP Stapling forms the basis for two other technologies you may want to use in the future: Must Staple, which provides for revocation that actually works, and Certificate Transparency proofs (which we will be delivering by OCSP, and which must be stapled for Chrome to recognize them).
 
 # Let's Encrypt IPs
 
