@@ -213,6 +213,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
 - [Aegir](https://gitlab.com/aegir/hosting_https)
+- [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
 
 
 Note: * = Service may require payment.
