@@ -133,6 +133,10 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
 
+## Rust
+
+- [acme-client](https://github.com/onur/acme-client)
+
 ## Windows / IIS
 
 - [ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
