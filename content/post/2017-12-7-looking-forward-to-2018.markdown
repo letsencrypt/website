@@ -25,7 +25,7 @@ Other organizations and communities are also doing great work to promote HTTPS a
 
 We’ve got some exciting features planned for 2018.
 
-First, we’re planning to introduce an ACME v2 protocol API endpoint and [support for wildcard certificates](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html) along with it. Wildcard certificates will be free and available globally just like our other certificates. We are planning to have a public test API endpoint up by January 4, and we’ve set a date for the full launch: Tuesday, February 27.
+First, we’re planning to introduce an ACME v2 protocol API endpoint and [support for wildcard certificates](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html) along with it. Wildcard certificates will be free and available globally just like our other certificates. We are planning to have a public test API endpoint up by January 4, and we’ve set a date for the full launch: ~~Tuesday, February 27~~ [More information...](https://community.letsencrypt.org/t/acmev2-and-wildcard-launch-delay/53654)
 
 Later in 2018 we plan to introduce ECDSA root and intermediate certificates. ECDSA is generally considered to be the future of digital signature algorithms on the Web due to the fact that it is more efficient than RSA. Let’s Encrypt will currently sign ECDSA keys from subscribers, but we sign with the RSA key from one of our intermediate certificates. Once we have an ECDSA root and intermediates, our subscribers will be able to deploy certificate chains which are entirely ECDSA.
 
