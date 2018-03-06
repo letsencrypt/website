@@ -34,6 +34,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [LEClient PHP library](https://github.com/yourivw/LEClient)
 - [dehydrated](https://github.com/lukas2511/dehydrated)
 - [sewer](https://github.com/komuw/sewer/tree/acmev2) (`acmev2` branch)
+- [stonemax/acme2 PHP client](https://github.com/stonemax/acme2)
 
 ## Bash
 
