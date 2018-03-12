@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2018-01-04
+lastmod: 2018-03-12
 ---
 
 {{< lastmod >}}
@@ -89,10 +89,8 @@ usually means that your client is creating authorizations and not fulfilling the
 Please utilize our [staging environment](/docs/staging-environment/) if you’re
 developing an ACME client.
 
-For users of the ACME v2 API you can have a maximum of 300 <a
-name="pending-orders"></a>**Pending Orders** on your account. Similar to the
-pending authorizations rate limit hitting the pending order rate limit is rare
-and likely indicates a client bug.
+For users of the ACME v2 API you can create a maximum of 300 <a
+name="new-orders"></a>**New Orders** per account per 3 hours.
 
 # <a name="overrides"></a>Overrides
 
