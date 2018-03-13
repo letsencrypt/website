@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-02-06
+lastmod: 2018-03-12
 ---
 
 {{< lastmod >}}
@@ -25,6 +25,7 @@ third party clients and cannot make any guarantees about their safety or reliabi
 
 These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
 
+- [Certbot](https://certbot.eff.org/) (Certbot >= 0.22.0)
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 - [acme.sh](https://github.com/Neilpang/acme.sh)
@@ -34,6 +35,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [LEClient PHP library](https://github.com/yourivw/LEClient)
 - [dehydrated](https://github.com/lukas2511/dehydrated)
 - [le-acme2-php library](https://github.com/fbett/le-acme2-php)
+- [sewer](https://github.com/komuw/sewer/tree/acmev2) (`acmev2` branch)
+- [stonemax/acme2 PHP client](https://github.com/stonemax/acme2)
 
 ## Bash
 
@@ -134,6 +137,10 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
 
+## Rust
+
+- [acme-client](https://github.com/onur/acme-client)
+
 ## Windows / IIS
 
 - [ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
@@ -210,6 +217,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
 - [Aegir](https://gitlab.com/aegir/hosting_https)
+- [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
 
 
 Note: * = Service may require payment.

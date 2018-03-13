@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-01-05
+lastmod: 2018-03-12
 ---
 
 {{< lastmod >}}
@@ -30,6 +30,7 @@ The staging environment uses the same rate limits as [described for the producti
 * The **Duplicate Certificate** limit is 30,000 per week.
 * The **Failed Validations** limit is 60 per hour.
 * The **Accounts per IP Address** limit is 50 accounts per three 3 hour period per IP.
+* For ACME v2, the **New Orders** limit is 1,500 new orders per 3 hour period per account.
 
 # Root Certificate
 

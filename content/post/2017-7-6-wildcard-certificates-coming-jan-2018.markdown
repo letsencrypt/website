@@ -6,9 +6,9 @@ title: Wildcard Certificates Coming January 2018
 slug: wildcard-certificates-coming-jan-2018
 ---
 
-> **Update, February 20, 2018**
+> **Update, March 13, 2018**
 > 
-> We introduced a public test API endpoint for the ACME v2 protocol and wildcard support on January 4, 2018. We have delayed their production release, see [this post](https://community.letsencrypt.org/t/acmev2-and-wildcard-launch-delay/53654) for more information.
+> Wildcard certificate support [is live](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579/).
 
 Let’s Encrypt will begin issuing wildcard certificates in January of 2018. Wildcard certificates are a commonly requested feature and we understand that there are some use cases where they make HTTPS deployment easier. Our hope is that offering wildcards will help to accelerate the Web’s progress towards 100% HTTPS.
 
