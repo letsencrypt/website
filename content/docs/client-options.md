@@ -34,6 +34,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [LEClient PHP library](https://github.com/yourivw/LEClient)
 - [dehydrated](https://github.com/lukas2511/dehydrated)
+- [le-acme2-php library](https://github.com/fbett/le-acme2-php)
 - [sewer](https://github.com/komuw/sewer)
 - [stonemax/acme2 PHP client](https://github.com/stonemax/acme2)
 
