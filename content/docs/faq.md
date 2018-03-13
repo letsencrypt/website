@@ -77,9 +77,9 @@ We have no plans to issue OV or EV certificates.
 
 Yes, the same certificate can contain several different names using the Subject Alternative Name (SAN) mechanism.
 
-## Will Let’s Encrypt issue wildcard certificates?
+## Does Let’s Encrypt issue wildcard certificates?
 
-We support wildcard certificates as part of the [ACMEv2 test environment](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) endpoint. Wildcard certificates issued by the ACMEv2 test environment are for testing only and not trusted by browsers. Wildcard issuance requires base domain validation using DNS-01 challenges. A production ready ACMEv2 environment for issuing trusted wildcard certificates will be available soon. For updates please follow [this thread on our community forums](https://community.letsencrypt.org/t/acmev2-and-wildcard-launch-delay/53654).
+Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
