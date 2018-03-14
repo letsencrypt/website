@@ -20,7 +20,7 @@ The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Please note the v2 staging environment requires a v2 compatible ACME client and Certbot does not currently support ACME v2.
+If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment. Please note the v2 staging environment requires a v2 compatible ACME client.
 
 # Rate Limits
 
