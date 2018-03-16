@@ -38,6 +38,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [sewer](https://github.com/komuw/sewer)
 - [stonemax/acme2 PHP client](https://github.com/stonemax/acme2)
 - [Crypt::LE](https://github.com/do-know/Crypt-LE)
+- [ACME Tiny](https://github.com/diafygi/acme-tiny)
 
 ## Bash
 
