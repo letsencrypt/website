@@ -59,6 +59,35 @@ description = """
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
+ 
+[languages.cs]
+title = "Let's Encrypt - SSL/TLS certifikáty zdarma"
+languageName ="čeština"
+# Weight used for sorting.
+weight = 1
+description = """
+  Let&rsquo;s&nbsp;Encrypt je automatizovaná a otevřená certifikační autorita od neziskové organizace Internet Security Research Group (ISRG), která vydává certifikáty zdarma.
+"""
+[[languages.cs.menu.main]]
+ name = "Získejte pomoc"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.cs.menu.main]]
+ name = "Darujte"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.cs.menu.main]]
+ name = "O nás"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.cs.menu.main]]
+ name = "Stav služby"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
 
 #[languages.no]
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"

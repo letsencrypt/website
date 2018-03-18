@@ -1,0 +1,44 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt je <span>automatizovaná</span> a <span>otevřená</span> certifikační autorita, která vydává certifikáty <span>zdarma</span>."
+
+[home_hero_getting_started]
+other = "Začínáme"
+
+[home_hero_donate]
+other = "Darujte"
+
+[home_major_sponsors]
+other = "Hlavní sponzoři a dárci"
+
+[home_from_our_blog]
+other = "Z našeho blogu"
+
+[read_more]
+other = "Přečíst více"
+
+[subscribe_rss]
+other = "Odebírat <a href=\"{{ .Permalink }}\">přes RSS</a>"
+
+[footer_support_us]
+other = "Podpořte bezpečnější web, který respektuje soukromí."
+
+[footer_donate]
+other = "Darujte"
+
+[footer_policies]
+other = """
+Podívejte se na naše <a href="/privacy/">zásady ochrany soukromí</a>.<br>
+Podívejte se na naše <a href="/trademarks/">podmínky ochranné známky</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation je registrovaná obchodní známka The Linux Foundation. Linux je registrovaná obchodní známka Linuse Torvaldse."
+
+[header_skip_nav]
+other = "Přeskočit odkazy navigace"
+
+
+[languages]
+other = "Jazyky"
