@@ -40,6 +40,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Crypt::LE](https://github.com/do-know/Crypt-LE)
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
+- [acmebot](https://github.com/plinss/acmebot)
 
 ## Bash
 
