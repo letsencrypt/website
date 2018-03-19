@@ -39,6 +39,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [stonemax/acme2 PHP client](https://github.com/stonemax/acme2)
 - [Crypt::LE](https://github.com/do-know/Crypt-LE)
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
+- [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 
 ## Bash
 
