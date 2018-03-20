@@ -98,8 +98,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Node.js
 
-- [Daplie/greenlock-cli](https://git.daplie.com/Daplie/greenlock-cli)
-- [Daplie/greenlock-express](https://git.daplie.com/Daplie/greenlock-express)
+- [Daplie/greenlock-cli](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
+- [Daplie/greenlock-express](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
 
 ## OpenShift
@@ -169,7 +169,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Node.js
 
-- [Daplie/node-greenlock](https://git.daplie.com/Daplie/node-greenlock)
+- [Daplie/node-greenlock](https://git.coolaj86.com/coolaj86/greenlock.js)
 
 ## Perl
 
