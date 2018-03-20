@@ -14,6 +14,8 @@
     <meta name="twitter:image:src" content="{{ "images/le-logo-twitter.png" | absURL }}">
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
     {{ with .Site.Home.OutputFormats.Get "RSS" -}}
     <link rel="{{ .Rel }}" href="{{ .Permalink }}" type="application/rss+xml" title="Let's Encrypt Blog Feed" />
     {{ end  }}
