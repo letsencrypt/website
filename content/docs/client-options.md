@@ -53,7 +53,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
 - [Certificate Automation](https://www.certificateautomation.com/)
-- [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
+- [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation, Supports Wildcard)
 - [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
 
 ## C
