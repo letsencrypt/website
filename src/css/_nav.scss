@@ -43,7 +43,7 @@
 }
 .pure-menu-children {
     padding-bottom: 0.5em;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 }
 .pure-menu-children .pure-menu-link {
     line-height: 1.3;
@@ -58,6 +58,7 @@ a.pure-menu-link:hover {
     text-align: right;
     min-width: 146px;
     background-color: #FDFDFD;
+    box-shadow: 1px 4px 10px #d8d8d8;
 }
 .pure-menu-link {
     color: darken($brand-color, 20%);
