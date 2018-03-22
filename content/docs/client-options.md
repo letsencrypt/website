@@ -59,6 +59,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
 
+## C++
+- [acme-lw](https://github.com/jmccl/acme-lw)
+
 ## Clojure
 - [certificaat](https://github.com/danielsz/certificaat)
 
