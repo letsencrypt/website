@@ -51,6 +51,7 @@ menu:
 
 # ISRG Legal Transparency Reports
 
+* [April 1, 2018](/documents/ISRG-Legal-Transparency-Report-April-1-2018.pdf)
 * [October 1, 2017](/documents/ISRG-Legal-Transparency-Report-October-1-2017.pdf)
 * [April 1, 2017](/documents/ISRG-Legal-Transparency-Report-April-1-2017.pdf)
 * [October 1, 2016](/documents/ISRG-Legal-Transparency-Report-October-1-2016.pdf)
