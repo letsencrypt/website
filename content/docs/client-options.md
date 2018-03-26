@@ -41,10 +41,11 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 - [acmebot](https://github.com/plinss/acmebot)
+- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## Bash
 
-- [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh) 
+- [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh)
 - [acme.sh](https://github.com/Neilpang/acme.sh) (Compatible to bash, dash and sh)
 - [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
 
@@ -104,6 +105,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Daplie/greenlock-cli](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
 - [Daplie/greenlock-express](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
+- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## OpenShift
 
@@ -189,8 +191,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - the Python [acme](https://github.com/certbot/certbot/tree/master/acme)
   module is part of the Certbot tree, but is also used by a number of other
   clients and is available as a standalone package
-  via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), 
-  [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions. 
+  via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme),
+  [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 - [mail-in-a-box/free_tls_certificates](https://github.com/mail-in-a-box/free_tls_certificates) (Python 3)
 - [txacme](https://github.com/mithrandi/txacme) (Twisted client for Python 2 / 3)
 
