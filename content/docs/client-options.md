@@ -42,6 +42,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 - [acmebot](https://github.com/plinss/acmebot)
 - [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
+- [SSL for free](https://www.sslforfree.com/)
 
 ## Bash
 
