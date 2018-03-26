@@ -104,7 +104,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Daplie/greenlock-cli](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
 - [Daplie/greenlock-express](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
-- [node-letsencrypt-lambda](https://github.com/ocelotconsulting/node-letsencrypt-lambda)
+- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## OpenShift
 
