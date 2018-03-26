@@ -41,6 +41,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 - [acmebot](https://github.com/plinss/acmebot)
+- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## Bash
 
