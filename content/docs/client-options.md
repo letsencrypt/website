@@ -43,6 +43,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acmebot](https://github.com/plinss/acmebot)
 - [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 - [SSL for free](https://www.sslforfree.com/)
+- [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
 
 ## Bash
 
