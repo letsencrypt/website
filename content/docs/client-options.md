@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-03-12
+lastmod: 2018-03-27
 ---
 
 {{< lastmod >}}
@@ -41,7 +41,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME Tiny](https://github.com/diafygi/acme-tiny)
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 - [acmebot](https://github.com/plinss/acmebot)
-- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
+- [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 - [SSL for free](https://www.sslforfree.com/)
 
 ## Bash
@@ -106,7 +106,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Daplie/greenlock-cli](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
 - [Daplie/greenlock-express](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
-- [node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
+- [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## OpenShift
 
