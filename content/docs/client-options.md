@@ -26,6 +26,7 @@ third party clients and cannot make any guarantees about their safety or reliabi
 These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
 
 - [Certbot](https://certbot.eff.org/) (Certbot >= 0.22.0)
+- [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 - [acme.sh](https://github.com/Neilpang/acme.sh)
