@@ -2,7 +2,7 @@
 author: Jacob Hoffman-Andrews, Boulder developer
 date: 2017-07-06T00:00:00Z
 excerpt: Here's how Signed Certificate Timestamps get embedded in certificates
-title: Technical deep dive: Encoding of SCTs in certificates
+title: Engineering deep dive: Encoding of SCTs in certificates
 slug: sct-encoding
 ---
 
@@ -12,15 +12,17 @@ This feature allows browsers to check that a certificate was submitted to a
 Certificate Transparency log. As part of the launch, we did a thorough review
 that the encoding of Signed Certificate Timestamps (SCTs) in our certificates
 matches the relevant specifications. In this post, I'll dive into the details.
+You'll learn more about X.509, ASN.1, DER, and TLS encoding, with references to
+the relevant RFCs.
 
 Certificate Transparency offers three ways to deliver SCTs to a browser: In a
 TLS extension, in stapled OCSP, or embedded in a certificate. We chose to
 implement the embedding method because it would just work for Let's Encrypt
 subscribers without additional work. In the SCT embedding method, we submit
-a "precertificate" with a poison extension to a set of CT logs, and gets back
-SCTs. We then issue a real certificate based on the precertificate, with
-two changes: The poison extension is removed, and a list of SCTs is added in
-another extension.
+a "precertificate" with a [poison extension](#poison) to a set of
+CT logs, and gets back SCTs. We then issue a real certificate based on the
+precertificate, with two changes: The poison extension is removed, and a list
+of SCTs is added in another extension.
 
 Given a certificate, let's first look for the extension. According to RFC 6962
 (the CT RFC), [section 3.3](https://tools.ietf.org/html/rfc6962#section-3.3),
@@ -69,7 +71,7 @@ the certificate? Certificates are expressed in
 which generally refers to both a language for expressing data structures
 and a set of formats for encoding them. The most common format,
  [DER](https://en.wikipedia.org/wiki/X.690#DER_encoding),
-is a tag-length-value format. That is, encode an object, first you write
+is a tag-length-value format. That is, to encode an object, first you write
 down a tag representing its type (usually one byte), then you write
 down a number expressing how long the object is, then you write down
 the object contents. This is recursive: An object can contain multiple
@@ -88,7 +90,7 @@ decode:
 You could tell me right away that decodes to:
 
 ```
-SEQUENCE (2 elem)
+SEQUENCE
   INTEGER 3
   INTEGER 10
 ```
@@ -137,18 +139,19 @@ a bunch of bytes!" In this case, as described by the spec, those bytes
 happen to contain more DER. This is a fairly common pattern in X.509
 to deal with parameterized data. For instance, this allows defining a
 structure for extensions without knowing ahead of time all the structures
-that a future extension might want to carry in its value. Think of it as a
-`void*` (or `interface{}`) for data structures.
+that a future extension might want to carry in its value. If you're a C
+programmer, think of it as a `void*` for data structures. If you prefer Go,
+think of it as an `interface{}`.
 
 Here's that extnValue:
 
 ```
-0481F50481F200F0007500DB74AFEECB29ECB1FECA3E716D2CE5B9AABB36F7847183C75D9D4F37B61FBF64000001627313EB19000004030046304402207E1FCD1E9A2BD2A50A0C81E713033A0762340DA8F91EF27A48B3817640159CD30220659FE9F1D880E2E8F6B325BE9F18956D17C6CA8A6F2B12CB0F55FB70F759A419007700293C519654C83965BAAA50FC5807D4B76FBF587A2972DCA4C30CF4E54547F478000001627313EB2A0000040300483046022100AB72F1E4D6223EF87FC68491C208D29D4D57EBF47588BB7544D32F9537E2CEC10221008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2
+04 81 F5 0481F200F0007500DB74AFEECB29ECB1FECA3E716D2CE5B9AABB36F7847183C75D9D4F37B61FBF64000001627313EB19000004030046304402207E1FCD1E9A2BD2A50A0C81E713033A0762340DA8F91EF27A48B3817640159CD30220659FE9F1D880E2E8F6B325BE9F18956D17C6CA8A6F2B12CB0F55FB70F759A419007700293C519654C83965BAAA50FC5807D4B76FBF587A2972DCA4C30CF4E54547F478000001627313EB2A0000040300483046022100AB72F1E4D6223EF87FC68491C208D29D4D57EBF47588BB7544D32F9537E2CEC10221008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2
 ```
 
 That's tag "0x04", meaning OCTET STRING, followed by "0x81 0xF5", meaning
-"this string is 245 bytes long" (the 0x81 prefix is part of variable length
-number encoding).
+"this string is 245 bytes long" (the 0x81 prefix is part of [variable length
+number encoding](#variable-length).
 
 According to [RFC 6962, section
 3.3](https://tools.ietf.org/html/rfc6962#section-3.3), "obtained SCTs
@@ -161,7 +164,7 @@ So, we have an OCTET STRING, all's good, right? Except if you remove the
 tag and length from extnValue to get its value, you're left with:
 
 ```
-0481F200F0007500DB74AFEEC...
+04 81 F2 00F0007500DB74AFEEC...
 ```
 
 There's that "0x04" tag again, but with a shorter length. Why
@@ -410,4 +413,28 @@ leftmost bit would be a 1, an extra byte has to be added so that the leftmost
 bit can be 0.
 
 This is a little taste of what goes into encoding a certificate. I hope it was
-informative, and that it inspires you to learn more about certificates!
+informative!
+
+<a name="poison"></a>Footnote 1: A "poison extension" is defined by [RFC 6962
+section 3.1](https://tools.ietf.org/html/rfc6962#section-3.1):
+
+```
+The Precertificate is
+constructed from the certificate to be issued by adding a special
+critical poison extension (OID 1.3.6.1.4.1.11129.2.4.3, whose
+ extnValue OCTET STRING contains ASN.1 NULL data (0x05 0x00))
+```
+
+In other words, it's an empty extension whose only purpose is to ensure that
+certificate processors will not accept precertificates as valid certificates. The
+specification ensures this by setting the "critical" bit on the extension, which
+ensures that code that doesn't recognize the extension will reject the whole
+certificate. And code that does recognize the extension specifically as poison
+will also reject the certificate.
+
+<a name="variable-length"></a>Footnote 2: Lengths from 0-127 are represented by
+a single byte (short form). To express longer lengths, more bytes are used (long form).
+The high bit (0x80) on the first byte is set to distinguish long form from short
+form. The remaining bits are used to express how many more bytes to read for the
+length. For instance, 0x81F5 means "this is long form because the length is
+greater than 127, but there's still only one byte of length (0xF5) to decode."
