@@ -1,8 +1,8 @@
 ---
 author: Jacob Hoffman-Andrews, Boulder developer
-date: 2017-07-06T00:00:00Z
-excerpt: Here's how Signed Certificate Timestamps get embedded in certificates
-title: Engineering deep dive: Encoding of SCTs in certificates
+date: 2018-04-02T00:00:00Z
+excerpt: How Signed Certificate Timestamps get embedded in certificates
+title: Engineering deep dive&colon; Encoding of SCTs in certificates
 slug: sct-encoding
 ---
 
