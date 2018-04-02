@@ -45,6 +45,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [SSL for free](https://www.sslforfree.com/)
 - [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
 - [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
+- [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 
 ## Bash
 
@@ -178,6 +179,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Node.js
 
 - [Daplie/node-greenlock](https://git.coolaj86.com/coolaj86/greenlock.js)
+- [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 
 ## Perl
 
