@@ -45,6 +45,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [SSL for free](https://www.sslforfree.com/)
 - [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
 - [ZeroSSL](https://ZeroSSL.com/)
+- [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
+- [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 
 ## Bash
 
@@ -157,7 +159,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
 - [win-acme](https://github.com/PKISharp/win-acme) (.NET)
-- [Certify](https://github.com/webprofusion/Certify) GUI (.NET, WinForms)
+- [Certify The Web](https://github.com/webprofusion/certify) GUI (.NET, WPF)
 - [oocx/acme.net](https://github.com/oocx/acme.net) (.NET)
 - [kelunik/acme-client](https://github.com/kelunik/acme-client) (PHP)
 - [ZeroSSL Windows](https://github.com/do-know/Crypt-LE/releases)
@@ -178,6 +180,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Node.js
 
 - [Daplie/node-greenlock](https://git.coolaj86.com/coolaj86/greenlock.js)
+- [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 
 ## Perl
 
