@@ -9,7 +9,8 @@ slug: sct-encoding
 Let's Encrypt recently [launched SCT embedding in
 certificates](https://community.letsencrypt.org/t/signed-certificate-timestamps-embedded-in-certificates/57187).
 This feature allows browsers to check that a certificate was submitted to a
-Certificate Transparency log. As part of the launch, we did a thorough review
+[Certificate Transparency](https://en.wikipedia.org/wiki/Certificate_Transparency)
+log. As part of the launch, we did a thorough review
 that the encoding of Signed Certificate Timestamps (SCTs) in our certificates
 matches the relevant specifications. In this post, I'll dive into the details.
 You'll learn more about X.509, ASN.1, DER, and TLS encoding, with references to
@@ -21,12 +22,12 @@ implement the embedding method because it would just work for Let's Encrypt
 subscribers without additional work. In the SCT embedding method, we submit
 a "precertificate" with a [poison extension](#poison) to a set of
 CT logs, and get back SCTs. We then issue a real certificate based on the
-precertificate, with two changes: The poison extension is removed, and a list
-of SCTs is added in another extension.
+precertificate, with two changes: The poison extension is removed, and the SCTs
+obtained earlier are added in another extension.
 
-Given a certificate, let's first look for the extension. According to CT ([RFC 6962
+Given a certificate, let's first look for the SCT list extension. According to CT ([RFC 6962
 section 3.3](https://tools.ietf.org/html/rfc6962#section-3.3)),
-the extension OID for a list of SCTs is 1.3.6.1.4.1.11129.2.4.2. An [OID (object
+the extension OID for a list of SCTs is `1.3.6.1.4.1.11129.2.4.2`. An [OID (object
 ID)](http://www.hl7.org/Oid/information.cfm) is a series of integers, hierarchically
 assigned and globally unique. They are used extensively in X.509, for instance
 to uniquely identify extensions.
@@ -114,9 +115,9 @@ We can take some of this knowledge and apply it to our certificates. As a first
 step, convert the above certificate to hex with
 `xxd -ps < Downloads/031f2484307c9bc511b3123cb236a480d451`. You can then copy
 and paste the result into
-[lapo.it/asn1js](https://lapo.it/asn1js) (or use [this handy link](https://lapo.it/asn1js/#3082062F30820517A0030201020212031F2484307C9BC511B3123CB236A480D451300D06092A864886F70D01010B0500304A310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074312330210603550403131A4C6574277320456E637279707420417574686F72697479205833301E170D3138303332393137343530375A170D3138303632373137343530375A302D312B3029060355040313223563396137662E6C652D746573742E686F66666D616E2D616E64726577732E636F6D30820122300D06092A864886F70D01010105000382010F003082010A0282010100BCEAE8F504D9D91FCFC69DB943254A7FED7C6A3C04E2D5C7DDD010CBBC555887274489CA4F432DCE6D7AB83D0D7BDB49C466FBCA93102DC63E0EB1FB2A0C50654FD90B81A6CB357F58E26E50F752BF7BFE9B56190126A47409814F59583BDD337DFB89283BE22E81E6DCE13B4E21FA6009FC8A7F903A17AB05C8BED85A715356837E849E571960A8999701EAE9CE0544EAAB936B790C3C35C375DB18E9AA627D5FA3579A0FB5F8079E4A5C9BE31C2B91A7F3A63AFDFEDB9BD4EA6668902417D286BE4BBE5E43CD9FE1B8954C06F21F5C5594FD3AB7D7A9CBD6ABF19774D652FD35C5718C25A3BA1967846CED70CDBA95831CF1E09FF7B8014E63030CE7A776750203010001A382032A30820326300E0603551D0F0101FF0404030205A0301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E041604148B3A21ABADF50C4B30DCCD822724D2C4B9BA29E3301F0603551D23041830168014A84A6A63047DDDBAE6D139B7A64565EFF3A8ECA1306F06082B0601050507010104633061302E06082B060105050730018622687474703A2F2F6F6373702E696E742D78332E6C657473656E63727970742E6F7267302F06082B060105050730028623687474703A2F2F636572742E696E742D78332E6C657473656E63727970742E6F72672F302D0603551D110426302482223563396137662E6C652D746573742E686F66666D616E2D616E64726577732E636F6D3081FE0603551D200481F63081F33008060667810C0102013081E6060B2B0601040182DF130101013081D6302606082B06010505070201161A687474703A2F2F6370732E6C657473656E63727970742E6F72673081AB06082B0601050507020230819E0C819B54686973204365727469666963617465206D6179206F6E6C792062652072656C6965642075706F6E2062792052656C79696E67205061727469657320616E64206F6E6C7920696E206163636F7264616E636520776974682074686520436572746966696361746520506F6C69637920666F756E642061742068747470733A2F2F6C657473656E63727970742E6F72672F7265706F7369746F72792F30820104060A2B06010401D6790204020481F50481F200F0007500DB74AFEECB29ECB1FECA3E716D2CE5B9AABB36F7847183C75D9D4F37B61FBF64000001627313EB19000004030046304402207E1FCD1E9A2BD2A50A0C81E713033A0762340DA8F91EF27A48B3817640159CD30220659FE9F1D880E2E8F6B325BE9F18956D17C6CA8A6F2B12CB0F55FB70F759A419007700293C519654C83965BAAA50FC5807D4B76FBF587A2972DCA4C30CF4E54547F478000001627313EB2A0000040300483046022100AB72F1E4D6223EF87FC68491C208D29D4D57EBF47588BB7544D32F9537E2CEC10221008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2300D06092A864886F70D01010B0500038201010095F87B663176776502F792DDD232C216943C7803876FCBEB46393A36354958134482E0AFEED39011618327C2F0203351758FEB420B73CE6C797B98F88076F409F3903F343D1F5D9540F41EF47EB39BD61B62873A44F00B7C8B593C6A416458CF4B5318F35235BC88EABBAA34F3E3F81BD3B047E982EE1363885E84F76F2F079F2B6EEB4ECB58EFE74C8DE7D54DE5C89C4FB5BB0694B837BD6F02BAFD5A6C007D1B93D25007BDA9B2BDBF82201FE1B76B628CE34E2D974E8E623EC57A5CB53B435DD4B9993ADF6BA3972F2B29D259594A94E17BBE06F34AAE5CF0F50297548C4DFFC5566136F78A3D3B324EAE931A14EB6BE6DA1D538E48CF077583C67B52E7E8)). You can also run `openssl asn1parse -i -inform der -in Downloads/031f2484307c9bc511b3123cb236a480d451` to use OpenSSL's parser, which is less easy to use in some way, but easier to copy and paste.
+[lapo.it/asn1js](https://lapo.it/asn1js) (or use [this handy link](https://lapo.it/asn1js/#3082062F30820517A0030201020212031F2484307C9BC511B3123CB236A480D451300D06092A864886F70D01010B0500304A310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074312330210603550403131A4C6574277320456E637279707420417574686F72697479205833301E170D3138303332393137343530375A170D3138303632373137343530375A302D312B3029060355040313223563396137662E6C652D746573742E686F66666D616E2D616E64726577732E636F6D30820122300D06092A864886F70D01010105000382010F003082010A0282010100BCEAE8F504D9D91FCFC69DB943254A7FED7C6A3C04E2D5C7DDD010CBBC555887274489CA4F432DCE6D7AB83D0D7BDB49C466FBCA93102DC63E0EB1FB2A0C50654FD90B81A6CB357F58E26E50F752BF7BFE9B56190126A47409814F59583BDD337DFB89283BE22E81E6DCE13B4E21FA6009FC8A7F903A17AB05C8BED85A715356837E849E571960A8999701EAE9CE0544EAAB936B790C3C35C375DB18E9AA627D5FA3579A0FB5F8079E4A5C9BE31C2B91A7F3A63AFDFEDB9BD4EA6668902417D286BE4BBE5E43CD9FE1B8954C06F21F5C5594FD3AB7D7A9CBD6ABF19774D652FD35C5718C25A3BA1967846CED70CDBA95831CF1E09FF7B8014E63030CE7A776750203010001A382032A30820326300E0603551D0F0101FF0404030205A0301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E041604148B3A21ABADF50C4B30DCCD822724D2C4B9BA29E3301F0603551D23041830168014A84A6A63047DDDBAE6D139B7A64565EFF3A8ECA1306F06082B0601050507010104633061302E06082B060105050730018622687474703A2F2F6F6373702E696E742D78332E6C657473656E63727970742E6F7267302F06082B060105050730028623687474703A2F2F636572742E696E742D78332E6C657473656E63727970742E6F72672F302D0603551D110426302482223563396137662E6C652D746573742E686F66666D616E2D616E64726577732E636F6D3081FE0603551D200481F63081F33008060667810C0102013081E6060B2B0601040182DF130101013081D6302606082B06010505070201161A687474703A2F2F6370732E6C657473656E63727970742E6F72673081AB06082B0601050507020230819E0C819B54686973204365727469666963617465206D6179206F6E6C792062652072656C6965642075706F6E2062792052656C79696E67205061727469657320616E64206F6E6C7920696E206163636F7264616E636520776974682074686520436572746966696361746520506F6C69637920666F756E642061742068747470733A2F2F6C657473656E63727970742E6F72672F7265706F7369746F72792F30820104060A2B06010401D6790204020481F50481F200F0007500DB74AFEECB29ECB1FECA3E716D2CE5B9AABB36F7847183C75D9D4F37B61FBF64000001627313EB19000004030046304402207E1FCD1E9A2BD2A50A0C81E713033A0762340DA8F91EF27A48B3817640159CD30220659FE9F1D880E2E8F6B325BE9F18956D17C6CA8A6F2B12CB0F55FB70F759A419007700293C519654C83965BAAA50FC5807D4B76FBF587A2972DCA4C30CF4E54547F478000001627313EB2A0000040300483046022100AB72F1E4D6223EF87FC68491C208D29D4D57EBF47588BB7544D32F9537E2CEC10221008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2300D06092A864886F70D01010B0500038201010095F87B663176776502F792DDD232C216943C7803876FCBEB46393A36354958134482E0AFEED39011618327C2F0203351758FEB420B73CE6C797B98F88076F409F3903F343D1F5D9540F41EF47EB39BD61B62873A44F00B7C8B593C6A416458CF4B5318F35235BC88EABBAA34F3E3F81BD3B047E982EE1363885E84F76F2F079F2B6EEB4ECB58EFE74C8DE7D54DE5C89C4FB5BB0694B837BD6F02BAFD5A6C007D1B93D25007BDA9B2BDBF82201FE1B76B628CE34E2D974E8E623EC57A5CB53B435DD4B9993ADF6BA3972F2B29D259594A94E17BBE06F34AAE5CF0F50297548C4DFFC5566136F78A3D3B324EAE931A14EB6BE6DA1D538E48CF077583C67B52E7E8)). You can also run `openssl asn1parse -i -inform der -in Downloads/031f2484307c9bc511b3123cb236a480d451` to use OpenSSL's parser, which is less easy to use in some ways, but easier to copy and paste.
 
-In the decoded data, we can find the OID 1.3.6.1.4.1.11129.2.4.2, indicating
+In the decoded data, we can find the OID `1.3.6.1.4.1.11129.2.4.2`, indicating
 the SCT list extension. Per [RFC 5280, section
 4.1](https://tools.ietf.org/html/rfc5280#page-17), an extension is defined:
 
@@ -131,9 +132,9 @@ Extension  ::=  SEQUENCE  {
       }
 ```
 
-We've found the "extnID". The "critical" field is omitted because it has the
-default value (false). Next up is the extnValue. This has the type
-OCTET STRING, which has the tag "0x04". OCTET STRING means "here's
+We've found the `extnID`. The "critical" field is omitted because it has the
+default value (false). Next up is the `extnValue`. This has the type
+`OCTET STRING`, which has the tag "0x04". `OCTET STRING` means "here's
 a bunch of bytes!" In this case, as described by the spec, those bytes
 happen to contain more DER. This is a fairly common pattern in X.509
 to deal with parameterized data. For instance, this allows defining a
@@ -142,24 +143,24 @@ that a future extension might want to carry in its value. If you're a C
 programmer, think of it as a `void*` for data structures. If you prefer Go,
 think of it as an `interface{}`.
 
-Here's that extnValue:
+Here's that `extnValue`:
 
 ```
 04 81 F5 0481F200F0007500DB74AFEECB29ECB1FECA3E716D2CE5B9AABB36F7847183C75D9D4F37B61FBF64000001627313EB19000004030046304402207E1FCD1E9A2BD2A50A0C81E713033A0762340DA8F91EF27A48B3817640159CD30220659FE9F1D880E2E8F6B325BE9F18956D17C6CA8A6F2B12CB0F55FB70F759A419007700293C519654C83965BAAA50FC5807D4B76FBF587A2972DCA4C30CF4E54547F478000001627313EB2A0000040300483046022100AB72F1E4D6223EF87FC68491C208D29D4D57EBF47588BB7544D32F9537E2CEC10221008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2
 ```
 
-That's tag "0x04", meaning OCTET STRING, followed by "0x81 0xF5", meaning
+That's tag "0x04", meaning `OCTET STRING`, followed by "0x81 0xF5", meaning
 "this string is 245 bytes long" (the 0x81 prefix is part of [variable length
 number encoding](#variable-length)).
 
 According to [RFC 6962, section
 3.3](https://tools.ietf.org/html/rfc6962#section-3.3), "obtained SCTs
 can be directly embedded in the final certificate, by encoding the
-SignedCertificateTimestampList structure as an ASN.1 OCTET STRING
+SignedCertificateTimestampList structure as an ASN.1 `OCTET STRING`
 and inserting the resulting data in the TBSCertificate as an X.509v3
 certificate extension"
 
-So, we have an OCTET STRING, all's good, right? Except if you remove the
+So, we have an `OCTET STRING`, all's good, right? Except if you remove the
 tag and length from extnValue to get its value, you're left with:
 
 ```
@@ -167,13 +168,13 @@ tag and length from extnValue to get its value, you're left with:
 ```
 
 There's that "0x04" tag again, but with a shorter length. Why
-do we nest one OCTET STRING inside another?  It's because the
+do we nest one `OCTET STRING` inside another?  It's because the
 contents of extnValue are required by RFC 5280 to be valid DER, but a
 SignedCertificateTimestampList is not encoded using DER (more on that
 in a minute). So, by RFC 6962, a SignedCertificateTimestampList is wrapped in an
-OCTET STRING, which is wrapped in another OCTET STRING (the extnValue).
+`OCTET STRING`, which is wrapped in another `OCTET STRING` (the extnValue).
 
-Once we decode that second OCTET STRING, we're left with the contents:
+Once we decode that second `OCTET STRING`, we're left with the contents:
 
 ```
 00F0007500DB74AFEEC...
@@ -184,7 +185,7 @@ defined in [RFC 5246, section 4](https://tools.ietf.org/html/rfc5246#section-4)
 (the TLS 1.2 RFC). TLS encoding, like ASN.1, has both a way to define data
 structures and a way to encode those structures. TLS encoding differs
 from DER in that there are no tags, and lengths are only encoded when necessary for
-variable-length arrays. Within a an encoded structure, the type of a field is determined by
+variable-length arrays. Within an encoded structure, the type of a field is determined by
 its position, rather than by a tag. This means that TLS-encoded structures are
 more compact than DER structures, but also that they can't be processed without
 knowing the corresponding schema. For instance, here's the top-level schema from
@@ -206,15 +207,15 @@ knowing the corresponding schema. For instance, here's the top-level schema from
 
 Right away, we've found one of those variable-length arrays. The length of such
 an array (in bytes) is always represented by a length field just big enough to
-hold the max array size. The max size of an sct_list is 65535 bytes, so the
+hold the max array size. The max size of an `sct_list` is 65535 bytes, so the
 length field is two bytes wide. Sure enough, those first two bytes are "0x00
-0xF0", or 240 in decimal. In other words, this sct_list will have 240 bytes. We
+0xF0", or 240 in decimal. In other words, this `sct_list` will have 240 bytes. We
 don't yet know how many SCTs will be in it. That will become clear only by
 continuing to parse the encoded data and seeing where each struct ends (spoiler
 alert: there are two SCTs!).
 
 Now we know the first SerializedSCT starts with `0075...`. SerializedSCT
-is itself a variable-length field, this time containing `opaque` bytes (much like OCTET STRING
+is itself a variable-length field, this time containing `opaque` bytes (much like `OCTET STRING`
 back in the ASN.1 world). Like SignedCertificateTimestampList, it has a max size
 of 65535 bytes, so we pull off the first two bytes and discover that the first
 SerializedSCT is 0x0075 (117 decimal) bytes long. Here's the whole thing, in
@@ -404,10 +405,10 @@ extension decoded:
             008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2
 ```
 
-One surprising thing you might notice: In the first SCT, r and s are twenty
+One surprising thing you might notice: In the first SCT, `r` and `s` are twenty
 bytes long. In the second SCT, they are both twenty-one bytes long, and have a
 leading zero. Integers in DER are two's complement, so if the leftmost bit is
-set, they are interpreted as negative. Since r and s are positive, if the
+set, they are interpreted as negative. Since `r` and `s` are positive, if the
 leftmost bit would be a 1, an extra byte has to be added so that the leftmost
 bit can be 0.
 
@@ -420,7 +421,7 @@ section 3.1](https://tools.ietf.org/html/rfc6962#section-3.1):
 
 ```
 The Precertificate is constructed from the certificate to be issued by adding a special
-critical poison extension (OID 1.3.6.1.4.1.11129.2.4.3, whose
+critical poison extension (OID `1.3.6.1.4.1.11129.2.4.3`, whose
 extnValue OCTET STRING contains ASN.1 NULL data (0x05 0x00))
 ```
 
@@ -428,7 +429,7 @@ In other words, it's an empty extension whose only purpose is to ensure that
 certificate processors will not accept precertificates as valid certificates. The
 specification ensures this by setting the "critical" bit on the extension, which
 ensures that code that doesn't recognize the extension will reject the whole
-certificate. And code that does recognize the extension specifically as poison
+certificate. Code that does recognize the extension specifically as poison
 will also reject the certificate.
 
 <a name="variable-length"></a>Footnote 2: Lengths from 0-127 are represented by
