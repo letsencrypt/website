@@ -405,8 +405,8 @@ extension decoded:
             008AFFC40CC6C4E3B24578DADE4F815ECBCE2D57A579342119A1E65BC7E5E69CE2
 ```
 
-One surprising thing you might notice: In the first SCT, `r` and `s` are twenty
-bytes long. In the second SCT, they are both twenty-one bytes long, and have a
+One surprising thing you might notice: In the first SCT, `r` and `s` are 32 (0x20)
+bytes long. In the second SCT, they are both 33 (0x21) bytes long, and have a
 leading zero. Integers in DER are two's complement, so if the leftmost bit is
 set, they are interpreted as negative. Since `r` and `s` are positive, if the
 leftmost bit would be a 1, an extra byte has to be added so that the leftmost
