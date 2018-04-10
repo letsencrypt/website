@@ -11,7 +11,7 @@ menu:
 # Let's Encrypt Subscriber Agreement
 
 * Currently in Effect
-  * [v1.2, November 15, 2017](/documents/2017.11.15-LE-SA-v1.2.pdf)
+  * [v1.2, November 15, 2017](/documents/LE-SA-v1.2-November-15-2017.pdf)
   * [U.S. Government Amendment, September 22, 2015](/documents/LE-USG-SA-Amendment-Sept-22-2015.pdf)
   * [U.S. State and Local Government Amendment, December 28, 2016](/documents/LE-US-State-Local-SA-Amendment-Dec-28-2016.pdf)
 * Historical / Informational
