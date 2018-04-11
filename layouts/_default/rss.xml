@@ -1,23 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ .Site.Title | htmlEscape }}</title>
-    <description>{{ .Site.Params.description | htmlEscape }}</description>
     <link>{{ .Permalink }}</link>
-     {{ with .OutputFormats.Get "RSS" }}
-         <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
-    {{ end }}
-    <pubDate>{{ .PubDate.Format .Site.Params.time_format_RFC822 | safeHTML }}</pubDate>
-    <lastBuildDate>{{ .PubDate.Format .Site.Params.time_format_RFC822 | safeHTML }}</lastBuildDate>
+    <description>{{ .Site.Params.description | htmlUnescape }}</description>
+    {{ with .Site.LanguageCode }}<language>{{.}}</language>{{ end }}
+    {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     <generator>Hugo v{{ .Hugo.Version }}</generator>
-    {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 10 }}
-    {{ range $posts }}
-      <item>
-        <title>{{ .Title | htmlEscape }}</title>
-        <description>{{ .Content | htmlEscape }}</description>
-        <pubDate>{{ .PubDate }}</pubDate>
+    {{ with .OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />{{ end }}
+      {{ $posts := where .Site.RegularPages "Type" "in" (slice "post")  | first 10 }}{{ range $posts }}<item>
+        <title>{{ .Title | safeHTML }}</title>
         <link>{{ .Permalink }}</link>
+        <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <description>{{ safeHTML "<![CDATA["}}{{ chomp .Content }}{{ safeHTML "]]>"}}</description>
         <guid isPermaLink="true">{{ .Permalink }}</guid>
-      </item>
-    {{ end }}
+      </item>{{ end }}
   </channel>
 </rss>
