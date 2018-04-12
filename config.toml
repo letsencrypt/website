@@ -2,6 +2,7 @@ baseURL = "https://letsencrypt.org/"
 languageCode= "en-us"
 
 
+contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
