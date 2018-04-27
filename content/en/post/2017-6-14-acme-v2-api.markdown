@@ -7,6 +7,10 @@ title: ACME v2 API Endpoint Coming January 2018
 slug: acme-v2-api
 ---
 
+> **Update, April 27, 2018**
+> 
+> ACME v2 and wildcard support are fully available since March 13, 2018.
+
 > **Update, January 4, 2018**
 > 
 > We introduced a public test API endpoint for the ACME v2 protocol and wildcard support on January 4, 2018. ACME v2 and wildcard support will be fully available on February 27, 2018.
