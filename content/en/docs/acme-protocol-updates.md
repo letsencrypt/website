@@ -14,8 +14,17 @@ The ACME protocol is the cornerstone of how Let's Encrypt works. It is currently
 
 We currently have the following API endpoints. They do not implement any one fixed draft of the ACME specification as they evolved alongside the draft protocol document. Please see [our divergences documentation](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) to compare their implementation to the current ACME draft.
 
+## ACME v1
+
 * [Production] `https://acme-v01.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging.api.letsencrypt.org/directory`
+
+## ACME v2
+
+* [Production] `https://acme-v02.api.letsencrypt.org/directory`
+* [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
+
+https://letsencrypt.org/2017/06/14/acme-v2-api.html
 
 # New Backwards-Compatible ACME Features
 
