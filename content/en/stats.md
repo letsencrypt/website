@@ -10,7 +10,7 @@ menu:
     parent: about
 ---
 
-These statistics are updated daily.
+Normally, these statistics are updated daily. At present there is maintenance work underway and statistics are on hold until that work is completed.
 
 <div class="figure">
   <h2><a name="growth" href="#growth"
