@@ -54,6 +54,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
 - [Certes](https://github.com/fszlin/certes)
+- [Ansible acme_certificate module](https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html) (ansible >= 2.6)
 
 ## Bash
 
