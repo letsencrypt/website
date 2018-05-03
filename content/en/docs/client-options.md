@@ -47,6 +47,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ZeroSSL](https://ZeroSSL.com/)
 - [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
+- [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 
 ## Bash
 
