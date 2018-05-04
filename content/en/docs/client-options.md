@@ -49,6 +49,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
+- [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 
 ## Bash
 
