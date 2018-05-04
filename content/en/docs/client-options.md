@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-03-27
+lastmod: 2018-05-03
 ---
 
 {{< lastmod >}}
@@ -47,6 +47,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ZeroSSL](https://ZeroSSL.com/)
 - [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
+- [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
+- [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 
 ## Bash
@@ -144,6 +146,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [sewer](https://github.com/komuW/sewer)
 - [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
 - [ACMEproxy](https://github.com/catalyst/acmeproxy)
+- [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (Python 3)
 
 ## Ruby
 
@@ -165,6 +168,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [kelunik/acme-client](https://github.com/kelunik/acme-client) (PHP)
 - [ZeroSSL Windows](https://github.com/do-know/Crypt-LE/releases)
 - [AutoACME](https://www.autoacme.net/) (.NET)
+- [Posh-ACME](https://github.com/rmbolger/Posh-ACME) (PowerShell)
 
 # Libraries
 
