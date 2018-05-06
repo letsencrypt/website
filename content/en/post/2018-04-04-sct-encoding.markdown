@@ -28,7 +28,7 @@ obtained earlier are added in another extension.
 Given a certificate, let's first look for the SCT list extension. According to CT ([RFC 6962
 section 3.3](https://tools.ietf.org/html/rfc6962#section-3.3)),
 the extension OID for a list of SCTs is `1.3.6.1.4.1.11129.2.4.2`. An [OID (object
-ID)](http://www.hl7.org/Oid/information.cfm) is a series of integers, hierarchically
+ID)](https://www.hl7.org/Oid/information.cfm) is a series of integers, hierarchically
 assigned and globally unique. They are used extensively in X.509, for instance
 to uniquely identify extensions.
 
