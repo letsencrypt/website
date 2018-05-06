@@ -50,6 +50,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
+- [UglySSL](https://uglyssl.com)
 
 ## Bash
 
@@ -64,6 +65,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Certificate Automation](https://www.certificateautomation.com/)
 - [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
 - [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
+- [UglySSL](https://uglyssl.com)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
