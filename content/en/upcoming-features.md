@@ -4,6 +4,11 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
+## TLS ALPN Challenge Support
+
+* ETA: Q3 2018
+
+We're working on specifying and implementing a [replacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement is important for subscribers who only want to use port 443 for validation.
 
 ## ECDSA Root and Intermediates
 
