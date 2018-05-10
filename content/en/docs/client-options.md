@@ -50,6 +50,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
+- [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 
 ## Bash
 
@@ -110,8 +111,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Node.js
 
-- [Daplie/greenlock-cli](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
-- [Daplie/greenlock-express](https://git.coolaj86.com/coolaj86/greenlock-express.js)
+- [Greenlock for Commandline](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
+- [Greenlock for Express.js](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
 - [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
@@ -184,7 +185,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Node.js
 
-- [Daplie/node-greenlock](https://git.coolaj86.com/coolaj86/greenlock.js)
+- [Greenlock for node.js](https://git.coolaj86.com/coolaj86/greenlock.js)
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 
 ## Perl
