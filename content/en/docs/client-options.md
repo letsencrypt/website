@@ -148,6 +148,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
 - [ACMEproxy](https://github.com/catalyst/acmeproxy)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (Python 3)
+- [acme-nosudo](https://github.com/diafygi/acme-nosudo)
 
 ## Ruby
 
