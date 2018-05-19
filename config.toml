@@ -61,6 +61,36 @@ description = """
  parent = "about"
  url = "https://letsencrypt.status.io/"
 
+[languages.fr]
+title = "Let's Encrypt - Certificats SSL/TLS gratuits"
+languageName ="Français"
+# Weight used for sorting.
+weight = 1
+description = """
+  Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
+  apporté par l'Internet Security Research Group (ISRG), organisme à but non lucratif.
+"""
+[[languages.en.menu.main]]
+ name = "Obtenir de l'aide"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.en.menu.main]]
+ name = "Faire un don"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.en.menu.main]]
+ name = "À propos de nous"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.en.menu.main]]
+ name = "État du service"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+
 #[languages.no]
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
 #description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
