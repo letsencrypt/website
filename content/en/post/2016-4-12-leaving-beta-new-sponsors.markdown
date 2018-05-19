@@ -9,7 +9,7 @@ title: Leaving Beta, New Sponsors
 slug: leaving-beta-new-sponsors
 ---
 
-Let’s Encrypt is leaving beta today. We’re also excited to announce that founding sponsors [Cisco](https://www.cisco.com/) and [Akamai](https://www.akamai.com/) have renewed their Platinum sponsorships with 3-year commitments, [Gemalto](http://www.gemalto.com/) is joining as our newest Gold sponsor, and [HP Enterprise](https://www.hpe.com/), [Fastly](https://www.fastly.com/), [Duda](https://www.dudamobile.com/) and [ReliableSite.net](http://www.reliablesite.net/) are our newest Silver sponsors.
+Let’s Encrypt is leaving beta today. We’re also excited to announce that founding sponsors [Cisco](https://www.cisco.com/) and [Akamai](https://www.akamai.com/) have renewed their Platinum sponsorships with 3-year commitments, [Gemalto](https://www.gemalto.com/) is joining as our newest Gold sponsor, and [HP Enterprise](https://www.hpe.com/), [Fastly](https://www.fastly.com/), [Duda](https://www.dudamobile.com/) and [ReliableSite.net](https://www.reliablesite.net/) are our newest Silver sponsors.
 
 Since our beta began in September 2015 we’ve issued more than 1.7 million certificates for more than 3.8 million websites. We’ve gained tremendous operational experience and confidence in our systems. The beta label is simply not necessary any more.
 
