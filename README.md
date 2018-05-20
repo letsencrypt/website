@@ -1,7 +1,9 @@
-Let's Encrypt Website
+McKinley Park Development Council
 =====================
 
-This is the repository for the main [Let's Encrypt website](https://letsencrypt.org/).
+This is the repository for a testing version of the [McKinley Park Development Council website](https://mckinleyparkdevelopmentcouncil.org/).
+
+This version is forked from the Lets Encrypt website's code with which we are experimenting as an alternative codebase.
 
 This site is built with [Hugo](https://gohugo.io/). It's entirely static, no server-side code/scripting.
 
