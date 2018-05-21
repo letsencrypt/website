@@ -50,11 +50,11 @@ description = """
  identifier = "about"
  url = "/about/"
  [[languages.en.menu.main]]
- name = "Service Status"
+ name = "Community Calendar"
  weight = 60
  identifier = "status"
  parent = "about"
- url = "https://letsencrypt.status.io/"
+ url = "https://mckinleypark.news/events/full-calendar/"
 
 [[languages.en.menu.main]]
 name = "Social Media"
@@ -91,11 +91,11 @@ parent = "about"
 url = "https://letsencrypt.status.io/"
 
 [[languages.es.menu.main]]
-name = "Service Status"
-weight = 60
-identifier = "status"
-parent = "about"
-url = "https://letsencrypt.status.io/"
+ name = "Calendario de la comunidad"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://mckinleypark.news/events/full-calendar/"
 
 [[languages.es.menu.main]]
 name = "Social Media"
@@ -131,6 +131,13 @@ weight = 50
 identifier = "plan"
 parent = "about"
 url = "https://letsencrypt.status.io/"
+
+[[languages.zh_cn.menu.main]]
+ name = "社区日历"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://mckinleypark.news/events/full-calendar/"
 
 [[languages.zh_cn.menu.main]]
 name = "Social Media"
