@@ -64,7 +64,7 @@ description = """
 [languages.es]
 title = "McKinley Park Development Council"
 description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
-languageName ="Espanol"
+languageName ="Español"
 weight = 2
 [[languages.es.menu.main]]
 name = "Få hjelp"
