@@ -1,0 +1,35 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_donate]
+other = "Donate"
+
+[home_major_sponsors]
+other = "Major Sponsors and Donors"
+
+[home_from_our_blog]
+other = "Latest News and Events"
+
+[read_more]
+other = "Read more"
+
+[subscribe_rss]
+other = "Subscribe <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Support a more secure and privacy-respecting Web."
+
+[footer_donate]
+other = "Donate"
+
+[footer_policies]
+other = """
+View our <a href="/privacy/">privacy policy</a>.<br>
+View our <a href="/trademarks/">trademark policy</a>.
+"""
+
+[header_skip_nav]
+other = "Skip navigation links"
+
+
+[languages]
+other = "Idiomas"
