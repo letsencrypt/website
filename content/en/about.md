@@ -1,6 +1,6 @@
 ---
-title: About Let's Encrypt
-linkTitle: Let's Encrypt
+title: About the MPDC
+linkTitle: About the MPDC
 slug: about
 top_graphic: 1
 menu:
