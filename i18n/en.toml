@@ -39,6 +39,12 @@ other = "Linux Foundation is a registered trademark of The Linux Foundation. Lin
 [header_skip_nav]
 other = "Skip navigation links"
 
+[last_updated]
+other = "Last updated:"
+
+[see_all_doc]
+other = "See all Documentation"
+
 
 [languages]
 other = "Languages"
