@@ -22,5 +22,5 @@ McKinley Park resident and artist Victoria Rodriguez will select and convert our
 <p>Special thanks to  <a href="http://www.12thwardchicago.com"> Alderman George Cardenas and his staff</a> for helping turn this dream into a reality!
 </p>
 <a href="https://drive.google.com/file/d/0B0znleYpwmY2UW4xaVhFSHhzU1FEZjF5LVB2dV85aTN5MDRR/view">
-{{< figure src="/img/main/mural/muralColoringSheet.png" title="" >}}
+{{< figure src="/images/events/muralColoringSheet.png" title="" >}}
 </a>

@@ -1,4 +1,4 @@
-baseurl = "https://mckinleyparkdevelopmentcouncil.org/"
+baseurl = "http://test.mckinleyparkdevelopmentcouncil.org/"
 languageCode= "en-us"
 
 contentDir = "content/en"
@@ -16,8 +16,8 @@ timezone = "America/Chicago"
 # See the JPEG files below /static/images.
 top_graphic = 5
 
-github_username = "tonyatoms"
-twitter_username = "tonyatoms"
+github_username = ""
+twitter_username = ""
 crowdfunding_url = ""
 
 # Date and time formatting, see https://gohugo.io/functions/format/
@@ -37,7 +37,7 @@ weight = 1
 description = """
   The McKinley Park Development Council's mission is to collectively foster economic, cultural and social development through the connection of residents, institutions and enterprises for the benefit of the McKinley Park neighborhood of Chicago.
 """
- [[languages.en.menu.main]]
+[[languages.en.menu.main]]
  name = "News and Events"
  weight = 30
  identifier = "news"
@@ -75,31 +75,32 @@ title = "McKinley Park Development Council"
 description = "La misión del Consejo de Desarrollo del Parque McKinley es fomentar colectivamente el desarrollo económico, cultural y social mediante la conexión de residentes, instituciones y empresas en beneficio del vecindario McKinley Park de Chicago."
 languageName ="Español"
 weight = 2
+
+ [[languages.es.menu.main]]
+ name = "Noticias y Eventos"
+ weight = 30
+ identifier = "news"
+ url = "/blog/"
+
 [[languages.es.menu.main]]
-name = "Donate"
-weight = 30
-identifier = "donate"
-url = "/blog/"
+ name = "Noticias y Eventos"
+ weight = 30
+ parent = "news"
+ url = "/es/blog/"
+
+[[languages.es.menu.main]]
+ name = "Calendario de la comunidad"
+ weight = 60
+ identifier = "status"
+ parent = "news"
+ url = "https://mckinleypark.news/events/"
+
 [[languages.es.menu.main]]
 name = "Acerca de"
 weight = 40
 identifier = "about"
 url = "/about/"
 
-
-[[languages.es.menu.main]]
- name = "Calendario de la comunidad"
- weight = 60
- identifier = "status"
- parent = "about"
- url = "https://mckinleypark.news/events/"
-
-# [[languages.es.menu.main]]
-# name = "Medios de social"
-# weight = 70
-# identifier = "social media"
-# #parent = "about"
-# url = "https://letsencrypt.status.io/"
 
 [languages.zh_cn]
 LanguageName = "中文"
@@ -108,10 +109,22 @@ description = "麦金利公园发展委员会的使命是通过连接居民，�
 weight = 3
 
 [[languages.zh_cn.menu.main]]
-name = "News and Events"
-weight = 30
-identifier = "donate"
-url = "/donate/"
+ name = "新闻和事件"
+ weight = 30
+ identifier = "news"
+ url = "/blog/"
+
+[[languages.zh_cn.menu.main]]
+ name = "新闻和事件"
+ weight = 30
+ parent = "news"
+ url = "/zh_cn/blog/"
+
+[[languages.zh_cn.menu.main]]
+ name = "日历（英文)"
+ weight = 60
+ parent = "news"
+ url = "https://mckinleypark.news/events/"
 
 [[languages.zh_cn.menu.main]]
 name = "About Us"
@@ -125,39 +138,6 @@ url = "/about/"
  identifier = "status"
  parent = "about"
  url = "https://mckinleypark.news/events"
-
-# [[languages.zh_cn.menu.main]]
-# name = "社交媒体"
-# weight = 70
-# identifier = "social media"
-# url = "https://letsencrypt.status.io/"
-
-
-#[languages.no]
-#title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
-#description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
-#languageName ="Norsk"
-#weight = 2
-#[[languages.no.menu.main]]
-# name = "Få hjelp"
-# weight = 20
-# url = "https://community.letsencrypt.org/"
-# [[languages.no.menu.main]]
-# name = "Doner"
-# weight = 30
-# identifier = "donate"
-# url = "/donate/"
-# [[languages.no.menu.main]]
-# name = "Om oss"
-# weight = 40
-# identifier = "about"
-# url = "/about/"
-# [[languages.no.menu.main]]
-# name = "Service Status"
-# weight = 60
-# identifier = "status"
-# parent = "about"
-# url = "https://letsencrypt.status.io/"
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
