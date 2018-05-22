@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ .Site.Title | htmlEscape }}</title>
+    <title>{{ .Site.Title | htmlUnescape }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Params.description | htmlUnescape }}</description>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{ end }}
