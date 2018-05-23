@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-05-03
+lastmod: 2018-05-23
 ---
 
 {{< lastmod >}}
@@ -52,6 +52,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [Get HTTPS for free](https://gethttpsforfree.com)
+- [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
 
 ## Bash
 
@@ -90,6 +91,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
 - [Ponzu CMS](https://ponzu-cms.org)
 - [Traefik](https://traefik.io)
+- [eggsampler/acme](https://github.com/eggsampler/acme)
 
 ## HAProxy
 
@@ -149,6 +151,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
 - [ACMEproxy](https://github.com/catalyst/acmeproxy)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (Python 3)
+- [acme-nosudo](https://github.com/diafygi/acme-nosudo)
 
 ## Ruby
 
