@@ -51,6 +51,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
+- [Get HTTPS for free](https://gethttpsforfree.com)
 - [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
 
 ## Bash
