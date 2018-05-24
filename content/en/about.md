@@ -9,16 +9,20 @@ menu:
     parent: about
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The McKinley Park Development Council (MPDC) is a non-partisan group of concerned McKinley Park residents, teachers and business owners working, in the words of our mission statement, 
+
+<strong>To collectively foster economic, cultural and social development through the connection of residents, institutions and enterprises for the benefit of the McKinley Park neighborhood of Chicago.</strong>
+
+The group gelled at an [On the Table](http://onthetable.com) event sponsored by the The McKinley Park Advisory Council in the spring of 2017. Concerned neighbors shared some snacks and brainstormed about how just and sustainable development could happen in McKinley Park - how can we attract new businesses, support the existing business, provide more and better jobs and the missing big city amenities while not falling prey to the injustices of gentrification? A tough nut to crack!
+
+Since then we’ve met a lot of neighbors, held some great workshops and secured a Local Technical Assistance grant from the [Chicago Metropolitan Agency for Planning](http://www.cmap.illinois.gov/).  (CMAP) to fund the development of a [Neighborhood Plan]({{< ref "neighborhoodPlan.md" >}}) .
 
 The key principles behind the MPDC are:
 
-* <strong>Free:</strong> Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
-      at zero cost.
-* <strong>Automatic:</strong> Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.
-* <strong>Secure:</strong> Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.
-* <strong>Transparent:</strong> All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
-* <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
-* <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
+* <strong>Dog Breath:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+* <strong>Fungus:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+* <strong>Sunshine:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+* <strong>Vegan:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+* <strong>Open:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+* <strong>Cooperative:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works/).
