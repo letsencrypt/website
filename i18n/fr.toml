@@ -39,6 +39,11 @@ other = "Linux Foundation est une marque déposée de The Linux Foundation. Linu
 [header_skip_nav]
 other = "Passer les liens de navigation"
 
+[last_updated]
+other = "Dernière mise à jour :"
+
+[see_all_doc]
+other = "Voir toute la documentation"
 
 [languages]
 other = "Langues"
