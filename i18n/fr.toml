@@ -45,5 +45,9 @@ other = "Dernière mise à jour :"
 [see_all_doc]
 other = "Voir toute la documentation"
 
+[blog_feed]
+other = "Flux du blog de Let's Encrypt"
+
+
 [languages]
 other = "Langues"
