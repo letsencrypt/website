@@ -19,21 +19,23 @@ gtag('config', 'UA-56433935-1');
 
 // AdWords Conversion Tracking
 gtag('config', 'AW-872454614');
-function gtag_report_conversion(url) {
+function gtag_report_conversion(ev) {
+  if ( ! window.google_tag_manager ) {
+    return;
+  }
+  var href = ev.currentTarget.href;
   var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
+    window.location = href;
   };
   gtag('event', 'conversion', {
       'send_to': 'AW-872454614/r2JLCP7BiGwQ1rOCoAM',
       'event_callback': callback
   });
-  return false;
+  ev.preventDefault();
 }
 var el = document.getElementById("getting-started-button");
 if (el) {
-  el.addEventListener("click", function(){gtag_report_conversion(el.href)}, false);
+  el.addEventListener("click", gtag_report_conversion);
 }
 
 })();
