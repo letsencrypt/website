@@ -1,3 +1,16 @@
+(function(){
+"use strict";
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack
+if ( window.doNotTrack == 1 || navigator.doNotTrack == 1
+|| navigator.doNotTrack === "yes" || navigator.msDoNotTrack == 1 ) {
+ return;
+}
+
+var googletagmanager = document.createElement('script');
+googletagmanager.setAttribute('src','https://www.googletagmanager.com/gtag/js?id=UA-56433935-1');
+document.head.appendChild(googletagmanager);
+
 // Google Analytics
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -20,5 +33,7 @@ function gtag_report_conversion(url) {
 }
 var el = document.getElementById("getting-started-button");
 if (el) {
-  el.addEventListener("click", function(){gtag_report_conversion("https://letsencrypt.org/getting-started/")}, false);
+  el.addEventListener("click", function(){gtag_report_conversion(el.href)}, false);
 }
+
+})();
