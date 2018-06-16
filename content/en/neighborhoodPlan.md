@@ -10,7 +10,7 @@ menu:
 
 ## MPDC Wins a Local Technical Assistance Grant from CMAP
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit [sed do eiusmod](https://community.letsencrypt.org/). See [tempor incididunt ut labore et dolore magna aliqua](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+Lorem ipsum dolor sit amet, consectetur adipiscing elit [sed do eiusmod](https://community.letsencrypt.org/). See [tempor incididunt ut labore et dolore magna aliqua](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ## Steering Committee
 

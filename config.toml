@@ -56,7 +56,7 @@ description = """
  url = "https://mckinleypark.news/events"
 
  [[languages.en.menu.main]]
- name = "About Us"
+ name = "About"
  weight = 40
  identifier = "about"
  url = "/about/"

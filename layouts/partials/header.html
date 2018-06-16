@@ -1,6 +1,14 @@
 <header class="site-header">
   <a id="skiplink" href="#main-content">{{ i18n "header_skip_nav" }}</a>
   <div class="wrapper">
+      <style>
+          /* Customization to limit height of the menu */
+          .site-title {
+            padding-bottom: 0%;
+            margin-bottom: 0px;
+          }
+
+          </style>
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}"><img src="/images/mpdc-logo-horizontal.jpeg" alt="McKinley Park Development Council"></a>
     
     <span id="menuIcon">
@@ -10,9 +18,17 @@
         <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
       </svg>
     </span>
+    
     <nav class="site-nav" id="menu">
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
         <ul class="pure-menu-list">
+            <style>
+                /* Customization to limit height of the menu */
+                .pure-menu-link {
+                  padding: 0.25 0.25   ;
+                }
+
+                </style>
           {{ range .Site.Menus.main }}
           <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
             <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
