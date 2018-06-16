@@ -1,6 +1,5 @@
-baseURL = "https://letsencrypt.org/"
+baseurl = "http://test.mckinleyparkdevelopmentcouncil.org/"
 languageCode= "en-us"
-
 
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -9,8 +8,7 @@ defaultContentLanguageInSubdir = false
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
 
 # Note that this currently has no effect in Hugo.
-timezone = "America/Los_Angeles"
-
+timezone = "America/Chicago"
 
 [params]
 
@@ -18,9 +16,9 @@ timezone = "America/Los_Angeles"
 # See the JPEG files below /static/images.
 top_graphic = 5
 
-github_username = "letsencrypt"
-twitter_username = "letsencrypt"
-crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more-secure-web-with-let-s-encrypt"
+github_username = ""
+twitter_username = ""
+crowdfunding_url = ""
 
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
@@ -32,60 +30,114 @@ enableMissingTranslationPlaceholders = true
 
 [languages]
 [languages.en]
-title = "Let's Encrypt - Free SSL/TLS Certificates"
+title = "McKinley Park Development Council"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 description = """
-  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+  The McKinley Park Development Council's mission is to collectively foster economic, cultural and social development through the connection of residents, institutions and enterprises for the benefit of the McKinley Park neighborhood of Chicago.
 """
 [[languages.en.menu.main]]
- name = "Get Help"
- weight = 20
- url = "https://community.letsencrypt.org/"
- [[languages.en.menu.main]]
- name = "Donate"
+ name = "News and Events"
  weight = 30
- identifier = "donate"
- url = "/donate/"
+ identifier = "news"
+ url = "/blog/"
+
+[[languages.en.menu.main]]
+ name = "News and Events"
+ weight = 30
+ parent = "news"
+ url = "/blog/"
+
+[[languages.en.menu.main]]
+ name = "Community Calendar"
+ weight = 60
+ parent = "news"
+ url = "https://mckinleypark.news/events"
+
  [[languages.en.menu.main]]
- name = "About Us"
+ name = "About"
  weight = 40
  identifier = "about"
  url = "/about/"
- [[languages.en.menu.main]]
- name = "Service Status"
+
+# moved to [content dir]/[folder]/_index[lang].md
+# [[languages.en.menu.main]]
+# name = "Social Media"
+# weight = 70
+# identifier = "social media"
+# #parent = "about"
+# url = "https://letsencrypt.status.io/"
+
+
+[languages.es]
+title = "McKinley Park Development Council"
+description = "La misión del Consejo de Desarrollo del Parque McKinley es fomentar colectivamente el desarrollo económico, cultural y social mediante la conexión de residentes, instituciones y empresas en beneficio del vecindario McKinley Park de Chicago."
+languageName ="Español"
+weight = 2
+
+ [[languages.es.menu.main]]
+ name = "Noticias y Eventos"
+ weight = 30
+ identifier = "news"
+ url = "/blog/"
+
+[[languages.es.menu.main]]
+ name = "Noticias y Eventos"
+ weight = 30
+ parent = "news"
+ url = "/es/blog/"
+
+[[languages.es.menu.main]]
+ name = "Calendario de la comunidad"
+ weight = 60
+ identifier = "status"
+ parent = "news"
+ url = "https://mckinleypark.news/events/"
+
+[[languages.es.menu.main]]
+name = "Acerca de"
+weight = 40
+identifier = "about"
+url = "/about/"
+
+
+[languages.zh_cn]
+LanguageName = "中文"
+title =  "McKinley Park 发展理事会"
+description = "麦金利公园发展委员会的使命是通过连接居民，机构和企业，共同促进经济，文化和社会发展，为芝加哥麦金利公园附近的居民提供便利。"
+weight = 3
+
+[[languages.zh_cn.menu.main]]
+ name = "新闻和事件"
+ weight = 30
+ identifier = "news"
+ url = "/blog/"
+
+[[languages.zh_cn.menu.main]]
+ name = "新闻和事件"
+ weight = 30
+ parent = "news"
+ url = "/zh_cn/blog/"
+
+[[languages.zh_cn.menu.main]]
+ name = "日历（英文)"
+ weight = 60
+ parent = "news"
+ url = "https://mckinleypark.news/events/"
+
+[[languages.zh_cn.menu.main]]
+name = "About Us"
+weight = 40
+identifier = "about"
+url = "/about/"
+
+[[languages.zh_cn.menu.main]]
+ name = "社区日历"
  weight = 60
  identifier = "status"
  parent = "about"
- url = "https://letsencrypt.status.io/"
-
-#[languages.no]
-#title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
-#description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
-#languageName ="Norsk"
-#weight = 2
-#[[languages.no.menu.main]]
-# name = "Få hjelp"
-# weight = 20
-# url = "https://community.letsencrypt.org/"
-# [[languages.no.menu.main]]
-# name = "Doner"
-# weight = 30
-# identifier = "donate"
-# url = "/donate/"
-# [[languages.no.menu.main]]
-# name = "Om oss"
-# weight = 40
-# identifier = "about"
-# url = "/about/"
-# [[languages.no.menu.main]]
-# name = "Service Status"
-# weight = 60
-# identifier = "status"
-# parent = "about"
-# url = "https://letsencrypt.status.io/"
+ url = "https://mckinleypark.news/events"
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]

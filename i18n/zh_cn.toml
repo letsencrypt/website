@@ -1,11 +1,5 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
-[home_hero_title]
-other = "some words here? or pictures behind?"
-
-[home_hero_getting_started]
-other = "Get Started"
-
 [home_hero_donate]
 other = "Donate"
 
@@ -13,10 +7,10 @@ other = "Donate"
 other = "Major Sponsors and Donors"
 
 [home_from_our_blog]
-other = "Latest News and Events"
+other = "最新的新闻和事件" 
 
 [read_more]
-other = "Read more"
+other = "阅读更多"
 
 [subscribe_rss]
 other = " "
@@ -38,12 +32,9 @@ other = " "
 [header_skip_nav]
 other = "Skip navigation links"
 
-[last_updated]
-other = "Last updated:"
-
-[see_all_doc]
-other = "See all Documentation"
-
 
 [languages]
-other = "Languages"
+other = "Idiomas"
+
+
+

@@ -1,6 +1,6 @@
 ---
-title: About Let's Encrypt
-linkTitle: Let's Encrypt
+title: About the MPDC
+linkTitle: About the MPDC
 slug: about
 top_graphic: 1
 menu:
@@ -9,18 +9,12 @@ menu:
     parent: about
 ---
 
-Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's benefit. It is a service provided by the [Internet Security Research Group (ISRG)](/isrg/).
+The McKinley Park Development Council (MPDC) is a non-partisan group of concerned McKinley Park residents, teachers and business owners working, in the words of our mission statement, 
 
-We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
+<strong>To collectively foster economic, cultural and social development through the connection of residents, institutions and enterprises for the benefit of the McKinley Park neighborhood of Chicago.</strong>
 
-The key principles behind Let's Encrypt are:
+The group gelled at an [On the Table](http://onthetable.com) event sponsored by the The McKinley Park Advisory Council in the spring of 2017. Concerned neighbors shared some snacks and brainstormed about how just and sustainable development could happen in McKinley Park - how can we attract new businesses, support the existing business, provide more and better jobs and the missing big city amenities while not falling prey to the injustices of gentrification? A tough nut to crack!
 
-* <strong>Free:</strong> Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
-      at zero cost.
-* <strong>Automatic:</strong> Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.
-* <strong>Secure:</strong> Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.
-* <strong>Transparent:</strong> All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
-* <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
-* <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
+Since then we’ve met a lot of neighbors, held some great workshops and secured a Local Technical Assistance grant from the [Chicago Metropolitan Agency for Planning](http://www.cmap.illinois.gov/).  (CMAP) to fund the development of a [Neighborhood Plan for McKinley Park ](http://www.cmap.illinois.gov/programs/LTA/mckinley-park) .
 
-We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works/).
+
