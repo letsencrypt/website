@@ -109,8 +109,8 @@ web server, with a redirect to HTTPS. This provides a better user
 experience than a web server that refuses or drops port 80 connections,
 and provides the same level of security.
 
-For the "dns-01" ACME challenge, you need to allow inbound port 53 traffic
-(TCP and UDP) to your DNS server.
+For all challenges, you need to allow inbound port 53 traffic
+(TCP and UDP) to your authoritative DNS servers.
 
 # Supported Key Algorithms
 
