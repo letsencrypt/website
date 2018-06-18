@@ -94,11 +94,23 @@ Many browsers will fetch OCSP from Let's Encrypt when they load your site. This 
 
 By turning on OCSP Stapling, you can improve the performance of your website, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
 
-# Let's Encrypt IPs
+# Firewall Configuration
 
-Let's Encrypt will validate from a number of different IP addresses in the future, and will not announce which ones in advance. You should make sure your validation server is available to all IPs.
+To use Let's Encrypt, you need to allow outbound port 443 traffic from the
+machines running your ACME client. We don't publish the IP ranges for our
+ACME service, and they will change without notice.
 
-Some people who are issuing for non-HTTP services want to avoid exposing port 80 to anyone except Let's Encrypt's validation server. If you're in that category you may want to use the DNS challenge instead.
+For the "http-01" ACME challenge, you need to allow inbound port 80 traffic.
+We don't publish the IP ranges from which we perform validation, and they
+will change without notice.
+
+Note: We recommend always allowing plain HTTP access to your
+web server, with a redirect to HTTPS. This provides a better user
+experience than a web server that refuses or drops port 80 connections,
+and provides the same level of security.
+
+For all challenges, you need to allow inbound port 53 traffic
+(TCP and UDP) to your authoritative DNS servers.
 
 # Supported Key Algorithms
 
