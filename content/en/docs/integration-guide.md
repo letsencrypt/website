@@ -3,14 +3,14 @@ title: Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2018-02-21
+lastmod: 2018-06-20
 ---
 
 {{< lastmod >}}
 
 This document contains helpful advice if you are a hosting provider or large website integrating Let's Encrypt, or you are writing client software for Let's Encrypt.
 
-# Plan for Change
+# <a name="change">Plan for Change</a>
 
 Both Let's Encrypt and the Web PKI will continue to evolve over time.  You should make sure you have the ability to easily update all services that use Let's Encrypt. If you're also deploying clients that rely on Let's Encrypt certificates, make especially sure that those clients receive regular updates.
 
@@ -27,7 +27,7 @@ Similarly, we're likely to change the URL of the terms of service (ToS) as we up
 
 You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
 
-# Get Updates
+# <a name="updates">Get Updates</a>
 
 To receive low-volume updates about important changes like the ones described
 above, subscribe to our
@@ -42,7 +42,7 @@ Also, make sure you use a valid email address for your ACME account. We will use
 that email to send you expiration notices and communicate about any issues
 specific to your account.
 
-# Who is the Subscriber
+# <a name="subscriber">Who is the Subscriber</a>
 
 Our [CPS and Subscriber Agreement](/repository/) indicate that the Subscriber is whoever holds the private key for a certificate. For hosting providers, that's the provider, not the provider's customer. If you're writing software that people deploy themselves, that's whoever is deploying the software.
 
@@ -50,13 +50,13 @@ The contact email provided when creating accounts (aka registrations) should go 
 
 The upshot of this is that, if you are a hosting provider, you do not need to send us your customers' email addresses or get them to agree to our Subscriber Agreement. You can simply issue certificates for the domains you control and start using them.
 
-# One Account or Many?
+# <a name="accounts">One Account or Many?</a>
 
 In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all of their customers.
 
 However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, easier to keep contact information up-to-date, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
-# Multi-domain (SAN) Certificates
+# <a name="multi-domain">Multi-domain (SAN) Certificates</a>
 
 Our [issuance policy](/docs/rate-limits/) allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
 
@@ -66,7 +66,7 @@ On the other hand, using large certificates with many hostnames allows you to ma
 
 For most deployments both choices offer the same security.
 
-# Storing and Reusing Certificates and Keys
+# <a name="reuse">Storing and Reusing Certificates and Keys</a>
 
 A big part of Let's Encrypt's value is that it enables automatic issuance as part of provisioning a new website.  However, if you have infrastructure that may repeatedly create new frontends for the same website, those frontends should first try to use a certificate and private key from durable storage, and only issue a new one if no certificate is available, or all existing certificates are expired.
 
@@ -76,7 +76,7 @@ As an example, many sites are starting to use Docker to provision new frontend i
 
 Note that some deployment philosophies state that crypto keys should never leave the physical machine on which they were generated. This model can work fine with Let's Encrypt, so long as you make sure that the machines and their data are long-lived, and you manage rate limits carefully.
 
-# Picking a Challenge Type
+# <a name="challenges">Picking a Challenge Type</a>
 
 If you're using the http-01 ACME challenge, you will need to provision the challenge response to each of your frontends before notifying Let's Encrypt that you're ready to fulfill the challenge. If you have a large number of frontends, this may be challenging. In that case, using the dns-01 challenge is likely to be easier. Of course, if you have many geographically distributed DNS responders, you have to make sure the TXT record is available on each responder.
 
@@ -84,17 +84,17 @@ Additionally, when using the dns-01 challenge, make sure to clean up old TXT rec
 
 If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect /.well-known/acme-validation/XYZ to validation-server.example.com/XYZ for all XYZ. This delegates responsibility for issuance to validation-server, so you should protect that server well.
 
-# Central Validation Servers
+# <a name="centralizing-validation">Central Validation Servers</a>
 
 Related to the above two points, it may make sense, if you have a lot of frontends, to use a smaller subset of servers to manage issuance. This makes it easier to use redirects for http-01 validation, and provides a place to store certificates and keys durably.
 
-# Implement OCSP Stapling
+# <a name="ocsp-stapling">Implement OCSP Stapling</a>
 
 Many browsers will fetch OCSP from Let's Encrypt when they load your site. This is a [performance and privacy problem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideally, connections to your site should not wait for a secondary connection to Let's Encrypt. Also, OCSP requests tell Let's Encrypt which sites people are visiting. We have a good privacy policy and do not record individually identifying details from OCSP requests, we'd rather not even receive the data in the first place. Additionally, we anticipate our bandwidth costs for serving OCSP every time a browser visits a Let's Encrypt site for the first time will be a big part of our infrastructure expense.
 
 By turning on OCSP Stapling, you can improve the performance of your website, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
 
-# Firewall Configuration
+# <a name="firewall">Firewall Configuration</a>
 
 To use Let's Encrypt, you need to allow outbound port 443 traffic from the
 machines running your ACME client. We don't publish the IP ranges for our
@@ -112,13 +112,13 @@ and provides the same level of security.
 For all challenges, you need to allow inbound port 53 traffic
 (TCP and UDP) to your authoritative DNS servers.
 
-# Supported Key Algorithms
+# <a name="algorithms">Supported Key Algorithms</a>
 
 Let's Encrypt accepts RSA keys from 2048 to 4096 bits in length, and P-256 and P-384 ECDSA keys. That's true for both account keys and certificate keys. You can't reuse an account key as a certificate key.
 
-Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
+Our recommendation is to serve a dual-certificate config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
 
-# HTTPS by default
+# <a name="https-by-default">HTTPS by default</a>
 
 For hosting providers, our recommendation is to automatically issue
 certificates and configure HTTPS for all hostnames you control, and to offer a
@@ -144,7 +144,7 @@ hard failures. For instance, while people can usually click through a browser
 warning about a name mismatch or expired certificate, browsers do not allow such
 a click through for hostnames with an active HSTS header.
 
-# When to Renew
+# <a name="renewal">When to Renew</a>
 
 We recommend renewing certificates automatically when they have a third of their
 total lifetime left. For Let's Encrypt's current 90-day certificates, that means
@@ -169,7 +169,7 @@ doesn't receive arbitrary spikes of traffic at the top of the hour. Since Let's
 Encrypt needs to provision capacity to meet peak load, reducing traffic spikes
 can help keep our costs down.
 
-# Retrying failures
+# <a name="retrying">Retrying failures</a>
 
 Renewal failure should not be treated as a fatal error. You should implement
 graceful retry logic in your issuing services using an exponential backoff
