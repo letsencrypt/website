@@ -20,6 +20,6 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://www.googleadservices.com">
     {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-    <link rel="{{ .Rel }}" href="{{ .Permalink }}" type="application/rss+xml" title="Let's Encrypt Blog Feed" />
+    <link rel="{{ .Rel }}" href="{{ .Permalink }}" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
     {{ end  }}
 </head>
