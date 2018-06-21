@@ -5,7 +5,7 @@
       {"name":"Cisco","url":"https://www.cisco.com/","image":"cisco-logo.png"},
       {"name":"Electronic Frontier Foundation","url":"https://www.eff.org/","image":"eff-logo.png"},
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
-      {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png"}
+      {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrustssl.com/","image":"identrust-logo.png"},
@@ -56,7 +56,7 @@
       {"name":"Brave","url":"https://brave.com/","image":"brave-logo.png"},
       {"name":"ServerPilot","url":"https://serverpilot.io/","image":"serverpilot-logo.png"},
       {"name":"DomainName.Shop","url":"https://domainname.shop/","image":"domainnameshop-logo.png"},
-      {"name":"easyname","url":"https://www.easyname.com/","image":"easyname-logo.png"},
+      {"name":"easyname","url":"https://www.easyname.com/","image":"easyname-logo.png","id":"easyname"},
       {"name":"Yoast","url":"https://yoast.com/","image":"yoast-logo.png"},
       {"name":"World4You","url":"https://www.world4you.com/","image":"world4you-logo.png"},
       {"name":"GitHub","url":"https://github.com/","image":"github-logo.png"}
