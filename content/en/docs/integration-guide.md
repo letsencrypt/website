@@ -174,7 +174,7 @@ can help keep our costs down.
 Renewal failure should not be treated as a fatal error. You should implement
 graceful retry logic in your issuing services using an exponential backoff
 pattern, maxing out at once per day per certificate. For instance, a reasonable
-backoff schedul would be: 1st retry after one minute, 2nd retry after ten
+backoff schedule would be: 1st retry after one minute, 2nd retry after ten
 minutes, third retry after 100 minutes, 4th and subsequent retries after one
 day. You should of course have a way for administrators to
 request early retries on a per-domain or global basis.
