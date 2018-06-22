@@ -45,6 +45,9 @@ other = "Last updated:"
 [see_all_doc]
 other = "See all Documentation"
 
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
 
 [languages]
 other = "Languages"
