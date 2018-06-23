@@ -51,7 +51,7 @@ When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures
      src="/images/howitworks_certificate.png"/>
 </div>
 
-Revocation works in a similar manner.  The agent signs a revocation request with the key pair authorized for `example.com`, and the Let's&nbsp;Encrypt CA verifies that the request is authorized.  If so, it publishes revocation information into the normal revocation channels (i.e., CRLs, OCSP), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
+Revocation works in a similar manner.  The agent signs a revocation request with the key pair authorized for `example.com`, and the Let's&nbsp;Encrypt CA verifies that the request is authorized.  If so, it publishes revocation information into the normal revocation channels (i.e. OCSP), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
