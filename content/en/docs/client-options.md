@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-05-03
+lastmod: 2018-05-23
 ---
 
 {{< lastmod >}}
@@ -51,6 +51,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
+- [Get HTTPS for free](https://gethttpsforfree.com)
+- [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
+- [Certes](https://github.com/fszlin/certes)
 
 ## Bash
 
@@ -62,7 +65,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [Get HTTPS for free](https://gethttpsforfree.com)
 - [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
-- [Certificate Automation](https://www.certificateautomation.com/)
+- [Certificate Automation](https://www.certificateautomation.com/) *
 - [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
 - [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
 
@@ -89,6 +92,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
 - [Ponzu CMS](https://ponzu-cms.org)
 - [Traefik](https://traefik.io)
+- [eggsampler/acme](https://github.com/eggsampler/acme)
 
 ## HAProxy
 
@@ -148,6 +152,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-powerdns](https://github.com/adfinis-sygroup/acme-powerdns)
 - [ACMEproxy](https://github.com/catalyst/acmeproxy)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (Python 3)
+- [acme-nosudo](https://github.com/diafygi/acme-nosudo)
 
 ## Ruby
 
@@ -170,6 +175,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ZeroSSL Windows](https://github.com/do-know/Crypt-LE/releases)
 - [AutoACME](https://www.autoacme.net/) (.NET)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME) (PowerShell)
+- [Certes](https://github.com/fszlin/certes) (.NET)
 
 # Libraries
 
@@ -219,6 +225,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Windows
 
 - [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
+- [Certes](https://github.com/fszlin/certes) (.NET)
 
 # Projects integrating with Let's Encrypt
 
