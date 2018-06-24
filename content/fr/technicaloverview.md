@@ -50,7 +50,7 @@ Lorsque l'AC Let's&nbsp;Encrypt reçoit la demande, elle vérifie les deux signa
      src="/images/howitworks_certificate.png"/>
 </div>
 
-La révocation fonctionne de la même manière. L'agent signe une demande de révocation avec la paire de clés autorisée pour `example.com`, et l'AC Let's&nbsp;Encrypt vérifie que la demande est autorisée. Si c'est le cas, elle publie les informations de révocation dans les canaux de révocation normaux (CRL, OCSP), de sorte que les parties dépendantes, telles que les navigateurs, peuvent savoir qu'ils ne doivent pas accepter le certificat révoqué.
+La révocation fonctionne de la même manière. L'agent signe une demande de révocation avec la paire de clés autorisée pour `example.com`, et l'AC Let's&nbsp;Encrypt vérifie que la demande est autorisée. Si c'est le cas, elle publie les informations de révocation dans les canaux de révocation normaux (OCSP), de sorte que les parties dépendantes, telles que les navigateurs, peuvent savoir qu'ils ne doivent pas accepter le certificat révoqué.
 
 <div class="howitworks-figure">
 <img alt="Demander la révocation d'un certificat de example.com"
