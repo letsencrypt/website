@@ -59,6 +59,7 @@
       {"name":"easyname","url":"https://www.easyname.com/","image":"easyname-logo.png","id":"easyname"},
       {"name":"Yoast","url":"https://yoast.com/","image":"yoast-logo.png"},
       {"name":"World4You","url":"https://www.world4you.com/","image":"world4you-logo.png"},
-      {"name":"GitHub","url":"https://github.com/","image":"github-logo.png"}
+      {"name":"GitHub","url":"https://github.com/","image":"github-logo.png"},
+      {"name":"Umbraco","url":"https://umbraco.com/","image":"umbraco-logo.png"}
 ]
 }
