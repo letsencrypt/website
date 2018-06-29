@@ -33,7 +33,7 @@ Your version of hugo is probably too old
 1. In `config.toml`, copy the commented section, replace XX in [[languages.XX.*]] by your language code and translate the strings
 2. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings
 3. In `content\XX\` (where XX is your language code), you can add your translations of `content\en\`
-4.  `content\XX\howitworks.md` (`getting-started/`), `content\XX\donate.html` (`donate/`) and `content\XX\sponsors.html` (`sponsors/`) must be translated and included in the first pull-request
+4.  `content\XX\about.md` (`about/`), `content\XX\howitworks.md` (`getting-started/`), `content\XX\donate.html` (`donate/`) and `content\XX\sponsors.html` (`sponsors/`) must be translated and included in the first pull-request
 5. After the first pull-request, more files from `content\XX\` may be translated
 
 * The pull-request of a translated file must update links on other files pointing to it.
