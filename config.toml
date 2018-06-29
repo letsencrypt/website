@@ -79,12 +79,12 @@ description = """
  name = "Faire un don"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/fr/donate/"
  [[languages.fr.menu.main]]
  name = "À propos de nous"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/fr/about/"
  [[languages.fr.menu.main]]
  name = "État du service"
  weight = 60
@@ -96,6 +96,7 @@ description = """
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
 #description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
 #languageName ="Norsk"
+#contentDir = "content/no"
 #weight = 2
 #[[languages.no.menu.main]]
 # name = "Få hjelp"
@@ -105,12 +106,12 @@ description = """
 # name = "Doner"
 # weight = 30
 # identifier = "donate"
-# url = "/donate/"
+# url = "/no/donate/"
 # [[languages.no.menu.main]]
 # name = "Om oss"
 # weight = 40
 # identifier = "about"
-# url = "/about/"
+# url = "/no/about/"
 # [[languages.no.menu.main]]
 # name = "Service Status"
 # weight = 60
