@@ -25,8 +25,6 @@ Les principes clés de Let's Encrypt sont les suivants :
 
 * <strong>Ouvert :</strong> Le protocole d'émission et de renouvellement automatique sera publié en tant que norme ouverte que d'autres peuvent adopter.
 
-* <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
-
-* <strong>Coopérative :</strong> Tout comme les protocoles Internet sous-jacents eux-mêmes, Let's Encrypt est un effort conjoint au profit de la communauté, au-delà du contrôle d'une organisation en particulier.
+* <strong>Coopératif :</strong> Tout comme les protocoles Internet sous-jacents eux-mêmes, Let's Encrypt est un effort conjoint au profit de la communauté, au-delà du contrôle d'une organisation en particulier.
 
 Nous avons une page avec des informations plus détaillées sur [comment fonctionne l'AC Let's Encrypt] (/how-it-works/).

@@ -22,7 +22,7 @@ Email : [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Listes de diffusion
 
-Pour plus d'informations sur les différentes listes de diffusion techniques, veuillez visiter notre page [s'impliquer](/getinvolved/).
+Pour plus d'informations sur les différentes listes de diffusion techniques, veuillez visiter notre page [s'impliquer](/fr/getinvolved/).
 
 ## Sécurité
 
