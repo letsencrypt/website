@@ -48,6 +48,15 @@ other = "Voir toute la documentation"
 [blog_feed]
 other = "Flux du blog de Let's Encrypt"
 
+[platinum]
+other = "Platine"
+
+[gold]
+other = "Or"
+
+[silver]
+other = "Argent"
+
 
 [languages]
 other = "Langues"
