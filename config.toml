@@ -1,6 +1,4 @@
 baseURL = "https://letsencrypt.org/"
-languageCode= "en-us"
-
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
@@ -34,6 +32,7 @@ enableMissingTranslationPlaceholders = true
 title = "Let's Encrypt - Free SSL/TLS Certificates"
 contentDir = "content/en"
 languageName ="English"
+languageCode= "en-us"
 # Weight used for sorting.
 weight = 1
 description = """
@@ -63,8 +62,9 @@ description = """
 
 [languages.fr]
 title = "Let's Encrypt - Certificats SSL/TLS gratuits"
-languageName ="Français"
+languageName = "Français"
 contentDir = "content/fr"
+languageCode= "fr-fr"
 # Weight used for sorting.
 weight = 1
 description = """
@@ -97,6 +97,7 @@ description = """
 #description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
 #languageName ="Norsk"
 #contentDir = "content/no"
+#languageCode= "no"
 #weight = 2
 #[[languages.no.menu.main]]
 # name = "Få hjelp"
