@@ -49,7 +49,7 @@ autorité de certification, ISRG Root X1 n'est pas encore approuvé dans la plup
 Afin d'être reconnu immédiatement, notre intermédiaire est également signé par
 une autre autorité de certification, IdenTrust, dont la racine est déjà approuvée par
 principaux navigateurs. Plus précisément, IdenTrust a signé notre intermédiaire en utilisant leur certificat racine
-[DST Root CA X3] (https://www.identrust.com/certificates/trustid/root-download-x3.html).
+[DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
 
 Cela signifie qu'il y a deux certificats disponibles qui représentent tous deux notre
 intermédiaire. L'un est signé par DST Root CA X3, et l'autre est signé par ISRG
@@ -80,7 +80,7 @@ inclus ici uniquement à titre informatif.
 # Certificate Transparency
 
 Nous nous engageons à la transparence dans nos opérations et dans les certificats que nous
-émettons. Nous soumettons tous les certificats aux [Logs de Certificate Transparency] (https://www.certificate-transparency.org/) au fur et à mesure que nous les émettons. Vous pouvez voir tous
+émettons. Nous soumettons tous les certificats aux [Logs de Certificate Transparency](https://www.certificate-transparency.org/) au fur et à mesure que nous les émettons. Vous pouvez voir tous
 émis Let's Encrypt certificats via ces liens:
 
 * [Émis par Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
