@@ -10,7 +10,7 @@ menu:
     parent: about
 ---
 
-Normally, these statistics are updated daily. At present there is maintenance work underway and statistics are on hold until that work is completed.
+At present, the "Percentage of Web Pages Loaded by Firefox Using HTTPS" graph is current. There is maintenance work underway and the "Let's Encrypt Growth" and "Let's Encrypt Certificates Issued Per Day" statistics are not up-to-date. We hope to have these graphs back up and running soon.
 
 <div class="figure">
   <h2><a name="growth" href="#growth"
