@@ -13,7 +13,7 @@ status, sexual orientation, or military status, or any other protected classific
 state or local law, in any of its activities or operations. These activities include, but are not
 limited to, hiring and firing of staff, selection of volunteers and vendors, and provision of
 services. We are committed to providing an inclusive and welcoming environment for all
-members of our staff, clients, volunteers, subcontractors, vendors, and clients.
+members of our staff, volunteers, subcontractors, vendors, and clients.
 
 Internet Security Research Group is an equal opportunity employer. We will not discriminate and
 will take affirmative action measures to ensure against discrimination in employment,
