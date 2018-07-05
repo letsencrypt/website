@@ -60,7 +60,7 @@ contrôle. Certbot récupère ensuite un certificat que vous pouvez installer ch
 fournisseur d'hébergement. Nous ne recommandons pas cette option car elle prend du temps
 et vous devrez le répéter plusieurs fois par an quand votre certificat
 expire. Pour la plupart des gens, il est préférable de demander le support de Let's Encrypt par votre
-fournisseur d'hébergement, ou de changer de d'hébergeur s'il ne prévoient pas de l'implémenter.
+fournisseur d'hébergement, ou de changer de d'hébergeur s'il ne prévoit pas de l'implémenter.
 
 # Obtenir de l'aide
 

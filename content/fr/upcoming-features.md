@@ -6,13 +6,13 @@ top_graphic: 1
 
 ## TLS ALPN Challenge Support
 
-* Prévu : Q3 2018
+* Prévu : T3 2018
 
 Nous travaillons sur la spécification et la mise en œuvre d'un [remplacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) pour la méthode de validation TLS-SNI, qui a été abandonnée pour des [raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-ne-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI est importante pour les abonnés qui souhaitent uniquement utiliser le port 443 pour la validation.
 
 ## ECDSA Racine et Intermédiaires
 
-* Prévu : Q3 2018
+* Prévu : T3 2018
 
 Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
 
