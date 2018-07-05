@@ -38,7 +38,7 @@ Your version of hugo is probably too old
 
 * The pull-request of a translated file must update links on other files pointing to it.
 * The subscriber agreement should **not** be translated 
-* The privacy policy (`privacy.md`) may be translated, but with a note on top saying that the English version is canonical.
+* The *privacy policy* (`privacy.md`) and the *Non-Discrimination Statement and Policy* (`nondiscrimination.md`) may be translated, but with a note on top saying that the English version is canonical.
 * Paths should stay in English: `/en/about` becomes `/XX/about` in every languages.
 * When a file is not translated, it will not appear in the menu.
 * client-options.md and cert-compat.md are not ready to be translated
