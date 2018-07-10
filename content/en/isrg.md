@@ -8,7 +8,7 @@ menu:
     parent: about
 ---
 
-ISRG is a California public benefit corporation, and is recognized by the IRS as a tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code. ISRG's mission is to reduce financial, technological, and educational barriers to secure communication over the Internet.
+ISRG is a California public benefit corporation, and is recognized by the IRS as a tax-exempt organization under Section 501\(c\)(3) of the Internal Revenue Code. ISRG's mission is to reduce financial, technological, and educational barriers to secure communication over the Internet.
 
 ISRG is proudly sponsored by a diverse group of organizations, from non-profits to Fortune 100 companies. We believe we can set an example for how everyone interested in a more secure Internet can work together to provide digital infrastructure for the public's benefit. See [this page](/sponsors/) for more on our sponsors.
 
