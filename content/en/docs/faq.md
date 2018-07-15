@@ -45,6 +45,11 @@ Let’s Encrypt is run by a small team and relies on automation to keep costs do
 
 Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
 
+## A website using Let's Encrypt is engaged in Phishing/Malware/Scam/... , what should I do?
+
+* Please report it to Google Safe Browsing: https://safebrowsing.google.com/safebrowsing/report_phish/ 
+* See also https://letsencrypt.org/2015/10/29/phishing-and-malware.html
+
 # <a name="technical">Technical Questions</a>
 
 ## Are certificates from Let’s Encrypt trusted by my browser?
