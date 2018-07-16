@@ -55,6 +55,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
 - [Certes](https://github.com/fszlin/certes)
 - [Ansible acme_certificate module](https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html) (ansible >= 2.6)
+- [HAProxy ACME v2 client](https://github.com/haproxytech/haproxy-lua-acme)
 
 ## Bash
 
@@ -98,6 +99,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## HAProxy
 
 - [HAProxy ACME validation plugin](https://github.com/janeczku/haproxy-acme-validation-plugin)
+- [HAProxy ACME v2 client](https://github.com/haproxytech/haproxy-lua-acme)
 
 ## Java
 
