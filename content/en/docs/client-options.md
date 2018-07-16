@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-05-23
+lastmod: 2018-05-25
 ---
 
 {{< lastmod >}}
@@ -249,6 +249,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Cloudron](https://cloudron.io)
 - [Aegir](https://gitlab.com/aegir/hosting_https)
 - [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
+- [ruxy](https://ruxyserver.com)
 
 
 Note: * = Service may require payment.
