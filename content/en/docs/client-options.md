@@ -56,6 +56,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Certes](https://github.com/fszlin/certes)
 - [Ansible acme_certificate module](https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html) (ansible >= 2.6)
 - [HAProxy ACME v2 client](https://github.com/haproxytech/haproxy-lua-acme)
+- [PJAC](https://github.com/porunov/acme_client) (PJAC >= 3.0.0)
 
 ## Bash
 
@@ -103,7 +104,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Java
 
-- [porunov/acme_client](https://github.com/porunov/acme_client)
+- [PJAC](https://github.com/porunov/acme_client)
 - [ManageEngine Key Manager Plus](https://www.manageengine.com/key-manager/)
 
 ## Microsoft Azure
