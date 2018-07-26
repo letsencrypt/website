@@ -48,7 +48,12 @@
 
       <div class="footer-col  footer-col-2">
         <p class="text">{{ .Site.Params.description | safeHTML }}</p>
-        <p>1 Letterman Drive, Suite D4700, San Francisco, CA 94129</p>
+        <div itemscope itemtype="schema.org/PostalAddress">
+          <span itemprop="streetAddress">1 Letterman Drive, Suite D4700,</span>
+          <span itemprop="addressLocality">San Francisco,</span>
+          <span itemprop="addressRegion">CA</span>
+          <span itemprop="postalCode">94129</span>
+        </div>
       </div>
     </div>
 
