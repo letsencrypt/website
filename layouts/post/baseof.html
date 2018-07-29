@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head" . }}
+  <body>
+    {{ partial "header" . }}
+    {{ if .IsNode }}
+    {{ partial "hero" . }}
+    {{ end }}
+    <div class="page-content">
+      <div class="wrapper">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
