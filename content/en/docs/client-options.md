@@ -57,6 +57,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Ansible acme_certificate module](https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html) (ansible >= 2.6)
 - [HAProxy ACME v2 client](https://github.com/haproxytech/haproxy-lua-acme)
 - [PJAC](https://github.com/porunov/acme_client) (PJAC >= 3.0.0)
+- [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
 
 ## Bash
 
