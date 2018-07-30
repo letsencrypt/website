@@ -6,7 +6,7 @@ top_graphic: 1
 
 ## ECDSA Racine et Intermédiaires
 
-* Prévu : T3 2018
+* Prévu : T1 2019
 
 Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
 
