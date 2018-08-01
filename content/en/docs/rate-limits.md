@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2018-03-12
+lastmod: 2018-08-01
 ---
 
 {{< lastmod >}}
@@ -20,7 +20,7 @@ our [staging environment](/docs/staging-environment/) instead of the production 
 If you're working on integrating Let's Encrypt as a provider or with a large
 website please [review our Integration Guide](/docs/integration-guide).
 
-The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain**, (20 per week). A
+The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain**, (50 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
 from your domain name registrar. For instance, in the name `www.example.com`,
 the registered domain is `example.com`. In `new.blog.example.co.uk`,
@@ -59,8 +59,8 @@ and extensions requested. A certificate issuance can be considered a renewal eve
 you are using a new key.
 
 Note that the Renewal Exemption also means you can gradually increase the number
-of certificates available to your subdomains. You can issue 20 certificates in
-week 1, 20 more certificates in week 2, and so on, while not interfering with
+of certificates available to your subdomains. You can issue 50 certificates in
+week 1, 50 more certificates in week 2, and so on, while not interfering with
 renewals of existing certificates.
 
 Revoking certificates does not reset rate limits, because the resources used to
