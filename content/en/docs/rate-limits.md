@@ -30,7 +30,7 @@ domain.
 
 If you have a lot of subdomains, you may want to combine them into a single
 certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
-above limit, that means you can issue certificates containing up to 2,000 unique
+above limit, that means you can issue certificates containing up to 5,000 unique
 subdomains per week. A certificate with multiple names is often called a SAN
 certificate, or sometimes a UCC certificate.
 
