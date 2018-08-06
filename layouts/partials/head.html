@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}</title>
-    {{ if .IsHome }}
-    <meta name="description" content="{{ .Site.Params.description }}">
-    {{ end }}
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@letsencrypt">
     <meta name="twitter:title" content="{{ .Title }}">
