@@ -96,7 +96,7 @@ name="new-orders"></a>**New Orders** per account per 3 hours.
 
 If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
 need to wait until the rate limit expires after a week. We use a sliding window,
-so if you issued 10 certificates on Monday and 10 more certificates on Friday,
+so if you issued 25 certificates on Monday and 25 more certificates on Friday,
 you'll be able to issue again starting Monday. You can get a list of certificates
 issued for your registered domain by [searching on crt.sh](https://crt.sh), which
 uses the public [Certificate Transparency](https://www.certificate-transparency.org)
