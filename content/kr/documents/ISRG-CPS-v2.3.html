@@ -1,0 +1,1694 @@
+---
+title: ISRG CPS v2.3
+slug: isrg-cps-v2.3
+top_graphic: 3
+date: 2018-04-04
+---
+
+<style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+
+<h1 align="center">Internet Security Research Group (ISRG)</h1>
+<h1 align="center">Certification Practice Statement</h1>
+<h2 align="center">Version 2.3<br>
+                   Updated May 4, 2018<br>
+                   Approved by the ISRG Policy Management Authority</h2>
+
+<div class='markdown-preview' data-use-github-style>
+<h1 id="1-introduction">1. INTRODUCTION</h1>
+<h2 id="1-1-overview">1.1 Overview</h2>
+<p>This Certification Practice Statement ("CPS") document outlines the certification services practices for Internet Security Research Group ("ISRG") Public Key Infrastructure ("ISRG PKI").</p>
+<p>ISRG PKI services include, but are not limited to, issuing, managing, validating, revoking, and renewing Certificates in accordance with the requirements of the ISRG Certificate Policy (CP). It is recommended that readers familiarize themselves with the ISRG CP prior to reading this document.</p>
+<p>ISRG PKI services are most commonly, but not necessarily exclusively, provided under the brand/trademark "Let's Encrypt".</p>
+<p>The ISRG PKI conforms to the current version of the guidelines adopted by the Certification Authority/Browser Forum (“CAB Forum”) when issuing publicly trusted certificates, including the Baseline Requirements for the Issuance and Management of Publicly Trusted Certificates (“Baseline Requirements”). CAB Forum documents can be found at <a href="https://www.cabforum.org">https://www.cabforum.org</a>. If there is any conflict between this CPS and a relevant CAB Forum requirement or guideline, then the CAB Forum requirement or guideline shall take precedence.</p>
+<p>Other documents related to the behavior and control of the ISRG PKI, such as a Subscriber Agreement and Privacy Policy, can be found at <a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>.</p>
+<p>Per IETF PKIX RFC 3647, this CPS is divided into nine components that cover security controls, practices, and procedures for certification services provided by the ISRG PKI.</p>
+<p>The following Certification Authorities are covered under this CPS:</p>
+<table>
+<thead>
+<tr>
+<th>CA Type</th>
+<th>Distinguished Name</th>
+<th>Key Pair Type and Parameters</th>
+<th>SHA-256 Key Fingerprint</th>
+<th>Validity Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root CA</td>
+<td>C=US,<br>O=Internet Security Research Group,<br>CN=ISRG Root X1</td>
+<td>RSA, n has 4096 bits, e=65537</td>
+<td>96:BC:EC:06:26:49:76:F3:<br>74:60:77:9A:CF:28:C5:A7:<br>CF:E8:A3:C0:AA:E1:1A:8F:<br>FC:EE:05:C0:BD:DF:08:C6</td>
+<td>Not Before: Jun  4 11:04:38 2015 GMT,<br>Not After: Jun  4 11:04:38 2035 GMT</td>
+</tr>
+</tbody>
+</table>
+<p>This work is licensed under the Creative Commons Attribution 4.0 International License. To
+view a copy of this license, visit <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a> or send a letter to Creative
+Commons, PO Box 1866, Mountain View, CA 94042, USA.</p>
+<h2 id="1-2-document-name-and-identification">1.2 Document name and identification</h2>
+<p>This is the ISRG Certification Practices Statement. This document was approved for publication by the ISRG Policy Management Authority, and is made available at <a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>.</p>
+<p>The following revisions have been made:</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Changes</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May 5, 2015</td>
+<td>Original.</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>September 9, 2015</td>
+<td>Added/corrected a number of policy URIs, removed LDAP as mechanism for publishing certificate information, removed administrative contact requirement for DV-SSL subscribers, removed mention of web-based revocation option, removed description of customer service center, substantial changes to all of Section 9 regarding legal matters, other minor fixes/improvements.</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>September 22, 2015</td>
+<td>Updated serial number description in Section 10.3.1, DV-SSL Certificate Profiles.</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>March 16, 2016</td>
+<td>Update root CRL issuance periods, disallow issuance to ‘.mil’ TLD, make NameConstraints extension optional for cross- certification profile, clarify optional NameConstraints contents, clarify that OSCP ResponderID is byname, clarify that OCSP nonce extension is not supported.</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>May 5, 2016</td>
+<td>Reference CP v1.2 rather than CP v1.1. Add info about tlsFeature extension, serialNumber in Subject Distinguished Name field.</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>October 18, 2016</td>
+<td>Do not require discontinuing use of a private key due to incorrect information in a certificate. Add information about issuance for Internationalized Domain Names. Add information about CA’s CAA identifying domain. Do not require discontinuing use of a private key due to expiration or revocation of a certificate.</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>April 13, 2017</td>
+<td>Complete rewrite of CPS.</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>February 6, 2018</td>
+<td>Remove restriction on issuing to '.mil' TLD.</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>March 10, 2018</td>
+<td>Remove text stating that wildcard certificates are not supported. Clarify that wildcard validation must use DNS Change method.</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>May 4, 2018</td>
+<td>Add CT fields to certificate profiles. Specify current Baseline Requirements compliance for all validations. Update certificate expiration notice text. Remove reference loops. Minor cleanup.</td>
+<td>2.3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-3-pki-participants">1.3 PKI participants</h2>
+<h3 id="1-3-1-certification-authorities">1.3.1 Certification authorities</h3>
+<p>ISRG is a CA that provides services including, but not limited to, issuing, managing, validating, revoking, and renewing publicly-trusted Certificates. These services are performed in accordance with the requirements of the ISRG Certificate Policy (CP) and this CPS. These services are provided to the general public with exceptions as deemed appropriate by ISRG management or in accordance with relevant law.</p>
+<p>ISRG PKI services are most commonly, but not necessarily exclusively, provided under the brand/trademark "Let's Encrypt".</p>
+<h3 id="1-3-2-registration-authorities">1.3.2 Registration authorities</h3>
+<p>ISRG serves as its own RA. RA services are not performed by third parties.</p>
+<h3 id="1-3-3-subscribers">1.3.3 Subscribers</h3>
+<p>See definition of "Subscriber" in Section 1.6.1 Definitions.</p>
+<h3 id="1-3-4-relying-parties">1.3.4 Relying parties</h3>
+<p>See definition of "Relying Party" in Section 1.6.1 Definitions.</p>
+<p>Relying Parties must verify the validity of certificates via CRL or OCSP prior to relying on certificates. CRL and OCSP location information is provided within certificates.</p>
+<h3 id="1-3-5-other-participants">1.3.5 Other participants</h3>
+<p>Other participants include CAs that cross-sign or issue subordinates to the ISRG PKI.</p>
+<p>ISRG PKI vendors and service providers with access to confidential information or privileged systems are required to operate in compliance with the ISRG CP.</p>
+<h2 id="1-4-certificate-usage">1.4 Certificate usage</h2>
+<h3 id="1-4-1-appropriate-certificate-uses">1.4.1 Appropriate certificate uses</h3>
+<p>Certificates issued by ISRG PKI can be used only to establish secure online communication between hosts (as identified by the FQDN provided in the Certificate) and clients using the TLS protocol.</p>
+<h3 id="1-4-2-prohibited-certificate-uses">1.4.2 Prohibited certificate uses</h3>
+<p>Certificates may not be used:</p>
+<ul>
+<li>For any purpose not explicitly defined in Section 1.4.1 of this document</li>
+<li>For any application requiring fail-safe performance such as a) the operation of nuclear power facilities b) air traffic control systems c) aircraft navigation systems d) weapons control systems e) any other system in which failure could lead to injury, death, or environmental damage.</li>
+<li>For software or hardware architectures that provide facilities for interference with encrypted communications, including but not limited to a) active eavesdropping (e.g., Man-in-the-middle attacks) b) traffic management of domain names or internet protocol (IP) addresses that the organization does not own or control. Note that these restrictions shall apply regardless of whether a relying party communicating through the software or hardware architecture has knowledge of its providing facilities for interference with encrypted communications.</li>
+<li>When prohibited by law.</li>
+</ul>
+<p>Also, note that Certificates do not guarantee anything regarding reputation, honesty, or the current state of endpoint security. A Certificate only represents that the information contained in it was verified as reasonably correct when the Certificate was issued.</p>
+<h2 id="1-5-policy-administration">1.5 Policy administration</h2>
+<h3 id="1-5-1-organization-administering-the-document">1.5.1 Organization administering the document</h3>
+<p>This CPS document is maintained by the ISRG PMA.</p>
+<h3 id="1-5-2-contact-person">1.5.2 Contact person</h3>
+<p>The ISRG PMA can be contacted at:</p>
+<p>Policy Management Authority<br>
+Internet Security Research Group<br>
+1 Letterman Drive, Suite D4700<br>
+San Francisco, CA 94129<br></p>
+<h3 id="1-5-3-person-determining-cps-suitability-for-the-policy">1.5.3 Person determining CPS suitability for the policy</h3>
+<p>The ISRG PMA is responsible for determining the suitability of this CPS. The ISRG PMA is informed by results and recommendations received from an independent auditor.</p>
+<h3 id="1-5-4-cps-approval-procedures">1.5.4 CPS approval procedures</h3>
+<p>The ISRG PMA approves any revisions to this CPS document after formal review.</p>
+<h2 id="1-6-definitions-and-acronyms">1.6 Definitions and acronyms</h2>
+<h3 id="1-6-1-definitions">1.6.1 Definitions</h3>
+<ul>
+<li>ACME Protocol<ul>
+<li>A protocol used for validation, issuance, and management of certificates. The protocol is an open standard managed by the IETF.</li>
+</ul>
+</li>
+<li>Applicant<ul>
+<li>An entity applying for a certificate.</li>
+</ul>
+</li>
+<li>Baseline Requirements<ul>
+<li>A document published by the CAB Forum which outlines minimum requirements for publicly trusted Certificate Authorities.</li>
+</ul>
+</li>
+<li>CAB Forum<ul>
+<li>Certificate Authority / Browser Forum, a group a CAs and browsers which come together to discuss technical and policy issues related to PKI systems. (<a href="https://cabforum.org/">https://cabforum.org/</a>)</li>
+</ul>
+</li>
+<li>Certificate Repository<ul>
+<li>A repository of information about ISRG certificates. It is located at: <a href="https://letsencrypt.org/certificates/">https://letsencrypt.org/certificates/</a></li>
+</ul>
+</li>
+<li>Cross Certificate<ul>
+<li>A certificate that is used to establish a trust relationship between two Root CAs.</li>
+</ul>
+</li>
+<li>Policy and Legal Repository<ul>
+<li>A repository of policy and legal documents related to the ISRG PKI. It is located at: <a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a></li>
+</ul>
+</li>
+<li>Key Pair<ul>
+<li>A Private Key and its associated Public Key.</li>
+</ul>
+</li>
+<li>Private Key<ul>
+<li>The key in a Key Pair that must be kept secret. Used to create digital signatures that can be verified by the corresponding Public Key or to decrypt messages encrypted by the corresponding Public Key.</li>
+</ul>
+</li>
+<li>Public Key<ul>
+<li>The only key in a Key Pair that can safely be publicly disclosed. Used by Relying Parties to verify digital signatures from the corresponding private key or to encrypt messages that can only be decrypted by the corresponding private key.</li>
+</ul>
+</li>
+<li>Relying Party<ul>
+<li>An entity that relies upon information contained within certificates issued by ISRG PKI services.</li>
+</ul>
+</li>
+<li>Root CA<ul>
+<li>The top-level Certification Authority whose Root Certificate is distributed by Application Software Suppliers and that issues Subordinate CA Certificates.</li>
+</ul>
+</li>
+<li>Secure PKI Facilities<ul>
+<li>Facilities designed to protect sensitive PKI infrastructure, including CA private keys.</li>
+</ul>
+</li>
+<li>Subscriber<ul>
+<li>An entity that has agreed to a Subscriber Agreement and is using ISRG PKI services.</li>
+</ul>
+</li>
+<li>Trusted Contributor<ul>
+<li>A contributor who performs in a Trusted Role. Trusted Contributors may be employees, contractors, or community members. Trusted Contributors must be properly trained and qualified, and have the proper legal obligations in place before performing in a Trusted Role.</li>
+</ul>
+</li>
+<li>Trusted Role<ul>
+<li>A role which qualifies a person to access or modify ISRG PKI systems, infrastructure, and confidential information.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-6-2-acronyms">1.6.2 Acronyms</h3>
+<ul>
+<li>ACME<ul>
+<li>Automated Certificate Management Environment</li>
+</ul>
+</li>
+<li>CA<ul>
+<li>Certificate Authority</li>
+</ul>
+</li>
+<li>CAA<ul>
+<li>Certificate Authority Authorization</li>
+</ul>
+</li>
+<li>CP<ul>
+<li>Certificate Policy</li>
+</ul>
+</li>
+<li>CPS<ul>
+<li>Certification Practice Statement</li>
+</ul>
+</li>
+<li>DV<ul>
+<li>Domain Validation</li>
+</ul>
+</li>
+<li>FQDN<ul>
+<li>Fully Qualified Domain Name</li>
+</ul>
+</li>
+<li>HSM<ul>
+<li>Hardware Security Module</li>
+</ul>
+</li>
+<li>IDN<ul>
+<li>Internationalized Domain Name</li>
+</ul>
+</li>
+<li>IP<ul>
+<li>Internet Protocol</li>
+</ul>
+</li>
+<li>ISRG<ul>
+<li>Internet Security Research Group</li>
+</ul>
+</li>
+<li>PKI<ul>
+<li>Public Key Infrastructure</li>
+</ul>
+</li>
+<li>PMA<ul>
+<li>Policy Management Authority</li>
+</ul>
+</li>
+<li>RA<ul>
+<li>Registration Authority</li>
+</ul>
+</li>
+<li>SAN<ul>
+<li>Subject Alternative Name</li>
+</ul>
+</li>
+<li>TLD<ul>
+<li>Top Level Domain</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-publication-and-repository-responsibilities">2. PUBLICATION AND REPOSITORY RESPONSIBILITIES</h1>
+<h2 id="2-1-repositories">2.1 Repositories</h2>
+<p>ISRG CP, CPS, Privacy Policy, Subscriber Agreement, and WebTrust audit documents are made publicly available in the Policy and Legal Repository, which can be found at:</p>
+<p><a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a></p>
+<h2 id="2-2-publication-of-certification-information">2.2 Publication of certification information</h2>
+<p>Records of all ISRG root and intermediate certificates, including those that have been revoked, are available in the Certificate Repository:</p>
+<p><a href="https://letsencrypt.org/certificates/">https://letsencrypt.org/certificates/</a></p>
+<p>ISRG certificates contain URLs to locations where certificate-related information is published, including revocation information via OCSP and/or CRLs.</p>
+<h2 id="2-3-time-or-frequency-of-publication">2.3 Time or frequency of publication</h2>
+<p>New or updated ISRG CP, CPS, Privacy Policy, Subscriber Agreement, and WebTrust audit documents are made publicly available as soon as possible. This typically means within seven days of receipt or approval.</p>
+<p>New or updated ISRG root and intermediate certificates are made publicly available as soon as possible. This typically means within seven days of creation.</p>
+<h2 id="2-4-access-controls-on-repositories">2.4 Access controls on repositories</h2>
+<p>Read only access to the Policy and Legal Repository and certificate information is unrestricted. Write access is protected by logical and physical controls.</p>
+<h1 id="3-identification-and-authentication">3. IDENTIFICATION AND AUTHENTICATION</h1>
+<h2 id="3-1-naming">3.1 Naming</h2>
+<h3 id="3-1-1-types-of-names">3.1.1 Types of names</h3>
+<p>Certificate distinguished names and subject alternative names are compliant with the CP.</p>
+<h3 id="3-1-2-need-for-names-to-be-meaningful">3.1.2 Need for names to be meaningful</h3>
+<p>ISRG certificates include a "Subject" field which identifies the subject entity (i.e. organization or domain). The subject entity is identified using a distinguished name.</p>
+<p>ISRG certificates include an "Issuer" field which identifies the issuing entity. The issuing entity is identified using a distinguished name.</p>
+<h3 id="3-1-3-anonymity-or-pseudonymity-of-subscribers">3.1.3 Anonymity or pseudonymity of subscribers</h3>
+<p>Subscribers are not identified in DV certificates, which have subject fields identifying only domain names (not people or organizations). Relying parties should consider DV certificate subscribers to be anonymous.</p>
+<h3 id="3-1-4-rules-for-interpreting-various-name-forms">3.1.4 Rules for interpreting various name forms</h3>
+<p>Distinguished names in certificates are to be interpreted using X.500 standards and ASN.1 syntax. RFC 2253 and RFC 2616 provide more information.</p>
+<p>Certificates do not assert any specific relationship between subscribers and registrants of domain names contained in certificates.</p>
+<p>Regarding Internationalized Domain Names, ISRG will have no objection so long as the domain is resolvable via DNS. It is the CA’s position that homoglyph spoofing should be dealt with by registrars, and Web browsers should have sensible policies for when to display the punycode versions of names.</p>
+<h3 id="3-1-5-uniqueness-of-names">3.1.5 Uniqueness of names</h3>
+<p>No stipulation.</p>
+<h3 id="3-1-6-recognition-authentication-and-role-of-trademarks">3.1.6 Recognition, authentication, and role of trademarks</h3>
+<p>ISRG reserves the right to make all decisions regarding Subscriber names in certificates. Entities requesting certificates will be required to demonstrate their right to use names (e.g. demonstrate control of a domain name), but trademark rights are not verified.</p>
+<p>While ISRG will comply with U.S. law and associated legal orders, it is ISRG's position that trademark enforcement responsibility for domain names should lie primarily with domain registrars and the legal system.</p>
+<h2 id="3-2-initial-identity-validation">3.2 Initial identity validation</h2>
+<p>ISRG may elect not to issue any certificate at its sole discretion.</p>
+<h3 id="3-2-1-method-to-prove-possession-of-private-key">3.2.1 Method to prove possession of private key</h3>
+<p>Applicants are required to prove possession of the Private Key corresponding to the Public Key in a Certificate request, which can be done by signing the request with the Private Key.</p>
+<h3 id="3-2-2-authentication-of-organization-and-domain-identity">3.2.2 Authentication of organization and domain identity</h3>
+<p>ISRG only issues Domain Validation (DV) certificates. When a certificate request includes a list of FQDNs in a SAN list, all domains in the list are fully validated prior to issuance.</p>
+<p>Validation for DV certificates involves demonstrating proper control over a domain. ISRG validates domain control primarily in an automated fashion via the ACME protocol. In exceptional cases control may be validated using methods similar to those employed by ACME, but performed manually.</p>
+<p>There are three methods used for demonstrating domain control:</p>
+<ol>
+<li><p>Agreed-Upon Change to Website: Confirming the Applicant’s control over the requested FQDN by confirming the presence of agreed-upon content contained in a file or on a web page under the “/.well-known/acme-challenge/” directory on the requested FQDN that is accessible to the CA via HTTP over port 80, following redirects. (BR Section 3.2.2.4.6)</p>
+</li>
+<li><p>DNS Change: Confirming the Applicant’s control over the requested FQDN by confirming the presence of a random value (with at least 128 bits entropy) in a DNS TXT or CAA record for the requested FQDN prefixed with the label '_acme-challenge'. (BR Section 3.2.2.4.7)</p>
+</li>
+<li><p>TLS Using a Random Number: Confirming the Applicant’s control over the requested FQDN by confirming the presence of a random value (with at least 128 bits entropy) within a Certificate on the requested FQDN which is accessible to the CA via TLS over port 443. (BR Section 3.2.2.4.10)</p>
+</li>
+</ol>
+<p>Validation for wildcard domain requests must be completed using the DNS Change method.</p>
+<p>All validations are performed in compliance with the current CAB Forum Baseline Requirements at the time of validation.</p>
+<h3 id="3-2-3-authentication-of-individual-identity">3.2.3 Authentication of individual identity</h3>
+<p>ISRG does not issue certificates to individuals, and thus does not authenticate individual identities.</p>
+<h3 id="3-2-4-non-verified-subscriber-information">3.2.4 Non-verified subscriber information</h3>
+<p>Non-verified Applicant information is not included in ISRG certificates.</p>
+<h3 id="3-2-5-validation-of-authority">3.2.5 Validation of authority</h3>
+<p>ISRG does not issue certificates to organizations, and thus does not validate any natural person's authority to request certificates on behalf of organizations.</p>
+<p>Organizations have the option to specify CA issuance authority via CAA records, which ISRG respects.</p>
+<h3 id="3-2-6-criteria-for-interoperation">3.2.6 Criteria for interoperation</h3>
+<p>ISRG discloses Cross Certificates in its Certificate Repository:</p>
+<p><a href="https://letsencrypt.org/certificates/">https://letsencrypt.org/certificates/</a></p>
+<h2 id="3-3-identification-and-authentication-for-re-key-requests">3.3 Identification and authentication for re-key requests</h2>
+<p>See Section 4.7.</p>
+<h2 id="3-4-identification-and-authentication-for-revocation-request">3.4 Identification and authentication for revocation request</h2>
+<p>Identification and authentication for revocation requests is performed by ISRG in compliance with Section 4.9 of this document.</p>
+<p>Identification and authentication is not required when revocation is being requested by ISRG.</p>
+<h1 id="4-certificate-life-cycle-operational-requirements">4. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS</h1>
+<h2 id="4-1-certificate-application">4.1 Certificate Application</h2>
+<h3 id="4-1-1-who-can-submit-a-certificate-application">4.1.1 Who can submit a certificate application</h3>
+<p>Anyone may submit an application for a certificate via the ACME protocol. Issuance will depend on proper validation and compliance with ISRG policies.</p>
+<h3 id="4-1-2-enrollment-process-and-responsibilities">4.1.2 Enrollment process and responsibilities</h3>
+<p>The enrollment process involves the following steps, in no particular order:</p>
+<ul>
+<li>Generating a key pair using secure methods</li>
+<li>Submitting a request for a certificate containing all necessary information, including the public key</li>
+<li>Agreeing to the relevant Subscriber Agreement</li>
+</ul>
+<h2 id="4-2-certificate-application-processing">4.2 Certificate application processing</h2>
+<h3 id="4-2-1-performing-identification-and-authentication-functions">4.2.1 Performing identification and authentication functions</h3>
+<p>ISRG performs all identification and authentication functions in accordance with the ISRG CP. This includes validation per CPS Section 3.2.2.</p>
+<p>ISRG checks for relevant CAA records prior to issuing certificates. The CA acts in accordance with CAA records if present. The CA’s CAA identifying domain is ‘letsencrypt.org’.</p>
+<h3 id="4-2-2-approval-or-rejection-of-certificate-applications">4.2.2 Approval or rejection of certificate applications</h3>
+<p>Approval requires successful completion of validation per Section 3.2.2 as well as compliance with all CA policies.</p>
+<p>Certificates containing a new gTLD under consideration by ICANN will not be issued. The CA Server will periodically be updated with the latest version of the Public Suffix List and will consult the ICANN domains section for every requested DNS identifier. CA server will not validate or issue for DNS identifiers that do not have a Public Suffix in the ICANN domains section. The Public Suffix List is updated when new gTLDs are added, and never includes new gTLDs before they are resolvable.</p>
+<p>ISRG maintains a list of high-risk domains and blocks issuance of certificates for those domains. Requests for removal from the high-risk domains list will be considered, but will likely require further documentation confirming control of the domain from the Applicant, or other proof as deemed necessary by ISRG management.</p>
+<h3 id="4-2-3-time-to-process-certificate-applications">4.2.3 Time to process certificate applications</h3>
+<p>No stipulation.</p>
+<h2 id="4-3-certificate-issuance">4.3 Certificate issuance</h2>
+<h3 id="4-3-1-ca-actions-during-certificate-issuance">4.3.1 CA actions during certificate issuance</h3>
+<p>Certificates issued by the Root CA require an individual authorized by ISRG to deliberately issue a direct command in order for the Root CA to perform a certificate signing operation.</p>
+<p>The source of a certificate request is confirmed before issuance. CA processes are protected from unauthorized modification during certificate issuance. Issued certificates are stored in a database and then made available to the Subscriber.</p>
+<h3 id="4-3-2-notification-to-subscriber-by-the-ca-of-issuance-of-certificate">4.3.2 Notification to subscriber by the CA of issuance of certificate</h3>
+<p>End-entity certificates are made available to Subscribers via the ACME protocol as soon after issuance as reasonably possible. Typically this happens within a few seconds.</p>
+<p>All end-entity certificates are logged to Certificate Transparency servers as soon as reasonably possible. Typically this happens within a few seconds.</p>
+<h2 id="4-4-certificate-acceptance">4.4 Certificate acceptance</h2>
+<h3 id="4-4-1-conduct-constituting-certificate-acceptance">4.4.1 Conduct constituting certificate acceptance</h3>
+<p>See ISRG CP Section 4.4.1.</p>
+<h3 id="4-4-2-publication-of-the-certificate-by-the-ca">4.4.2 Publication of the certificate by the CA</h3>
+<p>All root and intermediate certificates are made available publicly via the Certificate Repository.</p>
+<p>All end-entity certificates are made available to Subscribers via the ACME protocol.</p>
+<p>All end-entity certificates are logged to Certificate Transparency servers.</p>
+<h3 id="4-4-3-notification-of-certificate-issuance-by-the-ca-to-other-entities">4.4.3 Notification of certificate issuance by the CA to other entities</h3>
+<p>See Section 4.4.2.</p>
+<h2 id="4-5-key-pair-and-certificate-usage">4.5 Key pair and certificate usage</h2>
+<h3 id="4-5-1-subscriber-private-key-and-certificate-usage">4.5.1 Subscriber private key and certificate usage</h3>
+<p>Subscribers are obligated to generate Key Pairs using reasonably trustworthy systems.</p>
+<p>Subscribers are obligated to take reasonable measures to protect their Private Keys from unauthorized use or disclosure (which constitutes compromise). Subscribers must discontinue use of any Private Keys that are known or suspected to have been compromised.</p>
+<p>Certificates must be used in accordance with their intended purpose, which is outlined in this CPS and the associated CP. Subscribers must cease use of certificates being used outside of their intended purpose.</p>
+<h3 id="4-5-2-relying-party-public-key-and-certificate-usage">4.5.2 Relying party public key and certificate usage</h3>
+<p>Relying Parties must fully evaluate the context in which they are relying on certificates and the information contained in them, and decide to what extent the risk of reliance is acceptable. If the risk of relying on a certificate is determined to be unacceptable, then Relying Parties should not use the certificate or should obtain additional assurances before using the certificate.</p>
+<p>ISRG does not warrant that any software used by Relying Parties to evaluate or otherwise handle certificates does so properly.</p>
+<p>Relying Parties ignoring certificate expiration, revocation data provided via OCSP or CRL, or other pertinent information do so at their own risk.</p>
+<h2 id="4-6-certificate-renewal">4.6 Certificate renewal</h2>
+<p>Certificate renewal requests are treated as applications for new certificates.</p>
+<h2 id="4-7-certificate-re-key">4.7 Certificate re-key</h2>
+<p>Certificate re-key requests are treated as applications for new certificates.</p>
+<h2 id="4-8-certificate-modification">4.8 Certificate modification</h2>
+<p>Certificate modification requests are treated as applications for new certificates.</p>
+<h2 id="4-9-certificate-revocation-and-suspension">4.9 Certificate revocation and suspension</h2>
+<p>Certificate revocation permanently ends the certificate's operational period prior to its stated validity period.</p>
+<h3 id="4-9-1-circumstances-for-revocation">4.9.1 Circumstances for revocation</h3>
+<p>ISRG will follow the ISRG CP and revoke a certificate in accordance with Section 4.9.1.1 and Section 4.9.1.2 of the ISRG CP.</p>
+<p>ISRG maintains a continuous (24x7x365) ability to accept and respond to revocation requests and related inquiries.</p>
+<h3 id="4-9-2-who-can-request-revocation">4.9.2 Who can request revocation</h3>
+<p>Anyone can revoke any certificate via the ACME API if they can sign the revocation request with the private key associated with the certificate. No other information is required in such cases. A number of ACME clients support this functionality.</p>
+<p>Anyone can revoke any certificate via the ACME API if they can demonstrate control over all domains covered by the certificate. No other information is required in such cases. A number of ACME clients support this functionality.</p>
+<p>Subscribers can revoke certificates belonging to their accounts via the ACME API if they can sign the revocation request with the associated account private key. No other information is required in such cases. A number of ACME clients support this.</p>
+<p>Certificates may be administratively revoked by ISRG if it is determined that the Subscriber has failed to meet obligations under the CP, this CPS, the relevant Subscriber Agreement, or any other applicable agreement, regulation, or law. Certificates may also be administratively revoked at the discretion of ISRG management.</p>
+<h3 id="4-9-3-procedure-for-revocation-request">4.9.3 Procedure for revocation request</h3>
+<p>Revocation requests may be made at any time via the ACME API.</p>
+<p>All other requests for revocation must be made by emailing <a href="mailto:cert-prob-reports@letsencrypt.org">cert-prob-reports@letsencrypt.org</a>. ISRG will respond to such requests within 24 hours, though an investigation into the legitimacy of the request may take longer.</p>
+<p>An investigation into whether revocation or other appropriate action is warranted will be based on at least the following criteria:</p>
+<ol>
+<li>The nature of the alleged problem;</li>
+<li>The number of Certificate Problem Reports received about a particular Certificate or Subscriber;</li>
+<li>The entity making the complaint; and</li>
+<li>Relevant legislation.</li>
+</ol>
+<h3 id="4-9-4-revocation-request-grace-period">4.9.4 Revocation request grace period</h3>
+<p>There is no grace period for a revocation request. A revocation request must be made as soon as circumstances requiring revocation are confirmed.</p>
+<h3 id="4-9-5-time-within-which-ca-must-process-the-revocation-request">4.9.5 Time within which CA must process the revocation request</h3>
+<p>Investigation into a revocation request will begin within 24 hours of receiving the request.</p>
+<p>Once a decision has been made to revoke a certificate, revocation will be carried out within 24 hours.</p>
+<h3 id="4-9-6-revocation-checking-requirement-for-relying-parties">4.9.6 Revocation checking requirement for relying parties</h3>
+<p>Relying Parties who cannot or choose not to check revocation status, but decide to rely on a certificate anyway, do so at their own risk.</p>
+<p>See Section 4.5.2.</p>
+<h3 id="4-9-7-crl-issuance-frequency-if-applicable-">4.9.7 CRL issuance frequency (if applicable)</h3>
+<p>ISRG will issue updated CRLs for intermediate certificates with a frequency greater than or equal to that required by the ISRG CP.</p>
+<p>ISRG does not issue CRLs for end-entity certificates.</p>
+<h3 id="4-9-8-maximum-latency-for-crls-if-applicable-">4.9.8 Maximum latency for CRLs (if applicable)</h3>
+<p>When a CRL is requested by a Relying Party the time to receive a response will be less than ten seconds under normal operating conditions.</p>
+<h3 id="4-9-9-on-line-revocation-status-checking-availability">4.9.9 On-line revocation/status checking availability</h3>
+<p>Revocation information for all certificates is made available via OCSP. OCSP responses are available at all times (24x7x365) if possible.</p>
+<h3 id="4-9-10-on-line-revocation-checking-requirements">4.9.10 On-line revocation checking requirements</h3>
+<p>See Section 4.9.6.</p>
+<h3 id="4-9-11-other-forms-of-revocation-advertisements-available">4.9.11 Other forms of revocation advertisements available</h3>
+<p>ISRG allows for OCSP stapling.</p>
+<h3 id="4-9-12-special-requirements-re-key-compromise">4.9.12 Special requirements re key compromise</h3>
+<p>No stipulation.</p>
+<h3 id="4-9-13-circumstances-for-suspension">4.9.13 Circumstances for suspension</h3>
+<p>ISRG does not suspend certificates.</p>
+<h3 id="4-9-14-who-can-request-suspension">4.9.14 Who can request suspension</h3>
+<p>Not applicable.</p>
+<h3 id="4-9-15-procedure-for-suspension-request">4.9.15 Procedure for suspension request</h3>
+<p>Not applicable.</p>
+<h3 id="4-9-16-limits-on-suspension-period">4.9.16 Limits on suspension period</h3>
+<p>Not applicable.</p>
+<h2 id="4-10-certificate-status-services">4.10 Certificate status services</h2>
+<h3 id="4-10-1-operational-characteristics">4.10.1 Operational characteristics</h3>
+<p>CRL entries for intermediate certificates will remain in place until the certificates expire. ISRG does not provide CRLs for end-entity certificates.</p>
+<p>OCSP responses will be made available for all unexpired certificates.</p>
+<h3 id="4-10-2-service-availability">4.10.2 Service availability</h3>
+<p>All certificate status services are made available at all times (24x7x365) if possible.</p>
+<h3 id="4-10-3-optional-features">4.10.3 Optional features</h3>
+<p>No stipulation.</p>
+<h2 id="4-11-end-of-subscription">4.11 End of subscription</h2>
+<p>A Subscriber's subscription ends once all of Subscriber's ISRG certificates have expired or been revoked.</p>
+<p>Prior to expiration of a Subscriber's certificate, ISRG may send Subscriber a notice regarding upcoming Certificate expiration if a contact email address was provided.</p>
+<h2 id="4-12-key-escrow-and-recovery">4.12 Key escrow and recovery</h2>
+<h3 id="4-12-1-key-escrow-and-recovery-policy-and-practices">4.12.1 Key escrow and recovery policy and practices</h3>
+<p>Not applicable.</p>
+<h3 id="4-12-2-session-key-encapsulation-and-recovery-policy-and-practices">4.12.2 Session key encapsulation and recovery policy and practices</h3>
+<p>Not applicable.</p>
+<h1 id="5-facility-management-and-operational-controls">5. FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS</h1>
+<h2 id="5-1-physical-controls">5.1 Physical controls</h2>
+<h3 id="5-1-1-site-location-and-construction">5.1.1 Site location and construction</h3>
+<p>ISRG Secure PKI Facilities are located in the United States, as are all copies of CA root and intermediate private keys.</p>
+<p>ISRG maintains at least two Secure PKI Facilities at all times for the sake of redundancy.</p>
+<p>Secure PKI Facilities are constructed so as to prevent unauthorized entry or interference.</p>
+<p>Secure PKI Facilities are monitored at all times (24x7x365) so as to prevent unauthorized entry or interference.</p>
+<h3 id="5-1-2-physical-access">5.1.2 Physical access</h3>
+<p>Physical access to ISRG Secure PKI Facilities is restricted to authorized ISRG employees, vendors, and contractors, for whom access is required in order to execute their jobs. Access restrictions are strongly enforced via multi-factor authentication mechanisms.</p>
+<h3 id="5-1-3-power-and-air-conditioning">5.1.3 Power and air conditioning</h3>
+<p>Redundant power sources are readily available at each Secure PKI Facility, and are designed to meet ISRG's operating requirements.</p>
+<p>Air conditioning systems at each Secure PKI Facility are designed to meet ISRG's operating requirements.</p>
+<h3 id="5-1-4-water-exposures">5.1.4 Water exposures</h3>
+<p>ISRG Secure PKI Facilities are designed to protect ISRG infrastructure from water exposure/damage.</p>
+<h3 id="5-1-5-fire-prevention-and-protection">5.1.5 Fire prevention and protection</h3>
+<p>ISRG Secure PKI Facilities are designed to prevent fire and provide suppression if necessary.</p>
+<h3 id="5-1-6-media-storage">5.1.6 Media storage</h3>
+<p>ISRG Secure PKI Facilities are designed to prevent accidental damage or unauthorized access to media.</p>
+<h3 id="5-1-7-waste-disposal">5.1.7 Waste disposal</h3>
+<p>ISRG prohibits any media that contains or has contained sensitive data from leaving organizational control in such a state that it may still be operational, or contain recoverable data. Such media may include printed documents or digital storage devices. When media that has contained sensitive information reaches its end of life, the media is physically destroyed such that recovery is reasonably believed to be impossible.</p>
+<h3 id="5-1-8-off-site-backup">5.1.8 Off-site backup</h3>
+<p>ISRG maintains multiple backups of private keys at multiple Secure PKI Facilities. All backups are stored on devices meeting FIPS 140 Level 3 criteria.</p>
+<h2 id="5-2-procedural-controls">5.2 Procedural controls</h2>
+<h3 id="5-2-1-trusted-roles">5.2.1 Trusted roles</h3>
+<p>All persons, employees or otherwise, with the ability to materially impact the operation of ISRG PKI systems and services, or the ability to view CA confidential information, must do so while designated as serving in a Trusted Role.</p>
+<p>Trusted Roles include, but are not limited to:</p>
+<ul>
+<li>Management<ul>
+<li>May view confidential information but may not directly impact CA operations. Strong decision-making authority.</li>
+</ul>
+</li>
+<li>Security Officers<ul>
+<li>May view confidential information but may not directly impact CA operations. Strong decision-making authority.</li>
+</ul>
+</li>
+<li>Systems Administrators<ul>
+<li>May view confidential information and directly impact CA operations. Decision-making authority is limited.</li>
+</ul>
+</li>
+<li>Engineering Liaisons<ul>
+<li>May view confidential information but may not directly impact CA operations. No decision-making authority.</li>
+</ul>
+</li>
+</ul>
+<p>Each Trusted Role requires an appropriate level of training and legal obligation.</p>
+<h3 id="5-2-2-number-of-persons-required-per-task">5.2.2 Number of persons required per task</h3>
+<p>A number of tasks, such as key generation and entering areas physically containing operating ISRG PKI systems, require at least two people in Trusted Roles to be present.</p>
+<h3 id="5-2-3-identification-and-authentication-for-each-role">5.2.3 Identification and authentication for each role</h3>
+<p>Anyone performing work in a Trusted Role must identify and authenticate themselves before accessing ISRG PKI systems or confidential information.</p>
+<h3 id="5-2-4-roles-requiring-separation-of-duties">5.2.4 Roles requiring separation of duties</h3>
+<p>Nobody with the ability to deploy software to ISRG PKI systems (e.g. Systems Administrators) may have the ability to commit code to core CA software. The reverse is also true.</p>
+<h2 id="5-3-personnel-controls">5.3 Personnel controls</h2>
+<h3 id="5-3-1-qualifications-experience-and-clearance-requirements">5.3.1 Qualifications, experience, and clearance requirements</h3>
+<p>ISRG management is responsible for making sure that Trusted Contributors are trustworthy and competent, which includes having proper qualifications and experience.</p>
+<p>ISRG management ensures this with appropriate interviewing practices, training, background checks, and regular monitoring and review of Trusted Contributor job performance.</p>
+<h3 id="5-3-2-background-check-procedures">5.3.2 Background check procedures</h3>
+<p>Trusted Contributors must undergo a background check prior to performing in a trusted role. ISRG management will review the results of background checks for problematic issues prior to approving performance of a trusted role.</p>
+<p>Background checks include, but are not limited to, criminal background and employment history.</p>
+<h3 id="5-3-3-training-requirements">5.3.3 Training requirements</h3>
+<p>Trusted Contributors must be trained on topics relevant to the role in which they will perform.</p>
+<p>Training programs are developed for each role by ISRG management and Security Officers.</p>
+<h3 id="5-3-4-retraining-frequency-and-requirements">5.3.4 Retraining frequency and requirements</h3>
+<p>Training is repeated for each Trusted Contributor on an annual basis and re-covers all topics relevant to their trusted role.</p>
+<p>Training is also offered whenever changes in the industry or operations require it in order for contributors to competently perform in their trusted roles.</p>
+<h3 id="5-3-5-job-rotation-frequency-and-sequence">5.3.5 Job rotation frequency and sequence</h3>
+<p>No stipulation.</p>
+<h3 id="5-3-6-sanctions-for-unauthorized-actions">5.3.6 Sanctions for unauthorized actions</h3>
+<p>Action will be taken to safeguard ISRG and its subscribers whenever ISRG Trusted Contributors, whether through negligence or malicious intent, fail to comply with ISRG policies including this CPS.</p>
+<p>Actions taken in response to non-compliance may include termination, removal from trusted roles, or reporting to legal authorities.</p>
+<p>Once management becomes aware of non-compliance the Trusted Contributor(s) in question will be removed from trusted roles until a review of their actions is complete.</p>
+<h3 id="5-3-7-independent-contractor-requirements">5.3.7 Independent contractor requirements</h3>
+<p>Independent contractors who are assigned to perform Trusted Roles are subject to the duties and requirements specified for such roles in this CPS and the accompanying CP. This includes those described in Section 5.3. Potential sanctions for unauthorized activities by independent contractors are described in Section 5.3.6.</p>
+<h3 id="5-3-8-documentation-supplied-to-personnel">5.3.8 Documentation supplied to personnel</h3>
+<p>Trusted Contributors are provided with all documentation necessary to perform their duties. This always includes, at a minimum, a copy of the ISRG CP, CPS, and Information Security Policy.</p>
+<h2 id="5-4-audit-logging-procedures">5.4 Audit logging procedures</h2>
+<h3 id="5-4-1-types-of-events-recorded">5.4.1 Types of events recorded</h3>
+<p>Audit logs are generated for all events related to CA security (physical and logical) and certificate issuance. Logs are automatically generated whenever possible. When it is necessary to manually log information, logs are kept on paper with written confirmation from a witness and securely stored. All audit logs, electronic or otherwise, shall be retained and made available to compliance auditors upon request.</p>
+<p>At a minimum, each audit record includes:</p>
+<ul>
+<li>Date and time of entry;</li>
+<li>Identity of the person (or machine) making the entry; and</li>
+<li>Description of the entry.</li>
+</ul>
+<h3 id="5-4-2-frequency-of-processing-log">5.4.2 Frequency of processing log</h3>
+<p>No stipulation.</p>
+<h3 id="5-4-3-retention-period-for-audit-log">5.4.3 Retention period for audit log</h3>
+<p>Audit logs are retained for at least seven years and will be made available to compliance auditors upon request.</p>
+<h3 id="5-4-4-protection-of-audit-log">5.4.4 Protection of audit log</h3>
+<p>Audit logs, whether in production or archived, are protected using both physical and logical access controls.</p>
+<h3 id="5-4-5-audit-log-backup-procedures">5.4.5 Audit log backup procedures</h3>
+<p>ISRG makes regular backup copies of audit logs. Audit log backup copies are sent for secure offsite storage at least once per month.</p>
+<h3 id="5-4-6-audit-collection-system-internal-vs-external-">5.4.6 Audit collection system (internal vs. external)</h3>
+<p>Audit data is automatically generated and reported/recorded by operating systems, CA software applications, and network devices. Systems are in place to ensure proper reporting and recording of audit data, and the failure of such systems may lead to suspension of CA services until proper audit log reporting is restored.</p>
+<h3 id="5-4-7-notification-to-event-causing-subject">5.4.7 Notification to event-causing subject</h3>
+<p>No stipulation.</p>
+<h3 id="5-4-8-vulnerability-assessments">5.4.8 Vulnerability assessments</h3>
+<p>Audit logs are monitored by Trusted Contributors, including operations and engineering staff. Anomalies indicating attempted breaches of CA security are reported and investigated.</p>
+<p>Automated internal and external vulnerability scans occur at least every two weeks, though more typically every week.</p>
+<p>Extensive vulnerability assessments for ISRG infrastructure and primary CA application code are conducted at least annually by qualified third parties.</p>
+<p>ISRG Security Officers perform a risk assessment at least annually. This risk assessment:</p>
+<ol>
+<li><p>Identifies foreseeable internal and external threats that could result in unauthorized access, disclosure, misuse, alteration, or destruction of any Certificate Data or Certificate Management Processes;</p>
+</li>
+<li><p>Assesses the likelihood and potential damage of these threats, taking into consideration the sensitivity of the Certificate Data and Certificate Management Processes; and</p>
+</li>
+<li><p>Assesses the sufficiency of the policies, procedures, information systems, technology, and other arrangements that the CA has in place to counter such threats.</p>
+</li>
+</ol>
+<h2 id="5-5-records-archival">5.5 Records archival</h2>
+<h3 id="5-5-1-types-of-records-archived">5.5.1 Types of records archived</h3>
+<p>ISRG archives all audit logs, the contents of which are described in Section 5.4.1. ISRG may also archive any other information deemed critical to understanding the historical performance of the CA's duties.</p>
+<h3 id="5-5-2-retention-period-for-archive">5.5.2 Retention period for archive</h3>
+<p>ISRG retains all documentation relating to certificate requests and the verification thereof, and all Certificates and revocation thereof, for at least seven years after any Certificate based on that documentation ceases to be valid.</p>
+<h3 id="5-5-3-protection-of-archive">5.5.3 Protection of archive</h3>
+<p>Archives are protected from unauthorized modification or destruction by strong security and environmental controls at primary and offsite storage facilities.</p>
+<h3 id="5-5-4-archive-backup-procedures">5.5.4 Archive backup procedures</h3>
+<p>Archives are backed up at primary CA facilities as well as at secure off-site facilities.</p>
+<h3 id="5-5-5-requirements-for-time-stamping-of-records">5.5.5 Requirements for time-stamping of records</h3>
+<p>Records are time-stamped as they are created.</p>
+<p>Machine-created records use system time, which is synchronized automatically with third-party time sources. Machines without network access have the time set manually.</p>
+<p>Manual records use a manually entered date and time, complete with time zone in use.</p>
+<h3 id="5-5-6-archive-collection-system-internal-or-external-">5.5.6 Archive collection system (internal or external)</h3>
+<p>No stipulation.</p>
+<h3 id="5-5-7-procedures-to-obtain-and-verify-archive-information">5.5.7 Procedures to obtain and verify archive information</h3>
+<p>No stipulation.</p>
+<h2 id="5-6-key-changeover">5.6 Key changeover</h2>
+<p>When a CA certificate is nearing expiration, a key changeover procedure is used to transition to a new CA certificate. The following steps constitute a key changeover procedure:</p>
+<ol>
+<li><p>Some time prior to CA certificate expiration, the private key associated with the expiring certificate is no longer used to sign new certificates. It is only used to sign CRLs and OCSP responses.</p>
+</li>
+<li><p>A new key pair is generated and a new CA certificate is created containing the new key pair's public key. This new key pair is used to sign new certificates.</p>
+</li>
+<li><p>If necessary or desired, the old private key associated with the expiring certificate may be used to cross-sign the new certificate.</p>
+</li>
+</ol>
+<h2 id="5-7-compromise-and-disaster-recovery">5.7 Compromise and disaster recovery</h2>
+<h3 id="5-7-1-incident-and-compromise-handling-procedures">5.7.1 Incident and compromise handling procedures</h3>
+<p>ISRG has created and maintains incident response procedures for a range of potential compromise and disaster situations. Such situations include, but are not limited to, natural disasters, security incidents, and equipment failure. Incident response plans are reviewed, potentially updated, and tested on at least an annual basis.</p>
+<h3 id="5-7-2-computing-resources-software-and-or-data-are-corrupted">5.7.2 Computing resources, software, and/or data are corrupted</h3>
+<p>In the event that computing resources, software, and/or data are corrupted or otherwise damaged, ISRG will assess the situation, including its impact on CA integrity and security, and take appropriate action. CA operations may be suspended until mitigation is complete. Subscribers may be notified if corruption or damage has a material impact on the service provided to them.</p>
+<h3 id="5-7-3-entity-private-key-compromise-procedures">5.7.3 Entity private key compromise procedures</h3>
+<p>In the event that a CA Private Key is compromised, or suspected to be compromised, ISRG will immediately launch a thorough investigation. Forensic evidence will be collected and secured as quickly as possible. If it cannot be determined with a high degree of certainty that the private key in question was not compromised, then the following steps may be taken in whatever order is deemed most appropriate by ISRG Security Officers:</p>
+<ul>
+<li>Certificates relying on the private key in question will be revoked.</li>
+<li>ISRG will notify root programs relying on the integrity of the key in question.</li>
+<li>ISRG will notify Subscribers relying on the integrity of the key in question.</li>
+</ul>
+<h3 id="5-7-4-business-continuity-capabilities-after-a-disaster">5.7.4 Business continuity capabilities after a disaster</h3>
+<p>ISRG maintains multiple geographically diverse facilities, each of which is capable of operating ISRG CA systems independently. In the event that a disaster entirely disables one facility, ISRG CA operations will fail over to another facility.</p>
+<h2 id="5-8-ca-or-ra-termination">5.8 CA or RA termination</h2>
+<p>In the event that ISRG CA services are to be terminated:</p>
+<ul>
+<li>All affected parties, including root programs and Subscribers, will be provided with notice as far in advance as reasonably possible.</li>
+<li>A termination plan will be created and review by the ISRG PMA.</li>
+</ul>
+<p>If a suitable successor entity exists, the following steps will be taken:</p>
+<ul>
+<li>CA Private Keys, records, logs, and other critical documentation will be transferred to the successor organization in a secure and compliant manner.</li>
+<li>Arrangements will be made for compliant continuation of CA responsibilities.</li>
+</ul>
+<p>If a suitable successor entity does not exist, the following steps will be taken:</p>
+<ul>
+<li>All certificates issued will be revoked and final CRLs will be published.</li>
+<li>CA Private Keys will be destroyed.</li>
+<li>CA records, logs, and other critical documentation will be transferred to a third party or government entity with appropriate legal controls in place to protect information while allowing its use in compliance with relevant policies and the law.</li>
+</ul>
+<h1 id="6-technical-security-controls">6. TECHNICAL SECURITY CONTROLS</h1>
+<h2 id="6-1-key-pair-generation-and-installation">6.1 Key pair generation and installation</h2>
+<h3 id="6-1-1-key-pair-generation">6.1.1 Key pair generation</h3>
+<p>CA private keys are generated by HSMs meeting the requirements of Section 6.2.1. This occurs during a ceremony meeting the requirements of this CPS and the accompanying CP.</p>
+<p>Subscriber key pairs are generated and managed by Subscribers. Generation and management of Subscriber key pairs must be done in compliance with the terms of the CA Subscriber Agreement and ISRG CPS Section 9.6.3.</p>
+<h3 id="6-1-2-private-key-delivery-to-subscriber">6.1.2 Private key delivery to subscriber</h3>
+<p>ISRG never generates or has access to Subscriber Private Keys.</p>
+<h3 id="6-1-3-public-key-delivery-to-certificate-issuer">6.1.3 Public key delivery to certificate issuer</h3>
+<p>Subscriber Public Keys are communicated to ISRG electronically via the ACME protocol.</p>
+<h3 id="6-1-4-ca-public-key-delivery-to-relying-parties">6.1.4 CA public key delivery to relying parties</h3>
+<p>ISRG Public Keys are provided to Relying Parties as part of browser, operating system, or other software trusted root certificate lists.</p>
+<p>ISRG Public Keys are also available on ISRG websites such as <a href="https://letsencrypt.org/">letsencrypt.org</a>.</p>
+<h3 id="6-1-5-key-sizes">6.1.5 Key sizes</h3>
+<p>ISRG CA root Private Keys are RSA keys at least 4096 bits in length.</p>
+<p>ISRG CA intermediate Private Keys are RSA keys at least 2048 bits in length.</p>
+<h3 id="6-1-6-public-key-parameters-generation-and-quality-checking">6.1.6 Public key parameters generation and quality checking</h3>
+<p>ISRG uses HSMs conforming to FIPS 186-4, capable of providing random number generation and on-board creation of at least 2048-bit RSA keys.</p>
+<p>Per Section 5.3.3, NIST SP 800‐89, the CA ensures that the public exponent of the RSA Keys for a DV-SSL Certificates is in the range between 2<sup>16</sup>+1 and 2<sup>256</sup>-1. The moduli are an odd number, not the power of a prime, and have no factors smaller than 752.</p>
+<h3 id="6-1-7-key-usage-purposes-as-per-x-509-v3-key-usage-field-">6.1.7 Key usage purposes (as per X.509 v3 key usage field)</h3>
+<p>See Section 7, Certificate Profiles.</p>
+<h2 id="6-2-private-key-protection-and-cryptographic-module-engineering-controls">6.2 Private Key Protection and Cryptographic Module Engineering Controls</h2>
+<h3 id="6-2-1-cryptographic-module-standards-and-controls">6.2.1 Cryptographic module standards and controls</h3>
+<p>ISRG uses HSMs meeting FIPS 140-2 Level 3 (or higher) requirements.</p>
+<h3 id="6-2-2-private-key-n-out-of-m-multi-person-control">6.2.2 Private key (n out of m) multi-person control</h3>
+<p>ISRG has put into place security mechanisms which require multiple people performing in Trusted Roles in order to access CA Private Keys, both physically and logically. This is true for all copies of Private Keys, in production or backups, on-site or off-site.</p>
+<h3 id="6-2-3-private-key-escrow">6.2.3 Private key escrow</h3>
+<p>ISRG does not escrow CA Private Keys and does not provide such a service for Subscribers.</p>
+<h3 id="6-2-4-private-key-backup">6.2.4 Private key backup</h3>
+<p>Critical ISRG Private Keys are backed up both on-site and off-site, in multiple geographic locations, under multi-person control.</p>
+<h3 id="6-2-5-private-key-archival">6.2.5 Private key archival</h3>
+<p>ISRG does not archive private keys.</p>
+<h3 id="6-2-6-private-key-transfer-into-or-from-a-cryptographic-module">6.2.6 Private key transfer into or from a cryptographic module</h3>
+<p>ISRG CA Private Keys are generated inside HSMs and are only transferred between HSMs for redundancy or backup purposes. When transferred, keys are encrypted prior to leaving HSMs and unwrapped only inside destination HSMs. Keys never exist in plain text form outside of HSMs.</p>
+<h3 id="6-2-7-private-key-storage-on-cryptographic-module">6.2.7 Private key storage on cryptographic module</h3>
+<p>ISRG CA Private Keys are stored on HSMs meeting the requirements stated in Section 6.2.1.</p>
+<h3 id="6-2-8-method-of-activating-private-key">6.2.8 Method of activating private key</h3>
+<p>ISRG CA Private Keys are always stored on HSMs and activated using the mechanisms provided by the HSM manufacturer. Activation data and devices are protected.</p>
+<h3 id="6-2-9-method-of-deactivating-private-key">6.2.9 Method of deactivating private key</h3>
+<p>ISRG CA Private Keys are always stored on HSMs and deactivated using the mechanisms provided by the HSM manufacturer.</p>
+<h3 id="6-2-10-method-of-destroying-private-key">6.2.10 Method of destroying private key</h3>
+<p>ISRG CA Private Keys are destroyed by Trusted Contributors using a FIPS 140-2 (or higher) validated zeroize method provided by the HSMs storing the keys. Physical destruction of the HSM is not required.</p>
+<p>Subscribers are obligated to securely destroy private keys when they should no longer be used, in most cases by securely deleting all copies of private key files from storage media.</p>
+<h3 id="6-2-11-cryptographic-module-rating">6.2.11 Cryptographic Module Rating</h3>
+<p>See Section 6.2.1.</p>
+<h2 id="6-3-other-aspects-of-key-pair-management">6.3 Other aspects of key pair management</h2>
+<h3 id="6-3-1-public-key-archival">6.3.1 Public key archival</h3>
+<p>See Section 5.5.</p>
+<h3 id="6-3-2-certificate-operational-periods-and-key-pair-usage-periods">6.3.2 Certificate operational periods and key pair usage periods</h3>
+<p>The lifetimes of ISRG Root CA certificates are specified in Section 1.1. Corresponding key pairs have the same lifetimes.</p>
+<p>End-entity certificates issued by ISRG to Subscribers shall have a validity period less than 100 days. Subscriber key pairs may be re-used indefinitely provided that there is no suspicion or confirmation of Private Key compromise.</p>
+<h2 id="6-4-activation-data">6.4 Activation data</h2>
+<h3 id="6-4-1-activation-data-generation-and-installation">6.4.1 Activation data generation and installation</h3>
+<p>Activation data used to activate CA Private Keys is generated during a key ceremony. Activation data is transferred to the person who will use it, or place it will be stored, in a secure fashion.</p>
+<h3 id="6-4-2-activation-data-protection">6.4.2 Activation data protection</h3>
+<p>Activation data is protected from unauthorized disclosure via a combination of physical and logical means.</p>
+<h3 id="6-4-3-other-aspects-of-activation-data">6.4.3 Other aspects of activation data</h3>
+<p>No stipulation.</p>
+<h2 id="6-5-computer-security-controls">6.5 Computer security controls</h2>
+<h3 id="6-5-1-specific-computer-security-technical-requirements">6.5.1 Specific computer security technical requirements</h3>
+<p>ISRG CA infrastructure and systems are appropriately secured in order to protect CA software and data from unauthorized access or modification. Access to systems is secured via multi-factor authentication whenever possible. Security updates are applied in a timely fashion. Vulnerability scans are run regularly.</p>
+<h3 id="6-5-2-computer-security-rating">6.5.2 Computer security rating</h3>
+<p>No stipulation.</p>
+<h2 id="6-6-life-cycle-technical-controls">6.6 Life cycle technical controls</h2>
+<h3 id="6-6-1-system-development-controls">6.6.1 System development controls</h3>
+<p>ISRG has developed policies and procedures to effectively manage the acquisition and development of its CA systems.</p>
+<p>ISRG CA hardware and software is dedicated solely to performing CA functions.</p>
+<p>Vendor selection includes an evaluation of reputation in the market, ability to deliver a quality product, vulnerability history, and the likelihood of remaining viable in the future. Purchases are made in such a way that as little information about the future use of products as possible is disclosed. Physical product deliveries are received by Trusted Contributors and inspected for evidence of tampering. HSMs are shipped in tamper-evident packaging and tamper bag serial numbers are confirmed with the vendor upon reception.</p>
+<p>ISRG maintains a CA testing environment separate from the production environment. The testing environment matches the production environment as closely as reasonably possible but does not have access to CA Private Keys used in trusted certificates. The purpose of this testing platform is to allow extensive but safe testing of software and systems that are or will be deployed to the CA production environment.</p>
+<p>ISRG has developed and maintains appropriate change control policies and procedures to be followed any time CA systems are modified. Changes to ISRG CA systems require review by qualified Trusted Personnel who are different from the person requesting the change. Change requests are documented, as are any subsequent required reviews or approvals.</p>
+<p>When ISRG develops software to be used in CA operations, software development policies are put into place and methodologies are followed in order to ensure software quality and integrity. This always includes a requirement for peer review of code changes. Unit testing is strongly encouraged. Code commit privileges are granted only to qualified and trusted contributors. Nobody with the ability to deploy software to ISRG PKI systems (e.g. Systems Administrators) may have the ability to commit code to core CA software. The reverse is also true.</p>
+<h3 id="6-6-2-security-management-controls">6.6.2 Security management controls</h3>
+<p>ISRG has mechanisms in place to control and monitor security-related configuration of CA systems. Equipment and software is installed and configured using a documented change control process. Software integrity is verified upon deployment using checksums.</p>
+<h3 id="6-6-3-life-cycle-security-controls">6.6.3 Life cycle security controls</h3>
+<p>No stipulation.</p>
+<h2 id="6-7-network-security-controls">6.7 Network security controls</h2>
+<p>ISRG implements reasonable network security safeguards and controls to prevent unauthorized access to CA systems and infrastructure. ISRG's network is multi-tiered and utilizes the principle of defense in depth.</p>
+<p>Firewalls and other critical CA systems are configured based on a necessary-traffic-only whitelisting policy whenever possible.</p>
+<p>ISRG root CA Private Keys are stored offline in a secure manner.</p>
+<h2 id="6-8-time-stamping">6.8 Time-stamping</h2>
+<p>See Section 5.5.5.</p>
+<h1 id="7-certificate-crl-and-ocsp-profiles">7. CERTIFICATE, CRL, AND OCSP PROFILES</h1>
+<h2 id="7-1-certificate-profile">7.1 Certificate profile</h2>
+<p>All fields are as specified in RFC5280, including fields and extensions not specifically mentioned.
+Extensions are not marked critical unless specifically described here as critical.</p>
+<h3 id="root-ca-certificate">Root CA Certificate</h3>
+<table>
+<thead>
+<tr>
+<th>Field or extension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial Number</td>
+<td>Must be unique, with 64 bits of output from a CSPRNG</td>
+</tr>
+<tr>
+<td>Issuer Distinguished Name</td>
+<td>C=US, O=Internet Security Research Group, CN=ISRG Root X&lt;n&gt;<br> where n is an integer representing the instance of the Root<br> CA Certificate. For example, ISRG Root X1, ISRG Root X2, etc.</td>
+</tr>
+<tr>
+<td>Subject Distinguished Name</td>
+<td>Same as Issuer DN</td>
+</tr>
+<tr>
+<td>Validity Period</td>
+<td>Up to 25 years</td>
+</tr>
+<tr>
+<td>Basic Constraints</td>
+<td>Critical.<br> cA=True, pathLength constraint absent</td>
+</tr>
+<tr>
+<td>Key Usage</td>
+<td>Critical.<br> keyCertSign, cRLSign</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intermediate-ca-certificate">Intermediate CA Certificate</h3>
+<table>
+<thead>
+<tr>
+<th>Field or extension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial Number</td>
+<td>Must be unique, with 64 bits of output from a CSPRNG</td>
+</tr>
+<tr>
+<td>Issuer Distinguished Name</td>
+<td>Derived from Issuer certificate</td>
+</tr>
+<tr>
+<td>Subject Distinguished Name</td>
+<td>C=US, O=Let's Encrypt, CN=Let's Encrypt Authority X&lt;n&gt;<br> where n is an integer representing the instance of the Subordinate CA Certificate</td>
+</tr>
+<tr>
+<td>Validity Period</td>
+<td>Up to 8 years</td>
+</tr>
+<tr>
+<td>Basic Constraints</td>
+<td>Critical.<br> cA=True, pathLength constraint 0</td>
+</tr>
+<tr>
+<td>Key Usage</td>
+<td>Critical.<br> keyCertSign, cRLSign, digitalSignature</td>
+</tr>
+<tr>
+<td>Extended Key Usage</td>
+<td>TLS Server Authentication, TLS Client Authentication</td>
+</tr>
+<tr>
+<td>Certificate Policies</td>
+<td>CAB Forum Domain Validated (2.23.140.1.2.1)<br>ISRG Domain Validated (1.3.6.1.4.1.44947.1.1.1)<br>Policy Qualifier Id=CPS<br>Qualifier: Pointer to this CPS</td>
+</tr>
+<tr>
+<td>Authority Information Access</td>
+<td>Contains CA Issuers URL and OCSP URL. URLs vary based on Issuer.</td>
+</tr>
+<tr>
+<td>CRL Distribution Points</td>
+<td>Contains a CRL URL. URL varies based on Issuer.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dv-ssl-end-entity-certificate">DV-SSL End Entity Certificate</h3>
+<table>
+<thead>
+<tr>
+<th>Field or extension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial Number</td>
+<td>Must be unique, with 64 bits of output from a CSPRNG</td>
+</tr>
+<tr>
+<td>Issuer Distinguished Name</td>
+<td>Derived from Issuer certificate</td>
+</tr>
+<tr>
+<td>Subject Distinguished Name</td>
+<td>CN=one of the values from the Subject Alternative Name extension</td>
+</tr>
+<tr>
+<td>Validity Period</td>
+<td>90 days</td>
+</tr>
+<tr>
+<td>Basic Constraints</td>
+<td>Critical.<br> cA=False</td>
+</tr>
+<tr>
+<td>Key Usage</td>
+<td>Critical.<br> digitalSignature, keyEncipherment</td>
+</tr>
+<tr>
+<td>Extended Key Usage</td>
+<td>TLS Server Authentication, TLS Client Authentication</td>
+</tr>
+<tr>
+<td>Certificate Policies</td>
+<td>CAB Forum Domain Validated (2.23.140.1.2.1)<br>ISRG Domain Validated (1.3.6.1.4.1.44947.1.1.1)<br>CPS Qualifier: Pointer to this CPS<br>User Notice Qualifier: Message to potential relying parties</td>
+</tr>
+<tr>
+<td>Authority Information Access</td>
+<td>Contains CA Issuers URL and OCSP URL. URLs vary based on Issuer.</td>
+</tr>
+<tr>
+<td>Subject Public Key</td>
+<td>RSA with modulus between 2048 and 4096, inclusive; or namedCurve P-256; or namedCurve P-384</td>
+</tr>
+<tr>
+<td>Subject Alternative Name</td>
+<td>A sequence of 1 to 100 dNSNames</td>
+</tr>
+<tr>
+<td>TLS Feature</td>
+<td>Contains status_request if requested by the subscriber in the CSR</td>
+</tr>
+<tr>
+<td>Precertificate poison</td>
+<td>Per RFC 6962. In Precertificates only.</td>
+</tr>
+<tr>
+<td>Signed Certificate Timestamp List</td>
+<td>Per RFC 6962. In final certificates only.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="root-ocsp-signing-certificate">Root OCSP Signing Certificate</h3>
+<p>Signed by a Root CA Certificate, these Certificates sign OCSP responses for Intermediate CA Certificates.</p>
+<table>
+<thead>
+<tr>
+<th>Field or extension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial Number</td>
+<td>Must be unique, with 64 bits of output from a CSPRNG</td>
+</tr>
+<tr>
+<td>Issuer Distinguished Name</td>
+<td>C=US, O=Internet Security Research Group, CN=ISRG Root X&lt;n&gt;</td>
+</tr>
+<tr>
+<td>Subject Distinguished Name</td>
+<td>C=US, O=Internet Security Research Group, CN=ISRG Root OCSP X&lt;n&gt;</td>
+</tr>
+<tr>
+<td>Validity Period</td>
+<td>5 years</td>
+</tr>
+<tr>
+<td>Basic Constraints</td>
+<td>Critical.<br> cA=False</td>
+</tr>
+<tr>
+<td>Key Usage</td>
+<td>Critical.<br> digitalSignature</td>
+</tr>
+<tr>
+<td>Extended Key Usage</td>
+<td>Critical.<br> OCSPSigning</td>
+</tr>
+<tr>
+<td>No Check</td>
+<td>Present</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-1-1-version-number-s-">7.1.1 Version number(s)</h3>
+<p>All certificates use X.509 version 3.</p>
+<h3 id="7-1-2-certificate-extensions">7.1.2 Certificate extensions</h3>
+<p>See section 7.1.</p>
+<h3 id="7-1-3-algorithm-object-identifiers">7.1.3 Algorithm object identifiers</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Object identifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sha256WithRSAEncryption</td>
+<td>1.2.840.113549.1.1.11</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-1-4-name-forms">7.1.4 Name forms</h3>
+<p>See ISRG Certificate Policy.</p>
+<h3 id="7-1-5-name-constraints">7.1.5 Name constraints</h3>
+<p>ISRG will not issue Certificates for IP addresses.</p>
+<p>These restrictions are not enforced by a NameConstraints extension.</p>
+<h3 id="7-1-6-certificate-policy-object-identifier">7.1.6 Certificate policy object identifier</h3>
+<p>See section 7.1.</p>
+<h3 id="7-1-7-usage-of-policy-constraints-extension">7.1.7 Usage of Policy Constraints extension</h3>
+<p>Not applicable.</p>
+<h3 id="7-1-8-policy-qualifiers-syntax-and-semantics">7.1.8 Policy qualifiers syntax and semantics</h3>
+<p>See section 7.1.</p>
+<h3 id="7-1-9-processing-semantics-for-the-critical-certificate-policies-extension">7.1.9 Processing semantics for the critical Certificate Policies extension</h3>
+<p>Not applicable.</p>
+<h2 id="7-2-crl-profile">7.2 CRL profile</h2>
+<table>
+<thead>
+<tr>
+<th>Field or Extension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td>V2</td>
+</tr>
+<tr>
+<td>Signature Algorithm</td>
+<td>sha256WithRSAEncryption</td>
+</tr>
+<tr>
+<td>ThisUpdate</td>
+<td>The date and time when the Certificate revocation list was issued.</td>
+</tr>
+<tr>
+<td>NextUpdate</td>
+<td>ThisUpdate + 30 days</td>
+</tr>
+<tr>
+<td>RevokedCertificates</td>
+<td>Contains: userCertificate, revocationDate, reasonCode</td>
+</tr>
+<tr>
+<td>CRLnumber</td>
+<td>The serial number of this CRL in an incrementally increasing sequence of CRLs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-2-1-version-number-s-">7.2.1 Version number(s)</h3>
+<p>See section 7.2.</p>
+<h3 id="7-2-2-crl-and-crl-entry-extensions">7.2.2 CRL and CRL entry extensions</h3>
+<p>No stipulation.</p>
+<h2 id="7-3-ocsp-profile">7.3 OCSP profile</h2>
+<p>ISRG OCSP responders implement the RFC 5019 profile of RFC 6960.</p>
+<h3 id="7-3-1-version-number-s-">7.3.1 Version number(s)</h3>
+<p>No stipulation.</p>
+<h3 id="7-3-2-ocsp-extensions">7.3.2 OCSP extensions</h3>
+<p>No stipulation.</p>
+<h1 id="8-compliance-audit-and-other-assessments">8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS</h1>
+<p>WebTrust compliance audits are intended to ensure a CA's compliance with its CP and CPS and relevant WebTrust audit criteria.</p>
+<h2 id="8-1-frequency-or-circumstances-of-assessment">8.1 Frequency or circumstances of assessment</h2>
+<p>WebTrust compliance audit periods cover no more than one year and are scheduled by ISRG annually, every year with no gaps.</p>
+<p>See Section 8.7 for information about the frequency of self-audits.</p>
+<h2 id="8-2-identity-qualifications-of-assessor">8.2 Identity/qualifications of assessor</h2>
+<p>ISRG's WebTrust compliance audits are performed by a qualified auditor. A qualified auditor means a natural person, legal entity, or group of natural persons or legal entities that collectively possess the following qualifications and skills:</p>
+<ol>
+<li>Independence from the subject of the audit (which is ISRG);</li>
+<li>The ability to conduct an audit that addresses the relevant criteria</li>
+<li>Employs individuals who have proficiency in examining Public Key Infrastructure technology, information security tools and techniques, information technology and security auditing, and the third-party attestation function;</li>
+<li>(For audits conducted in accordance with any one of the ETSI standards) accredited in accordance with ISO 17065 applying the requirements specified in ETSI EN 319 403;</li>
+<li>(For audits conducted in accordance with the WebTrust standard) licensed by WebTrust;</li>
+<li>Bound by law, government regulation, or professional code of ethics; and</li>
+<li>Except in the case of an Internal Government Auditing Agency, maintains Professional Liability/Errors &amp; Omissions insurance with policy limits of at least one million US dollars in coverage</li>
+</ol>
+<h2 id="8-3-assessor-s-relationship-to-assessed-entity">8.3 Assessor's relationship to assessed entity</h2>
+<p>ISRG's WebTrust auditors shall have no financial interest in, or other type of relationship with, ISRG, which might cause the auditors to have a bias for or against ISRG.</p>
+<h2 id="8-4-topics-covered-by-assessment">8.4 Topics covered by assessment</h2>
+<p>Compliance audits cover ISRG's compliance with the ISRG CP and this CPS, as well as the following WebTrust principles and criteria:</p>
+<ul>
+<li>Principles and Criteria for Certification Authorities</li>
+<li>WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security</li>
+</ul>
+<h2 id="8-5-actions-taken-as-a-result-of-deficiency">8.5 Actions taken as a result of deficiency</h2>
+<p>Noncompliance with relevant requirements will be documented by auditors (internal or external), the ISRG PMA will be informed, and the ISRG PMA will ensure that steps are taken to address the issues as quickly as reasonably possible.</p>
+<h2 id="8-6-communication-of-results">8.6 Communication of results</h2>
+<p>Audit results are reported to the ISRG PMA and any other entity entitled to the results by law, regulation, or agreement. This includes a number of Web user agent (i.e. browser) root programs.</p>
+<p>ISRG is not required to publicly disclose any audit finding that does not impact the overall audit opinion.</p>
+<h2 id="8-7-self-audits">8.7 Self-Audits</h2>
+<p>ISRG performs a quarterly internal audit of at least 3% of issuance since the last WebTrust audit period.
+The sample is randomly selected. Results are saved and provided to auditors upon request.</p>
+<h1 id="9-other-business-and-legal-matters">9. OTHER BUSINESS AND LEGAL MATTERS</h1>
+<h2 id="9-1-fees">9.1 Fees</h2>
+<h3 id="9-1-1-certificate-issuance-or-renewal-fees">9.1.1 Certificate issuance or renewal fees</h3>
+<p>ISRG does not charge any fees for certificate issuance or renewal.</p>
+<h3 id="9-1-2-certificate-access-fees">9.1.2 Certificate access fees</h3>
+<p>No stipulation.</p>
+<h3 id="9-1-3-revocation-or-status-information-access-fees">9.1.3 Revocation or status information access fees</h3>
+<p>ISRG does not charge any fees for certificate revocation or for checking the validity status of an issued certificate using a CRL or OSCP.</p>
+<h3 id="9-1-4-fees-for-other-services">9.1.4 Fees for other services</h3>
+<p>No stipulation.</p>
+<h3 id="9-1-5-refund-policy">9.1.5 Refund policy</h3>
+<p>ISRG collects no fees, and so provides no refunds.</p>
+<h2 id="9-2-financial-responsibility">9.2 Financial responsibility</h2>
+<h3 id="9-2-1-insurance-coverage">9.2.1 Insurance coverage</h3>
+<p>No stipulation.</p>
+<h3 id="9-2-2-other-assets">9.2.2 Other assets</h3>
+<p>No stipulation.</p>
+<h3 id="9-2-3-insurance-or-warranty-coverage-for-end-entities">9.2.3 Insurance or warranty coverage for end-entities</h3>
+<p>No stipulation.</p>
+<h2 id="9-3-confidentiality-of-business-information">9.3 Confidentiality of business information</h2>
+<h3 id="9-3-1-scope-of-confidential-information">9.3.1 Scope of confidential information</h3>
+<p>No stipulation.</p>
+<h3 id="9-3-2-information-not-within-the-scope-of-confidential-information">9.3.2 Information not within the scope of confidential information</h3>
+<p>No stipulation.</p>
+<h3 id="9-3-3-responsibility-to-protect-confidential-information">9.3.3 Responsibility to protect confidential information</h3>
+<p>ISRG employees, agents, and contractors are responsible for protecting confidential information and are bound by ISRG’s policies with respect to the treatment of confidential information or are contractually obligated to do so. Employees receive training on how to handle confidential information.</p>
+<h2 id="9-4-privacy-of-personal-information">9.4 Privacy of personal information</h2>
+<h3 id="9-4-1-privacy-plan">9.4.1 Privacy plan</h3>
+<p>ISRG follows the privacy policy posted on its website (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>) when handling personal information.</p>
+<h3 id="9-4-2-information-treated-as-private">9.4.2 Information treated as private</h3>
+<p>The privacy policy posted on ISRG’s website (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>) identifies information that ISRG treats as private.</p>
+<h3 id="9-4-3-information-not-deemed-private">9.4.3 Information not deemed private</h3>
+<p>The privacy policy posted on ISRG’s website (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>) identifies information that ISRG does not treat as private.</p>
+<h3 id="9-4-4-responsibility-to-protect-private-information">9.4.4 Responsibility to protect private information</h3>
+<p>ISRG employees and contractors are subject to policies or contractual obligations requiring them to comply with ISRG’s privacy policy (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>) or contractual obligations at least as protective of private information as ISRG’s privacy policy.</p>
+<h3 id="9-4-5-notice-and-consent-to-use-private-information">9.4.5 Notice and consent to use private information</h3>
+<p>ISRG follows the privacy policy posted on its website (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>) when using personal information.</p>
+<h3 id="9-4-6-disclosure-pursuant-to-judicial-or-administrative-process">9.4.6 Disclosure pursuant to judicial or administrative process</h3>
+<p>ISRG may disclose personal information if compelled to do so by court order or other compulsory legal process, provided that ISRG will oppose such disclosure with all legal and technical tools reasonably available to ISRG.</p>
+<h3 id="9-4-7-other-information-disclosure-circumstances">9.4.7 Other information disclosure circumstances</h3>
+<p>ISRG may disclose personal information under other circumstances that are described in the privacy policy posted on its website (<a href="https://letsencrypt.org/repository/">https://letsencrypt.org/repository/</a>).</p>
+<h2 id="9-5-intellectual-property-rights">9.5 Intellectual property rights</h2>
+<p>ISRG and/or its business partners own the intellectual property rights in ISRG’s services, including the certificates, trademarks used in providing the services, and this CPS. Certificate and revocation information are the property of ISRG. ISRG grants permission to reproduce and distribute certificates on a non-exclusive and royalty-free basis, provided that they are reproduced and distributed in full. Private Keys and Public Keys remain the property of the Subscribers who rightfully hold them.</p>
+<p>Notwithstanding the foregoing, third party software (including open source software) used by ISRG to provide its services is licensed, not owned, by ISRG.</p>
+<h2 id="9-6-representations-and-warranties">9.6 Representations and warranties</h2>
+<h3 id="9-6-1-ca-representations-and-warranties">9.6.1 CA representations and warranties</h3>
+<p>Except as expressly stated in this CPS or in a separate agreement with a Subscriber, ISRG does not make any representations or warranties regarding its products or services. ISRG represents and warrants, to the extent specified in this CPS, that:</p>
+<ol>
+<li>ISRG complies, in all material aspects, with the CP and this CPS,</li>
+<li>ISRG publishes and updates CRLs and OCSP responses on a regular basis,</li>
+<li>All certificates issued under this CPS will be verified in accordance with this CPS and meet the minimum requirements found herein and in the CAB Forum Baseline Requirements, and</li>
+<li>ISRG will maintain a repository of public information on its website.</li>
+</ol>
+<h3 id="9-6-2-ra-representations-and-warranties">9.6.2 RA representations and warranties</h3>
+<p>Each RA represents and warrants that:</p>
+<ol>
+<li>The RA’s certificate issuance and management services conform to the ISRG CP and this CPS,</li>
+<li>Information provided by the RA does not contain any false or misleading information,</li>
+<li>Translations performed by the RA are an accurate translation of the original information, and</li>
+<li>All certificates requested by the RA meet the requirements of this CPS.</li>
+</ol>
+<p>ISRG’s agreement with the RA may contain additional representations and warranties.</p>
+<h3 id="9-6-3-subscriber-representations-and-warranties">9.6.3 Subscriber representations and warranties</h3>
+<ol>
+<li>Each Subscriber warrants to ISRG and the public-at-large that Subscriber is the legitimate registrant of the Internet domain name that is, or is going to be, the subject of the ISRG certificate issued to Subscriber, or that Subscriber is the duly authorized agent of such registrant.</li>
+<li>Each Subscriber warrants to ISRG and the public-at-large that either (a) Subscriber did not obtain control of such domain name as the result of a seizure of such domain name, or (b) such domain name had no ongoing lawful uses at the time of such seizure.</li>
+<li>Each Subscriber warrants that all information in the ISRG certificate issued to Subscriber regarding Subscriber or its domain name is accurate, current, reliable, complete, and not misleading.</li>
+<li>Each Subscriber warrants that all information provided by Subscriber to ISRG is accurate, current, complete, reliable, complete, and not misleading.</li>
+<li>Each Subscriber warrants that Subscriber rightfully holds the Private Key corresponding to the Public Key listed in the ISRG certificate issued to Subscriber.</li>
+<li>Each Subscriber warrants that Subscriber has taken all appropriate, reasonable, and necessary steps to secure and keep Subscriber’s Private Key secret.</li>
+<li>Each Subscriber acknowledges and accepts that ISRG is entitled to revoke Subscriber’s ISRG certificates immediately if the Subscriber violates the terms of the Subscriber Agreement or if ISRG discovers that any of Subscriber’s ISRG certificates are being used to enable criminal activities such as phishing attacks, fraud, or the distribution of malware.</li>
+</ol>
+<h3 id="9-6-4-relying-party-representations-and-warranties">9.6.4 Relying party representations and warranties</h3>
+<p>Each Relying Party represents and warrants that, prior to relying on an ISRG certificate, it:</p>
+<ol>
+<li>Obtained sufficient knowledge on the use of digital certificates and PKI,</li>
+<li>Studied the applicable limitations on the usage of certificates and agrees to ISRG’s limitations on its liability related to the use of certificates,</li>
+<li>Has read, understands, and agrees to this CPS,</li>
+<li>Verified both the ISRG certificate and the certificates in the certificate chain using the relevant CRL or OCSP,</li>
+<li>Will not use an ISRG certificate if the certificate has expired or been revoked, and</li>
+<li>Will take all reasonable steps to minimize the risk associated with relying on a digital signature, including only relying on an ISRG certificate after considering:<ul>
+<li>Applicable law and the legal requirements for identification of a party, protection of the confidentiality or privacy of information, and enforceability of the transaction;</li>
+<li>The intended use of the certificate as listed in the certificate or this CPS,</li>
+<li>The data listed in the certificate,</li>
+<li>The economic value of the transaction or communication,</li>
+<li>The potential loss or damage that would be caused by an erroneous identification or a loss of confidentiality or privacy of information in the application, transaction, or communication,</li>
+<li>The Relying Party’s previous course of dealing with the Subscriber,</li>
+<li>The Relying Party’s understanding of trade, including experience with computer-based methods of trade, and</li>
+<li>Any other indicia of reliability or unreliability pertaining to the Subscriber and/or the application, communication, or transaction.</li>
+</ul>
+</li>
+</ol>
+<p>Any unauthorized reliance on a certificate is at a party’s own risk.</p>
+<h3 id="9-6-5-representations-and-warranties-of-other-participants">9.6.5 Representations and warranties of other participants</h3>
+<p>No stipulation.</p>
+<h2 id="9-7-disclaimers-of-warranties">9.7 Disclaimers of warranties</h2>
+<p>ISRG CERTIFICATES AND SERVICES ARE PROVIDED “AS-IS.” ISRG DISCLAIMS ANY AND ALL WARRANTIES OF ANY TYPE, WHETHER EXPRESS OR IMPLIED, INCLUDING AND WITHOUT LIMITATION ANY IMPLIED WARRANTY OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE, IN CONNECTION WITH ANY ISRG SERVICE OR ISRG CERTIFICATE.</p>
+<h2 id="9-8-limitations-of-liability">9.8 Limitations of liability</h2>
+<p>ISRG DOES NOT ACCEPT ANY LIABILITY FOR ANY LOSS, HARM, CLAIM, OR ATTORNEY’S FEES IN CONNECTION WITH ANY CERTIFICATES. ISRG WILL NOT BE LIABLE FOR ANY DAMAGES, ATTORNEY’S FEES, OR RECOVERY, REGARDLESS OF WHETHER SUCH DAMAGES ARE DIRECT, CONSEQUENTIAL, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR COMPENSATORY, EVEN IF ISRG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION ON LIABILITY APPLIES IRRESPECTIVE OF THE THEORY OF LIABILITY, I.E., WHETHER THE THEORY OF LIABILITY IS BASED UPON CONTRACT, WARRANTY, INDEMNIFICATION, CONTRIBUTION, TORT, EQUITY, STATUTE OR REGULATION, COMMON LAW, OR ANY OTHER SOURCE OF LAW, STANDARD OF CARE, CATEGORY OF CLAIM, NOTION OF FAULT OR RESPONSIBILITY, OR THEORY OF RECOVERY. THIS DISCLAIMER IS INTENDED TO BE CONSTRUED TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW.</p>
+<p>WITHOUT WAIVING OR LIMITING THE FOREGOING IN ANY WAY, ISRG DOES NOT MAKE, AND ISRG EXPRESSLY DISCLAIMS, ANY WARRANTY REGARDING ITS RIGHT TO USE ANY TECHNOLOGY, INVENTION, TECHNICAL DESIGN, PROCESS, OR BUSINESS METHOD USED IN EITHER ISSUING CERTIFICATES OR PROVIDING ANY OF ISRG’S SERVICES. EACH SUBSCRIBER AFFIRMATIVELY AND EXPRESSLY WAIVES THE RIGHT TO HOLD ISRG RESPONSIBLE IN ANY WAY, OR SEEK INDEMNIFICATION AGAINST ISRG, FOR ANY INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS, INCLUDING PATENT, TRADEMARK, TRADE SECRET, OR COPYRIGHT.</p>
+<h2 id="9-9-indemnities">9.9 Indemnities</h2>
+<h3 id="9-9-1-indemnification-by-isrg">9.9.1 Indemnification by ISRG</h3>
+<p>The CA does not provide any indemnification except as described in Section 9.9.1 of the Certificate Policy.</p>
+<h3 id="9-9-2-indemnification-by-subscribers">9.9.2 Indemnification by Subscribers</h3>
+<p>Each Subscriber will indemnify and hold harmless ISRG and its directors, officers, employees, agents, and affiliates from any and all liabilities, claims, demands, damages, losses, costs, and expenses, including attorneys’ fees, arising out of or related to: (i) any misrepresentation or omission of material fact by Subscriber to ISRG, irrespective of whether such misrepresentation or omission was intentional, (ii) Subscriber’s violation of the Subscriber Agreement, (iii) any compromise or unauthorized use of an ISRG certificate or corresponding Private Key, or (iv) Subscriber’s misuse of an ISRG certificate. If applicable law prohibits Subscriber from providing indemnification for another party’s negligence or acts, such restriction, or any other restriction required by law for this indemnification provision to be enforceable, shall be deemed to be part of this indemnification provision.</p>
+<h3 id="9-9-3-indemnification-by-relying-parties">9.9.3 Indemnification by Relying Parties</h3>
+<p>To the extent permitted by law, each Relying Party shall indemnify ISRG, its partners, and any cross-signed entities, and their respective directors, officers, employees, agents, and contractors against any loss, damage, or expense, including reasonable attorney’s fees, related to the Relying Party’s (i) breach of any service terms applicable to the services provided by ISRG or its affiliates and used by the Relying Party, this CPS, or applicable law; (ii) unreasonable reliance on a certificate; or (iii) failure to check the certificate’s status prior to use.</p>
+<h2 id="9-10-term-and-termination">9.10 Term and termination</h2>
+<h3 id="9-10-1-term">9.10.1 Term</h3>
+<p>This CPS and any amendments to this CPS are effective when published to the ISRG online repository and remain in effect until replaced with a newer version.</p>
+<h3 id="9-10-2-termination">9.10.2 Termination</h3>
+<p>This CPS and any amendments remain in effect until replaced with a newer version.</p>
+<h3 id="9-10-3-effect-of-termination-and-survival">9.10.3 Effect of termination and survival</h3>
+<p>ISRG will communicate the conditions and effect of this CPS’s termination via the ISRG Repository. The communication will specify which provisions survive termination. At a minimum, all responsibilities related to protecting confidential information will survive termination. All Subscriber Agreements remain effective until the certificate is revoked or expired, even if this CPS terminates.</p>
+<h2 id="9-11-individual-notices-and-communications-with-participants">9.11 Individual notices and communications with participants</h2>
+<p>ISRG accepts notices related to this CPS at the locations specified in Section 1.5.2 of this CPS. Notices are deemed effective after the sender receives a valid and digitally signed acknowledgment of receipt from ISRG. If an acknowledgement of receipt is not received within five days, the sender must resend the notice in paper form to the street address specified in Section 1.5.2 of this CPS using either a courier service that confirms delivery or via certified or registered mail with postage prepaid and return receipt requested. ISRG may allow other forms of notice in its Subscriber Agreements.</p>
+<h2 id="9-12-amendments">9.12 Amendments</h2>
+<h3 id="9-12-1-procedure-for-amendment">9.12.1 Procedure for amendment</h3>
+<p>This CPS is reviewed at least annually and may be reviewed more frequently. Amendments are made by posting an updated version of the CPS to the online repository. Controls are in place that are designed to reasonably ensure that this CPS is not amended and published without the prior authorization of the ISRG PMA.</p>
+<h3 id="9-12-2-notification-mechanism-and-period">9.12.2 Notification mechanism and period</h3>
+<p>ISRG posts CPS revisions to its Repository. ISRG does not guarantee or set a notice-and-comment period and may make changes to this CPS without notice.</p>
+<h3 id="9-12-3-circumstances-under-which-oid-must-be-changed">9.12.3 Circumstances under which OID must be changed</h3>
+<p>The ISRG PMA is solely responsible for determining whether an amendment to the CPS requires an OID change.</p>
+<h2 id="9-13-dispute-resolution-provisions">9.13 Dispute resolution provisions</h2>
+<p>Any claim, suit or proceeding arising out of this CPS or any ISRG product or service must be brought in a state or federal court located in San Jose, California. ISRG may seek injunctive or other relief in any state, federal, or national court of competent jurisdiction for any actual or alleged infringement of its, its affiliates, or any third party’s intellectual property or other proprietary rights.</p>
+<h2 id="9-14-governing-law">9.14 Governing law</h2>
+<p>The laws of the state of California, United States of America, govern the interpretation, construction, and enforcement of this CPS and all proceedings related to ISRG products and services, including tort claims, without regard to any conflicts of law principles. The United Nations Convention for the International Sale of Goods does not apply to this CPS.</p>
+<h2 id="9-15-compliance-with-applicable-law">9.15 Compliance with applicable law</h2>
+<p>This CPS is subject to all applicable laws and regulations, including United States restrictions on the export of software and cryptography products.</p>
+<h2 id="9-16-miscellaneous-provisions">9.16 Miscellaneous provisions</h2>
+<h3 id="9-16-1-entire-agreement">9.16.1 Entire agreement</h3>
+<p>ISRG contractually obligates each RA to comply with this CPS and applicable industry guidelines. ISRG also requires each party using its products and services to enter into an agreement that delineates the terms associated with the product or service. If an agreement has provisions that differ from this CPS, then the agreement with that party controls, but solely with respect to that party. Third parties may not rely on or bring action to enforce such agreement.</p>
+<h3 id="9-16-2-assignment">9.16.2 Assignment</h3>
+<p>Any entities operating under this CPS may not assign their rights or obligations without the prior written consent of ISRG. Unless specified otherwise in a contract with a party, ISRG does not provide notice of assignment.</p>
+<h3 id="9-16-3-severability">9.16.3 Severability</h3>
+<p>If any provision of this CPS is held invalid or unenforceable by a competent court or tribunal, the remainder of the CPS will remain valid and enforceable. Each provision of this CPS that provides for a limitation of liability, disclaimer of a warranty, or an exclusion of damages is severable and independent of any other provision.</p>
+<h3 id="9-16-4-enforcement-attorneys-fees-and-waiver-of-rights-">9.16.4 Enforcement (attorneys' fees and waiver of rights)</h3>
+<p>ISRG may seek indemnification and attorneys’ fees from a party for damages, losses, and expenses related to that party’s conduct. ISRG’s failure to enforce a provision of this CPS does not waive ISRG’s right to enforce the same provision later or right to enforce any other provision of this CPS. To be effective, waivers must be in writing and signed by ISRG.</p>
+<h3 id="9-16-5-force-majeure">9.16.5 Force Majeure</h3>
+<p>ISRG is not liable for any delay or failure to perform an obligation under this CPS to the extent that the delay or failure is caused by an occurrence beyond ISRG’s reasonable control. The operation of the Internet is beyond ISRG’s reasonable control.</p>
+<h2 id="9-17-other-provisions">9.17 Other provisions</h2>
+<p>No stipulation.</p>
+</div>

@@ -1,0 +1,18 @@
+---
+author: Josh Aas, ISRG Executive Director
+date: 2015-11-09T00:00:00Z
+excerpt: We’re sometimes asked why we only offer certificates with ninety-day lifetimes.
+  People asking this are usually concerned that this is too short and wish we would
+  offer certificates lasting a year or more, like some other CAs do.
+title: Why ninety-day lifetimes for certificates?
+slug: why-90-days
+---
+
+We’re sometimes asked why we only offer certificates with ninety-day lifetimes. People who ask this are usually concerned that ninety days is too short and wish we would offer certificates lasting a year or more, like some other CAs do.
+
+Ninety days is nothing new on the Web. According to Firefox Telemetry, 29% of TLS transactions use ninety-day certificates. That’s more than any other lifetime.  From our perspective, there are two primary advantages to such short certificate lifetimes:
+
+1. They limit damage from key compromise and mis-issuance. Stolen keys and mis-issued certificates are valid for a shorter period of time.
+2. They encourage automation, which is absolutely essential for ease-of-use. If we’re going to move the entire Web to HTTPS, we can’t continue to expect system administrators to manually handle renewals. Once issuance and renewal are automated, shorter lifetimes won’t be any less convenient than longer ones.
+
+For these reasons, we do not offer certificates with lifetimes longer than ninety days. We realize that our service is young, and that automation is new to many subscribers, so we chose a lifetime that allows plenty of time for manual renewal if necessary. We recommend that subscribers renew every sixty days. Once automated renewal tools are widely deployed and working well, we may consider even shorter lifetimes.
