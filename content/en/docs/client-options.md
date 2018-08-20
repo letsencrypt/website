@@ -58,6 +58,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [HAProxy ACME v2 client](https://github.com/haproxytech/haproxy-lua-acme)
 - [PJAC](https://github.com/porunov/acme_client) (PJAC >= 3.0.0)
 - [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
+- [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
 
 ## Bash
 
