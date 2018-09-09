@@ -1,20 +1,17 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 전무
 date: 2016-03-08T00:00:00Z
-excerpt: Let’s Encrypt has issued its millionth certificate, helping to secure approximately
-  2.4 million domains. This milestone means a lot to a team that started building
-  a CA from scratch 16 months ago with an aim to have a real impact on the security
-  of the Web as soon as possible.
-title: Our Millionth Certificate
+excerpt: Let’s Encrypt가 백만 번째 인증서를 발급했습니다. 첫 백만 개의 인증서는 약 240만 개의 도메인을 확보하도록 돕기 위함입니다. 이 마일스톤은 빨리 웹 보안에서 실제 영향을 갖기 위해 16개월 전부터 CA를 만들기 시작한 많은 팀에게 많은 의미가 있습니다.
+title: 백만 번째 인증서
 slug: our-millionth-cert
 ---
 
-Let’s Encrypt has issued its millionth certificate. Our first million certificates are helping to secure approximately 2.4 million domains. This milestone means a lot to a team that started building a CA from scratch 16 months ago with an aim to have a real impact on the security of the Web as soon as possible.
+Let’s Encrypt가 백만 번째 인증서를 발급했습니다. 첫 백만 개의 인증서는 약 240만 개의 도메인을 확보하도록 돕기 위함입니다. 이 마일스톤은 빨리 웹 보안에서 실제 영향을 갖기 위해 16개월 전부터 CA를 만들기 시작한 많은 팀에게 많은 의미가 있습니다.
 
-We want to see HTTPS become the default on the Web, and today’s occasion gives us confidence that we’re going to get there - much faster than even we predicted. We’re growing at a current rate of more than 100,000 certificates per week and don’t see this slowing down anytime soon. This is *dramatic and very rapid change* for the Web.
+HTTPS가 웹에서 기본값이 되는 것을 보고 싶고, 그리고 오늘의 기회는 예측한 것보다 매우 빠르게 도달할 수 있다는 자신감을 줍니다. 현재 일주일에 10만 장 이상의 인증서를 발급하는 추세로 성장하고 있으며 이 추세는 곧 감소할 것이라고 생각하지 않습니다. 이것은 웹에 대해 *극적이고 매우 급격한* 변화입니다.
 
-Our rapid growth is due to strong demand for an easy-to-use, low-cost, widely trusted, and truly global solution for certificate issuance and management. We also received a considerable boost from industry endorsement, with major hosting companies like OVH, Wordpress.com, Gandi, Dreamhost, and Digital Ocean helping many sites move to HTTPS with Let's Encrypt.
+이러한 급성장은 인증서 발급 및 관리를 위한 사용하기 쉽고, 비용이 저렴하고, 널리 신뢰할 수 있는 진정한 글로벌 솔루션에 대한 강력한 요구 때문입니다. Let’s Encrypt와 함께 OVH, Wordpress.com, Dreamhost, 그리고 Digital Ocean과 같은 주요 호스팅 회사들이 많은 웹 사이트들을 HTTPS로 이동하도록 상당한 도움을 주었습니다.
 
-HTTPS has been around for a long time but according to Firefox telemetry only ~40% of websites and ~65% of transactions used HTTPS at the end of 2015. Those numbers should both be 100% if the Web is to provide the level of privacy and security that people expect, and Let's Encrypt is going to lead the way.
+HTTPS는 오랫동안 사용되어 왔지만, 파이어폭스의 원격 측정에 따르면 2015년 말에 오직 웹 사이트의 40%와 HTTPS를 사용한 트랜잭션은 전체의 65%에 불과합니다. 웹이 사람들이 기대하는 수준의 프라이버시 및 보안을 제공하려면, 이 수치들이 둘 다 100%가 되어야 합니다. 그래서 Let’s Encrypt가 그 길을 이끌 것입니다.
 
-Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt는 많은 개인과 단체의 지원에 의지하고 있습니다. [참가](https://letsencrypt.org/getinvolved/)를 고려해 보시고, 귀사 또는 귀 조직이 후원하길 원하시면, [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)로 연락 부탁드립니다.
