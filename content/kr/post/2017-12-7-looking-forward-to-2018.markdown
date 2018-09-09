@@ -1,56 +1,57 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: ISRG 전무 Josh Aas
 date: 2017-12-07T00:00:00Z
 excerpt: While we’re proud of what we accomplished in 2017, we are spending most of
   the final quarter of the year looking forward rather than back.
-title: Looking Forward to 2018
+title: 2018년을 기대하며
 slug: looking-forward-to-2018
 ---
 
-Let’s Encrypt had a great year in 2017. We more than doubled the number of active (unexpired) certificates we service to 46 million, we just about tripled the number of unique domains we service to 61 million, and we did it all while maintaining a stellar security and compliance track record. Most importantly though, [the Web went from 46% encrypted page loads to 67%](https://letsencrypt.org/stats/) according to statistics from Mozilla - a gain of 21 percentage points in a single year - incredible. We’re proud to have contributed to that, and we’d like to thank all of the other people and organizations who also worked hard to create a more secure and privacy-respecting Web.
+Let’s Encrypt는 멋진 2017년을 보냈습니다. 유효(만료되지 않은) 인증서를 4천 6배만 개로 늘렸으며, 고유 도메인을 6천1백만개로 3배 늘리면서, 뛰어난 보안 및 규정 기록을 유지하였습니다. 하지만 가장 중요한 부분은 모질라 통계에서 [웹 환경의 암호화된 페이지 로드율이 46%에서 67%로 증가되었다는 점입니다.](https://letsencrypt.org/stats/) – 이것은 한 해 동안 21% 상승한 수치입니다. - 이 성장에 기여한 것에 대하여 자랑스럽게 생각하며, 좀 더 안전하고 개인적으로 존경받는 웹 환경을 만들기 위해 열심히 기여한 다른 모든 개인과 단체들에게도 감사드립니다.
 
-While we’re proud of what we accomplished in 2017, we are spending most of the final quarter of the year looking forward rather than back. As we wrap up our own planning process for 2018, I’d like to share some of our plans with you, including both the things we’re excited about and the challenges we’ll face. We’ll cover service growth, new features, infrastructure, and finances.
+2017년의 성과에 대하여 자랑스럽게 생각합니다만, 올해 마지막 분기의 대부분을 과거가 아닌 미래를 위해 보내고 있습니다. Let’s Encrypt의 2018년 계획 수립 프로세스를 마무리 하면서, 추진 중인 계획과 직면할 도전 과제 등 몇 가지 계획을 여러분들과 공유하고 싶습니다. 서비스 성장, 새로운 기능, 인프라, 재정 등에 대해 다룰 것입니다.
 
-# Service Growth
+# 서비스 성장
 
-We are planning to double the number of active certificates and unique domains we service in 2018, to 90 million and 120 million, respectively. This anticipated growth is due to continuing high expectations for HTTPS growth in general in 2018.
+2018년에 서비스할 활성 인증서와 고유 도메인의 수를 각각 9천만과 1억 2천만 개로 두 배 늘릴 계획입니다. 이 예상 성장은2018년에 일반적으로 HTTPS 성장에 대한 높은 기대감에 기인합니다.
 
-Let’s Encrypt helps to drive HTTPS adoption by offering a free, easy to use, and globally available option for obtaining the certificates required to enable HTTPS. HTTPS adoption on the Web took off at an unprecedented rate from the day Let’s Encrypt launched to the public.
+Let’s Encrypt는 무료이고, 사용하기 쉬우며, 전세계적으로 사용 가능한 옵션이 포함된 인증서를 제공하여 HTTPS의 적용을 돕습니다. 
+웹 환경에서의 HTTPS의 적용이 Let’s Encrypt가 공식 시작된 이후로부터 전례 없는 속도로 이루어지고 있습니다.
 
-One of the reasons Let’s Encrypt is so easy to use is that our community has done great work making client software that works well for a wide variety of platforms. We’d like to thank everyone involved in the development of over 60 [client software options for Let’s Encrypt](https://letsencrypt.org/docs/client-options/). We’re particularly excited that support for the ACME protocol and Let’s Encrypt is [being added to the Apache httpd server](https://letsencrypt.org/2017/10/17/acme-support-in-apache-httpd.html).
+Let’s encrypt가 사용하기 쉬운 이유 중 하나는 커뮤니티가 다양한 플랫폼에서 잘 작동하는 클라이언트 소프트웨어를 만드는데 많은 노력을 기울였기 때문입니다. Let’s encrypt을 위한 60개 이상의 [클라이언트 소프트웨어 옵션](https://letsencrypt.org/docs/client-options/) 개발에 참여해 주신 모든 분들께 감사 드립니다. 그 중에서도 ACME 프로토콜을 지원하게 된 것과 [아파치 HTTPD서버](https://letsencrypt.org/2017/10/17/acme-support-in-apache-httpd.html)에 Let’s Encrypt가 추가된 것에 대해 특히 기쁩니다.
 
-Other organizations and communities are also doing great work to promote HTTPS adoption, and thus stimulate demand for our services. For example, browsers are starting to make their users more aware of the risks associated with unencrypted HTTP (e.g. [Firefox](https://blog.mozilla.org/security/2017/01/20/communicating-the-dangers-of-non-secure-http/), [Chrome](https://security.googleblog.com/2017/04/next-steps-toward-more-connection.html)). Many hosting providers and CDNs are making it easier than ever for all of their customers to use HTTPS. [Government](https://https.cio.gov/) [agencies](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/strategic-plan-2017-2021.html#toc8-3-2) are waking up to the need for stronger security to protect constituents. The media community is working to [Secure the News](https://securethe.news/).
+다른 조직과 커뮤니티도 HTTPS 채택과 각 기관의 서비스에 대한 수요를 촉진하기 위해 큰 노력을 기울이고 있습니다. 예를 들어 브라우저는 암호화되지 않은 HTTP(예 : [Firefox](https://blog.mozilla.org/security/2017/01/20/communicating-the-dangers-of-non-secure-http/), [Chrome](https://security.googleblog.com/2017/04/next-steps-toward-more-connection.html))와 관련된 위험을 사용자가 알 수 있도록 하기 시작했습니다. 많은 호스팅 제공 업체와 CDN은 고객들이 HTTPS를 사용하기 더 쉽게 만들었습니다. [정부](https://https.cio.gov/) [기관](https://www.canada.ca/en/treasury-board-secretariat/services/information-technology/strategic-plan-2017-2021.html#toc8-3-2)들은 유권자들을 보호하기 위한 더 강력한 안전에 대한 필요성을 깨달아 가고 있습니다. 언론은 [뉴스의 보안](https://securethe.news/) 확보를 위해 노력하고 있습니다.
 
-# New Features
+# 새로운 기능
 
-We’ve got some exciting features planned for 2018.
+2018년에 대비하여 몇가지 흥미로운 기능들을 계획하고 있습니다.
 
-First, we’re planning to introduce an ACME v2 protocol API endpoint and [support for wildcard certificates](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html) along with it. Wildcard certificates will be free and available globally just like our other certificates. We are planning to have a public test API endpoint up by January 4, and we’ve set a date for the full launch: ~~Tuesday, February 27~~ Update: [these features are live!](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579/)
+먼저 ACME v2 프로토콜 API 엔드 포인트를 소개하고 [와일드 카드 인증서를 지원](https://letsencrypt.org/2017/07/06/wildcard-certificates-coming-jan-2018.html)할 계획입니다. 와일드 카드 인증서는 다른 인증서와 마찬가지로 전 세계에서 무료로 사용할 수 있습니다. 1월 4일까지 공개 테스트 API 엔트 포인트를 가질 계획이며, [전체 서비스 개시](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579/) 일자를 ~~2월 27일 화요일~~로 설정했습니다.
 
-Later in 2018 we plan to introduce ECDSA root and intermediate certificates. ECDSA is generally considered to be the future of digital signature algorithms on the Web due to the fact that it is more efficient than RSA. Let’s Encrypt will currently sign ECDSA keys from subscribers, but we sign with the RSA key from one of our intermediate certificates. Once we have an ECDSA root and intermediates, our subscribers will be able to deploy certificate chains which are entirely ECDSA.
+2018년 말에 ECDSA 루트와 중간 인증서(intermediate certificate)들을 도입할 계획입니다. ECDSA는 일반적으로 RSA보다 효율적이기 때문에 향후 웹 상의 디지털 알고리즘으로 간주되고 있습니다. Let 's Encrypt는 현재 사용자로부터 ECDSA 키에 서명 할 예정이지만 중간 인증서 중 하나에서 RSA 키로 서명하고 있습니다. ECDSA 루트와 중간체를 가지고 있으면, 사용자는 ECDSA로만 이루워진 인증서 체인을 배포할 수 있습니다.
 
-# Infrastructure
+# 기반시설
 
-Our CA infrastructure is capable of issuing millions of certificates per day with multiple redundancy for stability and a wide variety of security safeguards, both physical and logical. Our infrastructure also generates and signs nearly 20 million OCSP responses daily, and serves those responses nearly 2 billion times per day. We expect issuance and OCSP numbers to double in 2018.
+CA 인프라는 하루에 수백만 개의 인증서를 발급할 수 있으며 안정성과 물리적 및 논리적 보안에 대한 다양한 중복 방지 기능을 제공합니다. 인프라는 매일 약 2천만 건의 OCSP 응답을 생성하고 서명하며, 하루에 2억회 이상의 응답을 제공합니다. 때문에 2018년에는 발행과 OCSP수가 두 배가 될 것으로 예상합니다.
 
-Our physical CA infrastructure currently occupies approximately 70 units of rack space, split between two datacenters, consisting primarily of compute servers, storage, HSMs, switches, and firewalls.
+물리적 CA 인프라는 현재 컴퓨팅 서버, 스토리지, HSM, 스위치 및 방화벽으로 구성된 두 개의 데이터 센터 간에 70 개의 랙 공간을 차지합니다.
 
-When we issue more certificates it puts the most stress on storage for our databases. We regularly invest in more and faster storage for our database servers, and that will continue in 2018.
+더 많은 인증서를 발급 할 때, 데이터베이스의 저장소에 가장 많은 부담을 줍니다. 때문에 데이터베이스 서버를 위한 더 많은 저장소와 더 빠른 저장소에 정기적으로 투자할 것이며, 이는 2018년에도 계속 될 예정입니다.
 
-We’ll need to add a few additional compute servers in 2018, and we’ll also start aging out hardware in 2018 for the first time since we launched. We’ll age out about ten 2u compute servers and replace them with new 1u servers, which will save space and be more energy efficient while providing better reliability and performance.
+2018년에 몇 대의 컴퓨터 서버를 늘릴 필요가 있습니다. 또한 2018년에 시작한 이래 처음으로 하드웨어 노후화가 시작될 겁니다. 10대의 2U 서버를 새로운 1U 서버로 교체하여 더 나은 안정성과 성능을 제공하면서 공간을 절약하고 에너지의 효율성을 높일 예정입니다.
 
-We’ll also add another infrastructure operations staff member, bringing that team to a total of six people. This is necessary in order to make sure we can keep up with demand while maintaining a high standard for security and compliance. Infrastructure operations staff are systems administrators responsible for building and maintaining all physical and logical CA infrastructure. The team also manages a 24/7/365 on-call schedule and they are primary participants in both security and compliance audits.
+또한 인프라 운영 직원을 추가하여 그 팀을 총 6명으로 운영할 것입니다. 이 조치는 보안 및 규정 준수를 위한 높은 기준을 유지하면서 사용자의 요구사항을 받아드릴 수 있도록 하기 위해 필요한 사항입니다. 인프라 운영 직원은 모든 물리적, 논리적 CA 인프라를 구축하고 유지 관리하는 시스템 관리자 입니다. 또한 이 팀은 1년 365일 24시간 내내 항상 일정을 관리하고 있으며, 보안 및 규정준수 감사 모두에 주요 참여자로 참여하고 있습니다.
 
-# Finances
+# 재정
 
-We pride ourselves on being an efficient organization. In 2018 Let’s Encrypt will secure a large portion of the Web with a budget of only $3.0M. For an overall increase in our budget of only 13%, we will be able to issue and service twice as many certificates as we did in 2017. We believe this represents an incredible value and that contributing to Let’s Encrypt is one of the most effective ways to help create a more secure and privacy-respecting Web.
+효율적인 조직이라는 것에 자부심을 가지고 있습니다. 2018년에 Let’s Encrypt는 3백만 달러의 예산으로 웹의 상당 부분을 확보할 예정입니다. 전체적인 예산 증가가 13%에 불가한 상황에서, 2017년에 비해 두 배 많은 인증서를 발급, 서비스할 수 있게 됩니다. 이것이 놀라운 가치를 나타내는 것이라고 믿으며, Let’s Encrypt에 기여하는 것이 보다 안전하고 개인정보 보호에 중점을 둔 웹을 만드는 가장 효과적인 방법 중에 하나라고 믿습니다.
 
-Our 2018 fundraising efforts are off to a strong start with Platinum sponsorships from Mozilla, Akamai, OVH, Cisco, Google Chrome and the Electronic Frontier Foundation. The Ford Foundation has renewed their grant to Let’s Encrypt as well. We are seeking additional sponsorship and grant assistance to meet our full needs for 2018.
+2018년의 모금 활동은 모질라, 아카마이, OVH, Cisco, 구글 크롬과 Electronic Frontier 재단의 플래티넘 후원으로 시작되었습니다. 포드 재단 측에서는 Let’s encrypt에 대한 보조금을 갱신했으며, 2018년에 필요한 모든 것을 충족시킬 수 있도록, 추가 후원과 지원을 요청하고 있습니다.
 
-We had originally budgeted $2.91M for 2017 but we’ll likely come in under budget for the year at around $2.65M. The difference between our 2017 expenses of $2.65M and the 2018 budget of $3.0M consists primarily of the additional infrastructure operations costs previously mentioned.
+원래 2017년에 291만 달러를 책정했었지만 그해 더 적은 265만 달러 정도의 예산을 사용했습니다. 2017년에 지출된 265만 달러와 2018년 예산 300만 달러의 차이는 앞서 언급한 추가 인프라 운영 비용으로 주로 구성되어 있습니다.
 
-# Support Let’s Encrypt
+# Let’s Encrypt 지원
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+Let’s Encrypt 서비스를 제공하기 위해서 사용자와 지지자들의 커뮤니티로부터의 지원에 의존하고 있습니다. 당신의 회사나 조직이 [후원](https://letsencrypt.org/become-a-sponsor/)하고 싶다면 [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org) 으로 이메일을 보내주십시오. 형편이 허락하신다면, [개인적인 기부](https://letsencrypt.org/donate/)를 부탁드립니다.
 
-We’re grateful for the industry and community support that we receive, and we look forward to continuing to create a more secure and privacy-respecting Web!
+업계 및 커뮤니티의 지원에 감사드리며, 더 안전하고 사생활을 보호하는 웹을 계속 만드는 것을 기대합니다!

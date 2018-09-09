@@ -1,18 +1,17 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 전무
 date: 2015-11-12T00:00:00Z
-excerpt: Let’s Encrypt will enter Public Beta on December 3rd, 2015. Once we’ve entered
-  Public Beta our systems will be open to anyone who would like to request a certificate.
-title: 'Public Beta: December 3, 2015'
+excerpt: Let’s Encrypt를 2015년 12월 3일에 공용 베타 버전으로 전환합니다. 이 전환을 통해 시스템에서 인증서를 요청하는 누구나 사용할 수 있습니다.
+title: '공용 베타 버전: 2015년 12월 3일'
 slug: public-beta-timing
 ---
 
-Let’s Encrypt will enter Public Beta on December 3, 2015. Once we’ve entered Public Beta our systems will be open to anyone who would like to request a certificate. There will no longer be a requirement to [sign up](https://t.co/C6Q3dPYorp) and wait for an invitation.
+Let’s Encrypt를 2015년 12월 3일에 공용 베타 버전으로 전환합니다. 이 전환을 통해 시스템에서 인증서를 요청하는 누구나 사용할 수 있습니다. [회원 가입](https://t.co/C6Q3dPYorp)과 초대장을 기다릴 필요가 없어질 것입니다.
 
-Our Limited Beta started on September 12, 2015. We’ve issued over 11,000 certificates since then, and this operational experience has given us confidence that our systems are ready for an open Public Beta.
+2015년 9월 12일에는 제한된 베타 버전을 시작했습니다. 이후 11,000개 이상의 인증서를 발급했고, 이러한 운영 경험을 통해 공용 베타 버전을 공개할 준비가 되어 있음을 확신할 수 있었습니다.
 
-It's time for the Web to take a big step forward in terms of security and privacy. We want to see HTTPS become the default. Let's Encrypt was built to enable that by making it as easy as possible to get and manage certificates.
+이제는 웹이 보안과 프라이버시 관점에서 큰 진전을 보일 때입니다. HTTPS가 기본값이 되는 것을 보고 싶습니다. Let’s Encrypt는 인증서를 얻고 관리하는 것을 가능한 한 쉽게 만들어 줌으로써 HTTPS를 사용하도록 도왔습니다.
 
-We have more work to do before we’re comfortable dropping the beta label entirely, particularly on the client experience. Automation is a cornerstone of our strategy, and we need to make sure that the client works smoothly and reliably on a wide range of platforms. We’ll be monitoring feedback from users closely, and making improvements as quickly as possible.
+특히, 고객 경험에 관한 베타 라벨을 완전히 삭제하기 전에 더 많은 작업을 해야 합니다. 자동화는 전략의 초석이며, 고객들이 다양한 플랫폼에서 원활하고 안정적으로 작동할 수 있도록 확인할 필요가 있습니다. 사용자들부터의 피드백을 면밀히 모니터링하고 가능하면 최대한 빨리 개선할 것입니다.
 
-Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt는 많은 개인과 단체의 지원에 의지하고 있습니다. [참가](https://letsencrypt.org/getinvolved/)를 고려해 보시고, 귀사 또는 귀 조직이 후원하시길 원하시면, [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)로 연락 부탁드립니다.

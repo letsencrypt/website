@@ -1,18 +1,16 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 전무
 date: 2015-11-09T00:00:00Z
-excerpt: We’re sometimes asked why we only offer certificates with ninety-day lifetimes.
-  People asking this are usually concerned that this is too short and wish we would
-  offer certificates lasting a year or more, like some other CAs do.
-title: Why ninety-day lifetimes for certificates?
+excerpt: 가끔 사람들은 우리가 제공하는 인증서는 왜 90일의 유효 기간을 제공하는 이유에 대해 묻습니다. 90일의 유효 기간은 너무 짧으며, 다른 CA와 같이 1년 또는 그 이상 지속하는 인증서 발급을 희망하고 있습니다.
+title: 인증서는 왜 90일간 유효한가요?
 slug: why-90-days
 ---
 
-We’re sometimes asked why we only offer certificates with ninety-day lifetimes. People who ask this are usually concerned that ninety days is too short and wish we would offer certificates lasting a year or more, like some other CAs do.
+가끔 사람들은 우리가 제공하는 인증서는 왜 90일의 유효 기간을 제공하는 이유에 대해 묻습니다. 90일의 유효 기간은 너무 짧으며, 다른 CA와 같이 1년 또는 그 이상 지속하는 인증서 발급을 희망하고 있습니다.
 
-Ninety days is nothing new on the Web. According to Firefox Telemetry, 29% of TLS transactions use ninety-day certificates. That’s more than any other lifetime.  From our perspective, there are two primary advantages to such short certificate lifetimes:
+90일은 웹에게 전혀 새롭지 않습니다. 파이어폭스 원격 측정에 따르면, 29%의 TLS 트랜잭션은 90일 기간의 인증서를 사용합니다. 다른 보증 기간보다 더 많지 않습니다. 이런 관점에서, 짧은 기간을 가진 인증서에는 2가지 이점이 있습니다:
 
-1. They limit damage from key compromise and mis-issuance. Stolen keys and mis-issued certificates are valid for a shorter period of time.
-2. They encourage automation, which is absolutely essential for ease-of-use. If we’re going to move the entire Web to HTTPS, we can’t continue to expect system administrators to manually handle renewals. Once issuance and renewal are automated, shorter lifetimes won’t be any less convenient than longer ones.
+1. 주요한 타협과 잘못 발급된 인증서로 인한 피해를 제한합니다. 도난당한 키나 잘못 발급된 인증서는 더 짧은 기간 동안 유효합니다.
+2. 사용 편의성을 위해 자동화를 권장합니다. 전체 웹을 HTTPS으로 이동하는 경우, 시스템 관리자가 수동으로 갱신할 것이라고 기대할 수 없습니다. 발급 또는 갱신이 자동화되면, 짧은 유효 기간을 갖고 있는 인증서도 긴 유효 기간을 갖고 있는 인증서처럼 편리할 것입니다.
 
-For these reasons, we do not offer certificates with lifetimes longer than ninety days. We realize that our service is young, and that automation is new to many subscribers, so we chose a lifetime that allows plenty of time for manual renewal if necessary. We recommend that subscribers renew every sixty days. Once automated renewal tools are widely deployed and working well, we may consider even shorter lifetimes.
+이러한 이유로, 90일보다 긴 유효 기간을 가진 인증서를 제공하지 않습니다. 이 서비스가 아직 젊고, 자동화가 많은 고객들에게는 새로운 것임을 알게 되었습니다. 그래서 만약 필요하다면, 수동 갱신을 위해 충분한 기간을 갖는 인증서를 발급하기로 결정했습니다. 60일마다 인증서의 갱신을 권장합니다.  자동화된 갱신 도구가 널리 배포되고 잘 동작한다면, 짧은 유효 기간을 가진 인증서에 대해 고려해 볼 것입니다.
