@@ -13,37 +13,37 @@ menu:
 
 {{< lastmod >}}
 
-This FAQ is divided into the following sections:
+FAQ는 다음의 두 개로 나누어 집니다:
 
-* [General Questions](#general)
-* [Technical Questions](#technical)
+* [일반적인 질문](#general)
+* [기술적인 질문](#technical)
 
-# <a name="general">General Questions</a>
+# <a name="general">일반적인 질문</a>
 
-## What services does Let's Encrypt offer?
+## Let’s Encrypt는 어떤 서비스를 제공하나요?
 
-Let's Encrypt is a global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
+Let’s Encrypt는 글로벌 공인인증기관(Certificate Authority, CA)입니다. 전 세계 사람과 조직들이 SSL/TLS 인증서를 확득하고, 갱신하고, 관리할 수 있도록 합니다. 인증서는 안전한 HTTPS 연결을 도와주는 데도 이용될 수 있습니다.
 
-Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
+Let’s Encrypt는 DV(Domain Validation) 인증서를 제공합니다. 자동 발행을 할 수 없는 OV(Organization Validation) 또는 EV(Extended Validation) 유형의 인증서는 제공하지 않습니다.
 
-To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
+Let’s Encrypt를 사용하려면 [시작하기](https://letsencrypt.org/getting-started/) 페이지를 방문해 주세요.
 
-## What does it cost to use Let's Encrypt? Is it really free?
+## Let’s Encrypt를 사용하는 데는 얼마나 드나요? 정말로 무료인가요?
 
-We do not charge a fee for our certificates. Let’s Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
+인증서 이용은 무료입니다. Let’s Encrypt는 비영리이며, 임무는 HTTPS를 널리 채택케 하여 더욱 안전하고 사생활이 보호되는 웹을 만드는 것입니다. 서비스는 무료이며 모든 웹 사이트가 HTTPS를 배포하기도 쉽습니다.
 
-We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate/) or [becoming a sponsor](/become-a-sponsor/).
+전 세계에 무료 서비스를 제공하기 위해 양질의 스폰서, 후원 기관, 개인으로부터의 후원이 필요합니다. 만약 후원에 관심 있으시다면, [기부](/donate/) 또는 [스폰서가 되는 법](/become-a-sponsor/)을 고려해 주십시오.
 
-In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let’s Encrypt certificates.
+경우에 따라, 통합 서비스 제공자(예:호스팅 공급자)는 Let’s Encrypt 인증서를 제공하는데 발생하는데 계상된 행정 관리 비용만을 반영하는 방식으로 명목상 비용만을 부담할 수 있습니다.
 
-## What kind of support do you offer?
+## 어떤 종류의 지원을 제공하나요?
 
-Let’s Encrypt is run by a small team and relies on automation to keep costs down. That being the case, we are not able to offer direct support to our subscribers. We do have some great support options though:
+Let’s Encrypt는 소규모 조직이 운영하며 비용을 줄이기 위한 자동화된 시스템에 의존합니다. 사정이 그런 탓에, 구독자들께 직접적인 지원은 제공할 수 없습니다. 다음의 선택지를 통한 훌륭한 지원이 이루어 집니다:
 
-1. We have really helpful [documentation](/docs/).
-2. We have very active and helpful [community support forums](https://community.letsencrypt.org/). Members of our community do a great job of answering questions, and many of the most common questions have already been answered.
+1. 정말로 도움되는 [문서](/docs/)가 있습니다.
+2. 아주 활발하고 유용한 [커뮤니티 지원 포럼](https://community.letsencrypt.org/)이 있습니다. 커뮤니티 회원들은 질의 응답 전문가이면서, 대부분의 공통적인 질문들은 이미 답변이 되었습니다.
 
-Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
+[비디오](https://www.youtube.com/watch?v=Xe1TZaElTAs)를 통해 방대한 커뮤니티 지원력을 확인하시기 바랍니다.
 
 # <a name="technical">Technical Questions</a>
 
