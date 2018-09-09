@@ -1,5 +1,5 @@
 ---
-title: Jobs at Let's Encrypt
+title: 구인
 linkTitle: Jobs
 slug: jobs
 top_graphic: 4
@@ -9,7 +9,6 @@ menu:
     parent: about
 ---
 
-All of our positions are remote and we can only hire in the United
-States and Canada.
+모든 포지션이 원격 근무이며, 미국과 캐나다에서만 채용합니다.
 
 We have no positions available at this time.
