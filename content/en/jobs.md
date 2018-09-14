@@ -12,13 +12,15 @@ menu:
 All of our positions are remote and we can only hire in the United
 States and Canada.
 
+Please submit resumes to: [careers@letsencrypt.org](mailto:careers@letsencrypt.org)
+
 # Head of Technical Operations
 
 ## What You Will Do
 
 You will lead a relatively experienced six person team responsible for maintaining and evolving the operational infrastructure for the Let’s Encrypt certificate authority. This includes the physical infrastructure, software deployments, monitoring and alerting, and related policies and procedures that provide secure and reliable service to more than 130 million websites around the world. We expect to double that number over the next 1-2 years. This is one of the most critical technical positions at Let’s Encrypt, and as such it’s a unique opportunity to have an enormous impact on creating a more secure and privacy-respecting Web.
 
-Physical infrastructure includes servers, storage, switches, firewalls, and HSMs deployed across two highly secure data centers. While the majority of our infrastructure runs on our own hardware, we do use external cloud and CDN providers for some peripheral systems. We use open source software (e.g. Linux, SaltStack) extensively and prefer it when it can get the job done. The [core CA application software](https://github.com/letsencrypt/boulder) that your team will be responsible for deploying is open source and largely written in-house by our software development team.
+Our physical infrastructure includes servers, storage, switches, firewalls, and HSMs deployed across two highly secure data centers. While the majority of our infrastructure runs on our own hardware, we do use external cloud and CDN providers for some peripheral systems. We use open source software (e.g. Linux, SaltStack) extensively and prefer it when it can get the job done. The [core CA application software](https://github.com/letsencrypt/boulder) that your team will be responsible for deploying is open source and largely written in-house by our software development team.
 
 Automation is central to everything you and your team will build and maintain. You will automate operations extensively for the sake of security, scalability, correctness, compliance, and financial efficiency. You will make sure that when something does need to be done manually, it can be done in a safe and efficient manner.
 
