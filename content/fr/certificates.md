@@ -75,7 +75,7 @@ signer ces réponses. Une copie de ce certificat est automatiquement incluse dan
 ces réponses OCSP, donc les abonnés n'ont pas besoin de faire quoi que ce soit avec. C'est
 inclus ici uniquement à titre informatif.
 
-* [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
+* [ISRG Root OCSP X1 (Signé par ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
 # Certificate Transparency
 
