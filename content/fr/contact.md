@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contacts
 slug: contact
 top_graphic: 1
 menu:
