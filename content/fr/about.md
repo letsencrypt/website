@@ -11,7 +11,7 @@ menu:
 
 Let's Encrypt est une autorité de certification (AC ou CA pour Certificate Authority en anglais) gratuite, automatisée et ouverte, exploitée pour le bénéfice du public. C'est un service fourni par [Internet Security Research Group (ISRG)](/fr/isrg/).
 
-Nous donnons aux gens les certificats numériques dont ils ont besoin pour activer HTTPS (SSL/TLS) pour les sites Web, gratuitement, de la manière la facile à utiliser possible. Nous faisons cela parce que nous voulons créer un Web plus sûr et plus respectueux de la vie privée.
+Nous donnons aux gens les certificats numériques dont ils ont besoin pour activer HTTPS (SSL/TLS) pour les sites Web, gratuitement, de la manière la plus intuitive possible. Nous faisons cela parce que nous voulons créer un Web plus sûr et respectueux de la vie privée.
 
 Les principes clés de Let's Encrypt sont les suivants :
 
