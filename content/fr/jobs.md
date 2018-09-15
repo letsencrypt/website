@@ -1,6 +1,6 @@
 ---
-title: Jobs at Let's Encrypt
-linkTitle: Jobs
+title: Emplois à Let's Encrypt
+linkTitle: Emplois
 slug: jobs
 top_graphic: 4
 menu:
