@@ -1,9 +1,9 @@
 ---
-title: Let's Encrypt statistiques
+title: Statistiques sur Let's Encrypt
 linkTitle: Statistiques
 slug: stats
 top_graphic: 3
-excerpt: Let's Encrypt statistiques.
+excerpt: Statistiques sur Let's Encrypt.
 menu:
   main:
     weight: 70
