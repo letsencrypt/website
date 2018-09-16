@@ -1,20 +1,16 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 총괄 책임자
 date: 2015-08-13T00:00:00Z
-excerpt: Let’s Encrypt's success depends on the support of a strong community. Nowhere
-  is this more true than when it comes to subscriber support. Today we’re happy to
-  announce Let’s Encrypt Community Support, a place for our community to both give
-  and receive support.
-title: Let's Encrypt Community Support
+excerpt: Let’s Encrypt의 성공은 강력한 커뮤니티에 기반합니다. 구독자들의 지원보다 더 진실된 것은 없습니다. 오늘 기쁜 마음으로 Let’s Encrypt 커뮤니티 지원을 발표합니다. 서로 주고 받으며 도와주는 커뮤니티만을 위한 공간입니다.
+title: Let's Encrypt 커뮤니티 지원
 slug: lets-encrypt-community-support
 ---
 
-Let’s Encrypt's success depends on a strong community. Nowhere is this more true than when it comes to subscriber support. Today we’re happy to announce [Let’s Encrypt Community Support](https://community.letsencrypt.org/), a place for our community to both give and receive support.
+Let’s Encrypt의 성공은 강력한 커뮤니티에 기반합니다. 구독자들의 지원보다 더 진실된 것은 없습니다. 오늘 기쁜 마음으로 [Let’s Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)을 발표합니다. 서로 주고 받으며 도와주는 커뮤니티만을 위한 공간입니다.
 
-We’re a small organization hoping to help a large portion of the Web move to HTTPS. Many people are going to have questions during the transition, and we need to be able to provide answers. Hiring an army of support staff is out of the question for us, but we’re not convinced that would be the way to go anyway, even if we could afford it.
+작은 조직이지만 웹의 많은 부분이 HTTPS로 이동하는데 도움 주길 희망합니다. 많은 사람들이 변환 기간에 대해 의구심을 가질 것이며, 대답을 제공할 필요가 있습니다.
+보조 직원으로 군인을 채용하는 것에 대한 질의는 범위를 벗어나지만, 가야할 길이라 생각되는 것에 대해서는 타협하지 않습니다. 여유가 있더라도 말입니다.
 
-[Clay Shirky once said](https://www.youtube.com/watch?v=Xe1TZaElTAs) that you’ll make more accurate predictions about the quality and longevity of services in a Web-driven world “if you ask yourself not what’s the business model, but rather do the people who like it take care of each other?”
+[Clay Shirky](https://www.youtube.com/watch?v=Xe1TZaElTAs)는 “만약 여러분이 스스로에게 비즈니스 모델에 대해 묻지 않는다면, 그런 고민을 좋아하는 사람들에게 대신 하도 하는 방식으로 서로 돕는 것이 낫지 않을까요?” 라면서 여러분이 웹 기반 세상에서 서비스 품질과 수명을 좀 더 정확하게 예측하게 될 것이라고 언급한 바 있습니다. 직원의 수가 적정 수준의 지원을 보장하는 것이 아니고, 사용자 기반의 강력한 커뮤니티가 지원을 제공할 수 있습니다. 사용자들이 서로를 보듬어 주는데 동참하기를 진심으로 바랍니다.
 
-No amount of staffing could provide the level of support that a strong community of fellow users is capable of providing. We sincerely hope that our users will join us in taking care of each other.
-
-We’d like to thank [Discourse](https://www.discourse.org/) for providing the Let’s Encrypt Community Support platform and hosting.
+Let’s Encrypt 커뮤니티 지원 플랫폼과 호스팅을 제공해 주고 있는 [Discourse](https://www.discourse.org/)에게 감사를 표하고 싶습니다.
