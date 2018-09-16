@@ -1,13 +1,11 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 총괄 책임자
 date: 2015-07-01T00:00:00Z
-excerpt: The trust of our users is ISRG’s most critical asset. Transparency regarding
-  legal requests is an important part of making sure our users can trust us, and to
-  that end we will be publishing reports twice annually.
-title: ISRG Legal Transparency Report, January 2015 - June 2015
+excerpt: ISRG의 핵심 자산은 사용자들의 신뢰입니다. 법률에 관한 투명성 요청은 신뢰할 수 있는 곳이라는 확신을 사용자들에게 주는 데 있어 중요한 부분이며, 목적 달성을 위해 매년 2회씩 보고서를 발행할 것입니다.
+title: ISRG 법적 투명성 보고서, 2015년 1월~6월
 slug: legal-transparency-report
 ---
 
-The trust of our users is ISRG’s most critical asset. Transparency regarding legal requests is an important part of making sure our users can trust us, and to that end we will be publishing reports twice annually. With the exception of this first report, reports will be published three months after the period covered in order to allow us time to research all requests and orders received during the period.
+ISRG의 핵심 자산은 사용자들의 신뢰입니다. 법률에 관한 투명성 요청은 신뢰할 수 있는 곳이라는 확신을 사용자들에게 주는 데 있어 중요한 부분이며, 목적 달성을 위해 매년 2회씩 보고서를 발행할 것입니다. 이번 첫 보고서에서 예외를 둔 부분은, 접수된 요청과 주문들을 조사하는데 시간이 소요되기 때문에 보고서가 다루는 기간의 첫 3달 이후 내용만 발간될 것이라는 점입니다.
 
-[Download Legal Transparency Report, January 2015 - June 2015](/documents/ISRG-Legal-Transparency-Report-July-1-2015.pdf)
+[법적 투명성 보고서 다운로드, 2015년 1월 - 6월](/documents/ISRG-Legal-Transparency-Report-July-1-2015.pdf)

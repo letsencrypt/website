@@ -1,19 +1,18 @@
 ---
-author: Josh Aas, ISRG Executive Director
+author: Josh Aas, ISRG 총괄 책임자
 date: 2015-06-16T00:00:00Z
-excerpt: Let's Encrypt has reached a point where we're ready to announce our launch
-  schedule.
-title: Let's Encrypt Launch Schedule
+excerpt: Let’s Encrypt의 공개 일정 발표 준비 시점에 도달했습니다.
+title: Let's Encrypt 공개 일정
 slug: lets-encrypt-launch-schedule
 ---
 
-Let's Encrypt has reached a point where we're ready to announce our launch schedule.
+Let’s Encrypt의 공개 일정 발표 준비 시점에 도달했습니다.
 
-* First certificate: Week of July 27, 2015
-* General availability: Week of September 14, 2015
+* 첫 인증서: 2015년 7월 27일 주중
+* 일반 공개: 2015년 9월 14일 주중
 
-We will issue the first end entity certificates under our root under tightly controlled circumstances. No cross-signature will be in place yet, so the certificates will not validate unless <a href="https://letsencrypt.org/certificates/">our root</a> is installed in client software. As we approach general availability we will issue more and more certificates, but only for a pre-approved set of domains. This limited issuance period will give us time to further ensure that our systems are secure, compliant, and scalable.
+단단히 통제된 상황 하에 루트 하단에 첫 번째 end entity 인증서를 발행할 것 입니다. 교차 서명이 아직 준비되지 않았기에, <a href="https://letsencrypt.org/certificates/">루트</a>가 클라이언트 소프트웨어에 설치되기 전까지는 인증서 유효성이 검증되지 않을 것 입니다. 일반 공개가 가까워 질수록 더욱 더 많은 인증서를 발행할 것이지만, 이는 사전 승인된 도메인들만 대상으로 합니다. 이러한 제한된 발행 기간은 시스템이 안전하면서 문제가 없다는 사실을 확인하는데 시간을 줄 것입니다.
 
-When it's time for general availability, we will open up our systems to certificate requests for any domain. A cross-signature from <a href="https://identrust.com/">IdenTrust</a> will be in place for general availability, so that our certificates will validate automatically for the vast majority of consumers.
+일반 공개 시점이 되면 어떠한 도메인이던지 시스템에 인증을 요청할 수 있도록 할 것 입니다. A cross-signature from <a href="https://identrust.com/">IdenTrust</a>의 교차 서명도 인증서들이 다수의 소비자들을 자동적으로 검증할 수 있도록 일반 공개 시점에 준비될 것입니다.
 
-Engineering and policy development for Let's Encrypt began in earnest in mid-October of 2014. If we stay true to the schedule outlined above we will have built an innovative CA, capable of operating at Internet scale and without cutting corners, in just eleven months. That's quite a feat, given all that's involved, and a testament to the skill and dedication of our staff, partners, sponsors, and contributors.
+Let’s Encrypt를 위한 엔지니어링과 정책 개발은 2014년 10월 중순부터 진지하게 시작되었습니다. 만약 상기 언급된 일정 내, 당초 의도 대로만 된다면 겨우 12개월 만에 인터넷 규모에서 운영될 수 있는 어떠한 요령도 없는 혁신적인 인증 기관을 구축하게 될 것입니다. 주어진 모든 관련된 것들을 포함하여, 직원, 파트너, 스폰서, 기여자들의 기술과 헌신에 대한 신념으로 이룩될 놀라운 업적입니다.
