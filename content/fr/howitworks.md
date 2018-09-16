@@ -7,7 +7,7 @@ aliases : [/howitworks]
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
 à partir d'une autorité de certification (AC ou CA pour Certificate Authority en anglais). Let's Encrypt est une autorité de certification. Afin d'obtenir un certificat pour le domaine de votre site Web avec Let's Encrypt, vous devez démontrer
-que vous contrôlez domaine. Avec Let's Encrypt, vous faites cela en utilisant un logiciel qui utilise
+que vous contrôlez ce domaine. Avec Let's Encrypt, vous faites cela en utilisant un logiciel qui utilise
 le [protocole ACME](https://ietf-wg-acme.github.io/acme/), qui s'exécute généralement
 chez votre hébergeur.
 
@@ -30,7 +30,7 @@ Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer autre c
 [beaucoup plus de clients ACME à choisir](/docs/client-options/). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
 
 Si vous expérimentez avec différents clients ACME, utilisez notre
-[environnement de développement](/docs/staging-environment/) pour éviter d'atteindre
+[environnement de développement](/docs/staging-environment/) pour éviter d'atteindre les
 [limites d'accès](/docs/rate-limits/).
 
 [Certbot]: https://certbot.eff.org/ "Certbot"
@@ -40,11 +40,11 @@ Si vous expérimentez avec différents clients ACME, utilisez notre
 La meilleure façon d'utiliser Let's Encrypt sans accès shell est d'utiliser le support intégré
 de votre fournisseur d'hébergement. Si votre hébergeur propose Let's Encrypt,
 ils peuvent demander un certificat gratuitement en votre nom, l'installer et
-le gardez à jour automatiquement. Pour certains hébergeurs, ceci est un
+le garder à jour automatiquement. Pour certains hébergeurs, ceci est un
 paramètre de configuration que vous devez activer. D'autres fournisseurs génèrent et installent 
 automatiquement les certificats pour tous leurs clients.
 
-[Consultez notre liste d'hébergeur](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
+[Consulter notre liste d'hébergeur](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
 pour voir si le vôtre est dessus. Si oui, suivez leur documentation pour configurer votre
 certificat Let's Encrypt.
 
