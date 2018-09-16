@@ -9,7 +9,7 @@ menu:
 ---
 ISRG est une société d'utilité publique de Californie, et est reconnue par l'IRS comme une organisation exonérée d'impôt en vertu de l'article 501\(c\)(3) de l'Internal Revenue Code. La mission de l'ISRG est de réduire les obstacles financiers, technologiques et éducatifs pour sécuriser les communications sur Internet.
 
-ISRG est fièrement parrainé par un groupe diversifié d'organisations, des organismes sans but lucratif aux entreprises du classement Fortune 100. Nous croyons que nous pouvons donner l'exemple sur comment tous ceux qui s'intéressent à un Internet plus sécurisé puissent travailler ensemble pour fournir une infrastructure numérique au profit du public. Voir [cette page](/fr/sponsors/) pour plus d'informations sur nos sponsors.
+ISRG est fièrement parrainé par un groupe diversifié d'organisations, des organismes sans but lucratif aux entreprises du classement Fortune 100. Nous croyons que nous pouvons donner l'exemple pour que ceux qui s'intéressent à un Internet plus sécurisé puissent travailler ensemble pour fournir une infrastructure numérique au profit du public. Voir [cette page](/fr/sponsors/) pour plus d'informations sur nos sponsors.
 
 Nos membres du conseil actuels sont:
 
