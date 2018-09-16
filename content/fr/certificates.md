@@ -47,8 +47,8 @@ La clé privée de cette paire génère la signature pour tous les certificats f
 Notre intermédiaire est signé par la racine ISRG X1. Cependant, puisque nous sommes une toute nouvelle
 autorité de certification, ISRG Root X1 n'est pas encore approuvé dans la plupart des navigateurs.
 Afin d'être reconnu immédiatement, notre intermédiaire est également signé par
-une autre autorité de certification, IdenTrust, dont la racine est déjà approuvée par
-principaux navigateurs. Plus précisément, IdenTrust a signé notre intermédiaire en utilisant leur certificat racine
+une autre autorité de certification, IdenTrust, dont la racine est déjà approuvée par 
+les principaux navigateurs. Plus précisément, IdenTrust a signé notre intermédiaire en utilisant leur certificat racine
 [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
 
 Cela signifie qu'il y a deux certificats disponibles qui représentent tous deux notre
@@ -60,8 +60,8 @@ certificat final, mais aussi une liste d'intermédiaires pour aider les navigate
 que le certificat d'entité finale possède une chaîne de confiance menant à une racine approuvée
 certificat. Presque tous les opérateurs de serveurs choisiront de servir une chaîne contenant
 le certificat intermédiaire avec le sujet "Let's Encrypt Authority X3" et
-ayant pour émetteur "DST Root CA X3." Le logiciel officiel Let's Encrypt rendra
-configuration transparente.
+ayant pour émetteur "DST Root CA X3." Le logiciel officiel de Let's Encrypt rendra
+la configuration transparente.
 
 
 L'image suivante explique visuellement les relations entre nos certificats :
@@ -72,8 +72,8 @@ L'image suivante explique visuellement les relations entre nos certificats :
 
 Ce certificat est utilisé pour signer les réponses OCSP pour les intermédiaires de l'autorité Let's Encrypt, de sorte que nous n'avons pas besoin d'avoir la clé racine en ligne afin de
 signer ces réponses. Une copie de ce certificat est automatiquement incluse dans
-ces réponses OCSP, donc les abonnés n'ont pas besoin de faire quoi que ce soit avec. C'est
-inclus ici uniquement à titre informatif.
+ces réponses OCSP, donc les abonnés n'ont pas besoin de faire quoi que ce soit avec.
+Ceci est inclus uniquement à titre informatif.
 
 * [ISRG Root OCSP X1 (Signé par ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
