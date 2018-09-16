@@ -14,7 +14,7 @@ Il y a deux étapes à ce processus. Tout d'abord, l'agent prouve à l'autorité
 
 Let's&nbsp;Encrypt identifie l'administrateur du serveur par clé publique. La première fois que le logiciel de l'agent interagit avec Let's&nbsp;Encrypt, il génère une nouvelle paire de clés et prouve à Let's&nbsp;Encrypt que le serveur contrôle un ou plusieurs domaines. Ceci est similaire au processus de création d'un compte et d'ajout de domaines à ce compte des autorités de certifications traditionnelles.
 
-Pour lancer le processus, l'agent demande à l'AC Let's Encrypt ce qu'elle doit faire pour prouver qu'elle contrôle `example.com`. L'AC Let's Encrypt examinera le nom de domaine demandé et émettra un ou plusieurs ensembles de défis. Ce sont différentes manières que l'agent peut prouver le contrôle du domaine. Par exemple, l'autorité de certification peut donner à l'agent le choix entre:
+Pour lancer le processus, l'agent demande à l'AC Let's Encrypt ce qu'elle doit faire pour prouver qu'elle contrôle `example.com`. L'AC Let's Encrypt examinera le nom de domaine demandé et émettra un ou plusieurs ensembles de défis. Ce sont différentes manières que l'agent peut utiliser pour prouver le contrôle du domaine. Par exemple, l'autorité de certification peut donner à l'agent le choix entre:
 
 * Provisionner un enregistrement DNS sous `example.com`, ou
 * Provisionner une ressource HTTP sous l'URI .well-known sur `https://example.com/`
@@ -35,7 +35,7 @@ Ensuite, le travail de l'AC consiste à vérifier que les défis ont été relev
      src="/images/howitworks_authorization.png"/>
 </div>
 
-Si la signature sur le `nonce` est valide et que les défis sont validés, l'agent identifié par la clé publique est autorisé à effectuer la gestion des certificats pour `example.com`. Nous appelons la paire de clés l'agent a utilisé une "paire de clés autorisée" pour `example.com`.
+Si la signature sur le `nonce` est valide et que les défis sont validés, l'agent identifié par la clé publique est autorisé à effectuer la gestion des certificats pour `example.com`. Nous appelons la paire de clés que l'agent a utilisé une "paire de clés autorisée" pour `example.com`.
 
 ## Délivrance et révocation du certificat
 
