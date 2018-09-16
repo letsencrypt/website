@@ -41,7 +41,7 @@ Si la signature sur le `nonce` est valide et que les défis sont validés, l'age
 
 Une fois que l'agent a une paire de clés autorisée, la demande, le renouvellement et la révocation des certificats est simple : il suffit d'envoyer des messages de gestion de certificat et de les signer avec la paire de clés autorisée.
 
-Pour obtenir un certificat pour le domaine, l'agent construit une PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) qui demande à l'AC Let's&nbsp;Encrypt de délivrer un certificat pour `exemple.com` avec une clé publique spécifiée. Comme d'habitude, le CSR inclut une signature par la clé privée correspondant à la clé publique dans le CSR. L'agent signe également la totalité de la demande de signature de certificat avec la clé autorisée pour `example.com`, de sorte que l'AC Let's&nbsp;Encrypt sait qu'elle est autorisée.
+Pour obtenir un certificat pour le domaine, l'agent construit une PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) qui demande à l'AC Let's&nbsp;Encrypt de délivrer un certificat pour `example.com` avec une clé publique spécifiée. Comme d'habitude, le CSR inclut une signature par la clé privée correspondant à la clé publique dans le CSR. L'agent signe également la totalité de la demande de signature de certificat avec la clé autorisée pour `example.com`, de sorte que l'AC Let's&nbsp;Encrypt sait qu'elle est autorisée.
 
 Lorsque l'AC Let's&nbsp;Encrypt reçoit la demande, elle vérifie les deux signatures. Si tout semble correct, il délivre un certificat pour `example.com` avec la clé publique du CSR et le renvoie à l'agent.
 
