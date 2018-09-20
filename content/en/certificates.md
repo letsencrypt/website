@@ -63,7 +63,7 @@ that the end-entity certificate has a trust chain leading to a trusted root
 certificate. Almost all server operators will choose to serve a chain including
 the intermediate certificate with Subject “Let’s Encrypt Authority X3” and
 Issuer “DST Root CA X3.” The recommended Let's Encrypt software,
-[https://certbot.org](Certbot), will make this configuration seamlessly.
+[Certbot](https://certbot.org), will make this configuration seamlessly.
 
 The following picture explains the relationships between our certificates
 visually:
