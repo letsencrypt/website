@@ -60,7 +60,7 @@ certificat final, mais aussi une liste d'intermédiaires pour aider les navigate
 que le certificat d'entité finale possède une chaîne de confiance menant à une racine approuvée
 certificat. Presque tous les opérateurs de serveurs choisiront de servir une chaîne contenant
 le certificat intermédiaire avec le sujet "Let's Encrypt Authority X3" et
-ayant pour émetteur "DST Root CA X3." Le logiciel officiel de Let's Encrypt rendra
+ayant pour émetteur "DST Root CA X3." Le logiciel recommandé par Let's Encrypt, [Certbot](https://certbot.org), rendra
 la configuration transparente.
 
 
