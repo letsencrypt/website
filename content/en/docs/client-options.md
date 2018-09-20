@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-05-25
+lastmod: 2018-09-20
 ---
 
 {{< lastmod >}}
@@ -59,6 +59,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [PJAC](https://github.com/porunov/acme_client) (PJAC >= 3.0.0)
 - [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
+- [FreeSSL.tech in-browser ACME V2 client](https://freessl.tech) (compatible with the live api)
 
 ## Bash
 
@@ -73,6 +74,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Certificate Automation](https://www.certificateautomation.com/) *
 - [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
 - [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
+- [FreeSSL.tech in-browser ACME V2 client](https://freessl.tech) (Fully in-browser process, inc. CSR generation)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
