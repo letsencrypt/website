@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-05-25
+lastmod: 2018-09-20
 ---
 
 {{< lastmod >}}
@@ -12,14 +12,18 @@ Let's Encrypt uses the ACME protocol to verify that you control a given domain
 name and to issue you a certificate. To get a Let's Encrypt certificate, you'll
 need to choose a piece of ACME client software to use.
 
+The ACME clients below are offered by third parties. Let's Encrypt does not control or review
+third party clients and cannot make any guarantees about their safety or reliability.
+
+Some in-browser ACME clients are available, but we do not list them here because
+they encourage a manual renewal workflow that results in a poor user experience
+and increases the risk of missed renewals.
+
 # Recommended: Certbot
 
 We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
 
 If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
-
-The ACME clients below are offered by third parties. Let's Encrypt does not control or review
-third party clients and cannot make any guarantees about their safety or reliability.
 
 ## ACME v2 Compatible Clients
 
@@ -30,7 +34,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
 - [acme.sh](https://github.com/Neilpang/acme.sh)
 - [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
-- [EasyHTTPs](https://easy.zhetao.com) * (Automatically select v2 or v1)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [LEClient PHP library](https://github.com/yourivw/LEClient)
 - [dehydrated](https://github.com/lukas2511/dehydrated)
@@ -42,16 +45,13 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [itr-acme-client PHP library](https://github.com/ITronic/itr-acme-client)
 - [acmebot](https://github.com/plinss/acmebot)
 - [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
-- [SSL for free](https://www.sslforfree.com/)
 - [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
-- [ZeroSSL](https://ZeroSSL.com/)
 - [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
-- [Get HTTPS for free](https://gethttpsforfree.com)
 - [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
 - [Certes](https://github.com/fszlin/certes)
 - [Ansible acme_certificate module](https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html) (ansible >= 2.6)
@@ -65,14 +65,6 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh)
 - [acme.sh](https://github.com/Neilpang/acme.sh) (Compatible to bash, dash and sh)
 - [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
-
-## Browser
-
-- [Get HTTPS for free](https://gethttpsforfree.com)
-- [ZeroSSL](https://ZeroSSL.com) (Fully in-browser process, inc. CSR generation)
-- [Certificate Automation](https://www.certificateautomation.com/) *
-- [SSL for free](https://www.sslforfree.com/) (Fully in-browser process, inc. CSR generation)
-- [EasyHTTPs](https://easy.zhetao.com/) * (Simplified Chinese and English, Fully in-browser process, inc. CSR generation)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
@@ -132,7 +124,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Perl
 
-- [le.pl](https://github.com/do-know/Crypt-LE) (aka [ZeroSSL](https://ZeroSSL.com/))
+- [le.pl](https://github.com/do-know/Crypt-LE
 - [Net::ACME](https://metacpan.org/pod/Net::ACME)
 - [Protocol::ACME](https://metacpan.org/pod/Protocol::ACME)
 
@@ -254,5 +246,13 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
 - [ruxy](https://ruxyserver.com)
 
+# Adding your client/project
 
-Note: * = Service may require payment.
+If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `content/en/docs/client-options.md` page.
+
+Before submitting a pull request please make sure:
+
+1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
+1. Your client is not browser-based and supports automatic renewals.
+1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "ACME v2 Compatible Clients" section if appropriate!).
+1. Your commit updates the `lastmod` date stamp at the top of `client-options.md`.
