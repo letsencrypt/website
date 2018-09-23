@@ -59,6 +59,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [PJAC](https://github.com/porunov/acme_client) (PJAC >= 3.0.0)
 - [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
+- [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
 
 ## Bash
 
@@ -174,6 +175,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [AutoACME](https://www.autoacme.net/) (.NET)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME) (PowerShell)
 - [Certes](https://github.com/fszlin/certes) (.NET)
+. [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
 
 # Libraries
 
