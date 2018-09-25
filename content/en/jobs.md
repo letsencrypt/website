@@ -15,7 +15,7 @@ Let's Encrypt is committed making a more secure Web accessible to all of its use
 
 Please submit resumes to: [careers@letsencrypt.org](mailto:careers@letsencrypt.org)
 
-# Head of Technical Operations
+# Head of Site Reliabilty Engineering
 
 ## What You Will Do
 
@@ -37,7 +37,7 @@ You will need to travel approximately six times per year. There can be more at t
 
 ## Skills You Will Need
 
-You will need to be capable of performing the majority of the technical tasks that you will ask your team to perform, though this will not be your daily work. This means you must have strong experience with systems and network administration. You can develop domain-specific knowledge (e.g. PKI) and learn to use the tools we use (e.g. SaltStack, HSMs) on the job. Specific prior experience is not required, though we will expect you to learn quickly. The first thing you will do when you join is train as a front-line operations staff member (i.e. systems administrator) so you understand how our systems work and are capable of directly contributing yourself if necessary.
+You will need to be capable of performing the majority of the technical tasks that you will ask your team to perform, though this will not be your daily work. This means you must have strong experience with systems and network administration. You can develop domain-specific knowledge (e.g. PKI) and learn to use the tools we use (e.g. SaltStack, HSMs) on the job. Specific prior experience is not required, though we will expect you to learn quickly. The first thing you will do when you join is train as a front-line site reliability engineer so you understand how our systems work and are capable of directly contributing yourself if necessary.
 
 Prioritization and communication skills are the keys to effectively managing the team. You will need to:
 
