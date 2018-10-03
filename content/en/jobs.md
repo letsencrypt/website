@@ -15,11 +15,11 @@ Let's Encrypt is committed making a more secure Web accessible to all of its use
 
 Please submit resumes to: [careers@letsencrypt.org](mailto:careers@letsencrypt.org)
 
-# Head of Site Reliabilty Engineering
+# Head of Site Reliability Engineering
 
 ## What You Will Do
 
-You will lead a relatively experienced six person team responsible for maintaining and evolving the operational infrastructure for the Let’s Encrypt certificate authority. This includes the physical infrastructure, software deployments, monitoring and alerting, and related policies and procedures that provide secure and reliable service to more than 130 million websites around the world. We expect this number to grow rapidly.
+You will lead a relatively experienced six-person team responsible for maintaining and evolving the operational infrastructure for the Let’s Encrypt certificate authority. This includes the physical infrastructure, software deployments, monitoring and alerting, and related policies and procedures that provide secure and reliable service to more than 130 million websites around the world. We expect this number to grow rapidly.
 
 This is one of the most critical technical positions at Let’s Encrypt, and as such it’s a unique opportunity to have an enormous impact on creating a more secure and privacy-respecting Web.
 
@@ -37,7 +37,7 @@ You will need to travel approximately six times per year. There can be more at t
 
 ## Skills You Will Need
 
-You will need to be capable of performing the majority of the technical tasks that you will ask your team to perform, though this will not be your daily work. This means you must have strong experience with systems and network administration. You can develop domain-specific knowledge (e.g. PKI) and learn to use the tools we use (e.g. SaltStack, HSMs) on the job. Specific prior experience is not required, though we will expect you to learn quickly. The first thing you will do when you join is train as a front-line site reliability engineer so you understand how our systems work and are capable of directly contributing yourself if necessary.
+You will need to be capable of performing the majority of the technical tasks that you will ask your team to perform, though this will not be your daily work. This means you must have strong experience with systems and network administration. You can develop domain-specific knowledge (e.g. PKI) and learn to use the tools we use (e.g. SaltStack, HSMs) on the job. Specific prior experience is not required, though we will expect you to learn quickly. The first thing you will do when you join is train as a front-line site reliability engineer, so you understand how our systems work and are capable of directly contributing yourself if necessary.
 
 Prioritization and communication skills are the keys to effectively managing the team. You will need to:
 
@@ -46,7 +46,7 @@ Prioritization and communication skills are the keys to effectively managing the
 * Be comfortable being realistic and saying no.
 * Be an effective personal communicator as well as able to design systems for effective communication.
 
-Being organized is also critical. You will be responsible for making sure that recurring activities happen when they are supposed to happen, and making sure things do not “slip through the cracks.” You should be someone who has meticulously developed and consistently maintains a system for staying organized because you know your memory is not good enough.
+Being organized is also critical. You will be responsible for making sure that recurring activities happen when they are supposed to happen and making sure things do not “slip through the cracks.” You should be someone who has meticulously developed and consistently maintains a system for staying organized because you know your memory is not good enough.
 
 ## Location, Salary and Benefits
 
