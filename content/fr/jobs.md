@@ -11,4 +11,4 @@ menu:
 
 Toutes les postes que nous proposons sont en télétravail et nous ne pouvons employer qu'aux États-Unis et au Canada.
 
-Nous n'avons aucun poste disponible pour le moment.
+[Voir les offres sur la page en anglais.](/jobs/)
