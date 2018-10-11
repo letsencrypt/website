@@ -36,3 +36,4 @@ Notre CCT se compose d'experts techniques des principales organisations de souti
 * <strong>Stephen Kent</strong> (Indépendant)
 * <strong>Karen O'Donoghue</strong> (Internet Society)
 * <strong>Ivan Ristic</strong> (Indépendant)
+* <strong>Yueting Lee</strong> (Facebook)
