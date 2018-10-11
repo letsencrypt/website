@@ -48,6 +48,14 @@ other = "See all Documentation"
 [blog_feed]
 other = "Let's Encrypt Blog Feed"
 
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[silver]
+other = "Silver"
 
 [languages]
 other = "Languages"

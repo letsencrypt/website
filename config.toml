@@ -1,8 +1,5 @@
 baseURL = "https://letsencrypt.org/"
-languageCode= "en-us"
 
-
-contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
@@ -33,7 +30,9 @@ enableMissingTranslationPlaceholders = true
 [languages]
 [languages.en]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/en"
 languageName ="English"
+languageCode= "en-us"
 # Weight used for sorting.
 weight = 1
 description = """
@@ -61,10 +60,44 @@ description = """
  parent = "about"
  url = "https://letsencrypt.status.io/"
 
+[languages.fr]
+title = "Let's Encrypt - Certificats SSL/TLS gratuits"
+languageName = "Français"
+contentDir = "content/fr"
+languageCode= "fr-fr"
+# Weight used for sorting.
+weight = 1
+description = """
+  Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
+  apporté par l'Internet Security Research Group (ISRG), organisme à but non lucratif.
+"""
+[[languages.fr.menu.main]]
+ name = "Obtenir de l'aide"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.fr.menu.main]]
+ name = "Faire un don"
+ weight = 30
+ identifier = "donate"
+ url = "/fr/donate/"
+ [[languages.fr.menu.main]]
+ name = "À propos de nous"
+ weight = 40
+ identifier = "about"
+ url = "/fr/about/"
+ [[languages.fr.menu.main]]
+ name = "État du service"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+
 #[languages.no]
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
 #description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
 #languageName ="Norsk"
+#contentDir = "content/no"
+#languageCode= "no"
 #weight = 2
 #[[languages.no.menu.main]]
 # name = "Få hjelp"
@@ -74,12 +107,12 @@ description = """
 # name = "Doner"
 # weight = 30
 # identifier = "donate"
-# url = "/donate/"
+# url = "/no/donate/"
 # [[languages.no.menu.main]]
 # name = "Om oss"
 # weight = 40
 # identifier = "about"
-# url = "/about/"
+# url = "/no/about/"
 # [[languages.no.menu.main]]
 # name = "Service Status"
 # weight = 60
