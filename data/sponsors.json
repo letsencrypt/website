@@ -63,6 +63,7 @@
       {"name":"Keenetic","url":"https://keenetic.com/","image":"keenetic-logo.png"},
       {"name":"Rainway","url":"https://rainway.io/","image":"rainway-logo.png"},
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
-      {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"}
+      {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
+      {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"}
 ]
 }
