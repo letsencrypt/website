@@ -37,3 +37,4 @@ Our TAB consists of technical experts from major supporting organizations, as we
 * <strong>Stephen Kent</strong> (Independent)
 * <strong>Karen O'Donoghue</strong> (Internet Society)
 * <strong>Ivan Ristic</strong> (Independent)
+* <strong>Yueting Lee</strong> (Facebook)
