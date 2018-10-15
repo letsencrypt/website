@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-09-20
+lastmod: 2018-10-11
 ---
 
 {{< lastmod >}}
@@ -60,6 +60,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
+- [FreeSSL.tech Auto](https://freessl.tech)
 
 ## Bash
 
@@ -136,6 +137,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [AcmePHP](https://github.com/acmephp/acmephp)
 - [LE Manager](https://github.com/analogic/lemanager)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
+- [FreeSSL.tech Auto](https://freessl.tech)
 
 ## Python
 
