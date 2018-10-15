@@ -60,7 +60,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Nginx ACME V1/V2 client](https://github.com/kshcherban/acme-nginx)
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
-- [FreeSSL.tech Auto](https://freessl.tech) (It works with Live ACME V2 API. Auto-installs SSL cert in shared hosting cPanel. No root access required.)
+- [FreeSSL.tech Auto](https://freessl.tech)
 
 ## Bash
 
@@ -137,7 +137,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [AcmePHP](https://github.com/acmephp/acmephp)
 - [LE Manager](https://github.com/analogic/lemanager)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
-- [FreeSSL.tech Auto](https://freessl.tech) (Auto-installs SSL cert in shared hosting cPanel. No root access required. ACME V1 & V2)
+- [FreeSSL.tech Auto](https://freessl.tech)
 
 ## Python
 
