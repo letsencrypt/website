@@ -5,7 +5,7 @@
       <a href="https://collabprojects.linuxfoundation.org/" target="_blank"><img src="/images/linux-foundation.png" alt="Linux Foundation Collaborative Projects" /></a>
     </div>
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}"><img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt"></a>
-    
+
     <span id="menuIcon">
       <svg viewBox="0 0 18 15">
         <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
@@ -18,7 +18,7 @@
         <ul class="pure-menu-list">
           {{ range .Site.Menus.main }}
           <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
-            <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="pure-menu-link" tabindex="0">{{ .Name }}</a>
             {{ if .HasChildren }}
             <ul class="pure-menu-children">
               {{ range .Children }}
