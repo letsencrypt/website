@@ -15,7 +15,7 @@ Let's Encrypt is committed making a more secure Web accessible to all of its use
 
 Please submit resumes to: [careers@letsencrypt.org](mailto:careers@letsencrypt.org)
 
-# Head of Site Reliability Engineering
+# Director of Site Reliability Engineering
 
 ## What You Will Do
 
