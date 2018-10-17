@@ -1,0 +1,61 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt是一个<span>免费</span>,<span>自动化</span>,和 <span>公开</span> 的证书颁发机构."
+
+[home_hero_getting_started]
+other = "Get Started"
+
+[home_hero_donate]
+other = "捐助"
+
+[home_major_sponsors]
+other = "主要赞助商和捐助者"
+
+[home_from_our_blog]
+other = "来自我们的博客"
+
+[read_more]
+other = "阅读更多"
+
+[subscribe_rss]
+other = "从RSS<a href=\"{{ .Permalink }}\">订阅</a>"
+
+[footer_support_us]
+other = "支持更安全，更尊重隐私的互联网."
+
+[footer_donate]
+other = "捐款"
+
+[footer_policies]
+other = """
+View our <a href="/privacy/">隐私政策</a>.<br>
+View our <a href="/trademarks/">商标政策</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation是The Linux Foundation的注册商标。 Linux是Linus Torvalds的注册商标."
+
+[header_skip_nav]
+other = "跳过导航链接"
+
+[last_updated]
+other = "最后一次更新时间:"
+
+[see_all_doc]
+other = "查看所有文档"
+
+[blog_feed]
+other = "Let's Encrypt博客Feed"
+
+[platinum]
+other = "铂"
+
+[gold]
+other = "金"
+
+[silver]
+other = "银"
+
+[languages]
+other = "语言"
