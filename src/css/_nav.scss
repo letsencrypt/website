@@ -19,7 +19,7 @@
             margin-left: 20px;
         }
     }
-    
+
     .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:last-child > a.pure-menu-link {
         padding-right: 0;
     }
@@ -55,10 +55,11 @@ a.pure-menu-link:hover {
     top: 56px;
     left: auto;
     right:0;
-    text-align: right;
+    text-align: left;
     min-width: 146px;
     background-color: #FDFDFD;
 }
+
 .pure-menu-link {
     color: darken($brand-color, 20%);
     &:visited {
@@ -110,7 +111,12 @@ a.pure-menu-link:hover {
         padding-bottom:20px;
     }
 
-    .pure-menu-has-children.isOpen > .pure-menu-link:after {
+    .pure-menu-allow-hover:hover > .pure-menu-children,
+    .pure-menu-active > .pure-menu-children {
+      position: unset;
+    }
+
+    .pure-menu-has-children.pure-menu-active > .pure-menu-link:after {
         content: "\25BE";
     }
 
