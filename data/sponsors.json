@@ -65,6 +65,7 @@
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
       {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
-      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"}
+      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
+      {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"}
 ]
 }
