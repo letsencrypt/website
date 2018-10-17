@@ -4,6 +4,8 @@ slug: glossary
 top_graphic: 1
 ---
 
+## ACME Client
+
 ## Automatic Certificate Management Environment (ACME) {#ACME}
 
 ACME is the protocol implemented by [Let's Encrypt](#LE). Softwares compatibles with that protocol can use it to communicate with Let's Encrypt to asks for a [certificate](#leaf). 
@@ -66,7 +68,7 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate)
 ## Common name (CN) {#CN}
 
 
-## Cross Signing
+## Cross Signing {#cross-signing}
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification)
 
@@ -93,11 +95,21 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/EdDSA)
 
 ## Extended Validation (EV) {#EV}
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
+[Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones.
+
+Sources:
+
+- https://letsencrypt.org/docs/faq/
+- [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
 
 ## IdenTrust
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust)
+IdenTrust is a (Certificate Authority)[#CA]. IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate).
+
+Source:
+
+- https://letsencrypt.org/certificates/
+- [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust)
 
 ## Intermediate certificate {#intermediate}
 
@@ -131,7 +143,12 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Prot
 
 ## Organization Validation (OV) {#OV}
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation)
+[Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones.
+
+Sources:
+
+- https://letsencrypt.org/docs/faq/
+- [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation)
 
 ## Personal Information Exchange Files (.pfx) {#pfx}
 
@@ -147,11 +164,18 @@ Source: [Wikipedia](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9
 
 ## Public Suffix List (PSL) {#PSL}
 
-Source: https://publicsuffix.org/
+Sources:
+
+- https://letsencrypt.org/docs/rate-limits/
+- https://publicsuffix.org/
 
 ## Chiffrement RSA {#RSA}
 
 Source: [Wikipedia](https://fr.wikipedia.org/wiki/Chiffrement_RSA)
+
+## Fully qualified domain name (FQDN) {#FQDN}
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
 
 ## Revocation
 
@@ -210,6 +234,10 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate)
 IDN domains are domains with caracters others than `a` to `z`, `0` to `9` and `-`. They can for example contains Arabic, Chinese, Cyrillic, Tamil, Hebrew or the Latin alphabet-based characters with diacritics or ligatures. The encoded representation of an IDN domains starts with `xn--`.
 
 IDN is supported by [Let's Encrypt](#LE).
+
+## Web Client
+
+## Web Server
 
 Sources:
 
