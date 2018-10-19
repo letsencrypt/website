@@ -13,7 +13,7 @@
     <meta name="twitter:url" content="{{ .Permalink }}">
     <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
     <meta name="twitter:image:src" content="{{ "images/le-logo-twitter.png" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/main.min.css" | relURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://www.googleadservices.com">
