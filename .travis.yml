@@ -1,9 +1,9 @@
 language: generic
 
 before_install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.33/hugo_0.33_Linux-64bit.deb
-  - echo "6426dad5c5489b642ee9a635ef2c7239cad242fd1d65cc712a8fb815565362cd hugo_0.33_Linux-64bit.deb" | sha256sum -c - || exit 1;
-  - sudo dpkg -i hugo_0.33_Linux-64bit.deb
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_extended_0.49.2_Linux-64bit.deb
+  - echo "18d898ad7dbc61f8dccda14d102dad4cdcfc46acb4bc849a369219102e26c1db hugo_extended_0.49.2_Linux-64bit.deb" | sha256sum -c - || exit 1;
+  - sudo dpkg -i hugo_extended_0.49.2_Linux-64bit.deb
 
 install:
   - hugo env
