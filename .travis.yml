@@ -1,6 +1,10 @@
 language: generic
 
 before_install:
+  # This workaround is required to avoid libstdc++ errors while running "extended" hugo with SASS support.
+  - wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
+  - sudo dpkg --force-all -i libstdc++6
+  # Hugo 0.49.2 Extended setup
   - wget https://github.com/gohugoio/hugo/releases/download/v0.49.2/hugo_extended_0.49.2_Linux-64bit.deb
   - echo "18d898ad7dbc61f8dccda14d102dad4cdcfc46acb4bc849a369219102e26c1db hugo_extended_0.49.2_Linux-64bit.deb" | sha256sum -c - || exit 1;
   - sudo dpkg -i hugo_extended_0.49.2_Linux-64bit.deb
