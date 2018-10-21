@@ -74,7 +74,7 @@ description = """
 [[languages.fr.menu.main]]
  name = "Obtenir de l'aide"
  weight = 20
- url = "https://community.letsencrypt.org/"
+ url = "https://community.letsencrypt.org/c/help/aide-en-francais"
  [[languages.fr.menu.main]]
  name = "Faire un don"
  weight = 30
