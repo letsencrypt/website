@@ -105,7 +105,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Microsoft Azure
 
-- [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/1.4.3/DisplayScript) (Compatible with any App Service)
+- [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/) (Compatible with any App Service)
 
 ## nginx
 
