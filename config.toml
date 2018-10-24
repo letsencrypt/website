@@ -37,7 +37,7 @@ languageCode= "en-us"
 weight = 1
 description = """
   Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.en.menu.main]]
  name = "Get Help"
@@ -54,6 +54,12 @@ description = """
  identifier = "about"
  url = "/about/"
  [[languages.en.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.en.menu.main]]
  name = "Service Status"
  weight = 60
  identifier = "status"
@@ -69,7 +75,7 @@ languageCode= "fr-fr"
 weight = 1
 description = """
   Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
-  apporté par l'Internet Security Research Group (ISRG), organisme à but non lucratif.
+  apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
 """
 [[languages.fr.menu.main]]
  name = "Obtenir de l'aide"
