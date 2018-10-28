@@ -10,7 +10,7 @@ menu:
 
 ## Apoyo
 
-Si tienes preguntas sobre c&oacutemo usar Let's Encrypt, por favor pregunta en [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+Si tienes preguntas sobre c&oacute;mo usar Let's Encrypt, por favor pregunta en [Let's Encrypt Community Support](https://community.letsencrypt.org/).
 
 ## Preguntas de la Prensa
 
