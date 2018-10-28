@@ -4,11 +4,11 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
-## Ra&iacute;z e Intermediarios ECDSA
+## Ra&iacute;z e Intermedios ECDSA
 
 * ETA: Q1 2019
 
-Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermediarios RSA. Let's Encrypt generar&aacute; una ra&iacute;z ECDSA e intermediarios que se pueden usar para firmar certificados *end-entity*.
+Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermedios RSA. Let's Encrypt generar&aacute; una ra&iacute;z ECDSA e intermedios que se pueden usar para firmar certificados *end-entity*.
 
 # Funcionalidades Completadas
 
@@ -52,7 +52,7 @@ Se resolvi&oacute; un problema con nuestra cadena de certificados que preven&iac
 
 * Habilitado: 10 de febrero del 2016
 
-Se agreg&oacute; la habilidad para Let's Encypt firmar llaves ECDSA con intermediarios RSA de Let's Encrypt. Soporte para firmar llaves ECDSA con una cadena completa de certificados ECDSA ser&aacute; a&ntilde;dido despu&eacute;s.
+Se agreg&oacute; la habilidad para Let's Encypt firmar llaves ECDSA con intermedios RSA de Let's Encrypt. Soporte para firmar llaves ECDSA con una cadena completa de certificados ECDSA ser&aacute; a&ntilde;dido despu&eacute;s.
 
 ## Soporte para reto ACME DNS
 

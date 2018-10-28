@@ -23,7 +23,7 @@ menu:
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
-* [Chain of Trust (Root and Intermediate Certificates))](/certificates/)
+* [Cadena de Confianza (Certificados Ra&iacute;z e Intermedios)](/es/certificates/)
 * [Pr&oacute;ximas Funcionalidades](/es/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
