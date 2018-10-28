@@ -21,7 +21,7 @@ Hemos configurado sitios web para probar certificados encadenados a nuestras ra&
 * Certificado Expirado ISRG Root X1 
   * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
 
-# Certificados Intermediarios
+# Certificados Intermedios
 
 IdenTrust ha firmado (firma cruzada, *cross-signed* en ingl&eacute;s) nuestros intermediarios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras nosotros propagamos nuestra propia ra&iacute;z.
 
