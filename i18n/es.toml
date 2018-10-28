@@ -10,7 +10,7 @@ other = "Comienza"
 other = "Donar"
 
 [home_major_sponsors]
-other = "Grandes auspiciadores y donadores"
+other = "Grandes patrocinadores y donantes"
 
 [home_from_our_blog]
 other = "De nuestro blog"
@@ -22,7 +22,7 @@ other = "Lee más"
 other = "Subscribete <a href=\"{{ .Permalink }}\">mediante RSS</a>"
 
 [footer_support_us]
-other = "Apoya un Web más seguro y que respeta la privacidad."
+other = "Apoya un Web más seguro y respetador de la privacidad."
 
 [footer_donate]
 other = "Donar"

@@ -106,7 +106,7 @@ languageCode= "es-us"
 # Weight used for sorting.
 weight = 1
 description = """
-  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratis, automatizada, y abierta traido a ustedes por la organizaci&oacute;n sin fines de lucros <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratis, automatizada, y abierta traida a ustedes por la organizaci&oacute;n sin &aacute;nimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.es.menu.main]]
  name = "Consigue Ayuda"
