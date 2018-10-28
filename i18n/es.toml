@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt es una Autoridad de Certificaci&oacute;n <span>gratis</span>, <span>automatizada</span>, y <span>abierta</span>."
+other = "Let&rsquo;s Encrypt es una Autoridad de Certificaci&oacute;n <span>gratuita</span>, <span>automatizada</span>, y <span>abierta</span>."
 
 [home_hero_getting_started]
 other = "Comienza"
