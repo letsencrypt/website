@@ -40,9 +40,9 @@ Let's Encrypt ahora soporta emitici&oacute;n para *Internationalized Domain Name
 
 * Habilitado: 26 de julio del 2016
 
-Initially, only parts of the Let's Encrypt API infrastructure could communicate via IPv6. This prevented IPv6-only systems from being able to fully interact with Let's Encrypt. This has been resolved - IPv6 support has been enabled for all functionality.
+Inicialmente, solo partes de la infraestructura del API de Let's Encrypt se podia comunicar mediante IPv6. Esto evitaba que sistemas solo IPV6 pudieran interacturar completamente con Let's Encrypt. Esto ha sido resuelto - soporte para IPV6 ha sido habilitado para toda funcionalidad.
 
-## Compabilidad de Certificado en Windows XP
+## Compatibilidad de Certificado en Windows XP
 
 * Habilitado: 25 de marzo del 2016
 
