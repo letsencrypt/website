@@ -249,6 +249,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Aegir](https://gitlab.com/aegir/hosting_https)
 - [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
 - [ruxy](https://ruxyserver.com)
+- [ISPConfig](https://www.ispconfig.org/)
 
 # Adding your client/project
 
