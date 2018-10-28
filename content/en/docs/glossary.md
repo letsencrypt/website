@@ -3,183 +3,88 @@ title: Glossary
 slug: glossary
 top_graphic: 1
 ---
+<style>
+@keyframes fadeIt {
+  0%   { background-color: #FFCE00; }
+  100% { background-color: #FFFFFF; }
+}
 
-## ACME Client
+:target{
+  animation: fadeIt 2s ease-out; 
+}
+</style>
 
-## Automatic Certificate Management Environment (ACME) {#ACME}
+<b id="ACME-client">ACME Client</b>: a software capable to communicate with an ACME server to ask for a [certificate](#leaf).
 
-ACME is the protocol implemented by [Let's Encrypt](#LE). Softwares compatibles with that protocol can use it to communicate with Let's Encrypt to asks for a [certificate](#leaf). 
+<b id="ACME-server">ACME Server</b>: an ACME-compatble server capable to generate [certificates](#leaf). Let's Encrypt software, [Boudler](boudler), is ACME-compatible. [Boulder divergences from ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 
-Sources:
+<b id="ACME">Automatic Certificate Management Environment (ACME)</b>: the protocol implemented by [Let's Encrypt](#LE). Softwares compatibles with that protocol can use it to communicate with Let's Encrypt to asks for a [certificate](#leaf). [ACME draft 16](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment)
 
-- [ACME draft 16](https://tools.ietf.org/html/draft-ietf-acme-acme-16)
-- [Boulder divergences from ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-- [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment)
+<b id="boudler">Boudler</b>: the software implementing ACME, devlopped and used by [Let's Encrypt](#LE). [GitHub](https://github.com/letsencrypt/boulder)
 
-## Boudler
+<b id="CNAME">Canonical Name record (CNAME)</b>: a DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record)
 
-Boudler is the software implementing ACME, devlopped and used by [Let's Encrypt](#LE).
+<b id="CA">Certificate Authority (CA)</b>: is an organisation that issues [certificate](#leaf). [Let's Encrypt](#LE) and [IdenTrust](#IdenTrust) are Certificate Authorities. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority)
 
-Source: https://github.com/letsencrypt/boulder
+<b id="CAA">Certificate Authority Authorization (CAA)</b>: a DNS record that allows to specify which (CA)[#CA] are allowed to issue certificate for the corresponding domain. [Let's Encrypt](#LE) does check and respects CAA records. https://letsencrypt.org/docs/caa/ - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization)
 
-## Canonical Name record (CNAME) {#CNAME}
+<b id="CRL">Certificate Revocation List (CRL)</b>: a method to inform about the [Revocation](#Revocation) of a [certificate](#leaf). [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list)
 
-A Canonical Name record is a DNS entry which maps one domain name to another, referred to as the Canonical Name.
+<b id="CSR">Certificate Signing Request (CSR)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record)
+<b id="store">Certificate Store</b>
 
-## Certificate Authority (CA) {#CA}
+<b id="CT">Certificate Transparency (CT)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency)
 
-A certificate authority is an organisation that issues [certificate](#leaf).
-[Let's Encrypt](#LE) and [IdenTrust](#IdenTrust) are Certificate Authorities.
+<b id="Certificate chain">Certificate chain</b>: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority)
+<b id="CN">Common name (CN)</b>
 
-## Certificate Authority Authorization (CAA) {#CAA}
+<b id="cross-signing">Cross Signing</b>:[Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification)
 
-CAA is a DNS record that allows to specify which (CA)[#CA] are allowed to issue certificate for the corresponding domain.
-[Let's Encrypt](#LE) does check and respects CAA records.
+<b id="DNAME">Delegation Name record (DNAME)</b>: A DNS record that creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#CNAME) record creates an alias for a single name and not its subdomains. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record#DNAME_record)
 
-Sources:
+<b id="ECC certificates">ECC certificates</b>
 
-- https://letsencrypt.org/docs/caa/
-- [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization)
+<b id="ECC">Elliptic Curve Cryptography (ECC)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
 
-## Certificate Revocation List (CRL) {#CRL}
+<b id="ECDSA">Elliptic Curve Digital Signature Algorithm  (ECDSA)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)
 
-CRLs are one method to check the [Revocation](#Revocation) of a [certificate](#leaf).
+<b id="EdDSA"> Edwards-curve Digital Signature Algorithm (EdDSA)</b> : [Wikipedia](https://en.wikipedia.org/wiki/EdDSA)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list)
+<b id="EV">Extended Validation (EV)</b> [Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
 
-## Certificate Signing Request (CSR) {#CSR}
+<b id="IdenTrust">IdenTrust</b>: a (Certificate Authority)[#CA]. IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate):https://letsencrypt.org/certificates/ . [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request)
+<b id="intermediate">Intermediate certificate</b>: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate)
 
-## Certificate Store {#store}
+<b id="ISRG">Internet Security Research Group (ISRG)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group)
 
-## Certificate Transparency (CT) {#CT}
+<b id="Key-pair">Key-pair</b>: [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency)
+<b id="leaf">Leaf certificate (end-user certificate)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate)
 
-## Certificate chain
+<b id="LE">Let's Encrypt (LE)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate)
+<b id="Mixed Content">Mixed Content</b>: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content
 
-## Common name (CN) {#CN}
+<b id="OCSP">Online Certificate Status Protocol (OCSP)</b>: a method to check the [Revocation](#Revocation) of a [certificate](#leaf). [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)
 
+<b id="OV">Organization Validation (OV)</b>: [Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones: [FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation)
 
-## Cross Signing {#cross-signing}
+<b id="pfx">Personal Information Exchange Files (.pfx)</b>: https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification)
+<b id="PKCS">Public Key Cryptographic Standards (PKCS)</b>: [Wikipedia](https://fr.wikipedia.org/wiki/Public_Key_Cryptographic_Standards)
 
-## Delegation Name record (DNAME) {#DNAME}
+<b id="PKI">Public Key Infrastructure (PKI)</b>: [Wikipedia](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques)
 
-A DNAME record creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#CNAME) record creates an alias for a single name and not its subdomains.
+<b id="PSL">Public Suffix List (PSL)</b> https://letsencrypt.org/docs/rate-limits/ https://publicsuffix.org/
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record#DNAME_record)
+<b id="RSA">Chiffrement RSA</b>: [Wikipedia](https://fr.wikipedia.org/wiki/Chiffrement_RSA)
 
-## ECC certificates
+<b id="FQDN">Fully qualified domain name (FQDN)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
 
-
-## Elliptic Curve Cryptography (ECC) {#ECC}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
-
-## Elliptic Curve Digital Signature Algorithm  (ECDSA) {#ECDSA}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)
-
-##  Edwards-curve Digital Signature Algorithm (EdDSA) {#EdDSA} 
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/EdDSA)
-
-## Extended Validation (EV) {#EV}
-
-[Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones.
-
-Sources:
-
-- https://letsencrypt.org/docs/faq/
-- [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
-
-## IdenTrust
-
-IdenTrust is a (Certificate Authority)[#CA]. IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate).
-
-Source:
-
-- https://letsencrypt.org/certificates/
-- [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust)
-
-## Intermediate certificate {#intermediate}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate)
-
-## Internet Security Research Group (ISRG) {#ISRG}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group)
-
-## Key-pair
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography)
-
-## Leaf certificate (end-user certificate) {#leaf}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate)
-
-## Let's Encrypt (LE) {#LE}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt)
-
-## Mixed Content
-
-Source: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content
-
-## Online Certificate Status Protocol (OCSP) {#OCSP}
-
-OCSP is a method to check the [Revocation](#Revocation) of a [certificate](#leaf).
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)
-
-## Organization Validation (OV) {#OV}
-
-[Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones.
-
-Sources:
-
-- https://letsencrypt.org/docs/faq/
-- [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation)
-
-## Personal Information Exchange Files (.pfx) {#pfx}
-
-Source: https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files
-
-## Public Key Cryptographic Standards (PKCS) {#PKCS}
-
-Source: [Wikipedia](https://fr.wikipedia.org/wiki/Public_Key_Cryptographic_Standards)
-
-## Public Key Infrastructure (PKI) {#PKI}
-
-Source: [Wikipedia](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques)
-
-## Public Suffix List (PSL) {#PSL}
-
-Sources:
-
-- https://letsencrypt.org/docs/rate-limits/
-- https://publicsuffix.org/
-
-## Chiffrement RSA {#RSA}
-
-Source: [Wikipedia](https://fr.wikipedia.org/wiki/Chiffrement_RSA)
-
-## Fully qualified domain name (FQDN) {#FQDN}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
-
-## Revocation
-
-A certificate is valid until it's expiration date, expect if the [CA](#CA) says it's been revoked.
+<b id="Revocation">Revocation</b>: A certificate is valid until it's expiration date, expect if the [CA](#CA) says it's been revoked.
 The certificate may be revoked for various reasons such as the compromission of the private key.
 
 Browsers can check if a certificate is revoked using [CRL](#CLR) or [OCSP](#OCSP).
@@ -193,53 +98,26 @@ Let's Encrypt only supports the [OCSP](#OCSP) method.
 
 Source: https://letsencrypt.org/docs/revoking/
 
-## Root certificate {#root}
+<b id="root">Root certificate</b>: [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate)
+<b id="self-signed">Self-signed Certificate</b>: [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate)
 
-## Self-signed Certificate {#self-signed}
+<b id="SCT">Signed Certificate Timestamp (SCT)</b>: http://www.certificate-transparency.org/how-ct-works
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate)
+<b id="SNI">Server Name Indication (SNI)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication)
 
-## Signed Certificate Timestamp (SCT) {#SCT}
+<b id="Staging">Staging</b>: https://letsencrypt.org/docs/staging-environment/
 
-Source: http://www.certificate-transparency.org/how-ct-works
+<b id="SAN">Subject Alternative Name (SAN)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name)
 
-## Staging
+<b id="TLD">Top-Level Domain (TLD)</b>: [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain)
 
-Source: https://letsencrypt.org/docs/staging-environment/
+<b id="UCC">Unified Communications Certificate (UCC)</b>: See [Subject Alternative Name (SAN)](#SAN)
 
-## Subject Alternative Name (SAN) {#SAN}
+<b id="wildcard">Wildcard Certificates</b>: certificates valid for any subdomains (but for only one level): a certificate for `*.example.com` is valid for `anything.example.com` (but **not** for `something.anything.com` nor `example.com`). [Let's Encrypt](#LE) does provide Wildcards certificates. [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate)
 
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name)
+<b id="IDN">internationalized domain name (IDN)</b>: domains with caracters others than `a` to `z`, `0` to `9` and `-`. They can for example contains Arabic, Chinese, Cyrillic, Tamil, Hebrew or the Latin alphabet-based characters with diacritics or ligatures. The encoded representation of an IDN domains starts with `xn--`. IDN is supported by [Let's Encrypt](#LE): https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [Wikipedia](https://en.wikipedia.org/wiki/Internationalized_domain_name)
 
-## Top-Level Domain (TLD) {#TLD}
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain)
-
-## Unified Communications Certificate (UCC) {#UCC}
-
-See [Subject Alternative Name (SAN)](#SAN)
-
-## Wildcard Certificates {#wildcard}
-
-Wildcard certificates are valid for any subdomains (but for only one level): a certificate for `*.example.com` is valid for `anything.example.com` (but **not** for `something.anything.com` nor `example.com`)
-
-[Let's Encrypt](#LE) does provide Wildcards certificates.
-
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate)
-
-## internationalized domain name (IDN) {#IDN}
-
-IDN domains are domains with caracters others than `a` to `z`, `0` to `9` and `-`. They can for example contains Arabic, Chinese, Cyrillic, Tamil, Hebrew or the Latin alphabet-based characters with diacritics or ligatures. The encoded representation of an IDN domains starts with `xn--`.
-
-IDN is supported by [Let's Encrypt](#LE).
-
-## Web Client
-
-## Web Server
-
-Sources:
-
-- https://letsencrypt.org/2016/10/21/introducing-idn-support.html
-- [Wikipedia](https://en.wikipedia.org/wiki/Internationalized_domain_name)
+<b id="Web Client">Web Client</b>: a software capable to communicate with a [Web server](#web-server).Example: a web Browser
+[Wikipedia](https://en.wikipedia.org/wiki/Web_browser)
+<b id="web-server">Web Server</b>: a software serving web pages. [Wikipedia](https://en.wikipedia.org/wiki/Web_server)
