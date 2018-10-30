@@ -3,7 +3,9 @@ baseURL = "https://letsencrypt.org/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
-disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+enableRobotsTXT = true
 
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
