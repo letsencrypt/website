@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-10-28
+lastmod: 2018-10-30
 ---
 
 {{< lastmod >}}
@@ -106,6 +106,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Microsoft Azure
 
 - [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/) (Compatible with any App Service)
+- [shibayan/azure-appservice-letsencrypt](https://github.com/shibayan/azure-appservice-letsencrypt)
+- [shibayan/azure-keyvault-letsencrypt](https://github.com/shibayan/azure-keyvault-letsencrypt)
 
 ## nginx
 
