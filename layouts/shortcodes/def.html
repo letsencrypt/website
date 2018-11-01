@@ -1,0 +1,38 @@
+<!--
+Usage (in english):
+	{% def
+		id="a unique id for anchor"
+		name="The term to define"
+		abbr="an accronym (optional)" %}
+			the definition 
+	{% /def %}
+
+Usage (in other languages):
+	{% def 
+		id="a unique id for anchor - the SAME than for english" 
+		name="The term to define (optional if english is provided)"
+		abbr="an accronym (optional)"
+		english="the english version (optional - if present the abbr is in english too)" %}}
+			the definition
+	{% /def %}
+
+	TODO : name optionnal if Englsih provided
+
+Notes:
+	<abbr> is used to spell out for screen readers
+	lang="en" is used for the accent for screen readers
+-->
+
+<p>
+	{{- if .Get "name" -}}
+		<dfn id="{{.Get "id" }}">{{.Get "name" }}</dfn>
+		{{- if or (.Get "abbr") (.Get "english") -}}
+		{{- if .Get "english" }} ({{ with .Get "abbr" }}<abbr lang="en">{{ . }}</abbr> - {{ end -}}<i lang="en">{{ .Get "english" }}</i>)
+		{{- else }} (<abbr>{{ .Get "abbr" }}</abbr>)
+		{{- end }}
+	{{- else -}}
+		<dfn id="{{.Get "id" }}" lang="en">{{.Get "english" }}</dfn>
+		{{- if .Get "abbr" -}}(<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
+	{{- end -}}
+	{{- end }}: {{ .Inner }}
+</p>
