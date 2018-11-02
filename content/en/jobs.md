@@ -3,10 +3,6 @@ title: Jobs at Let's Encrypt
 linkTitle: Jobs
 slug: jobs
 top_graphic: 4
-menu:
-  main:
-    weight: 90
-    parent: about
 ---
 
 We can only hire in the United States and Canada. All of our positions are remote.
@@ -48,8 +44,8 @@ Prioritization and communication skills are the keys to effectively managing the
 
 Being organized is also critical. You will be responsible for making sure that recurring activities happen when they are supposed to happen and making sure things do not “slip through the cracks.” You should be someone who has meticulously developed and consistently maintains a system for staying organized because you know your memory is not good enough.
 
-## Location, Salary and Benefits
+## Location and Benefits
 
 This is a remote position available anywhere in the United States or Canada.
 
-Benefits include excellent health insurance, a 100% match for 401k contributions, and flexible time off and parental leave policies.
+Benefits include excellent health insurance, a 100% match for 401(k) contributions, and flexible time off and parental leave policies.
