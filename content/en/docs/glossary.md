@@ -54,7 +54,7 @@ dfn {
 
 {{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" %}} [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm){{% /def %}}
 
-{{% def id="EdDSA" name=" Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}} : [Wikipedia](https://en.wikipedia.org/wiki/EdDSA){{% /def %}}
+{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}} : [Wikipedia](https://en.wikipedia.org/wiki/EdDSA){{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} [Let's Encrypt](#LE) doesn't offer EV certificates, only [DV](#DV) ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate){{% /def %}}
 
@@ -84,7 +84,7 @@ dfn {
 
 {{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} https://letsencrypt.org/docs/rate-limits/ https://publicsuffix.org/{{% /def %}}
 
-{{% def id="RSA" name="Chiffrement RSA" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Chiffrement_RSA){{% /def %}}
+{{% def id="RSA" abbr="RSA" %}} [Wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem)){{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} [Wikipedia](https://en.wikipedia.org/wiki/Fully_qualified_domain_name){{% /def %}}
 
