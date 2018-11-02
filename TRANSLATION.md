@@ -17,6 +17,6 @@
 * Paths should stay in English: `/en/about` becomes `/XX/about` in every languages.
 * When a file is not translated, it will not appear in the menu.
 * client-options.md and cert-compat.md are not ready to be translated
-* Blog posts (`content\XX\post\`) and docs (`content\XX\docs\`) are not ready to be translated
+* Blog posts (`content\XX\post\`) are not ready to be translated
 * Images are not ready to be translated ([#314](https://github.com/letsencrypt/website/issues/314))
 * Graphs content are not ready to be translated ([#344](https://github.com/letsencrypt/website/issues/344))
