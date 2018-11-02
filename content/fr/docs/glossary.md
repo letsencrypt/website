@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: Glossaire
 slug: glossary
 top_graphic: 1
 ---
