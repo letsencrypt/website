@@ -23,9 +23,9 @@ Hemos configurado sitios web para probar certificados encadenados a nuestras ra&
 
 # Certificados Intermedios
 
-IdenTrust ha firmado (firma cruzada, *cross-signed* en ingl&eacute;s) nuestros intermediarios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras nosotros propagamos nuestra propia ra&iacute;z.
+IdenTrust ha firmado (firma cruzada, *cross-signed* en ingl&eacute;s) nuestros intermedios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras nosotros propagamos nuestra propia ra&iacute;z.
 
-Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", est&aacute; reservado para recuperaci&oacute;n de desastre y solo se usar&aacute; si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermediarios X1 y X2 fueron nuestra primera generaci&oacute; de intermediarios. Los hemos reemplazado con intermediarios que son m&aacute;s compatibles con Windows XP.
+Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", est&aacute; reservado para recuperaci&oacute;n de desastre y solo se usar&aacute; si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermedios X1 y X2 fueron nuestra primera generaci&oacute; de intermedios. Los hemos reemplazado con intermedios que son m&aacute;s compatibles con Windows XP.
 
 * Activo
   * [Let's Encrypt Authority X3 (Firmado por IdenTrust)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
