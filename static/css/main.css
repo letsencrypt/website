@@ -918,13 +918,6 @@ a.pure-menu-link:hover { text-decoration: none; }
 
 .highlight .il { color: #099; }
 
-/** Linux Foundation Collaborative Projects */
-.linuxfoundation-collab-footer { background: url(../images/linuxfoundation-collab-bg.png); border-top: 1px solid #e8e8e8; color: #393939; font-size: 11px; line-height: 16px; padding-bottom: 15px; padding-top: 15px; margin-bottom: 0px; }
-
-.linuxfoundation-collab-footer p { margin-bottom: 5px; }
-
-.linuxfoundation-collab-footer *:last-child { margin-bottom: 0; }
-
 .callout { background-image: linear-gradient(#ecdfd6 50%, #c1ac8f 98%); }
 
 .secondary-callout { background-color: #a3c8c7; }
