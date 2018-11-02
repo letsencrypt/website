@@ -43,7 +43,7 @@ Notes:
 	{{- else -}}
 		{{- if .Get "english" -}}
 			<dfn id="{{.Get "id" }}" lang="en">{{.Get "english" }}</dfn>
-			{{- if .Get "abbr" -}}(<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
+			{{- if .Get "abbr" }} (<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
 		{{- else -}}
 			<dfn id="{{.Get "id" }}"><abbr>{{.Get "abbr" }}</abbr></dfn>
 		{{- end -}}

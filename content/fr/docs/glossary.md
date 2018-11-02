@@ -28,7 +28,7 @@ dfn {
 
 {{% def id="CNAME" name="Enregistrement de nom canonique" english="Canonical Name record" abbr="CNAME" %}} a DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://fr.wikipedia.org/wiki/Enregistrement_de_nom_canonique) {{% /def %}}
 
-{{% def id="CA" name="Autorité de certification" english="Certificate Authority" abbr="CA" %}} is an organisation that issues [certificate](#leaf). [Let's Encrypt](#LE) and [IdenTrust](#IdenTrust) are Certificate Authorities. [Wikipedia](https://fr.wikipedia.org/wiki/Autorit%C3%A9_de_certification) {{% /def %}}
+{{% def id="CA" name="Autorité de Certification" english="Certificate Authority" abbr="CA" %}} is an organisation that issues [certificate](#leaf). [Let's Encrypt](#LE) and [IdenTrust](#IdenTrust) are Certificate Authorities. [Wikipedia](https://fr.wikipedia.org/wiki/Autorit%C3%A9_de_certification) {{% /def %}}
 
 {{% def id="CAA" english="Certificate Authority Authorization" abbr="CAA" %}} a DNS record that allows to specify which [CA](#CA) are allowed to issue certificate for the corresponding domain. [Let's Encrypt](#LE) does check and respects CAA records. https://letsencrypt.org/docs/caa/ - [Wikipedia](https://fr.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
