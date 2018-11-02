@@ -10,7 +10,7 @@ menu:
 # Overview
 
 * [Comenzando](/es/getting-started/)
-* [How Let's Encrypt Works](/how-it-works/)
+* [C&oacute;mo Funciona Let's Encrypt](/es/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 
 # Subscriber Information
@@ -33,5 +33,5 @@ menu:
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
-* [Differences from Current ACME Draft](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [Diferencias del  Borrador ACME Actual](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * [Finding Account IDs](/docs/account-id/)
