@@ -72,7 +72,7 @@ document.querySelectorAll('.definition>a[href^="#"]').forEach(function(a){
 
 {{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}} A digital signature scheme using a variant of Schnorr signature based on Twisted Edwards curves. It is designed to be faster than existing digital signature schemes without sacrificing security. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA){{% /def %}}
 
-{{% def id="EV" name="Extended Validation" abbr="EV" %}} Certificate fow which the [CA](#CA) has verified the legal entity controlling the website. They contains information about that entity. [Let's Encrypt](#LE) doesn't offer EV certificates, only [DV](#DV) ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate){{% /def %}}
+{{% def id="EV" name="Extended Validation" abbr="EV" %}} Certificates for which the [CA](#CA) has verified the legal entity controlling the website. They contains information about that entity. [Let's Encrypt](#LE) doesn't offer EV certificates, only [DV](#DV) ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate){{% /def %}}
 
 {{% def id="IdenTrust" name="IdenTrust" %}} A [Certificate Authority](#CA). IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate): https://letsencrypt.org/certificates/ . [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust){{% /def %}}
 
@@ -84,15 +84,15 @@ document.querySelectorAll('.definition>a[href^="#"]').forEach(function(a){
 
 {{% def id="leaf" name="Leaf certificate (end-user certificate)" %}} [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate){{% /def %}}
 
-{{% def id="LE" name="Let's Encrypt" abbr="LE" %}} [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt){{% /def %}}
+{{% def id="LE" name="Let's Encrypt" abbr="LE" %}} The [Certificate Authority](#CA) controlled by [ISRG](#ISRG). [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt){{% /def %}}
 
-{{% def id="Mixed Content" name="Mixed Content" %}} https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content{{% /def %}}
+{{% def id="Mixed Content" name="Mixed Content" %}} When a webpage using https loads subressources (such as Javascript, CSS or images) using http, browsers may remove the secure indication, or display an insecure logo: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content{{% /def %}}
 
 {{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" %}} a method to check the [Revocation](#Revocation) of a [certificate](#leaf). [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol){{% /def %}}
 
-{{% def id="OV" name="Organization Validation" abbr="OV" %}} [Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones: [FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation){{% /def %}}
+{{% def id="OV" name="Organization Validation" abbr="OV" %}} Certificates for which the [CA](#CA) has verified the legal entity controlling the website. They contains information about that entity. [Let's Encrypt](#LE) doesn't offer EV certificates, only (DV){#DV} ones: [FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation){{% /def %}}
 
-{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files{{% /def %}}
+{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}}  A file that may contain a [leaf certificate](#leaf), it's [chain](#chain) up to the root and the private key of the leaf. See also https://en.wikipedia.org/wiki/PKCS_12. https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files{{% /def %}}
 
 {{% def id="precertificate" name="Precertificate" %}}Precertificates are certificates identifical to the final [certificate](#leaf) with an additionnal critical poison extension. They are used for [certificate transparency](#CT). https://tools.ietf.org/html/rfc6962#section-3.1{{% /def %}}
 
