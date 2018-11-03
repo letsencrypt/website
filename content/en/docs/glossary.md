@@ -2,6 +2,8 @@
 title: Glossary
 slug: glossary
 top_graphic: 1
+date: 2018-11-01
+lastmod: 2018-11-01
 ---
 <style>
 @keyframes fadeIt {
@@ -16,6 +18,18 @@ dfn {
     font-weight: bold;
 }
 </style>
+<!--
+document.querySelectorAll('.definition>a[href^="#"]').forEach(function(a){
+	var id = a.href.substring(a.href.indexOf('#')+1);
+	if ( ! id ) return;
+	var el = document.getElementById(id);
+	if ( el ) {
+		a.title = el.parentNode.textContent;
+	}
+});
+-->
+
+{{< lastmod >}}
 
 {{% def id="ACME-client" name="ACME Client" %}} a software capable to communicate with an ACME server to ask for a [certificate](#leaf). {{% /def %}}
 
@@ -34,37 +48,39 @@ dfn {
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} a method to inform about the [Revocation](#Revocation) of a [certificate](#leaf). [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
-{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
+{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} A signed file containing the needed informations required by the [CA](#CA) to generated a certificate. Relevant information for [Let's Encrypt](#LE) are the [Common Name](#CN) and [Subject Alternative Names](#SAN). [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="Certificate Store" %}} {{% /def %}}
+{{% def id="store" name="Certificate Store" %}} A certificate store containes the list of trusted [roots](#root). Operating systems (such as Windows, Android or Debian) and web browsers (such as FireFox) maintains a certificate store. Browsers without one relies on the one of the operation system. [Certificates](#leaf) provided by [Let's Encrypt](#LE) are trusted by thoses certificates stores: https://letsencrypt.org/certificates/. {{% /def %}}
 
-{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
+{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} To improve security, to be valid certificates (or [precertificates](#precertificate)) must be published in Certificate Transparency Logs: https://www.certificate-transparency.org/. [Let's Encrypt](#LE) generate and publish a [precertificates](#precertificate) and include in the definitive [certificates](#leaf) the proof of publication. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency){{% /def %}}
 
-{{% def id="Certificate chain" name="Certificate chain" %}} [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate){{% /def %}}
+{{% def id="Certificate chain" name="Certificate chain" %}} To determine if a system trust a [certificates](#leaf), it must have a chain of trust ending on a [root](#root) present on it's [certificate store](#store). The chain is the list of intermedate leading to that root: the [lead certificate](#leaf) is always signed by a [intermediate](#intermediate) (which can be signed by another [intermediate](#intermediate) and so on) with is sign by a root. Note: the path it not always unique, and when a website present a certificate chain leadind to one root, the web client may decide to use another chain, ending in another root, to validate the certificate (This is especially important for [Public Key Pinning](#PKP)). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate){{% /def %}}
 
-{{% def id="CN" name="Common name" abbr="CN" %}}{{% /def %}}
+{{% def id="CN" name="Common name" abbr="CN" %}} is an attribute of a certificate. For [roots](#root) and [intermediates](#intermediate) it's the name of the certificate. For [leaf certificate](#leaf) it's one of the [Subject Alternative Name](#SAN) of the certificate. Note: The common name is limited to 63 charaters.{{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}}:[Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification){{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} An intermediate certificate may be signed by more than one [root](#root). For example, [Let's Encrypt](#le) [intermediates](intermediate) are cross signed by [IdenTrust](#IdenTrust), initially because the Let's Encrypt root was not yet trusted by [certificate stores](#store). Technicly, it's two intermediates, using the same [Common Name](#CN) and the same [Key-pair](#Key-pair), one signed by the private key of a Let's Encrypt root and the other signed by the private key of the IdenTrust's root: https://letsencrypt.org/certificates/. [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification){{% /def %}}
 
 {{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} A DNS record that creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#CNAME) record creates an alias for a single name and not its subdomains. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record#DNAME_record){{% /def %}}
 
-{{% def id="ECC certificates" name="ECC certificates" %}}{{% /def %}}
+{{% def id="ECC certificates" name="ECC certificates" %}} are certificates using an [Elliptic Curve](#ECC) [Key-pair](#Key-pair).{{% /def %}}
 
-{{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography){{% /def %}}
+{{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} An approach to public-key cryptography based on elliptic curves. ECC requires smaller keys compared to non-EC cryptography to provide equivalent security. [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography){{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" %}} [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm){{% /def %}}
+{{% def id="DSA" name="Digital Signature Algorithm" abbr="DSA" %}} The algorythm used to sign certificates. [Wikipedia](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm){{% /def %}}
 
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}} : [Wikipedia](https://en.wikipedia.org/wiki/EdDSA){{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm){{% /def %}}
 
-{{% def id="EV" name="Extended Validation" abbr="EV" %}} [Let's Encrypt](#LE) doesn't offer EV certificates, only [DV](#DV) ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate){{% /def %}}
+{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}} A digital signature scheme using a variant of Schnorr signature based on Twisted Edwards curves. It is designed to be faster than existing digital signature schemes without sacrificing security. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA){{% /def %}}
 
-{{% def id="IdenTrust" name="IdenTrust" %}} a [Certificate Authority](#CA). IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate): https://letsencrypt.org/certificates/ . [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust){{% /def %}}
+{{% def id="EV" name="Extended Validation" abbr="EV" %}} Certificate fow which the [CA](#CA) has verified the legal entity controlling the website. They contains information about that entity. [Let's Encrypt](#LE) doesn't offer EV certificates, only [DV](#DV) ones:[FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate){{% /def %}}
 
-{{% def id="intermediate" name="Intermediate certificate" %}} [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate){{% /def %}}
+{{% def id="IdenTrust" name="IdenTrust" %}} A [Certificate Authority](#CA). IdenTrust has [cross-signed](#cross-signing) [Let's Encrypt](#LE) [intermediates](#intermediate): https://letsencrypt.org/certificates/ . [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust){{% /def %}}
 
-{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group){{% /def %}}
+{{% def id="intermediate" name="Intermediate certificate" %}} A certificate, signed by the private key of a [root](#root) or another intermediate. It's private key is used to sign intermediates or [leaf](#leaf) certificates. They are used to allow the signature of leaf certificates while keeping the private key of root certificate to be kept offline. They allow [cross signing](#cross-signing) too. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate){{% /def %}}
 
-{{% def id="Key-pair" name="Key-pair" %}} [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography){{% /def %}}
+{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} The organisation behind [Let's Encrypt](#LE): https://www.abetterinternet.org/about/. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group){{% /def %}}
+
+{{% def id="Key-pair" name="Key-pair" %}} The couple private-key / public-key used to sign or encrypt. The public key is used to encrypt or verify the signature. The private key is used to decrypt data (encrypt by the public key) or signed data. [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography){{% /def %}}
 
 {{% def id="leaf" name="Leaf certificate (end-user certificate)" %}} [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate){{% /def %}}
 
@@ -78,9 +94,14 @@ dfn {
 
 {{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files{{% /def %}}
 
+{{% def id="precertificate" name="Precertificate" %}}Precertificates are certificates identifical to the final [certificate](#leaf) with an additionnal critical poison extension. They are used for [certificate transparency](#CT). https://tools.ietf.org/html/rfc6962#section-3.1{{% /def %}}
+
 {{% def id="PKCS" name="Public Key Cryptographic Standards" abbr="PKCS" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Public_Key_Cryptographic_Standards){{% /def %}}
 
 {{% def id="PKI" name="Public Key Infrastructure" abbr="PKI" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques){{% /def %}}
+
+{{% def id="PKP" name="Public Key Pinning" abbr="PKP" %}} [Wikipedia](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning){{% /def %}}
+
 
 {{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} https://letsencrypt.org/docs/rate-limits/ https://publicsuffix.org/{{% /def %}}
 

@@ -32,7 +32,7 @@ Notes:
 	lang="en" is used for the accent for screen readers
 -->
 
-<p>
+<p class="definition">
 	{{- if .Get "name" -}}
 		<dfn id="{{.Get "id" }}">{{.Get "name" }}</dfn>
 		{{- if or (.Get "abbr") (.Get "english") -}}
@@ -47,5 +47,6 @@ Notes:
 		{{- else -}}
 			<dfn id="{{.Get "id" }}"><abbr>{{.Get "abbr" }}</abbr></dfn>
 		{{- end -}}
-	{{- end }}: {{ .Inner }}
+	{{- end -}}
+	{{ .Site.Params.beforeColon | safeHTML }}: {{ .Inner }}
 </p>

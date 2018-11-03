@@ -2,6 +2,8 @@
 title: Glossaire
 slug: glossary
 top_graphic: 1
+date: 2018-11-01
+lastmod: 2018-11-01
 ---
 <style>
 @keyframes fadeIt {
@@ -16,6 +18,8 @@ dfn {
     font-weight: bold;
 }
 </style>
+
+{{< lastmod >}}
 
 {{% def id="ACME-client" name="Client ACME" %}} a software capable to communicate with an ACME server to ask for a [certificate](#leaf). {{% /def %}}
 
@@ -46,11 +50,13 @@ dfn {
 
 {{% def id="cross-signing" name="Cross Signing" %}}:[Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification){{% /def %}}
 
-{{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} A DNS record that creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#CNAME) record creates an alias for a single name and not its subdomains. [Wikipedia](https://fr.wikipedia.org/wiki/Enregistrement_de_nom_canonique#DNAME_record){{% /def %}}
+{{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Enregistrement_de_nom_canonique#DNAME_record){{% /def %}}
 
 {{% def id="ECC certificates" name="ECC certificates" %}}{{% /def %}}
 
 {{% def id="ECC" name="Cryptographie sur les courbes elliptiques" english="Elliptic Curve Cryptography" abbr="ECC" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Cryptographie_sur_les_courbes_elliptiques){{% /def %}}
+
+{{% def id="DSA" name="Digital Signature Algorithm" abbr="DSA" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Digital_Signature_Algorithm){{% /def %}}
 
 {{% def id="ECDSA" english="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Elliptic_curve_digital_signature_algorithm){{% /def %}}
 
@@ -81,6 +87,10 @@ dfn {
 {{% def id="PKCS" name="standards de cryptographie à clé publique" english="Public Key Cryptographic Standards" abbr="PKCS" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Public_Key_Cryptographic_Standards){{% /def %}}
 
 {{% def id="PKI" name="Public Key Infrastructure" abbr="PKI" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques){{% /def %}}
+
+{{% def id="PKP" name="Public Key Pinning" abbr="PKP" %}} [Wikipedia](https://fr.wikipedia.org/wiki/HTTP_Public_Key_Pinning){{% /def %}}
+
+{{% def id="precertificate" name="Precertificate" %}}{{% /def %}}
 
 {{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} https://letsencrypt.org/docs/rate-limits/ https://publicsuffix.org/{{% /def %}}
 
