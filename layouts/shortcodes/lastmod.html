@@ -1,1 +1,1 @@
-<p>{{ i18n "last_updated" }} {{ .Page.Lastmod.Format "January 2, 2006" }}{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}</p>
+<p>{{ i18n "last_updated" }} {{ .Page.Lastmod.Format "January 2, 2006" }}{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}</p>
