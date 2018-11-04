@@ -100,11 +100,23 @@ description = """
  identifier = "about"
  url = "/fr/about/"
  [[languages.fr.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.fr.menu.main]]
  name = "État du service"
  weight = 60
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
+ [[languages.fr.menu.main]]
+ name = "Emplois"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
  [languages.es]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
