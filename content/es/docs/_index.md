@@ -7,19 +7,19 @@ menu:
     weight: 10
 ---
 
-# Overview
+# General
 
 * [Comenzando](/es/getting-started/)
 * [C&oacute;mo Funciona Let's Encrypt](/es/how-it-works/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Preguntas Frecuentes (FAQ)](/es/docs/faq/)
 
-# Subscriber Information
+# Informaci&oacute;n para Subscriptor
 
 * [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
-# Advanced Subscriber Information
+# Informaci&oacute;n Avanzada para Subscriptor
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
@@ -29,9 +29,9 @@ menu:
 * [Certificate Authority Authorization](/docs/caa/)
 * [Certificates for localhost](/docs/certificates-for-localhost/)
 
-# Client Developer Information
+# Informaci&oacute;n para Desarrolladores de Cliente
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
-* [ACME Protocol Updates](/docs/acme-protocol-updates/)
+* [Actualizaciones del protocolo ACME](/es/docs/acme-protocol-updates/)
 * [Diferencias del  Borrador ACME Actual](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [Finding Account IDs](/docs/account-id/)
+* [Encontrando IDs de Cuentas](/es/docs/account-id/)
