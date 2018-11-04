@@ -149,34 +149,6 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
-#[languages.no]
-#title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
-#description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
-#languageName ="Norsk"
-#contentDir = "content/no"
-#languageCode= "no"
-#weight = 2
-#[[languages.no.menu.main]]
-# name = "Få hjelp"
-# weight = 20
-# url = "https://community.letsencrypt.org/"
-# [[languages.no.menu.main]]
-# name = "Doner"
-# weight = 30
-# identifier = "donate"
-# url = "/no/donate/"
-# [[languages.no.menu.main]]
-# name = "Om oss"
-# weight = 40
-# identifier = "about"
-# url = "/no/about/"
-# [[languages.no.menu.main]]
-# name = "Service Status"
-# weight = 60
-# identifier = "status"
-# parent = "about"
-# url = "https://letsencrypt.status.io/"
-
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]
