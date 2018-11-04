@@ -36,7 +36,7 @@ contentDir = "content/en"
 languageName ="English"
 languageCode= "en-us"
 # Weight used for sorting.
-weight = 1
+weight = 10
 description = """
   Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
   authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
@@ -80,7 +80,7 @@ languageName = "Français"
 contentDir = "content/fr"
 languageCode= "fr-fr"
 # Weight used for sorting.
-weight = 1
+weight = 20
 description = """
   Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
   apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
@@ -112,7 +112,7 @@ contentDir = "content/es"
 languageName ="Español"
 languageCode= "es-us"
 # Weight used for sorting.
-weight = 1
+weight = 30
 description = """
   Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratuita, automatizada, y abierta traida a ustedes por la organizaci&oacute;n sin &aacute;nimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
