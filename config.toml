@@ -142,6 +142,12 @@ description = """
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
+ [[languages.es.menu.main]]
+ name = "Trabajos"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
 #[languages.no]
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
