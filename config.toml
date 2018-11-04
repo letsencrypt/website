@@ -23,7 +23,7 @@ crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more
 
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
-time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700" 
+time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
 time_format_default = "Jan 2, 2006"
 
 # Useful when translating.
@@ -105,6 +105,49 @@ description = """
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
+
+ [languages.es]
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/es"
+languageName ="Español"
+languageCode= "es-us"
+# Weight used for sorting.
+weight = 1
+description = """
+  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratuita, automatizada, y abierta traida a ustedes por la organizaci&oacute;n sin &aacute;nimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.es.menu.main]]
+ name = "Consigue Ayuda"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.es.menu.main]]
+ name = "Donar"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.es.menu.main]]
+ name = "Acerca De"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+  [[languages.es.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.es.menu.main]]
+ name = "Status de Servicio"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.es.menu.main]]
+ name = "Trabajos"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
 #[languages.no]
 #title = "Let's Encrypt - gratis SSL/TLS-sertifikat"

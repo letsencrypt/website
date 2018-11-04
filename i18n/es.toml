@@ -1,0 +1,61 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt es una Autoridad de Certificaci&oacute;n <span>gratuita</span>, <span>automatizada</span>, y <span>abierta</span>."
+
+[home_hero_getting_started]
+other = "Comienza"
+
+[home_hero_donate]
+other = "Donar"
+
+[home_major_sponsors]
+other = "Grandes patrocinadores y donantes"
+
+[home_from_our_blog]
+other = "De nuestro blog"
+
+[read_more]
+other = "Lee más"
+
+[subscribe_rss]
+other = "Subscribete <a href=\"{{ .Permalink }}\">mediante RSS</a>"
+
+[footer_support_us]
+other = "Apoya un Web más seguro y respetador de la privacidad."
+
+[footer_donate]
+other = "Donar"
+
+[footer_policies]
+other = """
+Mira nuestra <a href="/privacy/">p&oacute;liza de privacidad</a>.<br>
+Mira nuestra <a href="/trademarks/">p&oacute;liza de marca</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation es una marca registrada de The Linux Foundation. Linux es una marca registrada de Linus Torvalds."
+
+[header_skip_nav]
+other = "Saltar enlaces de navegación"
+
+[last_updated]
+other = "Última Actualización:"
+
+[see_all_doc]
+other = "Ve toda la Documentación"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[platinum]
+other = "Platino"
+
+[gold]
+other = "Oro"
+
+[silver]
+other = "Plata"
+
+[languages]
+other = "Lenguajes"
