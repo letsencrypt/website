@@ -36,6 +36,8 @@ dfn {
 
 {{% def id="CAA" english="Certificate Authority Authorization" abbr="CAA" %}} a DNS record that allows to specify which [CA](#CA) are allowed to issue certificate for the corresponding domain. [Let's Encrypt](#LE) does check and respects CAA records. https://letsencrypt.org/docs/caa/ - [Wikipedia](https://fr.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
+{{% def id="CAB" name="CA/Browser Forum " %}} [Wikipedia](https://en.wikipedia.org/wiki/CA/Browser_Forum) {{% /def %}}
+
 {{% def id="CRL" name="Liste de révocation de certificats" english="Certificate Revocation List" abbr="CRL" %}} a method to inform about the [Revocation](#Revocation) of a [certificate](#leaf). [Wikipedia](https://fr.wikipedia.org/wiki/Liste_de_r%C3%A9vocation_de_certificats) {{% /def %}}
 
 {{% def id="CSR" name="Demande de signature de certificat" english="Certificate Signing Request" abbr="CSR" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Demande_de_signature_de_certificat) {{% /def %}}
@@ -123,3 +125,6 @@ dfn {
 {{% def id="Web Client" name="Client web" %}} a software capable to communicate with a [Web server](#web-server).Example: a web Browser or [cURL](https://fr.wikipedia.org/wiki/CURL). [Wikipedia](https://fr.wikipedia.org/wiki/Navigateur_web) {{% /def %}}
 
 {{% def id="web-server" name="Serveur web" %}} a software serving web pages. [Wikipedia](https://fr.wikipedia.org/wiki/Serveur_web) {{% /def %}}
+
+{{% def id="X.509" abbr="X.509" %}}(Wikipedia)](https://fr.wikipedia.org/wiki/X.509) {{% /def %}}
+
