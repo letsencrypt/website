@@ -126,5 +126,5 @@ dfn {
 
 {{% def id="web-server" name="Serveur web" %}} a software serving web pages. [Wikipedia](https://fr.wikipedia.org/wiki/Serveur_web) {{% /def %}}
 
-{{% def id="X.509" abbr="X.509" %}}(Wikipedia)](https://fr.wikipedia.org/wiki/X.509) {{% /def %}}
+{{% def id="X.509" abbr="X.509" %}}[Wikipedia](https://fr.wikipedia.org/wiki/X.509) {{% /def %}}
 
