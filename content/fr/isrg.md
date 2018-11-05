@@ -2,10 +2,6 @@
 title: Internet Security Research Group (ISRG)
 slug: isrg
 top_graphic: 4
-menu:
-  main:
-    weight: 20
-    parent: about
 ---
 ISRG est une société d'utilité publique de Californie, et est reconnue par l'IRS comme une organisation exonérée d'impôt en vertu de l'article 501\(c\)(3) de l'Internal Revenue Code. La mission de l'ISRG est de réduire les obstacles financiers, technologiques et éducatifs pour sécuriser les communications sur Internet.
 
