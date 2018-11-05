@@ -6,7 +6,7 @@ aliases : [/howitworks]
 ---
 
 为了在您的网站上启用HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。 Let's Encrypt是一个证书颁发机构（CA）。 要从Let's Encrypt获取您网站域名的证书，您必须证明
-您对域名的实际控制权。您可以在您的网络主机上运行使用[ACME协议]（https://ietf-wg-acme.github.io/acme/）的软件来获取Let's Encrypt证书。
+您对域名的实际控制权。您可以在您的网络主机上运行使用[ACME协议](https://ietf-wg-acme.github.io/acme/)的软件来获取Let's Encrypt证书。
 
 为了找出最适合您获取证书的方法，您需要知道您是否拥有服务器的[命令行账户"Shell Account"（链接为英文）](https://en.wikipedia.org/wiki/Shell_account) (通常被称为命令行权限 "Shell Access")。 如果您完全使用控制面板管理您的账户，例如[cPanel](https://cpanel.com/)， [Plesk](https://www.plesk.com/), or
 [WordPress](https://wordpress.org/), 你很有可能没有命令行访问权限。您需要联系您的托管服务提供商（服务器/主机提供商）确认。
