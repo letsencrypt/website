@@ -36,10 +36,10 @@ Cuando nuevas funcionalidades son introducidas a *API endpoints* existentes, las
 
 Si nos damos cuenta de un problema serio de seguridad con el protocolo ACME (en lugar de simplemente nuestra implementaci&oacute; de &eacute;l) podemos ser forzados hacer cambios que rompen la compatibilidad de nuestros *API endpoints*, o cesar la operaci&oacute;n de *endpoints* existentes e introducir nuevos.
 
-ACME ha sido revisado por muchas partes y utilizado con &eacute;xito en producci&oacute;n, pero siempre hay una posibilidad de vulnerabilidades sin descubrir. Los administradores de sistemas deben mantener la capacidad de implementar actualizaciones oportunas en sus clientes ACME en respuesta a dichas vulnerabilidades. 
+ACME ha sido revisado por muchas partes y utilizado con &eacute;xito en producci&oacute;n, pero siempre hay una posibilidad de vulnerabilidades sin descubrir. Los administradores de sistemas deben mantener la capacidad de implementar actualizaciones oportunas en sus clientes ACME en respuesta a dichas vulnerabilidades.
 
 # Nuevas versiones de ACME con cambios de ruptura
 
-When we feel it's important to implement new versions of ACME containing breaking changes we'll do so by introducing new API endpoints and maintaining them in parallel with the endpoints for older versions. After making the new version available, we will communicate a deprecation timeline to all users well in advance.
+Cuando sentimos que es importante implementar nuevas versiones de ACME conteniendo cambios que ocasionen rupturas, lo haremos introduciendo nuevos *API endpoints* y manteniendolos en paralelo con los *endpoints* de versiones anteriores. Despu&eacute;s de hacer disponible la nueva versi&oacute;n, comunicaremos una l&iacute;nea de tiempo de desaprobaci&oacute;n para todos los usuarios con mucha antelaci&oacute;n.
 
-This is not going to happen very often since breaking compatibility is so burdensome even if there is plenty of time to transition. We will, however, be doing this once the IETF finishes [standardizing ACME](https://datatracker.ietf.org/wg/acme/charter/). We currently implement a pre-IETF-standardization version of ACME and we feel it's important to be using a formalized standard if possible.
+Esto no va a suceder muy a menudo ya que rompiendo compatibilidad es tan oneroso incluso si hay suficiente tiempo de transici&oacute;n. Sin embargo, estaremos haciendo esto una vez el IETF termina [estandarizando ACME](https://datatracker.ietf.org/wg/acme/charter/). Actualmente implementamos una version pre-estandarizaci&oacute;n-IETF de ACME y sentimos que es importante estar usando un est&aacute;ndar formalizado si es posible.
