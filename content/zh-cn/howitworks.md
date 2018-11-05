@@ -33,7 +33,7 @@ If you're experimenting with different ACME clients, use our
 
 如果您的托管服务提供商不支持Let's Encrypt，您可以与他们联系请求支持。 我们尽力使添加Let's Encrypt支持变得非常容易，提供商（非中国国内提供商）通常很乐意听取客户的建议！
 
-如果您的托管服务提供商不想集成Let's Encrypt，但支持上传自定义证书，您可以在自己的计算机上安装Certbot并在[手动模式（Manual Mode）]中运行(https://certbot.eff.org/docs/using.html#manual)。在手动模式下，您需要将特定文件上传到您的网站以证明您的控制权。 然后，Certbot将获取您可以上传到提供商的证书。 我们不建议使用此选项，因为它非常耗时，并且您需要在证书过期时重复此步骤（约每年4次）。 对于大多数人来说，最好从提供商处请求Let's Encrypt支持。若您的提供商不打算兼容，建议您更换提供商。
+如果您的托管服务提供商不想集成Let's Encrypt，但支持上传自定义证书，您可以在自己的计算机上安装Certbot并在[手动模式（Manual Mode）](https://certbot.eff.org/docs/using.html#manual)下运行。在手动模式下，您需要将特定文件上传到您的网站以证明您的控制权。 然后，Certbot将获取您可以上传到提供商的证书。 我们不建议使用此选项，因为它非常耗时，并且您需要在证书过期时重复此步骤（约每年4次）。 对于大多数人来说，最好从提供商处请求Let's Encrypt支持。若您的提供商不打算兼容，建议您更换提供商。
 
 
 # 获取帮助
