@@ -9,6 +9,9 @@ other = "Commencer"
 [home_hero_donate]
 other = "Faire un don"
 
+[home_hero_sponsor]
+other = "Sponsoriser"
+
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
 
