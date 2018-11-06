@@ -11,7 +11,7 @@ Para averiguar cu&aacute;l m&eacute;todo funcionar&aacute; mejor para ti, tendr&
 
 # Con Acceso Shell
 
-Recomendamos que la mayor&iacute;a de las personas con *acceso shell* usen el cliente ACME llamado [Certbot]. &Eacute;ste puede automatizar la emici&oacute;n e instalaci&oacute;n de certificados con cero tiempo de inactivdad. Tambi&eacute;n tiene modos de expertos para personas que no quieren autoconfiguraci&oacute;n. Es f&aacute;cil de usar, funciona en muchos sistemas operativos, y tiene documentaci&oacute;n genial. [Visita la p&aacute;gina web de Certbot][Certbot] para conseguir instrucciones para tu sistema operativo y servidor de web.
+Recomendamos que la mayor&iacute;a de las personas con *acceso shell* usen el cliente ACME llamado [Certbot]. &Eacute;ste puede automatizar la emisi&oacute;n e instalaci&oacute;n de certificados con cero tiempo de inactivdad. Tambi&eacute;n tiene modos de expertos para personas que no quieren autoconfiguraci&oacute;n. Es f&aacute;cil de usar, funciona en muchos sistemas operativos, y tiene documentaci&oacute;n genial. [Visita la p&aacute;gina web de Certbot][Certbot] para conseguir instrucciones para tu sistema operativo y servidor de web.
 
 Si [Certbot] no cumple con tus necesidades, o quisieras tratar otra cosa, [hay muchos otros clientes ACME para escoger](/docs/client-options/). Una vez hayas escogido un cliente ACME, ve la documentaci&oacute;n para ese cliente para proceder.
 
