@@ -19,7 +19,7 @@ Los principios claves detr&aacute;s de Let's Encrypt son:
 * <strong>Autom&aacute;tico:</strong> Software corriendo en un servidor de web puede interacturar con Let's Encrypt para obtener un certificado f&aacute;cilmente, configularlo seguramente para uso, y autom&aacute;ticamente hacerce acargo de la renovaci&oacute;n.
 * <strong>Seguro:</strong> Let's Encrypt servir&aacute; como una plataforma para avanzar las mejores pr&aacute;cticas de seguridad TLS, tanto en el lado del AC como ayudando a operadores de sitios web asegurar sus servidores apropiadamente.
 * <strong>Transparente:</strong> Todos los certificados emitidos o revocados seran registrados publicamente y disponibles para cualquiere inspeccionar.
-* <strong>Abierto:</strong> La emici&oacute;n autom&aacute;tica y el protocolo de renovaci&oacute;n ser&aacute;n publicados como un est&aacute;ndar abierto que otros pueden adoptar.
+* <strong>Abierto:</strong> La emisi&oacute;n autom&aacute;tica y el protocolo de renovaci&oacute;n ser&aacute;n publicados como un est&aacute;ndar abierto que otros pueden adoptar.
 Al igual que los mismos protocolos de Internet subyacentes, Let's Encrypt es un esfuerzo conjunto para beneficiar la comunidad, 
 * <strong>Cooperativo:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, m&aacute;s all&aacute; del control de cualquier organizaci&oacute;n.
 
