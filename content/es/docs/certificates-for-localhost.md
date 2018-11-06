@@ -1,5 +1,5 @@
 ---
-title: Certificates for localhost
+title: Certificados para localhost
 permalink: /docs/certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
@@ -8,111 +8,81 @@ lastmod: 2017-12-21
 
 {{< lastmod >}}
 
-Sometimes people want to get a certificate for the hostname "localhost", either
-for use in local development, or for distribution with a native application that
-needs to communicate with a web application. Let's Encrypt can't provide
-certificates for "localhost" because nobody uniquely owns it, and it's not
-rooted in a top level domain like ".com" or ".net". It's possible to
-set up your own domain name that happens to resolve to 127.0.0.1, and get a
-certificate for it using the DNS challenge. However, this is generally a bad
-idea and there are better options.
+A veces personas desean obtener un certificado para el nombre de equipo "localhost",
+ya sea para uso en desarrollo local, o para distribuci&oacute;n con una aplicaci&oacute;n
+nativa que necesita comunicarse con una aplicaci&oacute; web. Let's Encrypt no puede
+proveer certificados para "localhost" porque nadie lo posee de forma &uacute;nica, y no es
+enraizado en un dominio de de nivel superior como ".com" &oacute; ".net". Es posible configurar
+tu propio nombre de dominio que se resuelve en 127.0.0.1 y obtener un certificado usando el reto DNS.
+Sin embargo, esto es generalmente una mala idea y hay mejores opciones.
 
-# For local development
+# Para desarrollo local
 
-If you're developing a web app, it's useful to run a local web server like
-Apache or Nginx, and access it via http://localhost:8000/ in your web browser.
-However, web browsers behave in subtly different ways on HTTP vs HTTPS pages.
-The main difference: On an HTTPS page, any requests to load JavaScript from an
-HTTP URL will be blocked. So if you're developing locally using HTTP, you might
-add a script tag that works fine on your development machine, but breaks when
-you deploy to your HTTPS production site. To catch this kind of problem, it's
-useful to set up HTTPS on your local web server. However, you don't want to see
-certificate warnings all the time. How do you get the green lock locally?
+Si est&aacute; desarrollando una aplicaci&oacute;n web, es &uacute;til correr un servidor
+web local como Apache &oacute; Nginx, y acceder a &eacute;l a trav&eacute;s de http://localhost:8000
+en tu navegador de web. Sin embargo, navegadores de web se comportan sutilmente diferentes en p&aacute;ginas HTTP vs. HTTPS.
+La diferencia principal: En una p&aacute;gina HTTPS, cualquier petici&oacute;n para cargar JavaScript de un URL HTTP ser&aacute;
+bloqueada. As&iacute; que si est&aacute;s desarrollando localmente usando HTTP,
+podr&iacute;as agregar un *script tag* que funcione bien en tu m&aacute;quina de desarrollo,
+pero se rompe cuando desplegas a tu sitio de producci&oacute;n HTTPS. Para capturar este tipo de problema,
+es &uacute;til configurar HTTPS en tu servidor de web local. Sin embargo, no quieres ver la advertencia de certificado en tu servidor de web local. &iquest;C&oacute;mo se obtiene localmente el candado verde?
 
-The best option: Generate your own certificate, either self-signed or signed by
-a local root, and trust it in your operating system's trust store. Then use that
-certificate in your local web server. See below for details.
+La mejor opci&oacute;n: Genera tu propio certificado, ya sea autofirmado &oacute; firmado por una ra&iacute;z local, y confiarla en el almac&eacute;n de confianza de tu sistema operativo. Luego usa ese certificado
+en tu servidor web local. Vea la documentaci&oacute;n para m&aacute; detalles.
 
-# For native apps talking to web apps
+# Para apps nativas hablando a apps de web
 
-Sometimes developers want to offer a downloadable native app that can be
-used alongside a web site to offer extra features. For instance, the Dropbox
-and Spotify desktop apps scan for files from across your machine, which a
-web app would not be allowed to do. One common approach is for these native
-apps to offer a web service on localhost, and have the web app make requests
-to it via XMLHTTPRequest (XHR) or WebSockets. The web app almost always uses HTTPS, which
-means that browsers will forbid it from making XHR or WebSockets requests
-to non-secure URLs. This is called Mixed Content Blocking. To communicate with
-the web app, the native app needs to provide a secure web service.
+A veces desarrolladores desean ofrecer una aplicaci&oacute;n nativa descargable que se puede usar junto
+a un sitio web para ofrecer funciones adicionales. Por ejemplo, las aplicaciones de
+Dropbox y Spotify pueden escanear en busca de archivos de toda tu m&aacute;quina,
+lo que una aplicaci&oacute;n web no podr&iacute;a hacer. Un enfoque com&uacute;n
+es que estas aplicaciones nativas ofrezcan un servicio web en localhost y hagan que la
+aplicaci&oacute;n web le haga solicitudes a trav&eacute;s de XMLHTTPRequest (XHR) &oacute; WebSockets.
+La aplicaci&oacute;n web casi siempre usa HTTPS, lo que significa que los navegadores le prohibir&aacute;n
+realizar solicitudes de XHR o WebSockets a URLs no seguras. Esto se llama *Mixed Content Blocking*.
+Para comunicarse con la aplicaci&oacute;n web, la aplicaci&oacute;n nativa debe proporcionar un servicio
+web seguro.
 
-Fortunately, modern browsers [consider][mcb-localhost] "http://127.0.0.1:8000/" to be a
-["potentially trustworthy"][secure-contexts]
-URL because it refers to a loopback address. Traffic sent to 127.0.0.1 is guaranteed
-not to leave your machine, and so is considered automatically secure against
-network interception. That means if your web app is HTTPS, and you offer a
-native app web service on 127.0.0.1, the two can happily communicate via XHR.
-Unfortunately, [localhost doesn't yet get the same treatment][let-localhost].
-Also, WebSockets don't get this treatment for either name.
+Afortunadamente, navegadores modernos [consideran][mcb-localhost] "http://127.0.0.1:8000/" ser
+["potencialmente confiable"][secure-contexts] URL porque se refiere a una direcci&oacute;n *loopback*.
+Tr&aacute;fico enviado a 127.0.0.1 es garantizado que no va a salir de tu m&aacute;quina, y es considerado autom&aacute;ticamente seguro contra intercepci&oacute;n de red. Esto significa que si tu aplicaci&oacute;n de web es HTTPS, y ofreces un servicio web de aplicaci&oacute;n nativa en 127.0.0.1, los dos pueden comunicarse felizmente a trav&eacute;s de XHR. Desafortunadamente, [localhost no recibe el mismo tratamiento][let-localhost]. Adem&aacuas;s, WebSockets no reciben este tratamiento para ya sea para cualquier nombre.
 
-You might be tempted to work around these limitations by setting up
-a domain name in the global DNS that happens to resolve to 127.0.0.1
-(for instance, localhost.example.com), getting a certificate for that
-domain name, shipping that certificate and corresponding private key
-with your native app, and telling your web app to
-communicate with https://localhost.example.com:8000/ instead of http://127.0.0.1:8000/.
-*Don't do this.* It will put your users at risk, and your certificate may get revoked.
+Puedes tener la tentaci&oacute;n de evitar estas limitaciones configurando un nombre de dominio en el DNS global que se resuelve en 127.0.0.1 (por ejemplo, localhost.example.com), obteniendo un certificado para ese nombre de dominio, enviando ese certificado y la correspondiente llave privada con tu aplicaci&oacute;n nativa, y diciendole a tu aplicaci&oacute;n de web que de comunique con https://localhost.example.com:8000/ en vez de http://127.0.0.1:8000/. *No hagas esto.* Esto pondr&aacute; a tus usuarios en riesgo, y tu certificado puede ser revocado.
 
-By introducing a domain name instead of an IP address, you make it possible for
-an attacker to Man in the Middle (MitM) the DNS lookup and inject a response that
-points to a different IP address. The attacker can then pretend to be the local
-app and send fake responses back to the web app, which may compromise your
-account on the web app side, depending on how it is designed.
+Introduciendo un nombre de dominio en vez de una direcci&oacute;n IP, haces posible que un atacante "Man in the Middle (MitM)" la b&uacute;squeda DNS e inyectar una respuesta que apunta a una direcci&oacute;n IP diferente. El atacante puede pretender ser la apliaci&oacute;n local y enviar respuestas falsas a la aplicaci&oacute;n de web, lo cual puede comprometer tu cuenta en el lado de la aplicaci&oacute;n de web, dependiendo que como es dise&ntilde;ada.
 
-The successful MitM in this situation is possible because in order to make it
-work, you had to ship the private key to your certificate with your native app.
-That means that anybody who downloads your native app gets a copy of
-the private key, including the attacker. This is considered a compromise of your
-private key, and your Certificate Authority (CA) is required to revoke your
-certificate if they become aware of it. [Many native apps][mdsp1] have [had their
-certificates][mdsp2] revoked for [shipping their private key][mdsp3].
+Un MitM exitoso en esta situaci&oacute;n es posible porque para hacerlo funcionar, tienes que enviar la llave privada de tu certificado con tu aplicaci&oacute;n nativa. Eso significa que que cualquiera que descarga tu aplicaci&oacute;n nativa recibe una copia de tu llave privada, incluyendo el atacante. Esto es considerado un compromiso de tu llave privada, y tu es requerido de tu Autoridad de Certificaci&oacute;n revocar tu certificado si se dan cuenta de ello. [Muchas aplicaciones nativas][mdsp1] han [tenido sus certificados][mdsp2] revocados por [enviar su llave privada][mdsp3].
 
-Unfortunately, this leaves native apps without a lot of good, secure options to
-communicate with their corresponding web site. And the situation may get
-trickier in the future if browsers further [tighten access to localhost from the
-web][tighten-access].
+Desafortunadamente, esto deja aplicaciones nativas sin muchas opciones seguras o buenas  para comunicarse con su sitio web correspondiente. Y la situaci&oacute;n puede complicarse si en el futuro los navegadores se ajustan a&uacute;n m&aacute;s para [restringir el acceso a localhost desde el web][tighten-access].
 
-Also note that exporting a web service that offers privileged native APIs is
-inherently risky, because web sites that you didn't intend to authorize may
-access them. If you go down this route, make sure to read up on [Cross-Origin
-Resource Sharing][cors], use Access-Control-Allow-Origin, and make sure to use a
-memory-safe HTTP parser, because even origins you don't allow access to can send
-preflight requests, which may be able to exploit bugs in your parser.
+Tambi&eacute;n nota que exportando un servicio web que ofrece APIs nativas privilegiadas es inherentemente arriesgado, porque sitios de web que no pretend&iacute;as autorizar puede acceder a ellos. Si vas por esta ruta, aseg&uacute;rate de leer sobre [Cross-Origin Resource Sharing][cors], usa Access-Control-Allow-Origin, y aseg&uacute;rate de usar un analizador HTTP que sea *memory-safe*, porque hasta origines que no le das acceso pueden enviar *preflight requests*, los cuales pueden ser capaz de explotar errores en tu analizador.
 
-# Making and trusting your own certificates
+# Realizando y confiando sus propios certificados
 
-Anyone can make their own certificates without help from a CA. The only
-difference is that certificates you make yourself won't be trusted by anyone
-else. For local development, that's fine.
+Cualquiera puede crear su propio certificado sin la ayuda de una AC.
+La &uacute;nica diferencia es que certificados hechos por ti
+mismo no van a ser confiados por nadie m&aacute;s.
+Para desarrollo local, eso est&aacute; bien.
 
-The simplest way to generate a private key and self-signed certificate for
-localhost is with this openssl command:
+La manera m&aacute;s sencilla para generar una llave privada
+y un certificado autofirmado para localhost es con el siguiente comando openssl:
 
     openssl req -x509 -out localhost.crt -keyout localhost.key \
       -newkey rsa:2048 -nodes -sha256 \
       -subj '/CN=localhost' -extensions EXT -config <( \
        printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
 
-You can then configure your local web server with localhost.crt and
-localhost.key, and install localhost.crt in your list of locally trusted roots.
+A continuaci&oacute;n, puedes configurar tu servidor con localhost.crt y localhost.key
+e instalar localhost.crt en tu lista de raices confiadas localmente.
 
-If you want a little more realism in your development certificates, you can use
-[minica][minica] to generate your own local root certificate, and issue
-end-entity (aka leaf) certificates signed by it. You would then import the root
-certificate rather than a self-signed end-entity certificate.
+Si deseas un poco m&aacute;s de realismo en tus certificados de desarrollo, puedes usar [minica][minica]
+para generar tu propio certificado ra&iacute;z local, y emitir certificados
+*end-entity* (tambi&eacute;n conocido como *leaf*) firmados por &eacute;l. Entonces importar&iacute;a
+el certificado ra&iacute;z en vez de un certificado *end-entity* autofirmado.
 
-You can also choose to use a domain with dots in it, like "www.localhost", by
-adding it to /etc/hosts as an alias to 127.0.0.1. This subtly changes how
-browsers handle cookie storage.
+Tambi&eacute;n puedes optar por utilizar un dominio con puntos en &eacute;l, como "www.localhost",
+a&ntilde;adiendolo a /etc/hosts como un alias apuntando a 127.0.0.1. Esto cambia sutilmente como navegadores
+manejan el almacenamiento de cookies.
 
 [mcb-localhost]: https://bugs.chromium.org/p/chromium/issues/detail?id=607878
 [secure-contexts]: https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy

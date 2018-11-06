@@ -1,5 +1,5 @@
 ---
-title: Certificate Authority Authorization (CAA)
+title: Autorización de la Autoridad de Certificación (CAA)
 slug: caa
 top_graphic: 1
 date: 2017-07-27
@@ -7,6 +7,11 @@ lastmod: 2017-07-27
 ---
 
 {{< lastmod >}}
+
+CAA es un tipo de record DNS que permite propiertarios de sitios web especificar
+cuales Autoridades de Certificaci&oacute;n est&aacute;n permitidas emitir certificados
+conteniendo sus nombres de dominio. Fue estandarizado en el 2013 por
+[RFC 6844](https://tools.ietf.org/html/rfc6844) para permitir una AC "reducir el riesgo de "
 
 CAA is a type of DNS record that allows site owners to specify which Certificate
 Authorities (CAs) are allowed to issue certificates containing their domain names. It
@@ -18,92 +23,41 @@ if there's a bug in any one of the many public CAs' validation processes, every
 domain name is potentially affected. CAA provides a way for domain holders to
 reduce that risk.
 
-# Using CAA
+# Usando CAA
 
-If you don't care about CAA, you generally don't have to do anything (but see
-CAA errors below). If you would like to use CAA to restrict which Certificate
-Authorities are allowed to issue certificates for your domain, you will need to
-use a DNS provider that supports setting CAA records. Check [SSLMate's CAA
-page](https://sslmate.com/caa/support) for a list of such providers. If your
-provider is listed, you can use
-[SSLMate's CAA Record Generator](https://sslmate.com/caa/) to generate a
-set of CAA records listing the CAs that you would like to allow.
+Si no te importa CAA, generalmente no tienes que hacer nada (pero ve errores CAA abajo).
+Si deseas usar CAA para restringir cuales Autoridades de Certificaci&oacute;n est&aacute;n permitidas
+emitir certificados para tu dominio, necesitaran un proveedor de DNS que soporte la configuraci&oacute;n
+de registros CAA. Comprueba la [p&aacute;gina sobre CAA de SSLMate](https://sslmate.com/caa/support) para una lista de tales proveedores. Si tu proveedor est&aacute; listado, puedes usar el [Generador de Registro CAA de SSLMate](https://sslmate.com/caa/) para generar un set de registros CAA listando los ACs que quieres permitir.
 
-Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
-officially documented [in our Certification Practice Statement
-(CPS), section 4.2.1](https://letsencrypt.org/repository/).
+El dominio identificador de Let's Encrypt para CAA es `letsencrypt.org`. Esto es documentado oficialmente [en nuestro Certification Practice Statement (CPS), secci&oacute; 4.2.1](https://letsencrypt.org/repository/).
 
-## Where to put the record
+## D&oacute;nde Poner el Record
 
-You can set CAA records on your main domain, or at any depth of subdomain.
-For instance, if you had `www.community.example.com`, you could set CAA records
-for the full name, or for `community.example.com`, or for `example.com`. CAs
-will check each version, from left to right, and stop as soon as they see any
-CAA record. So for instance, a CAA record at `community.example.com` would take
-precedence over one at `example.com`. Most people who add CAA records will want
-to add them to their registered domain (`example.com`) so that they apply to all
-subdomains. Also note that CAA records for subdomains take precedence over their
-parent domains regardless of whether they are more permissive or more
-restrictive. So a subdomain can loosen a restriction put in place by a parent
-domain.
+Puedes establecer registros CAA en tu dominio principal, o en cualquier profundidad de subdominio.
+Por ejemplo, si tuvieras `www.community.example.com`, puedes establecer registros CAA para el nombre completo, &oacute; para `community.example.com`, o para `example.com`. ACs verificar&aacute;n cada versi&aacute;n, desde izquierda a derecha, y para tan pronto vea cualquier registro CAA. Por ejemplo, un registro CAA en `community.example.com` tomar&aacute; precedencia sobre uno en `example.com`. La mayor&iacute;a de las personas que a&ntilde;aden registros CAA queran a&ntilde;adirlos a su dominio registrado (`example.com`) para que aplique a todos los subdominios. Tambi&eacute;n nota que registros CAA para subdominios toman precedencia sobre sus dominios padre sin importar si son m&aaacute;s permisivo o m&aacute;s restrictivo. As&iacute; que un subdominio puede aflojar una restricci&oacute;n puesta en su lugar por un dominio padre.
 
-CAA validation follows CNAMEs, like all other DNS requests. If
-`www.community.example.com` is a CNAME to `web1.example.net`, the CA will first
-request CAA records for `www.community.example.com`, then seeing that there is a
-CNAME for that domain name instead of CAA records, will request CAA records for
-`web1.example.net` instead. Note that if a domain name has a CNAME record, it is
-not allowed to have any other records according to the DNS standards.
+Validaci&oacute;n CAA sigue CNAMEs, como todas las otras solicitudes de DNS. Si `www.community.example.com` es un CNAME de `web1.example.net`, el AC solicitar&aacute; registros CAA para `www.community.example.com` primero, y luego cuando vea que hay un CNAME para ese nombre de dominio en vez de un registro CAA, solicitar&aacute; registros CAA para `web1.example.net` en su lugar. Nota que si un nombre de dominio tiene un registro CNAME, no est&aacute; permitido tener cualquier otro registro de acuerdo con los est&aacute;ndares de DNS.
 
-The [CAA RFC](https://tools.ietf.org/html/rfc6844) specifies an additional
-behavior called "tree-climbing" that requires CAs to also check the parent
-domains of the result of CNAME resolution. This additional behavior was later
-removed by [an erratum](https://www.rfc-editor.org/errata/eid5065), so Let's
-Encrypt and other CAs do not implement it.
+El [RFC CAA](https://tools.ietf.org/html/rfc6844) especifica un comportamiento adicional llamado "tree-climbing" que requiere ACs verificar el dominio padre del resultado de la resoluci&oacute;n del CNAME. Este comportamiento adicional fue eliminado por [un erratum](https://www.rfc-editor.org/errata/eid5065), as&iacute; que Let's Encrypt y otras ACs no lo implementan.
 
-# CAA errors
+# Errores CAA
 
-Since Let's Encrypt checks CAA records before every certificate we issue, sometimes
-we get errors even for domains that haven't set any CAA records. When we
-get an error, there's no way to tell whether we are allowed to issue for the
-affected domain, since there could be CAA records present that forbid issuance,
-but are not visible because of the error.
+Como Let's Encrypt verifica registros CAA antes de cada certificado que emitimos, algunas veces recibimos errores hasta para dominios que no tienen registros CAA. Cuando recibimos un error, no hay manera de saber si estamos autorizados emitir para el dominio afectado, ya que puede haber registros CAA que prohiben emisi&oacute;n, pero no son visibles por el error.
 
-If you receive CAA-related errors, try a few more times against our [staging
-environment](/docs/staging-environment/) to see if they
-are temporary or permanent. If they are permanent, you will need to file a
-support issue with your DNS provider, or switch providers. If you're not sure
-who your DNS provider is, ask your hosting provider.
+Si recibes un errores relacionados con CAA, prueba un par de veces m&aacute;s en nuestro [ambiente *staging*](/docs/staging-environment/) para ver si son temporeros o permanentes. Si son permanentes, necesitar&aacute;s presentar un problema de soporte con tu proveedor de DNS, o cambiar proveedores. Si no est&aacute;s seguro que qui&eacute;n es tu proveedor DNS, preguntale a tu proveedor de hospedaje.
 
-Some DNS providers that are unfamiliar with CAA initially reply to problem
-reports with "We do not support CAA records." Your DNS provider does not need
-to specifically support CAA records; it only needs to reply with a
-NOERROR response for unknown query types (including CAA). Returning other
-opcodes, including NOTIMP, for unrecognized qtypes is a violation of [RFC
-1035](https://tools.ietf.org/html/rfc1035), and needs to be fixed.
+Algunos proveedores de DNS que no est&aacute;n familiarizados con CAA contestan inicialmente al reporte del problema con "No soportamos registros CAA." Tu proveedor de DNS no necesita soportar espec&iacute;ficamente registros CAA; solo necesita contestar con una respuesta NOERROR para tipos de consulta desconocidos (incluyendo CAA). Devolviendo otros opcodes, incluyendo NOTIMP, para qtypes desconocidos es una violaci&oacute;n de [RFC
+1035](https://tools.ietf.org/html/rfc1035), y necesita ser arreglado.
 
 # SERVFAIL
 
-One of the most common errors that people encounter is SERVFAIL. Most often this
-indicates a failure of DNSSEC validation. If you get a SERVFAIL error, your
-first step should be to use a DNSSEC debugger like
-[dnsviz.net](http://dnsviz.net/). If that doesn't work, it's possible that your
-nameservers generate incorrect signatures only when the response is empty. And
-CAA responses are most commonly empty.  For instance, PowerDNS [had this bug in
-version 4.0.3 and below](https://community.letsencrypt.org/t/caa-servfail-changes/38298/2?u=jsha).
+Uno de los errores m&aacute;s comunes que personas se encuentran es SERVFAIL. La mayor&iacute;a de las veces esto indica un fallo en la validaci&oacute;n DNSSEC. Si recibes un error SERVFAIL, tu primer paso debe ser usar un debugger DNSSEC como [dnsviz.net](http://dnsviz.net/). Si eso no funciona, es posible que tus nameservers generan firmas incorrectas solamente cuando la respuesta est&aacute; vac&iacute;a. Y respuestas CAA son mayormente vac&iacute;as. Por ejemplo, PowerDNS [tuvo este bug en la version 4.0.3 y abajo](https://community.letsencrypt.org/t/caa-servfail-changes/38298/2?u=jsha).
 
-If you don't have DNSSEC enabled and get a SERVFAIL, the second most likely
-reason is that your authoritative nameserver returned NOTIMP, which as described
-above is an RFC 1035 violation; it should instead return NOERROR with an empty
-response. If this is the case, file a bug or a support ticket with your DNS provider.
+Si no tienes DNSSEC habilitado y recibes un SERVFAIL, el segundo raz&oacute;n m&aacute;s probable es que tu nameserver autoritario devolvi&oacute; NOTIMP, lo cual es descrito arriba como una violaci&oacute;n del RFC 1035; en su lugar deber&iacute;a volver NOERROR con una respuesta vac&iacute;a. Si este es el caso, presenta un error o ticket de soporte con tu proveedor de DNS.
 
-Lastly, SERVFAILs may be caused by outages at your authoritative nameservers.
-Check the NS records for your nameservers and ensure that each server is
-available.
+Por &uacute;ltimo, SERVFAILs pueden ser causados por cortes de servicio en tus nameservers autoritarios. Verifica los registros NS de tus nameservers y asegura que cada servidor est&aacute; disponible.
 
 # Timeout
 
-Sometimes CAA queries time out. That is, the authoritative name server never
-replies with an answer at all, even after multiple retries. Most commonly this
-happens when your nameserver has a misconfigured firewall in front of it that
-drops DNS queries with unknown qtypes. File a support ticket with your DNS
-provider and ask them if they have such a firewall configured.
+Algunas veces consultas CAA pueden time out. Es decir, el nameserver autoritario nunca responde con una respuesta, incluso despu&eacute;s de varios reintentos. Com&uacute;nmente esto sucede cuando tu nameserver tiene un firewall mal configurado frente de &eacute;l que deja caer consultas de DNS con qtypes desconocidos. Presenta un ticket de soporte con tu proveedor de DNS y pregunta si tienen configurado tal firewall.

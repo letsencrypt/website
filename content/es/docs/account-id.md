@@ -19,10 +19,5 @@ Tambi&eacute;n puedes proveer solo los digitos al final del URL como un *shortha
 
 Si est&aacute;s usando Certbot, puedes encontrar tu ID de cuenta mirando el campo "uri" en `/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
 
-If you're using another ACME client, the instructions will be client-dependent.
-Check your logs for URLs of the form described above. If your ACME client does
-not record the account ID, you can retrieve it by submitting a new registration
-request with the same key. See the [ACME spec for more
-details](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
-You can also find the numeric form of your ID in the Boulder-Requester header in
-the response to each POST your ACME client makes.
+Si est&aacute;s usando otro cliente ACME, las instrucciones van a ser dependientes del cliente.
+Verifica tus registros por URLs de la forma descrita arriba. Si tu cliente ACME no registra el ID de cuenta, lo puedes recuperar enviando una nueva solicitud de registraci&oacute;n usando la misma llave. Ve la [especificaci&oacute;n ACME para m&aacute;s detalles](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration). Tambi&eacute;n puedes encontrar la forma numerica de tu ID en el *header* Boulder-Request en respuesta a cada POST que tu cliente ACME haga.

@@ -1,5 +1,5 @@
 ---
-title: Expiration Emails
+title: Correos Electrónicos de Vencimiento
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
@@ -8,44 +8,31 @@ lastmod: 2016-07-02
 
 {{< lastmod >}}
 
-# Subscribing
+# Subscribiendo
 
-If you provide an email address to Let's Encrypt when you create your
-account, we'll automatically send you expiry notices when your certificate
-is coming up for renewal. We send the first notice at 20 days before
-your certificate expires, and more notices at 10 days and 1 day before
-it expires.
+Su provees tu direcci&oacute;n de correo electr&oacute;nico a Let's Encrypt cuando creas tu cuenta,
+te enviaremos autom&aacute;ticamente avisos de vencimiento/expiraci&oacute;n cuando
+tu certificado est&eacute; para renovar. Enviamos el primer aviso a los 20 d&iacute;as
+antes de que se venza tu certificado, y m&aacute;s avisos a los 10 d&iacute;as y 1 d&iacute;a antes de que caduque.
 
-# When You Get an Expiration Email
+# Cuando Recibes Un Correo Electr&oacute;nico de Vencimiento
 
-If your certificate is already renewed, we won't send an expiry notice. We
-consider a certificate to be renewed if there is a newer certificate
-with the exact same set of names, regardless of which account created it.
-If you've issued a new certificate that adds or removes a name relative to your
-old certificate, you will get expiration email about your old certificate.
-If you check the certificate currently running on your website, and it
-shows the correct date, no further action is needed.
+Si tu certificado ya est&aacute; renovado, no enviaremos un aviso de vencimiento.
+Consideramos un certificado por renovar si hay un certificado nuevo con el mismo conjunto de nombres,
+sin importar cu&aacute;l cuenta lo cre&oacute;. Si emitiste un nuevo certificado que a&ntilde;ade o elimina un nombre relativo a tu
+certificado viejo, recibiras un correo electr&oacute;nico de vencimiento sobre tu viejo certificado. Si verificas el certificado actualmente corriendo en tu sitio web, y muestra la fecha correcta, no se necesita ninguna otra acci&oacute;n.
 
-# Unsubscribing
+# Darse de baja (Unsubscribing)
 
-The email body has a link to unsubscribe from future notices. If you
-hit that link, you won't get any expiration notices for the next year.
-The list of "who's unsubscribed" is independent for Staging notices and
-Production notices, so you can feel free to unsubscribe from Staging without
-affecting your Production status.
+El cuerpo del correo electr&oacute;nico tiene un enlace para darse de baja de futuros avisos.
+Si oprimes ese enlace, no recibiras ning&uacute;n aviso de vencimiento por el pr&oacute;ximo a&ntilde;o.
+La lista de "qui&eacute;n se di&oacute; de baja" es independiente para avisos de *Staging* y avisos de Producci&oacute;n,
+por lo que puedes sentirte libre de darte de baja de *Staging* sin afectar tu estado en la lista de Producci&oacute;n.
 
-Note that your unsubscribe is only valid for one year, so you will have to
-renew it every year.
+Ten en cuenta que tu cancelaci&oacute;n de subscripci&oacute;n solo es v&aacute;lida por un a&ntilde;o, por lo que tendr&aacute; que renovarla cada a&ntilde;o.
 
-There's not yet a way for us to efficiently re-subscribe
-you if you unsubscribe. Our email provider, Mandrill,
-[has a manual mechanism that we still need to
-automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+A&uacute;n no hay una manera para que podamos volver a subscribirlo de manera eficiente si cancela su subscripci&oacute;n. Nuestro proveedor de correo electr&oacute;nico, Mandrill, [tiene un mecanismo manual que a&uacute;n tenemos que automatizar]((https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
 
-However, you can change the email address on your account, which effectively
-re-subscribes you. Many common email services treat `yourname+1@example.com` the
-same as `yourname@example.com`. So if you update your email address to
-`yourname+1@example.com`, you can start getting expiry mail again. With Certbot,
-use:
+Sin embargo, puedes cambiar la direcci&oacute;n del correo electr&oacute;nico en tu cuenta, lo cual efectivamente te reinscribe. Muchos servicios de correo electr&oacute;nico comunes tratan `yourname+1@example.com` igual a `yourname@example.com`. Por lo tanto, si actualizas tu direcci&oacute; de correo electr&oacute;nico a `yourname+1@example.com`, puedes comenzar a recibir el correo electr&oacute;nico de vencimiento nuevamente. Con Certbot, usa:
 
 ` ~/certbot/venv/bin/certbot  register --update-registration --email yourname+1@example.com`

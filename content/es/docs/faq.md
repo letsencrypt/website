@@ -1,6 +1,6 @@
 ---
 title: FAQ
-linkTitle: Frequently Asked Questions (FAQ)
+linkTitle: Preguntas Frecuentes (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
@@ -13,97 +13,97 @@ menu:
 
 {{< lastmod >}}
 
-This FAQ is divided into the following sections:
+Este FAQ est&aacute; dividido en las siguientes secciones:
 
-* [General Questions](#general)
-* [Technical Questions](#technical)
+* [Preguntas Generales](#general)
+* [Preguntas T&eacute;cnicas](#technical)
 
-# <a name="general">General Questions</a>
+# <a name="general">Preguntas Generales</a>
 
-## What services does Let's Encrypt offer?
+## &iquest;Qu&eacute; servicios ofrece Let's Encrypt?
 
-Let's Encrypt is a global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
+Let's Encrypt es una Autoridad de Certificaci&oacute;n (AC, or CA por sus siglas en ingl&eacute;s) global. Dejamos que personas y organizaciones alrededor del mundo obtengan, renueven, y manegen certificados SSL/TLS. Nuestros certificados pueden ser usados para sitios de web para habilitar conexiones HTTPS aseguradas.
 
-Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
+Let's Encrypt ofrece certificados de Validaci&oacute;n de Dominio (DV por sus siglas en ingl&eacute;s). No ofrecemos Validaciones Extendidas o de Organizaci&oacute;n principalmente porque no podemos automatizar la emisi&oacute;n de esos tipos de certificados.
 
-To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
+Para comenzar a usar Let's Encrypt, por favor visita nuestra p&aacute;gina [Comenzando](https://letsencrypt.org/es/getting-started/).
 
-## What does it cost to use Let's Encrypt? Is it really free?
+## &iquest;Cu&aacute;nto cuesta usar Let's Encrypt? &iquest;Verdaderamente es gratis?
 
-We do not charge a fee for our certificates. Let’s Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
+No cobramos tarifas por nuestros certificados. Let's Encrypt es una organizaci&oacute;n sin fines de lucro, nuestra misi&oacute;n es crear un Web más seguro y respetador de la privacidad promoviendo el uso generalizado de HTTPS. Nuestros servicios son gratuitos y f&aacute;ciles de usar para que cada sitio web pueda implementar HTTPS.
 
-We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate/) or [becoming a sponsor](/become-a-sponsor/).
+Requerimos apoyo de nuestros generosos auspociadores, becarios, e individuos para propocionar nuestros servicios de forma gratuita en todo el mundo. Si est&aacute;s interesado en apoyarnos por favor considere [donar](es/donate/) &oacute; [convertirse en un patrocinador](/es/become-a-sponsor/).
 
-In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let’s Encrypt certificates.
+En algunos casos, integradores (por ejemplo, proveedores de hospedaje) cobrar&aacute;n una tarifa nominal que refleja los costos administrativos y de gesti&oacute;n incurridos por la proporci&oacute;n de certificados Let's Encrypt.
 
-## What kind of support do you offer?
+## &iquest;Qu&eacute; tipo de apoyo ofrecen?
 
-Let’s Encrypt is run by a small team and relies on automation to keep costs down. That being the case, we are not able to offer direct support to our subscribers. We do have some great support options though:
+Let's Encrypt est&aacute; dirigido por un peque&ntilde;o equipo y se basa de la automatizaci&oacute;n para mantener los costos bajos. Siendo ese el caso, no podemos ofrecer apoyo directo a nuestros subscriptores. Sin embargo, tenemos algunas grandes opciones de apoyo: 
 
-1. We have really helpful [documentation](/docs/).
-2. We have very active and helpful [community support forums](https://community.letsencrypt.org/). Members of our community do a great job of answering questions, and many of the most common questions have already been answered.
+1. Tenemos [documentaci&oacute;n](/es/docs/) realmente &uacute;til.
+2. Tenemos [foros de apoyo comunitario](https://community.letsencrypt.org/) muy activos y &uacute;tiles. Miembros de nuestra comunidad hacen un gran trabajo contestando preguntas, y muchas de las preguntas m&aacute;s frecuentes ya han sido contestadas.
 
-Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
+Aqu&iacute un [video que nos gusta](https://www.youtube.com/watch?v=Xe1TZaElTAs) sobre el poder de un gran apoyo comunitario.
 
-## A website using Let's Encrypt is engaged in Phishing/Malware/Scam/... , what should I do?
+## Un sitio web usando Let's Encrypt est&aacute; involucrado en *Phishing/Malware/Scam/...* , &iquest;qu&eacute; debo hacer?
 
-We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here is the Google reporting URL:
+Recomendamos reportar dichos sitios a Google Safe Browsing y el programa Microsoft Smart Screen, que pueden proteger a los usuarios de una manera m&aacute;s efectiva. Aqu&iacute; est&aacute; el URL de informes de Google:
 
 https://www.google.com/safebrowsing/report_badware/
 
-If you'd like to read more about our policies and rationale, you can do so here:
+Si desea leer m&aacute;s sobre nuestras pol&iacute;ticas y nuestra justificaci&oacute;n, puede hacerlo aqu&iacute;:
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Technical Questions</a>
+# <a name="technical">Preguntas T&eacute;cnicas</a>
 
-## Are certificates from Let’s Encrypt trusted by my browser?
+## &iquest;Los certificados de Let's Encrypt son confiados por mi navegador?
 
-For most browsers and operating systems, yes. See the [compatibility list](/docs/certificate-compatibility/) for more detail.
+Para la mayor&iacute;a de los navegadores y sistemas operativos, s&iacute;. Ve la [lista de compatibilidad](/docs/certificate-compatibility/) para m&aacute;s detalles.
 
-## Does Let's Encrypt issue certificates for anything other than SSL/TLS for websites?
+## &iquest;Let's Encrypt emite certificados para cualquier otra cosa que no sea SSL/TLS para sitios web?
 
-Let’s Encrypt certificates are standard Domain Validation certificates, so you can use them for any server that uses a domain name, like web servers, mail servers, FTP servers, and many more.
+Certificados Let’s Encrypt son certificados de Validaci&oacute;n de Dominio est&aacute;ndar, as&iacute; que puedes usarlo para cualquier servidor que use un nombre de dominio, como servidores web, servidores de correo, servidores FTP, y muchos m&aacute;s.
 
-Email encryption and code signing require a different type of certificate that Let’s Encrypt does not issue.
+Encripci&oacute;n de email y firma de c&oacute;digo requieren otro tipo de certificado que Let's Encrypt no emite.
 
-## Does Let’s Encrypt generate or store the private keys for my certificates on Let’s Encrypt’s servers?
+## &iquest; Let's Encrypt genera o guarda las llaves privadas para mis certificados en los servidores de Let's Encrypt?
 
-No. Never.
+No. Nunca.
 
-The private key is always generated and managed on your own servers, not by the Let's Encrypt certificate authority.
+La llave privada siempre es generada y gestionada en tu propio servidor, no por la autoridad de certificaci&oacute;n Let's Encrypt.
 
-## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
+## &iquest;Cu&aacute;l es el tiempo de vida de un certificado Let's Encrypt? &iquest;Por cu&aacute;nto tiempo son v&aacute;lidos?
 
-Our certificates are valid for 90 days. You can read about why [here](https://letsencrypt.org/2015/11/09/why-90-days.html).
+Nuestros certificados son v&aacute;lidos por 90 d&iacute;as. Puedes leer acerca de por qu&eacute; [aqu&iacute;](https://letsencrypt.org/2015/11/09/why-90-days.html).
 
-There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
+No hay forma de ajustar esto, no hay excepciones. Recomendamos renovar tus certificados autom&aacute;ticamente cada 60 d&iacute;as.
 
-## Will Let’s Encrypt issue Organization Validation (OV) or Extended Validation (EV) certificates?
+## &iquest;Let’s Encrypt emitir&aacute; certificados de Validaci&oacute;n de Organizaci&oacute;n (OV) o Validaci&oacute;n Extendida (EV)?
 
-We have no plans to issue OV or EV certificates.
+No tenemos planes de emitir certificados OV &oacute; EV.
 
-## Can I get a certificate for multiple domain names (SAN certificates or UCC certificates)?
+## &iquest;Puedo obtener un certificado que tiene varios nombres de dominio (certificados SAN o UCC)?
 
-Yes, the same certificate can contain several different names using the Subject Alternative Name (SAN) mechanism.
+S&iacute;, el mismo certificado puede contener diferentes nombres de dominio usando el mecanismo de Nombre Alternativo de Sujeto (SAN por sus siglas en ingl&eacute;s).
 
-## Does Let’s Encrypt issue wildcard certificates?
+## &iquest;Let’s Encrypt emite certificados wildcard?
 
-Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
+S&iacute;. Emisi&oacute;n wildcard se debe realizar a trav&eacute;s de ACMEv2 usando el reto DNS-01. Ve [este post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) para m&aacute;s informaci&oacute;n t&eacute;cnica.
 
-## Is there a Let's Encrypt (ACME) client for my operating system?
+## &iquest;Hay un cliente Let's Encrypt (ACME para mi sistema operativo?
 
-There are a large number of [ACME clients](/docs/client-options/) available. Chances are something works well on your operating system. We recommend starting with [Certbot](https://certbot.eff.org/).
+Hay una gran cantidad de [clientes ACME](/docs/client-options/) disponibles. Es probable que algo funcione bien en tu sistema operativo. Recomendamos comenzar con [Certbot](https://certbot.eff.org/).
 
-## Can I use an existing private key or Certificate Signing Request (CSR)?
+## &iquest;Puedo utilizar una llave privada o Certificate Signing Request (CSR) existente?
 
-Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org/) does.
+S&iacute;, pero no todos los clientes soportan esta funcionalidad. [Certbot](https://certbot.eff.org/) la tiene.
 
-## What IP addresses does Let's Encrypt use to validate my web server?
+## &iquest;Cu&aacute;les direcciones de IP usa Let's Encrypt para validar mi servidor de web?
 
-We don't publish a list of IP addresses we use to validate, because they may change at any time. In the future we may validate from multiple IP addresses at once.
+No publicamos una lista de las direcciones IP que usamos para validaci&oacute;n, porque pueden cambiar en cualquier momento. En el futuro podremos validar desde m&uacute;ltiples direcciones IP a la vez.
 
-## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
+## Renov&eacute; con &eacute;xito un certificado, pero esta vez no se realiz&oacute; la validaci&oacute;n. &iquest;C&oacute;mo es posible?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
-If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+Una vez hayas completado los retos para el dominio exitosamente, la autorizaci&oacute;n resultanda es almacenada para tu cuenta para usarla luego nuevamente. Autorizaciones almacenadas duran 30 dias desde el momento de validaci&oacute;n.
+Si el certificado que solicitaste tiene todas las autorizaciones necesarias almacenadas la validaci&oacute; no volver&aacute; a realizarse hasta que caduquen las autorizaciones correspondientes almacenadas.

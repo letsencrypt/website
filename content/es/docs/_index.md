@@ -17,7 +17,7 @@ menu:
 
 * [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
-* [Expiration Emails](/docs/expiration-emails/)
+* [Correos Electr&oacute;nicos de Vencimiento](/es/docs/expiration-emails/)
 
 # Informaci&oacute;n Avanzada para Subscriptor
 
@@ -26,10 +26,10 @@ menu:
 * [Cadena de Confianza (Certificados Ra&iacute;z e Intermedios)](/es/certificates/)
 * [Pr&oacute;ximas Funcionalidades](/es/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
-* [Certificate Authority Authorization](/docs/caa/)
-* [Certificates for localhost](/docs/certificates-for-localhost/)
+* [Autorizaci&oacute;n de la Autoridad de Certificaci&oacute;n (CAA)](/es/docs/caa/)
+* [Certificados para localhost](/es/docs/certificates-for-localhost/)
 
-# Informaci&oacute;n para Desarrolladores de Cliente
+# Informaci&oacute;n para Desarrolladores de Clientes
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [Actualizaciones del protocolo ACME](/es/docs/acme-protocol-updates/)
