@@ -26,7 +26,7 @@ Para informaci&oacute;n sobre varias listas de correo t&eacute;nicas, por favor 
 
 ## Seguridad
 
-Por favor no escriba a esta direcci&oacute;n de email al menos que tu mensaje se refiera a un problema de seguridad con Let's Encrypt.
+Por favor no escriba a esta direcci&oacute;n de correo electr&oacute;nico al menos que tu mensaje se refiera a un problema de seguridad con Let's Encrypt.
 
 Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
