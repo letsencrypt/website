@@ -42,7 +42,9 @@ lastmod: 2018-11-01
 
 {{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} A DNS record that creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#def-CNAME) record creates an alias for a single name and not its subdomains. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record#DNAME_record){{% /def %}}
 
-{{% def id="DANE" name="DNS - based Authentication of Named Entities" abbr="DANE" %}} [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities){{% /def %}}
+{{% def id="DANE" name="DNS - based Authentication of Named Entities" abbr="DANE" %}} A mechanism using DNS to indicate how to verity the authenticity of the [certificate](#def-leaf) presented.  [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities){{% /def %}}
+
+{{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DANE" %}} A mechanism to authenticate DNS response. [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions){{% /def %}}
 
 {{% def id="DV" name="Domain-validated certificate" %}} [Certificates](#def-leaf) where the applicant have only proven the control over the domain (and not it's identity, unlike [OV](#def-OV) and [EV](#def-EV) certificates ). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) nor [EV](#def-EV) ): [FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
 
