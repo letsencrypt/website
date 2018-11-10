@@ -42,6 +42,8 @@ lastmod: 2018-11-01
 
 {{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} A DNS record that creates an alias for an entire subtree of the domain name tree. In contrast, the [CNAME](#def-CNAME) record creates an alias for a single name and not its subdomains. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record#DNAME_record){{% /def %}}
 
+{{% def id="DANE" name="DNS - based Authentication of Named Entities" abbr="DANE" %}} [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities){{% /def %}}
+
 {{% def id="DV" name="Domain-validated certificate" %}} [Certificates](#def-leaf) where the applicant have only proven the control over the domain (and not it's identity, unlike [OV](#def-OV) and [EV](#def-EV) certificates ). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) nor [EV](#def-EV) ): [FAQ](https://letsencrypt.org/docs/faq/). [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
 
 {{% def id="ECC certificates" name="ECC certificates" %}} Certificates using an [Elliptic Curve](#def-ECC) [Key-pair](#def-Key-pair).{{% /def %}}
@@ -115,7 +117,7 @@ lastmod: 2018-11-01
 
 {{% def id="Web Client" name="Web Client" %}} A software capable to communicate with a [Web server](#def-web-server). Example: a web Browser or [cURL](https://en.wikipedia.org/wiki/CURL). [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
-{{% def id="web-server" name="Web Server" %}} A software serving web pages. [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
+{{% def id="web-server" name="Web Server" %}} A software serving web pages (By extension, the hardware server hosting it). [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
 
 {{% def id="X.509" abbr="X.509" %}} The standard defining the format of public key certificates. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 

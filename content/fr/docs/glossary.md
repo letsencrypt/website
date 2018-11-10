@@ -54,6 +54,8 @@ dfn {
 
 {{% def id="DNAME" name="Delegation Name record" abbr="DNAME" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Enregistrement_de_nom_canonique#DNAME_record){{% /def %}}
 
+{{% def id="DANE" name="DNS - based Authentication of Named Entities" abbr="DANE" %}} [Wikipedia](https://fr.wikipedia.org/wiki/DNS_-_based_Authentication_of_Named_Entities){{% /def %}}
+
 {{% def id="DV" name="Domain-validated certificate" %}} [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
 
 {{% def id="ECC certificates" name="ECC certificates" %}}{{% /def %}}
