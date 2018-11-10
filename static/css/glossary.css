@@ -1,0 +1,11 @@
+@keyframes fadeIt {
+  0%   { background-color: #FFCE00; }
+  100% { background-color: #FFFFFF; }
+}
+
+dfn:target{
+  animation: fadeIt 2s ease-out; 
+}
+dfn {
+    font-weight: bold;
+}
