@@ -106,7 +106,7 @@ dfn {
 
 {{% def id="FQDN" english="Fully qualified domain name" abbr="FQDN" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Fully_qualified_domain_name){{% /def %}}
 
-{{% def id="Revocation" name="Révocation" %}} A certificate is valid until it's expiration date, expect if the [CA](#def-CA) says it's been revoked. The certificate may be revoked for various reasons such as the compromission of the private key. Browsers can check if a certificate is revoked using [CRL](#def-CLR) or [OCSP](#def-OCSP) but Let's Encrypt only supports the [OCSP](#def-OCSP) method. https://letsencrypt.org/docs/revoking/ {{% /def %}}
+{{% def id="Revocation" name="Révocation" %}} https://letsencrypt.org/docs/revoking/ {{% /def %}}
 
 {{% def id="root" mname="Certificat racine" english="Root certificate" %}} [Wikipedia](https://fr.wikipedia.org/wiki/Certificat_racine) {{% /def %}}
 
