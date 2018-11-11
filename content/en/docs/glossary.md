@@ -11,11 +11,11 @@ lastmod: 2018-11-01
 {{% def id="ACME-client" name="ACME Client" %}} A software capable to communicate with an ACME server to ask for a [certificate](#def-leaf). {{% /def %}}
 
 
-{{% def id="ACME-server" name="ACME Server" %}} An ACME-compatible server capable to generate [certificates](#def-leaf). Let's Encrypt software, [Boudler](boudler), is ACME-compatible. [Boulder divergences from ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} An ACME-compatible server capable to generate [certificates](#def-leaf). Let's Encrypt software, [Boulder](boulder), is ACME-compatible. [Boulder divergences from ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) {{% /def %}}
 
 {{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" %}} The protocol implemented by [Let's Encrypt](#def-LE). Softwares compatibles with that protocol can use it to communicate with Let's Encrypt to ask for a [certificate](#def-leaf). [ACME draft 16](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
-{{% def id="boudler" name="Boudler" %}} The software implementing ACME, developed and used by [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
+{{% def id="boulder" name="Boulder" %}} The software implementing ACME, developed and used by [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
