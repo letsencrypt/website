@@ -12,7 +12,7 @@ menu:
 * [Commencer](/fr/getting-started/)
 * [Comment ça marche](/fr/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
-* [Glossaire](/fr/docs/glossary/)
+* [Glossaire](/docs/glossary/)
 
 # Subscriber Information
 
