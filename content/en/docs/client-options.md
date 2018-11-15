@@ -139,6 +139,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [LE Manager](https://github.com/analogic/lemanager)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [FreeSSL.tech Auto](https://freessl.tech)
+- [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php)
 
 ## Python
 
