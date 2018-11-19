@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-11-15
+lastmod: 2018-11-19
 ---
 
 {{< lastmod >}}
@@ -127,7 +127,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Perl
 
-- [le.pl](https://github.com/do-know/Crypt-LE
+- [le.pl](https://github.com/do-know/Crypt-LE)
 - [Net::ACME](https://metacpan.org/pod/Net::ACME)
 - [Protocol::ACME](https://metacpan.org/pod/Protocol::ACME)
 
