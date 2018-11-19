@@ -148,8 +148,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         yanchor: "top",
         x: 0,
         y: 1
-      },
-      annotations: [ gHistoryCutover ]
+      }
     }
     let combinedTimeline = document.getElementById('combinedTimeline');
     if (combinedTimeline) {
