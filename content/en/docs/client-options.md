@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-11-19
+lastmod: 2018-11-20
 ---
 
 {{< lastmod >}}
@@ -61,6 +61,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
 - [FreeSSL.tech Auto](https://freessl.tech)
+- [acme-distributed](https://github.com/jannfis/acme-distributed)
 
 ## Bash
 
@@ -163,6 +164,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Multi-Server ACME Cert Management Dashboard](https://github.com/myfreeweb/freshcerts)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
+- [acme-distributed](https://github.com/jannfis/acme-distributed)
 
 ## Rust
 
