@@ -128,7 +128,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Perl
 
-- [le.pl](https://github.com/do-know/Crypt-LE
+- [le.pl](https://github.com/do-know/Crypt-LE)
 - [Net::ACME](https://metacpan.org/pod/Net::ACME)
 - [Protocol::ACME](https://metacpan.org/pod/Protocol::ACME)
 
