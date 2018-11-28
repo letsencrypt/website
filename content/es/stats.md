@@ -10,8 +10,6 @@ menu:
     parent: about
 ---
 
-Al presente, la gr&aacute;fica "Porcentaje de P&aacute;ginas de Web Cargadas por Firefox Usando HTTPS" es actual. Hay trabajo de mantenimiento actualmente y las estad&iacute;sticas "Crecimiento de Let's Encrypt" y "Certificados Let's Encrypt Emitidos por D&iacute;a" no est&aacute; a actualizadas. Esperamos tener estas gr&aacute;ficas funcionando nuevamente pronto.
-
 <div class="figure">
   <h2><a name="growth" href="#growth"
     >Crecimiento de Let's Encrypt</a></h2>
