@@ -10,8 +10,6 @@ menu:
     parent: about
 ---
 
-Actuellement, le graphique "Pourcentage de pages Web chargées par Firefox utilisant HTTPS" est à jour. Des travaux de maintenance sont en cours et les statistiques "Croissance de Let's Encrypt" et "Certificats de Let's Encrypt délivrés par jour" ne sont pas à jour. Nous espérons que ces graphiques seront bientôt opérationnels.
-
 <div class="figure">
   <h2><a name="growth" href="#growth"
     >Croissance de Let's Encrypt</a></h2>
