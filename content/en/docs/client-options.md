@@ -185,6 +185,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 # Libraries
 
+## Delphi
+- [LetsEncryptDelphi](https://github.com/tothpaul/LetsEncryptDelphi)
+
 ## Go
 
 - [Lego](https://github.com/xenolf/lego)
