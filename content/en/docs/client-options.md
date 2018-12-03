@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-11-20
+lastmod: 2018-12-03
 ---
 
 {{< lastmod >}}
@@ -184,6 +184,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 . [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
 
 # Libraries
+
+## Delphi
+- [DelphiACME](https://github.com/tothpaul/DelphiACME) (Embarcadero Delphi)
 
 ## Go
 
