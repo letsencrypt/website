@@ -32,7 +32,7 @@
       {"name":"3CX","url":"https://www.3cx.com/","image":"3cx-logo.png"},
       {"name":"Squarespace","url":"https://www.squarespace.com/","image":"squarespace-logo.png"},
       {"name":"Hawk Host","url":"https://www.hawkhost.com/","image":"hawkhost-logo.png"},
-      {"name":"The Best VPN","url":"https://thebestvpn.com/","image":"bestvpn-logo.png"},
+      {"name":"The Best VPN","url":"https://thebestvpn.com/","image":"thebestvpn-logo.png"},
       {"name":"Jimdo","url":"https://www.jimdo.com/","image":"jimdo-logo.png"},
       {"name":"VTEX","url":"https://www.vtex.com/","image":"vtex-logo.png"},
       {"name":"Uptime Robot","url":"https://uptimerobot.com/","image":"uptime-robot-logo.png"},
@@ -48,7 +48,6 @@
       {"name":"Sakura Internet","url":"https://www.sakura.ad.jp/","image":"sakura-logo.png"},
       {"name":"Fly","url":"https://fly.io/","image":"fly-io-logo.png"},
       {"name":"DuoCircle","url":"https://www.duocircle.com/","image":"duocircle-logo.png"},
-      {"name":"Feedtailor","url":"https://www.feedtailor.jp/","image":"feedtailor-logo.png"},
       {"name":"ISE","url":"https://www.ise.de/","image":"ise-logo.png"},
       {"name":"Private Internet Access","url":"https://www.privateinternetaccess.com/","image":"privateinternetaccess-logo.png"},
       {"name":"Brave","url":"https://brave.com/","image":"brave-logo.png"},
@@ -67,6 +66,9 @@
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
       {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
-      {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"}
+      {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
+      {"name":"Livesport","url":"https://www.livesport.eu/","image":"livesport-logo.png"},
+      {"name":"BestVPN","url":"https://www.bestvpn.com/","image":"bestvpn-logo.png"},
+      {"name":"Nazwa.pl","url":"https://www.nazwa.pl/","image":"nazwa-logo.png"}
 ]
 }

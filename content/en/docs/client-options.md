@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-10-28
+lastmod: 2018-12-03
 ---
 
 {{< lastmod >}}
@@ -61,6 +61,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [WinCertes Windows ACMEv2 client](https://github.com/aloopkin/WinCertes)
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
 - [FreeSSL.tech Auto](https://freessl.tech)
+- [acme-distributed](https://github.com/jannfis/acme-distributed)
 
 ## Bash
 
@@ -112,6 +113,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
 - [acme-nginx](https://github.com/kshcherban/acme-nginx)
 - [ngxpkg](https://github.com/webpkg/ngxpkg)
+- [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php) (Reverse proxy to serve multiple internal servers based on internal DNS)
 
 ## Node.js
 
@@ -126,7 +128,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Perl
 
-- [le.pl](https://github.com/do-know/Crypt-LE
+- [le.pl](https://github.com/do-know/Crypt-LE)
 - [Net::ACME](https://metacpan.org/pod/Net::ACME)
 - [Protocol::ACME](https://metacpan.org/pod/Protocol::ACME)
 
@@ -138,6 +140,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [LE Manager](https://github.com/analogic/lemanager)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [FreeSSL.tech Auto](https://freessl.tech)
+- [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php)
 
 ## Python
 
@@ -161,6 +164,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Multi-Server ACME Cert Management Dashboard](https://github.com/myfreeweb/freshcerts)
 - [Acmesmith, An effective ACME client: Manage keys on the cloud (AWS and more)](https://github.com/sorah/acmesmith)
 - [schubergphilis/chef-acme](https://github.com/schubergphilis/chef-acme)
+- [acme-distributed](https://github.com/jannfis/acme-distributed)
 
 ## Rust
 
@@ -180,6 +184,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 . [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
 
 # Libraries
+
+## Delphi
+- [DelphiACME](https://github.com/tothpaul/DelphiACME) (Embarcadero Delphi)
 
 ## Go
 
