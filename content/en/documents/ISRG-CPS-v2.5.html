@@ -1,8 +1,8 @@
 ---
-title: ISRG CPS v2.4
-slug: isrg-cps-v2.4
+title: ISRG CPS v2.5
+slug: isrg-cps-v2.5
 top_graphic: 3
-date: 2018-09-20
+date: 2018-11-14
 ---
 
 <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
@@ -100,9 +100,11 @@ date: 2018-09-20
 .markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
 .markdown-preview[data-use-github-style] code { color: inherit; }
 .markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview ul label { vertical-align: top; }
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
@@ -509,6 +511,12 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
   color: #c678dd;
 }
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
 .syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
   color: #e06c75;
 }
@@ -578,8 +586,8 @@ pre.editor-colors .fold-marker:after {
 
 <h1 align="center">Internet Security Research Group (ISRG)</h1>
 <h1 align="center">Certification Practice Statement</h1>
-<h2 align="center">Version 2.4<br>
-                   Updated September 20, 2018<br>
+<h2 align="center">Version 2.5<br>
+                   Updated November 14, 2018<br>
                    Approved by the ISRG Policy Management Authority</h2>
 
 <div class='markdown-preview' data-use-github-style>
@@ -681,6 +689,11 @@ Commons, PO Box 1866, Mountain View, CA 94042, USA.</p>
 <td>September 20, 2018</td>
 <td>Define Certificate Problem Reports in Section 1.6.1. Add information about submitting Certificate Problem Reports to Section 1.5.2.</td>
 <td>2.4</td>
+</tr>
+<tr>
+<td>November 14, 2018</td>
+<td>Remove user notice text from end-entity certificate profile in Section 7.1.</td>
+<td>2.5</td>
 </tr>
 </tbody>
 </table>
@@ -1420,7 +1433,7 @@ Extensions are not marked critical unless specifically described here as critica
 </tr>
 <tr>
 <td>Certificate Policies</td>
-<td>CAB Forum Domain Validated (2.23.140.1.2.1)<br>ISRG Domain Validated (1.3.6.1.4.1.44947.1.1.1)<br>CPS Qualifier: Pointer to this CPS<br>User Notice Qualifier: Message to potential relying parties</td>
+<td>CAB Forum Domain Validated (2.23.140.1.2.1)<br>ISRG Domain Validated (1.3.6.1.4.1.44947.1.1.1)<br>CPS Qualifier: Pointer to this CPS</td>
 </tr>
 <tr>
 <td>Authority Information Access</td>

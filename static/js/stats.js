@@ -9,11 +9,6 @@ var dateFormat = /\d{4}-\d{2}-\d{2}/;
 var gHttpsData = { countryList: [], osList: [], dateToCountryOSPageloadData: {},
                    dateToHistoricalPageloadData: {} };
 
-var gHistoryCutover = {
-  x: "2017-07-03", y: 33926513, xref: "x", yref: "y",
-  text: "Methodology Change", showarrow: true, arrowhead: 7, ax: -40, ay: 40
-};
-
 // Process a string `s` and, for each row (line), call `f()` with an
 // array of each tab-separated value within that row.
 function parse_delim(s, delim, f) {
@@ -59,13 +54,13 @@ function insertPoint(trace, x, y) {
 
 function tsvListener() {
   var tIssued = { type: "scatter", name: "Issued", x:[], y:[],
-                  fill: "tozeroy", line: { color: '#2a7ae2' } }
+                  fill: "tozeroy", line: { color: someGreen } }
   var tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
-                  line: { color: '#fa3a12' } }
+                  line: { color: leOrange, dash: 'dot' } }
   var tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active",
-                x:[], y:[] }
+                x:[], y:[], line: { color: leBlue, dash: 'line' } }
   var tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
-                  marker: { symbol: "diamond" } }
+                  marker: { symbol: "diamond" }, line: { color: someGreen, dash: 'dash' } }
 
   parse_delim(this.responseText, '\t', function(row){
     if (!dateFormat.test(row[0])) {
@@ -100,8 +95,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         yanchor: "top",
         x: 0,
         y: 1
-      },
-      annotations: [ gHistoryCutover ]
+      }
     }
     let activeUsage = document.getElementById('activeUsage');
     if (activeUsage) {
@@ -154,8 +148,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         yanchor: "top",
         x: 0,
         y: 1
-      },
-      annotations: [ gHistoryCutover ]
+      }
     }
     let combinedTimeline = document.getElementById('combinedTimeline');
     if (combinedTimeline) {
@@ -269,12 +262,16 @@ function importHistoricalGlobalData(traceObj, stackMovingAvg) {
   }
 }
 
+let leBlue = '#103a71';
+let leOrange = '#ffa409';
+let someGreen = '#2ca02c';
+
 // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
 function httpsPlot() {
   let traces = [];
 
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "All users" }
+    let traceObj = { type: "scatter", x:[], y:[], name: "All users", line: { color: leBlue } }
     let stackMovingAvg = [];
     importHistoricalGlobalData(traceObj, stackMovingAvg);
     httpsDerivePageloadsFromNormalizedData(traceObj, () => {
@@ -283,21 +280,14 @@ function httpsPlot() {
     traces.push(traceObj);
   }
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Germany users" }
-    httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-      return (country == "DE");
-    });
-    traces.push(traceObj);
-  }
-  {
-    let traceObj = { type: "scatter", x:[], y:[], name: "USA users" }
+    let traceObj = { type: "scatter", x:[], y:[], name: "USA users", line: { color: leOrange, dash: 'dot' } }
     httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
       return (country == "US");
     });
     traces.push(traceObj);
   }
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Japan users" }
+    let traceObj = { type: "scatter", x:[], y:[], name: "Japan users", line: { color: someGreen, dash: 'dash' } }
     httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
       return (country == "JP");
     });
