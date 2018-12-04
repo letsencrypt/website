@@ -10,29 +10,30 @@ menu:
 
 ## 帮助（支持）
 
-If you have questions about how to use Let's Encrypt, please ask on [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+如果您在使用Let's Encrypt过程中有任何疑问，请在[Let's Encrypt论坛](https://community.letsencrypt.org/)提问.
 
-## Press Inquiries
+## 新闻咨询
 
-Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
+发送邮件至 [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
-## Sponsorship
+## 赞助
 
-Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
+发送邮件至 [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mailing Lists
+## 邮件列表
 
-For information about various technical mailing lists, please visit our [Get Involved](/getinvolved/) page.
+有关各种技术邮件列表的信息，请访问我们的[参与](/getinvolved/)页面。
 
-## Security
+## 安全问题
 
-Please do not write to this address unless your message concerns a security issue with Let's Encrypt.
+除非您的消息涉及Let's Encrypt的安全问题，否则请勿向此地址发送邮件。
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+发送邮件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
-### Encrypted Communication
+### 通讯加密
 
-To communicate securely with the Security Team, please utilize our GPG key. It consists of several subkeys signed by an offline master key. Any recent version of GnuPG will support this kind of hybrid key. The current key structure is:
+请使用我们的GPG密钥和我们的安全团队安全沟通。 它由几个由离线主密钥签名的子密钥组成。 任何最新版本的GnuPG都将支持这种混合密钥。 目前的密钥结构为：
+
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
@@ -43,6 +44,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
 sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
 ```
 
-You can download the [GPG Public Key](/security_letsencrypt.org-publickey.asc) here, or utilize your favorite key server.
+您可以在此处下载[GPG公钥](/security_letsencrypt.org-publickey.asc)，或使用您喜欢的密钥服务器。
 
-The key fingerprint must match `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+公钥指纹需匹配 `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
