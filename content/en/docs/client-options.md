@@ -62,6 +62,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
+- [LECert](https://github.com/skoerfgen/LECert)
 
 ## Bash
 
@@ -212,6 +213,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## PHP
 
 - [kelunik/acme-client](https://github.com/kelunik/acme)
+- [LECert](https://github.com/skoerfgen/LECert)
 
 ## Python
 
