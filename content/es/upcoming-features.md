@@ -4,9 +4,15 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
+## Validaci&oacute;n de Multi-Perspectiva
+
+* ETA: Q2 2019
+
+Actualmente Let's Encrypt hace validaci&oacute;nes desde una sola perspectiva de red. Estamos planificando empezar a validar desde multiples perspectivas de red.
+
 ## Ra&iacute;z e Intermedios ECDSA
 
-* ETA: Q1 2019
+* ETA: Q2 2019
 
 Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermedios RSA. Let's Encrypt generar&aacute; una ra&iacute;z ECDSA e intermedios que se pueden usar para firmar certificados *end-entity*.
 

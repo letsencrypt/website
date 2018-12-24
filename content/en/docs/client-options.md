@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-12-03
+lastmod: 2018-12-06
 ---
 
 {{< lastmod >}}
@@ -62,6 +62,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell)
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
+- [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 
 ## Bash
 
@@ -212,6 +213,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## PHP
 
 - [kelunik/acme-client](https://github.com/kelunik/acme)
+- [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 
 ## Python
 
@@ -257,6 +259,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
 - [ruxy](https://ruxyserver.com)
 - [ISPConfig](https://www.ispconfig.org/)
+- [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
 
 # Adding your client/project
 

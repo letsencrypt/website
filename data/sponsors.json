@@ -5,12 +5,12 @@
       {"name":"Cisco","url":"https://www.cisco.com/","image":"cisco-logo.png"},
       {"name":"Electronic Frontier Foundation","url":"https://www.eff.org/","image":"eff-logo.png"},
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
-      {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true}
+      {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
+      {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrustssl.com/","image":"identrust-logo.png"},
-      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
-      {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"}
+      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"}
 ],
 "silver":[
       {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
