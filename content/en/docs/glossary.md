@@ -47,6 +47,11 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} To determine if a system trust a [certificates](#def-leaf), it must have a chain of trust ending on a [root](#def-root) present on it's [certificate store](#def-store). The chain is the list of intermediate leading to that root: the [lead certificate](#def-leaf) is always signed by a [intermediate](#def-intermediate) (which can be signed by another [intermediate](#def-intermediate) and so on) with is sign by a root. Note: the path it not always unique, and when a website present a certificate chain leading to one root, the web client may decide to use another chain, ending in another root, to validate the certificate (This is especially important for [Public Key Pinning](#def-PKP)). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
+
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} A named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements. [ISRG Certificate Policy](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} A statement of the practices that a certification authority employs in issuing, managing, revoking, and renewing or re-keying certificates. [ISRG Certification Practice Statement](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} A method to inform about the [revocation](#def-revocation) status of a [certificate](#def-leaf). [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
 {{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} A signed file containing the needed information required by the [CA](#def-CA) to generated a certificate. Relevant information for [Let's Encrypt](#def-LE) are the [Common Name](#def-CN) and [Subject Alternative Names](#def-SAN). [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
@@ -103,7 +108,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} also known as *TLS Certificate Status Request extension*, is a way for a [Web server](#def-web-server) to send to the [Web client](#def-web-client) to send an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the [Web client](#def-web-client) doesn't needs to contact the [CA](#def-CA) to check the validity of the certificate, improving speed and privacy. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) {{% /def %}}
 
-{{% def id="OID" name="Object identifiers" abbr="OID" %}} Hierarchical identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC.  [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="Object identifiers" abbr="OID" %}} Hierarchical identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC. [Certificate policy](#def-CP) and [Certification Practice Statement](#def-CPS) define OIDs usage by [Certificate Authorities](#def-CA). [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
 {{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" %}} A method to check the [Revocation](#def-revocation) of a [certificate](#def-leaf). [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
