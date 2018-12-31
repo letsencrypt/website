@@ -145,6 +145,8 @@ Note for translators:
 
 {{% def id="TLD" name="Top-Level Domain" abbr="TLD" %}} Highest level in the hierarchical Domain Name System, such as country-code top-level domains (ccTLD) for example `.de` (Germany), `.cn` (China) and generic top-level domains (gTLD) for example `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
+{{% def id="TLSA" abbr="TLSA" %}} See [DANE](#def-DANE). {{% /def %}}
+
 {{% def id="UCC" name="Unified Communications Certificate" abbr="UCC" %}} See [Subject Alternative Name (SAN)](#def-SAN) {{% /def %}}
 
 {{% def id="web-browser" name="Web browser" %}} A [web client](#def-web-client) used to displays web pages. Example: *Mozilla Firefox*, *Google Chrome* or *Internet Explorer*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
