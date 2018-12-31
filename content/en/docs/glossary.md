@@ -70,7 +70,7 @@ Note for translators:
 
 {{% def id="DANE" name="DNS - based Authentication of Named Entities" abbr="DANE" %}} A mechanism using DNS to indicate how to verity the authenticity of the [certificate](#def-leaf) presented.  [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
-{{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DANE" %}} A mechanism to authenticate DNS response. [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
+{{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} A mechanism to authenticate DNS response. [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
 {{% def id="DV" name="Domain-validated certificate" %}} [Certificates](#def-leaf) where the applicant have only proven the control over the domain (and not it's identity, unlike [OV](#def-OV) and [EV](#def-EV) certificates ). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) nor [EV](#def-EV) ): [FAQ](https://letsencrypt.org/docs/faq/). [OID](#def-OID) [2.23.140.1.2.1](https://cabforum.org/object-registry/) and [1.3.6.1.4.1.44947.1.1.1](https://github.com/letsencrypt/cp-cps/blob/master/CPS.md#dv-ssl-end-entity-certificate) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
