@@ -152,7 +152,7 @@ Note for translators:
 
 {{% def id="web-browser" name="Web browser" %}} A [web client](#def-web-client) used to display web pages. Example: *Mozilla Firefox*, *Google Chrome* or *Internet Explorer*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
-{{% def id="web-client" name="Web client" %}} Software capable of communicating with a [Web server](#def-web-server). Example: a [web browser](#def-web-browser) or [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
+{{% def id="web-client" name="Web client" %}} Software capable of communicating with a [web server](#def-web-server). Example: a [web browser](#def-web-browser) or [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
 
 {{% def id="web-server" name="Web server" %}} Software serving web pages (or, by extension, the hardware server hosting it). [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
 
