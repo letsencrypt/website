@@ -37,3 +37,4 @@ TAB은 주요 후원기관의 기술 전문가들과 CA/PKI 산업군에서 전�
 * <strong>Stephen Kent</strong> (Independent)
 * <strong>Karen O'Donoghue</strong> (Internet Society)
 * <strong>Ivan Ristic</strong> (Independent)
+* <strong>Yueting Lee</strong> (Facebook)

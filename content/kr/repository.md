@@ -22,6 +22,7 @@ menu:
 
 # ISRG 인증 정책
 
+* [v2.2, September 20, 2018](/documents/isrg-cp-v2.2/)
 * [v2.1, February 6, 2018](/documents/isrg-cp-v2.1/)
 * [v2.0, May 22, 2017](/documents/isrg-cp-v2.0/)
 * [v1.3, April 13, 2017](/documents/ISRG-CP-v1.3.pdf)
@@ -31,6 +32,8 @@ menu:
 
 # ISRG 인증 실무 준칙
 
+* [v2.5, November 14, 2018](/documents/isrg-cps-v2.5/)
+* [v2.4, September 20, 2018](/documents/isrg-cps-v2.4/)
 * [v2.3, May 4, 2018](/documents/isrg-cps-v2.3/)
 * [v2.2, March 10, 2018](/documents/isrg-cps-v2.2/)
 * [v2.1, February 6, 2018](/documents/isrg-cps-v2.1/)
@@ -52,6 +55,7 @@ menu:
 
 # ISRG 법적 투명성 보고서
 
+* [October 1, 2018](/documents/ISRG-Legal-Transparency-Report-October-1-2018.pdf)
 * [April 1, 2018](/documents/ISRG-Legal-Transparency-Report-April-1-2018.pdf)
 * [October 1, 2017](/documents/ISRG-Legal-Transparency-Report-October-1-2017.pdf)
 * [April 1, 2017](/documents/ISRG-Legal-Transparency-Report-April-1-2017.pdf)
