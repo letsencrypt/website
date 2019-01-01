@@ -1,8 +1,17 @@
---- title: 기부 linkTitle: "기부하기" slug: donate top_graphic: 3 no_donate_footer: true menu: main: weight: 30 parent: donate
+---
+title: 기부
+linkTitle: "기부하기"
+slug: donate
+top_graphic: 3
+no_donate_footer: true
+menu:
+  main:
+    weight: 30
+    parent: donate
 ---
 
 <div class="donate-page">
-  <div class="text-center" style="display: none;">
+  <div class="text-center">
     <p>모든 사람들이
       <span style="font-size: 120%; font-weight: bold; color: #2B3C69;">안전하면서도 사생활이 존중되는 웹</span> 경험을 가능케 하는 중입니다. HTTPS 인증서 취득을
       <span style="font-size: 120%; font-weight: bold; color: #2B3C69;">쉽게</span> 만들었습니다. 쉬운 사용이 선택의 핵심입니다. 인증서를
@@ -12,23 +21,19 @@
     </p>
   </div>
 
-  <div class="text-center fundraiser-wrapper">
-    <h2>Support a more secure Web with a donation to Let’s Encrypt!</h2>
-    <p>We want to thank you for supporting Let’s Encrypt and HTTPS adoption across the Web. For a limited time, we will send
-      a thank-you gift when you donate at one of the below levels.</p>
-
-    <div id="donationRoot"></div>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="/js/fundraiser.js"></script>
-    <link rel="stylesheet" href="/css/fundraiser.css">
-    <br>
-    <p>We are grateful for your support at any level. If you prefer to donate a different amount, please use the module below:</p>
+  <div class="text-center">
+    <script src="https://donorbox.org/widget.js" type="text/javascript"></script>
+    <iframe src="https://donorbox.org/embed/support-lets-encrypt?recurring=true&hide_donation_meter=true" height="685px"
+      width="100%" style="max-width:423px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox"
+      frameborder="0" scrolling="no"></iframe>
   </div>
 
   <div class="text-center">
-    <script src="https://donorbox.org/widget.js" type="text/javascript"></script>
-    <iframe src="https://donorbox.org/embed/support-lets-encrypt?recurring=true&hide_donation_meter=true" height="685px" width="100%"
-      style="max-width:423px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>
+    <p> *For a limited time, become a recurring donor of $20+/month or annually at $240+/year and receive a Let’s Encrypt
+      sticker pack as a thank you gift from us!*
+      After campaign is complete, we will send an e-mail to all $20+ recurring donors requesting a mailing address for
+      the gift. Let’s Encrypt will not retain these addresses for any reason other than fulfillment of this sticker pack.
+      Current recurring donors of $20+/month will also be included.</p>
   </div>
 
   <div class="text-center">

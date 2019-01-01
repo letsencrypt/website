@@ -8,30 +8,33 @@ lastmod: 2018-03-12
 
 {{< lastmod >}}
 
-We highly recommend testing against our staging environment before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
+실운영 환경을 사용하기 전에 준비 환경을 테스트하는 것이 좋습니다. 이렇게 하면 신뢰할 수 있는 인증서를 발급하기 전에 제대로 작동하는지 확인할 수 있고 속도 제한에 맞춰 달릴 기회가 줄어 듭니다.
 
-The ACME URL for our staging environment is:
+준비 환경의 ACME URL은 다음과 같습니다.
 
 `https://acme-staging.api.letsencrypt.org/directory`
 
-If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
+Certbot을 사용하고 있다면 `--staging` 플래그와 함께 준비 환경을 사용할 수 있습니다. 다른 ACME 클라이언트의 경우, 준비 환경에서 테스트하는 방법에 대한 지침을 읽으십시오.
 
-The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) is:
+[ACME v2 준비 환경](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605)을 위한 ACME URL은 다음과 같습니다.
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment. Please note the v2 staging environment requires a v2 compatible ACME client.
+v2 준비 환경에는 v2 호환 ACME 클라이언트가 필요하며 Certbot은 현재 ACME v2를 지원하지 않습니다.
 
-# Rate Limits
+# 속도 제한
 
-The staging environment uses the same rate limits as [described for the production environment](/docs/rate-limits/) with the following exceptions:
+준비 환경에서는 다음 예외를 제외하고 [실운영 환경에 대해 설명한 것](/docs/rate-limits/)과 동일한 속도 제한을 사용합니다.
 
-* The **Certificates per Registered Domain** limit is 30,000 per week.
-* The **Duplicate Certificate** limit is 30,000 per week.
-* The **Failed Validations** limit is 60 per hour.
-* The **Accounts per IP Address** limit is 50 accounts per 3 hour period per IP.
-* For ACME v2, the **New Orders** limit is 1,500 new orders per 3 hour period per account.
+* **등록 된 도메인 당 인증서** 수 한도는 주당 30,000입니다.
+* **중복 인증서** 한도는 주당 30,000입니다.
+* **실패한 유효성 검사** 제한은 시간당 60입니다.
+* **계정 당 IP 주소** 제한은 IP 당 3시간, 3시간당 50계정입니다.
 
-# Root Certificate
+# Root 인증서
 
-The staging environment intermediate certificate (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["Fake LE Root X1"](/certs/fakelerootx1.pem) certificate to your testing trust store. Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
+준비 환경 중간 인증서 (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem))는 브라우저/클라이언트 신뢰 저장소에 **없는** root 인증서에 의해 발급됩니다. 테스팅 목적으로 준비 환경을 신뢰하도록 테스트 전용 클라이언트를 수정하려는 경우, 테스트 신뢰 저장소에 ["Fake LE Root X1"](/certs/fakelerootx1.pem) 인증서를 추가하면 됩니다. 중요 사항: 평범한 탐색이나 다른 활동에 사용하는 신뢰 저장소에 준비 root나 중간 인증서를 추가하지 마십시오. 이들은 감사나 실운영 root와 동일한 표준을 따르지 않으므로 테스트 외 다른 용도로 사용하기에 안전하지 않습니다.
+
+# Certificate Transparency
+
+The staging environment submits pre-certificates to the Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log and includes returned SCTs in the issued certificates.

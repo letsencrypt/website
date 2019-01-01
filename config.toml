@@ -1,12 +1,11 @@
 baseURL = "https://letsencrypt.org/"
-languageCode= "en-us"
 
-
-contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
-disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+enableRobotsTXT = true
 
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
@@ -24,7 +23,7 @@ crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more
 
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
-time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700" 
+time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
 time_format_default = "Jan 2, 2006"
 
 # Useful when translating.
@@ -33,12 +32,14 @@ enableMissingTranslationPlaceholders = true
 [languages]
 [languages.en]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/en"
 languageName ="English"
+languageCode= "en-us"
 # Weight used for sorting.
-weight = 1
+weight = 10
 description = """
   Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit Internet Security Research Group (ISRG).
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.en.menu.main]]
  name = "Get Help"
@@ -55,37 +56,153 @@ description = """
  identifier = "about"
  url = "/about/"
  [[languages.en.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.en.menu.main]]
  name = "Service Status"
  weight = 60
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
+ [[languages.en.menu.main]]
+ name = "Careers"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
-#[languages.no]
-#title = "Let's Encrypt - gratis SSL/TLS-sertifikat"
-#description = "Let&rsquo;s&nbsp;Encrypt er ein gratis og ..."
-#languageName ="Norsk"
-#weight = 2
-#[[languages.no.menu.main]]
-# name = "Få hjelp"
-# weight = 20
-# url = "https://community.letsencrypt.org/"
-# [[languages.no.menu.main]]
-# name = "Doner"
-# weight = 30
-# identifier = "donate"
-# url = "/donate/"
-# [[languages.no.menu.main]]
-# name = "Om oss"
-# weight = 40
-# identifier = "about"
-# url = "/about/"
-# [[languages.no.menu.main]]
-# name = "Service Status"
-# weight = 60
-# identifier = "status"
-# parent = "about"
-# url = "https://letsencrypt.status.io/"
+[languages.fr]
+title = "Let's Encrypt - Certificats SSL/TLS gratuits"
+languageName = "Français"
+contentDir = "content/fr"
+languageCode= "fr-fr"
+# Weight used for sorting.
+weight = 20
+description = """
+  Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
+  apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
+"""
+[[languages.fr.menu.main]]
+ name = "Obtenir de l'aide"
+ weight = 20
+ url = "https://community.letsencrypt.org/c/help/aide-en-francais"
+ [[languages.fr.menu.main]]
+ name = "Faire un don"
+ weight = 30
+ identifier = "donate"
+ url = "/fr/donate/"
+ [[languages.fr.menu.main]]
+ name = "À propos de nous"
+ weight = 40
+ identifier = "about"
+ url = "/fr/about/"
+ [[languages.fr.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.fr.menu.main]]
+ name = "État du service"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.fr.menu.main]]
+ name = "Emplois"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
+ [languages.es]
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/es"
+languageName ="Español"
+languageCode= "es-us"
+# Weight used for sorting.
+weight = 30
+description = """
+  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratuita, automatizada, y abierta traida a ustedes por la organizaci&oacute;n sin &aacute;nimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.es.menu.main]]
+ name = "Consigue Ayuda"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.es.menu.main]]
+ name = "Donar"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.es.menu.main]]
+ name = "Acerca De"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+  [[languages.es.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.es.menu.main]]
+ name = "Status de Servicio"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.es.menu.main]]
+ name = "Trabajos"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
+[languages.ko]
+title = "Let's Encrypt - 무료 SSL/TLS 인증서"
+contentDir = "content/ko"
+languageName ="Korean"
+languageCode= "ko-kr"
+# Weight used for sorting.
+weight = 40
+description = """
+  Let&rsquo;s&nbsp;Encrypt는 <a href="https://www.abetterinternet.org/">비영리 인터넷 보안 연구 그룹 (ISRG)에서 가져온 무료, 자동 및 공개 인증 기관입니다.</a>.
+"""
+[[languages.ko.menu.main]]
+ name = "도움말"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.ko.menu.main]]
+ name = "기부"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.ko.menu.main]]
+ name = "소개"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.ko.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.ko.menu.main]]
+ name = "서비스 현황"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.ko.menu.main]]
+ name = "채용"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
