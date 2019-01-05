@@ -49,7 +49,6 @@ Note for translators:
 
 {{% def id="certificate" name="Certificate" %}} A file in a [particular format](#def-X509) that contains a public key and other data describing when to use that public key. The most common kind of certificate is a [leaf certificate](#def-leaf). There are also [intermediate](#def-intermediate) and [root](#def-root) certificates. {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE), Sectigo, and DigiCert are Certificate Authorities. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificate for the corresponding domain. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](https://letsencrypt.org/docs/caa/) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
