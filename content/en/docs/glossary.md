@@ -102,7 +102,7 @@ Note for translators:
 
 {{% def id="IDNA" name="Internationalized Domain Names for Applications" abbr="IDNA" %}} See [internationalized domain name](#def-IDN). {{% /def %}}
 
-{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} Domain name with characters others than `a` to `z`, `0` to `9` and the hyphen (`-`). They can for example contain Arabic, Chinese, Cyrillic, Tamil, Hebrew or Latin alphabet-based characters with diacritics or ligatures. The encoded representation of an IDN domains starts with `xn--`. IDNs are supported by [Let's Encrypt](#def-LE): https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [Wikipedia](https://en.wikipedia.org/wiki/Internationalized_domain_name) [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} Domain name with characters others than `a` to `z`, `0` to `9` and the hyphen (`-`). They can for example contain Arabic, Chinese, Cyrillic, Tamil, Hebrew or Latin alphabet-based characters with diacritics or ligatures. The encoded representation of an IDN domains starts with `xn--`. IDNs are supported by [Let's Encrypt](#def-LE): https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [Wikipedia](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
 {{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} The organization behind [Let's Encrypt](#def-LE): https://www.abetterinternet.org/about/. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
