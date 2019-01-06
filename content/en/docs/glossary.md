@@ -49,8 +49,9 @@ Note for translators:
 
 {{% def id="certificate" name="Certificate" %}} A file in a [particular format](#def-X509) that contains a public key and other data describing when to use that public key. The most common kind of certificate is a [leaf certificate](#def-leaf). There are also [intermediate](#def-intermediate) and [root](#def-root) certificates. {{% /def %}}
 
-
 {{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificate for the corresponding domain. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](https://letsencrypt.org/docs/caa/) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+
+{{% def id="extension" name="Certificate extension" %}} In certificates, most fields are defined by extensions. For instance, [Subject Alternative Names] and [AIA](#def-AIA) are extensions. The extension mechanism allows creating new fields that were not part of the original [X.509](#def-X509) standard. {{% /def %}}
 
 {{% def id="CABF" name="CA/Browser Forum" %}} A voluntary consortium of certification authorities, vendors of Internet browser software, operating systems, and other PKI-enabled applications. The CA/Browser Forum publishes the [Baseline Requirements](#def-BRs). [Let's Encrypt](#def-LE) is a member of the CA/Browser Forum. [Wikipedia](https://en.wikipedia.org/wiki/CA/Browser_Forum) {{% /def %}}
 
@@ -68,13 +69,15 @@ Note for translators:
 
 {{% def id="store" name="Certificate Store" %}} A certificate store contains a list of trusted [roots](#def-root). Operating systems (such as Windows, Android or Debian) and [web browsers](#def-web-browser) (such as Firefox) maintain a certificate store. Browsers without one rely on the operating systems' certificate store. [Certificates](#def-leaf) provided by [Let's Encrypt](#def-LE) are [trusted by most certificates stores](https://letsencrypt.org/certificates/). {{% /def %}}
 
+{{% def id="subject" name="Certificate subject" %}} The "Subject" field of a certificate field indicating what a certificate is about. This commonly contains fields like [Common Name](#def-CN), Country, and Organization. {{% /def %}}
+
 {{% def id="CT" name="Certificate Transparency" abbr="CT" %}} To improve security, certificates (or [precertificates](#def-precertificate)) must be published in Certificate Transparency Logs: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) generates and publishes [precertificates](#def-precertificate), and includes in the subsequent [certificate](#def-leaf) a list of [SCTs](#def-SCT) for the precertificate. Some [browsers](#def-web-browser), such as Google Chrome, require the presence of this proof in order to validate the certificate. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} A component of [Certificate Transparency](#def-CT) that accepts submissions of certificates and [precertificates](#def-precertificate) and incorporates them into a permanent, publicly accessible list. {{% /def %}}
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} Part of a certificate's [Subject](#def-Subject) describing what the certificate is about. For [roots](#def-root) and [intermediates](#def-intermediate) it's the human-readable name of the [certificate authority](#def-CA). For [leaf certificate](#def-leaf) it's one of the domain names on the certificate. Note: The common name is limited to 63 characters. It is an obsolete method of indicating a domain name to which the certificate applies, since current Internet standards expect software to check only the [Subject Alternative Names](#def-SAN) in order to determine the applicability of a certificate. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} An issuing certificate may be signed by more than one [root](#def-root). For example, [Let's Encrypt](#def-LE) [intermediates](intermediate) are cross signed by [IdenTrust](#def-IdenTrust), because at launch the Let's Encrypt root was not yet trusted by [certificate stores](#def-store). Technically, it's achieved with two issuing certificates, using the same [Subject](#def-Subject) and the same [Key-pair](#def-Key-pair), one signed by the private key of a Let's Encrypt root and the other signed by the private key of an IdenTrust's root: https://letsencrypt.org/certificates/. [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} An issuing certificate may be signed by more than one [root](#def-root). For example, [Let's Encrypt](#def-LE) [intermediates](intermediate) are cross signed by [IdenTrust](#def-IdenTrust), because at launch the Let's Encrypt root was not yet trusted by [certificate stores](#def-store). Technically, it's achieved with two issuing certificates, using the same [Subject](#def-Subject) and the same [Key-pair](#def-key-pair), one signed by the private key of a Let's Encrypt root and the other signed by the private key of an IdenTrust's root: https://letsencrypt.org/certificates/. [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} A mechanism using DNS to indicate how to verify the authenticity of the [certificate](#def-leaf) or encryption key presented.  [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -82,17 +85,17 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} A [certificate](#def-leaf) where the applicant has only proven its control over the domain (and not the identity of the requesting organization. [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) nor [EV](#def-EV)): [FAQ](https://letsencrypt.org/docs/faq/) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" abbr_first="1" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA for [end-entity or leaf certificates](#def-leaf), but not yet for the entire [chain](#def-chain): https://letsencrypt.org/upcoming-features/ {{% /def %}}
+
 {{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
 
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities in the [Web PKI](#def-web-pki), like [Let's Encrypt](#def-LE), can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities in the [Web PKI](#def-web-pki), like [Let's Encrypt](#def-LE), can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} An type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm " abbr="ECDSA" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA for [end-entity or leaf certificates](#def-leaf), but not yet for the entire [chain](#def-chain): https://letsencrypt.org/upcoming-features/ {{% /def %}}
+{{% def id="end-user-certificate" name="End-user certificate" %}} See [Leaf certificate (end-entity certificate)](#def-leaf). {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
-
-{{% def id="extension" name="Certificate extension" %}} In certificates, most fields are defined by extensions. For instance, [Subject Alternative Names] and [AIA](#def-AIA) are extensions. The extension mechanism allows creating new fields that were not part of the original [X.509](#def-X509) standard. {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is a *FQDN*. {{% /def %}}
 
@@ -106,9 +109,9 @@ Note for translators:
 
 {{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} The organization behind [Let's Encrypt](#def-LE): https://www.abetterinternet.org/about/. [Wikipedia](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
-{{% def id="Issuer" name="Issuer" %}} A certificate field describing which certificate signed the current one. For instance, the Issuer field of a Let's Encrypt end-entity certificate might be "Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3". It commonly contains fields like [Common Name](#def-CN), Country, and Organization. The Issuer field always matches some certificate's [Subject](#def-Subject) field. For [self-signed](#def-self-signed) certificates like [roots](#def-root), the Issuer is the same as the Subject. The term "issuer" may also be used to indicate a certificate that issues other certificates (an [intermediate](#def-intermediate) or root), or an organization that issues certificates.{{% /def %}}
+{{% def id="issuer" name="Certificate issuer" %}} The "Issuer" field of a certificate describes which certificate signed the current one. For instance, the Issuer field of a Let's Encrypt end-entity certificate might be "Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3". It commonly contains fields like [Common Name](#def-CN), Country, and Organization. The Issuer field always matches some certificate's [Subject](#def-Subject) field. For [self-signed](#def-self-signed) certificates like [roots](#def-root), the Issuer is the same as the Subject. The term "issuer" may also be used to indicate a certificate that issues other certificates (an [intermediate](#def-intermediate) or root), or an organization that issues certificates.{{% /def %}}
 
-{{% def id="Key-pair" name="Key-pair" %}} A combination of a private key and public key used to sign or encrypt. The public key is commonly embedded in a certificate, while the private key is stored on its own and should be kept secret. A key pair can be used to encrypt and decrypt, to sign and verify data, or to negotiate secondary keys, depending on the application. [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography) {{% /def %}}
+{{% def id="key-pair" name="Key-pair" %}} A combination of a private key and public key used to sign or encrypt. The public key is commonly embedded in a certificate, while the private key is stored on its own and should be kept secret. A key pair can be used to encrypt and decrypt, to sign and verify data, or to negotiate secondary keys, depending on the application. [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography) {{% /def %}}
 
 {{% def id="leaf" name="Leaf certificate (end-entity certificate)" %}} Most commonly, a certificate signed by an [intermediate](#def-intermediate), valid for a set of domains and not able to sign other certificates. This is the type of certificate that [ACME clients](#def-ACME-client) request, and that [web servers](#def-web-server) use. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate) {{% /def %}}
 
@@ -116,13 +119,13 @@ Note for translators:
 
 {{% def id="mixed-content" name="Mixed content" %}} When an HTTPS webpage loads sub-resources (Javascript, CSS or images) over HTTP. [Browsers](#def-web-browser) may block mixed content, or mark the page as less secure when mixed content is present: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. To fix a mixed content problem, a web developer must change their pages so all resources use HTTPS URLs. [Developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) built into browsers can be used to find out which resources are causing mixed content problems. {{% /def %}}
 
+{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} A method to check the [revocation](#def-revocation) status of a [certificate](#def-leaf). In other words, a way to check whether a [Certificate Authority](#def-CA) indicates that the certificate should no longer be considered valid, even though its expiration date has not yet been reached. This request can create privacy problems because it allows the certificate authority, and Internet service providers, to directly observe who is visiting which sites. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+
 {{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} A [certificate](#def-leaf) extension, informing the [browser](#def-web-browser) that the [web server](#def-web-server) with that certificate must use [OCSP stapling](#def-OCSP-staping). It's used to require that an up-to-date [revocation](#def-revocation) status of the [certificate](#def-leaf) is confirmed by the web server on every connection, making revocation more reliable. [Let's Encrypt](#def-LE) can issue certificates with the OCSP Must-Staple [extension](#def-extension) upon request. [Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} A way for a [web server](#def-web-server) to send a [browser](#def-web-browser) an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the browser itself doesn’t need to make a secondary OCSP request to the CA, improving speed and privacy. Also known as TLS Certificate Status Request extension. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" name="Object identifiers" abbr="OID" %}} Unique numeric identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage in the [Web PKI](#def-web-pki). [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
-
-{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" %}} A method to check the [revocation](#def-revocation) status of a [certificate](#def-leaf). In other words, a way to check whether a [Certificate Authority](#def-CA) indicates that the certificate should no longer be considered valid, even though its expiration date has not yet been reached. This request can create privacy problems because it allows the certificate authority, and Internet service providers, to directly observe who is visiting which sites. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
 {{% def id="OV" name="Organization Validation" abbr="OV" %}} Certificates for which the [CA](#def-CA) has verified the legal entity of the [Subscriber](#def-subscriber). They contain information about that entity. [Let's Encrypt](#def-LE) doesn't offer OV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
@@ -152,11 +155,9 @@ Note for translators:
 
 {{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} A signed promise to publish a certificate, from a [Certificate Transparency log](#def-CT-log). Browsers that enforce [CT](#def-CT) check for the presence of SCTs in a site's certificate, or in the [TLS](#def-TLS) handshake, and refuse to connect to sites that don't meet their logging requirements. This increases the likelihood that fraudulent or inaccurate certificates will be detected. https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
-{{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" %}} An older name for [TLS](#def-TLS), still in common use. {{% /def %}}
+{{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} An older name for [TLS](#def-TLS), still in common use. {{% /def %}}
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) provides a staging API to test certificate request without impacting rate limits. Certificates generated by the staging environment are *not* publicly trusted. The staging environment should be used for testing, debugging, and ACME client development purposes. https://letsencrypt.org/docs/staging-environment/ {{% /def %}}
-
-{{% def id="Subject" name="Subject" %}} A certificate field indicating what a certificate is about. This commonly contains fields like [Common Name](#def-CN), Country, and Organization. {{% /def %}}
 
 {{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} A field of a [certificate](#def-leaf) that indicates for which domain(s) the certificate is valid. It replaces the usage of the [Common Name](#def-CN), which is now provided for compatibility reasons only. A single certificate may contain many SANs and hence be valid for many different domain names. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
@@ -164,7 +165,7 @@ Note for translators:
 
 {{% def id="TLD" name="Top-Level Domain" abbr="TLD" %}} Highest level in the hierarchical Domain Name System, such as country-code top-level domains (ccTLD) for example `.de` (Germany), `.cn` (China) and generic top-level domains (gTLD) for example `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transport-Level Security" abbr="TLS" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
+{{% def id="TLS" name="Transport-Level Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} The part of [DANE](#def-DANE) specifically related to validating [TLS](#def-TLS) connections. {{% /def %}}
 

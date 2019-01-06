@@ -3,7 +3,8 @@ Usage (in english):
 	{% def
 		id="a unique id for anchor"
 		name="The term to define (optional if abbr is provided)"
-		abbr="an accronym (optional)" %}
+		abbr="an accronym (optional)"
+		abbr_first="1 (When the accronym is more important, such as RSA or SSL)" %}
 			the definition 
 	{% /def %}
 	
@@ -16,7 +17,8 @@ Usage (in other languages):
 		id="a unique id for anchor - the SAME than for english" 
 		name="The term to define (optional if english or abbr is provided)"
 		abbr="an accronym (optional)"
-		english="the english term (optional - if present the abbr is in english too)" %}}
+		english="the english term (optional - if present the abbr is in english too)"
+		abbr_first="1 (When the accronym is more important, such as RSA or SSL)" %}}
 			the definition
 	{% /def %}
 
@@ -33,19 +35,26 @@ Notes:
 -->
 
 <p class="definition">
-	{{- if .Get "name" -}}
-		<dfn id="def-{{.Get "id" }}">{{.Get "name" }}</dfn>
-		{{- if or (.Get "abbr") (.Get "english") -}}
-			{{- if .Get "english" }} ({{ with .Get "abbr" }}<abbr lang="en">{{ . }}</abbr> - {{ end -}}<i lang="en">{{ .Get "english" }}</i>)
-			{{- else }} (<abbr>{{ .Get "abbr" }}</abbr>)
-			{{- end }}
-		{{- end }}
+	{{- if and (.Get "abbr") (eq (.Get "abbr_first") "1") -}}
+			<dfn id="def-{{.Get "id" }}"><abbr lang="en">{{ .Get "abbr" }}</abbr></dfn>
+				{{- if .Get "name" }} ({{.Get "name" }}{{ if .Get "english" }} - <i lang="en">{{ .Get "english" }}</i>{{ end }})
+				{{- else }}{{ if .Get "english" -}} (<i lang="en">{{ .Get "english" }}</i>{{ end }})
+				{{- end }}
 	{{- else -}}
-		{{- if .Get "english" -}}
-			<dfn id="def-{{.Get "id" }}" lang="en">{{.Get "english" }}</dfn>
-			{{- if .Get "abbr" }} (<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
+		{{- if .Get "name" -}}
+			<dfn id="def-{{.Get "id" }}">{{.Get "name" }}</dfn>
+			{{- if or (.Get "abbr") (.Get "english") -}}
+				{{- if .Get "english" }} ({{ with .Get "abbr" }}<abbr lang="en">{{ . }}</abbr> - {{ end -}}<i lang="en">{{ .Get "english" }}</i>)
+				{{- else }} (<abbr>{{ .Get "abbr" }}</abbr>)
+				{{- end }}
+			{{- end }}
 		{{- else -}}
-			<dfn id="def-{{.Get "id" }}"><abbr>{{.Get "abbr" }}</abbr></dfn>
+			{{- if .Get "english" -}}
+				<dfn id="def-{{.Get "id" }}" lang="en">{{.Get "english" }}</dfn>
+				{{- if .Get "abbr" }} (<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
+			{{- else -}}
+				<dfn id="def-{{.Get "id" }}"><abbr>{{.Get "abbr" }}</abbr></dfn>
+			{{- end -}}
 		{{- end -}}
 	{{- end -}}
 	{{ .Site.Params.beforeColon | safeHTML }}: {{ .Inner }}
