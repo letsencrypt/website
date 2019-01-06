@@ -60,7 +60,7 @@ Note for translators:
 
 {{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} A statement of the practices that a certification authority employs in issuing, managing, revoking, and renewing or re-keying certificates. [ISRG Certification Practice Statement](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" name="Critical" %}} A certificate may contain [extensions](#def-extension) marked "critical." This means that software must reject that certificate unless the software understands how to process that extension. This makes it possible to introduce new extensions that are important for security without creating risks for older software. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}} A certificate may contain [extensions](#def-extension) marked "critical." This means that software must reject that certificate unless the software understands how to process that extension. This makes it possible to introduce new extensions that are important for security without creating risks for older software. {{% /def %}}
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} A method to inform [user agents](#def-user-agent) about the [revocation](#def-revocation) status of a [certificate](#def-leaf). This is a list of the serial numbers of all revoked certificates from a given CA, signed by that CA. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
