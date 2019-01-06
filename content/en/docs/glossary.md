@@ -92,7 +92,7 @@ Note for translators:
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
-{{% def id="extension" name="Extension" %}} In certificates, most fields are defined by extensions. For instance, [Subject Alternative Names] and [AIA](#def-AIA) are extensions. The extension mechanism allows creating new fields that were not part of the original [X.509](#def-X509) standard. {{% /def %}}
+{{% def id="extension" name="Certificate extension" %}} In certificates, most fields are defined by extensions. For instance, [Subject Alternative Names] and [AIA](#def-AIA) are extensions. The extension mechanism allows creating new fields that were not part of the original [X.509](#def-X509) standard. {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is a *FQDN*. {{% /def %}}
 
