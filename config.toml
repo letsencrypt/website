@@ -35,6 +35,8 @@ title = "Let's Encrypt - Free SSL/TLS Certificates"
 contentDir = "content/en"
 languageName ="English"
 languageCode= "en-us"
+#if colon ":" must be prefixed
+beforeColon= ""
 # Weight used for sorting.
 weight = 10
 description = """
@@ -79,6 +81,8 @@ title = "Let's Encrypt - Certificats SSL/TLS gratuits"
 languageName = "Français"
 contentDir = "content/fr"
 languageCode= "fr-fr"
+#if colon ":" must be prefixed
+beforeColon= "&nbsp;"
 # Weight used for sorting.
 weight = 20
 description = """

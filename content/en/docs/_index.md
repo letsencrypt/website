@@ -12,6 +12,7 @@ menu:
 * [Getting Started](/getting-started/)
 * [How Let's Encrypt Works](/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Glossary](/docs/glossary/)
 
 # Subscriber Information
 
