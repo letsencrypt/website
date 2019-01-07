@@ -9,5 +9,5 @@ dfn:target{
 }
 dfn {
   font-weight: bold;
-	padding-right: .25em; /* Prevent italics text from hitting the ":" */
+  padding-right: .25em; /* Prevent italics text from hitting the ":" */
 }

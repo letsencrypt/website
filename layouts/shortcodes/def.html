@@ -3,31 +3,31 @@ Usage (in english):
 	{% def
 		id="a unique id for anchor"
 		name="The term to define (optional if abbr is provided)"
-		abbr="an accronym (optional)"
-		abbr_first="1 (When the accronym is more important, such as RSA or SSL)" %}
+		abbr="an acronym (optional)"
+		abbr_first="1 (When the acronym is more important, such as RSA or SSL)" %}
 			the definition 
 	{% /def %}
 	
 	<p><dfn id="a unique id for anchor">The term to define</dfn>: the definition</p>
-	<p><dfn id="a unique id for anchor"><abbr>an accronym</abbr</dfn>: the definition</p>
-	<p><dfn id="a unique id for anchor">The term to define</dfn> (<abbr>an accronym</abbr>): the definition</p>
+	<p><dfn id="a unique id for anchor"><abbr>an acronym</abbr</dfn>: the definition</p>
+	<p><dfn id="a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr>): the definition</p>
 
 Usage (in other languages):
 	{% def 
 		id="a unique id for anchor - the SAME than for english" 
 		name="The term to define (optional if english or abbr is provided)"
-		abbr="an accronym (optional)"
+		abbr="an acronym (optional)"
 		english="the english term (optional - if present the abbr is in english too)"
-		abbr_first="1 (When the accronym is more important, such as RSA or SSL)" %}}
+		abbr_first="1 (When the acronym is more important, such as RSA or SSL)" %}}
 			the definition
 	{% /def %}
 
 	<p><dfn id="def-a unique id for anchor">The term to define</dfn>: the definition</p>
-	<p><dfn id="def-a unique id for anchor"><abbr>an accronym</abbr></dfn>: the definition</p>
-	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an accronym</abbr>): the definition</p>
-	<p><dfn id="def-a unique id for anchor" lang="en">the english term</dfn> (<abbr>an accronym</abbr>): the definition</p>
+	<p><dfn id="def-a unique id for anchor"><abbr>an acronym</abbr></dfn>: the definition</p>
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr>): the definition</p>
+	<p><dfn id="def-a unique id for anchor" lang="en">the english term</dfn> (<abbr>an acronym</abbr>): the definition</p>
 	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<i lang="en">the english term</i>): the definition</p>
-	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an accronym</abbr> - <i lang="en">the english term</i>): the definition</p>
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr> - <i lang="en">the english term</i>): the definition</p>
 
 Notes:
 	<abbr> is used to spell out for screen readers
