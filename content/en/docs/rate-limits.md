@@ -34,29 +34,16 @@ above limit, that means you can issue certificates containing up to 5,000 unique
 subdomains per week. A certificate with multiple names is often called a SAN
 certificate, or sometimes a UCC certificate.
 
-We also have a <a name="duplicate-certificate"></a>**Duplicate Certificate** limit of 5 certificates per week. A
-certificate is considered a duplicate of an earlier certificate if they contain
-the exact same set of hostnames, ignoring capitalization and ordering of
-hostnames.  For instance, if you requested a certificate for the names
-[`www.example.com`, `example.com`], you could request four more certificates for
-[`www.example.com`, `example.com`] during the week. If you changed the set of names
-by adding [`blog.example.com`], you would be able to request additional
-certificates.
+We have a <a name="renewal-exemption"></a>**Renewal Exemption** to the Certificates per Registered Domain limit.
+A certificate is considered a renewal of an earlier certificate if it contains the exact same set of hostnames, 
+ignoring capitalization and ordering of hostnames. Renewals are subject to their own limit, which allows a 
+certificate to be renewed 5 times per week. Note that even if the renewals are not limited by the Certificates
+per Registered Domain limit due to the Renewal Exemption, they still count towards that same limit. That means that
+in order to get the maximum possible number of certificates, you must perform all new issuances before 
+renewals during a given time window.
 
-To make sure you can always renew your certificates when you need to, we have a
-<a name="renewal-exemption"></a>**Renewal Exemption** to the Certificates per Registered Domain limit. Even if
-you've hit the limit for the week, you can still issue new certificates that
-count as renewals. An issuance request counts as a renewal if it contains the
-exact same set of hostnames as a previously issued certificate. This is the same
-definition used for the Duplicate Certificate limit described above. Renewals
-*are* still subject to the Duplicate Certificate limit. Also note: the order of
-renewals and new issuances matters. To get the maximum possible number of
-certificates, you must perform all new issuances before renewals during a given
-time window.
-
-The Duplicate Certificate limit and the Renewal Exemption ignore the public key
-and extensions requested. A certificate issuance can be considered a renewal even if
-you are using a new key.
+The Renewal Exemption ignores the public key and extensions requested. A certificate issuance can be 
+considered a renewal even if you are using a new key.
 
 Note that the Renewal Exemption also means you can gradually increase the number
 of certificates available to your subdomains. You can issue 50 certificates in
