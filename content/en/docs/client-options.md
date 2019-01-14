@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-12-06
+lastmod: 2019-01-14
 ---
 
 {{< lastmod >}}
@@ -63,6 +63,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
+- [php-acme-client](https://github.com/kouk1/php-acme-client)
 
 ## Bash
 
@@ -142,6 +143,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php)
+- [php-acme-client](https://github.com/kouk1/php-acme-client)
 
 ## Python
 
