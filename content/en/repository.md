@@ -73,8 +73,8 @@ menu:
 
 * November 30, 2018: [Trust Services Principles and Criteria for Certification Authorities Version 2.1](https://www.cpacanada.ca/webtrustseal?sealid=10124)
 * November 30, 2018: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3](https://www.cpacanada.ca/webtrustseal?sealid=10125)
-* December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=2388)
-* December 15, 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](https://cert.webtrust.org/ViewSeal?id=2389)
+* December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2017-WebTrust-for-CAs-Report.pdf)
+* December 15, 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](/audits/ISRG-2017-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
 * December 15, 2016: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=2193)
 * December 15, 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](https://cert.webtrust.org/ViewSeal?id=2194)
 * December 15, 2015: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=1987)
