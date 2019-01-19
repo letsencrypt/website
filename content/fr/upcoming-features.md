@@ -4,6 +4,12 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
+## Certificate Transparency Log
+
+* Prévu: T1 2019
+
+Nous prévoyons de gérer un [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
+
 ## Validation multi - points de vue
  
 * Prévu: T2 2019
@@ -12,7 +18,7 @@ Actuellement, Let's Encrypt valide d'un point de vue unique du réseau. Nous pr�
 
 ## ECDSA Racine et Intermédiaires
 
-* Prévu : T2 2019
+* Prévu : T3 2019
 
 Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
 
