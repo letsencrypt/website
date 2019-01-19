@@ -8,9 +8,9 @@ lastmod: 2018-12-06
 
 {{< lastmod >}}
 
-Let's Encrypt verwendet das ACME-Protokoll, um zu überprüfen, ob Sie einen bestimmten Domänennamen steuern, und um Ihnen ein Zertifikat auszustellen. Um ein Let's Encrypt-Zertifikat zu erhalten, müssen Sie eine ACME-Clientsoftware auswählen.
+Let's Encrypt verwendet das ACME-Protokoll, um zu überprüfen, ob Sie einen bestimmten Domänennamen steuern und um Ihnen ein Zertifikat auszustellen. Um ein Let's Encrypt-Zertifikat zu erhalten, müssen Sie eine ACME-Clientsoftware auswählen.
 
-Die folgenden ACME-Kunden werden von Dritten angeboten. Let's Encrypt kontrolliert oder überprüft keine Kunden von Drittanbietern und kann keine Garantie für deren Sicherheit oder Zuverlässigkeit abgeben.
+Die folgenden ACME-Clients werden von Dritten angeboten. Let's Encrypt kontrolliert oder überprüft keine Clients von Drittanbietern und kann keine Garantie für deren Sicherheit oder Zuverlässigkeit abgeben.
 
 Einige ACME-Clients im Browser sind zwar verfügbar, werden hier jedoch nicht aufgeführt, da sie einen manuellen Erneuerungsworkflow fördern, der zu einer schlechten Benutzererfahrung führt und das Risiko von versäumten Erneuerungen erhöht.
 
@@ -256,9 +256,9 @@ Diese Clients sind kompatibel mit unseren [Staging Endpunkt für ACME v2](https:
 - [ISPConfig](https://www.ispconfig.org/)
 - [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
 
-# Ihr Client/Project hinzufügen
+# Ihren Client/Ihr Projekt hinzufügen
 
-Wenn Sie wissen, dass ein ACME-Client oder ein Projekt in Let's Encrypt integriert ist, das auf der obigen Seite nicht vorhanden ist, senden Sie bitte eine Pull-Anforderung an unser [Website-Repository](https://github.com/letsencrypt/website/) Github, Aktualisierung von `content/de/docs/client-options.md` Seite.
+Wenn Sie wissen, dass ein ACME-Client oder ein Projekt in Let's Encrypt integriert ist, das auf der obigen Seite nicht vorhanden ist, senden Sie bitte eine Pull-Request an unser [Website-Repository](https://github.com/letsencrypt/website/) auf Github zwecks Aktualisierung von `content/de/docs/client-options.md` Seite.
 
 Bevor Sie Pull-Request absenden, bitte stellen Sie sicher:
 

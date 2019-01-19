@@ -17,7 +17,7 @@ menu:
 
 * [ACME Client Implementierungen](/de/docs/client-options/)
 * [Rate Limits](/de/docs/rate-limits/)
-* [Expiration Emails](/de/docs/expiration-emails/)
+* [Ablauf-Emails](/de/docs/expiration-emails/)
 
 # Erweiterte Teilnehmerinformationen
 

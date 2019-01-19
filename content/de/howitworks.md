@@ -9,13 +9,13 @@ Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine
 Datei) von einer Zertifizierungsstelle (CA). Let's Encrypt ist eine CA. Um für
 Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, haben Sie
 zu demonstrieren, dass Sie die Kontrolle über diese Domain haben.
-Mit Let's Encrypt, you do this using software that uses
-the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
-on your web host.
+Mit Let's Encrypt benutzen Sie Software, die das
+[ACME Protokoll](https://ietf-wg-acme.github.io/acme/) benutzt, welches
+typischerweise auf Ihrem Web-Host läuft.
 
 Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig
 herauszufinden, ob Sie zu Ihrer Webseite 
-[shell zugang](https://en.wikipedia.org/wiki/Shell_account) haben (auch bekannnt
+[Shell Zugang](https://en.wikipedia.org/wiki/Shell_account) haben (auch bekannnt
 als SSH Zugang). Wenn Sie Ihre Webseite durch ein Kontrollschnittstelle verwalten
 wie [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/) oder
 [WordPress](https://wordpress.org/), dann haben Sie wahrscheinlich keinen Shell
@@ -32,11 +32,11 @@ grossartige Dokumentation. [Besuchen Sie die Certbot Seite][Certbot], um angepas
 Anleitungen für Ihr Betriebssystem und Web Server zu erhalten.
 
 Wenn [Certbot] nicht ihren Anforderungen entspricht, können Sie auch etwas anderes
-ausprobieren, es gibt [mehr ACME Clients zur Auswahl](/docs/client-options/).
-Wenn Sie eine ACME client software gewählt haben, schauen Sie in die Dokumentation,
+ausprobieren, es gibt [weitere ACME Clients zur Auswahl](/docs/client-options/).
+Wenn Sie eine ACME Client Software gewählt haben, schauen Sie in die Dokumentation,
 wie damit fortzufahren ist.
 
-Wenn Sie mit unterschiedlichen ACME clients experimentieren, benutzen Sie
+Wenn Sie mit unterschiedlichen ACME Clients experimentieren, benutzen Sie
 [staging environment](/docs/staging-environment/), um das Erreichen von
 [rate limits](/docs/rate-limits/) zu verhindern.
 
@@ -45,13 +45,13 @@ Wenn Sie mit unterschiedlichen ACME clients experimentieren, benutzen Sie
 # Ohne Shell Zugriff
 
 Der beste Weg, um Let's Encrypt ohne Shell Zugriff zu benutzen, ist der
-eingebaute Support von Ihrem Hosting Provider. Wenn Ihr Hosting Provider,
+eingebaute Support von Ihrem Hosting Provider. Wenn Ihr Hosting Provider
 Let's Encrypt Unterstützung anbietet, dann kann er in ihrem Namen freie
 Zertifikate anfordern, installieren und automatisch aktuell halten.
 Bei einigen Hosting Providern müssen Sie diese Unterstützung einschalten.
 Andere Provider machen dies automatisch für ihre Kunden.
 
-[Überprüfen Sie unsere Liste von Hosting Providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920),
+[Überprüfen Sie unsere Liste von Hosting Providern](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920),
 um zu sehen, ob Ihrer mit dabei ist. Wenn das so ist, folgen Sie der
 Dokumentation, um Ihr Let's Encrypt Zertifikat einzurichten.
 

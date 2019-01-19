@@ -14,7 +14,7 @@ unterschiedlichen Gründen passieren. Zum Beispiel, Sie haben unglücklicherweis
 den privaten Schlüssel auf einer öffentlichen Webseite geteilt;
 Hacker haben Ihren privaten Schlüssel von Ihren Servern kopiert; oder
 Hacker haben temporär Kontrolle über Ihre Server oder Ihre DNS Konfiguration
-erhalten und benutzten das zum validieren und ausstellen eines Zertifikats,
+erhalten und benutzten das zum Validieren und Ausstellen eines Zertifikats,
 für den sie den privaten Schlüssel besitzen.
 
 Wenn Sie ein Let's Encrypt Zertifikat sperren, wird Let's Encrypt die
@@ -24,7 +24,7 @@ veröffentlichen und einige Browser werden OCSP überprüfen, ob sie
 einem Zertifikat vertrauen sollten.
 Beachten Sie, dass OCSP [einige grundlegende Probleme
 hat](https://www.imperialviolet.org/2011/03/18/revocation.html), sodass
-nicht alle Browser diese Überprüfen machen werden. Trotzdem, sperren
+nicht alle Browser diese Überprüfen machen werden. Trotzdem, Sperren
 von Zertifikaten, die einen kompromitierten privaten Schlüssel haben,
 ist eine wichtige Praxis und ist erforderlich vom Let's Encrypt's
 [Subscriber Agreement](https://letsencrypt.org/repository/).
@@ -75,7 +75,7 @@ kompromitiert wurde, möchten Sie das Zertifikat erneut sperren. Um die Richtigk
 der Sperrung sicherzustellen, brauch Let's Encrypt die Sicherheit, dass Sie die
 Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben
 (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)!
-Zur Überprüfen dieser Kontrolle, benutzt Let's Encrypt dieselben Methoden
+Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden
 wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT
 ](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) machen,
 eine [Datei auf Ihren HTTP Server](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)
@@ -85,7 +85,7 @@ dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der
 einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung.
 Sie können das Zertifikat im Ergebnis wieder sperren, wenn Sie es nicht
 möchten oder zerstören Sie einfach den privaten Schlüssel. Wenn Sie die
-Ausstellung eines Zertifikats im allgemeinen verhindern möchten, können Sie
+Ausstellung eines Zertifikats im Allgemeinen verhindern möchten, können Sie
 eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt,
 dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen
 existierenden Domainnamen. Um das zu machen, führen Sie aus:
@@ -95,7 +95,7 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 ```
 
 Und folgen Sie den Anweisungen. Wenn Sie die Validierung über HTTP dem DNS
-bevorzufen, ersetzen Sie  das `--preferred-challenges` Flag mit
+bevorzugen, ersetzen Sie  das `--preferred-challenges` Flag mit
 `--preferred-challenges=http`.
 
 Nur wenn Sie validierte Kontrolle über all die Domainnamen in dem

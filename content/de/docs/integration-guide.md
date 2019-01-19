@@ -9,7 +9,7 @@ lastmod: 2018-06-20
 {{< lastmod >}}
 
 Dieses Dokument enthält hilfreiche Ratschläge, wenn Sie ein
-Hosting-Anbieter oder eine große Website sind, die Let's Encrypt
+Hosting-Anbieter oder eine grosse Website sind, die Let's Encrypt
 integrieren, oder wenn Sie Client-Software für Let's Encrypt schreiben.
 
 # Planen Sie den Wandel
@@ -18,7 +18,7 @@ Let's Encrypt und die Web-PKI werden sich im Laufe der Zeit
 weiterentwickeln. Sie sollten sicherstellen, dass Sie problemlos alle
 Dienste aktualisieren können, die Let's Encrypt verwenden. Wenn Sie auch
 Clients bereitstellen, die auf Let's Encrypt-Zertifikaten angewiesen
-sind, stellen Sie besonders sicher, dass diese Clients regelmäßig
+sind, stellen Sie besonders sicher, dass diese Clients regelmässig
 aktualisiert werden.
 
 In der Zukunft werden sich diese Dinge wahrscheinlich ändern:
@@ -55,11 +55,11 @@ erhalten. Dies ist sowohl für Cliententwickler als auch für
 Hostinganbieter hilfreich.
 
 Besuchen Sie unsere [Statusseite](https://letsencrypt.status.io/), um
-Updates zu Wartungen und Ausfällen in größerem Umfang zu erhalten, und
+Updates zu Wartungen und Ausfällen in grösserem Umfang zu erhalten, und
 klicken Sie oben rechts auf Abonnieren. Dies ist besonders für
 Hosting-Provider nützlich.
 
-Stellen Sie außerdem sicher, dass Sie eine gültige E-Mail-Adresse für
+Stellen Sie ausserdem sicher, dass Sie eine gültige E-Mail-Adresse für
 Ihr ACME-Konto verwenden. Wir werden diese E-Mail verwenden, um Ihnen
 Verfallsbenachrichtigungen zuzusenden und über Probleme zu informieren,
 die für Ihr Konto spezifisch sind.
@@ -98,7 +98,7 @@ und die Kontoschlüssel in verschiedenen Kontexten speichern, sodass bei
 einem Kontoschlüssel-Kompromiss keine Ausgabe für alle ihre Kunden
 möglich ist.
 
-Bei den meisten größeren Hosting-Providern empfehlen wir jedoch die
+Bei den meisten grösseren Hosting-Providern empfehlen wir jedoch die
 Verwendung eines einzelnen Kontos und den entsprechenden Kontoschlüssel.
 Dies macht es einfacher, Zertifikate zu identifizieren, die zur selben
 Entität gehören, die Kontaktinformationen auf dem neuesten Stand zu
@@ -116,11 +116,11 @@ Zertifikaten zusammenfassen, bleibt Ihnen überlassen.
 Die Verwendung separater Zertifikate pro Hostname bedeutet, dass weniger
 bewegliche Teile erforderlich sind, um Domänen logisch hinzuzufügen und
 zu entfernen, während sie bereitgestellt und zurückgezogen werden. Durch
-separate Zertifikate wird auch die Zertifikatgröße minimiert, wodurch
+separate Zertifikate wird auch die Zertifikatgrösse minimiert, wodurch
 HTTPS-Handshakes in Netzwerken mit geringer Bandbreite beschleunigt
 werden können.
 
-Andererseits können Sie durch die Verwendung großer Zertifikate mit
+Andererseits können Sie durch die Verwendung grosser Zertifikate mit
 vielen Hostnamen insgesamt weniger Zertifikate verwalten. Wenn Sie
 ältere Clients wie Windows XP unterstützen müssen, die keine
 TLS-Servernamenangabe ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)) unterstützen,
@@ -133,7 +133,7 @@ Sicherheit.
 
 # Speichern und Wiederverwenden von Zertifikaten und Schlüsseln
 
-Ein großer Teil des Wertes von Let's Encrypt besteht darin, dass die
+Ein grosser Teil des Wertes von Let's Encrypt besteht darin, dass die
 automatische Ausgabe als Teil der Bereitstellung einer neuen Website
 ermöglicht wird. Wenn Sie jedoch über eine Infrastruktur verfügen, die
 möglicherweise wiederholt neue Frontends für dieselbe Website erstellt,
@@ -178,9 +178,9 @@ wahrscheinlich einfacher. Wenn Sie über viele geografisch verteilte
 DNS-Responder verfügen, müssen Sie natürlich sicherstellen, dass der
 TXT-Eintrag für jeden Responder verfügbar ist.
 
-Wenn Sie die Challenge dns-01 verwenden, müssen Sie außerdem alte
+Wenn Sie die Challenge dns-01 verwenden, müssen Sie ausserdem alte
 TXT-Einträge bereinigen, damit die Antwort auf die Abfrage von Let's
-Encrypt nicht zu groß wird.
+Encrypt nicht zu gross wird.
 
 Wenn Sie die Challenge http-01 trotzdem verwenden möchten, können
 Sie HTTP-Weiterleitungen nutzen. Sie können jedes Ihrer Frontends so
@@ -209,7 +209,7 @@ keine Einzelangaben zur Identifizierung von OCSP-Anfragen. Wir möchten
 die Daten lieber gar nicht erst erhalten. Darüber hinaus gehen wir davon
 aus, dass unsere Bandbreitenkosten für die Bereitstellung von OCSP bei
 jedem ersten Besuch einer Let's Encrypt-Site durch einen Browser einen
-großen Teil unserer Infrastrukturkosten ausmachen.
+grossen Teil unserer Infrastrukturkosten ausmachen.
 
 Durch Aktivieren von OCSP Stapling können Sie die Leistung Ihrer Website
 verbessern, den Schutz Ihrer Daten für Ihre Benutzer verbessern und
@@ -245,18 +245,18 @@ Kontoschlüssel als auch für Zertifikatsschlüssel. Sie können einen
 Kontoschlüssel nicht als Zertifikatsschlüssel wiederverwenden.
 
 Wir empfehlen, eine Konfiguration mit zwei Zertifikaten bereitzustellen,
-die standardmäßig ein RSA-Zertifikat und ein (viel kleineres)
+die standardmässig ein RSA-Zertifikat und ein (viel kleineres)
 ECDSA-Zertifikat für die Clients bereitstellt, die Unterstützung
 angeben.
 
-# HTTPS standardmäßig
+# HTTPS standardmässig
 
 Für Hosting-Provider empfehlen wir, automatisch Zertifikate auszustellen
 und HTTPS für alle Hostnamen zu konfigurieren, die Sie steuern, und eine
 vom Benutzer konfigurierbare Einstellung für das Umleiten von HTTP-URLs
 an ihre HTTPS-Entsprechungen anzubieten. Es wird empfohlen, die
-Einstellung für vorhandene Konten standardmäßig zu deaktivieren. Für
-neue Konten ist die Einstellung jedoch standardmäßig aktiviert.
+Einstellung für vorhandene Konten standardmässig zu deaktivieren. Für
+neue Konten ist die Einstellung jedoch standardmässig aktiviert.
 
 Begründung: Bestehende Websites enthalten wahrscheinlich einige
 HTTP-Subressourcen (Skripts, CSS und Bilder). Wenn diese Sites
@@ -265,7 +265,7 @@ Browser einige dieser Subressourcen aufgrund von Mixed Content Blocking.
 Dies kann die Funktionalität der Site beeinträchtigen. Wer jedoch eine
 neue Site erstellt und feststellt, dass sie zu HTTPS umleitet, enthält
 höchstwahrscheinlich nur HTTPS-Subressourcen. Wenn sie versuchen, eine
-HTTP-Subressource einzuschließen, werden sie sofort feststellen, dass
+HTTP-Subressource einzuschliessen, werden sie sofort feststellen, dass
 sie nicht funktioniert.
 
 Es wird empfohlen, Kunden zu erlauben, einen
@@ -290,7 +290,7 @@ Drittel ihrer gesamten Lebensdauer haben. Für die aktuellen
 
 Wenn Sie für mehr als 10.000 Hostnamen erneuern, empfehlen wir auch eine
 automatische Erneuerung in kleinen Auflagen, anstatt Erneuerungen in
-großen Abschnitten aufzuteilen. Dies verringert das Risiko: Wenn zu dem
+grossen Abschnitten aufzuteilen. Dies verringert das Risiko: Wenn zu dem
 Zeitpunkt, zu dem die Erneuerung erforderlich ist, ein Ausfall von Let's
 Encrypt vorliegt oder in Ihren Erneuerungssystemen ein vorübergehender
 Fehler auftritt, betrifft dies nur einige Ihrer Zertifikate und nicht

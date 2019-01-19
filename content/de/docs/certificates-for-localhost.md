@@ -11,7 +11,7 @@ lastmod: 2017-12-21
 Manchmal möchten Leute ein Zertifikat für den Hostnamen "localhost" bekommen, 
 entweder um ihre lokale Entwicklungsumgebung zu nutzen oder zur Verteilung einer
 nativen Applikation, die Kommunikation mit einer Webapplikation benötigt.
-Let#s Encrypt cann diese Zertifikate für "localhost" nicht zur Verfügung stellen,
+Let's Encrypt cann diese Zertifikate für "localhost" nicht zur Verfügung stellen,
 da es keine einzigartige Eigentümerschaft gibt und es nicht zu einer Toplevel-
 Domain gehört, wie ".com" oder ".net". Es ist möglich, in ihrer eigenen Domain
 einen Eintrag zu machen, der auf 127.0.0.1 zeigt und ein Zertifikat über
@@ -37,15 +37,14 @@ selbstsigniert oder signiert bei einer lokalen Root und vertrauen Sie
 diesem in Ihrem Betriebssystem Trust-Store. Dann benutzen Sie dieses
 Zertifikat in Ihrem lokalen Webserver. Schauen Sie unten für Details.
 
-# Für native Apps, die zu Webapps kommunizieren.
+# Für native Apps, die zu Webapps kommunizieren
 
 Manchmal möchten Entwickler native Apps zum Herunterladen anbieten,
-die in einer Webseite impementiert werden können, um mehr Funktionsumfang
-zu bieten. Zum Beispiel, die Dropbox und Spotify Desktop App scannt für
+die in einer Webseite implementiert werden können, um mehr Funktionsumfang
+zu bieten. Zum Beispiel, die Dropbox und Spotify Desktop App scannt nach
 Dateien in Ihrem System, was eine Webapp nicht erlauben würde.
 Eine übliche Herangehensweise ist das Zwischenschalten eines Webservices
 auf localhost, damit die Webapp Anfragen daran stellen kann über
-
 XMLHTTPRequest (XHR) oder WebSockets. Die Webapp benutzt schon HTTPS,
 was bedeutet, dass der Browser es verbieten würde, solche nicht-sichere
 Anfragen an XHR oder Websockets zu stellen. Das wird auch Mixed Content
@@ -55,10 +54,10 @@ wird ein sicherer Webservice benötigt.
 Glücklicherweise [betrachten] moderne Browser [mcb-localhost] "http://127.0.0.1:8000/"
 als eine ["potentiell sicheren"][secure-contexts] URL,
 weil sie zu einer Loopback Adresse referenziert. Verkehr, der zu 127.0.0.1
-gesendet wird, verlässt garentiert nicht Ihr System und so wird es
+gesendet wird, verlässt garantiert nicht Ihr System und so wird es
 automatisch als sicher gegen Netzwerkangriffe betrachtet.
 Das bedeutet, wenn Ihre Webapp HTTPS ist und Sie bieten einer nativen
-App einen Webservice auf 127.0.0.1 an,  so können diese fröhlich über
+App einen Webservice auf 127.0.0.1 an, so können diese fröhlich über
 XHR kommunizieren.
 Leider bekommt [localhost noch nicht die gleiche Behandlung] [let-localhost].
 WebSockets erhalten diese Behandlung auch nicht für einen der beiden Namen.
@@ -69,7 +68,7 @@ die Einrichtung eines globalen DNS Eintrag, der auf 127.0.0.1 auflöst
 zusammen mit dem privaten Schlüssel mit Ihrer nativen App zu verschicken
 und der Webapp zu erklären, statt https://127.0.0.1:8000 mit
 https://localhost.example.com:8000/ zu kommunizieren.
-*Machen Sie das nicht!.* Der Benutzer wird nur unnötigen Risiken ausgesetzt
+*Machen Sie das nicht!* Der Benutzer wird nur unnötigen Risiken ausgesetzt
 und das Zertifikat könnte widerrufen werden.
 
 Bei Einführung eines Domainnamens anstatt einer IP-Adresse machen Sie eine

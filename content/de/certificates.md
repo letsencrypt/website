@@ -22,9 +22,9 @@ Wir haben eine Webseite zum Testen der Zertifikatketten zu unseren Root Zertifik
 * ISRG Root X1 Expired Certificate
   * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
 
-# Zwischenzertifikate (oIntermediate Certificates)
+# Zwischenzertifikate (Intermediate Certificates)
 
-IdenTrust hat unsere Zwischenzertifikate quersigniert. Das erlaubt die AKtzeptanz all
+IdenTrust hat unsere Zwischenzertifikate quersigniert. Das erlaubt die Aktzeptanz all
 unserer Endzertifkate bei allen Browsern, bei denen wir unser Root Zertifikat propagieren.
 
 Unter normalen Umständen kommen Zertifikate, die von Let’s Encrypt ausgestellt worden, von
@@ -53,8 +53,8 @@ Unser Zwischenzertifikat “Let’s Encrypt Authority X3” repräsentiert ein e
 für alle Endzertifikate (auch bekannt als Leaf Zertifikate), z.B. die
 Zertifikate, die wir für Ihren Server ausstellen.
 
-Unser Zwischenzertifikat ist signiert von ISRG Root X1. Trotzdem, da wir eine
-recht neze Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
+Unser Zwischenzertifikat ist signiert von ISRG Root X1. Jedoch, da wir eine
+recht neue Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
 nicht vertrauenswürdig. Um eine breitere Sicherheit zu erreichen, ist unser
 Zwischenzertifikat bei einer anderen Zertifizierungsstelle quersigniert, IdenTrust,
 dessen Root Zertifikat in allen Browsern vertrauenswürdig ist. IdenTrust hat
@@ -68,7 +68,7 @@ Wenn ein Webserver konfiguriert wird, konfiguriert der Serveradministrator nicht
 das Endkundenzertifikat, sondern auch eine Liste von Zwischenzertifikaten, um es
 Browsern eine Verifizierung der Kette vom Endkundenzertifikat bis zum Root Zertifikat
 zu ermöglichen. 
-Fast alle Serverbetreiber wählen  eine Kette incl. Zwischenzertifikat mit Subjekt
+Fast alle Serverbetreiber wählen eine Kette incl. Zwischenzertifikat mit Subjekt
 “Let’s Encrypt Authority X3” und Aussteller “DST Root CA X3.” Die empfohlene
 Let's Encrypt software, [Certbot](https://certbot.org), wird die Konfiguration
 nahtlos erstellen,

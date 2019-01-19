@@ -16,7 +16,7 @@ Wenn Sie bei der Erstellung Ihres Kontos eine E-Mail-Adresse für Let's Encrypt 
 
 Wenn Ihr Zertifikat bereits verlängert wurde, senden wir keine Verfallserklärung. Wir betrachten ein Zertifikat als erneuert, wenn ein neueres Zertifikat mit genau denselben Namen vorhanden ist, unabhängig davon, von welchem Konto es erstellt wurde.
 Wenn Sie ein neues Zertifikat ausgestellt haben, das einen Namen relativ zu Ihrem alten Zertifikat hinzufügt oder entfernt, erhalten Sie eine Ablauf-E-Mail zu Ihrem alten Zertifikat.
-Wenn Sie das aktuell auf Ihrer Website ausgeführte Zertifikat überprüfen und das korrekte Datum anzeigt, sind keine weiteren Maßnahmen erforderlich.
+Wenn Sie das aktuell auf Ihrer Website ausgeführte Zertifikat überprüfen und das korrekte Datum anzeigt, sind keine weiteren Massnahmen erforderlich.
 
 # Abbestellung
 
@@ -25,7 +25,7 @@ Die Liste der "Wer ist nicht abonniert" ist unabhängig von Staging-Benachrichti
 
 Beachten Sie, dass Ihre Abmeldung nur für ein Jahr gültig ist. Daher müssen Sie sie jedes Jahr erneuern.
 
-Es gibt noch keine Möglichkeit für uns, Sie effizient abzumelden, wenn Sie den Newsletter abbestellen. Unser E-Mail-Anbieter Mandrill [hat einen manuellen Mechanismus, den wir noch automatisieren müssen] (https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+Es gibt noch keine Möglichkeit für uns, Sie effizient abzumelden, wenn Sie den Newsletter abbestellen. Unser E-Mail-Anbieter Mandrill [hat einen manuellen Mechanismus, den wir noch automatisieren müssen](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
 
 Sie können jedoch die E-Mail-Adresse Ihres Kontos ändern, wodurch Sie effektiv neu abonniert werden. In vielen gängigen E-Mail-Diensten wird `yourname+1@example.com` genauso behandelt wie` yourname@example.com. Wenn Sie also Ihre E-Mail-Adresse in `yourname+1@example.com` aktualisieren, können Sie erneut Ablauf-E-Mails erhalten. Bei Certbot verwenden Sie:
 

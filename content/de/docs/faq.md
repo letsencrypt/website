@@ -57,9 +57,9 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 # <a name="technical">Technische Fragen</a>
 
-## Werden Zertifikate von Let’s Encrypt von meinem Browser vertraut?
+## Wird Zertifikaten von Let’s Encrypt von meinem Browser vertraut?
 
-Für die meisten Browser und Betriebssysteme, ja. Schauen Sie die [Kompatibilitätsliste](/docs/certificate-compatibility/) für mehr Details.
+Für die meisten Browser und Betriebssysteme, ja. Schauen Sie in die [Kompatibilitätsliste](/docs/certificate-compatibility/) für mehr Details.
 
 ## Stellt Let's Encrypt Zertifikate für andere als SSL/TLS für Webseiten aus?
 
@@ -74,9 +74,7 @@ Der private Schlüssel wird immer auf Ihrem eigenen Server generiert und verwalt
 
 ## Was ist die Laufzeit der Let's Encrypt Zertifikate? Für wie lange sind diese gültig?
 
-Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](https://letsencrypt.org/2015/11/09/why-90-days.html) lesen, warum das so ist.
-
-There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
+Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](https://letsencrypt.org/2015/11/09/why-90-days.html) lesen, warum das so ist.Da ist kein Weg das zu ändern, es gibt keine Ausnahme. Wir empfehlen die automatische Erneuerung Ihrer Zertifikate alle 60 Tage.
 
 ## Wird Let’s Encrypt Organisations-Validierung (OV) oder Erweiterte Validierung (EV) Zertifikate anbieten?
 
@@ -88,11 +86,11 @@ Ja, dieselben Zertifikate können unterschiedliche Namen mit Benutzung des Subje
 
 ## Kann Let’s Encrypt Wildcard-Zertifikate ausstellen?
 
-Ja. Wildcard müssen über ACMEv2 mit DNS-01 challenge ausgestellt werden. Schauen Sie [diese Nachricht](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) für mehr technische Details.
+Ja. Wildcard müssen über ACMEv2 mit DNS-01 Challenge ausgestellt werden. Schauen Sie [diese Nachricht](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) für mehr technische Details.
 
 ## Gibt es einen Let's Encrypt (ACME) Client für mein Betriebssystem?
 
-Es ist eine grosse Nummer von [ACME Clients](/docs/client-options/) verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas af Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
+Es ist eine grosse Anzahl von [ACME Clients](/docs/client-options/) verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas auf Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
 
 ## Kann ich einen bestehenden privaten Schlüssel oder ein Certificate Signing Request (CSR) benutzen?
 
@@ -104,4 +102,4 @@ Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung be
 
 ## Ich habe erfolgreich ein Zertifikat erneuert, aber die Validierung funktioniert jetzt nicht mehr - wie ist das möglich?
 
-Wenn Sie den Austausch für eine Domäne erfolgreich abgeschlossen haben, wird die resultierende Autorisierung zwischengespeichert, damit Ihr Konto später erneut verwendet werden kann.Die zwischengespeicherten Berechtigungen sind 30 Tage ab dem Zeitpunkt der Validierung gültig.Wenn das angeforderte Zertifikat alle erforderlichen Berechtigungen zwischengespeichert hat, wird die Validierung erst nach Ablauf der relevanten zwischengespeicherten Berechtigungen erneut durchgeführt.
+Wenn Sie den Austausch für eine Domäne erfolgreich abgeschlossen haben, wird die resultierende Autorisierung zwischengespeichert, damit Ihr Konto später erneut verwendet werden kann. Die zwischengespeicherten Berechtigungen sind 30 Tage ab dem Zeitpunkt der Validierung gültig. Wenn das angeforderte Zertifikat alle erforderlichen Berechtigungen zwischengespeichert hat, wird die Validierung erst nach Ablauf der relevanten zwischengespeicherten Berechtigungen erneut durchgeführt.
