@@ -4,6 +4,12 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
+## Certificate Transparency Log
+
+* ETA: Q1 2019
+
+Estamos planificando operar un "[certificate transparency log](http://www.certificate-transparency.org/how-ct-works)".
+
 ## Validaci&oacute;n de Multi-Perspectiva
 
 * ETA: Q2 2019
@@ -12,7 +18,7 @@ Actualmente Let's Encrypt hace validaci&oacute;nes desde una sola perspectiva de
 
 ## Ra&iacute;z e Intermedios ECDSA
 
-* ETA: Q2 2019
+* ETA: Q3 2019
 
 Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermedios RSA. Let's Encrypt generar&aacute; una ra&iacute;z ECDSA e intermedios que se pueden usar para firmar certificados *end-entity*.
 
