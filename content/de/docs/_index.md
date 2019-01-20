@@ -12,6 +12,7 @@ menu:
 * [Loslegen](/de/getting-started/)
 * [Wie Let's Encrypt funktioniert](/de/how-it-works/)
 * [Häufig gestellte Fragen (FAQ)](/de/docs/faq/)
+* [Glossar](/de/docs/glossary/)
 
 # Teilnehmerinformationen
 

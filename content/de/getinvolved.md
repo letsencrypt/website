@@ -24,6 +24,10 @@ Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer code 
 
 [Boulder](https://github.com/letsencrypt/boulder) is die Let's Encrypt CA Implementierung. Sie basiert auf [ACME](https://github.com/ietf-wg-acme/acme) Protokoll und ist hauptsächlich in Go geschrieben. Ein grossartiger Platz zum Starten ist die Liste der ['help wanted' issues](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted) und der [contributors guide](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
+### letsencrypt.org
+
+Sie können diese Webseite und die Dokumentation [hier](https://github.com/letsencrypt/website) verbessern oder helfen Sie mit [Übersetzungen](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
+
 ## Protokoil
 
 Die Let's Encrypt CA kommuniziert mit der Zertifikatsverwaltungssoftware, welche auf dem Webserver läuft.  Das Protokoll dafür wird ACME genannt, für "Automated Certificate Management Environment". Der Entwurf der ACME Spezifikation ist [auf Github verfügbar](https://github.com/ietf-wg-acme/acme). Er ist auf dem Weg durch den IETF zur Finalisierung als offener Standard. Sie können der Entwicklerdiskussion zum ACME Protokoll auf [dieser IETF Mailingliste](https://www.ietf.org/mailman/listinfo/acme) beitreten.
