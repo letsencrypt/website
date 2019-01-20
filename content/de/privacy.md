@@ -10,6 +10,8 @@ lastmod: 2018-06-22
 
 {{< lastmod >}}
 
+Hinweis: Die englische Version ist massgeblich
+
 In der Datenschutzerklärung von Let's Encrypt wird beschrieben, wie wir
 Ihre Informationen in drei verschiedenen Kontexten erfassen, verwenden
 und weitergeben:

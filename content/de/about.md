@@ -9,7 +9,7 @@ menu:
     parent: about
 ---
 
-Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle (CA) und läuft für die Öffentlichkeit. Der Dienst wird zur Verfügung gestellt von [Internet Security Research Group (ISRG)](/isrg/).
+Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle (CA) und läuft für die Öffentlichkeit. Der Dienst wird zur Verfügung gestellt von [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/).
 
 Wir geben Menschen die digitalen Zertifikate, die sie zur Aktivierung von HTTPS (SSL/TLS) auf ihrer Webseite benötigen, kostenlos und in der benutzerfreundlichsten Variante, die uns möglich ist. Wir machen das, um ein noch sicheres Web zu erstellen, welches die Privatsphäre aktzeptiert.
 
@@ -22,4 +22,4 @@ Die Schlüsselprinzipien hinter Let's Encrypt sind:
 * <strong>Offen:</strong> Das automatische Ausstellungd- und Erneuerungsprotokoll wird als offener Standarf veröffentlich, damit es andere adaptieren können.
 * <strong>Kooperativ:</strong> Ähnlich wie die zugrunde liegenden Internetprotokolle selbst ist Let's Encrypt eine gemeinsame Anstrengung, die der Community zugute kommt, und die ausserhalb der Kontrolle einer einzelnen Organisation liegt.
 
-Wir haben eine Seite mit mehr detailierte Informationen, [wie Let's Encrypt CA funktioniert](/how-it-works/).
+Wir haben eine Seite mit mehr detailierte Informationen, [wie Let's Encrypt CA funktioniert](/de/how-it-works/).
