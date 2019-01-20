@@ -102,4 +102,4 @@ Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung be
 
 ## Ich habe erfolgreich ein Zertifikat erneuert, aber die Validierung funktioniert jetzt nicht mehr - wie ist das möglich?
 
-Wenn Sie den Austausch für eine Domäne erfolgreich abgeschlossen haben, wird die resultierende Autorisierung zwischengespeichert, damit Ihr Konto später erneut verwendet werden kann. Die zwischengespeicherten Berechtigungen sind 30 Tage ab dem Zeitpunkt der Validierung gültig. Wenn das angeforderte Zertifikat alle erforderlichen Berechtigungen zwischengespeichert hat, wird die Validierung erst nach Ablauf der relevanten zwischengespeicherten Berechtigungen erneut durchgeführt.
+Wenn Sie den Austausch für eine Domain erfolgreich abgeschlossen haben, wird die resultierende Autorisierung zwischengespeichert, damit Ihr Konto später erneut verwendet werden kann. Die zwischengespeicherten Berechtigungen sind 30 Tage ab dem Zeitpunkt der Validierung gültig. Wenn das angeforderte Zertifikat alle erforderlichen Berechtigungen zwischengespeichert hat, wird die Validierung erst nach Ablauf der relevanten zwischengespeicherten Berechtigungen erneut durchgeführt.

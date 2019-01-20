@@ -8,7 +8,7 @@ lastmod: 2018-12-06
 
 {{< lastmod >}}
 
-Let's Encrypt verwendet das ACME-Protokoll, um zu überprüfen, ob Sie einen bestimmten Domänennamen steuern und um Ihnen ein Zertifikat auszustellen. Um ein Let's Encrypt-Zertifikat zu erhalten, müssen Sie eine ACME-Clientsoftware auswählen.
+Let's Encrypt verwendet das ACME-Protokoll, um zu überprüfen, ob Sie einen bestimmten Domainnamen steuern und um Ihnen ein Zertifikat auszustellen. Um ein Let's Encrypt-Zertifikat zu erhalten, müssen Sie eine ACME-Clientsoftware auswählen.
 
 Die folgenden ACME-Clients werden von Dritten angeboten. Let's Encrypt kontrolliert oder überprüft keine Clients von Drittanbietern und kann keine Garantie für deren Sicherheit oder Zuverlässigkeit abgeben.
 

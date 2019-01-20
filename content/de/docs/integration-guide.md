@@ -43,7 +43,7 @@ wenn wir sie aktualisieren. Vermeiden Sie eine Hardcodierung der ToS-URL
 und verlassen Sie sich stattdessen auf die [`Link: rel="Terms of Service "`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section- 6.2)
 Header, um zu bestimmen, welche ToS-URL verwendet werden soll.
 
-Sie möchten auch, wie Sie Ihre TLS-Konfiguration auf dem neuesten Stand
+Sie möchten auch wissen, wie Sie Ihre TLS-Konfiguration auf dem neuesten Stand
 halten können, wenn neue Angriffe auf Verschlüsselungssammlungen oder
 Protokollversionen gefunden werden.
 
@@ -86,7 +86,7 @@ auf Benachrichtigungen reagieren können, falls Sie im Urlaub sind.
 Das Ergebnis davon ist, dass Sie als Hosting-Provider nicht die
 E-Mail-Adressen Ihrer Kunden senden müssen, damit diese unseren
 Abonnentenvereinbarungen zustimmen. Sie können einfach Zertifikate für
-die von Ihnen kontrollierten Domänen ausstellen und sie verwenden.
+die von Ihnen kontrollierten Domains ausstellen und sie verwenden.
 
 # Ein Konto oder viele?
 
@@ -114,7 +114,7 @@ Zertifikat verwenden oder viele Hostnamen auf einer kleinen Anzahl von
 Zertifikaten zusammenfassen, bleibt Ihnen überlassen.
 
 Die Verwendung separater Zertifikate pro Hostname bedeutet, dass weniger
-bewegliche Teile erforderlich sind, um Domänen logisch hinzuzufügen und
+bewegliche Teile erforderlich sind, um Domains logisch hinzuzufügen und
 zu entfernen, während sie bereitgestellt und zurückgezogen werden. Durch
 separate Zertifikate wird auch die Zertifikatgrösse minimiert, wodurch
 HTTPS-Handshakes in Netzwerken mit geringer Bandbreite beschleunigt
@@ -140,7 +140,7 @@ möglicherweise wiederholt neue Frontends für dieselbe Website erstellt,
 sollten diese Frontends zunächst versuchen, ein Zertifikat und einen
 privaten Schlüssel aus einem dauerhaften Speicher zu verwenden, und erst
 dann ein neues ausstellen, wenn kein Zertifikat verfügbar ist oder alle
-vorhandenen Zertifikate vorhanden sind abgelaufen.
+vorhandenen Zertifikate abgelaufen sind.
 
 Für Let's Encrypt können wir so vielen Menschen wie möglich Dienste
 anbieten. Dies stellt für Sie sicher, dass Sie Ihre Website jederzeit
@@ -221,12 +221,12 @@ bedienen.
 Um Let's Encrypt verwenden zu können, müssen Sie ausgehenden Port
 443-Verkehr von den Computern zulassen, auf denen Ihr ACME-Client
 ausgeführt wird. Wir veröffentlichen die IP-Bereiche für unseren
-ACME-Service nicht und werden sich ohne vorherige Ankündigung ändern.
+ACME-Service nicht und sie werden sich auch ohne vorherige Ankündigung ändern.
 
 Für die ACME-Herausforderung "http-01" müssen Sie den eingehenden Port
 80-Verkehr zulassen. Wir veröffentlichen nicht die IP-Bereiche, von
-denen aus wir die Validierung durchführen, und sie werden sich ohne
-vorherige Ankündigung ändern.
+denen aus wir die Validierung durchführen, und sie werden sich auch
+ohne vorherige Ankündigung ändern.
 
 Hinweis: Es wird empfohlen, immer einen einfachen HTTP-Zugriff auf den
 Webserver zuzulassen, wobei eine Weiterleitung zu HTTPS erfolgt. Dies
@@ -246,7 +246,7 @@ Kontoschlüssel nicht als Zertifikatsschlüssel wiederverwenden.
 
 Wir empfehlen, eine Konfiguration mit zwei Zertifikaten bereitzustellen,
 die standardmässig ein RSA-Zertifikat und ein (viel kleineres)
-ECDSA-Zertifikat für die Clients bereitstellt, die Unterstützung
+ECDSA-Zertifikat für die Clients bereitzustellen, die Unterstützung
 angeben.
 
 # HTTPS standardmässig
@@ -272,7 +272,7 @@ Es wird empfohlen, Kunden zu erlauben, einen
 HTTP-Strict-Transport-Security-Header (HSTS) mit einem Standardalter von
 maximal 60 Tagen festzulegen. Diese Einstellung sollte jedoch von einer
 Warnung begleitet werden, die besagt, dass der Kunde, wenn der Kunde zu
-einem Hosting-Anbieter wechseln muss, der kein HTTPS anbietet, die
+einem anderen Hosting-Anbieter wechseln muss, der kein HTTPS anbietet, die
 Website in den zwischengespeicherten HSTS-Einstellungen in Browsern
 nicht verfügbar macht. Sowohl der Kunde als auch der Hosting-Anbieter
 sollten sich darüber im Klaren sein, dass der HSTS-Header
@@ -321,7 +321,7 @@ ausläuft. Ein sinnvoller Backoff-Zeitplan wäre beispielsweise: 1.
 Wiederholung nach einer Minute, 2. Wiederholung nach zehn Minuten, 3.
 Wiederholung nach 100 Minuten, 4. und nachfolgende Wiederholung nach
 einem Tag. Natürlich sollten Administratoren eine Möglichkeit haben,
-frühere Wiederholungen pro Domäne oder global anzufordern.
+frühere Wiederholungen pro Domain oder global anzufordern.
 
 Backoffs bei Wiederholungsversuchen bedeutet, dass Ihre Ausgabesoftware
 Fehler sowie Erfolge nachverfolgen und prüfen sollte, ob kürzlich ein

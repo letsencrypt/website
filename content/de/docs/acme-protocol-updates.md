@@ -12,7 +12,7 @@ Das ACME-Protokoll ist der Grundstein für die Funktionsweise von Let's Encrypt.
 
 # Derzeit implementierte ACME Version
 
-Momentan haben wir folgende API Endpunkte. Es werden nicht alle Entwürfe der ACME Spezification implementiert, da das Dokument immer weiter entwickelt wird. Bitte schauen Sie [unser Diagramm der Unterschiede](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) zum Vergleich der Implementierung mit dem derzeitigen ACME Entwurf.
+Momentan haben wir folgende API Endpunkte. Es werden nicht alle Entwürfe der ACME Spezifikation implementiert, da das Dokument immer weiter entwickelt wird. Bitte schauen Sie [unser Diagramm der Unterschiede](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) zum Vergleich der Implementierung mit dem derzeitigen ACME Entwurf.
 
 ## ACME v1
 
@@ -30,7 +30,7 @@ https://letsencrypt.org/2017/06/14/acme-v2-api.html
 
 Von Zeit zu Zeit implementiert Let's Encrypt neue abwärtskompatible Funktionen in existierende API Endpunkte. Typischerweise werden neue abwärtskompatible Funktionen vorgestellt, weil wir uns entschieden haben, einen Teil der ACME Spezifikation zu implemntieren, die wir vorher noch nicht gehabt haben.
 
-Wenn neue Funktionen zu existierenden API Endpunkten vorgestellt werden, sind die Funktionen bereits klar in einer öffentlichen ACME Spezifikation erklärt und stören keine implementierte Clients.
+Wenn neue Funktionen zu existierenden API Endpunkten vorgestellt werden, sind die Funktionen bereits klar in einer öffentlichen ACME Spezifikation erklärt und stören keine implementierten Clients.
 
 # ACME Sicherheitsupdates
 

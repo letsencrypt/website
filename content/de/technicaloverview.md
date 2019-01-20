@@ -8,14 +8,14 @@ Das Ziel von Let's Encrypt und des [ACME-Protokolls](https://ietf-wg-acme.github
 
 Um zu verstehen, wie die Technologie funktioniert, gehen wir die Einrichtung von "https://example.com/" mit einem Zertifikatsverwaltungsagenten durch, der Let's Encrypt unterstützt.
 
-Dieser Prozess umfasst zwei Schritte. Zunächst weist der Agent der Zertifizierungsstelle nach, dass der Webserver eine Domäne kontrolliert. Anschliessend kann der Agent Zertifikate für diese Domäne anfordern, erneuern und widerrufen.
+Dieser Prozess umfasst zwei Schritte. Zunächst weist der Agent der Zertifizierungsstelle nach, dass der Webserver eine Domain kontrolliert. Anschliessend kann der Agent Zertifikate für diese Domain anfordern, erneuern und widerrufen.
 
 
 ## Domain-Validierung
 
-Let's Encrypt identifiziert den Serveradministrator anhand des öffentlichen Schlüssels. Wenn die Agentensoftware zum ersten Mal mit Let's Encrypt interagiert, generiert sie ein neues Schlüsselpaar und weist der Let's Encrypt-Zertifizierungsstelle nach, dass der Server eine oder mehrere Domänen kontrolliert. Dies ist vergleichbar mit dem traditionellen CA-Verfahren, bei dem ein Konto erstellt und diesem Konto Domains hinzugefügt werden.
+Let's Encrypt identifiziert den Serveradministrator anhand des öffentlichen Schlüssels. Wenn die Agentensoftware zum ersten Mal mit Let's Encrypt interagiert, generiert sie ein neues Schlüsselpaar und weist der Let's Encrypt-Zertifizierungsstelle nach, dass der Server eine oder mehrere Domain kontrolliert. Dies ist vergleichbar mit dem traditionellen CA-Verfahren, bei dem ein Konto erstellt und diesem Konto Domains hinzugefügt werden.
 
-Um den Prozess zu starten, fragt der Agent die Let's Encrypt-Zertifizierungsstelle, was zu tun ist, um zu beweisen, dass sie `example.com` kontrolliert. Die Let's Encrypt-Zertifizierungsstelle prüft den angeforderten Domänennamen und gibt eine oder mehrere Herausforderungen heraus. Dies sind verschiedene Möglichkeiten, mit denen der Agent die Kontrolle über die Domäne nachweisen kann. Beispielsweise kann die Zertifizierungsstelle dem Agenten die Wahl zwischen folgenden Optionen geben:
+Um den Prozess zu starten, fragt der Agent die Let's Encrypt-Zertifizierungsstelle, was zu tun ist, um zu beweisen, dass sie `example.com` kontrolliert. Die Let's Encrypt-Zertifizierungsstelle prüft den angeforderten Domainnamen und gibt eine oder mehrere Herausforderungen heraus. Dies sind verschiedene Möglichkeiten, mit denen der Agent die Kontrolle über die Domain nachweisen kann. Beispielsweise kann die Zertifizierungsstelle dem Agenten die Wahl zwischen folgenden Optionen geben:
 
 * Bereitstellung eines DNS-Eintrags unter `example.com` oder
 * Bereitstellung einer HTTP-Ressource unter einem bekannten URI unter "https://example.com/"
@@ -43,7 +43,7 @@ Wenn die Signatur über die Nonce gültig ist und die Herausforderungen ausgeche
 
 Wenn der Agent über ein autorisiertes Schlüsselpaar verfügt, ist das Anfordern, Erneuern und Sperren von Zertifikaten ganz einfach: Senden Sie einfach Zertifikatsverwaltungsnachrichten und signieren Sie sie mit dem autorisierten Schlüsselpaar.
 
-Um ein Zertifikat für die Domäne zu erhalten, erstellt der Agent eine PKCS#10-Anforderung [Zertifikatsignierungsanforderung](https://tools.ietf.org/html/rfc2986), in der die Let's Encrypt-Zertifizierungsstelle aufgefordert wird, ein Zertifikat für example.com mit einem angegebenen öffentlichen Schlüssel auszustellen. Wie üblich enthält der CSR eine Signatur des privaten Schlüssels, der dem öffentlichen Schlüssel in dem CSR entspricht. Der Agent signiert ausserdem die gesamte CSR mit dem autorisierten Schlüssel für "example.com", damit die Let's Encrypt-Zertifizierungsstelle weiss, dass sie autorisiert ist.
+Um ein Zertifikat für die Domain zu erhalten, erstellt der Agent eine PKCS#10-Anforderung [Zertifikatsignierungsanforderung](https://tools.ietf.org/html/rfc2986), in der die Let's Encrypt-Zertifizierungsstelle aufgefordert wird, ein Zertifikat für example.com mit einem angegebenen öffentlichen Schlüssel auszustellen. Wie üblich enthält der CSR eine Signatur des privaten Schlüssels, der dem öffentlichen Schlüssel in dem CSR entspricht. Der Agent signiert ausserdem die gesamte CSR mit dem autorisierten Schlüssel für "example.com", damit die Let's Encrypt-Zertifizierungsstelle weiss, dass sie autorisiert ist.
 
 Wenn die Let's Encrypt-Zertifizierungsstelle die Anforderung erhält, werden beide Signaturen überprüft. Wenn alles gut aussieht, wird ein Zertifikat für `example.com` mit dem öffentlichen Schlüssel aus dem CSR ausgestellt und an den Agenten zurückgegeben.
 

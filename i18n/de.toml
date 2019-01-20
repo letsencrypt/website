@@ -32,8 +32,8 @@ other = "Spende"
 
 [footer_policies]
 other = """
-Schauen Sie unsere <a href="/privacy/">Datenschutzbestimmungen</a>.<br>
-Schauen Sie unsere <a href="/trademarks/">Markenbestimmungen</a>.
+Schauen Sie unsere <a href="/de/privacy/">Datenschutzbestimmungen</a>.<br>
+Schauen Sie unsere <a href="/de/trademarks/">Markenbestimmungen</a>.
 """
 
 [linux_foundation_trademark]

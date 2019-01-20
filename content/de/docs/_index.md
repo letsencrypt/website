@@ -34,5 +34,5 @@ menu:
 
 * [Client und Provider Integrationsleitfaden](/de/docs/integration-guide/)
 * [Aktualisierungen ACME Protokoll](/de/docs/acme-protocol-updates/)
-* [Unterschiede von derzeitigen ACME Entwürfen](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [Unterschiede von derzeitigen ACME Entwürfen (englisch)](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * [Account IDs finden](/de/docs/account-id/)
