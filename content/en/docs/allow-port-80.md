@@ -12,11 +12,12 @@ We occasionally get reports from people who have trouble using the
 HTTP-01 challenge type because they've firewalled off port 80 to their
 web server. Our recommendation is that all servers meant for general web
 use should offer both HTTP on port 80 and HTTPS on port 443. They should
-also send redirects for all port 80 requests, and possibly an HSTS header.
+also send redirects for all port 80 requests, and possibly an HSTS header
+(on port 443 requests).
 
-Allowing port 80 doesn't introduce a larger attack surface, because
-requests on port 80 are generally served by the same software that runs
-on port 443.
+Allowing port 80 doesn't introduce a larger attack surface on your server,
+because requests on port 80 are generally served by the same software that
+runs on port 443.
 
 Closing port 80 doesn't reduce the risk to a person who accidentally
 visits your website via HTTP. In normal circumstances, that person
