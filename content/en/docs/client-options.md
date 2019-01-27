@@ -121,7 +121,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [Greenlock for Commandline](https://git.coolaj86.com/coolaj86/greenlock-cli.js)
 - [Greenlock for Express.js](https://git.coolaj86.com/coolaj86/greenlock-express.js)
-- [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme.js)
+- [Cloudron/acme](https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme2.js)
 - [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 
 ## OpenShift
