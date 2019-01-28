@@ -14,13 +14,13 @@ The ACME URL for our staging environment is:
 
 `https://acme-staging.api.letsencrypt.org/directory`
 
-If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
+If you're using Certbot, you can use our staging environment with the `--dry-run` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
 
 The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) is:
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-If you're using Certbot, you can use our staging environment with the `--staging` flag. For other ACME clients, please read their instructions for information on testing with our staging environment. Please note the v2 staging environment requires a v2 compatible ACME client.
+If you're using Certbot, you can use our staging environment with the `--dry-run` flag. For other ACME clients, please read their instructions for information on testing with our staging environment. Please note the v2 staging environment requires a v2 compatible ACME client.
 
 # Rate Limits
 
