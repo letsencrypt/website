@@ -170,6 +170,8 @@ title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
 languageName ="German"
 languageCode= "de-de"
+#if colon ":" must be prefixed
+beforeColon= ""
 # Weight used for sorting.
 weight = 10
 description = """
