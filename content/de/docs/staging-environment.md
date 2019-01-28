@@ -14,13 +14,13 @@ Die ACME URL für unsere Staging-Umgebung lautet:
 
 `https://acme-staging.api.letsencrypt.org/directory`
 
-Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--staging` Flag benutzen. Für andere ACME Clients lesen Sie bitte die Instruktionen für Informationen zum Testen mit unserer Staging-Umgebung.
+Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--dry-run` Flag benutzen. Für andere ACME Clients lesen Sie bitte die Instruktionen für Informationen zum Testen mit unserer Staging-Umgebung.
 
 Die ACME URL für unsere [ACME v2 Staging-Umgebung](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) ist:
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--staging` Flag benutzen. Für andere ACME Clients lesen Sie bitte die Instruktionen für Informationen zum Testen mit unserer Staging-Umgebung. Beachten Sie, die v2 Staging-Umgebung benötigt einen v2 kompatiblen ACME Client.
+Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--dry-run` Flag benutzen. Für andere ACME Clients lesen Sie bitte die Instruktionen für Informationen zum Testen mit unserer Staging-Umgebung. Beachten Sie, die v2 Staging-Umgebung benötigt einen v2 kompatiblen ACME Client.
 
 # Rate Limits
 
