@@ -14,7 +14,7 @@ We'd like to thank all of the people and organizations who worked hard to create
 
 This year we created a new website for the legal entity behind Let's Encrypt, [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/), because we believe there will be other instances beyond Let's Encrypt in which ISRG might be able to help to build, or improve access to, a better Internet. 
 
-While we’re proud of what we accomplished in 2018, we spend most of our time looking forward rather than back. As we wrap up our own planning process for 2019, I’d like to share some of our plans with you, including both the things we’re excited about and the challenges we’ll face. We’ll cover service growth, new features, infrastructure, and finances.
+While we’re proud of what we accomplished in 2018, we spend most of our time looking forward rather than back. As we wrap up our own planning process for 2019, We’d like to share some of our plans with you, including both the things we’re excited about and the challenges we’ll face. We’ll cover service growth, new features, infrastructure, and finances.
 
 ## Service Growth
 
