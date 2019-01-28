@@ -165,6 +165,49 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
+[languages.de]
+title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
+contentDir = "content/de"
+languageName ="German"
+languageCode= "de-de"
+# Weight used for sorting.
+weight = 10
+description = """
+  Let&rsquo;s&nbsp;Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
+  herausgebracht für Sie durch <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.de.menu.main]]
+ name = "Hilfe bekommen"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.de.menu.main]]
+ name = "Spenden"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.de.menu.main]]
+ name = "Über uns"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.de.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.de.menu.main]]
+ name = "Dienstestatus"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.de.menu.main]]
+ name = "Freie Stellen"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]
