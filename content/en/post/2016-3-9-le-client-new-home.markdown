@@ -12,7 +12,7 @@ slug: le-client-new-home
 
 Over the next few months the Let’s Encrypt client software will transition to a new name, soon to be announced, and a new home at the [Electronic Frontier Foundation (EFF)](https://www.eff.org/).
 
-This change does not affect the Let's Encrypt certificate authority (CA) or associated services, which will retain the Let's Encrypt name and continue to be hosted by the [Internet Security Research Group](https://letsencrypt.org/isrg/).
+This change does not affect the Let's Encrypt certificate authority (CA) or associated services, which will retain the Let's Encrypt name and continue to be hosted by the [Internet Security Research Group](https://www.abetterinternet.org/).
 
 The goal of Let’s Encrypt is to make turning on HTTPS as easy as possible. To accomplish that, it’s not enough to fully automate certificate issuance on the certificate authority (CA) side - we have to fully automate on the client side as well. The Let’s Encrypt client is now being used by hundreds of thousands of websites and we expect it to continue to be a popular choice for sites that are run from a single server or VPS.
 
