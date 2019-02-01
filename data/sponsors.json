@@ -1,7 +1,6 @@
 {
 "platinum":[
       {"name":"Mozilla","url":"https://www.mozilla.org/","image":"mozilla-logo.png"},
-      {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
       {"name":"Cisco","url":"https://www.cisco.com/","image":"cisco-logo.png"},
       {"name":"Electronic Frontier Foundation","url":"https://www.eff.org/","image":"eff-logo.png"},
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
@@ -13,6 +12,7 @@
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"}
 ],
 "silver":[
+      {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
       {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
       {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
       {"name":"American Library Association","url":"http://www.ala.org/offices/oif","image":"ala-logo.png"},
