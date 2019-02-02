@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-01-14
+lastmod: 2019-02-02
 ---
 
 {{< lastmod >}}
@@ -64,6 +64,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 - [php-acme-client](https://github.com/kouk1/php-acme-client)
+- [Auto-Install Free SSL (WordPress plugin)](https://freessl.tech/free-ssl-certificate-for-wordpress-website)
 
 ## Bash
 
@@ -144,6 +145,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php)
 - [php-acme-client](https://github.com/kouk1/php-acme-client)
+- [Auto-Install Free SSL (WordPress plugin)](https://freessl.tech/free-ssl-certificate-for-wordpress-website)
 
 ## Python
 
