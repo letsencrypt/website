@@ -6,7 +6,7 @@ date: 2018-01-05
 lastmod: 2019-01-14
 ---
 
-{{< lastmod >}}
+{{< clientslastmod >}}
 
 Let's Encrypt uses the ACME protocol to verify that you control a given domain
 name and to issue you a certificate. To get a Let's Encrypt certificate, you'll
@@ -25,10 +25,11 @@ We recommend that most people start with the [Certbot](https://certbot.eff.org/)
 
 If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-## ACME v2 Compatible Clients
+{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
 
-These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
+the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 
+<<<<<<< HEAD
 - [Certbot](https://certbot.eff.org/) (Certbot >= 0.22.0)
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
 - [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
@@ -262,6 +263,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ruxy](https://ruxyserver.com)
 - [ISPConfig](https://www.ispconfig.org/)
 - [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
+=======
+{{< /clients >}}
+>>>>>>> Clients option uses json and is now ready for i18n
 
 # Adding your client/project
 
