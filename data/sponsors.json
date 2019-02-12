@@ -5,7 +5,8 @@
       {"name":"Electronic Frontier Foundation","url":"https://www.eff.org/","image":"eff-logo.png"},
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
-      {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"}
+      {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
+      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrustssl.com/","image":"identrust-logo.png"},
@@ -13,7 +14,6 @@
 ],
 "silver":[
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
-      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
       {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
       {"name":"American Library Association","url":"http://www.ala.org/offices/oif","image":"ala-logo.png"},
       {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"},
