@@ -69,6 +69,7 @@
       {"name":"Livesport","url":"https://www.livesport.eu/","image":"livesport-logo.png"},
       {"name":"BestVPN","url":"https://www.bestvpn.com/","image":"bestvpn-logo.png"},
       {"name":"Nazwa.pl","url":"https://www.nazwa.pl/","image":"nazwa-logo.png"},
-      {"name":"Clever Cloud","url":"https://www.clever-cloud.com/","image":"clevercloud-logo.png"}
+      {"name":"Clever Cloud","url":"https://www.clever-cloud.com/","image":"clevercloud-logo.png"},
+      {"name":"Render","url":"https://render.com/","image":"render-logo.png"}
 ]
 }
