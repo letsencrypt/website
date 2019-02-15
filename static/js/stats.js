@@ -14,7 +14,7 @@ var gHttpsData = { countryList: [], osList: [], dateToCountryOSPageloadData: {},
 function parse_delim(s, delim, f) {
   var ix_end = 0;
   for (var ix = 0; ix < s.length; ix = ix_end + 1) {
-    ix_end = s.indexOf('\n', ix);
+    ix_end = s.indexOf("\n", ix);
     if (ix_end == -1) {
       ix_end = s.length;
     }
@@ -54,15 +54,15 @@ function insertPoint(trace, x, y) {
 
 function tsvListener() {
   var tIssued = { type: "scatter", name: "Issued", x:[], y:[],
-                  fill: "tozeroy", line: { color: someGreen } }
+                  fill: "tozeroy", line: { color: someGreen } };
   var tActive = { type: "scatter", name: "Certificates Active", x:[], y:[],
-                  line: { color: leOrange, dash: 'dot' } }
+                  line: { color: leOrange, dash: "dot" } };
   var tFqdn = { type: "scatter", name: "Fully-Qualified Domains Active",
-                x:[], y:[], line: { color: leBlue, dash: 'line' } }
+                x:[], y:[], line: { color: leBlue, dash: "line" } };
   var tRegDom = { type: "scatter", name: "Registered Domains Active", x:[], y:[],
-                  marker: { symbol: "diamond" }, line: { color: someGreen, dash: 'dash' } }
+                  marker: { symbol: "diamond" }, line: { color: someGreen, dash: "dash" } };
 
-  parse_delim(this.responseText, '\t', function(row){
+  parse_delim(this.responseText, "\t", function(row){
     if (!dateFormat.test(row[0])) {
       return;
     }
@@ -88,7 +88,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
     let layout = {
       margin: { t: 20 },
       yaxis: {
-        title: 'Active Count',
+        title: "Active Count",
       },
       legend: {
         xanchor: "left",
@@ -96,8 +96,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         x: 0,
         y: 1
       }
-    }
-    let activeUsage = document.getElementById('activeUsage');
+    };
+    let activeUsage = document.getElementById("activeUsage");
     if (activeUsage) {
       Plotly.plot(activeUsage, traces, layout);
     }
@@ -109,7 +109,7 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
     let layout = {
       margin: { t: 20 },
       yaxis: {
-        title: 'Issued Per Day',
+        title: "Issued Per Day",
       },
       legend: {
         xanchor: "left",
@@ -117,8 +117,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         x: 0,
         y: 1
       }
-    }
-    let issuancePerDay = document.getElementById('issuancePerDay');
+    };
+    let issuancePerDay = document.getElementById("issuancePerDay");
     if (issuancePerDay) {
       Plotly.plot(issuancePerDay, traces, layout);
     }
@@ -132,15 +132,15 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
     let layout = {
       margin: { t: 20 },
       yaxis: {
-        title: 'Active Count',
-        side: 'right'
+        title: "Active Count",
+        side: "right"
       },
       yaxis2: {
-        title: 'Issued Per Day',
-        titlefont: { color: '#2a7ae2' },
-        tickfont: { color: '#2a7ae2' },
-        overlaying: 'y',
-        side: 'left',
+        title: "Issued Per Day",
+        titlefont: { color: "#2a7ae2" },
+        tickfont: { color: "#2a7ae2" },
+        overlaying: "y",
+        side: "left",
         showgrid: false
       },
       legend: {
@@ -149,8 +149,8 @@ function plot(tIssued, tActive, tFqdn, tRegDom) {
         x: 0,
         y: 1
       }
-    }
-    let combinedTimeline = document.getElementById('combinedTimeline');
+    };
+    let combinedTimeline = document.getElementById("combinedTimeline");
     if (combinedTimeline) {
       Plotly.plot(combinedTimeline, traces, layout);
     }
@@ -162,7 +162,7 @@ function httpsCsvListener(responseText) {
   let operatingSystems = {};
   let dateToCountryOSPageloadData = {};
 
-  parse_delim(responseText, ',', function(row){
+  parse_delim(responseText, ",", function(row){
     let datestamp = row[0].substring(0, 10); // Strip off the timestamp
     let os = row[1];
     let country = row[2];
@@ -240,7 +240,7 @@ function httpsDerivePageloadsFromNormalizedData(traceObj, includeInHttpsAnalysis
 }
 
 function historicalHttpsCsvListener(responseText) {
-  parse_delim(responseText, ',', function(row){
+  parse_delim(responseText, ",", function(row){
     let datestamp = row[0];
     let pageloads = row[1];
     if (!dateFormat.test(datestamp)) {
@@ -262,16 +262,16 @@ function importHistoricalGlobalData(traceObj, stackMovingAvg) {
   }
 }
 
-let leBlue = '#103a71';
-let leOrange = '#ffa409';
-let someGreen = '#2ca02c';
+let leBlue = "#103a71";
+let leOrange = "#ffa409";
+let someGreen = "#2ca02c";
 
 // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
 function httpsPlot() {
   let traces = [];
 
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "All users", line: { color: leBlue } }
+    let traceObj = { type: "scatter", x:[], y:[], name: "All users", line: { color: leBlue } };
     let stackMovingAvg = [];
     importHistoricalGlobalData(traceObj, stackMovingAvg);
     httpsDerivePageloadsFromNormalizedData(traceObj, () => {
@@ -280,14 +280,14 @@ function httpsPlot() {
     traces.push(traceObj);
   }
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "USA users", line: { color: leOrange, dash: 'dot' } }
+    let traceObj = { type: "scatter", x:[], y:[], name: "USA users", line: { color: leOrange, dash: "dot" } };
     httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
       return (country == "US");
     });
     traces.push(traceObj);
   }
   {
-    let traceObj = { type: "scatter", x:[], y:[], name: "Japan users", line: { color: someGreen, dash: 'dash' } }
+    let traceObj = { type: "scatter", x:[], y:[], name: "Japan users", line: { color: someGreen, dash: "dash" } };
     httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
       return (country == "JP");
     });
@@ -297,9 +297,9 @@ function httpsPlot() {
   let layout = {
     margin: { t: 20 },
     yaxis: {
-      title: 'Percent of Pageloads over HTTPS (14 day moving average)',
-      rangemode: 'tozero',
-      ticksuffix: '%'
+      title: "Percent of Pageloads over HTTPS (14 day moving average)",
+      rangemode: "tozero",
+      ticksuffix: "%"
     },
     legend: {
       xanchor: "left",
@@ -307,8 +307,8 @@ function httpsPlot() {
       x: 0,
       y: 1
     }
-  }
-  let pageloadPercent = document.getElementById('pageloadPercent');
+  };
+  let pageloadPercent = document.getElementById("pageloadPercent");
   if (pageloadPercent) {
     Plotly.plot(pageloadPercent, traces, layout);
   }
