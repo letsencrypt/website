@@ -13,6 +13,7 @@ document.querySelectorAll("[id^=\"def-\"]").forEach(function(def){
 });
 
 // search for invalid links
+/*eslint no-console: ["error", { allow: ["error"] }] */
 document.querySelectorAll(".definition>a[href^=\"#\"]").forEach(function(a){
 	if ( a.title ) return;
 	let href = a.href;

@@ -84,7 +84,7 @@ function enableDropdowns() {
       document.getElementById(MENU_ID).querySelectorAll(NAV_MENU_PARENT_SELECTOR),
       function(el){
         el.classList.add(NAV_MENU_HOVERABLE_CLASS);
-        el.addEventListener("focusin", function(e) {
+        el.addEventListener("focusin", function() {
           openNavMenu(el);
         });
       }
