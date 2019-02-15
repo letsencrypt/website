@@ -2,7 +2,7 @@
 author: Jon Millican, Software Engineer, Facebook
 date: 2019-02-12T00:00:00Z
 excerpt: "We’re excited that Facebook is supporting our work through a three-year Platinum sponsorship! We asked them to share their thoughts on HTTPS adoption here. Please join us in thanking Facebook for their support of Let’s Encrypt and our mission to encrypt the Web!"
-title: "Facebook expands support for Let’s Encrypt"
+title: "Facebook Expands Support for Let’s Encrypt"
 slug: facebook-expands-support-for-letsencrypt
 ---
 
