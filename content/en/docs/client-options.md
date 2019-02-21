@@ -240,6 +240,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
 - [Certes](https://github.com/fszlin/certes) (.NET)
+- [PKISharp/ACMESharpCore](https://github.com/PKISharp/acmesharpcore) (.NET, PowerShell)
 
 # Projects integrating with Let's Encrypt
 
