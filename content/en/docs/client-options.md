@@ -64,6 +64,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 - [php-acme-client](https://github.com/kouk1/php-acme-client)
+- [win-acme](https://github.com/PKISharp/win-acme) (.NET)
 
 ## Bash
 
