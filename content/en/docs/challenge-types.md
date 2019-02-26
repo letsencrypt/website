@@ -21,17 +21,18 @@ token to your ACME client, and your ACME client puts a file on your web
 server at `http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`. That
 file contains the token, plus a thumbprint of your account key. Once
 your ACME client tells Let’s Encrypt that the file is ready, Let’s
-Encrypt tries retrieving it. If our validation server gets the right
-response from your web server, the validation is considered successful
-and you can go on to issue your certificate. If the validation fails,
+Encrypt tries retrieving it (potentially multiple times from multiple vantage
+points). If our validation checks gets the right
+responses from your web server, the validation is considered successful
+and you can go on to issue your certificate. If the validation checks fail,
 you’ll have to try again with a new certificate.
 
 Our implementation of the HTTP-01 challenge follows redirects, up to 10
 redirects deep. It only accepts redirects to “http:” or “https:”,
-and only to ports 80 or 443. When redirected to an HTTPS URL, it does
-not validate certificates (since this challenge is intended to bootstrap
-valid certificates, it may encounter self-signed or expired certificates
-along the way).
+and only to ports 80 or 443. It does not accept redirects to IP addresses. When
+redirected to an HTTPS URL, it does not validate certificates (since this
+challenge is intended to bootstrap valid certificates, it may encounter
+self-signed or expired certificates along the way).
 
 The HTTP-01 challenge can only be done on port 80. Allowing clients to
 specify arbitrary ports would make the challenge less secure, and so it
