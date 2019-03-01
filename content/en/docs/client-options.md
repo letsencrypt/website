@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-01-14
+lastmod: 2019-03-01
 ---
 
 {{< lastmod >}}
@@ -195,6 +195,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [Lego](https://github.com/xenolf/lego)
 - [hlandau/acme](https://github.com/hlandau/acme/tree/master/acmeapi)
+- [CertMagic](https://github.com/mholt/certmagic)
 
 ## Java
 
