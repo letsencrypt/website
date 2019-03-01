@@ -201,6 +201,11 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [zero11it/acme-client](https://github.com/zero11it/acme-client)
 - [shred/acme4j](https://github.com/shred/acme4j)
 
+## .NET
+
+- [ACMESharpCore](https://github.com/PKISharp/ACMESharpCore) (.NET Standard, ACME v2)
+- [Certes](https://github.com/fszlin/certes) (.NET Standard, ACME v2)
+
 ## Node.js
 
 - [Greenlock for node.js](https://git.coolaj86.com/coolaj86/greenlock.js)
@@ -237,8 +242,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Windows
 
-- [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
-- [Certes](https://github.com/fszlin/certes) (.NET)
+- [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (ACME v1 PowerShell client, .NET Framework library)
 
 # Projects integrating with Let's Encrypt
 
