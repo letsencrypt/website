@@ -24,6 +24,8 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 For information about various technical mailing lists, please visit our [Get Involved](/getinvolved/) page.
 
+To sign up for our newsletter, [click here.] (https://eepurl.com/gi8Ohr)
+
 ## Security
 
 Please do not write to this address unless your message concerns a security issue with Let's Encrypt.
