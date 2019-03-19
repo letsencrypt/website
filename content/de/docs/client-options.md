@@ -58,6 +58,7 @@ Diese Clients sind kompatibel mit unseren [Staging Endpunkt für ACME v2](https:
 - [FreeSSL.tech Auto](https://freessl.tech)
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
+- [ACMEd](https://github.com/breard-r/acmed)
 
 ## Bash
 
@@ -165,6 +166,7 @@ Diese Clients sind kompatibel mit unseren [Staging Endpunkt für ACME v2](https:
 ## Rust
 
 - [acme-client](https://github.com/onur/acme-client)
+- [ACMEd](https://github.com/breard-r/acmed)
 
 ## Windows / IIS
 
