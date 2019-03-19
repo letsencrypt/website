@@ -175,7 +175,7 @@ languageCode= "de-de"
 #if colon ":" must be prefixed
 beforeColon= ""
 # Weight used for sorting.
-weight = 10
+weight = 40
 description = """
   Let&rsquo;s&nbsp;Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
   herausgebracht für Sie durch <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
