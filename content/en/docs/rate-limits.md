@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2018-08-01
+lastmod: 2019-03-08
 ---
 
 {{< lastmod >}}
