@@ -10,12 +10,6 @@ lastmod: 2018-03-12
 
 We highly recommend testing against our staging environment before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
 
-The ACME URL for our staging environment is:
-
-`https://acme-staging.api.letsencrypt.org/directory`
-
-If you're using Certbot, you can use our staging environment with the `--dry-run` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
-
 The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) is:
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
