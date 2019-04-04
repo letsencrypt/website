@@ -25,7 +25,7 @@ other = "Ещё..."
 other = "Подписаться <a href=\"{{ .Permalink }}\">на RSS</a>"
 
 [footer_support_us]
-other = "Сделайте Интернет безопаснее и защищённее."
+other = "Помогите сделать Интернет безопасным и уважающим конфиденциальность."
 
 [footer_donate]
 other = "Поддержите нас"
@@ -37,28 +37,28 @@ other = """
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered trademark of Linus Torvalds."
+other = "Linux Foundation является зарегистрированным товарным знаком The Linux Foundation. Linux является зарегистрированным товарным знаком, принадлежащим Линусу Торвальдсу."
 
 [header_skip_nav]
-other = "Skip navigation links"
+other = "Пропустить навигационные ссылки"
 
 [last_updated]
-other = "Last updated:"
+other = "Последнее обновление:"
 
 [see_all_doc]
 other = "See all Documentation"
 
 [blog_feed]
-other = "Let's Encrypt Blog Feed"
+other = "Блог Let's Encrypt"
 
 [platinum]
-other = "Platinum"
+other = "Платиновый"
 
 [gold]
-other = "Gold"
+other = "Золотой"
 
 [silver]
-other = "Silver"
+other = "Серебряный"
 
 [languages]
 other = "Язык"
