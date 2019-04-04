@@ -226,7 +226,7 @@ description = """
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.ru.menu.main]]
- name = "Получить помощь"
+ name = "Помощь"
  weight = 20
  url = "https://community.letsencrypt.org/"
  [[languages.ru.menu.main]]
