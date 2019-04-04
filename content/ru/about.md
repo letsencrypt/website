@@ -1,5 +1,5 @@
 ---
-title: About Let's Encrypt
+title: Что такое Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1

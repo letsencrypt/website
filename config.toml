@@ -230,12 +230,12 @@ description = """
  weight = 20
  url = "https://community.letsencrypt.org/"
  [[languages.ru.menu.main]]
- name = "Поддержать проект"
+ name = "Поддержать нас"
  weight = 30
  identifier = "donate"
  url = "/donate/"
  [[languages.ru.menu.main]]
- name = "О нас"
+ name = "О проекте"
  weight = 40
  identifier = "about"
  url = "/about/"
