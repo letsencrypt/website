@@ -226,16 +226,16 @@ description = """
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.ru.menu.main]]
- name = "Get Help"
+ name = "Получить помощь"
  weight = 20
  url = "https://community.letsencrypt.org/"
  [[languages.ru.menu.main]]
- name = "Donate"
+ name = "Пожертвовать"
  weight = 30
  identifier = "donate"
  url = "/donate/"
  [[languages.ru.menu.main]]
- name = "About Us"
+ name = "О нас"
  weight = 40
  identifier = "about"
  url = "/about/"
@@ -246,13 +246,13 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/about/"
  [[languages.ru.menu.main]]
- name = "Service Status"
+ name = "Состояние сервиса"
  weight = 60
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
  [[languages.ru.menu.main]]
- name = "Careers"
+ name = "Карьера"
  weight = 80
  identifier = "careers"
  parent = "about"
