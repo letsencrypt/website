@@ -14,12 +14,11 @@ Let's Encrypt - бесплатный, автоматизированный и о
 
 Ключевые принципы Let's Encrypt:
 
-* <strong>Free:</strong> Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
-      at zero cost.
-* <strong>Automatic:</strong> Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.
-* <strong>Secure:</strong> Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.
-* <strong>Transparent:</strong> All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
-* <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
+* <strong>Бесплатно:</strong> Любой владелец домена может использовать Let's Encrypt для получения SSL/TLS сертификатов, не тратя ни копейки.
+* <strong>Автоматизированно:</strong> Программное обеспечение Let's Encrypt, запущенное на web-сервере, само позаботится о формировании, настройке и обновлении сертификатов.
+* <strong>Безопасно:</strong> Let's Encrypt будет платформой для передовых технологии в области TLS безопасности, как для Центра Сертификации, так и для настройки web-серверов.
+* <strong>Прозрачно:</strong> Все выданные или отозванные сертификаты будут сохранены, в том числе для любых проверок безопасности.
+* <strong>Открыто:</strong> Протокол выдачи и обновления сертификатов будет опубликован как открытый стандарт, готовый ко внедрению.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
 We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works/).
