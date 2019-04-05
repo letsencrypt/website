@@ -230,7 +230,7 @@ description = """
  weight = 20
  url = "https://community.letsencrypt.org/"
  [[languages.ru.menu.main]]
- name = "Поддержать нас"
+ name = "Поддержите нас"
  weight = 30
  identifier = "donate"
  url = "/donate/"
