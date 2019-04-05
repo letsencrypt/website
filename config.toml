@@ -235,7 +235,7 @@ description = """
  identifier = "donate"
  url = "/donate/"
  [[languages.ru.menu.main]]
- name = "О проекте"
+ name = "О сервисе"
  weight = 40
  identifier = "about"
  url = "/about/"

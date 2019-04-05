@@ -1,6 +1,6 @@
 ---
 title: Что такое Let's Encrypt
-linkTitle: Let's Encrypt
+linkTitle:  Что такое Let's Encrypt
 slug: about
 top_graphic: 1
 menu:
