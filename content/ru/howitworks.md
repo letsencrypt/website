@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Приступая к работе
 slug: getting-started
 top_graphic: 3
 aliases : [/howitworks]
