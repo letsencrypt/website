@@ -8,13 +8,11 @@ menu:
     weight: 10
     parent: about
 ---
-Let's Encrypt - бесплатный, автоматизированный и открытый Центр Сертификации. Этот сервис
-создан во благо общества организацией [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/).
+Let's Encrypt - бесплатный, автоматизированный и открытый Центр Сертификации, созданный во благо всего общества организацией [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/).
 
+Мы помогаем людям выпускать SSL/TLS сертификаты для их сайтов с доступом по HTTPS, бесплатно, максимально облегчая процесс выдачи. Потому что хотим сделать интернет безопасным, и уважающим конфиденциальность его пользователей.
 
-We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
-
-The key principles behind Let's Encrypt are:
+Ключевые принципы Let's Encrypt:
 
 * <strong>Free:</strong> Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
       at zero cost.
