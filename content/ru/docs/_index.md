@@ -10,7 +10,7 @@ menu:
 # Overview
 
 * [Приступая к работе](/ru/getting-started/)
-* [How Let's Encrypt Works](/how-it-works/)
+* [Как работает Let's Encrypt](/ru/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 * [Glossary](/docs/glossary/)
 
