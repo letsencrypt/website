@@ -36,26 +36,25 @@ aliases : [/howitworks]
 # Нет доступа по SSH
 
 Идеальный вариант - если панель управления сайтом имеет поддержку Let's Encrypt (возможно,
-потребуется активировать эту опцию). В этом случае компания-хостер может запрашивать
+потребуется активировать эту опцию). В этом случае компания-хостер будет запрашивать
 сертификаты от вашего имени, устанавливать и обновлять их автоматически.
 [Ознакомьтесь со списком компаний](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920),
 поддерживающих интеграцию с Let's Encrypt. Если ваш хостер в их числе - обратитесь к документации
 на сайте компании для работы с сертификатами.
 
+Если компания-хостер не поддерживает выпуск сертификатов Let's Encrypt - оформите запрос
+в их службу технической поддержки. Мы поможем организовать интеграцию с нашим Центром Сертификации.
+Как правило, компании идут навстречу предложениям своих клиентов.
 
-If your hosting provider does not support Let's Encrypt, you can contact them to
-request support. We do our best to make it very easy to add Let's Encrypt
-support, and providers are often happy to hear suggestions from customers!
+Возможно, компания-хостер не заинтересована во взаимодействии с Let's Encrypt, но позволяет
+загружать сертификаты вручную. Установите Certbot на ваш компьютер для запуска в
+[ручном режиме](https://certbot.eff.org/docs/using.html#manual). Загрузите специальный файл
+в папку сайта, чтобы подтвердить факт владения. Certbot создаст сертификат для доменного
+имени этого сайта, для отправки на web-сервер. Мы не рекомендуем этот способ из-за его трудоёмкости, 
+а также повторения рутинных действий по перевыпуску сертификата несколько раз в год.
+Лучшим выходом будет убедить хостера в необходимости интеграции с Let's Encrypt, или же перейти
+к другому сервис-провайдеру.
 
-If your hosting provider doesn't want to integrate Let's Encrypt, but does
-support uploading custom certificates, you can install Certbot on your own
-computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
-In manual mode, you upload a specific file to your website to prove your
-control. Certbot will then retrieve a certificate that you can upload to your
-hosting provider. We don't recommend this option because it is time-consuming
-and you will need to repeat it several times per year as your certificate
-expires. For most people it is better to request Let's Encrypt support from your
-hosting provider, or switch providers if they do not plan to implement it.
 
 # Getting Help
 
