@@ -26,14 +26,10 @@ aliases : [/howitworks]
 набором настроек. [Зайдите на сайт][Certbot], чтобы получить инструкции по установке и использованию
 на вашем web-сервере.
 
-
-If [Certbot] does not meet your needs, or you'd like to try something else, there are
-[many more ACME clients to choose from](/docs/client-options/).  Once you've chosen ACME client
-software, see the documentation for that client to proceed.
-
-If you're experimenting with different ACME clients, use our
-[staging environment](/docs/staging-environment/) to avoid hitting
-[rate limits](/docs/rate-limits/).
+Если вас не устраивает [Certbot], или же вы хотите попробовать альтернативные варианты - есть
+[множество других ACME-клиентов](/docs/client-options/), со своей документацией. Экспериментировать
+с различными ACME-клиентами лучше всего на наших [тестовых серверах](/docs/staging-environment/),
+во избежание срабатывания [ограничений](/docs/rate-limits/).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
