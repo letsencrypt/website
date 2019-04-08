@@ -18,28 +18,14 @@ aliases : [/howitworks]
 [WordPress](https://wordpress.org/) - скорее всего, такого доступа у вас нет.
 В случае сомнений - уточните наличие доступа у сервис-провайдера.
 
+# Есть доступ по SSH
 
-To enable HTTPS on your website, you need to get a certificate (a type of file)
-from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
-certificate for your website's domain from Let's Encrypt, you have to demonstrate
-control over the domain. With Let's Encrypt, you do this using software that uses
-the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
-on your web host.
+Лучший вариант - использовать [Certbot]. Этот ACME-клиент автоматически создаёт и устанавливает
+сертификаты, не требуя остановки web-сервера. Он прост в использовании, работает на большинстве
+операционных систем, и отлично документирован. Также в наличии экспертный режим, с расширенным
+набором настроек. [Зайдите на сайт][Certbot], чтобы получить инструкции по установке и использованию
+на вашем web-сервере.
 
-To figure out what method will work best for you, you will need to know whether
-you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
-as SSH access) to your web host. If you manage your website entirely through a
-control panel like [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
-[WordPress](https://wordpress.org/), there's a good chance you don't have shell
-access. You can ask your hosting provider to be sure.
-
-# With Shell Access
-
-We recommend that most people with shell access use the
-[Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
-It also has expert modes for people who don't want autoconfiguration. It's easy to use,
-works on many operating systems, and has great documentation. [Visit the
-Certbot site][Certbot] to get customized instructions for your operating system and web server.
 
 If [Certbot] does not meet your needs, or you'd like to try something else, there are
 [many more ACME clients to choose from](/docs/client-options/).  Once you've chosen ACME client
