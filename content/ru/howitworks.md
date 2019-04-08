@@ -5,6 +5,12 @@ top_graphic: 3
 aliases : [/howitworks]
 ---
 
+Для использования протокола HTTPS для доступа к вашему сайту, необходим сертификат
+(файл) Центра Сертификации (далее ЦС). Let's Encrypt - один из таких Центров.
+Чтобы получить сертификат для доменного имени сайта, нужно подтвердить право
+на управление доменом. Let's Encrypt использует для этого специально ПО -
+[протокол ACME](https://ietf-wg-acme.github.io/acme/), запускаемое на web-сервере.
+
 To enable HTTPS on your website, you need to get a certificate (a type of file)
 from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
