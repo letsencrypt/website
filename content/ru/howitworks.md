@@ -55,7 +55,7 @@ aliases : [/howitworks]
 Лучшим выходом будет убедить хостера в необходимости интеграции с Let's Encrypt, или же перейти
 к другому сервис-провайдеру.
 
+# Нужна помощь?
 
-# Getting Help
-
-If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
+Сомневаетесь в выборе ACME-клиента, испытываете проблемы в работе с сертификатами, или затрудняетесь с терминологией?
+[Форумы сообщества Let's Encrypt](https://community.letsencrypt.org/) всегда к вашим услугам.
