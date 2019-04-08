@@ -20,7 +20,7 @@ aliases : [/howitworks]
 
 # Есть доступ по SSH
 
-Лучший вариант - использовать [Certbot]. Этот ACME-клиент автоматически создаёт и устанавливает
+Мы рекомендуем использовать [Certbot]. Этот ACME-клиент автоматически создаёт и устанавливает
 сертификаты, не требуя остановки web-сервера. Он прост в использовании, работает на большинстве
 операционных систем, и отлично документирован. Также в наличии экспертный режим, с расширенным
 набором настроек. [Зайдите на сайт][Certbot], чтобы получить инструкции по установке и использованию
@@ -33,18 +33,15 @@ aliases : [/howitworks]
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
-# Without Shell Access
+# Нет доступа по SSH
 
-The best way to use Let's Encrypt without shell access is by using built-in support
-from your hosting provider. If your hosting provider offers Let's Encrypt
-support, they can request a free certificate on your behalf, install it, and
-keep it up-to-date automatically. For some hosting providers, this is a
-configuration setting you need to turn on. Other providers automatically
-request and install certificates for all their customers.
+Идеальный вариант - если панель управления сайтом имеет поддержку Let's Encrypt (возможно,
+потребуется активировать эту опцию). В этом случае компания-хостер может запрашивать
+сертификаты от вашего имени, устанавливать и обновлять их автоматически.
+[Ознакомьтесь со списком компаний](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920),
+поддерживающих интеграцию с Let's Encrypt. Если ваш хостер в их числе - обратитесь к документации
+на сайте компании для работы с сертификатами.
 
-[Check our list of hosting providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-to see if yours is on it. If so, follow their documentation to set up your
-Let's Encrypt certificate.
 
 If your hosting provider does not support Let's Encrypt, you can contact them to
 request support. We do our best to make it very easy to add Let's Encrypt
