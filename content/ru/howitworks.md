@@ -11,6 +11,14 @@ aliases : [/howitworks]
 на управление доменом. Let's Encrypt использует для этого специально ПО -
 [протокол ACME](https://ietf-wg-acme.github.io/acme/), запускаемое на web-сервере.
 
+Чтобы понять, какой способ получения сертификата подойдёт вам лучше всего, уточните,
+есть ли у вас [доступ по SSH](https://en.wikipedia.org/wiki/Shell_account) к
+операционной системе (ОС) web-сервера. Если вы администрируете сайты с помощью панели
+управления типа [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), или
+[WordPress](https://wordpress.org/) - скорее всего, такого доступа у вас нет.
+В случае сомнений - уточните наличие доступа у сервис-провайдера.
+
+
 To enable HTTPS on your website, you need to get a certificate (a type of file)
 from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
