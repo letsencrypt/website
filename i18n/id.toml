@@ -25,7 +25,7 @@ other = "Baca lebih lanjut"
 other = "Langganan <a href=\"{{ .Permalink }}\">via RSS</a>"
 
 [footer_support_us]
-other = "Dukung Web yang lebih aman dan privasi yang lebih dihormati."
+other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
 
 [footer_donate]
 other = "Donasi"
