@@ -1,5 +1,5 @@
 ---
-title: Começar a Usar
+title: Começando a Usar
 slug: getting-started
 top_graphic: 3
 aliases : [/howitworks]
