@@ -1,5 +1,5 @@
 ---
-title: Como Funciona
+title: Como o Let's Encrypt Funciona
 slug: how-it-works
 top_graphic: 3
 ---
