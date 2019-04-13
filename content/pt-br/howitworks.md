@@ -19,7 +19,7 @@ painel de controle como o [cPanel](https://cpanel.com/), [Plesk](https://www.ple
 [WordPress](https://wordpress.org/) então há uma boa chance de que você não tem acesso 
 ao shell. Você pode perguntar ao seu provedor de hospedagem para ter certeza.
 
-# Com Acesso Shell
+# Com Acesso ao Shell
 
 Recomendamos às pessoas que possuem acesso ao shell utilizar o cliente ACME [Certbot].
 Ele pode automatizar a emissão de certificado e instalações sem a necessidade de interromper o serviço.
