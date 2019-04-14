@@ -4,6 +4,13 @@ slug: how-it-works
 top_graphic: 3
 ---
 
+Let's&nbsp;Encrypt и [протокол ACME](https://ietf-wg-acme.github.io/acme/) решают проблему
+автоматической настройки HTTPS на сервере, когда SSL / TLS сертификаты выдаются и обновляются
+без участия человека. Таким решением стал специальный сервис управления сертификатами, работающий на web-сервере.
+
+Для лучшего понимания технологии, разберём настройку домена `https://example.com/` для работы
+сервиса управления сертификатами Let's&nbsp;Encrypt.
+
 The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://ietf-wg-acme.github.io/acme/) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with a certificate management agent that supports Let's&nbsp;Encrypt.
