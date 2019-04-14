@@ -212,6 +212,53 @@ description = """
  identifier = "careers"
  parent = "about"
 
+[languages.ru]
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/ru"
+languageName ="Русский"
+languageCode= "ru-ru"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 40
+description = """
+  Let&rsquo;s&nbsp;Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
+  некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.ru.menu.main]]
+ name = "Помощь"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.ru.menu.main]]
+ name = "Поддержите нас"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.ru.menu.main]]
+ name = "О сервисе"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.ru.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.ru.menu.main]]
+ name = "Состояние сервиса"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.ru.menu.main]]
+ name = "Карьера"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]

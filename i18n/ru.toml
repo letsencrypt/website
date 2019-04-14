@@ -1,0 +1,64 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt - это <span>бесплатный</span>, <span>автоматизированный</span>, и <span>открытый</span> Центр Сертификации."
+
+[home_hero_getting_started]
+other = "Приступить"
+
+[home_hero_donate]
+other = "Поддержать нас"
+
+[home_hero_sponsor]
+other = "Поддержать"
+
+[home_major_sponsors]
+other = "Основные спонсоры и дарители"
+
+[home_from_our_blog]
+other = "В нашем блоге"
+
+[read_more]
+other = "Ещё..."
+
+[subscribe_rss]
+other = "Подписаться <a href=\"{{ .Permalink }}\">на RSS</a>"
+
+[footer_support_us]
+other = "Помогите сделать Интернет безопасным, и уважающим вашу конфиденциальность."
+
+[footer_donate]
+other = "Поддержите нас"
+
+[footer_policies]
+other = """
+Ознакомьтесь с нашей <a href="/privacy/">политикой конфиденциальности</a>.<br>
+Ознакомьтесь с нашей <a href="/trademarks/">политикой в отношении товарных знаков</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation является зарегистрированным товарным знаком The Linux Foundation. Linux является зарегистрированным товарным знаком, принадлежащим Линусу Торвальдсу."
+
+[header_skip_nav]
+other = "Пропустить навигационные ссылки"
+
+[last_updated]
+other = "Последнее обновление:"
+
+[see_all_doc]
+other = "See all Documentation"
+
+[blog_feed]
+other = "Блог Let's Encrypt"
+
+[platinum]
+other = "Платиновый"
+
+[gold]
+other = "Золотой"
+
+[silver]
+other = "Серебряный"
+
+[languages]
+other = "Язык"
