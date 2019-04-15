@@ -41,7 +41,7 @@ Let's&nbsp;Encrypt идентифицирует администратора web
 
 После авторизации ключевой пары, запрос, обновление и отзыв сертификатов становится делом одной минуты---агент просто посылает текстовые сообщения в Центр сертификации
 
-Для получения сертификата для `example.com`, агент составляет запрос в ЦС Let's&nbsp;Encrypt согласно PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986). Обычно, CSR содержит цифровую подпись закрытого ключа, соответствующий ему открытый ключ, а также подписывается целиком открытым ключом из авторизованной ключевой пары.
+Для получения сертификата для `example.com`, агент составляет запрос в ЦС Let's&nbsp;Encrypt согласно PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986). Обычно, CSR содержит цифровую подпись закрытого ключа, соответствующий ему открытый ключ, а также подписывается целиком авторизованной ключевой парой.
 
 При получении CSR, ЦС Let's&nbsp;Encrypt проверяет подписи ключевой пары. Если всё в порядке, ЦС Let's&nbsp;Encrypt выпускает сертификат для `example.com` с открытым ключом из CSR, и отправляет его агенту.
 
@@ -50,10 +50,9 @@ Let's&nbsp;Encrypt идентифицирует администратора web
      src="/images/howitworks_certificate.png"/>
 </div>
 
-Revocation works in a similar manner.  The agent signs a revocation request with the key pair authorized for `example.com`, and the Let's&nbsp;Encrypt CA verifies that the request is authorized.  If so, it publishes revocation information into the normal revocation channels (i.e. OCSP), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
+Отзыв сертификата выполняется аналогично. Агент подписывает запрос об отзыве ключевой парой, авторизованной для `example.com`. Как только ЦС Let's&nbsp;Encrypt подтверждает цифровые подписи запроса, он публикует информацию об отзыве сертификата, используя [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). Таким образом браузеры, полагаясь на данные из OSCP, не будут принимать отозванные сертификаты.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
      src="/images/howitworks_revocation.png"/>
 </div>
-
