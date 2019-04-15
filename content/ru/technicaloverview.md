@@ -16,8 +16,8 @@ Let's&nbsp;Encrypt идентифицирует администратора web
 
 Есть несколько способов проверить права на домен. Для каждого варианта Центр Сертификации Let's&nbsp;Encrypt подготавливает серию тестов. Например, перед проверкой прав на домен `example.com`, ЦС Let's&nbsp;Encrypt может предоставит агенту выбор:
 
-* Проверить наличие DNS-записи для доменного имени `example.com`, или
-* Проверить наличие HTTP-ресурса с определённым URI внутри `https://example.com/`
+* Предоставить DNS-запись для поддомена внутри `https://example.com`, или
+* Предоставить HTTP-ресурс с определённым URI внутри `https://example.com/`
 
 Одновременно с тестированием прав администратора на домен, Let's&nbsp;Encrypt проверяет права агента на открытый и закрытый ключи. Let's&nbsp;Encrypt отправляет агенту одноразовый пароль, который агент должен зашифровать закрытым ключом и отослать обратно.
 
@@ -26,17 +26,16 @@ Let's&nbsp;Encrypt идентифицирует администратора web
      src="/images/howitworks_challenge.png"/>
 </div>
 
-The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `https://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
+Агент пытается выполнить серию тестов для проверки прав на домен. Допустим, успешно выполнено задание по созданию HTTP-ресурса - создан файл по определённому пути внутри `https://example.com`. Кроме того, агентом получен одноразовый пароль, который был подписан закрытым ключом и отправлен обратно в Let's&nbsp;Encrypt. Как только эти пункты выполнены - агент уведомляет Центр Сертификации о завершении проверки.
 
-Then, it's the CA's job to check that the challenges have been satisfied.  The CA verifies the signature on the nonce, and it attempts to download the file from the web server and make sure it has the expected content.
+Далее, Центр Сертификации проверяет, всё ли было сделано верно: корректную цифровую подпись на одноразовом пароле, возможность скачать созданный файл по URI, а также его содержимое.
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
      src="/images/howitworks_authorization.png"/>
 </div>
 
-If the signature over the nonce is valid, and the challenges check out, then the agent identified by the public key is authorized to do certificate management for `example.com`.  We call the key pair the agent used an "authorized key pair" for `example.com`.
-
+Если цифровая подпись верна, и все тесты пройдены - агенту выдаются права на управление сертификатами для домена `example.com`. Ключевая пара (открытый и закрытый ключи), используемая при проверке прав на домен, называется "авторизованной ключевой парой" для `example.com`.
 
 ## Certificate Issuance and Revocation
 
