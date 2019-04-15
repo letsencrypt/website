@@ -37,13 +37,13 @@ Let's&nbsp;Encrypt идентифицирует администратора web
 
 Если цифровая подпись верна, и все тесты пройдены - агенту выдаются права на управление сертификатами для домена `example.com`. Ключевая пара (открытый и закрытый ключи), используемая при проверке прав на домен, называется "авторизованной ключевой парой" для `example.com`.
 
-## Certificate Issuance and Revocation
+## Выпуск и отзыв сертификатов
 
-Once the agent has an authorized key pair, requesting, renewing, and revoking certificates is simple---just send certificate management messages and sign them with the authorized key pair.
+После авторизации ключевой пары, запрос, обновление и отзыв сертификатов становится делом одной минуты---агент просто посылает текстовые сообщения в Центр сертификации
 
-To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) that asks the Let's&nbsp;Encrypt CA to issue a certificate for `example.com` with a specified public key.  As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR.  The agent also signs the whole CSR with the authorized key for `example.com` so that the Let's&nbsp;Encrypt CA knows it's authorized.
+Для получения сертификата для `example.com`, агент составляет запрос в ЦС Let's&nbsp;Encrypt согласно PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986). Обычно, CSR содержит цифровую подпись закрытого ключа, соответствующий ему открытый ключ, а также подписывается целиком открытым ключом из авторизованной ключевой пары.
 
-When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures.  If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent.
+При получении CSR, ЦС Let's&nbsp;Encrypt проверяет подписи ключевой пары. Если всё в порядке, ЦС Let's&nbsp;Encrypt выпускает сертификат для `example.com` с открытым ключом из CSR, и отправляет его агенту.
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
