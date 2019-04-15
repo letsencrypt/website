@@ -6,21 +6,20 @@ top_graphic: 3
 
 Let's&nbsp;Encrypt и [протокол ACME](https://ietf-wg-acme.github.io/acme/) решают проблему автоматической настройки HTTPS на сервере, когда SSL / TLS сертификаты выдаются и обновляются без участия человека. Таким решением стал специальный сервис - агент по управлению сертификатами - работающий на web-сервере.
 
-Для лучшего понимания технологии, разберём настройку домена `https://example.com/` для работы агента сертификатов Let's&nbsp;Encrypt, состоящую из двух этапов.
+Для понимания технологии, разберём настройку домена `https://example.com/` для работы агента сертификатов Let's&nbsp;Encrypt, состоящую из двух этапов.
 
-Прежде всего, агент уведомляет Центр Сертификации о том, что доменое имя указывает именно на этот web-сервер. После подтверждения связки "домен - web-сервер",
-агент может запрашивать, обновлять и отзывать сертификаты для доменного имени.
+Прежде всего, агент уведомляет Центр Сертификации о том, у администратора сервера есть права на доменное имя. После подтверждения прав на домен, агент может запрашивать, обновлять и отзывать сертификаты.
 
-## Domain Validation
+## Проверка домена
 
-Let's&nbsp;Encrypt identifies the server administrator by public key.  The first time the agent software interacts with Let's&nbsp;Encrypt, it generates a new key pair and proves to the Let's&nbsp;Encrypt CA that the server controls one or more domains.  This is similar to the traditional CA process of creating an account and adding domains to that account.
+Let's&nbsp;Encrypt идентифицирует администратора web-сервера по открытому ключу. Открытый и закрытый ключи генерируются агентом перед первым подключением к Центру сертификации Let's&nbsp;Encrypt. После подключения агента к Центру Сертификации, создаётся аккаунт администратора сервера. В созданный аккаунт добавляются доменные имена, которыми владеет администратор, аналогично тому, как это происходит в платных Центрах Сертификации.
 
-To kick off the process, the agent asks the Let's Encrypt CA what it needs to do in order to prove that it controls `example.com`.  The Let's Encrypt CA will look at the domain name being requested and issue one or more sets of challenges.   These are different ways that the agent can prove control of the domain.  For example, the CA might give the agent a choice of either:
+Есть несколько способов проверить права на домен. Для каждого варианта Центр Сертификации Let's&nbsp;Encrypt подготавливает серию тестов. Например, перед проверкой прав на домен `example.com`, ЦС Let's&nbsp;Encrypt может предоставит агенту выбор:
 
-* Provisioning a DNS record under `example.com`, or
-* Provisioning an HTTP resource under a well-known URI on `https://example.com/`
+* Проверить наличие DNS-записи для доменного имени `example.com`, или
+* Проверить наличие HTTP-ресурса с определённым URI внутри `https://example.com/`
 
-Along with the challenges, the Let's Encrypt CA also provides a nonce that the agent must sign with its private key pair to prove that it controls the key pair.
+Одновременно с тестированием прав администратора на домен, Let's&nbsp;Encrypt проверяет права агента на открытый и закрытый ключи. Let's&nbsp;Encrypt отправляет агенту одноразовый пароль, который агент должен зашифровать закрытым ключом и отослать обратно.
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
