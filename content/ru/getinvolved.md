@@ -8,19 +8,20 @@ menu:
     parent: donate
 ---
 
-## Community
+## Сообщество
 
-We can always use help answering questions at [Let's Encrypt Community Support](https://community.letsencrypt.org/). See [this blog post](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) about why community support contributions are so important.
+Мы всегда готовы принять помощь в поиске ответов на вопросы [в техподдержку сообщества Let's Encrypt](https://community.letsencrypt.org/).
+В [нашем блоге](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) мы объясняем, почему так важно поддерживать сообщество.
 
-## Code
+## Программирование
 
-We can also use help with software development. All of our code is on [GitHub](https://github.com/letsencrypt/).
+Нам также важна помощь в разработке программного обеспечения. Весь наш код находится на [GitHub](https://github.com/letsencrypt/).
 
-### Client Software
+### Разработка ACME-клиента
 
-[Certbot](https://github.com/certbot/certbot) is a Python-based utility that works alongside your webserver to automatically obtain a certificate and convert a website to HTTPS. Certbot is the client we recommend that most people start with. Many other [third party client options](https://letsencrypt.org/docs/client-options/) are available.
+Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует [множество других клиентов](https://letsencrypt.org/docs/client-options/).
 
-### Server-side CA Software
+### Разработка Центра Сертификации
 
 [Boulder](https://github.com/letsencrypt/boulder) is the Let's Encrypt CA implementation. It's based on the [ACME](https://github.com/ietf-wg-acme/acme) protocol, and written primarily in Go. A great place to start is with the list of ['help wanted' issues](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted) and the [contributors guide](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
