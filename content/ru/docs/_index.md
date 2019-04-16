@@ -24,7 +24,7 @@ menu:
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
-* [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
+* [Цепочка доверия (корневые и промежуточные сертификаты)](/ru/certificates/)
 * [Upcoming Features](/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
