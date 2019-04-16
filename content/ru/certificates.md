@@ -7,12 +7,12 @@ aliases: [/certs]
 
 # Корневые сертификаты
 
-Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.
+Наши корневые сертификаты хранятся в надёжном месте и недоступны онлайн. Мы выпускаем сертификаты для пользователей на основе промежуточных сертификатов из следующего раздела.
 
 * Active
   * [ISRG Root X1 (self-signed)](/certs/isrgrootx1.pem.txt)
 
-We've set up websites to test certificates chaining to our roots.
+Мы создали сайты для проверки цепочек сертификатов вплоть до корневых.
 
 * ISRG Root X1 Valid Certificate
   * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
