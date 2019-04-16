@@ -52,13 +52,13 @@ other = "See all Documentation"
 other = "Блог Let's Encrypt"
 
 [platinum]
-other = "Платиновый"
+other = "Платиновые"
 
 [gold]
-other = "Золотой"
+other = "Золотые"
 
 [silver]
-other = "Серебряный"
+other = "Серебряные"
 
 [languages]
 other = "Язык"
