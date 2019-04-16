@@ -31,6 +31,4 @@ menu:
 
 ## Протокол ACME
 
-
-
-The Let's Encrypt CA talks to certificate management software running on web servers.  The protocol for this is called ACME, for "Automated Certificate Management Environment." The draft ACME spec is [available on Github](https://github.com/ietf-wg-acme/acme). Work is underway within the IETF to finalize ACME as a truly open standard. You can join the ACME protocol development discussion on [this IETF mailing list](https://www.ietf.org/mailman/listinfo/acme).
+Для взаимодействия с клиентами, запущенными на web-серверах, Центр Сертификации использует специальный протокол ACME ("Automated Certificate Management Environment"). Черновик протокола [доступен на Github](https://github.com/ietf-wg-acme/acme). Совместно с IETF ведётся работа по доведению протокола ACME до состояния открытого стандарта. Вы можете присоединиться к разработке с помощью [этого списка рассылки IETF](https://www.ietf.org/mailman/listinfo/acme).
