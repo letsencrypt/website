@@ -32,10 +32,6 @@ Jika [Certbot] tidak sesuai dengan kebutuhan anda, atau anda ingin mencoba yang 
 ada [banyak Klien ACME yang dapat anda pilih](/docs/client-options/). Setelah anda
 memili Klien ACME anda, lihat dokumentasi untuk klien tersebut untuk melanjutkan.
 
-If you're experimenting with different ACME clients, use our
-[staging environment](/docs/staging-environment/) to avoid hitting
-[rate limits](/docs/rate-limits/).
-
 Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*](/docs/staging-environment/)
 untuk menghindari [pembatasan pemanggilan](/docs/rate-limits/).
 
