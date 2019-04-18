@@ -73,6 +73,7 @@
       {"name":"IPInfo","url":"https://ipinfo.io/","image":"ipinfo-logo.png"},
       {"name":"GreenGeeks","url":"https://www.greengeeks.com/","image":"greengeeks-logo.png"},
       {"name":"RedHat","url":"https://www.redhat.com/","image":"redhat-logo.png"},
-      {"name":"Nabu Casa","url":"https://www.nabucasa.com/","image":"nabu-casa-logo.png"}
+      {"name":"Nabu Casa","url":"https://www.nabucasa.com/","image":"nabu-casa-logo.png"},
+      {"name":"Wix","url":"https://www.wix.com/","image":"wix-logo.png"}
 ]
 }
