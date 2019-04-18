@@ -3,7 +3,7 @@ title: Expiration Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2016-07-02
+lastmod: 2019-04-18
 ---
 
 {{< lastmod >}}
@@ -48,4 +48,4 @@ same as `yourname@example.com`. So if you update your email address to
 `yourname+1@example.com`, you can start getting expiry mail again. With Certbot,
 use:
 
-` ~/certbot/venv/bin/certbot  register --update-registration --email yourname+1@example.com`
+`certbot update_account --email yourname+1@example.com`
