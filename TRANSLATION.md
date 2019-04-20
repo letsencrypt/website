@@ -11,12 +11,12 @@
 6. After the first pull-request, more files from `content\XX\` may be translated.
 
 * The pull-request of a translated file must update links on other files pointing to it.
-* The subscriber agreement should **not** be translated.
+* The *subscriber agreement* should **not** be translated.
 * The *privacy policy* (`privacy.md`) and the *Non-Discrimination Statement and Policy* (`nondiscrimination.md`) may be translated, but with a note on top saying that the English version is canonical.
 * `jobs.md` should either not be present or just contain a link to the english version.
-* Paths should stay in English: `/en/about` becomes `/XX/about` in every language.
+* Paths should stay in English: `/about` becomes `/XX/about` in every language.
 * When a file is not translated, it will not appear in the menu.
-* client-options.md and cert-compat.md are not ready to be translated.
+* `cert-compat.md` is not ready to be translated.
 * Blog posts (`content\XX\post\`) are not ready to be translated.
 * Images are not ready to be translated ([#314](https://github.com/letsencrypt/website/issues/314)).
 * Graphs content is not ready to be translated ([#344](https://github.com/letsencrypt/website/issues/344)).
