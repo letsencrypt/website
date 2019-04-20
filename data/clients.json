@@ -288,7 +288,13 @@
 		{
 			"name": "Greenlock for Express.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock-express.js",
+			"acme_v2": "true",
 			"category": "Node.js"
+		},
+		{
+			"name": "Greenlock for node.js",
+			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
+			"library": "Node.js"
 		},
 		{
 			"name": "Cloudron/acme",
@@ -307,11 +313,11 @@
 			"category": "OpenShift"
 		},
 		{
-			"name": "Crypt::LE",
+			"name": "Crypt::LE (ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
 			"library": "Perl",
-			"category": "Perl"
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "Net::ACME",
@@ -354,11 +360,6 @@
 			"name": "FreeSSL.tech Auto",
 			"url": "https://freessl.tech",
 			"acme_v2": "true",
-			"category": "PHP"
-		},
-		{
-			"name": "acme_proxy.php",
-			"url": "https://github.com/jpawlowski/acme_proxy.php",
 			"category": "PHP"
 		},
 		{
@@ -499,17 +500,6 @@
 			"comments": "(.NET)"
 		},
 		{
-			"name": "kelunik/acme-client",
-			"url": "https://github.com/kelunik/acme-client",
-			"category": "Windows / IIS",
-			"comments": "(PHP)"
-		},
-		{
-			"name": "ZeroSSL Windows",
-			"url": "https://github.com/do-know/Crypt-LE/releases",
-			"category": "Windows / IIS"
-		},
-		{
 			"name": "AutoACME",
 			"url": "https://www.autoacme.net/",
 			"category": "Windows / IIS",
@@ -558,11 +548,6 @@
 			}
 		},
 		{
-			"name": "Greenlock for node.js",
-			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
-			"library": "Node.js"
-		},
-		{
 			"name": "sludin/Protocol-ACME",
 			"url": "https://github.com/sludin/Protocol-ACME",
 			"library": "Perl"
@@ -571,6 +556,12 @@
 			"name": "kelunik/acme",
 			"url": "https://github.com/kelunik/acme",
 			"library": "PHP"
+		},
+		{
+			"name": "kelunik/acme-client",
+			"url": "https://github.com/kelunik/acme-client",
+			"category": "Windows / IIS",
+			"comments": "(PHP)"
 		},
 		{
 			"name": "ACMECert PHP library",
@@ -604,9 +595,6 @@
 			"url": "https://crates.io/crates/acme-client",
 			"library": "Rust"
 		},
-		
-		
-		
 		{
 			"name": "LEClient PHP library",
 			"url": "https://github.com/yourivw/LEClient",
@@ -631,11 +619,6 @@
 			"name": "Certify The Web (Windows)",
 			"url": "https://certifytheweb.com",
 			"acme_v2": "v4 onwards"
-		},
-		{
-			"name": "Greenlock",
-			"url": "https://git.coolaj86.com/coolaj86/greenlock-express.js",
-			"acme_v2": "true"
 		},
 		{
 			"name": "Ansible acme_certificate module",
