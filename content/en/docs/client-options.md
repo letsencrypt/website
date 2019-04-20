@@ -33,11 +33,11 @@ the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is
 
 # Adding your client/project
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `content/en/docs/client-options.md` page.
+If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
 
 Before submitting a pull request please make sure:
 
 1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
 1. Your client is not browser-based and supports automatic renewals.
-1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "ACME v2 Compatible Clients" section if appropriate!).
-1. Your commit updates the `lastmod` date stamp at the top of `client-options.md`.
+1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "acme_v2" if appropriate!).
+1. Your commit updates the `lastmod` date stamp at the top of `clients.json`.
