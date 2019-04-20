@@ -113,6 +113,10 @@
 		{
 			"name": "LiveConfig Hosting Control Panel",
 			"url": "https://www.liveconfig.com/"
+		},
+		{
+			"name": "WildFly Application Server",
+			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
 		}
 	],
 	"list": [
