@@ -275,7 +275,7 @@ description = """
 [[languages.pt-br.menu.main]]
  name = "Obter Ajuda"
  weight = 20
- url = "https://community.letsencrypt.org/"
+ url = "https://community.letsencrypt.org/c/help/ajuda-em-portugues"
  [[languages.pt-br.menu.main]]
  name = "Doar"
  weight = 30

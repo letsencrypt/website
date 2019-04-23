@@ -67,4 +67,4 @@ ou trocar de provedor caso eles não planejem implementá-lo.
 # Obtendo Ajuda
 
 Se você possui questões sobre a escolha de clientes ACME ou sobre como usar um cliente em particular, ou 
-qualquer outra coisa relacionada ao Let's Encrypt, por favor experimente usar nossos [úteis  fóruns da comunidade](https://community.letsencrypt.org/).
+qualquer outra coisa relacionada ao Let's Encrypt, por favor experimente usar nossos [úteis  fóruns da comunidade](https://community.letsencrypt.org/c/help/ajuda-em-portugues).

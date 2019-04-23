@@ -4,7 +4,7 @@ slug: how-it-works
 top_graphic: 3
 ---
 
-O objetivo do Let's&nbsp;Encrypt e [protocolo ACME](https://ietf-wg-acme.github.io/acme/) é tornar possível a configuração de um servidor HTTPS e fazê-lo obter automaticamente um certificado confiável sem intervenção humana. Isso é realizado através do uso do agente de gerenciamento de certrificado no servidor web.
+O objetivo do Let's&nbsp;Encrypt e do [protocolo ACME](https://ietf-wg-acme.github.io/acme/) é tornar possível a configuração de um servidor HTTPS e fazê-lo obter automaticamente um certificado confiável sem intervenção humana. Isso é realizado através do uso do agente de gerenciamento de certificado no servidor web.
 
 Para entender como a tecnologia funciona, vamos analisar o passo a passo do processo de configuração do domínio `https://example.com/` com um agente de gerenciamento de certificado que suporta a Let's&nbsp;Encrypt. 
 
@@ -35,7 +35,7 @@ Agora é responsabilidade da AC verificar que os desafios foram completados. A A
      src="/images/howitworks_authorization.png"/>
 </div>
 
-Se a assinatura no pacote de dados é válida e os desafios foram corretamente completados, o agente identificado pela chave pública é autorizado a cuidar do gerenciamento de certificados de `example.com`. Nós chamamos o par de chaves usado pelo agente de "par de chavez autorizado" para `example.com
+Se a assinatura no pacote de dados é válida e os desafios foram corretamente completados, o agente identificado pela chave pública é autorizado a cuidar do gerenciamento de certificados de `example.com`. Nós chamamos o par de chaves usado pelo agente de "par de chavez autorizado" para `example.com.
 
 ## Emissão e Revogação de Certificado
 
