@@ -6,9 +6,9 @@ aliases : [/howitworks]
 ---
 
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
-provido por uma Autoridade Certificadora (AC). O Let's Encrypt é uma AC. Para obter um
+provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um
 certificado do Let's Encrypt para o domínio do seu website você precisa demonstrar
-controle sobre o domínio. Com o Let's Encrypt, você pode fazer isso usando um software
+controle sobre o domínio. Com a Let's Encrypt, você pode fazer isso usando um software
 que usa o [protocolo ACME](https://ietf-wg-acme.github.io/acme/), que normalmente é 
 executado no seu servidor web.
 
@@ -39,8 +39,8 @@ nossos [limites de uso](/docs/rate-limits/).
 
 # Sem Acesso ao Shell
 
-A melhor forma de usar o Let's Encrypt sem acesso ao shell é usando o suporte embutido
-provido pelo seu serviço de hospedagem. Se o seu serviço de hospedagem oferece o Let's Encrypt
+A melhor forma de usar a Let's Encrypt sem acesso ao shell é usando o suporte embutido
+provido pelo seu serviço de hospedagem. Se o seu serviço de hospedagem oferece a Let's Encrypt
 então eles podem requisitar em seu nome um certificado gratuito, instalá-lo e 
 mantê-lo atualizado automaticamente. Em alguns serviços de hospedagem esta é
 uma configuração que você precisa ativar. Outros serviços 
@@ -50,11 +50,11 @@ solicitam e instalam certificados para todos os seus usuários automaticamente.
 para ver se o seu está nela. Se estiver, siga a documentação dele para configurar
 o seu certificado do Let's Encrypt.
 
-Se o seu provedor de hospedagem não suportar o Let's Encrypt, você pode entrar em contato com eles
+Se o seu provedor de hospedagem não suportar a Let's Encrypt, você pode entrar em contato com eles
 para solicitar o suporte. Nós fazemos nosso melhor para tornar muito fácil adicionar o suporte ao 
 Let's Encrypt e provedores normalmente gostam muito de ouvir sugestões dos seus usuários!
 
-Se o seu provedor de hospedagem não quiser integrar o Let's Encrypt, mas
+Se o seu provedor de hospedagem não quiser integrar a Let's Encrypt, mas
 suporta o upload de certificados personalizados, você pode instalar o Certbot no seu próprio
 computador e usá-lo no [modo manual](https://certbot.eff.org/docs/using.html#manual).
 No modo manual, você faz o upload de um arquivo específico no seu servidor para provar 

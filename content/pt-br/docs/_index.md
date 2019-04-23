@@ -10,7 +10,7 @@ menu:
 # Visão Geral
 
 * [Começando a usar](/pt-br/getting-started/)
-* [Como o Let's Encrypt Funciona](/pt-br/how-it-works/)
+* [Como a Let's Encrypt Funciona](/pt-br/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 * [Glossary](/docs/glossary/)
 
