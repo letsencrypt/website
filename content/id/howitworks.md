@@ -7,11 +7,11 @@ aliases : [/howitworks]
 
 Untuk mengaktifkan HTTPS pada website, anda membutuhkan sebuah sertifikat (sebuah tipe dari *file*)
 dari Otoritas Sertifikasi (CA). Let's Encrypt adalah CA. Untuk mendapatkan sertifikat untuk domain
-website anda dari Let's Encrypt, anda harus dapat mendemonstrasikan kontrol terdahadap domain
+website anda dari Let's Encrypt, anda harus dapat membuktikan kontrol terdahadap domain
 tersebut. Dengan Let's Encrypt, anda melakukannya dengan menggunakan perangkat-lunak yang menggunakan
 [protokol ACME](https://ietf-wg-acme.github.io/acme/) yang biasanya berjalan pada *host* web anda.
 
-Untuk mengetahui metoder terbaik untuk anda, anda harus mengetahui apakah anda memiliki
+Untuk mengetahui metode terbaik untuk anda, anda harus mengetahui apakah anda memiliki
 [akses *shell*](https://en.wikipedia.org/wiki/Shell_account) (juga diketahui sebagai SSH)
 ke host web anda. Jika anda mengontrol situs web anda seluruhnya melalui panel kontrol
 seperti [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
@@ -42,9 +42,9 @@ untuk menghindari [pembatasan pemanggilan](/docs/rate-limits/).
 Cara terbaik untuk menggunakan Let's Encrypt tanda akses *shell* adalah dengan
 menggunakan dukungan bawaan dari penyedia hosting anda. Jika pengedia hosting anda
 menawarkan dukungan pada Let's Encrypt, mereka dapat menyedikan sertifikat gratis
-atas nama anda, memasangnya, dan memastikan tertap terbaharui. Untuk beberapa
+atas nama anda, memasangnya, dan memastikan tetap terbaharui. Untuk beberapa
 penyedia hosting, ini adalah pengaturan konfigurasi yang perlu anda nyalakan sendiri.
-Penyedia layanan lain mungkin dapat memintakan dan memasang sertifikat tersebut untuk
+Penyedia layanan lain mungkin dapat meminta dan memasang sertifikat tersebut untuk
 seluruh kustomer mereka.
 
 [Cek daftar penyedia layanan hosting kamu](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
@@ -53,19 +53,19 @@ mengikuti dokumentasi mereka untuk memasang sertifikat Let's Encrypt anda.
 
 Jika penyedia layanan hosting anda tidak mendukung Let's Encrypt, anda dapat
 menghubungi mereka untuk meminta dukungan tersebut. Kami akan berusaha sebaik mungkin
-untuk nemabahkan dukungan Let's Encrypt, dan biasanya penyedia layanan tersebut
-sendan dengan saran dari kustomer mereka!
+untuk menambahkan dukungan Let's Encrypt, dan biasanya penyedia layanan tersebut
+senang dengan saran dari kustomer mereka!
 
 Jika penyedia layanan hosting anda tidak mau mengintegrasikan Let's Encrypt, namun
 mendukung untuk mengunggah sertifikat khusus, anda tetap dapat memasang Certbot
 pada komputer anda sendiri dalam [mode manual](https://certbot.eff.org/docs/using.html#manual).
-Pada mode manual, anda menunggah berkas spesifik pada web anda untuk membuktikan kontrol
+Pada mode manual, anda mengunggah berkas spesifik pada web anda untuk membuktikan kontrol
 anda. Certbot akan menerima sertifikat tersebut yang kemudian anda unggah ke penyedia
 hosting anda. Kami tidak merekomendasikan hal ini karena cara ini sangat menyita waktu
-dan anda akan mengulanginya beberapa kali per tahun selagi sertifikat anda kadaluarsa.
-Untuk kebanyakan orang, lebih baik meminta dukungan untuk Let's Encrypt ke penyedia
+dan anda akan mengulanginya beberapa kali per tahun saat sertifikat anda kadaluarsa.
+Untuk kebanyakan orang, lebih baik meminta dukungan Let's Encrypt ke penyedia
 layanan hosting anda, atau ganti penyedia lain jika mereka tidak berencara untuk
-mengimplementasinya.
+mendukungnya.
 
 # Mendapatkan Bantuan
 Jika anda memiliki pertanyaan tentang Klien ACME, atau tentang klien tertentu, atau
