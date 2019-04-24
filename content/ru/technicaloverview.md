@@ -4,57 +4,55 @@ slug: how-it-works
 top_graphic: 3
 ---
 
-The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://ietf-wg-acme.github.io/acme/) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
+Let's&nbsp;Encrypt и [протокол ACME](https://ietf-wg-acme.github.io/acme/) решают проблему автоматической настройки HTTPS на сервере, когда SSL / TLS сертификаты выдаются и обновляются без участия человека. Таким решением стал специальный сервис - агент по управлению сертификатами - работающий на web-сервере.
 
-To understand how the technology works, let's walk through the process of setting up `https://example.com/` with a certificate management agent that supports Let's&nbsp;Encrypt.
+Для понимания технологии, разберём настройку домена `https://example.com/` агентом сертификатов Let's&nbsp;Encrypt, состоящую из двух этапов.
 
-There are two steps to this process.  First, the agent proves to the CA that the web server controls a domain.  Then, the agent can request, renew, and revoke certificates for that domain.
+На первом этапе агент уведомляет Центр Сертификации о правах администратора сервера на доменное имя. На втором этапе, после подтверждения прав на домен, агент может запрашивать, обновлять и отзывать сертификаты.
 
-## Domain Validation
+## Проверка домена
 
-Let's&nbsp;Encrypt identifies the server administrator by public key.  The first time the agent software interacts with Let's&nbsp;Encrypt, it generates a new key pair and proves to the Let's&nbsp;Encrypt CA that the server controls one or more domains.  This is similar to the traditional CA process of creating an account and adding domains to that account.
+Let's&nbsp;Encrypt идентифицирует web-сервер с запущенным агентом по открытому ключу. Открытый и закрытый ключи генерируются агентом перед первым подключением к Центру сертификации Let's&nbsp;Encrypt. После подключения агента к Центру Сертификации, создаётся аккаунт администратора сервера. В созданный аккаунт добавляются доменные имена, которыми владеет администратор, аналогично тому, как это происходит в платных Центрах Сертификации.
 
-To kick off the process, the agent asks the Let's Encrypt CA what it needs to do in order to prove that it controls `example.com`.  The Let's Encrypt CA will look at the domain name being requested and issue one or more sets of challenges.   These are different ways that the agent can prove control of the domain.  For example, the CA might give the agent a choice of either:
+Есть несколько способов проверить права на домен. Для каждого варианта Центр Сертификации Let's&nbsp;Encrypt подготавливает серию тестов. Например, перед проверкой прав на домен `example.com`, ЦС Let's&nbsp;Encrypt может предложить агенту на выбор:
 
-* Provisioning a DNS record under `example.com`, or
-* Provisioning an HTTP resource under a well-known URI on `https://example.com/`
+* Предоставить DNS-запись для поддомена внутри `https://example.com`, или
+* Предоставить HTTP-ресурс с определённым URI внутри `https://example.com/`
 
-Along with the challenges, the Let's Encrypt CA also provides a nonce that the agent must sign with its private key pair to prove that it controls the key pair.
+Одновременно с тестированием прав администратора на домен, Let's&nbsp;Encrypt проверяет права агента на открытый и закрытый ключи. Let's&nbsp;Encrypt отправляет агенту одноразовый пароль, который агент должен зашифровать закрытым ключом и отослать обратно.
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
      src="/images/howitworks_challenge.png"/>
 </div>
 
-The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `https://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
+Агент пытается выполнить серию тестов для проверки прав на домен. Допустим, успешно выполнено задание по созданию HTTP-ресурса - создан файл по определённому пути внутри `https://example.com`. Кроме того, агентом получен одноразовый пароль, который был подписан закрытым ключом и отправлен обратно в Let's&nbsp;Encrypt. Как только эти пункты выполнены - агент уведомляет Центр Сертификации о завершении проверки.
 
-Then, it's the CA's job to check that the challenges have been satisfied.  The CA verifies the signature on the nonce, and it attempts to download the file from the web server and make sure it has the expected content.
+Далее, Центр Сертификации проверяет, всё ли было сделано верно: корректную цифровую подпись на одноразовом пароле, возможность скачать созданный файл по URI, а также его содержимое.
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
      src="/images/howitworks_authorization.png"/>
 </div>
 
-If the signature over the nonce is valid, and the challenges check out, then the agent identified by the public key is authorized to do certificate management for `example.com`.  We call the key pair the agent used an "authorized key pair" for `example.com`.
+Если цифровая подпись верна, и все тесты пройдены - агенту выдаются права на управление сертификатами для домена `example.com`. Ключевая пара (открытый и закрытый ключи), используемая при проверке прав на домен, называется "авторизованной ключевой парой" для `example.com`.
 
+## Выпуск и отзыв сертификатов
 
-## Certificate Issuance and Revocation
+После авторизации ключевой пары, запрос, обновление и отзыв сертификатов становится делом одной минуты---агент просто посылает текстовые сообщения в Центр сертификации
 
-Once the agent has an authorized key pair, requesting, renewing, and revoking certificates is simple---just send certificate management messages and sign them with the authorized key pair.
+Для получения сертификата для `example.com`, агент составляет запрос в ЦС Let's&nbsp;Encrypt согласно PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986). Обычно, CSR содержит цифровую подпись закрытого ключа, соответствующий ему открытый ключ, а также подписывается целиком авторизованной ключевой парой.
 
-To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) that asks the Let's&nbsp;Encrypt CA to issue a certificate for `example.com` with a specified public key.  As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR.  The agent also signs the whole CSR with the authorized key for `example.com` so that the Let's&nbsp;Encrypt CA knows it's authorized.
-
-When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures.  If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent.
+При получении CSR, ЦС Let's&nbsp;Encrypt проверяет подписи ключевой пары. Если всё в порядке, Центр Сертификации выпускает сертификат для `example.com` с открытым ключом из CSR, и отправляет его агенту.
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
      src="/images/howitworks_certificate.png"/>
 </div>
 
-Revocation works in a similar manner.  The agent signs a revocation request with the key pair authorized for `example.com`, and the Let's&nbsp;Encrypt CA verifies that the request is authorized.  If so, it publishes revocation information into the normal revocation channels (i.e. OCSP), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
+Отзыв сертификата происходит аналогично. Агент подписывает запрос об отзыве ключевой парой, авторизованной для `example.com`. Как только ЦС Let's&nbsp;Encrypt подтверждает цифровые подписи запроса, он публикует информацию об отзыве сертификата, используя [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). Таким образом браузеры, полагаясь на данные из OSCP, не будут принимать отозванные сертификаты.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
      src="/images/howitworks_revocation.png"/>
 </div>
-

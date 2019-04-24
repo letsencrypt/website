@@ -7,7 +7,7 @@ menu:
     weight: 10
 ---
 
-# Overview
+# Обзор
 
 * [Приступая к работе](/ru/getting-started/)
 * [Как работает Let's Encrypt](/ru/how-it-works/)
