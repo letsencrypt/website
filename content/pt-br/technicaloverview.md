@@ -50,7 +50,7 @@ Quando a Let's&nbsp;Encrypt recebe a solicitação ambas as assinaturas são val
      src="/images/howitworks_certificate.png"/>
 </div>
 
-A revogação funciona de maneira similar. O agente assina a solicitação de revogação com o par de chaves autorizado para `example.com` e a Let's&nbsp;Encrypt verifica se a solicitação é autorizada. Se for autorizada, o Let's&nbsp;Encrypt publica a informação de revogação em canais normais de revogação (como por exemplo OCSP), de maneira que terceiros que dependem de certificados (como navegadores) saibam que não devem confiar no certificado revogado.
+A revogação funciona de maneira similar. O agente assina a solicitação de revogação com o par de chaves autorizado para `example.com` e a Let's&nbsp;Encrypt verifica se a solicitação é autorizada. Se for autorizada, a Let's&nbsp;Encrypt publica a informação de revogação em canais normais de revogação (como por exemplo OCSP), de maneira que terceiros que dependem de certificados (como navegadores) saibam que não devem confiar no certificado revogado.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
