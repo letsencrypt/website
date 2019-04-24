@@ -7,7 +7,7 @@ aliases : [/howitworks]
 
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
 provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um
-certificado do Let's Encrypt para o domínio do seu website você precisa demonstrar
+certificado da Let's Encrypt para o domínio do seu website você precisa demonstrar
 controle sobre o domínio. Com a Let's Encrypt, você pode fazer isso usando um software
 que usa o [protocolo ACME](https://ietf-wg-acme.github.io/acme/), que normalmente é 
 executado no seu servidor web.
@@ -48,10 +48,10 @@ solicitam e instalam certificados para todos os seus usuários automaticamente.
 
 [Confira nossa lista de provedores de hospedagem](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
 para ver se o seu está nela. Se estiver, siga a documentação dele para configurar
-o seu certificado do Let's Encrypt.
+o seu certificado da Let's Encrypt.
 
 Se o seu provedor de hospedagem não suportar a Let's Encrypt, você pode entrar em contato com eles
-para solicitar o suporte. Nós fazemos nosso melhor para tornar muito fácil adicionar o suporte ao 
+para solicitar o suporte. Nós fazemos nosso melhor para tornar muito fácil adicionar o suporte à
 Let's Encrypt e provedores normalmente gostam muito de ouvir sugestões dos seus usuários!
 
 Se o seu provedor de hospedagem não quiser integrar a Let's Encrypt, mas
@@ -61,10 +61,10 @@ No modo manual, você faz o upload de um arquivo específico no seu servidor par
 o seu controle. O Certbot então receberá um certificado que você poderá enviar para o seu
 provedor de hospedagem. Nós não recomendamos esta opção porque ela demanda tempo 
 e você precisará repeti-la algumas vezes por ano à medida que seu certificado
-expirar. Para a maioria das pessoas é melhor solicitar ao provedor de hospedagem o suporte ao Let's Encrypt, 
+expirar. Para a maioria das pessoas é melhor solicitar ao provedor de hospedagem o suporte à Let's Encrypt, 
 ou trocar de provedor caso eles não planejem implementá-lo.
 
 # Obtendo Ajuda
 
 Se você possui questões sobre a escolha de clientes ACME ou sobre como usar um cliente em particular, ou 
-qualquer outra coisa relacionada ao Let's Encrypt, por favor experimente usar nossos [úteis  fóruns da comunidade](https://community.letsencrypt.org/c/help/ajuda-em-portugues).
+qualquer outra coisa relacionada à Let's Encrypt, por favor experimente usar nossos [úteis fóruns da comunidade](https://community.letsencrypt.org/c/help/ajuda-em-portugues).
