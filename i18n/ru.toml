@@ -16,7 +16,7 @@ other = "Поддержать"
 other = "Основные спонсоры и дарители"
 
 [home_from_our_blog]
-other = "В нашем блоге"
+other = "В нашем блоге (на английском)"
 
 [read_more]
 other = "Ещё..."
@@ -52,13 +52,13 @@ other = "See all Documentation"
 other = "Блог Let's Encrypt"
 
 [platinum]
-other = "Платиновый"
+other = "Платиновые"
 
 [gold]
-other = "Золотой"
+other = "Золотые"
 
 [silver]
-other = "Серебряный"
+other = "Серебряные"
 
 [languages]
 other = "Язык"
