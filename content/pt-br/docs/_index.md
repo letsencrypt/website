@@ -11,7 +11,7 @@ menu:
 
 * [Começando a usar](/pt-br/getting-started/)
 * [Como a Let's Encrypt Funciona](/pt-br/how-it-works/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Perguntas Frequentes (FAQ)](/pt-br/docs/faq/)
 * [Glossary](/docs/glossary/)
 
 # Informações Para Usuário
