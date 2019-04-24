@@ -2,6 +2,7 @@
 title: Getting Started
 slug: getting-started
 top_graphic: 3
+aliases : [/howitworks]
 ---
 
 To enable HTTPS on your website, you need to get a certificate (a type of file)
