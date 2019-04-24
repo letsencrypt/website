@@ -2,7 +2,6 @@
 title: Chain of Trust
 slug: certificates
 top_graphic: 5
-aliases: [/certs]
 ---
 
 # Root Certificates

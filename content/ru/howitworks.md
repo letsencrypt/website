@@ -2,7 +2,6 @@
 title: Приступая к работе
 slug: getting-started
 top_graphic: 3
-aliases : [/howitworks]
 ---
 
 Для доступа к вашему сайту по протоколу HTTPS, вам необходим сертификат
