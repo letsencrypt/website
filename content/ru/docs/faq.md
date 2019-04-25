@@ -20,13 +20,13 @@ menu:
 
 # <a name="general">Общие вопросы</a>
 
-## What services does Let's Encrypt offer?
+## Какие услуги предлагает Let's Encrypt?
 
-Let's Encrypt is a global Certificate Authority (CA). We let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. Our certificates can be used by websites to enable secure HTTPS connections.
+Let's Encrypt - это глобальный Центр Сертификации (ЦС), или Удостоверяющий Центр (УЦ). Мы даём возможность людям и организациям получать, обновлять и управлять SSL/TLS сертификатами. Наши сертификаты используются сайтами для организации доступа к ним по безопасному протоколу HTTPS.
 
-Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
+Let’s Encrypt предлагает сертификаты с подверждением домена (Domain Validation, DV). Мы не выпускаем сертификаты с подтверждением организации (Organization Validation, OV) или сертификаты высокой надёжности (Extended Validation, EV), потому что не можем пока автоматизировать выдачу таких сертификатов.
 
-To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
+Чтобы начать, посетите страницу документации [Приступая к работе](/ru/getting-started/).
 
 ## What does it cost to use Let's Encrypt? Is it really free?
 
