@@ -2,7 +2,6 @@
 title: Цепочка доверия
 slug: certificates
 top_graphic: 5
-aliases: [/certs]
 ---
 
 # Корневые сертификаты
