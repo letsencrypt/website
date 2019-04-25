@@ -46,29 +46,17 @@ aliases: [/certs]
 Сертификат “Let’s Encrypt Authority X3” подписан корневым сертификатом "ISRG Root X1". Центр Сертификации Let’s Encrypt появился недавно, поэтому сертификату "ISRG Root X1" доверяют не все браузеры. Для повышения доверия, наши промежуточные сертификаты были дополнительно подписаны другим Центром Сертификации - IdenTrust - чей корневой сертификат признаётся всеми основными браузерами. Конкретнее, IdenTrust подписал наш промежуточный сертификат своим [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html) сертификатом.
 
 Это означает, что есть два сертификата, представляющие собой наш промежуточный сертификат. Один подписан  DST Root CA X3, другой подписан ISRG
-Root X1. Чтобы определить, какой из двух сертификатов используется, достаточно взглянуть на поле Issuer.
+Root X1. Чтобы определить, какой из двух сертификатов используется, достаточно взглянуть на поле *Issuer*.
 
+При настройке web-сервера, администратор указывает не только листовые сертификаты, но и список промежуточных сертификатов. Это помогает браузеру проверить, входит ли листовой сертификат в цепочку доверия, ведущую к корневому сертификату. Скорее всего администратор выберет цепочку, в которой будет промежуточный сертификат с полем *Subject: “Let’s Encrypt Authority X3”*, и полем *Issuer: “DST Root CA X3”*. Рекомендованный Let’s Encrypt ACME-клиент [Certbot](https://certbot.org) настроит ваш сервер автоматически.
 
-When configuring a web server, the server operator configures not only the
-end-entity certificate, but also a list of intermediates to help browsers verify
-that the end-entity certificate has a trust chain leading to a trusted root
-certificate. Almost all server operators will choose to serve a chain including
-the intermediate certificate with Subject “Let’s Encrypt Authority X3” and
-Issuer “DST Root CA X3.” The recommended Let's Encrypt software,
-[Certbot](https://certbot.org), will make this configuration seamlessly.
-
-The following picture explains the relationships between our certificates
-visually:
+Картинка ниже иллюстрируеи взаимосвязи между перечисленными сертификатами:
 
 <img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
 
-# OCSP Signing Certificate
+# Сертификат подписания OCSP
 
-This certificate is used to sign OCSP responses for the Let's Encrypt Authority
-intermediates, so that we don't need to bring the root key online in order to
-sign those responses. A copy of this certificate is included automatically in
-those OCSP responses, so Subscribers don't need to do anything with it. It is
-included here for informational purposes only.
+Этот сертификат используется для подписания ответов от OCSP для промежуточных Центров Сертификации  Let's Encrypt. Таким образом нам не нужно иметь онлайне-доступ к корневому сертификату, чтобы подписать эти ответы. Копия сертификата подписания включена в ответ от OCSP для информирования, дополнительно пользователям ничего делать не нужно.
 
 * [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
