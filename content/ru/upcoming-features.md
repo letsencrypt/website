@@ -30,27 +30,27 @@ top_graphic: 1
 
 Мы разработали и запустили [замену](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) для метода проверки TLS-SNI, поддержка которого [прекращена по соображениям безопасности](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Замена метода была критичной для web-серверов с одним доступным портом 443 для выполнения проверок.
 
-## Embed SCT receipts in certificates
+## Внедрение SCT (Signed Certificate Timestamp) в сертификаты
 
-* Enabled: March 29, 2018
+* Запущено: 29 марта 2018
 
-## Wildcard Certificates
+## Wildcard-сертификаты
 
-* Enabled: March 13, 2018
+* Запущено: 13 марта 2018
 
 ## ACME v2 API
 
-* Enabled: March 13, 2018
+* Запущено: 13 марта 2018
 
-## IDN Support
+## Подержка IDN
 
-* Enabled: October 20, 2016
+* Запущено: 20 октября 2016
 
-Let's Encrypt now supports issuance for Internationalized Domain Names (IDNs).
+Let's Encrypt теперь выдаёт сертификаты для интернационализированных доменных имён (Internationalized Domain Names, IDN).
 
-## Full IPv6 Support
+## Полная поддержка IPv6
 
-* Enabled: July 26, 2016
+* Запущено: 26 июля 2016
 
 Initially, only parts of the Let's Encrypt API infrastructure could communicate via IPv6. This prevented IPv6-only systems from being able to fully interact with Let's Encrypt. This has been resolved - IPv6 support has been enabled for all functionality.
 
