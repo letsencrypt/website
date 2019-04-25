@@ -86,13 +86,14 @@ https://www.google.com/safebrowsing/report_badware/
 
 Да, один и тот же сертификат Let’s Encrypt может содержать несколько доменных имён, используя механизм Subject Alternative Name (SAN).
 
-## Does Let’s Encrypt issue wildcard certificates?
+## Выпускает ли Let’s Encrypt сертификаты с возможностью подстановки (wildcard-сертификаты)?
 
-Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
+Да. Такие сертификаты выпускаются на основе протокола ACMEv2 с проверкой доменов по методу DNS-01. Узнайте подробности в статье [на форуме сообщества](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578).
 
-## Is there a Let's Encrypt (ACME) client for my operating system?
+## Существует ли ACME-клиент Let's Encrypt для моей операционной системы?
 
-There are a large number of [ACME clients](/docs/client-options/) available. Chances are something works well on your operating system. We recommend starting with [Certbot](https://certbot.eff.org/).
+Есть множество реализаций [ACME-клиента](/docs/client-options/). Скорее всего, для вашей операционной системы найдётся рабочее решение. На начальном этапе мы рекомендуем использовать [Certbot](https://certbot.eff.org/).
+
 
 ## Can I use an existing private key or Certificate Signing Request (CSR)?
 
