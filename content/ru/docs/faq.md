@@ -28,13 +28,13 @@ Let’s Encrypt предлагает сертификаты с подвержд�
 
 Чтобы начать, посетите страницу документации [Приступая к работе](/ru/getting-started/).
 
-## What does it cost to use Let's Encrypt? Is it really free?
+## Сколько стоят услуги Let's Encrypt? Это действительно бесплатно?
 
-We do not charge a fee for our certificates. Let’s Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
+Мы не берём плату за наши сертификаты. Let’s Encrypt - некоммерческая организация, свою миссию мы видим в создании более безопасного, и уважающего конфиденциальность Интернета через широкое распространение HTTPS. Наши услуги бесплатны и просты в использованнии, поэтому каждый может настроить HTTPS для своего сайта.
 
-We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate/) or [becoming a sponsor](/become-a-sponsor/).
+Нам нужна поддержка спонсоров, грантодателей и отдельных людей, чтобы предоставлять наши услуги бесплатно по всему миру. Если вы хотите поддержать нас - сделайте [пожертвование](/ru/donate/), или станьте [нашим спонсором](/ru/become-a-sponsor/).
 
-In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let’s Encrypt certificates.
+Иногда, компании-интеграторы (например хостеры) могут взимать номинальную плату на административные и управленческие расходы для интеграции с Let’s Encrypt.
 
 ## What kind of support do you offer?
 
