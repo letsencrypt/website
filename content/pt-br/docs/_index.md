@@ -1,5 +1,5 @@
 ---
-title: Документация
+title: Documentação
 top_graphic: 1
 menu: "main"
 menu:
@@ -7,20 +7,20 @@ menu:
     weight: 10
 ---
 
-# Обзор
+# Visão Geral
 
-* [Приступая к работе](/ru/getting-started/)
-* [Как работает Let's Encrypt](/ru/how-it-works/)
+* [Começando a usar](/pt-br/getting-started/)
+* [Como a Let's Encrypt Funciona](/pt-br/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 * [Glossary](/docs/glossary/)
 
-# Subscriber Information
+# Informações Para Usuário
 
 * [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
-# Advanced Subscriber Information
+# Informações Para Usuário Avançados
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
@@ -32,7 +32,7 @@ menu:
 * [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
 * [Challenge Types](/docs/challenge-types/)
 
-# Client Developer Information
+# Informações Para Desenvolvedores de Clientes
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
