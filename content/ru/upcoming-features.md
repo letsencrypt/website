@@ -1,73 +1,73 @@
 ---
-title: Fonctionnalités à venir
+title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
 ---
 
 ## Certificate Transparency Log
 
-* Prévu: T1 2019
+* ETA: Q1 2019
 
-Nous prévoyons de gérer un [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
+We are planning to operate a [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
 
-## Validation multi - points de vue
- 
-* Prévu: T2 2019
- 
-Actuellement, Let's Encrypt valide d'un point de vue unique du réseau. Nous prévoyons de commencer à valider à partir de plusieurs points de vue du réseau.
+## Multi-Perspective Validation
 
-## ECDSA Racine et Intermédiaires
+* ETA: Q2 2019
 
-* Prévu : T3 2019
+Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
 
-Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
+## ECDSA Root and Intermediates
 
-# Fonctionnalités terminées
+* ETA: Q3 2019
 
-## Support du challenge TLS ALPN
+Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
-* Activé : 12 juillet 2018
+# Completed Features
 
-Nous avons spécifié et mis en œuvre un [remplacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) pour la méthode de validation TLS-SNI, qui a été abandonnée pour des [raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-ne-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI était importante pour les abonnés qui souhaitaient uniquement utiliser le port 443 pour la validation.
+## TLS ALPN Challenge Support
 
-## Intégrer les reçus SCT dans les certificats
+* Enabled: July 12, 2018
 
-* Activé : 29 mars 2018
+We've specified and implemented a [replacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
 
-## Certificats génériques (wildcard)
+## Embed SCT receipts in certificates
 
-* Activé: 13 mars 2018
+* Enabled: March 29, 2018
 
-## API ACME v2
+## Wildcard Certificates
 
-* Activé : 13 mars 2018
+* Enabled: March 13, 2018
 
-## Support IDN
+## ACME v2 API
 
-* Activé : 20 octobre 2016
+* Enabled: March 13, 2018
 
-Let's Encrypt prend désormais en charge l'émission de certificats pour les noms de domaine internationalisés (IDN).
+## IDN Support
 
-## Support complet d'IPv6
+* Enabled: October 20, 2016
 
-* Activé: 26 juillet 2016
+Let's Encrypt now supports issuance for Internationalized Domain Names (IDNs).
 
-Initialement, seules certaines parties de l'infrastructure de API Let's Encrypt pouvaient communiquer via IPv6. Cela a empêché les systèmes qui utilisent uniquement IPv6 d'interagir pleinement avec Let's Encrypt. Cela a été résolu - La prise en charge d'IPv6 a été activée pour toutes les fonctionnalités.
+## Full IPv6 Support
 
-## Compatibilité des certificats avec Windows XP
+* Enabled: July 26, 2016
 
-* Activé : 25 mars 2016
+Initially, only parts of the Let's Encrypt API infrastructure could communicate via IPv6. This prevented IPv6-only systems from being able to fully interact with Let's Encrypt. This has been resolved - IPv6 support has been enabled for all functionality.
 
-Résolution d'un problème avec notre chaîne de certificats qui empêchait les certificats Let's Encrypt d'être acceptés par les navigateurs sous Windows XP.
+## Windows XP Certificate Compatibility
 
-## Support des signatures ECDSA
+* Enabled: March 25, 2016
 
-* Activé : 10 février 2016
+Resolved an issue with our certificate chain that prevented Let's Encrypt certificates from being accepted by browsers on Windows XP.
 
-Ajout de la possibilité pour Let's Encrypt de signer les clés ECDSA avec les intermédiaires RSA de Let's Encrypt. La prise en charge de la signature des clés ECDSA avec une chaîne de certificats ECDSA complète sera ajoutée plus tard.
+## ECDSA Signing Support
 
-## Support du Challenge DNS ACME
+* Enabled: February 10, 2016
 
-* Activé : 20 janvier 2016
+Added the ability for Let's Encrypt to sign ECDSA keys with Let's Encrypt's RSA intermediates. Support for signing ECDSA keys with a full ECDSA cert chain will be added later.
 
-Let's Encrypt permet la validation via les enregistrements DNS tels que définis dans la spécification ACME.
+## ACME DNS Challenge Support
+
+* Enabled: January 20, 2016
+
+Let's Encrypt allows validation via DNS records as defined in the ACME specification.

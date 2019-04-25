@@ -1,9 +1,9 @@
 ---
-title: Merci pour votre don à l'ISRG
+title: Thank You for Your Donation to ISRG
 slug: thankyou
 top_graphic: 2
 ---
 
-Nous vous remercions de soutenir un Web plus sûr et plus respectueux de la vie privée pour tous. Suivez-nous sur [Twitter @letsencrypt](https://twitter.com/letsencrypt) restez à jour sur nos progrès.
+Thank you for supporting a more secure and privacy-respecting Web for all of us. Follow us on [Twitter @letsencrypt](https://twitter.com/letsencrypt) to stay up to date on our progress.
 
-Votre transaction a été complétée et un reçu pour votre achat vous a été envoyé par courriel. Vous pouvez vous connecter à votre compte sur <a href="https://www.paypal.com/fr">www.paypal.com/fr</a> pour voir les détails de cette transaction.
+Your transaction has been completed, and a receipt for your purchase has been emailed to you. You may log into your account at <a href="https://www.paypal.com/us">www.paypal.com/us</a> to view details of this transaction.
