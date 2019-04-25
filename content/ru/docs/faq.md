@@ -36,14 +36,14 @@ Let’s Encrypt предлагает сертификаты с подвержд�
 
 Иногда, компании-интеграторы (например хостеры) могут взимать номинальную плату на административные и управленческие расходы для интеграции с Let’s Encrypt.
 
-## What kind of support do you offer?
+## Какую техническую поддержку вы предлагаете?
 
-Let’s Encrypt is run by a small team and relies on automation to keep costs down. That being the case, we are not able to offer direct support to our subscribers. We do have some great support options though:
+Let’s Encrypt - небольшая компания, мы полагаемся на автоматизацию для снижения издержек. Поэтому мы не можем предложить непосредственную техническую помощь каждому из наших пользователей. Но у нас есть другие способы помочь вам:
 
-1. We have really helpful [documentation](/docs/).
-2. We have very active and helpful [community support forums](https://community.letsencrypt.org/). Members of our community do a great job of answering questions, and many of the most common questions have already been answered.
+1. Полноценная [документация](/ru/docs/)
+2. Активный и полезный [форум сообщества](https://community.letsencrypt.org/). Члены нашего сообщества ведут активную работу по поиску ответов на  вопросы, и, скорее всего, на ваш вопрос уже найден ответ.
 
-Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
+Вот [видео](https://www.youtube.com/watch?v=Xe1TZaElTAs), которое нам нравится - о значимости большого сообщества.
 
 ## A website using Let's Encrypt is engaged in Phishing/Malware/Scam/... , what should I do?
 
