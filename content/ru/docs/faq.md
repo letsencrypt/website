@@ -60,17 +60,17 @@ https://www.google.com/safebrowsing/report_badware/
 
 Да, большинство браузеров и операционных систем доверяют нашим сертификатам. Для подробной информации обратитесь к [реестру совместимости](/ru/docs/certificate-compatibility/).
 
-## Does Let's Encrypt issue certificates for anything other than SSL/TLS for websites?
+## Пригодны ли сертификаты Let's Encrypt для других целей, нежели SSL/TLS для сайтов?
 
-Let’s Encrypt certificates are standard Domain Validation certificates, so you can use them for any server that uses a domain name, like web servers, mail servers, FTP servers, and many more.
+Сертификаты Let's Encrypt - обычные сертификаты с подтверждением домена, поэтому они пригодны для любых серверов с доменным именем - web-серверы, почтовые серверы, FTP-серверы и т.д.
 
-Email encryption and code signing require a different type of certificate that Let’s Encrypt does not issue.
+Для шифрования электронной почты и подписи исполняемого кода нужны сертификаты иного типа, который Let’s Encrypt пока не предоставляет.
 
-## Does Let’s Encrypt generate or store the private keys for my certificates on Let’s Encrypt’s servers?
+## Let’s Encrypt создаёт или хранит закрытые ключи для моих сертификатов на своих серверах?
 
-No. Never.
+Нет. Никогда.
 
-The private key is always generated and managed on your own servers, not by the Let's Encrypt certificate authority.
+Закрытые ключи всегда создаются и управляются на ваших собственных серверах, а не на сервераъ Центров Сертификации Let's Encrypt.
 
 ## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
 
