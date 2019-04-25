@@ -102,7 +102,7 @@ https://www.google.com/safebrowsing/report_badware/
 
 Мы не публикуем такой список IP-адресов, потому что адреса могут измениться в любое время. В будущем, мы планируем выполнять проверку web-сервера с нескольких IP-адресов одновременно.
 
-## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
+## Я успешно обновил сертификат - но проверка домена не запустилась. Как такое возможно?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
-If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+Если вы однажды успешно подтвердили право на доменное имя, результат проверки кэшируется, для последующего использования. Время жизни кэша - 30 дней с момента проверки.
+Если при обновлении сертификата результаты проверки будут найдены в кэше - то новая проверка запущена не будет до тех пор, пока кэш действителен.
