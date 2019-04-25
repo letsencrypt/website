@@ -23,23 +23,23 @@ aliases: [/certs]
 
 # Промежуточные сертификаты
 
-IdenTrust has cross-signed our intermediates. This allows our end certificates to be accepted by all major browsers while we propagate our own root.
+Компания [IdenTrust](https://www.identrust.com/) подписала наши промежуточные сертификатры. Это позволяет всем основным браузерам принимать наши сертификаты с нашим же корневым сертификатом.
 
-Under normal circumstances, certificates issued by Let’s Encrypt will come from “Let’s Encrypt Authority X3”. The other intermediate, “Let’s Encrypt Authority X4”, is reserved for disaster recovery and will only be used should we lose the ability to issue with “Let’s Encrypt Authority X3”. The X1 and X2 intermediates were our first generation of intermediates. We've replaced them with new intermediates that are more compatible with Windows XP.
+При обычных обстоятельствах, сертификаты Let’s Encrypt создаются на основе “Let’s Encrypt Authority X3”. Другой промежуточный сертификат, “Let’s Encrypt Authority X4”, находится в резерве на случай аварийного восстановления, и будет использован при невозможности использования “Let’s Encrypt Authority X3”. Первое поколение наших промежуточных сертификатов - сертификаты Х1 и Х2. Мы заменили их на новые, для бОльшей совместимости с Windows XP.
 
-* Active
+* Активные
   * [Let's Encrypt Authority X3 (IdenTrust cross-signed)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
     * [Let's Encrypt Authority X3 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx3.pem.txt)
-* Backup
+* В резерве
   * [Let's Encrypt Authority X4 (IdenTrust cross-signed)](/certs/lets-encrypt-x4-cross-signed.pem.txt)
     * [Let's Encrypt Authority X4 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx4.pem.txt)
-* Retired
+* Неиспользуемые
   * [Let's Encrypt Authority X2 (IdenTrust cross-signed)](/certs/lets-encrypt-x2-cross-signed.pem.txt)
     * [Let's Encrypt Authority X2 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx2.pem.txt)
   * [Let's Encrypt Authority X1 (IdenTrust cross-signed)](/certs/lets-encrypt-x1-cross-signed.pem.txt)
     * [Let's Encrypt Authority X1 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx1.pem.txt)
 
-# Cross Signing
+# Cross-подпись
 
 Our intermediate “Let’s Encrypt Authority X3” represents a single public/private
 key pair. The private key of that pair generates the signature for all end-entity
@@ -80,7 +80,7 @@ included here for informational purposes only.
 
 * [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
-# Certificate Transparency
+# Прозрачность сертификатов
 
 We are dedicated to transparency in our operations and in the certificates we
 issue. We submit all certificates to [Certificate Transparency
@@ -90,8 +90,8 @@ issued Let's Encrypt certificates via these links:
 * [Issued by Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
 
-# More Info
+# Дополнительно
 
 The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
 
-All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys](/upcoming-features/).
+Все ключи ISRG - это RSA-ключи. Мы [планируем переход на ECDSA-ключи](/ru/upcoming-features/).
