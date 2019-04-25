@@ -16,11 +16,11 @@ top_graphic: 1
 
 В настоящее время в Let's Encrypt реализована однофакторная проверка прав на домен. Мы планируем усложнить проверку, сделав её многофакторной.
 
-## ECDSA Root and Intermediates
+## Переход на ECDSA для корневых и промежуточных сертификатов
 
-* ETA: Q3 2019
+* Примерная дата: 3кв. 2019
 
-Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
+Пользовательские сертификаты Let's Encrypt подписываются промежуточными RSA сертификатов. Мы планируем перейти на ECDSA для корневых и промежуточных сертификатов, которые будут использоваться для подписи конечных сертификатов.
 
 # Completed Features
 
