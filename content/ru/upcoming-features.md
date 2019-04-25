@@ -4,11 +4,11 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
-## Интеграция с журналом сертификатов
+## Интеграция с журналом Certificate Transparency
 
 * Примерная дата: 1кв. 2019
 
-Мы планируем интеграцию с [общедоступным журналом сертификатов](http://www.certificate-transparency.org/how-ct-works).
+Мы планируем интеграцию с [журналом Certificate Transparency](http://www.certificate-transparency.org/how-ct-works).
 
 ## Многофакторная валидация
 
