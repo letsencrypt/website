@@ -64,28 +64,28 @@ menu:
 * [1 апреля 2016](/documents/ISRG-Legal-Transparency-Report-April-1-2016.pdf)
 * [1 июля, 2015](/documents/ISRG-Legal-Transparency-Report-July-1-2015.pdf)
 
-# ISRG Non-Discrimination Policy
+# Политика ISRG по недопущению дискриминации
 
-* [June 18, 2015](/nondiscrimination/)
+* [18 июня 2015](/nondiscrimination/)
 
-# WebTrust Audits
+# Аудиты WebTrust
 
-## Operational Audits
+## Операционные аудиты
 
-* November 30, 2018: [Trust Services Principles and Criteria for Certification Authorities Version 2.1](https://www.cpacanada.ca/webtrustseal?sealid=10124)
-* November 30, 2018: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3](https://www.cpacanada.ca/webtrustseal?sealid=10125)
-* December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2017-WebTrust-for-CAs-Report.pdf)
-* December 15, 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](/audits/ISRG-2017-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
-* December 15, 2016: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-Report.pdf)
-* December 15, 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
-* December 15, 2015: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-Report.pdf)
-* December 15, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
+* 30 ноября 2018: [Trust Services Principles and Criteria for Certification Authorities Version 2.1](https://www.cpacanada.ca/webtrustseal?sealid=10124)
+* 30 ноября 2018: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3](https://www.cpacanada.ca/webtrustseal?sealid=10125)
+* 15 декабря 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2017-WebTrust-for-CAs-Report.pdf)
+* 15 декабря 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](/audits/ISRG-2017-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
+* 15 декабря 2016: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-Report.pdf)
+* 15 декабря 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
+* 15 декабря 2015: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-Report.pdf)
+* 15 декабря 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
 
-## Readiness Audits
+## Аудиты готовности
 
-* September 9, 2015: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-PITRA-Report.pdf)
-* September 9, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-PITRA-Report.pdf)
+* 9 сентября 2015: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-PITRA-Report.pdf)
+* 9 сентября 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-PITRA-Report.pdf)
 
-# Certificate Problem Reports
+# Отчёты по проблемам с сертификатами
 
-To report private key compromise, certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to certificates, please email <a href="mailto:cert-prob-reports@letsencrypt.org">cert-prob-reports@letsencrypt.org</a>.
+Чтобы сообщить о скомпрометированных закрытых ключах, злоупотреблениях сертификатами, или о других видах мошенничества, неправомерного использования, ненадлежащего поведения или любых других вопросов, связанных с сертификатами, пожалуйста, отправьте письмо по адресу <a href="mailto:cert-prob-reports@letsencrypt.org">cert-prob-reports@letsencrypt.org</a>.
