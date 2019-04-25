@@ -56,9 +56,9 @@ https://www.google.com/safebrowsing/report_badware/
 
 # <a name="technical">Технические вопросы</a>
 
-## Are certificates from Let’s Encrypt trusted by my browser?
+## Примет ли мой браузер сертификаты от Let’s Encrypt?
 
-For most browsers and operating systems, yes. See the [compatibility list](/docs/certificate-compatibility/) for more detail.
+Да, большинство браузеров и операционных систем доверяют нашим сертификатам. Для подробной информации обратитесь к [реестру совместимости](/ru/docs/certificate-compatibility/).
 
 ## Does Let's Encrypt issue certificates for anything other than SSL/TLS for websites?
 
