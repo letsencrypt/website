@@ -94,14 +94,13 @@ https://www.google.com/safebrowsing/report_badware/
 
 Есть множество реализаций [ACME-клиента](/docs/client-options/). Скорее всего, для вашей операционной системы найдётся рабочее решение. На начальном этапе мы рекомендуем использовать [Certbot](https://certbot.eff.org/).
 
+## Могу ли я использовать имеющийся закрытый ключ, или запрос в Центр Сертификации (Certificate Signing Request, CSR)?
 
-## Can I use an existing private key or Certificate Signing Request (CSR)?
+Да, но не все реализации ACME-клиента имеют такую функцию. [Certbot](https://certbot.eff.org/) - имеет.
 
-Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org/) does.
+## Какие IP-адреса использует Let's Encrypt для проверки моего web-сервера?
 
-## What IP addresses does Let's Encrypt use to validate my web server?
-
-We don't publish a list of IP addresses we use to validate, because they may change at any time. In the future we may validate from multiple IP addresses at once.
+Мы не публикуем такой список IP-адресов, потому что адреса могут измениться в любое время. В будущем, мы планируем выполнять проверку web-сервера с нескольких IP-адресов одновременно.
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
