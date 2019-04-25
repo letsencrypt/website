@@ -45,9 +45,9 @@ aliases: [/certs]
 
 Сертификат “Let’s Encrypt Authority X3” подписан корневым сертификатом "ISRG Root X1". Центр Сертификации Let’s Encrypt появился недавно, поэтому сертификату "ISRG Root X1" доверяют не все браузеры. Для повышения доверия, наши промежуточные сертификаты были дополнительно подписаны другим Центром Сертификации - IdenTrust - чей корневой сертификат признаётся всеми основными браузерами. Конкретнее, IdenTrust подписал наш промежуточный сертификат своим [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html) сертификатом.
 
-That means there are two certificates available that both represent our
-intermediate. One is signed by DST Root CA X3, and the other is signed by ISRG
-Root X1. The easiest way to distinguish the two is by looking at their Issuer field.
+Это означает, что есть два сертификата, представляющие собой наш промежуточный сертификат. Один подписан  DST Root CA X3, другой подписан ISRG
+Root X1. Чтобы определить, какой из двух сертификатов используется, достаточно взглянуть на поле Issuer.
+
 
 When configuring a web server, the server operator configures not only the
 end-entity certificate, but also a list of intermediates to help browsers verify
