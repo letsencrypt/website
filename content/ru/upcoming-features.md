@@ -1,5 +1,5 @@
 ---
-title: Upcoming Features
+title: Планируемый функционал
 slug: upcoming-features
 top_graphic: 1
 ---

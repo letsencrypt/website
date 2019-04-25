@@ -14,25 +14,25 @@ menu:
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 * [Glossary](/docs/glossary/)
 
-# Subscriber Information
+# Информация для подписчиков
 
 * [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
-# Advanced Subscriber Information
+# Расширенная информация для подписчиков
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
-* [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
-* [Upcoming Features](/upcoming-features/)
+* [Цепочка доверия (Корневые и промежуточные сертификаты)](/ru/certificates/)
+* [Планируемый функционал](/ru/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
 * [Certificates for localhost](/docs/certificates-for-localhost/)
 * [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
 * [Challenge Types](/docs/challenge-types/)
 
-# Client Developer Information
+# Информация для разработчиков клиентской части сервиса
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
