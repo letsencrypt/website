@@ -45,15 +45,14 @@ Let’s Encrypt - небольшая компания, мы полагаемся
 
 Вот [видео](https://www.youtube.com/watch?v=Xe1TZaElTAs), которое нам нравится - о значимости большого сообщества.
 
-## A website using Let's Encrypt is engaged in Phishing/Malware/Scam/... , what should I do?
+## Сайт с сертификатом Let's Encrypt используется для фишинга / вредоносного ПО / мошенничества/..., что мне делать?
 
-We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here is the Google reporting URL:
+Мы рекомендуем уведомить об этом сервисы Google Safe Browsing и Microsoft Smart Screen, которые способны эффективно защитить пользователей Интернета.
+Ниже ссылка на форму сообщения::
 
 https://www.google.com/safebrowsing/report_badware/
 
-If you'd like to read more about our policies and rationale, you can do so here:
-
-https://letsencrypt.org/2015/10/29/phishing-and-malware.html
+Хотите узнать больше? Ознакомьтесь со статьёй [из нашего блога](/2015/10/29/phishing-and-malware.html).
 
 # <a name="technical">Технические вопросы</a>
 
