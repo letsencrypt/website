@@ -72,19 +72,19 @@ https://www.google.com/safebrowsing/report_badware/
 
 Закрытые ключи всегда создаются и управляются на ваших собственных серверах, а не на сервераъ Центров Сертификации Let's Encrypt.
 
-## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
+## Каком срок действия сертификатов Let's Encrypt? Какое время они будут считаться действительными?
 
-Our certificates are valid for 90 days. You can read about why [here](https://letsencrypt.org/2015/11/09/why-90-days.html).
+Наши сертификаты действительны в течение 90 дней с момента выпуска. Почему именно 90 дней? Узнайте в статье [из нашего блога](/2015/11/09/why-90-days.html).
 
-There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
+Не существует способа изменить эту величину, без всяких исключений. Мы рекомендуем автоматически обновлять сертификаты каждые 60 дней.
 
-## Will Let’s Encrypt issue Organization Validation (OV) or Extended Validation (EV) certificates?
+## Планирует ли Let’s Encrypt выпускать сертификаты с подтверждением организации (Organization Validation, OV) или сертификаты высокой надёжности (Extended Validation, EV)?
 
-We have no plans to issue OV or EV certificates.
+Нет, мы не планируем выпускать OV или EV сертификаты.
 
-## Can I get a certificate for multiple domain names (SAN certificates or UCC certificates)?
+## Могу ли я получить сертификат для нескольких доменных имён (SAN или UCC сертификаты)?
 
-Yes, the same certificate can contain several different names using the Subject Alternative Name (SAN) mechanism.
+Да, один и тот же сертификат Let’s Encrypt может содержать несколько доменных имён, используя механизм Subject Alternative Name (SAN).
 
 ## Does Let’s Encrypt issue wildcard certificates?
 
