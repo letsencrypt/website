@@ -54,20 +54,20 @@ Let's Encrypt теперь выдаёт сертификаты для интер
 
 Изначально лишь часть инфраструктуры API Let's Encrypt могла работать по протоколу IPv6. Это мешало cистемам, использующим только IPv6, полноценно взаимодействовать с Let's Encrypt. Эта проблема решена, весь наш функционал поддерживает протокол IPv6.
 
-## Windows XP Certificate Compatibility
+## Совместимость сертификаторв с Windows XP
 
-* Enabled: March 25, 2016
+* Запущено: 25 марта 2016
 
-Resolved an issue with our certificate chain that prevented Let's Encrypt certificates from being accepted by browsers on Windows XP.
+Решена проблема с нашей цепочкой сертификатов, при которой браузеры в Windows XP не принимали сертификаты Let's Encrypt.
 
-## ECDSA Signing Support
+## Поддержка ECDSA
 
-* Enabled: February 10, 2016
+* Запущено: 10 февраля 2016
 
-Added the ability for Let's Encrypt to sign ECDSA keys with Let's Encrypt's RSA intermediates. Support for signing ECDSA keys with a full ECDSA cert chain will be added later.
+Добавлена возможность подписывать RSA сертификаты - ключами ECDSA. Полная поддержка ECDSA для подписания и цепочки доверия будет реализована позже.
 
-## ACME DNS Challenge Support
+## Внедрение метода проверки ACME DNS
 
-* Enabled: January 20, 2016
+* Запущено: 20 января 2016
 
-Let's Encrypt allows validation via DNS records as defined in the ACME specification.
+Let's Encrypt проверяет права на домен через DNS записи, согласно спецификации ACME.
