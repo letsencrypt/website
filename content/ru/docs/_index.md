@@ -11,7 +11,7 @@ menu:
 
 * [Приступая к работе](/ru/getting-started/)
 * [Как работает Let's Encrypt](/ru/how-it-works/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Часто задаваемые вопросы](/ru/docs/faq/)
 * [Glossary](/docs/glossary/)
 
 # Информация для пользователей
