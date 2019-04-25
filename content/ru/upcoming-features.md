@@ -4,17 +4,17 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
-## Certificate Transparency Log
+## Интеграция с журналом сертификатов
 
-* ETA: Q1 2019
+* Примерная дата: 1кв. 2019
 
-We are planning to operate a [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
+Мы планируем интеграцию с [общедоступным журналом сертификатов](http://www.certificate-transparency.org/how-ct-works).
 
-## Multi-Perspective Validation
+## Многофакторная валидация
 
-* ETA: Q2 2019
+* Примерная дата: 2кв. 2019
 
-Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
+В настоящее время в Let's Encrypt реализована однофакторная проверка прав на домен. Мы планируем усложнить проверку, сделав её многофакторной.
 
 ## ECDSA Root and Intermediates
 
