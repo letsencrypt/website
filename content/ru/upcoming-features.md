@@ -22,13 +22,13 @@ top_graphic: 1
 
 Пользовательские сертификаты Let's Encrypt подписываются промежуточными RSA сертификатов. Мы планируем перейти на ECDSA для корневых и промежуточных сертификатов, которые будут использоваться для подписи конечных сертификатов.
 
-# Completed Features
+# Реализованый функционал
 
-## TLS ALPN Challenge Support
+## Внедрение метода проверки TLS ALPN
 
-* Enabled: July 12, 2018
+* Запущено: 12 июля 2018
 
-We've specified and implemented a [replacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
+Мы разработали и запустили [замену](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) для метода проверки TLS-SNI, поддержка которого [прекращена по соображениям безопасности](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Замена метода была критичной для web-серверов с одним доступным портом 443 для выполнения проверок.
 
 ## Embed SCT receipts in certificates
 

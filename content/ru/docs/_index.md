@@ -14,13 +14,13 @@ menu:
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
 * [Glossary](/docs/glossary/)
 
-# Информация для подписчиков
+# Информация для пользователей
 
 * [ACME Client Implementations](/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
-# Расширенная информация для подписчиков
+# Расширенная информация для пользователей
 
 * [Staging Environment](/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
@@ -32,7 +32,7 @@ menu:
 * [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
 * [Challenge Types](/docs/challenge-types/)
 
-# Информация для разработчиков клиентской части сервиса
+# Информация для разработчиков
 
 * [Client and Large Provider Integration Guide](/docs/integration-guide/)
 * [ACME Protocol Updates](/docs/acme-protocol-updates/)
