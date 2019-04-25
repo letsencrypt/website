@@ -41,17 +41,9 @@ aliases: [/certs]
 
 # Cross-подпись
 
-Our intermediate “Let’s Encrypt Authority X3” represents a single public/private
-key pair. The private key of that pair generates the signature for all end-entity
-certificates (also known as leaf certificates), i.e. the certificates we issue
-for use on your server.
+Наш промежуточный сертификат “Let’s Encrypt Authority X3” содержит открытый и закрытый ключ. Закрытый ключ из этой пары подписывает все сертификаты конечного пользователя (они же "листовые сертификаты), т.е. сертификаты, которые мы выдаём для вашего web-сервера.
 
-Our intermediate is signed by ISRG Root X1. However, since we are a very new
-certificate authority, ISRG Root X1 is not yet trusted in most browsers. In
-order to be broadly trusted right away, our intermediate is also cross-signed by
-another certificate authority, IdenTrust, whose root is already trusted in all
-major browsers. Specifically, IdenTrust has cross-signed our intermediate using their
-[DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+Сертификат “Let’s Encrypt Authority X3” подписан корневым сертификатом "ISRG Root X1". Центр Сертификации Let’s Encrypt появился недавно, поэтому сертификату "ISRG Root X1" доверяют не все браузеры. Для повышения доверия, наши промежуточные сертификаты были дополнительно подписаны другим Центром Сертификации - IdenTrust - чей корневой сертификат признаётся всеми основными браузерами. Конкретнее, IdenTrust подписал наш промежуточный сертификат своим [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html) сертификатом.
 
 That means there are two certificates available that both represent our
 intermediate. One is signed by DST Root CA X3, and the other is signed by ISRG
