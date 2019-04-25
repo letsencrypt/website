@@ -52,7 +52,7 @@ Let's Encrypt теперь выдаёт сертификаты для интер
 
 * Запущено: 26 июля 2016
 
-Initially, only parts of the Let's Encrypt API infrastructure could communicate via IPv6. This prevented IPv6-only systems from being able to fully interact with Let's Encrypt. This has been resolved - IPv6 support has been enabled for all functionality.
+Изначально лишь часть инфраструктуры API Let's Encrypt могла работать по протоколу IPv6. Это мешало cистемам, использующим только IPv6, полноценно взаимодействовать с Let's Encrypt. Эта проблема решена, весь наш функционал поддерживает протокол IPv6.
 
 ## Windows XP Certificate Compatibility
 
