@@ -20,3 +20,5 @@
 * Blog posts (`content\XX\post\`) are not ready to be translated.
 * Images are not ready to be translated ([#314](https://github.com/letsencrypt/website/issues/314)).
 * Graphs content is not ready to be translated ([#344](https://github.com/letsencrypt/website/issues/344)).
+* The "aliases:" field in the Hugo header should not be copied. This leads to
+  inconsistent redirects.
