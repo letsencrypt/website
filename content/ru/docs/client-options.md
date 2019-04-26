@@ -258,12 +258,11 @@ Let's Encrypt использует протокол ACME для подтверж
 
 # Добавление вашего клиента / проекта
 
+Если вы знаете об ACME-клиенте, или проекте интеграции с Let's Encrypt, которых нет в списке выше - создайте пулл-реквест в [репозиторий нашего сайта](https://github.com/letsencrypt/website/) на Github, добавив информацию в файл `content/en/docs/client-options.md`.
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `content/en/docs/client-options.md` page.
+Перед отправкой пулл-реквеста, убедитесь, что:
 
-Before submitting a pull request please make sure:
-
-1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
-1. Your client is not browser-based and supports automatic renewals.
-1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "ACME v2 Compatible Clients" section if appropriate!).
-1. Your commit updates the `lastmod` date stamp at the top of `client-options.md`.
+1. Ваш клиент соблюдает [политику Let's Encrypt в отношении товарных знаков](https://letsencrypt.org/trademarks/).
+1. Ваш клиент - это не плагин к браузеру, и поддерживает автоматическое обновление.
+1. Вы добавили строку в файле **в конец** соответствующего раздела (не забудьте про раздел "Клиенты, совместимые с ACME v2"!)
+1. Вы обновили параметр `lastmod` в начале файла `client-options.md`.
