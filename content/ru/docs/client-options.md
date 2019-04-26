@@ -62,9 +62,9 @@ Let's Encrypt использует протокол ACME для подтверж
 
 ## Bash
 
-- [GetSSL](https://github.com/srvrco/getssl) (bash, also automates certs on remote hosts via ssh)
-- [acme.sh](https://github.com/Neilpang/acme.sh) (Compatible to bash, dash and sh)
-- [dehydrated](https://github.com/lukas2511/dehydrated) (Compatible to bash and zsh)
+- [GetSSL](https://github.com/srvrco/getssl) (bash, умеет работать с сертификатами на удалённых хостах через SSH)
+- [acme.sh](https://github.com/Neilpang/acme.sh) (совместим с bash, dash и sh)
+- [dehydrated](https://github.com/lukas2511/dehydrated) (совместим с bash и zsh)
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
@@ -85,7 +85,7 @@ Let's Encrypt использует протокол ACME для подтверж
 - [Lego](https://github.com/xenolf/lego)
 - [GoACME](https://github.com/google/goacme)
 - [acmetool](https://github.com/hlandau/acme)
-- [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
+- [Lets-proxy](https://github.com/rekby/lets-proxy) (Обратный прокси для https/tls)
 - [autocert](https://godoc.org/golang.org/x/crypto/acme/autocert)
 - [Ponzu CMS](https://ponzu-cms.org)
 - [Traefik](https://traefik.io)
@@ -103,14 +103,14 @@ Let's Encrypt использует протокол ACME для подтверж
 
 ## Microsoft Azure
 
-- [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/) (Compatible with any App Service)
+- [GetSSL - Azure Automation](https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/) (Совместим с любым App Service)
 
 ## nginx
 
 - [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl)
 - [acme-nginx](https://github.com/kshcherban/acme-nginx)
 - [ngxpkg](https://github.com/webpkg/ngxpkg)
-- [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php) (Reverse proxy to serve multiple internal servers based on internal DNS)
+- [acme_proxy.php](https://github.com/jpawlowski/acme_proxy.php) (Обратный прокси для обслуживания нескольких внутренних серверов на основе внутреннего DNS)
 
 ## Node.js
 
