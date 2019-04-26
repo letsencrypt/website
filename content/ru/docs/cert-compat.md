@@ -18,11 +18,11 @@ Let's Encrypt стремится обеспечить совместимость
 
 * Mozilla Firefox >= v2.0
 * Google Chrome
-* Internet Explorer on Windows XP SP3 and higher
+* Internet Explorer для Windows XP SP3 и выше
 * Microsoft Edge
 * Android OS >= v2.3.6
-* Safari >= v4.0 on macOS
-* Safari on iOS >= v3.1
+* Safari >= v4.0 для macOS
+* Safari для iOS >= v3.1
 * Debian Linux >= v6
 * Ubuntu Linux >= v12.04
 * NSS Library >= v3.11.9
@@ -33,18 +33,18 @@ Let's Encrypt стремится обеспечить совместимость
 * Java 7 >= 7u111
 * Java 8 >= 8u101
 * Blackberry >= 10.3.3
-* PS4 game console with firmware >= 5.00
+* PS4 с версией прошивки >= 5.00
 
-# Known Incompatible
+# Несовместимые платформы
 
 * Blackberry < v10.3.3
 * Android < v2.3.6
 * Nintendo 3DS
-* Windows XP prior to SP3
-  * cannot handle SHA-2 signed certificates
+* Windows XP до SP3
+  * не поддерживает сертификаты на основе SHA-2
 * Java 7 < 7u111
 * Java 8 < 8u101
-* Windows Live Mail (2012 mail client, not webmail)
-  * cannot handle certificates without a CRL
-* PS3 game console
-* PS4 game console with firmware < 5.00
+* Windows Live Mail (почтовый клиент 2012, не web-почта)
+  * не поддерживает сертификаты без CRL
+* PS3 
+* PS4 с версией прошивки < 5.00
