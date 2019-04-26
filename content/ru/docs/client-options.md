@@ -256,13 +256,13 @@ Let's Encrypt использует протокол ACME для подтверж
 - [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
 - [WildFly Application Server](https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli)
 
-# Добавление вашего клиента / проекта
+# Добавление клиента / проекта в список
 
-Если вы знаете об ACME-клиенте, или проекте интеграции с Let's Encrypt, которых нет в списке выше - создайте пулл-реквест в [репозиторий нашего сайта](https://github.com/letsencrypt/website/) на Github, добавив информацию в файл `content/en/docs/client-options.md`.
+Если вам известно об ACME-клиенте, или проекте интеграции с Let's Encrypt, которых нет в списке выше - создайте пулл-реквест в [репозиторий нашего сайта](https://github.com/letsencrypt/website/) на Github, добавив информацию в файл `content/en/docs/client-options.md`.
 
 Перед отправкой пулл-реквеста, убедитесь, что:
 
-1. Ваш клиент соблюдает [политику Let's Encrypt в отношении товарных знаков](https://letsencrypt.org/trademarks/).
-1. Ваш клиент - это не плагин к браузеру, и поддерживает автоматическое обновление.
+1. Добавляемый ACME-клиент соблюдает [политику Let's Encrypt в отношении товарных знаков](https://letsencrypt.org/trademarks/).
+1. Добавляемый ACME-клиент поддерживает автоматическое обновление, это не плагин к браузеру и не web-сервис.
 1. Вы добавили строку в файле **в конец** соответствующего раздела (не забудьте про раздел "Клиенты, совместимые с ACME v2"!)
 1. Вы обновили параметр `lastmod` в начале файла `client-options.md`.
