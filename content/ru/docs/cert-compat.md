@@ -10,12 +10,11 @@ lastmod: 2016-12-05
 
 Let's Encrypt стремится обеспечить совместимость с максимально возможным числом браузеров и операционных систем (платформ), без ущерба для безопасности. Первостепенное значение для принятия платформой сертификатов Let's Encrypt является наличие сертификата IdenTrust DST Root X3 в платформенном хранилище сертификатов. Дополнительно, платформа должна поддерживать работу с [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) сертификатами, т.к. все сертификаты Let's Encrypt используют SHA-2.
 
+Если сертификат принимается на одной части совместимых платформ, и не принимается на другой части - скорее всего, проблема в настройках web-сервера. Для относительно новых платформах причиной может быть ошибка в цепочке доверия сертификатов. Для относительно старых платформ (как, например, Windows XP), основная причина отказов кроется в отсутствии нужных наборов шифрования, нужной версии TLS, или поддержки [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication). Проверьте ваш сайт с помощью сервиса [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Если и он не помог в решении проблемы, обратитесь за помощью на наш [форум сообщества](https://community.letsencrypt.org/).
 
-If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration. If you're having an issue with modern platforms, the most common cause is failure to provide the correct certificate chain. If you're having an issue with older platforms like Windows XP, the most common causes are failure to configure a ciphersuite or TLS version that is supported on the platform or that the platform lacks support for Server Name Indication (SNI). Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
+Для дополнительной информации по вопросам совместимости, посетите [этот раздел форума](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/).
 
-You may want to visit [this particular community forum discussion](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) for more information about compatibility.
-
-# Known Compatible
+# Совместимые платформы
 
 * Mozilla Firefox >= v2.0
 * Google Chrome
