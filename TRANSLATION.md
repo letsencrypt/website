@@ -16,7 +16,7 @@
 * `jobs.md` should either not be present or just contain a link to the english version.
 * Paths should stay in English: `/en/about` becomes `/XX/about` in every language.
 * When a file is not translated, it will not appear in the menu.
-* client-options.md and cert-compat.md are not ready to be translated.
+* client-options.md, cert-compat.md and repository.md are not ready to be translated.
 * Blog posts (`content\XX\post\`) are not ready to be translated.
 * Images are not ready to be translated ([#314](https://github.com/letsencrypt/website/issues/314)).
 * Graphs content is not ready to be translated ([#344](https://github.com/letsencrypt/website/issues/344)).
