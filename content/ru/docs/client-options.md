@@ -181,7 +181,7 @@ Let's Encrypt использует протокол ACME для подтверж
 - [Certes](https://github.com/fszlin/certes) (.NET)
 . [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
 
-# Libraries
+# Библиотеки
 
 ## Delphi
 - [DelphiACME](https://github.com/tothpaul/DelphiACME) (Embarcadero Delphi)
@@ -214,13 +214,10 @@ Let's Encrypt использует протокол ACME для подтверж
 
 ## Python
 
-- the Python [acme](https://github.com/certbot/certbot/tree/master/acme)
-  module is part of the Certbot tree, but is also used by a number of other
-  clients and is available as a standalone package
-  via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme),
-  [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
+- Python-модуль [acme](https://github.com/certbot/certbot/tree/master/acme) - часть проекта Certbot, но используется в других ACME-клиентах. Доступен в виде пакета в [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme),
+  [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) и других дистрибутивах.
 - [mail-in-a-box/free_tls_certificates](https://github.com/mail-in-a-box/free_tls_certificates) (Python 3)
-- [txacme](https://github.com/mithrandi/txacme) (Twisted client for Python 2 / 3)
+- [txacme](https://github.com/mithrandi/txacme) (клиент Twisted для Python 2 / 3)
 
 ## Ruby
 
@@ -235,7 +232,7 @@ Let's Encrypt использует протокол ACME для подтверж
 - [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
 - [Certes](https://github.com/fszlin/certes) (.NET)
 
-# Projects integrating with Let's Encrypt
+# Проекты, интегрированные с Let's Encrypt
 
 - [Ponzu CMS](https://ponzu-cms.org)
 - [Caddy](https://caddyserver.com/)
@@ -253,13 +250,14 @@ Let's Encrypt использует протокол ACME для подтверж
 - [pfSense](https://www.pfsense.org/)
 - [Cloudron](https://cloudron.io)
 - [Aegir](https://gitlab.com/aegir/hosting_https)
-- [Synchronet BBS System](http://www.synchro.net) (ACMEv2 only)
+- [Synchronet BBS System](http://www.synchro.net) (только ACMEv2)
 - [ruxy](https://ruxyserver.com)
 - [ISPConfig](https://www.ispconfig.org/)
 - [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
 - [WildFly Application Server](https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli)
 
-# Adding your client/project
+# Добавление вашего клиента / проекта
+
 
 If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `content/en/docs/client-options.md` page.
 
