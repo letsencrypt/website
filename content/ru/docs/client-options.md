@@ -8,24 +8,21 @@ lastmod: 2019-03-01
 
 {{< lastmod >}}
 
-Let's Encrypt uses the ACME protocol to verify that you control a given domain
-name and to issue you a certificate. To get a Let's Encrypt certificate, you'll
-need to choose a piece of ACME client software to use.
+Let's Encrypt использует протокол ACME для подтверждения прав на конкретное доменное имя, и для последующей выдачи сертификата. Для работы с сертификатами Let's Encrypt вам нужно выбрать ACME-клиента.
 
-The ACME clients below are offered by third parties. Let's Encrypt does not control or review
-third party clients and cannot make any guarantees about their safety or reliability.
+Представленные ниже ACME-клиенты разрабатываются сторонними организациями. Let's Encrypt не контролирует, не проверяет, и не гарантирует работоспособность и безопасность этого программного обеспечения.
 
-Some in-browser ACME clients are available, but we do not list them here because
-they encourage a manual renewal workflow that results in a poor user experience
-and increases the risk of missed renewals.
+Существует ряд ACME-клиентов виде плагинов к браузерам, но мы не приводим их в нашем списке. Как правило, работа с этими клиентами предполагает ручное обновление сертификатов, что повышает риск пропустить дату обновления.
 
-# Recommended: Certbot
 
-We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
+# Рекомендованный ACME-клиент: Certbot
 
-If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+Мы рекомендуем начать с использования ACME-клиента [Certbot](https://certbot.eff.org/), который подойдёт большинству пользователей. Он автоматически создаёт и устанавливает сертификаты, не требуя остановки web-сервера, прост в использовании, работает на большинстве операционных систем, и отлично документирован.
 
-## ACME v2 Compatible Clients
+Если вас не устраивает Certbot, или вы хотите опробовать альтернативные клиенты - есть множество других реализаций в списке ниже, сгруппированных по языку программирования или окружению, в котором они работают.
+
+## Клиенты, совместимые с ACME v2
+
 
 These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
 
