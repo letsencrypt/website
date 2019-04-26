@@ -22,12 +22,11 @@ Let's Encrypt использует протокол ACME для подтверж
 
 ## Клиенты, совместимые с ACME v2
 
-
-These clients are compatible with our [staging endpoint for ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
+Эти  ACME-клиенты совместимы с [последней реализацией протокола ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605).
 
 - [Certbot](https://certbot.eff.org/) (Certbot >= 0.22.0)
 - [ACME4J](https://github.com/shred/acme4j) (acme4j >= 2.0)
-- [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (`APIv2` branch)
+- [GetSSL](https://github.com/srvrco/getssl/tree/APIv2) (ветка `APIv2`)
 - [acme.sh](https://github.com/Neilpang/acme.sh)
 - [Net::ACME2](https://metacpan.org/pod/Net::ACME2)
 - [Hiawatha](https://www.hiawatha-webserver.org/letsencrypt)
@@ -42,10 +41,10 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acmebot](https://github.com/plinss/acmebot)
 - [ocelotconsulting/node-acme-lambda](https://github.com/ocelotconsulting/node-acme-lambda)
 - [Caddy](https://caddyserver.com) (Caddy >= 0.10.12)
-- [Certify The Web (Windows)](https://certifytheweb.com) (v4 onwards)
+- [Certify The Web (Windows)](https://certifytheweb.com) (v4 и выше)
 - [publishlab/node-acme-client](https://github.com/publishlab/node-acme-client)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME)
-- [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 onwards)
+- [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (v2.0 и выше)
 - [unixcharles/acme-client](https://github.com/unixcharles/acme-client)
 - [Greenlock](https://git.coolaj86.com/coolaj86/greenlock-express.js)
 - [eggsampler/acme Go client library](https://github.com/eggsampler/acme)
