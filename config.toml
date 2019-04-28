@@ -245,7 +245,6 @@ description = """
  identifier = "isrg"
  parent = "about"
  url = "https://www.abetterinternet.org/about/"
-
  [[languages.ru.menu.main]]
  name = "Состояние сервиса"
  weight = 60
