@@ -2,7 +2,6 @@
 title: Comenzando
 slug: getting-started
 top_graphic: 3
-aliases : [/howitworks]
 ---
 
 Para habilitar HTTPS en tu p&aacute;gina de web, tienes que obtener un certificado (un tipo de archivo) de una Autoridad de Certificaci&oacute;n (AC, o CA por sus siglas en ingl&eacute;s). Let's Encrypt es un AC. Para obtener un certificado para tu dominio de sitio web de Let's Encrypt, tienes que demonstrar control sobre ese dominio. Con Let's Encrypt, puedes hacer esto con software que usa el [protocolo ACME](https://ietf-wg-acme.github.io/acme/), el cual t&iacute;picamente corre en tu hospedeja de web.

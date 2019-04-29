@@ -2,7 +2,6 @@
 title: Commencer
 slug: getting-started
 top_graphic: 3
-aliases : [/howitworks]
 ---
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
