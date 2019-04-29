@@ -1,5 +1,5 @@
 ---
-title: About Let's Encrypt
+title: Let's Encrypt-i buruz
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1

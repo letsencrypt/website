@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Hasi Zaitez
 slug: getting-started
 top_graphic: 3
 aliases : [/howitworks]

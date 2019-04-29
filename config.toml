@@ -306,9 +306,9 @@ description = """
  url = "https://www.abetterinternet.org/careers/"
 
 
- [languages.eu]
+ [languages.eu-es]
 title = "Let's Encrypt - Doako SSL/TLS Ziurtagiriak"
-contentDir = "content/eu"
+contentDir = "content/eu-es"
 languageName ="Euskara"
 languageCode= "eu-es"
 #if colon ":" must be prefixed
@@ -319,33 +319,33 @@ description = """
 Let&rsquo;s&nbsp;Encrypt <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>
 irabazi-asmorik gabeko erakundeak sortutako doako egiaztapen automatizatu eta irekia eskaintzen duen aginte bat da.
 """
-[[languages.eu.menu.main]]
+[[languages.eu-es.menu.main]]
  name = "Laguntza"
  weight = 20
  url = "https://community.letsencrypt.org/"
- [[languages.eu.menu.main]]
+ [[languages.eu-es.menu.main]]
  name = "Dohaintzan eman"
  weight = 30
  identifier = "donate"
  url = "/donate/"
- [[languages.eu.menu.main]]
+ [[languages.eu-es.menu.main]]
  name = "Guri Buruz"
  weight = 40
  identifier = "about"
  url = "/about/"
-  [[languages.eu.menu.main]]
+  [[languages.eu-es.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
  identifier = "isrg"
  parent = "about"
  url = "https://www.abetterinternet.org/about/"
- [[languages.eu.menu.main]]
+ [[languages.eu-es.menu.main]]
  name = "Zerbitzuaren Egoera"
  weight = 60
  identifier = "status"
  parent = "about"
  url = "https://letsencrypt.status.io/"
- [[languages.eu.menu.main]]
+ [[languages.eu-es.menu.main]]
  name = "Lanak"
  weight = 80
  identifier = "careers"
