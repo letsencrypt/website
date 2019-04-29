@@ -270,7 +270,7 @@ If you know of an ACME client or a project that has integrated with Let's Encryp
 
 Before submitting a pull request please make sure:
 
-1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
+1. Your client respects the [Let's Encrypt trademark policy](/trademarks/).
 1. Your client is not browser-based and supports automatic renewals.
 1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "ACME v2 Compatible Clients" section if appropriate!).
 1. Your commit updates the `lastmod` date stamp at the top of `client-options.md`.
