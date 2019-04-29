@@ -26,7 +26,7 @@ Let's Encrypt es una Autoridad de Certificaci&oacute;n (AC, or CA por sus siglas
 
 Let's Encrypt ofrece certificados de Validaci&oacute;n de Dominio (DV por sus siglas en ingl&eacute;s). No ofrecemos Validaciones Extendidas o de Organizaci&oacute;n principalmente porque no podemos automatizar la emisi&oacute;n de esos tipos de certificados.
 
-Para comenzar a usar Let's Encrypt, por favor visita nuestra p&aacute;gina [Comenzando](https://letsencrypt.org/es/getting-started/).
+Para comenzar a usar Let's Encrypt, por favor visita nuestra p&aacute;gina [Comenzando](/es/getting-started/).
 
 ## &iquest;Cu&aacute;nto cuesta usar Let's Encrypt? &iquest;Verdaderamente es gratis?
 
@@ -75,7 +75,7 @@ La llave privada siempre es generada y gestionada en tu propio servidor, no por 
 
 ## &iquest;Cu&aacute;l es el tiempo de vida de un certificado Let's Encrypt? &iquest;Por cu&aacute;nto tiempo son v&aacute;lidos?
 
-Nuestros certificados son v&aacute;lidos por 90 d&iacute;as. Puedes leer acerca de por qu&eacute; [aqu&iacute;](https://letsencrypt.org/2015/11/09/why-90-days.html).
+Nuestros certificados son v&aacute;lidos por 90 d&iacute;as. Puedes leer acerca de por qu&eacute; [aqu&iacute;](/2015/11/09/why-90-days.html).
 
 No hay forma de ajustar esto, no hay excepciones. Recomendamos renovar tus certificados autom&aacute;ticamente cada 60 d&iacute;as.
 
