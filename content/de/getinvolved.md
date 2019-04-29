@@ -10,7 +10,7 @@ menu:
 
 ## Community
 
-Wir können immer Hilfe bei der Beantwortung von Fragen auf [Let's Encrypt Community Support](https://community.letsencrypt.org/) gebrauchen. Schauen Sie [dieses Blogpost](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html), warum der Beitrag zum Community-Support so wichtig ist.
+Wir können immer Hilfe bei der Beantwortung von Fragen auf [Let's Encrypt Community Support](https://community.letsencrypt.org/) gebrauchen. Schauen Sie [dieses Blogpost](/2015/08/13/lets-encrypt-community-support.html), warum der Beitrag zum Community-Support so wichtig ist.
 
 ## Code
 
