@@ -23,7 +23,7 @@ menu:
 # Расширенная информация для пользователей
 
 * [Staging Environment](/docs/staging-environment/)
-* [Реестр совместимости](/ru/docs/certificate-compatibility/)
+* [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Цепочка доверия (Корневые и промежуточные сертификаты)](/ru/certificates/)
 * [Планируемый функционал](/ru/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
