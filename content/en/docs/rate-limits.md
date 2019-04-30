@@ -40,7 +40,7 @@ Renewals are treated specially: they don't count against your **Certificates per
 Registered Domain** limit, but they are subject to a **Duplicate Certificate**
 limit of 5 per week. Note: renewals used to count against your Certificate per
 Registered Domain limit until March 2019, [but they don't
-anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189)
+anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
