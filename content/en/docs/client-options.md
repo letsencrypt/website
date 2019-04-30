@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-03-01
+lastmod: 2019-03-11
 ---
 
 {{< lastmod >}}
@@ -87,7 +87,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Go
 
 - [Caddy](https://caddyserver.com)
-- [Lego](https://github.com/xenolf/lego)
+- [Lego](https://go-acme.github.io/lego/)
 - [GoACME](https://github.com/google/goacme)
 - [acmetool](https://github.com/hlandau/acme)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
@@ -193,7 +193,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## Go
 
-- [Lego](https://github.com/xenolf/lego)
+- [Lego](https://go-acme.github.io/lego/)
 - [hlandau/acme](https://github.com/hlandau/acme/tree/master/acmeapi)
 
 ## Java
