@@ -259,6 +259,52 @@ description = """
  url = "https://www.abetterinternet.org/careers/"
 
 
+[languages.pt-br]
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/pt-br"
+languageName ="Português do Brasil"
+languageCode= "pt-br"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 50
+description = """
+  Let&rsquo;s&nbsp;Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
+  que se tornou possível graças à organização sem fins lucrativos <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>
+"""
+[[languages.pt-br.menu.main]]
+ name = "Obter Ajuda"
+ weight = 20
+ url = "https://community.letsencrypt.org/c/help/ajuda-em-portugues"
+ [[languages.pt-br.menu.main]]
+ name = "Doar"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.pt-br.menu.main]]
+ name = "Sobre Nós"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.pt-br.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.pt-br.menu.main]]
+ name = "Status do Serviço"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.pt-br.menu.main]]
+ name = "Carreiras"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]

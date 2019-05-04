@@ -26,7 +26,7 @@ Let's Encrypt is a global Certificate Authority (CA). We let people and organiza
 
 Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
 
-To get started using Let's Encrypt, please visit our [Getting Started](https://letsencrypt.org/getting-started/) page.
+To get started using Let's Encrypt, please visit our [Getting Started](/getting-started/) page.
 
 ## What does it cost to use Let's Encrypt? Is it really free?
 
@@ -75,7 +75,7 @@ The private key is always generated and managed on your own servers, not by the 
 
 ## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
 
-Our certificates are valid for 90 days. You can read about why [here](https://letsencrypt.org/2015/11/09/why-90-days.html).
+Our certificates are valid for 90 days. You can read about why [here](/2015/11/09/why-90-days.html).
 
 There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
 

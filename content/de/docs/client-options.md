@@ -3,7 +3,7 @@ title: ACME Client Implementierungen
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-12-06
+lastmod: 2019-03-11
 ---
 
 {{< lastmod >}}
@@ -81,7 +81,7 @@ Diese Clients sind kompatibel mit unseren [Staging Endpunkt für ACME v2](https:
 ## Go
 
 - [Caddy](https://caddyserver.com)
-- [Lego](https://github.com/xenolf/lego)
+- [Lego](https://go-acme.github.io/lego/)
 - [GoACME](https://github.com/google/goacme)
 - [acmetool](https://github.com/hlandau/acme)
 - [Lets-proxy](https://github.com/rekby/lets-proxy) (Reverse proxy to handle https/tls)
@@ -186,7 +186,7 @@ Diese Clients sind kompatibel mit unseren [Staging Endpunkt für ACME v2](https:
 
 ## Go
 
-- [Lego](https://github.com/xenolf/lego)
+- [Lego](https://go-acme.github.io/lego/)
 - [hlandau/acme](https://github.com/hlandau/acme/tree/master/acmeapi)
 
 ## Java
@@ -263,6 +263,6 @@ Wenn Sie wissen, dass ein ACME-Client oder ein Projekt in Let's Encrypt integrie
 Bevor Sie Pull-Request absenden, bitte stellen Sie sicher:
 
 1. Ihr Client respektiert die [Let's Encrypt Markenrichtlinien](https://letsencrypt.org/trademarks/).
-2. Ihr Client ist Browser-basiert und unterstützt automatische Erneuerung.
+2. Ihr Client ist nicht Browser-basiert und unterstützt automatische Erneuerung.
 3. Ihr Commit fügt Ihren Client ans **Ende** der relevanten Sektion (Vergessen Sie nicht die "ACME v2 Kompatible Clients" Sektion , wenn es angemessen ist!).
 4. Ihr Commit aktualisiert den `lastmod` Zeitstempel in `client-options.md` oben.

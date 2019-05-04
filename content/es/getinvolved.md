@@ -10,7 +10,7 @@ menu:
 
 ## Comunidad
 
-Siempre podemos ayudar contestando preguntas en [Apoyo Comunitario Let's Encrypt](https://community.letsencrypt.org/). Ve [esta entrada de blog](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) para ver por qu&eacute; son importantes las contribuciones de apoyo comunitario.
+Siempre podemos ayudar contestando preguntas en [Apoyo Comunitario Let's Encrypt](https://community.letsencrypt.org/). Ve [esta entrada de blog](/2015/08/13/lets-encrypt-community-support.html) para ver por qu&eacute; son importantes las contribuciones de apoyo comunitario.
 
 ## C&oacute;digo
 
@@ -18,7 +18,7 @@ Siempre podemos usar ayuda para el desarrollo de software. Todo nuestro c&oacute
 
 ### Software Cliente
 
-[Certbot](https://github.com/certbot/certbot) es una utilidad basada en Python que trabaja junto a tu servidor web para obtener autom&aacute;ticamente un certificado y convertir un sitio web a HTTPS. Certbot es el cliente que recomendamos para comenzar para la mayor&iacute;a de las personas. Muchas otras [opciones de terciarios](https://letsencrypt.org/docs/client-options/) est&aacute;n disponibles.
+[Certbot](https://github.com/certbot/certbot) es una utilidad basada en Python que trabaja junto a tu servidor web para obtener autom&aacute;ticamente un certificado y convertir un sitio web a HTTPS. Certbot es el cliente que recomendamos para comenzar para la mayor&iacute;a de las personas. Muchas otras [opciones de terciarios](/docs/client-options/) est&aacute;n disponibles.
 
 ### Software AC del lado del servidor
 
