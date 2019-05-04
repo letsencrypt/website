@@ -26,7 +26,7 @@ A Let's Encrypt é uma Autoridade Certificadora (AC) global. Nós possibilitamos
 
 A Let’s Encrypt oferece Validação de Domínio (VD). Nós não oferecemos Validação de Organização (VO) ou Validação Estendida (VE) principalmente porque não podemos automatizar a emissão de certificados destes tipos. 
 
-Para começar a usar a Let's Encrypt, por favor visite nossa página [Começando a Usar](https://letsencrypt.org/pt-br/getting-started/).
+Para começar a usar a Let's Encrypt, por favor visite nossa página [Começando a Usar](/pt-br/getting-started/).
 
 ## Quanto custa usar a Let's Encrypt? Ela é gratuita mesmo?
 
@@ -75,7 +75,7 @@ A chave privada é sempre gerada e gerenciada pelo seu próprio servidor, nunca 
 
 ## Qual é o ciclo de vida dos certificados da Let's Encrypt? Por quanto tempo eles são válidos?
 
-Nossos certificados são válidos por 90 dias. Você pode ler mais sobre o motivo [aqui](https://letsencrypt.org/2015/11/09/why-90-days.html) (Inglês).  
+Nossos certificados são válidos por 90 dias. Você pode ler mais sobre o motivo [aqui](/2015/11/09/why-90-days.html) (Inglês).  
 
 Não é possível mudar isso, não existem exceções. Recomendamos que seja feita a renovação automática dos seus certificados a cada 60 dias.
 
