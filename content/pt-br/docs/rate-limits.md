@@ -1,5 +1,5 @@
 ---
-title: Rate Limits
+title: Limites de Requisições
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
@@ -8,128 +8,128 @@ lastmod: 2019-03-08
 
 {{< lastmod >}}
 
-Let's Encrypt provides rate limits to ensure fair usage by as
-many people as possible. We believe these rate limits are high enough to work
-for most people by default. We've also designed them so renewing a
-certificate almost never hits a rate limit, and so that large
-organizations can gradually increase the number of certificates they can issue
-without requiring intervention from Let's Encrypt.
+A Let's Encrypt implementa limites de requisições para garantir uma utilização justa
+pela maior quantidade de pessoas possível. Acreditamos que estes limites são altos o suficiente para
+funcionar sem problemas para a maioria das pessoas. Também pensamos nos limites de maneira que renovar
+um certificado quase nunca atinge o limite de requisições, e que grandes 
+organizações possam aumentar gradualmente o número de certificados que eles podem solicitar
+sem precisar de intervenção da Let's Encrypt.  
 
-If you're actively developing or testing a Let's Encrypt client, please utilize
-our [staging environment](/docs/staging-environment/) instead of the production API.
-If you're working on integrating Let's Encrypt as a provider or with a large
-website please [review our Integration Guide](/docs/integration-guide).
+Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
+nosso [ambiente de testes](/docs/staging-environment/) (Inglês) ao invés da API de produção.
+Se você está trabalhando para integrar a Let's Encrypt a um provedor ou a um website
+muito grande por favor [leia nosso Guia de Integração](/docs/integration-guide) (Inglês).
 
-The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain**, (50 per week). A
-registered domain is, generally speaking, the part of the domain you purchased
-from your domain name registrar. For instance, in the name `www.example.com`,
-the registered domain is `example.com`. In `new.blog.example.co.uk`,
-the registered domain is `example.co.uk`. We use the
-[Public Suffix List](https://publicsuffix.org) to calculate the registered
-domain.
+O principal limite é o de <a name="certificates-per-registered-domain"></a> **Certificados por Domínio Registrado** (50 por semana). Um
+domínio registrado é, de maneira geral, a parte do nome do domínio que você comprou
+do seu registrador de domínios. Por exemplo, no nome `exemplo.com`,
+o domínio registrado é `exemplo.com`. Em `novo.blog.exemplo.com`,
+o domínio registrado é `exemplo.com`. Usamos a 
+[Lista Pública de Sufixos](https://publicsuffix.org) para calcular o domínio
+registrado.   
 
-If you have a lot of subdomains, you may want to combine them into a single
-certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
-above limit, that means you can issue certificates containing up to 5,000 unique
-subdomains per week. A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate.
+Se você tem muitos subdomínios, talvez queira combinar todos eles em um único
+certificado, dentro do limite de 100 <a name="names-per-certificate"></a>**Nomes por Certificado**. Combinado com o
+limite acima, isso significa que você pode emitir certificados contendo até 5.000 únicos
+subdomínios por semana. Um certificado com múltiplos nomes é comumente chamado de certificado
+SAN, ou as vezes de certificado UCC.
 
-We also have a <a name="duplicate-certificate"></a>**Duplicate Certificate** limit of 5 certificates per week. A
-certificate is considered a duplicate of an earlier certificate if they contain
-the exact same set of hostnames, ignoring capitalization and ordering of
-hostnames.  For instance, if you requested a certificate for the names
-[`www.example.com`, `example.com`], you could request four more certificates for
-[`www.example.com`, `example.com`] during the week. If you changed the set of names
-by adding [`blog.example.com`], you would be able to request additional
-certificates.
+Também temos um limite de 5 <a name="duplicate-certificate"></a>**Certificados Duplicados** por semana. Um
+certificado é considerado duplicado se um certificado anterior contém
+o exato conjunto de nomes de domínio, ignorando capitalizações e ordenação
+destes nomes. Por exemplo, se você solicitou um certificado com os nomes
+[`www.exemplo.com`, `exemplo.com`], você pode solicitar mais quatro certificados para 
+[`www.exemplo.com`, `exemplo.com`] na mesma semana. Se você alterar o conjunto de nomes
+de domínio acrescentando [`blog.example.com`], você poderá solicitar certificados
+adicionais.
+ 
+Para garantir que você sempre poderá renovar seus certificados quando precisar, temos uma
+<a name="renewal-exemption"></a>**Exceção de Renovação** para o limite de Certificados por Domínio Registrado. Mesmo que
+você tenha atingido o limite para a semana, você ainda poderá emitir novos certificados que
+contem como renovações. Uma solicitação de emissão conta como renovação se ela contém o
+mesmo conjunto de nomes de domínio que um certificado anteriormente emitido. Esta é a mesma
+definição usada no limite de Certificados Duplicados explicada acima. Renovações
+*ainda estão* sujeitas ao limite de Certificados Duplicados.
 
-To make sure you can always renew your certificates when you need to, we have a
-<a name="renewal-exemption"></a>**Renewal Exemption** to the Certificates per Registered Domain limit. Even if
-you've hit the limit for the week, you can still issue new certificates that
-count as renewals. An issuance request counts as a renewal if it contains the
-exact same set of hostnames as a previously issued certificate. This is the same
-definition used for the Duplicate Certificate limit described above. Renewals
-*are* still subject to the Duplicate Certificate limit.
+O limite de Certificados Duplicados e a Exceção de Renovação ignoram a chave pública 
+e extensões solicitadas. Uma emissão de certificado pode ser considerada uma renovação
+mesmo que você utilize uma nova chave.
 
-The Duplicate Certificate limit and the Renewal Exemption ignore the public key
-and extensions requested. A certificate issuance can be considered a renewal even if
-you are using a new key.
+Observe que a Exceção de Renovação também significa que você pode graduamente aumentar o número
+de certificados disponíveis para os seus subdomínios. Você pode emitir 50 certificados na
+semana 1, mais 50 na semana 2, e assim por diante, sem interferir com
+as renovações de certificados existentes. 
 
-Note that the Renewal Exemption also means you can gradually increase the number
-of certificates available to your subdomains. You can issue 50 certificates in
-week 1, 50 more certificates in week 2, and so on, while not interfering with
-renewals of existing certificates.
+Revogar certificados não zera os limites de requisições, porque os recursos usados para
+emitir estes certificados já foram consumidos.
 
-Revoking certificates does not reset rate limits, because the resources used to
-issue those certificates have already been consumed.
+Existe um limite de <a name="failed-validations"></a>**Falha de Validação** de 5 falhas
+por conta, por nome de domínio, por hora. Este limite é maior em nosso
+<a href="/docs/staging-environment/">ambiente de testes</a> (Inglês), você
+pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
-There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
-per account, per hostname, per hour. This limit is higher on our
-<a href="/docs/staging-environment/">staging environment</a>, so you
-can use that environment to debug connectivity problems.
+Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
+<name="overall-requests"></a>**Limite
+Geral** de 20 requisições por segundo. O endpoint "/directory" e o diretório "/acme" 
+e seus subdiretórios possuem um Limite Geral de 40 requisições por segundo.
 
-The "new-reg", "new-authz" and "new-cert" endpoints have an <a
-name="overall-requests"></a>**Overall
-Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
-directory & subdirectories have an Overall Requests limit of 40 requests per second.
+Temos dois outros limites que você dificilmente atingirá.
 
-We have two other limits that you're very unlikely to run into.
+Você pode criar um máximo de 10 <a name="accounts-per-ip-address"></a>**Contas por Endereço IP** por 3 horas. Você pode
+criar um máximo de 500 **Contas por Intervalo de IP** nas configurações IPv6 /48 por 
+3 horas. Atingir qualquer um destes dois limites é bem raro, e recomendamos que
+grandes integradores [usem uma conta para muitos usuários](/docs/integration-guide) (Inglês).
 
-You can create a maximum of 10 <a name="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
-create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
-3 hours. Hitting either account rate limit is very rare, and we recommend that
-large integrators prefer a design [using one account for many customers](/docs/integration-guide).
+Você pode ter um máximo de 300 <a name="pending-authorizations"></a>**Autorizações Pendentes** na sua conta. Atingir
+este limite é bem raro e acontece com mais frequência durante o desenvolvimento de clientes ACME. Isso
+normalmente significa que o seu cliente está criando autorizações e as deixando em aberto.
+Por favor use nosso [ambiente de testes](/docs/staging-environment/) (Inglês) se você está
+desenvolvendo um cliente ACME.
 
-You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
-this rate limit is rare, and happens most often when developing ACME clients. It
-usually means that your client is creating authorizations and not fulfilling them.
-Please utilize our [staging environment](/docs/staging-environment/) if you’re
-developing an ACME client.
+Para usuários da API ACME v2 você pode criar um máximo de 300 <a
+name="new-orders"></a>**Novas Ordens** por conta por 3 horas. 
 
-For users of the ACME v2 API you can create a maximum of 300 <a
-name="new-orders"></a>**New Orders** per account per 3 hours.
+# <a name="overrides"></a>Exceções
 
-# <a name="overrides"></a>Overrides
+Se você atingir um limite de requisições, não temos como zerá-lo temporariamente. Você 
+precisará esperar até que o limite expire após uma semana. Nós usamos uma janela móvel de dias,
+então se você emitir 25 certificados na segunda-feira e mais 25 na sexta, 
+você poderá emitir novamente a partir de segunda-feira. Você pode obter uma lista de certificados
+emitidos para os seus domínios registrados [através de uma busca em crt.sh](https://crt.sh), que 
+usa os registros públicos de 
+[Transparência de Certificados](https://www.certificate-transparency.org). 
 
-If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
-need to wait until the rate limit expires after a week. We use a sliding window,
-so if you issued 25 certificates on Monday and 25 more certificates on Friday,
-you'll be able to issue again starting Monday. You can get a list of certificates
-issued for your registered domain by [searching on crt.sh](https://crt.sh), which
-uses the public [Certificate Transparency](https://www.certificate-transparency.org)
-logs.
+Revogar certificados não zera os limites de requisições, porque os recursos envolvidos 
+na emissão de certificados já foram consumidos.
 
-Revoking certificates does not reset rate limits, because the resources involved
-in issuing the certificates have already been used.
+Se você for um provedor de hospedagem grande ou uma organização trabalhando na integração
+com a Let's Encrypt, temos um [formulário de 
+limite de requisições](https://goo.gl/forms/plqRgFVnZbdGhE9n1) (Inglês)
+que pode ser usado para solicitar um limite maior de requisições. Leva algumas semanas para processar 
+as solicitações, então este formulário não é adequado se você precisa zerar o limite de requisições
+mais rápido do que ele zera automaticamente.
 
-If you are a large hosting provider or organization working on a Let's Encrypt
-integration, we have a [rate limiting
-form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
-that can be used to request a higher rate limit. It takes a few weeks to process
-requests, so this form is not suitable if you just need to reset a rate limit
-faster than it resets on its own.
+Observe que a maioria dos provedores de hospedagem não precisa de aumentos de limite, porque
+não há limites para o número de domínios distintos registrados para os quais você pode emitir certificados.
+Enquanto a maioria dos seus usuários não tiver mais do que 2000 subdomínios em
+um domínio registrado, você provavelmente não precisará de um aumento. Veja nosso [Guia de
+Integração](/docs/integration-guide/) (Inglês) para mais dicas.  
 
-Note that most hosting providers don't need rate limit increases, because
-there's no limit on the number of distinct registered domains for which you can issue.
-So long as most of your customers don't have more than 2,000 subdomains on a
-registered domain, you most likely do not need an increase. See our [Integration
-Guide](/docs/integration-guide/) for more advice.
+# <a name="clearing-pending"></a>Limpando Autorizações Pendentes
 
-# <a name="clearing-pending"></a>Clearing Pending Authorizations
+Se você possui um grande número de objetos pendentes de autorização e está recebendo um
+erro de limite de requisições, você pode acionar uma tentativa de validação para estes
+objetos de autorização enviando uma solicitação POST assinada com JWS para um dos desafios, como
+descrito nagi 
+[Especificação ACME](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges) (Inglês).
+Os objetos pendentes de autorização são representados por URLs no formato
+https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, e precisam aparecer nos
+registros do seu cliente. Observe que não importa se a validação é bem sucedida ou não.
+Qualquer resultado fará com que a autorização saia do estado "Pendente". Se você não
+possui os registros contendo as URLs de autorização relevantes, você precisa esperar que
+os limites expirem. Como descrito acima, existe uma janela móvel de dias, então pode 
+levar menos de uma semana dependendo do seu padrão de emissão. 
 
-If you have a large number of pending authorization objects and are getting a
-rate limiting error, you can trigger a validation attempt for those
-authorization objects by submitting a JWS-signed POST to one of its challenges, as
-described in the
-[ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
-The pending authorization objects are represented by URLs of the form
-https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, and should show up in your
-client logs. Note that it doesn't matter whether validation succeeds or fails.
-Either will take the authorization out of 'pending' state. If you do not
-have logs containing the relevant authorization URLs, you need to wait for the
-rate limit to expire. As described above, there is a sliding window, so this may
-take less than a week depending on your pattern of issuance.
-
-Note that having a large number of pending authorizations is generally the
-result of a buggy client. If you're hitting this rate limit frequently you
-should double-check your client code.
+Observe que ter um grande número de autorizações pendentes normalmente é
+resultado de um cliente com bugs. Se você está atingindo este limite com frequência então
+é necessário checar o código fonte do seu cliente.
