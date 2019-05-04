@@ -3,7 +3,7 @@ title: Limites de Requisições
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-03-08
+lastmod: 2019-04-15
 ---
 
 {{< lastmod >}}
@@ -13,7 +13,7 @@ pela maior quantidade de pessoas possível. Acreditamos que estes limites são a
 funcionar sem problemas para a maioria das pessoas. Também pensamos nos limites de maneira que renovar
 um certificado quase nunca atinge o limite de requisições, e que grandes 
 organizações possam aumentar gradualmente o número de certificados que eles podem solicitar
-sem precisar de intervenção da Let's Encrypt.  
+sem precisar de intervenção da Let's Encrypt.
 
 Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
 nosso [ambiente de testes](/docs/staging-environment/) (Inglês) ao invés da API de produção.
@@ -32,34 +32,27 @@ Se você tem muitos subdomínios, talvez queira combinar todos eles em um único
 certificado, dentro do limite de 100 <a name="names-per-certificate"></a>**Nomes por Certificado**. Combinado com o
 limite acima, isso significa que você pode emitir certificados contendo até 5.000 únicos
 subdomínios por semana. Um certificado com múltiplos nomes é comumente chamado de certificado
-SAN, ou as vezes de certificado UCC.
+SAN, ou as vezes de certificado UCC. Nota: Por motivos de performance e
+confiabilidade, é melhor usar menos nomes por certificado sempre que você
+puder.
 
-Também temos um limite de 5 <a name="duplicate-certificate"></a>**Certificados Duplicados** por semana. Um
-certificado é considerado duplicado se um certificado anterior contém
+Renovações são tratadas de forma especial: Elas não usam seu limite de <a name="certificates-per-registered-domain"></a> **Certificados por 
+Domínio Registrado**, mas estão sujeitas ao 
+limite de 5 **Certificados Duplicados** por semana. Nota: Renovações costumavam usar seu limite de Certificados por 
+Domínio Registrado até Março de 2019, [mas isso não 
+acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189) (Inglês).
+
+Um certificado é considerado renovação (ou uma duplicação) de um certificado anterior se ele contém
 o exato conjunto de nomes de domínio, ignorando capitalizações e ordenação
 destes nomes. Por exemplo, se você solicitou um certificado com os nomes
 [`www.exemplo.com`, `exemplo.com`], você pode solicitar mais quatro certificados para 
-[`www.exemplo.com`, `exemplo.com`] na mesma semana. Se você alterar o conjunto de nomes
+[`www.exemplo.com`, `exemplo.com`] na mesma semana. Se você alterar o conjunto de nomes de domínio
 de domínio acrescentando [`blog.example.com`], você poderá solicitar certificados
 adicionais.
  
-Para garantir que você sempre poderá renovar seus certificados quando precisar, temos uma
-<a name="renewal-exemption"></a>**Exceção de Renovação** para o limite de Certificados por Domínio Registrado. Mesmo que
-você tenha atingido o limite para a semana, você ainda poderá emitir novos certificados que
-contem como renovações. Uma solicitação de emissão conta como renovação se ela contém o
-mesmo conjunto de nomes de domínio que um certificado anteriormente emitido. Esta é a mesma
-definição usada no limite de Certificados Duplicados explicada acima. Renovações
-*ainda estão* sujeitas ao limite de Certificados Duplicados.
-
-O limite de Certificados Duplicados e a Exceção de Renovação ignoram a chave pública 
-e extensões solicitadas. Uma emissão de certificado pode ser considerada uma renovação
-mesmo que você utilize uma nova chave.
-
-Observe que a Exceção de Renovação também significa que você pode graduamente aumentar o número
-de certificados disponíveis para os seus subdomínios. Você pode emitir 50 certificados na
-semana 1, mais 50 na semana 2, e assim por diante, sem interferir com
-as renovações de certificados existentes. 
-
+ O processo de renovação ignora a chave pública e extensões solicitadas. Uma emissão de certificado
+ pode ser considerada uma renovação mesmo que você esteja usando uma nova chave. 
+ 
 Revogar certificados não zera os limites de requisições, porque os recursos usados para
 emitir estes certificados já foram consumidos.
 
