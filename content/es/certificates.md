@@ -2,7 +2,6 @@
 title: Cadena de Confianza
 slug: certificates
 top_graphic: 5
-aliases: [/certs]
 ---
 
 # Certificados Ra&iacute;z

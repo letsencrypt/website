@@ -2,7 +2,6 @@
 title: Kette des Vertrauens
 slug: certificates
 top_graphic: 5
-aliases: [/certs]
 ---
 
 # Root Zertifikate

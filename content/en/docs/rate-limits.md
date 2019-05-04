@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-03-08
+lastmod: 2019-04-15
 ---
 
 {{< lastmod >}}
@@ -20,7 +20,7 @@ our [staging environment](/docs/staging-environment/) instead of the production 
 If you're working on integrating Let's Encrypt as a provider or with a large
 website please [review our Integration Guide](/docs/integration-guide).
 
-The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain**, (50 per week). A
+The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
 from your domain name registrar. For instance, in the name `www.example.com`,
 the registered domain is `example.com`. In `new.blog.example.co.uk`,
@@ -32,33 +32,26 @@ If you have a lot of subdomains, you may want to combine them into a single
 certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
 above limit, that means you can issue certificates containing up to 5,000 unique
 subdomains per week. A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate.
+certificate, or sometimes a UCC certificate. Note: For performance and
+reliability reasons, it's better to use fewer names per certificate whenever you
+can.
 
-We also have a <a name="duplicate-certificate"></a>**Duplicate Certificate** limit of 5 certificates per week. A
-certificate is considered a duplicate of an earlier certificate if they contain
+Renewals are treated specially: they don't count against your **Certificates per
+Registered Domain** limit, but they are subject to a **Duplicate Certificate**
+limit of 5 per week. Note: renewals used to count against your Certificate per
+Registered Domain limit until March 2019, [but they don't
+anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
+
+A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
 hostnames.  For instance, if you requested a certificate for the names
 [`www.example.com`, `example.com`], you could request four more certificates for
-[`www.example.com`, `example.com`] during the week. If you changed the set of names
+[`www.example.com`, `example.com`] during the week. If you changed the set of hostnames
 by adding [`blog.example.com`], you would be able to request additional
 certificates.
 
-To make sure you can always renew your certificates when you need to, we have a
-<a name="renewal-exemption"></a>**Renewal Exemption** to the Certificates per Registered Domain limit. Even if
-you've hit the limit for the week, you can still issue new certificates that
-count as renewals. An issuance request counts as a renewal if it contains the
-exact same set of hostnames as a previously issued certificate. This is the same
-definition used for the Duplicate Certificate limit described above. Renewals
-*are* still subject to the Duplicate Certificate limit.
-
-The Duplicate Certificate limit and the Renewal Exemption ignore the public key
-and extensions requested. A certificate issuance can be considered a renewal even if
-you are using a new key.
-
-Note that the Renewal Exemption also means you can gradually increase the number
-of certificates available to your subdomains. You can issue 50 certificates in
-week 1, 50 more certificates in week 2, and so on, while not interfering with
-renewals of existing certificates.
+Renewal handling ignores the public key and extensions requested. A certificate issuance
+can be considered a renewal even if you are using a new key.
 
 Revoking certificates does not reset rate limits, because the resources used to
 issue those certificates have already been consumed.
