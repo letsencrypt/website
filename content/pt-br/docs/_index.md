@@ -16,7 +16,7 @@ menu:
 
 # Informações Para Usuário
 
-* [Implementações de Clientes ACME](/pt-br/docs/client-options/)
+* [Client Options](/docs/client-options/)
 * [Limites de Requisições](/pt-br/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
