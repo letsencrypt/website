@@ -14,7 +14,7 @@ CAA ist eine Art DNS-Datensatz, mit dem Websitebesitzer angeben können, welche 
 
 Wenn Sie sich nicht für CAA interessieren, müssen Sie im Allgemeinen nichts tun (siehe jedoch unten die CAA-Fehler). Wenn Sie mithilfe von CAA einschränken möchten, welche Zertifizierungsstellen Zertifikate für Ihre Domain ausstellen dürfen, müssen Sie einen DNS-Anbieter verwenden, der die Einstellung von CAA-Einträgen unterstützt. Suchen Sie in der [SSLAate CAA-Seite](https://sslmate.com/caa/support) nach einer Liste solcher Anbieter. Wenn Ihr Provider aufgeführt ist, können Sie mit dem [SSLMate CAA Record Generator](https://sslmate.com/caa/) eine Gruppe von CAA-Datensätzen generieren, in denen die CAs aufgelistet sind, die Sie zulassen möchten.
 
-Let's Encrypts identifizierender Domainname für CAA ist `letsencrypt.org`. Dies ist offiziell dokumentiert [in unserer Certification Practice Statement (CPS), Abschnitt 4.2.1](https://letsencrypt.org/repository/).
+Let's Encrypts identifizierender Domainname für CAA ist `letsencrypt.org`. Dies ist offiziell dokumentiert [in unserer Certification Practice Statement (CPS), Abschnitt 4.2.1](/repository/).
 
 ## Wo soll der Datensatz abgelegt werden?
 

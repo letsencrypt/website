@@ -23,7 +23,7 @@ Note that OCSP [has some fundamental
 problems](https://www.imperialviolet.org/2011/03/18/revocation.html), so not
 all browsers will do this check. Still, revoking certificates that correspond to
 compromised private keys is an important practice, and is required by Let's Encrypt's
-[Subscriber Agreement](https://letsencrypt.org/repository/).
+[Subscriber Agreement](/repository/).
 
 To revoke a certificate with Let's Encrypt, you will use the [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md),

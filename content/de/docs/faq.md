@@ -26,7 +26,7 @@ Let's Encrypt ist eine globale Zertifizierungsstelle (CA). Wir lassen Menschen u
 
 Let’s Encrypt bietet Domain-Validierungs (DV) Zertifikate. Wir bieten keine Organisationsvalidierung (OV) oder Erweiterte Validierung (EV), weil wir für diese Typen die Ausstellung nicht automatisieren können.
 
-Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte](https://letsencrypt.org/de/getting-started/) Seite.
+Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte](/de/getting-started/) Seite.
 
 ## Was kostet die Benutzung von Let's Encrypt? Ist wirklich alles frei?
 
@@ -74,7 +74,7 @@ Der private Schlüssel wird immer auf Ihrem eigenen Server generiert und verwalt
 
 ## Was ist die Laufzeit der Let's Encrypt Zertifikate? Für wie lange sind diese gültig?
 
-Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](https://letsencrypt.org/2015/11/09/why-90-days.html) lesen, warum das so ist.Da ist kein Weg das zu ändern, es gibt keine Ausnahme. Wir empfehlen die automatische Erneuerung Ihrer Zertifikate alle 60 Tage.
+Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](/2015/11/09/why-90-days.html) lesen, warum das so ist.Da ist kein Weg das zu ändern, es gibt keine Ausnahme. Wir empfehlen die automatische Erneuerung Ihrer Zertifikate alle 60 Tage.
 
 ## Wird Let’s Encrypt Organisations-Validierung (OV) oder Erweiterte Validierung (EV) Zertifikate anbieten?
 
