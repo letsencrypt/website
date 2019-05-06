@@ -57,7 +57,10 @@ recht neue Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
 nicht vertrauenswürdig. Um eine breitere Sicherheit zu erreichen, ist unser
 Zwischenzertifikat bei einer anderen Zertifizierungsstelle quersigniert, IdenTrust,
 dessen Root Zertifikat in allen Browsern vertrauenswürdig ist. IdenTrust hat
-unser Zwischenzertifikat quersigniert mit [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+unser Zwischenzertifikat quersigniert mit "DST Root CA X3" (jetzt benannt "TrustID X3 Root").
+["TrustID X3 Root" von identrust.com herunterladen](https://www.identrust.com/support/downloads)
+(oder Sie können alternativ eine Kopie hier herunterladen: [.pem](/certs/trustid-x3-root.pem.txt), [.p7b](/certs/trustid-x3-root.p7b)).
+
 
 Das bedeutet, dass zwei Zertifikate verfügbar sind, die unsere Zwischenzertifikate
 repräsentieren. Eines ist von DST Root CA X3 signiert und das andere von ISRG Root X1.
