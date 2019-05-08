@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-01-14",
+	"lastmod": "2019-03-11",
 	"categories": [
 		"Bash",
 		"C",
@@ -185,7 +185,7 @@
 		},
 		{
 			"name": "Lego",
-			"url": "https://github.com/xenolf/lego",
+			"url": "https://go-acme.github.io/lego/",
 			"category": "Go",
 			"library": "Go",
 			"challenges": {
