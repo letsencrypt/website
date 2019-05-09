@@ -16,7 +16,7 @@ organizações possam aumentar gradualmente o número de certificados que eles p
 sem precisar de intervenção da Let's Encrypt.
 
 Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
-nosso [ambiente de testes](/docs/staging-environment/) (Inglês) ao invés da API de produção.
+nosso [ambiente de testes](/pt-br/docs/staging-environment/) ao invés da API de produção.
 Se você está trabalhando para integrar a Let's Encrypt a um provedor ou a um website
 muito grande por favor [leia nosso Guia de Integração](/docs/integration-guide) (Inglês).
 
@@ -58,7 +58,7 @@ emitir estes certificados já foram consumidos.
 
 Existe um limite de <a name="failed-validations"></a>**Falha de Validação** de 5 falhas
 por conta, por nome de domínio, por hora. Este limite é maior em nosso
-<a href="/docs/staging-environment/">ambiente de testes</a> (Inglês), você
+<a href="/pt-br/docs/staging-environment/">ambiente de testes</a>, você
 pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
 Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
@@ -76,7 +76,7 @@ grandes integradores [usem uma conta para muitos usuários](/docs/integration-gu
 Você pode ter um máximo de 300 <a name="pending-authorizations"></a>**Autorizações Pendentes** na sua conta. Atingir
 este limite é bem raro e acontece com mais frequência durante o desenvolvimento de clientes ACME. Isso
 normalmente significa que o seu cliente está criando autorizações e as deixando em aberto.
-Por favor use nosso [ambiente de testes](/docs/staging-environment/) (Inglês) se você está
+Por favor use nosso [ambiente de testes](/pt-br/docs/staging-environment/) se você está
 desenvolvendo um cliente ACME.
 
 Para usuários da API ACME v2 você pode criar um máximo de 300 <a
