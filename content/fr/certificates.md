@@ -48,7 +48,7 @@ autorité de certification, ISRG Root X1 n'est pas encore approuvé dans la plup
 Afin d'être reconnu immédiatement, notre intermédiaire est également signé par
 une autre autorité de certification, IdenTrust, dont la racine est déjà approuvée par 
 les principaux navigateurs. Plus précisément, IdenTrust a signé notre intermédiaire en utilisant leur certificat racine
-[DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+"DST Root CA X3" (maintenant appelé "TrustID X3 Root"). [Télécharger "TrustID X3 Root" sur identrust.com](https://www.identrust.com/support/downloads) (ou, de façon alternative, vous pouvez télécharger une copie ici : [.pem](/certs/trustid-x3-root.pem.txt), [.p7b](/certs/trustid-x3-root.p7b)).
 
 Cela signifie qu'il y a deux certificats disponibles qui représentent tous deux notre
 intermédiaire. L'un est signé par DST Root CA X3, et l'autre est signé par ISRG
