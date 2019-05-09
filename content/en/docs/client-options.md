@@ -2,8 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-date: 2018-01-05
-lastmod: 2019-04-21
+lastmod: 2019-05-09
 ---
 
 {{< lastmod >}}
@@ -65,6 +64,8 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 - [php-acme-client](https://github.com/kouk1/php-acme-client)
 - [uacme](https://github.com/ndilieto/uacme/)
+- [win-acme](https://github.com/PKISharp/win-acme) (.NET)
+- [ACMEd](https://github.com/breard-r/acmed)
 
 ## Bash
 
@@ -162,6 +163,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ACMEproxy](https://github.com/catalyst/acmeproxy)
 - [acme-dns-tiny](https://acme-dns-tiny.adorsaz.ch) (Python 3)
 - [acme-nosudo](https://github.com/diafygi/acme-nosudo)
+- [le-opensrs](https://github.com/mhmd3bdo/le-opensrs) (Python 3)
 
 ## Ruby
 
@@ -174,6 +176,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## Rust
 
 - [acme-client](https://github.com/onur/acme-client)
+- [ACMEd](https://github.com/breard-r/acmed)
 
 ## Windows / IIS
 
@@ -186,7 +189,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [AutoACME](https://www.autoacme.net/) (.NET)
 - [Posh-ACME](https://github.com/rmbolger/Posh-ACME) (PowerShell)
 - [Certes](https://github.com/fszlin/certes) (.NET)
-. [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
+- [ACME-PS](https://github.com/PKISharp/ACMESharpCore-PowerShell) (PowerShell)
 
 # Libraries
 
@@ -202,6 +205,11 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [zero11it/acme-client](https://github.com/zero11it/acme-client)
 - [shred/acme4j](https://github.com/shred/acme4j)
+
+## .NET
+
+- [PKISharp/ACMESharpCore](https://github.com/PKISharp/acmesharpcore) (.NET Standard, ACME v2)
+- [Certes](https://github.com/fszlin/certes) (.NET Standard, ACME v2)
 
 ## Node.js
 
@@ -237,10 +245,9 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 - [acme-client](https://crates.io/crates/acme-client)
 
-## Windows
+## Windows (see also .NET above)
 
-- [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (.NET, PowerShell)
-- [Certes](https://github.com/fszlin/certes) (.NET)
+- [ebekker/ACMESharp](https://github.com/ebekker/ACMESharp) (ACMEv1 PowerShell client, .NET Framework library)
 
 # Projects integrating with Let's Encrypt
 
@@ -265,6 +272,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [ISPConfig](https://www.ispconfig.org/)
 - [LiveConfig Hosting Control Panel](https://www.liveconfig.com/)
 - [WildFly Application Server](https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli)
+- [Certhub](https://certhub.io/)
 
 # Adding your client/project
 
