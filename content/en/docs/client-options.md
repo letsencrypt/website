@@ -74,7 +74,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
-- [uacme](https://github.com/ndilieto/uacme/) (ACMEv2 only, written in plain C, depends only on libcurl and gnutls; supports optional external hook script for challenge provisioning)
+- [uacme](https://github.com/ndilieto/uacme/)
 
 ## C++
 - [acme-lw](https://github.com/jmccl/acme-lw)
