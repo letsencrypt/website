@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-03-11",
+	"lastmod": "2019-04-21",
 	"categories": [
 		"Bash",
 		"C",
@@ -636,6 +636,12 @@
 			"name": "WinCertes Windows ACMEv2 client",
 			"url": "https://github.com/aloopkin/WinCertes",
 			"acme_v2": "true"
+		},
+		{
+			"name": "uacme",
+			"url": "https://github.com/ndilieto/uacme/",
+			"acme_v2": "true",
+			"category": "C"
 		}
 	]
 }
