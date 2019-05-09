@@ -11,13 +11,13 @@ menu:
 
 * [Começando a usar](/pt-br/getting-started/)
 * [Como a Let's Encrypt Funciona](/pt-br/how-it-works/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Perguntas Frequentes (FAQ)](/pt-br/docs/faq/)
 * [Glossary](/docs/glossary/)
 
 # Informações Para Usuário
 
-* [ACME Client Implementations](/docs/client-options/)
-* [Rate Limits](/docs/rate-limits/)
+* [Client Options](/docs/client-options/)
+* [Limites de Requisições](/pt-br/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
 # Informações Para Usuário Avançados
