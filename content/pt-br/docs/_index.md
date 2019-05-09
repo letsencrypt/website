@@ -22,7 +22,7 @@ menu:
 
 # Informações Para Usuário Avançados
 
-* [Staging Environment](/docs/staging-environment/)
+* [Ambiente de Testes](/pt-br/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)
