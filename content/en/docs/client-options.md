@@ -3,7 +3,7 @@ title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-03-11
+lastmod: 2019-04-21
 ---
 
 {{< lastmod >}}
@@ -64,6 +64,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 - [acme-distributed](https://github.com/jannfis/acme-distributed)
 - [ACMECert PHP library](https://github.com/skoerfgen/ACMECert)
 - [php-acme-client](https://github.com/kouk1/php-acme-client)
+- [uacme](https://github.com/ndilieto/uacme/)
 
 ## Bash
 
@@ -73,6 +74,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 
 ## C
 - [acme-client](https://kristaps.bsd.lv/acme-client/)
+- [uacme](https://github.com/ndilieto/uacme/)
 
 ## C++
 - [acme-lw](https://github.com/jmccl/acme-lw)
