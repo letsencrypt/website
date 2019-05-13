@@ -9,7 +9,7 @@
       {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"}
 ],
 "gold":[
-      {"name":"IdenTrust","url":"https://www.identrustssl.com/","image":"identrust-logo.png"},
+      {"name":"IdenTrust","url":"https://www.identrust.com/certificates/tlsssl-website-security","image":"identrust-logo.png"},
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"}
 ],
 "silver":[
@@ -66,7 +66,7 @@
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
       {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
       {"name":"Livesport","url":"https://www.livesport.eu/","image":"livesport-logo.png"},
-      {"name":"BestVPN","url":"https://www.bestvpn.com/","image":"bestvpn-logo.png"},
+      {"name":"ProPrivacy","url":"https://proprivacy.com/","image":"proprivacy-logo.png"},
       {"name":"Nazwa.pl","url":"https://www.nazwa.pl/","image":"nazwa-logo.png"},
       {"name":"Clever Cloud","url":"https://www.clever-cloud.com/","image":"clevercloud-logo.png"},
       {"name":"Render","url":"https://render.com/","image":"render-logo.png"},
@@ -76,6 +76,7 @@
       {"name":"Nabu Casa","url":"https://www.nabucasa.com/","image":"nabu-casa-logo.png"},
       {"name":"Wix","url":"https://www.wix.com/","image":"wix-logo.png"},
       {"name":"Engine Forex","url":"https://engineforex.com/","image":"engine-forex-logo.png"},
-      {"name":"Zeit","url":"https://zeit.co/","image":"zeit-logo.png"}
+      {"name":"Zeit","url":"https://zeit.co/","image":"zeit-logo.png"},
+      {"name":"CodeinWP","url":"https://www.codeinwp.com/","image":"codeinwp-logo.png"}
 ]
 }
