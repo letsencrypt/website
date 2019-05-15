@@ -1,0 +1,84 @@
+---
+title: Certificate Transparency (CT) Logs
+slug: ct-logs
+top_graphic: 4
+lastmod: 2019-05-15
+---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> is a system for logging and monitoring the issuance of TLS certificates. CT greatly enhances everyone's ability to monitor and study certificate issuance, and these capabilities have led to numerous improvements to the CA ecosystem and Web security. As a result, CT is rapidly becoming critical infrastructure.</p>
+
+<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate a CT log ourselves, which all publicly trusted certificate authorities are welcome to submit to.</p>
+
+<h2>Funding</h2>
+
+<p>We'd like to thank the following partners for generously sponsoring the Let's Encrypt CT log. If your organization would like to help us continue this work, please consider <a href="https://letsencrypt.org/become-a-sponsor/">sponsoring or donating</a>.</p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240"></a></center></p>
+
+<h2>Architecture</h2>
+
+<p>Our logs uses Google’s <a href="https://github.com/google/trillian/">Trillian software</a> running on AWS infrastructure. We use <a href="https://kubernetes.io/">Kubernetes</a> for container orchestration and job scheduling and AWS RDS for database management.</p>
+
+<h2>Log Monitoring</h2>
+
+<p>Let's Encrypt has created an open-source CT log monitoring tool called <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. We use this tool to monitor the stability and compliance of our own logs, and we hope others will find it to be useful as well.</p>
+
+<h2>CT Logs</h2>
+
+<p>
+<strong>Name: Oak 2019</strong><br>
+Role: Production<br>
+URI: https://oak.ct.letsencrypt.org/2019/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==</code>
+</p>
+
+<p>
+<strong>Name: Oak 2020</strong><br>
+Role: Production<br>
+URI: https://oak.ct.letsencrypt.org/2020/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==</code>
+</p>
+
+<p>
+<strong>Name: Oak 2021</strong><br>
+Role: Production<br>
+URI: https://oak.ct.letsencrypt.org/2021/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==</code>
+</p>
+
+<p>
+<strong>Name: Oak 2022</strong><br>
+Role: Production<br>
+URI: https://oak.ct.letsencrypt.org/2022/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==</code>
+</p>
+
+<p>
+<strong>Name: Testflume 2019</strong><br>
+Role: Test<br>
+URI: https://testflume.ct.letsencrypt.org/2019/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==</code>
+</p>
+
+<p>
+<strong>Name: Testflume 2020</strong><br>
+Role: Test<br>
+URI: https://testflume.ct.letsencrypt.org/2020/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==</code>
+</p>
+
+<p>
+<strong>Name: Testflume 2021</strong><br>
+Role: Test<br>
+URI: https://testflume.ct.letsencrypt.org/2021/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==</code>
+</p>
+
+<p>
+<strong>Name: Testflume 2022</strong><br>
+Role: Test<br>
+URI: https://testflume.ct.letsencrypt.org/2022/<br>
+Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==</code>
+</p>
