@@ -1,0 +1,48 @@
+<table border="1">
+  <thead>
+    <th></th>
+    <th>English (reference date)</th>
+    {{ range sort $.Site.Languages }}
+      {{ if ne .Lang "en" }}<th>{{ .Lang }}</th>{{ end }}
+    {{ end }}
+    <th>
+  </thead>
+  <tbody>
+    {{ range $.Site.RegularPages }}
+      {{ $page := . }}
+
+      {{ if .Translations }}
+      <tr data-page="{{ .File }}">
+        <td title="{{ .File }}">{{ .Name }}</td>
+        {{ $lastmod := .Lastmod }}
+
+        <td>
+          {{ if  $lastmod }}{{ .Lastmod.Format "January 2, 2006" }}{{ end }}
+        </td>
+        {{ range sort $.Site.Languages }}
+            {{ if ne .Lang "en" }}
+            {{ $lang := . }}
+
+            <td data-lang="{{ $lang }}">
+              {{ range $page.Translations }}
+                {{ if eq $lang .Language }}
+                  {{ if  $lastmod }}
+                    {{ if ne  .Lastmod $lastmod }}
+                      <span style="color:red">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                    {{ else }}
+                      <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                    {{ end }}
+                  {{ else }}
+                    Translated
+                  {{ end }}
+                {{ end }}
+
+              {{ end }}
+            </td>
+            {{ end }}
+        {{ end }}
+      </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>
