@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-04-21",
+	"lastmod": "2019-05-09",
 	"categories": [
 		"Bash",
 		"C",
@@ -24,13 +24,13 @@
 		"Delphi",
 		"Go",
 		"Java",
+		".NET",
 		"Node.js",
 		"Perl",
 		"PHP",
 		"Python",
 		"Ruby",
-		"Rust",
-		"Windows"
+		"Rust"
 	],
 	"projects": [
 		{
@@ -117,6 +117,10 @@
 		{
 			"name": "WildFly Application Server",
 			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+		},
+		{
+			"name": "Certhub",
+			"url": "https://certhub.io/"
 		}
 	],
 	"list": [
@@ -481,14 +485,16 @@
 		{
 			"name": "ACMESharp",
 			"url": "https://github.com/ebekker/ACMESharp",
-			"library": "Windows",
+			"library": ".NET",
 			"category": "Windows / IIS",
-			"comments": "(.NET, PowerShell)"
+			"comments": "(ACMEv1 PowerShell client, .NET Framework library)",
+			"category_comments": "(Windows only)"
 		},
 		{
 			"name": "win-acme",
 			"url": "https://github.com/PKISharp/win-acme",
 			"category": "Windows / IIS",
+			"acme_v2": "true",
 			"comments": "(.NET)"
 		},
 		{
@@ -521,8 +527,8 @@
 			"url": "https://github.com/fszlin/certes",
 			"acme_v2": "true",
 			"category": "Windows / IIS",
-			"library": "Windows",
-			"comments": "(.NET)"
+			"library": ".NET",
+			"library_comments": "(.NET Standard)"
 		},
 		{
 			"name": "ACME-PS",
@@ -530,6 +536,13 @@
 			"acme_v2": "true",
 			"category": "Windows / IIS",
 			"category_comments": "(PowerShell)"
+		},
+		{
+			"name": "PKISharp/ACMESharpCore",
+			"url": "https://github.com/PKISharp/acmesharpcore",
+			"acme_v2": "true",
+			"library": ".NET",
+			"library_comments": "(.NET Standard)"
 		},
 		{
 			"name": "DelphiACME",
@@ -642,6 +655,18 @@
 			"url": "https://github.com/ndilieto/uacme/",
 			"acme_v2": "true",
 			"category": "C"
+		},
+		{
+			"name": "ACMEd",
+			"url": "https://github.com/breard-r/acmed",
+			"acme_v2": "true",
+			"category": "Rust"
+		},
+		{
+			"name": "le-opensrs",
+			"url": "https://github.com/mhmd3bdo/le-opensrs",
+			"category": "Rust",
+			"comments": "(Python 3)"
 		}
 	]
 }
