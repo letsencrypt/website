@@ -130,6 +130,7 @@ These clients are compatible with our [staging endpoint for ACME v2](https://com
 ## OpenShift
 
 - [openshift-acme](https://github.com/tnozicka/openshift-acme)
+- [certman-operator](https://github.com/openshift/certman-operator)
 
 ## Perl
 
