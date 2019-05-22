@@ -667,6 +667,11 @@
 			"url": "https://github.com/mhmd3bdo/le-opensrs",
 			"category": "Rust",
 			"comments": "(Python 3)"
+		},
+		{
+			"name": "certman-operator",
+			"url": "https://github.com/openshift/certman-operator",
+			"category": "OpenShift"
 		}
 	]
 }
