@@ -1,0 +1,70 @@
+
+<h2>{{ .Get "acme_v2" }}</h2>
+
+<ul>
+{{ range $.Site.Data.clients.list }}
+    {{ if .acme_v2 }}
+    <li>
+        <a href="{{ .url }}">{{ .name }}</a> {{ if ne .acme_v2 "true" }} ({{ .acme_v2 | markdownify }}){{ end }}
+    </li>
+    {{ end }}
+{{ end }}
+</ul>
+
+{{ range $.Site.Data.clients.categories }}
+    <h2>{{ . }}</h2>
+    {{ $category := . }}
+    <ul>
+    {{ range $.Site.Data.clients.list }}
+        {{ if eq $category .category }}
+        <li>
+            <a href="{{ .url }}">{{ .name }}</a>
+            {{ if .category_comments }}
+                {{ .category_comments | markdownify }}
+            {{ else if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+
+<h1 id="libraries">{{ .Get "libraries" }}</h1>
+
+{{ $certbot := .Inner }}
+
+{{ range $.Site.Data.clients.libraries }}
+    <h2>{{ . }}</h2>
+    {{ $library := . }}
+    <ul>
+    {{ if eq . "Python"}}
+        <li>{{ $certbot | markdownify }}</li>
+    {{ end }}
+    {{ range $.Site.Data.clients.list }}
+        {{ if eq $library .library }}
+        <li>
+            <a href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
+            {{ if .library_comments }}
+                {{ .library_comments | markdownify }}
+            {{ else if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+
+<h1>{{ .Get "projects" }}</h1>
+
+<ul>
+{{ range $.Site.Data.clients.projects }}
+        <li>
+            <a href="{{ .url }}">{{ .name }}</a>
+            {{ if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+{{ end }}
+</ul>
