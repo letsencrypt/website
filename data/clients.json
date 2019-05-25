@@ -212,6 +212,12 @@
 			"name": "Lets-proxy",
 			"url": "https://github.com/rekby/lets-proxy",
 			"category": "Go",
+			"comments": "(Reverse proxy to handle https/tls, http-01 only)"
+		},
+		{
+			"name": "Lets-proxy2",
+			"url": "https://github.com/rekby/lets-proxy",
+			"category": "Go",
 			"comments": "(Reverse proxy to handle https/tls)"
 		},
 		{
