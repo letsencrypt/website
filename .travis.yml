@@ -1,8 +1,10 @@
-language: ruby
-rvm:
-  - 2.2.2
-sudo: required
-gemfile: Gemfile.ci
-script:
-  - bundle exec jekyll build
-  - rake test
+language: generic
+
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_0.50_Linux-64bit.deb
+  - echo "b7d2f9c2b85f29933335b8df93a07b4d4a8ddb74cfbb7eaedcef93dc0be49c6e hugo_0.50_Linux-64bit.deb" | sha256sum -c - || exit 1;
+  - sudo dpkg -i hugo_0.50_Linux-64bit.deb
+
+install:
+  - hugo env
+  - hugo

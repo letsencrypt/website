@@ -1,0 +1,1 @@
+<p>{{ i18n "last_updated" }} {{ dateFormat "January 2, 2006" .Site.Data.clients.lastmod }}{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}</p>

@@ -1,9 +1,10 @@
-#!/bin/bash
-set -o errexit
+#!/bin/sh
 
-outFile="$(dirname $0)/js/cert-timeline.tsv"
+set -eu
+
+outFile="$(dirname "$0")/js/cert-timeline.tsv"
 
 # Download to a temp file, then move over-top the original, so that the update is
 # atomic from the perspective of the webserver
-curl --silent https://ct.tacticalsecret.com/cert-timeline.tsv >"${outFile}.bak"
+curl --silent https://ct.tacticalsecret.com/cert-timeline.tsv > "${outFile}.bak"
 mv "${outFile}.bak" "${outFile}"
