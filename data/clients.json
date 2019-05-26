@@ -1,5 +1,5 @@
 {
-    "lastmod": "2019-05-26",
+	"lastmod": "2019-05-26",
 	"categories": [
 		"Bash",
 		"C",
@@ -581,12 +581,6 @@
 			"comments": "(PHP)"
 		},
 		{
-            "name": "GetCert",
-            "url": "https://github.com/GeorgeSchiro/GetCert",
-			"category": "Windows / IIS",
-            "comments": "(simple GUI - .Net, C#, WPF, WCF)"
-		},
-		{
 			"name": "ACMECert PHP library",
 			"url": "https://github.com/skoerfgen/ACMECert",
 			"acme_v2": "true",
@@ -678,6 +672,12 @@
 			"name": "certman-operator",
 			"url": "https://github.com/openshift/certman-operator",
 			"category": "OpenShift"
+		},
+		{
+			"name": "GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		}
 	]
 }
