@@ -19,9 +19,9 @@ Wir empfehlen, dass die meisten Leute mit dem [Certbot](https://certbot.eff.org/
 
 Wenn certbot nicht Ihren Anforderungen entspricht oder Sie einfach etwas anderes ausprobieren möchten, können Sie unten aus einer Vielzahl von Clients auswählen, sortiert nach der Sprache oder Umgebung, in der sie ausgeführt werden.
 
-{{< clients acme_v2="ACME v2 kompatible Clients" libraries="Libraries" projects="Projektintegration mit Let’s Encrypt" >}}
+{{< clients acme_v2="ACME v2 kompatible Clients" libraries="Bibliotheken" projects="Projektintegration mit Let’s Encrypt" >}}
 
-the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
+Das Python [acme](https://github.com/certbot/certbot/tree/master/acme) Modul ist Teil des Certbot-Baums, wird aber auch in anderen Clients benutzt und ist als eigenes Paket verfügbar über [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) und andere Distributionen.
 
 {{< /clients >}}
 
