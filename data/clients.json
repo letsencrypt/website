@@ -321,7 +321,7 @@
 			"category": "OpenShift"
 		},
 		{
-			"name": "ZeroSSL Windows",
+			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
 			"category": "Windows / IIS"
