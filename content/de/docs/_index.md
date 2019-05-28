@@ -29,6 +29,9 @@ menu:
 * [Zertifikate sperren](/de/docs/revoking/)
 * [Zertifizierungsstellenberechtigung](/de/docs/caa/)
 * [Zertifikate für localhost](/de/docs/certificates-for-localhost/)
+* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Challenge Types](/docs/challenge-types/)
+* [Certificate Transparency (CT) Logs](/docs/ct-logs/)
 
 # Informationen für Client Entwickler
 

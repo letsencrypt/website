@@ -29,6 +29,9 @@ menu:
 * [Revoking Certificates](/docs/revoking/)
 * [Autorizaci&oacute;n de la Autoridad de Certificaci&oacute;n (CAA)](/es/docs/caa/)
 * [Certificados para localhost](/es/docs/certificates-for-localhost/)
+* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Challenge Types](/docs/challenge-types/)
+* [Certificate Transparency (CT) Logs](/docs/ct-logs/)
 
 # Informaci&oacute;n para Desarrolladores de Clientes
 
