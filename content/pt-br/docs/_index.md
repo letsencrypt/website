@@ -20,7 +20,7 @@ menu:
 * [Limites de Requisições](/pt-br/docs/rate-limits/)
 * [Expiration Emails](/docs/expiration-emails/)
 
-# Informações Para Usuário Avançados
+# Informações Para Usuários Avançados
 
 * [Ambiente de Testes](/pt-br/docs/staging-environment/)
 * [Certificate Compatibility](/docs/certificate-compatibility/)
