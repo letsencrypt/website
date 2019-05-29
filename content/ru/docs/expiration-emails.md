@@ -8,25 +8,15 @@ lastmod: 2019-05-29
 
 {{< lastmod >}}
 
-# Subscribing
+# Подписка на уведомления
 
-If you provide an email address to Let's Encrypt when you create your
-account, we'll automatically send you expiry notices when your certificate
-is coming up for renewal. We send the first notice at 20 days before
-your certificate expires, and more notices at 10 days and 1 day before
-it expires.
+Если вы указали адрес электронной почты при создании аккаунта на Let's Encrypt, мы будем автоматически уведомлять вас о необходимости обновить сертификат. Первое уведомления отправляется за 20 дней до истечения срока действия сертификата, второе уведомление отправляется за 10 дней, третье уведомление - за 1 день.
 
-# When You Get an Expiration Email
+# В каком случае вы получите уведомление об истечении срока действия сертификата
 
-If your certificate is already renewed, we won't send an expiry notice. We
-consider a certificate to be renewed if there is a newer certificate
-with the exact same set of names, regardless of which account created it.
-If you've issued a new certificate that adds or removes a name relative to your
-old certificate, you will get expiration email about your old certificate.
-If you check the certificate currently running on your website, and it
-shows the correct date, no further action is needed.
+Если ваш сертификат уже обновлён, мы не будем беспокоить вас. Мы решаем, что сертификат требует обновления, если имеется более поздний сертификат с точно таким же набором доменных имён, независимо от того, в чьём аккаунте он создан. Если вы выпустили новый сертификат, в котором отсутствуют доменные имена, в сравнении с предыдущим сертификатом - вы получите уведомление об истечении срока действия предыдущего сертификата. Если текущий используемый сертификат для доменного имени показывает верную дату - никаких дополнительных действий не требуется.
 
-# Unsubscribing
+# Отмена подписки на уведомления
 
 The email body has a link to unsubscribe from future notices. If you
 hit that link, you won't get any expiration notices for the next year.
