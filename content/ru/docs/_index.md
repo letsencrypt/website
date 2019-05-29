@@ -18,7 +18,7 @@ menu:
 
 * [Реализации ACME-клиента](/ru/docs/client-options/)
 * [Rate Limits](/docs/rate-limits/)
-* [Expiration Emails](/docs/expiration-emails/)
+* [Уведомления об истечении срока действия](/ru/docs/expiration-emails/)
 
 # Расширенная информация для пользователей
 
