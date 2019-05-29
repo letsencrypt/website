@@ -93,7 +93,7 @@ Sim. A emissão de certificados coringa precisa ser feita via ACMEv2 usando o de
 
 ## Existe um cliente da Let's Encrypt (ACME) para o meu sistema operacional?
 
-Existe uma grande quantidade de [clientes ACME](/docs/client-options/) (Inglês) disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
+Existe uma grande quantidade de [clientes ACME](/pt-br/docs/client-options/) disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
 
 ## Posso usar uma chave privada já existente ou uma Solicitação de Assinatura de Certificado (SAC)?
 
