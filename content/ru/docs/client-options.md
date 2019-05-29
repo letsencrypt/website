@@ -25,11 +25,11 @@ Python-модуль [acme](https://github.com/certbot/certbot/tree/master/acme) 
 
 {{< /clients >}}
 
-# Adding your client/project
+# Чтобы добавить новый ACME-клиент или проект
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
+Если в нашем списке вы не нашли какой-либо ACME-клиент или проект интеграции с Let's Encrypt, пожалуйста, создайте pull request в наш [репозиторий сайта](https://github.com/letsencrypt/website/) на Github, в котором обновляется файл `data/clients.json`.
 
-Before submitting a pull request please make sure:
+Перед отправкой pull request-а, пожалуйста, убедитесь, что:
 
 1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
 1. Your client is not browser-based and supports automatic renewals.
