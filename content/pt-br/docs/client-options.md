@@ -25,7 +25,7 @@ Recomendamos que os usuários comecem pelo cliente [Certbot](https://certbot.eff
 Se o certbot não supre suas necessidades ou você quer testar algo diferente, existem muitos outros clientes
 que você pode usar na lista abaixo, agrupados por linguagem de programação e ambiente em que são executados.
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+{{< clients acme_v2="Clientes Compatíveis com ACME v2" libraries="Bibliotecas" projects="Projetos que se integram à Let's Encrypt" >}}
 
 O módulo Python [acme](https://github.com/certbot/certbot/tree/master/acme) é parte da árvore do Certbot, mas também é usado em vários outros clientes e está disponível como pacote isolado via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) e outras distribuições.
 
