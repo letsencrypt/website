@@ -13,11 +13,11 @@ Let's Encrypt использует ACME-протокол для подтверж
 
 Существуют ACME-клиенты в виде браузерных расширений, но мы не приводим их здесь по причине необходимости ручного обновления сертификатов. Это затрудняет использование ACME-клиента, и, потенциально, может привести к пропуску момента обновления.
 
-# Recommended: Certbot
+# Рекомендованный клиент: Certbot
 
-We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
+Для большинства пользователей мы рекомендуем начать с ACME-клиента [Certbot](https://certbot.eff.org/). С ним очень просто получить сертификат, или установить имеющийся, в зависимости от ваших задач. Он прост в использовании, работает на большинстве операционных систем, и отлично документирован.
 
-If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+Если вас не устраивает [Certbot](https://certbot.eff.org/), или вы хотите опробовать альтернативные клиенты - мы подготовили для вас список ACME-клиентов, сгруппированных по платформе разработки и окружению, в котором они запускаются.
 
 {{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
 
