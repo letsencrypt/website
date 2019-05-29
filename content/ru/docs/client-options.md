@@ -2,7 +2,7 @@
 title: Реализации ACME-клиента
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-09
+lastmod: 2019-05-29
 ---
 
 {{< clientslastmod >}}
@@ -31,7 +31,7 @@ Python-модуль [acme](https://github.com/certbot/certbot/tree/master/acme) 
 
 Перед отправкой pull request-а, пожалуйста, убедитесь, что:
 
-1. Your client respects the [Let's Encrypt trademark policy](https://letsencrypt.org/trademarks/).
-1. Your client is not browser-based and supports automatic renewals.
-1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "acme_v2" if appropriate!).
-1. Your commit updates the `lastmod` date stamp at the top of `clients.json`.
+1. Ваш клиент соблюдает [политику Let's Encrypt в отношении товарных знаков](https://letsencrypt.org/trademarks/).
+1. Ваш клиент работает не в браузере, и поддерживает автоматическое обновление сертификатов.
+1. В вашем коммите вы добавили информацию о новом клиенте в **конец** соответствующего раздела (не забудьте про раздел "ACME v2-совместимые клиенты"!).
+1. В вашем коммите вы обновили дату в поле `lastmod`, в начале файла `data/clients.json`.
