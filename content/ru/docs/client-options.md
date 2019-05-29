@@ -19,9 +19,9 @@ Let's Encrypt использует ACME-протокол для подтверж
 
 Если вас не устраивает [Certbot](https://certbot.eff.org/), или вы хотите опробовать альтернативные клиенты - мы подготовили для вас список ACME-клиентов, сгруппированных по платформе разработки и окружению, в котором они запускаются.
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+{{< clients acme_v2="ACME v2-совместимые клиенты" libraries="Библиотеки" projects="Проекты, интегрирующиеся с Let’s Encrypt" >}}
 
-the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
+Python-модуль [acme](https://github.com/certbot/certbot/tree/master/acme) входит в состав проекта Certbot, но также используется в других ACME-клиентах, и доступен в виде пакета в менеджерах пакетов [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) и многих других.
 
 {{< /clients >}}
 
