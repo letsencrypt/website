@@ -18,24 +18,13 @@ lastmod: 2019-05-29
 
 # Отмена подписки на уведомления
 
-The email body has a link to unsubscribe from future notices. If you
-hit that link, you won't get any expiration notices for the next year.
-The list of "who's unsubscribed" is independent for Staging notices and
-Production notices, so you can feel free to unsubscribe from Staging without
-affecting your Production status.
+В каждом электронном письме с уведомлением об истечении срока действия сертификата есть ссылка на отмену подписки. Если вы перейдёте по этой ссылке, мы не будем присылать уведомления в течение следующего года. Список "отписавшихся" для Staging-окружения независим от списка "отписавшихся" для Production-окружения, поэтому не нужно беспокоиться, что отмена подписки для Staging-окружения затронет состояние подписки для Production-окружения.
 
-Note that your unsubscribe is only valid for one year, so you will have to
-renew it every year.
+Обратите внимание, что отмена подписки действует в течение года, таким образом, вам необходимо будет продлять отмену подписки каждый год.
 
-There's not yet a way for us to efficiently re-subscribe
-you if you unsubscribe. Our email provider, Mandrill,
-[has a manual mechanism that we still need to
-automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+Мы пока не нашли эффективный способ восстанавливать подписку, если вы отменили её. У нашего провайдера электронной почты, Mandrill, [есть ручное восстановление, которое мы пытаемся автоматизировать](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
 
-However, you can change the email address on your account, which effectively
-re-subscribes you. Many common email services treat `yourname+1@example.com` the
-same as `yourname@example.com`. So if you update your email address to
-`yourname+1@example.com`, you can start getting expiry mail again. With Certbot,
-use:
+Тем не менее, вы можете сменить адрес электронной почты для своего аккаунта, что автоматически вернёт подписку на уведомления. Большинство почтовых сервисов обрабатывают адрес `yourname+1@example.com` так же, как и `yourname@example.com`. Таким образом, если вы смените адрес электронной почты на `yourname+1@example.com`, подписка на адрес `yourname@example.com` будет возобновлена. 
+С помощью Certbot адрес меняется командой в консоли:
 
 `certbot update_account --email yourname+1@example.com`
