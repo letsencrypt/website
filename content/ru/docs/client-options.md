@@ -7,16 +7,11 @@ lastmod: 2019-05-09
 
 {{< clientslastmod >}}
 
-Let's Encrypt uses the ACME protocol to verify that you control a given domain
-name and to issue you a certificate. To get a Let's Encrypt certificate, you'll
-need to choose a piece of ACME client software to use.
+Let's Encrypt использует ACME-протокол для подтверждения ваших прав на данное доменное имя, а также для выпуска сертификата для него. Чтобы получить сертификат Let's Encrypt, вам необходимо использовать ACME-клиент.
 
-The ACME clients below are offered by third parties. Let's Encrypt does not control or review
-third party clients and cannot make any guarantees about their safety or reliability.
+Представленные ниже ACME-клиенты разрабатываются сторонними организациями. Let's Encrypt не управляет их разработкой, не проверяет их код и не предоставляет гарантий их безопасности и надёжности.
 
-Some in-browser ACME clients are available, but we do not list them here because
-they encourage a manual renewal workflow that results in a poor user experience
-and increases the risk of missed renewals.
+Существуют ACME-клиенты в виде браузерных расширений, но мы не приводим их здесь по причине необходимости ручного обновления сертификатов. Это затрудняет использование ACME-клиента, и, потенциально, может привести к пропуску момента обновления.
 
 # Recommended: Certbot
 
