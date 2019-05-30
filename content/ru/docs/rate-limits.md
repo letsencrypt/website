@@ -24,22 +24,15 @@ Let's Encrypt использует ограничения на использо�
 
 Отзыв сертификата не сбрасывает счётчик ограничений, т.к. ресурсы на выпуск сертификата уже были использованы.
 
-There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
-per account, per hostname, per hour. This limit is higher on our
-<a href="/docs/staging-environment/">staging environment</a>, so you
-can use that environment to debug connectivity problems.
+Существует ограничение на <a name="failed-validations"></a>**Число неудачных валидаций** - не более 5 неудачных попыток, для одного аккаунта, для одного доменного имени, в течение часа. Это ограничение увеличено в нашем [Staging-окружении](/docs/staging-environment/),таким образом, вы можете использовать это окружение для поиска причин проблем со связью.
 
-The "new-reg", "new-authz" and "new-cert" endpoints have an <a
-name="overall-requests"></a>**Overall
-Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
-directory & subdirectories have an Overall Requests limit of 40 requests per second.
+На вызов методов "new-reg", "new-authz" и "new-cert" существует ограничение <a name="overall-requests"></a>**Число общих запросов** - не более 20 вызовов в секунду. На вызов методов из папок "/directory", "acme" и вложенных папок ограничение **Число общих запросов** составляет 40 вызовов в секунду.
 
-We have two other limits that you're very unlikely to run into.
+Также существуют ещё два ограничения, с которыми вы вряд ли столкнётесь.
 
-You can create a maximum of 10 <a name="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
-create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
-3 hours. Hitting either account rate limit is very rare, and we recommend that
-large integrators prefer a design [using one account for many customers](/docs/integration-guide).
+Возможно создать не более 10 <a name="accounts-per-ip-address"></a>**Аккаунтов на IP-адрес** в течение 3 часов. Возможно создать не более 500 **Аккаунтов на диапазон IP-адресов** внутри подсети IPv6 /48 в течение 3 часов. Вероятность достижения этих ограничений достаточно мала, но мы рекомендуем компаниям-интеграторам [использовать один аккаунт для множества клиентов](/docs/integration-guide). 
+
+
 
 You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
