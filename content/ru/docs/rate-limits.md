@@ -16,33 +16,13 @@ Let's Encrypt использует ограничения на использо�
 
 Если у вас много поддоменов, возможно, вам будет удобнее поместить их в один сертификат, с ограничением не более 100 <a name="names-per-certificate"></a>**Имён на сертификат**. Учитывая предыдущее ограничение, это означает, что вы можете выпустить сертификаты с 5000 уникальными субдоменами в неделю. Сертификаты, содержащие несколько доменных имён, обычно называются SAN- или, иногда, UCC-сертификатами. Важное замечание: с точки зрения производительности и надёжности, лучше использовать как можно меньше доменных имён внутри одного сертификата.
 
-If you have a lot of subdomains, you may want to combine them into a single
-certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
-above limit, that means you can issue certificates containing up to 5,000 unique
-subdomains per week. A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate. Note: For performance and
-reliability reasons, it's better to use fewer names per certificate whenever you
-can.
+Обновления сертификатов обрабатываются по другой логике: их число учитывается не в ограничении на **Число сертификатов на зарегистрированный домен**, а в ограничении на **Дубли сертификатов** - не более 5 в неделю. Важное замечание: обновления учитывались в ограничении на **Число сертификатов на зарегистрированный домен** до марта 2019, [но более не учитываются](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
-Renewals are treated specially: they don't count against your **Certificates per
-Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 5 per week. Note: renewals used to count against your Certificate per
-Registered Domain limit until March 2019, [but they don't
-anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
+Сертификат считается обновлённым (или продублированным), если он содержит в точности тот же набор доменных имён, без учёта регистра написания и порядка указания. Например, если вы выпустили сертификат для доменных имён [`www.example.com`, `example.com`], вы можете выпустить ещё четыре сертификата для этих имён в течение недели. Если вы измените набор доменных имён, добавив к ним [`blog.example.com`], вы можете выпустить дополнительные сертификаты, и т.д.
 
-A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
-the exact same set of hostnames, ignoring capitalization and ordering of
-hostnames.  For instance, if you requested a certificate for the names
-[`www.example.com`, `example.com`], you could request four more certificates for
-[`www.example.com`, `example.com`] during the week. If you changed the set of hostnames
-by adding [`blog.example.com`], you would be able to request additional
-certificates.
+Обработчик запроса на обновление сертификата проигнорирует предоставленный открытый ключ и расширения. Выдача сертификата будет считаться обновлением, даже если вы используете новый ключ.
 
-Renewal handling ignores the public key and extensions requested. A certificate issuance
-can be considered a renewal even if you are using a new key.
-
-Revoking certificates does not reset rate limits, because the resources used to
-issue those certificates have already been consumed.
+Отзыв сертификата не сбрасывает счётчик ограничений, т.к. ресурсы на выпуск сертификата уже были использованы.
 
 There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
 per account, per hostname, per hour. This limit is higher on our
