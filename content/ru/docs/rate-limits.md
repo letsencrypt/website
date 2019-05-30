@@ -12,13 +12,7 @@ Let's Encrypt вводит ограничения на использовани�
 
 Если вы ведёте активную разработку или тестирование ACME-клиента, пожалуста, используйте наше [Staging-окружение](/docs/staging-environment/), вместо Production-окружения. Если вы представляете компанию-хостера с множеством сайтов, и занимаетесь вопросами интеграции с Let's Encrypt, пожалуйста, [ознакомьтесь с нашим Руководством по интеграции](/docs/integration-guide).
 
-The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
-registered domain is, generally speaking, the part of the domain you purchased
-from your domain name registrar. For instance, in the name `www.example.com`,
-the registered domain is `example.com`. In `new.blog.example.co.uk`,
-the registered domain is `example.co.uk`. We use the
-[Public Suffix List](https://publicsuffix.org) to calculate the registered
-domain.
+Основное ограничение - это <a name="certificates-per-registered-domain"></a>**Число сертификатов на зарегистрированный домен** (50 в неделю). Зарегистрированный домен, это, другими словами, часть доменного имени, приобретённого вами у ресистратора доменных имён. Например, для доменного имени `www.example.com`, зарегистрированным доменом будет `example.com`, для имени `new.blog.example.co.uk` - `example.co.uk`, и т.д. Для вычисления зарегистрированного домена мы используем [Public Suffix List](https://publicsuffix.org).
 
 If you have a lot of subdomains, you may want to combine them into a single
 certificate, up to a limit of 100 <a name="names-per-certificate"></a>**Names per Certificate**. Combined with the
