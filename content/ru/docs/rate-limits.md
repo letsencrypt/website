@@ -3,22 +3,14 @@ title: Ограничения
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-04-15
+lastmod: 2019-05-30
 ---
 
 {{< lastmod >}}
 
-Let's Encrypt provides rate limits to ensure fair usage by as
-many people as possible. We believe these rate limits are high enough to work
-for most people by default. We've also designed them so renewing a
-certificate almost never hits a rate limit, and so that large
-organizations can gradually increase the number of certificates they can issue
-without requiring intervention from Let's Encrypt.
+Let's Encrypt вводит ограничения на использование ресурсов, чтобы обеспечить честное использование сервиса как можно большим числом пользователей. Мы считаем, что данные ограничения, в общем случае, не должны помешать работе большинства пользователей. Ограничение на обновление сертификатов спроектировано так, что вряд ли будет превышено, поэтому большие организации могут постепенно увеличивать число выпущенных сертификатов, без необходимости вмешательства со стороны Let's Encrypt.
 
-If you're actively developing or testing a Let's Encrypt client, please utilize
-our [staging environment](/docs/staging-environment/) instead of the production API.
-If you're working on integrating Let's Encrypt as a provider or with a large
-website please [review our Integration Guide](/docs/integration-guide).
+Если вы ведёте активную разработку или тестирование ACME-клиента, пожалуста, используйте наше [Staging-окружение](/docs/staging-environment/), вместо Production-окружения. Если вы представляете компанию-хостера с множеством сайтов, и занимаетесь вопросами интеграции с Let's Encrypt, пожалуйста, [ознакомьтесь с нашим Руководством по интеграции](/docs/integration-guide).
 
 The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
