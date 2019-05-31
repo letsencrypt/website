@@ -42,28 +42,10 @@ Let's Encrypt использует ограничения на использо�
 
 Если ваша организация предоставляет услуги доступа в Интернет, или вы работаете над проектом интеграции с Let's Encrypt, у нас есть [форма запроса на изменение размеров ограничений](https://goo.gl/forms/plqRgFVnZbdGhE9n1). Вы можете использовать её для подачи запроса на пересмотр ограничений, применямых к вашим аккаунтам. Процесс рассмотрения заявки занимает несколько недель, таким образом, вы не можете отменить с её помощью превышенные ограничения быстрее, чем они отменятся автоматически, спустя неделю.
 
+Обратите внимание, что большинству компаний-провайдеров не требуется изменение ограничений, т.к. нет ограничения на число уникальных доменных имён для выпуска сертификатов. До тех пор, пока большая часть ваших клиентов не поддерживает более 2000 поддоменов на зарегистрированный домен, вам, скорее всего, не потребуется пересмотр ограничений. Обратитесь [нашему Руководству по интеграции](/docs/integration-guide) за дополнительной информацией.
 
-Note that most hosting providers don't need rate limit increases, because
-there's no limit on the number of distinct registered domains for which you can issue.
-So long as most of your customers don't have more than 2,000 subdomains on a
-registered domain, you most likely do not need an increase. See our [Integration
-Guide](/docs/integration-guide/) for more advice.
+# <a name="clearing-pending"></a>Отмена запросов на авторизацию
 
-# <a name="clearing-pending"></a>Clearing Pending Authorizations
+Если у вас накопилось большое количество запросов на авторизацию, и вы получили ошибку превышения ограничения по ним, вы можете принудительно запустить проверку этих запросов. Для этого, отправьте POST-запрос с JWS подписью, согласно [спецификации ACME](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges). Запросы на авторизацию, представляющие собой URL вида https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, должны появиться в логах вашего ACME-клиента. Обратите внимание, что результат проверки тут неважен. Любой результат уберёт признак "ожидание" у запроса. Если же у вас нет логов с примерами URL для авторизации, вам придётся ждать, пока ограничение не будет снято. Как было сказано выше, мы используем "скользящее окно", таким образом, ожидание займёт меньше недели, в зависимости от интенсивности выпуска вами сертификатов.
 
-If you have a large number of pending authorization objects and are getting a
-rate limiting error, you can trigger a validation attempt for those
-authorization objects by submitting a JWS-signed POST to one of its challenges, as
-described in the
-[ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
-The pending authorization objects are represented by URLs of the form
-https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, and should show up in your
-client logs. Note that it doesn't matter whether validation succeeds or fails.
-Either will take the authorization out of 'pending' state. If you do not
-have logs containing the relevant authorization URLs, you need to wait for the
-rate limit to expire. As described above, there is a sliding window, so this may
-take less than a week depending on your pattern of issuance.
-
-Note that having a large number of pending authorizations is generally the
-result of a buggy client. If you're hitting this rate limit frequently you
-should double-check your client code.
+Обратите внимание, что большое количество запросов на авторизацию обычно говорит о проблемах в ACME-клиенте. Если вы часто упираетесь в это ограничение, возможно, вам следует перепроверить исходный код ACME-клиенте.
