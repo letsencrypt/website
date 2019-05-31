@@ -3,7 +3,7 @@ title: Уведомления об истечении срока действи�
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2019-05-29
+lastmod: 2019-05-31
 ---
 
 {{< lastmod >}}
