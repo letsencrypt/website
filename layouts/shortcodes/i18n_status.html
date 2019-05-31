@@ -40,10 +40,14 @@
                 {{ if eq $lang .Language }}
                 <a href="{{ .Permalink }}">
                   {{ if  $lastmod }}
-                    {{ if ne  .Lastmod $lastmod }}
-                      <span style="color:red">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                    {{ if not .Lastmod }}
+                      <span style="color:red">Missing Date/Lastmod</span>
                     {{ else }}
-                      <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                      {{ if ne  .Lastmod $lastmod }}
+                        <span style="color:red">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                      {{ else }}
+                        <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                      {{ end }}
                     {{ end }}
                   {{ else }}
                     Translated
