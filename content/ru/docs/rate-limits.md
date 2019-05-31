@@ -3,7 +3,7 @@ title: Ограничения
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-05-30
+lastmod: 2019-05-31
 ---
 
 {{< lastmod >}}
@@ -36,18 +36,12 @@ Let's Encrypt использует ограничения на использо�
 
 При использовании ACME v2 API, вы можете создать не более 300 <a name="new-orders"></a>**Новых заказов** для одного аккаунта в течение 3 часов.
 
-# <a name="overrides"></a>Overrides
+# <a name="overrides"></a>Переопределение ограничений
 
-If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
-need to wait until the rate limit expires after a week. We use a sliding window,
-so if you issued 25 certificates on Monday and 25 more certificates on Friday,
-you'll be able to issue again starting Monday. You can get a list of certificates
-issued for your registered domain by [searching on crt.sh](https://crt.sh), which
-uses the public [Certificate Transparency](https://www.certificate-transparency.org)
-logs.
+Если вы достигли какого-либо ограничения, мы не можем отменить его действие. Вам придётся ждать неделю, пока действие ограничения не будет отменено автоматический. Мы используем "скользящее окно" для определения периода, поэтому, если вы выпустили 25 сертификатов в понедельник, и 25 сертификатов в пятницу - вы сможете вновь выпускать сертификаты, начиная со следующего понедельника. Список выпущенных сертификатов для доменного имени вы можете получить, [с помощью сервиса](https://crt.sh), который использует в своей работе открытые данные из [Certificate Transparency](https://www.certificate-transparency.org)
 
-Revoking certificates does not reset rate limits, because the resources involved
-in issuing the certificates have already been used.
+
+
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
