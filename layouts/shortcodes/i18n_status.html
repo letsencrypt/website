@@ -1,0 +1,66 @@
+<table border="1">
+  <thead>
+    <th></th>
+    <th></th>
+    <th>English (reference date)</th>
+    {{ range sort $.Site.Languages }}
+      {{ if ne .Lang "en" }}<th>{{ .Lang }}</th>{{ end }}
+    {{ end }}
+    <th>
+  </thead>
+  <tbody>
+    {{ range $.Site.RegularPages }}
+      {{ $page := . }}
+
+      {{ if .Translations }}
+      <tr>
+        <td title="{{ .File }}">
+          <a href="{{ .Permalink }}">{{ .Name }}</a>
+        </td>
+        <td>
+          <a href='https://github.com/letsencrypt/website/commits/master/content/en/{{ replace .File "\\" "/" }}'>GitHub history</a>
+        </td>
+        {{ $lastmod := .Lastmod }}
+
+        <td>
+          <a href="{{ .Permalink }}">
+            {{ if  $lastmod }}
+              {{ .Lastmod.Format "January 2, 2006" }}
+            {{ else }}
+              (no lastmod date)
+            {{ end }}
+          </a>
+        </td>
+        {{ range sort $.Site.Languages }}
+            {{ if ne .Lang "en" }}
+            {{ $lang := . }}
+
+            <td data-lang="{{ $lang }}">
+              {{ range $page.Translations }}
+                {{ if eq $lang .Language }}
+                <a href="{{ .Permalink }}">
+                  {{ if  $lastmod }}
+                    {{ if not .Lastmod }}
+                      <span style="color:red">Missing Date/Lastmod</span>
+                    {{ else }}
+                      {{ if ne  .Lastmod $lastmod }}
+                        <span style="color:red">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                      {{ else }}
+                        <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                      {{ end }}
+                    {{ end }}
+                  {{ else }}
+                    Translated
+                  {{ end }}
+                </a>
+                {{ end }}
+
+              {{ end }}
+            </td>
+            {{ end }}
+        {{ end }}
+      </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>
