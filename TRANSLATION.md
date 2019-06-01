@@ -22,3 +22,5 @@
 * Graphs content is not ready to be translated ([#344](https://github.com/letsencrypt/website/issues/344)).
 * The "aliases:" field in the Hugo header should not be copied. This leads to
   inconsistent redirects.
+* `date` and `lastmod` fields in the Hugo header must correspond to the English version (and not when the translation occured)
+* You can check the translation status using https://letsencrypt.org/i18n/
