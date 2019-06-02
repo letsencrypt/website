@@ -63,3 +63,9 @@ other = "Argent"
 
 [languages]
 other = "Langues"
+
+[view_in_english]
+other = "Voir en anglais"
+
+[old_version]
+other = "Note : La version anglaise a été mise à jour depuis sa traduction"

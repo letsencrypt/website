@@ -2,6 +2,42 @@
 {{ partial "hero" . }}
 <div class="page-content">
 	<div class="wrapper">
+
+		{{ $lang := .Page.Language.Lang }}
+		{{ if eq $lang "en" }}
+			{{/*
+				If we are in English, we search avaliable translations and add them hidden.
+				The javascript will show the relevant ones using the two first letters.
+				Ex. if the browser is in "pt-pt", it will show the messages for "pt-pt" and "pt-br"
+			*/}}
+			{{ range .Page.Translations }}
+				{{ if ne $lang .Language.Lang }}
+					{{ if eq .Language.Lang "fr" }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="fr" href="{{ .Permalink }}">
+							Voir en Français
+						</a>
+					</p>
+					{{ end }}
+					{{ if eq .Language.Lang "de" }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="de" href="{{ .Permalink }}">
+							Sehen Sie auf Deutsch
+						</a>
+					</p>
+					{{ end }}
+					{{ if eq .Language.Lang "pt-br" }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="pt-br" href="{{ .Permalink }}">
+							Ver em Português (do brasil)
+						</a>
+					</p>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+		<script src="/js/i18n.js" defer async></script>
+
 		{{ .Content }}
 	</div>
 </div>
