@@ -16,9 +16,9 @@ menu:
 
 # Информация для пользователей
 
-* [ACME Client Implementations](/docs/client-options/)
-* [Rate Limits](/docs/rate-limits/)
-* [Expiration Emails](/docs/expiration-emails/)
+* [Реализации ACME-клиента](/ru/docs/client-options/)
+* [Ограничения](/ru/docs/rate-limits/)
+* [Уведомления об истечении срока действия](/ru/docs/expiration-emails/)
 
 # Расширенная информация для пользователей
 

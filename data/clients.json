@@ -321,11 +321,16 @@
 			"category": "OpenShift"
 		},
 		{
-			"name": "Crypt::LE (ZeroSSL project)",
+			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"library": "Perl",
 			"category": "Windows / IIS"
+		},
+		{
+			"name": "Crypt::LE",
+			"url": "https://metacpan.org/pod/Crypt::LE",
+			"category": "Perl",
+			"library": "Perl"
 		},
 		{
 			"name": "Net::ACME",
