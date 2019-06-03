@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-05-09",
+	"lastmod": "2019-05-26",
 	"categories": [
 		"Bash",
 		"C",
@@ -209,8 +209,8 @@
 			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
 		},
 		{
-			"name": "Lets-proxy",
-			"url": "https://github.com/rekby/lets-proxy",
+			"name": "Lets-proxy2",
+			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
 			"comments": "(Reverse proxy to handle https/tls)"
 		},
@@ -672,6 +672,12 @@
 			"name": "certman-operator",
 			"url": "https://github.com/openshift/certman-operator",
 			"category": "OpenShift"
+		},
+		{
+			"name": "GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		}
 	]
 }
