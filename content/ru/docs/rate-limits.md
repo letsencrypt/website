@@ -3,7 +3,7 @@ title: Ограничения
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-05-31
+lastmod: 2019-04-15
 ---
 
 {{< lastmod >}}

@@ -2,7 +2,7 @@
 title: Реализации ACME-клиента
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-31
+lastmod: 2019-05-24
 ---
 
 {{< clientslastmod >}}
