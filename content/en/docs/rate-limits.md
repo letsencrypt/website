@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-04-15
+lastmod: 2019-06-04
 ---
 
 {{< lastmod >}}
@@ -53,7 +53,7 @@ certificates.
 Renewal handling ignores the public key and extensions requested. A certificate issuance
 can be considered a renewal even if you are using a new key.
 
-Revoking certificates does not reset rate limits, because the resources used to
+**Revoking certificates does not reset rate limits**, because the resources used to
 issue those certificates have already been consumed.
 
 There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
@@ -91,9 +91,6 @@ you'll be able to issue again starting Monday. You can get a list of certificate
 issued for your registered domain by [searching on crt.sh](https://crt.sh), which
 uses the public [Certificate Transparency](https://www.certificate-transparency.org)
 logs.
-
-Revoking certificates does not reset rate limits, because the resources involved
-in issuing the certificates have already been used.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
