@@ -688,7 +688,7 @@
 		},
 		{
 			"name": "acme-lw-d",
-			"url": "https://github.com/cschlote/acme-lw-d.git",
+			"url": "https://github.com/cschlote/acme-lw-d",
 			"category": "D",
 			"library": "D",
 			"comments": "An ACME v2 client/library written in the D computer language",
