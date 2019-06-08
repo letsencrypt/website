@@ -23,7 +23,7 @@ menu:
 # Informações Para Usuários Avançados
 
 * [Ambiente de Testes](/pt-br/docs/staging-environment/)
-* [Certificate Compatibility](/docs/certificate-compatibility/)
+* [Compatibilidade de Certificados](/pt-br/docs/certificate-compatibility/)
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)
 * [Revoking Certificates](/docs/revoking/)
