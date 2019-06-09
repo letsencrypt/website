@@ -5,6 +5,7 @@
 		"C",
 		"C++",
 		"Clojure",
+		"D",
 		"Docker",
 		"Go",
 		"HAProxy",
@@ -21,6 +22,7 @@
 		"Windows / IIS"
 	],
 	"libraries": [
+		"D",
 		"Delphi",
 		"Go",
 		"Java",
@@ -683,6 +685,14 @@
 			"url": "https://github.com/GeorgeSchiro/GetCert",
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
+		},
+		{
+			"name": "acme-lw-d",
+			"url": "https://github.com/cschlote/acme-lw-d",
+			"category": "D",
+			"library": "D",
+			"comments": "An ACME v2 client/library written in the D computer language",
+			"acme_v2": "true"
 		}
 	]
 }
