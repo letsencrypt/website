@@ -24,7 +24,7 @@ menu:
 ## Почтовая рассылка
 
 С информацией о технических почтовых рассылках можно ознакомиться на странице [Внесите свой вклад](/ru/getinvolved/).
-Для подписки на информационную рассылку [нажмите здесь.] (https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad)
+Для подписки на информационную рассылку [нажмите здесь.](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad)
 
 ## Безопасность
 
