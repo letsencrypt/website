@@ -2,6 +2,7 @@
 title: Comment ça marche
 slug: how-it-works
 top_graphic: 3
+lastmod: 2018-06-24
 ---
 
 L'objectif de l'Autorité de Certification (AC ou CA pour Certificate Authority en anglais) Let's&nbsp;Encrypt et du [protocole ACME](https://ietf-wg-acme.github.io/acme/) est de permettre la mise en place d'un serveur HTTPS et l'obtention automatique d'un certificat reconnu comme  de confiance par les navigateurs, sans intervention humaine. Ceci est accompli en exécutant un agent de gestion de certificats sur le serveur Web.

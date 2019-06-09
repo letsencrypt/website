@@ -2,6 +2,7 @@
 title: Chain of Trust
 slug: certificates
 top_graphic: 5
+lastmod: 2019-05-01
 aliases: [/certs]
 ---
 

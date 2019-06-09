@@ -3,6 +3,7 @@ title: About Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
+lastmod: 2019-01-28
 menu:
   main:
     weight: 10

@@ -2,6 +2,7 @@
 title: S'impliquer
 slug: getinvolved
 top_graphic: 5
+lastmod: 2019-01-11
 menu:
   main:
     weight: 60
