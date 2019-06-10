@@ -9,13 +9,14 @@
     <th>
   </thead>
   <tbody>
-    {{ range $.Site.RegularPages }}
+    {{ range sort $.Site.RegularPages "RelPermalink" }}
       {{ $page := . }}
 
       {{ if .Translations }}
       <tr>
         <td title="{{ .File }}">
-          <a href="{{ .Permalink }}">{{ .Name }}</a>
+          <a href="{{ .Permalink }}">{{ .Name }}</a><br>
+          {{ .RelPermalink }}
         </td>
         <td>
           <a href='https://github.com/letsencrypt/website/commits/master/content/en/{{ replace .File "\\" "/" }}'>GitHub history</a>

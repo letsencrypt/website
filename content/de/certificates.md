@@ -2,6 +2,7 @@
 title: Kette des Vertrauens
 slug: certificates
 top_graphic: 5
+lastmod: 2019-05-01
 ---
 
 # Root Zertifikate
