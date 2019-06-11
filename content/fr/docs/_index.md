@@ -29,7 +29,7 @@ menu:
 * [Revoking Certificates](/fr/docs/revoking/)
 * [Certificate Authority Authorization](/fr/docs/caa/)
 * [Certificates for localhost](/fr/docs/certificates-for-localhost/)
-* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Best Practice - Keep Port 80 Open](/fr/docs/allow-port-80/)
 * [Challenge Types](/fr/docs/challenge-types/)
 * [Certificate Transparency (CT) Logs](/fr/docs/ct-logs/)
 
