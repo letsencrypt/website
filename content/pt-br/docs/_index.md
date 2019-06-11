@@ -26,7 +26,7 @@ menu:
 * [Compatibilidade de Certificados](/pt-br/docs/certificate-compatibility/)
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)
-* [Revoking Certificates](/docs/revoking/)
+* [Revogando Certificados](/pt-br/docs/revoking/)
 * [Autorização de Autoridade Certificadora (AAC)](/pt-br/docs/caa/)
 * [Certificates for localhost](/docs/certificates-for-localhost/)
 * [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
