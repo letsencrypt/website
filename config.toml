@@ -167,6 +167,48 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
+[languages.zh-cn]
+title = "Let's Encrypt - 免费SSL/TLS证书"
+languageName = "简体中文"
+contentDir = "content/zh-cn"
+languageCode= "zh-cn"
+weight = 40
+description = """
+  Let's Encrypt 是由非营利性互联网安全研究组（ISRG）提供给您的免费，自动化和开放的证书颁发机构。
+  """
+[[languages.zh-cn.menu.main]]
+  name = "获取帮助"
+  weight = 20
+  url = "https://community.letsencrypt.org/"
+[[languages.zh-cn.menu.main]]
+  name = "捐赠"
+  weight = 30
+  identifier = "donate"
+  url = "/zh-cn/donate/"
+[[languages.zh-cn.menu.main]]
+  name = "关于我们"
+  weight = 40
+  identifier = "about"
+  url = "/zh-cn/about/"
+[[languages.zh-cn.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+[[languages.zh-cn.menu.main]]
+  name = "服务状态"
+  weight = 60
+  identifier = "status"
+  parent = "about"
+  url = "https://letsencrypt.status.io/"
+[[languages.es.menu.main]]
+ name = "工作机会"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"  
+
 [languages.de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
@@ -257,7 +299,6 @@ description = """
  identifier = "careers"
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
-
 
 [languages.pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
