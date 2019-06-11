@@ -12,6 +12,7 @@ menu:
 * [Commencer](/fr/getting-started/)
 * [Comment ça marche](/fr/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Glossaire](/docs/glossary/)
 
 # Subscriber Information
 
@@ -28,6 +29,9 @@ menu:
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
 * [Certificates for localhost](/docs/certificates-for-localhost/)
+* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Challenge Types](/docs/challenge-types/)
+* [Certificate Transparency (CT) Logs](/docs/ct-logs/)
 
 # Client Developer Information
 

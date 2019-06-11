@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      -   id: detect-private-key
+      -   id: mixed-line-ending
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: eslint
+        language: system
+        types: [javascript]
+        exclude: min.js$
+

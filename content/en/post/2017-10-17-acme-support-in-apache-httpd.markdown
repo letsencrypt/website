@@ -15,7 +15,7 @@ ACME support being built in to one of the world’s most popular Web servers, Ap
 
 The Apache httpd ACME module is called mod_md. It’s currently in the [development version of httpd](https://svn.apache.org/viewvc/httpd/httpd/trunk/modules/md/) and a plan is being formulated to backport it to an httpd 2.4.x stable release. The mod_md code is also [available on GitHub](https://github.com/icing/mod_md).
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/gNJUpzNNWMw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gNJUpzNNWMw?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 It’s also worth mentioning that the development version of Apache httpd now includes support for an [SSLPolicy directive](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslpolicy). Properly configuring TLS has traditionally involved making a large number of complex choices. With the SSLPolicy directive, admins simply select a modern, intermediate, or old TLS configuration, and sensible choices will be made for them.
 

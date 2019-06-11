@@ -12,6 +12,7 @@ menu:
 * [Getting Started](/getting-started/)
 * [How Let's Encrypt Works](/how-it-works/)
 * [Frequently Asked Questions (FAQ)](/docs/faq/)
+* [Glossary](/docs/glossary/)
 
 # Subscriber Information
 
@@ -28,6 +29,9 @@ menu:
 * [Revoking Certificates](/docs/revoking/)
 * [Certificate Authority Authorization](/docs/caa/)
 * [Certificates for localhost](/docs/certificates-for-localhost/)
+* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Challenge Types](/docs/challenge-types/)
+* [Certificate Transparency (CT) Logs](/docs/ct-logs/)
 
 # Client Developer Information
 

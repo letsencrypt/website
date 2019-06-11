@@ -4,6 +4,12 @@ slug: upcoming-features
 top_graphic: 1
 ---
 
+## Certificate Transparency Log
+
+* ETA: Q1 2019
+
+We are planning to operate a [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
+
 ## Multi-Perspective Validation
 
 * ETA: Q2 2019
@@ -12,7 +18,7 @@ Currently Let's Encrypt validates from a single network perspective. We are plan
 
 ## ECDSA Root and Intermediates
 
-* ETA: Q2 2019
+* ETA: Q3 2019
 
 Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 

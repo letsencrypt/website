@@ -55,6 +55,7 @@ menu:
 
 # ISRG Legal Transparency Reports
 
+* [April 1, 2019](/documents/ISRG-Legal-Transparency-Report-April-1-2019.pdf)
 * [October 1, 2018](/documents/ISRG-Legal-Transparency-Report-October-1-2018.pdf)
 * [April 1, 2018](/documents/ISRG-Legal-Transparency-Report-April-1-2018.pdf)
 * [October 1, 2017](/documents/ISRG-Legal-Transparency-Report-October-1-2017.pdf)
@@ -71,17 +72,19 @@ menu:
 
 ## Operational Audits
 
-* December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=2388)
-* December 15, 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](https://cert.webtrust.org/ViewSeal?id=2389)
-* December 15, 2016: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=2193)
-* December 15, 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](https://cert.webtrust.org/ViewSeal?id=2194)
-* December 15, 2015: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](https://cert.webtrust.org/ViewSeal?id=1987)
-* December 15, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](https://cert.webtrust.org/ViewSeal?id=1988)
+* November 30, 2018: [Trust Services Principles and Criteria for Certification Authorities Version 2.1](https://www.cpacanada.ca/webtrustseal?sealid=10124)
+* November 30, 2018: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3](https://www.cpacanada.ca/webtrustseal?sealid=10125)
+* December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2017-WebTrust-for-CAs-Report.pdf)
+* December 15, 2017: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.2](/audits/ISRG-2017-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
+* December 15, 2016: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-Report.pdf)
+* December 15, 2016: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2016-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
+* December 15, 2015: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-Report.pdf)
+* December 15, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
 
 ## Readiness Audits
 
-* September 9, 2015: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](/documents/LE_WebTrustforCA.pdf)
-* September 9, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/documents/LE_WebTrustforBR.pdf)
+* September 9, 2015: [Trust Service Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-PITRA-Report.pdf)
+* September 9, 2015: [WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2.0](/audits/ISRG-2015-WebTrust-for-CAs-SSL-Baseline-PITRA-Report.pdf)
 
 # Certificate Problem Reports
 

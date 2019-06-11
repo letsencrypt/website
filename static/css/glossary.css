@@ -1,0 +1,13 @@
+@keyframes fadeIt {
+  0%   { background-color: #FFCE00; }
+  100% { /* back to normal */ }
+}
+
+dfn:target{
+  /* highlight for 3 seconds the selected definition target */
+  animation: fadeIt 3s ease-out;
+}
+dfn {
+  font-weight: bold;
+  padding-right: .25em; /* Prevent italics text from hitting the ":" */
+}
