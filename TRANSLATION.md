@@ -5,7 +5,7 @@
 
 1. In `config.toml`, copy the commented section, replace XX in [[languages.XX.*]] with your language code and translate the strings.
 2. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
-3. In `layouts\_default\single.html` copy the `{{ if eq .Language.Lang "fr" }}...{{ end }}` and replace `"fr"` by `"XX"` and "Voir en Français" by the translation of "See in [your language]"
+3. In `layouts\_default\single.html` copy the `{{ if eq .Language.Lang "fr" }}...{{ end }}` and replace `"fr"` by `"XX"` (where XX is your language code) and "Voir en Français" by the translation of "See in [your language]"
 4. In `content\XX\` (where XX is your language code), you can add your translations of `content\en\`.
 5. `content\XX\about.md` (`about/`), `content\XX\howitworks.md` (`getting-started/`), `content\XX\donate.html` (`donate/`) and `content\XX\sponsors.html` (`sponsors/`) must be translated and included in the first pull-request.
 6. Docs index (`/content/en/docs/_index.md`) should be included, at least to point users to the English documentation.
