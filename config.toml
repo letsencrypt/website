@@ -212,7 +212,7 @@ description = """
 [languages.de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
-languageName ="Deutsche"
+languageName ="Deutsch"
 languageCode= "de-de"
 #if colon ":" must be prefixed
 beforeColon= ""
