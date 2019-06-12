@@ -2,6 +2,7 @@
 title: Commencer
 slug: getting-started
 top_graphic: 3
+date: 2018-04-12
 ---
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)

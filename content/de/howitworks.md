@@ -2,6 +2,7 @@
 title: Erste Schritte
 slug: getting-started
 top_graphic: 3
+date: 2018-04-12
 ---
 
 Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine

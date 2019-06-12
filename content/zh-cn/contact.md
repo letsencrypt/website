@@ -2,6 +2,7 @@
 title: 联系我们
 slug: contact
 top_graphic: 1
+lastmod: 2019-03-26
 menu:
   main:
     weight: 90

@@ -50,7 +50,7 @@
                     Not yet translated
                   {{ else if  $lastmod }}
                     {{ if not .Lastmod }}
-                      <span style="color:orange">Missing Date/Lastmod</span>
+                      <span style="color:red">Missing Date/Lastmod</span>
                     {{ else if ne  .Lastmod $lastmod }}
                         <span style="color:orange">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ else }}

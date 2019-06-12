@@ -21,7 +21,7 @@ da gibt es bessere Optionen.
 # Für lokale Entwicklungsumgebungen
 
 Wenn Sie eine Webapp entwickeln, macht es Sinn einen lokalen Webserver wie
-Apache oder Ngninx laufen zu lassen und ihn über http://localhost:8000/ in
+Apache oder Ngninx laufen zu lassen und ihn über `http://localhost:8000/` in
 Ihrem Browser zu erreichen. Nichtsdestotrotz, Webbrowser haben ein
 unterschiedliches Vorgehen, um HTTP und HTTPS Seiten zu erreichen.
 Der grosse Unterschied: Auf HTTPS Seiten wird jede Anfrage zum Laden von
@@ -51,23 +51,23 @@ Anfragen an XHR oder Websockets zu stellen. Das wird auch Mixed Content
 Blocking genannt. Damit die Webapp mit der nativen App kommunizieren kann,
 wird ein sicherer Webservice benötigt.
 
-Glücklicherweise [betrachten] moderne Browser [mcb-localhost] "http://127.0.0.1:8000/"
+Glücklicherweise [betrachten] moderne Browser [mcb-localhost] `http://127.0.0.1:8000/`
 als eine ["potentiell sicheren"][secure-contexts] URL,
-weil sie zu einer Loopback Adresse referenziert. Verkehr, der zu 127.0.0.1
+weil sie zu einer Loopback Adresse referenziert. Verkehr, der zu `127.0.0.1`
 gesendet wird, verlässt garantiert nicht Ihr System und so wird es
 automatisch als sicher gegen Netzwerkangriffe betrachtet.
 Das bedeutet, wenn Ihre Webapp HTTPS ist und Sie bieten einer nativen
-App einen Webservice auf 127.0.0.1 an, so können diese fröhlich über
+App einen Webservice auf `127.0.0.1` an, so können diese fröhlich über
 XHR kommunizieren.
 Leider bekommt [localhost noch nicht die gleiche Behandlung] [let-localhost].
 WebSockets erhalten diese Behandlung auch nicht für einen der beiden Namen.
 
 Sie könnten versucht sein, um diese Limitierung herumzuarbeiten durch
-die Einrichtung eines globalen DNS Eintrag, der auf 127.0.0.1 auflöst
-(z.B. localhost.example.com), dafür ein Zertifikat zu bekommen, dieses
+die Einrichtung eines globalen DNS Eintrag, der auf `127.0.0.1` auflöst
+(z.B. `localhost.example.com`), dafür ein Zertifikat zu bekommen, dieses
 zusammen mit dem privaten Schlüssel mit Ihrer nativen App zu verschicken
-und der Webapp zu erklären, statt https://127.0.0.1:8000 mit
-https://localhost.example.com:8000/ zu kommunizieren.
+und der Webapp zu erklären, statt `https://127.0.0.1:8000` mit
+`https://localhost.example.com:8000/` zu kommunizieren.
 *Machen Sie das nicht!* Der Benutzer wird nur unnötigen Risiken ausgesetzt
 und das Zertifikat könnte widerrufen werden.
 
@@ -127,8 +127,8 @@ Zertifikat benutzen und Endzertifikate ausstellen. Sie würden dann das Root
 Zertifikat importieren, bevor selbst-signierte Endzertifikate importiert
 werden.
 
-Sie können auch eine Domain mit Punkten wählen, wie "www.localhost", und
-diese in /etc/hosts als Alias für 127.0.0.1 hinzufügen. Dies ändert auf subtile
+Sie können auch eine Domain mit Punkten wählen, wie `www.localhost`, und
+diese in /etc/hosts als Alias für `127.0.0.1` hinzufügen. Dies ändert auf subtile
 Weise, wie Browser mit der Speicherung von Cookies umgehen.
 
 [mcb-localhost]: https://bugs.chromium.org/p/chromium/issues/detail?id=607878

@@ -132,7 +132,7 @@ beforeColon= "&nbsp;"
 # Weight used for sorting.
 weight = 30
 description = """
-  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificaci&oacute;n gratuita, automatizada, y abierta traida a ustedes por la organizaci&oacute;n sin &aacute;nimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificación gratuita, automatizada, y abierta traida a ustedes por la organización sin ánimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 [[languages.es.menu.main]]
  name = "Consigue Ayuda"
