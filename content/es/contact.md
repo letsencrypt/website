@@ -2,6 +2,7 @@
 title: Contactar
 slug: contact
 top_graphic: 1
+lastmod: 2018-09-19
 menu:
   main:
     weight: 90

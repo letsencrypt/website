@@ -2,6 +2,7 @@
 title: Wie es funktioniert
 slug: how-it-works
 top_graphic: 3
+lastmod: 2018-06-24
 ---
 
 Das Ziel von Let's Encrypt und des [ACME-Protokolls](https://ietf-wg-acme.github.io/acme/) besteht darin, die Einrichtung eines HTTPS-Servers zu ermöglichen, der automatisch ein vertrauenswürdiges Browserzertifikat ohne menschliches Eingreifen erhält. Dies wird durch Ausführen eines Zertifikatsverwaltungsagenten auf dem Webserver erreicht.

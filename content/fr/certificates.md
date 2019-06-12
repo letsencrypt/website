@@ -2,6 +2,7 @@
 title: Chaîne de confiance
 slug: certificates
 top_graphic: 5
+lastmod: 2019-05-01
 ---
 
 # Certificats racine
