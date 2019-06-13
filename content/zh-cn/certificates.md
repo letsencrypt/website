@@ -1,6 +1,5 @@
--
---
-title: Chain of Trust
+---
+title: 信任链
 slug: certificates
 top_graphic: 5
 aliases: [/certs]

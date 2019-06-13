@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: 联系我们
 slug: contact
 top_graphic: 1
 menu:
