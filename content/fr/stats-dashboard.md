@@ -1,6 +1,6 @@
 ---
 layout: blank
-title: Let's Encrypt Stats
+title: Statistiques sur Let's Encrypt
 slug: stats-dashboard
 date: 2018-04-12
 ---
@@ -9,11 +9,11 @@ date: 2018-04-12
 
 <div class="dashboard">
   <div class="figure">
-    <h1>Let's Encrypt Growth Timeline</h1>
-    <div id="combinedTimeline" title="Issuance Timeline" class="statsgraph">
+    <h1>Croissance de Let's Encrypt</h1>
+    <div id="combinedTimeline" title="Chronologie de génération" class="statsgraph">
   </div>
 
-  <p><a href="/stats/">https://letsencrypt.org/stats/</a></p>
+  <p><a href="/fr/stats/">https://letsencrypt.org/fr/stats/</a></p>
 </div>
 
 <script src="/js/stats.js"></script>

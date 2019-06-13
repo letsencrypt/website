@@ -2,6 +2,7 @@
 title: Fonctionnalités à venir
 slug: upcoming-features
 top_graphic: 1
+lastmod: 2018-12-31
 ---
 
 ## Certificate Transparency Log

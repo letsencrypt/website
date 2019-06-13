@@ -2,6 +2,7 @@
 layout: blank
 title: Let's Encrypt Stats
 slug: stats-dashboard
+date: 2018-04-12
 ---
 <!-- This is used as a full-screen display by various parties, including
      (minimally) Mozilla. Please check with the committers before removing. -->
@@ -12,7 +13,7 @@ slug: stats-dashboard
     <div id="combinedTimeline" title="Issuance Timeline" class="statsgraph">
   </div>
 
-  <p><a href="/stats/">https://letsencrypt.org/stats/</a></p>
+  <p><a href="/de/stats/">https://letsencrypt.org/de/stats/</a></p>
 </div>
 
 <script src="/js/stats.js"></script>

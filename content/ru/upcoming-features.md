@@ -2,6 +2,7 @@
 title: Планируемый функционал
 slug: upcoming-features
 top_graphic: 1
+lastmod: 2018-12-31
 ---
 
 ## Интеграция с журналом Certificate Transparency

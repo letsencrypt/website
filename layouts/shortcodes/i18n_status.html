@@ -44,6 +44,11 @@
               {{ $scratch.Set "with_page" 0 }}
               {{ range $page.Translations }}
                 {{ if eq $lang .Language }}
+                
+                {{ if .Params.aliases }}
+                  {{ .Translations_must_not_have_aliases }}{{/* force build to fail if a translation have aliases*/}}
+                {{ end }}
+
                 <a href="{{ .Permalink }}">
                   {{ $scratch.Set "with_page" 1 }}
                   {{ if .Page.Params.untranslated }}

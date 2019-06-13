@@ -2,7 +2,7 @@
 title: Começando a Usar
 slug: getting-started
 top_graphic: 3
-aliases : [/howitworks]
+date: 2018-04-12
 ---
 
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
