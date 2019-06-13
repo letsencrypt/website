@@ -2,7 +2,6 @@
 title: 信任链
 slug: certificates
 top_graphic: 5
-aliases: [/证书]
 ---
 
 # 根证书
