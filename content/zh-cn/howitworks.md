@@ -1,37 +1,48 @@
 ---
-title: 入门
+title: 从这里开始了解
 slug: getting-started
 top_graphic: 3
+aliases : [/howitworks]
 ---
 
-为了在您的网站上启用HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。 Let's Encrypt是一个证书颁发机构（CA）。 要从Let's Encrypt获取您网站域名的证书，您必须证明您对域名的实际控制权。您可以在您的网络主机上运行使用[ACME协议](https://ietf-wg-acme.github.io/acme/)的软件来获取Let's Encrypt证书。
+为了在你的网站上启用 HTTPS，你需要从一个证书颁发机构(Certificate Authority, CA)中获取到证书(一种文件)。
+Let's Encrypt 是一个证书颁发机构。为了从Let's Encrypt中获取与你的网站域名绑定的证书，你需要展现你有此域名的控制权。
+你可以在你的网站主机上使用支持[ACME protocol](https://ietf-wg-acme.github.io/acme/)的软件来展现域名的控制权。
 
-为了找出最适合您获取证书的方法，您需要知道您是否拥有服务器的[命令行账户"Shell Account"（注：链接为英文）](https://en.wikipedia.org/wiki/Shell_account) (通常被称为命令行权限 "Shell Access")。 如果您完全使用控制面板管理您的账户，例如[cPanel](https://cpanel.com/)， [Plesk](https://www.plesk.com/), or
-[WordPress](https://wordpress.org/), 你很有可能没有命令行访问权限。您需要联系您的托管服务提供商（服务器/主机提供商）确认。
+为了找出最适合你的方式，你需要了解你是否在网站主机上有[shell access](https://en.wikipedia.org/wiki/Shell_account)(也称为SSH access)能力。
+如果你通过一些控制面板，类似[cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), 或者
+[WordPress](https://wordpress.org/)，那么有很大可能你没有shell access能力。你可以向你的主机服务商咨询并确认。
 
-# 拥有命令行权限（Shell Access）
+# 使用Shell Access
 
-我们建议大多数具有命令行访问权限的人使用[Certbot] ACME客户端。它可以自动执行证书颁发和安装，无需停止您的服务器。对于不需要自动配置的用户, Certbot还提供专家模式。 它易于使用，适用于许多操作系统，并且具有出色的（注：英文）文档。 [访问Certbot官网][Certbot] 以获取针对于操作系统和网站服务器的自定义文档。
+我们推荐大部分使用 Shell Access 方式的人使用[Certbot]ACME 客户端。 [Certbot] 可以自动颁布证书并安装，无需停机。同时针对不需要自动配置的人，提供专家模式。
+[Certbot] 使用简单，可以在多种操作系统上工作，并拥有非常棒的文档。[访问Certbot][Certbot] 来获取针对你的操作系统与网络服务器的个性化设置。
 
-如果[Certbot]不能满足您的需求，或者您想尝试别的客户端，还有[更多ACME客户端](/docs/client-options/)可供选择。 选定ACME客户端软件后，请参阅该客户端的文档以继续。
 
-如果您正在尝试不同的ACME客户端，请使用我们的[临时环境](/docs/staging-environment/)以避免遭到[速率限制](/docs/rate-limits/)。
+如果[Certbot]无法满足你的需要，或者你想要尝试其他方式，这里有[其他更多的选项](/docs/client-options/)。
+当你选择 ACME 客户端软件后，可查看更多文档继续。
 
+
+如果你正在试验不同的 ACME 客户端，使用我们的[staging环境](/docs/staging-environment/) 来避免触发到[访问频率限制](/docs/rate-limits/)。
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
-# 没有命令行权限
+# 无法使用 Shell Access
 
-在没有命令行权限的情况下，最好的办法是使用您托管服务/网站/主机提供商提供的内置软件。 如果您的托管服务/网站/主机提供商提供Let's Encrypt支持， 帮助您申请免费证书，安装并配置自动续期。对于某些提供商，这是您需要在控制面板/联系客服打开的设置。 其他提供商会自动为其所有客户请求和安装证书。
+在这种情况下，使用主机提供商内置的支持，是最好的方式。如果你的主机提供商支持 Let's Encrypt，他们可以代表你申请一个免费的证书，
+并可以自动安装并保持证书更新。对于一些主机提供商，这个配置需要你主动开启。其他提供商为会所有客户自动申请并安装证书。
 
-[查看我们列举的托管服务提供商](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-看看你的是否在上面。如果是的话，请按照他们的文档设置Let's Encrypt证书。
+[检查主机列表](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)，确认你的主机提供商是否在列表中。
+如果在的话，使用它们的文档指引进行 Let's Encrypt 证书设置。
 
-如果您的托管服务提供商不支持Let's Encrypt，您可以与他们联系请求支持。 我们尽力使添加Let's Encrypt支持变得非常容易，提供商（注：非中国国内提供商）通常很乐意听取客户的建议！
+如果你的主机提供商不支持 Let's Encrypt，你可以联系它们并申请支持。我们会尽最大努力去添加支持，主机提供商通常会非常愿意倾听客户的建议！。
 
-如果您的托管服务提供商不想集成Let's Encrypt，但支持上传自定义证书，您可以在自己的计算机上安装Certbot并在[手动模式（Manual Mode）](https://certbot.eff.org/docs/using.html#manual)下运行。在手动模式下，您需要将特定文件上传到您的网站以证明您的控制权。 然后，Certbot将获取您可以上传到提供商的证书。 我们不建议使用此选项，因为它非常耗时，并且您需要在证书过期时重复此步骤（注：每年最少4次）。 对于大多数人来说，最好从提供商处请求Let's Encrypt支持。若您的提供商不打算兼容，建议您更换提供商。
-
+如果你的主机提供商不希望集成 Let's Encrypt, 但是支持上传自定义证书，
+那么你可以在你的电脑上安装 Certbot 并采用[手动模式](https://certbot.eff.org/docs/using.html#manual)。
+在手动模式中，你上传一个特定的文件到你的网站上来证明你拥有网站的控制权。Certbot 会取回一个证书，这个证书你可以上传到你的主机提供商。
+我们不推荐这种方式，是因为这个过程是耗时的，并且你每年都会因为证书过期而重复这个过程几次。
+对大部分人，更好的方式是通过主机提供商获取 Let's Encrypt 的支持，或者在主机提供商没有计划提供支持的情况下考虑选择其他主机提供商。
 
 # 获取帮助
 
-如果您对选择ACME客户端，使用特定客户端或与Let's Encrypt相关的任何其他内容有疑问，请前往我们的[社区论坛](https://community.letsencrypt.org/)获取帮助。
+如果你有选择 ACME 客户端，或者关于如何使用特定的客户端，或者任何关于Let's Encrypt的问题，请联系我们[社区论坛](https://community.letsencrypt.org/)获取帮助。
