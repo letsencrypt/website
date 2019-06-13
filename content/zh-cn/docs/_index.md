@@ -7,31 +7,34 @@ menu:
     weight: 10
 ---
 
-# 概括
+# 概述
 
-* [入门](/zh-cn/getting-started/)
-* [Let's Encrypt工作方法](/how-it-works/)
-* [常问问题 (FAQ)](/docs/faq/)
+* [从这里开始了解](/cn/getting-started/)
+* [Let's Encrypt 怎么工作](/cn/how-it-works/)
+* [常问问题(FAQ)](/cn/docs/faq/)
+* [术语表](/cn/docs/glossary/)
 
-# 用户（订户）信息
+# 用户信息
 
-* [ACME客户端](/docs/client-options/)
-* [速率限制](/docs/rate-limits/)
-* [过期提醒邮件](/docs/expiration-emails/)
+* [ACME 客户端实现](/cn/docs/client-options/)
+* [速率限制](/cn/docs/rate-limits/)
+* [过期邮件提醒](/cn/docs/expiration-emails/)
 
-# 高级用户（订户）信息
+# 高级用户信息
 
-* [测试环境](/docs/staging-environment/)
-* [证书兼容性](/docs/certificate-compatibility/)
-* [证书信任链 (根和中间证书)](/certificates/)
-* [即将推出功能](/upcoming-features/)
-* [吊销证书](/docs/revoking/)
-* [证书颁发机构授权（CAA）](/docs/caa/)
-* [localhost证书](/docs/certificates-for-localhost/)
+* [隔离环境](/cn/docs/staging-environment/)
+* [证书兼容性](/cn/docs/certificate-compatibility/)
+* [信任链(根证书和中间证书)](/cn/certificates/)
+* [即将发布的新特性](/cn/upcoming-features/)
+* [撤销证书](/cn/docs/revoking/)
+* [证书颁发机构授权](/cn/docs/caa/)
+* [本地证书](/cn/docs/certificates-for-localhost/)
+* [最佳实践-保持80端口打开](/cn/docs/allow-port-80/)
+* [挑战类型](/cn/docs/challenge-types/)
 
 # 客户端开发者信息
 
-* [客户端和大型提供商集成指南](/docs/integration-guide/)
-* [ACME协议更新](/docs/acme-protocol-updates/)
-* [当前ACME草案变化](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [查找账户ID](/docs/account-id/)
+* [客户端和大型供应商集成指南](/cn/docs/integration-guide/)
+* [ACME 协议更新](/cn/docs/acme-protocol-updates/)
+* [与当前ACME草案不同之处](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [找到账户ID](/cn/docs/account-id/)
