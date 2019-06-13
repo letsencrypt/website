@@ -1,6 +1,5 @@
--
---
-title: Revoking certificates
+---
+title: 撤销证书
 slug: revoking
 top_graphic: 1
 date: 2017-06-08

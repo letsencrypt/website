@@ -1,6 +1,5 @@
--
---
-title: Rate Limits
+---
+title: 速率限制
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04

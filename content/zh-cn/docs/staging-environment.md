@@ -1,6 +1,5 @@
--
---
-title: Staging Environment
+---
+title: 临时环境
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
