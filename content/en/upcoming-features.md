@@ -2,6 +2,7 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
+lastmod: 2019-06-15
 ---
 
 ## Multi-Perspective Validation
