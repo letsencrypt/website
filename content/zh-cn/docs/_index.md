@@ -10,7 +10,7 @@ menu:
 # 概括
 
 * [入门](/zh-cn/getting-started/)
-* [Let's Encrypt工作方法](/zh-cn/how-it-works/)
+* [Let's Encrypt工作方法](/how-it-works/)
 * [常问问题 (FAQ)](/docs/faq/)
 
 # 用户（订户）信息
