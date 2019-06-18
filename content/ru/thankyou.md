@@ -2,6 +2,7 @@
 title: Спасибо за поддержку ISRG
 slug: thankyou
 top_graphic: 2
+date: 2018-04-12
 ---
 
 Спасибо, что помогаете сделать Интернет более безопасным, и уважающим конфиденциальность всех нас! Подписывайтесь на нас [в Twitter - @letsencrypt](https://twitter.com/letsencrypt), чтобы быть в курсе последних достижений Let's Encrypt.

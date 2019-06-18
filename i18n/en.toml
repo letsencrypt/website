@@ -62,3 +62,12 @@ other = "Silver"
 
 [languages]
 other = "Languages"
+
+[view_in_english]
+other = "View in English"
+
+[old_version]
+other = "Note: The English version has been updated since the translation"
+
+[not_yet_translated]
+other = "This webpage has not yet be translated. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."

@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt es una Autoridad de Certificaci&oacute;n <span>gratuita</span>, <span>automatizada</span>, y <span>abierta</span>."
+other = "Let&rsquo;s Encrypt es una Autoridad de Certificación <span>gratuita</span>, <span>automatizada</span>, y <span>abierta</span>."
 
 [home_hero_getting_started]
 other = "Comienza"
@@ -32,8 +32,8 @@ other = "Donar"
 
 [footer_policies]
 other = """
-Mira nuestra <a href="/privacy/">p&oacute;liza de privacidad</a>.<br>
-Mira nuestra <a href="/trademarks/">p&oacute;liza de marca</a>.
+Mira nuestra <a href="/privacy/">póliza de privacidad</a>.<br>
+Mira nuestra <a href="/trademarks/">póliza de marca</a>.
 """
 
 [linux_foundation_trademark]

@@ -1,8 +1,88 @@
 {{ define "main" }}
-{{ partial "hero" . }}
+
+{{ if .Page.Params.untranslated }}
+	{{ range .Page.Translations }}
+		{{ if eq "en" .Language.Lang }}
+			{{ partial "hero" . }}
+		{{ end }}
+	{{ end }}
+{{ else }}
+	{{ partial "hero" . }}
+{{ end }}
 <div class="page-content">
 	<div class="wrapper">
+		{{ $lang := .Page.Language.Lang }}
+		{{ if eq $lang "en" }}
+			{{/*
+				If we are in English, we search avaliable translations and add them hidden.
+				The javascript will show the relevant ones using the two first letters.
+				Ex. if the browser is in "pt-pt", it will show the messages for "pt-pt" and "pt-br"
+			*/}}
+			{{ range .Page.Translations }}
+				{{ if ne $lang .Language.Lang }}
+					{{ if and (eq .Language.Lang "fr") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="fr" href="{{ .Permalink }}">
+							Voir en Français
+						</a>
+					</p>
+					{{ end }}
+					{{ if and (eq .Language.Lang "de") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="de" href="{{ .Permalink }}">
+							Auf Deutsch ansehen
+						</a>
+					</p>
+					{{ end }}
+					{{ if and (eq .Language.Lang "pt-br") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="pt-br" href="{{ .Permalink }}">
+							Ver em Português (do brasil)
+						</a>
+					</p>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+		<script src="/js/i18n.js" defer async></script>
+
+	{{ if .Page.Params.untranslated }}
+	{{ $target := .Site.LanguagePrefix }}
+		<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+		
+		{{ $lang := .Page.Language.Lang }}
+		{{ $scratch := newScratch }}
+
+		{{ range .Page.Translations }}
+			{{ if eq "en" .Language.Lang }}
+			<div lang="en">
+				{{ $scratch.Set "content"  .Content }}
+				{{ range $.Site.Pages }}
+				{{/* search all English urls */}}
+					{{ range .Page.Translations }}
+						{{ if eq "en" .Language.Lang }}
+							{{ $url_en := printf "href=\"%s\"" .Page.RelPermalink }} 
+							{{ range .Page.Translations }}
+								{{ if eq $lang .Language.Lang }}
+									{{ $url_lang := printf "href=\"%s\"" .Page.RelPermalink }}
+									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+									{{/* now the English url without "/" in the end. */}}
+									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
+									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+								{{ end }}
+							{{ end }}
+						{{ end }}
+					{{ end }}
+				{{ end }}
+				{{ $scratch.Get "content" | safeHTML }}
+			</div>
+			{{ end }}
+		{{ end }}
+
+		
+	{{ else }}
 		{{ .Content }}
+	{{ end }}
 	</div>
 </div>
 {{ end }}

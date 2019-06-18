@@ -2,6 +2,7 @@
 title: 入门
 slug: getting-started
 top_graphic: 3
+date: 2018-04-12
 ---
 
 为了在您的网站上启用HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。 Let's Encrypt是一个证书颁发机构（CA）。 要从Let's Encrypt获取您网站域名的证书，您必须证明您对域名的实际控制权。您可以在您的网络主机上运行使用[ACME协议](https://ietf-wg-acme.github.io/acme/)的软件来获取Let's Encrypt证书。
