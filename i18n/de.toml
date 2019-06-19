@@ -62,3 +62,6 @@ other = "Silver"
 
 [languages]
 other = "Sprachen"
+
+[english_is_canonical]
+other = "Hinweis: Die englische Version ist massgeblich"

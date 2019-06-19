@@ -8,6 +8,8 @@ menu:
     parent: about
 ---
 
+<!-- Note for translators: do NOT translate this file -->
+
 # Let's Encrypt Subscriber Agreement
 
 * Currently in Effect
