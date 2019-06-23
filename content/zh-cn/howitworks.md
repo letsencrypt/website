@@ -16,7 +16,7 @@ date: 2018-04-12
 
 如果[Certbot]不能满足您的需求，或者您想尝试别的客户端，还有[更多ACME客户端](/docs/client-options/)可供选择。 选定ACME客户端软件后，请参阅该客户端的文档以继续。
 
-如果您正在尝试不同的ACME客户端，请使用我们的[临时环境](/docs/staging-environment/)以避免遭到[速率限制](/docs/rate-limits/)。
+如果您正在尝试不同的ACME客户端，请使用我们的[临时环境]({{< ref "docs/staging-environment.md" >}})以避免遭到[速率限制](/docs/rate-limits/)。
 
 
 [Certbot]: https://certbot.eff.org/  "Certbot"

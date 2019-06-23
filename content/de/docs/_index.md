@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # Erweiterte Teilnehmerinformationen
 
-* [Staging Environment](/de/docs/staging-environment/)
+* [Staging Environment]({{< ref "docs/staging-environment.md" >}})
 * [Zertifikatskompatibiltät](/de/docs/certificate-compatibility/)
 * [Kette des Vertrauens (Root und Intermediate Zertificate)](/de/certificates/)
 * [Zukünfige Funktionen](/de/upcoming-features/)

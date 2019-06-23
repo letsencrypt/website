@@ -64,15 +64,22 @@
 				{{/* search all English urls */}}
 					{{ range .Page.Translations }}
 						{{ if eq "en" .Language.Lang }}
-							{{ $url_en := printf "href=\"%s\"" .Page.RelPermalink }} 
+							{{ $en_link_page := .Page }}
+							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }} 
 							{{ range .Page.Translations }}
 								{{ if eq $lang .Language.Lang }}
+									{{/* Note: it also works for urls with anchor (#id) */}}
 									{{ $url_lang := printf "href=\"%s\"" .Page.RelPermalink }}
+
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+
 									{{/* now the English url without "/" in the end. */}}
 									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
-									{{/* Note: it also works for urls with anchor (#id) */}}
+									
+									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }} 
+									{{ $url_lang := printf "href=\"%s\"" .Page.Permalink }}
+									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
 								{{ end }}
 							{{ end }}
 						{{ end }}

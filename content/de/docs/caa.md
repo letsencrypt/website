@@ -28,7 +28,7 @@ Der [CAA-RFC](https://tools.ietf.org/html/rfc6844) gibt ein zusätzliches Verhal
 
 Da Let's Encrypt CAA-Einträge vor jedem von uns ausgestellten Zertifikat prüft, werden manchmal Fehler angezeigt, selbst wenn die Domains keine CAA-Einträge festgelegt haben. Wenn wir einen Fehler erhalten, können Sie nicht feststellen, ob wir die Ausgabe für die betroffene Domain durchführen dürfen, da CAA-Einträge vorhanden sein könnten, die die Ausgabe verbieten, jedoch aufgrund des Fehlers nicht sichtbar sind.
 
-Wenn Sie CAA-bezogene Fehler erhalten, versuchen Sie es einige Male mit unserer [Staging-Umgebung](/de/docs/staging-environment/), um festzustellen, ob sie temporär oder permanent sind. Wenn sie dauerhaft sind, müssen Sie ein Support-Problem bei Ihrem DNS-Provider oder Switch-Provider einreichen. Wenn Sie nicht sicher sind, wer Ihr DNS-Anbieter ist, fragen Sie Ihren Hosting-Anbieter.
+Wenn Sie CAA-bezogene Fehler erhalten, versuchen Sie es einige Male mit unserer [Staging-Umgebung]({{< ref "docs/staging-environment.md" >}}), um festzustellen, ob sie temporär oder permanent sind. Wenn sie dauerhaft sind, müssen Sie ein Support-Problem bei Ihrem DNS-Provider oder Switch-Provider einreichen. Wenn Sie nicht sicher sind, wer Ihr DNS-Anbieter ist, fragen Sie Ihren Hosting-Anbieter.
 
 Einige DNS-Anbieter, die mit CAA nicht vertraut sind, antworten zunächst auf Problemberichte mit "Wir unterstützen keine CAA-Einträge". Ihr DNS-Anbieter muss CAA-Einträge nicht speziell unterstützen, es muss nur mit einer NOERROR-Antwort für unbekannte Abfragetypen (einschliesslich CAA) antworten. Die Rückgabe anderer Opcodes, einschliesslich NOTIMP, für nicht erkannte qtypes ist eine Verletzung von [RFC 1035](https://tools.ietf.org/html/rfc1035) und muss behoben werden.
 

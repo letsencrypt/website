@@ -37,7 +37,7 @@ Wenn Sie eine ACME Client Software gewählt haben, schauen Sie in die Dokumentat
 wie damit fortzufahren ist.
 
 Wenn Sie mit unterschiedlichen ACME Clients experimentieren, benutzen Sie
-[staging environment](/de/docs/staging-environment/), um das Erreichen von
+[staging environment]({{< ref "docs/staging-environment.md" >}}), um das Erreichen von
 [rate limits](/de/docs/rate-limits/) zu verhindern.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"

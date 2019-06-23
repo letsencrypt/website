@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # Расширенная информация для пользователей
 
-* [Staging Environment](/docs/staging-environment/)
+* [Staging Environment]({{< ref "docs/staging-environment.md" >}})
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Цепочка доверия (Корневые и промежуточные сертификаты)](/ru/certificates/)
 * [Планируемый функционал](/ru/upcoming-features/)

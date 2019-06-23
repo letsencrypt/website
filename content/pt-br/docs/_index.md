@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # Informações Para Usuário Avançados
 
-* [Staging Environment](/docs/staging-environment/)
+* [Staging Environment]({{< ref "docs/staging-environment.md" >}})
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
 * [Upcoming Features](/upcoming-features/)

@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # Información Avanzada para Subscriptor
 
-* [Staging Environment](/docs/staging-environment/)
+* [Staging Environment]({{< ref "docs/staging-environment.md" >}})
 * [Certificate Compatibility](/docs/certificate-compatibility/)
 * [Cadena de Confianza (Certificados Raíz e Intermedios)](/es/certificates/)
 * [Próximas Funcionalidades](/es/upcoming-features/)

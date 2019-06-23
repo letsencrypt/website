@@ -16,7 +16,7 @@ grosse Organisationen eine grosse Anzahl an Zertifikaten ausstellen können,
 ohne die Intervention von Let's Encrypt zu benötigen.
 
 Wenn Sie aktiv einen Let's Encrytpt Client entwickeln oder testen, bitte
-benutzen Sie unsere [Staging Umgebung](/de/docs/staging-environment/) anstatt
+benutzen Sie unsere [Staging Umgebung]({{< ref "docs/staging-environment.md" >}}) anstatt
 die Produktions API.
 Wenn Sie an der Integration von Let's Encrypt als Provider arbeiten oder
 einer grossen Webseite bitte [lesen Sie unseren Integration Guide](/de/docs/integration-guide/).
@@ -73,8 +73,8 @@ Resourcen zum Ausstellen dieser Zertifikate schon konsumiert sind.
 
 Es gibt ein <a name="failed-validations"></a>**Fehlgeschlagene Validierung**
 Limit von 5 Fehlern pro Account, pro Hostname, pro Stunde. Dieses Limit
-ist höher auf unserer <a href="/docs/staging-environment/">Staging 
-Umgebung</a>, so können Sie diese Umgebung zur Fehlersuche bei Verbindungsproblemen
+ist höher auf unserer [Staging 
+Umgebung]({{< ref "docs/staging-environment.md" >}}), so können Sie diese Umgebung zur Fehlersuche bei Verbindungsproblemen
 benutzen.
 
 Die "new-reg", "new-authz" und "new-cert" Endpunkte haben ein <a
@@ -97,7 +97,7 @@ Autorisierungen** pro Konto haben. Das Erreichen dieses Rate Limits ist
 selten und entsteht meistens bei der Entwicklung von ACME Clients.
 Es bedeutet üblichrweise, dass Ihr Client Autorisierungsanfragen stellt,
 diese aber nicht richtig verarbeiten kann.
-Bitte benutzen Sie unsere [Staging Umgebung](/de/docs/staging-environment/),
+Bitte benutzen Sie unsere [Staging Umgebung]({{< ref "docs/staging-environment.md" >}}),
 wenn Sie neue ACME Clients entwickeln.
 
 Benutzer der ACME v2 API können ein Maximum von 300 <a

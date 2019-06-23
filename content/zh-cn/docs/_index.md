@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # 高级用户（订户）信息
 
-* [测试环境](/docs/staging-environment/)
+* [测试环境]({{< ref "docs/staging-environment.md" >}})
 * [证书兼容性](/docs/certificate-compatibility/)
 * [证书信任链 (根和中间证书)](/certificates/)
 * [即将推出功能](/upcoming-features/)

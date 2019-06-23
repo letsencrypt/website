@@ -16,7 +16,7 @@ organizations can gradually increase the number of certificates they can issue
 without requiring intervention from Let's Encrypt.
 
 If you're actively developing or testing a Let's Encrypt client, please utilize
-our [staging environment](/docs/staging-environment/) instead of the production API.
+our [staging environment]({{< ref "docs/staging-environment.md" >}}) instead of the production API.
 If you're working on integrating Let's Encrypt as a provider or with a large
 website please [review our Integration Guide](/docs/integration-guide).
 
@@ -58,7 +58,7 @@ issue those certificates have already been consumed.
 
 There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
 per account, per hostname, per hour. This limit is higher on our
-<a href="/docs/staging-environment/">staging environment</a>, so you
+[staging environment]({{< ref "docs/staging-environment.md" >}}), so you
 can use that environment to debug connectivity problems.
 
 The "new-reg", "new-authz" and "new-cert" endpoints have an <a
@@ -76,7 +76,7 @@ large integrators prefer a design [using one account for many customers](/docs/i
 You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
 usually means that your client is creating authorizations and not fulfilling them.
-Please utilize our [staging environment](/docs/staging-environment/) if you’re
+Please utilize our [staging environment]({{< ref "docs/staging-environment.md" >}}) if you’re
 developing an ACME client.
 
 For users of the ACME v2 API you can create a maximum of 300 <a
