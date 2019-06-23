@@ -13,9 +13,9 @@
 ### After the first pull-request
 
 You can start translating the files that are inside `content\XX\`:
+
 * copy the English version of the file you wish to translate into `content\XX\`
-* if the header of the file contains `aliases`, remove it
+* if the header of the file contains `aliases`, **you must remove it**
 * do **not** change `date` or `lastmod` : they must correspond to the the English version (and not when the translation occured: it's used to detect when a translation is out-of-sync)
-* You must update the link in the translated file to point to the localised version (even if it's not translated yet).
 
 You can check the translation status using https://letsencrypt.org/i18n/
