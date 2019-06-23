@@ -6,6 +6,7 @@ menu:
   main:
     weight: 50
     parent: about
+do_not_translate: 1
 ---
 
 <!-- Note for translators: do NOT translate this file -->
