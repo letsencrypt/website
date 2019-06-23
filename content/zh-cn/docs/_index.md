@@ -5,6 +5,7 @@ menu: "main"
 menu:
   main:
     weight: 10
+lastmod: 2019-05-15
 ---
 
 # 概括
@@ -12,6 +13,7 @@ menu:
 * [入门](/zh-cn/getting-started/)
 * [Let's Encrypt工作方法](/how-it-works/)
 * [常问问题 (FAQ)](/docs/faq/)
+* [Glossary](/docs/glossary/)
 
 # 用户（订户）信息
 
@@ -28,6 +30,9 @@ menu:
 * [吊销证书](/docs/revoking/)
 * [证书颁发机构授权（CAA）](/docs/caa/)
 * [localhost证书](/docs/certificates-for-localhost/)
+* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
+* [Challenge Types](/docs/challenge-types/)
+* [Certificate Transparency (CT) Logs](/docs/ct-logs/)
 
 # 客户端开发者信息
 
