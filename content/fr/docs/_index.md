@@ -23,7 +23,7 @@ lastmod: 2019-05-15
 
 # Advanced Subscriber Information
 
-* [Staging Environment](/fr/docs/staging-environment/)
+* [Staging Environment]{{< ref "docs/staging-environment.md" >}}
 * [Certificate Compatibility]{{< ref "docs/cert-compat.md" >}}
 * [Chaîne de confiance (Certificats Racines et Intermédiaires)]{{< ref "certificates.md" >}}
 * [Fonctionnalités à venir]{{< ref "upcoming-features.md" >}}
