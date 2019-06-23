@@ -13,7 +13,7 @@ lastmod: 2019-05-15
 * [Começando a usar](/pt-br/getting-started/)
 * [Como a Let's Encrypt Funciona](/pt-br/how-it-works/)
 * [Perguntas Frequentes (FAQ)](/pt-br/docs/faq/)
-* [Glossary](/docs/glossary/)
+* [Glossary]({{< ref "docs/glossary.md" >}})
 
 # Informações Para Usuário
 

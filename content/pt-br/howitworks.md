@@ -33,7 +33,7 @@ Se o [Certbot] não suprir suas necessidades ou você prefere usar outra coisa, 
 
 Se você está experimentando diferentes clientes ACME, use nosso 
 [ambiente de testes]({{< ref "docs/staging-environment.md" >}}) para evitar atingir
-nossos [limites de uso](/docs/rate-limits/).
+nossos [limites de uso]({{< ref "docs/rate-limits.md" >}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

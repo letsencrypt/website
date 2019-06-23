@@ -12,13 +12,13 @@ lastmod: 2019-05-15
 
 * [入门](/zh-cn/getting-started/)
 * [Let's Encrypt工作方法](/how-it-works/)
-* [常问问题 (FAQ)](/docs/faq/)
-* [Glossary](/docs/glossary/)
+* [常问问题 ({{< ref "docs/faq.md" >}})
+* [Glossary]({{< ref "docs/glossary.md" >}})
 
 # 用户（订户）信息
 
 * [ACME客户端](/docs/client-options/)
-* [速率限制](/docs/rate-limits/)
+* [速率限制]({{< ref "docs/rate-limits.md" >}})
 * [过期提醒邮件](/docs/expiration-emails/)
 
 # 高级用户（订户）信息

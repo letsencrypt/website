@@ -34,7 +34,7 @@ software, see the documentation for that client to proceed.
 
 If you're experimenting with different ACME clients, use our
 [staging environment]({{< ref "docs/staging-environment.md" >}}) to avoid hitting
-[rate limits](/docs/rate-limits/).
+[rate limits]({{< ref "docs/rate-limits.md" >}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

@@ -13,12 +13,12 @@ lastmod: 2019-05-15
 * [Comenzando](/es/getting-started/)
 * [Cómo Funciona Let's Encrypt](/es/how-it-works/)
 * [Preguntas Frecuentes (FAQ)](/es/docs/faq/)
-* [Glosario](/docs/glossary/)
+* [Glosario]({{< ref "docs/glossary.md" >}})
 
 # Información para Subscriptor
 
 * [ACME Client Implementations](/docs/client-options/)
-* [Rate Limits](/docs/rate-limits/)
+* [Rate Limits]({{< ref "docs/rate-limits.md" >}})
 * [Correos Electrónicos de Vencimiento](/es/docs/expiration-emails/)
 
 # Información Avanzada para Subscriptor

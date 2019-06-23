@@ -13,7 +13,7 @@ lastmod: 2019-05-15
 * [Приступая к работе](/ru/getting-started/)
 * [Как работает Let's Encrypt](/ru/how-it-works/)
 * [Часто задаваемые вопросы](/ru/docs/faq/)
-* [Glossary](/docs/glossary/)
+* [Glossary]({{< ref "docs/glossary.md" >}})
 
 # Информация для пользователей
 

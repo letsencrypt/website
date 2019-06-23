@@ -15,7 +15,7 @@ Recomendamos que la mayoría de las personas con *acceso shell* usen el cliente 
 
 Si [Certbot] no cumple con tus necesidades, o quisieras tratar otra cosa, [hay muchos otros clientes ACME para escoger](/docs/client-options/). Una vez hayas escogido un cliente ACME, ve la documentación para ese cliente para proceder.
 
-Si estás experimentando con diferentes clientes ACME, usa nuestro [ambiente de *staging*]({{< ref "docs/staging-environment.md" >}}) para evitar que llegues a nuestros [limites de tarifa](/docs/rate-limits/).
+Si estás experimentando con diferentes clientes ACME, usa nuestro [ambiente de *staging*]({{< ref "docs/staging-environment.md" >}}) para evitar que llegues a nuestros [limites de tarifa]({{< ref "docs/rate-limits.md" >}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
