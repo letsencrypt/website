@@ -18,7 +18,7 @@ sem precisar de intervenção da Let's Encrypt.
 Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
 nosso [ambiente de testes]({{< ref "docs/staging-environment.md" >}}) ao invés da API de produção.
 Se você está trabalhando para integrar a Let's Encrypt a um provedor ou a um website
-muito grande por favor [leia nosso Guia de Integração](/docs/integration-guide).
+muito grande por favor [leia nosso Guia de Integração]{{< ref "docs/integration-guide.md" >}}.
 
 O principal limite é o de <a name="certificates-per-registered-domain"></a> **Certificados por Domínio Registrado** (50 por semana). Um
 domínio registrado é, de maneira geral, a parte do nome do domínio que você comprou
@@ -70,7 +70,7 @@ Temos dois outros limites que você dificilmente atingirá.
 Você pode criar um máximo de 10 <a name="accounts-per-ip-address"></a>**Contas por Endereço IP** por 3 horas. Você pode
 criar um máximo de 500 **Contas por Intervalo de IP** nas configurações IPv6 /48 por 
 3 horas. Atingir qualquer um destes dois limites é bem raro, e recomendamos que
-grandes integradores [usem uma conta para muitos usuários](/docs/integration-guide).
+grandes integradores [usem uma conta para muitos usuários]{{< ref "docs/integration-guide.md" >}}.
 
 Você pode ter um máximo de 300 <a name="pending-authorizations"></a>**Autorizações Pendentes** na sua conta. Atingir
 este limite é bem raro e acontece com mais frequência durante o desenvolvimento de clientes ACME. Isso
@@ -105,7 +105,7 @@ Observe que a maioria dos provedores de hospedagem não precisa de aumentos de l
 não há limites para o número de domínios distintos registrados para os quais você pode emitir certificados.
 Enquanto a maioria dos seus usuários não tiver mais do que 2000 subdomínios em
 um domínio registrado, você provavelmente não precisará de um aumento. Veja nosso [Guia de
-Integração](/docs/integration-guide/) para mais dicas.  
+Integração]{{< ref "docs/integration-guide.md" >}} para mais dicas.  
 
 # <a name="clearing-pending"></a>Limpando Autorizações Pendentes
 

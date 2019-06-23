@@ -19,7 +19,7 @@ Wenn Sie aktiv einen Let's Encrytpt Client entwickeln oder testen, bitte
 benutzen Sie unsere [Staging Umgebung]({{< ref "docs/staging-environment.md" >}}) anstatt
 die Produktions API.
 Wenn Sie an der Integration von Let's Encrypt als Provider arbeiten oder
-einer grossen Webseite bitte [lesen Sie unseren Integration Guide](/de/docs/integration-guide/).
+einer grossen Webseite bitte [lesen Sie unseren Integration Guide]{{< ref "docs/integration-guide.md" >}}.
 
 Das Hauptlimit ist <a name="certificates-per-registered-domain"></a>**Zertifikate
  pro registrierte Domain**, (50 pro Woche).
@@ -89,7 +89,7 @@ Sie können maximal 10 <a name="accounts-per-ip-address"></a>**Konten pro IP-Adr
 pro 3 Stunden erstellen. Sie können maximal 500 **Konten pro IP-Bereich**
 mit einem IPv6 /48 pro 3 Stunden erstellen.
 Es ist sehr selten, dass man in dieses Kontenlimit läuft und wir empfehlen,
-dass grosse Integratoren ein Design von [ein Konto für viele Kunden](/de/docs/integration-guide/)
+dass grosse Integratoren ein Design von [ein Konto für viele Kunden]{{< ref "docs/integration-guide.md" >}}
 verwenden.
 
 Sie können ein Maximum von 300 <a name="pending-authorizations"></a>**Ausstehende
@@ -130,7 +130,7 @@ Rate Limits brauchen, weil es kein Limit an registrierten Domains und
 eine Zertifikatsausstellung für diese gibt. Solange Ihre Kunden nicht mehr
 als 2.000 Subdomains in einer registrierten Domain haben, brauchen Sie keine
 Vergrösserung der Limits. Schauen Sie unseren [Integration
-Guide](/de/docs/integration-guide/) für mehr Anleitungen.
+Guide]{{< ref "docs/integration-guide.md" >}} für mehr Anleitungen.
 
 # <a name="clearing-pending"></a>Ausstehende Autorisierungen bereinigen
 

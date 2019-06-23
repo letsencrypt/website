@@ -18,7 +18,7 @@ without requiring intervention from Let's Encrypt.
 If you're actively developing or testing a Let's Encrypt client, please utilize
 our [staging environment]({{< ref "docs/staging-environment.md" >}}) instead of the production API.
 If you're working on integrating Let's Encrypt as a provider or with a large
-website please [review our Integration Guide](/docs/integration-guide).
+website please [review our Integration Guide]{{< ref "docs/integration-guide.md" >}}.
 
 The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
@@ -71,7 +71,7 @@ We have two other limits that you're very unlikely to run into.
 You can create a maximum of 10 <a name="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
 create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
 3 hours. Hitting either account rate limit is very rare, and we recommend that
-large integrators prefer a design [using one account for many customers](/docs/integration-guide).
+large integrators prefer a design [using one account for many customers]{{< ref "docs/integration-guide.md" >}}.
 
 You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
@@ -103,7 +103,7 @@ Note that most hosting providers don't need rate limit increases, because
 there's no limit on the number of distinct registered domains for which you can issue.
 So long as most of your customers don't have more than 2,000 subdomains on a
 registered domain, you most likely do not need an increase. See our [Integration
-Guide](/docs/integration-guide/) for more advice.
+Guide]{{< ref "docs/integration-guide.md" >}} for more advice.
 
 # <a name="clearing-pending"></a>Clearing Pending Authorizations
 
