@@ -1,6 +1,6 @@
 ---
 title: Best Practice - Keep Port 80 Open
-permalink: /docs/allow-port-80
+slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
