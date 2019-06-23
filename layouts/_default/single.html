@@ -48,7 +48,10 @@
 
 	{{ if .Page.Params.untranslated }}
 	{{ $target := .Site.LanguagePrefix }}
-		<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+	
+		{{ if not .Page.Params.do_not_translate }}
+			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+		{{ end }}
 		
 		{{ $lang := .Page.Language.Lang }}
 		{{ $scratch := newScratch }}
@@ -69,6 +72,7 @@
 									{{/* now the English url without "/" in the end. */}}
 									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+									{{/* Note: it also works for urls with anchor (#id) */}}
 								{{ end }}
 							{{ end }}
 						{{ end }}
