@@ -26,7 +26,7 @@ Let's Encrypt is a global Certificate Authority (CA). We let people and organiza
 
 Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
 
-To get started using Let's Encrypt, please visit our [Getting Started]({{< ref "howitworks.md" >}}) page.
+To get started using Let's Encrypt, please visit our [Getting Started]({{< ref "/howitworks.md" >}}) page.
 
 ## What does it cost to use Let's Encrypt? Is it really free?
 
@@ -59,7 +59,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Are certificates from Let’s Encrypt trusted by my browser?
 
-For most browsers and operating systems, yes. See the [compatibility list]({{< ref "docs/cert-compat.md" >}}) for more detail.
+For most browsers and operating systems, yes. See the [compatibility list]({{< ref "/docs/cert-compat.md" >}}) for more detail.
 
 ## Does Let's Encrypt issue certificates for anything other than SSL/TLS for websites?
 
@@ -93,7 +93,7 @@ Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
-There are a large number of [ACME clients]({{< ref "docs/client-options.md" >}}) available. Chances are something works well on your operating system. We recommend starting with [Certbot](https://certbot.eff.org/).
+There are a large number of [ACME clients]({{< ref "/docs/client-options.md" >}}) available. Chances are something works well on your operating system. We recommend starting with [Certbot](https://certbot.eff.org/).
 
 ## Can I use an existing private key or Certificate Signing Request (CSR)?
 

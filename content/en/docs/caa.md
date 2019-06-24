@@ -69,7 +69,7 @@ affected domain, since there could be CAA records present that forbid issuance,
 but are not visible because of the error.
 
 If you receive CAA-related errors, try a few more times against our [staging
-environment]({{< ref "docs/staging-environment.md" >}}) to see if they
+environment]({{< ref "/docs/staging-environment.md" >}}) to see if they
 are temporary or permanent. If they are permanent, you will need to file a
 support issue with your DNS provider, or switch providers. If you're not sure
 who your DNS provider is, ask your hosting provider.

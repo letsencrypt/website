@@ -108,7 +108,7 @@ Konten verwendet werden.
 
 # Multi-Domain-Zertifikate (SAN-Zertifikate)
 
-Unsere [Ausstellungsrichtlinie]({{< ref "docs/rate-limits.md" >}}) erlaubt bis zu
+Unsere [Ausstellungsrichtlinie]({{< ref "/docs/rate-limits.md" >}}) erlaubt bis zu
 100 Namen pro Zertifikat. Ob Sie für jeden Hostnamen ein separates
 Zertifikat verwenden oder viele Hostnamen auf einer kleinen Anzahl von
 Zertifikaten zusammenfassen, bleibt Ihnen überlassen.
