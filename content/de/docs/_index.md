@@ -11,7 +11,7 @@ lastmod: 2019-05-15
 # Übersicht
 
 * [Loslegen]({{< ref "/getting-started.md" >}})
-* [Wie Let's Encrypt funktioniert]({{< ref "/technicaloverview.md" >}})
+* [Wie Let's Encrypt funktioniert]({{< ref "/how-it-works.md" >}})
 * [Häufig gestellte Fragen (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossar]({{< ref "/docs/glossary.md" >}})
 

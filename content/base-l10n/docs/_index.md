@@ -12,7 +12,7 @@ lastmod: 2019-05-15
 # Overview
 
 * [Getting Started]({{< ref "/getting-started.md" >}})
-* [How Let's Encrypt Works]({{< ref "/technicaloverview.md" >}})
+* [How Let's Encrypt Works]({{< ref "/how-it-works.md" >}})
 * [Frequently Asked Questions (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})
 

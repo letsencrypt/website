@@ -11,7 +11,7 @@ lastmod: 2019-05-15
 # General
 
 * [Comenzando]({{< ref "/getting-started.md" >}})
-* [Cómo Funciona Let's Encrypt]({{< ref "/technicaloverview.md" >}})
+* [Cómo Funciona Let's Encrypt]({{< ref "/how-it-works.md" >}})
 * [Preguntas Frecuentes (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glosario]({{< ref "/docs/glossary.md" >}})
 
