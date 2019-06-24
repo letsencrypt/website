@@ -142,12 +142,12 @@ description = """
  name = "Donar"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/es/donate/"
  [[languages.es.menu.main]]
  name = "Acerca De"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/es/about/"
   [[languages.es.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -230,12 +230,12 @@ description = """
  name = "Spenden"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/de/donate/"
  [[languages.de.menu.main]]
  name = "Über uns"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/de/about/"
  [[languages.de.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -275,12 +275,12 @@ description = """
  name = "Поддержите нас"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/ru/donate/"
  [[languages.ru.menu.main]]
  name = "О сервисе"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/ru/about/"
  [[languages.ru.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -321,12 +321,12 @@ description = """
  name = "Doar"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/pt-br/donate/"
  [[languages.pt-br.menu.main]]
  name = "Sobre Nós"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/pt-br/about/"
  [[languages.pt-br.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
