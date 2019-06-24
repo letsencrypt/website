@@ -12,7 +12,7 @@ lastmod: 2019-05-15
 
 * [入门]({{< ref "/howitworks.md" >}})
 * [Let's Encrypt工作方法]({{< ref "/technicaloverview.md" >}})
-* [常问问题 {{< ref "/docs/faq.md" >}})
+* [常问问题 (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})
 
 # 用户（订户）信息
