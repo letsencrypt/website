@@ -26,7 +26,7 @@ Let's Encrypt es una Autoridad de Certificación (AC, or CA por sus siglas en in
 
 Let's Encrypt ofrece certificados de Validación de Dominio (DV por sus siglas en inglés). No ofrecemos Validaciones Extendidas o de Organización principalmente porque no podemos automatizar la emisión de esos tipos de certificados.
 
-Para comenzar a usar Let's Encrypt, por favor visita nuestra página [Comenzando]({{< ref "/howitworks.md" >}}).
+Para comenzar a usar Let's Encrypt, por favor visita nuestra página [Comenzando]({{< ref "/getting-started.md" >}}).
 
 ## ¿Cuánto cuesta usar Let's Encrypt? ¿Verdaderamente es gratis?
 

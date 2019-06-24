@@ -26,7 +26,7 @@ Let's Encrypt ist eine globale Zertifizierungsstelle (CA). Wir lassen Menschen u
 
 Let’s Encrypt bietet Domain-Validierungs (DV) Zertifikate. Wir bieten keine Organisationsvalidierung (OV) oder Erweiterte Validierung (EV), weil wir für diese Typen die Ausstellung nicht automatisieren können.
 
-Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte]({{< ref "/howitworks.md" >}}) Seite.
+Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte]({{< ref "/getting-started.md" >}}) Seite.
 
 ## Was kostet die Benutzung von Let's Encrypt? Ist wirklich alles frei?
 

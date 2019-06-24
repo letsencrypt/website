@@ -10,7 +10,7 @@ lastmod: 2019-05-15
 
 # Обзор
 
-* [Приступая к работе]({{< ref "/howitworks.md" >}})
+* [Приступая к работе]({{< ref "/getting-started.md" >}})
 * [Как работает Let's Encrypt]({{< ref "/technicaloverview.md" >}})
 * [Часто задаваемые вопросы]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})

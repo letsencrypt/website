@@ -10,7 +10,7 @@ lastmod: 2019-05-15
 
 # 概括
 
-* [入门]({{< ref "/howitworks.md" >}})
+* [入门]({{< ref "/getting-started.md" >}})
 * [Let's Encrypt工作方法]({{< ref "/technicaloverview.md" >}})
 * [常问问题 (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})

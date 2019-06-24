@@ -26,7 +26,7 @@ A Let's Encrypt é uma Autoridade Certificadora (AC) global. Nós possibilitamos
 
 A Let’s Encrypt oferece Validação de Domínio (VD). Nós não oferecemos Validação de Organização (VO) ou Validação Estendida (VE) principalmente porque não podemos automatizar a emissão de certificados destes tipos. 
 
-Para começar a usar a Let's Encrypt, por favor visite nossa página [Começando a Usar]({{< ref "/howitworks.md" >}}).
+Para começar a usar a Let's Encrypt, por favor visite nossa página [Começando a Usar]({{< ref "/getting-started.md" >}}).
 
 ## Quanto custa usar a Let's Encrypt? Ela é gratuita mesmo?
 

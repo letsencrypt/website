@@ -10,7 +10,7 @@ lastmod: 2019-05-15
 
 # Übersicht
 
-* [Loslegen]({{< ref "/howitworks.md" >}})
+* [Loslegen]({{< ref "/getting-started.md" >}})
 * [Wie Let's Encrypt funktioniert]({{< ref "/technicaloverview.md" >}})
 * [Häufig gestellte Fragen (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossar]({{< ref "/docs/glossary.md" >}})

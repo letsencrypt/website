@@ -10,7 +10,7 @@ lastmod: 2019-05-15
 
 # Vue d'ensemble
 
-* [Commencer]({{< ref "/howitworks.md" >}})
+* [Commencer]({{< ref "/getting-started.md" >}})
 * [Comment ça marche]({{< ref "/technicaloverview.md" >}})
 * [Frequently Asked Questions (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossaire]({{< ref "/docs/glossary.md" >}})

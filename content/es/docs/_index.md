@@ -10,7 +10,7 @@ lastmod: 2019-05-15
 
 # General
 
-* [Comenzando]({{< ref "/howitworks.md" >}})
+* [Comenzando]({{< ref "/getting-started.md" >}})
 * [Cómo Funciona Let's Encrypt]({{< ref "/technicaloverview.md" >}})
 * [Preguntas Frecuentes (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glosario]({{< ref "/docs/glossary.md" >}})

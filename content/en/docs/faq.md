@@ -26,7 +26,7 @@ Let's Encrypt is a global Certificate Authority (CA). We let people and organiza
 
 Let’s Encrypt offers Domain Validation (DV) certificates. We do not offer Organization Validation (OV) or Extended Validation (EV) primarily because we cannot automate issuance for those types of certificates.
 
-To get started using Let's Encrypt, please visit our [Getting Started]({{< ref "/howitworks.md" >}}) page.
+To get started using Let's Encrypt, please visit our [Getting Started]({{< ref "/getting-started.md" >}}) page.
 
 ## What does it cost to use Let's Encrypt? Is it really free?
 
