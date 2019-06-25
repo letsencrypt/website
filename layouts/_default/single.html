@@ -47,7 +47,6 @@
 		<script src="/js/i18n.js" defer async></script>
 
 	{{ if .Page.Params.untranslated }}
-	{{ $target := .Site.LanguagePrefix }}
 	
 		{{ if not .Page.Params.do_not_translate }}
 			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
@@ -92,6 +91,11 @@
 
 		
 	{{ else }}
+		
+		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
+			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
+		{{ end }}
+	
 		{{ .Content }}
 	{{ end }}
 	</div>

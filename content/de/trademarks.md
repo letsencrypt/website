@@ -4,11 +4,10 @@ slug: trademarks
 top_graphic: 1
 date: 2018-09-19
 lastmod: 2018-09-19
+english_is_canonical: 1
 ---
 
 {{< lastmod >}}
-
-Hinweis: Die englische Version ist massgeblich
 
 Willkommen bei der Markenschutzrichtlinie der Internet Security Research
 Group ("ISRG")! Diese Richtlinie beschreibt die Bedingungen, unter denen
