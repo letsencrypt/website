@@ -40,7 +40,7 @@ In einigen Fällen wird Integratoren (z.B. Hosting-Provider) eine geringe Gebüh
 
 Let’s Encrypt läuft mit einem kleinen Team und hängt stark von Automatisierung ab, um Kosten zu senken. Aus diesem Grunde sind wir nicht in der Lage, direkten Support für unsere Abonnenten anzubieten. Wir haben dafür einige grossartige Optionen für Unterstützung:
 
-1. Wir haben eine wirklich hilfreiche [Dokumentation](/de/docs/).
+1. Wir haben eine wirklich hilfreiche [Dokumentation]({{< ref "/docs" >}}).
 2. Wir haben ein sehr aktives und hilfreiches [Community Support Forum](https://community.letsencrypt.org/). Mitglieder unserer Community machen einen grossartigen Job beim Beantworten von Fragen und viele der üblichen Fragen sind schon beantwortet.
 
 Hier ist ein [Video, was wir mögen](https://www.youtube.com/watch?v=Xe1TZaElTAs) über die Leistung der grossen Community.

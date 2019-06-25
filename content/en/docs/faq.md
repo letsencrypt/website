@@ -40,7 +40,7 @@ In some cases, integrators (e.g. hosting providers) will charge a nominal fee th
 
 Let’s Encrypt is run by a small team and relies on automation to keep costs down. That being the case, we are not able to offer direct support to our subscribers. We do have some great support options though:
 
-1. We have really helpful [documentation](/docs/).
+1. We have really helpful [documentation]({{< ref "/docs" >}}).
 2. We have very active and helpful [community support forums](https://community.letsencrypt.org/). Members of our community do a great job of answering questions, and many of the most common questions have already been answered.
 
 Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the power of great community support.
