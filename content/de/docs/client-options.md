@@ -31,7 +31,7 @@ Wenn Sie wissen, dass ein ACME-Client oder ein Projekt in Let's Encrypt integrie
 
 Bevor Sie Pull-Request absenden, bitte stellen Sie sicher:
 
-1. Ihr Client respektiert die [Let's Encrypt Markenrichtlinien](https://letsencrypt.org/trademarks/).
+1. Ihr Client respektiert die [Let's Encrypt Markenrichtlinien]({{< ref "/trademarks.md" >}}).
 2. Ihr Client ist nicht Browser-basiert und unterstützt automatische Erneuerung.
 3. Ihr Commit fügt Ihren Client ans **Ende** der relevanten Sektion (Vergessen Sie nicht die "acme_v2" , wenn es angemessen ist!).
 4. Ihr Commit aktualisiert den `lastmod` Zeitstempel in `clients.json` oben.

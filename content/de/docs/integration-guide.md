@@ -77,7 +77,7 @@ Die Kontakt-E-Mail, die Sie beim Erstellen von Konten (auch als
 Registrierungen bezeichnet) erhalten, sollte an den Abonnenten gesendet
 werden. Wir werden eine E-Mail an diese Adresse senden, um vor dem
 Ablaufen von Zertifikaten zu warnen, und über Änderungen an unseren
-[Datenschutzbestimmungen](/privacy) informieren. Wenn Sie ein
+[Datenschutzbestimmungen]({{< ref "/privacy.md" >}}) informieren. Wenn Sie ein
 Hostinganbieter sind, sollten diese Benachrichtigungen nicht an einen
 Kunden, sondern an Sie gesendet werden. Richten Sie im Idealfall eine
 Mailingliste oder einen Alias ein, damit mehrere Personen
