@@ -31,7 +31,7 @@ set of CAA records listing the CAs that you would like to allow.
 
 Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
 officially documented [in our Certification Practice Statement
-(CPS), section 4.2.1](/repository/).
+(CPS), section 4.2.1]({{< ref "/repository.md" >}}).
 
 ## Where to put the record
 

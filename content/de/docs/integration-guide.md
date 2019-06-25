@@ -66,7 +66,7 @@ die für Ihr Konto spezifisch sind.
 
 # Wer ist der Abonnent?
 
-Unser [CPS- und Abonnentenvertrag](/repository/) zeigt an, dass der
+Unser [CPS- und Abonnentenvertrag]({{< ref "/repository.md" >}}) zeigt an, dass der
 Abonnent derjenige ist, der den privaten Schlüssel für ein Zertifikat
 besitzt. Bei Hosting-Providern ist dies der Provider, nicht der Kunde
 des Providers. Wenn Sie Software schreiben, die von den Mitarbeitern
