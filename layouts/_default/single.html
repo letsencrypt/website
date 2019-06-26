@@ -41,6 +41,20 @@
 						</a>
 					</p>
 					{{ end }}
+					{{ if and (eq .Language.Lang "ru") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="ru" href="{{ .Permalink }}">
+							Просмотреть на русском
+						</a>
+					</p>
+					{{ end }}
+					{{ if and (eq .Language.Lang "zh-cn") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="zh-cn" href="{{ .Permalink }}">
+							使用简体中文阅读本网页。
+						</a>
+					</p>
+					{{ end }}
 				{{ end }}
 			{{ end }}
 		{{ end }}

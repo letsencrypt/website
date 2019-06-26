@@ -65,7 +65,7 @@ other = "Sprachen"
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: use manually in layout/single.html)
+# (nb: used manually in layout/single.html)
 other = "Auf Deutsch ansehen"
 
 [english_is_canonical]
