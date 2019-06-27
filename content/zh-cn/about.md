@@ -10,7 +10,7 @@ menu:
     parent: about
 ---
 
-Let's Encrypt是一个免费的，自动化的，开放的证书颁发机构（CA），为公众的利益而运行。 它是由[Internet Security Research Group（ISRG）]（/isrg/）提供的服务。
+Let's Encrypt是一个免费的，自动化的，开放的证书颁发机构（CA），为公众的利益而运行。 它是由[Internet Security Research Group（ISRG）](https://www.abetterinternet.org/）提供的服务。
 
 我们为用户提供所需的数字证书，以便以最友好的方式免费为网站启用HTTPS（SSL / TLS）。 我们这样做是因为我们想要创建一个更安全，更尊重隐私的互联网。
 
