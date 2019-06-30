@@ -29,5 +29,4 @@ menu:
   <div id="issuancePerDay" title="Число сертификатов Let's Encrypt Certificates, выпускаемых в сутки" class="statsgraph"></div>
 </div>
 
-<script src="/js/stats.js" async></script>
-<script src="/js/plotly-min.js" async></script>
+{{< plotly >}}
