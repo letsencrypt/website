@@ -253,6 +253,7 @@ description = """
  weight = 80
  identifier = "careers"
  parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
 
 [languages.ru]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
