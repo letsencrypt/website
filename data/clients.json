@@ -485,8 +485,8 @@
 			"category": "Ruby"
 		},
 		{
-			"name": "Combine-LE: Generate and upload crt to CloudFlare(enterprise) and GCP.",
-			"url": "https://gitlab.com/6318613/letsencrypt",
+			"name": "Combine-acme: Generate and upload crt to CloudFlare(enterprise) and GCP.",
+			"url": "https://gitlab.com/6318613/combine-acme",
 			"acme_v2": "true",
 			"category": "Ruby"
 		},
