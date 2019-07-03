@@ -22,6 +22,7 @@ menu:
 
 # ISRG Certificate Policy
 
+* [v2.3, July 3, 2019](/documents/isrg-cp-v2.3/)
 * [v2.2, September 20, 2018](/documents/isrg-cp-v2.2/)
 * [v2.1, February 6, 2018](/documents/isrg-cp-v2.1/)
 * [v2.0, May 22, 2017](/documents/isrg-cp-v2.0/)
@@ -32,6 +33,7 @@ menu:
 
 # ISRG Certification Practice Statement
 
+* [v2.6, July 3, 2019](/documents/isrg-cps-v2.6/)
 * [v2.5, November 14, 2018](/documents/isrg-cps-v2.5/)
 * [v2.4, September 20, 2018](/documents/isrg-cps-v2.4/)
 * [v2.3, May 4, 2018](/documents/isrg-cps-v2.3/)
