@@ -485,6 +485,12 @@
 			"category": "Ruby"
 		},
 		{
+			"name": "Combine-acme: Generate and upload crt to CloudFlare(enterprise) and GCP.",
+			"url": "https://gitlab.com/6318613/combine-acme",
+			"acme_v2": "true",
+			"category": "Ruby"
+		},
+		{
 			"name": "acme-client",
 			"url": "https://github.com/onur/acme-client",
 			"category": "Rust"
