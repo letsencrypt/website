@@ -2,18 +2,14 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-06-15
+lastmod: 2019-07-03
 ---
 
 ## Multi-Perspective Validation
 
-* ETA: Q2 2019
-
 Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
 
 ## ECDSA Root and Intermediates
-
-* ETA: Q3 2019
 
 Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
