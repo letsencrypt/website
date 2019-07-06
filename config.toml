@@ -172,6 +172,9 @@ title = "Let's Encrypt - 免费SSL/TLS证书"
 languageName = "简体中文"
 contentDir = "content/zh-cn"
 languageCode= "zh-cn"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
 weight = 40
 description = """
   Let's Encrypt 是由非营利性互联网安全研究组（ISRG）提供给您的免费，自动化和开放的证书颁发机构。
