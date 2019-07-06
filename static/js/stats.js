@@ -13,7 +13,7 @@ function doPlot() {
   Plotly.setPlotConfig({locale: document.documentElement.lang});
 
 
-  const loc = document.getElementById('plot-translations').dataset;
+  const loc = document.getElementById("plot-translations").dataset;
 
                   
   // Process a string `s` and, for each row (line), call `f()` with an
