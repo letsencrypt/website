@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-05-26",
+	"lastmod": "2019-07-08",
 	"categories": [
 		"Bash",
 		"C",
@@ -698,6 +698,12 @@
 			"category": "D",
 			"library": "D",
 			"comments": "An ACME v2 client/library written in the D computer language",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme-client-portable",
+			"url": "https://github.com/graywolf/acme-client-portable",
+			"category": "C",
 			"acme_v2": "true"
 		}
 	]
