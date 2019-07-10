@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-07-08",
+	"lastmod": "2019-07-10",
 	"categories": [
 		"Bash",
 		"C",
@@ -123,6 +123,10 @@
 		{
 			"name": "Certhub",
 			"url": "https://certhub.io/"
+		},
+		{
+			"name": "Vesta Control Panel",
+			"url": "https://vestacp.com/"
 		}
 	],
 	"list": [
