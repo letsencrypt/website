@@ -239,12 +239,6 @@
 			"category": "Go"
 		},
 		{
-			"name": "eggsampler/acme Go client library",
-			"url": "https://github.com/eggsampler/acme",
-			"acme_v2": "true",
-			"category": "Go"
-		},
-		{
 			"name": "HAProxy ACME validation plugin",
 			"url": "https://github.com/janeczku/haproxy-acme-validation-plugin",
 			"category": "HAProxy"
@@ -566,6 +560,11 @@
 			"url": "https://github.com/tothpaul/DelphiACME",
 			"library": "Delphi",
 			"comments": "(Embarcadero Delphi)"
+		},
+		{
+			"name": "eggsampler/acme",
+			"url": "https://github.com/eggsampler/acme",
+			"library": "Go"
 		},
 		{
 			"name": "zero11it/acme-client",
