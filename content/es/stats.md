@@ -17,13 +17,6 @@ menu:
 </div>
 
 <div class="figure">
-  <h2><a name="percent-pageloads" href="#percent-pageloads"
-    >Porcentaje de Páginas de Web Cargadas por Firefox Usando HTTPS</a></h2>
-  <p>(media móvil de 14 días, fuente: <a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Firefox Telemetry</a>)</p>
-  <div id="pageloadPercent" title="Porcentaje de Páginas de Web Cargadas por Firefox Usando HTTPS" class="statsgraph"></div>
-</div>
-
-<div class="figure">
   <h2><a name="daily-issuance" href="#daily-issuance"
     >Certificados Let's Encrypt Emitidos por Día</a></h2>
   <div id="issuancePerDay" title="Certificados Let's Encrypt Emitidos por Día" class="statsgraph"></div>

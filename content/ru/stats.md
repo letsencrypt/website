@@ -17,13 +17,6 @@ menu:
 </div>
 
 <div class="figure">
-  <h2><a name="percent-pageloads" href="#percent-pageloads"
-    >Доля web-страниц, загруженных браузером Firefox по протоколу HTTPS</a></h2>
-  <p>(14-дневная скользящая средняя, источник: <a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Телеметрия Firefox</a>)</p>
-  <div id="pageloadPercent" title="Доля web-страниц, загруженных браузером Firefox по протоколу HTTPS" class="statsgraph"></div>
-</div>
-
-<div class="figure">
   <h2><a name="daily-issuance" href="#daily-issuance"
     >Число сертификатов Let's Encrypt Certificates, выпускаемых в сутки</a></h2>
   <div id="issuancePerDay" title="Число сертификатов Let's Encrypt Certificates, выпускаемых в сутки" class="statsgraph"></div>
