@@ -23,4 +23,4 @@ Os princípios chave da Let's Encrypt são:
 * <strong>Aberta:</strong> O protocolo de emissão e renovação serão publicados como um padrão aberto que outros podem adotar.
 * <strong>Cooperativa:</strong> Assim como os protocolos de Internet, a Let's Encrypt é uma junção de esforços para beneficiar a comunidade, além do controle de qualquer organização centralizada. 
 
-Temos uma página com informações mais detalhadas sobre [como a Autoridade Certificadora Let's Encrypt funciona](/pt-br/how-it-works/).
+Temos uma página com informações mais detalhadas sobre [como a Autoridade Certificadora Let's Encrypt funciona]({{< ref "/how-it-works.md" >}}).

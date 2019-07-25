@@ -16,7 +16,7 @@
   <tbody>
     {{ range sort $.Site.RegularPages "RelPermalink" }}
       {{ $page := . }}
-      {{ if .Translations }}
+      {{ if and .Translations (not .Page.Params.do_not_translate) }}
       <tr>
         <td title="{{ .File }}">
           <a href="{{ .Permalink }}">{{ .Name }}</a><br>

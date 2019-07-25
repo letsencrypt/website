@@ -19,7 +19,7 @@ Currently Let's Encrypt only signs end-entity certificates with RSA intermediate
 
 * Enabled: May 15, 2019
 
-We are starting to operate a [Certificate Transparency log](https://letsencrypt.org/docs/ct-logs/).
+We are starting to operate a [Certificate Transparency log]({{< ref "/docs/ct-logs.html" >}}).
 
 ## TLS ALPN Challenge Support
 

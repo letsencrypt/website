@@ -13,7 +13,7 @@ date: 2018-04-12
     <div id="combinedTimeline" title="Cronología de Emición" class="statsgraph">
   </div>
 
-  <p><a href="/es/stats/">https://letsencrypt.org/es/stats/</a></p>
+  <p><a href="{{< ref "/stats.md" >}}">{{< ref "/stats.md" >}}</a></p>
 </div>
 
 <script src="/js/stats.js"></script>

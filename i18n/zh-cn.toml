@@ -32,8 +32,8 @@ other = "捐赠"
 
 [footer_policies]
 other = """
-View our <a href="/privacy/">隐私政策</a>.<br>
-View our <a href="/trademarks/">商标政策</a>.
+查看我们的<a href="/zh-cn/privacy/">隐私政策</a>.<br>
+查看我们的<a href="/zh-cn/trademarks/">商标政策</a>.
 """
 
 [linux_foundation_trademark]
@@ -62,3 +62,17 @@ other = "银"
 
 [languages]
 other = "语言"
+
+[view_in_english]
+other = "查看英文版本"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "使用简体中文阅读本网页。"
+
+[old_version]
+other = "请注意：英文版本（原版）在本翻译后有改动"
+
+[not_yet_translated]
+other = "该网页暂时未被翻译。 您可以点击 <a href=\"https://github.com/letsencrypt/website\">此处</a> 帮助我们翻译此网页。"

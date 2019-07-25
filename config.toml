@@ -142,12 +142,12 @@ description = """
  name = "Donar"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/es/donate/"
  [[languages.es.menu.main]]
  name = "Acerca De"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/es/about/"
   [[languages.es.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -172,6 +172,9 @@ title = "Let's Encrypt - 免费SSL/TLS证书"
 languageName = "简体中文"
 contentDir = "content/zh-cn"
 languageCode= "zh-cn"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
 weight = 40
 description = """
   Let's Encrypt 是由非营利性互联网安全研究组（ISRG）提供给您的免费，自动化和开放的证书颁发机构。
@@ -230,12 +233,12 @@ description = """
  name = "Spenden"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/de/donate/"
  [[languages.de.menu.main]]
  name = "Über uns"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/de/about/"
  [[languages.de.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -276,12 +279,12 @@ description = """
  name = "Поддержите нас"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/ru/donate/"
  [[languages.ru.menu.main]]
  name = "О сервисе"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/ru/about/"
  [[languages.ru.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
@@ -322,12 +325,12 @@ description = """
  name = "Doar"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/pt-br/donate/"
  [[languages.pt-br.menu.main]]
  name = "Sobre Nós"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/pt-br/about/"
  [[languages.pt-br.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20

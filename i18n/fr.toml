@@ -32,8 +32,8 @@ other = "Faire un don"
 
 [footer_policies]
 other = """
-Voir notre <a href="/privacy/">politique de confidentialité</a>.<br>
-Voir notre <a href="/trademarks/">politique en matière de copyright</a>.
+Voir notre <a href="/fr/privacy/">politique de confidentialité</a>.<br>
+Voir notre <a href="/fr/trademarks/">politique en matière de copyright</a>.
 """
 
 [linux_foundation_trademark]
@@ -60,12 +60,19 @@ other = "Or"
 [silver]
 other = "Argent"
 
-
 [languages]
 other = "Langues"
 
 [view_in_english]
 other = "Voir en anglais"
 
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Voir en français"
+
 [old_version]
 other = "Note : La version anglaise a été mise à jour depuis sa traduction"
+
+[english_is_canonical]
+other = "Remarque : la version anglaise fait foi"

@@ -66,8 +66,16 @@ other = "Languages"
 [view_in_english]
 other = "View in English"
 
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "View in English"
+
 [old_version]
 other = "Note: The English version has been updated since the translation"
 
 [not_yet_translated]
-other = "This webpage has not yet be translated. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+
+[english_is_canonical]
+other = "The English version is authoritative"

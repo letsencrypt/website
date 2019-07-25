@@ -2,7 +2,7 @@
 title: Kontakt
 slug: contact
 top_graphic: 1
-lastmod: 2018-09-19
+lastmod: 2019-03-26
 menu:
   main:
     weight: 90
@@ -23,7 +23,9 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailinglisten
 
-Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen](/de/getinvolved/) Seite.
+Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen]({{< ref "/getinvolved.md" >}}) Seite.
+
+[Klicken Sie hier](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad), um sich für unseren Newsletter anzumelden.
 
 ## Sicherheit
 
