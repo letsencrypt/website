@@ -1,4 +1,4 @@
 ---
-slug: stats-dashboard
+slug: client-options
 untranslated: 1
 ---

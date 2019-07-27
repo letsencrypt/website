@@ -1,4 +1,4 @@
 ---
-slug: stats-dashboard
+slug: how-it-works
 untranslated: 1
 ---

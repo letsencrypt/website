@@ -3,6 +3,7 @@ title: Tentang Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
+lastmod: 2019-01-28
 menu:
   main:
     weight: 10
@@ -22,4 +23,4 @@ Prinsip kunci utama dibalik Let's Encrypt adalah:
 * <strong>Terbuka:</strong> Protokol penerbitan otomatis dan pembaharuan akan dipublikasikan sebagai standar terbuka yang dapat orang lain adopsi.
 * <strong>Kooperatif:</strong> Sama seperti dasar dari protokol Internet itu sendiri, Let's Encrypt adalah upaya bersama untuk memberi manfaat untuk masyarakat, diluar kendari dari organisasi manapun.
 
-Kami memiliki halaman informasi detil tentang [bagaimana Let's Encrypt CA bekerja](/how-it-works/).
+Kami memiliki halaman informasi detil tentang [bagaimana Let's Encrypt CA bekerja]({{< ref "/how-it-works.md" >}}).
