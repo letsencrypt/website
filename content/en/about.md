@@ -3,6 +3,7 @@ title: About Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
+lastmod: 2019-01-28
 menu:
   main:
     weight: 10
@@ -23,4 +24,4 @@ The key principles behind Let's Encrypt are:
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
-We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works/).
+We have a page with more detailed information about [how the Let's Encrypt CA works]({{< ref "/how-it-works.md" >}}).

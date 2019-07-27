@@ -2,6 +2,7 @@
 title: Chain of Trust
 slug: certificates
 top_graphic: 5
+lastmod: 2019-05-01
 aliases: [/certs]
 ---
 
@@ -51,7 +52,7 @@ certificate authority, ISRG Root X1 is not yet trusted in most browsers. In
 order to be broadly trusted right away, our intermediate is also cross-signed by
 another certificate authority, IdenTrust, whose root is already trusted in all
 major browsers. Specifically, IdenTrust has cross-signed our intermediate using their
-[DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+"DST Root CA X3" (now called "TrustID X3 Root"). [Download "TrustID X3 Root" on identrust.com](https://www.identrust.com/support/downloads) (or, alternatively, you can download a copy here: [.pem](/certs/trustid-x3-root.pem.txt), [.p7b](/certs/trustid-x3-root.p7b)).
 
 That means there are two certificates available that both represent our
 intermediate. One is signed by DST Root CA X3, and the other is signed by ISRG
@@ -94,4 +95,4 @@ issued Let's Encrypt certificates via these links:
 
 The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
 
-All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys](/upcoming-features/).
+All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys]({{< ref "/upcoming-features.md" >}}).

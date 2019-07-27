@@ -2,6 +2,7 @@
 title: S'impliquer
 slug: getinvolved
 top_graphic: 5
+lastmod: 2019-01-11
 menu:
   main:
     weight: 60
@@ -10,7 +11,7 @@ menu:
 
 ## Communauté
 
-Nous pouvons toujours utiliser votre aide pour répondre aux questions sur [Let's Encrypt Community Support](https://community.letsencrypt.org/). Voir [ce billet de blog](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) expliquant pourquoi ces contributions sont si importantes.
+Nous pouvons toujours utiliser votre aide pour répondre aux questions sur [Let's Encrypt Community Support](https://community.letsencrypt.org/). Voir [ce billet de blog](/2015/08/13/lets-encrypt-community-support.html) expliquant pourquoi ces contributions sont si importantes.
 
 ## Code
 
@@ -18,7 +19,7 @@ Nous pouvons également utiliser votre aide pour le développement de logiciels.
 
 ### Logiciel client
 
-[Certbot](https://github.com/certbot/certbot) est un utilitaire écrit en Python qui fonctionne avec votre serveur Web pour obtenir automatiquement un certificat et convertir un site Web au HTTPS. Certbot est le client que nous recommandons à la plupart des gens. Beaucoup d'autres [options de client tiers](https://letsencrypt.org/docs/client-options/) sont disponibles.
+[Certbot](https://github.com/certbot/certbot) est un utilitaire écrit en Python qui fonctionne avec votre serveur Web pour obtenir automatiquement un certificat et convertir un site Web au HTTPS. Certbot est le client que nous recommandons à la plupart des gens. Beaucoup d'autres [options de client tiers]({{< ref "/docs/client-options.md" >}}) sont disponibles.
 
 ### Logiciel AC côté serveur
 

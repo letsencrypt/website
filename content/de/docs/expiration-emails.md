@@ -3,7 +3,7 @@ title: Ablauf-Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2016-07-02
+lastmod: 2019-04-18
 ---
 
 {{< lastmod >}}
@@ -29,4 +29,4 @@ Es gibt noch keine Möglichkeit für uns, Sie effizient abzumelden, wenn Sie den
 
 Sie können jedoch die E-Mail-Adresse Ihres Kontos ändern, wodurch Sie effektiv neu abonniert werden. In vielen gängigen E-Mail-Diensten wird `yourname+1@example.com` genauso behandelt wie` yourname@example.com. Wenn Sie also Ihre E-Mail-Adresse in `yourname+1@example.com` aktualisieren, können Sie erneut Ablauf-E-Mails erhalten. Bei Certbot verwenden Sie:
 
-` ~/certbot/venv/bin/certbot  register --update-registration --email yourname+1@example.com`
+`certbot update_account --email yourname+1@example.com`

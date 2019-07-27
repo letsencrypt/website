@@ -2,27 +2,24 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
+lastmod: 2019-07-03
 ---
 
-## Certificate Transparency Log
-
-* ETA: Q1 2019
-
-We are planning to operate a [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
-
 ## Multi-Perspective Validation
-
-* ETA: Q2 2019
 
 Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
 
 ## ECDSA Root and Intermediates
 
-* ETA: Q3 2019
-
 Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
 # Completed Features
+
+## Certificate Transparency Log
+
+* Enabled: May 15, 2019
+
+We are starting to operate a [Certificate Transparency log]({{< ref "/docs/ct-logs.html" >}}).
 
 ## TLS ALPN Challenge Support
 

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
-	{{ partial "head" . }}
+<html lang="{{ if and $.Site.LanguageCode (not .Page.Params.untranslated) }}{{ $.Site.LanguageCode }}{{ else }}en-us{{ end }}">
+	
+	{{/* For untranslated page, we use the English header. */}}
+	{{ if .Page.Params.untranslated }}
+		{{ range .Page.Translations }}
+			{{ if eq "en" .Language.Lang }}
+				{{ partial "head" . }}
+			{{ end }}
+		{{ end }}
+	{{ else }}
+		{{ partial "head" . }}
+	{{ end }}
 	<body>
 		{{ partial "header" . }}
 		{{ block "main" . }}{{ end }}

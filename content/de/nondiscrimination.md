@@ -3,11 +3,10 @@ title: Nicht-Diskriminierungserklärung und Regel
 slug: nondiscrimination
 top_graphic: 4
 date: 2015-06-18
+english_is_canonical: 1
 ---
 
 ## Verabschiedet durch den Vorstand am Donnerstag, den 18. Juni 2015.
-
-Hinweis: Die englische Version ist massgeblich
 
 Die Internet Security Research Group diskriminiert nicht aufgrund von
 Rasse, Hautfarbe und Hautfarbe, Religion (Glaubensbekenntnis),

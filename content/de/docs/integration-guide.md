@@ -4,7 +4,7 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2018-06-20
---- 
+---
 
 {{< lastmod >}}
 
@@ -66,7 +66,7 @@ die für Ihr Konto spezifisch sind.
 
 # Wer ist der Abonnent?
 
-Unser [CPS- und Abonnentenvertrag](/repository/) zeigt an, dass der
+Unser [CPS- und Abonnentenvertrag]({{< ref "/repository.md" >}}) zeigt an, dass der
 Abonnent derjenige ist, der den privaten Schlüssel für ein Zertifikat
 besitzt. Bei Hosting-Providern ist dies der Provider, nicht der Kunde
 des Providers. Wenn Sie Software schreiben, die von den Mitarbeitern
@@ -77,7 +77,7 @@ Die Kontakt-E-Mail, die Sie beim Erstellen von Konten (auch als
 Registrierungen bezeichnet) erhalten, sollte an den Abonnenten gesendet
 werden. Wir werden eine E-Mail an diese Adresse senden, um vor dem
 Ablaufen von Zertifikaten zu warnen, und über Änderungen an unseren
-[Datenschutzbestimmungen](/privacy) informieren. Wenn Sie ein
+[Datenschutzbestimmungen]({{< ref "/privacy.md" >}}) informieren. Wenn Sie ein
 Hostinganbieter sind, sollten diese Benachrichtigungen nicht an einen
 Kunden, sondern an Sie gesendet werden. Richten Sie im Idealfall eine
 Mailingliste oder einen Alias ein, damit mehrere Personen
@@ -108,7 +108,7 @@ Konten verwendet werden.
 
 # Multi-Domain-Zertifikate (SAN-Zertifikate)
 
-Unsere [Ausstellungsrichtlinie](/docs/rate-limits/) erlaubt bis zu
+Unsere [Ausstellungsrichtlinie]({{< ref "/docs/rate-limits.md" >}}) erlaubt bis zu
 100 Namen pro Zertifikat. Ob Sie für jeden Hostnamen ein separates
 Zertifikat verwenden oder viele Hostnamen auf einer kleinen Anzahl von
 Zertifikaten zusammenfassen, bleibt Ihnen überlassen.

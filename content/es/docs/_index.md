@@ -5,34 +5,44 @@ menu: "main"
 menu:
   main:
     weight: 10
+lastmod: 2019-05-15
 ---
 
 # General
 
-* [Comenzando](/es/getting-started/)
-* [C&oacute;mo Funciona Let's Encrypt](/es/how-it-works/)
-* [Preguntas Frecuentes (FAQ)](/es/docs/faq/)
-* [Glosario](/docs/glossary/)
+* [Comenzando]({{< ref "/getting-started.md" >}})
+* [Cómo Funciona Let's Encrypt]({{< ref "/how-it-works.md" >}})
+* [Preguntas Frecuentes (FAQ)]({{< ref "/docs/faq.md" >}})
+* [Glosario]({{< ref "/docs/glossary.md" >}})
 
-# Informaci&oacute;n para Subscriptor
+# Información para Subscriptor
 
-* [ACME Client Implementations](/docs/client-options/)
-* [Rate Limits](/docs/rate-limits/)
-* [Correos Electr&oacute;nicos de Vencimiento](/es/docs/expiration-emails/)
+* [ACME Client Implementations]({{< ref "/docs/client-options.md" >}})
+* [Rate Limits]({{< ref "/docs/rate-limits.md" >}})
+* [Correos Electrónicos de Vencimiento]({{< ref "/docs/expiration-emails.md" >}})
 
-# Informaci&oacute;n Avanzada para Subscriptor
+# Información Avanzada para Subscriptor
 
-* [Staging Environment](/docs/staging-environment/)
-* [Certificate Compatibility](/docs/certificate-compatibility/)
-* [Cadena de Confianza (Certificados Ra&iacute;z e Intermedios)](/es/certificates/)
-* [Pr&oacute;ximas Funcionalidades](/es/upcoming-features/)
-* [Revoking Certificates](/docs/revoking/)
-* [Autorizaci&oacute;n de la Autoridad de Certificaci&oacute;n (CAA)](/es/docs/caa/)
-* [Certificados para localhost](/es/docs/certificates-for-localhost/)
+* [Staging Environment]({{< ref "/docs/staging-environment.md" >}})
+* [Certificate Compatibility]({{< ref "/docs/cert-compat.md" >}})
+* [Cadena de Confianza (Certificados Raíz e Intermedios)]({{< ref "/certificates.md" >}})
+* [Próximas Funcionalidades]({{< ref "/upcoming-features.md" >}})
 
-# Informaci&oacute;n para Desarrolladores de Clientes
+* [Revoking Certificates]({{< ref "/docs/revoking.md" >}})
+* [Autorización de la Autoridad de Certificación (CAA)]({{< ref "/docs/caa.md" >}})
 
-* [Client and Large Provider Integration Guide](/docs/integration-guide/)
-* [Actualizaciones del protocolo ACME](/es/docs/acme-protocol-updates/)
+* [Certificados para localhost]({{< ref "/docs/certificates-for-localhost.md" >}})
+* [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
+
+* [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
+* [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
+
+# Información para Desarrolladores de Clientes
+
+* [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
+
+* [Actualizaciones del protocolo ACME]({{< ref "/docs/acme-protocol-updates.md" >}})
+
 * [Diferencias del  Borrador ACME Actual](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [Encontrando IDs de Cuentas](/es/docs/account-id/)
+* [Encontrando IDs de Cuentas]({{< ref "/docs/account-id.md" >}})
+
