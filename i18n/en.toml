@@ -66,6 +66,11 @@ other = "Languages"
 [view_in_english]
 other = "View in English"
 
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "View in English"
+
 [old_version]
 other = "Note: The English version has been updated since the translation"
 
@@ -104,3 +109,4 @@ other = "Japan users"
 
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
+

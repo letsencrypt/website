@@ -32,8 +32,8 @@ other = "Donar"
 
 [footer_policies]
 other = """
-Mira nuestra <a href="/privacy/">póliza de privacidad</a>.<br>
-Mira nuestra <a href="/trademarks/">póliza de marca</a>.
+Mira nuestra <a href="/es/privacy/">póliza de privacidad</a>.<br>
+Mira nuestra <a href="/es/trademarks/">póliza de marca</a>.
 """
 
 [linux_foundation_trademark]

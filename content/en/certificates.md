@@ -95,4 +95,4 @@ issued Let's Encrypt certificates via these links:
 
 The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
 
-All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys](/upcoming-features/).
+All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys]({{< ref "/upcoming-features.md" >}}).

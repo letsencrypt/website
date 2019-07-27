@@ -1,6 +1,6 @@
 ---
 title: Certificates for localhost
-permalink: /docs/certificates-for-localhost
+slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21

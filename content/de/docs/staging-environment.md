@@ -18,7 +18,7 @@ Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--dry-ru
 
 # Rate Limits
 
-Dei Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere Produktionsumgebung](/de/docs/rate-limits/) mit den folgenden Ausnahmen:
+Dei Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere Produktionsumgebung]({{< ref "/docs/rate-limits.md" >}}) mit den folgenden Ausnahmen:
 
 * Das **Zertifikate pro registrierte Domain** Limit ist 30,000 pro Woche.
 * Das **Doppelte Zertifikate** Limit ist 30,000 pro Woche.

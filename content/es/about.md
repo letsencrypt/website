@@ -24,4 +24,4 @@ Los principios claves detrás de Let's Encrypt son:
 Al igual que los mismos protocolos de Internet subyacentes, Let's Encrypt es un esfuerzo conjunto para beneficiar la comunidad, 
 * <strong>Cooperativo:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, más allá del control de cualquier organización.
 
-Tenemos una página con información más detallada sobre [cómo Let's Encrypt AC funciona](/how-it-works/).
+Tenemos una página con información más detallada sobre [cómo Let's Encrypt AC funciona]({{< ref "/how-it-works.md" >}}).
