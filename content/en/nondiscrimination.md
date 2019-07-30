@@ -3,6 +3,7 @@ title: Non-Discrimination Statement and Policy
 slug: nondiscrimination
 top_graphic: 4
 date: 2015-06-18
+english_is_canonical: 1
 ---
 
 ## Adopted by the Board of Directors on Thursday, June 18, 2015

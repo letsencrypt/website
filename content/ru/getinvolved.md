@@ -2,6 +2,7 @@
 title: Внесите свой вклад
 slug: getinvolved
 top_graphic: 5
+lastmod: 2019-01-11
 menu:
   main:
     weight: 60
@@ -11,7 +12,7 @@ menu:
 ## Сообщество
 
 Мы всегда готовы принять помощь в поиске ответов на вопросы [в техподдержку сообщества Let's Encrypt](https://community.letsencrypt.org/).
-В [нашем блоге](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html) мы объясняем, почему так важно поддерживать сообщество.
+В [нашем блоге](/2015/08/13/lets-encrypt-community-support.html) мы объясняем, почему так важно поддерживать сообщество.
 
 ## Программирование
 
@@ -19,7 +20,7 @@ menu:
 
 ### Разработка ACME-клиента
 
-Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует [множество других клиентов](https://letsencrypt.org/docs/client-options/).
+Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует [множество других клиентов]({{< ref "/docs/client-options.md" >}}).
 
 ### Разработка Центра Сертификации
 

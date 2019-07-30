@@ -1,1 +1,27 @@
-<p>{{ i18n "last_updated" }} {{ .Page.Lastmod.Format "January 2, 2006" }}{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}</p>
+<p>
+{{ if .Page.Lastmod }}{{ i18n "last_updated" }} {{ .Page.Lastmod.Format "January 2, 2006" }}{{ end }}
+
+{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
+</p>
+
+{{ $curpage := .Page }}
+{{ if and (ne $curpage.Language.Lang "en") (not .Page.Params.untranslated) }}
+{{/* If we are not in English we search for the English version */}}
+{{ range $curpage.Translations }}
+    {{ if eq "en" .Language.Lang }}
+        {{ if .Page.Lastmod }}
+            {{/* To compare the Lastmod with the current translation */}}   
+            {{ if ne $curpage.Lastmod .Page.Lastmod }}
+            <p>
+                <i>
+                    {{ i18n "old_version" }}
+                    ({{ .Page.Lastmod.Format "January 2, 2006" }})
+                    <a href="{{ .Page.Permalink }}">{{ i18n "view_in_english" }}</a>
+                </i>
+            </p>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ end }}
+

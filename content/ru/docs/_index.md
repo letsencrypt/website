@@ -5,36 +5,44 @@ menu: "main"
 menu:
   main:
     weight: 10
+lastmod: 2019-05-15
 ---
 
 # Обзор
 
-* [Приступая к работе](/ru/getting-started/)
-* [Как работает Let's Encrypt](/ru/how-it-works/)
-* [Frequently Asked Questions (FAQ)](/docs/faq/)
-* [Glossary](/docs/glossary/)
+* [Приступая к работе]({{< ref "/getting-started.md" >}})
+* [Как работает Let's Encrypt]({{< ref "/how-it-works.md" >}})
+* [Часто задаваемые вопросы]({{< ref "/docs/faq.md" >}})
+* [Glossary]({{< ref "/docs/glossary.md" >}})
 
-# Subscriber Information
+# Информация для пользователей
 
-* [ACME Client Implementations](/docs/client-options/)
-* [Rate Limits](/docs/rate-limits/)
-* [Expiration Emails](/docs/expiration-emails/)
+* [Реализации ACME-клиента]({{< ref "/docs/client-options.md" >}})
+* [Ограничения]({{< ref "/docs/rate-limits.md" >}})
+* [Уведомления об истечении срока действия]({{< ref "/docs/expiration-emails.md" >}})
 
-# Advanced Subscriber Information
+# Расширенная информация для пользователей
 
-* [Staging Environment](/docs/staging-environment/)
-* [Certificate Compatibility](/docs/certificate-compatibility/)
-* [Chain of Trust (Root and Intermediate Certificates)](/certificates/)
-* [Upcoming Features](/upcoming-features/)
-* [Revoking Certificates](/docs/revoking/)
-* [Certificate Authority Authorization](/docs/caa/)
-* [Certificates for localhost](/docs/certificates-for-localhost/)
-* [Best Practice - Keep Port 80 Open](/docs/allow-port-80/)
-* [Challenge Types](/docs/challenge-types/)
+* [Staging Environment]({{< ref "/docs/staging-environment.md" >}})
+* [Certificate Compatibility]({{< ref "/docs/cert-compat.md" >}})
+* [Цепочка доверия (Корневые и промежуточные сертификаты)]({{< ref "/certificates.md" >}})
+* [Планируемый функционал]({{< ref "/upcoming-features.md" >}})
 
-# Client Developer Information
+* [Revoking Certificates]({{< ref "/docs/revoking.md" >}})
+* [Certificate Authority Authorization]({{< ref "/docs/caa.md" >}})
 
-* [Client and Large Provider Integration Guide](/docs/integration-guide/)
-* [ACME Protocol Updates](/docs/acme-protocol-updates/)
+* [Certificates for localhost]({{< ref "/docs/certificates-for-localhost.md" >}})
+* [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
+
+* [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
+* [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
+
+# Информация для разработчиков
+
+* [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
+
+* [ACME Protocol Updates]({{< ref "/docs/acme-protocol-updates.md" >}})
+
 * [Differences from Current ACME Draft](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [Finding Account IDs](/docs/account-id/)
+* [Finding Account IDs]({{< ref "/docs/account-id.md" >}})
+

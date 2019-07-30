@@ -2,6 +2,7 @@
 title: Próximas Funcionalidades
 slug: upcoming-features
 top_graphic: 1
+lastmod: 2018-12-31
 ---
 
 ## Certificate Transparency Log
@@ -10,17 +11,17 @@ top_graphic: 1
 
 Estamos planificando operar un "[certificate transparency log](http://www.certificate-transparency.org/how-ct-works)".
 
-## Validaci&oacute;n de Multi-Perspectiva
+## Validación de Multi-Perspectiva
 
 * ETA: Q2 2019
 
-Actualmente Let's Encrypt hace validaci&oacute;nes desde una sola perspectiva de red. Estamos planificando empezar a validar desde multiples perspectivas de red.
+Actualmente Let's Encrypt hace validaciónes desde una sola perspectiva de red. Estamos planificando empezar a validar desde multiples perspectivas de red.
 
-## Ra&iacute;z e Intermedios ECDSA
+## Raíz e Intermedios ECDSA
 
 * ETA: Q3 2019
 
-Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermedios RSA. Let's Encrypt generar&aacute; una ra&iacute;z ECDSA e intermedios que se pueden usar para firmar certificados *end-entity*.
+Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermedios RSA. Let's Encrypt generará una raíz ECDSA e intermedios que se pueden usar para firmar certificados *end-entity*.
 
 # Funcionalidades Completadas
 
@@ -28,9 +29,9 @@ Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermed
 
 * Habilitado: 12 de julio del 2018
 
-Hemos especificado e implementado un [reemplazo](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) para el m&eacute;todo de validaci&oacute;n TLS-SNI, el cual fue [discontinuado por razones de seguridad](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducir un reemplazo fue importante para subscriptores que solo quieren usar el puerto 443 para validaci&oacute;n.
+Hemos especificado e implementado un [reemplazo](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) para el método de validación TLS-SNI, el cual fue [discontinuado por razones de seguridad](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducir un reemplazo fue importante para subscriptores que solo quieren usar el puerto 443 para validación.
 
-## Inserci&oacute;n de recibos SCT en certificados
+## Inserción de recibos SCT en certificados
 
 * Habilitado: 29 de marzo del 2018
 
@@ -46,7 +47,7 @@ Hemos especificado e implementado un [reemplazo](https://datatracker.ietf.org/do
 
 * Habilitado: 20 de octubre del 2016
 
-Let's Encrypt ahora soporta emitici&oacute;n para *Internationalized Domain Names* (IDNs, por sus siglas en ingl&eacute;s).
+Let's Encrypt ahora soporta emitición para *Internationalized Domain Names* (IDNs, por sus siglas en inglés).
 
 ## Soporta completo para IPv6
 
@@ -58,16 +59,16 @@ Inicialmente, solo partes de la infraestructura del API de Let's Encrypt se podi
 
 * Habilitado: 25 de marzo del 2016
 
-Se resolvi&oacute; un problema con nuestra cadena de certificados que preven&iacute;a certificados Let's Encrypt  de ser aceptados por navegadores en Windows XP.
+Se resolvió un problema con nuestra cadena de certificados que prevenía certificados Let's Encrypt  de ser aceptados por navegadores en Windows XP.
 
 ## Soporte para firmar ECDSA
 
 * Habilitado: 10 de febrero del 2016
 
-Se agreg&oacute; la habilidad para Let's Encypt firmar llaves ECDSA con intermedios RSA de Let's Encrypt. Soporte para firmar llaves ECDSA con una cadena completa de certificados ECDSA ser&aacute; a&ntilde;dido despu&eacute;s.
+Se agregó la habilidad para Let's Encypt firmar llaves ECDSA con intermedios RSA de Let's Encrypt. Soporte para firmar llaves ECDSA con una cadena completa de certificados ECDSA será añdido después.
 
 ## Soporte para reto ACME DNS
 
 * Habilitado: 20 de enero del 2016
 
-Let's Encrypt permite validaci&oacute;n mediante registros DNS asi definidos en la especificaci&oacute;n ACME.
+Let's Encrypt permite validación mediante registros DNS asi definidos en la especificación ACME.
