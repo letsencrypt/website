@@ -1,5 +1,5 @@
 ---
-title: Chain of Trust
+title: 证书信任链
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01
