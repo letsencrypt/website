@@ -90,4 +90,4 @@ cuando lo emitimos. Puedes ver todos los certificados Let's Encrypt emitidos med
 
 Las llaves privadas para el AC raíz ISRG y los AC intermedios Let's Encrypt son almacenadas en módulos de seguridad de hardware (HSMs por sus siglas en inglés), lo que provee un alto grado de protecció contra el robo de las llaves.
 
-Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA](/es/upcoming-features/).
+Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA]({{< ref "/upcoming-features.md" >}}).

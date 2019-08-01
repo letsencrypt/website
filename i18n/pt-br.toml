@@ -32,8 +32,8 @@ other = "Doar"
 
 [footer_policies]
 other = """
-Veja nossa <a href="/privacy/">política de privacidade</a>.<br>
-Veja nossa <a href="/trademarks/">política de direitos autorais</a>.
+Veja nossa <a href="/pt-br/privacy/">política de privacidade</a>.<br>
+Veja nossa <a href="/pt-br/trademarks/">política de direitos autorais</a>.
 """
 
 [linux_foundation_trademark]
@@ -62,3 +62,17 @@ other = "Prata"
 
 [languages]
 other = "Idiomas"
+
+[view_in_english]
+other = "Visualizar em Inglês"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Ver em Português (do brasil)"
+
+[old_version]
+other = "Nota: A versão em Inglês foi atualizada desde a última tradução desta página."
+
+[not_yet_translated]
+other = "Esta página ainda não foi traduzida. Você pode contribuir <a href=\"https://github.com/letsencrypt/website\">aqui</a>."

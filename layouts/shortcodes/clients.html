@@ -1,5 +1,5 @@
 
-<h2>{{ .Get "acme_v2" }}</h2>
+<h2 id="acme-v2-compatible-clients">{{ .Get "acme_v2" }}</h2>
 
 <ul>
 {{ range $.Site.Data.clients.list }}
@@ -12,7 +12,7 @@
 </ul>
 
 {{ range $.Site.Data.clients.categories }}
-    <h2>{{ . }}</h2>
+    <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
     {{ $category := . }}
     <ul>
     {{ range $.Site.Data.clients.list }}
@@ -35,7 +35,7 @@
 {{ $certbot := .Inner }}
 
 {{ range $.Site.Data.clients.libraries }}
-    <h2>{{ . }}</h2>
+    <h2 id="libraries-{{ urlize . }}">{{ . }}</h2>
     {{ $library := . }}
     <ul>
     {{ if eq . "Python"}}
@@ -56,7 +56,7 @@
     </ul>
 {{ end }}
 
-<h1>{{ .Get "projects" }}</h1>
+<h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
 
 <ul>
 {{ range $.Site.Data.clients.projects }}

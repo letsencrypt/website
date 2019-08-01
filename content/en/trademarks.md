@@ -4,6 +4,7 @@ slug: trademarks
 top_graphic: 1
 date: 2018-09-19
 lastmod: 2018-09-19
+english_is_canonical: 1
 ---
 
 {{< lastmod >}}

@@ -4,6 +4,7 @@ slug: privacy
 top_graphic: 4
 date: 2018-06-22
 lastmod: 2018-06-22
+english_is_canonical: 1
 ---
 
 # Let's Encrypt Privacy Policy

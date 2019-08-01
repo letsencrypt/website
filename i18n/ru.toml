@@ -32,8 +32,8 @@ other = "Поддержите нас"
 
 [footer_policies]
 other = """
-Ознакомьтесь с нашей <a href="/privacy/">политикой конфиденциальности</a>.<br>
-Ознакомьтесь с нашей <a href="/trademarks/">политикой в отношении товарных знаков</a>.
+Ознакомьтесь с нашей <a href="/ru/privacy/">политикой конфиденциальности</a>.<br>
+Ознакомьтесь с нашей <a href="/ru/trademarks/">политикой в отношении товарных знаков</a>.
 """
 
 [linux_foundation_trademark]
@@ -62,3 +62,17 @@ other = "Серебряные"
 
 [languages]
 other = "Язык"
+
+[view_in_english]
+other = "Просмотреть на английском"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Просмотреть на русском"
+
+[old_version]
+other = "Внимание! Английская версия сайта была обновлена, перевод неактуален"
+
+[not_yet_translated]
+other = "Эта страница ещё не переведена. Вы можете внести свой вклад <a href=\"https://github.com/letsencrypt/website\">здесь</a>."

@@ -41,14 +41,30 @@
 						</a>
 					</p>
 					{{ end }}
+					{{ if and (eq .Language.Lang "ru") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="ru" href="{{ .Permalink }}">
+							Просмотреть на русском
+						</a>
+					</p>
+					{{ end }}
+					{{ if and (eq .Language.Lang "zh-cn") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="zh-cn" href="{{ .Permalink }}">
+							使用简体中文阅读本网页。
+						</a>
+					</p>
+					{{ end }}
 				{{ end }}
 			{{ end }}
 		{{ end }}
 		<script src="/js/i18n.js" defer async></script>
 
 	{{ if .Page.Params.untranslated }}
-	{{ $target := .Site.LanguagePrefix }}
-		<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+	
+		{{ if not .Page.Params.do_not_translate }}
+			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+		{{ end }}
 		
 		{{ $lang := .Page.Language.Lang }}
 		{{ $scratch := newScratch }}
@@ -61,13 +77,21 @@
 				{{/* search all English urls */}}
 					{{ range .Page.Translations }}
 						{{ if eq "en" .Language.Lang }}
-							{{ $url_en := printf "href=\"%s\"" .Page.RelPermalink }} 
+							{{ $en_link_page := .Page }}
+							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }} 
 							{{ range .Page.Translations }}
 								{{ if eq $lang .Language.Lang }}
+									{{/* Note: it also works for urls with anchor (#id) */}}
 									{{ $url_lang := printf "href=\"%s\"" .Page.RelPermalink }}
+
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+
 									{{/* now the English url without "/" in the end. */}}
 									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
+									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+									
+									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }} 
+									{{ $url_lang := printf "href=\"%s\"" .Page.Permalink }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
 								{{ end }}
 							{{ end }}
@@ -81,6 +105,11 @@
 
 		
 	{{ else }}
+		
+		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
+			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
+		{{ end }}
+	
 		{{ .Content }}
 	{{ end }}
 	</div>

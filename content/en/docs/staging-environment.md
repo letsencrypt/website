@@ -18,7 +18,7 @@ If you're using Certbot, you can use our staging environment with the `--dry-run
 
 # Rate Limits
 
-The staging environment uses the same rate limits as [described for the production environment](/docs/rate-limits/) with the following exceptions:
+The staging environment uses the same rate limits as [described for the production environment]({{< ref "/docs/rate-limits.md" >}}) with the following exceptions:
 
 * The **Certificates per Registered Domain** limit is 30,000 per week.
 * The **Duplicate Certificate** limit is 30,000 per week.
