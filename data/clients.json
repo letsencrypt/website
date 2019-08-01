@@ -708,6 +708,13 @@
 			"url": "https://github.com/graywolf/acme-client-portable",
 			"category": "C",
 			"acme_v2": "true"
-		}
+		},
+		{
+		    "name": "Mako Server's Let's Encrypt Plugin",
+		    "url": "https://makoserver.net/articles/Using-The-Lets-Encrypt-Plugin",
+		    "category": "Lua",
+		    "comments": "Main focus is to provide certificates for servers on private networks",
+		    "acme_v2": "true"
+		}		
 	]
 }
