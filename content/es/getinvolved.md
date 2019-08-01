@@ -19,7 +19,7 @@ Siempre podemos usar ayuda para el desarrollo de software. Todo nuestro código 
 
 ### Software Cliente
 
-[Certbot](https://github.com/certbot/certbot) es una utilidad basada en Python que trabaja junto a tu servidor web para obtener automáticamente un certificado y convertir un sitio web a HTTPS. Certbot es el cliente que recomendamos para comenzar para la mayoría de las personas. Muchas otras [opciones de terciarios](/docs/client-options/) están disponibles.
+[Certbot](https://github.com/certbot/certbot) es una utilidad basada en Python que trabaja junto a tu servidor web para obtener automáticamente un certificado y convertir un sitio web a HTTPS. Certbot es el cliente que recomendamos para comenzar para la mayoría de las personas. Muchas otras [opciones de terciarios]({{< ref "/docs/client-options.md" >}}) están disponibles.
 
 ### Software AC del lado del servidor
 

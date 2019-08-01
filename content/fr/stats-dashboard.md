@@ -13,7 +13,7 @@ date: 2018-04-12
     <div id="combinedTimeline" title="Chronologie de génération" class="statsgraph">
   </div>
 
-  <p><a href="/fr/stats/">https://letsencrypt.org/fr/stats/</a></p>
+  <p><a href="{{< ref "/stats.md" >}}">{{< ref "/stats.md" >}}</a></p>
 </div>
 
 <script src="/js/stats.js"></script>
