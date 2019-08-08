@@ -1,78 +1,90 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt是一个<span>免费</span>,<span>自动化</span>,和 <span>公开</span> 的证书颁发机构."
+other = "Let&rsquo;s Encrypt是<span>免费</span>、<span>开放</span>和<span>自动化</span>的证书颁发机构"
 
 [home_hero_getting_started]
-other = "入门"
+other = "快速入门"
 
 [home_hero_donate]
 other = "捐赠"
 
 [home_hero_sponsor]
-other = "赞助"
+other = "成为赞助商"
 
 [home_major_sponsors]
-other = "主要赞助商和捐助者"
+other = "主要赞助商和捐赠者"
 
 [home_from_our_blog]
 other = "博客文章"
 
 [read_more]
-other = "阅读更多"
+other = "阅读全文"
 
 [subscribe_rss]
-other = "通过<a href=\"{{ .Permalink }}\">RSS</a>订阅"
+other = """
+<svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="display: inline-block; width: 16px; height: 16px; vertical-align: -10%;">
+  <path fill="#828282" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z" />
+</svg>
+<a href=\"{{ .Permalink }}\">RSS订阅</a>
+"""
 
 [footer_support_us]
-other = "支持更安全，更尊重隐私的互联网."
+other = "支持更安全、更尊重隐私的互联网。"
 
 [footer_donate]
 other = "捐赠"
 
 [footer_policies]
 other = """
-查看我们的<a href="/zh-cn/privacy/">隐私政策</a>.<br>
-查看我们的<a href="/zh-cn/trademarks/">商标政策</a>.
+<a href="/privacy/">隐私政策</a><br />
+<a href="/trademarks/">商标政策</a>
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation是The Linux Foundation的注册商标。 Linux是Linus Torvalds的注册商标."
+other = "“Linux Foundation”是Linux基金会的注册商标。“Linux”是Linus Torvalds的注册商标。"
 
 [header_skip_nav]
 other = "跳过导航链接"
 
 [last_updated]
-other = "最后更新于"
+other = "最后更新："
 
 [see_all_doc]
-other = "查看所有文档"
+other = "所有文档"
 
 [blog_feed]
-other = "Let's Encrypt博客feed"
+other = "Let's Encrypt Blog Feed"
 
 [platinum]
-other = "铂金"
+other = "铂金赞助商"
 
 [gold]
-other = "金"
+other = "金牌赞助商"
 
 [silver]
-other = "银"
+other = "银牌赞助商"
 
 [languages]
-other = "语言"
+other = "切换语言"
 
 [view_in_english]
-other = "查看英文版本"
+other = "阅读英文页面"
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
 # (nb: used manually in layout/single.html)
-other = "使用简体中文阅读本网页。"
+other = "阅读中文（大陆简体）页面"
 
 [old_version]
-other = "请注意：英文版本（原版）在本翻译后有改动"
+other = "注意：本页面有较新的英文版本。"
 
 [not_yet_translated]
-other = "该网页暂时未被翻译。 您可以点击 <a href=\"https://github.com/letsencrypt/website\">此处</a> 帮助我们翻译此网页。"
+other = "此页面尚未翻译。要贡献翻译，请<a href=\"https://github.com/letsencrypt/website\">点击此处</a>。"
+
+[english_is_canonical]
+other = """
+<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+  以英文页面为准
+</div>
+"""
