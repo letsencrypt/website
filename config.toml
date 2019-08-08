@@ -213,7 +213,7 @@ description = """
  url = "https://www.abetterinternet.org/careers/"  
 
 [languages.zh-tw]
-title = "Let's Encrypt - 免費SSL/TLS證書"
+title = "Let's Encrypt - 免費SSL/TLS憑證"
 languageName = "正體中文"
 contentDir = "content/zh-tw"
 languageCode= "zh-tw"
