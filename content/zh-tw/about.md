@@ -23,4 +23,4 @@ Let's Encrypt的關鍵原則為：
 * <strong>公開:</strong> 自動頒發/續期憑證的協議（"Protocol"）將作為其他人可以使用的開放標準發佈。
 * <strong>樂於合作:</strong> 就像互聯網底層協議本身一樣，Let's Encrypt是一項讓整體互聯網社區受益的共同工作，超出任何單一組織的控制範圍。
 
-我們有一個頁面，其中包含更多關於[Let's Encrypt CA是如何工作的]({{< ref "/how-it-works.md" >}})的詳細信息
+我們有一個頁面，其中包含更多關於[Let's Encrypt CA是如何工作的]({{< ref "/how-it-works.md" >}})的詳細資訊

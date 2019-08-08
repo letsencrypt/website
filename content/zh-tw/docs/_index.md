@@ -15,13 +15,13 @@ lastmod: 2019-05-15
 * [常問問題 (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})
 
-# 用戶（訂戶）信息
+# 用戶（訂戶）資訊
 
 * [ACME客戶端]({{< ref "/docs/client-options.md" >}})
 * [速率限制]({{< ref "/docs/rate-limits.md" >}})
 * [過期提醒郵件]({{< ref "/docs/expiration-emails.md" >}})
 
-# 高級用戶（訂戶）信息
+# 高級用戶（訂戶）資訊
 
 * [測試環境]({{< ref "/docs/staging-environment.md" >}})
 * [憑證兼容性]({{< ref "/docs/cert-compat.md" >}})
@@ -37,7 +37,7 @@ lastmod: 2019-05-15
 * [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
 * [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
 
-# 客戶端開發者信息
+# 客戶端開發者資訊
 
 * [客戶端和大型提供商整合指南]({{< ref "/docs/integration-guide.md" >}})
 
