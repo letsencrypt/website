@@ -251,7 +251,7 @@ description = """
   parent = "about"
   url = "https://letsencrypt.status.io/"
 [[languages.zh-tw.menu.main]]
- name = "工作機會"
+ name = "招募"
  weight = 80
  identifier = "careers"
  parent = "about"
