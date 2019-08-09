@@ -9,6 +9,9 @@ other = "시작하기"
 [home_hero_donate]
 other = "후원하기"
 
+[home_hero_sponsor]
+other = "Sponsor"
+
 [home_major_sponsors]
 other = "주요 스폰서와 후원사"
 
@@ -59,3 +62,20 @@ other = "Silver"
 
 [languages]
 other = "언어"
+
+[view_in_english]
+other = "View in English"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "View in English"
+
+[old_version]
+other = "Note: The English version has been updated since the translation"
+
+[not_yet_translated]
+other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+
+[english_is_canonical]
+other = "The English version is authoritative"
