@@ -49,7 +49,7 @@ Nuestro intermedio es firmado por ISRG Root X1. Sin embargo, ya que somos una au
 muy nueva, ISRG Root X1 aún no es confiado en la mayoría de los navegadores.
 A fin de que seamos ampliamente confiados de inmediato, nuestro intermedio es *cross-signed* por otra autoridad
 de certificación, IdenTrust, cuya raíz ya está confiada en todos los navegadores.
-Especificamente, IdenTrust ha *cross-signed* nuestro intermedio usando su [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+Especificamente, IdenTrust ha *cross-signed* nuestro intermedio usando su "DST Root CA X3" (ahora llamado "TrustID X3 Root"). [Descarga "TrustID X3 Root" en identrust.com](https://www.identrust.com/support/downloads) (o, alternativamente, puedes descargar una copia aquí: [.pem](https://letsencrypt.org/certs/trustid-x3-root.pem.txt), [.p7b](https://letsencrypt.org/certs/trustid-x3-root.p7b)).
 
 Eso significa que hay dos certificados disponibles que ambos representan nuestro
 intermedio. Uno es firmado por DST Root CA X3, y el otro es firmado por ISRG Root X1.
