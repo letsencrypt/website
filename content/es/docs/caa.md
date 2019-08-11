@@ -22,7 +22,7 @@ Si deseas usar CAA para restringir cuales Autoridades de Certificación están p
 emitir certificados para tu dominio, necesitaran un proveedor de DNS que soporte la configuración
 de registros CAA. Comprueba la [página sobre CAA de SSLMate](https://sslmate.com/caa/support) para una lista de tales proveedores. Si tu proveedor está listado, puedes usar el [Generador de Registro CAA de SSLMate](https://sslmate.com/caa/) para generar un set de registros CAA listando los ACs que quieres permitir.
 
-El dominio identificador de Let's Encrypt para CAA es `letsencrypt.org`. Esto es documentado oficialmente [en nuestro Certification Practice Statement (CPS), secció 4.2.1](/repository/).
+El dominio identificador de Let's Encrypt para CAA es `letsencrypt.org`. Esto es documentado oficialmente [en nuestro Certification Practice Statement (CPS), secció 4.2.1]({{< ref "/repository.md" >}}).
 
 ## Dónde Poner el Record
 
