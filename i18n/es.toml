@@ -62,3 +62,17 @@ other = "Plata"
 
 [languages]
 other = "Lenguajes"
+
+[view_in_english]
+other = "Ver en inglés"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Ver en español"
+
+[old_version]
+other = "Nota: The version en inglés ha sido actualizada desde está traducción"
+
+[not_yet_translated]
+other = "Está página de web aún no ha sido traducida. Puedes contribuir <a href=\"https://github.com/letsencrypt/website\">aquí</a>."
