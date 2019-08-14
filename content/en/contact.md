@@ -2,7 +2,7 @@
 title: Contact
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-08-14
 menu:
   main:
     weight: 90
@@ -29,7 +29,7 @@ To sign up for our newsletter, [click here.](https://letsencrypt.us14.list-manag
 
 ## Security
 
-Please do not write to this address unless your message concerns a security issue with Let's Encrypt.
+Report a potential security vulnerability to Let's Encrypt. The minimal data needed for reporting a security issue is a description of the potential vulnerability. This is not a method to contact technical support.
 
 Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
