@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-02",
+	"lastmod": "2019-08-15",
 	"categories": [
 		"Bash",
 		"C",
@@ -127,6 +127,10 @@
 		{
 			"name": "Vesta Control Panel",
 			"url": "https://vestacp.com/"
+		},
+		{
+			"name": "Apache HTTP Server",
+			"url": "https://httpd.apache.org"
 		}
 	],
 	"list": [
@@ -715,6 +719,20 @@
 			"category": "Lua",
 			"comments": "The plugin's main objective is to provide certificates for servers on private networks.",
 			"acme_v2": "true"
+		},
+		{
+			"name": "Apache httpd",
+			"url": "https://httpd.apache.org",
+			"comments": "Support via the module mod_md.",
+			"acme_v2": "Apache >= 2.4.41",
+			"category": "C"
+		},
+		{
+			"name": "mod_md",
+			"url": "https://github.com/icing/mod_md",
+			"comments": "Separate, more frequent releases of the Apache module.",
+			"acme_v2": "v2.0.x onwards",
+			"category": "C"
 		}
 	]
 }
