@@ -2,16 +2,14 @@
 title: Contact
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-08-14
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## Support
-
-If you have questions about how to use Let's Encrypt, please ask on [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+**We do not provide support via email. If you have a support question please use our [community forums](https://community.letsencrypt.org). The below email addresses are only for the specific topics described.**
 
 ## Press Inquiries
 
@@ -29,7 +27,7 @@ To sign up for our newsletter, [click here.](https://letsencrypt.us14.list-manag
 
 ## Security
 
-Please do not write to this address unless your message concerns a security issue with Let's Encrypt.
+**Please do not write to this address unless your message concerns a security issue with Let's Encrypt.**
 
 Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
