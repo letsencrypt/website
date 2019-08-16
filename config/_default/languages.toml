@@ -40,7 +40,7 @@ contentDir = "content/ru"
 languageName ="Русский"
 languageCode= "ru-ru"
 beforeColon= ""
-weight = 60
+weight = 40
 description = """
   Let&rsquo;s&nbsp;Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
@@ -64,7 +64,7 @@ languageName = "简体中文"
 contentDir = "content/zh-cn"
 languageCode= "zh-cn"
 beforeColon= ""
-weight = 40
+weight = 60
 description = """
   Let's Encrypt 是由非营利性互联网安全研究组（ISRG）提供给您的免费，自动化和开放的证书颁发机构。
 """
