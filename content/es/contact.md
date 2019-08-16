@@ -2,16 +2,14 @@
 title: Contactar
 slug: contact
 top_graphic: 1
-lastmod: 2018-09-19
+lastmod: 2019-08-14
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## Apoyo
-
-Si tienes preguntas sobre cómo usar Let's Encrypt, por favor pregunta en [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+**No proveemos apoyo mediante correo electrónico (email). Si tienes preguntas de apoyo por favor usa nuestros [foros comunitarios](https://community.letsencrypt.org/). Los correos electrónicos abajo son solamente para esos topicos especificos.**
 
 ## Preguntas de la Prensa
 
