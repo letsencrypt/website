@@ -72,7 +72,7 @@ other = "Ver en inglés"
 other = "Ver en español"
 
 [old_version]
-other = "Nota: The version en inglés ha sido actualizada desde está traducción"
+other = "Nota: La versión en inglés ha sido actualizada desde está traducción"
 
 [not_yet_translated]
 other = "Está página de web aún no ha sido traducida. Puedes contribuir <a href=\"https://github.com/letsencrypt/website\">aquí</a>."

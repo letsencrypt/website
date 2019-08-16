@@ -7,7 +7,7 @@ lastmod: 2018-09-20
 
 # Certificados Raíz
 
-Nuestras raíces son seguramente mantenidas "offline". Emitimos certificados de entidad final a subscriptores de los intermedios en la siguiente sección.
+Nuestras raíces son seguramente mantenidas "offline". Emitimos certificados de entidad final a subscriptores de los siguientes intermedios.
 
 * Activo
   * [ISRG Root X1 (autofirmado)](/certs/isrgrootx1.pem.txt)
@@ -23,9 +23,9 @@ Hemos configurado sitios web para probar certificados encadenados a nuestras ra�
 
 # Certificados Intermedios
 
-IdenTrust ha firmado (firma cruzada, *cross-signed* en inglés) nuestros intermedios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras nosotros propagamos nuestra propia raíz.
+IdenTrust ha firmado (firma cruzada, *cross-signed* en inglés) nuestros intermedios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras propagamos nuestra propia raíz.
 
-Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", está reservado para recuperación de desastre y solo se usará si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermedios X1 y X2 fueron nuestra primera generació de intermedios. Los hemos reemplazado con intermedios que son más compatibles con Windows XP.
+Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", está reservado para recuperación de desastre y solo se usará si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermedios X1 y X2 fueron nuestra primera generación de intermedios. Los hemos reemplazado con intermedios que son más compatibles con Windows XP.
 
 * Activo
   * [Let's Encrypt Authority X3 (Firmado por IdenTrust)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
