@@ -28,7 +28,8 @@
       const lang_el = e.closest("[lang]");
       const lang = lang_el ? lang_el.lang : "en";
       if (lang !== "en") {
-        const date = new Date(e.dateTime);
+        const [y,m,d] = e.dateTime.split("-");
+        const date = new Date(y,m,d);
         const options = styles[e.dataset.dateFormat] || styles["Jan 2, 2006"];
         e.innerHTML = date.toLocaleDateString(lang, options);
       }
