@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-15",
+	"lastmod": "2019-08-17",
 	"categories": [
 		"Bash",
 		"C",
@@ -568,6 +568,7 @@
 		{
 			"name": "eggsampler/acme",
 			"url": "https://github.com/eggsampler/acme",
+			"acme_v2": "true",
 			"library": "Go"
 		},
 		{
