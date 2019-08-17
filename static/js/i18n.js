@@ -23,14 +23,14 @@
     const styles = {
       "Jan 2, 2006" : { day: "numeric", month: "short", year: "numeric" }
     }
-    const times = document.querySelectorAll("time[data-dateFormat]");
+    const times = document.querySelectorAll("time[data-dateformat]");
     times.forEach( e => {
       const lang_el = e.closest("[lang]");
       const lang = lang_el ? lang_el.lang : "en";
       if (lang !== "en") {
         const [y,m,d] = e.dateTime.split("-").map(s => { return parseInt(s,10); });
         const date = new Date(y,m-1,d);
-        const options = styles[e.dataset.dateFormat] || styles["Jan 2, 2006"];
+        const options = styles[e.dataset.dateformat] || styles["Jan 2, 2006"];
         e.innerHTML = date.toLocaleDateString(lang, options);
       }
     });  
