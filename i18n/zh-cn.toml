@@ -37,8 +37,8 @@ other = "捐赠"
 
 [footer_policies]
 other = """
-<a href="/privacy/">隐私政策</a><br />
-<a href="/trademarks/">商标政策</a>
+查看我们的<a href="/zh-cn/privacy/">隐私政策</a><br />
+查看我们的<a href="/zh-cn/trademarks/">商标政策</a>
 """
 
 [linux_foundation_trademark]
