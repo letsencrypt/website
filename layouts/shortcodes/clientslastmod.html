@@ -1,1 +1,6 @@
-<p>{{ i18n "last_updated" }} {{ dateFormat "January 2, 2006" .Site.Data.clients.lastmod }}{{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}</p>
+<p>{{ i18n "last_updated" }}
+        <time datetime="{{ dateFormat "2006-01-02" .Site.Data.clients.lastmod }}" data-dateFormat="{{ $.Site.Params.time_format_default }}">
+            {{ dateFormat $.Site.Params.time_format_default .Site.Data.clients.lastmod }}
+        </time>
+    {{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
+</p>
