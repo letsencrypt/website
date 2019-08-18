@@ -78,3 +78,10 @@ other = "请注意：英文版本（原版）在本翻译后有改动"
 
 [not_yet_translated]
 other = "该网页暂时未被翻译。您可以点击<a href=\"https://github.com/letsencrypt/website\">此处</a>帮助我们翻译此网页。"
+
+[english_is_canonical]
+other = """
+<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+  此页内容请以英文页面为准
+</div>
+"""
