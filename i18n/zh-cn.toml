@@ -29,7 +29,7 @@ other = """
 <a href=\"{{ .Permalink }}\">RSS订阅</a>
 """
 
-[footer_support_us
+[footer_support_us]
 other = "支持更安全、更尊重隐私的互联网。"
 
 [footer_donate]
