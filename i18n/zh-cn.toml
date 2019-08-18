@@ -29,7 +29,7 @@ other = """
 <a href=\"{{ .Permalink }}\">RSS订阅</a>
 """
 
-[footer_support_us]
+[footer_support_us
 other = "支持更安全、更尊重隐私的互联网。"
 
 [footer_donate]
@@ -70,6 +70,7 @@ other = "切换语言"
 
 [view_in_english]
 other = "阅读英文页面"
+
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.

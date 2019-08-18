@@ -45,7 +45,7 @@
         <div class="pure-u-1 pure-u-md-1-2">
           <div class='grid-container'>
             <h2 class="through-line"><a href="{{ "sponsors/" | relLangURL }}">{{ i18n "home_major_sponsors" }}</a></h2>
-            <div class="text-center">
+            <div class="text-center home_sponsors">
 {{ range $.Site.Data.sponsors.platinum }}
               <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
