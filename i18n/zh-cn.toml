@@ -86,6 +86,6 @@ other = "此页面尚未翻译。要贡献翻译，请<a href=\"https://github.c
 [english_is_canonical]
 other = """
 <div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
-  以英文页面为准
+  此页内容请以英文页面为准
 </div>
 """
