@@ -170,7 +170,7 @@ description = """
 [languages.zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
-languageName ="中文（大陆简体）"
+languageName ="中文（中国）"
 languageCode= "zh-cn"
 #if colon ":" must be prefixed
 beforeColon= ""
