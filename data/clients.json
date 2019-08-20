@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-19",
+	"lastmod": "2019-08-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -269,12 +269,6 @@
 			"url": "https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/",
 			"category": "Microsoft Azure",
 			"comments": "(Compatible with any App Service)"
-		},
-		{
-			"name": "Azure WebApp SSL Manager",
-			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
-			"category": "Microsoft Azure",
-			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)"
 		},
 		{
 			"name": "lua-resty-auto-ssl",
@@ -739,6 +733,13 @@
 			"comments": "Separate, more frequent releases of the Apache module.",
 			"acme_v2": "v2.0.x onwards",
 			"category": "C"
+		},
+		{
+			"name": "Azure WebApp SSL Manager",
+			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
+			"category": "Microsoft Azure",
+			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)",
+			"acme_v2": "true"
 		}
 	]
 }
