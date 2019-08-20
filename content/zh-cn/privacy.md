@@ -39,7 +39,7 @@ Let’s Encrypt隐私政策将从三个情景来描述我们如何收集、使�
 
 如果您注册使用Let’s Encrypt社区支持论坛，您提供的个人信息和您在那里的行为受我们的服务托管商和论坛软件提供商[Civilized Discourse Construction Kit](https://www.discourse.org/privacy) 的隐私政策的约束。我们不会通过提供此支持论坛来收集或维护个人信息。
 
-此外，我们使用Google Analytics来估计网站上的流量和热门网页。作为该服务的一部分，我们会在我们的网站上放置Google Analytics的Cookies。这些Cookies不包含个人信息，但可以在我们的网站上随时间唯一识别您的浏览器软件。我们尊重[Do Not Track](http://donottrack.us/)请求头，为所有访客严格限制我们的分析服务可以收集和分享的信息。
+此外，我们使用Google Analytics来估计网站上的流量和热门网页。作为该服务的一部分，我们会在我们的网站上放置Google Analytics的Cookies。这些Cookies不包含个人信息，但可以在我们的网站上随时间唯一识别您的浏览器软件。我们尊重[Do Not Track](http://donottrack.us/)请求标头，为所有访客严格限制我们的分析服务可以收集和分享的信息。
 
 ## 执法请求与情有可原的情况
 
