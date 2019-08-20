@@ -85,7 +85,7 @@ date: 2018-12-30
 
 {{% def id="ISRG" name="互联网安全研究组" english="Internet Security Research Group" abbr="ISRG" %}} 运营[Let's Encrypt](#def-LE)的组织：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。[维基百科条目](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
-{{% def id="issuer" name="证书颁发者" english="Certificate issuer" %}} 证书中的"颁发者"字段描述了对该证书进行签名的证书。例如，Let's Encrypt颁发的终端实体证书的颁发者字段可能是：“Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3”。它通常包含[通用名陈](#def-CN)、国家、组织等字段。颁发者字段必须与某个证书的[主体](#def-subject)字段一致。对于[自签名证书](#def-self-signed)（例如[根证书](#def-root)）来说，颁发者字段和其主体字段内容相同。“颁发者”这个词也可以被用于指代颁发其他证书的证书（[中间证书](#def-intermediate)或根证书)或组织。 {{% /def %}}
+{{% def id="issuer" name="证书颁发者" english="Certificate issuer" %}} 证书中的"颁发者"字段描述了对该证书进行签名的证书。例如，Let's Encrypt颁发的终端实体证书的颁发者字段可能是：“Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3”。它通常包含[通用名称](#def-CN)、国家、组织等字段。颁发者字段必须与某个证书的[主体](#def-subject)字段一致。对于[自签名证书](#def-self-signed)（例如[根证书](#def-root)）来说，颁发者字段和其主体字段内容相同。“颁发者”这个词也可以被用于指代颁发其他证书的证书（[中间证书](#def-intermediate)或根证书)或组织。 {{% /def %}}
 
 {{% def id="key-pair" name="密钥对" english="Key-pair" %}} 用于签名或加密的公钥和私钥的组合。公钥通常嵌入在证书中，而私钥则独立保密存储。根据不同的应用情况，密钥对可以用于加密和解密、签名和验证数据或是协商二级密钥。[Wikipedia](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86) {{% /def %}}
 
