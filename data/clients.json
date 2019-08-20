@@ -274,7 +274,7 @@
 			"name": "Azure WebApp SSL Manager",
 			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
 			"category": "Microsoft Azure",
-			"comments": "(Serverless, Compatiblec with any App Service, requires Azure DNS)"
+			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)"
 		},
 		{
 			"name": "lua-resty-auto-ssl",
