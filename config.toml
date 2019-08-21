@@ -350,6 +350,51 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
+[languages.id]
+title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
+contentDir = "content/id"
+languageName ="Bahasa Indonesia"
+languageCode= "id-id"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 10
+description = """
+  Let&rsquo;s&nbsp;Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
+  dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.id.menu.main]]
+ name = "Dapatkan Bantuan"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.id.menu.main]]
+ name = "Donasi"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.id.menu.main]]
+ name = "Tentang Kami"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.id.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.id.menu.main]]
+ name = "Status Layanan"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.id.menu.main]]
+ name = "Karir"
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]
