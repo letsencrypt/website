@@ -115,7 +115,7 @@ date: 2018-12-30
 
 {{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由Mozilla维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。例如，这个列表同时包含了`com`和`co.uk`，尽管`co.uk`不是TLD。网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享Cookies。[Let's Encrypt](#def-LE)也使用这个列表来计算速率限制：[{{< ref "/rate-limits.md" >}}]({{< ref "/rate-limits.md" >}})。https://publicsuffix.org/ {{% /def %}}
 
-{{% def id="relying-party" name="依赖方" english="Relying Party" %}} 依赖证书中的信息的人。例如，访问HTTPS网站的人是一个依赖方。 {{% /def %}}
+{{% def id="relying-party" name="信任方" english="Relying Party" %}} 依赖证书中的信息的人。例如，访问HTTPS网站的人是一个信任方。 {{% /def %}}
 
 {{% def id="revocation" name="吊销" english="Revocation" %}} 证书在其到期之前一直有效，除非[CA](#def-CA)声明它被吊销了。证书可能因包括私钥泄露在内的多种原因被吊销。浏览器可以通过[CRL](#def-CRL)、[OCSP](#def-OCSP)或像[OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/)和[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)一类的较新的方法来检查证书是否被吊销。注意在许多情况下，[吊销证书是没有用的](https://www.imperialviolet.org/2011/03/18/revocation.html)。[{{< ref "/docs/revoking.md" >}}]({{< ref "/docs/revoking.md" >}}) {{% /def %}}
 
