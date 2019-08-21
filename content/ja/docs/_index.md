@@ -1,5 +1,4 @@
 ---
-untranslated: 0
 title: ドキュメント
 top_graphic: 1
 menu: "main"
@@ -7,6 +6,7 @@ menu:
   main:
     weight: 10
 lastmod: 2019-05-15
+untranslated: 0
 ---
 
 # 概要
