@@ -69,17 +69,24 @@
 						</a>
 					</p>
 					{{ end }}
+					{{ if and (eq .Language.Lang "ja") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="es" href="{{ .Permalink }}">
+							日本語で表示する
+						</a>
+					</p>
+					{{ end }}
 				{{ end }}
 			{{ end }}
 		{{ end }}
 		<script src="/js/i18n.js" defer async></script>
 
 	{{ if .Page.Params.untranslated }}
-	
+
 		{{ if not .Page.Params.do_not_translate }}
 			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
 		{{ end }}
-		
+
 		{{ $lang := .Page.Language.Lang }}
 		{{ $scratch := newScratch }}
 
@@ -92,7 +99,7 @@
 					{{ range .Page.Translations }}
 						{{ if eq "en" .Language.Lang }}
 							{{ $en_link_page := .Page }}
-							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }} 
+							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }}
 							{{ range .Page.Translations }}
 								{{ if eq $lang .Language.Lang }}
 									{{/* Note: it also works for urls with anchor (#id) */}}
@@ -103,8 +110,8 @@
 									{{/* now the English url without "/" in the end. */}}
 									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
-									
-									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }} 
+
+									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }}
 									{{ $url_lang := printf "href=\"%s\"" .Page.Permalink }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
 								{{ end }}
@@ -117,13 +124,13 @@
 			{{ end }}
 		{{ end }}
 
-		
+
 	{{ else }}
-		
+
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
 			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
 		{{ end }}
-	
+
 		{{ .Content }}
 	{{ end }}
 	</div>

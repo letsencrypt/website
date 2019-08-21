@@ -210,7 +210,7 @@ description = """
  weight = 80
  identifier = "careers"
  parent = "about"
- url = "https://www.abetterinternet.org/careers/"  
+ url = "https://www.abetterinternet.org/careers/"
 
 [languages.zh-tw]
 title = "Let's Encrypt - 免費SSL/TLS憑證"
@@ -255,7 +255,7 @@ description = """
  weight = 80
  identifier = "careers"
  parent = "about"
- url = "https://www.abetterinternet.org/careers/"  
+ url = "https://www.abetterinternet.org/careers/"
 
 [languages.de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
@@ -436,6 +436,52 @@ description = """
  url = "https://letsencrypt.status.io/"
  [[languages.id.menu.main]]
  name = "Karir"
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
+[languages.ja]
+title = "Let's Encrypt - フリーな SSL/TLS 証明書"
+contentDir = "content/ja"
+languageName ="日本語"
+languageCode= "ja"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 50
+description = """
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+[[languages.ja.menu.main]]
+ name = "コミュニティ"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.ja.menu.main]]
+ name = "寄付"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.ja.menu.main]]
+ name = "私たちについて"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.ja.menu.main]]
+ name = "インターネット・セキュリティ研究グループ (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.ja.menu.main]]
+ name = "サービス・ステータス"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.ja.menu.main]]
+ name = "キャリア"
+ weight = 80
  identifier = "careers"
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
