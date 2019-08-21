@@ -75,7 +75,7 @@ date: 2018-12-30
 
 {{% def id="FQDN" name="完全限定域名" english="Fully qualified domain name" abbr="FQDN" %}} 网站的完整域名。例如`www.example.com`就是一个*FQDN*。 {{% /def %}}
 
-{{% def id="IdenTrust" english="IdenTrust" %}} [证书颁发机构](#def-CA)。IdenTrust[交叉签名](#def-cross-signing)了[Let's Encrypt](#def-LE)的[中间证书](#def-intermediate)：[{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}})。 [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
+{{% def id="IdenTrust" english="IdenTrust" %}} [证书颁发机构](#def-CA)。IdenTrust[交叉签名](#def-cross-signing)了[Let's Encrypt](#def-LE)的[中间证书](#def-intermediate)：[{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}})。 [维基百科条目](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="中间证书" english="Intermediate certificate" %}} 被[根证书](#def-root)或另一个空间证书签名的，能够对其他证书签名的证书。它们被用于在保持根证书的私钥离线的前体下对叶证书进行签名。中间证书会被包含在[证书链](#def-chain)中。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E8%AD%89%E6%9B%B8%E7%A8%AE%E9%A1%9E) {{% /def %}}
 
@@ -87,7 +87,7 @@ date: 2018-12-30
 
 {{% def id="issuer" name="证书颁发者" english="Certificate issuer" %}} 证书中的"颁发者"字段描述了对该证书进行签名的证书。例如，Let's Encrypt颁发的终端实体证书的颁发者字段可能是：“Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3”。它通常包含[通用名称](#def-CN)、国家、组织等字段。颁发者字段必须与某个证书的[主体](#def-subject)字段一致。对于[自签名证书](#def-self-signed)（例如[根证书](#def-root)）来说，颁发者字段和其主体字段内容相同。“颁发者”这个词也可以被用于指代颁发其他证书的证书（[中间证书](#def-intermediate)或根证书)或组织。 {{% /def %}}
 
-{{% def id="key-pair" name="密钥对" english="Key-pair" %}} 用于签名或加密的公钥和私钥的组合。公钥通常嵌入在证书中，而私钥则独立保密存储。根据不同的应用情况，密钥对可以用于加密和解密、签名和验证数据或是协商二级密钥。[Wikipedia](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86) {{% /def %}}
+{{% def id="key-pair" name="密钥对" english="Key-pair" %}} 用于签名或加密的公钥和私钥的组合。公钥通常嵌入在证书中，而私钥则独立保密存储。根据不同的应用情况，密钥对可以用于加密和解密、签名和验证数据或是协商二级密钥。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86) {{% /def %}}
 
 {{% def id="leaf" name="叶证书（终端实体证书）" english="Leaf certificate (end-entity certificate)" %}} 大多数情况下，证书由[中间证书](#def-intermediate)签名，对一组域名有效，且不能对其他证书签名。由[ACME客户端](#def-ACME-client)请求并由[网页服务器](#def-web-server)使用的就是此类证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%82%E7%AB%AF%E5%AF%A6%E9%AB%94%E8%AD%89%E6%9B%B8) {{% /def %}}
 
@@ -147,11 +147,11 @@ date: 2018-12-30
 
 {{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" %}} 包含多个[主体备用名称（SAN）](#def-SAN)的证书。 {{% /def %}}
 
-{{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 用于显示网页的[用户代理](#def-user-agent)。例如：*Mozilla Firefox*，*Google Chrome* 和*Internet Explorer*。[Wikipedia](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8) {{% /def %}}
+{{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 用于显示网页的[用户代理](#def-user-agent)。例如：*Mozilla Firefox*，*Google Chrome* 和*Internet Explorer*。[维基百科条目](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8) {{% /def %}}
 
 {{% def id="user-agent" name="用户代理" english="User Agent" %}} 能够与[网页服务器](#def-web-server)通信的软件。例如：[网页浏览器](#def-web-browser)和[cURL](https://zh.wikipedia.org/wiki/CURL)。 {{% /def %}}
 
-{{% def id="web-server" name="网页服务器" english="Web server" %}} 提供网页服务的软件（广义上也可以指运行该软件的硬件）。 [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
+{{% def id="web-server" name="网页服务器" english="Web server" %}} 提供网页服务的软件（广义上也可以指运行该软件的硬件）。 [维基百科条目](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
 
 {{% def id="wildcard" name="通配符证书" english="Wildcard Certificate" %}} 对整一级子域名有效的证书。例如，含有`*.example.com`[SAN](#def-SAN)的证书对`blog.example.com`和`www.example.com`都有效，但是对`bork.bork.example.com`或`example.com`都**无效**。在子域名处使用星号（*）即表示通配符。[Let's Encrypt](#def-LE)[从2018年3月起提供通配符证书](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579)。[维基百科条目](https://zh.wikipedia.org/wiki/%E9%80%9A%E9%85%8D%E7%AC%A6%E8%AF%81%E4%B9%A6) {{% /def %}}
 
