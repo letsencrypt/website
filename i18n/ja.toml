@@ -75,7 +75,7 @@ other = "日本語で表示する"
 other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"
 
 [not_yet_translated]
-other = "このウェブページはまだ翻訳されていません。誰でも<a href=\"https://github.com/letsencrypt/website\">このページ</a>から翻訳にコントリビューションできます。"
+other = "このウェブページはまだ翻訳されていません。<a href=\"https://github.com/letsencrypt/website\">このページ</a>から誰でも翻訳にコントリビュートできます。"
 
 [english_is_canonical]
 other = "英語バージョンが正式な文章です"
