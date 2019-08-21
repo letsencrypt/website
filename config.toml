@@ -212,6 +212,51 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"  
 
+[languages.zh-tw]
+title = "Let's Encrypt - 免費SSL/TLS憑證"
+languageName = "正體中文"
+contentDir = "content/zh-tw"
+languageCode= "zh-tw"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 40
+description = """
+  Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的證書頒發機構。
+  """
+[[languages.zh-tw.menu.main]]
+  name = "獲取幫助"
+  weight = 20
+  url = "https://community.letsencrypt.org/"
+[[languages.zh-tw.menu.main]]
+  name = "捐贈"
+  weight = 30
+  identifier = "donate"
+  url = "/zh-tw/donate/"
+[[languages.zh-tw.menu.main]]
+  name = "關於我們"
+  weight = 40
+  identifier = "about"
+  url = "/zh-tw/about/"
+[[languages.zh-tw.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+[[languages.zh-tw.menu.main]]
+  name = "服務狀態"
+  weight = 60
+  identifier = "status"
+  parent = "about"
+  url = "https://letsencrypt.status.io/"
+[[languages.zh-tw.menu.main]]
+ name = "招募"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"  
+
 [languages.de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
