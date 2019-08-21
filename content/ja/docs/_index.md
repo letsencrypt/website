@@ -1,6 +1,6 @@
 ---
-untranslated: 1
-title: Documentation
+untranslated: 0
+title: ドキュメント
 top_graphic: 1
 menu: "main"
 menu:
@@ -9,35 +9,35 @@ menu:
 lastmod: 2019-05-15
 ---
 
-# Overview
+# 概要
 
-* [Getting Started]({{< ref "/getting-started.md" >}})
-* [How Let's Encrypt Works]({{< ref "/how-it-works.md" >}})
-* [Frequently Asked Questions (FAQ)]({{< ref "/docs/faq.md" >}})
-* [Glossary]({{< ref "/docs/glossary.md" >}})
+* [はじめる]({{< ref "/getting-started.md" >}})
+* [Let's Encrypt の動作のしくみ]({{< ref "/how-it-works.md" >}})
+* [よくある質問 (FAQ)]({{< ref "/docs/faq.md" >}})
+* [用語集]({{< ref "/docs/glossary.md" >}})
 
-# Subscriber Information
+# 利用者向けの情報
 
-* [ACME Client Implementations]({{< ref "/docs/client-options.md" >}})
-* [Rate Limits]({{< ref "/docs/rate-limits.md" >}})
-* [Expiration Emails]({{< ref "/docs/expiration-emails.md" >}})
+* [ACME クライアント実装]({{< ref "/docs/client-options.md" >}})
+* [レート・リミット]({{< ref "/docs/rate-limits.md" >}})
+* [期限切れ通知メール]({{< ref "/docs/expiration-emails.md" >}})
 
-# Advanced Subscriber Information
+# 利用者向けの発展的な情報
 
-* [Staging Environment]({{< ref "/docs/staging-environment.md" >}})
-* [Certificate Compatibility]({{< ref "/docs/cert-compat.md" >}})
-* [Chain of Trust (Root and Intermediate Certificates)]({{< ref "/certificates.md" >}})
-* [Upcoming Features]({{< ref "/upcoming-features.md" >}})
-* [Revoking Certificates]({{< ref "/docs/revoking.md" >}})
-* [Certificate Authority Authorization]({{< ref "/docs/caa.md" >}})
-* [Certificates for localhost]({{< ref "/docs/certificates-for-localhost.md" >}})
-* [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
-* [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
-* [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
+* [ステージング環境]({{< ref "/docs/staging-environment.md" >}})
+* [証明書の互換性]({{< ref "/docs/cert-compat.md" >}})
+* [Chain of Trust (ルートおよび中間証明書)]({{< ref "/certificates.md" >}})
+* [今後追加される機能]({{< ref "/upcoming-features.md" >}})
+* [証明書の無効化]({{< ref "/docs/revoking.md" >}})
+* [認証局の認可]({{< ref "/docs/caa.md" >}})
+* [localhost のための証明書]({{< ref "/docs/certificates-for-localhost.md" >}})
+* [ベスト・プラクティス - ポート 80 番を開放しよう]({{< ref "/docs/allow-port-80.md" >}})
+* [チャレンジの種類]({{< ref "/docs/challenge-types.md" >}})
+* [証明書透明性 (Certificate Transparency; CT) のログ]({{< ref "/docs/ct-logs.html" >}})
 
-# Client Developer Information
+# クライアント開発者向けの情報
 
-* [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
-* [ACME Protocol Updates]({{< ref "/docs/acme-protocol-updates.md" >}})
-* [Differences from Current ACME Draft](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [Finding Account IDs]({{< ref "/docs/account-id.md" >}})
+* [クライアントと大規模プロバイダのインテグレーションガイド]({{< ref "/docs/integration-guide.md" >}})
+* [ACME プロトコルのアップデート]({{< ref "/docs/acme-protocol-updates.md" >}})
+* [現在の ACME ドラフトとの違い](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [アカウント ID を見つける]({{< ref "/docs/account-id.md" >}})
