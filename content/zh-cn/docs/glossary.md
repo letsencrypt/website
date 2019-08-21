@@ -23,7 +23,7 @@ date: 2018-12-30
 
 {{% def id="CNAME" name="真实名称记录" english="Canonical Name record" abbr="CNAME" %}} 将一个域名映射到另一个域名（称为真实名称）的DNS记录。[维基百科条目](https://zh.wikipedia.org/wiki/CNAME%E8%AE%B0%E5%BD%95) {{% /def %}}
 
-{{% def id="CA" name="证书颁发机构" english="Certificate Authority" abbr="CA" %}} 颁发[证书](#def-leaf)的组织。[Let's Encrypt](#def-LE)，[IdenTrust](#def-IdenTrust)，Sectigo和DigiCert都是证书颁发机构。[维基百科条目](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84) {{% /def %}}
+{{% def id="CA" name="证书颁发机构" english="Certificate Authority" abbr="CA" %}} 颁发[证书](#def-leaf)的组织。[Let's Encrypt](#def-LE)、[IdenTrust](#def-IdenTrust)、Sectigo和DigiCert都是证书颁发机构。[维基百科条目](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84) {{% /def %}}
 
 {{% def id="CAI" name="CA颁发者" english="CA Issuers" %}} [AIA](#def-AIA)字段的一部分，包含[证书](#def-leaf)颁发者的信息。它在[网页服务器](#def-web-server)没有提供受信任的[证书链](#def-chain)时可能会有用。 {{% /def %}}
 
