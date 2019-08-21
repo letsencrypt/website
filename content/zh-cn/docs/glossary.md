@@ -45,7 +45,7 @@ date: 2018-12-30
 
 {{% def id="CSR" name="证书签名请求" english="Certificate Signing Request" abbr="CSR" %}} 包含了[CA](#def-CA)生成证书时所需信息的经过签名的文件。[Let's Encrypt](#def-LE)需要的信息有[通用名称](#def-CN)、[主体备用名称](#def-SAN)以及主体公钥信息。通常，[客户端应用程序](#def-ACME-client)会自动为用户生成CSR，网页托管提供商或相关设备也可能会生成CSR。[维基百科条目](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="证书存储" english="Certificate Store" %}} 证书存储包含有受信任的[根证书](#def-root)的列表。操作系统（如Windows、Android、Debian）和[网页浏览器](#def-web-browser)（如Firefox）都维护有证书存储。没有证书存储的浏览器依赖于操作系统的证书存储。Let's Encrypt](#def-LE)提供的[证书](#def-leaf)[被大多数证书存储信任]({{< ref "/certificates.md" >}})。 {{% /def %}}
+{{% def id="store" name="证书存储" english="Certificate Store" %}} 证书存储包含有受信任的[根证书](#def-root)的列表。操作系统（如Windows、Android、Debian）和[网页浏览器](#def-web-browser)（如Firefox）都维护有证书存储。没有证书存储的浏览器依赖于操作系统的证书存储。[Let's Encrypt](#def-LE)提供的[证书](#def-leaf)[被大多数证书存储信任]({{< ref "/certificates.md" >}})。 {{% /def %}}
 
 {{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”字段指明其内容。它通产包含[通用名称](#def-CN)、国家以及组织等字段。 {{% /def %}}
 
@@ -97,7 +97,7 @@ date: 2018-12-30
 
 {{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 检查[证书](#def-leaf)的[吊销](#def-revocation)状态的方法。也就是说，这是一个检查[证书颁发机构](#def-CA)是否表明证书不再有效（即使还没有到过期日期）的方法。这种请求可能会造成隐私问题，因为它允许证书颁发机构的互联网服务提供商直接得知谁在在访问哪些网站。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP必须装订" english="OCSP Must-Staple" %}} 告知[浏览器](#def-web-browser)使用该证书的[网页服务器](#def-web-server)必须使用[OCSP装订]的[证书](#def-leaf)扩展。它被用于确保浏览器在每次连接到网页服务器时都确认[证书](#def-leaf)的最新[吊销](#def-revocation)状态，以使吊销操作更加可靠。如果被请求这么做，[Let's Encrypt](#def-LE)可以颁发带有“OCSP必须装订”[扩展](#def-extension)的证书。[Mozilla安全博客文章](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP必须装订" english="OCSP Must-Staple" %}} 告知[浏览器](#def-web-browser)使用该证书的[网页服务器](#def-web-server)必须使用[OCSP装订](#def-OCSP-stapling)的[证书](#def-leaf)扩展。它被用于确保浏览器在每次连接到网页服务器时都确认[证书](#def-leaf)的最新[吊销](#def-revocation)状态，以使吊销操作更加可靠。如果被请求这么做，[Let's Encrypt](#def-LE)可以颁发带有“OCSP必须装订”[扩展](#def-extension)的证书。[Mozilla安全博客文章](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
 {{% def id="OCSP-stapling" name="OCSP装订" english="OCSP stapling" %}} [网页服务器](#def-web-server)向[浏览器](#def-web-browser)发送由[证书颁发机构](#def-CA)签名的[OCSP](#def-OCSP)回复的方法。该方法使得浏览器自身不必单独向CA发送OCSP请求，能够加快网页加载速度并增强安全性。[维基百科条目](https://zh.wikipedia.org/wiki/OCSP%E8%A3%85%E8%AE%A2) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
