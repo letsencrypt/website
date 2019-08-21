@@ -81,7 +81,7 @@ other = "阅读中文页面"
 other = "注意：本页面有较新的英文版本。"
 
 [not_yet_translated]
-other = "此页面尚未被翻译。要贡献翻译，请<a href=\"https://github.com/letsencrypt/website\">点击此处</a>。"
+other = "此页面尚未翻译。要贡献翻译，请<a href=\"https://github.com/letsencrypt/website\">点击此处</a>。"
 
 [english_is_canonical]
 other = """
