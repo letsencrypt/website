@@ -58,7 +58,7 @@ IdenTrust交叉签名了我们的中间证书。这允许我们在将我们自�
 
 # OCSP签名证书
 
-这张证书被用于对Let's Encrypt Authority中间证书的OCSP回复进行签名，这样我们就不用上线我们的根证书私钥来对这些回复签名。。OCSP回复中自动包括了该证书的副本，所以用户无需进行任何操作。下面的证书仅供参考。
+这张证书被用于对Let's Encrypt Authority中间证书的OCSP回复进行签名，这样我们就不用上线我们的根证书私钥来对这些回复签名。OCSP回复中自动包括了该证书的副本，所以用户无需进行任何操作。下面的证书仅供参考。
 * [ISRG Root OCSP X1（由ISRG Root X1签名）](/certs/isrg-root-ocsp-x1.pem.txt)
 
 # 证书透明度
