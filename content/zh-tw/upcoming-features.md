@@ -68,4 +68,3 @@ Let's Encrypt現在支持對國際化域名（IDN）頒發證書。
 * 啟用時間: 2016年1月20日
 
 Let's Encrypt允許通過ACME規範中定義的DNS記錄進行驗證。
-

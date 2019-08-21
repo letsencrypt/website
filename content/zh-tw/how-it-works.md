@@ -57,4 +57,3 @@ Let's Encrypt通過公鑰識別伺服器管理員。 證書管理軟體（Agent�
 <img alt="申請吊銷example.com的證書流程"
      src="/images/howitworks_revocation.png"/>
 </div>
-

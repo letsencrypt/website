@@ -1,0 +1,64 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt adalah Otoritas Sertifikasi yang <span>gratis</span>, <span>terotomatisasi</span>, dan <span>terbuka</span>."
+
+[home_hero_getting_started]
+other = "Memulai"
+
+[home_hero_donate]
+other = "Donasi"
+
+[home_hero_sponsor]
+other = "Sponsor"
+
+[home_major_sponsors]
+other = "Sponsor dan Donatur Utama"
+
+[home_from_our_blog]
+other = "Dari blog kami"
+
+[read_more]
+other = "Baca lebih lanjut"
+
+[subscribe_rss]
+other = "Langganan <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
+
+[footer_donate]
+other = "Donasi"
+
+[footer_policies]
+other = """
+Lihat <a href="/privacy/">kebijakan privasi</a> kami.<br>
+Lihat <a href="/trademarks/">kebijakan merek</a> kami.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation adalah merek dagang terdaftar milik The Linux Foundation. Linux dalah merk dagang terdaftar milik Linus Torvalds."
+
+[header_skip_nav]
+other = "Lewati tautan navigasi"
+
+[last_updated]
+other = "Terakhir diperbaharui:"
+
+[see_all_doc]
+other = "Lihat semua dokumentasi"
+
+[blog_feed]
+other = "Umpan dari Blog Let's Encrypt"
+
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Bahasa"

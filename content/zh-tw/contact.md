@@ -5,7 +5,7 @@ top_graphic: 1
 lastmod: 2019-03-26
 menu:
   main:
-    weight: 80
+    weight: 90
     parent: about
 ---
 

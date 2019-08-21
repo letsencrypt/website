@@ -55,6 +55,13 @@
 						</a>
 					</p>
 					{{ end }}
+					{{ if and (eq .Language.Lang "zh-tw") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="zh-tw" href="{{ .Permalink }}">
+							使用正體中文閲讀本網頁。
+						</a>
+					</p>
+					{{ end }}
 					{{ if and (eq .Language.Lang "es") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
 						<a lang="es" href="{{ .Permalink }}">
