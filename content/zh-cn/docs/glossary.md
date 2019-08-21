@@ -37,7 +37,7 @@ date: 2018-12-30
 
 {{% def id="CP" name="证书政策" english="Certificate Policy" abbr="CP" %}} 一组指明证书对于一个特定的有着共同安全要求的社区和/或应用类型的适用性的规则。具体颁发过程的细节由[CPS](#def-CPS)描述。[ISRG证书政策](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、更新、更换密钥时所采用的实践的声明。[ISRG证书实践声明](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 3.4节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。[ISRG证书实践声明](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 3.4节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="关键扩展" english="Critical extension" %}} 证书中可以包含被标记为“关键”的[扩展](#def-extension)。这意味着软件如果不知道如何处理该扩展，就必须拒绝该证书。这使得引入对于安全性十分重要的新扩展时不在较老的软件上造成风险成为可能。 {{% /def %}}
 
