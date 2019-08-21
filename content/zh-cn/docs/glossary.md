@@ -49,7 +49,7 @@ date: 2018-12-30
 
 {{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”字段指明其内容。它通产包含[通用名称](#def-CN)、国家以及组织等字段。 {{% /def %}}
 
-{{% def id="CT" name="证书透明度" english="Certificate Transparency" abbr="CT" %}} 为了增强安全性，证书（或[准证书](#def-precertificate)）必须被发布到证书透明度日志上：[https://www.certificate-transparency.org/](https://www.certificate-transparency.org/)。[Let's Encrypt](#def-LE)生成并发布[准证书](#def-precertificate)，并在之后的[证书](#def-leaf)中包含了准证书的[SCT](#def-SCT)列表。部分[浏览器](#def-web-browser)（如Google Chrome）要求这一可验证的承诺必须出现在证书中，以便以便其验证该证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%80%8F%E6%98%8E%E5%BA%A6) {{% /def %}}
+{{% def id="CT" name="证书透明度" english="Certificate Transparency" abbr="CT" %}} 为了增强安全性，证书（或[准证书](#def-precertificate)）必须被发布到证书透明度日志上：[https://www.certificate-transparency.org/](https://www.certificate-transparency.org/)。[Let's Encrypt](#def-LE)生成并发布[准证书](#def-precertificate)，并在之后的[证书](#def-leaf)中包含了准证书的[SCT](#def-SCT)列表。部分[浏览器](#def-web-browser)（如Google Chrome）要求这一可验证的承诺必须出现在证书中，以便其验证该证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E8%AF%81%E4%B9%A6%E9%80%8F%E6%98%8E%E5%BA%A6) {{% /def %}}
 
 {{% def id="CT-log" name="证书透明度日志" english="Certificate Transparency Log" %}} [证书透明度](#def-CT)的一个组件。它接收证书和[准证书](#def-precertificate)并将它们添加到一个永久、可验证、公开的列表中。 {{% /def %}}
 
