@@ -1,6 +1,6 @@
 ---
 untranslated: 0
-title: はじめに
+title: はじめる
 slug: getting-started
 top_graphic: 3
 date: 2018-04-12
