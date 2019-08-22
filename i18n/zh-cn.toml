@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt是<span>免费</span>、<span>开放</span>和<span>自动化</span>的证书颁发机构"
+other = "Let&rsquo;s Encrypt 是<span>免费</span>、<span>开放</span>和<span>自动化</span>的证书颁发机构"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -22,7 +22,7 @@ other = "博客文章"
 other = "阅读全文"
 
 [subscribe_rss]
-other = "<a href=\"{{ .Permalink }}\">RSS订阅</a>"
+other = "<a href=\"{{ .Permalink }}\">RSS 订阅</a>"
 
 [footer_support_us]
 other = "支持更安全、更尊重隐私的互联网。"
@@ -37,7 +37,7 @@ other = """
 """
 
 [linux_foundation_trademark]
-other = "“Linux Foundation”是Linux基金会的注册商标。“Linux”是Linus Torvalds的注册商标。"
+other = "“Linux Foundation”是 Linux 基金会的注册商标。“Linux”是 Linus Torvalds 的注册商标。"
 
 [header_skip_nav]
 other = "跳过导航链接"

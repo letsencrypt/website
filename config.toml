@@ -177,7 +177,7 @@ beforeColon= ""
 # Weight used for sorting.
 weight = 40
 description = """
-  Let&rsquo;s&nbsp;Encrypt是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
+  Let&rsquo;s&nbsp;Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
   style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
 """
 [[languages.zh-cn.menu.main]]
