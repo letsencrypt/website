@@ -76,3 +76,33 @@ other = "Note : La version anglaise a été mise à jour depuis sa traduction"
 
 [english_is_canonical]
 other = "Remarque : la version anglaise fait foi"
+
+[graph_issued]
+other = "Émis"
+
+[graph_certificates_active]
+other = "Certificats actifs"
+
+[graph_fully_qualified_domains_active]
+other = "FQDN actifs"
+
+[graph_registered_domains_active]
+other = "Domaines enregistrés actifs"
+
+[graph_active_count]
+other = "Nombre actif"
+
+[graph_issued_per_day]
+other = "Émis par jour"
+
+[graph_all_users]
+other = "Tous les utilisateurs"
+
+[graph_usa_users]
+other = "Utilisateurs américain"
+
+[graph_japan_users]
+other = "Utilisateurs du Japon"
+
+[graph_percent_https]
+other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jours)"

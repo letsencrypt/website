@@ -79,3 +79,34 @@ other = "This webpage has not been translated yet. You can contribute <a href=\"
 
 [english_is_canonical]
 other = "The English version is authoritative"
+
+[graph_issued]
+other = "Issued"
+
+[graph_certificates_active]
+other = "Certificates Active"
+
+[graph_fully_qualified_domains_active]
+other = "Fully-Qualified Domains Active"
+
+[graph_registered_domains_active]
+other = "Registered Domains Active"
+
+[graph_active_count]
+other = "Active Count"
+
+[graph_issued_per_day]
+other = "Issued Per Day"
+
+[graph_all_users]
+other = "All users"
+
+[graph_usa_users]
+other = "USA users"
+
+[graph_japan_users]
+other = "Japan users"
+
+[graph_percent_https]
+other = "Percent of Pageloads over HTTPS (14 day moving average)"
+
