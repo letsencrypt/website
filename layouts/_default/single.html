@@ -128,7 +128,9 @@
 	{{ else }}
 
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
-			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
+		<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+			{{ i18n "english_is_canonical" | safeHTML }}
+		</div>
 		{{ end }}
 
 		{{ .Content }}
