@@ -1,0 +1,81 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt は<span>フリー</span>で<span>自動化</span>された<span>オープン</span>な認証局です。"
+
+[home_hero_getting_started]
+other = "はじめる"
+
+[home_hero_donate]
+other = "寄付"
+
+[home_hero_sponsor]
+other = "スポンサー"
+
+[home_major_sponsors]
+other = "主要なスポンサーと寄付者"
+
+[home_from_our_blog]
+other = "ブログ記事より"
+
+[read_more]
+other = "もっと読む"
+
+[subscribe_rss]
+other = "<a href=\"{{ .Permalink }}\">RSS</a> を購読する"
+
+[footer_support_us]
+other = "よりセキュアでプライバシーを尊重するウェブを支援してください。"
+
+[footer_donate]
+other = "寄付する"
+
+[footer_policies]
+other = """
+<a href="/privacy/">プライバシー・ポリシー</a>を読む。<br>
+<a href="/trademarks/">トレードマーク・ポリシー</a>を読む。
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation は The Linux Foundation の登録商標です。Linux は Linus Torvalds の登録商標です。"
+
+[header_skip_nav]
+other = "ナビゲーション・リンクをスキップ"
+
+[last_updated]
+other = "最終更新日:"
+
+[see_all_doc]
+other = "すべてのドキュメントを読む"
+
+[blog_feed]
+other = "Let's Encrypt ブログフィード"
+
+[platinum]
+other = "プラチナ"
+
+[gold]
+other = "ゴールド"
+
+[silver]
+other = "シルバー"
+
+[languages]
+other = "言語"
+
+[view_in_english]
+other = "英語で表示する"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "日本語で表示する"
+
+[old_version]
+other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"
+
+[not_yet_translated]
+other = "このウェブページはまだ翻訳されていません。<a href=\"https://github.com/letsencrypt/website\">このページ</a>から誰でも翻訳にコントリビュートできます。"
+
+[english_is_canonical]
+other = "英語バージョンが正式な文章です"
