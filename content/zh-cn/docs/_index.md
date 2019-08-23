@@ -25,7 +25,7 @@ lastmod: 2019-05-15
 
 * [测试环境]({{< ref "/docs/staging-environment.md" >}})
 * [证书兼容性]({{< ref "/docs/cert-compat.md" >}})
-* [证书信任链（根和中间证书）]({{< ref "/certificates.md" >}})
+* [证书信任链（根证书和中间证书）]({{< ref "/certificates.md" >}})
 * [即将推出的功能]({{< ref "/upcoming-features.md" >}})
 * [吊销证书]({{< ref "/docs/revoking.md" >}})
 * [证书颁发机构授权（CAA）]({{< ref "/docs/caa.md" >}})
