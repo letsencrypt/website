@@ -1,0 +1,34 @@
+
+<span id="plot-translations"
+    data-issued="{{ i18n "graph_issued" }}"
+    data-certificates_active="{{ i18n "graph_certificates_active" }}"
+    data-fully_qualified_domains_active="{{ i18n "graph_fully_qualified_domains_active" }}"
+    data-registered_domains_active="{{ i18n "graph_registered_domains_active" }}"
+    data-active_count="{{ i18n "graph_active_count" }}"
+    data-issued_per_day="{{ i18n "graph_issued_per_day" }}"
+    data-all_users="{{ i18n "graph_all_users" }}"
+    data-usa_users="{{ i18n "graph_usa_users" }}"
+    data-japan_users="{{ i18n "graph_japan_users" }}"
+    data-percent_https="{{ i18n "graph_percent_https" }}"
+></span>
+
+<script src="/js/plotly-min.js" defer></script>
+{{ if eq "de" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-de.js" defer></script>
+{{ end }}
+{{ if eq "fr" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-fr.js" defer></script>
+{{ end }}
+{{ if eq "es" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-es.js" defer></script>
+{{ end }}
+{{ if eq "pt-br" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-pt-br.js" defer></script>
+{{ end }}
+{{ if eq "ru" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-ru.js" defer></script>
+{{ end }}
+{{ if eq "zh-cn" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-zh-cn.js" defer></script>
+{{ end }}
+<script src="/js/stats.js" defer></script>
