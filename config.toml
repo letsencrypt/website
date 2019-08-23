@@ -194,7 +194,7 @@ description = """
  weight = 40
  identifier = "about"
  url = "/zh-cn/about/"
- [[languages.cn.menu.main]]
+ [[languages.zh-cn.menu.main]]
  name = "互联网安全研究小组（ISRG）"
  weight = 20
  identifier = "isrg"
