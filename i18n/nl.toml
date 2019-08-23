@@ -1,0 +1,111 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt is een <span>gratis</span>, <span>geautomatiseerd</span>, en <span>open</span> Certificate Authority."
+
+[home_hero_getting_started]
+other = "Aan de slag"
+
+[home_hero_donate]
+other = "Doneren"
+
+[home_hero_sponsor]
+other = "Sponsoren"
+
+[home_major_sponsors]
+other = "Belangrijke Sponsors and Donors"
+
+[home_from_our_blog]
+other = "Op onze blog"
+
+[read_more]
+other = "Meer lezen"
+
+[subscribe_rss]
+other = "Abonneer op <a href=\"{{ .Permalink }}\">onze RSS feed</a>"
+
+[footer_support_us]
+other = "Steun een veiliger en privacy-respectvol Internet."
+
+[footer_donate]
+other = "Doneer"
+
+[footer_policies]
+other = """
+Bekijk ons <a href="/privacy/">privacybeleid</a>.<br>
+Bekijk ons <a href="/trademarks/">handelsmerk beleid</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation is een geregistreerd handelsmerk van The Linux Foundation. Linux is een geregistreerd handelsmerk van Linus Torvalds."
+
+[header_skip_nav]
+other = "Navigatielinks overslaan"
+
+[last_updated]
+other = "Laatst bijgewerkt: "
+
+[see_all_doc]
+other = "Toon alle Documentatie"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[platinum]
+other = "Platina"
+
+[gold]
+other = "Goud"
+
+[silver]
+other = "Zilver"
+
+[languages]
+other = "Talen"
+
+[view_in_english]
+other = "Toon in Engels"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Toon in Nederlands"
+
+[old_version]
+other = "Opmerking: De Engelse versie is aangepast sinds de vertaling"
+
+[not_yet_translated]
+other = "Deze webpagina is nog niet vertaald. Je kan <a href=\"https://github.com/letsencrypt/website\">hier</a> een bijdrage leveren."
+
+[english_is_canonical]
+other = "The English version is authoritative"
+
+[graph_issued]
+other = "Uitgegeven"
+
+[graph_certificates_active]
+other = "Actieve certificaten"
+
+[graph_fully_qualified_domains_active]
+other = "Fully-Qualified domeinen actief"
+
+[graph_registered_domains_active]
+other = "Geregistreerde domeinen actief"
+
+[graph_active_count]
+other = "Aantal actief"
+
+[graph_issued_per_day]
+other = "Dagelijks uitgegeven"
+
+[graph_all_users]
+other = "Alle gebruikers"
+
+[graph_usa_users]
+other = "USA gebruikers"
+
+[graph_japan_users]
+other = "Japanese gebruikers"
+
+[graph_percent_https]
+other = "Percentage Pageloads over HTTPS (14-daags voortschrijdend gemiddelde)"
