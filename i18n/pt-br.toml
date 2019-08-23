@@ -76,3 +76,36 @@ other = "Nota: A versão em Inglês foi atualizada desde a última tradução de
 
 [not_yet_translated]
 other = "Esta página ainda não foi traduzida. Você pode contribuir <a href=\"https://github.com/letsencrypt/website\">aqui</a>."
+
+[english_is_canonical]
+other = "A versão em Inglês é canônica"
+
+[graph_issued]
+other = "Emitidos"
+
+[graph_certificates_active]
+other = "Certificados Ativos"
+
+[graph_fully_qualified_domains_active]
+other = "Domínios Completamente Qualificados Ativos"
+
+[graph_registered_domains_active]
+other = "Domínios Registrados Ativos"
+
+[graph_active_count]
+other = "Contagem de Ativos"
+
+[graph_issued_per_day]
+other = "Emitidos por dia"
+
+[graph_all_users]
+other = "Todos os usuários"
+
+[graph_usa_users]
+other = "Usuários dos Estados Unidos"
+
+[graph_japan_users]
+other = "Usuários do Japão"
+
+[graph_percent_https]
+other = "Porcentagem de páginas carregadas usando HTTPS (média de 14 dias)"
