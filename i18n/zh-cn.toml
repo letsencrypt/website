@@ -49,7 +49,7 @@ other = "最后更新："
 other = "所有文档"
 
 [blog_feed]
-other = "Let's Encrypt Blog Feed"
+other = "Let's Encrypt 博客订阅源"
 
 [platinum]
 other = "铂金赞助商"
