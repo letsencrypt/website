@@ -76,3 +76,36 @@ other = "Внимание! Английская версия сайта была
 
 [not_yet_translated]
 other = "Эта страница ещё не переведена. Вы можете внести свой вклад <a href=\"https://github.com/letsencrypt/website\">здесь</a>."
+
+[english_is_canonical]
+other = "Английская версия является каноничной"
+
+[graph_issued]
+other = "Выпущено"
+
+[graph_certificates_active]
+other = "Активные сертификаты"
+
+[graph_fully_qualified_domains_active]
+other = "Полноопределённые активные домены"
+
+[graph_registered_domains_active]
+other = "Зарегистрированные активные домены"
+
+[graph_active_count]
+other = "Количество активных"
+
+[graph_issued_per_day]
+other = "Выпущено за сутки"
+
+[graph_all_users]
+other = "Все пользователи"
+
+[graph_usa_users]
+other = "Пользователи из США"
+
+[graph_japan_users]
+other = "Пользователи из Японии"
+
+[graph_percent_https]
+other = "Доля страниц, в %, загруженных по HTTPS (скользящая средняя за 14 дней)"

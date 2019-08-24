@@ -62,3 +62,50 @@ other = "Silver"
 
 [languages]
 other = "Bahasa"
+
+[view_in_english]
+other = "Lihat dalam Bahasa Ingris"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Lihat dalam Bahasa Indonesia"
+
+[old_version]
+other = "Catatan: Versi pada Bahasa Ingris telah diperbaharui ketimbang terjemahan ini."
+
+[not_yet_translated]
+other = "Laman ini belum diterjemahkan. Anda dapat ikut berkontribusi <a href=\"https://github.com/letsencrypt/website\">di sini</a>."
+
+[english_is_canonical]
+other = "The English version is authoritative"
+
+[graph_issued]
+other = "Terbit"
+
+[graph_certificates_active]
+other = "Sertifikat Aktif"
+
+[graph_fully_qualified_domains_active]
+other = "Domain Terkualifikasi Aktif"
+
+[graph_registered_domains_active]
+other = "Domain Terdaftar Aktif"
+
+[graph_active_count]
+other = "Jumlah Aktif"
+
+[graph_issued_per_day]
+other = "Penerbitan Per Hari"
+
+[graph_all_users]
+other = "Semua Pengguna"
+
+[graph_usa_users]
+other = "Pengguna dari Amerika"
+
+[graph_japan_users]
+other = "Pengguna dari Jepang"
+
+[graph_percent_https]
+other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"

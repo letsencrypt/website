@@ -22,56 +22,56 @@
 				{{ if ne $lang .Language.Lang }}
 					{{ if and (eq .Language.Lang "fr") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="fr" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							Voir en Français
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "de") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="de" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							Auf Deutsch ansehen
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "pt-br") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="pt-br" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							Ver em Português (do brasil)
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "ru") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="ru" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							Просмотреть на русском
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "zh-cn") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="zh-cn" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							使用简体中文阅读本网页。
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "zh-tw") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="zh-tw" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							使用正體中文閲讀本網頁。
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "es") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="es" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							Ver en español
 						</a>
 					</p>
 					{{ end }}
 					{{ if and (eq .Language.Lang "ja") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="ja" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							日本語で表示する
 						</a>
 					</p>
@@ -128,7 +128,9 @@
 	{{ else }}
 
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
-			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
+		<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+			{{ i18n "english_is_canonical" | safeHTML }}
+		</div>
 		{{ end }}
 
 		{{ .Content }}
