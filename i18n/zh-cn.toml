@@ -79,3 +79,33 @@ other = "该网页暂时未被翻译。您可以点击<a href=\"https://github.c
 
 [english_is_canonical]
 other = "此页内容请以英文页面为准"
+
+[graph_issued]
+other = "颁发数量"
+
+[graph_certificates_active]
+other = "活跃证书数量"
+
+[graph_fully_qualified_domains_active]
+other = "活跃的完全限定域名数量"
+
+[graph_registered_domains_active]
+other = "活跃的注册域名数量"
+
+[graph_active_count]
+other = "活跃数量"
+
+[graph_issued_per_day]
+other = "每日颁发数量"
+
+[graph_all_users]
+other = "所有用户"
+
+[graph_usa_users]
+other = "美国用户"
+
+[graph_japan_users]
+other = "日本用户"
+
+[graph_percent_https]
+other = "通过 HTTPS 加载的页面百分比（14日移动平均）"
