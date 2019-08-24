@@ -37,7 +37,7 @@ lastmod: 2019-05-15
 # 客户端开发者信息
 
 * [客户端和大型提供商集成指南]({{< ref "/docs/integration-guide.md" >}})
-* [ACME 协议更新]({{< ref "/docs/acme-protocol-updates.md" >}})
+* [ACME 协议更新日志]({{< ref "/docs/acme-protocol-updates.md" >}})
 * [与当前 ACME 草案的不同](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * [查找账户 ID]({{< ref "/docs/account-id.md" >}})
 
