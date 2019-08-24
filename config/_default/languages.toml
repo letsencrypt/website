@@ -13,8 +13,8 @@ description = """
 """
 [fr]
 title = "Let's Encrypt - Certificats SSL/TLS gratuits"
-languageName = "Français"
 contentDir = "content/fr"
+languageName = "Français"
 languageCode= "fr-fr"
 beforeColon= "&nbsp;"
 weight = 20
@@ -63,9 +63,7 @@ title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
 languageName ="简体中文"
 languageCode= "zh-cn"
-#if colon ":" must be prefixed
 beforeColon= ""
-# Weight used for sorting.
 weight = 60
 description = """
   Let&rsquo;s&nbsp;Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
@@ -74,12 +72,10 @@ description = """
 
 [zh-tw]
 title = "Let's Encrypt - 免費SSL/TLS憑證"
-languageName = "正體中文"
 contentDir = "content/zh-tw"
+languageName = "正體中文"
 languageCode= "zh-tw"
-#if colon ":" must be prefixed
 beforeColon= ""
-# Weight used for sorting.
 weight = 70
 description = """
   Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的證書頒發機構。
@@ -102,9 +98,7 @@ title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
 contentDir = "content/id"
 languageName ="Bahasa Indonesia"
 languageCode= "id-id"
-#if colon ":" must be prefixed
 beforeColon= ""
-# Weight used for sorting.
 weight = 90
 description = """
   Let&rsquo;s&nbsp;Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
@@ -116,9 +110,7 @@ title = "Let's Encrypt - フリーな SSL/TLS 証明書"
 contentDir = "content/ja"
 languageName ="日本語"
 languageCode= "ja"
-#if colon ":" must be prefixed
 beforeColon= ""
-# Weight used for sorting.
 weight = 100
 description = """
   Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
