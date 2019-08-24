@@ -66,7 +66,6 @@ other = "切换语言"
 [view_in_english]
 other = "阅读英文页面"
 
-
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
 # (nb: used manually in layout/single.html)
@@ -79,8 +78,34 @@ other = "注意：本页面有较新的英文版本。"
 other = "此页面尚未翻译。要贡献翻译，请<a href=\"https://github.com/letsencrypt/website\">点击此处</a>。"
 
 [english_is_canonical]
-other = """
-<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
-  此页内容请以英文页面为准
-</div>
-"""
+other = "此页内容请以英文页面为准"
+
+[graph_issued]
+other = "颁发数量"
+
+[graph_certificates_active]
+other = "活跃证书数量"
+
+[graph_fully_qualified_domains_active]
+other = "活跃的完全限定域名数量"
+
+[graph_registered_domains_active]
+other = "活跃的注册域名数量"
+
+[graph_active_count]
+other = "活跃数量"
+
+[graph_issued_per_day]
+other = "每日颁发数量"
+
+[graph_all_users]
+other = "所有用户"
+
+[graph_usa_users]
+other = "美国用户"
+
+[graph_japan_users]
+other = "日本用户"
+
+[graph_percent_https]
+other = "通过 HTTPS 加载的页面百分比（14日移动平均）"
