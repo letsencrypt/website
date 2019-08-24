@@ -74,6 +74,9 @@ other = "Voir en français"
 [old_version]
 other = "Note : La version anglaise a été mise à jour depuis sa traduction"
 
+[not_yet_translated]
+other = "Cette page n’a pas encore été traduite. Vous pouvez contribuer <a href=\"https://github.com/letsencrypt/website\">là</a>."
+
 [english_is_canonical]
 other = "Remarque : la version anglaise fait foi"
 
