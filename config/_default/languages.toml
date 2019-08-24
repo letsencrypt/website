@@ -59,15 +59,31 @@ description = """
 """
 
 [zh-cn]
-title = "Let's Encrypt - 免费SSL/TLS证书"
-languageName = "简体中文"
+title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
+languageName ="简体中文"
 languageCode= "zh-cn"
+#if colon ":" must be prefixed
 beforeColon= ""
+# Weight used for sorting.
 weight = 60
 description = """
-  Let's Encrypt 是由非营利性互联网安全研究组（ISRG）提供给您的免费，自动化和开放的证书颁发机构。
+  Let&rsquo;s&nbsp;Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
+  style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
 """
+
+[zh-tw]
+title = "Let's Encrypt - 免費SSL/TLS憑證"
+languageName = "正體中文"
+contentDir = "content/zh-tw"
+languageCode= "zh-tw"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 70
+description = """
+  Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的證書頒發機構。
+  """
 
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -75,8 +91,36 @@ contentDir = "content/pt-br"
 languageName ="Português do Brasil"
 languageCode= "pt-br"
 beforeColon= ""
-weight = 70
+weight = 80
 description = """
   Let&rsquo;s&nbsp;Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
   que se tornou possível graças à organização sem fins lucrativos <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>
+"""
+
+[id]
+title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
+contentDir = "content/id"
+languageName ="Bahasa Indonesia"
+languageCode= "id-id"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 90
+description = """
+  Let&rsquo;s&nbsp;Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
+  dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[ja]
+title = "Let's Encrypt - フリーな SSL/TLS 証明書"
+contentDir = "content/ja"
+languageName ="日本語"
+languageCode= "ja"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 100
+description = """
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
