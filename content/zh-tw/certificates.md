@@ -25,7 +25,7 @@ lastmod: 2019-05-01
 
 # 中級（中間）憑證
 
-IdenTrust和我們交叉簽名（Cross-Sign）了我們的中級憑證。這允許我們在將我們的根憑證添加至根憑證信任項目的過程中向訂戶頒發被瀏覽器信任的憑證。
+IdenTrust和我們交叉簽名（Cross-Sign）了我們的中級憑證。這允許我們在將我們自己的根憑證添加到瀏覽器中的過程中，確保我們的終端實體憑證被所有主流瀏覽器信任。
 
 在正常情況下，Let's Encrypt頒發的憑證將來自“Let's Encrypt Authority X3”。另外的活躍中級憑證“Let's Encrypt Authority X4”將被用於災難恢復時期，只有在我們失去對“Let's Encrypt Authority X3”的掌控權時才會被使用。X1和X2是我們的第一代中級憑證，已經被能更好相容Windows XP的新中級憑證（X3/X4）替換。
 
