@@ -38,7 +38,7 @@
               {{ range $home.AllTranslations }}
               {{ $isCurrentLang := eq $home.Language .Language }}
               <li class="pure-menu-item">
-                <a href="{{ .Permalink }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }}</a>
+                <a href="{{ .Permalink }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }} ({{ .Language }})</a>
               </li>
               {{ end }}
             </ul>
