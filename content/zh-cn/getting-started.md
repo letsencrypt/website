@@ -1,5 +1,5 @@
 ---
-title: 入门
+title: 快速入门
 slug: getting-started
 top_graphic: 3
 date: 2018-04-12
