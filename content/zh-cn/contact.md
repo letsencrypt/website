@@ -11,7 +11,7 @@ menu:
 
 ## 帮助（支持）
 
-如果您在使用Let's Encrypt过程中有任何疑问，请在[Let's Encrypt论坛](https://community.letsencrypt.org/)提问.
+如果您在使用 Let's Encrypt 过程中有任何疑问，请在 [Let's Encrypt 论坛](https://community.letsencrypt.org/)提问.
 
 ## 新闻咨询
 
@@ -27,13 +27,13 @@ menu:
 
 ## 安全问题
 
-除非您的消息涉及Let's Encrypt的安全问题，否则请勿向此地址发送邮件。
+除非您的消息涉及 Let's Encrypt 的安全问题，否则请勿向此地址发送邮件。
 
 发送邮件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### 通讯加密
 
-请使用我们的GPG公钥和我们的安全团队安全沟通。它由几个由离线主密钥签名的子密钥组成。任何较新版本的GnuPG都支持这种混合密钥。目前的密钥结构为：
+请使用我们的 GPG 公钥和我们的安全团队安全沟通。它由几个由离线主密钥签名的子密钥组成。任何较新版本的 GnuPG 都支持这种混合密钥。目前的密钥结构为：
 
 
 ```
@@ -45,6 +45,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
 sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
 ```
 
-您可以在此处下载[GPG公钥](/security_letsencrypt.org-publickey.asc)，或使用您喜欢的公钥服务器。
+您可以在此处下载 [GPG 公钥](/security_letsencrypt.org-publickey.asc)，或使用您喜欢的公钥服务器。
 
-请确保公钥指纹与`0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`一致。
+请确保公钥指纹与 `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B` 一致。

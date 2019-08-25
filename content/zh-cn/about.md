@@ -1,5 +1,5 @@
 ---
-title: 关于Let's Encrypt
+title: 关于 Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
@@ -10,9 +10,9 @@ menu:
     parent: about
 ---
 
-Let's Encrypt是一个免费的，自动化的，开放的证书颁发机构（CA），为公众的利益而运行。 它是一项由[Internet Security Research Group（ISRG）](https://www.abetterinternet.org/)提供的服务。
+Let's Encrypt 是一个免费的，自动化的，开放的证书颁发机构（CA），为公众的利益而运行。它是一项由 [Internet Security Research Group（ISRG）](https://www.abetterinternet.org/) 提供的服务。
 
-我们以尽可能对用户友好的方式免费提供为网站启用HTTPS（SSL/TLS）所需的数字证书。这是因为我们想要创建一个更安全，更尊重隐私的互联网。
+我们以尽可能对用户友好的方式免费提供为网站启用 HTTPS（SSL/TLS）所需的数字证书。这是因为我们想要创建一个更安全，更尊重隐私的互联网。
 
 Let's Encrypt的关键原则为：
 
