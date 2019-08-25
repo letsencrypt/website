@@ -93,7 +93,7 @@ date: 2018-12-30
 
 {{% def id="LE" english="Let's Encrypt" abbr="LE" %}} 由 [ISRG](#def-ISRG) 运营的[证书颁发机构](#def-CA)。[维基百科条目](https://zh.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
-{{% def id="mixed-content" name="混合内容" english="Mixed content" %}} 在 HTTPS 网页中通过 HTTP 加载子资源（JavaScript、CSS 或图片）。[浏览器](#def-web-browser)可能会阻止加载混合内容，或者在有混合内容时将页面标记为较不安全：[https://developer.mozilla.org/zh-CN/docs/Security/MixedContent](https://developer.mozilla.org/zh-CN/docs/Security/MixedContent)。要解决混合内容的问题，网页开发者把所有资源都改为使用 HTTPS 链接。浏览器中的[开发者工具](https://developer.mozilla.org/zh-CN/docs/Learn/Discover_browser_developer_tools)可以用于帮助找出导致混合内容问题的资源。 {{% /def %}}
+{{% def id="mixed-content" name="混合内容" english="Mixed content" %}} 在 HTTPS 网页中通过 HTTP 加载子资源（JavaScript、CSS 或图片）。[浏览器](#def-web-browser)可能会阻止加载混合内容，或者在有混合内容时将页面标记为较不安全：[https://developer.mozilla.org/zh-CN/docs/Security/MixedContent](https://developer.mozilla.org/zh-CN/docs/Security/MixedContent)。要解决混合内容的问题，网页开发者必须把所有资源都改为使用 HTTPS 链接。浏览器中的[开发者工具](https://developer.mozilla.org/zh-CN/docs/Learn/Discover_browser_developer_tools)可以用于帮助找出导致混合内容问题的资源。 {{% /def %}}
 
 {{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 检查[证书](#def-leaf)的[吊销](#def-revocation)状态的方法。也就是说，这是一个检查[证书颁发机构](#def-CA)是否表明证书不再有效（即使还没有到过期日期）的方法。这种请求可能会造成隐私问题，因为它允许证书颁发机构的互联网服务提供商直接得知谁在在访问哪些网站。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE) {{% /def %}}
 
