@@ -7,7 +7,6 @@ menu:
   main:
     weight: 60
     parent: donate
-untranslated: 0
 ---
 
 ## コミュニティ

@@ -8,7 +8,6 @@ menu:
   main:
     weight: 70
     parent: about
-untranslated: 0
 ---
 
 <div class="figure">

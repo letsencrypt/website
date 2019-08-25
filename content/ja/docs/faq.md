@@ -9,7 +9,6 @@ menu:
   main:
     weight: 30
     parent: about
-untranslated: 0
 ---
 
 {{< lastmod >}}

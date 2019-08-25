@@ -3,7 +3,6 @@ title: 動作の仕組み
 slug: how-it-works
 top_graphic: 3
 lastmod: 2018-06-24
-untranslated: 0
 ---
 
 Let's&nbsp;Encrypt と [ACME プロトコル](https://ietf-wg-acme.github.io/acme/)の目標は、HTTPS サーバーのセットアップと、ブラウザが信頼する証明書の自動的な取得を、人間の仲介なしに可能にすることです。この目標は、ウェブサーバー上で証明書管理エージェントを実行することで実現されます。
