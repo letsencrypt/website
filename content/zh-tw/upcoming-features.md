@@ -21,7 +21,7 @@ lastmod: 2019-07-03
 
 我們開始運營一個[憑證透明度日誌伺服器]({{< ref "/docs/ct-logs.html" >}}).
 
-## 支持TLS ALPN挑戰
+## 支援TLS ALPN挑戰
 
 * 啟用時間: 2018年7月12日
 
@@ -39,17 +39,17 @@ lastmod: 2019-07-03
 
 * 啟用時間: 2018年3月13日
 
-## IDN支持
+## IDN支援
 
 * 啟用時間: 2016年10月20日
 
-Let's Encrypt現在支持對國際化域名（IDN）頒發憑證。
+Let's Encrypt現在支援對國際化域名（IDN）頒發憑證。
 
-## 完全的IPv6支持
+## 完全的IPv6支援
 
 * 啟用時間: 2016年7月26日
 
-最初，只有部分Let's Encrypt API基礎架構可以通過IPv6進行通信。 這阻止了只有IPv6地址的系統與Let's Encrypt進行完全交互。 這已得到解決 - 已為所有功能啟用了IPv6支持。
+最初，只有部分Let's Encrypt API基礎架構可以通過IPv6進行通信。 這阻止了只有IPv6地址的系統與Let's Encrypt進行完全交互。 這已得到解決 - 已為所有功能啟用了IPv6支援。
 
 ## Windows XP憑證相容
 
@@ -57,13 +57,13 @@ Let's Encrypt現在支持對國際化域名（IDN）頒發憑證。
 
 解決了我們的憑證鏈在Windows XP瀏覽器無法被接受的問題。
 
-## ECDSA簽名支持
+## ECDSA簽名支援
 
 * 啟用時間: 2016年2月10日
 
-添加了Let's Encrypt使用RSA中級憑證籤署ECDSA密鑰的功能。稍後將添加對具有完整ECDSA憑證鏈的ECDSA密鑰簽名的支持。
+添加了Let's Encrypt使用RSA中級憑證籤署ECDSA密鑰的功能。稍後將添加對具有完整ECDSA憑證鏈的ECDSA密鑰簽名的支援。
 
-## ACME DNS挑戰支持
+## ACME DNS挑戰支援
 
 * 啟用時間: 2016年1月20日
 
