@@ -21,7 +21,7 @@ lastmod: 2019-07-03
 
 我们开始运作一个[证书透明度日志服务器]({{< ref "/docs/ct-logs.html" >}}).
 
-## 支持 TLS ALPN 挑战
+## 支持 TLS ALPN 验证
 
 * 启用时间：2018 年 7 月 12 日
 
@@ -63,7 +63,7 @@ Let's Encrypt 现在支持对国际化域名（IDN）颁发证书。
 
 添加了 Let's Encrypt 使用 RSA 中间证书对 ECDSA 公钥进行签名的功能。稍后将添加使用完整的 ECDSA 证书链对 ECDSA 公钥进行签名的支持。
 
-## ACME DNS 挑战支持
+## ACME DNS 验证支持
 
 * 启用时间：2016 年 1 月 20 日
 
