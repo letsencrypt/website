@@ -2,16 +2,14 @@
 title: 联系我们
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-08-14
 menu:
   main:
     weight: 80
     parent: about
 ---
 
-## 帮助（支持）
-
-如果您在使用 Let's Encrypt 过程中有任何疑问，请在 [Let's Encrypt 论坛](https://community.letsencrypt.org/)提问.
+**我们不通过电子邮件提供支持服务。如果你有问题想要获得支持服务，请使用我们的[社区论坛](https://community.letsencrypt.org)。下面的电子邮件地址仅用于描述中写明的特定用途。**
 
 ## 新闻咨询
 
@@ -27,7 +25,7 @@ menu:
 
 ## 安全问题
 
-除非您的消息涉及 Let's Encrypt 的安全问题，否则请勿向此地址发送邮件。
+**除非您的消息涉及 Let's Encrypt 的安全问题，否则请勿向此地址发送邮件。**
 
 发送邮件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
