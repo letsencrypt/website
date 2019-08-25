@@ -1,5 +1,4 @@
 ---
-untranslated: 0
 title: はじめる
 slug: getting-started
 top_graphic: 3
