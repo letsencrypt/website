@@ -20,7 +20,7 @@ menu:
 <div class="figure">
   <h2><a name="percent-pageloads" href="#percent-pageloads"
     >使用 Firefox 加载的 HTTPS 网页的百分比</a></h2>
-  <p>(14日均线，来源：<a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Firefox 遥测</a>)</p>
+  <p>（14 日移动平均，数据来源：<a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Firefox 遥测</a>）</p>
   <div id="pageloadPercent" title="使用 Firefox 加载的 HTTPS 网页的百分比" class="statsgraph"></div>
 </div>
 
