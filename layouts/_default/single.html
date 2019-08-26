@@ -129,6 +129,7 @@
 
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
 		<div class="canonical-warning" style="">
+			<i class="fas fa-exclamation-circle" aria-hidden="true"></i>
 			{{ i18n "english_is_canonical" | safeHTML }}
 		</div>
 		{{ end }}
