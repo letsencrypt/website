@@ -38,7 +38,10 @@
                 {{ end }}
               </ul>
               {{ with .OutputFormats.Get "RSS" -}}
-                <p class="rss-subscribe">{{ i18n "subscribe_rss" (dict "Permalink" "/feed.xml") | safeHTML }}</p>
+                <p class="rss-subscribe">
+                  <i class="fas fa-rss-square" aria-hidden="true"></i>
+                  {{ i18n "subscribe_rss" (dict "Permalink" "/feed.xml") | safeHTML }}
+                </p>
               {{ end  }}
           </div>
         </div>
