@@ -328,6 +328,14 @@
  */
 .page-content {
     padding-top: $spacing-unit;
+
+    .canonical-warning {
+        padding: 5px;
+        margin: 0.50em 0;
+        background-color: #FFDDDD;
+        border: thin solid #DDBBBB;
+        overflow: hidden;
+    }
 }
 
 .page-heading {
