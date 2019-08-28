@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-20",
+	"lastmod": "2019-08-28",
 	"categories": [
 		"Bash",
 		"C",
@@ -739,6 +739,20 @@
 			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
 			"category": "Microsoft Azure",
 			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "App Service Acmebot",
+			"url": "https://github.com/shibayan/appservice-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Compatible to Azure Web Apps / Functions / Web App for Containers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Key Vault Acmebot",
+			"url": "https://github.com/shibayan/keyvault-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Work with Azure Key Vault Certificates)",
 			"acme_v2": "true"
 		}
 	]
