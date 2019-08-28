@@ -1,4 +1,84 @@
 ---
+title: 证书透明度（CT）日志
 slug: ct-logs
-untranslated: 1
+top_graphic: 4
+lastmod: 2019-05-15
 ---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">证书透明度（CT）日志</a>是用于记录和监视TLS证书颁发的系统。 CT极大地增强了每个人监控和研究证书颁发的能力，这些功能使CA生态系统和Web安全性得到了大量改进。 因此，CT正迅速成为关键基础设施。</p>
+
+<p>Let's Encrypt将我们发出的所有证书提交给CT日志。 我们自己也经营CT日志，欢迎所有被公开信任的证书机构提交。</p>
+
+<h2>资金来源</h2>
+
+<p>我们要感谢以下合作伙伴慷慨赞助Let's Encrypt的CT日志。如果您的组织希望帮助我们继续这项工作，请考虑<a href="{{< ref "/become-a-sponsor.html" >}}">赞助或捐赠</a>。</p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240"></a></center></p>
+
+<h2>架构</h2>
+
+<p>我们的日志使用在AWS基础架构上运行的Google<a href="https://github.com/google/trillian/">Trillian软件</a>。我们使用<a href="https://kubernetes.io/">Kubernetes</a>进行容器编排和作业调度，使用AWS RDS进行数据库管理。</p>
+
+<h2>日志监控</h2>
+
+<p>Let's Encrypt创建了一个名为<a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>的开源CT日志监控工具。我们使用此工具来监控我们自己的日志的稳定性和合规性，我们希望其他人也会发现它的实用性。</p>
+
+<h2>CT日志服务器</h2>
+
+<p>
+<strong>名称：Oak 2019</strong><br>
+作用：生产环境日志<br>
+链接: https://oak.ct.letsencrypt.org/2019/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==</code>
+</p>
+
+<p>
+<strong>名称：Oak 2020</strong><br>
+作用：生产环境日志<br>
+链接: https://oak.ct.letsencrypt.org/2020/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==</code>
+</p>
+
+<p>
+<strong>名称：Oak 2021</strong><br>
+作用：生产环境日志<br>
+链接: https://oak.ct.letsencrypt.org/2021/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==</code>
+</p>
+
+<p>
+<strong>名称：Oak 2022</strong><br>
+作用：生产环境日志<br>
+链接: https://oak.ct.letsencrypt.org/2022/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==</code>
+</p>
+
+<p>
+<strong>名称：Testflume 2019</strong><br>
+作用：测试环境日志<br>
+链接: https://testflume.ct.letsencrypt.org/2019/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==</code>
+</p>
+
+<p>
+<strong>名称：Testflume 2020</strong><br>
+作用：测试环境日志<br>
+链接: https://testflume.ct.letsencrypt.org/2020/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==</code>
+</p>
+
+<p>
+<strong>名称：Testflume 2021</strong><br>
+作用：测试环境日志<br>
+链接: https://testflume.ct.letsencrypt.org/2021/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==</code>
+</p>
+
+<p>
+<strong>名称：Testflume 2022</strong><br>
+作用：测试环境日志<br>
+链接: https://testflume.ct.letsencrypt.org/2022/<br>
+公钥：<code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==</code>
+</p>
