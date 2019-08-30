@@ -1,5 +1,5 @@
 ---
-title: Expiration Emails
+title: 만료 이메일
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
@@ -8,44 +8,23 @@ lastmod: 2019-04-18
 
 {{< lastmod >}}
 
-# Subscribing
+# 구독
 
-If you provide an email address to Let's Encrypt when you create your
-account, we'll automatically send you expiry notices when your certificate
-is coming up for renewal. We send the first notice at 20 days before
-your certificate expires, and more notices at 10 days and 1 day before
-it expires.
+계정을 만들 때 Let's Encrypt에 이메일 주소를 제공한 경우, 인증서가 갱신될 때 만료 통지를 자동으로 보냅니다. 첫 통지는 인증서가 만료되기 20일 전에 발송하고, 통지는 만료되기 10일과 1일 전에 발송합니다.
 
-# When You Get an Expiration Email
+# 만료 이메일을 받을 때
 
-If your certificate is already renewed, we won't send an expiry notice. We
-consider a certificate to be renewed if there is a newer certificate
-with the exact same set of names, regardless of which account created it.
-If you've issued a new certificate that adds or removes a name relative to your
-old certificate, you will get expiration email about your old certificate.
-If you check the certificate currently running on your website, and it
-shows the correct date, no further action is needed.
+귀하의 인증서가 이미 갱신된 경우 만료 통지는 발송하지 않습니다. 인증서가 생성된 계정과 관계없이 동일한 이름 집합을 가진 새로운 인증서가 있는 경우 인증서를 갱신할 수 있습니다. 이전 인증서와 관련된 이름을 추가하거나 제거하는 새 인증서를 발급한 경우 이전 인증서에 대한 만료 이메일이 표시됩니다. 웹 사이트에서 현재 실행 중인 인증서를 확인했는데 올바른 날짜가 표시되면 추가 작업이 필요하지 않습니다.
 
-# Unsubscribing
+# 구독 취소
 
-The email body has a link to unsubscribe from future notices. If you
-hit that link, you won't get any expiration notices for the next year.
-The list of "who's unsubscribed" is independent for Staging notices and
-Production notices, so you can feel free to unsubscribe from Staging without
-affecting your Production status.
+이메일 본문에는 향후 통지를 받지 못하도록 하는 링크가 있습니다. 그 링크를 누르면, 앞으로 1년 동안 어떤 만료 통지서도 받지 못할 것입니다. "구독이 취소된 사람" 목록은 스테이징 알림 및 프로덕션 알림에 독립되어 있으므로 프로덕션 상태에 영향을 미치지 않고 스테이징을 자유롭게 취소할 수 있습니다.
 
-Note that your unsubscribe is only valid for one year, so you will have to
-renew it every year.
+귀하의 가입 취소는 1년 동안만 유효하므로 매년 갱신해야 합니다.
 
-There's not yet a way for us to efficiently re-subscribe
-you if you unsubscribe. Our email provider, Mandrill,
-[has a manual mechanism that we still need to
-automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+귀하께서 가입을 취소하시면 저희가 귀하를 효율적으로 재구독할 수 있는 방법이 아직 없습니다. 이메일 공급자인 Mandrill은 [아직도 자동화해야 하는 수동 메커니즘을 가지고 있습니다.](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
 
-However, you can change the email address on your account, which effectively
-re-subscribes you. Many common email services treat `yourname+1@example.com` the
-same as `yourname@example.com`. So if you update your email address to
-`yourname+1@example.com`, you can start getting expiry mail again. With Certbot,
-use:
+그러나 계정의 이메일 주소를 변경하면 실제로 다시 가입할 수 있습니다. 많은 일반 전자 메일 서비스에서 `yourname+1@example.com`을 `yourname@example.com`과 동일하게 취급합니다. 따라서 이메일 주소를 `yourname+1@example.com`으로 업데이트하면 만료 메일을 다시 받기 시작할 수 있습니다. Certbot로,
+아래를 사용하십시오.:
 
 `certbot update_account --email yourname+1@example.com`

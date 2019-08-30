@@ -1,5 +1,5 @@
 ---
-title: Certificate Compatibility
+title: 인증서 호환성
 slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05

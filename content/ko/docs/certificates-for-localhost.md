@@ -43,8 +43,7 @@ localhost에 대한 개인 키와 자체 서명된 인증서를 생성하는 가
       -subj '/CN=localhost' -extensions EXT -config <( \
        printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
 
-You can then configure your local web server with localhost.crt and
-localhost.key, and install localhost.crt in your list of locally trusted roots.
+localhost.crt와 localhost.key로 로컬 웹서버를 구성하고, 신뢰할 수 있는 root 목록에 localhost.crt를 설치하십시오.
 
 그런 다음 localhost.crt 및 localhost.key를 사용하여 로컬 웹 서버를 구성하고 로컬로 신뢰할 수있는 루트 목록에 localhost.crt를 설치할 수 있습니다.
 

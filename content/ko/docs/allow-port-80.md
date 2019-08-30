@@ -1,5 +1,5 @@
 ---
-title: Best Practice - Keep Port 80 Open
+title: 모범 사례 - 80번 포트를 열어 두십시오.
 slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
@@ -8,36 +8,14 @@ lastmod: 2019-01-24
 
 {{< lastmod >}}
 
-We occasionally get reports from people who have trouble using the
-HTTP-01 challenge type because they've firewalled off port 80 to their
-web server. Our recommendation is that all servers meant for general web
-use should offer both HTTP on port 80 and HTTPS on port 443. They should
-also send redirects for all port 80 requests, and possibly an HSTS header
-(on port 443 requests).
+우리는 때때로 80번 포트가 웹서버의 방화벽에 의해 차단되어 HTTP-01을 사용하는 데 문제가 있는 사람들로부터 보고서를 받습니다. 우리는 일반 웹용 서버는 80번 포트의 HTTP와 443번 포트의 HTTPS를 모두 제공하도록 하는 것을 권장합니다. 그들은 또한 모든 80번 포트 요청과 가능하다면 HSTS 헤더까지에 대한 리다이렉션을 보내야합니다.
 
-Allowing port 80 doesn't introduce a larger attack surface on your server,
-because requests on port 80 are generally served by the same software that
-runs on port 443.
+80번 포트에 대한 요청은 일반적으로 443번 포트에서 실행되는 소프트웨어와 같은 것으로부터 오기 때문에 80번 포트를 허용한다고 해서 더 큰 공격 영역이 생기는 것은 아닙니다.
 
-Closing port 80 doesn't reduce the risk to a person who accidentally
-visits your website via HTTP. In normal circumstances, that person
-would receive a redirect to HTTPS, and their subsequent traffic will be
-protected. If that person was subject to an active MITM, the MITM would
-answer on port 80, so your site would never have a chance to answer
-"connection refused."
+80번 포트를 닫는다고 해도 우연히 HTTP를 통해 당신의 웹사이트에 방문하는 사람에게 위험이 줄어드는 것은 아닙니다. 일반적인 경우에 그 사람은 HTTPS로 리다이렉션 되고 후속 트래픽은 보호될 것입니다. 만약 그 사람이 활성화된 MITM의 대상이 되었다면, MITM은 80번 포트에서 응답하므로 사이트에서 "연결이 거부되었습니다."라고 응답할 기회가 없습니다.
 
-Lastly, keeping port 80 open in order to serve a redirect helps get
-people to the right version of your site (the HTTPS version). There are
-various situations beyond your control that might briefly land someone
-on the HTTP version of your site - for instance, automatic linkification
-in emails, or manually typing a domain name. It's better for them to get
-a redirect than an error.
+마지막으로 리다이렉션을 제공하기 위해 80번 포트를 열어 두면 사람들이 당신의 웹사이트의 올바른 버전(HTTPS 버전)을 제공받을 수 있는 데 도움이 될 것입니다. 당신의 웹사이트의 HTTP 버전을 누군가 잠시 방문하게 될 다양할 솽황들이 있다. 예를 들면 이메일의 자동 연결이나 도메인 이름을 수동으로 입력하는 경우이다. 그들이 오류보다는 리다이렉션을 ㅂ다는 것이 낫다.
 
-Unfortunately, you might not have control over whether port 80
-is blocked for your site. Some (mostly residential) ISPs block
-port 80 for various reasons. If your ISP does this but you’d
-still like to get certificates from Let's Encrypt, you have
-two options: You can use DNS-01 challenges or you can use [one of
-the clients that supports TLS-ALPN-01 challenges]
+불행히도 당신은 당신의 사이트에 대해 80번 포트가 차단되었는지에 대한 통제권을 갖지 못할 수도 있다. 일부 (주로 주거용) ISP는 여러 가지 이유로 80번 포트를 차단합니다. 만약 당신의 ISP가 이처럼 80번 포트를 차단하지만 Let's Encrypt에서 인증서를 받으려면 두 가지 옵션이 있습니다: DNS-01 챌린지를 사용하거나 [TLS-ALPN-01 과제를 지원하는 클라이언트 중 하나]를 사용할 수 있습니다.
 (https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
- (on port 443):
+ (443번 포트에서):

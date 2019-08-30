@@ -40,39 +40,39 @@ other = "Linux Foundation은 The Linux Foundation의 등록 상표입니다. Lin
 other = "네비게이션 링크 건너뛰기"
 
 [last_updated]
-other = "Last updated:"
+other = "마지막 업데이트:"
 
 [see_all_doc]
-other = "See all Documentation"
+other = "모든 문서를 참조"
 
 [blog_feed]
-other = "Let's Encrypt Blog Feed"
+other = "Let's Encrypt 블로그 피드"
 
 [platinum]
-other = "Platinum"
+other = "플래티넘"
 
 [gold]
-other = "Gold"
+other = "골드"
 
 [silver]
-other = "Silver"
+other = "실버"
 
 [languages]
 other = "언어"
 
 [view_in_english]
-other = "View in English"
+other = "영어로 보기"
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
 # (nb: used manually in layout/single.html)
-other = "View in English"
+other = "영어로 보기"
 
 [old_version]
-other = "Note: The English version has been updated since the translation"
+other = "참고: 번역 이후 영어 버전이 업데이트되었습니다"
 
 [not_yet_translated]
-other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+other = "이 웹 페이지는 아직 번역되지 않았습니다. <a href=\"https://github.com/letsencrypt/website\"> 여기 </a>에 기여할 수 있습니다."
 
 [english_is_canonical]
-other = "The English version is authoritative"
+other = "영어 버전은 인증되었습니다."

@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: 연락처
 slug: contact
 top_graphic: 1
 lastmod: 2019-03-26
@@ -9,33 +9,33 @@ menu:
     parent: about
 ---
 
-## Support
+## 지원
 
-If you have questions about how to use Let's Encrypt, please ask on [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)에 도음을 요청해 주십시오.
 
-## Press Inquiries
+## 출판 관련 문의사항
 
-Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
+이메일: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
-## Sponsorship
+## 후원
 
-Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
+이메일: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mailing Lists
+## 메일링 리스트
 
-For information about various technical mailing lists, please visit our [Get Involved]({{< ref "/getinvolved.md" >}}) page.
+다양한 기술 메일링 리스트에 대한 정보를 원하시면, 당사의 [참여]({< "/getinvolved.md" 참조>}}) 페이지를 방문해 주십시오.
 
-To sign up for our newsletter, [click here.](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad)
+뉴스레터를 구독하려면 [여기를 클릭하세요.](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad)
 
-## Security
+## 보안
 
-Please do not write to this address unless your message concerns a security issue with Let's Encrypt.
+Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+이메일: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
-### Encrypted Communication
+### 안전한 통신
 
-To communicate securely with the Security Team, please utilize our GPG key. It consists of several subkeys signed by an offline master key. Any recent version of GnuPG will support this kind of hybrid key. The current key structure is:
+보안 팀과 안전하게 통신하려면 GPG 키를 사용해 주십시오. 오프라인 마스터 키로 서명한 여러 하위 키로 구성됩니다. 모든 최신 버전의 GnuPG는 이러한 종류의 하이브리드 키를 지원합니다. 현재 키 구조는 다음과 같습니다.:
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
@@ -46,6 +46,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
 sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
 ```
 
-You can download the [GPG Public Key](/security_letsencrypt.org-publickey.asc) here, or utilize your favorite key server.
+여기에서 [GPG 공용 키](/security_letsencrypt.org-publickey.asc)를 다운로드하거나 즐겨찾는 키 서버를 사용할 수 있습니다.
 
-The key fingerprint must match `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+키 지문은 `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`와 일치해야 합니다.

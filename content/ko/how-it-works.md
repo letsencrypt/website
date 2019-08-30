@@ -1,5 +1,5 @@
 ---
-title: How It Works
+title: 작동 방식
 slug: how-it-works
 top_graphic: 3
 lastmod: 2018-06-24

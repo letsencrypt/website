@@ -1,69 +1,35 @@
 ---
-title: Getting Started
+title: 시작하기
 slug: getting-started
 top_graphic: 3
 date: 2018-04-12
 ---
 
-To enable HTTPS on your website, you need to get a certificate (a type of file)
-from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
-certificate for your website's domain from Let's Encrypt, you have to demonstrate
-control over the domain. With Let's Encrypt, you do this using software that uses
-the [ACME protocol](https://ietf-wg-acme.github.io/acme/), which typically runs
-on your web host.
+웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME protocol](https://ietf-wg-acme.github.io/acme/),를 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
 
-To figure out what method will work best for you, you will need to know whether
-you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
-as SSH access) to your web host. If you manage your website entirely through a
-control panel like [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
-[WordPress](https://wordpress.org/), there's a good chance you don't have shell
-access. You can ask your hosting provider to be sure.
+어떤 방법이 가장 적합한지 알아보려면 웹 호스트에 [쉘 접근](https://en.wikipedia.org/wiki/Shell_account)(SSH 액세스라고도 함)이 있는지 알아야 합니다. [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/) 또는 [워드프레스](https://wordpress.org/)와 같은 제어판을 통해 웹 사이트를 완전히 관리하는 경우 셸 액세스 권한이 없을 가능성이 높습니다. 호스팅 공급자에게 확인을 요청할 수 있습니다.
 
-# With Shell Access
+# 쉘 엑세스 권한이 있는 경우
 
-We recommend that most people with shell access use the
-[Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
-It also has expert modes for people who don't want autoconfiguration. It's easy to use,
-works on many operating systems, and has great documentation. [Visit the
-Certbot site][Certbot] to get customized instructions for your operating system and web server.
+셸 액세스 권한이 있는 대부분의 사용자는 [Certbot] ACME 클라이언트를 사용하는 것이 좋습니다. 다운타임 없이 인증서 발급 및 설치를 자동화할 수 있습니다. 또한 자가변성을 원하지 않는 사람들을 위한 전문적 모드도 갖추고 있습니다. 사용하기 쉽고, 많은 운영 체제에서 작동하며, 문서화가 매우 우수합니다. [Certbot 사이트를 방문합니다][Certbot]은(는) 운영 체제 및 웹 서버에 대한 사용자 지정 지침을 제공합니다.
 
-If [Certbot] does not meet your needs, or you'd like to try something else, there are
-[many more ACME clients to choose from]({{< ref "/docs/client-options.md" >}}).  Once you've chosen ACME client
-software, see the documentation for that client to proceed.
+[Certbot]이 사용자의 요구를 충족하지 못하거나 다른 방법을 시도하려는 경우 [많은 ACME 클라이언트를 선택할 수 있습니다]({ < "/docs/client-options.md" 참조>}). ACME 클라이언트 소프트웨어를 선택한 후 계속하려면 해당 클라이언트의 설명서를 참조합니다.
 
-If you're experimenting with different ACME clients, use our
-[staging environment]({{< ref "/docs/staging-environment.md" >}}) to avoid hitting
-[rate limits]({{< ref "/docs/rate-limits.md" >}}).
+다른 ACME 클라이언트를 사용하는 경우, [staging 환경]({{< ref "/docs/staging-environment.md" >}})을 사용하여 [rate limits]({{< ref "/docs/rate-limits.md" >}})에 도달하지 않도록 합니다.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
-# Without Shell Access
+# 쉘 엑세스 권한이 없는 경우
 
-The best way to use Let's Encrypt without shell access is by using built-in support
-from your hosting provider. If your hosting provider offers Let's Encrypt
-support, they can request a free certificate on your behalf, install it, and
-keep it up-to-date automatically. For some hosting providers, this is a
-configuration setting you need to turn on. Other providers automatically
-request and install certificates for all their customers.
+셸 액세스 없이 암호화하는 가장 좋은 방법은 호스팅 공급자의 기본 제공 지원을 사용하는 것입니다. 호스트 공급자가 Let's Encrypt 지원을 제공하는 경우 사용자 대신 무료 인증서를 요청하고 설치하여 자동으로 최신 상태로 유지할 수 있습니다. 일부 호스팅 공급자의 경우 이 설정을 사용해야 합니다. 다른 공급자는 모든 고객에 대한 인증서를 자동으로 요청하고 설치합니다.
 
-[Check our list of hosting providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-to see if yours is on it. If so, follow their documentation to set up your
-Let's Encrypt certificate.
+[호스팅 제공자 목록을 확인하여](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920) 귀하의 호스팅이 있는지 확인합니다. 있다면 해당 문서에 따라 Let's Encrypt 인증서를 설정합니다.
 
-If your hosting provider does not support Let's Encrypt, you can contact them to
-request support. We do our best to make it very easy to add Let's Encrypt
-support, and providers are often happy to hear suggestions from customers!
+호스팅 제공 업체가 Let's Encrypt를 지원하지 않는 경우 해당 공급 업체에 문의하여 지원을 요청할 수 있습니다. 우리는 Let's Encrypt 지원을 쉽게 받을 수 있도록 최선을 다하며, 제공자는 종종 고객의 제안을 듣고 기뻐합니다!
 
-If your hosting provider doesn't want to integrate Let's Encrypt, but does
-support uploading custom certificates, you can install Certbot on your own
-computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
-In manual mode, you upload a specific file to your website to prove your
-control. Certbot will then retrieve a certificate that you can upload to your
-hosting provider. We don't recommend this option because it is time-consuming
-and you will need to repeat it several times per year as your certificate
-expires. For most people it is better to request Let's Encrypt support from your
-hosting provider, or switch providers if they do not plan to implement it.
+호스트 공급자가 Let's Encrypt를 통합하지 않고 사용자 지정 인증서 업로드를 지원하는 경우 Certbot을 직접 설치할 수 있습니다.
+컴퓨터를 사용하여 [수동 모드](https://certbot.eff.org/docs/using.html#manual)에서 사용합니다. 수동 모드에서는 특정 파일을 웹 사이트에 업로드하여 제어를 증명할 수 있습니다. 그런 다음 Certbot이 호스트 공급자에게 업로드할 수 있는 인증서를 검색합니다. 이 옵션은 시간이 오래 걸리고 인증서가 만료될 때 1년에 여러 번 반복해야 하기 때문에 권장하지 않습니다. 대부분의 경우 호스트 공급자에게 Let's Encrypt 지원을 요청하거나, 이를 구현할 계획이 없는 경우 공급자를 전환하는 것이 좋습니다
 
-# Getting Help
+# 도움말
 
-If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
+ACME 클라이언트 선택 또는 특정 클라이언트 사용 또는 Let's Encrypt와 관련된 기타 사항에 대한 질문이 있는 경우, [도움말 커뮤니티 포럼](https://community.letsencrypt.org/)을 사용해 주십시오.

@@ -1,5 +1,5 @@
 ---
-title: Get Involved
+title: 참여
 slug: getinvolved
 top_graphic: 5
 lastmod: 2019-01-11

@@ -1,10 +1,10 @@
 ---
-title: Thank You for Your Donation to ISRG
+title: ISRG에 기부해 주셔서 감사합니다
 slug: thankyou
 top_graphic: 2
 date: 2018-04-12
 ---
 
-Thank you for supporting a more secure and privacy-respecting Web for all of us. Follow us on [Twitter @letsencrypt](https://twitter.com/letsencrypt) to stay up to date on our progress.
+우리 모두를 위해 더욱 안전하고 프라이버시를 존중하는 웹을 지원해 주셔서 감사합니다. [트위터 @letsencrypt](https://twitter.com/letsencrypt)에서 진행 상황에 대한 최신 정보를 얻으시기 바랍니다.
 
-Your transaction has been completed, and a receipt for your purchase has been emailed to you. You may log into your account at <a href="https://www.paypal.com/us">www.paypal.com/us</a> to view details of this transaction.
+거래가 완료되었으며 구매 영수증이 이메일로 전송되었습니다. <a href="https://www.paypal.com/us">www.paypal.com/us</a>의 계정에 로그인하여 이 거래에 대한 세부 정보를 볼 수 있습니다.

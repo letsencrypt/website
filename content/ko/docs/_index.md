@@ -8,35 +8,35 @@ menu:
 lastmod: 2019-05-15
 ---
 
-# Overview
+# 개요
 
-* [Getting Started]({{< ref "/getting-started.md" >}})
-* [How Let's Encrypt Works]({{< ref "/how-it-works.md" >}})
-* [Frequently Asked Questions (FAQ)]({{< ref "/docs/faq.md" >}})
-* [Glossary]({{< ref "/docs/glossary.md" >}})
+* [시작하기]({{< ref "/getting-started.md" >}})
+* [Let's Encrypt의 작동 방식]({{< ref "/how-it-works.md" >}})
+* [자주 묻는 질문(FAQ)]({{< ref "/docs/faq.md" >}})
+* [용어 사전]({{< ref "/docs/glossary.md" >}})
 
-# Subscriber Information
+# 구독자 정보
 
-* [ACME Client Implementations]({{< ref "/docs/client-options.md" >}})
-* [Rate Limits]({{< ref "/docs/rate-limits.md" >}})
-* [Expiration Emails]({{< ref "/docs/expiration-emails.md" >}})
+* [ACME 클라이언트 구현]({{< ref "/docs/client-options.md" >}})
+* [요금 제한]({{< ref "/docs/rate-limits.md" >}})
+* [만료 이메일]({{< ref "/docs/expiration-emails.md" >}})
 
-# Advanced Subscriber Information
+# 고급 구독자 정보
 
-* [Staging Environment]({{< ref "/docs/staging-environment.md" >}})
-* [Certificate Compatibility]({{< ref "/docs/cert-compat.md" >}})
-* [Chain of Trust (Root and Intermediate Certificates)]({{< ref "/certificates.md" >}})
-* [Upcoming Features]({{< ref "/upcoming-features.md" >}})
-* [Revoking Certificates]({{< ref "/docs/revoking.md" >}})
-* [Certificate Authority Authorization]({{< ref "/docs/caa.md" >}})
-* [Certificates for localhost]({{< ref "/docs/certificates-for-localhost.md" >}})
-* [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
-* [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
-* [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
+* [준비 환경]({{< ref "/docs/staging-environment.md" >}})
+* [인증서 호환성]({{< ref "/docs/cert-compat.md" >}})
+* [신뢰의 체인 (root 및 중간 인증서)]({{< ref "/certificates.md" >}})
+* [추가될 기능]({{< ref "/upcoming-features.md" >}})
+* [인증서 해지]({{< ref "/docs/revoking.md" >}})
+* [인증 기관 인증]({{< ref "/docs/caa.md" >}})
+* [로컬 호스트용 인증서]({{< ref "/docs/certificates-for-localhost.md" >}})
+* [모범 사례 - 80번 포트를 열어 두십시오.]({{< ref "/docs/allow-port-80.md" >}})
+* [도전 유형]({{< ref "/docs/challenge-types.md" >}})
+* [인증서 투명성(CT, Certificate Transparency) 로그]({{< ref "/docs/ct-logs.html" >}})
 
-# Client Developer Information
+# 클라이언트 개발자 정보
 
-* [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
-* [ACME Protocol Updates]({{< ref "/docs/acme-protocol-updates.md" >}})
-* [Differences from Current ACME Draft](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
-* [Finding Account IDs]({{< ref "/docs/account-id.md" >}})
+* [클라이언트 및 대규모 제공자 통합 안내서]({{< ref "/docs/integration-guide.md" >}})
+* [ACME 프로토콜 업데이트]({{< ref "/docs/acme-protocol-updates.md" >}})
+* [현재 ACME 초안과 다른점](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [계정 아이디 찾기]({{< ref "/docs/account-id.md" >}})

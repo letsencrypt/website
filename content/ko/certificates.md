@@ -1,5 +1,5 @@
 ---
-title: Chain of Trust
+title: 신뢰의 사슬
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01

@@ -7,19 +7,19 @@ lastmod: 2019-07-03
 
 ## 다중관점 (유효성) 검증
 
-Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
+현재 Let 's Encrypt는 단일 네트워크 관점에서 유효성을 검사합니다. 여러 네트워크 관점에서 검증을 시작할 계획입니다.
 
 ## ECDSA Root와 중간 인증서
 
-Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
+현재 Let 's Encrypt는 RSA 중간체를 사용하여 최종 엔터티 인증서에만 서명합니다. SS는 최종 엔터티 인증서에 서명하는 데 사용할 수있는 ECDSA root 및 중간체를 생성할 것입니다.
 
 # 개발된 기능
 
 ## 인증서 투명성 로그
 
-* Enabled: May 15, 2019
+* 활성된 날짜: 2019년 5월 15일
 
-We are starting to operate a [Certificate Transparency log]({{< ref "/docs/ct-logs.html" >}}).
+[인증서 투명성 로그]({{< ref "/docs/ct-logs.html" >}})를 운영하기 시작했습니다.
 
 ## TLS ALPN 챌린지 지원
 
