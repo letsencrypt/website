@@ -754,6 +754,18 @@
 			"category": "Microsoft Azure",
 			"comments": "(Work with Azure Key Vault Certificates)",
 			"acme_v2": "true"
-		}
+		},
+		{
+			"name": "Acme PHP",
+			"url": "https://github.com/acmephp/acmephp",
+			"category": "php",
+			"acme_v2": "true",
+		},
+		{
+			"name": "Acme PHP Library",
+			"url": "https://github.com/acmephp/core",
+			"library": "php",
+			"acme_v2": "true",
+		},
 	]
 }
