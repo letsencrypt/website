@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-28",
+	"lastmod": "2019-08-30",
 	"categories": [
 		"Bash",
 		"C",
@@ -753,6 +753,18 @@
 			"url": "https://github.com/shibayan/keyvault-acmebot",
 			"category": "Microsoft Azure",
 			"comments": "(Work with Azure Key Vault Certificates)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP",
+			"url": "https://github.com/acmephp/acmephp",
+			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP Library",
+			"url": "https://github.com/acmephp/core",
+			"library": "PHP",
 			"acme_v2": "true"
 		}
 	]
