@@ -758,13 +758,13 @@
 		{
 			"name": "Acme PHP",
 			"url": "https://github.com/acmephp/acmephp",
-			"category": "php",
+			"category": "PHP",
 			"acme_v2": "true"
 		},
 		{
 			"name": "Acme PHP Library",
 			"url": "https://github.com/acmephp/core",
-			"library": "php",
+			"library": "PHP",
 			"acme_v2": "true"
 		}
 	]
