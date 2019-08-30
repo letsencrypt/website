@@ -3,7 +3,7 @@ title: Encontrando IDs de Cuentas
 slug: account-id
 top_graphic: 1
 date: 2016-08-10
-lastmod: 2016-08-10
+lastmod: 2019-07-30
 ---
 
 {{< lastmod >}}
@@ -14,8 +14,7 @@ automáticamente por el software de cliente ACME que utilizas para hablar con Le
 y es posible que tenga múltiples cuentas configuradas si ejecutas clientes ACME en
 múltiples servidores.
 
-Tu ID de cuenta es un URL de la forma `https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
-También puedes proveer solo los digitos al final del URL como un *shorthand*.
+Tu ID de cuenta es un URL de la forma `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` o `https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
 
 Si estás usando Certbot, puedes encontrar tu ID de cuenta mirando el campo "uri" en `/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
 
