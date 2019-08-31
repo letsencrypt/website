@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt是一個<span>免費</span>,<span>自動化</span>,和 <span>公開</span> 的證書頒發機構."
+other = "Let&rsquo;s Encrypt是一個<span>免費</span>,<span>自動化</span>,和 <span>公開</span> 的憑證頒發機構."
 
 [home_hero_getting_started]
 other = "入門"
@@ -49,7 +49,7 @@ other = "最後更新於"
 other = "查看所有文件"
 
 [blog_feed]
-other = "Let's Encrypt部落格feed"
+other = "Let's Encrypt部落格訂閱源"
 
 [platinum]
 other = "鉑金"
@@ -76,3 +76,6 @@ other = "請注意：英文版本（原版）在本翻譯後有改動"
 
 [not_yet_translated]
 other = "該網頁暫時未被翻譯。 您可以點擊 <a href=\"https://github.com/letsencrypt/website\">此處</a> 幫助我們翻譯此網頁。"
+
+[english_is_canonical]
+other = "此頁內容請以英文頁面為準"

@@ -24,12 +24,12 @@ lastmod: 2019-05-15
 # 高級用戶（訂戶）訊息
 
 * [測試環境]({{< ref "/docs/staging-environment.md" >}})
-* [證書相容性]({{< ref "/docs/cert-compat.md" >}})
-* [證書信任鏈 (根和中間證書)]({{< ref "/certificates.md" >}})
+* [憑證相容性]({{< ref "/docs/cert-compat.md" >}})
+* [憑證信任鏈 (根和中間憑證)]({{< ref "/certificates.md" >}})
 * [即將推出功能]({{< ref "/upcoming-features.md" >}})
-* [吊銷證書]({{< ref "/docs/revoking.md" >}})
-* [證書頒發機構授權（CAA）]({{< ref "/docs/caa.md" >}})
-* [localhost證書]({{< ref "/docs/certificates-for-localhost.md" >}})
+* [吊銷憑證]({{< ref "/docs/revoking.md" >}})
+* [憑證頒發機構授權（CAA）]({{< ref "/docs/caa.md" >}})
+* [localhost憑證]({{< ref "/docs/certificates-for-localhost.md" >}})
 * [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
 * [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
 * [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
