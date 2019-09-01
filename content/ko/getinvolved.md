@@ -27,7 +27,7 @@ menu:
 
 ### letsencrypt.org
 
-You can improve this website and the documentation [here](https://github.com/letsencrypt/website) or help with its [translations](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
+[여기](https://github.com/letsencrypt/website)에서 이 웹사이트의 문서를 개선하거나 [번역](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)에 도움을 줄 수 있습니다.
 
 ## 프로토콜
 
