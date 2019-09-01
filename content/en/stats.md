@@ -4,6 +4,7 @@ linkTitle: Statistics
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt certificate statistics.
+lastmod: 2019-22-08
 menu:
   main:
     weight: 70
