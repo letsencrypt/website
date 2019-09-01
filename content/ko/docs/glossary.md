@@ -9,16 +9,16 @@ date: 2018-12-30
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
 	name="The term to define (optional if english or abbr is provided)"
 	abbr="an accronym (optional)"
 	english="the english term (optional - if present the abbr is in english too)" %}}
 		the definition
 {% /def %}
-	
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
@@ -73,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} 인증서의 내용을 설명하는 인증서 [제목](# def-subject)의 일부입니다. [root] (# def-root) 및 [intermediates](# def-intermediate)의 경우 사람이 읽을 수있는 [인증 기관](# def-CA)의 이름입니다. [리프 인증서](# def-leaf)의 경우 인증서의 도메인 이름 중 하나입니다. 참고: 일반적인 이름은 63 자로 제한됩니다. 현재의 인터넷 표준은 소프트웨어가 인증서의 적용 가능성을 결정하기 위해 [제목 대체 이름](# def-SAN) 만 검사 할 것을 기대하기 때문에 인증서가 적용되는 도메인 이름을 나타내는 오래된 방법입니다. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root](# def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let 's Encrypt](# def-LE) [intermediates](# def-intermediate)는 [IdenTrust](# def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [certificate stores](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](# def-subject) 및 동일한 [키쌍](# def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root](# def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](# def-LE) [intermediates](# def-intermediate)는 [IdenTrust](# def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [certificate stores](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](# def-subject) 및 동일한 [키쌍](# def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} DNS를 사용하여 제공된 [인증서](#def-leaf) 또는 암호화 키의 신뢰성을 확인하는 방법을 나타내는 메커니즘입니다. [위키피디아](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 

@@ -7,11 +7,11 @@ lastmod: 2019-07-03
 
 ## 다중관점 (유효성) 검증
 
-현재 Let 's Encrypt는 단일 네트워크 관점에서 유효성을 검사합니다. 여러 네트워크 관점에서 검증을 시작할 계획입니다.
+현재 Let's Encrypt는 단일 네트워크 관점에서 유효성을 검사합니다. 여러 네트워크 관점에서 검증을 시작할 계획입니다.
 
 ## ECDSA Root와 중간 인증서
 
-현재 Let 's Encrypt는 RSA 중간체를 사용하여 최종 엔터티 인증서에만 서명합니다. SS는 최종 엔터티 인증서에 서명하는 데 사용할 수있는 ECDSA root 및 중간체를 생성할 것입니다.
+현재 Let's Encrypt는 RSA 중간체를 사용하여 최종 엔터티 인증서에만 서명합니다. SS는 최종 엔터티 인증서에 서명하는 데 사용할 수있는 ECDSA root 및 중간체를 생성할 것입니다.
 
 # 개발된 기능
 
@@ -23,7 +23,7 @@ lastmod: 2019-07-03
 
 ## TLS ALPN 챌린지 지원
 
-* 활성된 날짜: 2018 년 7 월 12 일
+* 활성된 날짜: 2018년 7월 12일
 
 [보안상의 이유로 중단](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811) 했던 TLS-SNI 검증 방법에 대해 [대체품](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn)을 지정하고 구현했습니다. 검증을 위해 포트 443만 사용하려는 가입자에게 대체품을 소개하는 것이 중요했습니다.
 
