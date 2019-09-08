@@ -54,4 +54,4 @@ Translations of plotly functions are in `static/js/plotly-locale-XX.js`, uploade
 
 # Hugo errors
 
-To detect some errors, the code does a few checks, and when it fails, to trigger a build fail and detect invalid pull-requests, it calls an unexisting function, with a meaningfull name (calling an unexisting function in Hugo does breaks the build). Example: `Translations_must_not_have_aliases` in `shortcodes/i18n_status.html`
+To detect some errors, the code does a few checks, and when it fails, to trigger a build fail and detect invalid pull-requests, it calls an nonexistent function, with a meaningful name (calling a nonexistent function in Hugo breaks the build). Example: `Translations_must_not_have_aliases` in `shortcodes/i18n_status.html`
