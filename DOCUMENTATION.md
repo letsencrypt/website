@@ -14,7 +14,7 @@ When the website is built, a page with this parameter will:
 
 ## `do_not_translate: 1`
 
-A page with that attribute still had one version per language.
+A page with this attribute will still have one version per language.
 
 That attribute has two functions:
 - It informs translators that this page should not be translated
