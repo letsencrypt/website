@@ -42,7 +42,7 @@ On the top of each English pages with translations (pages really translated, not
 
 # Glossary
 
-`glossary.js` adds titles on links betwenn terms.
+`glossary.js` adds titles on links between terms.
 
 `shortcodes/def.html` contains the documentation
 
