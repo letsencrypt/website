@@ -22,7 +22,7 @@ That attribute has two functions:
 
 ## `english_is_canonical: 1`
 
-A translation with that attribute will display a warning on the top to indicate that the English version is canonical.
+A translation with this attribute will display a warning on the top to indicate that the English version is canonical.
 
 ## `date` and `lastmod`
 
