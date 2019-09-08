@@ -2,7 +2,7 @@
 # Pages parameters
 
 
-The code handeling these paramaters is in `layouts/_default/single.html`
+The code handling these parameters is in `layouts/_default/single.html`
 
 ## `untranslated: 1`
 
