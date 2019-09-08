@@ -7,7 +7,7 @@ The code handling these parameters is in `layouts/_default/single.html`
 ## `untranslated: 1`
 
 When the website is built, a page with this parameter will:
-- Have it's content replaced by the English version
+- Have its content replaced by the English version
 - Links pointing to English pages that can be translated will be rewritten to points to the translation instead
 - The top of the page will have a message to encourage new translators
 
