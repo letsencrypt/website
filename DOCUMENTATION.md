@@ -26,7 +26,7 @@ A translation with that attribute will display a warning on the top to indicate 
 
 ## `date` and `lastmod`
 
-Most pages displays the `lastmod` (or `date`) on the top. But the most important usage is to help syncronise translations: the `lastmod` of a translation must be equal to the `lastmod` of the translated page. So when a page is updated and need it's translations to be also updated, updating the `lastmod` helps to detect that automatically (on https://letsencrypt.org/i18n)
+Most pages displays the `lastmod` (or `date`) on the top. But the most important usage is to help synchronize translations: the `lastmod` of a translation must be equal to the `lastmod` of the translated page. So when a page is updated and need it's translations to be also updated, updating the `lastmod` helps to detect that automatically (on https://letsencrypt.org/i18n)
 
 Also, if the `lastmod` of the translation differs from the `lastmod` of the English version, a message will appear on the top of the translated page, to inform the user that the English version is newer (with a link to see it)
 
