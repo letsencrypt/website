@@ -2,7 +2,7 @@
 title: Let's Encrypt运作方式
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 Let's Encrypt和[ACME协议](https://ietf-wg-acme.github.io/acme/)的目标是使配置能够自动获取受信任浏览器的证书的HTTPS服务器成为可能。这是通过在网站服务器上运行证书管理软件（Agent）来达成的。

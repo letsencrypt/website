@@ -2,7 +2,7 @@
 title: How It Works
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://ietf-wg-acme.github.io/acme/) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
