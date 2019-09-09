@@ -1,4 +1,84 @@
 ---
+title: "証明書の透明性 (Certificate Transparency; CT) ログ"
 slug: ct-logs
-untranslated: 1
+top_graphic: 4
+lastmod: 2019-05-15
 ---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">証明書の透明性 (Certificate Transparency; CT)</a> とは、TLS 証明書の発行のログを記録し、監視するためのシステムです。これまで CT は、証明書の発行の監視・調査を誰もができるようにすることで、CA のエコシステムとウェブのセキュリティに非常に多くの改善をもたらしてきました。その結果、現在では CT は欠かせないインフラとなってきています。
+
+<p>Let's Encrypt では、発行したすべての証明書を CT ログに記録しています。また、自分たちでも CT ログを運営しており、パブリックに信頼されたすべての証明書の認証局は、私たちに CT ログを送信することができます。</p>
+
+<h2>ファンディング</h2>
+
+<p>Let's Encrypt の CT ログを寛大に支援してくれている以下のパートナーに感謝します。私たちがこの仕事を継続できるよう、もしあなたの組織が支援してくれるなら、ぜひ<a href="{{< ref "/become-a-sponsor.html" >}}">スポンサーになる、または、寄付する</a>ことを検討してください。よろしくお願いします。</p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240"></a></center></p>
+
+<h2>アーキテクチャ</h2>
+
+<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。</p>
+
+<h2>ログの監視</h2>
+
+<p>Let's Encrypt はオープンソースの CT ログ監視ツール <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> を開発しています。私たちはこのツールを使用して自分たちのログの安定性とコンプライアンスを監視しています。みなさんにもこのツールが役に立つことを願っています。</p>
+
+<h2>CT ログ</h2>
+
+<p>
+  <strong>Name: Oak 2019</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2019/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2020</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2020/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2021</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2021/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2022</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2022/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2019</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2019/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2020</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2020/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2021</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2021/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2022</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2022/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==</code>
+</p>
