@@ -29,8 +29,8 @@ other = "후원하기"
 
 [footer_policies]
 other = """
-<a href="/privacy/">개인정보보호 정책</a>을 확인하십시오.<br>
-<a href="/trademarks/">상표권 정책</a>을 확인하십시오.
+<a href="/ko/privacy/">개인정보보호 정책</a>을 확인하십시오.<br>
+<a href="/ko/trademarks/">상표권 정책</a>을 확인하십시오.
 """
 
 [linux_foundation_trademark]
