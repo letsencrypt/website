@@ -4,6 +4,7 @@ linkTitle: 통계
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt 인증서 통계
+lastmod: 2019-08-22
 menu:
   main:
     weight: 70
@@ -29,5 +30,4 @@ menu:
   <div id="issuancePerDay" title="Let’s Encrypt 인증서 일일 발행량" class="statsgraph"></div>
 </div>
 
-<script src="/js/stats.js" async></script>
-<script src="/js/plotly-min.js" async></script>
+{{< plotly >}}
