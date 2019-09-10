@@ -1,0 +1,108 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt는 <span>무료이며</span> <span>자동화된</span> <span>개방형</span> 인증 기관입니다."
+
+[home_hero_getting_started]
+other = "시작하기"
+
+[home_hero_donate]
+other = "후원하기"
+
+[home_major_sponsors]
+other = "주요 스폰서와 후원사"
+
+[home_from_our_blog]
+other = "저희 블로그"
+
+[read_more]
+other = "더 읽기"
+
+[subscribe_rss]
+other = "<a href=\"{{ .Permalink }}\">RSS</a> 구독하기"
+
+[footer_support_us]
+other = "보다 안전하고 개인정보보호에 중점을 둔 웹을 지원하십시오."
+
+[footer_donate]
+other = "후원하기"
+
+[footer_policies]
+other = """
+<a href="/privacy/">개인정보보호 정책</a>을 확인하십시오.<br>
+<a href="/trademarks/">상표권 정책</a>을 확인하십시오.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation은 The Linux Foundation의 등록 상표입니다. Linux는 Linus Torvalds의 등록 상표입니다."
+
+[header_skip_nav]
+other = "네비게이션 링크 건너뛰기"
+
+[last_updated]
+other = "마지막 업데이트:"
+
+[see_all_doc]
+other = "모든 문서를 참조"
+
+[blog_feed]
+other = "Let's Encrypt 블로그 피드"
+
+[platinum]
+other = "플래티넘"
+
+[gold]
+other = "골드"
+
+[silver]
+other = "실버"
+
+[languages]
+other = "언어"
+
+[view_in_english]
+other = "영어로 보기"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "영어로 보기"
+
+[old_version]
+other = "참고: 번역 이후 영어 버전이 업데이트되었습니다"
+
+[not_yet_translated]
+other = "이 웹 페이지는 아직 번역되지 않았습니다. <a href=\"https://github.com/letsencrypt/website\"> 여기 </a>에 기여할 수 있습니다."
+
+[english_is_canonical]
+other = "영어 버전은 인증되었습니다."
+
+[graph_issued]
+other = "발행됨"
+
+[graph_certificates_active]
+other = "인증서가 활성화되어 있습니다."
+
+[graph_fully_qualified_domains_active]
+other = "완전히 인증된 도메인이 활성화됩니다."
+
+[graph_registered_domains_active]
+other = "등록된 도메인이 활성화되어 있습니다."
+
+[graph_active_count]
+other = "활성화된 개수"
+
+[graph_issued_per_day]
+other = "하루에 발행량"
+
+[graph_all_users]
+other = "모든 사용자"
+
+[graph_usa_users]
+other = "미국 사용자"
+
+[graph_japan_users]
+other = "일본 사용자"
+
+[graph_percent_https]
+other = "HTTPS를 통한 페이지로드 비율 (14 일 이동 평균)"
