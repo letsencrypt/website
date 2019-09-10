@@ -4,6 +4,7 @@ linkTitle: 统计数据
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt统计数据。
+lastmod: 2019-08-22
 menu:
   main:
     weight: 70
@@ -30,5 +31,4 @@ menu:
   <div id="issuancePerDay" title="Let's Encrypt每日颁发的证书数量" class="statsgraph"></div>
 </div>
 
-<script src="/js/stats.js" async></script>
-<script src="/js/plotly-min.js" async></script>
+{{< plotly >}}
