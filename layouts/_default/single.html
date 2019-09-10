@@ -71,7 +71,7 @@
 					{{ end }}
 					{{ if and (eq .Language.Lang "ko") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="ko" href="{{ .Permalink }}">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 							한국어로 보기
 						</a>
 					</p>
