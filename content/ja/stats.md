@@ -4,6 +4,7 @@ linkTitle: 統計情報
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt の証明書の統計情報。
+lastmod: 2019-08-22
 menu:
   main:
     weight: 70

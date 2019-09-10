@@ -4,6 +4,7 @@ linkTitle: Statistiques
 slug: stats
 top_graphic: 3
 excerpt: Statistiques sur Let's Encrypt.
+lastmod: 2019-08-22
 menu:
   main:
     weight: 70
