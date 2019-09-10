@@ -487,6 +487,51 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
+[languages.ko]
+title = "Let's Encrypt - 무료 SSL/TLS 인증서"
+contentDir = "content/ko"
+languageName ="Korean"
+languageCode= "ko-kr"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 50
+description = """
+  Let&rsquo;s&nbsp;Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
+"""
+[[languages.ko.menu.main]]
+ name = "도움말"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.ko.menu.main]]
+ name = "후원"
+ weight = 30
+ identifier = "donate"
+ url = "/ko/donate/"
+ [[languages.ko.menu.main]]
+ name = "소개"
+ weight = 40
+ identifier = "about"
+ url = "/ko/about/"
+ [[languages.ko.menu.main]]
+ name = "비영리 인터넷 보안 연구 그룹 (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.ko.menu.main]]
+ name = "서비스 상태"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.ko.menu.main]]
+ name = "채용"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]
