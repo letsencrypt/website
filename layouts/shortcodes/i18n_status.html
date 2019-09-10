@@ -55,14 +55,14 @@
                     Not yet translated
                   {{ else if  $lastmod }}
                     {{ if not .Lastmod }}
-                      <span style="color:red">Missing Date/Lastmod</span>
+                      {{ .PageMustHaveLastMod }}
                     {{ else if ne  .Lastmod $lastmod }}
                         <span style="color:orange">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ else }}
                         <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ end }}
                   {{ else }}
-                    Translated
+                    {{ .TranslationMustHaveLastMod }}
                   {{ end }}
                 </a>
                 {{ end }}
