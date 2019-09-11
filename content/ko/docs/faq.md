@@ -26,7 +26,7 @@ Let’s Encrypt는 글로벌 공인인증기관(Certificate Authority, CA)입니
 
 Let’s Encrypt는 DV(Domain Validation) 인증서를 제공합니다. 자동 발행을 할 수 없는 OV(Organization Validation) 또는 EV(Extended Validation) 유형의 인증서는 제공하지 않습니다.
 
-Let’s Encrypt를 사용하려면 [시작하기](https://letsencrypt.org/getting-started/) 페이지를 방문해 주세요.
+Let’s Encrypt를 사용하려면 [시작하기]({{< ref "/getting-started.md" >}}) 페이지를 방문해 주세요.
 
 ## Let’s Encrypt를 사용하는 데는 얼마나 드나요? 정말로 무료인가요?
 
@@ -65,7 +65,7 @@ Let's Encrypt 인증서는 일반적인 도메인 검증 인증서이므로 귀�
 
 ## Let's Encrypt 인증서의 기간은 얼마입니까? 얼마나 오래 유효합니까?
 
-인증서는 90일 동안 유효합니다.[here](https://letsencrypt.org/2015/11/09/why-90-days.html)에서 그 이유를 읽을 수 있습니다.
+인증서는 90일 동안 유효합니다. [여기](/2015/11/09/why-90-days.html)에서 그 이유를 읽을 수 있습니다.
 
 이것을 조정할 방법이 없습니다, 예외는 없습니다. 60일마다 인증서를 자동으로 갱신하는 것이 좋습니다.
 
@@ -79,15 +79,15 @@ OV 또는 EV 인증서를 발급할 계획이 없습니다.
 
 ## Let's Encrypt는 와일드카드 인증서를 발행합니까?
 
-네. 와일드카드 발급은 DNS-01 과제를 사용하여 ACMEv2를 통해 수행해야 합니다. (https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) 에서 자세한 기술 정보를 확인하십시오.
+네. 와일드카드 발급은 DNS-01 과제를 사용하여 ACMEv2를 통해 수행해야 합니다. [이 글](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)에서 자세한 기술 정보를 확인하십시오.
 
 ## Let's Encrypt는 운영체제에 맞는 (ACME) 클라이언트가 있습니까?
 
-사용 가능한 [ACME 클라이언트](/docs/client-options/)가 많습니다. 운영체제에서 잘 작동될 가능성이 높습니다. [Certbot](https://certbot.eff.org/) 부터 시작하는 것이 좋습니다.
+사용 가능한 [ACME 클라이언트](/docs/client-options/)가 많습니다. 운영체제에서 잘 작동될 가능성이 높습니다. [Certbot](https://certbot.eff.org/)부터 시작하는 것이 좋습니다.
 
 ## 기존 키 혹은 CSR(인증서 서명 요청)을 사용할 수 있습니까?
 
-네, 하지만 모든 클라이언트가 이 기능을 지원하는 것은 아닙니다. [Certbot](https://certbot.eff.org/) 를 참고하십시오.
+네, 하지만 모든 클라이언트가 이 기능을 지원하는 것은 아닙니다. [Certbot](https://certbot.eff.org/)을 참고하십시오.
 
 ## Let's Encrypt는 웹 서버를 인증하기 위하여 어떤 IP 주소를 사용합니까?
 

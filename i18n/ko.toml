@@ -9,6 +9,9 @@ other = "시작하기"
 [home_hero_donate]
 other = "후원하기"
 
+[home_hero_sponsor]
+other = "스폰서"
+
 [home_major_sponsors]
 other = "주요 스폰서와 후원사"
 
