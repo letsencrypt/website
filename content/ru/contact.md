@@ -2,7 +2,7 @@
 title: Контакты
 slug: contact
 top_graphic: 1
-lastmod: 2019-09-11
+lastmod: 2018-09-19
 menu:
   main:
     weight: 90
