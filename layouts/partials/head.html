@@ -13,6 +13,6 @@
     <link rel="stylesheet" href="{{ "css/main.min.css" | relURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-    <link rel="{{ .Rel }}" href="{{ .Permalink }}" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
     {{ end  }}
 </head>
