@@ -41,9 +41,9 @@ Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 �
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
+sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
 ```
 
 여기에서 [GPG 공용 키](/security_letsencrypt.org-publickey.asc)를 다운로드하거나 즐겨찾는 키 서버를 사용할 수 있습니다.
