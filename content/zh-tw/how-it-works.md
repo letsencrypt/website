@@ -2,7 +2,7 @@
 title: Let's Encrypt運作方式
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 Let's Encrypt和[ACME協議](https://ietf-wg-acme.github.io/acme/)的目標是使自動獲取受信任的HTTPS憑證，配置網路伺服器成為可能。這是透過在網站伺服器上運行憑證管理軟體（Agent）來達成的。
@@ -17,7 +17,7 @@ Let's Encrypt通過公鑰識別伺服器管理員。 憑證管理軟體（Agent�
 
 為了啟動該過程，憑證管理軟體（Agent）向Let's Encrypt CA詢問它需要做什麼才能證明它控制`example.com`。 Let's Encrypt CA將查看所請求的域名並發出一組或多組挑戰。 這些是管理軟體（Agent）可以證明對域名的控制的不同方式。例如，CA可能會讓憑證管理軟體（Agent）選擇： 
 * 在`example.com`下配置DNS記錄，或者
-* 在`https://example.com/`的已知URI下放置HTTP資源（通常為文件）
+* 在`http://example.com/`的已知URI下放置HTTP資源（通常為文件）
 
 除了驗證之外，Let's Encrypt CA還提供了一個nonce（特殊密鑰）要求憑證管理軟體（Agent）使用自身掌控的帳戶私鑰簽名，以證明對密鑰對的控制權。
 
@@ -26,7 +26,7 @@ Let's Encrypt通過公鑰識別伺服器管理員。 憑證管理軟體（Agent�
      src="/images/howitworks_challenge.png"/>
 </div>
 
-憑證管理軟體（Agent）需要完成所提供的一組挑戰。假設它能夠完成上面的第二個任務：它在`https：// example.com`站點上的指定路徑上創建一個文件。憑證管理軟體（Agent）還使用其私鑰對提供的nonce（特殊密鑰）進行簽名。完成這些步驟後，憑證管理軟體（Agent）會通知CA它已準備好完成驗證。
+憑證管理軟體（Agent）需要完成所提供的一組挑戰。假設它能夠完成上面的第二個任務：它在`http：// example.com`站點上的指定路徑上創建一個文件。憑證管理軟體（Agent）還使用其私鑰對提供的nonce（特殊密鑰）進行簽名。完成這些步驟後，憑證管理軟體（Agent）會通知CA它已準備好完成驗證。
 
 然後，CA的工作就是檢查挑戰是否已經被完成。 CA會驗證nonce（特殊密鑰）上的簽名，並嘗試從網站伺服器下載該文件，並確保其具有CA需要的內容。
 
