@@ -30,7 +30,7 @@ lastmod: 2019-05-15
 * [吊销证书]({{< ref "/docs/revoking.md" >}})
 * [证书颁发机构授权（CAA）]({{< ref "/docs/caa.md" >}})
 * [localhost 证书]({{< ref "/docs/certificates-for-localhost.md" >}})
-* [最佳实践——保持开放 80 端口]({{< ref "/docs/allow-port-80.md" >}})
+* [最佳实践——开放 80 端口]({{< ref "/docs/allow-port-80.md" >}})
 * [验证方式]({{< ref "/docs/challenge-types.md" >}})
 * [证书透明度（CT）日志]({{< ref "/docs/ct-logs.html" >}})
 
