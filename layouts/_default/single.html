@@ -11,87 +11,15 @@
 {{ end }}
 <div class="page-content">
 	<div class="wrapper">
-		{{ $lang := .Page.Language.Lang }}
-		{{ if eq $lang "en" }}
-			{{/*
-				If we are in English, we search avaliable translations and add them hidden.
-				The javascript will show the relevant ones using the two first letters.
-				Ex. if the browser is in "pt-pt", it will show the messages for "pt-pt" and "pt-br"
-			*/}}
-			{{ range .Page.Translations }}
-				{{ if ne $lang .Language.Lang }}
-					{{ if and (eq .Language.Lang "fr") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							Voir en Français
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "de") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							Auf Deutsch ansehen
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "pt-br") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							Ver em Português (do brasil)
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "ru") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							Просмотреть на русском
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "zh-cn") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							使用简体中文阅读本网页。
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "zh-tw") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							使用正體中文閲讀本網頁。
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "es") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							Ver en español
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "ko") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							한국어로 보기
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "ja") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-							日本語で表示する
-						</a>
-					</p>
-					{{ end }}
-				{{ end }}
-			{{ end }}
-		{{ end }}
-		<script src="/js/i18n.js" defer async></script>
+
+	{{ partial "langs" . }}
 
 	{{ if .Page.Params.untranslated }}
 
 		{{ if not .Page.Params.do_not_translate }}
+			<!--googleoff: all-->
 			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+			<!--googleon: all-->
 		{{ end }}
 
 		{{ $lang := .Page.Language.Lang }}
