@@ -1,17 +1,24 @@
 {{ $scratch := newScratch }}
+{{ $scratch_translated := newScratch }}
+{{ $scratch_up_to_date := newScratch }}
+
+{{ $scratch.Set "nb_pages" 0 }}
 <table border="1">
   <thead>
-    <th></th>
-    <th></th>
-    <th>English (reference date)</th>
-    {{ range sort $.Site.Languages }}
-      {{ if ne .Lang "en" }}
-        <th>
-          {{ .Lang }}
-        </th>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>English (reference date)</th>
+      {{ range sort $.Site.Languages }}
+        {{ if ne .Lang "en" }}
+          <th>
+            {{ .Lang }}
+          </th>
+          {{ $scratch_translated.Set .Lang 0 }}
+          {{ $scratch_up_to_date.Set .Lang 0 }}
         {{ end }}
       {{ end }}
-    <th>
+    </tr>
   </thead>
   <tbody>
     {{ range sort $.Site.RegularPages "RelPermalink" }}
@@ -37,9 +44,10 @@
           </a>
         </td>
         {{ range sort $.Site.Languages }}
-            {{ if ne .Lang "en" }}
-            {{ $lang := . }}
-
+            {{ if eq .Lang "en" }}
+              {{ $scratch.Set "nb_pages" ( add 1 ( $scratch.Get "nb_pages" ) ) }}
+            {{ else }}
+              {{ $lang := . }}
             <td data-lang="{{ $lang }}">
               {{ $scratch.Set "with_page" 0 }}
               {{ range $page.Translations }}
@@ -54,11 +62,13 @@
                   {{ if .Page.Params.untranslated }}
                     Not yet translated
                   {{ else if  $lastmod }}
+                    {{ $scratch_translated.Set .Lang ( add 1 ( $scratch_translated.Get .Lang ) ) }}
                     {{ if not .Lastmod }}
                       {{ .PageMustHaveLastMod }}
                     {{ else if ne  .Lastmod $lastmod }}
                         <span style="color:orange">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ else }}
+                      {{ $scratch_up_to_date.Set .Lang ( add 1 ( $scratch_up_to_date.Get .Lang ) ) }}
                         <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ end }}
                   {{ else }}
@@ -77,4 +87,47 @@
       {{ end }}
     {{ end }}
   </tbody>
+  <tfoot>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        {{ range sort $.Site.Languages }}
+          {{ if ne .Lang "en" }}
+            <th>
+              {{ .Lang }}
+            </th>
+            {{ end }}
+          {{ end }}
+        <th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Translated</th>
+        {{ range sort $.Site.Languages }}
+          {{ if ne .Lang "en" }}
+            <th>
+                {{ $scratch_translated.Get .Lang }}/{{ $scratch.Get "nb_pages" }}
+                ({{ math.Round (mul 100 (div ($scratch_translated.Get .Lang) (mul 1.0 ($scratch.Get "nb_pages")))) }}%)
+            </th>
+            {{ end }}
+          {{ end }}
+        <th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Up-to-date</th>
+        {{ range sort $.Site.Languages }}
+          {{ if ne .Lang "en" }}
+            <th>
+                {{ $scratch_up_to_date.Get .Lang }}/{{ $scratch_translated.Get .Lang }}
+                ({{ math.Round (mul 100 (div ($scratch_up_to_date.Get .Lang) (mul 1.0 ($scratch_translated.Get .Lang)))) }}%)
+            </th>
+            {{ end }}
+          {{ end }}
+        <th>
+      </tr>
+  </tfoot>
 </table>
