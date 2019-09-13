@@ -532,6 +532,52 @@ description = """
  parent = "about"
  url = "https://www.abetterinternet.org/careers/"
 
+ [languages.rs]
+title = "Let's Encrypt - Besplati SSL/TLS Sertifikati"
+contentDir = "content/rs"
+languageName ="Srpski"
+languageCode= "sr-SP"
+#if colon ":" must be prefixed
+beforeColon= ""
+# Weight used for sorting.
+weight = 90
+description = """
+  Let&rsquo;s&nbsp;Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
+  telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.
+"""
+[[languages.rs.menu.main]]
+ name = "Pomoć"
+ weight = 20
+ url = "https://community.letsencrypt.org/"
+ [[languages.rs.menu.main]]
+ name = "Doniraj"
+ weight = 30
+ identifier = "donate"
+ url = "/donate/"
+ [[languages.rs.menu.main]]
+ name = "O nama"
+ weight = 40
+ identifier = "about"
+ url = "/about/"
+ [[languages.rs.menu.main]]
+ name = "Internet Security Research Group (ISRG)"
+ weight = 20
+ identifier = "isrg"
+ parent = "about"
+ url = "https://www.abetterinternet.org/about/"
+ [[languages.rs.menu.main]]
+ name = "Status Servisa"
+ weight = 60
+ identifier = "status"
+ parent = "about"
+ url = "https://letsencrypt.status.io/"
+ [[languages.rs.menu.main]]
+ name = "Karijera"
+ weight = 80
+ identifier = "careers"
+ parent = "about"
+ url = "https://www.abetterinternet.org/careers/"
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]

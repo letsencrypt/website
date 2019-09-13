@@ -34,6 +34,13 @@
 						</a>
 					</p>
 					{{ end }}
+					{{ if and (eq .Language.Lang "rs") ( not .Page.Params.untranslated ) }}
+					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
+						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+							Pročitaj na srpskom
+						</a>
+					</p>
+					{{ end }}
 					{{ if and (eq .Language.Lang "pt-br") ( not .Page.Params.untranslated ) }}
 					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
 						<a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
