@@ -533,7 +533,7 @@ description = """
  url = "https://www.abetterinternet.org/careers/"
 
  [languages.sr-sp]
-title = "Let's Encrypt - Besplati SSL/TLS Sertifikati"
+title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
 contentDir = "content/sr-sp"
 languageName ="Srpski"
 languageCode= "sr-sp"

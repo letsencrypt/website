@@ -4,13 +4,13 @@
 other = "Let&rsquo;s Encrypt je <span>besplatno</span>, <span>automatizovano</span>, i <span>otvoreno</span> sertifikaciono telo."
 
 [home_hero_getting_started]
-other = "Počni"
+other = "Prvi koraci"
 
 [home_hero_donate]
 other = "Doniraj"
 
 [home_hero_sponsor]
-other = "Sponzor"
+other = "Postani sponzor"
 
 [home_major_sponsors]
 other = "Glavni sponzori i donatori"
@@ -55,13 +55,13 @@ other = "Let's Encrypt Blog lista"
 other = "Platinum"
 
 [gold]
-other = "Zlato"
+other = "Gold"
 
 [silver]
-other = "Srebro"
+other = "Silver"
 
 [languages]
-other = "Jezici"
+other = "Jezik"
 
 [view_in_english]
 other = "Pročitaj na Engleskom"
