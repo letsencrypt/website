@@ -3,7 +3,6 @@ title: Lanac poverenja
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01
-aliases: [/certs]
 ---
 
 # Root Sertifikati
