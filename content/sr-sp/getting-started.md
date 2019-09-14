@@ -14,10 +14,10 @@ kontrolu nad tim istim domenom. Sa Let's Encrypt-om, to dokazujete pomoću softv
 na vašem web serveru.
 
 Da biste saznali koja je metoda najbolja za vas, morate znati da li
-imate [shell pristup] (https://en.wikipedia.org/wiki/Shell_account) (takođe poznat
+imate [shell pristup](https://en.wikipedia.org/wiki/Shell_account) (takođe poznat
 kao SSH pristup) vašem web serveru. Ako svojom web stranicom u potpunosti upravljate putem
-panela poput [cPanel-a] (https://cpanel.com/), [Plesk-a] (https://www.plesk.com/) ili
-[WordPress-a] (https://wordpress.org/), postoji velika šansa da nemate shell
+panela poput [cPanel-a](https://cpanel.com/), [Plesk-a](https://www.plesk.com/) ili
+[WordPress-a](https://wordpress.org/), postoji velika šansa da nemate shell
 pristup. To možete uvek proveriti sa Vašim hosting provajderom kako bi ste bili sigurni.
 
 # Posedujete Shell pristup
@@ -29,12 +29,12 @@ radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Poseti
 Certbot stranicu] [Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
-[mnogo više ACME klijenata] ({{<ref "/docs/client-options.md">}}). Jednom kada odaberete ACME klijenta,
+[mnogo više ACME klijenata]({{<ref "/docs/client-options.md">}}). Jednom kada odaberete ACME klijenta,
 pogledajte dokumentaciju za konkretno tog klijenta kako bi ste nastavili sa daljim koracima.
 
 Ako eksperimentišete sa različitim ACME klijentima, koristite naše
-[staging okruženje] ({{<ref "/docs/staging-environment.md">}}) da biste izbegli dostizanje
-[servisnih prekoračenja i limita] ({{<ref "/docs/rate-limits.md">}}).
+[staging okruženje]({{<ref "/docs/staging-environment.md">}}) da biste izbegli dostizanje
+[servisnih prekoračenja i limita]({{<ref "/docs/rate-limits.md">}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
@@ -48,7 +48,7 @@ konfiguracija koja se treba eksplicitno zatražiti/uključiti. Ostali provajderi
 zahtevaju i instaliraju sertifikate za sve svoje klijente.
 
 
-[Proverite našu listu hosting provajdera] (https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
+[Proverite našu listu hosting provajdera](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
 i proverite da li se Vaš provajder nalazi na listi. Ukoliko je to slučaj, molimo Vas da pratite njihovu dokumentaciju da bi ste 
 instalirali svoj Let's Encrypt sertifikat.
 
@@ -58,7 +58,7 @@ podrške, a hosting provajderi se često raduju da čuju predloge kupaca!
 
 Ako vaš hosting provajder ne želi integrisati Let's Encrypt, ali podržava
 upload sertifikata, u tom slučaju možete sami instalirati Certbot
-na Vašem računaru i koristite ga u [ručnom režimu] (https://certbot.eff.org/docs/using.html#manual).
+na Vašem računaru i koristite ga u [ručnom režimu](https://certbot.eff.org/docs/using.html#manual).
 U ručnom režimu učitavate određenu datoteku na svoj web server kako biste dokazali vlasništvo
 nad domenom. Certbot će tada preuzeti sertifikat koji možete upload-ovati kod svog
 hosting provajdera. Ne preporučujemo ovu opciju jer oduzima dosta vremena
@@ -69,4 +69,4 @@ ne planira podržati.
 
 # Dobijanje pomoći
 
-Ako imate pitanja o odabiru ACME klijenta ili o korišćenju određenog klijenta ili bilo što drugo vezano za Let's Encrypt, pokušajte postaviti pitanje u [našoj zajednici i korisnim forumima] (https://community.letsencrypt.org/).
+Ako imate pitanja o odabiru ACME klijenta ili o korišćenju određenog klijenta ili bilo što drugo vezano za Let's Encrypt, pokušajte postaviti pitanje u [našoj zajednici i korisnim forumima](https://community.letsencrypt.org/).

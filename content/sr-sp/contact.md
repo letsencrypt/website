@@ -9,9 +9,9 @@ menu:
     parent: about
 ---
 
-**Ne pružamo podršku putem elektronske pošte. Ukoliko želite da postavite pitanje molimo Vas da koristite naš forum [community forums](https://community.letsencrypt.org). Elektronske adrese ispod služe samo za specifične teme opisane ispod.**
+**Ne pružamo podršku putem elektronske pošte. Ukoliko želite da postavite pitanje molimo Vas da koristite naš [forum](https://community.letsencrypt.org). Elektronske adrese ispod služe samo za specifične teme opisane ispod.**
 
-## Odnosi sa medijima
+## Odnosi sa javnošću
 
 Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
@@ -19,11 +19,11 @@ Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mejling liste
+## Bilten
 
-Za informaciju oko raznoraznih tehničkih mejling lista, molimo vas da posetite [Get Involved]({{< ref "/getinvolved.md" >}}).
+Za informaciju oko raznoraznih tehničkih biltena, molimo vas da posetite [Priključite se]({{< ref "/getinvolved.md" >}}).
 
-Da bi ste se prijavili na naš bilten, [click here.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+Da bi ste se prijavili na naš bilten, [kliknite ovde.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
 ## Bezbednost
 
@@ -31,9 +31,9 @@ Da bi ste se prijavili na naš bilten, [click here.](https://mailchi.mp/letsencr
 
 Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
-### Enkriptovana komunikacija
+### Zaštićena komunikacija
 
-Da bi ste bezbedno komunicirali sa našim timom za bezbednost, molimo Vas da koristite naš GPG ključ. Sastoji se od nekoliko potključeva potpisanih izvan mrežnim glavnim ključem. Bilo koja nedavna verzija GnuPG-a podržava ovu vrstu hibridnog ključa. Trenuta struktura ključa je:
+Da bi ste bezbedno komunicirali sa našim timom za bezbednost, molimo Vas da koristite naš GPG ključ. Sastoji se od nekoliko potključeva potpisanih mrežnim glavnim ključem. Bilo koja nedavna verzija GnuPG-a podržava ovu vrstu hibridnog ključa. Trenutna struktura ključa je:
 
 
 ```
