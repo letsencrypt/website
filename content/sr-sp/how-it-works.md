@@ -1,5 +1,5 @@
 ---
-title: How It Works
+title: Kako funkcioniše?
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-09-09
@@ -27,7 +27,7 @@ Uz dostupne načine verifikacije, Let's Encrypt sertifikaciono telo (CA) takođe
      src="/images/howitworks_challenge.png"/>
 </div>
 
-Agentski softver završava verifikaciju jednim od ponuđenih načina. Recimo da je u stanju izvršiti verifikaciju koristeći drugi naveden način iznad: kreira datoteku na određenoj putanji na web serveru `http: // example.com`. Agent takodje potpisuje svoj privatni ključ. Nakon što agent izvrši ove korake, obaveštava sertifikaciono telo (CA) da je spreman za potpunu proveru.
+Agentski softver završava verifikaciju jednim od ponuđenih načina. Recimo da je u stanju izvršiti verifikaciju koristeći drugi naveden način iznad: kreira datoteku na određenoj putanji na web serveru `http://example.com`. Agent takodje potpisuje svoj privatni ključ. Nakon što agent izvrši ove korake, obaveštava sertifikaciono telo (CA) da je spreman za potpunu proveru.
 
 Nakon toga, posao sertifikacionog tela (CA) jeste da proveri da li su uslovi i verifikacija zadovoljena. Sertifikaciono telo (CA) proverava potpis bez prijave i pokušava da preuzme prethodno kreiranu datoteku s web servera i uveriti se da ima očekivani sadržaj.
 

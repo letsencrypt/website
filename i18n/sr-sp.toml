@@ -10,7 +10,7 @@ other = "Prvi koraci"
 other = "Doniraj"
 
 [home_hero_sponsor]
-other = "Postani sponzor"
+other = "Sponzoriši"
 
 [home_major_sponsors]
 other = "Glavni sponzori i donatori"
@@ -32,8 +32,8 @@ other = "Doniraj"
 
 [footer_policies]
 other = """
-Pregledaj našu <a href="/privacy/">politiku privatnosti</a>.<br>
-Pregledaj našu <a href="/trademarks/">politiku brenda</a>.
+Pročitaj našu <a href="/privacy/">politiku privatnosti</a>.<br>
+Pročitaj našu <a href="/trademarks/">politiku brenda</a>.
 """
 
 [linux_foundation_trademark]

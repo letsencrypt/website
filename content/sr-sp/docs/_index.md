@@ -1,6 +1,6 @@
 ---
 untranslated: 1
-title: Documentation
+title: Dokumentacija
 top_graphic: 1
 menu: "main"
 menu:
@@ -9,20 +9,20 @@ menu:
 lastmod: 2019-05-15
 ---
 
-# Overview
+# Pregled
 
-* [Getting Started]({{< ref "/getting-started.md" >}})
-* [How Let's Encrypt Works]({{< ref "/how-it-works.md" >}})
-* [Frequently Asked Questions (FAQ)]({{< ref "/docs/faq.md" >}})
-* [Glossary]({{< ref "/docs/glossary.md" >}})
+* [Prvi koraci]({{< ref "/getting-started.md" >}})
+* [Kako Let's Encrypt funkcioniše?]({{< ref "/how-it-works.md" >}})
+* [Često postavljena pitanja (FAQ)]({{< ref "/docs/faq.md" >}})
+* [Rečnik]({{< ref "/docs/glossary.md" >}})
 
-# Subscriber Information
+# Pretplatničke informacije
 
 * [ACME Client Implementations]({{< ref "/docs/client-options.md" >}})
 * [Rate Limits]({{< ref "/docs/rate-limits.md" >}})
 * [Expiration Emails]({{< ref "/docs/expiration-emails.md" >}})
 
-# Advanced Subscriber Information
+# Napredne pretplatničke informacije
 
 * [Staging Environment]({{< ref "/docs/staging-environment.md" >}})
 * [Certificate Compatibility]({{< ref "/docs/cert-compat.md" >}})
@@ -35,7 +35,7 @@ lastmod: 2019-05-15
 * [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
 * [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
 
-# Client Developer Information
+# Informacije za programere klijentskog softvera
 
 * [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
 * [ACME Protocol Updates]({{< ref "/docs/acme-protocol-updates.md" >}})

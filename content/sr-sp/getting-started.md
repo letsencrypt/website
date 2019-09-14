@@ -66,6 +66,6 @@ isticao. Za većinu ljudi je bolje zatražiti podršku za Let's Encrypt od svog
 hosting provajdera ili jednostavno promeniti provajdera ukoliko ga Vaš trenutni provajder
 ne planira podržati.
 
-# Dobijanje pomoći
+# Pomoć
 
 Ako imate pitanja o odabiru ACME klijenta ili o korišćenju određenog klijenta ili bilo što drugo vezano za Let's Encrypt, pokušajte postaviti pitanje u [našoj zajednici i korisnim forumima](https://community.letsencrypt.org/).
