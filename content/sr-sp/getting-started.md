@@ -2,7 +2,6 @@
 title: Prvi koraci
 slug: getting-started
 top_graphic: 3
-aliases : [/howitworks]
 date: 2018-04-12
 ---
 
