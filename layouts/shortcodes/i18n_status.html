@@ -122,8 +122,10 @@
         {{ range sort $.Site.Languages }}
           {{ if ne .Lang "en" }}
             <th>
+              {{ if ($scratch_translated.Get .Lang) }}
                 {{ $scratch_up_to_date.Get .Lang }}/{{ $scratch_translated.Get .Lang }}
                 ({{ math.Round (mul 100 (div ($scratch_up_to_date.Get .Lang) (mul 1.0 ($scratch_translated.Get .Lang)))) }}%)
+              {{ end }}
             </th>
             {{ end }}
           {{ end }}
