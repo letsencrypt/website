@@ -1,5 +1,4 @@
 ---
-untranslated: 0
 title: ドキュメント
 top_graphic: 1
 menu: "main"
