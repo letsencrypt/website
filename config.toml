@@ -553,12 +553,12 @@ description = """
  name = "Doniraj"
  weight = 30
  identifier = "donate"
- url = "/donate/"
+ url = "/sr-sp/donate/"
  [[languages.sr-sp.menu.main]]
  name = "O nama"
  weight = 40
  identifier = "about"
- url = "/about/"
+ url = "/sr-sp/about/"
  [[languages.sr-sp.menu.main]]
  name = "Internet Security Research Group (ISRG)"
  weight = 20
