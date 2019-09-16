@@ -37,4 +37,4 @@ v2 준비 환경에는 v2 호환 ACME 클라이언트가 필요하며 Certbot은
 
 # 인증서 투명성
 
-준비 환경은 Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) 및 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT 테스트 로그이며 발급 된 인증서에 반환 된 SCT를 포함합니다.
+준비 환경은 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT 테스트 로그에 사전 인증서를 제출하며, 발급된 인증서에 반환된 SCT를 포함합니다.
