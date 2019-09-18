@@ -2,7 +2,7 @@
 title: Wie es funktioniert
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 Das Ziel von Let's Encrypt und des [ACME-Protokolls](https://ietf-wg-acme.github.io/acme/) besteht darin, die Einrichtung eines HTTPS-Servers zu ermöglichen, der automatisch ein vertrauenswürdiges Browserzertifikat ohne menschliches Eingreifen erhält. Dies wird durch Ausführen eines Zertifikatsverwaltungsagenten auf dem Webserver erreicht.
@@ -19,7 +19,7 @@ Let's Encrypt identifiziert den Serveradministrator anhand des öffentlichen Sch
 Um den Prozess zu starten, fragt der Agent die Let's Encrypt-Zertifizierungsstelle, was zu tun ist, um zu beweisen, dass sie `example.com` kontrolliert. Die Let's Encrypt-Zertifizierungsstelle prüft den angeforderten Domainnamen und gibt eine oder mehrere Herausforderungen heraus. Dies sind verschiedene Möglichkeiten, mit denen der Agent die Kontrolle über die Domain nachweisen kann. Beispielsweise kann die Zertifizierungsstelle dem Agenten die Wahl zwischen folgenden Optionen geben:
 
 * Bereitstellung eines DNS-Eintrags unter `example.com` oder
-* Bereitstellung einer HTTP-Ressource unter einem bekannten URI unter `https://example.com/`
+* Bereitstellung einer HTTP-Ressource unter einem bekannten URI unter `http://example.com/`
 
 Neben den Herausforderungen bietet die Let's Encrypt-Zertifizierungsstelle auch eine Nonce, die der Agent mit seinem privaten Schlüsselpaar signieren muss, um zu beweisen, dass er das Schlüsselpaar kontrolliert.
 
@@ -29,7 +29,7 @@ Neben den Herausforderungen bietet die Let's Encrypt-Zertifizierungsstelle auch 
      src="/images/howitworks_challenge.png"/>
 </div>
 
-Die Agentensoftware erfüllt eine der gestellten Herausforderungen. Nehmen wir an, sie ist in der Lage, die zweite Aufgabe oben auszuführen: Sie erstellt eine Datei in einem angegebenen Pfad auf der Website `https://example.com`. Der Agent signiert die bereitgestellte Nonce ausserdem mit seinem privaten Schlüssel. Nachdem der Agent diese Schritte ausgeführt hat, benachrichtigt er die Zertifizierungsstelle, dass sie zur Validierung bereit ist.
+Die Agentensoftware erfüllt eine der gestellten Herausforderungen. Nehmen wir an, sie ist in der Lage, die zweite Aufgabe oben auszuführen: Sie erstellt eine Datei in einem angegebenen Pfad auf der Website `http://example.com`. Der Agent signiert die bereitgestellte Nonce ausserdem mit seinem privaten Schlüssel. Nachdem der Agent diese Schritte ausgeführt hat, benachrichtigt er die Zertifizierungsstelle, dass sie zur Validierung bereit ist.
 
 Dann ist es die Aufgabe der Zertifizierungsstelle, zu überprüfen, ob die Aufforderungen erfüllt sind. Die Zertifizierungsstelle überprüft die Signatur auf der Nonce und versucht, die Datei vom Webserver herunterzuladen und sicherzustellen, dass sie den erwarteten Inhalt hat.
 

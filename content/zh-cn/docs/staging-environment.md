@@ -33,4 +33,3 @@ lastmod: 2018-03-12
 # 证书透明度日志
 
 测试环境将每个证书提交给Google的[testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 证书透明度测试日志服务器并在已颁发的证书中包含返回的SCT。
-

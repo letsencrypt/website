@@ -2,7 +2,11 @@
 title: Contact
 slug: contact
 top_graphic: 1
+<<<<<<< HEAD
 lastmod: 2019-09-10
+=======
+lastmod: 2019-09-11
+>>>>>>> upstream/master
 menu:
   main:
     weight: 90
@@ -39,9 +43,9 @@ To communicate securely with the Security Team, please utilize our GPG key. It c
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
+sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
 ```
 
 You can download the [GPG Public Key](/security_letsencrypt.org-publickey.asc) here, or utilize your favorite key server.
