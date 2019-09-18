@@ -26,7 +26,7 @@
       {"name":"Hébergement web","url":"https://www.planethoster.com/","image":"planethoster-logo.png"},
       {"name":"YunPian","url":"https://www.yunpian.com/","image":"yunpian-logo.png"},
       {"name":"Fastly","url":"https://www.fastly.com/","image":"fastly-logo.png"},
-      {"name":"Casino2k","url":"https://www.casino2k.com/","image":"casino2k-logo.png"},
+      {"name":"Casino2k","url":"https://www.casino2k.com/","image":"casino2k-logo.png", "sponsored":true},
       {"name":"3CX","url":"https://www.3cx.com/","image":"3cx-logo.png"},
       {"name":"Squarespace","url":"https://www.squarespace.com/","image":"squarespace-logo.png"},
       {"name":"Hawk Host","url":"https://www.hawkhost.com/","image":"hawkhost-logo.png"},
