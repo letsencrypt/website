@@ -52,7 +52,7 @@ do_not_translate: 1
 
 # Let's Encrypt Privacy Policy
 
-* [August 15, 2016](/privacy/)
+* [September 19, 2019](/privacy/)
 
 # Let's Encrypt Trademark Policy
 
