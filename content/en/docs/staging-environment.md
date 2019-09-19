@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-03-12
+lastmod: 2019-09-16
 ---
 
 {{< lastmod >}}
@@ -32,4 +32,4 @@ The staging environment intermediate certificate (["Fake LE Intermediate X1"](/c
 
 # Certificate Transparency
 
-The staging environment submits pre-certificates to the Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log and includes returned SCTs in the issued certificates.
+The staging environment submits pre-certificates to the Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.

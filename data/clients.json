@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-08-15",
+	"lastmod": "2019-09-03",
 	"categories": [
 		"Bash",
 		"C",
@@ -507,7 +507,7 @@
 		},
 		{
 			"name": "win-acme",
-			"url": "https://github.com/PKISharp/win-acme",
+			"url": "https://pkisharp.github.io/win-acme",
 			"category": "Windows / IIS",
 			"acme_v2": "true",
 			"comments": "(.NET)"
@@ -733,6 +733,39 @@
 			"comments": "Separate, more frequent releases of the Apache module.",
 			"acme_v2": "v2.0.x onwards",
 			"category": "C"
+		},
+		{
+			"name": "Azure WebApp SSL Manager",
+			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
+			"category": "Microsoft Azure",
+			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "App Service Acmebot",
+			"url": "https://github.com/shibayan/appservice-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Compatible to Azure Web Apps / Functions / Web App for Containers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Key Vault Acmebot",
+			"url": "https://github.com/shibayan/keyvault-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Work with Azure Key Vault Certificates)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP",
+			"url": "https://github.com/acmephp/acmephp",
+			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP Library",
+			"url": "https://github.com/acmephp/core",
+			"library": "PHP",
+			"acme_v2": "true"
 		}
 	]
 }
