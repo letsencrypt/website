@@ -490,11 +490,7 @@ description = """
 [languages.ko]
 title = "Let's Encrypt - 무료 SSL/TLS 인증서"
 contentDir = "content/ko"
-<<<<<<< HEAD
-languageName ="Korean"
-=======
 languageName ="한국어"
->>>>>>> upstream/master
 languageCode= "ko-kr"
 #if colon ":" must be prefixed
 beforeColon= ""
