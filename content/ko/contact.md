@@ -2,16 +2,14 @@
 title: 연락처
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-09-11
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## 지원
-
-Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)에 도음을 요청해 주십시오.
+**저희는 이메일을 통한 지원을 제공하지 않습니다. Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)에 도음을 요청해 주십시오. 하단의 이메일 주소는 설명된 특정 주제에만 해당됩니다.**
 
 ## 출판 관련 문의사항
 
@@ -29,7 +27,7 @@ Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt
 
 ## 보안
 
-Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.
+**Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.**
 
 이메일: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
@@ -41,15 +39,9 @@ Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 �
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-<<<<<<< HEAD
-sub   rsa4096 2015-11-24 [E] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
-=======
 sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
 sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
 sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
->>>>>>> upstream/master
 ```
 
 여기에서 [GPG 공용 키](/security_letsencrypt.org-publickey.asc)를 다운로드하거나 즐겨찾는 키 서버를 사용할 수 있습니다.

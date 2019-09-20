@@ -2,11 +2,7 @@
 title: Contact
 slug: contact
 top_graphic: 1
-<<<<<<< HEAD
-lastmod: 2019-09-10
-=======
 lastmod: 2019-09-11
->>>>>>> upstream/master
 menu:
   main:
     weight: 90
