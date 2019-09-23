@@ -132,6 +132,10 @@
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
 		}
+		{
+			"name": "ejabberd",
+			"url": "https://ejabberd.im"
+		}
 	],
 	"list": [
 		{
