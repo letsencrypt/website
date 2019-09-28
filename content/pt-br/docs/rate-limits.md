@@ -40,7 +40,7 @@ Renovações são tratadas de forma especial: Elas não usam seu limite de <a na
 Domínio Registrado**, mas estão sujeitas ao 
 limite de 5 **Certificados Duplicados** por semana. Nota: Renovações costumavam usar seu limite de Certificados por 
 Domínio Registrado até Março de 2019, [mas isso não 
-acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189) (Inglês).
+acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Um certificado é considerado renovação (ou uma duplicação) de um certificado anterior se ele contém
 o exato conjunto de nomes de domínio, ignorando capitalizações e ordenação
