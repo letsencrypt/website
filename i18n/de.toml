@@ -79,3 +79,33 @@ other = "Diese Webseite wurde noch nicht übersetzt. Du kannst <a href=\"https:/
 
 [english_is_canonical]
 other = "Hinweis: Die englische Version ist massgeblich"
+
+[graph_issued]
+other = "Ausgestellte Zertifikate"
+
+[graph_certificates_active]
+other = "Aktive Zertifikate"
+
+[graph_fully_qualified_domains_active]
+other = "Aktive FQDN"
+
+[graph_registered_domains_active]
+other = "Aktive registrierte Domains"
+
+[graph_active_count]
+other = "Anzahl Aktive"
+
+[graph_issued_per_day]
+other = "Ausgestellte Zertifikate pro Tag"
+
+[graph_all_users]
+other = "Alle Benutzer"
+
+[graph_usa_users]
+other = "Benutzer in USA"
+
+[graph_japan_users]
+other = "Benutzer in Japan"
+
+[graph_percent_https]
+other = "Prozent der Seitenaufrufe über HTTPS (14 Tage Durchschnitt)"

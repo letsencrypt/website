@@ -2,8 +2,8 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-date: 2018-06-22
-lastmod: 2018-06-22
+date: 2019-09-19
+lastmod: 2019-09-19
 english_is_canonical: 1
 ---
 
@@ -47,11 +47,11 @@ If we are required by law to disclose the information that you have submitted, w
 
 In addition, we reserve the right, solely at our discretion, to independently object to certain requests (for access to information about users of our products and technologies) that we believe to be improper.
 
-## What rights do European Economic Area users, subscribers, and visitors have under GDPR, and how can I exercise them?
+## What rights do European Economic Area relying parties, subscribers, and visitors have under GDPR, and how can I exercise them?
 
 We process personal data as described in this policy. We rely on your consent to send emails. When we collect IP address, we process that data based on contractual necessity of being able to demonstrate that the service performs as expected. Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
 
-Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of the site. If you're a user based in the EEA, you can:
+Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of the site. If you're a relying party, subscriber, or visitor based in the EEA, you can:
 
 * Request a personal data report by emailing us at security@letsencrypt.org. This report will include the personal data we have about you, provided to you in a structured, commonly used, and portable format. Please note that we may request additional information from you to verify your identity before we disclose any information.
 * Request that your information be corrected or deleted by contacting us at security@letsencrypt.org.
