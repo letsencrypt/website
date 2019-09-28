@@ -11,68 +11,17 @@
 {{ end }}
 <div class="page-content">
 	<div class="wrapper">
-		{{ $lang := .Page.Language.Lang }}
-		{{ if eq $lang "en" }}
-			{{/*
-				If we are in English, we search avaliable translations and add them hidden.
-				The javascript will show the relevant ones using the two first letters.
-				Ex. if the browser is in "pt-pt", it will show the messages for "pt-pt" and "pt-br"
-			*/}}
-			{{ range .Page.Translations }}
-				{{ if ne $lang .Language.Lang }}
-					{{ if and (eq .Language.Lang "fr") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="fr" href="{{ .Permalink }}">
-							Voir en Français
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "de") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="de" href="{{ .Permalink }}">
-							Auf Deutsch ansehen
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "pt-br") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="pt-br" href="{{ .Permalink }}">
-							Ver em Português (do brasil)
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "ru") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="ru" href="{{ .Permalink }}">
-							Просмотреть на русском
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "zh-cn") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="zh-cn" href="{{ .Permalink }}">
-							使用简体中文阅读本网页。
-						</a>
-					</p>
-					{{ end }}
-					{{ if and (eq .Language.Lang "es") ( not .Page.Params.untranslated ) }}
-					<p data-langswitch="{{ .Language.Lang }}" style="display:none">
-						<a lang="es" href="{{ .Permalink }}">
-							Ver en español
-						</a>
-					</p>
-					{{ end }}
-				{{ end }}
-			{{ end }}
-		{{ end }}
-		<script src="/js/i18n.js" defer async></script>
+
+	{{ partial "langs" . }}
 
 	{{ if .Page.Params.untranslated }}
-	
+
 		{{ if not .Page.Params.do_not_translate }}
+			<!--googleoff: all-->
 			<div>{{ i18n "not_yet_translated" | safeHTML }}</div>
+			<!--googleon: all-->
 		{{ end }}
-		
+
 		{{ $lang := .Page.Language.Lang }}
 		{{ $scratch := newScratch }}
 
@@ -85,7 +34,7 @@
 					{{ range .Page.Translations }}
 						{{ if eq "en" .Language.Lang }}
 							{{ $en_link_page := .Page }}
-							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }} 
+							{{ $url_en := printf "href=\"%s\"" $en_link_page.RelPermalink }}
 							{{ range .Page.Translations }}
 								{{ if eq $lang .Language.Lang }}
 									{{/* Note: it also works for urls with anchor (#id) */}}
@@ -96,8 +45,8 @@
 									{{/* now the English url without "/" in the end. */}}
 									{{ $url_en := $url_en | replaceRE "/\"$" "\"" }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
-									
-									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }} 
+
+									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }}
 									{{ $url_lang := printf "href=\"%s\"" .Page.Permalink }}
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
 								{{ end }}
@@ -110,13 +59,15 @@
 			{{ end }}
 		{{ end }}
 
-		
+
 	{{ else }}
-		
+
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
-			<div>{{ i18n "english_is_canonical" | safeHTML }}</div>
+		<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+			{{ i18n "english_is_canonical" | safeHTML }}
+		</div>
 		{{ end }}
-	
+
 		{{ .Content }}
 	{{ end }}
 	</div>

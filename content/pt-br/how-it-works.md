@@ -2,7 +2,7 @@
 title: Como a Let's Encrypt Funciona
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 O objetivo da Let's&nbsp;Encrypt e do [protocolo ACME](https://ietf-wg-acme.github.io/acme/) é tornar possível a configuração de um servidor HTTPS e fazê-lo obter automaticamente um certificado confiável sem intervenção humana. Isso é realizado através do uso do agente de gerenciamento de certificado no servidor web.
@@ -18,7 +18,7 @@ A Let's&nbsp;Encrypt identifica o administrador do servidor usando uma chave pú
 Para iniciar o processo o agente pergunta à AC Let's&nbsp;Encrypt o que ele precisa fazer para provar que ele controla o domínio `example.com`. A AC Let's&nbsp;Encrypt irá analisar o nome de domínio sendo requisitado e fornecerá um ou mais desafios. Estes desafios são formas diferentes que o agente pode usar para provar que controla o domínio. Por exemplo, a AC pode exigir que o agente execute uma ou mais dos seguintes desafios:
 
 * Fornecer um registro de DNS sob `example.com`, ou
-* Fornecer um arquivo HTTP em determinado diretório sob `https://example.com/`
+* Fornecer um arquivo HTTP em determinado diretório sob `http://example.com/`
 
 Juntamente com os desafios, a AC Let's&nbsp;Encrypt também provê um pacote de dados que o agente precisa assinar com sua chave privada para provar que ele controla o par de chaves. 
 
@@ -27,7 +27,7 @@ Juntamente com os desafios, a AC Let's&nbsp;Encrypt também provê um pacote de 
      src="/images/howitworks_challenge.png"/>
 </div>
 
-Vamos assumir que o agente é capaz de completar a segunda tarefa: ele cria um arquivo em um caminho especificado em `https://example.com`. O agente também assina o pacote de dados providos com sua chave privada. Uma vez que ele termina estes passos, ele notifica a AC que está pronto para concluir a validação.  
+Vamos assumir que o agente é capaz de completar a segunda tarefa: ele cria um arquivo em um caminho especificado em `http://example.com`. O agente também assina o pacote de dados providos com sua chave privada. Uma vez que ele termina estes passos, ele notifica a AC que está pronto para concluir a validação.  
 
 Agora é responsabilidade da AC verificar que os desafios foram completados. A AC verifica a assinatura no pacote de dados e tenta fazer o download do arquivo especificado no servidor web e se certifica de que ele possui o conteúdo esperado.
 

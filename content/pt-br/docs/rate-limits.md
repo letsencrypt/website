@@ -22,9 +22,9 @@ muito grande por favor [leia nosso Guia de Integração]({{< ref "/docs/integrat
 
 O principal limite é o de <a name="certificates-per-registered-domain"></a> **Certificados por Domínio Registrado** (50 por semana). Um
 domínio registrado é, de maneira geral, a parte do nome do domínio que você comprou
-do seu registrador de domínios. Por exemplo, no nome `exemplo.com`,
-o domínio registrado é `exemplo.com`. Em `novo.blog.exemplo.com`,
-o domínio registrado é `exemplo.com`. Usamos a 
+do seu registrador de domínios. Por exemplo, no nome `example.com`,
+o domínio registrado é `example.com`. Em `novo.blog.example.com`,
+o domínio registrado é `example.com`. Usamos a 
 [Lista Pública de Sufixos](https://publicsuffix.org) para calcular o domínio
 registrado.   
 
@@ -40,13 +40,13 @@ Renovações são tratadas de forma especial: Elas não usam seu limite de <a na
 Domínio Registrado**, mas estão sujeitas ao 
 limite de 5 **Certificados Duplicados** por semana. Nota: Renovações costumavam usar seu limite de Certificados por 
 Domínio Registrado até Março de 2019, [mas isso não 
-acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189) (Inglês).
+acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Um certificado é considerado renovação (ou uma duplicação) de um certificado anterior se ele contém
 o exato conjunto de nomes de domínio, ignorando capitalizações e ordenação
 destes nomes. Por exemplo, se você solicitou um certificado com os nomes
-[`www.exemplo.com`, `exemplo.com`], você pode solicitar mais quatro certificados para 
-[`www.exemplo.com`, `exemplo.com`] na mesma semana. Se você alterar o conjunto de nomes de domínio
+[`www.example.com`, `example.com`], você pode solicitar mais quatro certificados para 
+[`www.example.com`, `example.com`] na mesma semana. Se você alterar o conjunto de nomes de domínio
 de domínio acrescentando [`blog.example.com`], você poderá solicitar certificados
 adicionais.
  

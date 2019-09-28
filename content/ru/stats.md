@@ -4,6 +4,7 @@ linkTitle: Статистика
 slug: stats
 top_graphic: 3
 excerpt: Let's Encrypt certificate statistics.
+lastmod: 2019-08-22
 menu:
   main:
     weight: 70
@@ -29,5 +30,4 @@ menu:
   <div id="issuancePerDay" title="Число сертификатов Let's Encrypt Certificates, выпускаемых в сутки" class="statsgraph"></div>
 </div>
 
-<script src="/js/stats.js" async></script>
-<script src="/js/plotly-min.js" async></script>
+{{< plotly >}}
