@@ -59,7 +59,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Meu navegador confia nos certificados da Let’s Encrypt?
 
-A resposta para a maioria dos navegadores e sistemas operacionais é: sim. Veja a [lista de compatibilidade]({{< ref "/docs/cert-compat.md" >}}) (Inglês) para mais detalhes.
+A resposta para a maioria dos navegadores e sistemas operacionais é: sim. Veja a [lista de compatibilidade]({{< ref "/docs/cert-compat.md" >}}) para mais detalhes.
 
 ## A Let's Encrypt emite certificados SSL/TLS para outros serviços que não sejam websites?
 
@@ -93,7 +93,7 @@ Sim. A emissão de certificados coringa precisa ser feita via ACMEv2 usando o de
 
 ## Existe um cliente da Let's Encrypt (ACME) para o meu sistema operacional?
 
-Existe uma grande quantidade de [clientes ACME]({{< ref "/docs/client-options.md" >}}) (Inglês) disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
+Existe uma grande quantidade de [clientes ACME]({{< ref "/docs/client-options.md" >}}) disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
 
 ## Posso usar uma chave privada já existente ou uma Solicitação de Assinatura de Certificado (SAC)?
 

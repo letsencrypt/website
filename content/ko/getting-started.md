@@ -5,17 +5,18 @@ top_graphic: 3
 date: 2018-04-12
 ---
 
-웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME protocol](https://ietf-wg-acme.github.io/acme/)을 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
+웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME 프로토콜](https://ietf-wg-acme.github.io/acme/)을 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
 
 어떤 방법이 가장 적합한지 알아보려면 웹 호스트에 [쉘 접근](https://en.wikipedia.org/wiki/Shell_account)(SSH 액세스라고도 함)이 있는지 알아야 합니다. [cPanel](https://cpanel.com/), 또는 [워드프레스](https://wordpress.org/)와 같은 제어판을 통해 웹 사이트를 완전히 관리하는 경우 셸 액세스 권한이 없을 가능성이 높습니다. 호스팅 공급자에게 확인을 요청할 수 있습니다.
 
 # 쉘 엑세스 권한이 있는 경우
 
-쉘 액세스 권한이 있는 대부분의 사용자는 [Certbot] ACME 클라이언트를 사용하는 것이 좋습니다. 다운타임 없이 인증서 발급 및 설치를 자동화할 수 있습니다. 또한 자가변성을 원하지 않는 사람들을 위한 전문적 모드도 갖추고 있습니다. 사용하기 쉽고, 많은 운영 체제에서 작동하며, 문서화가 매우 우수합니다. [Certbot 사이트를 방문합니다][Certbot]은(는) 운영 체제 및 웹 서버에 대한 사용자 지정 지침을 제공합니다.
+쉘 액세스 권한이 있는 대부분의 사용자는 [Certbot] ACME 클라이언트를 사용하는 것이 좋습니다. 다운타임 없이 인증서 발급 및 설치를 자동화할 수 있습니다. 또한 자가변성을 원하지 않는 사람들을 위한 전문적 모드도 갖추고 있습니다. 사용하기 쉽고, 많은 운영 체제에서 작동하며, 문서화가 매우 우수합니다. [
+Certbot 웹 사이트 방문하기][Certbot]은(는) 운영 체제 및 웹 서버에 대한 사용자 지정 지침을 제공합니다.
 
-[Certbot]이 사용자의 요구를 충족하지 못하거나 다른 방법을 시도하려는 경우 [많은 ACME 클라이언트를 선택할 수 있습니다]({ < "/docs/client-options.md" 참조>}). ACME 클라이언트 소프트웨어를 선택한 후 계속하려면 해당 클라이언트의 설명서를 참조합니다.
+[Certbot]이 사용자의 요구를 충족하지 못하거나 다른 방법을 시도하려는 경우 [많은 ACME 클라이언트를 선택할 수 있습니다]({{< ref "/docs/client-options.md" >}}). ACME 클라이언트 소프트웨어를 선택한 후 계속하려면 해당 클라이언트의 설명서를 참조합니다.
 
-다른 ACME 클라이언트를 사용하는 경우, [staging 환경]({{< ref "/docs/staging-environment.md" >}})을 사용하여 [rate limits]({{< ref "/docs/rate-limits.md" >}})에 도달하지 않도록 합니다.
+다른 ACME 클라이언트를 사용하는 경우, [준비 환경]({{< ref "/docs/staging-environment.md" >}})을 사용하여 [속도 제한]({{< ref "/docs/rate-limits.md" >}})에 도달하지 않도록 합니다.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

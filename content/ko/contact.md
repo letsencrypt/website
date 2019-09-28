@@ -2,16 +2,14 @@
 title: 연락처
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-09-11
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## 지원
-
-Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)에 도음을 요청해 주십시오.
+**저희는 이메일을 통한 지원을 제공하지 않습니다. Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)에 도음을 요청해 주십시오. 하단의 이메일 주소는 설명된 특정 주제에만 해당됩니다.**
 
 ## 출판 관련 문의사항
 
@@ -29,7 +27,7 @@ Let's Encrypt의 사용법에 대한 문의사항이 있으시면 [Let's Encrypt
 
 ## 보안
 
-Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.
+**Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.**
 
 이메일: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
