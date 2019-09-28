@@ -1,0 +1,47 @@
+baseURL = "https://letsencrypt.org/"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+enableRobotsTXT = true
+
+# Note that this currently has no effect in Hugo.
+timezone = "America/Los_Angeles"
+
+
+[params]
+
+# Default page top graphic if not set in page front matter. This is an integer representing the base filename.
+# See the JPEG files below /static/images.
+top_graphic = 5
+
+github_username = "letsencrypt"
+twitter_username = "letsencrypt"
+crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more-secure-web-with-let-s-encrypt"
+
+# Date and time formatting, see https://gohugo.io/functions/format/
+time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
+time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
+time_format_default = "Jan 2, 2006"
+
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+# Be explicit about the output formats. We only want an RSS feed for the home page.
+[outputs]
+home = [ "HTML", "RSS" ]
+page = [ "HTML"]
+section = [ "HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+baseName = "feed"
+
+# Hugo >= 0.33 is needed to get uglyURLs per section.
+[uglyURLs]
+  post = true
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"

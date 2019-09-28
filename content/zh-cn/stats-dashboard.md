@@ -1,6 +1,6 @@
 ---
 layout: blank
-title: Let's Encrypt统计数据
+title: Let's Encrypt 统计数据
 slug: stats-dashboard
 date: 2018-04-12
 ---
@@ -9,7 +9,7 @@ date: 2018-04-12
 
 <div class="dashboard">
   <div class="figure">
-    <h1>Let's Encrypt增长时间表</h1>
+    <h1>Let's Encrypt 增长时间表</h1>
     <div id="combinedTimeline" title="发行时间表" class="statsgraph">
   </div>
 

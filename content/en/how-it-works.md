@@ -2,7 +2,7 @@
 title: How It Works
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://ietf-wg-acme.github.io/acme/) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
@@ -18,7 +18,7 @@ Let's&nbsp;Encrypt identifies the server administrator by public key.  The first
 To kick off the process, the agent asks the Let's Encrypt CA what it needs to do in order to prove that it controls `example.com`.  The Let's Encrypt CA will look at the domain name being requested and issue one or more sets of challenges.   These are different ways that the agent can prove control of the domain.  For example, the CA might give the agent a choice of either:
 
 * Provisioning a DNS record under `example.com`, or
-* Provisioning an HTTP resource under a well-known URI on `https://example.com/`
+* Provisioning an HTTP resource under a well-known URI on `http://example.com/`
 
 Along with the challenges, the Let's Encrypt CA also provides a nonce that the agent must sign with its private key pair to prove that it controls the key pair.
 
@@ -27,7 +27,7 @@ Along with the challenges, the Let's Encrypt CA also provides a nonce that the a
      src="/images/howitworks_challenge.png"/>
 </div>
 
-The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `https://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
+The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `http://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
 
 Then, it's the CA's job to check that the challenges have been satisfied.  The CA verifies the signature on the nonce, and it attempts to download the file from the web server and make sure it has the expected content.
 

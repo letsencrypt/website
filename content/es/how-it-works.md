@@ -2,7 +2,7 @@
 title: Cómo Funciona
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 El objetivo de Let's&nbsp;Encrypt y el [protocolo ACME](https://ietf-wg-acme.github.io/acme/) es hacer posible la configuración de un servidor HTTPS y hacer que obtenga automáticamente un certificado confiado por el navegador, sin ninguna intervención humana. Esto se logra ejecutando un agente de manejamiento de certificados en un servidor de web.
@@ -18,7 +18,7 @@ Let's&nbsp;Encrypt indentifica el administrador del servidor por llave pública.
 Para iniciar el proceso, el agent le pregunta al Let's&nbsp;Encrypt CA lo que hay que hacer para demostrar que controla `example.com`. El Let's Encrypt CA mirará el nombre de dominio que se solicita y emitirá uno o más conjuntos de retos. Estas son diferentes maneras que el agente puede demostrar control sobre el dominio. Por ejemplo, la AC puede darle al agente la opció de:
 
 * Provisionar un record DNS record bajo `example.com`, ó
-* Provisionar un recurso HTTP bajo un *well-known URI* en `https://example.com/`
+* Provisionar un recurso HTTP bajo un *well-known URI* en `http://example.com/`
 
 Junto con los retos, el Let's Encrypt CA también provee un `nonce` que el agente debe firmar con su par de llave privada para demostrar que controla el par de llaves.
 
@@ -27,7 +27,7 @@ Junto con los retos, el Let's Encrypt CA también provee un `nonce` que el agent
      src="/images/howitworks_challenge.png"/>
 </div>
 
-El software de agente completa uno de los conjuntos de retos proveidos. Digamos que es capaz de realizar la segunda tarea anterior: crea un archivo en un *path* especifico en el site `https://example.com`. El agente también firma el `nonce` proveido con su llave privada. Una vez el agente ha completado estos pasos, notifica la AC que está listo para completar la validación.
+El software de agente completa uno de los conjuntos de retos proveidos. Digamos que es capaz de realizar la segunda tarea anterior: crea un archivo en un *path* especifico en el site `http://example.com`. El agente también firma el `nonce` proveido con su llave privada. Una vez el agente ha completado estos pasos, notifica la AC que está listo para completar la validación.
 
 Luego, es el trabajo de la AC verificar los que retos han sido satisfechos. La AC verifica la firma en el `nonce`, e intenta descargar un archivo del servidor web y hacerce seguro que recibió el contenido esperado.
 

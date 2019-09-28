@@ -1,0 +1,98 @@
+---
+title: 인증서 투명성(CT, Certificate Transparency) 로그
+slug: ct-logs
+top_graphic: 4
+lastmod: 2019-05-15
+---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">인증서 투명성(CT, Certificate Transparency)</a>는 TLS 인증서 발급에
+    대한 로깅 및 모니터링을 위한 시스템입니다. CT는 모든 사람의 인증서 발급 모니터링 및 학습 능력을 크게 향상시키며, 이러한 기능을 통해 CA 에코시스템과 웹 보안이 크게 개선되었습니다. 그 결과, CT는
+    빠르게 중요한 인프라가 되고 있습니다.</p>
+
+<p>Let's Encrypt에서는 우리가 발급하는 모든 인증서를 CT 로그에 제출합니다. 또한 공개적으로 신뢰하는 인증 기관 모두가 기꺼이 제출할 수 있는 CT 로그도 직접 운영하고 있습니다.</p>
+
+<h2>펀딩</h2>
+
+<p>Let's Encrypt CT 로그를 후하게 후원해 주신 다음 파트너 여러분께 감사드립니다. 귀사에서 이 작업을 계속하는 데 도움을 받으려면 다음 사항을 고려하시기 바랍니다.<a
+        href="{{< ref "/become-a-sponsor.html" >}}">후원 또는 기부</a>.</p>
+
+<p>
+    <center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240"></a></center>
+</p>
+
+<h2>구조</h2>
+
+<p>우리의 로그는 AWS 인프라에서 실행되는 구글의 <a href="https://github.com/google/trillian/">Trillian 소프트웨어</a>를 사용합니다. 컨테이너 조정 및 작업
+    스케줄링에는 <a href="https://kubernetes.io/">Kubernetes</a>를, 데이터베이스 관리에는 AWS RDS를 사용합니다.</p>
+<h2>로그 모니터링</h2>
+
+<p>Let's Encrypt가 <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>라는 오픈소스 CT 로그 모니터링 도구를 만들었습니다.
+    이 도구를 사용하여 로그의 안전성과 컴플라이언스를 모니터링하고 다른 사용자들도 이 툴을 유용하게 사용할 수 있기를 바랍니다.</p>
+
+<h2>CT 로그</h2>
+
+<p>
+    <strong>이름: Oak 2019</strong><br>
+    역할: 제작<br>
+    URI: https://oak.ct.letsencrypt.org/2019/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==</code>
+</p>
+
+<p>
+    <strong>이름: Oak 2020</strong><br>
+    역할: 제작<br>
+    URI: https://oak.ct.letsencrypt.org/2020/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==</code>
+</p>
+
+<p>
+    <strong>이름: Oak 2021</strong><br>
+    역할: 제작<br>
+    URI: https://oak.ct.letsencrypt.org/2021/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==</code>
+</p>
+
+<p>
+    <strong>이름: Oak 2022</strong><br>
+    역할: 제작<br>
+    URI: https://oak.ct.letsencrypt.org/2022/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==</code>
+</p>
+
+<p>
+    <strong>이름: Testflume 2019</strong><br>
+    역할: 제작<br>
+    URI: https://testflume.ct.letsencrypt.org/2019/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==</code>
+</p>
+
+<p>
+    <strong>이름: Testflume 2020</strong><br>
+    역할: 시험<br>
+    URI: https://testflume.ct.letsencrypt.org/2020/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==</code>
+</p>
+
+<p>
+    <strong>이름: Testflume 2021</strong><br>
+    역할: 시험<br>
+    URI: https://testflume.ct.letsencrypt.org/2021/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==</code>
+</p>
+
+<p>
+    <strong>이름: Testflume 2022</strong><br>
+    역할: 시험<br>
+    URI: https://testflume.ct.letsencrypt.org/2022/<br>
+    공개키:
+    <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==</code>
+</p>

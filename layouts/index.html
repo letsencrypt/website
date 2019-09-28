@@ -38,22 +38,22 @@
                 {{ end }}
               </ul>
               {{ with .OutputFormats.Get "RSS" -}}
-                <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</p>
+                <p class="rss-subscribe">{{ i18n "subscribe_rss" (dict "Permalink" "/feed.xml") | safeHTML }}</p>
               {{ end  }}
           </div>
         </div>
         <div class="pure-u-1 pure-u-md-1-2">
           <div class='grid-container'>
             <h2 class="through-line"><a href="{{ "sponsors/" | relLangURL }}">{{ i18n "home_major_sponsors" }}</a></h2>
-            <div class="text-center">
+            <div class="text-center home_sponsors">
 {{ range $.Site.Data.sponsors.platinum }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.gold }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.silver }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
             </div>
           </div>

@@ -1,0 +1,32 @@
+[[main]]
+name = "Obter Ajuda"
+weight = 20
+url = "https://community.letsencrypt.org/c/help/ajuda-em-portugues"
+[[main]]
+name = "Doar"
+weight = 30
+identifier = "donate"
+url = "/pt-br/donate/"
+[[main]]
+name = "Sobre Nós"
+weight = 40
+identifier = "about"
+url = "/pt-br/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "Status do Serviço"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "Carreiras"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
