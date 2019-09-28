@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-09-03",
+	"lastmod": "2019-09-24",
 	"categories": [
 		"Bash",
 		"C",
@@ -766,6 +766,13 @@
 			"url": "https://github.com/acmephp/core",
 			"library": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "lua-resty-acme",
+			"url": "https://github.com/fffonion/lua-resty-acme",
+			"category": "nginx",
+			"acme_v2": "true",
+			"comments": "Automatic Let's Encrypt certificate serving (RSA + ECC) and pure Lua implementation of the ACMEv2 protocol."
 		}
 	]
 }
