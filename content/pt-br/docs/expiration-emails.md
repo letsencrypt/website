@@ -41,9 +41,9 @@ em caso de cancelamento. Nosso provedor de e-mail, Mandrill, [possui um mecanism
 automatizar](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes) (Inglês).
 
 Entretanto, você pode mudar o endereço de e-mail associado à sua conta, isso irá
-reinscrevê-lo automaticamente. Muitos serviços de e-mail tratam `seunome+1@exemplo.com` como
-sendo o mesmo que `seunome@exemplo.com`. Dessa forma se você alterar seu endereço de e-mail para
-`seunome+1@exemplo.com`, você começará a receber e-mails de expiração novamente. Com o Certbot,
+reinscrevê-lo automaticamente. Muitos serviços de e-mail tratam `seunome+1@example.com` como
+sendo o mesmo que `seunome@example.com`. Dessa forma se você alterar seu endereço de e-mail para
+`seunome+1@example.com`, você começará a receber e-mails de expiração novamente. Com o Certbot,
 use:
 
 `certbot update_account --email yourname+1@example.com`
