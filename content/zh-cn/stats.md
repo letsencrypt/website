@@ -3,7 +3,7 @@ title: Let's Encrypt 统计数据
 linkTitle: 统计数据
 slug: stats
 top_graphic: 3
-excerpt: Let's Encrypt统计数据。
+excerpt: Let's Encrypt 统计数据。
 lastmod: 2019-08-22
 menu:
   main:
