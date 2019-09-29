@@ -18,7 +18,7 @@ lastmod: 2019-05-15
 # 利用者向けの情報
 
 * [ACME クライアント実装]({{< ref "/docs/client-options.md" >}})
-* [レート・リミット]({{< ref "/docs/rate-limits.md" >}})
+* [レート制限]({{< ref "/docs/rate-limits.md" >}})
 * [期限切れ通知メール]({{< ref "/docs/expiration-emails.md" >}})
 
 # 利用者向けの発展的な情報
