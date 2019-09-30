@@ -106,6 +106,18 @@ description = """
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 
+[sr-sp]
+title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
+contentDir = "content/sr-sp"
+languageName ="Srpski"
+languageCode= "sr-sp"
+beforeColon= ""
+weight = 95
+description = """
+  Let&rsquo;s&nbsp;Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
+  telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.
+"""
+
 [zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
