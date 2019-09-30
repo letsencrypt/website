@@ -1,0 +1,111 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt je <span>besplatno</span>, <span>automatizovano</span>, i <span>otvoreno</span> sertifikaciono telo."
+
+[home_hero_getting_started]
+other = "Prvi koraci"
+
+[home_hero_donate]
+other = "Doniraj"
+
+[home_hero_sponsor]
+other = "Sponzoriši"
+
+[home_major_sponsors]
+other = "Glavni sponzori i donatori"
+
+[home_from_our_blog]
+other = "Sa našeg bloga"
+
+[read_more]
+other = "Pročitaj više"
+
+[subscribe_rss]
+other = "Pretplati se <a href=\"{{ .Permalink }}\">putem RSS</a>"
+
+[footer_support_us]
+other = "Podržite sigurniji internet koji poštuje privatnost"
+
+[footer_donate]
+other = "Doniraj"
+
+[footer_policies]
+other = """
+Pročitaj našu <a href="/sr-sp/privacy/">politiku privatnosti</a>.<br>
+Pročitaj našu <a href="/sr-sp/trademarks/">politiku brenda</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation je registrovani brend od The Linux Foundation. Linux je registrovani brend od strane Linus Torvaldsa."
+
+[header_skip_nav]
+other = "Preskoči navigacione linkove"
+
+[last_updated]
+other = "Poslednji put ažurirano: "
+
+[see_all_doc]
+other = "Pregledaj svu dokumentaciju"
+
+[blog_feed]
+other = "Let's Encrypt Blog lista"
+
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Jezik"
+
+[view_in_english]
+other = "Pročitaj na Engleskom"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Pročitaj na Srpskom"
+
+[old_version]
+other = "Napomena: Engleska verzija je izmenjena od poslednjeg prevoda na Srpski jezik"
+
+[not_yet_translated]
+other = "Ova stranica još nije prevedena na Srpski jezik. Možete doprineti prevodu <a href=\"https://github.com/letsencrypt/website\">ovde</a>."
+
+[english_is_canonical]
+other = "Engleska verzija je merodavna"
+
+[graph_issued]
+other = "Izdato"
+
+[graph_certificates_active]
+other = "Aktivnih sertifikata"
+
+[graph_fully_qualified_domains_active]
+other = "Aktivnih FQDN"
+
+[graph_registered_domains_active]
+other = "Aktivnih registrovanih domena"
+
+[graph_active_count]
+other = "Broj aktivnih"
+
+[graph_issued_per_day]
+other = "Izdatih po danu"
+
+[graph_all_users]
+other = "Svi korisnici"
+
+[graph_usa_users]
+other = "Korisnici iz USA"
+
+[graph_japan_users]
+other = "Korisnici iz Japana"
+
+[graph_percent_https]
+other = "Procenat učitavanja stranica (pageload) preko HTTPS (prosek za 14 dana)"
