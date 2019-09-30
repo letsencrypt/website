@@ -202,6 +202,7 @@
 			"url": "https://go-acme.github.io/lego/",
 			"category": "Go",
 			"library": "Go",
+			"acme_v2": "Lego >= v1.0.0",
 			"challenges": {
 				"TLS-ALPN-01": "true"
 			}
@@ -240,6 +241,7 @@
 		{
 			"name": "Traefik",
 			"url": "https://traefik.io/",
+			"acme_v2": "true",
 			"category": "Go"
 		},
 		{
@@ -568,6 +570,7 @@
 		{
 			"name": "eggsampler/acme",
 			"url": "https://github.com/eggsampler/acme",
+			"acme_v2": "true",
 			"library": "Go"
 		},
 		{

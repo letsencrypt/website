@@ -1,29 +1,17 @@
-
-<h2 id="acme-v2-compatible-clients">{{ .Get "acme_v2" }}</h2>
-
-<ul>
-{{ range $.Site.Data.clients.list }}
-    {{ if .acme_v2 }}
-    <li>
-        <a href="{{ .url }}">{{ .name }}</a> {{ if ne .acme_v2 "true" }} ({{ .acme_v2 | markdownify }}){{ end }}
-    </li>
-    {{ end }}
-{{ end }}
-</ul>
-
 {{ range $.Site.Data.clients.categories }}
     <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
     {{ $category := . }}
     <ul>
     {{ range $.Site.Data.clients.list }}
         {{ if eq $category .category }}
-        <li>
-            <a href="{{ .url }}">{{ .name }}</a>
+        <li {{ if not .acme_v2 }}style="color:grey"{{ end }}>
+            <a {{ if not .acme_v2 }}style="color:grey"{{ end }} href="{{ .url }}">{{ .name }}</a>
             {{ if .category_comments }}
                 {{ .category_comments | markdownify }}
             {{ else if .comments }}
                 {{ .comments | markdownify }}
             {{ end }}
+            {{ if not .acme_v2 }}<a href="#acme_v1">*</a>{{ end }}
         </li>
         {{ end }}
     {{ end }}
@@ -43,18 +31,26 @@
     {{ end }}
     {{ range $.Site.Data.clients.list }}
         {{ if eq $library .library }}
-        <li>
-            <a href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
+        <li {{ if not .acme_v2 }}style="color:grey"{{ end }}>
+            <a {{ if not .acme_v2 }}style="color:grey"{{ end }} href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
             {{ if .library_comments }}
                 {{ .library_comments | markdownify }}
             {{ else if .comments }}
                 {{ .comments | markdownify }}
             {{ end }}
+            {{ if not .acme_v2 }}<a href="#acme_v1">*</a>{{ end }}
         </li>
         {{ end }}
     {{ end }}
     </ul>
 {{ end }}
+
+<div id="acme_v1">
+    * Clients in <span style="color:grey">grey</span> don't support the new ACME v2 API, only the old, deprecated API ACME v1. They will be removed from this list soon.
+</div>
+<div>
+    Note for clients developers: If your client is compatible with ACME v2 but appears in <span style="color:grey">grey</span>, please submit a pull-request to update <code>data/clients.json</code> on <a href="https://github.com/letsencrypt/website">https://github.com/letsencrypt/website</a>
+</div>
 
 <h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
 
