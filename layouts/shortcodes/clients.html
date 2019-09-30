@@ -11,6 +11,7 @@
             {{ else if .comments }}
                 {{ .comments | markdownify }}
             {{ end }}
+            {{ if not .acme_v2 }}<a href="#acme_v1">*</a>{{ end }}
         </li>
         {{ end }}
     {{ end }}
