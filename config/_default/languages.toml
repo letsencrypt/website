@@ -1,0 +1,130 @@
+[en]
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/en"
+languageName ="English"
+languageCode= "en-us"
+#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
+beforeColon= ""
+# Weight used for sorting. (alphabetical order using languageCode, with English first)
+weight = 10
+description = """
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[de]
+title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
+contentDir = "content/de"
+languageName ="Deutsch"
+languageCode= "de-de"
+beforeColon= ""
+weight = 20
+description = """
+  Let&rsquo;s&nbsp;Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
+  herausgebracht für Sie durch <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[es]
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/es"
+languageName ="Español"
+languageCode= "es-us"
+beforeColon= "&nbsp;"
+weight = 30
+description = """
+  Let&rsquo;s&nbsp;Encrypt es una autoridad de certificación gratuita, automatizada, y abierta traida a ustedes por la organización sin ánimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[fr]
+title = "Let's Encrypt - Certificats SSL/TLS gratuits"
+languageName = "Français"
+contentDir = "content/fr"
+languageCode= "fr-fr"
+beforeColon= "&nbsp;"
+weight = 40
+description = """
+  Let&rsquo;s&nbsp;Encrypt est une autorité de certification gratuite, automatisée et ouverte
+  apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
+"""
+
+[id]
+title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
+contentDir = "content/id"
+languageName ="Bahasa Indonesia"
+languageCode= "id-id"
+beforeColon= ""
+weight = 50
+description = """
+  Let&rsquo;s&nbsp;Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
+  dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[ja]
+title = "Let's Encrypt - フリーな SSL/TLS 証明書"
+contentDir = "content/ja"
+languageName ="日本語"
+languageCode= "ja"
+beforeColon= ""
+weight = 60
+description = """
+  Let&rsquo;s&nbsp;Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[ko]
+title = "Let's Encrypt - 무료 SSL/TLS 인증서"
+contentDir = "content/ko"
+languageName ="한국어"
+languageCode= "ko-kr"
+beforeColon= ""
+weight = 70
+description = """
+  Let&rsquo;s&nbsp;Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
+"""
+
+[pt-br]
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/pt-br"
+languageName ="Português do Brasil"
+languageCode= "pt-br"
+beforeColon= ""
+weight = 80
+description = """
+  Let&rsquo;s&nbsp;Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
+  que se tornou possível graças à organização sem fins lucrativos <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>
+"""
+
+[ru]
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/ru"
+languageName ="Русский"
+languageCode= "ru-ru"
+beforeColon= ""
+weight = 90
+description = """
+  Let&rsquo;s&nbsp;Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
+  некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
+[zh-cn]
+title = "Let's Encrypt - 免费的SSL/TLS证书"
+contentDir = "content/zh-cn"
+languageName ="简体中文"
+languageCode= "zh-cn"
+beforeColon= ""
+weight = 100
+description = """
+  Let&rsquo;s&nbsp;Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
+  style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
+"""
+
+[zh-tw]
+title = "Let's Encrypt - 免費SSL/TLS憑證"
+languageName = "正體中文"
+contentDir = "content/zh-tw"
+languageCode= "zh-tw"
+beforeColon= ""
+weight = 110
+description = """
+  Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的憑證頒發機構。
+  """

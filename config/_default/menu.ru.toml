@@ -1,0 +1,32 @@
+[[main]]
+name = "Помощь"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "Поддержите нас"
+weight = 30
+identifier = "donate"
+url = "/ru/donate/"
+[[main]]
+name = "О сервисе"
+weight = 40
+identifier = "about"
+url = "/ru/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "Состояние сервиса"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "Карьера"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"

@@ -2,7 +2,7 @@
 title: Comment ça marche
 slug: how-it-works
 top_graphic: 3
-lastmod: 2018-06-24
+lastmod: 2019-09-09
 ---
 
 L'objectif de l'Autorité de Certification (AC ou CA pour Certificate Authority en anglais) Let's&nbsp;Encrypt et du [protocole ACME](https://ietf-wg-acme.github.io/acme/) est de permettre la mise en place d'un serveur HTTPS et l'obtention automatique d'un certificat reconnu comme  de confiance par les navigateurs, sans intervention humaine. Ceci est accompli en exécutant un agent de gestion de certificats sur le serveur Web.
@@ -18,7 +18,7 @@ Let's&nbsp;Encrypt identifie l'administrateur du serveur par clé publique. La p
 Pour lancer le processus, l'agent demande à l'AC Let's Encrypt ce qu'elle doit faire pour prouver qu'elle contrôle `example.com`. L'AC Let's Encrypt examinera le nom de domaine demandé et émettra un ou plusieurs ensembles de défis. Ce sont différentes manières que l'agent peut utiliser pour prouver le contrôle du domaine. Par exemple, l'autorité de certification peut donner à l'agent le choix entre:
 
 * Provisionner un enregistrement DNS sous `example.com`, ou
-* Provisionner une ressource HTTP sous l'URI .well-known sur `https://example.com/`
+* Provisionner une ressource HTTP sous l'URI .well-known sur `http://example.com/`
 
 En plus des défis, l'AC de chiffrement de Let fournit également un nonce que l'agent doit signer avec sa paire de clés privée pour prouver qu'il contrôle la paire de clés.
 
@@ -27,7 +27,7 @@ En plus des défis, l'AC de chiffrement de Let fournit également un nonce que l
      src="/images/howitworks_challenge.png"/>
 </div>
 
-Le logiciel agent complète l'un des défis fournis. Disons qu'il est capable d'accomplir la deuxième tâche ci-dessus: il crée un fichier sur un chemin spécifié sur le site `https://example.com`. L'agent signe également le `nonce` fourni avec sa clé privée. Une fois que l'agent a terminé ces étapes, il informe l'autorité de certification qu'il est prêt à terminer la validation.
+Le logiciel agent complète l'un des défis fournis. Disons qu'il est capable d'accomplir la deuxième tâche ci-dessus: il crée un fichier sur un chemin spécifié sur le site `http://example.com`. L'agent signe également le `nonce` fourni avec sa clé privée. Une fois que l'agent a terminé ces étapes, il informe l'autorité de certification qu'il est prêt à terminer la validation.
 
 Ensuite, le travail de l'AC consiste à vérifier que les défis ont été relevés. L'autorité de certification vérifie la signature sur le `nonce` et tente de télécharger le fichier à partir du serveur Web et de s'assurer qu'il contient le contenu attendu.
 
