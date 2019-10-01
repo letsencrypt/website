@@ -1,0 +1,10 @@
+
+{{ range $.Site.Data.transparency.transparencyLogs }}
+<p>
+  <strong>{{ i18n "ct_name" }}: {{ .name }}</strong><br>
+  {{ i18n "ct_role" }}: {{ if eq .role "production" }}{{ i18n "ct_role_production" }}{{ end }}{{ if eq .role "test" }}{{ i18n "ct_role_test" }}{{ end }}<br>
+  {{ i18n "ct_uri" }}: {{ .uri }}<br>
+  {{ i18n "ct_public_key" }}: <code>{{ .publicKey }}</code>
+</p>
+{{ end }}
+
