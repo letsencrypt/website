@@ -275,6 +275,7 @@
 		{
 			"name": "lua-resty-auto-ssl",
 			"url": "https://github.com/GUI/lua-resty-auto-ssl",
+			"acme_v2": "lua-resty-auto-ssl >= 0.13.0",
 			"category": "nginx"
 		},
 		{
