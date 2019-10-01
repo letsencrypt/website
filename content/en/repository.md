@@ -60,6 +60,7 @@ do_not_translate: 1
 
 # ISRG Legal Transparency Reports
 
+* [October 1, 2019](/documents/ISRG-Legal-Transparency-Report-October-1-2019.pdf)
 * [April 1, 2019](/documents/ISRG-Legal-Transparency-Report-April-1-2019.pdf)
 * [October 1, 2018](/documents/ISRG-Legal-Transparency-Report-October-1-2018.pdf)
 * [April 1, 2018](/documents/ISRG-Legal-Transparency-Report-April-1-2018.pdf)
