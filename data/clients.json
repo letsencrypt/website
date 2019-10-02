@@ -5,6 +5,7 @@
 		"C",
 		"C++",
 		"Clojure",
+		"Configuration management tools",
 		"D",
 		"Docker",
 		"Go",
@@ -668,7 +669,7 @@
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
 			},
-			"category": "Python"
+			"category": "Configuration management tools"
 		},
 		{
 			"name": "WinCertes Windows ACMEv2 client",
