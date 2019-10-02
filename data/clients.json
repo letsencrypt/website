@@ -340,6 +340,13 @@
 			"library": "Perl"
 		},
 		{
+			"name": "Net::ACME2",
+			"url": "https://metacpan.org/pod/Net::ACME2",
+			"acme_v2": "true",
+			"category": "Perl",
+			"library": "Perl"
+		},
+		{
 			"name": "Net::ACME",
 			"url": "https://metacpan.org/pod/Net::ACME",
 			"category": "Perl",
