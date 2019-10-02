@@ -110,20 +110,20 @@ other = "Japan users"
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
-[ct_name]
+[certificate_transparency_name]
 other = "Name"
 
-[ct_role]
+[certificate_transparency_role]
 other = "Role"
 
-[ct_role_production]
+[certificate_transparency_role_production]
 other = "Production"
 
-[ct_role_test]
+[certificate_transparency_role_test]
 other = "Test"
 
-[ct_uri]
+[certificate_transparency_uri]
 other = "URI"
 
-[ct_public_key]
+[certificate_transparency_public_key]
 other = "Public Key"
