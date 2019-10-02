@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-09-24",
+	"lastmod": "2019-10-01",
 	"categories": [
 		"Bash",
 		"C",
@@ -777,6 +777,13 @@
 			"category": "nginx",
 			"acme_v2": "true",
 			"comments": "Automatic Let's Encrypt certificate serving (RSA + ECC) and pure Lua implementation of the ACMEv2 protocol."
+		},
+		{
+			"name": "acertmgr",
+			"url": "https://github.com/moepman/acertmgr",
+			"category": "Python",
+			"acme_v2": "true",
+			"comments": "Automated Certificate Manager using ACME"
 		}
 	]
 }
