@@ -64,3 +64,15 @@
         </li>
 {{ end }}
 </ul>
+
+{{ range $.Site.Data.clients.list }}
+    {{ if and (not .category) (not .library) }}
+            {{ $.MissingLibraryOrCategory }}
+    {{ end }}
+    {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
+            {{ $.CategoryUnknow }}
+    {{ end }}
+    {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
+            {{ $.LibraryUnknow }}
+    {{ end }}
+{{ end }}
