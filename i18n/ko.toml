@@ -109,3 +109,21 @@ other = "일본 사용자"
 
 [graph_percent_https]
 other = "HTTPS를 통한 페이지로드 비율 (14 일 이동 평균)"
+
+[certificate_transparency_name]
+other = "이름"
+
+[certificate_transparency_role]
+other = "역할"
+
+[certificate_transparency_role_production]
+other = "제작"
+
+[certificate_transparency_role_test]
+other = "시험"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "공개키"
