@@ -2,28 +2,24 @@
 title: Zukünftige Funktionen
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2018-12-31
+lastmod: 2019-07-03
 ---
 
-## Certificate Transparency Log
-
-* ETA: Q1 2019
-
-Wir planen den Betrieb eines [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
-
 ## Multi-Perspective Validation
-
-* ETA: Q2 2019
 
 Derzeitige Let's Encrypt Validierung von einer Netzwerkperspektive. Wir planen die Validierung von mehreren Netzwerkperspektiven zu starten.
 
 ## ECDSA Root and Intermediates
 
-* ETA: Q3 2019
-
 Derzeit signiert Let's Encrypt nur Endentität Zertifikate mit RSA Zwischenzertifikaten. Let's Encrypt wird ein ECDSA Root und Zwischenzertifikat generieren, welche zur Signierung von Endentität Zertifikaten benutzt werden kann.
 
 # Abgeschlossene Funktionen
+
+## Certificate Transparency Log
+
+* Aktiviert: 15. Mai 2019
+
+Wir haben einen [Certificate Transparency log]({{< ref "/docs/ct-logs.html" >}}) in Betrieb genommen.
 
 ## TLS ALPN Challenge Support
 
