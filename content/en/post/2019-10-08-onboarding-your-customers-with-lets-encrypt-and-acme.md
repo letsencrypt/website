@@ -1,8 +1,8 @@
 ---
 author: Jacob Hoffman-Andrews
 date: 2019-10-08T00:00:00Z
-title: "Onboarding New Customers with Let's Encrypt and ACME"
-slug: onboarding-new-customers-with-lets-encrypt-and-acme
+title: "Onboarding Your Customers with Let's Encrypt and ACME"
+slug: onboarding-Your-customers-with-lets-encrypt-and-acme
 ---
 
 If you work at a hosting provider or CDN, ACME’s DNS-01 validation
