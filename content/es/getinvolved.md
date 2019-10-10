@@ -27,7 +27,7 @@ Siempre podemos usar ayuda para el desarrollo de software. Todo nuestro código 
 
 ### letsencrypt.org
 
-Puedes mejorar este sitio de web y la documentación [aquí](https://github.com/letsencrypt/website) o ayudar en las [tradduciones](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
+Puedes mejorar este sitio de web y la documentación [aquí](https://github.com/letsencrypt/website) o ayudar en las [traducciones](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
 
 ## Protocolo
 
