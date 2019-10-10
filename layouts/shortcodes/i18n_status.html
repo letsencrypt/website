@@ -21,7 +21,9 @@
     </tr>
   </thead>
   <tbody>
-    {{ range sort $.Site.RegularPages "RelPermalink" }}
+    {{ $pages := sort $.Site.RegularPages "RelPermalink" }}
+    {{ $pages = $pages | append (.Site.GetPage "/docs") }}
+    {{ range $pages }}
       {{ $page := . }}
       {{ if and .Translations (not .Page.Params.do_not_translate) }}
       <tr>
@@ -36,10 +38,10 @@
 
         <td>
           <a href="{{ .Permalink }}">
-            {{ if  $lastmod }}
+            {{ if $lastmod }}
               {{ .Lastmod.Format "January 2, 2006" }}
             {{ else }}
-              (no lastmod date)
+              {{ errorf "Missing lastmod in %q" .RelPermalink }}
             {{ end }}
           </a>
         </td>
@@ -54,7 +56,7 @@
                 {{ if eq $lang .Language }}
                 
                 {{ if .Params.aliases }}
-                  {{ .Translations_must_not_have_aliases }}{{/* force build to fail if a translation have aliases*/}}
+                  {{ errorf "Translated page %q mush not have aliases" $page.RelPermalink }}
                 {{ end }}
 
                 <a href="{{ .Permalink }}">
@@ -64,21 +66,19 @@
                   {{ else if  $lastmod }}
                     {{ $scratch_translated.Set .Lang ( add 1 ( $scratch_translated.Get .Lang ) ) }}
                     {{ if not .Lastmod }}
-                      {{ .PageMustHaveLastMod }}
+                      {{ errorf "Missing lastmod in %q" .RelPermalink }}
                     {{ else if ne  .Lastmod $lastmod }}
                         <span style="color:orange">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ else }}
                       {{ $scratch_up_to_date.Set .Lang ( add 1 ( $scratch_up_to_date.Get .Lang ) ) }}
                         <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ end }}
-                  {{ else }}
-                    {{ .TranslationMustHaveLastMod }}
                   {{ end }}
                 </a>
                 {{ end }}
               {{ end }}
               {{ if not ( $scratch.Get "with_page") }}
-                <span style="color:red">Missing template placeholder</span>
+                {{ errorf "Missing templatte placeholder for page %q in " $page.Path $lang }}
               {{ end }}
             </td>
             {{ end }}
