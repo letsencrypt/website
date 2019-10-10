@@ -1,5 +1,4 @@
 ---
-untranslated: 1
 title: Dokumentacija
 top_graphic: 1
 menu: "main"
