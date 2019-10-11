@@ -779,22 +779,19 @@
 			"name": "lua-resty-acme",
 			"url": "https://github.com/fffonion/lua-resty-acme",
 			"category": "nginx",
-			"acme_v2": "true",
-			"comments": "Automatic Let's Encrypt certificate serving (RSA + ECC) and pure Lua implementation of the ACMEv2 protocol."
+			"acme_v2": "true"
 		},
 		{
 			"name": "acertmgr",
 			"url": "https://github.com/moepman/acertmgr",
 			"category": "Python",
-			"acme_v2": "true",
-			"comments": "Automated Certificate Manager using ACME"
+			"acme_v2": "true"
 		},
 		{
 			"name": "acme-cert-tool",
 			"url": "https://github.com/mk-fg/acme-cert-tool",
 			"category": "Python",
-			"acme_v2": "true",
-			"comments": "Simple one-stop tool to manage X.509/TLS certs and all ACME CA authorization"
+			"acme_v2": "true"
 		}
 	]
 }
