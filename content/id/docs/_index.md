@@ -5,6 +5,7 @@ menu: "main"
 menu:
   main:
     weight: 10
+lastmod: 2019-05-15
 ---
 
 # Ringkasan
