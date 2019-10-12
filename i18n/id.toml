@@ -109,3 +109,24 @@ other = "Pengguna dari Jepang"
 
 [graph_percent_https]
 other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"
+
+
+
+
+
+
+[overview]
+other = "Ringkasan"
+
+[subscriber_information]
+other = "Informasi untuk Pelanggan (*Subcriber*)"
+
+[advanced_subscriber_information]
+other = "Informasi untuk Pelanggan Tingkat Lanjut"
+
+[client_developer_information]
+other = "Informasi untuk Pengembang Klien (*Client Developer*)"
+
+[acme_divergences]
+other = "Perbedaan dari draf ACME terkini"
+

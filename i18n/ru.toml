@@ -127,3 +127,20 @@ other = "URI"
 
 [certificate_transparency_public_key]
 other = "Открытый ключ"
+
+
+
+
+
+
+[overview]
+other = "Обзор"
+
+[subscriber_information]
+other = "Информация для пользователей"
+
+[advanced_subscriber_information]
+other = "Расширенная информация для пользователей"
+
+[client_developer_information]
+other = "Информация для разработчиков"

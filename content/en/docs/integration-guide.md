@@ -1,5 +1,6 @@
 ---
 title: Integration Guide
+linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08

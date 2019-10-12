@@ -1,5 +1,6 @@
 ---
 title: Chaîne de confiance
+linkTitle: Chaîne de confiance (Certificats Racines et Intermédiaires)
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01
