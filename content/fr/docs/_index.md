@@ -33,7 +33,7 @@ lastmod: 2019-10-09
 * [Best Practice - Keep Port 80 Open]({{< ref "/docs/allow-port-80.md" >}})
 * [Challenge Types]({{< ref "/docs/challenge-types.md" >}})
 * [Certificate Transparency (CT) Logs]({{< ref "/docs/ct-logs.html" >}})
-* [Intégrer de vos clients avec Let's Encrypt et ACME](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html)
+* [Intégrer vos clients avec Let's Encrypt et ACME](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html)
 
 # Client Developer Information
 
