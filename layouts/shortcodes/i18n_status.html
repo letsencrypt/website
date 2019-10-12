@@ -21,7 +21,9 @@
     </tr>
   </thead>
   <tbody>
-    {{ range sort $.Site.RegularPages "RelPermalink" }}
+    {{ $pages := sort $.Site.RegularPages "RelPermalink" }}
+    {{ $pages = $pages | append (.Site.GetPage "/docs") }}
+    {{ range $pages }}
       {{ $page := . }}
       {{ if and .Translations (not .Page.Params.do_not_translate) }}
       <tr>
