@@ -1,5 +1,6 @@
 ---
 title: Цепочка доверия
+linkTitle: Цепочка доверия (Корневые и промежуточные сертификаты)
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01
