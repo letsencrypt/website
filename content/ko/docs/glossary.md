@@ -67,13 +67,13 @@ Note for translators:
 
 {{% def id="subject" name="Certificate subject" %}} 인증서 필드의 "제목" 필드는 인증서의 내용을 나타냅니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. {{% /def %}}
 
-{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 보안을 향상시키려면 인증서 또는 [사전 인증서](#def-precertificate)를 인증서 투명 로그: https://www.certificate-transparency.org/ 에 게시해야 합니다. [Let's Encrypt](#def-LE)는 [사전 인증서](#def-precificate)를 생성하고 게시하며, 이후 [SCT](#def-SCT) 목록을 다음 [인증서](#def-leaf)에 포함합니다. Google Chrome과 같은 일부 [웹 브라우저](#def-web-browser)는 인증서의 유효성을 확인하기 위해 이 검증 가능한 약속의 존재를 요구합니다. [위키피디아](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
+{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 보안을 향상시키려면 인증서 또는 [사전 인증서](#def-precertificate)를 인증서 투명 로그: https://www.certificate-transparency.org/ 에 게시해야 합니다. [Let's Encrypt](#def-LE)는 [사전 인증서](#def-precertificate)를 생성하고 게시하며, 이후 [SCT](#def-SCT) 목록을 다음 [인증서](#def-leaf)에 포함합니다. Google Chrome과 같은 일부 [웹 브라우저](#def-web-browser)는 인증서의 유효성을 확인하기 위해 이 검증 가능한 약속의 존재를 요구합니다. [위키피디아](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} [인증서 투명성](#def-CT)의 구성 요소는 인증서 및 [사전 인증서](#def-precertificate)의 제출을 수락하고 이를 영구적이고 검증 가능하며 공개적으로 액세스 가능한 목록에 통합합니다. {{% /def %}}
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} 인증서의 내용을 설명하는 인증서 [제목](#def-subject)의 일부입니다. [root 인증서](#def-root) 및 [중간 인증서](#def-intermediate)의 경우 사람이 읽을 수있는 [인증 기관](#def-CA)의 이름입니다. [리프 인증서](#def-leaf)의 경우 인증서의 도메인 이름 중 하나입니다. 참고: 일반적인 이름은 63 자로 제한됩니다. 현재의 인터넷 표준은 소프트웨어가 인증서의 적용 가능성을 결정하기 위해 [제목 대체 이름](#def-SAN) 만 검사 할 것을 기대하기 때문에 인증서가 적용되는 도메인 이름을 나타내는 오래된 방법입니다. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [위키피디아]](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [위키피디아](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} DNS를 사용하여 제공된 [인증서](#def-leaf) 또는 암호화 키의 신뢰성을 확인하는 방법을 나타내는 메커니즘입니다. [위키피디아](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -81,7 +81,7 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} 신청자가 도메인 이름 (요청 조직의 ID가 아닌)에 대한 제어권을 증명한 [인증서](#def-leaf)입니다. [Let's Encrypt](#def-LE)는 DV 인증서만 제공합니다 ([OV](#def-OV) 또는 [EV](#def-EV)가 아닌): [FAQ]({{< ref "/docs/faq.md" >}}) - [위키피디아](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: [{{< ref "/upcoming-features.md" >}}]({{< ref "/upcoming-features.md" >}}) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: [향후 기능]({{< ref "/upcoming-features.md" >}}) {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} Ed448과 함께 특정 유형의 [EdDSA](#def-EdDSA)도 사용할 수 있습니다. {{% /def %}}
 
@@ -103,7 +103,7 @@ Note for translators:
 
 {{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} [Let's Encrypt](#def-LE) 뒤에 있는 조직입니다: https://www.abetterinternet.org/about/. [위키피디아](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
-{{% def id="issuer" name="Certificate issuer" %}} 인증서의 "Issuer" 필드는 인증서에 서명한 인증서를 설명합니다. 예를 들어, Let's Encrypt 엔티티 인증서의 Issuer 필드는 "Issuer: C = US, O = Let's Encryption, CN = Let's Encrypt Authority X3"일 수 있습니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. Issuer 필드는 항상 일부 인증서의 [제목](#def-subject) 필드와 일치합니다. [root](#def-root)와 같은 [자체 서명된](#def-signed) 인증서의 경우 발급자는 제목과 동일합니다. "Issuer"라는 용어는 다른 인증서를 발급하는 인증서 ([중간 인증서](#def-intermediate) 또는 root) 또는 인증서를 발급하는 조직을 나타내는 데 사용할 수도 있습니다. {{% /def %}}
+{{% def id="issuer" name="Certificate issuer" %}} 인증서의 "Issuer" 필드는 인증서에 서명한 인증서를 설명합니다. 예를 들어, Let's Encrypt 엔티티 인증서의 Issuer 필드는 "Issuer: C = US, O = Let's Encryption, CN = Let's Encrypt Authority X3"일 수 있습니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. Issuer 필드는 항상 일부 인증서의 [제목](#def-subject) 필드와 일치합니다. [root](#def-root)와 같은 [자체 서명된](#def-self-signed) 인증서의 경우 발급자는 제목과 동일합니다. "Issuer"라는 용어는 다른 인증서를 발급하는 인증서 ([중간 인증서](#def-intermediate) 또는 root) 또는 인증서를 발급하는 조직을 나타내는 데 사용할 수도 있습니다. {{% /def %}}
 
 {{% def id="key-pair" name="Key-pair" %}} 서명 또는 암호화에 사용되는 개인 키와 공용 키의 조합입니다. 공용 키는 일반적으로 인증서에 내장되어 있는 반면 개인 키는 자체 저장되므로 비밀로 유지해야 합니다. 키 쌍은 애플리케이션에 따라 암호화 및 암호 해독, 서명 및 확인, 보조 키 협상 등에 사용할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public-key_cryptography) {{% /def %}}
 
@@ -137,7 +137,7 @@ Note for translators:
 
 {{% def id="revocation" name="Revocation" %}} 인증서는 [CA](#def-CA)에서 해지되었다고 하지 않는 한 만료 날짜까지 유효합니다. 개인 키의 손상 등 다양한 이유로 인증서가 해지될 수 있습니다. 웹 브라우저에서는 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 및 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)와 같은 최신 방법을 사용하여 인증서가 해지되었는지 확인할 수 있습니다. 많은 경우 [해지되지 않는다](https://www.imperialviolet.org/2011/03/18/revocation.html)는 점을 인지하세요. [{{< ref "/docs/revoking.md" >}}]({{< ref "/docs/revoking.md" >}}) {{% /def %}}
 
-{{% def id="root" name="Root certificate" %}} [인증 기관](#def-CA)에 의해 [자체 서명된](#def-signed) 인증서는 [중급](#def-intermediate) 인증서에 서명하는 데 사용되며 [인증서 저장소](#def-store)에 포함됩니다. [위키피디아](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
+{{% def id="root" name="Root certificate" %}} [인증 기관](#def-CA)에 의해 [자체 서명된](#def-self-signed) 인증서는 [중급](#def-intermediate) 인증서에 서명하는 데 사용되며 [인증서 저장소](#def-store)에 포함됩니다. [위키피디아](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
 {{% def id="root-program" name="Root Program" %}} 조직이 [인증서 저장소](#def-store)에 포함할 인증서를 결정하고 소프트웨어가 어떤 CA를 신뢰하는지 결정하는 데 사용하는 정책입니다. {{% /def %}}
 

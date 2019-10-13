@@ -69,7 +69,7 @@ date: 2018-12-30
 
 {{% def id="EdDSA" name="爱德华兹曲线数字签名算法" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} 基于椭圆曲线的现代公钥签名系统。它是为了解决一些常见的椭圆曲线加密的[实现问题](https://ed25519.cr.yp.to/)而被设计出来的。[Let's Encrypt](#def-LE) 等证书颁发机构暂时还不能提供 EdDSA 证书。[维基百科条目](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
-{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。[Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6y) {{% /def %}}
+{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。[Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6) {{% /def %}}
 
 {{% def id="EV" name="扩展验证" english="Extended Validation" abbr="EV" %}} [CA](#def-CA) 验证对网站有控制权的法律实体的证书验证方式。此类证书包含有该实体的相关信息。[CA](#def-CA) 对此类证书的控制比 [OV](#def-OV) 证书要更严格。[Let's Encrypt](#def-LE) 不提供 EV 证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%89%A9%E5%B1%95%E9%AA%8C%E8%AF%81%E8%AF%81%E4%B9%A6) {{% /def %}}
 
