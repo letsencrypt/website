@@ -32,8 +32,8 @@ other = "寄付する"
 
 [footer_policies]
 other = """
-<a href="/privacy/">プライバシー・ポリシー</a>を読む。<br>
-<a href="/trademarks/">トレードマーク・ポリシー</a>を読む。
+<a href="/ja/privacy/">プライバシー・ポリシー</a>を読む。<br>
+<a href="/ja/trademarks/">トレードマーク・ポリシー</a>を読む。
 """
 
 [linux_foundation_trademark]
