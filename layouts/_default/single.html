@@ -47,8 +47,9 @@
 									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
 
 									{{ $url_en := printf "href=\"%s\"" $en_link_page.Permalink }}
-									{{ $url_lang := printf "href=\"%s\"" .Page.Permalink }}
-									{{ $scratch.Set "content" (replace ($scratch.Get "content") $url_en $url_lang) }}
+									{{ if in ($scratch.Get "content") $url_en }}
+										{{ errorf "Absolute url to %q found in %q. relatives urls must be used to avoid breaking netlify preview." $url_en $en_link_page.RelPermalink }}
+									{{ end }}
 								{{ end }}
 							{{ end }}
 						{{ end }}
