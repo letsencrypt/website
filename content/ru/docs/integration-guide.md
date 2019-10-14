@@ -8,7 +8,6 @@ lastmod: 2018-06-20
 
 {{< lastmod >}}
 
-
 This document contains helpful advice if you are a hosting provider or large website integrating Let's Encrypt, or you are writing client software for Let's Encrypt.
 
 # Plan for Change
