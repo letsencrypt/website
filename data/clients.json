@@ -225,6 +225,7 @@
 		{
 			"name": "autocert",
 			"url": "https://godoc.org/golang.org/x/crypto/acme/autocert",
+			"acme_v2": "true",
 			"category": "Go",
 			"challenges": {
 				"TLS-ALPN-01": "true"
