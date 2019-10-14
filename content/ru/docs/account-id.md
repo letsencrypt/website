@@ -1,5 +1,5 @@
 ---
-title: Как определить ID вашего аккаунта
+title: Как определить идентификатор вашего аккаунта
 slug: account-id
 top_graphic: 1
 date: 2016-08-10
@@ -8,23 +8,21 @@ lastmod: 2019-07-30
 
 {{< lastmod >}}
 
-When reporting issues it can be useful to provide your Let's Encrypt account ID.
-Most of the time, the process of creating an account is handled automatically by
-the ACME client software you use to talk to Let's Encrypt, and you may have
-multiple accounts configured if you run ACME clients on multiple servers.
+При описании возникающих проблем, как правило, требуется указать идентификатор вашего аккаунта в Let's Encrypt.
+Весь процесс создания аккаунта автоматизирован, взаимодействие с серверами Let's Encrypt ведёт ваш ACME-клиент.
+Также, у вас может быть несколько аккаунтов для Let's Encrypt.
 
-Your account ID is a URL of the form
-`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` or
+Идентификатор вашего аккаунта - это URL вида `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` или 
 `https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
 
-If you're using Certbot, you can find your account ID by looking at the "uri"
-field in
+Если вы используете Certbot, идентификатор вашего аккаунта находится в поле "uri" внутри файла
 `/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
 
-If you're using another ACME client, the instructions will be client-dependent.
-Check your logs for URLs of the form described above. If your ACME client does
-not record the account ID, you can retrieve it by submitting a new registration
-request with the same key. See the [ACME spec for more
-details](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
-You can also find the numeric form of your ID in the Boulder-Requester header in
-the response to each POST your ACME client makes.
+Если вы используете альтернативный ACME-клиент, конкретные рекомендации по определению идентификатора
+аккаунта зависят от программной реализации клиентского ПО. Прежде всего, поищите в логах строки, похожие
+на URL из предыдущего абзаца. Если ваш ACME-клиент не записывает в логи идентификатор аккаунта, вы можете
+получить его, отправив повторный запрос на регистрацию имеющегося доменного имени. Для более подробной информации
+обратитесь к [спецификации протокола ACME](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
+
+Кроме того, идентификатор вашего аккаунта (в числовой форме) находится в заголовке ответа от [Boulder](https://github.com/letsencrypt/boulder) 
+на каждый POST-запрос вашего ACME-клиента.
