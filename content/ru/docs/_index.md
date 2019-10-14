@@ -37,6 +37,6 @@ lastmod: 2019-05-15
 # Информация для разработчиков
 
 * [Client and Large Provider Integration Guide]({{< ref "/docs/integration-guide.md" >}})
-* [ACME Protocol Updates]({{< ref "/docs/acme-protocol-updates.md" >}})
+* [Обновления протокола ACME]({{< ref "/docs/acme-protocol-updates.md" >}})
 * [Отличия от текущего черновика протокола ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * [Как определить идентификатор вашего аккаунта]({{< ref "/docs/account-id.md" >}})
