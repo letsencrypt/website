@@ -9,7 +9,7 @@ menu:
     parent: about
 ---
 
-**如果您在使用 Let's Encrypt 過程中有任何疑問，請向 [論壇](https://community.letsencrypt.org) 提問，我們不提供電子郵件協助。以下的電子郵件僅用來討論特定主題**
+**如果您在使用 Let's Encrypt 過程中有任何疑問，請向[論壇](https://community.letsencrypt.org)提問，我們不提供電子郵件協助。以下的電子郵件僅用來討論特定主題**
 
 ## 新聞諮詢
 
