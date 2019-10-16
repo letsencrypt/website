@@ -8,24 +8,24 @@ lastmod: 2018-06-20
 
 {{< lastmod >}}
 
-This document contains helpful advice if you are a hosting provider or large website integrating Let's Encrypt, or you are writing client software for Let's Encrypt.
+Этот документ будет полезен хостинг-провайдерам, интеграторам и разработчикам клиентского ПО для Let's Encrypt.
 
-# Plan for Change
+# Планирование изменений
 
-Both Let's Encrypt and the Web PKI will continue to evolve over time.  You should make sure you have the ability to easily update all services that use Let's Encrypt. If you're also deploying clients that rely on Let's Encrypt certificates, make especially sure that those clients receive regular updates.
+И Let's Encrypt, и технология Web PKI продолжают развиваться. Вам нужно быть готовыми к необходимым обновлениям всех сервисов, которые использует Let's Encrypt. Особое внимание необходимо уделить регулярному обновлению исходного кода ACME-клиентов.
 
-In the future, these things are likely to change:
+Нами запланированы следующие изменения:
 
-  * the root and intermediate certificates from which we issue
-  * the hash algorithms we use when signing certificates
-  * the types of keys and key strength checks for which we are willing to sign end-entity certificates
-  * and the ACME protocol
+* корневой и промежуточный сертификаты, на основании которых мы выпускаем сертификаты
+* алгоритм хэширования для подписи сертификатов
+* типы ключей и проверок ключей, для подписи сертификатов
+* и сам протокол ACME
 
-We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) header from the ACME protocol, since intermediates are likely to change.
+Мы будем стараться предупреждать наших пользователей о грядущих изменениях заранее, насколько это возможно. Тем не менее, в случае обнаружения критической уязвимости, мы будем вынуждены внести изменения в течение короткого времени, или немедленно. Не стоит вносить в код промежуточные изменения протокола ACME, т.к. они часто обновляются. Рекомендуем использовать содержимое заголовка [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) из ответа от серверов Let's Encrypt.
 
-Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) header to determine which ToS URL to use.
+Аналогично, мы меняем URL ссылки на условия использования сервиса (terms of service, ToS) сразу после их обновления. Избегайте явного указания URL для ToS в исходном коде ACME-клиентов, вместо этого используйте содержимое заголовка [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2).
 
-You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
+Вам также потребуется поддерживать в актуальном состоянии TLS-конфигурацию, для противодействия вновь найденным уязвимостям в наборах шифров или версиях TLS-протокола.
 
 # Get Updates
 
