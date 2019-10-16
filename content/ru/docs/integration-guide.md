@@ -21,26 +21,19 @@ lastmod: 2018-06-20
 * типы ключей и проверок ключей, для подписи сертификатов
 * и сам протокол ACME
 
-Мы будем стараться предупреждать наших пользователей о грядущих изменениях заранее, насколько это возможно. Тем не менее, в случае обнаружения критической уязвимости, мы будем вынуждены внести изменения в течение короткого времени, или немедленно. Не стоит вносить в код промежуточные изменения протокола ACME, т.к. они часто обновляются. Рекомендуем использовать содержимое заголовка [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) из ответа от серверов Let's Encrypt.
+Мы будем стараться предупреждать наших пользователей о грядущих изменениях заранее, насколько это возможно. Тем не менее, в случае обнаружения критической уязвимости, мы будем вынуждены внести изменения в течение короткого времени, или даже немедленно. Не стоит вносить в код промежуточные изменения протокола ACME, т.к. они часто обновляются. Рекомендуем использовать содержимое заголовка [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) из ответа от серверов Let's Encrypt.
 
-Аналогично, мы меняем URL ссылки на условия использования сервиса (terms of service, ToS) сразу после их обновления. Избегайте явного указания URL для ToS в исходном коде ACME-клиентов, вместо этого используйте содержимое заголовка [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2).
+Аналогично, мы меняем URL ссылки на условия использования сервиса (terms of service, ToS) сразу после их обновления. Избегайте явного указания URL для ToS в исходном коде ACME-клиентов, вместо этого используйте содержимое заголовка [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) из ответа от серверов Let's Encrypt.
 
 Вам также потребуется поддерживать в актуальном состоянии TLS-конфигурацию, для противодействия вновь найденным уязвимостям в наборах шифров или версиях TLS-протокола.
 
-# Get Updates
+# Уведомления об изменениях
 
-To receive low-volume updates about important changes like the ones described
-above, subscribe to our
-[API Announcements](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836) group.
-This is useful for both client developers and hosting providers.
+Для получения кратких уведомлений о важных изменениях (таких, как описано выше), подпишитесь на группу рассылки [API Announcements](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836). Рекомендуется как разработчикам клиентского ПО, так и хостинг-провайдерам.
 
-For higher-volume updates about maintenances and outages, visit our [status
-page](https://letsencrypt.status.io/) and hit Subscribe in the upper right. This
-is most useful for hosting providers.
+Для получения развёрнутой информации по обслуживанию и остановках работы сервиса, посетите нашу [страницу текущего состояния](https://letsencrypt.status.io/), и нажмите кнопку Subscribe справа вверху. Рекомендуется для хостинг-провайдеров.
 
-Also, make sure you use a valid email address for your ACME account. We will use
-that email to send you expiration notices and communicate about any issues
-specific to your account.
+Убедитесь, что вы указали верный адрес электронной почты для своего ACME-аккаунта. Мы используем этот адрес для отправки уведомлений об истечении срока действия выпущенных для вас сертификатов, а также для взаимодействия с вами в случае проблем, специфичных для вашего аккаунта.
 
 # Who is the Subscriber
 
