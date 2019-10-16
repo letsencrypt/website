@@ -24,7 +24,7 @@ menu:
 
 Let's Encrypt 是一家全球性的憑證頒發機構 (Certificate Authority, CA)。我們讓全世界的人們和機構獲得、更新和管理 SSL/TLS 憑證。網站可以透過我們的憑證啟用安全的 HTTPS 連線。
 
-Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提供組織驗證型憑證 (Organization Validation, OV) 或擴展驗證型憑證 ( Extended Validation, EV)，主要原因是因為我們無法自動化地頒發那種類型的憑證。 
+Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提供組織驗證型憑證 (Organization Validation, OV) 或擴展驗證型憑證 (Extended Validation, EV)，主要原因是因為我們無法自動化地頒發那種類型的憑證。 
 
 如果你想開始使用 Let's Encrypt，請閱讀我們的[快速入門]({{< ref "/getting-started.md" >}})頁面。
 

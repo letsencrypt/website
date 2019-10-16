@@ -5,7 +5,7 @@ top_graphic: 3
 date: 2018-04-12
 ---
 
-為了在你的網站上設定 HTTPS，你需要從憑證頒發機構 (CA) 獲取憑證（一種文件），而 Let's Encrypt 就是一個憑證頒發機構 (CA)。要從 Let's Encrypt 獲得屬於你網站的憑證，你必須證明你對域名的控制權。你可以在你的主機上運行使用 [ACME 協議](https://ietf-wg-acme.github.io/acme/)的軟體，來獲取 Let's Encrypt 憑證；而為了找出最適合你的方式來獲取憑證，你需要知道你是否擁有伺服器的[遠端帳號權限](https://en.wikipedia.org/wiki/Shell_account)（shell access 或稱 SSH access）。如果你完全使用圖形化介面管理你的帳戶，例如 [cPanel](https://cpanel.com/)、 [Plesk](https://www.plesk.com/) 或 [WordPress](https://wordpress.org/)，你很有可能不具有遠端帳號的權限，建議你先向服務提供商做確認。
+為了在你的網站上設定 HTTPS，你需要從憑證頒發機構 (Certificate Authority, CA) 獲取憑證，而 Let's Encrypt 就是一個 CA。要從 Let's Encrypt 上獲得屬於你網站的憑證，你必須證明你對域名的控制權。你可以在你的主機上運行使用 [ACME 協議](https://ietf-wg-acme.github.io/acme/)的軟體，來獲取 Let's Encrypt 的憑證；而為了找出最適合你的方式來獲取憑證，你需要知道你是否擁有伺服器的[遠端帳號權限](https://en.wikipedia.org/wiki/Shell_account)（shell access 或稱 SSH access）。如果你完全使用圖形化介面管理你的帳戶，例如 [cPanel](https://cpanel.com/)、 [Plesk](https://www.plesk.com/) 或 [WordPress](https://wordpress.org/)，你很有可能不具有遠端帳號的權限，建議你先向服務提供商做確認。
 
 # 擁有遠端帳號權限
 
