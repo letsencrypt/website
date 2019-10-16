@@ -31,17 +31,17 @@ lastmod: 2018-06-20
 
 Для получения кратких уведомлений о важных изменениях (таких, как описано выше), подпишитесь на группу рассылки [API Announcements](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836). Рекомендуется как разработчикам клиентского ПО, так и хостинг-провайдерам.
 
-Для получения развёрнутой информации по обслуживанию и остановках работы сервиса, посетите нашу [страницу текущего состояния](https://letsencrypt.status.io/), и нажмите кнопку Subscribe справа вверху. Рекомендуется для хостинг-провайдеров.
+Для получения развёрнутой информации по обслуживанию и остановках работы сервиса, посетите нашу [страницу текущего состояния](https://letsencrypt.status.io/), и нажмите кнопку Subscribe справа вверху. Рекомендуется хостинг-провайдерам.
 
 Убедитесь, что вы указали верный адрес электронной почты для своего ACME-аккаунта. Мы используем этот адрес для отправки уведомлений об истечении срока действия выпущенных для вас сертификатов, а также для взаимодействия с вами в случае проблем, специфичных для вашего аккаунта.
 
-# Who is the Subscriber
+# Кто такой "Подписчик"
 
-Our [CPS and Subscriber Agreement]({{< ref "/repository.md" >}}) indicate that the Subscriber is whoever holds the private key for a certificate. For hosting providers, that's the provider, not the provider's customer. If you're writing software that people deploy themselves, that's whoever is deploying the software.
+В нашем [Соглашении]({{< ref "/repository.md" >}}), под термином "Подписчик" мы понимаем любого владельца закрытого ключа для сертификата. Если вы - хостинг-провадер, то подписчиком являетесь вы, а не ваши клиенты. Если вы разрабатываете клиентское ПО, которое пользователю необходимо развернуть и настроить самостоятельно, то подписчиком будет тот, кто разворачивает клиентское ПО.
 
-The contact email provided when creating accounts (aka registrations) should go to the Subscriber. We'll send email to that address to warn of expiring certs, and notify about changes to our [privacy policy]({{< ref "/privacy.md" >}}).  If you're a hosting provider, those notifications should go to you rather than a customer. Ideally, set up a mailing list or alias so that multiple people can respond to notifications, in case you are on vacation.
+Адрес электронной почты, указываемый при создании аккаунта Let's Encrypt (он же "регистрация") должен принадлежать Подписчику. Мы используем этот адрес для отправки предупреждений об истечении срока действия сертификатов, и уведомлений об изменении нашей [политики конфиденциальности]({{< ref "/privacy.md" >}}). Если вы - хостинг-провайдер, эти уведомления должны приходить к вам, а не к вашим клиентам. Идеально было бы настроить список рассылки, чтобы несколько сотрудников могли получать от нас уведомления в ваше отстутсвие.
 
-The upshot of this is that, if you are a hosting provider, you do not need to send us your customers' email addresses or get them to agree to our Subscriber Agreement. You can simply issue certificates for the domains you control and start using them.
+Другими словами, если вы - хостинг-провайдер, вам не нужно передавать нам адреса электронной почты ваших клиентов, или ознакомлять их с политикой конфиденциальности. Вам достаточно выпустить сертификаты для доменов под вашим управлением, тут же начать их использовать.
 
 # One Account or Many?
 
