@@ -11,7 +11,7 @@ lastmod: 2019-05-15
 # 概括
 
 * [入門]({{< ref "/getting-started.md" >}})
-* [Let's Encrypt工作方法]({{< ref "/how-it-works.md" >}})
+* [Let's Encrypt 的工作原理]({{< ref "/how-it-works.md" >}})
 * [常問問題 (FAQ)]({{< ref "/docs/faq.md" >}})
 * [Glossary]({{< ref "/docs/glossary.md" >}})
 
