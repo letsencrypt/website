@@ -49,15 +49,15 @@ lastmod: 2018-06-20
 
 Тем не менее, для большинства хостинг-провайдеров мы рекомендуем использовать один общий аккаунт для всех клиентов, с хорошо охраняемым закрытым ключом для него. Это облегчит определение, кому именно принадлежит тот или иной сертификат, упростит актуализацию контактной информации и управление ограничениями, при необходимости. Мы не сможем эффективно корректировать ограничения в случае использования индивидуальных аккаунтов для ваших клиентов.
 
-# Multi-domain (SAN) Certificates
+# Мультидоменные сертификаты (SAN)
 
-Our [issuance policy]({{< ref "/docs/rate-limits.md" >}}) allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
+Наша [политика выпуска сертификатов]({{< ref "/docs/rate-limits.md" >}}) ограничивает число доменных имён для одного сертификата - не более 100. Использовать ли вам отдельный сертификат для каждого доменного имени, или сгруппировать доменные имена для нескольких сертификатов - мы оставляем на ваше усмотрение.
 
-Using separate certificates per hostname means fewer moving parts are required to logically add and remove domains as they are provisioned and retired. Separate certificates also minimize certificate size, which can speed up HTTPS handshakes on low-bandwidth networks.
+Выпуск уникальных сертификатов на каждое доменное имя упрощает добавление или удаление доменов, по мере необходимости. Кроме того, отдельные сертификаты имеют минимальный размер, что ускоряет этап "рукопожатия" между браузером клиента и web-сервером в сетях с низкой пропускной способностью.
 
-On the other hand, using large certificates with many hostnames allows you to manage fewer certificates overall. If you need to support older clients like Windows XP that do not support TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), you'll need a unique IP address for every certificate, so putting more names on each certificate reduces the number of IP addresses you'll need.
+С другой стороны, использование мультидоменных сертификатов уменьшает их общее число, что удобнее при их администрировании. Если вам требуется поддержка Windows XP, для которой не реализована технология TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), вам потребуется уникальный IP-адрес для каждого сертификата. Таким образом, чем больше доменных имён будет включено в сертификат, тем меньше уникальных IP-адресов вам потребуется.
 
-For most deployments both choices offer the same security.
+Что касается безопасности, то сертификаты для одного доменного имени, и мультидоменные сертификаты - равнозначны.
 
 # Storing and Reusing Certificates and Keys
 
