@@ -1,5 +1,6 @@
 ---
 title: Cadena de Confianza
+linkTitle: Cadena de Confianza (Certificados Raíz e Intermedios)
 slug: certificates
 top_graphic: 5
 lastmod: 2018-09-20

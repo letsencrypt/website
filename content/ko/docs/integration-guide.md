@@ -1,5 +1,6 @@
 ---
 title: 통합 가이드
+linkTitle: 클라이언트 및 대규모 제공자 통합 안내서
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08

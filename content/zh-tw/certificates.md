@@ -1,5 +1,6 @@
 ---
 title: 憑證信任鏈
+linkTitle: 憑證信任鏈 (根和中間憑證)
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01

@@ -127,3 +127,24 @@ other = "链接"
 
 [certificate_transparency_public_key]
 other = "公钥"
+
+
+
+
+
+
+[overview]
+other = "概述"
+
+[subscriber_information]
+other = "用户信息"
+
+[advanced_subscriber_information]
+other = "高级用户信息"
+
+[client_developer_information]
+other = "客户端开发者信息"
+
+[acme_divergences]
+other = "与当前 ACME 草案的不同"
+

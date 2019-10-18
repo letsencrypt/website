@@ -1,5 +1,6 @@
 ---
 title: Kako funkcioniše?
+linkTitle: Kako Let's Encrypt funkcioniše?
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-09-09

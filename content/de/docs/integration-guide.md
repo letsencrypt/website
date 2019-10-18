@@ -1,5 +1,6 @@
 --- 
 title: Integrationshandbuch
+linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08

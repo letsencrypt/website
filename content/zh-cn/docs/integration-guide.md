@@ -1,5 +1,6 @@
 ---
 title: 集成指南
+linkTitle: 客户端和大型提供商集成指南
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08

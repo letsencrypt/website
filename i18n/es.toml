@@ -109,3 +109,23 @@ other = "Usuarios de Japón"
 
 [graph_percent_https]
 other = "Porcentaje de Cargas de Página sober HTTPS (Media móvil de 14 días)"
+
+
+
+
+
+[overview]
+other = "General"
+
+[subscriber_information]
+other = "Información para Subscriptor"
+
+[advanced_subscriber_information]
+other = "Información Avanzada para Subscriptor"
+
+[client_developer_information]
+other = "Información para Desarrolladores de Clientes"
+
+[acme_divergences]
+other = "Diferencias del  Borrador ACME Actual"
+

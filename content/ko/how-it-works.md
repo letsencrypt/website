@@ -1,5 +1,6 @@
 ---
 title: 작동 방식
+linkTitle: Let's Encrypt의 작동 방식
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-09-09
