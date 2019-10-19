@@ -1,0 +1,54 @@
+{
+	"lastmod": "2019-05-15",
+	"transparencyLogs": [
+		{
+			"name": "Oak 2019",
+			"role": "production",
+			"uri": "https://oak.ct.letsencrypt.org/2019/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw=="
+		},
+		{
+			"name": "Oak 2020",
+			"role": "production",
+			"uri": "https://oak.ct.letsencrypt.org/2020/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ=="
+		},
+		{
+			"name": "Oak 2021",
+			"role": "production",
+			"uri": "https://oak.ct.letsencrypt.org/2021/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w=="
+		},
+		{
+			"name": "Oak 2022",
+			"role": "production",
+			"uri": "https://oak.ct.letsencrypt.org/2022/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg=="
+		},
+		{
+			"name": "Testflume 2019",
+			"role": "test",
+			"uri": "https://testflume.ct.letsencrypt.org/2019/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew=="
+		},
+		{
+			"name": "Testflume 2020",
+			"role": "test",
+			"uri": "https://testflume.ct.letsencrypt.org/2020/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw=="
+		},
+		{
+			"name": "Testflume 2021",
+			"role": "test",
+			"uri": "https://testflume.ct.letsencrypt.org/2021/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw=="
+		},
+		{
+			"name": "Testflume 2022",
+			"role": "test",
+			"uri": "https://testflume.ct.letsencrypt.org/2022/",
+			"publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww=="
+		}
+	]
+}
+

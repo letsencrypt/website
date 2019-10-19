@@ -5,10 +5,11 @@
 
 ### First pull-request
 
-1. In `config.toml`, copy the English section (`[languages.en]`,`[languages.en.*]`), and replace `en` with your language code and translate the strings.
-2. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
-3. In `layouts\_default\single.html` copy the `{{ if eq .Language.Lang "fr" }}...{{ end }}` and replace `"fr"` by `"XX"` (where XX is your language code) and "Voir en Français" by the translation of "See in [your language]"
-4. Copy `content\base-l10n\` into `content\XX\` (where XX is your language code)
+1. In `config\_default\languages.toml`, add your language.
+2. In `config\_default\`, copy `config\_default\menu.en.toml` into `config\_default\menu.XX.toml` (where XX is your language code), translate `name =` and prefix urls with `/XX/`.
+3. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
+4. In `layouts\_default\single.html` copy the `{{ if eq .Language.Lang "fr" }}...{{ end }}` and replace `"fr"` by `"XX"` (where XX is your language code) and "Voir en Français" by the translation of "See in [your language]"
+5. Copy `content\base-l10n\` into `content\XX\` (where XX is your language code)
 
 ### After the first pull-request
 

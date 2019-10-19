@@ -109,3 +109,42 @@ other = "日本用户"
 
 [graph_percent_https]
 other = "通过 HTTPS 加载的页面百分比（14日移动平均）"
+
+[certificate_transparency_name]
+other = "名称"
+
+[certificate_transparency_role]
+other = "作用"
+
+[certificate_transparency_role_production]
+other = "生产环境日志"
+
+[certificate_transparency_role_test]
+other = "测试环境日志"
+
+[certificate_transparency_uri]
+other = "链接"
+
+[certificate_transparency_public_key]
+other = "公钥"
+
+
+
+
+
+
+[overview]
+other = "概述"
+
+[subscriber_information]
+other = "用户信息"
+
+[advanced_subscriber_information]
+other = "高级用户信息"
+
+[client_developer_information]
+other = "客户端开发者信息"
+
+[acme_divergences]
+other = "与当前 ACME 草案的不同"
+

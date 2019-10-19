@@ -24,7 +24,7 @@ menu:
 
 ### Разработка Центра Сертификации
 
-[Boulder](https://github.com/letsencrypt/boulder) - это реализация Центра Сертификации для Let's Encrypt . Он основан на протоколе [ACME](https://github.com/ietf-wg-acme/acme), и написан в основном на Go. Отличный способ начать - ознакомиться со списком [проблем типа 'help wanted'](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted), и [инструкцией для контрибуторов](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) - это реализация Центра Сертификации для Let's Encrypt . Он основан на протоколе [ACME](https://github.com/ietf-wg-acme/acme), и написан в основном на Go. Отличный способ начать - ознакомиться со списком [проблем типа 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted), и [инструкцией для контрибуторов](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### Сайт letsencrypt.org
 

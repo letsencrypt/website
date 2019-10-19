@@ -320,17 +320,17 @@ function doPlot() {
 
   var oReq = new XMLHttpRequest();
   oReq.addEventListener("load", tsvListener);
-  oReq.open("GET", "/js/cert-timeline.tsv");
+  oReq.open("GET", "https://d4twhgtvn0ff5.cloudfront.net/cert-timeline.tsv");
   oReq.send();
 
-  var currentHttpsReqPromise = fetch("/js/current-https-adoption.csv")
+  var currentHttpsReqPromise = fetch("https://d4twhgtvn0ff5.cloudfront.net/current-https-adoption.csv")
   .then((response) => {
     return response.text();
   }).then((text) => {
     httpsCsvListener(text);
   });
 
-  var historicalHttpsReqPromise = fetch("/js/historical-https-adoption.csv")
+  var historicalHttpsReqPromise = fetch("https://d4twhgtvn0ff5.cloudfront.net/historical-https-adoption.csv")
   .then((response) => {
     return response.text();
   }).then((text) => {

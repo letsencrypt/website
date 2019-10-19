@@ -68,7 +68,7 @@ other = "View in English"
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
+# (nb: used manually in layout/partials/langs.html)
 other = "View in English"
 
 [old_version]
@@ -109,3 +109,39 @@ other = "Japan users"
 
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
+
+[certificate_transparency_name]
+other = "Name"
+
+[certificate_transparency_role]
+other = "Role"
+
+[certificate_transparency_role_production]
+other = "Production"
+
+[certificate_transparency_role_test]
+other = "Test"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Public Key"
+
+[overview]
+other = "Overview"
+
+[subscriber_information]
+other = "Subscriber Information"
+
+[advanced_subscriber_information]
+other = "Advanced Subscriber Information"
+
+[client_developer_information]
+other = "Client Developer Information"
+
+[acme_divergences]
+other = "Differences from Current ACME Draft"
+
+[onboarding_customers]
+other = "Onboarding Your Customers with Let's Encrypt and ACME"

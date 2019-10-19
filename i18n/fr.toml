@@ -102,10 +102,46 @@ other = "Émis par jour"
 other = "Tous les utilisateurs"
 
 [graph_usa_users]
-other = "Utilisateurs américain"
+other = "Utilisateurs des États-Unis"
 
 [graph_japan_users]
 other = "Utilisateurs du Japon"
 
 [graph_percent_https]
 other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jours)"
+
+[certificate_transparency_name]
+other = "Nom"
+
+[certificate_transparency_role]
+other = "Rôle"
+
+[certificate_transparency_role_production]
+other = "Production"
+
+[certificate_transparency_role_test]
+other = "Test"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Clé publique"
+
+[overview]
+other = "Vue d'ensemble"
+
+[subscriber_information]
+other = "Informations pour les utilisateurs"
+
+[advanced_subscriber_information]
+other = "Informations pour les utilisateurs avancés"
+
+[client_developer_information]
+other = "Informations pour les développeurs de client"
+
+[acme_divergences]
+other = "Différences par rapport à l'ébauche actuelle d'ACME"
+
+[onboarding_customers]
+other = "Intégrer vos clients avec Let's Encrypt et ACME"
