@@ -1,6 +1,5 @@
 ---
 title: Lanac poverenja
-linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
 lastmod: 2019-05-01

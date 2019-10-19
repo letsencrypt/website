@@ -3,7 +3,7 @@ title: Kette des Vertrauens
 linkTitle: Kette des Vertrauens (Root und Intermediate Zertificate)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 # Root Zertifikate
