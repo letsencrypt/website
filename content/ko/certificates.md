@@ -3,7 +3,7 @@ title: 신뢰의 사슬
 linkTitle: 신뢰의 체인 (root 및 중간 인증서)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 # Root 인증서

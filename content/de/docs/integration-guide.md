@@ -4,7 +4,7 @@ linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2018-06-20
+lastmod: 2019-10-18
 ---
 
 {{< lastmod >}}

@@ -3,7 +3,7 @@ title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 
