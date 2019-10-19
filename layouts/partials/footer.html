@@ -19,7 +19,7 @@
           <li>
             <i class="fab fa-github" aria-hidden="true"></i>
             <a href="https://github.com/{{ . }}">
-              <span class="username">{{ . }}</span>
+              <span class="username">GitHub</span>
             </a>
           </li>
           {{ end }}
@@ -28,12 +28,13 @@
           <li>
             <i class="fab fa-twitter" aria-hidden="true"></i>
             <a href="https://twitter.com/{{ . }}">
-              <span class="username">{{ . }}</span>
+              <span class="username">Twitter</span>
             </a>
           </li>
          {{ end }}
         </ul>
-        {{ i18n "footer_policies" | safeHTML }}    </div>
+        {{ i18n "footer_policies" | safeHTML }}
+      </div>
 
       <div class="footer-col  footer-col-2">
         <p class="text">{{ .Site.Params.description | safeHTML }}</p>
