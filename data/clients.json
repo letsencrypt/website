@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-07",
+	"lastmod": "2019-10-19",
 	"categories": [
 		"Bash",
 		"C",
@@ -374,12 +374,6 @@
 		{
 			"name": "FreeSSL.tech Auto",
 			"url": "https://freessl.tech",
-			"acme_v2": "true",
-			"category": "PHP"
-		},
-		{
-			"name": "php-acme-client",
-			"url": "https://github.com/kouk1/php-acme-client",
 			"acme_v2": "true",
 			"category": "PHP"
 		},
