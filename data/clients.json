@@ -164,8 +164,9 @@
 			}
 		},
 		{
-			"name": "acme-client",
-			"url": "https://kristaps.bsd.lv/acme-client/",
+			"name": "OpenBSD acme-client",
+			"url": "https://man.openbsd.org/acme-client.1",
+			"acme_v2": "OpenBSD >= 6.6",
 			"category": "C"
 		},
 		{
