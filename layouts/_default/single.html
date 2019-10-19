@@ -63,7 +63,8 @@
 	{{ else }}
 
 		{{ if and (.Page.Params.english_is_canonical) (ne "en" .Language.Lang)  }}
-		<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;">
+		<div class="canonical-warning" style="">
+			<i class="fas fa-exclamation-circle" aria-hidden="true"></i>
 			{{ i18n "english_is_canonical" | safeHTML }}
 		</div>
 		{{ end }}

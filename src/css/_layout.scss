@@ -277,6 +277,11 @@
     margin-left: 0;
 }
 
+.social-media-list i {
+    color: $grey-color;
+    vertical-align: middle;
+}
+
 .footer-col-wrapper {
     font-size: 15px;
     color: $text-color;
@@ -323,6 +328,18 @@
  */
 .page-content {
     padding-top: $spacing-unit;
+
+    .canonical-warning {
+        padding: 5px;
+        margin: 0.50em 0;
+        background-color: #FFDDDD;
+        border: thin solid #DDBBBB;
+        overflow: hidden;
+
+        i {
+            margin-left: 3px;
+        }
+    }
 }
 
 .page-heading {
@@ -357,11 +374,16 @@
     }
 }
 
-
-
 .home .post-link {
     font-size: 22px;
 }
+
+.rss-subscribe i {
+    color: #ee802f;
+    font-size: 18px;
+	vertical-align: -10%;
+}
+
 
 
 /**
