@@ -23,7 +23,7 @@ menu:
 
 ### 伺服器端CA軟體
 
-Let's Encrypt CA使用[Boulder](https://github.com/letsencrypt/boulder)簽發憑證。 該軟體基於[ACME](https://github.com/ietf-wg-acme/acme)協議並主要使用Go編寫。 [“需要幫助”問題](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted)列表和[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很好的起點。
+Let's Encrypt CA使用[Boulder](https://github.com/letsencrypt/boulder)簽發憑證。 該軟體基於[ACME](https://github.com/ietf-wg-acme/acme)協議並主要使用Go編寫。 [“需要幫助”問題](https://github.com/letsencrypt/boulder/labels/help%20wanted)列表和[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很好的起點。
 
 ### letsencrypt.org
 

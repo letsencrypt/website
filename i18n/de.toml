@@ -109,3 +109,21 @@ other = "Benutzer in Japan"
 
 [graph_percent_https]
 other = "Prozent der Seitenaufrufe über HTTPS (14 Tage Durchschnitt)"
+
+
+
+[overview]
+other = "Übersicht"
+
+[subscriber_information]
+other = "Teilnehmerinformationen"
+
+[advanced_subscriber_information]
+other = "Erweiterte Teilnehmerinformationen"
+
+[client_developer_information]
+other = "Informationen für Client Entwickler"
+
+[acme_divergences]
+other = "Unterschiede von derzeitigen ACME Entwürfen"
+

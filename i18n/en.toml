@@ -127,3 +127,21 @@ other = "URI"
 
 [certificate_transparency_public_key]
 other = "Public Key"
+
+[overview]
+other = "Overview"
+
+[subscriber_information]
+other = "Subscriber Information"
+
+[advanced_subscriber_information]
+other = "Advanced Subscriber Information"
+
+[client_developer_information]
+other = "Client Developer Information"
+
+[acme_divergences]
+other = "Differences from Current ACME Draft"
+
+[onboarding_customers]
+other = "Onboarding Your Customers with Let's Encrypt and ACME"

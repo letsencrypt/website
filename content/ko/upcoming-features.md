@@ -1,6 +1,6 @@
 ---
 title: 향후 기능
-slug: 향후 기능
+slug: upcoming-features
 top_graphic: 1
 lastmod: 2019-07-03
 ---

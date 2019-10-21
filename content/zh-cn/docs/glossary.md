@@ -35,9 +35,9 @@ date: 2018-12-30
 
 {{% def id="chain" name="证书链" english="Certificate chain" %}} 帮助[用户代理](#def-user-agent)决定它是否可以信任[叶证书](#def-leaf)（终端实体证书）的，将该证书链接到[证书存储](#def-store)中的[根证书](#def-root)的[中间证书](#def-intermediate)列表。注意：证书链并不总是唯一的，即使网站提供了链接到一个根证书的证书链，用户代理仍可能会选择使用另一个证书链来验证证书。[维基百科条目](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="证书政策" english="Certificate Policy" abbr="CP" %}} 一组指明证书对于一个特定的有着共同安全要求的社区和/或应用类型的适用性的规则。具体颁发过程的细节由 [CPS](#def-CPS) 描述。[ISRG 证书政策](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="证书政策" english="Certificate Policy" abbr="CP" %}} 一组指明证书对于一个特定的有着共同安全要求的社区和/或应用类型的适用性的规则。具体颁发过程的细节由 [CPS](#def-CPS) 描述。[ISRG 证书政策]({{< ref "/repository.md#isrg-certificate-policy" >}}) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。[ISRG 证书实践声明](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。[ISRG 证书实践声明]({{< ref "/repository.md#isrg-certification-practice-statement" >}}) - [RFC 3647 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="关键扩展" english="Critical extension" %}} 证书中可以包含被标记为“关键”的[扩展](#def-extension)。这意味着软件如果不知道如何处理该扩展，就必须拒绝该证书。这使得引入对于安全性十分重要的新扩展时不在较老的软件上造成风险成为可能。 {{% /def %}}
 
@@ -69,7 +69,7 @@ date: 2018-12-30
 
 {{% def id="EdDSA" name="爱德华兹曲线数字签名算法" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} 基于椭圆曲线的现代公钥签名系统。它是为了解决一些常见的椭圆曲线加密的[实现问题](https://ed25519.cr.yp.to/)而被设计出来的。[Let's Encrypt](#def-LE) 等证书颁发机构暂时还不能提供 EdDSA 证书。[维基百科条目](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
-{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。[Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6y) {{% /def %}}
+{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。[Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6) {{% /def %}}
 
 {{% def id="EV" name="扩展验证" english="Extended Validation" abbr="EV" %}} [CA](#def-CA) 验证对网站有控制权的法律实体的证书验证方式。此类证书包含有该实体的相关信息。[CA](#def-CA) 对此类证书的控制比 [OV](#def-OV) 证书要更严格。[Let's Encrypt](#def-LE) 不提供 EV 证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%89%A9%E5%B1%95%E9%AA%8C%E8%AF%81%E8%AF%81%E4%B9%A6) {{% /def %}}
 
