@@ -28,4 +28,4 @@ Les principes clés de Let's Encrypt sont les suivants :
 
 * <strong>Coopératif :</strong> Tout comme les protocoles Internet sous-jacents eux-mêmes, Let's Encrypt est un effort conjoint au profit de la communauté, au-delà du contrôle d'un organisme en particulier.
 
-Nous avons une page avec des informations plus détaillées sur [comment fonctionne l'AC Let's Encrypt]({{< ref "/how-it-works.md" >}}).
+Nous avons une page avec des informations plus détaillées sur [comment fonctionne l'AC Let's Encrypt]({{< relref "/how-it-works.md" >}}).

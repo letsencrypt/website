@@ -13,7 +13,7 @@ date: 2018-04-12
     <div id="combinedTimeline" title="發行時間表" class="statsgraph">
   </div>
 
-  <p><a href="{{< ref "/stats.md" >}}">{{< ref "/stats.md" >}}</a></p>
+  <p><a href="{{< relref "/stats.md" >}}">{{< relref "/stats.md" >}}</a></p>
 </div>
 
 <script src="/js/stats.js"></script>

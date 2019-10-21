@@ -21,7 +21,7 @@ menu:
 
 ## 邮件列表
 
-有关各种技术邮件列表的信息，请访问我们的[帮助 Let's Encrypt]({{< ref "/getinvolved.md" >}}) 页面。
+有关各种技术邮件列表的信息，请访问我们的[帮助 Let's Encrypt]({{< relref "/getinvolved.md" >}}) 页面。
 
 ## 安全问题
 

@@ -14,9 +14,9 @@ date: 2018-04-12
 
 我們建議大多數具有命令行訪問權限的人使用[Certbot] ACME用戶端。它可以自動執行憑證頒發和安裝，無需停止您的伺服器。對於不需要自動配置的用戶, Certbot還提供專家模式。 它易於使用，適用於許多操作系統，並且具有出色的（註：英文）文件。 [訪問Certbot官網][Certbot] 以獲取針對於操作系統和網站伺服器的自訂文件。
 
-如果[Certbot]不能滿足您的需求，或者您想嘗試別的用戶端，還有[更多ACME用戶端]({{< ref "/docs/client-options.md" >}})可供選擇。 選定ACME用戶端軟體後，請參閱該用戶端的文件以繼續。
+如果[Certbot]不能滿足您的需求，或者您想嘗試別的用戶端，還有[更多ACME用戶端]({{< relref "/docs/client-options.md" >}})可供選擇。 選定ACME用戶端軟體後，請參閱該用戶端的文件以繼續。
 
-如果您正在嘗試不同的ACME用戶端，請使用我們的[臨時環境]({{< ref "/docs/staging-environment.md" >}})以避免遭到[速率限制]({{< ref "/docs/rate-limits.md" >}})。
+如果您正在嘗試不同的ACME用戶端，請使用我們的[臨時環境]({{< relref "/docs/staging-environment.md" >}})以避免遭到[速率限制]({{< relref "/docs/rate-limits.md" >}})。
 
 
 [Certbot]: https://certbot.eff.org/  "Certbot"

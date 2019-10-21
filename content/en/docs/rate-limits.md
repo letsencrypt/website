@@ -16,9 +16,9 @@ organizations can gradually increase the number of certificates they can issue
 without requiring intervention from Let's Encrypt.
 
 If you're actively developing or testing a Let's Encrypt client, please utilize
-our [staging environment]({{< ref "/docs/staging-environment.md" >}}) instead of the production API.
+our [staging environment]({{< relref "/docs/staging-environment.md" >}}) instead of the production API.
 If you're working on integrating Let's Encrypt as a provider or with a large
-website please [review our Integration Guide]({{< ref "/docs/integration-guide.md" >}}).
+website please [review our Integration Guide]({{< relref "/docs/integration-guide.md" >}}).
 
 The main limit is <a name="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
 registered domain is, generally speaking, the part of the domain you purchased
@@ -58,7 +58,7 @@ issue those certificates have already been consumed.
 
 There is a <a name="failed-validations"></a>**Failed Validation** limit of 5 failures
 per account, per hostname, per hour. This limit is higher on our
-[staging environment]({{< ref "/docs/staging-environment.md" >}}), so you
+[staging environment]({{< relref "/docs/staging-environment.md" >}}), so you
 can use that environment to debug connectivity problems.
 
 The "new-reg", "new-authz" and "new-cert" endpoints have an <a
@@ -71,12 +71,12 @@ We have two other limits that you're very unlikely to run into.
 You can create a maximum of 10 <a name="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
 create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
 3 hours. Hitting either account rate limit is very rare, and we recommend that
-large integrators prefer a design [using one account for many customers]({{< ref "/docs/integration-guide.md" >}}).
+large integrators prefer a design [using one account for many customers]({{< relref "/docs/integration-guide.md" >}}).
 
 You can have a maximum of 300 <a name="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
 this rate limit is rare, and happens most often when developing ACME clients. It
 usually means that your client is creating authorizations and not fulfilling them.
-Please utilize our [staging environment]({{< ref "/docs/staging-environment.md" >}}) if you’re
+Please utilize our [staging environment]({{< relref "/docs/staging-environment.md" >}}) if you’re
 developing an ACME client.
 
 For users of the ACME v2 API you can create a maximum of 300 <a
@@ -103,7 +103,7 @@ Note that most hosting providers don't need rate limit increases, because
 there's no limit on the number of distinct registered domains for which you can issue.
 So long as most of your customers don't have more than 2,000 subdomains on a
 registered domain, you most likely do not need an increase. See our [Integration
-Guide]({{< ref "/docs/integration-guide.md" >}}) for more advice.
+Guide]({{< relref "/docs/integration-guide.md" >}}) for more advice.
 
 # <a name="clearing-pending"></a>Clearing Pending Authorizations
 

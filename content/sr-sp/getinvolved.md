@@ -19,7 +19,7 @@ Takođe,često volimo da koristimo i pomoć oko razvoja softvera.Ceo naš izvorn
 
 ### Klijentski softver
 
-[Certbot](https://github.com/certbot/certbot) je uslužni program koji se temelji na Pythonu i koji zajedno sa vašim web serverom automatski potražuje sertifikat i pretvara web lokaciju u HTTPS osiguranu. Certbot je klijentski softver koji preporučujemo većini ljudi. Mnoge druge [klijentske opcije trećih strana]({{< ref "/docs/client-options.md">}}) su takođe dostupne.
+[Certbot](https://github.com/certbot/certbot) je uslužni program koji se temelji na Pythonu i koji zajedno sa vašim web serverom automatski potražuje sertifikat i pretvara web lokaciju u HTTPS osiguranu. Certbot je klijentski softver koji preporučujemo većini ljudi. Mnoge druge [klijentske opcije trećih strana]({{< relref "/docs/client-options.md">}}) su takođe dostupne.
 
 ### Server-side CA softver
 

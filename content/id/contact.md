@@ -23,7 +23,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Milis
 
-Untuk informasi tentang berbagai masalah teknis tentang milis, mohon kunjungi laman [Ikut Terlibat]({{< ref "/getinvolved.md" >}}) kami.
+Untuk informasi tentang berbagai masalah teknis tentang milis, mohon kunjungi laman [Ikut Terlibat]({{< relref "/getinvolved.md" >}}) kami.
 
 Untuk daftar ke buletin kami, [klik di sini] (https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad).
 
