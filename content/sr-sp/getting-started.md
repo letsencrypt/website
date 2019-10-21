@@ -28,12 +28,12 @@ radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Poseti
 Certbot stranicu] [Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
-[mnogo više ACME klijenata]({{<ref "/docs/client-options.md">}}). Jednom kada odaberete ACME klijenta,
+[mnogo više ACME klijenata]({{< relref "/docs/client-options.md">}}). Jednom kada odaberete ACME klijenta,
 pogledajte dokumentaciju za konkretno tog klijenta kako bi ste nastavili sa daljim koracima.
 
 Ako eksperimentišete sa različitim ACME klijentima, koristite naše
-[staging okruženje]({{<ref "/docs/staging-environment.md">}}) da biste izbegli dostizanje
-[servisnih prekoračenja i limita]({{<ref "/docs/rate-limits.md">}}).
+[staging okruženje]({{< relref "/docs/staging-environment.md">}}) da biste izbegli dostizanje
+[servisnih prekoračenja i limita]({{< relref "/docs/rate-limits.md">}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

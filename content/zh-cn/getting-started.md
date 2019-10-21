@@ -13,9 +13,9 @@ date: 2018-04-12
 
 我们建议大多数具有命令行访问权限的人使用 [Certbot] ACME 客户端。它可以在不下线您的服务器的前提下自动执行证书颁发和安装。对于不需要自动配置的用户，Certbot 还提供专家模式。它易于使用，适用于许多操作系统，并且具有出色的（注：英文）文档。[访问 Certbot 官网][Certbot] 以获取针对于操作系统和 Web 服务器的订制文档。
 
-如果 [Certbot] 不能满足您的需求，或者您想尝试别的客户端，还有[更多 ACME 客户端]({{< ref "/docs/client-options.md" >}})可供选择。选定 ACME 客户端软件后，请参阅该客户端的文档。
+如果 [Certbot] 不能满足您的需求，或者您想尝试别的客户端，还有[更多 ACME 客户端]({{< relref "/docs/client-options.md" >}})可供选择。选定 ACME 客户端软件后，请参阅该客户端的文档。
 
-如果您正在尝试不同的 ACME 客户端，请使用我们的[临时环境]({{< ref "/docs/staging-environment.md" >}})以避免遭到[速率限制]({{< ref "/docs/rate-limits.md" >}})。
+如果您正在尝试不同的 ACME 客户端，请使用我们的[临时环境]({{< relref "/docs/staging-environment.md" >}})以避免遭到[速率限制]({{< relref "/docs/rate-limits.md" >}})。
 
 
 [Certbot]: https://certbot.eff.org/  "Certbot"

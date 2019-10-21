@@ -19,7 +19,7 @@ We can also use help with software development. All of our code is on [GitHub](h
 
 ### Client Software
 
-[Certbot](https://github.com/certbot/certbot) is a Python-based utility that works alongside your webserver to automatically obtain a certificate and convert a website to HTTPS. Certbot is the client we recommend that most people start with. Many other [third party client options]({{< ref "/docs/client-options.md" >}}) are available.
+[Certbot](https://github.com/certbot/certbot) is a Python-based utility that works alongside your webserver to automatically obtain a certificate and convert a website to HTTPS. Certbot is the client we recommend that most people start with. Many other [third party client options]({{< relref "/docs/client-options.md" >}}) are available.
 
 ### Server-side CA Software
 

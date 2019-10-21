@@ -31,7 +31,7 @@ Python 模块 [acme](https://github.com/certbot/certbot/tree/master/acme) 是 Ce
 
 在提交拉取请求之前，请确保：
 
-1. 您的客户端尊重 [Let's Encrypt 商标政策]({{< ref "/trademarks.md" >}})。
+1. 您的客户端尊重 [Let's Encrypt 商标政策]({{< relref "/trademarks.md" >}})。
 1. 您的客户端不是基于浏览器使用的，并且支持自动续期。
 1. 您的提交把您的软件加至相关列表的**末尾**（如果该软件支持 ACMEv2 协议，请不要忘记添加“acme_v2”）。
 1. 您的提交更新了 `clients.json` 顶部的 `lastmod` 日期戳。
