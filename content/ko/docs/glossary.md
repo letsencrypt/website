@@ -53,9 +53,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} [사용자 에이전트](#def-user-agent)가 [인증서 저장소](#def-store)의 [root 인증서](#def-root)에 연결하여 엔드 엔티티 또는 [리프 인증서](#def-leaf)를 신뢰할 수 있다고 판단하는 데 도움이 되는 [중간 인증서](#def-intermediate) 목록입니다. 참고: 체인이 항상 고유한 것은 아니며, 웹 사이트에서 하나의 root로 이어지는 인증서 체인을 표시할 때 사용자 에이전트는 다른 체인을 사용하여 인증서를 검증하도록 결정할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. [ISRG 인증서 정책](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. [ISRG 인증서 정책]({{< ref "/repository.md#isrg-certificate-policy" >}}) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. [ISRG 인증 실무 명세서](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. [ISRG 인증 실무 명세서]({{< ref "/repository.md#isrg-certification-practice-statement" >}}) - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} 인증서에 "중요"라고 표시된 [확장](#def-extension)이 포함될 수 있습니다. 즉, 소프트웨어가 확장을 처리하는 방법을 이해하지 않는 한 해당 인증서를 거부해야 합니다. 따라서 오래된 소프트웨어에 대한 위험을 야기하지 않고 보안에 중요한 새로운 확장을 도입할 수 있습니다. {{% /def %}}
 
