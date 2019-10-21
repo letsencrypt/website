@@ -23,7 +23,7 @@ Note que o OCSP [tem alguns problemas
 fundamentais](https://www.imperialviolet.org/2011/03/18/revocation.html), então
 nem todos os navegadores farão essa checagem. Mesmo assim, revogar certificados que correspondem
 a chaves privadas comprometidas é uma prática importante, e isso é requerido no 
-[Subscriber Agreement](/repository/) da Let's Encrypt.
+[Subscriber Agreement]({{< ref "/repository.md" >}}) da Let's Encrypt.
 
 Para revogar um certificado com a Let's Encrypt, você precisará usar a [API
 ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) (Inglês), 

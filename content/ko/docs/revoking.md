@@ -10,7 +10,7 @@ lastmod: 2017-06-08
 
 인증서에 대응하는 개인 키가 더 이상 안전하지 않으면 인증서를 해지해야 합니다. 이것은 몇 가지 다른 이유로 발생할 수 있습니다. 예를 들어, 실수로 공용 웹 사이트에서 개인 키를 공유하거나 해커가 서버에서 개인 키를 복사할 수 있습니다. 또는 해커가 서버 또는 DNS 구성을 일시적으로 제어하고, 이를 사용하여 개인 키를 보유하고 있는 인증서의 유효성을 검사하고 발급할 수 있습니다.
 
-Let's Encrypt 인증서를 취소하면 Let's Encrypt는 [OCSP (온라인 인증서 상태 프로토콜)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)를 통해 해당 해지 정보를 게시하고, 일부 브라우저는 OCSP에서 인증서를 신뢰해야 하는지 여부를 확인합니다. OCSP에는 [근본적인 문제가 있으므로](https://www.imperialviolet.org/2011/03/18/revocation.html) 모든 브라우저가 이 검사를 수행하지는 않습니다. 그러나 손상된 개인 키에 대응하는 인증서를 해지하는 것은 중요한 실천이며 Let's Encrypt의 [구독자 계약](https://letsencrypt.org/repository/)에 따라 필요합니다.
+Let's Encrypt 인증서를 취소하면 Let's Encrypt는 [OCSP (온라인 인증서 상태 프로토콜)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)를 통해 해당 해지 정보를 게시하고, 일부 브라우저는 OCSP에서 인증서를 신뢰해야 하는지 여부를 확인합니다. OCSP에는 [근본적인 문제가 있으므로](https://www.imperialviolet.org/2011/03/18/revocation.html) 모든 브라우저가 이 검사를 수행하지는 않습니다. 그러나 손상된 개인 키에 대응하는 인증서를 해지하는 것은 중요한 실천이며 Let's Encrypt의 [구독자 계약]({{< ref "/repository.md" >}})에 따라 필요합니다.
 
 Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbot.eff.org/)과 같은 ACME 클라이언트를 통해 [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 사용하게 됩니다. 귀하에게 인증서를 철회할 수있는 권한이 있음을 Let's Encrypt에 증명해야 합니다. 이 작업에는 세 가지 방법이 있습니다.
 
