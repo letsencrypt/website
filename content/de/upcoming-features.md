@@ -7,7 +7,7 @@ lastmod: 2019-07-03
 
 ## Multi-Perspective Validation
 
-Derzeitige Let's Encrypt Validierung von einer Netzwerkperspektive. Wir planen die Validierung von mehreren Netzwerkperspektiven zu starten.
+Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerke zu erweitern.
 
 ## ECDSA Root and Intermediates
 
