@@ -7,7 +7,7 @@ lastmod: 2019-07-03
 
 ## Multi-Perspective Validation
 
-Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerken zu erweitern.
+Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerke zu erweitern.
 
 ## ECDSA Root and Intermediates
 
