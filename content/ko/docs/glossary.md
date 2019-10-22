@@ -37,7 +37,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} CA에 대한 일련의 기술 및 정책 요구 사항입니다. 모든 주요 [root 프로그램](#def-root-program)에는 기본 요구 사항이 포함되므로 CA는 대부분의 브라우저에서 신뢰할 수 있는 다음 요구 사항을 따라야 합니다. {{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) [명예 CAA 레코드]({< ref.>}})에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) [명예 CAA 레코드]({{< relref "/docs/caa.md" >}})에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} 하나의 도메인 이름을 다른 도메인에 매핑하는 DNS 항목으로, 정형 이름이라고 합니다. [위키피디아](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
