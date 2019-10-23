@@ -46,6 +46,6 @@ Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合
 
 # <a name="clearing-pending"></a>清除待验证的授权
 
-如果您有大量待处理的授权对象并且受到了速率限制，您可以通过向其中一个验证请求提交 JWS 签名的 POST 请求来触发对这些授权对象的验证尝试（如 [ACME 规范](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges)中所述）。待处理的授权对象由 https://acme-v01.api.letsencrypt.org/acme/authz/XYZ 格式的 URL 表示，并应显示在客户端日志中。请注意，验证成功还是失败并不重要，因为无论结果如何授权对象均会转出“待验证”状态。如果您没有包含相关授权 URL 的日志，则需要等待速率限制结束。如上所述，速率限制基于滑动窗口，因此根据您颁发方式的不同，需要的时间可能不到一周。
+如果您有大量待处理的授权对象并且受到了速率限制，您可以通过向其中一个验证请求提交 JWS 签名的 POST 请求来触发对这些授权对象的验证尝试（如 [ACME 规范](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges)中所述）。待处理的授权对象由 `https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` 格式的 URL 表示，并应显示在客户端日志中。请注意，验证成功还是失败并不重要，因为无论结果如何授权对象均会转出“待验证”状态。如果您没有包含相关授权 URL 的日志，则需要等待速率限制结束。如上所述，速率限制基于滑动窗口，因此根据您颁发方式的不同，需要的时间可能不到一周。
 
 请注意，拥有大量待验证授权通常是客户端代码有误的结果。如果您经常遇到此速率限制，则应仔细检查您的客户端代码。

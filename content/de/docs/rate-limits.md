@@ -141,7 +141,7 @@ JWS-Signierten POST absenden, wie in
 [ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges)
 beschrieben.
 Die ausstehenden Autorisierungsobjekte werden durch URLs in der Form
-https://acme-v01.api.letsencrypt.org/acme/authz/XYZ dargestell und sollten in
+`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` dargestell und sollten in
 Ihrem Client Log auftauchen. Beachten Sie, dass es keinen Unterschied macht,
 ob die Validierung erfolgreich war oder nicht. Die Autorisierung wird immer
 den Status ausserhalb von *pending* haben. Wenn Sie keine Logs mit relevanten

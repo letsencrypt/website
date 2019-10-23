@@ -113,7 +113,7 @@ authorization objects by submitting a JWS-signed POST to one of its challenges, 
 described in the
 [ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
 The pending authorization objects are represented by URLs of the form
-https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, and should show up in your
+`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ`, and should show up in your
 client logs. Note that it doesn't matter whether validation succeeds or fails.
 Either will take the authorization out of 'pending' state. If you do not
 have logs containing the relevant authorization URLs, you need to wait for the
