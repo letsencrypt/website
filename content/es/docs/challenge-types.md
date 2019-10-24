@@ -31,3 +31,41 @@ Este desafío consiste en que pruebe que usted controla el DNS para su nombre de
 Dado que la automatización de la emisión y las renovaciones es realmente importante, solo tiene sentido usar los desafíos de DNS-01 si su proveedor de DNS tiene una API que puede usar para automatizar las actualizaciones. Nuestra comunidad ha comenzado una lista de dichos proveedores de DNS <a href="https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438">aqui</a> . Su proveedor de DNS puede ser el mismo que su registrador (la compañía a la que le compró su nombre de dominio), o puede ser diferente. Si desea cambiar su proveedor de DNS, solo necesita hacer algunos pequeños cambios en su registrador. No necesita esperar a que su dominio esté cerca del vencimiento para hacerlo.
 
 Tenga en cuenta que poner sus credenciales de API DNS completamente en su servidor web aumenta significativamente el impacto si ese servidor web es pirateado. La mejor práctica es utilizar utilizar <a href="https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation">credenciales de API de alcance más limitado</a>, o realizar la validación de DNS desde un servidor separado y copiar automáticamente los certificados a su servidor web.
+
+Dado que Let's Encrypt sigue los estándares DNS cuando busca registros TXT para la validación DNS-01, puede usar registros CNAME o NS para delegar la respuesta del desafío a otras zonas DNS. Esto se puede usar para <a href="https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation">delegar el subdominio _acme-challenge</a> a un servidor o zona específica de validación. También se puede usar si su proveedor de DNS tarda en actualizarse y desea delegarlo en un servidor de actualización más rápida.
+
+La mayoría de los proveedores de DNS tienen un "tiempo de propagación" que determina el tiempo que transcurre desde el momento en que actualiza un registro DNS hasta que está disponible en todos sus servidores. Puede ser difícil medir esto porque a menudo también usan <a href="https://en.wikipedia.org/wiki/Anycast">anycast</a>, lo que significa que varios servidores pueden tener la misma dirección IP y dependiendo de dónde se encuentre en el mundo, puede hablar con un servidor diferente (y obtener una respuesta diferente) de la que Let's Encrypt espera. Las mejores API de DNS le brindan una forma de verificar automáticamente si la actualización se propaga completamente. Si su proveedor de DNS no tiene esto, solo tiene que configurar su cliente para que espere lo suficiente (a menudo hasta una hora) para asegurarse de que la actualización se propague antes de activar la validación.
+
+Puede tener múltiples registros TXT para el mismo nombre de dominio. Por ejemplo, esto podría suceder si está validando un desafío para un comodín y un certificado sin comodín al mismo tiempo. Sin embargo, debe asegurarse de limpiar los registros TXT antiguos, porque si el tamaño de la respuesta es demasiado grande, Let's Encrypt comenzará a rechazarlo.
+
+Pros:
+
+· Puede utilizar este desafío para emitir certificados que contengan nombres de dominio con comodín. ej: *.domain.ltd.
+· Funciona bien incluso si tiene varios servidores web.
+
+Contras:
+
+· Mantener las credenciales de la API en su servidor web es arriesgado.
+· Su proveedor de DNS podría no ofrecer una API.
+· Es posible que su API de DNS no proporcione información sobre los tiempos de propagación.
+
+TLS-SNI-01
+
+Este desafío se definió en versiones preliminares de ACME. Hacía un apretón de manos TLS en el puerto 443 y enviaba un encabezado SNI específico, buscando un certificado que contuviera el token. Se <a href="https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209">desactivará en marzo de 2019</a> porque no es lo suficientemente seguro.
+
+TLS-ALPN-01
+
+Este desafío se desarrolló después de que TLS-SNI-01 quedó en desuso y se está desarrollando como un <a href="https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01">estándar separado</a>. Al igual que TLS-SNI-01, se realiza a través de TLS en el puerto 443. Sin embargo, utiliza un protocolo ALPN personalizado para garantizar que solo los servidores que conocen este tipo de desafío responderán a las solicitudes de validación. Esto también permite que las solicitudes de validación para este tipo de desafío utilicen un campo SNI que coincida con el nombre de dominio que se valida, lo que lo hace más seguro.
+
+Este desafío no es adecuado para la mayoría de las personas. Es más adecuado para los autores de proxys inversos con terminación TLS que desean realizar una validación basada en host como HTTP-01, pero desean hacerlo completamente en la capa TLS para evitar  preocupaciones. En este momento eso significa principalmente grandes proveedores de alojamiento, pero los servidores web convencionales como Apache y Nginx algún día podrían implementarlo (<a href="https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860">Caddy ya lo hace</a>).
+
+Pros:
+
+· Funciona si el puerto 80 no está disponible para usted.
+· Se puede realizar puramente en la capa TLS.
+
+Contras:
+
+· No es compatible con Apache, Nginx o Certbot, y probablemente no lo será pronto.
+· Al igual que HTTP-01, si tiene varios servidores, todos deben responder con el mismo contenido.
+
