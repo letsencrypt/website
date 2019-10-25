@@ -30,13 +30,13 @@ lastmod: 2019-05-15
 * [註銷憑證]({{< ref "/docs/revoking.md" >}})
 * [憑證頒發機構授權]({{< ref "/docs/caa.md" >}})
 * [localhost 憑證]({{< ref "/docs/certificates-for-localhost.md" >}})
-* [Best Practice – 保持通訊埠 80 為開啟狀態 ]({{< ref "/docs/allow-port-80.md" >}})
-* [考驗類型]({{< ref "/docs/challenge-types.md" >}})
+* [最佳實踐 – 保持通訊埠 80 為開啟狀態 ]({{< ref "/docs/allow-port-80.md" >}})
+* [ACME 驗證方式]({{< ref "/docs/challenge-types.md" >}})
 * [憑證透明度紀錄]({{< ref "/docs/ct-logs.html" >}})
 
-# 客戶端開發者資訊
+# 客戶端開發資訊
 
-* [客戶端和服務提供商的整合指南]({{< ref "/docs/integration-guide.md" >}})
+* [服務業者的 ACME 客戶端整合指南]({{< ref "/docs/integration-guide.md" >}})
 * [ACME 協定更新]({{< ref "/docs/acme-protocol-updates.md" >}})
 * [目前 ACME 草案的差異](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * [尋找帳號 ID]({{< ref "/docs/account-id.md" >}})
