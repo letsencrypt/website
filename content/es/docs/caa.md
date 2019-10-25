@@ -17,7 +17,7 @@ emitir certificados para cualquier nombre de dominio en el DNS público, siempre
 
 # Usando CAA
 
-Si no te importa CAA, generalmente no tienes que hacer nada (sin embargo ve errores de CAA más abajo).
+Si no vas a usar CAA, generalmente no tienes que hacer nada (sin embargo lee los posibles errores de CAA más abajo en este documento).
 Si deseas usar CAA para restringir que Autoridades de Certificación están permitidas a
 emitir certificados para tu dominio, necesitaran un proveedor de DNS que soporte la configuración
 de registros CAA. Comprueba la [página sobre CAA de SSLMate](https://sslmate.com/caa/support) para una lista de tales proveedores. Si tu proveedor está listado, puedes usar el [Generador de Registro CAA de SSLMate](https://sslmate.com/caa/) para generar un set de registros CAA listando los ACs que quieres permitir.
