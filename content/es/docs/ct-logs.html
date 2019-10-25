@@ -2,3 +2,79 @@
 slug: ct-logs
 untranslated: 1
 ---
+<p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> es un sistema para registrar y monitorear la emisión de certificados TLS. CT mejora en gran medida la capacidad de todos para monitorear y estudiar la emisión de certificados, y estas capacidades han llevado a numerosas mejoras en el ecosistema de CA y la seguridad web. Como resultado, CT se está convirtiendo rápidamente en una infraestructura crítica.</p>
+
+<p>Let's Encrypt envía todos los certificados que emitimos a los registros de CT. También operamos un registro de CT nosotros mismos, que todas las autoridades de certificación de confianza pública pueden enviar.</p>
+
+<h2>Funding</h2>
+
+<p>Queremos agradecer a los siguientes socios por patrocinar generosamente el registro Let's Encrypt CT. Si su organización desea ayudarnos a continuar este trabajo, considere <a href="/es/become-a-sponsor/">patrocinando o donando</a>.</p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240"></a></center></p>
+
+<h2>Arquitectura</h2>
+
+<p>Nuestros registros utilizan el <a href="https://github.com/google/trillian/"> software Trillian </a> de Google que se ejecuta en la infraestructura de AWS. Utilizamos <a href="https://kubernetes.io/"> Kubernetes </a> para la organización de contenedores y la programación de trabajos y AWS RDS para la gestión de bases de datos.</p>
+
+<h2>Monitoreo de registro</h2>
+
+<p>Let's Encrypt ha creado una herramienta de monitoreo de registros CT de código abierto llamada <a href="https://github.com/letsencrypt/ct-woodpecker"> CT Woodpecker </a>. Usamos esta herramienta para monitorear la estabilidad y el cumplimiento de nuestros propios registros, y esperamos que a otros les resulte útil también.</p>
+
+<h2>CT Logs</h2>
+
+
+<p>
+  <strong>Name: Oak 2019</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2019/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ&#43;Z8IOsnNJrUZ8gwp&#43;KKGOdQrJ/HKhSadK/SJuoCc9&#43;dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2020</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2020/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD&#43;U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2021</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2021/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==</code>
+</p>
+
+<p>
+  <strong>Name: Oak 2022</strong><br>
+  Role: Production<br>
+  URI: https://oak.ct.letsencrypt.org/2022/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8&#43;IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc&#43;o7vPgXnDgu/a9/B&#43;RLg==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2019</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2019/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3&#43;vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2020</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2020/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5&#43;l&#43;eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2021</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2021/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ&#43;o/UIYEM6N/IZWT&#43;dhdqtJZC&#43;AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==</code>
+</p>
+
+<p>
+  <strong>Name: Testflume 2022</strong><br>
+  Role: Test<br>
+  URI: https://testflume.ct.letsencrypt.org/2022/<br>
+  Public Key: <code>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1&#43;XgjDnh4XPD7vfMoyJOyT&#43;KA&#43;c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==</code>
+</p>
