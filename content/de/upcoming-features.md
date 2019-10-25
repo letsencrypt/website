@@ -7,7 +7,7 @@ lastmod: 2019-07-03
 
 ## Multi-Perspective Validation
 
-Derzeitige Let's Encrypt Validierung von einer Netzwerkperspektive. Wir planen die Validierung von mehreren Netzwerkperspektiven zu starten.
+Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerke zu erweitern.
 
 ## ECDSA Root and Intermediates
 
@@ -19,7 +19,7 @@ Derzeit signiert Let's Encrypt nur Endentität Zertifikate mit RSA Zwischenzerti
 
 * Aktiviert: 15. Mai 2019
 
-Wir haben einen [Certificate Transparency log]({{< ref "/docs/ct-logs.html" >}}) in Betrieb genommen.
+Wir haben einen [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}) in Betrieb genommen.
 
 ## TLS ALPN Challenge Support
 

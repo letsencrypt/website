@@ -19,11 +19,11 @@ menu:
 
 ### 客戶端軟體
 
-[Certbot](https://github.com/certbot/certbot) 是使用 Python 語言撰寫的工具，它幫助你的網頁伺服器自動取得憑證，並替網站設置 HTTPS。我們建議大多數使用者使用 Certbot，當然還有許多其他[第三方客戶端]({{< ref "/docs/client-options.md" >}})可以使用。
+[Certbot](https://github.com/certbot/certbot) 是使用 Python 語言撰寫的工具，它幫助你的網頁伺服器自動取得憑證，並替網站設置 HTTPS。我們建議大多數使用者使用 Certbot，當然還有許多其他[第三方客戶端]({{< relref "/docs/client-options.md" >}})可以使用。
 
 ### 伺服器端 CA 軟體
 
-Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 簽發憑證。 該軟體基於 [ACME](https://github.com/ietf-wg-acme/acme) 協定並主要使用 Go 語言撰寫。查看[“尋求幫助”問題](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted)列表，和閱讀[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很不錯的開始。
+Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 簽發憑證。 該軟體基於 [ACME](https://github.com/ietf-wg-acme/acme) 協定並主要使用 Go 語言撰寫。查看[“尋求幫助”問題](https://github.com/letsencrypt/boulder/labels/help%20wanted)列表，和閱讀[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很不錯的開始。
 
 ### letsencrypt.org
 

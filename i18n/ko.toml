@@ -127,3 +127,22 @@ other = "URI"
 
 [certificate_transparency_public_key]
 other = "공개키"
+
+
+
+
+[overview]
+other = "개요"
+
+[subscriber_information]
+other = "구독자 정보"
+
+[advanced_subscriber_information]
+other = "고급 구독자 정보"
+
+[client_developer_information]
+other = "클라이언트 개발자 정보"
+
+[acme_divergences]
+other = "현재 ACME 초안과 다른점"
+

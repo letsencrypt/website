@@ -2,7 +2,7 @@
 title: Let's Encrypt 的工作原理
 slug: how-it-works
 top_graphic: 3
-lastmod: 2019-09-09
+lastmod: 2019-10-18
 ---
 
 Let's Encrypt 和 [ACME 協定](https://ietf-wg-acme.github.io/acme/)的目標是：在沒有人為介入的情況下，讓網頁伺服器可以自動取得瀏覽器可信任的憑證。這項工作是透過運行在網頁伺服器上的憑證管理軟體來達成的。

@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-01",
+	"lastmod": "2019-10-19",
 	"categories": [
 		"Bash",
 		"C",
@@ -72,10 +72,6 @@
 		{
 			"name": "Froxlor Server Management Panel",
 			"url": "https://www.froxlor.org/"
-		},
-		{
-			"name": "Mesosphere DCOS",
-			"url": "https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/"
 		},
 		{
 			"name": "Virtualmin Web Hosting Control Panel",
@@ -164,8 +160,9 @@
 			}
 		},
 		{
-			"name": "acme-client",
-			"url": "https://kristaps.bsd.lv/acme-client/",
+			"name": "OpenBSD acme-client",
+			"url": "https://man.openbsd.org/acme-client.1",
+			"acme_v2": "OpenBSD >= 6.6",
 			"category": "C"
 		},
 		{
@@ -225,6 +222,7 @@
 		{
 			"name": "autocert",
 			"url": "https://godoc.org/golang.org/x/crypto/acme/autocert",
+			"acme_v2": "true",
 			"category": "Go",
 			"challenges": {
 				"TLS-ALPN-01": "true"
@@ -376,12 +374,6 @@
 		{
 			"name": "FreeSSL.tech Auto",
 			"url": "https://freessl.tech",
-			"acme_v2": "true",
-			"category": "PHP"
-		},
-		{
-			"name": "php-acme-client",
-			"url": "https://github.com/kouk1/php-acme-client",
 			"acme_v2": "true",
 			"category": "PHP"
 		},
@@ -613,7 +605,6 @@
 			"library": "Python",
 			"comments": "(Twisted client for Python 2 / 3)"
 		},
-		
 		{
 			"name": "publishlab/node-acme-client",
 			"url": "https://github.com/publishlab/node-acme-client",
@@ -780,15 +771,19 @@
 			"name": "lua-resty-acme",
 			"url": "https://github.com/fffonion/lua-resty-acme",
 			"category": "nginx",
-			"acme_v2": "true",
-			"comments": "Automatic Let's Encrypt certificate serving (RSA + ECC) and pure Lua implementation of the ACMEv2 protocol."
+			"acme_v2": "true"
 		},
 		{
 			"name": "acertmgr",
 			"url": "https://github.com/moepman/acertmgr",
 			"category": "Python",
-			"acme_v2": "true",
-			"comments": "Automated Certificate Manager using ACME"
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme-cert-tool",
+			"url": "https://github.com/mk-fg/acme-cert-tool",
+			"category": "Python",
+			"acme_v2": "true"
 		}
 	]
 }

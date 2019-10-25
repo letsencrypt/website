@@ -32,13 +32,13 @@ grossartige Dokumentation. [Besuchen Sie die Certbot Seite][Certbot], um angepas
 Anleitungen für Ihr Betriebssystem und Web Server zu erhalten.
 
 Wenn [Certbot] nicht ihren Anforderungen entspricht, können Sie auch etwas anderes
-ausprobieren, es gibt [weitere ACME Clients zur Auswahl]({{< ref "/docs/client-options.md" >}}).
+ausprobieren, es gibt [weitere ACME Clients zur Auswahl]({{< relref "/docs/client-options.md" >}}).
 Wenn Sie eine ACME Client Software gewählt haben, schauen Sie in die Dokumentation,
 wie damit fortzufahren ist.
 
 Wenn Sie mit unterschiedlichen ACME Clients experimentieren, benutzen Sie
-[staging environment]({{< ref "/docs/staging-environment.md" >}}), um das Erreichen von
-[rate limits]({{< ref "/docs/rate-limits.md" >}}) zu verhindern.
+[staging environment]({{< relref "/docs/staging-environment.md" >}}), um das Erreichen von
+[rate limits]({{< relref "/docs/rate-limits.md" >}}) zu verhindern.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

@@ -23,4 +23,4 @@ Let's Encrypt의 주요 원칙은 다음과 같습니다:
 * <strong>개방형:</strong> 자동발행 및 갱신 프로토콜은 다른 사람이 채택할 수 있는 공개 표준으로 발행됩니다.
 * <strong>협력:</strong> 기본적인 인터넷 프로토콜 그 자체와 마찬가지로, Let's Encrypt는 한 조직의 통제 범위를 넘어서는 공동체를 위한 공동 노력입니다.
 
-[Let's Encrypt CA의 작동 방식]({{< ref "/how-it-works.md" >}})에 대한 자세한 정보가 있는 페이지가 있습니다.
+[Let's Encrypt CA의 작동 방식]({{< relref "/how-it-works.md" >}})에 대한 자세한 정보가 있는 페이지가 있습니다.

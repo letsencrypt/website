@@ -1,8 +1,9 @@
 ---
 title: Chain of Trust
+linkTitle: Chain of Trust (ルートおよび中間証明書)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 # ルート証明書
@@ -71,4 +72,4 @@ logs](https://www.certificate-transparency.org/) に記録しています。以�
 
 ISRG root CA と Let's Encrypt 中間認証局の秘密鍵は、ハードウェア・セキュリティ・モジュール (HSM) に保存されており、鍵が盗難されないように厳重に保管されています。
 
-すべての ISRG キーは、現在は RSA の鍵を使用しています。私たちは、[ECDSA の鍵を生成すること]({{< ref "/upcoming-features.md" >}})を計画しています。
+すべての ISRG キーは、現在は RSA の鍵を使用しています。私たちは、[ECDSA の鍵を生成すること]({{< relref "/upcoming-features.md" >}})を計画しています。

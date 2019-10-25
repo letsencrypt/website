@@ -1,8 +1,9 @@
 ---
 title: 신뢰의 사슬
+linkTitle: 신뢰의 체인 (root 및 중간 인증서)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 # Root 인증서
@@ -70,4 +71,4 @@ IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저
 
 ISRG Root CA 및 Let's Encrypt 중간 CA의 개인 키는 도난당한 키에 대해 높은 수준의 보호 기능을 제공하는 하드웨어 보안 모듈 (HSM)에 저장됩니다.
 
-모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 [ECDSA 키를 생성 할 계획]({{< ref "/upcoming-features.md" >}})입니다.
+모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 [ECDSA 키를 생성 할 계획]({{< relref "/upcoming-features.md" >}})입니다.
