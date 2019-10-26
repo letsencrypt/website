@@ -44,16 +44,16 @@ date: 2016-12-05
 <li>Android &lt; v2.3.6</li>
 <li>Nintendo 3DS</li>
 <li>Windows XP anterior a SP3
-  <ul>
-  <li>no puede manejar certificados firmados con SHA-2</li>
-  </ul>
+  <dl>
+  <dd>( no puede manejar certificados firmados con SHA-2 )</dd>
+  </dl>
 </li>
 <li>Java 7 &lt; 7u111</li>
 <li>Java 8 &lt; 8u101</li>
 <li>Windows Live Mail (2012 programa cliente de correo, no webmail)
-  <ul>
-  <li>no puede manejar certificados sin una CRL</li>
-  </ul>
+  <dl>
+  <dd>( no puede manejar certificados sin una CRL )</dd>
+  </dl>
 </li>
 <li>PS3 consola de juego</li>
 <li>PS4 consola de juego con firmware &lt; 5.00</li>
