@@ -124,6 +124,7 @@ window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 // Initialize nav menu aria roles/state
 menu.querySelector(".pure-menu-list").setAttribute("role", "menubar");
 
+// IE doesn't support querySelectorAll().forEach : https://developer.mozilla.org/fr/docs/Web/API/NodeList/forEach
 [].forEach.call(
   menu.querySelectorAll(NAV_LINK_SELECTOR), function(el) {
     el.setAttribute("role", "menuitem");
