@@ -52,27 +52,14 @@
     Note for clients developers: If your client is compatible with ACME v2 but appears in <span style="color:grey">grey</span>, please submit a pull-request to update <code>data/clients.json</code> on <a href="https://github.com/letsencrypt/website">https://github.com/letsencrypt/website</a>
 </div>
 
-<h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
-
-<ul>
-{{ range $.Site.Data.clients.projects }}
-        <li>
-            <a href="{{ .url }}">{{ .name }}</a>
-            {{ if .comments }}
-                {{ .comments | markdownify }}
-            {{ end }}
-        </li>
-{{ end }}
-</ul>
-
 {{ range $.Site.Data.clients.list }}
     {{ if and (not .category) (not .library) }}
-            {{ $.MissingLibraryOrCategory }}
+        {{ errorf "Missing library or category for client %q" .name }}
     {{ end }}
     {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
-            {{ $.CategoryUnknow }}
+        {{ errorf "Category unknow for client %q" .name }}
     {{ end }}
     {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
-            {{ $.LibraryUnknow }}
+        {{ errorf "Library unknow for client %q" .name }}
     {{ end }}
 {{ end }}
