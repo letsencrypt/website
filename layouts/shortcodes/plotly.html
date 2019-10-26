@@ -13,34 +13,32 @@
 ></span>
 
 <script src="/js/plotly-min.js" defer></script>
-{{ if eq "de" .Page.Language.Lang }}
+{{/* translations uploaded from https://github.com/plotly/plotly.js/tree/master/dist */}}
+{{ if eq "en" .Page.Language.Lang }}
+    {{/* nothing to do */}}
+{{ else if eq "de" .Page.Language.Lang }}
     <script src="/js/plotly-locale-de.js" defer></script>
-{{ end }}
-{{ if eq "fr" .Page.Language.Lang }}
+{{ else if eq "fr" .Page.Language.Lang }}
     <script src="/js/plotly-locale-fr.js" defer></script>
-{{ end }}
-{{ if eq "es" .Page.Language.Lang }}
+{{ else if eq "es" .Page.Language.Lang }}
     <script src="/js/plotly-locale-es.js" defer></script>
-{{ end }}
-{{ if eq "pt-br" .Page.Language.Lang }}
+{{ else if eq "pt-br" .Page.Language.Lang }}
     <script src="/js/plotly-locale-pt-br.js" defer></script>
-{{ end }}
-{{ if eq "ru" .Page.Language.Lang }}
+{{ else if eq "ru" .Page.Language.Lang }}
     <script src="/js/plotly-locale-ru.js" defer></script>
-{{ end }}
-{{ if eq "zh-cn" .Page.Language.Lang }}
+{{ else if eq "zh-cn" .Page.Language.Lang }}
     <script src="/js/plotly-locale-zh-cn.js" defer></script>
-{{ end }}
-{{ if eq "zh-tw" .Page.Language.Lang }}
+{{ else if eq "zh-tw" .Page.Language.Lang }}
     <script src="/js/plotly-locale-zh-tw.js" defer></script>
-{{ end }}
-{{ if eq "ja" .Page.Language.Lang }}
+{{ else if eq "ja" .Page.Language.Lang }}
     <script src="/js/plotly-locale-ja.js" defer></script>
-{{ end }}
-{{ if eq "id" .Page.Language.Lang }}
+{{ else if eq "id" .Page.Language.Lang }}
     <script src="/js/plotly-locale-id.js" defer></script>
-{{ end }}
-{{ if eq "ko" .Page.Language.Lang }}
+{{ else if eq "ko" .Page.Language.Lang }}
     <script src="/js/plotly-locale-ko.js" defer></script>
+{{ else if eq "sr-sp" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-sr.js" defer></script>
+{{ else }}
+    {{ errorf "Missing plotly for lang %q in layouts/shortcodes/plotly.html" .Page.Language.Lang }}
 {{ end }}
 <script src="/js/stats.js" defer></script>
