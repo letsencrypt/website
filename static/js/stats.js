@@ -320,7 +320,7 @@ function doPlot() {
 
   var path;
   if ( location.hostname === "letsencrypt.org" ) {
-    path = "https://d4twhgtvn0ff5.cloudfront.net/ ";
+    path = "https://d4twhgtvn0ff5.cloudfront.net/";
   } else {
     path = "/js/"; // in dev, will use old data.
   }
