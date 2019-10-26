@@ -1,18 +1,19 @@
 ---
-title: Certificate Compatibility
+title: Compatibilidad de Certificados
 slug: certificate-compatibility
 untranslated: 1
 date: 2016-12-05
 ---
 
-Let's Encrypt pretende ser compatible con la mayor cantidad de software posible sin comprometer la seguridad. El principal factor determinante para determinar si una plataforma puede validar los certificados Let’s Encrypt es si esa plataforma incluye el certificado DST Root X3 de IdenTrust en su almacén de confianza. Un factor secundario es si la plataforma admite dispositivos modernos [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) ya que todos los certificados Let's Encrypt usan SHA-2.
+<p>Let's Encrypt pretende ser compatible con la mayor cantidad de software posible sin comprometer la seguridad. El principal factor determinante para determinar si una plataforma puede validar los certificados Let’s Encrypt es si esa plataforma incluye el certificado DST Root X3 de IdenTrust en su almacén de confianza. Un factor secundario es si la plataforma admite dispositivos modernos [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) ya que todos los certificados Let's Encrypt usan SHA-2.</p>
 
-Si su certificado se valida en algunas de las plataformas "compatibles conocidas" pero no en otras, el problema puede ser una configuración incorrecta del servidor web. Si tiene un problema con las plataformas modernas, la causa más común suele ser que no se proporciona la cadena de certificados correcta. Si tiene un problema con plataformas más antiguas como Windows XP, las causas más comunes son la falta de configuración de una versión de cifrado o TLS que sea compatible con la plataforma o que la plataforma no sea compatible con la Indicación de Nombre del Servidor (SNI). Pruebe su sitio en [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Si eso no identifica el problema, solicite ayuda en los [Foros de la Comunidad](https://community.letsencrypt.org/).
+<p>Si su certificado se valida en algunas de las plataformas "compatibles conocidas" pero no en otras, el problema puede ser una configuración incorrecta del servidor web. Si tiene un problema con las plataformas modernas, la causa más común suele ser que no se proporciona la cadena de certificados correcta. Si tiene un problema con plataformas más antiguas como Windows XP, las causas más comunes son la falta de configuración de una versión de cifrado o TLS que sea compatible con la plataforma o que la plataforma no sea compatible con la Indicación de Nombre del Servidor (SNI). Pruebe su sitio en [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Si eso no identifica el problema, solicite ayuda en los [Foros de la Comunidad](https://community.letsencrypt.org/).</p>
 
-Es posible que desee visitar [esta discusión en particular en el foro de la comunidad Let's Encrypt](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) para obtener más información sobre la compatibilidad.
+<p>Es posible que desee visitar [esta discusión en particular en el foro de la comunidad Let's Encrypt](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) para obtener más información sobre la compatibilidad.</p>
 
 <h1 id="known-compatible">Navegadores o Dispositivos compatibles</h1>
 
+<p>
 <ul>
 <li>Mozilla Firefox &gt;= v2.0</li>
 <li>Google Chrome</li>
@@ -33,9 +34,11 @@ Es posible que desee visitar [esta discusión en particular en el foro de la com
 <li>Blackberry &gt;= 10.3.3</li>
 <li>PS4 consola de juego con firmware &gt;= 5.00</li>
 </ul>
+</p>
 
 <h1 id="known-incompatible">No son compatibles</h1>
 
+<p>
 <ul>
 <li>Blackberry &lt; v10.3.3</li>
 <li>Android &lt; v2.3.6</li>
@@ -55,3 +58,4 @@ Es posible que desee visitar [esta discusión en particular en el foro de la com
 <li>PS3 consola de juego</li>
 <li>PS4 consola de juego con firmware &lt; 5.00</li>
 </ul>
+</p>
