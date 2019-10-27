@@ -12,7 +12,7 @@ menu:
 
 Let's Encrypt 是一個免費、自動化、開放，為了公眾利益而運作的憑證頒發機構 (Certificate Authority, CA)。它是由 [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/) 所提供的服務。
 
-為了建立一個更加安全；更尊重隱私的網際網路，我們免費提供用戶數位憑證，並以最友善的方式替網站啟用 HTTPS (SSL / TLS) 
+為了建立一個更加安全；更尊重隱私的網際網路，我們免費提供用戶數位憑證，並以最友善的方式替網站啟用 HTTPS (SSL/TLS)。
 
 Let's Encrypt 的基本原則為：
 
