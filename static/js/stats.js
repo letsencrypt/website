@@ -59,7 +59,7 @@ function doPlot() {
     }
   }
 
-  function tsvListener() {
+  function tsvListener(text) {
     var tIssued = { type: "scatter", name: loc.issued, x:[], y:[],
                     fill: "tozeroy", line: { color: someGreen } };
     var tActive = { type: "scatter", name: loc.certificates_active, x:[], y:[],
@@ -69,7 +69,7 @@ function doPlot() {
     var tRegDom = { type: "scatter", name: loc.registered_domains_active, x:[], y:[],
                     marker: { symbol: "diamond" }, line: { color: someGreen, dash: "dash" } };
 
-    parse_delim(this.responseText, "\t", function(row){
+    parse_delim(text, "\t", function(row){
       if (!dateFormat.test(row[0])) {
         return;
       }
@@ -80,84 +80,85 @@ function doPlot() {
       insertPoint(tRegDom, row[0], row[4]);
     });
 
-    var plotIt = plot.bind(null, tIssued, tActive, tFqdn, tRegDom);
-    plotIt();
+    const activeUsage = document.getElementById("activeUsage");
+    if (activeUsage) {
+      plotActiveUsage(activeUsage, tActive, tFqdn, tRegDom);
+    }
+
+    const issuancePerDay = document.getElementById("issuancePerDay");
+    if (issuancePerDay) {
+      plotIssuancePerDay(issuancePerDay, tIssued);
+    }
+
+    const combinedTimeline = document.getElementById("combinedTimeline");
+    if (combinedTimeline) {
+      plotCombinedTimeline(combinedTimeline,tIssued, tActive, tFqdn, tRegDom);
+    }
+  }
+  
+  // Various running aggregates over time
+  function plotActiveUsage(dom, tActive, tFqdn, tRegDom) {
+    let traces = [ tActive, tFqdn, tRegDom ];
+    let layout = {
+      margin: { t: 20 },
+      yaxis: {
+        title: loc.active_count,
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
+      }
+    };
+    Plotly.plot(dom, traces, layout);
   }
 
-  function plot(tIssued, tActive, tFqdn, tRegDom) {
-    // Various running aggregates over time
-    {
-      let traces = [ tActive, tFqdn, tRegDom ];
-      let layout = {
-        margin: { t: 20 },
-        yaxis: {
-          title: loc.active_count,
-        },
-        legend: {
-          xanchor: "left",
-          yanchor: "top",
-          x: 0,
-          y: 1
-        }
-      };
-      let activeUsage = document.getElementById("activeUsage");
-      if (activeUsage) {
-        Plotly.plot(activeUsage, traces, layout);
+  // Certificates issued over time
+  function plotIssuancePerDay(dom, tIssued) {
+    let traces = [ tIssued ];
+    let layout = {
+      margin: { t: 20 },
+      yaxis: {
+        title: loc.issued_per_day,
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
       }
-    }
+    };
+    Plotly.plot(dom, traces, layout);
+  }
 
-    // Certificates issued over time
-    {
-      let traces = [ tIssued ];
-      let layout = {
-        margin: { t: 20 },
-        yaxis: {
-          title: loc.issued_per_day,
-        },
-        legend: {
-          xanchor: "left",
-          yanchor: "top",
-          x: 0,
-          y: 1
-        }
-      };
-      let issuancePerDay = document.getElementById("issuancePerDay");
-      if (issuancePerDay) {
-        Plotly.plot(issuancePerDay, traces, layout);
+  // Combined Graph: issuancePerDay + activeUsage
+  function plotCombinedTimeline(dom, tIssued, tActive, tFqdn, tRegDom) {
+    // Override the axis for the combined graph
+    tIssued.yaxis = "y2";
+    let traces = [ tActive, tFqdn, tRegDom, tIssued ];
+    let layout = {
+      margin: { t: 20 },
+      yaxis: {
+        title: loc.active_count,
+        side: "right"
+      },
+      yaxis2: {
+        title: loc.issued_per_day,
+        titlefont: { color: "#2a7ae2" },
+        tickfont: { color: "#2a7ae2" },
+        overlaying: "y",
+        side: "left",
+        showgrid: false
+      },
+      legend: {
+        xanchor: "left",
+        yanchor: "top",
+        x: 0,
+        y: 1
       }
-    }
-
-    // Combined Graph: issuancePerDay + activeUsage
-    {
-      // Override the axis for the combined graph
-      tIssued.yaxis = "y2";
-      let traces = [ tActive, tFqdn, tRegDom, tIssued ];
-      let layout = {
-        margin: { t: 20 },
-        yaxis: {
-          title: loc.active_count,
-          side: "right"
-        },
-        yaxis2: {
-          title: loc.issued_per_day,
-          titlefont: { color: "#2a7ae2" },
-          tickfont: { color: "#2a7ae2" },
-          overlaying: "y",
-          side: "left",
-          showgrid: false
-        },
-        legend: {
-          xanchor: "left",
-          yanchor: "top",
-          x: 0,
-          y: 1
-        }
-      };
-      let combinedTimeline = document.getElementById("combinedTimeline");
-      if (combinedTimeline) {
-        Plotly.plot(combinedTimeline, traces, layout);
-      }
-    }
+    };
+    Plotly.plot(dom, traces, layout);
   }
 
   function httpsCsvListener(responseText) {
@@ -270,7 +271,7 @@ function doPlot() {
   let someGreen = "#2ca02c";
 
   // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
-  function httpsPlot() {
+  function httpsPlot(dom) {
 
     let traces = [];
 
@@ -312,10 +313,7 @@ function doPlot() {
         y: 1
       }
     };
-    let pageloadPercent = document.getElementById("pageloadPercent");
-    if (pageloadPercent) {
-      Plotly.plot(pageloadPercent, traces, layout);
-    }
+    Plotly.plot(dom, traces, layout);
   }
 
   var path;
@@ -324,30 +322,29 @@ function doPlot() {
   } else {
     path = "/js/"; // in dev, will use old data.
   }
-  var oReq = new XMLHttpRequest();
-  oReq.addEventListener("load", tsvListener);
-  oReq.open("GET", path+"cert-timeline.tsv");
-  oReq.send();
 
-  var currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
-  .then((response) => {
+  fetch(path+"cert-timeline.tsv")
+  .then(response => {
     return response.text();
-  }).then((text) => {
-    httpsCsvListener(text);
-  });
+  }).then(tsvListener);
 
-  var historicalHttpsReqPromise = fetch(path+"historical-https-adoption.csv")
-  .then((response) => {
-    return response.text();
-  }).then((text) => {
-    historicalHttpsCsvListener(text);
-  });
+  const pageloadPercent = document.getElementById("pageloadPercent");
+  if ( pageloadPercent ) {
+    const currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
+    .then(response => {
+      return response.text();
+    }).then(httpsCsvListener);
 
-  // We shouldn't try to plot HTTPS until both the current and historical fetches
-  // are completed
-  Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
-  .then(httpsPlot);
+    const historicalHttpsReqPromise = fetch(path+"historical-https-adoption.csv")
+    .then(response => {
+      return response.text();
+    }).then(historicalHttpsCsvListener);
 
+    // We shouldn't try to plot HTTPS until both the current and historical fetches
+    // are completed
+    Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
+    .then( () => httpsPlot(pageloadPercent) );
+  }
 }
 
 if (document.readyState === "complete") {
