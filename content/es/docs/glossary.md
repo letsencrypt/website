@@ -170,7 +170,7 @@ Note for translators:
 
 {{% def id="web-server" name="Web server" %}} Software que sirve páginas web (o, por extensión, el servidor de hardware que lo aloja). [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
 
-{{% def id="wildcard" name="Wildcard Certificate" %}} Certificados válidos para subdominios de un nivel de profundidad. Por ejemplo, un certificado que contiene un [SAN](# def-SAN) para `* .example.com` es válido para `blog.example.com` y `www.example.com` pero **no** para `bork.bork.example.com` o `example.com`). Un comodín se indica con un asterisco (*) en lugar de un subdominio. [Let's Encrypt](# def-LE) [proporciona certificados comodín a partir de marzo de 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
+{{% def id="wildcard" name="Wildcard Certificate" %}} Certificados válidos para subdominios de un nivel de profundidad. Por ejemplo, un certificado que contiene un [SAN](# def-SAN) para `*.example.com` es válido para `blog.example.com` y `www.example.com` pero **no** para `bork.bork.example.com` o `example.com`). Un comodín se indica con un asterisco * en lugar de un subdominio. [Let's Encrypt](# def-LE)  [proporciona certificados comodín a partir de marzo de 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} El estándar que define el formato de los certificados de clave pública. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
