@@ -41,7 +41,7 @@ wahrscheinlich ändern werden.
 
 Ebenso ändern wir wahrscheinlich die URL der Nutzungsbedingungen (ToS),
 wenn wir sie aktualisieren. Vermeiden Sie eine Hardcodierung der ToS-URL
-und verlassen Sie sich stattdessen auf die [`Link: rel="Terms of Service "`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section- 6.2)
+und verlassen Sie sich stattdessen auf die [`Link: rel="Terms of Service "`](https://tools.ietf.org/html/rfc8555#section-7.3.3)
 Header, um zu bestimmen, welche ToS-URL verwendet werden soll.
 
 Sie möchten auch wissen, wie Sie Ihre TLS-Konfiguration auf dem neuesten Stand
