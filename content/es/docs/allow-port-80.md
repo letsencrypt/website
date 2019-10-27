@@ -1,5 +1,5 @@
 ---
-title: Best Practice - Keep Port 80 Open
+title: Mejores Prácticas - Mantenga abierto el puerto 80
 slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24

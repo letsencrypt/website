@@ -40,11 +40,11 @@ PS4 consola de juego con firmware >= 5.00
 * Blackberry < v10.3.3
 * Android < v2.3.6
 * Nintendo 3DS
-* Windows XP anterior a SP3
+* Windows XP antes de SP3
   * no puede manejar certificados firmados con SHA-2
 * Java 7 < 7u111
 * Java 8 < 8u101
-* Windows Live Mail (2012 programa cliente de correo, no webmail)
+* Windows Live Mail (2012 mail client, no webmail)
   * no puede manejar certificados sin una CRL
-* PS3 consola de juego
-* PS4 consola de juego con firmware < 5.00
+* Consola de juegos PS3
+* Consola de juegos PS4 con firmware < 5.00
