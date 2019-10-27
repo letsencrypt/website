@@ -1,7 +1,10 @@
 ---
 title: Guia de Integración
 slug: integration-guide
-untranslated: 1
+linkTitle: Client and Large Provider Integration Guide
+top_graphic: 1
+date: 2016-08-08
+lastmod: 2019-10-18
 ---
 
 {{< lastmod >}}
