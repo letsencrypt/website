@@ -39,8 +39,7 @@ Como Let's Encrypt verifica registros CAA antes de cada certificado que emitimos
 
 Si recibes un error relacionado con CAA, prueba un par de veces más en nuestro [ambiente *staging*]({{< relref "/docs/staging-environment.md" >}}) para ver si son temporales o permanentes. Si son permanentes, necesitarás contactar con el equipo de soporte de tu proveedor de DNS, o cambiar de proveedore. Si no estás seguro que quién es tu proveedor DNS, preguntale a tu proveedor de hospedaje.
 
-Algunos proveedores de DNS que no están familiarizados con CAA contestan inicialmente al reporte del problema con "No soportamos registros CAA." Tu proveedor de DNS no necesita soportar específicamente registros CAA; solo necesita contestar con una respuesta NOERROR para tipos de consulta desconocidos (incluyendo CAA). Devolviendo otros opcodes, incluyendo NOTIMP, para qtypes desconocidos es una violación de [RFC
-1035](https://tools.ietf.org/html/rfc1035), y necesita ser arreglado.
+Algunos proveedores de DNS que no están familiarizados con CAA contestan inicialmente al reporte del problema con "No soportamos registros CAA." Tu proveedor de DNS no necesita soportar específicamente registros CAA; solo necesita contestar con una respuesta NOERROR para tipos de consulta desconocidos (incluyendo CAA). Devolviendo otros opcodes, incluyendo NOTIMP, para qtypes desconocidos es una violación de [RFC 1035](https://tools.ietf.org/html/rfc1035), y necesita ser arreglado.
 
 # SERVFAIL
 
