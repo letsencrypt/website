@@ -1,7 +1,9 @@
 ---
 title: Glosario
 slug: glossary
-untranslated: 1
+top_graphic: 1
+date: 2018-12-30
+---
 ---
 
 {{< lastmod >}}
