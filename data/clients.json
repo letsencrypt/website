@@ -217,7 +217,8 @@
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
-			"comments": "(Reverse proxy to handle https/tls)"
+			"comments": "(Reverse proxy to handle https/tls)",
+			"acme_v2": "Lets-proxy2 >= v0.21.0"
 		},
 		{
 			"name": "autocert",
