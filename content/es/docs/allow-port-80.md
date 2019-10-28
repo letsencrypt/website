@@ -40,4 +40,5 @@ puerto 80 por varias razones. Si tu ISP hace esto pero aún desea obtener certif
 de Let's Encrypt, tiene dos opciones: Puede usar los *DNS-01 challenges* o pueder usar [uno de los clientes que
 tiene habilitado los *TLS-ALPN-01 challenges*]
 (https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
- (en el puerto 443):
+ (en el puerto 443).
+ 
