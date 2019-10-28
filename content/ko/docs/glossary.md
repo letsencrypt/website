@@ -27,7 +27,7 @@ Note for translators:
 
 {{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} [인증서](#def-certificate)의 발급자에 대한 정보를 얻는 방법을 [사용자 에이전트](#def-user-agent)에 나타내는 데 사용되는 인증서 [연장](#def-extension)입니다. 일반적으로 [OCSP](#def-OCSP) URI와 [발행인 URI](#def-CAI)를 지정합니다. {{% /def %}}
 
-{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} [Let's Encrypt](#def-LE)에서 구현한 프로토콜입니다. 해당 프로토콜과 호환되는 소프트웨어는 Let's Encrypt를 사용하여 [인증서](#def-leaf)를 요청할 수 있습니다. [ACME 초안](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [위키피디아](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
+{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} [Let's Encrypt](#def-LE)에서 구현한 프로토콜입니다. 해당 프로토콜과 호환되는 소프트웨어는 Let's Encrypt를 사용하여 [인증서](#def-leaf)를 요청할 수 있습니다. [ACME RFC](https://tools.ietf.org/html/rfc8555) - [위키피디아](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
 {{% def id="ACME-client" name="ACME Client" %}} ACME 서버와 통신하여 [인증서](#def-leaf)를 요청할 수 있는 프로그램입니다. {{% /def %}}
 

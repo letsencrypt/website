@@ -16,4 +16,4 @@ lastmod: 2019-07-30
 如果您使用的是 Certbot，您可以在 `/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json` 的“uri”字段中找到您的帐户 ID。
 
 如果您正在使用其他 ACME 客户端，具体方法将取决于您使用的客户端。
-您可以检查日志中是否有上述形式的 URL。如果您的 ACME 客户端未记录帐户 ID，您可以通过使用相同私钥提交新的注册请求来获取它。详见[了解更多 ACME 规范详情](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration)。您还可以在 ACME 客户端对 API 服务器发出的每个 POST 的响应中的 Boulder-Requester 标头中找到您的数字格式账户 ID。
+您可以检查日志中是否有上述形式的 URL。如果您的 ACME 客户端未记录帐户 ID，您可以通过使用相同私钥提交新的注册请求来获取它。详见[了解更多 ACME 规范详情](https://tools.ietf.org/html/rfc8555#section-7.3)。您还可以在 ACME 客户端对 API 服务器发出的每个 POST 的响应中的 Boulder-Requester 标头中找到您的数字格式账户 ID。

@@ -138,7 +138,7 @@ Wenn Sie eine grosse Anzahl von ausstehenden Autorisierungsanfragen haben
 und dadurch in einen Rate Limit Fehler laufen, können Sie einen
 Überprüfungsversuch für die Autorisierungsobjekte durch Absenden eines
 JWS-Signierten POST absenden, wie in
-[ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges)
+[ACME spec](https://tools.ietf.org/html/rfc8555#section-7.5.1)
 beschrieben.
 Die ausstehenden Autorisierungsobjekte werden durch URLs in der Form
 `https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` dargestell und sollten in

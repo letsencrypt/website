@@ -22,9 +22,9 @@ In the future, these things are likely to change:
   * the types of keys and key strength checks for which we are willing to sign end-entity certificates
   * and the ACME protocol
 
-We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) header from the ACME protocol, since intermediates are likely to change.
+We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/rfc8555#section-7.4.2) header from the ACME protocol, since intermediates are likely to change.
 
-Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) header to determine which ToS URL to use.
+Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/rfc8555#section-7.3.3) header to determine which ToS URL to use.
 
 You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
 
