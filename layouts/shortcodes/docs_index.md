@@ -30,7 +30,7 @@
 
 * {{ template "link" (dict "context" . "page" "/docs/integration-guide") }}
 * {{ template "link" (dict "context" . "page" "/docs/acme-protocol-updates") }}
-* [{{ i18n "acme_divergences" }}](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [{{ i18n "acme_divergences_rfc" }}](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * {{ template "link" (dict "context" . "page" "/docs/account-id") }}
 
 {{- define "link" -}}

@@ -143,5 +143,8 @@ other = "Informations pour les développeurs de client"
 [acme_divergences]
 other = "Différences par rapport à l'ébauche actuelle d'ACME"
 
+[acme_divergences_rfc]
+other = "Différences par rapport à la RFC d'ACME"
+
 [onboarding_customers]
 other = "Intégrer vos clients avec Let's Encrypt et ACME"
