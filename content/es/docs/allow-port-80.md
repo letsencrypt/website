@@ -32,6 +32,7 @@ Hay varias situaciones que escapan a su control y que pueden incluir brevemente 
 versión HTTP de su sitio, por ejemplo, la vinculación automática en correos electrónicos o escribir 
 manualmente un nombre de dominio. Es mejor para ellos obtener una redirección que un error.
 
+
 Desafortunadamente, es posible que no tenga control sobre si el puerto 80
 está bloqueado para su sitio web. Algunos ISPs (en su mayoría residenciales) bloquean el puerto 80 por diferentes razones.
 Si su ISP hace esto pero aún desea obtener certificados de Let's Encrypt, tiene dos opciones: puede usar los 
