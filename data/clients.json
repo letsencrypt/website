@@ -183,6 +183,7 @@
 		{
 			"name": "ZeroSSL",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
@@ -332,6 +333,7 @@
 		{
 			"name": "Crypt::LE",
 			"url": "https://metacpan.org/pod/Crypt::LE",
+			"acme_v2": "true",
 			"category": "Perl",
 			"library": "Perl"
 		},
