@@ -13,7 +13,7 @@ date: 2018-04-12
 
 如果 [Certbot] 不能滿足你的需求，或是你想嘗試別的客戶端，還有[很多 ACME 用戶端]({{< relref "/docs/client-options.md" >}})可供選擇。在你選定 ACME 客戶端軟體後，請參閱該客戶端的文檔。
 
-如果你正在嘗試使用不同的 ACME 用戶端，請使用我們的[測試環境]({{< relref "/docs/staging-environment.md" >}})以免超過[頒發速率限制]({{< relref "/docs/rate-limits.md" >}})。
+如果你正在嘗試使用不同的 ACME 用戶端，請使用我們的[測試環境]({{< relref "/docs/staging-environment.md" >}})以免超過[憑證頒發與更新的速率限制]({{< relref "/docs/rate-limits.md" >}})。
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

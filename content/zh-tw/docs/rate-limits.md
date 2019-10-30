@@ -12,11 +12,11 @@ lastmod: 2019-06-04
 
 如果你正著手開發或測試 Let's Encrypt 客戶端，請使用我們的[測試環境]({{< ref "/docs/staging-environment.md" >}})，請不要使用上線環境的 API。如果你正為服務提供業者或大型網站整合 Let's Encrypt，請閱讀我們的[整合指南]({{< ref "/docs/integration-guide.md" >}})。
 
-我們最主要的限制是<a name="certificates-per-registered-domain"></a>**每個註冊網域 (Registered Domain) 的憑證頒發數量**限制，限制為每周 50 張。註冊網域，是指你向網域註冊商所購買的名稱，例如：網域名稱 `www.example.com` 的註冊網域就是 `example.com`；而網域名稱 `new.blog.example.co.uk` 的註冊網域是 `example.co.uk`。我們使用[公共後綴列表 (Public Suffix List)](https://publicsuffix.org) 來辨認一個網域名稱的註冊網域。
+我們最主要的限制是<a name="certificates-per-registered-domain"></a>**每個註冊網域 (Registered Domain) 的憑證頒發數量**，限制為每周 50 張。註冊網域，是指你向網域註冊商所購買的名稱，例如：網域名稱 `www.example.com` 的註冊網域就是 `example.com`；而網域名稱 `new.blog.example.co.uk` 的註冊網域是 `example.co.uk`。我們使用[公共後綴列表 (Public Suffix List)](https://publicsuffix.org) 來辨認一個網域名稱的註冊網域。
 
-如果你擁有非常多的子網域，你可能會想將它們整合成一張憑證。你最多能在<a name="names-per-certificate"></a>**一張憑證中包含 100 個網域名稱**。綜合上述兩個限制，你可以每個星期最多能替 5000 個網域名稱申請憑證。在一張憑證中包含多個網域名稱的憑證，我們稱為主體別名 (Subject Alternative Name, SAN) 憑證，或有時稱為整合通訊憑證 (Unified Communications Certificates, UCC) 憑證。注意：出於效率和可靠性，一張憑證最好不要包含太多網域名稱。
+如果你擁有非常多的子網域，你可能會想將它們整合成一張憑證。你最多能在<a name="names-per-certificate"></a>**一張憑證中包含 100 個網域名稱**。綜合上述兩個限制，你每個星期最多能替 5000 個網域名稱申請憑證。在一張憑證中包含多個網域名稱的憑證，我們稱為主體別名 (Subject Alternative Name, SAN) 憑證，或有時稱為整合通訊憑證 (Unified Communications Certificates, UCC) 憑證。注意：出於效率和可靠性考量，一張憑證最好不要包含太多網域名稱。
 
-更新憑證僅有一項特別規定：更新憑證受到**重複憑證**限制，一個星期內僅能頒發 5 張重複的憑證。更新的數量不會受到**每個註冊網域的憑證頒發數量**限制。注意：2019 年 3 月前，更新憑證曾經受到每個註冊註冊網域的憑證頒發數量限制，但是[現在已經沒有這個限制了](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189)
+更新憑證僅有一項特別規定：更新憑證受到**重複憑證**限制，一個星期內僅能頒發 5 張重複的憑證。更新憑證與**每個註冊網域的憑證頒發數量**互相獨立。請注意：2019 年 3 月前，更新憑證曾經受到每個註冊網域的憑證頒發數量影響，但是[現在已經互相獨立了](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189)。
 
 如果一張憑證與先前的某張憑證擁有相同的網域，無論網域的大小寫或順序，它就會被視為重複憑證。例如，你過去已經申請了一張憑證，網域包括 [`www.example.com`, `example.com`]，則這禮拜你僅能再替 [`www.example.com`, `example.com`] 這組網域申請 4 次憑證。如果你在網域中添加了 [`blog.example.com`]，你就不會受到重複憑證的限制。
 
