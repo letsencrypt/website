@@ -4,7 +4,7 @@ linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-18
+lastmod: 2019-10-29
 ---
 
 {{< lastmod >}}
@@ -164,11 +164,11 @@ one-time process of renewing some certificates 1 day ahead of when you would
 normally renew, some of them 2 days ahead, and so on.
 
 If you offer client software that automatically configures a periodic batch
-job, please make sure to run at a randomized hour and minute during the day,
-rather than always running at a specific time. This ensures that Let's Encrypt
-doesn't receive arbitrary spikes of traffic at the top of the hour. Since Let's
-Encrypt needs to provision capacity to meet peak load, reducing traffic spikes
-can help keep our costs down.
+job, please make sure to run at a randomized second during the day, rather than
+always running at a specific time. This ensures that Let's Encrypt doesn't
+receive arbitrary spikes of traffic at the top of the hour or minute. Since
+Let's Encrypt needs to provision capacity to meet peak load, reducing traffic
+spikes can help keep our costs down.
 
 # Retrying failures
 
