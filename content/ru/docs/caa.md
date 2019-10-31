@@ -52,18 +52,20 @@ CAA ниже). Если же вы хотели бы использовать CAA
 Таким образом, поддомен может не иметь ограничения, которое установлено 
 для родительского домена.
 
-CAA validation follows CNAMEs, like all other DNS requests. If
-`www.community.example.com` is a CNAME to `web1.example.net`, the CA will first
-request CAA records for `www.community.example.com`, then seeing that there is a
-CNAME for that domain name instead of CAA records, will request CAA records for
-`web1.example.net` instead. Note that if a domain name has a CNAME record, it is
-not allowed to have any other records according to the DNS standards.
+Валидация CAA придерживается правил CNAMEs, как и другие DNS-запросы. Если 
+`www.community.example.com` --- это CNAME для `web1.example.net`, то Центр 
+сертификации сперва запросит записи CAA для `www.community.example.com`, 
+далее, обнаружив CNAME вместо записи CAA для этого доменного имени, 
+запросит CAA для `web1.example.net`. Обратите внимание, что если доменное 
+имя имеет запись CNAME, оно не может иметь никаких других записей, 
+согласно стандартам DNS.
 
-The [CAA RFC](https://tools.ietf.org/html/rfc6844) specifies an additional
-behavior called "tree-climbing" that requires CAs to also check the parent
-domains of the result of CNAME resolution. This additional behavior was later
-removed by [an erratum](https://www.rfc-editor.org/errata/eid5065), so Let's
-Encrypt and other CAs do not implement it.
+[CAA RFC](https://tools.ietf.org/html/rfc6844) определяет дополнительное
+поведение, называемое "tree-climbing", которое требует, чтобы Центры 
+сертификации также проверяли родительские домены
+для результата разрешения CNAME. Это дополнительное поведение было позже
+удалено в [исправлении](https://www.rfc-editor.org/errata/eid5065), поэтому 
+Let's Encrypt и другие Центры сертификации не реализовали его.
 
 # CAA errors
 
