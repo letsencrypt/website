@@ -212,7 +212,7 @@
 			"url": "https://github.com/hlandau/acme",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi"
 		},
 		{
 			"name": "Lets-proxy2",
