@@ -1,5 +1,5 @@
 ---
-title: Best Practice - Как держать открытым 80 порт
+title: Best Practice - Держите 80 порт открытым
 slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
@@ -8,36 +8,34 @@ lastmod: 2019-01-24
 
 {{< lastmod >}}
 
-We occasionally get reports from people who have trouble using the
-HTTP-01 challenge type because they've firewalled off port 80 to their
-web server. Our recommendation is that all servers meant for general web
-use should offer both HTTP on port 80 and HTTPS on port 443. They should
-also send redirects for all port 80 requests, and possibly an HSTS header
-(on port 443 requests).
+Периодически нам пишут люди, у которых проблемы с использованием испытания HTTP-01,
+потому что они выключают 80 порт в настройках файрволла на своем веб-сервере.
+Мы рекомендуем, чтобы все сервера, предназначенные для использования в общей сети,
+работали как с HTTP на порту 80, так и с HTTPS на порту 443. Также они должны 
+перенаправлять все запросы, приходящие на 80 порт, и, по возможности, 
+заголовки HSTS (для запросов на 443 порт).
 
-Allowing port 80 doesn't introduce a larger attack surface on your server,
-because requests on port 80 are generally served by the same software that
-runs on port 443.
+Открытый 80 порт не увеличивает плоскость атаки на ваш сервер,
+так как запросы на 80 порт обычно обрабатываются тем же ПО, 
+что работает и с 443 портом.
 
-Closing port 80 doesn't reduce the risk to a person who accidentally
-visits your website via HTTP. In normal circumstances, that person
-would receive a redirect to HTTPS, and their subsequent traffic will be
-protected. If that person was subject to an active MITM, the MITM would
-answer on port 80, so your site would never have a chance to answer
-"connection refused."
+Закрытый 80 порт не снижает риск для человека, который случайно зашел 
+на ваш сайт по HTTP. В обычных обстоятельствах он получит 
+перенаправление на HTTPS, и весь его последующий трафик будет защищен. 
+Если посетитель был объектом для активной MITM, MITM будет слать ответ на 80 порт, 
+поэтому ваш сайт никогда не вернет "connection refused".
 
-Lastly, keeping port 80 open in order to serve a redirect helps get
-people to the right version of your site (the HTTPS version). There are
-various situations beyond your control that might briefly land someone
-on the HTTP version of your site - for instance, automatic linkification
-in emails, or manually typing a domain name. It's better for them to get
-a redirect than an error.
+Наконец, открытый для обслуживания редиректов 80 порт помогает людям 
+попасть на правильную версию вашего сайта (HTTPS-версию). Разными путями, 
+не зависящими от вас, люди могут ненадолго попасть на HTTP-версию сайта --- 
+например, через автоматически сформированные ссылки в email или вводя 
+доменное имя вручную. В этом случае лучше пусть произойдет редирект, 
+чем появится ошибка.
 
-Unfortunately, you might not have control over whether port 80
-is blocked for your site. Some (mostly residential) ISPs block
-port 80 for various reasons. If your ISP does this but you’d
-still like to get certificates from Let's Encrypt, you have
-two options: You can use DNS-01 challenges or you can use [one of
-the clients that supports TLS-ALPN-01 challenges]
-(https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
- (on port 443):
+К сожалению, вы не можете контролировать блокировку 80 порта на 
+вашем сайте. Некоторые интернет-провайдеры блокируют 80 порт по различным причинам. 
+Если ваш провайдер поступает так же, но вы все же хотите получить сертификаты 
+Let's Encrypt, у вас есть два варианта: можно использовать испытания DNS-01 
+либо использовать [один из клиентов, поддерживающих испытания TLS-ALPN-01]
+(https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2) 
+(на порту 443):
