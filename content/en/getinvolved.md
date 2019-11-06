@@ -2,7 +2,7 @@
 title: Get Involved
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -28,7 +28,3 @@ We can also use help with software development. All of our code is on [GitHub](h
 ### letsencrypt.org
 
 You can improve this website and the documentation [here](https://github.com/letsencrypt/website) or help with its [translations](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
-
-## Protocol
-
-The Let's Encrypt CA talks to certificate management software running on web servers.  The protocol for this is called ACME, for "Automated Certificate Management Environment." The draft ACME spec is [available on Github](https://github.com/ietf-wg-acme/acme). Work is underway within the IETF to finalize ACME as a truly open standard. You can join the ACME protocol development discussion on [this IETF mailing list](https://www.ietf.org/mailman/listinfo/acme).
