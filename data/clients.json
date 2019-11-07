@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-19",
+	"lastmod": "2019-10-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -183,6 +183,7 @@
 		{
 			"name": "ZeroSSL",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
@@ -211,13 +212,14 @@
 			"url": "https://github.com/hlandau/acme",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi"
 		},
 		{
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
-			"comments": "(Reverse proxy to handle https/tls)"
+			"comments": "(Reverse proxy to handle https/tls)",
+			"acme_v2": "Lets-proxy2 >= v0.21.0"
 		},
 		{
 			"name": "autocert",
@@ -331,6 +333,7 @@
 		{
 			"name": "Crypt::LE",
 			"url": "https://metacpan.org/pod/Crypt::LE",
+			"acme_v2": "true",
 			"category": "Perl",
 			"library": "Perl"
 		},
@@ -783,6 +786,13 @@
 			"name": "acme-cert-tool",
 			"url": "https://github.com/mk-fg/acme-cert-tool",
 			"category": "Python",
+			"acme_v2": "true"
+		},
+		{
+			"name": "ght-acme.sh",
+			"url": "https://github.com/bruncsak/ght-acme.sh",
+			"category": "Bash",
+ 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
 			"acme_v2": "true"
 		}
 	]

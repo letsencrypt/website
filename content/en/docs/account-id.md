@@ -25,6 +25,6 @@ If you're using another ACME client, the instructions will be client-dependent.
 Check your logs for URLs of the form described above. If your ACME client does
 not record the account ID, you can retrieve it by submitting a new registration
 request with the same key. See the [ACME spec for more
-details](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
+details](https://tools.ietf.org/html/rfc8555#section-7.3).
 You can also find the numeric form of your ID in the Boulder-Requester header in
 the response to each POST your ACME client makes.

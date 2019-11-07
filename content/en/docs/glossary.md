@@ -27,7 +27,7 @@ Note for translators:
 
 {{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} A certificate [extension](#def-extension) used to indicate to [user agents](#def-user-agent) how to obtain information about the issuer of the [certificate](#def-certificate). It typically specifies the [OCSP](#def-OCSP) URI and the [issuer URI](#def-CAI). {{% /def %}}
 
-{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} The protocol implemented by [Let's Encrypt](#def-LE). Software compatible with that protocol can use it to communicate with Let's Encrypt to ask for a [certificate](#def-leaf). [ACME drafts](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
+{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} The protocol implemented by [Let's Encrypt](#def-LE). Software compatible with that protocol can use it to communicate with Let's Encrypt to ask for a [certificate](#def-leaf). [ACME RFC](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
 {{% def id="ACME-client" name="ACME Client" %}} A program capable of communicating with an ACME server to ask for a [certificate](#def-leaf). {{% /def %}}
 

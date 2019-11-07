@@ -4,7 +4,7 @@ linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-18
+lastmod: 2019-10-29
 ---
 
 {{< lastmod >}}
@@ -22,9 +22,9 @@ In the future, these things are likely to change:
   * the types of keys and key strength checks for which we are willing to sign end-entity certificates
   * and the ACME protocol
 
-We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) header from the ACME protocol, since intermediates are likely to change.
+We will always aim to give as much advance notice as possible for such changes, though if a serious security flaw is found in some component we may need to make changes on a very short term or immediately. For intermediate changes in particular, you should not hardcode the intermediate to use, but should use the [`Link: rel="up"`](https://tools.ietf.org/html/rfc8555#section-7.4.2) header from the ACME protocol, since intermediates are likely to change.
 
-Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) header to determine which ToS URL to use.
+Similarly, we're likely to change the URL of the terms of service (ToS) as we update it. Avoid hardcoding the ToS URL and instead rely on the [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/rfc8555#section-7.3.3) header to determine which ToS URL to use.
 
 You will also want a way to keep your TLS configuration up-to-date as new attacks are found on cipher suites or protocol versions.
 
@@ -164,11 +164,11 @@ one-time process of renewing some certificates 1 day ahead of when you would
 normally renew, some of them 2 days ahead, and so on.
 
 If you offer client software that automatically configures a periodic batch
-job, please make sure to run at a randomized hour and minute during the day,
-rather than always running at a specific time. This ensures that Let's Encrypt
-doesn't receive arbitrary spikes of traffic at the top of the hour. Since Let's
-Encrypt needs to provision capacity to meet peak load, reducing traffic spikes
-can help keep our costs down.
+job, please make sure to run at a randomized second during the day, rather than
+always running at a specific time. This ensures that Let's Encrypt doesn't
+receive arbitrary spikes of traffic at the top of the hour or minute. Since
+Let's Encrypt needs to provision capacity to meet peak load, reducing traffic
+spikes can help keep our costs down.
 
 # Retrying failures
 

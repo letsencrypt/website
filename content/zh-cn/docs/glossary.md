@@ -9,7 +9,7 @@ date: 2018-12-30
 
 {{% def id="AIA" name="颁发机构信息访问" english="Authority Information Access" abbr="AIA" %}} 用于提示[用户代理](#def-user-agent)获取[证书](#def-certificate)颁发者信息的方法的证书[扩展](#def-extension)。它通常会指定用于 [OCSP](#def-OCSP) 的 URI 地址和[颁发者的 URI 地址](#def-CAI)。 {{% /def %}}
 
-{{% def id="ACME" name="自动证书管理环境" english="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} 由 [Let's Encrypt](#def-LE) 实现的协议。与该协议兼容的软件可以用它与 Let's Encrypt 通信以获取[证书](#def-leaf)。[ACME 协议草案](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [维基百科条目](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
+{{% def id="ACME" name="自动证书管理环境" english="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} 由 [Let's Encrypt](#def-LE) 实现的协议。与该协议兼容的软件可以用它与 Let's Encrypt 通信以获取[证书](#def-leaf)。[ACME RFC](https://tools.ietf.org/html/rfc8555) - [维基百科条目](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
 {{% def id="ACME-client" name="ACME 客户端" english="ACME Client" %}} 能够与 ACME 服务器通信以获取[证书](#def-leaf)的程序。 {{% /def %}}
 
