@@ -59,15 +59,15 @@ lastmod: 2018-06-20
 
 Что касается безопасности, то сертификаты для одного доменного имени, и мультидоменные сертификаты - равнозначны.
 
-# Storing and Reusing Certificates and Keys
+# Хранение и повторное использование сертификатов и ключей
 
-A big part of Let's Encrypt's value is that it enables automatic issuance as part of provisioning a new website.  However, if you have infrastructure that may repeatedly create new frontends for the same website, those frontends should first try to use a certificate and private key from durable storage, and only issue a new one if no certificate is available, or all existing certificates are expired.
+Особую ценность Let's Encrypt придаёт возможность автоматического выпуска сертификата для нового сайта. Однако, если ваша инфраструктура предполагает создание новых интерфейсов для одного и того же сайта, целесообразнее использовать сертификат и закрытый ключ из надёжного хранилища. Новый сертификат ст**о**ит выпускать в случае, когда имеющиеся сертификаты закончились, или истёк срок их действия.
 
-For Let's Encrypt, this helps us provide services efficiently to as many people as possible. For you, this ensures that you are able to deploy your website whenever you need to, regardless of the state of Let's Encrypt.
+Такой подход поможет Let's Encrypt качественно предоставлять свои услуги как можно б**о**льшему количеству клиентов. Вы же всегда сможете запустить свой новый сайт в любое удобное вам время, независимо от состояния сервисов Let's Encrypt.
 
-As an example, many sites are starting to use Docker to provision new frontend instances as needed. If you set up your Docker containers to issue when they start up, and you don't store your certificates and keys durably, you are likely to hit rate limits if you bring up too many instances at once. In the worst case, if you have to destroy and re-create all of your instances at once, you may wind up in a situation where none of your instances is able to get a certificate, and your site is broken for several days until the rate limit expires. This type of problem isn't unique to rate limits, though. If Let's Encrypt is unavailable for any reason when you need to bring up your frontends, you would have the same problem.
+К примеру, всё чаще web-мастера используют Docker для создания новых инстансов для сайтов. Если вы настроите контейнеры Docker на выпуск сертификатов в момент старта, вместо использования сертификатов и ключей из хранилища, то, скорее всего, вы превысите ограничения на использование ресурсов Let's Encrypt. В худшем случае, при пересоздании всех ваши инстансов одновременно, вы окажетесь в ситуации, когда ни один из инстансов не сможет получить сертификат, и ваш сайт окажется недоступным в течение нескольких дней, пока ограничения не будут сняты. Та же проблема возникнет, если по каким-либо причинам сервисы Let's Encrypt будут недоступны.
 
-Note that some deployment philosophies state that crypto keys should never leave the physical machine on which they were generated. This model can work fine with Let's Encrypt, so long as you make sure that the machines and their data are long-lived, and you manage rate limits carefully.
+Некоторые подходы к развёртыванию сайтов проповедуют хранение закрытых ключей строго на тех компьютерах, на которых они были созданы. Эта модель также совместима с Let's Encrypt до тех пор, пока вы обеспечиваете длительный аптайм ваших машин и данных на них, и отслеживаете момент наступления ограничений.
 
 # Picking a Challenge Type
 
