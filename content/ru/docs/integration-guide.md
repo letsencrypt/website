@@ -69,13 +69,14 @@ lastmod: 2018-06-20
 
 Некоторые подходы к развёртыванию сайтов проповедуют хранение закрытых ключей строго на тех компьютерах, на которых они были созданы. Эта модель также совместима с Let's Encrypt до тех пор, пока вы обеспечиваете длительный аптайм ваших машин и данных на них, и отслеживаете момент наступления ограничений.
 
-# Picking a Challenge Type
+# Выбор способа проверки
 
-If you're using the http-01 ACME challenge, you will need to provision the challenge response to each of your frontends before notifying Let's Encrypt that you're ready to fulfill the challenge. If you have a large number of frontends, this may be challenging. In that case, using the dns-01 challenge is likely to be easier. Of course, if you have many geographically distributed DNS responders, you have to make sure the TXT record is available on each responder.
+Если вы используете проверку http-01 ACME, вам необходимо обеспечить формирование ответа от всех интерфейсов перед уведомлением Let's Encrypt о готовности пройти проверку. Если таких интерфейсов у вас много, задача будет непростой. В этом случае, разумнее выбрать проверку dns-01. Разумеется, если у вас несколько географически разнесённых DNS серверов, необходимо убедиться, что TXT-запись есть на каждом из них.
 
-Additionally, when using the dns-01 challenge, make sure to clean up old TXT records so the response to Let's Encrypt's query doesn't get too big.
+Кроме того, при использовании проверки dns-01 необходимо удалить старые TXT-записи, чтобы ответ на запрос Let's Encrypt не оказался слишком большим.
 
-If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect /.well-known/acme-validation/XYZ to validation-server.example.com/XYZ for all XYZ. This delegates responsibility for issuance to validation-server, so you should protect that server well.
+Если же вы настаиваете на проверке http-01, возможно, вам пригодятся HTTP-редиректы. Вы можете настроить интерфейсы ваших сайтов на редирект адреса /.well-known/acme-validation/XYZ на validation-server.example.com/XYZ для любого XYZ. Это перенесёт ответственность за выдачу сертификатов на сервер валидации, так что позаботьтесь о его безопасности.
+
 
 # Central Validation Servers
 
