@@ -103,32 +103,14 @@ Let's Encrypt принимает RSA-ключи длиной от 2048 до 4096
 
 Мы рекомендуем использовать конфигурацию с двумя сертификатами, по-умолчанию предлагая RSA-сертификаты. ECDSA-сертификаты используются гораздо реже, и только для ACME-клиентов, обеспечивающих их поддержку.
 
+# HTTPS по-умолчанию
 
-# HTTPS by default
+Для компаний, предоставляющих услуги хостинга, мы предлагаем автоматически выпускать сертификаты, и настраивать доступ по HTTPS для всех доменных имён в управлении. Дополнительно, необходимо дать пользователям возможность настраивать свою конфигурацию редиректа с HTTP на  HTTPS.
+По-умолчанию, HTTPS должен быть включен для всех **создаваемых** аккаунтов, и отключен для всех **существующих** аккаунтов.
 
-For hosting providers, our recommendation is to automatically issue
-certificates and configure HTTPS for all hostnames you control, and to offer a
-user-configurable setting for whether to redirect HTTP URLs to their HTTPS
-equivalents. We recommend that for existing accounts, the setting be disabled by
-default, but for new accounts, the setting be enabled by default.
+Поясняем: существующие web-сайты, как правило, включают в себя дополнительные HTTP-ресурсы (скрипты, файлы стилей, изображения). Если эти сайты автоматически переключить на их HTTPS-версии, то браузеры могут заблокировать доступ к HTTP-ресурсам по причине смешанного контента (Mixed Content Blocking). Это может повлиять на работоспособность сайта. В то же время, разработчик нового сайта, скорее всего сразу организует доступ к ресурсами по HTTPS, т.к. недоступность доступа по HTTP будет замечена в процессе разработки.
 
-Reasoning: Existing websites are likely to include some HTTP subresources
-(scripts, CSS, and images). If those sites are automatically redirected to
-their HTTPS versions, browsers will block some of those subresources due to
-Mixed Content Blocking. This can break functionality on the site. However,
-someone who creates a new site and finds that it redirects to HTTPS will
-most likely include only HTTPS subresources, because if they try to include
-an HTTP subresource they will notice immediately that it doesn't work.
-
-We recommend allowing customers to set an HTTP Strict-Transport-Security
-(HSTS) header with a default max-age of sixty days. However, this setting
-should be accompanied by a warning that if the customer needs to move to
-a hosting provider that doesn't offer HTTPS, the cached HSTS setting in
-browsers will make their site unavailable. Also, both customer and hosting
-provider should be aware that the HSTS header will make certificate errors into
-hard failures. For instance, while people can usually click through a browser
-warning about a name mismatch or expired certificate, browsers do not allow such
-a click through for hostnames with an active HSTS header.
+Мы рекомендуем настраивать заголовок ответа сервера HTTP Strict-Transport-Security (HSTS) с параметром max-age, равным 60 дней по-умолчанию. Вместе с тем, необходимо помнить, что если клиент перенесёт свой сайт к хостинг-провайдеру без настроенного доступа по HTTPS, закэшированная браузерами пользователей настройка HSTS сделает сайт недоступным для них. Проблемы с заголовком HSTS считаются серьёзной угрозой безопасности. Пользователи обычно игнорируют предупреждения браузера о несовпадении введённого имени домена с имененем домена в сертификате, или о просроченном сертификате, и просто нажимают кнопку "Продолжить". В случае с заголовком HSTS, обойти предупреждение и получить доступ к сайту не удастся.
 
 # When to Renew
 
