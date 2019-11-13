@@ -87,23 +87,15 @@ lastmod: 2018-06-20
 
 Настроив сшивание OCSP на ваших web-серверах, вы улучшите производительность ваших сайтов, обеспечите конфиденциальность для ваших пользователей, и поможете Let's Encrypt эффективнее обслуживать как можно больше клиентов.
 
-# Firewall Configuration
+# Настройка брандмауера
 
-To use Let's Encrypt, you need to allow outbound port 443 traffic from the
-machines running your ACME client. We don't publish the IP ranges for our
-ACME service, and they will change without notice.
+Для работы Let's Encrypt необходимо разрешить исходящий трафик для порта 443 на машинах с запущенным ACME-клиентом. Мы не публикуем IP-адреса наших ACME-сервисов, и, как правило, изменяем их без уведомления.
 
-For the "http-01" ACME challenge, you need to allow inbound port 80 traffic.
-We don't publish the IP ranges from which we perform validation, and they
-will change without notice.
+Для проверки http-01, необходимо разрешить входящий трафик для порта 80. Мы не публикуем IP-адреса для выполнения проверки, и. как правило, изменяем их без уведомления.
 
-Note: We recommend always allowing plain HTTP access to your
-web server, with a redirect to HTTPS. This provides a better user
-experience than a web server that refuses or drops port 80 connections,
-and provides the same level of security.
+Обратите внимание: мы рекомендуем всегда настраивать HTTP-доступ до вашего web-сервера, с последующим редиректом на HTTPS. Для пользователей это будет лучше, чем сбром соединения по порту 80, при том же уровне безопасности.
 
-For all challenges, you need to allow inbound port 53 traffic
-(TCP and UDP) to your authoritative DNS servers.
+Для всех проверок, необходимо разрешить входящий трафик на порт 53 (TCP и UDP) для ваших DNS-серверов.
 
 # Supported Key Algorithms
 
