@@ -2,7 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-24
+lastmod: 2019-11-13
 ---
 
 {{< clientslastmod >}}
@@ -29,6 +29,10 @@ If certbot does not meet your needs, or you’d simply like to try something els
 the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 
 {{< /clients >}}
+
+# ACMEv1 End of Life
+
+We encourage subscribers to select a client that implements ACMEv2 support. Per our API announcement on the [community forum](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1), we will eventually stop allowing new domains to validate via ACMEv1 followed eventually by completely disabling the ACMEv1 protocol.
 
 # Adding your client/project
 
