@@ -112,30 +112,15 @@ Let's Encrypt принимает RSA-ключи длиной от 2048 до 4096
 
 Мы рекомендуем настраивать заголовок ответа сервера HTTP Strict-Transport-Security (HSTS) с параметром max-age, равным 60 дней по-умолчанию. Вместе с тем, необходимо помнить, что если клиент перенесёт свой сайт к хостинг-провайдеру без настроенного доступа по HTTPS, закэшированная браузерами пользователей настройка HSTS сделает сайт недоступным для них. Проблемы с заголовком HSTS считаются серьёзной угрозой безопасности. Пользователи обычно игнорируют предупреждения браузера о несовпадении введённого имени домена с имененем домена в сертификате, или о просроченном сертификате, и просто нажимают кнопку "Продолжить". В случае с заголовком HSTS, обойти предупреждение и получить доступ к сайту не удастся.
 
-# When to Renew
+# Когда обновлять сертификат
 
-We recommend renewing certificates automatically when they have a third of their
-total lifetime left. For Let's Encrypt's current 90-day certificates, that means
-renewing 30 days before expiration.
+Мы рекомендуем настраивать автоматическое обновление сертификатов в последней трети их жизни. Для сертификатов Let's Encrypt срок действия по-умолчанию 90 дней, таким образом, обновление необходимо выполнить спустя 60 дней после выпуска сертификата.
 
-If you are issuing for more than 10,000 hostnames, we also recommend automated
-renewal in small runs, rather than batching up renewals into large chunks.
-This reduces risk: If Let's Encrypt has an outage at the time you need to
-renew, or there is a temporary failure in your renewal systems, it will only
-affect a few of your certificates, rather than all of them. It also makes our
-capacity planning easier.
+Если вы управляете сертификатами для более чем 10 000 доменных имён, мы рекомендуем выполнять обновление небольшими партиями, а не все сразу. Это снижает ваши риски: если сервисы Let's Encrypt по какой-либо причине будут недоступны, или возникли проблемы в вашей инфраструктурой обновления - ущерб будет причинён небольшой части сертификатов, а не всему количеству. Кроме того, обновление по частям поможет лучше планировать загрузку оборудования.
 
-You may want to bulk-issue certificates for all of your domains to get started
-quickly, which is fine. You can then spread out renewal times by doing a
-one-time process of renewing some certificates 1 day ahead of when you would
-normally renew, some of them 2 days ahead, and so on.
+Возможно, вы захотите массово выпустить сертификаты для всех ваших доментов, что нормально. Но конкретные даты обновления сертификатов можно разнести на несколько дней - обновив сначала одну партию, на следующий день другую, и так далее.
 
-If you offer client software that automatically configures a periodic batch
-job, please make sure to run at a randomized hour and minute during the day,
-rather than always running at a specific time. This ensures that Let's Encrypt
-doesn't receive arbitrary spikes of traffic at the top of the hour. Since Let's
-Encrypt needs to provision capacity to meet peak load, reducing traffic spikes
-can help keep our costs down.
+Если вы настраиваете специальный скрипт обновления, то убедитесь, что его запуск выполняется в произвольно выбираемый момент времени, а не в конкретный. Это гарантирует, что на серверах Let's Encrypt не будет серьёзных всплесков трафика. Т.к. нам необходимо обеспечить запас мощности для противодействия таким всплескам, их снижение поможет уменьшить наши издержки.
 
 # Retrying failures
 
