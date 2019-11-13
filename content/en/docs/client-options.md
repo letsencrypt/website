@@ -39,7 +39,7 @@ The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is
 
 # ACMEv1 End of Life
 
-We encourage subscribers to select a client that implements ACMEv2 support. Per our API announcement on the [community forum](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1), we will eventually stop allowing new domains to validate via ACMEv1 followed eventually by completely disabling the ACMEv1 protocol.
+We encourage subscribers to select a client that implements ACMEv2 support. [Per our API announcement on the community forum](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1), we will eventually stop allowing new domains to validate via ACMEv1 followed eventually by completely disabling the ACMEv1 protocol.
 
 # Adding your client/project
 
