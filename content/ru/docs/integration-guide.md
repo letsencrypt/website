@@ -122,20 +122,11 @@ Let's Encrypt принимает RSA-ключи длиной от 2048 до 4096
 
 Если вы настраиваете специальный скрипт обновления, то убедитесь, что его запуск выполняется в произвольно выбираемый момент времени, а не в конкретный. Это гарантирует, что на серверах Let's Encrypt не будет серьёзных всплесков трафика. Т.к. нам необходимо обеспечить запас мощности для противодействия таким всплескам, их снижение поможет уменьшить наши издержки.
 
-# Retrying failures
+# Повтор попыток при ошибках обновления
 
-Renewal failure should not be treated as a fatal error. You should implement
-graceful retry logic in your issuing services using an exponential backoff
-pattern, maxing out at once per day per certificate. For instance, a reasonable
-backoff schedule would be: 1st retry after one minute, 2nd retry after ten
-minutes, third retry after 100 minutes, 4th and subsequent retries after one
-day. You should of course have a way for administrators to
-request early retries on a per-domain or global basis.
+Ошибки обновления не стоит считать фатальными. Необходимо реализовать логику повторных запросов на обновление, используя подход экспоненциального увеличения интервалов. К примеру, первая попытка запускается через минуту, вторая попытка - спустя десять минут,
+третья - спустя сто минут, четвёртая попытка планируется на следующий день. Разумеется, необходимо предусмотреть механизм ручного повтора попыток обновления сертификатов для каждого домена в отдельности, или глобально.
 
-Backoffs on retry means that your issuance software should keep track of
-failures as well as successes, and check if there was a recent failure before
-attempting a fresh issuance. There's no point in attempting issuance hundreds
-of times per hour, since repeated failures are likely to be persistent.
+Откат во время попыток обновления означает, что ваш скрипт обновления отслеживает как удачные попытки, так и неудачные, и перед очередной попыткой проверяет, были ли ранее неудачи. Нет смысла бесконечно повторять попытки обновить сертификаты, если неудачи следуют одна за другой.
 
-All errors should be sent to the administrator in charge, in order to see if
-specific problems need fixing.
+О всех ошибках обновления следует извещать ответственного администратора, для своевременного решения возникших проблем.
