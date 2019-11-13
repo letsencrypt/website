@@ -557,6 +557,7 @@
 		{
 			"name": "DelphiACME",
 			"url": "https://github.com/tothpaul/DelphiACME",
+			"acme_v2": "true",
 			"library": "Delphi",
 			"comments": "(Embarcadero Delphi)"
 		},
