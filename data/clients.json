@@ -261,6 +261,7 @@
 		{
 			"name": "ManageEngine Key Manager Plus",
 			"url": "https://www.manageengine.com/key-manager/",
+			"acme_v2": "Version >= 5650",
 			"category": "Java"
 		},
 		{
