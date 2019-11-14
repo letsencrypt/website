@@ -173,6 +173,7 @@
 		{
 			"name": "certificaat",
 			"url": "https://github.com/danielsz/certificaat",
+			"acme_v2": "true",
 			"category": "Clojure"
 		},
 		{
@@ -329,7 +330,8 @@
 			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS"
+			"category": "Windows / IIS",
+			"library": "Perl"
 		},
 		{
 			"name": "Crypt::LE",
