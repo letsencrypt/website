@@ -389,6 +389,7 @@
 		{
 			"name": "simp_le",
 			"url": "https://github.com/zenhack/simp_le",
+			"acme_v2": "true",
 			"category": "Python"
 		},
 		{
