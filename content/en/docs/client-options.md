@@ -18,21 +18,21 @@ Some in-browser ACME clients are available, but we do not list them here because
 they encourage a manual renewal workflow that results in a poor user experience
 and increases the risk of missed renewals.
 
+# ACMEv1 End of Life
+
+[Per our API announcement on the community forum](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1), we will eventually stop allowing new domains to validate via ACMEv1 followed eventually by completely disabling the ACMEv1 protocol. All clients listed below support the newer ACMEv2 API. If you're already using one of these clients, make sure to upgrade to the latest version. If the client you are using isn't listed below, contact the project maintainers or switch to a different client.
+
 # Recommended: Certbot
 
-We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
+We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
 
-If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+If certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
 the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 
 {{< /clients >}}
-
-# ACMEv1 End of Life
-
-We encourage subscribers to select a client that implements ACMEv2 support. [Per our API announcement on the community forum](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1), we will eventually stop allowing new domains to validate via ACMEv1 followed eventually by completely disabling the ACMEv1 protocol.
 
 # Adding your client/project
 
