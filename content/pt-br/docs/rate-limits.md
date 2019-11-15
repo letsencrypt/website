@@ -61,7 +61,7 @@ por conta, por nome de domínio, por hora. Este limite é maior em nosso [ambien
 pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
 Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
-<name="overall-requests"></a>**Limite
+<a name="overall-requests"></a>**Limite
 Geral** de 20 requisições por segundo. O endpoint "/directory" e o diretório "/acme" 
 e seus subdiretórios possuem um Limite Geral de 40 requisições por segundo.
 
