@@ -172,6 +172,7 @@
 		{
 			"name": "certificaat",
 			"url": "https://github.com/danielsz/certificaat",
+			"acme_v2": "true",
 			"category": "Clojure"
 		},
 		{
@@ -306,6 +307,7 @@
 		{
 			"name": "Greenlock for node.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
+			"acme_v2": "true",
 			"library": "Node.js"
 		},
 		{
@@ -328,7 +330,8 @@
 			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS"
+			"category": "Windows / IIS",
+			"library": "Perl"
 		},
 		{
 			"name": "Crypt::LE",
@@ -389,6 +392,7 @@
 		{
 			"name": "simp_le",
 			"url": "https://github.com/zenhack/simp_le",
+			"acme_v2": "true",
 			"category": "Python"
 		},
 		{
@@ -699,7 +703,7 @@
 		},
 		{
 			"name": "GetCert",
-			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		},
