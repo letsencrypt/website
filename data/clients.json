@@ -99,8 +99,7 @@
 		},
 		{
 			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net",
-			"comments": "(ACMEv2 only)"
+			"url": "http://www.synchro.net"
 		},
 		{
 			"name": "ruxy",
@@ -247,7 +246,7 @@
 			"category": "HAProxy"
 		},
 		{
-			"name": "HAProxy ACME v2 client",
+			"name": "HAProxy client",
 			"url": "https://github.com/haproxytech/haproxy-lua-acme",
 			"acme_v2": "true",
 			"category": "HAProxy"
@@ -670,7 +669,7 @@
 			"category": "Configuration management tools"
 		},
 		{
-			"name": "WinCertes Windows ACMEv2 client",
+			"name": "WinCertes Windows client",
 			"url": "https://github.com/aloopkin/WinCertes",
 			"acme_v2": "true",
 			"category": "Windows / IIS"
@@ -709,7 +708,6 @@
 			"url": "https://github.com/cschlote/acme-lw-d",
 			"category": "D",
 			"library": "D",
-			"comments": "An ACME v2 client/library written in the D computer language",
 			"acme_v2": "true"
 		},
 		{

@@ -24,15 +24,22 @@ We recommend that most people start with the [Certbot](https://certbot.eff.org/)
 
 If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+# ACMEv1 and ACMEv2
 
-the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
+Let's Encrypt supports the ACMEv2 API, which is compatible with the
+[final ACME standard](https://tools.ietf.org/html/rfc8555). We're [phasing out
+the older ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
+in 2020 and 2021. All the clients on this list support ACMEv2.
+
+{{< clients libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+
+The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of Certbot, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 
 {{< /clients >}}
 
 # Adding your client/project
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
+If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
 
 Before submitting a pull request please make sure:
 
