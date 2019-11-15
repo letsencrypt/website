@@ -62,9 +62,9 @@ IdenTrust 和我們交互簽名 (Cross-Sign) 了中間憑證，這樣可以確�
 
 * [ISRG Root OCSP X1 （由 ISRG Root X1 簽發）](/certs/isrg-root-ocsp-x1.pem.txt)
 
-# 憑證透明度紀錄
+# 憑證透明度
 
-我們努力使 Let's Encrypt 的運作及憑證頒發過程保持透明。我們在頒發憑證時會將該憑證傳送到[憑證透明度紀錄](https://www.certificate-transparency.org/)。你可以通過以下連結查看所有 Let's Encrypt 所頒發的憑證：
+我們努力使 Let's Encrypt 的運作及憑證頒發過程保持透明。我們在頒發憑證時，會將憑證透過[憑證透明度](https://www.certificate-transparency.org/)系統紀錄下來。你可以通過以下連結查看所有 Let's Encrypt 所頒發過的憑證：
 
 * [由 Let's Encrypt Authority X1 頒發](https://crt.sh/?Identity=%25&iCAID=7395)
 * [由 Let's Encrypt Authority X3頒發](https://crt.sh/?Identity=%25&iCAID=16418)

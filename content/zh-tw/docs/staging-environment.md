@@ -31,6 +31,6 @@ lastmod: 2019-09-16
 
 測試環境中的中間憑證 (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem))，是使用**不在**瀏覽器或客戶端信任憑證倉庫中的根憑證所頒發的。如果你希望測試用客戶端能信任測試環境所頒發的憑證，你可以手動安裝 ["Fake LE Root X1"](/certs/fakelerootx1.pem) 到測試用客戶端的信任憑證倉庫中。請注意：不要將測試用的根憑證或中間憑證安裝到日常使用的客戶端信任倉庫中，因為它們沒有達到上線環境的標準，將他們用於測試環境外的客戶端會造成安全性問題。
 
-# 憑證透明度紀錄
+# 憑證透明度
 
-測試環境會將預憑證交給 Let's Encrypt [Testflume]({{< relref "/docs/ct-logs.html" >}}) 和 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 的憑證透明度紀錄，並在頒發的憑證中添加 SCT。
+測試環境會將預憑證交給 Let's Encrypt [Testflume]({{< relref "/docs/ct-logs.html" >}}) 和 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 測試用的憑證透明度紀錄，並在頒發的憑證中添加 SCT。
