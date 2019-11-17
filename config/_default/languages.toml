@@ -131,12 +131,12 @@ description = """
 """
 
 [zh-tw]
-title = "Let's Encrypt - 免費SSL/TLS憑證"
-languageName = "正體中文"
+title = "Let's Encrypt - 免費的 SSL/TLS 憑證"
+languageName = "繁體中文"
 contentDir = "content/zh-tw"
 languageCode= "zh-tw"
 beforeColon= ""
 weight = 110
-description = """
-  Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的憑證頒發機構。
+description = """  
+  Let's Encrypt 是免費、自動化和開放的憑證頒發機構，由非營利組織<a href="https://www.abetterinternet.org/">網路安全研究小組 (Internet Security Research Group, ISRG)</a> 營運。
   """

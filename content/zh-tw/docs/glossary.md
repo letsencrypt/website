@@ -38,7 +38,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} 底線要求。客戶端對於憑證頒發機構技術和政策上的要求，憑證頒發機構需要遵守客戶端的[根憑證政策](#def-root-program)，以取得數瀏覽器的信任。{{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} CAA 紀錄。指定哪些[憑證頒發機構](#def-CA) 是可以替對應的網域名稱頒發憑證的 DNS 紀錄。憑證頒發機構會檢查CAA 紀錄，而瀏覽器不會檢查它。依據憑證頒發機構的[底線要求](#def-BRs)，[Let's Encrypt](#def-LE) 會[尊重 CAA 紀錄]({{< ref "/docs/caa.md" >}})。 - [維基百科](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 憑證頒發授權。指定哪些[憑證頒發機構](#def-CA)是可以替對應的網域名稱頒發憑證的 DNS 紀錄。憑證頒發機構會檢查 CAA 紀錄，而瀏覽器不會檢查它。依據憑證頒發機構的[底線要求](#def-BRs)，[Let's Encrypt](#def-LE) 會[尊重 CAA 紀錄]({{< ref "/docs/caa.md" >}})。 - [維基百科](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} 將一個網域名稱對應到另一個網域名稱的 DNS 紀錄。[維基百科](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
