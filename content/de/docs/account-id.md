@@ -26,6 +26,6 @@ Wenn Sie einen anderen ACME Client benutzen, kann die Anleitung client-abhängig
 sein. Überprüfen Sie Ihre Logs auf URLS in der Form wie oben beschrieben.
 Wenn Ihr ACME Client die Account-ID nicht aufzeichnet, können Sie sie mit
 einer Registrierungsabfrage mit demselben Schlüssel abfragen.
-Schauen Sie [ACME Spezifikation für mehr Detail](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
+Schauen Sie [ACME Spezifikation für mehr Detail](https://tools.ietf.org/html/rfc8555#section-7.3).
 Sie können die nummerische Form von Ihrer ID auch im Boulder-Requester Header
 in der Antwort zu jedem POST Ihres ACME Clients finden.

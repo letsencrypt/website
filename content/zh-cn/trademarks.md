@@ -117,4 +117,4 @@ ISRG 的许多软件产品都是在开源的基础上提供的，这意味着您
 只有我们的 logo 的无文字版本。仅当“Let's Encrypt”文字标志在页面或设计中的其他位置清晰可见或被公认时，才能使用此版本。（如有疑问，请使用其他版本。）
 
 <p><img src="/images/le-logo-lockonly.png" alt="无文字 logo" height=125></p>
-<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

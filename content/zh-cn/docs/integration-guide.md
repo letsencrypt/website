@@ -20,9 +20,9 @@ Let's Encrypt 和 Web PKI 都将随着时间的推移而不断发展。您应该
   * 我们愿意用于对终端实体证书进行签名的密钥类型和密钥强度
   * ACME 协议  
 
-我们将始终尽可能提前通知此类更改，但如果在某些组件中发现严重的安全漏洞，我们可能需要在短期内或立即进行更改。特别是对于中间证书改变，你不应该硬编码中间证书，而应该使用 ACME 协议中的 [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) 标头，因为中间证书很可能会改变。
+我们将始终尽可能提前通知此类更改，但如果在某些组件中发现严重的安全漏洞，我们可能需要在短期内或立即进行更改。特别是对于中间证书改变，你不应该硬编码中间证书，而应该使用 ACME 协议中的 [`Link: rel="up"`](https://tools.ietf.org/html/rfc8555#section-7.4.2) 标头，因为中间证书很可能会改变。
 
-同样，我们可能会在更新服务条款（ToS）时更改其链接。请避免硬编码 ToS 链接，而是使用 [`Link：rel =“terms-of-service”`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) 标头确定要使用的 ToS 链接。
+同样，我们可能会在更新服务条款（ToS）时更改其链接。请避免硬编码 ToS 链接，而是使用 [`Link：rel =“terms-of-service”`](https://tools.ietf.org/html/rfc8555#section-7.3.3) 标头确定要使用的 ToS 链接。
 
 您还需要能够在您使用的加密算法套件或协议版本上发现了新的攻击方式时更新 TLS 配置。
 
