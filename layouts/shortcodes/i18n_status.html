@@ -21,9 +21,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ $pages := sort $.Site.RegularPages "RelPermalink" }}
-    {{ $pages = $pages | append (.Site.GetPage "/docs") }}
-    {{ range $pages }}
+    {{ range sort $.Site.RegularPages "RelPermalink" }}
       {{ $page := . }}
       {{ if and .Translations (not .Page.Params.do_not_translate) }}
       <tr>
@@ -99,7 +97,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
       <tr>
         <th></th>
@@ -113,7 +110,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
       <tr>
         <th></th>
@@ -129,7 +125,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
   </tfoot>
 </table>

@@ -24,4 +24,4 @@ Let's Encrypt的關鍵原則為：
 * <strong>樂於合作:</strong> 就像網際網路底層協議本身一樣，Let's Encrypt是一項讓整體網際網路社區受益的共同工作，超出任何單一組織的控制範圍。
 
 
-請訪問[此頁面]({{< ref "/how-it-works.md" >}})獲取更多關於Let's Encrypt CA工作方式的詳細訊息
+請訪問[此頁面]({{< relref "/how-it-works.md" >}})獲取更多關於Let's Encrypt CA工作方式的詳細訊息

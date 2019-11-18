@@ -29,11 +29,11 @@ dan memiliki dokumentasi yang bagus. [Kunjungi situs Certbot][Certbot] untuk mel
 instruksi kostumisasi untuk sistem operasi dan web server anda.
 
 Jika [Certbot] tidak sesuai dengan kebutuhan anda, atau anda ingin mencoba yang lain,
-ada [banyak Klien ACME yang dapat anda pilih]({{< ref "/docs/client-options.md" >}}). Setelah anda
+ada [banyak Klien ACME yang dapat anda pilih]({{< relref "/docs/client-options.md" >}}). Setelah anda
 memili Klien ACME anda, lihat dokumentasi untuk klien tersebut untuk melanjutkan.
 
-Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*]({{< ref "/docs/staging-environment.md" >}})
-untuk menghindari [pembatasan pemanggilan]({{< ref "/docs/rate-limits.md" >}}).
+Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*]({{< relref "/docs/staging-environment.md" >}})
+untuk menghindari [pembatasan pemanggilan]({{< relref "/docs/rate-limits.md" >}}).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

@@ -1,8 +1,9 @@
 ---
 title: Chain of Trust
+linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 aliases: [/certs]
 ---
 
@@ -95,4 +96,4 @@ issued Let's Encrypt certificates via these links:
 
 The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
 
-All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys]({{< ref "/upcoming-features.md" >}}).
+All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys]({{< relref "/upcoming-features.md" >}}).

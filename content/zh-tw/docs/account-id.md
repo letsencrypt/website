@@ -16,5 +16,5 @@ lastmod: 2019-07-30
 如果您使用的是Certbot，可以通過查看`/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.中的“uri”欄位找到您的帳戶ID
 
 如果您正在使用其他ACME用戶端，該說明將取決於用戶端配置。
-檢查日誌中是否有上述表單的URL。如果您的ACME用戶端未記錄帳戶ID，您可以透過使用相同密鑰提交新的註冊請求來檢索它。 詳見[了解更多ACME規範詳情](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration).
+檢查日誌中是否有上述表單的URL。如果您的ACME用戶端未記錄帳戶ID，您可以透過使用相同密鑰提交新的註冊請求來檢索它。 詳見[了解更多ACME規範詳情](https://tools.ietf.org/html/rfc8555#section-7.3).
 您還可以在ACME用戶端對API伺服器發出的每個POST的響應中的Boulder-Requester標頭中找到您的數位格式帳戶ID。

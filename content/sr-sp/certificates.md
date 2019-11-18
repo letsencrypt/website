@@ -51,7 +51,7 @@ sertifikaciono telo, ISRG Root X1 još uvek nije priznat u većini pretraživač
 Da bismo odmah dobili poverenje, naš intermedijar takođe je unakrsno potpisan
 od strane još jednog sertifikacionog tela, IdenTrust, čiji je root već priznat u svim
 glavnim pretraživačima. Konkretno, IdenTrust je potpisao naš intermedijar koristeći njihov
-"DST Root CA X3" (sada se zove "TrustID X3 Root"). [Preuzmite "TrustID X3 Root" na identrust.com] (https://www.identrust.com/support/downloads) (ili, alternativno, kopiju možete preuzeti ovde: [.pem] (/ certs / trustid-x3 -root.pem.txt), [.p7b] (/ certs / trustid-x3-root.p7b)).
+"DST Root CA X3" (sada se zove "TrustID X3 Root"). [Preuzmite "TrustID X3 Root" na identrust.com](https://www.identrust.com/support/downloads) (ili, alternativno, kopiju možete preuzeti ovde: [.pem](/certs/trustid-x3-root.pem.txt), [.p7b](/certs/trustid-x3-root.p7b)).
 
 To znači da su na raspolaganju dva sertifikata gde oba predstavljaju naš
 intermedijar. Jednog potpisuje DST Root CA X3, a drugog potpisuje ISRG
@@ -64,7 +64,7 @@ da sertifikat krajnjeg entiteta ima lanac poverenja koji vodi do pouzdanog root-
 Gotovo svi administratori servera će izabrati da opslužuju lanac uključujući
 posredni sertifikat s naslovom „Let’s Encrypt Authority X3“ i
 Izdavač “DST Root CA X3.” Preporučeni Let's Encrypt softver,
-[Certbot] (https://certbot.org), ovu konfiguraciju će nesmetano izvršiti.
+[Certbot](https://certbot.org), ovu konfiguraciju će nesmetano izvršiti.
 
 Sledeća slika objašnjava odnose između naših sertifikata vizuelno:
 
@@ -83,7 +83,7 @@ ovde navedimo samo u informativne svrhe.
 # Transparentnost sertifikata
 
 Posvećeni smo transparentnosti u svom poslovanju i u sertifikatima koje izdajemo. 
-Sve potvrde šaljemo u [Log o Transparentnosti sertifikata] (https://www.certificate-transparency.org/) 
+Sve potvrde šaljemo u [Log o Transparentnosti sertifikata](https://www.certificate-transparency.org/) 
 dok ih izdajemo. Možete pregledati sve izdate sertifikate na sledećim linkovima:
 
 * [Izdati od strane Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
@@ -93,4 +93,4 @@ dok ih izdajemo. Možete pregledati sve izdate sertifikate na sledećim linkovim
 
 Privatni ključevi za ISRG root CA i intermedijarni podaci Let’s Encrypt čuvaju se na hardverskim sigurnosnim modulima (HSM), koji pružaju visok stepen zaštite od krađe ključeva.
 
-Svi ISRG ključevi trenutno su RSA ključevi. U budućnosti [planiramo generisati ECDSA ključeve] ({{<ref "/upcoming-features.md">}}).
+Svi ISRG ključevi trenutno su RSA ključevi. U budućnosti [planiramo generisati ECDSA ključeve]({{< relref "/upcoming-features.md">}}).

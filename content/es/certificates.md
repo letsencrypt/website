@@ -1,5 +1,6 @@
 ---
 title: Cadena de Confianza
+linkTitle: Cadena de Confianza (Certificados Raíz e Intermedios)
 slug: certificates
 top_graphic: 5
 lastmod: 2018-09-20
@@ -90,4 +91,4 @@ cuando lo emitimos. Puedes ver todos los certificados Let's Encrypt emitidos med
 
 Las llaves privadas para el AC raíz ISRG y los AC intermedios Let's Encrypt son almacenadas en módulos de seguridad de hardware (HSMs por sus siglas en inglés), lo que provee un alto grado de protecció contra el robo de las llaves.
 
-Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA]({{< ref "/upcoming-features.md" >}}).
+Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA]({{< relref "/upcoming-features.md" >}}).

@@ -22,7 +22,7 @@ Si deseas usar CAA para restringir cuales Autoridades de Certificación están p
 emitir certificados para tu dominio, necesitaran un proveedor de DNS que soporte la configuración
 de registros CAA. Comprueba la [página sobre CAA de SSLMate](https://sslmate.com/caa/support) para una lista de tales proveedores. Si tu proveedor está listado, puedes usar el [Generador de Registro CAA de SSLMate](https://sslmate.com/caa/) para generar un set de registros CAA listando los ACs que quieres permitir.
 
-El dominio identificador de Let's Encrypt para CAA es `letsencrypt.org`. Esto es documentado oficialmente [en nuestro Certification Practice Statement (CPS), secció 4.2.1]({{< ref "/repository.md" >}}).
+El dominio identificador de Let's Encrypt para CAA es `letsencrypt.org`. Esto es documentado oficialmente [en nuestro Certification Practice Statement (CPS), secció 4.2.1]({{< relref "/repository.md" >}}).
 
 ## Dónde Poner el Record
 
@@ -37,7 +37,7 @@ El [RFC CAA](https://tools.ietf.org/html/rfc6844) especifica un comportamiento a
 
 Como Let's Encrypt verifica registros CAA antes de cada certificado que emitimos, algunas veces recibimos errores hasta para dominios que no tienen registros CAA. Cuando recibimos un error, no hay manera de saber si estamos autorizados emitir para el dominio afectado, ya que puede haber registros CAA que prohiben emisión, pero no son visibles por el error.
 
-Si recibes un errores relacionados con CAA, prueba un par de veces más en nuestro [ambiente *staging*]({{< ref "/docs/staging-environment.md" >}}) para ver si son temporeros o permanentes. Si son permanentes, necesitarás presentar un problema de soporte con tu proveedor de DNS, o cambiar proveedores. Si no estás seguro que quién es tu proveedor DNS, preguntale a tu proveedor de hospedaje.
+Si recibes un errores relacionados con CAA, prueba un par de veces más en nuestro [ambiente *staging*]({{< relref "/docs/staging-environment.md" >}}) para ver si son temporeros o permanentes. Si son permanentes, necesitarás presentar un problema de soporte con tu proveedor de DNS, o cambiar proveedores. Si no estás seguro que quién es tu proveedor DNS, preguntale a tu proveedor de hospedaje.
 
 Algunos proveedores de DNS que no están familiarizados con CAA contestan inicialmente al reporte del problema con "No soportamos registros CAA." Tu proveedor de DNS no necesita soportar específicamente registros CAA; solo necesita contestar con una respuesta NOERROR para tipos de consulta desconocidos (incluyendo CAA). Devolviendo otros opcodes, incluyendo NOTIMP, para qtypes desconocidos es una violación de [RFC
 1035](https://tools.ietf.org/html/rfc1035), y necesita ser arreglado.

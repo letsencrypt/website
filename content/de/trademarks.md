@@ -285,4 +285,4 @@ im Design festgelegt wurde. (Verwenden Sie im Zweifelsfall ein anderes
 Format.)
 
 <p> <img src="/images/le-logo-lockonly.png" alt="Logo only key" height=125> </p>
-<p> <a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+<p> <a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

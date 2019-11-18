@@ -27,7 +27,7 @@ Note for translators:
 
 {{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} [인증서](#def-certificate)의 발급자에 대한 정보를 얻는 방법을 [사용자 에이전트](#def-user-agent)에 나타내는 데 사용되는 인증서 [연장](#def-extension)입니다. 일반적으로 [OCSP](#def-OCSP) URI와 [발행인 URI](#def-CAI)를 지정합니다. {{% /def %}}
 
-{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} [Let's Encrypt](#def-LE)에서 구현한 프로토콜입니다. 해당 프로토콜과 호환되는 소프트웨어는 Let's Encrypt를 사용하여 [인증서](#def-leaf)를 요청할 수 있습니다. [ACME 초안](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [위키피디아](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
+{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} [Let's Encrypt](#def-LE)에서 구현한 프로토콜입니다. 해당 프로토콜과 호환되는 소프트웨어는 Let's Encrypt를 사용하여 [인증서](#def-leaf)를 요청할 수 있습니다. [ACME RFC](https://tools.ietf.org/html/rfc8555) - [위키피디아](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
 {{% def id="ACME-client" name="ACME Client" %}} ACME 서버와 통신하여 [인증서](#def-leaf)를 요청할 수 있는 프로그램입니다. {{% /def %}}
 
@@ -37,7 +37,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} CA에 대한 일련의 기술 및 정책 요구 사항입니다. 모든 주요 [root 프로그램](#def-root-program)에는 기본 요구 사항이 포함되므로 CA는 대부분의 브라우저에서 신뢰할 수 있는 다음 요구 사항을 따라야 합니다. {{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) [명예 CAA 레코드]({< ref.>}})에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) [명예 CAA 레코드]({{< relref "/docs/caa.md" >}})에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} 하나의 도메인 이름을 다른 도메인에 매핑하는 DNS 항목으로, 정형 이름이라고 합니다. [위키피디아](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
@@ -53,9 +53,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} [사용자 에이전트](#def-user-agent)가 [인증서 저장소](#def-store)의 [root 인증서](#def-root)에 연결하여 엔드 엔티티 또는 [리프 인증서](#def-leaf)를 신뢰할 수 있다고 판단하는 데 도움이 되는 [중간 인증서](#def-intermediate) 목록입니다. 참고: 체인이 항상 고유한 것은 아니며, 웹 사이트에서 하나의 root로 이어지는 인증서 체인을 표시할 때 사용자 에이전트는 다른 체인을 사용하여 인증서를 검증하도록 결정할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. [ISRG 인증서 정책](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. [ISRG 인증서 정책]({{< relref "/repository.md#isrg-certificate-policy" >}}) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. [ISRG 인증 실무 명세서](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. [ISRG 인증 실무 명세서]({{< relref "/repository.md#isrg-certification-practice-statement" >}}) - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} 인증서에 "중요"라고 표시된 [확장](#def-extension)이 포함될 수 있습니다. 즉, 소프트웨어가 확장을 처리하는 방법을 이해하지 않는 한 해당 인증서를 거부해야 합니다. 따라서 오래된 소프트웨어에 대한 위험을 야기하지 않고 보안에 중요한 새로운 확장을 도입할 수 있습니다. {{% /def %}}
 
@@ -63,7 +63,7 @@ Note for translators:
 
 {{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} [CA](#def-CA)에서 인증서를 생성하는 데 필요한 정보가 들어 있는 서명된 파일입니다. [Let's Encrypt](#def-LE)에 대한 관련 정보는 [공통 이름](#def-CN), [제목 대체 이름](#def-SAN), 제목 공개 키 정보입니다. 일반적으로 [클라이언트 응용 프로그램](#def-ACME-client)은 사용자에 대한 CSR을 자동으로 생성합니다. 웹 호스팅 공급자 또는 장치도 CSR을 생성할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="Certificate Store" %}} 인증서 저장소에는 신뢰할 수 있는 [root 인증서](#def-root) 목록이 있습니다. 운영체제(예: Windows, Android 또는 Debian) 및 [웹 브라우저](#def-web-browser) (예: 파이어폭스)는 인증서 저장소를 유지합니다. 웹 브라우저가 없는 경우 운영체제의 인증서 저장소에 의존합니다. [인증서](#def-leaf)에서 제공하는 [Let's Encrypt](#def-LE)는 [대부분의 인증서 저장소에서 신뢰]({{< ref "/certificates.md" >}})합니다. {{% /def %}}
+{{% def id="store" name="Certificate Store" %}} 인증서 저장소에는 신뢰할 수 있는 [root 인증서](#def-root) 목록이 있습니다. 운영체제(예: Windows, Android 또는 Debian) 및 [웹 브라우저](#def-web-browser) (예: 파이어폭스)는 인증서 저장소를 유지합니다. 웹 브라우저가 없는 경우 운영체제의 인증서 저장소에 의존합니다. [인증서](#def-leaf)에서 제공하는 [Let's Encrypt](#def-LE)는 [대부분의 인증서 저장소에서 신뢰]({{< relref "/certificates.md" >}})합니다. {{% /def %}}
 
 {{% def id="subject" name="Certificate subject" %}} 인증서 필드의 "제목" 필드는 인증서의 내용을 나타냅니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. {{% /def %}}
 
@@ -73,15 +73,15 @@ Note for translators:
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} 인증서의 내용을 설명하는 인증서 [제목](#def-subject)의 일부입니다. [root 인증서](#def-root) 및 [중간 인증서](#def-intermediate)의 경우 사람이 읽을 수있는 [인증 기관](#def-CA)의 이름입니다. [리프 인증서](#def-leaf)의 경우 인증서의 도메인 이름 중 하나입니다. 참고: 일반적인 이름은 63 자로 제한됩니다. 현재의 인터넷 표준은 소프트웨어가 인증서의 적용 가능성을 결정하기 위해 [제목 대체 이름](#def-SAN) 만 검사 할 것을 기대하기 때문에 인증서가 적용되는 도메인 이름을 나타내는 오래된 방법입니다. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [위키피디아](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< relref "/certificates.md" >}}]({{< relref "/certificates.md" >}}). [위키피디아](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} DNS를 사용하여 제공된 [인증서](#def-leaf) 또는 암호화 키의 신뢰성을 확인하는 방법을 나타내는 메커니즘입니다. [위키피디아](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
 {{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} DNS 응답을 암호화된 방식으로 인증하는 메커니즘입니다. DNSSEC를 사용하려면 TLD, 도메인 이름 소유자 및 재귀적 확인자가 배포해야 합니다. 현재 적용이 다소 부족합니다. [위키피디아](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
-{{% def id="DV" name="Domain-validated certificate" %}} 신청자가 도메인 이름 (요청 조직의 ID가 아닌)에 대한 제어권을 증명한 [인증서](#def-leaf)입니다. [Let's Encrypt](#def-LE)는 DV 인증서만 제공합니다 ([OV](#def-OV) 또는 [EV](#def-EV)가 아닌): [FAQ]({{< ref "/docs/faq.md" >}}) - [위키피디아](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
+{{% def id="DV" name="Domain-validated certificate" %}} 신청자가 도메인 이름 (요청 조직의 ID가 아닌)에 대한 제어권을 증명한 [인증서](#def-leaf)입니다. [Let's Encrypt](#def-LE)는 DV 인증서만 제공합니다 ([OV](#def-OV) 또는 [EV](#def-EV)가 아닌): [FAQ]({{< relref "/docs/faq.md" >}}) - [위키피디아](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: [향후 기능]({{< ref "/upcoming-features.md" >}}) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: [향후 기능]({{< relref "/upcoming-features.md" >}}) {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} Ed448과 함께 특정 유형의 [EdDSA](#def-EdDSA)도 사용할 수 있습니다. {{% /def %}}
 
@@ -93,7 +93,7 @@ Note for translators:
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} 웹 사이트의 전체 도메인 이름입니다. 예를 들어 `www.example.com`은 *FQDN* 입니다. {{% /def %}}
 
-{{% def id="IdenTrust" name="IdenTrust" %}} [인증 기관](#def-CA)입니다. IdenTrust는 [교차 서명한](#def-cross-signing) [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)를 가지고 있습니다: [{{< ref "/certificates.md" >}}]({{< ref "/certificates.md" >}}). [위키피디아](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
+{{% def id="IdenTrust" name="IdenTrust" %}} [인증 기관](#def-CA)입니다. IdenTrust는 [교차 서명한](#def-cross-signing) [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)를 가지고 있습니다: [{{< relref "/certificates.md" >}}]({{< relref "/certificates.md" >}}). [위키피디아](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} [root 인증서](#def-root) 또는 다른 중간에서 서명한 인증서이며 다른 인증서를 서명할 수 있습니다. root 인증서의 개인 키를 오프라인으로 유지하면서 리프 인증서를 서명하는 데 사용됩니다. 매개 변수는 [인증서 체인](#def-chain)에 포함되어 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
@@ -131,11 +131,11 @@ Note for translators:
 
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} 웹 브라우저에 사이트의 [인증서 체인](#def-chain)이 향후 로드에 대해 특정 공용 키를 사용하도록 요구하는 보안 메커니즘입니다. Chrome은 CA의 타협으로부터 보호하기 위해 이 메커니즘을 도입했지만, 사이트 정전을 초래함에 따라 Chrome이 해당 메커니즘을 [사용 중단 및 제거](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)하게 되었습니다. [위키피디아](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
-{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 여러 개별 엔티티가 하위 도메인을 등록할 수 있는 인터넷 도메인을 나타내는 *공용 접미사* 목록입니다. 예를 들어, `com`과 `co.uk`는 TLD가 아니지만 `co.uk`는 공공 접미사입니다. 웹 브라우저에서는 다른 엔티티에 의해 운영될 가능성이 있는 사이트가 서로 웹 쿠키를 공유하지 못하도록 차단하기 위해 이 목록을 사용합니다. [Let's Encrypt](#def-LE) 또한 속도 제한 계산에 목록을 사용합니다: [{{< ref "/rate-limits.md" >}}]({{< ref "/rate-limits.md" >}}). https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 여러 개별 엔티티가 하위 도메인을 등록할 수 있는 인터넷 도메인을 나타내는 *공용 접미사* 목록입니다. 예를 들어, `com`과 `co.uk`는 TLD가 아니지만 `co.uk`는 공공 접미사입니다. 웹 브라우저에서는 다른 엔티티에 의해 운영될 가능성이 있는 사이트가 서로 웹 쿠키를 공유하지 못하도록 차단하기 위해 이 목록을 사용합니다. [Let's Encrypt](#def-LE) 또한 속도 제한 계산에 목록을 사용합니다: [{{< relref "/rate-limits.md" >}}]({{< relref "/rate-limits.md" >}}). https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="Relying Party" %}} 인증서의 정보에 의존하는 사용자입니다. 예를 들어, HTTPS 웹 사이트를 방문하는 사람은 상대편입니다. {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} 인증서는 [CA](#def-CA)에서 해지되었다고 하지 않는 한 만료 날짜까지 유효합니다. 개인 키의 손상 등 다양한 이유로 인증서가 해지될 수 있습니다. 웹 브라우저에서는 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 및 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)와 같은 최신 방법을 사용하여 인증서가 해지되었는지 확인할 수 있습니다. 많은 경우 [해지되지 않는다](https://www.imperialviolet.org/2011/03/18/revocation.html)는 점을 인지하세요. [{{< ref "/docs/revoking.md" >}}]({{< ref "/docs/revoking.md" >}}) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} 인증서는 [CA](#def-CA)에서 해지되었다고 하지 않는 한 만료 날짜까지 유효합니다. 개인 키의 손상 등 다양한 이유로 인증서가 해지될 수 있습니다. 웹 브라우저에서는 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 및 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)와 같은 최신 방법을 사용하여 인증서가 해지되었는지 확인할 수 있습니다. 많은 경우 [해지되지 않는다](https://www.imperialviolet.org/2011/03/18/revocation.html)는 점을 인지하세요. [{{< relref "/docs/revoking.md" >}}]({{< relref "/docs/revoking.md" >}}) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} [인증 기관](#def-CA)에 의해 [자체 서명된](#def-self-signed) 인증서는 [중급](#def-intermediate) 인증서에 서명하는 데 사용되며 [인증서 저장소](#def-store)에 포함됩니다. [위키피디아](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
@@ -151,7 +151,7 @@ Note for translators:
 
 {{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS)의 이전 이름이며, 여전히 공통으로 사용됩니다. {{% /def %}}
 
-{{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE)는 속도 제한에 영향을 주지 않고 인증서 요청을 테스트할 수 있는 스테이징 API를 제공합니다. 스테이징 환경에서 생성된 인증서는 공개적으로 신뢰되지 *않습니다*. 준비 환경은 테스트, 디버깅 및 ACME 클라이언트 개발 용도로 사용해야 합니다. [{{< ref "/docs/staging-environment.md" >}}]({{< ref "/docs/staging-environment.md" >}}) {{% /def %}}
+{{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE)는 속도 제한에 영향을 주지 않고 인증서 요청을 테스트할 수 있는 스테이징 API를 제공합니다. 스테이징 환경에서 생성된 인증서는 공개적으로 신뢰되지 *않습니다*. 준비 환경은 테스트, 디버깅 및 ACME 클라이언트 개발 용도로 사용해야 합니다. [{{< relref "/docs/staging-environment.md" >}}]({{< relref "/docs/staging-environment.md" >}}) {{% /def %}}
 
 {{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 인증서가 유효한 도메인을 나타내는 [인증서](#def-leaf) 필드입니다. 이제 호환성 문제로만 제공되는 [공통 이름](#def-CN)의 사용을 대체합니다. 단일 인증서는 많은 SAN을 포함할 수 있으며 여러 가지 도메인 이름에 대해 유효합니다. [위키피디아](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 

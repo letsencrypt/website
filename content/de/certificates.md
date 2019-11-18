@@ -1,8 +1,9 @@
 ---
 title: Kette des Vertrauens
+linkTitle: Kette des Vertrauens (Root und Intermediate Zertificate)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 # Root Zertifikate
@@ -107,4 +108,4 @@ Die privaten Schlüssel für die ISRG Root CA und die Let’s Encrypt Zwischenze
 CA sind auf Hardware Sicherheitsmodulen (HSM) gespeichert, welche einen hohen
 Grad an Schutz gegen Diebstahl der Schlüssel bieten.
 
-Alle ISRG Schlüssel sind derzeit RSA Schlüssel. Wir [planen die Umstellung auf ECDSA Schlüssels]({{< ref "/upcoming-features.md" >}}).
+Alle ISRG Schlüssel sind derzeit RSA Schlüssel. Wir [planen die Umstellung auf ECDSA Schlüssels]({{< relref "/upcoming-features.md" >}}).

@@ -21,7 +21,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Bilten
 
-Za informaciju oko raznoraznih tehničkih biltena, molimo vas da posetite [Priključite se]({{< ref "/getinvolved.md" >}}).
+Za informaciju oko raznoraznih tehničkih biltena, molimo vas da posetite [Priključite se]({{< relref "/getinvolved.md" >}}).
 
 Da bi ste se prijavili na naš bilten, [kliknite ovde.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 

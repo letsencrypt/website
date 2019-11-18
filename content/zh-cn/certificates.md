@@ -1,8 +1,9 @@
 ---
 title: 证书信任链
+linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
 top_graphic: 5
-lastmod: 2019-05-01
+lastmod: 2019-10-18
 ---
 
 
@@ -73,4 +74,4 @@ IdenTrust 交叉签名了我们的中间证书。这允许我们在将我们自�
 
 ISRG 根证书及 Let's Encrypt 中间证书的私钥均存储在硬件安全模块（HSM）上以提供高度保护，防止私钥被盗取。
 
-当前所有 ISRG 私钥均为 RSA 私钥。我们正在[计划生成 ECDSA 私钥]({{< ref "/upcoming-features.md" >}})。
+当前所有 ISRG 私钥均为 RSA 私钥。我们正在[计划生成 ECDSA 私钥]({{< relref "/upcoming-features.md" >}})。
