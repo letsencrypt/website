@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-31",
+	"lastmod": "2019-11-03",
 	"categories": [
 		"Bash",
 		"C",
@@ -797,6 +797,13 @@
 			"url": "https://github.com/bruncsak/ght-acme.sh",
 			"category": "Bash",
  			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "GetCert2",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)",
 			"acme_v2": "true"
 		}
 	]
