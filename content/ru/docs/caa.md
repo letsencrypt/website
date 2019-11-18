@@ -8,7 +8,7 @@ lastmod: 2017-07-27
 
 {{< lastmod >}}
 
-CAA --- тип записи DNS, с помощью которого владелец сайта может определить 
+CAA -- тип записи DNS, с помощью которого владелец сайта может определить 
 Центры сертификации (CAs) для выпуска сертификатов, содержащих 
 конкретные доменные имена. Она была стандартизирована в 2013 году в 
 [RFC 6844](https://tools.ietf.org/html/rfc6844), чтобы позволить Центру 
@@ -25,14 +25,14 @@ CAA --- тип записи DNS, с помощью которого владел
 Если вам не нужна CAA, можно ничего не делать (но см. ошибки
 CAA ниже). Если же вы хотели бы использовать CAA, чтобы ограничить число 
 Центров сертификации, имеющих право выпуска сертификатов для 
-вашего домена, нужно использовать DNS-провайдера, который поддерживает 
+вашего домена, нужно использовать провайдера DNS, который поддерживает 
 настройку записей CAA. Список таких провайдеров можно найти на 
 [странице SSLMate's CAA](https://sslmate.com/caa/support). Если ваш 
 провайдер нашелся в списке, можно использовать 
 [генератор записей SSLMate's CAA](https://sslmate.com/caa/) для создания
 набора записей CAA, перечисляющих центры сертификации, которые вы хотели бы разрешить.
 
-Идентифицирующее доменное имя Let's Encrypt's для CAA --- `letsencrypt.org`.
+Идентифицирующее доменное имя Let's Encrypt's для CAA -- `letsencrypt.org`.
 Это официально задокументировано [в нашем Положении о практике сертификации
 (CPS), секция 4.2.1]({{< relref "/repository.md" >}}).
 
@@ -44,7 +44,7 @@ CAA ниже). Если же вы хотели бы использовать CAA
 либо для `example.com`. Центры сертификации будут проверять любую версию 
 слева направо и остановятся, как только обнаружат любую запись CAA.
 Так, к примеру, запись CAA для `community.example.com` будет приоритетнее, 
-чем запись для `example.com`. Большинство из тех, кто добавляет записи CAA, 
+чем запись для `example.com`. Большинство использующих записи CAA 
 устанавливают их для зарегистрированного домена верхнего уровня (`example.com`), 
 чтобы они действовали на все поддомены. Также обратите внимание, что 
 записи CAA для поддоменов приоритетнее, чем записи для родительского домена, 
@@ -53,7 +53,7 @@ CAA ниже). Если же вы хотели бы использовать CAA
 для родительского домена.
 
 Валидация CAA придерживается правил CNAMEs, как и другие DNS-запросы. Если 
-`www.community.example.com` --- это CNAME для `web1.example.net`, то Центр 
+`www.community.example.com` -- CNAME для `web1.example.net`, то Центр 
 сертификации сперва запросит записи CAA для `www.community.example.com`, 
 далее, обнаружив CNAME вместо записи CAA для этого доменного имени, 
 запросит CAA для `web1.example.net`. Обратите внимание, что если доменное 
@@ -67,50 +67,53 @@ CAA ниже). Если же вы хотели бы использовать CAA
 удалено в [исправлении](https://www.rfc-editor.org/errata/eid5065), поэтому 
 Let's Encrypt и другие Центры сертификации не реализовали его.
 
-# CAA errors
+# Ошибки CAA
 
-Since Let's Encrypt checks CAA records before every certificate we issue, sometimes
-we get errors even for domains that haven't set any CAA records. When we
-get an error, there's no way to tell whether we are allowed to issue for the
-affected domain, since there could be CAA records present that forbid issuance,
-but are not visible because of the error.
+С тех пор как Let's Encrypt стал проверять записи CAA, прежде чем выпустить 
+любой сертификат, иногда появляются ошибки даже для доменов, не имеющих 
+никаких записей CAA. При появлении ошибки невозможно определить, разрешен ли 
+выпуск для затронутого домена, поскольку могут существовать записи CAA, 
+запрещающие выпуск, которые не видны из-за ошибки. 
 
-If you receive CAA-related errors, try a few more times against our [staging
-environment]({{< relref "/docs/staging-environment.md" >}}) to see if they
-are temporary or permanent. If they are permanent, you will need to file a
-support issue with your DNS provider, or switch providers. If you're not sure
-who your DNS provider is, ask your hosting provider.
+Если вы получаете ошибки, связанные с CAA, сделайте еще несколько попыток, 
+используя наше [тестовое окружение]({{< relref "/docs/staging-environment.md" >}}), 
+чтобы определить, является ли ошибка временной или постоянной. Если она постоянна, 
+вам нужно обратиться с запросом в службу поддержки вашего DNS-провайдера или 
+сменить провайдера. Если вы не знаете, кто ваш DNS-провайдер, выясните это у 
+провайдера вашего хостинга.
 
-Some DNS providers that are unfamiliar with CAA initially reply to problem
-reports with "We do not support CAA records." Your DNS provider does not need
-to specifically support CAA records; it only needs to reply with a
-NOERROR response for unknown query types (including CAA). Returning other
-opcodes, including NOTIMP, for unrecognized qtypes is a violation of [RFC
-1035](https://tools.ietf.org/html/rfc1035), and needs to be fixed.
+Некоторые провайдеры DNS, которые не знакомы с CAA, первоначально отвечают 
+на сообщения о проблемах: «Мы не поддерживаем записи CAA». Вашему DNS-провайдеру 
+не нужно специально поддерживать записи CAA; он только должен возвращать ответ 
+NOERROR для неизвестных типов запросов (включая CAA). Возврат других кодов операций, 
+включая NOTIMP для нераспознанных типов запросов, является нарушением [RFC
+1035](https://tools.ietf.org/html/rfc1035) и подлежит исправлению.
 
 # SERVFAIL
 
-One of the most common errors that people encounter is SERVFAIL. Most often this
-indicates a failure of DNSSEC validation. If you get a SERVFAIL error, your
-first step should be to use a DNSSEC debugger like
-[dnsviz.net](http://dnsviz.net/). If that doesn't work, it's possible that your
-nameservers generate incorrect signatures only when the response is empty. And
-CAA responses are most commonly empty.  For instance, PowerDNS [had this bug in
-version 4.0.3 and below](https://community.letsencrypt.org/t/caa-servfail-changes/38298/2?u=jsha).
+Одной из самых распространенных ошибок, с которыми сталкиваются пользователи, 
+является SERVFAIL. Чаще всего это указывает на ошибку проверки DNSSEC. Если вы 
+получили ошибку SERVFAIL, первым делом используйте отладчик DNSSEC, например, 
+[dnsviz.net](http://dnsviz.net/). Если это не помогло, возможно, ваши серверы 
+имен генерируют неправильные подписи только тогда, когда ответ пуст. And
+CAA responses are most commonly empty.  А ответы CAA чаще всего пусты. Например, 
+PowerDNS [имел эту ошибку в версии 4.0.3 и ниже]
+(https://community.letsencrypt.org/t/caa-servfail-changes/38298/2?u=jsha).
 
-If you don't have DNSSEC enabled and get a SERVFAIL, the second most likely
-reason is that your authoritative nameserver returned NOTIMP, which as described
-above is an RFC 1035 violation; it should instead return NOERROR with an empty
-response. If this is the case, file a bug or a support ticket with your DNS provider.
+Если у вас не включен DNSSEC и вы получили SERVFAIL, вторая наиболее вероятная причина 
+заключается в том, что ваш полномочный сервер имен возвратил NOTIMP, что, 
+как описано выше, является нарушением RFC 1035; вместо этого он должен 
+вернуть NOERROR с пустым ответом. В таком случае отправьте сообщение об 
+ошибке или запрос в службу поддержки вашему провайдеру DNS.
 
-Lastly, SERVFAILs may be caused by outages at your authoritative nameservers.
-Check the NS records for your nameservers and ensure that each server is
-available.
+Наконец, ошибки SERVFAIL могут быть вызваны перебоями в работе ваших полномочных 
+серверов имен. Проверьте записи NS для ваших серверов имен и убедитесь, 
+что каждый сервер доступен.
 
-# Timeout
+# Таймаут
 
-Sometimes CAA queries time out. That is, the authoritative name server never
-replies with an answer at all, even after multiple retries. Most commonly this
-happens when your nameserver has a misconfigured firewall in front of it that
-drops DNS queries with unknown qtypes. File a support ticket with your DNS
-provider and ask them if they have such a firewall configured.
+Иногда запросы CAA заканчиваются таймаутом. То есть полномочный сервер имен 
+не отвечает даже после множества попыток. Чаще всего это
+происходит, если перед вашим сервером имен неправильно настроен файервол, 
+который отвергает запросы DNS с неизвестным типом. Подайте заявку в службу 
+поддержки вашего DNS-провайдера и спросите об их настройках файервола.
