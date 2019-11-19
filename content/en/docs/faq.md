@@ -101,7 +101,7 @@ Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org
 
 ## What IP addresses does Let's Encrypt use to validate my web server?
 
-We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. In the future we will be validating from multiple IP addresses at once. See this [this post](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points) for more detail.
+We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. In the future we will be validating from multiple IP addresses at once. See [this post](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points) for more detail.
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
