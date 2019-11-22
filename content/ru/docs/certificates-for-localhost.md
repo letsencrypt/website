@@ -20,36 +20,21 @@ lastmod: 2017-12-21
 
 Время от времени, разработчики вынуждены выпускать загружаемые нативные приложения, для расширения функциональности и совместного использования с web-приложениями. Например, десктоп-приложения Dropbox и Spotify умеют сканировать файлы на дисках компьютера, что невозможно для web-приложений. Общий подход в реализации таких нативных приложений состоит в запуске локального web-сервера, и обмену данными с web-приложением через XMLHTTPRequest (XHR) или WebSockets. Web-приложения практически всегда используют HTTPS, поэтому все XHR- или WebSockets-запросы по небезопасному протоколу HTTP будут отклонены. Это называется "блокировка смешаного контента" (Mixed Content Blocking). Для взаимодействия с web-приложением, нативное приложение должно быть безопасным.
 
-С одной стороны, современные браузеры  [считают][mcb-localhost] `http://127.0.0.1:8000/` ["потенциально заслуживающим доверие"][secure-contexts] URL-ом, потому что он локальный. Отправленный на `127.0.0.1` трафик гарантированно не уйдёт за пределы вашего компьютера, соответственно он считается безопасным для перехвата по сети. Это означает, что если ваше web-приложение использует HTTPS, а нативное приложение запущено на `127.0.0.1`, то обе программы могут успешно взаимодействовать по  XHR. 
+С одной стороны, современные браузеры  [считают][mcb-localhost] `http://127.0.0.1:8000/` ["потенциально заслуживающим доверие"][secure-contexts] URL-ом, потому что он локальный. Отправленный на `127.0.0.1` трафик гарантированно не уйдёт за пределы вашего компьютера, соответственно он считается безопасным для перехвата по сети. Это означает, что если ваше web-приложение использует HTTPS, а нативное приложение запущено на `127.0.0.1`, то обе программы могут успешно взаимодействовать по  XHR.
 С другой стороны, [для localhost это ещё не работает][let-localhost]. А WebSocket-ы игнорируют и `127.0.0.1`, и `localhost`.
 
 Возможно, вы захотите обойти эти ограничения, настроив резолв произвольного доменного имени в глобальном DNS на адрес `127.0.0.1` (например, `localhost.example.com`), выпустив сертификат для этого домена, распространяя сертификат и соответствующий ему закрытый ключ внутри нативного приложения, и настроив взаимодествие по `https://localhost.example.com:8000/` вместо `http://127.0.0.1:8000/`. *Не делайте этого!* Это подвергнет ваших пользователей риску, и ваш сертификат может быть отозван.
 
 Используя доменное имя вместо IP-адреса, вы позволяете злоумышленникам запустить атаку Man in the Middle (MitM) в процессе поиска IP-адреса по доменному имени (DNS Lookup), и внедрить ответ, который укажет на другой IP-адрес. Атакующий может притвориться нативным приложением, подделывая запросы к web-приложению, что скомпрометирует ваш аккаунт в web-приложении.
 
+Успех атаки MitM возможен потому, что вы вынуждены распространять закрытый ключ для сертификата вместе с нативным приложением. Соответственно, любой, кто скачает это приложение, получит копию ключа. Этим вы скомпрометируете ваш закрытый ключ, и Удостоверяющий Центр (УЦ) отзовёт ваш сертификат, как только узнает об этом. У [множества нативных приложений][mdsp1] были отозваны [их сертификаты][mdsp2] по причине [распространения закрытых ключей][mdsp3].
 
+К сожалению, это сужает список безопасных способов взаимодействия нативных и web-приложений. И ситуация может ещё больше усложниться в недалёком будущем, если браузеры продолжат [затруднять доступ к localhost][tighten-access].
 
-The successful MitM in this situation is possible because in order to make it
-work, you had to ship the private key to your certificate with your native app.
-That means that anybody who downloads your native app gets a copy of
-the private key, including the attacker. This is considered a compromise of your
-private key, and your Certificate Authority (CA) is required to revoke your
-certificate if they become aware of it. [Many native apps][mdsp1] have [had their
-certificates][mdsp2] revoked for [shipping their private key][mdsp3].
+Так же нужно отметить, что web-сервисы с доступом к нативному API изначально небезопасны, потому что сайты, которые вы не намеревались авторизовать, могут получить доступ к этому API. Если решите углубиться в изучение проблемы, обратите внимание на [Cross-Origin
+Resource Sharing][cors], использование заголовка ответа Access-Control-Allow-Origin, и надёжного HTTP-парсера. Потому как даже серверы, не прошедшие подтверждение, могут посылать предварительные запросы, эксплуатирующие уязвимости в вашем парсере.  
 
-Unfortunately, this leaves native apps without a lot of good, secure options to
-communicate with their corresponding web site. And the situation may get
-trickier in the future if browsers further [tighten access to localhost from the
-web][tighten-access].
-
-Also note that exporting a web service that offers privileged native APIs is
-inherently risky, because web sites that you didn't intend to authorize may
-access them. If you go down this route, make sure to read up on [Cross-Origin
-Resource Sharing][cors], use Access-Control-Allow-Origin, and make sure to use a
-memory-safe HTTP parser, because even origins you don't allow access to can send
-preflight requests, which may be able to exploit bugs in your parser.
-
-# Making and trusting your own certificates
+# Создание и поверка ваших собственных сертификатов
 
 Anyone can make their own certificates without help from a CA. The only
 difference is that certificates you make yourself won't be trusted by anyone
