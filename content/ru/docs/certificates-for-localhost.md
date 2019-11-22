@@ -18,38 +18,16 @@ lastmod: 2017-12-21
 
 # Для нативных приложений, взаимодействующих с web-приложениями
 
-Sometimes developers want to offer a downloadable native app that can be
-used alongside a web site to offer extra features. For instance, the Dropbox
-and Spotify desktop apps scan for files from across your machine, which a
-web app would not be allowed to do. One common approach is for these native
-apps to offer a web service on localhost, and have the web app make requests
-to it via XMLHTTPRequest (XHR) or WebSockets. The web app almost always uses HTTPS, which
-means that browsers will forbid it from making XHR or WebSockets requests
-to non-secure URLs. This is called Mixed Content Blocking. To communicate with
-the web app, the native app needs to provide a secure web service.
+Время от времени, разработчики вынуждены выпускать загружаемые нативные приложения, для расширения функциональности и совместного использования с web-приложениями. Например, десктоп-приложения Dropbox и Spotify умеют сканировать файлы на дисках компьютера, что невозможно для web-приложений. Общий подход в реализации таких нативных приложений состоит в запуске локального web-сервера, и обмену данными с web-приложением через XMLHTTPRequest (XHR) или WebSockets. Web-приложения практически всегда используют HTTPS, поэтому все XHR- или WebSockets-запросы по небезопасному протоколу HTTP будут отклонены. Это называется "блокировка смешаного контента" (Mixed Content Blocking). Для взаимодействия с web-приложением, нативное приложение должно быть безопасным.
 
-Fortunately, modern browsers [consider][mcb-localhost] `http://127.0.0.1:8000/` to be a
-["potentially trustworthy"][secure-contexts]
-URL because it refers to a loopback address. Traffic sent to `127.0.0.1` is guaranteed
-not to leave your machine, and so is considered automatically secure against
-network interception. That means if your web app is HTTPS, and you offer a
-native app web service on `127.0.0.1`, the two can happily communicate via XHR.
-Unfortunately, [localhost doesn't yet get the same treatment][let-localhost].
-Also, WebSockets don't get this treatment for either name.
+С одной стороны, современные браузеры  [считают][mcb-localhost] `http://127.0.0.1:8000/` ["потенциально заслуживающим доверие"][secure-contexts] URL-ом, потому что он локальный. Отправленный на `127.0.0.1` трафик гарантированно не уйдёт за пределы вашего компьютера, соответственно он считается безопасным для перехвата по сети. Это означает, что если ваше web-приложение использует HTTPS, а нативное приложение запущено на `127.0.0.1`, то обе программы могут успешно взаимодействовать по  XHR. 
+С другой стороны, [для localhost это ещё не работает][let-localhost]. А WebSocket-ы игнорируют и `127.0.0.1`, и `localhost`.
 
-You might be tempted to work around these limitations by setting up
-a domain name in the global DNS that happens to resolve to `127.0.0.1`
-(for instance, `localhost.example.com`), getting a certificate for that
-domain name, shipping that certificate and corresponding private key
-with your native app, and telling your web app to
-communicate with `https://localhost.example.com:8000/` instead of `http://127.0.0.1:8000/`.
-*Don't do this.* It will put your users at risk, and your certificate may get revoked.
+Возможно, вы захотите обойти эти ограничения, настроив резолв произвольного доменного имени в глобальном DNS на адрес `127.0.0.1` (например, `localhost.example.com`), выпустив сертификат для этого домена, распространяя сертификат и соответствующий ему закрытый ключ внутри нативного приложения, и настроив взаимодествие по `https://localhost.example.com:8000/` вместо `http://127.0.0.1:8000/`. *Не делайте этого!* Это подвергнет ваших пользователей риску, и ваш сертификат может быть отозван.
 
-By introducing a domain name instead of an IP address, you make it possible for
-an attacker to Man in the Middle (MitM) the DNS lookup and inject a response that
-points to a different IP address. The attacker can then pretend to be the local
-app and send fake responses back to the web app, which may compromise your
-account on the web app side, depending on how it is designed.
+Используя доменное имя вместо IP-адреса, вы позволяете злоумышленникам запустить атаку Man in the Middle (MitM) в процессе поиска IP-адреса по доменному имени (DNS Lookup), и внедрить ответ, который укажет на другой IP-адрес. Атакующий может притвориться нативным приложением, подделывая запросы к web-приложению, что скомпрометирует ваш аккаунт в web-приложении.
+
+
 
 The successful MitM in this situation is possible because in order to make it
 work, you had to ship the private key to your certificate with your native app.
