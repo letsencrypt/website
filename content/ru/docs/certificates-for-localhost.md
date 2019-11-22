@@ -8,32 +8,15 @@ lastmod: 2017-12-21
 
 {{< lastmod >}}
 
-Sometimes people want to get a certificate for the hostname "localhost", either
-for use in local development, or for distribution with a native application that
-needs to communicate with a web application. Let's Encrypt can't provide
-certificates for "localhost" because nobody uniquely owns it, and it's not
-rooted in a top level domain like ".com" or ".net". It's possible to
-set up your own domain name that happens to resolve to `127.0.0.1`, and get a
-certificate for it using the DNS challenge. However, this is generally a bad
-idea and there are better options.
+Иногда разработчикам нужен сертификат для доменного имени "localhost" - для локальной разработки, или для распространения внутри нативных приложений для взаимодействия с web-приложением. Let's Encrypt не предоставляет сертификатов для "localhost", т.к. во-первых, у этого доменного имени нет определённого владельца, и во-вторых, он не имеет домена первого уровня - например, ".com" или ".net". Теоретически, возможно настроить выбранное вами доменное имя так, чтобы оно резолвилось на адрес `127.0.0.1`, и выпустить для него сертификат после прохождения проверки DNS. Тем не менее, есть более удачные решения.
 
-# For local development
+# Для локальной разработки
 
-If you're developing a web app, it's useful to run a local web server like
-Apache or Nginx, and access it via `http://localhost:8000/` in your web browser.
-However, web browsers behave in subtly different ways on HTTP vs HTTPS pages.
-The main difference: On an HTTPS page, any requests to load JavaScript from an
-HTTP URL will be blocked. So if you're developing locally using HTTP, you might
-add a script tag that works fine on your development machine, but breaks when
-you deploy to your HTTPS production site. To catch this kind of problem, it's
-useful to set up HTTPS on your local web server. However, you don't want to see
-certificate warnings all the time. How do you get the green lock locally?
+При разработке web-приложения обычно запускают локальный web-сервер (Apache, Nginx), настроенный на `http://localhost:8000/`. Однако, браузеры по-разному обрабатывают HTTP- и HTTPS-запросы. На HTTPS-странице любая попытка загрузить Javascript по HTTP-протоколу будет заблокирована. Поэтому, при локальной разработке, используя HTTP, все скрипты будут загружаться нормально, но после выкладки на боевые HTTPS-сервера возникнут проблемы. Чтобы избежать такой ситуации, нужно настроить доступ по HTTPS на локальном web-сервере. Но как избавиться от постоянных сообщений об ошибке сертификата, как увидеть "зелёный зам**о**к" в адресной строке?
 
-The best option: Generate your own certificate, either self-signed or signed by
-a local root, and trust it in your operating system's trust store. Then use that
-certificate in your local web server. See below for details.
+Наилучшим решением будет создание собственного сертификата - самоподписанного, или подписанного локальным корневым сертификатом - и добавление в доверенное хранилище операционной системы. Подробности см.ниже.
 
-# For native apps talking to web apps
+# Для нативных приложений, взаимодействующих с web-приложениями
 
 Sometimes developers want to offer a downloadable native app that can be
 used alongside a web site to offer extra features. For instance, the Dropbox
