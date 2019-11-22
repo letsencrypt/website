@@ -144,3 +144,12 @@ other = "Расширенная информация для пользовате
 
 [client_developer_information]
 other = "Информация для разработчиков"
+
+[acme_divergences]
+other = "Отступления от текущего черновика ACME"
+
+[acme_divergences_rfc]
+other = "Отступления от ACME RFC"
+
+[onboarding_customers]
+other = "Ознакомление ваших клиентов с Let's Encrypt и протоколом ACME"
