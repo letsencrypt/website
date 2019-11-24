@@ -1,7 +1,9 @@
 ---
 title: Política de privacidad
 slug: privacy
-untranslated: 1
+top_graphic: 4
+date: 2019-09-19
+lastmod: 2019-09-19
 english_is_canonical: 1
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Política de no discriminación
 slug: nondiscrimination
-untranslated: 1
+top_graphic: 4
+date: 2015-06-18
 english_is_canonical: 1
 ---
 

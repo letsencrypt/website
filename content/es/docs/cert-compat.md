@@ -17,23 +17,23 @@ Es posible que desee visitar [esta discusión en particular en el foro de la com
 # Navegadores o Dispositivos compatibles
 
 * Mozilla Firefox >= v2.0
-Google Chrome
-Internet Explorer on Windows XP SP3 y superiores
-Microsoft Edge
-Android OS >= v2.3.6
-Safari >= v4.0 on macOS
-Safari on iOS >= v3.1
-Debian Linux >= v6
-Ubuntu Linux >= v12.04
-NSS Library >= v3.11.9
-Amazon FireOS (Silk Browser)
-Cyanogen > v10
-Jolla Sailfish OS > v1.1.2.16
-Kindle > v3.4.1
-Java 7 >= 7u111
-Java 8 >= 8u101
-Blackberry >= 10.3.3
-PS4 consola de juego con firmware >= 5.00
+* Google Chrome
+* Internet Explorer on Windows XP SP3 y superiores
+* Microsoft Edge
+* Android OS >= v2.3.6
+* Safari >= v4.0 on macOS
+* Safari on iOS >= v3.1
+* Debian Linux >= v6
+* Ubuntu Linux >= v12.04
+* NSS Library >= v3.11.9
+* Amazon FireOS (Silk Browser)
+* Cyanogen > v10
+* Jolla Sailfish OS > v1.1.2.16
+* Kindle > v3.4.1
+* Java 7 >= 7u111
+* Java 8 >= 8u101
+* Blackberry >= 10.3.3
+* PS4 consola de juego con firmware >= 5.00
 
 # No son compatibles
 
