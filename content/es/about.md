@@ -14,7 +14,7 @@ menu:
 
 Le damos gratuitamente a las personas los certificados digitales que necesitan para poder habilitar HTTPS (SSL/TLS) en sitios web, de la forma más amigable al usuario posible. Hacemos esto porque queremos crear una web más segura y respetuosa de la privacidad.
 
-Los principios claves detrás de <em>Let's Encrypt</em> son:
+Los principios claves detrás de *Let's Encrypt* son:
 
 * <strong>Gratuito:</strong> Cualquier que posea un nombre de dominio puede usar <em>Let's Encrypt</em> para obtener un certificado de confianza sin costo alguno.
 * <strong>Automático:</strong> Un programa corriendo en un servidor de web puede interacturar con <em>Let's Encrypt</em> para obtener un certificado fácilmente, configurarlo de manera segura para uso, y automáticamente hacerse cargo de la renovación.
