@@ -16,11 +16,11 @@ Le damos gratuitamente a las personas los certificados digitales que necesitan p
 
 Los principios claves detrás de *Let's Encrypt* son:
 
-* <strong>Gratuito:</strong> Cualquier que posea un nombre de dominio puede usar <em>Let's Encrypt</em> para obtener un certificado de confianza sin costo alguno.
-* <strong>Automático:</strong> Un programa corriendo en un servidor de web puede interacturar con <em>Let's Encrypt</em> para obtener un certificado fácilmente, configurarlo de manera segura para uso, y automáticamente hacerse cargo de la renovación.
-* <strong>Seguro:</strong> <em>Let's Encrypt</em> servirá como una plataforma para avanzar las mejores prácticas de seguridad TLS, tanto en el lado del AC como ayudando a operadores de sitios web a asegurar sus servidores apropiadamente.
+* <strong>Gratuito:</strong> Cualquier que posea un nombre de dominio puede usar *Let's Encrypt* para obtener un certificado de confianza sin costo alguno.
+* <strong>Automático:</strong> Un programa corriendo en un servidor de web puede interacturar con *Let's Encrypt* para obtener un certificado fácilmente, configurarlo de manera segura para uso, y automáticamente hacerse cargo de la renovación.
+* <strong>Seguro:</strong> *Let's Encrypt* servirá como una plataforma para avanzar las mejores prácticas de seguridad TLS, tanto en el lado del AC como ayudando a operadores de sitios web a asegurar sus servidores apropiadamente.
 * <strong>Transparente:</strong> Todos los certificados emitidos o revocados seran registrados públicamente y disponibles para que cualquiera los inspeccione.
 * <strong>Abierto:</strong> La emisión automática y el protocolo de renovación serán publicados como un estándar abierto para que otros pueden adoptar.
-* <strong>Cooperativo:</strong> Al igual que los mismos protocolos subyacentes de Internet, <em>Let's Encrypt</em> es un esfuerzso conjunto para el beneficio de la comunidad, más allá del contrgol de cualquier organización.
+* <strong>Cooperativo:</strong> Al igual que los mismos protocolos subyacentes de Internet, *Let's Encrypt* es un esfuerzso conjunto para el beneficio de la comunidad, más allá del contrgol de cualquier organización.
 
 Tenemos una página con información más detallada sobre [cómo Let's Encrypt AC funciona]({{< relref "/how-it-works.md" >}}).
