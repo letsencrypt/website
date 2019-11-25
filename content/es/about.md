@@ -10,7 +10,7 @@ menu:
     parent: about
 ---
 
-<em>Let's Encrypt</em> es una autoridad de certificación (AC, o <em>CA</em> por sus siglas en inglés) gratuita, automatizada, y abierta, que existe para el beneficio del público. Es un servicio provisto por el [Internet Security Research Group (ISRG)](https://abetterinternet.org/).
+*Let's Encrypt* es una autoridad de certificación (AC, o *CA* por sus siglas en inglés) gratuita, automatizada, y abierta, que existe para el beneficio del público. Es un servicio provisto por el [Internet Security Research Group (ISRG)](https://abetterinternet.org/).
 
 Le damos gratuitamente a las personas los certificados digitales que necesitan para poder habilitar HTTPS (SSL/TLS) en sitios web, de la forma más amigable al usuario posible. Hacemos esto porque queremos crear una web más segura y respetuosa de la privacidad.
 
