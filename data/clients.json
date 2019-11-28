@@ -167,7 +167,9 @@
 		{
 			"name": "acme-lw",
 			"url": "https://github.com/jmccl/acme-lw",
-			"category": "C++"
+			"category": "C++",
+			"acme_v2": "true",
+			"library": "C++"
 		},
 		{
 			"name": "certificaat",
