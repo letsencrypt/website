@@ -23,7 +23,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailinglisten
 
-Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen]({{< ref "/getinvolved.md" >}}) Seite.
+Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen]({{< relref "/getinvolved.md" >}}) Seite.
 
 [Klicken Sie hier](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad), um sich für unseren Newsletter anzumelden.
 
@@ -44,9 +44,9 @@ Die derzeitige Schlüsselstruktur ist:
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [A] [expires: 2019-09-19]
-sub   rsa4096 2015-11-24 [S] [expires: 2019-09-19]
+sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
 ```
 
 Sie können die [GPG Public Key](/security_letsencrypt.org-publickey.asc) hier herunterladen,

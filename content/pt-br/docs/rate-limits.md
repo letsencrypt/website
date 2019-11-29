@@ -16,15 +16,15 @@ organizações possam aumentar gradualmente o número de certificados que eles p
 sem precisar de intervenção da Let's Encrypt.
 
 Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
-nosso [ambiente de testes]({{< ref "/docs/staging-environment.md" >}}) ao invés da API de produção.
+nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}) ao invés da API de produção.
 Se você está trabalhando para integrar a Let's Encrypt a um provedor ou a um website
-muito grande por favor [leia nosso Guia de Integração]({{< ref "/docs/integration-guide.md" >}}).
+muito grande por favor [leia nosso Guia de Integração]({{< relref "/docs/integration-guide.md" >}}).
 
 O principal limite é o de <a name="certificates-per-registered-domain"></a> **Certificados por Domínio Registrado** (50 por semana). Um
 domínio registrado é, de maneira geral, a parte do nome do domínio que você comprou
-do seu registrador de domínios. Por exemplo, no nome `exemplo.com`,
-o domínio registrado é `exemplo.com`. Em `novo.blog.exemplo.com`,
-o domínio registrado é `exemplo.com`. Usamos a 
+do seu registrador de domínios. Por exemplo, no nome `example.com`,
+o domínio registrado é `example.com`. Em `novo.blog.example.com`,
+o domínio registrado é `example.com`. Usamos a 
 [Lista Pública de Sufixos](https://publicsuffix.org) para calcular o domínio
 registrado.   
 
@@ -40,13 +40,13 @@ Renovações são tratadas de forma especial: Elas não usam seu limite de <a na
 Domínio Registrado**, mas estão sujeitas ao 
 limite de 5 **Certificados Duplicados** por semana. Nota: Renovações costumavam usar seu limite de Certificados por 
 Domínio Registrado até Março de 2019, [mas isso não 
-acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189) (Inglês).
+acontece mais](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Um certificado é considerado renovação (ou uma duplicação) de um certificado anterior se ele contém
 o exato conjunto de nomes de domínio, ignorando capitalizações e ordenação
 destes nomes. Por exemplo, se você solicitou um certificado com os nomes
-[`www.exemplo.com`, `exemplo.com`], você pode solicitar mais quatro certificados para 
-[`www.exemplo.com`, `exemplo.com`] na mesma semana. Se você alterar o conjunto de nomes de domínio
+[`www.example.com`, `example.com`], você pode solicitar mais quatro certificados para 
+[`www.example.com`, `example.com`] na mesma semana. Se você alterar o conjunto de nomes de domínio
 de domínio acrescentando [`blog.example.com`], você poderá solicitar certificados
 adicionais.
  
@@ -57,11 +57,11 @@ Revogar certificados não zera os limites de requisições, porque os recursos u
 emitir estes certificados já foram consumidos.
 
 Existe um limite de <a name="failed-validations"></a>**Falha de Validação** de 5 falhas
-por conta, por nome de domínio, por hora. Este limite é maior em nosso [ambiente de testes]({{< ref "/docs/staging-environment.md" >}}), você
+por conta, por nome de domínio, por hora. Este limite é maior em nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}), você
 pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
 Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
-<name="overall-requests"></a>**Limite
+<a name="overall-requests"></a>**Limite
 Geral** de 20 requisições por segundo. O endpoint "/directory" e o diretório "/acme" 
 e seus subdiretórios possuem um Limite Geral de 40 requisições por segundo.
 
@@ -70,12 +70,12 @@ Temos dois outros limites que você dificilmente atingirá.
 Você pode criar um máximo de 10 <a name="accounts-per-ip-address"></a>**Contas por Endereço IP** por 3 horas. Você pode
 criar um máximo de 500 **Contas por Intervalo de IP** nas configurações IPv6 /48 por 
 3 horas. Atingir qualquer um destes dois limites é bem raro, e recomendamos que
-grandes integradores [usem uma conta para muitos usuários]({{< ref "/docs/integration-guide.md" >}}).
+grandes integradores [usem uma conta para muitos usuários]({{< relref "/docs/integration-guide.md" >}}).
 
 Você pode ter um máximo de 300 <a name="pending-authorizations"></a>**Autorizações Pendentes** na sua conta. Atingir
 este limite é bem raro e acontece com mais frequência durante o desenvolvimento de clientes ACME. Isso
 normalmente significa que o seu cliente está criando autorizações e as deixando em aberto.
-Por favor use nosso [ambiente de testes]({{< ref "/docs/staging-environment.md" >}}) se você está
+Por favor use nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}) se você está
 desenvolvendo um cliente ACME.
 
 Para usuários da API ACME v2 você pode criar um máximo de 300 <a
@@ -105,7 +105,7 @@ Observe que a maioria dos provedores de hospedagem não precisa de aumentos de l
 não há limites para o número de domínios distintos registrados para os quais você pode emitir certificados.
 Enquanto a maioria dos seus usuários não tiver mais do que 2000 subdomínios em
 um domínio registrado, você provavelmente não precisará de um aumento. Veja nosso [Guia de
-Integração]({{< ref "/docs/integration-guide.md" >}}) para mais dicas.  
+Integração]({{< relref "/docs/integration-guide.md" >}}) para mais dicas.  
 
 # <a name="clearing-pending"></a>Limpando Autorizações Pendentes
 
@@ -113,9 +113,9 @@ Se você possui um grande número de objetos pendentes de autorização e está 
 erro de limite de requisições, você pode acionar uma tentativa de validação para estes
 objetos de autorização enviando uma solicitação POST assinada com JWS para um dos desafios, como
 descrito nagi 
-[Especificação ACME](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges) (Inglês).
+[Especificação ACME](https://tools.ietf.org/html/rfc8555#section-7.5.1) (Inglês).
 Os objetos pendentes de autorização são representados por URLs no formato
-https://acme-v01.api.letsencrypt.org/acme/authz/XYZ, e precisam aparecer nos
+`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ`, e precisam aparecer nos
 registros do seu cliente. Observe que não importa se a validação é bem sucedida ou não.
 Qualquer resultado fará com que a autorização saia do estado "Pendente". Se você não
 possui os registros contendo as URLs de autorização relevantes, você precisa esperar que

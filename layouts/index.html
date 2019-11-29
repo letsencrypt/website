@@ -2,6 +2,7 @@
 <div class="hero tall">
   <div class="container">
     <h1>{{ i18n "home_hero_title" | safeHTML }}</h1>
+    <h2>Read our 2019 Annual Report (<a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf">Desktop</a>, <a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf">Mobile</a>)</h2>
     <div class="buttons flex">
       <div class="flex1 tar mr1m">
         <a class="dib" href="{{ "getting-started/" | relLangURL }}">{{ i18n "home_hero_getting_started" | safeHTML }}</a>
@@ -38,22 +39,25 @@
                 {{ end }}
               </ul>
               {{ with .OutputFormats.Get "RSS" -}}
-                <p class="rss-subscribe">{{ i18n "subscribe_rss" . | safeHTML }}</p>
+                <p class="rss-subscribe">
+                  <i class="fas fa-rss-square" aria-hidden="true"></i>
+                  {{ i18n "subscribe_rss" (dict "Permalink" "/feed.xml") | safeHTML }}
+                </p>
               {{ end  }}
           </div>
         </div>
         <div class="pure-u-1 pure-u-md-1-2">
           <div class='grid-container'>
             <h2 class="through-line"><a href="{{ "sponsors/" | relLangURL }}">{{ i18n "home_major_sponsors" }}</a></h2>
-            <div class="text-center">
+            <div class="text-center home_sponsors">
 {{ range $.Site.Data.sponsors.platinum }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.gold }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.silver }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
 {{ end }}
             </div>
           </div>

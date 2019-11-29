@@ -27,11 +27,11 @@ fonctionne sur de nombreux systèmes d'exploitation et possède une excellente d
 Site Certbot][Certbot] pour obtenir des instructions personnalisées pour votre système d'exploitation et votre serveur Web.
 
 Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer autre chose, il y a
-[beaucoup plus de clients ACME à choisir]({{< ref "/docs/client-options.md" >}}). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
+[beaucoup plus de clients ACME à choisir]({{< relref "/docs/client-options.md" >}}). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
 
 Si vous expérimentez avec différents clients ACME, utilisez notre
-[environnement de développement]({{< ref "/docs/staging-environment.md" >}}) pour éviter d'atteindre les
-[limites d'accès]({{< ref "/docs/rate-limits.md" >}}).
+[environnement de développement]({{< relref "/docs/staging-environment.md" >}}) pour éviter d'atteindre les
+[limites d'accès]({{< relref "/docs/rate-limits.md" >}}).
 
 [Certbot]: https://certbot.eff.org/ "Certbot"
 

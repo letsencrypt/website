@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt - это <span>бесплатный</span>, <span>автоматизированный</span>, и <span>открытый</span> Центр Сертификации."
+other = "Let&rsquo;s Encrypt --- это <span>бесплатный</span>, <span>автоматизированный</span> и <span>открытый</span> Центр Сертификации."
 
 [home_hero_getting_started]
 other = "Приступить"
@@ -25,7 +25,7 @@ other = "Ещё..."
 other = "Подписаться <a href=\"{{ .Permalink }}\">на RSS</a>"
 
 [footer_support_us]
-other = "Помогите сделать Интернет безопасным, и уважающим вашу конфиденциальность."
+other = "Помогите сделать Интернет безопасным и уважающим вашу конфиденциальность."
 
 [footer_donate]
 other = "Поддержите нас"
@@ -43,7 +43,7 @@ other = "Linux Foundation является зарегистрированным 
 other = "Пропустить навигационные ссылки"
 
 [last_updated]
-other = "Последнее обновление:"
+other = "Последнее обновление: "
 
 [see_all_doc]
 other = "Вся документация"
@@ -76,3 +76,71 @@ other = "Внимание! Английская версия сайта была
 
 [not_yet_translated]
 other = "Эта страница ещё не переведена. Вы можете внести свой вклад <a href=\"https://github.com/letsencrypt/website\">здесь</a>."
+
+[english_is_canonical]
+other = "Английская версия является каноничной"
+
+[graph_issued]
+other = "Выпущено"
+
+[graph_certificates_active]
+other = "Активные сертификаты"
+
+[graph_fully_qualified_domains_active]
+other = "Полноопределённые активные домены"
+
+[graph_registered_domains_active]
+other = "Зарегистрированные активные домены"
+
+[graph_active_count]
+other = "Количество активных"
+
+[graph_issued_per_day]
+other = "Выпущено за сутки"
+
+[graph_all_users]
+other = "Все пользователи"
+
+[graph_usa_users]
+other = "Пользователи из США"
+
+[graph_japan_users]
+other = "Пользователи из Японии"
+
+[graph_percent_https]
+other = "Доля страниц, в %, загруженных по HTTPS (скользящая средняя за 14 дней)"
+
+[certificate_transparency_name]
+other = "Название"
+
+[certificate_transparency_role]
+other = "Назначение"
+
+[certificate_transparency_role_production]
+other = "Официальное использование"
+
+[certificate_transparency_role_test]
+other = "Тестирование"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Открытый ключ"
+
+
+
+
+
+
+[overview]
+other = "Обзор"
+
+[subscriber_information]
+other = "Информация для пользователей"
+
+[advanced_subscriber_information]
+other = "Расширенная информация для пользователей"
+
+[client_developer_information]
+other = "Информация для разработчиков"

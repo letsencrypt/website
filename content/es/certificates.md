@@ -1,5 +1,6 @@
 ---
 title: Cadena de Confianza
+linkTitle: Cadena de Confianza (Certificados Raíz e Intermedios)
 slug: certificates
 top_graphic: 5
 lastmod: 2018-09-20
@@ -7,7 +8,7 @@ lastmod: 2018-09-20
 
 # Certificados Raíz
 
-Nuestras raíces son seguramente mantenidas "offline". Emitimos certificados de entidad final a subscriptores de los intermedios en la siguiente sección.
+Nuestras raíces son seguramente mantenidas "offline". Emitimos certificados de entidad final a subscriptores de los siguientes intermedios.
 
 * Activo
   * [ISRG Root X1 (autofirmado)](/certs/isrgrootx1.pem.txt)
@@ -23,9 +24,9 @@ Hemos configurado sitios web para probar certificados encadenados a nuestras ra�
 
 # Certificados Intermedios
 
-IdenTrust ha firmado (firma cruzada, *cross-signed* en inglés) nuestros intermedios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras nosotros propagamos nuestra propia raíz.
+IdenTrust ha firmado (firma cruzada, *cross-signed* en inglés) nuestros intermedios. Esto permite que nuestros certificados de fin sean aceptados por todos los navegadores grandes mientras propagamos nuestra propia raíz.
 
-Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", está reservado para recuperación de desastre y solo se usará si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermedios X1 y X2 fueron nuestra primera generació de intermedios. Los hemos reemplazado con intermedios que son más compatibles con Windows XP.
+Bajo circunstancias normales, certificados emitidos por Let's Encrypt vendran de "Let's Encrypt Authority X3". El otro intermediario, "Let's Encrypt Authority X4", está reservado para recuperación de desastre y solo se usará si perdemos la abilidad de emitr con "Let's Encrypt Authority X3". Los intermedios X1 y X2 fueron nuestra primera generación de intermedios. Los hemos reemplazado con intermedios que son más compatibles con Windows XP.
 
 * Activo
   * [Let's Encrypt Authority X3 (Firmado por IdenTrust)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
@@ -49,7 +50,7 @@ Nuestro intermedio es firmado por ISRG Root X1. Sin embargo, ya que somos una au
 muy nueva, ISRG Root X1 aún no es confiado en la mayoría de los navegadores.
 A fin de que seamos ampliamente confiados de inmediato, nuestro intermedio es *cross-signed* por otra autoridad
 de certificación, IdenTrust, cuya raíz ya está confiada en todos los navegadores.
-Especificamente, IdenTrust ha *cross-signed* nuestro intermedio usando su [DST Root CA X3](https://www.identrust.com/certificates/trustid/root-download-x3.html).
+Especificamente, IdenTrust ha *cross-signed* nuestro intermedio usando su "DST Root CA X3" (ahora llamado "TrustID X3 Root"). [Descarga "TrustID X3 Root" en identrust.com](https://www.identrust.com/support/downloads) (o, alternativamente, puedes descargar una copia aquí: [.pem](https://letsencrypt.org/certs/trustid-x3-root.pem.txt), [.p7b](https://letsencrypt.org/certs/trustid-x3-root.p7b)).
 
 Eso significa que hay dos certificados disponibles que ambos representan nuestro
 intermedio. Uno es firmado por DST Root CA X3, y el otro es firmado por ISRG Root X1.
@@ -90,4 +91,4 @@ cuando lo emitimos. Puedes ver todos los certificados Let's Encrypt emitidos med
 
 Las llaves privadas para el AC raíz ISRG y los AC intermedios Let's Encrypt son almacenadas en módulos de seguridad de hardware (HSMs por sus siglas en inglés), lo que provee un alto grado de protecció contra el robo de las llaves.
 
-Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA]({{< ref "/upcoming-features.md" >}}).
+Todas las llaves ISRG son llaves RSA actualmente. Estamos [planeando generar llaves ECDSA]({{< relref "/upcoming-features.md" >}}).

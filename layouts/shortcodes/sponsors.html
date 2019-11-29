@@ -4,7 +4,7 @@
     <h2>{{ i18n "platinum" }}</h2>
     <div align="center">
 {{ range $.Site.Data.sponsors.platinum }}
-      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
+      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
 {{ end }}
     </div>
   </div>
@@ -13,7 +13,7 @@
     <h2>{{ i18n "gold" }}</h2>
     <div align="center">
 {{ range $.Site.Data.sponsors.gold }}
-      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
+      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
 {{ end }}
     </div>
   </div>
@@ -22,7 +22,7 @@
     <h2>{{ i18n "silver" }}</h2>
     <div align="center">
 {{ range $.Site.Data.sponsors.silver }}
-      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
+      <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;"></a>
 {{ end }}
     </div>
   </div>

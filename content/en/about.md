@@ -3,7 +3,7 @@ title: About Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-01-28
+lastmod: 2019-11-11
 menu:
   main:
     weight: 10
@@ -13,6 +13,8 @@ menu:
 Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's benefit. It is a service provided by the [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/).
 
 We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
+
+You can read about our most recent year in review by downloading our annual report ([Desktop](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 The key principles behind Let's Encrypt are:
 
@@ -24,4 +26,4 @@ The key principles behind Let's Encrypt are:
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
-We have a page with more detailed information about [how the Let's Encrypt CA works]({{< ref "/how-it-works.md" >}}).
+We have a page with more detailed information about [how the Let's Encrypt CA works]({{< relref "/how-it-works.md" >}}).

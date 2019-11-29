@@ -72,25 +72,16 @@ a.pure-menu-link:hover {
 // Mobile nav styles
 @include media-query($on-palm) {
     #menuIcon {
+        color: $grey-color-dark;
+        font-size: 20px;
         display: block;
         float: right;
         width: 36px;
-        height: 26px;
         line-height: 0;
         padding-top: 10px;
         text-align: center;
         cursor: pointer;
-        cursor: hand;
-        margin-top:30px;
-
-        > svg {
-            width: 18px;
-            height: 15px;
-
-            path {
-                fill: $grey-color-dark;
-            }
-        }
+        margin-top: 30px;
     }
     .site-nav {
         text-align: left;

@@ -1,0 +1,132 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt adalah Otoritas Sertifikasi yang <span>gratis</span>, <span>terotomatisasi</span>, dan <span>terbuka</span>."
+
+[home_hero_getting_started]
+other = "Memulai"
+
+[home_hero_donate]
+other = "Donasi"
+
+[home_hero_sponsor]
+other = "Sponsor"
+
+[home_major_sponsors]
+other = "Sponsor dan Donatur Utama"
+
+[home_from_our_blog]
+other = "Dari blog kami"
+
+[read_more]
+other = "Baca lebih lanjut"
+
+[subscribe_rss]
+other = "Langganan <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
+
+[footer_donate]
+other = "Donasi"
+
+[footer_policies]
+other = """
+Lihat <a href="/id/privacy/">kebijakan privasi</a> kami.<br>
+Lihat <a href="/id/trademarks/">kebijakan merek</a> kami.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation adalah merek dagang terdaftar milik The Linux Foundation. Linux dalah merk dagang terdaftar milik Linus Torvalds."
+
+[header_skip_nav]
+other = "Lewati tautan navigasi"
+
+[last_updated]
+other = "Terakhir diperbaharui:"
+
+[see_all_doc]
+other = "Lihat semua dokumentasi"
+
+[blog_feed]
+other = "Umpan dari Blog Let's Encrypt"
+
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Bahasa"
+
+[view_in_english]
+other = "Lihat dalam Bahasa Ingris"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Lihat dalam Bahasa Indonesia"
+
+[old_version]
+other = "Catatan: Versi pada Bahasa Ingris telah diperbaharui ketimbang terjemahan ini."
+
+[not_yet_translated]
+other = "Laman ini belum diterjemahkan. Anda dapat ikut berkontribusi <a href=\"https://github.com/letsencrypt/website\">di sini</a>."
+
+[english_is_canonical]
+other = "The English version is authoritative"
+
+[graph_issued]
+other = "Terbit"
+
+[graph_certificates_active]
+other = "Sertifikat Aktif"
+
+[graph_fully_qualified_domains_active]
+other = "Domain Terkualifikasi Aktif"
+
+[graph_registered_domains_active]
+other = "Domain Terdaftar Aktif"
+
+[graph_active_count]
+other = "Jumlah Aktif"
+
+[graph_issued_per_day]
+other = "Penerbitan Per Hari"
+
+[graph_all_users]
+other = "Semua Pengguna"
+
+[graph_usa_users]
+other = "Pengguna dari Amerika"
+
+[graph_japan_users]
+other = "Pengguna dari Jepang"
+
+[graph_percent_https]
+other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"
+
+
+
+
+
+
+[overview]
+other = "Ringkasan"
+
+[subscriber_information]
+other = "Informasi untuk Pelanggan (*Subcriber*)"
+
+[advanced_subscriber_information]
+other = "Informasi untuk Pelanggan Tingkat Lanjut"
+
+[client_developer_information]
+other = "Informasi untuk Pengembang Klien (*Client Developer*)"
+
+[acme_divergences]
+other = "Perbedaan dari draf ACME terkini"
+

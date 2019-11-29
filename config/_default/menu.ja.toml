@@ -1,0 +1,32 @@
+[[main]]
+name = "コミュニティ"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "寄付"
+weight = 30
+identifier = "donate"
+url = "/ja/donate/"
+[[main]]
+name = "私たちについて"
+weight = 40
+identifier = "about"
+url = "/ja/about/"
+[[main]]
+name = "インターネット・セキュリティ研究グループ (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "サービス・ステータス"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "キャリア"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"

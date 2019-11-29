@@ -1,15 +1,17 @@
 {
-	"lastmod": "2019-08-02",
+	"lastmod": "2019-11-03",
 	"categories": [
 		"Bash",
 		"C",
 		"C++",
 		"Clojure",
+		"Configuration management tools",
 		"D",
 		"Docker",
 		"Go",
 		"HAProxy",
 		"Java",
+		"Lua",
 		"Microsoft Azure",
 		"nginx",
 		"Node.js",
@@ -72,10 +74,6 @@
 			"url": "https://www.froxlor.org/"
 		},
 		{
-			"name": "Mesosphere DCOS",
-			"url": "https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/"
-		},
-		{
 			"name": "Virtualmin Web Hosting Control Panel",
 			"url": "https://www.virtualmin.com/"
 		},
@@ -101,8 +99,7 @@
 		},
 		{
 			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net",
-			"comments": "(ACMEv2 only)"
+			"url": "http://www.synchro.net"
 		},
 		{
 			"name": "ruxy",
@@ -127,14 +124,13 @@
 		{
 			"name": "Vesta Control Panel",
 			"url": "https://vestacp.com/"
+		},
+		{
+			"name": "Apache HTTP Server",
+			"url": "https://httpd.apache.org"
 		}
 	],
 	"list": [
-		{
-			"name": "Certbot",
-			"url": "https://certbot.eff.org/",
-			"acme_v2": "Certbot >= 0.22.0"
-		},
 		{
 			"name": "GetSSL",
 			"url": "https://github.com/srvrco/getssl/tree/APIv2",
@@ -163,8 +159,9 @@
 			}
 		},
 		{
-			"name": "acme-client",
-			"url": "https://kristaps.bsd.lv/acme-client/",
+			"name": "OpenBSD acme-client",
+			"url": "https://man.openbsd.org/acme-client.1",
+			"acme_v2": "OpenBSD >= 6.6",
 			"category": "C"
 		},
 		{
@@ -175,6 +172,7 @@
 		{
 			"name": "certificaat",
 			"url": "https://github.com/danielsz/certificaat",
+			"acme_v2": "true",
 			"category": "Clojure"
 		},
 		{
@@ -185,6 +183,7 @@
 		{
 			"name": "ZeroSSL",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
@@ -198,6 +197,7 @@
 			"url": "https://go-acme.github.io/lego/",
 			"category": "Go",
 			"library": "Go",
+			"acme_v2": "Lego >= v1.0.0",
 			"challenges": {
 				"TLS-ALPN-01": "true"
 			}
@@ -212,17 +212,19 @@
 			"url": "https://github.com/hlandau/acme",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi"
 		},
 		{
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
-			"comments": "(Reverse proxy to handle https/tls)"
+			"comments": "(Reverse proxy to handle https/tls)",
+			"acme_v2": "Lets-proxy2 >= v0.21.0"
 		},
 		{
 			"name": "autocert",
 			"url": "https://godoc.org/golang.org/x/crypto/acme/autocert",
+			"acme_v2": "true",
 			"category": "Go",
 			"challenges": {
 				"TLS-ALPN-01": "true"
@@ -236,6 +238,7 @@
 		{
 			"name": "Traefik",
 			"url": "https://traefik.io/",
+			"acme_v2": "true",
 			"category": "Go"
 		},
 		{
@@ -244,7 +247,7 @@
 			"category": "HAProxy"
 		},
 		{
-			"name": "HAProxy ACME v2 client",
+			"name": "HAProxy client",
 			"url": "https://github.com/haproxytech/haproxy-lua-acme",
 			"acme_v2": "true",
 			"category": "HAProxy"
@@ -258,6 +261,7 @@
 		{
 			"name": "ManageEngine Key Manager Plus",
 			"url": "https://www.manageengine.com/key-manager/",
+			"acme_v2": "Version >= 5650",
 			"category": "Java"
 		},
 		{
@@ -269,6 +273,7 @@
 		{
 			"name": "lua-resty-auto-ssl",
 			"url": "https://github.com/GUI/lua-resty-auto-ssl",
+			"acme_v2": "lua-resty-auto-ssl >= 0.13.0",
 			"category": "nginx"
 		},
 		{
@@ -302,6 +307,7 @@
 		{
 			"name": "Greenlock for node.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
+			"acme_v2": "true",
 			"library": "Node.js"
 		},
 		{
@@ -324,11 +330,13 @@
 			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS"
+			"category": "Windows / IIS",
+			"library": "Perl"
 		},
 		{
 			"name": "Crypt::LE",
 			"url": "https://metacpan.org/pod/Crypt::LE",
+			"acme_v2": "true",
 			"category": "Perl",
 			"library": "Perl"
 		},
@@ -376,12 +384,6 @@
 			"category": "PHP"
 		},
 		{
-			"name": "php-acme-client",
-			"url": "https://github.com/kouk1/php-acme-client",
-			"acme_v2": "true",
-			"category": "PHP"
-		},
-		{
 			"name": "ACME Tiny",
 			"url": "https://github.com/diafygi/acme-tiny",
 			"acme_v2": "true",
@@ -390,6 +392,7 @@
 		{
 			"name": "simp_le",
 			"url": "https://github.com/zenhack/simp_le",
+			"acme_v2": "true",
 			"category": "Python"
 		},
 		{
@@ -503,7 +506,7 @@
 		},
 		{
 			"name": "win-acme",
-			"url": "https://github.com/PKISharp/win-acme",
+			"url": "https://pkisharp.github.io/win-acme",
 			"category": "Windows / IIS",
 			"acme_v2": "true",
 			"comments": "(.NET)"
@@ -558,12 +561,14 @@
 		{
 			"name": "DelphiACME",
 			"url": "https://github.com/tothpaul/DelphiACME",
+			"acme_v2": "true",
 			"library": "Delphi",
 			"comments": "(Embarcadero Delphi)"
 		},
 		{
 			"name": "eggsampler/acme",
 			"url": "https://github.com/eggsampler/acme",
+			"acme_v2": "true",
 			"library": "Go"
 		},
 		{
@@ -608,7 +613,6 @@
 			"library": "Python",
 			"comments": "(Twisted client for Python 2 / 3)"
 		},
-		
 		{
 			"name": "publishlab/node-acme-client",
 			"url": "https://github.com/publishlab/node-acme-client",
@@ -619,6 +623,7 @@
 			"name": "Net::ACME2",
 			"url": "https://metacpan.org/pod/Net::ACME2",
 			"acme_v2": "true",
+			"library": "Perl",
 			"challenges": {
 				"TLS-ALPN-01": "true"
 			}
@@ -631,27 +636,32 @@
 		{
 			"name": "LEClient PHP library",
 			"url": "https://github.com/yourivw/LEClient",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"library": "PHP"
 		},
 		{
 			"name": "le-acme2-php library",
 			"url": "https://github.com/fbett/le-acme2-php",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"library": "PHP"
 		},
 		{
 			"name": "stonemax/acme2 PHP client",
 			"url": "https://github.com/stonemax/acme2",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"library": "PHP"
 		},
 		{
 			"name": "itr-acme-client PHP library",
 			"url": "https://github.com/ITronic/itr-acme-client",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"category": "PHP"
 		},
 		{
 			"name": "Certify The Web (Windows)",
 			"url": "https://certifytheweb.com",
-			"acme_v2": "v4 onwards"
+			"acme_v2": "v4 onwards",
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "Ansible acme_certificate module",
@@ -659,12 +669,14 @@
 			"acme_v2": "ansible >= 2.6",
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
-			}
+			},
+			"category": "Configuration management tools"
 		},
 		{
-			"name": "WinCertes Windows ACMEv2 client",
+			"name": "WinCertes Windows client",
 			"url": "https://github.com/aloopkin/WinCertes",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "uacme",
@@ -691,7 +703,7 @@
 		},
 		{
 			"name": "GetCert",
-			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		},
@@ -700,7 +712,6 @@
 			"url": "https://github.com/cschlote/acme-lw-d",
 			"category": "D",
 			"library": "D",
-			"comments": "An ACME v2 client/library written in the D computer language",
 			"acme_v2": "true"
 		},
 		{
@@ -714,6 +725,85 @@
 			"url": "https://makoserver.net/articles/Lets-Encrypt",
 			"category": "Lua",
 			"comments": "The plugin's main objective is to provide certificates for servers on private networks.",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Apache httpd",
+			"url": "https://httpd.apache.org",
+			"comments": "Support via the module mod_md.",
+			"acme_v2": "Apache >= 2.4.41",
+			"category": "C"
+		},
+		{
+			"name": "mod_md",
+			"url": "https://github.com/icing/mod_md",
+			"comments": "Separate, more frequent releases of the Apache module.",
+			"acme_v2": "v2.0.x onwards",
+			"category": "C"
+		},
+		{
+			"name": "Azure WebApp SSL Manager",
+			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
+			"category": "Microsoft Azure",
+			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "App Service Acmebot",
+			"url": "https://github.com/shibayan/appservice-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Compatible to Azure Web Apps / Functions / Web App for Containers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Key Vault Acmebot",
+			"url": "https://github.com/shibayan/keyvault-acmebot",
+			"category": "Microsoft Azure",
+			"comments": "(Work with Azure Key Vault Certificates)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP",
+			"url": "https://github.com/acmephp/acmephp",
+			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Acme PHP Library",
+			"url": "https://github.com/acmephp/core",
+			"library": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "lua-resty-acme",
+			"url": "https://github.com/fffonion/lua-resty-acme",
+			"category": "nginx",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acertmgr",
+			"url": "https://github.com/moepman/acertmgr",
+			"category": "Python",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme-cert-tool",
+			"url": "https://github.com/mk-fg/acme-cert-tool",
+			"category": "Python",
+			"acme_v2": "true"
+		},
+		{
+			"name": "ght-acme.sh",
+			"url": "https://github.com/bruncsak/ght-acme.sh",
+			"category": "Bash",
+ 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "GetCert2",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)",
 			"acme_v2": "true"
 		}
 	]

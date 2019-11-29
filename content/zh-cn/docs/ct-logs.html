@@ -1,4 +1,31 @@
 ---
+title: 证书透明度（CT）日志
 slug: ct-logs
-untranslated: 1
+top_graphic: 4
+lastmod: 2019-05-15
 ---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">证书透明度（CT）日志</a>是用于记录和监视 TLS 证书颁发的系统。CT 极大地增强了人们监控和研究证书颁发的能力，这些功能使 CA 生态系统和 Web 安全性得到了大量改进。因此，CT 正迅速成为关键基础设施。</p>
+
+<p>Let's Encrypt 将我们发出的所有证书提交给 CT 日志。我们自己也运营 CT 日志，欢迎所有被公众信任的证书颁发机构向其提交证书。</p>
+
+<h2>资金来源</h2>
+
+<p>我们要感谢以下合作伙伴慷慨赞助 Let's Encrypt 的 CT 日志。如果您的组织希望帮助我们继续这项工作，请考虑<a href="{{< relref "/become-a-sponsor.html" >}}">捐赠或成为赞助商</a>。</p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></center></p>
+
+<h2>架构</h2>
+
+<p>我们的日志使用在 AWS 基础设施上运行的 Google 的 <a href="https://github.com/google/trillian/">Trillian 软件</a>。我们使用 <a href="https://kubernetes.io/">Kubernetes</a> 进行容器编排和作业调度，使用 AWS RDS 进行数据库管理。</p>
+
+<h2>日志监控</h2>
+
+<p>Let's Encrypt 开发了一个名为 <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> 的开源 CT 日志监控工具。我们使用此工具来监控我们自己的日志的稳定性和合规性，我们希望其他人也会发现它的实用性。</p>
+
+<h2>CT 日志服务器</h2>
+
+{{< ct_logs >}}
+
