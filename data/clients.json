@@ -24,6 +24,7 @@
 		"Windows / IIS"
 	],
 	"libraries": [
+		"C++",
 		"D",
 		"Delphi",
 		"Go",
@@ -168,7 +169,7 @@
 			"name": "acme-lw",
 			"url": "https://github.com/jmccl/acme-lw",
 			"category": "C++",
-			"acme_v2": "true",
+			"acme_v2": "acme-lw >= v0.2",
 			"library": "C++"
 		},
 		{
