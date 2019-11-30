@@ -76,7 +76,7 @@
                 {{ end }}
               {{ end }}
               {{ if not ( $scratch.Get "with_page") }}
-                {{ errorf "Missing templatte placeholder for page %q in " $page.Path $lang }}
+                {{ errorf "Missing templatte placeholder for page %q in %q" $page.Path $lang }}
               {{ end }}
             </td>
             {{ end }}
