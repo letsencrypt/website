@@ -58,12 +58,12 @@
 
 {{ range $.Site.Data.clients.list }}
     {{ if and (not .category) (not .library) }}
-            {{ $.MissingLibraryOrCategory }}
+            {{ errorf "Missing Library or Category for %q" .name }}
     {{ end }}
     {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
-            {{ $.CategoryUnknow }}
+            {{ errorf "Category %q Unknow for %q" .category .name }}
     {{ end }}
     {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
-            {{ $.LibraryUnknow }}
+            {{ errorf "Library %q Unknow for %q" .library .name }}
     {{ end }}
 {{ end }}
