@@ -24,6 +24,7 @@
 * {{ template "link" (dict "context" . "page" "/docs/allow-port-80") }}
 * {{ template "link" (dict "context" . "page" "/docs/challenge-types") }}
 * {{ template "link" (dict "context" . "page" "/docs/ct-logs") }}
+* {{ template "link" (dict "context" . "page" "/docs/godaddy") }}
 * [{{ i18n "onboarding_customers" }}](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme)
 
 # {{ i18n "client_developer_information" }}
