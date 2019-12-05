@@ -11,6 +11,8 @@ do_not_translate: 1
 
 <!-- Note for translators: do NOT translate this file -->
 
+[Internet Security Research Group (ISRG)](https://www.abetterinternet.org/) is the non-profit entity that operates the Let's Encrypt certificate authority. Some policies that apply to Let's Encrypt are ISRG policies, some are specific to Let's Encrypt.
+
 # Let's Encrypt Subscriber Agreement
 
 * Currently in Effect

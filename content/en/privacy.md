@@ -7,8 +7,6 @@ lastmod: 2019-09-19
 english_is_canonical: 1
 ---
 
-# Let's Encrypt Privacy Policy
-
 {{< lastmod >}}
 
 The Let’s Encrypt Privacy Policy describes how we collect, use, and disclose your information in three different contexts:
