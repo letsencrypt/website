@@ -58,7 +58,15 @@ do_not_translate: 1
 
 # Let's Encrypt Trademark Policy
 
-* [Current Trademark Policy](/trademarks/)
+* [Let's Encrypt Trademark Policy](/trademarks/)
+
+# ISRG Code of Conduct
+
+* [ISRG Code of Conduct](https://www.abetterinternet.org/code-of-conduct/)
+
+# ISRG Non-Discrimination Statement and Policy
+
+* [ISRG Non-Discrimination Statement and Policy](https://www.abetterinternet.org/nondiscrimination/)
 
 # ISRG Legal Transparency Reports
 
@@ -71,10 +79,6 @@ do_not_translate: 1
 * [October 1, 2016](/documents/ISRG-Legal-Transparency-Report-October-1-2016.pdf)
 * [April 1, 2016](/documents/ISRG-Legal-Transparency-Report-April-1-2016.pdf)
 * [July 1, 2015](/documents/ISRG-Legal-Transparency-Report-July-1-2015.pdf)
-
-# ISRG Non-Discrimination Policy
-
-* [June 18, 2015](/nondiscrimination/)
 
 # WebTrust Audits
 
