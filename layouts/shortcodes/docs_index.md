@@ -36,7 +36,7 @@
 
 {{- define "link" -}}
 {{- $page := .context.Site.GetPage .page }}
-{{- if or (not $page) (not $page.RelPermalink) }}{{ errorf "Unknown page %q" .page }}{{ end }}
+{{- if or (not $page) (not $page.RelPermalink) }}{{ errorf "Missing page %q in lang %q" .page .context.Page.Lang }}{{ end }}
 {{- $tmp := newScratch }}
 {{- if .title }}
 {{- $tmp.Set "title" .title }}
