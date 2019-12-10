@@ -14,7 +14,7 @@ lastmod: 2019-02-25
 применять - используйте настройки по-умолчанию для вашего ACME-клиента, 
 или проверку HTTP-01.
 
-# HTTP-01 challenge
+# Проверка HTTP-01
 
 Этот тип проверки используется чаще всего. Let’s Encrypt выдаёт ACME-клиенту токен,
 а ACME-клиент записывает этот токен в файл на вашем web-сервере по пути
@@ -47,52 +47,45 @@ URL c HTTPS, то сертификат не считается подтверж�
  подстановки (wildcard-сертификатов).
  - Если у вас несколько web-серверов, файл требуется создавать для каждого из них.
 
-# DNS-01 challenge
+# Проверка DNS-01
 
-This challenge asks you to prove that you control the DNS for your
-domain name by putting a specific value in a TXT record under that domain
-name. It is harder to configure than HTTP-01, but can work in scenarios
-that HTTP-01 can’t. It also allows you to issue wildcard certificates.
-After Let’s Encrypt gives your ACME client a token, your client
-will create a TXT record derived from that token and your account key,
-and put that record at `_acme-challenge.<YOUR_DOMAIN>`. Then Let’s
-Encrypt will query the DNS system for that record. If it finds a match,
-you can proceed to issue a certificate!
+Эта проверка требует подтверждения прав на домен с помощью специальной TXT-записи для 
+доменного имени. Это сложнее в настройке, чем для проверки HTTP-01, но покрывает 
+сценарии использования, недоступные для проверки HTTP-01. Кроме того, проверка DNS-01
+позволяет выпускать сертификаты с подстановкой (wildcard-сертификаты). 
+После того, как Let’s Encrypt вашему ACME-клиенту токен, клиент создаёт содержимое TXT-записи,
+производную от токена и ключа аккаунта, и записывает её в `_acme-challenge.<YOUR_DOMAIN>`.
+Далее, Let’s Encrypt запрашивает TXT-запись в DNS-зоне вашего домена. Если значения совпадают - 
+сертификат можно использовать!
 
-Since automation of issuance and renewals is really important, it only
-makes sense to use DNS-01 challenges if your DNS provider has an API you
-can use to automate updates. Our community has started a [list of such DNS
-providers here][dns-api-providers]. Your DNS provider may be the same as
-your registrar (the company you bought your domain name from), or it
-might be different. If you want to change your DNS provider, you just
-need to make some small changes at your registrar. You don’t need to
-wait for your domain to be close to expiration to do so.
+Крайне важно автоматизировать процессы выпуска и отзыва сертификатов, поэтому проверку DNS-01
+имеет смысл использовать, когда ваш DNS-провайдер предоставляет API для автоматических
+обновлений. Наше сообщество поддерживает [список таких DNS-провайдеров][dns-api-providers].
+Ваш DNS-провайдер может быть либо вашим регистратором доменов (компанией, у которой вы купили
+доменное имя), либо сторонней организацией. Если вы захотите сменить DNS-провайдера, нужно
+будет будет сделать незначительные изменения у регистратора доменов. Ожидать окончания срока
+действия сертификатов при этом не требуется.
 
-Note that putting your fully DNS API credentials on your web server
-significantly increases the impact if that web server is hacked. Best
-practice is to use [more narrowly scoped API
-credentials][securing-dns-credentials], or perform DNS
-validation from a separate server and automatically copy certificates
-to your web server.
+Обратите внимание, что размещение полноправной учётной записи для DNS API на web-сервере существеннно
+увеличивает возможный ущерб при взломе. Лучше всего использовать 
+[учётную запись с ограниченными возможностями][securing-dns-credentials], или выполнять 
+проверку DNS-01 на отдельном сервере, с последующим копированием сертификатов на web-сервер.
 
-Since Let’s Encrypt follows the DNS standards when looking up TXT
-records for DNS-01 validation, you can use CNAME records or NS records to
-delegate answering the challenge to other DNS zones. This can be used to
-[delegate the `_acme-challenge` subdomain][securing-dns-credentials]
-to a validation-specific server or zone. It can also be used if your DNS
-provider is slow to update, and you want to delegate to a quicker-updating
-server.
+Т.к. Let’s Encrypt придерживается стандартов DNS для поиска TXT-записи при проверке DNS-01, 
+вы можете задействовать записи CNAME или NS для делегирования права ответа за другие DNS-зоны. 
+Например [настроив субдомен `_acme-challenge`][securing-dns-credentials] для специального 
+сервера валидации. Или, если ваш DNS-провайдер медленно обновляет данные, и вы хотите использовать
+более быстрый сервер.
 
-Most DNS providers have a “propagation time” that governs how long it
-takes from the time you update a DNS record until it’s available on all
-of their servers. It can be hard to measure this because they often also
-use [anycast], which means multiple servers can have the same IP address,
-and depending on where you are in the world you might talk to a different
-server (and get a different answer) than Let’s Encrypt does. The best
-DNS APIs provide a way for you to automatically check whether and update
-is fully propagated. If your DNS provider doesn’t have this, you just
-have to configure your client to wait long enough (often as much as an
-hour) to ensure the update is propagated before triggering validation.
+У большинства DNS-провайдеров есть так называемый "период обновления данных", показывающий,
+сколько времени пройдёт с момента изменения DNS-записи до её обновления на всех серверах 
+провайдера. Этот период достаточно сложно оценить, т.к. зачастую DNS-провайдеры применяют 
+[anycast] - когда несколько серверов имеют один и тот же IP-адрес. В этом случае, в зависимости
+от вашей геолокации, вы и Let’s Encrypt можете взаимодействовать с разными серверами, 
+и получать разные результаты. Лучшие DNS API содержат методы автоматического уведомления о полном
+обновлении данных на всех серверах провайдера. Если ваш DNS-провайдер такой информации не даёт, 
+вам придётся настроить ACME-клиент на достаточно долгое (не менее часа) ожидание перед запуском 
+валидации.
 
 You can have multiple TXT records in place for the same name. For
 instance, this might happen if you are validating a challenge for a
