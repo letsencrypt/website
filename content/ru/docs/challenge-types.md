@@ -6,49 +6,46 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
-When you get a certificate from Let’s Encrypt, our servers validate that
-you control the domain names in that certificate using “challenges,”
-as defined by the ACME standard. Most of the time, this validation
-is handled automatically by your ACME client, but if you need to make
-some more complex configuration decisions, it’s useful to know more
-about them. If you’re unsure, go with your client’s defaults or
-with HTTP-01.
+Когда вы запрашиваете новый сертификат у Let’s Encrypt, наши серверы проверяют 
+ваши права на доменные имена в сертификате, используя так называемые "испытания" 
+(или "проверки", согласно стандарта ACME. Обычно проверки выполняются с помощью
+вашего ACME-клиента и не требуют дополнительной настройки, но для сложных конфигураций
+будет полезным узнать о проверках чуть больше. Если вы не уверены, какую именно проверку
+применять - используйте настройки по-умолчанию для вашего ACME-клиента, 
+или проверку HTTP-01.
 
 # HTTP-01 challenge
 
-This is the most common challenge type today. Let’s Encrypt gives a
-token to your ACME client, and your ACME client puts a file on your web
-server at `http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`. That
-file contains the token, plus a thumbprint of your account key. Once
-your ACME client tells Let’s Encrypt that the file is ready, Let’s
-Encrypt tries retrieving it (potentially multiple times from multiple vantage
-points). If our validation checks get the right
-responses from your web server, the validation is considered successful
-and you can go on to issue your certificate. If the validation checks fail,
-you’ll have to try again with a new certificate.
+Этот тип проверки используется чаще всего. Let’s Encrypt выдаёт ACME-клиенту токен,
+а ACME-клиент записывает этот токен в файл на вашем web-сервере по пути
+`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`. В этом файле содержится 
+сам токен, плюс отпечаток ключа вашего аккаунта. Как только ACME-клиент сообщит
+Let’s Encrypt, что файл готов, Let’s Encrypt будет пытаться получить этот файл 
+по URL (возможно, несколько раз, с с различных адресов). Если полученный ответ будет
+верным, проверка считается успешной, и сертификат можно использовать для выбранного домена.
+Если проверка прошла неудачно, требуется повторить попытку с новым сертификатом. 
 
-Our implementation of the HTTP-01 challenge follows redirects, up to 10
-redirects deep. It only accepts redirects to “http:” or “https:”,
-and only to ports 80 or 443. It does not accept redirects to IP addresses. When
-redirected to an HTTPS URL, it does not validate certificates (since this
-challenge is intended to bootstrap valid certificates, it may encounter
-self-signed or expired certificates along the way).
+Наша реализация проверки HTTP-01 разрешает редиректы запросов, общим числом не более 10. 
+Редиректы принимаются только на адреса, начинающиеся с “http:” или “https:”, 
+и только на порты 80 или 443. Редиректы на IP-адреса не принимаются. Если редирект был на 
+URL c HTTPS, то сертификат не считается подтверждённым (т.к. проверка предназначена новых валидных
+сертификатов, в ходе проверки могут обнаружиться самоподписанные или просроченные сертификаты).
 
-The HTTP-01 challenge can only be done on port 80. Allowing clients to
-specify arbitrary ports would make the challenge less secure, and so it
-is not allowed by the ACME standard.
+Проверка HTTP-01 может быть выполнена только с использованием порта 80. Произвольный порт
+для проверки может снизить её надёжность, и потому запрещён стандартом ACME.
 
-Pros:
+Плюсы:
 
- - It’s easy to automate without extra knowledge about a domain’s configuration.
- - It allows hosting providers to issue certificates for domains CNAMEd to them.
- - It works with off-the-shelf web servers.
-
-Cons:
-
- - It doesn’t work if your ISP blocks port 80 (this is rare, but some residential ISPs do this).
- - Let’s Encrypt doesn’t let you use this challenge to issue wildcard certificates.
- - If you have multiple web servers, you have to make sure the file is available on all of them.
+ - Упрощённая автоматизация процесса, не требующая дополнительных знаний по настройке доменов
+ - Позволяет хостинг-провайдерам выпускать сертификаты для доменов, принадлежащих им по CNAME.
+ - Совместим с уже настроенными web-серверами.
+ 
+ Минусы:
+ 
+ - Требует открытого порта 80 (редко, но интернет-провайдеры блокируют этот адрес)
+ - Let’s Encrypt не позволяет использовать эту проверку для сертификатов с возможностью
+ подстановки (wildcard-сертификатов).
+ - Если у вас несколько web-серверов, файл требуется создавать для каждого из них.
 
 # DNS-01 challenge
 
