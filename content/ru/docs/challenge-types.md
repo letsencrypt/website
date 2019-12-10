@@ -87,30 +87,29 @@ URL c HTTPS, то сертификат не считается подтверж�
 вам придётся настроить ACME-клиент на достаточно долгое (не менее часа) ожидание перед запуском 
 валидации.
 
-You can have multiple TXT records in place for the same name. For
-instance, this might happen if you are validating a challenge for a
-wildcard and a non-wildcard certificate at the same time. However, you
-should make sure to clean up old TXT records, because if the response
-size gets too big Let’s Encrypt will start rejecting it.
+Для одного и того же доменного имени может быть несколько TXT-записей. Например, когда требуется
+одновременно выполнить проверку и для обычного сертификата, и для wildcard-сертификата. Своевременно
+удаляйте неактуальные TXT-записи, т.к. из-за большого размера ответа от сервера при проверке   
+Let’s Encrypt может признать проверку неудачной.
 
-Pros:
+Плюсы:
 
- - You can use this challenge to issue certificates containing wildcard domain names.
- - It works well even if you have multiple web servers.
+ - Эту проверку можно использовать для сертификатов с возможностью подстановки (wildcard-сертификатов).
+ - Одна запись для нескольких web-серверов.
+ 
+Минусы:
 
-Cons:
-
- - Keeping API credentials on your web server is risky.
- - Your DNS provider might not offer an API.
- - Your DNS API may not provide information on propagation times.
-
+ - Хранение учётной записи для DNS API имеет свои риски.
+ - Ваш DNS-провайдер можеит не иметь своего API
+ - DNS API может не иметь возможности оценить период обновления данных.
+ 
 # TLS-SNI-01
 
-This challenge was defined in draft versions of ACME. It did a TLS
-handshake on port 443 and sent a specific [SNI] header, looking for
-certificate that contained the token. It [will be disabled in March
-2019][tls-sni-disablement]
-because it was not secure enough.
+Эта проверка была описана в черновых версиях протокола ACME. 
+Согласно ей вначале выполняется TLS handshake на порте 443, и посылается
+специальный [SNI] заголовок для поиска сертификата, содержашего токен.
+Проверка TLS-SNI-01 [была отключена в марте 2019][tls-sni-disablement]
+по причине недостаточной безопасности.
 
 # TLS-ALPN-01
 
