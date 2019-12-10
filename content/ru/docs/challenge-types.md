@@ -113,30 +113,29 @@ Let’s Encrypt может признать проверку неудачной.
 
 # TLS-ALPN-01
 
-This challenge was developed after TLS-SNI-01 became deprecated, and is
-being developed as [a separate standard][tls-alpn]. Like TLS-SNI-01, it is performed
-via TLS on port 443. However, it uses a custom ALPN protocol to ensure
-that only servers that are aware of this challenge type will respond
-to validation requests. This also allows validation requests for this
-challenge type to use an SNI field that matches the domain name being
-validated, making it more secure.
+Проверка была разработана после признания проверки TLS-SNI-01 устаревшей, 
+как [отдельный стандарт][tls-alpn]. Как и TLS-SNI-01, проверка TLS-ALPN-01
+выполняется через TLS handshake на порте 443. Но в данном случае применяется
+специальный протокол ALPN, чтобы на запросы валидации отвечали только серверы,
+знающие про такой тип проверки. Кроме того, становится возможным использовать 
+SNI-поле, совпадающее с именем домена, для которого проводится валидация,
+для увеличения надёжности проверки.
 
-This challenge is not suitable for most people. It is best suited
-to authors of TLS-terminating reverse proxies that want to perform
-host-based validation like HTTP-01, but want to do it entirely at the
-TLS layer in order to separate concerns. Right now that mainly means
-large hosting providers, but mainstream web servers like Apache and
-Nginx could someday implement this (and [Caddy already does][caddy-tls-alpn]).
+Эта проверка не подходит для массового использования. Она, скорее, предназначена
+для владельцев TLS-концевых обратных прокси-серверов, для выполнения проверки 
+типа HTTP-01, но внутри слоя TLS, для разделения ответственности. Как правило,
+это относится к большим хостинг-провайдерам, но распространённые web-серверы типа
+Apache и Nginx, однажды, поддержат протокол ALPN (а [Caddy уже поддерживает][caddy-tls-alpn]).
 
-Pros:
+Плюсы:
 
- - It works if port 80 is unavailable to you.
- - It can be performed purely at the TLS layer.
+ - Будет работать даже если порт 80 закрыт.
+ - Может быть реализована целиком внутри слоя TLS
+ 
+Минусы:
 
-Cons:
-
- - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
- - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+ - Пока не поддерживается Apache, Nginx или Certbot, и, возможно, не будет поддерживаться.
+ - Как и для проверки HTTP-01, настраивать нужно ответ от каждого web-сервера.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
