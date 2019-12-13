@@ -6,3 +6,4 @@ Gemfile.lock
 public/
 nohup.out
 /node_modules
+.idea

@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt --- это <span>бесплатный</span>, <span>автоматизированный</span> и <span>открытый</span> Центр Сертификации."
+other = "Let&rsquo;s Encrypt &mdash; это <span>бесплатный</span>, <span>автоматизированный</span> и <span>открытый</span> Центр Сертификации."
 
 [home_hero_getting_started]
 other = "Приступить"
@@ -144,3 +144,12 @@ other = "Расширенная информация для пользовате
 
 [client_developer_information]
 other = "Информация для разработчиков"
+
+[acme_divergences]
+other = "Отступления от текущего черновика ACME"
+
+[acme_divergences_rfc]
+other = "Отступления от ACME RFC"
+
+[onboarding_customers]
+other = "Ознакомление ваших клиентов с Let's Encrypt и протоколом ACME"
