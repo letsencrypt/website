@@ -4,7 +4,7 @@ linkTitle: Часто задаваемые вопросы
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-11-14
+lastmod: 2019-11-14
 menu:
   main:
     weight: 30
