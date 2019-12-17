@@ -21,6 +21,10 @@ body {
     font-weight: 400;
     color: $text-color;
     background-color: $background-color;
+    @media (prefers-color-scheme: dark) {
+        color: $text-color-dark;
+        background-color: $background-color-dark;
+    }
     -webkit-text-size-adjust: 100%;
 }
 .pure-g {
@@ -106,11 +110,15 @@ h2.through-line {
     color: $grey-color;
     margin-top:20px;
     a {
-        color: #2B3C69;
+        color: $link-color;
+        @media (prefers-color-scheme: dark) {
+        a {
+            color: $link-color-dark;
+          }
+        }
         text-decoration: none;
     }
     a:hover {
-        color: #2B3C69;
         text-decoration: underline;
     }
 
@@ -120,7 +128,10 @@ h2.through-line {
         content: "";
         display: table-cell;
         width: 100%;
-        border-left: 10px solid #FDFDFD;
+        border-left: 10px solid $background-color;
+        @media (prefers-color-scheme: dark) {
+            border-left: 10px solid $background-color-dark;
+        }
     }
 }
 
@@ -137,12 +148,22 @@ a {
     color: $brand-color;
     text-decoration: none;
 
+    @media (prefers-color-scheme: dark) {
+        color: lighten($brand-color,20%);
+    }
+    
     &:visited {
         color: darken($brand-color, 15%);
+        @media (prefers-color-scheme: dark) {
+            color: lighten($brand-color,10%);
+        }
     }
 
     &:hover {
         color: $text-color;
+        @media (prefers-color-scheme: dark) {
+            color: $text-color-dark;
+        }
         text-decoration: underline;
     }
 }
@@ -172,7 +193,10 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $background-code-color;
+    @media (prefers-color-scheme: dark) {
+        background-color: $background-code-color-dark;
+    }
 }
 
 code {
@@ -181,7 +205,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;

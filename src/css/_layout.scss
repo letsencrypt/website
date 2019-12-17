@@ -155,10 +155,16 @@
     a.accent {
         background: #2a7ae2;
         color: #fff;
+        @media (prefers-color-scheme: dark) {
+            color: #000;
+        }
         &:hover {
             background: #1756a9;
             border-color: #1756a9;
             color: #fff;
+            @media (prefers-color-scheme: dark) {
+                color: #000;
+            }
             text-decoration: none;
         }
     }
@@ -201,6 +207,9 @@
         display: inline-block;
         width: auto;
         background-color: rgba(254,254,254,0.5);
+        @media (prefers-color-scheme: dark) {
+            background-color: rgba(1,1,1,0.5);
+        }
         border-radius: 8px;
         padding: 10px 20px;
 
@@ -225,6 +234,12 @@
             max-height: 70px;
             width: auto;
         }
+        @media (prefers-color-scheme: dark) {
+            // force white background (some logos are transparent)
+            background-color: #fff;
+        }
+
+
     }
 }
 
@@ -249,6 +264,9 @@
 .donate-footer {
     border-top: 1px solid $grey-color-light;
     background-color: #f8f8f8;
+    @media (prefers-color-scheme: dark) {
+        background-color: #070707;
+    }
     padding: ($spacing-unit - 4px) 0;
     margin-top: 30px;
 
@@ -285,6 +303,9 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $text-color;
+    @media (prefers-color-scheme: dark) {
+        color: $text-color-dark;
+    }
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }

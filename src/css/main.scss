@@ -12,6 +12,8 @@ $spacing-unit:     30px;
 
 $text-color:       #000000;
 $background-color: #fdfdfd;
+$background-code-color: #eef;
+
 $brand-color:      #2a7ae2;
 $secondary-color:  #1678D3;
 
@@ -22,7 +24,13 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          730px;
 $on-laptop:        800px;
 
+$link-color: $brand-color;
 
+// prefers-color-scheme: dark
+$text-color-dark:        #fdfdfd;
+$background-color-dark:  #000000;
+$background-code-color-dark: #110;
+$link-color-dark: #1678D3;
 
 // Using media queries with like this:
 // @include media-query($palm) {

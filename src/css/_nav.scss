@@ -12,6 +12,9 @@
 
     .page-link {
         color: $text-color;
+        @media (prefers-color-scheme: dark) {
+            color: $text-color-dark;
+        }
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -57,7 +60,10 @@ a.pure-menu-link:hover {
     right:0;
     text-align: left;
     min-width: 146px;
-    background-color: #FDFDFD;
+    background-color: $background-color;
+    @media (prefers-color-scheme: dark) {
+        background-color: $background-color-dark;
+    }
 }
 
 .pure-menu-link {
