@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-slug: kontakt
+slug: contact
 top_graphic: 1
 lastmod: 2019-09-11
 menu:

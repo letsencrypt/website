@@ -1,7 +1,7 @@
 ---
 title: Om Let's Encrypt
 linkTitle: Let's Encrypt
-slug: om
+slug: about
 top_graphic: 1
 lastmod: 2019-11-11
 menu:
