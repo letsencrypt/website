@@ -87,6 +87,13 @@
         </a>
       </p>
       {{ end }}
+      {{ if eq .Language.Lang "sv" }}
+      <p data-langswitch="{{ .Language.Lang }}" style="display:none">
+        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+          Visa på svenska
+        </a>
+      </p>
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
