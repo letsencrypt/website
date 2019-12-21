@@ -2,7 +2,7 @@
 title: Memulai
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
 
 Untuk mengaktifkan HTTPS pada website, anda membutuhkan sebuah sertifikat (sebuah tipe dari *file*)
@@ -14,7 +14,7 @@ tersebut. Dengan Let's Encrypt, anda melakukannya dengan menggunakan perangkat-l
 Untuk mengetahui metode terbaik untuk anda, anda harus mengetahui apakah anda memiliki
 [akses *shell*](https://en.wikipedia.org/wiki/Shell_account) (juga diketahui sebagai SSH)
 ke host web anda. Jika anda mengontrol situs web anda seluruhnya melalui panel kontrol
-seperti [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
+seperti [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), or
 [WordPress](https://wordpress.org/), kemungkinan besar anda tidak akan mendapatkan
 akses *shell* tersebut. Anda dapat menanyakan hal tersebut ke penyedia layanan anda
 untuk lebih yakin.
