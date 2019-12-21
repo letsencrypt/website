@@ -32,8 +32,8 @@ other = "Doniraj"
 
 [footer_policies]
 other = """
-Pročitaj našu <a href="/sr-sp/privacy/">politiku privatnosti</a>.<br>
-Pročitaj našu <a href="/sr-sp/trademarks/">politiku brenda</a>.
+Pročitaj našu <a href="/sr/privacy/">politiku privatnosti</a>.<br>
+Pročitaj našu <a href="/sr/trademarks/">politiku brenda</a>.
 """
 
 [linux_foundation_trademark]
