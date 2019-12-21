@@ -1,0 +1,150 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt är en <span>gratis</span>, <span>automatiserad</span> och <span>öppen</span> certifikatutgivare."
+
+[home_hero_getting_started]
+other = "Kom igång"
+
+[home_hero_donate]
+other = "Donera"
+
+[home_hero_sponsor]
+other = "Sponsra"
+
+[home_major_sponsors]
+other = "Betydande sponsorer och donatorer"
+
+[home_from_our_blog]
+other = "Från vår blogg (engelska)"
+
+[read_more]
+other = "Läs mer"
+
+[subscribe_rss]
+other = "Prenumerera <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Stöd en säkrare och mer integritetsrespekterande webb."
+
+[footer_donate]
+other = "Donera"
+
+[footer_policies]
+other = """
+Ta del av vår <a href="/privacy/">integritetspolicy</a>.<br>
+Ta del av vår <a href="/trademarks/">varumärkespolicy</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation är ett varumärke registrerat av The Linux Foundation. Linux är ett varumärke registrerat av Linus Torvalds."
+
+[header_skip_nav]
+other = "Hoppa över navigeringslänkar"
+
+[last_updated]
+other = "Senast uppdaterad: "
+
+[see_all_doc]
+other = "Visa all dokumentation"
+
+[blog_feed]
+other = "Let's Encrypts bloggflöde"
+
+[platinum]
+other = "Platina"
+
+[gold]
+other = "Guld"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Språk"
+
+[view_in_english]
+other = "Visa på engelska"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/partials/langs.html)
+other = "Visa på svenska"
+
+[old_version]
+other = "Observera: Den engelska versionen har uppdaterats sedan översättningen"
+
+[not_yet_translated]
+other = "Den här sidan har inte översatts än. Du kan hjälpa till <a href=\"https://github.com/letsencrypt/website\">här</a>."
+
+[english_is_canonical]
+other = "Den engelska versionen gäller"
+
+[graph_issued]
+other = "Utfärdade"
+
+[graph_certificates_active]
+other = "Aktiva certifikat"
+
+[graph_fully_qualified_domains_active]
+other = "Aktiva fullständiga domännamn"
+
+[graph_registered_domains_active]
+other = "Aktiva registrerade domäner"
+
+[graph_active_count]
+other = "Antalet aktiva"
+
+[graph_issued_per_day]
+other = "Utfärdade per dag"
+
+[graph_all_users]
+other = "Alla användare"
+
+[graph_usa_users]
+other = "Amerikanska användare"
+
+[graph_japan_users]
+other = "Japanska användare"
+
+[graph_percent_https]
+other = "Andel sidvisningar över HTTPS (14-dagars glidande medelvärde)"
+
+[certificate_transparency_name]
+other = "Namn"
+
+[certificate_transparency_role]
+other = "Roll"
+
+[certificate_transparency_role_production]
+other = "Produktion"
+
+[certificate_transparency_role_test]
+other = "Test"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Publik nyckel"
+
+[overview]
+other = "Översikt"
+
+[subscriber_information]
+other = "Abonnentinformation"
+
+[advanced_subscriber_information]
+other = "Avancerad abonnentinformation"
+
+[client_developer_information]
+other = "Information för klientutvecklare"
+
+[acme_divergences]
+other = "Skillnader mot aktuellt ACME-utkast"
+
+[acme_divergences_rfc]
+other = "Skillnader mot ACME-RFC:n"
+
+[onboarding_customers]
+other = "Skola in dina användare med Let's Encrypt och ACME"

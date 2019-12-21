@@ -118,6 +118,20 @@ description = """
   telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.
 """
 
+[sv]
+title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
+contentDir = "content/sv"
+languageName ="Svenska"
+languageCode= "sv"
+#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
+beforeColon= ""
+# Weight used for sorting. (alphabetical order using languageCode, with English first)
+weight = 97
+description = """
+  Let's Encrypt är en gratis, automatiserad och öppen certifikatutgivare
+  skapad av icke-vinstdrivande <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+
 [zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
