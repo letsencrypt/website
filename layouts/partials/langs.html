@@ -12,87 +12,78 @@
     {{ if and (ne "en" .Language.Lang) ( not .Page.Params.untranslated ) }}
       {{ if eq .Language.Lang "fr"  }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Voir en Français
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "de" }}
+      {{ else if eq .Language.Lang "de" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Auf Deutsch ansehen
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "pt-br" }}
+      {{ else if eq .Language.Lang "pt-br" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Ver em Português (do brasil)
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "ru" }}
+      {{ else if eq .Language.Lang "ru" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Просмотреть на русском
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "zh-cn" }}
+      {{ else if eq .Language.Lang "zh-cn" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           使用简体中文阅读本网页。
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "zh-tw" }}
+      {{ else if eq .Language.Lang "zh-tw" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           使用正體中文閲讀本網頁。
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "es" }}
+      {{ else if eq .Language.Lang "es" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Ver en español
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "ko" }}
+      {{ else if eq .Language.Lang "ko" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           한국어로 보기
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "id" }}
+      {{  else if eq .Language.Lang "id" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Lihat dalam Bahasa Indonesia
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "ja" }}
+      {{ else if eq .Language.Lang "ja" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           日本語で表示する
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "sr-sp" }}
+      {{ else if eq .Language.Lang "sr" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
-        <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+        <a lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
           Pročitaj na Srpskom
         </a>
       </p>
-      {{ end }}
-      {{ if eq .Language.Lang "sv" }}
+      {{ else if eq .Language.Lang "sv" }}
       <p data-langswitch="{{ .Language.Lang }}" style="display:none">
         <a lang="{{ .Language.Lang }}" href="{{ .Permalink }}">
           Visa på svenska
         </a>
       </p>
+      {{ else }}
+        {{ errorf "Missing markup for lang %q in layouts/partials/langs.html" .Page.Language.Lang }}
       {{ end }}
     {{ end }}
   {{ end }}

@@ -84,7 +84,7 @@ description = """
 
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
-contentDir = "content/pt-BR"
+contentDir = "content/pt-br"
 languageName = "Português do Brasil"
 languageCode = "pt-BR"
 beforeColon = ""
