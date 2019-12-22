@@ -12,6 +12,15 @@ other = "Donate"
 [home_hero_sponsor]
 other = "Sponsor"
 
+[home_hero_annual_report]
+other = "Read our 2019 Annual Report"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Major Sponsors and Donors"
 
