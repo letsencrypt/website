@@ -38,6 +38,8 @@
     <script src="/js/plotly-locale-ko.js" defer></script>
 {{ else if eq "sr-sp" .Page.Language.Lang }}
     <script src="/js/plotly-locale-sr.js" defer></script>
+{{ else if eq "sv" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-sv.js" defer></script>
 {{ else }}
     {{ errorf "Missing plotly for lang %q in layouts/shortcodes/plotly.html" .Page.Language.Lang }}
 {{ end }}

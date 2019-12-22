@@ -2,7 +2,7 @@
 title: Внесите свой вклад
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -22,14 +22,10 @@ menu:
 
 Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует [множество других клиентов]({{< relref "/docs/client-options.md" >}}).
 
-### Разработка Центра Сертификации
+### Разработка Удостоверяющего Центра
 
-[Boulder](https://github.com/letsencrypt/boulder) - это реализация Центра Сертификации для Let's Encrypt . Он основан на протоколе [ACME](https://github.com/ietf-wg-acme/acme), и написан в основном на Go. Отличный способ начать - ознакомиться со списком [проблем типа 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted), и [инструкцией для контрибуторов](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) - это реализация Удостоверяющего Центра (УЦ) для Let's Encrypt . Он основан на протоколе [ACME](https://github.com/ietf-wg-acme/acme), и написан в основном на Go. Отличный способ начать - ознакомиться со списком [проблем типа 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted), и [инструкцией для контрибуторов](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### Сайт letsencrypt.org
 
 Вы можете улучшить сайт и документацию на нем [тут](https://github.com/letsencrypt/website), или помочь с [переводом](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md) на другие языки.
-
-## Протокол ACME
-
-Для взаимодействия с клиентами, запущенными на web-серверах, Центр Сертификации использует специальный протокол ACME ("Automated Certificate Management Environment"). Черновик протокола [доступен на Github](https://github.com/ietf-wg-acme/acme). Совместно с IETF ведётся работа по доведению протокола ACME до состояния открытого стандарта. Вы можете присоединиться к разработке с помощью [этого списка рассылки IETF](https://www.ietf.org/mailman/listinfo/acme).

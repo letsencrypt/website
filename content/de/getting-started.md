@@ -2,7 +2,7 @@
 title: Erste Schritte
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
 
 Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine
@@ -17,7 +17,7 @@ Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig
 herauszufinden, ob Sie zu Ihrer Webseite 
 [Shell Zugang](https://en.wikipedia.org/wiki/Shell_account) haben (auch bekannnt
 als SSH Zugang). Wenn Sie Ihre Webseite durch ein Kontrollschnittstelle verwalten
-wie [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/) oder
+wie [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/) oder
 [WordPress](https://wordpress.org/), dann haben Sie wahrscheinlich keinen Shell
 Zugang. Sicherheitshalber können Sie Ihren Diensteanbieter fragen.
 
