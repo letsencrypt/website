@@ -2,7 +2,7 @@
 title: Kom igång
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
 
 För att aktivera HTTPS på din webbplats behöver du erhålla ett certifikat (en
@@ -17,7 +17,7 @@ För att få reda på vilken metod som funkar bäst för dig behöver du veta hu
 du har [tillgång till skal](https://sv.wikipedia.org/wiki/Skalprogram) (även
 känt som [SSH](https://sv.wikipedia.org/wiki/Secure_Shell)) på din webbserver.
 Om du hanterar din webbplats uteslutande genom en kontrollpanel som
-[cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/) eller
+[cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/) eller
 [WordPress](https://sv.wordpress.org/), är sannolikheten stor att du inte har
 tillgång till skalprogram. Fråga ditt webbhotell för att vara säker.
 
