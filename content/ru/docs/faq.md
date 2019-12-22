@@ -4,7 +4,7 @@ linkTitle: Часто задаваемые вопросы
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2019-11-14
+lastmod: 2019-12-22
 menu:
   main:
     weight: 30
@@ -50,7 +50,7 @@ Let’s Encrypt - небольшая компания, мы полагаемся
 Мы рекомендуем уведомить об этом сервисы Google Safe Browsing и Microsoft Smart Screen, которые способны эффективно защитить пользователей Интернета.
 Ниже ссылка на форму сообщения::
 
-https://www.google.com/safebrowsing/report_badware/
+https://safebrowsing.google.com/safebrowsing/report\_badware/
 
 Хотите узнать больше? Ознакомьтесь со статьёй [из нашего блога](/2015/10/29/phishing-and-malware.html).
 
