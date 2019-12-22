@@ -32,7 +32,7 @@ För att påbörja processen frågar agenten Let's Encrypt-CA:n vad den behöver
 för att bevisa att den kontrollerar `example.com`. Let's Encrypt-CA:n kommer att
 titta på domännamnet som efterfrågas och utfärda en eller flera utmaningar. Det
 finns flera sätt som agenten kan bevisa kontroll över domänen. Till exempel kan
-CA:n ge agenten ett val att aningen:
+CA:n ge agenten ett val att antingen:
 
 * lägga till en DNS-post under `example.com` eller
 * placera en HTTP-resurs under en välkänd URI på `http://example.com/`
@@ -61,10 +61,10 @@ filen från webbservern och säkerställa att den har det förväntade innehåll
      src="/images/howitworks_authorization.png"/>
 </div>
 
-Om engångsvärdets signatur är korrekt och utmaningarna överensstämmer är agenten
-identifierad med den publika nyckeln godkänd att utföra certifikathantering för
-`example.com`. Vi kallar nyckelparet som agenten använde för "behörigt
-nyckelpar" för `example.com`.
+Om engångsvärdets signatur är korrekt och utmaningarna överensstämmer är
+agenten, som är identifierad med den publika nyckeln, godkänd att utföra
+certifikathantering för `example.com`. Vi kallar nyckelparet som agenten använde
+för "behörigt nyckelpar" för `example.com`.
 
 
 ## Certifikatutfärdande och -återkallande
