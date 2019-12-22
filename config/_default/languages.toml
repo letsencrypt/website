@@ -152,5 +152,5 @@ languageCode= "zh-tw"
 beforeColon= ""
 weight = 110
 description = """
-  Let's Encrypt 是由非營利性互聯網安全研究組（ISRG）提供給您的免費，自動化和開放的憑證頒發機構。
+  Let's Encrypt 是由非營利性網際網路安全研究小組（ISRG）提供給您的免費、自動化和開放的憑證頒發機構。
   """
