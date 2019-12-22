@@ -110,11 +110,6 @@ other = "Korisnici iz Japana"
 [graph_percent_https]
 other = "Procenat učitavanja stranica (pageload) preko HTTPS (prosek za 14 dana)"
 
-
-
-
-
-
 [overview]
 other = "Pregled"
 
@@ -126,3 +121,6 @@ other = "Napredne pretplatničke informacije"
 
 [client_developer_information]
 other = "Informacije za programere klijentskog softvera"
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"

@@ -149,8 +149,10 @@ other = "Differences from ACME RFC"
 [onboarding_customers]
 other = "Onboarding Your Customers with Let's Encrypt and ACME"
 
-[paypal_donate_title]
-other = "PayPal - The safer, easier way to pay online!"
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
 
 [paypal_donate_alt]
 other = "Donate with PayPal button"
+
+[paypal_donate_title]
+other = "PayPal - The safer, easier way to pay online!"

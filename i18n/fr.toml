@@ -148,3 +148,6 @@ other = "Différences par rapport à la RFC d'ACME"
 
 [onboarding_customers]
 other = "Intégrer vos clients avec Let's Encrypt et ACME"
+
+[paypal_donate_alt]
+other = "Bouton Faites un don avec PayPal"

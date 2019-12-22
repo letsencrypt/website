@@ -80,11 +80,6 @@ other = "該網頁暫時未被翻譯。 您可以點擊 <a href=\"https://github
 [english_is_canonical]
 other = "此頁內容請以英文頁面為準"
 
-
-
-
-
-
 [overview]
 other = "概括"
 
@@ -99,4 +94,3 @@ other = "用戶端開發者訊息"
 
 [acme_divergences]
 other = "當前ACME草案變化"
-
