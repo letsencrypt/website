@@ -12,6 +12,15 @@ other = "Donera"
 [home_hero_sponsor]
 other = "Sponsra"
 
+[home_hero_annual_report]
+other = "Läs vår årsberättelse för 2019"
+
+[home_hero_desktop]
+other = "dator"
+
+[home_hero_mobile]
+other = "mobil"
+
 [home_major_sponsors]
 other = "Betydande sponsorer och donatorer"
 

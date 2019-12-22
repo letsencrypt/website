@@ -2,7 +2,7 @@
 title: Prvi koraci
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
 
 Da biste omogućili HTTPS na svojoj web lokaciji, morate dobiti sertifikat (vrsta datoteke)
@@ -15,7 +15,7 @@ na vašem web serveru.
 Da biste saznali koja je metoda najbolja za vas, morate znati da li
 imate [shell pristup](https://en.wikipedia.org/wiki/Shell_account) (takođe poznat
 kao SSH pristup) vašem web serveru. Ako svojom web stranicom u potpunosti upravljate putem
-panela poput [cPanel-a](https://cpanel.com/), [Plesk-a](https://www.plesk.com/) ili
+panela poput [cPanel-a](https://cpanel.net/), [Plesk-a](https://www.plesk.com/) ili
 [WordPress-a](https://wordpress.org/), postoji velika šansa da nemate shell
 pristup. To možete uvek proveriti sa Vašim hosting provajderom kako bi ste bili sigurni.
 

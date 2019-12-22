@@ -2,7 +2,7 @@
 title: ACME 客户端
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-24
+lastmod: 2019-11-15
 ---
 
 {{< clientslastmod >}}
@@ -17,7 +17,11 @@ Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您
 
 我们建议大多数人从 [Certbot](https://certbot.eff.org/) 客户端开始。 它既可以仅为您获取证书，也可以帮助您安装证书（如果您需要的话）。它易于使用，适用于许多操作系统，并且具有出色的文档。
 
-如果 certbot 不能满足您的需求，或者您只是想尝试其他软件，那么下面有更多的客户端可供选择，这些客户端按照编写所用的语言或是使用环境。
+如果 certbot 不能满足您的需求，或者您只是想尝试其他软件，那么下面有更多的客户端可供选择，这些客户端按照编写所用的语言或是使用环境排序。
+
+# ACMEv1 和 ACMEv2 协议
+
+Let's Encrypt使用和[ACME最终标准](https://tools.ietf.org/html/rfc8555)符合的ACMEv2 API。 我们将在2020和2021年[淘汰较旧的ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)。 此列表上的所有客户端都支持ACMEv2。如果您使用的客户端在该列表中，请确保您将其升级到最新版本。 如果下面没有列出您正在使用的客户端，请与项目维护者联系或更换其他客户端。
 
 {{< clients acme_v2="兼容 ACMEv2 的客户端" libraries="库" projects="集成了 Let’s Encrypt 的项目" >}}
 
