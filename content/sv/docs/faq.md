@@ -4,7 +4,7 @@ linkTitle: Vanliga frågor (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2019-11-14
+lastmod: 2019-12-22
 menu:
   main:
     weight: 30
@@ -72,7 +72,7 @@ Vi rekommenderar att rapportera sådana sajter till Google Safe Browsing och
 Microsofts SmartScreen-initiativ som har möjlighet att mer effektivt skydda
 användare. Här är Googles rapporteringsadress:
 
-https://www.google.com/safebrowsing/report\_badware/
+https://safebrowsing.google.com/safebrowsing/report\_badware/
 
 Om du vill läsa mer om våra policyer och principer kan du göra detta här:
 
