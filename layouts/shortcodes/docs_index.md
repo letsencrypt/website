@@ -24,18 +24,19 @@
 * {{ template "link" (dict "context" . "page" "/docs/allow-port-80") }}
 * {{ template "link" (dict "context" . "page" "/docs/challenge-types") }}
 * {{ template "link" (dict "context" . "page" "/docs/ct-logs") }}
-* [{{ i18n "onboarding_customers" }}](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme)
+* {{ template "link" (dict "context" . "page" "/docs/godaddy") }}
+* [{{ i18n "onboarding_customers" }}](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html)
 
 # {{ i18n "client_developer_information" }}
 
 * {{ template "link" (dict "context" . "page" "/docs/integration-guide") }}
 * {{ template "link" (dict "context" . "page" "/docs/acme-protocol-updates") }}
-* [{{ i18n "acme_divergences" }}](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
+* [{{ i18n "acme_divergences_rfc" }}](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
 * {{ template "link" (dict "context" . "page" "/docs/account-id") }}
 
 {{- define "link" -}}
 {{- $page := .context.Site.GetPage .page }}
-{{- if or (not $page) (not $page.RelPermalink) }}{{ errorf "Unknown page %q" .page }}{{ end }}
+{{- if or (not $page) (not $page.RelPermalink) }}{{ errorf "Missing page %q in lang %q" .page .context.Page.Lang }}{{ end }}
 {{- $tmp := newScratch }}
 {{- if .title }}
 {{- $tmp.Set "title" .title }}

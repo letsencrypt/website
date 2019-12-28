@@ -12,6 +12,15 @@ other = "Donate"
 [home_hero_sponsor]
 other = "Sponsor"
 
+[home_hero_annual_report]
+other = "Read our 2019 Annual Report"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Major Sponsors and Donors"
 
@@ -142,6 +151,9 @@ other = "Client Developer Information"
 
 [acme_divergences]
 other = "Differences from Current ACME Draft"
+
+[acme_divergences_rfc]
+other = "Differences from ACME RFC"
 
 [onboarding_customers]
 other = "Onboarding Your Customers with Let's Encrypt and ACME"

@@ -111,7 +111,7 @@ If you have a large number of pending authorization objects and are getting a
 rate limiting error, you can trigger a validation attempt for those
 authorization objects by submitting a JWS-signed POST to one of its challenges, as
 described in the
-[ACME spec](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
+[ACME spec](https://tools.ietf.org/html/rfc8555#section-7.5.1).
 The pending authorization objects are represented by URLs of the form
 `https://acme-v01.api.letsencrypt.org/acme/authz/XYZ`, and should show up in your
 client logs. Note that it doesn't matter whether validation succeeds or fails.

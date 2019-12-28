@@ -61,7 +61,7 @@ por conta, por nome de domínio, por hora. Este limite é maior em nosso [ambien
 pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
 Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
-<name="overall-requests"></a>**Limite
+<a name="overall-requests"></a>**Limite
 Geral** de 20 requisições por segundo. O endpoint "/directory" e o diretório "/acme" 
 e seus subdiretórios possuem um Limite Geral de 40 requisições por segundo.
 
@@ -113,7 +113,7 @@ Se você possui um grande número de objetos pendentes de autorização e está 
 erro de limite de requisições, você pode acionar uma tentativa de validação para estes
 objetos de autorização enviando uma solicitação POST assinada com JWS para um dos desafios, como
 descrito nagi 
-[Especificação ACME](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges) (Inglês).
+[Especificação ACME](https://tools.ietf.org/html/rfc8555#section-7.5.1) (Inglês).
 Os objetos pendentes de autorização são representados por URLs no formato
 `https://acme-v01.api.letsencrypt.org/acme/authz/XYZ`, e precisam aparecer nos
 registros do seu cliente. Observe que não importa se a validação é bem sucedida ou não.

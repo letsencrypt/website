@@ -4,7 +4,7 @@ linkTitle: 常见问题（FAQ）
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2019-11-14
 menu:
   main:
     weight: 30
@@ -87,13 +87,13 @@ Let’s Encrypt 证书是标准的域名验证性证书，因此您可以将它�
 
 是的，可以使用主体备用名称（SAN）机制使同一份证书包含多个不同的名称。
 
-## Let’s Encrypt 颁发通配符证书吗？
+## Let's Encrypt 颁发通配符证书吗？
 
 是的。您必须使用 ACMEv2 协议并通过 DNS-01 验证方式来获取通配符证书。有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## 是否有 Let's Encrypt（ACME）客户端支持我的操作系统？
 
-您有大量的 [ACME 客户端]({{< relref "/docs/client-options.md" >}})可以选择。很有可能其中的某些客户端能在新的系统上正常工作。我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
+您有大量的 [ACME 客户端]({{< relref "/docs/client-options.md" >}})可以选择。很有可能其中的某些客户端能在您的系统上正常工作。我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
 
 ## 我可以使用现有的私钥或证书签名请求（CSR）吗？
 
@@ -101,7 +101,7 @@ Let’s Encrypt 证书是标准的域名验证性证书，因此您可以将它�
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
-我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。将来，我们可能同时从多个IP地址进行验证。
+我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。将来，我们可能同时从多个IP地址进行验证。请参阅[该网页](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points)。
 
 ## 我成功续期了证书，但这次没有要求我验证。为什么会这样？
 
