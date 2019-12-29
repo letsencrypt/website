@@ -69,7 +69,7 @@ description = """
   dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "ID"
+paypalCountry = "US"
 
 [ja]
 title = "Let's Encrypt - フリーな SSL/TLS 証明書"
@@ -83,7 +83,7 @@ description = """
   authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "JP"
+paypalCountry = "US"
 
 [ko]
 title = "Let's Encrypt - 무료 SSL/TLS 인증서"
@@ -96,7 +96,7 @@ description = """
   Let's Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "KR"
+paypalCountry = "US"
 
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -124,7 +124,7 @@ description = """
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "RU"
+paypalCountry = "US"
 
 [sr-sp]
 title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
@@ -168,7 +168,7 @@ description = """
   style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
 """
 paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "CN"
+paypalCountry = "US"
 
 [zh-tw]
 title = "Let's Encrypt - 免費SSL/TLS憑證"
@@ -181,4 +181,4 @@ description = """
   Let's Encrypt 是由非營利性網際網路安全研究小組（ISRG）提供給您的免費、自動化和開放的憑證頒發機構。
   """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-paypalCountry = "TW"
+paypalCountry = "US"
