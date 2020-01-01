@@ -41,7 +41,16 @@ baseName = "feed"
 
 # Hugo >= 0.33 is needed to get uglyURLs per section.
 [uglyURLs]
-  post = true
+post = true
 
 [permalinks]
-  post = "/:year/:month/:day/:slug/"
+post = "/:year/:month/:day/:slug/"
+
+[markup]
+# Since Hugo 60, goldmark is he default markdown renderer
+# and the currents .md files are not compatible with it (even with "[markup.goldmark.renderer] unsafe = true")
+defaultMarkdownHandler = "blackFriday"
+
+[markup.highlight]
+# There is an escaping bug with blackFriday and highlight. See https://discourse.gohugo.io/t/missing-escaping-in-code-blocks/22465
+codeFences = false
