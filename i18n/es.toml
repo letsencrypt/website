@@ -4,7 +4,7 @@
 other = "Let&rsquo;s Encrypt es una Autoridad de Certificación <span>gratuita</span>, <span>automatizada</span>, y <span>abierta</span>."
 
 [home_hero_getting_started]
-other = "Comienza"
+other = "Empezar"
 
 [home_hero_donate]
 other = "Donar"
@@ -22,18 +22,18 @@ other = "De nuestro blog"
 other = "Lee más"
 
 [subscribe_rss]
-other = "Subscribete <a href=\"{{ .Permalink }}\">mediante RSS</a>"
+other = "Subscribete <a href=\"{{ .Permalink }}\">mediante nuestro canal RSS</a>"
 
 [footer_support_us]
-other = "Apoya un Web más seguro y respetador de la privacidad."
+other = "Apoya una Web más segura y respetuosa de la privacidad."
 
 [footer_donate]
 other = "Donar"
 
 [footer_policies]
 other = """
-Mira nuestra <a href="/es/privacy/">póliza de privacidad</a>.<br>
-Mira nuestra <a href="/es/trademarks/">póliza de marca</a>.
+Mira nuestra <a href="/es/privacy/">política de privacidad</a>.<br>
+Mira nuestra <a href="/es/trademarks/">política de marca</a>.
 """
 
 [linux_foundation_trademark]
@@ -75,7 +75,7 @@ other = "Ver en español"
 other = "Nota: La versión en inglés ha sido actualizada desde está traducción"
 
 [not_yet_translated]
-other = "Está página de web aún no ha sido traducida. Puedes contribuir <a href=\"https://github.com/letsencrypt/website\">aquí</a>."
+other = "Esta página web aún no ha sido traducida. Puedes contribuir <a href=\"https://github.com/letsencrypt/website\">aquí</a>."
 
 [english_is_canonical]
 other = "La versión en inglés es la versión autoritaria"
@@ -102,13 +102,13 @@ other = "Emitido por Día"
 other = "Todos los usuarios"
 
 [graph_usa_users]
-other = "Usuarios de EE. UU."
+other = "Usuarios de EE.UU."
 
 [graph_japan_users]
 other = "Usuarios de Japón"
 
 [graph_percent_https]
-other = "Porcentaje de Cargas de Página sober HTTPS (Media móvil de 14 días)"
+other = "Porcentaje de Cargas de Página sobre HTTPS (Media móvil de 14 días)"
 
 
 
