@@ -110,10 +110,6 @@ other = "Usuarios de Japón"
 [graph_percent_https]
 other = "Porcentaje de Cargas de Página sobre HTTPS (Media móvil de 14 días)"
 
-
-
-
-
 [overview]
 other = "General"
 
@@ -129,3 +125,5 @@ other = "Información para Desarrolladores de Clientes"
 [acme_divergences]
 other = "Diferencias del  Borrador ACME Actual"
 
+[paypal_donate_alt]
+other = "Donar con el botón PayPal"

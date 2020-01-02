@@ -11,6 +11,10 @@ description = """
   Let's Encrypt is a free, automated, and open certificate
   authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+# PayPal image url from https://www.paypal.com/donate/buttons/unhosted
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+# A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
+paypalCountry = "US"
 
 [de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
@@ -23,6 +27,8 @@ description = """
   Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
   herausgebracht für Sie durch <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "DE"
 
 [es]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -34,6 +40,8 @@ weight = 30
 description = """
   Let's Encrypt es una autoridad de certificación gratuita, automatizada, y abierta traida a ustedes por la organización sin ánimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "ES"
 
 [fr]
 title = "Let's Encrypt - Certificats SSL/TLS gratuits"
@@ -46,6 +54,8 @@ description = """
   Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte
   apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
 """
+paypalDonateImage = "https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "FR"
 
 [id]
 title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
@@ -58,6 +68,8 @@ description = """
   Let's Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
   dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 
 [ja]
 title = "Let's Encrypt - フリーな SSL/TLS 証明書"
@@ -70,6 +82,8 @@ description = """
   Let's Encrypt is a free, automated, and open certificate
   authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 
 [ko]
 title = "Let's Encrypt - 무료 SSL/TLS 인증서"
@@ -81,6 +95,8 @@ weight = 70
 description = """
   Let's Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
 """
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -93,6 +109,8 @@ description = """
   Let's Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
   que se tornou possível graças à organização sem fins lucrativos <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>
 """
+paypalDonateImage = "https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "BR"
 
 [ru]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
@@ -105,6 +123,8 @@ description = """
   Let's Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 
 [sr]
 title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
@@ -117,6 +137,8 @@ description = """
   Let's Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
   telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.
 """
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "SP"
 
 [sv]
 title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
@@ -129,6 +151,8 @@ description = """
   Let's Encrypt är en gratis, automatiserad och öppen certifikatutgivare
   skapad av icke-vinstdrivande <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
+paypalDonateImage = "https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "SE"
 
 [zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
@@ -141,6 +165,8 @@ description = """
   Let's Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
   style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
 """
+paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 
 [zh-tw]
 title = "Let's Encrypt - 免費SSL/TLS憑證"
@@ -152,3 +178,5 @@ weight = 110
 description = """
   Let's Encrypt 是由非營利性網際網路安全研究小組（ISRG）提供給您的免費、自動化和開放的憑證頒發機構。
   """
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"

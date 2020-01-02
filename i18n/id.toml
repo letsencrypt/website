@@ -110,11 +110,6 @@ other = "Pengguna dari Jepang"
 [graph_percent_https]
 other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"
 
-
-
-
-
-
 [overview]
 other = "Ringkasan"
 
@@ -130,3 +125,5 @@ other = "Informasi untuk Pengembang Klien (*Client Developer*)"
 [acme_divergences]
 other = "Perbedaan dari draf ACME terkini"
 
+[paypal_donate_alt]
+other = "Donate with PayPal button"
