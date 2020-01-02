@@ -157,3 +157,6 @@ other = "Skillnader mot ACME-RFC:n"
 
 [onboarding_customers]
 other = "Skola in dina användare med Let's Encrypt och ACME"
+
+[paypal_donate_alt]
+other = "Donera med PayPal-knapp"

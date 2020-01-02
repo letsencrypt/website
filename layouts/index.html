@@ -27,14 +27,14 @@
                   <li>
                     <span class="post-meta">{{ .Date.Format $.Site.Params.time_format_default }}</span>
                     <h2>
-                      <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                      <a class="post-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ .Title }}</a>
                     </h2>
                     {{ with .Params.excerpt }}
                       {{ . | markdownify }}
                     {{ else }}
                       {{ .Summary }}
                     {{ end }}
-                    <p><a href="{{ .Permalink }}">{{ i18n "read_more" }}</a></p>
+                    <p><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ i18n "read_more" }}</a></p>
                   </li>
                 {{ end }}
               </ul>

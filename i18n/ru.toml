@@ -128,11 +128,6 @@ other = "URI"
 [certificate_transparency_public_key]
 other = "Открытый ключ"
 
-
-
-
-
-
 [overview]
 other = "Обзор"
 
@@ -153,3 +148,6 @@ other = "Отступления от ACME RFC"
 
 [onboarding_customers]
 other = "Ознакомление ваших клиентов с Let's Encrypt и протоколом ACME"
+
+[paypal_donate_alt]
+other = "Кнопка «Пожертвовать через PayPal»"

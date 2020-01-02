@@ -128,9 +128,6 @@ other = "URI"
 [certificate_transparency_public_key]
 other = "공개키"
 
-
-
-
 [overview]
 other = "개요"
 
@@ -146,3 +143,5 @@ other = "클라이언트 개발자 정보"
 [acme_divergences]
 other = "현재 ACME 초안과 다른점"
 
+[paypal_donate_alt]
+other = "Donate with PayPal button"
