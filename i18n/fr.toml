@@ -151,3 +151,6 @@ other = "Intégrer vos clients avec Let's Encrypt et ACME"
 
 [paypal_donate_alt]
 other = "Bouton Faites un don avec PayPal"
+
+[paypal_donate_title]
+other = "Faites un don avec PayPal"
