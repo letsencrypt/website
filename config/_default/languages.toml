@@ -1,10 +1,10 @@
 [en]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
 contentDir = "content/en"
-languageName ="English"
-languageCode= "en-us"
+languageName = "English"
+languageCode = "en-US"
 #if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
-beforeColon= ""
+beforeColon = ""
 # Weight used for sorting. (alphabetical order using languageCode, with English first)
 weight = 10
 description = """
@@ -15,9 +15,9 @@ description = """
 [de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
-languageName ="Deutsch"
-languageCode= "de-de"
-beforeColon= ""
+languageName = "Deutsch"
+languageCode = "de-DE"
+beforeColon = ""
 weight = 20
 description = """
   Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
@@ -27,9 +27,9 @@ description = """
 [es]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
 contentDir = "content/es"
-languageName ="Español"
-languageCode= "es-us"
-beforeColon= "&nbsp;"
+languageName = "Español"
+languageCode = "es-US"
+beforeColon = "&nbsp;"
 weight = 30
 description = """
   Let's Encrypt es una autoridad de certificación gratuita, automatizada, y abierta traida a ustedes por la organización sin ánimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
@@ -39,8 +39,8 @@ description = """
 title = "Let's Encrypt - Certificats SSL/TLS gratuits"
 languageName = "Français"
 contentDir = "content/fr"
-languageCode= "fr-fr"
-beforeColon= "&nbsp;"
+languageCode = "fr-FR"
+beforeColon = "&nbsp;"
 weight = 40
 description = """
   Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte
@@ -50,9 +50,9 @@ description = """
 [id]
 title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
 contentDir = "content/id"
-languageName ="Bahasa Indonesia"
-languageCode= "id-id"
-beforeColon= ""
+languageName = "Bahasa Indonesia"
+languageCode = "id-ID"
+beforeColon = ""
 weight = 50
 description = """
   Let's Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
@@ -62,9 +62,9 @@ description = """
 [ja]
 title = "Let's Encrypt - フリーな SSL/TLS 証明書"
 contentDir = "content/ja"
-languageName ="日本語"
-languageCode= "ja"
-beforeColon= ""
+languageName = "日本語"
+languageCode = "ja"
+beforeColon = ""
 weight = 60
 description = """
   Let's Encrypt is a free, automated, and open certificate
@@ -74,9 +74,9 @@ description = """
 [ko]
 title = "Let's Encrypt - 무료 SSL/TLS 인증서"
 contentDir = "content/ko"
-languageName ="한국어"
-languageCode= "ko-kr"
-beforeColon= ""
+languageName = "한국어"
+languageCode = "ko-KR"
+beforeColon = ""
 weight = 70
 description = """
   Let's Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
@@ -85,9 +85,9 @@ description = """
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
 contentDir = "content/pt-br"
-languageName ="Português do Brasil"
-languageCode= "pt-br"
-beforeColon= ""
+languageName = "Português do Brasil"
+languageCode = "pt-BR"
+beforeColon = ""
 weight = 80
 description = """
   Let's Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
@@ -97,21 +97,21 @@ description = """
 [ru]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
 contentDir = "content/ru"
-languageName ="Русский"
-languageCode= "ru-ru"
-beforeColon= ""
+languageName = "Русский"
+languageCode = "ru-RU"
+beforeColon = ""
 weight = 90
 description = """
   Let's Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
   некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 
-[sr-sp]
+[sr]
 title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
-contentDir = "content/sr-sp"
-languageName ="Srpski"
-languageCode= "sr-sp"
-beforeColon= ""
+contentDir = "content/sr"
+languageName = "Srpski"
+languageCode = "sr"
+beforeColon = ""
 weight = 95
 description = """
   Let's Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
@@ -121,11 +121,9 @@ description = """
 [sv]
 title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
 contentDir = "content/sv"
-languageName ="Svenska"
-languageCode= "sv"
-#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
-beforeColon= ""
-# Weight used for sorting. (alphabetical order using languageCode, with English first)
+languageName = "Svenska"
+languageCode = "sv"
+beforeColon = ""
 weight = 97
 description = """
   Let's Encrypt är en gratis, automatiserad och öppen certifikatutgivare
@@ -135,9 +133,9 @@ description = """
 [zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
 contentDir = "content/zh-cn"
-languageName ="简体中文"
-languageCode= "zh-cn"
-beforeColon= ""
+languageName = "简体中文"
+languageCode = "zh-Hans-CN"
+beforeColon = ""
 weight = 100
 description = """
   Let's Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
@@ -148,8 +146,8 @@ description = """
 title = "Let's Encrypt - 免費SSL/TLS憑證"
 languageName = "正體中文"
 contentDir = "content/zh-tw"
-languageCode= "zh-tw"
-beforeColon= ""
+languageCode = "zh-Hant-TW"
+beforeColon = ""
 weight = 110
 description = """
   Let's Encrypt 是由非營利性網際網路安全研究小組（ISRG）提供給您的免費、自動化和開放的憑證頒發機構。
