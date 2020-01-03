@@ -6,4 +6,4 @@ before_install:
   - sudo dpkg -i hugo_0.62.0_Linux-64bit.deb
 
 install:
-  - npm run build
+  - npm install && npm run build && npm test

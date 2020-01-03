@@ -14,7 +14,7 @@
     "html:lint": "htmlhint public/*.html public/*/*.html public/*/*/*.html public/*/*/*/*.html",
     "test": "npm run html:lint",
     "build:hugo":"hugo -d public",
-    "build": "npm run build:hugo && npm test"
+    "build": "npm run build:hugo"
   },
   "repository": {
     "type": "git",
