@@ -11,11 +11,11 @@
   },
   "scripts": {
     "test:htmllint": "htmlhint \"public/*.html\" \"public/**/*.html\"",
-    "test:eslint":"find static/js -name \"*.js\" -not -name \"*min.js\" -not -name \"plotly-locale-*.js\" | xargs eslint",
+    "test:eslint": "find static/js -name \"*.js\" -not -name \"*min.js\" -not -name \"plotly-locale-*.js\" | xargs eslint",
     "test": "npm run test:htmllint && npm run test:eslint",
     "build:js": "uglifyjs static/js/main.js -o static/js/main.min.js  -c -m",
-    "build:scss": "npm run node-sass --output-style compressed src/css/main.scss static/css/main.min.css",
-    "build:hugo":"hugo -d public",
+    "build:scss": "node-sass --output-style compressed src/css/main.scss static/css/main.min.css",
+    "build:hugo": "hugo -d public",
     "build": "npm run build:js && npm run build:scss && npm run build:hugo"
   },
   "repository": {
