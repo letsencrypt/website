@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
-    "test:eslint": "eslint static/js --ext .js --ignore-pattern 'static/js/*.min.js' --ignore-pattern 'static/js/plotly-locale*'",
+    "test:eslint": "eslint static/js --ext .js",
     "test:sass": "sass-lint --verbose",
     "test": "npm run test:htmllint && npm run test:eslint && npm run test:sass",
     "build:js": "uglifyjs static/js/main.js -o static/js/main.min.js  -c -m",
