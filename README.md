@@ -34,4 +34,5 @@ To help with translation, please see [TRANSLATION.md].
 [install Hugo]: https://gohugo.io/getting-started/installing
 [http://localhost:1313/]: http://localhost:1313/
 [TRANSLATION.md]: https://github.com/letsencrypt/website/blob/master/TRANSLATION.md
+[netlify.toml]: https://github.com/letsencrypt/website/blob/master/netlify.toml
 
