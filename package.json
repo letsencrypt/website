@@ -2,7 +2,6 @@
   "name": "letsencrypt.org",
   "version": "1.0.0",
   "description": "Let's Encrypt website",
-  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -11,10 +10,13 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "html:lint": "htmlhint \"public/*.html\" \"public/**/*.html\"",
-    "test": "npm run html:lint",
+    "test:htmllint": "htmlhint \"public/*.html\" \"public/**/*.html\"",
+    "test:eslint":"find static/js -name \"*.js\" -not -name \"*min.js\" -not -name \"plotly-locale-*.js\" | xargs eslint",
+    "test": "npm run test:htmllint && npm run test:eslint",
+    "build:js": "uglifyjs static/js/main.js -o static/js/main.min.js  -c -m",
+    "build:scss": "npm run node-sass --output-style compressed src/css/main.scss static/css/main.min.css",
     "build:hugo":"hugo -d public",
-    "build": "npm run build:hugo"
+    "build": "npm run build:js && npm run build:scss && npm run build:hugo"
   },
   "repository": {
     "type": "git",
