@@ -10,7 +10,7 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html",
+    "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
     "test:eslint": "eslint static/js --ext .js --ignore-pattern 'static/js/*.min.js' --ignore-pattern 'static/js/plotly-locale*'",
     "test": "npm run test:htmllint && npm run test:eslint",
     "build:js": "uglifyjs static/js/main.js -o static/js/main.min.js  -c -m",
