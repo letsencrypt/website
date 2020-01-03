@@ -11,7 +11,7 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "html:lint": "htmlhint public/*.html public/*/*.html public/*/*/*.html public/*/*/*/*.html",
+    "html:lint": "htmlhint public/*.html public/**/*.html",
     "test": "npm run html:lint",
     "build:hugo":"hugo -d public",
     "build": "npm run build:hugo"
