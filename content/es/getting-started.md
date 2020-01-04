@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 Para habilitar HTTPS en tu página de web, tienes que obtener un certificado (un tipo de archivo) de una Autoridad de Certificación (AC, o CA por sus siglas en inglés). Let's Encrypt es una AC. Para obtener un certificado para tu dominio de sitio web de Let's Encrypt, tienes que demonstrar control sobre ese dominio. Con Let's Encrypt, puedes hacer esto con software que usa el [protocolo ACME](https://ietf-wg-acme.github.io/acme/), el cual típicamente corre en tu hospedaje de web.
 
 Para averiguar cuál método funcionará mejor para ti, tendrás que saber si tienes [acceso shell](https://en.wikipedia.org/wiki/Shell_account) (también conocido como acceso SSH) a tu hospedaje de web. Si manejas tu sitio web enteramente mediante un panel de control como [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), o [WordPress](https://wordpress.org/), hay una buena posibilidad que no tienes acceso shell. Puedes preguntarle a tu proveedor de hospedaje para estar seguro.

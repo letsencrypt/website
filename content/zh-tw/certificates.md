@@ -6,7 +6,7 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
-
+{{< lastmod >}}
 
 # 根憑證
 

@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## 多视角验证
 
 目前，Let's Encrypt 从单一网络视角进行验证。我们正计划从多个网络视角展开验证。

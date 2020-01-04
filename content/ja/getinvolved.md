@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## コミュニティ
 
 私たちはいつでも [Let's Encrypt コミュニティ・フォーラム](https://community.letsencrypt.org/)の質問に答えて人々を助けることができます。コミュニティの支援による貢献が以下に重要であるかについては、[このブログ記事](/2015/08/13/lets-encrypt-community-support.html)を読んでください。

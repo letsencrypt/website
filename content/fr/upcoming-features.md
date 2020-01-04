@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2018-12-31
 ---
 
+{{< lastmod >}}
+
 ## Certificate Transparency Log
 
 * Prévu: T1 2019
