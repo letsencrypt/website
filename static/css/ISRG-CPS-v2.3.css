@@ -78,8 +78,8 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
-.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
 .markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
@@ -100,8 +100,9 @@
   border-bottom: 1px dotted lime;
   position: absolute;
 }
-.line-number.bracket-matcher {
-  background-color: #777;
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
 }
 
 .spell-check-misspelling .region {
@@ -159,7 +160,7 @@ pre.editor-colors .gutter .line-number {
 }
 pre.editor-colors .gutter .line-number.cursor-line {
   color: #abb2bf;
-  background-color: #2c313a;
+  background-color: #3a3f4b;
 }
 pre.editor-colors .gutter .line-number.cursor-line-no-selection {
   background-color: transparent;
@@ -347,7 +348,6 @@ pre.editor-colors .fold-marker:after {
   color: #c678dd;
 }
 .syntax--meta.syntax--separator {
-  background-color: #373b41;
   color: #abb2bf;
 }
 .syntax--meta.syntax--tag {
@@ -427,6 +427,10 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--elixir .syntax--variable.syntax--definition,
 .syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
   color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
 }
 .syntax--source.syntax--elixir .syntax--quoted {
   color: #98c379;
@@ -512,6 +516,9 @@ pre.editor-colors .fold-marker:after {
 }
 .syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
   color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
 }
 .syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
   color: #c678dd;
