@@ -2,7 +2,7 @@
 title: 참여
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -28,7 +28,3 @@ menu:
 ### letsencrypt.org
 
 [여기](https://github.com/letsencrypt/website)에서 이 웹사이트의 문서를 개선하거나 [번역](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)에 도움을 줄 수 있습니다.
-
-## 프로토콜
-
-Let’s Encrypt CA는 웹 서버에서 동작하는 인증서 관리 소프트웨어와 통신합니다. 여기에 사용되는 프로토콜은 ACME(Automated Certificate Management Environment, 자동화된 인증서 관리 환경)라 불립니다. ACME 임시 사양은 [Github에서 확인](https://github.com/ietf-wg-acme/acme) 가능합니다. IETF가 ACME를 진정한 공개 표준으로 만들기 위해 작업 중입니다. 여러분도 [IETF 메일링 리스트](https://www.ietf.org/mailman/listinfo/acme)를 통해서 ACME 프로토콜 개발 토론에 참여할 수 있습니다.
