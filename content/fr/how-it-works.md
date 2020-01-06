@@ -1,5 +1,6 @@
 ---
 title: Comment ça marche
+linkTitle: Comment Let's Encrypt fonctionne
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-09-09
