@@ -12,6 +12,15 @@ other = "Faire un don"
 [home_hero_sponsor]
 other = "Sponsoriser"
 
+[home_hero_annual_report]
+other = "Lisez notre rapport annuel 2019"
+
+[home_hero_desktop]
+other = "Bureau"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
 
