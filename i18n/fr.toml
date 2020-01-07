@@ -163,3 +163,6 @@ other = "Bouton Faites un don avec PayPal"
 
 [paypal_donate_title]
 other = "Faites un don avec PayPal"
+
+[not_found]
+other = "Cette page n'existe pas, merci de vérifier l'adresse."
