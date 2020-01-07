@@ -5,3 +5,75 @@ command = "npm run build"
 
 [build.environment]
 HUGO_VERSION = "0.62.0"
+
+[[redirects]]
+from = "/de/*"
+to = "/de/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/es/*"
+to = "/es/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/fr/*"
+to = "/fr/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/id/*"
+to = "/id/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ja/*"
+to = "/ja/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ko/*"
+to = "/ko/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/pt-br/*"
+to = "/pt-br/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ru/*"
+to = "/ru/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/sr/*"
+to = "/sr/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/sv/*"
+to = "/sv/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/zh-cn/*"
+to = "/zh-cn/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/zh-tw/*"
+to = "/zh-tw/404.html"
+status = 404
+force = false
