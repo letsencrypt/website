@@ -827,6 +827,6 @@
 			"url": "https://www.getambassador.io",
 			"acme_v2": "true",
 			"category": "Envoy Proxy"
-		},
+		}
 	]
 }
