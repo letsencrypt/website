@@ -8,6 +8,7 @@
 		"Configuration management tools",
 		"D",
 		"Docker",
+		"Envoy Proxy",
 		"Go",
 		"HAProxy",
 		"Java",
@@ -129,6 +130,10 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "Ambassador Edge Stack",
+			"url": "https://www.getambassador.io"
 		}
 	],
 	"list": [
@@ -816,6 +821,12 @@
 			"comments": "allows IoT devices to get certificates",
 			"acme_v2": "true",
 			"library": "C++"
-		}
+		},
+		{
+			"name": "Ambassador Edge Stack",
+			"url": "https://www.getambassador.io",
+			"acme_v2": "true",
+			"category": "Envoy Proxy"
+		},
 	]
 }
