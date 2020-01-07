@@ -2,7 +2,7 @@
 title: 幫助Let's Encrypt
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -28,7 +28,3 @@ Let's Encrypt CA使用[Boulder](https://github.com/letsencrypt/boulder)簽發憑
 ### letsencrypt.org
 
 您可以在[此處](https://github.com/letsencrypt/website)改進本網站和文件或幫助我們[翻譯](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)網站。
-
-## 簽發協議
-
-Let's Encrypt CA與在網站伺服器上運行的憑證管理軟體進行通信。我們使用的協議叫ACME，用於“自動憑證管理”。 ACME協議草案可在[Github](https://github.com/ietf-wg-acme/acme)上獲得。IETF正在努力工作以將ACME定為真正的開放標準協議。 您可以加入[此IETF郵件列表](https://www.ietf.org/mailman/listinfo/acme)討論ACME協議開發。

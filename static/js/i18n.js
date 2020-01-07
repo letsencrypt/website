@@ -13,16 +13,16 @@
   // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
   function toLocaleDateStringSupportsLocales() {
     try {
-      new Date().toLocaleDateString('i');
+      new Date().toLocaleDateString("i");
     } catch (e) {
-      return e.name === 'RangeError';
+      return e.name === "RangeError";
     }
     return false;
   }
   if ( toLocaleDateStringSupportsLocales() ) {
     const styles = {
       "Jan 2, 2006" : { day: "numeric", month: "short", year: "numeric" }
-    }
+    };
     const times = document.querySelectorAll("time[data-dateformat]");
     times.forEach( e => {
       const lang_el = e.closest("[lang]");

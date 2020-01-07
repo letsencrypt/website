@@ -117,4 +117,4 @@ english_is_canonical: 1
   로고만. "Let's Encrypt" 단어 표시가 명확하게 표시되거나 페이지 또는 디자인의 다른 곳에 잘 설정된 경우에만 이 옵션을 사용하십시오. (확실하지 않으면 다른 형식을 사용하십시오.)
 
   <p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
-  <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+  <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

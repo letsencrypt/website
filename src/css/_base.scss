@@ -115,7 +115,7 @@ h2.through-line {
     }
 
     &:after {
-        background-clip: padding;
+        background-clip: padding-box;
         background-image: linear-gradient(transparent 47%, #dddddd 48%, #dddddd 52%, transparent 52%);
         content: "";
         display: table-cell;

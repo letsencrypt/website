@@ -6,3 +6,6 @@ Gemfile.lock
 public/
 nohup.out
 /node_modules
+.idea
+static/js/main.min.js
+static/css/main.min.css

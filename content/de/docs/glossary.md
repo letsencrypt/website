@@ -27,7 +27,7 @@ Note for translators:
 
 {{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Eine Zertifikat [Erweiterung](#def-extension) benutzt zum Identifizieren von [User Agents](#def-user-agent), wie sie Informationen über Aussteller des [Zertifikat](#def-certificate) identifizieren. Typischerweise spezifiziert sie die [OCSP](#def-OCSP) URI und die [issuer URI](#def-CAI). {{% /def %}}
 
-{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} Das Protokoll implementiert von [Let's Encrypt](#def-LE). Software, die kompatibel zu diesem Protokoll ist, kann zur Kommunikation mit Let's Encrypt benutzt werden, um nach einem [Zertifikat](#def-leaf) zu fragen. [ACME Entwurf](https://tools.ietf.org/html/draft-ietf-acme-acme-16) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
+{{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} Das Protokoll implementiert von [Let's Encrypt](#def-LE). Software, die kompatibel zu diesem Protokoll ist, kann zur Kommunikation mit Let's Encrypt benutzt werden, um nach einem [Zertifikat](#def-leaf) zu fragen. [ACME RFC](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
 {{% def id="ACME-client" name="ACME Client" %}} Ein Programmm, dass fähig ist, mit einem ACME Server zu kommunizieren, und nach einem [Zertifikat](#def-leaf) zu fragen. {{% /def %}}
 

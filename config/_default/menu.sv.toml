@@ -1,0 +1,32 @@
+[[main]]
+name = "Få hjälp"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "Donera"
+weight = 30
+identifier = "donate"
+url = "/sv/donate/"
+[[main]]
+name = "Om oss"
+weight = 40
+identifier = "about"
+url = "/sv/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "Driftstatus"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "Karriär"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"

@@ -3,7 +3,7 @@ title: Что такое Let's Encrypt
 linkTitle:  Что такое Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-01-28
+lastmod: 2019-11-11
 menu:
   main:
     weight: 10
@@ -12,6 +12,8 @@ menu:
 Let's Encrypt - бесплатный, автоматизированный и открытый Центр Сертификации, созданный на благо всего общества организацией [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/).
 
 Мы помогаем людям выпускать SSL/TLS сертификаты для их сайтов с доступом по HTTPS, бесплатно, максимально облегчая процесс выдачи. Потому что хотим сделать интернет безопасным, и уважающим конфиденциальность его пользователей.
+
+О наших успехах за последний год вы можете узнать, [скачав наш годовой отчёт](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf).
 
 Ключевые принципы Let's Encrypt:
 

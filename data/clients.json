@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-19",
+	"lastmod": "2020-01-01",
 	"categories": [
 		"Bash",
 		"C",
@@ -24,6 +24,7 @@
 		"Windows / IIS"
 	],
 	"libraries": [
+		"C++",
 		"D",
 		"Delphi",
 		"Go",
@@ -47,7 +48,7 @@
 		},
 		{
 			"name": "cPanel",
-			"url": "https://cpanel.com/"
+			"url": "https://cpanel.net/"
 		},
 		{
 			"name": "Own-Mailbox",
@@ -99,8 +100,7 @@
 		},
 		{
 			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net",
-			"comments": "(ACMEv2 only)"
+			"url": "http://www.synchro.net"
 		},
 		{
 			"name": "ruxy",
@@ -168,11 +168,14 @@
 		{
 			"name": "acme-lw",
 			"url": "https://github.com/jmccl/acme-lw",
-			"category": "C++"
+			"category": "C++",
+			"acme_v2": "acme-lw >= v0.2",
+			"library": "C++"
 		},
 		{
 			"name": "certificaat",
 			"url": "https://github.com/danielsz/certificaat",
+			"acme_v2": "true",
 			"category": "Clojure"
 		},
 		{
@@ -183,6 +186,7 @@
 		{
 			"name": "ZeroSSL",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
@@ -211,13 +215,14 @@
 			"url": "https://github.com/hlandau/acme",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi"
 		},
 		{
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
-			"comments": "(Reverse proxy to handle https/tls)"
+			"comments": "(Reverse proxy to handle https/tls)",
+			"acme_v2": "Lets-proxy2 >= v0.21.0"
 		},
 		{
 			"name": "autocert",
@@ -245,7 +250,7 @@
 			"category": "HAProxy"
 		},
 		{
-			"name": "HAProxy ACME v2 client",
+			"name": "HAProxy client",
 			"url": "https://github.com/haproxytech/haproxy-lua-acme",
 			"acme_v2": "true",
 			"category": "HAProxy"
@@ -259,6 +264,7 @@
 		{
 			"name": "ManageEngine Key Manager Plus",
 			"url": "https://www.manageengine.com/key-manager/",
+			"acme_v2": "Version >= 5650",
 			"category": "Java"
 		},
 		{
@@ -304,6 +310,7 @@
 		{
 			"name": "Greenlock for node.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
+			"acme_v2": "true",
 			"library": "Node.js"
 		},
 		{
@@ -326,11 +333,13 @@
 			"name": "ZeroSSL project",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS"
+			"category": "Windows / IIS",
+			"library": "Perl"
 		},
 		{
 			"name": "Crypt::LE",
 			"url": "https://metacpan.org/pod/Crypt::LE",
+			"acme_v2": "true",
 			"category": "Perl",
 			"library": "Perl"
 		},
@@ -386,6 +395,7 @@
 		{
 			"name": "simp_le",
 			"url": "https://github.com/zenhack/simp_le",
+			"acme_v2": "true",
 			"category": "Python"
 		},
 		{
@@ -554,6 +564,7 @@
 		{
 			"name": "DelphiACME",
 			"url": "https://github.com/tothpaul/DelphiACME",
+			"acme_v2": "true",
 			"library": "Delphi",
 			"comments": "(Embarcadero Delphi)"
 		},
@@ -665,7 +676,7 @@
 			"category": "Configuration management tools"
 		},
 		{
-			"name": "WinCertes Windows ACMEv2 client",
+			"name": "WinCertes Windows client",
 			"url": "https://github.com/aloopkin/WinCertes",
 			"acme_v2": "true",
 			"category": "Windows / IIS"
@@ -695,7 +706,7 @@
 		},
 		{
 			"name": "GetCert",
-			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		},
@@ -704,7 +715,6 @@
 			"url": "https://github.com/cschlote/acme-lw-d",
 			"category": "D",
 			"library": "D",
-			"comments": "An ACME v2 client/library written in the D computer language",
 			"acme_v2": "true"
 		},
 		{
@@ -784,6 +794,28 @@
 			"url": "https://github.com/mk-fg/acme-cert-tool",
 			"category": "Python",
 			"acme_v2": "true"
+		},
+		{
+			"name": "ght-acme.sh",
+			"url": "https://github.com/bruncsak/ght-acme.sh",
+			"category": "Bash",
+ 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "GetCert2",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "esp32-acme-client",
+			"url": "https://esp32-acme-client.sourceforge.io",
+			"category": "C++",
+			"comments": "allows IoT devices to get certificates",
+			"acme_v2": "true",
+			"library": "C++"
 		}
 	]
 }

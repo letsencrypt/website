@@ -22,9 +22,9 @@ Let's Encrypt와 웹 PKI는 계속 성장할 것입니다. 귀하는 Let's Encry
   * 저희가 최종 사용자 인증서를 서명하기로 한 키들의 종류와 키 강도 점검
   * 그리고 ACME 프로토콜
 
-저희는 이러한 변화에 가능한 많은 사전 통지를 제공하는 것을 목표로 할 것입니다. 그러나 일부 구성 요소에서 심각한 보안 결함이 발견되는 경우, 매우 짧은 기간 또는 즉시 변경해야 할 수 있습니다. 특히 중급 사항을 적용하는 경우, 중간 인증서를 하드코딩해서는 안되지만 중간 인증서가 변경될 가능성이 있으므로 ACME 프로토콜의 [`Link: rel="up"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.3.1) 헤더를 사용하시길 바랍니다.
+저희는 이러한 변화에 가능한 많은 사전 통지를 제공하는 것을 목표로 할 것입니다. 그러나 일부 구성 요소에서 심각한 보안 결함이 발견되는 경우, 매우 짧은 기간 또는 즉시 변경해야 할 수 있습니다. 특히 중급 사항을 적용하는 경우, 중간 인증서를 하드코딩해서는 안되지만 중간 인증서가 변경될 가능성이 있으므로 ACME 프로토콜의 [`Link: rel="up"`](https://tools.ietf.org/html/rfc8555#section-7.4.2) 헤더를 사용하시길 바랍니다.
 
-마찬가지로, 업데이트 후 URL의 서비스 약관(ToS)도 변경될 수 있습니다. 하드코딩된 ToS URL을 피하고 대신 [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-6.2) 헤더를 사용하여 사용할 ToS URL을 결정하십시오.
+마찬가지로, 업데이트 후 URL의 서비스 약관(ToS)도 변경될 수 있습니다. 하드코딩된 ToS URL을 피하고 대신 [`Link: rel="terms-of-service"`](https://tools.ietf.org/html/rfc8555#section-7.3.3) 헤더를 사용하여 사용할 ToS URL을 결정하십시오.
 
 새로운 공격이 암호화 스위트 또는 프로토콜 버전에서 발견될 때마다 귀하의 TLS 구성을 최신 상태로 유지하는 방법이 필요할 것입니다.
 

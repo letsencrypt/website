@@ -2,7 +2,7 @@
 title: Commencer
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
@@ -14,7 +14,7 @@ chez votre hébergeur.
 Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez savoir si
 vous avez un [accès shell](https://en.wikipedia.org/wiki/Shell_account) (également connu
 comme accès SSH) à votre hébergement. Si vous gérez votre site entièrement via un
-panneau de contrôle comme [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), ou
+panneau de contrôle comme [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), ou
 [WordPress](https://wordpress.org/), il y a de fortes chances que vous n'ayez pas d'accès shell.
 Vous pouvez demander à votre hébergeur pour en être sûr.
 

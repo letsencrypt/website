@@ -110,11 +110,6 @@ other = "Usuários do Japão"
 [graph_percent_https]
 other = "Porcentagem de páginas carregadas usando HTTPS (média de 14 dias)"
 
-
-
-
-
-
 [overview]
 other = "Visão Geral"
 
@@ -126,3 +121,6 @@ other = "Informações Para Usuários Avançados"
 
 [client_developer_information]
 other = "Informações Para Desenvolvedores de Clientes"
+
+[paypal_donate_alt]
+other = "Faça doações com o botão do PayPal"

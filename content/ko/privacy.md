@@ -3,11 +3,9 @@ title: 개인정보보호 정책
 slug: privacy
 top_graphic: 4
 date: 2018-06-22
-lastmod: 2019-09-19
+lastmod: 2019-12-05
 english_is_canonical: 1
 ---
-
-# Let's Encrypt 개인정보보호 정책
 
 {{< lastmod >}}
 
