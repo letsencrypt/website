@@ -8,7 +8,7 @@ This site is built with [Hugo]. It's entirely static, no server-side code/script
 To see your changes, [install Hugo], then run it with:
 
 ```sh
-hugo server -F
+npm install && npm run build && npm test && hugo server -F
 ```
 
 And open [http://localhost:1313/] in your browser. Note that the `-F` flag will
@@ -23,7 +23,7 @@ If you see the error:
 
 > Failed to load translations in file "en.toml": unsupported file extension .toml
 
-Your version of Hugo is probably too old.
+Your version of Hugo is probably too old. Please use the version specified in [netlify.toml]
 
 # Translations - internationalization (i18n)
 
@@ -34,4 +34,5 @@ To help with translation, please see [TRANSLATION.md].
 [install Hugo]: https://gohugo.io/getting-started/installing
 [http://localhost:1313/]: http://localhost:1313/
 [TRANSLATION.md]: https://github.com/letsencrypt/website/blob/master/TRANSLATION.md
+[netlify.toml]: https://github.com/letsencrypt/website/blob/master/netlify.toml
 

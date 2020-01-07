@@ -12,6 +12,15 @@ other = "Donate"
 [home_hero_sponsor]
 other = "Sponsor"
 
+[home_hero_annual_report]
+other = "Read our 2019 Annual Report"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Major Sponsors and Donors"
 
@@ -148,3 +157,14 @@ other = "Differences from ACME RFC"
 
 [onboarding_customers]
 other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"
+
+[paypal_donate_title]
+other = "Donate with PayPal"
+
+[not_found]
+other = "That page doesn't exist, please check the address."

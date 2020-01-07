@@ -128,11 +128,6 @@ other = "链接"
 [certificate_transparency_public_key]
 other = "公钥"
 
-
-
-
-
-
 [overview]
 other = "概述"
 
@@ -148,3 +143,5 @@ other = "客户端开发者信息"
 [acme_divergences]
 other = "与当前 ACME 草案的不同"
 
+[paypal_donate_alt]
+other = "使用PayPal按钮进行捐赠"

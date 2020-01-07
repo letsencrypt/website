@@ -2,7 +2,7 @@
 title: Priključite se
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -28,7 +28,3 @@ Takođe,često volimo da koristimo i pomoć oko razvoja softvera.Ceo naš izvorn
 ### letsencrypt.org
 
 Možete učestvovati i unaprediti ovaj web sajt i dokumentaciju [ovde](https://github.com/letsencrypt/website) ili nam pomoći sa [prevodom na druge jezike](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
-
-## Protokol
-
-Let’s Encrypt CA razgovara sa softverom za upravljanje sertifikatima koji radi na web serverima. Protokol za to se zove ACME, za "Automatizovano okruženje za upravljanje sertifikatima". Nacrt specifikacije ACME je [dostupan na Github-u](https://github.com/ietf-wg-acme/acme). Unutar IETF-a je u toku rad na finalizaciji ACME-a kao zaista otvorenog standarda. Možete se pridružiti raspravi o razvoju protokola ACME na [ovoj IETF listi za slanje](https://www.ietf.org/mailman/listinfo/acme).

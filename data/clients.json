@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-11-03",
+	"lastmod": "2020-01-01",
 	"categories": [
 		"Bash",
 		"C",
@@ -48,7 +48,7 @@
 		},
 		{
 			"name": "cPanel",
-			"url": "https://cpanel.com/"
+			"url": "https://cpanel.net/"
 		},
 		{
 			"name": "Own-Mailbox",
@@ -808,6 +808,14 @@
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)",
 			"acme_v2": "true"
+		},
+		{
+			"name": "esp32-acme-client",
+			"url": "https://esp32-acme-client.sourceforge.io",
+			"category": "C++",
+			"comments": "allows IoT devices to get certificates",
+			"acme_v2": "true",
+			"library": "C++"
 		}
 	]
 }

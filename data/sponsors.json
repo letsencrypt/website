@@ -26,7 +26,6 @@
       {"name":"Hébergement web","url":"https://www.planethoster.com/","image":"planethoster-logo.png"},
       {"name":"YunPian","url":"https://www.yunpian.com/","image":"yunpian-logo.png"},
       {"name":"Fastly","url":"https://www.fastly.com/","image":"fastly-logo.png"},
-      {"name":"Casino2k","url":"https://www.casino2k.com/","image":"casino2k-logo.png", "sponsored":true},
       {"name":"3CX","url":"https://www.3cx.com/","image":"3cx-logo.png"},
       {"name":"Squarespace","url":"https://www.squarespace.com/","image":"squarespace-logo.png"},
       {"name":"Hawk Host","url":"https://www.hawkhost.com/","image":"hawkhost-logo.png"},
@@ -81,6 +80,8 @@
       {"name":"Snipe-IT","url":"https://snipeitapp.com/","image":"snipe-it-logo.png"},
       {"name":"Top10VPN","url":"https://www.top10vpn.com/","image":"top10vpn-logo.png"},
       {"name":"Smallstep","url":"https://smallstep.com/","image":"smallstep-logo.png"},
-      {"name":"VPNCompare","url":"https://www.vpncompare.co.uk/","image":"vpncompare-logo.png"}
+      {"name":"VPNCompare","url":"https://www.vpncompare.co.uk/","image":"vpncompare-logo.png"},
+      {"name":"WPBeginner","url":"https://www.wpbeginner.com/","image":"wpbeginner-logo.png"},
+      {"name":"IP2Location","url":"https://www.ip2location.com/","image":"ip2location-logo.png"}
 ]
 }

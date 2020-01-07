@@ -25,7 +25,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen]({{< relref "/getinvolved.md" >}}) Seite.
 
-[Klicken Sie hier](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad), um sich für unseren Newsletter anzumelden.
+[Klicken Sie hier](https://mailchi.mp/letsencrypt.org/fjp6ha1gad), um sich für unseren Newsletter anzumelden.
 
 ## Sicherheit
 

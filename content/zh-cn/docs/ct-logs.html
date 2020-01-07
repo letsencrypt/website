@@ -2,7 +2,7 @@
 title: 证书透明度（CT）日志
 slug: ct-logs
 top_graphic: 4
-lastmod: 2019-05-15
+lastmod: 2019-11-20
 ---
 
 {{< lastmod >}}
@@ -19,7 +19,7 @@ lastmod: 2019-05-15
 
 <h2>架构</h2>
 
-<p>我们的日志使用在 AWS 基础设施上运行的 Google 的 <a href="https://github.com/google/trillian/">Trillian 软件</a>。我们使用 <a href="https://kubernetes.io/">Kubernetes</a> 进行容器编排和作业调度，使用 AWS RDS 进行数据库管理。</p>
+<p>我们的日志使用在 AWS 基础设施上运行的 Google 的 <a href="https://github.com/google/trillian/">Trillian 软件</a>。我们使用 <a href="https://kubernetes.io/">Kubernetes</a> 进行容器编排和作业调度，使用 AWS RDS 进行数据库管理。有关更多信息，请参见<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"Let's Encrypt如何运行CT日志"</a>。</p>
 
 <h2>日志监控</h2>
 
@@ -28,4 +28,3 @@ lastmod: 2019-05-15
 <h2>CT 日志服务器</h2>
 
 {{< ct_logs >}}
-

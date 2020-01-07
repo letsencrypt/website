@@ -110,8 +110,6 @@ other = "日本のユーザー"
 [graph_percent_https]
 other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
 
-
-
 [overview]
 other = "概要"
 
@@ -127,3 +125,5 @@ other = "クライアント開発者向けの情報"
 [acme_divergences]
 other = "現在の ACME ドラフトとの違い"
 
+[paypal_donate_alt]
+other = "[PayPalで寄付する]ボタン"
