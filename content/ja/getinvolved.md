@@ -2,7 +2,7 @@
 title: 参加する
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
@@ -28,7 +28,3 @@ menu:
 ### letsencrypt.org
 
 [このリポジトリ](https://github.com/letsencrypt/website)に貢献することで、あなたもウェブサイトやドキュメントの改善に参加できます。ウェブサイトの翻訳を行うには、[TRANSLATION](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md) の説明を読んでください。
-
-## プロトコル
-
-Let's Encrypt CA は、ウェブサーバー上の証明書管理ソフトウェアと通信を行います。そのときに利用されるプロトコルは ACME (Automated Certificate Management Environment) と呼ばれます。ACME の仕様のドラフトは [Github 上で読むことができます](https://github.com/ietf-wg-acme/acme)。IETF では、ACME を完全なオープン標準にするための作業が進行中です。[IETF メーリングリスト](https://www.ietf.org/mailman/listinfo/acme)に参加することで、あなた自身も ACME プロトコルを開発するための議論に参加することができます。

@@ -110,8 +110,6 @@ other = "Benutzer in Japan"
 [graph_percent_https]
 other = "Prozent der Seitenaufrufe über HTTPS (14 Tage Durchschnitt)"
 
-
-
 [overview]
 other = "Übersicht"
 
@@ -127,3 +125,5 @@ other = "Informationen für Client Entwickler"
 [acme_divergences]
 other = "Unterschiede von derzeitigen ACME Entwürfen"
 
+[paypal_donate_alt]
+other = "Spenden mit dem PayPal-Button"

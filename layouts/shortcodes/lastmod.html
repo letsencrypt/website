@@ -20,7 +20,7 @@
                 <i>
                     {{ i18n "old_version" }}
                     (<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" data-dateformat="{{ $.Site.Params.time_format_default }}">{{ .Page.Lastmod.Format $.Site.Params.time_format_default }}</time>)
-                    <a href="{{ .Page.Permalink }}">{{ i18n "view_in_english" }}</a>
+                    <a href="{{ .Page.RelPermalink }}">{{ i18n "view_in_english" }}</a>
                 </i>
             </p>
             {{ end }}

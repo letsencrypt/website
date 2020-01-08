@@ -1,0 +1,3 @@
+/static/js/*.min.js
+/static/js/*-min.js
+/static/js/plotly-locale-*.js
