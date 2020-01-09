@@ -15,7 +15,7 @@ description = """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 # A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
 paypalCountry = "US"
-# Number format : <negative>|<decimal>|<decimal>
+# Number format : <negative>|<decimal>|<grouping>
 # Ex. for -1 2345.67 -> "-|.| "
 numberFormat = "-|.|,"
 
