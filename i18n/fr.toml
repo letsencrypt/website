@@ -166,3 +166,18 @@ other = "Faites un don avec PayPal"
 
 [not_found]
 other = "Cette page n'existe pas, merci de vérifier l'adresse."
+
+[amount_per_year]
+other = "${{ .nb }}/an (USD)"
+
+[3y_commitment]
+other = "avec un engagement de 3 ans"
+
+[1_99_employees]
+other = "1-99 employés"
+
+[100_999_employees]
+other = "100-999 employés"
+
+[1000_employees]
+other = "1000+ employés"

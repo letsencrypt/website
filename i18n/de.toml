@@ -52,13 +52,13 @@ other = "Sehen Sie die ganze Dokumentation"
 other = "Let's Encrypt Blog Feed"
 
 [platinum]
-other = "Platinum"
+other = "Platin"
 
 [gold]
 other = "Gold"
 
 [silver]
-other = "Silver"
+other = "Silber"
 
 [languages]
 other = "Sprachen"
@@ -127,3 +127,18 @@ other = "Unterschiede von derzeitigen ACME Entwürfen"
 
 [paypal_donate_alt]
 other = "Spenden mit dem PayPal-Button"
+
+[amount_per_year]
+other = "${{ .nb }}/Jahr (USD)"
+
+[3y_commitment]
+other = "mit 3-Jahres-Vertrag"
+
+[1_99_employees]
+other = "1-99 Mitarbeiter"
+
+[100_999_employees]
+other = "100-999 Mitarbeiter"
+
+[1000_employees]
+other = "1000+ Mitarbeiter"

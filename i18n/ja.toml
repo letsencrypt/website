@@ -127,3 +127,18 @@ other = "現在の ACME ドラフトとの違い"
 
 [paypal_donate_alt]
 other = "[PayPalで寄付する]ボタン"
+
+[amount_per_year]
+other = "${{ .nb }}/年 (USD)"
+
+[3y_commitment]
+other = "3年間のコミット"
+
+[1_99_employees]
+other = "従業員数 1-99 人"
+
+[100_999_employees]
+other = "従業員数 100-999 人"
+
+[1000_employees]
+other = "従業員数 1000+ 人"
