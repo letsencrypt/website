@@ -54,7 +54,7 @@
                 {{ if eq $lang .Language }}
                 
                 {{ if .Params.aliases }}
-                  {{ errorf "Translated page %q mush not have aliases" $page.RelPermalink }}
+                  {{ errorf "Translated page %q must not have aliases" $page.RelPermalink }}
                 {{ end }}
 
                 <a href="{{ .Permalink }}">
