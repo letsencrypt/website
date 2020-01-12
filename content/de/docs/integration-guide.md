@@ -309,8 +309,8 @@ tagsüber zu einer zufälligen Sekunde ausgeführt werden und
 nicht immer zu einem bestimmten Zeitpunkt. Dadurch wird sichergestellt,
 dass Let's Encrypt nicht zu jeder Stunde oder Minute zufällige
 Verkehrsspitzen empfängt. Da Let's Encrypt Kapazitäten bereitstellen
-muss, um Lastspitzen zu bewältigen, können Verkehrsspitzen reduziert
-werden, um unsere Kosten zu senken.
+muss, um Lastspitzen zu bewältigen, sollte ein hohes Aufkommen an
+Netzwerkanfragen reduziert werden, um unsere Kosten zu senken.
 
 # Wiederholungsfehler
 

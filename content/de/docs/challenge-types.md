@@ -46,7 +46,7 @@ Vorteile:
 Nachteile:
 
  - Funktioniert nicht, wenn Ihr ISP Port 80 blockiert (selten, aber es gibt solche ISPs)
- - Let’s Encrypt erlaubt diese Challenge nicht zum Ausstellen von Wildcard Zertfikaten
+ - Let’s Encrypt erlaubt diese Challenge nicht zum Ausstellen von Wildcard Zertifikaten
  - Wenn Sie mehrere Webserver haben, müssen Sie sicherstellen, dass die Dateien überall verfügbar sind.
 
 # DNS-01 challenge
@@ -74,9 +74,9 @@ warten, bis Ihre Domain fast abgelaufen ist.
 
 Beachten Sie, dass das Abspeichern der vollen DNS API Zugriffsberechtigungen
 auf Ihren Webserver signifikant die Möglichkeit vergrössert, dass Ihr Webserver
-gehackt wird. Beste Praxis ist die Benutzung [speciellere DNS API Zugriffsschlüssel][securing-dns-credentials]
+gehackt wird. Beste Praxis ist die Benutzung [spezieller DNS API Zugriffsschlüssel][securing-dns-credentials]
 oder die Durchführung der DNS Validierung von einem separaten Server und
-automatischen Kopieren des Zertitikatgs auf Ihren Webserver.
+automatischen Kopieren des Zertitikats auf Ihren Webserver.
 
 Seit Let’s Encrypt dem DNS Standard folgt, wenn es TXT Einträge sucht für
 DNS01- Validierung, können Sie CNAME Einträge oder NS Einträge zur
@@ -100,9 +100,9 @@ nur so konfigurieren, dass er lange genug wartet (häufig bis zu einer
 Stunde), um sicherzustellen, dass das Update weitergegeben wird,
 bevor die Validierung ausgelöst wird.
 
-Sie können mehrere TXT Einträge für denselben Namen vorhalten. Zum
-Beispiel, wenn Sie eine Challenge validieren für ein Wildcard-Zertifikat
-und ein Nicht-Wildcard-Zertifikat zur selben Zeit. Wie auch immer sollten
+Sie können mehrere TXT Einträge für denselben Namen vorhalten, wenn Sie
+zum Beispiel zur selben Zeit eine Challenge für ein Wildcard-Zertifikat
+und ein Nicht-Wildcard-Zertifikat validieren. Wie auch immer sollten
 Sie sicherstellen, dass alte TXT Einträge immer gelöscht werden, bevor
 die Anfrageantwort zu gross wird und Let's Encrypt sie abweisen wird.
 
@@ -136,9 +136,10 @@ wiederum sicherer macht.
 
 Für die meisten Nutzer ist diese Challenge nicht sinnvoll. Es ist die beste Lösung
 für Entwickler von TLS-terminierenden Reverse-Proxys, die eine host-basierende
-Validierung wie HTTP-01 durchführen möchten, aber das durchgängig als TLS Layer
-aus Separierungsgründen. Derzeit grosse Hostinganbieter, aber Webserver wie
-Apache oder Nginx könnten das irgendwann mal ([Caddy kann es schon][caddy-tls-alpn]).
+Validierung wie HTTP-01 durchführen möchten, aber dies aus Separierungsgründen
+durchgängig als TLS Layer implementieren. Derzeit benutzt bei grossen
+Hostinganbieter, aber Webserver wie Apache oder Nginx könnten das irgendwann mal
+([Caddy kann es jetzt schon][caddy-tls-alpn]).
 
 Pros:
 

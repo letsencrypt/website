@@ -11,7 +11,7 @@ menu:
 
 ## Support
 
-**Wir leisten keine Unterstützung per E-Mail. Wenn Sie Fragen haben, nutzen Sie bitte unsere [community forums](https://community.letsencrypt.org). Die unten angegebene E-Mail-Adresse ist nur für die speziell beschriebenen Aufgaben.**
+**Wir leisten keine Unterstützung per E-Mail. Wenn Sie Fragen haben, nutzen Sie bitte unsere [Community-Foren](https://community.letsencrypt.org). Die unten angegebenen E-Mail-Adressen sind nur für die speziell beschriebenen Aufgaben.**
 
 If you have questions about how to use Let's Encrypt, please ask on [Let's Encrypt Community Support](https://community.letsencrypt.org/).
 

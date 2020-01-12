@@ -23,10 +23,10 @@ einer grossen Webseite bitte [lesen Sie unseren Integration Guide]({{< relref "/
 
 Das Hauptlimit ist <a name="certificates-per-registered-domain"></a>**Zertifikate
  pro registrierte Domain** (50 pro Woche).
-Eine registrierte Domain, ist generell gesehen, der Teil der Domain, den Sie
+Eine registrierte Domain ist, generell gesehen, der Teil der Domain, den Sie
 von einem Domainregistrar gekauft haben. Zum Beispiel, im Namen `www.example.com`,
-die registrierte Domain ist `example.com`. In `new.blog.example.co.uk`,
-die registrierte Domain ist `example.co.uk`. Wir benutzen die
+ist die registrierte Domain `example.com`. In `new.blog.example.co.uk`,
+ist die registrierte Domain `example.co.uk`. Wir benutzen die
 [Public Suffix List](https://publicsuffix.org), um die registrierte Domain zu
 berechnen.
 
@@ -42,7 +42,7 @@ Verlängerungen werden speziell behandelt: Sie werden nicht auf Ihr
 **Zertifikat pro registrierter Domain**-Limit angerechnet, unterliegen jedoch einem 
 **Duplikat-Zertifikat**-Limit von 5 pro Woche.
 Hinweis: Verlängerungen wurden bis März 2019 gegen Ihr **Zertifikat pro registrierter Domain**-Limit
- angerechnet, [jetzt jedoch nicht mehr] (https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name- rate-limit-order-of-operations-gotcha / 88189).
+ angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name- rate-limit-order-of-operations-gotcha/88189).
 
 Zum Beispiel, Sie fordern die Ausstellung eines Zertifikates mit dem Namen
 [`www.example.com`, `example.com`], und Sie stellen 4 weitere Anträge auf Zertifikate
@@ -111,7 +111,7 @@ Beachten Sie, dass die meisten Hosting-Provider keine Vergrösserung der
 Rate Limits brauchen, weil es kein Limit an registrierten Domains und
 eine Zertifikatsausstellung für diese gibt. Solange Ihre Kunden nicht mehr
 als 5.000 Subdomains in einer registrierten Domain haben, brauchen Sie keine
-Vergrösserung der Limits. Schauen Sie unseren [Integration
+Vergrösserung der Limits. Schauen Sie in unseren [Integration
 Guide]({{< relref "/docs/integration-guide.md" >}}) für mehr Anleitungen.
 
 # <a name="clearing-pending"></a>Ausstehende Autorisierungen bereinigen
