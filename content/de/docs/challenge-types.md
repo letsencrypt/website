@@ -18,7 +18,7 @@ Ihres Clients oder zu HTTP-01.
 
 Dies ist heute die häufigste Art der Challenge. Let's Encrypt gibt Ihrem ACME-Client
 einen Token und Ihr ACME-Client legt eine Datei auf Ihrem Webserver unter
-"http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>" ab. Diese Datei enthält
+`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>` ab. Diese Datei enthält
 den Token sowie einen Fingerabdruck Ihres Kontoschlüssels. Sobald Ihr ACME-Client
 Let’s Encrypt mitteilt, dass die Datei fertig ist, versucht Let’s Encrypt sie abzurufen
 (möglicherweise mehrmals von mehreren Standorten aus). Wenn unsere Validierungsprüfunge
