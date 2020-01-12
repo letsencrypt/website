@@ -22,7 +22,7 @@ and increases the risk of missed renewals.
 
 We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
 
-If certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+If Certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
 # ACMEv1 and ACMEv2
 
@@ -41,7 +41,7 @@ The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is
 
 # Adding your client/project
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
+If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on GitHub, updating the `data/clients.json` file.
 
 Before submitting a pull request please make sure:
 
