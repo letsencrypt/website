@@ -19,7 +19,7 @@ Let's Encrypt では、ほとんどの人に [Certbot](https://certbot.eff.org/)
 
 Certbot があなたが求める要件を満たさない場合や、単に他のクライアントを試してみたい場合でも、選択できるクライアントは以下に挙げるようにたくさんあります。リストは、実装言語や実行環境によってクループ分けをしています。
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+{{< clients acme_v2="ACME v2 Compatible Clients" libraries="ライブラリ" projects="Let's Encrypt と連携できるプロジェクト" >}}
 
 Python の [acme](https://github.com/certbot/certbot/tree/master/acme) モジュールは、Certbot tree の一部として含まれているものですが、スタンドアローンのパッケージとしても公開されています。[PyPI](https://pypi.python.org/pypi/acme) や [Debian](https://packages.debian.org/search?keywords=python-acme)、[Ubuntu](https://launchpad.net/ubuntu/+source/python-acme)、[Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) などのディストリビューションでも配布されており、他の多数のクライアントでも利用されています。
 
