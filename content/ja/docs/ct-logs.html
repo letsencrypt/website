@@ -2,7 +2,7 @@
 title: "証明書の透明性 (Certificate Transparency; CT) ログ"
 slug: ct-logs
 top_graphic: 4
-lastmod: 2019-05-15
+lastmod: 2019-11-20
 ---
 
 {{< lastmod >}}
@@ -19,7 +19,7 @@ lastmod: 2019-05-15
 
 <h2>アーキテクチャ</h2>
 
-<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。</p>
+<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。さらに詳しい情報は、<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">「How Let's Encrypt Runs CT Logs」</a>という記事で説明しています。</p>
 
 <h2>ログの監視</h2>
 
@@ -28,4 +28,3 @@ lastmod: 2019-05-15
 <h2>CT ログ</h2>
 
 {{< ct_logs >}}
-
