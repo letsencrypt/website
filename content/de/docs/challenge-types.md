@@ -78,10 +78,10 @@ gehackt wird. Beste Praxis ist die Benutzung [spezieller DNS API Zugriffsschlüs
 oder die Durchführung der DNS Validierung von einem separaten Server und
 automatischen Kopieren des Zertitikats auf Ihren Webserver.
 
-Seit Let’s Encrypt dem DNS Standard folgt, wenn es TXT Einträge sucht für
-DNS01- Validierung, können Sie CNAME Einträge oder NS Einträge zur
-Delegierung der Antwort zur Challenge zu anderen DNS Zonen erstellen.
-Das kann benutzt werden bei [delegate the `_acme-challenge` subdomain][securing-dns-credentials]
+Sie können CNAME Einträge oder NS Einträge zur Delegierung der Antwort zur
+Challenge zu anderen DNS Zonen erstellen, seitdem Let’s Encrypt bei der
+Suche nach TXT Einträgen für die DNS01-Validierung dem DNS Standard folgt.
+Das kann benutzt werden bei [Delegierung der `_acme-challenge` Subdomain][securing-dns-credentials]
 zu einem speziellen Validierungs-Server oder Zone. Es kann auch benutzt
 werden, wenn Ihr DNS Anbieter langsam bei Aktualisierungen ist und sie
 zu einem schnelleren delegieren möchten.

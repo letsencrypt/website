@@ -16,23 +16,23 @@ sowohl HTTP auf Port 80 als auch HTTPS auf Port 443 anbieten.
 Sie sollten auch Weiterleitungen für alle Port 80-Anforderungen und
 möglicherweise einen HSTS-Header (auf Port 443-Anforderungen) senden.
 
-Das Zulassen von Port 80 führt nicht zu einer größeren Angriffsvektor
+Das Zulassen von Port 80 führt nicht zu einem größeren Angriffsvektor
 auf Ihrem Server, da Anforderungen an Port 80 im Allgemeinen von
 derselben Software bedient werden wie auf Port 443.
 
 Das Schließen von Port 80 verringert nicht das Risiko für eine Person,
-die versehentlich Ihre Website über HTTP besucht.
+die versehentlich Ihre Webseite über HTTP besucht.
 Unter normalen Umständen würde diese Person eine Weiterleitung zu HTTPS
 erhalten, und der nachfolgende Datenverkehr wird geschützt. Wenn diese
-Person einem aktiven MITM unterliegt, antwortet das MITM auf Port 80,
-sodass Ihre Site niemals die Möglichkeit hat, mit "Verbindung abgelehnt"
-zu antworten.
+Person einem aktiven Man-In-The-Middle-Angriff (MITM) unterliegt,
+antwortet der MITM auf Port 80, sodass Ihre Site niemals die Möglichkeit
+hat, mit "Verbindung abgelehnt" zu antworten.
 
 Wenn Sie den Port 80 offen halten, um eine Weiterleitung zu ermöglichen,
-können die Benutzer die richtige Version Ihrer Website (die HTTPS-Version)
+können die Benutzer die richtige Version Ihrer Webseite (die HTTPS-Version)
 aufrufen. Es gibt verschiedene Situationen, auf die Sie keinen Einfluss
 haben und die möglicherweise kurzzeitig jemanden auf der HTTP-Version Ihrer
-Website landen - beispielsweise die automatische Verknüpfung in E-Mails
+Webseite landen - beispielsweise die automatische Verknüpfung in E-Mails
 oder die manuelle Eingabe eines Domainnamens.
 Es ist für sie besser, eine Weiterleitung als einen Fehler zu erhalten.
 

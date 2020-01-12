@@ -11,7 +11,7 @@ lastmod: 2019-12-02
 Wir haben eine Menge Anfragen bekommen, wie Let's Encrypt auf GoDaddy zu verwenden
 ist. Wenn Sie GoDaddy Shared Web Hosting verwenden, ist es momentan sehr schwierig,
 Let's Encrypt Zertifikate zu installieren, weswegen wir das momentan nicht empfehlen
-können. Begründet ist das dahin, weil GoDaddy das [ACME Protocol][1] zum automatischen
+können. Begründet wird das damit, weil GoDaddy das [ACME Protocol][1] zum automatischen
 Ausstellen und Erneuern von Zertifikaten nicht unterstützt. Stattdessen bietet
 GoDaddy ein automatisches Ausstellen und Erneuern für seine eigenen Zertifikate an,
 was eine [kostenpflichtiges Zusatzfunktion][2] ist.
@@ -28,10 +28,10 @@ Weil wir so stark an die automatisierte Erneuerung glauben, entwerfen wir unsere
 für die Verwendung mit ACME-Automatisierung. Ein Let's Encrypt-Zertifikat wird nach 60 Tagen
 automatisch erneuert und funktioniert nach 90 Tagen nicht mehr, wenn es nicht erneuert wird.
 
-Wenn Sie immer noch der Meinung sind, ein Let’s Encrypt Zertifikat auf GoDaddy Shared Hosting
-zu verwenden, lesen Sie die von GoDaddy [bereitgestellten Instruktionens][3].
-Beachten Sie, dass diese Instruktionen Zeit verschwenden, und zwar alle 60 Tage (und nicht 90,
-wie im Link beschrieben).
+Wenn Sie immer ein Let’s Encrypt Zertifikat auf GoDaddy Shared Hosting verwenden möchten,
+lesen Sie die von GoDaddy [bereitgestellten Anweisungen][3].
+Beachten Sie, dass diese Anweisungen zeitintensiv sind und Sie dies alle 60 Tage machen
+müssen (und nicht 90 Tage wie im Link beschrieben).
 
 [1]: https://tools.ietf.org/html/rfc8555
 [2]: https://www.godaddy.com/web-security/ssl-certificate
