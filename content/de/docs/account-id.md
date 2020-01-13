@@ -15,7 +15,7 @@ Let's Encrypt unterhalten. Wenn Sie ACME-Clients auf mehreren Servern
 ausführen, sind möglicherweise mehrere Konten konfiguriert.
 
 Ihre Account-ID ist eine URL in der Form
-`https://acme-v01.api.letsencrypt.org/acme/reg/12345678`. Sie können als
+`https://acme-v02.api.letsencrypt.org/acme/reg/12345678`. Sie können als
 Kurzform auch die letzten Zahlen am Ende der URL zur Verfügung stellen.
 
 Wenn Sie Certbot benutzen, finden Sie Ihre Account-ID, wenn Sie in das

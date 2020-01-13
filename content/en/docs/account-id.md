@@ -14,8 +14,7 @@ the ACME client software you use to talk to Let's Encrypt, and you may have
 multiple accounts configured if you run ACME clients on multiple servers.
 
 Your account ID is a URL of the form
-`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` or
-`https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
+`https://acme-v02.api.letsencrypt.org/acme/acct/12345678`.
 
 If you're using Certbot, you can find your account ID by looking at the "uri"
 field in
