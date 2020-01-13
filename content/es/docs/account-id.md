@@ -14,9 +14,9 @@ automáticamente por el software de cliente ACME que utilizas para hablar con Le
 y es posible que tenga múltiples cuentas configuradas si ejecutas clientes ACME en
 múltiples servidores.
 
-Tu ID de cuenta es un URL de la forma `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` o `https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
+Tu ID de cuenta es un URL de la forma `https://acme-v02.api.letsencrypt.org/acme/acct/12345678`.
 
-Si estás usando Certbot, puedes encontrar tu ID de cuenta mirando el campo "uri" en `/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
+Si estás usando Certbot, puedes encontrar tu ID de cuenta mirando el campo "uri" en `/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json`.
 
 Si estás usando otro cliente ACME, las instrucciones van a ser dependientes del cliente.
 Verifica tus registros por URLs de la forma descrita arriba. Si tu cliente ACME no registra el ID de cuenta, lo puedes recuperar enviando una nueva solicitud de registración usando la misma llave. Ve la [especificación ACME para más detalles](https://tools.ietf.org/html/rfc8555#section-7.3). También puedes encontrar la forma numerica de tu ID en el *header* Boulder-Request en respuesta a cada POST que tu cliente ACME haga.

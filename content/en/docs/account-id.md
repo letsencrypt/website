@@ -18,7 +18,7 @@ Your account ID is a URL of the form
 
 If you're using Certbot, you can find your account ID by looking at the "uri"
 field in
-`/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
+`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json`.
 
 If you're using another ACME client, the instructions will be client-dependent.
 Check your logs for URLs of the form described above. If your ACME client does
