@@ -3,7 +3,7 @@ title: Account-IDs finden
 slug: account-id
 top_graphic: 1
 date: 2016-08-10
-lastmod: 2016-08-10
+lastmod: 2019-07-30
 ---
 
 {{< lastmod >}}
@@ -15,8 +15,10 @@ Let's Encrypt unterhalten. Wenn Sie ACME-Clients auf mehreren Servern
 ausführen, sind möglicherweise mehrere Konten konfiguriert.
 
 Ihre Account-ID ist eine URL in der Form
-`https://acme-v01.api.letsencrypt.org/acme/reg/12345678`. Sie können als
-Kurzform auch die letzten Zahlen am Ende der URL zur Verfügung stellen.
+`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` oder
+`https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
+
+Sie können als Kurzform auch die letzten Zahlen am Ende der URL zur Verfügung stellen.
 
 Wenn Sie Certbot benutzen, finden Sie Ihre Account-ID, wenn Sie in das
 "uri" Feld in`/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json

@@ -4,7 +4,7 @@ linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-18
+lastmod: 2019-10-29
 ---
 
 {{< lastmod >}}
@@ -305,12 +305,12 @@ einen Tag vor dem normalen Verlängerungszeitraum erneuern, einige davon
 
 Wenn Sie eine Client-Software anbieten, die automatisch einen
 periodischen Batch-Job konfiguriert, stellen Sie sicher, dass sie
-tagsüber zu einer zufälligen Stunde und Minute ausgeführt werden und
+tagsüber zu einer zufälligen Sekunde ausgeführt werden und
 nicht immer zu einem bestimmten Zeitpunkt. Dadurch wird sichergestellt,
-dass Let's Encrypt nicht zu jeder vollen Stunde zufällige
-Verkehrsspitzen empfängt. Da Let's Encrypt Kapazitäten bereitstellen
-muss, um Lastspitzen zu bewältigen, können Verkehrsspitzen reduziert
-werden, um unsere Kosten zu senken.
+dass Let's Encrypt nicht zu jeder Stunde oder Minute zufällige
+hohe Netzwerkanfragen empfängt. Da Let's Encrypt Kapazitäten bereitstellen
+muss, um Lastspitzen zu bewältigen, sollte ein hohes Aufkommen an
+Netzwerkanfragen reduziert werden, um unsere Kosten zu senken.
 
 # Wiederholungsfehler
 

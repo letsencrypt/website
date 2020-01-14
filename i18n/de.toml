@@ -9,6 +9,15 @@ other = "Loslegen"
 [home_hero_donate]
 other = "Spenden"
 
+[home_hero_annual_report]
+other = "Lesen Sie unseren Jahresbericht 2019"
+
+[home_hero_desktop]
+other = "Desktop-Version"
+
+[home_hero_mobile]
+other = "Mobile Version"
+
 [home_hero_sponsor]
 other = "Sponsor"
 
@@ -125,5 +134,14 @@ other = "Informationen für Client Entwickler"
 [acme_divergences]
 other = "Unterschiede von derzeitigen ACME Entwürfen"
 
+[onboarding_customers]
+other = "Migration Ihrer Kunden zu Let's Encrypt und ACME"
+
 [paypal_donate_alt]
 other = "Spenden mit dem PayPal-Button"
+
+[paypal_donate_title]
+other = "Spenden mit PayPal"
+
+[not_found]
+other = "Diese Seite existiert nicht, bitte überprüfen Sie die Adresse."
