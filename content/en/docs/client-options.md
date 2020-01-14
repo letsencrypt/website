@@ -39,7 +39,7 @@ The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is
 
 {{< /clients >}}
 
-# Adding client/project
+# Adding a client/project
 
 If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on GitHub, updating the `data/clients.json` file.
 
