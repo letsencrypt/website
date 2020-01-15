@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME 프로토콜](https://ietf-wg-acme.github.io/acme/)을 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
 
 어떤 방법이 가장 적합한지 알아보려면 웹 호스트에 [쉘 접근](https://en.wikipedia.org/wiki/Shell_account)(SSH 액세스라고도 함)이 있는지 알아야 합니다. [cPanel](https://cpanel.net/), 또는 [워드프레스](https://wordpress.org/)와 같은 제어판을 통해 웹 사이트를 완전히 관리하는 경우 셸 액세스 권한이 없을 가능성이 높습니다. 호스팅 공급자에게 확인을 요청할 수 있습니다.

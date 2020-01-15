@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## 多視角（地點）驗證
 
 目前，Let's Encrypt從單一網路角度進行驗證。 我們計劃從多個網路角度開始驗證。

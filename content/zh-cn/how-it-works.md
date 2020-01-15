@@ -6,6 +6,8 @@ top_graphic: 3
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 Let's Encrypt 和 [ACME 协议](https://ietf-wg-acme.github.io/acme/)的目标是使配置能够自动获取受信任浏览器的证书的 HTTPS 服务器成为可能。这是通过在 Web 服务器上运行证书管理软件（Agent）来达成的。
 
 为了理解该技术的工作原理，让我们来看一下使用支持 Let's Encrypt 的证书管理软件来配置 `https://example.com/` 的流程。

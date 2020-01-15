@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## Validation multi - points de vue
 
 Actuellement, Let's Encrypt valide d'un point de vue unique du réseau. Nous prévoyons de commencer à valider à partir de plusieurs points de vue du réseau.

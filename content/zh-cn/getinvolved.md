@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## 社区论坛
 
 您可以帮助我们在 [Let's Encrypt 社区论坛](https://community.letsencrypt.org/)中回答问题。参见[此博客文章](/2015/08/13/lets-encrypt-community-support.html)以了解社区支持为何如此重要。

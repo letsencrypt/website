@@ -6,6 +6,8 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 # Rotcertifikat
 
 Våra rotcertifikat sparas under säkra former offline. Vi utfärdar
