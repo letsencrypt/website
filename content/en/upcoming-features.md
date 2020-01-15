@@ -2,12 +2,16 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-07-03
+lastmod: 2020-01-14
 ---
 
 ## Multi-Perspective Validation
 
 Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
+
+## IP Addresses in Certificates
+
+We are planning to add support for validating and including IP addresses in certificates.
 
 ## ECDSA Root and Intermediates
 
