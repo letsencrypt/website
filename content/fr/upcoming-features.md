@@ -2,28 +2,26 @@
 title: Fonctionnalités à venir
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2018-12-31
+lastmod: 2019-07-03
 ---
 
-## Certificate Transparency Log
-
-* Prévu: T1 2019
-
-Nous prévoyons de gérer un [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
+{{< lastmod >}}
 
 ## Validation multi - points de vue
- 
-* Prévu: T2 2019
- 
+
 Actuellement, Let's Encrypt valide d'un point de vue unique du réseau. Nous prévoyons de commencer à valider à partir de plusieurs points de vue du réseau.
 
 ## ECDSA Racine et Intermédiaires
 
-* Prévu : T3 2019
-
 Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
 
 # Fonctionnalités terminées
+
+## Journal de Transparence des Certificats (CT log)
+
+* Activé : 15 mai 2019
+
+Nous commençons à gérer un [journal de transparence des certificats]({{< relref "/docs/ct-logs.html" >}}).
 
 ## Support du challenge TLS ALPN
 

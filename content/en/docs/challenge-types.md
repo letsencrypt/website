@@ -6,6 +6,8 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
+{{< lastmod >}}
+
 When you get a certificate from Let’s Encrypt, our servers validate that
 you control the domain names in that certificate using “challenges,”
 as defined by the ACME standard. Most of the time, this validation

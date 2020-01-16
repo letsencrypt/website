@@ -2,12 +2,10 @@
 title: Datenschutzerklärung
 slug: privacy
 top_graphic: 4
-date: 2018-06-22
-lastmod: 2018-06-22
+date: 2019-09-19
+lastmod: 2019-09-19
 english_is_canonical: 1
 ---
-
-# Let's Encrypt Datenschutzerklärung
 
 {{< lastmod >}}
 
@@ -103,6 +101,16 @@ werden wir Ihre physischen Adressdaten nur so lange aufbewahren, wie es
 vernünftigerweise erforderlich ist, um die angeforderte Sendung
 durchzuführen.
 
+Sie haben die Möglichkeit, Ihre E-Mail-Adresse anzugeben,
+um den Let's Encrypt-Newsletter über eine Registrierung auf dieser Website
+und über andere Marketingmaterialien zu erhalten. Der Newsletter wird über
+MailChimp versendet und Ihre Interaktionen mit MailChimp unterliegen den
+Datenschutzbestimmungen. Gelegentlich verwenden wir Ihre E-Mail-Adresse,
+um personalisierte Mitteilungen zu Let’s Encrypt zu senden. Wir verkaufen
+Ihre Informationen nicht. Sie können die Entfernung Ihrer E-Mail-Adresse
+von unserer Liste beantragen, indem Sie sich über MailChimp abmelden oder
+eine E-Mail an [press@letsencrypt.org] (mailto:press@letsencrypt.org) senden.
+
 Wenn Sie sich registrieren, um das Support-Forum „Let's Encrypt“ zu
 nutzen, unterliegen die persönlichen Informationen, die Sie
 bereitstellen, und Ihre Massnahmen dort den Datenschutzbestimmungen
@@ -147,7 +155,7 @@ bestimmten Anfragen (Zugang zu Informationen über Benutzer unserer
 Produkte und Technologien), die wir für unangemessen halten,
 eigenständig zu widersprechen.
 
-## Welche Rechte haben Nutzer, Abonnenten und Besucher des Europäischen Wirtschaftsraums im Rahmen der DSGVO und wie kann ich sie wahrnehmen?
+## Welche Rechte haben beteiligte Parteien, Abonnenten und Besucher des Europäischen Wirtschaftsraums im Rahmen der DSGVO und wie kann ich sie wahrnehmen?
 
 Wir verarbeiten personenbezogene Daten wie in dieser Richtlinie
 beschrieben. Wir sind auf Ihre Zustimmung zum Versenden von E-Mails
@@ -165,7 +173,8 @@ Personen, die im Europäischen Wirtschaftsraum (EWR) ansässig sind, haben
 bestimmte Rechte in Bezug auf ihre personenbezogenen Daten,
 einschliesslich des Rechts, auf personenbezogene Daten zuzugreifen, sie
 zu korrigieren oder zu löschen, die wir durch Ihre Nutzung der Website
-verarbeiten. Wenn Sie im EWR ansässig sind, gilt:
+verarbeiten. Wenn Sie als beteiligte Partei, Abonnent oder Besucher im EWR
+ansässig sind, gilt:
 
 * Fordern Sie einen Bericht zu persönlichen Daten an, indem Sie uns eine
 E-Mail an security@letsencrypt.org senden. Dieser Bericht enthält die

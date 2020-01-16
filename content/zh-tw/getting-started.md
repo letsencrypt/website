@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2018-04-12
 ---
 
+{{< lastmod >}}
+
 為了在您的網站上啟用HTTPS，您需要從憑證頒發機構（CA）獲取憑證（一種文件）。 Let's Encrypt是一個憑證頒發機構（CA）。 要從Let's Encrypt獲取您網站域名的憑證，您必須證明您對域名的實際控制權。您可以在您的網路主機上運行使用[ACME協議](https://ietf-wg-acme.github.io/acme/)的軟體來獲取Let's Encrypt憑證。
 
 為了找出最適合您獲取憑證的方法，您需要知道您是否擁有伺服器的[命令行帳戶"Shell Account"（註：連結為英文）](https://en.wikipedia.org/wiki/Shell_account) (通常被稱為命令行權限 "Shell Access")。 如果您完全使用控制面板管理您的帳戶，例如[cPanel](https://cpanel.com/)， [Plesk](https://www.plesk.com/), or

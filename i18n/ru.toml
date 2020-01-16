@@ -12,6 +12,15 @@ other = "Поддержать нас"
 [home_hero_sponsor]
 other = "Поддержать"
 
+[home_hero_annual_report]
+other = "Ознакомьтесь с нашим годовым отчётом за 2019 г."
+
+[home_hero_desktop]
+other = "на десктопе"
+
+[home_hero_mobile]
+other = "на мобильном"
+
 [home_major_sponsors]
 other = "Основные спонсоры и дарители"
 
@@ -150,4 +159,10 @@ other = "Отступления от ACME RFC"
 other = "Ознакомление ваших клиентов с Let's Encrypt и протоколом ACME"
 
 [paypal_donate_alt]
-other = "Кнопка «Пожертвовать через PayPal»"
+other = "Кнопка «Поддержать через PayPal»"
+
+[paypal_donate_title]
+other = "Поддержите нас с помощью PayPal"
+
+[not_found]
+other = "Этой страницы не существует. Пожалуйста, уточните адрес."

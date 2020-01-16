@@ -6,6 +6,8 @@ top_graphic: 3
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 O objetivo da Let's&nbsp;Encrypt e do [protocolo ACME](https://ietf-wg-acme.github.io/acme/) é tornar possível a configuração de um servidor HTTPS e fazê-lo obter automaticamente um certificado confiável sem intervenção humana. Isso é realizado através do uso do agente de gerenciamento de certificado no servidor web.
 
 Para entender como a tecnologia funciona, vamos analisar o passo a passo do processo de configuração do domínio `https://example.com/` com um agente de gerenciamento de certificado que suporta a Let's&nbsp;Encrypt. 

@@ -117,4 +117,4 @@ La versión amplia de nuestro logo y texto. Use esto en contextos donde el espac
 Nuestro logo solo. Use esto solo cuando la marca de la palabra "Let's Encrypt" sea claramente visible o esté bien establecida en otra parte de la página o en el diseño. (En caso de duda, use un formato diferente).
 
 <p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
-<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

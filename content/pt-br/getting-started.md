@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
 provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um
 certificado da Let's Encrypt para o domínio do seu website você precisa demonstrar

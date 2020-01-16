@@ -6,6 +6,8 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 # Certificats racine
 
 Nos racines sont conservées en toute sécurité hors ligne. Nous émettons des certificats finaux signés par les intermédiaires de la section suivante.

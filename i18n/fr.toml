@@ -12,6 +12,15 @@ other = "Faire un don"
 [home_hero_sponsor]
 other = "Sponsoriser"
 
+[home_hero_annual_report]
+other = "Lisez notre rapport annuel 2019"
+
+[home_hero_desktop]
+other = "Bureau"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
 
@@ -154,3 +163,6 @@ other = "Bouton Faites un don avec PayPal"
 
 [paypal_donate_title]
 other = "Faites un don avec PayPal"
+
+[not_found]
+other = "Cette page n'existe pas, merci de vérifier l'adresse."

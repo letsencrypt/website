@@ -6,6 +6,8 @@ top_graphic: 3
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 Let's Encrypt和[ACME協議](https://ietf-wg-acme.github.io/acme/)的目標是使自動獲取受信任的HTTPS憑證，配置網路伺服器成為可能。這是透過在網站伺服器上運行憑證管理軟體（Agent）來達成的。
 
 為了理解該技術的工作原理，讓我們來看一下使用支援Let's Encrypt的憑證管理軟體（Agent）來設置`https://example.com/`的流程。

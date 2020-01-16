@@ -2,12 +2,14 @@
 title: Involúcrate
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
     parent: donate
 ---
+
+{{< lastmod >}}
 
 ## Comunidad
 
@@ -28,7 +30,3 @@ Siempre podemos usar ayuda para el desarrollo de software. Todo nuestro código 
 ### letsencrypt.org
 
 Puedes mejorar este sitio de web y la documentación [aquí](https://github.com/letsencrypt/website) o ayudar en las [traducciones](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
-
-## Protocolo
-
-La AC de Let's Encrypt habla con el software de gestión de certificados corriendo en servidores web. El protocolo para esto se llama ACME, o "Automated Certificate Management Environment". El borrador de especificaciones ACME está [disponible en GitHub](https://github.com/ietf-wg-acme/acme). El trabajo está en marcha dentro del IETF para finalizar ACME como un verdadero estándar abierto. Puedes unirte a la discusión del desarrollo del protocolo ACME en [esta lista de correo del IETF](https://www.ietf.org/mailman/listinfo/acme).
