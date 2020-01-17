@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## Användargemenskap
 
 Vi kan alltid behöva hjälp att besvara frågor på vårt [användarsupportforum](https://community.letsencrypt.org/). Se [detta blogginlägg](/2015/08/13/lets-encrypt-community-support.html) om varför supporthjälp från användargemenskapen är så viktig.

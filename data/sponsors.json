@@ -82,6 +82,7 @@
       {"name":"Smallstep","url":"https://smallstep.com/","image":"smallstep-logo.png"},
       {"name":"VPNCompare","url":"https://www.vpncompare.co.uk/","image":"vpncompare-logo.png"},
       {"name":"WPBeginner","url":"https://www.wpbeginner.com/","image":"wpbeginner-logo.png"},
-      {"name":"IP2Location","url":"https://www.ip2location.com/","image":"ip2location-logo.png"}
+      {"name":"IP2Location","url":"https://www.ip2location.com/","image":"ip2location-logo.png"},
+      {"name":"HostScore","url":"https://www.hostscore.net/","image":"hostscore-logo.png"}
 ]
 }

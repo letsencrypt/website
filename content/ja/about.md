@@ -3,7 +3,7 @@ title: Let's Encrypt について
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-01-28
+lastmod: 2019-11-11
 menu:
   main:
     weight: 10
@@ -13,6 +13,8 @@ menu:
 Let's Encrypt は、公共の利益のために運営されている、フリーで自動化されたオープンな認証局 (certificate authority; CA) です。[インターネット・セキュリティ・研究グループ (Internet Security Research Group; ISRG)](https://www.abetterinternet.org/) がサービスを提供しています。
 
 私たちは人々のために、ウェブサイトで HTTPS (SSL/TLS) を有効にするために必要なデジタル証明書を、無料で、私たちにできる最もユーザーフレンドリーな方法で発行しています。私たちがこのようなことをする理由は、よりセキュアでプライバシーを尊重するウェブを作りたいと願っているからです。
+
+Let's Encrypt の最新の年次レポートは、こちらからお読みください ([デスクトップ向け](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf)と[モバイル向け](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)があります)。
 
 Let's Encrypt の背景にあるキーとなる原則は次のとおりです。
 

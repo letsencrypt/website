@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 Da biste omogućili HTTPS na svojoj web lokaciji, morate dobiti sertifikat (vrsta datoteke)
 od sertifikacionog tela (CA). Let's Encrypt je sertifikaciono telo (CA). Da biste dobili
 sertifikat za domen vaše web lokacije od Let's Encrypt, morate prethodno dokazati

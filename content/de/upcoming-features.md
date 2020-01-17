@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## Multi-Perspective Validation
 
 Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerke zu erweitern.

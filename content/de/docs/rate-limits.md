@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2018-08-01
+lastmod: 2019-06-04
 ---
 
 {{< lastmod >}}
@@ -22,11 +22,11 @@ Wenn Sie an der Integration von Let's Encrypt als Provider arbeiten oder
 einer grossen Webseite bitte [lesen Sie unseren Integration Guide]({{< relref "/docs/integration-guide.md" >}}).
 
 Das Hauptlimit ist <a name="certificates-per-registered-domain"></a>**Zertifikate
- pro registrierte Domain**, (50 pro Woche).
-Eine registrierte Domain, ist generell gesehen, der Teil der Domain, den Sie
+ pro registrierte Domain** (50 pro Woche).
+Eine registrierte Domain ist, generell gesehen, der Teil der Domain, den Sie
 von einem Domainregistrar gekauft haben. Zum Beispiel, im Namen `www.example.com`,
-die registrierte Domain ist `example.com`. In `new.blog.example.co.uk`,
-die registrierte Domain ist `example.co.uk`. Wir benutzen die
+ist die registrierte Domain `example.com`. In `new.blog.example.co.uk`,
+ist die registrierte Domain `example.co.uk`. Wir benutzen die
 [Public Suffix List](https://publicsuffix.org), um die registrierte Domain zu
 berechnen.
 
@@ -35,40 +35,25 @@ Zertifikat kombinieren, bis zu einem Limit von 100 <a name="names-per-certificat
  per Zertifikat**. Kombiniert mit dem Limit darüber bedeutet das, Sie können
 Zertifikate für bis zu 5000 einzigartige Subdomains pro Woche ausstellen.
 Ein Zertifikat mit mehreren Namen wird oft SAN Zertifikat genannt, 
-oder manchmal UCC Zertifikat.
+oder manchmal UCC Zertifikat. Hinweis: Aus Gründen der Leistung und Zuverlässigkeit
+ sollten Sie nach Möglichkeit weniger Namen pro Zertifikat verwenden.
 
-Wir haben auch ein <a name="duplicate-certificate"></a>**Doppelte Zertifikate** Limit
-von 5 Zertifikaten pro Woche. Ein Zertifikat berücksichtigt ein doppeltes Zertifikat,
-welches vorher ausgestellt worden ist für diese Domain mit dem exakt gleichen Namen.
+Verlängerungen werden speziell behandelt: Sie werden nicht auf Ihr 
+**Zertifikat pro registrierter Domain**-Limit angerechnet, unterliegen jedoch einem 
+**Duplikat-Zertifikat**-Limit von 5 pro Woche.
+Hinweis: Verlängerungen wurden bis März 2019 gegen Ihr **Zertifikat pro registrierter Domain**-Limit
+ angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name- rate-limit-order-of-operations-gotcha/88189).
+
 Zum Beispiel, Sie fordern die Ausstellung eines Zertifikates mit dem Namen
 [`www.example.com`, `example.com`], und Sie stellen 4 weitere Anträge auf Zertifikate
-die Woche. Wenn Sie den Namen ändern durch Hinzufügen von [`blog.example.com`],
+die Woche. Wenn Sie den Hostnamen ändern durch Hinzufügen von [`blog.example.com`],
 werden Sie wieder in der Lage sein, Ausstellungsanfragen zu senden.
 
-Um sicherzustellen, dass Sie jederzeit Ihre Zertifikate erneuern können, wenn Sie
-es für notwendig halten, haben wir eine <a name="renewal-exemption"></a>**Erneuerungsausnahme**
-Limit für die Zertifikate einer registrierte Domain. Immer wenn Sie das
-Wochenlimit erreicht haben, können Sie neue Zertifikate immer noch als Erneuerung
-ausstellen. Eine Ausstellungsanfrage zählt als Erneuerung, wenn es exakt
-denselben Hostnamen wie das vorher ausgestellte Zertifikat enthält. Das ist die
-selbe Definition, die für das Doppelte Zertifikate Limit weiter oben beschrieben
-benutzt wird. Erneuerungen *sind* immer Subjekt zu Doppelte Zertifikate Limits.
-Also beachten Sie: Die Reihenfolge von Erneuerung und Neuausstellung ist von
-Belang. Um die maximal mögliche Anzahl von Zertifikaten zu erhalten, müssen
-Sie in einem vorgegebenen Zeitfenster erst alle Neuausstellungen und dann
-erst die Erneuerungen durchführen.
+Bei der Erneuerungsbehandlung werden der öffentliche Schlüssel und die angeforderten
+ Erweiterungen ignoriert. Eine Zertifikatsausstellung kann auch dann als Erneuerung
+ betrachtet werden, wenn Sie einen neuen Schlüssel verwenden.
 
-Das Doppelte Zertifikate Limit und das Erneuerungsausnahme Limit ignorieren
-den öffentlichen Schlüssel und die erweiterten Anfragen. Eine Zertifikatausstellung
-kann wie eine Erneuerung aussehen, wenn Sie nicht einen neuen Schlüssel
-verwenden.
-
-Beachten Sie, dass Erneuerungsausnahme auch die allmählich zunehmende Anzahl
-von Zertifikaten, die für Ihre Subdomains verfügbar sind, bedeutet. Sie
-können 50 Zertifikate aussstellen in Woche 1 und 50 mehr in Woche 2 usw.,
-um nicht mit Erneuerung von existierenden Zertifikaten in Konflikt zu kommen.
-
-Sperren von Zertifikaten setzt das Rate Limit nicht zurück, weil die
+**Sperren von Zertifikaten setzt das Rate Limit nicht zurück**, weil die
 Resourcen zum Ausstellen dieser Zertifikate schon konsumiert sind.
 
 Es gibt ein <a name="failed-validations"></a>**Fehlgeschlagene Validierung**
@@ -115,9 +100,6 @@ Zertifikaten ausgestellt für Ihre registrierte Domain erhalten von
 [Certificate Transparency](https://www.certificate-transparency.org)
 Logs benutzt.
 
-Sperren von Zertifikaten setzt nicht das Rate Limit zurück, weil die
-Resourcen zum Ausstellen der Zertifikate schon beansprucht sind.
-
 Wenn Sie ein grosser Hosting-Provider sind oder eine Organisation, die an
 einer Let's Encrypt Integration arbeitet, haben wir ein
 [Rate Limit Formular](https://goo.gl/forms/plqRgFVnZbdGhE9n1), welches zur
@@ -128,8 +110,8 @@ Zurücksetzen eines bestehendes Rate Limits, in das Sie reingelaufen sind.
 Beachten Sie, dass die meisten Hosting-Provider keine Vergrösserung der
 Rate Limits brauchen, weil es kein Limit an registrierten Domains und
 eine Zertifikatsausstellung für diese gibt. Solange Ihre Kunden nicht mehr
-als 2.000 Subdomains in einer registrierten Domain haben, brauchen Sie keine
-Vergrösserung der Limits. Schauen Sie unseren [Integration
+als 5.000 Subdomains in einer registrierten Domain haben, brauchen Sie keine
+Vergrösserung der Limits. Schauen Sie in unseren [Integration
 Guide]({{< relref "/docs/integration-guide.md" >}}) für mehr Anleitungen.
 
 # <a name="clearing-pending"></a>Ausstehende Autorisierungen bereinigen

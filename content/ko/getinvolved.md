@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## 커뮤니티
 
 언제나 [Let’s Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)을 활용하고 있습니다. 왜 커뮤니티 지원 기여가 중요한지는 [이 블로그 포스팅](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html)을 확인하세요.
