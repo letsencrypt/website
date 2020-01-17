@@ -115,7 +115,7 @@ objetos de autorização enviando uma solicitação POST assinada com JWS para u
 descrito nagi 
 [Especificação ACME](https://tools.ietf.org/html/rfc8555#section-7.5.1) (Inglês).
 Os objetos pendentes de autorização são representados por URLs no formato
-`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ`, e precisam aparecer nos
+`https://acme-v02.api.letsencrypt.org/acme/authz/XYZ`, e precisam aparecer nos
 registros do seu cliente. Observe que não importa se a validação é bem sucedida ou não.
 Qualquer resultado fará com que a autorização saia do estado "Pendente". Se você não
 possui os registros contendo as URLs de autorização relevantes, você precisa esperar que
