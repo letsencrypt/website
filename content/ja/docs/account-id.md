@@ -10,7 +10,7 @@ lastmod: 2019-07-30
 
 問題を報告する場合は、Let's Encrypt のアカウント ID を提供できると大変役に立ちます。ほとんどの場合、ACME クライアントソフトウェアにより自動的にアカウントを作成する処理が行われます。そして、あなたが複数のサーバー上 ACME クライアントをで実行している場合には、複数のアカウントが設定されている可能性もあります。
 
-あなたのアカウント ID は、`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` や `https://acme-v01.api.letsencrypt.org/acme/reg/12345678` のような形式の URL で表されます。
+あなたのアカウント ID は、`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` という形式の URL で表されます。
 
 Certbot を使用している場合、`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` ファイル内の "uri" フィールドを見ると確認できます。
 
