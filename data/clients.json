@@ -212,10 +212,11 @@
 		},
 		{
 			"name": "acmetool",
-			"url": "https://github.com/hlandau/acme",
+			"url": "https://github.com/hlandau/acmetool",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi",
+			"acme_v2": "acmetool >= v0.2.1"
 		},
 		{
 			"name": "Lets-proxy2",
