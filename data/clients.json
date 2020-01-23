@@ -134,8 +134,8 @@
 	"list": [
 		{
 			"name": "GetSSL",
-			"url": "https://github.com/srvrco/getssl/tree/APIv2",
-			"acme_v2": "`APIv2` branch",
+			"url": "https://github.com/srvrco/getssl",
+			"acme_v2": "true",
 			"category": "Bash",
 			"comments": "(bash, also automates certs on remote hosts via ssh)"
 		},
