@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+{{ $want := slice "about" "how-it-works" "getting-started" "certificates" "upcoming-features" "expiration-emails" "account-id" "acme-protocol-updates" "allow-port-80" "certificate-compatibility" "certificates-for-localhost" "challenge-types"  "integration-guide" "staging-environment" "revoking" "rate-limits" "faq" "caa" "ct-logs" "glossary" "getinvolved" "contact" "sponsors" }}
+
+{{ $scratch := newScratch }}
+
+{{ range $.Site.RegularPages }}
+	{{ $page := $scratch.Set .Slug . }}
+{{ end }}
+
+
+<div class="page-content">
+	<div class="wrapper">
+		<ul>
+		{{ range $want }}
+			{{ $page := $scratch.Get . }}
+			<li>
+				<a href="#{{ $page.Slug }}">{{ $page.Title }}</a>
+			</li>
+		{{ end }}
+		</ul>
+
+		{{ range $want }}
+			{{ $page := $scratch.Get . }}
+			<h1><a name="{{ $page.Slug }}"></a>{{ $page.Title }}</h1>
+
+			{{ $page.Content }}
+		{{ end }}
+
+	</div>
+</div>
+
+{{ end }}
+
