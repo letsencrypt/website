@@ -51,7 +51,7 @@
 
   </div>
 
-  {{ $js := resources.Get "static/js/main.js" | fingerprint "sha512" }}
+  {{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
   <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
   
   <script defer src="{{ "js/ga.js" | relURL }}"></script>

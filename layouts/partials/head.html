@@ -11,7 +11,7 @@
     <meta name="twitter:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}">
     <meta name="twitter:image:src" content="{{ "images/le-logo-twitter-noalpha.png" | absURL }}">
 
-    {{ $style := resources.Get "src/css/main.scss" | resources.ToCSS | minify | fingerprint "sha512" }}
+    {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify | fingerprint "sha512" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
