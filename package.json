@@ -6,9 +6,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "htmlhint": "^0.11.0",
-    "node-sass": "^4.13.0",
-    "sass-lint": "^1.13.1",
-    "uglify-es": "^3.3.9"
+    "sass-lint": "^1.13.1"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
