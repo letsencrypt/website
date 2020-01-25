@@ -3,7 +3,7 @@
 
 ## First of all
 
-Check [existing translation pull-requests](https://github.com/letsencrypt/website/pulls?q=is%3Apr+is%3Aopen+label%3Atranslation) to check if someone else is already working on it.
+Check [existing translation pull-requests](https://github.com/letsencrypt/website/pulls?q=is%3Apr+is%3Aopen+label%3Atranslation) to see if someone else is already working on it.
 
 ## How to add a new language
 
