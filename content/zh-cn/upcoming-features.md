@@ -2,7 +2,7 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-07-03
+lastmod: 2020-01-14
 ---
 
 {{< lastmod >}}
@@ -10,6 +10,10 @@ lastmod: 2019-07-03
 ## 多视角验证
 
 目前，Let's Encrypt 从单一网络视角进行验证。我们正计划从多个网络视角展开验证。
+
+## IP地址证书
+
+我们计划增加对IP验证的支持，并将IP地址包括在证书中。
 
 ## ECDSA根证书和中间证书
 
