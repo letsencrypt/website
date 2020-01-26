@@ -40,51 +40,53 @@
 	"projects": [
 		{
 			"name": "Ponzu CMS",
-			"url": "https://ponzu-cms.org"
+			"url": "https://ponzu-cms.org",
+			"type": "CMS"
 		},
 		{
 			"name": "Caddy",
-			"url": "https://caddyserver.com/"
+			"url": "https://caddyserver.com/",
+			"type": "server"
 		},
 		{
 			"name": "cPanel",
-			"url": "https://cpanel.net/"
+			"url": "https://cpanel.net/",
+			"type": "control_panel"
 		},
 		{
 			"name": "Own-Mailbox",
-			"url": "https://www.own-mailbox.com/"
+			"url": "https://www.own-mailbox.com/",
+			"type": "private_cloud"
 		},
 		{
 			"name": "Cloudfleet",
-			"url": "https://cloudfleet.io/"
-		},
-		{
-			"name": "Aerys",
-			"url": "https://github.com/kelunik/aerys-acme"
-		},
-		{
-			"name": "CentminMod LEMP Stack",
-			"url": "https://centminmod.com/acmetool"
+			"url": "https://cloudfleet.io/",
+			"type": "private_cloud"
 		},
 		{
 			"name": "Mail-in-a-Box",
-			"url": "https://mailinabox.email/"
+			"url": "https://mailinabox.email/",
+			"type": "private_cloud"
 		},
 		{
 			"name": "Froxlor Server Management Panel",
-			"url": "https://www.froxlor.org/"
+			"url": "https://www.froxlor.org/",
+			"type": "control_panel"
 		},
 		{
 			"name": "Virtualmin Web Hosting Control Panel",
-			"url": "https://www.virtualmin.com/"
+			"url": "https://www.virtualmin.com/",
+			"type": "control_panel"
 		},
 		{
 			"name": "Plesk Web Hosting Control Panel",
-			"url": "https://www.plesk.com/"
+			"url": "https://www.plesk.com/",
+			"type": "control_panel"
 		},
 		{
 			"name": "Zappa",
-			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
+			"url": "https://github.com/Miserlou/Zappa#deploying-to-a-domain-with-a-lets-encrypt-certificate-dns-auth",
+			"type": "server"
 		},
 		{
 			"name": "pfSense",
@@ -92,27 +94,33 @@
 		},
 		{
 			"name": "Cloudron",
-			"url": "https://cloudron.io"
+			"url": "https://cloudron.io",
+			"type": "private_cloud"
 		},
 		{
 			"name": "Aegir",
-			"url": "https://gitlab.com/aegir/hosting_https"
+			"url": "https://gitlab.com/aegir/hosting_https",
+			"type": "control_panel"
 		},
 		{
 			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net"
+			"url": "http://www.synchro.net",
+			"type": "hosted_app"
 		},
 		{
 			"name": "ruxy",
-			"url": "https://ruxyserver.com"
+			"url": "https://ruxyserver.com",
+			"type": "WAF"
 		},
 		{
 			"name": "ISPConfig",
-			"url": "https://www.ispconfig.org/"
+			"url": "https://www.ispconfig.org/",
+			"type": "control_panel"
 		},
 		{
 			"name": "LiveConfig Hosting Control Panel",
-			"url": "https://www.liveconfig.com/"
+			"url": "https://www.liveconfig.com/",
+			"type": "control_panel"
 		},
 		{
 			"name": "WildFly Application Server",
@@ -124,11 +132,13 @@
 		},
 		{
 			"name": "Vesta Control Panel",
-			"url": "https://vestacp.com/"
+			"url": "https://vestacp.com/",
+			"type": "control_panel"
 		},
 		{
 			"name": "Apache HTTP Server",
-			"url": "https://httpd.apache.org"
+			"url": "https://httpd.apache.org",
+			"type": "server"
 		}
 	],
 	"list": [
