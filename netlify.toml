@@ -8,7 +8,7 @@ HUGO_VERSION = "0.62.0"
 
 [[redirects]]
 from = "/jobs"
-to = "www.abetterinternet.org/careers"
+to = "https://www.abetterinternet.org/careers"
 status = 302
 force = false
 
