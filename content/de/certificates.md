@@ -31,7 +31,7 @@ IdenTrust hat unsere Zwischenzertifikate quersigniert. Das erlaubt die Aktzeptan
 unserer Endzertifkate bei allen Browsern, bei denen wir unser Root Zertifikat propagieren.
 
 Unter normalen Umständen kommen Zertifikate, die von Let’s Encrypt ausgestellt worden, von
-“Let’s Encrypt Authority X3”. Das andere Zwischenzerttifikat, “Let’s Encrypt Authority X4”,
+“Let’s Encrypt Authority X3”. Das andere Zwischenzertifikat, “Let’s Encrypt Authority X4”,
 ist reserviert für Notfallwiederherstellung und wird nur benutzt, wenn wir die Kontrolle
 über “Let’s Encrypt Authority X3” verloren haben. Die X1 und X2 Zwischenzertfikate waren
 unsere erste Generation von Zwischenzertifikaten. Wir haben sie mit neuen Zwischenzertifikaten
@@ -57,7 +57,7 @@ für alle Endzertifikate (auch bekannt als Leaf Zertifikate), z.B. die
 Zertifikate, die wir für Ihren Server ausstellen.
 
 Unser Zwischenzertifikat ist signiert von ISRG Root X1. Jedoch, da wir eine
-recht neue Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
+ziemlich neue Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
 nicht vertrauenswürdig. Um eine breitere Sicherheit zu erreichen, ist unser
 Zwischenzertifikat bei einer anderen Zertifizierungsstelle quersigniert, IdenTrust,
 dessen Root Zertifikat in allen Browsern vertrauenswürdig ist. IdenTrust hat
@@ -74,10 +74,10 @@ Wenn ein Webserver konfiguriert wird, konfiguriert der Serveradministrator nicht
 das Endkundenzertifikat, sondern auch eine Liste von Zwischenzertifikaten, um es
 Browsern eine Verifizierung der Kette vom Endkundenzertifikat bis zum Root Zertifikat
 zu ermöglichen. 
-Fast alle Serverbetreiber wählen eine Kette incl. Zwischenzertifikat mit Subjekt
+Fast alle Serverbetreiber wählen eine Kette inkl. Zwischenzertifikat mit Subjekt
 “Let’s Encrypt Authority X3” und Aussteller “DST Root CA X3.” Die empfohlene
-Let's Encrypt software, [Certbot](https://certbot.org), wird die Konfiguration
-nahtlos erstellen,
+Let's Encrypt Software, [Certbot](https://certbot.org), wird die Konfiguration
+nahtlos erstellen.
 
 Das folgende Bild erklärt die Beziehungen zwischen unseren Zertifikaten:
 
@@ -106,7 +106,7 @@ mit diesen Links ansehen:
 
 # Mehr Informationen
 
-Die privaten Schlüssel für die ISRG Root CA und die Let’s Encrypt Zwischenzertifikat
+Die privaten Schlüssel für die ISRG Root CA und das Let’s Encrypt Zwischenzertifikat
 CA sind auf Hardware Sicherheitsmodulen (HSM) gespeichert, welche einen hohen
 Grad an Schutz gegen Diebstahl der Schlüssel bieten.
 
