@@ -17,7 +17,12 @@ Detta är stort, och vi vill att du blir en del av detta. Hjälp oss visa vägen
 
 ## Företagssponsring
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="Platinum"
+  gold="Gold"
+  gold_basic="Gold Basic"
+  silver="Silver"
+>}}
 
 Om du vill bli en företagssponsor vänligen skicka e-post till [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 

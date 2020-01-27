@@ -17,7 +17,12 @@ Let's Encrypt將會幫助使加密通信成為網際網路上默認通信。自�
 
 ## 公司贊助
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="白金"
+  gold="金"
+  gold_basic="基本金"
+  silver="銀"
+>}}
 
 如果您想成為企業贊助商，請發送電子郵件至[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)。
 

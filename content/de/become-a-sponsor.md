@@ -22,7 +22,12 @@ sichere Zukunft für das Web zu finden.
 ## Firmensponsoring
 
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="Platin"
+  gold="Gold"
+  gold_basic="Gold Basic"
+  silver="Silber"
+>}}
 
 Wenn Sie Firmensponsor werden möchten, bitte schreiben Sie an [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 

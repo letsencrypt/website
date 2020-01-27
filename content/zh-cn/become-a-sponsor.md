@@ -17,7 +17,12 @@ Let's Encrypt 将会帮助使加密通信成为 Web 上的默认通信方式。�
 
 ## 公司赞助
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="铂金"
+  gold="金"
+  gold_basic="金（基础）"
+  silver="银"
+>}}
 
 如果您想成为公司赞助商，请发送电子邮件至 [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)。
 

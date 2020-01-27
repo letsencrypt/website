@@ -18,7 +18,12 @@ Ovo je velika stvar i mi želimo da sa nama budete deo toga. Pomozite nam da skr
 
 ## Korporativna sponzorstva
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="Platinum"
+  gold="Gold"
+  gold_basic="Gold Basic"
+  silver="Silver"
+>}}
 
 Ukoliko želite da postanete korporativni sponzor, molimo Vas javite nam se na [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 

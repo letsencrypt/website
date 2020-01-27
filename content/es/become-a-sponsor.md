@@ -17,7 +17,12 @@ Esto es grande, y nosotros queremos que tú seas parte de esto. Ayudanos abrir e
 
 ## Patrocinio Corporativo
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="Platino"
+  gold="Oro"
+  gold_basic="Gold Basic"
+  silver="Plata"
+>}}
 
 Si deseas convertirte en un patrocinador corporativo, por favor envía un correo electrónico a [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 

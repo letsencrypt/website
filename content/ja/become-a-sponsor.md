@@ -17,7 +17,12 @@ menu:
 
 ## 企業スポンサー
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="プラチナ"
+  gold="ゴールド"
+  gold_basic="Gold Basic"
+  silver="シルバー"
+>}}
 
 企業スポンサーになることを検討している場合には、[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org) にメールをお送りください。
 

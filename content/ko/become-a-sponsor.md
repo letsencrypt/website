@@ -18,7 +18,12 @@ menu:
 
 ## 기업 스폰서십
 
-{{< become-a-sponsor >}}
+{{< become-a-sponsor
+  platinum="플래티넘"
+  gold="골드"
+  gold_basic="Gold Basic"
+  silver="실버"
+>}}
 
 기업 스폰서가 되시길 희망하면[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)로 메일 주세요.
 
