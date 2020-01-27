@@ -31,7 +31,17 @@
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
             <a href="#" class="pure-menu-link">{{ i18n "languages" }} </a>
             <ul class="pure-menu-children">
-              {{ range $home.AllTranslations }}
+              {{ $langs := slice }}
+              {{ if .Translations }}
+                {{ range .Translations }}
+                  {{ $langs = $langs | append . }}
+                {{ end }}
+              {{ else }}
+                {{ range $home.AllTranslations }}
+                  {{ $langs = $langs | append . }}
+                {{ end }}
+              {{ end }}
+              {{ range $langs }}
               {{ $isCurrentLang := eq $home.Language .Language }}
               <li class="pure-menu-item">
                 <a href="{{ .RelPermalink }}" lang="{{ .Language.Params.languageCode }}" hreflang="{{ .Language.Params.languageCode }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }}</a>
