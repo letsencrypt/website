@@ -12,11 +12,10 @@ lastmod: 2019-07-30
 Весь процесс создания аккаунта автоматизирован, взаимодействие с серверами Let's Encrypt ведёт ваш ACME-клиент.
 Также, у вас может быть несколько аккаунтов для Let's Encrypt.
 
-Идентификатор вашего аккаунта - это URL вида `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` или 
-`https://acme-v01.api.letsencrypt.org/acme/reg/12345678`.
+Идентификатор вашего аккаунта - это URL вида `https://acme-v02.api.letsencrypt.org/acme/acct/12345678`.
 
 Если вы используете Certbot, идентификатор вашего аккаунта находится в поле "uri" внутри файла
-`/etc/letsencrypt/accounts/acme-v01.api.letsencrypt.org/directory/*/regr.json`.
+`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json`.
 
 Если вы используете альтернативный ACME-клиент, конкретные рекомендации по определению идентификатора
 аккаунта зависят от программной реализации клиентского ПО. Прежде всего, поищите в логах строки, похожие

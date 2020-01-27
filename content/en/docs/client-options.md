@@ -2,7 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-lastmod: 2019-11-15
+lastmod: 2020-01-13
 ---
 
 {{< clientslastmod >}}
@@ -22,7 +22,7 @@ and increases the risk of missed renewals.
 
 We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
 
-If certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+If Certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
 # ACMEv1 and ACMEv2
 
@@ -39,13 +39,13 @@ The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is
 
 {{< /clients >}}
 
-# Adding your client/project
+# Adding a client/project
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
+If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on GitHub, updating the `data/clients.json` file.
 
 Before submitting a pull request please make sure:
 
-1. Your client respects the [Let's Encrypt trademark policy]({{< relref "/trademarks.md" >}}).
-1. Your client is not browser-based and supports automatic renewals.
+1. The client respects the [Let's Encrypt trademark policy]({{< relref "/trademarks.md" >}}).
+1. The client is not browser-based and supports automatic renewals.
 1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "acme_v2" if appropriate!).
 1. Your commit updates the `lastmod` date stamp at the top of `clients.json`.

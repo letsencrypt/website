@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## Validación de Multi-Perspectiva
 
 Actualmente Let's Encrypt hace validaciónes desde una sola perspectiva de red. Estamos planificando empezar a validar desde multiples perspectivas de red.

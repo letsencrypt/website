@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
 à partir d'une autorité de certification (AC ou CA pour Certificate Authority en anglais). Let's Encrypt est une autorité de certification. Afin d'obtenir un certificat pour le domaine de votre site Web avec Let's Encrypt, vous devez démontrer
 que vous contrôlez ce domaine. Avec Let's Encrypt, vous faites cela en utilisant un logiciel qui utilise

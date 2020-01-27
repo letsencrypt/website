@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## Community
 
 We can always use help answering questions at [Let's Encrypt Community Support](https://community.letsencrypt.org/). See [this blog post](/2015/08/13/lets-encrypt-community-support.html) about why community support contributions are so important.
