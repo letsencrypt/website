@@ -29,7 +29,7 @@
           {{ $home := .Site.Home }}
           {{ if gt (len $home.AllTranslations ) 1 }}
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="#" class="pure-menu-link">{{ i18n "languages" }} </a>
+            <a href="#" class="pure-menu-link">{{ i18n "languages" }} <span class="fas fa-language fa-lg" aria-hidden="true"></span></a>
             <ul class="pure-menu-children">
               {{ range $home.AllTranslations }}
               {{ $isCurrentLang := eq $home.Language .Language }}
