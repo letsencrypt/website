@@ -27,20 +27,20 @@
           </li>
           {{ end }}
           {{ $home := .Site.Home }}
-          {{ if gt (len $home.AllTranslations ) 1 }}
+          {{ $langs := slice }}
+          {{ if .Translations }}
+            {{ range .AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ else }}
+            {{ range $home.AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $langs ) 1 }}
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
             <a href="#" class="pure-menu-link">{{ i18n "languages" }} </a>
             <ul class="pure-menu-children">
-              {{ $langs := slice }}
-              {{ if .Translations }}
-                {{ range .Translations }}
-                  {{ $langs = $langs | append . }}
-                {{ end }}
-              {{ else }}
-                {{ range $home.AllTranslations }}
-                  {{ $langs = $langs | append . }}
-                {{ end }}
-              {{ end }}
               {{ range $langs }}
               {{ $isCurrentLang := eq $home.Language .Language }}
               <li class="pure-menu-item">
