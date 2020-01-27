@@ -33,4 +33,4 @@ Ukoliko sponzorstvo trenutno nije opcija, molimo Vas da razmotrite opciju [donir
 
 Let's Encrypt-om upravlja ne profitna grupa [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). Misija ISRG-a je da smanji finansijske, tehnološke, i edukacione barijere oko zaštite komunikacije putem interneta.
 
-ISRG je javna korporacija registrovana u Kaliforniji (USA), i priznata od strane IRS kao organizacija izuzeta od plaćanja poreza. (Section 501(c)(3) of the Internal Revenue Code)
+ISRG je javna korporacija registrovana u Kaliforniji (USA), i priznata od strane IRS kao organizacija izuzeta od plaćanja poreza. (Section 501\(c\)(3) of the Internal Revenue Code)

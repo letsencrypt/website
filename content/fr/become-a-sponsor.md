@@ -32,4 +32,4 @@ Si le parrainage n'est pas une option pour votre organisation, vous pouvez envis
 
 Let's Encrypt est géré par un organisme à but non lucratif appelé [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). La mission de l'ISRG est de réduire les barrières financières, technologiques et éducatives pour sécuriser les communications sur Internet.
 
-ISRG est une société d'utilité publique en Californie, et est reconnue par l'IRS comme une organisation exonérée d'impôt en vertu de l'article 501(c)(3) de l'Internal Revenue Code.
+ISRG est une société d'utilité publique en Californie, et est reconnue par l'IRS comme une organisation exonérée d'impôt en vertu de l'article 501\(c\)(3) de l'Internal Revenue Code.

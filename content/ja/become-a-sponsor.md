@@ -32,4 +32,4 @@ menu:
 
 Let's Encrypt は、[Internet Security Research Group](https://www.abetterinternet.org/) (ISRG) と呼ばれる非営利組織により運営されています。ISRG のミッションは、インターネット上のセキュアなコミュニケーションを実現するために、財政的・技術的・教育的な障害を取り除くことです。
 
-ISRG はカリフォルニアの公益法人であり、IRS により、Section 501(c)(3) of the Internal Revenue Code の規定のもと、課税免除対象の組織として認定されています。
+ISRG はカリフォルニアの公益法人であり、IRS により、Section 501\(c\)(3) of the Internal Revenue Code の規定のもと、課税免除対象の組織として認定されています。

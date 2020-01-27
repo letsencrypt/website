@@ -18,9 +18,9 @@ Detta är stort, och vi vill att du blir en del av detta. Hjälp oss visa vägen
 ## Företagssponsring
 
 {{< become-a-sponsor
-  platinum="Platinum"
-  gold="Gold"
-  gold_basic="Gold Basic"
+  platinum="Platina"
+  gold="Guld"
+  gold_basic="Guld basic"
   silver="Silver"
 >}}
 
@@ -32,4 +32,4 @@ Om sponsring inte är ett alternativ för din organisation så överväg gärna 
 
 Let's Encrypt drivs av en icke-vinstdrivande organisation som heter [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). ISRGs uppdrag är att minska finansiella, teknologiska och utbildningsbarriärer för säker kommunikation över internet.
 
-ISRG är ett kaliforniskt allmännyttigt bolag och är undantaget skatt av den amerikanska skattemyndigheten IRS enligt sektion 501(c)(3) av den amerikanska skattelagstiftningen Internal Revenue Code.
+ISRG är ett kaliforniskt allmännyttigt bolag och är undantaget skatt av den amerikanska skattemyndigheten IRS enligt sektion 501\(c\)(3) av den amerikanska skattelagstiftningen Internal Revenue Code.

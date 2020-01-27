@@ -18,7 +18,7 @@ Let's Encrypt將會幫助使加密通信成為網際網路上默認通信。自�
 ## 公司贊助
 
 {{< become-a-sponsor
-  platinum="白金"
+  platinum="鉑金"
   gold="金"
   gold_basic="基本金"
   silver="銀"

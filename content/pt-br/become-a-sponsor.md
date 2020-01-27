@@ -18,10 +18,10 @@ Isso é importante, queremos que você seja parte disso. Nos ajude a liderar o c
 ## Patrocínio Corporativo
 
 {{< become-a-sponsor
-  platinum="Platina"
-  gold="Ouro"
+  platinum="Platinum"
+  gold="Gold"
   gold_basic="Gold Basic"
-  silver="Prata"
+  silver="Silver"
 >}}
 
 Se você gostaria de se tornar um patrocinador corporativo por favor nos envie um e-mail em [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
@@ -32,4 +32,4 @@ Se o patrocínio não for uma opção para sua organização, considere [doar]({
 
 A Let's Encrypt é operada por uma organização sem fins lucrativos chamada [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). A missão da ISRG é reduzir as barreiras financeiras, tecnológicas e educacionais para a comunicação segura através da internet.
 
-A ISRG é uma corporação de benefício público da Califórnia e é reconhecida pela IRS como uma organização livre de impostos sob a Seção 501(c)(3) do Internal Revenue Code.
+A ISRG é uma corporação de benefício público da Califórnia e é reconhecida pela IRS como uma organização livre de impostos sob a Seção 501\(c\)(3) do Internal Revenue Code.

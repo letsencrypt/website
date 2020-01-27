@@ -32,4 +32,4 @@ Si patrocinaje no es una opción para tu organización por favor considere simpl
 
 Let's Encrypt es operada por un sin ánime sin lucros llamada [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). La misión de ISRG es reducir las barreras financieras, tecnologicas, y de educación para asegurar la comunicación a través del Internet.
 
-ISRG es una corporación de beneficio público californiana, y es reconozida por el IRS como una organización exenta de impuestos bajo Sección 501(c)(3) del Código de Rentas Internas.
+ISRG es una corporación de beneficio público californiana, y es reconozida por el IRS como una organización exenta de impuestos bajo Sección 501\(c\)(3) del Código de Rentas Internas.

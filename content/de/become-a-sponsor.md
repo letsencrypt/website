@@ -40,4 +40,4 @@ ISRGs Mission ist die Reduktion von finanziellen, technologischen und Bildungsba
 Kommunikation über das Internet.
 
 ISRG ist eine gemeinnützige Gesellschaft in Kalifornien und von IRS als
-steuerfreie Organisation nach Sektion 501(c)(3) vom Internal Revenue Code anerkannt.
+steuerfreie Organisation nach Sektion 501\(c\)(3) vom Internal Revenue Code anerkannt.
