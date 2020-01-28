@@ -21,7 +21,7 @@ Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec d
 
 * Activé : 15 mai 2019
 
-Nous commençons à gérer un [journal de transparence des certificats]({{< relref "/docs/ct-logs.html" >}}).
+Nous commençons à gérer un {{<link "journal de transparence des certificats" "/docs/ct-logs.html" >}}.
 
 ## Support du challenge TLS ALPN
 

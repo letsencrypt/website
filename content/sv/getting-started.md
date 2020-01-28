@@ -39,8 +39,8 @@ finns det [många fler ACME-klienter att välja bland]({{< relref
 klientens dokumentation för att fortsätta.
 
 Om du experimenterar med olika ACME-klienter, se till att använda vår
-[testmiljö]({{< relref "/docs/staging-environment.md" >}}) för att undvika att
-utsättas för [taktbegränsningar]({{< relref "/docs/rate-limits.md" >}}).
+{{<link "testmiljö" "/docs/staging-environment.md" >}} för att undvika att
+utsättas för {{<link "taktbegränsningar" "/docs/rate-limits.md" >}}.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

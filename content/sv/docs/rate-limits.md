@@ -16,7 +16,7 @@ stora organisationer gradvis kan öka antalet certifikat de ger ut utan att
 behöva handpåläggning från Let's Encrypt.
 
 Om du aktivt utvecklar eller testar en Let's Encrypt-klient, vänligen använd
-vår [testmiljö]({{< relref "/docs/staging-environment.md" >}}) istället för
+vår {{<link "testmiljö" "/docs/staging-environment.md" >}} istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
 leverantör eller med en stor webbplats, vänligen se vår [integrationsguide]({{<
 relref "/docs/integration-guide.md" >}}).
@@ -110,7 +110,7 @@ Observera att de flesta webbhotell inte behöver några förhöjda gränser efte
 det inte finns någon gräns på antalet unika registrerade domäner ni kan utfärda
 certifikat för. Så länge de flesta av era kunder har färre än 2000 underdomäner
 på en registrerad domän behöver ni troligtvis ingen höjning. Se vår
-[integrationsguide]({{< relref "/docs/integration-guide.md" >}}) för fler råd.
+{{<link "integrationsguide" "/docs/integration-guide.md" >}} för fler råd.
 
 # <a name="clearing-pending"></a>Rensa väntande auktorisationer
 

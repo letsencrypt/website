@@ -32,4 +32,4 @@ Certbot を使用している場合、`--dry-run` フラグを設定するだけ
 
 # 証明書の透明性
 
-ステージング環境では、pre-certificates を Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) と Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs に送信し、送信時に返された SCT が発行した証明書の中に含まれます。
+ステージング環境では、pre-certificates を Let's Encrypt {{<link "Testflume" "/docs/ct-logs">}} と Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs に送信し、送信時に返された SCT が発行した証明書の中に含まれます。

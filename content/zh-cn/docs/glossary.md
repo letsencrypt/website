@@ -19,7 +19,7 @@ date: 2018-12-30
 
 {{% def id="BRs" name="底线要求" english="Baseline Requirements" abbr="BRs" %}} 一组针对 CA 的技术和政策上的要求。由于所有[根证书项目](#def-root-program)都包含了底线要求，CA 若要被大多数浏览器信任就必须遵循这些要求。 {{% /def %}}
 
-{{% def id="CAA" name="证书颁发机构授权" english="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 指定允许为对应域名颁发证书的 [CA](#def-CA) 的 DNS 记录。CAA 记录由 CA 而非浏览器检查。根据[底线要求](#def-BRs)，[Let's Encrypt](#def-LE) [尊重 CAA 记录]({{< relref "/docs/caa.md" >}})。 - [维基百科条目](https://zh.wikipedia.org/wiki/DNS%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84%E6%8E%88%E6%9D%83) {{% /def %}}
+{{% def id="CAA" name="证书颁发机构授权" english="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 指定允许为对应域名颁发证书的 [CA](#def-CA) 的 DNS 记录。CAA 记录由 CA 而非浏览器检查。根据[底线要求](#def-BRs)，[Let's Encrypt](#def-LE) {{<link "尊重 CAA 记录" "/docs/caa.md" >}}。 - [维基百科条目](https://zh.wikipedia.org/wiki/DNS%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84%E6%8E%88%E6%9D%83) {{% /def %}}
 
 {{% def id="CNAME" name="真实名称记录" english="Canonical Name record" abbr="CNAME" %}} 将一个域名映射到另一个域名（称为真实名称）的 DNS 记录。[维基百科条目](https://zh.wikipedia.org/wiki/CNAME%E8%AE%B0%E5%BD%95) {{% /def %}}
 
@@ -35,9 +35,9 @@ date: 2018-12-30
 
 {{% def id="chain" name="证书链" english="Certificate chain" %}} 帮助[用户代理](#def-user-agent)决定它是否可以信任[叶证书](#def-leaf)（终端实体证书）的，将该证书链接到[证书存储](#def-store)中的[根证书](#def-root)的[中间证书](#def-intermediate)列表。注意：证书链并不总是唯一的，即使网站提供了链接到一个根证书的证书链，用户代理仍可能会选择使用另一个证书链来验证证书。[维基百科条目](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="证书政策" english="Certificate Policy" abbr="CP" %}} 一组指明证书对于一个特定的有着共同安全要求的社区和/或应用类型的适用性的规则。具体颁发过程的细节由 [CPS](#def-CPS) 描述。[ISRG 证书政策]({{< relref "/repository.md#isrg-certificate-policy" >}}) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="证书政策" english="Certificate Policy" abbr="CP" %}} 一组指明证书对于一个特定的有着共同安全要求的社区和/或应用类型的适用性的规则。具体颁发过程的细节由 [CPS](#def-CPS) 描述。{{<link "ISRG 证书政策" "/repository.md#isrg-certificate-policy" >}} - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。[ISRG 证书实践声明]({{< relref "/repository.md#isrg-certification-practice-statement" >}}) - [RFC 3647 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。{{<link "ISRG 证书实践声明" "/repository.md#isrg-certification-practice-statement" >}} - [RFC 3647 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="关键扩展" english="Critical extension" %}} 证书中可以包含被标记为“关键”的[扩展](#def-extension)。这意味着软件如果不知道如何处理该扩展，就必须拒绝该证书。这使得引入对于安全性十分重要的新扩展时不在较老的软件上造成风险成为可能。 {{% /def %}}
 
@@ -45,7 +45,7 @@ date: 2018-12-30
 
 {{% def id="CSR" name="证书签名请求" english="Certificate Signing Request" abbr="CSR" %}} 包含了 [CA](#def-CA) 生成证书时所需信息的经过签名的文件。[Let's Encrypt](#def-LE) 需要的信息有[通用名称](#def-CN)、[主体备用名称](#def-SAN)以及主体公钥信息。通常，[客户端应用程序](#def-ACME-client)会自动为用户生成 CSR，Web 托管提供商或相关设备也可能会生成 CSR。[维基百科条目](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="证书存储" english="Certificate Store" %}} 证书存储包含有受信任的[根证书](#def-root)的列表。操作系统（如 Windows、Android、Debian）和[网页浏览器](#def-web-browser)（如 Firefox）都维护有证书存储。没有证书存储的浏览器依赖于操作系统的证书存储。[Let's Encrypt](#def-LE) 提供的[证书](#def-leaf)[被大多数证书存储信任]({{< relref "/certificates.md" >}})。 {{% /def %}}
+{{% def id="store" name="证书存储" english="Certificate Store" %}} 证书存储包含有受信任的[根证书](#def-root)的列表。操作系统（如 Windows、Android、Debian）和[网页浏览器](#def-web-browser)（如 Firefox）都维护有证书存储。没有证书存储的浏览器依赖于操作系统的证书存储。[Let's Encrypt](#def-LE) 提供的[证书](#def-leaf){{<link "被大多数证书存储信任" "/certificates.md" >}}。 {{% /def %}}
 
 {{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”字段指明其内容。它通产包含[通用名称](#def-CN)、国家以及组织等字段。 {{% /def %}}
 
@@ -61,7 +61,7 @@ date: 2018-12-30
 
 {{% def id="DNSSEC" name="域名系统安全扩展" english="Domain Name System Security Extensions" abbr="DNSSEC" %}} 使用密码学认证 DNS 回复的机制。要使 DNSSEC 生效，必须在 TLD、域名所有者以及递归解析服务器上都进行部署。目前其采用率较低。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%89%A9%E5%B1%95) {{% /def %}}
 
-{{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。[Let's Encrypt](#def-LE) 仅提供 DV 证书，不提供 [OV](#def-OV) 或 [EV](#def-EV) 证书：[常见问题]({{< relref "/docs/faq.md" >}}) - [维基百科条目](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6) {{% /def %}}
+{{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。[Let's Encrypt](#def-LE) 仅提供 DV 证书，不提供 [OV](#def-OV) 或 [EV](#def-EV) 证书：{{<link "常见问题" "/docs/faq.md" >}} - [维基百科条目](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6) {{% /def %}}
 
 {{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。[Let's Encrypt](#def-LE) 支持使用 ECDSA 的[叶证书（终端实体证书）](#def-leaf)，但没有全部使用 ECDSA 的完整[证书链](#def-chain)：[{{< relref "/upcoming-features.md" >}}]({{< relref "/upcoming-features.md" >}}) {{% /def %}}
 

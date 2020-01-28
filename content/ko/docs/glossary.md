@@ -37,7 +37,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} CA에 대한 일련의 기술 및 정책 요구 사항입니다. 모든 주요 [root 프로그램](#def-root-program)에는 기본 요구 사항이 포함되므로 CA는 대부분의 브라우저에서 신뢰할 수 있는 다음 요구 사항을 따라야 합니다. {{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) [명예 CAA 레코드]({{< relref "/docs/caa.md" >}})에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 해당 도메인 이름에 대한 인증서를 발급할 수 있는 [CA](#def-CA)를 지정하는 DNS 레코드입니다. CAA 레코드는 브라우저가 아니라 CA에서 확인합니다. [Let's Encrypt](#def-LE) {{<link "명예 CAA 레코드" "/docs/caa.md" >}}에서 요구하는 대로 [기본 요구사항](#def-BRs)를 암호화합니다. - [위키피디아](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} 하나의 도메인 이름을 다른 도메인에 매핑하는 DNS 항목으로, 정형 이름이라고 합니다. [위키피디아](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
@@ -53,9 +53,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} [사용자 에이전트](#def-user-agent)가 [인증서 저장소](#def-store)의 [root 인증서](#def-root)에 연결하여 엔드 엔티티 또는 [리프 인증서](#def-leaf)를 신뢰할 수 있다고 판단하는 데 도움이 되는 [중간 인증서](#def-intermediate) 목록입니다. 참고: 체인이 항상 고유한 것은 아니며, 웹 사이트에서 하나의 root로 이어지는 인증서 체인을 표시할 때 사용자 에이전트는 다른 체인을 사용하여 인증서를 검증하도록 결정할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. [ISRG 인증서 정책]({{< relref "/repository.md#isrg-certificate-policy" >}}) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 공통 보안 요구 사항이 있는 특정 커뮤니티 및 또는 애플리케이션 클래스에 인증서를 적용할 수 있음을 나타내는 명명된 규칙 집합입니다. 발행의 구체적인 내역은 [CPS](#def-CPS)에 정리되어 있습니다. {{<link "ISRG 인증서 정책" "/repository.md#isrg-certificate-policy" >}} - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [위키피디아](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. [ISRG 인증 실무 명세서]({{< relref "/repository.md#isrg-certification-practice-statement" >}}) - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 인증 기관에서 인증서를 발급, 관리, 해지 및 갱신 또는 재입력하는 데 사용하는 관행에 대한 설명입니다. {{<link "ISRG 인증 실무 명세서" "/repository.md#isrg-certification-practice-statement" >}} - [RFC 3647 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [위키피디아](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} 인증서에 "중요"라고 표시된 [확장](#def-extension)이 포함될 수 있습니다. 즉, 소프트웨어가 확장을 처리하는 방법을 이해하지 않는 한 해당 인증서를 거부해야 합니다. 따라서 오래된 소프트웨어에 대한 위험을 야기하지 않고 보안에 중요한 새로운 확장을 도입할 수 있습니다. {{% /def %}}
 
@@ -63,7 +63,7 @@ Note for translators:
 
 {{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} [CA](#def-CA)에서 인증서를 생성하는 데 필요한 정보가 들어 있는 서명된 파일입니다. [Let's Encrypt](#def-LE)에 대한 관련 정보는 [공통 이름](#def-CN), [제목 대체 이름](#def-SAN), 제목 공개 키 정보입니다. 일반적으로 [클라이언트 응용 프로그램](#def-ACME-client)은 사용자에 대한 CSR을 자동으로 생성합니다. 웹 호스팅 공급자 또는 장치도 CSR을 생성할 수 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="Certificate Store" %}} 인증서 저장소에는 신뢰할 수 있는 [root 인증서](#def-root) 목록이 있습니다. 운영체제(예: Windows, Android 또는 Debian) 및 [웹 브라우저](#def-web-browser) (예: 파이어폭스)는 인증서 저장소를 유지합니다. 웹 브라우저가 없는 경우 운영체제의 인증서 저장소에 의존합니다. [인증서](#def-leaf)에서 제공하는 [Let's Encrypt](#def-LE)는 [대부분의 인증서 저장소에서 신뢰]({{< relref "/certificates.md" >}})합니다. {{% /def %}}
+{{% def id="store" name="Certificate Store" %}} 인증서 저장소에는 신뢰할 수 있는 [root 인증서](#def-root) 목록이 있습니다. 운영체제(예: Windows, Android 또는 Debian) 및 [웹 브라우저](#def-web-browser) (예: 파이어폭스)는 인증서 저장소를 유지합니다. 웹 브라우저가 없는 경우 운영체제의 인증서 저장소에 의존합니다. [인증서](#def-leaf)에서 제공하는 [Let's Encrypt](#def-LE)는 {{<link "대부분의 인증서 저장소에서 신뢰" "/certificates.md" >}}합니다. {{% /def %}}
 
 {{% def id="subject" name="Certificate subject" %}} 인증서 필드의 "제목" 필드는 인증서의 내용을 나타냅니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. {{% /def %}}
 
@@ -79,9 +79,9 @@ Note for translators:
 
 {{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} DNS 응답을 암호화된 방식으로 인증하는 메커니즘입니다. DNSSEC를 사용하려면 TLD, 도메인 이름 소유자 및 재귀적 확인자가 배포해야 합니다. 현재 적용이 다소 부족합니다. [위키피디아](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
-{{% def id="DV" name="Domain-validated certificate" %}} 신청자가 도메인 이름 (요청 조직의 ID가 아닌)에 대한 제어권을 증명한 [인증서](#def-leaf)입니다. [Let's Encrypt](#def-LE)는 DV 인증서만 제공합니다 ([OV](#def-OV) 또는 [EV](#def-EV)가 아닌): [FAQ]({{< relref "/docs/faq.md" >}}) - [위키피디아](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
+{{% def id="DV" name="Domain-validated certificate" %}} 신청자가 도메인 이름 (요청 조직의 ID가 아닌)에 대한 제어권을 증명한 [인증서](#def-leaf)입니다. [Let's Encrypt](#def-LE)는 DV 인증서만 제공합니다 ([OV](#def-OV) 또는 [EV](#def-EV)가 아닌): {{<link "FAQ" "/docs/faq.md" >}} - [위키피디아](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: [향후 기능]({{< relref "/upcoming-features.md" >}}) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 타원 곡선 암호화를 사용하는 DSA(디지털 서명 알고리즘)의 변형입니다. [위키피디아](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE)는 [엔드 엔티티 또는 리프 인증서](#def-leaf)에 대해 ECDSA를 지원하지만 아직 [인증서 체인](#def-chain) 전체에는 지원하지 않습니다: {{<link "향후 기능" "/upcoming-features.md" >}} {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} Ed448과 함께 특정 유형의 [EdDSA](#def-EdDSA)도 사용할 수 있습니다. {{% /def %}}
 
