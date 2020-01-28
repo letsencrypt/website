@@ -26,7 +26,7 @@ Let's Encrypt は世界的な認証局 (Certificate Authority; CA) です。私�
 
 Let's Encrypt はドメイン検証 (Domain Validation; DV) 型の証明書です。主に Organization Validation (OV) や Extended Validation (EV) は提供しません。このような種類の証明書の発行は自動化することができないからです。
 
-Let's Encrypt を使い始めるには、{{<link "はじめる" "/getting-started.md" >}}のページを読んでください。
+Let's Encrypt を使い始めるには、{{<link "はじめる" "/getting-started" >}}のページを読んでください。
 
 ## Let's Encrypt を使用するためにかかる費用はいくらですか？ 本当に無料なのですか？
 
@@ -59,7 +59,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Let's Encrypt から取得した証明書は、ブラウザに信頼されますか？
 
-はい、ほとんどすべてのブラウザとオペレーティングシステムに信頼されます。詳しくは、{{<link "互換性リスト" "/docs/cert-compat.md" >}}を見てください。
+はい、ほとんどすべてのブラウザとオペレーティングシステムに信頼されます。詳しくは、{{<link "互換性リスト" "/docs/cert-compat" >}}を見てください。
 
 ## Let's Encrypt はウェブサイトのための SSL/TLS 証明書以外にも証明書を発行していますか？
 
@@ -93,7 +93,7 @@ OV や EV 証明書を発行する予定はありません。
 
 ## 私が使っているオペレーティングシステムで使える Let's Encrypt (ACME) クライアントはありますか？
 
-たくさんの {{<link "ACME クライアント" "/docs/client-options.md" >}}が利用可能なので、あなたのオペレーティングシステムでも動作するクライアントがある可能性は高いです。初めて利用する場合、私たちは [Certbot](https://certbot.eff.org/) を使うことをおすすめしています。
+たくさんの {{<link "ACME クライアント" "/docs/client-options" >}}が利用可能なので、あなたのオペレーティングシステムでも動作するクライアントがある可能性は高いです。初めて利用する場合、私たちは [Certbot](https://certbot.eff.org/) を使うことをおすすめしています。
 
 ## 既存の秘密鍵や、証明書署名リクエスト (Certificate Signing Request; CSR) は使用できますか？
 

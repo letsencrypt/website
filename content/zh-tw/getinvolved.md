@@ -21,7 +21,7 @@ menu:
 
 ### 用戶端軟體
 
-[Certbot](https://github.com/certbot/certbot)是使用Python編寫的幫助網路伺服器自動獲取憑證並配置HTTPS的實用程式。Certbot是我們建議大多數人使用的用戶端。 還有許多其他{{<link "第三方用戶端" "/docs/client-options.md" >}}可用。
+[Certbot](https://github.com/certbot/certbot)是使用Python編寫的幫助網路伺服器自動獲取憑證並配置HTTPS的實用程式。Certbot是我們建議大多數人使用的用戶端。 還有許多其他{{<link "第三方用戶端" "/docs/client-options" >}}可用。
 
 ### 伺服器端CA軟體
 

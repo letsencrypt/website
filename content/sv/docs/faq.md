@@ -83,7 +83,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 
 Ja, av de flesta webbläsare och operativsystem. Se
-{{<link "kompatibilitetslistan" "/docs/cert-compat.md" >}} för fler
+{{<link "kompatibilitetslistan" "/docs/cert-compat" >}} för fler
 detaljer.
 
 ## Utfärdar Let's Encrypt certifikat för något annat än SSL/TLS för webbsidor?
@@ -128,7 +128,7 @@ för mer teknisk information.
 
 ## Finns det en Let's Encrypt-klient (ACME) för mitt operativsystem?
 
-Det finns en uppsjö av {{<link "ACME-klienter" "/docs/client-options.md" >}}
+Det finns en uppsjö av {{<link "ACME-klienter" "/docs/client-options" >}}
 tillgängliga. Sannolikheten är stor att någon fungerar bra på ditt
 operativsystem. Vi rekommenderar att du börjar med
 [Certbot](https://certbot.eff.org/).

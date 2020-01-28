@@ -26,7 +26,7 @@ Let's Encrypt ist eine globale Zertifizierungsstelle (CA). Wir lassen Menschen u
 
 Let's Encrypt bietet Domain-Validierungs (DV) Zertifikate. Wir bieten keine Organisationsvalidierung (OV) oder Erweiterte Validierung (EV), weil wir für diese Typen die Ausstellung nicht automatisieren können.
 
-Um mit Let's Encrypt zu beginnen, besuchen Sie bitte {{<link "Erste Schritte" "/getting-started.md" >}} Seite.
+Um mit Let's Encrypt zu beginnen, besuchen Sie bitte {{<link "Erste Schritte" "/getting-started" >}} Seite.
 
 ## Was kostet die Benutzung von Let's Encrypt? Ist wirklich alles frei?
 
@@ -59,7 +59,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Wird Zertifikaten von Let's Encrypt von meinem Browser vertraut?
 
-Für die meisten Browser und Betriebssysteme, ja. Schauen Sie in die {{<link "Kompatibilitätsliste" "/docs/cert-compat.md" >}} für mehr Details.
+Für die meisten Browser und Betriebssysteme, ja. Schauen Sie in die {{<link "Kompatibilitätsliste" "/docs/cert-compat" >}} für mehr Details.
 
 ## Stellt Let's Encrypt Zertifikate für andere als SSL/TLS für Webseiten aus?
 
@@ -90,7 +90,7 @@ Ja. Wildcard müssen über ACMEv2 mit DNS-01 Challenge ausgestellt werden. Schau
 
 ## Gibt es einen Let's Encrypt (ACME) Client für mein Betriebssystem?
 
-Es ist eine grosse Anzahl von {{<link "ACME Clients" "/docs/client-options.md" >}} verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas auf Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
+Es ist eine grosse Anzahl von {{<link "ACME Clients" "/docs/client-options" >}} verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas auf Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
 
 ## Kann ich einen bestehenden privaten Schlüssel oder ein Certificate Signing Request (CSR) benutzen?
 
