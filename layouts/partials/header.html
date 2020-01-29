@@ -27,11 +27,21 @@
           </li>
           {{ end }}
           {{ $home := .Site.Home }}
-          {{ if gt (len $home.AllTranslations ) 1 }}
+          {{ $langs := slice }}
+          {{ if .Translations }}
+            {{ range .AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ else }}
+            {{ range $home.AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $langs ) 1 }}
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
             <a href="#" class="pure-menu-link">{{ i18n "languages" }} <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
             <ul class="pure-menu-children">
-              {{ range $home.AllTranslations }}
+              {{ range $langs }}
               {{ $isCurrentLang := eq $home.Language .Language }}
               <li class="pure-menu-item">
                 <a href="{{ .RelPermalink }}" lang="{{ .Language.Params.languageCode }}" hreflang="{{ .Language.Params.languageCode }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }}</a>
