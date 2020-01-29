@@ -3,5 +3,5 @@
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
     X-Content-Type-Options: nosniff
-    Referrer-Policy: no-referrer
+    Referrer-Policy: origin-when-cross-origin;
     Feature-Policy: geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;
