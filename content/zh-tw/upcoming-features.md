@@ -7,66 +7,66 @@ lastmod: 2019-07-03
 
 {{< lastmod >}}
 
-## 多視角（地點）驗證
+## 多點驗證
 
-目前，Let's Encrypt從單一網路角度進行驗證。 我們計劃從多個網路角度開始驗證。
+目前 Let's Encrypt 僅從單點進行驗證，我們正計畫從多點進行驗證。
 
-## ECDSA根憑證和中級憑證
+## 使用 ECDSA 產生根憑證和中間憑證
 
-目前Let's Encrypt僅使用RSA中級憑證籤署終端憑證。 我們將生成一個ECDSA根憑證及中級憑證，可用於簽署終端憑證。
+目前 Let's Encrypt 使用 RSA 產生的中級憑證簽署終端憑證。在未來我們也會使用 ECDSA 產生的根憑證和中間憑證來簽署終端憑證。
 
 # 已完成的功能
 
-## 憑證透明度日誌
+## 憑證透明度紀錄
 
-* 啟用時間: 2019年5月15日
+* 於 2019 年 5 月 15 日推出
 
-我們開始運營一個[憑證透明度日誌伺服器]({{< relref "/docs/ct-logs.html" >}}).
+我們建立了一個[憑證透明度紀錄]({{< ref "/docs/ct-logs.html" >}})伺服器。
 
-## 支援TLS ALPN挑戰
+## 支援 TLS ALPN 驗證
 
-* 啟用時間: 2018年7月12日
+* 於 2018 年 7 月 12 日推出
 
-我們為被[出於安全原因停止](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)的TLS-SNI驗證方法制定並開啟了[替換](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/)方法。 對於只想使用443埠進行驗證的用戶來說，引入替換十分重要。
+我們為[出於安全因素而禁用](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)的 TLS-SNI 驗證方法，制定了[替代方案](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/)。使用替代方案對於只想使用通訊埠 443 進行驗證的使用者非常重要。
 
-## 憑證內建SCT記錄
+## 憑證內建 SCT 記錄
 
-* 啟用時間: 2018年3月29日
+* 於 2018 年 3 月 29 日推出
 
-## 通配符（野卡）憑證
+## 萬用憑證
 
-* 啟用時間: 2018年3月13日
+* 於 2018 年 3 月 13 日推出
 
 ## ACME v2 API
 
-* 啟用時間: 2018年3月13日
+* 於 2018 年 3 月 13 日推出
 
-## IDN支援
+## 支援 IDN 
 
-* 啟用時間: 2016年10月20日
+* 於 2016 年 10 月 20 日推出
 
-Let's Encrypt現在支援對國際化域名（IDN）頒發憑證。
+Let's Encrypt 現在支援替國際化域名 (Internationalized Domain Names, IDN) 頒發憑證。
 
-## 完全的IPv6支援
+## 完全支援 IPv6
 
-* 啟用時間: 2016年7月26日
+* 於 2016 年 7 月 26 日推出
 
-最初，只有部分Let's Encrypt API基礎架構可以通過IPv6進行通信。 這阻止了只有IPv6地址的系統與Let's Encrypt進行完全交互。 這已得到解決 - 已為所有功能啟用了IPv6支援。
+剛開始只有部分 Let's Encrypt API 可以透過 IPv6 溝通；使得只具有 IPv6 的系統無法與 Let's Encrypt 溝通。這問題已經解決 - 所有功能都已支援 IPv6。
 
-## Windows XP憑證相容
+## Windows XP 憑證相容性
 
-* 啟用時間: 2016年3月25日
+* 於 2016 年 3 月 25 日推出
 
-解決了我們的憑證鏈在Windows XP瀏覽器無法被接受的問題。
+解決了我們的憑證鏈在 Windows XP 瀏覽器無法被接受的問題。
 
-## ECDSA簽名支援
+## ECDSA 簽名支援
 
-* 啟用時間: 2016年2月10日
+* 於 2016 年 2 月 10 日推出
 
-添加了Let's Encrypt使用RSA中級憑證籤署ECDSA密鑰的功能。稍後將添加對具有完整ECDSA憑證鏈的ECDSA密鑰簽名的支援。
+添加 Let's Encrypt 使用 RSA 中級憑證籤署 ECDSA 密鑰的功能。未來我們將支援使用 ECDSA 憑證鏈所簽出的 ECDSA 金鑰。
 
-## ACME DNS挑戰支援
+## 支援 ACME DNS 驗證
 
-* 啟用時間: 2016年1月20日
+* 於 2016 年 1 月 20 日推出
 
-Let's Encrypt允許通過ACME規範中定義的DNS記錄進行驗證。
+Let's Encrypt 允許藉由 ACME 規範中所定義的 DNS 記錄進行驗證。

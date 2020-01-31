@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt是一個<span>免費</span>,<span>自動化</span>,和 <span>公開</span> 的憑證頒發機構."
+other = "Let&rsquo;s Encrypt 是<span>免費</span>、<span>自動化</span>和<span>開放</span>的憑證頒發機構"
 
 [home_hero_getting_started]
 other = "入門"
@@ -37,7 +37,7 @@ other = """
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation是The Linux Foundation的註冊商標。 Linux是Linus Torvalds的註冊商標."
+other = "Linux Foundation 是 The Linux Foundation 的註冊商標。 Linux 是 Linus Torvalds 的註冊商標."
 
 [header_skip_nav]
 other = "跳過導航連結"
@@ -81,16 +81,16 @@ other = "該網頁暫時未被翻譯。 您可以點擊 <a href=\"https://github
 other = "此頁內容請以英文頁面為準"
 
 [overview]
-other = "概括"
+other = "總覽"
 
 [subscriber_information]
-other = "用戶（訂戶）訊息"
+other = "使用者資訊"
 
 [advanced_subscriber_information]
-other = "高級用戶（訂戶）訊息"
+other = "進階使用者資訊"
 
 [client_developer_information]
-other = "用戶端開發者訊息"
+other = "客戶端開發資訊"
 
 [acme_divergences]
 other = "當前ACME草案變化"

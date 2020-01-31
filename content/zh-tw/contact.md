@@ -2,16 +2,14 @@
 title: 聯繫我們
 slug: contact
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2019-09-11
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## 幫助（支援）
-
-如果您在使用Let's Encrypt過程中有任何疑問，請在[Let's Encrypt論壇](https://community.letsencrypt.org/)提問.
+**如果您在使用 Let's Encrypt 過程中有任何疑問，請向[社群論壇](https://community.letsencrypt.org)提問，我們不提供電子郵件協助。以下的電子郵件僅用來討論特定主題**
 
 ## 新聞諮詢
 
@@ -27,14 +25,13 @@ menu:
 
 ## 安全問題
 
-除非您的消息涉及Let's Encrypt的安全問題，否則請勿向此地址發送郵件。
+**除非您的消息涉及 Let's Encrypt 的安全問題，否則請勿向此地址發送郵件。**
 
 發送郵件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### 通訊加密
 
-請使用我們的GPG密鑰和我們的安全團隊安全溝通。 它由幾個由離線主密鑰簽名的子密鑰組成。 任何最新版本的GnuPG都將支援這種混合密鑰。 目前的密鑰結構為：
-
+為了安全地和我們的安全團隊溝通，請使用我們的 GPG 金鑰；它們是由一個離線的主金鑰簽名後產生的子金鑰。任何最新版本的 GnuPG 都支持這種混合式金鑰，目前金鑰的結構為：
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
@@ -45,6 +42,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
 sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
 ```
 
-您可以在此處下載[GPG公鑰](/security_letsencrypt.org-publickey.asc)，或使用您喜歡的密鑰伺服器。
+您可以在此處下載 [GPG 公鑰](/security_letsencrypt.org-publickey.asc)，或使用您喜歡的密鑰伺服器。
 
 公鑰指紋需匹配 `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.

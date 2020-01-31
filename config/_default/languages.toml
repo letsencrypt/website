@@ -169,14 +169,14 @@ paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.g
 paypalCountry = "US"
 
 [zh-tw]
-title = "Let's Encrypt - 免費SSL/TLS憑證"
-languageName = "正體中文"
+title = "Let's Encrypt - 免費的 SSL/TLS 憑證"
+languageName = "繁體中文"
 contentDir = "content/zh-tw"
 languageCode = "zh-Hant-TW"
 beforeColon = ""
 weight = 110
-description = """
-  Let's Encrypt 是由非營利性網際網路安全研究小組（ISRG）提供給您的免費、自動化和開放的憑證頒發機構。
+description = """  
+  Let's Encrypt 是免費、自動化和開放的憑證頒發機構，由非營利組織<a href="https://www.abetterinternet.org/">網路安全研究小組 (Internet Security Research Group, ISRG)</a> 營運。
   """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
