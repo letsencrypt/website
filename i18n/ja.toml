@@ -12,6 +12,15 @@ other = "寄付"
 [home_hero_sponsor]
 other = "スポンサー"
 
+[home_hero_annual_report]
+other = "2019 年の年次レポートを読む"
+
+[home_hero_desktop]
+other = "デスクトップ"
+
+[home_hero_mobile]
+other = "モバイル"
+
 [home_major_sponsors]
 other = "主要なスポンサーと寄付者"
 
@@ -68,7 +77,7 @@ other = "英語で表示する"
 
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
+# (nb: used manually in layout/partials/langs.html)
 other = "日本語で表示する"
 
 [old_version]
@@ -110,6 +119,24 @@ other = "日本のユーザー"
 [graph_percent_https]
 other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
 
+[certificate_transparency_name]
+other = "名称"
+
+[certificate_transparency_role]
+other = "役割"
+
+[certificate_transparency_role_production]
+other = "プロダクション用"
+
+[certificate_transparency_role_test]
+other = "テスト用"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "公開鍵"
+
 [overview]
 other = "概要"
 
@@ -125,5 +152,19 @@ other = "クライアント開発者向けの情報"
 [acme_divergences]
 other = "現在の ACME ドラフトとの違い"
 
+[acme_divergences_rfc]
+other = "ACME RFC との違い"
+
+[onboarding_customers]
+other = "あなたの顧客のオンボーディングを Let's Encrypt と ACME で助ける"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
 [paypal_donate_alt]
-other = "[PayPalで寄付する]ボタン"
+other = "[PayPalで寄付する] ボタン"
+
+[paypal_donate_title]
+other = "PayPal で寄付する"
+
+[not_found]
+other = "このページは見つかりません。アドレスを確認してみてください。"

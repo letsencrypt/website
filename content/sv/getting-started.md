@@ -5,6 +5,8 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 För att aktivera HTTPS på din webbplats behöver du erhålla ett certifikat (en
 typ av fil) från en certifikatutgivare (CA, Certificate Authority). Let's
 Encrypt är en sådan.  För att erhålla ett certifikat för din webbplats domän

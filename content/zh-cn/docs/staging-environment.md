@@ -3,7 +3,7 @@ title: 测试环境
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-09-16
+lastmod: 2020-01-21
 ---
 
 {{< lastmod >}}
@@ -33,3 +33,9 @@ lastmod: 2019-09-16
 # 证书透明度日志
 
 测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志 [Testflume]({{< relref "/docs/ct-logs.html" >}}) 和Google 的测试用证书透明度日志 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
+
+# 持续集成/开发测试
+
+测试环境具有允许进行测试的更高速率限制，但是不建议与开发环境或持续集成服务（CI）集成。 向外部服务器发出网络请求可能会导致网络不稳定，并且测试环境无法“伪造” DNS或强制其他验证成功通过，这会使测试设置更加复杂。
+
+除了测试环境外，Let's Encrypt还提供了一个专用于CI和开发环境的小型ACME服务器，称为[Pebble](https://github.com/letsencrypt/pebble)。 您可以[快速而简单的](https://github.com/letsencrypt/pebble#docker)在开发机器或CI环境中运行Pebble。

@@ -3,7 +3,7 @@ title: Staging-Umgebung
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2018-03-12
+lastmod: 2019-06-19
 ---
 
 {{< lastmod >}}
@@ -32,4 +32,4 @@ Das Zwischenzertifikat der Staging-Umgebung (["Fake LE Intermediate X1"](/certs/
 
 # Zertifikat Transparenz
 
-Die Staging-Umgebung sendet Vorzertifikate zu Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log und includiert zurückgeführte SCTs in das ausgestellte Zertifikat.
+Die Staging-Umgebung sendet Vorzertifikate zu Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) und Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log und behält die erhaltenen SCTs in den ausgestellten Zertifikaten.

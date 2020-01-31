@@ -7,6 +7,8 @@ lastmod: 2019-10-18
 aliases: [/certs]
 ---
 
+{{< lastmod >}}
+
 # Root Certificates
 
 Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.

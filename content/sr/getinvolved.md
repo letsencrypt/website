@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## Zajednica
 
 Uvek nam koristi pomoć pri odgovaranju na pitanja u [Let's Encrypt Zajednici](https://community.letsencrypt.org/). Pročitajte [ovaj blog post](/2015/08/13/lets-encrypt-community-support.html) o tome zašto su doprinosi zajednice tako važni.

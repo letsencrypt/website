@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## 多點驗證
 
 目前 Let's Encrypt 僅從單點進行驗證，我們正計畫從多點進行驗證。

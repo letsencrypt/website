@@ -2,7 +2,7 @@
 title: 連絡先
 slug: contact
 top_graphic: 1
-lastmod: 2019-09-10
+lastmod: 2019-09-11
 menu:
   main:
     weight: 90
