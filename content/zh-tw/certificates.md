@@ -67,7 +67,7 @@ IdenTrust 和我們交互簽名 (Cross-Sign) 了中間憑證，這樣可以確�
 我們努力使 Let's Encrypt 的運作及憑證頒發過程保持透明。我們在頒發憑證時，會將憑證透過[憑證透明度](https://www.certificate-transparency.org/)系統紀錄下來。你可以通過以下連結查看所有 Let's Encrypt 所頒發過的憑證：
 
 * [由 Let's Encrypt Authority X1 頒發](https://crt.sh/?Identity=%25&iCAID=7395)
-* [由 Let's Encrypt Authority X3頒發](https://crt.sh/?Identity=%25&iCAID=16418)
+* [由 Let's Encrypt Authority X3 頒發](https://crt.sh/?Identity=%25&iCAID=16418)
 
 # 更多訊息
 
