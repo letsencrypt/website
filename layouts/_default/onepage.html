@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-{{ $want := slice "about" "how-it-works" "getting-started" "certificates" "upcoming-features" "expiration-emails" "account-id" "acme-protocol-updates" "allow-port-80" "certificate-compatibility" "certificates-for-localhost" "challenge-types"  "integration-guide" "staging-environment" "revoking" "rate-limits" "faq" "caa" "ct-logs" "glossary" "getinvolved" "contact" "sponsors" }}
+{{ $want := slice "/about/" "/how-it-works/" "/getting-started/" "/certificates/" "/upcoming-features/" "/docs/expiration-emails/" "/docs/account-id/" "/docs/acme-protocol-updates/" "/docs/allow-port-80/" "/docs/certificate-compatibility/" "/docs/certificates-for-localhost/" "/docs/challenge-types/"  "/docs/integration-guide/" "/docs/staging-environment/" "/docs/revoking/" "/docs/rate-limits/" "/docs/faq/" "/docs/caa/" "/docs/ct-logs/" "/docs/glossary/" "/getinvolved/" "/contact/" "/sponsors/" "/become-a-sponsor/" }}
 
 {{ $scratch := newScratch }}
 
 {{ range $.Site.RegularPages }}
-	{{ $page := $scratch.Set .Slug . }}
+	{{ $page := $scratch.Set .RelPermalink . }}
 {{ end }}
 
 
@@ -14,17 +14,29 @@
 		<ul>
 		{{ range $want }}
 			{{ $page := $scratch.Get . }}
+			{{ if not $page }}{{ errorf "missing page %q for onepage" . }}{{ end }}
 			<li>
-				<a href="#{{ $page.Slug }}">{{ $page.Title }}</a>
+				<a href="#{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 			</li>
 		{{ end }}
 		</ul>
 
 		{{ range $want }}
 			{{ $page := $scratch.Get . }}
-			<h1><a name="{{ $page.Slug }}"></a>{{ $page.Title }}</h1>
+			<h1><a name="{{ $page.RelPermalink }}"></a>{{ $page.Title }}</h1>
 
-			{{ $page.Content }}
+			{{ $scratch.Set "tmp" $page.Content }}
+
+			{{/* we replace link to anchors */}}
+			{{ range $want }}
+				{{ $content := $scratch.Get "tmp" }}
+				{{ $href := printf "href=\"%s\"" . }}
+				{{ $anchor := printf "href=\"#%s\"" . }}
+				{{ $content = replace $content $href $anchor }}
+				{{ $scratch.Set "tmp" $content }}
+			{{ end }}
+
+			{{ $scratch.Get "tmp" | safeHTML }}
 		{{ end }}
 
 	</div>
