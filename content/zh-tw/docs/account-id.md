@@ -1,5 +1,5 @@
 ---
-title: 查找帳戶ID
+title: 尋找帳號 ID
 slug: account-id
 top_graphic: 1
 date: 2016-08-10
@@ -8,13 +8,10 @@ lastmod: 2019-07-30
 
 {{< lastmod >}}
 
-當您向Let's Encrypt報告問題時，提供您的Let's Encrypt帳戶ID會對解決問題很有幫助。
-在大多數情況下，您使用的ACME用戶端軟體在連接到Let's Encrypt伺服器的過程中將自動創建帳戶。 若您在多個伺服器上運行ACME用戶端，您可能有多個帳戶。
+當你向 Let's Encrypt 回報問題時，如果你提供 Let's Encrypt 帳號 ID，這會對我們非常有幫助。在大多數的情況下，ACME 客戶端會在與 Let's Encrypt 伺服器溝通的過程中，自動建立帳號。如果你在多個伺服器上運行 ACME 客戶端，你可能會有多個帳號。
 
-您的帳戶ID是`https://acme-v02.api.letsencrypt.org/acme/acct/12345678`格式的網址。
+你的帳戶ID是 `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` 格式的網址。
 
-如果您使用的是Certbot，可以通過查看`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json`.中的“uri”欄位找到您的帳戶ID
+如果你使用 Certbot，可以通過查看 `/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` 中的 "uri" 欄位找到你的帳戶 ID。
 
-如果您正在使用其他ACME用戶端，該說明將取決於用戶端配置。
-檢查日誌中是否有上述表單的URL。如果您的ACME用戶端未記錄帳戶ID，您可以透過使用相同密鑰提交新的註冊請求來檢索它。 詳見[了解更多ACME規範詳情](https://tools.ietf.org/html/rfc8555#section-7.3).
-您還可以在ACME用戶端對API伺服器發出的每個POST的響應中的Boulder-Requester標頭中找到您的數位格式帳戶ID。
+如果你使用其他的 ACME 客戶端，請參考客戶端軟體的設定說明，並在記錄檔中檢查上述提到的網址。如果你的 ACME 客戶端沒有紀錄帳號 ID，你可以使用相同金鑰傳送一個申請帳號的請求，以取得你的帳號。細節請參考[ACME 協定中申請帳號的部分](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#registration)。你也可以在每個 ACME 客戶端向伺服器發出 POST 請求，伺服器回應 header 中 Boulder-Requester 的欄位找到數字格式的帳號 ID。

@@ -1,4 +1,31 @@
 ---
+title: 憑證透明度
 slug: ct-logs
-untranslated: 1
+top_graphic: 4
+lastmod: 2019-05-15
 ---
+
+{{< lastmod >}}
+
+<p><a href="https://www.certificate-transparency.org/what-is-ct">憑證透明度 (Certificate Transparency, CT) </a>是一個紀錄並監控 TLS 憑證頒發的系統。憑證透明度大大地增加了人們對憑證頒發的監控和研究，使得 CA 生態系和網路安全得到了大幅的改善。因此憑證透明度快速地成為了一個重要的網路基礎建設。</p>
+
+<p>Let's Encrypt 將所有頒發的憑證都傳送到憑證透明度上。我們也自己運行憑證透明度系統，歡迎所有公眾信任的憑證頒發機構將憑證提交給我們。</p>
+
+<h2>資金來源</h2>
+
+<p>我們要感謝這些的夥伴慷慨地贊助 Let's Encrypt 的憑證透明度系統。如果你的組織想幫助我們繼續這項工作，請參考<a href="{{< relref "/become-a-sponsor.html" >}}">捐贈或成為贊助商</a></p>
+
+<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></center></p>
+
+<h2>架構</h2>
+
+<p>我們的紀錄使用 Google 的 <a href="https://github.com/google/trillian/">Trillian</a> 並將伺服器架設在 AWS 上。我們使用 <a href="https://kubernetes.io/">Kubernetes</a> 控制容器之間的協調，以及使用 AWS RDS 管理資料庫。</p>
+
+<h2>監控紀錄</h2>
+
+<p>Let's Encrypt 開發了一個開源的憑證透明度監控工具 <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>。我們使用這個工具監控我們系統的穩定性，我們也希望其他人能使用它。</p>
+
+<h2>憑證透明度紀錄</h2>
+
+{{< ct_logs >}}
+

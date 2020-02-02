@@ -1,5 +1,5 @@
 ---
-title: 幫助Let's Encrypt
+title: 幫助 Let's Encrypt
 slug: getinvolved
 top_graphic: 5
 lastmod: 2019-11-04
@@ -11,22 +11,22 @@ menu:
 
 {{< lastmod >}}
 
-## 社區論壇
+## 社群論壇
 
-您可以幫助我們在[Let's Encrypt社區論壇](https://community.letsencrypt.org/)中回答問題。 詳見 [此部落格文章](/2015/08/13/lets-encrypt-community-support.html)以了解社區支援為何如此重要。
+你可以幫助我們在 [Let's Encrypt 社群論壇](https://community.letsencrypt.org/)中回答問題。你可以透過這篇[部落格文章](/2015/08/13/lets-encrypt-community-support.html)來了解社群支援為何如此重要。
 
-## 代碼
+## 程式碼
 
-您也可以幫助我們開發軟體。 我們的所有代碼都存儲於[GitHub](https://github.com/letsencrypt/)。
+你也可以幫助我們進行軟體開發。我們所有的程式碼都存儲在 [GitHub](https://github.com/letsencrypt/)上。
 
-### 用戶端軟體
+### 客戶端軟體
 
-[Certbot](https://github.com/certbot/certbot)是使用Python編寫的幫助網路伺服器自動獲取憑證並配置HTTPS的實用程式。Certbot是我們建議大多數人使用的用戶端。 還有許多其他[第三方用戶端]({{< relref "/docs/client-options.md" >}})可用。
+[Certbot](https://github.com/certbot/certbot) 是使用 Python 語言撰寫的工具，它幫助你的網頁伺服器自動取得憑證，並替網站設置 HTTPS。我們建議大多數使用者使用 Certbot，當然還有許多其他[第三方客戶端]({{< relref "/docs/client-options.md" >}})可以使用。
 
-### 伺服器端CA軟體
+### 伺服器端 CA 軟體
 
-Let's Encrypt CA使用[Boulder](https://github.com/letsencrypt/boulder)簽發憑證。 該軟體基於[ACME](https://github.com/ietf-wg-acme/acme)協議並主要使用Go編寫。 [“需要幫助”問題](https://github.com/letsencrypt/boulder/labels/help%20wanted)列表和[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很好的起點。
+Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 簽發憑證。 該軟體基於 [ACME](https://github.com/ietf-wg-acme/acme) 協定並主要使用 Go 語言撰寫。查看[“尋求幫助”問題](https://github.com/letsencrypt/boulder/labels/help%20wanted)列表，和閱讀[貢獻者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)是一個很不錯的開始。
 
 ### letsencrypt.org
 
-您可以在[此處](https://github.com/letsencrypt/website)改進本網站和文件或幫助我們[翻譯](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)網站。
+你可以點擊[這裡](https://github.com/letsencrypt/website)幫助我們改善網站和文檔，或幫助我們[翻譯](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)本網站。
