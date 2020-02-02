@@ -1,8 +1,9 @@
 ---
 title: Контакты
 slug: contact
+description: Как с нами связаться
 top_graphic: 1
-lastmod: 2019-09-11
+lastmod: 2020-01-29
 menu:
   main:
     weight: 90

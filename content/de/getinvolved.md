@@ -17,7 +17,7 @@ Wir können immer Hilfe bei der Beantwortung von Fragen auf [Let's Encrypt Commu
 
 ## Code
 
-Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer code ist auf [GitHub](https://github.com/letsencrypt/).
+Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer Code ist auf [GitHub](https://github.com/letsencrypt/).
 
 ### Client Software
 
