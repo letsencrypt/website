@@ -818,8 +818,8 @@
 			"library": "C++"
 		},
 		{
-			"name": "lecert",
-			"url": "https://gitlab.com/sinclair2/lecert",
+			"name": "bacme",
+			"url": "https://gitlab.com/sinclair2/bacme",
 			"category": "Bash",
 			"comments": "(simple yet complete scripting of certificate generation)",
 			"acme_v2": "true"
