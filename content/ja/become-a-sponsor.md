@@ -20,13 +20,13 @@ menu:
 {{< become-a-sponsor
   platinum="プラチナ"
   gold="ゴールド"
-  gold_basic="Gold Basic"
+  gold_basic="ゴールド ベーシック"
   silver="シルバー"
 >}}
 
 企業スポンサーになることを検討している場合には、[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org) にメールをお送りください。
 
-もしあなたの組織がスポンサーにはならない場合でも、ぜひ通常の[寄付する]({{< relref "/donate.html" >}})ことの検討をお願いします。寄付の場合には、金額の規定はありません。
+もしあなたの組織がスポンサーにはならない場合でも、ぜひ通常の[寄付を行う]({{< relref "/donate.html" >}})ことへの検討をお願いします。寄付の場合には、金額の規定はありません。
 
 ## 私たちの組織について
 
