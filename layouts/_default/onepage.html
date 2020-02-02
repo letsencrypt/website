@@ -16,14 +16,14 @@
 			{{ $page := $scratch.Get . }}
 			{{ if not $page }}{{ errorf "missing page %q for onepage" . }}{{ end }}
 			<li>
-				<a href="#{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+				<a href="#page-{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 			</li>
 		{{ end }}
 		</ul>
 
 		{{ range $want }}
 			{{ $page := $scratch.Get . }}
-			<h1><a name="{{ $page.RelPermalink }}"></a>{{ $page.Title }}</h1>
+			<h1><a name="page-{{ $page.RelPermalink }}"></a>{{ $page.Title }}</h1>
 
 			{{ $scratch.Set "tmp" $page.Content }}
 
@@ -31,7 +31,7 @@
 			{{ range $want }}
 				{{ $content := $scratch.Get "tmp" }}
 				{{ $href := printf "href=\"%s\"" . }}
-				{{ $anchor := printf "href=\"#%s\"" . }}
+				{{ $anchor := printf "href=\"#page-%s\"" . }}
 				{{ $content = replace $content $href $anchor }}
 				{{ $scratch.Set "tmp" $content }}
 			{{ end }}
