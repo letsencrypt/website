@@ -1,8 +1,9 @@
 ---
 title: 联系我们
 slug: contact
+description: 如何联系我们
 top_graphic: 1
-lastmod: 2019-09-11
+lastmod: 2020-01-29
 menu:
   main:
     weight: 80

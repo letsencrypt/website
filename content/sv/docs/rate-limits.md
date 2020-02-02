@@ -37,6 +37,7 @@ Ett certifikat med flera domännamn kallas ofta för SAN-certifikat eller ibland
 för UCC-certifikat. Observera att på grund av prestanda- och pålitlighetsskäl
 är det bättre att ha så få domännamn per certifikat så långt som möjligt.
 
+
 Förnyelser hanteras annorlunda: de räknas inte mot din **antal certifikat per
 registrerad domän**-gräns men de påverkas av en **certifikatdublett**-gräns på
 5 per vecka. Notera att förnyelser påverkades av din antal certifikat per
@@ -119,7 +120,7 @@ auktorisationsobjekt genom att skicka ett JWS-signerat POST-anrop för en av
 dess utmaningar enligt beskrivningen i
 [ACME-specifikationen](https://tools.ietf.org/html/rfc8555#section-7.5.1). De
 väntande auktorisationsobjekten representeras av URL:er på formen
-`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` och bör dyka upp i dina
+`https://acme-v02.api.letsencrypt.org/acme/authz/XYZ` och bör dyka upp i dina
 klientloggar. Notera att det inte spelar någon roll om valideringen lyckas
 eller ej. Båda utfallen kommer ta auktorisationen ut ur väntetillståndet. Om du
 inte har loggar som innehåller relevanta auktorisations-URL:er så måste du

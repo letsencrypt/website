@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-09-16
+lastmod: 2020-01-21
 ---
 
 {{< lastmod >}}
@@ -33,3 +33,9 @@ The staging environment intermediate certificate (["Fake LE Intermediate X1"](/c
 # Certificate Transparency
 
 The staging environment submits pre-certificates to the Let's Encrypt [Testflume]({{< relref "/docs/ct-logs.html" >}}) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
+
+# Continuous Integration / Development Testing
+
+The staging environment has generous rate limits to enable testing but it is not a great fit for integration with development environments or continuous integration (CI). Making network requests to external servers can introduce instability and the staging environment offers no way to "fake" DNS or challenge validation success which makes for more complicated test setups.
+
+In addition to the staging environment Let's Encrypt offers a small ACME server purpose built for CI and development environments called [Pebble](https://github.com/letsencrypt/pebble). Running Pebble on your development machine or in a CI environment is [quick and easy](https://github.com/letsencrypt/pebble#docker).

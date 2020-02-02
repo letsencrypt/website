@@ -48,6 +48,11 @@ $on-laptop:        800px;
     width: 100%;
 }
 
+img.inline-icon {
+    height: 1.5em;
+    width: 1.5m;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "fonts",

@@ -27,6 +27,7 @@ do_not_translate: 1
 
 # ISRG Certificate Policy
 
+* [v2.4, January 21, 2020](/documents/isrg-cp-v2.4/)
 * [v2.3, July 3, 2019](/documents/isrg-cp-v2.3/)
 * [v2.2, September 20, 2018](/documents/isrg-cp-v2.2/)
 * [v2.1, February 6, 2018](/documents/isrg-cp-v2.1/)
@@ -38,6 +39,7 @@ do_not_translate: 1
 
 # ISRG Certification Practice Statement
 
+* [v2.7, January 21, 2020](/documents/isrg-cps-v2.7/)
 * [v2.6, July 3, 2019](/documents/isrg-cps-v2.6/)
 * [v2.5, November 14, 2018](/documents/isrg-cps-v2.5/)
 * [v2.4, September 20, 2018](/documents/isrg-cps-v2.4/)
@@ -84,6 +86,8 @@ do_not_translate: 1
 
 ## Operational Audits
 
+* August 31, 2019: <a href="https://www.cpacanada.ca/webtrustseal?sealid=10336" referrerpolicy=origin>Trust Services Principles and Criteria for Certification Authorities Version 2.1</a>
+* August 31, 2019: <a href="https://www.cpacanada.ca/webtrustseal?sealid=10337" referrerpolicy=origin>WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3</a>
 * November 30, 2018: [Trust Services Principles and Criteria for Certification Authorities Version 2.1](/audits/ISRG-2018-WebTrust-for-CAs-Report.pdf)
 * November 30, 2018: [WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security – Version 2.3](/audits/ISRG-2018-WebTrust-for-CAs-SSL-Baseline-Report.pdf)
 * December 15, 2017: [Trust Services Principles and Criteria for Certification Authorities Version 2.0](/audits/ISRG-2017-WebTrust-for-CAs-Report.pdf)

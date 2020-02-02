@@ -5,6 +5,8 @@ top_graphic: 5
 lastmod: 2019-05-01
 ---
 
+{{< lastmod >}}
+
 # Root Sertifikati
 
 Naši root sertifikati se čuvaju na sigurnom "offline" mestu. Mi izdajemo sertifikate našim pretplatnicima preko posrednika iz naredne sekcije.

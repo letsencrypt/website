@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## Flerperspektivsvalidering
 
 För tillfället validerar Let's Encrypt bara från ett nätverksperspektiv. Vi
