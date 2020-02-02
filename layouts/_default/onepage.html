@@ -23,7 +23,7 @@
 
 		{{ range $want }}
 			{{ $page := $scratch.Get . }}
-			<h1><a name="page-{{ $page.RelPermalink }}"></a>{{ $page.Title }}</h1>
+			<h1><a id="page-{{ $page.RelPermalink }}"></a>{{ $page.Title }}</h1>
 
 			{{ $scratch.Set "tmp" $page.Content }}
 
