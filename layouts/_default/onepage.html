@@ -36,7 +36,12 @@
 				{{ $scratch.Set "tmp" $content }}
 			{{ end }}
 
-			{{ $scratch.Get "tmp" | safeHTML }}
+			{{ $content := $scratch.Get "tmp" }}
+			
+			{{/* dirty hack to remove the id "certificate-transparency" because two different pages have a section with that name and markdown->html automatically adds id generated from the section name. */}}
+			{{ $content = replace $content "id=\"certificate-transparency\"" "" }}
+
+			{{ $content | safeHTML }}
 		{{ end }}
 
 	</div>
