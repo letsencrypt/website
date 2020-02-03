@@ -8,7 +8,15 @@
   <div class="wrapper">
     <div class="text-center">
       {{ i18n "not_found" | safeHTML }}
+
+      <section>
+        <form action="/search">
+            <input id="search-query" name="s" placeholder="{{ i18n "search" }}">
+            <button class="btn" title="{{ i18n "search" }}"><i class="fa fa-search"></i></button>
+        </form>
+      </section>
     </div>
+
   </div>
 </div>
 {{ end }}

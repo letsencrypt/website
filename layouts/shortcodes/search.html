@@ -1,0 +1,14 @@
+
+<section>
+        <form action="/search">
+            <input id="search-query" name="s">
+            <button><i class="fa fa-search"></i></button>
+        </form>
+        <div id="search-results" data-search_no_results="{{ i18n  "search_no_results"}}">
+        </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" defer ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" defer></script>
+<script src="/js/search.js"></script>

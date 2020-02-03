@@ -31,7 +31,7 @@ enableMissingTranslationPlaceholders = true
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
-home = [ "HTML", "RSS" ]
+home = [ "HTML", "RSS", "JSON" ]
 page = [ "HTML"]
 section = [ "HTML"]
 

@@ -168,3 +168,12 @@ other = "Donate with PayPal"
 
 [not_found]
 other = "That page doesn't exist, please check the address."
+
+[search]
+other = "Search"
+
+[search_results]
+other = "Matching pages"
+
+[search_no_results]
+other = "No matches found"
