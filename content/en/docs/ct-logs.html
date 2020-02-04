@@ -2,7 +2,7 @@
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
 top_graphic: 4
-lastmod: 2019-11-20
+lastmod: 2020-02-04
 aliases:
     - /ct-logs
 ---
@@ -11,7 +11,15 @@ aliases:
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> is a system for logging and monitoring the issuance of TLS certificates. CT greatly enhances everyone's ability to monitor and study certificate issuance, and these capabilities have led to numerous improvements to the CA ecosystem and Web security. As a result, CT is rapidly becoming critical infrastructure.</p>
 
-<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate a CT log ourselves, which all publicly trusted certificate authorities are welcome to submit to.</p>
+<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate several CT logs ourselves, which all publicly trusted certificate authorities are welcome to submit to.
+
+<ul>
+    <li><a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> is our production log and will eventually be incorporated in browser CT programs.<p></li>
+    <li>Testflume will never be incorporated in browser CT programs. It is used strictly to test new versions of <a href="http://github.com/google/trillian">Trillian</a> and <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> software. The {{/docs/staging-environment/">staging environment</a> submits all certificates to testflume. We welcome other CAs to send us their test root certificates and use Testflume.</li>
+</ul>
+</p>
+
+<p>Join our <a href="https://community.letsencrypt.org/c/ct-announcements/">community forum</a> to see major announcements about our CT logs.</p>
 
 <h2>Funding</h2>
 
@@ -21,7 +29,7 @@ aliases:
 
 <h2>Architecture</h2>
 
-<p>Our logs use Google’s <a href="https://github.com/google/trillian/">Trillian software</a> running on AWS infrastructure. We use <a href="https://kubernetes.io/">Kubernetes</a> for container orchestration and job scheduling and AWS RDS for database management. For more information see <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"How Let's Encrypt Runs CT Logs"</a>.</p>
+Check out our blog to see <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">How Let's Encrypt Runs CT Logs</a>!</p>
 
 <h2>Log Monitoring</h2>
 
