@@ -3,7 +3,7 @@ title: Getting Started
 slug: getting-started
 top_graphic: 3
 aliases : [/howitworks]
-date: 2019-12-21
+date: 2020-02-04
 ---
 
 {{< lastmod >}}
