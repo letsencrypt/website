@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-01-01",
+	"lastmod": "2020-02-02",
 	"categories": [
 		"Bash",
 		"C",
@@ -817,6 +817,13 @@
 			"comments": "allows IoT devices to get certificates",
 			"acme_v2": "true",
 			"library": "C++"
+		},
+		{
+			"name": "bacme",
+			"url": "https://gitlab.com/sinclair2/bacme",
+			"category": "Bash",
+			"comments": "(simple yet complete scripting of certificate generation)",
+			"acme_v2": "true"
 		}
 	]
 }

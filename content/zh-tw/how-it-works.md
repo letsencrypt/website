@@ -1,6 +1,5 @@
 ---
-title: Let's Encrypt運作方式
-linkTitle: Let's Encrypt工作方法
+title: Let's Encrypt 的工作原理
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-10-18
@@ -8,55 +7,56 @@ lastmod: 2019-10-18
 
 {{< lastmod >}}
 
-Let's Encrypt和[ACME協議](https://ietf-wg-acme.github.io/acme/)的目標是使自動獲取受信任的HTTPS憑證，配置網路伺服器成為可能。這是透過在網站伺服器上運行憑證管理軟體（Agent）來達成的。
+Let's Encrypt 和 [ACME 協定](https://ietf-wg-acme.github.io/acme/)的目標是：在沒有人為介入的情況下，讓網頁伺服器可以自動取得瀏覽器可信任的憑證。這項工作是透過運行在網頁伺服器上的憑證管理軟體來達成的。
 
-為了理解該技術的工作原理，讓我們來看一下使用支援Let's Encrypt的憑證管理軟體（Agent）來設置`https://example.com/`的流程。
+為了瞭解該技術的工作原理，讓我們先了解在網頁伺服器上；支援 Let's Encrypt 的憑證管理軟體，是如何設定 `https://example.com` 的流程。
 
-該流程分為兩步。 首先，管理軟體向憑證頒發機構證明該伺服器擁有域名的所有權（HTML/HTTP方面）。之後，該管理軟體就可以申請/續期/吊銷該域名下的憑證。
+流程分為兩個步驟：首先，管理軟體會先向 CA 證明伺服器擁有網域的所有權。接著管理系統就可以替該網域申請、更新或註銷憑證。
 
-## 域名認證
+## 證明網域的所有權
 
-Let's Encrypt通過公鑰識別伺服器管理員。 憑證管理軟體（Agent）首次與Let's Encrypt交互時，會生成新的密鑰對，並向Let's Encrypt CA證明伺服器控制一個或多個域。 這類似於創建帳戶和向該帳戶添加域名的傳統憑證頒發流程。
+Let's Encrypt 透過公鑰辨識伺服器。當憑證管理軟體首次向 Let's Encrypt 溝通時，它會產生一組公私金鑰對，並向 Let's Encrypt CA 證明伺服器管理一個或多個網域。這個過程與傳統憑證頒發流程相似：透過建立帳號，接著向該帳號添加網域。
 
-為了啟動該過程，憑證管理軟體（Agent）向Let's Encrypt CA詢問它需要做什麼才能證明它控制`example.com`。 Let's Encrypt CA將查看所請求的域名並發出一組或多組挑戰。 這些是管理軟體（Agent）可以證明對域名的控制的不同方式。例如，CA可能會讓憑證管理軟體（Agent）選擇： 
-* 在`example.com`下配置DNS記錄，或者
-* 在`http://example.com/`的已知URI下放置HTTP資源（通常為文件）
+流程一開始，憑證管理軟體會向 Let's Encrypt CA 詢問，它需要做甚麼才能證明自己擁有 `example.com`。Let's Encrypt CA 會對該網域提出一個或多個考驗。憑證管理軟體可以透過不同方式來證明對網域的控制權，例如，CA 會讓憑證管理軟體指定：
 
-除了驗證之外，Let's Encrypt CA還提供了一個nonce（特殊密鑰）要求憑證管理軟體（Agent）使用自身掌控的帳戶私鑰簽名，以證明對密鑰對的控制權。
+* 在 `example.com` 下設定 DNS 紀錄，或是
+* 在 `http://example.com` 特定路徑下提供 HTTP 文件
+
+此外，在驗證考驗中，Let's Encrypt 還提供了一個隨機數 (nonce)，要求憑證管理軟體必須用它所產生的私鑰，對隨機數進行簽名，以證明憑證管理軟體擁有這組金鑰對。
 
 <div class="howitworks-figure">
-<img alt="請求挑戰以驗證example.com所有權"
+<img alt="Requesting challenges to validate example.com"
      src="/images/howitworks_challenge.png"/>
 </div>
 
-憑證管理軟體（Agent）需要完成所提供的一組挑戰。假設它能夠完成上面的第二個任務：它在`http：// example.com`站點上的指定路徑上創建一個文件。憑證管理軟體（Agent）還使用其私鑰對提供的nonce（特殊密鑰）進行簽名。完成這些步驟後，憑證管理軟體（Agent）會通知CA它已準備好完成驗證。
+讓我們假設，憑證管理軟體想要完成上文所提到的第二個任務。憑證管理軟體會建立一個文件並放在 `http://example.com` 網站上指定的位置，並使用私鑰對隨機數進行簽名。動作完成後，它會告知 CA 它已經準備好以進行驗證了。
 
-然後，CA的工作就是檢查挑戰是否已經被完成。 CA會驗證nonce（特殊密鑰）上的簽名，並嘗試從網站伺服器下載該文件，並確保其具有CA需要的內容。
+接著 CA 要驗證伺服器是否通過這個考驗。CA 會檢查隨機數上的簽名，並且下載在放網頁伺服器上的文件，以確認文件內容。
 
 <div class="howitworks-figure">
-<img alt="請求代表example.com完成授權"
+<img alt="替 example.com 請求授權所需要的工作"
      src="/images/howitworks_authorization.png"/>
 </div>
 
-如果nonce上的簽名有效，並且挑戰也成功完成，那麼由公鑰代表的憑證管理軟體（Agent）將被授權對`example.com`進行憑證管理。 我們將憑證管理軟體（Agent）使用的密鑰對稱為`example.com`的“授權密鑰對”。
+如果對隨機數的簽名驗證通過，則這個考驗就算完成。這表示以公鑰作為識別的憑證管理軟體，有權管理 `example.com`。通常我們稱這個，由憑證管理軟體所使用，用來進行驗證的公私金鑰對為“授權金鑰對”。
 
 
-## 憑證頒發和吊銷
+## 憑證的頒發和註銷
 
-一旦代理具有授權密鑰對，請求，更新和撤銷憑證很簡單 - 只需發送憑證管理消息並使用授權密鑰對對其進行簽名。
+一旦憑證管理軟體有授權金鑰對，進行請求、更新和註銷憑證就變得非常簡單了 — 只需要發送憑證管理請求，並用授權金鑰對簽名。
 
-為了獲得能在該域名使用的憑證，憑證管理軟體（Agent）將創建一個PKCS#10[憑證籤名請求（CSR）](https://tools.ietf.org/html/rfc2986) 要求Let's Encrypt CA為`example.com`指定的公鑰頒發憑證。通常，CSR中包括與CSR中的公鑰對應的私鑰的簽名。憑證管理軟體（Agent）還使用`example.com`的授權密鑰簽署整個CSR，以便Let's Encrypt CA知道它已獲得授權。
+為了取得憑證，憑證管理軟體將建立一個 PKCS#10 [憑證簽署請求 (Certificate Signing Request, CSR)](https://tools.ietf.org/html/rfc2986)，要求 Let's Encrypt CA 頒發一張憑證給 `example.com`。通常 CSR 中會包含，經過另一組私鑰簽名的資料，以及其對應的公鑰。此外，憑證管理軟體還會使用 `example.com` 授權金鑰對替 CSR 簽名，以便讓 Let's Encrypt CA 知道它已經獲得授權。
 
-當Let's Encrypt CA收到請求時，它會驗證這兩個簽名。如果一切正確，CA將用CSR中的公鑰為`example.com`頒發憑證，並將文件發送回憑證管理軟體(Agent)。
+當 Let's Encrypt 接收到請求後，它會驗證這兩個簽名。如果驗證成功，CA 會使用 CSR 中的公鑰替 `example.com` 的憑證簽名，再將文件回傳給憑證管理軟體。
 
 <div class="howitworks-figure">
-<img alt="為example.com申請憑證"
+<img alt="替 example.com 申請憑證"
      src="/images/howitworks_certificate.png"/>
 </div>
 
-申請吊銷憑證的流程類似。 憑證管理軟體（Agent）使用`example.com`的授權密鑰對簽署一個吊銷請求，Let's Encrypt CA將驗證該請求是否是合法請求（是否被允許）。如果該請求合法，則將吊銷訊息發布到正常的吊銷通道（即OCSP）中，以便瀏覽器等依賴方知道他們不應該接受已被吊銷的憑證。
+註銷憑證的流程與申請流程類似。憑證管理軟體使用 `example.com` 的授權金鑰對替註銷請求簽名，接著 Let's Encrypt 會驗證該請求，如果請求通過驗證，它會將註銷訊息發佈到 OCSP (Online Certificate Status Protocol) 伺服器，以便讓瀏覽器等有關程式知道，他們不該信任已被註銷的憑證。
 
 <div class="howitworks-figure">
-<img alt="申請吊銷example.com的憑證流程"
+<img alt="註銷 example.com 憑證的流程"
      src="/images/howitworks_revocation.png"/>
 </div>
