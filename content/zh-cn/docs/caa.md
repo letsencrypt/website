@@ -14,7 +14,7 @@ CAA是一种 DNS 记录，它允许站点所有者指定允许哪些证书颁发
 
 如果您不关心CAA，通常您不需要执行任何操作（但请参阅下面的“CAA 错误”）。如果您希望使用 CAA 限制允许哪些证书颁发机构为您的域名颁发证书，则您需要使用支持设置 CAA 记录的 DNS 提供商。您可以查看 [SSLMate 的 CAA 页面](https://sslmate.com/caa/support)以获取此类提供商的列表。如果那上面列出了您的 DNS 提供商，您可以使用 [SSLMate 的 CAA 记录生成器](https://sslmate.com/caa/)生成一组列出您允许颁发证书的 CA 的 CAA 记录。
 
-Let's Encrypt 用于 CAA的标识域名 `letsencrypt.org`。这已在[我们的证书实践声明（CPS）4.2.1 节]({{< relref "/repository.md" >}})中正式记录。
+Let's Encrypt 用于 CAA的标识域名 `letsencrypt.org`。这已在{{<link "我们的证书实践声明（CPS）4.2.1 节" "/repository" >}}中正式记录。
 
 ## 放置 CAA 记录的位置
 
@@ -28,7 +28,7 @@ Let's Encrypt 用于 CAA的标识域名 `letsencrypt.org`。这已在[我们的�
 
 由于 Let's Encrypt 在颁发证书之前检查 CAA 记录，有时即使对于未设置任何 CAA 记录的域名，我们也会遇到错误。当我们遇到错误时，我们无法判断是否可以对该域名颁发证书，因为域名可能存在因为错误而无法显示的禁止我们颁发证书的 CAA 记录。
 
-如果您遇到与 CAA 相关的错误，请在我们的[测试环境]({{< relref "/docs/staging-environment.md" >}})中再试几次，看看它们是暂时性的还是永久性的。如果这些错误是永久性的，则您需要向 DNS 提供商或交换机提供商提交支持工单。 如果您不确定您的 DNS 提供商是谁，请询问您的托管服务提供商。
+如果您遇到与 CAA 相关的错误，请在我们的{{<link "测试环境" "/docs/staging-environment" >}}中再试几次，看看它们是暂时性的还是永久性的。如果这些错误是永久性的，则您需要向 DNS 提供商或交换机提供商提交支持工单。 如果您不确定您的 DNS 提供商是谁，请询问您的托管服务提供商。
 
 一些不熟悉 CAA 的 DNS 提供商最初会对客户的问题报告回复说“我们不支持 CAA 记录”。您的 DNS 提供商不需要专门支持 CAA 记录；它只需要对未知查询类型（包括 CAA）回复以 NOERROR 响应。对不识别的查询类型返回其他操作码（包括 NOTIMP）违反了 [RFC 1035](https://tools.ietf.org/html/rfc1035) 并需要修复。
 

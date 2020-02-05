@@ -15,7 +15,7 @@ lastmod: 2017-07-27
 
 如果你不在意 CAA 紀錄，你可以甚麼都不用做，但請注意以下描述的 CAA 紀錄錯誤。如果你想使用 CAA 紀錄，來限制哪些憑證頒發機構能替你的網域頒發憑證，你需要使用支援 CAA 紀錄的 DNS。你可以透過 [SSLMate CAA 支援網頁](https://sslmate.com/caa/support)找到哪些 DNS 業者支援 CAA 紀錄；如果你所使用的 DNS 業者有在列表中，你可以使用 [SSLMate's CAA Record Generator](https://sslmate.com/caa/) 來產生 CAA 紀錄。
 
-Let's Encrypt 的 CAA 網域辨認名稱為 `letsencrypt.org`。紀錄在官方的[憑證實作聲明 (Certification Practice Statemen, CPS) 章節 4.2.1]({{< relref "/repository.md" >}}) 中。
+Let's Encrypt 的 CAA 網域辨認名稱為 `letsencrypt.org`。紀錄在官方的{{<link "憑證實作聲明 (Certification Practice Statemen, CPS) 章節 4.2.1" "/repository" >}} 中。
 
 ## CAA 紀錄應該設定為哪個網域
 
@@ -30,7 +30,7 @@ CAA 如同所有的 DNS 請求一樣，也遵守 CNAME 紀錄。如果 `www.comm
 
 Let's Encrypt 在頒發憑證之前會先確認 CAA 紀錄，有時候我們會遇到錯誤即使網遇並沒有設定 CAA 紀錄。當我們遇到錯誤時，我們無法判斷是否能替該網域頒發憑證，因為網域可能因為錯誤而無法顯示禁止我們頒發憑證的 CAA 紀錄。
 
-如果你遇到與 CAA 相關的紀錄，請在我們的[測試環境]({{< relref "/docs/staging-environment.md" >}})中多試幾次，以確認他們是暫時還是持續性的問題。如果是持續性的問題，你需要向 DNS 業者或網路服務業者尋求支援。如果你不確定你的 DNS 業者是誰，請向主機託管業者詢問。
+如果你遇到與 CAA 相關的紀錄，請在我們的{{<link "測試環境" "/docs/staging-environment" >}}中多試幾次，以確認他們是暫時還是持續性的問題。如果是持續性的問題，你需要向 DNS 業者或網路服務業者尋求支援。如果你不確定你的 DNS 業者是誰，請向主機託管業者詢問。
 
 一些對於 CAA 紀錄不熟悉的 DNS 業者可能會回應 "我們不提供 CAA 紀錄"。事實上你的 DNS 業者不需要特別的動作來處理 CAA 紀錄，DNS 只需要對無法識別的查詢（包括 CAA）回應 NOERROR，回應其他種類的操作代碼，包括 NOTIMP，違反了 [RFC 1035](https://tools.ietf.org/html/rfc1035) 標準並需要被修補。
 

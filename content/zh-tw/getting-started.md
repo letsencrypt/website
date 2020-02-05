@@ -15,9 +15,9 @@ date: 2018-04-12
 
 我們建議大多數具有遠端帳號權限的使用者，採用 [Certbot] 這個 ACME 客戶端。它可以自動執行憑證的頒發、安裝，甚至不需要停止你的伺服器；Certbot 也提供專家模式，給不想要自動設定的使用者。Certbot 操作簡單，適用於許多系統；並且具有完善的文檔。[參考 Certbot 官網][Certbot]，以獲取對於不同系統和網頁伺服器的操作說明。
 
-如果 [Certbot] 不能滿足你的需求，或是你想嘗試別的客戶端，還有[很多 ACME 用戶端]({{< relref "/docs/client-options.md" >}})可供選擇。在你選定 ACME 客戶端軟體後，請參閱該客戶端的文檔。
+如果 [Certbot] 不能滿足你的需求，或是你想嘗試別的客戶端，還有{{<link "很多 ACME 用戶端" "/docs/client-options" >}}可供選擇。在你選定 ACME 客戶端軟體後，請參閱該客戶端的文檔。
 
-如果你正在嘗試使用不同的 ACME 用戶端，請使用我們的[測試環境]({{< relref "/docs/staging-environment.md" >}})以免超過[憑證頒發與更新的速率限制]({{< relref "/docs/rate-limits.md" >}})。
+如果你正在嘗試使用不同的 ACME 用戶端，請使用我們的{{<link "測試環境" "/docs/staging-environment" >}}以免超過{{<link "憑證頒發與更新的速率限制" "/docs/rate-limits" >}}。
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

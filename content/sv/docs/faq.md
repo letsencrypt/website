@@ -44,8 +44,8 @@ HTTPS.
 
 Vi behöver stöd från generösa sponsorer, anslagsgivare och individer för att
 kunna erbjuda våra tjänster kostnadsfritt i hela världen. Om du är intresserad
-av att stödja oss så överväg att [donera]({{< relref "/donate.html" >}}) eller
-[bli en sponsor]({{< relref "/become-a-sponsor.html" >}}).
+av att stödja oss så överväg att {{<link "donera" "/donate.html" >}} eller
+{{<link "bli en sponsor" "/become-a-sponsor.html" >}}.
 
 I vissa fall kommer mellanhänder såsom webbhotell debitera en symbolisk summa
 för att täcka sina administrations- och hanteringskostnader som de ådrar sig
@@ -57,7 +57,7 @@ Let's Encrypt drivs av ett litet team och förlitar sig på automatisering för 
 hålla kostnaderna nere. På grund av detta kan vi inte erbjuda direktsupport till
 våra prenumeranter. Vi har däremot några fantastiska supportalternativ:
 
-1. Vi har riktigt nyttig [dokumentation]({{< relref "/docs" >}}).
+1. Vi har riktigt nyttig {{<link "dokumentation" "/docs" >}}.
 2. Vi har ett väldigt aktivt och hjälpsamt
    [användarforum](https://community.letsencrypt.org/). Medlemmar i vår
    gemenskap gör ett fantastiskt jobb genom att besvara frågor och många av de
@@ -83,7 +83,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 
 Ja, av de flesta webbläsare och operativsystem. Se
-[kompatibilitetslistan]({{< relref "/docs/cert-compat.md" >}}) för fler
+{{<link "kompatibilitetslistan" "/docs/cert-compat" >}} för fler
 detaljer.
 
 ## Utfärdar Let's Encrypt certifikat för något annat än SSL/TLS för webbsidor?
@@ -128,7 +128,7 @@ för mer teknisk information.
 
 ## Finns det en Let's Encrypt-klient (ACME) för mitt operativsystem?
 
-Det finns en uppsjö av [ACME-klienter]({{< relref "/docs/client-options.md" >}})
+Det finns en uppsjö av {{<link "ACME-klienter" "/docs/client-options" >}}
 tillgängliga. Sannolikheten är stor att någon fungerar bra på ditt
 operativsystem. Vi rekommenderar att du börjar med
 [Certbot](https://certbot.eff.org/).

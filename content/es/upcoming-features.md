@@ -21,7 +21,7 @@ Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermed
 
 * Habilitado: 15 de mayo del 2019
 
-Estamos empezando a operar un [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}).
+Estamos empezando a operar un {{<link "Certificate Transparency log" "/docs/ct-logs.html" >}}.
 
 ## Soporte para reto TLS ALPN
 

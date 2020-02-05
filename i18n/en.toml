@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt is a <span>free</span>, <span>automated</span>, and <span>open</span> Certificate Authority."
+other = "A nonprofit Certificate Authority providing TLS certificates to <span>180 million</span> websites."
 
 [home_hero_getting_started]
 other = "Get Started"

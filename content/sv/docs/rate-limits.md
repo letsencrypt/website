@@ -16,10 +16,9 @@ stora organisationer gradvis kan öka antalet certifikat de ger ut utan att
 behöva handpåläggning från Let's Encrypt.
 
 Om du aktivt utvecklar eller testar en Let's Encrypt-klient, vänligen använd
-vår [testmiljö]({{< relref "/docs/staging-environment.md" >}}) istället för
+vår {{<link "testmiljö" "/docs/staging-environment" >}} istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
-leverantör eller med en stor webbplats, vänligen se vår [integrationsguide]({{<
-relref "/docs/integration-guide.md" >}}).
+leverantör eller med en stor webbplats, vänligen se vår {{<link "integrationsguide" "/docs/integration-guide" >}}.
 
 Huvudgränsen är <a name="certificates-per-registered-domain"></a>**antal
 certifikat per registrerad domän** (50 per vecka). Generellt är en registrerad
@@ -84,7 +83,7 @@ Du kan maximalt ha 300 <a name="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient
 skapar auktorisationer utan att fullborda dem. Använd vår [testmiljö]({{<
-relref "/docs/staging-environment.md" >}}) om du utvecklar en ACME-klient.
+relref "/docs/staging-environment" >}}) om du utvecklar en ACME-klient.
 
 Användare av API:t ACMEv2 kan skapa maximalt 300 <a name="new-orders"></a>**nya
 beställningar** per konto per 3 timmar.
@@ -110,7 +109,7 @@ Observera att de flesta webbhotell inte behöver några förhöjda gränser efte
 det inte finns någon gräns på antalet unika registrerade domäner ni kan utfärda
 certifikat för. Så länge de flesta av era kunder har färre än 2000 underdomäner
 på en registrerad domän behöver ni troligtvis ingen höjning. Se vår
-[integrationsguide]({{< relref "/docs/integration-guide.md" >}}) för fler råd.
+{{<link "integrationsguide" "/docs/integration-guide" >}} för fler råd.
 
 # <a name="clearing-pending"></a>Rensa väntande auktorisationer
 

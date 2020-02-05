@@ -9,7 +9,7 @@ beforeColon = ""
 weight = 10
 description = """
   Let's Encrypt is a free, automated, and open certificate
-  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+  authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 # PayPal image url from https://www.paypal.com/donate/buttons/unhosted
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"

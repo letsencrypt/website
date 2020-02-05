@@ -1,10 +1,16 @@
 [build]
 
 publish = "public/"
-command = "npm run build"
+command = "hugo -d public"
 
 [build.environment]
 HUGO_VERSION = "0.62.0"
+
+[[redirects]]
+from = "/jobs"
+to = "https://www.abetterinternet.org/careers"
+status = 302
+force = false
 
 [[redirects]]
 from = "/de/*"

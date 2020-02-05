@@ -16,9 +16,9 @@ organizações possam aumentar gradualmente o número de certificados que eles p
 sem precisar de intervenção da Let's Encrypt.
 
 Se você está ativamente desenvolvendo ou testando um cliente Let's Encrypt, por favor use
-nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}) ao invés da API de produção.
+nosso {{<link "ambiente de testes" "/docs/staging-environment" >}} ao invés da API de produção.
 Se você está trabalhando para integrar a Let's Encrypt a um provedor ou a um website
-muito grande por favor [leia nosso Guia de Integração]({{< relref "/docs/integration-guide.md" >}}).
+muito grande por favor {{<link "leia nosso Guia de Integração" "/docs/integration-guide" >}}.
 
 O principal limite é o de <a name="certificates-per-registered-domain"></a> **Certificados por Domínio Registrado** (50 por semana). Um
 domínio registrado é, de maneira geral, a parte do nome do domínio que você comprou
@@ -57,7 +57,7 @@ Revogar certificados não zera os limites de requisições, porque os recursos u
 emitir estes certificados já foram consumidos.
 
 Existe um limite de <a name="failed-validations"></a>**Falha de Validação** de 5 falhas
-por conta, por nome de domínio, por hora. Este limite é maior em nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}), você
+por conta, por nome de domínio, por hora. Este limite é maior em nosso {{<link "ambiente de testes" "/docs/staging-environment" >}}, você
 pode usar este ambiente para identificar e corrigir problemas de conectividade.
 
 Os endpoints "new-reg", "new-authz" e "new-cert" possuem um 
@@ -70,12 +70,12 @@ Temos dois outros limites que você dificilmente atingirá.
 Você pode criar um máximo de 10 <a name="accounts-per-ip-address"></a>**Contas por Endereço IP** por 3 horas. Você pode
 criar um máximo de 500 **Contas por Intervalo de IP** nas configurações IPv6 /48 por 
 3 horas. Atingir qualquer um destes dois limites é bem raro, e recomendamos que
-grandes integradores [usem uma conta para muitos usuários]({{< relref "/docs/integration-guide.md" >}}).
+grandes integradores {{<link "usem uma conta para muitos usuários" "/docs/integration-guide" >}}.
 
 Você pode ter um máximo de 300 <a name="pending-authorizations"></a>**Autorizações Pendentes** na sua conta. Atingir
 este limite é bem raro e acontece com mais frequência durante o desenvolvimento de clientes ACME. Isso
 normalmente significa que o seu cliente está criando autorizações e as deixando em aberto.
-Por favor use nosso [ambiente de testes]({{< relref "/docs/staging-environment.md" >}}) se você está
+Por favor use nosso {{<link "ambiente de testes" "/docs/staging-environment" >}} se você está
 desenvolvendo um cliente ACME.
 
 Para usuários da API ACME v2 você pode criar um máximo de 300 <a
@@ -104,8 +104,7 @@ mais rápido do que ele zera automaticamente.
 Observe que a maioria dos provedores de hospedagem não precisa de aumentos de limite, porque
 não há limites para o número de domínios distintos registrados para os quais você pode emitir certificados.
 Enquanto a maioria dos seus usuários não tiver mais do que 2000 subdomínios em
-um domínio registrado, você provavelmente não precisará de um aumento. Veja nosso [Guia de
-Integração]({{< relref "/docs/integration-guide.md" >}}) para mais dicas.  
+um domínio registrado, você provavelmente não precisará de um aumento. Veja nosso {{<link "Guia de Integração" "/docs/integration-guide" >}} para mais dicas.  
 
 # <a name="clearing-pending"></a>Limpando Autorizações Pendentes
 

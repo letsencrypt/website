@@ -10,7 +10,7 @@ lastmod: 2019-06-04
 
 Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合理使用我们的服务。我们相信这些速率限制在大多数情况下足以满足用户的需求。同时续期证书几乎不受速率限制的影响，所以大型组织可以逐步增加他们可以发布的证书数量，而无需Let's Encrypt的干预。
 
-如果您正在积极开发或测试 Let's Encrypt 的客户端，请使用我们的[测试环境]({{< relref "/docs/staging-environment.md" >}})而不是生产环境的 API。如果您正在将 Let's Encrypt 作为提供商或大型网站进行整合，请[查看我们的集成指南]({{< relref "/docs/integration-guide.md" >}})。
+如果您正在积极开发或测试 Let's Encrypt 的客户端，请使用我们的{{<link "测试环境" "/docs/staging-environment" >}}而不是生产环境的 API。如果您正在将 Let's Encrypt 作为提供商或大型网站进行整合，请{{<link "查看我们的集成指南" "/docs/integration-guide" >}}。
 
 我们主要限制的是<a name="certificates-per-registered-domain"></a>**每个注册域名的证书数量**（每周 50 张）。一般而言，注册域名是您从域名注册商处购买的那一部分域名。例如，在域名 `www.example.com` 中，注册域名为 `example.com`；在 `new.blog.example.co.uk` 中，注册域名为 `example.co.uk`。我们使用[公共后缀列表](https://publicsuffix.org)来确定注册域名。
 
@@ -24,15 +24,15 @@ Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合
 
 **吊销证书不会重置速率限制**，因为您已经消耗了用于颁发这些证书的资源。
 
-每个账户每小时每域名有最多<a name="failed-validations"></a>**验证失败** 5 次的限制。该限制次数在我们的[测试环境]({{< relref "/docs/staging-environment.md" >}})中更高，因此您可以使用该环境来调试连接问题。
+每个账户每小时每域名有最多<a name="failed-validations"></a>**验证失败** 5 次的限制。该限制次数在我们的{{<link "测试环境" "/docs/staging-environment" >}}中更高，因此您可以使用该环境来调试连接问题。
 
 “new-reg”、“new-authz”和“new-cert”端点的<a name="overall-requests"></a>**总请求数**限制为每秒 20 次。“/directory”端点和“/acme”目录及其子目录的总请求数限制为每秒 40 次。
 
 此外还有两个你不太可能遇到的限制。
 
-<a name="accounts-per-ip-address"></a>**每个 IP 地址每 3 小时最多可以创建 10 个账户**。**每个 IPv6 /48 地址段**每 3 小时最多可以创建 500 个账户。达到这两个账户限制是十分罕见的，我们建议我们建议大型集成商[使用一个帐户为多个客户提供服务]({{< relref "/docs/integration-guide.md" >}})。
+<a name="accounts-per-ip-address"></a>**每个 IP 地址每 3 小时最多可以创建 10 个账户**。**每个 IPv6 /48 地址段**每 3 小时最多可以创建 500 个账户。达到这两个账户限制是十分罕见的，我们建议我们建议大型集成商{{<link "使用一个帐户为多个客户提供服务" "/docs/integration-guide" >}}。
 
-您的帐户最多可以有 300 个<a name="pending-authorizations"></a>**待验证授权**。达到此速率限制很少见，并且通常在开发 ACME 客户端时发生。到达此限制通常意味着您的客户正在创建授权但没有验证授权。如果您正在开发 ACME 客户端，请使用我们的[测试环境]({{< relref "/docs/staging-environment.md" >}})。
+您的帐户最多可以有 300 个<a name="pending-authorizations"></a>**待验证授权**。达到此速率限制很少见，并且通常在开发 ACME 客户端时发生。到达此限制通常意味着您的客户正在创建授权但没有验证授权。如果您正在开发 ACME 客户端，请使用我们的{{<link "测试环境" "/docs/staging-environment" >}}。
 
 对于 ACME v2 API 的用户，每 3 小时最多可为每个帐户创建 300 个<a name="new-orders"></a>**新订单**。
 
@@ -42,7 +42,7 @@ Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合
 
 如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://goo.gl/forms/plqRgFVnZbdGhE9n1)请求更高的速率限制。处理请求需要几周时间，因此如果您只是想要在限制自行重置前更快地进行重置，请不要使用该表单。
 
-请注意，大多数托管服务提供商不需要增加速率限制，因为我们没有限制您为不同注册域名颁发证书的数量。只要您的大多数客户在注册域名下的子域名数量没有超过 2000 个，您很可能不需要申请速率提高。有关更多建议，请参考我们的[集成指南]({{< relref "/docs/integration-guide.md" >}})。
+请注意，大多数托管服务提供商不需要增加速率限制，因为我们没有限制您为不同注册域名颁发证书的数量。只要您的大多数客户在注册域名下的子域名数量没有超过 2000 个，您很可能不需要申请速率提高。有关更多建议，请参考我们的{{<link "集成指南" "/docs/integration-guide" >}}。
 
 # <a name="clearing-pending"></a>清除待验证的授权
 

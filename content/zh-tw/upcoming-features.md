@@ -21,7 +21,7 @@ lastmod: 2019-07-03
 
 * 於 2019 年 5 月 15 日推出
 
-我們建立了一個[憑證透明度紀錄]({{< ref "/docs/ct-logs.html" >}})伺服器。
+我們建立了一個{{<link "憑證透明度紀錄" "/docs/ct-logs.html" >}}伺服器。
 
 ## 支援 TLS ALPN 驗證
 
