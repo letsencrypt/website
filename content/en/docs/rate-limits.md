@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2019-10-30
 ---
 
 {{< lastmod >}}
@@ -80,7 +80,7 @@ Please utilize our {{<link "staging environment" "/docs/staging-environment" >}}
 developing an ACME client.
 
 For users of the ACME v2 API you can create a maximum of 300 <a
-name="new-orders"></a>**New Orders** per account per 3 hours.
+name="new-orders"></a>**New Orders** per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request.
 
 # <a name="overrides"></a>Overrides
 
