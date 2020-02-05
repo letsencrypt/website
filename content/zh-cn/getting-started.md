@@ -2,12 +2,12 @@
 title: 快速入门
 slug: getting-started
 top_graphic: 3
-date: 2019-12-21
+date: 2020-02-04
 ---
 
 {{< lastmod >}}
 
-为了在您的网站上启用 HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。Let's Encrypt 是一个证书颁发机构（CA）。要从 Let's Encrypt 获取您网站域名的证书，您必须证明您对域名的实际控制权。您可以在您的 Web 主机上运行使用 [ACME 协议](https://ietf-wg-acme.github.io/acme/)的软件来获取 Let's Encrypt 证书。
+为了在您的网站上启用 HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。Let's Encrypt 是一个证书颁发机构（CA）。要从 Let's Encrypt 获取您网站域名的证书，您必须证明您对域名的实际控制权。您可以在您的 Web 主机上运行使用 [ACME 协议](https://tools.ietf.org/html/rfc8555)的软件来获取 Let's Encrypt 证书。
 
 为了找出最适合您获取证书的方法，您需要知道您是否拥有服务器的[命令行访问权限（注：链接为英文）](https://en.wikipedia.org/wiki/Shell_account)（有时也被被称为 SSH 访问权限）。如果您仅使用控制面板（例如 [cPanel](https://cpanel.net/)、[Plesk](https://www.plesk.com/) 或 [WordPress](https://wordpress.org/)）管理您的网站，您很有可能没有命令行访问权限。您可以联系您的托管服务提供商确认。
 
