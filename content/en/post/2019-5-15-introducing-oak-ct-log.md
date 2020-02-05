@@ -5,6 +5,7 @@ excerpt: "Today we are announcing a new Certificate Transparency log called Oak.
 title: "Introducing Oak, a Free and Open Certificate Transparency Log"
 slug: introducing-oak-ct-log
 ---
+Update: Feb. 5 2020, The Let’s Encrypt CT logs are now included in approved log lists and are usable by all publicly-trusted certificate authorities. 
 
 Today we are announcing a new [Certificate Transparency log called Oak](https://letsencrypt.org/docs/ct-logs). The Oak log will be operated by Let’s Encrypt and all publicly trusted certificate authorities will be welcome to submit certificates.  
 
