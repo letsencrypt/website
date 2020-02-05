@@ -1,7 +1,7 @@
 
 # Localization - internationalization (l10n/i18n)
 
-## First of all
+## Don't duplicate work!
 
 Check [existing translation pull-requests](https://github.com/letsencrypt/website/pulls?q=is%3Apr+is%3Aopen+label%3Atranslation) to see if someone else is already working on it.
 
