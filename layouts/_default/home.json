@@ -1,5 +1,13 @@
 {{- $.Scratch.Add "index" slice -}}
 {{- range .Site.RegularPages -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+    {{ $tmp := newScratch }}
+    {{ $tmp.Set "page" dict }}
+    {{ $tmp.SetInMap "page" "title" .Title }}
+    {{ $tmp.SetInMap "page" "tags" .Params.tags }}
+    {{ $tmp.SetInMap "page" "categories" .Params.categories }}
+    {{ $tmp.SetInMap "page" "contents" .Plain }}
+    {{ $tmp.SetInMap "page" "permalink" .Permalink }}
+    {{ $tmp.SetInMap "page" "do_not_index" .Params.do_not_index }}
+    {{- $.Scratch.Add "index" ($tmp.Get "page") -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}

@@ -42,16 +42,14 @@
 		var pages = data;
 		var fuse = new Fuse(pages, fuseOptions);
 		var result = fuse.search(searchQuery);
-		console.log({
-			"matches": result
-		});
+		var html;
 		if (result.length > 0) {
-			populateResults(result);
-		} else {
-			var para = document.createElement("p");
-			para.innerText = "No matches found";
-			document.getElementById("search-results").appendChild(para);
+			html = populateResults(result);	
 		}
+		if ( ! html ) {
+			html = "No matches found";
+		}
+		document.getElementById("search-results").innerHTML = html;
 	}
 
 	function executeSearch(searchQuery) {
@@ -68,6 +66,9 @@
 	function populateResults(result) {
 		var html = "";
 		result.forEach(function (value, key) {
+			if ( value.item.do_not_index ) {
+				return;
+			}
 			var content = value.item.contents;
 			var snippet = "";
 			var snippetHighlights = [];
@@ -95,8 +96,7 @@
 				<p>${snippet}</p>
 				</div>`;
 		});
-		
-		document.getElementById("search-results").innerHTML = html;
+		return html;
 	}
 
 })();
