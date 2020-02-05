@@ -35,12 +35,12 @@ ditt operativsystem och din webbserver.
 
 Om [Certbot] inte uppfyller dina krav eller om du vill testa något annat så
 finns det [många fler ACME-klienter att välja bland]({{< relref
-"/docs/client-options.md" >}}). När du väl valt ACME-klient så kika på den
+"/docs/client-options" >}}). När du väl valt ACME-klient så kika på den
 klientens dokumentation för att fortsätta.
 
 Om du experimenterar med olika ACME-klienter, se till att använda vår
-[testmiljö]({{< relref "/docs/staging-environment.md" >}}) för att undvika att
-utsättas för [taktbegränsningar]({{< relref "/docs/rate-limits.md" >}}).
+{{<link "testmiljö" "/docs/staging-environment" >}} för att undvika att
+utsättas för {{<link "taktbegränsningar" "/docs/rate-limits" >}}.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

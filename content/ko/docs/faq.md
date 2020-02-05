@@ -26,7 +26,7 @@ Let’s Encrypt는 글로벌 공인인증기관(Certificate Authority, CA)입니
 
 Let’s Encrypt는 DV(Domain Validation) 인증서를 제공합니다. 자동 발행을 할 수 없는 OV(Organization Validation) 또는 EV(Extended Validation) 유형의 인증서는 제공하지 않습니다.
 
-Let’s Encrypt를 사용하려면 [시작하기]({{< relref "/getting-started.md" >}}) 페이지를 방문해 주세요.
+Let’s Encrypt를 사용하려면 {{<link "시작하기" "/getting-started" >}} 페이지를 방문해 주세요.
 
 ## Let’s Encrypt를 사용하는 데는 얼마나 드나요? 정말로 무료인가요?
 

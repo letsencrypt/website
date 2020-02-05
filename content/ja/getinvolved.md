@@ -21,7 +21,7 @@ menu:
 
 ### クライアント・ソフトウェア
 
-[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの[サードパーティ製クライアントの選択肢]({{< relref "/docs/client-options.md" >}})があります。
+[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの{{<link "サードパーティ製クライアントの選択肢" "/docs/client-options" >}}があります。
 
 ### サーバーサイドの CA ソフトウェア
 

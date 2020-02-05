@@ -25,7 +25,7 @@ lastmod: 2017-06-08
 не все браузеры проводят эту проверку. Но аннулирование сертификатов, 
 соответствующих скомпрометированным закрытым ключам, все еще является 
 важной практикой и необходима согласно [Клиентскому соглашению]
-({{< relref "/repository.md" >}}) Let's Encrypt's.
+({{< relref "/repository" >}}) Let's Encrypt's.
 
 Чтобы аннулировать сертификат с помощью Let's Encrypt, следует использовать [ACME 
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), 

@@ -23,4 +23,4 @@ Los principios claves detrás de *Let's Encrypt* son:
 * <strong>Abierto:</strong> La emisión automática y el protocolo de renovación serán publicados como un estándar abierto para que otros pueden adoptar.
 * <strong>Cooperativo:</strong> Al igual que los mismos protocolos subyacentes de Internet, *Let's Encrypt* es un esfuerzso conjunto para el beneficio de la comunidad, más allá del contrgol de cualquier organización.
 
-Tenemos una página con información más detallada sobre [cómo Let's Encrypt AC funciona]({{< relref "/how-it-works.md" >}}).
+Tenemos una página con información más detallada sobre {{<link "cómo Let's Encrypt AC funciona" "/how-it-works" >}}.

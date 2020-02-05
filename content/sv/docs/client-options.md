@@ -67,7 +67,7 @@ på GitHub där du uppdaterar filen `data/clients.json`.
 
 Innan du skickar in en pull request, vänligen säkerställ att:
 
-1. din klient respekterar [Let's Encrypts varumärkespolicy]({{< relref "/trademarks.md" >}})
+1. din klient respekterar {{<link "Let's Encrypts varumärkespolicy" "/trademarks" >}}
 1. din klient inte är webbläsarbaserad och att den stöder automatisk förnyelse
 1. din commit lägger till din klient **sist** i relevant sektion (glöm inte
    `acme_v2` om det är lämpligt!)

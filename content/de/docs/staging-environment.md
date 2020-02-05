@@ -18,7 +18,7 @@ Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--dry-ru
 
 # Rate Limits
 
-Dei Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere Produktionsumgebung]({{< relref "/docs/rate-limits.md" >}}) mit den folgenden Ausnahmen:
+Dei Staging-Umgebung benutzt dieselben Rate Limits wie {{<link "beschrieben für unsere Produktionsumgebung" "/docs/rate-limits" >}} mit den folgenden Ausnahmen:
 
 * Das **Zertifikate pro registrierte Domain** Limit ist 30,000 pro Woche.
 * Das **Doppelte Zertifikate** Limit ist 30,000 pro Woche.
@@ -32,4 +32,4 @@ Das Zwischenzertifikat der Staging-Umgebung (["Fake LE Intermediate X1"](/certs/
 
 # Zertifikat Transparenz
 
-Die Staging-Umgebung sendet Vorzertifikate zu Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) und Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log und behält die erhaltenen SCTs in den ausgestellten Zertifikaten.
+Die Staging-Umgebung sendet Vorzertifikate zu Let's Encrypt {{<link "Testflume" "/docs/ct-logs">}} und Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log und behält die erhaltenen SCTs in den ausgestellten Zertifikaten.
