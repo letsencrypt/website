@@ -21,7 +21,7 @@ menu:
 
 ### 客戶端軟體
 
-[Certbot](https://github.com/certbot/certbot) 是使用 Python 語言撰寫的工具，它幫助你的網頁伺服器自動取得憑證，並替網站設置 HTTPS。我們建議大多數使用者使用 Certbot，當然還有許多其他[第三方客戶端]({{< relref "/docs/client-options.md" >}})可以使用。
+[Certbot](https://github.com/certbot/certbot) 是使用 Python 語言撰寫的工具，它幫助你的網頁伺服器自動取得憑證，並替網站設置 HTTPS。我們建議大多數使用者使用 Certbot，當然還有許多其他{{<link "第三方客戶端" "/docs/client-options" >}}可以使用。
 
 ### 伺服器端 CA 軟體
 

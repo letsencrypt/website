@@ -117,4 +117,4 @@ Encrypts mellan-CA:er är lagrade på hårdvarusäkerhetsenheter (HSM:er) vilket
 utgör en hög grad av skydd mot nyckelstöld.
 
 Alla ISRG-nycklar är för närvarande RSA-nycklar. Vi [planerar att generera
-ECDSA-nycklar]({{< relref "/upcoming-features.md" >}}).
+ECDSA-nycklar]({{< relref "/upcoming-features" >}}).

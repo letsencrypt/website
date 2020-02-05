@@ -21,7 +21,7 @@ Derzeit signiert Let's Encrypt nur Endentität Zertifikate mit RSA Zwischenzerti
 
 * Aktiviert: 15. Mai 2019
 
-Wir haben einen [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}) in Betrieb genommen.
+Wir haben einen {{<link "Certificate Transparency log" "/docs/ct-logs.html" >}} in Betrieb genommen.
 
 ## TLS ALPN Challenge Support
 

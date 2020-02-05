@@ -29,6 +29,8 @@ time_format_default = "Jan 2, 2006"
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+show_fundraiser = false
+
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
 home = [ "HTML", "RSS" ]

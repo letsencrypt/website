@@ -21,7 +21,7 @@ E-post: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## E-postlistor
 
-För information om diverse tekniska e-postlistor, vänligen besök vår [engagemangssida]({{< relref "/getinvolved.md" >}}).
+För information om diverse tekniska e-postlistor, vänligen besök vår {{<link "engagemangssida" "/getinvolved" >}}.
 
 Du kan även [prenumerera på vårt nyhetsbrev](https://mailchi.mp/letsencrypt.org/fjp6ha1gad) (engelska).
 

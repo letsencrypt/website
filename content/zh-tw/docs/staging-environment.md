@@ -18,7 +18,7 @@ lastmod: 2019-09-16
 
 # 速率限制
 
-測試環境具有的速率限制種類與[上線環境]({{< relref "/docs/rate-limits.md" >}})相同，但是有更高的額度：
+測試環境具有的速率限制種類與{{<link "上線環境" "/docs/rate-limits" >}}相同，但是有更高的額度：
 
 * **每個註冊域名的憑證頒發數量**限制為每個星期 30000 張
 * **重複憑證**限制為每隔星期 30000 張
@@ -33,4 +33,4 @@ lastmod: 2019-09-16
 
 # 憑證透明度
 
-測試環境會將預憑證交給 Let's Encrypt [Testflume]({{< relref "/docs/ct-logs.html" >}}) 和 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 測試用的憑證透明度紀錄，並在頒發的憑證中添加 SCT。
+測試環境會將預憑證交給 Let's Encrypt {{<link "Testflume" "/docs/ct-logs" >}} 和 Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 測試用的憑證透明度紀錄，並在頒發的憑證中添加 SCT。
