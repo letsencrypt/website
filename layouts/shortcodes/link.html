@@ -1,0 +1,12 @@
+{{- if or ( hasPrefix (.Get 0) "http://" ) ( hasPrefix (.Get 0) "https://" ) -}}
+	<a href="{{ .Get 1 }}">{{ .Get 0 }}</a>
+{{- else -}}
+	{{- $tmp := split (.Get 1 ) "#" -}}
+	{{- $pagename := index $tmp 0 -}}
+	{{- $anchor := index $tmp 1 -}}
+	{{- $page := .Site.GetPage $pagename -}}
+	{{- if not $page }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
+	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
+	{{- else }}<a href="{{ $page.RelPermalink }}{{ if $anchor }}#{{ $anchor }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}">{{ .Get 0 | markdownify }}</a>
+	{{- end -}}
+{{- end -}}

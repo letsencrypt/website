@@ -7,6 +7,12 @@ command = "npm run build"
 HUGO_VERSION = "0.62.0"
 
 [[redirects]]
+from = "/jobs"
+to = "https://www.abetterinternet.org/careers"
+status = 302
+force = false
+
+[[redirects]]
 from = "/de/*"
 to = "/de/404.html"
 status = 404

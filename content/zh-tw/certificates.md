@@ -75,4 +75,4 @@ IdenTrust 和我們交互簽名 (Cross-Sign) 了中間憑證，這樣可以確�
 
 ISRG 根憑證和 Let's Encrypt 中間憑證的私鑰均存儲在硬體安全模組 (HSM) 中；它提供高度安全的保護，以避免私鑰被竊取。
 
-目前所有 ISRG 私鑰均為 RSA 私鑰。我們正在[計劃使用 ECDSA 私鑰]({{< relref "/upcoming-features.md" >}})。
+目前所有 ISRG 私鑰均為 RSA 私鑰。我們正在{{<link "計劃使用 ECDSA 私鑰" "/upcoming-features" >}}。

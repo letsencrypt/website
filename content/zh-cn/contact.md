@@ -22,7 +22,7 @@ menu:
 
 ## 邮件列表
 
-有关各种技术邮件列表的信息，请访问我们的[帮助 Let's Encrypt]({{< relref "/getinvolved.md" >}}) 页面。
+有关各种技术邮件列表的信息，请访问我们的{{<link "帮助 Let's Encrypt" "/getinvolved" >}} 页面。
 
 [点击此处](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)注册我们的新闻通讯邮件。
 

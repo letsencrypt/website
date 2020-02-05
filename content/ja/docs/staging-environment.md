@@ -18,7 +18,7 @@ Certbot を使用している場合、`--dry-run` フラグを設定するだけ
 
 # レート制限
 
-ステージング環境でも、[本番環境のレート制限の説明]({{< ref "/docs/rate-limits.md" >}})に書かれているのと同様のレート制限が適用されますが、次のような例外が設けられています。
+ステージング環境でも、[本番環境のレート制限の説明]({{< ref "/docs/rate-limits" >}})に書かれているのと同様のレート制限が適用されますが、次のような例外が設けられています。
 
 * **登録ドメインごとの証明書**は、1週間ごとに 30,000 個までです。
 * **重複する証明書**は、1週間ごとに 30,000 個までです。
@@ -32,4 +32,4 @@ Certbot を使用している場合、`--dry-run` フラグを設定するだけ
 
 # 証明書の透明性
 
-ステージング環境では、pre-certificates を Let's Encrypt [Testflume](https://letsencrypt.org/docs/ct-logs/) と Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs に送信し、送信時に返された SCT が発行した証明書の中に含まれます。
+ステージング環境では、pre-certificates を Let's Encrypt {{<link "Testflume" "/docs/ct-logs">}} と Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs に送信し、送信時に返された SCT が発行した証明書の中に含まれます。

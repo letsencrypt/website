@@ -26,13 +26,13 @@ Let's Encrypt ist eine globale Zertifizierungsstelle (CA). Wir lassen Menschen u
 
 Let's Encrypt bietet Domain-Validierungs (DV) Zertifikate. Wir bieten keine Organisationsvalidierung (OV) oder Erweiterte Validierung (EV), weil wir für diese Typen die Ausstellung nicht automatisieren können.
 
-Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte]({{< relref "/getting-started.md" >}}) Seite.
+Um mit Let's Encrypt zu beginnen, besuchen Sie bitte {{<link "Erste Schritte" "/getting-started" >}} Seite.
 
 ## Was kostet die Benutzung von Let's Encrypt? Ist wirklich alles frei?
 
 Wir erheben keine Gebühr für unsere Zertifikate. Let's Encrypt ist gemeinnützig, unsere Mission ist die Erstellung eines sicheren Webs, welches die Privatsphäre akzeptiert durch weite Verbreitung von HTTPS. Unsere Dienste sind frei und einfach zu benutzen, sodass jede Webseite HTTPS bereitstellen kann.
 
-Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine [Spende]({{< relref "/donate.html" >}}) oder [werden Sie Sponsor]({{< relref "/become-a-sponsor.html" >}}).
+Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine {{<link "Spende" "/donate.html" >}} oder {{<link "werden Sie Sponsor" "/become-a-sponsor.html" >}}.
 
 In einigen Fällen wird Integratoren (z.B. Hosting-Provider) eine geringe Gebühr für Verwaltungsaufwand berechnet.
 
@@ -40,7 +40,7 @@ In einigen Fällen wird Integratoren (z.B. Hosting-Provider) eine geringe Gebüh
 
 Let's Encrypt läuft mit einem kleinen Team und hängt stark von Automatisierung ab, um Kosten zu senken. Aus diesem Grunde sind wir nicht in der Lage, direkten Support für unsere Abonnenten anzubieten. Wir haben dafür einige grossartige Optionen für Unterstützung:
 
-1. Wir haben eine wirklich hilfreiche [Dokumentation]({{< relref "/docs" >}}).
+1. Wir haben eine wirklich hilfreiche {{<link "Dokumentation" "/docs" >}}.
 2. Wir haben ein sehr aktives und hilfreiches [Community Support Forum](https://community.letsencrypt.org/). Mitglieder unserer Community machen einen grossartigen Job beim Beantworten von Fragen und viele der üblichen Fragen sind schon beantwortet.
 
 Hier ist ein [Video, was wir mögen](https://www.youtube.com/watch?v=Xe1TZaElTAs) über die Leistung der grossen Community.
@@ -59,7 +59,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Wird Zertifikaten von Let's Encrypt von meinem Browser vertraut?
 
-Für die meisten Browser und Betriebssysteme, ja. Schauen Sie in die [Kompatibilitätsliste]({{< relref "/docs/cert-compat.md" >}}) für mehr Details.
+Für die meisten Browser und Betriebssysteme, ja. Schauen Sie in die {{<link "Kompatibilitätsliste" "/docs/cert-compat" >}} für mehr Details.
 
 ## Stellt Let's Encrypt Zertifikate für andere als SSL/TLS für Webseiten aus?
 
@@ -90,7 +90,7 @@ Ja. Wildcard müssen über ACMEv2 mit DNS-01 Challenge ausgestellt werden. Schau
 
 ## Gibt es einen Let's Encrypt (ACME) Client für mein Betriebssystem?
 
-Es ist eine grosse Anzahl von [ACME Clients]({{< relref "/docs/client-options.md" >}}) verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas auf Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
+Es ist eine grosse Anzahl von {{<link "ACME Clients" "/docs/client-options" >}} verfügbar. Die Wahrscheinlichkeit ist gross, dass etwas auf Ihrem Betriebssystem gut funktioniert. Wir empfehlen, mit dem [Certbot](https://certbot.eff.org/) zu starten.
 
 ## Kann ich einen bestehenden privaten Schlüssel oder ein Certificate Signing Request (CSR) benutzen?
 
