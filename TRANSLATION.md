@@ -1,6 +1,10 @@
 
 # Localization - internationalization (l10n/i18n)
 
+## Don't duplicate work!
+
+Check [existing translation pull-requests](https://github.com/letsencrypt/website/pulls?q=is%3Apr+is%3Aopen+label%3Atranslation) to see if someone else is already working on it.
+
 ## How to add a new language
 
 ### First pull-request
@@ -18,5 +22,6 @@ You can start translating the files that are inside `content\XX\`:
 * Copy the English version of the file you wish to translate into `content\XX\`
 * If the header of the file contains "`aliases:`", **you must remove the line with "`aliases:`"**
 * Do **not** change `date` or `lastmod` : they must correspond to the the English version (and not when the translation occured: it's used to detect when a translation is out-of-sync)
+* If your translation takes time, please open early a draft pull-request so others know you are working on it
 
 You can check the translation status using https://letsencrypt.org/i18n/
