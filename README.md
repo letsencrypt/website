@@ -5,15 +5,21 @@ This is the repository for the main [Let's Encrypt website].
 
 This site is built with [Hugo]. It's entirely static, no server-side code/scripting.
 
-To see your changes, [install Hugo], then run it with:
+To see your changes, [install Hugo Extended], then run it with:
 
 ```sh
-npm install && npm run build && npm test && hugo server -F
+hugo server -F
 ```
 
 And open [http://localhost:1313/] in your browser. Note that the `-F` flag will
 show items to be published in the future (like blog posts with dates in the
 future).
+
+If you update javascript, css or layouts, you can run tests with:
+
+```sh
+npm install && npm run build && npm test
+```
 
 Contributions welcome.
 
@@ -31,8 +37,7 @@ To help with translation, please see [TRANSLATION.md].
 
 [Let's Encrypt website]: https://letsencrypt.org/
 [Hugo]: https://gohugo.io/
-[install Hugo]: https://gohugo.io/getting-started/installing
+[install Hugo Extended]: https://gohugo.io/getting-started/installing
 [http://localhost:1313/]: http://localhost:1313/
 [TRANSLATION.md]: https://github.com/letsencrypt/website/blob/master/TRANSLATION.md
 [netlify.toml]: https://github.com/letsencrypt/website/blob/master/netlify.toml
-
