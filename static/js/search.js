@@ -1,3 +1,4 @@
+/* global Fuse */
 (function(){
 	
 	if (document.readyState != "loading") {
@@ -29,7 +30,7 @@
 	}
 
 	var searchQuery = param("s");
-	var searchInput = document.getElementById("search-query")
+	var searchInput = document.getElementById("search-query");
 	function doSearch() {
 		if (searchQuery) {
 			searchInput.value = searchQuery;
@@ -59,7 +60,7 @@
 			url = "/"+lang+"/index.json";
 		}
 		fetch(url).then(function(response) {
-			return response.json().then(function(json){searchResult(json, searchQuery)});
+			return response.json().then(function(json){searchResult(json, searchQuery);});
 		});
 	}
 
@@ -75,7 +76,7 @@
 			if (fuseOptions.tokenize) {
 				snippetHighlights.push(searchQuery);
 			} else {
-				value.matches.forEach(function (mvalue, matchKey) {
+				value.matches.forEach(function (mvalue) {
 					if (mvalue.key == "tags" || mvalue.key == "categories") {
 						snippetHighlights.push(mvalue.value);
 					} else if (mvalue.key == "content") {
