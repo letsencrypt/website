@@ -3,7 +3,7 @@ title: Contact
 slug: contact
 description: How to contact us
 top_graphic: 1
-lastmod: 2020-01-29
+lastmod: 2020-02-05
 menu:
   main:
     weight: 90
