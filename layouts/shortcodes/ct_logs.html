@@ -1,8 +1,29 @@
-{{ range $.Site.Data.transparency.transparencyLogs }}
-<p>
-  <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .name }}</strong><br>
-  {{ i18n "certificate_transparency_role" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ if eq .role "production" }}{{ i18n "certificate_transparency_role_production" }}{{ end }}{{ if eq .role "test" }}{{ i18n "certificate_transparency_role_test" }}{{ end }}<br>
-  {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .uri }}<br>
-  {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
-</p>
+{{ range $.Site.Data.transparency.categories }}
+    {{ $category := . }}
+    {{ if eq $category "production" }}
+        <h3>{{ i18n "certificate_transparency_role_production" }}</h3>
+        <ul>
+            <li>Our production ACME API environment submits certificates here</li>
+            <li>Will eventually be incorporated in browser CT programs</li>
+        </ul>
+    {{ else if eq $category "testing" }}
+        <h3>{{ i18n "certificate_transparency_role_test" }}</h3>
+        <ul>
+            <li>We test new versions of <a href="http://github.com/google/trillian">Trillian</a> and <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> here before deploying them to production</li>
+            <li>Both the production and staging ACME API environments submit certificates to Testflume</li>
+            <li>Testflume's accepted roots list includes all of the Oak accepted roots</li>
+            <li>Can be used by other certificate authorities for testing purposes</li>
+        </ul>
+    {{ end }}
+    <ul><ul>
+    {{ range $.Site.Data.transparency.transparencyLogs }}
+        {{ if and .role (eq $category .role) }}
+        <li>
+          <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .log | humanize }} {{ .shard }}</strong><br>
+          {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: https://{{ .log }}.ct.letsencrypt.org/{{ .shard }}<br>
+          {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul></ul>
 {{ end }}

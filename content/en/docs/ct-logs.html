@@ -11,13 +11,7 @@ aliases:
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> is a system for logging and monitoring the issuance of TLS certificates. CT greatly enhances everyone's ability to monitor and study certificate issuance, and these capabilities have led to numerous improvements to the CA ecosystem and Web security. As a result, CT is rapidly becoming critical infrastructure.</p>
 
-<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate several CT logs ourselves, which all publicly trusted certificate authorities are welcome to submit to.
-
-<ul>
-    <li><a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> is our production log and will eventually be incorporated in browser CT programs.</li>
-    <li>Testflume will never be incorporated in browser CT programs. It is used strictly to test new versions of <a href="http://github.com/google/trillian">Trillian</a> and <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> software. The <a href="{{< relref "/docs/staging-environment.md" >}}">staging environment</a> submits all certificates to testflume. We welcome other CAs to send us their test root certificates and use Testflume.</li>
-</ul>
-</p>
+<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate two annually sharded CT logs named <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> and Testflume. All publicly trusted certificate authorities are welcome to submit to our logs. <a href="{{< relref "/contact.md" >}}">Contact us via email</a> about adding new root certificates to our logs.</p>
 
 <p>Join our <a href="https://community.letsencrypt.org/c/ct-announcements/">community forum</a> to see major announcements about our CT logs.</p>
 
