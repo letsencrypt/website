@@ -2,14 +2,17 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-01-14
+lastmod: 2020-02-03
 ---
 
 {{< lastmod >}}
 
 ## Multi-Perspective Validation
 
-Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
+Let's Encrypt currently validates domain control from multiple network
+perspectives, but only requires the main request to succeed. We will [start
+requiring that validation succeeds from multiple viewpoints as of February 19th,
+2020](https://community.letsencrypt.org/t/acme-v1-v2-validating-challenges-from-multiple-network-vantage-points/112253).
 
 ## IP Addresses in Certificates
 

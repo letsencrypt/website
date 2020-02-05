@@ -2,14 +2,14 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-01-14
+lastmod: 2020-02-03
 ---
 
 {{< lastmod >}}
 
 ## 多视角验证
 
-目前，Let's Encrypt 从单一网络视角进行验证。我们正计划从多个网络视角展开验证。
+Let's Encrypt当前正在通过多个网络视角对域名所有权进行验证，但是仅要求主验证请求通过验证。 从2020年2月19日起，我们将[开始要求多个网络角度验证该请求都必须成功](https://community.letsencrypt.org/t/acme-v1-v2-validating-challenges-from-multiple-network-vantage-points/112253)。
 
 ## IP地址证书
 
