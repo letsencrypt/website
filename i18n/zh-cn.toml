@@ -125,13 +125,10 @@ other = "通过 HTTPS 加载的页面百分比（14日移动平均）"
 [certificate_transparency_name]
 other = "名称"
 
-[certificate_transparency_role]
-other = "作用"
-
 [certificate_transparency_role_production]
 other = "生产环境日志"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "测试环境日志"
 
 [certificate_transparency_uri]

@@ -1,8 +1,26 @@
-{{ range $.Site.Data.transparency.transparencyLogs }}
-<p>
-  <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .name }}</strong><br>
-  {{ i18n "certificate_transparency_role" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ if eq .role "production" }}{{ i18n "certificate_transparency_role_production" }}{{ end }}{{ if eq .role "test" }}{{ i18n "certificate_transparency_role_test" }}{{ end }}<br>
-  {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .uri }}<br>
-  {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
-</p>
+{{ $inner := .Inner }}
+{{ $data := .Get "data" }}
+{{ range $.Site.Data.transparency.categories }}
+    {{ $category := . }}
+    {{ if (eq $category $data "$category") }}
+        {{ if eq $data "production" }}
+            <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
+        {{ else }}
+            <h3>{{ i18n "certificate_transparency_role_testing"}}</h3>
+        {{ end }}
+        <ul>
+        {{ $inner }}
+        <ul>
+        {{ range $.Site.Data.transparency.transparencyLogs }}
+            {{ if and .role (eq $category .role) }}
+            <li>
+            <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .log | humanize }} {{ .shard }}</strong><br>
+            {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: https://{{ .log }}.ct.letsencrypt.org/{{ .shard }}<br>
+            {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
+            </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+    </ul>
+    {{ end }}
 {{ end }}

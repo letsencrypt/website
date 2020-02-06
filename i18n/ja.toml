@@ -122,13 +122,10 @@ other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
 [certificate_transparency_name]
 other = "名称"
 
-[certificate_transparency_role]
-other = "役割"
-
 [certificate_transparency_role_production]
 other = "プロダクション用"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "テスト用"
 
 [certificate_transparency_uri]
