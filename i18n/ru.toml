@@ -122,9 +122,6 @@ other = "Доля страниц, в %, загруженных по HTTPS (ск�
 [certificate_transparency_name]
 other = "Название"
 
-[certificate_transparency_role]
-other = "Назначение"
-
 [certificate_transparency_role_production]
 other = "Официальное использование"
 
