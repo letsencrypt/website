@@ -122,13 +122,10 @@ other = "Tỷ lệ trạng được tải qua HTTPS (trung bình trong 14 ngày)
 [certificate_transparency_name]
 other = "Tên"
 
-[certificate_transparency_role]
-other = "Vai trò"
-
 [certificate_transparency_role_production]
 other = "Sản xuất"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "Thử nghiệm"
 
 [certificate_transparency_uri]
