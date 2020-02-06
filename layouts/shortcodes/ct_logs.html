@@ -8,7 +8,8 @@
         {{ else }}
             <h3>{{ i18n "certificate_transparency_role_test"}}</h3>
         {{ end }}
-        {{ $inner | markdownify }}
+        <ul>
+        {{ $inner }}
         <ul>
         {{ range $.Site.Data.transparency.transparencyLogs }}
             {{ if and .role (eq $category .role) }}
