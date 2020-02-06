@@ -125,7 +125,7 @@ other = "Название"
 [certificate_transparency_role_production]
 other = "Официальное использование"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "Тестирование"
 
 [certificate_transparency_uri]
