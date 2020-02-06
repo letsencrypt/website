@@ -44,8 +44,8 @@ HTTPS.
 
 Vi behöver stöd från generösa sponsorer, anslagsgivare och individer för att
 kunna erbjuda våra tjänster kostnadsfritt i hela världen. Om du är intresserad
-av att stödja oss så överväg att {{<link "donera" "/donate.html" >}} eller
-{{<link "bli en sponsor" "/become-a-sponsor.html" >}}.
+av att stödja oss så överväg att {{<link "donera" "/donate" >}} eller
+{{<link "bli en sponsor" "/become-a-sponsor" >}}.
 
 I vissa fall kommer mellanhänder såsom webbhotell debitera en symbolisk summa
 för att täcka sina administrations- och hanteringskostnader som de ådrar sig

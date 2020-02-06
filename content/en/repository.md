@@ -104,4 +104,4 @@ do_not_translate: 1
 
 # Certificate Problem Reports
 
-To report private key compromise, certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to certificates, please email <a href="mailto:cert-prob-reports@letsencrypt.org">cert-prob-reports@letsencrypt.org</a>.
+To report private key compromise, certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to certificates, please email [cert-prob-reports@letsencrypt.org](mailto:cert-prob-reports@letsencrypt.org).

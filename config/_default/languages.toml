@@ -15,6 +15,10 @@ description = """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 # A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
 paypalCountry = "US"
+# Number format : <negative>|<decimal>|<grouping>
+# Ex. for -1 2345.67 -> "-|.| "
+# Doc: https://gohugo.io/functions/numfmt/
+numberFormat = "-|.|,"
 
 [de]
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
@@ -29,6 +33,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "DE"
+numberFormat = "-|.|,"
 
 [es]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -42,6 +47,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "ES"
+numberFormat = "-|.|,"
 
 [fr]
 title = "Let's Encrypt - Certificats SSL/TLS gratuits"
@@ -56,6 +62,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "FR"
+numberFormat = "-|,| "
 
 [id]
 title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
@@ -70,6 +77,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|,"
 
 [ja]
 title = "Let's Encrypt - フリーな SSL/TLS 証明書"
@@ -84,6 +92,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|,"
 
 [ko]
 title = "Let's Encrypt - 무료 SSL/TLS 인증서"
@@ -97,6 +106,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|,"
 
 [pt-br]
 title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
@@ -111,6 +121,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "BR"
+numberFormat = "-|.|,"
 
 [ru]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
@@ -125,6 +136,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|,"
 
 [sr]
 title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
@@ -139,6 +151,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "SP"
+numberFormat = "-|.|,"
 
 [sv]
 title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
@@ -153,6 +166,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "SE"
+numberFormat = "-|.| "
 
 [zh-cn]
 title = "Let's Encrypt - 免费的SSL/TLS证书"
@@ -167,6 +181,7 @@ description = """
 """
 paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|"
 
 [zh-tw]
 title = "Let's Encrypt - 免費的 SSL/TLS 憑證"
@@ -180,3 +195,4 @@ description = """
   """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
+numberFormat = "-|.|,"

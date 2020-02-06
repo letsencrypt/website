@@ -61,13 +61,16 @@ other = "所有文档"
 other = "Let's Encrypt 博客订阅源"
 
 [platinum]
-other = "铂金赞助商"
+other = "铂金"
 
 [gold]
-other = "金牌赞助商"
+other = "金"
+
+[gold_basic]
+other = "金（基础）"
 
 [silver]
-other = "银牌赞助商"
+other = "银"
 
 [languages]
 other = "切换语言"
@@ -166,3 +169,18 @@ other = "使用PayPal捐款"
 
 [not_found]
 other = "该页面不存在，请检查地址。"
+
+[amount_per_year]
+other = "每年 ${{ .nb }} （美元）"
+
+[3y_commitment]
+other = "（三年承诺捐助）"
+
+[1_99_employees]
+other = "（员工人数小于 100 人）"
+
+[100_999_employees]
+other = "（员工人数在 100 到 999 之间）"
+
+[1000_employees]
+other = "（员工人数大于 1000 人）"

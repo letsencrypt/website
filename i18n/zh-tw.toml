@@ -94,3 +94,19 @@ other = "客戶端開發資訊"
 
 [acme_divergences]
 other = "當前ACME草案變化"
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "每年 ${{ .nb }} (USD)"
+
+[3y_commitment]
+other = "（三年承諾捐助）"
+
+[1_99_employees]
+other = "（1-99 位員工）"
+
+[100_999_employees]
+other = "（100-1000 位員工）"
+
+[1000_employees]
+other = "（大於 1000 位員工）"

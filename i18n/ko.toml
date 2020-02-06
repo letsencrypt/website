@@ -145,3 +145,18 @@ other = "현재 ACME 초안과 다른점"
 
 [paypal_donate_alt]
 other = "Donate with PayPal button"
+
+[amount_per_year]
+other = "${{ .nb }}/년 (미화)"
+
+[3y_commitment]
+other = "3년 약정"
+
+[1_99_employees]
+other = "1-99명 사업장"
+
+[100_999_employees]
+other = "100-999명 사업장"
+
+[1000_employees]
+other = "1000명 이상 사업장"

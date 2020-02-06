@@ -32,7 +32,7 @@ Para começar a usar a Let's Encrypt, por favor visite nossa página {{<link "Co
 
 Não cobramos taxas por nossos certificados. A Let's Encrypt é uma organização sem fins lucrativos, nossa missão é criar uma web mais segura e que respeita a privacidade do usuário promovendo a adoção em larga escala do HTTPS. Nossos serviços são gratuitos e fáceis de se usar de maneira que qualquer site pode adotar o HTTPS.
 
-Nós dependemos do suporte de generosos patrocinadores, doadores e indivíduos para manter nossos serviços gratuitos ao redor do mundo. Se você está interessado em nos ajudar por favor considere {{<link "fazer uma doação" "/donate.html" >}} ou {{<link "se tornar um patrocinador" "/become-a-sponsor.html" >}}.
+Nós dependemos do suporte de generosos patrocinadores, doadores e indivíduos para manter nossos serviços gratuitos ao redor do mundo. Se você está interessado em nos ajudar por favor considere {{<link "fazer uma doação" "/donate" >}} ou {{<link "se tornar um patrocinador" "/become-a-sponsor" >}}.
 
 Em alguns casos, integradores (como serviços de hospedagem) podem cobrar uma taxa que reflete os custos administrativos internos que eles têm ao oferecer suporte a certificados da Let's Encrypt.
 
