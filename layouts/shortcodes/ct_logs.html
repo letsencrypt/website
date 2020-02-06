@@ -3,10 +3,12 @@
 {{ range $.Site.Data.transparency.categories }}
     {{ $category := . }}
     {{ if (eq $category $data "$category") }}
-    {{ $i18nVar := (printf "%s%s" "certificate_transparency_role_" $data) }}
-        <h3>{{ i18n $i18nVar }}</h3>
+        {{ if eq $data "production" }}
+            <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
+        {{ else }}
+            <h3>{{ i18n "certificate_transparency_role_test"}}</h3>
+        {{ end }}
         {{ $inner | markdownify }}
-
         <ul>
         {{ range $.Site.Data.transparency.transparencyLogs }}
             {{ if and .role (eq $category .role) }}
