@@ -31,5 +31,18 @@ aliases:
 
 <h2>CT Logs</h2>
 
-{{< ct_logs >}}
+{{< ct_logs data="production" >}}
+<ul>
+    <li>Oak is incorporated into the <a href="https://support.apple.com/en-us/HT209255">Apple</a> and <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">Google</a> CT programs.</li>
+    <li>Our production ACME API environment submits certificates here.</li>
+{{< /ct_logs >}}
+
+{{< ct_logs data="testing" >}}
+<ul>
+    <li>SCTs from these logs <b>SHOULD NOT</b> be incorporated into publicly trusted certificates.</li>
+    <li>Both the production and <a href="{{< relref "/docs/staging-environment.md" >}}">staging</a> ACME API environments submit certificates to Testflume.</li>
+    <li>We test new versions of <a href="http://github.com/google/trillian">Trillian</a> and <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> here before deploying them to production.</li>
+    <li>Testflume's accepted roots list includes all of the Oak accepted roots.</li>
+    <li>Can be used by other certificate authorities for testing purposes.</li>
+{{< /ct_logs >}}
 
