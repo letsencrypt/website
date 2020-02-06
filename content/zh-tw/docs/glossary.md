@@ -102,7 +102,7 @@ Note for translators:
 
 {{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 國際化域名。含有不屬於 `a` 到 `z`和 `0` 到 `9` 以及連字號 `-` 的網域名稱。這些網域名稱可能含有阿拉伯文、中文、西里爾文、泰米爾文、希伯來文，或其他拉丁字母的變音符號或合體字。編碼後的 IDN 域名會以 `xn--` 為開頭。[Let's Encrypt](#def-LE) 支援頒發 IDN 域名的憑證：https://letsencrypt.org/2016/10/21/introducing-idn-support.html 。[維基百科](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
-{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} 在 [Let's Encrypt](#def-LE) 的上級組織：https://www.abetterinternet.org/about/。 [維基百科](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
+{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} 在 [Let's Encrypt](#def-LE) 的上級組織：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。 [維基百科](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
 {{% def id="issuer" name="Certificate issuer" %}} 憑證頒發者。憑證中的頒發者欄位。例如：Let's Encrypt 終端憑證的頒發者欄位可能是：C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3"。它同常包含[通用名稱](#def-CN)、國家和組織。憑證的頒發者，必須對應到另一張憑證的[主體](#def-subject)。對於像[根憑證](#def-root)的[自簽憑證](#def-self-signed)，頒發者和主體兩者會相同。頒發者這個詞可能也用來，表示一張頒發了其他憑證的憑證（例如：[中間憑證](#def-intermediate) 或根憑證），或表示頒發了憑證的組織。{{% /def %}}
 

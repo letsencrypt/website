@@ -101,7 +101,7 @@ Note for translators:
 
 {{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 도메인 이름에는 `a`~`z`, `0`~`9` 및 하이픈(`-`)이 아닌 다른 문자가 있습니다. 예를 들어, 그들은 아랍어, 중국어, 키릴어, 타밀어, 히브리어 또는 라틴어 문자 기반의 문자 (발음 구별 부호 또는 활자)를 포함할 수 있습니다. IDN 도메인의 인코딩된 표현은 `xn--`로 시작합니다. IDN은 [Let's Encrypt](#def-LE)에서 지원됩니다: https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [위키피디아](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
-{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} [Let's Encrypt](#def-LE) 뒤에 있는 조직입니다: https://www.abetterinternet.org/about/. [위키피디아](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
+{{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} [Let's Encrypt](#def-LE) 뒤에 있는 조직입니다: [https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/). [위키피디아](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
 {{% def id="issuer" name="Certificate issuer" %}} 인증서의 "Issuer" 필드는 인증서에 서명한 인증서를 설명합니다. 예를 들어, Let's Encrypt 엔티티 인증서의 Issuer 필드는 "Issuer: C = US, O = Let's Encryption, CN = Let's Encrypt Authority X3"일 수 있습니다. 일반적으로 [공통 이름](#def-CN), Country 및 Organization과 같은 필드를 포함합니다. Issuer 필드는 항상 일부 인증서의 [제목](#def-subject) 필드와 일치합니다. [root](#def-root)와 같은 [자체 서명된](#def-self-signed) 인증서의 경우 발급자는 제목과 동일합니다. "Issuer"라는 용어는 다른 인증서를 발급하는 인증서 ([중간 인증서](#def-intermediate) 또는 root) 또는 인증서를 발급하는 조직을 나타내는 데 사용할 수도 있습니다. {{% /def %}}
 
