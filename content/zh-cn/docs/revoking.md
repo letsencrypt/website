@@ -36,7 +36,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 # 使用其他授权帐户吊销证书
 
-如果有人入侵了您的主机或 DNS 后颁发了证书，那么您一旦重新获得控制权，就会想要吊销该证书。要吊销证书，Let's Encrypt 将需要确保您控制该证书中的域名（否则人们可以在未经许可的情况下吊销彼此的证书）！为了验证您对该域名的控制权，您需要使用和您申请 Let's Encrypt 证书时相同的流程：您可以在[添加一条 DNS TXT 记录](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5)、在[HTTP 服务器上放置指定文件](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)或提供[特殊 TLS 证书](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4)。通常情况下，ACME 客户端将为您处理这些工作。然而，大多数 ACME 客户端将验证控制权和颁发证书这两个操作捆绑在一起，因此若要验证控制权您必须尝试颁发新证书。若您不需要颁发的新证书，您可以将其吊销或删除证书私钥。若您完全不想颁发一张新的证书，您可以尝试在请求中添加一个不存在的域名，这将导致证书颁发失败，但是仍旧能够证明您对需要吊销的域名的控制权。要这样做，请运行：
+如果有人入侵了您的主机或 DNS 后颁发了证书，那么您一旦重新获得控制权，就会想要吊销该证书。要吊销证书，Let's Encrypt 将需要确保您控制该证书中的域名（否则人们可以在未经许可的情况下吊销彼此的证书）！为了验证您对该域名的控制权，您需要使用和您申请 Let's Encrypt 证书时相同的流程：您可以在[添加一条 DNS TXT 记录](https://tools.ietf.org/html/rfc8555#section-8.4)、在[HTTP 服务器上放置指定文件](https://tools.ietf.org/html/rfc8555#section-8.3)或提供[特殊 TLS 证书](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3)。通常情况下，ACME 客户端将为您处理这些工作。然而，大多数 ACME 客户端将验证控制权和颁发证书这两个操作捆绑在一起，因此若要验证控制权您必须尝试颁发新证书。若您不需要颁发的新证书，您可以将其吊销或删除证书私钥。若您完全不想颁发一张新的证书，您可以尝试在请求中添加一个不存在的域名，这将导致证书颁发失败，但是仍旧能够证明您对需要吊销的域名的控制权。要这样做，请运行：
 
 ```
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}

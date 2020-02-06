@@ -11,7 +11,7 @@ Da biste omogućili HTTPS na svojoj web lokaciji, morate dobiti sertifikat (vrst
 od sertifikacionog tela (CA). Let's Encrypt je sertifikaciono telo (CA). Da biste dobili
 sertifikat za domen vaše web lokacije od Let's Encrypt, morate prethodno dokazati
 kontrolu nad tim istim domenom. Sa Let's Encrypt-om, to dokazujete pomoću softvera koji koristi
-[ACME protokol](https://ietf-wg-acme.github.io/acme/), koji se obično pokreće
+[ACME protokol](https://tools.ietf.org/html/rfc8555), koji se obično pokreće
 na vašem web serveru.
 
 Da biste saznali koja je metoda najbolja za vas, morate znati da li

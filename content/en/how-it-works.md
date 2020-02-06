@@ -8,7 +8,7 @@ lastmod: 2019-10-18
 
 {{< lastmod >}}
 
-The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://ietf-wg-acme.github.io/acme/) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
+The objective of Let's&nbsp;Encrypt and the [ACME protocol](https://tools.ietf.org/html/rfc8555) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention.  This is accomplished by running a certificate management agent on the web server.
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with a certificate management agent that supports Let's&nbsp;Encrypt.
 
