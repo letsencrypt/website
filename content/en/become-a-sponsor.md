@@ -17,6 +17,7 @@ This is big, and we want you to be a part of it. Help us lead the way to a secur
 
 ## Corporate Sponsorship
 
+<!-- Note for translators: words in quotes need to be translated -->
 {{< become-a-sponsor
   platinum="Platinum"
   gold="Gold"
