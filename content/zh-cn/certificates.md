@@ -3,7 +3,7 @@ title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
 top_graphic: 5
-lastmod: 2019-10-18
+lastmod: 2020-02-07
 ---
 
 {{< lastmod >}}
@@ -26,9 +26,9 @@ lastmod: 2019-10-18
 
 # 中间证书
 
-IdenTrust 交叉签名了我们的中间证书。这允许我们在将我们自己的根证书添加到浏览器中的过程中，确保我们的终端实体证书被所有主流浏览器信任。
+在正常情况下，Let's Encrypt 颁发的证书将来自“Let's Encrypt Authority X3”。另一个中间证书“Let's Encrypt Authority X4”将被用于灾难恢复，只有在我们无法“Let's Encrypt Authority X3”签发证书时才会被使用。我们已经不再使用X1 和 X2 中间证书。
 
-在正常情况下，Let's Encrypt 颁发的证书将来自“Let's Encrypt Authority X3”。另一个中间证书“Let's Encrypt Authority X4”将被用于灾难恢复，只有在我们无法“Let's Encrypt Authority X3”签发证书时才会被使用。X1 和 X2 是我们的第一代中间证书，已经被能更好兼容 Windows XP 的新中间证书（X3/X4）替换。
+IdenTrust已对我们的中间证书进行了交叉签名，以提高兼容性。
 
 
 * 活跃证书
@@ -47,9 +47,9 @@ IdenTrust 交叉签名了我们的中间证书。这允许我们在将我们自�
 
 我们的中间证书“Let's Encrypt Authority X3”代表了一对公钥/私钥组合。其中的私钥负责为所有终端实体证书（也称为叶证书）——即我们颁发给您用于服务器使用的证书——签名。
 
-我们的中间证书由 ISRG Root X1 签名。由于我们还是相当新的证书颁发机构，ISRG Root X1 在大多数浏览器中尚未受到信任。为了能够马上被浏览器信任，我们中间证书同时也由 IdenTrust ——一个根证书已经受到全部主流浏览器信任的证书颁发机构——交叉签名。具体来说，IdenTrust 使用他们的“DST Root CA X3”（现在称为“TrustID X3 Root”）交叉签名了我们的中间证书。你可以[从 identrust.com 下载“TrustID X3 Root”证书](https://www.identrust.com/support/downloads)（或者，您也可以在此处下载我们的副本：[.pem](/certs/trustid-x3-root.pem.txt)，[.p7b](/certs/trustid-x3-root.p7b)）。
+我们的中间证书由 ISRG Root X1 签名。目前，ISRG的根证书已广受信任，但是我们的中间证书仍由IdenTrust的"DST Root CA X3"（现在称为"TrustID X3 Root"）进行交叉签名，以增强客户端兼容性。IdenTrust根证书存在的时间更长，因此与较旧的设备和操作系统（例如Windows XP）具有更好的兼容性。你可以[从 identrust.com 下载"TrustID X3 Root"证书](https://www.identrust.com/support/downloads)（或者，您也可以在此处下载我们的副本：[.pem](/certs/trustid-x3-root.pem.txt)，[.p7b](/certs/trustid-x3-root.p7b)）。
 
-这意味着现在有两张证书都可以代表我们的中间证书。一张由 DST Root CA X3 签发，另外一张由 ISRG Root X1 签发。区分这两张证书的最简单方法是查看其签发人（Issuer）字段。
+对中间证书进行交叉签名意味着现在有两张证书都可以代表我们的中间证书。一张由 DST Root CA X3 签发，另外一张由 ISRG Root X1 签发。区分这两张证书的最简单方法是查看其签发人（Issuer）字段。
 
 在配置 Web 服务器时，服务器管理员不仅需要配置终端实体证书，也需要配置中间证书以帮助浏览器通过信任链验证终端实体证书由被浏览器信任的根证书签发。几乎所有的服务器管理员都会选择使用由“DST Root CA X3”签发的“Let’s Encrypt Authority X3”证书组成证书信任链。我们推荐的证书颁发软件 [Certbot](https://certbot.org) 将无缝化地配置这一证书信任链。
 
