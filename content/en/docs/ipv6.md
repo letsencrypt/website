@@ -44,7 +44,7 @@ The IPv6 to IPv4 retry does **not** occur if there is an non-network level error
 For example in the "Common Pitfalls" scenario above a retry may not occur if
 there is a webserver listening on the IPv6 address but it is not the webserver
 the ACME client configured to respond to the challenge. In this case there would
-be no network level error accesing the IPv6 address and the challenge will fail
+be no network level error accessing the IPv6 address and the challenge will fail
 without a retry because the incorrect response was returned.
 
 Due to a limitation in our CA software we will also not perform an IPv6 to IPv4
