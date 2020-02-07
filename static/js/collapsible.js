@@ -10,8 +10,7 @@ for (i = 0; i < coll.length; i++) {
   coll[i].style.display = "none";
 }
 
-var coll = document.getElementsByClassName("collapsible-button");
-var i;
+coll = document.getElementsByClassName("collapsible-button");
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("collapsible-active");
@@ -19,7 +18,7 @@ for (i = 0; i < coll.length; i++) {
     // Find the collapsible content associated with this.
     // Do this by finding the element that has the same ID
     // but with "-content" appended.
-    content = document.getElementById(this.id + "-content")
+    var content = document.getElementById(this.id + "-content");
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
