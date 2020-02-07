@@ -10,7 +10,7 @@ lastmod: 2020-02-07
 
 Let's Encrypt supports IPv6 both for accessing the ACME API using an ACME
 client, and for the DNS lookups and HTTP requests we make when validating your
-control of domains names
+control of domain names.
 
 ## Domain Validation
 
