@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-02",
+	"lastmod": "2020-02-07",
 	"categories": [
 		"Bash",
 		"C",
@@ -510,10 +510,13 @@
 		},
 		{
 			"name": "win-acme",
-			"url": "https://pkisharp.github.io/win-acme",
+			"url": "https://www.win-acme.com",
 			"category": "Windows / IIS",
 			"acme_v2": "true",
-			"comments": "(.NET)"
+			"comments": "(.NET)",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Certify The Web",
