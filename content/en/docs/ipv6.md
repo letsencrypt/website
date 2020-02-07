@@ -9,8 +9,8 @@ lastmod: 2020-02-07
 {{< lastmod >}}
 
 Let's Encrypt supports IPv6 both for accessing the ACME API using an ACME
-client, and for outbound domain validation requests made by our validation
-authority.
+client, and for the DNS lookups and HTTP requests we make when validating your
+control of domains names
 
 ## Domain Validation
 
@@ -39,23 +39,27 @@ Encrypt prefer IPv4, you must fix the misconfiguration.
 
 ## IPv6 to IPv4 Retry Details
 
-The IPv6 to IPv4 retry does **not** occur if there is an non-network level error.
+The IPv6 to IPv4 retry only occurs on connection timeouts, not on other types of
+error.
 
-For example in the "Common Pitfalls" scenario above a retry may not occur if
-there is a webserver listening on the IPv6 address but it is not the webserver
-the ACME client configured to respond to the challenge. In this case there would
-be no network level error accessing the IPv6 address and the challenge will fail
-without a retry because the incorrect response was returned.
+For example in the "Common Pitfalls" scenario above a retry will not occur if
+there is a webserver listening on the IPv6 address, but that webserver is not
+ready to answer the ACME challenge. In this case there would be no connection
+timeout accessing the IPv6 address and the challenge will fail without a retry
+because the incorrect response was returned.
 
-Due to a limitation in our CA software we will also not perform an IPv6 to IPv4
-retry during processing of HTTP redirects. For example if a domain name has an
-`AAAA` record that always times out and an `A` record with a webserver that
-redirects from HTTP to HTTPS then the IPv6 to IPv4 fallback will not operate
-correctly. The first request to the domain will properly fallback to IPv4,
-receiving a redirect from HTTP to HTTPS. The subsequent request will again
-prefer the IPv6 address but will timeout without falling back to IPv4. You can
-resolve this situation either by fixing the IPv6 misconfiguration or removing
-the HTTP to HTTPS redirect for requests to the ACME HTTP-01 challenge path.
+To keep our CA software simple we only perform an IPv6 to IPv4 retry on the
+first request when validating "http-01" challenges. If you use redirects, the
+redirects will not get retry treatment.
+
+For example if a domain name has an `AAAA` record that always times out and an
+`A` record with a webserver that redirects from HTTP to HTTPS then the IPv6 to
+IPv4 fallback will not operate correctly. The first request to the domain will
+properly fallback to IPv4, receiving a redirect from HTTP to HTTPS. The
+subsequent request will again prefer the IPv6 address but will timeout without
+falling back to IPv4. You can resolve this situation either by fixing the IPv6
+misconfiguration or removing the HTTP to HTTPS redirect for requests to the ACME
+HTTP-01 challenge path.
 
 ## Getting Help
 
