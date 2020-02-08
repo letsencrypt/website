@@ -31,7 +31,7 @@ Python の [acme](https://github.com/certbot/certbot/tree/master/acme) モジュ
 
 プルリクエストを送る前に、以下の点を確認してください。
 
-1. クライアントは [Let's Encrypt trademark policy]({{< ref "/trademarks" >}}) を遵守しているか。
+1. クライアントは {{<link "Let's Encrypt trademark policy" "/trademarks" >}} を遵守しているか。
 1. クライアントは、ブラウザベースのものではなく、自動更新に対応しているか。
 1. あなたのコミットは、関連するセクションの**一番最後**に追加するものであるか (もし対応する場合は、「acme_v2」セクションの記入を忘れないでください！)。
 1. あなたのコミットは、`clients.json` のヘッダの `lastmod` の日付を更新しているか。

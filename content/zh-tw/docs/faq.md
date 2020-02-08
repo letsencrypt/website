@@ -26,12 +26,12 @@ Let's Encrypt 是一家全球性的憑證頒發機構 (Certificate Authority, CA
 
 Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提供組織驗證型憑證 (Organization Validation, OV) 或擴展驗證型憑證 (Extended Validation, EV)，主要原因是因為我們無法自動化地頒發那種類型的憑證。 
 
-如果你想開始使用 Let's Encrypt，請閱讀我們的[快速入門]({{< ref "/getting-started.md" >}})頁面。
+如果你想開始使用 Let's Encrypt，請閱讀我們的{{<link "快速入門" "/getting-started" >}}頁面。
 
 ## 使用 Let's Encrypt 的服務需要多少費用？真的免費嗎？
 我們不會在憑證上收取任何費用。Let’s Encrypt 是一家非營利的機構，我們的任務是透過推廣使用 HTTPS 來創造一個更加安全；更尊重隱私的網際網路。我們的服務免費且操作簡單，因此每個網站都可以藉由它部屬 HTTPS 網站。
 
-為了提供全世界免費的服務，我們需要慷慨的贊助商以及個人的幫助。如果你對於贊助我們有興趣，請參考[贊助]({{< ref "/donate.html" >}})頁面或[成為贊助者]({{< ref "/become-a-sponsor" >}})頁面。
+為了提供全世界免費的服務，我們需要慷慨的贊助商以及個人的幫助。如果你對於贊助我們有興趣，請參考{{<link "贊助" "/donate" >}}頁面或{{<link "成為贊助者" "/become-a-sponsor" >}}頁面。
 
 在某些情況下，服務整合者（例如：服務業者或主機託管業者）會收取一些費用，這筆費用屬於他們提供 Let’s Encrypt 證書所需要的管理和維護成本。
 
@@ -39,7 +39,7 @@ Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提
 
 Let’s Encrypt 是一個小型團隊，並且透過自動化降低營運成本。這表示我們無法對使用者提供直接協助。不過我們一些很棒的支援：
 
-1. 我們有個非常實用的[文檔]({{< ref "/docs" >}})
+1. 我們有個非常實用的{{<link "文檔" "/docs" >}}
 2. 我們有個非常活耀並樂於提供協助的[社群論壇](https://community.letsencrypt.org/)。我們的社群成員都非常會回答問題，並且許多常見問題都已經得到了解答。
 
 我們很喜歡這部[影片](https://www.youtube.com/watch?v=Xe1TZaElTAs)，在談論一個好的社群所具有的力量時所具有的觀點。
@@ -58,7 +58,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Let’s Encrypt 所頒發的證書是否被瀏覽器所信任？
 
-是的，對於大部分的瀏覽器和作業系統而言。請參考[相容性列表]({{< ref "/docs/cert-compat.md" >}})取得更多細節。
+是的，對於大部分的瀏覽器和作業系統而言。請參考{{<link "相容性列表" "/docs/cert-compat" >}}取得更多細節。
 
 ## Let's Encrypt 所頒發的憑證除了用於網頁外，還能用於其他採用 SSL/TLS 協定的服務嗎？
 
@@ -92,7 +92,7 @@ Let’s Encrypt 憑證是一個標準的域名驗證型憑證，因此你可以�
 
 ## Let's Encrypt (ACME) 客戶端支援我的作業系統嗎？
 
-有非常大量的[ACME 客戶端]({{< ref "/docs/client-options.md" >}})可以使用。然而某些客戶端有可能只能在特定作業系統上運行，我們建議你參考[Certbot](https://certbot.eff.org/)
+有非常大量的{{<link "ACME 客戶端" "/docs/client-options" >}}可以使用。然而某些客戶端有可能只能在特定作業系統上運行，我們建議你參考[Certbot](https://certbot.eff.org/)
 
 
 ## 我可以使用現有的私鑰或證書簽發請求 (Certificate Signing Request, CSR) 嗎？

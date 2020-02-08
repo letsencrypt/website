@@ -27,7 +27,7 @@ menu:
 
 기업 스폰서가 되시길 희망하면[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)로 메일 주세요.
 
-상기 스폰서십이 당신의 조직에 적절하지 않다면 어떠한 금액이라도 [기부하는 것]({{< relref "/donate.html" >}})을 고려해 주십시오.
+상기 스폰서십이 당신의 조직에 적절하지 않다면 어떠한 금액이라도 {{<link "기부하는 것" "/donate" >}}을 고려해 주십시오.
 
 ## 기관
 

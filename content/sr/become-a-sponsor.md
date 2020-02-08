@@ -27,7 +27,7 @@ Ovo je velika stvar i mi želimo da sa nama budete deo toga. Pomozite nam da skr
 
 Ukoliko želite da postanete korporativni sponzor, molimo Vas javite nam se na [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Ukoliko sponzorstvo trenutno nije opcija, molimo Vas da razmotrite opciju [doniranja]({{< relref "/donate.html">}}) bilo koje sume u skladu sa Vašim mogućnostima.
+Ukoliko sponzorstvo trenutno nije opcija, molimo Vas da razmotrite opciju {{<link "doniranja" "/donate" >}} bilo koje sume u skladu sa Vašim mogućnostima.
 
 ## Naša organizacija
 

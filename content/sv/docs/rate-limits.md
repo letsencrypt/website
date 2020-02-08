@@ -61,8 +61,7 @@ utnyttjats.
 
 Det finns en <a name="failed-validations"></a>**antal misslyckade
 valideringar**-gräns på 5 misslyckaden per konto per domännamn per timme. Denna
-gräns är högre i vår [testmiljö]({{< relref "/docs/staging-environment.md"
->}}), så du kan använda den miljön för att avlusa anslutningsproblem.
+gräns är högre i vår {{<link "testmiljö" "/docs/staging-environment" >}}, så du kan använda den miljön för att avlusa anslutningsproblem.
 
 Ändpunkterna "new-reg", "new-authz" och "new-cert" har en <a
 name="overall-requests"></a>**anropsgräns** på 20 per sekund. Ändpunkterna
@@ -75,15 +74,12 @@ Du kan skapa maximalt 10 <a name="accounts-per-ip-address"></a>**konton per
 IP-adress** under 3 timmar. Du kan skapa maximalt 500 **konton per IP-nätverk**
 inom ett IPv6 /48-nät under 3 timmar. Att uppnå någon av dessa gränser är
 väldigt sällsynt och vi rekommenderar att stora integratörer nyttjar en design
-som [använder ett konto till flera kunder]({{< relref
-"/docs/integration-guide.md"
->}}).
+som {{<link "använder ett konto till flera kunder" "/docs/integration-guide" >}}.
 
 Du kan maximalt ha 300 <a name="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient
-skapar auktorisationer utan att fullborda dem. Använd vår [testmiljö]({{<
-relref "/docs/staging-environment" >}}) om du utvecklar en ACME-klient.
+skapar auktorisationer utan att fullborda dem. Använd vår {{<link "testmiljö" "/docs/staging-environment" >}} om du utvecklar en ACME-klient.
 
 Användare av API:t ACMEv2 kan skapa maximalt 300 <a name="new-orders"></a>**nya
 beställningar** per konto per 3 timmar.

@@ -26,7 +26,7 @@ Detta är stort, och vi vill att du blir en del av detta. Hjälp oss visa vägen
 
 Om du vill bli en företagssponsor vänligen skicka e-post till [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Om sponsring inte är ett alternativ för din organisation så överväg gärna att [donera]({{< relref "/donate.html" >}}) valfritt belopp.
+Om sponsring inte är ett alternativ för din organisation så överväg gärna att {{<link "donera" "/donate" >}} valfritt belopp.
 
 ## Vår organisation
 

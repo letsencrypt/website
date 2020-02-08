@@ -31,8 +31,7 @@ Let's Encrypt erbjuder domänvalideringscertifikat (DV). Vi erbjuder inte
 organisationsvalidering (OV) eller utökad validering (EV) främst eftersom vi
 inte kan automatisera utfärdande av dessa typer av certifikat.
 
-För att komma igång, besök vår [kom igång-sida]({{< relref "/getting-started.md"
->}}).
+För att komma igång, besök vår {{<link "kom igång-sida" "/getting-started" >}}.
 
 ## Vad kostar det att använda Let's Encrypt? Är det verkligen gratis?
 
