@@ -11,7 +11,6 @@ When the website is built, a page with this parameter will:
 - Links pointing to English pages that can be translated will be rewritten to points to the translation instead
 - The top of the page will have a message to encourage new translators
 
-
 ## `do_not_translate: 1`
 
 A page with this attribute will still have one version per language.
@@ -23,6 +22,10 @@ That attribute has two functions:
 ## `english_is_canonical: 1`
 
 A translation with this attribute will display a warning on the top to indicate that the English version is canonical.
+
+## `do_not_index: 1`
+
+When a page should not appears in search engines.
 
 ## `date` and `lastmod`
 
