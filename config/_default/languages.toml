@@ -1,7 +1,9 @@
 [en]
 title = "Let's Encrypt - Free SSL/TLS Certificates"
 contentDir = "content/en"
+#The namge of the language, it that language (not in English if it's not English)
 languageName = "English"
+#The language code. Usually two lower-case letters. It that language is spoken in more than one country, the country-code can be added, uppercase. To check it: https://r12a.github.io/app-subtags/?check=pt-BR
 languageCode = "en-US"
 #if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
 beforeColon = ""
