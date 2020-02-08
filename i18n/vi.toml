@@ -1,0 +1,167 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Một tổ chức cấp chứng nhận phi lợi nhuận cung cấp chứng nhận TLS cho <span>180 triệu</span> websites."
+
+[home_hero_getting_started]
+other = "Bắt Đầu"
+
+[home_hero_donate]
+other = "Đóng Góp"
+
+[home_hero_sponsor]
+other = "Nhà Tài Trợ"
+
+[home_hero_annual_report]
+other = "Đọc Báo Cáo Thường Niên năm 2019 của Chúng Tôi"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
+
+[home_major_sponsors]
+other = "Major Sponsors and Donors"
+
+[home_from_our_blog]
+other = "Từ blog của chúng tôi"
+
+[read_more]
+other = "Đọc thêm"
+
+[subscribe_rss]
+other = "Đăng ký <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Hỗ trợ một trang web an toàn và bảo mật hơn."
+
+[footer_donate]
+other = "Đóng Góp"
+
+[footer_policies]
+other = """
+Xem <a href="/vi/privacy/">chính sách bảo mật</a> của chúng tôi.<br>
+Xem <a href="/vi/trademarks/">chính sách nhãn hiệu</a> của chúng tôi.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation là nhãn hiệu đã đăng ký của The Linux Foundation. Linux là nhãn hiệu đã đăng ký của Linus Torvalds."
+
+[header_skip_nav]
+other = "Bỏ qua liên kết điều hướng"
+
+[last_updated]
+other = "Cập nhật lần cuối: "
+
+[see_all_doc]
+other = "Xem tất cả Tài liệu"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[platinum]
+other = "Bạch Kim"
+
+[gold]
+other = "Vàng"
+
+[silver]
+other = "Bạc"
+
+[languages]
+other = "Ngôn Ngữ"
+
+[view_in_english]
+other = "Xem bằng tiếng Anh"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/partials/langs.html)
+other = "Xem bằng tiếng Việt"
+
+[old_version]
+other = "Lưu ý: Phiên bản tiếng Anh đã được cập nhật kể từ khi dịch"
+
+[not_yet_translated]
+other = "Trang web này chưa được dịch. Bạn có thể đóng góp <a href=\"https://github.com/letsencrypt/website\">tại đây</a>."
+
+[english_is_canonical]
+other = "Phiên bản tiếng Anh có thẩm quyền"
+
+[graph_issued]
+other = "Đã phát hành"
+
+[graph_certificates_active]
+other = "Chứng chỉ hoạt động"
+
+[graph_fully_qualified_domains_active]
+other = "Tên miền đủ điều kiện hoạt động"
+
+[graph_registered_domains_active]
+other = "Tên miền đã đăng ký hoạt động"
+
+[graph_active_count]
+other = "Số lượng hoạt động"
+
+[graph_issued_per_day]
+other = "Phát hành mỗi ngày"
+
+[graph_all_users]
+other = "Tất cả người dùng"
+
+[graph_usa_users]
+other = "Người dùng Mỹ"
+
+[graph_japan_users]
+other = "Người dùng Nhật Bản"
+
+[graph_percent_https]
+other = "Tỷ lệ trạng được tải qua HTTPS (trung bình trong 14 ngày)"
+
+[certificate_transparency_name]
+other = "Tên"
+
+[certificate_transparency_role_production]
+other = "Sản xuất"
+
+[certificate_transparency_role_testing]
+other = "Thử nghiệm"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Khoá Công Khai"
+
+[overview]
+other = "Tổng Quan"
+
+[subscriber_information]
+other = "Thông Tin Thuê Bao"
+
+[advanced_subscriber_information]
+other = "Thông Tin Thuê Bao Nâng Cao"
+
+[client_developer_information]
+other = "Thông Tin Nhà Phát Triển"
+
+[acme_divergences]
+other = "Sự Khác Biệt so với Dự Thảo ACME Hiện Tại"
+
+[acme_divergences_rfc]
+other = "Sự Khác Biệt so với ACME RFC"
+
+[onboarding_customers]
+other = "Đưa Khách Hàng của bạn đến với Let's Encrypt và ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Đóng góp bằng nút PayPal"
+
+[paypal_donate_title]
+other = "Đóng góp với PayPal"
+
+[not_found]
+other = "Trang không tồn tại, vui lòng kiểm tra lại địa chỉ."
