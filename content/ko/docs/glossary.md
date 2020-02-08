@@ -73,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} 인증서의 내용을 설명하는 인증서 [제목](#def-subject)의 일부입니다. [root 인증서](#def-root) 및 [중간 인증서](#def-intermediate)의 경우 사람이 읽을 수있는 [인증 기관](#def-CA)의 이름입니다. [리프 인증서](#def-leaf)의 경우 인증서의 도메인 이름 중 하나입니다. 참고: 일반적인 이름은 63 자로 제한됩니다. 현재의 인터넷 표준은 소프트웨어가 인증서의 적용 가능성을 결정하기 위해 [제목 대체 이름](#def-SAN) 만 검사 할 것을 기대하기 때문에 인증서가 적용되는 도메인 이름을 나타내는 오래된 방법입니다. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. [{{< relref "/certificates" >}}]({{< relref "/certificates" >}}). [위키피디아](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} 발급 인증서는 둘 이상의 [root 인증서](#def-root)에 의해 서명될 수 있습니다. 예를 들어 [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)는 [IdenTrust](#def-IdenTrust)에 의해 크로스 서명됩니다. 시작 시 Let's Encrypt root는 아직 [인증서 저장소](#def-store)에 의해 신뢰되지 않았기 때문입니다. 기술적으로는 동일한 [제목](#def-subject) 및 동일한 [키 쌍](#def-key-pair)을 사용하여 두 개의 발급 인증서로 이루어지며, 하나는 Let's Encrypt root의 개인 키로 서명됩니다. 다른 하나는 IdenTrust root의 개인 키로 서명됩니다. {{< link "/certificates">}}. [위키피디아](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} DNS를 사용하여 제공된 [인증서](#def-leaf) 또는 암호화 키의 신뢰성을 확인하는 방법을 나타내는 메커니즘입니다. [위키피디아](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -93,7 +93,7 @@ Note for translators:
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} 웹 사이트의 전체 도메인 이름입니다. 예를 들어 `www.example.com`은 *FQDN* 입니다. {{% /def %}}
 
-{{% def id="IdenTrust" name="IdenTrust" %}} [인증 기관](#def-CA)입니다. IdenTrust는 [교차 서명한](#def-cross-signing) [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)를 가지고 있습니다: [{{< relref "/certificates" >}}]({{< relref "/certificates" >}}). [위키피디아](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
+{{% def id="IdenTrust" name="IdenTrust" %}} [인증 기관](#def-CA)입니다. IdenTrust는 [교차 서명한](#def-cross-signing) [Let's Encrypt](#def-LE) [중간 인증서](#def-intermediate)를 가지고 있습니다: {{< link "/certificates">}}. [위키피디아](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} [root 인증서](#def-root) 또는 다른 중간에서 서명한 인증서이며 다른 인증서를 서명할 수 있습니다. root 인증서의 개인 키를 오프라인으로 유지하면서 리프 인증서를 서명하는 데 사용됩니다. 매개 변수는 [인증서 체인](#def-chain)에 포함되어 있습니다. [위키피디아](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
@@ -131,11 +131,11 @@ Note for translators:
 
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} 웹 브라우저에 사이트의 [인증서 체인](#def-chain)이 향후 로드에 대해 특정 공용 키를 사용하도록 요구하는 보안 메커니즘입니다. Chrome은 CA의 타협으로부터 보호하기 위해 이 메커니즘을 도입했지만, 사이트 정전을 초래함에 따라 Chrome이 해당 메커니즘을 [사용 중단 및 제거](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)하게 되었습니다. [위키피디아](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
-{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 여러 개별 엔티티가 하위 도메인을 등록할 수 있는 인터넷 도메인을 나타내는 *공용 접미사* 목록입니다. 예를 들어, `com`과 `co.uk`는 TLD가 아니지만 `co.uk`는 공공 접미사입니다. 웹 브라우저에서는 다른 엔티티에 의해 운영될 가능성이 있는 사이트가 서로 웹 쿠키를 공유하지 못하도록 차단하기 위해 이 목록을 사용합니다. [Let's Encrypt](#def-LE) 또한 속도 제한 계산에 목록을 사용합니다: [{{< relref "/rate-limits" >}}]({{< relref "/rate-limits" >}}). https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 여러 개별 엔티티가 하위 도메인을 등록할 수 있는 인터넷 도메인을 나타내는 *공용 접미사* 목록입니다. 예를 들어, `com`과 `co.uk`는 TLD가 아니지만 `co.uk`는 공공 접미사입니다. 웹 브라우저에서는 다른 엔티티에 의해 운영될 가능성이 있는 사이트가 서로 웹 쿠키를 공유하지 못하도록 차단하기 위해 이 목록을 사용합니다. [Let's Encrypt](#def-LE) 또한 속도 제한 계산에 목록을 사용합니다: {{< link "/rate-limits">}}. https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="Relying Party" %}} 인증서의 정보에 의존하는 사용자입니다. 예를 들어, HTTPS 웹 사이트를 방문하는 사람은 상대편입니다. {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} 인증서는 [CA](#def-CA)에서 해지되었다고 하지 않는 한 만료 날짜까지 유효합니다. 개인 키의 손상 등 다양한 이유로 인증서가 해지될 수 있습니다. 웹 브라우저에서는 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 및 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)와 같은 최신 방법을 사용하여 인증서가 해지되었는지 확인할 수 있습니다. 많은 경우 [해지되지 않는다](https://www.imperialviolet.org/2011/03/18/revocation.html)는 점을 인지하세요. [{{< relref "/docs/revoking" >}}]({{< relref "/docs/revoking" >}}) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} 인증서는 [CA](#def-CA)에서 해지되었다고 하지 않는 한 만료 날짜까지 유효합니다. 개인 키의 손상 등 다양한 이유로 인증서가 해지될 수 있습니다. 웹 브라우저에서는 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 및 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets)와 같은 최신 방법을 사용하여 인증서가 해지되었는지 확인할 수 있습니다. 많은 경우 [해지되지 않는다](https://www.imperialviolet.org/2011/03/18/revocation.html)는 점을 인지하세요. {{< link "/docs/revoking">}} {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} [인증 기관](#def-CA)에 의해 [자체 서명된](#def-self-signed) 인증서는 [중급](#def-intermediate) 인증서에 서명하는 데 사용되며 [인증서 저장소](#def-store)에 포함됩니다. [위키피디아](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
@@ -151,7 +151,7 @@ Note for translators:
 
 {{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS)의 이전 이름이며, 여전히 공통으로 사용됩니다. {{% /def %}}
 
-{{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE)는 속도 제한에 영향을 주지 않고 인증서 요청을 테스트할 수 있는 스테이징 API를 제공합니다. 스테이징 환경에서 생성된 인증서는 공개적으로 신뢰되지 *않습니다*. 준비 환경은 테스트, 디버깅 및 ACME 클라이언트 개발 용도로 사용해야 합니다. [{{< relref "/docs/staging-environment" >}}]({{< relref "/docs/staging-environment" >}}) {{% /def %}}
+{{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE)는 속도 제한에 영향을 주지 않고 인증서 요청을 테스트할 수 있는 스테이징 API를 제공합니다. 스테이징 환경에서 생성된 인증서는 공개적으로 신뢰되지 *않습니다*. 준비 환경은 테스트, 디버깅 및 ACME 클라이언트 개발 용도로 사용해야 합니다. {{< link "/docs/staging-environment">}} {{% /def %}}
 
 {{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 인증서가 유효한 도메인을 나타내는 [인증서](#def-leaf) 필드입니다. 이제 호환성 문제로만 제공되는 [공통 이름](#def-CN)의 사용을 대체합니다. 단일 인증서는 많은 SAN을 포함할 수 있으며 여러 가지 도메인 이름에 대해 유효합니다. [위키피디아](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
