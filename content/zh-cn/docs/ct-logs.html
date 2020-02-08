@@ -2,14 +2,16 @@
 title: 证书透明度（CT）日志
 slug: ct-logs
 top_graphic: 4
-lastmod: 2019-11-20
+lastmod: 2020-02-05
 ---
 
 {{< lastmod >}}
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">证书透明度（CT）日志</a>是用于记录和监视 TLS 证书颁发的系统。CT 极大地增强了人们监控和研究证书颁发的能力，这些功能使 CA 生态系统和 Web 安全性得到了大量改进。因此，CT 正迅速成为关键基础设施。</p>
 
-<p>Let's Encrypt 将我们发出的所有证书提交给 CT 日志。我们自己也运营 CT 日志，欢迎所有被公众信任的证书颁发机构向其提交证书。</p>
+<p>Let's Encrypt 将我们发出的所有证书提交给 CT 日志。我们还运营着两个年度分片(annually sharded)的CT日志，分别名为<a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"> Oak </a>和Testflume。欢迎所有被公共信任的证书颁发机构提交证书至我们的日志。 <a href="{{< relref "/contact.md" >}}">通过电子邮件联系我们</a>以将新的根证书添加到我们的日志中。</p>
+
+<p>加入我们的<a href="https://community.letsencrypt.org/c/ct-announcements/">社区论坛</a>，以查看有关CT日志的主要公告。</p>
 
 <h2>资金来源</h2>
 
@@ -19,7 +21,7 @@ lastmod: 2019-11-20
 
 <h2>架构</h2>
 
-<p>我们的日志使用在 AWS 基础设施上运行的 Google 的 <a href="https://github.com/google/trillian/">Trillian 软件</a>。我们使用 <a href="https://kubernetes.io/">Kubernetes</a> 进行容器编排和作业调度，使用 AWS RDS 进行数据库管理。有关更多信息，请参见<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"Let's Encrypt如何运行CT日志"</a>。</p>
+<p>详见<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"Let's Encrypt如何运行CT日志"</a>。</p>
 
 <h2>日志监控</h2>
 
@@ -28,7 +30,14 @@ lastmod: 2019-11-20
 <h2>CT 日志服务器</h2>
 
 {{< ct_logs data="production" >}}
+    <li>Oak已被添加至<a href="https://support.apple.com/en-us/HT209255">苹果</a>和<a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">谷歌</a>的CT项目中。</li>
+    <li>我们生产环境的API端点将证书提交至此处。</li>
 {{< /ct_logs >}}
 
 {{< ct_logs data="testing" >}}
+    <li>这些日志服务器中的SCT<b>不应该</b>被添加到被公共信任的证书中。</li>
+    <li>Let's Encrypt的生产和<a href="{{< relref "/docs/staging-environment.md" >}}">测试</a>ACME端点环境都向Testflume提交证书，但是生产环境不使用该服务器产生的SCT。</li>
+    <li>我们将在此处测试<a href="http://github.com/google/trillian">Trillian</a>和<a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a>的新版本后部署到生产环境中。</li>
+    <li>Testflume接受的根证书列表包括所有Oak接受的根证书及其他测试用根证书。</li>
+    <li>其他证书颁发机构可以使用Testflume进行测试。</li>
 {{< /ct_logs >}}
