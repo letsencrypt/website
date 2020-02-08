@@ -200,7 +200,7 @@ numberFormat = "-|.|,"
 [vi]
 title = "Let's Encrypt - Chứng Chỉ SSL/TLS Certificates Miễn Phí"
 contentDir = "content/vi"
-languageName = "Vietnamese"
+languageName = "Tiếng Việt"
 languageCode = "vi-VN"
 beforeColon = ""
 weight = 120
