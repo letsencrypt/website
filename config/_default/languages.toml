@@ -196,3 +196,18 @@ description = """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|,"
+
+[vi]
+title = "Let's Encrypt - Chứng Chỉ SSL/TLS Certificates Miễn Phí"
+contentDir = "content/vi"
+languageName = "Vietnamese"
+languageCode = "vi-VN"
+beforeColon = ""
+weight = 120
+description = """
+  Let's Encrypt là một chứng nhận mở, miễn phí và tự động
+  được cung cấp bởi tổ chức phi lợi nhuận <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|,| "
