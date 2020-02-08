@@ -6,19 +6,14 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "htmlhint": "^0.11.0",
-    "node-sass": "^4.13.0",
-    "sass-lint": "^1.13.1",
-    "uglify-es": "^3.3.9"
+    "sass-lint": "^1.13.1"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
     "test:sass": "sass-lint --verbose",
     "test": "npm run test:htmllint && npm run test:eslint && npm run test:sass",
-    "build:js": "uglifyjs static/js/main.js -o static/js/main.min.js  -c -m",
-    "build:scss": "node-sass --output-style compressed src/css/main.scss static/css/main.min.css",
-    "build:hugo": "hugo -d public",
-    "build": "npm run build:js && npm run build:scss && npm run build:hugo"
+    "build": "hugo -d public"
   },
   "repository": {
     "type": "git",

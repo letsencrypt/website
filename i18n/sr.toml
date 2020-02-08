@@ -124,3 +124,18 @@ other = "Informacije za programere klijentskog softvera"
 
 [paypal_donate_alt]
 other = "Donate with PayPal button"
+
+[amount_per_year]
+other = "${{ .nb }}/godišnje (USD)"
+
+[3y_commitment]
+other = "sa ugovornom obavezom od 3.godine"
+
+[1_99_employees]
+other = "1-99 zaposlenih"
+
+[100_999_employees]
+other = "100-999 zaposlenih"
+
+[1000_employees]
+other = "1000+ zaposlenih"

@@ -37,7 +37,7 @@ Si sabes de un cliente ACME o un proyecto que se ha integrado con Let's Encrypt 
 
 Antes de enviar un *pull request*, asegúrese de que:
 
-1. Su cliente respete la [póliza de marca de Let's Encrypt]({{< ref "/trademarks.md" >}}).
+1. Su cliente respete la [póliza de marca de Let's Encrypt]({{< ref "/trademarks" >}}).
 1. Su cliente no esté basado en el navegador y soporta renovaciones automáticas.
 1. Su *commit* añade su cliente al **final** de la sección relevante (¡No olvides el "acme_v2" si apropiado!).
 1. Su *commit* actualiza el sello de la fecha `lastmod` en la parte superior de `clients.json`.

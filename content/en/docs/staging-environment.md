@@ -18,7 +18,7 @@ If you're using Certbot, you can use our staging environment with the `--dry-run
 
 # Rate Limits
 
-The staging environment uses the same rate limits as [described for the production environment]({{< relref "/docs/rate-limits.md" >}}) with the following exceptions:
+The staging environment uses the same rate limits as {{<link "described for the production environment" "/docs/rate-limits" >}} with the following exceptions:
 
 * The **Certificates per Registered Domain** limit is 30,000 per week.
 * The **Duplicate Certificate** limit is 30,000 per week.
@@ -32,7 +32,7 @@ The staging environment intermediate certificate (["Fake LE Intermediate X1"](/c
 
 # Certificate Transparency
 
-The staging environment submits pre-certificates to the Let's Encrypt [Testflume]({{< relref "/docs/ct-logs.html" >}}) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
+The staging environment submits pre-certificates to the Let's Encrypt {{<link "Testflume" "/docs/ct-logs.html" >}} and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
 
 # Continuous Integration / Development Testing
 

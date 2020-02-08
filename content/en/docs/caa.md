@@ -31,7 +31,7 @@ set of CAA records listing the CAs that you would like to allow.
 
 Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
 officially documented [in our Certification Practice Statement
-(CPS), section 4.2.1]({{< relref "/repository.md" >}}).
+(CPS), section 4.2.1]({{< relref "/repository" >}}).
 
 ## Where to put the record
 
@@ -68,8 +68,7 @@ get an error, there's no way to tell whether we are allowed to issue for the
 affected domain, since there could be CAA records present that forbid issuance,
 but are not visible because of the error.
 
-If you receive CAA-related errors, try a few more times against our [staging
-environment]({{< relref "/docs/staging-environment.md" >}}) to see if they
+If you receive CAA-related errors, try a few more times against our {{<link "staging environment" "/docs/staging-environment" >}} to see if they
 are temporary or permanent. If they are permanent, you will need to file a
 support issue with your DNS provider, or switch providers. If you're not sure
 who your DNS provider is, ask your hosting provider.

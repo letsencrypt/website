@@ -27,7 +27,7 @@ lastmod: 2020-01-14
 
 * Запущено: 15 мая 2019
 
-Мы запустили интеграцию с [журналами Certificate Transparency]({{< relref "/docs/ct-logs.html" >}}).
+Мы запустили интеграцию с {{<link "журналами Certificate Transparency" "/docs/ct-logs.html" >}}.
 
 ## Внедрение метода проверки TLS ALPN
 

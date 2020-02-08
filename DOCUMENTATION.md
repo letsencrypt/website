@@ -52,6 +52,16 @@ On the top of each English pages with translations (pages really translated, not
 
 Translations of plotly functions are in `static/js/plotly-locale-XX.js`, uploaded from https://github.com/plotly/plotly.js/tree/master/dist (some languages have only partial translations)
 
-# Hugo errors
+# Become a sponsor
 
-To detect some errors, the code does a few checks, and when it fails, to trigger a build fail and detect invalid pull-requests, it calls an nonexistent function, with a meaningful name (calling a nonexistent function in Hugo breaks the build). Example: `Translations_must_not_have_aliases` in `shortcodes/i18n_status.html`
+The shortcode become-a-sponsor uses numberFormat
+
+Ex.: numberFormat = "-|.|,"
+
+and the i18n sentence `amount_per_year`
+
+Ex.: amount_per_year="${{ .nb }}/yr (USD)"
+
+To construct "$10.000/yr (USD)"
+
+The shortcode is called in the `.md` template with the translations for Platin/Gold/Silver as parameter. They are **not** in `i18n/` because there already are translations for those words for the **list** of sponsors, and sometimes the translation differs (Ex. in `ru`).

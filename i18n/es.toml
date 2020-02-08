@@ -127,3 +127,18 @@ other = "Diferencias del  Borrador ACME Actual"
 
 [paypal_donate_alt]
 other = "Donar con el botón PayPal"
+
+[amount_per_year]
+other = "${{ .nb }}/año (USD)"
+
+[3y_commitment]
+other = "con un compromiso de 3 años"
+
+[1_99_employees]
+other = "1-99 empleados"
+
+[100_999_employees]
+other = "100-999 empleados"
+
+[1000_employees]
+other = "1000+ empleados"

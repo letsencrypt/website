@@ -2,13 +2,12 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-date: 2016-12-05
-lastmod: 2016-12-05
+lastmod: 2020-02-07
 ---
 
 {{< lastmod >}}
 
-Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes IdenTrust's DST Root X3 certificate in its trust store. A secondary factor is whether the platform supports modern [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) certificates, since all Let's Encrypt certificates use SHA-2.
+Let's Encrypt aims to be compatible with as much software as possible without compromising security. The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform includes ISRG's "ISRG Root X1" certificate or IdenTrust's "DST Root CA X3" certificate in its trust store.
 
 If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration. If you're having an issue with modern platforms, the most common cause is failure to provide the correct certificate chain. If you're having an issue with older platforms like Windows XP, the most common causes are failure to configure a ciphersuite or TLS version that is supported on the platform or that the platform lacks support for Server Name Indication (SNI). Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
 
