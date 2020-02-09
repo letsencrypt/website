@@ -13,6 +13,24 @@ status = 302
 force = false
 
 [[redirects]]
+from = "/certs"
+to = "/certificates"
+status = 302
+force = false
+
+[[redirects]]
+from = "/howitworks"
+to = "/getting-started"
+status = 302
+force = false
+
+[[redirects]]
+from = "/ct-logs"
+to = "/docs/ct-logs"
+status = 302
+force = false
+
+[[redirects]]
 from = "/de/*"
 to = "/de/404.html"
 status = 404
