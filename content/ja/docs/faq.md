@@ -18,7 +18,7 @@ menu:
 * [一般的な質問](#general)
 * [技術的な質問](#technical)
 
-# <a name="general">一般的な質問</a>
+# <a id="general">一般的な質問</a>
 
 ## Let's Encrypt はどのようなサービスを提供しているのですか？
 
@@ -55,7 +55,7 @@ https://www.google.com/safebrowsing/report_badware/
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">技術的な質問</a>
+# <a id="technical">技術的な質問</a>
 
 ## Let's Encrypt から取得した証明書は、ブラウザに信頼されますか？
 

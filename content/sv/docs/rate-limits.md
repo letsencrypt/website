@@ -20,7 +20,7 @@ vår {{<link "testmiljö" "/docs/staging-environment" >}} istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
 leverantör eller med en stor webbplats, vänligen se vår {{<link "integrationsguide" "/docs/integration-guide" >}}.
 
-Huvudgränsen är <a name="certificates-per-registered-domain"></a>**antal
+Huvudgränsen är <a id="certificates-per-registered-domain"></a>**antal
 certifikat per registrerad domän** (50 per vecka). Generellt är en registrerad
 domän den domän du köpte från din domännamnsregistrator. Till exempel: i
 domännamnet `www.example.com` är den registrerade domänen `example.com`. I
@@ -29,7 +29,7 @@ använder den [publika suffixlistan](https://publicsuffix.org) för att räkna u
 den registrerade domänen.
 
 Om du har många underdomäner kanske du vill kombinera dem i ett certifikat upp
-till en gräns på 100 <a name="names-per-certificate"></a>**domännamn per
+till en gräns på 100 <a id="names-per-certificate"></a>**domännamn per
 certifikat**. Tillsammans med ovanstående gräns betyder detta att du kan
 utfärda certifikat som gäller för upp till 5000 unika underdomäner per vecka.
 Ett certifikat med flera domännamn kallas ofta för SAN-certifikat eller ibland
@@ -59,32 +59,32 @@ ny nyckel.
 eftersom resurserna som användes för att utfärda dessa certifikat redan har
 utnyttjats.
 
-Det finns en <a name="failed-validations"></a>**antal misslyckade
+Det finns en <a id="failed-validations"></a>**antal misslyckade
 valideringar**-gräns på 5 misslyckaden per konto per domännamn per timme. Denna
 gräns är högre i vår {{<link "testmiljö" "/docs/staging-environment" >}}, så du kan använda den miljön för att avlusa anslutningsproblem.
 
 Ändpunkterna "new-reg", "new-authz" och "new-cert" har en <a
-name="overall-requests"></a>**anropsgräns** på 20 per sekund. Ändpunkterna
+id="overall-requests"></a>**anropsgräns** på 20 per sekund. Ändpunkterna
 "/directory" och "/acme" och deras underkataloger har en anropsgräns på 40
 anrop per sekund.
 
 Det finns ytterligare två gränser som det är väldigt osannolikt att du påverkas av.
 
-Du kan skapa maximalt 10 <a name="accounts-per-ip-address"></a>**konton per
+Du kan skapa maximalt 10 <a id="accounts-per-ip-address"></a>**konton per
 IP-adress** under 3 timmar. Du kan skapa maximalt 500 **konton per IP-nätverk**
 inom ett IPv6 /48-nät under 3 timmar. Att uppnå någon av dessa gränser är
 väldigt sällsynt och vi rekommenderar att stora integratörer nyttjar en design
 som {{<link "använder ett konto till flera kunder" "/docs/integration-guide" >}}.
 
-Du kan maximalt ha 300 <a name="pending-authorizations"></a>**väntande
+Du kan maximalt ha 300 <a id="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient
 skapar auktorisationer utan att fullborda dem. Använd vår {{<link "testmiljö" "/docs/staging-environment" >}} om du utvecklar en ACME-klient.
 
-Användare av API:t ACMEv2 kan skapa maximalt 300 <a name="new-orders"></a>**nya
+Användare av API:t ACMEv2 kan skapa maximalt 300 <a id="new-orders"></a>**nya
 beställningar** per konto per 3 timmar.
 
-# <a name="overrides"></a>Åsidosättande
+# <a id="overrides"></a>Åsidosättande
 
 Om du uppnått en gräns erbjuder vi inget sätt att temporärt återställa den. Du
 måste vänta tills gränsen löper ut efter en vecka. Vi använder ett glidande
@@ -107,7 +107,7 @@ certifikat för. Så länge de flesta av era kunder har färre än 2000 underdom
 på en registrerad domän behöver ni troligtvis ingen höjning. Se vår
 {{<link "integrationsguide" "/docs/integration-guide" >}} för fler råd.
 
-# <a name="clearing-pending"></a>Rensa väntande auktorisationer
+# <a id="clearing-pending"></a>Rensa väntande auktorisationer
 
 Om du har ett stort antal väntande auktorisationsobjekt och får ett
 taktbegränsningsfel kan du initiera ett valideringsförsök för dessa
