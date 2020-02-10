@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-07",
+	"lastmod": "2020-02-10",
 	"categories": [
 		"Bash",
 		"C",
@@ -785,7 +785,10 @@
 			"name": "lua-resty-acme",
 			"url": "https://github.com/fffonion/lua-resty-acme",
 			"category": "nginx",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "acertmgr",
