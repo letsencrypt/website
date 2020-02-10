@@ -32,6 +32,10 @@ Also, if the `lastmod` of the translation differs from the `lastmod` of the Engl
 
 # Translations
 
+## Folder `content/base-l10n`
+
+It contains files that should be copied to add a new language. When a new file is added, a template file can be created there.
+
 ## Dates
 
 The `lastmod` is localized using javascript (see `i18n.js`)
@@ -65,3 +69,40 @@ Ex.: amount_per_year="${{ .nb }}/yr (USD)"
 To construct "$10.000/yr (USD)"
 
 The shortcode is called in the `.md` template with the translations for Platin/Gold/Silver as parameter. They are **not** in `i18n/` because there already are translations for those words for the **list** of sponsors, and sometimes the translation differs (Ex. in `ru`).
+
+# How to add a new page
+
+## If that page must appears in other language than English
+
+### If that page may be translated
+
+After adding the `.md` file in `content/en`, a file with the same name must be copied in all other folders of `content/`, including `content/base-l10n` with the following content:
+
+```text
+---
+slug: the-same-than-english
+untranslated: 1
+---
+
+```
+
+### If that page must not be translated
+
+After adding the `.md` file in `content/en`, a file with the same name must be copied in all other folders of `content/`, including `content/base-l10n` with the following content:
+
+```text
+---
+slug: repository
+untranslated: 1
+do_not_translate: 1
+---
+
+<!-- Note for translators: do NOT translate this file -->
+
+```
+
+## If that page must appears in the docs index
+
+The file `layouts/_default/shortcodes/docs_index.md` must be updated.
+
+The name of the link will be the `linkTitle` of the target page (if present) or the `title` of the target page.
