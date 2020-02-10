@@ -36,7 +36,7 @@ SAN, ou as vezes de certificado UCC. Nota: Por motivos de performance e
 confiabilidade, é melhor usar menos nomes por certificado sempre que você
 puder.
 
-Renovações são tratadas de forma especial: Elas não usam seu limite de <a id="certificates-per-registered-domain"></a> **Certificados por 
+Renovações são tratadas de forma especial: Elas não usam seu limite de **Certificados por 
 Domínio Registrado**, mas estão sujeitas ao 
 limite de 5 **Certificados Duplicados** por semana. Nota: Renovações costumavam usar seu limite de Certificados por 
 Domínio Registrado até Março de 2019, [mas isso não 
