@@ -42,7 +42,7 @@ Verlängerungen werden speziell behandelt: Sie werden nicht auf Ihr
 **Zertifikat pro registrierter Domain**-Limit angerechnet, unterliegen jedoch einem 
 **Duplikat-Zertifikat**-Limit von 5 pro Woche.
 Hinweis: Verlängerungen wurden bis März 2019 gegen Ihr **Zertifikat pro registrierter Domain**-Limit
- angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name- rate-limit-order-of-operations-gotcha/88189).
+ angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Zum Beispiel, Sie fordern die Ausstellung eines Zertifikates mit dem Namen
 [`www.example.com`, `example.com`], und Sie stellen 4 weitere Anträge auf Zertifikate

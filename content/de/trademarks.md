@@ -21,7 +21,7 @@ Wenn Sie eines der ISRG-Markenzeichen auf eine Art und Weise verwenden
 möchten, die in dieser Richtlinie nicht ausdrücklich erlaubt ist oder
 anderweitig durch eine markenrechtliche Ausnahme (z.B. Fair Use)
 zulässig ist, wenden Sie sich bitte direkt an uns unter
-[press@letsencrypt.org](mailto: press@letsencrypt.org). Gerne prüfen
+[press@letsencrypt.org](mailto:press@letsencrypt.org). Gerne prüfen
 wir Ihre Erlaubnisanfrage. Unabhängig davon, wie autorisiert, der durch
 die Verwendung der ISRG-Marken entstandene Goodwill kommt
 ausschliesslich der ISRG zugute.
@@ -251,7 +251,7 @@ entsprechende Massnahmen ergreifen.
 Wenn Sie die ISRG-Marken auf eine Art und Weise verwenden möchten, die
 von dieser Richtlinie nicht abgedeckt wird, oder wenn Sie Fragen zu
 dieser Richtlinie haben, können Sie uns gerne unter
-[press@letsencrypt.org](mailto: press@letsencrypt.org) kontaktieren.
+[press@letsencrypt.org](mailto:press@letsencrypt.org) kontaktieren.
 
 <br>
 
