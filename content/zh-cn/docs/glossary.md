@@ -55,7 +55,7 @@ date: 2018-12-30
 
 {{% def id="CN" name="通用名称" english="Common Name" abbr="CN" %}} 用于描述证书内容的[主体](#def-subject)信息的一部分。对于[根证书](#def-root)和[中间证书](#def-intermediate)来说它是[证书颁发机构](#def-CA)的人类可读的名字。对于[叶证书](#def-leaf)来说它是证书上的域名之一。注意：通用名称最长 63 个字符。它曾被用于指示证书适用的域名，但现在已被废弃，因为当前的互联网标准要求软件仅通过检查[主体备用名称](#def-SAN)来确定证书的适用性。 {{% /def %}}
 
-{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一个用于签发证书的证书可以被多个[根证书](#def-root)签名。例如，[Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)由 [IdenTrust](#def-IdenTrust) 交叉签名，因为刚开始时 Let's Encrypt 的根证书还没有被各个[证书存储](#def-store)信任。技术上讲，交叉签名需要两个有着相同[主体](#def-subject)和[密钥对](#def-key-pair)的证书，它们分别由 Let's Encrypt 和 IdeaTrust 的根证书的私钥签名：[{{< relref "/certificates" >}}]({{< relref "/certificates" >}})。[维基百科条目](https://zh.wikipedia.org/wiki/X.509#%E8%AF%81%E4%B9%A6%E9%93%BE%E5%92%8C%E4%BA%A4%E5%8F%89%E8%AE%A4%E8%AF%81) {{% /def %}}
+{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一个用于签发证书的证书可以被多个[根证书](#def-root)签名。例如，[Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)由 [IdenTrust](#def-IdenTrust) 交叉签名，因为刚开始时 Let's Encrypt 的根证书还没有被各个[证书存储](#def-store)信任。技术上讲，交叉签名需要两个有着相同[主体](#def-subject)和[密钥对](#def-key-pair)的证书，它们分别由 Let's Encrypt 和 IdeaTrust 的根证书的私钥签名：{{< link "/certificates">}}。[维基百科条目](https://zh.wikipedia.org/wiki/X.509#%E8%AF%81%E4%B9%A6%E9%93%BE%E5%92%8C%E4%BA%A4%E5%8F%89%E8%AE%A4%E8%AF%81) {{% /def %}}
 
 {{% def id="DANE" name="基于 DNS 的实体认证" english="DNS-based Authentication of Named Entities" abbr="DANE" %}} 使用 DNS 指明如何验证[证书](#def-leaf)或加密密钥真伪的机制。[维基百科条目](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -63,7 +63,7 @@ date: 2018-12-30
 
 {{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。[Let's Encrypt](#def-LE) 仅提供 DV 证书，不提供 [OV](#def-OV) 或 [EV](#def-EV) 证书：{{<link "常见问题" "/docs/faq" >}} - [维基百科条目](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6) {{% /def %}}
 
-{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。[Let's Encrypt](#def-LE) 支持使用 ECDSA 的[叶证书（终端实体证书）](#def-leaf)，但没有全部使用 ECDSA 的完整[证书链](#def-chain)：[{{< relref "/upcoming-features" >}}]({{< relref "/upcoming-features" >}}) {{% /def %}}
+{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。[Let's Encrypt](#def-LE) 支持使用 ECDSA 的[叶证书（终端实体证书）](#def-leaf)，但没有全部使用 ECDSA 的完整[证书链](#def-chain)：{{< link "/upcoming-features">}} {{% /def %}}
 
 {{% def id="Ed25519" english="Ed25519" %}} 一种特殊类型的 [EdDSA](#def-EdDSA)，类似的还有 Ed448。 {{% /def %}}
 
@@ -75,7 +75,7 @@ date: 2018-12-30
 
 {{% def id="FQDN" name="完全限定域名" english="Fully qualified domain name" abbr="FQDN" %}} 网站的完整域名。例如 `www.example.com` 就是一个 *FQDN* 。 {{% /def %}}
 
-{{% def id="IdenTrust" english="IdenTrust" %}} [证书颁发机构](#def-CA)。IdenTrust [交叉签名](#def-cross-signing)了 [Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)：[{{< relref "/certificates" >}}]({{< relref "/certificates" >}})。 [维基百科条目](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
+{{% def id="IdenTrust" english="IdenTrust" %}} [证书颁发机构](#def-CA)。IdenTrust [交叉签名](#def-cross-signing)了 [Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)：{{< link "/certificates">}}。 [维基百科条目](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="中间证书" english="Intermediate certificate" %}} 被[根证书](#def-root)或另一个空间证书签名的，能够对其他证书签名的证书。它们被用于在保持根证书的私钥离线的前体下对叶证书进行签名。中间证书会被包含在[证书链](#def-chain)中。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E8%AD%89%E6%9B%B8%E7%A8%AE%E9%A1%9E) {{% /def %}}
 
@@ -113,11 +113,11 @@ date: 2018-12-30
 
 {{% def id="HPKP" name="HTTP公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 要求浏览器在将来加载网页时确保网站的[证书链](#def-chain)使用特定公钥的安全机制。Chrome 引入了这项机制来应对 CA 被入侵的情况，但是它会导致网站停止工作，所以 Chrome 又[弃用并移除了它](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。[维基百科条目](https://zh.wikipedia.org/wiki/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
 
-{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。例如，这个列表同时包含了 `com` 和 `co.uk`，尽管 `co.uk` 不是 TLD。网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。[Let's Encrypt](#def-LE) 也使用这个列表来计算速率限制：[{{< relref "/rate-limits" >}}]({{< relref "/rate-limits" >}})。https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。例如，这个列表同时包含了 `com` 和 `co.uk`，尽管 `co.uk` 不是 TLD。网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。[Let's Encrypt](#def-LE) 也使用这个列表来计算速率限制：{{< link "/rate-limits">}}。https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="信任方" english="Relying Party" %}} 依赖证书中的信息的人。例如，访问 HTTPS 网站的人是一个信任方。 {{% /def %}}
 
-{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在其到期之前一直有效，除非 [CA](#def-CA) 声明它被吊销了。证书可能因包括私钥泄露在内的多种原因被吊销。浏览器可以通过 [CRL](#def-CRL)、[OCSP](#def-OCSP) 或像 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 和 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) 一类的较新的方法来检查证书是否被吊销。注意在许多情况下，[吊销证书是没有用的](https://www.imperialviolet.org/2011/03/18/revocation.html)。[{{< relref "/docs/revoking" >}}]({{< relref "/docs/revoking" >}}) {{% /def %}}
+{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在其到期之前一直有效，除非 [CA](#def-CA) 声明它被吊销了。证书可能因包括私钥泄露在内的多种原因被吊销。浏览器可以通过 [CRL](#def-CRL)、[OCSP](#def-OCSP) 或像 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 和 [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) 一类的较新的方法来检查证书是否被吊销。注意在许多情况下，[吊销证书是没有用的](https://www.imperialviolet.org/2011/03/18/revocation.html)。{{< link "/docs/revoking">}} {{% /def %}}
 
 {{% def id="root" name="根证书" english="Root certificate" %}} 由[证书颁发机构](#def-CA)控制，用于对[中间证书](#def-intermediate)签名且包含在[证书存储](#def-store)内的[自签名](#def-self-signed)证书。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A0%B9%E8%AF%81%E4%B9%A6) {{% /def %}}
 
@@ -133,7 +133,7 @@ date: 2018-12-30
 
 {{% def id="SSL" name="安全套接字层" english="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS) 以前的名字，仍旧很常用。 {{% /def %}}
 
-{{% def id="staging" name="测试" english="Staging" %}} [Let's Encrypt](#def-LE) 提供了用于在不会影响速率限制的前提下测试证书请求的测试 API。由测试环境生成的证书是 *不* 被信任的。测试环境应仅用于测试、调试和 ACME 客户端开发的目的。[{{< relref "/docs/staging-environment" >}}]({{< relref "/docs/staging-environment" >}}) {{% /def %}}
+{{% def id="staging" name="测试" english="Staging" %}} [Let's Encrypt](#def-LE) 提供了用于在不会影响速率限制的前提下测试证书请求的测试 API。由测试环境生成的证书是 *不* 被信任的。测试环境应仅用于测试、调试和 ACME 客户端开发的目的。{{< link "/docs/staging-environment">}} {{% /def %}}
 
 {{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中用于指定其对哪些域名有效的字段。它代替了[通用名称](#def-CN)字段（后者现在仅因兼容性原因而提供）。单个证书可能包含多个 SAN 以使其对多个不同域名生效。[维基百科条目](https://zh.wikipedia.org/wiki/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
