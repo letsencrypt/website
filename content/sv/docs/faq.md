@@ -18,7 +18,7 @@ Denna vanliga frågor-sida är uppdelad i följande delar:
 * [Allmänna frågor](#general)
 * [Tekniska frågor](#technical)
 
-# <a name="general">Allmänna frågor</a>
+# <a id="general">Allmänna frågor</a>
 
 ## Vilka tjänster erbjuder Let's Encrypt?
 
@@ -77,7 +77,7 @@ Om du vill läsa mer om våra policyer och principer kan du göra detta här:
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Tekniska frågor</a>
+# <a id="technical">Tekniska frågor</a>
 
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 

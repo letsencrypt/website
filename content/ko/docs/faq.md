@@ -18,7 +18,7 @@ FAQ는 다음의 두 개로 나누어 집니다:
 * [일반적인 질문](#general)
 * [기술적인 질문](#technical)
 
-# <a name="general">일반적인 질문</a>
+# <a id="general">일반적인 질문</a>
 
 ## Let’s Encrypt는 어떤 서비스를 제공하나요?
 
@@ -45,7 +45,7 @@ Let’s Encrypt는 소규모 조직이 운영하며 비용을 줄이기 위한 �
 
 [비디오](https://www.youtube.com/watch?v=Xe1TZaElTAs)를 통해 방대한 커뮤니티 지원력을 확인하시기 바랍니다.
 
-# <a name="technical">기술 질문</a>
+# <a id="technical">기술 질문</a>
 
 ## 내 브라우저에서 Let’s Encrypt의 인증서를 신뢰할 수 있습니까?
 
