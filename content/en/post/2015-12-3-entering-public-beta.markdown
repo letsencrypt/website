@@ -17,7 +17,9 @@ We'd also like to thank all of our [sponsors](/sponsors/) for their support. We'
 
 We have more work to do before we’re comfortable dropping the beta label entirely, particularly on the client experience. Automation is a cornerstone of our strategy, and we need to make sure that the client works smoothly and reliably on a wide range of platforms. We’ll be monitoring feedback from users closely, and making improvements as quickly as possible.
 
-Instructions for getting a certificate with the [Let's Encrypt client](https://github.com/letsencrypt/letsencrypt) can be found [here](https://letsencrypt.readthedocs.org/en/latest/).
+~~Instructions for getting a certificate with the *Let's Encrypt client* can be found *here*.~~
+
+Update: Feb. 10 2010, instructions for getting a certificate with [Certbot](https://github.com/certbot/certbot) (Let's Encrypt recommended client) can be found [here](https://certbot.eff.org/).
 
 [Let’s Encrypt Community Support](https://community.letsencrypt.org/) is an invaluable resource for our community, we strongly recommend making use of the site if you have any questions about Let’s Encrypt.
 
