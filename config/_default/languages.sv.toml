@@ -1,0 +1,13 @@
+title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
+contentDir = "content/sv"
+languageName = "Svenska"
+languageCode = "sv"
+beforeColon = ""
+weight = 650
+description = """
+  Let's Encrypt är en gratis, automatiserad och öppen certifikatutgivare
+  skapad av icke-vinstdrivande <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "SE"
+numberFormat = "-|.| "

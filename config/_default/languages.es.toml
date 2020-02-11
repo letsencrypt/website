@@ -1,0 +1,12 @@
+title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
+contentDir = "content/es"
+languageName = "Español"
+languageCode = "es-US"
+beforeColon = "&nbsp;"
+weight = 250
+description = """
+  Let's Encrypt es una autoridad de certificación gratuita, automatizada, y abierta traida a ustedes por la organización sin ánimos de lucro <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "ES"
+numberFormat = "-|.|,"

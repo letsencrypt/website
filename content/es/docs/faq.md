@@ -18,7 +18,7 @@ Este FAQ está dividido en las siguientes secciones:
 * [Preguntas Generales](#general)
 * [Preguntas Técnicas](#technical)
 
-# <a name="general">Preguntas Generales</a>
+# <a id="general">Preguntas Generales</a>
 
 ## ¿Qué servicios ofrece Let's Encrypt?
 
@@ -55,7 +55,7 @@ Si desea leer más sobre nuestras políticas y nuestra justificación, puede hac
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Preguntas Técnicas</a>
+# <a id="technical">Preguntas Técnicas</a>
 
 ## ¿Los certificados de Let's Encrypt son confiados por mi navegador?
 

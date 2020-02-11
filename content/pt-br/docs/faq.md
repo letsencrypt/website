@@ -18,7 +18,7 @@ Esta página de Perguntas Frequentes está dividida nas seguintes seções:
 * [Questões Gerais](#general)
 * [Questões Técnicas](#technical)
 
-# <a name="general">Questões Gerais</a>
+# <a id="general">Questões Gerais</a>
 
 ## Que serviços a Let's Encrypt oferece?
 
@@ -55,7 +55,7 @@ Se você quiser ler mais sobre nossas políticas e motivações, você pode faz�
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Questões Técnicas</a>
+# <a id="technical">Questões Técnicas</a>
 
 ## Meu navegador confia nos certificados da Let’s Encrypt?
 

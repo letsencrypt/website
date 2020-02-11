@@ -27,7 +27,7 @@ Wir haben eine Webseite zum Testen der Zertifikatketten zu unseren Root Zertifik
 
 # Zwischenzertifikate (Intermediate Certificates)
 
-IdenTrust hat unsere Zwischenzertifikate quersigniert. Das erlaubt die Aktzeptanz all
+IdenTrust hat unsere Zwischenzertifikate quersigniert. Das erlaubt die Akzeptanz all
 unserer Endzertifkate bei allen Browsern, bei denen wir unser Root Zertifikat propagieren.
 
 Unter normalen Umständen kommen Zertifikate, die von Let’s Encrypt ausgestellt worden, von
@@ -35,7 +35,7 @@ Unter normalen Umständen kommen Zertifikate, die von Let’s Encrypt ausgestell
 ist reserviert für Notfallwiederherstellung und wird nur benutzt, wenn wir die Kontrolle
 über “Let’s Encrypt Authority X3” verloren haben. Die X1 und X2 Zwischenzertfikate waren
 unsere erste Generation von Zwischenzertifikaten. Wir haben sie mit neuen Zwischenzertifikaten
-ersetzt, die mehr kompatibel mit Windows XP waren.
+ersetzt, die kompatibler mit Windows XP waren.
 
 * Aktiv
   * [Let's Encrypt Authority X3 (IdenTrust cross-signed)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
@@ -56,7 +56,7 @@ Unser Zwischenzertifikat “Let’s Encrypt Authority X3” repräsentiert ein e
 für alle Endzertifikate (auch bekannt als Leaf Zertifikate), z.B. die
 Zertifikate, die wir für Ihren Server ausstellen.
 
-Unser Zwischenzertifikat ist signiert von ISRG Root X1. Jedoch, da wir eine
+Unser Zwischenzertifikat ist signiert von ISRG Root X1. Da wir jedoch eine
 ziemlich neue Zertifizierungsstelle sind, ist ISRG Root X1 in den meisten Browsern
 nicht vertrauenswürdig. Um eine breitere Sicherheit zu erreichen, ist unser
 Zwischenzertifikat bei einer anderen Zertifizierungsstelle quersigniert, IdenTrust,

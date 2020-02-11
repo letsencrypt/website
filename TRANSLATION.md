@@ -9,7 +9,7 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 
 ### First pull-request
 
-1. In `config\_default\languages.toml`, add your language.
+1. In `config\_default\`, copy `config\_default\languages.en.toml` into `config\_default\languages.XX.toml` (where XX is your language code) and update it following indications given in comments (lines starting with `#`)
 2. In `config\_default\`, copy `config\_default\menu.en.toml` into `config\_default\menu.XX.toml` (where XX is your language code), translate `name =` and prefix urls with `/XX/`.
 3. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
 4. Add your language in `netlify.toml` and `layouts\_partial\langs.html`.

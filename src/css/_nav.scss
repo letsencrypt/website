@@ -3,8 +3,7 @@
  */
 .site-nav {
     float: right;
-    line-height: 56px;
-    margin-top: 6px;
+    margin-top: 29px;
 
     #menuIcon {
         display: none;
@@ -52,7 +51,7 @@ a.pure-menu-link:hover {
     text-decoration: none;
 }
 .pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children {
-    top: 56px;
+    top: 40px;
     left: auto;
     right:0;
     text-align: left;
@@ -78,7 +77,7 @@ a.pure-menu-link:hover {
         float: right;
         width: 36px;
         line-height: 0;
-        padding-top: 10px;
+        padding-top: 5px;
         text-align: center;
         cursor: pointer;
         margin-top: 30px;

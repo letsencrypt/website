@@ -1,12 +1,51 @@
-{{- if or ( hasPrefix (.Get 0) "http://" ) ( hasPrefix (.Get 0) "https://" ) -}}
-	<a href="{{ .Get 1 }}">{{ .Get 0 }}</a>
+{{/*
+	Examples:
+
+	{{< link "Certs" "/certificates">}}
+		=> <a href="/certificates">Certs</a>
+
+	{{< link "/certificates">}}
+		=> <a href="/certificates">https://letsencrypt.org/certificates</a>
+
+	{{< link "wiki" "https://www.wikipedia.org">}}
+		=> <a href="https://www.wikipedia.org">wiki</a>
+
+	{{< link "https://www.wikipedia.org">}}
+		=> <a href="https://www.wikipedia.org">https://www.wikipedia.org</a>
+
+*/}}
+{{- $scratch := newScratch -}}
+{{- if .Get 1 -}}
+	{{- $scratch.Set "name" (.Get 0) }}
+	{{- $scratch.Set "path" (.Get 1) }}
 {{- else -}}
-	{{- $tmp := split (.Get 1 ) "#" -}}
+	{{- $scratch.Set "path" (.Get 0) }}
+{{- end -}}
+{{- $link := $scratch.Get "path" -}}
+
+{{- if or ( hasPrefix $link "http://" ) ( hasPrefix $link "https://" ) -}}
+	<a href="{{ $link }}">
+		{{- with ($scratch.Set "name") -}}
+			{{- . | markdownify -}}
+		{{- else -}}
+			{{- $link | markdownify -}}
+		{{- end -}}
+	</a>
+{{- else -}}
+	{{- $tmp := split $link "#" -}}
 	{{- $pagename := index $tmp 0 -}}
 	{{- $anchor := index $tmp 1 -}}
 	{{- $page := .Site.GetPage $pagename -}}
 	{{- if not $page }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
-	{{- else }}<a href="{{ $page.RelPermalink }}{{ if $anchor }}#{{ $anchor }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}">{{ .Get 0 | markdownify }}</a>
-	{{- end -}}
+	{{- else -}}
+	<a href="{{ $page.RelPermalink }}{{ if $anchor }}#{{ $anchor }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}">
+		{{- if ($scratch.Get "name") -}}
+			{{- ($scratch.Get "name") | markdownify -}}
+		{{- else -}}
+			{{/* remove https:// in links to improve readability and avoid markdown link creation */}}
+			{{- replaceRE "^https?://(.*)$" "$1" $page.Permalink -}}
+		{{- end -}}
+	</a>
+{{- end -}}
 {{- end -}}
