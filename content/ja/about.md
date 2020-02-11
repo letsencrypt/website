@@ -3,7 +3,7 @@ title: Let's Encrypt について
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-01-28
+lastmod: 2019-11-11
 menu:
   main:
     weight: 10
@@ -14,6 +14,8 @@ Let's Encrypt は、公共の利益のために運営されている、フリー
 
 私たちは人々のために、ウェブサイトで HTTPS (SSL/TLS) を有効にするために必要なデジタル証明書を、無料で、私たちにできる最もユーザーフレンドリーな方法で発行しています。私たちがこのようなことをする理由は、よりセキュアでプライバシーを尊重するウェブを作りたいと願っているからです。
 
+Let's Encrypt の最新の年次レポートは、こちらからお読みください ([デスクトップ向け](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf)と[モバイル向け](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)があります)。
+
 Let's Encrypt の背景にあるキーとなる原則は次のとおりです。
 
 * <strong>無料:</strong> ドメイン名を持っている人なら誰でも、Let's Encrypt を利用して費用なしで信頼される証明書を取得することができる。
@@ -23,4 +25,4 @@ Let's Encrypt の背景にあるキーとなる原則は次のとおりです。
 * <strong>オープン:</strong> 自動的な発行・更新のプロトコルを、今後オープンスタンダードとして発行し、誰でも採用できるようにする。
 * <strong>協力的:</strong> インターネットのプロトコル自体と同じように、Let's Encrypt はコミュニティに利益を与えるための協力的な努力のもとに成り立っており、いかなる組織のコントロールも受けない。
 
-システムの動作のより詳細な情報については、[Let's Encrypt CA の動作の仕組み]({{< relref "/how-it-works.md" >}})を読んでください。
+システムの動作のより詳細な情報については、{{<link "Let's Encrypt CA の動作の仕組み" "/how-it-works" >}}を読んでください。

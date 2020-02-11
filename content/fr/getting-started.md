@@ -2,8 +2,10 @@
 title: Commencer
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
+
+{{< lastmod >}}
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
 à partir d'une autorité de certification (AC ou CA pour Certificate Authority en anglais). Let's Encrypt est une autorité de certification. Afin d'obtenir un certificat pour le domaine de votre site Web avec Let's Encrypt, vous devez démontrer
@@ -14,7 +16,7 @@ chez votre hébergeur.
 Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez savoir si
 vous avez un [accès shell](https://en.wikipedia.org/wiki/Shell_account) (également connu
 comme accès SSH) à votre hébergement. Si vous gérez votre site entièrement via un
-panneau de contrôle comme [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), ou
+panneau de contrôle comme [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), ou
 [WordPress](https://wordpress.org/), il y a de fortes chances que vous n'ayez pas d'accès shell.
 Vous pouvez demander à votre hébergeur pour en être sûr.
 
@@ -27,11 +29,11 @@ fonctionne sur de nombreux systèmes d'exploitation et possède une excellente d
 Site Certbot][Certbot] pour obtenir des instructions personnalisées pour votre système d'exploitation et votre serveur Web.
 
 Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer autre chose, il y a
-[beaucoup plus de clients ACME à choisir]({{< relref "/docs/client-options.md" >}}). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
+{{<link "beaucoup plus de clients ACME à choisir" "/docs/client-options" >}}. Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
 
 Si vous expérimentez avec différents clients ACME, utilisez notre
-[environnement de développement]({{< relref "/docs/staging-environment.md" >}}) pour éviter d'atteindre les
-[limites d'accès]({{< relref "/docs/rate-limits.md" >}}).
+{{<link "environnement de développement" "/docs/staging-environment" >}} pour éviter d'atteindre les
+{{<link "limites d'accès" "/docs/rate-limits" >}}.
 
 [Certbot]: https://certbot.eff.org/ "Certbot"
 

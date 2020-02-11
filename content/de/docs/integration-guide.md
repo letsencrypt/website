@@ -4,7 +4,7 @@ linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-18
+lastmod: 2019-10-29
 ---
 
 {{< lastmod >}}
@@ -67,7 +67,7 @@ die für Ihr Konto spezifisch sind.
 
 # Wer ist der Abonnent?
 
-Unser [CPS- und Abonnentenvertrag]({{< relref "/repository.md" >}}) zeigt an, dass der
+Unser {{<link "CPS- und Abonnentenvertrag" "/repository" >}} zeigt an, dass der
 Abonnent derjenige ist, der den privaten Schlüssel für ein Zertifikat
 besitzt. Bei Hosting-Providern ist dies der Provider, nicht der Kunde
 des Providers. Wenn Sie Software schreiben, die von den Mitarbeitern
@@ -78,7 +78,7 @@ Die Kontakt-E-Mail, die Sie beim Erstellen von Konten (auch als
 Registrierungen bezeichnet) erhalten, sollte an den Abonnenten gesendet
 werden. Wir werden eine E-Mail an diese Adresse senden, um vor dem
 Ablaufen von Zertifikaten zu warnen, und über Änderungen an unseren
-[Datenschutzbestimmungen]({{< relref "/privacy.md" >}}) informieren. Wenn Sie ein
+{{<link "Datenschutzbestimmungen" "/privacy" >}} informieren. Wenn Sie ein
 Hostinganbieter sind, sollten diese Benachrichtigungen nicht an einen
 Kunden, sondern an Sie gesendet werden. Richten Sie im Idealfall eine
 Mailingliste oder einen Alias ein, damit mehrere Personen
@@ -109,7 +109,7 @@ Konten verwendet werden.
 
 # Multi-Domain-Zertifikate (SAN-Zertifikate)
 
-Unsere [Ausstellungsrichtlinie]({{< relref "/docs/rate-limits.md" >}}) erlaubt bis zu
+Unsere {{<link "Ausstellungsrichtlinie" "/docs/rate-limits" >}} erlaubt bis zu
 100 Namen pro Zertifikat. Ob Sie für jeden Hostnamen ein separates
 Zertifikat verwenden oder viele Hostnamen auf einer kleinen Anzahl von
 Zertifikaten zusammenfassen, bleibt Ihnen überlassen.
@@ -305,12 +305,12 @@ einen Tag vor dem normalen Verlängerungszeitraum erneuern, einige davon
 
 Wenn Sie eine Client-Software anbieten, die automatisch einen
 periodischen Batch-Job konfiguriert, stellen Sie sicher, dass sie
-tagsüber zu einer zufälligen Stunde und Minute ausgeführt werden und
+tagsüber zu einer zufälligen Sekunde ausgeführt werden und
 nicht immer zu einem bestimmten Zeitpunkt. Dadurch wird sichergestellt,
-dass Let's Encrypt nicht zu jeder vollen Stunde zufällige
-Verkehrsspitzen empfängt. Da Let's Encrypt Kapazitäten bereitstellen
-muss, um Lastspitzen zu bewältigen, können Verkehrsspitzen reduziert
-werden, um unsere Kosten zu senken.
+dass Let's Encrypt nicht zu jeder Stunde oder Minute zufällige
+hohe Netzwerkanfragen empfängt. Da Let's Encrypt Kapazitäten bereitstellen
+muss, um Lastspitzen zu bewältigen, sollte ein hohes Aufkommen an
+Netzwerkanfragen reduziert werden, um unsere Kosten zu senken.
 
 # Wiederholungsfehler
 

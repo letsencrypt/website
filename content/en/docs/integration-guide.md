@@ -45,9 +45,9 @@ specific to your account.
 
 # Who is the Subscriber
 
-Our [CPS and Subscriber Agreement]({{< relref "/repository.md" >}}) indicate that the Subscriber is whoever holds the private key for a certificate. For hosting providers, that's the provider, not the provider's customer. If you're writing software that people deploy themselves, that's whoever is deploying the software.
+Our {{<link "CPS and Subscriber Agreement" "/repository" >}} indicate that the Subscriber is whoever holds the private key for a certificate. For hosting providers, that's the provider, not the provider's customer. If you're writing software that people deploy themselves, that's whoever is deploying the software.
 
-The contact email provided when creating accounts (aka registrations) should go to the Subscriber. We'll send email to that address to warn of expiring certs, and notify about changes to our [privacy policy]({{< relref "/privacy.md" >}}).  If you're a hosting provider, those notifications should go to you rather than a customer. Ideally, set up a mailing list or alias so that multiple people can respond to notifications, in case you are on vacation.
+The contact email provided when creating accounts (aka registrations) should go to the Subscriber. We'll send email to that address to warn of expiring certs, and notify about changes to our {{<link "privacy policy" "/privacy" >}}.  If you're a hosting provider, those notifications should go to you rather than a customer. Ideally, set up a mailing list or alias so that multiple people can respond to notifications, in case you are on vacation.
 
 The upshot of this is that, if you are a hosting provider, you do not need to send us your customers' email addresses or get them to agree to our Subscriber Agreement. You can simply issue certificates for the domains you control and start using them.
 
@@ -59,7 +59,7 @@ However, for most larger hosting providers we recommend using a single account a
 
 # Multi-domain (SAN) Certificates
 
-Our [issuance policy]({{< relref "/docs/rate-limits.md" >}}) allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
+Our {{<link "issuance policy" "/docs/rate-limits" >}} allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
 
 Using separate certificates per hostname means fewer moving parts are required to logically add and remove domains as they are provisioned and retired. Separate certificates also minimize certificate size, which can speed up HTTPS handshakes on low-bandwidth networks.
 

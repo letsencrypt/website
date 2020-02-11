@@ -13,7 +13,7 @@ Public CAs need their certificates to be trusted by browsers and devices. CAs th
 
 Getting a new root trusted and propagated broadly can take 3-6 years. In order to start issuing widely trusted certificates as soon as possible, we partnered with another CA, IdenTrust, which has a number of existing trusted roots. As part of that partnership, an IdenTrust root “vouches for” the certificates that we issue, thus making our certificates trusted. We’re incredibly grateful to IdenTrust for helping us to start carrying out our mission as soon as possible.
 
-<center><p><img src="/images/le-firefox-chain-of-trust.png" alt="Chain of trust between Firefox and Let's Encrypt certificates." style="width: 650px; margin-bottom: 17px;"/><br><em>Chain of Trust Between Firefox and Let's Encrypt Certificates</em></p></center>
+<p class="text-center"><img src="/images/le-firefox-chain-of-trust.png" alt="Chain of trust between Firefox and Let's Encrypt certificates." style="width: 650px; margin-bottom: 17px;"/><br><em>Chain of Trust Between Firefox and Let's Encrypt Certificates</em></p>
 
 However, our plan has always been to operate as an independently trusted CA. Having our root trusted directly by the Mozilla root program represents significant progress towards that independence.
 

@@ -2,8 +2,10 @@
 title: Memulai
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
+
+{{< lastmod >}}
 
 Untuk mengaktifkan HTTPS pada website, anda membutuhkan sebuah sertifikat (sebuah tipe dari *file*)
 dari Otoritas Sertifikasi (CA). Let's Encrypt adalah CA. Untuk mendapatkan sertifikat untuk domain
@@ -14,7 +16,7 @@ tersebut. Dengan Let's Encrypt, anda melakukannya dengan menggunakan perangkat-l
 Untuk mengetahui metode terbaik untuk anda, anda harus mengetahui apakah anda memiliki
 [akses *shell*](https://en.wikipedia.org/wiki/Shell_account) (juga diketahui sebagai SSH)
 ke host web anda. Jika anda mengontrol situs web anda seluruhnya melalui panel kontrol
-seperti [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/), or
+seperti [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), or
 [WordPress](https://wordpress.org/), kemungkinan besar anda tidak akan mendapatkan
 akses *shell* tersebut. Anda dapat menanyakan hal tersebut ke penyedia layanan anda
 untuk lebih yakin.
@@ -29,11 +31,11 @@ dan memiliki dokumentasi yang bagus. [Kunjungi situs Certbot][Certbot] untuk mel
 instruksi kostumisasi untuk sistem operasi dan web server anda.
 
 Jika [Certbot] tidak sesuai dengan kebutuhan anda, atau anda ingin mencoba yang lain,
-ada [banyak Klien ACME yang dapat anda pilih]({{< relref "/docs/client-options.md" >}}). Setelah anda
+ada {{<link "banyak Klien ACME yang dapat anda pilih" "/docs/client-options" >}}. Setelah anda
 memili Klien ACME anda, lihat dokumentasi untuk klien tersebut untuk melanjutkan.
 
-Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*]({{< relref "/docs/staging-environment.md" >}})
-untuk menghindari [pembatasan pemanggilan]({{< relref "/docs/rate-limits.md" >}}).
+Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan {{<link "lingkungan *staging*" "/docs/staging-environment" >}}
+untuk menghindari {{<link "pembatasan pemanggilan" "/docs/rate-limits" >}}.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

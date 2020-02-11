@@ -5,6 +5,8 @@ top_graphic: 1
 lastmod: 2019-07-03
 ---
 
+{{< lastmod >}}
+
 ## Multi-Perspective Validation
 
 Derzeit erfolgt die Validierung von einem einzigen Netzwerk aus. Wir planen die Validierung auf mehrere Netzwerke zu erweitern.
@@ -19,7 +21,7 @@ Derzeit signiert Let's Encrypt nur Endentität Zertifikate mit RSA Zwischenzerti
 
 * Aktiviert: 15. Mai 2019
 
-Wir haben einen [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}) in Betrieb genommen.
+Wir haben einen {{<link "Certificate Transparency log" "/docs/ct-logs" >}} in Betrieb genommen.
 
 ## TLS ALPN Challenge Support
 

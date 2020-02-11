@@ -2,12 +2,14 @@
 title: Beteiligen Sie sich
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
     parent: donate
 ---
+
+{{< lastmod >}}
 
 ## Community
 
@@ -15,11 +17,11 @@ Wir können immer Hilfe bei der Beantwortung von Fragen auf [Let's Encrypt Commu
 
 ## Code
 
-Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer code ist auf [GitHub](https://github.com/letsencrypt/).
+Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer Code ist auf [GitHub](https://github.com/letsencrypt/).
 
 ### Client Software
 
-[Certbot](https://github.com/certbot/certbot) ist ein auf Python basierendes Werkzeug, welches auf Ihrem Webserver arbeitet, um automatisch ein Zertifikat abzuholen und die Webseite to HTTPS zu konvertieren. Certbot ist das Werkzeug, welches wir empfehlen und mit dem die meisten Leute starten. Viele andere [Drittanbieterwerkzeuge]({{< relref "/docs/client-options.md" >}}) sind verfügbar.
+[Certbot](https://github.com/certbot/certbot) ist ein auf Python basierendes Werkzeug, welches auf Ihrem Webserver arbeitet, um automatisch ein Zertifikat abzuholen und die Webseite to HTTPS zu konvertieren. Certbot ist das Werkzeug, welches wir empfehlen und mit dem die meisten Leute starten. Viele andere {{<link "Drittanbieterwerkzeuge" "/docs/client-options" >}} sind verfügbar.
 
 ### Server-side CA Software
 
@@ -28,7 +30,3 @@ Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer code 
 ### letsencrypt.org
 
 Sie können diese Webseite und die Dokumentation [hier](https://github.com/letsencrypt/website) verbessern oder helfen Sie mit [Übersetzungen](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
-
-## Protokoil
-
-Die Let's Encrypt CA kommuniziert mit der Zertifikatsverwaltungssoftware, welche auf dem Webserver läuft.  Das Protokoll dafür wird ACME genannt, für "Automated Certificate Management Environment". Der Entwurf der ACME Spezifikation ist [auf Github verfügbar](https://github.com/ietf-wg-acme/acme). Er ist auf dem Weg durch den IETF zur Finalisierung als offener Standard. Sie können der Entwicklerdiskussion zum ACME Protokoll auf [dieser IETF Mailingliste](https://www.ietf.org/mailman/listinfo/acme) beitreten.

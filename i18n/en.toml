@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt is a <span>free</span>, <span>automated</span>, and <span>open</span> Certificate Authority."
+other = "A nonprofit Certificate Authority providing TLS certificates to <span>180 million</span> websites."
 
 [home_hero_getting_started]
 other = "Get Started"
@@ -11,6 +11,15 @@ other = "Donate"
 
 [home_hero_sponsor]
 other = "Sponsor"
+
+[home_hero_annual_report]
+other = "Read our 2019 Annual Report"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
 
 [home_major_sponsors]
 other = "Major Sponsors and Donors"
@@ -56,6 +65,9 @@ other = "Platinum"
 
 [gold]
 other = "Gold"
+
+[gold_basic]
+other = "Gold Basic"
 
 [silver]
 other = "Silver"
@@ -113,14 +125,11 @@ other = "Percent of Pageloads over HTTPS (14 day moving average)"
 [certificate_transparency_name]
 other = "Name"
 
-[certificate_transparency_role]
-other = "Role"
-
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -148,3 +157,30 @@ other = "Differences from ACME RFC"
 
 [onboarding_customers]
 other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"
+
+[paypal_donate_title]
+other = "Donate with PayPal"
+
+[not_found]
+other = "That page doesn't exist, please check the address."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/yr (USD)"
+
+[3y_commitment]
+other = "with a 3-year commitment"
+
+[1_99_employees]
+other = "1-99 employees"
+
+[100_999_employees]
+other = "100-999 employees"
+
+[1000_employees]
+other = "1000+ employees"

@@ -1,0 +1,6 @@
+{
+    "files": {
+        "include": "src/css/*.scss",
+        "ignore": "src/css/_pure.scss"
+    }
+}

@@ -2,12 +2,14 @@
 title: 帮助 Let's Encrypt
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
     parent: donate
 ---
+
+{{< lastmod >}}
 
 ## 社区论坛
 
@@ -19,7 +21,7 @@ menu:
 
 ### 客户端软件
 
-[Certbot](https://github.com/certbot/certbot) 是使用 Python 编写的帮助 Web 服务器自动获取证书并配置 HTTPS 的实用程序。Certbot 是我们建议大多数人使用的客户端。此外还有许多其他[第三方客户端]({{< relref "/docs/client-options.md" >}})可用。
+[Certbot](https://github.com/certbot/certbot) 是使用 Python 编写的帮助 Web 服务器自动获取证书并配置 HTTPS 的实用程序。Certbot 是我们建议大多数人使用的客户端。此外还有许多其他{{<link "第三方客户端" "/docs/client-options" >}}可用。
 
 ### 服务器端 CA 软件
 
@@ -28,7 +30,3 @@ Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 签发
 ### letsencrypt.org
 
 您可以在[此处](https://github.com/letsencrypt/website)改进本网站和文档或帮助我们[翻译](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)网站。
-
-## 协议
-
-Let's Encrypt CA 与在网站服务器上运行的证书管理软件进行通信。通信时使用的协议称为 ACME（自动证书管理环境）。ACME 协议草案可在 [Github](https://github.com/ietf-wg-acme/acme) 上获得。IETF 正在努力工作以将 ACME 定为真正的开放标准。您可以加入[此 IETF 邮件列表](https://www.ietf.org/mailman/listinfo/acme)讨论 ACME 协议的开发。
