@@ -38,6 +38,7 @@
 
       <div class="footer-col  footer-col-2">
         <p class="text">{{ .Site.Params.description | safeHTML }}</p>
+        <p class="text">
         <div itemscope itemtype="http://schema.org/PostalAddress">
           <span itemprop="streetAddress">1 Letterman Drive, Suite D4700</span>,
           <span itemprop="addressLocality">San Francisco</span>,
@@ -45,7 +46,13 @@
           <span itemprop="postalCode">94129</span>,
           <span itemprop="addressCountry">USA</span>
         </div>
-        <p class="text">{{ i18n "linux_foundation_trademark" }}</p>
+        </p>
+        <p class="text">
+        <div class="linux-foundation-link">
+          <a href="https://collabprojects.linuxfoundation.org/" target="_blank"><img src="/images/linux-foundation.png" alt="Linux Foundation Collaborative Projects" /></a>
+        </div>
+        {{ i18n "linux_foundation_trademark" }}
+        </p>
       </div>
     </div>
 
