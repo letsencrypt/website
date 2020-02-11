@@ -66,6 +66,9 @@ other = "Bạch Kim"
 [gold]
 other = "Vàng"
 
+[gold_basic]
+other = "Vàng Cơ Bản"
+
 [silver]
 other = "Bạc"
 
@@ -165,3 +168,19 @@ other = "Đóng góp với PayPal"
 
 [not_found]
 other = "Trang không tồn tại, vui lòng kiểm tra lại địa chỉ."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/năm (USD)"
+
+[3y_commitment]
+other = "với cam kết 3 năm"
+
+[1_99_employees]
+other = "1-99 nhân viên"
+
+[100_999_employees]
+other = "100-999 nhân viên"
+
+[1000_employees]
+other = "1000+ nhân viên"
