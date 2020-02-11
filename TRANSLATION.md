@@ -20,7 +20,6 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 You can start translating the files that are inside `content\XX\`:
 
 * Copy the English version of the file you wish to translate into `content\XX\`
-* If the header of the file contains "`aliases:`", **you must remove the line with "`aliases:`"**
 * Do **not** change `date` or `lastmod` : they must correspond to the the English version (and not when the translation occured: it's used to detect when a translation is out-of-sync)
 * If your translation takes time, please open early a draft pull-request so others know you are working on it
 

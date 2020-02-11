@@ -4,7 +4,6 @@ linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
 lastmod: 2020-02-07
-aliases: [/certs]
 ---
 
 {{< lastmod >}}
