@@ -9,8 +9,7 @@ date: 2019-12-21
 
 Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine
 Datei) von einer Zertifizierungsstelle (CA). Let's Encrypt ist eine CA. Um für
-Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, haben Sie
-zu demonstrieren, dass Sie die Kontrolle über diese Domain haben.
+Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, müssen Sie nachweisen, dass Sie die Kontrolle über diese Domain haben.
 Mit Let's Encrypt benutzen Sie Software, die das
 [ACME Protokoll](https://ietf-wg-acme.github.io/acme/) benutzt, welches
 typischerweise auf Ihrem Web-Host läuft.
@@ -18,7 +17,7 @@ typischerweise auf Ihrem Web-Host läuft.
 Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig
 herauszufinden, ob Sie zu Ihrer Webseite 
 [Shell Zugang](https://en.wikipedia.org/wiki/Shell_account) haben (auch bekannnt
-als SSH Zugang). Wenn Sie Ihre Webseite durch ein Kontrollschnittstelle verwalten
+als SSH Zugang). Wenn Sie Ihre Webseite durch eine Kontrollschnittstelle verwalten
 wie [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/) oder
 [WordPress](https://wordpress.org/), dann haben Sie wahrscheinlich keinen Shell
 Zugang. Sicherheitshalber können Sie Ihren Diensteanbieter fragen.

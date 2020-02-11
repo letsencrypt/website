@@ -18,7 +18,7 @@ menu:
 * [Общие вопросы](#general)
 * [Технические вопросы](#technical)
 
-# <a name="general">Общие вопросы</a>
+# <a id="general">Общие вопросы</a>
 
 ## Какие услуги предлагает Let's Encrypt?
 
@@ -54,7 +54,7 @@ https://safebrowsing.google.com/safebrowsing/report\_badware/
 
 Хотите узнать больше? Ознакомьтесь со статьёй [из нашего блога](/2015/10/29/phishing-and-malware.html).
 
-# <a name="technical">Технические вопросы</a>
+# <a id="technical">Технические вопросы</a>
 
 ## Примет ли мой браузер сертификаты от Let’s Encrypt?
 

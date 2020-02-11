@@ -19,4 +19,7 @@
     {{ with .Site.Home.OutputFormats.Get "RSS" -}}
     <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
     {{ end  }}
+    {{ if .Page.Params.do_not_index }}
+    <meta name="robots" content="noindex">
+    {{ end }}
 </head>

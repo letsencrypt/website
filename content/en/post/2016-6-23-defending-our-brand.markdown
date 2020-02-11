@@ -21,8 +21,8 @@ Since March of 2016 we have repeatedly asked Comodo to abandon their “Let’s 
 
 If necessary, we will vigorously defend the Let’s Encrypt brand we’ve worked so hard to build. That said, our organization has limited resources and a protracted dispute with Comodo regarding its improper registration of our trademarks would significantly and unnecessarily distract both organizations from the core mission they should share: creating a more secure and privacy-respecting Web. We urge Comodo to do the right thing and abandon its “Let’s Encrypt” trademark applications so we can focus all of our energy on improving the Web.
 
-<a name="1"></a>\[1\] [“Let’s Encrypt” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790719&caseType=SERIAL_NO&searchType=statusSearch)
+<a id="1"></a>\[1\] [“Let’s Encrypt” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790719&caseType=SERIAL_NO&searchType=statusSearch)
 
-<a name="2"></a>\[2\] [“Let’s Encrypt With Comodo” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790812&caseType=SERIAL_NO&searchType=statusSearch)
+<a id="2"></a>\[2\] [“Let’s Encrypt With Comodo” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790812&caseType=SERIAL_NO&searchType=statusSearch)
 
-<a name="3"></a>\[3\] [“Comodo Let’s Encrypt” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790789&caseType=SERIAL_NO&searchType=statusSearch)
+<a id="3"></a>\[3\] [“Comodo Let’s Encrypt” Trademark Registration Application](https://tsdr.uspto.gov/#caseNumber=86790789&caseType=SERIAL_NO&searchType=statusSearch)
