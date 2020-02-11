@@ -811,10 +811,10 @@
 			"acme_v2": "true"
 		},
 		{
-			"name": "LEND",
-			"url": "https://www.rhpconsult.com/lend.html",
+			"name": "CertMatica",
+			"url": "https://www.rhpconsult.com/products.html",
 			"category": "Domino",
-			"comments": "(Let's Encrypt™ certificate renewals for Notes/Domino)",
+			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
 			"acme_v2": "true"
 		}
 	]
