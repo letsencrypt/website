@@ -15,7 +15,10 @@ aliases:
 
 To enumerate the included roots in a CT log, you can run the following command in the terminal of your choice:
 ```sh
-for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do echo '------'; echo "${i}" | base64 -d | openssl x509 -inform der -noout -issuer -serial; done
+for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do \
+    echo '------'; \
+    echo "${i}" | base64 -d | openssl x509 -inform der -noout -issuer -serial; \
+done
 ```
 
 <p>Sign up for notifications in the <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">CT announcements category</a> of our community forum to see major announcements about our CT logs.</p>
