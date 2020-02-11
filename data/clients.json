@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-10",
+	"lastmod": "2020-02-11",
 	"categories": [
 		"Bash",
 		"C",
@@ -7,6 +7,7 @@
 		"Clojure",
 		"Configuration management tools",
 		"D",
+		"Domino",
 		"Docker",
 		"Go",
 		"HAProxy",
@@ -829,6 +830,13 @@
 			"url": "https://gitlab.com/sinclair2/bacme",
 			"category": "Bash",
 			"comments": "(simple yet complete scripting of certificate generation)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "CertMatica",
+			"url": "https://www.rhpconsult.com/products.html",
+			"category": "Domino",
+			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
 			"acme_v2": "true"
 		}
 	]
