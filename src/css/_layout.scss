@@ -17,43 +17,20 @@
 }
 
 .site-header {
-    min-height: 108px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
-
-  .linux-foundation-link {
-    float: right;
-    margin-top: 5px;
-
-    @include media-query($on-palm) {
-      float: none;
-    }
-
-    img {
-      display: block;
-      
-      @include media-query($on-palm) {
-        margin: 0 auto;
-      }
-    }
-  }
 }
 
 .site-title {
-    margin-bottom: 7px;
     margin-left: 0px;
-    margin-top: 7px;
     padding-left: 0px;
-    font-size: 26px;
-    line-height: 56px;
     letter-spacing: -1px;
     float: left;
 
     img {
         max-width: 250px;
-        margin-bottom: 18px;
-        margin-top:10px;
+        margin-bottom: 14px;
+        margin-top:14px;
 
         @include media-query($on-palm) {
             max-width: 200px;

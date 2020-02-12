@@ -25,6 +25,7 @@
 * {{ template "link" (dict "context" . "page" "/docs/challenge-types") }}
 * {{ template "link" (dict "context" . "page" "/docs/ct-logs") }}
 * {{ template "link" (dict "context" . "page" "/docs/godaddy") }}
+* {{ template "link" (dict "context" . "page" "/docs/ipv6") }}
 * [{{ i18n "onboarding_customers" }}](/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html)
 
 # {{ i18n "client_developer_information" }}

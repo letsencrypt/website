@@ -1,7 +1,7 @@
 [build]
 
 publish = "public/"
-command = "npm run build"
+command = "hugo -d public"
 
 [build.environment]
 HUGO_VERSION = "0.62.0"
@@ -9,6 +9,24 @@ HUGO_VERSION = "0.62.0"
 [[redirects]]
 from = "/jobs"
 to = "https://www.abetterinternet.org/careers"
+status = 302
+force = false
+
+[[redirects]]
+from = "/certs"
+to = "/certificates"
+status = 302
+force = false
+
+[[redirects]]
+from = "/howitworks"
+to = "/getting-started"
+status = 302
+force = false
+
+[[redirects]]
+from = "/ct-logs"
+to = "/docs/ct-logs"
 status = 302
 force = false
 
@@ -81,5 +99,11 @@ force = false
 [[redirects]]
 from = "/zh-tw/*"
 to = "/zh-tw/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/vi/*"
+to = "/vi/404.html"
 status = 404
 force = false

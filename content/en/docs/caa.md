@@ -30,8 +30,7 @@ provider is listed, you can use
 set of CAA records listing the CAs that you would like to allow.
 
 Let's Encrypt's identifying domain name for CAA is `letsencrypt.org`. This is
-officially documented [in our Certification Practice Statement
-(CPS), section 4.2.1]({{< relref "/repository" >}}).
+officially documented {{<link "in our Certification Practice Statement (CPS), section 4.2.1" "/repository" >}}.
 
 ## Where to put the record
 

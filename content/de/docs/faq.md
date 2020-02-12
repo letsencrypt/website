@@ -18,7 +18,7 @@ Diese FAQ ist in folgende Sektionen unterteilt:
 * [Allgemeine Fragen](#general)
 * [Technische Fragen](#technical)
 
-# <a name="general">Allgemeine Fragen</a>
+# <a id="general">Allgemeine Fragen</a>
 
 ## Welche Dienste bietet Let's Encrypt an?
 
@@ -32,7 +32,7 @@ Um mit Let's Encrypt zu beginnen, besuchen Sie bitte {{<link "Erste Schritte" "/
 
 Wir erheben keine Gebühr für unsere Zertifikate. Let's Encrypt ist gemeinnützig, unsere Mission ist die Erstellung eines sicheren Webs, welches die Privatsphäre akzeptiert durch weite Verbreitung von HTTPS. Unsere Dienste sind frei und einfach zu benutzen, sodass jede Webseite HTTPS bereitstellen kann.
 
-Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine {{<link "Spende" "/donate.html" >}} oder {{<link "werden Sie Sponsor" "/become-a-sponsor.html" >}}.
+Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine {{<link "Spende" "/donate" >}} oder {{<link "werden Sie Sponsor" "/become-a-sponsor" >}}.
 
 In einigen Fällen wird Integratoren (z.B. Hosting-Provider) eine geringe Gebühr für Verwaltungsaufwand berechnet.
 
@@ -55,7 +55,7 @@ Wenn Sie mehr über Regeln und Gründe lesen wollen, so können Sie das hier (in
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Technische Fragen</a>
+# <a id="technical">Technische Fragen</a>
 
 ## Wird Zertifikaten von Let's Encrypt von meinem Browser vertraut?
 

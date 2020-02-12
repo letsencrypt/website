@@ -3,7 +3,7 @@ title: Contact
 slug: contact
 description: How to contact us
 top_graphic: 1
-lastmod: 2020-01-29
+lastmod: 2020-02-05
 menu:
   main:
     weight: 90
@@ -20,9 +20,7 @@ Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mailing Lists
-
-For information about various technical mailing lists, please visit our {{<link "Get Involved" "/getinvolved" >}} page.
+## Mailing List
 
 To sign up for our newsletter, [click here.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 

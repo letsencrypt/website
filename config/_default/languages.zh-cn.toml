@@ -1,0 +1,13 @@
+title = "Let's Encrypt - 免费的SSL/TLS证书"
+contentDir = "content/zh-cn"
+languageName = "简体中文"
+languageCode = "zh-Hans-CN"
+beforeColon = ""
+weight = 750
+description = """
+  Let's Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
+  style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
+"""
+paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|"

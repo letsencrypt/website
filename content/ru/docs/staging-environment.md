@@ -32,7 +32,7 @@ ACME URL нашего [тестового сервера ACME v2](https://commun
 
 # Прозрачность сертификата
 
-Тестовое окружение отправляет предварительные сертификаты в логи тестирования CT Let's Encrypt {{<link "Testflume" "/docs/ct-logs.html" >}} и Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) и включает возвращенные SCT в выпущенные сертификаты.
+Тестовое окружение отправляет предварительные сертификаты в логи тестирования CT Let's Encrypt {{<link "Testflume" "/docs/ct-logs" >}} и Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) и включает возвращенные SCT в выпущенные сертификаты.
 
 # Непрерывная интеграция (CI) / Разработка
 

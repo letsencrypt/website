@@ -13,7 +13,7 @@ Let’s Encrypt is leaving beta today. We’re also excited to announce that fou
 
 Since our beta began in September 2015 we’ve issued more than 1.7 million certificates for more than 3.8 million websites. We’ve gained tremendous operational experience and confidence in our systems. The beta label is simply not necessary any more.
 
-<center><img src="/images/Issuance-April-10-2016.png" alt="Issuance as of April 10, 2016" style="width: 650px; margin-bottom: 17px;"/></center>
+<p class="text-center"><img src="/images/Issuance-April-10-2016.png" alt="Issuance as of April 10, 2016" style="width: 650px; margin-bottom: 17px;"/></p>
 
 We set out to encrypt 100% of the Web. We’re excited to be off to a strong start, and with so much support across the industry.
 
