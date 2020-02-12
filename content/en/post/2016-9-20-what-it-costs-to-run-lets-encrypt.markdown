@@ -16,7 +16,6 @@ We’re currently working to raise the money we need to operate through the next
 
 Here’s how our 2017 budget breaks down:
 
-<p>
 <table style="border: 1px solid gray; width: 90%; margin: auto">
   <tr style="background-color: #99CCFF;">
     <th style="font-weight: bold; text-align: left; padding: 5px; border: 1px solid gray;">Expense</th>
@@ -43,7 +42,6 @@ Here’s how our 2017 budget breaks down:
     <th style="font-weight: bold; text-align: left; padding: 5px; border: 1px solid gray;">$2.91M USD</th>
   </tr>  
 </table>
-</p>
 
 Staffing is our dominant cost. We currently have eight full time employees, plus two full time staff that are employed by other entities (Mozilla and EFF). This includes five operations/sysadmin staff, three software developers, one communications and fundraising person, and an executive director. Our 2017 budget covers salary and benefits for ten employees.
 
