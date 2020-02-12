@@ -5,6 +5,20 @@
     float: right;
     margin-top: 29px;
 
+    // Below this width the menu items may wrap below the logo.
+    // Have them wrap at a predictable width, justify left,
+    // and get rid of the top margin. Also eliminate left margin
+    // on first menu item because of left justification.
+    @media screen and (max-width: 1050px) {
+      clear: left;
+      float: left;
+      margin-top: 0px;
+
+      .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:first-child > a.pure-menu-link {
+        padding-left: 0;
+      }
+    }
+
     #menuIcon {
         display: none;
     }
@@ -24,12 +38,6 @@
     }
 }
 
-@media (max-width: 830px) {
-    .pure-menu-horizontal > .pure-menu-list > .pure-menu-item a.pure-menu-link {
-        padding-left: 0.5em;
-        padding-right: 0.5em
-    }
-}
 #menuIcon {
     display: none;
 }
