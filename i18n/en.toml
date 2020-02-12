@@ -137,6 +137,12 @@ other = "URI"
 [certificate_transparency_public_key]
 other = "Public Key"
 
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "State"
+
 [overview]
 other = "Overview"
 

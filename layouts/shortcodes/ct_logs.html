@@ -16,7 +16,13 @@
             <li>
             <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .log | humanize }} {{ .shard }}</strong><br>
             {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: https://{{ .log }}.ct.letsencrypt.org/{{ .shard }}<br>
-            {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
+            {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code><br>
+            {{ i18n "certificate_transparency_log_id" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .logID }}</code><br>
+
+            {{/* States are only for production logs. */}}
+            {{ if .state }}
+                {{ i18n "certificate_transparency_state" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .state }}
+            {{ end }}
             </li>
             {{ end }}
         {{ end }}
