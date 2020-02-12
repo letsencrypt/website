@@ -8,7 +8,7 @@
         {
             "log": "oak",
             "shard": "2019",
-            "state": "Usable",
+            "state": "Rejected",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==",
             "logID": "65:9B:33:50:F4:3B:12:CC:5E:A5:AB:4E:C7:65:D3:FD:E6:C8:82:43:77:77:78:E7:20:03:F9:EB:2B:8C:31:29"
