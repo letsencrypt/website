@@ -1,19 +1,17 @@
-@charset "utf-8";
-
-
+@charset 'utf-8';
 
 // Our variables
-$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size * .875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #000000;
+$text-color:       #000;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$secondary-color:  #1678D3;
+$secondary-color:  #1678d3;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -32,35 +30,35 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 .dashboard {
-    text-align: center;
+  text-align: center;
 }
 
 .statsgraph {
-    display: block;
-    text-align: center;
-    max-width: 100%;
-    width: 100%;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
-img.inline-icon {
-    height: 1.5em;
-    width: 1.5em;
+inline-icon {
+  height: 1.5em;
+  width: 1.5em;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "fonts",
-        "pure",
-        "base",
-        "layout",
-        "nav",
-        "syntax-highlighting",
-        "donate",
-        "fundraiser"
+'fonts',
+'pure',
+'base',
+'layout',
+'nav',
+'syntax-highlighting',
+'donate',
+'fundraiser'
 ;
