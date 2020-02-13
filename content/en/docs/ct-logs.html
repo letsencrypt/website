@@ -62,7 +62,7 @@ openssl s_client \
 sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > example.crt
 </pre>
 
-<p>To <i>easily</i> submit the certificate above to a CT log, you can use the JSON generator provided by <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>. The crt.sh utility will return a JSON bundle. With the JSON bundle downloaded to your computer, issue the following command to perform the add-chain operation (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) to submit the certificate to a CT log. The output will be an <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">Precertificate SCT</a>.</p>
+<p>To <i>easily</i> submit the certificate above to a CT log, you can use the JSON generator provided by <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>. The crt.sh utility will return a JSON bundle. With the JSON bundle downloaded to your computer, issue the following command to perform the add-chain operation (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) to submit the certificate to a CT log. The output will contain a signature which is in fact an <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. More on the signature in a moment.</p>
 <pre>
 $ curl \
     -X POST \
@@ -79,7 +79,7 @@ $ base64 -d <<< "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | 
 E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
 </pre>
 
-<p>Convert the SCT retrieved from a log into an openssl version. A particular certificate may not contain an SCT from all logs the certificate was submitted to.</p>
+<p>Using the signature field, we can verify that the certificate was submitted to a log. Using our i<a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT deep dive guide</a>, you could further decode this value.</p>
 <pre>
 $ base64 -d <<< "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
@@ -87,6 +87,4 @@ $ base64 -d <<< "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkK
 5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
 2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
 47:5F:80:C5:81:F8:0D:B2:1E:2F:84
-
-$
 </pre>
