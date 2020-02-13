@@ -25,6 +25,7 @@ The number of certificates and unique domains we support continues to grow rapid
 <div class="figure">
   <div id="activeUsage" title="Let's Encrypt Growth" class="statsgraph"></div>
 </div>
+
 <script src="/js/stats.js" async></script>
 <script src="/js/plotly-min.js" async></script>
 
