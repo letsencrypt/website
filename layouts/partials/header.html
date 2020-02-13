@@ -36,7 +36,7 @@
           {{ end }}
           {{ if gt (len $langs ) 1 }}
           <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="#" class="pure-menu-link">{{ i18n "languages" }} <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
+            <a href="#" class="pure-menu-link" tabindex="0">{{ i18n "languages" }} <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
             <ul class="pure-menu-children">
               {{ range $langs }}
               {{ $isCurrentLang := eq $home.Language .Language }}
