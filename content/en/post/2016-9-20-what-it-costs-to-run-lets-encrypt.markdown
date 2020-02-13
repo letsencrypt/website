@@ -16,6 +16,7 @@ We’re currently working to raise the money we need to operate through the next
 
 Here’s how our 2017 budget breaks down:
 
+<p></p>
 <table style="border: 1px solid gray; width: 90%; margin: auto">
   <tr style="background-color: #99CCFF;">
     <th style="font-weight: bold; text-align: left; padding: 5px; border: 1px solid gray;">Expense</th>
