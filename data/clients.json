@@ -389,9 +389,9 @@
 			"category": "PHP"
 		},
 		{
-			"name": "Decoupled Lets Encrypt client",
+			"name": "Yet another ACME client",
 			"acme_v2": "true",
-			"url": "https://github.com/afosto/yalec",
+			"url": "https://github.com/afosto/yaac",
 			"category": "PHP"
 		},
 		{
