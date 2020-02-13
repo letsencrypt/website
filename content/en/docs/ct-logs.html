@@ -52,7 +52,7 @@ $ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r
 done
 </pre>
 
-<p>We'll begin our expirement by retrieving an arbitrary PEM encoded certificate from our favorite website. Copy and paste the block into your terminal.</p>
+<p>Submitting certificates to a CT log is typically handled by certificate authorities. If you'd like to expiriment with this, begin by retrieving an arbitrary PEM encoded certificate from our favorite website. Copy and paste the following block into your terminal.</p>
 <pre>
 $ echo | \
 openssl s_client \
@@ -62,7 +62,7 @@ openssl s_client \
 sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
-<p>To <i>easily</i> submit the certificate above to a CT log, you can use the JSON generator provided by <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>. The crt.sh utility will return a JSON bundle. With the JSON bundle downloaded to your computer, issue the following command to perform the add-chain operation (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) to submit the certificate to a CT log. The output will contain a signature which is in fact an <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. More on the signature in a moment.</p>
+<p>Before a certificate can be submitted, it must be JSON encoded within a special structure. You can use the JSON generator provided by <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> to perform this task. The crt.sh utility will return a JSON bundle. Download the bundle to your computer, rename the file if you must, and issue the following command to perform the add-chain operation (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) to submit the certificate to a CT log. The output will contain a signature which is in fact an <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. More on the signature in a moment.</p>
 <pre>
 $ curl \
     -X POST \
