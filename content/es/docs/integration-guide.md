@@ -41,9 +41,9 @@ Además, asegúrese de utilizar una dirección de correo electrónico válida pa
 
 # ¿ Quién es el suscriptor ?
 
-Nuestro [Acuerdo de CPS y Suscriptor]({{<relref "/repository.md">}}) indica que el Suscriptor es quien posee la clave privada para un certificado. Para los proveedores de hosting, ese es el proveedor, no el cliente del proveedor. Si está escribiendo software que las personas implementan, ese es quien está implementando el software.
+Nuestro {{<link "Acuerdo de CPS y Suscriptor" "/repository" >}} indica que el Suscriptor es quien posee la clave privada para un certificado. Para los proveedores de hosting, ese es el proveedor, no el cliente del proveedor. Si está escribiendo software que las personas implementan, ese es quien está implementando el software.
 
-El correo electrónico de contacto proporcionado al crear cuentas (también conocido como registros) debe ir al Suscriptor. Le enviaremos un correo electrónico a esa dirección para advertirle de los certificados que expiran y notificarle sobre los cambios en nuestra [política de privacidad]({{<relref "/privacy.md">}}). Si usted es un proveedor de alojamiento, esas notificaciones deberían llegarle a usted en lugar de a un cliente. Lo ideal sería configurar una lista de correo o un alias, para que varias personas puedan responder a las notificaciones, en caso de que esté de vacaciones.
+El correo electrónico de contacto proporcionado al crear cuentas (también conocido como registros) debe ir al Suscriptor. Le enviaremos un correo electrónico a esa dirección para advertirle de los certificados que expiran y notificarle sobre los cambios en nuestra {{<link "política de privacidad" "/privacy" >}}. Si usted es un proveedor de alojamiento, esas notificaciones deberían llegarle a usted en lugar de a un cliente. Lo ideal sería configurar una lista de correo o un alias, para que varias personas puedan responder a las notificaciones, en caso de que esté de vacaciones.
 
 El resultado de esto es que, si usted es un proveedor de alojamiento, no necesita enviarnos las direcciones de correo electrónico de sus clientes ni hacer que acepten nuestro Acuerdo de Suscriptor. Simplemente puede emitir certificados para los dominios que controla y comenzar a usarlos.
 
@@ -55,7 +55,7 @@ Sin embargo, para la mayoría de los proveedores de alojamiento más grandes, re
 
 # Certificados (SAN) Multi-dominio 
 
-Nuestra [política de emisión]({{<relref "/docs/rate-limits.md">}}) permite hasta 100 nombres por certificado. Depende de usted si utiliza un certificado separado para cada nombre de host o si agrupa muchos nombres de host en una pequeña cantidad de certificados.
+Nuestra {{<link "política de emisión" "/docs/rate-limits" >}} permite hasta 100 nombres por certificado. Depende de usted si utiliza un certificado separado para cada nombre de host o si agrupa muchos nombres de host en una pequeña cantidad de certificados.
 
 El uso de certificados separados por nombre de host significa que se requieren menos partes móviles para agregar y eliminar dominios a medida que se aprovisionan y retiran. Los certificados separados también minimizan el tamaño del certificado, lo que puede acelerar los saludos HTTPS en redes de bajo ancho de banda.
 

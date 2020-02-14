@@ -2,7 +2,7 @@
 <div class="hero tall">
   <div class="container">
     <h1>{{ i18n "home_hero_title" | safeHTML }}</h1>
-    <h2>Read our 2019 Annual Report (<a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf">Desktop</a>, <a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf">Mobile</a>)</h2>
+    <h2>{{ i18n "home_hero_annual_report" | safeHTML }} (<a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf">{{ i18n "home_hero_desktop" | safeHTML }}</a>, <a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf">{{ i18n "home_hero_mobile" | safeHTML }}</a>)</h2>
     <div class="buttons flex">
       <div class="flex1 tar mr1m">
         <a class="dib" href="{{ "getting-started/" | relLangURL }}">{{ i18n "home_hero_getting_started" | safeHTML }}</a>
@@ -27,14 +27,14 @@
                   <li>
                     <span class="post-meta">{{ .Date.Format $.Site.Params.time_format_default }}</span>
                     <h2>
-                      <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                      <a class="post-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ .Title }}</a>
                     </h2>
                     {{ with .Params.excerpt }}
                       {{ . | markdownify }}
                     {{ else }}
                       {{ .Summary }}
                     {{ end }}
-                    <p><a href="{{ .Permalink }}">{{ i18n "read_more" }}</a></p>
+                    <p><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ i18n "read_more" }}</a></p>
                   </li>
                 {{ end }}
               </ul>
@@ -51,13 +51,13 @@
             <h2 class="through-line"><a href="{{ "sponsors/" | relLangURL }}">{{ i18n "home_major_sponsors" }}</a></h2>
             <div class="text-center home_sponsors">
 {{ range $.Site.Data.sponsors.platinum }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" class="sponsor-logo-small"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.gold }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" class="sponsor-logo-small"></a>
 {{ end }}
 {{ range $.Site.Data.sponsors.silver }}
-              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" style="padding: 10px;"></a>
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" class="sponsor-logo-small"></a>
 {{ end }}
             </div>
           </div>

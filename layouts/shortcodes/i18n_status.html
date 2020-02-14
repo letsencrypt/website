@@ -3,7 +3,7 @@
 {{ $scratch_up_to_date := newScratch }}
 
 {{ $scratch.Set "nb_pages" 0 }}
-<table border="1">
+<table style="border:1px">
   <thead>
     <tr>
       <th></th>
@@ -54,7 +54,7 @@
                 {{ if eq $lang .Language }}
                 
                 {{ if .Params.aliases }}
-                  {{ errorf "Translated page %q mush not have aliases" $page.RelPermalink }}
+                  {{ errorf "Translated page %q must not have aliases" $page.RelPermalink }}
                 {{ end }}
 
                 <a href="{{ .Permalink }}">

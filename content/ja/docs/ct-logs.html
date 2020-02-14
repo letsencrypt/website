@@ -2,7 +2,7 @@
 title: "証明書の透明性 (Certificate Transparency; CT) ログ"
 slug: ct-logs
 top_graphic: 4
-lastmod: 2019-05-15
+lastmod: 2019-11-20
 ---
 
 {{< lastmod >}}
@@ -13,13 +13,13 @@ lastmod: 2019-05-15
 
 <h2>ファンディング</h2>
 
-<p>Let's Encrypt の CT ログを寛大に支援してくれている以下のパートナーに感謝します。私たちがこの仕事を継続できるよう、もしあなたの組織が支援してくれるなら、ぜひ<a href="{{< relref "/become-a-sponsor.html" >}}">スポンサーになる、または、寄付する</a>ことを検討してください。よろしくお願いします。</p>
+<p>Let's Encrypt の CT ログを寛大に支援してくれている以下のパートナーに感謝します。私たちがこの仕事を継続できるよう、もしあなたの組織が支援してくれるなら、ぜひ<a href="{{< relref "/become-a-sponsor" >}}">スポンサーになる、または、寄付する</a>ことを検討してください。よろしくお願いします。</p>
 
-<p><center><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></center></p>
+<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
 
 <h2>アーキテクチャ</h2>
 
-<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。</p>
+<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。さらに詳しい情報は、<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">「How Let's Encrypt Runs CT Logs」</a>という記事で説明しています。</p>
 
 <h2>ログの監視</h2>
 
@@ -27,5 +27,8 @@ lastmod: 2019-05-15
 
 <h2>CT ログ</h2>
 
-{{< ct_logs >}}
+{{< ct_logs data="production" >}}
+{{< /ct_logs >}}
 
+{{< ct_logs data="testing" >}}
+{{< /ct_logs >}}

@@ -6,6 +6,8 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 # Certificats racine
 
 Nos racines sont conservées en toute sécurité hors ligne. Nous émettons des certificats finaux signés par les intermédiaires de la section suivante.
@@ -91,4 +93,4 @@ Nous nous engageons à la transparence dans nos opérations et dans les certific
 
 Les clés privées de l'autorité de certification racine ISRG et des autorités de certification intermédiaires de Let's Encrypt sont stockées sur des modules de sécurité matériels (HSM), qui offrent un degré de protection élevé contre le vol de clés.
 
-Toutes les clés de l'ISRG sont actuellement des clés RSA. Nous [prévoyons de générer des clés ECDSA]({{< relref "/upcoming-features.md" >}}).
+Toutes les clés de l'ISRG sont actuellement des clés RSA. Nous {{<link "prévoyons de générer des clés ECDSA" "/upcoming-features" >}}.

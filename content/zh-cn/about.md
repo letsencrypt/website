@@ -3,7 +3,7 @@ title: 关于 Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-01-28
+lastmod: 2019-11-11
 menu:
   main:
     weight: 10
@@ -13,6 +13,8 @@ menu:
 Let's Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 [Internet Security Research Group（ISRG）](https://www.abetterinternet.org/)提供的服务。
 
 我们以尽可能对用户友好的方式免费提供为网站启用 HTTPS（SSL/TLS）所需的数字证书。这是因为我们想要创建一个更安全，更尊重隐私的 Web 环境。
+
+您可以下载我们的年度报告以阅读我们最近一年的总结 ([电脑下载](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [手机下载](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 Let's Encrypt的关键原则为：
 
@@ -24,4 +26,4 @@ Let's Encrypt的关键原则为：
 * <strong>乐于合作：</strong>就像互联网底层协议本身一样，Let's Encrypt 是为了让整个互联网社区受益而做出的共同努力，它不受任何单一组织的控制。
 
 
-您可以访问[此页面]({{< relref "/how-it-works.md" >}})获取更多关于 Let's Encrypt CA 工作方式的详细信息。
+您可以访问{{<link "此页面" "/how-it-works" >}}获取更多关于 Let's Encrypt CA 工作方式的详细信息。

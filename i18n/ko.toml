@@ -113,13 +113,10 @@ other = "HTTPS를 통한 페이지로드 비율 (14 일 이동 평균)"
 [certificate_transparency_name]
 other = "이름"
 
-[certificate_transparency_role]
-other = "역할"
-
 [certificate_transparency_role_production]
 other = "제작"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "시험"
 
 [certificate_transparency_uri]
@@ -127,9 +124,6 @@ other = "URI"
 
 [certificate_transparency_public_key]
 other = "공개키"
-
-
-
 
 [overview]
 other = "개요"
@@ -146,3 +140,20 @@ other = "클라이언트 개발자 정보"
 [acme_divergences]
 other = "현재 ACME 초안과 다른점"
 
+[paypal_donate_alt]
+other = "Donate with PayPal button"
+
+[amount_per_year]
+other = "${{ .nb }}/년 (미화)"
+
+[3y_commitment]
+other = "3년 약정"
+
+[1_99_employees]
+other = "1-99명 사업장"
+
+[100_999_employees]
+other = "100-999명 사업장"
+
+[1000_employees]
+other = "1000명 이상 사업장"

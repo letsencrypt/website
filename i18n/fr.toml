@@ -12,6 +12,15 @@ other = "Faire un don"
 [home_hero_sponsor]
 other = "Sponsoriser"
 
+[home_hero_annual_report]
+other = "Lisez notre rapport annuel 2019"
+
+[home_hero_desktop]
+other = "Bureau"
+
+[home_hero_mobile]
+other = "Mobile"
+
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
 
@@ -113,14 +122,11 @@ other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jo
 [certificate_transparency_name]
 other = "Nom"
 
-[certificate_transparency_role]
-other = "Rôle"
-
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -148,3 +154,27 @@ other = "Différences par rapport à la RFC d'ACME"
 
 [onboarding_customers]
 other = "Intégrer vos clients avec Let's Encrypt et ACME"
+
+[paypal_donate_alt]
+other = "Bouton Faites un don avec PayPal"
+
+[paypal_donate_title]
+other = "Faites un don avec PayPal"
+
+[not_found]
+other = "Cette page n'existe pas, merci de vérifier l'adresse."
+
+[amount_per_year]
+other = "${{ .nb }}/an (USD)"
+
+[3y_commitment]
+other = "avec un engagement de 3 ans"
+
+[1_99_employees]
+other = "1-99 employés"
+
+[100_999_employees]
+other = "100-999 employés"
+
+[1000_employees]
+other = "1000+ employés"

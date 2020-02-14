@@ -18,7 +18,7 @@ Esta página de Perguntas Frequentes está dividida nas seguintes seções:
 * [Questões Gerais](#general)
 * [Questões Técnicas](#technical)
 
-# <a name="general">Questões Gerais</a>
+# <a id="general">Questões Gerais</a>
 
 ## Que serviços a Let's Encrypt oferece?
 
@@ -26,13 +26,13 @@ A Let's Encrypt é uma Autoridade Certificadora (AC) global. Nós possibilitamos
 
 A Let’s Encrypt oferece Validação de Domínio (VD). Nós não oferecemos Validação de Organização (VO) ou Validação Estendida (VE) principalmente porque não podemos automatizar a emissão de certificados destes tipos. 
 
-Para começar a usar a Let's Encrypt, por favor visite nossa página [Começando a Usar]({{< relref "/getting-started.md" >}}).
+Para começar a usar a Let's Encrypt, por favor visite nossa página {{<link "Começando a Usar" "/getting-started" >}}.
 
 ## Quanto custa usar a Let's Encrypt? Ela é gratuita mesmo?
 
 Não cobramos taxas por nossos certificados. A Let's Encrypt é uma organização sem fins lucrativos, nossa missão é criar uma web mais segura e que respeita a privacidade do usuário promovendo a adoção em larga escala do HTTPS. Nossos serviços são gratuitos e fáceis de se usar de maneira que qualquer site pode adotar o HTTPS.
 
-Nós dependemos do suporte de generosos patrocinadores, doadores e indivíduos para manter nossos serviços gratuitos ao redor do mundo. Se você está interessado em nos ajudar por favor considere [fazer uma doação]({{< relref "/donate.html" >}}) ou [se tornar um patrocinador]({{< relref "/become-a-sponsor.html" >}}).
+Nós dependemos do suporte de generosos patrocinadores, doadores e indivíduos para manter nossos serviços gratuitos ao redor do mundo. Se você está interessado em nos ajudar por favor considere {{<link "fazer uma doação" "/donate" >}} ou {{<link "se tornar um patrocinador" "/become-a-sponsor" >}}.
 
 Em alguns casos, integradores (como serviços de hospedagem) podem cobrar uma taxa que reflete os custos administrativos internos que eles têm ao oferecer suporte a certificados da Let's Encrypt.
 
@@ -55,11 +55,11 @@ Se você quiser ler mais sobre nossas políticas e motivações, você pode faz�
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Questões Técnicas</a>
+# <a id="technical">Questões Técnicas</a>
 
 ## Meu navegador confia nos certificados da Let’s Encrypt?
 
-A resposta para a maioria dos navegadores e sistemas operacionais é: sim. Veja a [lista de compatibilidade]({{< relref "/docs/cert-compat.md" >}}) para mais detalhes.
+A resposta para a maioria dos navegadores e sistemas operacionais é: sim. Veja a {{<link "lista de compatibilidade" "/docs/cert-compat" >}} para mais detalhes.
 
 ## A Let's Encrypt emite certificados SSL/TLS para outros serviços que não sejam websites?
 
@@ -93,7 +93,7 @@ Sim. A emissão de certificados coringa precisa ser feita via ACMEv2 usando o de
 
 ## Existe um cliente da Let's Encrypt (ACME) para o meu sistema operacional?
 
-Existe uma grande quantidade de [clientes ACME]({{< relref "/docs/client-options.md" >}}) disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
+Existe uma grande quantidade de {{<link "clientes ACME" "/docs/client-options" >}} disponível. Há uma boa chance de que algum deles funciona bem no seu sistema operacional. Recomendamos começar usando o [Certbot](https://certbot.eff.org/). 
 
 ## Posso usar uma chave privada já existente ou uma Solicitação de Assinatura de Certificado (SAC)?
 

@@ -2,8 +2,10 @@
 title: Começando a Usar
 slug: getting-started
 top_graphic: 3
-date: 2018-04-12
+date: 2019-12-21
 ---
+
+{{< lastmod >}}
 
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
 provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um
@@ -15,7 +17,7 @@ executado no seu servidor web.
 Para identificar qual método vai funcionar melhor para você, você precisa determinar
 se possui [acesso ao shell](https://en.wikipedia.org/wiki/Shell_account) (também conhecido
 como acesso SSH) no seu serviço de hospedagem. Se você gerencia completamente o seu site através de um
-painel de controle como o [cPanel](https://cpanel.com/), [Plesk](https://www.plesk.com/) ou 
+painel de controle como o [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/) ou 
 [WordPress](https://wordpress.org/) então há uma boa chance de que você não tem acesso 
 ao shell. Você pode perguntar ao seu provedor de hospedagem para ter certeza.
 
@@ -28,12 +30,12 @@ funciona com muitos sistemas operacionais e possui uma ótima documentação. [V
 site do Certbot][Certbot] para obter instruções indicadas para o seu sistema operacional e servidor web.
 
 Se o [Certbot] não suprir suas necessidades ou você prefere usar outra coisa, existem
-[muitos outros clientes ACME para se usar]({{< relref "/docs/client-options.md" >}}). Uma vez que você tenha escolhido um cliente ACME
+{{<link "muitos outros clientes ACME para se usar" "/docs/client-options" >}}. Uma vez que você tenha escolhido um cliente ACME
 , veja a documentação do cliente escolhido para prosseguir.
 
 Se você está experimentando diferentes clientes ACME, use nosso 
-[ambiente de testes]({{< relref "/docs/staging-environment.md" >}}) para evitar atingir
-nossos [limites de uso]({{< relref "/docs/rate-limits.md" >}}).
+{{<link "ambiente de testes" "/docs/staging-environment" >}} para evitar atingir
+nossos {{<link "limites de uso" "/docs/rate-limits" >}}.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

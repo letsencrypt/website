@@ -11,7 +11,7 @@ english_is_canonical: 1
 
 ¡Bienvenido a la Política de Marcas Registradas del Grupo de Investigación de Seguridad de Internet ("ISRG")! Esta política describe las condiciones bajo las cuales usted puede usar nuestras marcas comerciales (colectivamente, las "Marcas ISRG"). Esta política se aplica a todos los usos permitidos en este documento. Además, esta política complementa y se suma a los términos de cualquier otro permiso que le hayamos otorgado con respecto al uso de nuestras marcas comerciales.
 
-Si desea utilizar cualquiera de las Marcas ISRG de alguna manera que no está expresamente permitida por esta política o de otra manera permitida por una excepción de la ley de marcas comerciales como el uso justo, contáctenos directamente en [press@letsencrypt.org](mailto: press@letsencrypt.org). Estaremos encantados de considerar su solicitud de permiso. No importa su nivel de autorización, cualquier buena voluntad generada por el uso de las Marcas ISRG será de beneficio exclusivo de ISRG.
+Si desea utilizar cualquiera de las Marcas ISRG de alguna manera que no está expresamente permitida por esta política o de otra manera permitida por una excepción de la ley de marcas comerciales como el uso justo, contáctenos directamente en [press@letsencrypt.org](mailto:press@letsencrypt.org). Estaremos encantados de considerar su solicitud de permiso. No importa su nivel de autorización, cualquier buena voluntad generada por el uso de las Marcas ISRG será de beneficio exclusivo de ISRG.
 
 ## Intención de la Política de Marcas
 
@@ -117,4 +117,4 @@ La versión amplia de nuestro logo y texto. Use esto en contextos donde el espac
 Nuestro logo solo. Use esto solo cuando la marca de la palabra "Let's Encrypt" sea claramente visible o esté bien establecida en otra parte de la página o en el diseño. (En caso de duda, use un formato diferente).
 
 <p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
-<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>
