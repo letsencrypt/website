@@ -74,7 +74,7 @@ Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden,
 Service-bezogene E-Mails von uns zu erhalten. Sie können sich jederzeit
 von E-Mails mit Dienstbezug abmelden, indem Sie auf den Link „Abmelden“
 unten in unseren E-Mails klicken oder uns unter
-[security@letsencrypt.org](mailto: security@letsencrypt.org)
+[security@letsencrypt.org](mailto:security@letsencrypt.org)
 kontaktieren. Wir werden Ihre Kontaktdaten nicht für Marketing- oder
 Werbezwecke verwenden.
 
@@ -197,4 +197,4 @@ Datenschutzgesetze nicht einhalten, haben Sie das Recht, bei Ihrer
 lokalen Aufsichtsbehörde Beschwerde einzulegen.
 
 Für weitere Informationen oder zur Meldung eines Datenschutzproblems
-wenden Sie sich bitte an: [security@letsencrypt.org](mailto: security@letsencrypt.org)
+wenden Sie sich bitte an: [security@letsencrypt.org](mailto:security@letsencrypt.org)

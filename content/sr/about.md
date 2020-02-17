@@ -25,4 +25,4 @@ Ključni principi koji stoje iza Let's Encrypt su:
 * <strong>Otvoreno:</strong> Protokol za automatsko izdavanje i obnovu sertifikata biće objavljen kao otvoreni standard koji mogu da usvoje i drugi.
 * <strong>Kooperativno:</strong> Slično kao i ostali internet protokoli, Let's Encrypt predstavlja zajednički napor da zajednica ima korist van kontrole bilo koje organizacije.
 
-Imamo stranicu sa više detalja i informacija o [tome kako Let's Encrypt CA funkcioniše]({{< relref "/how-it-works.md" >}}).
+Imamo stranicu sa više detalja i informacija o {{<link "tome kako Let's Encrypt CA funkcioniše" "/how-it-works" >}}.

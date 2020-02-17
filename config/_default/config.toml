@@ -10,6 +10,7 @@ enableRobotsTXT = true
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
 
+assetDir = "src"
 
 [params]
 
@@ -28,6 +29,8 @@ time_format_default = "Jan 2, 2006"
 
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
+
+show_fundraiser = false
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]

@@ -26,4 +26,4 @@ Let's Encrypt的关键原则为：
 * <strong>乐于合作：</strong>就像互联网底层协议本身一样，Let's Encrypt 是为了让整个互联网社区受益而做出的共同努力，它不受任何单一组织的控制。
 
 
-您可以访问[此页面]({{< relref "/how-it-works.md" >}})获取更多关于 Let's Encrypt CA 工作方式的详细信息。
+您可以访问{{<link "此页面" "/how-it-works" >}}获取更多关于 Let's Encrypt CA 工作方式的详细信息。

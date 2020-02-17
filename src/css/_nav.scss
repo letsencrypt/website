@@ -3,8 +3,21 @@
  */
 .site-nav {
     float: right;
-    line-height: 56px;
-    margin-top: 6px;
+    margin-top: 29px;
+
+    // Below this width the menu items may wrap below the logo.
+    // Have them wrap at a predictable width, justify left,
+    // and get rid of the top margin. Also eliminate left margin
+    // on first menu item because of left justification.
+    @media screen and (max-width: 1050px) {
+      clear: left;
+      float: left;
+      margin-top: 0px;
+
+      .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:first-child > a.pure-menu-link {
+        padding-left: 0;
+      }
+    }
 
     #menuIcon {
         display: none;
@@ -25,12 +38,6 @@
     }
 }
 
-@media (max-width: 830px) {
-    .pure-menu-horizontal > .pure-menu-list > .pure-menu-item a.pure-menu-link {
-        padding-left: 0.5em;
-        padding-right: 0.5em
-    }
-}
 #menuIcon {
     display: none;
 }
@@ -52,7 +59,7 @@ a.pure-menu-link:hover {
     text-decoration: none;
 }
 .pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children {
-    top: 56px;
+    top: 40px;
     left: auto;
     right:0;
     text-align: left;
@@ -78,7 +85,7 @@ a.pure-menu-link:hover {
         float: right;
         width: 36px;
         line-height: 0;
-        padding-top: 10px;
+        padding-top: 5px;
         text-align: center;
         cursor: pointer;
         margin-top: 30px;
