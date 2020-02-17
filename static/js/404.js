@@ -9,7 +9,7 @@
 	function do404() {
 		var path = document.location.pathname.split("/");
 		var last = decodeURIComponent(path[path.length-1]);
-		last = last.replace(/[^\w]+/," ");
+		last = last.replace(/[^\w]+/," ").replace(/_+/," ");
 		document.getElementById("search-404").value = last;
 	}
 
