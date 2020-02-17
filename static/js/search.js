@@ -59,6 +59,9 @@
 		if ( ! lang.match(/^en\b/) ) {
 			url = "/"+lang+"/index.json";
 		}
+		
+		var waiting = "<div class=\"lds-ring\"><div></div><div></div><div></div><div></div></div>";
+		document.getElementById("search-results").innerHTML = waiting;
 		fetch(url).then(function(response) {
 			return response.json().then(function(json){searchResult(json, searchQuery);});
 		});
