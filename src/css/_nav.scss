@@ -45,26 +45,22 @@
 /**
  * Pure menu customizations
  */
+
 .pure-menu-active > .pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
   background-color: transparent;
 }
+
 .pure-menu-children {
     padding-bottom: 0.5em;
     border-radius: 0 0 10px 10px;
 }
+
 .pure-menu-children .pure-menu-link {
     line-height: 1.3;
 }
+
 a.pure-menu-link:hover {
     text-decoration: none;
-}
-.pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children {
-    top: 40px;
-    left: auto;
-    right:0;
-    text-align: left;
-    min-width: 146px;
-    background-color: #FDFDFD;
 }
 
 .pure-menu-link {
@@ -73,9 +69,7 @@ a.pure-menu-link:hover {
         color: darken($brand-color, 20%);
     }
 }
-.pure-menu-has-children {
-    top: 1px;
-}
+
 // Mobile nav styles
 @include media-query($on-palm) {
     #menuIcon {
