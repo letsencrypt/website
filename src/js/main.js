@@ -85,7 +85,6 @@ window.addEventListener(WINDOW_CHANGE_EVENT, function() {
 	closeHamburgerMenu();
 });
 
-//XXXJOSH check to be sure aria roles/states are correct
 // Initialize nav menu aria roles/state
 menu.querySelector(".pure-menu-list").setAttribute("role", "menubar");
 [].forEach.call(
