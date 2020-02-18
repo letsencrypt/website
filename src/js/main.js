@@ -22,7 +22,7 @@ const NAV_LINK_CLASS = "pure-menu-link";
 const NAV_LINK_SELECTOR = `.${NAV_LINK_CLASS}`;
 
 const menu = document.getElementById(MENU_ID);
-const WINDOW_CHANGE_EVENT = ("onorientationchange" in window) ? "orientationchange":"resize";
+const WINDOW_CHANGE_EVENT = ("onorientationchange" in window) ? "orientationchange" : "resize";
 
 function toggleMenu() {
   [].forEach.call(
@@ -80,8 +80,10 @@ document.getElementById("menuIcon").addEventListener("click", function (e) {
   }
 );
 
-//XXXJOSH figure out what this does and if it behaves properly
-window.addEventListener(WINDOW_CHANGE_EVENT, closeHamburgerMenu);
+window.addEventListener(WINDOW_CHANGE_EVENT, function() {
+	closeAllNavMenus();
+	closeHamburgerMenu();
+});
 
 //XXXJOSH check to be sure aria roles/states are correct
 // Initialize nav menu aria roles/state
