@@ -6,7 +6,7 @@ title: "Multi-Perspective Validation Improves Domain Validation Security"
 slug: multi-perspective-validation
 ---
 
-At Let’s Encrypt we’re always looking for ways to improve the security and integrity of the Web PKI. We’re proud to launch multi-perspective domain validation today because we believe it’s an important step forward for the domain validation process. To our knowledge we are the first CA to announce multi-perspective validation deployment at scale.
+At Let’s Encrypt we’re always looking for ways to improve the security and integrity of the Web PKI. We’re proud to launch multi-perspective domain validation today because we believe it’s an important step forward for the domain validation process. To our knowledge we are the first CA to deploy multi-perspective validation at scale.
 
 Domain validation is a process that all CAs use to ensure that a certificate applicant actually controls the domain they want a certificate for. Typically the domain validation process involves asking the applicant to place a particular file or token at a controlled location for the domain, such as a particular path or a DNS entry. Then the CA will check that the applicant was able to do so. Historically it looks something like this:
 
