@@ -51,7 +51,7 @@ Let's Encrypt は少人数のチームで運営されており、コストを削
 
 https://www.google.com/safebrowsing/report_badware/
 
-私たちのポリシーとその論拠については、こちら詳しく説明しています。
+私たちのポリシーとその論拠については、こちらの記事で詳しく説明しています。
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
