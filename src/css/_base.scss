@@ -283,3 +283,23 @@ pre {
 .home_sponsors img {
     background-color: #fff;
 }
+
+a.anchor {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+.page-content {
+    h1,h2,h3 { //same selector as js for anchors
+        .anchor {
+            display: none;
+        }
+        &:hover {
+            .anchor {
+                display: inline;
+            }
+        }
+    }
+}
