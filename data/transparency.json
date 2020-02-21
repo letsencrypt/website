@@ -38,6 +38,14 @@
             "logID": "DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73"
         },
         {
+            "log": "oak",
+            "shard": "2023",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsz0OeL7jrVxEXJu+o4QWQYLKyokXHiPOOKVUL3/TNFFquVzDSer7kZ3gijxzBp98ZTgRgMSaWgCmZ8OD74mFUQ==",
+            "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99"
+        },
+        {
             "log": "testflume",
             "shard": "2019",
             "role": "testing",
@@ -64,6 +72,13 @@
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==",
             "logID": "23:27:EF:DA:35:25:10:DB:C0:19:EF:49:1A:E3:FF:1C:C5:A4:79:BC:E3:78:78:36:0E:E3:18:CF:FB:64:F8:C8"
+        },
+        {
+            "log": "testflume",
+            "shard": "2023",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8aLpnumqeISmQEB3hKPgtPJQG3jP2IftfaUQ4WPUihNBwUOEk1R9BMg5RGQwebWSsRlGIRiCvtE97Q45Vh3mqA==",
+            "logID": "55:34:B7:AB:5A:6A:C3:A7:CB:EB:A6:54:87:B2:A2:D7:1B:48:F6:50:FA:17:C5:19:7C:97:A0:CB:20:76:F3:C6"
         }
     ]
 }
