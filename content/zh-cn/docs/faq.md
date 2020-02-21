@@ -18,7 +18,7 @@ menu:
 * [常规问题](#general)
 * [技术问题](#technical)
 
-# <a name="general">常规问题</a>
+# <a id="general">常规问题</a>
 
 ## Let's Encrypt 提供哪些服务？
 
@@ -55,7 +55,7 @@ https://safebrowsing.google.com/safebrowsing/report\_badware/
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">技术问题</a>
+# <a id="technical">技术问题</a>
 
 ## 我的浏览器是否信任 Let's Encrypt 的证书？
 

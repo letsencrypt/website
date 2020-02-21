@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-02",
+	"lastmod": "2020-02-13",
 	"categories": [
 		"Bash",
 		"C",
@@ -7,6 +7,7 @@
 		"Clojure",
 		"Configuration management tools",
 		"D",
+		"Domino",
 		"Docker",
 		"Go",
 		"HAProxy",
@@ -388,6 +389,12 @@
 			"category": "PHP"
 		},
 		{
+			"name": "Yet another ACME client",
+			"acme_v2": "true",
+			"url": "https://github.com/afosto/yaac",
+			"category": "PHP"
+		},
+		{
 			"name": "ACME Tiny",
 			"url": "https://github.com/diafygi/acme-tiny",
 			"acme_v2": "true",
@@ -510,10 +517,13 @@
 		},
 		{
 			"name": "win-acme",
-			"url": "https://pkisharp.github.io/win-acme",
+			"url": "https://www.win-acme.com",
 			"category": "Windows / IIS",
 			"acme_v2": "true",
-			"comments": "(.NET)"
+			"comments": "(.NET)",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Certify The Web",
@@ -782,7 +792,10 @@
 			"name": "lua-resty-acme",
 			"url": "https://github.com/fffonion/lua-resty-acme",
 			"category": "nginx",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "acertmgr",
@@ -800,7 +813,7 @@
 			"name": "ght-acme.sh",
 			"url": "https://github.com/bruncsak/ght-acme.sh",
 			"category": "Bash",
- 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"comments": "(batch update of http-01 and dns-01 challenges is available)",
 			"acme_v2": "true"
 		},
 		{
@@ -823,6 +836,13 @@
 			"url": "https://gitlab.com/sinclair2/bacme",
 			"category": "Bash",
 			"comments": "(simple yet complete scripting of certificate generation)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "CertMatica",
+			"url": "https://www.rhpconsult.com/products.html",
+			"category": "Domino",
+			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
 			"acme_v2": "true"
 		}
 	]

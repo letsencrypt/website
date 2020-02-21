@@ -18,7 +18,7 @@ Denna vanliga frågor-sida är uppdelad i följande delar:
 * [Allmänna frågor](#general)
 * [Tekniska frågor](#technical)
 
-# <a name="general">Allmänna frågor</a>
+# <a id="general">Allmänna frågor</a>
 
 ## Vilka tjänster erbjuder Let's Encrypt?
 
@@ -31,8 +31,7 @@ Let's Encrypt erbjuder domänvalideringscertifikat (DV). Vi erbjuder inte
 organisationsvalidering (OV) eller utökad validering (EV) främst eftersom vi
 inte kan automatisera utfärdande av dessa typer av certifikat.
 
-För att komma igång, besök vår [kom igång-sida]({{< relref "/getting-started.md"
->}}).
+För att komma igång, besök vår {{<link "kom igång-sida" "/getting-started" >}}.
 
 ## Vad kostar det att använda Let's Encrypt? Är det verkligen gratis?
 
@@ -78,7 +77,7 @@ Om du vill läsa mer om våra policyer och principer kan du göra detta här:
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Tekniska frågor</a>
+# <a id="technical">Tekniska frågor</a>
 
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 

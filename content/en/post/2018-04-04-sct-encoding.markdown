@@ -416,7 +416,7 @@ This is a little taste of what goes into encoding a certificate. I hope it was
 informative! If you'd like to learn more, I recommend "[A Layman's Guide to a
 Subset of ASN.1, BER, and DER](http://luca.ntop.org/Teaching/Appunti/asn1.html)."
 
-<a name="poison"></a>Footnote 1: A "poison extension" is defined by [RFC 6962
+<a id="poison"></a>Footnote 1: A "poison extension" is defined by [RFC 6962
 section 3.1](https://tools.ietf.org/html/rfc6962#section-3.1):
 
 ```
@@ -432,7 +432,7 @@ ensures that code that doesn't recognize the extension will reject the whole
 certificate. Code that does recognize the extension specifically as poison
 will also reject the certificate.
 
-<a name="variable-length"></a>Footnote 2: Lengths from 0-127 are represented by
+<a id="variable-length"></a>Footnote 2: Lengths from 0-127 are represented by
 a single byte (short form). To express longer lengths, more bytes are used (long form).
 The high bit (0x80) on the first byte is set to distinguish long form from short
 form. The remaining bits are used to express how many more bytes to read for the

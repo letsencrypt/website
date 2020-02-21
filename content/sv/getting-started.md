@@ -34,8 +34,7 @@ Certbot-sajten][Certbot] (engelska) för att få skräddarsydda instruktioner f�
 ditt operativsystem och din webbserver.
 
 Om [Certbot] inte uppfyller dina krav eller om du vill testa något annat så
-finns det [många fler ACME-klienter att välja bland]({{< relref
-"/docs/client-options" >}}). När du väl valt ACME-klient så kika på den
+finns det {{<link "många fler ACME-klienter att välja bland" "/docs/client-options" >}}. När du väl valt ACME-klient så kika på den
 klientens dokumentation för att fortsätta.
 
 Om du experimenterar med olika ACME-klienter, se till att använda vår

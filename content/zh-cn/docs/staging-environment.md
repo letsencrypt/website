@@ -32,7 +32,7 @@ lastmod: 2020-01-21
 
 # 证书透明度日志
 
-测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志 {{<link "Testflume" "/docs/ct-logs.html" >}} 和Google 的测试用证书透明度日志 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
+测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志 {{<link "Testflume" "/docs/ct-logs" >}} 和Google 的测试用证书透明度日志 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
 
 # 持续集成/开发测试
 

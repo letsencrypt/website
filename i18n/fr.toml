@@ -122,14 +122,11 @@ other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jo
 [certificate_transparency_name]
 other = "Nom"
 
-[certificate_transparency_role]
-other = "Rôle"
-
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"

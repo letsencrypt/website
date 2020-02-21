@@ -1,0 +1,13 @@
+title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
+contentDir = "content/sr"
+languageName = "Srpski"
+languageCode = "sr"
+beforeColon = ""
+weight = 600
+description = """
+  Let's Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
+  telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "SP"
+numberFormat = "-|.|,"

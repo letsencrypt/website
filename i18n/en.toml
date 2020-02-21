@@ -125,14 +125,11 @@ other = "Percent of Pageloads over HTTPS (14 day moving average)"
 [certificate_transparency_name]
 other = "Name"
 
-[certificate_transparency_role]
-other = "Role"
-
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"

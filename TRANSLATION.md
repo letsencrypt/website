@@ -9,7 +9,7 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 
 ### First pull-request
 
-1. In `config\_default\languages.toml`, add your language.
+1. In `config\_default\`, copy `config\_default\languages.en.toml` into `config\_default\languages.XX.toml` (where XX is your language code) and update it following indications given in comments (lines starting with `#`)
 2. In `config\_default\`, copy `config\_default\menu.en.toml` into `config\_default\menu.XX.toml` (where XX is your language code), translate `name =` and prefix urls with `/XX/`.
 3. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
 4. Add your language in `netlify.toml` and `layouts\_partial\langs.html`.
@@ -20,7 +20,6 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 You can start translating the files that are inside `content\XX\`:
 
 * Copy the English version of the file you wish to translate into `content\XX\`
-* If the header of the file contains "`aliases:`", **you must remove the line with "`aliases:`"**
 * Do **not** change `date` or `lastmod` : they must correspond to the the English version (and not when the translation occured: it's used to detect when a translation is out-of-sync)
 * If your translation takes time, please open early a draft pull-request so others know you are working on it
 

@@ -125,14 +125,11 @@ other = "Andel sidvisningar över HTTPS (14-dagars glidande medelvärde)"
 [certificate_transparency_name]
 other = "Namn"
 
-[certificate_transparency_role]
-other = "Roll"
-
 [certificate_transparency_role_production]
 other = "Produktion"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"

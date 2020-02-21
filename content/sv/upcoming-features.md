@@ -24,7 +24,7 @@ mellancertifikat som kan användas för att signera lövcertifikat.
 
 * Aktiverat: den 15 maj 2019
 
-Vi driftar en {{<link "certifikattransparenslogg" "/docs/ct-logs.html" >}}.
+Vi driftar en {{<link "certifikattransparenslogg" "/docs/ct-logs" >}}.
 
 ## Stöd för TLS ALPN-utmaningar
 

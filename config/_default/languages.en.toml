@@ -1,0 +1,24 @@
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/en"
+#The namge of the language, it that language (not in English if it's not English)
+languageName = "English"
+#The language code. Usually two lower-case letters. It that language is spoken in more than one country, the country-code can be added, uppercase. To check it: https://r12a.github.io/app-subtags/?check=pt-BR
+languageCode = "en-US"
+#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
+beforeColon = ""
+# Weight used for sorting.
+# 10 for English
+# Other languages from 100 to 999, alphabetical order using languageCode.
+weight = 10
+description = """
+  Let's Encrypt is a free, automated, and open certificate
+  authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+# PayPal image url from https://www.paypal.com/donate/buttons/unhosted
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+# A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
+paypalCountry = "US"
+# Number format : <negative>|<decimal>|<grouping>
+# Ex. for -1 2345.67 -> "-|.| "
+# Doc: https://gohugo.io/functions/numfmt/
+numberFormat = "-|.|,"
