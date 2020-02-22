@@ -27,7 +27,7 @@ Preporučujemo da većina ljudi sa shell pristupom koristi [Certbot] ACME klijen
 automatizovati izdavanje i instalaciju sertifikata bez prestanka rada Vašeg web sajta.
 Takođe pruža i "expert" modove za ljude koji ne žele automatsku konfiguraciju. Jednostavan je za upotrebu,
 radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite
-Certbot stranicu] [Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
+Certbot stranicu][Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
 {{<link "mnogo više ACME klijenata" "/docs/client-options" >}}. Jednom kada odaberete ACME klijenta,
