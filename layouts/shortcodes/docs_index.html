@@ -54,7 +54,7 @@
 {{- else if $page.Title }}
 {{- $tmp.Set "title" $page.Title }}
 {{- else }}{{/* search the English name of an untranslated page */}}
-    {{- range first 1 (where $page.Translations "Lang" "eq" "en") }}</li>
+    {{- range first 1 (where $page.Translations "Lang" "eq" "en") }}
         {{- if .LinkTitle}}
             {{- $tmp.Set "title" .LinkTitle }}
         {{- else }}
