@@ -148,7 +148,7 @@ Note for translators:
 
 {{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} 伺服器名稱指示。[TLS](#def-TLS) 協定下的一個欄位。在 TLS 交握過程中，[使用者代理](#def-user-agent)透過 SNI 告訴伺服器要連接的網域名稱。這使得在同一個 IP 下有許多網域名稱的伺服器，可以回應相對應的[憑證](#def-leaf)。網頁伺服器可以依據客戶端指名的 SNI 回應不同憑證和網頁內容。SNI 並沒有被加密，因此產生了目前正在實驗階段的 ESNI。[維基百科](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
-{{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} 憑證簽名時間戳記。由[憑證透明度紀錄](#def-CT-log)提供，以驗證憑證頒發紀錄的簽名。瀏覽器會在網頁提供憑證，或 [TLS](#def-TLS) 交握時，執行 [CT](#def-CT) 檢查是否有 SCTs，並拒絕連結到不符合憑證透明度紀錄的網站。憑證透明度使得欺騙性或錯誤頒發的憑證更容易被檢驗出來。https://www.certificate-transparency.org/how-ct-works {{% /def %}}
+{{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} 憑證簽名時間戳記。由[憑證透明度紀錄](#def-CT-log)提供，以驗證憑證頒發紀錄的簽名。瀏覽器會在網頁提供憑證，或 [TLS](#def-TLS) 交握時，執行 [CT](#def-CT) 檢查是否有 SCTs，並拒絕連結到不符合憑證透明度紀錄的網站。憑證透明度使得欺騙性或錯誤頒發的憑證更容易被檢驗出來。 https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
 {{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS) 協定的前身，SSL 目前依然被廣泛地使用。{{% /def %}}
 
