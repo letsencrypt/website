@@ -241,7 +241,7 @@ ISRG verbunden oder wird von dieser gesponsert oder unterstützt.
 ## Melden von Markenmissbrauch
 
 Bitte melden Sie jeden Missbrauch der ISRG-Marken an
-press[at]letsencrypt.org, und geben Sie so viele Informationen wie
+[press@letsencrypt.org](mailto:press@letsencrypt.org), und geben Sie so viele Informationen wie
 möglich über die Verwendung an, die Ihrer Meinung nach möglicherweise
 verletzt wird. Wir werden die Verwendung untersuchen und gegebenenfalls
 entsprechende Massnahmen ergreifen.
