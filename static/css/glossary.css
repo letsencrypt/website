@@ -11,3 +11,8 @@ dfn {
   font-weight: bold;
   padding-right: .25em; /* Prevent italics text from hitting the ":" */
 }
+
+.definition>a {
+  text-decoration: none;
+  color: inherit;
+}
