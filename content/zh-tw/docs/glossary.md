@@ -115,7 +115,7 @@ Note for translators:
 
 {{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 線上憑證狀態協定。一種檢查憑證[註銷](#def-revocation)狀態的方法。檢查[憑證頒發機構](#def-CA)是否認為該憑證雖然在有效期限內，但依然不再有效力。這個協定衍伸出隱私問題，因為憑證頒發機構和網路提供業者，可以藉由此協定的請求過程知道哪些人正在拜訪哪些網站。[維基百科](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} 一個[憑證擴展](#def-extension)欄位，它告訴[瀏覽器](#def-web-browser)必須使用 [OCSP 裝訂](#def-OCSP-staping)的證書。它用來確保瀏覽器在每次訪問網頁伺服器時，取得最新的憑證[註銷](#def-revocation)狀態，使得憑證註銷系統更加可靠。[Let's Encrypt](#def-LE) 可以頒發具有 OCSP Must-Staple 擴展欄位的憑證。[Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} 一個[憑證擴展](#def-extension)欄位，它告訴[瀏覽器](#def-web-browser)必須使用 [OCSP 裝訂](#def-OCSP-stapling)的證書。它用來確保瀏覽器在每次訪問網頁伺服器時，取得最新的憑證[註銷](#def-revocation)狀態，使得憑證註銷系統更加可靠。[Let's Encrypt](#def-LE) 可以頒發具有 OCSP Must-Staple 擴展欄位的憑證。[Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} OSCP 裝訂，也被稱為 TLS 憑證狀態請求擴展 (TLS Certificate Status Request extension)。[網頁伺服器](#def-web-server)透過回傳給[瀏覽器](#def-web-browser)一個經由[憑證頒發機構](#def-CA)簽名的 [OCSP](#def-OCSP) 請求回應，以節省瀏覽器向憑證頒發機構二次 OCSP 請求的時間。OCSP 裝訂是為了增加效率與保護隱私而增加的。[維基百科](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
