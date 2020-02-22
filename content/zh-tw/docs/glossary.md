@@ -68,7 +68,7 @@ Note for translators:
 
 {{% def id="subject" name="Certificate subject" %}} 憑證主體。憑證中的主體欄位，指名這張憑證是頒發給誰的。憑證主體通常包含[通用名稱](#def-CN)、所屬國家、機構名稱。{{% /def %}}
 
-{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 憑證透明度。為了增加安全性，憑證或[預憑證](#def-precertificate)必須被公開在憑證透明度紀錄中：https://www.certificate-transparency.org/ 。[Let's Encrypt](#def-LE) 頒發憑證的過程會先產生預憑證，再將 [SCT](#def-SCT) 列表加入到預憑證中。有些[瀏覽器](#def-web-browser)，例如：Google Chrome 就會需要 SCT 來驗證憑證。[維基百科](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
+{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 憑證透明度。為了增加安全性，憑證或[預憑證](#def-precertificate)必須被公開在憑證透明度紀錄中：[https://www.certificate-transparency.org/](https://www.certificate-transparency.org/)。[Let's Encrypt](#def-LE) 頒發憑證的過程會先產生預憑證，再將 [SCT](#def-SCT) 列表加入到預憑證中。有些[瀏覽器](#def-web-browser)，例如：Google Chrome 就會需要 SCT 來驗證憑證。[維基百科](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} 憑證透明度紀錄。[憑證透明度](#def-CT)架構中的一部份，憑證透明度紀錄接受憑證和預憑證的提交，並加他們添加到一個永久、可驗證、公開的列表中。{{% /def %}}
 
