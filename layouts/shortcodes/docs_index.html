@@ -1,5 +1,5 @@
 
-<h1 id="overview">{{ i18n "overview" }}</h1>
+<h1 id="{{ anchorize  (i18n "overview") }}">{{ i18n "overview" }}</h1>
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/getting-started") }}</li>
@@ -8,7 +8,7 @@
     <li>{{ template "link" (dict "context" . "page" "/docs/glossary") }}</li>
 </ul>
 
-<h1 id="subscriber-information">{{ i18n "subscriber_information" }}</h1>
+<h1 id="{{ anchorize (i18n "subscriber_information") }}">{{ i18n "subscriber_information" }}</h1>
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/client-options") }}</li>
@@ -16,7 +16,7 @@
     <li>{{ template "link" (dict "context" . "page" "/docs/expiration-emails") }}</li>
 </ul>
 
-<h1 id="advanced-subscriber-information">{{ i18n "advanced_subscriber_information" }}</h1>
+<h1 id="{{ anchorize (i18n "advanced_subscriber_information") }}">{{ i18n "advanced_subscriber_information" }}</h1>
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/staging-environment") }}</li>
@@ -34,7 +34,7 @@
     <li><a href="/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html">{{ i18n "onboarding_customers" }}</a></li>
 </ul>
 
-<h1 id="client-developer-information">{{ i18n "client_developer_information" }}</h1>
+<h1 id="{{ anchorize (i18n "client_developer_information") }}">{{ i18n "client_developer_information" }}</h1>
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/integration-guide") }}</li>
