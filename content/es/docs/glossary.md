@@ -36,7 +36,7 @@ Note for translators:
 
 {{% def id="boulder" name="Boulder" %}} El software que implementa ACME, desarrollado y utilizado por [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
-{{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} Un conjunto de requisitos técnicos y de políticas para las AC. Dado que todos los principales [programas raíz] (#def-root-program) incorporan los Requisitos de línea de base, la mayoría de los navegadores deben cumplir con estos requisitos. {{% /def %}}
+{{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} Un conjunto de requisitos técnicos y de políticas para las AC. Dado que todos los principales [programas raíz](#def-root-program) incorporan los Requisitos de línea de base, la mayoría de los navegadores deben cumplir con estos requisitos. {{% /def %}}
 
 {{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} Un registro DNS que especifica qué [CA](#def-CA) pueden emitir un certificado para el nombre de dominio correspondiente. Los registros de CAA son verificados por las CA, no por los navegadores. [Let's Encrypt](#def-LE) {{<link "honors CAA records" "/docs/caa" >}} según lo requerido por los [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
@@ -82,7 +82,7 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} Un [certificado](#def-leaf) donde el solicitante solo ha demostrado su control sobre el nombre de dominio (y no la identidad de la organización solicitante). [Let's Encrypt](#def-LE) ofrece solo certificados DV (no [OV](#def-OV) o [EV](#def-EV)): {{<link "FAQ" "/docs/faq" >}} - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Una variante del algoritmo de firma digital (DSA) que utiliza una curva elíptica criptografía . [Wikipedia] (https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) admite ECDSA para [certificados de entidad final](#def-leaf), pero aún no para toda la [cadena](#def-chain): {{< link "/upcoming-features">}} {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Una variante del algoritmo de firma digital (DSA) que utiliza una curva elíptica criptografía . [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) admite ECDSA para [certificados de entidad final](#def-leaf), pero aún no para toda la [cadena](#def-chain): {{< link "/upcoming-features">}} {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} Un tipo específico de [EdDSA](#def-EdDSA), junto con Ed448. {{% /def %}}
 

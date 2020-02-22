@@ -30,7 +30,7 @@ ACME-klienten [Certbot]. Den kan automatisera certifikatutfärdande och
 installation utan nertid. Den har även expertlägen för de som inte föredrar
 automatisk konfiguration. Den är lätt att använda, fungerar på många
 operativsystem och har väldigt bra dokumentation. [Besök
-Certbot-sajten][Certbot] (engelska) för att få skräddarsydda instruktioner för
+Certbot-sajten][Certbot](engelska) för att få skräddarsydda instruktioner för
 ditt operativsystem och din webbserver.
 
 Om [Certbot] inte uppfyller dina krav eller om du vill testa något annat så

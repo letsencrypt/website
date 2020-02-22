@@ -109,7 +109,7 @@ Datenschutzbestimmungen. Gelegentlich verwenden wir Ihre E-Mail-Adresse,
 um personalisierte Mitteilungen zu Let’s Encrypt zu senden. Wir verkaufen
 Ihre Informationen nicht. Sie können die Entfernung Ihrer E-Mail-Adresse
 von unserer Liste beantragen, indem Sie sich über MailChimp abmelden oder
-eine E-Mail an [press@letsencrypt.org] (mailto:press@letsencrypt.org) senden.
+eine E-Mail an [press@letsencrypt.org](mailto:press@letsencrypt.org) senden.
 
 Wenn Sie sich registrieren, um das Support-Forum „Let's Encrypt“ zu
 nutzen, unterliegen die persönlichen Informationen, die Sie
