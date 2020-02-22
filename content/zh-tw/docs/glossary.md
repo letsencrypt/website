@@ -111,7 +111,7 @@ Note for translators:
 {{% def id="leaf" name="Leaf certificate (end-entity certificate)" %}} 終端憑證，或稱子葉憑證。終端憑證大部份是由[中間憑證](#def-intermediate)所頒發，僅對於一組網域有效，並且無法用來頒發憑證。終端憑證透過 [ACME 客戶端](#def-ACME-client)請求，並由[網頁伺服器](#def-web-server)所使用。[維基百科](https://en.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
 
-{{% def id="mixed-content" name="Mixed content" %}} 混合內容。在 HTTPS 網頁中以 HTTP 方式載入子資源（Javascript、CSS 或圖片）的網頁稱為混合內容。[瀏覽器](#def-web-browser) 可能會禁止混合內容網頁，或標示為安全性較低的網頁：https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content 。為了解決混合內容問題，網頁開發者必須全數使用 HTTPS 載入資源。在瀏覽器內建的[開發者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)可以幫助你找出哪些資源可能造成混合內容問題。{{% /def %}}
+{{% def id="mixed-content" name="Mixed content" %}} 混合內容。在 HTTPS 網頁中以 HTTP 方式載入子資源（Javascript、CSS 或圖片）的網頁稱為混合內容。[瀏覽器](#def-web-browser) 可能會禁止混合內容網頁，或標示為安全性較低的網頁：[https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content) 。為了解決混合內容問題，網頁開發者必須全數使用 HTTPS 載入資源。在瀏覽器內建的[開發者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)可以幫助你找出哪些資源可能造成混合內容問題。{{% /def %}}
 
 {{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 線上憑證狀態協定。一種檢查憑證[註銷](#def-revocation)狀態的方法。檢查[憑證頒發機構](#def-CA)是否認為該憑證雖然在有效期限內，但依然不再有效力。這個協定衍伸出隱私問題，因為憑證頒發機構和網路提供業者，可以藉由此協定的請求過程知道哪些人正在拜訪哪些網站。[維基百科](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
@@ -125,7 +125,7 @@ Note for translators:
 
 {{% def id="pem" name="PEM file (.pem)" %}} PEM 格式。一種密碼學格式，原本用於"隱私增強型電子郵件"標準。PEM 格式的文件可用來表示私鑰、公鑰或數位憑證，文件以 "-\-\-\--BEGIN " 作為資料的開頭。[維基百科](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) {{% /def %}}
 
-{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} PFX 個人資訊交換格式。一種包含[終端憑證](#def-leaf)、連結根憑證的憑證鏈，和私鑰的檔案。請參考：https://en.wikipedia.org/wiki/PKCS_12 。[Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
+{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} PFX 個人資訊交換格式。一種包含[終端憑證](#def-leaf)、連結根憑證的憑證鏈，和私鑰的檔案。請參考：[https://en.wikipedia.org/wiki/PKCS_12](https://en.wikipedia.org/wiki/PKCS_12) 。[Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
 {{% def id="precertificate" name="Precertificate" %}} 預憑證。預憑證是憑證透明度架構的其中一部份。預憑證內包含一個破壞性的[關鍵擴展](#def-critical)，以避免預憑證被客戶端軟體接受。CA 會將預憑證提交給[憑證透明度紀錄](#def-CT-log)，以取得 [SCT](#def-SCT)。預憑證與它對應的憑證不會相同，因此憑證透明度紀錄可能會將兩者都記錄下來。[RFC 6962 Section 3.1]( https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
