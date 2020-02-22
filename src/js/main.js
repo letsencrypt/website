@@ -123,7 +123,7 @@ if ( page ) {
   page.querySelectorAll(selector).forEach(function(el){
     if ( el.id ) {
       var icon = document.createElement("a");
-      icon.className = "anchor fas fa-link";
+      icon.className = "autoanchor fas fa-link";
       icon.href = "#"+el.id;
       el.appendChild(icon);
     }

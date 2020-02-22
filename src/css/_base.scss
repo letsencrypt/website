@@ -284,7 +284,7 @@ pre {
     background-color: #fff;
 }
 
-a.anchor {
+a.autoanchor {
     text-decoration: none;
     color: grey;
     font-size: 0.8em;
@@ -293,11 +293,11 @@ a.anchor {
 
 .page-content {
     h1,h2,h3 { //same selector as js for anchors
-        .anchor {
+        .autoanchor {
             display: none;
         }
         &:hover {
-            .anchor {
+            .autoanchor {
                 display: inline;
             }
         }
