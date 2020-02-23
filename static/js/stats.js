@@ -82,16 +82,19 @@ function doPlot() {
 
     const activeUsage = document.getElementById("activeUsage");
     if (activeUsage) {
+      activeUsage.innerHTML = ""; // remove waiting
       plotActiveUsage(activeUsage, tActive, tFqdn, tRegDom);
     }
 
     const issuancePerDay = document.getElementById("issuancePerDay");
     if (issuancePerDay) {
+      issuancePerDay.innerHTML = ""; // remove waiting
       plotIssuancePerDay(issuancePerDay, tIssued);
     }
 
     const combinedTimeline = document.getElementById("combinedTimeline");
     if (combinedTimeline) {
+      combinedTimeline.innerHTML = ""; // remove waiting
       plotCombinedTimeline(combinedTimeline,tIssued, tActive, tFqdn, tRegDom);
     }
   }
@@ -327,6 +330,23 @@ function doPlot() {
   .then(response => {
     return response.text();
   }).then(tsvListener);
+
+  var waiting = "<div class=\"waiting\"></div>";
+
+  const activeUsage = document.getElementById("activeUsage");
+  if (activeUsage) {
+    activeUsage.innerHTML = waiting;
+  }
+
+  const issuancePerDay = document.getElementById("issuancePerDay");
+  if (issuancePerDay) {
+    issuancePerDay.innerHTML = waiting;
+  }
+
+  const combinedTimeline = document.getElementById("combinedTimeline");
+  if (combinedTimeline) {
+    combinedTimeline.innerHTML = waiting;
+  }
 
   const pageloadPercent = document.getElementById("pageloadPercent");
   if ( pageloadPercent ) {
