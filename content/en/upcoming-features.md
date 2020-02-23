@@ -2,17 +2,10 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-02-03
+lastmod: 2020-02-20
 ---
 
 {{< lastmod >}}
-
-## Multi-Perspective Validation
-
-Let's Encrypt currently validates domain control from multiple network
-perspectives, but only requires the main request to succeed. We will [start
-requiring that validation succeeds from multiple viewpoints as of February 19th,
-2020](https://community.letsencrypt.org/t/acme-v1-v2-validating-challenges-from-multiple-network-vantage-points/112253).
 
 ## IP Addresses in Certificates
 
@@ -24,11 +17,17 @@ Currently Let's Encrypt only signs end-entity certificates with RSA intermediate
 
 # Completed Features
 
+## Multi-Perspective Validation
+
+* Enabled: February 19, 2020
+
+We now validate domain control from [multiple network perspectives](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+
 ## Certificate Transparency Log
 
 * Enabled: May 15, 2019
 
-We are starting to operate a {{<link "Certificate Transparency log" "/docs/ct-logs" >}}.
+We now operate a {{<link "Certificate Transparency log" "/docs/ct-logs" >}}.
 
 ## TLS ALPN Challenge Support
 

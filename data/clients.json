@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-11",
+	"lastmod": "2020-02-13",
 	"categories": [
 		"Bash",
 		"C",
@@ -386,6 +386,12 @@
 			"name": "FreeSSL.tech Auto",
 			"url": "https://freessl.tech",
 			"acme_v2": "true",
+			"category": "PHP"
+		},
+		{
+			"name": "Yet another ACME client",
+			"acme_v2": "true",
+			"url": "https://github.com/afosto/yaac",
 			"category": "PHP"
 		},
 		{
@@ -807,7 +813,7 @@
 			"name": "ght-acme.sh",
 			"url": "https://github.com/bruncsak/ght-acme.sh",
 			"category": "Bash",
- 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"comments": "(batch update of http-01 and dns-01 challenges is available)",
 			"acme_v2": "true"
 		},
 		{
