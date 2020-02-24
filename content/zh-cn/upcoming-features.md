@@ -2,7 +2,7 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-02-03
+lastmod: 2020-02-20
 ---
 
 {{< lastmod >}}
@@ -18,6 +18,8 @@ lastmod: 2020-02-03
 # 已实现的功能
 
 ## 多视角验证
+
+* 启用时间: 2020 年 2 月 19 日
 
 我们已通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
 
