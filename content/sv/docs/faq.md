@@ -71,7 +71,7 @@ Vi rekommenderar att rapportera sådana sajter till Google Safe Browsing och
 Microsofts SmartScreen-initiativ som har möjlighet att mer effektivt skydda
 användare. Här är Googles rapporteringsadress:
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 Om du vill läsa mer om våra policyer och principer kan du göra detta här:
 
