@@ -13,3 +13,10 @@
     X-Content-Type-Options: nosniff
     Referrer-Policy: no-referrer
     Feature-Policy: geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;
+
+# For webtrust documents
+/repository
+    Referrer-Policy: strict-origin
+
+/*/repository
+    Referrer-Policy: strict-origin
