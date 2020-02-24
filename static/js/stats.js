@@ -94,7 +94,6 @@ function doPlot() {
 
     const combinedTimeline = document.getElementById("combinedTimeline");
     if (combinedTimeline) {
-      combinedTimeline.innerHTML = ""; // remove waiting
       plotCombinedTimeline(combinedTimeline,tIssued, tActive, tFqdn, tRegDom);
     }
   }
@@ -343,15 +342,12 @@ function doPlot() {
     issuancePerDay.innerHTML = waiting;
   }
 
-  const combinedTimeline = document.getElementById("combinedTimeline");
-  if (combinedTimeline) {
-    combinedTimeline.innerHTML = waiting;
-  }
-
   const pageloadPercent = document.getElementById("pageloadPercent");
   if ( pageloadPercent ) {
+    pageloadPercent.innerHTML = waiting;
     const currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
     .then(response => {
+      pageloadPercent.innerHTML = "";
       return response.text();
     }).then(httpsCsvListener);
 
