@@ -50,10 +50,16 @@ post = true
 post = "/:year/:month/:day/:slug/"
 
 [markup]
-# Since Hugo 60, goldmark is he default markdown renderer
-# and the currents .md files are not compatible with it (even with "[markup.goldmark.renderer] unsafe = true")
-defaultMarkdownHandler = "blackFriday"
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser]
+# To keep § ids identical after the migration from blackfriday to goldmark
+autoHeadingIDType = "blackfriday"
 
 [markup.highlight]
 # There is an escaping bug with blackFriday and highlight. See https://discourse.gohugo.io/t/missing-escaping-in-code-blocks/22465
 codeFences = false
+

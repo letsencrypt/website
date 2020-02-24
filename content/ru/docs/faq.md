@@ -50,7 +50,7 @@ Let’s Encrypt - небольшая компания, мы полагаемся
 Мы рекомендуем уведомить об этом сервисы Google Safe Browsing и Microsoft Smart Screen, которые способны эффективно защитить пользователей Интернета.
 Ниже ссылка на форму сообщения::
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 Хотите узнать больше? Ознакомьтесь со статьёй [из нашего блога](/2015/10/29/phishing-and-malware.html).
 

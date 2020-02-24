@@ -10,8 +10,8 @@
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
         <ul class="pure-menu-list">
           {{ range .Site.Menus.main }}
-          <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
-            <a href="{{ .URL }}" class="pure-menu-link" tabindex="0">{{ .Name }}</a>
+          <li class="pure-menu-item{{ if .HasChildren }} pure-menu-has-children{{ end }}">
+            <a href="{{ if .HasChildren }}#{{ else }}{{ .URL }}{{ end }}" class="pure-menu-link" tabindex="0">{{ .Name }}</a>
             {{ if .HasChildren }}
             <ul class="pure-menu-children">
               {{ range .Children }}
@@ -35,7 +35,7 @@
             {{ end }}
           {{ end }}
           {{ if gt (len $langs ) 1 }}
-          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+          <li class="pure-menu-item pure-menu-has-children">
             <a href="#" class="pure-menu-link" tabindex="0">{{ i18n "languages" }} <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
             <ul class="pure-menu-children">
               {{ range $langs }}

@@ -25,7 +25,7 @@ Takođe,često volimo da koristimo i pomoć oko razvoja softvera.Ceo naš izvorn
 
 ### Server-side CA softver
 
-[Boulder](https://github.com/letsencrypt/boulder) je implementacija Let's Encrypt CA. Temelji se na protokolu [ACME](https://github.com/ietf-wg-acme/acme), a prvenstveno je napisan u programskom jeziku Go. Sjajno mesto za početak je popis [pitanja od ljudi koji traže pomoć) (https://github.com/letsencrypt/boulder/labels/help%20wanted) i [vodič za doprinose](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) je implementacija Let's Encrypt CA. Temelji se na protokolu [ACME](https://github.com/ietf-wg-acme/acme), a prvenstveno je napisan u programskom jeziku Go. Sjajno mesto za početak je popis [pitanja od ljudi koji traže pomoć](https://github.com/letsencrypt/boulder/labels/help%20wanted) i [vodič za doprinose](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

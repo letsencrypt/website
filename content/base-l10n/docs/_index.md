@@ -7,4 +7,4 @@ menu:
     weight: 10
 ---
 
-{{% docs_index %}}
+{{< docs_index >}}

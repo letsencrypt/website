@@ -3,8 +3,7 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2020-02-20
 menu:
   main:
     weight: 30
@@ -49,7 +48,7 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here is the Google reporting URL:
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 If you'd like to read more about our policies and rationale, you can do so here:
 
@@ -101,7 +100,7 @@ Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org
 
 ## What IP addresses does Let's Encrypt use to validate my web server?
 
-We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. In the future we will be validating from multiple IP addresses at once. See [this post](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points) for more detail.
+We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. Note that we now [validate from multiple IP addresses](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
