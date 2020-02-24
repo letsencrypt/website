@@ -25,7 +25,7 @@ menu:
 
 ### 服务器端 CA 软件
 
-Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 签发证书。该软件基于 [ACME](https://github.com/ietf-wg-acme/acme) 协议并主要使用 Go 语言编写。[标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)都是一个很好的起点。
+Let's Encrypt CA 使用 [Boulder](https://github.com/letsencrypt/boulder) 签发证书。该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议并主要使用 Go 语言编写。[标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)都是一个很好的起点。
 
 ### letsencrypt.org
 

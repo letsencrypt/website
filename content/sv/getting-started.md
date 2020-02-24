@@ -12,7 +12,7 @@ typ av fil) från en certifikatutgivare (CA, Certificate Authority). Let's
 Encrypt är en sådan.  För att erhålla ett certifikat för din webbplats domän
 från Let's Encrypt behöver du bevisa kontroll över domänen. Med Let's Encrypt
 gör du detta genom att använda ett program som använder
-[ACME-protokollet](https://ietf-wg-acme.github.io/acme/) och det kör vanligtvis
+[ACME-protokollet](https://tools.ietf.org/html/rfc8555) och det kör vanligtvis
 på din webbserver.
 
 För att få reda på vilken metod som funkar bäst för dig behöver du veta huruvida

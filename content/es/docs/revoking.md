@@ -37,9 +37,9 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 # Usar una cuenta autorizada diferente
 
-Si alguien emitió un certificado después de comprometer su host o su DNS, querrá revocar ese certificado una vez que recupere el control. Para revocar el certificado, Let's Encrypt deberá asegurarse de que controle los nombres de dominio en ese certificado (de lo contrario, las personas podrían revocar los certificados de los demás sin permiso)!. Para validar este control, Let's Encrypt utiliza los mismos métodos que utiliza para validar el control para la emisión: puede poner un [valor en un registro DNS tipo TXT](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5),
-poner un [archivo en el servidor HTTP](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3),
-u ofrecer un [Certificado TLS Especial](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+Si alguien emitió un certificado después de comprometer su host o su DNS, querrá revocar ese certificado una vez que recupere el control. Para revocar el certificado, Let's Encrypt deberá asegurarse de que controle los nombres de dominio en ese certificado (de lo contrario, las personas podrían revocar los certificados de los demás sin permiso)!. Para validar este control, Let's Encrypt utiliza los mismos métodos que utiliza para validar el control para la emisión: puede poner un [valor en un registro DNS tipo TXT](https://tools.ietf.org/html/rfc8555#section-8.4),
+poner un [archivo en el servidor HTTP](https://tools.ietf.org/html/rfc8555#section-8.3),
+u ofrecer un [Certificado TLS Especial](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3).
 Por lo general, un cliente ACME se encargará de esto por usted. Tenga en cuenta que la mayoría de los clientes de ACME combinan validación y emisión, por lo que la única forma de solicitar validaciones es intentar la emisión. Luego puede revocar el certificado resultante si no lo desea, o simplemente destruir la clave privada. Si desea evitar la emisión de un certificado, puede incluir un nombre de dominio inexistente en su línea de comando, lo que hará que la emisión falle y al mismo tiempo valide los otros nombres de dominio existentes. Para hacer esto, ejecute:
 
 ```

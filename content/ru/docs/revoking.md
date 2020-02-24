@@ -72,9 +72,9 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 доменные имена в этом сертификате (иначе люди смогли бы аннулировать 
 чужие сертификаты без разрешения!). Для подтверждения этого контроля Let's Encrypt 
 использует те же методы, что и для подтверждения контроля при выпуске: вы можете 
-поместить [некое значение в запись DNS TXT](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5), 
-разместить [файл на HTTP-сервере](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3), 
-или предложить [специальный TLS-сертификат](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+поместить [некое значение в запись DNS TXT](https://tools.ietf.org/html/rfc8555#section-8.4), 
+разместить [файл на HTTP-сервере](https://tools.ietf.org/html/rfc8555#section-8.3), 
+или предложить [специальный TLS-сертификат](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3).
 Обычно ACME-клиент сделает это за вас. Обратите внимание, что большинство ACME-клиентов 
 совмещают подтверждение и выпуск, таким образом, единственный способ запросить 
 подтверждение -- попытка выпуска. Вы можете впоследствии аннулировать 

@@ -50,7 +50,7 @@ Tenga en cuenta que la mayoría de los proveedores de alojamiento no necesitan a
 
 # <a id="clearing-pending"></a>Eliminar autorizaciones pendientes
 
-Si tiene una gran cantidad de objetos de autorización pendientes y está recibiendo un error de limite de solicitudes, puede activar un intento de validación para esos objetos de autorización enviando un POST firmado por JWS a uno de sus desafíos, como se describe en la [especificación ACME]( https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges).
+Si tiene una gran cantidad de objetos de autorización pendientes y está recibiendo un error de limite de solicitudes, puede activar un intento de validación para esos objetos de autorización enviando un POST firmado por JWS a uno de sus desafíos, como se describe en la [especificación ACME](https://tools.ietf.org/html/rfc8555#section-7.5.1).
 Los objetos de autorización pendientes están representados por URL de la forma `https://acme-v02.api.letsencrypt.org/acme/authz/XYZ`, y deben aparecer en los registros de sus clientes. Tenga en cuenta que no importa si la validación tiene éxito o falla.
 Cualquiera de los dos sacará la autorización del estado 'pendiente'. Si no tiene registros que contengan las URL de autorización relevantes, debe esperar a que caduque el límite de solicitudes. Como se describió anteriormente, hay una ventana deslizante, por lo que esto puede tomar menos de una semana, dependiendo de su patrón de emisión.
 
