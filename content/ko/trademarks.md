@@ -84,7 +84,7 @@ english_is_canonical: 1
 
   ## 상표권 침해 신고
 
-  ISRG 마크의 오용 여부를 press[at]letsencrypt.org에 보고하고, 침해할 수 있다고 생각되는 용도에 대해 가능한 한 많은 정보를 제공해 주십시오. 용도를 조사하고, 만약 그것이 타당하다면 적절한 조치를 취할 것입니다.
+  ISRG 마크의 오용 여부를 [press@letsencrypt.org](mailto:press@letsencrypt.org)에 보고하고, 침해할 수 있다고 생각되는 용도에 대해 가능한 한 많은 정보를 제공해 주십시오. 용도를 조사하고, 만약 그것이 타당하다면 적절한 조치를 취할 것입니다.
 
   ## 질문
 
