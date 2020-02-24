@@ -3,7 +3,7 @@ title: 隐私政策
 slug: privacy
 top_graphic: 4
 date: 2019-09-19
-lastmod: 2019-12-05
+lastmod: 2020-02-21
 english_is_canonical: 1
 ---
 
@@ -31,7 +31,7 @@ Let's Encrypt 隐私政策将从三个情景来描述我们如何收集、使用
 
 ## 访客
 
-当您是浏览 Let's Encrypt 网站的访客时，您可以选择捐赠。捐款由我们信任的支付合作伙伴（包括 DonorBox、Stripe 和 PayPal）处理，具体选择取决于所选的付款方式。我们会在您捐赠时收集您的姓名和电子邮件地址。未经您的同意，我们不会使用您的电子邮件地址与您联系。您与 [DonorBox](https://donorbox.org/privacy)，[Stripe](https://stripe.com/privacy/) 和 [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)  的交互受其各自隐私政策的约束。我们绝不会收集或保留任何与捐款相关的信用卡或银行信息。如果我们收集现实地址，我们只会在合理需要的时间内保留您的现实地址信息，以便完成与您相关的物流运输。
+当您是浏览 Let's Encrypt 网站的访客时，您可以选择捐赠。捐款由我们信任的支付合作伙伴（包括 DonorBox、Stripe 和 PayPal）处理，具体选择取决于所选的付款方式。我们会在您捐赠时收集您的姓名和电子邮件地址。未经您的同意，我们不会使用您的电子邮件地址与您联系，除非我们认为有必要解决与特定捐赠有关的问题。您与 [DonorBox](https://donorbox.org/privacy)，[Stripe](https://stripe.com/privacy/) 和 [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)  的交互受其各自隐私政策的约束。我们绝不会收集或保留任何与捐款相关的信用卡或银行信息。如果我们收集现实地址，我们只会在合理需要的时间内保留您的现实地址信息，以便完成与您相关的物流运输。
 
 您可以选择通过在本网站上注册或向其他营销渠道提供您的电子邮件地址，以接收 Let's Encrypt 的通讯邮件。该通讯邮件通过 MailChimp 发送，您与 MailChimp 的互动受其隐私政策的约束。我们可能偶尔会向您的电子邮件地址发送与 Let's Encrypt 相关的个性化通信。我们绝不会出售您的信息。您可以选择通过 MailChimp 或发送电子邮件至 [press@letsencrypt.org](mailto:press@letsencrypt.org)，以从我们的列表中删除您的电子邮件地址。
 

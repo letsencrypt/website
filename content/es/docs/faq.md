@@ -49,7 +49,7 @@ Aqu&iacute un [video que nos gusta](https://www.youtube.com/watch?v=Xe1TZaElTAs)
 
 Recomendamos reportar dichos sitios a Google Safe Browsing y el programa Microsoft Smart Screen, que pueden proteger a los usuarios de una manera más efectiva. Aquí está el URL de informes de Google:
 
-https://www.google.com/safebrowsing/report_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 Si desea leer más sobre nuestras políticas y nuestra justificación, puede hacerlo aquí:
 

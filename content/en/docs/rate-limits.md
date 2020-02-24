@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-10-30
+lastmod: 2020-02-24
 ---
 
 {{< lastmod >}}
@@ -61,7 +61,7 @@ per account, per hostname, per hour. This limit is higher on our
 {{<link "staging environment" "/docs/staging-environment" >}}, so you
 can use that environment to debug connectivity problems.
 
-The "new-reg", "new-authz" and "new-cert" endpoints have an <a
+The "new-reg", "new-authz", and "new-cert" endpoints on the v1 API and the "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the v2 API have an <a
 id="overall-requests"></a>**Overall
 Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
 directory & subdirectories have an Overall Requests limit of 40 requests per second.

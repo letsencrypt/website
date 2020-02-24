@@ -35,7 +35,7 @@ Para recibir actualizaciones menores sobre cambios importantes como los descrito
 [Anuncios de API](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836) .
 Esto es útil tanto para desarrolladores de clientes como para proveedores de hosting.
 
-Para actualizaciones importantes sobre mantenimientos e interrupciones, visite nuestra [página de estado] (https://letsencrypt.status.io/) y presione Suscribirse en la esquina superior derecha. Esto es más útil para los proveedores de hosting.
+Para actualizaciones importantes sobre mantenimientos e interrupciones, visite nuestra [página de estado](https://letsencrypt.status.io/) y presione Suscribirse en la esquina superior derecha. Esto es más útil para los proveedores de hosting.
 
 Además, asegúrese de utilizar una dirección de correo electrónico válida para su cuenta ACME. Utilizaremos ese correo electrónico para enviarle avisos de vencimiento y comunicarnos sobre cualquier problema específico de su cuenta.
 
@@ -87,7 +87,7 @@ En relación con los dos puntos anteriores, puede tener sentido, si tiene muchas
 
 # Implementar OCSP Stapling
 
-Muchos navegadores buscarán el OCSP de Let's Encrypt cuando carguen su sitio. Este es un [problema de rendimiento y privacidad] (https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/). Idealmente, las conexiones a su sitio no deberían esperar una conexión secundaria a Let's Encrypt. Además, las solicitudes de OCSP le dicen a Let's Encrypt qué sitios visitan las personas. Tenemos una buena política de privacidad y no registramos detalles de identificación individual de las solicitudes de OCSP, preferimos ni siquiera recibir los datos en primer lugar. Además, anticipamos nuestros costos de ancho de banda para servir OCSP cada vez que un navegador visita un sitio Let's Encrypt por primera vez, supone una gran parte de nuestros gastos de infraestructura.
+Muchos navegadores buscarán el OCSP de Let's Encrypt cuando carguen su sitio. Este es un [problema de rendimiento y privacidad](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/). Idealmente, las conexiones a su sitio no deberían esperar una conexión secundaria a Let's Encrypt. Además, las solicitudes de OCSP le dicen a Let's Encrypt qué sitios visitan las personas. Tenemos una buena política de privacidad y no registramos detalles de identificación individual de las solicitudes de OCSP, preferimos ni siquiera recibir los datos en primer lugar. Además, anticipamos nuestros costos de ancho de banda para servir OCSP cada vez que un navegador visita un sitio Let's Encrypt por primera vez, supone una gran parte de nuestros gastos de infraestructura.
 
 Al activar el OCSP Stapling ( engrapado OCSP ), puede mejorar el rendimiento de su sitio web, proporcionar mejores protecciones de privacidad para sus usuarios y ayudar a Let's Encrypt a servir de manera eficiente a la mayor cantidad de personas posible.
 

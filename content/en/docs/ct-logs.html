@@ -2,16 +2,18 @@
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
 top_graphic: 4
-lastmod: 2020-02-05
+lastmod: 2020-02-14
+aliases:
+    - /ct-logs
 ---
 
 {{< lastmod >}}
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> is a system for logging and monitoring the issuance of TLS certificates. CT greatly enhances everyone's ability to monitor and study certificate issuance, and these capabilities have led to numerous improvements to the CA ecosystem and Web security. As a result, CT is rapidly becoming critical infrastructure.</p>
 
-<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate two annually sharded CT logs named <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> and Testflume. All publicly trusted certificate authorities are welcome to submit to our logs. <a href="{{< relref "/contact" >}}">Contact us via email</a> about adding new root certificates to our logs.</p>
+<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate two annually sharded CT logs named <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> and Testflume. All publicly trusted certificate authorities are welcome to submit to our logs. Many certificate authority root certificates have already been included in our CT logs. <a href="{{< relref "/contact" >}}">Contact us via email</a> about adding new root certificates to our logs if yours has not been included.</p>
 
-<p>Join our <a href="https://community.letsencrypt.org/c/ct-announcements/">community forum</a> to see major announcements about our CT logs.</p>
+<p>Sign up for notifications in the <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">CT announcements category</a> of our community forum to see major announcements about our CT logs.</p>
 
 <h2>Funding</h2>
 
@@ -41,3 +43,48 @@ lastmod: 2020-02-05
     <li>Testflume's accepted roots list includes all of the Oak accepted roots, plus additional test roots.</li>
     <li>Testflume can be used by other certificate authorities for testing purposes.</li>
 {{< /ct_logs >}}
+<br>
+<h2>Log Operations</h2>
+<p>To enumerate the included roots for a particular CT log, you can run the following command in the terminal of your choice:</p>
+<pre>
+$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>Submitting certificates to a CT log is typically handled by certificate authorities. If you'd like to expiriment with this, begin by retrieving an arbitrary PEM encoded certificate from our favorite website. Copy and paste the following block into your terminal.</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>Before a certificate can be submitted, it must be JSON encoded within a special structure. You can use the JSON generator provided by <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> to perform this task. The crt.sh utility will return a JSON bundle. Download the bundle to your computer, rename the file if you must, and issue the following command to perform the add-chain operation (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) to submit the certificate to a CT log. The output will contain a signature which is in fact an <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. More on the signature in a moment.</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
+{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+</pre>
+
+<p>To confirm that the CT log was signed by the Oak 2020 shard, we use the id field from the command above and run it through the following command. The result of this will output the Log ID of the CT log.</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+</pre>
+
+<p>Using the signature field, we can verify that the certificate was submitted to a log. Using our <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT deep dive guide</a>, you could further decode this value.</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
+9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
+5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
+2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
+47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+</pre>
