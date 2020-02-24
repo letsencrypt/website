@@ -3,7 +3,7 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2019-02-25
+lastmod: 2020-02-24
 ---
 
 {{< lastmod >}}
@@ -120,7 +120,7 @@ Cons:
 
 This challenge was defined in draft versions of ACME. It did a TLS
 handshake on port 443 and sent a specific [SNI] header, looking for
-certificate that contained the token. It [will be disabled in March
+certificate that contained the token. It [was disabled in March
 2019][tls-sni-disablement]
 because it was not secure enough.
 
