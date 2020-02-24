@@ -10,4 +10,4 @@ install:
   - npm install
   - npm run build
   - npm test
-  - html5validator --root public --blacklist documents --also-check-css --format text
+  - html5validator --root public --blacklist documents donate ct-logs --also-check-css --format text
