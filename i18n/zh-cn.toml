@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt 是<span>免费</span>、<span>开放</span>和<span>自动化</span>的证书颁发机构"
+other = "为1.8亿个网站提供TLS证书的非盈利性证书颁发机构。"
 
 [home_hero_getting_started]
 other = "快速入门"
