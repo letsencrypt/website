@@ -26,16 +26,15 @@ pristup. To možete uvek proveriti sa Vašim hosting provajderom kako bi ste bil
 Preporučujemo da većina ljudi sa shell pristupom koristi [Certbot] ACME klijent. Ovaj klijent može 
 automatizovati izdavanje i instalaciju sertifikata bez prestanka rada Vašeg web sajta.
 Takođe pruža i "expert" modove za ljude koji ne žele automatsku konfiguraciju. Jednostavan je za upotrebu,
-radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite
-Certbot stranicu] [Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
+radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite Certbot stranicu][Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
-[mnogo više ACME klijenata]({{< relref "/docs/client-options.md">}}). Jednom kada odaberete ACME klijenta,
+{{<link "mnogo više ACME klijenata" "/docs/client-options" >}}. Jednom kada odaberete ACME klijenta,
 pogledajte dokumentaciju za konkretno tog klijenta kako bi ste nastavili sa daljim koracima.
 
 Ako eksperimentišete sa različitim ACME klijentima, koristite naše
-[staging okruženje]({{< relref "/docs/staging-environment.md">}}) da biste izbegli dostizanje
-[servisnih prekoračenja i limita]({{< relref "/docs/rate-limits.md">}}).
+{{<link "staging okruženje" "/docs/staging-environment" >}} da biste izbegli dostizanje
+{{<link "servisnih prekoračenja i limita" "/docs/rate-limits" >}}.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

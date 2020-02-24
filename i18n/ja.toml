@@ -122,13 +122,10 @@ other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
 [certificate_transparency_name]
 other = "名称"
 
-[certificate_transparency_role]
-other = "役割"
-
 [certificate_transparency_role_production]
 other = "プロダクション用"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "テスト用"
 
 [certificate_transparency_uri]
@@ -168,3 +165,18 @@ other = "PayPal で寄付する"
 
 [not_found]
 other = "このページは見つかりません。アドレスを確認してみてください。"
+
+[amount_per_year]
+other = "${{ .nb }}/年 (USD)"
+
+[3y_commitment]
+other = "3年間のコミット"
+
+[1_99_employees]
+other = "従業員数 1-99 人"
+
+[100_999_employees]
+other = "従業員数 100-999 人"
+
+[1000_employees]
+other = "従業員数 1000+ 人"

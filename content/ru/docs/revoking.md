@@ -20,12 +20,10 @@ lastmod: 2017-06-08
 в [Online Certificate Status Protocol 
 (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). 
 Некоторые браузеры проверяют OCSP, чтобы определить, можно ли доверять сертификату. 
-Обратите внимание, что OCSP [имеет несколько значительных проблем]
-(https://www.imperialviolet.org/2011/03/18/revocation.html), поэтому 
+Обратите внимание, что OCSP [имеет несколько значительных проблем](https://www.imperialviolet.org/2011/03/18/revocation.html), поэтому 
 не все браузеры проводят эту проверку. Но аннулирование сертификатов, 
 соответствующих скомпрометированным закрытым ключам, все еще является 
-важной практикой и необходима согласно [Клиентскому соглашению]
-({{< relref "/repository.md" >}}) Let's Encrypt's.
+важной практикой и необходима согласно {{< link "Клиентскому соглашению" "/repository">}} Let's Encrypt's.
 
 Чтобы аннулировать сертификат с помощью Let's Encrypt, следует использовать [ACME 
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), 

@@ -1,9 +1,6 @@
 <header class="site-header">
   <a id="skiplink" href="#main-content">{{ i18n "header_skip_nav" }}</a>
   <div class="wrapper">
-    <div class="linux-foundation-link">
-      <a href="https://collabprojects.linuxfoundation.org/" target="_blank"><img src="/images/linux-foundation.png" alt="Linux Foundation Collaborative Projects" /></a>
-    </div>
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}"><img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt"></a>
 
     <span id="menuIcon">
@@ -13,8 +10,8 @@
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
         <ul class="pure-menu-list">
           {{ range .Site.Menus.main }}
-          <li class="pure-menu-item{{ if .HasChildren }}  pure-menu-has-children pure-menu-allow-hover{{ end }}">
-            <a href="{{ .URL }}" class="pure-menu-link" tabindex="0">{{ .Name }}</a>
+          <li class="pure-menu-item{{ if .HasChildren }} pure-menu-has-children{{ end }}">
+            <a href="{{ if .HasChildren }}#{{ else }}{{ .URL }}{{ end }}" class="pure-menu-link" tabindex="0">{{ .Name }}</a>
             {{ if .HasChildren }}
             <ul class="pure-menu-children">
               {{ range .Children }}
@@ -27,11 +24,21 @@
           </li>
           {{ end }}
           {{ $home := .Site.Home }}
-          {{ if gt (len $home.AllTranslations ) 1 }}
-          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="#" class="pure-menu-link">{{ i18n "languages" }} </a>
+          {{ $langs := slice }}
+          {{ if .Translations }}
+            {{ range .AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ else }}
+            {{ range $home.AllTranslations }}
+              {{ $langs = $langs | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $langs ) 1 }}
+          <li class="pure-menu-item pure-menu-has-children">
+            <a href="#" class="pure-menu-link" tabindex="0">{{ i18n "languages" }} <img src="/images/language-icon128px-black.png" class="inline-icon" alt="" aria-hidden="true"></a>
             <ul class="pure-menu-children">
-              {{ range $home.AllTranslations }}
+              {{ range $langs }}
               {{ $isCurrentLang := eq $home.Language .Language }}
               <li class="pure-menu-item">
                 <a href="{{ .RelPermalink }}" lang="{{ .Language.Params.languageCode }}" hreflang="{{ .Language.Params.languageCode }}" class="pure-menu-link">{{ if $isCurrentLang  }}✓ {{ end }}{{ .Language.LanguageName }}</a>

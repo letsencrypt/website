@@ -2,14 +2,14 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-07-03
+lastmod: 2020-02-20
 ---
 
 {{< lastmod >}}
 
-## 多视角验证
+## IP地址证书
 
-目前，Let's Encrypt 从单一网络视角进行验证。我们正计划从多个网络视角展开验证。
+我们计划增加对IP验证的支持，并将IP地址包括在证书中。
 
 ## ECDSA根证书和中间证书
 
@@ -17,11 +17,17 @@ lastmod: 2019-07-03
 
 # 已实现的功能
 
+## 多视角验证
+
+* 启用时间: 2020 年 2 月 19 日
+
+我们已通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
+
 ## 证书透明度日志
 
 * 启用时间：2019 年 5 月 15 日
 
-我们开始运作一个[证书透明度日志服务器]({{< relref "/docs/ct-logs.html" >}}).
+我们正在运作{{<link "证书透明度日志服务器" "/docs/ct-logs" >}}.
 
 ## 支持 TLS ALPN 验证
 

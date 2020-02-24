@@ -8,4 +8,4 @@ menu:
 lastmod: 2019-05-15
 ---
 
-{{% docs_index %}}
+{{< docs_index >}}

@@ -21,7 +21,7 @@ menu:
 
 ## 메일링 리스트
 
-다양한 기술 메일링 리스트에 대한 정보를 원하시면, 당사의 [참여]({{< relref "/getinvolved.md" >}}) 페이지를 방문해 주십시오.
+다양한 기술 메일링 리스트에 대한 정보를 원하시면, 당사의 {{<link "참여" "/getinvolved" >}} 페이지를 방문해 주십시오.
 
 뉴스레터를 구독하려면 [여기를 클릭하세요.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 

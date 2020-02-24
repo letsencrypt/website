@@ -16,12 +16,12 @@ grosse Organisationen eine grosse Anzahl an Zertifikaten ausstellen können,
 ohne die Intervention von Let's Encrypt zu benötigen.
 
 Wenn Sie aktiv einen Let's Encrytpt Client entwickeln oder testen, bitte
-benutzen Sie unsere [Staging Umgebung]({{< relref "/docs/staging-environment.md" >}}) anstatt
+benutzen Sie unsere {{<link "Staging Umgebung" "/docs/staging-environment" >}} anstatt
 die Produktions API.
 Wenn Sie an der Integration von Let's Encrypt als Provider arbeiten oder
-einer grossen Webseite bitte [lesen Sie unseren Integration Guide]({{< relref "/docs/integration-guide.md" >}}).
+einer grossen Webseite bitte {{<link "lesen Sie unseren Integration Guide" "/docs/integration-guide" >}}.
 
-Das Hauptlimit ist <a name="certificates-per-registered-domain"></a>**Zertifikate
+Das Hauptlimit ist <a id="certificates-per-registered-domain"></a>**Zertifikate
  pro registrierte Domain** (50 pro Woche).
 Eine registrierte Domain ist, generell gesehen, der Teil der Domain, den Sie
 von einem Domainregistrar gekauft haben. Zum Beispiel, im Namen `www.example.com`,
@@ -31,7 +31,7 @@ ist die registrierte Domain `example.co.uk`. Wir benutzen die
 berechnen.
 
 Wenn Sie sehr viele Subdomains haben, möchten Sie vielleicht ein einfaches
-Zertifikat kombinieren, bis zu einem Limit von 100 <a name="names-per-certificate"></a>**Namen
+Zertifikat kombinieren, bis zu einem Limit von 100 <a id="names-per-certificate"></a>**Namen
  per Zertifikat**. Kombiniert mit dem Limit darüber bedeutet das, Sie können
 Zertifikate für bis zu 5000 einzigartige Subdomains pro Woche ausstellen.
 Ein Zertifikat mit mehreren Namen wird oft SAN Zertifikat genannt, 
@@ -42,7 +42,7 @@ Verlängerungen werden speziell behandelt: Sie werden nicht auf Ihr
 **Zertifikat pro registrierter Domain**-Limit angerechnet, unterliegen jedoch einem 
 **Duplikat-Zertifikat**-Limit von 5 pro Woche.
 Hinweis: Verlängerungen wurden bis März 2019 gegen Ihr **Zertifikat pro registrierter Domain**-Limit
- angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name- rate-limit-order-of-operations-gotcha/88189).
+ angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Zum Beispiel, Sie fordern die Ausstellung eines Zertifikates mit dem Namen
 [`www.example.com`, `example.com`], und Sie stellen 4 weitere Anträge auf Zertifikate
@@ -56,39 +56,38 @@ Bei der Erneuerungsbehandlung werden der öffentliche Schlüssel und die angefor
 **Sperren von Zertifikaten setzt das Rate Limit nicht zurück**, weil die
 Resourcen zum Ausstellen dieser Zertifikate schon konsumiert sind.
 
-Es gibt ein <a name="failed-validations"></a>**Fehlgeschlagene Validierung**
+Es gibt ein <a id="failed-validations"></a>**Fehlgeschlagene Validierung**
 Limit von 5 Fehlern pro Account, pro Hostname, pro Stunde. Dieses Limit
-ist höher auf unserer [Staging 
-Umgebung]({{< relref "/docs/staging-environment.md" >}}), so können Sie diese Umgebung zur Fehlersuche bei Verbindungsproblemen
+ist höher auf unserer {{<link "Staging Umgebung" "/docs/staging-environment" >}}, so können Sie diese Umgebung zur Fehlersuche bei Verbindungsproblemen
 benutzen.
 
 Die "new-reg", "new-authz" und "new-cert" Endpunkte haben ein <a
-name="overall-requests"></a>**Allgemeine Anfragen** Limit von 20 pro Sekunde.
+id="overall-requests"></a>**Allgemeine Anfragen** Limit von 20 pro Sekunde.
 Der "/directory" Endpunkt und das "/acme" Verzeichnis und Unterverzeichnisse
 haben ein Allgemeines Anfragen Limit von 40 Anfragen pro Sekunde.
 
 Wir haben noch zwei andere Limits, in die Sie sehr unwahrscheinlich
 laufen werden.
 
-Sie können maximal 10 <a name="accounts-per-ip-address"></a>**Konten pro IP-Adresse**
+Sie können maximal 10 <a id="accounts-per-ip-address"></a>**Konten pro IP-Adresse**
 pro 3 Stunden erstellen. Sie können maximal 500 **Konten pro IP-Bereich**
 mit einem IPv6 /48 pro 3 Stunden erstellen.
 Es ist sehr selten, dass man in dieses Kontenlimit läuft und wir empfehlen,
-dass grosse Integratoren ein Design von [ein Konto für viele Kunden]({{< relref "/docs/integration-guide.md" >}})
+dass grosse Integratoren ein Design von {{<link "ein Konto für viele Kunden" "/docs/integration-guide" >}}
 verwenden.
 
-Sie können ein Maximum von 300 <a name="pending-authorizations"></a>**Ausstehende
+Sie können ein Maximum von 300 <a id="pending-authorizations"></a>**Ausstehende
 Autorisierungen** pro Konto haben. Das Erreichen dieses Rate Limits ist
 selten und entsteht meistens bei der Entwicklung von ACME Clients.
 Es bedeutet üblichrweise, dass Ihr Client Autorisierungsanfragen stellt,
 diese aber nicht richtig verarbeiten kann.
-Bitte benutzen Sie unsere [Staging Umgebung]({{< relref "/docs/staging-environment.md" >}}),
+Bitte benutzen Sie unsere {{<link "Staging Umgebung" "/docs/staging-environment" >}},
 wenn Sie neue ACME Clients entwickeln.
 
 Benutzer der ACME v2 API können ein Maximum von 300 <a
-name="new-orders"></a>**Neue Aufträge** pro Konto pro 3 Stunden erstellen.
+id="new-orders"></a>**Neue Aufträge** pro Konto pro 3 Stunden erstellen.
 
-# <a name="overrides"></a>Überschreibungen
+# <a id="overrides"></a>Überschreibungen
 
 Wenn Sie ein Rate Limit erreicht haben, gibt es keinen Weg, diesen temporär
 zurückzusetzen. Sie müssen warten, bis das Rate Limit nach einer Woche
@@ -111,10 +110,9 @@ Beachten Sie, dass die meisten Hosting-Provider keine Vergrösserung der
 Rate Limits brauchen, weil es kein Limit an registrierten Domains und
 eine Zertifikatsausstellung für diese gibt. Solange Ihre Kunden nicht mehr
 als 5.000 Subdomains in einer registrierten Domain haben, brauchen Sie keine
-Vergrösserung der Limits. Schauen Sie in unseren [Integration
-Guide]({{< relref "/docs/integration-guide.md" >}}) für mehr Anleitungen.
+Vergrösserung der Limits. Schauen Sie in unseren {{<link "Integration Guide" "/docs/integration-guide" >}} für mehr Anleitungen.
 
-# <a name="clearing-pending"></a>Ausstehende Autorisierungen bereinigen
+# <a id="clearing-pending"></a>Ausstehende Autorisierungen bereinigen
 
 Wenn Sie eine grosse Anzahl von ausstehenden Autorisierungsanfragen haben
 und dadurch in einen Rate Limit Fehler laufen, können Sie einen
@@ -123,7 +121,7 @@ JWS-Signierten POST absenden, wie in
 [ACME spec](https://tools.ietf.org/html/rfc8555#section-7.5.1)
 beschrieben.
 Die ausstehenden Autorisierungsobjekte werden durch URLs in der Form
-`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` dargestell und sollten in
+`https://acme-v02.api.letsencrypt.org/acme/authz/XYZ` dargestell und sollten in
 Ihrem Client Log auftauchen. Beachten Sie, dass es keinen Unterschied macht,
 ob die Validierung erfolgreich war oder nicht. Die Autorisierung wird immer
 den Status ausserhalb von *pending* haben. Wenn Sie keine Logs mit relevanten

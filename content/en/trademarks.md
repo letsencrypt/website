@@ -84,7 +84,7 @@ If you offer software or services that are related to ISRG software or services,
 
 ## Reporting Trademark Abuse
 
-Please report any misuse of the ISRG Marks to press[at]letsencrypt.org, and provide us with as much information as you can about the use you think might be infringing. We’ll investigate the use, and take appropriate action, if warranted.
+Please report any misuse of the ISRG Marks to [press@letsencrypt.org](mailto:press@letsencrypt.org), and provide us with as much information as you can about the use you think might be infringing. We’ll investigate the use, and take appropriate action, if warranted.
 
 ## Questions
 
