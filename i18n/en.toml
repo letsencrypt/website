@@ -143,6 +143,12 @@ other = "Log ID"
 [certificate_transparency_state]
 other = "State"
 
+[certificate_transparency_window_start]
+other = "Window Start"
+
+[certificate_transparency_window_end]
+other = "Window End"
+
 [overview]
 other = "Overview"
 
