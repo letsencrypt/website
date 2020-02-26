@@ -8,7 +8,7 @@ lastmod: 2019-10-18
 
 {{< lastmod >}}
 
-Das Ziel von Let's Encrypt und des [ACME-Protokolls](https://ietf-wg-acme.github.io/acme/) besteht darin, die Einrichtung eines HTTPS-Servers zu ermöglichen, der automatisch ein vertrauenswürdiges Browserzertifikat ohne menschliches Eingreifen erhält. Dies wird durch Ausführen eines Zertifikatsverwaltungsagenten auf dem Webserver erreicht.
+Das Ziel von Let's Encrypt und des [ACME-Protokolls](https://tools.ietf.org/html/rfc8555) besteht darin, die Einrichtung eines HTTPS-Servers zu ermöglichen, der automatisch ein vertrauenswürdiges Browserzertifikat ohne menschliches Eingreifen erhält. Dies wird durch Ausführen eines Zertifikatsverwaltungsagenten auf dem Webserver erreicht.
 
 Um zu verstehen, wie die Technologie funktioniert, gehen wir die Einrichtung von `https://example.com/` mit einem Zertifikatsverwaltungsagenten durch, der Let's Encrypt unterstützt.
 

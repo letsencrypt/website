@@ -38,6 +38,5 @@ is blocked for your site. Some (mostly residential) ISPs block
 port 80 for various reasons. If your ISP does this but you’d
 still like to get certificates from Let's Encrypt, you have
 two options: You can use DNS-01 challenges or you can use [one of
-the clients that supports TLS-ALPN-01 challenges]
-(https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
+the clients that supports TLS-ALPN-01 challenges](https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
  (on port 443).

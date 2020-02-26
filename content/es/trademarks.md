@@ -84,7 +84,7 @@ Si ofrece software o servicios relacionados con el software o servicios ISRG, no
 
 ## Informar abuso de marca registrada
 
-Informe cualquier mal uso de las Marcas ISRG a press[at]letsencrypt.org y proporciónenos la mayor cantidad de información posible sobre el uso que cree que podría estar infringiendo. Investigaremos el uso y tomaremos las medidas adecuadas, si está justificado.
+Informe cualquier mal uso de las Marcas ISRG a [press@letsencrypt.org](mailto:press@letsencrypt.org) y proporciónenos la mayor cantidad de información posible sobre el uso que cree que podría estar infringiendo. Investigaremos el uso y tomaremos las medidas adecuadas, si está justificado.
 
 ## Preguntas
 

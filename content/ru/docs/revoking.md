@@ -20,8 +20,7 @@ lastmod: 2017-06-08
 в [Online Certificate Status Protocol 
 (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). 
 Некоторые браузеры проверяют OCSP, чтобы определить, можно ли доверять сертификату. 
-Обратите внимание, что OCSP [имеет несколько значительных проблем]
-(https://www.imperialviolet.org/2011/03/18/revocation.html), поэтому 
+Обратите внимание, что OCSP [имеет несколько значительных проблем](https://www.imperialviolet.org/2011/03/18/revocation.html), поэтому 
 не все браузеры проводят эту проверку. Но аннулирование сертификатов, 
 соответствующих скомпрометированным закрытым ключам, все еще является 
 важной практикой и необходима согласно {{< link "Клиентскому соглашению" "/repository">}} Let's Encrypt's.
@@ -73,9 +72,9 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 доменные имена в этом сертификате (иначе люди смогли бы аннулировать 
 чужие сертификаты без разрешения!). Для подтверждения этого контроля Let's Encrypt 
 использует те же методы, что и для подтверждения контроля при выпуске: вы можете 
-поместить [некое значение в запись DNS TXT](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5), 
-разместить [файл на HTTP-сервере](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3), 
-или предложить [специальный TLS-сертификат](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+поместить [некое значение в запись DNS TXT](https://tools.ietf.org/html/rfc8555#section-8.4), 
+разместить [файл на HTTP-сервере](https://tools.ietf.org/html/rfc8555#section-8.3), 
+или предложить [специальный TLS-сертификат](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3).
 Обычно ACME-клиент сделает это за вас. Обратите внимание, что большинство ACME-клиентов 
 совмещают подтверждение и выпуск, таким образом, единственный способ запросить 
 подтверждение -- попытка выпуска. Вы можете впоследствии аннулировать 

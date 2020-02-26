@@ -11,7 +11,7 @@ Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine
 Datei) von einer Zertifizierungsstelle (CA). Let's Encrypt ist eine CA. Um für
 Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, müssen Sie nachweisen, dass Sie die Kontrolle über diese Domain haben.
 Mit Let's Encrypt benutzen Sie Software, die das
-[ACME Protokoll](https://ietf-wg-acme.github.io/acme/) benutzt, welches
+[ACME Protokoll](https://tools.ietf.org/html/rfc8555) benutzt, welches
 typischerweise auf Ihrem Web-Host läuft.
 
 Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig

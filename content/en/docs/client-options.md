@@ -2,7 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-lastmod: 2020-01-13
+lastmod: 2020-02-25
 ---
 
 {{< clientslastmod >}}
@@ -24,14 +24,9 @@ We recommend that most people start with the [Certbot](https://certbot.eff.org/)
 
 If Certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-# ACMEv1 and ACMEv2
+# Other Client Options
 
-Let's Encrypt supports the ACMEv2 API, which is compatible with the
-[final ACME standard](https://tools.ietf.org/html/rfc8555). We're [phasing out
-the older ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
-in 2020 and 2021. All the clients on this list support ACMEv2. If you're already using one of
-these clients, make sure to upgrade to the latest version. If the client you are using isn't
-listed below, contact the project maintainers or switch to a different client.
+All of the following clients support the ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555)). We'll be entirely [phasing out support for ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/) soon. If you're already using one of the client below, make sure to upgrade to the latest version. If the client you're using isn't listed below it may not support ACMEv2, in which case we recommend contacting the project maintainers or switching to another client.
 
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 

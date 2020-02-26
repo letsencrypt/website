@@ -70,10 +70,10 @@ naquele certificado (senão qualquer pessoa poderia revogar o certificado dos ou
 sem permissão!). Para validar este controle, a Let's Encrypt usa os mesmos
 métodos que usa para validar o controle durante a emissão: você pode
 colocar um [valor em um registro TXT no 
-DNS](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) (Inglês),
-colocar um [arquivo num servidor HTTP](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3) (Inglês).
+DNS](https://tools.ietf.org/html/rfc8555#section-8.4) (Inglês),
+colocar um [arquivo num servidor HTTP](https://tools.ietf.org/html/rfc8555#section-8.3) (Inglês).
 ou oferecer um 
-[certificado TLS especial](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4) (Inglês).
+[certificado TLS especial](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3) (Inglês).
 Normalmente um cliente ACME cuidará disso por você. Note que a maioria dos clientes ACME
 combinar a validação e emissão, então a única forma de solicitar validações é 
 tentando emitir. Você pode então revogar o certificado gerado se você não

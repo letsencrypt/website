@@ -11,7 +11,7 @@ Da biste omogućili HTTPS na svojoj web lokaciji, morate dobiti sertifikat (vrst
 od sertifikacionog tela (CA). Let's Encrypt je sertifikaciono telo (CA). Da biste dobili
 sertifikat za domen vaše web lokacije od Let's Encrypt, morate prethodno dokazati
 kontrolu nad tim istim domenom. Sa Let's Encrypt-om, to dokazujete pomoću softvera koji koristi
-[ACME protokol](https://ietf-wg-acme.github.io/acme/), koji se obično pokreće
+[ACME protokol](https://tools.ietf.org/html/rfc8555), koji se obično pokreće
 na vašem web serveru.
 
 Da biste saznali koja je metoda najbolja za vas, morate znati da li
@@ -26,8 +26,7 @@ pristup. To možete uvek proveriti sa Vašim hosting provajderom kako bi ste bil
 Preporučujemo da većina ljudi sa shell pristupom koristi [Certbot] ACME klijent. Ovaj klijent može 
 automatizovati izdavanje i instalaciju sertifikata bez prestanka rada Vašeg web sajta.
 Takođe pruža i "expert" modove za ljude koji ne žele automatsku konfiguraciju. Jednostavan je za upotrebu,
-radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite
-Certbot stranicu] [Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
+radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite Certbot stranicu][Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
 {{<link "mnogo više ACME klijenata" "/docs/client-options" >}}. Jednom kada odaberete ACME klijenta,

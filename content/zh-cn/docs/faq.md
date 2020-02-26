@@ -4,7 +4,7 @@ linkTitle: 常见问题（FAQ）
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2020-02-20
 menu:
   main:
     weight: 30
@@ -49,7 +49,7 @@ Let's Encrypt 由一个小团队运营，依靠自动化来降低成本。因此
 
 我们建议将此类网站报告给 Google 安全浏览和 Microsoft 智能屏幕计划，以便更有效地保护用户。 以下是 Google 的报告网址：
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 如果您想更多地了解我们的政策和想法，请点击此处：
 
@@ -101,7 +101,7 @@ Let’s Encrypt 证书是标准的域名验证性证书，因此您可以将它�
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
-我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。将来，我们可能同时从多个IP地址进行验证。请参阅[该网页](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points)。
+我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。请注意，我们当前[从多个IP地址进行验证](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)。
 
 ## 我成功续期了证书，但这次没有要求我验证。为什么会这样？
 

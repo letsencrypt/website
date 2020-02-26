@@ -113,7 +113,7 @@ date: 2018-12-30
 
 {{% def id="HPKP" name="HTTP公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 要求浏览器在将来加载网页时确保网站的[证书链](#def-chain)使用特定公钥的安全机制。Chrome 引入了这项机制来应对 CA 被入侵的情况，但是它会导致网站停止工作，所以 Chrome 又[弃用并移除了它](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。[维基百科条目](https://zh.wikipedia.org/wiki/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
 
-{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。例如，这个列表同时包含了 `com` 和 `co.uk`，尽管 `co.uk` 不是 TLD。网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。[Let's Encrypt](#def-LE) 也使用这个列表来计算速率限制：{{< link "/rate-limits">}}。https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。例如，这个列表同时包含了 `com` 和 `co.uk`，尽管 `co.uk` 不是 TLD。网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。[Let's Encrypt](#def-LE) 也使用这个列表来计算速率限制：{{< link "/rate-limits">}}。 https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="信任方" english="Relying Party" %}} 依赖证书中的信息的人。例如，访问 HTTPS 网站的人是一个信任方。 {{% /def %}}
 
@@ -129,7 +129,7 @@ date: 2018-12-30
 
 {{% def id="SNI" name="服务器名称指示" english="Server Name Indication" abbr="SNI" %}} 在 [TLS](#def-TLS) 握手时由[用户代理](#def-user-agent)发送给[服务器](#def-web-server)，用于指定要连接的域名的字段。当同一个 IP 地址下有多个域名时，它允许服务器能够使用正确的[证书](#def-leaf)回应请求。Web 服务器可能会根据客户端用 SNI 指定的域名发送不同证书并且显示不同的内容。SNI 没有被加密，但它的实验性的替代品 ESNI 是被加密的。[维基百科条目](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) {{% /def %}}
 
-{{% def id="SCT" name="签名证书时间戳" english="Signed Certificate Timestamp" abbr="SCT" %}} [证书透明度日志](#def-CT-log)提供的经过签名且可验证的对发布证书的承诺。使用 [CT](#def-CT) 浏览器会在网站的证书或是 [TLS](#def-TLS) 握手消息中检查 SCT 是否存在，并拒绝连接到不符合其日志要求的网站。这使得欺诈性的或错误的证书更容易被检测出来。https://www.certificate-transparency.org/how-ct-works {{% /def %}}
+{{% def id="SCT" name="签名证书时间戳" english="Signed Certificate Timestamp" abbr="SCT" %}} [证书透明度日志](#def-CT-log)提供的经过签名且可验证的对发布证书的承诺。使用 [CT](#def-CT) 浏览器会在网站的证书或是 [TLS](#def-TLS) 握手消息中检查 SCT 是否存在，并拒绝连接到不符合其日志要求的网站。这使得欺诈性的或错误的证书更容易被检测出来。 https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
 {{% def id="SSL" name="安全套接字层" english="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS) 以前的名字，仍旧很常用。 {{% /def %}}
 

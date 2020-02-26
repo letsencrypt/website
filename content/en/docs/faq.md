@@ -48,7 +48,7 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here is the Google reporting URL:
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
 
 If you'd like to read more about our policies and rationale, you can do so here:
 

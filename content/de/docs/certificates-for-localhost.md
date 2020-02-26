@@ -59,7 +59,7 @@ automatisch als sicher gegen Netzwerkangriffe betrachtet.
 Das bedeutet, wenn Ihre Webapp HTTPS ist und Sie bieten einer nativen
 App einen Webservice auf `127.0.0.1` an, so können diese fröhlich über
 XHR kommunizieren.
-Leider bekommt [localhost noch nicht die gleiche Behandlung] [let-localhost].
+Leider bekommt [localhost noch nicht die gleiche Behandlung][let-localhost].
 WebSockets erhalten diese Behandlung auch nicht für einen der beiden Namen.
 
 Sie könnten versucht sein, um diese Limitierung herumzuarbeiten durch
@@ -86,7 +86,7 @@ Das bedeutet, jeder kann Ihre native App herunterladen und eine Kopie des
 privaten Schlüssels bekommen, incl. des Angreifers. Das wird als Komprimitierung
 Ihres privaten Schlüssels angesehen und Ihre Certificate Authority (CA) ist
 angewiesen, Ihr Zertifikat zu sperren, sobald sie Information dazu erhält.
-[Viele native apps][mdsp1] haben [ihr eigenes Zertifikat][mdsp2] [vorm Versenden
+[Viele native apps][mdsp1] haben [ihr eigenes Zertifikat][mdsp2][vorm Versenden
 des privaten Schlüssels][mdsp3] gesperrt.
 
 Leider sind für native Apps keine guten und sicheren Kommunikationsmöglichkeiten
@@ -97,7 +97,7 @@ Internet weiter verschärfen][tighten-access].
 Beachten Sie auch, dass das Exportieren eines Webdiensts, der privilegierte
 native APIs bietet, von Natur aus riskant ist, da auf Websites, die Sie nicht
 autorisieren wollten, möglicherweise zugegriffen wird. Wenn Sie diese Route
-durchgehen, informieren Sie sich über [Cross-OriginResource-Freigabe] [cors],
+durchgehen, informieren Sie sich über [Cross-OriginResource-Freigabe][cors],
 verwenden Sie Access-Control-Allow-Origin und stellen Sie sicher, dass Sie
 einen speicher-sicheren HTTP-Parser verwenden, da jede Quelle, der Sie
 keinen Zugriff erlauben, Preflight-Anforderungen senden kann, wodurch

@@ -77,9 +77,9 @@ Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben
 (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)!
 Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden
 wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT
-](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) machen,
-eine [Datei auf Ihren HTTP Server](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)
-ablegen oder bieten ein [spezielles TLS Zertifikat](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+](https://tools.ietf.org/html/rfc8555#section-8.4) machen,
+eine [Datei auf Ihren HTTP Server](https://tools.ietf.org/html/rfc8555#section-8.3)
+ablegen oder bieten ein [spezielles TLS Zertifikat](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3).
 Im Allgemeinen wird ein ACME Client das alles für Sie erledigen. Beachten Sie, 
 dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der
 einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung.
