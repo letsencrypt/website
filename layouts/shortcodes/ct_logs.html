@@ -18,6 +18,8 @@
             {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: https://{{ .log }}.ct.letsencrypt.org/{{ .shard }}<br>
             {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code><br>
             {{ i18n "certificate_transparency_log_id" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .logID }}</code><br>
+            {{ i18n "certificate_transparency_window_start" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ (time (int .windowStart)).UTC.Format "2006-01-02T04:00Z" }}</code><br>
+            {{ i18n "certificate_transparency_window_end" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ (time (int .windowEnd)).UTC.Format "2006-01-02T04:00Z" }}</code><br>
 
             {{/* States are only for production logs. */}}
             {{ if .state }}
