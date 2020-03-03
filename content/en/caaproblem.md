@@ -39,4 +39,4 @@ $ curl -XPOST -d 'fqdn=letsencrypt.org' https://checkhost.unboundtest.com/checkh
 The certificate currently available on letsencrypt.org is OK. It is not one of the certificates affected by the Let's Encrypt CAA rechecking problem. Its serial number is 03a1c95bdaa36a8268327f2253cbd3ba243
 ```
 
-If you have a large list of domains you need to check, <a href="https://github.com/hannob/lecaa">this tool</a> will be more effective than <a href="https://checkhost.unboundtest.com">https://checkhost.unboundtest.com</a>.
+If you have a large list of domains you need to check, <a href="https://github.com/hannob/lecaa">this tool</a> will be more effective.
