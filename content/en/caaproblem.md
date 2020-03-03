@@ -16,7 +16,7 @@ We have sent notification emails to affected subscribers who have registered an 
 Please note that the absence of an email does not mean you aren't affected by this problem. The best thing to do if you are unsure is use the checking tools below.
 The emails have the following subject line:
 ```
-ACTION REQUIRED: Renew these Let's Encrypt certificates by March 4"
+ACTION REQUIRED: Renew these Let's Encrypt certificates by March 4
 ```
 
 The file <a href="https://d4twhgtvn0ff5.cloudfront.net/caa-rechecking-incident-affected-serials.txt.gz">caa-rechecking-incident-affected-serials.txt.gz</a> contains a list of all
