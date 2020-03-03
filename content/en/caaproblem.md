@@ -32,9 +32,9 @@ ignore any entries with a date earlier than 2020-01-02.
 
 If you want to double check whether a given hostname still
 needs its certificate replaced, you can use the tool at
-https://unboundtest.com/caaproblem.html.
+https://checkhost.unboundtest.com/
 
 ```
-$ curl -XPOST -d 'fqdn=letsencrypt.org' https://unboundtest.com/caaproblem/checkhost
+$ curl -XPOST -d 'fqdn=letsencrypt.org' https://checkhost.unboundtest.com/checkhost
 The certificate currently available on letsencrypt.org is OK. It is not one of the certificates affected by the Let's Encrypt CAA rechecking problem. Its serial number is 03a1c95bdaa36a8268327f2253cbd3ba243
 ```
