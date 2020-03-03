@@ -28,7 +28,7 @@ email, your account ids were in that email). For each certificate
 associated you will need to renew and replace it, unless you have renewed it
 more recently than the date listed. For instance, if you know your ACME client
 always renews certificates when they are 30 days from expiration, you can safely
-ignore any entries with a date earlier than 2019-01-02.
+ignore any entries with a date earlier than 2020-01-02.
 
 If you want to double check whether a given hostname still
 needs its certificate replaced, you can use the tool at
