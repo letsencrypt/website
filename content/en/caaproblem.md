@@ -1,5 +1,5 @@
 ---
-title: Download affected certificate serials for 2019.02.29 CAA Rechecking Incident
+title: Download affected certificate serials for 2020.02.29 CAA Rechecking Incident
 slug: caaproblem
 top_graphic: 4
 date: 2020-03-02
@@ -10,7 +10,7 @@ english_is_canonical: 1
 {{< lastmod >}}
 
 This page hosts the list of affected serial numbers for the incident reported at
-https://community.letsencrypt.org/t/2019-02-29-caa-rechecking-bug/114591.
+https://community.letsencrypt.org/t/2020-02-29-caa-rechecking-bug/114591.
 
 The file <a href="https://d4twhgtvn0ff5.cloudfront.net/caa-rechecking-incident-affected-serials.txt.gz">caa-rechecking-incident-affected-serials.txt.gz</a> contains a list of all
 affected certs, sorted by account ID. Each entry has the following syntax:
