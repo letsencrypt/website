@@ -12,7 +12,7 @@ english_is_canonical: 1
 This page hosts the list of affected serial numbers and a domain checking utility for the incident reported at
 https://community.letsencrypt.org/t/2020-02-29-caa-rechecking-bug/114591.
 
-We have sent notification emails to affected subscribers who have registered an email address. If you need to re-subscribe to email notifications, please see <a href="https://letsencrypt.org/docs/expiration-emails/">this document</a>. While we have attempted to contact subscribers affected by this issue, it is possible for you to not have received an email if an email was not providedl while registering your ACME account, email delivery issues, or the message may be in your spam folder. Please note that the absence of an email does not mean you aren't affected by this problem. The best thing to do if you are unsure is use the checking tools below.
+We have sent notification emails to affected subscribers who have registered an email address. If you need to re-subscribe to email notifications, please see <a href="https://letsencrypt.org/docs/expiration-emails/">this document</a>. While we have attempted to contact subscribers affected by this issue, it is possible for you to not have received an email if an email was not provided while registering your ACME account, email delivery issues, or the message may be in your spam folder. Please note that the absence of an email does not mean you aren't affected by this problem. The best thing to do if you are unsure is use the checking tools below.
 The email will have the following subject line:
 ```
 ACTION REQUIRED: Renew these Let's Encrypt certificates by March 4
