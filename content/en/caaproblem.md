@@ -9,8 +9,17 @@ english_is_canonical: 1
 
 {{< lastmod >}}
 
-This page hosts the list of affected serial numbers for the incident reported at
+This page hosts the list of affected serial numbers and a hostname checking utility for the incident reported at
 https://community.letsencrypt.org/t/2020-02-29-caa-rechecking-bug/114591.
+
+We have sent notification emails to affected subscribers who have registered an email address. If you need to re-subscribe to
+email notifications, please see <a href="https://letsencrypt.org/docs/expiration-emails/">this document</a>. You may not have
+received an email if you did not provide an email address while registering your ACME account. You may also be missing an email
+due to email delivery issues or spam filtering. If you are unsure whether your hostname is affected, use the checking tools below.
+The email will have the following subject line:
+```
+ACTION REQUIRED: Renew these Let's Encrypt certificates by March 4
+```
 
 The file <a href="https://d4twhgtvn0ff5.cloudfront.net/caa-rechecking-incident-affected-serials.txt.gz">caa-rechecking-incident-affected-serials.txt.gz</a> contains a list of all
 affected certs, sorted by account ID. Each entry has the following syntax:
