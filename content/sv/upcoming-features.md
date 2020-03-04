@@ -31,7 +31,7 @@ Vi driftar en {{<link "certifikattransparenslogg" "/docs/ct-logs" >}}.
 * Aktiverat: den 12 juli 2018
 
 Vi har specificerat och implementerat en
-[ersättare](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) till
+[ersättare](https://tools.ietf.org/html/rfc8737) till
 TLS-SNI-valideringsmetoden som [stängdes ner av
 säkerhetsskäl](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811).
 Att introducera en ersättare var viktigt för prenumeranter som bara vill

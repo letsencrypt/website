@@ -73,7 +73,7 @@ colocar um [valor em um registro TXT no
 DNS](https://tools.ietf.org/html/rfc8555#section-8.4) (Inglês),
 colocar um [arquivo num servidor HTTP](https://tools.ietf.org/html/rfc8555#section-8.3) (Inglês).
 ou oferecer um 
-[certificado TLS especial](https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-07#section-3) (Inglês).
+[certificado TLS especial](https://tools.ietf.org/html/rfc8737#section-3) (Inglês).
 Normalmente um cliente ACME cuidará disso por você. Note que a maioria dos clientes ACME
 combinar a validação e emissão, então a única forma de solicitar validações é 
 tentando emitir. Você pode então revogar o certificado gerado se você não

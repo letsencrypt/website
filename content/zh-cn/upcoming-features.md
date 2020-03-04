@@ -33,7 +33,7 @@ lastmod: 2020-02-20
 
 * 启用时间：2018 年 7 月 12 日
 
-我们为被[出于安全原因停止使用](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)的 TLS-SNI 验证方法制定并实现了一个[替代方法](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/)。这个替代方法对于只想使用 443 端口进行验证的用户来说十分重要。
+我们为被[出于安全原因停止使用](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)的 TLS-SNI 验证方法制定并实现了一个[替代方法](https://tools.ietf.org/html/rfc8737)。这个替代方法对于只想使用 443 端口进行验证的用户来说十分重要。
 
 ## 证书内置 SCT 记录
 

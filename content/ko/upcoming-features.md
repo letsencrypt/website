@@ -27,7 +27,7 @@ lastmod: 2019-07-03
 
 * 활성된 날짜: 2018년 7월 12일
 
-[보안상의 이유로 중단](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811) 했던 TLS-SNI 검증 방법에 대해 [대체품](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn)을 지정하고 구현했습니다. 검증을 위해 포트 443만 사용하려는 가입자에게 대체품을 소개하는 것이 중요했습니다.
+[보안상의 이유로 중단](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811) 했던 TLS-SNI 검증 방법에 대해 [대체품](https://tools.ietf.org/html/rfc8737)을 지정하고 구현했습니다. 검증을 위해 포트 443만 사용하려는 가입자에게 대체품을 소개하는 것이 중요했습니다.
 
 ## SCT 영수증이 포함된 인증서
 
