@@ -44,7 +44,7 @@ needs its certificate replaced, you can use the tool at
 https://checkhost.unboundtest.com/
 
 ```
-$ curl -XPOST -d 'fqdn=letsencrypt.org' https://checkhost.unboundtest.com/checkhost
+$ curl -XPOST -d 'fqdn=letsencrypt.org' https://checkhost.unboundtest.com/caaproblem/checkhost
 The certificate currently available on letsencrypt.org is OK. It is not one of the certificates affected by the Let's Encrypt CAA rechecking problem. Its serial number is 03a1c95bdaa36a8268327f2253cbd3ba243
 ```
 
