@@ -3,7 +3,7 @@ title: Download affected certificate serials for 2020.02.29 CAA Rechecking Incid
 slug: caaproblem
 top_graphic: 4
 date: 2020-03-02
-lastmod: 2020-03-03
+lastmod: 2020-03-04
 english_is_canonical: 1
 ---
 
