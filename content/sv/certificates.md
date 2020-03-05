@@ -3,7 +3,7 @@ title: Förtroendekedja
 linkTitle: Förtroendekedja (rot- och mellancertifikat)
 slug: certificates
 top_graphic: 5
-lastmod: 2019-10-18
+lastmod: 2020-02-07
 ---
 
 {{< lastmod >}}
@@ -29,16 +29,13 @@ rotcertifikat.
 
 # Mellancertifikat
 
-IdenTrust har korssignerat våra mellancertifikat. Detta gör att våra
-servercertifikat accepteras av alla stora webbläsare under tiden vi sprider vårt
-eget rotcertifikat.
-
 Under normala förhållanden kommer certifikat utfärdade av Let's Encrypt från
-“Let’s Encrypt Authority X3”.  Det andra mellancertifikatet, “Let’s Encrypt
+“Let’s Encrypt Authority X3”. Det andra mellancertifikatet, “Let’s Encrypt
 Authority X4”, är reserverat för nödlägen och kommer bara användas om vi
 förlorar möjligheten att använda “Let’s Encrypt Authority X3”.
-Mellancertifikaten X1 och X2 var vår första generation mellancertifikat. Vi har
-ersatt dem med nya mellancertifikat som är mer kompatibla med Windows XP.
+Vi använder inte mellancertifikaten X1 och X2 längre.
+
+IdenTrust har korssignerat våra mellancertifikat för extra kompabilitet.
 
 * Aktiva
   * [Let's Encrypt Authority X3 (korssignerat av IdenTrust)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
@@ -60,21 +57,22 @@ signaturerna för alla servercertifikat (slutanvändarcertifikat eller
 lövcertifikat), det vill säga certifikaten vi utfärdar för användning av din
 webbserver.
 
-Vårt mellancertifikat är signerat av ISRG Root X1 men eftersom vi är en väldigt
-ny certifikatauktoritet så litar de flesta webbläsare inte på ISRG Root X1 än.
-För att bli brett betrodd direkt så är vårt mellancertifikat också korssignerat
-av en annan certifikatauktoritet, IdenTrust, vars rotcertifikat redan är betrott
-i alla stora webbläsare. Mer specifikt så har IdenTrust korssignerat vårt
-mellancertifikat med deras "DST Root CA X3" som nu kallas "TrustID X3 Root".
+
+Vårt mellancertifikat är signerat av ISRG Root X1. I nuläget är ISRGs
+rotcertifikat betrott på bred front, men vårt mellancertifikat är fortfarande
+korssignerat av IdenTrusts "DST Root CA X3" (nu kallat "TrustID X3 Root") för
+extra klientkompabilitet. IdenTrusts rotcertifikat har funnits längre och har
+därför bättre kompatibilitet med äldre enheter och operativsystem (exempelvis
+Windows XP).
 [Ladda ner "TrustID X3 Root" från
 identrust.com](https://www.identrust.com/support/downloads) (eller ladda ner en
 kopia här: [.pem](/certs/trustid-x3-root.pem.txt),
 [.p7b](/certs/trustid-x3-root.p7b)).
 
-Det betyder att det finns två certifikat tillgängliga som båda representerar
-vårt mellancertifikat. Ett är signerat av DST Root CA X3 och det andra är
-signerat av ISRG Root X1. Det enklaste sättet att skilja dessa åt är genom att
-titta på deras Issuer-fält (utfärdare).
+Att ha en korssignering betyder att det finns två certifikat tillgängliga som
+båda representerar vårt mellancertifikat. Ett är signerat av DST Root CA X3 och
+det andra är signerat av ISRG Root X1. Det enklaste sättet att skilja dessa åt
+är genom att titta på deras Issuer-fält (utfärdare).
 
 När en systemadministratör konfigurerar en webbserver så konfigureras inte bara
 servercertifikatet utan också en lista av mellancertifikat för att hjälpa
