@@ -84,6 +84,9 @@
       {"name":"IP2Location","url":"https://www.ip2location.com/","image":"ip2location-logo.png"},
       {"name":"HostScore","url":"https://www.hostscore.net/","image":"hostscore-logo.png"},
       {"name":"Hoststar","url":"https://www.hoststar.ch/","image":"hoststar-logo.png"},
-      {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"}
+      {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"},
+      {"name":"VMWare","url":"https://www.vmware.com/","image":"vmware-logo.png"},
+      {"name":"one.com","url":"https://www.one.com/","image":"one-com-logo.png"},
+      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"}
 ]
 }
