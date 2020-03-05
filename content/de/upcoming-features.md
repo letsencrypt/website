@@ -27,7 +27,7 @@ Wir haben einen {{<link "Certificate Transparency log" "/docs/ct-logs" >}} in Be
 
 * Aktiviert: 12. Juli 2018
 
-Wir haben einen [Ersatz](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) für die TLS-SNI Validierungsmethode spezifiziert und implementiert, welche [aus Sicherheitsgründen deaktiviert war](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Vorstellung des Ersatz' war wichtig für Abonennten, die nur Port 443 für Validierung benutzen möchten.
+Wir haben einen [Ersatz](https://tools.ietf.org/html/rfc8737) für die TLS-SNI Validierungsmethode spezifiziert und implementiert, welche [aus Sicherheitsgründen deaktiviert war](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Vorstellung des Ersatz' war wichtig für Abonennten, die nur Port 443 für Validierung benutzen möchten.
 
 ## Embed SCT receipts in certificates
 

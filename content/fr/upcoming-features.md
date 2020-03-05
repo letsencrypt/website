@@ -27,7 +27,7 @@ Nous commençons à gérer un {{<link "journal de transparence des certificats" 
 
 * Activé : 12 juillet 2018
 
-Nous avons spécifié et mis en œuvre un [remplacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) pour la méthode de validation TLS-SNI, qui a été abandonnée pour des [raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-ne-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI était importante pour les abonnés qui souhaitaient uniquement utiliser le port 443 pour la validation.
+Nous avons spécifié et mis en œuvre un [remplacement](https://tools.ietf.org/html/rfc8737) pour la méthode de validation TLS-SNI, qui a été abandonnée pour des [raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-ne-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI était importante pour les abonnés qui souhaitaient uniquement utiliser le port 443 pour la validation.
 
 ## Intégrer les reçus SCT dans les certificats
 
