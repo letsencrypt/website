@@ -49,7 +49,7 @@ Let's Encrypt は少人数のチームで運営されており、コストを削
 
 そのようなサイトは、Google Safe Browsing や Microsoft Smart Screen プログラムに報告することをおすすめしています。ユーザーをより効果的に守ることができるからです。Google の報告用 URL はこちらです。
 
-[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 私たちのポリシーとその論拠については、こちらの記事で詳しく説明しています。
 
