@@ -48,7 +48,7 @@ Let’s Encrypt 是一個小型團隊，並且透過自動化降低營運成本�
 
 我們建議你將這類型網站回報給 Google Safe Browsing 和 Microsoft Smart Screen 計畫，它們能更有效的保護使用者。以下是回報 Google 的網址：
 
-[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 如果你想閱讀更多關於政策與想法，請參考此連結：
 
