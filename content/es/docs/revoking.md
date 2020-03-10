@@ -19,7 +19,7 @@ Deberá demostrar a Let's Encrypt que está autorizado para revocar el certifica
 
 Si originalmente emitió el certificado y aún tiene el control de la cuenta que utilizó para emitirlo, puede revocarlo utilizando las credenciales de su cuenta. Certbot intentará esto por defecto. Ejemplo:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -31,7 +31,7 @@ Para usar este método, primero deberá descargar el certificado que se revocar�
 
 También necesitará una copia de la clave privada en formato PEM. Una vez que tenga ambos, puede revocar el certificado de la siguiente manera:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -42,7 +42,7 @@ poner un [archivo en el servidor HTTP](https://tools.ietf.org/html/rfc8555#secti
 u ofrecer un [Certificado TLS Especial](https://tools.ietf.org/html/rfc8737#section-3).
 Por lo general, un cliente ACME se encargará de esto por usted. Tenga en cuenta que la mayoría de los clientes de ACME combinan validación y emisión, por lo que la única forma de solicitar validaciones es intentar la emisión. Luego puede revocar el certificado resultante si no lo desea, o simplemente destruir la clave privada. Si desea evitar la emisión de un certificado, puede incluir un nombre de dominio inexistente en su línea de comando, lo que hará que la emisión falle y al mismo tiempo valide los otros nombres de dominio existentes. Para hacer esto, ejecute:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -50,6 +50,6 @@ Y sigua las instrucciones. Si prefiere validar usando HTTP en lugar de DNS, reem
 
 Una vez que haya validado el control de todos los nombres de dominio en el certificado que desea revocar, puede descargar el certificado desde [crt.sh](https://crt.sh/), luego proceda a revocar el certificado como si lo hubiera emitido:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

@@ -18,7 +18,7 @@ lastmod: 2017-06-08
 
 如果你擁有當初申請頒發憑證帳號的控制權，你可以透過你帳號的認證資訊，Certbot 預設使用這種方式註銷憑證，註銷指令為：
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -30,7 +30,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 
 此外，你還需要 PEM 格式的私鑰。當你有了這些文件後，你可以 Certbot 指令來註銷憑證：
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -38,7 +38,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 如果有人入侵你的主機或 DNS，並頒發了憑證，當你取回控制權後，你想要註銷它所頒發的憑證憑證。Let's Encrypt 必須驗證你擁有憑證中網域的控制權（不然人們可以在未經許可的狀況下註銷別人的憑證）！Let's Encrypt 使用和頒發憑證時相同的方法來驗證網域控制權：你可以[加入一個 DNS TXT 紀錄](https://tools.ietf.org/html/rfc8555#section-8.4)、[放一個檔案在 HTTP 伺服器上](https://tools.ietf.org/html/rfc8555#section-8.3)或提供一個[特殊的 TLS 憑證](https://tools.ietf.org/html/rfc8737#section-3)。通常 ACME 客戶端會幫你完成這些工作。需要注意的是，大多數 ACME 客戶端會同時完成驗證和頒發憑證，因此你僅能透過頒發新憑證來完成驗證。如果你不想要一張新的憑證，你可以在頒發後註銷它，或是直接將私鑰刪除。如果你想要完全避免頒發一張新的憑證，你可以在申請頒發時加入一個不存在的網域名稱，這會導致憑證頒發失敗，但是還是能驗證其他存在網域名稱的控制權。如果你想要這麼做，你可以透過 Certbot 指令：
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -46,6 +46,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 
 一旦你驗證了你想註銷的憑證中所有網域名稱的控制權，你就可以從 [crt.sh](https://crt.sh/) 上下載並執行註銷憑證的動作；就像你成功頒發了憑證後想註銷憑證的流程一樣：
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

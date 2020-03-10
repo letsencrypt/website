@@ -37,7 +37,7 @@ Se você originalmente emitiu o certificado e ainda possui controle
 da conta que usou para fazer isso, você pode revogá-lo usando suas credenciais da 
 conta. O Certbot tentará fazer isso por padrão. Exemplo:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -58,7 +58,7 @@ e fazer o download de certificados usando um monitor de registros como
 Você também precisará de uma cópia da chave privada no formato PEM. Uma vez que tiver isso em mãos
 você poderá revogar o certificado assim:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 # Usando uma conta autorizada diferente
@@ -82,7 +82,7 @@ de um certificado você pode inserir um nome de domínio inexistente na sua
 linha de comando, o que irá fazer a emissão falhar enquanto ainda consegue validar os 
 outros nomes de domínio existentes. Para fazer isso execute:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -94,6 +94,6 @@ Uma vez que você tenha validado o controle sobre todos os nomes de domínio no 
 revogar, você pode fazer o download do certificado em [crt.sh](https://crt.sh/) (Inglês)
 e então proceder com a revogação do certificado como se você o tivesse emitido:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

@@ -18,7 +18,7 @@ Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbo
 
 인증서를 원래 발급했었고, 인증서 발급에 사용한 계정을 계속 제어할 수 있는 경우, 계정 자격 증명을 사용하여 인증서를 해지할 수 있습니다. Certbot은 기본적으로 이를 시도합니다. 예시:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -30,7 +30,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 
 PEM 형식의 개인 키 사본도 필요합니다. 일단 이들을 모두 가지고 있으면, 다음과 같이 인증서를 취소할 수 있습니다.
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -38,7 +38,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 호스트 또는 DNS를 손상시킨 후 누군가가 인증서를 발급한 경우, 다시 제어권을 얻었을 때 해당 인증서를 해지하고 싶을 것입니다. 인증서 해지를 위해 Let's Encrypt는 귀하가 인증서의 도메인 이름을 제어하고 있다는 것을 확인해야 합니다 (그렇지 않으면 사람이 서로의 인증서를 허가없이 취소할 수 있습니다)! 이 제어권의 유효성을 검사하기 위해 Let's Encrypt는 인증서를 발급하는 데 사용하는 것과 동일한 메서드를 사용합니다. [DNS TXT 레코드에 값](https://tools.ietf.org/html/rfc8555#section-8.4)을 넣거나, [HTTP 서버에 파일](https://tools.ietf.org/html/rfc8555#section-8.3)을 저장하거나, [특수한 TLS 인증서](https://tools.ietf.org/html/rfc8737#section-3)를 제공할 수 있습니다. 일반적으로 ACME 클라이언트가 이를 처리합니다. 대부분의 ACME 클라이언트는 유효성 검사와 발급을 합치므로, 유효성 검사를 요청하는 유일한 방법은 발급을 시도하는 것입니다. 그런 다음 원하지 않는 인증서를 취소하거나, 단순히 개인 키를 삭제할 수 있습니다. 인증서를 아예 발행하지 않으려면, 명령줄에 존재하지 않는 도메인 이름을 포함시키면 됩니다. 이는 다른 기존 도메인 이름의 유효성을 검사하는 동안 인증서 발급에 실패하게 만듭니다. 이렇게 하려면 다음을 실행하십시오.
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -46,6 +46,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 
 해지하려는 인증서에서 모든 도메인 이름을 제어할 수 있는지 확인한 후에는 [crt.sh](https://crt.sh/)에서 인증서를 다운로드한 다음 인증서를 발급한 것처럼 인증서를 해지할 수 있습니다.
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

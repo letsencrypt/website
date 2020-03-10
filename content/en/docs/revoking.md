@@ -37,7 +37,7 @@ If you originally issued the certificate, and you still have control
 of the account you used to issue it, you can revoke it using your account
 credentials. Certbot will attempt this by default. Example:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -58,7 +58,7 @@ and download certificates from a log monitor like
 You will also need a copy of the private key in PEM format. Once you have these,
 you can revoke the certificate like so:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -81,7 +81,7 @@ certificate at all, you can include a non-existent domain name in your
 commandline, which will cause issuance to fail while still validating the other,
 existing domain names. To do this, run:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -93,6 +93,6 @@ Once you've validated control of all the domain names in the certificate you wan
 to revoke, you can download the certificate from [crt.sh](https://crt.sh/),
 then proceed to revoke the certificate as if you had issued it:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```
