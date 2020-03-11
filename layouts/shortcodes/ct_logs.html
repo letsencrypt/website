@@ -1,8 +1,30 @@
-{{ range $.Site.Data.transparency.transparencyLogs }}
-<p>
-  <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .name }}</strong><br>
-  {{ i18n "certificate_transparency_role" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ if eq .role "production" }}{{ i18n "certificate_transparency_role_production" }}{{ end }}{{ if eq .role "test" }}{{ i18n "certificate_transparency_role_test" }}{{ end }}<br>
-  {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .uri }}<br>
-  {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code>
-</p>
+{{ $category := .Get "data" }}
+{{ if eq $category "production" }}
+    <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
+{{ else }}
+    <h3>{{ i18n "certificate_transparency_role_testing"}}</h3>
 {{ end }}
+<ul>
+    {{ .Inner }}
+    <li class="list-style-none">
+        <ul>
+        {{ range $.Site.Data.transparency.transparencyLogs }}
+            {{ if and .role (eq $category .role) }}
+            <li>
+            <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .log | humanize }} {{ .shard }}</strong><br>
+            {{ i18n "certificate_transparency_uri" }}{{ .Site.Params.beforeColon | safeHTML }}: https://{{ .log }}.ct.letsencrypt.org/{{ .shard }}<br>
+            {{ i18n "certificate_transparency_public_key" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .publicKey }}</code><br>
+            {{ i18n "certificate_transparency_log_id" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ .logID }}</code><br>
+            {{ i18n "certificate_transparency_window_start" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ (time (int .windowStart)).UTC.Format "2006-01-02T04:00Z" }}</code><br>
+            {{ i18n "certificate_transparency_window_end" }}{{ .Site.Params.beforeColon | safeHTML }}: <code>{{ (time (int .windowEnd)).UTC.Format "2006-01-02T04:00Z" }}</code><br>
+
+            {{/* States are only for production logs. */}}
+            {{ if .state }}
+                {{ i18n "certificate_transparency_state" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .state }}
+            {{ end }}
+            </li>
+            {{ end }}
+        {{ end }}
+        </ul>
+    </li>
+</ul>

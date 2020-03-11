@@ -3,7 +3,7 @@ title: Revoking certificates
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2017-06-08
+lastmod: 2020-02-22
 ---
 
 {{< lastmod >}}
@@ -23,7 +23,7 @@ Note that OCSP [has some fundamental
 problems](https://www.imperialviolet.org/2011/03/18/revocation.html), so not
 all browsers will do this check. Still, revoking certificates that correspond to
 compromised private keys is an important practice, and is required by Let's Encrypt's
-[Subscriber Agreement]({{< relref "/repository.md" >}}).
+{{<link "Subscriber Agreement" "/repository" >}}.
 
 To revoke a certificate with Let's Encrypt, you will use the [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md),
@@ -71,10 +71,8 @@ in that certificate (otherwise people could revoke each other's certificates
 without permission)! To validate this control, Let's Encrypt uses the same
 methods it uses to validate control for issuance: you can
 put a [value in a DNS TXT
-record](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5),
-put a [file on an HTTP server](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3),
-or offer a
-[special TLS certificate](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+record](https://tools.ietf.org/html/rfc8555#section-8.4) or
+put a [file on an HTTP server](https://tools.ietf.org/html/rfc8555#section-8.3).
 Generally an ACME client will handle these for you. Note that most ACME clients
 combine validation and issuance, so the only way to ask for validations is to
 attempt issuance. You can then revoke the resulting certificate if you don't

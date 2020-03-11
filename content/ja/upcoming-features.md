@@ -21,13 +21,13 @@ lastmod: 2019-07-03
 
 * 有効化: 2019年5月15日
 
-私たちは[証明書の透明性のログ]({{< relref "/docs/ct-logs.html" >}})を運用し始めました。
+私たちは{{<link "証明書の透明性のログ" "/docs/ct-logs" >}}を運用し始めました。
 
 ## TLS ALPN チャレンジのサポート
 
 * 有効化: 2018年7月12日
 
-TLS-SNI の検証法を[置き換えること](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/)を発表し、実装を進めてきましたが、[セキュリティ上の問題により断念する](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)ことになりました。この置き換えで影響を受けるのは、検証にポート 443 のみを使用したいユーザーのみです。
+TLS-SNI の検証法を[置き換えること](https://tools.ietf.org/html/rfc8737)を発表し、実装を進めてきましたが、[セキュリティ上の問題により断念する](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)ことになりました。この置き換えで影響を受けるのは、検証にポート 443 のみを使用したいユーザーのみです。
 
 ## 証明書内への SCT レシートの埋め込み
 

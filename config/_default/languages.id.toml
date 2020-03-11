@@ -1,0 +1,13 @@
+title = "Let's Encrypt - Sertifikat SSL/TLS Gratis"
+contentDir = "content/id"
+languageName = "Bahasa Indonesia"
+languageCode = "id-ID"
+beforeColon = ""
+weight = 350
+description = """
+  Let's Encrypt adalah otoritas sertifikasi terbuka yang gratis dan terotomatisasi,
+  dipersembahkan oleh organisasi non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|,"

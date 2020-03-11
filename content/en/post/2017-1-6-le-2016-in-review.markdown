@@ -12,7 +12,7 @@ Our first full year as a live CA was an exciting one. I’m incredibly proud of 
 
 At the start of 2016, Let’s Encrypt certificates had been available to the public for less than a month and we were supporting approximately 240,000 active (unexpired) certificates. That seemed like a lot at the time! Now we’re frequently issuing that many new certificates in a single day while supporting more than 20,000,000 active certificates in total. We’ve issued more than a million certificates in a single day a few times recently. We’re currently serving an average of 6,700 OCSP responses per second. We’ve done a lot of optimization work, we’ve had to add some hardware, and there have been some long nights for our staff, but we’ve been able to keep up and we’re ready for another year of [strong growth](https://letsencrypt.org/stats/).
 
-<center><p><img src="/images/Jan-6-2017-Cert-Stats.png" alt="Let's Encrypt certificate issuance statistics." style="width: 650px; margin-bottom: 17px;"/></p></center>
+<p class="text-center"><img src="/images/Jan-6-2017-Cert-Stats.png" alt="Let's Encrypt certificate issuance statistics." style="width: 650px; margin-bottom: 17px;"/></p>
  
 We added a number of [new features](https://letsencrypt.org/upcoming-features/) during the past year, including support for the ACME DNS challenge, ECDSA signing, IPv6, and Internationalized Domain Names.
 

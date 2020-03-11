@@ -3,7 +3,7 @@ title: Privacy Policy
 slug: privacy
 top_graphic: 4
 date: 2019-09-19
-lastmod: 2019-12-05
+lastmod: 2020-02-21
 english_is_canonical: 1
 ---
 
@@ -29,7 +29,7 @@ You may need to download client software from a repository such as those run by 
 
 ## Visitor
 
-When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested.
+When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested.
 
 You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. We do not sell your information. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
 

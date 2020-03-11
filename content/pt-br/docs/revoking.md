@@ -23,7 +23,7 @@ Note que o OCSP [tem alguns problemas
 fundamentais](https://www.imperialviolet.org/2011/03/18/revocation.html), então
 nem todos os navegadores farão essa checagem. Mesmo assim, revogar certificados que correspondem
 a chaves privadas comprometidas é uma prática importante, e isso é requerido no 
-[Subscriber Agreement]({{< relref "/repository.md" >}}) da Let's Encrypt.
+{{<link "Subscriber Agreement" "/repository" >}} da Let's Encrypt.
 
 Para revogar um certificado com a Let's Encrypt, você precisará usar a [API
 ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) (Inglês), 
@@ -70,10 +70,10 @@ naquele certificado (senão qualquer pessoa poderia revogar o certificado dos ou
 sem permissão!). Para validar este controle, a Let's Encrypt usa os mesmos
 métodos que usa para validar o controle durante a emissão: você pode
 colocar um [valor em um registro TXT no 
-DNS](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) (Inglês),
-colocar um [arquivo num servidor HTTP](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3) (Inglês).
+DNS](https://tools.ietf.org/html/rfc8555#section-8.4) (Inglês),
+colocar um [arquivo num servidor HTTP](https://tools.ietf.org/html/rfc8555#section-8.3) (Inglês).
 ou oferecer um 
-[certificado TLS especial](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4) (Inglês).
+[certificado TLS especial](https://tools.ietf.org/html/rfc8737#section-3) (Inglês).
 Normalmente um cliente ACME cuidará disso por você. Note que a maioria dos clientes ACME
 combinar a validação e emissão, então a única forma de solicitar validações é 
 tentando emitir. Você pode então revogar o certificado gerado se você não

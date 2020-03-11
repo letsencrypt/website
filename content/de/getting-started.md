@@ -9,16 +9,15 @@ date: 2019-12-21
 
 Um HTTPS auf Ihrer Webseite zu aktivieren, brauchen Sie ein Zertifikat (eine
 Datei) von einer Zertifizierungsstelle (CA). Let's Encrypt ist eine CA. Um für
-Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, haben Sie
-zu demonstrieren, dass Sie die Kontrolle über diese Domain haben.
+Ihre Webseiten-Domain von Let's Encrypt ein Zertifikat zu bekommen, müssen Sie nachweisen, dass Sie die Kontrolle über diese Domain haben.
 Mit Let's Encrypt benutzen Sie Software, die das
-[ACME Protokoll](https://ietf-wg-acme.github.io/acme/) benutzt, welches
+[ACME Protokoll](https://tools.ietf.org/html/rfc8555) benutzt, welches
 typischerweise auf Ihrem Web-Host läuft.
 
 Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig
 herauszufinden, ob Sie zu Ihrer Webseite 
 [Shell Zugang](https://en.wikipedia.org/wiki/Shell_account) haben (auch bekannnt
-als SSH Zugang). Wenn Sie Ihre Webseite durch ein Kontrollschnittstelle verwalten
+als SSH Zugang). Wenn Sie Ihre Webseite durch eine Kontrollschnittstelle verwalten
 wie [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/) oder
 [WordPress](https://wordpress.org/), dann haben Sie wahrscheinlich keinen Shell
 Zugang. Sicherheitshalber können Sie Ihren Diensteanbieter fragen.
@@ -34,13 +33,13 @@ grossartige Dokumentation. [Besuchen Sie die Certbot Seite][Certbot], um angepas
 Anleitungen für Ihr Betriebssystem und Web Server zu erhalten.
 
 Wenn [Certbot] nicht ihren Anforderungen entspricht, können Sie auch etwas anderes
-ausprobieren, es gibt [weitere ACME Clients zur Auswahl]({{< relref "/docs/client-options.md" >}}).
+ausprobieren, es gibt {{<link "weitere ACME Clients zur Auswahl" "/docs/client-options" >}}.
 Wenn Sie eine ACME Client Software gewählt haben, schauen Sie in die Dokumentation,
 wie damit fortzufahren ist.
 
 Wenn Sie mit unterschiedlichen ACME Clients experimentieren, benutzen Sie
-[staging environment]({{< relref "/docs/staging-environment.md" >}}), um das Erreichen von
-[rate limits]({{< relref "/docs/rate-limits.md" >}}) zu verhindern.
+{{<link "staging environment" "/docs/staging-environment" >}}, um das Erreichen von
+{{<link "rate limits" "/docs/rate-limits" >}} zu verhindern.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

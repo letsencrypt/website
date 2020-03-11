@@ -66,6 +66,9 @@ other = "Platina"
 [gold]
 other = "Guld"
 
+[gold_basic]
+other = "Guld basic"
+
 [silver]
 other = "Silver"
 
@@ -122,14 +125,11 @@ other = "Andel sidvisningar över HTTPS (14-dagars glidande medelvärde)"
 [certificate_transparency_name]
 other = "Namn"
 
-[certificate_transparency_role]
-other = "Roll"
-
 [certificate_transparency_role_production]
 other = "Produktion"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -163,3 +163,18 @@ other = "Donera med PayPal-knapp"
 
 [paypal_donate_title]
 other = "Donera med PayPal"
+
+[amount_per_year]
+other = "{{ .nb }} USD/år"
+
+[3y_commitment]
+other = "med tre års förbindelse"
+
+[1_99_employees]
+other = "1-99 anställda"
+
+[100_999_employees]
+other = "100-999 anställda"
+
+[1000_employees]
+other = "1000+ anställda"

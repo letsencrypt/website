@@ -3,8 +3,7 @@ title: Vanliga frågor
 linkTitle: Vanliga frågor (FAQ)
 slug: faq
 top_graphic: 1
-date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2020-02-20
 menu:
   main:
     weight: 30
@@ -18,7 +17,7 @@ Denna vanliga frågor-sida är uppdelad i följande delar:
 * [Allmänna frågor](#general)
 * [Tekniska frågor](#technical)
 
-# <a name="general">Allmänna frågor</a>
+# <a id="general">Allmänna frågor</a>
 
 ## Vilka tjänster erbjuder Let's Encrypt?
 
@@ -31,8 +30,7 @@ Let's Encrypt erbjuder domänvalideringscertifikat (DV). Vi erbjuder inte
 organisationsvalidering (OV) eller utökad validering (EV) främst eftersom vi
 inte kan automatisera utfärdande av dessa typer av certifikat.
 
-För att komma igång, besök vår [kom igång-sida]({{< relref "/getting-started.md"
->}}).
+För att komma igång, besök vår {{<link "kom igång-sida" "/getting-started" >}}.
 
 ## Vad kostar det att använda Let's Encrypt? Är det verkligen gratis?
 
@@ -44,8 +42,8 @@ HTTPS.
 
 Vi behöver stöd från generösa sponsorer, anslagsgivare och individer för att
 kunna erbjuda våra tjänster kostnadsfritt i hela världen. Om du är intresserad
-av att stödja oss så överväg att [donera]({{< relref "/donate.html" >}}) eller
-[bli en sponsor]({{< relref "/become-a-sponsor.html" >}}).
+av att stödja oss så överväg att {{<link "donera" "/donate" >}} eller
+{{<link "bli en sponsor" "/become-a-sponsor" >}}.
 
 I vissa fall kommer mellanhänder såsom webbhotell debitera en symbolisk summa
 för att täcka sina administrations- och hanteringskostnader som de ådrar sig
@@ -57,7 +55,7 @@ Let's Encrypt drivs av ett litet team och förlitar sig på automatisering för 
 hålla kostnaderna nere. På grund av detta kan vi inte erbjuda direktsupport till
 våra prenumeranter. Vi har däremot några fantastiska supportalternativ:
 
-1. Vi har riktigt nyttig [dokumentation]({{< relref "/docs" >}}).
+1. Vi har riktigt nyttig {{<link "dokumentation" "/docs" >}}.
 2. Vi har ett väldigt aktivt och hjälpsamt
    [användarforum](https://community.letsencrypt.org/). Medlemmar i vår
    gemenskap gör ett fantastiskt jobb genom att besvara frågor och många av de
@@ -72,18 +70,18 @@ Vi rekommenderar att rapportera sådana sajter till Google Safe Browsing och
 Microsofts SmartScreen-initiativ som har möjlighet att mer effektivt skydda
 användare. Här är Googles rapporteringsadress:
 
-https://safebrowsing.google.com/safebrowsing/report\_badware/
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 Om du vill läsa mer om våra policyer och principer kan du göra detta här:
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Tekniska frågor</a>
+# <a id="technical">Tekniska frågor</a>
 
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 
 Ja, av de flesta webbläsare och operativsystem. Se
-[kompatibilitetslistan]({{< relref "/docs/cert-compat.md" >}}) för fler
+{{<link "kompatibilitetslistan" "/docs/cert-compat" >}} för fler
 detaljer.
 
 ## Utfärdar Let's Encrypt certifikat för något annat än SSL/TLS för webbsidor?
@@ -128,7 +126,7 @@ för mer teknisk information.
 
 ## Finns det en Let's Encrypt-klient (ACME) för mitt operativsystem?
 
-Det finns en uppsjö av [ACME-klienter]({{< relref "/docs/client-options.md" >}})
+Det finns en uppsjö av {{<link "ACME-klienter" "/docs/client-options" >}}
 tillgängliga. Sannolikheten är stor att någon fungerar bra på ditt
 operativsystem. Vi rekommenderar att du börjar med
 [Certbot](https://certbot.eff.org/).
@@ -140,10 +138,9 @@ Ja, men inte alla klienter stöder detta. [Certbot](https://certbot.eff.org/) g�
 ## Från vilka IP-adresser gör Let's Encrypt valideringen av min webbserver?
 
 Vi publicerar inte en lista av IP-adresser som vi använder för validering och
-adresserna vi använder kan komma att ändras. I framtiden kommer vi att validera
-från flera IP-adresser samtidigt. Se [det här
-inlägget](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points)
-för detaljer.
+adresserna vi använder kan komma att ändras. Notera att vi nu [validerar från
+flera IP-adresser samtidigt
+(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
 ## Jag förnyade framgångsrikt ett certifikat men igen validering gjordes den här gången --- hur kommer det sig?
 

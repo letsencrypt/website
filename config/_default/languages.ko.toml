@@ -1,0 +1,12 @@
+title = "Let's Encrypt - 무료 SSL/TLS 인증서"
+contentDir = "content/ko"
+languageName = "한국어"
+languageCode = "ko-KR"
+beforeColon = ""
+weight = 450
+description = """
+  Let's Encrypt는 <a href="https://www.abetterinternet.org/"> 비영리 인터넷 보안 연구 그룹 (ISRG)</a>에서 가져온 무료, 자동 및 공개 인증 기관입니다.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|,"

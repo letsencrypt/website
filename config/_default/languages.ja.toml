@@ -1,0 +1,13 @@
+title = "Let's Encrypt - フリーな SSL/TLS 証明書"
+contentDir = "content/ja"
+languageName = "日本語"
+languageCode = "ja"
+beforeColon = ""
+weight = 400
+description = """
+  Let's Encrypt is a free, automated, and open certificate
+  authority brought to you by the non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|,"

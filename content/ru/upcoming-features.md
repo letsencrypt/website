@@ -27,13 +27,13 @@ lastmod: 2020-01-14
 
 * Запущено: 15 мая 2019
 
-Мы запустили интеграцию с [журналами Certificate Transparency]({{< relref "/docs/ct-logs.html" >}}).
+Мы запустили интеграцию с {{<link "журналами Certificate Transparency" "/docs/ct-logs" >}}.
 
 ## Внедрение метода проверки TLS ALPN
 
 * Запущено: 12 июля 2018
 
-Мы разработали и запустили [замену](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) для метода проверки TLS-SNI, поддержка которого [прекращена по соображениям безопасности](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Замена метода была критичной для web-серверов с одним доступным портом 443 для выполнения проверок.
+Мы разработали и запустили [замену](https://tools.ietf.org/html/rfc8737) для метода проверки TLS-SNI, поддержка которого [прекращена по соображениям безопасности](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Замена метода была критичной для web-серверов с одним доступным портом 443 для выполнения проверок.
 
 ## Внедрение SCT (Signed Certificate Timestamp) в сертификаты
 

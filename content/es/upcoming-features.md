@@ -21,13 +21,13 @@ Actualmente Let's Encrypt solamente firma certificados *end-entity* con intermed
 
 * Habilitado: 15 de mayo del 2019
 
-Estamos empezando a operar un [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}).
+Estamos empezando a operar un {{<link "Certificate Transparency log" "/docs/ct-logs" >}}.
 
 ## Soporte para reto TLS ALPN
 
 * Habilitado: 12 de julio del 2018
 
-Hemos especificado e implementado un [reemplazo](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) para el método de validación TLS-SNI, el cual fue [discontinuado por razones de seguridad](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducir un reemplazo fue importante para subscriptores que solo quieren usar el puerto 443 para validación.
+Hemos especificado e implementado un [reemplazo](https://tools.ietf.org/html/rfc8737) para el método de validación TLS-SNI, el cual fue [discontinuado por razones de seguridad](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducir un reemplazo fue importante para subscriptores que solo quieren usar el puerto 443 para validación.
 
 ## Inserción de recibos SCT en certificados
 

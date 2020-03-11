@@ -6,8 +6,7 @@ title: "Facebook Expands Support for Let’s Encrypt"
 slug: facebook-expands-support-for-letsencrypt
 ---
 
-> We’re excited that Facebook is supporting our work through a three-year Platinum sponsorship! We asked them to share their thoughts on HTTPS adoption here. Please join us in thanking Facebook for their support of Let’s Encrypt and our mission to encrypt the Web!
-> - Josh Aas, Executive Director, ISRG / Let’s Encrypt
+> We’re excited that Facebook is supporting our work through a three-year Platinum sponsorship! We asked them to share their thoughts on HTTPS adoption here. Please join us in thanking Facebook for their support of Let’s Encrypt and our mission to encrypt the Web! - Josh Aas, Executive Director, ISRG / Let’s Encrypt
 
 If the web is more secure, everybody wins. A key technology for making this happen is HTTPS, which enables encrypted connections between people and the websites that they visit. Among its many benefits, HTTPS helps to prevent sensitive data from leaking over the network, and from connections being censored or otherwise maliciously manipulated. The more widely it is deployed, the more secure and private the web becomes for everyone.
 
