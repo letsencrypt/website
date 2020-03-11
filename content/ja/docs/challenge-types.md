@@ -80,5 +80,5 @@ Let’s Encrypt は DNS-01 検証で TXT レコードを検索するときに DN
 [エニーキャスト]: https://ja.wikipedia.org/wiki/エニーキャスト
 [SNI]: https://ja.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

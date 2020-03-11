@@ -2,15 +2,15 @@
 title: Kommande funktioner
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-07-03
+lastmod: 2020-02-20
 ---
 
 {{< lastmod >}}
 
-## Flerperspektivsvalidering
+## IP-adresser i certifikat
 
-För tillfället validerar Let's Encrypt bara från ett nätverksperspektiv. Vi
-planerar att börja validera från flera nätverksperspektiv.
+Vi planerar införa stöd för att validera och inkludera IP-adresser i
+certifikat.
 
 ## ECDSA-rot- och mellancertifikat
 
@@ -19,6 +19,13 @@ RSA-mellancertifikat. Let's Encrypt kommer att generera en ECDSA-rot och
 mellancertifikat som kan användas för att signera lövcertifikat.
 
 # Klara funktioner
+
+## Flerperspektivsvalidering
+
+* Aktiverat: den 19 februari 2020
+
+Nu validerar vi kontroll över en domän från [flera nätverksperspektiv
+(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
 ## Certifikattransparenslogg
 
@@ -31,7 +38,7 @@ Vi driftar en {{<link "certifikattransparenslogg" "/docs/ct-logs" >}}.
 * Aktiverat: den 12 juli 2018
 
 Vi har specificerat och implementerat en
-[ersättare](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) till
+[ersättare](https://tools.ietf.org/html/rfc8737) till
 TLS-SNI-valideringsmetoden som [stängdes ner av
 säkerhetsskäl](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811).
 Att introducera en ersättare var viktigt för prenumeranter som bara vill
@@ -53,7 +60,8 @@ använda port 443 för validering.
 
 * Aktiverat: den 20 oktober 2016
 
-Let's Encrypt stöder nu utfärdande av certifikat för internationaliserade domännamn (IDN).
+Let's Encrypt stöder nu utfärdande av certifikat för internationaliserade
+domännamn (IDN).
 
 ## Fullt IPv6-stöd
 

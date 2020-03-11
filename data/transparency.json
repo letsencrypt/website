@@ -11,7 +11,9 @@
             "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFkqNKRuZ+Z8IOsnNJrUZ8gwp+KKGOdQrJ/HKhSadK/SJuoCc9+dxQ7awpmWIMr9SKcQeG5uRzG1kVSyFN4Wfcw==",
-            "logID": "65:9B:33:50:F4:3B:12:CC:5E:A5:AB:4E:C7:65:D3:FD:E6:C8:82:43:77:77:78:E7:20:03:F9:EB:2B:8C:31:29"
+            "logID": "65:9B:33:50:F4:3B:12:CC:5E:A5:AB:4E:C7:65:D3:FD:E6:C8:82:43:77:77:78:E7:20:03:F9:EB:2B:8C:31:29",
+            "windowStart": "1546300800",
+            "windowEnd": "1578355200"
         },
         {
             "log": "oak",
@@ -19,7 +21,9 @@
             "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==",
-            "logID": "E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E"
+            "logID": "E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E",
+            "windowStart": "1577836800",
+            "windowEnd": "1609977600"
         },
         {
             "log": "oak",
@@ -27,7 +31,9 @@
             "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==",
-            "logID": "94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2"
+            "logID": "94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2",
+            "windowStart": "1609459200",
+            "windowEnd": "1641513600"
         },
         {
             "log": "oak",
@@ -35,7 +41,9 @@
             "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==",
-            "logID": "DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73"
+            "logID": "DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73",
+            "windowStart": "1640995200",
+            "windowEnd": "1673049600"
         },
         {
             "log": "oak",
@@ -43,42 +51,54 @@
             "state": "Pending",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsz0OeL7jrVxEXJu+o4QWQYLKyokXHiPOOKVUL3/TNFFquVzDSer7kZ3gijxzBp98ZTgRgMSaWgCmZ8OD74mFUQ==",
-            "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99"
+            "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99",
+            "windowStart": "1672531200",
+            "windowEnd": "1704585600"
         },
         {
             "log": "testflume",
             "shard": "2019",
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==",
-            "logID": "84:9F:5F:7F:58:D2:BF:7B:54:EC:BD:74:61:1C:EA:45:C4:9C:98:F1:D6:48:1B:C6:F6:9E:8C:17:4F:24:F3:CF"
+            "logID": "84:9F:5F:7F:58:D2:BF:7B:54:EC:BD:74:61:1C:EA:45:C4:9C:98:F1:D6:48:1B:C6:F6:9E:8C:17:4F:24:F3:CF",
+            "windowStart": "1546300800",
+            "windowEnd": "1578355200"
         },
         {
             "log": "testflume",
             "shard": "2020",
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==",
-            "logID": "C6:3F:22:18:C3:7D:56:A6:AA:06:B5:96:DA:8E:53:D4:D7:15:6D:1E:9B:AC:8E:44:D2:20:2D:E6:4D:69:D9:DC"
+            "logID": "C6:3F:22:18:C3:7D:56:A6:AA:06:B5:96:DA:8E:53:D4:D7:15:6D:1E:9B:AC:8E:44:D2:20:2D:E6:4D:69:D9:DC",
+            "windowStart": "1577836800",
+            "windowEnd": "1609977600"
         },
         {
             "log": "testflume",
             "shard": "2021",
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==",
-            "logID": "03:ED:F1:DA:97:76:B6:F3:8C:34:1E:39:ED:9D:70:7A:75:70:36:9C:F9:84:4F:32:7F:E9:E1:41:38:36:1B:60"
+            "logID": "03:ED:F1:DA:97:76:B6:F3:8C:34:1E:39:ED:9D:70:7A:75:70:36:9C:F9:84:4F:32:7F:E9:E1:41:38:36:1B:60",
+            "windowStart": "1609459200",
+            "windowEnd": "1641513600"
         },
         {
             "log": "testflume",
             "shard": "2022",
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==",
-            "logID": "23:27:EF:DA:35:25:10:DB:C0:19:EF:49:1A:E3:FF:1C:C5:A4:79:BC:E3:78:78:36:0E:E3:18:CF:FB:64:F8:C8"
+            "logID": "23:27:EF:DA:35:25:10:DB:C0:19:EF:49:1A:E3:FF:1C:C5:A4:79:BC:E3:78:78:36:0E:E3:18:CF:FB:64:F8:C8",
+            "windowStart": "1640995200",
+            "windowEnd": "1673049600"
         },
         {
             "log": "testflume",
             "shard": "2023",
             "role": "testing",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8aLpnumqeISmQEB3hKPgtPJQG3jP2IftfaUQ4WPUihNBwUOEk1R9BMg5RGQwebWSsRlGIRiCvtE97Q45Vh3mqA==",
-            "logID": "55:34:B7:AB:5A:6A:C3:A7:CB:EB:A6:54:87:B2:A2:D7:1B:48:F6:50:FA:17:C5:19:7C:97:A0:CB:20:76:F3:C6"
+            "logID": "55:34:B7:AB:5A:6A:C3:A7:CB:EB:A6:54:87:B2:A2:D7:1B:48:F6:50:FA:17:C5:19:7C:97:A0:CB:20:76:F3:C6",
+            "windowStart": "1672531200",
+            "windowEnd": "1704585600"
         }
     ]
 }

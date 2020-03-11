@@ -9,7 +9,7 @@ lastmod: 2019-10-18
 {{< lastmod >}}
 
 Meningen med Let's&nbsp;Encrypt och
-[ACME-protokollet](https://ietf-wg-acme.github.io/acme/) är att göra det möjligt
+[ACME-protokollet](https://tools.ietf.org/html/rfc8555) är att göra det möjligt
 att sätta upp en HTTPS-server som automatiskt erhåller ett certifikat som
 webbläsare litar på utan någon mänsklig handpåläggning. Detta görs genom att
 köra en certifikathanteringsagent på webbservern.
