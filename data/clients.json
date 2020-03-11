@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-13",
+	"lastmod": "2020-03-11",
 	"categories": [
 		"Bash",
 		"C",
@@ -696,7 +696,8 @@
 			"name": "uacme",
 			"url": "https://github.com/ndilieto/uacme/",
 			"acme_v2": "true",
-			"category": "C"
+			"category": "C",
+			"comments": "(includes proxying tls-alpn-01 challenge responder)"
 		},
 		{
 			"name": "ACMEd",
