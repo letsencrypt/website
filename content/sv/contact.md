@@ -1,8 +1,9 @@
 ---
 title: Kontakt
 slug: contact
+description: Hur man kontaktar oss
 top_graphic: 1
-lastmod: 2019-09-11
+lastmod: 2020-02-05
 menu:
   main:
     weight: 90
@@ -19,11 +20,9 @@ E-post: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 E-post: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## E-postlistor
+## E-postlista
 
-För information om diverse tekniska e-postlistor, vänligen besök vår {{<link "engagemangssida" "/getinvolved" >}}.
-
-Du kan även [prenumerera på vårt nyhetsbrev](https://mailchi.mp/letsencrypt.org/fjp6ha1gad) (engelska).
+Du kan [prenumerera på vårt nyhetsbrev](https://mailchi.mp/letsencrypt.org/fjp6ha1gad) (engelska).
 
 ## Säkerhet
 

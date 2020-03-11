@@ -3,8 +3,7 @@ title: Vanliga frågor
 linkTitle: Vanliga frågor (FAQ)
 slug: faq
 top_graphic: 1
-date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2020-02-20
 menu:
   main:
     weight: 30
@@ -139,10 +138,9 @@ Ja, men inte alla klienter stöder detta. [Certbot](https://certbot.eff.org/) g�
 ## Från vilka IP-adresser gör Let's Encrypt valideringen av min webbserver?
 
 Vi publicerar inte en lista av IP-adresser som vi använder för validering och
-adresserna vi använder kan komma att ändras. I framtiden kommer vi att validera
-från flera IP-adresser samtidigt. Se [det här
-inlägget](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points)
-för detaljer.
+adresserna vi använder kan komma att ändras. Notera att vi nu [validerar från
+flera IP-adresser samtidigt
+(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
 ## Jag förnyade framgångsrikt ett certifikat men igen validering gjordes den här gången --- hur kommer det sig?
 
