@@ -49,7 +49,7 @@ Let's Encrypt 由一个小团队运营，依靠自动化来降低成本。因此
 
 我们建议将此类网站报告给 Google 安全浏览和 Microsoft 智能屏幕计划，以便更有效地保护用户。 以下是 Google 的报告网址：
 
-[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 如果您想更多地了解我们的政策和想法，请点击此处：
 
