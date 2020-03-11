@@ -2,7 +2,7 @@
 title: Klientimplementationer av ACME
 slug: client-options
 top_graphic: 1
-lastmod: 2019-11-15
+lastmod: 2020-02-25
 ---
 
 {{< clientslastmod >}}
@@ -32,16 +32,18 @@ Om Certbot inte uppfyller dina krav eller om du bara vill testa någon annan så
 finns det många fler klienter att välja bland nedan, grupperade efter språk
 eller miljö.
 
-# ACMEv1 och ACMEv2
+# Andra klientval
 
-Let's Encrypt stöder API:et ACMEv2 som är kompatibelt med den [slutgiltiga
-ACME-standarden](https://tools.ietf.org/html/rfc8555). Vi [fasar ut det äldre
-API:et
+Alla klienter nedan stöder ACMEv2-API:et ([RFC
+8555](https://tools.ietf.org/html/rfc8555)). Vi kommer helt och hållet att
+[fasa ut det äldre API:et
 ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
-2020 och 2021. Alla klienter på denna lista stöder ACMEv2. Om du redan använder
-någon klient på denna lista, se till att uppgradera till den senaste versionen.
-Om klienten du använder inte finns listad nedan, kontakta de projektansvariga
-eller byt till en annan klient.
+snart.
+
+Om du redan använder någon klient på denna lista, se till att uppgradera till
+den senaste versionen.  Om klienten du använder inte finns listad nedan så
+kanske den inte stöder ACMEv2. Om så är fallet rekommenderar vi att du kontaktar
+de projektansvariga eller byter till en annan klient.
 
 Eventuella beskrivningar av klienterna och projekten nedan erbjuds endast på
 engelska.
@@ -58,7 +60,7 @@ andra distributioner.
 
 {{< /clients >}}
 
-# Lägg till din klient eller ditt projekt
+# Lägg till en klient eller ett projekt
 
 Om du känner till någon ACME-klient eller ett projekt som integrerar Let's
 Encrypts API ACMEv2 och som inte finns med på listan ovan, vänligen skicka in en
@@ -67,8 +69,8 @@ på GitHub där du uppdaterar filen `data/clients.json`.
 
 Innan du skickar in en pull request, vänligen säkerställ att:
 
-1. din klient respekterar {{<link "Let's Encrypts varumärkespolicy" "/trademarks" >}}
-1. din klient inte är webbläsarbaserad och att den stöder automatisk förnyelse
+1. klienten respekterar {{<link "Let's Encrypts varumärkespolicy" "/trademarks" >}}
+1. klienten inte är webbläsarbaserad och att den stöder automatisk förnyelse
 1. din commit lägger till din klient **sist** i relevant sektion (glöm inte
    `acme_v2` om det är lämpligt!)
 1. din commit uppdaterar datumfältet `lastmod` i toppen av `clients.json`

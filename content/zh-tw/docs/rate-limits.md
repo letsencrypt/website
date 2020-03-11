@@ -47,6 +47,6 @@ id="overall-requests"></a>**速率限制總和**為每秒 20 次請求。"/direc
 
 # <a id="clearing-pending"></a>清除待驗證授權
 
-如果你有大量的待驗證授權並且受到了速率限制，你可以透過向其中一個提出考驗的伺服器，發出 JWS 簽名的 POST 請求，來觸發未驗證授權的驗證請求，詳細流程請參考 [ACME 規範](https://github.com/ietf-wg-acme/acme/blob/master/draft-ietf-acme-acme.md#responding-to-challenges)。待驗證授權的格式由 https://acme-v01.api.letsencrypt.org/acme/authz/XYZ 中所表示，並且會出現在你的客戶端記錄檔中。請注意，記錄檔中不管驗證成功或失敗都會先顯示待驗證。如果你的記錄檔中沒有對應授權的 URL，你需要等待速率限制結束。如上文所說描述的，我們使用滑動窗口來計算時間，根據你頒發憑證的間隔時間不同，等待的時間可能不需要一周。
+如果你有大量的待驗證授權並且受到了速率限制，你可以透過向其中一個提出考驗的伺服器，發出 JWS 簽名的 POST 請求，來觸發未驗證授權的驗證請求，詳細流程請參考 [ACME 規範](https://tools.ietf.org/html/rfc8555#section-7.5.1)。待驗證授權的格式由 https://acme-v01.api.letsencrypt.org/acme/authz/XYZ 中所表示，並且會出現在你的客戶端記錄檔中。請注意，記錄檔中不管驗證成功或失敗都會先顯示待驗證。如果你的記錄檔中沒有對應授權的 URL，你需要等待速率限制結束。如上文所說描述的，我們使用滑動窗口來計算時間，根據你頒發憑證的間隔時間不同，等待的時間可能不需要一周。
 
 通常有大量未驗證授權的原因是客戶端軟體有錯誤。如果你達到這個速率限制，你應該再檢查一下你的客戶端程式碼。

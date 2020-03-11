@@ -8,7 +8,7 @@ lastmod: 2019-10-18
 
 {{< lastmod >}}
 
-Let’s Encrypt와 [ACME 프로토콜](https://ietf-wg-acme.github.io/acme/)의 목적은 HTTPS 서버를 설치할 수 있도록 하고, 사람의 개입 없이 브라우저에서 신뢰할 수 있는 인증서를 자동으로 취득하도록 하는 것입니다. 이것은 웹 서버에서 인증서 관리 에이전트를 실행함으로써 이루어집니다.
+Let’s Encrypt와 [ACME 프로토콜](https://tools.ietf.org/html/rfc8555)의 목적은 HTTPS 서버를 설치할 수 있도록 하고, 사람의 개입 없이 브라우저에서 신뢰할 수 있는 인증서를 자동으로 취득하도록 하는 것입니다. 이것은 웹 서버에서 인증서 관리 에이전트를 실행함으로써 이루어집니다.
 
 기술이 어떻게 작동하는지 이해하기 위해서, Let’s Encrypt를 지원하는 인증서 관리 에이전트와 `https://example.com`의 설치 과정을 살펴보십시오.
 

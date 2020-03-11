@@ -11,7 +11,7 @@ Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de 
 provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um
 certificado da Let's Encrypt para o domínio do seu website você precisa demonstrar
 controle sobre o domínio. Com a Let's Encrypt, você pode fazer isso usando um software
-que usa o [protocolo ACME](https://ietf-wg-acme.github.io/acme/), que normalmente é 
+que usa o [protocolo ACME](https://tools.ietf.org/html/rfc8555), que normalmente é 
 executado no seu servidor web.
 
 Para identificar qual método vai funcionar melhor para você, você precisa determinar

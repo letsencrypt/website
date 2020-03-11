@@ -49,7 +49,7 @@ Hier ist ein [Video, was wir mögen](https://www.youtube.com/watch?v=Xe1TZaElTAs
 
 Wir empfehlen das Melden solcher Seiten bei Google Safe Browsing und dem Microsoft Smart Screen Programm, welche die Benutzer mehr schützen kann. Hier ist eine Meldeseite von Google:
 
-[https://www.google.com/safebrowsing/report_badware/](https://www.google.com/safebrowsing/report_badware/)
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 Wenn Sie mehr über Regeln und Gründe lesen wollen, so können Sie das hier (in englisch):
 

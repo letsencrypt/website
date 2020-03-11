@@ -3,7 +3,7 @@ title: 速率限制
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-10-30
+lastmod: 2020-02-24
 ---
 
 {{< lastmod >}}
@@ -26,7 +26,7 @@ Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合
 
 每个账户每小时每域名有最多<a id="failed-validations"></a>**验证失败** 5 次的限制。该限制次数在我们的{{<link "测试环境" "/docs/staging-environment" >}}中更高，因此您可以使用该环境来调试连接问题。
 
-“new-reg”、“new-authz”和“new-cert”端点的<a id="overall-requests"></a>**总请求数**限制为每秒 20 次。“/directory”端点和“/acme”目录及其子目录的总请求数限制为每秒 40 次。
+V1 API的"new-reg"、"new-authz"和"new-cert"端点和V2 API的"new-nonce"、"new-account"、"new-order"和"revoke-cert"端点的<a id="overall-requests"></a>**总请求数**限制为每秒 20 次。"/directory"端点和"/acme"目录及其子目录的总请求数限制为每秒 40 次。
 
 此外还有两个你不太可能遇到的限制。
 

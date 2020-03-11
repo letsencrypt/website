@@ -8,7 +8,7 @@ lastmod: 2019-09-09
 
 {{< lastmod >}}
 
-Cilj Let's&nbsp;Encrypt-a i [ACME protokola](https://ietf-wg-acme.github.io/acme/) je da omogući konfigurisanje HTTPS servera i automatsko dobijanje sertifikata koji je pouzdan web pretraživačima , bez ikakve ljudske intervencije. To se postiže korišćenjem i  pokretanjem agenta za upravljanje sertifikatima na samom web serveru.
+Cilj Let's&nbsp;Encrypt-a i [ACME protokola](https://tools.ietf.org/html/rfc8555) je da omogući konfigurisanje HTTPS servera i automatsko dobijanje sertifikata koji je pouzdan web pretraživačima , bez ikakve ljudske intervencije. To se postiže korišćenjem i  pokretanjem agenta za upravljanje sertifikatima na samom web serveru.
 
 Da bi ste razumeli kako tehnologija i ceo proces funkcioniše, proći ćemo sa Vama kroz ceo postupak konfigurisanja `https://example.com/` sa agentom za upravljanje sertifikatima koji podržava Let's&nbsp;Encrypt.
 
