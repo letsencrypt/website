@@ -347,7 +347,6 @@ function doPlot() {
     pageloadPercent.innerHTML = waiting;
     const currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
     .then(response => {
-      pageloadPercent.innerHTML = "";
       return response.text();
     }).then(httpsCsvListener);
 
@@ -359,7 +358,10 @@ function doPlot() {
     // We shouldn't try to plot HTTPS until both the current and historical fetches
     // are completed
     Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
-    .then( () => httpsPlot(pageloadPercent) );
+    .then(function(){
+      pageloadPercent.innerHTML = "";
+      httpsPlot(pageloadPercent);
+    });
   }
 }
 
