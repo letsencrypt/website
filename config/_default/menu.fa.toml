@@ -1,9 +1,9 @@
 [[main]]
-name = "راهنمایی"
+name = "انجمن"
 weight = 20
 url = "https://community.letsencrypt.org/"
 [[main]]
-name = "کمک کردن"
+name = "حمایت مالی"
 weight = 30
 identifier = "donate"
 url = "/fa/donate/"
@@ -13,19 +13,19 @@ weight = 40
 identifier = "about"
 url = "/fa/about/"
 [[main]]
-name = "Internet Security Research Group (ISRG)"
+name = "گروه تحقیقاتی امنیت اینترنت (ISRG)"
 weight = 20
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
 [[main]]
-name = "وضعیت سرویس"
+name = "مشاهده وضعیت سرویس"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
 [[main]]
-name = "مشاغل"
+name = "فرصت های شغلی"
 weight = 80
 identifier = "careers"
 parent = "about"
