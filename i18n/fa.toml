@@ -120,7 +120,7 @@ other = "کاربران کشور آمریکا"
 other = "کاربران کشور ژاپن"
 
 [graph_percent_https]
-other = "درصد بارگذاری صفحه از طریق HTTPS (میانگین حرکت 14 روزه)
+other = "درصد بارگذاری صفحه از طریق HTTPS (میانگین حرکت 14 روزه)"
 
 [certificate_transparency_name]
 other = "نام"
