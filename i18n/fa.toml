@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "یک سازمان مجوز غیرانتفاعی ارائه گواهینامه TLS به وب سایتهای <span> 190 میلیون </span>."
+other = " یک شرکت ارائه گواهینامه SSL/TLS به <span> 190 میلیون سایت </span>."
 
 [home_hero_getting_started]
 other = "شروع کنید"
@@ -10,22 +10,22 @@ other = "شروع کنید"
 other = "کمک مالی"
 
 [home_hero_sponsor]
-other = "اسپانسر"
+other = "اسپانسر شوید"
 
 [home_hero_annual_report]
 other = "گزارش سالانه 2019 ما را بخوانید"
 
 [home_hero_desktop]
-other = "میز کار"
+other = "دسکتاپ"
 
 [home_hero_mobile]
 other = "موبایل"
 
 [home_major_sponsors]
-other = "حامیان و اهدا کنندگان اصلی"
+other = "حامیان ارشد"
 
 [home_from_our_blog]
-other = "از بلاگ ما"
+other = "نوشته های بلاگ"
 
 [read_more]
 other = "مطالعه بیشتر"
@@ -58,7 +58,7 @@ other = "آخرین ویرایش: "
 other = "مشاهده تمامی مستندات"
 
 [blog_feed]
-other = "بیایید فید وبلاگ را رمزگذاری کنیم"
+other = "فید بلاگ"
 
 [platinum]
 other = "پلاتینیوم"
