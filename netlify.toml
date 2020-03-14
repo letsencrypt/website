@@ -107,3 +107,9 @@ from = "/vi/*"
 to = "/vi/404.html"
 status = 404
 force = false
+
+[[redirects]]
+from = "/fa/*"
+to = "/fa/404.html"
+status = 404
+force = false

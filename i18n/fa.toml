@@ -1,0 +1,198 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "A nonprofit Certificate Authority providing TLS certificates to <span>190 million</span> websites."
+
+[home_hero_getting_started]
+other = "شروع کنید"
+
+[home_hero_donate]
+other = "کمک مالی"
+
+[home_hero_sponsor]
+other = "اسپانسر"
+
+[home_hero_annual_report]
+other = "گزارش سالانه 2019 ما را بخوانید"
+
+[home_hero_desktop]
+other = "میز کار"
+
+[home_hero_mobile]
+other = "موبایل"
+
+[home_major_sponsors]
+other = "حامیان و اهدا کنندگان اصلی"
+
+[home_from_our_blog]
+other = "از بلاگ ما"
+
+[read_more]
+other = "مطالعه بیشتر"
+
+[subscribe_rss]
+other = "مشترک شدن <a href=\"{{ .Permalink }}\">از طریق RSS</a>"
+
+[footer_support_us]
+other = "از امنیت بیشتر اینترنت و احترام به حریم خصوصی حمایت کنید"
+
+[footer_donate]
+other = "کمک مالی"
+
+[footer_policies]
+other = """
+مشاهده کنید <a href="/fa/privacy/">سیاست حفظ حریم خصوصی</a>.<br>
+مشاهده کنید <a href="/fa/trademarks/">سیاست علامت تجاری</a>.
+"""
+
+[linux_foundation_trademark]
+other = "بنیاد لینوکس یک علامت تجاری ثبت شده از بنیاد لینوکس است. لینوکس یک علامت تجاری ثبت شده از Linus Torvalds است."
+
+[header_skip_nav]
+other = "رد کردن نوار پیوندها"
+
+[last_updated]
+other = "آخرین ویرایش: "
+
+[see_all_doc]
+other = "مشاهده تمامی مستندات"
+
+[blog_feed]
+other = "بیایید فید وبلاگ را رمزگذاری کنیم"
+
+[platinum]
+other = "پلاتینیوم"
+
+[gold]
+other = "طلایی"
+
+[gold_basic]
+other = "طلایی ساده"
+
+[silver]
+other = "نقره ای"
+
+[languages]
+other = "زبان ها"
+
+[view_in_english]
+other = "مشاهده به زبان انگلیسی"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/partials/langs.html)
+other = "View in فارسی"
+
+[old_version]
+other = "Note: The فارسی version has been updated since the translation"
+
+[not_yet_translated]
+other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+
+[english_is_canonical]
+other = "The فارسی version is authoritative"
+
+[graph_issued]
+other = "موضوع"
+
+[graph_certificates_active]
+other = "گواهینامه های فعال"
+
+[graph_fully_qualified_domains_active]
+other = "دامنه فعال واجد شرایط"
+
+[graph_registered_domains_active]
+other = "دامنه های ثبت شده فعال"
+
+[graph_active_count]
+other = "تعداد فعال"
+
+[graph_issued_per_day]
+other = "ایرادات روزانه"
+
+[graph_all_users]
+other = "تمامی کاربران"
+
+[graph_usa_users]
+other = "کاربران کشور آمریکا"
+
+[graph_japan_users]
+other = "کاربران کشور ژاپن"
+
+[graph_percent_https]
+other = "درصد بارگذاری صفحه از طریق HTTPS (میانگین حرکت 14 روزه)
+
+[certificate_transparency_name]
+other = "نام"
+
+[certificate_transparency_role_production]
+other = "تولید"
+
+[certificate_transparency_role_testing]
+other = "در حال تست"
+
+[certificate_transparency_uri]
+other = "آدرس اینترنتی"
+
+[certificate_transparency_public_key]
+other = "کلید عمومی"
+
+[certificate_transparency_log_id]
+other = "شماره گزارش"
+
+[certificate_transparency_state]
+other = "وضعیت"
+
+[certificate_transparency_window_start]
+other = "آغاز صفحه"
+
+[certificate_transparency_window_end]
+other = "پایان صفحه"
+
+[overview]
+other = "بررسی اجمالی"
+
+[subscriber_information]
+other = "اطلاعات مشترکین"
+
+[advanced_subscriber_information]
+other = "اطلاعات پیشرفته مشترکین"
+
+[client_developer_information]
+other = "اطلاعات مربوط به توسعه دهنده مشتری"
+
+[acme_divergences]
+other = "تفاوت از پیش نویس ACME فعلی"
+
+[acme_divergences_rfc]
+other = "تفاوت از ACME RFC"
+
+[onboarding_customers]
+other = "مشتریان خود را با Lets Encrypt و ACME آشنا کنید"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "کمک مالی از طریق دکمه پی پال"
+
+[paypal_donate_title]
+other = "کمک مالی از طریق پی پال"
+
+[not_found]
+other = "این صفحه وجود ندارد ، لطفا آدرس را بررسی کنید."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/سال (USD)"
+
+[3y_commitment]
+other = "همراه با تعهد 3 ساله"
+
+[1_99_employees]
+other = "1-99 کارمند"
+
+[100_999_employees]
+other = "بین 100-999 کارمند"
+
+[1000_employees]
+other = "بیش از 1000 کارمند"
