@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "A nonprofit Certificate Authority providing TLS certificates to <span>190 million</span> websites."
+other = "یک سازمان مجوز غیرانتفاعی ارائه گواهینامه TLS به وب سایتهای <span> 190 میلیون </span>."
 
 [home_hero_getting_started]
 other = "شروع کنید"
@@ -84,13 +84,13 @@ other = "مشاهده به زبان انگلیسی"
 other = "نمایش به زبان فارسی"
 
 [old_version]
-other = "Note: The فارسی version has been updated since the translation"
+other = "توجه داشته باشید: نسخه فارسی از زمان ترجمه به روز شده است"
 
 [not_yet_translated]
-other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+other = "این صفحه هنوز ترجمه نشده است. شما میتوانید از این طریق <a href=\"https://github.com/letsencrypt/website\">مشارکت کنید</a>."
 
 [english_is_canonical]
-other = "The فارسی version is authoritative"
+other = "نسخه زبان فارسی معتبر می باشد"
 
 [graph_issued]
 other = "موضوع"
