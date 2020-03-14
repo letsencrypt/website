@@ -1,5 +1,5 @@
 title = "Let's Encrypt - Free SSL/TLS Certificates"
-contentDir = "content/en"
+contentDir = "content/fa"
 #The namge of the language, it that language (not in English if it's not English)
 languageName = "فارسی"
 #The language code. Usually two lower-case letters. It that language is spoken in more than one country, the country-code can be added, uppercase. To check it: https://r12a.github.io/app-subtags/?check=pt-BR
