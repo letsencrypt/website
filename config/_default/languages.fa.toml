@@ -9,7 +9,7 @@ beforeColon = ""
 # Weight used for sorting.
 # 10 for English
 # Other languages from 100 to 999, alphabetical order using languageCode.
-weight = 10
+weight = 270
 description = """
   Let's Encrypt is a free, automated, and open certificate
   authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
