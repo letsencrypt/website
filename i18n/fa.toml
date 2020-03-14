@@ -81,7 +81,7 @@ other = "مشاهده به زبان انگلیسی"
 [view_in_xxx]
 # In translation, replace "English" by your language FULL name. see other langs for example.
 # (nb: used manually in layout/partials/langs.html)
-other = "View in فارسی"
+other = "نمایش به زبان فارسی"
 
 [old_version]
 other = "Note: The فارسی version has been updated since the translation"
