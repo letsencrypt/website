@@ -359,7 +359,7 @@ function doPlot() {
     // are completed
     Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
     .then(function(){
-      pageloadPercent.innerHTML = "";
+      pageloadPercent.innerHTML = ""; // remove waiting
       httpsPlot(pageloadPercent);
     });
   }
