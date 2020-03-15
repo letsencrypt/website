@@ -4,7 +4,7 @@ publish = "public/"
 command = "hugo -d public"
 
 [build.environment]
-HUGO_VERSION = "0.64.1"
+HUGO_VERSION = "0.66.0"
 
 [[redirects]]
 from = "/jobs"
