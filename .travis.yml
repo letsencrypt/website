@@ -1,9 +1,14 @@
 language: generic
 
+env:
+  global:
+    - HUGO_VERSION=0.66.0
+    - HUGO_SHA256=fc857d515688001e28197150718e2337746589b55c907643e7210db5737f3295
+
 before_install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_extended_0.64.1_Linux-64bit.deb
-  - echo "19f60f8bbfbe060635e127b8d0c32b9c7a0dd3fbc6830add4a86d0d3c55ca3d1 hugo_extended_0.64.1_Linux-64bit.deb" | sha256sum -c - || exit 1;
-  - sudo dpkg -i hugo_extended_0.64.1_Linux-64bit.deb
+  - wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+  - echo "$HUGO_SHA256 hugo_extended_${HUGO_VERSION}_Linux-64bit.deb" | sha256sum -c - || exit 1;
+  - sudo dpkg -i hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
 
 install:
   - npm install && npm run build && npm test
