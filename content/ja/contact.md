@@ -21,7 +21,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## メーリングリスト
 
-さまざまな技術に関するメーリングリストの情報があります。詳しくは、{{<link "参加する" "/getinvolved" >}}のページを読んでください。
+さまざまな技術に関するメーリングリストの情報があります。詳しくは、[参加する](/getinvolved)のページを読んでください。
 
 ニュースレターのサインアップには、[こちらをクリック](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)してください。
 

@@ -26,7 +26,7 @@ menu:
 
 如果您想成為企業贊助商，請發送電子郵件至[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)。
 
-如果贊助不適合您的組織，請考慮{{<link "捐贈" "/donate" >}}任何金額。
+如果贊助不適合您的組織，請考慮[捐贈](/donate)任何金額。
 
 ## 我們的組織
 
