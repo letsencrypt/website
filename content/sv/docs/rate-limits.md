@@ -18,8 +18,7 @@ behöva handpåläggning från Let's Encrypt.
 Om du aktivt utvecklar eller testar en Let's Encrypt-klient, vänligen använd
 vår [testmiljö](/docs/staging-environment) istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
-leverantör eller med en stor webbplats, vänligen se vår {{<link
-"integrationsguide" "/docs/integration-guide" >}}.
+leverantör eller med en stor webbplats, vänligen se vår [integrationsguide](/docs/integration-guide).
 
 Huvudgränsen är <a id="certificates-per-registered-domain"></a>**antal
 certifikat per registrerad domän** (50 per vecka). Generellt är en registrerad
@@ -82,8 +81,7 @@ som [använder ett konto till flera kunder](/docs/integration-guide).
 Du kan maximalt ha 300 <a id="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient skapar
-auktorisationer utan att fullborda dem. Använd vår {{<link "testmiljö"
-"/docs/staging-environment" >}} om du utvecklar en ACME-klient.
+auktorisationer utan att fullborda dem. Använd vår [testmiljö](/docs/staging-environment) om du utvecklar en ACME-klient.
 
 Användare av API:t ACMEv2 kan skapa maximalt 300 <a id="new-orders"></a>**nya
 beställningar** per konto per 3 timmar. En ny beställning skapas varje gång du
