@@ -30,12 +30,12 @@ funciona com muitos sistemas operacionais e possui uma ótima documentação. [V
 site do Certbot][Certbot] para obter instruções indicadas para o seu sistema operacional e servidor web.
 
 Se o [Certbot] não suprir suas necessidades ou você prefere usar outra coisa, existem
-{{<link "muitos outros clientes ACME para se usar" "/docs/client-options" >}}. Uma vez que você tenha escolhido um cliente ACME
+[muitos outros clientes ACME para se usar](/docs/client-options). Uma vez que você tenha escolhido um cliente ACME
 , veja a documentação do cliente escolhido para prosseguir.
 
 Se você está experimentando diferentes clientes ACME, use nosso 
-{{<link "ambiente de testes" "/docs/staging-environment" >}} para evitar atingir
-nossos {{<link "limites de uso" "/docs/rate-limits" >}}.
+[ambiente de testes](/docs/staging-environment) para evitar atingir
+nossos [limites de uso](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

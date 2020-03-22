@@ -24,8 +24,7 @@ testmiljön. Observera att v2-testmiljön kräver en v2-kompatibel ACME-klient.
 
 # Taktbegränsningar
 
-Testmiljön använder samma regler som {{<link "produktionsmiljön"
-"/docs/rate-limits" >}} fast med följande undantag:
+Testmiljön använder samma regler som [produktionsmiljön](/docs/rate-limits) fast med följande undantag:
 
 * **Antal certifikat per registrerad domän**-gränsen är 30000 per vecka
 * **Certifikatdublett**-gränsen är 30000 per vecka
@@ -49,8 +48,7 @@ använda för annat än testning.
 
 # Certifikattransparens
 
-Testmiljön skickar förcertifikat till Let's Encrypts {{<link "Testflume"
-"/docs/ct-logs" >}} och Googles
+Testmiljön skickar förcertifikat till Let's Encrypts [Testflume](/docs/ct-logs) och Googles
 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)
 CT-testloggar och inkluderar de returnerade SCT:erna (signerade
 certifikattidsangivelser) i de utfärdade certifikaten.

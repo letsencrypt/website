@@ -1,0 +1,17 @@
+{{- if  and (findRE "^/(docs/)?[^/]+/?$" .Destination) (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
+	{{- $tmp := split .Destination "#" -}}
+	{{- $pagename := index $tmp 0 -}}
+	{{- $anchor := index $tmp 1 -}}
+	{{- $page := .Page.Site.GetPage $pagename -}}
+	{{- if not $page }}{{ errorf "Missing page %q %q in %q" .Text $pagename .Page -}}
+	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
+	{{- else -}}
+	<a href="{{ $page.RelPermalink }}{{ with $anchor }}#{{ . }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}"{{ with .Title}} title="{{ . }}"{{ end }}>
+		{{- .Text | markdownify -}}
+    </a>
+	{{- end -}}
+{{- else -}}
+    <a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{/* We can't use markdownify on https:// links or it will generate the <a> tag twice. */}}
+        {{- .Text | safeHTML -}}
+    </a>
+{{- end -}}

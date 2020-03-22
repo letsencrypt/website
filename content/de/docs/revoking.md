@@ -27,7 +27,7 @@ hat](https://www.imperialviolet.org/2011/03/18/revocation.html), sodass
 nicht alle Browser diese Überprüfen machen werden. Trotzdem, Sperren
 von Zertifikaten, die einen kompromitierten privaten Schlüssel haben,
 ist eine wichtige Praxis und ist erforderlich vom Let's Encrypt's
-{{<link "Subscriber Agreement" "/repository" >}}.
+[Subscriber Agreement](/repository).
 
 Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)

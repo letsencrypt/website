@@ -24,7 +24,7 @@ Notera att OCSP [har några grundläggande problem
 (engelska)](https://www.imperialviolet.org/2011/03/18/revocation.html), så alla
 webbläsare kommer inte att utföra denna kontroll. Det är dock fortfarande en
 viktig rutin att återkalla certifikat vars privata nycklar har läckt och det
-krävs av Let's Encrypts {{<link "användaravtal" "/repository" >}}.
+krävs av Let's Encrypts [användaravtal](/repository).
 
 För att återkalla ett certifikat med Let's Encrypt använder du
 [ACME-API:et](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md),

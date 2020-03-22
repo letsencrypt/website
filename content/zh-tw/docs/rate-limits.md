@@ -10,7 +10,7 @@ lastmod: 2019-06-04
 
 為了確保大多數使用者的公平性，Let's Encrypt 具有憑證操作上的速率限制，我們相信這些的限制能滿足大多數用戶的需求。大型機構可以逐步增加他們憑證數量，而不需要受到 Let's Encrypt 的干預。
 
-如果你正著手開發或測試 Let's Encrypt 客戶端，請使用我們的{{<link "測試環境" "/docs/staging-environment" >}}，請不要使用上線環境的 API。如果你正為服務提供業者或大型網站整合 Let's Encrypt，請閱讀我們的{{<link "整合指南" "/docs/integration-guide" >}}。
+如果你正著手開發或測試 Let's Encrypt 客戶端，請使用我們的[測試環境](/docs/staging-environment)，請不要使用上線環境的 API。如果你正為服務提供業者或大型網站整合 Let's Encrypt，請閱讀我們的[整合指南](/docs/integration-guide)。
 
 我們最主要的限制是<a id="certificates-per-registered-domain"></a>**每個註冊網域 (Registered Domain) 的憑證頒發數量**，限制為每周 50 張。註冊網域，是指你向網域註冊商所購買的名稱，例如：網域名稱 `www.example.com` 的註冊網域就是 `example.com`；而網域名稱 `new.blog.example.co.uk` 的註冊網域是 `example.co.uk`。我們使用[公共後綴列表 (Public Suffix List)](https://publicsuffix.org) 來辨認一個網域名稱的註冊網域。
 
@@ -24,16 +24,16 @@ lastmod: 2019-06-04
 
 **註銷憑證不會使頒發速率限制重設**，因為你已經消耗了這些用來頒發憑證的資源。
 
-我們還有<a id="failed-validations"></a>**網域驗證失敗**限制，對於每個帳號每域名每小時 5 次的限制。在{{<link "測試環境" "/docs/staging-environment" >}}中並沒有那麼嚴格的限制，因此你可以使用測試環境來針對連線問題除錯。
+我們還有<a id="failed-validations"></a>**網域驗證失敗**限制，對於每個帳號每域名每小時 5 次的限制。在[測試環境](/docs/staging-environment)中並沒有那麼嚴格的限制，因此你可以使用測試環境來針對連線問題除錯。
 
 "new-reg"、"new-authz" 和 "new-cert" 端點的<a
 id="overall-requests"></a>**速率限制總和**為每秒 20 次請求。"/directory" 端點和 "/acme" 路徑以及其子路徑的速率請求總和為每秒 40 次請求。
 
 此外我們還有兩個你可能比較不會遇到的限制。
 
-<a id="accounts-per-ip-address"></a>**每個 IP 位置**每 3 個小時最多能建立 10 個帳號。**每個 IPv6 /48** 每 3 個小時最多能建立 500 個帳號。要達到這種帳號限制是很難的，我們建議服務提供業者{{<link "使用一個帳號為多個客戶提供服務" "/docs/integration-guide" >}}。
+<a id="accounts-per-ip-address"></a>**每個 IP 位置**每 3 個小時最多能建立 10 個帳號。**每個 IPv6 /48** 每 3 個小時最多能建立 500 個帳號。要達到這種帳號限制是很難的，我們建議服務提供業者[使用一個帳號為多個客戶提供服務](/docs/integration-guide)。
 
-你的帳號最多能有 300 個**待驗證授權**。這種速率限制很難達到，通常是在 ACME 客戶端開發時才會遇到。會達到這個速率限制，通常表示你的客戶端正在建立授權，但是沒有驗證授權。如果你正在開發 ACME 客戶端，請使用我們的{{<link "測試環境" "/docs/staging-environment" >}}。
+你的帳號最多能有 300 個**待驗證授權**。這種速率限制很難達到，通常是在 ACME 客戶端開發時才會遇到。會達到這個速率限制，通常表示你的客戶端正在建立授權，但是沒有驗證授權。如果你正在開發 ACME 客戶端，請使用我們的[測試環境](/docs/staging-environment)。
 
 對於使用 ACME v2 API 的使用者，每 3 個小時最多可以建立 300 個<a id="new-orders"></a>**新請求**。
 
@@ -43,7 +43,7 @@ id="overall-requests"></a>**速率限制總和**為每秒 20 次請求。"/direc
 
 如果你是個想整合 Let's Encrypt 的服務提供業者或組織，你可以透過填寫[增加速率表單](https://goo.gl/forms/plqRgFVnZbdGhE9n1)以取得更高的速率。處理表單需要幾周的時間，因此如果你只是想要在限制結束前更快的重設限制，請不要填寫這個表單。
 
-大多數的業者不需要增加速率，因為對於不同的註冊網域並沒有頒發速率限制。如果你的你的客戶在一個註冊網域上擁有超過 2000 個子網域，你才需要考慮增加速率。請參考我們的{{<link "整合指南" "/docs/integration-guide" >}}，以取得更多資訊。
+大多數的業者不需要增加速率，因為對於不同的註冊網域並沒有頒發速率限制。如果你的你的客戶在一個註冊網域上擁有超過 2000 個子網域，你才需要考慮增加速率。請參考我們的[整合指南](/docs/integration-guide)，以取得更多資訊。
 
 # <a id="clearing-pending"></a>清除待驗證授權
 

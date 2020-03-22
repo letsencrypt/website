@@ -29,12 +29,12 @@ Takođe pruža i "expert" modove za ljude koji ne žele automatsku konfiguraciju
 radi na mnogim operativnim sistemima, a poseduje i sjajnu dokumentaciju. [Posetite Certbot stranicu][Certbot] da biste dobili prilagođena uputstva za vaš operativni sistem i web server.
 
 Ukoliko [Certbot] ne zadovoljava vaše potrebe ili želite isprobati nešto drugo, postoji
-{{<link "mnogo više ACME klijenata" "/docs/client-options" >}}. Jednom kada odaberete ACME klijenta,
+[mnogo više ACME klijenata](/docs/client-options). Jednom kada odaberete ACME klijenta,
 pogledajte dokumentaciju za konkretno tog klijenta kako bi ste nastavili sa daljim koracima.
 
 Ako eksperimentišete sa različitim ACME klijentima, koristite naše
-{{<link "staging okruženje" "/docs/staging-environment" >}} da biste izbegli dostizanje
-{{<link "servisnih prekoračenja i limita" "/docs/rate-limits" >}}.
+[staging okruženje](/docs/staging-environment) da biste izbegli dostizanje
+[servisnih prekoračenja i limita](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

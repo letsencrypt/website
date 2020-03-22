@@ -26,7 +26,7 @@ Let’s Encrypt는 글로벌 공인인증기관(Certificate Authority, CA)입니
 
 Let’s Encrypt는 DV(Domain Validation) 인증서를 제공합니다. 자동 발행을 할 수 없는 OV(Organization Validation) 또는 EV(Extended Validation) 유형의 인증서는 제공하지 않습니다.
 
-Let’s Encrypt를 사용하려면 {{<link "시작하기" "/getting-started" >}} 페이지를 방문해 주세요.
+Let’s Encrypt를 사용하려면 [시작하기](/getting-started) 페이지를 방문해 주세요.
 
 ## Let’s Encrypt를 사용하는 데는 얼마나 드나요? 정말로 무료인가요?
 
@@ -40,7 +40,7 @@ Let’s Encrypt를 사용하려면 {{<link "시작하기" "/getting-started" >}}
 
 Let’s Encrypt는 소규모 조직이 운영하며 비용을 줄이기 위한 자동화된 시스템에 의존합니다. 사정이 그런 탓에, 구독자들께 직접적인 지원은 제공할 수 없습니다. 다음의 선택지를 통한 훌륭한 지원이 이루어 집니다:
 
-1. 정말로 도움되는 [문서](/docs/)가 있습니다.
+1. 정말로 도움되는 [문서](/docs)가 있습니다.
 2. 아주 활발하고 유용한 [커뮤니티 지원 포럼](https://community.letsencrypt.org/)이 있습니다. 커뮤니티 회원들은 질의 응답 전문가이면서, 대부분의 공통적인 질문들은 이미 답변이 되었습니다.
 
 [비디오](https://www.youtube.com/watch?v=Xe1TZaElTAs)를 통해 방대한 커뮤니티 지원력을 확인하시기 바랍니다.
@@ -49,7 +49,7 @@ Let’s Encrypt는 소규모 조직이 운영하며 비용을 줄이기 위한 �
 
 ## 내 브라우저에서 Let’s Encrypt의 인증서를 신뢰할 수 있습니까?
 
-대부분 브라우저와 운영 체제에서는 그렇습니다. 자세한 내용은 [호환성 목록](/docs/certificate-compatibility/)을 참조하십시오
+대부분 브라우저와 운영 체제에서는 그렇습니다. 자세한 내용은 [호환성 목록](/docs/cert-compat)을 참조하십시오
 
 ## Let's Encrypt는 웹사이트에 대한 SSL/TLS 이외의 다른 항목에 대해서도 인증서를 발급하나요?
 
