@@ -23,4 +23,4 @@ Let's Encrypt 的基本原則為：
 * <strong>公開:</strong> 公開自動頒發和更新協議，作為他人可以使用的開放標準。
 * <strong>合作:</strong> Let's Encrypt 是一個為了網路社群利益所做的共同努力，就像網路底層協議一樣，不受任何單一組織的控制。
 
-請訪問{{<link "此頁面" "/how-it-works" >}}以取得更多關於 Let's Encrypt CA 工作方式的詳細資訊
+請訪問[此頁面](/how-it-works)以取得更多關於 Let's Encrypt CA 工作方式的詳細資訊

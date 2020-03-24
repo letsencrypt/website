@@ -21,7 +21,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Listas de Correo
 
-Para información sobre varias listas de correo ténicas, por favor visita nuestra página {{<link "Involúcrate" "/getinvolved" >}}.
+Para información sobre varias listas de correo ténicas, por favor visita nuestra página [Involúcrate](/getinvolved).
 
 ## Seguridad
 

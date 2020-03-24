@@ -31,7 +31,7 @@ Nu validerar vi kontroll över en domän från [flera nätverksperspektiv
 
 * Aktiverat: den 15 maj 2019
 
-Vi driftar en {{<link "certifikattransparenslogg" "/docs/ct-logs" >}}.
+Vi driftar en [certifikattransparenslogg](/docs/ct-logs).
 
 ## Stöd för TLS ALPN-utmaningar
 

@@ -27,7 +27,7 @@ We now validate domain control from [multiple network perspectives](https://lets
 
 * Enabled: May 15, 2019
 
-We now operate a {{<link "Certificate Transparency log" "/docs/ct-logs" >}}.
+We now operate a [Certificate Transparency log](/docs/ct-logs).
 
 ## TLS ALPN Challenge Support
 
