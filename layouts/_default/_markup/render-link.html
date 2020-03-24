@@ -2,6 +2,7 @@
 	{{- $tmp := split .Destination "#" -}}
 	{{- $pagename := index $tmp 0 -}}
 	{{- $anchor := index $tmp 1 -}}
+	{{- $pagename := replaceRE "^(.*)/$" "$1" $pagename -}}
 	{{- $page := .Page.Site.GetPage $pagename -}}
 	{{- if not $page }}{{ errorf "Missing page %q %q in %q" .Text $pagename .Page -}}
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
