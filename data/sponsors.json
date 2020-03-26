@@ -85,6 +85,7 @@
       {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"},
       {"name":"VMWare","url":"https://www.vmware.com/","image":"vmware-logo.png"},
       {"name":"one.com","url":"https://www.one.com/","image":"one-com-logo.png"},
-      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"}
+      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
+      {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"}
 ]
 }
