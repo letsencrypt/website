@@ -32,4 +32,4 @@ El certificado intermedio para el entorno de prueba (["Fake LE Intermediate X1"]
 
 # Transparencia de certificado
 
-El entorno de prueba envía pre-certificados a Let's Encrypt {{<link "Testflume" "/docs/ct-logs">}} y a Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs e incluye SCT devueltos en los certificados emitidos.
+El entorno de prueba envía pre-certificados a Let's Encrypt [Testflume](/docs/ct-logs) y a Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs e incluye SCT devueltos en los certificados emitidos.

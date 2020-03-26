@@ -1,15 +1,12 @@
-{{ $inner := .Inner }}
-{{ $data := .Get "data" }}
-{{ range $.Site.Data.transparency.categories }}
-    {{ $category := . }}
-    {{ if (eq $category $data "$category") }}
-        {{ if eq $data "production" }}
-            <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
-        {{ else }}
-            <h3>{{ i18n "certificate_transparency_role_testing"}}</h3>
-        {{ end }}
-        <ul>
-        {{ $inner }}
+{{ $category := .Get "data" }}
+{{ if eq $category "production" }}
+    <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
+{{ else }}
+    <h3>{{ i18n "certificate_transparency_role_testing"}}</h3>
+{{ end }}
+<ul>
+    {{ .Inner }}
+    <li class="list-style-none">
         <ul>
         {{ range $.Site.Data.transparency.transparencyLogs }}
             {{ if and .role (eq $category .role) }}
@@ -28,7 +25,6 @@
             </li>
             {{ end }}
         {{ end }}
-    </ul>
-    </ul>
-    {{ end }}
-{{ end }}
+        </ul>
+    </li>
+</ul>

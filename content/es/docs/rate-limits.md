@@ -10,8 +10,8 @@ lastmod: 2019-06-04
 
 Let's Encrypt proporciona límites de solicitudes para garantizar un uso justo por parte de todos los solicitantes de certificados. Creemos que estos límites de solicitud son lo suficientemente altos como para funcionar de manera predeterminada con la mayoría de las personas. También los hemos diseñado para que la renovación de un certificado casi nunca alcance un límite de solicitudes y por lo tanto las organizaciones pueden aumentar gradualmente la cantidad de certificados que pueden emitir sin requerir la intervención de Let's Encrypt.
 
-Si está desarrollando o probando activamente un cliente Let's Encrypt, por favor utilice el {{<link "entorno de prueba" "/docs/staging-environment" >}} en lugar de la API de producción.
-Si está trabajando para integrar Let's Encrypt como proveedor o con un servidor de alojamientos web, por favor {{<link "revise nuestra guía de integración" "/docs/integration-guide" >}}.
+Si está desarrollando o probando activamente un cliente Let's Encrypt, por favor utilice el [entorno de prueba](/docs/staging-environment) en lugar de la API de producción.
+Si está trabajando para integrar Let's Encrypt como proveedor o con un servidor de alojamientos web, por favor [revise nuestra guía de integración](/docs/integration-guide).
 
 El límite principal es <a id="certificates-per-registered-domain"></a> **Certificados por Dominio Registrado** (50 por semana). Un dominio registrado es, en general, la parte del dominio que compró a su registrador de nombres de dominio. Por ejemplo, en el nombre `www.example.com`, el dominio registrado es` example.com`. En `new.blog.example.co.uk` el dominio registrado es` example.co.uk`. Usamos la [Lista de sufijos públicos](https://publicsuffix.org) para calcular el dominio registrado.
 
@@ -26,16 +26,16 @@ Una renovación ignora la clave pública y las extensiones solicitadas. La emisi
 
 **La revocación de certificados no restablece los límites de solicitudes**, porque los recursos utilizados para emitir esos certificados ya se han consumido.
 
-Existe un límite de 5 <a id="failed-validations"></a> **Validaciones Fallidas** por cuenta, por hostname, por hora. Este límite es mayor en nuestro {{<link "entorno de prueba" "/docs/staging-environment" >}}, por lo que puede usar ese entorno para depurar problemas de conectividad.
+Existe un límite de 5 <a id="failed-validations"></a> **Validaciones Fallidas** por cuenta, por hostname, por hora. Este límite es mayor en nuestro [entorno de prueba](/docs/staging-environment), por lo que puede usar ese entorno para depurar problemas de conectividad.
 
 Los puntos finales "new-reg", "new-authz" y "new-cert" tienen un límite de 20 <a id="overall-requests"></a> **Solicitudes generales**  por segundo. El punto final "/directorio" y el directorio y subdirectorios "/acme" tienen un límite de 40 solicitudes generales por segundo.
 
 Tenemos otros dos límites con los que es muy poco probable que te encuentres.
 
 Puede crear un máximo de 10 <a id="accounts-per-ip-address"></a> **Cuentas por dirección IP** en un periodo de 3 horas. Usted puede
-cree un máximo de 500 **Cuentas por rango de IP** dentro de un IPv6/48 en un periodo de 3 horas. Alcanzar cualquiera de los límites de la tasa de cuenta es muy raro, y recomendamos a los grandes integradores que usen un diseño {{<link "una cuenta para muchos clientes" "/docs/integration-guide" >}}.
+cree un máximo de 500 **Cuentas por rango de IP** dentro de un IPv6/48 en un periodo de 3 horas. Alcanzar cualquiera de los límites de la tasa de cuenta es muy raro, y recomendamos a los grandes integradores que usen un diseño [una cuenta para muchos clientes](/docs/integration-guide).
 
-Puede tener un máximo de 300 <a id="pending-authorizations"> </a> **Autorizaciones pendientes** en su cuenta. Alcanzar este límite de velocidad es raro y ocurre con mayor frecuencia cuando se desarrollan clientes ACME. Por lo general, significa que su cliente está creando autorizaciones y no las está cumpliendo. Utilice nuestro {{<link "entorno de pruebas" "/docs/staging-environment" >}} si está desarrollando un cliente ACME.
+Puede tener un máximo de 300 <a id="pending-authorizations"> </a> **Autorizaciones pendientes** en su cuenta. Alcanzar este límite de velocidad es raro y ocurre con mayor frecuencia cuando se desarrollan clientes ACME. Por lo general, significa que su cliente está creando autorizaciones y no las está cumpliendo. Utilice nuestro [entorno de pruebas](/docs/staging-environment) si está desarrollando un cliente ACME.
 
 Los usuarios de la API ACME v2, puede crear un máximo de 300 <a id="new-orders"> </a> **Nuevos pedidos** por cuenta en un período de 3 horas.
 
@@ -46,7 +46,7 @@ Si ha alcanzado un límite de solicitudes, no tenemos forma de restablecerlo tem
 Si es un gran proveedor o proveedor de hosting que trabaja en una integración Let's Encrypt, disponemos de un 
 [formulario](https://goo.gl/forms/plqRgFVnZbdGhE9n1) que se puede utilizar para solicitar un límite de tarifa más alto. El procesamiento de solicitudes demora algunas semanas, por lo que este formulario no es adecuado si solo necesita restablecer un límite de solicitudes más rápido del que se restablece por sí solo.
 
-Tenga en cuenta que la mayoría de los proveedores de alojamiento no necesitan aumentos de límite de solicitudes, porque no hay límite en la cantidad de dominios registrados distintos para los que puede emitir. Mientras la mayoría de sus clientes no tengan más de 2,000 subdominios en un dominio registrado, lo más probable es que no necesite un aumento. Consulte nuestra {{<link "Guía de integración" "/docs/integration-guide" >}} para obtener más consejos.
+Tenga en cuenta que la mayoría de los proveedores de alojamiento no necesitan aumentos de límite de solicitudes, porque no hay límite en la cantidad de dominios registrados distintos para los que puede emitir. Mientras la mayoría de sus clientes no tengan más de 2,000 subdominios en un dominio registrado, lo más probable es que no necesite un aumento. Consulte nuestra [Guía de integración](/docs/integration-guide) para obtener más consejos.
 
 # <a id="clearing-pending"></a>Eliminar autorizaciones pendientes
 

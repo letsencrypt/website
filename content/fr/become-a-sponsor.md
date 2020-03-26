@@ -26,7 +26,7 @@ Il est temps pour les communications chiffrées de devenir la norme sur le Web e
 
 Si vous souhaitez devenir un sponsor d'entreprise, merci d'envoyer un email à [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Si le parrainage n'est pas une option pour votre organisation, vous pouvez envisager de simplement {{<link "faire un don" "/donate" >}}.
+Si le parrainage n'est pas une option pour votre organisation, vous pouvez envisager de simplement [faire un don](/donate).
 
 ## Notre organisation
 

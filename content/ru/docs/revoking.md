@@ -23,7 +23,7 @@ lastmod: 2017-06-08
 Обратите внимание, что OCSP [имеет несколько значительных проблем](https://www.imperialviolet.org/2011/03/18/revocation.html), поэтому 
 не все браузеры проводят эту проверку. Но аннулирование сертификатов, 
 соответствующих скомпрометированным закрытым ключам, все еще является 
-важной практикой и необходима согласно {{< link "Клиентскому соглашению" "/repository">}} Let's Encrypt's.
+важной практикой и необходима согласно [Клиентскому соглашению](/repository) Let's Encrypt's.
 
 Чтобы аннулировать сертификат с помощью Let's Encrypt, следует использовать [ACME 
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), 
@@ -38,7 +38,7 @@ API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md
 его с помощью учетных данных аккаунта. Certbot попытается сделать 
 это по умолчанию. Например:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -60,7 +60,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 Вам также понадобится копия закрытого ключа в PEM-формате. Имея ее, 
 можно аннулировать сертификат подобным образом:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -84,7 +84,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ошибке выпуска, при этом другое, существующее доменное имя будет подтверждено. 
 Для этого сделайте следующее:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -95,6 +95,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 можно скачать сертификат с [crt.sh](https://crt.sh/),
 после чего продолжить процесс аннулирования, как если бы его выпустили вы:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

@@ -26,4 +26,4 @@ The key principles behind Let's Encrypt are:
 * <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
 * <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
-We have a page with more detailed information about {{<link "how the Let's Encrypt CA works" "/how-it-works" >}}.
+We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works).
