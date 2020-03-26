@@ -12,7 +12,7 @@ dfn {
   padding-right: .25em; /* Prevent italics text from hitting the ":" */
 }
 
-.definition>a {
+.definition>a:first-child {
   text-decoration: none;
   color: inherit;
 }
