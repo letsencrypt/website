@@ -284,6 +284,26 @@ pre {
     background-color: #fff;
 }
 
+a.autoanchor {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+.page-content {
+    h1,h2,h3 { //same selector as js for anchors
+        .autoanchor {
+            display: none;
+        }
+        &:hover {
+            .autoanchor {
+                display: inline;
+            }
+        }
+    }
+}
+
 .list-style-none {
     list-style-type:none;
 }
