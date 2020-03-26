@@ -26,7 +26,7 @@ Isso é importante, queremos que você seja parte disso. Nos ajude a liderar o c
 
 Se você gostaria de se tornar um patrocinador corporativo por favor nos envie um e-mail em [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Se o patrocínio não for uma opção para sua organização, considere {{<link "doar" "/donate" >}} qualquer quantia.
+Se o patrocínio não for uma opção para sua organização, considere [doar](/donate) qualquer quantia.
 
 ## Nossa Organização
 

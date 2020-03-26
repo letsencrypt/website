@@ -25,4 +25,4 @@ Các nguyên tắc chính phía sau Let's Encrypt là:
 * <strong>Mở:</strong> Giao thức phát hành và gia hạn tự động sẽ được công bố như một tiêu chuẩn mở mà những người khác có thể áp dụng.
 * <strong>Hợp tác:</strong> Giống như các giao thức Internet cơ bản, Let's Encrypt là một nỗ lực chung nhằm mang lại lợi ích cho cộng đồng, vượt ra ngoài tầm kiểm soát của bất kỳ một tổ chức nào.
 
-Chúng tôi có một trang với thông tin chi tiết hơn về việc {{<link "Let's Encrypt CA hoạt động như thế nào" "/how-it-works" >}}.
+Chúng tôi có một trang với thông tin chi tiết hơn về việc [Let's Encrypt CA hoạt động như thế nào](/how-it-works).

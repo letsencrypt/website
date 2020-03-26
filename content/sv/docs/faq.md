@@ -30,7 +30,7 @@ Let's Encrypt erbjuder domänvalideringscertifikat (DV). Vi erbjuder inte
 organisationsvalidering (OV) eller utökad validering (EV) främst eftersom vi
 inte kan automatisera utfärdande av dessa typer av certifikat.
 
-För att komma igång, besök vår {{<link "kom igång-sida" "/getting-started" >}}.
+För att komma igång, besök vår [kom igång-sida](/getting-started).
 
 ## Vad kostar det att använda Let's Encrypt? Är det verkligen gratis?
 
@@ -42,8 +42,8 @@ HTTPS.
 
 Vi behöver stöd från generösa sponsorer, anslagsgivare och individer för att
 kunna erbjuda våra tjänster kostnadsfritt i hela världen. Om du är intresserad
-av att stödja oss så överväg att {{<link "donera" "/donate" >}} eller
-{{<link "bli en sponsor" "/become-a-sponsor" >}}.
+av att stödja oss så överväg att [donera](/donate) eller
+[bli en sponsor](/become-a-sponsor).
 
 I vissa fall kommer mellanhänder såsom webbhotell debitera en symbolisk summa
 för att täcka sina administrations- och hanteringskostnader som de ådrar sig
@@ -55,7 +55,7 @@ Let's Encrypt drivs av ett litet team och förlitar sig på automatisering för 
 hålla kostnaderna nere. På grund av detta kan vi inte erbjuda direktsupport till
 våra prenumeranter. Vi har däremot några fantastiska supportalternativ:
 
-1. Vi har riktigt nyttig {{<link "dokumentation" "/docs" >}}.
+1. Vi har riktigt nyttig [dokumentation](/docs).
 2. Vi har ett väldigt aktivt och hjälpsamt
    [användarforum](https://community.letsencrypt.org/). Medlemmar i vår
    gemenskap gör ett fantastiskt jobb genom att besvara frågor och många av de
@@ -81,7 +81,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 ## Är certifikat från Let's Encrypt betrodda av min webbläsare?
 
 Ja, av de flesta webbläsare och operativsystem. Se
-{{<link "kompatibilitetslistan" "/docs/cert-compat" >}} för fler
+[kompatibilitetslistan](/docs/cert-compat) för fler
 detaljer.
 
 ## Utfärdar Let's Encrypt certifikat för något annat än SSL/TLS för webbsidor?
@@ -126,7 +126,7 @@ för mer teknisk information.
 
 ## Finns det en Let's Encrypt-klient (ACME) för mitt operativsystem?
 
-Det finns en uppsjö av {{<link "ACME-klienter" "/docs/client-options" >}}
+Det finns en uppsjö av [ACME-klienter](/docs/client-options)
 tillgängliga. Sannolikheten är stor att någon fungerar bra på ditt
 operativsystem. Vi rekommenderar att du börjar med
 [Certbot](https://certbot.eff.org/).
