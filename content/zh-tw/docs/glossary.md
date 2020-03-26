@@ -38,7 +38,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} 底線要求。客戶端對於憑證頒發機構技術和政策上的要求，憑證頒發機構需要遵守客戶端的[根憑證政策](#def-root-program)，以取得數瀏覽器的信任。{{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 憑證頒發授權。指定哪些[憑證頒發機構](#def-CA)是可以替對應的網域名稱頒發憑證的 DNS 紀錄。憑證頒發機構會檢查 CAA 紀錄，而瀏覽器不會檢查它。依據憑證頒發機構的[底線要求](#def-BRs)，[Let's Encrypt](#def-LE) 會{{<link "尊重 CAA 紀錄" "/docs/caa" >}}。 - [維基百科](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} 憑證頒發授權。指定哪些[憑證頒發機構](#def-CA)是可以替對應的網域名稱頒發憑證的 DNS 紀錄。憑證頒發機構會檢查 CAA 紀錄，而瀏覽器不會檢查它。依據憑證頒發機構的[底線要求](#def-BRs)，[Let's Encrypt](#def-LE) 會[尊重 CAA 紀錄](/docs/caa)。 - [維基百科](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} 將一個網域名稱對應到另一個網域名稱的 DNS 紀錄。[維基百科](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
@@ -64,25 +64,25 @@ Note for translators:
 
 {{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} 憑證簽發請求。一份經由簽名的文件，內容包含申請憑證所需要的資訊。[Let's Encrypt](#def-LE) 需要的資訊為：[通用名稱](#def-CN)、[主體別名](#def-SAN)和主體公鑰資訊。通常 [ACME 客戶端](#def-ACME-client)，或網頁服務業者會自動替使用者產生此簽發請求。[維基百科](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
-{{% def id="store" name="Certificate Store" %}} 憑證儲存倉庫。憑證儲存倉庫中包含一個可信任的[根憑證](#def-root)列表。作業系統（例如：Windows、Android 或 Debian）和瀏覽器（例如：Firefox）都維護著自己的憑證儲存倉庫；沒有憑證儲存倉庫的瀏覽器，會使用作業系統本身的憑證儲存倉庫。由 [Let's Encrypt](#def-LE) 提供的憑證{{<link "已經被大多數的憑證儲存倉庫所信任" "/certificates" >}}。 {{% /def %}}
+{{% def id="store" name="Certificate Store" %}} 憑證儲存倉庫。憑證儲存倉庫中包含一個可信任的[根憑證](#def-root)列表。作業系統（例如：Windows、Android 或 Debian）和瀏覽器（例如：Firefox）都維護著自己的憑證儲存倉庫；沒有憑證儲存倉庫的瀏覽器，會使用作業系統本身的憑證儲存倉庫。由 [Let's Encrypt](#def-LE) 提供的憑證[已經被大多數的憑證儲存倉庫所信任](/certificates)。 {{% /def %}}
 
 {{% def id="subject" name="Certificate subject" %}} 憑證主體。憑證中的主體欄位，指名這張憑證是頒發給誰的。憑證主體通常包含[通用名稱](#def-CN)、所屬國家、機構名稱。{{% /def %}}
 
-{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 憑證透明度。為了增加安全性，憑證或[預憑證](#def-precertificate)必須被公開在憑證透明度紀錄中：https://www.certificate-transparency.org/ 。[Let's Encrypt](#def-LE) 頒發憑證的過程會先產生預憑證，再將 [SCT](#def-SCT) 列表加入到預憑證中。有些[瀏覽器](#def-web-browser)，例如：Google Chrome 就會需要 SCT 來驗證憑證。[維基百科](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
+{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} 憑證透明度。為了增加安全性，憑證或[預憑證](#def-precertificate)必須被公開在憑證透明度紀錄中：[https://www.certificate-transparency.org/](https://www.certificate-transparency.org/)。[Let's Encrypt](#def-LE) 頒發憑證的過程會先產生預憑證，再將 [SCT](#def-SCT) 列表加入到預憑證中。有些[瀏覽器](#def-web-browser)，例如：Google Chrome 就會需要 SCT 來驗證憑證。[維基百科](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} 憑證透明度紀錄。[憑證透明度](#def-CT)架構中的一部份，憑證透明度紀錄接受憑證和預憑證的提交，並加他們添加到一個永久、可驗證、公開的列表中。{{% /def %}}
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} 通用名稱。憑證主體欄位中的一部分，通用名稱描述該憑證是頒發給哪個網域的。[根憑證](#def-root)和[中間憑證](#def-intermediate)的通用名稱是[憑證頒發機構](#def-CA)的名稱；而[終端憑證](#def-leaf)的通用名稱是擁有該憑證的網域之一。請注意，通用名稱有長度的限制，最多為 63 個字元，因為在過去我們使用通用名稱來判斷哪個網遇能使用該憑證；而現在網路標準使用[主體別名](#def-SAN)來判斷。{{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} 交互簽名。一張憑證由多個憑證頒發機構的[根憑證](#def-root)所簽發。例如：[Let's Encrypt](#def-LE) 的[中間憑證](#def-intermediate)是與[IdenTrust](#def-IdenTrust) 交互簽名所產生的，因為在剛開始 Let's Encrypt 的根憑證並沒有被客戶端的[憑證儲存倉庫](#def-store)所信任。技術上來說，要進行交互簽名需要兩張使用相同[主體](#def-subject)，和[金鑰對](#def-key-pair)的憑證，一張由 Let's Encrypt 根憑證的私鑰簽名，另一張由 IdenTrust 根憑證的私鑰簽名：{{< link "/certificates">}}。 [維基百科](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} 交互簽名。一張憑證由多個憑證頒發機構的[根憑證](#def-root)所簽發。例如：[Let's Encrypt](#def-LE) 的[中間憑證](#def-intermediate)是與[IdenTrust](#def-IdenTrust) 交互簽名所產生的，因為在剛開始 Let's Encrypt 的根憑證並沒有被客戶端的[憑證儲存倉庫](#def-store)所信任。技術上來說，要進行交互簽名需要兩張使用相同[主體](#def-subject)，和[金鑰對](#def-key-pair)的憑證，一張由 Let's Encrypt 根憑證的私鑰簽名，另一張由 IdenTrust 根憑證的私鑰簽名：[/certificates](/certificates)。 [維基百科](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} 基於 DNS 的域名實體認證。一個網路安全協定，使用 DNS 來告訴客戶端該如何驗證憑證真偽，以及是否有提供加密公鑰。[維基百科](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
 {{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} 網域名稱系統安全擴展。使用密碼學認證 DNS 回應的機制。要使用 DNSSEC 需要頂級域名、網域名稱擁有者和 DNS recursive resolvers 的配合。DNSSEC 安全擴展的使用率目前偏低。[維基百科](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
-{{% def id="DV" name="Domain-validated certificate" %}} 域名驗證型憑證。證明你有該網域名稱控制權的[憑證](#def-leaf)。[Let's Encrypt](#def-LE) 僅提供 DV 憑證，而不提供 [OV](#def-OV) 或 [EV](#def-EV) 憑證：{{<link "FAQ" "/docs/faq" >}} - [維基百科](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
+{{% def id="DV" name="Domain-validated certificate" %}} 域名驗證型憑證。證明你有該網域名稱控制權的[憑證](#def-leaf)。[Let's Encrypt](#def-LE) 僅提供 DV 憑證，而不提供 [OV](#def-OV) 或 [EV](#def-EV) 憑證：[FAQ](/docs/faq) - [維基百科](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 橢圓曲線數位簽名演算法。使用橢圓曲線密碼學的數位簽名演算法。[維基百科](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) 支援頒發使用 ECDSA 的[終端憑證](#def-leaf)，但是整個[憑證鏈](#def-chain)還沒有完全使用 ECDSA：{{< link "/upcoming-features">}} {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 橢圓曲線數位簽名演算法。使用橢圓曲線密碼學的數位簽名演算法。[維基百科](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) 支援頒發使用 ECDSA 的[終端憑證](#def-leaf)，但是整個[憑證鏈](#def-chain)還沒有完全使用 ECDSA：[/upcoming-features](/upcoming-features) {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} 一種特殊類型的 EdDSA，類似還的還有 Ed448。{{% /def %}}
 
@@ -94,13 +94,13 @@ Note for translators:
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} 完整網域名稱。例如： `www.example.com` 就是一個 *FQDN* 。 {{% /def %}}
 
-{{% def id="IdenTrust" name="IdenTrust" %}} IdenTrust 是一個[憑證頒發機構](#def-CA)。 IdenTrust 和 [Let's Encrypt](#def-LE) 使用彼此的私鑰[交互簽名](#def-cross-signing)產生了[中間憑證](#def-intermediate)：{{< link "/certificates">}}。 [維基百科](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
+{{% def id="IdenTrust" name="IdenTrust" %}} IdenTrust 是一個[憑證頒發機構](#def-CA)。 IdenTrust 和 [Let's Encrypt](#def-LE) 使用彼此的私鑰[交互簽名](#def-cross-signing)產生了[中間憑證](#def-intermediate)：[/certificates](/certificates)。 [維基百科](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} 中間憑證。由[根憑證](#def-root)或其他中間憑證所頒發的憑證，它可以頒發其他憑證。通常我們會將根憑證的私鑰以離線方式儲存，並用中間憑證憑證的私鑰替終端憑證簽名。中間憑證被包含在[憑證鏈](#def-chain)中。[維基百科](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
 {{% def id="IDNA" name="Internationalized Domain Names for Applications" abbr="IDNA" %}} 應用程式中的國際化域名。請參考[國際化域名](#def-IDN)。 {{% /def %}}
 
-{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 國際化域名。含有不屬於 `a` 到 `z`和 `0` 到 `9` 以及連字號 `-` 的網域名稱。這些網域名稱可能含有阿拉伯文、中文、西里爾文、泰米爾文、希伯來文，或其他拉丁字母的變音符號或合體字。編碼後的 IDN 域名會以 `xn--` 為開頭。[Let's Encrypt](#def-LE) 支援頒發 IDN 域名的憑證：https://letsencrypt.org/2016/10/21/introducing-idn-support.html 。[維基百科](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 國際化域名。含有不屬於 `a` 到 `z`和 `0` 到 `9` 以及連字號 `-` 的網域名稱。這些網域名稱可能含有阿拉伯文、中文、西里爾文、泰米爾文、希伯來文，或其他拉丁字母的變音符號或合體字。編碼後的 IDN 域名會以 `xn--` 為開頭。[Let's Encrypt](#def-LE) 支援頒發 IDN 域名的憑證：[https://letsencrypt.org/2016/10/21/introducing-idn-support.html](https://letsencrypt.org/2016/10/21/introducing-idn-support.html) 。[維基百科](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
 {{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} 在 [Let's Encrypt](#def-LE) 的上級組織：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。 [維基百科](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
@@ -111,11 +111,11 @@ Note for translators:
 {{% def id="leaf" name="Leaf certificate (end-entity certificate)" %}} 終端憑證，或稱子葉憑證。終端憑證大部份是由[中間憑證](#def-intermediate)所頒發，僅對於一組網域有效，並且無法用來頒發憑證。終端憑證透過 [ACME 客戶端](#def-ACME-client)請求，並由[網頁伺服器](#def-web-server)所使用。[維基百科](https://en.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
 
-{{% def id="mixed-content" name="Mixed content" %}} 混合內容。在 HTTPS 網頁中以 HTTP 方式載入子資源（Javascript、CSS 或圖片）的網頁稱為混合內容。[瀏覽器](#def-web-browser) 可能會禁止混合內容網頁，或標示為安全性較低的網頁：https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content 。為了解決混合內容問題，網頁開發者必須全數使用 HTTPS 載入資源。在瀏覽器內建的[開發者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)可以幫助你找出哪些資源可能造成混合內容問題。{{% /def %}}
+{{% def id="mixed-content" name="Mixed content" %}} 混合內容。在 HTTPS 網頁中以 HTTP 方式載入子資源（Javascript、CSS 或圖片）的網頁稱為混合內容。[瀏覽器](#def-web-browser) 可能會禁止混合內容網頁，或標示為安全性較低的網頁：[https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content) 。為了解決混合內容問題，網頁開發者必須全數使用 HTTPS 載入資源。在瀏覽器內建的[開發者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)可以幫助你找出哪些資源可能造成混合內容問題。{{% /def %}}
 
 {{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 線上憑證狀態協定。一種檢查憑證[註銷](#def-revocation)狀態的方法。檢查[憑證頒發機構](#def-CA)是否認為該憑證雖然在有效期限內，但依然不再有效力。這個協定衍伸出隱私問題，因為憑證頒發機構和網路提供業者，可以藉由此協定的請求過程知道哪些人正在拜訪哪些網站。[維基百科](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} 一個[憑證擴展](#def-extension)欄位，它告訴[瀏覽器](#def-web-browser)必須使用 [OCSP 裝訂](#def-OCSP-staping)的證書。它用來確保瀏覽器在每次訪問網頁伺服器時，取得最新的憑證[註銷](#def-revocation)狀態，使得憑證註銷系統更加可靠。[Let's Encrypt](#def-LE) 可以頒發具有 OCSP Must-Staple 擴展欄位的憑證。[Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} 一個[憑證擴展](#def-extension)欄位，它告訴[瀏覽器](#def-web-browser)必須使用 [OCSP 裝訂](#def-OCSP-stapling)的證書。它用來確保瀏覽器在每次訪問網頁伺服器時，取得最新的憑證[註銷](#def-revocation)狀態，使得憑證註銷系統更加可靠。[Let's Encrypt](#def-LE) 可以頒發具有 OCSP Must-Staple 擴展欄位的憑證。[Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} OSCP 裝訂，也被稱為 TLS 憑證狀態請求擴展 (TLS Certificate Status Request extension)。[網頁伺服器](#def-web-server)透過回傳給[瀏覽器](#def-web-browser)一個經由[憑證頒發機構](#def-CA)簽名的 [OCSP](#def-OCSP) 請求回應，以節省瀏覽器向憑證頒發機構二次 OCSP 請求的時間。OCSP 裝訂是為了增加效率與保護隱私而增加的。[維基百科](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
@@ -125,18 +125,18 @@ Note for translators:
 
 {{% def id="pem" name="PEM file (.pem)" %}} PEM 格式。一種密碼學格式，原本用於"隱私增強型電子郵件"標準。PEM 格式的文件可用來表示私鑰、公鑰或數位憑證，文件以 "-\-\-\--BEGIN " 作為資料的開頭。[維基百科](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) {{% /def %}}
 
-{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} PFX 個人資訊交換格式。一種包含[終端憑證](#def-leaf)、連結根憑證的憑證鏈，和私鑰的檔案。請參考：https://en.wikipedia.org/wiki/PKCS_12 。[Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
+{{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} PFX 個人資訊交換格式。一種包含[終端憑證](#def-leaf)、連結根憑證的憑證鏈，和私鑰的檔案。請參考：[https://en.wikipedia.org/wiki/PKCS_12](https://en.wikipedia.org/wiki/PKCS_12) 。[Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
 {{% def id="precertificate" name="Precertificate" %}} 預憑證。預憑證是憑證透明度架構的其中一部份。預憑證內包含一個破壞性的[關鍵擴展](#def-critical)，以避免預憑證被客戶端軟體接受。CA 會將預憑證提交給[憑證透明度紀錄](#def-CT-log)，以取得 [SCT](#def-SCT)。預憑證與它對應的憑證不會相同，因此憑證透明度紀錄可能會將兩者都記錄下來。[RFC 6962 Section 3.1]( https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} HTTP 公鑰固定。要求瀏覽器在載入網頁時，使用特定公鑰來驗證網站[憑證鏈](#def-chain)的安全機制。Chrome 引入這個機制來應對 CA 被入侵時的狀況，但它會導致網站無法被訪問，因此後來 Chrome [移除了這項機制](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。[維基百科](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
 
-{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 公共後綴列表。由 Mozilla 所維護的列表，列表中記錄可供註冊的網域名稱。例如：`com` 和 `co.uk` 都屬於公共後綴網域名稱，雖然 `co.uk` 不屬於[頂級域名](#def-TLD)。網頁瀏覽器使用這個列表和其他的方法，以避免不同的網站共享 cookies。[Let's Encrypt](#def-LE) 也使用了這個列表來計算是否達到速率限制：{{< link "/rate-limits">}}。 https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} 公共後綴列表。由 Mozilla 所維護的列表，列表中記錄可供註冊的網域名稱。例如：`com` 和 `co.uk` 都屬於公共後綴網域名稱，雖然 `co.uk` 不屬於[頂級域名](#def-TLD)。網頁瀏覽器使用這個列表和其他的方法，以避免不同的網站共享 cookies。[Let's Encrypt](#def-LE) 也使用了這個列表來計算是否達到速率限制：[/rate-limits](/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="Relying Party" %}} 信任方。依賴憑證資訊的人。例如：訪問 HTTPS 網站的人就是信任方。{{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} 註銷。對於一張憑證，除非 [CA](#def-CA) 註銷它，不然在憑證過期之前一直有效。憑證可能因為不同原因而被註銷，例如：憑證的私鑰洩漏。瀏覽器會使用 [CRL](#def-CRL)來檢查憑證是否被註銷、[OCSP](#def-OCSP) 或其他新方法像是 [OnceCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/)。請注意，[有些狀況下註銷憑證對瀏覽器沒有影響](https://www.imperialviolet.org/2011/03/18/revocation.html)。 {{< link "/docs/revoking">}} {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} 註銷。對於一張憑證，除非 [CA](#def-CA) 註銷它，不然在憑證過期之前一直有效。憑證可能因為不同原因而被註銷，例如：憑證的私鑰洩漏。瀏覽器會使用 [CRL](#def-CRL)來檢查憑證是否被註銷、[OCSP](#def-OCSP) 或其他新方法像是 [OnceCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/)。請注意，[有些狀況下註銷憑證對瀏覽器沒有影響](https://www.imperialviolet.org/2011/03/18/revocation.html)。 [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} 根憑證。由[憑證頒發機構](#def-CA)所控制的[自簽](#def-self-signed)憑證，它用來頒發[中間憑證](#def-intermediate)，以及儲存在客戶端或作業系統中的[憑證儲存倉庫](#def-store)中。[維基百科](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
@@ -148,11 +148,11 @@ Note for translators:
 
 {{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} 伺服器名稱指示。[TLS](#def-TLS) 協定下的一個欄位。在 TLS 交握過程中，[使用者代理](#def-user-agent)透過 SNI 告訴伺服器要連接的網域名稱。這使得在同一個 IP 下有許多網域名稱的伺服器，可以回應相對應的[憑證](#def-leaf)。網頁伺服器可以依據客戶端指名的 SNI 回應不同憑證和網頁內容。SNI 並沒有被加密，因此產生了目前正在實驗階段的 ESNI。[維基百科](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
-{{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} 憑證簽名時間戳記。由[憑證透明度紀錄](#def-CT-log)提供，以驗證憑證頒發紀錄的簽名。瀏覽器會在網頁提供憑證，或 [TLS](#def-TLS) 交握時，執行 [CT](#def-CT) 檢查是否有 SCTs，並拒絕連結到不符合憑證透明度紀錄的網站。憑證透明度使得欺騙性或錯誤頒發的憑證更容易被檢驗出來。https://www.certificate-transparency.org/how-ct-works {{% /def %}}
+{{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} 憑證簽名時間戳記。由[憑證透明度紀錄](#def-CT-log)提供，以驗證憑證頒發紀錄的簽名。瀏覽器會在網頁提供憑證，或 [TLS](#def-TLS) 交握時，執行 [CT](#def-CT) 檢查是否有 SCTs，並拒絕連結到不符合憑證透明度紀錄的網站。憑證透明度使得欺騙性或錯誤頒發的憑證更容易被檢驗出來。 https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
 {{% def id="SSL" name="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS) 協定的前身，SSL 目前依然被廣泛地使用。{{% /def %}}
 
-{{% def id="staging" name="Staging" %}} 開發環境。[Let's Encrypt](#def-LE) 提供一個開發環境的 API 讓你測試憑證請求，以避免達到速率限制。由測試環境所申請的憑證 *不會* 被大眾信任。開發環境僅用於測試、除錯以及 ACME 客戶端軟體的開發。{{< link "/docs/staging-environment">}} {{% /def %}}
+{{% def id="staging" name="Staging" %}} 開發環境。[Let's Encrypt](#def-LE) 提供一個開發環境的 API 讓你測試憑證請求，以避免達到速率限制。由測試環境所申請的憑證 *不會* 被大眾信任。開發環境僅用於測試、除錯以及 ACME 客戶端軟體的開發。[/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
 {{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 主體別名。一個憑證擴展中的欄位，用來指名哪些網域可以使用這張憑證。它取代了[通用名稱](#def-CN)欄位，目前通用名稱僅因相容性而添加。一個憑證中可以包含許多的主體別名，讓不同網域名稱使用它。[維基百科](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 

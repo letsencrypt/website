@@ -25,4 +25,4 @@ Huvudprinciperna bakom Let's Encrypt är:
 * <strong>Öppet:</strong> Protokollet för automatiskt utfärdande och förnyelse kommer att publiceras som en öppen standard som andra kan anamma.
 * <strong>Samverkande:</strong> Precis som de underliggande internetprotokollen är Let's Encrypt ett samarbete för att gynna samhället, utom enskilda organisationers kontroll.
 
-Vi har en sida med mer utförlig information om {{<link "hur Let's Encrypt-CA:n fungerar" "/how-it-works" >}}.
+Vi har en sida med mer utförlig information om [hur Let's Encrypt-CA:n fungerar](/how-it-works).

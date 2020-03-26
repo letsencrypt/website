@@ -30,7 +30,7 @@ provedor estiver listado, você pode usar
 conjunto de registros AAC listando as ACs que você gostaria de autorizar.
 
 O domínio identificador da Let's Encrypt é `letsencrypt.org`. Isso é 
-documentado oficialmente {{<link "no nosso Certification Practice Statement (CPS), seção 4.2.1" "/repository" >}} (Inglês).
+documentado oficialmente [no nosso Certification Practice Statement (CPS), seção 4.2.1](/repository) (Inglês).
 
 ## Onde usar o registro
 

@@ -27,7 +27,7 @@ This is big, and we want you to be a part of it. Help us lead the way to a secur
 
 If you'd like to become a corporate sponsor please email [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-If sponsorship is not an option for your organization please consider simply {{<link "donating" "/donate" >}} any amount.
+If sponsorship is not an option for your organization please consider simply [donating](/donate) any amount.
 
 ## Our Organization
 

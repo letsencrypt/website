@@ -10,7 +10,7 @@ date: 2019-12-21
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un type de fichier)
 à partir d'une autorité de certification (AC ou CA pour Certificate Authority en anglais). Let's Encrypt est une autorité de certification. Afin d'obtenir un certificat pour le domaine de votre site Web avec Let's Encrypt, vous devez démontrer
 que vous contrôlez ce domaine. Avec Let's Encrypt, vous faites cela en utilisant un logiciel qui utilise
-le [protocole ACME](https://ietf-wg-acme.github.io/acme/), qui s'exécute généralement
+le [protocole ACME](https://tools.ietf.org/html/rfc8555), qui s'exécute généralement
 chez votre hébergeur.
 
 Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez savoir si
@@ -29,11 +29,11 @@ fonctionne sur de nombreux systèmes d'exploitation et possède une excellente d
 Site Certbot][Certbot] pour obtenir des instructions personnalisées pour votre système d'exploitation et votre serveur Web.
 
 Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer autre chose, il y a
-{{<link "beaucoup plus de clients ACME à choisir" "/docs/client-options" >}}. Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
+[beaucoup plus de clients ACME à choisir](/docs/client-options). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
 
 Si vous expérimentez avec différents clients ACME, utilisez notre
-{{<link "environnement de développement" "/docs/staging-environment" >}} pour éviter d'atteindre les
-{{<link "limites d'accès" "/docs/rate-limits" >}}.
+[environnement de développement](/docs/staging-environment) pour éviter d'atteindre les
+[limites d'accès](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/ "Certbot"
 
