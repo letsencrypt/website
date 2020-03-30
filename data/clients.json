@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-13",
+	"lastmod": "2020-03-26",
 	"categories": [
 		"Bash",
 		"C",
@@ -329,6 +329,7 @@
 		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
+			"acme_v2": "true",
 			"category": "OpenShift"
 		},
 		{
