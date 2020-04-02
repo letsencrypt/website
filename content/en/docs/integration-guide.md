@@ -4,7 +4,7 @@ linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-29
+lastmod: 2020-04-02
 ---
 
 {{< lastmod >}}
@@ -145,6 +145,10 @@ hard failures. For instance, while people can usually click through a browser
 warning about a name mismatch or expired certificate, browsers do not allow such
 a click through for hostnames with an active HSTS header.
 
+# Using ACME
+
+Members of our community have been working on [Best Practices for ACME Client Operations] (https://github.com/https-dev/docs/blob/master/acme-ops.md). As you use an ACME client to get a Let's Encrypt certificate or develop your own ACME client, please review this doc.
+
 # When to Renew
 
 We recommend renewing certificates automatically when they have a third of their
@@ -169,6 +173,10 @@ always running at a specific time. This ensures that Let's Encrypt doesn't
 receive arbitrary spikes of traffic at the top of the hour or minute. Since
 Let's Encrypt needs to provision capacity to meet peak load, reducing traffic
 spikes can help keep our costs down.
+
+# Rate Limits
+
+Let’s Encrypt provides rate limits to ensure fair usage by as many people as possible. We believe these rate limits are high enough to work for most people by default. We’ve also designed them so renewing a certificate almost never hits a rate limit, and so that large organizations can gradually increase the number of certificates they can issue without requiring intervention from Let’s Encrypt. However, it's a good idea to review the various rate limits Let's Encrypt has in place. Should you need a rate limit adjustment, there is a form available on the [rate limits page] (https://letsencrypt.org/docs/rate-limits/) where you can do so.
 
 # Retrying failures
 
