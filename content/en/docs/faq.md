@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2020-04-02
 menu:
   main:
     weight: 30
