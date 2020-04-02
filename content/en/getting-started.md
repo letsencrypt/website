@@ -64,6 +64,10 @@ and you will need to repeat it several times per year as your certificate
 expires. For most people it is better to request Let's Encrypt support from your
 hosting provider, or switch providers if they do not plan to implement it.
 
+# Large Integrations
+
+If you have a large integration of Let's Encrypt certificates, please read our [Integration Guide] (https://letsencrypt.org/docs/integration-guide/).
+
 # Getting Help
 
 If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
