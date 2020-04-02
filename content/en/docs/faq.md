@@ -106,3 +106,7 @@ We don't publish a list of IP addresses we use to validate, and these IP address
 
 Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
 If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+
+## I am trying to set up a large Let's Encrypt integration. Where can I find best practices for how to do this?
+
+We have a doc for that! Check out our [Integration Guide] (https://letsencrypt.org/docs/integration-guide/).
