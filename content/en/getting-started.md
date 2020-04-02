@@ -2,7 +2,7 @@
 title: Getting Started
 slug: getting-started
 top_graphic: 3
-date: 2020-02-11
+date: 2020-04-02
 ---
 
 To enable HTTPS on your website, you need to get a certificate (a type of file)
