@@ -27,7 +27,7 @@ menu:
 
 Nếu bạn muốn trở thành một Doanh nghiệp Tài trợ, vui lòng gửi email [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Nếu tài trợ không phải là một lựa chọn cho tổ chức của bạn, vui lòng xem xét đơn giản {{<link "quyên góp" "/donate">}} bất kỳ số tiền nào.
+Nếu tài trợ không phải là một lựa chọn cho tổ chức của bạn, vui lòng xem xét đơn giản [quyên góp](/donate) bất kỳ số tiền nào.
 
 ## Tổ chức của chúng tôi
 

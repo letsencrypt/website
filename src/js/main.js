@@ -117,4 +117,17 @@ document.addEventListener("keyup", function(e) {
   }
 });
 
+var page = document.querySelector(".page-content");
+if ( page ) {
+  var selector = "h1,h2,h3"; // same selector as css for anchors
+  page.querySelectorAll(selector).forEach(function(el){
+    if ( el.id ) {
+      var icon = document.createElement("a");
+      icon.className = "autoanchor fas fa-link";
+      icon.href = "#"+el.id;
+      el.appendChild(icon);
+    }
+  });
+}
+
 })(this, this.document);

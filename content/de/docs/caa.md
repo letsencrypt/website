@@ -14,7 +14,7 @@ CAA ist eine Art DNS-Datensatz, mit dem Websitebesitzer angeben können, welche 
 
 Wenn Sie sich nicht für CAA interessieren, müssen Sie im Allgemeinen nichts tun (siehe jedoch unten die CAA-Fehler). Wenn Sie mithilfe von CAA einschränken möchten, welche Zertifizierungsstellen Zertifikate für Ihre Domain ausstellen dürfen, müssen Sie einen DNS-Anbieter verwenden, der die Einstellung von CAA-Einträgen unterstützt. Suchen Sie in der [SSLAate CAA-Seite](https://sslmate.com/caa/support) nach einer Liste solcher Anbieter. Wenn Ihr Provider aufgeführt ist, können Sie mit dem [SSLMate CAA Record Generator](https://sslmate.com/caa/) eine Gruppe von CAA-Datensätzen generieren, in denen die CAs aufgelistet sind, die Sie zulassen möchten.
 
-Let's Encrypts identifizierender Domainname für CAA ist `letsencrypt.org`. Dies ist offiziell dokumentiert {{<link "in unserer Certification Practice Statement (CPS), Abschnitt 4.2.1" "/repository" >}}.
+Let's Encrypts identifizierender Domainname für CAA ist `letsencrypt.org`. Dies ist offiziell dokumentiert [in unserer Certification Practice Statement (CPS), Abschnitt 4.2.1](/repository).
 
 ## Wo soll der Datensatz abgelegt werden?
 
@@ -28,7 +28,7 @@ Der [CAA-RFC](https://tools.ietf.org/html/rfc6844) gibt ein zusätzliches Verhal
 
 Da Let's Encrypt CAA-Einträge vor jedem von uns ausgestellten Zertifikat prüft, werden manchmal Fehler angezeigt, selbst wenn die Domains keine CAA-Einträge festgelegt haben. Wenn wir einen Fehler erhalten, können Sie nicht feststellen, ob wir die Ausgabe für die betroffene Domain durchführen dürfen, da CAA-Einträge vorhanden sein könnten, die die Ausgabe verbieten, jedoch aufgrund des Fehlers nicht sichtbar sind.
 
-Wenn Sie CAA-bezogene Fehler erhalten, versuchen Sie es einige Male mit unserer {{<link "Staging-Umgebung" "/docs/staging-environment" >}}, um festzustellen, ob sie temporär oder permanent sind. Wenn sie dauerhaft sind, müssen Sie ein Support-Problem bei Ihrem DNS-Provider oder Switch-Provider einreichen. Wenn Sie nicht sicher sind, wer Ihr DNS-Anbieter ist, fragen Sie Ihren Hosting-Anbieter.
+Wenn Sie CAA-bezogene Fehler erhalten, versuchen Sie es einige Male mit unserer [Staging-Umgebung](/docs/staging-environment), um festzustellen, ob sie temporär oder permanent sind. Wenn sie dauerhaft sind, müssen Sie ein Support-Problem bei Ihrem DNS-Provider oder Switch-Provider einreichen. Wenn Sie nicht sicher sind, wer Ihr DNS-Anbieter ist, fragen Sie Ihren Hosting-Anbieter.
 
 Einige DNS-Anbieter, die mit CAA nicht vertraut sind, antworten zunächst auf Problemberichte mit "Wir unterstützen keine CAA-Einträge". Ihr DNS-Anbieter muss CAA-Einträge nicht speziell unterstützen, es muss nur mit einer NOERROR-Antwort für unbekannte Abfragetypen (einschliesslich CAA) antworten. Die Rückgabe anderer Opcodes, einschliesslich NOTIMP, für nicht erkannte qtypes ist eine Verletzung von [RFC 1035](https://tools.ietf.org/html/rfc1035) und muss behoben werden.
 

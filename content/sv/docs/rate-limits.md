@@ -16,10 +16,9 @@ stora organisationer gradvis kan öka antalet certifikat de ger ut utan att
 behöva handpåläggning från Let's Encrypt.
 
 Om du aktivt utvecklar eller testar en Let's Encrypt-klient, vänligen använd
-vår {{<link "testmiljö" "/docs/staging-environment" >}} istället för
+vår [testmiljö](/docs/staging-environment) istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
-leverantör eller med en stor webbplats, vänligen se vår {{<link
-"integrationsguide" "/docs/integration-guide" >}}.
+leverantör eller med en stor webbplats, vänligen se vår [integrationsguide](/docs/integration-guide).
 
 Huvudgränsen är <a id="certificates-per-registered-domain"></a>**antal
 certifikat per registrerad domän** (50 per vecka). Generellt är en registrerad
@@ -62,7 +61,7 @@ utnyttjats.
 
 Det finns en <a id="failed-validations"></a>**antal misslyckade
 valideringar**-gräns på 5 misslyckaden per konto per domännamn per timme. Denna
-gräns är högre i vår {{<link "testmiljö" "/docs/staging-environment" >}}, så du
+gräns är högre i vår [testmiljö](/docs/staging-environment), så du
 kan använda den miljön för att avlusa anslutningsproblem.
 
 Ändpunkterna "new-reg", "new-authz" och "new-cert" på v1-API:et samt new-nonce",
@@ -77,13 +76,12 @@ Du kan skapa maximalt 10 <a id="accounts-per-ip-address"></a>**konton per
 IP-adress** under 3 timmar. Du kan skapa maximalt 500 **konton per IP-nätverk**
 inom ett IPv6 /48-nät under 3 timmar. Att uppnå någon av dessa gränser är
 väldigt sällsynt och vi rekommenderar att stora integratörer nyttjar en design
-som {{<link "använder ett konto till flera kunder" "/docs/integration-guide" >}}.
+som [använder ett konto till flera kunder](/docs/integration-guide).
 
 Du kan maximalt ha 300 <a id="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient skapar
-auktorisationer utan att fullborda dem. Använd vår {{<link "testmiljö"
-"/docs/staging-environment" >}} om du utvecklar en ACME-klient.
+auktorisationer utan att fullborda dem. Använd vår [testmiljö](/docs/staging-environment) om du utvecklar en ACME-klient.
 
 Användare av API:t ACMEv2 kan skapa maximalt 300 <a id="new-orders"></a>**nya
 beställningar** per konto per 3 timmar. En ny beställning skapas varje gång du
@@ -111,7 +109,7 @@ Observera att de flesta webbhotell inte behöver några förhöjda gränser efte
 det inte finns någon gräns på antalet unika registrerade domäner ni kan utfärda
 certifikat för. Så länge de flesta av era kunder har färre än 2000 underdomäner
 på en registrerad domän behöver ni troligtvis ingen höjning. Se vår
-{{<link "integrationsguide" "/docs/integration-guide" >}} för fler råd.
+[integrationsguide](/docs/integration-guide) för fler råd.
 
 # <a id="clearing-pending"></a>Rensa väntande auktorisationer
 
