@@ -3,7 +3,7 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-02-24
+lastmod: 2020-04-12
 ---
 
 {{< lastmod >}}
@@ -140,6 +140,8 @@ host-based validation like HTTP-01, but want to do it entirely at the
 TLS layer in order to separate concerns. Right now that mainly means
 large hosting providers, but mainstream web servers like Apache and
 Nginx could someday implement this (and [Caddy already does][caddy-tls-alpn]).
+The uacme client includes a standalone [proxying tls-alpn-01 responder][uacme-ualpn]
+which can be integrated with any combination of webserver and ACME client.
 
 Pros:
 
@@ -158,3 +160,4 @@ Cons:
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860
+[uacme-ualpn]: https://github.com/ndilieto/uacme#tls-alpn-01-challenge-support
