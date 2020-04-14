@@ -698,7 +698,10 @@
 			"url": "https://github.com/ndilieto/uacme/",
 			"acme_v2": "true",
 			"category": "C",
-			"comments": "(includes proxying tls-alpn-01 challenge responder)"
+			"comments": "(includes proxying tls-alpn-01 challenge responder)",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "ACMEd",
