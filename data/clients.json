@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-03-26",
+	"lastmod": "2020-04-16",
 	"categories": [
 		"Bash",
 		"C",
@@ -844,6 +844,12 @@
 			"url": "https://www.rhpconsult.com/products.html",
 			"category": "Domino",
 			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Lets Encrypt ACME client",
+			"url": "https://github.com/RogierW/letsencrypt-client",
+			"category": "PHP",
 			"acme_v2": "true"
 		}
 	]
