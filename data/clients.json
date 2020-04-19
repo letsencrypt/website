@@ -165,6 +165,7 @@
 			"url": "https://git.rapsys.eu/acme",
 			"acme_v2": "acme >= 2.0.0",
 			"category": "Perl",
+			"comments": "(Simple json config, autogen keys, issue cert, refresh cert, apache/nginx integration)",
 			"library": "Perl",
 			"challenges": {
 				"HTTP-01": "true",
