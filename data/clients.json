@@ -161,6 +161,19 @@
 			}
 		},
 		{
+			"name": "acme",
+			"url": "https://git.rapsys.eu/acme",
+			"acme_v2": "acme >= 2.0.0",
+			"category": "Perl",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
 			"name": "OpenBSD acme-client",
 			"url": "https://man.openbsd.org/acme-client.1",
 			"acme_v2": "OpenBSD >= 6.6",
