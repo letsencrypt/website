@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-03-26",
+	"lastmod": "2020-04-19",
 	"categories": [
 		"Bash",
 		"C",
@@ -158,6 +158,20 @@
 			"comments": "(Compatible to bash and zsh)",
 			"challenges": {
 				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "acme",
+			"url": "https://git.rapsys.eu/acme",
+			"acme_v2": "acme >= 2.0.0",
+			"category": "Perl",
+			"comments": "(Simple json config, autogen keys, issue cert, refresh cert, apache/nginx integration)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
 			}
 		},
 		{
