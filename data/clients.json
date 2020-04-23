@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-04-19",
+	"lastmod": "2020-04-23",
 	"categories": [
 		"Bash",
 		"C",
@@ -482,6 +482,13 @@
 			"name": "acme-nosudo",
 			"url": "https://github.com/diafygi/acme-nosudo",
 			"category": "Python"
+		},
+		{
+			"name": "Automatoes",
+			"url": "https://github.com/candango/automatoes",
+			"acme_v2": "true",
+			"category": "Python",
+			"comments": "ACME V2 ManuaLE replacement with new features"
 		},
 		{
 			"name": "unixcharles/acme-client",
