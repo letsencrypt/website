@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2020-04-23
 menu:
   main:
     weight: 30
@@ -48,7 +48,8 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here is the Google reporting URL:
 
-[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 If you'd like to read more about our policies and rationale, you can do so here:
 
