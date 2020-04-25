@@ -4,7 +4,7 @@ linkTitle: 常见问题（FAQ）
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2020-02-20
+lastmod: 2020-04-23
 menu:
   main:
     weight: 30
@@ -47,9 +47,10 @@ Let's Encrypt 由一个小团队运营，依靠自动化来降低成本。因此
 
 ## 使用 Let's Encrypt 的网站从事网络钓鱼/恶意软件/诈骗/……，我该怎么办？
 
-我们建议将此类网站报告给 Google 安全浏览和 Microsoft 智能屏幕计划，以便更有效地保护用户。 以下是 Google 的报告网址：
+我们建议将此类网站报告给 Google 安全浏览和 Microsoft 智能屏幕计划，以便更有效地保护用户。 以下是报告网址：
 
-[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 如果您想更多地了解我们的政策和想法，请点击此处：
 
