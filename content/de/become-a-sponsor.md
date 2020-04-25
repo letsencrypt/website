@@ -31,7 +31,7 @@ sichere Zukunft für das Web zu finden.
 
 Wenn Sie Firmensponsor werden möchten, bitte schreiben Sie an [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Wenn das keine Option für Ihre Organisation ist, bitte unterstützen Sie uns mit {{<link "Spenden" "/donate" >}}.
+Wenn das keine Option für Ihre Organisation ist, bitte unterstützen Sie uns mit [Spenden](/donate).
 
 ## Unsere Organisation
 

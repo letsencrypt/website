@@ -26,7 +26,7 @@ Let's Encrypt 将会帮助使加密通信成为 Web 上的默认通信方式。�
 
 如果您想成为公司赞助商，请发送电子邮件至 [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)。
 
-如果赞助不适合您的组织，请考虑{{<link "捐赠" "/donate" >}}任何金额。
+如果赞助不适合您的组织，请考虑[捐赠](/donate)任何金额。
 
 ## 我们的组织
 

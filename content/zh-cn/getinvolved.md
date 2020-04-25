@@ -21,7 +21,7 @@ menu:
 
 ### 客户端软件
 
-[Certbot](https://github.com/certbot/certbot) 是使用 Python 编写的帮助 Web 服务器自动获取证书并配置 HTTPS 的实用程序。Certbot 是我们建议大多数人使用的客户端。此外还有许多其他{{<link "第三方客户端" "/docs/client-options" >}}可用。
+[Certbot](https://github.com/certbot/certbot) 是使用 Python 编写的帮助 Web 服务器自动获取证书并配置 HTTPS 的实用程序。Certbot 是我们建议大多数人使用的客户端。此外还有许多其他[第三方客户端](/docs/client-options)可用。
 
 ### 服务器端 CA 软件
 

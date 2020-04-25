@@ -2,10 +2,8 @@
 title: Kom igång
 slug: getting-started
 top_graphic: 3
-date: 2019-12-21
+date: 2020-02-11
 ---
-
-{{< lastmod >}}
 
 För att aktivera HTTPS på din webbplats behöver du erhålla ett certifikat (en
 typ av fil) från en certifikatutgivare (CA, Certificate Authority). Let's
@@ -30,16 +28,16 @@ ACME-klienten [Certbot]. Den kan automatisera certifikatutfärdande och
 installation utan nertid. Den har även expertlägen för de som inte föredrar
 automatisk konfiguration. Den är lätt att använda, fungerar på många
 operativsystem och har väldigt bra dokumentation. [Besök
-Certbot-sajten][Certbot](engelska) för att få skräddarsydda instruktioner för
+Certbot-sajten][Certbot] (engelska) för att få skräddarsydda instruktioner för
 ditt operativsystem och din webbserver.
 
 Om [Certbot] inte uppfyller dina krav eller om du vill testa något annat så
-finns det {{<link "många fler ACME-klienter att välja bland" "/docs/client-options" >}}. När du väl valt ACME-klient så kika på den
+finns det [många fler ACME-klienter att välja bland](/docs/client-options). När du väl valt ACME-klient så kika på den
 klientens dokumentation för att fortsätta.
 
 Om du experimenterar med olika ACME-klienter, se till att använda vår
-{{<link "testmiljö" "/docs/staging-environment" >}} för att undvika att
-utsättas för {{<link "taktbegränsningar" "/docs/rate-limits" >}}.
+[testmiljö](/docs/staging-environment) för att undvika att
+utsättas för [taktbegränsningar](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

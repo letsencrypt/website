@@ -27,13 +27,13 @@ We now validate domain control from [multiple network perspectives](https://lets
 
 * Enabled: May 15, 2019
 
-We now operate a {{<link "Certificate Transparency log" "/docs/ct-logs" >}}.
+We now operate a [Certificate Transparency log](/docs/ct-logs).
 
 ## TLS ALPN Challenge Support
 
 * Enabled: July 12, 2018
 
-We've specified and implemented a [replacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
+We've specified and implemented a [replacement](https://tools.ietf.org/html/rfc8737) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
 
 ## Embed SCT receipts in certificates
 

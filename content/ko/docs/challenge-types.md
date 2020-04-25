@@ -83,5 +83,5 @@ because it was not secure enough. 이것은 안전이 충분히 확보되지 않
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860
