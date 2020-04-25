@@ -139,8 +139,8 @@ CPSuri ::= IA5String
 ```
 
 PrintableString is a restricted subset of ASCII, allowing alphanumerics,
-spaces, and a specific handful of punctuation: \' () + , - . / : = ?.
-Notably it doesn't include '\*' or '@'. There are no storage-size
+spaces, and a specific handful of punctuation: `' () + , - . / : = ?`.
+Notably it doesn't include `*` or `@`. There are no storage-size
 benefits to more restrictive string types.
 
 Some fields, like [DirectoryString in RFC
@@ -363,7 +363,7 @@ several related specs.
 Other Notation
 ==============
 
-Comments begin with "\--". Fields of a SEQUENCE or SET can be marked
+Comments begin with `--`. Fields of a SEQUENCE or SET can be marked
 OPTIONAL, or they can be marked DEFAULT foo, which means the same thing
 as OPTIONAL except that when the field is absent it should be considered
 to contain "foo." Types with a length (strings, octet and bit strings,
@@ -437,8 +437,8 @@ value consisting of 01 00 01.
 
 Type-length-value is distinguished from delimited encodings like JSON,
 CSV, or XML, where instead of knowing the length of a field up front,
-you read bytes until you hit the expected delimiter (e.g. "}" in JSON,
-or "\</some-tag\>" in XML).
+you read bytes until you hit the expected delimiter (e.g. `}` in JSON,
+or `</some-tag>` in XML).
 
 Tag
 ---
@@ -485,7 +485,7 @@ information, so any universal tag numbers higher than 31 would need to
 use the "high tag number" form, which takes extra bytes. There are a
 small handful of universal tags higher than 31, but they're quite rare.
 
-The two tags marked with a "\*" are always encoded as 0x30 or 0x31,
+The two tags marked with a `*` are always encoded as 0x30 or 0x31,
 because bit 6 is used to indicate whether a field is Constructed vs
 Primitive. These tags are always Constructed, so their encoding has bit
 6 set to 1. See the [Constructed vs Primitive](#constructed-vs-primitive) section for details.
