@@ -155,8 +155,8 @@ persönlichen, nicht kommerziellen Verwendungen, die in den vorstehenden
 Abschnitten gestattet sind.
 
 Die Dateien, die unsere Designmarken enthalten, sind unter der
- [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
- lizenziert.
+[Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+lizenziert.
 Sie unterliegen auch dieser Markenrichtlinie. Dateien finden Sie am Ende
 dieser Richtlinie.
 

@@ -23,7 +23,7 @@ Wenn certbot nicht Ihren Anforderungen entspricht oder Sie einfach etwas anderes
 
 Let's Encrypt unterstützt die ACMEv2 API, welche kompatibel ist mit dem
 [finalisierten ACME Standard](https://tools.ietf.org/html/rfc8555). Wir [bauen langsam die ältere
- ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
+ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
 in 2020 und 2021 ab. Wenn Sie bereits einen dieser Clients verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren. Wenn der von Ihnen verwendete Client unten nicht aufgeführt ist, wenden Sie sich an die Projektbetreuer, oder wechseln Sie zu einem anderen Client.
 
 

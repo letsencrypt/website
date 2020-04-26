@@ -22,7 +22,7 @@ Wenn Sie an der Integration von Let's Encrypt als Provider arbeiten oder
 einer grossen Webseite bitte [lesen Sie unseren Integration Guide](/docs/integration-guide).
 
 Das Hauptlimit ist <a id="certificates-per-registered-domain"></a>**Zertifikate
- pro registrierte Domain** (50 pro Woche).
+pro registrierte Domain** (50 pro Woche).
 Eine registrierte Domain ist, generell gesehen, der Teil der Domain, den Sie
 von einem Domainregistrar gekauft haben. Zum Beispiel, im Namen `www.example.com`,
 ist die registrierte Domain `example.com`. In `new.blog.example.co.uk`,
@@ -32,7 +32,7 @@ berechnen.
 
 Wenn Sie sehr viele Subdomains haben, möchten Sie vielleicht ein einfaches
 Zertifikat kombinieren, bis zu einem Limit von 100 <a id="names-per-certificate"></a>**Namen
- per Zertifikat**. Kombiniert mit dem Limit darüber bedeutet das, Sie können
+per Zertifikat**. Kombiniert mit dem Limit darüber bedeutet das, Sie können
 Zertifikate für bis zu 5000 einzigartige Subdomains pro Woche ausstellen.
 Ein Zertifikat mit mehreren Namen wird oft SAN Zertifikat genannt, 
 oder manchmal UCC Zertifikat. Hinweis: Aus Gründen der Leistung und Zuverlässigkeit
@@ -42,7 +42,7 @@ Verlängerungen werden speziell behandelt: Sie werden nicht auf Ihr
 **Zertifikat pro registrierter Domain**-Limit angerechnet, unterliegen jedoch einem 
 **Duplikat-Zertifikat**-Limit von 5 pro Woche.
 Hinweis: Verlängerungen wurden bis März 2019 gegen Ihr **Zertifikat pro registrierter Domain**-Limit
- angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
+angerechnet, [jetzt jedoch nicht mehr](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
 
 Zum Beispiel, Sie fordern die Ausstellung eines Zertifikates mit dem Namen
 [`www.example.com`, `example.com`], und Sie stellen 4 weitere Anträge auf Zertifikate
@@ -50,8 +50,8 @@ die Woche. Wenn Sie den Hostnamen ändern durch Hinzufügen von [`blog.example.c
 werden Sie wieder in der Lage sein, Ausstellungsanfragen zu senden.
 
 Bei der Erneuerungsbehandlung werden der öffentliche Schlüssel und die angeforderten
- Erweiterungen ignoriert. Eine Zertifikatsausstellung kann auch dann als Erneuerung
- betrachtet werden, wenn Sie einen neuen Schlüssel verwenden.
+Erweiterungen ignoriert. Eine Zertifikatsausstellung kann auch dann als Erneuerung
+betrachtet werden, wenn Sie einen neuen Schlüssel verwenden.
 
 **Sperren von Zertifikaten setzt das Rate Limit nicht zurück**, weil die
 Resourcen zum Ausstellen dieser Zertifikate schon konsumiert sind.
