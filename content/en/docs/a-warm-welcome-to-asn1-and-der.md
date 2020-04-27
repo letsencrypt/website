@@ -86,7 +86,7 @@ the ASN.1 language) and
 the serialization formats DER and BER).
 
 ASN.1's main serialization format is "Distinguished Encoding Rules"
-(DER). They are a variant of "Basic Encoding Rules (BER)" with
+(DER). They are a variant of "Basic Encoding Rules" (BER) with
 canonicalization added. For instance, if a type includes a SET OF, the
 members must be sorted for DER serialization.
 
