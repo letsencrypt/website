@@ -21,11 +21,11 @@ Nous pouvons également utiliser votre aide pour le développement de logiciels.
 
 ### Logiciel client
 
-[Certbot](https://github.com/certbot/certbot) est un utilitaire écrit en Python qui fonctionne avec votre serveur Web pour obtenir automatiquement un certificat et convertir un site Web au HTTPS. Certbot est le client que nous recommandons à la plupart des gens. Beaucoup d'autres [options de client tiers](/docs/client-options) sont disponibles.
+[Certbot](https://github.com/certbot/certbot) est un utilitaire écrit en Python qui fonctionne avec votre serveur Web pour obtenir automatiquement un certificat et convertir un site Web en HTTPS. Certbot est le client que nous recommandons et avec lequel la plupart des gens débutent. Beaucoup d'autres [options de client tiers](/docs/client-options) sont disponibles.
 
 ### Logiciel AC côté serveur
 
-[Boulder](https://github.com/letsencrypt/boulder) est l'implémentation de l'algorithme de chiffrement Let's Encrypt. Il est basé sur le protocole [ACME](https://tools.ietf.org/html/rfc8555) et écrit principalement dans Go. Un bon point de départ est la liste des problèmes ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) et le [guide des contributeurs](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) est l'implémentation de l'autorité de certification (CA) de Let's Encrypt. Il est basé sur le protocole [ACME](https://tools.ietf.org/html/rfc8555) et écrit principalement en Go. Un bon point de départ est la liste des problèmes ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) et le [guide des contributeurs](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 
