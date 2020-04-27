@@ -35,7 +35,7 @@ La [RFC CAA](https://tools.ietf.org/html/rfc6844) spécifie un comportement supp
 
 Étant donné que Let's Encrypt vérifie les enregistrements CAA avant chaque certificat que nous émettons, parfois nous recevons parfois des erreurs avec des domaines qui n'ont défini aucun enregistrement CAA. Quand nous obtenons une erreur, il n'y a aucun moyen de savoir si nous sommes autorisés à émettre pour le domaine affecté, car il pourrait y avoir des enregistrements CAA qui interdisent la délivrance, mais ne sont pas visibles en raison de l'erreur.
 
-Si vous recevez des erreurs liées à l'entrée CAA, essayez à plusieurs reprises sur notre [environnement de qualification](/fr/docs/staging-environment) pour vérifier si elles
+Si vous recevez des erreurs liées à l'entrée CAA, essayez à plusieurs reprises sur notre [environnement de qualification](/docs/staging-environment) pour vérifier si elles
 sont temporaires ou permanents. Si elles sont permanentes, vous devrez ouvrir un incident  auprès de  votre fournisseur de DNS, ou de réseau. Si vous n'êtes pas certain de conaître votre fourniseur DNS, demandez conseil à votre hébergeur.
 
 Certains fournisseurs DNS ne connaissant pas la norme CAA répondent initialement au problème

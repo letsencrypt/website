@@ -1,4 +1,4 @@
- ---
+---
 title: Contact
 slug: contact
 description: Comment nous contacter
@@ -15,17 +15,17 @@ menu:
 
 ## Presse
 
-Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
+Email : [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 ## Parrainage
 
-Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
+Email : [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Liste de diffusion
 
 Pour vous inscrire à notre newsletter (en anglais), [cliquer ici.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
-## Securité
+## Sécurité
 
 **Veuillez ne pas écrire à cette adresse à moins que votre message ne concerne un problème de sécurité avec Let's Encrypt.**
 

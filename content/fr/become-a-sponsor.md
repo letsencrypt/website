@@ -9,7 +9,7 @@ menu:
     parent: donate
 ---
 
-## Pourquoi devenir un sponsor?
+## Pourquoi devenir un sponsor ?
 
 Il est temps pour les communications chiffrées de devenir la norme sur le Web et Let's Encrypt va le réaliser. Nos certificats sont utilisés pour chiffrer des dizaines de millions de sites web, ce qui a quadruplé le taux de croissance de l'utilisation du protocole HTTPS sur le Web depuis son lancement au quatrième trimestre 2015.
 

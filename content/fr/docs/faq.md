@@ -25,13 +25,13 @@ Let's Encrypt est une autorité de certification (CA) mondiale. Nous permettons 
 
 Let's Encrypt propose des certificats de validation de domaine (DV). Nous n'offrons pas de validation d'organisation (OV) ou de validation étendue (EV) principalement parce que nous ne pouvons pas automatiser l'émission de ces types de certificats.
 
-Pour commencer à utiliser Let's Encrypt, veuillez consulter notre page [Mise en route](/fr/getting-started).
+Pour commencer à utiliser Let's Encrypt, veuillez consulter notre page [Mise en route](/getting-started).
 
 ## Combien coûte l'utilisation de Let's Encrypt? Est-ce vraiment gratuit?
 
 Nous ne facturons pas de frais pour nos certificats. Let's Encrypt est un organisme à but non lucratif, notre mission est de créer un Web plus sécurisé et respectueux de la vie privée en favorisant l'adoption généralisée de HTTPS. Nos services sont gratuits et faciles à utiliser afin que chaque site web puisse déployer HTTPS.
 
-Nous avons besoin du soutien de généreux sponsors, donateurs et particuliers afin de fournir nos services gratuitement à travers le monde. Si vous souhaitez nous soutenir, n'hésitez pas a [faire un don](/fr/donate) ou [devenir un sponsor](/fr/become-a-sponsor).
+Nous avons besoin du soutien de généreux sponsors, donateurs et particuliers afin de fournir nos services gratuitement à travers le monde. Si vous souhaitez nous soutenir, n'hésitez pas a [faire un don](/donate) ou [devenir un sponsor](/become-a-sponsor).
 
 Dans certains cas, les intégrateurs (par exemple les hébergeurs) factureront des frais nominaux qui reflètent les coûts administratifs et de gestion qu'ils engagent pour fournir les certificats Let's Encrypt.
 
@@ -39,7 +39,7 @@ Dans certains cas, les intégrateurs (par exemple les hébergeurs) factureront d
 
 Let's Encrypt est géré par une petite équipe et s'appuie sur l'automatisation pour réduire les coûts. Cela étant, nous ne sommes pas en mesure d'offrir une assistance directe à nos souscripteurs. Nous avons cependant d'excellentes options de support:
 
-1. Nous avons une [documentation](/fr/docs) vraiment utile.
+1. Nous avons une [documentation](/docs) vraiment utile.
 2. Nous avons des [forums de support communautaire](https://community.letsencrypt.org/) très actifs. Les membres de notre communauté font un excellent travail en répondant aux questions. Nombre d'entre elles, parmi les plus courantes, ont déjà une réponse.
 
 Voici une [vidéo que nous aimons](https://www.youtube.com/watch?v=Xe1TZaElTAs) concernant le pouvoir d'un important soutien communautaire.
@@ -92,7 +92,7 @@ Oui. L'émission de caractères génériques doit être effectuée via ACMEv2 à
 
 ## Existe-t-il un client Let's Encrypt (ACME) pour mon système d'exploitation?
 
-Il existe une grand nombre de [clients ACME](/fr/docs/client-options) disponibles. Il y a de grandes chances que quelque chose fonctionne correctement sur votre système d'exploitation. Nous vous recommendons de débuter avec [Certbot](https://certbot.eff.org/).
+Il existe une grand nombre de [clients ACME](/docs/client-options) disponibles. Il y a de grandes chances que quelque chose fonctionne correctement sur votre système d'exploitation. Nous vous recommendons de débuter avec [Certbot](https://certbot.eff.org/).
 
 ## Puis-je utiliser une clé privée ou une demande de signature de certificat (CSR) existante?
 

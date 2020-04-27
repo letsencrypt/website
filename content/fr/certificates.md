@@ -10,7 +10,7 @@ lastmod: 2020-02-07
 
 # Certificats racine
 
-Nos racines sont conservées en toute sécurité hors ligne. Nous émettons,  pour les souscruipteurs, des certificats d'entité finale signés par les intermédiaires de la section suivante.
+Nos racines sont conservées en toute sécurité hors ligne. Nous émettons,  pour les souscripteurs, des certificats d'entité finale signés par les intermédiaires de la section suivante.
 
 * Actif
   * [ISRG Root X1 (auto-signé)](/certs/isrgrootx1.pem.txt)
@@ -19,7 +19,7 @@ Nous avons mis en place des sites Web pour tester le chaînage des certificats j
 
 * ISRG Root X1 Certificat valide
   * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
-* ISRG Root X1  Certificat révoqué
+* ISRG Root X1 Certificat révoqué
   * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
 * ISRG Root X1 Certificat expiré
   * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
@@ -56,7 +56,7 @@ le certificat intermédiaire avec le sujet «Let’s Encrypt Authority X3» et �
 
 Le schéma ci-dessous décrit les relations entre nos certificats :
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="Schéma des relations clés de l'ISRG">
 
 # Certificat de signature de l'OCSP
 
@@ -69,11 +69,11 @@ Ce certificat est utilisé pour signer les réponses OCSP pour les intermédiair
 Nous nous engageons à la transparence dans nos opérations et dans les certificats que nous
 émettons. Nous soumettons tous les certificats aux [Logs du Certificate Transparency](https://www.certificate-transparency.org/) au fur et à mesure que nous les émettons. Vous pouvez voir tous les certificats émis par Let's Encrypt via ces liens:
 
-* [Emis par Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
-* [Emis par Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
+* [Émis par Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
+* [Émis par Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
 
 # Plus d'informations
 
 Les clefs privées de l'autorité de certification racine ISRG et des autorités de certification intermédiaires de Let's Encrypt sont stockées sur des modules de sécurité matériels (HSM), qui offrent un degré de protection élevé contre le vol de clefs.
 
-Toutes les clefs de l'ISRG sont actuellement des clefs RSA. Nous [prévoyons de générer des clefs ECDSA](/fr/upcoming-features).
+Toutes les clefs de l'ISRG sont actuellement des clefs RSA. Nous [prévoyons de générer des clefs ECDSA](/upcoming-features).

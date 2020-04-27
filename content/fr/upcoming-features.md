@@ -27,7 +27,7 @@ Désormais nous validons les noms de domaines via des [points réseaux géograph
 
 * Activé : 15 mai 2019
 
-Nous commençons à gérer un [journal de transparence des certificats](/fr/docs/ct-logs).
+Nous commençons à gérer un [journal de transparence des certificats](/docs/ct-logs).
 
 ## Support du challenge TLS ALPN
 

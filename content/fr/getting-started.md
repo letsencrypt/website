@@ -13,9 +13,9 @@ Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez sa
 
 Nous recommandons que la plupart des personnes ayant un accès shell utilisent le client ACME [Certbot]. Il peut automatiser la création et l'installation de certificats sans temps d'arrêt. Il a également des modes experts pour les personnes qui ne veulent pas de configuration automatique. Il est facile à utiliser, fonctionne sur de nombreux systèmes d'exploitation et possède une excellente documentation. [Visitez le Site Certbot][Certbot] pour obtenir des instructions personnalisées pour votre système d'exploitation et votre serveur Web.
 
-Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer une autre solution, il existe [un large choix de clients ACME](/fr/docs/client-options). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
+Si [Certbot] ne répond pas à vos besoins, ou si vous souhaitez essayer une autre solution, il existe [un large choix de clients ACME](/docs/client-options). Une fois que vous avez choisi le client ACME, consultez la documentation de ce client pour continuer.
 
-Si vous testez différents clients ACME, utilisez notre [environnement de qualification](/fr/docs/staging-environment) pour éviter d'atteindre les [limites d'utilisation](/fr/docs/rate-limits).
+Si vous testez différents clients ACME, utilisez notre [environnement de qualification](/docs/staging-environment) pour éviter d'atteindre les [limites d'utilisation](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

@@ -20,7 +20,7 @@ Veuillez noter que l'environement de qualification V2 nécessite un client compa
 
 # Limites d'utilisation
 
-L' environnement de qualification utilise les mêmes limites d'usage que ceux [décris pour l'environnement de production](/fr/docs/rate-limits) avec les exceptions suivantes :
+L' environnement de qualification utilise les mêmes limites d'usage que ceux [décris pour l'environnement de production](/docs/rate-limits) avec les exceptions suivantes :
 
 *  **Certificate par domain Enregistré** la limite est de 30,000 par semaine.
 *  **Certificate Dupliqué** la limite est de 30,000 par semaine.
@@ -34,7 +34,7 @@ The staging environment intermediate certificate (["Fake LE Intermediate X1"](/c
 
 # Transparence des Certificats
 
-L'environnement de qualification envoie des précertificats au serveur Let's Encrypt [Testflume](/fr/docs/ct-logs) et aux journaux de CT de Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) et inclus les SCT dans les certificats émis.
+L'environnement de qualification envoie des précertificats au serveur Let's Encrypt [Testflume](/docs/ct-logs) et aux journaux de CT de Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) et inclus les SCT dans les certificats émis.
 
 # Intégration continue / Tests en cours développement
 
