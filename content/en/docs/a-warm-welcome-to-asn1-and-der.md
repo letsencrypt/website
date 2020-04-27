@@ -115,11 +115,11 @@ INTEGER
 Good old familiar INTEGER. These can be positive or negative. What's
 really unusual about ASN.1 INTEGERs is that they can be arbitrarily big.
 Not enough room in an int64? No problem. This is particularly handy for
-representing things like an RSA modulus, which are much bigger than an
+representing things like an RSA modulus, which is much bigger than an
 int64 (like 2<sup>2048</sup> big). Technically there is a maximum integer in DER
 but it's extraordinarily large: The length of any DER field can be
 expressed as a series of up to 126 bytes. So the biggest INTEGER you can
-represent in DER is 256<sup>(2\*\*1008)</sup>. For a truly unbounded INTEGER you'd
+represent in DER is 256<sup>(2\*\*1008)</sup>-1. For a truly unbounded INTEGER you'd
 have to encode in BER, which allows indefinitely-long fields.
 
 Strings
@@ -181,9 +181,9 @@ about UTCTime and GeneralizedTime.
 
 UTCTime represents a date and time as YYMMDDhhmm\[ss\], with an optional
 timezone offset or "Z" to represent Zulu (aka UTC aka 0 timezone
-offset). For instance the equivalent UTCTimes 820102120000Z and
-820102070000-0500 represent 7am in New York City (UTC-5) on January 2nd,
-1982.
+offset). For instance the UTCTimes 820102120000Z and
+820102070000-0500 both represent the same time: January 2nd, 1982,
+at 7am in New York City (UTC-5) and at 12pm in UTC.
 
 Since UTCTime is ambiguous as to whether it's the 1900's or 2000's, [RFC
 5280
@@ -693,9 +693,9 @@ This defines how the tag should be encoded; it doesn't have to do with
 whether the tag number is explicitly assigned or not (since both
 IMPLICIT and EXPLICIT always go alongside a specific tag number).
 IMPLICIT encodes the field just like the underlying type, but with the
-tag number and class provided in the ASN.1 spec. EXPLICIT encodes the
+tag number and class provided in the ASN.1 module. EXPLICIT encodes the
 field as the underlying type, and then wraps that in an outer encoding.
-The outer encoding has the tag number and class from the ASN.1 spec and
+The outer encoding has the tag number and class from the ASN.1 module and
 additionally has the Constructed bit set.
 
 Here's an example ASN.1 encoding instruction using IMPLICIT:
@@ -768,7 +768,7 @@ This one-byte value (represented in binary) encodes decimal -100:
 10011100 (== decimal 100)
 
 This five-bytes value (represented in binary) encodes decimal
--1099511627775 (i.e. -240 + 1):
+-1099511627775 (i.e. -2<sup>40</sup> + 1):
 
 10000000 00000000 00000000 00000001 (== decimal -1099511627775)
 
@@ -801,8 +801,7 @@ However, that could also be encoded as:
 
 11111111 10000000 (== decimal -128, but an invalid encoding)
 
-Expanding that out, it's -215 + 214 + 213 + 212 + 211 + 210 + 29 + 28 +
-27 == -27 == -128. Note that the 1 in "10000000" was a sign bit in the
+Expanding that out, it's -2<sup>15</sup> + 2<sup>14</sup> + 2<sup>13</sup> + 2<sup>12</sup> + 2<sup>11</sup> + 2<sup>10</sup> + 2<sup>9</sup> + 2<sup>8</sup> + 2<sup>7</sup> == -2<sup>7</sup> == -128. Note that the 1 in "10000000" was a sign bit in the
 single-byte encoding, but means 27 in the two-byte encoding.
 
 This is a generic transform: For any negative number encoded as BER (or
@@ -820,7 +819,7 @@ is always a sign bit, that means serial numbers encoded in DER as 8 bytes can
 be at most 63 bits long. Encoding a 64-bit positive serial number
 requires a 9-byte encoded value (with the first byte being zero).
 
-Here's the encoding of an INTEGER with the value 263+1 (which happens to
+Here's the encoding of an INTEGER with the value 2<sup>63</sup>+1 (which happens to
 be a 64-bit positive number):
 
 ```der
@@ -873,7 +872,8 @@ that's:
 OBJECT IDENTIFIER encoding
 --------------------------
 
-As described above, OIDs are a series of integers. They are always at
+As [described above](#object-identifier), OIDs are conceptually a series of integers.
+They are always at
 least two components long. The first component is always 0, 1, or 2.
 When the first component is 0 or 1, the second component is always less
 than 40. Because of this, the first two components are unambiguously
