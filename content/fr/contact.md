@@ -1,17 +1,17 @@
 ---
-title: Contacts
+title: Contact
 slug: contact
+description: Comment nous contacter
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2020-02-05
 menu:
   main:
-    weight: 80
+    weight: 90
     parent: about
 ---
 
-## Aide
-
-Si vous avez des questions sur l'utilisation de Let's Encrypt, veuillez utiliser [Let's Encrypt Community Support](https://community.letsencrypt.org/).
+**Nous ne fournissons pas d'aide par email. Si vous avez une question veuillez utiliser notre
+[Forum communautaire](https://community.letsencrypt.org). Les adresses email ci-dessous sont reservées au sujet concernant chacune d'elles.** 
 
 ## Presse
 
@@ -21,21 +21,19 @@ Email : [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email : [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Listes de diffusion
+## Liste de diffusion
 
-Pour plus d'informations sur les différentes listes de diffusion techniques, veuillez visiter notre page [s'impliquer](/getinvolved).
-
-Pour vous inscrire à notre bulletin d'information (en anglais), [cliquez ici.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+Pour vous inscrire à notre newsletter (en anglais), [cliquer ici.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
 ## Sécurité
 
-Veuillez ne pas écrire à cette adresse à moins que votre message ne concerne un problème de sécurité avec Let's Encrypt.
+**Veuillez ne pas écrire à cette adresse à moins que votre message ne concerne un problème de sécurité avec Let's Encrypt.**
 
-Email : [security@letsencrypt.org](mailto:security@letsencrypt.org)
+Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### Communication chiffrée
 
-Pour communiquer en toute sécurité avec l'équipe de sécurité, veuillez utiliser notre clé GPG. Elle se compose de plusieurs sous-clés signées par une clé principale hors ligne. Toute version récente de GnuPG supportera ce type de clé hybride. La structure clé actuelle est:
+Pour communiquer de manière sécurisé avec l'équipe sécurité, veuillez utiliser notre clé GPG. Elle se compose de plusieurs sous-clés signées par une clé principale hors ligne. Une version récente de GnuPG supportera ce type de clef hybride. La structure actuelle de la clef est:
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
@@ -46,6 +44,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
 sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
 ```
 
-Vous pouvez télécharger la [clé publique GPG](/security_letsencrypt.org-publickey.asc) ici, ou utiliser votre serveur de clés préféré.
+Vous pouvez télécharger la  [Clef publique GPG](/security_letsencrypt.org-publickey.asc) ici, ou utiliser votre serveur de clef préféré.
 
-L'empreinte de la clé doit correspondre à `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+L'empreinte de la clé doit correspondre à  `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
