@@ -707,7 +707,7 @@ Here's an example ASN.1 encoding instruction using IMPLICIT:
 This would encode "hi" as:
 
 ```der
-0C 02 68 69
+85 02 68 69
 ```
 
 Compare to this ASN.1 encoding instruction using EXPLICIT:
