@@ -109,4 +109,4 @@ If the certificate you requested has all of the necessary authorizations cached 
 
 ## I am trying to set up a large Let's Encrypt integration. Where can I find best practices for how to do this?
 
-We have a doc for that! Check out our [Integration Guide] (https://letsencrypt.org/docs/integration-guide/).
+We have a doc for that! Check out our [Integration Guide](/docs/integration-guide).
