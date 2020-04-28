@@ -147,7 +147,7 @@ a click through for hostnames with an active HSTS header.
 
 # Using ACME
 
-Members of our community have been working on [Best Practices for ACME Client Operations] (https://github.com/https-dev/docs/blob/master/acme-ops.md). As you use an ACME client to get a Let's Encrypt certificate or develop your own ACME client, please review this doc.
+Members of our community have been working on [Best Practices for ACME Client Operations](https://github.com/https-dev/docs/blob/master/acme-ops.md). As you use an ACME client to get a Let's Encrypt certificate or develop your own ACME client, please review this doc.
 
 # When to Renew
 
