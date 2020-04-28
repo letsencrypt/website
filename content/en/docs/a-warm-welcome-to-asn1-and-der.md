@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-04-23
+lastmod: 2020-04-28
 ---
 
 This document provides a gentle introduction to the data structures and
@@ -751,7 +751,7 @@ says:
 The value of a two\'s complement binary number is derived by numbering
 the bits in the contents octets, starting with bit 1 of the last octet
 as bit zero and ending the numbering with bit 8 of the first octet. Each
-bit is assigned a numerical value of 2N, where N is its position in the
+bit is assigned a numerical value of 2<sup>N</sup>, where N is its position in the
 above numbering sequence. The value of the two\'s complement binary
 number is obtained by summing the numerical values assigned to each bit
 for those bits which are set to one, excluding bit 8 of the first octet,
@@ -765,12 +765,12 @@ decimal 50:
 
 This one-byte value (represented in binary) encodes decimal -100:
 
-10011100 (== decimal 100)
+10011100 (== decimal -100)
 
 This five-bytes value (represented in binary) encodes decimal
--1099511627775 (i.e. -2<sup>40</sup> + 1):
+-549755813887 (i.e. -2<sup>39</sup> + 1):
 
-10000000 00000000 00000000 00000001 (== decimal -1099511627775)
+10000000 00000000 00000000 00000000 00000001 (== decimal -549755813887)
 
 BER and DER both require that integers be represented in the shortest
 form possible. That is enforced with this rule:
@@ -782,7 +782,7 @@ form possible. That is enforced with this rule:
 2.  shall not all be zero.
 ```
 
-Rule (1) roughly means: if there are leading zero bytes in the encoding
+Rule (2) roughly means: if there are leading zero bytes in the encoding
 you could just as well leave them off and have the same number. Bit 8 of
 the second byte is important here too because if you want to represent
 certain values, you must use a leading zero byte. For instance, decimal
@@ -793,7 +793,7 @@ certain values, you must use a leading zero byte. For instance, decimal
 That's because a single-byte encoding of 11111111 by itself means -1
 (bit 8 is treated as the sign bit).
 
-Rule (2) is best explained with an example. Decimal -128 is encoded as:
+Rule (1) is best explained with an example. Decimal -128 is encoded as:
 
 10000000 (== decimal -128)
 
