@@ -259,7 +259,7 @@ SEQUENCE and SEQUENCE OF
 Don't let the names fool you: These are two very different types. A
 SEQUENCE is equivalent to "struct" in most programming languages. It
 holds a fixed number of fields of different types. For instance, see the
-Certificate example above.
+[Certificate example below](#bit-string-and-octet-string).
 
 A SEQUENCE OF, on the other hand, holds an arbitrary number of fields of
 a single type. This is analogous to an array or a list in a programming
@@ -319,7 +319,7 @@ CHOICE and ANY
 --------------
 
 CHOICE is a type that can contain exactly one of the types listed in its
-definition. [For instance](https://tools.ietf.org/html/rfc5280#page-111),
+definition. [For instance](https://tools.ietf.org/html/rfc5280#page-117),
 Time can contain exactly one of a UTCTime or a GeneralizedTime:
 
 ```asn1
@@ -396,12 +396,12 @@ which we'll talk about below.
 The Encoding
 ============
 
-ASN.1 is associated with many encodings: BER, DER, PER, XER, and many
+ASN.1 is associated with many encodings: BER, DER, PER, XER, and
 more. Basic Encoding Rules (BER) are fairly flexible. Distinguished
 Encoding Rules (DER) are a subset of BER with
 [canonicalization](https://en.wikipedia.org/wiki/Canonicalization) rules
 so there is only one way to express a given structure. Packed Encoding
-Rules (PER) use fewer bytes to encoding things, so they are useful when
+Rules (PER) use fewer bytes to encode things, so they are useful when
 space or transmission time is at a premium. XML Encoding Rules (XER) are
 useful when for some reason you want to use XML.
 
@@ -428,7 +428,7 @@ INTEGER, or a UTF8String, or a structure, or whatever else.
 |------|--------|----------|
 | 02   | 03     | 01 00 01 |
 
-Next you encounter a length value: a number that tells you how many
+Next you encounter a length: a number that tells you how many
 bytes of data you're going to need to read in order to get the value.
 Then, of course, comes the bytes containing the value itself. As an
 example, the hex bytes 02 03 01 00 01 would represent an INTEGER (tag 02
@@ -507,7 +507,7 @@ are distinguished by bits 8 and 7:
 
 Specs mostly use tags in the universal class, since they provide the
 most important building blocks. For instance, the serial number in a
-certificate is encoded in a plain ol' INTEGER, tag number 0x13. But
+certificate is encoded in a plain ol' INTEGER, tag number 0x02. But
 sometimes a spec needs to define tags in the context-specific class to
 disambiguate entries in a SET or SEQUENCE that defines optional entries,
 or to disambiguate a CHOICE with multiple entries that have the same
