@@ -66,7 +66,7 @@ hosting provider, or switch providers if they do not plan to implement it.
 
 # Large Integrations
 
-If you have a large integration of Let's Encrypt certificates, please read our [Integration Guide] (https://letsencrypt.org/docs/integration-guide/).
+If you have a large integration of Let's Encrypt certificates, please read our [Integration Guide](/docs/integration-guide).
 
 # Getting Help
 
