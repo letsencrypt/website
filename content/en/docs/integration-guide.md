@@ -176,7 +176,7 @@ spikes can help keep our costs down.
 
 # Rate Limits
 
-Let’s Encrypt provides rate limits to ensure fair usage by as many people as possible. We believe these rate limits are high enough to work for most people by default. We’ve also designed them so renewing a certificate almost never hits a rate limit, and so that large organizations can gradually increase the number of certificates they can issue without requiring intervention from Let’s Encrypt. However, it's a good idea to review the various rate limits Let's Encrypt has in place. Should you need a rate limit adjustment, there is a form available on the [rate limits page] (https://letsencrypt.org/docs/rate-limits/) where you can do so.
+Let’s Encrypt provides rate limits to ensure fair usage by as many people as possible. We believe these rate limits are high enough to work for most people by default. We’ve also designed them so renewing a certificate almost never hits a rate limit, and so that large organizations can gradually increase the number of certificates they can issue without requiring intervention from Let’s Encrypt. However, it's a good idea to review the various rate limits Let's Encrypt has in place. Should you need a rate limit adjustment, there is a form available on the [rate limits page](/docs/rate-limits) where you can do so.
 
 # Retrying failures
 
