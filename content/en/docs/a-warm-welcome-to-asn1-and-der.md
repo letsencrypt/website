@@ -83,7 +83,9 @@ standards are
 [X.680](https://www.itu.int/rec/T-REC-X.680) (defining
 the ASN.1 language) and
 [X.690](https://www.itu.int/rec/T-REC-X.690) (defining
-the serialization formats DER and BER).
+the serialization formats DER and BER). Earlier versions of those standards were
+[X.208](https://www.itu.int/rec/T-REC-X.208/en) and
+[X.209](https://www.itu.int/rec/T-REC-X.209/en), respectively.
 
 ASN.1's main serialization format is "Distinguished Encoding Rules"
 (DER). They are a variant of "Basic Encoding Rules" (BER) with
@@ -179,7 +181,7 @@ Again, lots of time types: UTCTime, GeneralizedTime, DATE, TIME-OF-DAY,
 DATE-TIME and DURATION. For HTTPS certificates you only have to care
 about UTCTime and GeneralizedTime.
 
-UTCTime represents a date and time as YYMMDDhhmm\[ss\], with an optional
+UTCTime represents a date and time as YYMMDDhhmm[ss], with an optional
 timezone offset or "Z" to represent Zulu (aka UTC aka 0 timezone
 offset). For instance the UTCTimes 820102120000Z and
 820102070000-0500 both represent the same time: January 2nd, 1982,
@@ -858,15 +860,27 @@ Date and Time encoding
 
 UTCTime and GeneralizedTime are actually encoded like strings,
 surprisingly! As described above in the "Types" section, UTCTime
-represents dates in the format YYMMDDhhmmss-TZ. Generalized time uses a
-four-digit year YYYY in place of YY.
+represents dates in the format YYMMDDhhmmss. GeneralizedTime uses a
+four-digit year YYYY in place of YY. Both have an optional timezone offset or
+"Z" (Zulu) to indicate no timezone offset from UTC.
 
 For instance, December 15, 2019 at 19:02:10 in the PST time zone (UTC-8)
-is represented in a UTCTime as: 191215190210-0800. Encoded in DER,
+is represented in a UTCTime as: 191215190210-0800. Encoded in BER,
 that's:
 
 ```der
 17 11 31 39 31 32 31 35 31 39 30 32 31 30 2d 30 38 30 30
+```
+
+For BER encoding, seconds are optional in both UTCTime and GeneralizedTime, and
+timezone offsets are allowed. However, DER (along with RFC 5280) specify that
+seconds must be present, fractional seconds must not be present, and the time must
+be expressed as UTC with the "Z" form.
+
+The above date would be encoded in DER as:
+
+```der
+17 0d 31 39 31 32 31 36 30 33 30 32 31 30 5a
 ```
 
 OBJECT IDENTIFIER encoding
