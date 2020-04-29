@@ -880,7 +880,7 @@ offset must not be used.
 The above date would be encoded in DER as:
 
 ```der
-17 0d 31 39 31 32 31 35 31 39 30 32 31 30 5a
+17 0d 31 39 31 32 31 36 30 33 30 32 31 30 5a
 ```
 
 OBJECT IDENTIFIER encoding
