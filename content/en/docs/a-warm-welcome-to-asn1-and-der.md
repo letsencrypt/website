@@ -181,7 +181,7 @@ Again, lots of time types: UTCTime, GeneralizedTime, DATE, TIME-OF-DAY,
 DATE-TIME and DURATION. For HTTPS certificates you only have to care
 about UTCTime and GeneralizedTime.
 
-UTCTime represents a date and time as YYMMDDhhmmss, with an optional
+UTCTime represents a date and time as YYMMDDhhmm[ss], with an optional
 timezone offset or "Z" to represent Zulu (aka UTC aka 0 timezone
 offset). For instance the UTCTimes 820102120000Z and
 820102070000-0500 both represent the same time: January 2nd, 1982,
