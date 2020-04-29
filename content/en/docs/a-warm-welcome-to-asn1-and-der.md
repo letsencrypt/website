@@ -874,8 +874,8 @@ that's:
 
 For BER encoding, seconds are optional in both UTCTime and GeneralizedTime, and
 timezone offsets are allowed. However, DER (along with RFC 5280) specify that
-seconds must be present, fractional seconds must not be present, and a timezone
-offset must not be used.
+seconds must be present, fractional seconds must not be present, and the time must
+be expressed as UTC with the "Z" form.
 
 The above date would be encoded in DER as:
 
