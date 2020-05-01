@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-04-23",
+	"lastmod": "2020-05-01",
 	"categories": [
 		"Bash",
 		"C",
@@ -25,6 +25,7 @@
 		"Windows / IIS"
 	],
 	"libraries": [
+		"4D",
 		"C++",
 		"D",
 		"Delphi",
@@ -866,6 +867,19 @@
 			"category": "Domino",
 			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
 			"acme_v2": "true"
+		},
+		{
+			"name": "acme component",
+			"url": "https://github.com/blegay/acme_component",
+			"acme_v2": "true",
+			"comments": "ACME Client v2 for 4D v18+",
+			"library": "4D",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
 		}
 	]
 }
