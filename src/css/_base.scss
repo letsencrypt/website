@@ -11,6 +11,10 @@ dl, dd, ol, ul, figure {
     text-rendering: optimizeLegibility;
 }
 
+body:lang(he),
+body:lang(fa) {
+    direction: rtl;
+}
 /**
  * Basic styling
  */
@@ -175,6 +179,12 @@ code {
     background-color: #eef;
 }
 
+pre:lang(he),
+code:lang(he),
+pre:lang(fa),
+code:lang(fa) {
+    direction:ltr;
+}
 code {
     padding: 1px 5px;
 }

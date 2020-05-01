@@ -21,6 +21,10 @@
     position: relative;
 }
 
+.site-title:lang(he),
+.site-title:lang(fa) {
+   float: right;
+}
 .site-title {
     margin-left: 0px;
     padding-left: 0px;
@@ -157,6 +161,10 @@
     background: #E1DCD2 url(/images/3.jpg) no-repeat center center;
     background-size: cover;
 
+    div.container:lang(he),
+    div.container:lang(fa) {
+       text-align: right;
+    }
     div.container {
         @extend .wrapper;
         text-align:left;
