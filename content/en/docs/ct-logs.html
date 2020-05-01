@@ -50,7 +50,7 @@ $ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r
 done
 </pre>
 
-<p>Submitting certificates to a CT log is typically handled by certificate authorities. If you'd like to expiriment with this, begin by retrieving an arbitrary PEM encoded certificate from our favorite website. Copy and paste the following block into your terminal.</p>
+<p>Submitting certificates to a CT log is typically handled by certificate authorities. If you'd like to experiment with this, begin by retrieving an arbitrary PEM encoded certificate from our favorite website. Copy and paste the following block into your terminal.</p>
 <pre>
 $ echo | \
 openssl s_client \

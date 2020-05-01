@@ -1,4 +1,4 @@
---- 
+---
 title: Integrationshandbuch
 linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
