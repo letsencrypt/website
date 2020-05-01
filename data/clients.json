@@ -882,7 +882,7 @@
 			}
 		},
 		{
-			"name": "Lets Encrypt ACME client",
+			"name": "RW ACME client",
 			"url": "https://github.com/RogierW/letsencrypt-client",
 			"category": "PHP",
 			"acme_v2": "true"
