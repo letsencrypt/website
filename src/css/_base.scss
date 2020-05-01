@@ -273,7 +273,15 @@ pre {
 .justify {
     text-align: justify;
 }
+.tal:lang(he),
+.tal:lang(fa) {
+    text-align: right;
+}
 .tal {
+    text-align: left;
+}
+.tar:lang(he),
+.tar:lang(fa) {
     text-align: left;
 }
 .tar {
@@ -283,7 +291,15 @@ pre {
     margin-left: 20%;
     margin-right: 20%;
 }
+.mr1m:lang(he),
+.mr1m:lang(fa) {
+    margin-left: 1em;
+}
 .mr1m {
+    margin-right: 1em;
+}
+.ml1m:lang(he),
+.ml1m:lang(fa) {
     margin-right: 1em;
 }
 .ml1m {
