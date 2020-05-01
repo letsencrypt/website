@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: תיעוד
 top_graphic: 1
 menu: "main"
 menu:
