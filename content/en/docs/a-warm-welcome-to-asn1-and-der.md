@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-04-28
+lastmod: 2020-04-30
 ---
 
 This document provides a gentle introduction to the data structures and
@@ -1039,7 +1039,7 @@ An OCTET STRING is encoded as the bytes it contains. Here's an example
 of an OCTET STRING containing the bytes 03, 02, 06, and A0:
 
 ```der
-04 04 03 02 05 A0
+04 04 03 02 06 A0
 ```
 
 CHOICE and ANY encoding
