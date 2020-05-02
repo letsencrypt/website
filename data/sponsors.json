@@ -52,13 +52,13 @@
       {"name":"Umbraco","url":"https://umbraco.com/","image":"umbraco-logo.png"},
       {"name":"Lime Technology (Unraid)","url":"https://unraid.net/","image":"unraid-logo.png"},
       {"name":"Keenetic","url":"https://keenetic.com/","image":"keenetic-logo.png"},
-      {"name":"Rainway","url":"https://rainway.io/","image":"rainway-logo.png"},
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
       {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
       {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
       {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
+      {"name":"IBM","url":"https://www.ibm.com/","image":"ibm-logo.png"},
       {"name":"Livesport","url":"https://www.livesport.eu/","image":"livesport-logo.png"},
       {"name":"ProPrivacy","url":"https://proprivacy.com/","image":"proprivacy-logo.png"},
       {"name":"Nazwa.pl","url":"https://www.nazwa.pl/","image":"nazwa-logo.png"},
@@ -70,7 +70,6 @@
       {"name":"Nabu Casa","url":"https://www.nabucasa.com/","image":"nabu-casa-logo.png"},
       {"name":"Wix","url":"https://www.wix.com/","image":"wix-logo.png"},
       {"name":"Engine Forex","url":"https://engineforex.com/","image":"engine-forex-logo.png"},
-      {"name":"Zeit","url":"https://zeit.co/","image":"zeit-logo.png"},
       {"name":"CodeinWP","url":"https://www.codeinwp.com/","image":"codeinwp-logo.png"},
       {"name":"Hosting Review","url":"https://hosting.review/","image":"hostingreview-logo.png"},
       {"name":"Heroku","url":"https://www.heroku.com/","image":"heroku-logo.png"},
@@ -85,6 +84,7 @@
       {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"},
       {"name":"VMWare","url":"https://www.vmware.com/","image":"vmware-logo.png"},
       {"name":"one.com","url":"https://www.one.com/","image":"one-com-logo.png"},
-      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"}
+      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
+      {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"}
 ]
 }

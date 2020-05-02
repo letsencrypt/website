@@ -8,7 +8,7 @@ command = "hugo -d public"
 HUGO_VERSION = "0.67.1"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
-
+# headers must be the same than in config/_default/server.toml (for Hugo)
 [[headers]]
 for = "/*"
 [headers.values]

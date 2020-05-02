@@ -6,7 +6,7 @@ beforeColon = "&nbsp;"
 weight = 300
 description = """
   Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte
-  apporté par l'<a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>, organisme à but non lucratif.
+  mise à votre disposition par la société d'utilité publique <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "FR"

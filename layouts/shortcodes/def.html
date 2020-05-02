@@ -36,6 +36,7 @@ Notes:
 -->
 
 <p class="definition">
+	<a href="#def-{{.Get "id" }}">
 	{{- if and (.Get "abbr") (eq (.Get "abbr_first") "1") -}}
 			<dfn id="def-{{.Get "id" }}"><abbr lang="en">{{ .Get "abbr" }}</abbr></dfn>
 				{{- if .Get "name" }} ({{.Get "name" }}{{ if .Get "english" }} - <i lang="en">{{ .Get "english" }}</i>{{ end }})
@@ -58,5 +59,6 @@ Notes:
 			{{- end -}}
 		{{- end -}}
 	{{- end -}}
+	</a>
 	{{ .Site.Params.beforeColon | safeHTML }}: {{ .Inner }}
 </p>
