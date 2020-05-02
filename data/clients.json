@@ -883,7 +883,7 @@
 		},
 		{
 			"name": "RW ACME client",
-			"url": "https://github.com/RogierW/letsencrypt-client",
+			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
 		}
