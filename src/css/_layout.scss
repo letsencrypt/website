@@ -21,10 +21,10 @@
     position: relative;
 }
 
-.site-title:lang(he),
-.site-title:lang(fa) {
+.site-title:dir(rtl) {
    float: right;
 }
+
 .site-title {
     margin-left: 0px;
     padding-left: 0px;
@@ -161,8 +161,7 @@
     background: #E1DCD2 url(/images/3.jpg) no-repeat center center;
     background-size: cover;
 
-    div.container:lang(he),
-    div.container:lang(fa) {
+    div.container:dir(rtl) {
        text-align: right;
     }
     div.container {
@@ -268,8 +267,7 @@
 }
 
 .contact-list,
-.social-media-list:lang(he),
-.social-media-list:lang(fa) {
+.social-media-list:dir(rtl) {
     direction: ltr;
     text-align: right;
 }
@@ -347,11 +345,8 @@
     font-size: 20px;
 }
 
-.post-list:lang(he),
-.post-list:lang(fa) {
-    direction: ltr;
-}
 .post-list {
+    direction: ltr;
     margin-left: 0;
     list-style: none;
 

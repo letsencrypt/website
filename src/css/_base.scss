@@ -11,10 +11,6 @@ dl, dd, ol, ul, figure {
     text-rendering: optimizeLegibility;
 }
 
-body:lang(he),
-body:lang(fa) {
-    direction: rtl;
-}
 /**
  * Basic styling
  */
@@ -173,18 +169,13 @@ blockquote {
  */
 pre,
 code {
+    direction:ltr;
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
 }
 
-pre:lang(he),
-code:lang(he),
-pre:lang(fa),
-code:lang(fa) {
-    direction:ltr;
-}
 code {
     padding: 1px 5px;
 }
@@ -273,15 +264,13 @@ pre {
 .justify {
     text-align: justify;
 }
-.tal:lang(he),
-.tal:lang(fa) {
+.tal:dir(rtl) {
     text-align: right;
 }
 .tal {
     text-align: left;
 }
-.tar:lang(he),
-.tar:lang(fa) {
+.tar:dir(rtl) {
     text-align: left;
 }
 .tar {
@@ -291,15 +280,13 @@ pre {
     margin-left: 20%;
     margin-right: 20%;
 }
-.mr1m:lang(he),
-.mr1m:lang(fa) {
+.mr1m:dir(rtl) {
     margin-left: 1em;
 }
 .mr1m {
     margin-right: 1em;
 }
-.ml1m:lang(he),
-.ml1m:lang(fa) {
+.ml1m:dir(rtl) {
     margin-right: 1em;
 }
 .ml1m {
