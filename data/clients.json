@@ -880,6 +880,12 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
+		},
+		{
+			"name": "RW ACME client",
+			"url": "https://github.com/RogierW/rw-acme-client",
+			"category": "PHP",
+			"acme_v2": "true"
 		}
 	]
 }
