@@ -1,8 +1,7 @@
 /**
  * Site nav
  */
-.site-nav:lang(he),
-.site-nav:lang(fa) {
+.site-nav:dir(rtl) {
     float: left;
 }
 .site-nav {
@@ -14,7 +13,7 @@
     // and get rid of the top margin. Also eliminate left margin
     // on first menu item because of left justification.
     @media screen and (max-width: 1050px) {
-      :lang(he), :lang(fa) {
+      :dir(rtl) {
            float: right;
            clear: right;
       }
@@ -80,8 +79,7 @@ a.pure-menu-link:hover {
 
 // Mobile nav styles
 @include media-query($on-palm) {
-    #menuIcon:lang(he),
-    #menuIcon:lang(fa) {
+    #menuIcon:dir(rtl) {
         float: left;
     }
     #menuIcon {
@@ -96,8 +94,7 @@ a.pure-menu-link:hover {
         cursor: pointer;
         margin-top: 30px;
     }
-    .site-nav:lang(he),
-    .site-nav:lang(fa) {
+    .site-nav:dir(rtl) {
         text-align: right;
         left: 18px;
         left: 0;
@@ -130,8 +127,7 @@ a.pure-menu-link:hover {
         content: "\25BE";
     }
 
-    .pure-menu-children:lang(he),
-    .pure-menu-children:lang(fa) {
+    .pure-menu-children:dir(rtl) {
         right: 0;
         margin-right: 20px;
     }

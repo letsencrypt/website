@@ -16,4 +16,4 @@ install:
   - npm install
   - npm run build
   - npm test
-  - html5validator --root public --blacklist documents donate --also-check-css --format text
+  - html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate --also-check-css --format text

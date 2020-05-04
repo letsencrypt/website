@@ -38,7 +38,7 @@ API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md
 его с помощью учетных данных аккаунта. Certbot попытается сделать 
 это по умолчанию. Например:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -60,7 +60,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 Вам также понадобится копия закрытого ключа в PEM-формате. Имея ее, 
 можно аннулировать сертификат подобным образом:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -84,7 +84,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ошибке выпуска, при этом другое, существующее доменное имя будет подтверждено. 
 Для этого сделайте следующее:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -95,6 +95,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 можно скачать сертификат с [crt.sh](https://crt.sh/),
 после чего продолжить процесс аннулирования, как если бы его выпустили вы:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

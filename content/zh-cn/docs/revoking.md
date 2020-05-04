@@ -18,7 +18,7 @@ lastmod: 2020-02-22
 
 如果最初是您自己颁发了证书，并且您仍然可以控制用于颁发该证书的帐户，则可以使用您的帐户凭据吊销该证书。Certbot 将默认尝试使用该方法吊销证书。例如：
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -30,7 +30,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 
 您还需要 PEM 格式的私钥副本。当您拥有这些文件后，您可以像这样吊销证书：
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -38,7 +38,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 
 如果有人入侵了您的主机或 DNS 后颁发了证书，那么您一旦重新获得控制权，就会想要吊销该证书。要吊销证书，Let's Encrypt 将需要确保您控制该证书中的域名（否则人们可以在未经许可的情况下吊销彼此的证书）！为了验证您对该域名的控制权，您需要使用和您申请 Let's Encrypt 证书时相同的流程：您可以在[添加一条 DNS TXT 记录](https://tools.ietf.org/html/rfc8555#section-8.4)或在[HTTP 服务器上放置指定文件](https://tools.ietf.org/html/rfc8555#section-8.3)。通常情况下，ACME 客户端将为您处理这些工作。然而，大多数 ACME 客户端将验证控制权和颁发证书这两个操作捆绑在一起，因此若要验证控制权您必须尝试颁发新证书。若您不需要颁发的新证书，您可以将其吊销或删除证书私钥。若您完全不想颁发一张新的证书，您可以尝试在请求中添加一个不存在的域名，这将导致证书颁发失败，但是仍旧能够证明您对需要吊销的域名的控制权。要这样做，请运行：
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -46,6 +46,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 
 一旦您验证了要吊销的证书中所有域名的控制权，您就可以从 [crt.sh](https://crt.sh/) 中下载证书，然后和您自己颁发了证书的情况一样，使用如下命令吊销证书：
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

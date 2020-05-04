@@ -42,7 +42,7 @@ Kontrolle über das Konto, welches Sie benutzten, haben, können Sie Ihre
 Kontoanmeldeinformationen benutzen, welches das Zertifikat ausgestellt hat.
 Certbot wird das standardmässig machen. Beispiel:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -64,7 +64,7 @@ so finden Sie es und können das Zertifikat von einem Logmonitor herunterladen, 
 Sie brauchen auch eine Kopie des privaten Schlüssels im PEM Format. Wenn Sie alles
 zusammen haben, können Sie das Zertifikat sperren:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -90,7 +90,7 @@ eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt,
 dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen
 existierenden Domainnamen. Um das zu machen, führen Sie aus:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -104,6 +104,6 @@ Zertifikat herunterladen von [crt.sh](https://crt.sh/),
 und fahren Sie mit dem Sperren des Zertifikats fort, als wenn Sie
 es ausgestellt haben:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

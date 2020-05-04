@@ -38,7 +38,7 @@ Om det var du som utfärdade certifikatet och du fortfarande har kontroll över
 kontot som användes för att göra det, kan du återkalla certifikatet med hjälp av
 dina inloggningsuppgifter. Certbot försöker detta som standard. Exempel:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${DIN_DOMÄN}/cert1.pem
 ```
 
@@ -60,7 +60,7 @@ kan hitta och ladda ner certifikat från en loggövervakare såsom
 Du behöver också en kopia av den privata nyckeln i PEM-format. När du väl har
 dessa saker kan du återkalla certifikatet så här:
 
-```
+```bash
 certbot revoke --cert-path /SÖKVÄG/TILL/cert.pem --key-path /SÖKVÄG/TILL/nyckel.pem
 ```
 
@@ -84,7 +84,7 @@ certifikat över huvud taget så kan du inkludera ett icke-existerande domännam
 på din kommandorad, vilket kommer resultera i att utfärdandet misslyckas men
 domännamnen som finns valideras ändå. För att göra detta, kör:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${DIN_DOMÄN} -d icke-existerande.${DIN_DOMÄN}
 ```
 
@@ -97,6 +97,6 @@ När du väl har validerat kontrollen över domännamnen i certifikatet du vill
 [crt.sh](https://crt.sh/) och sen fortsätta återkallelsen som om du själv hade
 utfärdat det:
 
-```
+```bash
 certbot revoke --cert-path /SÖKVÄG/TILL/nerladdat-cert.pem
 ```
