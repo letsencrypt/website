@@ -886,6 +886,13 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "TekCERT",
+			"url": "https://www.kaplansoft.com/tekcert/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI)",
+			"acme_v2": "true"
 		}
 	]
 }
