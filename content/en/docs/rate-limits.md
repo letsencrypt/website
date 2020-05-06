@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-03-05
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -87,7 +87,7 @@ Please utilize our [staging environment](/docs/staging-environment) if you’re
 developing an ACME client. Exceeding the Pending Authorizations limit is
 reported with the error message `too many currently pending authorizations`.
 
-For users of the ACME v2 API you can create a maximum of 300 <a
+For users of the ACME v2 API you can create a maximum of 1000 <a
 id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request. Exceeding the New Orders
 limit is reported with the error message `too many new orders recently`.
 
