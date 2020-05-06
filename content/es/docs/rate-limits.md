@@ -3,7 +3,7 @@ title: Limitaciones
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -37,7 +37,7 @@ cree un máximo de 500 **Cuentas por rango de IP** dentro de un IPv6/48 en un pe
 
 Puede tener un máximo de 300 <a id="pending-authorizations"> </a> **Autorizaciones pendientes** en su cuenta. Alcanzar este límite de velocidad es raro y ocurre con mayor frecuencia cuando se desarrollan clientes ACME. Por lo general, significa que su cliente está creando autorizaciones y no las está cumpliendo. Utilice nuestro [entorno de pruebas](/docs/staging-environment) si está desarrollando un cliente ACME.
 
-Los usuarios de la API ACME v2, puede crear un máximo de 300 <a id="new-orders"> </a> **Nuevos pedidos** por cuenta en un período de 3 horas.
+Los usuarios de la API ACME v2, puede crear un máximo de 1000 <a id="new-orders"> </a> **Nuevos pedidos** por cuenta en un período de 3 horas.
 
 # <a id="overrides"></a>Anulaciones
 
