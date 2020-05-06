@@ -3,7 +3,7 @@ title: 速率限制
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -35,7 +35,7 @@ id="overall-requests"></a>**速率限制總和**為每秒 20 次請求。"/direc
 
 你的帳號最多能有 300 個**待驗證授權**。這種速率限制很難達到，通常是在 ACME 客戶端開發時才會遇到。會達到這個速率限制，通常表示你的客戶端正在建立授權，但是沒有驗證授權。如果你正在開發 ACME 客戶端，請使用我們的[測試環境](/docs/staging-environment)。
 
-對於使用 ACME v2 API 的使用者，每 3 個小時最多可以建立 300 個<a id="new-orders"></a>**新請求**。
+對於使用 ACME v2 API 的使用者，每 3 個小時最多可以建立 1000 個<a id="new-orders"></a>**新請求**。
 
 # <a id="overrides"></a>超過限制
 
