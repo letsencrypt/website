@@ -3,7 +3,7 @@ title: 速率限制
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-02-24
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -34,7 +34,7 @@ V1 API的"new-reg"、"new-authz"和"new-cert"端点和V2 API的"new-nonce"、"ne
 
 您的帐户最多可以有 300 个<a id="pending-authorizations"></a>**待验证授权**。达到此速率限制很少见，并且通常在开发 ACME 客户端时发生。到达此限制通常意味着您的客户正在创建授权但没有验证授权。如果您正在开发 ACME 客户端，请使用我们的[测试环境](/docs/staging-environment)。
 
-对于 ACME v2 API 的用户，每 3 小时最多可为每个帐户创建 300 个<a id="new-orders"></a>**新订单**。 每次您从Boulder CA请求证书时，都会创建一个新订单，这意味着每个证书请求中都会产生一个新订单。
+对于 ACME v2 API 的用户，每 3 小时最多可为每个帐户创建 1000 个<a id="new-orders"></a>**新订单**。 每次您从Boulder CA请求证书时，都会创建一个新订单，这意味着每个证书请求中都会产生一个新订单。
 
 # <a id="overrides"></a>覆盖限制
 
