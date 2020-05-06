@@ -3,7 +3,7 @@ title: Limites d'utilisation
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-03-05
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -38,7 +38,7 @@ Vous pouvez créer un maximum de 10 <a id="accounts-per-ip-address"> </a> **Comp
 
 Vous pouvez avoir un maximum de 300 <a id="pending-authorizations"> </a> **Autorisations en attente** sur votre compte. Atteindre cette limite d'utilisation est rare et se produit le plus souvent lors du développement de clients ACME. Cela signifie généralement que votre client crée des autorisations et ne les exécute pas. Veuillez utiliser notre [environnement de qualification](/docs/staging-environment) si vous développez un client ACME. Le dépassement de la limite des autorisations en attente est signalé avec le message d'erreur  `too many currently pending authorizations` («trop d'autorisations actuellement en attente»).
 
-Pour les utilisateurs de l'API ACME v2, vous pouvez créer un maximum de 300 <a id ="new-Orders"> </a> **Nouvelles commande** par compte toutes les 3 heures. Une nouvelle commande est créée chaque fois que vous demandez un certificat à l'autorité de certification Boulder, ce qui signifie qu'une nouvelle commande est produite dans chaque demande de certificat. Dépasser la limite de Nouvelles commandes est signalé avec le message d'erreur `too many new orders recently` («trop de nouvelles commandes récemment»).
+Pour les utilisateurs de l'API ACME v2, vous pouvez créer un maximum de 1000 <a id ="new-Orders"> </a> **Nouvelles commande** par compte toutes les 3 heures. Une nouvelle commande est créée chaque fois que vous demandez un certificat à l'autorité de certification Boulder, ce qui signifie qu'une nouvelle commande est produite dans chaque demande de certificat. Dépasser la limite de Nouvelles commandes est signalé avec le message d'erreur `too many new orders recently` («trop de nouvelles commandes récemment»).
 
 # <a id="overrides"></a>Overrides
 
