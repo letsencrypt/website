@@ -3,7 +3,7 @@ title: レート制限
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -35,7 +35,7 @@ Let's Encrypt は、できるだけ多くの人がフェアにサービスを利
 <a id="pending-authorizations"></a>**認証の待機**は、アカウントごとに最大で 300 まで可能です。この制限にかかることは稀ですが、ACME クライアントの開発時には頻繁に発生します。というのも、通常クライアントの開発では、認証を作成しても実際に証明書を発行しないからです。そのため、ACME クライアントの開発時には、[ステージング環境](/docs/staging-environment)を使用してください。
 
 ACME v2 API のユーザーは、1アカウントで3時間ごとに<a
-id="new-orders"></a>**新しい命令**を最大 300 個まで作成できます。
+id="new-orders"></a>**新しい命令**を最大 1000 個まで作成できます。
 
 # <a id="overrides"></a>オーバーライド
 
