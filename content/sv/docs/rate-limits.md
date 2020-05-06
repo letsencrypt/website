@@ -3,7 +3,7 @@ title: Taktbegränsningar
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-02-24
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -83,7 +83,7 @@ auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
 oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient skapar
 auktorisationer utan att fullborda dem. Använd vår [testmiljö](/docs/staging-environment) om du utvecklar en ACME-klient.
 
-Användare av API:t ACMEv2 kan skapa maximalt 300 <a id="new-orders"></a>**nya
+Användare av API:t ACMEv2 kan skapa maximalt 1000 <a id="new-orders"></a>**nya
 beställningar** per konto per 3 timmar. En ny beställning skapas varje gång du
 begär ett certifikat från Boulder-CA:n, vilket innebär att en ny beställning
 skapas i varje certifikatförfrågan.
