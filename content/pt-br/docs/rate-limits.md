@@ -3,7 +3,7 @@ title: Limites de Requisições
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-04-15
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -78,7 +78,7 @@ normalmente significa que o seu cliente está criando autorizações e as deixan
 Por favor use nosso [ambiente de testes](/docs/staging-environment) se você está
 desenvolvendo um cliente ACME.
 
-Para usuários da API ACME v2 você pode criar um máximo de 300 <a
+Para usuários da API ACME v2 você pode criar um máximo de 1000 <a
 id="new-orders"></a>**Novas Ordens** por conta por 3 horas. 
 
 # <a id="overrides"></a>Exceções
