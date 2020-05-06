@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2020-05-06
 ---
 
 {{< lastmod >}}
@@ -84,7 +84,7 @@ diese aber nicht richtig verarbeiten kann.
 Bitte benutzen Sie unsere [Staging Umgebung](/docs/staging-environment),
 wenn Sie neue ACME Clients entwickeln.
 
-Benutzer der ACME v2 API können ein Maximum von 300 <a
+Benutzer der ACME v2 API können ein Maximum von 1000 <a
 id="new-orders"></a>**Neue Aufträge** pro Konto pro 3 Stunden erstellen.
 
 # <a id="overrides"></a>Überschreibungen
