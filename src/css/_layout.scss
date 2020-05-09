@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.site-title:dir(rtl) {
+[dir="rtl"] .site-title {
    float: right;
 }
 
@@ -161,7 +161,7 @@
     background: #E1DCD2 url(/images/3.jpg) no-repeat center center;
     background-size: cover;
 
-    div.container:dir(rtl) {
+    [dir="rtl"] div.container {
        text-align: right;
     }
     div.container {
@@ -267,7 +267,7 @@
 }
 
 .contact-list,
-.social-media-list:dir(rtl) {
+[dir="rtl"] .social-media-list {
     direction: ltr;
     text-align: right;
 }
