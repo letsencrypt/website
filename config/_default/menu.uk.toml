@@ -1,0 +1,32 @@
+[[main]]
+name = "Get Help"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "Donate"
+weight = 30
+identifier = "donate"
+url = "/uk/donate/"
+[[main]]
+name = "About Us"
+weight = 40
+identifier = "about"
+url = "/uk/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "Service Status"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "Careers"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
