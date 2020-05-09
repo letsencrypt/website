@@ -264,13 +264,13 @@ pre {
 .justify {
     text-align: justify;
 }
-[dir="rtl"] .tal {
+html[dir="rtl"] .tal {
     text-align: right;
 }
 .tal {
     text-align: left;
 }
-[dir="rtl"] .tar {
+html[dir="rtl"] .tar {
     text-align: left;
 }
 .tar {
@@ -280,13 +280,13 @@ pre {
     margin-left: 20%;
     margin-right: 20%;
 }
-[dir="rtl"] .mr1m {
+html[dir="rtl"] .mr1m {
     margin-left: 1em;
 }
 .mr1m {
     margin-right: 1em;
 }
-[dir="rtl"] .ml1m {
+html[dir="rtl"] .ml1m {
     margin-right: 1em;
 }
 .ml1m {

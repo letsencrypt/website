@@ -1,10 +1,10 @@
-[dir="rtl"] .pure-menu-children {
+html[dir="rtl"] .pure-menu-children {
   right: 100%;
 }
-[dir="rtl"] .pure-menu-horizontal .pure-menu-children {
+html[dir="rtl"] .pure-menu-horizontal .pure-menu-children {
   right: 0;
   width: max-content;
 }
-[dir="rtl"] .pure-menu-has-children > .pure-menu-link:after {
+html[dir="rtl"] .pure-menu-has-children > .pure-menu-link:after {
   padding-right: 0.5em;
 }

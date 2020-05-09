@@ -21,7 +21,7 @@
     position: relative;
 }
 
-[dir="rtl"] .site-title {
+html[dir="rtl"] .site-title {
    float: right;
 }
 
@@ -154,6 +154,9 @@
     }
 }
 
+html[dir="rtl"] .hero.slim div.container {
+   text-align: right;
+}
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -161,9 +164,6 @@
     background: #E1DCD2 url(/images/3.jpg) no-repeat center center;
     background-size: cover;
 
-    [dir="rtl"] div.container {
-       text-align: right;
-    }
     div.container {
         @extend .wrapper;
         text-align:left;
@@ -267,7 +267,7 @@
 }
 
 .contact-list,
-[dir="rtl"] .social-media-list {
+html[dir="rtl"] .social-media-list {
     direction: ltr;
     text-align: right;
 }
