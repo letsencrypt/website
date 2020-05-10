@@ -1,14 +1,14 @@
 [[main]]
-name = "Get Help"
+name = "Допомога"
 weight = 20
 url = "https://community.letsencrypt.org/"
 [[main]]
-name = "Donate"
+name = "Підтримати"
 weight = 30
 identifier = "donate"
 url = "/uk/donate/"
 [[main]]
-name = "About Us"
+name = "Про сервіс"
 weight = 40
 identifier = "about"
 url = "/uk/about/"
@@ -19,13 +19,13 @@ identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
 [[main]]
-name = "Service Status"
+name = "Стан сервісу"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
 [[main]]
-name = "Careers"
+name = "Кар'єра"
 weight = 80
 identifier = "careers"
 parent = "about"
