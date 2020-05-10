@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Неприбутковий центр сертифікації, що надає TLS сертифікати <span>200 мільйонам</span> веб-сайтів."
+
+[home_hero_getting_started]
+other = "Розпочати"
+
+[home_hero_donate]
+other = "Підтримати"
+
+[home_hero_sponsor]
+other = "Спонсорство"
+
+[home_hero_annual_report]
+other = "Наш щорічний звіт за 2019"
+
+[home_hero_desktop]
+other = "Комп'ютер"
+
+[home_hero_mobile]
+other = "Мобільний"
+
+[home_major_sponsors]
+other = "Основні спонсори та донори"
+
+[home_from_our_blog]
+other = "З нашого блогу"
+
+[read_more]
+other = "Читати далі"
+
+[subscribe_rss]
+other = 'Підписатися <a href="{{ .Permalink }}">на RSS</a>'
+
+[footer_support_us]
+other = "Підтримайте безпечніший та конфіденційний Інтернет."
+
+[footer_donate]
+other = "Підтримати"
+
+[footer_policies]
+other = """
+Переглянути <a href="/uk/privacy/">політику конфіденційності</a>.<br>
+Переглянути <a href="/uk/trademarks/">правила користування торговою маркою</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation є зареєстрованою торговою маркою The Linux Foundation. Linux є зареєстрованою торговою маркою Лінуса Торвальдса."
+
+[header_skip_nav]
+other = "Пропустити навігаційні посилання"
+
+[last_updated]
+other = "Останнє оновлення: "
+
+[see_all_doc]
+other = "Переглянути всю документацію"
+
+[blog_feed]
+other = "Канал блогу Let's Encrypt"
+
+[platinum]
+other = "Платиновий"
+
+[gold]
+other = "Золотий"
+
+[gold_basic]
+other = "Золотий Базовий"
+
+[silver]
+other = "Срібний"
+
+[languages]
+other = "Мови"
+
+[view_in_english]
+other = "Переглянути англійською"
+
+[view_in_xxx]
+other = "Переглянути англійською"
+
+[old_version]
+other = "Примітка: Англійська версія була оновлена з моменту перекладу"
+
+[not_yet_translated]
+other = 'Ця сторінка ще не перекладена. Ви можете долучитися до перекладу <a href="https://github.com/letsencrypt/website">тут</a>.'
+
+[english_is_canonical]
+other = "Англійська версія є авторитетною"
+
+[graph_issued]
+other = "Видано"
+
+[graph_certificates_active]
+other = "Активних сертифікатів"
+
+[graph_fully_qualified_domains_active]
+other = "Аквтивних кваліфікованих доменів"
+
+[graph_registered_domains_active]
+other = "Аквтивних зареєстрованих доменів"
+
+[graph_active_count]
+other = "Кількість активних"
+
+[graph_issued_per_day]
+other = "Видано за день"
+
+[graph_all_users]
+other = "Всі користувачі"
+
+[graph_usa_users]
+other = "Користувачі США"
+
+[graph_japan_users]
+other = "Користувачі Японії"
+
+[graph_percent_https]
+other = "Завантажень сторінок по HTTPS (рухоме середнє 14 днів)"
+
+[certificate_transparency_name]
+other = "Name"
+
+[certificate_transparency_role_production]
+other = "Production"
+
+[certificate_transparency_role_testing]
+other = "Testing"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Public Key"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "State"
+
+[certificate_transparency_window_start]
+other = "Window Start"
+
+[certificate_transparency_window_end]
+other = "Window End"
+
+[overview]
+other = "Overview"
+
+[subscriber_information]
+other = "Subscriber Information"
+
+[advanced_subscriber_information]
+other = "Advanced Subscriber Information"
+
+[client_developer_information]
+other = "Client Developer Information"
+
+[acme_divergences]
+other = "Differences from Current ACME Draft"
+
+[acme_divergences_rfc]
+other = "Differences from ACME RFC"
+
+[onboarding_customers]
+other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+[paypal_donate_alt]
+other = "Зробити пожертву через PayPal"
+
+[paypal_donate_title]
+other = "Зробити пожертву через PayPal"
+
+[not_found]
+other = "Ця сторінка не існує, будь ласка, перевірте адресу."
+
+[amount_per_year]
+other = "${{ .nb }}/рік (USD)"
+
+[3y_commitment]
+other = "з 3-річним зобов’язанням"
+
+[1_99_employees]
+other = "1-99 працівників"
+
+[100_999_employees]
+other = "100-999 працівників"
+
+[1000_employees]
+other = "1000+ працівників"
