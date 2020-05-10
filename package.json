@@ -5,14 +5,12 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^6.8.0",
-    "htmlhint": "^0.11.0",
-    "sass-lint": "^1.13.1"
+    "htmlhint": "^0.11.0"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
-    "test:sass": "sass-lint --verbose",
-    "test": "npm run test:htmllint && npm run test:eslint && npm run test:sass",
+    "test": "npm run test:htmllint && npm run test:eslint",
     "build": "hugo -d public"
   },
   "repository": {
