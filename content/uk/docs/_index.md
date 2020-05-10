@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Документація
 top_graphic: 1
 menu:
   main:
