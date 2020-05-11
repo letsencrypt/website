@@ -17,15 +17,15 @@ Wir können immer Hilfe bei der Beantwortung von Fragen auf [Let's Encrypt Commu
 
 ## Code
 
-Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer Code ist auf [GitHub](https://github.com/letsencrypt/).
+Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. All unserer Code ist auf [GitHub](https://github.com/letsencrypt/) verfügbar.
 
 ### Client Software
 
-[Certbot](https://github.com/certbot/certbot) ist ein auf Python basierendes Werkzeug, welches auf Ihrem Webserver arbeitet, um automatisch ein Zertifikat abzuholen und die Webseite to HTTPS zu konvertieren. Certbot ist das Werkzeug, welches wir empfehlen und mit dem die meisten Leute starten. Viele andere [Drittanbieterwerkzeuge](/docs/client-options) sind verfügbar.
+[Certbot](https://github.com/certbot/certbot) ist ein auf Python basierendes Werkzeug, welches auf Ihrem Webserver arbeitet, um automatisch ein Zertifikat abzuholen und die Webseite zu HTTPS zu konvertieren. Certbot ist das Werkzeug, welches wir empfehlen und mit dem die meisten Leute starten. Viele andere [Drittanbieterwerkzeuge](/docs/client-options) sind verfügbar.
 
 ### Server-side CA Software
 
-[Boulder](https://github.com/letsencrypt/boulder) is die Let's Encrypt CA Implementierung. Sie basiert auf [ACME](https://tools.ietf.org/html/rfc8555) Protokoll und ist hauptsächlich in Go geschrieben. Ein grossartiger Platz zum Starten ist die Liste der ['help wanted' issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) und der [contributors guide](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) ist die Let's Encrypt CA Implementierung. Sie basiert auf dem [ACME](https://tools.ietf.org/html/rfc8555)-Protokoll und ist hauptsächlich in Go geschrieben. Ein grossartiger Platz zum Starten ist die Liste der ['help wanted' issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) und der [contributors guide](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 
