@@ -2,7 +2,7 @@
 title: Beteiligen Sie sich
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-11-04
+lastmod: 2020-05-11
 menu:
   main:
     weight: 60
