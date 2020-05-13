@@ -82,11 +82,13 @@ function doPlot() {
 
     const activeUsage = document.getElementById("activeUsage");
     if (activeUsage) {
+      activeUsage.innerHTML = ""; // remove waiting
       plotActiveUsage(activeUsage, tActive, tFqdn, tRegDom);
     }
 
     const issuancePerDay = document.getElementById("issuancePerDay");
     if (issuancePerDay) {
+      issuancePerDay.innerHTML = ""; // remove waiting
       plotIssuancePerDay(issuancePerDay, tIssued);
     }
 
@@ -328,8 +330,21 @@ function doPlot() {
     return response.text();
   }).then(tsvListener);
 
+  var waiting = "<div class=\"waiting\"></div>";
+
+  const activeUsage = document.getElementById("activeUsage");
+  if (activeUsage) {
+    activeUsage.innerHTML = waiting;
+  }
+
+  const issuancePerDay = document.getElementById("issuancePerDay");
+  if (issuancePerDay) {
+    issuancePerDay.innerHTML = waiting;
+  }
+
   const pageloadPercent = document.getElementById("pageloadPercent");
   if ( pageloadPercent ) {
+    pageloadPercent.innerHTML = waiting;
     const currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
     .then(response => {
       return response.text();
@@ -343,7 +358,10 @@ function doPlot() {
     // We shouldn't try to plot HTTPS until both the current and historical fetches
     // are completed
     Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
-    .then( () => httpsPlot(pageloadPercent) );
+    .then(function(){
+      pageloadPercent.innerHTML = ""; // remove waiting
+      httpsPlot(pageloadPercent);
+    });
   }
 }
 

@@ -3,7 +3,7 @@ title: Taktbegränsningar
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2020-02-24
 ---
 
 {{< lastmod >}}
@@ -16,12 +16,11 @@ stora organisationer gradvis kan öka antalet certifikat de ger ut utan att
 behöva handpåläggning från Let's Encrypt.
 
 Om du aktivt utvecklar eller testar en Let's Encrypt-klient, vänligen använd
-vår [testmiljö]({{< relref "/docs/staging-environment.md" >}}) istället för
+vår [testmiljö](/docs/staging-environment) istället för
 produktions-API:et. Om du jobbar med att integrera Let's Encrypt som en
-leverantör eller med en stor webbplats, vänligen se vår [integrationsguide]({{<
-relref "/docs/integration-guide.md" >}}).
+leverantör eller med en stor webbplats, vänligen se vår [integrationsguide](/docs/integration-guide).
 
-Huvudgränsen är <a name="certificates-per-registered-domain"></a>**antal
+Huvudgränsen är <a id="certificates-per-registered-domain"></a>**antal
 certifikat per registrerad domän** (50 per vecka). Generellt är en registrerad
 domän den domän du köpte från din domännamnsregistrator. Till exempel: i
 domännamnet `www.example.com` är den registrerade domänen `example.com`. I
@@ -30,12 +29,13 @@ använder den [publika suffixlistan](https://publicsuffix.org) för att räkna u
 den registrerade domänen.
 
 Om du har många underdomäner kanske du vill kombinera dem i ett certifikat upp
-till en gräns på 100 <a name="names-per-certificate"></a>**domännamn per
+till en gräns på 100 <a id="names-per-certificate"></a>**domännamn per
 certifikat**. Tillsammans med ovanstående gräns betyder detta att du kan
 utfärda certifikat som gäller för upp till 5000 unika underdomäner per vecka.
 Ett certifikat med flera domännamn kallas ofta för SAN-certifikat eller ibland
 för UCC-certifikat. Observera att på grund av prestanda- och pålitlighetsskäl
 är det bättre att ha så få domännamn per certifikat så långt som möjligt.
+
 
 Förnyelser hanteras annorlunda: de räknas inte mot din **antal certifikat per
 registrerad domän**-gräns men de påverkas av en **certifikatdublett**-gräns på
@@ -59,36 +59,36 @@ ny nyckel.
 eftersom resurserna som användes för att utfärda dessa certifikat redan har
 utnyttjats.
 
-Det finns en <a name="failed-validations"></a>**antal misslyckade
+Det finns en <a id="failed-validations"></a>**antal misslyckade
 valideringar**-gräns på 5 misslyckaden per konto per domännamn per timme. Denna
-gräns är högre i vår [testmiljö]({{< relref "/docs/staging-environment.md"
->}}), så du kan använda den miljön för att avlusa anslutningsproblem.
+gräns är högre i vår [testmiljö](/docs/staging-environment), så du
+kan använda den miljön för att avlusa anslutningsproblem.
 
-Ändpunkterna "new-reg", "new-authz" och "new-cert" har en <a
-name="overall-requests"></a>**anropsgräns** på 20 per sekund. Ändpunkterna
-"/directory" och "/acme" och deras underkataloger har en anropsgräns på 40
-anrop per sekund.
+Ändpunkterna "new-reg", "new-authz" och "new-cert" på v1-API:et samt new-nonce",
+"new-account", "new-order" och "revoke-cert" på v2-API:et har en <a
+id="overall-requests"></a>**anropsgräns** på 20 per sekund. Ändpunkterna
+"/directory" och "/acme" och deras underkataloger har en anropsgräns på 40 anrop
+per sekund.
 
 Det finns ytterligare två gränser som det är väldigt osannolikt att du påverkas av.
 
-Du kan skapa maximalt 10 <a name="accounts-per-ip-address"></a>**konton per
+Du kan skapa maximalt 10 <a id="accounts-per-ip-address"></a>**konton per
 IP-adress** under 3 timmar. Du kan skapa maximalt 500 **konton per IP-nätverk**
 inom ett IPv6 /48-nät under 3 timmar. Att uppnå någon av dessa gränser är
 väldigt sällsynt och vi rekommenderar att stora integratörer nyttjar en design
-som [använder ett konto till flera kunder]({{< relref
-"/docs/integration-guide.md"
->}}).
+som [använder ett konto till flera kunder](/docs/integration-guide).
 
-Du kan maximalt ha 300 <a name="pending-authorizations"></a>**väntande
+Du kan maximalt ha 300 <a id="pending-authorizations"></a>**väntande
 auktorisationer** på ditt konto. Att nå denna gräns är sällsynt och händer
-oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient
-skapar auktorisationer utan att fullborda dem. Använd vår [testmiljö]({{<
-relref "/docs/staging-environment.md" >}}) om du utvecklar en ACME-klient.
+oftast när ACME-klienter utvecklas. Vanligtvis betyder det att din klient skapar
+auktorisationer utan att fullborda dem. Använd vår [testmiljö](/docs/staging-environment) om du utvecklar en ACME-klient.
 
-Användare av API:t ACMEv2 kan skapa maximalt 300 <a name="new-orders"></a>**nya
-beställningar** per konto per 3 timmar.
+Användare av API:t ACMEv2 kan skapa maximalt 300 <a id="new-orders"></a>**nya
+beställningar** per konto per 3 timmar. En ny beställning skapas varje gång du
+begär ett certifikat från Boulder-CA:n, vilket innebär att en ny beställning
+skapas i varje certifikatförfrågan.
 
-# <a name="overrides"></a>Åsidosättande
+# <a id="overrides"></a>Åsidosättande
 
 Om du uppnått en gräns erbjuder vi inget sätt att temporärt återställa den. Du
 måste vänta tills gränsen löper ut efter en vecka. Vi använder ett glidande
@@ -109,9 +109,9 @@ Observera att de flesta webbhotell inte behöver några förhöjda gränser efte
 det inte finns någon gräns på antalet unika registrerade domäner ni kan utfärda
 certifikat för. Så länge de flesta av era kunder har färre än 2000 underdomäner
 på en registrerad domän behöver ni troligtvis ingen höjning. Se vår
-[integrationsguide]({{< relref "/docs/integration-guide.md" >}}) för fler råd.
+[integrationsguide](/docs/integration-guide) för fler råd.
 
-# <a name="clearing-pending"></a>Rensa väntande auktorisationer
+# <a id="clearing-pending"></a>Rensa väntande auktorisationer
 
 Om du har ett stort antal väntande auktorisationsobjekt och får ett
 taktbegränsningsfel kan du initiera ett valideringsförsök för dessa
@@ -119,7 +119,7 @@ auktorisationsobjekt genom att skicka ett JWS-signerat POST-anrop för en av
 dess utmaningar enligt beskrivningen i
 [ACME-specifikationen](https://tools.ietf.org/html/rfc8555#section-7.5.1). De
 väntande auktorisationsobjekten representeras av URL:er på formen
-`https://acme-v01.api.letsencrypt.org/acme/authz/XYZ` och bör dyka upp i dina
+`https://acme-v02.api.letsencrypt.org/acme/authz/XYZ` och bör dyka upp i dina
 klientloggar. Notera att det inte spelar någon roll om valideringen lyckas
 eller ej. Båda utfallen kommer ta auktorisationen ut ur väntetillståndet. Om du
 inte har loggar som innehåller relevanta auktorisations-URL:er så måste du

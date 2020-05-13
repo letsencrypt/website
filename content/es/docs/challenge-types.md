@@ -6,6 +6,8 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
+{{< lastmod >}}
+
 Cuando solicita un certificado a Let’s Encrypt, nuestros servidores comprueba que usted está autorizado o controla los nombres de dominio en ese certificado utilizando "desafíos", según lo define el estándar ACME. La mayoría de las veces, esta validación es manejada automáticamente por su cliente ACME, pero si necesita tomar algunas decisiones de configuración más complejas, es útil saber más sobre ellas. Si no está seguro, use los valores predeterminados de su cliente o HTTP-01.
 
 # HTTP-01 challenge
@@ -78,5 +80,5 @@ Contras:
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt est une autorité de certification <span>gratuite</span>, <span>automatisée</span> et <span>ouverte</span>."
+other = "Une autorité de certification à but non lucratif fournissant leurs certificats TLS à <span>180 millions</span> de sites Web."
 
 [home_hero_getting_started]
 other = "Commencer"
@@ -122,14 +122,11 @@ other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jo
 [certificate_transparency_name]
 other = "Nom"
 
-[certificate_transparency_role]
-other = "Rôle"
-
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -166,3 +163,18 @@ other = "Faites un don avec PayPal"
 
 [not_found]
 other = "Cette page n'existe pas, merci de vérifier l'adresse."
+
+[amount_per_year]
+other = "${{ .nb }}/an (USD)"
+
+[3y_commitment]
+other = "avec un engagement de 3 ans"
+
+[1_99_employees]
+other = "1-99 employés"
+
+[100_999_employees]
+other = "100-999 employés"
+
+[1000_employees]
+other = "1000+ employés"

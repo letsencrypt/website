@@ -21,7 +21,7 @@ Wenn Sie eines der ISRG-Markenzeichen auf eine Art und Weise verwenden
 möchten, die in dieser Richtlinie nicht ausdrücklich erlaubt ist oder
 anderweitig durch eine markenrechtliche Ausnahme (z.B. Fair Use)
 zulässig ist, wenden Sie sich bitte direkt an uns unter
-[press@letsencrypt.org](mailto: press@letsencrypt.org). Gerne prüfen
+[press@letsencrypt.org](mailto:press@letsencrypt.org). Gerne prüfen
 wir Ihre Erlaubnisanfrage. Unabhängig davon, wie autorisiert, der durch
 die Verwendung der ISRG-Marken entstandene Goodwill kommt
 ausschliesslich der ISRG zugute.
@@ -155,8 +155,8 @@ persönlichen, nicht kommerziellen Verwendungen, die in den vorstehenden
 Abschnitten gestattet sind.
 
 Die Dateien, die unsere Designmarken enthalten, sind unter der
- [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
- lizenziert.
+[Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+lizenziert.
 Sie unterliegen auch dieser Markenrichtlinie. Dateien finden Sie am Ende
 dieser Richtlinie.
 
@@ -241,7 +241,7 @@ ISRG verbunden oder wird von dieser gesponsert oder unterstützt.
 ## Melden von Markenmissbrauch
 
 Bitte melden Sie jeden Missbrauch der ISRG-Marken an
-press[at]letsencrypt.org, und geben Sie so viele Informationen wie
+[press@letsencrypt.org](mailto:press@letsencrypt.org), und geben Sie so viele Informationen wie
 möglich über die Verwendung an, die Ihrer Meinung nach möglicherweise
 verletzt wird. Wir werden die Verwendung untersuchen und gegebenenfalls
 entsprechende Massnahmen ergreifen.
@@ -251,7 +251,7 @@ entsprechende Massnahmen ergreifen.
 Wenn Sie die ISRG-Marken auf eine Art und Weise verwenden möchten, die
 von dieser Richtlinie nicht abgedeckt wird, oder wenn Sie Fragen zu
 dieser Richtlinie haben, können Sie uns gerne unter
-[press@letsencrypt.org](mailto: press@letsencrypt.org) kontaktieren.
+[press@letsencrypt.org](mailto:press@letsencrypt.org) kontaktieren.
 
 <br>
 

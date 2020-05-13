@@ -124,3 +124,18 @@ other = "Informações Para Desenvolvedores de Clientes"
 
 [paypal_donate_alt]
 other = "Faça doações com o botão do PayPal"
+
+[amount_per_year]
+other = "${{ .nb }}/ano (USD)"
+
+[3y_commitment]
+other = "com um compromisso de 3 anos"
+
+[1_99_employees]
+other = "1-99 empregados"
+
+[100_999_employees]
+other = "100-999 empregados"
+
+[1000_employees]
+other = "1000+ empregados"

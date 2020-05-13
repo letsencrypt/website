@@ -12,6 +12,15 @@ other = "Поддержать нас"
 [home_hero_sponsor]
 other = "Поддержать"
 
+[home_hero_annual_report]
+other = "Ознакомьтесь с нашим годовым отчётом за 2019 г."
+
+[home_hero_desktop]
+other = "на десктопе"
+
+[home_hero_mobile]
+other = "на мобильном"
+
 [home_major_sponsors]
 other = "Основные спонсоры и дарители"
 
@@ -113,13 +122,10 @@ other = "Доля страниц, в %, загруженных по HTTPS (ск�
 [certificate_transparency_name]
 other = "Название"
 
-[certificate_transparency_role]
-other = "Назначение"
-
 [certificate_transparency_role_production]
 other = "Официальное использование"
 
-[certificate_transparency_role_test]
+[certificate_transparency_role_testing]
 other = "Тестирование"
 
 [certificate_transparency_uri]
@@ -150,4 +156,25 @@ other = "Отступления от ACME RFC"
 other = "Ознакомление ваших клиентов с Let's Encrypt и протоколом ACME"
 
 [paypal_donate_alt]
-other = "Кнопка «Пожертвовать через PayPal»"
+other = "Кнопка «Поддержать через PayPal»"
+
+[paypal_donate_title]
+other = "Поддержите нас с помощью PayPal"
+
+[not_found]
+other = "Этой страницы не существует. Пожалуйста, уточните адрес."
+
+[amount_per_year]
+other = "{{ .nb }} долларов США в год"
+
+[3y_commitment]
+other = "на протяжении 3 лёт"
+
+[1_99_employees]
+other = "число сотрудников от 1 до 99"
+
+[100_999_employees]
+other = "число сотрудников от 100 до 999"
+
+[1000_employees]
+other = "число сотрудников более 1000"

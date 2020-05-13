@@ -6,6 +6,8 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
+{{< lastmod >}}
+
 Let's Encrypt에서 인증서를 받으면 Google 서버는 ACME 표준에 정의된 대로 "도전"을 사용하여 해당 인증서의 도메인 이름을 제어하는지 확인합니다. 대부분의 경우 이 유효성 검사는 당신의 ACME 클라이언트가 자동으로 처리하지만 보다 복잡한 구성 결정이 필요한 경우 이에 대해 더 자세하게 알아두는 것이 좋습니다. 확실하지 않은 경우 클라이언트의 기본값 또는 HTTP-01을 사용하십시오.
 
 # HTTP-01 챌린지
@@ -81,5 +83,5 @@ because it was not secure enough. 이것은 안전이 충분히 확보되지 않
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

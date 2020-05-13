@@ -2,19 +2,15 @@
 title: Certifikatkompabilitet
 slug: certificate-compatibility
 top_graphic: 1
-date: 2016-12-05
-lastmod: 2016-12-05
+lastmod: 2020-02-07
 ---
 
 {{< lastmod >}}
 
 Let's Encrypt siktar på att vara kompatibla med så mycket mjukvara som möjligt
 utan att tumma på säkerheten. Den avgörande faktorn för huruvida en plattform
-kan validera Let's Encrypt-certifikat är huruvida plattformen litar på
-IdenTrusts DST Root X3-certifikat. En annan faktor är huruvida plattformen
-stöder moderna
-[SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1)-certifikat
-eftersom alla Let's Encrypt-certifikat använder SHA-2.
+kan validera Let's Encrypt-certifikat är huruvida plattformen litar på ISRGs
+"ISRG Root X1"-certifikat eller IdenTrusts "DST Root X3"-certifikat.
 
 Om dina certifikat validerar på vissa av de känt kompatible plattformarna nedan
 men inte på andra så kan problemet ligga i webbserverkonfigurationen. Om du har

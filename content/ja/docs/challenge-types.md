@@ -6,6 +6,8 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
+{{< lastmod >}}
+
 Let's Encrypt から証明書を取得するときには、ACME 標準で定義されている「チャレンジ」を使用して、証明書が証明しようとしているドメイン名があなたの制御下にあることを検証します。ほどんどの場合、この検証は ACME クライアントにより自動的に処理されますが、より複雑な設定を行った場合、詳細な仕組みについて知っておくと役に立つはずです。よく分からない場合には、クライアントのデフォルトの設定か、HTTP-01 を使用してください。
 
 # HTTP-01 チャレンジ
@@ -78,5 +80,5 @@ Let’s Encrypt は DNS-01 検証で TXT レコードを検索するときに DN
 [エニーキャスト]: https://ja.wikipedia.org/wiki/エニーキャスト
 [SNI]: https://ja.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

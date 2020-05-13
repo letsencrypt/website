@@ -6,6 +6,8 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 # ルート証明書
 
 Let's Encrypt のルート証明書はオフラインで安全に保管されています。Let's Encrypt は、次のセクションにある中間証明書から、サブスクライバに対してエンド・エンティティ証明書を発行します。
@@ -72,4 +74,4 @@ logs](https://www.certificate-transparency.org/) に記録しています。以�
 
 ISRG root CA と Let's Encrypt 中間認証局の秘密鍵は、ハードウェア・セキュリティ・モジュール (HSM) に保存されており、鍵が盗難されないように厳重に保管されています。
 
-すべての ISRG キーは、現在は RSA の鍵を使用しています。私たちは、[ECDSA の鍵を生成すること]({{< relref "/upcoming-features.md" >}})を計画しています。
+すべての ISRG キーは、現在は RSA の鍵を使用しています。私たちは、[ECDSA の鍵を生成すること](/upcoming-features)を計画しています。

@@ -2,12 +2,14 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2019-07-03
+lastmod: 2020-02-20
 ---
 
-## Multi-Perspective Validation
+{{< lastmod >}}
 
-Currently Let's Encrypt validates from a single network perspective. We are planning to start validating from multiple network perspectives.
+## IP Addresses in Certificates
+
+We are planning to add support for validating and including IP addresses in certificates.
 
 ## ECDSA Root and Intermediates
 
@@ -15,17 +17,23 @@ Currently Let's Encrypt only signs end-entity certificates with RSA intermediate
 
 # Completed Features
 
+## Multi-Perspective Validation
+
+* Enabled: February 19, 2020
+
+We now validate domain control from [multiple network perspectives](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+
 ## Certificate Transparency Log
 
 * Enabled: May 15, 2019
 
-We are starting to operate a [Certificate Transparency log]({{< relref "/docs/ct-logs.html" >}}).
+We now operate a [Certificate Transparency log](/docs/ct-logs).
 
 ## TLS ALPN Challenge Support
 
 * Enabled: July 12, 2018
 
-We've specified and implemented a [replacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
+We've specified and implemented a [replacement](https://tools.ietf.org/html/rfc8737) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
 
 ## Embed SCT receipts in certificates
 

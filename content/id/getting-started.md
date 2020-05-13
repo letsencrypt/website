@@ -5,11 +5,13 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
+{{< lastmod >}}
+
 Untuk mengaktifkan HTTPS pada website, anda membutuhkan sebuah sertifikat (sebuah tipe dari *file*)
 dari Otoritas Sertifikasi (CA). Let's Encrypt adalah CA. Untuk mendapatkan sertifikat untuk domain
 website anda dari Let's Encrypt, anda harus dapat membuktikan kontrol terdahadap domain
 tersebut. Dengan Let's Encrypt, anda melakukannya dengan menggunakan perangkat-lunak yang menggunakan
-[protokol ACME](https://ietf-wg-acme.github.io/acme/) yang biasanya berjalan pada *host* web anda.
+[protokol ACME](https://tools.ietf.org/html/rfc8555) yang biasanya berjalan pada *host* web anda.
 
 Untuk mengetahui metode terbaik untuk anda, anda harus mengetahui apakah anda memiliki
 [akses *shell*](https://en.wikipedia.org/wiki/Shell_account) (juga diketahui sebagai SSH)
@@ -29,11 +31,11 @@ dan memiliki dokumentasi yang bagus. [Kunjungi situs Certbot][Certbot] untuk mel
 instruksi kostumisasi untuk sistem operasi dan web server anda.
 
 Jika [Certbot] tidak sesuai dengan kebutuhan anda, atau anda ingin mencoba yang lain,
-ada [banyak Klien ACME yang dapat anda pilih]({{< relref "/docs/client-options.md" >}}). Setelah anda
+ada [banyak Klien ACME yang dapat anda pilih](/docs/client-options). Setelah anda
 memili Klien ACME anda, lihat dokumentasi untuk klien tersebut untuk melanjutkan.
 
-Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*]({{< relref "/docs/staging-environment.md" >}})
-untuk menghindari [pembatasan pemanggilan]({{< relref "/docs/rate-limits.md" >}}).
+Jika anda ingin bereksperimen dengan Klien ACME lain, gunakan [lingkungan *staging*](/docs/staging-environment)
+untuk menghindari [pembatasan pemanggilan](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

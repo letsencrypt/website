@@ -181,7 +181,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;
@@ -282,4 +282,28 @@ pre {
 
 .home_sponsors img {
     background-color: #fff;
+}
+
+a.autoanchor {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+.page-content {
+    h1,h2,h3 { //same selector as js for anchors
+        .autoanchor {
+            display: none;
+        }
+        &:hover {
+            .autoanchor {
+                display: inline;
+            }
+        }
+    }
+}
+
+.list-style-none {
+    list-style-type:none;
 }

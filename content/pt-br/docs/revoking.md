@@ -23,7 +23,7 @@ Note que o OCSP [tem alguns problemas
 fundamentais](https://www.imperialviolet.org/2011/03/18/revocation.html), então
 nem todos os navegadores farão essa checagem. Mesmo assim, revogar certificados que correspondem
 a chaves privadas comprometidas é uma prática importante, e isso é requerido no 
-[Subscriber Agreement]({{< relref "/repository.md" >}}) da Let's Encrypt.
+[Subscriber Agreement](/repository) da Let's Encrypt.
 
 Para revogar um certificado com a Let's Encrypt, você precisará usar a [API
 ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) (Inglês), 
@@ -37,7 +37,7 @@ Se você originalmente emitiu o certificado e ainda possui controle
 da conta que usou para fazer isso, você pode revogá-lo usando suas credenciais da 
 conta. O Certbot tentará fazer isso por padrão. Exemplo:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -58,7 +58,7 @@ e fazer o download de certificados usando um monitor de registros como
 Você também precisará de uma cópia da chave privada no formato PEM. Uma vez que tiver isso em mãos
 você poderá revogar o certificado assim:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 # Usando uma conta autorizada diferente
@@ -70,10 +70,10 @@ naquele certificado (senão qualquer pessoa poderia revogar o certificado dos ou
 sem permissão!). Para validar este controle, a Let's Encrypt usa os mesmos
 métodos que usa para validar o controle durante a emissão: você pode
 colocar um [valor em um registro TXT no 
-DNS](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) (Inglês),
-colocar um [arquivo num servidor HTTP](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3) (Inglês).
+DNS](https://tools.ietf.org/html/rfc8555#section-8.4) (Inglês),
+colocar um [arquivo num servidor HTTP](https://tools.ietf.org/html/rfc8555#section-8.3) (Inglês).
 ou oferecer um 
-[certificado TLS especial](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4) (Inglês).
+[certificado TLS especial](https://tools.ietf.org/html/rfc8737#section-3) (Inglês).
 Normalmente um cliente ACME cuidará disso por você. Note que a maioria dos clientes ACME
 combinar a validação e emissão, então a única forma de solicitar validações é 
 tentando emitir. Você pode então revogar o certificado gerado se você não
@@ -82,7 +82,7 @@ de um certificado você pode inserir um nome de domínio inexistente na sua
 linha de comando, o que irá fazer a emissão falhar enquanto ainda consegue validar os 
 outros nomes de domínio existentes. Para fazer isso execute:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -94,6 +94,6 @@ Uma vez que você tenha validado o controle sobre todos os nomes de domínio no 
 revogar, você pode fazer o download do certificado em [crt.sh](https://crt.sh/) (Inglês)
 e então proceder com a revogação do certificado como se você o tivesse emitido:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

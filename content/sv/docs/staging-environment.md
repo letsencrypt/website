@@ -3,7 +3,7 @@ title: Testmiljö
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-09-16
+lastmod: 2020-01-21
 ---
 
 {{< lastmod >}}
@@ -24,8 +24,7 @@ testmiljön. Observera att v2-testmiljön kräver en v2-kompatibel ACME-klient.
 
 # Taktbegränsningar
 
-Testmiljön använder samma regler som [produktionsmiljön]({{< relref
-"/docs/rate-limits.md" >}}) fast med följande undantag:
+Testmiljön använder samma regler som [produktionsmiljön](/docs/rate-limits) fast med följande undantag:
 
 * **Antal certifikat per registrerad domän**-gränsen är 30000 per vecka
 * **Certifikatdublett**-gränsen är 30000 per vecka
@@ -49,8 +48,21 @@ använda för annat än testning.
 
 # Certifikattransparens
 
-Testmiljön skickar förcertifikat till Let's Encrypts [Testflume]({{< relref
-"/docs/ct-logs.html" >}}) och Googles
+Testmiljön skickar förcertifikat till Let's Encrypts [Testflume](/docs/ct-logs) och Googles
 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)
 CT-testloggar och inkluderar de returnerade SCT:erna (signerade
 certifikattidsangivelser) i de utfärdade certifikaten.
+
+# Kontinuerlig integration / utvecklingstestning
+
+Testmiljön har generösa taktbegränsningar för att möjliggöra testning men det
+passar inte så bra för integration med utvecklingsmiljöer eller kontinuerlig
+integration (CI). Att göra nätverksanrop till externa servrar can introducera
+instabilitet och testmiljön tillhandahåller inte något sätt att "fejka" DNS
+eller lyckad utmaningsvalidering vilket bidrar till mer komplicerade testbäddar.
+
+Förutom testmiljön så erbjuder Let's Encrypt en liten ACME-server specialbyggd
+för CI och utvecklingsmiljöer kallad
+[Pebble](https://github.com/letsencrypt/pebble). Att köra Pebble på din
+utvecklingsmaskin eller i en CI-miljö är [snabbt och
+enkelt](https://github.com/letsencrypt/pebble#docker).

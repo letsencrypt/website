@@ -6,6 +6,8 @@ date: 2019-02-25
 lastmod: 2019-02-25
 ---
 
+{{< lastmod >}}
+
 Когда вы запрашиваете новый сертификат у Let’s Encrypt, наши серверы проверяют 
 права на доменные имена в сертификате, используя "испытания" (или "проверки"), 
 согласно стандарту ACME. Проверки выполняются с помощью ACME-клиента и не требуют 
@@ -141,5 +143,5 @@ Apache и Nginx, однажды, поддержат протокол ALPN (а [C
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

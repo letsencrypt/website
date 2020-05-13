@@ -5,7 +5,9 @@ top_graphic: 3
 date: 2019-12-21
 ---
 
-Para habilitar HTTPS en tu página de web, tienes que obtener un certificado (un tipo de archivo) de una Autoridad de Certificación (AC, o CA por sus siglas en inglés). Let's Encrypt es una AC. Para obtener un certificado para tu dominio de sitio web de Let's Encrypt, tienes que demonstrar control sobre ese dominio. Con Let's Encrypt, puedes hacer esto con software que usa el [protocolo ACME](https://ietf-wg-acme.github.io/acme/), el cual típicamente corre en tu hospedaje de web.
+{{< lastmod >}}
+
+Para habilitar HTTPS en tu página de web, tienes que obtener un certificado (un tipo de archivo) de una Autoridad de Certificación (AC, o CA por sus siglas en inglés). Let's Encrypt es una AC. Para obtener un certificado para tu dominio de sitio web de Let's Encrypt, tienes que demonstrar control sobre ese dominio. Con Let's Encrypt, puedes hacer esto con software que usa el [protocolo ACME](https://tools.ietf.org/html/rfc8555), el cual típicamente corre en tu hospedaje de web.
 
 Para averiguar cuál método funcionará mejor para ti, tendrás que saber si tienes [acceso shell](https://en.wikipedia.org/wiki/Shell_account) (también conocido como acceso SSH) a tu hospedaje de web. Si manejas tu sitio web enteramente mediante un panel de control como [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), o [WordPress](https://wordpress.org/), hay una buena posibilidad que no tienes acceso shell. Puedes preguntarle a tu proveedor de hospedaje para estar seguro.
 
@@ -13,9 +15,9 @@ Para averiguar cuál método funcionará mejor para ti, tendrás que saber si ti
 
 Recomendamos que la mayoría de las personas con *acceso shell* usen el cliente ACME llamado [Certbot]. Éste puede automatizar la emisión e instalación de certificados con cero tiempo de inactivdad. También tiene modos de expertos para personas que no quieren autoconfiguración. Es fácil de usar, funciona en muchos sistemas operativos, y tiene documentación genial. [Visita la página web de Certbot][Certbot] para conseguir instrucciones para tu sistema operativo y servidor de web.
 
-Si [Certbot] no cumple con tus necesidades, o quisieras tratar otra cosa, [hay muchos otros clientes ACME para escoger]({{< relref "/docs/client-options.md" >}}). Una vez hayas escogido un cliente ACME, ve la documentación para ese cliente para proceder.
+Si [Certbot] no cumple con tus necesidades, o quisieras tratar otra cosa, [hay muchos otros clientes ACME para escoger](/docs/client-options). Una vez hayas escogido un cliente ACME, ve la documentación para ese cliente para proceder.
 
-Si estás experimentando con diferentes clientes ACME, usa nuestro [ambiente de *staging*]({{< relref "/docs/staging-environment.md" >}}) para evitar que llegues a nuestros [limites de tarifa]({{< relref "/docs/rate-limits.md" >}}).
+Si estás experimentando con diferentes clientes ACME, usa nuestro [ambiente de *staging*](/docs/staging-environment) para evitar que llegues a nuestros [limites de tarifa](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

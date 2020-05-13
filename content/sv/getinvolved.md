@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## Användargemenskap
 
 Vi kan alltid behöva hjälp att besvara frågor på vårt [användarsupportforum](https://community.letsencrypt.org/). Se [detta blogginlägg](/2015/08/13/lets-encrypt-community-support.html) om varför supporthjälp från användargemenskapen är så viktig.
@@ -19,11 +21,11 @@ Vi kan också behöva hjälp med mjukvaruutveckling. All vår kod finns på [Git
 
 ### Klientmjukvara
 
-[Certbot](https://github.com/certbot/certbot) är ett Python-baserat verktyg som arbetar bredvid din webbserver för att automatiskt erhålla ett certifikat och konvertera en webbplats till HTTPS. Certbot är klienten vi rekommenderar de flesta att börja med. Det finns dock många andra [tredjepartsklienter]({{< relref "/docs/client-options.md" >}}) att välja mellan.
+[Certbot](https://github.com/certbot/certbot) är ett Python-baserat verktyg som arbetar bredvid din webbserver för att automatiskt erhålla ett certifikat och konvertera en webbplats till HTTPS. Certbot är klienten vi rekommenderar de flesta att börja med. Det finns dock många andra [tredjepartsklienter](/docs/client-options) att välja mellan.
 
 ### Server-side CA Software
 
-[Boulder](https://github.com/letsencrypt/boulder) är Let's Encrypts CA-implementation. Den bygger på [ACME](https://github.com/ietf-wg-acme/acme)-protokollet och är i huvudsak skriven i Go. Ett bra ställe att börja är i ["hjälp sökes"-listan](https://github.com/letsencrypt/boulder/labels/help%20wanted) och [riktlinjerna för att bidra](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) är Let's Encrypts CA-implementation. Den bygger på [ACME](https://tools.ietf.org/html/rfc8555)-protokollet och är i huvudsak skriven i Go. Ett bra ställe att börja är i ["hjälp sökes"-listan](https://github.com/letsencrypt/boulder/labels/help%20wanted) och [riktlinjerna för att bidra](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

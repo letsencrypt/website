@@ -6,6 +6,8 @@ top_graphic: 5
 lastmod: 2019-10-18
 ---
 
+{{< lastmod >}}
+
 # Root 인증서
 
 저희 root는 안전하게 오프라인 상태로 유지됩니다. 다음 섹션에서는 중간 인증서로부터 최종 기관 인증서를 가입자에게 발행합니다.
@@ -71,4 +73,4 @@ IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저
 
 ISRG Root CA 및 Let's Encrypt 중간 CA의 개인 키는 도난당한 키에 대해 높은 수준의 보호 기능을 제공하는 하드웨어 보안 모듈 (HSM)에 저장됩니다.
 
-모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 [ECDSA 키를 생성 할 계획]({{< relref "/upcoming-features.md" >}})입니다.
+모든 ISRG 키는 현재 RSA 키입니다. 우리는 2018년 3월에 [ECDSA 키를 생성 할 계획](/upcoming-features)입니다.

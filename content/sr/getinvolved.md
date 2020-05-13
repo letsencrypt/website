@@ -9,6 +9,8 @@ menu:
     parent: donate
 ---
 
+{{< lastmod >}}
+
 ## Zajednica
 
 Uvek nam koristi pomoć pri odgovaranju na pitanja u [Let's Encrypt Zajednici](https://community.letsencrypt.org/). Pročitajte [ovaj blog post](/2015/08/13/lets-encrypt-community-support.html) o tome zašto su doprinosi zajednice tako važni.
@@ -19,11 +21,11 @@ Takođe,često volimo da koristimo i pomoć oko razvoja softvera.Ceo naš izvorn
 
 ### Klijentski softver
 
-[Certbot](https://github.com/certbot/certbot) je uslužni program koji se temelji na Pythonu i koji zajedno sa vašim web serverom automatski potražuje sertifikat i pretvara web lokaciju u HTTPS osiguranu. Certbot je klijentski softver koji preporučujemo većini ljudi. Mnoge druge [klijentske opcije trećih strana]({{< relref "/docs/client-options.md">}}) su takođe dostupne.
+[Certbot](https://github.com/certbot/certbot) je uslužni program koji se temelji na Pythonu i koji zajedno sa vašim web serverom automatski potražuje sertifikat i pretvara web lokaciju u HTTPS osiguranu. Certbot je klijentski softver koji preporučujemo većini ljudi. Mnoge druge [klijentske opcije trećih strana](/docs/client-options) su takođe dostupne.
 
 ### Server-side CA softver
 
-[Boulder](https://github.com/letsencrypt/boulder) je implementacija Let's Encrypt CA. Temelji se na protokolu [ACME](https://github.com/ietf-wg-acme/acme), a prvenstveno je napisan u programskom jeziku Go. Sjajno mesto za početak je popis [pitanja od ljudi koji traže pomoć) (https://github.com/letsencrypt/boulder/labels/help%20wanted) i [vodič za doprinose](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) je implementacija Let's Encrypt CA. Temelji se na protokolu [ACME](https://tools.ietf.org/html/rfc8555), a prvenstveno je napisan u programskom jeziku Go. Sjajno mesto za početak je popis [pitanja od ljudi koji traže pomoć](https://github.com/letsencrypt/boulder/labels/help%20wanted) i [vodič za doprinose](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

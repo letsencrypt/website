@@ -5,6 +5,8 @@ top_graphic: 5
 lastmod: 2019-05-01
 ---
 
+{{< lastmod >}}
+
 # Root Sertifikati
 
 Naši root sertifikati se čuvaju na sigurnom "offline" mestu. Mi izdajemo sertifikate našim pretplatnicima preko posrednika iz naredne sekcije.
@@ -93,4 +95,4 @@ dok ih izdajemo. Možete pregledati sve izdate sertifikate na sledećim linkovim
 
 Privatni ključevi za ISRG root CA i intermedijarni podaci Let’s Encrypt čuvaju se na hardverskim sigurnosnim modulima (HSM), koji pružaju visok stepen zaštite od krađe ključeva.
 
-Svi ISRG ključevi trenutno su RSA ključevi. U budućnosti [planiramo generisati ECDSA ključeve]({{< relref "/upcoming-features.md">}}).
+Svi ISRG ključevi trenutno su RSA ključevi. U budućnosti [planiramo generisati ECDSA ključeve](/upcoming-features).
