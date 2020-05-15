@@ -1160,11 +1160,3 @@ PEM certificate will always be the same. Try it yourself:
 ```
 xxd -r -p <<<308200 | base64
 ```
-
-One More Thing
-==============
-
-We're hiring! As of April 2020 We're looking for one more excellent software
-engineer to join our team. If you liked this post, we'd love to work with you.
-[Check out our job listing here, and mention "A Warm Welcome" if you
-apply.](https://www.abetterinternet.org/careers/)
