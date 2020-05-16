@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-04-30
+lastmod: 2020-05-15
 ---
 
 This document provides a gentle introduction to the data structures and
