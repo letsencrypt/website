@@ -131,6 +131,12 @@ status = 404
 force = false
 
 [[redirects]]
+from = "/he/*"
+to = "/he/404.html"
+status = 404
+force = false
+
+[[redirects]]
 from = "/id/*"
 to = "/id/404.html"
 status = 404

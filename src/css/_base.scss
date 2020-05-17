@@ -169,6 +169,7 @@ blockquote {
  */
 pre,
 code {
+    direction:ltr;
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
@@ -263,7 +264,13 @@ pre {
 .justify {
     text-align: justify;
 }
+html[dir="rtl"] .tal {
+    text-align: right;
+}
 .tal {
+    text-align: left;
+}
+html[dir="rtl"] .tar {
     text-align: left;
 }
 .tar {
@@ -273,7 +280,13 @@ pre {
     margin-left: 20%;
     margin-right: 20%;
 }
+html[dir="rtl"] .mr1m {
+    margin-left: 1em;
+}
 .mr1m {
+    margin-right: 1em;
+}
+html[dir="rtl"] .ml1m {
     margin-right: 1em;
 }
 .ml1m {

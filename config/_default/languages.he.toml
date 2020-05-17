@@ -1,0 +1,14 @@
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/he"
+languageName = "עברית"
+languageCode = "he"
+beforeColon = ""
+weight = 325
+description = """
+  Let's Encrypt היא רשות אישורים חופשית, אוטומטית ופתוחה
+  שמוגשת לך באדיבות <a href="https://www.abetterinternet.org/">קבוצת מחקר אבטחת האינטרנט (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/he_IL/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "IL"
+numberFormat = "-|.|,"
+languagedirection = "rtl"
