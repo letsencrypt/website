@@ -5,9 +5,9 @@ document.querySelectorAll("[id^=\"def-\"]").forEach(function(def){
 	let title = def.closest(".definition").textContent;
 	if ( title.match(/\.\s/) ) {
 		// We take everything until the last period. (Everything after are links such as "Wikipedia"
-		title = title.match(/^.*\.\s/s)[0];
-		title = title.replace(/\n/g," ")
-		title = title.replace(/\s\s+/g," ")
+		title = title.match(/^[\s\S]*\.\s/)[0];
+		title = title.replace(/\n/g," ");
+		title = title.replace(/\s\s+/g," ");
 	}
 	document.querySelectorAll(".definition>a[href^=\"#"+id+"\"]").forEach(function(a){
 		a.title = title;
