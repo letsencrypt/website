@@ -131,6 +131,10 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "CyberPanel",
+			"url": "https://cyberpanel.net/"
 		}
 	],
 	"list": [
