@@ -8,7 +8,7 @@ slug: transitioning-to-isrg-root
 
 > **Update, June 11 2020**
 > 
-> Due to concerns about insufficient ISRG root propagation on Android devices we have [decided to move the date on which we will start serving a chain to our own root](LINK_GOES_HERE) to September 29, 2020.
+> Due to concerns about insufficient ISRG root propagation on Android devices we have [decided to move the date on which we will start serving a chain to our own root](https://community.letsencrypt.org/t/transitioning-to-isrgs-root/94056) to September 29, 2020.
 
 On September 29, 2020, we will change the default intermediate certificate we provide via ACME. Most subscribers don’t need to do anything. Subscribers who support [very old TLS/SSL clients](https://letsencrypt.org/docs/certificate-compatibility/#known-incompatible) may want to manually configure the older intermediate to increase backwards compatibility.
 
