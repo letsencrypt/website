@@ -86,6 +86,7 @@
       {"name":"one.com","url":"https://www.one.com/","image":"one-com-logo.png"},
       {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
       {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"},
+      {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
       {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"}
 ]
 }
