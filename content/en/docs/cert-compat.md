@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2020-02-07
+lastmod: 2020-06-19
 ---
 
 {{< lastmod >}}
@@ -47,3 +47,9 @@ You may want to visit [this particular community forum discussion](https://commu
   * cannot handle certificates without a CRL
 * PS3 game console
 * PS4 game console with firmware < 5.00
+
+# envirement that doesn't include ISRG X1 in their trust store
+
+* Android < v7.1.2
+* Mac OS x < v10
+* iOS < 10.12.1
