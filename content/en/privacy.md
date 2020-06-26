@@ -2,8 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-date: 2019-09-19
-lastmod: 2020-02-21
+lastmod: 2020-06-26
 english_is_canonical: 1
 ---
 
@@ -21,7 +20,7 @@ When you use an HTTPS web site or other TLS service with a Let’s Encrypt certi
 
 ## Subscriber
 
-If you are a Subscriber, you are requesting a trusted certificate from Let’s Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let’s Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let’s Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per both contractual necessity and public interest. We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
+If you are a Subscriber, you are requesting a trusted certificate from Let’s Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let’s Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let’s Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
 
 You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per “Law Enforcement and Extenuating Circumstances,” below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the “unsubscribe” link at the bottom of our emails or by contacting us at [security@letsencrypt.org](mailto:security@letsencrypt.org). We will not use your contact information for marketing or promotional purposes.
 
@@ -31,11 +30,15 @@ You may need to download client software from a repository such as those run by 
 
 When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested.
 
-You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. We do not sell your information. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
+You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 If you register to use the Let’s Encrypt community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
 
 Additionally, we use Google Analytics to gauge traffic and popular pages on our web site. As part of that service, we place Google Analytics cookies on our site. These cookies do not contain personal information but can uniquely identify your browser software over time on our site. We respect the [Do Not Track](http://donottrack.us/) header by strictly limiting the information our analytics services can collect and share for all Visitors.
+
+## We Do Not Sell Your Data or Information
+
+We do not sell your data or information. This includes Relying Party, Subscriber, and Visitor data and information.
 
 ## Law Enforcement Requests and Extenuating Circumstances
 
@@ -47,7 +50,7 @@ In addition, we reserve the right, solely at our discretion, to independently ob
 
 ## What rights do European Economic Area relying parties, subscribers, and visitors have under GDPR, and how can I exercise them?
 
-We process personal data as described in this policy. We rely on your consent to send emails. When we collect IP address, we process that data based on contractual necessity of being able to demonstrate that the service performs as expected. Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
+We process personal data as described in this policy. We rely on your consent to send emails. When we collect IP addresses, we process that data based on contractual necessity of being able to demonstrate that the service performs as expected. Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
 
 Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of the site. If you're a relying party, subscriber, or visitor based in the EEA, you can:
 
