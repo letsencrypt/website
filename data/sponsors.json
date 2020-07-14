@@ -10,7 +10,9 @@
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
-      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"}
+      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
+      {"name":"Avast","url":"https://www.avast.com/","image":"avast-logo.png"}
+
 ],
 "silver":[
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
