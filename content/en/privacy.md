@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2020-06-26
+lastmod: 2020-07-21
 english_is_canonical: 1
 ---
 
@@ -14,13 +14,17 @@ The Let’s Encrypt Privacy Policy describes how we collect, use, and disclose y
 * When you are a Subscriber, i.e., when you request and use certificates from Let’s Encrypt,
 * When you are a Visitor to the Let’s Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let’s Encrypt operates an account.
 
+Let's Encrypt is a service provided by [Internet Security Research Group](https://www.abetterinternet.org/), a California (United States) Nonprofit Public Benefit Corporation.
+
 ## Relying Party
 
 When you use an HTTPS web site or other TLS service with a Let’s Encrypt certificate, your browser (or TLS client) may query Let’s Encrypt to check whether the certificate has been revoked (“OCSP request”). If your browser makes an OCSP request, our servers will automatically record your IP address, browser, and operating system in temporary server log files. We do not use data from OCSP requests to build profiles or identify individuals. Temporary server logs are used for operational purposes only and are normally deleted in less than seven days. We may retain a subset of server logs for longer periods in order to investigate software failures or abuse. If we do so, we will delete any stored logs when we are done investigating. We may also compute, retain and publish aggregate information from server logs, such as which certificates generate the largest volume of requests. We will always strive to ensure that such datasets do not contain information about the activities of identifiable users or devices.
 
 ## Subscriber
 
-If you are a Subscriber, you are requesting a trusted certificate from Let’s Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let’s Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let’s Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
+If you are a Subscriber, you are requesting a trusted certificate from Let’s Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let’s Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let’s Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. This information will be stored for a maximum of ten years.
+
+We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
 
 You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per “Law Enforcement and Extenuating Circumstances,” below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the “unsubscribe” link at the bottom of our emails or by contacting us at [security@letsencrypt.org](mailto:security@letsencrypt.org). We will not use your contact information for marketing or promotional purposes.
 
@@ -51,6 +55,8 @@ In addition, we reserve the right, solely at our discretion, to independently ob
 ## What rights do European Economic Area relying parties, subscribers, and visitors have under GDPR, and how can I exercise them?
 
 We process personal data as described in this policy. We rely on your consent to send emails. When we collect IP addresses, we process that data based on contractual necessity of being able to demonstrate that the service performs as expected. Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
+
+Please note that your personal data may be collected from or transferred to jurisdictions where we and our service providers store or process data, including the United States. These jurisdictions may not provide the same level of data protection as your jurisdiction, including the EEA. We have taken steps to ensure that our service providers provide an adequate level of protection for the personal data of EEA residents, including by entering into data processing agreements using the European Commission-approved Standard Contractual Clauses, or by using other safeguards approved by the European Commission. You have a right to obtain details of the mechanism under which your personal information is transferring outside the EU by emailing us at the contact information below.
 
 Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of the site. If you're a relying party, subscriber, or visitor based in the EEA, you can:
 
