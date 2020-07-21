@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-05-15
+lastmod: 2020-07-21
 ---
 
 This document provides a gentle introduction to the data structures and
@@ -1160,3 +1160,11 @@ PEM certificate will always be the same. Try it yourself:
 ```
 xxd -r -p <<<308200 | base64
 ```
+
+One More Thing
+==============
+
+We're hiring! As of July 2020 We're looking for one more excellent software
+engineer to join our team. If you liked this post, we'd love to work with you.
+[Check out our job listing here, and mention "A Warm Welcome" if you
+apply.](https://www.abetterinternet.org/careers/)
