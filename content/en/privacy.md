@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2020-07-21
+lastmod: 2020-07-24
 english_is_canonical: 1
 ---
 
@@ -32,7 +32,7 @@ You may need to download client software from a repository such as those run by 
 
 ## Visitor
 
-When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested.
+When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested.
 
 You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
@@ -54,11 +54,29 @@ In addition, we reserve the right, solely at our discretion, to independently ob
 
 ## What rights do European Economic Area relying parties, subscribers, and visitors have under GDPR, and how can I exercise them?
 
-We process personal data as described in this policy. We rely on your consent to send emails. When we collect IP addresses, we process that data based on contractual necessity of being able to demonstrate that the service performs as expected. Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
+We process personal data as described in this policy. The purpose and lawful basis for information processing is as follows:
 
-Please note that your personal data may be collected from or transferred to jurisdictions where we and our service providers store or process data, including the United States. These jurisdictions may not provide the same level of data protection as your jurisdiction, including the EEA. We have taken steps to ensure that our service providers provide an adequate level of protection for the personal data of EEA residents, including by entering into data processing agreements using the European Commission-approved Standard Contractual Clauses, or by using other safeguards approved by the European Commission. You have a right to obtain details of the mechanism under which your personal information is transferring outside the EU by emailing us at the contact information below.
+**Purpose:** Providing Certificate Status (OCSP) Information<br>
+**Lawful Basis:** Legitimate Interests<br>
+**Additional Information:** We collect and process information from Relying Parties in order to reliably provide certificate status information.
 
-Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of the site. If you're a relying party, subscriber, or visitor based in the EEA, you can:
+**Purpose:** Providing Certificate Issuance and Management Services<br>
+**Lawful Basis:** Contract, Legitimate Interests<br>
+**Additional Information:** We collect and process information from Subscribers in order to provide reliable and secure certificate issuance and management services, and to demonstrate to the public that our services perform as expected.
+
+**Purpose:** Providing Information to Visitors<br>
+**Lawful Basis:** Consent, Legitimate Interests<br>
+**Additional Information:** We collect and process information from Visitors in order to provide information via the Web and email in a reliable and efficient manner.
+
+**Purpose:** Processing Donations and Sponsorship Inquiries<br>
+**Lawful Basis:** Legitimate Interests<br>
+**Additional Information:** We collect and process information in order to process and support donations.
+
+Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
+
+Your personal data may be collected from or transferred to jurisdictions where we and our service providers store or process data, including the United States. These jurisdictions may not provide the same level of data protection as your jurisdiction, including the EEA. We have taken steps to ensure that our service providers provide an adequate level of protection for the personal data of EEA residents, including by entering into data processing agreements using the European Commission-approved Standard Contractual Clauses, or by using other safeguards approved by the European Commission. You have a right to obtain details of the mechanism under which your personal information is transferring outside the EU by emailing us at the contact information below.
+
+Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of our sites and services. If you're an individual who is a relying party, subscriber, or visitor based in the EEA, you can:
 
 * Request a personal data report by emailing us at security@letsencrypt.org. This report will include the personal data we have about you, provided to you in a structured, commonly used, and portable format. Please note that we may request additional information from you to verify your identity before we disclose any information.
 * Request that your information be corrected or deleted by contacting us at security@letsencrypt.org.
