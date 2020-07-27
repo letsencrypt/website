@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2020-07-24
+lastmod: 2020-07-27
 english_is_canonical: 1
 ---
 
@@ -71,6 +71,10 @@ We process personal data as described in this policy. The purpose and lawful bas
 **Purpose:** Processing Donations and Sponsorship Inquiries<br>
 **Lawful Basis:** Legitimate Interests<br>
 **Additional Information:** We collect and process information in order to process and support donations.
+
+**Purpose:** Legal Obligations and Extenuating Circumstances<br>
+**Lawful Basis:** Legal Obligation, Legitimate Interests<br>
+**Additional Information:** We may collect and process information in order to comply with legal obligations and when we have a good faith belief it is necessary to prevent loss of life, personal injury, damage to property, or significant financial harm.
 
 Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
 
