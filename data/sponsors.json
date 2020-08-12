@@ -88,6 +88,7 @@
       {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
       {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"},
       {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
-      {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"}
+      {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"},
+      {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"}
 ]
 }
