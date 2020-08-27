@@ -17,6 +17,8 @@
         {{ $scratch.Set "view_in_xxx" "Voir en Français" }}
       {{ else if eq .Language.Lang "de" }}
         {{ $scratch.Set "view_in_xxx" "Auf Deutsch ansehen" }}
+      {{ else if eq .Language.Lang "uz" }}
+        {{ $scratch.Set "view_in_xxx" "O‘zbek tilida ko‘rish" }}  
       {{ else if eq .Language.Lang "pt-br" }}
         {{ $scratch.Set "view_in_xxx" "Ver em Português (do brasil)" }}
       {{ else if eq .Language.Lang "ru" }}
