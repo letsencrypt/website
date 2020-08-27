@@ -1,69 +1,66 @@
 ---
-title: Getting Started
+title: Boshlash
 slug: getting-started
 top_graphic: 3
 date: 2020-02-11
 ---
 
-To enable HTTPS on your website, you need to get a certificate (a type of file)
-from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
-certificate for your website's domain from Let's Encrypt, you have to demonstrate
-control over the domain. With Let's Encrypt, you do this using software that uses
-the [ACME protocol](https://tools.ietf.org/html/rfc8555) which typically runs
-on your web host.
+Saytinggizda HTTPSni yoqish uchun, Sertifikat Markazi(CA)dan sertifikat (fayl turi) olishinggiz lozim bo‘ladi.
+Let's Encrypt CA hisoblanadi. Saytinggiz uchun Let's Encryptdan sertifikat olish uchun, siz shu domen boshqaruvi sizda
+ekanligini isbotlashinggiz kerak. Let's Encrypt yordamida, siz buni the [ACME protocol](https://tools.ietf.org/html/rfc8555)idan 
+foydalanuvchi web hostda ishlaydigan ilova yordamida qilishinggiz mumkin.
 
-To figure out what method will work best for you, you will need to know whether
-you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
-as SSH access) to your web host. If you manage your website entirely through a
-control panel like [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), or
-[WordPress](https://wordpress.org/), there's a good chance you don't have shell
-access. You can ask your hosting provider to be sure.
+Qaysi usul sizga mosligini bilish uchun, sizga web hostinggizga [shell ruxsati](https://en.wikipedia.org/wiki/Shell_account) 
+(ya'ni SSH ruxsati) bor yo‘qligini bilish kerak. Agar web saytinggizni to‘liq boshqaruv paneli kabi [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), yoki
+[WordPress](https://wordpress.org/) orqqali boshqarsanggiz, sizda shell ruxsati yo‘q bo‘lish ehtimoli yuqori. Siz buni hosting provayderdan aniqlashtirishinggiz mumkin.
 
-# With Shell Access
+# Shell Ruxsati
 
-We recommend that most people with shell access use the
-[Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
-It also has expert modes for people who don't want autoconfiguration. It's easy to use,
-works on many operating systems, and has great documentation. [Visit the
-Certbot site][Certbot] to get customized instructions for your operating system and web server.
+Shell ruxsatga ega insonlarga maxsus [Certbot] ACME klientidan foydalanishni tavsiya qilamiz.
+Bu sertifikatni chiqarish va o‘rnatishni avtomatlashtira oladi.
 
-If [Certbot] does not meet your needs, or you'd like to try something else, there are
-[many more ACME clients to choose from](/docs/client-options).  Once you've chosen ACME client
-software, see the documentation for that client to proceed.
+Unda avtomatik sozlashni xohlamaydiganlar uchun maxsus, ekspert rejimi ham mavjud. 
+U ishlatish uchun qulay, turli operatsion tizimlarda ishlaydi va yaxshi qo‘llanmaga ega. 
+Sizning operatsion tiziminggiz va web serveringgiz uchun yo‘riqnomani olish uchun [Certbot saytiga kiring][Certbot].
 
-If you're experimenting with different ACME clients, use our
-[staging environment](/docs/staging-environment) to avoid hitting
-[rate limits](/docs/rate-limits).
+Agar [Certbot] sizning ehtiyojinggizni qondirmasa, yoki boshqasini sinab ko‘rmoqchi bo‘lsanggiz, boshqa
+[ACME klientlari ham mavjud](/docs/client-options). ACME klientni tanlaganinggizdan so‘ng, 
+O‘sha klient qo‘llanmalaridan foydalaning.
+
+Agar turli ACME klientlarni sinayotgan bo‘lsanggiz, [tezlik cheklovlari](/docs/rate-limits)dan oshib ketmaslik uchun,
+bizning [sahnalashtiruvchi muhitimiz](/docs/staging-environment)ga kiring.
+.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 
-# Without Shell Access
+# Shell Ruxsatisiz
 
-The best way to use Let's Encrypt without shell access is by using built-in support
-from your hosting provider. If your hosting provider offers Let's Encrypt
-support, they can request a free certificate on your behalf, install it, and
-keep it up-to-date automatically. For some hosting providers, this is a
-configuration setting you need to turn on. Other providers automatically
-request and install certificates for all their customers.
+Let's Encryptdan shell ruxsatiga ega bo‘lmagan taqdirda, bu xizmatni hosting provayderidan 
+olishinggiz o‘rinli. Agar hosting provayderinggiz Let's Encryptni taqdim qilsa, ular sizning 
+nominggizdan avtomatik ravishda bepul sertifikat so‘rovini amalga oshirishlari, 
+o‘rnatishlari va yangilab turishlari mumkin. Ba'zi hosting provayderlari uchun bu sozlamalardan 
+tanlanuvchi xususiyat xolos. Boshqa provayderlar o‘z mijozlari uchun avtomatik so‘rov va sertifikatni 
+o‘rnatishlari mumkin.
 
-[Check our list of hosting providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-to see if yours is on it. If so, follow their documentation to set up your
-Let's Encrypt certificate.
 
-If your hosting provider does not support Let's Encrypt, you can contact them to
-request support. We do our best to make it very easy to add Let's Encrypt
-support, and providers are often happy to hear suggestions from customers!
+[Bizning hosting provayderlar ro‘yxatimiz bilan tanishing](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920). 
+Agar sizning provayderinggiz ro‘yxatda bo‘lsa, Let's Encrypt sertifikatini o‘rnatish uchun ularning 
+qo‘llanmasidan foydalaning.
 
-If your hosting provider doesn't want to integrate Let's Encrypt, but does
-support uploading custom certificates, you can install Certbot on your own
-computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
-In manual mode, you upload a specific file to your website to prove your
-control. Certbot will then retrieve a certificate that you can upload to your
-hosting provider. We don't recommend this option because it is time-consuming
-and you will need to repeat it several times per year as your certificate
-expires. For most people it is better to request Let's Encrypt support from your
-hosting provider, or switch providers if they do not plan to implement it.
+Agar siz hosting provayderinggiz Let's Encryptni qo‘llab-quvvatlamasa, siz ularga qo‘llab-quvvatlash 
+masalasida murojaat qilishinggiz mumkin. Biz Let's Encryptni qo‘llab-quvvatlanishi uchun qo‘limizdan 
+kelgan barcha ishni qilamiz, va provayderlar o‘z mijozlaridan taklif qabul qilishlari zavqli! 
 
-# Getting Help
+Agar hosting provayderinggiz Let's Encryptni integratsiya qilinishiga rozi bo‘lmasa, lekin alohida sertifikatlarni
+yuklashni qo‘llab-quvvatlasa, siz Certbotni o‘z kompyuteringgizga o‘rnatishinggiz va [qo‘l rejimida](https://certbot.eff.org/docs/using.html#manual) foydalanishinggiz mumkin.
 
-If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
+Qo‘l rejimida, siz boshqaruv sizda ekanligini isbotlash uchun siz ma'lum bir faylni web saytinggizga yuklaysiz.
+Certbot siz hosting provayderinggiz uchun joylasa bo‘ladigan sertifikat tayyorlab beradi. Biz bunday usulni
+maslahat bermaymiz chunki u ko‘p vaqt talab etadi va yil davomida muddati kelganida bir necha marta bu jarayonni 
+takrorlashinggizga to‘g‘ri keladi. Ko‘p hollarda, Let's Encrypt qo‘llab-quvvatlanishini hosting provayderdan
+so‘rash o‘rinli, yoki agar uni qo‘llab-quvvatlanishi rejalashtirilmayotgan bo‘lsa, provayderni almashtirish joiz.
+
+
+# Yordam olish
+
+Agar ACME klientni tanlash bo‘yicha yoki ma'lum bir klient bo‘yicha savollaringgiz bo‘lsa, yoki Let's Encryptga bog‘liq istalgan savol bo‘lsa, iltimoz bizning [foydali jamoatchilik forumi](https://community.letsencrypt.org/)dan foydalaning.

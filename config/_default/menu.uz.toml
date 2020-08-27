@@ -3,7 +3,7 @@ name = "Yordam olish"
 weight = 20
 url = "https://community.letsencrypt.org/"
 [[main]]
-name = "Hayriya qilish"
+name = "Xayriya qilish"
 weight = 30
 identifier = "donate"
 url = "/donate/"

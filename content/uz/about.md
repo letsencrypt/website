@@ -16,7 +16,7 @@ Biz insonlarga o‘z web sahifalarida HTTPS (SSL/TLS)ni sozlash uchun tekin, foy
 
 Siz bizning eng yaqin yildagi yillik hisobotimizda tanishishinggiz mumkin ([Desktop](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
-Let's Encrypt negizida quyidagi tamoyillar yotibdi:
+Let's Encrypt negizida quyidagi tamoyillar yotadi:
 
 * <strong>Bepul:</strong> Kimda domen nomi bo‘lsa, u ishonchli sertifikat olish uchun Let's Encryptdan tekinga foydalanishi mumkin.
 * <strong>Avtomatik:</strong> Web serverda ishlovchi dastur sertifikatni oson olishi, foydalanish uchun xavfsiz sozlash va muntazam yangilash uchun Let's Encrypt bilan muloqot qilishi mumkin. 
