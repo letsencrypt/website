@@ -26,8 +26,7 @@ The number of certificates and unique domains we support continues to grow rapid
   <div id="activeUsage" title="Let's Encrypt Growth" class="statsgraph"></div>
 </div>
 
-<script src="/js/stats.js" async></script>
-<script src="/js/plotly-min.js" async></script>
+{{< plotly >}}
 
 We expect strong growth again in 2019, likely up to 120M active certificates and 215M fully qualified domains. You can view our recently revamped [stats page](https://letsencrypt.org/stats/) for more information.
 

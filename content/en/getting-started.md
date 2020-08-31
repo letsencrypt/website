@@ -28,12 +28,12 @@ works on many operating systems, and has great documentation. [Visit the
 Certbot site][Certbot] to get customized instructions for your operating system and web server.
 
 If [Certbot] does not meet your needs, or you'd like to try something else, there are
-{{<link "many more ACME clients to choose from" "/docs/client-options" >}}.  Once you've chosen ACME client
+[many more ACME clients to choose from](/docs/client-options).  Once you've chosen ACME client
 software, see the documentation for that client to proceed.
 
 If you're experimenting with different ACME clients, use our
-{{<link "staging environment" "/docs/staging-environment" >}} to avoid hitting
-{{<link "rate limits" "/docs/rate-limits" >}}.
+[staging environment](/docs/staging-environment) to avoid hitting
+[rate limits](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

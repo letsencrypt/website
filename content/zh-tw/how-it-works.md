@@ -7,7 +7,7 @@ lastmod: 2019-10-18
 
 {{< lastmod >}}
 
-Let's Encrypt 和 [ACME 協定](https://ietf-wg-acme.github.io/acme/)的目標是：在沒有人為介入的情況下，讓網頁伺服器可以自動取得瀏覽器可信任的憑證。這項工作是透過運行在網頁伺服器上的憑證管理軟體來達成的。
+Let's Encrypt 和 [ACME 協定](https://tools.ietf.org/html/rfc8555)的目標是：在沒有人為介入的情況下，讓網頁伺服器可以自動取得瀏覽器可信任的憑證。這項工作是透過運行在網頁伺服器上的憑證管理軟體來達成的。
 
 為了瞭解該技術的工作原理，讓我們先了解在網頁伺服器上；支援 Let's Encrypt 的憑證管理軟體，是如何設定 `https://example.com` 的流程。
 

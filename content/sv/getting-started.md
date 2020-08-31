@@ -2,17 +2,15 @@
 title: Kom igång
 slug: getting-started
 top_graphic: 3
-date: 2019-12-21
+date: 2020-02-11
 ---
-
-{{< lastmod >}}
 
 För att aktivera HTTPS på din webbplats behöver du erhålla ett certifikat (en
 typ av fil) från en certifikatutgivare (CA, Certificate Authority). Let's
 Encrypt är en sådan.  För att erhålla ett certifikat för din webbplats domän
 från Let's Encrypt behöver du bevisa kontroll över domänen. Med Let's Encrypt
 gör du detta genom att använda ett program som använder
-[ACME-protokollet](https://ietf-wg-acme.github.io/acme/) och det kör vanligtvis
+[ACME-protokollet](https://tools.ietf.org/html/rfc8555) och det kör vanligtvis
 på din webbserver.
 
 För att få reda på vilken metod som funkar bäst för dig behöver du veta huruvida
@@ -34,12 +32,12 @@ Certbot-sajten][Certbot] (engelska) för att få skräddarsydda instruktioner f�
 ditt operativsystem och din webbserver.
 
 Om [Certbot] inte uppfyller dina krav eller om du vill testa något annat så
-finns det {{<link "många fler ACME-klienter att välja bland" "/docs/client-options" >}}. När du väl valt ACME-klient så kika på den
+finns det [många fler ACME-klienter att välja bland](/docs/client-options). När du väl valt ACME-klient så kika på den
 klientens dokumentation för att fortsätta.
 
 Om du experimenterar med olika ACME-klienter, se till att använda vår
-{{<link "testmiljö" "/docs/staging-environment" >}} för att undvika att
-utsättas för {{<link "taktbegränsningar" "/docs/rate-limits" >}}.
+[testmiljö](/docs/staging-environment) för att undvika att
+utsättas för [taktbegränsningar](/docs/rate-limits).
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

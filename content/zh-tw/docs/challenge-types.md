@@ -46,14 +46,16 @@ HTTP-01 只能只能透過通訊埠 80 來完成；讓 ACME 客戶端使用任�
 你可以在 DNS 紀錄上為網域名稱提供多個 TXT 紀錄。例如：你想同時驗證萬用憑證和非萬用憑證。需要注意的是，要確保舊的 TXT 紀錄已經被清除，如果回應資料太多，Let’s Encrypt 將會拒絕驗證。
 
 優點：
-- 你可以申請頒發萬用憑證
-- 能替你驗證多個網頁伺服器
+
+ - 你可以申請頒發萬用憑證
+ - 能替你驗證多個網頁伺服器
 
 
 缺點：
-- 把 API 金鑰在你的網頁伺服器上會有安全疑慮
-- 你的 DNS 業者可能沒有提供 API
-- 你的 DNS 業者的 API 可能沒有提供 DNS 更新時間的資訊
+
+ - 把 API 金鑰在你的網頁伺服器上會有安全疑慮
+ - 你的 DNS 業者可能沒有提供 API
+ - 你的 DNS 業者的 API 可能沒有提供 DNS 更新時間的資訊
 
 # TLS-SNI-01 
 
@@ -80,5 +82,5 @@ HTTP-01 只能只能透過通訊埠 80 來完成；讓 ACME 客戶端使用任�
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

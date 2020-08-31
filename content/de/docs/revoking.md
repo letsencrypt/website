@@ -27,7 +27,7 @@ hat](https://www.imperialviolet.org/2011/03/18/revocation.html), sodass
 nicht alle Browser diese Überprüfen machen werden. Trotzdem, Sperren
 von Zertifikaten, die einen kompromitierten privaten Schlüssel haben,
 ist eine wichtige Praxis und ist erforderlich vom Let's Encrypt's
-{{<link "Subscriber Agreement" "/repository" >}}.
+[Subscriber Agreement](/repository).
 
 Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)
@@ -42,7 +42,7 @@ Kontrolle über das Konto, welches Sie benutzten, haben, können Sie Ihre
 Kontoanmeldeinformationen benutzen, welches das Zertifikat ausgestellt hat.
 Certbot wird das standardmässig machen. Beispiel:
 
-```
+```bash
 certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
@@ -64,7 +64,7 @@ so finden Sie es und können das Zertifikat von einem Logmonitor herunterladen, 
 Sie brauchen auch eine Kopie des privaten Schlüssels im PEM Format. Wenn Sie alles
 zusammen haben, können Sie das Zertifikat sperren:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
 ```
 
@@ -77,9 +77,9 @@ Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben
 (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)!
 Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden
 wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT
-](https://ietf-wg-acme.github.io/acme/#rfc.section.8.5) machen,
-eine [Datei auf Ihren HTTP Server](https://ietf-wg-acme.github.io/acme/#rfc.section.8.3)
-ablegen oder bieten ein [spezielles TLS Zertifikat](https://ietf-wg-acme.github.io/acme/#rfc.section.8.4).
+](https://tools.ietf.org/html/rfc8555#section-8.4) machen,
+eine [Datei auf Ihren HTTP Server](https://tools.ietf.org/html/rfc8555#section-8.3)
+ablegen oder bieten ein [spezielles TLS Zertifikat](https://tools.ietf.org/html/rfc8737#section-3).
 Im Allgemeinen wird ein ACME Client das alles für Sie erledigen. Beachten Sie, 
 dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der
 einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung.
@@ -90,7 +90,7 @@ eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt,
 dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen
 existierenden Domainnamen. Um das zu machen, führen Sie aus:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -104,6 +104,6 @@ Zertifikat herunterladen von [crt.sh](https://crt.sh/),
 und fahren Sie mit dem Sperren des Zertifikats fort, als wenn Sie
 es ausgestellt haben:
 
-```
+```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```

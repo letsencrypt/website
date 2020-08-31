@@ -109,3 +109,14 @@ do_not_translate: 1
 The file `layouts/_default/shortcodes/docs_index.md` must be updated.
 
 The name of the link will be the `linkTitle` of the target page (if present) or the `title` of the target page.
+
+# How to upgrade Hugo
+
+https://github.com/gohugoio/hugo/releases
+
+1. Generate the website using the current version: `hugo -d /tmp/current`
+2. Generate the website using the updated version: `hugo -d /tmp/updated`
+3. Check the diff to be sure nothing is broken: `diff -r /tmp/current /tmp/updated` (the diff is **never** empty, you must see at least the version updated in two files per languages)
+4. If necessary, updates the code to be compatible with the new hugo version
+5. Update `netlify.toml` and `.travis.yml` to the new hugo version
+6. After opening the PR, check the Netlify preview: in the source you need to check in the `<head>` the meta tag `<meta name="generator" content="Hugo 0.XX.X">` to be sure that version of Hugo is avaliable on Netlify.

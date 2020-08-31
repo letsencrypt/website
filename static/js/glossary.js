@@ -2,10 +2,12 @@
 // To set the title of the link to the definition it points to
 document.querySelectorAll("[id^=\"def-\"]").forEach(function(def){
 	const id = def.id;
-	let title = def.parentNode.textContent;
+	let title = def.closest(".definition").textContent;
 	if ( title.match(/\.\s/) ) {
 		// We take everything until the last period. (Everything after are links such as "Wikipedia"
-		title = title.match(/^.*\.\s/)[0];
+		title = title.match(/^[\s\S]*\.\s/)[0];
+		title = title.replace(/\n/g," ");
+		title = title.replace(/\s\s+/g," ");
 	}
 	document.querySelectorAll(".definition>a[href^=\"#"+id+"\"]").forEach(function(a){
 		a.title = title;

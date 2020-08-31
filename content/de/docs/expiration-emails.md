@@ -27,6 +27,6 @@ Beachten Sie, dass Ihre Abmeldung nur für ein Jahr gültig ist. Daher müssen S
 
 Es gibt noch keine Möglichkeit für uns, Sie effizient abzumelden, wenn Sie den Newsletter abbestellen. Unser E-Mail-Anbieter Mandrill [hat einen manuellen Mechanismus, den wir noch automatisieren müssen](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
 
-Sie können jedoch die E-Mail-Adresse Ihres Kontos ändern, wodurch Sie effektiv neu abonniert werden. In vielen gängigen E-Mail-Diensten wird `yourname+1@example.com` genauso behandelt wie` yourname@example.com. Wenn Sie also Ihre E-Mail-Adresse in `yourname+1@example.com` aktualisieren, können Sie erneut Ablauf-E-Mails erhalten. Bei Certbot verwenden Sie:
+Sie können jedoch die E-Mail-Adresse Ihres Kontos ändern, wodurch Sie effektiv neu abonniert werden. In vielen gängigen E-Mail-Diensten wird `yourname+1@example.com` genauso behandelt wie `yourname@example.com`. Wenn Sie also Ihre E-Mail-Adresse in `yourname+1@example.com` aktualisieren, können Sie erneut Ablauf-E-Mails erhalten. Bei Certbot verwenden Sie:
 
 `certbot update_account --email yourname+1@example.com`

@@ -21,6 +21,10 @@
     position: relative;
 }
 
+html[dir="rtl"] .site-title {
+   float: right;
+}
+
 .site-title {
     margin-left: 0px;
     padding-left: 0px;
@@ -150,6 +154,9 @@
     }
 }
 
+html[dir="rtl"] .hero.slim div.container {
+   text-align: right;
+}
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -205,6 +212,17 @@
     }
 }
 
+.sponsor-logo-large {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.sponsor-logo-small {
+    padding: 10px;
+}
+
 .home {
     margin-top:0;
     .grid-container {
@@ -249,6 +267,10 @@
 }
 
 .contact-list,
+html[dir="rtl"] .social-media-list {
+    direction: ltr;
+    text-align: right;
+}
 .social-media-list {
     list-style: none;
     margin-left: 0;
@@ -324,6 +346,7 @@
 }
 
 .post-list {
+    direction: ltr;
     margin-left: 0;
     list-style: none;
 

@@ -21,11 +21,11 @@ menu:
 
 ### クライアント・ソフトウェア
 
-[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの{{<link "サードパーティ製クライアントの選択肢" "/docs/client-options" >}}があります。
+[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの[サードパーティ製クライアントの選択肢](/docs/client-options)があります。
 
 ### サーバーサイドの CA ソフトウェア
 
-[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。Boulder は [ACME](https://github.com/ietf-wg-acme/acme) プロトコルに基づいており、主に Go 言語で書かれています。コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)も忘れずに読んでください。
+[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。Boulder は [ACME](https://tools.ietf.org/html/rfc8555) プロトコルに基づいており、主に Go 言語で書かれています。コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)も忘れずに読んでください。
 
 ### letsencrypt.org
 

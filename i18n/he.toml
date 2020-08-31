@@ -1,0 +1,198 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>190 מיליון</span> אתרים."
+
+[home_hero_getting_started]
+other = "איך מתחילים"
+
+[home_hero_donate]
+other = "תרומה"
+
+[home_hero_sponsor]
+other = "מתן חסות"
+
+[home_hero_annual_report]
+other = "לקריאת הדוח לשנת 2019"
+
+[home_hero_desktop]
+other = "שולחן עבודה"
+
+[home_hero_mobile]
+other = "מכשיר נייד"
+
+[home_major_sponsors]
+other = "נותני חסות ותורמים עיקריים"
+
+[home_from_our_blog]
+other = "מהבלוג שלנו"
+
+[read_more]
+other = "מידע נוסף"
+
+[subscribe_rss]
+other = "הרשמה <a href=\"{{ .Permalink }}\">דרך RSS</a>"
+
+[footer_support_us]
+other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבדת פרטיות."
+
+[footer_donate]
+other = "תרומה"
+
+[footer_policies]
+other = """
+לצפייה ב<a href="/privacy/">מדיניות הפרטיות</a> שלנו.<br>
+לצפייה ב<a href="/trademarks/">מדיניות זכויות היוצרים</a> שלנו.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation הוא סימן מסחר רשום לטובת The Linux Foundation. Linux הוא סימן מסחר רשום לטובת Linus Torvalds."
+
+[header_skip_nav]
+other = "דילוג על קישורי הניווט"
+
+[last_updated]
+other = "עדכון אחרון: "
+
+[see_all_doc]
+other = "הצגת כל התיעוד"
+
+[blog_feed]
+other = "הזנת הבלוג של Let's Encrypt"
+
+[platinum]
+other = "פלטינה"
+
+[gold]
+other = "זהב"
+
+[gold_basic]
+other = "זהב בסיסי"
+
+[silver]
+other = "כסף"
+
+[languages]
+other = "שפות"
+
+[view_in_english]
+other = "מעבר לאנגלית"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/partials/langs.html)
+other = "מעבר לעברית"
+
+[old_version]
+other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"
+
+[not_yet_translated]
+other = "עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href=\"https://github.com/letsencrypt/website\">כאן</a>."
+
+[english_is_canonical]
+other = "הגרסה האנגלית היא הסמכות העליונה"
+
+[graph_issued]
+other = "הונפקו"
+
+[graph_certificates_active]
+other = "אישורים פעילים"
+
+[graph_fully_qualified_domains_active]
+other = "שמות תחום מלאים פעילים"
+
+[graph_registered_domains_active]
+other = "שמות תחום רשומים פעילים"
+
+[graph_active_count]
+other = "כמות פעילים"
+
+[graph_issued_per_day]
+other = "מונפקים ביום"
+
+[graph_all_users]
+other = "כל המשתמשים"
+
+[graph_usa_users]
+other = "משתמשים מארה״ב"
+
+[graph_japan_users]
+other = "משתמשים יפניים"
+
+[graph_percent_https]
+other = "אחוז עמודים שנטענו עם HTTPS (ממוצע נע על פני 14 ימים)"
+
+[certificate_transparency_name]
+other = "שם"
+
+[certificate_transparency_role_production]
+other = "הפעלה מלאה (Production)"
+
+[certificate_transparency_role_testing]
+other = "בדיקה (Testing)"
+
+[certificate_transparency_uri]
+other = "כתובת"
+
+[certificate_transparency_public_key]
+other = "מפתח ציבורי"
+
+[certificate_transparency_log_id]
+other = "מזהה יומן"
+
+[certificate_transparency_state]
+other = "מצב"
+
+[certificate_transparency_window_start]
+other = "תחילת החלון"
+
+[certificate_transparency_window_end]
+other = "סוף החלון"
+
+[overview]
+other = "סקירה"
+
+[subscriber_information]
+other = "פרטי מנוי"
+
+[advanced_subscriber_information]
+other = "פרטי מנוי מתקדמים"
+
+[client_developer_information]
+other = "מידע למפתחי לקוחות"
+
+[acme_divergences]
+other = "הבדלים מהטיוטה הנוכחית של ACME"
+
+[acme_divergences_rfc]
+other = "הבדלים מה־RFC של ACME"
+
+[onboarding_customers]
+other = "צירוף הלקוחות שלך עם Let's Encrypt ו־ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "תרומה עם כפתור PayPal"
+
+[paypal_donate_title]
+other = "תרומה עם PayPal"
+
+[not_found]
+other = "העמוד הזה לא נמצא, נא לבדוק שהכתובת נכונה."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }} לשנה (דולר ארה״ב)"
+
+[3y_commitment]
+other = "עם התחייבות ל־3 שנים"
+
+[1_99_employees]
+other = "1‏-99 עובדים"
+
+[100_999_employees]
+other = "100‏-999 עובדים"
+
+[1000_employees]
+other = "1000 עובדים ומעלה"

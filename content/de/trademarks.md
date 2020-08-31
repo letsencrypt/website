@@ -155,8 +155,8 @@ persönlichen, nicht kommerziellen Verwendungen, die in den vorstehenden
 Abschnitten gestattet sind.
 
 Die Dateien, die unsere Designmarken enthalten, sind unter der
- [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
- lizenziert.
+[Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+lizenziert.
 Sie unterliegen auch dieser Markenrichtlinie. Dateien finden Sie am Ende
 dieser Richtlinie.
 
@@ -241,7 +241,7 @@ ISRG verbunden oder wird von dieser gesponsert oder unterstützt.
 ## Melden von Markenmissbrauch
 
 Bitte melden Sie jeden Missbrauch der ISRG-Marken an
-press[at]letsencrypt.org, und geben Sie so viele Informationen wie
+[press@letsencrypt.org](mailto:press@letsencrypt.org), und geben Sie so viele Informationen wie
 möglich über die Verwendung an, die Ihrer Meinung nach möglicherweise
 verletzt wird. Wir werden die Verwendung untersuchen und gegebenenfalls
 entsprechende Massnahmen ergreifen.

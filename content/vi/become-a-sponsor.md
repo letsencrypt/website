@@ -27,10 +27,10 @@ menu:
 
 Nếu bạn muốn trở thành một Doanh nghiệp Tài trợ, vui lòng gửi email [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
-Nếu tài trợ không phải là một lựa chọn cho tổ chức của bạn, vui lòng xem xét đơn giản {{<link "quyên góp" "/donate">}} bất kỳ số tiền nào.
+Nếu tài trợ không phải là một lựa chọn cho tổ chức của bạn, vui lòng xem xét đơn giản [quyên góp](/donate) bất kỳ số tiền nào.
 
 ## Tổ chức của chúng tôi
 
-Let's Encrypt được vận hành bởi một tổ chức phi lợi nhuận có tên là [Internet Security Research Group] (https://www.abetterinternet.org/) (ISRG). Nhiệm vụ của ISRG là giảm các rào cản tài chính, công nghệ và giáo dục để bảo mật thông tin liên lạc qua Internet.
+Let's Encrypt được vận hành bởi một tổ chức phi lợi nhuận có tên là [Internet Security Research Group](https://www.abetterinternet.org/) (ISRG). Nhiệm vụ của ISRG là giảm các rào cản tài chính, công nghệ và giáo dục để bảo mật thông tin liên lạc qua Internet.
 
 ISRG là một tập đoàn lợi ích công cộng ở California và được IRS công nhận là tổ chức được miễn thuế theo Mục 501\(c\)(3) của Bộ luật Thu nhập Nội bộ.

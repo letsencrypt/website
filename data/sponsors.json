@@ -10,7 +10,9 @@
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
-      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"}
+      {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
+      {"name":"Avast","url":"https://www.avast.com/","image":"avast-logo.png"}
+
 ],
 "silver":[
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
@@ -21,10 +23,8 @@
       {"name":"Infomaniak","url":"https://www.infomaniak.ch/","image":"infomaniak-logo.png"},
       {"name":"HostPoint","url":"https://www.hostpoint.ch/","image":"hostpoint-logo.png"},
       {"name":"SiteGround","url":"https://www.siteground.com/","image":"siteground-logo.png"},
-      {"name":"Sucuri","url":"https://sucuri.net/","image":"sucuri-logo.png"},
       {"name":"Vultr","url":"https://www.vultr.com","image":"vultr-logo.png"},
       {"name":"Hébergement web","url":"https://www.planethoster.com/","image":"planethoster-logo.png"},
-      {"name":"YunPian","url":"https://www.yunpian.com/","image":"yunpian-logo.png"},
       {"name":"Fastly","url":"https://www.fastly.com/","image":"fastly-logo.png"},
       {"name":"3CX","url":"https://www.3cx.com/","image":"3cx-logo.png"},
       {"name":"Squarespace","url":"https://www.squarespace.com/","image":"squarespace-logo.png"},
@@ -32,7 +32,6 @@
       {"name":"The Best VPN","url":"https://thebestvpn.com/","image":"thebestvpn-logo.png"},
       {"name":"Jimdo","url":"https://www.jimdo.com/","image":"jimdo-logo.png"},
       {"name":"VTEX","url":"https://www.vtex.com/","image":"vtex-logo.png"},
-      {"name":"Uptime Robot","url":"https://uptimerobot.com/","image":"uptime-robot-logo.png"},
       {"name":"Digital Ocean","url":"https://www.digitalocean.com/","image":"digital-ocean-logo.png"},
       {"name":"Zendesk","url":"https://www.zendesk.com/","image":"zendesk-logo.png"},
       {"name":"Netlify","url":"https://www.netlify.com/","image":"netlify-logo.png"},
@@ -46,7 +45,6 @@
       {"name":"DuoCircle","url":"https://www.duocircle.com/","image":"duocircle-logo.png"},
       {"name":"ISE","url":"https://www.ise.de/","image":"ise-logo.png"},
       {"name":"Private Internet Access","url":"https://www.privateinternetaccess.com/","image":"privateinternetaccess-logo.png"},
-      {"name":"Brave","url":"https://brave.com/","image":"brave-logo.png"},
       {"name":"ServerPilot","url":"https://serverpilot.io/","image":"serverpilot-logo.png"},
       {"name":"DomainName.Shop","url":"https://domainname.shop/","image":"domainnameshop-logo.png"},
       {"name":"easyname","url":"https://www.easyname.com/","image":"easyname-logo.png","id":"easyname"},
@@ -55,13 +53,13 @@
       {"name":"Umbraco","url":"https://umbraco.com/","image":"umbraco-logo.png"},
       {"name":"Lime Technology (Unraid)","url":"https://unraid.net/","image":"unraid-logo.png"},
       {"name":"Keenetic","url":"https://keenetic.com/","image":"keenetic-logo.png"},
-      {"name":"Rainway","url":"https://rainway.io/","image":"rainway-logo.png"},
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
       {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
       {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
       {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
+      {"name":"IBM","url":"https://www.ibm.com/","image":"ibm-logo.png"},
       {"name":"Livesport","url":"https://www.livesport.eu/","image":"livesport-logo.png"},
       {"name":"ProPrivacy","url":"https://proprivacy.com/","image":"proprivacy-logo.png"},
       {"name":"Nazwa.pl","url":"https://www.nazwa.pl/","image":"nazwa-logo.png"},
@@ -73,7 +71,6 @@
       {"name":"Nabu Casa","url":"https://www.nabucasa.com/","image":"nabu-casa-logo.png"},
       {"name":"Wix","url":"https://www.wix.com/","image":"wix-logo.png"},
       {"name":"Engine Forex","url":"https://engineforex.com/","image":"engine-forex-logo.png"},
-      {"name":"Zeit","url":"https://zeit.co/","image":"zeit-logo.png"},
       {"name":"CodeinWP","url":"https://www.codeinwp.com/","image":"codeinwp-logo.png"},
       {"name":"Hosting Review","url":"https://hosting.review/","image":"hostingreview-logo.png"},
       {"name":"Heroku","url":"https://www.heroku.com/","image":"heroku-logo.png"},
@@ -85,6 +82,13 @@
       {"name":"IP2Location","url":"https://www.ip2location.com/","image":"ip2location-logo.png"},
       {"name":"HostScore","url":"https://www.hostscore.net/","image":"hostscore-logo.png"},
       {"name":"Hoststar","url":"https://www.hoststar.ch/","image":"hoststar-logo.png"},
-      {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"}
+      {"name":"Redacted","url":"https://www.redacted.com/","image":"redacted-logo.png"},
+      {"name":"VMWare","url":"https://www.vmware.com/","image":"vmware-logo.png"},
+      {"name":"one.com","url":"https://www.one.com/","image":"one-com-logo.png"},
+      {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
+      {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"},
+      {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
+      {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"},
+      {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"}
 ]
 }

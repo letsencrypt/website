@@ -169,6 +169,7 @@ blockquote {
  */
 pre,
 code {
+    direction:ltr;
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
@@ -181,7 +182,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;
@@ -263,7 +264,13 @@ pre {
 .justify {
     text-align: justify;
 }
+html[dir="rtl"] .tal {
+    text-align: right;
+}
 .tal {
+    text-align: left;
+}
+html[dir="rtl"] .tar {
     text-align: left;
 }
 .tar {
@@ -273,7 +280,13 @@ pre {
     margin-left: 20%;
     margin-right: 20%;
 }
+html[dir="rtl"] .mr1m {
+    margin-left: 1em;
+}
 .mr1m {
+    margin-right: 1em;
+}
+html[dir="rtl"] .ml1m {
     margin-right: 1em;
 }
 .ml1m {
@@ -282,4 +295,28 @@ pre {
 
 .home_sponsors img {
     background-color: #fff;
+}
+
+a.autoanchor {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+.page-content {
+    h1,h2,h3 { //same selector as js for anchors
+        .autoanchor {
+            display: none;
+        }
+        &:hover {
+            .autoanchor {
+                display: inline;
+            }
+        }
+    }
+}
+
+.list-style-none {
+    list-style-type:none;
 }

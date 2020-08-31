@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-02-13",
+	"lastmod": "2020-08-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -25,6 +25,7 @@
 		"Windows / IIS"
 	],
 	"libraries": [
+		"4D",
 		"C++",
 		"D",
 		"Delphi",
@@ -162,6 +163,20 @@
 			"comments": "(Compatible to bash and zsh)",
 			"challenges": {
 				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "acme",
+			"url": "https://git.rapsys.eu/acme",
+			"acme_v2": "acme >= 2.0.0",
+			"category": "Perl",
+			"comments": "(Simple json config, autogen keys, issue cert, refresh cert, apache/nginx integration)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
 			}
 		},
 		{
@@ -333,6 +348,7 @@
 		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
+			"acme_v2": "true",
 			"category": "OpenShift"
 		},
 		{
@@ -390,6 +406,12 @@
 			"name": "FreeSSL.tech Auto",
 			"url": "https://freessl.tech",
 			"acme_v2": "true",
+			"category": "PHP"
+		},
+		{
+			"name": "Yet another ACME client",
+			"acme_v2": "true",
+			"url": "https://github.com/afosto/yaac",
 			"category": "PHP"
 		},
 		{
@@ -465,6 +487,13 @@
 			"name": "acme-nosudo",
 			"url": "https://github.com/diafygi/acme-nosudo",
 			"category": "Python"
+		},
+		{
+			"name": "Automatoes",
+			"url": "https://github.com/candango/automatoes",
+			"acme_v2": "true",
+			"category": "Python",
+			"comments": "ACME V2 ManuaLE replacement with new features"
 		},
 		{
 			"name": "unixcharles/acme-client",
@@ -811,7 +840,7 @@
 			"name": "ght-acme.sh",
 			"url": "https://github.com/bruncsak/ght-acme.sh",
 			"category": "Bash",
- 			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"comments": "(batch update of http-01 and dns-01 challenges is available)",
 			"acme_v2": "true"
 		},
 		{
@@ -841,6 +870,25 @@
 			"url": "https://www.rhpconsult.com/products.html",
 			"category": "Domino",
 			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme component",
+			"url": "https://github.com/blegay/acme_component",
+			"acme_v2": "true",
+			"comments": "ACME Client v2 for 4D v18+",
+			"library": "4D",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "RW ACME client",
+			"url": "https://github.com/RogierW/rw-acme-client",
+			"category": "PHP",
 			"acme_v2": "true"
 		}
 	]

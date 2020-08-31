@@ -25,4 +25,4 @@ Die Schlüsselprinzipien hinter Let's Encrypt sind:
 * <strong>Offen:</strong> Das automatische Ausstellungs- und Erneuerungsprotokoll wird als offener Standard veröffentlicht, damit es andere adaptieren können.
 * <strong>Kooperativ:</strong> Ähnlich wie die zugrundeliegenden Internetprotokolle selbst ist Let's Encrypt eine gemeinsame Anstrengung, die der Community zugute kommt und außerhalb der Kontrolle einer einzelnen Organisation liegt.
 
-Wir haben eine Seite mit detailierteren Informationen, {{<link "wie Let's Encrypt CA funktioniert" "/how-it-works" >}}.
+Wir haben eine Seite mit detailierteren Informationen, [wie Let's Encrypt CA funktioniert](/how-it-works).

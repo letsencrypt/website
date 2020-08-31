@@ -42,5 +42,5 @@ Internetdienstanbieter blockieren Port 80 aus verschiedenen Gründen.
 Wenn Ihr ISP dies tut, Sie jedoch weiterhin Zertifikate von Let's Encrypt
 erhalten möchten, haben Sie zwei Möglichkeiten:
 Sie können DNS-01-Challenges verwenden oder Sie können
-[einen der Clients verwenden, der TLS-ALPN-01-Herausforderungen unterstützt] (https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
+[einen der Clients verwenden, der TLS-ALPN-01-Herausforderungen unterstützt](https://community.letsencrypt.org/t/which-client-support-tls-alpn-challenge/75859/2)
 (auf Port 443).
