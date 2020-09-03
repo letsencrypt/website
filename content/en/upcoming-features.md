@@ -2,7 +2,7 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2020-08-XX
 ---
 
 {{< lastmod >}}
@@ -11,11 +11,13 @@ lastmod: 2020-02-20
 
 We are planning to add support for validating and including IP addresses in certificates.
 
+# Completed Features
+
 ## ECDSA Root and Intermediates
 
-Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
+* Enabled: September XX, 2020
 
-# Completed Features
+Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
 
 ## Multi-Perspective Validation
 
