@@ -98,7 +98,7 @@ Issuer "DST Root CA X3." The recommended Let's Encrypt software,
 The following picture explains the relationships between our certificates
 visually:
 
-![ISRG Certificate Hierarchy Diagram, as of September 2020](/certs/isrg-hierarchy-2020.png)
+[![ISRG Certificate Hierarchy Diagram, as of September 2020](/certs/isrg-hierarchy-2020.png)](/certs/isrg-hierarchy-2020.png)
 
 # OCSP Signing Certificate
 
