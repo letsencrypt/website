@@ -42,29 +42,29 @@ We do not use the X1 and X2 intermediates anymore.
 IdenTrust has cross-signed our RSA intermediates for additional compatibility.
 
 * Active
-  * Let's Encrypt Authority X3 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X3`)
+  * Let's Encrypt Authority X3 (RSA 2048, `O = Let's Encrypt, CN = Let's Encrypt Authority X3`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x3-cross-signed.pem.txt)
-  * Let's Encrypt R3 (RSA 2048, `O = Let's Encrypt', 'CN = R3`)
+  * Let's Encrypt R3 (RSA 2048, `O = Let's Encrypt, CN = R3`)
     * [signed by ISRG Root X1](/certs/lets-encrypt-r3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-r3-cross-signed.pem.txt)
 * Upcoming
-  * Let's Encrypt E1 (ECDSA P-384, `O = Let's Encrypt', 'CN = E1`)
+  * Let's Encrypt E1 (ECDSA P-384, `O = Let's Encrypt, CN = E1`)
     * [signed by ISRG Root X2](/certs/lets-encrypt-e1.pem.txt)
 * Backup
-  * Let's Encrypt Authority X4 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X4`)
+  * Let's Encrypt Authority X4 (RSA 2048, `O = Let's Encrypt, CN = Let's Encrypt Authority X4`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x4-cross-signed.pem.txt)
-  * Let's Encrypt R4 (RSA 2048, `O = Let's Encrypt', 'CN = R4`)
+  * Let's Encrypt R4 (RSA 2048, `O = Let's Encrypt, CN = R4`)
     * [signed by ISRG Root X1](/certs/lets-encrypt-r4.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-r4-cross-signed.pem.txt)
-  * Let's Encrypt E2 (ECDSA P-384, `O = Let's Encrypt', 'CN = E2`)
+  * Let's Encrypt E2 (ECDSA P-384, `O = Let's Encrypt, CN = E2`)
     * [signed by ISRG Root X2](/certs/lets-encrypt-e2.pem.txt)
 * Retired
-  * Let's Encrypt Authority X1 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X1`)`
+  * Let's Encrypt Authority X1 (RSA 2048, `O = Let's Encrypt, CN = Let's Encrypt Authority X1`)`
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx1.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x1-cross-signed.pem.txt)
-  * Let's Encrypt Authority X2 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X2`)
+  * Let's Encrypt Authority X2 (RSA 2048, `O = Let's Encrypt, CN = Let's Encrypt Authority X2`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx2.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x2-cross-signed.pem.txt)
 
