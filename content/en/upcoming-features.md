@@ -2,7 +2,7 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-08-XX
+lastmod: 2020-08-02
 ---
 
 {{< lastmod >}}
