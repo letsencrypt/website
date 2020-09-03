@@ -64,7 +64,7 @@ IdenTrust has cross-signed our RSA intermediates for additional compatibility.
   * Let's Encrypt Authority X1 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X1`)`
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx1.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x1-cross-signed.pem.txt)
-  * Let's Encrypt Authority X2`O = Let's Encrypt', 'CN = Let's Encrypt Authority X2`
+  * Let's Encrypt Authority X2 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X2`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx2.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x2-cross-signed.pem.txt)
 
