@@ -14,9 +14,9 @@ Our roots are kept safely offline. We issue end-entity certificates to subscribe
 For additional compatibility as we submit our new Root X2 to various root programs, we have also cross-signed it from Root X1.
 
 * Active
-  * ISRG Root X1 (RSA 4096)
+  * ISRG Root X1 (RSA 4096, `O = Internet Security Research Group, CN = ISRG Root X1`)
     * [self-signed](/certs/isrgrootx1.pem.txt)
-  * ISRG Root X2 (ECDSA P-384)
+  * ISRG Root X2 (ECDSA P-384, `O = Internet Security Research Group, CN = ISRG Root X2`)
     * [self-signed](/certs/isrg-root-x2.pem.txt)
     * [cross-signed by ISRG Root X1](/certs/isrg-root-x2-cross-signed.pem.txt)
 
@@ -33,37 +33,38 @@ We've set up websites to test certificates chaining to our roots.
 
 # Intermediate Certificates
 
-Under normal circumstances, certificates issued by Let's Encrypt will come from "Let's Encrypt Authority X3".
-We have also issued new intermediates ("Lets Encrypt E2" and "Let's Encrypt R3"), which we will begin issuing from soon. This page will be updated when that transition is complete.
-Our other intermediates ("Let's Encrypt Authority X4", "Let's Encrypt E2", and "Let's Encrypt R4") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
-We do not use the X1 and X2 intermediates any more.
+Under normal circumstances, certificates issued by Let's Encrypt will come from "Let's Encrypt Authority X3" or "R3", both RSA intermediates.
+We have also issued a new ECDSA intermediate ("E1"), which we will begin issuing from soon. This page will be updated when that bringup is complete.
+
+Our other intermediates ("Let's Encrypt Authority X4", "E2", and "R4") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
+We do not use the X1 and X2 intermediates anymore.
 
 IdenTrust has cross-signed our RSA intermediates for additional compatibility.
 
 * Active
-  * Let's Encrypt Authority X3
+  * Let's Encrypt Authority X3 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X3`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x3-cross-signed.pem.txt)
-* Upcoming
-  * Let's Encrypt R3
+  * Let's Encrypt R3 (RSA 2048, `O = Let's Encrypt', 'CN = R3`)
     * [signed by ISRG Root X1](/certs/lets-encrypt-r3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-r3-cross-signed.pem.txt)
-  * Let's Encrypt E1
+* Upcoming
+  * Let's Encrypt E1 (ECDSA P-384, `O = Let's Encrypt', 'CN = E1`)
     * [signed by ISRG Root X2](/certs/lets-encrypt-e1.pem.txt)
 * Backup
-  * Let's Encrypt Authority X4
+  * Let's Encrypt Authority X4 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X4`)
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx3.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x4-cross-signed.pem.txt)
-  * Let's Encrypt R4
+  * Let's Encrypt R4 (RSA 2048, `O = Let's Encrypt', 'CN = R4`)
     * [signed by ISRG Root X1](/certs/lets-encrypt-r4.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-r4-cross-signed.pem.txt)
-  * Let's Encrypt E2
+  * Let's Encrypt E2 (ECDSA P-384, `O = Let's Encrypt', 'CN = E2`)
     * [signed by ISRG Root X2](/certs/lets-encrypt-e2.pem.txt)
 * Retired
-  * Let's Encrypt Authority X1
+  * Let's Encrypt Authority X1 (RSA 2048, `O = Let's Encrypt', 'CN = Let's Encrypt Authority X1`)`
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx1.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x1-cross-signed.pem.txt)
-  * Let's Encrypt Authority X2
+  * Let's Encrypt Authority X2`O = Let's Encrypt', 'CN = Let's Encrypt Authority X2`
     * [signed by ISRG Root X1](/certs/letsencryptauthorityx2.pem.txt)
     * [cross-signed by IdenTrust](/certs/lets-encrypt-x2-cross-signed.pem.txt)
 
@@ -82,8 +83,8 @@ and operating systems (e.g. Windows XP, Android 7). You can [download "TrustID X
 IdenTrust](https://www.identrust.com/support/downloads) (or, alternatively,
 you can [download a copy from us](/certs/trustid-x3-root.pem.txt)).
 
-Having a cross-signature means there are two sets of intermediate certificates
-available, both of which represent each RSA intermediate. One is signed by DST Root
+Having cross-signatures means that each of our RSA intermediates has two
+certificates representing the same signing key. One is signed by DST Root
 CA X3, and the other is signed by ISRG Root X1. The easiest way to distinguish
 the two is by looking at their Issuer field.
 
@@ -111,7 +112,7 @@ included here for informational purposes only.
 * [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
 
 Our newer intermediates do not have OCSP URLs (their revocation information is 
-instead served via CRL), so we have not issued an OCSP Signing Cert from Root X2.
+instead served via CRL), so we have not issued an OCSP Signing Cert from ISRG Root X2.
 
 # Certificate Transparency
 
