@@ -17,7 +17,7 @@ We are planning to add support for validating and including IP addresses in cert
 
 * Enabled: September XX, 2020
 
-Currently Let's Encrypt only signs end-entity certificates with RSA intermediates. Let's Encrypt will generate an ECDSA root and intermediates which can be used to sign end-entity certificates.
+Previously Let's Encrypt only signed end-entity certificates with RSA intermediates. We now have an ECDSA root and intermediates, which we can use to sign end-entity certificates.
 
 ## Multi-Perspective Validation
 
