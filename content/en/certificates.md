@@ -20,16 +20,12 @@ For additional compatibility as we submit our new Root X2 to various root progra
     * Self-signed: [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
 
-We've set up websites to test certificates chaining to our roots.
+We've set up websites to test certificates chaining to our active roots.
 
 * ISRG Root X1
   * [Valid](https://valid-isrgrootx1.letsencrypt.org/)
   * [Revoked](https://revoked-isrgrootx1.letsencrypt.org/)
   * [Expired](https://expired-isrgrootx1.letsencrypt.org/)
-* ISRG Root X2
-  * [Valid](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Revoked](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Expired](https://expired-isrgrootx2.letsencrypt.org/)
 
 # Intermediate Certificates
 
