@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2020-08-03
+lastmod: 2020-08-04
 ---
 
 {{< lastmod >}}
@@ -106,7 +106,7 @@ sign those responses. A copy of this certificate is included automatically in
 those OCSP responses, so Subscribers don't need to do anything with it. It is
 included here for informational purposes only.
 
-* [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
+* ISRG Root OCSP X1 (Signed by ISRG Root X1): [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
 
 Our newer intermediates do not have OCSP URLs (their revocation information is 
 instead served via CRL), so we have not issued an OCSP Signing Cert from ISRG Root X2.
@@ -120,6 +120,8 @@ issued Let's Encrypt certificates via these links:
 
 * [Issued by Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
+* [Issued by E1](https://crt.sh/?Identity=%25&iCAID=183283)
+* [Issued by R3](https://crt.sh/?Identity=%25&iCAID=183267)
 
 # More Info
 
