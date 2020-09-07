@@ -8,6 +8,8 @@ lastmod: 2020-08-04
 
 {{< lastmod >}}
 
+[![ISRG Certificate Hierarchy Diagram, as of September 2020](/certs/isrg-hierarchy-2020.png)](/certs/isrg-hierarchy-2020.png)
+
 # Root Certificates
 
 Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.
@@ -93,11 +95,6 @@ the intermediate certificate with Subject "Let's Encrypt Authority X3" and
 Issuer "DST Root CA X3." The recommended Let's Encrypt software,
 [Certbot](https://certbot.org), will make this configuration seamlessly.
 
-The following picture explains the relationships between our certificates
-visually:
-
-[![ISRG Certificate Hierarchy Diagram, as of September 2020](/certs/isrg-hierarchy-2020.png)](/certs/isrg-hierarchy-2020.png)
-
 # OCSP Signing Certificate
 
 This certificate is used to sign OCSP responses for the Let's Encrypt Authority
@@ -122,7 +119,3 @@ issued Let's Encrypt certificates via these links:
 * [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
 * [Issued by E1](https://crt.sh/?Identity=%25&iCAID=183283)
 * [Issued by R3](https://crt.sh/?Identity=%25&iCAID=183267)
-
-# More Info
-
-The private keys for the ISRG root CA and the Let's Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
