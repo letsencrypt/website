@@ -19,6 +19,8 @@
 <h1 id="{{ anchorize (i18n "advanced_subscriber_information") }}">{{ i18n "advanced_subscriber_information" }}</h1>
 
 <ul>
+    <li><a href="https://cp.letsencrypt.org">{{ i18n "certificate_policy" }}</a></li>
+    <li><a href="https://cps.letsencrypt.org">{{ i18n "certification_practices_statement" }}</a></li>
     <li>{{ template "link" (dict "context" . "page" "/docs/staging-environment") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/docs/cert-compat") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/certificates") }}</li>

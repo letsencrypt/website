@@ -122,6 +122,9 @@ other = "Japan users"
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
+[certificate_policy]
+other = "Certificate Policy"
+
 [certificate_transparency_name]
 other = "Name"
 
@@ -148,6 +151,9 @@ other = "Window Start"
 
 [certificate_transparency_window_end]
 other = "Window End"
+
+[certification_practices_statement]
+other = "Certification Practices Statement"
 
 [overview]
 other = "Overview"
