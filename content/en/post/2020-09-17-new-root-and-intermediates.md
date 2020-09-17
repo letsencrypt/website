@@ -53,7 +53,7 @@ This is important because the only other thing capable of signing such
 statements is our root itself, and as mentioned above, the root needs to stay
 offline and safely secured.
 
-![Let's Encrypt's hierarchy as of August 2020](images/2020-09-17-hierarchy-pre-sept-2020.png "Let's Encrypt's hierarchy as of August 2020")
+![Let's Encrypt's hierarchy as of August 2020](/images/2020-09-17-hierarchy-pre-sept-2020.png "Let's Encrypt's hierarchy as of August 2020")
 
 # The New Certificates
 
@@ -78,7 +78,7 @@ Root CA X3. Instead, the ISRG Root X2 itself is
 An astute observer might also notice that we have not issued an OCSP Signing
 Certificate from ISRG Root X2.
 
-![Let's Encrypt's hierarchy as of September 2020](images/2020-09-17-hierarchy-post-sept-2020.png "Let's Encrypt's hierarchy as of September 2020")
+![Let's Encrypt's hierarchy as of September 2020](/images/2020-09-17-hierarchy-post-sept-2020.png "Let's Encrypt's hierarchy as of September 2020")
 
 Now that we have the technical details out of the way, let’s dive in to _why_
 the new hierarchy looks the way it does.
@@ -173,11 +173,12 @@ But intermediate certificates are a tiny subset of all certificates in the
 wild, are generally well-known, and are rarely revoked. Because of this, it
 can be much more efficient to simply maintain a Certificate Revocation List
 (CRL) containing validity information for all well-known intermediates. Our
-certificates all contain a URL from which a browser can fetch their CRL, and
-in fact some browsers even aggregate these into their own CRLs which they
-distribute with each update. This means that checking the revocation status
-of intermediates doesn’t require an extra network round trip before you can
-load a site, resulting in a better experience for everyone.
+intermediate certificates all contain a URL from which a browser can fetch
+their CRL, and in fact some browsers even aggregate these into their own CRLs
+which they distribute with each update. This means that checking the
+revocation status of intermediates doesn’t require an extra network round
+trip before you can load a site, resulting in a better experience for
+everyone.
 
 In fact, a recent change ([ballot SC31](https://cabforum.org/2020/07/16/ballot-sc31-browser-alignment/))
 to the Baseline Requirements, which govern CAs, has made it so intermediate
