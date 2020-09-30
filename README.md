@@ -15,7 +15,7 @@ And open [http://localhost:1313/] in your browser. Note that the `-F` flag will
 show items to be published in the future (like blog posts with dates in the
 future).
 
-If you update javascript, css or layouts, you can run tests with:
+If you update javascript, css or layouts, you can run tests with given file:
 
 ```sh
 npm install && npm run build && npm test
