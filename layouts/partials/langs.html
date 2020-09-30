@@ -42,6 +42,8 @@
       {{ else if eq .Language.Lang "he" }}
         {{ $scratch.Set "view_in_xxx" "לעבור לעברית" }}
       {{ else }}
+      { else if eq .Language.Lang "hi" }}
+        {{ $scratch.Set "view_in_xxx" "हिंदी में देखें" }}
         {{ errorf "Missing markup for lang %q in layouts/partials/langs.html" .Page.Language.Lang }}
       {{ end }}
       
