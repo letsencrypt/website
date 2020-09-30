@@ -1,0 +1,24 @@
+शीर्षक = "आइए एन्क्रिप्ट करें - नि: शुल्क एसएसएल / टीएलएस प्रमाण पत्र"
+contentDir = "content/hi"
+#The namge of the language, it that language (not in English if it's not English)
+languageName = "हिंदी"
+#The language code. Usually two lower-case letters. It that language is spoken in more than one country, the country-code can be added, uppercase. To check it: https://r12a.github.io/app-subtags/?check=pt-BR
+languageCode = "hi-IN"
+#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
+कोलोन से पहले = ""
+# Weight used for sorting.
+# 10 for English
+# Other languages from 100 to 999, alphabetical order using languageCode.
+वजन = 10
+वर्णन = ""
+आइए एनक्रिप्ट एक नि: शुल्क, स्वचालित और खुला प्रमाण पत्र है
+   गैर-लाभकारी <a href="https://www.abetterinternet.org/"> इंटरनेट सुरक्षा अनुसंधान समूह (ISRG) </a> द्वारा आपके लिए लाया गया प्राधिकरण।
+"" "
+# Paypal छवि यूआरएल से: https://www.paypal.com/donate/buttons/unhosted
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+# A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
+paypalCountry = "IN"
+# Number format : <negative>|<decimal>|<grouping>
+# Ex. for -1 2345.67 -> "-|.| "
+# Doc: https://gohugo.io/functions/numfmt/
+संख्या स्वरूप = "-|.|,"
