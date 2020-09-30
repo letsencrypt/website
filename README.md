@@ -23,17 +23,17 @@ npm install && npm run build && npm test
 
 Contributions welcome.
 
-# Troubleshooting with Hugo
+# Troubleshootings with Hugo
 
 If you see the error:
 
 > Failed to load translations in file "en.toml": unsupported file extension .toml
 
-Your version of Hugo is probably too old. Please use the version specified in [netlify.toml]
+Your version of Hugo is probably too old. Please use the version specified in [netlify.toml].
 
 # Translations - internationalization (i18n)
 
-To help with translation, please see [TRANSLATION.md].
+To help with translations, please see [TRANSLATION.md].
 
 [Let's Encrypt website]: https://letsencrypt.org/
 [Hugo]: https://gohugo.io/
