@@ -1,0 +1,204 @@
+# प्रारूप प्रलेखन और कुछ उपकरणों के लिए https://github.com/nicksnyder/go-i18n देखें।
+
+[Home_hero_title]
+अन्य = "एक गैर-लाभकारी प्रमाणपत्र प्राधिकारी, जो <span> 225 मिलियन </ span> वेबसाइटों को टीएलएस प्रमाणपत्र प्रदान करता है।"
+
+[Home_hero_getting_started]
+अन्य = "आरंभ करें"
+
+[Home_hero_donate]
+अन्य = "दान"
+
+[Home_hero_sponsor]
+अन्य = "प्रायोजक"
+
+[Home_hero_annual_report]
+अन्य = "हमारी 2019 की वार्षिक रिपोर्ट पढ़ें"
+
+[Home_hero_desktop]
+अन्य = "डेस्कटॉप"
+
+[Home_hero_mobile]
+अन्य = "मोबाइल"
+
+[Home_major_sponsors]
+अन्य = "प्रमुख प्रायोजक और दाता"
+
+[Home_from_our_blog]
+अन्य = "हमारे ब्लॉग से"
+
+[अधिक पढ़ें]
+अन्य = "और पढ़ें"
+
+[Subscribe_rss]
+अन्य = "सदस्यता लें
+
+[Footer_support_us]
+अन्य = "अधिक सुरक्षित और गोपनीयता-सम्मान वाले वेब का समर्थन करें।"
+
+[Footer_donate]
+अन्य = "दान"
+
+[Footer_policies]
+अन्य = ""
+हमारी <a href="/privacy/"> गोपनीयता नीति </a> देखें। <br>
+हमारी <a href="/trademarks/"> ट्रेडमार्क नीति </a> देखें।
+"" "
+
+[Linux_foundation_trademark]
+अन्य = "लिनक्स फाउंडेशन लिनक्स फाउंडेशन का एक पंजीकृत ट्रेडमार्क है। लिनक्स लिनस टोरवाल्ड्स का एक पंजीकृत ट्रेडमार्क है।"
+
+[Header_skip_nav]
+अन्य = "नेविगेशन लिंक छोड़ें"
+
+[आखरी अपडेट]
+अन्य = "अंतिम अद्यतन:"
+
+[See_all_doc]
+अन्य = "सभी दस्तावेज़ देखें"
+
+[Blog_feed]
+अन्य = "चलो ब्लॉग फ़ीड एन्क्रिप्ट करें"
+
+[प्लैटिनम]
+अन्य = "प्लेटिनम"
+
+[सोना]
+अन्य = "गोल्ड"
+
+[Gold_basic]
+अन्य = "गोल्ड बेसिक"
+
+[चांदी]
+अन्य = "सिल्वर"
+
+[भाषाओं]
+अन्य = "भाषाएँ"
+
+[View_in_english]
+अन्य = "अंग्रेजी में देखें"
+
+[View_in_xxx]
+# अनुवाद में, अपनी भाषा FULL नाम से "अंग्रेजी" बदलें। उदाहरण के लिए अन्य लंग्स देखें।
+# (nb: मैन्युअल रूप से लेआउट / partials / langs.html में उपयोग किया जाता है)
+अन्य = "अंग्रेजी में देखें"
+
+[पुराना संस्करण]
+अन्य = "नोट: अंग्रेजी संस्करण को अनुवाद के बाद से अपडेट किया गया है"
+
+[Not_yet_translated]
+अन्य = "इस वेबपृष्ठ का अभी तक अनुवाद नहीं किया गया है। आप <a href=\"https://github.com/letsencrypt/website\"> यहाँ </a> योगदान कर सकते हैं।"
+
+[English_is_canonical]
+अन्य = "अंग्रेजी संस्करण आधिकारिक है"
+
+[Graph_issued]
+अन्य = "जारी"
+
+[Graph_certificates_active]
+अन्य = "प्रमाण पत्र सक्रिय"
+
+[Graph_fully_qualified_domains_active]
+अन्य = "पूरी तरह से योग्य डोमेन सक्रिय"
+
+[Graph_registered_domains_active]
+अन्य = "पंजीकृत डोमेन सक्रिय"
+
+[Graph_active_count]
+अन्य = "सक्रिय गणना"
+
+[Graph_issued_per_day]
+अन्य = "प्रति दिन जारी"
+
+[Graph_all_users]
+अन्य = "सभी उपयोगकर्ता"
+
+[Graph_usa_users]
+अन्य = "यूएसए उपयोगकर्ता"
+
+[Graph_japan_users]
+अन्य = "जापान उपयोगकर्ता"
+
+[Graph_percent_https]
+अन्य = "HTTPS पर पगेलॉड्स का प्रतिशत (14 दिन चलती औसत)"
+
+[Certificate_policy]
+अन्य = "प्रमाणपत्र नीति"
+
+[Certificate_transparency_name]
+अन्य = "नाम"
+
+[Certificate_transparency_role_production]
+अन्य = "उत्पादन"
+
+[Certificate_transparency_role_testing]
+अन्य = "परीक्षण"
+
+[Certificate_transparency_uri]
+अन्य = "URI"
+
+[Certificate_transparency_public_key]
+अन्य = "सार्वजनिक कुंजी"
+
+[Certificate_transparency_log_id]
+अन्य = "लॉग आईडी"
+
+[Certificate_transparency_state]
+अन्य = "राज्य"
+
+[Certificate_transparency_window_start]
+अन्य = "विंडो प्रारंभ"
+
+[Certificate_transparency_window_end]
+अन्य = "विंडो एंड"
+
+[Certification_practices_statement]
+अन्य = "प्रमाणन आचरण कथन"
+
+[अवलोकन]
+अन्य = "अवलोकन"
+
+[Subscriber_information]
+अन्य = "सब्सक्राइबर सूचना"
+
+[Advanced_subscriber_information]
+अन्य = "उन्नत सब्सक्राइबर जानकारी"
+
+[Client_developer_information]
+अन्य = "ग्राहक डेवलपर सूचना"
+
+[Acme_divergences]
+अन्य = "वर्तमान एसीएमई ड्राफ्ट से अंतर"
+
+[Acme_divergences_rfc]
+अन्य = "ACME RFC से अंतर"
+
+[Onboarding_customers]
+अन्य = "अपने ग्राहकों को एनक्रिप्ट और ACME के ​​साथ ऑनबोर्ड करना"
+
+# पेपैल के https://www.paypal.com/donate/buttons/unhosted से पाठ
+
+[Paypal_donate_alt]
+अन्य = "पेपैल बटन के साथ दान करें"
+
+[Paypal_donate_title]
+अन्य = "पेपाल के साथ दान करें"
+
+[नहीं मिला]
+अन्य = "वह पृष्ठ मौजूद नहीं है, कृपया पता जांचें।"
+
+[Amount_per_year]
+# पूर्व। $ 10.000 / वर्ष (USD)
+अन्य = "$ {{.nb}} / yr (USD)"
+
+[3y_commitment]
+अन्य = "3 साल की प्रतिबद्धता के साथ"
+
+[1_99_employees]
+अन्य = "1-99 कर्मचारी"
+
+[100_999_employees]
+अन्य = "100-999 कर्मचारी"
+
+[1000_employees]
+अन्य = "1000+ कर्मचारी"
