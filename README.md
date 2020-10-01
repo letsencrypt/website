@@ -3,7 +3,7 @@ Let's Encrypt Website
 
 This is the repository for the main [Let's Encrypt website].
 
-This site is built with [Hugo]. It's entirely static, no server-side code/scripting.
+This site is built with [Hugo]. It's entirely static, with no server-side code/scripting.
 
 To see your changes, [install Hugo Extended], then run it with:
 
@@ -25,11 +25,11 @@ Contributions welcome.
 
 # Troubleshooting with Hugo
 
-If you see the error:
+If you see the following error:
 
 > Failed to load translations in file "en.toml": unsupported file extension .toml
 
-Your version of Hugo is probably too old. Please use the version specified in [netlify.toml]
+Your version of Hugo is probably too old. Please update to the version specified in [netlify.toml]
 
 # Translations - internationalization (i18n)
 
