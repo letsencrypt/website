@@ -3,7 +3,7 @@ language: generic
 env:
   global:
     # same as netlify.toml
-    - HUGO_VERSION=0.67.1
+    - HUGO_VERSION=0.75.1
     - HUGO_SHA256=2eb98c21962d09950620dc0b77be67d6073c81153a6a1e80c228a1924faf5dc4
 
 before_install:
