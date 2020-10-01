@@ -1,0 +1,98 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            40:01:74:e0:92:74:39:b8:ed:0b:ae:83:0e:e0:7f:48
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: O = Digital Signature Trust Co., CN = DST Root CA X3
+        Validity
+            Not Before: Sep 30 19:52:08 2020 GMT
+            Not After : Sep 29 19:52:08 2021 GMT
+        Subject: C = US, O = Let's Encrypt, CN = R4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b3:28:dc:77:29:d3:e7:91:be:f3:b7:0a:00:c7:
+                    fb:f2:55:0b:25:22:63:53:36:af:e9:08:20:df:0d:
+                    af:28:3e:cd:c6:ab:57:b6:9d:a4:25:19:a5:d2:32:
+                    6d:49:a6:08:b9:c7:2f:a1:9b:93:c5:20:40:6b:84:
+                    31:20:a2:8e:30:60:25:60:ef:d9:1a:89:3f:1f:69:
+                    71:b2:da:ea:3f:73:41:c4:90:6f:66:fd:7d:9e:58:
+                    d8:77:cf:cd:59:75:44:c9:a1:0a:7b:9f:3f:1b:0e:
+                    3a:66:6f:b6:75:cf:8b:cb:af:9d:c0:70:c5:ff:d2:
+                    82:0a:af:5d:cd:e2:e8:9c:85:94:a4:e6:00:35:e8:
+                    7e:4e:39:81:c7:21:89:60:77:ea:1d:96:f2:8b:83:
+                    7b:47:c4:6d:32:c0:52:7e:23:1e:45:b5:71:ee:a3:
+                    ef:17:c2:03:a9:93:89:dd:f5:9f:db:ba:f1:da:e0:
+                    7e:97:87:71:81:1e:1a:82:56:e4:3e:7c:18:a2:08:
+                    e5:16:5f:a8:fa:a8:e0:48:51:4d:18:14:a0:0c:a3:
+                    e5:b6:ca:b3:b5:55:12:6b:72:c7:5a:7f:3b:8c:f9:
+                    e7:d9:d1:8e:12:4d:33:33:03:2a:f1:13:e1:42:3c:
+                    c2:2e:59:60:2e:6d:e0:07:47:33:65:df:d2:67:ca:
+                    4d:85
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            Authority Information Access: 
+                CA Issuers - URI:http://apps.identrust.com/roots/dstrootcax3.p7c
+
+            X509v3 Authority Key Identifier: 
+                keyid:C4:A7:B1:A4:7B:2C:71:FA:DB:E1:4B:90:75:FF:C4:15:60:85:89:10
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+                  CPS: http://cps.root-x1.letsencrypt.org
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.identrust.com/DSTROOTCAX3CRL.crl
+
+            X509v3 Subject Key Identifier: 
+                36:9D:3E:E0:B1:40:F6:27:2C:7C:BF:8D:9D:31:8A:F6:54:A6:46:26
+    Signature Algorithm: sha256WithRSAEncryption
+         77:5a:39:2d:eb:ed:81:41:8e:b2:dc:1f:11:6c:71:e8:3d:f7:
+         ec:61:a0:0b:6e:a9:27:10:6f:41:b3:54:db:0f:af:99:98:a2:
+         a0:3d:88:d5:12:fd:e7:9c:21:0d:08:cd:ba:b6:4f:7f:c1:f7:
+         d5:4f:42:be:a3:b6:ec:7b:f7:2a:0e:15:1b:2d:8b:9f:f0:27:
+         f9:b2:6d:9f:6b:32:b3:14:8a:a8:67:3d:d0:97:77:a9:74:68:
+         91:b7:1f:78:94:44:d7:b7:b4:aa:70:95:07:2a:fc:f6:d4:2e:
+         6c:15:b3:da:e0:cb:40:80:72:7c:4b:9a:a3:8e:50:b3:21:19:
+         46:a0:76:9d:ae:93:ba:2f:c1:71:89:40:fb:f0:ef:d1:9a:54:
+         5e:d4:c3:e3:44:1e:52:92:bf:bc:c7:1e:02:ac:d0:6f:87:f7:
+         ae:40:9e:4c:9d:0e:e4:d2:b7:e3:0d:52:03:00:3b:bc:21:8b:
+         83:fe:5b:dd:d9:b5:65:36:31:6d:34:b0:ec:15:6c:4e:a7:7b:
+         35:e5:e3:1d:68:6b:13:a2:4b:ba:01:22:9a:11:14:29:38:c2:
+         d8:c1:ac:86:f2:0c:15:82:a0:8c:58:41:ad:ae:a3:3b:77:af:
+         49:8e:dd:84:7b:23:2b:89:dc:03:13:78:b0:fb:f7:df:0d:5a:
+         12:3f:be:83
+-----BEGIN CERTIFICATE-----
+MIIERjCCAy6gAwIBAgIQQAF04JJ0ObjtC66DDuB/SDANBgkqhkiG9w0BAQsFADA/
+MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
+DkRTVCBSb290IENBIFgzMB4XDTIwMDkzMDE5NTIwOFoXDTIxMDkyOTE5NTIwOFow
+MjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMT
+AlI0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsyjcdynT55G+87cK
+AMf78lULJSJjUzav6Qgg3w2vKD7NxqtXtp2kJRml0jJtSaYIuccvoZuTxSBAa4Qx
+IKKOMGAlYO/ZGok/H2lxstrqP3NBxJBvZv19nljYd8/NWXVEyaEKe58/Gw46Zm+2
+dc+Ly6+dwHDF/9KCCq9dzeLonIWUpOYANeh+TjmBxyGJYHfqHZbyi4N7R8RtMsBS
+fiMeRbVx7qPvF8IDqZOJ3fWf27rx2uB+l4dxgR4aglbkPnwYogjlFl+o+qjgSFFN
+GBSgDKPltsqztVUSa3LHWn87jPnn2dGOEk0zMwMq8RPhQjzCLllgLm3gB0czZd/S
+Z8pNhQIDAQABo4IBSTCCAUUwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8E
+BAMCAYYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5p
+ZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTE
+p7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEE
+AYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2Vu
+Y3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0
+LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFDadPuCxQPYnLHy/jZ0x
+ivZUpkYmMA0GCSqGSIb3DQEBCwUAA4IBAQB3Wjkt6+2BQY6y3B8RbHHoPffsYaAL
+bqknEG9Bs1TbD6+ZmKKgPYjVEv3nnCENCM26tk9/wffVT0K+o7bse/cqDhUbLYuf
+8Cf5sm2fazKzFIqoZz3Ql3epdGiRtx94lETXt7SqcJUHKvz21C5sFbPa4MtAgHJ8
+S5qjjlCzIRlGoHadrpO6L8FxiUD78O/RmlRe1MPjRB5Skr+8xx4CrNBvh/euQJ5M
+nQ7k0rfjDVIDADu8IYuD/lvd2bVlNjFtNLDsFWxOp3s15eMdaGsToku6ASKaERQp
+OMLYwayG8gwVgqCMWEGtrqM7d69Jjt2EeyMridwDE3iw+/ffDVoSP76D
+-----END CERTIFICATE-----
