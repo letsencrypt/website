@@ -1,4 +1,4 @@
-Let's Encrypt Website
+Let's Encrypt Website with Hugo
 =====================
 
 This is the repository for the main [Let's Encrypt website].
