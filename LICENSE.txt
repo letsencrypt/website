@@ -1,6 +1,6 @@
 Mozilla Public License Version 2.0
 ==================================
-
+read it all very carefully...
 1. Definitions
 --------------
 
