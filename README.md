@@ -25,7 +25,7 @@ Contributions welcome.
 
 # Troubleshooting with Hugo
 
-If you see the error:
+If you see this error:
 
 > Failed to load translations in file "en.toml": unsupported file extension .toml
 
@@ -33,7 +33,7 @@ Your version of Hugo is probably too old. Please use the version specified in [n
 
 # Translations - internationalization (i18n)
 
-To help with translation, please see [TRANSLATION.md].
+To get help with translation, please see [TRANSLATION.md].
 
 [Let's Encrypt website]: https://letsencrypt.org/
 [Hugo]: https://gohugo.io/
