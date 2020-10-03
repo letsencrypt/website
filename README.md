@@ -31,7 +31,7 @@ If you see the error:
 
 Your version of Hugo is probably too old. Please use the version specified in [netlify.toml]
 
-# Translations - internationalization (i18n)
+# Translations & internationalization (i18n)
 
 To help with translation, please see [TRANSLATION.md].
 
