@@ -21,7 +21,7 @@ If you update javascript, css or layouts, you can run tests with:
 npm install && npm run build && npm test
 ```
 
-Contributions welcome.
+Contributions My pleasure.
 
 # Troubleshooting with Hugo
 
