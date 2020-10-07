@@ -1162,32 +1162,3 @@ PEM certificate will always be the same. Try it yourself:
 ```
 xxd -r -p <<<308200 | base64
 ```
-
-<style>
-.language-der {
-  background-color: #dee;
-  padding: 8px 12px;
-  width: 100%;
-}
-</style>
-
-<script>
-window.onload = function() {
-  let refs = document.querySelectorAll("code.language-der");
-  refs.forEach(r => {
-    let pre = r.parentNode;
-    pre.className = 'language-der';
-
-    let hexBytes = r.textContent.replace(/ /g, '');
-    var wrapper = document.createElement('a');
-    wrapper.href = "https://lapo.it/asn1js/#" + hexBytes;
-    wrapper.target = "_blank";
-    wrapper.title = "decode";
-    console.log(wrapper.href);
-
-    pre.parentNode.insertBefore(wrapper, pre);
-    wrapper.appendChild(pre);
-  })
-}
-</script>
-
