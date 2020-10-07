@@ -3,36 +3,8 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-08-20
+lastmod: 2020-10-07
 ---
-<style>
-.language-der {
-  background-color: #dee;
-  padding: 8px 12px;
-  width: 100%;
-}
-</style>
-
-<script>
-window.onload = function() {
-  let refs = document.querySelectorAll("code.language-der");
-  refs.forEach(r => {
-    let pre = r.parentNode;
-    pre.className = 'language-der';
-
-    let hexBytes = r.textContent.replace(/ /g, '');
-    var wrapper = document.createElement('a');
-    wrapper.href = "https://lapo.it/asn1js/#" + hexBytes;
-    wrapper.target = "_blank";
-    wrapper.title = "decode";
-    console.log(wrapper.href);
-
-    pre.parentNode.insertBefore(wrapper, pre);
-    wrapper.appendChild(pre);
-  })
-}
-</script>
-
 This document provides a gentle introduction to the data structures and
 formats that define the certificates used in HTTPS. It should be
 accessible to anyone with a little bit of computer science experience
@@ -1190,3 +1162,32 @@ PEM certificate will always be the same. Try it yourself:
 ```
 xxd -r -p <<<308200 | base64
 ```
+
+<style>
+.language-der {
+  background-color: #dee;
+  padding: 8px 12px;
+  width: 100%;
+}
+</style>
+
+<script>
+window.onload = function() {
+  let refs = document.querySelectorAll("code.language-der");
+  refs.forEach(r => {
+    let pre = r.parentNode;
+    pre.className = 'language-der';
+
+    let hexBytes = r.textContent.replace(/ /g, '');
+    var wrapper = document.createElement('a');
+    wrapper.href = "https://lapo.it/asn1js/#" + hexBytes;
+    wrapper.target = "_blank";
+    wrapper.title = "decode";
+    console.log(wrapper.href);
+
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+  })
+}
+</script>
+
