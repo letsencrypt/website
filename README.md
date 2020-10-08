@@ -1,9 +1,9 @@
-Let's Encrypt Website
+GET Ready to Encrypt Website
 =====================
 
 This is the repository for the main [Let's Encrypt website].
 
-This site is built with [Hugo]. It's entirely static, no server-side code/scripting.
+This site is built with [Hugo]. It is entirely static and  no server-side code/scripting is written.
 
 To see your changes, [install Hugo Extended], then run it with:
 
@@ -15,7 +15,7 @@ And open [http://localhost:1313/] in your browser. Note that the `-F` flag will
 show items to be published in the future (like blog posts with dates in the
 future).
 
-If you update javascript, css or layouts, you can run tests with:
+If you update javascript, css or layouts, you can run tests with the help of these commands:-
 
 ```sh
 npm install && npm run build && npm test
