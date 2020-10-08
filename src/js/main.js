@@ -130,4 +130,21 @@ if ( page ) {
   });
 }
 
+// For "A Warm Welcome to ASN.1 and DER", highlight DER
+// examples in a different color, and link them to
+// https://lapo.it/asn1js/
+document.querySelectorAll("code.language-der").forEach(r => {
+  let pre = r.parentNode;
+  pre.className = 'language-der';
+
+  let hexBytes = r.textContent.replace(/ /g, '');
+  var wrapper = document.createElement('a');
+  wrapper.href = "https://lapo.it/asn1js/#" + encodeURI(hexBytes);
+  wrapper.target = "_blank";
+  wrapper.title = "decode";
+
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+});
+
 })(this, this.document);

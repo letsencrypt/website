@@ -3,9 +3,8 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-08-20
+lastmod: 2020-10-07
 ---
-
 This document provides a gentle introduction to the data structures and
 formats that define the certificates used in HTTPS. It should be
 accessible to anyone with a little bit of computer science experience
@@ -345,7 +344,7 @@ grammar. [For instance](https://tools.ietf.org/html/rfc5280#page-111):
 ```
 
 This is particularly useful for extensions, where you want to leave room
-for additional fields to be defined separately after the main spec is
+for additional fields to be defined separately after the main specification is
 published, so you have a way to register new types (object identifiers),
 and allow the definitions for those types to specify what the structure
 of the new fields should be.
@@ -355,12 +354,12 @@ edition](https://www.itu.int/rec/T-REC-X.680-199407-S/en), ANY
 was deprecated and replaced with Information Object Classes, which are a
 fancy, formalized way of specifying the kind of extension behavior
 people wanted from ANY. The change is so old by now that the latest
-ASN.1 specs (from 2015) don't even mention ANY. But if you look at the
+ASN.1 specifications (from 2015) don't even mention ANY. But if you look at the
 1994 edition you can see some discussion of the switchover. I include
 the older syntax here because that's still what RFC 5280 uses. [RFC
 5912](https://tools.ietf.org/html/rfc5912) uses
 the 2002 ASN.1 syntax to express the same types from RFC 5280 and
-several related specs.
+several related specifications.
 
 Other Notation
 ==============
@@ -478,10 +477,10 @@ table {
 | 24                    | 18                    | GeneralizedTime       |
 
 These, and a few others I've skipped for being boring, are the
-"universal" tags, because they are specified in the core ASN.1 spec and
+"universal" tags, because they are specified in the core ASN.1 specification and
 mean the same thing across all ASN.1 modules.
 
-These tags all happen to be under 31, and that's for a good reason: Bits
+These tags all happen to be under 31 (0x1F), and that's for a good reason: Bits
 8, 7, and 6 (the high bits of the tag byte) are used to encode extra
 information, so any universal tag numbers higher than 31 would need to
 use the "high tag number" form, which takes extra bytes. There are a
@@ -507,10 +506,10 @@ are distinguished by bits 8 and 7:
 | Context-specific      | 1                     | 0                     |
 | Private               | 1                     | 1                     |
 
-Specs mostly use tags in the universal class, since they provide the
+Specifications mostly use tags in the universal class, since they provide the
 most important building blocks. For instance, the serial number in a
 certificate is encoded in a plain ol' INTEGER, tag number 0x02. But
-sometimes a spec needs to define tags in the context-specific class to
+sometimes a specification needs to define tags in the context-specific class to
 disambiguate entries in a SET or SEQUENCE that defines optional entries,
 or to disambiguate a CHOICE with multiple entries that have the same
 type. For instance, take this definition:
@@ -539,7 +538,7 @@ coordinate of 9 exactly the same way, so there is ambiguity.
 Encoding Instructions
 ---------------------
 
-To resolve this ambiguity, a spec needs to provide encoding instructions that assign
+To resolve this ambiguity, a specification needs to provide encoding instructions that assign
 a unique tag to each entry. And because we're not allowed to stomp on
 the UNIVERSAL tags, we have to use one of the others, for instance
 APPLICATION:
@@ -631,7 +630,7 @@ concatenated finally with 00 00.
 
 Indefinite-ness can be arbitrarily nested! So, for example, the
 UTF8Strings that you concatenate together to form an indefinite-length
-UTF8String and themselves be encoded either with definite length or
+UTF8String can themselves be encoded either with definite length or
 indefinite length.
 
 A length byte of 80 is distinguishing because it's not a valid short
@@ -656,12 +655,15 @@ values. For instance, as described in the "Indefinite length" section, a
 UTF8String in constructed encoding would consist of multiple encoded
 UTF8Strings (each with a tag and length), concatenated together. The
 length of the overall UTF8String would be the total length, in bytes, of
-all those concatenated encoded values.
+all those concatenated encoded values. Constructed encoding can use either
+definite or indefinite length. Primitive encoding always uses definite
+length, because there's no way to express indefinite length without using
+constructed encoding.
 
 INTEGER, OBJECT IDENTIFIER, and NULL must use primitive encoding.
 SEQUENCE, SEQUENCE OF, SET, and SET OF must use constructed encoding
 (because they are inherently concatenations of multiple values).
-BIT STRING, OCTET STRING, UTCTime and GeneralizedTime, and the various
+BIT STRING, OCTET STRING, UTCTime, GeneralizedTime, and the various
 string types can use either primitive encoding or constructed encoding,
 at the sender's discretion\-- in BER. However, in DER all types that have an
 encoding choice between primitive and constructed must use the primitive
@@ -698,7 +700,7 @@ IMPLICIT encodes the field just like the underlying type, but with the
 tag number and class provided in the ASN.1 module. EXPLICIT encodes the
 field as the underlying type, and then wraps that in an outer encoding.
 The outer encoding has the tag number and class from the ASN.1 module and
-additionally has the Constructed bit set.
+additionally has the [Constructed bit](#constructed-vs-primitive) set.
 
 Here's an example ASN.1 encoding instruction using IMPLICIT:
 
@@ -747,7 +749,7 @@ INTEGER encoding
 ----------------
 
 Integers are encoded as one or more bytes, in two's complement with the
-high bit (bit 8) of the leftmost byte as the sign bit. As the BER spec
+high bit (bit 8) of the leftmost byte as the sign bit. As the BER specification
 says:
 
 The value of a two\'s complement binary number is derived by numbering
@@ -1019,7 +1021,7 @@ BIT STRING encoding
 A BIT STRING of N bits is encoded as N/8 bytes (rounded up), with a
 one-byte prefix that contains the "number of unused bits," for clarity
 when the number of bits is not a multiple of 8. For instance, when
-encoding the bit string 011011100101110111 (18 bits), we need at least 3
+encoding the bit string 011011100101110111 (18 bits), we need at least three
 bytes. But that's somewhat more than we need: it gives us capacity for
 24 bits total. Six of those bits will be unused. Those six bits are
 written at the rightmost end of the bit string, so this is encoded as:
@@ -1047,7 +1049,7 @@ CHOICE and ANY encoding
 
 A CHOICE or ANY field is encoded as whatever type it actually holds,
 unless modified by encoding instructions. So if a CHOICE field in an
-ASN.1 spec allows an INTEGER or a UTCTime, and the specific object being
+ASN.1 specification allows an INTEGER or a UTCTime, and the specific object being
 encoded contains an INTEGER, then it is encoded as an INTEGER.
 
 In practice, CHOICE fields very often have encoding instructions. For
