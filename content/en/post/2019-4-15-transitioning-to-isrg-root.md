@@ -5,6 +5,9 @@ excerpt: "On January 11, 2021, we will change the default intermediate certifica
 title: "Transitioning to ISRG's Root"
 slug: transitioning-to-isrg-root
 ---
+> **Update, September 17 2020**
+> 
+> In an effort to provide more time for our community to prepare for this transition, we have [moved back the date on which we will start serving a chain to our own root](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2020/125516/2) to January 11, 2021.
 
 > **Update, September 17, 2020**
 > 
