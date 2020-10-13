@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2020-08-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -131,6 +131,10 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "Kong",
+			"url": "https://docs.konghq.com/hub/kong-inc/acme/"
 		}
 	],
 	"list": [
