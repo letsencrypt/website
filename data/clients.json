@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2020-10-15",
 	"categories": [
 		"Bash",
 		"C",
@@ -118,7 +118,7 @@
 		},
 		{
 			"name": "WildFly Application Server",
-			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+			"url": "https://wildfly-security.github.io/wildfly-elytron/blog/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
 		},
 		{
 			"name": "Certhub",
