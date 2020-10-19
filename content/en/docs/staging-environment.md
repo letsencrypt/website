@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2020-01-21
+lastmod: 2020-10-20
 ---
 
 {{< lastmod >}}
@@ -15,6 +15,8 @@ The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
 If you're using Certbot, you can use our staging environment with the `--dry-run` flag. For other ACME clients, please read their instructions for information on testing with our staging environment. Please note the v2 staging environment requires a v2 compatible ACME client.
+
+Also please note that ACME accounts are scoped to a directory, and thus a separate account on the staging environment is required. Certbot handles this for you.
 
 # Rate Limits
 
