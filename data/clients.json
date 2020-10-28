@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2020-10-28",
 	"categories": [
 		"Bash",
 		"C",
@@ -886,6 +886,18 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "CycloneACME",
+			"url": "https://oryx-embedded.com/products/CycloneACME",
+			"category": "C",
+			"acme_v2": "true",
+			"comments": "(client implementation of ACME dedicated to microcontrollers)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		}
 	]
 }
