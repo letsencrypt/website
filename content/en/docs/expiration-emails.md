@@ -3,7 +3,7 @@ title: Expiration Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2019-04-18
+lastmod: 2020-10-28
 ---
 
 {{< lastmod >}}
@@ -40,7 +40,7 @@ renew it every year.
 There's not yet a way for us to efficiently re-subscribe
 you if you unsubscribe. Our email provider, Mandrill,
 [has a manual mechanism that we still need to
-automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+automate](https://mandrill.zendesk.com/hc/en-us/articles/360039299913).
 
 However, you can change the email address on your account, which effectively
 re-subscribes you. Many common email services treat `yourname+1@example.com` the
