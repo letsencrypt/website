@@ -3,7 +3,7 @@ title: Trademark Policy
 slug: trademarks
 top_graphic: 1
 date: 2018-09-19
-lastmod: 2018-09-19
+lastmod: 2020-10-28
 english_is_canonical: 1
 ---
 
