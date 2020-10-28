@@ -27,7 +27,8 @@ En plus des défis, l'AC Let's Encrypt fournit également un nonce ("Number used
 
 <div class="howitworks-figure">
 <img alt="Demander des défis pour valider example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 L'agent logiciel réussi l'un des défis fournis. Disons qu'il est capable d'accomplir la seconde tâche ci-dessus: Il crée un fichier à un emplacemet spécifié du site  `http://example.com`. L'agent signe également le nonce fourni avec sa clef privée. Une fois que l'agent à terminé ces étapes, il informe l'autorité de certification (AC) qu'il est prêt à poursuivre la validation. 
@@ -36,7 +37,8 @@ Ensuite, le travail de l'AC consiste à vérifier que les défis ont été relev
 
 <div class="howitworks-figure">
 <img alt="Demander l'autorisation d'agir pour example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Si la signature sur le nonce est valide et que les défis sont validés, l'agent identifié par la clé publique est autorisé à effectuer la gestion des certificats pour `example.com`. Nous appelons la paire de clefs que l'agent a utilisé une "paire de clés autorisée" pour `example.com`.
@@ -51,12 +53,14 @@ Lorsque l'AC Let's&nbsp;Encrypt reçoit la demande, elle vérifie les deux signa
 
 <div class="howitworks-figure">
 <img alt="Demander un certificat pour example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 La révocation fonctionne de la même manière. L'agent signe une demande de révocation avec la paire de clefs autorisée pour `example.com`, et l'AC Let's&nbsp;Encrypt vérifie que la demande est autorisée. Si c'est le cas, elle publie les informations de révocation dans les canaux de révocation normaux (c'est-à-dire l'OCSP), de sorte que les parties dépendantes, telles que les navigateurs, puissent savoir qu'ils ne doivent pas accepter le certificat révoqué.
 
 <div class="howitworks-figure">
 <img alt="Demander la révocation d'un certificat de example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>

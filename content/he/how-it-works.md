@@ -27,7 +27,8 @@ Let's&nbsp;Encrypt מזהה את מנהל השרת באמצעות מפתח צי�
 
 <div class="howitworks-figure">
 <img alt="בקשת אתגרים לתיקוף example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 תכנית הסוכן משלימה את אחת מסדרות האתגרים שסופקו.   נניח שהוא מצליח להשלים את המשימה השנייה שלעיל: הסוכן יוצר קובץ תחת נתיב מסוים באתר `http://example.com`.  הסוכן גם חותם על האסימון המוצפן עם המפתח הפרטי שלו.  לאחר שהסוכן השלים את הצעדים האלה, הוא מודיע לרשות האישורים שהוא מוכן להשלים את התיקוף.
@@ -36,7 +37,8 @@ Let's&nbsp;Encrypt מזהה את מנהל השרת באמצעות מפתח צי�
 
 <div class="howitworks-figure">
 <img alt="בקשת הרשאה כדי לפעול עבור example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 אם החתימה על האסימון המוצפן תקפה והאתגרים הושלמו אז הסוכן שמזוהה באמצעות המפתח הציבורי מורשה לנהל אישורים עבור `example.com`.  אנו קוראים לצמד המפתחות בהם משתמש הסוכן „צמד מפתחות מורשה” עבור `example.com`.
@@ -52,14 +54,16 @@ Let's&nbsp;Encrypt מזהה את מנהל השרת באמצעות מפתח צי�
 
 <div class="howitworks-figure">
 <img alt="בקשת אישור עבור example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 השלילה עובדת באופן דומה.  הסוכן חותם על בקשת שלילה עם צמד המפתחות שמורשים עבור `example.com`, ורשות האישורים Let's&nbsp;Encrypt מוודאה שהבקשה מורשית.  אם תהליך זה צלח, פרטי השלילה מפורסמים לערוצי השלילה הרגילים (למשל: OCSP), כדי שהגופים הנסמכים כגון דפדפנים יוכלו לדעת שאין עליהם לסמוך על אישורים שנשללו.
 
 <div class="howitworks-figure">
 <img alt="בקשת שלילת אישור עבור example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>
 
 

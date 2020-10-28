@@ -266,7 +266,7 @@ dieser Richtlinie haben, können Sie uns gerne unter
 Unser Standardlogo und Text. Abgesehen von wenigen Ausnahmen ist dies
 die Standard-Go-To-Version.
 
-<p> <img src="/images/le-logo-standard.png" alt="standard logo" height=125> </p> 
+<p> <img src="/images/le-logo-standard.png" alt="standard logo" height=125 loading="lazy"> </p> 
 <p> <a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a> </p>
 
 ### Let's Encrypt weit
@@ -274,7 +274,7 @@ die Standard-Go-To-Version.
 Die breite Version unseres Logos und Textes. Verwenden Sie dies in
 Kontexten, in denen der vertikale Raum begrenzt ist.
 
-<p> <img src="/images/le-logo-wide.png" alt="wide logo" height=90> </p>
+<p> <img src="/images/le-logo-wide.png" alt="wide logo" height=90 loading="lazy"> </p>
 <p> <a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a> </p>
 
 ### Let's Encrypt nur Schlüssel
@@ -284,5 +284,5 @@ Encrypt" deutlich sichtbar ist oder an anderer Stelle auf der Seite oder
 im Design festgelegt wurde. (Verwenden Sie im Zweifelsfall ein anderes
 Format.)
 
-<p> <img src="/images/le-logo-lockonly.png" alt="Logo only key" height=125> </p>
+<p> <img src="/images/le-logo-lockonly.png" alt="Logo only key" height=125 loading="lazy"> </p>
 <p> <a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

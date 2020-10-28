@@ -56,7 +56,7 @@ IdenTrust 和我們交互簽名 (Cross-Sign) 了中間憑證，這樣可以確�
 
 下圖表示憑證之間的關係：
 
-<img src="/certs/isrg-keys.png" alt="ISRG 憑證關係圖">
+<img src="/certs/isrg-keys.png" alt="ISRG 憑證關係圖" loading="lazy">
 
 # OCSP 憑證
 

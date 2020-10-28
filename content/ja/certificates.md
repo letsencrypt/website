@@ -54,7 +54,7 @@ Let's Encrypt の中間証明書は、ISRG Root X1 で署名されています�
 
 次の図は、Let's Encrypt の証明書の関係を視覚的に説明したものです。
 
-<img src="/certs/isrg-keys.png" alt="ISRG のキーの関係図">
+<img src="/certs/isrg-keys.png" alt="ISRG のキーの関係図" loading="lazy">
 
 # OCSP で署名された証明書
 

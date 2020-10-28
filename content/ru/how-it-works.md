@@ -27,7 +27,8 @@ Let's&nbsp;Encrypt идентифицирует web-сервер с запуще
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 Агент пытается выполнить серию тестов для проверки прав на домен. Допустим, успешно выполнено задание по созданию HTTP-ресурса - создан файл по определённому пути внутри `http://example.com`. Кроме того, агентом получен одноразовый пароль, который был подписан закрытым ключом и отправлен обратно в Let's&nbsp;Encrypt. Как только эти пункты выполнены - агент уведомляет Центр Сертификации о завершении проверки.
@@ -36,7 +37,8 @@ Let's&nbsp;Encrypt идентифицирует web-сервер с запуще
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Если цифровая подпись верна, и все тесты пройдены - агенту выдаются права на управление сертификатами для домена `example.com`. Ключевая пара (открытый и закрытый ключи), используемая при проверке прав на домен, называется "авторизованной ключевой парой" для `example.com`.
@@ -51,12 +53,14 @@ Let's&nbsp;Encrypt идентифицирует web-сервер с запуще
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 Отзыв сертификата происходит аналогично. Агент подписывает запрос об отзыве ключевой парой, авторизованной для `example.com`. Как только ЦС Let's&nbsp;Encrypt подтверждает цифровые подписи запроса, он публикует информацию об отзыве сертификата, используя [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). Таким образом браузеры, полагаясь на данные из OSCP, не будут принимать отозванные сертификаты.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>

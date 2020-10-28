@@ -27,7 +27,8 @@ Juntamente com os desafios, a AC Let's&nbsp;Encrypt também provê um pacote de 
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 Vamos assumir que o agente é capaz de completar a segunda tarefa: ele cria um arquivo em um caminho especificado em `http://example.com`. O agente também assina o pacote de dados providos com sua chave privada. Uma vez que ele termina estes passos, ele notifica a AC que está pronto para concluir a validação.  
@@ -36,7 +37,8 @@ Agora é responsabilidade da AC verificar que os desafios foram completados. A A
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Se a assinatura no pacote de dados é válida e os desafios foram corretamente completados, o agente identificado pela chave pública é autorizado a cuidar do gerenciamento de certificados de `example.com`. Nós chamamos o par de chaves usado pelo agente de "par de chavez autorizado" para `example.com.
@@ -51,13 +53,15 @@ Quando a Let's&nbsp;Encrypt recebe a solicitação ambas as assinaturas são val
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 A revogação funciona de maneira similar. O agente assina a solicitação de revogação com o par de chaves autorizado para `example.com` e a Let's&nbsp;Encrypt verifica se a solicitação é autorizada. Se for autorizada, a Let's&nbsp;Encrypt publica a informação de revogação em canais normais de revogação (como por exemplo OCSP), de maneira que terceiros que dependem de certificados (como navegadores) saibam que não devem confiar no certificado revogado.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>
 

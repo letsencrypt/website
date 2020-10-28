@@ -102,19 +102,19 @@ ISRG 마크의 오용 여부를 [press@letsencrypt.org](mailto:press@letsencrypt
 
 표준 로고 및 텍스트. 몇 가지 예외를 제외하고는 기본 버전입니다.
 
-<p><img src="/images/le-logo-standard.png" alt="standard logo" height=125></p>
+<p><img src="/images/le-logo-standard.png" alt="standard logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a></p>
 
 ### Let's Encrypt 넓은 버전
 
 우리의 로고와 텍스트의 넓은 버전. 수직 공간이 제한된 상황에서 이것을 사용하십시오.
 
-<p><img src="/images/le-logo-wide.png" alt="wide logo" height=90></p>
+<p><img src="/images/le-logo-wide.png" alt="wide logo" height=90 loading="lazy"></p>
 <p><a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a></p>
 
 ### Let's Encrypt 잠금만
 
 로고만. "Let's Encrypt" 단어 표시가 명확하게 표시되거나 페이지 또는 디자인의 다른 곳에 잘 설정된 경우에만 이 옵션을 사용하십시오. (확실하지 않으면 다른 형식을 사용하십시오.)
 
-<p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
+<p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

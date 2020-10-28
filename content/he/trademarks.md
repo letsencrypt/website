@@ -102,19 +102,19 @@ _הוספת קרדיט לסימן_. טקסט ההכרזה הבא אמור להו
 
 הלוגו והטקסט שמתלווה אליו באופן רגיל. למעט מספר חריגות, זאת גרסת בררת המחדל רצוי לעבוד אתה.
 
-<p><img src="/images/le-logo-standard.png" alt="לוגו רגיל" height=125></p>
+<p><img src="/images/le-logo-standard.png" alt="לוגו רגיל" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a></p>
 
 ### Let's Encrypt רחב
 
 הגרסה הרחבה של הלוגו והטקסט שמתלווה אליו. ניתן להשתמש בזה כשהמקום האנכי מוגבל.
 
-<p><img src="/images/le-logo-wide.png" alt="לוגו רחב" height=90></p>
+<p><img src="/images/le-logo-wide.png" alt="לוגו רחב" height=90 loading="lazy"></p>
 <p><a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a></p>
 
 ### המנעול של Let's Encrypt לבד
 
 הלוגו שלנו לבד. ניתן להשתמש בו רק כאשר המילה „Let's Encrypt” מופיעה עם סגנון מתאים באופן מוחצן או שהוא מופיע במקום אחר בעמוד או בעיצוב. (במקרה של ספק, יש להשתמש בתצורה אחרת.)
 
-<p><img src="/images/le-logo-lockonly.png" alt="לוגו מנעול בלבד" height=125></p>
+<p><img src="/images/le-logo-lockonly.png" alt="לוגו מנעול בלבד" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

@@ -102,19 +102,19 @@ ISRG 的许多软件产品都是在开源的基础上提供的，这意味着您
 
 我们的标准版 logo 和文字。除少数例外情况外，这是默认的、首选的版本。
 
-<p><img src="/images/le-logo-standard.png" alt="标准版 logo" height=125></p>
+<p><img src="/images/le-logo-standard.png" alt="标准版 logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a></p>
 
 ### Let's Encrypt 加宽版
 
 我们的 logo 和文字的加宽版本。在垂直空间有限的情况下可以使用这个版本。
 
-<p><img src="/images/le-logo-wide.png" alt="加宽版 logo" height=90></p>
+<p><img src="/images/le-logo-wide.png" alt="加宽版 logo" height=90 loading="lazy"></p>
 <p><a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a></p>
 
 ### Let's Encrypt 无文字版本
 
 只有我们的 logo 的无文字版本。仅当“Let's Encrypt”文字标志在页面或设计中的其他位置清晰可见或被公认时，才能使用此版本。（如有疑问，请使用其他版本。）
 
-<p><img src="/images/le-logo-lockonly.png" alt="无文字 logo" height=125></p>
+<p><img src="/images/le-logo-lockonly.png" alt="无文字 logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

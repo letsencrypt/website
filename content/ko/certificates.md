@@ -54,7 +54,7 @@ IdenTrust는 중간 인증서에 교차 서명했습니다. 이렇게 하면 저
 
 다음 그림은 인증서 간의 관계를 시각적으로 설명합니다.
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram"loading="lazy">
 
 # OCSP 서명 인증서
 

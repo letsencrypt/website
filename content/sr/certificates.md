@@ -70,7 +70,7 @@ Izdavač “DST Root CA X3.” Preporučeni Let's Encrypt softver,
 
 Sledeća slika objašnjava odnose između naših sertifikata vizuelno:
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram" loading="lazy">
 
 # OCSP Signing Sertifikat
 

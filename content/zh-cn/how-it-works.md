@@ -26,7 +26,8 @@ Let's Encrypt 通过公钥识别服务器管理员。证书管理软件首次与
 
 <div class="howitworks-figure">
 <img alt="请求验证 example.com 的控制权"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 证书管理软件需要完其中一项提供的验证请求。假设它能够完成上面的第二个任务：它在 `https://example.com` 站点的指定路径上创建了一个文件。证书管理软件还使用其私钥对提供的 nonce（一次性数字）进行签名。完成这些步骤后，证书管理软件会通知 CA 它已准备好完成验证。
@@ -35,7 +36,8 @@ Let's Encrypt 通过公钥识别服务器管理员。证书管理软件首次与
 
 <div class="howitworks-figure">
 <img alt="请求代表 example.com 进行操作的授权"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 如果 nonce 上的签名有效，并且验证也成功完成，那么由公钥代表的证书管理软件将被授权对 `example.com` 进行证书管理。 我们将证书管理软件使用的密钥对称为 `example.com` 的“授权密钥对”。
@@ -51,12 +53,14 @@ Let's Encrypt 通过公钥识别服务器管理员。证书管理软件首次与
 
 <div class="howitworks-figure">
 <img alt="为 example.com 申请证书"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 申请吊销证书的流程类似。证书管理软件使用 `example.com` 的授权私钥签署一个吊销请求，Let's Encrypt CA 将验证该请求是否已被授权。如果已授权，则将吊销信息发布到正常的吊销通道（即 OCSP）中，以便浏览器等依赖方知道他们不应该接受这个已被吊销的证书。
 
 <div class="howitworks-figure">
 <img alt="申请吊销 example.com 的证书的流程"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>

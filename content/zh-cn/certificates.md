@@ -55,7 +55,7 @@ IdenTrust已对我们的中间证书进行了交叉签名，以提高兼容性�
 
 下图用视觉方式诠释了证书之间的关系：
 
-<img src="/certs/isrg-keys.png" alt="ISRG 证书关系图">
+<img src="/certs/isrg-keys.png" alt="ISRG 证书关系图" loading="lazy">
 
 # OCSP 签名证书
 

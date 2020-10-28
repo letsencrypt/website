@@ -54,7 +54,7 @@ IdenTrust חתמו באופן צולב את אישורי התווך שלנו ל�
 
 התמונה הבאה מסבירה את הקשרים בין האישורים שלנו בצורה חזותית:
 
-<img src="/certs/isrg-keys.png" alt="תרשים יחסים בין מפתחות ISRG" />
+<img src="/certs/isrg-keys.png" alt="תרשים יחסים בין מפתחות ISRG" loading="lazy" />
 
 # אישור חתימה OCSP
 

@@ -102,19 +102,19 @@ Si desea utilizar las Marcas ISRG de una manera que no está cubierta por esta p
 
 Nuestro logotipo y texto estándar. Fuera de algunas excepciones, esta es la versión predeterminada.
 
-<p><img src="/images/le-logo-standard.png" alt="standard logo" height=125></p>
+<p><img src="/images/le-logo-standard.png" alt="standard logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a></p>
 
 ### Let's Encrypt Ancho
 
 La versión amplia de nuestro logo y texto. Use esto en contextos donde el espacio vertical es limitado.
 
-<p><img src="/images/le-logo-wide.png" alt="wide logo" height=90></p>
+<p><img src="/images/le-logo-wide.png" alt="wide logo" height=90 loading="lazy"></p>
 <p><a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a></p>
 
 ### Let's Encrypt Logo
 
 Nuestro logo solo. Use esto solo cuando la marca de la palabra "Let's Encrypt" sea claramente visible o esté bien establecida en otra parte de la página o en el diseño. (En caso de duda, use un formato diferente).
 
-<p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
+<p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125 loading="lazy"></p>
 <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>

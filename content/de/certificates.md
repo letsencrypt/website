@@ -81,7 +81,7 @@ nahtlos erstellen.
 
 Das folgende Bild erklärt die Beziehungen zwischen unseren Zertifikaten:
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram" loading="lazy">
 
 # OCSP Signiertes Zertifikat
 

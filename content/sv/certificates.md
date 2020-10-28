@@ -85,7 +85,7 @@ sömlöst.
 
 Följande bild förklarar visuellt förhållandena mellan våra certifikat:
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram" loading="lazy">
 
 # Certifikat för OCSP-signering
 

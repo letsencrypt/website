@@ -56,7 +56,7 @@ le certificat intermédiaire avec le sujet «Let’s Encrypt Authority X3» et �
 
 Le schéma ci-dessous décrit les relations entre nos certificats :
 
-<img src="/certs/isrg-keys.png" alt="Schéma des relations clés de l'ISRG">
+<img src="/certs/isrg-keys.png" alt="Schéma des relations clés de l'ISRG" loading="lazy">
 
 # Certificat de signature de l'OCSP
 

@@ -27,7 +27,8 @@ Along with the challenges, the Let's Encrypt CA also provides a nonce that the a
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `http://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
@@ -36,7 +37,8 @@ Then, it's the CA's job to check that the challenges have been satisfied.  The C
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 If the signature over the nonce is valid, and the challenges check out, then the agent identified by the public key is authorized to do certificate management for `example.com`.  We call the key pair the agent used an "authorized key pair" for `example.com`.
@@ -52,13 +54,15 @@ When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 Revocation works in a similar manner.  The agent signs a revocation request with the key pair authorized for `example.com`, and the Let's&nbsp;Encrypt CA verifies that the request is authorized.  If so, it publishes revocation information into the normal revocation channels (i.e. OCSP), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>
 

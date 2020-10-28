@@ -68,7 +68,7 @@ configuración perfectamente.
 
 La siguiente imagen explica visualmente las relaciones entre nuestros certificados:
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram" loading="lazy">
 
 # Certificado firma OCSP
 

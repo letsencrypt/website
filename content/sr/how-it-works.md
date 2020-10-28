@@ -27,7 +27,8 @@ Uz dostupne načine verifikacije, Let's Encrypt sertifikaciono telo (CA) takođe
 
 <div class="howitworks-figure">
 <img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 Agentski softver završava verifikaciju jednim od ponuđenih načina. Recimo da je u stanju izvršiti verifikaciju koristeći drugi naveden način iznad: kreira datoteku na određenoj putanji na web serveru `http://example.com`. Agent takodje potpisuje svoj privatni ključ. Nakon što agent izvrši ove korake, obaveštava sertifikaciono telo (CA) da je spreman za potpunu proveru.
@@ -36,7 +37,8 @@ Nakon toga, posao sertifikacionog tela (CA) jeste da proveri da li su uslovi i v
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Ako je potpis dobar, a verifikacija validna, tada je agent koji je identifikovan javnim ključem ovlašćen za upravljanje sertifikatom za domen `example.com`.
@@ -52,12 +54,14 @@ Kada Let's&nbsp;Encrypt sertifikaciono telo (CA) primi zahtev, ono onda verifiku
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 Poništavanje sertifikata funkcioniše na sličan način. Agent potpisuje zahtev za poništavanje sertifikata svojim javnim ključem za domen  `example.com`, gde nakon toga Let's&nbsp;Encrypt sertifikaciono telo (CA) verifikuje da je zahtev legitiman i odobren.  Ukoliko da, onda objavljuje informaciju o poništavanju sertifikata putem standardnih kanala (primer. OCSP), tako da zavisni partneri budu obavešteni o tome kao što su web pretraživači u cilju kako bih znali da više ne prihvataju taj konkretan sertifikat kao validan.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>

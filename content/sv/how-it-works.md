@@ -45,7 +45,8 @@ kontrollerar nyckelparet.
 
 <div class="howitworks-figure">
 <img alt="Begäran om utmaningar för att validera example.com"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+     loading="lazy"/>
 </div>
 
 Agentmjukvaran utför en av de givna utmaningarna. Låt oss anta att den kan
@@ -60,7 +61,8 @@ filen från webbservern och säkerställa att den har det förväntade innehåll
 
 <div class="howitworks-figure">
 <img alt="Begäran av behörighet att agera för example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Om engångsvärdets signatur är korrekt och utmaningarna överensstämmer är
@@ -89,7 +91,8 @@ nyckeln från CSR:en och skickar tillbaka det till agenten.
 
 <div class="howitworks-figure">
 <img alt="Begäran av certifikat för example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 Återkallande fungerar på ett liknande sätt. Agenten signerar en begäran om
@@ -101,5 +104,6 @@ det återkallade certifikatet.
 
 <div class="howitworks-figure">
 <img alt="Begäran av återkallande av certifikat för example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>

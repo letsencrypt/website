@@ -29,7 +29,8 @@ Neben den Herausforderungen bietet die Let's Encrypt-Zertifizierungsstelle auch 
 
 <div class="howitworks-figure">
 <img alt="Aufforderung zur Validierung von example.com stellen"
-     src="/images/howitworks_challenge.png"/>
+     src="/images/howitworks_challenge.png"
+      loading="lazy"/>
 </div>
 
 Die Agentensoftware erfüllt eine der gestellten Herausforderungen. Nehmen wir an, sie ist in der Lage, die zweite Aufgabe oben auszuführen: Sie erstellt eine Datei in einem angegebenen Pfad auf der Website `http://example.com`. Der Agent signiert die bereitgestellte Nonce ausserdem mit seinem privaten Schlüssel. Nachdem der Agent diese Schritte ausgeführt hat, benachrichtigt er die Zertifizierungsstelle, dass sie zur Validierung bereit ist.
@@ -38,7 +39,8 @@ Dann ist es die Aufgabe der Zertifizierungsstelle, zu überprüfen, ob die Auffo
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
+     src="/images/howitworks_authorization.png"
+     loading="lazy"/>
 </div>
 
 Wenn die Signatur über die Nonce gültig ist und die Herausforderungen ausgecheckt werden, ist der durch den öffentlichen Schlüssel identifizierte Agent berechtigt, die Zertifikatsverwaltung für `example.com` durchzuführen. Wir nennen das Schlüsselpaar, dass der Agent ein "autorisiertes Schlüsselpaar" für `example.com` verwendet hat.
@@ -53,12 +55,14 @@ Wenn die Let's Encrypt-Zertifizierungsstelle die Anforderung erhält, werden bei
 
 <div class="howitworks-figure">
 <img alt="Anfordern eines Zertifikats für example.com"
-     src="/images/howitworks_certificate.png"/>
+     src="/images/howitworks_certificate.png"
+     loading="lazy"/>
 </div>
 
 Der Widerruf funktioniert auf ähnliche Weise. Der Agent unterzeichnet eine Sperranforderung mit dem für `example.com` autorisierten Schlüsselpaar, und die Let's Encrypt-Zertifizierungsstelle überprüft, ob die Anforderung autorisiert ist. In diesem Fall werden Sperrinformationen in den normalen Sperrkanälen (z.B. OCSP) veröffentlicht, sodass vertrauende Parteien wie Browser wissen können, dass sie das widerrufene Zertifikat nicht akzeptieren sollten.
 
 <div class="howitworks-figure">
 <img alt="Anfrage zum Widerruf eines Zertifikats für example.com"
-     src="/images/howitworks_revocation.png"/>
+     src="/images/howitworks_revocation.png"
+     loading="lazy"/>
 </div>
