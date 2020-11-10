@@ -46,3 +46,7 @@ Why does installing Firefox help? For an Android phone’s built-in browser, the
 We appreciate your understanding and support both now and over the years as we continue to grow as a CA, making sure people everywhere have access to encryption. We will provide any future updates on how this root transition affects Android devices via [our community forum post](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2021/125516). Our community is always ready to help should you have any questions about this change: [community.letsencrypt.org](https://community.letsencrypt.org). 
 
 We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+
+## If You Are an App Developer
+
+If you develop an Android app, you can ship an update that adds ISRG Root X1 as a trusted root within the context of your app. There is a discussion about ways to do so in [this forum thread](https://community.letsencrypt.org/t/mobile-client-workarounds-for-isrg-issue/137807), and [this GitHub issue](https://github.com/square/okhttp/issues/6403) (on a third-party repository).
