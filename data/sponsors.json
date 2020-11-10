@@ -90,6 +90,7 @@
       {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
       {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"},
       {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"},
-      {"name":"ManualsBrain","url":"https://manualsbrain.com/","image":"manualsbrain-logo.png"}
+      {"name":"ManualsBrain","url":"https://manualsbrain.com/","image":"manualsbrain-logo.png"},
+      {"name":"Pan-Net","url":"https://pan-net.cloud/","image":"pan-net-logo.png"}
 ]
 }
