@@ -1,6 +1,6 @@
 ---
 author: Jacob Hoffman-Andrews
-date: 2020-11-11T04:36:00Z
+date: 2020-11-06T00:00:00Z
 excerpt: "When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change."
 title: "Standing on Our Own Two Feet"
 slug: own-two-feet
