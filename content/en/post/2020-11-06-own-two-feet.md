@@ -1,6 +1,6 @@
 ---
 author: Jacob Hoffman-Andrews
-date: 2020-11-06T00:00:00Z
+date: 2020-11-11T04:36:00Z
 excerpt: "When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change."
 title: "Standing on Our Own Two Feet"
 slug: own-two-feet
@@ -28,7 +28,7 @@ It’s quite a bind. We’re committed to everybody on the planet having secure 
 
 ## If You Are a Site Owner
 
-As of January 11, 2021, [we’re planning to make a change to our API](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2021/125516) so that ACME clients will, by default, serve a certificate chain that leads to ISRG Root X1. However, it will also be possible to serve an alternate certificate chain for the same certificate that leads to DST Root X3 and offers broader compatibility. This is implemented via the [ACME “alternate” link relation](https://tools.ietf.org/html/rfc8555#section-7.4.2). This is [supported by Certbot from version 1.6.0 onwards](https://github.com/certbot/certbot/releases/tag/v1.6.0). If you use a different ACME client, please check your client’s documentation to see if the “alternate” link relation is supported.
+As of January 11, 2021, [we’re planning to make a change to our API](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2021/125516) so that ACME clients will, by default, serve a certificate chain that leads to ISRG Root X1. However, it will also be possible to serve an alternate certificate chain for the same certificate that leads to DST Root X3 and offers broader compatibility. This is implemented via the [ACME “alternate” link relation](https://tools.ietf.org/html/rfc8555#section-7.4.2). This is [supported by Certbot from version 1.6.0 onwards](https://community.letsencrypt.org/t/certbot-users-preparing-for-the-isrg-root-transition-january-11-2021/138059). If you use a different ACME client, please check your client’s documentation to see if the “alternate” link relation is supported.
 
 There will be site owners that receive complaints from users and we are empathetic to that being not ideal. We’re working hard to alert site owners so you can plan and prepare. We encourage site owners to deploy a temporary fix (switching to the alternate certificate chain) to keep your site working while you evaluate what you need for a long-term solution: whether you need to run a banner asking your Android users on older OSes to install Firefox, stop supporting older Android versions, drop back to HTTP for older Android versions, or switch to a CA that is installed on those older versions.
 
