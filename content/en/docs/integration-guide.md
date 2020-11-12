@@ -4,7 +4,7 @@ linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
-lastmod: 2019-10-29
+lastmod: 2020-11-12
 ---
 
 {{< lastmod >}}
@@ -187,3 +187,37 @@ of times per hour, since repeated failures are likely to be persistent.
 
 All errors should be sent to the administrator in charge, in order to see if
 specific problems need fixing.
+
+# Verify certificates before use
+
+The ACMEv2 protocol has provisions for verifying ownership of the domains being
+requested and for securing the connection between the ACME client and ACME
+server. However, the verification of the issued certificates is not part of the
+protocol. Instead, the client could do this, or the service that will use the
+certificate could do this. At present, most clients
+[do not do this](https://gitlab.com/microsec-public/meep-meep/-/blob/master/README.md),
+so integrators should check that certificates are fit for purpose before using
+them. Deploying unsuitable certificates into configurations could result in
+services failing to restart, or TLS sessions failing to verify.
+
+Such occurrences are unlikely, but could occur due to a CA configuration issue
+during the signing process, some other transient error, or user expectations
+that do not align with the the service that is provided (such as what the issued
+certificate's intended use is).
+
+The extent of verification may depend on the use-case, but as a minimum, it
+is advised to:
+
+* Verify that the public key signed into the certificate matches the key that
+  was used in the certificate signing request.
+* Check that the certificate chain verifies against the expected root.
+* Match the requested domain(s) to the certificate's commonName and/or SAN
+  fields.
+
+Additional checks that could be performed include:
+
+* Checking that the certificate's key usage is appropriate for the use case.
+  Normally this would be a TLS Server.
+* Verify the presence of the OCSP must-staple extension, if it was requested.
+* Test that OCSP responses are functioning correctly (that the new certificate
+  status is valid and not revoked).
