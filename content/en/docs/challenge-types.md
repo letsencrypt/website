@@ -3,7 +3,7 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-02-24
+lastmod: 2020-12-08
 ---
 
 {{< lastmod >}}
@@ -150,6 +150,7 @@ Cons:
 
  - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
  - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+ - This method cannot be used to validate wildcard domains.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
