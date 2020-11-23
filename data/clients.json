@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2020-07-28",
 	"categories": [
 		"Bash",
 		"C",
@@ -209,7 +209,12 @@
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -885,6 +890,13 @@
 			"name": "RW ACME client",
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
 			"acme_v2": "true"
 		}
 	]
