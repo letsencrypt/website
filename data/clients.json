@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-07-28",
+	"lastmod": "2020-11-23",
 	"categories": [
 		"Bash",
 		"C",
@@ -898,6 +898,12 @@
 			"category": "Go",
 			"library": "Go",
 			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
 		}
 	]
 }
