@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-10-28",
+	"lastmod": "2020-11-23",
 	"categories": [
 		"Bash",
 		"C",
@@ -209,7 +209,12 @@
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -888,16 +893,17 @@
 			"acme_v2": "true"
 		},
 		{
-			"name": "CycloneACME",
-			"url": "https://oryx-embedded.com/products/CycloneACME",
-			"category": "C",
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
 			"acme_v2": "true",
-			"comments": "(client implementation of ACME dedicated to microcontrollers)",
-			"challenges": {
-				"HTTP-01": "true",
-				"DNS-01": "true",
-				"TLS-ALPN-01": "true"
-			}
+			"category": "Go"
 		}
 	]
 }
