@@ -341,12 +341,6 @@
 			"category": "Node.js"
 		},
 		{
-			"name": "ocelotconsulting/node-acme-lambda",
-			"url": "https://github.com/ocelotconsulting/node-acme-lambda",
-			"acme_v2": "true",
-			"category": "Node.js"
-		},
-		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
 			"acme_v2": "true",
