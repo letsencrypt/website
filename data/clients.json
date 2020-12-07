@@ -910,7 +910,6 @@
 			"url": "https://oryx-embedded.com/products/CycloneACME",
 			"category": "C",
 			"acme_v2": "true",
-			"library": "CycloneACME",
 			"comments": "(client implementation of ACME dedicated to microcontrollers)",
 			"challenges": {
 				"HTTP-01": "true",
