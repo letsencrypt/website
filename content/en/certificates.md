@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2020-12-03
+lastmod: 2020-12-08
 ---
 
 {{< lastmod >}}
@@ -75,7 +75,7 @@ certificates (also known as leaf certificates), i.e. the certificates we issue
 for use on your server.
 
 Our RSA intermediates are signed by ISRG Root X1. ISRG's root is widely trusted at this
-point, but our intermediates are still cross-signed by IdenTrust's "DST Root CA X3"
+point, but our RSA intermediates are still cross-signed by IdenTrust's "[DST Root CA X3](https://crt.sh/?id=8395)"
 (now called "TrustID X3 Root") for additional client compatibility. The IdenTrust
 root has been around longer and thus has better compatibility with older devices
 and operating systems (e.g. Windows XP, Android 7). You can [download "TrustID X3 Root" from
