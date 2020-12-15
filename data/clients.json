@@ -9,6 +9,7 @@
 		"D",
 		"Domino",
 		"Docker",
+		"Envoy Proxy",
 		"Go",
 		"HAProxy",
 		"Java",
@@ -131,6 +132,10 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "Ambassador Edge Stack",
+			"url": "https://www.getambassador.io"
 		}
 	],
 	"list": [
@@ -854,6 +859,12 @@
 			"library": "C++"
 		},
 		{
+			"name": "Ambassador Edge Stack",
+			"url": "https://www.getambassador.io",
+			"acme_v2": "true",
+			"category": "Envoy Proxy"
+    },
+    {
 			"name": "bacme",
 			"url": "https://gitlab.com/sinclair2/bacme",
 			"category": "Bash",
