@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-12-11
+lastmod: 2020-12-15
 ---
 
 {{< lastmod >}}
@@ -28,7 +28,7 @@ automatically be resolved when any encountered rate limits no longer apply.
 Revoked certificates still count against our rate limits and remain in the public record.
 All issued certificates can be found using [crt.sh](https://crt.sh/), which uses public
 [Certificate Transparency](https://www.certificate-transparency.org) logs. In general,
-certificate revocation should only be considered under extreme circumstances, such as the
+certificate revocation should only be considered under very particular circumstances, such as the
 compromise of a certificate's private key. Securely deleting a certificate's private key
 is usually sufficient to decommission the certificate due to perfect forward secrecy.
 Revocation of a certificate only invalidates its trust for future use.
