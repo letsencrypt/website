@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-12-15
+lastmod: 2020-12-16
 ---
 
 {{< lastmod >}}
@@ -15,9 +15,9 @@ reasonable for most scenarios. Our rate limits were designed to facilitate unham
 certificate renewals and progressive certificate usage by large organizations. If you
 are integrating Let's Encrypt into your operations, please review our [Integration Guide](/docs/integration-guide)
 to ensure smooth operation. In particular, we recommend using one ACME account for many
-customers. If you are developing an ACME client or debugging the usage of one, please
-take advantage of our [staging environment](/docs/staging-environment), which is
-governed by higher rate limits and issues false certificates.
+customers. If you are developing an ACME client, debugging the usage of one, or configuring
+an automated system, please take advantage of our [staging environment](/docs/staging-environment),
+which is governed by higher rate limits and issues false certificates.
 
 We have no way of temporarily overriding the rate limits. For very large providers who are
 encountering rate limits due to sheer volume, we provide a [rate limiting form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
@@ -39,11 +39,19 @@ Message: too many certificates already issued for exact set of domains
 
 Limit: 5 <a href="#duplicate-certificate">duplicate certificates</a> / 7 days
 
+Hitting this limit is often the result of using the following practices that should be avoided:
+* Deleting valid certificates (and their private keys) when attempting to resolve webserver configuration problems
+* Spinning-up ephemeral instances that acquire new certificates from the CA rather than utilizing an existing certificate
+
 ***
 
 Message: too many failed authorizations recently
 
 Limit: 5 failed validation attempts / <a href="#FQDN">FQDN</a> / ACME account / hour
+
+Hitting this limit is often the result of:
+* Improper webserver or DNS configuration
+* Misunderstanding of an [ACME challenge](/docs/challenge-types)
 
 ***
 
