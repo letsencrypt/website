@@ -8,7 +8,7 @@ lastmod: 2020-12-08
 
 {{< lastmod >}}
 
-[![ISRG Certificate Hierarchy Diagram, as of September 2020](/certs/isrg-hierarchy-2020.png)](/certs/isrg-hierarchy-2020.png)
+[![ISRG Certificate Hierarchy Diagram, as of December 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Root Certificates
 
