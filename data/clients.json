@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-12-07",
+	"lastmod": "2020-12-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -910,6 +910,12 @@
 				"DNS-01": "true",
 				"TLS-ALPN-01": "true"
 			}
+		},
+		{
+			"name": "acme-redirect",
+			"url": "https://github.com/kpcyrd/acme-redirect",
+			"acme_v2": "true",
+			"category": "Rust"
 		}
 
 	]
