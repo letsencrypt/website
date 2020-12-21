@@ -16,7 +16,7 @@ As such, we will be able to provide subscribers with a chain which contains both
 
 We will not be performing our previously-planned chain switch on January 11th, 2021. Instead, we will be switching to provide this new chain by default in late January or early February. The transition should have no impact on Let’s Encrypt subscribers, much like our switch to our R3 intermediate earlier this month.
 
-<center><img src="/images/2020.12.21-android-compat-cert-chain.png" alt="Let's Encrypt Issuance Chains" width="600"></center>
+<p class="text-center"><img src="/images/2020.12.21-android-compat-cert-chain.png" alt="Let's Encrypt Issuance Chains" width="600"></p>
 
 Some additional technical details follow.
 
