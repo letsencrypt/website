@@ -4,7 +4,7 @@ env:
   global:
     # same as netlify.toml
     - HUGO_VERSION=0.79.1
-    - HUGO_SHA256=ca544fe0934bfcf97a9bb6bd778905e3936101b1e01859f908e6c12c79567313
+    - HUGO_SHA256=43c40c3909d7a3fec0eda190ddd7351b57211059825de511a0e30e9628d97cac
 
 before_install:
   - wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
