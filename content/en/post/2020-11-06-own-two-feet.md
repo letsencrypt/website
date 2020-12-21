@@ -2,15 +2,19 @@
 author: Jacob Hoffman-Andrews
 date: 2020-11-06T00:00:00Z
 excerpt: "When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change."
-title: "Standing on Our Own Two Feet"
+title: "Standing on Our Own Two Feet [Updated]"
 slug: own-two-feet
 ---
+
+> **Update, December 21 2020**
+>
+> Thanks to community feedback and our wonderful partners at IdenTrust, [we will be able to continue to offer service without interruption](/2020/12/21/extending-android-compatibility.html) to people using older Android devices.  We flagged the content of this blog post that is no longer accurate.
 
 When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change. The common solution: a new CA will often ask an existing, trusted CA for a cross-signature, to quickly get it into being trusted by lots of devices.
 
 Five years ago, when Let’s Encrypt launched, that’s exactly what we did. [We got a cross-signature from IdenTrust](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html). Their “DST Root X3” had been around for a long time, and all the major software platforms trusted it already: Windows, Firefox, macOS, Android, iOS, and a variety of Linux distributions. That cross-signature allowed us to start issuing certificates right away, and have them be useful to a lot of people. Without IdenTrust, Let’s Encrypt may have never happened and we are grateful to them for their partnership. Meanwhile, we issued our own root certificate (“ISRG Root X1”) and applied for it to be trusted by the major software platforms. 
 
-Now, those software platforms have trusted our root certificate for years. And the DST Root X3 root certificate that we relied on to get us off the ground is going to expire - on September 1, 2021. Fortunately, we’re ready to stand on our own, and rely solely on our own root certificate.
+**[This section out of date]** Now, those software platforms have trusted our root certificate for years. ~~And the DST Root X3 root certificate that we relied on to get us off the ground is going to expire - on September 1, 2021.~~ Fortunately, we’re ready to stand on our own, and rely solely on our own root certificate.
 
 However, this does introduce some compatibility woes. Some software that hasn’t been updated since 2016 (approximately when our root was accepted to many root programs) still doesn’t trust our root certificate, ISRG Root X1. Most notably, this includes versions of Android prior to 7.1.1. That means those older versions of Android will no longer trust certificates issued by Let’s Encrypt.
 
@@ -26,16 +30,15 @@ What can we do about this? Well, while we’d love to improve the Android update
 
 It’s quite a bind. We’re committed to everybody on the planet having secure and privacy-respecting communications. And we know that the people most affected by the Android update problem are those we most want to help - people who may not be able to buy a new phone every four years. Unfortunately, we don’t expect the Android usage numbers to change much prior to DST Root X3’s expiration. By raising awareness of this change now, we hope to help our community to find the best path forward. 
 
-## If You Are a Site Owner
+## [This section out of date] If You Are a Site Owner
 
-As of January 11, 2021, [we’re planning to make a change to our API](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2021/125516) so that ACME clients will, by default, serve a certificate chain that leads to ISRG Root X1. However, it will also be possible to serve an alternate certificate chain for the same certificate that leads to DST Root X3 and offers broader compatibility. This is implemented via the [ACME “alternate” link relation](https://tools.ietf.org/html/rfc8555#section-7.4.2). This is [supported by Certbot from version 1.6.0 onwards](https://community.letsencrypt.org/t/certbot-users-preparing-for-the-isrg-root-transition-january-11-2021/138059). If you use a different ACME client, please check your client’s documentation to see if the “alternate” link relation is supported.
+As of ~~January 11, 2021~~, [we’re planning to make a change to our API](https://community.letsencrypt.org/t/transition-to-isrgs-root-delayed-until-jan-11-2021/125516) so that ACME clients will, by default, serve a certificate chain that leads to ISRG Root X1. However, it will also be possible to serve an alternate certificate chain for the same certificate that leads to DST Root X3 and offers broader compatibility. This is implemented via the [ACME “alternate” link relation](https://tools.ietf.org/html/rfc8555#section-7.4.2). This is [supported by Certbot from version 1.6.0 onwards](https://community.letsencrypt.org/t/certbot-users-preparing-for-the-isrg-root-transition-january-11-2021/138059). If you use a different ACME client, please check your client’s documentation to see if the “alternate” link relation is supported.
 
 There will be site owners that receive complaints from users and we are empathetic to that being not ideal. We’re working hard to alert site owners so you can plan and prepare. We encourage site owners to deploy a temporary fix (switching to the alternate certificate chain) to keep your site working while you evaluate what you need for a long-term solution: whether you need to run a banner asking your Android users on older OSes to install Firefox, stop supporting older Android versions, drop back to HTTP for older Android versions, or switch to a CA that is installed on those older versions.
 
+## [This section out of date] If You Get Let’s Encrypt Certificates Through Your Hosting Provider 
 
-## If You Get Let’s Encrypt Certificates Through Your Hosting Provider 
-
-Your hosting provider may be serving the DST Root X3 until September 2021, or they may decide to switch to the certificate chain that leads to ISRG Root X1 after January 11, 2021. Please contact them if you have any questions!
+Your hosting provider may be serving the DST Root X3 until ~~September 2021~~, or they may decide to switch to the certificate chain that leads to ISRG Root X1 after ~~January 11, 2021~~. Please contact them if you have any questions!
 
 ## If You Use an Older Version of Android
 
