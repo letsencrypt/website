@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2020-12-07",
 	"categories": [
 		"Bash",
 		"C",
@@ -209,7 +209,12 @@
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -333,12 +338,6 @@
 		{
 			"name": "Cloudron/acme",
 			"url": "https://git.cloudron.io/cloudron/box/blob/master/src/cert/acme2.js",
-			"category": "Node.js"
-		},
-		{
-			"name": "ocelotconsulting/node-acme-lambda",
-			"url": "https://github.com/ocelotconsulting/node-acme-lambda",
-			"acme_v2": "true",
 			"category": "Node.js"
 		},
 		{
@@ -886,6 +885,32 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
+		},
+		{
+			"name": "CycloneACME",
+			"url": "https://oryx-embedded.com/products/CycloneACME",
+			"category": "C",
+			"acme_v2": "true",
+			"comments": "(client implementation of ACME dedicated to microcontrollers)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		}
+
 	]
 }

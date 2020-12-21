@@ -6,13 +6,15 @@
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
       {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
-      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"}
+      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
+      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"},
+      {"name":"Bill and Melinda Gates Foundation","url":"https://www.gatesfoundation.org/","image":"gates-foundation-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
-      {"name":"Avast","url":"https://www.avast.com/","image":"avast-logo.png"}
-
+      {"name":"Avast","url":"https://www.avast.com/","image":"avast-logo.png"},
+      {"name":"Reprise Software","url":"https://reprisesoftware.com/","image":"reprise-software-logo.png"}
 ],
 "silver":[
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
@@ -72,7 +74,6 @@
       {"name":"Wix","url":"https://www.wix.com/","image":"wix-logo.png"},
       {"name":"Engine Forex","url":"https://engineforex.com/","image":"engine-forex-logo.png"},
       {"name":"CodeinWP","url":"https://www.codeinwp.com/","image":"codeinwp-logo.png"},
-      {"name":"Hosting Review","url":"https://hosting.review/","image":"hostingreview-logo.png"},
       {"name":"Heroku","url":"https://www.heroku.com/","image":"heroku-logo.png"},
       {"name":"Snipe-IT","url":"https://snipeitapp.com/","image":"snipe-it-logo.png"},
       {"name":"Top10VPN","url":"https://www.top10vpn.com/","image":"top10vpn-logo.png"},
@@ -89,6 +90,9 @@
       {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"},
       {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
       {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"},
-      {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"}
+      {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"},
+      {"name":"Cargo","url":"https://cargo.site/","image":"cargo-logo.png"},
+      {"name":"ManualsBrain","url":"https://manualsbrain.com/","image":"manualsbrain-logo.png"},
+      {"name":"Pan-Net","url":"https://pan-net.cloud/","image":"pan-net-logo.png"}
 ]
 }
