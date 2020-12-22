@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-12-21
+lastmod: 2020-12-22
 ---
 
 {{< lastmod >}}
@@ -174,7 +174,7 @@ using the certificate, resulting in increased performance and reliability.
 
 ***
 
-<span id="SNI">Server Name Indication</span>
+<span id="SNI">Server Name Indication (SNI)</span>
 
 Extension to the TLS protocol by which a webserver discerns which certificate to send to a client
 based on the hostname requested by the client.
