@@ -53,7 +53,7 @@ Hitting this limit is often the result of using the following practices that sho
 * Deleting valid certificates (and their private keys) when attempting to resolve webserver configuration problems
 * Spinning-up ephemeral instances or containers that acquire new certificates from the CA rather
 than utilizing an existing certificate
-* Having each worker in a load-balancing scheme acquire its own certificate rather than
+* Having each worker in a load-balancing scheme acquire its own certificate from the CA rather than
 terminating SSL/TLS at the load-balancer or distributing a common certificate to each worker
 
 ***
