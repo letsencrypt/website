@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-12-20",
+	"lastmod": "2020-12-25",
 	"categories": [
 		"Bash",
 		"C",
@@ -887,6 +887,19 @@
 			"acme_v2": "true"
 		},
 		{
+			"name": "serverPKI",
+			"url": "https://github.com/mc3/serverPKI",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
+    },
+    {
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
@@ -917,6 +930,5 @@
 			"acme_v2": "true",
 			"category": "Rust"
 		}
-
 	]
 }
