@@ -13,16 +13,10 @@ other = "Donate"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read our 2019 Annual Report"
-
-[home_hero_desktop]
-other = "Desktop"
-
-[home_hero_mobile]
-other = "Mobile"
+other = "Read our 2020 <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>Annual Report</a>"
 
 [home_major_sponsors]
-other = "Major Sponsors and Donors"
+other = "Major Sponsors and Funders"
 
 [home_from_our_blog]
 other = "From our blog"
@@ -122,6 +116,9 @@ other = "Japan users"
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
+[certificate_policy]
+other = "Certificate Policy"
+
 [certificate_transparency_name]
 other = "Name"
 
@@ -148,6 +145,9 @@ other = "Window Start"
 
 [certificate_transparency_window_end]
 other = "Window End"
+
+[certification_practices_statement]
+other = "Certification Practices Statement"
 
 [overview]
 other = "Overview"

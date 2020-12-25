@@ -5,7 +5,7 @@ command = "hugo -d public"
 
 [build.environment]
 # same as .travis.yml
-HUGO_VERSION = "0.67.1"
+HUGO_VERSION = "0.79.1"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 # headers must be the same than in config/_default/server.toml (for Hugo)
@@ -87,6 +87,13 @@ for = "/:lang/repository"
 # For WebTrust Audits
 # Cf https://github.com/letsencrypt/website/pull/976
 Referrer-Policy = "strict-origin"
+
+[[headers]]
+for = "/certs/*.pem"
+[headers.values]
+# Because Netlify defaults to "application/x-x509-ca-cert", which is for DER.
+Content-Type = "application/x-pem-file"
+Content-Disposition = "inline"
 
 # https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 

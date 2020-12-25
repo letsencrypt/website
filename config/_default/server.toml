@@ -76,3 +76,10 @@ for = "/:lang/repository"
 # For WebTrust Audits
 # Cf https://github.com/letsencrypt/website/pull/976
 Referrer-Policy = "strict-origin"
+
+[[headers]]
+for = "/certs/*.pem"
+[headers.values]
+# Because Netlify defaults to "application/x-x509-ca-cert", which is for DER.
+Content-Type = "application/x-pem-file"
+Content-Disposition = "inline"
