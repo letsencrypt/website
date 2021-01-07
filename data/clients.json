@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-12-25",
+	"lastmod": "2021-01-07",
 	"categories": [
 		"Bash",
 		"C",
@@ -131,6 +131,10 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "SWAG - Secure Web Application Gateway",
+			"url": "https://github.com/linuxserver/docker-swag"
 		}
 	],
 	"list": [
