@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-01-07",
+	"lastmod": "2021-01-08",
 	"categories": [
 		"Bash",
 		"C",
@@ -933,6 +933,19 @@
 			"url": "https://github.com/kpcyrd/acme-redirect",
 			"acme_v2": "true",
 			"category": "Rust"
+		},
+		{
+			"name": "acme-http-01-azure-key-vault-middleware",
+			"url": "https://github.com/compulim/acme-http-01-azure-key-vault-middleware",
+			"acme_v2": "true",
+			"category": "Node.js",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)"
 		}
 	]
 }
