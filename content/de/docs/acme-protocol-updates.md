@@ -1,34 +1,33 @@
 ---
-title: Aktualisierung ACME Protokoll
+title: Aktualisierung des ACME-Protokolls
 slug: acme-protocol-updates
 top_graphic: 1
-date: 2016-07-27
 lastmod: 2019-10-07
 ---
 
 {{< lastmod >}}
 
-Das [IETF-standartisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für Let's Encrypt.
+Das [IETF-standardisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME-Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für Let's Encrypt.
 
-# API Endpunkte
+# API-Endpunkte
 
-Momentan haben wir folgende API Endpunkte. Bitte verwenden Sie [unser Diagramm der Unterschiede](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) zum Vergleich der Implementierung mit der ACME Spezifikation.
+Momentan haben wir folgende API-Endpunkte. Bitte verwenden Sie [unser Diagramm der Unterschiede](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) zum Vergleich der Implementierung mit der ACME-Spezifikation.
 
 ## ACME v2 (RFC 8555)
 
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-## ACME v1 (Deprecated)
+## ACME v1 (veraltet)
 
 * [Production] `https://acme-v01.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
-# Neue abwärtskompatible ACME Funktionen
+# Neue abwärtskompatible ACME-Funktionen
 
-Von Zeit zu Zeit implementiert Let's Encrypt neue abwärtskompatible Funktionen in existierende API Endpunkte. Typischerweise werden neue abwärtskompatible Funktionen vorgestellt, weil wir uns entschieden haben, einen Teil der ACME Spezifikation zu implemntieren, die wir vorher noch nicht gehabt haben.
+Von Zeit zu Zeit implementiert Let's Encrypt neue abwärtskompatible Funktionen in existierende API-Endpunkte. Typischerweise werden neue abwärtskompatible Funktionen eingeführt, weil wir uns entschieden haben, einen Teil der ACME-Spezifikation zu implementieren, die wir vorher noch nicht implementiert hatten.
 
-Wenn neue Funktionen zu existierenden API Endpunkten vorgestellt werden, sind die Funktionen bereits klar in einer öffentlichen ACME Spezifikation erklärt und stören keine implementierten Clients.
+Wenn neue Funktionen zu existierenden API-Endpunkten vorgestellt werden, sind die Funktionen bereits in einer öffentlichen ACME-Spezifikation spezifiziert und stören keine implementierten Clients.
 
 # Neue Versionen von ACME mit Inkompatibilitäten
 

@@ -7,18 +7,19 @@ date: 2018-12-30
 
 {{< lastmod >}}
 
+
 <!--
 Note for translators:
  
 - Usage of the "def" macro (in other languages than English):
 {% def 
-	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
-	name="The term to define (optional if english or abbr is provided)"
-	abbr="an accronym (optional)"
-	english="the english term (optional - if present the abbr is in english too)" %}}
-		the definition
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+    name="The term to define (optional if english or abbr is provided)"
+    abbr="an accronym (optional)"
+    english="the english term (optional - if present the abbr is in english too)" %}}
+        the definition
 {% /def %}
-	
+    
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
@@ -81,7 +82,7 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} Ein [Zertifikat](#def-leaf), bei dem der Antragsteller nur die Kontrolle über den Domainnamen (und nicht die Identität der anfragenden Organisation) nachgewiesen hat. [Let's Encrypt](#def-LE) bietet nur DV Zertifikate (keine [OV](#def-OV) oder [EV](#def-EV)): [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Eine Variante des Digital Signature Algorithm (DSA), welcher Kryptographie mit elliptischen Kurven benutzt. [Let's Encrypt](#def-LE) unterstützt ECDSA für [End- oder Blatt-Zertfikate](#def-leaf), aber nicht für die ganze [Kette](#def-chain): [/upcoming-features](/upcoming-features). [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Eine Variante des Digital Signature Algorithm (DSA), welcher Kryptographie mit elliptischen Kurven benutzt.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) unterstützt ECDSA für [End- oder Blatt-Zertfikate](#def-leaf), aber nicht für die ganze [Kette](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
 
@@ -89,7 +90,7 @@ Note for translators:
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} Ein Typ öffentlicher Schlüssel basierend auf Kryptographie mit elliptischen Kurven. ECC benutzt kleinere Schlüssel im Vergleich zu nicht-EC Kryptographie bei vergleichsweise gleicher Sicherheit. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
-{{% def id="EV" name="Extended Validation" abbr="EV" %}} Ein Typ der Zertifikatvalidierung, für die die [CA](#def-CA) die rechtliche Identität der Webseite kontrolliert. Diese enthalten Informationen über die Entität. Die Kontrollen der [CA](#def-CA) sind mehr striktiv als bei [OV](#def-OV) Zertifikaten. [Let's Encrypt](#def-LE) bietet keine EV Zertifikate an. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
+{{% def id="EV" name="Extended Validation" abbr="EV" %}} Ein Typ der Zertifikatvalidierung, für die die [CA](#def-CA) die rechtliche Identität der Webseite kontrolliert. Diese enthalten Information über die Entität. Die Kontrollen der [CA](#def-CA) sind mehr striktiv als bei [OV](#def-OV) Zertifikaten. [Let's Encrypt](#def-LE) bietet keine EV Zertifikate an. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} Der komplette Domainname einer Webseite. Zum Beispiel `www.example.com` ist ein *FQDN*. {{% /def %}}
 
@@ -127,7 +128,7 @@ Note for translators:
 
 {{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} Eine Datei die möglicherweise ein [Blatt-Zertifikat](#def-leaf) enthält, es ist eine [Kette](#def-chain) hoch bis zum Root und den privaten Schlüssel des Blatt-Zertifikats. Schauen Sie auch https://en.wikipedia.org/wiki/PKCS_12. [Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
-{{% def id="precertificate" name="Precertificate" %}} Vorzertifikate sind Teil der [Certificate Transparency](#def-CT). Ein Vorzertifikat ist eine Kopie des [Zertifikat](#def-leaf), dass eine CA beabsichtigt auszustellen mit einer  [kritischen](#def-critical) Erweiterung ausgestattet, um zu verhindern, dass das Vorzertifikat von Software in der Welt akzeptiert wird. Eine CA sendet ein Vorzertifikat zum [CT logs](#def-CT-log) in Austausch für [SCTs](#def-SCT). Da ein Vorzertifikat nicht identisch ist mit seinem korrespondierenden Zertifikat, loggt Certificate Transparency am Ende beide. [RFC 6962 Section 3.1]( https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
+{{% def id="precertificate" name="Precertificate" %}} Vorzertifikate sind Teil der [Certificate Transparency](#def-CT). Ein Vorzertifikat ist eine Kopie des [Zertifikat](#def-leaf), dass eine CA beabsichtigt auszustellen mit einer  [kritischen](#def-critical) Erweiterung ausgestattet, um zu verhindern, dass das Vorzertifikat von Software in der Welt akzeptiert wird. Eine CA sendet ein Vorzertifikat zum [CT logs](#def-CT-log) in Austausch für [SCTs](#def-SCT). Da ein Vorzertifikat nicht identisch ist mit seinem korrespondierenden Zertifikat, loggt Certificate Transparency am Ende beide. [RFC 6962 Section 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} Ein Sicherheitsmechanismus, der Browser fragt, ob die [Zertifikatkette](#def-chain) eines Webservers für zukünfigte Anfragen benutzt werden soll. Chrome stellte dieses Mechanismus zum Schutz gegen CA Komprimitierungen vor, aber Ausfälle von Seiten verleiteten Chrome dazu, diesen zu [missbilligen und zu löschen](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [Wikipedia](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
@@ -153,7 +154,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) stellt eine Staging API zum Testen von Zertifikatsanfragen ohne Einfluss auf Rate Limits zur Verfügung. Zertifikate, die von der Staging Umgebung ausgestellt sind, werden öffentlich *nicht* vertraut. Die Staging Umgebung sollte nur zum Testen, Fehlersuche und ACME Client Entwicklungsprozess verwendet werden. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Ein Feld eines [Zertifikats](#def-leaf) das anzeigt, für welche Domain(s) ein Zertifikat gültig ist. Es ersetzt die Benutzung des [Common Name](#def-CN), welcher jetzt aus Kompatibilitätsgründen noch vorhanden ist. Ein einfaches Zertifikat enthält möglicherweise viele SANs und kann für viele unterschiedliche Domains gültig sein. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/rate-limits#names-per-certificate](/docs/rate-limits#names-per-certificate) {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Ein Feld eines [Zertifikats](#def-leaf) das anzeigt, für welche Domain(s) ein Zertifikat gültig ist. Es ersetzt die Benutzung des [Common Name](#def-CN), welcher jetzt aus Kompatibilitätsgründen noch vorhanden ist. Ein einfaches Zertifikat enthält möglicherweise viele SANs und kann für viele unterschiedliche Domains gültig sein. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name)https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} Die Person oder Organisation, die einen Antrag für ein Zertifikat stellt. {{% /def %}}
 
@@ -175,5 +176,6 @@ Note for translators:
 
 {{% def id="X509" abbr="X.509" %}} Die Standarddefinition des Formats von Öffentliche-Schlüssel-Zertifikate. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
-<link rel="stylesheet" href="/css/glossary.css">
+<link rel="stylesheet" href="/css/glossary.css" />
 <script src="/js/glossary.js" async></script>
+
