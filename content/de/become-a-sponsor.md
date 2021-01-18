@@ -16,7 +16,7 @@ Es ist Zeit, dass verschlüsselte Kommunikation im Web Standard wird und Let's E
 Das ist gross, und wir möchten ein Teil davon sein. Helfen Sie uns, den Weg für eine sichere Zukunft für das Web zu finden.
 
 ## Firmensponsoring
-(
+
 <!-- Note for translators: words in quotes need to be translated -->
 {{< become-a-sponsor platinum="Platin" gold="Gold" gold_basic="Gold Basic" silver="Silber" >}}
 
