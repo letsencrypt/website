@@ -20,7 +20,7 @@ One consequence of this design is that our database machines need to be pretty p
 
 The previous generation of database hardware was powerful but it was regularly being pushed to its limits. For the next generation, we wanted to more than double almost every performance metric in the same 2U form factor. In order to pull that off, we needed AMD EPYC chips and Dell’s [PowerEdge R7525](https://www.dell.com/en-us/work/shop/cty/pdp/spd/poweredge-r7525/) was ideal. Here are the specifications:
 
-<center>
+<div style="display: flex; flex-direction: column; align-items: center">
 <table>
 	<tr>
 		<td style="padding: 10px;"></td>
@@ -44,14 +44,12 @@ The previous generation of database hardware was powerful but it was regularly b
 		<td style="padding: 10px;">24x 6.4TB Intel P4610<br>NVMe SSD<br>3200/3200 MB/s read/write</td>
 	</tr>
 </table>
-</center>
+</div>
 
-<center>
-<figure>
+<figure style="display: flex; flex-direction: column; align-items: center; text-align: center">
 <img src="/images/2021.01.21-next-gen-db-chassis.jpg" width="600" alt="Dell PowerEdge R7525 Chassis">
 <figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.</figcaption>
 </figure>
-</center>
 
 By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping clock speeds high: 2.9GHz base with 3.4GHz boost. More importantly, EPYC provides 128 PCIe v4.0 lanes, which allows us to put 24 NVMe drives in a single machine. NVMe is incredibly fast (\~5.7x faster than the SATA SSDs in our previous-gen database servers) because it uses PCIe instead of SATA. However, PCIe lanes are typically very limited: modern consumer chips typically have only 16 lanes, and Intel’s Xeon chips have 48. By providing 128 PCI lanes per chip (v4.0, no less), AMD EPYC has made it possible to pack large numbers of NVMe drives into a single machine. We’ll talk more about NVMe later.
 
