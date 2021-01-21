@@ -94,7 +94,7 @@ of their servers. It can be hard to measure this because they often also
 use [anycast], which means multiple servers can have the same IP address,
 and depending on where you are in the world you might talk to a different
 server (and get a different answer) than Let’s Encrypt does. The best
-DNS APIs provide a way for you to automatically check whether and update
+DNS APIs provide a way for you to automatically check whether an update
 is fully propagated. If your DNS provider doesn’t have this, you just
 have to configure your client to wait long enough (often as much as an
 hour) to ensure the update is propagated before triggering validation.
