@@ -49,7 +49,7 @@ The previous generation of database hardware was powerful but it was regularly b
 <center>
 <figure>
 <img src="/images/2021.01.21-next-gen-db-chassis.jpg" width="600" alt="Dell PowerEdge R7525 Chassis">
-<figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far right.</figcaption>
+<figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.</figcaption>
 </figure>
 </center>
 
