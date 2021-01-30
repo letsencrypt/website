@@ -38,7 +38,7 @@ Einer der häufigsten Fehler, auf den Leute stoßen, ist SERVFAIL. Dies weist me
 
 Wenn Sie DNSSEC nicht aktiviert haben und eine SERVFAIL erhalten, ist der zweitwahrscheinlichste Grund der, dass Ihr autorisierender Nameserver NOTIMP zurückgegeben hat, was wie oben beschrieben eine Verletzung von RFC 1035 ist; stattdessen sollte NOERROR mit einer leeren Antwort zurückgegeben werden. Wenn dies der Fall ist, reichen Sie einen Fehlerbericht oder ein Support-Ticket bei Ihrem DNS-Anbieter ein.
 
-Außerdem können SERVFAILs durch Ausfälle bei Ihren autorisierenden Nameservern verursacht werden. Überprüfen sie die NS-Einträge für Ihren Nameserver und stellen Sie sicher, dass jeder Server verfügbar ist.
+Außerdem können SERVFAILs durch Ausfälle bei Ihren autorisierenden Nameservern verursacht werden. Überprüfen Sie die NS-Einträge für Ihren Nameserver und stellen Sie sicher, dass jeder Server verfügbar ist.
 
 # Timeout
 

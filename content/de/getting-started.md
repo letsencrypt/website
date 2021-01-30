@@ -19,7 +19,7 @@ Wenn Sie mit unterschiedlichen ACME-Clients experimentieren, benutzen Sie [die S
 
 # Ohne Shell-Zugriff
 
-Der beste Weg, Let's Encrypt ohne Shell-Zugriff zu benutzen, ist der eingebaute Support von Ihrem Hosting-Provider. Wenn Ihr Hosting-Provider Let's Encrypt Unterstützung anbietet, dann kann er in ihrem Namen freie Zertifikate anfordern, installieren und automatisch aktuell halten. Bei einigen Hosting-Providern müssen Sie diese Unterstützung einschalten. Andere Provider machen dies automatisch für ihre Kunden.
+Der beste Weg, Let's Encrypt ohne Shell-Zugriff zu benutzen, ist der eingebaute Support von Ihrem Hosting-Provider. Wenn Ihr Hosting-Provider Let's Encrypt Unterstützung anbietet, dann kann er in Ihrem Namen freie Zertifikate anfordern, installieren und automatisch aktuell halten. Bei einigen Hosting-Providern müssen Sie diese Unterstützung einschalten. Andere Provider machen dies automatisch für ihre Kunden.
 
 [Überprüfen Sie unsere Liste von Hosting-Providern](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920), um zu sehen, ob Ihrer mit dabei ist. Wenn das so ist, folgen Sie der Dokumentation, um Ihr Let's Encrypt-Zertifikat einzurichten.
 

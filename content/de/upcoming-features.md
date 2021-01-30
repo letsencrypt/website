@@ -17,7 +17,7 @@ Derzeit signiert Let's Encrypt nur Endentität-Zertifikate mit RSA-Intermediates
 
 # Implementierte Funktionen
 
-## Multi-Perspective Validation
+## Multiperspektive Validierung
 
 * Aktiviert: 19. Februar 2020
 

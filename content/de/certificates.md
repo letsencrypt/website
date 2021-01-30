@@ -12,7 +12,7 @@ lastmod: 2020-12-08
 
 # Wurzelzertifikate (Root-Zertifikate)
 
-Unsere Wurzelzertifikate (Root-Zertifikate) werden sicher offline gehalten. Wer stellen Anwenderzertifikate aus, welche durch die in dem folgenden Abschnitt beschriebenen Zwischenzertifikate (Intermediate-Zertifikate) signiert wurden. Während wir unsere neue Root X2 verschiedenen Root-Programmen vorlegen, haben wir sie für zusätzliche Kompatibilität mit Root X2 quersigniert ("cross-signed").
+Unsere Wurzelzertifikate (Root-Zertifikate) werden sicher, vom Internet getrennt, aufbewahrt. Wir stellen Anwenderzertifikate aus, welche durch die in dem folgenden Abschnitt beschriebenen Zwischenzertifikate (Intermediate-Zertifikate) signiert wurden. Während wir unsere neue Root X2 verschiedenen Root-Programmen vorlegen, haben wir sie für zusätzliche Kompatibilität mit Root X2 quersigniert ("cross-signed").
 
 * Aktiv
   * ISRG Root X1 (`RSA 4096, O = Internet Security Research Group, CN = ISRG Root X1`)
@@ -70,9 +70,9 @@ Jedes unserer Zwischenzertifikate besteht aus einem einzelnen Schlüsselpaar (ö
 
 Unsere RSA-Zwischenzertifikate (intermediate-Zertifikate) sind signiert durch ISRG Root X1. Dem ISRG Wurzelzertifikat (Root-Zertifikat) wird breitflächig vertraut, aber unsere RSA-Zwischenzertifikate werden immer noch durch IdenTrusts "[DST Root CA X3](https://crt.sh/?id=8395)" (heute "TrustID X3 Root") signiert um eine zusätzliche Kompatibilität zu erreichen. Das IdenTrust Wurzelzertifikat ist schon seit längerer Zeit gültig und hat daher eine höhere Kompatibilität mit älteren Geräten und Betriebssystemen (z. B. Windows XP und Android 7). Sie können ["TrustID X3 Root" von IdenTrust herunterladen](https://www.identrust.com/support/downloads) (oder alternativ können Sie [eine Kopie von uns herunterladen](/certs/trustid-x3-root.pem.txt)).
 
-Cross-Signaturen bedeuten, dass jedes unserer RSA-Zwischenzertifikate zwei öffentliche Schlüssel hat, die beide für den selben privaten Schlüssel gelten. Einer ist durch DST Root CA X3 signiert und der andere durch ISRG Root X1. Der einfachste Weg, die zwei zu unterscheiden, ist in das Aussteller-Feld (Issuer-Feld) zu schauen.
+Cross-signieren bedeutet, dass jedes unserer RSA-Zwischenzertifikate zwei öffentliche Schlüssel hat, die beide für den selben privaten Schlüssel gelten. Einer ist durch DST Root CA X3 signiert und der andere durch ISRG Root X1. Der einfachste Weg, die zwei zu unterscheiden, ist in das Aussteller-Feld (Issuer-Feld) zu schauen.
 
-Wenn ein Webserver konfiguriert wird, konfiguriert der Serverbetreiber nicht nur das Anwenderzertifikat, sondern auch eine Liste von Zwischenzertifikaten, um den Browsern eine Verifizierung der Kette des Vertrauens vom Anwenderzertifikat bis zum vertrauten Wurzelzertifikat zu vereinfachen. Fast alle Serverbetreiber werden eine Zertifikatskette mit dem Zwischenzertifikat "R3" und dem Aussteller "DST Root CA X3" auswählen. Die empfohlene Let's Encrypt Software, [Certbot](https://certbot.org), wird diese Konfiguration nahtlos vornehmen.
+Wenn ein Webserver konfiguriert wird, konfiguriert der Serverbetreiber nicht nur das Anwenderzertifikat, sondern auch eine Liste von Zwischenzertifikaten, um den Browsern eine Verifizierung der Vertrauenskette vom Anwenderzertifikat bis zum vertrauten Wurzelzertifikat zu vereinfachen. Fast alle Serverbetreiber werden eine Zertifikatskette mit dem Zwischenzertifikat "R3" und dem Aussteller "DST Root CA X3" auswählen. Die empfohlene Let's Encrypt Software, [Certbot](https://certbot.org), wird diese Konfiguration nahtlos vornehmen.
 
 # OCSP-Signaturzertifikat
 
@@ -84,7 +84,7 @@ Unsere neuen Zwischenzeritfikate haben keine OCSP URLs (ihre Widerrufsinformatio
 
 # Certificate Transparency
 
-Wir haben uns der Transparenz in unserem Betrieb und in den Zertifikaten, die wir ausstellen verschrieben. Wir übermitteln alle Zertifikate an die [Certificate Transparency logs](https://www.certificate-transparency.org/), noch während wir sie ausstellen. Sie können sich alle Zertifikate, die von Let's Encrypt ausgestellt wurden, mit diesen Links ansehen:
+Wir haben uns der Transparenz in unserem Betrieb und in den Zertifikaten, die wir ausstellen, verschrieben. Wir übermitteln alle Zertifikate an die [Certificate Transparency logs](https://www.certificate-transparency.org/), noch während wir sie ausstellen. Sie können sich alle Zertifikate, die von Let's Encrypt ausgestellt wurden, mit diesen Links ansehen:
 
 * [Ausgestellt durch Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Ausgestellt durch Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)

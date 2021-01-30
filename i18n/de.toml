@@ -163,7 +163,7 @@ other = "Unterschiede zum aktuellen ACME-Entwurf"
 other = "Unterschiede zum ACME-RFC"
 
 [onboarding_customers]
-other = "Onboarding Your Customers with Let's Encrypt and ACME"
+other = "Migration Ihrer Kunden zu Let's Encrypt und ACME"
 
 [paypal_donate_alt]
 other = "Mit PayPal spenden"
