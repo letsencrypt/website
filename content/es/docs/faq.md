@@ -4,7 +4,7 @@ linkTitle: Preguntas Frecuentes (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -89,7 +89,7 @@ Sí, el mismo certificado puede contener diferentes nombres de dominio usando el
 
 ## ¿Let’s Encrypt emite certificados wildcard?
 
-Sí. Emisión wildcard se debe realizar a través de ACMEv2 usando el reto DNS-01. Ve [este post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) para más información técnica.
+Sí. Emisión wildcard se debe realizar a través de ACMEv2 usando [el reto DNS-01](/docs/challenge-types). Ve [este post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) para más información técnica.
 
 ## ¿Hay un cliente Let's Encrypt (ACME para mi sistema operativo?
 

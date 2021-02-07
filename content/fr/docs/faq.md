@@ -3,7 +3,7 @@ title: Questions fréquentes (FAQ)
 linkTitle: Questions fréquentes (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -88,7 +88,7 @@ Oui, le même certificat peut contenir plusieurs noms différents à l'aide du m
 
 ## Let's Encrypt émet-il des certificats génériques (wildcard)?
 
-Oui. L'émission de caractères génériques doit être effectuée via ACMEv2 à l'aide du défi DNS-01. Voir [ce sujet](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus de détails techniques.
+Oui. L'émission de caractères génériques doit être effectuée via ACMEv2 à l'aide [du défi DNS-01](/docs/challenge-types). Voir [ce sujet](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus de détails techniques.
 
 ## Existe-t-il un client Let's Encrypt (ACME) pour mon système d'exploitation?
 

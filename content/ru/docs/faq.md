@@ -4,7 +4,7 @@ linkTitle: Часто задаваемые вопросы
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -88,7 +88,7 @@ Let’s Encrypt - небольшая компания, мы полагаемся
 
 ## Выпускает ли Let’s Encrypt сертификаты с возможностью подстановки (wildcard-сертификаты)?
 
-Да. Такие сертификаты выпускаются на основе протокола ACMEv2 с проверкой доменов по методу DNS-01. Узнайте подробности в статье [на форуме сообщества](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578).
+Да. Такие сертификаты выпускаются на основе протокола ACMEv2 с проверкой доменов по [методу DNS-01](/docs/challenge-types). Узнайте подробности в статье [на форуме сообщества](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578).
 
 ## Существует ли ACME-клиент Let's Encrypt для моей операционной системы?
 

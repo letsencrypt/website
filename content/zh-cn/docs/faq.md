@@ -4,7 +4,7 @@ linkTitle: 常见问题（FAQ）
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2020-02-20
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -89,7 +89,7 @@ Let’s Encrypt 证书是标准的域名验证性证书，因此您可以将它�
 
 ## Let's Encrypt 颁发通配符证书吗？
 
-是的。您必须使用 ACMEv2 协议并通过 DNS-01 验证方式来获取通配符证书。有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+是的。您必须使用 ACMEv2 协议并通过 [DNS-01](/docs/challenge-types) 验证方式来获取通配符证书。有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## 是否有 Let's Encrypt（ACME）客户端支持我的操作系统？
 

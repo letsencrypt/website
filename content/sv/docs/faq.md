@@ -3,7 +3,7 @@ title: Vanliga frågor
 linkTitle: Vanliga frågor (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -120,7 +120,7 @@ Alternative Name-mekanismen (SAN).
 ## Utfärdar Let's Encrypt wildcard-certifikat?
 
 Ja. Utfärdande av wildcard-certifikat (jokercertifikat) måste göras via ACMEv2
-genom utmaningen DNS-01. Se [det här
+genom [utmaningen DNS-01](/docs/challenge-types). Se [det här
 inlägget](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)
 för mer teknisk information.
 

@@ -4,7 +4,7 @@ linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -86,7 +86,7 @@ Ja, dieselben Zertifikate können unterschiedliche Namen mit Benutzung des Subje
 
 ## Kann Let's Encrypt Wildcard-Zertifikate ausstellen?
 
-Ja. Wildcard müssen über ACMEv2 mit DNS-01 Challenge ausgestellt werden. Schauen Sie [diese Nachricht](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) für mehr technische Details.
+Ja. Wildcard müssen über ACMEv2 mit [DNS-01 Challenge](/docs/challenge-types) ausgestellt werden. Schauen Sie [diese Nachricht](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) für mehr technische Details.
 
 ## Gibt es einen Let's Encrypt (ACME) Client für mein Betriebssystem?
 

@@ -4,7 +4,7 @@ linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -79,7 +79,7 @@ OV 또는 EV 인증서를 발급할 계획이 없습니다.
 
 ## Let's Encrypt는 와일드카드 인증서를 발행합니까?
 
-네. 와일드카드 발급은 DNS-01 과제를 사용하여 ACMEv2를 통해 수행해야 합니다. [이 글](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)에서 자세한 기술 정보를 확인하십시오.
+네. 와일드카드 발급은 [DNS-01](/docs/challenge-types) 과제를 사용하여 ACMEv2를 통해 수행해야 합니다. [이 글](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)에서 자세한 기술 정보를 확인하십시오.
 
 ## Let's Encrypt는 운영체제에 맞는 (ACME) 클라이언트가 있습니까?
 

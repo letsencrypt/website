@@ -4,7 +4,7 @@ linkTitle: Perguntas Frequentes (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -89,7 +89,7 @@ Sim, o mesmo certificado pode conter diferentes nomes de domínio usando o mecan
 
 ## A Let's Encrypt emite certificados coringa?
 
-Sim. A emissão de certificados coringa precisa ser feita via ACMEv2 usando o desafio DNS-01. Veja [esta postagem](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) (Inglês) para obter mais informações técnicas.
+Sim. A emissão de certificados coringa precisa ser feita via ACMEv2 usando o [desafio DNS-01](/docs/challenge-types). Veja [esta postagem](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) (Inglês) para obter mais informações técnicas.
 
 ## Existe um cliente da Let's Encrypt (ACME) para o meu sistema operacional?
 

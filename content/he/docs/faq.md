@@ -3,7 +3,7 @@ title: שו״ת
 linkTitle: שאלות ותשובות (שו״ת)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -88,7 +88,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## האם Let's Encrypt מנפיקה אישורים כוללניים?
 
-כן. הנפקה כוללנית חובה לבצע דרך ACMEv2 באמצעות אתגר DNS-01. ב[רשומה הזאת](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) יש קצת יותר פירוט טכני.
+כן. הנפקה כוללנית חובה לבצע דרך ACMEv2 באמצעות [אתגר DNS-01](/docs/challenge-types). ב[רשומה הזאת](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) יש קצת יותר פירוט טכני.
 
 ## האם יש לקוח של Let's Encrypt‏ (ACME) למערכת ההפעלה שלי?
 

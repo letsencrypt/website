@@ -4,7 +4,7 @@ linkTitle: よくある質問 (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2019-12-22
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -89,7 +89,7 @@ OV や EV 証明書を発行する予定はありません。
 
 ## Let's Encrypt はワイルドカード証明書を発行していますか？
 
-はい。ただし、ワイルドカード証明書の発行には DNS-01 を使用する ACMEv2 プロトコルでの認証が必要です。詳細な技術的な情報については、[この記事](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)を読んでください。
+はい。ただし、ワイルドカード証明書の発行には [DNS-01](/docs/challenge-types) を使用する ACMEv2 プロトコルでの認証が必要です。詳細な技術的な情報については、[この記事](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)を読んでください。
 
 ## 私が使っているオペレーティングシステムで使える Let's Encrypt (ACME) クライアントはありますか？
 

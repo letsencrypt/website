@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-04-23
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -89,7 +89,7 @@ Yes, the same certificate can contain several different names using the Subject 
 
 ## Does Let's Encrypt issue wildcard certificates?
 
-Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
+Yes. Wildcard issuance must be done via ACMEv2 using the [DNS-01 challenge](/docs/challenge-types). See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 

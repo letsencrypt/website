@@ -4,7 +4,7 @@ linkTitle: 常見問題 (FAQ)
 slug: faq
 top_graphic: 1
 date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2021-02-07
 menu:
   main:
     weight: 30
@@ -88,7 +88,7 @@ Let’s Encrypt 憑證是一個標準的域名驗證型憑證，因此你可以�
 
 ## Let’s Encrypt 可以頒發萬用憑證嗎？
 
-可以，萬用憑證的頒發必須透過 ACMEv2 協定並使用 DNS-01 驗證方式。更多技術資訊，請參考[這篇文章](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+可以，萬用憑證的頒發必須透過 ACMEv2 協定並使用 [DNS-01](/docs/challenge-types) 驗證方式。更多技術資訊，請參考[這篇文章](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## Let's Encrypt (ACME) 客戶端支援我的作業系統嗎？
 
