@@ -3,7 +3,7 @@ title: Staging-Umgebung
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2019-06-19
+lastmod: 2020-01-21
 ---
 
 {{< lastmod >}}
@@ -18,7 +18,7 @@ Wenn Sie Certbot benutzen, können Sie unsere Staging-Umgebung mit dem `--dry-ru
 
 # Rate Limits
 
-Dei Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere Produktionsumgebung](/docs/rate-limits) mit den folgenden Ausnahmen:
+Die Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere Produktionsumgebung](/docs/rate-limits) mit den folgenden Ausnahmen:
 
 * Das **Zertifikate pro registrierte Domain** Limit ist 30,000 pro Woche.
 * Das **Doppelte Zertifikate** Limit ist 30,000 pro Woche.
@@ -33,3 +33,9 @@ Das Zwischenzertifikat der Staging-Umgebung (["Fake LE Intermediate X1"](/certs/
 # Zertifikat Transparenz
 
 Die Staging-Umgebung sendet Vorzertifikate zu Let's Encrypt [Testflume](/docs/ct-logs) und Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test log und behält die erhaltenen SCTs in den ausgestellten Zertifikaten.
+
+# Kontinuierliche Integration/Entwicklertests
+
+Die Staging-Umgebung hat grosszügige Rate Limits zum Testen, aber passt nicht für Integration in Entwicklungsumgebungen oder Kontinuierliche Integration (CI). Netzwerkanfragen zu externen Servern können Instabilitäten verursachen und die Staging-Umgebung ermöglicht keinen "Fake"-DNS oder Challenge Validation, was das Testen komplizierter macht.
+
+Zusätzlich zur Staging-Umgebung bietet Let's Encrypt einen kleinen ACME Server zum Einbau in CI und Entwicklungsumgebungen namens [Pebble](https://github.com/letsencrypt/pebble) an. Es ist [schnell und einfach](https://github.com/letsencrypt/pebble#docker), Pebble in Ihrer Entwicklungsmaschine oder in einer CI Umgebung zu starten.

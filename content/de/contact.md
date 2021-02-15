@@ -1,19 +1,16 @@
 ---
 title: Kontakt
 slug: contact
+description: Wie Sie uns erreichen
 top_graphic: 1
-lastmod: 2019-03-26
+lastmod: 2020-09-18
 menu:
   main:
     weight: 90
     parent: about
 ---
 
-## Support
-
 **Wir leisten keine Unterstützung per E-Mail. Wenn Sie Fragen haben, nutzen Sie bitte unsere [Community-Foren](https://community.letsencrypt.org). Die unten angegebenen E-Mail-Adressen sind nur für die speziell beschriebenen Aufgaben.**
-
-If you have questions about how to use Let's Encrypt, please ask on [Let's Encrypt Community Support](https://community.letsencrypt.org/).
 
 ## Presseanfragen
 
@@ -25,9 +22,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailinglisten
 
-Für Informationen über verschiedene technische Mailinglisten, besuchen Sie bitte unsere [Sich Beteiligen](/getinvolved) Seite.
-
-[Klicken Sie hier](https://mailchi.mp/letsencrypt.org/fjp6ha1gad), um sich für unseren Newsletter anzumelden.
+Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
 ## Sicherheit
 
@@ -37,10 +32,7 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### Verschlüsselte Kommunikation
 
-Um sicher mit unserem Sicherheitsteam zu kommunizieren, benutzen Sie unseren GPG Schlüssel.
-Er ist mit verschiedenen Unterschlüsseln signiert durch den Offline-Master-Schlüssel.
-Jede bestehende Version von GnuPG wird diese Art von Hybrid-Schlüsseln unterstützen.
-Die derzeitige Schlüsselstruktur ist:
+Verwenden Sie unseren GPG-Schlüssel, um sicher mit unserem Sicherheitsteam zu kommunizieren. Er ist durch einen Offline-Master-Schlüssel mit verschiedenen Unterschlüsseln signiert. Jede bestehende Version von GnuPG wird diese Art von Hybrid-Schlüsseln unterstützen. Die derzeitige Schlüsselstruktur ist:
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
@@ -51,7 +43,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2021-09-21]
 sub   rsa4096 2015-11-24 [S] [expires: 2021-09-21]
 ```
 
-Sie können die [GPG Public Key](/security_letsencrypt.org-publickey.asc) hier herunterladen,
-oder Sie benutzen Ihren favorisierten Schlüsselserver.
+Sie können den [öffentlichen GPG-Schlüssel](/security_letsencrypt.org-publickey.asc) hier herunterladen, oder Sie verwenden Ihren favorisierten Schlüsselserver.
 
-Der Fingerabdruck vom Schlüssel muss übereinstimmen mit `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+Der Fingerabdruck vom Schlüssel muss mit `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B` übereinstimmen.

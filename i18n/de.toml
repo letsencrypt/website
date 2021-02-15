@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt ist eine <span>freie</span>, <span>automatisierte</span> und <span>offene</span> Zertifizierungsstelle."
+other = "Eine Non-Profit-Organisation, die TLS-Zertifikate für <span>225 Millionen</span> Websites bereitstellt."
 
 [home_hero_getting_started]
 other = "Loslegen"
@@ -9,62 +7,58 @@ other = "Loslegen"
 [home_hero_donate]
 other = "Spenden"
 
-[home_hero_annual_report]
-other = "Lesen Sie unseren Jahresbericht 2019"
-
-[home_hero_desktop]
-other = "Desktop-Version"
-
-[home_hero_mobile]
-other = "Mobile Version"
-
 [home_hero_sponsor]
-other = "Sponsor"
+other = "Sponsern"
+
+[home_hero_annual_report]
+other = "Lesen Sie unseren <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>Jahresbericht 2020</a>"
 
 [home_major_sponsors]
 other = "Hauptsponsoren und Spender"
 
 [home_from_our_blog]
-other = "Von unserem Blog (in englisch)"
+other = "Aus unserem Blog (auf Englisch)"
 
 [read_more]
-other = "Lesen Sie mehr"
+other = "Mehr lesen"
 
 [subscribe_rss]
-other = "Abonnieren Sie <a href=\"{{ .Permalink }}\">via RSS</a>"
+other = '<a href="{{ .Permalink }}">Via RSS abonnieren</a>'
 
 [footer_support_us]
-other = "Unterstützen Sie ein noch mehr sicheres Netz, welches die Privatsphäre respektiert."
+other = "Unterstützen Sie ein sichereres Internet, welches die Privatsphäre respektiert."
 
 [footer_donate]
-other = "Spende"
+other = "Spenden"
 
 [footer_policies]
 other = """
-Schauen Sie unsere <a href="/de/privacy/">Datenschutzbestimmungen</a>.<br>
-Schauen Sie unsere <a href="/de/trademarks/">Markenbestimmungen</a>.
+Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="/trademarks/">Markenbestimmungen</a>.
 """
 
 [linux_foundation_trademark]
 other = "Linux Foundation ist eine registrierte Marke der Linux Foundation. Linux ist eine registrierte Marke von Linus Torvalds."
 
 [header_skip_nav]
-other = "Navigationslinks verbergen"
+other = "Navigation überspringen"
 
 [last_updated]
-other = "Letzte Aktualisierung: "
+other = "Letzte Änderung: "
 
 [see_all_doc]
-other = "Sehen Sie die ganze Dokumentation"
+other = "Gesamte Dokumentation anzeigen"
 
 [blog_feed]
-other = "Let's Encrypt Blog Feed"
+other = "Feed des Let's Encrypt-Blogs"
 
 [platinum]
 other = "Platin"
 
 [gold]
 other = "Gold"
+
+[gold_basic]
+other = "Gold (Basic)"
 
 [silver]
 other = "Silber"
@@ -76,21 +70,19 @@ other = "Sprachen"
 other = "Auf Englisch anzeigen"
 
 [view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Auf Deutsch ansehen"
+other = "Auf Deutsch anzeigen"
 
 [old_version]
-other = "Hinweis: Die englische Version wurde seit der Übersetzung aktualisiert."
+other = "Hinweis: Die englische Version wurde seit der Übersetzung aktualisiert"
 
 [not_yet_translated]
-other = "Diese Webseite wurde noch nicht übersetzt. Du kannst <a href=\"https://github.com/letsencrypt/website\">hier</a> dazu beitragen."
+other = 'Diese Webseite wurde noch nicht übersetzt. Sie können <a href="https://github.com/letsencrypt/website">hier beim Übersetzen helfen</a>.'
 
 [english_is_canonical]
-other = "Hinweis: Die englische Version ist massgeblich"
+other = "Die englische Fassung ist maßgeblich"
 
 [graph_issued]
-other = "Ausgestellte Zertifikate"
+other = "Ausgestellt"
 
 [graph_certificates_active]
 other = "Aktive Zertifikate"
@@ -111,52 +103,88 @@ other = "Ausgestellte Zertifikate pro Tag"
 other = "Alle Benutzer"
 
 [graph_usa_users]
-other = "Benutzer in USA"
+other = "Benutzer in den USA"
 
 [graph_japan_users]
 other = "Benutzer in Japan"
 
 [graph_percent_https]
-other = "Prozent der Seitenaufrufe über HTTPS (14 Tage Durchschnitt)"
+other = "Prozent der Seitenaufrufe über HTTPS (Durchschnitt der letzten 14 Tage)"
+
+[certificate_policy]
+other = "Zertifikatsrichtlinien"
+
+[certificate_transparency_name]
+other = "Name"
+
+[certificate_transparency_role_production]
+other = "Produktion"
+
+[certificate_transparency_role_testing]
+other = "Testen"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Öffentlicher Schlüssel"
+
+[certificate_transparency_log_id]
+other = "Protokoll-ID"
+
+[certificate_transparency_state]
+other = "Status"
+
+[certificate_transparency_window_start]
+other = "Begin des Zeitfensters"
+
+[certificate_transparency_window_end]
+other = "Ende des Zeitfensters"
+
+[certification_practices_statement]
+other = "Certification Practices Statement"
 
 [overview]
-other = "Übersicht"
+other = "Überblick"
 
 [subscriber_information]
 other = "Teilnehmerinformationen"
 
 [advanced_subscriber_information]
-other = "Erweiterte Teilnehmerinformationen"
+other = "Fortgeschrittene Teilnehmerinformationen"
 
 [client_developer_information]
-other = "Informationen für Client Entwickler"
+other = "Informationen für Client-Entwickler"
 
 [acme_divergences]
-other = "Unterschiede von derzeitigen ACME Entwürfen"
+other = "Unterschiede zum aktuellen ACME-Entwurf"
+
+[acme_divergences_rfc]
+other = "Unterschiede zum ACME-RFC"
 
 [onboarding_customers]
 other = "Migration Ihrer Kunden zu Let's Encrypt und ACME"
 
 [paypal_donate_alt]
-other = "Spenden mit dem PayPal-Button"
+other = "Mit PayPal spenden"
 
 [paypal_donate_title]
-other = "Spenden mit PayPal"
+other = "Spenden via PayPal"
 
 [not_found]
 other = "Diese Seite existiert nicht, bitte überprüfen Sie die Adresse."
 
 [amount_per_year]
-other = "${{ .nb }}/Jahr (USD)"
+other = "{{ .nb }} USD/Jahr"
 
 [3y_commitment]
 other = "mit 3-Jahres-Vertrag"
 
 [1_99_employees]
-other = "1-99 Mitarbeiter"
+other = "1-99 Mitarbeitende"
 
 [100_999_employees]
-other = "100-999 Mitarbeiter"
+other = "100-999 Mitarbeitende"
 
 [1000_employees]
-other = "1000+ Mitarbeiter"
+other = "1000+ Mitarbeitende"
