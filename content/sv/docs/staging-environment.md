@@ -36,10 +36,10 @@ Testmiljön använder samma regler som [produktionsmiljön](/docs/rate-limits) f
 # Rotcertifikat
 
 Testmiljöns mellancertifikat (["Fake LE Intermediate
-X1"](/certs/fakeleintermediatex1.pem)) är utfärdat av ett rotcertifikat som
+X1"](/certs/staging/letsencrypt-stg-int-r3.pem)) är utfärdat av ett rotcertifikat som
 **inte** är betrott av webbläsare och klienter. Om du vill modifiera en
 testklient att lita på testmiljön i testsyfte så kan du göra det genom att
-lägga till ["Fake LE Root X1"](/certs/fakelerootx1.pem)-certifikatet till din
+lägga till ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem)-certifikatet till din
 lista över betrodda certifikat.  Viktigt: Lägg inte till testrot- eller
 mellancertifikat till en lista över betrodda certifikat som du använder för
 vanlig surf eller andra aktiviteter eftersom de inte är granskade eller håller

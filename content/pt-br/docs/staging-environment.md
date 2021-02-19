@@ -28,7 +28,7 @@ O ambiente de testes usa os mesmos limites [descritos para o ambiente de produç
 
 # Certificado Raiz
 
-O certificado intermediário do ambiente de testes (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem)) é emitido por um certificado raiz **que não está presente** nos trust stores de navegadores/clientes. Se você quiser modificar um cliente exclusivo para testes para que ele confie no ambiente de testes você pode adicionar o certificado ["Fake LE Root X1"](/certs/fakelerootx1.pem) ao trust store do seu cliente. Importante: Não adicione os certificados raiz e intermediários do ambiente de testes em navegadores que você usa para navegação comum da web, porque eles não são auditados nem mantêm o mesmo padrão de segurança que nossas raízes de produção, portanto não são seguros para uso em nada além de testes.
+O certificado intermediário do ambiente de testes (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem)) é emitido por um certificado raiz **que não está presente** nos trust stores de navegadores/clientes. Se você quiser modificar um cliente exclusivo para testes para que ele confie no ambiente de testes você pode adicionar o certificado ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) ao trust store do seu cliente. Importante: Não adicione os certificados raiz e intermediários do ambiente de testes em navegadores que você usa para navegação comum da web, porque eles não são auditados nem mantêm o mesmo padrão de segurança que nossas raízes de produção, portanto não são seguros para uso em nada além de testes.
 
 # Transparência de Certificado
 

@@ -28,7 +28,7 @@ lastmod: 2020-01-21
 
 # 根证书
 
-测试环境的中间证书（[“Fake LE Intermediate X1”](/certs/fakeleintermediatex1.pem)）由**不在**浏览器/客户端的受信证书存储内的根证书颁发。如果您希望仅用于测试的客户端信任测试环境颁发的证书，您可以手动添加[“Fake LE Root X1”](/certs/fakelerootx1.pem)至该客户端的受信证书存储中。请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
+测试环境的中间证书（[“(STAGING) Artificial Apricot R3”](/certs/staging/letsencrypt-stg-int-r3.pem)）由**不在**浏览器/客户端的受信证书存储内的根证书颁发。如果您希望仅用于测试的客户端信任测试环境颁发的证书，您可以手动添加[“(STAGING) Pretend Pear X1”](/certs/staging/letsencrypt-stg-root-x1.pem)至该客户端的受信证书存储中。请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
 
 # 证书透明度日志
 

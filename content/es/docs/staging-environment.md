@@ -28,7 +28,7 @@ El entorno de prueba usa el mismo sistema de límites descritos para el [entorno
 
 # Root Certificate
 
-El certificado intermedio para el entorno de prueba (["Fake LE Intermediate X1"](https://letsencrypt.org/certs/fakeleintermediatex1.pem)) es emitido por un certificado raíz **que no está presente** en el almacen de certificados del navegador del cliente. Si desea modificar un cliente para confiar en el entorno de prueba con el fin de hacer tests, puede hacerlo agregando el certificado ["Fake LE Root X1"](https://letsencrypt.org/certs/fakelerootx1.pem) a su almacen de certificados de confianza. Importante: No agregue la raíz provisional o intermedia a una tienda de confianza que use para la navegación ordinaria u otras actividades, ya que no se auditan ni cumplen con los mismos estándares que nuestras raíces de producción, por lo que no es seguro usarlas para nada más que las pruebas.
+El certificado intermedio para el entorno de prueba (["(STAGING) Artificial Apricot R3"](https://letsencrypt.org/certs/staging/letsencrypt-stg-int-r3.pem)) es emitido por un certificado raíz **que no está presente** en el almacen de certificados del navegador del cliente. Si desea modificar un cliente para confiar en el entorno de prueba con el fin de hacer tests, puede hacerlo agregando el certificado ["(STAGING) Pretend Pear X1"](https://letsencrypt.org/certs/staging/letsencrypt-stg-root-x1.pem) a su almacen de certificados de confianza. Importante: No agregue la raíz provisional o intermedia a una tienda de confianza que use para la navegación ordinaria u otras actividades, ya que no se auditan ni cumplen con los mismos estándares que nuestras raíces de producción, por lo que no es seguro usarlas para nada más que las pruebas.
 
 # Transparencia de certificado
 
