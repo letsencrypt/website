@@ -30,7 +30,7 @@ L' environnement de qualification utilise les mêmes limites d'usage que ceux [d
 
 # Certificat racine
 
-The staging environment intermediate certificate (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["Fake LE Root X1"](/certs/fakelerootx1.pem) certificate to your testing trust store. Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
+The staging environment intermediate certificate (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) certificate to your testing trust store. Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
 
 # Transparence des Certificats
 

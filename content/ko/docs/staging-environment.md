@@ -27,7 +27,7 @@ Certbot을 사용하는 경우 준비 환경을 `--dry-run` 플래그와 함께 
 
 # 루트 인증서
 
-준비 환경 중간 인증서 (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem))는 브라우저/클라이언트 신뢰 저장소에 **없는** root 인증서에 의해 발급됩니다. 테스팅 목적으로 준비 환경을 신뢰하도록 테스트 전용 클라이언트를 수정하려는 경우, 테스트 신뢰 저장소에 ["Fake LE Root X1"](/certs/fakelerootx1.pem) 인증서를 추가하면 됩니다. 중요 사항: 평범한 탐색이나 다른 활동에 사용하는 신뢰 저장소에 준비 root나 중간 인증서를 추가하지 마십시오. 이들은 감사나 배포 root와 동일한 표준을 따르지 않으므로 테스트 외 다른 용도로 사용하기에 안전하지 않습니다.
+준비 환경 중간 인증서 (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem))는 브라우저/클라이언트 신뢰 저장소에 **없는** root 인증서에 의해 발급됩니다. 테스팅 목적으로 준비 환경을 신뢰하도록 테스트 전용 클라이언트를 수정하려는 경우, 테스트 신뢰 저장소에 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 인증서를 추가하면 됩니다. 중요 사항: 평범한 탐색이나 다른 활동에 사용하는 신뢰 저장소에 준비 root나 중간 인증서를 추가하지 마십시오. 이들은 감사나 배포 root와 동일한 표준을 따르지 않으므로 테스트 외 다른 용도로 사용하기에 안전하지 않습니다.
 
 # 인증서 투명성
 

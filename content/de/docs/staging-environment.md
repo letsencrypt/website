@@ -28,7 +28,7 @@ Die Staging-Umgebung benutzt dieselben Rate Limits wie [beschrieben für unsere 
 
 # Root Zertifikate
 
-Das Zwischenzertifikat der Staging-Umgebung (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem)) wird von einem Root-Zertifikat ausgestellt, **das in Browser-/Client-Truststores nicht vorhanden** ist. Wenn Sie einen Test-Only-Client so ändern möchten, dass er der Testumgebung zu Testzwecken vertraut, können Sie das Zertifikat ["Fake LE Root X1"](/certs/fakelerootx1.pem) Ihrem Test-Truststore hinzufügen. Wichtig: Fügen Sie den Staging-Root oder das Zwischenzertifikat nicht zu einem Truststore hinzu, den Sie für das normale Browsen oder für andere Aktivitäten verwenden, da diese nicht geprüft werden oder den gleichen Standards wie unsere Produktionsstammsätze entsprechen als Tests.
+Das Zwischenzertifikat der Staging-Umgebung (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem)) wird von einem Root-Zertifikat ausgestellt, **das in Browser-/Client-Truststores nicht vorhanden** ist. Wenn Sie einen Test-Only-Client so ändern möchten, dass er der Testumgebung zu Testzwecken vertraut, können Sie das Zertifikat ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) Ihrem Test-Truststore hinzufügen. Wichtig: Fügen Sie den Staging-Root oder das Zwischenzertifikat nicht zu einem Truststore hinzu, den Sie für das normale Browsen oder für andere Aktivitäten verwenden, da diese nicht geprüft werden oder den gleichen Standards wie unsere Produktionsstammsätze entsprechen als Tests.
 
 # Zertifikat Transparenz
 
