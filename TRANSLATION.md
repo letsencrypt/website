@@ -18,7 +18,7 @@ If you are interested to add a new language, please open an issue with the infor
 
 Someone from Let's Encrypt will add the language to Crowdin so you can start translating on https://crowdin.com/project/lets-encrypt-website
 
-When enought pages are translated, someone from Let's Encrypt will create the first pull request:
+When enough pages are translated, someone from Let's Encrypt will create the first pull request:
 
 ### First pull-request
 
