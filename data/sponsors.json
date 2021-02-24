@@ -88,8 +88,10 @@
       {"name":"Cargo","url":"https://cargo.site/","image":"cargo-logo.png"},
       {"name":"ManualsBrain","url":"https://manualsbrain.com/","image":"manualsbrain-logo.png"},
       {"name":"Pan-Net","url":"https://pan-net.cloud/","image":"pan-net-logo.png"},
+      {"name":"RACK::SPEED","url":"https://rackspeed.de/","image":"rack-speed-logo.png"},
       {"name":"Video Downloader","url":"https://www.4kdownload.com/products/product-videodownloader","image":"4kdownload-logo.png"},
       {"name":"Duda","url":"https://www.duda.co/","image":"duda-logo.png"},
-      {"name":"Ads.com","url":"https://www.ads.com/","image":"ads-com-logo.png"}
+      {"name":"Ads.com","url":"https://www.ads.com/","image":"ads-com-logo.png"},
+      {"name":"Teleport","url":"https://goteleport.com/","image":"teleport-logo.png"}
 ]
 }
