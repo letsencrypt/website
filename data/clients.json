@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-01-08",
+	"lastmod": "2021-02-28",
 	"categories": [
 		"Bash",
 		"C",
@@ -705,7 +705,7 @@
 		},
 		{
 			"name": "Ansible acme_certificate module",
-			"url": "https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html",
+			"url": "https://docs.ansible.com/ansible/latest/collections/community/crypto/acme_certificate_module.html",
 			"acme_v2": "ansible >= 2.6",
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
