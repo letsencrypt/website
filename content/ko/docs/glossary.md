@@ -175,5 +175,7 @@ Note for translators:
 
 {{% def id="X509" abbr="X.509" %}} 공용 키 인증서의 형식을 정의하는 표준입니다. [위키피디아](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
+{{% renderglossary %}}
+
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
