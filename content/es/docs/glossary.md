@@ -175,5 +175,7 @@ Note for translators:
 
 {{% def id="X509" abbr="X.509" %}} El estándar que define el formato de los certificados de clave pública. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
+{{% renderglossary %}}
+
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

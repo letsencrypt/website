@@ -157,5 +157,7 @@ date: 2018-12-30
 
 {{% def id="X509" abbr="X.509" %}} 定义了公钥证书格式的标准。[维基百科条目](https://zh.wikipedia.org/wiki/X.509) {{% /def %}}
 
+{{% renderglossary %}}
+
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

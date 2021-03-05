@@ -176,5 +176,7 @@ Note for translators:
 
 {{% def id="X509" abbr="X.509" %}} 定義了公開金鑰憑證格式的標準。[維基百科](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
+{{% renderglossary %}}
+
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

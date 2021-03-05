@@ -176,6 +176,8 @@ Note for translators:
 
 {{% def id="X509" abbr="X.509" %}} Die Standarddefinition des Formats von Öffentliche-Schlüssel-Zertifikate. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+{{% renderglossary %}}
+
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
 
