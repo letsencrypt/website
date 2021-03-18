@@ -136,6 +136,9 @@
 			"name": "SWAG - Secure Web Application Gateway",
 			"url": "https://github.com/linuxserver/docker-swag"
 		}
+		{
+			"name": "Gitlab",
+			"url": "https://about.gitlab.com"
 	],
 	"list": [
 		{
