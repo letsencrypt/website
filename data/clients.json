@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-02-28",
+	"lastmod": "2021-03-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -946,6 +946,15 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)"
+		},
+		{
+			"name": "Terraform ACME Provider",
+			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
+			"acme_v2": "terraform-provider-acme >= 1.0.0",
+			"challenges": {
+				"DNS-01": "terraform-provider-acme >= 1.0.0"
+			},
+			"category": "Configuration management tools"
 		}
 	]
 }
