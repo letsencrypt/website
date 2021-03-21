@@ -135,6 +135,10 @@
 		{
 			"name": "SWAG - Secure Web Application Gateway",
 			"url": "https://github.com/linuxserver/docker-swag"
+		},
+		{
+			"name": "Site.js",
+			"url": "https://sitejs.org"
 		}
 	],
 	"list": [
@@ -902,8 +906,8 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-    },
-    {
+    		},
+    		{
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
@@ -955,6 +959,18 @@
 				"DNS-01": "terraform-provider-acme >= 1.0.0"
 			},
 			"category": "Configuration management tools"
-		}
+		},
+		{
+			"name": "Auto Encrypt",
+			"url": "https://github.com/small-tech/auto-encrypt",
+			"acme_v2": "true",
+			"category": "Node.js",
+			"comments": "(Use AutoEncrypt.https instead of https to automatically provision and renew certificates.)",
+			"library": "Node.js",
+			"challenges": {
+				"HTTP-01": "true"
+			}
+		},
+
 	]
 }
