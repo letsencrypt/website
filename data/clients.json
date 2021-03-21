@@ -328,12 +328,6 @@
 			"category": "Node.js"
 		},
 		{
-			"name": "Greenlock for Express.js",
-			"url": "https://git.coolaj86.com/coolaj86/greenlock-express.js",
-			"acme_v2": "true",
-			"category": "Node.js"
-		},
-		{
 			"name": "Greenlock for node.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
 			"acme_v2": "true",
