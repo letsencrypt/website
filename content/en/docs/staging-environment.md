@@ -28,7 +28,7 @@ The staging environment uses the same rate limits as [described for the producti
 
 # Staging Certificate Hierarchy
 
-The staging environment has a certificate hierarchy that [matches production](/docs/certificates).
+The staging environment has a certificate hierarchy that [matches production](/certificates).
 
 ## Intermediate Certificates
 
