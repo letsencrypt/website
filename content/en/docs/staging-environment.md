@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2021-03-25
+lastmod: 2021-03-26
 ---
 
 {{< lastmod >}}
@@ -32,9 +32,9 @@ The staging environment has a certificate hierarchy that [mimics production](/ce
 
 ## Intermediate Certificates
 
-The staging environment has two active intermediate certificates: an RSA intermedite ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) and an ECDSA intermediate ["STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
+The staging environment has two active intermediate certificates: an RSA intermedite ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) and an ECDSA intermediate ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
 
-ECDSA issuance was [enabled in Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) on 24 March 2021 and all requests for Staging certificates with ECDSA keys are signed by "(STAGING) Ersatz Edamame E1" and utilize the ECDSA hierarchy. Similarly all requests for Staging certificates with RSA keys are signed by "(STAGING) Artificial Apricot R3" and use the RSA hierarchy. There will not be a way to get an RSA-signed certificate for an ECDSA key, nor vice versa; the way to control which issuer you get is to control what kind of key you generate locally.
+ECDSA issuance was [enabled in Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) on 24 March 2021 and all requests for Staging certificates with ECDSA keys are signed by "(STAGING) Ersatz Edamame E1" and utilize the ECDSA hierarchy. Similarly all requests for Staging certificates with RSA keys are signed by "(STAGING) Artificial Apricot R3" and use the RSA hierarchy. There is no way to get an RSA-signed certificate for an ECDSA key, nor vice versa; the way to control which issuer you get is to control what kind of key you generate locally.
 
 ## Root Certificates
 
