@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>190 מיליון</span> אתרים."
+other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>240 מיליון</span> אתרים."
 
 [home_hero_getting_started]
 other = "איך מתחילים"
@@ -13,7 +13,7 @@ other = "תרומה"
 other = "מתן חסות"
 
 [home_hero_annual_report]
-other = "לקריאת הדוח לשנת 2019"
+other = "לקריאת <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>הדוח</a> לשנת 2020"
 
 [home_hero_desktop]
 other = "שולחן עבודה"
