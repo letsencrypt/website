@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-01-21
+lastmod: 2021-04-01
 ---
 
 {{< lastmod >}}
@@ -38,7 +38,7 @@ Browsers (Chrome, Safari, Edge, Opera) generally trust the same root certificate
 * [Android >= v2.3.6](https://twitter.com/Tutancagamon/status/600783165087752192)
 * Mozilla Firefox >= v2.0
 * Ubuntu >= precise / 12.04
-* [Debian >= squeee / 6](https://twitter.com/TokenScandi/status/600806080684359680)
+* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680)
 * Java 8 >= 8u101
 * Java 7 >= 7u111
 * NSS >= v3.11.9
