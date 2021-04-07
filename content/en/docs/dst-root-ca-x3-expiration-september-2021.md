@@ -11,7 +11,7 @@ menu:
 
 {{< lastmod >}}
 
-On September 30, there will be a small change in how older browsers and devices
+On September 30 2021, there will be a small change in how older browsers and devices
 trust Let's Encrypt certificates. If you run a typical website, you won't notice
 a difference - the vast majority of your visitors will still accept your Let's
 Encrypt certificate. If you provide an API or have to support IoT devices, you
