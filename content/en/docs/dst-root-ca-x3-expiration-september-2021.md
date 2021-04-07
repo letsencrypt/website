@@ -28,7 +28,7 @@ off the ground and be trusted by almost every device immediately. The newer root
 certificate (ISRG Root X1) is now widely trusted too - but some older devices
 won't ever trust it because they don't get software updates (for example, an
 iPhone 4 or an HTC Dream). [Click here for a list of which platforms trust ISRG
-Root X1](compatibility).
+Root X1][compatibility].
 
 DST Root CA X3 will expire on September 30, 2021. That means those older devices
 that don't trust ISRG Root X1 will start getting certificate warnings when
@@ -55,4 +55,4 @@ If you have any questions about the upcoming expiration,
 [cross-sign]: /2020/12/21/extending-android-compatibility.html
 [openssl]: https://community.letsencrypt.org/t/openssl-client-compatibility-changes-for-let-s-encrypt-certificates/143816
 [forum]: https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190
-[compatibility]: /docs/certificate-compatibility/
+[compatibility]: /docs/cert-compat/
