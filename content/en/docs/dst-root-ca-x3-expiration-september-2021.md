@@ -47,7 +47,11 @@ API are using OpenSSL, [they must use version 1.1.0 or later][openssl]. In OpenS
 ISRG Root X1 will fail when presented with the Android-compatible certificate
 chain we are recommending by default.
 
+If you have any questions about the upcoming expiration,
+[please post to this thread on our forum.][forum]
+
 [root certificate]: /docs/glossary/#def-root
 [ISRG Root X1]: /certificates/
 [cross-sign]: /2020/12/21/extending-android-compatibility.html
 [openssl]: https://community.letsencrypt.org/t/openssl-client-compatibility-changes-for-let-s-encrypt-certificates/143816
+[forum]: https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190

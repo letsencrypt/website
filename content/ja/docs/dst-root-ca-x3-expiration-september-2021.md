@@ -42,12 +42,16 @@ certificate issuance so your web site will do the right thing in most cases,
 favoring broad compatibility. If you provide an API or have to support IoT
 devices, you'll need to make sure of two things: (1) all clients of your API
 must trust ISRG Root X1 (not just DST Root CA X3), and (2) if clients of your
-API are using OpenSSL, they must use version 1.1.0 or later[1]. In OpenSSL
-1.0.x, [a quirk in certificate verification][openssl] means that even clients that trust
+API are using OpenSSL, [they must use version 1.1.0 or later][openssl]. In OpenSSL
+1.0.x, a quirk in certificate verification means that even clients that trust
 ISRG Root X1 will fail when presented with the Android-compatible certificate
 chain we are recommending by default.
 
-[root certificate]: https://letsencrypt.org/docs/glossary/#def-root
-[ISRG Root X1]: https://letsencrypt.org/certificates/
-[cross-sign]: https://letsencrypt.org/2020/12/21/extending-android-compatibility.html
+If you have any questions about the upcoming expiration,
+[please post to this thread on our forum.][forum]
+
+[root certificate]: /docs/glossary/#def-root
+[ISRG Root X1]: /certificates/
+[cross-sign]: /2020/12/21/extending-android-compatibility.html
 [openssl]: https://community.letsencrypt.org/t/openssl-client-compatibility-changes-for-let-s-encrypt-certificates/143816
+[forum]: https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190
