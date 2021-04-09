@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-03-25
+lastmod: 2021-04-09
 ---
 
 {{< lastmod >}}
@@ -39,7 +39,7 @@ We've set up websites to test certificates chaining to our active roots.
 # Intermediate Certificates
 
 Under normal circumstances, certificates issued by Let's Encrypt will come from "R3", an RSA intermediate.
-We have also issued a new ECDSA intermediate ("E1") and started issuing from it for internal testing. In April 2021, we will make ECDSA issuance pubicly available with an account based allow-list. This page will be updated soon on how get an account on the allow-list.
+We have also issued a new ECDSA intermediate ("E1") and started issuing from it for internal testing. In April 2021, we will make ECDSA issuance publicly available with an account-based allow-list. This page will be updated soon on how get an account on the allow-list.
 
 Our other intermediates ("R4" and "E2") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
 We do not use the X1, X2, X3, and X4 intermediates anymore.
