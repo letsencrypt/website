@@ -952,7 +952,9 @@
 			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
 			"acme_v2": "terraform-provider-acme >= 1.0.0",
 			"challenges": {
-				"DNS-01": "terraform-provider-acme >= 1.0.0"
+				"HTTP-01": "terraform-provider-acme >= 2.4.0",
+				"DNS-01": "terraform-provider-acme >= 1.0.0",
+				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
 			},
 			"category": "Configuration management tools"
 		}
