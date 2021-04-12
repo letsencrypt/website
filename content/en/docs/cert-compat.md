@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-04-01
+lastmod: 2021-04-12
 ---
 
 {{< lastmod >}}
@@ -18,6 +18,7 @@ If your certificate validates on some of the "Known Compatible" platforms but no
 * Windows >= XP SP3 ([assuming Automatic Root Certificate Update isn't manually disabled](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/))
 * [macOS >= 10.12.1](https://twitter.com/letsencrypt/status/790960929504497665?lang=en)
 * [iOS >= 10](https://support.apple.com/en-us/HT207177) ([iOS 9 does not include it](https://support.apple.com/en-us/HT205205))
+* [iPhone 5 and above can upgrade to iOS 10](https://en.wikipedia.org/wiki/IPhone_5) and can thus trust ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15)
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
 * [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (with updates applied)
@@ -64,3 +65,8 @@ You may want to visit [this 2015-2017 community forum discussion](https://commun
   * cannot handle certificates without a CRL
 * PS3 game console
 * PS4 game console with firmware < 5.00
+
+# ISRG Root X2 (new ECDSA root) - coming soon
+We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion. ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. For more information, check our our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
+
+
