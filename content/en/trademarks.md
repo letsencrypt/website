@@ -100,7 +100,7 @@ If you’d like to use the ISRG Marks in a way that’s not covered by this poli
 
 ### Let's Encrypt Standard
 
-Our standard logo and text. Outside of a few exceptions, this is the default, go-to version. The full-color logo will not work well on photography and various background colors. In those instances, the one-color version should be used. 
+Our standard logo and text. Outside of a few exceptions, this is the default, go-to version. The full-color logo will not work well on photography and various background colors. In those instances, the one-color version should be used.
 
 <p><img src="/images/le-logo-standard.png" alt="standard logo" height=125> <img src="/images/le-logo-standard-white.png" alt="standard white logo" height=125> <img src="/images/le-logo-standard-black.png" alt="standard black logo" height=125></p>
 <p><a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a>  <a href="/images/le-logo-standard-white.eps">EPS</a> <a href="/images/le-logo-standard-white.svg">SVG</a> <a href="/images/le-logo-standard-white.png">PNG</a> <a href="/images/le-logo-standard-black.eps">EPS</a> <a href="/images/le-logo-standard-black.svg">SVG</a> <a href="/images/le-logo-standard-black.png">PNG</a></p>
@@ -118,5 +118,3 @@ Our logo alone. Use this only when the "Let's Encrypt" word mark is clearly visi
 
 <p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
 <p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>
-
-</p>
