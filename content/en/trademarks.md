@@ -108,11 +108,11 @@ Our standard logo and text. Outside of a few exceptions, this is the default, go
         <a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a>
     </div>
     <div style="display:inline-block; padding:0 1em;">
-        <img src="/images/le-logo-standard-white.png" alt="standard white logo" height=125 style="padding:20px;background-image:url('/images/tbg.png');">
+        <img src="/images/le-logo-standard-white.png" alt="standard white logo" height=125 style="background-image:url('/images/tbg.png'); display: block;">
         <a href="/images/le-logo-standard-white.eps">EPS</a> <a href="/images/le-logo-standard-white.svg">SVG</a> <a href="/images/le-logo-standard-white.png">PNG</a>
     </div>
     <div style="display:inline-block; padding:0 1em;">
-        <img src="/images/le-logo-standard-black.png" alt="standard black logo" height=125 style="padding:20px;background-image:url('/images/tbg.png')">
+        <img src="/images/le-logo-standard-black.png" alt="standard black logo" height=125 style="background-image:url('/images/tbg.png'); display: block;">
         <a href="/images/le-logo-standard-black.eps">EPS</a> <a href="/images/le-logo-standard-black.svg">SVG</a> <a href="/images/le-logo-standard-black.png">PNG</a>
     </div>
 </div>
