@@ -102,7 +102,7 @@ If you’d like to use the ISRG Marks in a way that’s not covered by this poli
 
 Our standard logo and text. Outside of a few exceptions, this is the default, go-to version. The full-color logo will not work well on photography and various background colors. In those instances, the one-color version should be used.
 
-<div style="margin:0 -1em;">
+<div style="margin:0 -1em; margin-bottom:1.5em;">
     <div style="display:inline-block; padding:0 1em;">
         <img src="/images/le-logo-standard.png" alt="standard logo" height=125 style="display:block">
         <a href="/images/le-logo-standard.eps">EPS</a> <a href="/images/le-logo-standard.svg">SVG</a> <a href="/images/le-logo-standard.png">PNG</a>
