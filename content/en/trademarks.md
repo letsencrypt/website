@@ -3,7 +3,7 @@ title: Trademark Policy
 slug: trademarks
 top_graphic: 1
 date: 2018-09-19
-lastmod: 2021-04-15
+lastmod: 2021-04-22
 english_is_canonical: 1
 ---
 
@@ -121,12 +121,36 @@ Our standard logo and text. Outside of a few exceptions, this is the default, go
 
 The wide version of our logo and text. Use this in contexts where vertical space is limited.
 
-<p><img src="/images/le-logo-wide.png" alt="wide logo" height=90></p>
-<p><a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a></p>
+<div style="margin:0 -1em; margin-bottom:1.5em;">
+    <div style="display:inline-block; padding:0 .5em;">
+        <img src="/images/le-logo-wide.png" alt="wide logo" height=90 style="display:block">
+        <a href="/images/le-logo-wide.eps">EPS</a> <a href="/images/le-logo-wide.svg">SVG</a> <a href="/images/le-logo-wide.png">PNG</a>
+    </div>
+    <div style="display:inline-block; padding:0 .5em;">
+        <img src="/images/le-logo-wide-white.png" alt="wide white logo" height=90 style="background-image:url('/images/tbg.png'); display: block;">
+        <a href="/images/le-logo-wide-white.eps">EPS</a> <a href="/images/le-logo-wide-white.svg">SVG</a> <a href="/images/le-logo-wide-white.png">PNG</a>
+    </div>
+    <div style="display:inline-block; padding:0 .5em;">
+        <img src="/images/le-logo-wide-black.png" alt="wide black logo" height=90 style="background-image:url('/images/tbg.png'); display: block;">
+        <a href="/images/le-logo-wide-black.eps">EPS</a> <a href="/images/le-logo-wide-black.svg">SVG</a> <a href="/images/le-logo-wide-black.png">PNG</a>
+    </div>
+</div>
 
 ### Let's Encrypt Lock Only
 
 Our logo alone. Use this only when the "Let's Encrypt" word mark is clearly visible or has been well established elsewhere on the page or in the design. (When in doubt, use a different format.)
 
-<p><img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125></p>
-<p><a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a></p>
+<div style="margin:0 -1em; margin-bottom:1.5em;">
+    <div style="display:inline-block; padding:0 1em;">
+        <img src="/images/le-logo-lockonly.png" alt="lock only logo" height=125 style="display:block">
+        <a href="/images/le-logo-lockonly.eps">EPS</a> <a href="/images/le-logo-lockonly.svg">SVG</a> <a href="/images/le-logo-lockonly.png">PNG</a>
+    </div>
+    <div style="display:inline-block; padding:0 1em;">
+        <img src="/images/le-logo-lockonly-white.png" alt="lock only white logo" height=125 style="background-image:url('/images/tbg.png'); display: block;">
+        <a href="/images/le-logo-lockonly-white.eps">EPS</a> <a href="/images/le-logo-lockonly-white.svg">SVG</a> <a href="/images/le-logo-lockonly-white.png">PNG</a>
+    </div>
+    <div style="display:inline-block; padding:0 1em;">
+        <img src="/images/le-logo-lockonly-black.png" alt="lock only black logo" height=125 style="background-image:url('/images/tbg.png'); display: block;">
+        <a href="/images/le-logo-lockonly-black.eps">EPS</a> <a href="/images/le-logo-lockonly-black.svg">SVG</a> <a href="/images/le-logo-lockonly-black.png">PNG</a>
+    </div>
+</div>
