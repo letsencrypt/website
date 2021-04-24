@@ -42,7 +42,7 @@ Luego, es el trabajo de la AC verificar los que retos han sido satisfechos. La A
 Si la firma sobre el `nonce` es válida, y los retos son válidos, entonces el agente identificado por su llave pública está autorizado a realizar la gestión de certificados para `example.com`. Llamamos el par de llaves que el agente usó un "par de llaves autorizado" para `example.com`.
 
 
-## Emición y Revocación de Certificados
+## Emisión y Revocación de Certificados
 
 Una vez el agente tenga un par de llaves autorizado, solicitando, renovando, y revocando certificados es simple---solo envia mensajes de manejamiento de certificados y firmalos con el par de llaves autorizado.
 
