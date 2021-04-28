@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-04-09
+lastmod: 2021-04-29
 ---
 
 {{< lastmod >}}
@@ -39,7 +39,7 @@ We've set up websites to test certificates chaining to our active roots.
 # Intermediate Certificates
 
 Under normal circumstances, certificates issued by Let's Encrypt will come from "R3", an RSA intermediate.
-We have also issued a new ECDSA intermediate ("E1") and started issuing from it for internal testing. In April 2021, we will make ECDSA issuance publicly available with an account-based allow-list. This page will be updated soon on how get an account on the allow-list.
+We have also issued a new ECDSA intermediate ("E1") which is available for use by allow-listed accounts. Read about how we are siging ECDSA certificates and how to get your account allow-listed on the [community forums](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679).
 
 Our other intermediates ("R4" and "E2") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
 We do not use the X1, X2, X3, and X4 intermediates anymore.
@@ -75,12 +75,14 @@ IdenTrust has cross-signed our RSA intermediates for additional compatibility.
 
 # Cross Signing
 
+## Intermediates
+
 Each of our intermediates represents a single public/private
 key pair. The private key of that pair generates the signature for all end-entity
 certificates (also known as leaf certificates), i.e. the certificates we issue
 for use on your server.
 
-Our RSA intermediates are signed by ISRG Root X1. ISRG's root is widely trusted at this
+Our RSA intermediates are signed by ISRG Root X1. ISRG Root X1 is widely trusted at this
 point, but our RSA intermediates are still cross-signed by IdenTrust's "[DST Root CA X3](https://crt.sh/?id=8395)"
 (now called "TrustID X3 Root") for additional client compatibility. The IdenTrust
 root has been around longer and thus has better compatibility with older devices
@@ -98,8 +100,19 @@ end-entity certificate, but also a list of intermediates to help browsers verify
 that the end-entity certificate has a trust chain leading to a trusted root
 certificate. Almost all server operators will choose to serve a chain including
 the intermediate certificate with Subject "R3" and
-Issuer "DST Root CA X3." The recommended Let's Encrypt software,
+Issuer "DST Root CA X3." The recommended Let's Encrypt client software,
 [Certbot](https://certbot.org), will make this configuration seamlessly.
+
+## Roots
+Similar to intermediates, root certificates can be cross-signed, often to increase client
+compatability. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is the root
+certificate for the ECDSA hierarchy. It is represented by two certificates: one that is
+self-signed and one that is signed by ISRG Root X1.
+
+All certificates signed by the ECDSA intermediate "E1" will come with a chain including an intermediate
+certificate whose Subject is "ISRG Root X2" and whose Issuer is "ISRG Root X1". Almost all server operators
+will choose to serve this chain as it offers the most compatability until ISRG Root X2
+is widely trusted.
 
 # OCSP Signing Certificate
 
