@@ -39,7 +39,7 @@ We've set up websites to test certificates chaining to our active roots.
 # Intermediate Certificates
 
 Under normal circumstances, certificates issued by Let's Encrypt will come from "R3", an RSA intermediate.
-We have also issued a new ECDSA intermediate ("E1") which is available for use by allow-listed accounts. Read about how we are siging ECDSA certificates and how to get your account allow-listed on the [community forums]().
+We have also issued a new ECDSA intermediate ("E1") which is available for use by allow-listed accounts. Read about how we are siging ECDSA certificates and how to get your account allow-listed on the [community forums](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679).
 
 Our other intermediates ("R4" and "E2") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
 We do not use the X1, X2, X3, and X4 intermediates anymore.

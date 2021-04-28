@@ -13,7 +13,7 @@ We are planning to add support for validating and including IP addresses in cert
 
 ## ECDSA Root and Intermediates
 
-We are issuing certificates from our production ECDSA intermediate to [allow-listed accounts](). There is no planned date for removing the allow-list.
+We are issuing certificates from our production ECDSA intermediate to [allow-listed accounts](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). There is no planned date for removing the allow-list.
 
 # Completed Features
 
