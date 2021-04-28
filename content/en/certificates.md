@@ -109,8 +109,8 @@ compatability. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is th
 certificate for the ECDSA hierarchy. It is represented by two certificates: one that is
 self-signed and one that is signed by ISRG Root X1.
 
-All certificates signed by the ECDSA intermediate "E1" will come with a chain where the
-Subject is "ISRG Root X2" and the Issuer is "ISRG Root X1". Almost all server operators
+All certificates signed by the ECDSA intermediate "E1" will come with a chain including an intermediate
+certificate whose Subject is "ISRG Root X2" and whose Issuer is "ISRG Root X1". Almost all server operators
 will choose to serve this chain as it offers the most compatability until ISRG Root X2
 is widely trusted.
 
