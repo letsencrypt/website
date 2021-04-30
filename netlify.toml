@@ -204,3 +204,15 @@ from = "/vi/*"
 to = "/vi/404.html"
 status = 404
 force = false
+
+[[redirects]]
+from = "https://lencr.org/*"
+to = "https://letsencrypt.org/docs/lencr.org"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://www.lencr.org/*"
+to = "https://letsencrypt.org/docs/lencr.org"
+status = 302
+force = true
