@@ -2,14 +2,10 @@
 title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2021-04-29
+lastmod: 2021-05-03
 ---
 
 {{< lastmod >}}
-
-## IP Addresses in Certificates
-
-We are planning to add support for validating and including IP addresses in certificates.
 
 ## ECDSA Root and Intermediates
 
