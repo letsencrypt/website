@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-04-12
+lastmod: 2021-05-12
 ---
 
 {{< lastmod >}}
@@ -19,7 +19,7 @@ If your certificate validates on some of the "Known Compatible" platforms but no
 * [macOS >= 10.12.1](https://twitter.com/letsencrypt/status/790960929504497665?lang=en)
 * [iOS >= 10](https://support.apple.com/en-us/HT207177) ([iOS 9 does not include it](https://support.apple.com/en-us/HT205205))
 * [iPhone 5 and above can upgrade to iOS 10](https://en.wikipedia.org/wiki/IPhone_5) and can thus trust ISRG Root X1
-* [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15)
+* [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (but Android >= 2.3.6 will work by default [due to our special cross-sign](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
 * [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (with updates applied)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (with updates applied)
