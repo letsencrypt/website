@@ -2,7 +2,7 @@
 title: DST Root CA X3 Expiration (September 2021)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
-lastmod: 2021-04-06
+lastmod: 2021-05-07
 menu:
   main:
     weight: 30
@@ -47,6 +47,9 @@ API are using OpenSSL, [they must use version 1.1.0 or later][openssl]. In OpenS
 ISRG Root X1 will fail when presented with the Android-compatible certificate
 chain we are recommending by default.
 
+If you want additional information about our ongoing production chain changes,
+[please check out this thread in our community][production].
+
 If you have any questions about the upcoming expiration,
 [please post to this thread on our forum.][forum]
 
@@ -56,3 +59,4 @@ If you have any questions about the upcoming expiration,
 [openssl]: https://community.letsencrypt.org/t/openssl-client-compatibility-changes-for-let-s-encrypt-certificates/143816
 [forum]: https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190
 [compatibility]: /docs/cert-compat/
+[production]: https://community.letsencrypt.org/t/production-chain-changes/150739
