@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2019-09-16
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Recomendamos encarecidamente realizar pruebas en nuestro entorno de ensayo antes de utilizar nuestro entorno de producción. Esto le permitirá hacer las cosas bien antes de emitir certificados de confianza y reducirá la posibilidad de que se enfrente a los límites de solicitudes.
 

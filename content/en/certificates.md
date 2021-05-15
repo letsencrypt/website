@@ -4,9 +4,9 @@ linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
 lastmod: 2021-04-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 [![ISRG Certificate Hierarchy Diagram, as of December 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 

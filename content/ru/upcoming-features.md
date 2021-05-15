@@ -3,9 +3,9 @@ title: Планируемый функционал
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2020-01-14
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## Многофакторная валидация
 

@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 CAA ist ein DNS-Datensatz, mit dem Websitebesitzer angeben können, welche Zertifizierungsstellen (CAs) Zertifikate mit ihren Domainnamen ausstellen dürfen. Sie wurde 2013 von [RFC 6844](https://tools.ietf.org/html/rfc6844) standardisiert, um einer Zertifizierungsstelle die Möglichkeit zu geben, "das Risiko einer unbeabsichtigten falschen Ausgabe von Zertifikaten zu verringern." Standardmäßig kann jede öffentliche Zertifizierungsstelle Zertifikate für einen beliebigen Domainnamen im öffentlichen DNS ausstellen, sofern sie die Kontrolle über diesen Domainnamen überprüfen. Dies bedeutet, dass jeder Domainname potenziell betroffen ist, wenn in einem der vielen Validierungsprozesse einer öffentlichen Zertifizierungsstelle ein Fehler auftritt. CAA bietet Domaininhabern die Möglichkeit, dieses Risiko zu reduzieren.
 

@@ -5,9 +5,8 @@ top_graphic: 1
 date: 2018-09-19
 lastmod: 2018-09-19
 english_is_canonical: 1
+show_lastmod: 1
 ---
-
-{{< lastmod>}}
 
 인터넷 보안 리서치 그룹(ISRG, Internet Security Research Group)의 상표 정책에 오신 것을 환영합니다! 이 정책은 귀하가 당사의 상표(일반적으로 "ISRG 마크")를 사용할 수 있는 조건을 설명합니다. 이 정책은 여기에서 허용된 모든 용도에 적용됩니다. 또한 이 정책은 당사의 상표 사용과 관련하여 귀하에게 부여한 다른 사용 허가 조건과 함께 보완됩니다.
 

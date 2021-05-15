@@ -3,9 +3,9 @@ title: 시작하기
 slug: getting-started
 top_graphic: 3
 date: 2019-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME 프로토콜](https://tools.ietf.org/html/rfc8555)을 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
 

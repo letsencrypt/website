@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2021-05-13
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 We highly recommend testing against our staging environment before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
 

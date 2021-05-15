@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 CAA est un type d'enregistrement DNS qui permet aux propriétaires de sites de spécifier quelles autorités de certification (AC) sont autorisées à émettre des certificats contenant leurs noms de domaines. Il a été normalisé en 2013 par la [RFC 6844](https://tools.ietf.org/html/rfc6844) pour
 permettre à une autorité de certification "de réduire le risque de délivrance involontaire de certificat". Par défaut, chaque autorité de certification publique est autorisée à émettre des certificats pour tout nom de domaine du DNS public, à condition qu'ils valident le contrôle de ce nom de domaine. 

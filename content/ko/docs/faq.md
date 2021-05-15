@@ -9,9 +9,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 FAQ는 다음의 두 개로 나누어 집니다:
 

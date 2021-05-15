@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Vi rekommenderar verkligen att du testar mot vår testmiljö innan du använder
 produktionsmiljön. På så sätt kan du få saker att funka innan riktiga

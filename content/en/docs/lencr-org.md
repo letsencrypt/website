@@ -4,9 +4,9 @@ slug: lencr.org
 top_graphic: 1
 date: 2020-12-04
 lastmod: 2020-12-04
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # What's lencr.org?
 

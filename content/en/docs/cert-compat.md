@@ -3,9 +3,9 @@ title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
 lastmod: 2021-05-12
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform trusts ISRG's "ISRG Root X1" certificate. Some platforms can validate our certificates even though they don't include ISRG Root X1, because they trust IdenTrust's "DST Root CA X3" certificate. After September 2021, only those platforms that trust ISRG Root X1 will continue to validate Let's Encrypt certificates ([with the exception of Android][android-compat]).
 

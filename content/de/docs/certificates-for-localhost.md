@@ -4,9 +4,9 @@ slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Manchmal möchten Leute ein Zertifikat für den Hostnamen "localhost" bekommen, entweder um ihre lokale Entwicklungsumgebung zu nutzen oder zur Verteilung einer nativen Applikation, die Kommunikation mit einer Webapplikation benötigt. Let's Encrypt kann keine Zertifikate für "localhost" zur Verfügung stellen, da es keinen alleinigen Eigentümer gibt und es nicht zu einer Toplevel-Domain gehört, wie ".com" oder ".net". Es ist möglich, ihre eigene Domain so zu konfigurieren, dass sie auf `127.0.0.1` zeigt und hierfür ein Zertifkat erhalten, welches in der DNS-Challenge verwendet werden kann. Aber dies es nicht empfehlenswert und es gibt es bessere Optionen.
 

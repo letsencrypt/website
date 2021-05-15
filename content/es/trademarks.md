@@ -5,9 +5,9 @@ top_graphic: 1
 date: 2018-09-19
 lastmod: 2018-09-19
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ¡Bienvenido a la Política de Marcas Registradas del Grupo de Investigación de Seguridad de Internet ("ISRG")! Esta política describe las condiciones bajo las cuales usted puede usar nuestras marcas comerciales (colectivamente, las "Marcas ISRG"). Esta política se aplica a todos los usos permitidos en este documento. Además, esta política complementa y se suma a los términos de cualquier otro permiso que le hayamos otorgado con respecto al uso de nuestras marcas comerciales.
 

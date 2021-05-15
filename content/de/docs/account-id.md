@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Wenn Sie Probleme melden, kann es hilfreich sein, Ihre Let's Encrypt-Account-ID anzugeben. In den meisten Fällen wird das Erstellen eines Kontos automatisch von der ACME-Clientsoftware ausgeführt, mit der Sie sich mit Let's Encrypt unterhalten. Wenn Sie ACME-Clients auf mehreren Servern ausführen, sind möglicherweise mehrere Konten konfiguriert.
 

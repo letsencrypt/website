@@ -3,9 +3,9 @@ title: Zukünftige Funktionen
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2020-08-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## IP-Adressen in Zertifikaten
 

@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Wir empfehlen dringend das Testen gegen unsere Staging-Umgebung, bevor die Produktionsumgebung benutzt wird. Das wird Ihnen erlauben, die Dinge richtig zu machen, bevor vertrauenswürdige Zertifikate ausgestellt werden und reduziert das Risiko, gegen Rate Limits zu laufen.
 

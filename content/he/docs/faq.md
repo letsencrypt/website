@@ -8,9 +8,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 שו״ת זה מפוצל לסעיפים הבאים:
 

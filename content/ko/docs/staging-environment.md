@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2019-09-16
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 배포 환경을 사용하기 전에 준비 환경을 테스트하는 것이 좋습니다. 이렇게 하면 신뢰할 수 있는 인증서를 발급하기 전에 제대로 작동하는지 확인할 수 있고 속도 제한에 맞춰 달릴 기회가 줄어 듭니다.
 

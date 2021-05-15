@@ -5,9 +5,9 @@ top_graphic: 4
 date: 2019-09-19
 lastmod: 2020-02-21
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 מדיניות הפרטיות של Let’s Encrypt מתארת כיצד אנו אוספים, משתמשים וחושפים את המידע שלך בשלושה הקשרים שונים:
 

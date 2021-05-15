@@ -4,9 +4,9 @@ linkTitle: Vertrauenskette (Root- und Intermediate-Zertifikate)
 slug: certificates
 top_graphic: 5
 lastmod: 2020-12-08
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 [![ISRG-Zertifikatshierarchiediagramm, Stand Dezember 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 

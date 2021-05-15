@@ -3,9 +3,9 @@ title: はじめる
 slug: getting-started
 top_graphic: 3
 date: 2019-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 あなたのウェブサイトで HTTPS を有効にするためには、認証局 (Certificate Authority; CA) から証明書 (ファイルの一種) を取得する必要があります。Let's Encrypt は認証局の1つです。あなたのウェブサイトのドメインのための証明書を Let's Encrypt から取得するには、あなたが自分のドメインをコントロールする権利があることを示す必要があります。Let's Encrypt では、[ACME プロトコル](https://tools.ietf.org/html/rfc8555)というルールを使用するソフトウェアを使って、この証明を行います。このソフトウェアは、通常はあなたのウェブホスト上で実行します。
 

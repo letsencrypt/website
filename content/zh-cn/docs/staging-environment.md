@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 在使用我们的正式环境以前，我们强烈建议您使用我们的测试环境进行测试性部署，这将允许您在颁发受信任的证书前确保一切正常，并且降低您受到速率限制的可能性。
 

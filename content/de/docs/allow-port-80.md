@@ -4,9 +4,9 @@ slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Gelegentlich erhalten wir Berichte von Personen, die Probleme mit der Verwendung des Aufforderungstyps HTTP-01 haben, weil sie den Port 80 für ihren Webserver durch eine Firewall geschützt haben. Wir empfehlen, dass alle Server, die für die allgemeine Webnutzung vorgesehen sind, sowohl HTTP auf Port 80 als auch HTTPS auf Port 443 anbieten. Sie sollten auch Weiterleitungen für alle Port 80-Anforderungen und möglicherweise einen HSTS-Header (auf Port 443-Anforderungen) senden.
 
