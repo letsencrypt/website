@@ -36,7 +36,7 @@ show_lastmod: 1
 
 {{< ct_logs data="testing" >}}
     <li>这些日志服务器中的SCT<b>不应该</b>被添加到被公共信任的证书中。</li>
-    <li>Let's Encrypt的生产和<a href="/docs/staging-environment.md">测试</a>ACME端点环境都向Testflume提交证书，但是生产环境不使用该服务器产生的SCT。</li>
+    <li>Let's Encrypt的生产和<a href="/docs/staging-environment">测试</a>ACME端点环境都向Testflume提交证书，但是生产环境不使用该服务器产生的SCT。</li>
     <li>我们将在此处测试<a href="http://github.com/google/trillian">Trillian</a>和<a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a>的新版本后部署到生产环境中。</li>
     <li>Testflume接受的根证书列表包括所有Oak接受的根证书及其他测试用根证书。</li>
     <li>其他证书颁发机构可以使用Testflume进行测试。</li>
