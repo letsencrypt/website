@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Nous vous recommandons vivement d'effectuer des tests sur notre environnement de qualification avant d'utiliser notre environnement de production. Cela vous permettra de faire les choses correctement avant d'émettre des certificats de confiance et de réduire les risques de vous heurter à des limites d'utilisation.
 

@@ -7,9 +7,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 On September 30 2021, there will be a small change in how older browsers and devices
 trust Let's Encrypt certificates. If you run a typical website, you won't notice

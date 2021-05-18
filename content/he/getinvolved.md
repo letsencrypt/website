@@ -7,9 +7,9 @@ menu:
   main:
     weight: 60
     parent: donate
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## קהילה
 

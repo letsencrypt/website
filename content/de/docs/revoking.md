@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2020-02-22
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Wenn ein zu einem Zertifikat dazugehöriger privater Schlüssel nicht länger sicher ist, sollten Sie das Zertifikat sperren. Das kann aus unterschiedlichen Gründen passieren. Zum Beispiel, Sie haben unglücklicherweise den privaten Schlüssel auf einer öffentlichen Webseite geteilt; Hacker haben Ihren privaten Schlüssel von Ihren Servern kopiert; oder Hacker haben temporär Kontrolle über Ihre Server oder Ihre DNS Konfiguration erhalten und benutzten das zum Validieren und Ausstellen eines Zertifikats, für den sie den privaten Schlüssel besitzen.
 

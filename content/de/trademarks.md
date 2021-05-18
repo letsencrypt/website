@@ -5,9 +5,9 @@ top_graphic: 1
 date: 2018-09-19
 lastmod: 2018-09-19
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Willkommen bei der Markenschutzrichtlinie der Internet Security Research Group ("ISRG")! Diese Richtlinie beschreibt die Bedingungen, unter denen Sie unsere Markenzeichen verwenden können (zusammen die "ISRG-Marken"). Diese Richtlinie gilt für alle hier erlaubten Verwendungen. Darüber hinaus unterstützt und ergänzt diese Richtlinie zusätzlich zu den Bedingungen anderer Erlaubnisse, die wir Ihnen bezüglich der Verwendung unserer Marken erteilt haben.
 

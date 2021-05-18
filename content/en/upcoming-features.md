@@ -3,9 +3,9 @@ title: Upcoming Features
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2021-05-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## ECDSA Root and Intermediates
 

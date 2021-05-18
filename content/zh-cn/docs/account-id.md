@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 当您向 Let's Encrypt 报告问题时，提供您的 Let's Encrypt 账户 ID 会对解决问题很有帮助。
 在大多数情况下，您使用的 ACME 客户端软件连接到 Let's Encrypt 服务器时将自动创建账户。若您在多个服务器上运行 ACME 客户端，您可能有多个账户。

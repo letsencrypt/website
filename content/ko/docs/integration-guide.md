@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 이 글은 호스팅 제공자나 큰 웹 사이트에 Let's Encrypt를 통합시키거나 Let's Encrypt에 대한 클라이언트 소프트웨어를 만들고 있는 귀하에게 도움이 되는 조언을 포함하고 있습니다.
 

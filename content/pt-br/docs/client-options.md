@@ -37,7 +37,7 @@ Se você conhece um cliente ACME ou um projeto que se integrou à Let's Encrypt 
 
 Antes de enviar o pull request por favor certifique-se que:
 
-1. O seu cliente respeita a [política de direitos autorais da Let's Encrypt](https://letsencrypt.org/trademarks/).
+1. O seu cliente respeita a [política de direitos autorais da Let's Encrypt](/trademarks/).
 1. O seu cliente não roda diretamente no navegador e que ele suporta renovações automáticas.
 1. O seu commit adiciona o cliente ao **fim** da seção relevante (não esqueça o "acme_v2" se for apropriado!).
 1. O seu commit atualiza campo `lastmod` no topo do arquivo `clients.json`.

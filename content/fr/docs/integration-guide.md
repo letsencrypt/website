@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Ce document contient des conseils utiles si vous êtes un fournisseur d'hébergement ou un grand site Web intégrant Let's Encrypt, ou si vous écrivez un logiciel client pour Let's Encrypt.
 

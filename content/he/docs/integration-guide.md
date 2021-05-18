@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 מסמך זה מכיל עצות שימושיות אם יש ספק אירוח או אתר גדול בתחום אחריותך שמשתלבים מול Let's Encrypt או שבחרת לפתח תכנית לקוח עבור Let's Encrypt.
 

@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2020-03-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt provides rate limits to ensure fair usage by as
 many people as possible. We believe these rate limits are high enough to work

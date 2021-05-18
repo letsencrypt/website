@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2020-02-22
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 When a certificate's corresponding private key is no longer
 safe, you should revoke the certificate. This can happen for a few different

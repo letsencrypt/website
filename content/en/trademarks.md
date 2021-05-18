@@ -5,9 +5,9 @@ top_graphic: 1
 date: 2018-09-19
 lastmod: 2021-04-22
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Welcome to the Trademark Policy of the Internet Security Research Group ("ISRG")! This policy describes the conditions under which you may use our trademarks (collectively, the "ISRG Marks"). This policy applies to all uses permitted herein. In addition, this policy supplements and is in addition to the terms of any other permission we may have granted you regarding use of our trademarks.
 

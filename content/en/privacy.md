@@ -4,9 +4,9 @@ slug: privacy
 top_graphic: 4
 lastmod: 2021-03-07
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 The Let’s Encrypt Privacy Policy describes how we collect, use, and disclose your information in three different contexts:
 

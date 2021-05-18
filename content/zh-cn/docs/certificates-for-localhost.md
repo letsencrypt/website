@@ -4,9 +4,9 @@ slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 有时，人们希望获得主机名为“localhost”的证书，以用于本地开发或与需要与 Web 应用程序通信的原生应用程序一同分发。Let's Encrypt 不能为“localhost”提供证书，因为没有人唯一地拥有它，并且它不在“.com”或“.net”等顶级域名下。您可以将您自己的域名设置为解析至“127.0.0.1”，并使用 DNS 验证获取证书。然而，通常情况下这是个坏主意，您其实有更好的选择。
 

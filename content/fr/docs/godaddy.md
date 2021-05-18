@@ -4,9 +4,9 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 
 Nous recevons beaucoup de questions sur la façon d'utiliser Let’s Encrypt sur GoDaddy. Si vous utilisez une formule d'hébergement Web partagé chez GoDaddy, il est actuellement très difficile d'installer un certificat Let’s Encrypt, nous ne recommandons donc pas, actuellement, d'utiliser nos certificats avec GoDaddy. En effet, GoDaddy ne prend pas en charge le [protocole ACME][1] pour automatiser  la délivrance et le renouvellement des certificats. Au lieu de cela, GoDaddy propose un renouvellement automatisé avec leurs propres certificats, ce qui est [un service optionnel payant][2].

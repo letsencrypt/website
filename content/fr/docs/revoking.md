@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2020-02-22
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Lorsque la clef privée correspondante d'un certificat n'est plus sûre, vous devez révoquer le certificat. Cela peut se produire pour différentes raisons. Par exemple, vous pouvez avoir accidentellement partagé la clef privée sur un site Web public; les pirates pourraient avoir copié la clef privée de vos serveurs; ou les pirates pourraient prendre le contrôle temporaire de vos serveurs ou de votre configuration DNS, et utiliser la clef pour valider et émettre un certificat dont ils détiennent la clef privée.
 

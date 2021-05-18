@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 
 憑證頒發機構授權 (Certificate Authority Authorization, CAA) 是一種 DNS 紀錄，它讓網站管理者指定哪些憑證頒發機構，可以頒發包含其網站域名的憑證。CAA 記錄在 2013 年由 [RFC 6844](https://tools.ietf.org/html/rfc6844) 標準化，以"降低網域擁有者對於 CA 意外頒發憑證時的風險"。任何 CA 都可以在驗證域名控制權後，替任何 DNS 下的網域頒發憑證。這表示，如果在 CA 的驗證程序中有錯誤，所有域名都可能受到影響。CAA 紀錄提供了一個方法讓域名擁有者降低這種風險。
