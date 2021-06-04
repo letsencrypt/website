@@ -40,7 +40,9 @@ can.
 
 Renewals are treated specially: they don't count against your **Certificates per
 Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 6 per week (168h) and 2 per day (24h) - the latter of which we implemented in June 2021 to warn users before they reach the weekly limit of 6.
+limit of 2 per day (24h) or 6 per week (168h). The daily limit is intended
+to warn users before they reach the weekly limit. Note that this limit changed
+in June 2021 (it was previously just 5 per week).
 Exceeding the Duplicate Certificate limit is reported with the error message
 'too many certificates already issued for this exact set of domains'.
 Note: renewals used to count against your Certificate per
