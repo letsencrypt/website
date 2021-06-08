@@ -2,18 +2,14 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2021-05-03
 show_lastmod: 1
 ---
 
 
-## IP地址证书
-
-我们计划增加对IP验证的支持，并将IP地址包括在证书中。
-
 ## ECDSA根证书和中间证书
 
-目前 Let's Encrypt 仅使用 RSA 中间证书签署终端实体证书。我们将生成可用于签署终端实体证书的 ECDSA 根证书及中级证书。
+我们已经开始为[白名单账户](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679)从生产环境 ECDSA 中间根签发证书了，目前暂无下线白名单的计划。
 
 # 已实现的功能
 
