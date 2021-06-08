@@ -4,11 +4,12 @@ date: 2020-11-06T00:00:00Z
 excerpt: "When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change."
 title: "Standing on Our Own Two Feet [Updated]"
 slug: own-two-feet
+lastmod: 2021-06-08
 ---
 
 > **Update, December 21 2020**
 >
-> Thanks to community feedback and our wonderful partners at IdenTrust, [we will be able to continue to offer service without interruption](/2020/12/21/extending-android-compatibility.html) to people using older Android devices.  We flagged the content of this blog post that is no longer accurate. Please visit [this post] (https://community.letsencrypt.org/t/production-chain-changes/150739) on our community forum for the latest information about chain changes.
+> Thanks to community feedback and our wonderful partners at IdenTrust, [we will be able to continue to offer service without interruption](/2020/12/21/extending-android-compatibility.html) to people using older Android devices.  We flagged the content of this blog post that is no longer accurate. Please visit [this post](https://community.letsencrypt.org/t/production-chain-changes/150739) on our community forum for the latest information about chain changes.
 
 When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change. The common solution: a new CA will often ask an existing, trusted CA for a cross-signature, to quickly get it into being trusted by lots of devices.
 
