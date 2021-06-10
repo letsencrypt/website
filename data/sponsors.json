@@ -93,6 +93,7 @@
       {"name":"Duda","url":"https://www.duda.co/","image":"duda-logo.png"},
       {"name":"Ads.com","url":"https://www.ads.com/","image":"ads-com-logo.png"},
       {"name":"Teleport","url":"https://goteleport.com/","image":"teleport-logo.png"},
-      {"name":"vpnXpert","url":"https://vpnxpert.com/","image":"vpnxpert-logo.png"}
+      {"name":"vpnXpert","url":"https://vpnxpert.com/","image":"vpnxpert-logo.png"},
+      {"name":"NGINX","url":"https://www.nginx.com/","image":"nginx-logo.png"}
 ]
 }
