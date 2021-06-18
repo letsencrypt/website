@@ -961,7 +961,6 @@
 		{
 		        "name": "HCL Domino",
        			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
-			"library": "Domino",
 			"category": "Domino",
 			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
 			"acme_v2": "true",
