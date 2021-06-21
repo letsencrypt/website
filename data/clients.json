@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-03-20",
+	"lastmod": "2021-06-18",
 	"categories": [
 		"Bash",
 		"C",
@@ -906,8 +906,8 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-    },
-    {
+		},
+		{
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
@@ -961,6 +961,21 @@
 				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
 			},
 			"category": "Configuration management tools"
+		},
+		{
+			"name": "wdfcert.sh",
+			"url": "https://github.com/WolfWings/wdfcert.sh",
+			"acme_v2": "true",
+			"category": "Bash",
+			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus roor domain support for single-TXT-record DNS providers)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false",
+				"TLS-ALPN-01": "false"
+			}
 		}
 	]
 }
