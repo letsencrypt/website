@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-06-18",
+	"lastmod": "2021-06-21",
 	"categories": [
 		"Bash",
 		"C",
@@ -975,6 +975,19 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false",
 				"TLS-ALPN-01": "false"
+			}
+		},
+		{
+			"name": "HCL Domino",
+			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
+			"category": "Domino",
+			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
 			}
 		}
 	]
