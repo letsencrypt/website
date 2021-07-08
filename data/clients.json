@@ -382,6 +382,7 @@
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "PHP"
 		},
 		{
@@ -637,11 +638,13 @@
 		{
 			"name": "kelunik/acme",
 			"url": "https://github.com/kelunik/acme",
+			"acme_v2": "true",
 			"library": "PHP"
 		},
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "Windows / IIS",
 			"comments": "(PHP)"
 		},
