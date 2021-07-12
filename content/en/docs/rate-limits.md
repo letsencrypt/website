@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-03-05
+lastmod: 2021-06-03
 show_lastmod: 1
 ---
 
@@ -40,11 +40,13 @@ can.
 
 Renewals are treated specially: they don't count against your **Certificates per
 Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 5 per week. Note: renewals used to count against your Certificate per
-Registered Domain limit until March 2019, [but they don't
-anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
+limit of 2 per day (24h) or 6 per week (168h). The daily limit is intended
+to warn users before they reach the weekly limit. Note that this limit changed
+in June 2021 (it was previously just 5 per week).
 Exceeding the Duplicate Certificate limit is reported with the error message
-`too many certificates already issued for exact set of domains`.
+'too many certificates already issued for this exact set of domains'.
+Please also note that this is not a rate limit Let's Encrypt can adjust
+via the rate limit adjustment form found on this page.
 
 A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
