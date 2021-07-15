@@ -1,0 +1,53 @@
+---
+title: Rate Limits Adjustments
+slug: rate-limits-requests
+top_graphic: 1
+do_not_translate: 1
+---
+
+<style>
+  .pure-float-right {
+    float: right;
+  }
+</style>
+
+<h2>Rate Limit Adjustments Request Form</h2>
+
+<p>We recommend adjusting by ACME Account ID if possible. You'll need to request all of your certificates through a
+  single ACME account but the advantage is that the limit adjustment applies to all domains.</p>
+
+<p>You can also adjust by domain, but you may only request an adjustment for up to three domains. Subsequent requests
+  for more per-domain adjustments are not likely to be granted. This is why we recommend adjusting by account ID -
+  then the adjustment applies to all domains used by your account.</p>
+
+<p>You MUST specify an account ID or up to three domains or your request will be discarded.</p>
+
+<form class="pure-form pure-form-stacked" action="/action_page.php">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    <input type=hidden name="orgid" value="00D5w000005Rw0J">
+    <input type=hidden name="retURL" value="https://letsencrypt.org/docs/rate-limits/">
+
+    <label for="stacked-company">Company</label><input class="pure-input-1-4" id="company" maxlength="80" name="company"
+      size="20" type="text" />
+
+    <label for="stacked-email">Email</label><input class="pure-input-1-4" id="email" maxlength="80" name="email"
+      size="20" type="text" />
+
+    Service or Product Description:<textarea class="pure-input-1" id="00N5w00000RL0KF" name="00N5w00000RL0KF" rows="5"
+      type="text"></textarea>
+
+    ACME Account ID(s):<input class="pure-input-1" id="00N5w00000RL0KK" maxlength="40" name="00N5w00000RL0KK" size="20"
+      type="text" />
+
+    Domain Name(s):<textarea class="pure-input-1" id="00N5w00000RL0KP" name="00N5w00000RL0KP" rows="6" type="text"
+      type="text"></textarea>
+
+    Certificates per Week Request:<input class="pure-input-1" id="00N5w00000RL0Ke" name="00N5w00000RL0Ke" size="20"
+      type="text" />
+
+    <div class="pure-float-right">
+      <input class="pure-button pure-button-primary" type="submit" name="Submit">
+    </div>
+  </form>
+</form>
