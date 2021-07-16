@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-03-05
+lastmod: 2021-07-12
 show_lastmod: 1
 ---
 
@@ -66,7 +66,7 @@ per account, per hostname, per hour. This limit is higher on our
 can use that environment to debug connectivity problems. Exceeding the Failed
 Validations limit is reported with the error message `too many failed authorizations recently`.
 
-The "new-reg", "new-authz", and "new-cert" endpoints on the v1 API and the "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the v2 API have an <a
+The "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the API have an <a
 id="overall-requests"></a>**Overall
 Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
 directory & subdirectories have an Overall Requests limit of 40 requests per second.
@@ -87,7 +87,7 @@ Please utilize our [staging environment](/docs/staging-environment) if you’re
 developing an ACME client. Exceeding the Pending Authorizations limit is
 reported with the error message `too many currently pending authorizations`.
 
-For users of the ACME v2 API you can create a maximum of 300 <a
+You can create a maximum of 300 <a
 id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request. Exceeding the New Orders
 limit is reported with the error message `too many new orders recently`.
 
