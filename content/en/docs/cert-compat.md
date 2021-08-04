@@ -65,6 +65,8 @@ You may want to visit [this 2015-2017 community forum discussion](https://commun
   * cannot handle certificates without a CRL
 * PS3 game console
 * PS4 game console with firmware < 5.00
+* Tizen 2.4 and below
+* All versions of WebOS
 
 # ISRG Root X2 (new ECDSA root) - coming soon
 We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion. ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. For more information, check our our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
