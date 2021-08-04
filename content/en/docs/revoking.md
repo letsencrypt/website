@@ -3,7 +3,7 @@ title: Revoking certificates
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2020-02-22
+lastmod: 2021-08-03
 show_lastmod: 1
 ---
 
@@ -38,7 +38,7 @@ of the account you used to issue it, you can revoke it using your account
 credentials. Certbot will attempt this by default. Example:
 
 ```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
 ```
 
 # Using the certificate private key
@@ -59,7 +59,7 @@ You will also need a copy of the private key in PEM format. Once you have these,
 you can revoke the certificate like so:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
 ```
 
 # Using a different authorized account
@@ -94,5 +94,5 @@ to revoke, you can download the certificate from [crt.sh](https://crt.sh/),
 then proceed to revoke the certificate as if you had issued it:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
 ```
