@@ -217,3 +217,15 @@ from = "https://www.lencr.org/*"
 to = "https://letsencrypt.org/docs/lencr.org"
 status = 302
 force = true
+
+[[redirects]]
+from = "https://letsencrypt.com/*"
+to = "https://letsencrypt.org/"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://www.letsencrypt.com/*"
+to = "https://letsencrypt.org/"
+status = 302
+force = true
