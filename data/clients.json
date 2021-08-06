@@ -994,7 +994,7 @@
 			}
 		},
 		{
-			"name": "Ansible collection: Acme ",
+			"name": "Ansible collection: acme",
 			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
 			"category": "Configuration management tools",
 			"comments": "(ACME V2 integration with acme_certificate module. Supports multiple providers for challenges)",
