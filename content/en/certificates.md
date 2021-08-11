@@ -30,7 +30,6 @@ We've set up websites to test certificates chaining to our active roots.
   * [Valid](https://valid-isrgrootx1.letsencrypt.org/)
   * [Revoked](https://revoked-isrgrootx1.letsencrypt.org/)
   * [Expired](https://expired-isrgrootx1.letsencrypt.org/)
-
 * ISRG Root X2
   * [Valid](https://valid-isrgrootx2.letsencrypt.org/)
   * [Revoked](https://revoked-isrgrootx2.letsencrypt.org/)
