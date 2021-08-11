@@ -42,7 +42,7 @@ other = "Поддержите нас"
 [footer_policies]
 other = """
 Ознакомьтесь с нашей <a href="/ru/privacy/">политикой конфиденциальности</a>.<br>
-Ознакомьтесь с нашей <a href="/ru/trademarks/">политикой в отношении товарных знаков</a>.
+Ознакомьтесь с нашей <a href="https://www.abetterinternet.org/trademarks/">политикой в отношении товарных знаков</a>.
 """
 
 [linux_foundation_trademark]
