@@ -7,7 +7,7 @@ lastmod: 2019-05-24
 
 {{< clientslastmod >}}
 
-Let's Encrypt は、与えられたドメインを制御する権限があなたにあることを検証し、証明書を発行するために、ACME プロトコルを使用しています。Let's Encrypt の証明書を取得するためには、使用する ACME クライアントを1つ選ぶ必要があります。
+Let's Encrypt は、与えられたドメインを制御する権限があなたにあることを検証し、証明書を発行するために、ACME プロトコルを使用しています。Let's Encrypt の証明書を取得するためには、使用する ACME クライアントを 1 つ選ぶ必要があります。
 
 以下に示す ACME クライアントはサードパーティにより提供されているものです。サードパーティ製クライアントは Let's Encrypt の制御下にはなく、レビューを行っているわけではないので、安全性や信頼性に対する保証をすることはできません。
 
@@ -31,7 +31,7 @@ Python の [acme](https://github.com/certbot/certbot/tree/master/acme) モジュ
 
 プルリクエストを送る前に、以下の点を確認してください。
 
-1. クライアントは [Let's Encrypt trademark policy](/trademarks) を遵守しているか。
+1. クライアントは [Let's Encrypt trademark policy](https://www.abetterinternet.org/trademarks) を遵守しているか。
 1. クライアントは、ブラウザベースのものではなく、自動更新に対応しているか。
 1. あなたのコミットは、関連するセクションの**一番最後**に追加するものであるか (もし対応する場合は、「acme_v2」セクションの記入を忘れないでください！)。
 1. あなたのコミットは、`clients.json` のヘッダの `lastmod` の日付を更新しているか。

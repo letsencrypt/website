@@ -41,7 +41,7 @@ ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)
 snart.
 
 Om du redan använder någon klient på denna lista, se till att uppgradera till
-den senaste versionen.  Om klienten du använder inte finns listad nedan så
+den senaste versionen. Om klienten du använder inte finns listad nedan så
 kanske den inte stöder ACMEv2. Om så är fallet rekommenderar vi att du kontaktar
 de projektansvariga eller byter till en annan klient.
 
@@ -69,7 +69,7 @@ på GitHub där du uppdaterar filen `data/clients.json`.
 
 Innan du skickar in en pull request, vänligen säkerställ att:
 
-1. klienten respekterar [Let's Encrypts varumärkespolicy](/trademarks)
+1. klienten respekterar [Let's Encrypts varumärkespolicy](https://www.abetterinternet.org/trademarks)
 1. klienten inte är webbläsarbaserad och att den stöder automatisk förnyelse
 1. din commit lägger till din klient **sist** i relevant sektion (glöm inte
    `acme_v2` om det är lämpligt!)

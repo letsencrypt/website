@@ -26,7 +26,7 @@ Tous les clients suivants prennent en charge l'API ACMEv2 ([RFC 8555](https://to
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
 Le module Python [acme](https://github.com/certbot/certbot/tree/master/acme) fait partie de Certbot, mais est également utilisé par un certain nombre d'autres clients et est disponible en tant que package autonome via
- [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) et d'autres distributions.
+[PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) et d'autres distributions.
 
 {{< /clients >}}
 
@@ -36,7 +36,7 @@ Si vous connaissez un client ACME ou un projet intégré à l'API ACMEv2 de Let'
 
 Avant de soumettre un Pull Request, veuillez vous assurer:
 
-1. Le client respecte la [politique de la marque Let's Encrypt](/trademarks).
+1. Le client respecte la [politique de la marque Let's Encrypt](https://www.abetterinternet.org/trademarks).
 1. Le client n'est pas basé sur un navigateur et prend en charge les renouvellements automatiques.
 1. Vous ajoutez votre client à la **fin** des sections pertinentes (N'oubliez pas le "acme_v2" si approprié!).
 1. En enregistrant mettez à jour l'horodatage dans la variable `lastmod` située au début du fichier `clients.json`.
