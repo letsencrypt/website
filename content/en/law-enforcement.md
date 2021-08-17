@@ -1,7 +1,7 @@
 ---
 title: Law Enforcement Request Guidelines
 slug: law-enforcement
-lastmod: 2020-07-23
+lastmod: 2021-08-17
 do_not_translate: 1
 ---
 
@@ -52,7 +52,7 @@ United States law enforcement agencies may send valid legal process or preservat
 
 [law-enforcement@letsencrypt.org](mailto:law-enforcement@letsencrypt.org)
 
-You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, 548 Market St, PMB 57274, San Francisco, California 94104-5401”, but please note that you are likely to receive a quicker response if you send it by email.
+You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, P.O. Box 18666, Minneapolis, MN 55418-0666”, but please note that you are likely to receive a quicker response if you send it by email.
 
 Please identify requested records with particularity and include (i) the name of the issuing authority and agent; (ii) an email address from a law enforcement domain; and (iii) a direct contact phone number.
 
