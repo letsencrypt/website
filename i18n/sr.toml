@@ -30,6 +30,9 @@ other = "Podržite sigurniji internet koji poštuje privatnost"
 [footer_donate]
 other = "Doniraj"
 
+[footer_mailing]
+other = "Сва писма и упите шаљите на:"
+
 [footer_policies]
 other = """
 Pročitaj našu <a href="/sr/privacy/">politiku privatnosti</a>.<br>

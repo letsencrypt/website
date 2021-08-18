@@ -30,6 +30,9 @@ other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
 [footer_donate]
 other = "Donasi"
 
+[footer_mailing]
+other = "Kirim semua surat atau pertanyaan ke:"
+
 [footer_policies]
 other = """
 Lihat <a href="/id/privacy/">kebijakan privasi</a> kami.<br>

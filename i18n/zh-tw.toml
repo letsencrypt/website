@@ -30,6 +30,9 @@ other = "支持更安全，更尊重私隱的網際網路."
 [footer_donate]
 other = "捐贈"
 
+[footer_mailing]
+other = "將所有信件和問題發送至："
+
 [footer_policies]
 other = """
 查看我們的<a href="/zh-tw/privacy/">私隱政策</a>.<br>

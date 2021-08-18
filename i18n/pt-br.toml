@@ -30,6 +30,9 @@ other = "Apoie uma Web mais segura e que respeita a privacidade."
 [footer_donate]
 other = "Doar"
 
+[footer_mailing]
+other = "Envie todas as cartas ou perguntas para:"
+
 [footer_policies]
 other = """
 Veja nossa <a href="/pt-br/privacy/">política de privacidade</a>.<br>

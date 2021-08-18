@@ -39,6 +39,9 @@ other = "Stöd en säkrare och mer integritetsrespekterande webb."
 [footer_donate]
 other = "Donera"
 
+[footer_mailing]
+other = "Skicka alla brev och förfrågningar till:"
+
 [footer_policies]
 other = """
 Ta del av vår <a href="/privacy/">integritetspolicy</a>.<br>

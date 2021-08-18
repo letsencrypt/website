@@ -39,6 +39,9 @@ other = "よりセキュアでプライバシーを尊重するウェブを支�
 [footer_donate]
 other = "寄付する"
 
+[footer_mailing]
+other = "すべての手紙またはお問い合わせを以下に送ってください："
+
 [footer_policies]
 other = """
 <a href="/ja/privacy/">プライバシー・ポリシー</a>を読む。<br>
