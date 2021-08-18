@@ -39,6 +39,9 @@ other = "支持更安全、更尊重隐私的互联网。"
 [footer_donate]
 other = "捐赠"
 
+[footer_mailing]
+other = "将所有信件和问题发送至："
+
 [footer_policies]
 other = """
 查看我们的<a href="/zh-cn/privacy/">隐私政策</a><br />

@@ -39,6 +39,9 @@ other = "Hỗ trợ một trang web an toàn và bảo mật hơn."
 [footer_donate]
 other = "Đóng Góp"
 
+[footer_mailing]
+other = "Gửi tất cả thư và câu hỏi tới:"
+
 [footer_policies]
 other = """
 Xem <a href="/vi/privacy/">chính sách bảo mật</a> của chúng tôi.<br>
