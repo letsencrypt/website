@@ -1,4 +1,4 @@
-{{ if and (ne .Section "docs") (not .Params.no_donate_footer) }}
+{{ if and (ne .Section "docs") (ne .Section "documents") (not .Params.no_donate_footer) }}
 <div class="donate-footer">
   <div class="wrapper text-center">
     <h2>{{ i18n "footer_support_us" }}</h2>
@@ -11,6 +11,7 @@
 
 <footer class="site-footer">
 
+{{ if ne .Section "documents" }}
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -65,6 +66,7 @@
     </div>
 
   </div>
+{{ end /* if ne .Section "documents" */ }}
 
   {{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
