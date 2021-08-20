@@ -9,9 +9,9 @@
 </div>
 {{ end }}
 
+{{ if ne .Section "documents" }}
 <footer class="site-footer">
 
-{{ if ne .Section "documents" }}
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -66,9 +66,9 @@
     </div>
 
   </div>
-{{ end }}{{/* if ne .Section "documents" */}}
-
-  {{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
-  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 </footer>
+{{ end }}{{/* if ne .Section "documents" */}}
+
+{{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

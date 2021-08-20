@@ -1,5 +1,5 @@
-<header class="site-header">
 {{ if ne .Section "documents" }}
+<header class="site-header">
   <a id="skiplink" href="#main-content">{{ i18n "header_skip_nav" }}</a>
   <div class="wrapper">
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}"><img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt"></a>
@@ -52,6 +52,6 @@
       </div>
     </nav>
   </div>
-{{ end }}{{/* if ne .Section "documents" */}}
 </header>
 <div id="main-content"></div>
+{{ end }}{{/* if ne .Section "documents" */}}
