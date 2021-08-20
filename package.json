@@ -8,7 +8,7 @@
     "htmlhint": "^0.15.1"
   },
   "scripts": {
-    "test:htmllint": "htmlhint 'public/*.html' 'public/**/*.html'",
+    "test:htmllint": "htmlhint 'content/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
     "test": "npm run test:htmllint && npm run test:eslint",
     "build": "hugo -d public"
