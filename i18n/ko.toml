@@ -36,7 +36,7 @@ other = "모든 편지나 문의 사항은 다음으로 보내주십시오."
 [footer_policies]
 other = """
 <a href="/ko/privacy/">개인정보보호 정책</a>을 확인하십시오.<br>
-<a href="/ko/trademarks/">상표권 정책</a>을 확인하십시오.
+<a href="https://www.abetterinternet.org/trademarks/">상표권 정책</a>을 확인하십시오.
 """
 
 [linux_foundation_trademark]

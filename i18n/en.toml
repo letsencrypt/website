@@ -39,7 +39,7 @@ other = "Send all mail or inquiries to:"
 [footer_policies]
 other = """
 View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="/trademarks/">trademark policy</a>.
+View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.
 """
 
 [linux_foundation_trademark]

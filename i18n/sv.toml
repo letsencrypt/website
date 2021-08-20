@@ -45,7 +45,7 @@ other = "Skicka alla brev och förfrågningar till:"
 [footer_policies]
 other = """
 Ta del av vår <a href="/privacy/">integritetspolicy</a>.<br>
-Ta del av vår <a href="/trademarks/">varumärkespolicy</a>.
+Ta del av vår <a href="https://www.abetterinternet.org/trademarks/">varumärkespolicy</a>.
 """
 
 [linux_foundation_trademark]

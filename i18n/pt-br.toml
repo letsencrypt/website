@@ -36,7 +36,7 @@ other = "Envie todas as cartas ou perguntas para:"
 [footer_policies]
 other = """
 Veja nossa <a href="/pt-br/privacy/">política de privacidade</a>.<br>
-Veja nossa <a href="/pt-br/trademarks/">política de direitos autorais</a>.
+Veja nossa <a href="https://www.abetterinternet.org/trademarks/">política de direitos autorais</a>.
 """
 
 [linux_foundation_trademark]

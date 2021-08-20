@@ -45,7 +45,7 @@ other = "Gửi tất cả thư và câu hỏi tới:"
 [footer_policies]
 other = """
 Xem <a href="/vi/privacy/">chính sách bảo mật</a> của chúng tôi.<br>
-Xem <a href="/vi/trademarks/">chính sách nhãn hiệu</a> của chúng tôi.
+Xem <a href="https://www.abetterinternet.org/trademarks/">chính sách nhãn hiệu</a> của chúng tôi.
 """
 
 [linux_foundation_trademark]

@@ -45,7 +45,7 @@ other = "Envoyez tout courrier ou toute demande à:"
 [footer_policies]
 other = """
 Voir notre <a href="/fr/privacy/">politique de confidentialité</a>.<br>
-Voir notre <a href="/fr/trademarks/">politique en matière de copyright</a>.
+Voir notre <a href="https://www.abetterinternet.org/trademarks/">politique en matière de copyright</a>.
 """
 
 [linux_foundation_trademark]

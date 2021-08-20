@@ -36,7 +36,7 @@ other = "Сва писма и упите шаљите на:"
 [footer_policies]
 other = """
 Pročitaj našu <a href="/sr/privacy/">politiku privatnosti</a>.<br>
-Pročitaj našu <a href="/sr/trademarks/">politiku brenda</a>.
+Pročitaj našu <a href="https://www.abetterinternet.org/trademarks/">politiku brenda</a>.
 """
 
 [linux_foundation_trademark]
