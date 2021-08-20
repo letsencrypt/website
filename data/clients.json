@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-06-21",
+	"lastmod": "2021-08-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -139,6 +139,14 @@
 		{
 			"name": "Gitlab",
 			"url": "https://about.gitlab.com"
+        },
+        {
+        	"name": "NethServer",
+			"url": "https://www.nethserver.org/"
+        },
+        {
+        	"name": "OPNsense",
+			"url": "https://opnsense.org/"
         }
 	],
 	"list": [
