@@ -17,10 +17,11 @@ Detta är stort, och vi vill att du blir en del av detta. Hjälp oss visa vägen
 
 ## Företagssponsring
 
-{{< become-a-sponsor
-  platinum="Platina"
-  gold="Guld"
-  gold_basic="Guld basic"
+<!-- Note for translators: words in quotes need to be translated -->
+{{< become-a-sponsor 
+  platinum="Platina" 
+  gold="Guld" 
+  gold_basic="Guld basic" 
   silver="Silver"
 >}}
 

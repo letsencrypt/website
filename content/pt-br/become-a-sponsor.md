@@ -2,7 +2,7 @@
 title: Torne-se um Patrocinador
 slug: become-a-sponsor
 top_graphic: 4
-lastmod: 2019-01-28
+lastmod: 2019-08-29
 menu:
   main:
     weight: 40
@@ -17,10 +17,11 @@ Isso é importante, queremos que você seja parte disso. Nos ajude a liderar o c
 
 ## Patrocínio Corporativo
 
-{{< become-a-sponsor
-  platinum="Platinum"
-  gold="Gold"
-  gold_basic="Gold Basic"
+<!-- Note for translators: words in quotes need to be translated -->
+{{< become-a-sponsor 
+  platinum="Platinum" 
+  gold="Gold" 
+  gold_basic="Gold Basic" 
   silver="Silver"
 >}}
 

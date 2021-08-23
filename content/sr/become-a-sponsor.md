@@ -11,17 +11,17 @@ menu:
 
 ## Zašto da postanem sponzor?
 
-Došlo je vreme kada zaštićene komunikacije moraju biti regularna postavka na internetu. Let's Encrypt će se postarati da se to i dogodi. Naši sertifikati koriste se za enkripciju na desetini miliona web lokacija, što je doprinelo da se stopa rasta upotrebe HTTPS na internetu udvostruči od trenutka od kada smo krenuli u misiju u četvtom kvartalu 2015-te godine.
-
+Došlo je vreme kada zaštićene komunikacije moraju biti regularna postavka na internetu. Let's Encrypt će se postarati da se to i dogodi. Naši sertifikati koriste se za enkripciju na desetinama miliona web lokacija, što je doprinelo da se stopa rasta upotrebe HTTPS na internetu udvostruči od trenutka od kada smo krenuli u misiju u četvtom kvartalu 2015-te godine.
 
 Ovo je velika stvar i mi želimo da sa nama budete deo toga. Pomozite nam da skrojimo put ka sigurnoj budućnosti na internetu.
 
 ## Korporativna sponzorstva
 
-{{< become-a-sponsor
-  platinum="Platinum"
-  gold="Gold"
-  gold_basic="Gold Basic"
+<!-- Note for translators: words in quotes need to be translated -->
+{{< become-a-sponsor 
+  platinum="Platinum" 
+  gold="Gold" 
+  gold_basic="Gold Basic" 
   silver="Silver"
 >}}
 
