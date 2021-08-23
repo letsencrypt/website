@@ -18,8 +18,7 @@ Ini adalah hal yang besar, dan kami ingin Anda menjadi bagian dari hal tersebut.
 ## Sponsor Perusahaan
 
 <!-- Note for translators: words in quotes need to be translated -->
-{{< become-a-sponsor platinum="Platina" gold="Emas" gold_basic="Emas Dasar" silver="Perak"
-> }}
+{{< become-a-sponsor platinum="Platina" gold="Emas" gold_basic="Emas Dasar" silver="Perak" >}}
 
 Jika anda ingin menjadi sponsor perusahaan, mohon email ke [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
 
