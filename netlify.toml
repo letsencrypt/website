@@ -41,7 +41,6 @@ Content-Security-Policy = """
     font-src 'self';
     style-src 'unsafe-inline' 'self';
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
-        https://www.google-analytics.com
         https://www.googleadservices.com
         https://www.googletagmanager.com
         https://googleads.g.doubleclick.net
@@ -50,7 +49,6 @@ Content-Security-Policy = """
         https://sdks.shopifycdn.com
     ;
     img-src 'self' data: blob:
-        https://www.google-analytics.com
         https://www.paypal.com
         https://www.paypalobjects.com
         https://ak2s.abmr.net

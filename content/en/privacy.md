@@ -38,8 +38,6 @@ You have the option to provide your email address to receive the Let’s Encrypt
 
 If you register to use the Let’s Encrypt community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
 
-Additionally, we use Google Analytics to gauge traffic and popular pages on our web site. As part of that service, we place Google Analytics cookies on our site. These cookies do not contain personal information but can uniquely identify your browser software over time on our site. We respect the [Do Not Track](http://donottrack.us/) header by strictly limiting the information our analytics services can collect and share for all Visitors.
-
 ## We Do Not Sell Your Data or Information
 
 We do not sell your data or information. This includes Relying Party, Subscriber, and Visitor data and information.
