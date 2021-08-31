@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2021-03-07
+lastmod: 2021-08-31
 english_is_canonical: 1
 show_lastmod: 1
 ---
