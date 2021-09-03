@@ -1,5 +1,5 @@
 # https://gohugo.io/getting-started/configuration/#configure-server
-# headers must be the same than in netlify.toml
+# ATTENTION: headers must be the same as in netlify.toml
 [[headers]]
 for = "/*"
 [headers.values]
@@ -25,15 +25,13 @@ Permissions-Policy = """
 # "style-src unsafe-inline:" Cf https://github.com/letsencrypt/website/issues/950
 # "connect-src https://d4twhgtvn0ff5.cloudfront.net/" for stats graphs
 # "img-src data: blob:" is for Plotly download feature
+# Stripe, abmr.net (PayPal image assets), and Google domains (reCAPTCHA) are for Donorbox
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
     font-src 'self';
     style-src 'unsafe-inline' 'self';
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
-        https://www.googleadservices.com
-        https://www.googletagmanager.com
-        https://googleads.g.doubleclick.net
         https://donorbox.org
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
@@ -43,21 +41,20 @@ Content-Security-Policy = """
         https://www.paypalobjects.com
         https://ak2s.abmr.net
         https://ak1s.abmr.net
-        https://www.google.com
+        https://www.google.com/recaptcha/
+        https://www.gstatic.com/recaptcha/
         https://cdn.shopify.com
         https://v.shopify.com
     ;
     frame-src
         https://donorbox.org
-        https://www.youtube.com
-        https://www.youtube-nocookie.com
-        https://bid.g.doubleclick.net
         https://js.stripe.com/v3/
         https://js.stripe.com/v2/
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/
         https://letsencrypt-merch.myshopify.com
+        https://monorail-edge.shopifysvc.com
     ;
 """
 
