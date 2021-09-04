@@ -25,13 +25,15 @@ const menu = document.getElementById(MENU_ID);
 const WINDOW_CHANGE_EVENT = ("onorientationchange" in window) ? "orientationchange" : "resize";
 
 function toggleMenu() {
-  [].forEach.call(
-    document.getElementById(MENU_ID).querySelectorAll(".custom-can-transform"),
-      function(el) {
-        el.classList.toggle("pure-menu-horizontal");
-      }
-  );
-  menu.classList.toggle(MENU_OPEN_CLASS);
+  if (menu) {
+    [].forEach.call(
+      document.getElementById(MENU_ID).querySelectorAll(".custom-can-transform"),
+        function(el) {
+          el.classList.toggle("pure-menu-horizontal");
+        }
+    );
+    menu.classList.toggle(MENU_OPEN_CLASS);
+  }
 }
 
 function openNavMenu(el) {
@@ -47,16 +49,20 @@ function closeNavMenu(el) {
 }
 
 function closeAllNavMenus() {
-  [].forEach.call(
-    menu.querySelectorAll(NAV_MENU_ACTIVE_SELECTOR), function(el) {
-      closeNavMenu(el);
-    }
-  );
+  if (menu) {
+    [].forEach.call(
+      menu.querySelectorAll(NAV_MENU_ACTIVE_SELECTOR), function(el) {
+        closeNavMenu(el);
+      }
+    );
+  }
 }
 
 function closeHamburgerMenu() {
-  if (menu.classList.contains(MENU_OPEN_CLASS)) {
-    toggleMenu();
+  if (menu) {
+    if (menu.classList.contains(MENU_OPEN_CLASS)) {
+      toggleMenu();
+    }
   }
 }
 
@@ -68,40 +74,47 @@ function onMenuItemClick(e) {
   }
 }
 
-document.getElementById("menuIcon").addEventListener("click", function (e) {
-  // Don't propagate to the document-level click listener, since that closes the menu
-  e.stopPropagation();
-  toggleMenu();
-});
+var icon = document.getElementById("menuIcon");
+if (icon) {
+  icon.addEventListener("click", function (e) {
+    // Don't propagate to the document-level click listener, since that closes the menu
+    e.stopPropagation();
+    toggleMenu();
+  });
+}
 
-[].forEach.call(
-  document.getElementById(MENU_ID).querySelectorAll(NAV_MENU_PARENT_SELECTOR), function(el) {
-    el.addEventListener("click", onMenuItemClick);
-  }
-);
+if (menu) {
+  [].forEach.call(
+    document.getElementById(MENU_ID).querySelectorAll(NAV_MENU_PARENT_SELECTOR), function(el) {
+      el.addEventListener("click", onMenuItemClick);
+    }
+  );
+}
 
 window.addEventListener(WINDOW_CHANGE_EVENT, function() {
-	closeAllNavMenus();
-	closeHamburgerMenu();
+  closeAllNavMenus();
+  closeHamburgerMenu();
 });
 
 // Initialize nav menu aria roles/state
-menu.querySelector(".pure-menu-list").setAttribute("role", "menubar");
-[].forEach.call(
-  menu.querySelectorAll(NAV_LINK_SELECTOR), function(el) {
-    el.setAttribute("role", "menuitem");
-    el.parentNode.setAttribute("role", "none");
+if (menu) {
+  menu.querySelector(".pure-menu-list").setAttribute("role", "menubar");
+  [].forEach.call(
+    menu.querySelectorAll(NAV_LINK_SELECTOR), function(el) {
+      el.setAttribute("role", "menuitem");
+      el.parentNode.setAttribute("role", "none");
 
-    if (el.parentNode.classList.contains(NAV_MENU_PARENT_CLASS)) {
-      el.setAttribute("aria-haspopup", true);
-      el.setAttribute("aria-expanded", false);
+      if (el.parentNode.classList.contains(NAV_MENU_PARENT_CLASS)) {
+        el.setAttribute("aria-haspopup", true);
+        el.setAttribute("aria-expanded", false);
 
-      var childMenu = el.parentNode.querySelector(NAV_MENU_CHILD_SELECTOR);
-      childMenu.setAttribute("role", "menu");
-      childMenu.setAttribute("aria-label", el.text);
+        var childMenu = el.parentNode.querySelector(NAV_MENU_CHILD_SELECTOR);
+        childMenu.setAttribute("role", "menu");
+        childMenu.setAttribute("aria-label", el.text);
+      }
     }
-  }
-);
+  );
+}
 
 document.addEventListener("click", function(e) {
   if (!e.target.closest(MENU_SELECTOR)) {
@@ -118,10 +131,10 @@ document.addEventListener("keyup", function(e) {
 });
 
 var page = document.querySelector(".page-content");
-if ( page ) {
+if (page) {
   var selector = "h1,h2,h3"; // same selector as css for anchors
   page.querySelectorAll(selector).forEach(function(el){
-    if ( el.id ) {
+    if (el.id) {
       var icon = document.createElement("a");
       icon.className = "autoanchor fas fa-link";
       icon.href = "#"+el.id;
