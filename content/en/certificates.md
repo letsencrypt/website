@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-08-17
+lastmod: 2021-09-03
 show_lastmod: 1
 ---
 
@@ -15,12 +15,12 @@ show_lastmod: 1
 Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.
 For additional compatibility as we submit our new Root X2 to various root programs, we have also cross-signed it from Root X1.
 
-status | name | key | O | CN | signer | der | pem | txt
---- | --- | --- | --- | --- | --- | --- | --- | ---
-Active | ISRG Root X1 | RSA 4096 | Internet Security Research Group | ISRG Root X1 | [self](https://crt.sh/?id=9314791) | [der](/certs/isrgrootx1.der) | [pem](/certs/isrgrootx1.pem) | [txt](/certs/isrgrootx1.txt)
-Active | ISRG Root X1 | RSA 4096 | Internet Security Research Group | ISRG Root X1 | [DST Root CA X3](https://crt.sh/?id=3958242236) | [der](/certs/isrg-root-x1-cross-signed.der) | [pem](/certs/isrg-root-x1-cross-signed.pem) | [txt](/certs/isrg-root-x1-cross-signed.txt)
-Active (limited availability) | ISRG Root X2 | ECDSA P-384 | Internet Security Research Group | ISRG Root X2 | [self](https://crt.sh/?id=3335562555) | [der](/certs/isrg-root-x2.der) | [pem](/certs/isrg-root-x2.pem) | [txt](/certs/isrg-root-x2.txt)
-Active (limited availability) | ISRG Root X2 | ECDSA P-384 | Internet Security Research Group | ISRG Root X2 | [ISRG Root X1](https://crt.sh/?id=3334561878) | [der](/certs/isrg-root-x2-cross-signed.der) | [pem](/certs/isrg-root-x2-cross-signed.pem) | [txt](/certs/isrg-root-x2-cross-signed.txt)
+status | name | key | O | CN | signer | crt.sh | der | pem | txt
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Active | ISRG Root X1 | RSA 4096 | Internet Security Research Group | ISRG Root X1 | self | [crt.sh](https://crt.sh/?id=9314791) | [der](/certs/isrgrootx1.der) | [pem](/certs/isrgrootx1.pem) | [txt](/certs/isrgrootx1.txt)
+Active | ISRG Root X1 | RSA 4096 | Internet Security Research Group | ISRG Root X1 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=3958242236) | [der](/certs/isrg-root-x1-cross-signed.der) | [pem](/certs/isrg-root-x1-cross-signed.pem) | [txt](/certs/isrg-root-x1-cross-signed.txt)
+Active (limited availability) | ISRG Root X2 | ECDSA P-384 | Internet Security Research Group | ISRG Root X2 | self | [crt.sh](https://crt.sh/?id=3335562555) | [der](/certs/isrg-root-x2.der) | [pem](/certs/isrg-root-x2.pem) | [txt](/certs/isrg-root-x2.txt)
+Active (limited availability) | ISRG Root X2 | ECDSA P-384 | Internet Security Research Group | ISRG Root X2 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=3334561878) | [der](/certs/isrg-root-x2-cross-signed.der) | [pem](/certs/isrg-root-x2-cross-signed.pem) | [txt](/certs/isrg-root-x2-cross-signed.txt)
 
 We've set up websites to test certificates chaining to our active roots.
 
@@ -43,22 +43,22 @@ We do not use the X1, X2, X3, and X4 intermediates anymore.
 
 IdenTrust has cross-signed our RSA intermediates for additional compatibility.
 
-status | name | key | O | CN | signer | der | pem | txt
---- | --- | --- | --- | --- | --- | --- | --- | ---
-Active | Let's Encrypt R3 | RSA 2048 | Let's Encrypt | R3 | [ISRG Root X1](https://crt.sh/?id=3334561879) | [der](/certs/lets-encrypt-r3.der) | [pem](/certs/lets-encrypt-r3.pem) | [txt](/certs/lets-encrypt-r3.txt)
-Active (limited availability) | Let's Encrypt E1 | ECDSA P-384 | Let's Encrypt | E1 | [ISRG Root X2](https://crt.sh/?id=3334671964) | [der](/certs/lets-encrypt-e1.der) | [pem](/certs/lets-encrypt-e1.pem) | [txt](/certs/lets-encrypt-e1.txt)
-Backup | Let's Encrypt R4 | RSA 2048 | Let's Encrypt | R4 | [ISRG Root X1](https://crt.sh/?id=3334561877) | [der](/certs/lets-encrypt-r4.der) | [pem](/certs/lets-encrypt-r4.pem) | [txt](/certs/lets-encrypt-r4.txt)
-Backup | Let's Encrypt E2 | ECDSA P-384 | Let's Encrypt | E2 | [ISRG Root X2](https://crt.sh/?id=3334671963) | [der](/certs/lets-encrypt-e2.der) | [pem](/certs/lets-encrypt-e2.pem) | [txt](/certs/lets-encrypt-e2.txt)
-Retired | Let's Encrypt R3 | RSA 2048 | Let's Encrypt | R3 | [DST Root CA X3](https://crt.sh/?id=3479778542) | [der](/certs/lets-encrypt-r3-cross-signed.der) | [pem](/certs/lets-encrypt-r3-cross-signed.pem) | [txt](/certs/lets-encrypt-r3-cross-signed.txt)
-Retired | Let's Encrypt R4 | RSA 2048 | Let's Encrypt | R4 | [DST Root CA X3](https://crt.sh/?id=3479778543) | [der](/certs/lets-encrypt-r4-cross-signed.der) | [pem](/certs/lets-encrypt-r4-cross-signed.pem) | [txt](/certs/lets-encrypt-r4-cross-signed.txt)
-Retired | Let's Encrypt Authority X1 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X1 | [ISRG Root X1](https://crt.sh/?id=9314792) | [der](/certs/letsencryptauthorityx1.der) | [pem](/certs/letsencryptauthorityx1.pem) | [txt](/certs/letsencryptauthorityx1.txt)
-Retired | Let's Encrypt Authority X1 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X1 | [DST Root CA X3](https://crt.sh/?id=10235198) | [der](/certs/lets-encrypt-x1-cross-signed.der) | [pem](/certs/lets-encrypt-x1-cross-signed.pem) | [txt](/certs/lets-encrypt-x1-cross-signed.txt)
-Retired | Let's Encrypt Authority X2 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X2 | [ISRG Root X1](https://crt.sh/?id=12721505) | [der](/certs/letsencryptauthorityx2.der) | [pem](/certs/letsencryptauthorityx2.pem) | [txt](/certs/letsencryptauthorityx2.txt)
-Retired | Let's Encrypt Authority X2 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X2 | [DST Root CA X3](https://crt.sh/?id=10970235) | [der](/certs/lets-encrypt-x2-cross-signed.der) | [pem](/certs/lets-encrypt-x2-cross-signed.pem) | [txt](/certs/lets-encrypt-x2-cross-signed.txt)
-Retired | Let's Encrypt Authority X3 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X3 | [ISRG Root X1](https://crt.sh/?id=47997543) | [der](/certs/letsencryptauthorityx3.der) | [pem](/certs/letsencryptauthorityx3.pem) | [txt](/certs/letsencryptauthorityx3.txt)
-Retired | Let's Encrypt Authority X3 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X3 | [DST Root CA X3](https://crt.sh/?id=15706126) | [der](/certs/lets-encrypt-x3-cross-signed.der) | [pem](/certs/lets-encrypt-x3-cross-signed.pem) | [txt](/certs/lets-encrypt-x3-cross-signed.txt)
-Retired | Let's Encrypt Authority X4 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X4 | [ISRG Root X1](https://crt.sh/?id=47997546) | [der](/certs/letsencryptauthorityx4.der) | [pem](/certs/letsencryptauthorityx4.pem) | [txt](/certs/letsencryptauthorityx4.txt)
-Retired | Let's Encrypt Authority X4 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X4 | [DST Root CA X3](https://crt.sh/?id=15710291) | [der](/certs/lets-encrypt-x4-cross-signed.der) | [pem](/certs/lets-encrypt-x4-cross-signed.pem) | [txt](/certs/lets-encrypt-x4-cross-signed.txt)
+status | name | key | O | CN | signer | crt.sh | der | pem | txt
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Active | Let's Encrypt R3 | RSA 2048 | Let's Encrypt | R3 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=3334561879) | [der](/certs/lets-encrypt-r3.der) | [pem](/certs/lets-encrypt-r3.pem) | [txt](/certs/lets-encrypt-r3.txt)
+Active (limited availability) | Let's Encrypt E1 | ECDSA P-384 | Let's Encrypt | E1 | ISRG Root X2 | [crt.sh](https://crt.sh/?id=3334671964) | [der](/certs/lets-encrypt-e1.der) | [pem](/certs/lets-encrypt-e1.pem) | [txt](/certs/lets-encrypt-e1.txt)
+Backup | Let's Encrypt R4 | RSA 2048 | Let's Encrypt | R4 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=3334561877) | [der](/certs/lets-encrypt-r4.der) | [pem](/certs/lets-encrypt-r4.pem) | [txt](/certs/lets-encrypt-r4.txt)
+Backup | Let's Encrypt E2 | ECDSA P-384 | Let's Encrypt | E2 | ISRG Root X2 | [crt.sh](https://crt.sh/?id=3334671963) | [der](/certs/lets-encrypt-e2.der) | [pem](/certs/lets-encrypt-e2.pem) | [txt](/certs/lets-encrypt-e2.txt)
+Retired | Let's Encrypt R3 | RSA 2048 | Let's Encrypt | R3 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=3479778542) | [der](/certs/lets-encrypt-r3-cross-signed.der) | [pem](/certs/lets-encrypt-r3-cross-signed.pem) | [txt](/certs/lets-encrypt-r3-cross-signed.txt)
+Retired | Let's Encrypt R4 | RSA 2048 | Let's Encrypt | R4 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=3479778543) | [der](/certs/lets-encrypt-r4-cross-signed.der) | [pem](/certs/lets-encrypt-r4-cross-signed.pem) | [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+Retired | Let's Encrypt Authority X1 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X1 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=9314792) | [der](/certs/letsencryptauthorityx1.der) | [pem](/certs/letsencryptauthorityx1.pem) | [txt](/certs/letsencryptauthorityx1.txt)
+Retired | Let's Encrypt Authority X1 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X1 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=10235198) | [der](/certs/lets-encrypt-x1-cross-signed.der) | [pem](/certs/lets-encrypt-x1-cross-signed.pem) | [txt](/certs/lets-encrypt-x1-cross-signed.txt)
+Retired | Let's Encrypt Authority X2 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X2 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=12721505) | [der](/certs/letsencryptauthorityx2.der) | [pem](/certs/letsencryptauthorityx2.pem) | [txt](/certs/letsencryptauthorityx2.txt)
+Retired | Let's Encrypt Authority X2 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X2 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=10970235) | [der](/certs/lets-encrypt-x2-cross-signed.der) | [pem](/certs/lets-encrypt-x2-cross-signed.pem) | [txt](/certs/lets-encrypt-x2-cross-signed.txt)
+Retired | Let's Encrypt Authority X3 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X3 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=47997543) | [der](/certs/letsencryptauthorityx3.der) | [pem](/certs/letsencryptauthorityx3.pem) | [txt](/certs/letsencryptauthorityx3.txt)
+Retired | Let's Encrypt Authority X3 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X3 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=15706126) | [der](/certs/lets-encrypt-x3-cross-signed.der) | [pem](/certs/lets-encrypt-x3-cross-signed.pem) | [txt](/certs/lets-encrypt-x3-cross-signed.txt)
+Retired | Let's Encrypt Authority X4 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X4 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=47997546) | [der](/certs/letsencryptauthorityx4.der) | [pem](/certs/letsencryptauthorityx4.pem) | [txt](/certs/letsencryptauthorityx4.txt)
+Retired | Let's Encrypt Authority X4 | RSA 2048 | Let's Encrypt | Let's Encrypt Authority X4 | DST Root CA X3 | [crt.sh](https://crt.sh/?id=15710291) | [der](/certs/lets-encrypt-x4-cross-signed.der) | [pem](/certs/lets-encrypt-x4-cross-signed.pem) | [txt](/certs/lets-encrypt-x4-cross-signed.txt)
 
 # Cross Signing
 
@@ -109,9 +109,9 @@ sign those responses. A copy of this certificate is included automatically in
 those OCSP responses, so Subscribers don't need to do anything with it. It is
 included here for informational purposes only.
 
-status | name | key | O | CN | signer | der | pem | txt
---- | --- | --- | --- | --- | --- | --- | --- | ---
-Retired | ISRG Root OCSP X1 | RSA 2048 | Internet Security Research Group | ISRG Root OCSP X1 | [ISRG Root X1](https://crt.sh/?id=2929281974) | [der](/certs/isrg-root-ocsp-x1.der) | [pem](/certs/isrg-root-ocsp-x1.pem) | [txt](/certs/isrg-root-ocsp-x1.txt)
+status | name | key | O | CN | signer | crt.sh | der | pem | txt
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Retired | ISRG Root OCSP X1 | RSA 2048 | Internet Security Research Group | ISRG Root OCSP X1 | ISRG Root X1 | [crt.sh](https://crt.sh/?id=2929281974) | [der](/certs/isrg-root-ocsp-x1.der) | [pem](/certs/isrg-root-ocsp-x1.pem) | [txt](/certs/isrg-root-ocsp-x1.txt)
 
 Our newer intermediates do not have OCSP URLs (their revocation information is 
 instead served via CRL), so we have not issued an OCSP Signing Cert from ISRG Root X2.
