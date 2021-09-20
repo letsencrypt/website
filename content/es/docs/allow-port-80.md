@@ -4,9 +4,9 @@ slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Ocasionalmente recibimos informes de personas que tienen problemas para usar el
 Tipo de desafío HTTP-01 porque tenian bloqueado el puerto 80 a su servidor web. 

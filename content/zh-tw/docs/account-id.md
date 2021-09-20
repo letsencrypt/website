@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 當你向 Let's Encrypt 回報問題時，如果你提供 Let's Encrypt 帳號 ID，這會對我們非常有幫助。在大多數的情況下，ACME 客戶端會在與 Let's Encrypt 伺服器溝通的過程中，自動建立帳號。如果你在多個伺服器上運行 ACME 客戶端，你可能會有多個帳號。
 

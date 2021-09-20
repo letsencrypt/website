@@ -1,0 +1,76 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            07:9e:49:28:86:37:6f:d4:08:48:c2:3f:c6:31:e4:63
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = Internet Security Research Group, CN = ISRG Root X1
+        Validity
+            Not Before: Sep  4 00:00:00 2020 GMT
+            Not After : Sep 15 16:00:00 2025 GMT
+        Subject: C = US, O = Internet Security Research Group, CN = ISRG Root X2
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:cd:9b:d5:9f:80:83:0a:ec:09:4a:f3:16:4a:3e:
+                    5c:cf:77:ac:de:67:05:0d:1d:07:b6:dc:16:fb:5a:
+                    8b:14:db:e2:71:60:c4:ba:45:95:11:89:8e:ea:06:
+                    df:f7:2a:16:1c:a4:b9:c5:c5:32:e0:03:e0:1e:82:
+                    18:38:8b:d7:45:d8:0a:6a:6e:e6:00:77:fb:02:51:
+                    7d:22:d8:0a:6e:9a:5b:77:df:f0:fa:41:ec:39:dc:
+                    75:ca:68:07:0c:1f:ea
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                7C:42:96:AE:DE:4B:48:3B:FA:92:F8:9E:8C:CF:6D:8B:A9:72:37:95
+            X509v3 Authority Key Identifier: 
+                keyid:79:B4:59:E6:7B:B6:E5:E4:01:73:80:08:88:C8:1A:58:F6:E9:9B:6E
+
+            Authority Information Access: 
+                CA Issuers - URI:http://x1.i.lencr.org/
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://x1.c.lencr.org/
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+
+    Signature Algorithm: sha256WithRSAEncryption
+         1b:7f:25:2b:90:7a:08:76:00:77:18:e1:c3:2e:8a:36:4c:41:
+         7e:bf:17:4b:e3:30:d7:5b:0c:7e:9c:96:98:6f:7b:b0:68:c0:
+         24:44:cc:e2:f2:fc:d1:ea:db:d2:9f:01:f9:17:4d:0c:9d:55:
+         fd:a5:ad:6d:d2:2f:3f:4b:72:c0:2e:ae:73:c7:25:16:57:c2:
+         3e:15:ad:e0:31:d1:0a:84:84:6c:62:78:42:31:22:46:1a:ed:
+         7a:40:bf:97:16:81:44:77:ca:6c:7b:5d:21:5c:07:f2:11:91:
+         21:bf:e1:2f:c2:ef:6e:fd:05:20:e4:b4:f7:79:f3:2d:bb:37:
+         2a:f0:c6:b1:ac:ac:51:f5:1f:b3:5a:1e:66:ce:58:07:18:38:
+         7f:71:a9:3c:83:ba:d7:bc:82:9e:9a:76:0f:9e:b0:29:fd:cb:
+         f3:89:07:48:1b:fe:ab:93:2e:14:21:0d:5f:af:8e:b7:54:ab:
+         5d:0e:d4:5b:4c:71:d0:92:ea:3d:a3:36:9b:7c:1f:e0:3b:55:
+         b9:d8:53:53:cc:83:66:bb:4a:dc:81:06:00:18:8b:f4:b3:d7:
+         48:b1:13:41:b9:c4:b6:9e:cf:2c:77:8e:42:20:0b:80:7e:9f:
+         c5:ab:48:db:bc:6f:04:8d:6c:46:29:02:0d:70:8a:1d:f1:12:
+         73:b6:46:24:42:9e:2a:17:18:e3:ac:c7:98:c2:72:cc:6d:2d:
+         76:6d:dd:2c:2b:26:96:a5:cf:21:08:1b:e5:da:2f:cb:ef:9f:
+         73:93:ae:f8:36:5f:47:8f:97:28:ce:ab:e2:98:26:98:8b:fd:
+         ee:28:32:22:29:ed:4c:95:09:c4:20:fa:07:e1:86:2c:44:f6:
+         81:47:c0:e4:62:32:ed:1d:d8:3c:48:88:96:c3:5e:91:b6:af:
+         7b:59:a4:ee:e3:86:9c:c7:88:58:ca:28:2a:66:55:9b:85:80:
+         b9:1d:d8:40:2b:c9:1c:13:3c:a9:eb:de:99:c2:16:40:f6:f5:
+         a4:ae:2a:25:6c:52:ba:c7:04:4c:b4:32:bb:fc:38:5c:a0:0c:
+         61:7b:57:ec:77:4e:50:cf:af:06:a2:0f:37:8c:e1:0e:d2:d3:
+         2f:1a:bd:9c:71:3e:cc:e1:f8:d1:a8:a3:bd:04:f6:19:c0:f9:
+         86:af:f5:0e:1a:aa:95:6b:ef:ca:47:71:4b:63:1c:4d:96:db:
+         55:23:0a:9d:0f:81:75:a0:e6:40:f5:64:46:03:6e:ce:fa:6a:
+         7d:06:ec:a4:34:06:74:da:53:d8:b9:b8:c6:23:7d:a9:f8:2a:
+         2d:a4:82:a6:2e:2d:11:ca:e6:cd:31:58:79:85:e6:72:1c:a7:
+         9f:d3:4c:d0:66:d0:a7:bb

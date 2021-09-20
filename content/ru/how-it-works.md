@@ -4,9 +4,9 @@ linkTitle: Как работает Let's Encrypt
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's&nbsp;Encrypt и [протокол ACME](https://tools.ietf.org/html/rfc8555) решают проблему автоматической настройки HTTPS на сервере, когда SSL / TLS сертификаты выдаются и обновляются без участия человека. Таким решением стал специальный сервис - агент по управлению сертификатами - работающий на web-сервере.
 

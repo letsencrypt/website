@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2016-12-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt стремится обеспечить совместимость с максимально возможным количеством приложений не в ущерб безопасности. Основным фактором, определяющим, может ли платформа использовать сертификаты Let's Encrypt, является наличие сертификата IdenTrust's DST Root X3 в ее доверенном хранилище. Второй фактор -- поддержка платформой современных  сертификатов [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1), так как все сертификаты Let's Encrypt используют SHA-2.
 

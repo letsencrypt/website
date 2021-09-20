@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 CAA est un type d'enregistrement DNS qui permet aux propriétaires de sites de spécifier quelles autorités de certification (AC) sont autorisées à émettre des certificats contenant leurs noms de domaines. Il a été normalisé en 2013 par la [RFC 6844](https://tools.ietf.org/html/rfc6844) pour
 permettre à une autorité de certification "de réduire le risque de délivrance involontaire de certificat". Par défaut, chaque autorité de certification publique est autorisée à émettre des certificats pour tout nom de domaine du DNS public, à condition qu'ils valident le contrôle de ce nom de domaine. 
@@ -29,7 +29,7 @@ contraignants. Un sous-domaine peut donc assouplir une restriction mise en place
 
 La validation CAA suit les CNAME, comme toutes les autres requêtes DNS. Si `www.community.example.com` est un CNAME pointant vers ` web1.example.net`, l'autorité de certification va d'abord demander les enregistrements CAA pour `www.community.example.com`, puis voir qu'il y a un CNAME pour ce nom de domaine au lieu des enregistrements CAA, il demandera des enregistrements CAA pour `web1.example.net` à la place. Notez que si un nom de domaine a un enregistrement CNAME, il n'est pas autorisé à avoir d'autres enregistrements selon les normes DNS.
 
-La [RFC CAA](https://tools.ietf.org/html/rfc6844) spécifie un comportement supplémentaire nomé "tree-climbing" qui oblige les autorités de certification à vérifier également le domaine parent du résultat de la résolution CNAME. Ce comportement supplémentaire a été supprimé, plus tard, par [un erratum](https://www.rfc-editor.org/errata/eid5065), en conséquence Let's et les autres autorités de certification ne l'implémentent pas.
+La [RFC CAA](https://tools.ietf.org/html/rfc6844) spécifie un comportement supplémentaire nommé "tree-climbing" qui oblige les autorités de certification à vérifier également le domaine parent du résultat de la résolution CNAME. Ce comportement supplémentaire a été supprimé, plus tard, par [un erratum](https://www.rfc-editor.org/errata/eid5065), en conséquence Let's et les autres autorités de certification ne l'implémentent pas.
 
 # Erreurs de CAA
 

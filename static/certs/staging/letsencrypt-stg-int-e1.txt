@@ -1,0 +1,55 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            b4:58:e3:df:76:15:5c:59:24:a3:89:dd:ba:5f:7d:62
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Validity
+            Not Before: Sep  4 00:00:00 2020 GMT
+            Not After : Sep 15 16:00:00 2025 GMT
+        Subject: C = US, O = (STAGING) Let's Encrypt, CN = (STAGING) Ersatz Edamame E1
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:fd:bf:f3:c9:52:d1:ce:4e:4d:bc:9d:70:97:ae:
+                    93:fa:eb:9b:c8:e1:9d:3d:e2:1f:28:ed:1f:b9:13:
+                    ac:8d:6a:36:5a:d1:4b:9b:aa:3a:59:16:81:aa:bb:
+                    bf:39:fe:f1:97:8f:a9:9d:7c:8c:dc:f5:ba:08:4c:
+                    6b:ac:64:24:96:78:c8:f9:c9:23:19:19:99:12:f9:
+                    54:af:7f:c5:50:aa:3f:b7:61:d1:2e:e0:f2:d9:12:
+                    30:40:8a:f4:45:a4:47
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                EB:F9:25:C2:80:28:66:E2:6D:08:92:32:F3:C2:E1:AD:C3:FF:35:45
+            X509v3 Authority Key Identifier: 
+                keyid:DE:D1:A3:59:64:0E:C1:9A:36:A3:46:EE:B0:10:76:EF:AE:97:95:66
+
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x2.i.lencr.org/
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://stg-x2.c.lencr.org/
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+
+    Signature Algorithm: ecdsa-with-SHA384
+         30:65:02:30:5d:c6:5b:76:0c:5c:18:7f:6b:4c:4a:df:49:39:
+         17:7c:12:8a:ca:05:34:c8:ee:ce:a5:bb:8d:79:8d:62:77:41:
+         59:fe:14:58:37:97:dd:2c:e1:ae:73:e6:87:7c:2b:0c:02:31:
+         00:d0:ff:f1:c0:aa:fa:35:0f:4c:37:bb:eb:7c:60:33:3b:7f:
+         7b:3c:0a:5d:a9:f3:3b:55:d1:4a:d7:c6:84:bb:5c:66:dc:73:
+         05:2b:32:11:f1:e1:0f:b0:cc:78:b2:63:25

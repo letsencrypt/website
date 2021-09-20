@@ -3,9 +3,9 @@ title: ACME プロトコルのアップデート
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 [IETF が標準化した](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME プロトコル ([RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)) は、Let's Encrypt の動作の基礎となっています。
 

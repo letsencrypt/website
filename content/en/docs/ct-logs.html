@@ -3,19 +3,19 @@ title: Certificate Transparency (CT) Logs
 slug: ct-logs
 top_graphic: 4
 lastmod: 2020-02-25
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> is a system for logging and monitoring the issuance of TLS certificates. CT greatly enhances everyone's ability to monitor and study certificate issuance, and these capabilities have led to numerous improvements to the CA ecosystem and Web security. As a result, CT is rapidly becoming critical infrastructure.</p>
 
-<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate two annually sharded CT logs named <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> and Testflume. All publicly trusted certificate authorities are welcome to submit to our logs. Many certificate authority root certificates have already been included in our CT logs. <a href="{{< relref "/contact" >}}">Contact us via email</a> about adding new root certificates to our logs if yours has not been included.</p>
+<p>Let's Encrypt submits all certificates we issue to CT logs. We also operate two annually sharded CT logs named <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> and Testflume. All publicly trusted certificate authorities are welcome to submit to our logs. Many certificate authority root certificates have already been included in our CT logs. <a href="/contact">Contact us via email</a> about adding new root certificates to our logs if yours has not been included.</p>
 
 <p>Sign up for notifications in the <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">CT announcements category</a> of our community forum to see major announcements about our CT logs.</p>
 
 <h2>Funding</h2>
 
-<p>We'd like to thank the following partners for generously sponsoring the Let's Encrypt CT log. If your organization would like to help us continue this work, please consider <a href="{{< relref "/become-a-sponsor" >}}">sponsoring or donating</a>.</p>
+<p>We'd like to thank the following partners for generously sponsoring the Let's Encrypt CT log. If your organization would like to help us continue this work, please consider <a href="/become-a-sponsor">sponsoring or donating</a>.</p>
 
 <p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
 
@@ -36,7 +36,7 @@ lastmod: 2020-02-25
 
 {{< ct_logs data="testing" >}}
     <li>SCTs from these logs <b>SHOULD NOT</b> be incorporated into publicly trusted certificates.</li>
-    <li>The Let's Encrypt production and <a href="{{< relref "/docs/staging-environment" >}}">staging</a> ACME API environments both submit certificates to Testflume, but the production environment does not use the resulting SCTs.</li>
+    <li>The Let's Encrypt production and <a href="/docs/staging-environment">staging</a> ACME API environments both submit certificates to Testflume, but the production environment does not use the resulting SCTs.</li>
     <li>We test new versions of <a href="http://github.com/google/trillian">Trillian</a> and <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> here before deploying them to production.</li>
     <li>Testflume's accepted roots list includes all of the Oak accepted roots, plus additional test roots.</li>
     <li>Testflume can be used by other certificate authorities for testing purposes.</li>

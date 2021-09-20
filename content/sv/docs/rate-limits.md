@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2020-02-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt har taktbegränsningar för att säkerställa rättvis användning av
 så många personer som möjligt. Vi tror att dessa gränser är tillräckligt höga

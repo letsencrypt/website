@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2021-09-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -131,7 +131,15 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
-		}
+		},
+		{
+			"name": "SWAG - Secure Web Application Gateway",
+			"url": "https://github.com/linuxserver/docker-swag"
+		},
+		{
+			"name": "Gitlab",
+			"url": "https://about.gitlab.com"
+        }
 	],
 	"list": [
 		{
@@ -209,7 +217,12 @@
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -336,12 +349,6 @@
 			"category": "Node.js"
 		},
 		{
-			"name": "ocelotconsulting/node-acme-lambda",
-			"url": "https://github.com/ocelotconsulting/node-acme-lambda",
-			"acme_v2": "true",
-			"category": "Node.js"
-		},
-		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
 			"acme_v2": "true",
@@ -375,6 +382,7 @@
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "PHP"
 		},
 		{
@@ -630,11 +638,13 @@
 		{
 			"name": "kelunik/acme",
 			"url": "https://github.com/kelunik/acme",
+			"acme_v2": "true",
 			"library": "PHP"
 		},
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "Windows / IIS",
 			"comments": "(PHP)"
 		},
@@ -702,7 +712,7 @@
 		},
 		{
 			"name": "Ansible acme_certificate module",
-			"url": "https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html",
+			"url": "https://docs.ansible.com/ansible/latest/collections/community/crypto/acme_certificate_module.html",
 			"acme_v2": "ansible >= 2.6",
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
@@ -893,6 +903,102 @@
 			"category": "Windows / IIS",
 			"comments": "(GUI, CLI)",
 			"acme_v2": "true"
+		},
+		{
+			"name": "serverPKI",
+			"url": "https://github.com/mc3/serverPKI",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
+		},
+		{
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
+		},
+		{
+			"name": "CycloneACME",
+			"url": "https://oryx-embedded.com/products/CycloneACME",
+			"category": "C",
+			"acme_v2": "true",
+			"comments": "(client implementation of ACME dedicated to microcontrollers)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "acme-redirect",
+			"url": "https://github.com/kpcyrd/acme-redirect",
+			"acme_v2": "true",
+			"category": "Rust"
+		},
+		{
+			"name": "acme-http-01-azure-key-vault-middleware",
+			"url": "https://github.com/compulim/acme-http-01-azure-key-vault-middleware",
+			"acme_v2": "true",
+			"category": "Node.js",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)"
+		},
+		{
+			"name": "Terraform ACME Provider",
+			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
+			"acme_v2": "terraform-provider-acme >= 1.0.0",
+			"challenges": {
+				"HTTP-01": "terraform-provider-acme >= 2.4.0",
+				"DNS-01": "terraform-provider-acme >= 1.0.0",
+				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
+			},
+			"category": "Configuration management tools"
+		},
+		{
+			"name": "wdfcert.sh",
+			"url": "https://github.com/WolfWings/wdfcert.sh",
+			"acme_v2": "true",
+			"category": "Bash",
+			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus roor domain support for single-TXT-record DNS providers)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false",
+				"TLS-ALPN-01": "false"
+			}
+		},
+		{
+			"name": "HCL Domino",
+			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
+			"category": "Domino",
+			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
 		}
 	]
 }

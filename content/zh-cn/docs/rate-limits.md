@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2020-02-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合理使用我们的服务。我们相信这些速率限制在大多数情况下足以满足用户的需求。同时续期证书几乎不受速率限制的影响，所以大型组织可以逐步增加他们可以发布的证书数量，而无需Let's Encrypt的干预。
 

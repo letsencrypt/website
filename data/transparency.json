@@ -1,5 +1,5 @@
 {
-    "lastmod": "2020-02-05",
+    "lastmod": "2021-02-23",
     "categories": [
         "production",
         "testing"
@@ -18,7 +18,7 @@
         {
             "log": "oak",
             "shard": "2020",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==",
             "logID": "E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E",

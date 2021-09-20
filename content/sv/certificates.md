@@ -4,9 +4,9 @@ linkTitle: Förtroendekedja (rot- och mellancertifikat)
 slug: certificates
 top_graphic: 5
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # Rotcertifikat
 

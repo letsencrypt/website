@@ -9,9 +9,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 常見問題分為以下兩個部分:
 
