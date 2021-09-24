@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-08-10
+lastmod: 2021-09-24
 show_lastmod: 1
 ---
 
@@ -99,7 +99,7 @@ end-entity certificate, but also a list of intermediates to help browsers verify
 that the end-entity certificate has a trust chain leading to a trusted root
 certificate. Almost all server operators will choose to serve a chain including
 the intermediate certificate with Subject "R3" and
-Issuer "DST Root CA X3." The recommended Let's Encrypt client software,
+Issuer "ISRG Root X1". The recommended Let's Encrypt client software,
 [Certbot](https://certbot.org), will make this configuration seamlessly.
 
 ## Roots
