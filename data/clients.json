@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-06-21",
+	"lastmod": "2021-09-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -895,6 +895,13 @@
 			"name": "RW ACME client",
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "TekCERT",
+			"url": "https://www.kaplansoft.com/tekcert/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI)",
 			"acme_v2": "true"
 		},
 		{
