@@ -3,7 +3,7 @@ title: יצירת קשר
 slug: contact
 description: איך ליצור אתנו קשר
 top_graphic: 1
-lastmod: 2020-02-05
+lastmod: 2020-09-18
 menu:
   main:
     weight: 90
