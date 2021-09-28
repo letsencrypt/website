@@ -4,7 +4,7 @@ publish = "public/"
 command = "hugo -d public"
 
 [build.environment]
-# same as .travis.yml
+# same as .github/workflows/test.yaml
 HUGO_VERSION = "0.79.1"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
