@@ -2,7 +2,7 @@
 title: DST Root CA X3 Expiration (September 2021)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
-lastmod: 2021-05-07
+lastmod: 2021-09-30
 menu:
   main:
     weight: 30
@@ -10,6 +10,9 @@ menu:
 show_lastmod: 1
 ---
 
+> **Update September 30, 2021**
+> As planned, the DST Root CA X3 cross-sign has expired, and we're now using our own ISRG Root X1 for trust on almost all devices. For more details about the plan, keep reading!
+> We have also updated our Production Chain Changes thread on our community forum - our team and community are here and ready to help [our team and community are here and ready to help](https://community.letsencrypt.org/t/production-chain-changes/150739/4) with any questions you may have about this expiration.
 
 On September 30 2021, there will be a small change in how older browsers and devices
 trust Let's Encrypt certificates. If you run a typical website, you won't notice
