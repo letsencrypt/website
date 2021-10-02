@@ -16,7 +16,7 @@ You may also find these links helpful:
 
 [Workarounds for OpenSSL 1.0.2.](https://www.openssl.org/blog/blog/2021/09/13/LetsEncryptRootCertExpire/)
 
-Whenever there is a significant change to our API, we post in the [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) category in our community forum. Sign in and click the bell for notifications to be sent to your email! If you want to hear even more from Let’s Encrypt and the nonprofit team behind it, [subscribe to our newsletter](https://mailchi.mp/letsencrypt.org/fjp6ha1gad) —you’ll only receive a handful of emails each year.
+Whenever there is a significant change to our API, we post in the [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) category in our community forum. Sign in and click the bell for notifications to be sent to your email! If you want to hear even more from Let’s Encrypt and the nonprofit team behind it, [subscribe to our newsletter](https://mailchi.mp/letsencrypt.org/fjp6ha1gad). You’ll only receive a handful of emails each year.
 
 We (and our community) are here for you! If you have any questions about this change, search on our community forum or post on the [thread](https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190/361) we have to help you with this very topic.
 
