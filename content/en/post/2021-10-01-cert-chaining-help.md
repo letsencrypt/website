@@ -1,6 +1,6 @@
 ---
 author: Jacob Hoffman-Andrews
-date: 2021-10-01 00:00:00 UTC
+date: 2021-10-01T00:00:00Z
 excerpt: "Information related to DST CA Root X3 expiration"
 title: "Resources for Certificate Chaining Help"
 slug: cert-chaining-help
