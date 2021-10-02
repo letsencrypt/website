@@ -3,7 +3,7 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-09-24
+lastmod: 2021-10-02
 show_lastmod: 1
 ---
 
@@ -104,13 +104,13 @@ Issuer "ISRG Root X1". The recommended Let's Encrypt client software,
 
 ## Roots
 Similar to intermediates, root certificates can be cross-signed, often to increase client
-compatability. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is the root
+compatibility. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is the root
 certificate for the ECDSA hierarchy. It is represented by two certificates: one that is
 self-signed and one that is signed by ISRG Root X1.
 
 All certificates signed by the ECDSA intermediate "E1" will come with a chain including an intermediate
 certificate whose Subject is "ISRG Root X2" and whose Issuer is "ISRG Root X1". Almost all server operators
-will choose to serve this chain as it offers the most compatability until ISRG Root X2
+will choose to serve this chain as it offers the most compatibility until ISRG Root X2
 is widely trusted.
 
 # OCSP Signing Certificate
