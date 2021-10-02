@@ -1,6 +1,6 @@
 ---
 author: Jacob Hoffman-Andrews
-date: October 1, 2021
+date: 2021-10-01 00:00:00 UTC
 excerpt: "Information related to DST CA Root X3 expiration"
 title: "Resources for Certificate Chaining Help"
 slug: cert-chaining-help
@@ -21,4 +21,4 @@ Whenever there is a significant change to our API, we post in the [API Announcem
 We (and our community) are here for you! If you have any questions about this change, search on our community forum or post on the [thread](https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190/361) we have to help you with this very topic.
 
 Supporting Let’s Encrypt
-As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org]. If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.
+As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.
