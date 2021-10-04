@@ -1003,7 +1003,7 @@ DEFAULT fields MUST be omitted from DER encoding if they have the
 default value.
 
 In BER, a SET may be encoded in any order. In DER, a SET must be encoded
-in ascending order by tag.
+in ascending order by the serialized value of each element.
 
 SET OF encoding
 ---------------
