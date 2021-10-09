@@ -2,7 +2,7 @@
 title: DST Root CA X3 루트 인증서 만료 (2021년 9월)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
-date: 2021-10-09
+date: 2021-09-30
 lastmod: 2021-09-30
 show_lastmod: 1
 
