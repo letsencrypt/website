@@ -39,7 +39,6 @@ validate Let's Encrypt certificates.
 * macOS < 10.12.1
 * iOS < 10
 * Mozilla Firefox < 50
-* Ubuntu >= precise / 12.04 and < xenial / 16.04
 * [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) and < jessie /8
 * Java 8 >= 8u101 and < 8u141
 * Java 7 >= 7u111 and < 7u151
