@@ -3,7 +3,7 @@ title: Revoking certificates
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2021-08-03
+lastmod: 2021-10-14
 show_lastmod: 1
 ---
 
@@ -29,17 +29,8 @@ To revoke a certificate with Let's Encrypt, you will use the [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md),
 most likely through an ACME client like [Certbot](https://certbot.eff.org/).
 You will need to prove to Let's Encrypt that you are authorized to revoke the
-certificate. There are three ways to do this:
-
-# From the account that issued the certificate
-
-If you originally issued the certificate, and you still have control
-of the account you used to issue it, you can revoke it using your account
-credentials. Certbot will attempt this by default. Example:
-
-```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
-```
+certificate's private key, in addition to the certificate, and there is one
+way to do this:
 
 # Using the certificate private key
 
@@ -62,7 +53,25 @@ you can revoke the certificate like so:
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
 ```
 
-# Using a different authorized account
+# For reasons other than private key compromise
+
+There are several [reasons other than the compromise of the a private
+key](https://en.wikipedia.org/wiki/Certificate_revocation_list#Reasons_for_revocation)
+that can be [specified to Certbot](https://certbot.eff.org/docs/using.html#revoking-certificates).
+For reasons other than `keycompromise`, including `unspecified`, there are two
+additional methods to prove your authorization to order the revocation:
+
+## From the account that issued the certificate
+
+If you originally issued the certificate, and you still have control
+of the account you used to issue it, you can revoke it using your account
+credentials. Certbot will attempt this by default. Example:
+
+```bash
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
+```
+
+## Using a different authorized account
 
 If someone issued a certificate after compromising your host or your DNS, you'll
 want to revoke that certificate once you regain control. In order to revoke the
@@ -94,5 +103,5 @@ to revoke, you can download the certificate from [crt.sh](https://crt.sh/),
 then proceed to revoke the certificate as if you had issued it:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```
