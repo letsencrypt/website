@@ -58,7 +58,7 @@ certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reaso
 There are several [reasons other than the compromise of the a private
 key](https://en.wikipedia.org/wiki/Certificate_revocation_list#Reasons_for_revocation)
 that can be [specified to Certbot](https://certbot.eff.org/docs/using.html#revoking-certificates).
-For reasons other than `keycompromise`, including `unspecified`, there are two
+For reasons other than `keyCompromise`, including `unspecified`, there are two
 additional methods to prove your authorization to order the revocation:
 
 ## From the account that issued the certificate
