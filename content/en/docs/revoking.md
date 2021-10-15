@@ -3,7 +3,7 @@ title: Revoking certificates
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2021-08-03
+lastmod: 2021-10-14
 show_lastmod: 1
 ---
 
@@ -27,9 +27,10 @@ compromised private keys is an important practice, and is required by Let's Encr
 
 To revoke a certificate with Let's Encrypt, you will use the [ACME
 API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md),
-most likely through an ACME client like [Certbot](https://certbot.eff.org/).
-You will need to prove to Let's Encrypt that you are authorized to revoke the
-certificate. There are three ways to do this:
+most likely through an ACME client like [Certbot](https://certbot.eff.org/). You will need to prove to Let’s Encrypt that you are authorized to revoke the certificate. There are three ways to do this: from the account that issued the certificate, using a different authorized account, or using the certificate private key.
+
+You should specify a [reason to revoke](https://en.wikipedia.org/wiki/Certificate_revocation_list#Reasons_for_revocation) via your ACME client; for example, [in Certbot](https://certbot.eff.org/docs/using.html#revoking-certificates).
+For reasons other than `keyCompromise`, you may use any of the three methods. For `keyCompromise`, you will need to use the certificate private key.
 
 # From the account that issued the certificate
 
@@ -38,28 +39,7 @@ of the account you used to issue it, you can revoke it using your account
 credentials. Certbot will attempt this by default. Example:
 
 ```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
-```
-
-# Using the certificate private key
-
-If you did not originally issue the certificate, but you have a copy of the
-corresponding private key, you can revoke by using that private key to sign the revocation
-request. For instance, if you see that a private key has accidentally been made
-public, you can use this method to revoke certificates that used that private
-key, even if you are not the person who originally issued those certificates.
-
-To use this method, you will first need to download the certificate to be
-revoked. Let's Encrypt logs all certificates to [Certificate
-Transparency](https://www.certificate-transparency.org/) logs, so you can find
-and download certificates from a log monitor like
-[crt.sh](https://crt.sh/).
-
-You will also need a copy of the private key in PEM format. Once you have these,
-you can revoke the certificate like so:
-
-```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
 # Using a different authorized account
@@ -94,5 +74,26 @@ to revoke, you can download the certificate from [crt.sh](https://crt.sh/),
 then proceed to revoke the certificate as if you had issued it:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+```
+
+# Using the certificate private key
+
+If you did not originally issue the certificate, but you have a copy of the
+corresponding private key, you can revoke by using that private key to sign the revocation
+request. For instance, if you see that a private key has accidentally been made
+public, you can use this method to revoke certificates that used that private
+key, even if you are not the person who originally issued those certificates.
+
+To use this method, you will first need to download the certificate to be
+revoked. Let's Encrypt logs all certificates to [Certificate
+Transparency](https://www.certificate-transparency.org/) logs, so you can find
+and download certificates from a log monitor like
+[crt.sh](https://crt.sh/).
+
+You will also need a copy of the private key in PEM format. Once you have these,
+you can revoke the certificate like so:
+
+```bash
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/privkey.pem --reason keyCompromise
 ```
