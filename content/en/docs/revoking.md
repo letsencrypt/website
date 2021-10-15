@@ -50,7 +50,7 @@ You will also need a copy of the private key in PEM format. Once you have these,
 you can revoke the certificate like so:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keyCompromise
 ```
 
 # For reasons other than private key compromise
