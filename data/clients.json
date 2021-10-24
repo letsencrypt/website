@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-09-20",
+	"lastmod": "2021-10-24",
 	"categories": [
 		"Bash",
 		"C",
@@ -999,6 +999,15 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
+		},
+		{
+			"name": "certmanager",
+			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
+			"category": "Go",
+			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
+			"library": "Go",
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"acme_v2": "true"
 		}
 	]
 }
