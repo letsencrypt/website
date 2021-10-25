@@ -3,7 +3,7 @@ title: יצירת קשר
 slug: contact
 description: איך ליצור אתנו קשר
 top_graphic: 1
-lastmod: 2020-09-18
+lastmod: 2021-08-31
 menu:
   main:
     weight: 90
@@ -38,9 +38,9 @@ menu:
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2021-09-21]
-sub   rsa4096 2015-11-24 [A] [expires: 2021-09-21]
-sub   rsa4096 2015-11-24 [S] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
 ניתן להוריד את [מפתח ה־GPG הציבורי](/security_letsencrypt.org-publickey.asc) כאן, או להשתמש בשרת המפתחות החביב עליך.
