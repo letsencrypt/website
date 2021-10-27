@@ -13,7 +13,7 @@ They considered building their own CA but determined the cost and complexity of 
 
 <p class="text-center"><img src="/images/2021.10.28-OVHcloud-schematic.png" alt="Schematic of how OVHcloud automatically and simply gets Let's Encrypt certificates"></p>
 
-Getting a TLS certificate is on the critical path to onboarding a shared hosting client, so monitoring is a big part of OVHcloud’s success with Let’s Encrypt. They set up monitoring at every step in the delivery process: requesting the certificate, asking for challenges, waiting for validation, and requesting certificate creation. They also keep an eye on how long it takes to get a certificate (“it’s really fast”). OVHcloud also monitors our [status page[(https://letsencrypt.status.io/) to stay apprised of our operational status.
+Getting a TLS certificate is on the critical path to onboarding a shared hosting client, so monitoring is a big part of OVHcloud’s success with Let’s Encrypt. They set up monitoring at every step in the delivery process: requesting the certificate, asking for challenges, waiting for validation, and requesting certificate creation. They also keep an eye on how long it takes to get a certificate (“it’s really fast”). OVHcloud also monitors our [status page](https://letsencrypt.status.io/) to stay apprised of our operational status.
 
 Over 10,000 certificates are issued from Let’s Encrypt to OVHcloud every day. As the company continues to expand into North America, they predict that number will grow. The initial and ongoing work done by the OVHcloud team ensures that TLS will be a simple and reliable aspect of their service. 
 
