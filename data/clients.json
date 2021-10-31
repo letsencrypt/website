@@ -208,7 +208,7 @@
 			"category": "Docker"
 		},
 		{
-			"name": "ZeroSSL",
+			"name": "Crypt::LE",
 			"url": "https://hub.docker.com/r/zerossl/client/",
 			"acme_v2": "true",
 			"category": "Docker"
@@ -355,11 +355,10 @@
 			"category": "OpenShift"
 		},
 		{
-			"name": "ZeroSSL project",
+			"name": "Crypt::LE (previously ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS",
-			"library": "Perl"
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "Crypt::LE",
