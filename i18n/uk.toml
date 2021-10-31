@@ -11,16 +11,10 @@ other = "Підтримати"
 other = "Спонсорство"
 
 [home_hero_annual_report]
-other = "Наш щорічний звіт за 2019"
-
-[home_hero_desktop]
-other = "Комп'ютер"
-
-[home_hero_mobile]
-other = "Мобільний"
+other = "Прочитайте наш 2020 <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'щорічне звітування</a>"
 
 [home_major_sponsors]
-other = "Основні спонсори та донори"
+other = "Основні спонсори та фонди"
 
 [home_from_our_blog]
 other = "З нашого блогу"
@@ -36,6 +30,9 @@ other = "Підтримайте безпечніший та конфіденці
 
 [footer_donate]
 other = "Підтримати"
+
+[footer_mailing]
+other = "Відправити всі повідомлення чи запити:"
 
 [footer_policies]
 other = """
@@ -118,53 +115,59 @@ other = "Користувачі Японії"
 [graph_percent_https]
 other = "Завантажень сторінок по HTTPS (рухоме середнє 14 днів)"
 
+[certificate_policy]
+other = "Пілитика сертифікату"
+
 [certificate_transparency_name]
-other = "Name"
+other = "Назва"
 
 [certificate_transparency_role_production]
-other = "Production"
+other = "Виробництво"
 
 [certificate_transparency_role_testing]
-other = "Testing"
+other = "Тестування"
 
 [certificate_transparency_uri]
 other = "URI"
 
 [certificate_transparency_public_key]
-other = "Public Key"
+other = "Відкритий ключ"
 
 [certificate_transparency_log_id]
-other = "Log ID"
+other = "Номер"
 
 [certificate_transparency_state]
-other = "State"
+other = "Штат"
 
 [certificate_transparency_window_start]
-other = "Window Start"
+other = "Запуск віконця"
 
 [certificate_transparency_window_end]
-other = "Window End"
+other = "Кінець віконця"
+
+[certification_practices_statement]
+other = "Звіт про практику сертифікації"
 
 [overview]
-other = "Overview"
+other = "Огляд"
 
 [subscriber_information]
-other = "Subscriber Information"
+other = "Інформація про абонента"
 
 [advanced_subscriber_information]
-other = "Advanced Subscriber Information"
+other = "Докладна інформація про абонента"
 
 [client_developer_information]
-other = "Client Developer Information"
+other = "Відомості про розробника клієнта"
 
 [acme_divergences]
-other = "Differences from Current ACME Draft"
+other = "Відмінності від поточного середовища автоматичного управління сертифікатами проект"
 
 [acme_divergences_rfc]
-other = "Differences from ACME RFC"
+other = "Відмінності від ACME RFC"
 
 [onboarding_customers]
-other = "Onboarding Your Customers with Let's Encrypt and ACME"
+other = "Реєстрація клієнтів за допомогою Let's Encrypt та ACME"
 
 [paypal_donate_alt]
 other = "Зробити пожертву через PayPal"
