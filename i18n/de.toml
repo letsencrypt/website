@@ -31,9 +31,12 @@ other = "Unterstützen Sie ein sichereres Internet, welches die Privatsphäre re
 [footer_donate]
 other = "Spenden"
 
+[footer_mailing]
+other = "Senden Sie alle Briefe oder Anfragen an:"
+
 [footer_policies]
 other = """
-Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="/trademarks/">Markenbestimmungen</a>.
+Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="https://www.abetterinternet.org/trademarks/">Markenbestimmungen</a>.
 """
 
 [linux_foundation_trademark]

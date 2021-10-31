@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-08-06",
+	"lastmod": "2021-10-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -208,7 +208,7 @@
 			"category": "Docker"
 		},
 		{
-			"name": "ZeroSSL",
+			"name": "Crypt::LE",
 			"url": "https://hub.docker.com/r/zerossl/client/",
 			"acme_v2": "true",
 			"category": "Docker"
@@ -355,11 +355,10 @@
 			"category": "OpenShift"
 		},
 		{
-			"name": "ZeroSSL project",
+			"name": "Crypt::LE (previously ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS",
-			"library": "Perl"
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "Crypt::LE",
@@ -898,6 +897,13 @@
 			"acme_v2": "true"
 		},
 		{
+			"name": "TekCERT",
+			"url": "https://www.kaplansoft.com/tekcert/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI)",
+			"acme_v2": "true"
+		},
+		{
 			"name": "serverPKI",
 			"url": "https://github.com/mc3/serverPKI",
 			"acme_v2": "true",
@@ -909,8 +915,18 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-		},
+    },
 		{
+			"name": "acmetk",
+			"url": "https://github.com/noahkw/acmetk",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"DNS-01": "true"
+			},
+			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
+    },
+    {
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
@@ -922,6 +938,13 @@
 			"url": "https://smallstep.com/cli/",
 			"acme_v2": "true",
 			"category": "Go"
+		},
+		{
+			"name": "J8a",
+			"url": "https://github.com/simonmittag/j8a",
+			"category": "Go",
+			"comments": "(Reverse proxy for JSON APIs with auto-renewing TLS 1.3)",
+			"acme_v2": "true"
 		},
 		{
 			"name": "CycloneACME",
@@ -1005,6 +1028,15 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
+		},
+		{
+			"name": "certmanager",
+			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
+			"category": "Go",
+			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
+			"library": "Go",
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"acme_v2": "true"
 		}
 	]
 }
