@@ -5,9 +5,9 @@ top_graphic: 4
 date: 2019-09-19
 lastmod: 2019-09-19
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 In der Datenschutzerklärung von Let's Encrypt wird beschrieben, wie wir
 Ihre Informationen in drei verschiedenen Kontexten erfassen, verwenden

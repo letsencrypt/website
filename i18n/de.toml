@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Eine Non-Profit-Organisation, die TLS-Zertifikate für <span>225 Millionen</span> Websites bereitstellt."
+other = "Eine Non-Profit-Organisation, die TLS-Zertifikate für <span>260 Millionen</span> Websites bereitstellt."
 
 [home_hero_getting_started]
 other = "Loslegen"
@@ -31,9 +31,12 @@ other = "Unterstützen Sie ein sichereres Internet, welches die Privatsphäre re
 [footer_donate]
 other = "Spenden"
 
+[footer_mailing]
+other = "Senden Sie alle Briefe oder Anfragen an:"
+
 [footer_policies]
 other = """
-Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="/trademarks/">Markenbestimmungen</a>.
+Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="https://www.abetterinternet.org/trademarks/">Markenbestimmungen</a>.
 """
 
 [linux_foundation_trademark]

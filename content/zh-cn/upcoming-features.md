@@ -3,9 +3,9 @@ title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2020-02-20
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## IP地址证书
 

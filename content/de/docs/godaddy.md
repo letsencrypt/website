@@ -4,9 +4,9 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Wir haben eine Menge Anfragen bekommen, wie Let's Encrypt auf GoDaddy zu verwenden ist. Wenn Sie GoDaddy Shared Web Hosting verwenden, ist es momentan sehr schwierig, Let's Encrypt Zertifikate zu installieren, weswegen wir das momentan nicht empfehlen können. Begründet wird das damit, weil GoDaddy das [ACME Protocol](https://tools.ietf.org/html/rfc8555) zum automatischen Ausstellen und Erneuern von Zertifikaten nicht unterstützt. Stattdessen bietet GoDaddy ein automatisches Ausstellen und Erneuern für seine eigenen Zertifikate an, was eine [kostenpflichtiges Zusatzfunktion](https://www.godaddy.com/web-security/ssl-certificate) ist.
 

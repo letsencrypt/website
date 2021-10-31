@@ -3,9 +3,9 @@ title: תאימות אישורים
 slug: certificate-compatibility
 top_graphic: 1
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt מוכוונת לתמוך ולהיתמך בכמה שיותר תכניות שניתן מבלי להתפשר על אבטחה. הגורם העיקרי ליכולת הפלטפורמה לתקף אישורים של Let's Encrypt היא האם לפלטפורמה הזאת יש את האישור „ISRG Root X1” מבית ISRG או את האישור „DST Root CA X3” מבית IdenTrust במאגר האישורים שלה.
 

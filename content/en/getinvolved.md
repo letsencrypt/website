@@ -7,9 +7,9 @@ menu:
   main:
     weight: 60
     parent: donate
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## Community
 
@@ -29,4 +29,4 @@ We can also use help with software development. All of our code is on [GitHub](h
 
 ### letsencrypt.org
 
-You can improve this website and the documentation [here](https://github.com/letsencrypt/website) or help with its [translations](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
+You can improve this website and the documentation [here](https://github.com/letsencrypt/website) or help with its [translations](https://crowdin.com/project/lets-encrypt-website).

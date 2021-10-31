@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2016-12-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt は、セキュリティを損なわずに、できるだけ多くのソフトウェアと互換性をもたせることを目指しています。Let's Encrypt の証明書を検証できるプラットフォームとなるかどうかの主な決定要因は、プラットフォームのトラストストアに IdenTrust の DST Root X3 証明書が含まれているかどうかです。第2の要因は、プラットフォームがモダンな [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) 証明書をサポートしているかどうかです。Let's Encrypt のすべての証明書は SHA-2 を利用しているためです。
 

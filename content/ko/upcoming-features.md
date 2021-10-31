@@ -3,9 +3,9 @@ title: 향후 기능
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2019-07-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## 다중관점 (유효성) 검증
 

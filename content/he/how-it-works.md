@@ -4,9 +4,9 @@ linkTitle: כיצד Let's Encrypt עובד
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 המטרה של Let's&nbsp;Encrypt ושל [פרוטוקול ACME](https://tools.ietf.org/html/rfc8555) היא לאפשר להקים שרת HTTPS ושהוא ימשוך אוטומטית אישורים מהימנים לדפדפן, ללא התערבות של בן אדם.  מטרה זו מושגת על ידי הפעלת סומן ניהול אישורים בשרת המארח.
 

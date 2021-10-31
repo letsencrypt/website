@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-10-07
+lastmod: 2021-10-04
 ---
 This document provides a gentle introduction to the data structures and
 formats that define the certificates used in HTTPS. It should be
@@ -1003,7 +1003,7 @@ DEFAULT fields MUST be omitted from DER encoding if they have the
 default value.
 
 In BER, a SET may be encoded in any order. In DER, a SET must be encoded
-in ascending order by tag.
+in ascending order by the serialized value of each element.
 
 SET OF encoding
 ---------------

@@ -4,9 +4,9 @@ slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 我們有時會收到用戶使用 HTTP-01 遇到問題的報告，而問題原因是他們的防火牆阻擋了通訊埠 80。我們建議所有的網頁伺服器應該同時在通訊埠 80 提供 HTTP 服務；以及在通訊埠 443 提供 HTTPS 服務。此外也應該將所有發送到通訊埠 80 的請求，重新導向到通訊埠 443，並加上 HTTP 強制安全傳輸技術 (HTTP Strict Transport Security, HSTS)。
 

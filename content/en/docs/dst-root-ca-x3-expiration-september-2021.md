@@ -2,14 +2,17 @@
 title: DST Root CA X3 Expiration (September 2021)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
-lastmod: 2021-04-06
+lastmod: 2021-09-30
 menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
+> **Update September 30, 2021**
+> As planned, the DST Root CA X3 cross-sign has expired, and we're now using our own ISRG Root X1 for trust on almost all devices. For more details about the plan, keep reading!
+> We have also updated our Production Chain Changes thread on our community forum - [our team and community are here and ready to help](https://community.letsencrypt.org/t/production-chain-changes/150739/4) with any questions you may have about this expiration.
 
 On September 30 2021, there will be a small change in how older browsers and devices
 trust Let's Encrypt certificates. If you run a typical website, you won't notice
@@ -47,6 +50,9 @@ API are using OpenSSL, [they must use version 1.1.0 or later][openssl]. In OpenS
 ISRG Root X1 will fail when presented with the Android-compatible certificate
 chain we are recommending by default.
 
+If you want additional information about our ongoing production chain changes,
+[please check out this thread in our community][production].
+
 If you have any questions about the upcoming expiration,
 [please post to this thread on our forum.][forum]
 
@@ -56,3 +62,4 @@ If you have any questions about the upcoming expiration,
 [openssl]: https://community.letsencrypt.org/t/openssl-client-compatibility-changes-for-let-s-encrypt-certificates/143816
 [forum]: https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190
 [compatibility]: /docs/cert-compat/
+[production]: https://community.letsencrypt.org/t/production-chain-changes/150739

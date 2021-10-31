@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2018-03-12
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Recomendamos fortemente que sejam feitos testes em nosso ambiente de testes antes de usar nosso ambiente de produção. Isso permite que você entenda todo o processo antes de emitir certificados confiáveis e reduz a chance de você esbarrar em nosso limites de requisições.
 

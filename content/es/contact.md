@@ -1,8 +1,9 @@
 ---
 title: Contactar
 slug: contact
+description: 1
 top_graphic: 1
-lastmod: 2019-08-14
+lastmod: 2020-09-18
 menu:
   main:
     weight: 90
@@ -25,7 +26,7 @@ Para información sobre varias listas de correo ténicas, por favor visita nuest
 
 ## Seguridad
 
-Por favor no escriba a esta dirección de correo electrónico al menos que tu mensaje se refiera a un problema de seguridad con Let's Encrypt.
+**Por favor no escriba a esta dirección de correo electrónico al menos que tu mensaje se refiera a un problema de seguridad con Let's Encrypt.**
 
 Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 

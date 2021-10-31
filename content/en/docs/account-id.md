@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 When reporting issues it can be useful to provide your Let's Encrypt account ID.
 Most of the time, the process of creating an account is handled automatically by

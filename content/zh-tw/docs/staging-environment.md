@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2019-09-16
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 在使用我們的正式環境前，我們強烈建議你先使用我們的測試環境進行布署。這樣能確保你在申請頒發憑證前一切正常，以避免受到憑證的速率限制。
 

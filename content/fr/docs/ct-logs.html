@@ -3,19 +3,19 @@ title: Journaux de transparence des certificats
 slug: ct-logs
 top_graphic: 4
 lastmod: 2020-02-25
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <p><a href="https://www.certificate-transparency.org/what-is-ct">La transparence des certificats (CT)</a> (en anglais CT pour Certificate Transparency) est un système permettant de journaliser et de monitorer l'émission de certficats TLS. CT améliore grandement la capacité de chacun à monitorer et étudier l'émission de certificats, et ces capacités ont menées  à de nombreuses améliorations de l'écosystème des autorités de certification et de la sécurité du Web.En conséquence, la transparence des certificats devient rapidement une infrastructure critique.</p>
 
-<p>Let's Encrypt soumet tous les certificats que nous émettons aux journaux de CT. Nous exploitons également deux journaux de CT scannés annuellement, nommés <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> et Testflume. Toutes les autorités de certification publiquement reconnues comme de confiance sont invitées à soumettre leurs certificats à nos journaux. De nombreuses autorités de certification racines ont déjà été incluses dans nos journaux de transparence des certificats.<a href="{{< relref "/contact" >}}">Contactez nous par courriel</a> à propos de l'ajout de nouveaux certificats racine à nos journaux si le vôtre n'a pas été inclus.</p>
+<p>Let's Encrypt soumet tous les certificats que nous émettons aux journaux de CT. Nous exploitons également deux journaux de CT scannés annuellement, nommés <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> et Testflume. Toutes les autorités de certification publiquement reconnues comme de confiance sont invitées à soumettre leurs certificats à nos journaux. De nombreuses autorités de certification racines ont déjà été incluses dans nos journaux de transparence des certificats.<a href="/contact">Contactez nous par courriel</a> à propos de l'ajout de nouveaux certificats racine à nos journaux si le vôtre n'a pas été inclus.</p>
 
 <p>Inscrivez vous pour recevoir les notifications de la rubrique <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"> CT announcements category</a> du forum communautaire pour être informé des principales annonces au sujet de nos journaux de transparence des certificats.</p>
 
 <h2>Financement</h2>
 
-<p>Nous remercions les partenaires suivants pour leur généreux parrainage du journal de transparence des certificats de Let's Encrypt. Si votre organisation souhaite nous aider à poursuivre ce travail, n'hésitez pas à nous <a href="{{< relref "/become-a-sponsor" >}}">parrainer ou faire un don</a>.</p>
+<p>Nous remercions les partenaires suivants pour leur généreux parrainage du journal de transparence des certificats de Let's Encrypt. Si votre organisation souhaite nous aider à poursuivre ce travail, n'hésitez pas à nous <a href="/become-a-sponsor">parrainer ou faire un don</a>.</p>
 
 <p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
 
@@ -36,7 +36,7 @@ lastmod: 2020-02-25
 
 {{< ct_logs data="testing" >}}
     <li>Les Signed Certificate Timestamp (SCT) de ces journaux <b>NE DEVRAIENT PAS</b> être incorporés dans des certificats publiquement reconnus et acceptés.</li>
-    <li>Les environnements ACME API Let's Encrypt de production et de <a href="{{< relref "/docs/staging-environment" >}}">qualification</a> envoient tous deux des certificats à Testflume, mais l'environnement de production n'utilise pas les SCT résultants.</li>
+    <li>Les environnements ACME API Let's Encrypt de production et de <a href="/docs/staging-environment">qualification</a> envoient tous deux des certificats à Testflume, mais l'environnement de production n'utilise pas les SCT résultants.</li>
     <li>Nous testons de nouvelles versions de <a href="http://github.com/google/trillian">Trillian</a> et de <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> ici avant de les deployer en production.</li>
     <li>Testflume est accepte les listes de racines inclues dans  OAK, plus quelques racines de test additionnelles.</li>
     <li>Testflume peut être utilisée par d'autres autorités de certification pour des tests.</li>

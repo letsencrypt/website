@@ -4,9 +4,9 @@ slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
 lastmod: 2020-12-08
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 When you get a certificate from Let’s Encrypt, our servers validate that
 you control the domain names in that certificate using “challenges,”

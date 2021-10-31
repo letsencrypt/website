@@ -4,9 +4,9 @@ linkTitle: Wie Let’s Encrypt funktioniert
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Das Ziel von Let's&nbsp;Encrypt und des [ACME-Protokolls](https://tools.ietf.org/html/rfc8555) besteht darin, die Einrichtung eines HTTPS-Servers zu ermöglichen, der automatisch ein vertrauenswürdiges Browserzertifikat ohne menschliches Eingreifen erhält. Dies wird durch Ausführen eines Zertifikatsverwaltungsagenten auf dem Webserver erreicht.
 

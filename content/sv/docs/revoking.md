@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2020-02-22
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 När ett certifikats privata nyckel inte längre är i säkert förvar ska du
 återkalla certifikatet. Detta kan hända av olika anledningar. Exempelvis kan du

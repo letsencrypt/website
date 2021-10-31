@@ -4,9 +4,9 @@ slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
 lastmod: 2019-04-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # 以電子郵件訂閱通知
 

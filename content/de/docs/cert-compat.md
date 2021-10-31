@@ -3,9 +3,9 @@ title: Kompatibilität der Zertifikate
 slug: certificate-compatibility
 top_graphic: 1
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt zielt darauf ab, mit so viel Software wie möglich kompatibel zu sein, ohne die Sicherheit zu beeinträchtigen. Der entscheidende Faktor dafür, ob eine Plattform Let's Encrypt-Zertifikate überprüfen kann, ist, ob diese Plattform das DST-Root-X3-Zertifikat von IdenTrust in den Truststore einbezieht.
 
