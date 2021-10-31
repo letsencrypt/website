@@ -216,6 +216,18 @@
 			"category": "Docker"
 		},
 		{
+			"name": "acme.sh",
+			"url": "https://hub.docker.com/r/neilpang/acme.sh",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+	        {
+			"name": "letsproxy",
+			"url": "https://hub.docker.com/r/neilpang/letsproxy",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+		{
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
