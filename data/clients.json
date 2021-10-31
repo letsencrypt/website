@@ -22,7 +22,8 @@
 		"Python",
 		"Ruby",
 		"Rust",
-		"Windows / IIS"
+		"Windows / IIS",
+		"Server"
 	],
 	"libraries": [
 		"4D",
@@ -895,6 +896,13 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "Certera",
+			"url": "https://certera.io",
+			"acme_v2": "true",
+			"comments": "(Crossplatform PKI to centrally manage keys and certificates)",
+			"category": "Server"
 		},
 		{
 			"name": "TekCERT",
