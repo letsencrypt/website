@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2021-07-12
+lastmod: 2021-10-05
 show_lastmod: 1
 ---
 
@@ -30,21 +30,22 @@ domain. Exceeding the Certificates Per Registered Domain limit is reported with 
 error message `too many certificates already issued`, possibly with additional
 details.
 
-If you have a lot of subdomains, you may want to combine them into a single
-certificate, up to a limit of 100 <a id="names-per-certificate"></a>**Names per Certificate**. Combined with the
-above limit, that means you can issue certificates containing up to 5,000 unique
-subdomains per week. A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate. Note: For performance and
-reliability reasons, it's better to use fewer names per certificate whenever you
-can.
+You can create a maximum of 300 <a
+id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created
+each time you request a certificate from the Boulder CA, meaning that one new order
+is produced in each certificate request. Exceeding the New Orders
+limit is reported with the error message `too many new orders recently`.
+
+You can combine multiple hostnames into a single
+certificate, up to a limit of 100 <a id="names-per-certificate"></a>**Names per Certificate**.
+For performance and reliability reasons, it's better to use fewer names per certificate
+whenever you can.  A certificate with multiple names is often called a SAN
+certificate, or sometimes a UCC certificate.
 
 Renewals are treated specially: they don't count against your **Certificates per
 Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 5 per week. Note: renewals used to count against your Certificate per
-Registered Domain limit until March 2019, [but they don't
-anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
-Exceeding the Duplicate Certificate limit is reported with the error message
-`too many certificates already issued for exact set of domains`.
+limit of 5 per week. Exceeding the Duplicate Certificate limit is reported with
+the error message `too many certificates already issued for exact set of domains`.
 
 A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
@@ -87,10 +88,6 @@ Please utilize our [staging environment](/docs/staging-environment) if you’re
 developing an ACME client. Exceeding the Pending Authorizations limit is
 reported with the error message `too many currently pending authorizations`.
 
-You can create a maximum of 300 <a
-id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request. Exceeding the New Orders
-limit is reported with the error message `too many new orders recently`.
-
 # <a id="overrides"></a>Overrides
 
 If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
@@ -107,11 +104,6 @@ form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
 that can be used to request a higher rate limit. It takes a few weeks to process
 requests, so this form is not suitable if you just need to reset a rate limit
 faster than it resets on its own.
-
-Note that most hosting providers don't need rate limit increases, because
-there's no limit on the number of distinct registered domains for which you can issue.
-So long as most of your customers don't have more than 2,000 subdomains on a
-registered domain, you most likely do not need an increase. See our [Integration Guide](/docs/integration-guide) for more advice.
 
 # <a id="clearing-pending"></a>Clearing Pending Authorizations
 

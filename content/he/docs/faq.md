@@ -3,12 +3,12 @@ title: שו״ת
 linkTitle: שאלות ותשובות (שו״ת)
 slug: faq
 top_graphic: 1
-lastmod: 2020-02-20
+lastmod: 2020-04-23
 menu:
   main:
     weight: 30
     parent: about
-show_lastmod: 1
+    show_lastmod: 1
 ---
 
 
@@ -46,9 +46,10 @@ Let's Encrypt מופעלת על ידי קבוצה קטנה ונסמכת על א�
 
 ## אתר שמשתמש ב־Let's Encrypt מעורב בפעילות דיוג/תכנה זדונית/הונאה… מה עלי לעשות?
 
-אנו ממליצים לדווח על אתרים כאלה ל־Google Safe Browsing (גלישה בטוחה בחסות Google) ולתכנית SmartScreen מבית Microsoft שיכולות להגן על משתמשים בצורה יעילה יותר. להלן כתובת הדיווח של Google:
+אנו ממליצים לדווח על אתרים כאלה ל־Google Safe Browsing (גלישה בטוחה בחסות Google) ולתכנית SmartScreen מבית Microsoft שיכולות להגן על משתמשים בצורה יעילה יותר. הנה הכתובות לדיווח:
 
-[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 אם מעניין אותך לקרוא עוד על מסמכי המדיניות שלנו ומה עומד מאחוריהם, ניתן לעשות זאת כאן:
 
