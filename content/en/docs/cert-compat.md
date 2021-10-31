@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-09
+lastmod: 2021-10-31
 show_lastmod: 1
 ---
 
@@ -39,7 +39,7 @@ validate Let's Encrypt certificates.
 * macOS < 10.12.1
 * iOS < 10
 * Mozilla Firefox < 50
-* Ubuntu >= lucid / 10.04
+* Ubuntu >= intrepid / 8.10
 * [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) and < jessie /8
 * Java 8 >= 8u101 and < 8u141
 * Java 7 >= 7u111 and < 7u151
