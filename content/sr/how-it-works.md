@@ -4,9 +4,9 @@ linkTitle: Kako Let's Encrypt funkcioniše?
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-09-09
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Cilj Let's&nbsp;Encrypt-a i [ACME protokola](https://tools.ietf.org/html/rfc8555) je da omogući konfigurisanje HTTPS servera i automatsko dobijanje sertifikata koji je pouzdan web pretraživačima , bez ikakve ljudske intervencije. To se postiže korišćenjem i  pokretanjem agenta za upravljanje sertifikatima na samom web serveru.
 

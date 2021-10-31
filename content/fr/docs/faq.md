@@ -8,9 +8,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Cette rubrique Questions Fréquentes est divisée en sections suivantes:
 

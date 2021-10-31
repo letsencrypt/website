@@ -4,9 +4,9 @@ slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Nous recevons parfois des rapports de personnes qui ont du mal à utiliser le défi HTTP-01, car ils ont protégé le port 80 de leur serveur web par un pare-feu. Notre recommandation est que tous les serveurs destinés à un usage général du Web devraient, de façon standard, fournir à la fois le protocole HTTP sur le port 80 et HTTPS sur le port 443. Ils devraient également envoyer des requêtes  de redirections pour toutes les demandes à destination du port 80 vers le port 443 , et éventuellement, envoyer un en-tête HSTS (HTTP Strict Transport Security) (celui-ci sur les demandes du port 443).
 

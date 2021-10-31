@@ -3,9 +3,9 @@ title: Compatibilité des certificats
 slug: certificate-compatibility
 top_graphic: 1
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
  
 Let's Encrypt vise à être compatible avec autant de logiciels que possible sans compromettre la sécurité. Le principal facteur déterminant pour savoir si une plate-forme peut accepter les certificats Let's Encrypt est de savoir si cette plate-forme inclut le certificat "ISRG Root X1" d'ISRG ou le certificat "DST Root CA X3" d'IdenTrust dans son magasin de relations de confiance.
 

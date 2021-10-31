@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 CAA es un tipo de registro DNS que permite a los propiertarios de los sitios web especificar
 que Autoridades de Certificación están permitidas a emitir certificados

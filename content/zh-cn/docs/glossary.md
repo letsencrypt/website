@@ -3,9 +3,9 @@ title: 术语表
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 {{% def id="AIA" name="颁发机构信息访问" english="Authority Information Access" abbr="AIA" %}} 用于提示[用户代理](#def-user-agent)获取[证书](#def-certificate)颁发者信息的方法的证书[扩展](#def-extension)。它通常会指定用于 [OCSP](#def-OCSP) 的 URI 地址和[颁发者的 URI 地址](#def-CAI)。 {{% /def %}}
 
@@ -156,6 +156,8 @@ date: 2018-12-30
 {{% def id="wildcard" name="通配符证书" english="Wildcard Certificate" %}} 对整一级子域名有效的证书。例如，含有 `*.example.com` [SAN](#def-SAN) 的证书对 `blog.example.com` 和 `www.example.com` 都有效，但是对 `bork.bork.example.com` 或 `example.com` 都**无效**。在子域名处使用星号（*）即表示通配符。[Let's Encrypt](#def-LE) [从 2018 年 3 月起提供通配符证书](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579)。[维基百科条目](https://zh.wikipedia.org/wiki/%E9%80%9A%E9%85%8D%E7%AC%A6%E8%AF%81%E4%B9%A6) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} 定义了公钥证书格式的标准。[维基百科条目](https://zh.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

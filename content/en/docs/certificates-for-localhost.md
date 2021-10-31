@@ -4,9 +4,9 @@ slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Sometimes people want to get a certificate for the hostname "localhost", either
 for use in local development, or for distribution with a native application that

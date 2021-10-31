@@ -4,9 +4,9 @@ linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
 top_graphic: 5
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # 根证书
 

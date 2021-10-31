@@ -4,9 +4,9 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 אנו מקבלים שאלות רבות בנוגע לשימוש ב־Let’s Encrypt עם GoDaddy. אם GoDaddy משמש אותך לטובת אירוח אתרים שיתופי, מאוד מסובך כרגע להתקין אישור של Let’s Encrypt, לכן איננו ממליצים כרגע להשתמש באישורים שלנו עם GoDaddy. זה קורה כיוון שב־GoDaddy אין תמיכה ב[פרוטוקול ACME](https://tools.ietf.org/html/rfc8555) להנפקה וחידוש אישורים אוטומטית. במקום, מציעים ב־GoDaddy חידוש אוטומטי עם אישורים משלהם, שהם [בתוספת תשלום](https://www.godaddy.com/web-security/ssl-certificate).
 

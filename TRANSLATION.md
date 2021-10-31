@@ -5,7 +5,20 @@
 
 Check [existing translation pull-requests](https://github.com/letsencrypt/website/pulls?q=is%3Apr+is%3Aopen+label%3Atranslation) to see if someone else is already working on it.
 
+## Translate new pages, update or improve translation
+
+You can help with the translation work on https://crowdin.com/project/lets-encrypt-website
+
 ## How to add a new language
+
+If you are interested to add a new language, please open an issue with the information requested in:
+- `languageName`, `languageCode`, `beforeColon`, `description` and `numberFormat` in https://github.com/letsencrypt/website/blob/master/config/_default/languages.en.toml
+- `name` entries in https://github.com/letsencrypt/website/blob/master/config/_default/menu.en.toml
+
+
+Someone from Let's Encrypt will add the language to Crowdin so you can start translating on https://crowdin.com/project/lets-encrypt-website
+
+When enough pages are translated, someone from Let's Encrypt will create the first pull request:
 
 ### First pull-request
 
@@ -14,13 +27,3 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 3. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
 4. Add your language in `netlify.toml` and `layouts\_partial\langs.html`.
 5. Copy `content\base-l10n\` into `content\XX\` (where XX is your language code)
-
-### After the first pull-request
-
-You can start translating the files that are inside `content\XX\`:
-
-* Copy the English version of the file you wish to translate into `content\XX\`
-* Do **not** change `date` or `lastmod` : they must correspond to the the English version (and not when the translation occured: it's used to detect when a translation is out-of-sync)
-* If your translation takes time, please open early a draft pull-request so others know you are working on it
-
-You can check the translation status using https://letsencrypt.org/i18n/

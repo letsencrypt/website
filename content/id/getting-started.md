@@ -3,9 +3,9 @@ title: Memulai
 slug: getting-started
 top_graphic: 3
 date: 2019-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Untuk mengaktifkan HTTPS pada website, anda membutuhkan sebuah sertifikat (sebuah tipe dari *file*)
 dari Otoritas Sertifikasi (CA). Let's Encrypt adalah CA. Untuk mendapatkan sertifikat untuk domain

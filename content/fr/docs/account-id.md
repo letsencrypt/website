@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Lorsque vous signalez des problèmes, il peut être utile de fournir votre ID de compte Let's Encrypt. La plupart du temps, le processus de création d'un compte est géré automatiquement par le logiciel client ACME que vous utilisez pour dialoguer avec Let's Encrypt, et vous pouvez avoir plusieurs comptes configurés si vous exécutez des clients ACME sur plusieurs serveurs.
 
