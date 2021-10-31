@@ -7,9 +7,8 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
-
-{{< lastmod >}}
 
 El 30 de septiembre de 2021, habrá un pequeño cambio en la forma en que los navegadores y dispositivos más antiguos confían en los certificados Let's Encrypt. Si ejecuta un sitio web típico, no notará la diferencia: la gran mayoría de sus visitantes aún aceptarán su certificado Let's Encrypt. Si proporciona una API o tiene que admitir dispositivos de IoT, es posible que deba prestar un poco más de atención al cambio.
 
