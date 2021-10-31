@@ -3,9 +3,9 @@ title: Fonctionnalités à venir
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2020-02-20
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## Adresses IP dans les certificats
 

@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2020-02-22
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Lorsque la clef privée correspondante d'un certificat n'est plus sûre, vous devez révoquer le certificat. Cela peut se produire pour différentes raisons. Par exemple, vous pouvez avoir accidentellement partagé la clef privée sur un site Web public; les pirates pourraient avoir copié la clef privée de vos serveurs; ou les pirates pourraient prendre le contrôle temporaire de vos serveurs ou de votre configuration DNS, et utiliser la clef pour valider et émettre un certificat dont ils détiennent la clef privée.
 
@@ -47,7 +47,7 @@ mettre une [valeur dans un enregistrement de type TXT du DNS](https://tools.ietf
 ```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
-Puis suivez les instructions. si vous péférez la validation utilisant le port HTTP plutôt que le DNS, remplacez l'option  `--preferred-challenges` par `--preferred-challenges=http`.
+Puis suivez les instructions. Si vous préférez la validation utilisant le port HTTP plutôt que le DNS, remplacez l'option  `--preferred-challenges` par `--preferred-challenges=http`.
 
 Une fois que vous avez validé le contrôle de tous les noms de domaine dans le certificat que vous souhaitez révoquer, vous pouvez télécharger le certificat depuis [crt.sh] (https://crt.sh/), puis révoquez le certificat comme si vous l'aviez délivré:
 

@@ -4,9 +4,9 @@ slug: ipv6-support
 top_graphic: 1
 date: 2020-02-07
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt prend en charge IPv6 pour accéder à l'API ACME à l'aide d'un client ACME, et pour les recherches DNS et les requêtes HTTP que nous faisons lors de la validation de votre contrôle des noms de domaine.
 

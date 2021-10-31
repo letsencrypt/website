@@ -8,9 +8,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Denna vanliga frågor-sida är uppdelad i följande delar:
 

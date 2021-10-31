@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2019-04-15
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 A Let's Encrypt implementa limites de requisições para garantir uma utilização justa
 pela maior quantidade de pessoas possível. Acreditamos que estes limites são altos o suficiente para

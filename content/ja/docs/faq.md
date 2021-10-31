@@ -9,9 +9,9 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 よくある質問 (FAQ) は、以下の2つのセクションに分類されています。
 

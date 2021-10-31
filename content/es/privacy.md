@@ -5,9 +5,9 @@ top_graphic: 4
 date: 2019-09-19
 lastmod: 2019-12-05
 english_is_canonical: 1
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 La Política de privacidad de Let's Encrypt describe cómo recopilamos, usamos y divulgamos su información en tres contextos diferentes:
 

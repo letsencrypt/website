@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            d0:6b:39:ed:0d:21:e2:58:fd:81:c4:9c:0b:0e:11:02
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Doctored Durian Root CA X3
+        Validity
+            Not Before: Oct  7 19:21:40 2020 GMT
+            Not After : Sep 29 19:21:40 2021 GMT
+        Subject: C = US, O = (STAGING) Let's Encrypt, CN = (STAGING) Artificial Apricot R3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:bb:a4:d1:f3:ee:f8:6f:8e:a6:38:4d:45:53:00:
+                    6b:bf:1c:c4:60:b7:24:de:26:ac:98:aa:dc:42:46:
+                    fe:83:2f:f3:f4:9c:bb:40:d2:00:97:40:7d:a5:52:
+                    a9:e1:85:3b:e8:9c:31:17:90:ce:65:98:62:ee:f2:
+                    bb:49:b0:a4:2b:a1:5b:1e:5c:94:e4:18:83:60:8c:
+                    5b:6d:fb:ce:2f:f8:d5:1a:a7:6c:4a:33:5a:25:04:
+                    e0:dc:2d:d7:ac:98:da:fc:70:38:58:21:44:31:5a:
+                    13:db:00:d9:9b:c0:01:0b:53:7e:21:07:bb:43:a1:
+                    44:a9:cf:0d:c2:64:d2:9e:69:91:42:6e:13:42:fa:
+                    f4:e8:33:fe:ce:01:4a:fc:c3:6e:6f:15:96:0d:26:
+                    d2:28:a4:c7:e6:29:b9:8f:67:d9:7e:0f:a3:fe:d3:
+                    35:6c:66:9c:cc:55:b0:f3:f9:52:9e:e9:32:9f:92:
+                    76:2f:e3:49:62:77:25:ce:45:e8:87:d9:cc:16:7c:
+                    8f:99:56:df:c8:33:ce:73:86:36:e5:a4:f3:56:87:
+                    81:29:76:bf:71:9e:4c:33:e5:9d:76:37:4b:6e:25:
+                    af:9b:5f:5f:d6:c6:27:d5:a4:5a:00:8a:e4:a6:9b:
+                    fb:92:49:fc:de:f7:2d:87:c5:c2:1b:7f:6a:0b:66:
+                    6f:69
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                DE:72:7A:48:DF:31:C3:A6:50:DF:9F:85:23:DF:57:37:4B:5D:2E:65
+            X509v3 Authority Key Identifier: 
+                keyid:08:57:DA:89:C7:A2:53:79:0C:4F:DD:E0:90:8F:74:BA:E2:27:73:44
+
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x1.i.lencr.org/
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://stg-x1.c.lencr.org/
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+
+    Signature Algorithm: sha256WithRSAEncryption
+         99:7a:cf:6d:3c:d2:eb:78:43:4b:03:c5:04:af:32:8f:b6:14:
+         e8:38:d1:ee:20:62:b7:bc:da:c8:26:4d:83:f8:ee:17:da:55:
+         af:16:74:30:19:84:f2:b5:3a:38:92:a2:b1:64:fb:cd:59:7f:
+         73:6e:1a:51:fa:44:33:ec:c3:00:dc:6a:22:93:fb:2f:ca:5e:
+         b3:01:0d:74:3e:02:1b:ff:4e:bb:63:0f:71:89:b3:42:f4:8f:
+         2a:b0:5f:d1:b2:3f:4c:c0:7c:11:0d:4a:f2:1e:02:ee:f3:95:
+         50:5b:7c:de:38:b1:ad:f2:70:75:86:1c:bf:1c:0e:e8:00:89:
+         82:9d:d9:5f:28:94:2c:2a:1e:b0:9d:14:ec:ac:a0:75:5d:0d:
+         7d:e4:80:31:b9:f4:63:61:86:ab:ae:9c:b0:db:52:0b:a9:4e:
+         da:66:66:28:a2:e6:dd:00:eb:3d:87:c2:c6:ff:06:53:dc:e8:
+         59:d6:40:fa:b7:3d:19:5a:8e:64:77:26:2e:9c:ce:ec:e0:92:
+         a4:35:15:65:41:ed:a5:ed:ff:c2:9d:eb:0e:3f:97:07:f4:b4:
+         ff:9a:a3:e4:f3:ca:11:fa:4e:e5:52:80:0b:3c:70:00:81:d1:
+         bd:89:ea:1b:9c:29:63:e3:c0:f0:19:1b:e2:3b:91:04:5e:c5:
+         a9:08:28:4b

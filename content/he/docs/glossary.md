@@ -3,9 +3,9 @@ title: מונחון
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 
 <!--
@@ -175,6 +175,8 @@ Note for translators:
 {{% def id="wildcard" english="Wildcard Certificate" name="אישור כוללני" %}} אישור שתקפים לתת־שמות תחומים עד עומק של רמה אחת למטה. למשל, אישור שמכיל [SAN](#def-SAN) ל־`*.example.com` תקף על `blog.example.com` ועל `www.example.com` אך **לא** על `bork.bork.example.com` או על `example.com`). אישור כוללני נבדל בכך שמופיעה בו כוכבית (*) בהתחלה במקום תת־שם תחום. [Let's Encrypt](#def-LE) [מספקת אישורים כוללניים החל ממרץ 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [ויקיפדיה](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} התקן שמגדיר את תצורת אישורי המפתח הציבורי. [ויקיפדיה](https://he.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css" />
 <script src="/js/glossary.js" async></script>

@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Документ будет полезен хостинг-провайдерам, интеграторам и разработчикам клиентского ПО для Let's Encrypt.
 

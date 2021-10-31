@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2020-03-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt prévoit des limites d'utilisation pour garantir une utilisation équitable par autant de personnes que possible. Nous pensons que ces limites d'utilisation sont suffisamment élevées pour fonctionner par défaut avec la plupart des gens. Nous les avons également conçues pour qu'un renouvelement de certificat ne rencontre presque jamais la limite d'utilisation, et de sorte que les grands organisations puissent augmenter progressivement le nombre de certificats qu'elles peuvent délivrer sans nécessiter l'intervention de Let's Encrypt.
 

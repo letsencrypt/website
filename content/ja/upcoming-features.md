@@ -3,9 +3,9 @@ title: 今後追加される機能
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2019-07-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## 複数の観点からの検証
 

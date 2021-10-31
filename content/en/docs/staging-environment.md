@@ -3,10 +3,10 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2020-01-21
+lastmod: 2021-05-13
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 We highly recommend testing against our staging environment before using our production environment. This will allow you to get things right before issuing trusted certificates and reduce the chance of your running up against rate limits.
 
@@ -26,9 +26,19 @@ The staging environment uses the same rate limits as [described for the producti
 * The **Accounts per IP Address** limit is 50 accounts per 3 hour period per IP.
 * For ACME v2, the **New Orders** limit is 1,500 new orders per 3 hour period per account.
 
-# Root Certificate
+# Staging Certificate Hierarchy
 
-The staging environment intermediate certificate (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["Fake LE Root X1"](/certs/fakelerootx1.pem) certificate to your testing trust store. Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
+The staging environment has a certificate hierarchy that [mimics production](/certificates).
+
+## Intermediate Certificates
+
+The staging environment has two active intermediate certificates: an RSA intermedite ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) and an ECDSA intermediate ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
+
+ECDSA issuance was [enabled in Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) on 24 March 2021 and all requests for Staging certificates with ECDSA keys are signed by "(STAGING) Ersatz Edamame E1" and utilize the ECDSA hierarchy. Similarly all requests for Staging certificates with RSA keys are signed by "(STAGING) Artificial Apricot R3" and use the RSA hierarchy. There is no way to get an RSA-signed certificate for an ECDSA key, nor vice versa; the way to control which issuer you get is to control what kind of key you generate locally.
+
+## Root Certificates
+
+The staging environment has two active root certificates which are **not present** in browser/client trust stores: "(STAGING) Pretend Pear X1" and "(STAGING) Bogus Brocoli X2". If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) and/or ["(STAGING) Bogus Broccoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) certificate to your testing trust store. You can find all of our staging certificates [here](https://github.com/letsencrypt/website/tree/master/static/certs/staging).  Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
 
 # Certificate Transparency
 
