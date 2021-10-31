@@ -4,9 +4,9 @@ slug: account-id
 top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Cuando se reportan problemas puede ser útil proveer tu ID de cuenta Let's Encrypt.
 La mayoría de las veces, el proceso de creación de una cuenta se maneja

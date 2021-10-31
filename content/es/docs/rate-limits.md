@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2019-06-04
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt proporciona límites de solicitudes para garantizar un uso justo por parte de todos los solicitantes de certificados. Creemos que estos límites de solicitud son lo suficientemente altos como para funcionar de manera predeterminada con la mayoría de las personas. También los hemos diseñado para que la renovación de un certificado casi nunca alcance un límite de solicitudes y por lo tanto las organizaciones pueden aumentar gradualmente la cantidad de certificados que pueden emitir sin requerir la intervención de Let's Encrypt.
 

@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 AAC é um tipo de registro DNS que permite que donos de sites especifiquem quais Autoridades
 Certificadoras (ACs) podem emitir certificados contendo seus nomes de domínio. Ele

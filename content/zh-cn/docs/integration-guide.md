@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 如果您是托管服务提供商或正在大型网站中集成 Let's Encrypt，或者您正在为 Let's Encrypt 编写客户端软件，则本文档包含了一些对您有用的建议。
 

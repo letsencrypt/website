@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt 尽力在不影响安全性的前提下与尽可能多的软件兼容。Let's Encrypt 的证书能否通过平台的验证主要取决于该平台是否在其受信证书存储中包含ISRG的"ISRG Root X1"证书或IdenTrust的"DST Root CA X3"证书。
 

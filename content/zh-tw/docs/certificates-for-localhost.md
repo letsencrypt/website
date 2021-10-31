@@ -4,9 +4,9 @@ slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 有時候，使用者會想要申請網域名稱為 "localhost" 的憑證；不管是用在本地開發上，或是用在與網頁溝通的原生應用程式上。Let's Encrypt 沒有辦法提供 "localhost" 憑證，它不像 ".com" 或 ".net" 一樣在頂級域名底下，因此沒有任何人應該擁有它。你可以設定網域名稱指向 `127.0.0.1`，並使用 DNS 驗證方式取得憑證。然而這事實上是個糟糕的主意，你有其他更好的選擇。
 

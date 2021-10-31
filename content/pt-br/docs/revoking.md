@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2017-06-08
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Quando a chave privada correspondente a um certificado não é mais
 segura você deve revogar o certificado. Isso pode acontecer devido a algumas diferentes

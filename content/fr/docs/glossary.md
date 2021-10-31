@@ -3,9 +3,9 @@ title: Glossaire
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <!--
 Note for translators:
@@ -174,6 +174,8 @@ Note for translators:
 {{% def id="wildcard" name="Certificat générique ou omni-domaine" english="Wildcard Certificate" %}} Certificats valides pour les sous-domaines d'une profondeur de un niveau. Par exemple, un certificat contenant un [SAN](#def-SAN) pour `*.example.com` est valide pour `blog.example.com` et `www.example.com` mais **pas** pour `bork.bork.example.com` ou `example.com`). Un certificat "générique" est indiqué par le caractère asterisque (*) à la place d'un sous-domaine. [Let's Encrypt](#def-LE) [fournit des certificats Wildcard à partir de mars 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipédia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} Le standard définissant le format des certificats à clef publique. [Wikipédia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

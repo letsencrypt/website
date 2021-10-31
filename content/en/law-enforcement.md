@@ -1,7 +1,7 @@
 ---
 title: Law Enforcement Request Guidelines
 slug: law-enforcement
-lastmod: 2020-04-15
+lastmod: 2021-08-17
 do_not_translate: 1
 ---
 
@@ -36,9 +36,9 @@ ISRG and its Let’s Encrypt service are based in the United States. Generally, 
 
 ## Limiting Requests to the Past 90 Days
 
-When crafting a subpoena or preservation request, our primary ask is that you only request data going back 90 days. That is what we have active and searchable. To go back further than that requires retrieval and review of off-site backups that are not reasonably accessible and involves substantial staff time and expense. 
+When crafting a subpoena or preservation request, our primary ask is that you limit requests for transaction log data to the 90 days prior to retrieval. That is what we have active and searchable. To go back further than that requires retrieval and review of off-site backups that are not reasonably accessible and involves substantial staff time and expense.
 
-Some account data, such as optional contact email addresses, remain active and searchable past 90 days and are included in reports limited to the past 90 days.
+Some account data, such as contact email addresses, remain active and searchable past 90 days and are included in reports limited to the past 90 days.
 
 ## Non Disclosure Orders
 
@@ -52,7 +52,7 @@ United States law enforcement agencies may send valid legal process or preservat
 
 [law-enforcement@letsencrypt.org](mailto:law-enforcement@letsencrypt.org)
 
-You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, 1 Letterman Drive, Suite D4700, San Francisco, CA 94129”, but please note that you are likely to receive a quicker response if you send it by email. 
+You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, P.O. Box 18666, Minneapolis, MN 55418-0666”, but please note that you are likely to receive a quicker response if you send it by email.
 
 Please identify requested records with particularity and include (i) the name of the issuing authority and agent; (ii) an email address from a law enforcement domain; and (iii) a direct contact phone number.
 

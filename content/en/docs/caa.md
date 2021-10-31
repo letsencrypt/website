@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 CAA is a type of DNS record that allows site owners to specify which Certificate
 Authorities (CAs) are allowed to issue certificates containing their domain names. It
