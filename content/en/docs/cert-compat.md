@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-09-30
+lastmod: 2021-10-09
 show_lastmod: 1
 ---
 
@@ -21,7 +21,7 @@ If your certificate validates on some of the "Known Compatible" platforms but no
 * [iPhone 5 and above can upgrade to iOS 10](https://en.wikipedia.org/wiki/IPhone_5) and can thus trust ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (but Android >= 2.3.6 will work by default [due to our special cross-sign](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (with updates applied)
+* Ubuntu >= precise / 12.04 (with updates applied)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (with updates applied)
 * [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
@@ -39,7 +39,7 @@ validate Let's Encrypt certificates.
 * macOS < 10.12.1
 * iOS < 10
 * Mozilla Firefox < 50
-* Ubuntu >= precise / 12.04 and < xenial / 16.04
+* Ubuntu >= lucid / 10.04
 * [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) and < jessie /8
 * Java 8 >= 8u101 and < 8u141
 * Java 7 >= 7u111 and < 7u151
