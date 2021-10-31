@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-10-24",
+	"lastmod": "2021-10-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -916,8 +916,18 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-		},
+    },
 		{
+			"name": "acmetk",
+			"url": "https://github.com/noahkw/acmetk",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"DNS-01": "true"
+			},
+			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
+    },
+    {
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
