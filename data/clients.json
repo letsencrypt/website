@@ -12,6 +12,7 @@
 		"Go",
 		"HAProxy",
 		"Java",
+		"Kubernetes",
 		"Lua",
 		"Microsoft Azure",
 		"nginx",
@@ -896,6 +897,15 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "cert-manager",
+			"url": "https://github.com/jetstack/cert-manager",
+			"category": "Kubernetes",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
 		},
 		{
 			"name": "Certera",
