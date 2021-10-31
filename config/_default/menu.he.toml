@@ -1,0 +1,32 @@
+[[main]]
+name = "קבלת עזרה"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "תרומה"
+weight = 30
+identifier = "donate"
+url = "/he/donate/"
+[[main]]
+name = "עלינו"
+weight = 40
+identifier = "about"
+url = "/he/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "מצב השירות"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "משרות"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"

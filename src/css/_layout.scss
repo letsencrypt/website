@@ -21,6 +21,10 @@
     position: relative;
 }
 
+html[dir="rtl"] .site-title {
+   float: right;
+}
+
 .site-title {
     margin-left: 0px;
     padding-left: 0px;
@@ -146,10 +150,14 @@
         a {
             font-size: 24px;
         }
+        margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
 }
 
+html[dir="rtl"] .hero.slim div.container {
+   text-align: right;
+}
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -260,6 +268,10 @@
 }
 
 .contact-list,
+html[dir="rtl"] .social-media-list {
+    direction: ltr;
+    text-align: right;
+}
 .social-media-list {
     list-style: none;
     margin-left: 0;
@@ -335,6 +347,7 @@
 }
 
 .post-list {
+    direction: ltr;
     margin-left: 0;
     list-style: none;
 

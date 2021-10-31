@@ -3,78 +3,115 @@ title: Chain of Trust
 linkTitle: Chain of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
-lastmod: 2020-02-07
+lastmod: 2021-10-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
+
+[![ISRG Certificate Hierarchy Diagram, as of December 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Root Certificates
 
 Our roots are kept safely offline. We issue end-entity certificates to subscribers from the intermediates in the next section.
+For additional compatibility as we submit our new Root X2 to various root programs, we have also cross-signed it from Root X1.
 
 * Active
-  * [ISRG Root X1 (self-signed)](/certs/isrgrootx1.pem.txt)
+  * ISRG Root X1 (`RSA 4096, O = Internet Security Research Group, CN = ISRG Root X1`)
+    * [Self-signed](https://crt.sh/?id=9314791): [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
+    * [Cross-signed by DST Root CA X3](https://crt.sh/?id=3958242236): [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt)
+* Active, limited availability
+  * ISRG Root X2 (`ECDSA P-384, O = Internet Security Research Group, CN = ISRG Root X2`)
+    * [Self-signed](https://crt.sh/?id=3335562555): [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
+    * [Cross-signed by ISRG Root X1](https://crt.sh/?id=3334561878): [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
 
-We've set up websites to test certificates chaining to our roots.
+We've set up websites to test certificates chaining to our active roots.
 
-* ISRG Root X1 Valid Certificate
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
-* ISRG Root X1 Revoked Certificate
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
-* ISRG Root X1 Expired Certificate
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+* ISRG Root X1
+  * [Valid](https://valid-isrgrootx1.letsencrypt.org/)
+  * [Revoked](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [Expired](https://expired-isrgrootx1.letsencrypt.org/)
+* ISRG Root X2
+  * [Valid](https://valid-isrgrootx2.letsencrypt.org/)
+  * [Revoked](https://revoked-isrgrootx2.letsencrypt.org/)
+  * [Expired](https://expired-isrgrootx2.letsencrypt.org/)
 
 # Intermediate Certificates
 
-Under normal circumstances, certificates issued by Let’s Encrypt will come from “Let’s Encrypt Authority X3”. The other intermediate, “Let’s Encrypt Authority X4”, is reserved for disaster recovery and will only be used should we lose the ability to issue with “Let’s Encrypt Authority X3”. We do not use the X1 and X2 intermediates any more.
+Under normal circumstances, certificates issued by Let's Encrypt will come from "R3", an RSA intermediate.
+Currently, issuance from "E1", an ECDSA intermediate, is possible only for ECDSA subscriber keys for [allowlisted accounts](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). In the future, issuance from "E1" will be available for everyone.
 
-IdenTrust has cross-signed our intermediates for additional compatibility.
+Our other intermediates ("R4" and "E2") are reserved for disaster recovery and will only be used should we lose the ability to issue with our primary intermediates.
+We do not use the X1, X2, X3, and X4 intermediates anymore.
+
+IdenTrust has cross-signed our RSA intermediates for additional compatibility.
 
 * Active
-  * [Let's Encrypt Authority X3 (IdenTrust cross-signed)](/certs/lets-encrypt-x3-cross-signed.pem.txt)
-    * [Let's Encrypt Authority X3 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx3.pem.txt)
+  * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=3334561879): [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (Retired)
+* Active, limited availability
+  * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`)
+    * [Signed by ISRG Root X2](https://crt.sh/?id=3334671964): [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
 * Backup
-  * [Let's Encrypt Authority X4 (IdenTrust cross-signed)](/certs/lets-encrypt-x4-cross-signed.pem.txt)
-    * [Let's Encrypt Authority X4 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx4.pem.txt)
+  * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=3334561877): [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=3479778543): [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt) (Retired)
+  * Let's Encrypt E2 (`ECDSA P-384, O = Let's Encrypt, CN = E2`)
+    * [Signed by ISRG Root X2](https://crt.sh/?id=3334671963): [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
 * Retired
-  * [Let's Encrypt Authority X2 (IdenTrust cross-signed)](/certs/lets-encrypt-x2-cross-signed.pem.txt)
-    * [Let's Encrypt Authority X2 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx2.pem.txt)
-  * [Let's Encrypt Authority X1 (IdenTrust cross-signed)](/certs/lets-encrypt-x1-cross-signed.pem.txt)
-    * [Let's Encrypt Authority X1 (Signed by ISRG Root X1)](/certs/letsencryptauthorityx1.pem.txt)
+  * Let's Encrypt Authority X1 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X1`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=9314792): [der](/certs/letsencryptauthorityx1.der), [pem](/certs/letsencryptauthorityx1.pem), [txt](/certs/letsencryptauthorityx1.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=10235198): [der](/certs/lets-encrypt-x1-cross-signed.der), [pem](/certs/lets-encrypt-x1-cross-signed.pem), [txt](/certs/lets-encrypt-x1-cross-signed.txt)
+  * Let's Encrypt Authority X2 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X2`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=12721505): [der](/certs/letsencryptauthorityx2.der), [pem](/certs/letsencryptauthorityx2.pem), [txt](/certs/letsencryptauthorityx2.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=10970235): [der](/certs/lets-encrypt-x2-cross-signed.der), [pem](/certs/lets-encrypt-x2-cross-signed.pem), [txt](/certs/lets-encrypt-x2-cross-signed.txt)
+  * Let's Encrypt Authority X3 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X3`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=47997543): [der](/certs/letsencryptauthorityx3.der), [pem](/certs/letsencryptauthorityx3.pem), [txt](/certs/letsencryptauthorityx3.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=15706126): [der](/certs/lets-encrypt-x3-cross-signed.der), [pem](/certs/lets-encrypt-x3-cross-signed.pem), [txt](/certs/lets-encrypt-x3-cross-signed.txt)
+  * Let's Encrypt Authority X4 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X4`)
+    * [Signed by ISRG Root X1](https://crt.sh/?id=47997546): [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
+    * [Cross-signed by IdenTrust](https://crt.sh/?id=15710291): [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
 
 # Cross Signing
 
-Our intermediate “Let’s Encrypt Authority X3” represents a single public/private
+## Intermediates
+
+Each of our intermediates represents a single public/private
 key pair. The private key of that pair generates the signature for all end-entity
 certificates (also known as leaf certificates), i.e. the certificates we issue
 for use on your server.
 
-Our intermediate is signed by ISRG Root X1. ISRG's root is widely trusted at this
-point, but our intermediate is still cross-signed by IdenTrust's "DST Root CA X3"
+Our RSA intermediates are signed by ISRG Root X1. ISRG Root X1 is widely trusted at this
+point, but our RSA intermediates are still cross-signed by IdenTrust's "[DST Root CA X3](https://crt.sh/?id=8395)"
 (now called "TrustID X3 Root") for additional client compatibility. The IdenTrust
 root has been around longer and thus has better compatibility with older devices
-and operating systems (e.g. Windows XP). [Download "TrustID X3 Root" on
-identrust.com](https://www.identrust.com/support/downloads) (or, alternatively,
-you can download a copy here: [.pem](/certs/trustid-x3-root.pem.txt),
-[.p7b](/certs/trustid-x3-root.p7b)).
+and operating systems (e.g. Windows XP, Android 7). You can [download "TrustID X3 Root" from
+IdenTrust](https://www.identrust.com/support/downloads) (or, alternatively,
+you can [download a copy from us](/certs/trustid-x3-root.pem.txt)).
 
-Having a cross-signature means there are two sets of intermediate certificates
-available, both of which represent our intermediate. One is signed by DST Root
-CA X3, and the other is signed by ISRG Root X1. The easiest way to distinguish
+Having cross-signatures means that each of our RSA intermediates has two
+certificates representing the same signing key. One is signed by DST Root
+CA X3 and the other is signed by ISRG Root X1. The easiest way to distinguish
 the two is by looking at their Issuer field.
 
 When configuring a web server, the server operator configures not only the
 end-entity certificate, but also a list of intermediates to help browsers verify
 that the end-entity certificate has a trust chain leading to a trusted root
 certificate. Almost all server operators will choose to serve a chain including
-the intermediate certificate with Subject “Let’s Encrypt Authority X3” and
-Issuer “DST Root CA X3.” The recommended Let's Encrypt software,
+the intermediate certificate with Subject "R3" and
+Issuer "ISRG Root X1". The recommended Let's Encrypt client software,
 [Certbot](https://certbot.org), will make this configuration seamlessly.
 
-The following picture explains the relationships between our certificates
-visually:
+## Roots
+Similar to intermediates, root certificates can be cross-signed, often to increase client
+compatibility. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is the root
+certificate for the ECDSA hierarchy. It is represented by two certificates: one that is
+self-signed and one that is signed by ISRG Root X1.
 
-<img src="/certs/isrg-keys.png" alt="ISRG Key relationship diagram">
+All certificates signed by the ECDSA intermediate "E1" will come with a chain including an intermediate
+certificate whose Subject is "ISRG Root X2" and whose Issuer is "ISRG Root X1". Almost all server operators
+will choose to serve this chain as it offers the most compatibility until ISRG Root X2
+is widely trusted.
 
 # OCSP Signing Certificate
 
@@ -84,7 +121,10 @@ sign those responses. A copy of this certificate is included automatically in
 those OCSP responses, so Subscribers don't need to do anything with it. It is
 included here for informational purposes only.
 
-* [ISRG Root OCSP X1 (Signed by ISRG Root X1)](/certs/isrg-root-ocsp-x1.pem.txt)
+* ISRG Root OCSP X1 ([Signed by ISRG Root X1](https://crt.sh/?id=2929281974)): [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
+
+Our newer intermediates do not have OCSP URLs (their revocation information is 
+instead served via CRL), so we have not issued an OCSP Signing Cert from ISRG Root X2.
 
 # Certificate Transparency
 
@@ -95,9 +135,5 @@ issued Let's Encrypt certificates via these links:
 
 * [Issued by Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
-
-# More Info
-
-The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs are stored on hardware security modules (HSMs), which provide a high degree of protection against the keys being stolen.
-
-All ISRG keys are currently RSA keys. We are [planning to generate ECDSA keys](/upcoming-features).
+* [Issued by E1](https://crt.sh/?Identity=%25&iCAID=183283)
+* [Issued by R3](https://crt.sh/?Identity=%25&iCAID=183267)

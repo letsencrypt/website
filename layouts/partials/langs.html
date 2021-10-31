@@ -39,6 +39,8 @@
         {{ $scratch.Set "view_in_xxx" "Visa på svenska" }}
       {{ else if eq .Language.Lang "vi" }}
         {{ $scratch.Set "view_in_xxx" "Xem bằng tiếng Việt" }}
+      {{ else if eq .Language.Lang "he" }}
+        {{ $scratch.Set "view_in_xxx" "לעבור לעברית" }}
       {{ else }}
         {{ errorf "Missing markup for lang %q in layouts/partials/langs.html" .Page.Language.Lang }}
       {{ end }}

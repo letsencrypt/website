@@ -4,9 +4,9 @@ slug: ipv6-support
 top_graphic: 1
 date: 2020-02-07
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt既支持在IPv6环境下使用ACME客户端访问ACME API，也支持在验证域名控制权时进行的DNS查找和HTTP请求。
 

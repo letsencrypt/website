@@ -5,9 +5,9 @@ linkTitle: Client and Large Provider Integration Guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Si usted es un proveedor de alojamiento o un sitio web que integra Let's Encrypt o si está escribiendo software de cliente para Let's Encrypt, este documento contiene consejos que le resultarán útiles. 
 

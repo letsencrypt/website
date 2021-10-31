@@ -5,9 +5,9 @@ slug: integration-guide
 top_graphic: 1
 date: 2016-08-08
 lastmod: 2019-10-29
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Dieses Dokument enthält hilfreiche Ratschläge, wenn Sie ein
 Hosting-Anbieter oder eine grosse Website sind, die Let's Encrypt

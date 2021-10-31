@@ -3,9 +3,9 @@ title: 용어 사전
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <!--
 Note for translators:
@@ -174,6 +174,8 @@ Note for translators:
 {{% def id="wildcard" name="Wildcard Certificate" %}} 이 인증서는 한 수준 깊이 하위 도메인에 대해 유효합니다. 예를 들어 `*.example.com`에 대한 [SAN](#def-SAN)이 포함된 인증서는 `blog.example.com` 및 `www.example.com`에 유효하지만 `bork.bork.example.com` 또는 `example.com`에는 유효하지 **않습니다**. 와일드카드는 하위 도메인 대신 별표 문자 (*)로 표시됩니다. [Let's Encrypt](#def-LE)는 [2018년 3월부터 와일드카드 인증서를 제공합니다](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [위키피디아](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} 공용 키 인증서의 형식을 정의하는 표준입니다. [위키피디아](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

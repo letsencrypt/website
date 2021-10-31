@@ -4,9 +4,9 @@ slug: allow-port-80
 top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 We occasionally get reports from people who have trouble using the
 HTTP-01 challenge type because they've firewalled off port 80 to their

@@ -1,0 +1,10 @@
+html[dir="rtl"] .pure-menu-children {
+  right: 100%;
+}
+html[dir="rtl"] .pure-menu-horizontal .pure-menu-children {
+  right: 0;
+  width: max-content;
+}
+html[dir="rtl"] .pure-menu-has-children > .pure-menu-link:after {
+  padding-right: 0.5em;
+}

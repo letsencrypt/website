@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2016-12-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt는 보안을 손상시키지 않으면서 최대한 많은 소프트웨어와 호환되는 것을 목표로 합니다. 특정 플랫폼에서 Let's Encrypt 인증서의 유효성을 검사 할 수 있는지 여부를 결정하는 주요 요인은 해당 플랫폼에 IdenTrust의 DST Root X3 인증서가 신뢰 저장소에 포함되어 있는지 여부입니다. 두 번째 요소는 해당 플랫폼이 현대적인 [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) 인증서를 지원하는지 여부입니다. 모든 Let's Encrypt 인증서가 SHA-2를 사용하기 때문입니다.
 

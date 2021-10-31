@@ -4,9 +4,9 @@ slug: revoking
 top_graphic: 1
 date: 2017-06-08
 lastmod: 2017-06-08
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Cuando la clave privada correspondiente de un certificado ya no es segura, debe revocar el certificado. Esto puede suceder por diferentes razones. Por ejemplo, podría compartir accidentalmente la clave privada en un sitio web público, los piratas informáticos pueden copiar la clave privada de sus servidores o los piratas informáticos pueden tomar el control temporal de sus servidores o su configuración de DNS y usarlo para validar y emitir un certificado para el que poseen la clave privada.
 

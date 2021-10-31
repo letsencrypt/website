@@ -1,0 +1,76 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            92:55:22:bd:84:9b:fb:0e:ce:10:43:d9:b1:27:10:9c
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1
+        Validity
+            Not Before: Sep  4 00:00:00 2020 GMT
+            Not After : Sep 15 16:00:00 2025 GMT
+        Subject: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:3a:f4:be:c3:59:02:cc:0c:58:38:96:c0:d3:a0:
+                    30:d0:71:4f:da:d2:c1:2c:a3:e8:15:0a:91:f4:03:
+                    2c:92:5d:67:0b:6f:7b:e5:e4:2a:c9:c4:7e:00:2b:
+                    d8:7a:50:3c:ad:fc:05:5c:e6:cc:1d:85:c9:db:75:
+                    cb:07:e7:40:8c:f2:55:38:9d:8e:72:c8:d3:56:a3:
+                    b8:75:c0:d6:bb:ea:d0:d9:52:0b:76:72:51:63:2a:
+                    67:57:53:0c:4e:15:71
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                DE:D1:A3:59:64:0E:C1:9A:36:A3:46:EE:B0:10:76:EF:AE:97:95:66
+            X509v3 Authority Key Identifier: 
+                keyid:B5:F3:65:F2:FE:B0:0A:92:1F:FB:3C:7D:F3:44:A0:AC:63:25:C3:14
+
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x1.i.lencr.org/
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://stg-x1.c.lencr.org/
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+
+    Signature Algorithm: sha256WithRSAEncryption
+         32:4a:79:7a:d2:ce:c4:ce:3e:6b:a1:2a:5f:68:66:01:df:b2:
+         35:44:8d:08:0e:fe:31:89:ff:56:bc:09:9e:99:16:7b:cc:ee:
+         0b:e7:c8:2d:83:18:46:e0:72:5a:cf:f3:78:59:a8:e7:a2:5c:
+         ee:d7:79:37:d2:3e:40:dd:2b:61:27:84:6e:07:53:00:c7:9a:
+         06:36:77:3f:a7:89:c4:cd:40:6b:be:80:6e:b8:f9:50:b7:ea:
+         f1:78:4e:13:7e:d2:62:01:5b:65:2f:58:3c:e4:38:c2:e8:ac:
+         09:71:eb:ae:6b:b8:65:d6:49:9b:35:c8:41:7e:7a:db:10:5e:
+         27:17:f4:a3:82:c1:a9:2d:82:dd:29:a9:90:f6:3e:7f:c9:53:
+         b6:61:4e:fc:8e:aa:49:29:7c:4f:95:f2:34:4d:fc:e7:33:57:
+         69:17:7c:ac:c2:6a:34:2f:5f:20:70:e3:3d:e2:4c:21:aa:2e:
+         d1:36:58:4f:4b:8d:6f:d3:99:ed:98:53:ee:c9:90:49:a1:dc:
+         1b:1b:4a:d1:25:66:26:f1:8d:6a:07:3a:46:57:6b:1c:56:de:
+         98:b6:f0:56:97:88:e0:da:29:44:7c:a7:42:ac:e4:56:db:1f:
+         02:52:bc:54:3f:76:49:86:e9:a2:51:6c:25:95:ae:1d:59:07:
+         81:c7:2e:23:51:f1:d3:e4:54:a7:55:46:8f:53:cf:57:ed:09:
+         98:66:5e:1b:6c:9b:2e:5a:14:da:b8:e3:31:b4:66:90:d8:d3:
+         c6:e6:f6:53:5b:f3:08:6a:41:49:a0:5f:61:02:e3:2c:70:f0:
+         42:4d:40:a9:11:0d:95:9c:43:a8:29:17:16:ba:3c:7a:a4:fa:
+         4c:51:dd:b7:0d:bb:28:84:fe:a2:fd:50:ca:87:e2:ab:75:23:
+         d7:0e:ed:3e:97:05:31:20:df:89:63:51:13:45:c6:60:28:c4:
+         2c:3a:35:f6:83:ea:42:d8:48:31:0e:57:fb:fd:d8:a4:2a:99:
+         71:e4:78:bc:c4:7a:9f:da:25:2e:9f:f4:2a:68:c0:ce:a5:3e:
+         2e:a0:f6:7e:61:4b:b6:d2:af:65:4c:56:f1:a1:02:4c:62:1c:
+         0c:71:82:3c:90:e4:97:00:d6:de:5e:c3:51:0d:3c:5a:3e:45:
+         87:f2:84:7f:97:3d:7c:5d:ee:f3:b5:94:00:9b:b8:56:1f:42:
+         f9:ec:17:66:dc:cb:d0:b0:f8:ea:56:20:a6:7e:df:bf:9c:3d:
+         b0:b4:b8:cd:0d:c2:20:2d:ee:76:32:79:19:cf:ef:f1:58:4f:
+         41:a5:35:12:79:fb:35:6f:b8:20:79:df:49:e3:fa:1b:9a:f3:
+         2c:4b:65:d0:fa:de:0b:89

@@ -4,9 +4,9 @@ linkTitle: Hur Let's Encrypt fungerar
 slug: how-it-works
 top_graphic: 3
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Meningen med Let's&nbsp;Encrypt och
 [ACME-protokollet](https://tools.ietf.org/html/rfc8555) är att göra det möjligt
