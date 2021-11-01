@@ -308,6 +308,10 @@ a.autoanchor {
     margin-left: 0.5em;
 }
 
+html[dir="rtl"] a.autoanchor {
+    margin-right:.5em;
+}
+
 .page-content {
     h1,h2,h3 { //same selector as js for anchors
         .autoanchor {
