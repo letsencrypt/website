@@ -25,7 +25,7 @@
                 {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 3 | lang.Merge $enPosts }}
                 {{ range $posts }}
                   <li>
-                    <span class="post-meta">{{ .Date.Format $.Site.Params.time_format_default }}</span>
+                    <span class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}</span>
                     <h2>
                       <a class="post-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ .Title }}</a>
                     </h2>

@@ -25,7 +25,7 @@ crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
 time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
-time_format_default = "Jan 2, 2006"
+time_format_default = ":date_medium"
 
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
