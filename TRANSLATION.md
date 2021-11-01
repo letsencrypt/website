@@ -9,6 +9,8 @@ Check [existing translation pull-requests](https://github.com/letsencrypt/websit
 
 You can help with the translation work on https://crowdin.com/project/lets-encrypt-website
 
+How to use Crowdin: https://support.crowdin.com/online-editor/
+
 ## How to add a new language
 
 If you are interested to add a new language, please open an issue with the information requested in:
