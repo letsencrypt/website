@@ -2,7 +2,7 @@
 <p>
 {{ if .Page.Lastmod }}
     <!-- No space between "last_updated" and the date (if a space is needed it's in the translated file). -->
-    {{ i18n "last_updated" }}<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" data-dateformat="{{ $.Site.Params.time_format_default }}">{{ .Page.Lastmod.Format $.Site.Params.time_format_default }}</time>
+    {{ i18n "last_updated" }}<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}">{{ .Page.Lastmod | time.Format $.Site.Params.time_format_default }}</time>
 {{ end }}
 
 {{ if eq .Page.Section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
@@ -19,7 +19,7 @@
             <p>
                 <i>
                     {{ i18n "old_version" }}
-                    (<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" data-dateformat="{{ $.Site.Params.time_format_default }}">{{ .Page.Lastmod.Format $.Site.Params.time_format_default }}</time>)
+                    (<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}">{{ .Page.Lastmod | time.Format $.Site.Params.time_format_default }}</time>)
                     <a href="{{ .Page.RelPermalink }}">{{ i18n "view_in_english" }}</a>
                 </i>
             </p>
