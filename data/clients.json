@@ -1047,6 +1047,19 @@
 			}
 		},
 		{
+			"name": "Ansible collection: acme",
+			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
+			"category": "Configuration management tools",
+			"comments": "(ACME V2 integration with acme_certificate module. Supports multiple providers for challenges)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
 			"name": "certmanager",
 			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
 			"category": "Go",
