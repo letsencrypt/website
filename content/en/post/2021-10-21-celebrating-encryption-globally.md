@@ -1,7 +1,7 @@
 ---
 author: Christine Runnegar, ISRG Board of Directors
 date: 2021-10-21T00:00:00Z
-excerpt: "Celebrating our progress toward a more secure Web on Gloabl Encryption Day."
+excerpt: "Celebrating our progress toward a more secure Web on Global Encryption Day."
 title: "Making the Web safer and more secure for everyone"
 slug: celebrating-encryption-globally
 ---
