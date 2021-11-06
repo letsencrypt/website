@@ -1,0 +1,199 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Un'autorità di certificazonie non-profit che fornisce certificati TLS a <span>200 milioni</span> di siti web."
+
+[home_hero_getting_started]
+other = "Come iniziare"
+
+[home_hero_donate]
+other = "Dona"
+
+[home_hero_sponsor]
+other = "Sponsor"
+
+[home_hero_annual_report]
+other = "Leggi il nostro Report annuale del 2019"
+
+[home_hero_desktop]
+other = "Desktop"
+
+[home_hero_mobile]
+other = "Mobile"
+
+[home_major_sponsors]
+other = "Grandi Sponsor e Donatori"
+
+[home_from_our_blog]
+other = "Dal nostro blog"
+
+[read_more]
+other = "Leggi di più"
+
+[subscribe_rss]
+other = "Abbonati <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Supporta un web più sicuro e rispettoso della privacy."
+
+[footer_donate]
+other = "Dona"
+
+[footer_policies]
+other = """
+Vedi la nostra <a href="/privacy/">privacy policy</a>.<br>
+Vedi la nostra <a href="/trademarks/">trademark policy</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation è un marchio registrato di The Linux Foundation. Linux è un marchio registrato di Linus Torvalds."
+
+[header_skip_nav]
+other = "Salta i link di navigazione"
+
+[last_updated]
+other = "Ultimo aggiornamento: "
+
+[see_all_doc]
+other = "Vedi tutta la documentazione"
+
+[blog_feed]
+other = "Feed dal blog di Let's Encrypt"
+
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[gold_basic]
+other = "Gold Basic"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Lingue"
+
+[view_in_english]
+other = "Visualizza in inglese"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/partials/langs.html)
+other = "Visualizza in italiano"
+
+[old_version]
+other = "Nota: La versione inglese è stata aggiornata dopo l'ultima traduzione"
+
+[not_yet_translated]
+other = "Questa pagina non è ancora stata tradotta. Puoi dare il tuo contributo <a href=\"https://github.com/letsencrypt/website\">qui</a>."
+
+[english_is_canonical]
+other = "La versione inglese è quella autorevole"
+
+[graph_issued]
+other = "Emesso"
+
+[graph_certificates_active]
+other = "Certificati attivi"
+
+[graph_fully_qualified_domains_active]
+other = "Domini completamente qualificati (FQ) attivi"
+
+[graph_registered_domains_active]
+other = "Domini attivi registrati"
+
+[graph_active_count]
+other = "Contatore attivi"
+
+[graph_issued_per_day]
+other = "Emessi al giorno"
+
+[graph_all_users]
+other = "Tutti gli utenti"
+
+[graph_usa_users]
+other = "Utenti degli Stati uniti d'America"
+
+[graph_japan_users]
+other = "Utenti giapponesi"
+
+[graph_percent_https]
+other = "Percentuale di pagine caricate via HTTPS (14 media giornaliera)"
+
+[certificate_transparency_name]
+other = "Nome"
+
+[certificate_transparency_role_production]
+other = "Produzione"
+
+[certificate_transparency_role_testing]
+other = "Testing"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Chiave pubblica"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "Stato"
+
+[certificate_transparency_window_start]
+other = "Inizio finestra"
+
+[certificate_transparency_window_end]
+other = "Fine finestra"
+
+[overview]
+other = "Panoramica"
+
+[subscriber_information]
+other = "Informazioni per gli abbonati"
+
+[advanced_subscriber_information]
+other = "Informazioni avanzate per gli abbonati"
+
+[client_developer_information]
+other = "Informazioni per gli sviluppatori del client"
+
+[acme_divergences]
+other = "Differenze dall'attuale bozza di ACME"
+
+[acme_divergences_rfc]
+other = "Differenze dall'RFC ACME"
+
+[onboarding_customers]
+# I have no idea how to translate this
+other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Bottone dona con PayPal"
+
+[paypal_donate_title]
+other = "Dona con PayPal"
+
+[not_found]
+other = "Quella pagina non esiste, per favore controlla l'indirizzo."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/anno (USD)"
+
+[3y_commitment]
+other = "con un impegno di 3 anni"
+
+[1_99_employees]
+other = "1-99 dipendenti"
+
+[100_999_employees]
+other = "100-999 dipendenti"
+
+[1000_employees]
+other = "1000+ dipendenti"

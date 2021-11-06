@@ -2,10 +2,9 @@
   "name": "letsencrypt.org",
   "version": "1.0.0",
   "description": "Let's Encrypt website",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "htmlhint": "^0.15.1"
+    "eslint": "^8.1.0",
+    "htmlhint": "^0.16.0"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'content/**/*.html'",
