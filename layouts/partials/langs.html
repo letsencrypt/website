@@ -41,6 +41,8 @@
         {{ $scratch.Set "view_in_xxx" "Xem bằng tiếng Việt" }}
       {{ else if eq .Language.Lang "he" }}
         {{ $scratch.Set "view_in_xxx" "לעבור לעברית" }}
+      {{ else if eq .Language.Lang "uk" }}
+        {{ $scratch.Set "view_in_xxx" "Переглянути українською" }}
       {{ else if eq .Language.Lang "it" }}
         {{ $scratch.Set "view_in_xxx" "Visualizza in italiano" }}
       {{ else }}

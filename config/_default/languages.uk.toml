@@ -1,0 +1,13 @@
+title = "Let's Encrypt - Free SSL/TLS Certificates"
+contentDir = "content/uk"
+languageName = "Українська"
+languageCode = "uk-UA"
+beforeColon = ""
+weight = 670
+description = """
+  Let's Encrypt - це безкоштовний, автоматизований і відкритий Центр Сертифікації, створений для вас
+  некомерційною організацією <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|,"
