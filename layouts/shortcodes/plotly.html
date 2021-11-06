@@ -44,6 +44,8 @@
     <script src="/js/plotly-locale-vi.js" defer></script>
 {{ else if eq "he" .Page.Language.Lang }}
     <script src="/js/plotly-locale-he.js" defer></script>
+{{ else if eq "it" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-it.js" defer></script>
 {{ else }}
     {{ errorf "Missing plotly for lang %q in layouts/shortcodes/plotly.html" .Page.Language.Lang }}
 {{ end }}
