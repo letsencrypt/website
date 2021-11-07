@@ -22,3 +22,4 @@ paypalCountry = "IT"
 # Ex. for -1 2345.67 -> "-|.| "
 # Doc: https://gohugo.io/functions/numfmt/
 numberFormat = "-|.|,"
+viewInThatLanguage = "Visualizza in italiano"

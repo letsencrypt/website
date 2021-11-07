@@ -69,11 +69,6 @@ other = "語言"
 [view_in_english]
 other = "查看英文版本"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "使用正體中文閱讀本網頁。"
-
 [old_version]
 other = "請注意：英文版本（原版）在本翻譯後有改動"
 

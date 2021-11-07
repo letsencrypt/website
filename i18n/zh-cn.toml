@@ -81,11 +81,6 @@ other = "切换语言"
 [view_in_english]
 other = "阅读英文页面"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "阅读简体中文页面"
-
 [old_version]
 other = "注意：本页面有较新的英文版本。"
 

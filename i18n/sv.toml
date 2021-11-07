@@ -81,11 +81,6 @@ other = "Språk"
 [view_in_english]
 other = "Visa på engelska"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "Visa på svenska"
-
 [old_version]
 other = "Observera: Den engelska versionen har uppdaterats sedan översättningen"
 
