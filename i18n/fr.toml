@@ -13,7 +13,7 @@ other = "Faire un don"
 other = "Sponsoriser"
 
 [home_hero_annual_report]
-other = "Lisez notre rapport annuel 2019"
+other = "Lisez notre <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report-First-Look.pdf'>rapport annuel 2021</a>"
 
 [home_hero_desktop]
 other = "Bureau"

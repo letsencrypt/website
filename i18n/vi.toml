@@ -13,7 +13,7 @@ other = "Đóng Góp"
 other = "Nhà Tài Trợ"
 
 [home_hero_annual_report]
-other = "Đọc Báo Cáo Thường Niên năm 2019 của Chúng Tôi"
+other = "Đọc Báo Cáo Thường Niên năm <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report-First-Look.pdf'>2021</a> của Chúng Tôi"
 
 [home_hero_desktop]
 other = "Desktop"
