@@ -81,11 +81,6 @@ other = "Ngôn Ngữ"
 [view_in_english]
 other = "Xem bằng tiếng Anh"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "Xem bằng tiếng Việt"
-
 [old_version]
 other = "Lưu ý: Phiên bản tiếng Anh đã được cập nhật kể từ khi dịch"
 

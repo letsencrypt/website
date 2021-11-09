@@ -69,11 +69,6 @@ other = "Lenguajes"
 [view_in_english]
 other = "Ver en inglés"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Ver en español"
-
 [old_version]
 other = "Nota: La versión en inglés ha sido actualizada desde está traducción"
 

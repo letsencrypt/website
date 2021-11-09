@@ -12,3 +12,4 @@ paypalDonateImage = "https://www.paypalobjects.com/he_IL/i/btn/btn_donateCC_LG.g
 paypalCountry = "IL"
 numberFormat = "-|.|,"
 languagedirection = "rtl"
+viewInThatLanguage = "לעבור לעברית"

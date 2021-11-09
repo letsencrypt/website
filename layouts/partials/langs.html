@@ -10,48 +10,13 @@
 
   {{ range .Page.Translations }}
     {{ if and (ne "en" .Language.Lang) ( not .Page.Params.untranslated ) }}
-
-      {{/* Note for translators : the text must be [view_in_xxx] */}}
-      {{ $scratch := newScratch }}
-      {{ if eq .Language.Lang "fr"  }}
-        {{ $scratch.Set "view_in_xxx" "Voir en Français" }}
-      {{ else if eq .Language.Lang "de" }}
-        {{ $scratch.Set "view_in_xxx" "Auf Deutsch ansehen" }}
-      {{ else if eq .Language.Lang "pt-br" }}
-        {{ $scratch.Set "view_in_xxx" "Ver em Português (do brasil)" }}
-      {{ else if eq .Language.Lang "ru" }}
-        {{ $scratch.Set "view_in_xxx" "Просмотреть на русском" }}
-      {{ else if eq .Language.Lang "zh-cn" }}
-        {{ $scratch.Set "view_in_xxx" "使用简体中文阅读本网页。" }}
-      {{ else if eq .Language.Lang "zh-tw" }}
-        {{ $scratch.Set "view_in_xxx" "使用正體中文閲讀本網頁。" }}
-      {{ else if eq .Language.Lang "es" }}
-        {{ $scratch.Set "view_in_xxx" "Ver en español" }}
-      {{ else if eq .Language.Lang "ko" }}
-        {{ $scratch.Set "view_in_xxx" "한국어로 보기" }}
-      {{  else if eq .Language.Lang "id" }}
-        {{ $scratch.Set "view_in_xxx" "Lihat dalam Bahasa Indonesia" }}
-      {{ else if eq .Language.Lang "ja" }}
-        {{ $scratch.Set "view_in_xxx" "日本語で表示する" }}
-      {{ else if eq .Language.Lang "sr" }}
-        {{ $scratch.Set "view_in_xxx" "Pročitaj na Srpskom" }}
-      {{ else if eq .Language.Lang "sv" }}
-        {{ $scratch.Set "view_in_xxx" "Visa på svenska" }}
-      {{ else if eq .Language.Lang "vi" }}
-        {{ $scratch.Set "view_in_xxx" "Xem bằng tiếng Việt" }}
-      {{ else if eq .Language.Lang "he" }}
-        {{ $scratch.Set "view_in_xxx" "לעבור לעברית" }}
-      {{ else if eq .Language.Lang "uk" }}
-        {{ $scratch.Set "view_in_xxx" "Переглянути українською" }}
-      {{ else if eq .Language.Lang "it" }}
-        {{ $scratch.Set "view_in_xxx" "Visualizza in italiano" }}
-      {{ else }}
-        {{ errorf "Missing markup for lang %q in layouts/partials/langs.html" .Page.Language.Lang }}
-      {{ end }}
-      
       <p data-langswitch="{{ .Language.Params.languageCode }}" style="display:none">
         <a lang="{{ .Language.Params.languageCode }}" hreflang="{{ .Language.Params.languageCode }}" href="{{ .RelPermalink }}">
-          {{ $scratch.Get "view_in_xxx" }}
+        {{ if .Language.Params.viewInThatLanguage  }}
+          {{ .Language.Params.viewInThatLanguage }}
+        {{ else }}
+          {{ errorf "Missing 'viewInThatLanguage' for lang %q in 'config/_default/languages.%s.toml'" .Page.Language.Lang .Page.Language.Lang }}
+        {{ end }}
         </a>
       </p>
       

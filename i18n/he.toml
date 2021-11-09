@@ -81,11 +81,6 @@ other = "שפות"
 [view_in_english]
 other = "מעבר לאנגלית"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "מעבר לעברית"
-
 [old_version]
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"
 

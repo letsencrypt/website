@@ -78,11 +78,6 @@ other = "Язык"
 [view_in_english]
 other = "Просмотреть на английском"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Просмотреть на русском"
-
 [old_version]
 other = "Внимание! Английская версия сайта была обновлена, перевод неактуален"
 

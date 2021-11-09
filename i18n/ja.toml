@@ -78,11 +78,6 @@ other = "言語"
 [view_in_english]
 other = "英語で表示する"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "日本語で表示する"
-
 [old_version]
 other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"
 
