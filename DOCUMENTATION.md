@@ -45,7 +45,7 @@ The `lastmod` is localized using javascript (see `i18n.js`)
 
 ## How to inform visitors about the translations
 
-On the top of each English page with translations (pages really translated, not with the `untranslated` attribute), for each languages, a message says "See this page in XXX". The javascript (`i18n.js`) only displays the languages relevant to the visitor (see `layouts/_default/single.html`).
+On the top of each English page with translations (pages really translated, not with the `untranslated` attribute), for each language, a message says "See this page in XXX". The javascript (`i18n.js`) only displays the languages relevant to the visitor (see `layouts/_default/single.html`).
 
 # Glossary
 
@@ -75,7 +75,7 @@ The shortcode is called in the `.md` template with the translations for Platin/G
 
 # How to add a new page
 
-## If that page must appear in another languages than English
+## If that page must appear in languages other than English
 
 ### If that page may be translated
 
