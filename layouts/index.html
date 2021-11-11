@@ -21,8 +21,8 @@
           <div class="grid-container">
             <h2 class="through-line"><a href="/blog/">{{ i18n "home_from_our_blog" }}</a></h2>
               <ul class="post-list">
-                {{ $enPosts := where .Sites.First.RegularPages "Type" "in" (slice "post") | first 3 }}
-                {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 3 | lang.Merge $enPosts }}
+                {{ $enPosts := where .Sites.First.RegularPages "Type" "in" (slice "post") | first 5 }}
+                {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 5 | lang.Merge $enPosts }}
                 {{ range $posts }}
                   <li>
                     <span class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}</span>

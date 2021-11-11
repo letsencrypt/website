@@ -69,11 +69,6 @@ other = "Jezik"
 [view_in_english]
 other = "Pročitaj na Engleskom"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Pročitaj na Srpskom"
-
 [old_version]
 other = "Napomena: Engleska verzija je izmenjena od poslednjeg prevoda na Srpski jezik"
 

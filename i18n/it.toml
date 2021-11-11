@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Un'autorità di certificazonie non-profit che fornisce certificati TLS a <span>200 milioni</span> di siti web."
+other = "Un'autorità di certificazione non-profit che fornisce certificati TLS a <span>200 milioni</span> di siti web."
 
 [home_hero_getting_started]
 other = "Come iniziare"
@@ -13,7 +13,7 @@ other = "Dona"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Leggi il nostro Report annuale del 2019"
+other = "Leggi il nostro <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report-First-Look.pdf'>Report annuale del 2021</a>"
 
 [home_hero_desktop]
 other = "Desktop"
@@ -77,11 +77,6 @@ other = "Lingue"
 
 [view_in_english]
 other = "Visualizza in inglese"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "Visualizza in italiano"
 
 [old_version]
 other = "Nota: La versione inglese è stata aggiornata dopo l'ultima traduzione"

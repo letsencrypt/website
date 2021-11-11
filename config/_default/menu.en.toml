@@ -6,12 +6,10 @@ url = "https://community.letsencrypt.org/"
 name = "Donate"
 weight = 30
 identifier = "donate"
-url = "/donate/"
 [[main]]
 name = "About Us"
 weight = 40
 identifier = "about"
-url = "/about/"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
