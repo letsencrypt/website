@@ -10,4 +10,5 @@ nohup.out
 static/js/main.min.js
 static/css/main.min.css
 resources/_gen/
+.hugo_build.lock
 .vscode/
