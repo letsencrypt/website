@@ -67,6 +67,7 @@
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}
+				{{- $scratch.Set "content" (replace ($scratch.Get "content") "<img " "<img loading=\"lazy\" ") -}}
 				{{- $scratch.Get "content" | safeHTML -}}
 			</div>
 			{{- end -}}
@@ -120,6 +121,7 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}
+		{{- $scratch.Set "content" (replace ($scratch.Get "content") "<img " "<img loading=\"lazy\" ") -}}
 		{{- $scratch.Get "content" | safeHTML -}}
 	{{- end -}}
 	</div>
