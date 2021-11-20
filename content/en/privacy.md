@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2021-03-07
+lastmod: 2021-08-31
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -37,8 +37,6 @@ When you are a Visitor browsing the Let’s Encrypt web site, you have the optio
 You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 If you register to use the Let’s Encrypt community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
-
-Additionally, we use Google Analytics to gauge traffic and popular pages on our web site. As part of that service, we place Google Analytics cookies on our site. These cookies do not contain personal information but can uniquely identify your browser software over time on our site. We respect the [Do Not Track](http://donottrack.us/) header by strictly limiting the information our analytics services can collect and share for all Visitors.
 
 ## We Do Not Sell Your Data or Information
 
