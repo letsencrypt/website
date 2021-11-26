@@ -1,5 +1,5 @@
 {
-	"lastmod": "2021-10-31",
+	"lastmod": "2021-11-24",
 	"categories": [
 		"Bash",
 		"C",
@@ -776,7 +776,7 @@
 		},
 		{
 			"name": "acme-client-portable",
-			"url": "https://github.com/graywolf/acme-client-portable",
+			"url": "https://sr.ht/~graywolf/acme-client-portable/",
 			"category": "C",
 			"acme_v2": "true"
 		},
