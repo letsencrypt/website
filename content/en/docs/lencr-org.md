@@ -8,7 +8,7 @@ show_lastmod: 1
 ---
 
 
-# What's lencr.org?
+# What's `lencr.org`?
 
 `lencr.org` is a domain name owned by Let's Encrypt. We use it to host data
 that is referenced inside the certificates we issue.
