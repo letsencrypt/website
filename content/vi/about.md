@@ -14,7 +14,7 @@ Let's Encrypt là chứng nhận (CA) mở, miễn phí và tự động, hoạt
 
 Chúng tôi cung cấp cho mọi người các chứng chỉ kỹ thuật số họ cần để kích hoạt HTTPS (SSL/TLS) cho các trang web, miễn phí, theo cách thân thiện nhất với người dùng mà chúng tôi có thể. Chúng tôi làm điều này bởi vì chúng tôi muốn tạo ra một trang web an toàn và bảo mật hơn.
 
-Bạn có thể đọc đánh giá năm gần đây nhất của chúng tôi bằng cách tải về báo cáo hàng năm của chúng tôi ([Desktop](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
+Bạn có thể đọc đánh giá năm gần đây nhất của chúng tôi bằng cách tải về báo cáo hàng năm của chúng tôi ([Desktop](https://www.abetterinternet.org/annual-reports/), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 Các nguyên tắc chính phía sau Let's Encrypt là:
 

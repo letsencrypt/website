@@ -14,7 +14,7 @@ Let's Encrypt è un autorità di certificazione (CA) libera, automatizzata e gra
 
 Forniamo alle persone i certificati digitali che necessitano per abilitare HTTPS (SSL/TLS) per i siti web, gratis, nel modo più amichevole per l'utente possibile. Lo facciamo perché vogliamo creare un Web più sicuro e rispettoso della privacy.
 
-Puoi leggere il nostro anno più recente in recensione scaricando il nostro [rapporto annuale](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
+Puoi leggere il nostro anno più recente in recensione scaricando il nostro [rapporto annuale](https://www.abetterinternet.org/annual-reports/).
 
 I principi chiave dietro Let's Encrypt sono:
 
