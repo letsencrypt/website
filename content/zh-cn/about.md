@@ -14,7 +14,7 @@ Let's Encrypt 是一家免费、开放、自动化的证书颁发机构（CA）�
 
 我们以尽可能对用户友好的方式免费提供为网站启用 HTTPS（SSL/TLS）所需的数字证书。这是因为我们想要创建一个更安全，更尊重隐私的 Web 环境。
 
-您可以下载我们的年度报告以阅读我们最近一年的总结 ([电脑下载](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [手机下载](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
+您可以下载我们的年度报告以阅读我们最近一年的总结 ([电脑下载](https://www.abetterinternet.org/annual-reports/), [手机下载](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 Let's Encrypt的关键原则为：
 

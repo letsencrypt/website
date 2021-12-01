@@ -6,7 +6,7 @@ title: "A Year-End Letter from the Executive Director of Let's Encrypt and ISRG"
 slug: executive-director-letter
 ---
 
-> This letter was originally published in our [2020 annual report](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
+> This letter was originally published in our [2020 annual report](https://www.abetterinternet.org/annual-reports/).
 
 ISRG’s first project, Let’s Encrypt, has been wildly successful. We’re now helping to secure [more than 225 million websites](https://letsencrypt.org/stats/) and the Web is making great progress towards 100% HTTPS. We’ve put in a lot of hard work and dealt with some challenges along the way, but at a high level the outlook is quite sunny. I’m incredibly proud to share some of what our organization has accomplished in 2020.
 
@@ -16,7 +16,7 @@ When digital security and privacy is your goal, ease of use has to be your focus
 
 HTTPS has been around since the mid-90s but uptake was abysmally slow because SSL/TLS certificates weren’t easy to get or manage. Let’s Encrypt made getting and managing certificates easy and as a result HTTPS adoption rates shot up. Critically, the answer wasn’t to get people to think more about their certificates—we needed to make it possible for people to spend much less time thinking about certificates. Ideally we’d be invisible—server software should just get and manage certificates automatically.
 
-Our next project after Let’s Encrypt is going live shortly: [ISRG Prio Services](https://www.abetterinternet.org/prio/). It’s a system for collecting digital metrics that allows organizations to collect the information they need without any entity having the ability to access any individual user’s data. Much like Let’s Encrypt, it protects people without them having to know anything about it. 
+Our next project after Let’s Encrypt is going live shortly: [ISRG Prio Services](https://www.abetterinternet.org/prio/). It’s a system for collecting digital metrics that allows organizations to collect the information they need without any entity having the ability to access any individual user’s data. Much like Let’s Encrypt, it protects people without them having to know anything about it.
 
 Despite 2020 being a year of unprecedented, global challenges, ISRG is well positioned for the years ahead. Our current momentum is possible through new major in-kind donations, nearly 90% of our existing sponsors renewing their support for 2020, funding from the Ford Foundation and the Bill & Melinda Gates Foundation, and by welcoming new major sponsors, including AWS, Thales, and Avast.
 

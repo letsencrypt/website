@@ -14,7 +14,7 @@ Let's Encrypt är en gratis, automatiserad och öppen certifikatutgivare (CA, Ce
 
 Vi ger människor de digitala certifikat som behövs för att aktivera HTTPS (SSL/TLS) på webbsidor, gratis, på det mest användarvänliga sätt vi kan. Vi gör detta för att vi vill skapa en säkrare och mer integritetsrespekterande webb.
 
-Du kan läsa om vårt gångna år genom att ladda ner vår årsrapport ([dator](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [mobil](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
+Du kan läsa om vårt gångna år genom att ladda ner vår årsrapport ([dator](https://www.abetterinternet.org/annual-reports/), [mobil](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 Huvudprinciperna bakom Let's Encrypt är:
 

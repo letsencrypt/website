@@ -14,7 +14,7 @@ Let's Encrypt est une autorité de certification (AC ou CA pour Certificate Auth
 
 Nous donnons aux gens les certificats numériques dont ils ont besoin pour activer HTTPS (SSL/TLS) pour les sites Web, gratuitement, de la manière la plus intuitive possible. Nous faisons cela parce que nous voulons créer un Web plus sûr et respectueux de la vie privée.
 
-Pour en savoir plus sur notre dernière année, téléchargez notre rapport annuel ([Bureau](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
+Pour en savoir plus sur notre dernière année, téléchargez notre rapport annuel ([Bureau](https://www.abetterinternet.org/annual-reports/), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
 
 Les principes clés de Let's Encrypt sont les suivants :
 

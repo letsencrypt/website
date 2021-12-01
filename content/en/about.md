@@ -14,7 +14,7 @@ Let's Encrypt is a free, automated, and open certificate authority (CA), run for
 
 We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
 
-You can read about our most recent year in review by downloading our [annual report](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
+You can read about our most recent year in review by downloading our [annual report](https://www.abetterinternet.org/annual-reports/).
 
 The key principles behind Let's Encrypt are:
 
