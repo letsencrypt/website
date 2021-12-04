@@ -7,7 +7,7 @@ slug: draft-isrg-cp
 ---
 
 Update 2015-10-12: These documents are now out of date. Please visit our <a
-href="https://letsencrypt.org/repository/">Policy and Legal Repository</a> for
+href="/repository/">Policy and Legal Repository</a> for
 up-to-date documents.
 
 Today we're publishing a <a href="/documents/ISRG-CP-May-5-2015.pdf">draft of our Certificate Policy (CP)</a>. This is an important document for any Certificate Authority (CA), and we want to give people a chance to review it before we start issuing certificates. Please <a href="https://groups.google.com/a/letsencrypt.org/forum/#!forum/ca-dev">let us know</a> if you have any questions or comments.

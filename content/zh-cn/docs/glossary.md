@@ -81,7 +81,7 @@ show_lastmod: 1
 
 {{% def id="IDNA" name="应用程序中的国际化域名" english="Internationalized Domain Names for Applications" abbr="IDNA" %}} 详见[国际化域名](#def-IDN)。 {{% /def %}}
 
-{{% def id="IDN" name="国际化域名" english="Internationalized Domain Name" abbr="IDN" %}} 含有除了 `a` 到 `z`、`0` 到 `9` 以及短横线（`-`）以外字符的域名。比如，它们可以使用阿拉伯文、中文、西里尔文、泰米尔文、希伯来文或其他基于拉丁字母表的使用变音符号或连体字母的字符。编码后的 IDN 域名以 `xn--` 开头。[Let's Encrypt](#def-LE) 支持 IDN：[https://letsencrypt.org/2016/10/21/introducing-idn-support.html](https://letsencrypt.org/2016/10/21/introducing-idn-support.html)。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E5%9F%9F%E5%90%8D) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" name="国际化域名" english="Internationalized Domain Name" abbr="IDN" %}} 含有除了 `a` 到 `z`、`0` 到 `9` 以及短横线（`-`）以外字符的域名。比如，它们可以使用阿拉伯文、中文、西里尔文、泰米尔文、希伯来文或其他基于拉丁字母表的使用变音符号或连体字母的字符。编码后的 IDN 域名以 `xn--` 开头。[Let's Encrypt](#def-LE) 支持 IDN：[https://letsencrypt.org/2016/10/21/introducing-idn-support.html](/2016/10/21/introducing-idn-support.html)。[维基百科条目](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E5%9F%9F%E5%90%8D) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
 {{% def id="ISRG" name="互联网安全研究组" english="Internet Security Research Group" abbr="ISRG" %}} 运营 [Let's Encrypt](#def-LE) 的组织：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。[维基百科条目](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 

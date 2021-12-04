@@ -20,7 +20,7 @@ We are issuing certificates from our production ECDSA intermediate to [allow-lis
 
 * Enabled: February 19, 2020
 
-We now validate domain control from [multiple network perspectives](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+We now validate domain control from [multiple network perspectives](/2020/02/19/multi-perspective-validation.html).
 
 ## Certificate Transparency Log
 

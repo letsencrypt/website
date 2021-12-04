@@ -16,4 +16,4 @@ The Internet Society is a GEC Steering Committee member because access to encryp
  
 Let’s Encrypt is a great success story, and an outstanding example of how supporting public interest infrastructure, such as a certificate authority operated for the public’s benefit, helps ensure everyone has access to the benefits of encryption.
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.

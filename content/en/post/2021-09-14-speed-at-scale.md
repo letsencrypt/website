@@ -24,4 +24,4 @@ Today, Let’s Encrypt certificates cover 4.5 million domains for Shopify. That 
 
 We’re proud to serve Shopify with a reliable, speedy, and free service, and grateful for their longtime support of our work by being a sponsor. Together, we’re helping bolster a Web that’s free, open and more secure for everyone, everywhere.
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.

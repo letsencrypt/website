@@ -17,7 +17,7 @@ show_lastmod: 1
 
 * הופעל: 19 בפברואר, 2020
 
-אנחנו מתקפים שליטה על שמות תחום דרך [מגוון פרספקטיבות רשת](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+אנחנו מתקפים שליטה על שמות תחום דרך [מגוון פרספקטיבות רשת](/2020/02/19/multi-perspective-validation.html).
 
 ## יומן שקיפות אישורים
 

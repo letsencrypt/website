@@ -140,7 +140,7 @@ Ja, men inte alla klienter stöder detta. [Certbot](https://certbot.eff.org/) g�
 Vi publicerar inte en lista av IP-adresser som vi använder för validering och
 adresserna vi använder kan komma att ändras. Notera att vi nu [validerar från
 flera IP-adresser samtidigt
-(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+(engelska)](/2020/02/19/multi-perspective-validation.html).
 
 ## Jag förnyade framgångsrikt ett certifikat men igen validering gjordes den här gången --- hur kommer det sig?
 

@@ -7,7 +7,7 @@ show_lastmod: 1
 ---
 
 
-Das [IETF-standardisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME-Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für Let's Encrypt.
+Das [IETF-standardisierte](/2019/03/11/acme-protocol-ietf-standard.html) ACME-Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für Let's Encrypt.
 
 # API-Endpunkte
 

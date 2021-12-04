@@ -29,4 +29,4 @@ The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs a
 
 All ISRG keys are currently RSA keys. We are planning to generate ECDSA keys later this year.
 
-The generation of these keys and certificates is an important step in getting Let's Encrypt ready to issue certificates. In the next few weeks, we'll be saying some more about our plans for going live. In the mean time, we would love for you to [get involved](https://letsencrypt.org/getinvolved/).
+The generation of these keys and certificates is an important step in getting Let's Encrypt ready to issue certificates. In the next few weeks, we'll be saying some more about our plans for going live. In the mean time, we would love for you to [get involved](/getinvolved/).

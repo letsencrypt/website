@@ -101,7 +101,7 @@ Let’s Encrypt 证书是标准的域名验证性证书，因此您可以将它�
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
-我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。请注意，我们当前[从多个IP地址进行验证](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)。
+我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。请注意，我们当前[从多个IP地址进行验证](/2020/02/19/multi-perspective-validation.html)。
 
 ## 我成功续期了证书，但这次没有要求我验证。为什么会这样？
 

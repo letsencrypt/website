@@ -6,7 +6,7 @@ title: "The Next Gen Database Servers Powering Let's Encrypt"
 slug: next-gen-database-servers
 ---
 
-Let’s Encrypt helps to protect a huge portion of the Web by providing TLS certificates to more than [235 million websites](https://letsencrypt.org/stats/). A database is at the heart of how Let’s Encrypt manages certificate issuance. If this database isn’t performing well enough, it can cause API errors and timeouts for our subscribers. Database performance is the single most critical factor in our ability to scale while meeting service level objectives. In late 2020, we upgraded our database servers and we’ve been very happy with the results.
+Let’s Encrypt helps to protect a huge portion of the Web by providing TLS certificates to more than [235 million websites](/stats/). A database is at the heart of how Let’s Encrypt manages certificate issuance. If this database isn’t performing well enough, it can cause API errors and timeouts for our subscribers. Database performance is the single most critical factor in our ability to scale while meeting service level objectives. In late 2020, we upgraded our database servers and we’ve been very happy with the results.
 
 ## What exactly are we doing with these servers?
 
@@ -91,4 +91,4 @@ This database upgrade was necessary as more people rely on Let’s Encrypt for t
 
 ## Support Let's Encrypt
 
-We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.

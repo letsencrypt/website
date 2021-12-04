@@ -12,7 +12,7 @@ Let's Encrypt has reached a point where we're ready to announce our launch sched
 * First certificate: Week of July 27, 2015
 * General availability: Week of September 14, 2015
 
-We will issue the first end entity certificates under our root under tightly controlled circumstances. No cross-signature will be in place yet, so the certificates will not validate unless <a href="https://letsencrypt.org/certificates/">our root</a> is installed in client software. As we approach general availability we will issue more and more certificates, but only for a pre-approved set of domains. This limited issuance period will give us time to further ensure that our systems are secure, compliant, and scalable.
+We will issue the first end entity certificates under our root under tightly controlled circumstances. No cross-signature will be in place yet, so the certificates will not validate unless <a href="/certificates/">our root</a> is installed in client software. As we approach general availability we will issue more and more certificates, but only for a pre-approved set of domains. This limited issuance period will give us time to further ensure that our systems are secure, compliant, and scalable.
 
 When it's time for general availability, we will open up our systems to certificate requests for any domain. A cross-signature from <a href="https://identrust.com/">IdenTrust</a> will be in place for general availability, so that our certificates will validate automatically for the vast majority of consumers.
 

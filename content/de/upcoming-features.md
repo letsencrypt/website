@@ -21,7 +21,7 @@ Derzeit signiert Let's Encrypt nur Endentität-Zertifikate mit RSA-Intermediates
 
 * Aktiviert: 19. Februar 2020
 
-Wir validieren jetzt die Domänenkontrolle aus [mehreren Netzwerkperspektiven (network perspectives)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Wir validieren jetzt die Domänenkontrolle aus [mehreren Netzwerkperspektiven (network perspectives)](/2020/02/19/multi-perspective-validation.html).
 
 ## Certificate Transparency Log
 

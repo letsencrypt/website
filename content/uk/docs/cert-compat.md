@@ -20,7 +20,7 @@ show_lastmod: 1
 * [macOS >= 10.12.1](https://twitter.com/letsencrypt/status/790960929504497665?lang=en)
 * [iOS>= 10](https://support.apple.com/en-us/HT207177) ([iOS 9 не містить в собі](https://support.apple.com/en-us/HT205205))
 * [ iPhone 5 і вище можуть оновитись до iOS 10](https://en.wikipedia.org/wiki/IPhone_5) і таким чином можуть довіряти ISRG Root X1
-* [ Android >>= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) ( але Android>>= 2.3.6 буде працювати за замовчуванням [ через наш спеціальний крос-знак](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
+* [ Android >>= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) ( але Android>>= 2.3.6 буде працювати за замовчуванням [ через наш спеціальний крос-знак](/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
 * [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist)( зі застосованими оновленнями)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (із застосованими оновленнями)

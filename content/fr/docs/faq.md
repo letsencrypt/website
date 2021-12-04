@@ -52,7 +52,7 @@ Nous vous recommandons de signaler ces sites à Google Safe Browsing et au progr
 
 Si vous souhaitez en savoir plus sur nos politiques et notre justification, vous pouvez le faire ici:
 
-[https://letsencrypt.org/2015/10/29/phishing-and-malware.html](https://letsencrypt.org/2015/10/29/phishing-and-malware.html)
+[https://letsencrypt.org/2015/10/29/phishing-and-malware.html](/2015/10/29/phishing-and-malware.html)
 
 # <a id="technical">Questions techniques</a>
 
@@ -99,7 +99,7 @@ Il existe une grand nombre de [clients ACME](/docs/client-options) disponibles. 
 Oui, mais tous les clients ne prennent pas en charge cette fonctionnalité. [Certbot](https://certbot.eff.org/) le fait.
 
 ## Quelles adresses IP Let's Encrypt utilise-t-il pour valider mon serveur Web?
-Nous ne publions pas de liste d'adresses IP que nous utilisons pour les validations, de plus ces adresses IP peuvent changer à tout moment. Notez que notre [validation est maintenant réalisée à partir de plusieurs adresses IP](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Nous ne publions pas de liste d'adresses IP que nous utilisons pour les validations, de plus ces adresses IP peuvent changer à tout moment. Notez que notre [validation est maintenant réalisée à partir de plusieurs adresses IP](/2020/02/19/multi-perspective-validation.html).
 
 ## J'ai renouvelé avec succès un certificat, mais cette fois-ci la validation n'a pas eu lieu  - comment est-ce possible?
 

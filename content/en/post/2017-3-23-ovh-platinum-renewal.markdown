@@ -7,13 +7,13 @@ title: OVH Renews Platinum Sponsorship of Let's Encrypt
 slug: ovh-platinum-renewal
 ---
 
-We’re pleased to announce that [OVH](https://www.ovh.com/) has renewed their support for Let’s Encrypt as a [Platinum sponsor](https://letsencrypt.org/sponsors/) for the next three years. OVH’s strong support for Let’s Encrypt will go a long way towards creating a more secure and privacy-respecting Web.
+We’re pleased to announce that [OVH](https://www.ovh.com/) has renewed their support for Let’s Encrypt as a [Platinum sponsor](/sponsors/) for the next three years. OVH’s strong support for Let’s Encrypt will go a long way towards creating a more secure and privacy-respecting Web.
 
 OVH initially got in touch with Let’s Encrypt to become a Platinum sponsor shortly after our public launch in December of 2015. It was clear that they understood the need for Let’s Encrypt and our potential impact on the Web.
 
 "Over a year ago, when Let’s Encrypt came out of beta, it was an obvious choice for OVH to support this new certificate authority, and become a Platinum sponsor," said Octave Klaba, Founder, CTO and Chairman. "We provided free Let’s Encrypt certificates to all our Web customers. At OVH today, over 2.2 million websites can be reached over a secure connection, and a total of 3.6 million certificates were created for our customers during the first year."
 
-In the past year, Let’s Encrypt has grown to provide [28 million certificates to more than 31 million websites](https://letsencrypt.org/stats/). The Web went from around 40% HTTPS page loads at the end of 2015 to 50% HTTPS page loads at the start of 2017. This is phenomenal growth for the Web, and Let’s Encrypt is proud to have been a driving force behind it.
+In the past year, Let’s Encrypt has grown to provide [28 million certificates to more than 31 million websites](/stats/). The Web went from around 40% HTTPS page loads at the end of 2015 to 50% HTTPS page loads at the start of 2017. This is phenomenal growth for the Web, and Let’s Encrypt is proud to have been a driving force behind it.
 
 Of course, it wouldn’t have been possible without major hosting providers like OVH making it easier for their customers to enable HTTPS with Let’s Encrypt. OVH was one of the first major hosting providers to make HTTPS available to a large number of their customers, and they are continuing to expand the scope of services that are secure by default.
 

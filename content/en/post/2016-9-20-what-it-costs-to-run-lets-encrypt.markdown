@@ -12,7 +12,7 @@ Today we’d like to explain what it costs to run Let’s Encrypt. We’re doing
 
 Let’s Encrypt will require about $2.9M USD to operate in 2017. We believe this is an incredible value for a secure and reliable service that is capable of issuing certificates globally, to every server on the Web free of charge.
 
-We’re currently working to raise the money we need to operate through the next year. Please consider [donating](https://letsencrypt.org/donate/) or [becoming a sponsor](https://letsencrypt.org/become-a-sponsor/) if you’re able to do so! In the event that we end up being able to raise more money than we need to just keep Let’s Encrypt running we can look into adding other services to improve access to a more secure and privacy-respecting Web.
+We’re currently working to raise the money we need to operate through the next year. Please consider [donating](/donate/) or [becoming a sponsor](/become-a-sponsor/) if you’re able to do so! In the event that we end up being able to raise more money than we need to just keep Let’s Encrypt running we can look into adding other services to improve access to a more secure and privacy-respecting Web.
 
 Here’s how our 2017 budget breaks down:
 
@@ -63,6 +63,6 @@ Legal costs go towards attorney time, primarily in the areas of corporate govern
 
 Our 2016 budget is very similar to our 2017 budget, the major difference being that we will only spend approximately $2.0M USD due to a number of our staff starting after the beginning of the year. We will pay full staffing costs next year because all of the staff that joined us in 2016 will be on our payroll for the entirety of 2017.
 
-Currently, the majority of our funding comes from [corporate sponsorships](https://letsencrypt.org/sponsors/). If your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We’re working to make grants and [individual contributions](https://letsencrypt.org/donate/) more significant sources of income over the next year.
+Currently, the majority of our funding comes from [corporate sponsorships](/sponsors/). If your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We’re working to make grants and [individual contributions](/donate/) more significant sources of income over the next year.
 
 We’re grateful for the industry and community support that we receive, and we look forward to continuing to create a more secure and privacy-respecting Web!

@@ -19,4 +19,4 @@ However, our plan has always been to operate as an independently trusted CA. Hav
 
 We have also applied to the Microsoft, Apple, Google, Oracle and Blackberry root programs. We look forward to acceptance into these programs as well.
 
-Let’s Encrypt depends on industry and community support. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on industry and community support. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

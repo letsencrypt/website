@@ -23,4 +23,4 @@ Update: Feb. 10 2010, instructions for getting a certificate with [Certbot](http
 
 [Let’s Encrypt Community Support](https://community.letsencrypt.org/) is an invaluable resource for our community, we strongly recommend making use of the site if you have any questions about Let’s Encrypt.
 
-Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

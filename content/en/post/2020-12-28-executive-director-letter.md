@@ -8,7 +8,7 @@ slug: executive-director-letter
 
 > This letter was originally published in our [2020 annual report](https://www.abetterinternet.org/annual-reports/).
 
-ISRG’s first project, Let’s Encrypt, has been wildly successful. We’re now helping to secure [more than 225 million websites](https://letsencrypt.org/stats/) and the Web is making great progress towards 100% HTTPS. We’ve put in a lot of hard work and dealt with some challenges along the way, but at a high level the outlook is quite sunny. I’m incredibly proud to share some of what our organization has accomplished in 2020.
+ISRG’s first project, Let’s Encrypt, has been wildly successful. We’re now helping to secure [more than 225 million websites](/stats/) and the Web is making great progress towards 100% HTTPS. We’ve put in a lot of hard work and dealt with some challenges along the way, but at a high level the outlook is quite sunny. I’m incredibly proud to share some of what our organization has accomplished in 2020.
 
 While I’m deeply appreciative of being in this position today, I don’t let it distract me, or our fantastic Board of Directors, from thinking diligently about the risks on the road ahead. A big part of our job is to look into the future, see threats and challenges, and prepare to face them as best we can. I’m sometimes asked what I view as the biggest threat to our organization and our ability to pursue our mission and my answer is simple: being taken for granted.
 

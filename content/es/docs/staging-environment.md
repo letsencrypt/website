@@ -18,7 +18,7 @@ Si está utilizando Certbot, puede utilizar nuestro entorno de prueba con el ind
 
 # Limites
 
-El entorno de prueba usa el mismo sistema de límites descritos para el [entorno de producción](https://letsencrypt.org/es/docs/rate-limits/) con las siguientes excepciones:
+El entorno de prueba usa el mismo sistema de límites descritos para el [entorno de producción](/es/docs/rate-limits/) con las siguientes excepciones:
 
 * El límite de **Certificados por Dominio Registrado** es de 30,000 por semana.
 * El límite de **Certificados Duplicados** es de 30,000 per semana.
@@ -28,7 +28,7 @@ El entorno de prueba usa el mismo sistema de límites descritos para el [entorno
 
 # Root Certificate
 
-El certificado intermedio para el entorno de prueba (["(STAGING) Artificial Apricot R3"](https://letsencrypt.org/certs/staging/letsencrypt-stg-int-r3.pem)) es emitido por un certificado raíz **que no está presente** en el almacen de certificados del navegador del cliente. Si desea modificar un cliente para confiar en el entorno de prueba con el fin de hacer tests, puede hacerlo agregando el certificado ["(STAGING) Pretend Pear X1"](https://letsencrypt.org/certs/staging/letsencrypt-stg-root-x1.pem) a su almacen de certificados de confianza. Importante: No agregue la raíz provisional o intermedia a una tienda de confianza que use para la navegación ordinaria u otras actividades, ya que no se auditan ni cumplen con los mismos estándares que nuestras raíces de producción, por lo que no es seguro usarlas para nada más que las pruebas.
+El certificado intermedio para el entorno de prueba (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem)) es emitido por un certificado raíz **que no está presente** en el almacen de certificados del navegador del cliente. Si desea modificar un cliente para confiar en el entorno de prueba con el fin de hacer tests, puede hacerlo agregando el certificado ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) a su almacen de certificados de confianza. Importante: No agregue la raíz provisional o intermedia a una tienda de confianza que use para la navegación ordinaria u otras actividades, ya que no se auditan ni cumplen con los mismos estándares que nuestras raíces de producción, por lo que no es seguro usarlas para nada más que las pruebas.
 
 # Transparencia de certificado
 

@@ -7,7 +7,7 @@ show_lastmod: 1
 ---
 
 
-[Стандартизованный IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) протокол ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/) - это краеугольный камень в концепции работы Let's Encrypt.
+[Стандартизованный IETF](/2019/03/11/acme-protocol-ietf-standard.html) протокол ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/) - это краеугольный камень в концепции работы Let's Encrypt.
 
 # Версии API
 

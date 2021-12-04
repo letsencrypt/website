@@ -17,7 +17,7 @@ show_lastmod: 1
 
 * 启用时间: 2020 年 2 月 19 日
 
-我们已通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
+我们已通过[多个网络视角](/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
 
 ## 证书透明度日志
 

@@ -25,7 +25,7 @@ mellancertifikat som kan användas för att signera lövcertifikat.
 * Aktiverat: den 19 februari 2020
 
 Nu validerar vi kontroll över en domän från [flera nätverksperspektiv
-(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+(engelska)](/2020/02/19/multi-perspective-validation.html).
 
 ## Certifikattransparenslogg
 

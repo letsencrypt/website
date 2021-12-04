@@ -54,9 +54,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} 憑證鏈。透過中間憑證列表，連結到儲存在憑證信任倉庫中的根憑證，來幫助[使用者代理](#def-user-agent)軟體判斷是否能信任一張[終端憑證](#def-leaf)。請注意，憑證鏈的選擇不是唯一的，網站提供了一個憑證鏈，然而使用者代理軟體可能會選擇另一條憑證鏈來驗證這張憑證。[維基百科](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 憑證政策。一系列的共同安全要求，描述對於使用者社群和應用程式的憑證用性。[ISRG Certificate Policy](https://letsencrypt.org/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [維基百科](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} 憑證政策。一系列的共同安全要求，描述對於使用者社群和應用程式的憑證用性。[ISRG Certificate Policy](/repository/#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [維基百科](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 憑證實作聲明。一份憑證頒發機構的聲明文件，內容包括對於憑證頒發、管理、註銷、更新或更換金鑰的實作方法。[ISRG Certification Practice Statement](https://letsencrypt.org/repository/#isrg-certification-practice-statement) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [維基百科](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} 憑證實作聲明。一份憑證頒發機構的聲明文件，內容包括對於憑證頒發、管理、註銷、更新或更換金鑰的實作方法。[ISRG Certification Practice Statement](/repository/#isrg-certification-practice-statement) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [維基百科](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} 關鍵擴展。憑證中被標示為"關鍵"的擴展欄位。憑證相關軟體如果不知道如何處理關鍵擴展欄位，它就必須拒絕該憑證。區分關鍵與非關鍵擴展，使得未來為了安全性而新增的擴展欄位，不會對舊軟體造成影響。{{% /def %}}
 
@@ -100,7 +100,7 @@ Note for translators:
 
 {{% def id="IDNA" name="Internationalized Domain Names for Applications" abbr="IDNA" %}} 應用程式中的國際化域名。請參考[國際化域名](#def-IDN)。 {{% /def %}}
 
-{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 國際化域名。含有不屬於 `a` 到 `z`和 `0` 到 `9` 以及連字號 `-` 的網域名稱。這些網域名稱可能含有阿拉伯文、中文、西里爾文、泰米爾文、希伯來文，或其他拉丁字母的變音符號或合體字。編碼後的 IDN 域名會以 `xn--` 為開頭。[Let's Encrypt](#def-LE) 支援頒發 IDN 域名的憑證：[https://letsencrypt.org/2016/10/21/introducing-idn-support.html](https://letsencrypt.org/2016/10/21/introducing-idn-support.html) 。[維基百科](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" name="Internationalized Domain Name" abbr="IDN" %}} 國際化域名。含有不屬於 `a` 到 `z`和 `0` 到 `9` 以及連字號 `-` 的網域名稱。這些網域名稱可能含有阿拉伯文、中文、西里爾文、泰米爾文、希伯來文，或其他拉丁字母的變音符號或合體字。編碼後的 IDN 域名會以 `xn--` 為開頭。[Let's Encrypt](#def-LE) 支援頒發 IDN 域名的憑證：[https://letsencrypt.org/2016/10/21/introducing-idn-support.html](/2016/10/21/introducing-idn-support.html) 。[維基百科](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890) - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
 {{% def id="ISRG" name="Internet Security Research Group" abbr="ISRG" %}} 在 [Let's Encrypt](#def-LE) 的上級組織：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。 [維基百科](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 

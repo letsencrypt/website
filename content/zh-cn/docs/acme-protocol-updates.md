@@ -8,7 +8,7 @@ show_lastmod: 1
 ---
 
 
-[IETF标准化的](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html)ACME协议[RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)是 Let's Encrypt 工作原理的基石。它目前是一份标准草案，尚未最终标准化为 RFC。随着协议规范的不断发展，Let's Encrypt 将使用 ACME 的更新版本。我们这样做是因为安全性是我们的主要关注点，而紧接着几乎同样重要的时向后兼容性。
+[IETF标准化的](/2019/03/11/acme-protocol-ietf-standard.html)ACME协议[RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)是 Let's Encrypt 工作原理的基石。它目前是一份标准草案，尚未最终标准化为 RFC。随着协议规范的不断发展，Let's Encrypt 将使用 ACME 的更新版本。我们这样做是因为安全性是我们的主要关注点，而紧接着几乎同样重要的时向后兼容性。
 
 # 目前使用的 API 端点
 

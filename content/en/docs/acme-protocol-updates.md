@@ -7,7 +7,7 @@ show_lastmod: 1
 ---
 
 
-The [IETF-standardized](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME protocol, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), is the cornerstone of how Let's Encrypt works.
+The [IETF-standardized](/2019/03/11/acme-protocol-ietf-standard.html) ACME protocol, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), is the cornerstone of how Let's Encrypt works.
 
 # API Endpoints
 

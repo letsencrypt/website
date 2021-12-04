@@ -7,7 +7,7 @@ show_lastmod: 1
 ---
 
 
-Le [standard IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) du protocole ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire du fonctionnement de Let's Encrypt.
+Le [standard IETF](/2019/03/11/acme-protocol-ietf-standard.html) du protocole ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire du fonctionnement de Let's Encrypt.
 
 # Terminaisons API
 

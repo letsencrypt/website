@@ -23,4 +23,4 @@ We set out to encrypt 100% of the Web. We’re excited to be off to a strong sta
 
 “We’re very proud to be a Gold Sponsor for Let’s Encrypt which leverages our industry-leading hardware security modules to protect their certificate authority system,” says Todd Moore, Vice President of Encryption Product Management at Gemalto. “Encryption by default is critical to privacy and security, and by working with Let’s Encrypt Gemalto is helping to deliver trust for the digital services that billions of people use every day.”
 
-Let’s Encrypt depends on industry and community support. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on industry and community support. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

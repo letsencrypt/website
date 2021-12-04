@@ -21,7 +21,7 @@ Actuellement, Let's Encrypt signe les certificats d'entité finale uniquement av
 
 * Activé : 19 Février 2020
 
-Désormais nous validons les noms de domaines via des [points réseaux géographiques multiples](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Désormais nous validons les noms de domaines via des [points réseaux géographiques multiples](/2020/02/19/multi-perspective-validation.html).
 
 ## Journal de Transparence des Certificats (CT log)
 

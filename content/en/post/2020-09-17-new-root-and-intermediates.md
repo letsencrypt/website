@@ -11,7 +11,7 @@ one root, four intermediates, and one cross-sign. These new certificates are
 part of our larger plan to improve privacy on the web, by making ECDSA
 end-entity certificates widely available, and by making certificates smaller.
 
-Given that we issue [1.5 million certificates every day](https://letsencrypt.org/stats/),
+Given that we issue [1.5 million certificates every day](/stats/),
 what makes these ones special? Why did we issue them? How did we issue them?
 Let’s answer these questions, and in the process take a tour of how
 Certificate Authorities think and work.
@@ -30,7 +30,7 @@ Authority (CA) also has some number of “intermediates”, certificates which
 are able to issue additional certificates but are not roots, which they use
 for day-to-day issuance.
 
-For the last [five years](https://letsencrypt.org/2015/06/04/isrg-ca-certs.html),
+For the last [five years](/2015/06/04/isrg-ca-certs.html),
 Let’s Encrypt has had one root: the [ISRG Root X1](https://crt.sh/?caid=7394),
 which has a 4096-bit RSA key and is valid until 2035.
 
@@ -41,7 +41,7 @@ first two were issued when Let’s Encrypt first began operations in 2015, and
 were valid for 5 years. The latter two were issued about a year later, in
 2016, and are also valid for 5 years, expiring about this time next year. All
 of these intermediates use 2048-bit RSA keys. In addition,
-[all of these intermediates are cross-signed](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html)
+[all of these intermediates are cross-signed](/2015/10/19/lets-encrypt-is-trusted.html)
 by IdenTrust’s DST Root CA X3, another root certificate controlled by a
 different certificate authority which is trusted by most root stores.
 
@@ -150,7 +150,7 @@ Cross-signing the intermediates directly has the opposite tradeoff. On the
 one hand, all of our chains will be the same length, with just one
 intermediate between the subscriber certificate and the widely-trusted ISRG
 Root X1. But on the other hand, when the ISRG Root X2 does become widely
-trusted, we’d have to [go through another chain switch](https://letsencrypt.org/2019/04/15/transitioning-to-isrg-root.html)
+trusted, we’d have to [go through another chain switch](/2019/04/15/transitioning-to-isrg-root.html)
 in order for anyone to gain the benefits of an all-ECDSA chain.
 
 In the end, we decided that providing the option of all-ECDSA chains was more
@@ -195,7 +195,7 @@ last thing we’d like to mention: how we actually went about issuing them.
 The creation of new root and intermediate certificates is a big deal, since
 their contents are so regulated and their private keys have to be so
 carefully protected. So much so that the act of issuing new ones is called a
-“ceremony”. Let’s Encrypt [believes strongly in automation](https://letsencrypt.org/about/),
+“ceremony”. Let’s Encrypt [believes strongly in automation](/about/),
 so we wanted our ceremony to require as little human involvement as possible.
 
 Over the last few months we’ve built a [ceremony tool](https://github.com/letsencrypt/boulder/tree/main/cmd/ceremony)
@@ -212,7 +212,7 @@ the decisions we’ve talked about above! Finally, on September 3rd, our
 Executive Director met with SREs at a secure datacenter to execute the whole
 ceremony, and record it for future audits.
 
-And now the ceremony is complete. We’ve updated [our certificates page](https://letsencrypt.org/certificates)
+And now the ceremony is complete. We’ve updated [our certificates page](/certificates)
 to include details about all of our new certificates, and are beginning the
 process of requesting that our new root be incorporated into various trust
 stores. We intend to begin issuing with our new intermediates over the coming
@@ -226,7 +226,7 @@ ongoing support of our vision to change security on the Web for the better.
 
 We depend on contributions from our community of users and supporters in
 order to provide our services. If your company or organization would like to
-[sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please
+[sponsor](/become-a-sponsor/) Let’s Encrypt please
 email us at sponsor@letsencrypt.org. We ask that you make an
-[individual contribution](https://letsencrypt.org/donate/) if it is within your
+[individual contribution](/donate/) if it is within your
 means.

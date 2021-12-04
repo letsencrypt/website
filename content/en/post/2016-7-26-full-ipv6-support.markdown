@@ -12,4 +12,4 @@ As IPv4 address space is exhausted, more and more people are deploying services 
 
 IPv6 is an exciting step forward which will allow the Internet to grow and reach more people. You can learn more about it by [watching this video](https://youtu.be/-Uwjt32NvVA) from Google’s Chief Internet Evangelist, Vint Cerf. We’re looking forward to the day when both TLS and IPv6 are ubiquitous.
 
-Let’s Encrypt depends on industry and community support. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on industry and community support. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

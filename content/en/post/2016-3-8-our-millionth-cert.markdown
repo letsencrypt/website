@@ -17,4 +17,4 @@ Our rapid growth is due to strong demand for an easy-to-use, low-cost, widely tr
 
 HTTPS has been around for a long time but according to Firefox telemetry only ~40% of websites and ~65% of transactions used HTTPS at the end of 2015. Those numbers should both be 100% if the Web is to provide the level of privacy and security that people expect, and Let's Encrypt is going to lead the way.
 
-Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on support from a wide variety of individuals and organizations. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

@@ -28,15 +28,15 @@ The number of certificates and unique domains we support continues to grow rapid
 
 {{< plotly >}}
 
-We expect strong growth again in 2019, likely up to 120M active certificates and 215M fully qualified domains. You can view our recently revamped [stats page](https://letsencrypt.org/stats/) for more information.
+We expect strong growth again in 2019, likely up to 120M active certificates and 215M fully qualified domains. You can view our recently revamped [stats page](/stats/) for more information.
 
-One of the reasons Let’s Encrypt is so easy to use is that our community has done great work making client software that works well for a wide variety of platforms. We’d like to thank everyone involved in the development of more than 85 [client software options](https://letsencrypt.org/docs/client-options/) for Let’s Encrypt. Support for our protocol, ACME, is [built in to Apache](https://letsencrypt.org/2017/10/17/acme-support-in-apache-httpd.html) and we’re hoping 2019 will be the year that it comes to Nginx.
+One of the reasons Let’s Encrypt is so easy to use is that our community has done great work making client software that works well for a wide variety of platforms. We’d like to thank everyone involved in the development of more than 85 [client software options](/docs/client-options/) for Let’s Encrypt. Support for our protocol, ACME, is [built in to Apache](/2017/10/17/acme-support-in-apache-httpd.html) and we’re hoping 2019 will be the year that it comes to Nginx.
 
 Other organizations and communities are also doing great work to promote HTTPS adoption, and thus stimulate demand for our services. For example, browsers are starting to make their users more aware of the risks associated with unencrypted HTTP (e.g. [Firefox](https://blog.mozilla.org/security/2018/01/15/secure-contexts-everywhere/), [Chrome](https://www.blog.google/products/chrome/milestone-chrome-security-marking-http-not-secure/)). Many hosting providers and CDNs are making it easier than ever for all of their customers to use HTTPS. [Government agencies](https://https.cio.gov/) are waking up to the need for stronger security to protect constituents. The media community is working to [Secure the News](https://securethe.news/).
 
 ## New Features
 
-In 2018 we introduced [several new features](https://letsencrypt.org/upcoming-features/), including ACMEv2 support and wildcard certificates. We’ve got some exciting features planned for 2019.
+In 2018 we introduced [several new features](/upcoming-features/), including ACMEv2 support and wildcard certificates. We’ve got some exciting features planned for 2019.
 
 The feature we’re most excited about is multi-perspective validation. Currently, when a subscriber requests a certificate, we validate domain control from a single network perspective. This is standard practice for CAs. If an attacker along the network path for the validation check can interfere with traffic they can potentially cause certificates to be issued that should not be issued. We’re most concerned about this [happening via BGP hijacking](https://www.princeton.edu/~pmittal/publications/bgp-tls-usenix18.pdf), and since BGP is not going to be secured any time soon, we needed to find another mitigation. The solution we intend to deploy in 2019 is multi-perspective validation, in which we will check from multiple network perspectives (distinct Autonomous Systems). This means that potential BGP hijackers would need to hijack multiple routes at the same time in order to pull off a successful attack, which is significantly more difficult than hijacking a single route. We are working with a talented research team at Princeton to design the most effective multi-perspective validation system we can, and have already turned parts of this feature on in our staging environment.
 
@@ -56,10 +56,10 @@ All of our infrastructure is managed by our Site Reliability Engineering (SRE) t
 
 We pride ourselves on being an efficient organization. In 2019 Let’s Encrypt will secure a massive portion of the Web with a budget of only $3.6M. We believe this represents an incredible value and that contributing to Let’s Encrypt is one of the most effective ways to help create a more secure and privacy-respecting Web.
 
-Our 2019 fundraising efforts are off to a strong start with Platinum sponsorships from Cisco, OVH, Mozilla, Google Chrome, Electronic Frontier Foundation, and Internet Society, as well as [many other Gold and Silver sponsors](https://letsencrypt.org/sponsors/). The Ford Foundation has renewed their grant to Let’s Encrypt as well. We are seeking additional sponsorship and grant assistance to meet our full needs for 2019.
+Our 2019 fundraising efforts are off to a strong start with Platinum sponsorships from Cisco, OVH, Mozilla, Google Chrome, Electronic Frontier Foundation, and Internet Society, as well as [many other Gold and Silver sponsors](/sponsors/). The Ford Foundation has renewed their grant to Let’s Encrypt as well. We are seeking additional sponsorship and grant assistance to meet our full needs for 2019.
 
 ## Support Let’s Encrypt
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.
 
 We’re grateful for the industry and community support that we receive, and we look forward to continuing to create a more secure and privacy-respecting Web!

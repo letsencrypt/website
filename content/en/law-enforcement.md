@@ -13,7 +13,7 @@ These guidelines are for law enforcement officials seeking records from Internet
 
 We don’t collect much information about our subscribers. Because our service is free, we do not collect legal identity or payment information.
 
-What we do collect is described in our Privacy Policy: [https://letsencrypt.org/privacy/](https://letsencrypt.org/privacy/)
+What we do collect is described in our Privacy Policy: [https://letsencrypt.org/privacy/](/privacy/)
 
 Mainly we can provide:
 

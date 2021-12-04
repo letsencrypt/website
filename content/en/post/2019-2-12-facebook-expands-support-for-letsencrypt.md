@@ -14,7 +14,7 @@ We have long worked to protect Facebook users from [spammy or malicious content]
 
 Enabling HTTPS was historically a non-trivial task for any site. It required investment in buying and installing a TLS certificate, which verifies control over the website so that HTTPS can work. The technical difficulty and cost used to serve as barriers to expanding the use of HTTPS across the web. However, things have recently started to change, largely thanks to Let’s Encrypt, a non-profit certificate authority, launched in 2015. 
 
-Let’s Encrypt provides free TLS certificates, which are often installed using a tool maintained by the Electronic Frontier Foundation, to massively simplify enabling HTTPS. With that, Let’s Encrypt is effectively upgrading the security and privacy of the web, at no cost to [over 150 million websites](https://letsencrypt.org/stats/), including those frequented by Facebook users.
+Let’s Encrypt provides free TLS certificates, which are often installed using a tool maintained by the Electronic Frontier Foundation, to massively simplify enabling HTTPS. With that, Let’s Encrypt is effectively upgrading the security and privacy of the web, at no cost to [over 150 million websites](/stats/), including those frequented by Facebook users.
 
 We're excited to see the continuous increase in HTTPS adoption across the internet. More websites are choosing to enable secure connections which provide the security and privacy benefits and enable a better browsing experience. For example, navigating from Facebook to another site can be faster over encrypted connections than HTTP, and an increasing number of browser features will only work when sites use HTTPS.
 

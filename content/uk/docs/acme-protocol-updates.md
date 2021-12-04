@@ -6,7 +6,7 @@ lastmod: 2019-10-07
 show_lastmod: 1
 ---
 
-[Стандартизований IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) протокол ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/) — ключова складова роботи Let's Encrypt.
+[Стандартизований IETF](/2019/03/11/acme-protocol-ietf-standard.html) протокол ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/) — ключова складова роботи Let's Encrypt.
 
 # Кінцеві точки API
 

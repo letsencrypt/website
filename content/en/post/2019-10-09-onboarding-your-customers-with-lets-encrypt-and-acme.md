@@ -18,7 +18,7 @@ switches over DNS for their site.
 # How the DNS Validation Method Works
 
 The DNS-01 validation method [works like
-this](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge): to prove that you control
+this](/docs/challenge-types/#dns-01-challenge): to prove that you control
 `www.example.com`, you create a TXT record at
 `_acme-challenge.www.example.com` with a “digest value” as specified by
 ACME (your ACME client should take care of creating this digest value

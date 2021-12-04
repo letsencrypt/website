@@ -6,7 +6,7 @@ title: "How Let's Encrypt Runs CT Logs"
 slug: how-le-runs-ct-logs
 ---
 
-Let’s Encrypt [launched a Certificate Transparency (CT) log](https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html) this past spring. We’re excited to share how we built it in hopes that others can learn from what we did. CT has quickly become an important piece of Internet security infrastructure, but unfortunately it’s not trivial to run a good log. The more the CT community can share about what has been done, the better the ecosystem will be.
+Let’s Encrypt [launched a Certificate Transparency (CT) log](/2019/05/15/introducing-oak-ct-log.html) this past spring. We’re excited to share how we built it in hopes that others can learn from what we did. CT has quickly become an important piece of Internet security infrastructure, but unfortunately it’s not trivial to run a good log. The more the CT community can share about what has been done, the better the ecosystem will be.
 
 [Sectigo](https://sectigo.com/) and [Amazon Web Services](https://aws.amazon.com/) have generously provided support to cover a significant portion of the cost of running our CT log. “Sectigo is proud to sponsor the Let’s Encrypt CT Log. We believe this initiative will provide much-needed reinforcement of the CT ecosystem,” said Ed Giaquinto, Sectigo’s CIO.
 
@@ -16,7 +16,7 @@ If you have questions about any of what we’ve written here, feel free to ask o
 
 # Objectives
 
-1. *Scale:* Let’s Encrypt issues over [1 million certificates per day](https://letsencrypt.org/stats/#daily-issuance), and that number grows each month. We want our log to consume our certificates as well as those from other CAs, so we need to be able to handle as many as 2 million or more certificates per day. To support this ever-increasing number of certificates, CT software and infrastructure need to be architected for scale.
+1. *Scale:* Let’s Encrypt issues over [1 million certificates per day](/stats/#daily-issuance), and that number grows each month. We want our log to consume our certificates as well as those from other CAs, so we need to be able to handle as many as 2 million or more certificates per day. To support this ever-increasing number of certificates, CT software and infrastructure need to be architected for scale.
 2. *Stability and Compliance:* We target 99% uptime, with no outage lasting longer than 24 hours, in compliance with the [Chromium](https://github.com/chromium/ct-policy/blob/master/log_policy.md) and [Apple](https://support.apple.com/en-gb/HT205280) CT policies.
 3. *Sharding:* Best practice for a CT log is to break it into several temporal shards. For more information on temporal sharding, check out these [blog](https://www.digicert.com/blog/scaling-certificate-transparency-logs-temporal-sharding/) [posts](https://www.venafi.com/blog/how-temporal-sharding-helps-ease-challenge-growing-log-scale).
 4. *Low Maintenance:* Staff time is expensive, we want to minimize the amount of time spent maintaining infrastructure.
@@ -27,7 +27,7 @@ If you have questions about any of what we’ve written here, feel free to ask o
 
 # Staging and Production Logs
 
-We run two equivalent logs, one for staging and one for production. Any changes we plan to make to the production log are first deployed to the staging log. This is critical for making sure that updates and upgrades don’t cause problems before being deployed to production. You can find access details for these logs in our [documentation](https://letsencrypt.org/docs/ct-logs/).
+We run two equivalent logs, one for staging and one for production. Any changes we plan to make to the production log are first deployed to the staging log. This is critical for making sure that updates and upgrades don’t cause problems before being deployed to production. You can find access details for these logs in our [documentation](/docs/ct-logs/).
 
 We keep the staging log continually under production-level load so that any scale-related problems manifest there first. We also use the staging CT log to submit certificates from our staging CA environment, and make it available for use by other CAs’ staging environments.
 
@@ -97,4 +97,4 @@ Here are some ways we may be able to improve the efficiency of our system in the
 
 # Support Let’s Encrypt
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization is interested in learning more about [sponsorship](https://letsencrypt.org/become-a-sponsor/), please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization is interested in learning more about [sponsorship](/become-a-sponsor/), please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.
