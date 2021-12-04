@@ -49,7 +49,7 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 ```
 Puis suivez les instructions. Si vous préférez la validation utilisant le port HTTP plutôt que le DNS, remplacez l'option  `--preferred-challenges` par `--preferred-challenges=http`.
 
-Une fois que vous avez validé le contrôle de tous les noms de domaine dans le certificat que vous souhaitez révoquer, vous pouvez télécharger le certificat depuis [crt.sh] (https://crt.sh/), puis révoquez le certificat comme si vous l'aviez délivré:
+Une fois que vous avez validé le contrôle de tous les noms de domaine dans le certificat que vous souhaitez révoquer, vous pouvez télécharger le certificat depuis [crt.sh](https://crt.sh/), puis révoquez le certificat comme si vous l'aviez délivré:
 
 ```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
