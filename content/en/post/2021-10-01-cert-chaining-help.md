@@ -12,7 +12,7 @@ For most websites, it was just another day on the Internet, but inevitably with 
 
 You may also find these links helpful:
 
-[Our certificate compatibility page.](/docs/certificate-compatibility/)
+[Our certificate compatibility page.](/docs/cert-compat/)
 
 [Workarounds for OpenSSL 1.0.2.](https://www.openssl.org/blog/blog/2021/09/13/LetsEncryptRootCertExpire/)
 
