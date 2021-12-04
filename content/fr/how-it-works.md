@@ -25,19 +25,13 @@ Pour lancer le processus, l'agent demande à l'AC Let's Encrypt ce qu'il doit fa
 
 En plus des défis, l'AC Let's Encrypt fournit également un nonce ("Number used ONCE ") que l'agent doit signer avec sa clef privée pour prouver qu'il contrôle la paire de clef.
 
-<div class="howitworks-figure">
-<img alt="Demander des défis pour valider example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Demander des défis pour valider example.com](/images/howitworks_challenge.png)
 
 L'agent logiciel réussi l'un des défis fournis. Disons qu'il est capable d'accomplir la seconde tâche ci-dessus: Il crée un fichier à un emplacemet spécifié du site  `http://example.com`. L'agent signe également le nonce fourni avec sa clef privée. Une fois que l'agent à terminé ces étapes, il informe l'autorité de certification (AC) qu'il est prêt à poursuivre la validation. 
 
 Ensuite, le travail de l'AC consiste à vérifier que les défis ont été relevés. L'autorité de certification vérifie la signature sur le nonce et tente de télécharger le fichier sur le serveur Web et contrôler qu'il contient le contenu attendu.
 
-<div class="howitworks-figure">
-<img alt="Demander l'autorisation d'agir pour example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Demander l'autorisation d'agir pour example.com](/images/howitworks_authorization.png)
 
 Si la signature sur le nonce est valide et que les défis sont validés, l'agent identifié par la clé publique est autorisé à effectuer la gestion des certificats pour `example.com`. Nous appelons la paire de clefs que l'agent a utilisé une "paire de clés autorisée" pour `example.com`.
 
@@ -49,14 +43,8 @@ Pour obtenir un certificat pour le domaine, l'agent construit une PKCS#10 [Certi
 
 Lorsque l'AC Let's&nbsp;Encrypt reçoit la demande, elle vérifie les deux signatures. Si tout semble correct, elle délivre un certificat pour `example.com` avec la clef publique du CSR et le renvoie à l'agent.
 
-<div class="howitworks-figure">
-<img alt="Demander un certificat pour example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Demander un certificat pour example.com](/images/howitworks_certificate.png)
 
 La révocation fonctionne de la même manière. L'agent signe une demande de révocation avec la paire de clefs autorisée pour `example.com`, et l'AC Let's&nbsp;Encrypt vérifie que la demande est autorisée. Si c'est le cas, elle publie les informations de révocation dans les canaux de révocation normaux (c'est-à-dire l'OCSP), de sorte que les parties dépendantes, telles que les navigateurs, puissent savoir qu'ils ne doivent pas accepter le certificat révoqué.
 
-<div class="howitworks-figure">
-<img alt="Demander la révocation d'un certificat de example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Demander la révocation d'un certificat de example.com](/images/howitworks_revocation.png)

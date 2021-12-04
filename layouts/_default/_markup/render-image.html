@@ -1,0 +1,26 @@
+{{- if $ressource := resources.Get (substr .Destination 1) -}}
+    {{- if eq $ressource.MediaType.SubType "svg" -}}
+		<figure>
+			<picture>
+				<img loading="lazy" decoding="async" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+			</picture>
+			{{- if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end -}}
+		</figure>
+	{{- else -}}
+		{{- $resize := printf "%dx%d q100 webp" $ressource.Width $ressource.Height -}}
+		{{- $webp := $ressource.Resize $resize -}}
+		{{- $webp1920x := $ressource.Resize "1920x q100 webp" -}}
+		{{- $webp1366x := $ressource.Resize "1366x q100 webp" -}}
+		{{- $webp360x := $ressource.Resize "360x q100 webp" -}}
+		{{ $srcset := printf "%s 360w, %s 1366w, %s 1920w, %s" $webp360x.RelPermalink $webp1366x.RelPermalink $webp1920x.RelPermalink $webp.RelPermalink }}
+		<figure>
+			<picture>
+				<source srcset="{{ $srcset }}" type="image/webp">
+				<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+			</picture>
+			{{- if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end -}}
+		</figure>
+		{{- end -}}
+{{- else -}}
+	{{ errorf "Image not found: %q" .Destination }}
+{{- end -}}

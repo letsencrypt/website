@@ -25,19 +25,13 @@ Kako bih otpočeo sam proces, agent pita Let's Encrypt sertifikaciono telo (CA) 
 
 Uz dostupne načine verifikacije, Let's Encrypt sertifikaciono telo (CA) takođe daje naznaku da agent mora potpisati sa svojim privatnim parom ključeva kako bi dokazao da kontroliše par javnih ključeva.
 
-<div class="howitworks-figure">
-<img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Requesting challenges to validate example.com](/images/howitworks_challenge.png)
 
 Agentski softver završava verifikaciju jednim od ponuđenih načina. Recimo da je u stanju izvršiti verifikaciju koristeći drugi naveden način iznad: kreira datoteku na određenoj putanji na web serveru `http://example.com`. Agent takodje potpisuje svoj privatni ključ. Nakon što agent izvrši ove korake, obaveštava sertifikaciono telo (CA) da je spreman za potpunu proveru.
 
 Nakon toga, posao sertifikacionog tela (CA) jeste da proveri da li su uslovi i verifikacija zadovoljena. Sertifikaciono telo (CA) proverava potpis bez prijave i pokušava da preuzme prethodno kreiranu datoteku s web servera i uveriti se da ima očekivani sadržaj.
 
-<div class="howitworks-figure">
-<img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Requesting authorization to act for example.com](/images/howitworks_authorization.png)
 
 Ako je potpis dobar, a verifikacija validna, tada je agent koji je identifikovan javnim ključem ovlašćen za upravljanje sertifikatom za domen `example.com`.
 
@@ -50,14 +44,8 @@ Kako bi dobili sertifikat za domen, agent pravi PKCS#10 [Certificate Signing Req
 
 Kada Let's&nbsp;Encrypt sertifikaciono telo (CA) primi zahtev, ono onda verifikuje oba potpisa.  Ukoliko sve deluje u redu, sertifikaciono telo izdaje sertifikat za  `example.com` zajedno sa javnim ključem (public key) od CSR-a i dostavlja sertifikat agentu.
 
-<div class="howitworks-figure">
-<img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Requesting a certificate for example.com](/images/howitworks_certificate.png)
 
 Poništavanje sertifikata funkcioniše na sličan način. Agent potpisuje zahtev za poništavanje sertifikata svojim javnim ključem za domen  `example.com`, gde nakon toga Let's&nbsp;Encrypt sertifikaciono telo (CA) verifikuje da je zahtev legitiman i odobren.  Ukoliko da, onda objavljuje informaciju o poništavanju sertifikata putem standardnih kanala (primer. OCSP), tako da zavisni partneri budu obavešteni o tome kao što su web pretraživači u cilju kako bih znali da više ne prihvataju taj konkretan sertifikat kao validan.
 
-<div class="howitworks-figure">
-<img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Requesting revocation of a certificate for example.com](/images/howitworks_revocation.png)

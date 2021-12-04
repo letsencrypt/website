@@ -25,19 +25,13 @@ Let’s Encrypt는 공개키로 서버 관리자를 확인합니다. 에이전�
 
 이 과제와 더불어, Let’s Encrypt CA는 또한 한 쌍의 키를 통제하는 것을 증명하기 위해 한 쌍의 개인 키로 서명해야 하는 임시 값을 제공합니다.
 
-<div class="howitworks-figure">
-<img alt="example.com을 검증하기 위해 과제를 요구한다"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![example.com을 검증하기 위해 과제를 요구한다](/images/howitworks_challenge.png)
 
 해당 에이전트 소프트웨어는 제공된 도전 중 하나를 완료합니다. 두 번째 작업을 수행할 수 있다고 가정해 보십시오: `http://example.com` 웹 사이트의 특정한 경로에 파일을 생성합니다. 에이전트는 개인 키로 제공된 임시 값에 서명합니다. 에이전트가 이 단계들을 완료하면, 에이전트는 타당성 검증을 완료할 준비가 되었음을 CA에게 통지합니다.
 
 그 후, 과제가 충족되었는지 검사하는 것이 CA의 일입니다. CA는 임시 값에서 서명을 검증하고, 웹 서버에서 파일을 내려 받으려고 시도하며, 예상된 내용이 있는지 확인합니다.
 
-<div class="howitworks-figure">
-<img alt="example.com을 활동 허가를 요청하기"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![example.com을 활동 허가를 요청하기](/images/howitworks_authorization.png)
 
 임시 값에 대한 서명이 타당하고, 과제는 사실로 확인되면, 공개 키에 의해 확인된 에이전트는 `example.com` 인증서 관리를 하기 위해 권한이 부여됩니다. 에이전트가 `example.com`을 위해 사용했던 키의 쌍을 “권한을 부여 받은 키의 쌍”이라고 부릅니다.
 
@@ -49,14 +43,8 @@ Let’s Encrypt는 공개키로 서버 관리자를 확인합니다. 에이전�
 
 Let’s Encrypt CA가 요청을 받을 때, 두 서명을 모두 검증합니다. 모든 것이 좋아 보인다면, CSR로부터의 공개키로 `example.com`의 증명서를 발행해 에이전트에 돌려줍니다.
 
-<div class="howitworks-figure">
-<img alt="example.com 자격증 요청"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![example.com 자격증 요청](/images/howitworks_certificate.png)
 
 해지는 비슷한 방식으로 작동합니다. 에이전트가 `example.com`의 인증된 한 쌍의 키로 해지 요청에 서명하고, Let’s Encrypt CA가 그 요청이 권한이 있는지 검증합니다. 권한이 있다면, 브라우저와 같은 의존적인 당사자가 해지된 인증서를 받아들이면 안 된다는 것을 알 수 있도록 일반적인 해지 채널(예: OCSP)에 해지 정보를 게시합니다.
 
-<div class="howitworks-figure">
-<img alt="example.com에 대한 인증서 해지 요청"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![example.com에 대한 인증서 해지 요청](/images/howitworks_revocation.png)

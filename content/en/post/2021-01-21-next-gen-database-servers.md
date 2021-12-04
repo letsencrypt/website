@@ -46,10 +46,7 @@ The previous generation of database hardware was powerful but it was regularly b
 </table>
 </div>
 
-<figure style="display: flex; flex-direction: column; align-items: center; text-align: center">
-<img src="/images/2021.01.21-next-gen-db-chassis.jpg" width="600" alt="Dell PowerEdge R7525 Chassis">
-<figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.</figcaption>
-</figure>
+![Dell PowerEdge R7525 Chassis](/images/2021.01.21-next-gen-db-chassis.jpg "Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.")
 
 By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping clock speeds high: 2.9GHz base with 3.4GHz boost. More importantly, EPYC provides 128 PCIe v4.0 lanes, which allows us to put 24 NVMe drives in a single machine. NVMe is incredibly fast (\~5.7x faster than the SATA SSDs in our previous-gen database servers) because it uses PCIe instead of SATA. However, PCIe lanes are typically very limited: modern consumer chips typically have only 16 lanes, and Intel’s Xeon chips have 48. By providing 128 PCI lanes per chip (v4.0, no less), AMD EPYC has made it possible to pack large numbers of NVMe drives into a single machine. We’ll talk more about NVMe later.
 
@@ -57,23 +54,23 @@ By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping 
 
 We’ll start by looking at our median time to process a request because it best reflects subscribers’ experience. Before the upgrade, we turned around the median API request in \~90 ms. The upgrade decimated that metric to \~9 ms!
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-api-latency.png" alt="API Latency"></p>
+![API Latency](/images/2021.01.21-next-gen-db-api-latency.png)
 
 We can clearly see how our old CPUs were reaching their limit. In the week before we upgraded our primary database server, its CPU usage (from /proc/stat) averaged over 90%:
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-cpu-before.png" alt="CPU Usage Before Upgrade"></p>
+![CPU Usage Before Upgrade](/images/2021.01.21-next-gen-db-cpu-before.png)
 
 The new AMD EPYC CPUs sit at about 25%. You can see in this graph where we promoted the new database server from replica (read-only) to primary (read/write) on September 15.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-cpu-after.png" alt="CPU Usage After Upgrade"></p>
+![CPU Usage After Upgrade](/images/2021.01.21-next-gen-db-cpu-after.png)
 
 The upgrade greatly reduced our overall database latency. The average query response time (from INFORMATION_SCHEMA) used to be \~0.45ms.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-db-latency-before.png" alt="Database Latency Before Upgrade"></p>
+![Database Latency Before Upgrade](/images/2021.01.21-next-gen-db-db-latency-before.png)
 
 Queries now average *three times faster*, about 0.15ms.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-db-latency-after.png" alt="Database Latency After Upgrade"></p>
+![Database Latency After Upgrade](/images/2021.01.21-next-gen-db-db-latency-after.png)
 
 ## OpenZFS and NVMe
 

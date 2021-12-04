@@ -25,19 +25,13 @@ Let's&nbsp;Encrypt идентифицирует web-сервер с запуще
 
 Одновременно с тестированием прав администратора на домен, Let's&nbsp;Encrypt проверяет права агента на открытый и закрытый ключи. Let's&nbsp;Encrypt отправляет агенту одноразовый пароль, который агент должен подписать закрытым ключом и отослать обратно.
 
-<div class="howitworks-figure">
-<img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Requesting challenges to validate example.com](/images/howitworks_challenge.png)
 
 Агент пытается выполнить серию тестов для проверки прав на домен. Допустим, успешно выполнено задание по созданию HTTP-ресурса - создан файл по определённому пути внутри `http://example.com`. Кроме того, агентом получен одноразовый пароль, который был подписан закрытым ключом и отправлен обратно в Let's&nbsp;Encrypt. Как только эти пункты выполнены - агент уведомляет Центр Сертификации о завершении проверки.
 
 Далее, Центр Сертификации проверяет, всё ли было сделано верно: корректную цифровую подпись на одноразовом пароле, возможность скачать созданный файл по URI, а также его содержимое.
 
-<div class="howitworks-figure">
-<img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Requesting authorization to act for example.com](/images/howitworks_authorization.png)
 
 Если цифровая подпись верна, и все тесты пройдены - агенту выдаются права на управление сертификатами для домена `example.com`. Ключевая пара (открытый и закрытый ключи), используемая при проверке прав на домен, называется "авторизованной ключевой парой" для `example.com`.
 
@@ -49,14 +43,8 @@ Let's&nbsp;Encrypt идентифицирует web-сервер с запуще
 
 При получении CSR, ЦС Let's&nbsp;Encrypt проверяет подписи ключевой пары. Если всё в порядке, Центр Сертификации выпускает сертификат для `example.com` с открытым ключом из CSR, и отправляет его агенту.
 
-<div class="howitworks-figure">
-<img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Requesting a certificate for example.com](/images/howitworks_certificate.png)
 
 Отзыв сертификата происходит аналогично. Агент подписывает запрос об отзыве ключевой парой, авторизованной для `example.com`. Как только ЦС Let's&nbsp;Encrypt подтверждает цифровые подписи запроса, он публикует информацию об отзыве сертификата, используя [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). Таким образом браузеры, полагаясь на данные из OSCP, не будут принимать отозванные сертификаты.
 
-<div class="howitworks-figure">
-<img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Requesting revocation of a certificate for example.com](/images/howitworks_revocation.png)

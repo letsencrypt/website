@@ -43,10 +43,7 @@ Tillsammans med utmaningen tillhandahåller Let's Encrypt-CA:n ett engångsvärd
 som agenten måste signera med sin privata nyckel för att bevisa att den
 kontrollerar nyckelparet.
 
-<div class="howitworks-figure">
-<img alt="Begäran om utmaningar för att validera example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Begäran om utmaningar för att validera example.com](/images/howitworks_challenge.png)
 
 Agentmjukvaran utför en av de givna utmaningarna. Låt oss anta att den kan
 genomföra den andra uppgiften ovan: den skapar en fil på en efterfrågad sökväg
@@ -58,10 +55,7 @@ Sen är det CA:ns jobb att kontrollera att utmaningarna har blivit
 tillfredsställda. CA:n verifierar engångsvärdets signatur och försöker ladda ner
 filen från webbservern och säkerställa att den har det förväntade innehållet.
 
-<div class="howitworks-figure">
-<img alt="Begäran av behörighet att agera för example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Begäran av behörighet att agera för example.com](/images/howitworks_authorization.png)
 
 Om engångsvärdets signatur är korrekt och utmaningarna överensstämmer är
 agenten, som är identifierad med den publika nyckeln, godkänd att utföra
@@ -87,10 +81,7 @@ När Let's&nbsp;Encrypt-CA:n tar emot förfrågan verifierar den båda signature
 Om allt ser bra ut utfärdar den ett certifikat för `example.com` med den publika
 nyckeln från CSR:en och skickar tillbaka det till agenten.
 
-<div class="howitworks-figure">
-<img alt="Begäran av certifikat för example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Begäran av certifikat för example.com](/images/howitworks_certificate.png)
 
 Återkallande fungerar på ett liknande sätt. Agenten signerar en begäran om
 återkallelse med det behöriga nyckelparet för `example.com` och
@@ -99,7 +90,4 @@ den återkallelseinformation i de vanliga kanalerna för detta (såsom OCSP), s�
 att de beroende parterna som webbläsare får reda på att de inte ska acceptera
 det återkallade certifikatet.
 
-<div class="howitworks-figure">
-<img alt="Begäran av återkallande av certifikat för example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Begäran av återkallande av certifikat för example.com](/images/howitworks_revocation.png)

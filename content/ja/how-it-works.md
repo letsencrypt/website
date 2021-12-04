@@ -23,19 +23,13 @@ Let's&nbsp;Encrypt はサーバーの管理者を公開鍵で特定します。�
 
 チャレンジの間に、Let's&nbsp;Encrypt CA はエージェントに対してノンスを与えます。エージェントは秘密鍵を使ってこのノンスに署名する必要があります。これにより、エージェントがキーペアをコントロールしていることも証明します。
 
-<div class="howitworks-figure">
-<img alt="example.com を検証するためのチャレンジのリクエスト"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![example.com を検証するためのチャレンジのリクエスト](/images/howitworks_challenge.png)
 
 エージェント・ソフトウェアは、提示されたチャレンジのうちの1つをクリアします。今、上の例で提示された2つ目のチャレンジをエージェントがクリアできるとしましょう。このとき、エージェントは `http://example.com` のサイト上の特定のパスにファイルを1つ生成します。また、エージェントは提示されたノンスに秘密鍵を使って署名します。エージェントがこれらのステップをクリアしたら、CA に検証の準備ができたことを伝えます。
 
 すると、CA は、チャレンジが正しく行われたかをチェックします。CA はノンスの署名が正しいことを検証し、ウェブサーバーからファイルをダウンロードし、その中に期待どおりのコンテンツが含まれているかどうかを確認します。
 
-<div class="howitworks-figure">
-<img alt="example.com の代表として振る舞うための認証リクエスト"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![example.com の代表として振る舞うための認証リクエスト](/images/howitworks_authorization.png)
 
 もし、ノンスに書かれた署名が有効であり、チャレンジがクリアされたならば、公開鍵を持つエージェントは `example.com` に対する証明書の管理を行うことを認証されたことになります。私たちは、このエージェントが使用するキーペアのことを、`example.com` に対して「認証されたキーペア」と呼びます。
 
@@ -47,14 +41,8 @@ Let's&nbsp;Encrypt はサーバーの管理者を公開鍵で特定します。�
 
 Let's&nbsp;Encrypt CA がこのリクエストを受け取ると、両方の署名を検証します。すべてが問題なければ、`example.com` の証明書を発行し、CSR に同梱されていた公開鍵で暗号化してエージェントへ送り返します。
 
-<div class="howitworks-figure">
-<img alt="example.com に対する証明書のリクエスト"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![example.com に対する証明書のリクエスト](/images/howitworks_certificate.png)
 
 無効化の作業も同じ方法で行われます。エージェントは無効化リクエストを作り、`example.com` に対して認証されたキーペアで署名をして送ります。Let's&nbsp;Encrypt CA はリクエストが認証されているかどうかを検証します。もし認証されていれば、証明書の無効化の情報を一般の無効化チャンネル (たとえば、OCSP) に公開します。その結果、このチャンネルを使用しているブラウザなどは、無効化された証明書を受け入れてはいけないことを知ることができます。
 
-<div class="howitworks-figure">
-<img alt="example.com に対する証明書の無効化リクエスト"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![example.com に対する証明書の無効化リクエスト](/images/howitworks_revocation.png)

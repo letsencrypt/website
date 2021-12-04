@@ -25,19 +25,13 @@ Para iniciar el proceso, el agente le pregunta al Let's&nbsp;Encrypt CA lo que h
 
 Junto con los retos, el Let's Encrypt CA también provee un `nonce` que el agente debe firmar con su par de llave privada para demostrar que controla el par de llaves.
 
-<div class="howitworks-figure">
-<img alt="Solicitando retos para validar example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Solicitando retos para validar example.com](/images/howitworks_challenge.png)
 
 El software de agente completa uno de los conjuntos de retos provistos. Digamos que es capaz de realizar la segunda tarea anterior: crea un archivo en un *path* especifico en el site `http://example.com`. El agente también firma el `nonce` provisto con su llave privada. Una vez el agente ha completado estos pasos, notifica la AC que está listo para completar la validación.
 
 Luego, es el trabajo de la AC verificar los que retos han sido satisfechos. La AC verifica la firma en el `nonce`, e intenta descargar un archivo del servidor web y hacerce seguro que recibió el contenido esperado.
 
-<div class="howitworks-figure">
-<img alt="Solicitando autorización para actuar por example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Solicitando autorización para actuar por example.com](/images/howitworks_authorization.png)
 
 Si la firma sobre el `nonce` es válida, y los retos son válidos, entonces el agente identificado por su llave pública está autorizado a realizar la gestión de certificados para `example.com`. Llamamos el par de llaves que el agente usó un "par de llaves autorizado" para `example.com`.
 
@@ -50,15 +44,9 @@ Para obtener un certificado para un dominio, el agente construye un PKCS#10 [Cer
 
 Cuando el Let's Encrypt CA recibe una solicitud, verifica ambas firmas. Si todo se ve bien, emite un certificado para `example.com` con la llave pública del CSR y lo devuelve al agente.
 
-<div class="howitworks-figure">
-<img alt="Solicitando un certificado para example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Solicitando un certificado para example.com](/images/howitworks_certificate.png)
 
 La revocación funciona de una manera similar. El agente firma una solicitud de revocación con el par de llaves autorizado para `example.com`, y el Let's Encrypt CA verifica que la solicitud es autorizada. Si lo es, publica información de revocación a los canales normales de revocación (i.e. OCSP), para que los confiados tales como navegadores pueden saber que no deben aceptar el certificado revocado.
 
-<div class="howitworks-figure">
-<img alt="Solicitando revocación del certifiado para example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Solicitando revocación del certifiado para example.com](/images/howitworks_revocation.png)
 

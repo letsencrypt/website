@@ -25,19 +25,13 @@ Para iniciar o processo o agente pergunta à AC Let's&nbsp;Encrypt o que ele pre
 
 Juntamente com os desafios, a AC Let's&nbsp;Encrypt também provê um pacote de dados que o agente precisa assinar com sua chave privada para provar que ele controla o par de chaves. 
 
-<div class="howitworks-figure">
-<img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Requesting challenges to validate example.com](/images/howitworks_challenge.png)
 
 Vamos assumir que o agente é capaz de completar a segunda tarefa: ele cria um arquivo em um caminho especificado em `http://example.com`. O agente também assina o pacote de dados providos com sua chave privada. Uma vez que ele termina estes passos, ele notifica a AC que está pronto para concluir a validação.  
 
 Agora é responsabilidade da AC verificar que os desafios foram completados. A AC verifica a assinatura no pacote de dados e tenta fazer o download do arquivo especificado no servidor web e se certifica de que ele possui o conteúdo esperado.
 
-<div class="howitworks-figure">
-<img alt="Requesting authorization to act for example.com"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![Requesting authorization to act for example.com](/images/howitworks_authorization.png)
 
 Se a assinatura no pacote de dados é válida e os desafios foram corretamente completados, o agente identificado pela chave pública é autorizado a cuidar do gerenciamento de certificados de `example.com`. Nós chamamos o par de chaves usado pelo agente de "par de chavez autorizado" para `example.com.
 
@@ -49,15 +43,9 @@ Para obter um certificado para o domínio, o agente constroi um PKCS#10 [Solicit
 
 Quando a Let's&nbsp;Encrypt recebe a solicitação ambas as assinaturas são validadas. Se tudo estiver certo, ele emite um certificado para `example.com` com a chave pública da SAC e o devolve ao agente.
 
-<div class="howitworks-figure">
-<img alt="Requesting a certificate for example.com"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![Requesting a certificate for example.com](/images/howitworks_certificate.png)
 
 A revogação funciona de maneira similar. O agente assina a solicitação de revogação com o par de chaves autorizado para `example.com` e a Let's&nbsp;Encrypt verifica se a solicitação é autorizada. Se for autorizada, a Let's&nbsp;Encrypt publica a informação de revogação em canais normais de revogação (como por exemplo OCSP), de maneira que terceiros que dependem de certificados (como navegadores) saibam que não devem confiar no certificado revogado.
 
-<div class="howitworks-figure">
-<img alt="Requesting revocation of a certificate for example.com"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![Requesting revocation of a certificate for example.com](/images/howitworks_revocation.png)
 
