@@ -9,8 +9,10 @@
   "scripts": {
     "test:htmllint": "htmlhint 'content/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
-    "test": "npm run test:htmllint && npm run test:eslint",
-    "build": "hugo -d public"
+    "test:html5validator": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate certificates --also-check-css --format text",
+    "test": "npm run test:htmllint && npm run test:eslint && npm run test:html5validator",
+    "build": "hugo -d public",
+    "clean": "rm -rf public"
   },
   "repository": {
     "type": "git",

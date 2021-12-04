@@ -1,3 +1,4 @@
+</p>{{/* Each markdown line is in a "p" tag, and "figure" must be outside "p" */}}
 {{- if $ressource := resources.Get (substr .Destination 1) -}}
     {{- if eq $ressource.MediaType.SubType "svg" -}}
 		<figure>
@@ -12,10 +13,10 @@
 		{{- $webp1920x := $ressource.Resize "1920x q100 webp" -}}
 		{{- $webp1366x := $ressource.Resize "1366x q100 webp" -}}
 		{{- $webp360x := $ressource.Resize "360x q100 webp" -}}
-		{{ $srcset := printf "%s 360w, %s 1366w, %s 1920w, %s" $webp360x.RelPermalink $webp1366x.RelPermalink $webp1920x.RelPermalink $webp.RelPermalink }}
+		{{ $srcset := printf "%s 360w, %s 1366w, %s 1920w, %s %dw" $webp360x.RelPermalink $webp1366x.RelPermalink $webp1920x.RelPermalink $webp.RelPermalink $webp.Width }}
 		<figure>
 			<picture>
-				<source srcset="{{ $srcset }}" type="image/webp">
+				<source srcset="{{ $srcset }}" type="image/webp" sizes="100vw" />
 				<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
 			</picture>
 			{{- if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end -}}
@@ -24,3 +25,4 @@
 {{- else -}}
 	{{ errorf "Image not found: %q" .Destination }}
 {{- end -}}
+<p>
