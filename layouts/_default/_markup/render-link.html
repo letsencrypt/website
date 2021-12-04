@@ -1,8 +1,8 @@
-{{- if  and (findRE "^/(docs/)?[^/]+/?$" .Destination) (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
+{{- if  and (findRE "^(https://letsencrypt.org)?/(docs/)?[^/]+/?(#.*)?$" .Destination) (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
 	{{- $tmp := split .Destination "#" -}}
 	{{- $pagename := index $tmp 0 -}}
 	{{- $anchor := index $tmp 1 -}}
-	{{- $pagename := replaceRE "^(.*)/$" "$1" $pagename -}}
+	{{- $pagename := replaceRE "^(https://letsencrypt.org)?(.*?)/?$" "$2" $pagename -}}
 	{{- $page := .Page.Site.GetPage $pagename -}}
 	{{- if not $page }}{{ errorf "Missing page %q %q in %q" .Text $pagename .Page -}}
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}

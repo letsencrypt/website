@@ -154,7 +154,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) stellt eine Staging API zum Testen von Zertifikatsanfragen ohne Einfluss auf Rate Limits zur Verfügung. Zertifikate, die von der Staging Umgebung ausgestellt sind, werden öffentlich *nicht* vertraut. Die Staging Umgebung sollte nur zum Testen, Fehlersuche und ACME Client Entwicklungsprozess verwendet werden. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Ein Feld eines [Zertifikats](#def-leaf) das anzeigt, für welche Domain(s) ein Zertifikat gültig ist. Es ersetzt die Benutzung des [Common Name](#def-CN), welcher jetzt aus Kompatibilitätsgründen noch vorhanden ist. Ein einfaches Zertifikat enthält möglicherweise viele SANs und kann für viele unterschiedliche Domains gültig sein. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name)https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Ein Feld eines [Zertifikats](#def-leaf) das anzeigt, für welche Domain(s) ein Zertifikat gültig ist. Es ersetzt die Benutzung des [Common Name](#def-CN), welcher jetzt aus Kompatibilitätsgründen noch vorhanden ist. Ein einfaches Zertifikat enthält möglicherweise viele SANs und kann für viele unterschiedliche Domains gültig sein. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} Die Person oder Organisation, die einen Antrag für ein Zertifikat stellt. {{% /def %}}
 
