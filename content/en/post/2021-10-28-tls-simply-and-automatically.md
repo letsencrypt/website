@@ -19,7 +19,7 @@ Over 10,000 certificates are issued from Let’s Encrypt to OVHcloud every day. 
 
 OVHcloud is a longtime sponsor of ISRG so we’d like to close by thanking them for not just being great technical collaborators, but also financial supporters. 
 
-Check out our blog post about [how Shopify uses Let’s Encrypt certificates](/2021/09/14/speed-at-scale-shopify.html) for another example of how our certificates are used in the enterprise.
+Check out our blog post about [how Shopify uses Let’s Encrypt certificates](https://letsencrypt.org/2021/09/14/speed-at-scale-shopify.html) for another example of how our certificates are used in the enterprise.
 
 ## Supporting Let’s Encrypt
-As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](/donate/), we ask that you make an individual contribution.
+As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.

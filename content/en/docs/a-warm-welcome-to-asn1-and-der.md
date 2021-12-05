@@ -216,7 +216,7 @@ Similarly,
 Google, Inc. Google assigned
 [1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) to
 identify the [SCT list
-extension](/2018/04/04/sct-encoding.html) used
+extension](https://letsencrypt.org/2018/04/04/sct-encoding.html) used
 in Certificate Transparency (which was initially developed at Google),
 as defined in [RFC
 6962](https://tools.ietf.org/html/rfc6962).

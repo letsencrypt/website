@@ -17,6 +17,6 @@ We've decided to push our launch schedule back a bit to give us time to further 
 
 In the ten weeks between these two dates we'll gradually issue more and more certificates. We'll start by issuing a small number of certs to whitelisted domains and expand our issuance as we gain confidence in our systems (stay tuned for instructions on getting your domains added to our early-access whitelist). When it's time for general availability we will open up our systems to all requests.
 
-A cross-signature will be in place before general availability. This will allow certificates from Let's Encrypt to validate automatically for the vast majority of consumers. Prior to cross-signing, browsers will not accept our certificates as valid unless a user has installed our <a href="/certificates/">root</a> as trusted.
+A cross-signature will be in place before general availability. This will allow certificates from Let's Encrypt to validate automatically for the vast majority of consumers. Prior to cross-signing, browsers will not accept our certificates as valid unless a user has installed our <a href="https://letsencrypt.org/certificates/">root</a> as trusted.
 
 I want to thank our staff, partners, sponsors, and contributors. We're making great progress, despite this delay, and it's all possible due to their hard work.
