@@ -5,7 +5,7 @@
 	{{- end -}}
     {{- if eq $ressource.MediaType.SubType "svg" -}}
 		<picture>
-			<img loading="lazy" decoding="async" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+			<img loading="lazy" decoding="async" src="{{ $ressource.RelPermalink }}" alt="{{ .Text | safeHTML }}" title="{{ .Text | safeHTML }}" />
 		</picture>
 	{{- else -}}
 		{{- $resize := printf "%dx%d q100 webp" $ressource.Width $ressource.Height -}}
@@ -16,7 +16,7 @@
 		{{ $srcset := printf "%s 360w, %s 1366w, %s 1920w, %s %dw" $webp360x.RelPermalink $webp1366x.RelPermalink $webp1920x.RelPermalink $webp.RelPermalink $webp.Width }}
 		<picture>
 			<source srcset="{{ $srcset }}" type="image/webp" sizes="100vw" />
-			<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+			<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text | safeHTML }}" title="{{ .Text | safeHTML }}" />
 		</picture>
 	{{- end -}}
 	{{- if .Title -}}
