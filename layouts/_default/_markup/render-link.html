@@ -1,9 +1,18 @@
-{{- if  and (findRE "^(https://letsencrypt.org)?/(docs/)?[^/]+/?(#.*)?$" .Destination) (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
+{{- if  and (findRE "^(https://letsencrypt.org)?/" .Destination)
+  (not (findRE "^(https://letsencrypt.org)?/certs/" .Destination))
+  (not (findRE "^(https://letsencrypt.org)?/images/" .Destination))
+  (not (findRE "^(https://letsencrypt.org)?/documents/" .Destination))
+  (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
 	{{- $tmp := split .Destination "#" -}}
 	{{- $pagename := index $tmp 0 -}}
 	{{- $anchor := index $tmp 1 -}}
 	{{- $pagename := replaceRE "^(https://letsencrypt.org)?(.*?)/?$" "$2" $pagename -}}
-	{{- $page := .Page.Site.GetPage $pagename -}}
+	{{- $pagename_slash := replaceRE "^(https://letsencrypt.org)?(.*?)/?$" "$2/" $pagename}}
+	{{- $page := or (.Page.Site.GetPage $pagename)
+		(.Page.Site.GetPage $pagename_slash)
+		(index (where .Page.Site.AllPages "RelPermalink" $pagename) 0)
+		(index (where .Page.Site.AllPages "RelPermalink" $pagename_slash) 0)
+	-}}
 	{{- if not $page }}{{ errorf "Missing page %q %q in %q" .Text $pagename .Page -}}
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
 	{{- else -}}
