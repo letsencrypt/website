@@ -1,12 +1,12 @@
-</p>{{/* Each markdown line is in a "p" tag, and "figure" must be outside "p" */}}
 {{- if $ressource := resources.Get (substr .Destination 1) -}}
-    {{- if eq $ressource.MediaType.SubType "svg" -}}
+	{{- if .Title -}}
+		</p>{{/* Each markdown line is in a "p" tag, and "figure" must be outside "p" */}}
 		<figure>
-			<picture>
-				<img loading="lazy" decoding="async" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
-			</picture>
-			{{- if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end -}}
-		</figure>
+	{{- end -}}
+    {{- if eq $ressource.MediaType.SubType "svg" -}}
+		<picture>
+			<img loading="lazy" decoding="async" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+		</picture>
 	{{- else -}}
 		{{- $resize := printf "%dx%d q100 webp" $ressource.Width $ressource.Height -}}
 		{{- $webp := $ressource.Resize $resize -}}
@@ -14,15 +14,16 @@
 		{{- $webp1366x := $ressource.Resize "1366x q100 webp" -}}
 		{{- $webp360x := $ressource.Resize "360x q100 webp" -}}
 		{{ $srcset := printf "%s 360w, %s 1366w, %s 1920w, %s %dw" $webp360x.RelPermalink $webp1366x.RelPermalink $webp1920x.RelPermalink $webp.RelPermalink $webp.Width }}
-		<figure>
-			<picture>
-				<source srcset="{{ $srcset }}" type="image/webp" sizes="100vw" />
-				<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
-			</picture>
-			{{- if .Title }}<figcaption>{{ .Title }}</figcaption>{{ end -}}
+		<picture>
+			<source srcset="{{ $srcset }}" type="image/webp" sizes="100vw" />
+			<img loading="lazy" decoding="async" height="{{ $ressource.Height }}" width="{{ $ressource.Width }}" src="{{ $ressource.RelPermalink }}" alt="{{ .Text }}" title="{{ .Text }}" />
+		</picture>
+	{{- end -}}
+	{{- if .Title -}}
+		<figcaption>{{ .Title }}</figcaption>
 		</figure>
-		{{- end -}}
+		<p>
+	{{- end -}}
 {{- else -}}
 	{{ errorf "Image not found: %q" .Destination }}
 {{- end -}}
-<p>
