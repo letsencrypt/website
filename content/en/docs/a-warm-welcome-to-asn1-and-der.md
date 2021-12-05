@@ -1159,6 +1159,6 @@ Will those bits ever be set to 1? Not unless the certificate is more
 than 16,383 bytes long! So we can predict that the first characters of a
 PEM certificate will always be the same. Try it yourself:
 
-```
+```bash
 xxd -r -p <<<308200 | base64
 ```
