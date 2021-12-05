@@ -13,7 +13,7 @@ slug: transitioning-to-isrg-root
 > 
 > Due to concerns about insufficient ISRG root propagation on Android devices we have [decided to move the date on which we will start serving a chain to our own root](https://community.letsencrypt.org/t/transitioning-to-isrgs-root/94056) to **January 11, 2021**. We had originally delayed this change until September 29, 2020.
 
-On January 11, 2021, we will change the default intermediate certificate we provide via ACME. Most subscribers don’t need to do anything. Subscribers who support [very old TLS/SSL clients](https://letsencrypt.org/docs/certificate-compatibility/#known-incompatible) may want to manually configure the older intermediate to increase backwards compatibility.
+On January 11, 2021, we will change the default intermediate certificate we provide via ACME. Most subscribers don’t need to do anything. Subscribers who support [very old TLS/SSL clients](/docs/cert-compat/#known-incompatible) may want to manually configure the older intermediate to increase backwards compatibility.
 
 Since Let’s Encrypt launched, our certificates have been trusted by browsers via a cross-signature from another Certificate Authority (CA) named [IdenTrust](https://www.identrust.com/). A cross-signature from IdenTrust was necessary because our own root was not yet widely trusted. It takes time for a new CA to demonstrate that it is trustworthy, then it takes more time for trusted status to propagate via software updates.
 
