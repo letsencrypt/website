@@ -9,7 +9,7 @@ beforeColon = ""
 # Weight used for sorting.
 # 10 for English
 # Other languages from 100 to 999, alphabetical order using languageCode.
-weight = 10
+weight = 375
 description = """
   Let's Encrypt è un'autorità di certificazione gratuita, automatica
   ed open source messa a disposizione dall'organizzazione non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
