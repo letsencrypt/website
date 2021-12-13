@@ -69,11 +69,6 @@ other = "언어"
 [view_in_english]
 other = "영어로 보기"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "영어로 보기"
-
 [old_version]
 other = "참고: 번역 이후 영어 버전이 업데이트되었습니다"
 

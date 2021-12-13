@@ -13,7 +13,7 @@ other = "寄付"
 other = "スポンサー"
 
 [home_hero_annual_report]
-other = "2019 年の年次レポートを読む"
+other = "<a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> 年の年次レポートを読む"
 
 [home_hero_desktop]
 other = "デスクトップ"
@@ -77,11 +77,6 @@ other = "言語"
 
 [view_in_english]
 other = "英語で表示する"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "日本語で表示する"
 
 [old_version]
 other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"

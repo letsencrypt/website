@@ -13,7 +13,7 @@ other = "תרומה"
 other = "מתן חסות"
 
 [home_hero_annual_report]
-other = "לקריאת <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>הדוח</a> לשנת 2020"
+other = "לקריאת <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>הדוח</a> לשנת 2021"
 
 [home_hero_desktop]
 other = "שולחן עבודה"
@@ -80,11 +80,6 @@ other = "שפות"
 
 [view_in_english]
 other = "מעבר לאנגלית"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "מעבר לעברית"
 
 [old_version]
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"

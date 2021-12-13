@@ -13,7 +13,7 @@ other = "捐赠"
 other = "成为赞助商"
 
 [home_hero_annual_report]
-other = "阅读我们的2019年度报告"
+other = "<a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>阅读我们的2021年度报告</a>"
 
 [home_hero_desktop]
 other = "电脑版"
@@ -80,11 +80,6 @@ other = "切换语言"
 
 [view_in_english]
 other = "阅读英文页面"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "阅读简体中文页面"
 
 [old_version]
 other = "注意：本页面有较新的英文版本。"

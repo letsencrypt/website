@@ -10,10 +10,11 @@
     <meta name="twitter:url" content="{{ .Permalink }}">
     <meta name="twitter:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}">
     <meta name="twitter:image:src" content="{{ "images/le-logo-twitter-noalpha.png" | absURL }}">
+    <meta name="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 
     {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify | fingerprint "sha512" }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
-    
+
     <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.min.css" />
     <link rel="canonical" href="{{ .Permalink }}">
     {{ with .Site.Home.OutputFormats.Get "RSS" -}}

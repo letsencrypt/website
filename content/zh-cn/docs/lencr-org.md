@@ -1,5 +1,4 @@
 ---
-title: lencr.org
 slug: lencr.org
 top_graphic: 1
 date: 2020-12-04

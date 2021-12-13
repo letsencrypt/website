@@ -4,9 +4,8 @@
   "attr-value-double-quotes": false,
   "attr-value-not-empty": false,
   "attr-no-duplication": true,
-  "doctype-first": true,
   "tag-pair": true,
-  "empty-tag-not-self-closed": true,
+  "empty-tag-not-self-closed": false,
   "spec-char-escape": false,
   "id-unique": true,
   "src-not-empty": true,
@@ -21,7 +20,7 @@
   "attr-unsafe-chars": false,
   "head-script-disabled": false,
   "doctype-first":false,
-
+  "html-lang-require": true,
   "inline-style-disabled": false,
   "inline-script-disabled": false
 }

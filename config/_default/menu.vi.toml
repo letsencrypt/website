@@ -6,12 +6,10 @@ url = "https://community.letsencrypt.org/"
 name = "Quyên Góp"
 weight = 30
 identifier = "donate"
-url = "/vi/donate/"
 [[main]]
 name = "Giới Thiệu"
 weight = 40
 identifier = "about"
-url = "/vi/about/"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20

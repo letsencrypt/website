@@ -13,7 +13,7 @@ other = "Faire un don"
 other = "Sponsoriser"
 
 [home_hero_annual_report]
-other = "Lisez notre rapport annuel 2019"
+other = "Lisez notre <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>rapport annuel 2021</a>"
 
 [home_hero_desktop]
 other = "Bureau"
@@ -77,11 +77,6 @@ other = "Langues"
 
 [view_in_english]
 other = "Voir en anglais"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Voir en français"
 
 [old_version]
 other = "Note : La version anglaise a été mise à jour depuis sa traduction"

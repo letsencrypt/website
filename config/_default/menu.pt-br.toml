@@ -6,12 +6,10 @@ url = "https://community.letsencrypt.org/c/help/ajuda-em-portugues"
 name = "Doar"
 weight = 30
 identifier = "donate"
-url = "/pt-br/donate/"
 [[main]]
 name = "Sobre Nós"
 weight = 40
 identifier = "about"
-url = "/pt-br/about/"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
