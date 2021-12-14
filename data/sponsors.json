@@ -6,7 +6,7 @@
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
       {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
-      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
+      {"name":"Meta","url":"https://www.meta.com/","image":"meta-logo.png"},
       {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"},
       {"name":"Bill and Melinda Gates Foundation","url":"https://www.gatesfoundation.org/","image":"gates-foundation-logo.png"}
 ],
