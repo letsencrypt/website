@@ -30,7 +30,7 @@ time_format_default = ":date_medium"
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-show_fundraiser = true
+show_fundraiser = false
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
