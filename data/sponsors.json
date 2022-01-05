@@ -7,8 +7,7 @@
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
       {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
       {"name":"Meta","url":"https://www.meta.com/","image":"meta-logo.png"},
-      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"},
-      {"name":"Bill and Melinda Gates Foundation","url":"https://www.gatesfoundation.org/","image":"gates-foundation-logo.png"}
+      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
