@@ -3,7 +3,7 @@ title: שלילת אישורים
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2020-02-22
+lastmod: 2021-08-03
 show_lastmod: 1
 ---
 
@@ -19,7 +19,7 @@ show_lastmod: 1
 אם הנפקת את האישור במקור ועדיין יש לך שליטה על החשבון בו השתמשת כדי להנפיק אותו, יש לך אפשרות לשלול אותו באמצעות פרטי הגישה לחשבון שלך. Certbot ינסה לעשות זאת כבררת מחדל. דוגמה:
 
 ```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
 ```
 
 # באמצעות המפתח הפרטי של האישור
@@ -31,7 +31,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 עליך להחזיק בעותק של המפתח הפרטי בתצורת PEM בנוסף על כך. לאחר שיש לך את כל אלו, ניתן לשלול אישור באופן הבא:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
 ```
 
 # באמצעות חשבון מורשה אחר
@@ -47,5 +47,5 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 לאחר תיקוף שהשליטה בכל שמות התחום באישור שברצונך לשלול בידיך, ניתן להוריד את האישור מ־[crt.sh](https://crt.sh/) ואז להמשיך לשלול את האישור כאילו הוא הונפק על ידיך:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
 ```

@@ -6,14 +6,12 @@
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
       {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
-      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
-      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"},
-      {"name":"Bill and Melinda Gates Foundation","url":"https://www.gatesfoundation.org/","image":"gates-foundation-logo.png"}
+      {"name":"Meta","url":"https://www.meta.com/","image":"meta-logo.png"},
+      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
-      {"name":"Reprise Software","url":"https://reprisesoftware.com/","image":"reprise-software-logo.png"},
       {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
       {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"}
 ],
