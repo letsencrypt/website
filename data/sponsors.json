@@ -12,10 +12,11 @@
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
-      {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
-      {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"}
+      {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"},
+      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"}
 ],
 "silver":[
+      {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
       {"name":"American Library Association","url":"http://www.ala.org/offices/oif","image":"ala-logo.png"},
       {"name":"Cyon","url":"https://www.cyon.ch/","image":"cyon-logo.png"},
@@ -54,7 +55,6 @@
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
       {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
-      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
       {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
       {"name":"IBM","url":"https://www.ibm.com/","image":"ibm-logo.png"},
