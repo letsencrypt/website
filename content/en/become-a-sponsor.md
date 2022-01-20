@@ -12,7 +12,7 @@ menu:
 
 This page has been moved to the website of the Let's Encrypt parent organization, ISRG.
 
-Please update your bookmarks to <a href="https://www.abetterinternet.org/sponsor/">https://www.abetterinternet.org/sponsor/</a>
+Please update your bookmarks to https://www.abetterinternet.org/sponsor/
 
 Redirecting you in 5 seconds...
 
