@@ -10,10 +10,14 @@ menu:
     parent: donate
 ---
 
-This page has moved to <a href="https://www.abetterinternet.org/sponsor/">https://www.abetterinternet.org/sponsor/</a>. Redirecting you in 3 seconds...
+This page has been moved to the website of the Let's Encrypt parent organization, ISRG.
+
+Please update your bookmarks to <a href="https://www.abetterinternet.org/sponsor/">https://www.abetterinternet.org/sponsor/</a>
+
+Redirecting you in 5 seconds...
 
 <script type="text/javascript">
   setTimeout(function(){
     window.location.replace("https://www.abetterinternet.org/sponsor/");
-  },3000);
+  },5000);
 </script>
