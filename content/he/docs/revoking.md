@@ -3,7 +3,7 @@ title: שלילת אישורים
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2020-02-22
+lastmod: 2021-08-03
 show_lastmod: 1
 ---
 
@@ -18,8 +18,8 @@ show_lastmod: 1
 
 אם הנפקת את האישור במקור ועדיין יש לך שליטה על החשבון בו השתמשת כדי להנפיק אותו, יש לך אפשרות לשלול אותו באמצעות פרטי הגישה לחשבון שלך. Certbot ינסה לעשות זאת כבררת מחדל. דוגמה:
 
-```
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
+```bash
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
 ```
 
 # באמצעות המפתח הפרטי של האישור
@@ -30,15 +30,15 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 
 עליך להחזיק בעותק של המפתח הפרטי בתצורת PEM בנוסף על כך. לאחר שיש לך את כל אלו, ניתן לשלול אישור באופן הבא:
 
-```
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
+```bash
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
 ```
 
 # באמצעות חשבון מורשה אחר
 
 אם מישהו הנפיק אישור לאחר פגיעה במארח או ב־DNS ייתכן שעדיף יהיה לך לשלול את האישור הזה לאחר השבת השליטה לידיך. כדי לשלול את האישור, על מערכת Let's Encrypt יהיה לוודא שיש לך שליטה על שמות המתחם שבאישור הזה (אחרת אנשים יוכלו לשלול אישורים זה לזה ללא הרשאה)! כדי לתקף את השליטה הזאת, משתמשת מערכת Let's Encrypt באותן השיטות בהן היא משתמשת כדי לתקף שליטה לצורך הנפקה: ניתן להציב [ערך ברשומת TXT ב־DNS ](https://tools.ietf.org/html/rfc8555#section-8.4) או להציב [קובץ על שרת HTTP](https://tools.ietf.org/html/rfc8555#section-8.3). בדרך כלל, לקוח ACME אמור לטפל בזה עבורך. נא לשים לב שרוב לקוחות ה־ACME משלבים תיקוף והנפקה, לכן הדרך היחידה לבקש תיקופים היא לנסות לבקש הנפקה. לאחר מכן יתאפשר לך לשלול את האישור שהונפק אם אין לך צורך בו, או פשוט להשמיד את המפתח הפרטי. אם ברצונך להימנע מהנפקת אישור לחלוטין, ניתן לכלול שם תחום שאינו קיים בשורת הפקודה שלך, מה שיגרום להנפקה להיכשל אך עדיין לתקף את שאר שמות התחום הקיימים. כדי לעשות זאת, עליך להריץ את הפקודה:
 
-```
+```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
@@ -46,6 +46,6 @@ certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexi
 
 לאחר תיקוף שהשליטה בכל שמות התחום באישור שברצונך לשלול בידיך, ניתן להוריד את האישור מ־[crt.sh](https://crt.sh/) ואז להמשיך לשלול את האישור כאילו הוא הונפק על ידיך:
 
-```
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+```bash
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
 ```

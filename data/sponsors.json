@@ -6,18 +6,17 @@
       {"name":"OVH","url":"https://www.ovh.com/","image":"ovh-logo.png"},
       {"name":"Google Chrome","url":"https://www.google.com/chrome/","image":"chrome-logo.png", "nofollow":true},
       {"name":"Internet Society","url":"https://www.internetsociety.org/","image":"isoc-logo.png"},
-      {"name":"Facebook","url":"https://www.facebook.com/","image":"facebook-logo.png"},
-      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"},
-      {"name":"Bill and Melinda Gates Foundation","url":"https://www.gatesfoundation.org/","image":"gates-foundation-logo.png"}
+      {"name":"Meta","url":"https://www.meta.com/","image":"meta-logo.png"},
+      {"name":"Amazon Web Services","url":"https://aws.amazon.com/","image":"aws-logo.png"}
 ],
 "gold":[
       {"name":"IdenTrust","url":"https://www.identrust.com/","image":"identrust-logo.png"},
       {"name":"Ford Foundation","url":"https://www.fordfound.org/","image":"ford-foundation-logo.png"},
-      {"name":"Reprise Software","url":"https://reprisesoftware.com/","image":"reprise-software-logo.png"},
-      {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
-      {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"}
+      {"name":"Shopify","url":"https://www.shopify.com/","image":"shopify-logo.png"},
+      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"}
 ],
 "silver":[
+      {"name":"Automattic","url":"https://automattic.com/","image":"automattic-logo.png"},
       {"name":"Akamai","url":"https://www.akamai.com/","image":"akamai-logo.png"},
       {"name":"American Library Association","url":"http://www.ala.org/offices/oif","image":"ala-logo.png"},
       {"name":"Cyon","url":"https://www.cyon.ch/","image":"cyon-logo.png"},
@@ -56,7 +55,6 @@
       {"name":"HAProxy","url":"https://www.haproxy.com/","image":"haproxy-logo.png"},
       {"name":"Datto","url":"https://www.datto.com/","image":"datto-logo.png"},
       {"name":"Axiom","url":"https://axiom.co/","image":"axiom-logo.png"},
-      {"name":"SAP","url":"https://www.sap.com/","image":"sap-logo.png"},
       {"name":"Verizon Digital Media Services","url":"https://www.verizondigitalmedia.com/","image":"vdms-logo.png"},
       {"name":"MongoDB","url":"https://www.mongodb.com/","image":"mongodb-logo.png"},
       {"name":"IBM","url":"https://www.ibm.com/","image":"ibm-logo.png"},
@@ -82,7 +80,6 @@
       {"name":"Dan.com","url":"https://dan.com/","image":"dan-com-logo.png"},
       {"name":"Cloudera","url":"https://www.cloudera.com/","image":"cloudera-logo.png"},
       {"name":"Hack the Box","url":"https://www.hackthebox.eu/","image":"hackthebox-logo.png"},
-      {"name":"eUKhost","url":"https://www.eukhost.com/","image":"eukhost-logo.png"},
       {"name":"Line Corp","url":"https://linecorp.com/","image":"line-logo.png"},
       {"name":"Cargo","url":"https://cargo.site/","image":"cargo-logo.png"},
       {"name":"ManualsBrain","url":"https://manualsbrain.com/","image":"manualsbrain-logo.png"},
