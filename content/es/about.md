@@ -16,11 +16,11 @@ Le damos gratuitamente a las personas los certificados digitales que necesitan p
 
 Los principios claves detrás de _Let's Encrypt_ son:
 
-* <strong>Gratuito:</strong> Cualquier que posea un nombre de dominio puede usar _Let's Encrypt_ para obtener un certificado de confianza sin costo alguno.
-* <strong>Automático:</strong> Un programa corriendo en un servidor de web puede interacturar con _Let's Encrypt_ para obtener un certificado fácilmente, configurarlo de manera segura para uso, y automáticamente hacerse cargo de la renovación.
-* <strong>Seguro:</strong> _Let's Encrypt_ servirá como una plataforma para avanzar las mejores prácticas de seguridad TLS, tanto en el lado del AC como ayudando a operadores de sitios web a asegurar sus servidores apropiadamente.
-* <strong>Transparente:</strong> Todos los certificados emitidos o revocados seran registrados públicamente y disponibles para que cualquiera los inspeccione.
-* <strong>Abierto:</strong> La emisión automática y el protocolo de renovación serán publicados como un estándar abierto para que otros pueden adoptar.
-* <strong>Cooperativo:</strong> Al igual que los mismos protocolos subyacentes de Internet, _Let's Encrypt_ es un esfuerzso conjunto para el beneficio de la comunidad, más allá del control de cualquier organización.
+* **Gratuito:** Cualquier que posea un nombre de dominio puede usar _Let's Encrypt_ para obtener un certificado de confianza sin costo alguno.
+* **Automático:** Un programa corriendo en un servidor de web puede interacturar con _Let's Encrypt_ para obtener un certificado fácilmente, configurarlo de manera segura para uso, y automáticamente hacerse cargo de la renovación.
+* **Seguro:** _Let's Encrypt_ servirá como una plataforma para avanzar las mejores prácticas de seguridad TLS, tanto en el lado del AC como ayudando a operadores de sitios web a asegurar sus servidores apropiadamente.
+* **Transparente:** Todos los certificados emitidos o revocados seran registrados públicamente y disponibles para que cualquiera los inspeccione.
+* **Abierto:** La emisión automática y el protocolo de renovación serán publicados como un estándar abierto para que otros pueden adoptar.
+* **Cooperativo:** Al igual que los mismos protocolos subyacentes de Internet, _Let's Encrypt_ es un esfuerzso conjunto para el beneficio de la comunidad, más allá del control de cualquier organización.
 
 Tenemos una página con información más detallada sobre [cómo _Let's Encrypt_ AC funciona](/how-it-works).

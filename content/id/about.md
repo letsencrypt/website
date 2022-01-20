@@ -16,11 +16,11 @@ Kami memberikan orang-orang sertifikat yang diperlukan untuk menaktifkan HTTPS (
 
 Prinsip kunci utama dibalik Let's Encrypt adalah:
 
-* <strong>Gratis:</strong> Semua orang yang memiliki nama domain dapat menggunakan Let's Encrypt untuk memperoleh sertifikat terpercaya dengan tanpa biaya.
-* <strong>Otomatis:</strong> Perangkat Lunak yang berjalan di Server Web dapat berinteraksi dengan Let's Encrypt untuk mendapatkan sertifikat terpecaya secara mudah, dengan aman memasangnya, dan secara otomatis akan memperbaharui sertifikat tersebut.
-* <strong>Aman:</strong> Let's Encrypt akan bertindak sebagai *platform* yang memajukan kiat-kiat praktik terbaik untuk keamanan TLS, pada sisi CA dan dengan membantu operator situs untuk mengamankan server mereka secara layak.
-* <strong>Transparan:</strong> Seluruh sertifikat yang diterbitkan atau yang dicabut akan tercatat secara publik dan tersedia untuk diperiksa oleh semua orang.
-* <strong>Terbuka:</strong> Protokol penerbitan otomatis dan pembaharuan akan dipublikasikan sebagai standar terbuka yang dapat orang lain adopsi.
-* <strong>Kooperatif:</strong> Sama seperti dasar dari protokol Internet itu sendiri, Let's Encrypt adalah upaya bersama untuk memberi manfaat untuk masyarakat, diluar kendari dari organisasi manapun.
+* **Gratis:** Semua orang yang memiliki nama domain dapat menggunakan Let's Encrypt untuk memperoleh sertifikat terpercaya dengan tanpa biaya.
+* **Otomatis:** Perangkat Lunak yang berjalan di Server Web dapat berinteraksi dengan Let's Encrypt untuk mendapatkan sertifikat terpecaya secara mudah, dengan aman memasangnya, dan secara otomatis akan memperbaharui sertifikat tersebut.
+* **Aman:** Let's Encrypt akan bertindak sebagai *platform* yang memajukan kiat-kiat praktik terbaik untuk keamanan TLS, pada sisi CA dan dengan membantu operator situs untuk mengamankan server mereka secara layak.
+* **Transparan:** Seluruh sertifikat yang diterbitkan atau yang dicabut akan tercatat secara publik dan tersedia untuk diperiksa oleh semua orang.
+* **Terbuka:** Protokol penerbitan otomatis dan pembaharuan akan dipublikasikan sebagai standar terbuka yang dapat orang lain adopsi.
+* **Kooperatif:** Sama seperti dasar dari protokol Internet itu sendiri, Let's Encrypt adalah upaya bersama untuk memberi manfaat untuk masyarakat, diluar kendari dari organisasi manapun.
 
 Kami memiliki halaman informasi detil tentang [bagaimana Let's Encrypt CA bekerja](/how-it-works).
