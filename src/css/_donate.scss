@@ -37,3 +37,20 @@
     float: left;
   }
 }
+
+.key-value-table {
+  margin: 0 auto 20px;
+}
+
+.key-value-table th {
+  text-align: right;
+  padding-right: 5px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.key-value-table + p {
+  margin-top: 24px;
+}
+.key-value-table td {
+  vertical-align: top;
+}
