@@ -12,7 +12,7 @@ Most importantly though, the Web went from 67% encrypted page loads to 77% in 20
 
 We'd like to thank all of the people and organizations who worked hard to create a more secure and privacy-respecting Web.
 
-This year we created a new website for the legal entity behind Let's Encrypt, [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/), because we believe there will be other instances beyond Let's Encrypt in which ISRG might be able to help to build, or improve access to, a better Internet. 
+This year we created a new website for the legal entity behind Let's Encrypt, [Internet Security Research Group (ISRG)](https://www.abetterinternet.org/), because we believe there will be other instances beyond Let's Encrypt in which ISRG might be able to help to build, or improve access to, a better Internet.
 
 While we’re proud of what we accomplished in 2018, we spend most of our time looking forward rather than back. As we wrap up our own planning process for 2019, We’d like to share some of our plans with you, including both the things we’re excited about and the challenges we’ll face. We’ll cover service growth, new features, infrastructure, and finances.
 
@@ -60,6 +60,6 @@ Our 2019 fundraising efforts are off to a strong start with Platinum sponsorship
 
 ## Support Let’s Encrypt
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization would like to [sponsor](https://www.abetterinternet.org/sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
 
 We’re grateful for the industry and community support that we receive, and we look forward to continuing to create a more secure and privacy-respecting Web!

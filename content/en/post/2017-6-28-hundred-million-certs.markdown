@@ -21,6 +21,6 @@ The total number of certificates we’ve issued is an interesting number, but it
 
 When Let’s Encrypt’s service first became available, less than 40% of page loads on the Web used HTTPS. It took the Web 20 years to get to that point. In the 19 months since we launched, encrypted page loads have gone up by 18%, to nearly 58%. That’s an incredible rate of change for the Web. Contributing to this trend is what we’re most proud of.
 
-If you’re as excited about the potential for a 100% HTTPS Web as we are, please consider [getting involved](https://letsencrypt.org/getinvolved/), [making a donation](https://letsencrypt.org/donate/), or [sponsoring](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt.
+If you’re as excited about the potential for a 100% HTTPS Web as we are, please consider [getting involved](https://letsencrypt.org/getinvolved/), [making a donation](https://letsencrypt.org/donate/), or [sponsoring](https://www.abetterinternet.org/sponsor/) Let’s Encrypt.
 
 Here’s to the next 100,000,000 certificates, and a more secure and privacy-respecting Web for everyone!

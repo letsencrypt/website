@@ -6,9 +6,9 @@ title: "Resources for Certificate Chaining Help"
 slug: cert-chaining-help
 ---
 
-As planned, the DST Root CA X3 has [expired](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/) and we're now using our own ISRG Root X1 for trust. We used a cross-sign with DST Root CA X3 to gain broad trust for our certificates when we were just starting out. Now our own root is widely trusted. 
+As planned, the DST Root CA X3 has [expired](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/) and we're now using our own ISRG Root X1 for trust. We used a cross-sign with DST Root CA X3 to gain broad trust for our certificates when we were just starting out. Now our own root is widely trusted.
 
-For most websites, it was just another day on the Internet, but inevitably with such a big change some sites and configurations have issues. Our [overview of the planned expiration](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/) is here. You can read about [what we've done to make the process smoother](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html). Most problems can be solved by updating the software on the machine that is having trouble. 
+For most websites, it was just another day on the Internet, but inevitably with such a big change some sites and configurations have issues. Our [overview of the planned expiration](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/) is here. You can read about [what we've done to make the process smoother](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html). Most problems can be solved by updating the software on the machine that is having trouble.
 
 You may also find these links helpful:
 
@@ -21,4 +21,4 @@ Whenever there is a significant change to our API, we post in the [API Announcem
 We (and our community) are here for you! If you have any questions about this change, search on our community forum or post on the [thread](https://community.letsencrypt.org/t/help-thread-for-dst-root-ca-x3-expiration-september-2021/149190/361) we have to help you with this very topic.
 
 ## Supporting Let’s Encrypt
-As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.
+As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://www.abetterinternet.org/sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.

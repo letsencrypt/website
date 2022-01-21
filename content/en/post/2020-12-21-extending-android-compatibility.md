@@ -7,7 +7,7 @@ slug: extending-android-compatibility
 ---
 
 > **Update, May 13, 2021**
-> 
+>
 > Please visit [this post] (https://community.letsencrypt.org/t/production-chain-changes/150739) on our community forum for the latest information about chain changes as some information about the changes and dates in this blog post are outdated.
 
 We’re happy to announce that we have developed a way for older Android devices to retain their ability to visit sites that use Let's Encrypt certificates after our cross-signed intermediates expire. We are no longer planning any changes in January that may cause compatibility issues for Let’s Encrypt subscribers.
@@ -26,7 +26,7 @@ Some additional technical details follow.
 
 **I’m an ACME client developer, what do I need to do?** If your client handled the X3 to R3 transition smoothly, then you shouldn’t need to take action. Ensure that your client correctly uses the intermediate certificate provided by the ACME API at the end of issuance, and doesn’t retrieve intermediates by other means (e.g. hardcoding them, reusing what is on disk already, or fetching from AIA URLs).
 
-**I’m a Let’s Encrypt subscriber, what do I need to do?** In the vast majority of cases, nothing. If you want to double check, please ensure that your ACME client is up-to-date. 
+**I’m a Let’s Encrypt subscriber, what do I need to do?** In the vast majority of cases, nothing. If you want to double check, please ensure that your ACME client is up-to-date.
 
 **I use an old Android device, what do I need to do?** Nothing! We’re trying to ensure that this change is completely invisible to end-users.
 
@@ -50,4 +50,4 @@ We will continue to offer this same chain as an alternate. However, note that mo
 
 In the future we hope to share more technical details about how and why this plan works, demonstrate why the expiration of DST Root CA X3 doesn’t affect the security of the web, and what this plan means long-term for our subscribers and end-users on the web.
 
-We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://www.abetterinternet.org/sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
