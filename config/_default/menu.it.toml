@@ -28,3 +28,9 @@ weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+[[main]]
+name = "Diventa un sostenitore"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
