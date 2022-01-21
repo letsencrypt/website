@@ -43,7 +43,7 @@ HTTPS.
 Vi behöver stöd från generösa sponsorer, anslagsgivare och individer för att
 kunna erbjuda våra tjänster kostnadsfritt i hela världen. Om du är intresserad
 av att stödja oss så överväg att [donera](/donate) eller
-[bli en sponsor](/become-a-sponsor).
+[bli en sponsor](https://www.abetterinternet.org/sponsor).
 
 I vissa fall kommer mellanhänder såsom webbhotell debitera en symbolisk summa
 för att täcka sina administrations- och hanteringskostnader som de ådrar sig

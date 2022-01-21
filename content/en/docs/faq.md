@@ -31,7 +31,7 @@ To get started using Let's Encrypt, please visit our [Getting Started](/getting-
 
 We do not charge a fee for our certificates. Let's Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
 
-We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate) or [becoming a sponsor](/become-a-sponsor).
+We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate) or [becoming a sponsor](https://www.abetterinternet.org/sponsor).
 
 In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let's Encrypt certificates.
 

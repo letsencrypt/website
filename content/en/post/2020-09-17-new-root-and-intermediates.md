@@ -226,7 +226,7 @@ ongoing support of our vision to change security on the Web for the better.
 
 We depend on contributions from our community of users and supporters in
 order to provide our services. If your company or organization would like to
-[sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please
+[sponsor](https://www.abetterinternet.org/sponsor/) Let’s Encrypt please
 email us at sponsor@letsencrypt.org. We ask that you make an
 [individual contribution](https://letsencrypt.org/donate/) if it is within your
 means.

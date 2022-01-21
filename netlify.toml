@@ -105,6 +105,18 @@ status = 302
 force = false
 
 [[redirects]]
+from = "/become-a-sponsor"
+to = "https://www.abetterinternet.org/sponsor"
+status = 302
+force = false
+
+[[redirects]]
+from = "/sponsor"
+to = "https://www.abetterinternet.org/sponsor"
+status = 302
+force = false
+
+[[redirects]]
 from = "/certs"
 to = "/certificates"
 status = 302

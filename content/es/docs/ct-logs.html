@@ -6,29 +6,60 @@ lastmod: 2019-05-15
 show_lastmod: 1
 ---
 
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >Certificate Transparency (CT)</a
+  >
+  es un sistema para registrar y monitorear la emisión de certificados TLS. CT
+  mejora enormemente la capacidad de todos para monitorear y estudiar emisión de
+  certificados, y estas capacidades han llevado a numerosas mejoras al
+  ecosistema de AC y seguridad web. Como resultado, CT se está convirtiendo
+  rápidamente en una infrastructura crítica.
+</p>
 
-<p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> es un sistema para registrar y monitorear la emisión de certificados TLS. CT mejora enormemente la capacidad de todos para monitorear y estudiar emisión de certificados, y estas capacidades han llevado a numerosas mejoras al ecosistema de AC y seguridad web. Como resultado, CT se está convirtiendo rápidamente en una infrastructura crítica.</p>
-
-<p>Let's Encrypt envía todos los certificados que emitimos a registros CT. También operamos un registro CT nosotros mismos, que todas las autoridades de certificación de confianza pública pueden enviar.</p>
+<p>
+  Let's Encrypt envía todos los certificados que emitimos a registros CT.
+  También operamos un registro CT nosotros mismos, que todas las autoridades de
+  certificación de confianza pública pueden enviar.
+</p>
 
 <h2>Fondos</h2>
 
-<p>Nos gustaría agradecer a los siguientes socios por patrocinar generosamente el registro CT de Let's Encrypt. Si su organización desea ayudarnos a continuar este trabajo, por favor considere <a href="/become-a-sponsor">patrocinar o donar</a>.</p>
+<p>
+  Nos gustaría agradecer a los siguientes socios por patrocinar generosamente el
+  registro CT de Let's Encrypt. Si su organización desea ayudarnos a continuar
+  este trabajo, por favor considere
+  <a href="https://www.abetterinternet.org/sponsor/">patrocinar o donar</a>.
+</p>
 
-<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
 
 <h2>Arquitectura</h2>
 
-<p>Nuestros registros utilizan el <a href="https://github.com/google/trillian/"> software Trillian </a> de Google que se ejecuta en la infraestructura de AWS. Utilizamos <a href="https://kubernetes.io/"> Kubernetes </a> para la organización de contenedores y la programación de trabajos y AWS RDS para la gestión de bases de datos.</p>
+<p>
+  Nuestros registros utilizan el
+  <a href="https://github.com/google/trillian/"> software Trillian </a> de
+  Google que se ejecuta en la infraestructura de AWS. Utilizamos
+  <a href="https://kubernetes.io/"> Kubernetes </a> para la organización de
+  contenedores y la programación de trabajos y AWS RDS para la gestión de bases
+  de datos.
+</p>
 
 <h2>Monitoreo de registro</h2>
 
-<p>Let's Encrypt ha creado una herramienta de monitoreo de registros CT de código abierto llamada <a href="https://github.com/letsencrypt/ct-woodpecker"> CT Woodpecker </a>. Usamos esta herramienta para monitorear la estabilidad y el cumplimiento de nuestros propios registros, y esperamos que a otros les resulte útil también.</p>
+<p>
+  Let's Encrypt ha creado una herramienta de monitoreo de registros CT de código
+  abierto llamada
+  <a href="https://github.com/letsencrypt/ct-woodpecker"> CT Woodpecker </a>.
+  Usamos esta herramienta para monitorear la estabilidad y el cumplimiento de
+  nuestros propios registros, y esperamos que a otros les resulte útil también.
+</p>
 
 <h2>Registros CT</h2>
 
-{{< ct_logs data="production" >}}
-{{< /ct_logs >}}
-
-{{< ct_logs data="testing" >}}
-{{< /ct_logs >}}
+{{< ct_logs data="production" >}} {{< /ct_logs >}} {{< ct_logs data="testing"
+>}} {{< /ct_logs >}}

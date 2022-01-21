@@ -24,14 +24,14 @@ show_lastmod: 1
 
 Let's Encrypt 是一家全球性的憑證頒發機構 (Certificate Authority, CA)。我們讓全世界的人們和機構獲得、更新和管理 SSL/TLS 憑證。網站可以透過我們的憑證啟用安全的 HTTPS 連線。
 
-Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提供組織驗證型憑證 (Organization Validation, OV) 或擴展驗證型憑證 (Extended Validation, EV)，主要原因是因為我們無法自動化地頒發那種類型的憑證。 
+Let's Encrypt 提供域名驗證型憑證 (Domain Validation, DV)。我們不提供組織驗證型憑證 (Organization Validation, OV) 或擴展驗證型憑證 (Extended Validation, EV)，主要原因是因為我們無法自動化地頒發那種類型的憑證。
 
 如果你想開始使用 Let's Encrypt，請閱讀我們的[快速入門](/getting-started)頁面。
 
 ## 使用 Let's Encrypt 的服務需要多少費用？真的免費嗎？
 我們不會在憑證上收取任何費用。Let’s Encrypt 是一家非營利的機構，我們的任務是透過推廣使用 HTTPS 來創造一個更加安全；更尊重隱私的網際網路。我們的服務免費且操作簡單，因此每個網站都可以藉由它部屬 HTTPS 網站。
 
-為了提供全世界免費的服務，我們需要慷慨的贊助商以及個人的幫助。如果你對於贊助我們有興趣，請參考[贊助](/donate)頁面或[成為贊助者](/become-a-sponsor)頁面。
+為了提供全世界免費的服務，我們需要慷慨的贊助商以及個人的幫助。如果你對於贊助我們有興趣，請參考[贊助](/donate)頁面或[成為贊助者](https://www.abetterinternet.org/sponsor)頁面。
 
 在某些情況下，服務整合者（例如：服務業者或主機託管業者）會收取一些費用，這筆費用屬於他們提供 Let’s Encrypt 證書所需要的管理和維護成本。
 

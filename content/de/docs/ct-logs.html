@@ -6,29 +6,62 @@ lastmod: 2019-11-20
 show_lastmod: 1
 ---
 
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >Certificate Transparency (CT)</a
+  >
+  ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS
+  Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen
+  und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des
+  CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr
+  schnell zu einem kritischen Teil der Infrastruktur geworden.
+</p>
 
-<p><a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr schnell zu einem kritischen Teil der Infrastruktur geworden.</p>
-
-<p>Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben auch CT Log für uns selber und möchten alle öffentlichen Zertifikatsaussteller ermutigen, dasselbe zu tun.</p>
+<p>
+  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben
+  auch CT Log für uns selber und möchten alle öffentlichen Zertifikatsaussteller
+  ermutigen, dasselbe zu tun.
+</p>
 
 <h2>Finanzierung</h2>
 
-<p>Wir möchten folgenden Partnern für die grossartige Unterstützung von Let's Encrypt CT Log danken. Wenn Ihre Organisation helfen möchte, diese Arbeit fortzusetzen, bitte besuchen Sie <a href="/become-a-sponsor">Sponsor werden</a>.</p>
+<p>
+  Wir möchten folgenden Partnern für die grossartige Unterstützung von Let's
+  Encrypt CT Log danken. Wenn Ihre Organisation helfen möchte, diese Arbeit
+  fortzusetzen, bitte besuchen Sie
+  <a href="https://www.abetterinternet.org/sponsor/">Sponsor werden</a>.
+</p>
 
-<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
 
 <h2>Architektur</h2>
 
-<p>Unsere Logs benutzen Google <a href="https://github.com/google/trillian/">Trillian Software</a>, betrieben auf AWS Infrastruktur. Wir benutzen <a href="https://kubernetes.io/">Kubernetes</a> zur Container Orchestrierung und Aufgabenplanung und AWS RDS zur Datenbankverwaltung. Für mehr Informationen lesen Sie <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"How Let's Encrypt Runs CT Logs"</a>.</p>
+<p>
+  Unsere Logs benutzen Google
+  <a href="https://github.com/google/trillian/">Trillian Software</a>, betrieben
+  auf AWS Infrastruktur. Wir benutzen
+  <a href="https://kubernetes.io/">Kubernetes</a> zur Container Orchestrierung
+  und Aufgabenplanung und AWS RDS zur Datenbankverwaltung. Für mehr
+  Informationen lesen Sie
+  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >"How Let's Encrypt Runs CT Logs"</a
+  >.
+</p>
 
 <h2>Log Monitoring</h2>
 
-<p>Let's Encrypt hat ein Open-Source CT log Monitoringtool entwickelt namens <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Wir benutzen das Tool, um die Stabilität und Integrität unser eigenen Logs zu überwachen und wir hoffen, dass andere es als nützlich empfinden.</p>
+<p>
+  Let's Encrypt hat ein Open-Source CT log Monitoringtool entwickelt namens
+  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Wir
+  benutzen das Tool, um die Stabilität und Integrität unser eigenen Logs zu
+  überwachen und wir hoffen, dass andere es als nützlich empfinden.
+</p>
 
 <h2>CT Logs</h2>
 
-{{< ct_logs data="production" >}}
-{{< /ct_logs >}}
-
-{{< ct_logs data="testing" >}}
-{{< /ct_logs >}}
+{{< ct_logs data="production" >}} {{< /ct_logs >}} {{< ct_logs data="testing"
+>}} {{< /ct_logs >}}
