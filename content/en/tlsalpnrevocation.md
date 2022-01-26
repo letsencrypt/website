@@ -14,14 +14,10 @@ We have sent notification emails to affected subscribers who have registered a v
 
 If you are unsure whether your hostname is affected, we are also providing a list of all affected certificate serial numbers, along with their associated account ID numbers and all DNS Names which appear on the certificate.
 
-The file [tls-alpn-01-incident-affected-certificates.txt](...) contains rows in the following format:
+The file [tls-alpn-01-incident-affected-certs-by-regID.csv.gz](https://tls-alpn-01-data.letsencrypt.org/tls-alpn-01-affected-certs-by-regID.csv.gz) is a gzipped CSV containing rows in the following format:
 ```
-123456 2022-01-25T18:25:29Z 03e1ce2c0324f9ca93417fc8886f87f34857 letsencrypt.org www.letsencrypt.org status.letsencrypt.org
+123456,"03e1ce2c0324f9ca93417fc8886f87f34857","2022-01-25T18:25:29Z","letsencrypt.org","www.letsencrypt.org","status.letsencrypt.org"
 ```
-The first element in each row is the [ID number](https://letsencrypt.org/docs/account-id/) of the account which requested issuance of the certificate. The file is sorted by account ID, so all certs issued by a single account are grouped together. The second element is the time at which the certificate was issued. The third element is the unique hexadecimal serial number of the certificate. The remaining elements are all identifiers (DNS hostnames) that the certificate was issued for.
+The first column is the [ID number](https://letsencrypt.org/docs/account-id/) of the account which requested issuance of the certificate. The file is sorted by account ID, so all certs issued by a single account are grouped together. The second column is the unique hexadecimal serial number of the certificate. The third column is the time at which the certificate was issued (in RFC3339 format, i.e. YYYY-MM-DDTHH:MM:SSZ, all times UTC). The remaining columns are all identifiers (DNS hostnames) that the certificate was issued for.
 
-You can download this file and look up your account id(s) (if you received an email, your account ids were in that email). For each certificate
-associated you will need to renew and replace it, unless you have renewed it
-more recently than the date listed. For instance, if you know your ACME client
-always renews certificates when they are 30 days from expiration, you can safely
-ignore any entries with a date earlier than 2020-01-02.
+You can download this file, unzip it with `gunzip` or the equivalent utility on your computer, and look up your account id(s). For each certificate associated you will need to renew and replace it, unless you have renewed it more recently than the date listed.
