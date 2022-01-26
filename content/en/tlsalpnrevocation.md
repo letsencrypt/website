@@ -10,7 +10,7 @@ show_lastmod: 1
 
 This page hosts the list of certificates affected by the TLS-ALPN-01 Incident. You can find details about this incident [in the community forum](https://community.letsencrypt.org/t/2022-01-25-issue-with-tls-alpn-01-validation-method/170450) and [on bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1751984).
 
-We have sent notification emails to affected subscribers who have registered a valid email address; if you received an email, you have at least one affected certificate. You may not have received an email if you did not provide an email address when registering your ACME account, if you unsubscribed from Let's Encrypt email notifications previously, or if the email was caught by a spam filter.
+We have sent notification emails to affected subscribers who have registered a valid email address; if you received an email, you have at least one affected certificate. You may not have received an email if you did not provide an email address when registering your ACME account, if you unsubscribed from Let's Encrypt [email notifications](https://letsencrypt.org/docs/expiration-emails/) previously, or if the email was caught by a spam filter.
 
 If you are unsure whether your hostname is affected, we are also providing a list of all affected certificate serial numbers, along with their associated account ID numbers and all DNS Names which appear on the certificate.
 
