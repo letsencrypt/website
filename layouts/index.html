@@ -34,7 +34,7 @@
                     {{ else }}
                       {{ .Summary }}
                     {{ end }}
-                    <p><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ i18n "read_more" }}</a></p>
+                    <p><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}" aria-label="{{ .Title }}">{{ i18n "read_more" }}</a></p>
                   </li>
                 {{ end }}
               </ul>

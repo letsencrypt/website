@@ -9,6 +9,7 @@
        url('/fonts/OpenSans-Light.svg#OpenSansLight') format('svg');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
        url('/fonts/OpenSans-Regular.svg#OpenSansRegular') format('svg');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -31,4 +33,5 @@
        url('/fonts/OpenSans-Bold.svg#OpenSansBold') format('svg');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
