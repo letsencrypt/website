@@ -2,8 +2,8 @@
 title: Download affected certificate serials for 2022.01.25 TLS-ALPN-01 Incident
 slug: tlsalpnrevocation
 top_graphic: 4
-date: 2022-01-26
-lastmod: 2022-01-26
+date: 2022-01-27
+lastmod: 2022-01-27
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -12,7 +12,16 @@ This page hosts the list of certificates affected by the TLS-ALPN-01 Incident. Y
 
 We have sent notification emails to affected subscribers who have registered a valid email address; if you received an email, you have at least one affected certificate. You may not have received an email if you did not provide an email address when registering your ACME account, if you unsubscribed from Let's Encrypt [email notifications](https://letsencrypt.org/docs/expiration-emails/) previously, or if the email was caught by a spam filter.
 
-If you are unsure whether your hostname is affected, we are also providing a list of all affected certificate serial numbers, along with their associated account ID numbers and all DNS Names which appear on the certificate.
+If you are unsure whether your hostname is affected, please use our [web tool](https://tls-alpn-check.letsencrypt.org) to investigate the data set. Alternatively you can issue requests via a command line interface.
+```
+$ curl -X POST -d 'fqdn=letsencrypt.org' https://tls-alpn-check.letsencrypt.org/checkhost
+[letsencrypt.org]: FQDN was not found in the impacted list.
+
+$ curl -X POST -d 'serial=03a1c95bdaa36a8268327f2253cbd3ba243' https://tls-alpn-check.letsencrypt.org/checkserial
+[03a1c95bdaa36a8268327f2253cbd3ba243]: Serial was not found in the impacted list. No action should be necessary.
+```
+
+We are also providing a list of all affected certificate serial numbers, along with their associated account ID numbers and all DNS Names which appear on the certificate. This is the same data set that powers the [web tool](https://tls-alpn-check.letsencrypt.org).
 
 The file [tls-alpn-01-incident-affected-certs-by-regID.csv.gz](https://tls-alpn-01-data.letsencrypt.org/tls-alpn-01-affected-certs-by-regID.csv.gz) is a gzipped CSV containing rows in the following format:
 
