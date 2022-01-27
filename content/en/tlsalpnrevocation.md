@@ -27,7 +27,7 @@ $ curl -X POST -d 'serial=030xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' https://tls-alpn
 [030xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]: Serial was found in the impacted list. Please renew your certificate as soon as possible. Help is available at https://community.letsencrypt.org/t/questions-about-renewing-before-tls-alpn-01-revocations/170449
 ```
 
-Alternatively, the data set us available for download and local searching.
+Alternatively, the data set is available for download and local searching.
 
 The file [tls-alpn-01-incident-affected-certs-by-regID.csv.gz](https://tls-alpn-01-data.letsencrypt.org/tls-alpn-01-affected-certs-by-regID.csv.gz) is a gzipped CSV containing rows in the following format:
 
