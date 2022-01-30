@@ -2,8 +2,8 @@
 title: Download affected certificate serials for 2022.01.25 TLS-ALPN-01 Incident
 slug: tlsalpnrevocation
 top_graphic: 4
-date: 2022-01-27
-lastmod: 2022-01-27
+date: 2022-01-26
+lastmod: 2022-01-30
 english_is_canonical: 1
 show_lastmod: 1
 ---
