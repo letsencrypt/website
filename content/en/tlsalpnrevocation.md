@@ -32,7 +32,7 @@ Alternatively, the data set is available for download and local searching.
 The file [tls-alpn-01-incident-affected-certs-by-regID.csv.gz](https://tls-alpn-01-data.letsencrypt.org/tls-alpn-01-affected-certs-by-regID.csv.gz) is a gzipped CSV containing rows in the following format:
 
 ```csv
-123456,"03e1ce2c0324f9ca93417fc8886f87f34857","2022-01-25T18:25:29Z","letsencrypt.org","www.letsencrypt.org","status.letsencrypt.org"
+123456,"03e1ce2c0324f9ca93417fc8886f87f34857","2022-02-25T18:25:29Z","letsencrypt.org","www.letsencrypt.org","status.letsencrypt.org"
 ```
 
 The first column is the [ID number](https://letsencrypt.org/docs/account-id/) of the account which requested issuance of the certificate. The file is sorted by account ID, so all certs issued by a single account are grouped together. The second column is the unique hexadecimal serial number of the certificate. The third column is the expiration time of the certificate (in RFC3339 format, i.e. YYYY-MM-DDTHH:MM:SSZ, all times UTC). The remaining columns are all identifiers (DNS hostnames) that the certificate was issued for.
