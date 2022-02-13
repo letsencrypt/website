@@ -8,15 +8,19 @@
   background-color: rgb(163, 200, 199);
 }
 
-.callout, .secondary-callout, .hero {
+.callout,
+.secondary-callout,
+.hero {
   margin-bottom: 15px;
   padding: 10px 40px;
 }
 
-.callout, .secondary-callout {
+.callout,
+.secondary-callout {
   border: 1px solid rgb(50, 85, 143);
 
-  h2, h3 {
+  h2,
+  h3 {
     font-weight: bold;
   }
 
@@ -58,6 +62,10 @@
 .donate-strong {
   font-size: 120%;
   font-weight: bold;
-  color: #2B3C69;
+  color: #2b3c69;
+}
 
+.column-for-donorbox {
+  padding-right: 10px;
+  width: calc(50% - 10px);
 }

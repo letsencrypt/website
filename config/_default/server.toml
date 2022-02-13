@@ -58,7 +58,6 @@ Content-Security-Policy = """
         https://bid.g.doubleclick.net
         https://js.stripe.com/v3/
         https://js.stripe.com/v2/
-        https://www.sandbox.paypal.com
         https://www.paypal.com
     ;
     connect-src 'self'
