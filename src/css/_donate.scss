@@ -8,15 +8,19 @@
   background-color: rgb(163, 200, 199);
 }
 
-.callout, .secondary-callout, .hero {
+.callout,
+.secondary-callout,
+.hero {
   margin-bottom: 15px;
   padding: 10px 40px;
 }
 
-.callout, .secondary-callout {
+.callout,
+.secondary-callout {
   border: 1px solid rgb(50, 85, 143);
 
-  h2, h3 {
+  h2,
+  h3 {
     font-weight: bold;
   }
 
@@ -36,4 +40,32 @@
   img {
     float: left;
   }
+}
+
+.key-value-table {
+  margin: 0 auto 20px;
+}
+
+.key-value-table th {
+  text-align: right;
+  padding-right: 5px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.key-value-table + p {
+  margin-top: 24px;
+}
+.key-value-table td {
+  vertical-align: top;
+}
+
+.donate-strong {
+  font-size: 120%;
+  font-weight: bold;
+  color: #2b3c69;
+}
+
+.column-for-donorbox {
+  padding-right: 10px;
+  width: calc(50% - 10px);
 }

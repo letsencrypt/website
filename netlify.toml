@@ -48,6 +48,7 @@ Content-Security-Policy = """
         https://donorbox.org
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
+        https://www.paypal.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
@@ -66,12 +67,13 @@ Content-Security-Policy = """
         https://bid.g.doubleclick.net
         https://js.stripe.com/v3/
         https://js.stripe.com/v2/
+        https://www.paypal.com
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/
         https://letsencrypt-merch.myshopify.com
         https://monorail-edge.shopifysvc.com
-
+        https://www.paypal.com
     ;
 """
 
