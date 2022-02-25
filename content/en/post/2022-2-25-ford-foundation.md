@@ -2,14 +2,19 @@
 author: Dan Fernelius, Sarah Gran
 date: 2022-02-25T00:00:00Z
 slug: ford-foundation
-title: "ISRG Announces New Major Funding from the Ford Foundation"
-excerpt: "$1M grant from The Ford Foundation supports ISRG’s security and privacy mission"
+title: "New Major Funding from the Ford Foundation"
+excerpt: "$1M grant from The Ford Foundation supports ISRG’s security and privacy mission."
 ---
 
-> ISRG's pragmatic, public-interest approach to Internet security has
-> fundamentally changed the web at an astonishing scale and pace.
->
-> \-Michael Brennan, Ford Foundation
+<div class="pull-quote-right">
+  <blockquote class="blockquote">
+    <span class="quote"></span>
+    <div class="quote-text">
+      <p class="quote-text-value">ISRG's pragmatic, public-interest approach to Internet security has fundamentally changed the web at an astonishing scale and pace.</p>
+      <footer class="blockquote-footer"><span class="blockquote-mdash">&mdash;</span><cite title="Source Title">Michael Brennan</cite>, Ford Foundation</footer>
+    </div>
+  </blockquote>
+</div>
 
 The Internet has considerable potential to help build a more just, equitable, and sustainable world for all people. Yet for everyone online&mdash;and indeed the billions not yet online&mdash;barriers to secure and privacy-respecting communication remain pervasive.
 
