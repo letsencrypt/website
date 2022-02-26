@@ -21,7 +21,7 @@ A szoftverfejlesztésben is jól jönne a segítség. Minden kódunk a [GitHub](
 
 ### Kliens szoftver
 
-A [Certbot](https://github.com/certbot/certbot) a webszerver mellett működő Python-alapú segédprogram, melynek feladata, hogy automatikusan szerezzen tanúsítványt és átalakítsa a webhelyet HTTPS-re. A Certbot az a kliens, amelyet a legtöbb embernek ajánlunk. Számos más [harmadik fél által kínált kliens változatok](/docs/client-opciók) is rendelkezésre állnak.
+A [Certbot](https://github.com/certbot/certbot) a webszerver mellett működő Python-alapú segédprogram, melynek feladata, hogy automatikusan szerezzen tanúsítványt és átalakítsa a webhelyet HTTPS-re. A Certbot az a kliens, amelyet a legtöbb embernek ajánlunk. Számos más [harmadik fél által kínált kliens változatok](/docs/client-options) is rendelkezésre állnak.
 
 ### Szerveroldali hitelesítés szolgáltató  (CE) szoftver
 

@@ -31,7 +31,7 @@ A Let's Encrypt használatának megkezdéséhez látogasson el a [Getting Starte
 
 Tanúsítványainkért nem számítunk fel díjat. A Let's Encrypt egy nonprofit szervezet, amelynek küldetése egy biztonságosabb és az adatvédelmet tiszteletben tartó web létrehozása a HTTPS széles körű elterjesztésével. Szolgáltatásaink ingyenesek és könnyen használhatóak, így minden weboldal be tudja vezetni a HTTPS-t.
 
-Nagylelkű szponzorok, támogatók és magánszemélyek támogatására van szükségünk ahhoz, hogy szolgáltatásainkat világszerte ingyenesen nyújthassuk. Ha támogatni szeretne minket, kérjük, fontolja meg az [adományozás](/donate) vagy a [szponzorálás](/become-a-sponsor) lehetőségét.
+Nagylelkű szponzorok, támogatók és magánszemélyek támogatására van szükségünk ahhoz, hogy szolgáltatásainkat világszerte ingyenesen nyújthassuk. Ha támogatni szeretne minket, kérjük, fontolja meg az [adományozás](/donate) vagy a [szponzorálás](https://www.abetterinternet.org/sponsor) lehetőségét.
 
 Egyes esetekben az integrátorok (pl. tárhelyszolgáltatók) névleges díjat számítanak fel, amely tükrözi a Let's Encrypt tanúsítványok biztosításával járó adminisztratív és kezelési költségeiket.
 
@@ -93,7 +93,7 @@ Igen. A wildcard alapú tanúsítvány kibocsátásnak ACMEv2-n keresztül kell 
 
 ## Van Let's Encrypt (ACME) kliens az operációs rendszeremhez?
 
-Számos [ACME kliens](/docs/client-opciók) áll rendelkezésre. Valószínűleg van olyan, ami jól működik az Ön operációs rendszerén. Javasoljuk, hogy kezdje a [Certbot](https://certbot.eff.org/) használatával.
+Számos [ACME kliens](/docs/client-options) áll rendelkezésre. Valószínűleg van olyan, ami jól működik az Ön operációs rendszerén. Javasoljuk, hogy kezdje a [Certbot](https://certbot.eff.org/) használatával.
 
 ## Használhatok meglévő privát kulcsot vagy tanúsítványaláírási kérelmet (CSR)?
 

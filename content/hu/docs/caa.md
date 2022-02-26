@@ -4,9 +4,8 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
-
-{{< lastmod >}}
 
 A CAA egy olyan típusú DNS-bejegyzés, amely lehetővé teszi a webhelytulajdonosok számára, hogy meghatározzák, mely tanúsító hatóságok (CA-k) állíthatnak ki a domainnevüket tartalmazó tanúsítványokat. Ezt 2013-ban szabványosította az [RFC 6844](https://tools.ietf.org/html/rfc6844), hogy a tanúsító hatóságok "csökkentsék a nem szándékos tanúsítványkiadás kockázatát". Alapesetben minden nyilvános tanúsító hatóság jogosult tanúsítványt kiállítani a nyilvános DNS-ben szereplő bármely tartománynévre, feltéve, hogy igazolja az adott tartománynév felett való rendelkezését. Ez azt jelenti, hogy ha a sok nyilvános tanúsító hatóság validálási folyamatának bármelyikében hiba van, az potenciálisan minden domainnevet érinthet. A CAA lehetőséget biztosít a domain tulajdonosok számára, hogy csökkentsék ezt a kockázatot.
 

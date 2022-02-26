@@ -13,9 +13,9 @@ Ahhoz, hogy rájöjjön, melyik módszer lesz a legmegfelelőbb az Ön számára
 
 A legtöbb shell hozzáféréssel rendelkező ember számára azt javasoljuk, hogy használja a [Certbot](https://certbot.eff.org/ "Certbot") ACME klienst. Automatizálhatja a tanúsítványok kiállítását és telepítését állásidő nélkül. Rendelkezik expert üzemmóddal is azok számára, akik nem akarnak automatikus konfigurációt. Könnyű használni, számos operációs rendszeren működik, és nagyszerű dokumentációval rendelkezik. [Látogasson el a Certbot weboldalára](https://certbot.eff.org/ "Certbot"), az operációs rendszerére és webkiszolgálójára szabott instrukciókért.
 
-Ha a [Certbot](https://certbot.eff.org/ "Certbot") nem felel meg az Ön igényeinek, vagy valami mást szeretne kipróbálni, akkor [sok más ACME-kliens közül is választhat](/docs/client-opciók).  Miután kiválasztotta az ACME-klienst, a folytatáshoz tekintse meg az adott kliens dokumentációját.
+Ha a [Certbot](https://certbot.eff.org/ "Certbot") nem felel meg az Ön igényeinek, vagy valami mást szeretne kipróbálni, akkor [sok más ACME-kliens közül is választhat](/docs/client-options).  Miután kiválasztotta az ACME-klienst, a folytatáshoz tekintse meg az adott kliens dokumentációját.
 
-Ha különböző ACME-kliensekkel kísérletezik, használja a [staging környezetet](/docs/staging-környezet), hogy elkerülje a [korlátozásokat](/docs/rate-limits).
+Ha különböző ACME-kliensekkel kísérletezik, használja a [staging környezetet](/docs/staging-environment), hogy elkerülje a [korlátozásokat](/docs/rate-limits).
 
 # Shell hozzáférés nélkül
 
