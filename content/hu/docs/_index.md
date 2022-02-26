@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Dokumentáció
 top_graphic: 1
 menu:
   main:
