@@ -23,7 +23,7 @@ other = "Blogunkból"
 other = "Olvass tovább"
 
 [subscribe_rss]
-other = 'Feliratkozás <a href="{{ .Permalink }}}">RSS-en keresztül</a>'
+other = 'Feliratkozás <a href="{{ .Permalink }}">RSS-en keresztül</a>'
 
 [footer_support_us]
 other = "Támogassa a biztonságosabb és az adatvédelmet tiszteletben tartó webet."
