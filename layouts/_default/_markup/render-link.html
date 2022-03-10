@@ -8,7 +8,7 @@
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
 	{{- else -}}
 	<a href="{{ $page.RelPermalink }}{{ with $anchor }}#{{ . }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}"{{ with .Title}} title="{{ . }}"{{ end }}>
-		{{- .Text | markdownify -}}
+		{{- .Text | safeHTML -}}
     </a>
 	{{- end -}}
 {{- else -}}
