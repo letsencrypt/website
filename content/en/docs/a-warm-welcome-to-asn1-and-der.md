@@ -3,7 +3,7 @@ title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2021-10-04
+lastmod: 2021-03-21
 ---
 This document provides a gentle introduction to the data structures and
 formats that define the certificates used in HTTPS. It should be
@@ -817,7 +817,7 @@ the same number. So BER and DER require the shortest encoding.
 
 The two's complement encoding of INTEGERs has [practical impact in
 certificate
-issuance](https://groups.google.com/forum/#!topic/mozilla.dev.security.policy/nnLVNfqgz7g%255B26-50%255D):
+issuance](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758):
 RFC 5280 requires that serial numbers be positive. Since the first bit
 is always a sign bit, that means serial numbers encoded in DER as 8 bytes can
 be at most 63 bits long. Encoding a 64-bit positive serial number
