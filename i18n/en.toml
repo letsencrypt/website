@@ -13,7 +13,7 @@ other = "Donate"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read our <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021 Annual Report</a>"
+other = "We were awarded the Levchin Prize for Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Learn more</a>"
 
 [home_major_sponsors]
 other = "Major Sponsors and Funders"

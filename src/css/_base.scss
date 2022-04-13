@@ -424,3 +424,33 @@ html[dir="rtl"] a.autoanchor {
 .list-style-none {
   list-style-type: none;
 }
+
+@media (min-width: 768px) {
+  .pic-quote-right {
+    float: right !important;
+
+    max-width: 33.33333%;
+    margin-left: 25px;
+
+    flex: 0 0 33.33333%;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
