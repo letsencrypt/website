@@ -823,6 +823,13 @@
 			"acme_v2": "true"
 		},
 		{
+			"name": "Az-Acme",
+			"url": "https://github.com/az-acme/az-acme-cli",
+			"category": "Microsoft Azure",
+			"comments": "(The simplest ACME Issuer for Azure Key Vault)",
+			"acme_v2": "true"
+		},
+		{
 			"name": "Acme PHP",
 			"url": "https://github.com/acmephp/acmephp",
 			"category": "PHP",
