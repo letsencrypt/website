@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-03-06",
+	"lastmod": "2022-05-22",
 	"categories": [
 		"Bash",
 		"C",
@@ -1076,6 +1076,19 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Az-Acme",
+			"url": "https://github.com/az-acme/az-acme-cli",
+			"category": "Microsoft Azure",
+			"comments": "(The simplest ACME Issuer for Azure Key Vault)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
