@@ -52,6 +52,19 @@ $on-laptop: 800px;
   margin-bottom: 20px;
 }
 
+.blog-image-caption {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #888;
+}
+
+article.post-content p img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "fundraiser", "waiting";

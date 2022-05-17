@@ -20,9 +20,9 @@ This post will update some of the information from the previous post [How Let's 
 
 Oak runs on a free and open source stack: Google's Trillian data store, backed by MariaDB, running at Amazon Web Services (AWS) via [Amazon's Relational Database Service](https://aws.amazon.com/rds/) (RDS). To our knowledge, Oak is the only trusted CT log without closed-source components [^3].
 
-![](https://lh6.googleusercontent.com/R6WXkuNzBfsdLTY7JGoRk7KV_lmcG9LobDfE-l3kEwernIhkWRcTm0MbtOJXsmFfFWUnF3jxBi-dRHYwkhjfPvT1J63CWJ1NdgYuolNRWUlKb0cqFlPIyJOiJYey6UfUvTg_IXdGTOJdc8FyUQ)
+![](/images/2022.05.19-open_source_stack.png)
 
-Open Source Stack
+<div class='blog-image-caption'>Open Source Stack</div>
 
 Other operators of Trillian have opted to use different databases which segment data differently, but the provided MySQL-compatible datastore has successfully kept up with Let's Encrypt's CT log volume (currently above 400 GB per month). The story for scaling Oak atop MariaDB is quite typical for any relational database, though the performance requirements are stringent.
 
@@ -46,9 +46,9 @@ The [Trillian database schema](https://github.com/google/trillian/blob/master/st
 
 - Once sequenced, entries are removed from the Unsequenced table and added as a row in SequencedLeafData.
 
-![](https://lh4.googleusercontent.com/rpAEnRTG-yb5GFS2W9OW8wiA3Yf-3nJB9aeq_5-qcLd472ocYYTs61We8_4PHHaWX7VSJVl7tUOObfwWq_6-nWw4Cg2wtryIoW8GVjWCree6gIkywjPCp0hTNBkeKAEjc54e09BGL6AK7QsP2g)
+![](/images/2022.05.19-database_layout.png)
 
-Database Layout
+<div class='blog-image-caption'>Database Layout</div>
 
 In a nutshell: No matter how many different certificate transparency trees and subtrees you set up for a given copy of Trillian, all of them will store the lion's share of their data, particularly the DER-encoded certificates themselves, interwoven into the one LeafData table. Since Trillian Log Server can only be configured with a single MySQL connection URI, limiting it to a single database, that single table can get quite big.
 
@@ -70,9 +70,9 @@ Since Trillian's MySQL-compatible backend does not support splitting the LeafDat
 
 We considered adding new database schemas to our existing MariaDB-backed Amazon RDS instance. In this design, we would run a Trillian CT Front-End (CTFE) instance per temporal log shard, each pointing to individual Trillian Log Server and Log Signer instances, which themselves point to a specific temporally-identified database schema name and tablespace. This is cost-effective, and it gives us ample room to avoid the 16 TB limit.
 
-![](https://lh5.googleusercontent.com/DTVBhgCTmb4ASnoasSgx9CGNm8lByFYueerTyGij0uQUASbBT02Zi2fqmO28zZz0dGOV4Gk2B6ggCz2Ry8YUVKpPsieJy33Q_Qy0DAlT8iZ1Rng-oJY3zIJRBHaO2JxTbNIv042ul5_rB17BJQ)
+![](/images/2022.05.19-one_schema_per_shard.png)
 
-Distinct Schema per Log Shard in a Single Database
+<div class='blog-image-caption'>Distinct Schema per Log Shard in a Single Database</div>
 
 However, if heavy maintenance is required on any part of the underlying database, it would affect every log shard contained within. In particular, we know from using MariaDB with InnoDB inside the Let's Encrypt CA infrastructure that truncating and deleting a multi-terabyte table causes performance issues for the whole database while the operation runs. Inside the CA infrastructure we mitigate that performance issue by deleting table data only on database replicas; this is more complicated in a more hands-off managed hosting environment like RDS.
 
@@ -82,9 +82,9 @@ Since we wish to clear out old data regularly as a matter of data hygiene, and t
 
 While it increases the number of managed system components, it is much cleaner to give each temporal log shard its own database instance. Like the Distinct Schema per Log Shard model, we now run Trillian CTFE, Log Server, and Log Signer instances for each temporal log shard. However, each log shard gets its own RDS instance for the active life of the log [^5]. At log shutdown, the RDS instance is simply deprovisioned.
 
-![](https://lh3.googleusercontent.com/t_K3NDEnj5G5ixINjr-30tU4pjW449i5QJg5dd2X4vZ16j2M74orULnvnHakQRgDeadvYV2cqmsbkAexR7YVLCd7pDJH8WVSx0slB5g9oqrIPEG_IdVNs6yMsXr_Tt1f8VXZSeUa5XZgs7tisw)
+![](/images/2022.05.19-database_per_shard.png)
 
-Using Distinct Databases Per Log
+<div class='blog-image-caption'>Using Distinct Databases Per Log</div>
 
 With the original specifications for the Oak log, this would require allocating a significant amount of data I/O resources. However, years of experience running the Testflume log showed that Trillian in AWS did not require the highest possible disk performance.
 
@@ -110,7 +110,7 @@ It's clear that CT logs will continue to accelerate their rate of growth. Eventu
 
 - Change storage backends entirely, perhaps to a sharding-aware middleware, or another more horizontally-scalable open-source system.
 
-We also intend to uproot the current Testflume CT log. The replacement testing log will, as before, seek to test more aggressive configurations that might bear fruit in the future.
+We've also [uprooted our current Testflume CT log](https://groups.google.com/a/chromium.org/g/ct-policy/c/CLBlt5rSsAk/m/DDDpvM4dAQAJ) and brought online a replacement which we've named Sapling. As before, this test-only log will evaluate more aggressive configurations that might bear fruit in the future.
 
 # As Always, Scaling Data Is The Hard Part
 
