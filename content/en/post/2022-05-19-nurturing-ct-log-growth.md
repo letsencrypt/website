@@ -18,7 +18,7 @@ This post will update some of the information from the previous post [How Let's 
 
 # Growing Oak While Staying Open Source
 
-Oak runs on a free and open source stack: Google's Trillian data store, backed by MariaDB, running at Amazon Web Services (AWS) via [Amazon's Relational Database Service](https://aws.amazon.com/rds/) (RDS). To our knowledge, Oak is the only trusted CT log without closed-source components [^3].
+Oak runs on a free and open source stack: Google's Trillian data store, backed by MariaDB, running at Amazon Web Services (AWS) via [Amazon's Relational Database Service](https://aws.amazon.com/rds/) (RDS). To our knowledge, Oak is the only trusted CT log without closed-source components <sup id="fnref:3-second"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.
 
 ![](/images/2022.05.19-open_source_stack.png)
 
