@@ -2,7 +2,7 @@
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
 top_graphic: 4
-lastmod: 2020-02-25
+lastmod: 2022-06-13
 show_lastmod: 1
 ---
 
@@ -22,11 +22,10 @@ show_lastmod: 1
   <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
     >Oak</a
   >
-  and Testflume. All publicly trusted certificate authorities are welcome to
+  and Sapling. All publicly trusted certificate authorities are welcome to
   submit to our logs. Many certificate authority root certificates have already
-  been included in our CT logs.
-  <a href="/contact">Contact us via email</a> about adding new root certificates
-  to our logs if yours has not been included.
+  been included in our CT logs. If you operate a Certificate Authority and your issuer
+  is not in our accepted issuers list, please file an issue <a href="https://github.com/letsencrypt/ct-log-metadata">here</a>.
 </p>
 
 <p>
@@ -91,7 +90,7 @@ show_lastmod: 1
 <li>
   The Let's Encrypt production and
   <a href="/docs/staging-environment">staging</a> ACME API environments both
-  submit certificates to Testflume, but the production environment does not use
+  submit certificates to Sapling, but the production environment does not use
   the resulting SCTs.
 </li>
 <li>
@@ -103,11 +102,11 @@ show_lastmod: 1
   here before deploying them to production.
 </li>
 <li>
-  Testflume's accepted roots list includes all of the Oak accepted roots, plus
+  Sapling's accepted roots list includes all of the Oak accepted roots, plus
   additional test roots.
 </li>
 <li>
-  Testflume can be used by other certificate authorities for testing purposes.
+  Sapling can be used by other certificate authorities for testing purposes.
 </li>
 {{< /ct_logs >}}
 <br />
