@@ -1,5 +1,5 @@
 {
-    "lastmod": "2021-02-23",
+    "lastmod": "2022-06-13",
     "categories": [
         "production",
         "testing"
@@ -28,7 +28,7 @@
         {
             "log": "oak",
             "shard": "2021",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==",
             "logID": "94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2",
@@ -48,7 +48,7 @@
         {
             "log": "oak",
             "shard": "2023",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsz0OeL7jrVxEXJu+o4QWQYLKyokXHiPOOKVUL3/TNFFquVzDSer7kZ3gijxzBp98ZTgRgMSaWgCmZ8OD74mFUQ==",
             "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99",
@@ -56,49 +56,22 @@
             "windowEnd": "1704585600"
         },
         {
-            "log": "testflume",
-            "shard": "2019",
+            "log": "sapling",
+            "shard": "2022h2",
             "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==",
-            "logID": "84:9F:5F:7F:58:D2:BF:7B:54:EC:BD:74:61:1C:EA:45:C4:9C:98:F1:D6:48:1B:C6:F6:9E:8C:17:4F:24:F3:CF",
-            "windowStart": "1546300800",
-            "windowEnd": "1578355200"
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6m0gtMM2pcVTxVjkztm/ByNrF32xacdVnbsYwlzwtqN0vOwqcXLtPkfYqH+q93hlJwEBsX1MnRXDdlMHkkmZJg==",
+            "logID": "23:2D:41:A4:CD:AC:87:CE:D9:F9:43:F4:68:C2:82:09:5A:E0:9D:30:D6:2E:2F:A6:5D:DC:3B:91:9C:2E:46:8F",
+            "windowStart": "1655251200",
+            "windowEnd": "1673740800"
         },
         {
-            "log": "testflume",
-            "shard": "2020",
+            "log": "sapling",
+            "shard": "2023h1",
             "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==",
-            "logID": "C6:3F:22:18:C3:7D:56:A6:AA:06:B5:96:DA:8E:53:D4:D7:15:6D:1E:9B:AC:8E:44:D2:20:2D:E6:4D:69:D9:DC",
-            "windowStart": "1577836800",
-            "windowEnd": "1609977600"
-        },
-        {
-            "log": "testflume",
-            "shard": "2021",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==",
-            "logID": "03:ED:F1:DA:97:76:B6:F3:8C:34:1E:39:ED:9D:70:7A:75:70:36:9C:F9:84:4F:32:7F:E9:E1:41:38:36:1B:60",
-            "windowStart": "1609459200",
-            "windowEnd": "1641513600"
-        },
-        {
-            "log": "testflume",
-            "shard": "2022",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==",
-            "logID": "23:27:EF:DA:35:25:10:DB:C0:19:EF:49:1A:E3:FF:1C:C5:A4:79:BC:E3:78:78:36:0E:E3:18:CF:FB:64:F8:C8",
-            "windowStart": "1640995200",
-            "windowEnd": "1673049600"
-        },
-        {
-            "log": "testflume",
-            "shard": "2023",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8aLpnumqeISmQEB3hKPgtPJQG3jP2IftfaUQ4WPUihNBwUOEk1R9BMg5RGQwebWSsRlGIRiCvtE97Q45Vh3mqA==",
-            "logID": "55:34:B7:AB:5A:6A:C3:A7:CB:EB:A6:54:87:B2:A2:D7:1B:48:F6:50:FA:17:C5:19:7C:97:A0:CB:20:76:F3:C6",
-            "windowStart": "1672531200",
-            "windowEnd": "1704585600"
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE09jAcGbw5CDCK2Kg0kkmmDydfDfZAA8K64BufU37yx3Jcy/ePy1EjAi2wUPVJ0xsaNMCU37mh+fBV3+K/cSG8A==",
+            "logID": "C1:83:24:0B:F1:A4:50:C7:6F:BB:00:72:69:DC:AC:3B:E2:2A:48:05:D4:db:E0:49:66:C3:C8:ab:C4:47:B0:0C",
+            "windowStart": "1671062400",
+            "windowEnd": "1689379200"
         }
     ]
 }
