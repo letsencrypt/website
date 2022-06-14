@@ -3,10 +3,10 @@ author: J.C. Jones
 date: 2022-05-19T00:00:00Z
 slug: database-to-app-TLS
 title: "Nurturing Continued Growth of Our Oak CT Log"
-excerpt: "Only five organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack. "
+excerpt: "Only five organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack."
 ---
 
-Let's Encrypt has been running a Certificate Transparency (CT) log since 2019 as part of our commitment to keeping the Web PKI ecosystem healthy. CT logs have become important infrastructure for an encrypted Web [^1], but have a well-deserved reputation for being difficult to operate at high levels of trust: Only 5 organizations run logs that are currently considered to be "qualified." [^2]
+Let's Encrypt has been running a Certificate Transparency (CT) log since 2019 as part of our commitment to keeping the Web PKI ecosystem healthy. CT logs have become important infrastructure for an encrypted Web [^1], but have a well-deserved reputation for being difficult to operate at high levels of trust: Only 6 organizations run logs that are currently considered to be "qualified." [^2]
 
 Our [Oak](/2019/05/15/introducing-oak-ct-log.html) log is the only qualified CT log that runs on an entirely open source stack [^3]. In the interest of lowering the barrier for other organizations to join the CT ecosystem, we want to cover a few recent changes to Oak that might be helpful to anyone else planning to launch a log based on Google's Trillian backed by MariaDB:
 
@@ -124,7 +124,7 @@ company or organization would like to [sponsor](https://www.abetterinternet.org/
 <br />
 
 [^1]: Chrome and Safari check that certificates include evidence that certificates were submitted to CT logs. If a certificate is lacking that evidence, it won't be trusted. [https://certificate.transparency.dev/useragents/](https://certificate.transparency.dev/useragents/)
-[^2]: As of publication, these organizations have logs Google Chrome considers qualified for Certificate Authorities to embed their signed timestamps: Cloudflare, DigiCert, Google, Let's Encrypt, and Sectigo. https://ct.cloudflare.com/logs
+[^2]: As of publication, these organizations have logs Google Chrome considers qualified for Certificate Authorities to embed their signed timestamps: Cloudflare, DigiCert, Google, Let's Encrypt, Sectigo, and TrustAsia. https://ct.cloudflare.com/logs and https://twitter.com/__agwa/status/1527407151660122114
 [^3]: DigiCert's Yeti CT log deployment at AWS [uses a custom Apache Cassandra backend](https://groups.google.com/a/chromium.org/g/ct-policy/c/EKB9ycLsMk0/m/zMq4Kmd_BgAJ); Oak is the only production log using the Trillian project's MySQL-compatible backend. SSLMate maintains a list of known log software at <https://sslmate.com/labs/ct_ecosystem/ecosystem.html>
 [^4]: In the recent past, a cosmic ray event led to the disqualification of a CT log. Andrew Ayer has a good discussion of this in his post "How Certificate Transparency Logs Fail and Why It's OK" <https://www.agwa.name/blog/post/how_ct_logs_fail>, which references the discovery on the ct-policy list <https://groups.google.com/a/chromium.org/g/ct-policy/c/PCkKU357M2Q/m/xbxgEXWbAQAJ>\
 [^5]: Logs remain online for a period after they stop accepting new entries to give a grace period for mirrors and archive activity.
