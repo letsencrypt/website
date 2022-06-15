@@ -11,11 +11,10 @@ menu:
 show_lastmod: 1
 ---
 
-
 This FAQ is divided into the following sections:
 
-* [General Questions](#general)
-* [Technical Questions](#technical)
+- [General Questions](#general)
+- [Technical Questions](#technical)
 
 # <a id="general">General Questions</a>
 
@@ -48,8 +47,8 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here are the reporting URLs:
 
-* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
-* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
+- [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+- [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 If you'd like to read more about our policies and rationale, you can do so here:
 
@@ -107,3 +106,9 @@ We don't publish a list of IP addresses we use to validate, and these IP address
 
 Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
 If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+
+## Where can I learn more about TLS/SSL and PKI in general?
+
+Longtime security researcher and practitioner, Ivan Ristić, published a configuration guide that provides useful information about what you should consider as you <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">set up your TLS configuration</a>.
+
+For more extensive background and greater detail, we recommend <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, also written by Ristić.
