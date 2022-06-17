@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-if [ -z "$1" ] || [ -z "$2" ] || [ $1 = "-help" ] || [ $1 = "--help" ]; then
-  echo "Usage: $0 <page-path> <page title>"
+if [ -z "${1}" ] || [ -z "${2}" ] || [ "${1}" = "-h" ] || [ "${1}" = "-help" ] || [ "${1}" = "--help" ]
+then
+  echo "Usage: "${0}" <page-path> <page title>"
   echo "Examples:"
   echo "${0} my-page \"My Page Title\""
   echo "${0} post/my-post \"My Post Title\""
@@ -39,8 +40,8 @@ show_lastmod: false
 ---
 
 EOF
-    echo "Created page: ${i}/${path}/${filename}"
-    fi
+        echo "Created page: ${i}/${path}/${filename}"
+        fi
     else
         # Actions only for non-English (e.g. no-translation stubs, etc.)
 

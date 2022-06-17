@@ -10,18 +10,17 @@ show_lastmod: 1
 
 # Description
 All issuance requests are subject to a *Duplicate Certificate* limit of 5 per
-week. You should receive the following error message from your ACME client when
-you’ve exceeded the Duplicate Certificate limit:
+week. You should receive an error message like the following from your ACME
+client when you’ve exceeded the Duplicate Certificate limit:
 ```
 too many certificates (5) already issued for this exact set of domains in the
-last 168 hours: example.com login.example.com: see
-https://letsencrypt.org/docs/duplicate-certificate-limit
+last 168 hours: example.com login.example.com: see https://letsencrypt.org/docs/duplicate-certificate-limit
 ```
 The "exact set" that this error refers to is the set of hostnames requested for
-this certificate: in this example, example.com and login.example.com. If your
-certificate is issued for only 1 name, such as example.com, then the "exact set"
-of hostnames for your certificate would be `[example.com]`. This rate limit is
-exceeded when a subscriber requests a certificate for the same "exact set" of
+this certificate: in this example, `example.com` and `login.example.com`. If
+your certificate is issued for only 1 name, such as example.com, then the "exact
+set" of hostnames for your certificate would be `[example.com]`. This rate limit
+is exceeded when a subscriber requests a certificate for the same "exact set" of
 hostnames more than 5 times in a single week.
 
 # Common Causes
@@ -41,9 +40,8 @@ need to.
 
 When troubleshooting or testing the deployment of your applications we encourage
 you to configure your ACME client to use our [staging
-environment](/docs/staging-environment/). Rate limits for
-our staging environment are[ significantly
-higher](/docs/staging-environment/#rate-limits).
+environment](/docs/staging-environment/). Rate limits for our staging
+environment are[ significantly higher](/docs/staging-environment/#rate-limits).
 
 # Requesting Help
 
@@ -57,15 +55,15 @@ Overrides are **not** available for the Duplicate Certificate limit.
 
 # Workaround
 
-Unfortunately, revoking the previously issued certificates will not reset the
-Duplicate Certificate limit. However, if you find that you’ve exceeded the limit
-and you still require another certificate for the same hostnames you can always
-request a certificate for a different “exact set” of hostnames. For example, if
-you’ve exceeded the Duplicate Certificate limit for `[example.com]` then
-requesting a certificate for `[example.com, login.example.com]` will succeed.
-Similarly, if you’ve exceeded the Duplicate Certificate limit for `[example.com,
-login.example.com]` then requesting a separate certificate for `[example.com]` and
-another for `[login.example.com]` will succeed.
+Revoking the previously issued certificates will not reset the Duplicate
+Certificate limit. However, if you find that you’ve exceeded the limit and you
+still require another certificate for the same hostnames you can always request
+a certificate for a different “exact set” of hostnames. For example, if you’ve
+exceeded the Duplicate Certificate limit for `[example.com]` then requesting a
+certificate for `[example.com, login.example.com]` will succeed. Similarly, if
+you’ve exceeded the Duplicate Certificate limit for `[example.com,
+login.example.com]` then requesting a separate certificate for `[example.com]`
+and another for `[login.example.com]` will succeed.
 
 # Monitoring Rate Limits
 
