@@ -12,7 +12,11 @@
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/client-options") }}</li>
-    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}</li>
+    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}
+        <ul>
+            <li>{{ template "link" (dict "context" . "page" "/docs/duplicate-certificate-limit") }}</li>
+        </ul>
+    </li>
     <li>{{ template "link" (dict "context" . "page" "/docs/expiration-emails") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/docs/dst-root-ca-x3-expiration-september-2021") }}</li>
 </ul>

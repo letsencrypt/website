@@ -70,6 +70,13 @@ figure,
 }
 
 /**
+ * Nested `unordered lists` should not have `margin-bottom`
+ */
+ul ul {
+  margin-bottom: 0;
+}
+
+/**
  * Images
  */
 img {
