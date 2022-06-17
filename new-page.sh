@@ -14,7 +14,7 @@ filename="${slug}.md"
 title="${2}"
 date=$(date +%Y-%m-%d)
 
-for i in $(find . -type d -path './content/*' ! -path '*/documents' ! -path '*/docs' ! -path '*/post')
+for i in $(find . -type d -path './content/*' -maxdepth 2)
 do
     # If the directory doesn't exist, create it.
     if ! [ -d "${i}/${path}" ] && ! [ "${path}" = post ]
@@ -29,7 +29,7 @@ do
         # Create the new page.
         if ! [ -f "${i}/${path}/${filename}" ]
         then
-        tee "${i}/${path}/${filename}" << EOF
+            cat > "${i}/${path}/${filename}" << EOF
 ---
 title: ${title}
 slug: ${slug}
@@ -53,7 +53,7 @@ EOF
         # Create the stub (untranslated) page.
         if ! [ -f "${i}/${path}/${filename}" ]
         then
-            tee "${i}/${path}/${filename}"  << EOF
+            cat > "${i}/${path}/${filename}"  << EOF
 ---
 title: ${title}
 slug: ${slug}
