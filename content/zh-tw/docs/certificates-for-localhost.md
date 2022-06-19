@@ -3,7 +3,7 @@ title: localhost 憑證
 slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ show_lastmod: 1
 
 你可以透過使用 localhost.crt 和 localhost.key 設定本地網頁伺服器，並在將 localhost.crt 安裝到受信任的本地根憑證中。
 
-如果你想要更真實的本地端憑證，你可以使用 [minica][minica] 產生你的本地根憑證，並利用它頒發終端憑證（子葉憑證）。你就可以引入根憑證而不是引入自簽的終端憑證。
+如果你想要更真實的本地端憑證，你可以使用 [mkcert][mkcert] 產生你的本地根憑證，並利用它頒發終端憑證（子葉憑證）。你就可以引入根憑證而不是引入自簽的終端憑證。
 
 你也可以透過 /etc/hosts 將 `www.localhost` 設定為 `127.0.0.1` 的別名。這會讓瀏覽器儲存 cookie 的方式有一點改變。
 
@@ -58,5 +58,5 @@ show_lastmod: 1
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

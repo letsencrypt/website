@@ -3,7 +3,7 @@ title: Certificats pour localhost
 slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -50,7 +50,7 @@ La façon la plus simple de générer une clef privée et un certificat auto-sig
 Vous pouvez ensuite configurer votre serveur Web local avec localhost.crt et localhost.key puis installer localhost.crt dans votre liste de racines approuvées localement.
 
 Si vous voulez un peu plus de réalisme dans vos certificats de développement, vous pouvez utiliser
-[minica][minica] pour générer votre propre certificat racine local et émettre des certificats d'entité finale (aka leaf certificates) signés par lui. Vous importeriez ensuite la racine du certificat plutôt qu'un certificat d'entité finale auto-signé.
+[mkcert][mkcert] pour générer votre propre certificat racine local et émettre des certificats d'entité finale (aka leaf certificates) signés par lui. Vous importeriez ensuite la racine du certificat plutôt qu'un certificat d'entité finale auto-signé.
 
 Vous pouvez également choisir d'utiliser un domaine contenant des points, comme `www.localhost`, en l'ajouter à /etc/hosts comme alias de `127.0.0.1`. Cela change subtilement la façon dont les navigateurs gèrent le stockage des cookies. 
 
@@ -61,5 +61,5 @@ Vous pouvez également choisir d'utiliser un domaine contenant des points, comme
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

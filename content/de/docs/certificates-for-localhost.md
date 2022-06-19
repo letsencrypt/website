@@ -3,7 +3,7 @@ title: Zertifikate für localhost
 slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -45,6 +45,6 @@ Der einfachste Weg, um einem privaten Schlüssel und ein selbst-signiertes Zerti
 
 Sie können Ihren lokalen Webserver mit localhost.crt und localhost.key konfigurieren und installieren localhost.crt in Ihrer Liste von lokalen vertrauenden Roots.
 
-Wenn Sie etwas mehr Realität in Ihre Entwicklerzertifikate bringen möchten, können Sie auch [minica](https://github.com/jsha/minica) zur Generierung Ihres eigenen lokalen Root Zertifikat benutzen und Endzertifikate ausstellen. Sie würden dann das Root Zertifikat importieren, bevor selbst-signierte Endzertifikate importiert werden.
+Wenn Sie etwas mehr Realität in Ihre Entwicklerzertifikate bringen möchten, können Sie auch [mkcert](https://github.com/FiloSottile/mkcert) zur Generierung Ihres eigenen lokalen Root Zertifikat benutzen und Endzertifikate ausstellen. Sie würden dann das Root Zertifikat importieren, bevor selbst-signierte Endzertifikate importiert werden.
 
 Sie können auch eine Domain mit Punkten wählen, wie `www.localhost`, und diese in /etc/hosts als Alias für `127.0.0.1` hinzufügen. Dies ändert auf subtile Weise, wie Browser mit der Speicherung von Cookies umgehen.
