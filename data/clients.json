@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-05-22",
+	"lastmod": "2022-06-29",
 	"categories": [
 		"Bash",
 		"C",
@@ -43,77 +43,53 @@
 	],
 	"projects": [
 		{
-			"name": "ApisCP",
-			"url": "https://apiscp.com"
-		},		
-		{
-			"name": "Ponzu CMS",
-			"url": "https://ponzu-cms.org"
-		},
-		{
-			"name": "Caddy",
-			"url": "https://caddyserver.com/"
-		},
-		{
-			"name": "cPanel",
-			"url": "https://cpanel.net/"
-		},
-		{
-			"name": "Own-Mailbox",
-			"url": "https://www.own-mailbox.com/"
-		},
-		{
-			"name": "Cloudfleet",
-			"url": "https://cloudfleet.io/"
+			"name": "Aegir",
+			"url": "https://gitlab.com/aegir/hosting_https"
 		},
 		{
 			"name": "Aerys",
 			"url": "https://github.com/kelunik/aerys-acme"
 		},
 		{
+			"name": "Apache HTTP Server",
+			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "ApisCP",
+			"url": "https://apiscp.com"
+		},		
+		{
+			"name": "Caddy",
+			"url": "https://caddyserver.com/"
+		},
+		{
 			"name": "CentminMod LEMP Stack",
 			"url": "https://centminmod.com/acmetool"
 		},
 		{
-			"name": "Mail-in-a-Box",
-			"url": "https://mailinabox.email/"
+			"name": "Certhub",
+			"url": "https://certhub.io/"
 		},
 		{
-			"name": "Froxlor Server Management Panel",
-			"url": "https://www.froxlor.org/"
-		},
-		{
-			"name": "Virtualmin Web Hosting Control Panel",
-			"url": "https://www.virtualmin.com/"
-		},
-		{
-			"name": "Plesk Web Hosting Control Panel",
-			"url": "https://www.plesk.com/"
-		},
-		{
-			"name": "Zappa",
-			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
-		},
-		{
-			"name": "pfSense",
-			"url": "https://www.pfsense.org/"
+			"name": "Cloudfleet",
+			"url": "https://cloudfleet.io/"
 		},
 		{
 			"name": "Cloudron",
 			"url": "https://cloudron.io"
 		},
 		{
-			"name": "Aegir",
-			"url": "https://gitlab.com/aegir/hosting_https"
+			"name": "cPanel",
+			"url": "https://cpanel.net/"
 		},
 		{
-			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net"
+			"name": "Froxlor Server Management Panel",
+			"url": "https://www.froxlor.org/"
 		},
 		{
-			"name": "ruxy",
-			"url": "https://ruxyserver.com"
-		},
+			"name": "Gitlab",
+			"url": "https://about.gitlab.com"
+    },
 		{
 			"name": "ISPConfig",
 			"url": "https://www.ispconfig.org/"
@@ -123,29 +99,53 @@
 			"url": "https://www.liveconfig.com/"
 		},
 		{
-			"name": "WildFly Application Server",
-			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+			"name": "Mail-in-a-Box",
+			"url": "https://mailinabox.email/"
 		},
 		{
-			"name": "Certhub",
-			"url": "https://certhub.io/"
+			"name": "Own-Mailbox",
+			"url": "https://www.own-mailbox.com/"
 		},
 		{
-			"name": "Vesta Control Panel",
-			"url": "https://vestacp.com/"
+			"name": "pfSense",
+			"url": "https://www.pfsense.org/"
 		},
 		{
-			"name": "Apache HTTP Server",
-			"url": "https://httpd.apache.org"
+			"name": "Plesk Web Hosting Control Panel",
+			"url": "https://www.plesk.com/"
+		},
+		{
+			"name": "Ponzu CMS",
+			"url": "https://ponzu-cms.org"
+		},
+		{
+			"name": "ruxy",
+			"url": "https://ruxyserver.com"
 		},
 		{
 			"name": "SWAG - Secure Web Application Gateway",
 			"url": "https://github.com/linuxserver/docker-swag"
 		},
 		{
-			"name": "Gitlab",
-			"url": "https://about.gitlab.com"
-        }
+			"name": "Synchronet BBS System",
+			"url": "http://www.synchro.net"
+		},
+		{
+			"name": "Vesta Control Panel",
+			"url": "https://vestacp.com/"
+		},
+		{
+			"name": "Virtualmin Web Hosting Control Panel",
+			"url": "https://www.virtualmin.com/"
+		},
+		{
+			"name": "WildFly Application Server",
+			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+		},
+		{
+			"name": "Zappa",
+			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
+		}
 	],
 	"list": [
 		{
