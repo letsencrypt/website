@@ -43,9 +43,10 @@ whenever you can.  A certificate with multiple names is often called a SAN
 certificate, or sometimes a UCC certificate.
 
 Renewals are treated specially: they don't count against your **Certificates per
-Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 5 per week. Exceeding the Duplicate Certificate limit is reported with
-the error message `too many certificates already issued for exact set of domains`.
+Registered Domain** limit, but they are subject to a [**Duplicate Certificate**](
+/docs/duplicate-certificate-limit) limit of 5 per week. Exceeding the Duplicate Certificate
+limit is reported with the error message `too many certificates already issued for exact 
+set of domains`.
 
 A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
