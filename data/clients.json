@@ -43,6 +43,10 @@
 	],
 	"projects": [
 		{
+			"name": "ApisCP",
+			"url": "https://apiscp.com"
+		},		
+		{
 			"name": "Ponzu CMS",
 			"url": "https://ponzu-cms.org"
 		},
