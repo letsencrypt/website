@@ -1,8 +1,9 @@
 ---
 title: Контакты
 slug: contact
+description: Как с нами связаться
 top_graphic: 1
-lastmod: 2019-09-11
+lastmod: 2020-01-29
 menu:
   main:
     weight: 90
@@ -23,7 +24,7 @@ menu:
 
 ## Почтовая рассылка
 
-С информацией о технических почтовых рассылках можно ознакомиться на странице [Внесите свой вклад]({{< ref "/getinvolved.md" >}}).
+С информацией о технических почтовых рассылках можно ознакомиться на странице [Внесите свой вклад](/getinvolved).
 
 Для подписки на информационную рассылку [нажмите здесь.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
@@ -41,9 +42,9 @@ menu:
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [E] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [A] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [S] [expires: 2021-09-21]
 ```
 
 Вы можете скачать [открытый GPG ключ](/security_letsencrypt.org-publickey.asc) с сайта, или использовать другой предпочитаемый сервер ключей.

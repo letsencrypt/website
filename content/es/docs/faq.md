@@ -9,16 +9,16 @@ menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Este FAQ está dividido en las siguientes secciones:
 
 * [Preguntas Generales](#general)
 * [Preguntas Técnicas](#technical)
 
-# <a name="general">Preguntas Generales</a>
+# <a id="general">Preguntas Generales</a>
 
 ## ¿Qué servicios ofrece Let's Encrypt?
 
@@ -26,19 +26,19 @@ Let's Encrypt es una Autoridad de Certificación (AC, or CA por sus siglas en in
 
 Let's Encrypt ofrece certificados de Validación de Dominio (DV por sus siglas en inglés). No ofrecemos Validaciones Extendidas o de Organización principalmente porque no podemos automatizar la emisión de esos tipos de certificados.
 
-Para comenzar a usar Let's Encrypt, por favor visita nuestra página [Comenzando]({{< ref "/getting-started.md" >}}).
+Para comenzar a usar Let's Encrypt, por favor visita nuestra página [Comenzando](/getting-started).
 
 ## ¿Cuánto cuesta usar Let's Encrypt? ¿Verdaderamente es gratis?
 
 No cobramos tarifas por nuestros certificados. Let's Encrypt es una organización sin fines de lucro, nuestra misión es crear un Web más seguro y respetador de la privacidad promoviendo el uso generalizado de HTTPS. Nuestros servicios son gratuitos y fáciles de usar para que cada sitio web pueda implementar HTTPS.
 
-Requerimos apoyo de nuestros generosos auspociadores, becarios, e individuos para propocionar nuestros servicios de forma gratuita en todo el mundo. Si estás interesado en apoyarnos por favor considere [donar]({{< ref "/donate.html" >}}) ó [convertirse en un patrocinador]({{< ref "/become-a-sponsor.html" >}}).
+Requerimos apoyo de nuestros generosos auspociadores, becarios, e individuos para propocionar nuestros servicios de forma gratuita en todo el mundo. Si estás interesado en apoyarnos por favor considere [donar](/donate) ó [convertirse en un patrocinador](https://www.abetterinternet.org/sponsor).
 
 En algunos casos, integradores (por ejemplo, proveedores de hospedaje) cobrarán una tarifa nominal que refleja los costos administrativos y de gestión incurridos por la proporción de certificados Let's Encrypt.
 
 ## ¿Qué tipo de apoyo ofrecen?
 
-Let's Encrypt está dirigido por un pequeño equipo y se basa de la automatización para mantener los costos bajos. Siendo ese el caso, no podemos ofrecer apoyo directo a nuestros subscriptores. Sin embargo, tenemos algunas grandes opciones de apoyo: 
+Let's Encrypt está dirigido por un pequeño equipo y se basa de la automatización para mantener los costos bajos. Siendo ese el caso, no podemos ofrecer apoyo directo a nuestros subscriptores. Sin embargo, tenemos algunas grandes opciones de apoyo:
 
 1. Tenemos [documentación](/es/docs/) realmente útil.
 2. Tenemos [foros de apoyo comunitario](https://community.letsencrypt.org/) muy activos y útiles. Miembros de nuestra comunidad hacen un gran trabajo contestando preguntas, y muchas de las preguntas más frecuentes ya han sido contestadas.
@@ -49,17 +49,17 @@ Aqu&iacute un [video que nos gusta](https://www.youtube.com/watch?v=Xe1TZaElTAs)
 
 Recomendamos reportar dichos sitios a Google Safe Browsing y el programa Microsoft Smart Screen, que pueden proteger a los usuarios de una manera más efectiva. Aquí está el URL de informes de Google:
 
-https://www.google.com/safebrowsing/report_badware/
+[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 
 Si desea leer más sobre nuestras políticas y nuestra justificación, puede hacerlo aquí:
 
 https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
-# <a name="technical">Preguntas Técnicas</a>
+# <a id="technical">Preguntas Técnicas</a>
 
 ## ¿Los certificados de Let's Encrypt son confiados por mi navegador?
 
-Para la mayoría de los navegadores y sistemas operativos, sí. Ve la [lista de compatibilidad]({{< ref "/docs/cert-compat.md" >}}) para más detalles.
+Para la mayoría de los navegadores y sistemas operativos, sí. Ve la [lista de compatibilidad](/docs/cert-compat) para más detalles.
 
 ## ¿Let's Encrypt emite certificados para cualquier otra cosa que no sea SSL/TLS para sitios web?
 
@@ -93,7 +93,7 @@ Sí. Emisión wildcard se debe realizar a través de ACMEv2 usando el reto DNS-0
 
 ## ¿Hay un cliente Let's Encrypt (ACME para mi sistema operativo?
 
-Hay una gran cantidad de [clientes ACME]({{< ref "/docs/client-options.md" >}}) disponibles. Es probable que algo funcione bien en tu sistema operativo. Recomendamos comenzar con [Certbot](https://certbot.eff.org/).
+Hay una gran cantidad de [clientes ACME](/docs/client-options) disponibles. Es probable que algo funcione bien en tu sistema operativo. Recomendamos comenzar con [Certbot](https://certbot.eff.org/).
 
 ## ¿Puedo utilizar una llave privada o Certificate Signing Request (CSR) existente?
 

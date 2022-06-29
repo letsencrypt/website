@@ -1,11 +1,14 @@
 ---
 title: Let's Encrypt 的运作方式
+linkTitle: Let's Encrypt 的运作方式
 slug: how-it-works
 top_graphic: 3
-lastmod: 2019-09-09
+lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-Let's Encrypt 和 [ACME 协议](https://ietf-wg-acme.github.io/acme/)的目标是使配置能够自动获取受信任浏览器的证书的 HTTPS 服务器成为可能。这是通过在 Web 服务器上运行证书管理软件（Agent）来达成的。
+
+Let's Encrypt 和 [ACME 协议](https://tools.ietf.org/html/rfc8555)的目标是使配置能够自动获取受信任浏览器的证书的 HTTPS 服务器成为可能。这是通过在 Web 服务器上运行证书管理软件（Agent）来达成的。
 
 为了理解该技术的工作原理，让我们来看一下使用支持 Let's Encrypt 的证书管理软件来配置 `https://example.com/` 的流程。
 
@@ -26,7 +29,7 @@ Let's Encrypt 通过公钥识别服务器管理员。证书管理软件首次与
      src="/images/howitworks_challenge.png"/>
 </div>
 
-证书管理软件需要完其中一项提供的验证请求。假设它能够完成上面的第二个任务：它在 `https://example.com` 站点的指定路径上创建了一个文件。证书管理软件还使用其私钥对提供的 nonce（一次性数字）进行签名。完成这些步骤后，证书管理软件会通知 CA 它已准备好完成验证。
+证书管理软件需要完成其中一项提供的验证请求。假设它能够完成上面的第二个任务：它在 `https://example.com` 站点的指定路径上创建了一个文件。证书管理软件还使用其私钥对提供的 nonce（一次性数字）进行签名。完成这些步骤后，证书管理软件会通知 CA 它已准备好完成验证。
 
 然后，CA 的工作就是检查验证是否已经完成。CA 会验证 nonce 上的签名，并尝试从 Web 服务器下载该文件，并确保其具有 CA 需要的内容。
 

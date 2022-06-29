@@ -1,0 +1,34 @@
+---
+title: Let's Encrypt 統計數據
+linkTitle: 統計數據
+slug: stats
+top_graphic: 3
+excerpt: Let's Encrypt 統計數據。
+lastmod: 2019-08-22
+menu:
+  main:
+    weight: 70
+    parent: about
+---
+
+
+<div class="figure">
+  <h2><a id="growth" href="#growth"
+    >Let's Encrypt 增長趨勢</a></h2>
+  <div id="activeUsage" title="Let's Encrypt 增長趨勢" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="percent-pageloads" href="#percent-pageloads"
+    >使用 Firefox 載入 HTTPS 網頁的百分比</a></h2>
+  <p>（14 日均線，來源： <a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Firefox 監測</a>）</p>
+  <div id="pageloadPercent" title="使用 Firefox 載入 HTTPS 網頁的百分比" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="daily-issuance" href="#daily-issuance"
+    >Let's Encrypt 每日頒發的憑證</a></h2>
+  <div id="issuancePerDay" title="Let's Encrypt 每日頒發的憑證" class="statsgraph"></div>
+</div>
+
+{{< plotly >}}

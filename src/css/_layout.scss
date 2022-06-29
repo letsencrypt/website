@@ -17,43 +17,24 @@
 }
 
 .site-header {
-    min-height: 108px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
+}
 
-  .linux-foundation-link {
-    float: right;
-    margin-top: 5px;
-
-    @include media-query($on-palm) {
-      float: none;
-    }
-
-    img {
-      display: block;
-      
-      @include media-query($on-palm) {
-        margin: 0 auto;
-      }
-    }
-  }
+html[dir="rtl"] .site-title {
+   float: right;
 }
 
 .site-title {
-    margin-bottom: 7px;
     margin-left: 0px;
-    margin-top: 7px;
     padding-left: 0px;
-    font-size: 26px;
-    line-height: 56px;
     letter-spacing: -1px;
     float: left;
 
     img {
         max-width: 250px;
-        margin-bottom: 18px;
-        margin-top:10px;
+        margin-bottom: 14px;
+        margin-top:14px;
 
         @include media-query($on-palm) {
             max-width: 200px;
@@ -136,6 +117,7 @@
         font-weight: 300;
         padding: 6px 18px;
         border: 2px solid #2a7ae2;
+        color:#2a7ae2;
         border-radius: 8px;
         width: 175px;
 
@@ -145,11 +127,12 @@
             width: 110px;
         }
         &:visited {
-            border-color: #1756a9;
+            border-color: #2a7ae2;
         }
         &:hover {
             text-decoration: none;
             border-color: #000;
+            color: #000;
         }
     }
     a.accent {
@@ -164,15 +147,9 @@
     }
 }
 
-.donate-footer {
-    .buttons {
-        a {
-            font-size: 24px;
-        }
-        margin-bottom: 1.5em;
-    }
+html[dir="rtl"] .hero.slim div.container {
+   text-align: right;
 }
-
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -228,6 +205,17 @@
     }
 }
 
+.sponsor-logo-large {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.sponsor-logo-small {
+    padding: 10px;
+}
+
 .home {
     margin-top:0;
     .grid-container {
@@ -253,8 +241,17 @@
     margin-top: 30px;
 
     h2 {
-        margin-bottom: 10px;
         line-height: 1;
+    }
+
+    .buttons {
+        line-height: 48px;
+        margin-top: 24px;
+
+        a {
+            font-size: 24px;
+        }
+
     }
 }
 
@@ -272,9 +269,18 @@
 }
 
 .contact-list,
+html[dir="rtl"] .social-media-list {
+    direction: ltr;
+    text-align: right;
+}
 .social-media-list {
     list-style: none;
     margin-left: 0;
+}
+
+.social-media-list i {
+    color: $grey-color;
+    vertical-align: middle;
 }
 
 .footer-col-wrapper {
@@ -323,6 +329,18 @@
  */
 .page-content {
     padding-top: $spacing-unit;
+
+    .canonical-warning {
+        padding: 5px;
+        margin: 0.50em 0;
+        background-color: #FFDDDD;
+        border: thin solid #DDBBBB;
+        overflow: hidden;
+
+        i {
+            margin-left: 3px;
+        }
+    }
 }
 
 .page-heading {
@@ -330,6 +348,7 @@
 }
 
 .post-list {
+    direction: ltr;
     margin-left: 0;
     list-style: none;
 
@@ -357,11 +376,16 @@
     }
 }
 
-
-
 .home .post-link {
     font-size: 22px;
 }
+
+.rss-subscribe i {
+    color: #ee802f;
+    font-size: 18px;
+	vertical-align: -10%;
+}
+
 
 
 /**

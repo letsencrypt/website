@@ -2,7 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-24
+lastmod: 2021-06-12
 ---
 
 {{< clientslastmod >}}
@@ -20,23 +20,27 @@ and increases the risk of missed renewals.
 
 # Recommended: Certbot
 
-We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It’s easy to use, works on many operating systems, and has great documentation.
+We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
 
-If certbot does not meet your needs, or you’d simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
+If Certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 
-{{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
+# Other Client Options
 
-the Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of the Certbot tree, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
+All of the following clients support the ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555)). In June 2021 we [phased out support for ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27). If you're already using one of the clients below, make sure to upgrade to the latest version. If the client you're using isn't listed below it may not support ACMEv2, in which case we recommend contacting the project maintainers or switching to another client.
+
+{{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
+
+The Python [acme](https://github.com/certbot/certbot/tree/master/acme) module is part of Certbot, but is also used by a number of other clients and is available as a standalone package via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) and other distributions.
 
 {{< /clients >}}
 
-# Adding your client/project
+# Adding a client/project
 
-If you know of an ACME client or a project that has integrated with Let's Encrypt that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on Github, updating the `data/clients.json` file.
+If you know of an ACME client or a project that has integrated with Let's Encrypt's ACMEv2 API that is not present in the above page please submit a pull request to our [website repository](https://github.com/letsencrypt/website/) on GitHub, updating the `data/clients.json` file.
 
 Before submitting a pull request please make sure:
 
-1. Your client respects the [Let's Encrypt trademark policy]({{< ref "/trademarks.md" >}}).
-1. Your client is not browser-based and supports automatic renewals.
+1. The client respects the [Let's Encrypt trademark policy](https://www.abetterinternet.org/trademarks).
+1. The client is not browser-based and supports automatic renewals.
 1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "acme_v2" if appropriate!).
 1. Your commit updates the `lastmod` date stamp at the top of `clients.json`.

@@ -2,12 +2,14 @@
 title: 参加する
 slug: getinvolved
 top_graphic: 5
-lastmod: 2019-01-11
+lastmod: 2019-11-04
 menu:
   main:
     weight: 60
     parent: donate
+show_lastmod: 1
 ---
+
 
 ## コミュニティ
 
@@ -19,16 +21,12 @@ menu:
 
 ### クライアント・ソフトウェア
 
-[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの[サードパーティ製クライアントの選択肢]({{< ref "/docs/client-options.md" >}})があります。
+[Certbot](https://github.com/certbot/certbot) は、あなたのウェブサーバー上で動作して証明書を取得し、ウェブサイトを HTTPS 化する Python ベースのユーティリティです。私たちは、ほとんどの人は最初は Certbot クライアントを使用することをおすすめしています。この他にもたくさんの[サードパーティ製クライアントの選択肢](/docs/client-options)があります。
 
 ### サーバーサイドの CA ソフトウェア
 
-[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。Boulder は [ACME](https://github.com/ietf-wg-acme/acme) プロトコルに基づいており、主に Go 言語で書かれています。コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fhelp-wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)も忘れずに読んでください。
+[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。Boulder は [ACME](https://tools.ietf.org/html/rfc8555) プロトコルに基づいており、主に Go 言語で書かれています。コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)も忘れずに読んでください。
 
 ### letsencrypt.org
 
 [このリポジトリ](https://github.com/letsencrypt/website)に貢献することで、あなたもウェブサイトやドキュメントの改善に参加できます。ウェブサイトの翻訳を行うには、[TRANSLATION](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md) の説明を読んでください。
-
-## プロトコル
-
-Let's Encrypt CA は、ウェブサーバー上の証明書管理ソフトウェアと通信を行います。そのときに利用されるプロトコルは ACME (Automated Certificate Management Environment) と呼ばれます。ACME の仕様のドラフトは [Github 上で読むことができます](https://github.com/ietf-wg-acme/acme)。IETF では、ACME を完全なオープン標準にするための作業が進行中です。[IETF メーリングリスト](https://www.ietf.org/mailman/listinfo/acme)に参加することで、あなた自身も ACME プロトコルを開発するための議論に参加することができます。

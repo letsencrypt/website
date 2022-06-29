@@ -3,8 +3,10 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2019-02-25
+lastmod: 2020-12-08
+show_lastmod: 1
 ---
+
 
 When you get a certificate from Let’s Encrypt, our servers validate that
 you control the domain names in that certificate using “challenges,”
@@ -92,7 +94,7 @@ of their servers. It can be hard to measure this because they often also
 use [anycast], which means multiple servers can have the same IP address,
 and depending on where you are in the world you might talk to a different
 server (and get a different answer) than Let’s Encrypt does. The best
-DNS APIs provide a way for you to automatically check whether and update
+DNS APIs provide a way for you to automatically check whether an update
 is fully propagated. If your DNS provider doesn’t have this, you just
 have to configure your client to wait long enough (often as much as an
 hour) to ensure the update is propagated before triggering validation.
@@ -118,7 +120,7 @@ Cons:
 
 This challenge was defined in draft versions of ACME. It did a TLS
 handshake on port 443 and sent a specific [SNI] header, looking for
-certificate that contained the token. It [will be disabled in March
+certificate that contained the token. It [was disabled in March
 2019][tls-sni-disablement]
 because it was not secure enough.
 
@@ -148,11 +150,12 @@ Cons:
 
  - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
  - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+ - This method cannot be used to validate wildcard domains.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

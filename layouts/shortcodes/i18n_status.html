@@ -3,7 +3,7 @@
 {{ $scratch_up_to_date := newScratch }}
 
 {{ $scratch.Set "nb_pages" 0 }}
-<table border="1">
+<table style="border:1px">
   <thead>
     <tr>
       <th></th>
@@ -21,9 +21,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ $pages := sort $.Site.RegularPages "RelPermalink" }}
-    {{ $pages = $pages | append (.Site.GetPage "/docs") }}
-    {{ range $pages }}
+    {{ range sort $.Site.RegularPages "RelPermalink" }}
       {{ $page := . }}
       {{ if and .Translations (not .Page.Params.do_not_translate) }}
       <tr>
@@ -56,7 +54,7 @@
                 {{ if eq $lang .Language }}
                 
                 {{ if .Params.aliases }}
-                  {{ errorf "Translated page %q mush not have aliases" $page.RelPermalink }}
+                  {{ errorf "Translated page %q must not have aliases" $page.RelPermalink }}
                 {{ end }}
 
                 <a href="{{ .Permalink }}">
@@ -78,7 +76,7 @@
                 {{ end }}
               {{ end }}
               {{ if not ( $scratch.Get "with_page") }}
-                {{ errorf "Missing templatte placeholder for page %q in " $page.Path $lang }}
+                {{ errorf "Missing templatte placeholder for page %q in %q" $page.Path $lang }}
               {{ end }}
             </td>
             {{ end }}
@@ -99,7 +97,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
       <tr>
         <th></th>
@@ -113,7 +110,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
       <tr>
         <th></th>
@@ -129,7 +125,6 @@
             </th>
             {{ end }}
           {{ end }}
-        <th>
       </tr>
   </tfoot>
 </table>

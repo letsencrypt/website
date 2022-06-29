@@ -1,0 +1,25 @@
+{
+  "name": "letsencrypt.org",
+  "version": "1.0.0",
+  "description": "Let's Encrypt website",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "htmlhint": "^0.16.0"
+  },
+  "scripts": {
+    "test:htmllint": "htmlhint 'content/**/*.html'",
+    "test:eslint": "eslint static/js --ext .js",
+    "test": "npm run test:htmllint && npm run test:eslint",
+    "build": "hugo -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsencrypt/website.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/letsencrypt/website/issues"
+  },
+  "homepage": "https://github.com/letsencrypt/website#readme"
+}

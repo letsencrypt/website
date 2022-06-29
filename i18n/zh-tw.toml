@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt是一個<span>免費</span>,<span>自動化</span>,和 <span>公開</span> 的憑證頒發機構."
+other = "Let&rsquo;s Encrypt 是<span>免費</span>、<span>自動化</span>和<span>開放</span>的憑證頒發機構"
 
 [home_hero_getting_started]
 other = "入門"
@@ -30,14 +30,17 @@ other = "支持更安全，更尊重私隱的網際網路."
 [footer_donate]
 other = "捐贈"
 
+[footer_mailing]
+other = "將所有信件和問題發送至："
+
 [footer_policies]
 other = """
-查看我們的<a href="/privacy/">私隱政策</a>.<br>
-查看我們的<a href="/trademarks/">商標政策</a>.
+查看我們的<a href="/zh-tw/privacy/">私隱政策</a>.<br>
+查看我們的<a href="https://www.abetterinternet.org/trademarks/">商標政策</a>.
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation是The Linux Foundation的註冊商標。 Linux是Linus Torvalds的註冊商標."
+other = "Linux Foundation 是 The Linux Foundation 的註冊商標。 Linux 是 Linus Torvalds 的註冊商標."
 
 [header_skip_nav]
 other = "跳過導航連結"
@@ -66,11 +69,6 @@ other = "語言"
 [view_in_english]
 other = "查看英文版本"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "使用正體中文閱讀本網頁。"
-
 [old_version]
 other = "請注意：英文版本（原版）在本翻譯後有改動"
 
@@ -80,3 +78,33 @@ other = "該網頁暫時未被翻譯。 您可以點擊 <a href=\"https://github
 [english_is_canonical]
 other = "此頁內容請以英文頁面為準"
 
+[overview]
+other = "總覽"
+
+[subscriber_information]
+other = "使用者資訊"
+
+[advanced_subscriber_information]
+other = "進階使用者資訊"
+
+[client_developer_information]
+other = "客戶端開發資訊"
+
+[acme_divergences]
+other = "當前ACME草案變化"
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "每年 ${{ .nb }} (USD)"
+
+[3y_commitment]
+other = "（三年承諾捐助）"
+
+[1_99_employees]
+other = "（1-99 位員工）"
+
+[100_999_employees]
+other = "（100-1000 位員工）"
+
+[1000_employees]
+other = "（大於 1000 位員工）"

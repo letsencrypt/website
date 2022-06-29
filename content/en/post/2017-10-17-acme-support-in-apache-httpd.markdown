@@ -15,10 +15,10 @@ ACME support being built in to one of the world’s most popular Web servers, Ap
 
 The Apache httpd ACME module is called mod_md. It’s currently in the [development version of httpd](https://svn.apache.org/viewvc/httpd/httpd/trunk/modules/md/) and a plan is being formulated to backport it to an httpd 2.4.x stable release. The mod_md code is also [available on GitHub](https://github.com/icing/mod_md).
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gNJUpzNNWMw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gNJUpzNNWMw?rel=0" style="border: none;" allowfullscreen></iframe></div>
 
 It’s also worth mentioning that the development version of Apache httpd now includes support for an [SSLPolicy directive](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslpolicy). Properly configuring TLS has traditionally involved making a large number of complex choices. With the SSLPolicy directive, admins simply select a modern, intermediate, or old TLS configuration, and sensible choices will be made for them.
 
 Development of mod_md and the SSLPolicy directive has been [funded by Mozilla](https://blog.mozilla.org/blog/2017/10/03/mozilla-awards-half-million-open-source-projects/) and carried out primarily by Stefan Eissing of [greenbytes](https://www.greenbytes.de/). Thank you Mozilla and Stefan!
 
-Let’s Encrypt is currently providing certificates for more than 55 million websites. We look forward to being able to serve even more websites as efforts like this make deploying HTTPS with Let’s Encrypt even easier. If you’re as excited about the potential for a 100% HTTPS Web as we are, please consider [getting involved](https://letsencrypt.org/getinvolved/), [making a donation](https://letsencrypt.org/donate/), or [sponsoring](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt.
+Let’s Encrypt is currently providing certificates for more than 55 million websites. We look forward to being able to serve even more websites as efforts like this make deploying HTTPS with Let’s Encrypt even easier. If you’re as excited about the potential for a 100% HTTPS Web as we are, please consider [getting involved](https://letsencrypt.org/getinvolved/), [making a donation](https://letsencrypt.org/donate/), or [sponsoring](https://www.abetterinternet.org/sponsor/) Let’s Encrypt.

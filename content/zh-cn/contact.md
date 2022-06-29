@@ -1,15 +1,16 @@
 ---
 title: 联系我们
 slug: contact
+description: 如何联系我们
 top_graphic: 1
-lastmod: 2019-08-14
+lastmod: 2021-08-31
 menu:
   main:
-    weight: 80
+    weight: 90
     parent: about
 ---
 
-**我们不通过电子邮件提供支持服务。如果你有问题想要获得支持服务，请使用我们的[社区论坛](https://community.letsencrypt.org)。下面的电子邮件地址仅用于描述中写明的特定用途。**
+**我们不通过电子邮件提供支持服务。 如果你有问题想要获得支持服务，请使用我们的[社区论坛](https://community.letsencrypt.org)。 下面的电子邮件地址仅用于描述中写明的特定用途。**
 
 ## 新闻咨询
 
@@ -21,7 +22,7 @@ menu:
 
 ## 邮件列表
 
-有关各种技术邮件列表的信息，请访问我们的[帮助 Let's Encrypt]({{< ref "/getinvolved.md" >}}) 页面。
+[点击此处](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)注册我们的新闻通讯邮件。
 
 ## 安全问题
 
@@ -31,16 +32,15 @@ menu:
 
 ### 通讯加密
 
-请使用我们的 GPG 公钥和我们的安全团队安全沟通。它由几个由离线主密钥签名的子密钥组成。任何较新版本的 GnuPG 都支持这种混合密钥。目前的密钥结构为：
-
+请使用我们的 GPG 公钥和我们的安全团队安全沟通。 它由几个由离线主密钥签名的子密钥组成。 任何较新版本的 GnuPG 都支持这种混合密钥。 目前的密钥结构为：
 
 ```
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
 您可以在此处下载 [GPG 公钥](/security_letsencrypt.org-publickey.asc)，或使用您喜欢的公钥服务器。

@@ -4,9 +4,9 @@ slug: caa
 top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 AAC é um tipo de registro DNS que permite que donos de sites especifiquem quais Autoridades
 Certificadoras (ACs) podem emitir certificados contendo seus nomes de domínio. Ele
@@ -30,8 +30,7 @@ provedor estiver listado, você pode usar
 conjunto de registros AAC listando as ACs que você gostaria de autorizar.
 
 O domínio identificador da Let's Encrypt é `letsencrypt.org`. Isso é 
-documentado oficialmente [no nosso Certification Practice Statement
-(CPS), seção 4.2.1](/repository/) (Inglês).
+documentado oficialmente [no nosso Certification Practice Statement (CPS), seção 4.2.1](/repository) (Inglês).
 
 ## Onde usar o registro
 

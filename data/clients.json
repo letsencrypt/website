@@ -1,5 +1,5 @@
 {
-	"lastmod": "2019-10-07",
+	"lastmod": "2022-05-22",
 	"categories": [
 		"Bash",
 		"C",
@@ -7,10 +7,12 @@
 		"Clojure",
 		"Configuration management tools",
 		"D",
+		"Domino",
 		"Docker",
 		"Go",
 		"HAProxy",
 		"Java",
+		"Kubernetes",
 		"Lua",
 		"Microsoft Azure",
 		"nginx",
@@ -21,9 +23,12 @@
 		"Python",
 		"Ruby",
 		"Rust",
-		"Windows / IIS"
+		"Windows / IIS",
+		"Server"
 	],
 	"libraries": [
+		"4D",
+		"C++",
 		"D",
 		"Delphi",
 		"Go",
@@ -38,8 +43,8 @@
 	],
 	"projects": [
 		{
-			"name": "apnscp",
-			"url": "https://apnscp.com"
+			"name": "ApisCP",
+			"url": "https://apiscp.com"
 		},		
 		{
 			"name": "Ponzu CMS",
@@ -51,7 +56,7 @@
 		},
 		{
 			"name": "cPanel",
-			"url": "https://cpanel.com/"
+			"url": "https://cpanel.net/"
 		},
 		{
 			"name": "Own-Mailbox",
@@ -76,10 +81,6 @@
 		{
 			"name": "Froxlor Server Management Panel",
 			"url": "https://www.froxlor.org/"
-		},
-		{
-			"name": "Mesosphere DCOS",
-			"url": "https://mesosphere.com/blog/2016/04/06/lets-encrypt-dcos/"
 		},
 		{
 			"name": "Virtualmin Web Hosting Control Panel",
@@ -107,8 +108,7 @@
 		},
 		{
 			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net",
-			"comments": "(ACMEv2 only)"
+			"url": "http://www.synchro.net"
 		},
 		{
 			"name": "ruxy",
@@ -137,13 +137,21 @@
 		{
 			"name": "Apache HTTP Server",
 			"url": "https://httpd.apache.org"
-		}
+		},
+		{
+			"name": "SWAG - Secure Web Application Gateway",
+			"url": "https://github.com/linuxserver/docker-swag"
+		},
+		{
+			"name": "Gitlab",
+			"url": "https://about.gitlab.com"
+        }
 	],
 	"list": [
 		{
 			"name": "GetSSL",
-			"url": "https://github.com/srvrco/getssl/tree/APIv2",
-			"acme_v2": "`APIv2` branch",
+			"url": "https://github.com/srvrco/getssl",
+			"acme_v2": "true",
 			"category": "Bash",
 			"comments": "(bash, also automates certs on remote hosts via ssh)"
 		},
@@ -168,18 +176,36 @@
 			}
 		},
 		{
-			"name": "acme-client",
-			"url": "https://kristaps.bsd.lv/acme-client/",
+			"name": "acme",
+			"url": "https://git.rapsys.eu/acme",
+			"acme_v2": "acme >= 2.0.0",
+			"category": "Perl",
+			"comments": "(Simple json config, autogen keys, issue cert, refresh cert, apache/nginx integration)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "OpenBSD acme-client",
+			"url": "https://man.openbsd.org/acme-client.1",
+			"acme_v2": "OpenBSD >= 6.6",
 			"category": "C"
 		},
 		{
 			"name": "acme-lw",
 			"url": "https://github.com/jmccl/acme-lw",
-			"category": "C++"
+			"category": "C++",
+			"acme_v2": "acme-lw >= v0.2",
+			"library": "C++"
 		},
 		{
 			"name": "certificaat",
 			"url": "https://github.com/danielsz/certificaat",
+			"acme_v2": "true",
 			"category": "Clojure"
 		},
 		{
@@ -188,15 +214,33 @@
 			"category": "Docker"
 		},
 		{
-			"name": "ZeroSSL",
+			"name": "Crypt::LE",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+		{
+			"name": "acme.sh",
+			"url": "https://hub.docker.com/r/neilpang/acme.sh",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+	        {
+			"name": "letsproxy",
+			"url": "https://hub.docker.com/r/neilpang/letsproxy",
+			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -215,20 +259,23 @@
 		},
 		{
 			"name": "acmetool",
-			"url": "https://github.com/hlandau/acme",
+			"url": "https://github.com/hlandau/acmetool",
 			"category": "Go",
 			"library": "Go",
-			"library_url": "https://github.com/hlandau/acme/tree/master/acmeapi"
+			"library_url": "https://github.com/hlandau/acmeapi",
+			"acme_v2": "acmetool >= v0.2.1"
 		},
 		{
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
-			"comments": "(Reverse proxy to handle https/tls)"
+			"comments": "(Reverse proxy to handle https/tls)",
+			"acme_v2": "Lets-proxy2 >= v0.21.0"
 		},
 		{
 			"name": "autocert",
 			"url": "https://godoc.org/golang.org/x/crypto/acme/autocert",
+			"acme_v2": "true",
 			"category": "Go",
 			"challenges": {
 				"TLS-ALPN-01": "true"
@@ -251,7 +298,7 @@
 			"category": "HAProxy"
 		},
 		{
-			"name": "HAProxy ACME v2 client",
+			"name": "HAProxy client",
 			"url": "https://github.com/haproxytech/haproxy-lua-acme",
 			"acme_v2": "true",
 			"category": "HAProxy"
@@ -265,6 +312,7 @@
 		{
 			"name": "ManageEngine Key Manager Plus",
 			"url": "https://www.manageengine.com/key-manager/",
+			"acme_v2": "Version >= 5650",
 			"category": "Java"
 		},
 		{
@@ -310,6 +358,7 @@
 		{
 			"name": "Greenlock for node.js",
 			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
+			"acme_v2": "true",
 			"library": "Node.js"
 		},
 		{
@@ -318,18 +367,13 @@
 			"category": "Node.js"
 		},
 		{
-			"name": "ocelotconsulting/node-acme-lambda",
-			"url": "https://github.com/ocelotconsulting/node-acme-lambda",
-			"acme_v2": "true",
-			"category": "Node.js"
-		},
-		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
+			"acme_v2": "true",
 			"category": "OpenShift"
 		},
 		{
-			"name": "ZeroSSL project",
+			"name": "Crypt::LE (previously ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
 			"category": "Windows / IIS"
@@ -337,6 +381,7 @@
 		{
 			"name": "Crypt::LE",
 			"url": "https://metacpan.org/pod/Crypt::LE",
+			"acme_v2": "true",
 			"category": "Perl",
 			"library": "Perl"
 		},
@@ -354,6 +399,7 @@
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "PHP"
 		},
 		{
@@ -384,9 +430,9 @@
 			"category": "PHP"
 		},
 		{
-			"name": "php-acme-client",
-			"url": "https://github.com/kouk1/php-acme-client",
+			"name": "Yet another ACME client",
 			"acme_v2": "true",
+			"url": "https://github.com/afosto/yaac",
 			"category": "PHP"
 		},
 		{
@@ -398,6 +444,7 @@
 		{
 			"name": "simp_le",
 			"url": "https://github.com/zenhack/simp_le",
+			"acme_v2": "true",
 			"category": "Python"
 		},
 		{
@@ -463,6 +510,13 @@
 			"category": "Python"
 		},
 		{
+			"name": "Automatoes",
+			"url": "https://github.com/candango/automatoes",
+			"acme_v2": "true",
+			"category": "Python",
+			"comments": "ACME V2 ManuaLE replacement with new features"
+		},
+		{
 			"name": "unixcharles/acme-client",
 			"url": "https://github.com/unixcharles/acme-client",
 			"acme_v2": "true",
@@ -511,10 +565,13 @@
 		},
 		{
 			"name": "win-acme",
-			"url": "https://pkisharp.github.io/win-acme",
+			"url": "https://www.win-acme.com",
 			"category": "Windows / IIS",
 			"acme_v2": "true",
-			"comments": "(.NET)"
+			"comments": "(.NET)",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Certify The Web",
@@ -566,6 +623,7 @@
 		{
 			"name": "DelphiACME",
 			"url": "https://github.com/tothpaul/DelphiACME",
+			"acme_v2": "true",
 			"library": "Delphi",
 			"comments": "(Embarcadero Delphi)"
 		},
@@ -597,11 +655,13 @@
 		{
 			"name": "kelunik/acme",
 			"url": "https://github.com/kelunik/acme",
+			"acme_v2": "true",
 			"library": "PHP"
 		},
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "Windows / IIS",
 			"comments": "(PHP)"
 		},
@@ -669,7 +729,7 @@
 		},
 		{
 			"name": "Ansible acme_certificate module",
-			"url": "https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html",
+			"url": "https://docs.ansible.com/ansible/latest/collections/community/crypto/acme_certificate_module.html",
 			"acme_v2": "ansible >= 2.6",
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
@@ -677,7 +737,7 @@
 			"category": "Configuration management tools"
 		},
 		{
-			"name": "WinCertes Windows ACMEv2 client",
+			"name": "WinCertes Windows client",
 			"url": "https://github.com/aloopkin/WinCertes",
 			"acme_v2": "true",
 			"category": "Windows / IIS"
@@ -707,7 +767,7 @@
 		},
 		{
 			"name": "GetCert",
-			"url": "https://github.com/GeorgeSchiro/GetCert",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
 			"category": "Windows / IIS",
 			"comments": "(simple GUI - .Net, C#, WPF, WCF)"
 		},
@@ -716,12 +776,11 @@
 			"url": "https://github.com/cschlote/acme-lw-d",
 			"category": "D",
 			"library": "D",
-			"comments": "An ACME v2 client/library written in the D computer language",
 			"acme_v2": "true"
 		},
 		{
 			"name": "acme-client-portable",
-			"url": "https://github.com/graywolf/acme-client-portable",
+			"url": "https://sr.ht/~graywolf/acme-client-portable/",
 			"category": "C",
 			"acme_v2": "true"
 		},
@@ -783,7 +842,10 @@
 			"name": "lua-resty-acme",
 			"url": "https://github.com/fffonion/lua-resty-acme",
 			"category": "nginx",
-			"acme_v2": "true"
+			"acme_v2": "true",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "acertmgr",
@@ -796,6 +858,244 @@
 			"url": "https://github.com/mk-fg/acme-cert-tool",
 			"category": "Python",
 			"acme_v2": "true"
+		},
+		{
+			"name": "ght-acme.sh",
+			"url": "https://github.com/bruncsak/ght-acme.sh",
+			"category": "Bash",
+			"comments": "(batch update of http-01 and dns-01 challenges is available)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "GetCert2",
+			"url": "https://github.com/GeorgeSchiro/GetCert2",
+			"category": "Windows / IIS",
+			"comments": "(simple GUI - .Net, C#, WPF, WCF)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "esp32-acme-client",
+			"url": "https://esp32-acme-client.sourceforge.io",
+			"category": "C++",
+			"comments": "allows IoT devices to get certificates",
+			"acme_v2": "true",
+			"library": "C++"
+		},
+		{
+			"name": "bacme",
+			"url": "https://gitlab.com/sinclair2/bacme",
+			"category": "Bash",
+			"comments": "(simple yet complete scripting of certificate generation)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "CertMatica",
+			"url": "https://www.rhpconsult.com/products.html",
+			"category": "Domino",
+			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme component",
+			"url": "https://github.com/blegay/acme_component",
+			"acme_v2": "true",
+			"comments": "ACME Client v2 for 4D v18+",
+			"library": "4D",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "RW ACME client",
+			"url": "https://github.com/RogierW/rw-acme-client",
+			"category": "PHP",
+			"acme_v2": "true"
+		},
+		{
+			"name": "cert-manager",
+			"url": "https://github.com/jetstack/cert-manager",
+			"category": "Kubernetes",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "Certera",
+			"url": "https://certera.io",
+			"acme_v2": "true",
+			"comments": "(Crossplatform PKI to centrally manage keys and certificates)",
+			"category": "Server"
+		},
+		{
+			"name": "TekCERT",
+			"url": "https://www.kaplansoft.com/tekcert/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "serverPKI",
+			"url": "https://github.com/mc3/serverPKI",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
+    },
+		{
+			"name": "acmetk",
+			"url": "https://github.com/noahkw/acmetk",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"DNS-01": "true"
+			},
+			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
+    },
+    {
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
+		},
+		{
+			"name": "J8a",
+			"url": "https://github.com/simonmittag/j8a",
+			"category": "Go",
+			"comments": "(Reverse proxy for JSON APIs with auto-renewing TLS 1.3)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "CycloneACME",
+			"url": "https://oryx-embedded.com/products/CycloneACME",
+			"category": "C",
+			"acme_v2": "true",
+			"comments": "(client implementation of ACME dedicated to microcontrollers)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "acme-redirect",
+			"url": "https://github.com/kpcyrd/acme-redirect",
+			"acme_v2": "true",
+			"category": "Rust"
+		},
+		{
+			"name": "acme-http-01-azure-key-vault-middleware",
+			"url": "https://github.com/compulim/acme-http-01-azure-key-vault-middleware",
+			"acme_v2": "true",
+			"category": "Node.js",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)"
+		},
+		{
+			"name": "Terraform ACME Provider",
+			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
+			"acme_v2": "terraform-provider-acme >= 1.0.0",
+			"challenges": {
+				"HTTP-01": "terraform-provider-acme >= 2.4.0",
+				"DNS-01": "terraform-provider-acme >= 1.0.0",
+				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
+			},
+			"category": "Configuration management tools"
+		},
+		{
+			"name": "wdfcert.sh",
+			"url": "https://github.com/WolfWings/wdfcert.sh",
+			"acme_v2": "true",
+			"category": "Bash",
+			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus roor domain support for single-TXT-record DNS providers)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false",
+				"TLS-ALPN-01": "false"
+			}
+		},
+		{
+			"name": "HCL Domino",
+			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
+			"category": "Domino",
+			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Ansible collection: acme",
+			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
+			"category": "Configuration management tools",
+			"comments": "(ACME V2 integration with acme_certificate module. Supports multiple providers for challenges)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "certmanager",
+			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
+			"category": "Go",
+			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
+			"library": "Go",
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"acme_v2": "true"
+		},
+		{
+			"name": "KCert",
+			"url": "https://github.com/nabsul/kcert",
+			"category": "Kubernetes",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Az-Acme",
+			"url": "https://github.com/az-acme/az-acme-cli",
+			"category": "Microsoft Azure",
+			"comments": "(The simplest ACME Issuer for Azure Key Vault)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
 		}
 	]
 }

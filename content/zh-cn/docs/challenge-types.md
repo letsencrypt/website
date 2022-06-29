@@ -3,8 +3,10 @@ title: 验证方式
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2019-02-25
+lastmod: 2020-02-24
+show_lastmod: 1
 ---
+
 
 当您从 Let's Encrypt 获得证书时，我们的服务器会验证您是否使用 ACME 标准定义的验证方式来验证您对证书中域名的控制权。大多数情况下，验证由 ACME 客户端自动处理，但如果您需要做出一些更复杂的配置决策，那么了解更多有关它们的信息会很有用。如果您不确定怎么做，请使用您的客户端的默认设置或使用 HTTP-01。
 
@@ -78,5 +80,5 @@ ACME 的草案版本中定义了这一验证方式。它在 443 端口上进行 
 [anycast]: https://en.wikipedia.org/wiki/Anycast
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
-[tls-alpn]: https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-01
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
 [caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

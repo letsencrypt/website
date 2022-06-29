@@ -4,9 +4,9 @@ permalink: /docs/certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 A veces personas desean obtener un certificado para el nombre de equipo "localhost",
 ya sea para uso en desarrollo local, o para distribución con una aplicación

@@ -2,7 +2,7 @@
 title: 連絡先
 slug: contact
 top_graphic: 1
-lastmod: 2019-08-14
+lastmod: 2019-09-11
 menu:
   main:
     weight: 90
@@ -21,9 +21,9 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## メーリングリスト
 
-さまざまな技術に関するメーリングリストの情報があります。詳しくは、[参加する]({{< ref "/getinvolved.md" >}})のページを読んでください。
+さまざまな技術に関するメーリングリストの情報があります。詳しくは、[参加する](/getinvolved)のページを読んでください。
 
-ニュースレターのサインアップには、[こちらをクリック](https://letsencrypt.us14.list-manage.com/subscribe?u=dc00f5bdab7179027a494d4e8&id=ec773c6bad)してください。
+ニュースレターのサインアップには、[こちらをクリック](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)してください。
 
 ## セキュリティ
 
@@ -39,9 +39,9 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [E] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [A] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [S] [expires: 2021-09-21]
 ```
 
 あなたはここから [GPG 公開鍵](/security_letsencrypt.org-publickey.asc)をダウンロートできます。また、あなたのお気に入りのキーサーバーからも利用できます。

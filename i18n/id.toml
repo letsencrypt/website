@@ -30,10 +30,13 @@ other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
 [footer_donate]
 other = "Donasi"
 
+[footer_mailing]
+other = "Kirim semua surat atau pertanyaan ke:"
+
 [footer_policies]
 other = """
-Lihat <a href="/privacy/">kebijakan privasi</a> kami.<br>
-Lihat <a href="/trademarks/">kebijakan merek</a> kami.
+Lihat <a href="/id/privacy/">kebijakan privasi</a> kami.<br>
+Lihat <a href="https://www.abetterinternet.org/trademarks/">kebijakan merek</a> kami.
 """
 
 [linux_foundation_trademark]
@@ -65,11 +68,6 @@ other = "Bahasa"
 
 [view_in_english]
 other = "Lihat dalam Bahasa Ingris"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Lihat dalam Bahasa Indonesia"
 
 [old_version]
 other = "Catatan: Versi pada Bahasa Ingris telah diperbaharui ketimbang terjemahan ini."
@@ -109,3 +107,21 @@ other = "Pengguna dari Jepang"
 
 [graph_percent_https]
 other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"
+
+[overview]
+other = "Ringkasan"
+
+[subscriber_information]
+other = "Informasi untuk Pelanggan (*Subcriber*)"
+
+[advanced_subscriber_information]
+other = "Informasi untuk Pelanggan Tingkat Lanjut"
+
+[client_developer_information]
+other = "Informasi untuk Pengembang Klien (*Client Developer*)"
+
+[acme_divergences]
+other = "Perbedaan dari draf ACME terkini"
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"

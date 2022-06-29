@@ -1,0 +1,245 @@
+[build]
+
+publish = "./public/"
+command = "hugo -d public"
+
+[build.environment]
+# same as .github/workflows/test.yaml
+HUGO_VERSION = "0.89.1"
+
+# https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
+# headers must be the same than in config/_default/server.toml (for Hugo)
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "no-referrer"
+Permissions-Policy = """
+    geolocation=(),
+    midi=(),
+    notifications=(),
+    push=(),
+    sync-xhr=(),
+    microphone=(),
+    camera=(),
+    magnetometer=(),
+    gyroscope=(),
+    speaker=(self),
+    vibrate=(),
+    fullscreen=(self),
+    interest-cohort=()
+"""
+# "style-src unsafe-inline:" Cf https://github.com/letsencrypt/website/issues/950
+# "connect-src https://d4twhgtvn0ff5.cloudfront.net/" for stats graphs
+# "img-src data: blob:" is for Plotly download feature
+# "script-src unsafe-eval unsafe-inline data:": For Google Analytics
+# "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
+Content-Security-Policy = """
+    default-src 'none';
+    font-src 'self';
+    style-src 'unsafe-inline' 'self';
+    script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
+        https://www.google-analytics.com
+        https://www.googleadservices.com
+        https://www.googletagmanager.com
+        https://googleads.g.doubleclick.net
+        https://donorbox.org
+        https://js.stripe.com/v3/
+        https://sdks.shopifycdn.com
+        https://www.paypal.com
+    ;
+    img-src 'self' data: blob:
+        https://www.google-analytics.com
+        https://www.paypal.com
+        https://www.paypalobjects.com
+        https://ak2s.abmr.net
+        https://ak1s.abmr.net
+        https://www.google.com
+        https://cdn.shopify.com
+        https://v.shopify.com
+    ;
+    frame-src
+        https://donorbox.org
+        https://www.youtube.com
+        https://www.youtube-nocookie.com
+        https://bid.g.doubleclick.net
+        https://js.stripe.com/v3/
+        https://js.stripe.com/v2/
+        https://www.paypal.com
+    ;
+    connect-src 'self'
+        https://d4twhgtvn0ff5.cloudfront.net/
+        https://letsencrypt-merch.myshopify.com
+        https://monorail-edge.shopifysvc.com
+        https://www.paypal.com
+    ;
+"""
+
+[[headers]]
+for = "/repository"
+[headers.values]
+# For WebTrust Audits
+# Cf https://github.com/letsencrypt/website/pull/976
+Referrer-Policy = "strict-origin"
+
+[[headers]]
+for = "/:lang/repository"
+[headers.values]
+# For WebTrust Audits
+# Cf https://github.com/letsencrypt/website/pull/976
+Referrer-Policy = "strict-origin"
+
+[[headers]]
+for = "/certs/*.pem"
+[headers.values]
+# Because Netlify defaults to "application/x-x509-ca-cert", which is for DER.
+Content-Type = "application/x-pem-file"
+Content-Disposition = "inline"
+
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+
+[[redirects]]
+from = "/jobs"
+to = "https://www.abetterinternet.org/careers"
+status = 302
+force = false
+
+[[redirects]]
+from = "/become-a-sponsor"
+to = "https://www.abetterinternet.org/sponsor"
+status = 302
+force = false
+
+[[redirects]]
+from = "/sponsor"
+to = "https://www.abetterinternet.org/sponsor"
+status = 302
+force = false
+
+[[redirects]]
+from = "/certs"
+to = "/certificates"
+status = 302
+force = false
+
+[[redirects]]
+from = "/howitworks"
+to = "/getting-started"
+status = 302
+force = false
+
+[[redirects]]
+from = "/ct-logs"
+to = "/docs/ct-logs"
+status = 302
+force = false
+
+[[redirects]]
+from = "/de/*"
+to = "/de/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/es/*"
+to = "/es/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/fr/*"
+to = "/fr/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/he/*"
+to = "/he/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/id/*"
+to = "/id/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ja/*"
+to = "/ja/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ko/*"
+to = "/ko/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/pt-br/*"
+to = "/pt-br/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/ru/*"
+to = "/ru/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/sr/*"
+to = "/sr/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/sv/*"
+to = "/sv/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/zh-cn/*"
+to = "/zh-cn/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/zh-tw/*"
+to = "/zh-tw/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "/vi/*"
+to = "/vi/404.html"
+status = 404
+force = false
+
+[[redirects]]
+from = "https://lencr.org/*"
+to = "https://letsencrypt.org/docs/lencr.org"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://www.lencr.org/*"
+to = "https://letsencrypt.org/docs/lencr.org"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://letsencrypt.com/*"
+to = "https://letsencrypt.org/"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://www.letsencrypt.com/*"
+to = "https://letsencrypt.org/"
+status = 302
+force = true

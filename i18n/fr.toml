@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt est une autorité de certification <span>gratuite</span>, <span>automatisée</span> et <span>ouverte</span>."
+other = "Une autorité de certification à but non lucratif fournissant leurs certificats TLS à <span>260 millions</span> de sites Web."
 
 [home_hero_getting_started]
 other = "Commencer"
@@ -11,6 +11,15 @@ other = "Faire un don"
 
 [home_hero_sponsor]
 other = "Sponsoriser"
+
+[home_hero_annual_report]
+other = "Lisez notre <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>rapport annuel 2021</a>"
+
+[home_hero_desktop]
+other = "Bureau"
+
+[home_hero_mobile]
+other = "Mobile"
 
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
@@ -30,10 +39,13 @@ other = "Soutenez un Web plus sûr et plus respectueux de la vie privée."
 [footer_donate]
 other = "Faire un don"
 
+[footer_mailing]
+other = "Envoyez tout courrier ou toute demande à:"
+
 [footer_policies]
 other = """
 Voir notre <a href="/fr/privacy/">politique de confidentialité</a>.<br>
-Voir notre <a href="/fr/trademarks/">politique en matière de copyright</a>.
+Voir notre <a href="https://www.abetterinternet.org/trademarks/">politique en matière de copyright</a>.
 """
 
 [linux_foundation_trademark]
@@ -66,11 +78,6 @@ other = "Langues"
 [view_in_english]
 other = "Voir en anglais"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Voir en français"
-
 [old_version]
 other = "Note : La version anglaise a été mise à jour depuis sa traduction"
 
@@ -102,10 +109,70 @@ other = "Émis par jour"
 other = "Tous les utilisateurs"
 
 [graph_usa_users]
-other = "Utilisateurs américain"
+other = "Utilisateurs des États-Unis"
 
 [graph_japan_users]
 other = "Utilisateurs du Japon"
 
 [graph_percent_https]
 other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jours)"
+
+[certificate_transparency_name]
+other = "Nom"
+
+[certificate_transparency_role_production]
+other = "Production"
+
+[certificate_transparency_role_testing]
+other = "Testing"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Clé publique"
+
+[overview]
+other = "Vue d'ensemble"
+
+[subscriber_information]
+other = "Informations pour les utilisateurs"
+
+[advanced_subscriber_information]
+other = "Informations pour les utilisateurs avancés"
+
+[client_developer_information]
+other = "Informations pour les développeurs de client"
+
+[acme_divergences]
+other = "Différences par rapport à l'ébauche actuelle d'ACME"
+
+[acme_divergences_rfc]
+other = "Différences par rapport à la RFC d'ACME"
+
+[onboarding_customers]
+other = "Intégrer vos clients avec Let's Encrypt et ACME"
+
+[paypal_donate_alt]
+other = "Bouton Faites un don avec PayPal"
+
+[paypal_donate_title]
+other = "Faites un don avec PayPal"
+
+[not_found]
+other = "Cette page n'existe pas, merci de vérifier l'adresse."
+
+[amount_per_year]
+other = "${{ .nb }}/an (USD)"
+
+[3y_commitment]
+other = "avec un engagement de 3 ans"
+
+[1_99_employees]
+other = "1-99 employés"
+
+[100_999_employees]
+other = "100-999 employés"
+
+[1000_employees]
+other = "1000+ employés"

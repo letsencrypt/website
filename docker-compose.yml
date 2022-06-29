@@ -1,0 +1,7 @@
+  server:
+    image: klakegg/hugo:ext-alpine
+    command: server
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"

@@ -12,6 +12,15 @@ other = "寄付"
 [home_hero_sponsor]
 other = "スポンサー"
 
+[home_hero_annual_report]
+other = "<a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> 年の年次レポートを読む"
+
+[home_hero_desktop]
+other = "デスクトップ"
+
+[home_hero_mobile]
+other = "モバイル"
+
 [home_major_sponsors]
 other = "主要なスポンサーと寄付者"
 
@@ -30,10 +39,13 @@ other = "よりセキュアでプライバシーを尊重するウェブを支�
 [footer_donate]
 other = "寄付する"
 
+[footer_mailing]
+other = "すべての手紙またはお問い合わせを以下に送ってください："
+
 [footer_policies]
 other = """
-<a href="/privacy/">プライバシー・ポリシー</a>を読む。<br>
-<a href="/trademarks/">トレードマーク・ポリシー</a>を読む。
+<a href="/ja/privacy/">プライバシー・ポリシー</a>を読む。<br>
+<a href="https://www.abetterinternet.org/trademarks/">トレードマーク・ポリシー</a>を読む。
 """
 
 [linux_foundation_trademark]
@@ -65,11 +77,6 @@ other = "言語"
 
 [view_in_english]
 other = "英語で表示する"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "日本語で表示する"
 
 [old_version]
 other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"
@@ -109,3 +116,65 @@ other = "日本のユーザー"
 
 [graph_percent_https]
 other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
+
+[certificate_transparency_name]
+other = "名称"
+
+[certificate_transparency_role_production]
+other = "プロダクション用"
+
+[certificate_transparency_role_testing]
+other = "テスト用"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "公開鍵"
+
+[overview]
+other = "概要"
+
+[subscriber_information]
+other = "利用者向けの情報"
+
+[advanced_subscriber_information]
+other = "利用者向けの発展的な情報"
+
+[client_developer_information]
+other = "クライアント開発者向けの情報"
+
+[acme_divergences]
+other = "現在の ACME ドラフトとの違い"
+
+[acme_divergences_rfc]
+other = "ACME RFC との違い"
+
+[onboarding_customers]
+other = "あなたの顧客のオンボーディングを Let's Encrypt と ACME で助ける"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "[PayPalで寄付する] ボタン"
+
+[paypal_donate_title]
+other = "PayPal で寄付する"
+
+[not_found]
+other = "このページは見つかりません。アドレスを確認してみてください。"
+
+[amount_per_year]
+other = "${{ .nb }}/年 (USD)"
+
+[3y_commitment]
+other = "3年間のコミット"
+
+[1_99_employees]
+other = "従業員数 1-99 人"
+
+[100_999_employees]
+other = "従業員数 100-999 人"
+
+[1000_employees]
+other = "従業員数 1000+ 人"

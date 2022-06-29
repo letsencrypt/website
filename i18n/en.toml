@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Let&rsquo;s Encrypt is a <span>free</span>, <span>automated</span>, and <span>open</span> Certificate Authority."
+other = "A nonprofit Certificate Authority providing TLS certificates to <span>260 million</span> websites."
 
 [home_hero_getting_started]
 other = "Get Started"
@@ -12,8 +12,11 @@ other = "Donate"
 [home_hero_sponsor]
 other = "Sponsor"
 
+[home_hero_annual_report]
+other = "We were awarded the Levchin Prize for Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Learn more</a>"
+
 [home_major_sponsors]
-other = "Major Sponsors and Donors"
+other = "Major Sponsors and Funders"
 
 [home_from_our_blog]
 other = "From our blog"
@@ -30,10 +33,13 @@ other = "Support a more secure and privacy-respecting Web."
 [footer_donate]
 other = "Donate"
 
+[footer_mailing]
+other = "Send all mail or inquiries to:"
+
 [footer_policies]
 other = """
 View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="/trademarks/">trademark policy</a>.
+View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.
 """
 
 [linux_foundation_trademark]
@@ -57,6 +63,9 @@ other = "Platinum"
 [gold]
 other = "Gold"
 
+[gold_basic]
+other = "Gold Basic"
+
 [silver]
 other = "Silver"
 
@@ -64,11 +73,6 @@ other = "Silver"
 other = "Languages"
 
 [view_in_english]
-other = "View in English"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
 other = "View in English"
 
 [old_version]
@@ -110,20 +114,83 @@ other = "Japan users"
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
+[certificate_policy]
+other = "Certificate Policy"
+
 [certificate_transparency_name]
 other = "Name"
-
-[certificate_transparency_role]
-other = "Role"
 
 [certificate_transparency_role_production]
 other = "Production"
 
-[certificate_transparency_role_test]
-other = "Test"
+[certificate_transparency_role_testing]
+other = "Testing"
 
 [certificate_transparency_uri]
 other = "URI"
 
 [certificate_transparency_public_key]
 other = "Public Key"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "State"
+
+[certificate_transparency_window_start]
+other = "Window Start"
+
+[certificate_transparency_window_end]
+other = "Window End"
+
+[certification_practices_statement]
+other = "Certification Practices Statement"
+
+[overview]
+other = "Overview"
+
+[subscriber_information]
+other = "Subscriber Information"
+
+[advanced_subscriber_information]
+other = "Advanced Subscriber Information"
+
+[client_developer_information]
+other = "Client Developer Information"
+
+[acme_divergences]
+other = "Differences from Current ACME Draft"
+
+[acme_divergences_rfc]
+other = "Differences from ACME RFC"
+
+[onboarding_customers]
+other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"
+
+[paypal_donate_title]
+other = "Donate with PayPal"
+
+[not_found]
+other = "That page doesn't exist, please check the address."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/yr (USD)"
+
+[3y_commitment]
+other = "with a 3-year commitment"
+
+[1_99_employees]
+other = "1-99 employees"
+
+[100_999_employees]
+other = "100-999 employees"
+
+[1000_employees]
+other = "1000+ employees"

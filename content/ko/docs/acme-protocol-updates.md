@@ -4,9 +4,9 @@ slug: acme-protocol-updates
 top_graphic: 1
 date: 2016-07-27
 lastmod: 2018-04-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ACME 프로토콜은 Let's Encrypt가 작동하는 방식의 기초입니다. 현재 표준 초안이며 아직 최종 RFC는 아닙니다. 시간이 지나면서 프로토콜 사양이 발전함에 따라 Let's Encrypt는 업데이트가 된 ACME를 구현할 것입니다. 그렇게 할 때, 하위 호환성과 밀접하게 연관지으면서 보안은 저희의 주요 관심사가 됩니다.
 

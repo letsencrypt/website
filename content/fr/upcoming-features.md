@@ -2,36 +2,40 @@
 title: Fonctionnalités à venir
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2018-12-31
+lastmod: 2020-02-20
+show_lastmod: 1
 ---
 
-## Certificate Transparency Log
 
-* Prévu: T1 2019
+## Adresses IP dans les certificats
 
-Nous prévoyons de gérer un [certificate transparency log](http://www.certificate-transparency.org/how-ct-works).
-
-## Validation multi - points de vue
- 
-* Prévu: T2 2019
- 
-Actuellement, Let's Encrypt valide d'un point de vue unique du réseau. Nous prévoyons de commencer à valider à partir de plusieurs points de vue du réseau.
+Nous prévoyons de prendre en charge la validation et l'inclusion d'adresses IP dans les certificats.
 
 ## ECDSA Racine et Intermédiaires
 
-* Prévu : T3 2019
-
-Actuellement, Let's Encrypt ne signe que les certificats d'entité finale avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
+Actuellement, Let's Encrypt signe les certificats d'entité finale uniquement avec des intermédiaires RSA. Let's Encrypt génèrera une racine ECDSA et des intermédiaires qui peuvent être utilisés pour signer les certificats d'entité finale.
 
 # Fonctionnalités terminées
+
+## Validation multi-points géographiques (Multi-Perspective Validation)
+
+* Activé : 19 Février 2020
+
+Désormais nous validons les noms de domaines via des [points réseaux géographiques multiples](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+
+## Journal de Transparence des Certificats (CT log)
+
+* Activé : 15 mai 2019
+
+Nous commençons à gérer un [journal de transparence des certificats](/docs/ct-logs).
 
 ## Support du challenge TLS ALPN
 
 * Activé : 12 juillet 2018
 
-Nous avons spécifié et mis en œuvre un [remplacement](https://datatracker.ietf.org/doc/draft-ietf-acme-tls-alpn/) pour la méthode de validation TLS-SNI, qui a été abandonnée pour des [raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-ne-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI était importante pour les abonnés qui souhaitaient uniquement utiliser le port 443 pour la validation.
+Nous avons spécifié et mis en œuvre un [remplacement](https://tools.ietf.org/html/rfc8737) pour la méthode de validation TLS-SNI, qui a été [abandonnée pour des raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). L'introduction d'un remplacement de TLS-SNI était importante pour les souscripteurs qui souhaitaient uniquement utiliser le port 443 pour la validation.
 
-## Intégrer les reçus SCT dans les certificats
+### Intégrer les reçus SCT dans les certificats
 
 * Activé : 29 mars 2018
 
