@@ -27,14 +27,14 @@ validate have failed.
 Subscribers who hit the Failed Validation limit often do so due to a
 misconfiguration in their environment.
 
-# HTTP-01 or TLS-APLN-01
+## HTTP-01 or TLS-APLN-01
 
 For ACME clients requesting authorization via the HTTP-01 or TLS-APLN-01
 validation methods, the problem usually stems from a network or firewall
 configuration which makes it impossible for our validation servers to reach the
 server that the request was sent from.
 
-# DNS-01
+## DNS-01
 
 ACME clients requesting authorization via the DNS-01 validation method usually
 require that you create a CNAME record in your main DNS zone which allows the
