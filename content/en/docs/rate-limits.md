@@ -62,11 +62,11 @@ can be considered a renewal even if you are using a new key.
 **Revoking certificates does not reset rate limits**, because the resources used to
 issue those certificates have already been consumed.
 
-There is a <a id="failed-validations"></a>**Failed Validation** limit of 5 failures
-per account, per hostname, per hour. This limit is higher on our
-[staging environment](/docs/staging-environment), so you
-can use that environment to debug connectivity problems. Exceeding the Failed
-Validations limit is reported with the error message `too many failed authorizations recently`.
+There is a <a id="failed-validations"></a>[**Failed Validation**](/docs/failed-validation-limit) 
+limit of 5 failures per account, per hostname, per hour. This limit is higher on our
+[staging environment](/docs/staging-environment), so you can use that environment to debug connectivity
+problems. Exceeding the Failed Validations limit is reported with the error message `too many failed
+authorizations recently`.
 
 The "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the API have an <a
 id="overall-requests"></a>**Overall
