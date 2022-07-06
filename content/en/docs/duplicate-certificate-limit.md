@@ -3,12 +3,13 @@ title: Duplicate Certificate Limit
 slug: duplicate-certificate-limit
 top_graphic: 1
 date: 2022-06-16
-lastmod: 2022-06-16
+lastmod: 2022-07-06
 show_lastmod: 1
 ---
 
 
 # Description
+
 All issuance requests are subject to a *Duplicate Certificate* limit of 5 per
 week. You should receive an error message like the following from your ACME
 client when you’ve exceeded the Duplicate Certificate limit:
@@ -22,6 +23,31 @@ your certificate is issued for only 1 name, such as example.com, then the "exact
 set" of hostnames for your certificate would be `[example.com]`. This rate limit
 is exceeded when a subscriber requests a certificate for the same "exact set" of
 hostnames more than 5 times in a single week.
+
+## Wait for Reset
+
+Revoking the previously issued certificates will not reset the Duplicate
+Certificate limit. Subscribers can request another certificate 168 hours (7
+days) after the  most recent successful issuance. If you're unsure of the date
+and time of your last successfully issued certificate, follow the directions
+below:
+
+- Open [crt.sh](https://crt.sh/).
+- Input your domain name and click the **Search** button.
+- Click to open the detailed view for the top-most entry.
+- Note the **Not Before** timestamp under the **Validity** section.
+- At 168 hours from that timestamp you can request a new certificate.
+
+## Workaround
+
+If you find that you’ve exceeded the limit and you still require another
+certificate for the same hostnames you can always request a certificate for a
+different “exact set” of hostnames. For example, if you’ve exceeded the
+Duplicate Certificate limit for `[example.com]` then requesting a certificate
+for `[example.com, login.example.com]` will succeed. Similarly, if you’ve
+exceeded the Duplicate Certificate limit for `[example.com, login.example.com]`
+then requesting a separate certificate for `[example.com]` and another for
+`[login.example.com]` will succeed.
 
 # Common Causes
 
@@ -52,18 +78,6 @@ on our community forum](https://community.letsencrypt.org/c/help/13).
 # Requesting an Override
 
 Overrides are **not** available for the Duplicate Certificate limit.
-
-# Workaround
-
-Revoking the previously issued certificates will not reset the Duplicate
-Certificate limit. However, if you find that you’ve exceeded the limit and you
-still require another certificate for the same hostnames you can always request
-a certificate for a different “exact set” of hostnames. For example, if you’ve
-exceeded the Duplicate Certificate limit for `[example.com]` then requesting a
-certificate for `[example.com, login.example.com]` will succeed. Similarly, if
-you’ve exceeded the Duplicate Certificate limit for `[example.com,
-login.example.com]` then requesting a separate certificate for `[example.com]`
-and another for `[login.example.com]` will succeed.
 
 # Monitoring Rate Limits
 
