@@ -37,7 +37,5 @@ When enough pages are translated on Crowdin, someone from Let's Encrypt will cre
 1. In `config\_default\`, copy `config\_default\languages.en.toml` into `config\_default\languages.XX.toml` (where XX is your language code) and update it following indications given in comments (lines starting with `#`)
 2. In `config\_default\`, copy `config\_default\menu.en.toml` into `config\_default\menu.XX.toml` (where XX is your language code), translate `name =` and prefix urls with `/XX/`.
 3. In `i18n\` copy `en.toml` into `XX.toml` (where XX is your language code) and translate the strings.
-4. Download Plotly translation from https://github.com/plotly/plotly.js/tree/master/dist/plotly-locale-XX.js into `/static/js`
-5. Add your language in `netlify.toml` and `layouts\shortcodes\plotly.html` ().
-
-6. Copy `content\base-l10n\` into `content\XX\` (where XX is your language code)
+4. Add your language in `netlify.toml` and `layouts\_partial\langs.html`.
+5. Copy `content\base-l10n\` into `content\XX\` (where XX is your language code)
