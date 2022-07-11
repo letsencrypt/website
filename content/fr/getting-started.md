@@ -7,7 +7,7 @@ date: 2020-02-11
 
 Pour activer HTTPS sur votre site Web, vous devez obtenir un certificat (un fichier particulier) à partir d'une autorité de certification (AC ou CA pour Certificate Authority en anglais). Let's Encrypt est une autorité de certification. Afin d'obtenir un certificat pour le domaine de votre site web par le biais de Let's Encrypt, vous devez prouver que vous contrôlez ce domaine. Avec Let's Encrypt, vous faites cela en utilisant un logiciel exploitant le [protocole ACME](https://tools.ietf.org/html/rfc8555), qui s'exécute généralement chez votre hébergeur.
 
-Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez savoir si vous disposez d'un [accès shell](https://en.wikipedia.org/wiki/Shell_account) (également connu sous le nom d'accès SSH) à votre hébergement. Si vous gérez votre site entièrement via un panneau de contrôle comme [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), ou [WordPress](https://wordpress.org/), il y a de fortes chances que vous n'ayez pas d'accès shell. Vous pouvez poser le question à votre hébergeur pour en être sûr.
+Pour déterminer quelle méthode fonctionnera le mieux pour vous, vous devrez savoir si vous disposez d'un [accès shell](https://en.wikipedia.org/wiki/Shell_account) (également connu sous le nom d'accès SSH) à votre hébergement. Si vous gérez votre site entièrement via un panneau de contrôle comme [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), ou [WordPress](https://wordpress.org/), il y a de fortes chances que vous n'ayez pas d'accès shell. Vous pouvez poser la question à votre hébergeur pour en être sûr.
 
 # Avec accès Shell
 
