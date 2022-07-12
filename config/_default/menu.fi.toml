@@ -34,5 +34,5 @@ url = "https://www.abetterinternet.org/careers/"
 name = "Ryhdy sponsoriksi"
 weight = 40
 identifier = "ryhdy-sponsoriksi"
-parent = "lahjoita"
+parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
