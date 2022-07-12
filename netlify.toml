@@ -221,6 +221,12 @@ status = 404
 force = false
 
 [[redirects]]
+from = "/hu/*"
+to = "/hu/404.html"
+status = 404
+force = false
+
+[[redirects]]
 from = "https://lencr.org/*"
 to = "https://letsencrypt.org/docs/lencr.org"
 status = 302
