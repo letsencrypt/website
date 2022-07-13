@@ -3,7 +3,7 @@ contentDir = "content/da"
 languageName = "Dansk"
 languageCode = "da"
 beforeColon = ""
-weight = 10
+weight = 190
 description = """
   Let's Encrypt er en gratis, automatisk og åben certifikat 
  udsteeder bragt til dig af nonprofit organisationen <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. 
