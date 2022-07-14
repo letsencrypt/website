@@ -7,9 +7,9 @@ menu:
   main:
     weight: 60
     parent: donate
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## Сообщество
 
@@ -22,7 +22,7 @@ menu:
 
 ### Разработка ACME-клиента
 
-Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует {{<link "множество других клиентов" "/docs/client-options" >}}.
+Утилита [Certbot](https://github.com/certbot/certbot), написанная на Python, запускается на вашем web-сервере для получения сертификатов и настройки HTTPS. Certbot рекомедуется к использованию как основной ACME-клиент, но существует [множество других клиентов](/docs/client-options).
 
 ### Разработка Удостоверяющего Центра
 

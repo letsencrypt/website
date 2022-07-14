@@ -1,4 +1,4 @@
-title = "Let's Encrypt - Free SSL/TLS Certificates"
+title = "Let's Encrypt"
 contentDir = "content/en"
 #The namge of the language, it that language (not in English if it's not English)
 languageName = "English"
@@ -22,3 +22,4 @@ paypalCountry = "US"
 # Ex. for -1 2345.67 -> "-|.| "
 # Doc: https://gohugo.io/functions/numfmt/
 numberFormat = "-|.|,"
+viewInThatLanguage = "View in English"

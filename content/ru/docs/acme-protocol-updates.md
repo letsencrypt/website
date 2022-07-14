@@ -3,9 +3,9 @@ title: Обновления протокола ACME
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 [Стандартизованный IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) протокол ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/) - это краеугольный камень в концепции работы Let's Encrypt.
 

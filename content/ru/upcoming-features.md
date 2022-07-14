@@ -3,9 +3,9 @@ title: Планируемый функционал
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2020-01-14
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## Многофакторная валидация
 
@@ -27,7 +27,7 @@ lastmod: 2020-01-14
 
 * Запущено: 15 мая 2019
 
-Мы запустили интеграцию с {{<link "журналами Certificate Transparency" "/docs/ct-logs" >}}.
+Мы запустили интеграцию с [журналами Certificate Transparency](/docs/ct-logs).
 
 ## Внедрение метода проверки TLS ALPN
 

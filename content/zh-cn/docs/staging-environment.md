@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 在使用我们的正式环境以前，我们强烈建议您使用我们的测试环境进行测试性部署，这将允许您在颁发受信任的证书前确保一切正常，并且降低您受到速率限制的可能性。
 
@@ -18,7 +18,7 @@ lastmod: 2020-01-21
 
 # 速率限制
 
-测试环境使用与{{<link "生产环境类似" "/docs/rate-limits" >}}的速率限制，但具体数据有所变化：
+测试环境使用与[生产环境类似](/docs/rate-limits)的速率限制，但具体数据有所变化：
 
 * **每个注册域名允许颁发的证书数量**限制为每周 30000 张。
 * **重复证书**限制为每周 30000 张。
@@ -28,11 +28,11 @@ lastmod: 2020-01-21
 
 # 根证书
 
-测试环境的中间证书（[“Fake LE Intermediate X1”](/certs/fakeleintermediatex1.pem)）由**不在**浏览器/客户端的受信证书存储内的根证书颁发。如果您希望仅用于测试的客户端信任测试环境颁发的证书，您可以手动添加[“Fake LE Root X1”](/certs/fakelerootx1.pem)至该客户端的受信证书存储中。请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
+测试环境的中间证书（[“(STAGING) Artificial Apricot R3”](/certs/staging/letsencrypt-stg-int-r3.pem)）由**不在**浏览器/客户端的受信证书存储内的根证书颁发。如果您希望仅用于测试的客户端信任测试环境颁发的证书，您可以手动添加[“(STAGING) Pretend Pear X1”](/certs/staging/letsencrypt-stg-root-x1.pem)至该客户端的受信证书存储中。请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
 
 # 证书透明度日志
 
-测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志 {{<link "Testflume" "/docs/ct-logs" >}} 和Google 的测试用证书透明度日志 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
+测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志 [Testflume](/docs/ct-logs) 和Google 的测试用证书透明度日志 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
 
 # 持续集成/开发测试
 

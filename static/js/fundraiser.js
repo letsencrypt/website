@@ -75,7 +75,7 @@
 	};
 
 	var level1 = {
-		id: [3964823961688],
+		id: [4684772573272],
 		node: document.getElementById("product-component-96aa7b318c7"),
 		moneyFormat: "%24%7B%7Bamount%7D%7D",
 		options: {
@@ -134,7 +134,7 @@
 	};
 
 	var level2 = {
-		id: [3964823240792],
+		id: [4685028163672],
 		node: document.getElementById("product-component-eeee57f66cf"),
 		moneyFormat: "%24%7B%7Bamount%7D%7D",
 		options: {
@@ -193,7 +193,7 @@
 	};
 
 	var level3 = {
-		id: [3964820815960],
+		id: [4685028687960],
 		node: document.getElementById("product-component-aecb0be48a8"),
 		moneyFormat: "%24%7B%7Bamount%7D%7D",
 		options: {
@@ -252,7 +252,7 @@
 	};
 
 	var level4 = {
-		id: [3964819243096],
+		id: [4685029146712],
 		node: document.getElementById("product-component-ddb801c5fb7"),
 		moneyFormat: "%24%7B%7Bamount%7D%7D",
 		options: {
@@ -311,7 +311,7 @@
 	};
 
 	var level5 = {
-		id: [3880736850008],
+		id: [4685029638232],
 		node: document.getElementById("product-component-97d68344251"),
 		moneyFormat: "%24%7B%7Bamount%7D%7D",
 		options: {

@@ -21,6 +21,10 @@
     position: relative;
 }
 
+html[dir="rtl"] .site-title {
+   float: right;
+}
+
 .site-title {
     margin-left: 0px;
     padding-left: 0px;
@@ -113,6 +117,7 @@
         font-weight: 300;
         padding: 6px 18px;
         border: 2px solid #2a7ae2;
+        color:#2a7ae2;
         border-radius: 8px;
         width: 175px;
 
@@ -122,11 +127,12 @@
             width: 110px;
         }
         &:visited {
-            border-color: #1756a9;
+            border-color: #2a7ae2;
         }
         &:hover {
             text-decoration: none;
             border-color: #000;
+            color: #000;
         }
     }
     a.accent {
@@ -141,15 +147,9 @@
     }
 }
 
-.donate-footer {
-    .buttons {
-        a {
-            font-size: 24px;
-        }
-        margin-bottom: 1.5em;
-    }
+html[dir="rtl"] .hero.slim div.container {
+   text-align: right;
 }
-
 .hero.slim {
     padding-top:25px;
     padding-bottom: 18px;
@@ -241,8 +241,17 @@
     margin-top: 30px;
 
     h2 {
-        margin-bottom: 10px;
         line-height: 1;
+    }
+
+    .buttons {
+        line-height: 48px;
+        margin-top: 24px;
+
+        a {
+            font-size: 24px;
+        }
+
     }
 }
 
@@ -260,6 +269,10 @@
 }
 
 .contact-list,
+html[dir="rtl"] .social-media-list {
+    direction: ltr;
+    text-align: right;
+}
 .social-media-list {
     list-style: none;
     margin-left: 0;
@@ -335,6 +348,7 @@
 }
 
 .post-list {
+    direction: ltr;
     margin-left: 0;
     list-style: none;
 

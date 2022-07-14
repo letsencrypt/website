@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2020-01-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Vi rekommenderar verkligen att du testar mot vår testmiljö innan du använder
 produktionsmiljön. På så sätt kan du få saker att funka innan riktiga
@@ -24,8 +24,7 @@ testmiljön. Observera att v2-testmiljön kräver en v2-kompatibel ACME-klient.
 
 # Taktbegränsningar
 
-Testmiljön använder samma regler som {{<link "produktionsmiljön"
-"/docs/rate-limits" >}} fast med följande undantag:
+Testmiljön använder samma regler som [produktionsmiljön](/docs/rate-limits) fast med följande undantag:
 
 * **Antal certifikat per registrerad domän**-gränsen är 30000 per vecka
 * **Certifikatdublett**-gränsen är 30000 per vecka
@@ -37,10 +36,10 @@ Testmiljön använder samma regler som {{<link "produktionsmiljön"
 # Rotcertifikat
 
 Testmiljöns mellancertifikat (["Fake LE Intermediate
-X1"](/certs/fakeleintermediatex1.pem)) är utfärdat av ett rotcertifikat som
+X1"](/certs/staging/letsencrypt-stg-int-r3.pem)) är utfärdat av ett rotcertifikat som
 **inte** är betrott av webbläsare och klienter. Om du vill modifiera en
 testklient att lita på testmiljön i testsyfte så kan du göra det genom att
-lägga till ["Fake LE Root X1"](/certs/fakelerootx1.pem)-certifikatet till din
+lägga till ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem)-certifikatet till din
 lista över betrodda certifikat.  Viktigt: Lägg inte till testrot- eller
 mellancertifikat till en lista över betrodda certifikat som du använder för
 vanlig surf eller andra aktiviteter eftersom de inte är granskade eller håller
@@ -49,8 +48,7 @@ använda för annat än testning.
 
 # Certifikattransparens
 
-Testmiljön skickar förcertifikat till Let's Encrypts {{<link "Testflume"
-"/docs/ct-logs" >}} och Googles
+Testmiljön skickar förcertifikat till Let's Encrypts [Testflume](/docs/ct-logs) och Googles
 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)
 CT-testloggar och inkluderar de returnerade SCT:erna (signerade
 certifikattidsangivelser) i de utfärdade certifikaten.

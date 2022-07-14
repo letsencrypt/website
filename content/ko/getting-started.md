@@ -3,9 +3,9 @@ title: 시작하기
 slug: getting-started
 top_graphic: 3
 date: 2019-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 웹 사이트에서 HTTPS를 사용하려면 CA(인증 기관)에서 인증서(파일 유형)를 가져와야 합니다. Let's Encrypt는 CA입니다. Let's Encrypt에서 웹 사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어를 시연해야 합니다. Let's Encrypt에서는 일반적으로 웹 호스트에서 실행되는 [ACME 프로토콜](https://tools.ietf.org/html/rfc8555)을 사용하는 소프트웨어를 사용하여 이 작업을 수행합니다.
 
@@ -16,9 +16,9 @@ date: 2019-12-21
 쉘 액세스 권한이 있는 대부분의 사용자는 [Certbot] ACME 클라이언트를 사용하는 것이 좋습니다. 다운타임 없이 인증서 발급 및 설치를 자동화할 수 있습니다. 또한 자가변성을 원하지 않는 사람들을 위한 전문적 모드도 갖추고 있습니다. 사용하기 쉽고, 많은 운영 체제에서 작동하며, 문서화가 매우 우수합니다. [
 Certbot 웹 사이트 방문하기][Certbot]은(는) 운영 체제 및 웹 서버에 대한 사용자 지정 지침을 제공합니다.
 
-[Certbot]이 사용자의 요구를 충족하지 못하거나 다른 방법을 시도하려는 경우 {{<link "많은 ACME 클라이언트를 선택할 수 있습니다" "/docs/client-options" >}}. ACME 클라이언트 소프트웨어를 선택한 후 계속하려면 해당 클라이언트의 설명서를 참조합니다.
+[Certbot]이 사용자의 요구를 충족하지 못하거나 다른 방법을 시도하려는 경우 [많은 ACME 클라이언트를 선택할 수 있습니다](/docs/client-options). ACME 클라이언트 소프트웨어를 선택한 후 계속하려면 해당 클라이언트의 설명서를 참조합니다.
 
-다른 ACME 클라이언트를 사용하는 경우, {{<link "준비 환경" "/docs/staging-environment" >}}을 사용하여 {{<link "속도 제한" "/docs/rate-limits" >}}에 도달하지 않도록 합니다.
+다른 ACME 클라이언트를 사용하는 경우, [준비 환경](/docs/staging-environment)을 사용하여 [속도 제한](/docs/rate-limits)에 도달하지 않도록 합니다.
 
 [Certbot]: https://certbot.eff.org/  "Certbot"
 

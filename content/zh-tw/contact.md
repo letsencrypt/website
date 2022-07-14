@@ -21,7 +21,7 @@ menu:
 
 ## 郵件列表
 
-有關各種技術郵件列表的訊息，請訪問我們的{{<link "參與" "/getinvolved" >}}頁面。
+有關各種技術郵件列表的訊息，請訪問我們的[參與](/getinvolved)頁面。
 
 ## 安全問題
 
@@ -37,9 +37,9 @@ menu:
 pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [A] [expires: 2020-09-20]
-sub   rsa4096 2015-11-24 [S] [expires: 2020-09-20]
+sub   rsa4096 2015-11-24 [E] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [A] [expires: 2021-09-21]
+sub   rsa4096 2015-11-24 [S] [expires: 2021-09-21]
 ```
 
 您可以在此處下載 [GPG 公鑰](/security_letsencrypt.org-publickey.asc)，或使用您喜歡的密鑰伺服器。

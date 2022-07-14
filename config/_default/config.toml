@@ -25,12 +25,12 @@ crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
 time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
-time_format_default = "Jan 2, 2006"
+time_format_default = ":date_medium"
 
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-show_fundraiser = false
+show_fundraiser = true
 
 # Be explicit about the output formats. We only want an RSS feed for the home page.
 [outputs]
@@ -59,7 +59,13 @@ unsafe = true
 # To keep § ids identical after the migration from blackfriday to goldmark
 autoHeadingIDType = "blackfriday"
 
+# https://gohugo.io/getting-started/configuration-markup#highlight
+# https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages
+# To update /src/css/_syntax-highlighting.scss:
+# - https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css
+# - https://xyproto.github.io/splash/docs/all.html
+# (with dark-mode in mind)
 [markup.highlight]
-# There is an escaping bug with blackFriday and highlight. See https://discourse.gohugo.io/t/missing-escaping-in-code-blocks/22465
-codeFences = false
-
+# To avoid inline styles
+noClasses = false
+guessSyntax = false

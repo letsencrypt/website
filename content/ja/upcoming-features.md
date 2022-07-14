@@ -3,9 +3,9 @@ title: 今後追加される機能
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2019-07-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## 複数の観点からの検証
 
@@ -21,7 +21,7 @@ lastmod: 2019-07-03
 
 * 有効化: 2019年5月15日
 
-私たちは{{<link "証明書の透明性のログ" "/docs/ct-logs" >}}を運用し始めました。
+私たちは[証明書の透明性のログ](/docs/ct-logs)を運用し始めました。
 
 ## TLS ALPN チャレンジのサポート
 

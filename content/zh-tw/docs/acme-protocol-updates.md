@@ -3,9 +3,9 @@ title: ACME 協定更新紀錄
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 [IETF 標準](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html)下的 ACME 協定，[RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)，是 Let's Encrypt 運作的基石。
 

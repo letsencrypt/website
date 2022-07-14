@@ -1,0 +1,13 @@
+title = "Let's Encrypt"
+contentDir = "content/fi"
+languageName = "Suomi"
+languageCode = "fi"
+beforeColon = ""
+weight = 275
+description = """
+  Let's Encrypt on ilmainen, automatisoitu, ja avoin varmenteita myöntävä organisaatio, jonka on perustanut voittoa tavoittelematon organisaatio <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|.|"
+viewInThatLanguage = "Katso suomeksi"

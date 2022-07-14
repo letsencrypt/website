@@ -1,0 +1,13 @@
+.waiting {
+    border: 10px solid lightgray;
+    border-top: 10px solid dodgerblue;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    animation: waiting 2s linear infinite;
+}
+
+@keyframes waiting {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
