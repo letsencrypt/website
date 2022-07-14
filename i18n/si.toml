@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "වියමන අඩවි <span>දශලක්ෂ 260</span> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
+other = "වියමන අඩවි <span>දශලක්‍ෂ 260</span> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
 
 [home_hero_getting_started]
 other = "පටන්ගන්න"
@@ -23,16 +23,16 @@ other = "සටහන්පත වෙතින්"
 other = "තව කියවන්න"
 
 [subscribe_rss]
-other = '<a href="{{ .Permalink }}">RSS මගින්</a> අනුසන් කරන්න'
+other = '<a href="{{ .Permalink }}">RSS</a> අනුසන් කරන්න'
 
 [footer_support_us]
-other = "වඩාත් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට ගරු කරන වියමන කට සහාය වන්න."
+other = "වඩාත් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට ගරු කරන වියමනකට සහාය වන්න."
 
 [footer_donate]
 other = "පරිත්‍යාග"
 
 [footer_mailing]
-other = "වෙත සියලුම තැපැල් හෝ විමසීම් යවන්න:"
+other = "වෙත සියළුම තැපැල් හෝ විමසීම් යවන්න:"
 
 [footer_policies]
 other = """
@@ -73,6 +73,9 @@ other = "භාෂා"
 [view_in_english]
 other = "ඉංග්‍රීසියෙන් දකින්න"
 
+[view_in_xxx]
+other = "සිංහලෙන් දකින්න"
+
 [old_version]
 other = "සටහන: පරිවර්තනයෙන් පසු ඉංග්‍රීසි අනුවාදය යාවත්කාල වී ඇත"
 
@@ -101,7 +104,7 @@ other = "ක්‍රියාත්මක ගණන"
 other = "දිනකට නිකුත් කිරීම්"
 
 [graph_all_users]
-other = "සියලුම පරිශීලකයින්"
+other = "සියළුම පරිශීලකයින්"
 
 [graph_usa_users]
 other = "එ.ජන. පරිශීලකයින්"
@@ -134,7 +137,7 @@ other = "ප්‍රසිද්ධ යතුර"
 other = "සටහනේ හැඳු."
 
 [certificate_transparency_state]
-other = "තත්වය"
+other = "තත්‍වය"
 
 [certificate_transparency_window_start]
 other = "කවුළුව ආරම්භය"
@@ -161,10 +164,10 @@ other = "අනුග්‍රාහක සංවර්ධකගේ තොරත
 other = "වත්මන් ACME කටුපිටපත අතර වෙනස්කම්"
 
 [acme_divergences_rfc]
-other = "ACME RFC අතර වෙනස්කම්"
+other = "ACME RFC වෙතින් වෙනස්කම්"
 
 [onboarding_customers]
-other = "ලෙට්'ස් එන්ක්‍රිප්ට් සහ ඒ.සී.එම්.ඊ. සමඟින් ඔබගේ පාරිභෝගිකයින් ඇතුල්කරන්න"
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් හා ඒ.සී.එම්.ඊ. සමඟින් පාරිභෝගිකයින් එක් කරන්න"
 
 [paypal_donate_alt]
 other = "පේපෑල් බොත්තම සමඟින් පරිත්‍යාග"
