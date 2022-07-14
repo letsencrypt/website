@@ -27,3 +27,9 @@ name = "Karir"
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+[[main]]
+name = "Menjadi Sponsor"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"

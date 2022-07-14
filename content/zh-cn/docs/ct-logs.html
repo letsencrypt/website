@@ -6,43 +6,94 @@ lastmod: 2020-02-25
 show_lastmod: 1
 ---
 
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >证书透明度（CT）日志</a
+  >是用于记录和监视 TLS 证书颁发的系统。CT
+  极大地增强了人们监控和研究证书颁发的能力，这些功能使 CA 生态系统和 Web
+  安全性得到了大量改进。因此，CT 正迅速成为关键基础设施。
+</p>
 
-<p><a href="https://www.certificate-transparency.org/what-is-ct">证书透明度（CT）日志</a>是用于记录和监视 TLS 证书颁发的系统。CT 极大地增强了人们监控和研究证书颁发的能力，这些功能使 CA 生态系统和 Web 安全性得到了大量改进。因此，CT 正迅速成为关键基础设施。</p>
+<p>
+  Let's Encrypt 将我们发出的所有证书提交给 CT
+  日志。我们还运营着两个年度分片(annually sharded)的CT日志，分别名为<a
+    href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
+  >
+    Oak </a
+  >和Testflume。欢迎所有被公共信任的证书颁发机构提交证书至我们的日志。
+  我们的CT日志中已包含许多证书颁发机构的根证书。
+  若您的根证书没有包含在我们的日志中，请<a href="/contact"
+    >通过电子邮件联系我们</a
+  >以将新的根证书添加到我们的日志中。
+</p>
 
-<p>Let's Encrypt 将我们发出的所有证书提交给 CT 日志。我们还运营着两个年度分片(annually sharded)的CT日志，分别名为<a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"> Oak </a>和Testflume。欢迎所有被公共信任的证书颁发机构提交证书至我们的日志。 我们的CT日志中已包含许多证书颁发机构的根证书。 若您的根证书没有包含在我们的日志中，请<a href="/contact">通过电子邮件联系我们</a>以将新的根证书添加到我们的日志中。</p>
-
-<p>在我们的社区论坛的<a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">CT公告</a>类别中开启通知提醒，以查看有关CT日志的主要公告。</p>
+<p>
+  在我们的社区论坛的<a
+    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
+    >CT公告</a
+  >类别中开启通知提醒，以查看有关CT日志的主要公告。
+</p>
 
 <h2>资金来源</h2>
 
-<p>我们要感谢以下合作伙伴慷慨赞助 Let's Encrypt 的 CT 日志。如果您的组织希望帮助我们继续这项工作，请考虑<a href="/become-a-sponsor">捐赠或成为赞助商</a>。</p>
+<p>
+  我们要感谢以下合作伙伴慷慨赞助 Let's Encrypt 的 CT
+  日志。如果您的组织希望帮助我们继续这项工作，请考虑<a
+    href="https://www.abetterinternet.org/sponsor/"
+    >捐赠或成为赞助商</a
+  >。
+</p>
 
-<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
 
 <h2>架构</h2>
 
-<p>详见<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">"Let's Encrypt如何运行CT日志"</a>。</p>
+<p>
+  详见<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >"Let's Encrypt如何运行CT日志"</a
+  >。
+</p>
 
 <h2>日志监控</h2>
 
-<p>Let's Encrypt 开发了一个名为 <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> 的开源 CT 日志监控工具。我们使用此工具来监控我们自己的日志的稳定性和合规性，我们希望其他人也会发现它的实用性。</p>
+<p>
+  Let's Encrypt 开发了一个名为
+  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>
+  的开源 CT
+  日志监控工具。我们使用此工具来监控我们自己的日志的稳定性和合规性，我们希望其他人也会发现它的实用性。
+</p>
 
 <h2>CT 日志服务器</h2>
 
 {{< ct_logs data="production" >}}
-    <li>Oak已被添加至<a href="https://support.apple.com/en-us/HT209255">苹果</a>和<a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">谷歌</a>的CT项目中。</li>
-    <li>我们生产环境的API端点将证书提交至此处。</li>
+<li>
+  Oak已被添加至<a href="https://support.apple.com/en-us/HT209255">苹果</a>和<a
+    href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
+    >谷歌</a
+  >的CT项目中。
+</li>
+<li>我们生产环境的API端点将证书提交至此处。</li>
+{{< /ct_logs >}} {{< ct_logs data="testing" >}}
+<li>这些日志服务器中的SCT<b>不应该</b>被添加到被公共信任的证书中。</li>
+<li>
+  Let's Encrypt的生产和<a href="/docs/staging-environment">测试</a
+  >ACME端点环境都向Testflume提交证书，但是生产环境不使用该服务器产生的SCT。
+</li>
+<li>
+  我们将在此处测试<a href="http://github.com/google/trillian">Trillian</a>和<a
+    href="https://github.com/google/certificate-transparency-go"
+    >certificate-transparency-go</a
+  >的新版本后部署到生产环境中。
+</li>
+<li>Testflume接受的根证书列表包括所有Oak接受的根证书及其他测试用根证书。</li>
+<li>其他证书颁发机构可以使用Testflume进行测试。</li>
 {{< /ct_logs >}}
 
-{{< ct_logs data="testing" >}}
-    <li>这些日志服务器中的SCT<b>不应该</b>被添加到被公共信任的证书中。</li>
-    <li>Let's Encrypt的生产和<a href="/docs/staging-environment">测试</a>ACME端点环境都向Testflume提交证书，但是生产环境不使用该服务器产生的SCT。</li>
-    <li>我们将在此处测试<a href="http://github.com/google/trillian">Trillian</a>和<a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a>的新版本后部署到生产环境中。</li>
-    <li>Testflume接受的根证书列表包括所有Oak接受的根证书及其他测试用根证书。</li>
-    <li>其他证书颁发机构可以使用Testflume进行测试。</li>
-{{< /ct_logs >}}
-
-<br>
+<br />
 <h2>日志操作</h2>
 <p>要枚举特定CT日志服务器包含的根证书，您可以在所选终端中运行以下命令：</p>
 <pre>
@@ -51,7 +102,11 @@ $ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r
 done
 </pre>
 
-<p>证书颁发机构通常负责将证书提交至CT日志服务器。 如果您想尝试提交证书至CT日志服务器， 请先从我们喜欢的网站获取PEM格式的证书。 请复制以下代码块并粘贴到您的终端内。</p>
+<p>
+  证书颁发机构通常负责将证书提交至CT日志服务器。
+  如果您想尝试提交证书至CT日志服务器， 请先从我们喜欢的网站获取PEM格式的证书。
+  请复制以下代码块并粘贴到您的终端内。
+</p>
 <pre>
 $ echo | \
 openssl s_client \
@@ -61,7 +116,20 @@ openssl s_client \
 sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
-<p>在提交证书前，必须按特殊结构对该证书进行JSON编码。 您可以使用<a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>提供的JSON生成器来执行此任务。 crt.sh将返回一个JSON捆绑包。 请将该JSON包下载到您的计算机内，您也可以按需求重命名该文件， 之后使用以下命令来添加证书链(<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 第4章第1小节</a>)以便将证书提交至CT日志。 该步骤会输出一个实际是<a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>的签名。 看下文以获取更多关于签名的信息。</p>
+<p>
+  在提交证书前，必须按特殊结构对该证书进行JSON编码。 您可以使用<a
+    href="https://crt.sh/gen-add-chain"
+    >https://crt.sh/gen-add-chain</a
+  >提供的JSON生成器来执行此任务。 crt.sh将返回一个JSON捆绑包。
+  请将该JSON包下载到您的计算机内，您也可以按需求重命名该文件，
+  之后使用以下命令来添加证书链(<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962 第4章第1小节</a
+  >)以便将证书提交至CT日志。 该步骤会输出一个实际是<a
+    href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >SCT</a
+  >的签名。 看下文以获取更多关于签名的信息。
+</p>
 <pre>
 $ curl \
     -X POST \
@@ -72,13 +140,22 @@ $ curl \
 {"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
 </pre>
 
-<p>为了确认CT日志是由Oak 2020碎片签名的，我们使用上面命令中的id字段，并通过以下命令运行它。 结果将输出CT日志的日志ID。</p>
+<p>
+  为了确认CT日志是由Oak
+  2020碎片签名的，我们使用上面命令中的id字段，并通过以下命令运行它。
+  结果将输出CT日志的日志ID。
+</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
 </pre>
 
-<p>我们可以使用签名字段验证证书是否已提交到日志服务器。 您可以使用我们的<a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT详解</a>以进一步解码该字段</p>
+<p>
+  我们可以使用签名字段验证证书是否已提交到日志服务器。 您可以使用我们的<a
+    href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >SCT详解</a
+  >以进一步解码该字段
+</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4

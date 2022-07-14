@@ -6,29 +6,62 @@ lastmod: 2019-11-20
 show_lastmod: 1
 ---
 
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >証明書の透明性 (Certificate Transparency; CT)</a
+  >
+  とは、TLS 証明書の発行のログを記録し、監視するためのシステムです。これまで CT
+  は、証明書の発行の監視・調査を誰もができるようにすることで、CA
+  のエコシステムとウェブのセキュリティに非常に多くの改善をもたらしてきました。その結果、現在では
+  CT は欠かせないインフラとなってきています。
+</p>
 
-<p><a href="https://www.certificate-transparency.org/what-is-ct">証明書の透明性 (Certificate Transparency; CT)</a> とは、TLS 証明書の発行のログを記録し、監視するためのシステムです。これまで CT は、証明書の発行の監視・調査を誰もができるようにすることで、CA のエコシステムとウェブのセキュリティに非常に多くの改善をもたらしてきました。その結果、現在では CT は欠かせないインフラとなってきています。</p>
-
-<p>Let's Encrypt では、発行したすべての証明書を CT ログに記録しています。また、自分たちでも CT ログを運営しており、パブリックに信頼されたすべての証明書の認証局は、私たちに CT ログを送信することができます。</p>
+<p>
+  Let's Encrypt では、発行したすべての証明書を CT
+  ログに記録しています。また、自分たちでも CT
+  ログを運営しており、パブリックに信頼されたすべての証明書の認証局は、私たちに
+  CT ログを送信することができます。
+</p>
 
 <h2>ファンディング</h2>
 
-<p>Let's Encrypt の CT ログを寛大に支援してくれている以下のパートナーに感謝します。私たちがこの仕事を継続できるよう、もしあなたの組織が支援してくれるなら、ぜひ<a href="/become-a-sponsor">スポンサーになる、または、寄付する</a>ことを検討してください。よろしくお願いします。</p>
+<p>
+  Let's Encrypt の CT
+  ログを寛大に支援してくれている以下のパートナーに感謝します。私たちがこの仕事を継続できるよう、もしあなたの組織が支援してくれるなら、ぜひ<a
+    href="https://www.abetterinternet.org/sponsor/"
+    >スポンサーになる、または、寄付する</a
+  >ことを検討してください。よろしくお願いします。
+</p>
 
-<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
 
 <h2>アーキテクチャ</h2>
 
-<p>私たちの CT ログは、Google の <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS インフラ上で実行することで構築しています。ジョブスケジューリングには <a href="https://kubernetes.io/">Kubernetes</a> のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS を使用しています。さらに詳しい情報は、<a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">「How Let's Encrypt Runs CT Logs」</a>という記事で説明しています。</p>
+<p>
+  私たちの CT ログは、Google の
+  <a href="https://github.com/google/trillian/">Trillian ソフトウェア</a>を AWS
+  インフラ上で実行することで構築しています。ジョブスケジューリングには
+  <a href="https://kubernetes.io/">Kubernetes</a>
+  のコンテナ・オーケストレーションを使用しており、データベースの管理には AWS RDS
+  を使用しています。さらに詳しい情報は、<a
+    href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >「How Let's Encrypt Runs CT Logs」</a
+  >という記事で説明しています。
+</p>
 
 <h2>ログの監視</h2>
 
-<p>Let's Encrypt はオープンソースの CT ログ監視ツール <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> を開発しています。私たちはこのツールを使用して自分たちのログの安定性とコンプライアンスを監視しています。みなさんにもこのツールが役に立つことを願っています。</p>
+<p>
+  Let's Encrypt はオープンソースの CT ログ監視ツール
+  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>
+  を開発しています。私たちはこのツールを使用して自分たちのログの安定性とコンプライアンスを監視しています。みなさんにもこのツールが役に立つことを願っています。
+</p>
 
 <h2>CT ログ</h2>
 
-{{< ct_logs data="production" >}}
-{{< /ct_logs >}}
-
-{{< ct_logs data="testing" >}}
-{{< /ct_logs >}}
+{{< ct_logs data="production" >}} {{< /ct_logs >}} {{< ct_logs data="testing"
+>}} {{< /ct_logs >}}

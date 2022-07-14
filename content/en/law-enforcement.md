@@ -42,7 +42,7 @@ Some account data, such as contact email addresses, remain active and searchable
 
 ## Non Disclosure Orders
 
-Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (assuming the subscriber has provided a contact email address), unless we are prohibited from doing so by law. We also provide delayed notice upon expiration of a specific non-disclosure period in a court order. 
+Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (assuming the subscriber has provided a contact email address), unless we are prohibited from doing so by law. We may also provide delayed notice upon expiration of a specific non-disclosure period in a court order.
 
 If you believe that notification would jeopardize an investigation, you should obtain an appropriate court order or other valid process establishing that notice is prohibited.
 

@@ -3,7 +3,7 @@ title: שרשרת אמון
 linkTitle: שרשרת אמון (אישורים עליונים ומתווכים)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-04-29
+lastmod: 2021-09-24
 show_lastmod: 1
 ---
 
@@ -29,7 +29,6 @@ show_lastmod: 1
   * [בתוקף](https://valid-isrgrootx1.letsencrypt.org/)
   * [נשלל](https://revoked-isrgrootx1.letsencrypt.org/)
   * [פג תוקפו](https://expired-isrgrootx1.letsencrypt.org/)
-
 * ISRG Root X2
   * [בתוקף](https://valid-isrgrootx2.letsencrypt.org/)
   * [נשלל](https://revoked-isrgrootx2.letsencrypt.org/)
@@ -37,7 +36,7 @@ show_lastmod: 1
 
 # אישורים מתווכים
 
-במצב רגיל, אישורים שהונפקו על ידי Let’s Encrypt יגיעו מ־„R3”, אישור תווך מסוג RSA. הנפקנו גם אישור תווך מסוג ECDSA ‏(„E1”) שזמין לשימוש לחשבונות ברשימת היתר. ניתן לקרוא עוד על האופן בו אנו חותמים אישורי ECDSA ואיך להוסיף את החשבון שלך לרשימת ההיתר ב[פורומים הקהילתיים](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679).
+במצב רגיל, אישורים שהונפקו על ידי Let’s Encrypt יגיעו מ־„R3”, אישור תווך מסוג RSA. נכון להיום, הנפקה מ־„E1”, אישור תווך מסוג ECDSA, אפשרית רק עבור מפתחות מנויי ECDSA עבור [חשבונות שהורשו במיוחד](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). בעתיד, ההנפקה מ־„E1” תהיה זמינה לכולם.
 
 אישורי התווך הנוספים שלנו („R4” ו־„E2”) שמורים לשיקום מתקלות חמורות והשימוש בהם ייעשה רק אם נאבד את היכולת להנפיק עם אישורי התווך העיקריים שלנו. איננו משתמשים עוד באישורי תווך X1,‏ X2,‏ X3 ו־X4.
 
@@ -46,14 +45,14 @@ IdenTrust חתמו באופן צולב את אישורי התווך שלנו מ�
 * פעיל
   * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
     * [חתימה מצד ISRG Root X1](https://crt.sh/?id=3334561879)‏: [der](/certs/lets-encrypt-r3.der),‏ [pem](/certs/lets-encrypt-r3.pem),‏ [txt](/certs/lets-encrypt-r3.txt)
-    * [חתימה צולבת מצד IdenTrust](https://crt.sh/?id=3479778542)‏: [der](/certs/lets-encrypt-r3-cross-signed.der),‏ [pem](/certs/lets-encrypt-r3-cross-signed.pem),‏ [txt](/certs/lets-encrypt-r3-cross-signed.txt)
-* פעיל
+    * [חתימה צולבת מצד IdenTrust](https://crt.sh/?id=3479778542)‏: [der](/certs/lets-encrypt-r3-cross-signed.der),‏ [pem](/certs/lets-encrypt-r3-cross-signed.pem),‏ [txt](/certs/lets-encrypt-r3-cross-signed.txt) (לא תקף עוד)
+* פעיל, זמינות מוגבלת
   * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`)
     * [חתימה מצד ISRG Root X2](https://crt.sh/?id=3334671964)‏: [der](/certs/lets-encrypt-e1.der),‏ [pem](/certs/lets-encrypt-e1.pem),‏ [txt](/certs/lets-encrypt-e1.txt)
 * גיבוי
   * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`)
     * [חתימה מצד ISRG Root X1](https://crt.sh/?id=3334561877)‏: [der](/certs/lets-encrypt-r4.der),‏ [pem](/certs/lets-encrypt-r4.pem),‏ [txt](/certs/lets-encrypt-r4.txt)
-    * [חתימה צולבת מצד IdenTrust](https://crt.sh/?id=3479778543)‏: [der](/certs/lets-encrypt-r4-cross-signed.der),‏ [pem](/certs/lets-encrypt-r4-cross-signed.pem),‏ [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+    * [חתימה צולבת מצד IdenTrust](https://crt.sh/?id=3479778543)‏: [der](/certs/lets-encrypt-r4-cross-signed.der),‏ [pem](/certs/lets-encrypt-r4-cross-signed.pem),‏ [txt](/certs/lets-encrypt-r4-cross-signed.txt) (לא תקף עוד)
   * Let's Encrypt E2 (`ECDSA P-384, O = Let's Encrypt, CN = E2`)
     * [חתימה מצד ISRG Root X2](https://crt.sh/?id=3334671963)‏: [der](/certs/lets-encrypt-e2.der),‏ [pem](/certs/lets-encrypt-e2.pem),‏ [txt](/certs/lets-encrypt-e2.txt)
 * בדימוס
@@ -80,7 +79,7 @@ IdenTrust חתמו באופן צולב את אישורי התווך שלנו מ�
 
 העובדה שיש חתימות צולבת משמעה שלכל אחד מאישור התווך שלנו מסוג RSA יש שני אישורים שמייצגים את אותו מפתח החתימה. האחת חתומה על ידי DST Root CA X3, והשנייה חתומה על ידי ISRG Root X1. הדרך הקלה ביותר להבדיל בין השתיים היא על ידי התבוננות בשדה המנפיק שלהן.
 
-בעת הגדרת שרת אינטרנט, מפעיל השרת מגדיל לא רק את אישור יישות הקצה, אלא גם את רשימת אישורי התווך כדי לסייע לדפדפנים לאמת שלאישור יישות הקצה יש שרשרת מהימנות שמובילה לאישור עליון מהימן. כמעט כל מפעילי השרתים יבחרו להגיש שרשרת שכוללת את אישור התווך עם הנושא „R3” והמנפיק „DST Root CA X3”. תכנית הלקוח המומלצת על ידי Let's Encrypt בשם [Certbot](https://certbot.org), תיישם את ההגדרות האלו באופן שקוף.
+בעת הגדרת שרת אינטרנט, מפעיל השרת מגדיל לא רק את אישור יישות הקצה, אלא גם את רשימת אישורי התווך כדי לסייע לדפדפנים לאמת שלאישור יישות הקצה יש שרשרת מהימנות שמובילה לאישור עליון מהימן. כמעט כל מפעילי השרתים יבחרו להגיש שרשרת שכוללת את אישור התווך עם הנושא „R3” והמנפיק „ISRG Root X1”. תכנית הלקוח המומלצת של Let's Encrypt בשם [Certbot](https://certbot.org), תהפוך את ההגדרות האלו לשקופות מבחינתך.
 
 ## אישורים עליונים
 בדומה לאישורי תווך, אפשר לחתום באופן צולב גם אישורים עליונים, בדרך כלל כדי לשפר תאימות מול הלקוחות. ה־ECDSA העליון שלנו, ISRG Root X2 נוצר בחורף 2020 והוא האישור העליון להיררכיית ה־ECDSA. הוא מיוצג על ידי שני אישורים: אחד שנחתם עצמאית ואחד שנחתם על ידי ISRG Root X1.
