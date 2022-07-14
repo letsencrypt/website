@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2019-06-04
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 為了確保大多數使用者的公平性，Let's Encrypt 具有憑證操作上的速率限制，我們相信這些的限制能滿足大多數用戶的需求。大型機構可以逐步增加他們憑證數量，而不需要受到 Let's Encrypt 的干預。
 

@@ -6,12 +6,10 @@ url = "https://community.letsencrypt.org/"
 name = "תרומה"
 weight = 30
 identifier = "donate"
-url = "/he/donate/"
 [[main]]
 name = "עלינו"
 weight = 40
 identifier = "about"
-url = "/he/about/"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
@@ -30,3 +28,9 @@ weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+[[main]]
+name = "מתן חסות"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"

@@ -3,9 +3,9 @@ title: Começando a Usar
 slug: getting-started
 top_graphic: 3
 date: 2019-12-21
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Para ativar o HTTPS em seu site, você precisa obter um certificado (um tipo de arquivo) 
 provido por uma Autoridade Certificadora (AC). A Let's Encrypt é uma AC. Para obter um

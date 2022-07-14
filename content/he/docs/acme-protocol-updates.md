@@ -3,9 +3,9 @@ title: עדכוני פרוטוקול ACME
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 פרוטוקול ACME לפי [תקינת IETF (כוח המשימה ההנדסי של האינטרנט)](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html), [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), הוא אבן היסוד לתצורת העבודה של Let's Encrypt.
 

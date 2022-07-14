@@ -3,7 +3,7 @@ title: About Let's Encrypt
 linkTitle: Let's Encrypt
 slug: about
 top_graphic: 1
-lastmod: 2019-11-11
+lastmod: 2021-02-12
 menu:
   main:
     weight: 10
@@ -14,16 +14,16 @@ Let's Encrypt is a free, automated, and open certificate authority (CA), run for
 
 We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.
 
-You can read about our most recent year in review by downloading our annual report ([Desktop](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf), [Mobile](https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf)).
+You can read about our most recent year in review by downloading our [annual report](https://www.abetterinternet.org/annual-reports/).
 
 The key principles behind Let's Encrypt are:
 
-* <strong>Free:</strong> Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
+* **Free:** Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate
       at zero cost.
-* <strong>Automatic:</strong> Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.
-* <strong>Secure:</strong> Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.
-* <strong>Transparent:</strong> All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
-* <strong>Open:</strong> The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
-* <strong>Cooperative:</strong> Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
+* **Automatic:** Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.
+* **Secure:** Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.
+* **Transparent:** All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
+* **Open:** The automatic issuance and renewal protocol [is published](https://tools.ietf.org/html/rfc8555) as an open standard that others can adopt.
+* **Cooperative:** Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.
 
 We have a page with more detailed information about [how the Let's Encrypt CA works](/how-it-works).

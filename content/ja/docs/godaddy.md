@@ -4,9 +4,9 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 私たちは GoDaddy で Let's Encrypt を取得する方法についてたくさんの質問を受けてきました。GoDaddy でウェブホスティングを共有している場合、現在は Let's Encrypt 証明書を手動でインストールするのは非常に難しい状態であるため、GoDaddy では Let's Encrypt を使用するのをおすすめしません。これは、GoDaddy が証明書発行と更新のための [ACME プロトコル][1]をサポートしないためです。代わりに、GoDaddy は自動更新する証明書を提供していますが、[有料機能][2]です。
 

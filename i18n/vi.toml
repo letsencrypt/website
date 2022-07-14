@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "Một tổ chức cấp chứng nhận phi lợi nhuận cung cấp chứng nhận TLS cho <span>200 triệu</span> websites."
+other = "Một tổ chức cấp chứng nhận phi lợi nhuận cung cấp chứng nhận TLS cho <span>260 triệu</span> websites."
 
 [home_hero_getting_started]
 other = "Bắt Đầu"
@@ -13,7 +13,7 @@ other = "Đóng Góp"
 other = "Nhà Tài Trợ"
 
 [home_hero_annual_report]
-other = "Đọc Báo Cáo Thường Niên năm 2019 của Chúng Tôi"
+other = "Đọc Báo Cáo Thường Niên năm <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> của Chúng Tôi"
 
 [home_hero_desktop]
 other = "Desktop"
@@ -39,10 +39,13 @@ other = "Hỗ trợ một trang web an toàn và bảo mật hơn."
 [footer_donate]
 other = "Đóng Góp"
 
+[footer_mailing]
+other = "Gửi tất cả thư và câu hỏi tới:"
+
 [footer_policies]
 other = """
 Xem <a href="/vi/privacy/">chính sách bảo mật</a> của chúng tôi.<br>
-Xem <a href="/vi/trademarks/">chính sách nhãn hiệu</a> của chúng tôi.
+Xem <a href="https://www.abetterinternet.org/trademarks/">chính sách nhãn hiệu</a> của chúng tôi.
 """
 
 [linux_foundation_trademark]
@@ -77,11 +80,6 @@ other = "Ngôn Ngữ"
 
 [view_in_english]
 other = "Xem bằng tiếng Anh"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "Xem bằng tiếng Việt"
 
 [old_version]
 other = "Lưu ý: Phiên bản tiếng Anh đã được cập nhật kể từ khi dịch"

@@ -4,9 +4,9 @@ slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
 lastmod: 2020-02-24
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Lorsque vous recevez un certificat de Let's Encrypt, nos serveurs valident que vous contrôlez les noms de domaine dans ce certificat à l'aide de «défis» tel que défini par le standard ACME. La plupart du temps, cette validation est gérée automatiquement par votre client ACME, mais si vous devez faire certaines décisions de configuration plus complexes, il est utile d'en savoir plus à propos d'eux. Si vous n'êtes pas sûr de vous, choisissez les valeurs par défaut de votre client ou avec le défi HTTP-01.
 

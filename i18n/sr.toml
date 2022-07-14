@@ -30,10 +30,13 @@ other = "Podržite sigurniji internet koji poštuje privatnost"
 [footer_donate]
 other = "Doniraj"
 
+[footer_mailing]
+other = "Сва писма и упите шаљите на:"
+
 [footer_policies]
 other = """
 Pročitaj našu <a href="/sr/privacy/">politiku privatnosti</a>.<br>
-Pročitaj našu <a href="/sr/trademarks/">politiku brenda</a>.
+Pročitaj našu <a href="https://www.abetterinternet.org/trademarks/">politiku brenda</a>.
 """
 
 [linux_foundation_trademark]
@@ -65,11 +68,6 @@ other = "Jezik"
 
 [view_in_english]
 other = "Pročitaj na Engleskom"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Pročitaj na Srpskom"
 
 [old_version]
 other = "Napomena: Engleska verzija je izmenjena od poslednjeg prevoda na Srpski jezik"

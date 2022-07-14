@@ -1,7 +1,7 @@
 # See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
 
 [home_hero_title]
-other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>190 מיליון</span> אתרים."
+other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>260 מיליון</span> אתרים."
 
 [home_hero_getting_started]
 other = "איך מתחילים"
@@ -13,7 +13,7 @@ other = "תרומה"
 other = "מתן חסות"
 
 [home_hero_annual_report]
-other = "לקריאת הדוח לשנת 2019"
+other = "לקריאת <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>הדוח</a> לשנת 2021"
 
 [home_hero_desktop]
 other = "שולחן עבודה"
@@ -39,10 +39,13 @@ other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבד
 [footer_donate]
 other = "תרומה"
 
+[footer_mailing]
+other = "שלח את כל הדואר או השאלות אל:"
+
 [footer_policies]
 other = """
 לצפייה ב<a href="/privacy/">מדיניות הפרטיות</a> שלנו.<br>
-לצפייה ב<a href="/trademarks/">מדיניות זכויות היוצרים</a> שלנו.
+לצפייה ב<a href="https://www.abetterinternet.org/trademarks/">מדיניות זכויות היוצרים</a> שלנו.
 """
 
 [linux_foundation_trademark]
@@ -77,11 +80,6 @@ other = "שפות"
 
 [view_in_english]
 other = "מעבר לאנגלית"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "מעבר לעברית"
 
 [old_version]
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"

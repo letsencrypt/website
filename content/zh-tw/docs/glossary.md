@@ -3,9 +3,9 @@ title: 術語表
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <!--
 Note for translators:
@@ -175,6 +175,8 @@ Note for translators:
 {{% def id="wildcard" name="Wildcard Certificate" %}} 萬用字元憑證。可用於一級子域名下的憑證。例如：在憑證中的 [SAN](#def-SAN) 欄位中填入 `*.example.com`，表示該憑證可用於 `blog.example.com` 和 `www.example.com`，但是不可用於 `bork.bork.example.com` 或 `example.com`。在子域名中使用星星符號 (*) 來表示萬用字元。[Let's Encrypt](#def-LE) [自從 2018 年 3 月支援萬用字元憑證的申請](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579)。[維基百科](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} 定義了公開金鑰憑證格式的標準。[維基百科](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

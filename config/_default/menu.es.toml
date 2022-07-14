@@ -1,17 +1,15 @@
 [[main]]
 name = "Consigue Ayuda"
 weight = 20
-url = "https://community.letsencrypt.org/"
+url = "https://community.letsencrypt.org/c/help/ayuda-en-espanol/22"
 [[main]]
 name = "Donar"
 weight = 30
 identifier = "donate"
-url = "/es/donate/"
 [[main]]
 name = "Acerca De"
 weight = 40
 identifier = "about"
-url = "/es/about/"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
@@ -30,3 +28,9 @@ weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+[[main]]
+name = "Conviértete en un patrocinador"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"

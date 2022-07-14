@@ -4,9 +4,9 @@ linkTitle: Цепочка доверия (Корневые и промежуто
 slug: certificates
 top_graphic: 5
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # Корневые сертификаты
 

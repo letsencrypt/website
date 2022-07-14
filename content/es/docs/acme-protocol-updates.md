@@ -4,9 +4,9 @@ slug: acme-protocol-updates
 top_graphic: 1
 date: 2016-07-27
 lastmod: 2018-04-27
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 El protocolo ACME es el pilar de como Let's Encrypt funciona. Actualmente es un borrador y aún no es un RFC finalizado. A medida que la especificación del protocolo evoluciona con el tiempo Let's Encrypt implementará versiones actualizadas de ACME. Al hacerlo, seguridad será nuestra principal preocupación, seguido de cerca por compatibilidad con versiones anteriores.
 

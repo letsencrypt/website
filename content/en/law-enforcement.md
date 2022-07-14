@@ -1,7 +1,7 @@
 ---
 title: Law Enforcement Request Guidelines
 slug: law-enforcement
-lastmod: 2020-07-23
+lastmod: 2021-08-17
 do_not_translate: 1
 ---
 
@@ -42,7 +42,7 @@ Some account data, such as contact email addresses, remain active and searchable
 
 ## Non Disclosure Orders
 
-Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (assuming the subscriber has provided a contact email address), unless we are prohibited from doing so by law. We also provide delayed notice upon expiration of a specific non-disclosure period in a court order. 
+Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (assuming the subscriber has provided a contact email address), unless we are prohibited from doing so by law. We may also provide delayed notice upon expiration of a specific non-disclosure period in a court order.
 
 If you believe that notification would jeopardize an investigation, you should obtain an appropriate court order or other valid process establishing that notice is prohibited.
 
@@ -52,7 +52,7 @@ United States law enforcement agencies may send valid legal process or preservat
 
 [law-enforcement@letsencrypt.org](mailto:law-enforcement@letsencrypt.org)
 
-You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, 1 Letterman Drive, Suite D4700, San Francisco, CA 94129”, but please note that you are likely to receive a quicker response if you send it by email. 
+You may also mail the request to us at “Internet Security Research Group, ATTN: Law Enforcement Response Team, P.O. Box 18666, Minneapolis, MN 55418-0666”, but please note that you are likely to receive a quicker response if you send it by email.
 
 Please identify requested records with particularity and include (i) the name of the issuing authority and agent; (ii) an email address from a law enforcement domain; and (iii) a direct contact phone number.
 

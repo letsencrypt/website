@@ -3,9 +3,9 @@ title: Glossary
 slug: glossary
 top_graphic: 1
 date: 2018-12-30
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 <!--
 Note for translators:
@@ -174,6 +174,8 @@ Note for translators:
 {{% def id="wildcard" name="Wildcard Certificate" %}} Certificates valid for subdomains one level deep. For instance, a certificate containing a [SAN](#def-SAN) for `*.example.com` is valid for `blog.example.com` and `www.example.com` but **not** for `bork.bork.example.com` or `example.com`). A wildcard is indicated by an asterisk character (*) in place of a subdomain. [Let's Encrypt](#def-LE) [provides Wildcard certificates as of March 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} The standard defining the format of public key certificates. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
+
+{{% renderglossary %}}
 
 <link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>

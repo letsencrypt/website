@@ -3,9 +3,9 @@ title: ACME Protocol Updates
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 The [IETF-standardized](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME protocol, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), is the cornerstone of how Let's Encrypt works.
 

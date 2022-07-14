@@ -4,9 +4,9 @@ linkTitle: Chaîne de confiance (Certificats racine et intermédiaire)
 slug: certificates
 top_graphic: 5
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # Certificats racine
 

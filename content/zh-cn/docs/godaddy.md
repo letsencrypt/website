@@ -4,10 +4,8 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
-
-
-{{< lastmod >}}
 
 我们收到了很多关于如何在GoDaddy服务器内使用Let's Encrypt证书的问题。 目前GoDaddy共享主机很难安装Let's Encrypt证书，所以我们不建议您在GoDaddy服务内使用Let's Encrypt证书。 这是因为GoDaddy不支持使用[ACME协议][1]进行自动化的证书颁发和续签。 因为GoDaddy对自己的证书颁发机构签发的证书提供自动续订服务，这是一项[附加功能][2]。（注： GoDaddy证书为付费证书）
 

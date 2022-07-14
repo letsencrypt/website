@@ -1,23 +1,23 @@
 @charset 'utf-8';
 
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * .875;
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #000;
+$text-color: #000;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$secondary-color:  #1678d3;
+$brand-color: #2a7ae2;
+$secondary-color: #1678d3;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
-$on-palm:          730px;
-$on-laptop:        800px;
+$on-palm: 730px;
+$on-laptop: 800px;
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -48,16 +48,23 @@ $on-laptop:        800px;
   width: 1.5em;
 }
 
+.footnotes hr {
+  margin-bottom: 20px;
+}
+
+.blog-image-caption {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #888;
+}
+
+article.post-content p img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-'fonts',
-'pure',
-'pure-fix',
-'base',
-'layout',
-'nav',
-'syntax-highlighting',
-'donate',
-'fundraiser',
-'waiting'
-;
+@import "fonts", "pure", "pure-fix", "base", "layout", "nav",
+  "syntax-highlighting", "donate", "fundraiser", "waiting";
