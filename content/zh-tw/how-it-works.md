@@ -24,19 +24,13 @@ Let's Encrypt 透過公鑰辨識伺服器。當憑證管理軟體首次向 Let's
 
 此外，在驗證考驗中，Let's Encrypt 還提供了一個隨機數 (nonce)，要求憑證管理軟體必須用它所產生的私鑰，對隨機數進行簽名，以證明憑證管理軟體擁有這組金鑰對。
 
-<div class="howitworks-figure">
-<img alt="Requesting challenges to validate example.com"
-     src="/images/howitworks_challenge.png"/>
-</div>
+![Requesting challenges to validate example.com](/images/howitworks_challenge.png)
 
 讓我們假設，憑證管理軟體想要完成上文所提到的第二個任務。憑證管理軟體會建立一個文件並放在 `http://example.com` 網站上指定的位置，並使用私鑰對隨機數進行簽名。動作完成後，它會告知 CA 它已經準備好以進行驗證了。
 
 接著 CA 要驗證伺服器是否通過這個考驗。CA 會檢查隨機數上的簽名，並且下載在放網頁伺服器上的文件，以確認文件內容。
 
-<div class="howitworks-figure">
-<img alt="替 example.com 請求授權所需要的工作"
-     src="/images/howitworks_authorization.png"/>
-</div>
+![替 example.com 請求授權所需要的工作](/images/howitworks_authorization.png)
 
 如果對隨機數的簽名驗證通過，則這個考驗就算完成。這表示以公鑰作為識別的憑證管理軟體，有權管理 `example.com`。通常我們稱這個，由憑證管理軟體所使用，用來進行驗證的公私金鑰對為“授權金鑰對”。
 
@@ -49,14 +43,8 @@ Let's Encrypt 透過公鑰辨識伺服器。當憑證管理軟體首次向 Let's
 
 當 Let's Encrypt 接收到請求後，它會驗證這兩個簽名。如果驗證成功，CA 會使用 CSR 中的公鑰替 `example.com` 的憑證簽名，再將文件回傳給憑證管理軟體。
 
-<div class="howitworks-figure">
-<img alt="替 example.com 申請憑證"
-     src="/images/howitworks_certificate.png"/>
-</div>
+![替 example.com 申請憑證](/images/howitworks_certificate.png)
 
 註銷憑證的流程與申請流程類似。憑證管理軟體使用 `example.com` 的授權金鑰對替註銷請求簽名，接著 Let's Encrypt 會驗證該請求，如果請求通過驗證，它會將註銷訊息發佈到 OCSP (Online Certificate Status Protocol) 伺服器，以便讓瀏覽器等有關程式知道，他們不該信任已被註銷的憑證。
 
-<div class="howitworks-figure">
-<img alt="註銷 example.com 憑證的流程"
-     src="/images/howitworks_revocation.png"/>
-</div>
+![註銷 example.com 憑證的流程](/images/howitworks_revocation.png)

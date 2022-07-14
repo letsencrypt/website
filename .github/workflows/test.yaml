@@ -35,4 +35,3 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
-      - run: html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate --also-check-css --format text
