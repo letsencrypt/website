@@ -30,4 +30,9 @@ weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
-
+[[main]]
+name = "Bliv sponsor"
+weight = 40
+identifier = "bliv-sponsor"
+parent = "donere"
+url = "https://www.abetterinternet.org/sponsor/"
