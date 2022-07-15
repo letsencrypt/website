@@ -52,6 +52,8 @@
     <script src="/js/plotly-locale-it.js" defer></script>
 {{ else if eq "hu" .Page.Language.Lang }}
     <script src="/js/plotly-locale-hu.js" defer></script>
+{{ else if eq "uz" .Page.Language.Lang }}
+    <!-- plotly-locale-uz.js is not yet available -->
 {{ else }}
     {{ errorf "Missing plotly for lang %q in layouts/shortcodes/plotly.html" .Page.Language.Lang }}
 {{ end }}
