@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Qo‘llanma
 top_graphic: 1
 menu:
   main:
