@@ -49,10 +49,10 @@
 {{ else if eq "it" .Page.Language.Lang }}
     <script src="/js/plotly-locale-it.js" defer></script>
 {{ else if eq "fi" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-fi.js" defer></script>
+    <script src="/js/plotly-locale-it.js" defer></script>
 {{ else if eq "hu" .Page.Language.Lang }}
     <script src="/js/plotly-locale-hu.js" defer></script>
-{{ else if eq "da" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-da.js" defer></script>
+{{ else }}
+    {{ errorf "Missing plotly for lang %q in layouts/shortcodes/plotly.html" .Page.Language.Lang }}
 {{ end }}
 <script src="/js/stats.js" defer></script>
