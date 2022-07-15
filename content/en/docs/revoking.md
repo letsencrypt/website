@@ -1,5 +1,5 @@
 ---
-title: Revoking certificates
+title: Revoking Certificates
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
