@@ -14,7 +14,22 @@ When you revoke a Let's Encrypt certificate, Let's Encrypt will publish that rev
 
 To revoke a certificate with Let's Encrypt, you will use the [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), most likely through an ACME client like [Certbot](https://certbot.eff.org/). You will need to prove to Let’s Encrypt that you are authorized to revoke the certificate. There are three ways to do this: from the account that issued the certificate, using a different authorized account, or using the certificate private key.
 
-You should specify a [reason to revoke](https://en.wikipedia.org/wiki/Certificate_revocation_list#Reasons_for_revocation) via your ACME client; for example, [in Certbot](https://certbot.eff.org/docs/using.html#revoking-certificates). For reasons other than `keyCompromise`, you may use any of the three methods. For `keyCompromise`, you will need to use the certificate private key.
+# Specifying a reason code
+
+When revoking a certificate, Let's Encrypt subscribers should select a reason code as follows:
+
+* No reason provided or `unspecified` (RFC 5280 CRLReason #0)
+  - When the reason codes below do not apply to the revocation request, the subscriber must not provide a reason code other than "unspecified".
+* `keyCompromise` (RFC 5280 CRLReason #1)
+  - The certificate subscriber must choose the "keyCompromise" revocation reason when they have reason to believe that the private key of their certificate has been compromised, e.g. an unauthorized person has had access to the private key of their certificate.
+  - If the revocation request is signed using the Certificate private key, rather than a Subscriber account private key, Let's Encrypt may ignore the revocation reason in the request and set the reason to "keyCompromise".
+* `superseded` (RFC 5280 CRLReason #4)
+  - The certificate subscriber should choose the "superseded" revocation reason when they request a new certificate to replace their existing certificate.
+* `cessationOfOperation` (RFC 5280 CRLReason #5)
+  - The certificate subscriber should choose the "cessationOfOperation" revocation reason when they no longer own all of the domain names in the certificate or when they will no longer be using the certificate because they are discontinuing their website.
+  - If the revocation request is from a Subscriber account which did not order the certificate in question, but has demonstrated control over all identifiers in the certificate, Let's Encrypt may ignore the revocation reason in the request and set the reason to "cessationOfOperation".
+
+Revocation requests that specify any reason code other than those detailed above will be rejected.
 
 # From the account that issued the certificate
 
