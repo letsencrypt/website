@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Une autorité de certification à but non lucratif fournissant leurs certificats TLS à <span>260 millions</span> de sites Web."
+other = "Une autorité de certification à but non lucratif fournissant des certificats TLS à <span>225 millions</span> de sites Web."
 
 [home_hero_getting_started]
 other = "Commencer"
@@ -40,7 +38,7 @@ other = "Soutenez un Web plus sûr et plus respectueux de la vie privée."
 other = "Faire un don"
 
 [footer_mailing]
-other = "Envoyez tout courrier ou toute demande à:"
+other = "Envoyer tous les emails ou les demandes de renseignements à :"
 
 [footer_policies]
 other = """
@@ -69,6 +67,9 @@ other = "Platine"
 [gold]
 other = "Or"
 
+[gold_basic]
+other = "Or Basic"
+
 [silver]
 other = "Argent"
 
@@ -82,7 +83,7 @@ other = "Voir en anglais"
 other = "Note : La version anglaise a été mise à jour depuis sa traduction"
 
 [not_yet_translated]
-other = "Cette page n’a pas encore été traduite. Vous pouvez contribuer <a href=\"https://github.com/letsencrypt/website\">là</a>."
+other = "Cette page n'a pas encore été traduite. Vous pouvez contribuer <a href=\"https://github.com/letsencrypt/website\">ici</a>."
 
 [english_is_canonical]
 other = "Remarque : la version anglaise fait foi"
@@ -117,6 +118,9 @@ other = "Utilisateurs du Japon"
 [graph_percent_https]
 other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jours)"
 
+[certificate_policy]
+other = "Politique de certificat"
+
 [certificate_transparency_name]
 other = "Nom"
 
@@ -124,13 +128,28 @@ other = "Nom"
 other = "Production"
 
 [certificate_transparency_role_testing]
-other = "Testing"
+other = "Test"
 
 [certificate_transparency_uri]
 other = "URI"
 
 [certificate_transparency_public_key]
 other = "Clé publique"
+
+[certificate_transparency_log_id]
+other = "ID du log"
+
+[certificate_transparency_state]
+other = "État"
+
+[certificate_transparency_window_start]
+other = "Début de la période"
+
+[certificate_transparency_window_end]
+other = "Fin de la période"
+
+[certification_practices_statement]
+other = "Déclaration de pratiques de certification"
 
 [overview]
 other = "Vue d'ensemble"

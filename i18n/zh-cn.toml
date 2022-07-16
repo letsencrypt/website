@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "为1.8亿个网站提供TLS证书的非盈利性证书颁发机构。"
+other = "一个为<span> 2.25 亿个</span>网站提供 TLS 证书的非盈利性证书颁发机构。"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -31,7 +29,7 @@ other = "博客文章"
 other = "阅读全文"
 
 [subscribe_rss]
-other = "<a href=\"{{ .Permalink }}\">RSS 订阅</a>"
+other = '<a href="{{ .Permalink }}">RSS 订阅</a>'
 
 [footer_support_us]
 other = "支持更安全、更尊重隐私的互联网。"
@@ -40,7 +38,7 @@ other = "支持更安全、更尊重隐私的互联网。"
 other = "捐赠"
 
 [footer_mailing]
-other = "将所有信件和问题发送至："
+other = "发送邮件或询问到："
 
 [footer_policies]
 other = """
@@ -49,7 +47,7 @@ other = """
 """
 
 [linux_foundation_trademark]
-other = "“Linux Foundation”是 Linux 基金会的注册商标。“Linux”是 Linus Torvalds 的注册商标。"
+other = "“Linux Foundation”是 Linux 基金会的注册商标。 “Linux”是 Linus Torvalds 的注册商标。"
 
 [header_skip_nav]
 other = "跳过导航链接"
@@ -85,7 +83,7 @@ other = "阅读英文页面"
 other = "注意：本页面有较新的英文版本。"
 
 [not_yet_translated]
-other = "此页面尚未翻译。要贡献翻译，请<a href=\"https://github.com/letsencrypt/website\">点击此处</a>。"
+other = '此页面尚未翻译。 要贡献翻译，请<a href="https://github.com/letsencrypt/website">点击此处</a>。'
 
 [english_is_canonical]
 other = "此页内容请以英文页面为准"
@@ -120,6 +118,9 @@ other = "日本用户"
 [graph_percent_https]
 other = "通过 HTTPS 加载的页面百分比（14日移动平均）"
 
+[certificate_policy]
+other = "证书策略"
+
 [certificate_transparency_name]
 other = "名称"
 
@@ -134,6 +135,21 @@ other = "链接"
 
 [certificate_transparency_public_key]
 other = "公钥"
+
+[certificate_transparency_log_id]
+other = "日志 ID"
+
+[certificate_transparency_state]
+other = "状态"
+
+[certificate_transparency_window_start]
+other = "开始窗口"
+
+[certificate_transparency_window_end]
+other = "结束窗口"
+
+[certification_practices_statement]
+other = "证书实践声明"
 
 [overview]
 other = "概述"
