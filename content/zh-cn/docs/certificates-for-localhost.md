@@ -3,7 +3,7 @@ title: localhost 证书
 slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -45,7 +45,7 @@ show_lastmod: 1
 
 然后，您就可以使用 localhost.crt 和 localhost.key 配置本地 Web 服务器，并在本地的受信任根证书列表中安装 localhost.crt。
 
-如果您希望您的开发用证书更加逼真，您可以使用 [minica][minica] 生成自己的本地根证书，并颁发由其签名的终端实体证书（又称叶证书）。然后，您就可以导入根证书而不是自签名的终端实体证书。
+如果您希望您的开发用证书更加逼真，您可以使用 [mkcert][mkcert] 生成自己的本地根证书，并颁发由其签名的终端实体证书（又称叶证书）。然后，您就可以导入根证书而不是自签名的终端实体证书。
 
 您还可以选择使用带有点的域，例如 `www.localhost`，将其作为 `127.0.0.1` 的别名添加到 /etc/hosts 中。这细微地改变了浏览器处理 Cookies 存储的方式。
 
@@ -56,5 +56,5 @@ show_lastmod: 1
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

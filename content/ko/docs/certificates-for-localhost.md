@@ -3,7 +3,7 @@ title: localhost를 위한 인증서
 permalink: /docs/certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -47,7 +47,7 @@ localhost.crt와 localhost.key로 로컬 웹서버를 구성하고, 신뢰할 �
 
 그런 다음 localhost.crt 및 localhost.key를 사용하여 로컬 웹 서버를 구성하고 로컬로 신뢰할 수있는 루트 목록에 localhost.crt를 설치할 수 있습니다.
 
-개발 인증서를 좀 더 사실적으로 만들고 싶으면, [minica][minica]를 사용하여 로컬 root 인증서를 생성하고, 서명된 최종 사용자 (일명 리프) 인증서를 발행할 수 있습니다. 그러면 자체 서명된 최종 사용자 인증서가 아닌 root 인증서를 가져옵니다.
+개발 인증서를 좀 더 사실적으로 만들고 싶으면, [mkcert][mkcert]를 사용하여 로컬 root 인증서를 생성하고, 서명된 최종 사용자 (일명 리프) 인증서를 발행할 수 있습니다. 그러면 자체 서명된 최종 사용자 인증서가 아닌 root 인증서를 가져옵니다.
 
 또한 `www.localhost`와 같이 점이 있는 도메인을 /etc/hosts 파일에 127.0.0.1의 별칭으로 추가하여 사용할 수 있습니다. 이는 브라우저가 쿠키 저장을 처리하는 방법을 미묘하게 변경합니다.
 
@@ -58,5 +58,5 @@ localhost.crt와 localhost.key로 로컬 웹서버를 구성하고, 신뢰할 �
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

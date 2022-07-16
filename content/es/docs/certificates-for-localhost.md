@@ -3,7 +3,7 @@ title: Certificados para localhost
 permalink: /docs/certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2022-06-19
 show_lastmod: 1
 ---
 
@@ -75,7 +75,7 @@ y un certificado autofirmado para localhost es con el siguiente comando openssl:
 A continuación, puedes configurar tu servidor con localhost.crt y localhost.key
 e instalar localhost.crt en tu lista de raices confiadas localmente.
 
-Si deseas un poco más de realismo en tus certificados de desarrollo, puedes usar [minica][minica]
+Si deseas un poco más de realismo en tus certificados de desarrollo, puedes usar [mkcert][mkcert]
 para generar tu propio certificado raíz local, y emitir certificados
 *end-entity* (también conocido como *leaf*) firmados por él. Entonces importaría
 el certificado raíz en vez de un certificado *end-entity* autofirmado.
@@ -91,5 +91,5 @@ manejan el almacenamiento de cookies.
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
