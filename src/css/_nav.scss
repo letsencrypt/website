@@ -85,6 +85,18 @@ a.pure-menu-link:hover {
   }
 }
 
+.pure-menu-active > .pure-menu-children.menu-for-languages,
+.pure-menu-allow-hover:hover > .pure-menu-children.menu-for-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pure-menu-horizontal .pure-menu-children.menu-for-languages {
+  left: auto;
+  right: 0;
+}
+
+
 // Mobile nav styles
 @include media-query($on-palm) {
   html[dir="rtl"] #menuIcon {
