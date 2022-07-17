@@ -1,6 +1,6 @@
 ---
 title: localhost를 위한 인증서
-permalink: /docs/certificates-for-localhost
+slug: certificates-for-localhost
 top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
@@ -8,7 +8,7 @@ show_lastmod: 1
 ---
 
 
-가끔 사람들은 로컬 개발에 사용하거나, 웹 앱과 통신해야 하는 네이티브 앱을 배포하기 위해 호스트 이름 "localhost"에 대한 인증서를 얻고 싶어합니다. Let's Encrypt는 "localhost"에 대한 인증서를 제공 할 수 없습니다. 그것을 아무도 고유하게 소유하지 않으며, ".com" 또는 ".net"과 같은 최상위 도메인에 뿌리를 두고 있지 않기 때문입니다. 127.0.0.1로 확인되는 자체 도메인 이름을 설정하고, DNS 챌린지를 사용하여 도메인 이름에 대한 인증서를 얻을 수 있습니다. 그러나 이건 일반적으로 나쁜 방법이며 더 나은 옵션이 있습니다.
+가끔 사람들은 로컬 개발에 사용하거나, 웹 앱과 통신해야 하는 네이티브 앱을 배포하기 위해 호스트 이름 "localhost"에 대한 인증서를 얻고 싶어합니다. Let's Encrypt는 "localhost"에 대한 인증서를 제공 할 수 없습니다. 그것을 아무도 고유하게 소유하지 않으며, ".com" 또는 ".net"과 같은 최상위 도메인에 뿌리를 두고 있지 않기 때문입니다. `127.0.0.1`로 확인되는 자체 도메인 이름을 설정하고, DNS 챌린지를 사용하여 도메인 이름에 대한 인증서를 얻을 수 있습니다. 그러나 이건 일반적으로 나쁜 방법이며 더 나은 옵션이 있습니다.
 
 # 로컬에서 개발하는 경우
 
@@ -20,17 +20,17 @@ show_lastmod: 1
 
 때로는 개발자가 추가 기능을 제공하기 위해 웹 사이트와 함께 사용할 수 있는 다운로드 가능한 네이티브 앱을 제공하려고 합니다. 예를 들어, 웹 앱은 할 수 없지만 Dropbox 및 Spotify 데스크톱 앱은 컴퓨터에서 파일을 스캔할 수 있습니다. 한 가지 공통적인 접근 방식은 이러한 네이티브 앱이 localhost에서 웹 서비스를 제공하고, 웹 앱에서 XMLHTTPRequest (XHR) 또는 WebSockets을 통해 요청을 수행하도록 하는 것입니다. 웹 앱은 거의 항상 HTTPS를 사용합니다. 즉, 브라우저가 XHR 또는 WebSockets 요청을 비보안 URL로 전송하는 것을 금지합니다. 이를 "혼합 콘텐츠 차단"이라고 합니다. 웹 앱과 통신하려면 네이티브 앱이 안전한 웹 서비스를 제공해야 합니다.
 
-다행히 최신 브라우저는 `http://127.0.0.1:8000/`이 루프백 주소를 참조하기 때문에 ["잠재적으로 신뢰할 수있는"][secure-contexts] URL로 [간주][mcb-localhost]합니다. 127.0.0.1로 전송된 트래픽은 시스템을 떠나지 않도록 보장되므로 네트워크 차단에 대해 자동으로 안전하다고 간주됩니다. 즉, 웹 앱이 HTTPS이고 127.0.0.1에서 네이티브 앱 웹 서비스를 제공하는 경우 두 앱은 XHR을 통해 원활하게 통신할 수 있습니다. 불행히도 [localhost는 아직 동일한 기능을 제공받지 못합니다][let-localhost]. WebSockets 또한 어떤 이름이라도 이 기능을 제공받지 못합니다.
+다행히 최신 브라우저는 `http://127.0.0.1:8000/`이 루프백 주소를 참조하기 때문에 ["잠재적으로 신뢰할 수있는"](https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy) URL로 [간주](https://bugs.chromium.org/p/chromium/issues/detail?id=607878)합니다. `127.0.0.1`로 전송된 트래픽은 시스템을 떠나지 않도록 보장되므로 네트워크 차단에 대해 자동으로 안전하다고 간주됩니다. 즉, 웹 앱이 HTTPS이고`127.0.0.1`에서 네이티브 앱 웹 서비스를 제공하는 경우 두 앱은 XHR을 통해 원활하게 통신할 수 있습니다. 불행히도 [localhost는 아직 동일한 기능을 제공받지 못합니다](https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost-02). WebSockets 또한 어떤 이름이라도 이 기능을 제공받지 못합니다.
 
-이러한 한계를 극복하기 위해 127.0.0.1 (예시: localhost.example.com)로 확인되는 도메인 이름을 전역 DNS에 설정하고, 그 도메인 이름에 대한 인증서를 얻을 수 있습니다. 해당 인증서를 발송할 개인 키를 네이티브 앱과 연결하고 웹 앱에 `http://127.0.0.1:8000/` 대신 `https://localhost.example.com:8000/` 과 통신하도록 알려줍니다. *이렇게 하지 마십시오.* 이 작업은 사용자가 위험에 처하게되고, 인증서가 취소될 수 있습니다.
+이러한 한계를 극복하기 위해`127.0.0.1` (예시: `localhost.example.com`)로 확인되는 도메인 이름을 전역 DNS에 설정하고, 그 도메인 이름에 대한 인증서를 얻을 수 있습니다. 해당 인증서를 발송할 개인 키를 네이티브 앱과 연결하고 웹 앱에 `http://127.0.0.1:8000/` 대신 `https://localhost.example.com:8000/` 과 통신하도록 알려줍니다. *이렇게 하지 마십시오. 그러면 자체 서명된 최종 사용자 인증서가 아닌 root 인증서를 가져옵니다.
 
 IP 주소 대신 도메인 이름을 도입하면 공격자가 중간자 (MitM)에서 DNS를 조회하고 다른 IP 주소를 가리키는 응답을 삽입할 수 있습니다. 그런 다음 공격자가 로컬 앱인 것처럼 위조된 응답을 웹 앱으로 보내면, 웹 앱의 디자인에 따라 귀하의 계정을 손상시킬 수 있습니다.
 
-이 상황에서 성공적인 중간자 (MitM)가 가능한 이유는 네이티브 앱으로 인증서에 개인 키를 보내야했기 때문입니다. 즉, 네이티브 앱을 다운로드 한 사람은 공격자를 포함한 누구나 개인 키의 사본을 얻습니다. 이는 개인 키의 손상으로 간주되며 CA (Certificate Authority)가 알게 되면 인증서를 해지해야 합니다. [많은 네이티브 앱][mdsp1]이 [개인 키를 전달하다가][mdsp3] [인증서][mdsp2]를 폐기했습니다.
+이 상황에서 성공적인 중간자 (MitM) 가 가능한 이유는 네이티브 앱으로 인증서에 개인 키를 보내야했기 때문입니다. 즉, 네이티브 앱을 다운로드 한 사람은 공격자를 포함한 누구나 개인 키의 사본을 얻습니다. 이는 개인 키의 손상으로 간주되며 CA (Certificate Authority) 가 알게 되면 인증서를 해지해야 합니다. [많은 네이티브 앱](https://groups.google.com/d/msg/mozilla.dev.security.policy/eV89JXcsBC0/wsj5zpbbAQAJ)이 [개인 키를 전달하다가](https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ) [인증서](https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ) 를 폐기했습니다.
 
-안타깝게도 이 기능을 사용하면 웹 사이트와 통신할 때 안전하고 좋은 옵션이 없어도 네이티브 앱을 사용할 수 있습니다. 그리고 브라우저가 [웹에서 localhost에 대한 액세스를 더욱 강화하면][tighten-access] 상황이 더 까다로워질 수 있습니다.
+안타깝게도 이 기능을 사용하면 웹 사이트와 통신할 때 안전하고 좋은 옵션이 없어도 네이티브 앱을 사용할 수 있습니다. 그리고 브라우저가 [웹에서 localhost에 대한 액세스를 더욱 강화하면](https://bugs.chromium.org/p/chromium/issues/detail?id=378566) 상황이 더 까다로워질 수 있습니다.
 
-또한 권한을 가진 네이티브 API를 제공하는 웹 서비스를 내보내면 권한이 부여되지 않은 웹 사이트가 액세스할 수 있으므로 본질적으로 위험할 수 있습니다. 이 방법을 사용하는 경우, [Cross-Origin Resource Sharing][cors]을 읽고 Access-Control-Allow-Origin와 메모리 보호가 적용된 HTTP 파서를 사용해야 합니다. 원본에서도 적용 전 사전 요청 보내기를 허용하지 않기 때문이며, 이는 파서의 버그를 악용할 수 있습니다.
+또한 권한을 가진 네이티브 API를 제공하는 웹 서비스를 내보내면 권한이 부여되지 않은 웹 사이트가 액세스할 수 있으므로 본질적으로 위험할 수 있습니다. 이 방법을 사용하는 경우, [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)을 읽고 Access-Control-Allow-Origin와 메모리 보호가 적용된 HTTP 파서를 사용해야 합니다.
 
 # 고유 인증서 생성과 신뢰
 
@@ -45,18 +45,6 @@ localhost에 대한 개인 키와 자체 서명된 인증서를 생성하는 가
 
 localhost.crt와 localhost.key로 로컬 웹서버를 구성하고, 신뢰할 수 있는 root 목록에 localhost.crt를 설치하십시오.
 
-그런 다음 localhost.crt 및 localhost.key를 사용하여 로컬 웹 서버를 구성하고 로컬로 신뢰할 수있는 루트 목록에 localhost.crt를 설치할 수 있습니다.
-
-개발 인증서를 좀 더 사실적으로 만들고 싶으면, [minica][minica]를 사용하여 로컬 root 인증서를 생성하고, 서명된 최종 사용자 (일명 리프) 인증서를 발행할 수 있습니다. 그러면 자체 서명된 최종 사용자 인증서가 아닌 root 인증서를 가져옵니다.
+개발 인증서를 좀 더 사실적으로 만들고 싶으면, [minica](https://github.com/jsha/minica) 를 사용하여 로컬 root 인증서를 생성하고, 서명된 최종 사용자 (일명 리프) 인증서를 발행할 수 있습니다. 그러면 자체 서명된 최종 사용자 인증서가 아닌 root 인증서를 가져옵니다.
 
 또한 `www.localhost`와 같이 점이 있는 도메인을 /etc/hosts 파일에 127.0.0.1의 별칭으로 추가하여 사용할 수 있습니다. 이는 브라우저가 쿠키 저장을 처리하는 방법을 미묘하게 변경합니다.
-
-[mcb-localhost]: https://bugs.chromium.org/p/chromium/issues/detail?id=607878
-[secure-contexts]: https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy
-[let-localhost]: https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost-02
-[mdsp1]: https://groups.google.com/d/msg/mozilla.dev.security.policy/eV89JXcsBC0/wsj5zpbbAQAJ
-[mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
-[mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
-[tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
-[cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

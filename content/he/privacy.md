@@ -1,90 +1,100 @@
 ---
-title: Privacy Policy
+title: מדיניות פרטיות
 slug: privacy
 top_graphic: 4
-lastmod: 2021-03-07
+lastmod: 2022-03-11
 english_is_canonical: 1
 show_lastmod: 1
 ---
 
+מדיניות הפרטיות של Let’s Encrypt מתארת כיצד אנו אוספים, משתמשים וחושפים את המידע שלך בשלושה הקשרים שונים:
 
-The Let’s Encrypt Privacy Policy describes how we collect, use, and disclose your information in three different contexts:
+- כאשר, כגוף נסמך, ביקרת באתר שמאובטח ב־HTTPS ומשתמש באישור מבית Let’s Encrypt,
+- כאשר ערכת מנוי, כלומר, כאשר הגשת בקשה ובחרת להשתמש באישורים מבית Let’s Encrypt,
+- במהלך ביקורך באתר של Let’s Encrypt, בפורום הדיונים הקהילתי, בדפים אחרים תחת letsencrypt.org ואתרי מדיה חברתית מצד־שלישי בהם מופעל חשבון של Let’s Encrypt.
 
-* When, as a Relying Party, you visit a web site secured with HTTPS that uses a certificate from Let’s Encrypt,
-* When you are a Subscriber, i.e., when you request and use certificates from Let’s Encrypt,
-* When you are a Visitor to the Let’s Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let’s Encrypt operates an account.
+Let's Encrypt הוא שירות שמסופק על ידי [Internet Security Research Group](https://www.abetterinternet.org/), ארגון ללא מטרות רווח לרווחת הציבור שמקורו בקליפורניה (ארה״ב).
 
-Let's Encrypt is a service provided by [Internet Security Research Group](https://www.abetterinternet.org/), a California (United States) Nonprofit Public Benefit Corporation.
+## גוף נסמך
 
-## Relying Party
+בעת שימוש באתר HTTPS או בשירות אחר נתמך TLS עם אישור של Let’s Encrypt, הדפדפן שלך (או לקוח ה־TLS שלך) עשוי לתשאל את Let’s Encrypt כדי לבדוק האם האישור נשלל („בקשת OCSP”). אם הדפדפן שלך מבצע בקשת OCSP, השרתים שלנו יקליטו אוטומטית את כתובת ה־IP, הדפדפן ומערכת ההפעלה שלך בקובצי יומן שרת זמניים. איננו משתמשים בנתונים מבקשות ה־OCSP כדי לבנות פרופילים או לזהות משתמשים. יומני שרת זמניים משמשים למטרות תפעוליות בלבד והם בדרך כלל נמחקים תוך פחות משבעה ימים. אנו עשויים לשמור מבחר מצומצם של יומני שרת לתקופות ארוכות יותר כדי לחקור כשלים בתכניות או שימוש לרעה. אם נאלצנו לעשות זאת, אנו נמחק את היומנים המאוחסנים עם סיום החקירה. אנו עשויים גם לחשב, לשמור ולפרסם מידע ייצוגי מתוך יומני השרת כגון אילו אישורים מייצרים את נפח הבקשות הגדול ביותר. אנו תמיד נחתור לוודא שמקבץ כזה של נתונים לא יכיל מידע על הפעילויות של משתמשים או מכשירים שניתנים לזיהוי.
 
-When you use an HTTPS web site or other TLS service with a Let’s Encrypt certificate, your browser (or TLS client) may query Let’s Encrypt to check whether the certificate has been revoked (“OCSP request”). If your browser makes an OCSP request, our servers will automatically record your IP address, browser, and operating system in temporary server log files. We do not use data from OCSP requests to build profiles or identify individuals. Temporary server logs are used for operational purposes only and are normally deleted in less than seven days. We may retain a subset of server logs for longer periods in order to investigate software failures or abuse. If we do so, we will delete any stored logs when we are done investigating. We may also compute, retain and publish aggregate information from server logs, such as which certificates generate the largest volume of requests. We will always strive to ensure that such datasets do not contain information about the activities of identifiable users or devices.
+## מנוי
 
-## Subscriber
+אם הגדרתך היא מנוי, בקשתך היא לקבל אישור מהימן מ־Let’s Encrypt המיועד לערוב באופן ציבורי שיש לך שליטה על שם או שמות תחום מסוימים שנגישים דרך האינטרנט. כחלק מתהליך הוכחת השליטה הזאת, תאסוף מערכת Let’s Encrypt מידע מגוון בנוגע לאימות האישור וניהולו. מידע זה יכלול את כתובת ה־IP ממנה ניגשת לשירות של Let’s Encrypt, כל כתובות ה־IP שנפתרו עבור שמות תחום כלשהם עבורם הוגשה בקשה, פרטי השרת שקשורים לבקשות תיקוף כלשהן, תיעוד יומן מלא של כל בקשות ה־HTTP / ACME הנכנסות, היוצאות ובקשות התיקוף, לצד פרטים שנשלחים או שתכנית צד הלקוח שלך הסיקה בעצמה. אנו נאחסן את הפרטים לתקופה מזערית של שבע שנים בהתאם לדרישות תוכנית אישורי העל המהימנים. המידע הזה יאוחסן למשך עשר שנים לכל היותר.
 
-If you are a Subscriber, you are requesting a trusted certificate from Let’s Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let’s Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let’s Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. This information will be stored for a maximum of ten years.
+צריכה להישמר לנו היכולת להציג לציבור, לרבות לאלו שסומכים על מהימנות האישורים שלנו, שהשירותים שלנו מתנהלים כפי שמצופה מהם. כתוצאה מכך, לא נוכל למחוק את המידע שלך, לרבות כתובת IP. מידע זה עשוי להיחשף לציבור במספר דרכים, לרבות דרך API ציבורי, מאגרים ציבוריים ו/או דיונים ציבוריים.
 
-We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
+תהיה לך האפשרות לספק פרטי קשר, כגון כתובת הדוא״ל שלך, לטובת שירותי חשבון ומטרות שחזור. פרטי הקשר שלך לא ייחשפו לציבורי והם ישותפו רק בהתאם ל„בקשות מגופי אכיפת חוק ונסיבות מקלות” שלהלן. מעצם אספקת כתובת הדוא״ל שלך, מוסכם עליך לקבל מאתנו הודעות דוא״ל בנוגע לשירות. באפשרותך להפסיק את המינוי להודעות דוא״ל בנושאי שירות בכל כעת על ידי לחיצה על הקישור „ביטול המינוי” בתחתית הודעות הדוא״ל או על ידי יצירת קשר אתנו דרך security@letsencrypt.org. לא נשתמש בפרטי הקשר שלך למטרות שיווק או קידום מכירות.
 
-You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per “Law Enforcement and Extenuating Circumstances,” below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the “unsubscribe” link at the bottom of our emails or by contacting us at [security@letsencrypt.org](mailto:security@letsencrypt.org). We will not use your contact information for marketing or promotional purposes.
+ייתכן שיהיה עליך להוריד תכנית לקוח ממאגר כגון אלו שמופעלים על ידי דביאן, אובונטו, Red Hat או GitHub. ההתקשרות שלך עם מאגר תכנה שכזה כפוף למדיניות הפרטיות ו/או תנאי השימוש של אותו המאגר.
 
-You may need to download client software from a repository such as those run by Debian, Ubuntu, Red Hat, or Github. Your interaction with such a software repository is governed by that repository’s own privacy policy and/or Terms of Use.
+## מבקר
 
-## Visitor
+אם מזדמן לך לבקר באתר של Let’s Encrypt, יש לך אפשרות לתרום. התרומות מועברות לעיבוד על ידי שותפי התשלום המהימנים שלנו לרבות DonorBox,‏ Stripe,‏ Shopify,‏ PayPal,‏ The Giving Block ו־Gemini כתלות בשיטת התשלום שנבחרה והן מאוחסנות במסד הנתונים של ה־Salesforce של ISRG. אנו אוספים את שמך ואת כתובת הדוא״ל שלך בעת התרומה. לא נשתמש בכתובת הדוא״ל שלך כדי ליצור אתך קשר ללא הסכמתך אלמלא אנו חשים שזה הכרחי כדי לפתור בעיה שקשורה לתרומה מסוימת. הפעילות שלך מול [DonorBox](https://donorbox.org/privacy),‏ [Stripe](https://stripe.com/privacy/),‏ [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full),‏ [Shopify](https://www.shopify.com/legal/privacy),‏ [The Giving Block](https://thegivingblock.com/about/privacy-policy/),‏ Gemini,‏ [SHIPHERO](https://shiphero.com/privacy-data-policy/),‏ [Salesforce](https://www.salesforce.com/company/privacy/) ו־[Sage Intacct](https://www.sageintacct.com/privacy_policy_website) כפופה להסכמי הפרטיות שלהם בהתאמה. אנחנו לא אוספים או שומרים פרטי כרטיסי אשראי או בנקים שקשורים בתרומות. שותפי שירותי השילוח שלנו הם Shopify ו־SHIPHERO.
 
-When you are a Visitor browsing the Let’s Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, and PayPal, depending on the payment method selected. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), and [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. If we collect a physical address, we will only retain your physical address information for as long as is reasonably necessary to make the shipment that you requested. Our fulfillment partners are Shopify and SHIPHERO. Your interactions with [Shopify](https://www.shopify.com/legal/privacy) and [SHIPHERO](https://shiphero.com/privacy-data-policy/) are governed by their respective privacy policies.
+מותר לך לספק את כתובת הדוא״ל שלך כדי לקבל התכתבויות שקשורות במיזמי ISRG על ידי הרשמה באתר של ISRG ודרך חומרים שיווקיים נוספים. כל תכתובת שהועברה דרך MailChimp או Salesforce והפעילות שלך מול [MailChimp](https://www.intuit.com/privacy/statement/) ומול [Salesforce](https://www.salesforce.com/company/privacy/) כפופה להסכמי הפרטיות שלהם. אנו עשויים להשתמש לעתים בכתובת הדוא״ל שלך כדי לשלוח לך מסרים מותאמים אישית שקשורים ב־Let’s Encrypt. יש לך אפשרות לבקש להסיר את כתובת הדוא״ל שלך מהרשימה שלנו על ידי בקשת עזיבה דרך MailChimp או על ידי שליחת הודעת דוא״ל אלינו לכתובת press@letsencrypt.org.
 
-You have the option to provide your email address to receive the Let’s Encrypt newsletter through a signup on this web site and via other marketing materials. The newsletter is delivered via MailChimp and your interactions with MailChimp are governed by its privacy policy. We may occasionally use your email address to send personalized communications related to Let’s Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at [press@letsencrypt.org](mailto:press@letsencrypt.org)
+אם בחרת להירשם לפורום התמיכה הקהילתי של Let’s Encrypt ולהשתמש בו, הפרטים האישיים שיסופקו והפעולות שם כפופות למדיניות הפרטיות של ספקי האירוח והתוכנה של הפורום, [ערכת דיון מתורבת ב־Discourse](https://www.discourse.org/privacy). איננו אוספים או מתחזקים פרטים אישיים דרך פורום התמיכה הזה שמוצע לקהל הרחב.
 
-If you register to use the Let’s Encrypt community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
+## איננו מוכרים את הנתונים או הפרטים עליך
 
-Additionally, we use Google Analytics to gauge traffic and popular pages on our web site. As part of that service, we place Google Analytics cookies on our site. These cookies do not contain personal information but can uniquely identify your browser software over time on our site. We respect the [Do Not Track](http://donottrack.us/) header by strictly limiting the information our analytics services can collect and share for all Visitors.
+איננו מוכרים את הנתונים או הפרטים עליך. לרבות הגוף הנסמך, המינוי ונתוני הביקור והפרטים.
 
-## We Do Not Sell Your Data or Information
+## בקשות מגופי אכיפת חוק ונסיבות מקלות
 
-We do not sell your data or information. This includes Relying Party, Subscriber, and Visitor data and information.
+אם אנחנו אכן מחזיקים בהם, אנו עשויים לחשוף פרטים מזהים עליך לגופי צד־שלישי בנסיבות מצומצמות. נסיבות כאלו כוללות את כך שקיבלנו את הסכמתך או שאנו מאמינים בלב שלם שיש לכך צידוק חוקי, כגון בהתאם לצו הזמנה לבית משפט או לשיפוט מנהלי. אנו גם נחשוף פרטי שחזור חשבון אם אנו מאמינים בלב שלם שצעד זה הכרחי למניעת אובדן חיים, פציעה אישית, נזק לרכוש או נזק כלכלי משמעותי.
 
-## Law Enforcement Requests and Extenuating Circumstances
+אם אנו נדרשים על פי חוק לחשוף מידע שהגשת, אנו ננסה להודיע לך על כך מראש (אלא אם כן נאסרנו לעשות זאת) שהוגשה בקשה לקבל עליך מידע כדי להעניק לך אפשרות להתנגד לחשיפה. אנו ננסה להודיע לך באמצעים שנחשבים מעשיים באופן סביר. אם לא נקבל מענה ממך לבקשת החשיפה, ייתכן שנהיה מחויבים על פי חוק להסגיר את המידע שלך.
 
-To the extent we possess it, we may disclose personally identifiable information about you to third parties in limited circumstances. Such circumstances include when we have your consent or when we have a good faith belief it is required by law, such as pursuant to a subpoena or other judicial or administrative order. We may also disclose account recovery information when we have a good faith belief it is necessary to prevent loss of life, personal injury, damage to property, or significant financial harm.
+נוסף על כך, אנו שומרים את הזכות, לבחירתנו בלבד, להתנגד באופן עצמאי לבקשות מסוימות (לגישה למידע על משתמשים במוצרים ובטכנולוגיות שלנו) שאנו מאמינים שהן בלתי הולמות.
 
-If we are required by law to disclose the information that you have submitted, we will attempt to provide you with prior notice (unless we are prohibited, or it would be futile) that a request for your information has been made in order to give you an opportunity to object to the disclosure. We will attempt to provide this notice by whatever means is reasonably practical. If you do not challenge the disclosure request, we may be legally required to turn over your information.
+## אילו זכויות יש לגופי בר סמכא, מנויים ומבקרים מהאזור הכלכלי האירופי תחת GDPR ואיך אוכל לאכוף אותן?
 
-In addition, we reserve the right, solely at our discretion, to independently object to certain requests (for access to information about users of our products and technologies) that we believe to be improper.
+אנו מעבדים נתונים אישיים כפי שמתואר במדיניות זו. התכלית והבסיס המשפטי לעיבוד המידע הם כמתואר להלן:
 
-## What rights do European Economic Area relying parties, subscribers, and visitors have under GDPR, and how can I exercise them?
+**מטרה:** אספקת מידע על מצבם של אישורים (OCSP)
 
-We process personal data as described in this policy. The purpose and lawful basis for information processing is as follows:
+**בסיס משפטי:** צרכים חוקיים
 
-**Purpose:** Providing Certificate Status (OCSP) Information<br>
-**Lawful Basis:** Legitimate Interests<br>
-**Additional Information:** We collect and process information from Relying Parties in order to reliably provide certificate status information.
+**פרטים נוספים:** אנו אוספים ומעבדים מידע מגופים נסמכים כדי לספק פירוט מצב על אישורים בצורה מהימנה.
 
-**Purpose:** Providing Certificate Issuance and Management Services<br>
-**Lawful Basis:** Contract, Legitimate Interests<br>
-**Additional Information:** We collect and process information from Subscribers in order to provide reliable and secure certificate issuance and management services, and to demonstrate to the public that our services perform as expected.
+**מטרה:** לספק הנפקת אישורים ושירותי ניהול
 
-**Purpose:** Providing Information to Visitors<br>
-**Lawful Basis:** Consent, Legitimate Interests<br>
-**Additional Information:** We collect and process information from Visitors in order to provide information via the Web and email in a reliable and efficient manner.
+**בסיס משפטי:** חוזה, צרכים חוקיים
 
-**Purpose:** Processing Donations and Sponsorship Inquiries<br>
-**Lawful Basis:** Legitimate Interests<br>
-**Additional Information:** We collect and process information in order to process and support donations.
+**פרטים נוספים:** אנו אוספים ומעבדים מידע ממנויים כדי לספק הנפקת אישורים ושירותי ניהול מהימנים ומאובטחים וכדי לשקף מול הציבור שביצועי השירותים שלנו הם כצפוי.
 
-**Purpose:** Legal Obligations and Extenuating Circumstances<br>
-**Lawful Basis:** Legal Obligation, Legitimate Interests<br>
-**Additional Information:** We may collect and process information in order to comply with legal obligations and when we have a good faith belief it is necessary to prevent loss of life, personal injury, damage to property, or significant financial harm.
+**מטרה:** אספקת מידע למבקרים
 
-Please note that we may be unable to delete information, including IP addresses, as this information is necessary for others to rely on in determining the trustworthiness of our certificates. In some cases, we may process personal data pursuant to legal obligation or to protect your vital interests or those of another person.
+**בסיס משפטי:** הסכמה, צרכים חוקיים
 
-Your personal data may be collected from or transferred to jurisdictions where we and our service providers store or process data, including the United States. These jurisdictions may not provide the same level of data protection as your jurisdiction, including the EEA. We have taken steps to ensure that our service providers provide an adequate level of protection for the personal data of EEA residents, including by entering into data processing agreements using the European Commission-approved Standard Contractual Clauses, or by using other safeguards approved by the European Commission. You have a right to obtain details of the mechanism under which your personal information is transferring outside the EU by emailing us at the contact information below.
+**פרטים נוספים:** אנו אוספים ומעבדים מידע ממבקרים כדי לספר מידע דרך האינטרנט ודרך דוא״ל באופן אמין ויעיל.
 
-Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of our sites and services. If you're an individual who is a relying party, subscriber, or visitor based in the EEA, you can:
+**מטרה:** עיבוד תרומות ובקשות מימון
 
-* Request a personal data report by emailing us at security@letsencrypt.org. This report will include the personal data we have about you, provided to you in a structured, commonly used, and portable format. Please note that we may request additional information from you to verify your identity before we disclose any information.
-* Request that your information be corrected or deleted by contacting us at security@letsencrypt.org.
-* Object to us processing your information. You can ask us to stop using your information, including when we use your information to send you service emails. You may withdraw your consent to receive service emails at any time by clicking the “unsubscribe” link found within Let’s Encrypt emails.
-* Complain to a regulator. If you're based in the EEA and think that we haven't complied with data protection laws, you have a right to lodge a complaint with your local supervisory authority.
+**בסיס משפטי:** צרכים חוקיים
 
-For more information, or to report a privacy issue, please contact: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+**פרטים נוספים:** אנו אוספים ומעבדים מידע כדי לעבד ולתמוך בתרומות.
+
+**מטרה:** מחויבויות משפטיות ונסיבות מקלות
+
+**בסיס משפטי:** מחויבות חוקית, צרכים חוקיים
+
+**פרטים נוספים:** אנו עשויים לאסוף ולעבד מידע כדי לעמוד במחויבויות משפטיות וכאשר אנחנו מאמינים בלב שלם שזה הכרחי כדי למנוע אובדן בחיי אדם, פציעה גופנית, נשק לרכוש או נזק כלכלי כבד.
+
+נא לשים לב שיתכן שלא נוכל למחוק מידע, כולל כתובות IP, כיוון שמידע זה נחוץ לאחרים שעבורם המידע הזה מהווה אסמכתה למהימנות האישורים שלנו. בחלק מהמקרים אנו עשויים לעבד נתונים אישיים בהתאם לחובה משפטית או כדי להגן על על ענייניך החיוניים או של מישהו אחר.
+
+הנתונים האישיים שלך עשויים להיאסף מתוך או לעבור אל תחומי שיפוט בהם אנו וספקי השירות שלנו מאחסנים או מעבדים נתונים, לרבות ארצות הברית. תחומי שיפוט אלו עלולים שלא לספק את אותה רמת הגנת פרטיות כמו תחום השיפוט שלך, לרבות בתוך תחומי האזור הכלכלי האירופי. נקטנו צעדים כדי לוודא שספקי השירות שלך מספקים רמה הולמת של הגנה על נתונים אישיים של תושבי האזור הכלכלי האירופי, לרבות חתימה על הסכמי עיבוד נתונים דרך סעיפי החוזים הרגילים שאושרו על ידי הנציבות האירופית או על ידי שימוש באמצעי הבטחון שאושרו על ידי הנציבות האירופית. שמורה לך הזכות לקבל פרטים על המנגנון שבחסותו הפרטים האישיים שלך מועברים אל מחוץ לאירופה על ידי כתיבת הודעת דוא״ל לכתובת שמופיעה להלן.
+
+לגופים פרטיים שנמצאים באזור הכלכלי האירופי (EEA) יש זכויות מסוימות בנוגע לפרטיהם האישיים, כולל הזכות לגשת, לתקן או למחוק נתונים אישיים שאנו מעבדים בעקבות שימושך באתרים ובשירותים שלנו. אם הנך גורם עצמאי שהוא גוף נסמך, מנוי, או מבקר שמיקומו הוא האזור הכלכלי האירופי (EEA), באפשרותך:
+
+- לבקש דוח נתונים אישיים על ידי שליחת הודעה בדוא״ל אלינו לכתובת security@letsencrypt.org. דוח זה יכלול את הנתונים האישיים שאספנו עליך, שיסופקו לך בתבנית מובנית, נפוצה וניידת. נא לשים לב שאנו עשויים לבקש ממך פרטים נוספים כדי לאמת את זהותך בטרם חשיפת מידע כלשהו.
+
+- לבקש שהמידע עליך יתוקן או יימחק על ידי יצירת קשר אתנו דרך דוא״ל בכתובת security@letsencrypt.org.
+
+- להתנגד לכך שנעבד את המידע עליך. ניתן לבקש מאתנו להפסיק להשתמש במידע שלך, כולל מתי שאנו משתמשים במידע שלך כדי לשלוח אליך הודעות שירות בדוא״ל. באפשרותך למשוך את הסכמתך לקבלת הודעות שירות בדוא״ל בכל עת על ידי לחיצה על הקישור „ביטול מינוי” שנמצא בהודעות שנשלחות על ידי Let’s Encrypt בדוא״ל.
+
+- להתלונן לרשויות חוק. אם מקום מגוריך הוא האזור הכלכלי האירופי ולדעתך לא עמדנו בחוקים להגנת הנתונים, יש לך את הזכות להגיש תביעה מול הרשות המפקחת המקומית שלך.
+
+למידע נוסף, או לדיווח על בעיית פרטיות, נא ליצור אתנו קשר דרך: security@letsencrypt.org.

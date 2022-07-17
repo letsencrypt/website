@@ -3,7 +3,7 @@ title: 만료 이메일
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2019-04-18
+lastmod: 2020-10-28
 show_lastmod: 1
 ---
 
@@ -22,9 +22,8 @@ show_lastmod: 1
 
 귀하의 가입 취소는 1년 동안만 유효하므로 매년 갱신해야 합니다.
 
-귀하께서 가입을 취소하시면 저희가 귀하를 효율적으로 재구독할 수 있는 방법이 아직 없습니다. 이메일 공급자인 Mandrill은 [아직도 자동화해야 하는 수동 메커니즘을 가지고 있습니다.](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+귀하께서 가입을 취소하시면 저희가 귀하를 효율적으로 재구독할 수 있는 방법이 아직 없습니다. 이메일 공급자인 Mandrill은 [아직도 자동화해야 하는 수동 메커니즘을 가지고 있습니다.](https://mandrill.zendesk.com/hc/en-us/articles/360039299913).
 
-그러나 계정의 이메일 주소를 변경하면 실제로 다시 가입할 수 있습니다. 많은 일반 전자 메일 서비스에서 `yourname+1@example.com`을 `yourname@example.com`과 동일하게 취급합니다. 따라서 이메일 주소를 `yourname+1@example.com`으로 업데이트하면 만료 메일을 다시 받기 시작할 수 있습니다. Certbot로,
-아래를 사용하십시오.:
+그러나 계정의 이메일 주소를 변경하면 실제로 다시 가입할 수 있습니다. 많은 일반 전자 메일 서비스에서 `yourname+1@example.com`을 `yourname@example.com`과 동일하게 취급합니다. 따라서 이메일 주소를 `yourname+1@example.com`으로 업데이트하면 만료 메일을 다시 받기 시작할 수 있습니다. Certbot로, 아래를 사용하십시오.:
 
 `certbot update_account --email yourname+1@example.com`

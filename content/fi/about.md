@@ -14,7 +14,7 @@ Let's Encrypt on ilmainen, automatisoitu ja avoin varmenneviranomainen (CA), jot
 
 Annamme ihmisille tarvitsemansa digitaaliset varmenteet, jotta HTTPS (SSL/TLS) voi käyttää sivustoja ilmaiseksi, mahdollisimman käyttäjäystävällisellä tavalla. Teemme tämän, koska haluamme luoda turvallisemman ja yksityisyyttä arvostavamman verkon.
 
-Voit lukea viimeisimmän vuoden arvostelussa lataamalla meidän [vuosikertomuksen](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
+Voit lukea viimeisimmän vuoden arvostelussa lataamalla meidän [vuosikertomuksen](https://www.abetterinternet.org/annual-reports/).
 
 Let's Encryptin pääperiaatteet ovat:
 

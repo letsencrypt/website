@@ -11,7 +11,7 @@ other = "Donér"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Læs vores 2020 <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>Årsberetning</a>"
+other = "Læs vores 2020 <a href='https://www.abetterinternet.org/annual-reports/'>Årsberetning</a>"
 
 [home_major_sponsors]
 other = "Store sponsorer og finansieringskilder"
