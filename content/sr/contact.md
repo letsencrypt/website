@@ -43,6 +43,6 @@ sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
 sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
-Možete preuzeti \[GPG Public Key\](/security_letsencrypt.org-publickey.asc) ovde, ili da koristite Vaš omiljeni server.
+Možete preuzeti [GPG Public Key](/security_letsencrypt.org-publickey.asc) ovde, ili da koristite Vaš omiljeni server.
 
 "Fingerprint" od ključa mora da se podudara sa `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.

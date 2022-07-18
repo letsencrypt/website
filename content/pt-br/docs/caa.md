@@ -29,7 +29,7 @@ Como a Let's Encrypt verifica os registros AAC antes de emitir qualquer certific
 
 Se você está recebendo erros relacionados a AAC, tente mais algumas vezes em nosso [ambiente de testes](/pt-br/docs/staging-environment/) para ver se eles são temporários ou permanentes. Se eles forem permanentes, você precisará relatar o problema ao seu provedor DNS ou trocar de provedor. Se você não tem certeza sobre qual é o seu provedor DNS, pergunte do seu provedor de hospedagem.
 
-Alguns provedores DNS que não são familiares com AAC normalmente respondem a este tipo de problema com "Não suportamos registros AAC". O seu provedor DNS não precisa suportar especificamente registros AAC, ele só precisa responder com NOERROR a requisições de tipo desconhecidos (incluindo AAC). Retornar outros opcode, incluindo NOTIMP, para tipos de requisições desconhecidos é uma violação da \[RFC 1035\](https://tools.ietf.org/html/rfc1035) (Inglês) e precisa ser corrigido.
+Alguns provedores DNS que não são familiares com AAC normalmente respondem a este tipo de problema com "Não suportamos registros AAC". O seu provedor DNS não precisa suportar especificamente registros AAC, ele só precisa responder com NOERROR a requisições de tipo desconhecidos (incluindo AAC). Retornar outros opcode, incluindo NOTIMP, para tipos de requisições desconhecidos é uma violação da [RFC 1035](https://tools.ietf.org/html/rfc1035) (Inglês) e precisa ser corrigido.
 
 # SERVFAIL
 

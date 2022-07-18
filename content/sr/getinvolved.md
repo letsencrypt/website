@@ -17,7 +17,7 @@ Uvek nam koristi pomoć pri odgovaranju na pitanja u [Let's Encrypt Zajednici](h
 
 ## Kod
 
-Takođe,često volimo da koristimo i pomoć oko razvoja softvera. Ceo naš izvorni kod je na \[GitHub-u\](https://github.com/letsencrypt/).
+Takođe,često volimo da koristimo i pomoć oko razvoja softvera. Ceo naš izvorni kod je na [GitHub-u](https://github.com/letsencrypt/).
 
 ### Klijentski softver
 

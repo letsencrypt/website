@@ -31,7 +31,7 @@ O módulo Python [acme](https://github.com/certbot/certbot/tree/master/acme) é 
 
 # Adicionando seu cliente/projeto
 
-Se você conhece um cliente ACME ou um projeto que se integrou à Let's Encrypt que não está presente na lista acima por favor envie um pull request no nosso \[repositório do website\](https://github.com/letsencrypt/website/) no Github, modificando o arquivo `data/clients.json`.
+Se você conhece um cliente ACME ou um projeto que se integrou à Let's Encrypt que não está presente na lista acima por favor envie um pull request no nosso [repositório do website](https://github.com/letsencrypt/website/) no Github, modificando o arquivo `data/clients.json`.
 
 Antes de enviar o pull request por favor certifique-se que:
 
