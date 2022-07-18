@@ -8,7 +8,7 @@ show_lastmod: 1
 
 Giao thức ACME được
 
-tiêu chuẩn hoá theo IETF, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), là nền tảng cách hoạt động của Let's Encrypt.</p> 
+tiêu chuẩn hoá theo IETF, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), là nền tảng cách hoạt động của Let's Encrypt.
 
 
 

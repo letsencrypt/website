@@ -79,7 +79,7 @@ Note for translators:
 
 {{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} Механізм криптографічної автентифікації відповідей DNS. DNSSEC вимагає розгортання TLD, власниками імен доменів та рекурсивними резольверами для набуття чинності. Ухвалення поки що на досить низькому рівні. [Вікіпедія](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
-{{% def id="DV" name="Domain-validated certificate" %}}[ сертифікат ](#def-leaf), де заявник лише довів свій контроль над доменним іменем (а не ідентифікаційні дані запитуючої організації). [Let's Encrypt](#def-LE) пропонує лише сертифікати DV (не [ OV ](#def-OV) або [ EV ](#def-EV)): <a[FAQ](/docs/faq) - [Вікіпедія](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
+{{% def id="DV" name="Domain-validated certificate" %}}[ сертифікат ](#def-leaf), де заявник лише довів свій контроль над доменним іменем (а не ідентифікаційні дані запитуючої організації). [Let's Encrypt](#def-LE) пропонує лише сертифікати DV (не [ OV ](#def-OV) або [ EV ](#def-EV)): [FAQ](/docs/faq) - [Вікіпедія](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
 {{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Варіант алгоритму цифрового підпису (DSA), який використовує криптографію з еліптичною кривою.  [Вікіпедія](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) підтримує ECDSA для [сертифікатів кінцевого користувача або листових сертифікатів](#def-leaf), але не для всього [ланцюжка](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
 
@@ -137,7 +137,7 @@ Note for translators:
 
 {{% def id="revocation" name="Revocation" %}} Сертифікат чинний до завершення терміну його дії, якщо [ЦС](#def-CA) не стверджує, що його відкликано. Сертифікат може бути відкликаний з різних причин, наприклад, компрометація приватного ключа. Веб-переглядачі можуть перевірити, чи відкликано сертифікат, використовуючи [CRL](#def-CRL), [OCSP](#def-OCSP) або новіші методи, як-от [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) і [CRLSets](https://dev.chromium .org/Home/chromium-security/crlsets). Зауважте, що в багатьох ситуаціях [відкликання не працює](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
-{{% def id="root" name="Root certificate" %}} [самопідписаний](#def-self-signed) сертифікат, контрольований за допомогою <a href="#def" -CA">центр сертифікації</a>, який використовується для підписання його [проміжних](#def-intermediate) сертифікатів і включений до [сховища сертифікатів](#def-store) a>. [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
+{{% def id="root" name="Root certificate" %}} [самопідписаний](#def-self-signed) сертифікат, контрольований за допомогою [центр сертифікації](#def-CA), який використовується для підписання його [проміжних](#def-intermediate) сертифікатів і включений до [сховища сертифікатів](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
 {{% def id="root-program" name="Root Program" %}} Політики, які організація використовує, щоб вирішити, які сертифікати включити до свого [сховища сертифікатів](#def-store) , а отже, яким ЦС довіряє їх програмне забезпечення. {{% /def %}}
 
