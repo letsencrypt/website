@@ -6,121 +6,52 @@ lastmod: 2020-02-25
 show_lastmod: 1
 ---
 
-<p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >שקיפות אישורים (CT)</a
-  >
-  היא מערכת לתיעוד ומעקב אחר הנפקת אישורי TLS. מערכת שקיפות האישורים מרחיבה את
-  היכולת של כל אחד לעקוב ולחקור הנפקות אישורים והיכולות האלו הובילו למגוון
-  שיפורים בסביבת הפעילות של רשויות האישורים ובאבטחת האינטרנט. כתוצאה מכך, שקיפות
-  האישורים הופכת במהרה לתשתית חיונית.
-</p>
 
-<p>
-  מערכת Let's Encrypt מגישה את כל האישורים שאנו מנפיקים ליומני שקיפות אישורים.
-  אנו מפעילים בנוסף שני יומני שקיפות אישורים שנתיים בחלוקה ליחידות גיבוי בשמות
-  <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
-    >Oak</a
-  >
-  ו־Testflume. כל רשויות האישורים שנחשבות למהימנות בעיני הציבור מוזמנות לתעד
-  ליומנים שלנו. אישורים עליונים רבים של מגוון רשויות אישורים כבר נכללו ביומני
-  שקיפות האישורים שלנו. <a href="/contact">ניתן ליצור אתנו קשר בדוא״ל</a> בנוגע
-  להוספת אישורים עליונים ליומנים שלנו אם האישור שלך לא נכלל אצלנו.
-</p>
 
-<p>
-  ניתן להירשם לקבלת התראות ב<a
-    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
-    >קטגוריית הכרזות שקיפות האישורים</a
-  >
-  שבפורום הקהילתי שלנו כדי לצפות בהכרזות עיקריות בנוגע ליומני שקיפות האישורים
-  שלנו.
-</p>
+<p><a href="https://www.certificate-transparency.org/what-is-ct">שקיפות אישורים (CT)</a> היא מערכת לתיעוד ומעקב אחר הנפקת אישורי TLS. מערכת שקיפות האישורים מרחיבה את היכולת של כל אחד לעקוב ולחקור הנפקות אישורים והיכולות האלו הובילו למגוון שיפורים בסביבת הפעילות של רשויות האישורים ובאבטחת האינטרנט. כתוצאה מכך, שקיפות האישורים הופכת במהרה לתשתית חיונית.</p>
+
+<p>מערכת Let's Encrypt מגישה את כל האישורים שאנו מנפיקים ליומני שקיפות אישורים. אנו מפעילים בנוסף שני יומני שקיפות אישורים שנתיים בחלוקה ליחידות גיבוי בשמות <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> ו־Testflume. כל רשויות האישורים שנחשבות למהימנות בעיני הציבור מוזמנות לתעד ליומנים שלנו. אישורים עליונים רבים של מגוון רשויות אישורים כבר נכללו ביומני שקיפות האישורים שלנו. <a href="https://github.com/letsencrypt/ct-log-metadata">ניתן ליצור אתנו קשר בדוא״ל</a> בנוגע להוספת אישורים עליונים ליומנים שלנו אם האישור שלך לא נכלל אצלנו.</p>
+
+<p>ניתן להירשם לקבלת התראות ב<a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">קטגוריית הכרזות שקיפות האישורים</a> שבפורום הקהילתי שלנו כדי לצפות בהכרזות עיקריות בנוגע ליומני שקיפות האישורים שלנו.</p>
 
 <h2>מימון</h2>
 
-<p>
-  אנו מעוניינים להודות לשותפים הבאים על נדיבותם במימון יומן שקיפות האישורים (CT)
-  של Let's Encrypt. אם הארגון שלך מעוניין להמשיך בעבודה הזאת, נא לשקול
-  <a href="https://www.abetterinternet.org/sponsor/">לתת חסות או לתרום</a>.
-</p>
+<p>אנו מעוניינים להודות לשותפים הבאים על נדיבותם במימון יומן שקיפות האישורים (CT) של Let's Encrypt. אם הארגון שלך מעוניין להמשיך בעבודה הזאת, נא לשקול <a href="https://www.abetterinternet.org/sponsor/">לתת חסות או לתרום</a>.</p>
 
-<p class="text-center">
-  <a href="https://sectigo.com/"
-    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
-  /></a>
-</p>
+<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
 
 <h2>ארכיטקטורה</h2>
 
-<p>
-  בבלוג שלנו ניתן לראות
-  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >כיצד Let's Encrypt מריץ יומני שקיפות אישורים</a
-  >!
-</p>
+<p>בבלוג שלנו ניתן לראות <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">כיצד Let's Encrypt מריץ יומני שקיפות אישורים</a>!</p>
 
 <h2>מעקב אחר יומנים</h2>
 
-<p>
-  ארגון Let's Encrypt יצר כלי מעקב יומני שקיפות אישורים בקוד פתוח בשם
-  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> (נקר
-  יומני אישורים). אנו משתמשים בכלי הזה כדי לעקוב אחר יציבות ותאימות היומנים שלנו
-  עצמנו ומקווים שגם אחרים יעזרו בו.
-</p>
+<p>ארגון Let's Encrypt יצר כלי מעקב יומני שקיפות אישורים בקוד פתוח בשם <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> (נקר יומני אישורים). אנו משתמשים בכלי הזה כדי לעקוב אחר יציבות ותאימות היומנים שלנו עצמנו ומקווים שגם אחרים יעזרו בו.</p>
 
 <h2>יומני שקיפות אישורים</h2>
 
 {{< ct_logs data="production" >}}
-<li>
-  Oak משולב לתוך תכניות שקיפות האישורים של
-  <a href="https://support.apple.com/en-us/HT209255">Apple</a> ושל
-  <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
-  >.
-</li>
-<li>ה־API של סביבת הפעילות המלאה של ACME מגישה את האישורים כאן.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  חותמות זמן של אישורים חתומים (SCTs) מהיומנים האלו <b>לא אמורים</b> להשתלב
-  באישורים מהימנים ציבוריים.
-</li>
-<li>
-  סביבות הפעילות המלאה וה<a href="/docs/staging-environment">הכנה להקמה</a> של
-  ה־API של ACME שתיהן מגישות אישורים ל־Testflume, אבל סביבת הפעילות המלאה לא
-  משתמשת ב־SCTs שנוצרים.
-</li>
-<li>
-  כאן אנחנו בודקים גרסאות חדשות של
-  <a href="http://github.com/google/trillian">Trillian</a> ושל
-  <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
-  >
-  בטרם הטמעתן לסביבת הפעילות המלאה.
-</li>
-<li>
-  רשימת האישורים העליונים המקובלים של Testflume כוללים את כל האישורים העליונים
-  שמקובלים על Oak בנוסף לאישורים עליונים לצורכי בדיקות.
-</li>
-<li>רשויות אישורים אחרות יכולות להשתמש ב־Testflume למטרות בדיקות.</li>
+    <li>Oak משולב לתוך תכניות שקיפות האישורים של <a href="https://support.apple.com/en-us/HT209255">Apple</a> ושל <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">Google</a>.</li>
+    <li>ה־API של סביבת הפעילות המלאה של ACME מגישה את האישורים כאן.</li>
 {{< /ct_logs >}}
-<br />
+
+{{< ct_logs data="testing" >}}
+    <li>חותמות זמן של אישורים חתומים (SCTs) מהיומנים האלו <b>לא אמורים</b> להשתלב באישורים מהימנים ציבוריים.</li>
+    <li>סביבות הפעילות המלאה וה<a href="/docs/staging-environment">הכנה להקמה</a> של ה־API של ACME שתיהן מגישות אישורים ל־Testflume, אבל סביבת הפעילות המלאה לא משתמשת ב־SCTs שנוצרים.</li>
+    <li>כאן אנחנו בודקים גרסאות חדשות של <a href="http://github.com/google/trillian">Trillian</a> ושל <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> בטרם הטמעתן לסביבת הפעילות המלאה.</li>
+    <li>רשימת האישורים העליונים המקובלים של Testflume כוללים את כל האישורים העליונים שמקובלים על Oak בנוסף לאישורים עליונים לצורכי בדיקות.</li>
+    <li>רשויות אישורים אחרות יכולות להשתמש ב־Testflume למטרות בדיקות.</li>
+{{< /ct_logs >}}
+<br>
 <h2>פעולות על היומן</h2>
-<p>
-  כדי למנות את האישורים העליונים הנכללים ליומן שקיפות אישורים מסוים עליך להריץ
-  את הפקודה הבאה במסוף החביב עליך:
-</p>
+<p>כדי למנות את האישורים העליונים הנכללים ליומן שקיפות אישורים מסוים עליך להריץ את הפקודה הבאה במסוף החביב עליך:</p>
 <pre>
 $ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
     echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
 done
 </pre>
 
-<p>
-  הגשת אישורים ליומן שקיפות אישורים בדרך כלל מטופלת על ידי רשויות אישורים. אם
-  מעניין אותך להתנסות בזה, כדאי להתחיל בקבלת אישור בקידוד PEM שרירותית מהאתרים
-  האהובים עליך. עליך להעתיק את המקטע הבא ולהדביק אותו במסוף שלך.
-</p>
+<p>הגשת אישורים ליומן שקיפות אישורים בדרך כלל מטופלת על ידי רשויות אישורים. אם מעניין אותך להתנסות בזה, כדאי להתחיל בקבלת אישור בקידוד PEM שרירותית מהאתרים האהובים עליך. עליך להעתיק את המקטע הבא ולהדביק אותו במסוף שלך.</p>
 <pre>
 $ echo | \
 openssl s_client \
@@ -130,18 +61,7 @@ openssl s_client \
 sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
-<p>
-  לפני שניתן להגיש אישור, יש לקודד אותו ל־JSON במבנה מיוחד. ניתן להשתמש במחולל
-  ה־JSON שסופק על ידי
-  <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> לביצוע
-  הפעולה הזאת. הכלי crt.sh יחזיר מאגד JSON. עליך להוריד את המאגד למחשב שלך,
-  לשנות את שם הקובץ אם יש בכך צורך ולהריץ את הפקודה הבאה כדי לבצע פעולת
-  add-chain (הוספת שרשרת -
-  <a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 סעיף 4.1</a
-  >) כדי להגיש את האישור ליומן שקיפות האישורים. הפלט יכיל חתימה שהיא למעשה
-  <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. נפרט
-  יותר על החתימה עוד רגע קט.
-</p>
+<p>לפני שניתן להגיש אישור, יש לקודד אותו ל־JSON במבנה מיוחד. ניתן להשתמש במחולל ה־JSON שסופק על ידי <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> לביצוע הפעולה הזאת. הכלי crt.sh יחזיר מאגד JSON. עליך להוריד את המאגד למחשב שלך, לשנות את שם הקובץ אם יש בכך צורך ולהריץ את הפקודה הבאה כדי לבצע פעולת add-chain (הוספת שרשרת - <a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 סעיף 4.1</a>) כדי להגיש את האישור ליומן שקיפות האישורים. הפלט יכיל חתימה שהיא למעשה <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. נפרט יותר על החתימה עוד רגע קט.</p>
 <pre>
 $ curl \
     -X POST \
@@ -152,22 +72,13 @@ $ curl \
 {"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
 </pre>
 
-<p>
-  כדי לאמת שיומן שקיפות האישורים נחתם על ידי שבר 2020 של Oak, אנו משתמשים בשדה
-  המזהה (id) מהפקודה שלהלן ומריצים אותו דרך הפקודה הבאה. תוצאות הפלט של הפקודה
-  הזאת יציג את מזהה היומן של יומן שקיפות האישורים.
-</p>
+<p>כדי לאמת שיומן שקיפות האישורים נחתם על ידי שבר 2020 של Oak, אנו משתמשים בשדה המזהה (id) מהפקודה שלהלן ומריצים אותו דרך הפקודה הבאה. תוצאות הפלט של הפקודה הזאת יציג את מזהה היומן של יומן שקיפות האישורים.</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
 </pre>
 
-<p>
-  באמצעות שדה החתימה נוכל לוודא שהאישור הוגש ליומן. באמצעות
-  <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
-    >מדריך ההתעמקות בחותמת זמן של אישור חתום</a
-  >, ניתן לפענח את הערך הזה בפירוט.
-</p>
+<p>באמצעות שדה החתימה נוכל לוודא שהאישור הוגש ליומן. באמצעות <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">מדריך ההתעמקות בחותמת זמן של אישור חתום</a>, ניתן לפענח את הערך הזה בפירוט.</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4

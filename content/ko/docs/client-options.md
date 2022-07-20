@@ -2,7 +2,7 @@
 title: ACME 클라이언트 구현
 slug: client-options
 top_graphic: 1
-lastmod: 2019-05-24
+lastmod: 2020-12-18
 ---
 
 {{< clientslastmod >}}
@@ -17,7 +17,11 @@ Let's Encrypt에서는 ACME 프로토콜을 사용하여 지정된 도메인 이
 
 대부분의 경우 [Certbot](https://certbot.eff.org/) 클라이언트에서 시작할 것을 권장합니다. 원하는 항목에 따라 간단히 인증서를 받거나 설치에도 도움이 될 수 있습니다. 사용하기 쉽고, 많은 운영체제에서 작동하며, 문서화가 매우 우수합니다.
 
-certbot이 사용자의 요구를 충족하지 못하거나 다른 작업을 수행하고자 할 경우, 아래에서 선택할 수 있는 더 많은 클라이언트가 있습니다. 이 클라이언트는 해당 언어 또는 환경에 따라 그룹화됩니다.
+Certbot이 사용자의 요구를 충족하지 못하거나 다른 작업을 수행하고자 할 경우, 아래에서 선택할 수 있는 더 많은 클라이언트가 있습니다. 이 클라이언트는 해당 언어 또는 환경에 따라 그룹화됩니다.
+
+# 클라이언트/프로젝트 추가
+
+아래의 모든 클라이언트는 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))를 지원합니다. 곧 [ACMEv1에 대한 지원을 완전히 중단](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)할 예정입니다. 이미 아래의 클라이언트 중 하나를 사용하고 있다면, 최신 버전으로 업그레이드하시기 바랍니다. 사용 중인 클라이언트가 아래 목록에 없는 경우 ACMEv2를 지원하지 않을 수 있습니다. 이때는 프로젝트 관리자에게 문의하거나 다른 클라이언트로 전환하는 것이 좋습니다.
 
 {{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
 
@@ -27,11 +31,11 @@ Python [acme](https://github.com/certbot/certbot/tree/master/acme) 모듈은 Cer
 
 # 클라이언트/프로젝트 추가
 
-ACME 클라이언트 또는 위 페이지에 없는 Let's Encrypt와 통합된 프로젝트를 알고 계신 경우, `data/clients.json` 파일을 업데이트하는 풀 요청을 GitHub의 [웹사이트 저장소](https://github.com/letsencrypt/website/)]에 제출해 주십시오.
+ACME 클라이언트 또는 위 페이지에 없는 Let's Encrypt와 통합된 프로젝트를 알고 계신 경우, `data/clients.json` 파일을 업데이트하는 풀 요청을 GitHub의[웹사이트 저장소](https://github.com/letsencrypt/website/)에 제출해 주십시오.
 
 풀 요청 전에 확인할 사항:
 
-1. 당신의 클라이언트가 [Let's Encrypt의 상표 정책](https://www.abetterinternet.org/trademarks)을 따르는지
+1. 당신의 클라이언트가 [Let's Encrypt의 상표 정책](/trademarks)을  따르는지
 1. 당신의 클라이언트가 브라우저 기반 버전이 아니며 자동 갱신을 지원하는지
 1. 커밋이 클라이언트를 관련 섹션의 **끝**에 추가하는지 (해당되는 경우 "acme_v2"도 잊지 마십시오!)
 1. 당신의 커밋이 `clients.json`의 맨 위에 있는 `lastmod`날짜 스탬프를 업데이트 하는지

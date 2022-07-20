@@ -7,7 +7,6 @@ show_lastmod: 1
 ---
 
 
-
 <!--
 Note for translators:
  
@@ -30,9 +29,9 @@ Note for translators:
 
 {{% def id="ACME" english="Automatic Certificate Management Environment" name="סביבת ניהול אישורים אוטומטית" abbr="ACME" abbr_first="1" %}} הפרוטוקול שממומש על ידי [Let's Encrypt](#def-LE). תכניות שתואמות לפרוטוקול הזה יכולות להשתמש בו על מנת לתקשר עם Let's Encrypt ולבקש [אישור](#def-leaf). [ה־RFC של ACME](https://tools.ietf.org/html/rfc8555) - [ויקיפדיה](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
-{{% def id="ACME-client" english="ACME Client" name="לקוח ACME" %}} תכנית שיכולה לתקשר עם שרת ACME כדי לבקש [אישור](#def-leaf). {{% /def %}}
+{{% def id="ACME-client" english="ACME Client" name="לקוח ACME‏" %}} תכנית שיכולה לתקשר עם שרת ACME כדי לבקש [אישור](#def-leaf). {{% /def %}}
 
-{{% def id="ACME-server" english="ACME Server" name="שרת ACME" %}} שרת תואם ACME שיכול לייצר [אישורים](#def-leaf). התכנית שלLet's Encrypt,‏ [Boulder](#def-boulder), היא תואמת ACME [עם מספר שינויים קלים](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" english="ACME Server" name="שרת ACME‏" %}} שרת תואם ACME שיכול לייצר [אישורים](#def-leaf). התכנית שלLet's Encrypt,‏ [Boulder](#def-boulder), היא תואמת ACME [עם מספר שינויים קלים](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="בולדר" english="Boulder" %}} התכנית שמממשת את ACME, בפיתוח ובשימוש של [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
@@ -88,7 +87,7 @@ Note for translators:
 
 {{% def id="EdDSA" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" name="אלגוריתם חתימה דיגיטלית על עקום אדוארדס" %}}  מערכת מודרנית לחתימה עם מפתח ציבורי על בסיס עקומים אליפטיים, תוכנן כדי לפתור מספר [תקלות מימוש](https://ed25519.cr.yp.to/) נפוצות עם הצפנה על עקום אליפטי. רשויות אישורים כגון [Let's Encrypt](#def-LE) עדיין לא יכולות לספק אישורי EdDSA. [ויקיפדיה](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
-{{% def id="ECC" english="Elliptic Curve Cryptography" abbr="ECC" name="הצפנה מבוססת עקום אליפטי" %}} סוג של הצפנת מפתח ציבורי שמבוסס על עקומות אליפטיות. ECC (הצפנת עקום אליפטי) משתמשת במפתחות קטנים יותר ביחס להצפנה שאינה מבוססת עקום אליפטי תוך אספקת אבטחה ברמה דומה. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [ויקיפדיה](https://he.wikipedia.org/wiki/הצפנה_מבוססת_עקום_אליפטי) {{% /def %}}
+{{% def id="ECC" english="Elliptic Curve Cryptography" abbr="ECC" name="הצפנה מבוססת עקום אליפטי" %}} סוג של הצפנת מפתח ציבורי שמבוסס על עקומות אליפטיות. ECC (הצפנת עקום אליפטי) משתמשת במפתחות קטנים יותר ביחס להצפנה שאינה מבוססת עקום אליפטי תוך אספקת אבטחה ברמה דומה. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [ויקיפדיה](https://he. wikipedia. org/wiki/הצפנה_מבוססת_עקום_אליפטי) {{% /def %}}
 
 {{% def id="EV" english="Extended Validation" abbr="EV" name="תיקוף מורחב" %}} סוג של תיקוף אישור שעבורו [רשות האישורים](#def-CA) אימתה את היישות המשפטית ששולטת באתר. הם מכילים מידע על היישות הזאת. הפקדים מ[רשות האישורים](#def-CA) הם יותר מחמירים עבור אישורי [OV](#def-OV)‏. [Let's Encrypt](#def-LE) אינה מציעה אישורי EV. [ויקיפדיה](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
@@ -96,11 +95,11 @@ Note for translators:
 
 {{% def id="IdenTrust" name="IdenTrust" %}} [רשות אישורים](#def-CA). הרשות IdenTrust [חתמה באופן צולב](#def-cross-signing) על [אישורי התווך](#def-intermediate) של [Let's Encrypt](#def-LE)‏: [‎/certificates](/certificates). [ויקיפדיה](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
-{{% def id="intermediate" name="Intermediate certificate" %}} אישור שנחתם על ידי אישור [עליון](#def-root) או אישור מתווך אחר ומסוגל לחתום על אישורים אחרים. הם משמשים לחתום על אישור עלה תוך שמירה על המפתח הפרטי של האישור העליון מחוץ לאינטרנט. אישורי תווך נכללים בתור [שרשרת האישורים](#def-chain). [ויקיפדיה](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
+{{% def id="intermediate" english="Intermediate certificate" name="אישור תווך" %}} אישור שנחתם על ידי אישור [עליון](#def-root) או אישור תווך אחר ומסוגל לחתום על אישורים אחרים. הם משמשים לחתום על אישורי עלה תוך שמירה על המפתח הפרטי של האישור העליון מחוץ לאינטרנט. אישורי תווך נכללים כחלק מ[שרשרת האישורים](#def-chain). [ויקיפדיה](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
 {{% def id="IDNA" english="Internationalized Domain Names for Applications" abbr="IDNA" name="שמות תחום תואמי בינאום ליישומים" %}} להלן [שמות תחום תואמי בינאום](#def-IDN). {{% /def %}}
 
-{{% def id="IDN" english="Internationalized Domain Name" abbr="IDN" name="שם תחום תואם בינאום" %}} שם תחום עם תווים מחוץ לטווח של `a` עד `z`, `0` עד `9` ומינוס (`-`). השמות יכולים להכיל תווים עבריים, ערביים, סיניים, טמילים, קיריליים או מבוססי לטיניים עם סימנים סובבי תו או ליגטורות. הייצוג המקודד של שמות תחום תואמי בינאום מתחיל ב־`xn--‎`. ב־[Let's Encrypt](#def-LE) קיימת תמיכה בשמות תחום תואמי בינאום: https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [ויקיפדיה](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890)‏ - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" english="Internationalized Domain Name" abbr="IDN" name="שם תחום תואם בינאום" %}} שם תחום עם תווים מחוץ לטווח של `a` עד `z`,‏ `0` עד `9` ומינוס (`-`). השמות יכולים להכיל תווים עבריים, ערביים, סיניים, טמילים, קיריליים או מבוססי לטיניים עם סימנים סובבי תו או ליגטורות. הייצוג המקודד של שמות תחום תואמי בינאום מתחיל ב־`xn--‎`. ב־[Let's Encrypt](#def-LE) קיימת תמיכה בשמות תחום תואמי בינאום: https://letsencrypt.org/2016/10/21/introducing-idn-support.html. [ויקיפדיה](https://en.wikipedia.org/wiki/Internationalized_domain_name) - [RFC 5890](https://tools.ietf.org/html/rfc5890)‏ - [RFC 5891](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
 {{% def id="ISRG" english="Internet Security Research Group" abbr="ISRG" name="קבוצת מחקר אבטחת האינטרנט" %}} הארגון שמאחורי [Let's Encrypt](#def-LE):‏ [https://www.abetterinternet.org/about/‎](https://www.abetterinternet.org/about/). [ויקיפדיה](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
@@ -108,15 +107,15 @@ Note for translators:
 
 {{% def id="key-pair" english="Key-pair" name="צמד מפתחות" %}} שילוב של מפתח פרטי וציבורים שמשמשים יחד לחתימה או להצפנה. המפתח הציבורי בדרך כלל מוטמע בתוך אישור, בעוד המפתח הפרטי מאוחסן בנפרד ויש לשמור עליו בסוד. צמד מפתחות יכול לשמש להצפנה ולפענוח, כדי לחתום ולאמת נתונים או כדי לשאת ולתת על מפתחות משניים, בהתאם ליישום. [ויקיפדיה](https://he.wikipedia.org/wiki/מפתח_ציבורי) {{% /def %}}
 
-{{% def id="leaf" english="Leaf certificate (end-entity certificate)" name="אישור עלה (אישור יישות קצה)" %}} הנפוץ ביותר, אישור שנחתם על ידי אישור [תווף](#def-intermediate), תקף לסדרה מסוימת של שמות תחום ואין אפשרות לחתום אתו על אישורים אחרים. זה סוג האישור שמבקשים [לקוחות ACME](#def-ACME-client) וגם זה שבו משתמשים [שרתי אינטרנט](#def-web-server). [ויקיפדיה](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate) {{% /def %}}
+{{% def id="leaf" english="Leaf certificate (end-entity certificate)" name="אישור עלה (אישור יישות קצה)" %}} הנפוץ ביותר, אישור שנחתם על ידי אישור [תווך](#def-intermediate), תקף לסדרה מסוימת של שמות תחום ואין אפשרות לחתום אתו על אישורים אחרים. זה סוג האישור שמבקשים [לקוחות ACME](#def-ACME-client) וגם זה שבו משתמשים [שרתי אינטרנט](#def-web-server). [ויקיפדיה](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate) {{% /def %}}
 
-{{% def id="LE" name="Let's Encrypt" abbr="LE" %}} [רשות האישורים](#def-CA) שמופעלת על ידי [ISRG](#def-ISRG). [ויקיפדיה](https://he.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
+{{% def id="LE" name="Let's Encrypt‏" abbr="LE" %}} [רשות האישורים](#def-CA) שמופעלת על ידי [ISRG](#def-ISRG). [ויקיפדיה](https://he.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
 {{% def id="mixed-content" english="Mixed content" name="תוכן מעורב" %}} כאשר עמוד HTTPS טוען תת־משאבים (Javascript,‏ CSS או תמונות) על גבי HTTP. [דפדפנים](#def-web-browser) עשויים לחסום תוכן מעורב או לסמן את העמוד הזה כפחות מאובטח כאשר קיים תוכן מעורב: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. כדי לתקן בעיית תוכן מעורב, על גורם פיתוח האתר להחליף את העמודים שלהם כדי שכל המשאבים יהיו בכתובות HTTPS. [כלי מפתחים](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) שמובנים בתוך הדפדפנים עשויים לשמש כדי לאתר אילו משאבים גורמים לבעיית התוכן המעורב. {{% /def %}}
 
 {{% def id="OCSP" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" name="פרוטוקול מצב אישורים מקוון" %}} שיטה לבדוק את מצב ה[שלילה](#def-revocation) של [אישור](#def-leaf). במילים אחרות, דרך לבדוק האם [רשות אישורים](#def-CA) מציינת שהאישור לא אמור להיחשב עוד כתקף, על אף שתאריך התפוגה שלו לא הגיע עדיין. הבקשה הזאת יכולה להוביל לבעיות פרטיות כיוון שהיא מרשה לרשות האישורים ולספקיות האינטרנט לצפות באופן ישיר מי מבקר ובאיזה אתרים. [ויקיפדיה](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" english="OCSP Must-Staple" name="חובת שידוך OCSP" %}} הרחבת [אישור](#def-leaf) שמודיעה ל[דפדפן](#def-web-browser) ש[שרת האינטרנט](#def-web-server) עם האישור הזה חייב להשתמש ב[שידוך OCSP](#def-OCSP-stapling). ההרחבה משמשת לדרוש שמצב [שלילה](#def-revocation) עדכני של ה[אישור](#def-leaf) יאומת על ידי שרת האינטרנט עם כל חיבור, מה שהופך את השלילה ליותר אמינה. ל־[Let's Encrypt](#def-LE) יש אפשרות להנפיק אישורים עם [הרחבת](#def-extension) חובת שידוך OCSP לפי בקשה. [בלוג האבטחה של Mozilla‏](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" english="OCSP Must-Staple" name="חובת שידוך OCSP‏" %}} הרחבת [אישור](#def-leaf) שמודיעה ל[דפדפן](#def-web-browser) ש[שרת האינטרנט](#def-web-server) עם האישור הזה חייב להשתמש ב[שידוך OCSP](#def-OCSP-stapling). ההרחבה משמשת לדרוש שמצב [שלילה](#def-revocation) עדכני של ה[אישור](#def-leaf) יאומת על ידי שרת האינטרנט עם כל חיבור, מה שהופך את השלילה ליותר אמינה. ל־[Let's Encrypt](#def-LE) יש אפשרות להנפיק אישורים עם [הרחבת](#def-extension) חובת שידוך OCSP לפי בקשה. [בלוג האבטחה של Mozilla‏](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
 {{% def id="OCSP-stapling" english="OCSP stapling" name="שידוך פרוטוקול מצב אישורים מקוון" %}} דרך ל[שרת האינטרנט](#def-web-server) לשלוח ל[דפדפן](#def-web-browser) תגובת [OCSP](#def-OCSP) שחתומה על ידי [רשות אישורים](#def-CA), כדי שהדפדפן עצמו לא יצטרך לבצע בקשת OCSP (פרוטוקול מצב אישור מקוון) משנית אל רשות האישורים, מציג שיפור במהירות ובפרטיות. מוכר גם בתור הרחבת בקשת מצב אישור TLS. [ויקיפדיה](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
@@ -128,9 +127,9 @@ Note for translators:
 
 {{% def id="pfx" english="Personal Information Exchange Files (.pfx)" name="קובצי החלפת פרטים אישיים (‎.pfx)" %}} קובץ שמכיל [אישור עלה](#def-leaf), את ה[שרשרת](#def-chain) שלו עד האישור העליון ואת המפתח הפרטי של אישור העלה. ניתן גם לקרוא את https://en.wikipedia.org/wiki/PKCS_12. [מרכז פיתוח החומרה של Microsoft](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
-{{% def id="precertificate" name="Precertificate" %}} אישורי קדם הם חלק מ[שקיפות אישורים](#def-CT). אישור קדם הוא עותק של ה[אישור](#def-leaf) שרשות האישורים מתכננת להנפיק, עם תוספת הרחבת רעל a [חמורה](#def-critical) כדי להגן מפני מצב בו האישור יתקבל על ידי תכנה כלשהי. רשות אישורים מגישה אישור קדם ל[יומני רשות אישורים](#def-CT-log) בתמורה ל־[SCTs](#def-SCT). מאחר שאישור קדם אינו זהה לאישור התואם שלך, יכול להיות שביומני שקיפות האישורים יופיעו שניהם. [RFC 6962 סעיף 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
+{{% def id="precertificate" english="Precertificate" name="אישור קדם" %}} אישורי קדם הם חלק מ[שקיפות אישורים](#def-CT). אישור קדם הוא עותק של ה[אישור](#def-leaf) שרשות האישורים מתכננת להנפיק, עם תוספת הרחבת רעל a [חמורה](#def-critical) כדי להגן מפני מצב בו האישור יתקבל על ידי תכנה כלשהי. רשות אישורים מגישה אישור קדם ל[יומני רשות אישורים](#def-CT-log) בתמורה ל־[SCTs](#def-SCT). מאחר שאישור קדם אינו זהה לאישור התואם שלך, יכול להיות שביומני שקיפות האישורים יופיעו שניהם. [RFC 6962 סעיף 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
-{{% def id="HPKP" english="HTTP Public Key Pinning" abbr="HPKP" name="נעיצת מפתח ציבורי עם HTTP" %}} מנגנון אבטחה שמבקש מהדפדפן לדרוש ש[שרשרת אישורים](#def-chain) תשתמש במפתחות ציבוריים מסוימים בטעינות עתידיות. Chrome הציג את המנגנון הזה כדי להגן מפני חבלות מצד רשות האישורים אך זה גרם לתקלות גישה לאתרים, מה שהוביל את Chrome [לצמצם את השימוש בו ולהסיר אותו](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [ויקיפדיה](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
+{{% def id="HPKP" english="HTTP Public Key Pinning" abbr="HPKP" name="נעיצת מפתח ציבורי עם HTTP‏" %}} מנגנון אבטחה שמבקש מהדפדפן לדרוש ש[שרשרת אישורים](#def-chain) תשתמש במפתחות ציבוריים מסוימים בטעינות עתידיות. Chrome הציג את המנגנון הזה כדי להגן מפני חבלות מצד רשות האישורים אך זה גרם לתקלות גישה לאתרים, מה שהוביל את Chrome [לצמצם את השימוש בו ולהסיר אותו](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [ויקיפדיה](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
 {{% def id="PSL" english="Public Suffix List" abbr="PSL" name="רשימת סיומות ציבורית" %}} רשימה של *סיומות ציבוריות* שמתוחזקת על ידי Mozilla ומציינת אילו שמות תחום באינטרנט זמינים לטובת יישויות שונות כדי לרשום תת־מתחמים. למשל, הרשימה מציינת שגם `com` וגם `co.uk` הן סיומות ציבוריות למרות ש־`co.uk` אינו שם תחום עליון. דפדפנים משתמשים ברשימה הזאת, לצד מקורות נוספים, כדי למנוע מאתרים שכפי הנראה מופעלים על ידי יישויות שונות לשתף ביניהם עוגיות. [Let's Encrypt](#def-LE) משתמשת ברשימה גם כדי לחשב מגבלת מיכסות: [מגבלת-מיכסות](/rate-limits). https://publicsuffix.org/‎ {{% /def %}}
 
@@ -140,7 +139,7 @@ Note for translators:
 
 {{% def id="root" english="Root certificate" name="אישור עליון" %}} אישור ש[נחתם עצמית](#def-self-signed) שנשלט על ידי [רשות אישורים](#def-CA), משמש לחתימה על אישורי ה[תווך](#def-intermediate) ונכלל ב[מאגרי המהימנים](#def-store). [ויקיפדיה](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
-{{% def id="root-program" english="Root Program" name="תכנית עליונה" %}} מסמכי המדיניות בהן משתמש ארגון כדי להחליט אילו אישורים לכלול ב[מאגר המהימנות](#def-store) ולפיכך להחליט אילו רשויות אישורים נחשבות מהימנות על ידי התכנה שלהם. {{% /def %}}
+{{% def id="root-program" english="Root Program" name="תכנית עליונה" %}} מסמכי המדיניות בהן משתמש ארגון כדי להחליט אילו אישורים לכלול ב[מאגר המהימנות](#def-store) ולפיכך להחליט אילו רשויות אישורים נחשבות מהימנות על ידי התכנה שלו. {{% /def %}}
 
 {{% def id="RSA" abbr="RSA" %}} אלגוריתם מפתח ציבורי שמשמש להצפנה ולחתימה דיגיטלית של אישורים. [ויקיפדיה](https://he.wikipedia.org/wiki/RSA) {{% /def %}}
 
@@ -172,7 +171,7 @@ Note for translators:
 
 {{% def id="web-server" english="Web server" name="שרת אינטרנט" %}} תכנית שמגישה עמודי אינטרנט (או, בהתאם לסיומת, את החומרה של השרת שמעארח אותה). [ויקיפדיה](https://he.wikipedia.org/wiki/שרת_HTTP) {{% /def %}}
 
-{{% def id="wildcard" english="Wildcard Certificate" name="אישור כוללני" %}} אישור שתקפים לתת־שמות תחומים עד עומק של רמה אחת למטה. למשל, אישור שמכיל [SAN](#def-SAN) ל־`*.example.com` תקף על `blog.example.com` ועל `www.example.com` אך **לא** על `bork.bork.example.com` או על `example.com`). אישור כוללני נבדל בכך שמופיעה בו כוכבית (*) בהתחלה במקום תת־שם תחום. [Let's Encrypt](#def-LE) [מספקת אישורים כוללניים החל ממרץ 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [ויקיפדיה](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
+{{% def id="wildcard" english="Wildcard Certificate" name="אישור כוללני" %}} אישורים שתקפים לתת־שמות תחומים עד עומק של רמה אחת למטה. למשל, אישור שמכיל [SAN](#def-SAN) ל־`‎*.example.com` תקף על `blog.example.com` ועל `www.example.com` אך **לא** על `bork.bork.example.com` או על `example.com`. אישור כוללני נבדל בכך שמופיעה בו כוכבית (*) בהתחלה במקום תת־שם תחום. [Let's Encrypt](#def-LE) [מספקת אישורים כוללניים החל ממרץ 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [ויקיפדיה](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} התקן שמגדיר את תצורת אישורי המפתח הציבורי. [ויקיפדיה](https://he.wikipedia.org/wiki/X.509) {{% /def %}}
 

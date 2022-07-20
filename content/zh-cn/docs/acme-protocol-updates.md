@@ -2,17 +2,15 @@
 title: ACME 协议更新日志
 slug: acme-protocol-updates
 top_graphic: 1
-date: 2016-07-27
 lastmod: 2019-10-07
 show_lastmod: 1
 ---
 
-
-[IETF标准化的](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html)ACME协议[RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)是 Let's Encrypt 工作原理的基石。它目前是一份标准草案，尚未最终标准化为 RFC。随着协议规范的不断发展，Let's Encrypt 将使用 ACME 的更新版本。我们这样做是因为安全性是我们的主要关注点，而紧接着几乎同样重要的时向后兼容性。
+[IETF标准化的](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html)ACME协议[RFC 8555](https://datatracker.ietf.org/doc/rfc8555/)是 Let’s Encrypt 工作原理的基石。
 
 # 目前使用的 API 端点
 
-我们目前有以下 API 端点。请参阅[我们的分歧文档](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)，以比较其实现与当前的 ACME 标准。
+我们目前有以下 API 端点。 请参阅[我们的分歧文档](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)，以比较其实现与当前的 ACME 标准。
 
 ## ACME v2 (RFC 8555)
 
@@ -26,7 +24,7 @@ show_lastmod: 1
 
 # 向后兼容的 ACME 新功能
 
-Let's Encrypt 可能会不时地为现有 API 端点实现向后兼容的新功能。通常我们引入向后兼容的新功能是因为我们决定实现之前未实现的部分 ACME 规范。
+Let’s Encrypt 可能会不时地为现有 API 端点实现向后兼容的新功能。 通常我们引入向后兼容的新功能是因为我们决定实现之前未实现的部分 ACME 规范。
 
 当现有 API 端点引入新功能时，这些功能一定已经在公开的 ACME 规范中写明，并且不会影响正确实现规范的客户端。
 

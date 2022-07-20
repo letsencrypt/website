@@ -6,7 +6,6 @@ lastmod: 2019-10-07
 show_lastmod: 1
 ---
 
-
 Il protocollo [IETF-standardizzato](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), è il fondamento su cui funziona Let's Encrypt.
 
 # API Endpoints

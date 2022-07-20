@@ -1,37 +1,35 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt는 <span>무료이며</span> <span>자동화된</span> <span>개방형</span> 인증 기관입니다."
+other = "<span>2억 2500 만</span>개의 사이트에 TLS 인증서를 제공하는 비영리 인증 기관입니다."
 
 [home_hero_getting_started]
 other = "시작하기"
 
 [home_hero_donate]
-other = "후원하기"
+other = "기부"
 
 [home_hero_sponsor]
 other = "스폰서"
 
 [home_major_sponsors]
-other = "주요 스폰서와 후원사"
+other = "주요 스폰서 및 후원자"
 
 [home_from_our_blog]
-other = "저희 블로그"
+other = "출처: 블로그"
 
 [read_more]
-other = "더 읽기"
+other = "더보기"
 
 [subscribe_rss]
-other = "<a href=\"{{ .Permalink }}\">RSS</a> 구독하기"
+other = '<a href="{{ .Permalink }}">RSS</a>를 통해 구독하기'
 
 [footer_support_us]
-other = "보다 안전하고 개인정보보호에 중점을 둔 웹을 지원하십시오."
+other = "더욱 안전하고 프라이버시를 존중하는 웹을 지원하여 주십시오."
 
 [footer_donate]
-other = "후원하기"
+other = "기부"
 
 [footer_mailing]
-other = "모든 편지나 문의 사항은 다음으로 보내주십시오."
+other = "모든 문의 및 질문:"
 
 [footer_policies]
 other = """
@@ -40,16 +38,16 @@ other = """
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation은 The Linux Foundation의 등록 상표입니다. Linux는 Linus Torvalds의 등록 상표입니다."
+other = "Linux Foundation은 Linux Foundation의 등록 상표입니다. Linux는 Linus Torvalds의 등록 상표입니다."
 
 [header_skip_nav]
-other = "네비게이션 링크 건너뛰기"
+other = "탐색 링크 건너뛰기"
 
 [last_updated]
-other = "마지막 업데이트:"
+other = "최근 업데이트: "
 
 [see_all_doc]
-other = "모든 문서를 참조"
+other = "모든 문서 보기"
 
 [blog_feed]
 other = "Let's Encrypt 블로그 피드"
@@ -59,6 +57,9 @@ other = "플래티넘"
 
 [gold]
 other = "골드"
+
+[gold_basic]
+other = "골드 베이직"
 
 [silver]
 other = "실버"
@@ -70,31 +71,31 @@ other = "언어"
 other = "영어로 보기"
 
 [old_version]
-other = "참고: 번역 이후 영어 버전이 업데이트되었습니다"
+other = "참고: 번역된 이후로 영문판이 업데이트되었습니다"
 
 [not_yet_translated]
-other = "이 웹 페이지는 아직 번역되지 않았습니다. <a href=\"https://github.com/letsencrypt/website\"> 여기 </a>에 기여할 수 있습니다."
+other = '이 페이지는 아직 번역되지 않았습니다. <a href="https://github.com/letsencrypt/website">여기</a>에서 기여할 수 있습니다.'
 
 [english_is_canonical]
-other = "영어 버전은 인증되었습니다."
+other = "영문판의 내용이 우선됩니다"
 
 [graph_issued]
-other = "발행됨"
+other = "발급 횟수"
 
 [graph_certificates_active]
-other = "인증서가 활성화되어 있습니다."
+other = "인증서 활성화"
 
 [graph_fully_qualified_domains_active]
-other = "완전히 인증된 도메인이 활성화됩니다."
+other = "정규화된 도메인 활성화"
 
 [graph_registered_domains_active]
-other = "등록된 도메인이 활성화되어 있습니다."
+other = "등록된 도메인 활성화"
 
 [graph_active_count]
-other = "활성화된 개수"
+other = "활성화 수"
 
 [graph_issued_per_day]
-other = "하루에 발행량"
+other = "일일 발급 횟수"
 
 [graph_all_users]
 other = "모든 사용자"
@@ -106,22 +107,40 @@ other = "미국 사용자"
 other = "일본 사용자"
 
 [graph_percent_https]
-other = "HTTPS를 통한 페이지로드 비율 (14 일 이동 평균)"
+other = "페이지를 HTTPS로 불러오는 비율 (14일 이동평균)"
+
+[certificate_policy]
+other = "인증서 정책"
 
 [certificate_transparency_name]
 other = "이름"
 
 [certificate_transparency_role_production]
-other = "제작"
+other = "생산"
 
 [certificate_transparency_role_testing]
-other = "시험"
+other = "테스트"
 
 [certificate_transparency_uri]
 other = "URI"
 
 [certificate_transparency_public_key]
-other = "공개키"
+other = "공개 키"
+
+[certificate_transparency_log_id]
+other = "로그 ID"
+
+[certificate_transparency_state]
+other = "상태"
+
+[certificate_transparency_window_start]
+other = "창 시작"
+
+[certificate_transparency_window_end]
+other = "창 종료"
+
+[certification_practices_statement]
+other = "인증서 관행 지침"
 
 [overview]
 other = "개요"
@@ -136,22 +155,34 @@ other = "고급 구독자 정보"
 other = "클라이언트 개발자 정보"
 
 [acme_divergences]
-other = "현재 ACME 초안과 다른점"
+other = "현재 ACME 초안과의 차이점"
+
+[acme_divergences_rfc]
+other = "현재 ACME RFC와의 차이점"
+
+[onboarding_customers]
+other = "Let's Encrypt 및 ACME로 고객 유치하기"
 
 [paypal_donate_alt]
-other = "Donate with PayPal button"
+other = "PayPal로 후원 버튼"
+
+[paypal_donate_title]
+other = "PayPal로 후원"
+
+[not_found]
+other = "페이지가 존재하지 않습니다, 주소를 확인하여 주십시오."
 
 [amount_per_year]
-other = "${{ .nb }}/년 (미화)"
+other = "${{ .nb }}/년 (미국 달러)"
 
 [3y_commitment]
 other = "3년 약정"
 
 [1_99_employees]
-other = "1-99명 사업장"
+other = "직원 1-99명"
 
 [100_999_employees]
-other = "100-999명 사업장"
+other = "직원 100-999명"
 
 [1000_employees]
-other = "1000명 이상 사업장"
+other = "직원 1000명 이상"

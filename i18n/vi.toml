@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Một tổ chức cấp chứng nhận phi lợi nhuận cung cấp chứng nhận TLS cho <span>260 triệu</span> websites."
+other = "Tổ chức phát hành chứng chỉ phi lợi nhuận cung cấp chứng chỉ TLS cho <span> 225 triệu </span> trang web."
 
 [home_hero_getting_started]
 other = "Bắt Đầu"
@@ -10,7 +8,7 @@ other = "Bắt Đầu"
 other = "Đóng Góp"
 
 [home_hero_sponsor]
-other = "Nhà Tài Trợ"
+other = "Nhà tài trợ"
 
 [home_hero_annual_report]
 other = "Đọc Báo Cáo Thường Niên năm <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> của Chúng Tôi"
@@ -22,7 +20,7 @@ other = "Desktop"
 other = "Mobile"
 
 [home_major_sponsors]
-other = "Major Sponsors and Donors"
+other = "Các nhà tài trợ chính và các nhà tài trợ"
 
 [home_from_our_blog]
 other = "Từ blog của chúng tôi"
@@ -31,16 +29,16 @@ other = "Từ blog của chúng tôi"
 other = "Đọc thêm"
 
 [subscribe_rss]
-other = "Đăng ký <a href=\"{{ .Permalink }}\">via RSS</a>"
+other = 'Đăng ký <a href="{{ .Permalink }}">qua RSS</a>'
 
 [footer_support_us]
-other = "Hỗ trợ một trang web an toàn và bảo mật hơn."
+other = "Hỗ trợ một trang Web an toàn hơn và tôn trọng quyền riêng tư."
 
 [footer_donate]
-other = "Đóng Góp"
+other = "donate"
 
 [footer_mailing]
-other = "Gửi tất cả thư và câu hỏi tới:"
+other = "Gửi tất cả thư hoặc thắc mắc đến:"
 
 [footer_policies]
 other = """
@@ -49,13 +47,13 @@ Xem <a href="https://www.abetterinternet.org/trademarks/">chính sách nhãn hi�
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation là nhãn hiệu đã đăng ký của The Linux Foundation. Linux là nhãn hiệu đã đăng ký của Linus Torvalds."
+other = "Linux Foundation là thương hiệu đã đăng ký của The Linux Foundation. Linux là nhãn hiệu đã đăng ký của Linus Torvalds."
 
 [header_skip_nav]
-other = "Bỏ qua liên kết điều hướng"
+other = "Bỏ qua các liên kết điều hướng"
 
 [last_updated]
-other = "Cập nhật lần cuối: "
+other = "Cập nhật mới nhất: "
 
 [see_all_doc]
 other = "Xem tất cả Tài liệu"
@@ -64,7 +62,7 @@ other = "Xem tất cả Tài liệu"
 other = "Let's Encrypt Blog Feed"
 
 [platinum]
-other = "Bạch Kim"
+other = "Platinum"
 
 [gold]
 other = "Vàng"
@@ -76,7 +74,7 @@ other = "Vàng Cơ Bản"
 other = "Bạc"
 
 [languages]
-other = "Ngôn Ngữ"
+other = "Các Ngôn ngữ"
 
 [view_in_english]
 other = "Xem bằng tiếng Anh"
@@ -85,22 +83,22 @@ other = "Xem bằng tiếng Anh"
 other = "Lưu ý: Phiên bản tiếng Anh đã được cập nhật kể từ khi dịch"
 
 [not_yet_translated]
-other = "Trang web này chưa được dịch. Bạn có thể đóng góp <a href=\"https://github.com/letsencrypt/website\">tại đây</a>."
+other = 'Trang web này vẫn chưa được dịch. Bạn có thể đóng góp <a href="https://github.com/letsencrypt/website">tại đây</a>.'
 
 [english_is_canonical]
-other = "Phiên bản tiếng Anh có thẩm quyền"
+other = "Phiên bản tiếng Anh có căn cứ đích xác"
 
 [graph_issued]
-other = "Đã phát hành"
+other = "Đã cấp"
 
 [graph_certificates_active]
-other = "Chứng chỉ hoạt động"
+other = "Các Chứng chỉ đang hoạt động"
 
 [graph_fully_qualified_domains_active]
-other = "Tên miền đủ điều kiện hoạt động"
+other = "Các Tên miền Đủ điều kiện Hoạt động"
 
 [graph_registered_domains_active]
-other = "Tên miền đã đăng ký hoạt động"
+other = "Các Tên miền đã đăng ký đang hoạt động"
 
 [graph_active_count]
 other = "Số lượng hoạt động"
@@ -112,13 +110,16 @@ other = "Phát hành mỗi ngày"
 other = "Tất cả người dùng"
 
 [graph_usa_users]
-other = "Người dùng Mỹ"
+other = "Các người dùng Mỹ"
 
 [graph_japan_users]
-other = "Người dùng Nhật Bản"
+other = "Các người dùng Nhật Bản"
 
 [graph_percent_https]
-other = "Tỷ lệ trạng được tải qua HTTPS (trung bình trong 14 ngày)"
+other = "Tỷ lệ Phần trăm Pageloads trên HTTPS (trung bình trong 14 ngày)"
+
+[certificate_policy]
+other = "Chính sách Chứng chỉ"
 
 [certificate_transparency_name]
 other = "Tên"
@@ -133,43 +134,55 @@ other = "Thử nghiệm"
 other = "URI"
 
 [certificate_transparency_public_key]
-other = "Khoá Công Khai"
+other = "Khóa Công khai"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "Trạng thái"
+
+[certificate_transparency_window_start]
+other = "Khởi động Window"
+
+[certificate_transparency_window_end]
+other = "Kết thúc Window"
+
+[certification_practices_statement]
+other = "Tuyên bố Chứng chỉ Thực hành"
 
 [overview]
-other = "Tổng Quan"
+other = "Tổng quan"
 
 [subscriber_information]
-other = "Thông Tin Thuê Bao"
+other = "Thông tin người đăng ký"
 
 [advanced_subscriber_information]
-other = "Thông Tin Thuê Bao Nâng Cao"
+other = "Thông tin người đăng ký nâng cao"
 
 [client_developer_information]
-other = "Thông Tin Nhà Phát Triển"
+other = "Thông tin Nhà phát triển Khách hàng"
 
 [acme_divergences]
-other = "Sự Khác Biệt so với Dự Thảo ACME Hiện Tại"
+other = "Sự khác biệt so với Dự thảo ACME hiện tại"
 
 [acme_divergences_rfc]
-other = "Sự Khác Biệt so với ACME RFC"
+other = "Sự khác biệt so với ACME RFC"
 
 [onboarding_customers]
-other = "Đưa Khách Hàng của bạn đến với Let's Encrypt và ACME"
-
-# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+other = "Giới thiệu khách hàng của bạn với Let's Encrypt và ACME"
 
 [paypal_donate_alt]
-other = "Đóng góp bằng nút PayPal"
+other = "Đóng góp với nút PayPal"
 
 [paypal_donate_title]
 other = "Đóng góp với PayPal"
 
 [not_found]
-other = "Trang không tồn tại, vui lòng kiểm tra lại địa chỉ."
+other = "Trang này không tồn tại, hãy kiểm tra lại địa chỉ."
 
 [amount_per_year]
-# Ex. $10.000/yr (USD)
-other = "${{ .nb }}/năm (USD)"
+other = "${{ .nb }}/yr (USD)"
 
 [3y_commitment]
 other = "với cam kết 3 năm"

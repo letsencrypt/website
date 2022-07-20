@@ -29,4 +29,4 @@ show_lastmod: 1
 
 ### letsencrypt.org
 
-[여기](https://github.com/letsencrypt/website)에서 이 웹사이트의 문서를 개선하거나 [번역](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md)에 도움을 줄 수 있습니다.
+[여기](https://github.com/letsencrypt/website)에서 이 웹사이트의 문서를 개선하거나 [번역](https://crowdin.com/project/lets-encrypt-website)에 도움을 줄 수 있습니다.
