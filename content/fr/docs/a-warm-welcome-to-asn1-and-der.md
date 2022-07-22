@@ -1,6 +1,6 @@
 ---
 title: Bienvenue à l'ASN.1 et au DER
-slug: un-accueil-chaleureux-a-asn1-et-der
+slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
 lastmod: 2020-10-07
