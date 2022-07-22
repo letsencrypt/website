@@ -165,7 +165,7 @@ Note for translators:
 
 {{% def id="UCC" name="Unified Communications Certificate" abbr="UCC" %}} A description of a certificate containing multiple [Subject Alternative Names (SANs)](#def-SAN). {{% /def %}}
 
-{{% def id="web-browser" name="Web Browser" %}} A [user agent](#def-user-agent) used to display web pages. Examples: *Mozilla Firefox*, *Google Chrome* or *Internet Explorer*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
+{{% def id="web-browser" name="Web Browser" %}} A [user agent](#def-user-agent) used to display web pages. Examples: *Mozilla Firefox*, *Google Chrome* or *Safari*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
 {{% def id="user-agent" name="User Agent" %}} Software capable of communicating with a [web server](#def-web-server). Example: a [web browser](#def-web-browser) or [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
 
