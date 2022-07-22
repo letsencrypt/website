@@ -11,13 +11,7 @@ other = "Faire un don"
 other = "Sponsoriser"
 
 [home_hero_annual_report]
-other = "Lisez notre <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>rapport annuel 2021</a>"
-
-[home_hero_desktop]
-other = "Bureau"
-
-[home_hero_mobile]
-other = "Mobile"
+other = "Nous avons reçu le prix Levchin pour la cryptographie du monde réel ! <a href='https://abetterinternet.org/levchin-prize'>En savoir plus</a>"
 
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"

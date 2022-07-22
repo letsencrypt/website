@@ -1,43 +1,51 @@
 ---
-title: Environment de qualification
+title: Environnement de pré-production
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2020-01-21
+lastmod: 2021-05-13
 show_lastmod: 1
 ---
 
 
-Nous vous recommandons vivement d'effectuer des tests sur notre environnement de qualification avant d'utiliser notre environnement de production. Cela vous permettra de faire les choses correctement avant d'émettre des certificats de confiance et de réduire les risques de vous heurter à des limites d'utilisation.
+Nous recommandons vivement de procéder à des tests dans notre environnement de pré-production avant d'utiliser notre environnement de production. Cela vous permettra de faire les choses correctement avant d'émettre des certificats de confiance et de réduire le risque de vous heurter à des limites de taux.
 
-L'URL  pour notre [environment de qualification ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) est:
+L'URL d'ACME pour notre [environnement de pré-production d'ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) est :
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Si vous utilisez Certbot, vous pouvez utiliser notre environnement de qualification avec l'option `--dry-run`. Pour d'autre clients ACME, veuillez lire leurs instructions pour plus d'information concernant la réalistion de tests sur notre environement de qualification.
-
-Veuillez noter que l'environement de qualification V2 nécessite un client compatible ACME v2.
+Si vous utilisez Certbot, vous pouvez utiliser notre environnement de pré-production avec le flag`--dry-run`. Pour les autres clients d'ACME, veuillez lire leurs instructions pour obtenir des informations sur les tests avec notre environnement pré-production. Veuillez noter que l'environnement de pré-production v2 nécessite un client ACME compatible v2.
 
 # Limites d'utilisation
 
-L' environnement de qualification utilise les mêmes limites d'usage que ceux [décris pour l'environnement de production](/docs/rate-limits) avec les exceptions suivantes :
+L'environnement de pré-production utilise les mêmes limites d'utilisation que celles [décrites pour l'environnement de production](/docs/rate-limits) avec les exceptions suivantes :
 
-*  **Certificate par domain Enregistré** la limite est de 30,000 par semaine.
-*  **Certificate Dupliqué** la limite est de 30,000 par semaine.
-*  **Echec de validations** la limite est de 60 par heure.
-*  **Comptes par adresse IP** la limite est de 50 comptes par periode de 3 heure par adresse IP.
-* Pour ACME v2, la limite de **Nouveaux ordres** est de 1,500 nouveaux ordres par période de 3 heures par compte.
+* La limite de **certificats par domaine enregistré** est de 30 000 par semaine.
+* La limite de **duplicata de certificat** est de 30 000 par semaine.
+* La limite d'**échec de validation** est de 60 par heure.
+* La limite de **comptes par adresse IP** est de 50 comptes par période de 3 heures par IP.
+* Pour ACME v2, la limite des **nouvelles demandes** est de 1 500 nouvelles demandes par période de 3 heures par compte.
 
-# Certificat racine
+# Hiérarchie des certificats de pré-production
 
-The staging environment intermediate certificate (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem)) is issued by a root certificate **not present** in browser/client trust stores. If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding the ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) certificate to your testing trust store. Important: Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
+L'environnement de pré-production possède une hiérarchie de certificats qui [imite la production](/certificates).
+
+## Certificats intermédiaires
+
+L'environnement de pré-production a deux certificats intermédiaires actifs : un intermédiaire RSA ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) et un intermédiaire ECDSA ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
+
+L'émission ECDSA a été [activée dans Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) le 24 mars 2021 et toutes les demandes de certificats Staging avec des clés ECDSA sont signées par "(STAGING) Ersatz Edamame E1" et utilisent la hiérarchie ECDSA. De même, toutes les demandes de certificats de pré-production avec des clés RSA sont signées par "(STAGING) Artificial Apricot R3" et utilisent la hiérarchie RSA. Il n'y a aucun moyen d'obtenir un certificat signé par RSA pour une clé ECDSA, ni vice versa ; le seul moyen de contrôler l'émetteur est de contrôler le type de clé que vous générez localement.
+
+## Certificats racine
+
+L'environnement de pré-production a deux certificats racine actifs qui sont **non présents** dans les magasins de confiance des navigateurs/clients : "(STAGING) Pretend Pear X1" et "(STAGING) Bogus Brocoli X2". Si vous souhaitez modifier un client de test uniquement pour qu'il fasse confiance à l'environnement de pré-production à des fins de test, vous pouvez le faire en ajoutant le certificat ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) et/ou ["(STAGING) Bogus Broccoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) à votre magasin de certificats. Vous pouvez trouver tous nos certificats de pré-production [ici](https://github.com/letsencrypt/website/tree/master/static/certs/staging).  Important : N'ajoutez pas le certificat racine ou intermédiaire de pré-production à un magasin de confiance que vous utilisez pour la navigation ordinaire ou d'autres activités, car ils ne sont pas audités ou tenus aux mêmes normes que nos certificats racines de production, et ne sont donc pas sûrs à utiliser pour autre chose que des tests.
 
 # Transparence des Certificats
 
-L'environnement de qualification envoie des précertificats au serveur Let's Encrypt [Testflume](/docs/ct-logs) et aux journaux de CT de Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) et inclus les SCT dans les certificats émis.
+L'environnement de pré-production soumet des pré-certificats aux journaux de test de Let's Encrypt [Testflume](/docs/ct-logs) et Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs et inclut les SCT retournés dans les certificats émis.
 
-# Intégration continue / Tests en cours développement
+# Intégration continue / Test de développement
 
-L'environnement de qualification dispose d'une généreuse  limite d'usage qui permet de réaliser des tests, mais il ne convient pas parfaitement à l'intégration avec des environnements de développement ou à une intégration continue (CI). Faire des requêtes réseau vers des serveurs externes peut introduire de l'instabilité et l'environnement de qualification n'offre aucun moyen de "simuler" le DNS et la réussite des défis, ce qui rend les configurations de test plus compliquées.
+L'environnement de pré-production a des limites d'utilisation généreuses pour permettre les tests, mais il n'est pas très adapté à l'intégration avec des environnements de développement ou à intégration continue (IC). Faire des requêtes réseau vers des serveurs externes peut introduire de l'instabilité et l'environnement de pré-production n'offre aucun moyen de "falsifier" le DNS ou de contester le succès de la validation, ce qui rend les configurations de test plus compliquées.
 
-En plus de l'environnement de qualification, Let's Encrypt propose un petit serveur ACME conçu pour les environnements d'intégration continue (CI) et de  développement qui s'appelle [Pebble](https://github.com/letsencrypt/pebble). Exécuter Pebble sur votre machine de développement ou dans un environnement de CI est [rapide et facile](https://github.com/letsencrypt/pebble#docker).
+En plus de l'environnement de pré-production, Let's Encrypt propose un petit serveur ACME conçu pour les environnements de CI et de développement appelé [Pebble](https://github.com/letsencrypt/pebble). Faire tourner Pebble sur votre machine de développement ou dans un environnement CI est [rapide et facile](https://github.com/letsencrypt/pebble#docker).
