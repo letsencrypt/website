@@ -12,7 +12,7 @@ Wenn ein zu einem Zertifikat dazugehöriger privater Schlüssel nicht länger si
 
 Wenn Sie ein Let's Encrypt Zertifikat sperren, wird Let's Encrypt die Sperrinformationen durch das [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) veröffentlichen und einige Browser werden OCSP überprüfen, ob sie einem Zertifikat vertrauen sollten. Beachten Sie, dass OCSP [einige grundlegende Probleme hat](https://www.imperialviolet.org/2011/03/18/revocation.html), sodass nicht alle Browser diese Überprüfung machen werden. Trotzdem, Sperren von Zertifikaten, die einen kompromitierten privaten Schlüssel haben, ist eine wichtige Praxis und ist erforderlich vom Let's Encrypt's [Subscriber Agreement](/repository).
 
-Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) benutzen, meist durch einen ACME Client wie [Certbot](https://certbot.eff.org/). Sie müssen gegenüber Let's Encrypt bestätigen, dass Sie die Berechtigung zum Sperren des Zertifikats haben. Es gibt drei Wege, das zu tun:
+Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) benutzen, meist durch einen ACME Client wie [Certbot](https://certbot.eff.org/). Sie müssen gegenüber Let's Encrypt bestätigen, dass Sie die Berechtigung zum Sperren des Zertifikats haben. Es gibt drei Wege, das zu tun:
 
 # Vom Konto, dass das Zertifikat ausgestellt hat.
 

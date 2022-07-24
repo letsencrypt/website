@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # 目前使用的 API 端点
 
-我们目前有以下 API 端点。 请参阅[我们的分歧文档](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)，以比较其实现与当前的 ACME 标准。
+我们目前有以下 API 端点。 请参阅[我们的分歧文档](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)，以比较其实现与当前的 ACME 标准。
 
 ## ACME v2 (RFC 8555)
 

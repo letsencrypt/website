@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # נקודות גישה ל־API
 
-נכון לעכשיו אנחנו מציעים את נקודות הגישה הבאות ל־API. ניתן לעיין ב[מסמך סקירת השינויים שלנו](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) כדי להשוות בין המימושים שלהם למפרט של ACME.
+נכון לעכשיו אנחנו מציעים את נקודות הגישה הבאות ל־API. ניתן לעיין ב[מסמך סקירת השינויים שלנו](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) כדי להשוות בין המימושים שלהם למפרט של ACME.
 
 ## גרסה 2 של ACME ‏(RFC 8555)
 

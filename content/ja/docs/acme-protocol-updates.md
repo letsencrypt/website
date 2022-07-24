@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # API エンドポイント
 
-現在、以下の API エンドポイントを運用しています。 ACME 仕様と比較した実装の詳細については、[ divergences ドキュメント](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)を参照してください。
+現在、以下の API エンドポイントを運用しています。 ACME 仕様と比較した実装の詳細については、[ divergences ドキュメント](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)を参照してください。
 
 ## ACME v2 (RFC 8555)
 

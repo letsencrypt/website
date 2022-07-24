@@ -12,7 +12,7 @@ Quand la clé privée correspondante d'un certificat n'est plus sûre, vous devr
 
 Lorsque vous révoquez un certificat Let's Encrypt, Let's Encrypt publiera cette information de révocation via le [protocole d'état du certificat en ligne (OCSP)](https://fr.wikipedia.org/wiki/Online_Certificate_Status_Protocol), et certains navigateurs utiliseront l'OCSP pour savoir s'ils doivent faire confiance à un certificat. Notez que l'OCSP [a quelques problèmes fondamentaux ](https://www.imperialviolet.org/2011/03/18/revocation.html), donc tous les navigateurs ne feront pas cette vérification. Néanmoins, révoquer les certificats qui correspondent à des clés privées compromises est important, et est requis par le [Contrat d'abonné](/repository) de Let's Encrypt.
 
-Pour révoquer un certificat avec Let's Encrypt, vous utiliserez l'API [ACME ](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), probablement par l'intermédiaire d'un client ACME comme [Certbot](https://certbot.eff.org/). Vous devrez prouver à Let's Encrypt que vous êtes autorisé à révoquer le certificat. Il y a deux manières de procéder :
+Pour révoquer un certificat avec Let's Encrypt, vous utiliserez l'API [ACME ](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), probablement par l'intermédiaire d'un client ACME comme [Certbot](https://certbot.eff.org/). Vous devrez prouver à Let's Encrypt que vous êtes autorisé à révoquer le certificat. Il y a deux manières de procéder :
 
 # A partir du compte qui a émis le certificat
 

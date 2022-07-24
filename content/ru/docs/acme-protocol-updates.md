@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # Версии API
 
-В настоящее время мы поддерживаем следущие версии API. Пожалуйста, ознакомьтесь с [отступлениями от протокола ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) для сравнения реализаций.
+В настоящее время мы поддерживаем следущие версии API. Пожалуйста, ознакомьтесь с [отступлениями от протокола ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) для сравнения реализаций.
 
 ## ACME v2 (RFC 8555)
 

@@ -10,7 +10,7 @@ Le [protocole ACME](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standa
 
 # Points d'entré de l'API
 
-Nous avons actuellement les points d'entré d'API suivants. Veuillez consulter [notre documentation sur les divergences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) pour comparer leur implémentation aux spécifications ACME.
+Nous avons actuellement les points d'entré d'API suivants. Veuillez consulter [notre documentation sur les divergences](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) pour comparer leur implémentation aux spécifications ACME.
 
 ## ACME v2 (RFC 8555)
 

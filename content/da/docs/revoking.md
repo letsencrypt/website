@@ -12,7 +12,7 @@ Når et certifikats tilhørende private nøgle ikke længere er sikker, bør du 
 
 Når du tilbagekalder et Let's Encrypt certifikat, vil Let's Encrypt vil offentliggøre denne tilbagekaldelse information via [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), og nogle browsere vil tjekke OCSP, for at se, om de skal have tillid til et certifikat. Bemærk, at OCSP [har nogle grundlæggende problemer](https://www.imperialviolet.org/2011/03/18/revocation.html), så ikke alle browsere udfører denne kontrol. Alligevel er tilbagekaldelse af certifikater, der tilhører kompromitterede private nøgler en vigtig praksis og er påkrævet af Let's Encrypts [Abonnentaftale](/repository).
 
-For at tilbagekalde et certifikat via Let's Encrypt, skal du bruge [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), sandsynligvis gennem en ACME-klient som [Certbot](https://certbot.eff.org/). Du bliver nødt til at bevise overfor Let's Encrypt, at du er autoriseret til at tilbagekalde certifikatet. Der er tre måder at gøre dette:
+For at tilbagekalde et certifikat via Let's Encrypt, skal du bruge [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), sandsynligvis gennem en ACME-klient som [Certbot](https://certbot.eff.org/). Du bliver nødt til at bevise overfor Let's Encrypt, at du er autoriseret til at tilbagekalde certifikatet. Der er tre måder at gøre dette:
 
 # Fra den konto, der har udstedt certifikatet
 
