@@ -232,7 +232,7 @@
 			"category": "Docker"
 		},
 		{
-			"name": "Caddy",
+			"name": "Caddy (GH stars on 2022/07: 49.1K)",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
 			"category": "Go",
@@ -243,7 +243,7 @@
 			}
 		},
 		{
-			"name": "Lego",
+			"name": "Lego (GH stars on 2022/07: 5.4K)",
 			"url": "https://go-acme.github.io/lego/",
 			"category": "Go",
 			"library": "Go",
@@ -258,7 +258,7 @@
 			"category": "Go"
 		},
 		{
-			"name": "acmetool",
+			"name": "acmetool (GH stars on 2022/07: 1.9K)",
 			"url": "https://github.com/hlandau/acmetool",
 			"category": "Go",
 			"library": "Go",
@@ -266,7 +266,7 @@
 			"acme_v2": "acmetool >= v0.2.1"
 		},
 		{
-			"name": "Lets-proxy2",
+			"name": "Lets-proxy2 (GH stars on 2022/07: 64)",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
 			"comments": "(Reverse proxy to handle https/tls)",
@@ -287,10 +287,39 @@
 			"category": "Go"
 		},
 		{
-			"name": "Traefik",
+			"name": "Traefik (GH stars on 2022/07: 39.1K)",
 			"url": "https://traefik.io/",
 			"acme_v2": "true",
 			"category": "Go"
+		},
+		{
+			"name": "ACMEz (GH stars on 2022/07: 168)",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
+		},
+		{
+			"name": "J8a (GH stars on 2022/07: 61)",
+			"url": "https://github.com/simonmittag/j8a",
+			"category": "Go",
+			"comments": "(Reverse proxy for JSON APIs with auto-renewing TLS 1.3)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "certmanager (GH stars on 2022/07: 3)",
+			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
+			"category": "Go",
+			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
+			"library": "Go",
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"acme_v2": "true"
 		},
 		{
 			"name": "HAProxy ACME validation plugin",
@@ -960,26 +989,6 @@
 			},
 			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
     },
-    {
-			"name": "ACMEz",
-			"url": "https://github.com/mholt/acmez",
-			"category": "Go",
-			"library": "Go",
-			"acme_v2": "true"
-		},
-		{
-			"name": "Step CLI",
-			"url": "https://smallstep.com/cli/",
-			"acme_v2": "true",
-			"category": "Go"
-		},
-		{
-			"name": "J8a",
-			"url": "https://github.com/simonmittag/j8a",
-			"category": "Go",
-			"comments": "(Reverse proxy for JSON APIs with auto-renewing TLS 1.3)",
-			"acme_v2": "true"
-		},
 		{
 			"name": "CycloneACME",
 			"url": "https://oryx-embedded.com/products/CycloneACME",
@@ -1062,15 +1071,6 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
-		},
-		{
-			"name": "certmanager",
-			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
-			"category": "Go",
-			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
-			"library": "Go",
-			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
-			"acme_v2": "true"
 		},
 		{
 			"name": "KCert",
