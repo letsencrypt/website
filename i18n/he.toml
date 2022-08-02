@@ -22,7 +22,7 @@ other = "שולחן עבודה"
 other = "מכשיר נייד"
 
 [home_major_sponsors]
-other = "נותני חסות ותורמים עיקריים"
+other = "נותני חסות ומממנים עיקריים"
 
 [home_from_our_blog]
 other = "מהבלוג שלנו"
@@ -31,7 +31,7 @@ other = "מהבלוג שלנו"
 other = "מידע נוסף"
 
 [subscribe_rss]
-other = "הרשמה <a href=\"{{ .Permalink }}\">דרך RSS</a>"
+other = 'הרשמה <a href="{{ .Permalink }}">דרך RSS</a>'
 
 [footer_support_us]
 other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבדת פרטיות."
@@ -40,7 +40,7 @@ other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבד
 other = "תרומה"
 
 [footer_mailing]
-other = "שלח את כל הדואר או השאלות אל:"
+other = "יש לשלוח הודעות או בקשות אל:"
 
 [footer_policies]
 other = """
@@ -85,7 +85,7 @@ other = "מעבר לאנגלית"
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"
 
 [not_yet_translated]
-other = "עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href=\"https://github.com/letsencrypt/website\">כאן</a>."
+other = 'עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href="https://github.com/letsencrypt/website">כאן</a>.'
 
 [english_is_canonical]
 other = "הגרסה האנגלית היא הסמכות העליונה"
@@ -120,11 +120,14 @@ other = "משתמשים יפניים"
 [graph_percent_https]
 other = "אחוז עמודים שנטענו עם HTTPS (ממוצע נע על פני 14 ימים)"
 
+[certificate_policy]
+other = "מדיניות אישורים"
+
 [certificate_transparency_name]
 other = "שם"
 
 [certificate_transparency_role_production]
-other = "הפעלה מלאה (Production)"
+other = "פעילות מלאה (Production)"
 
 [certificate_transparency_role_testing]
 other = "בדיקה (Testing)"
@@ -146,6 +149,9 @@ other = "תחילת החלון"
 
 [certificate_transparency_window_end]
 other = "סוף החלון"
+
+[certification_practices_statement]
+other = "Certification Practices Statement - הצהרת תרגולות ניהול אישורים"
 
 [overview]
 other = "סקירה"

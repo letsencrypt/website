@@ -21,7 +21,7 @@ If your certificate validates on some of the "Known Compatible" platforms but no
 * [iPhone 5 and above can upgrade to iOS 10](https://en.wikipedia.org/wiki/IPhone_5) and can thus trust ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (but Android >= 2.3.6 will work by default [due to our special cross-sign](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* Ubuntu >= precise / 12.04 (with updates applied)
+* Ubuntu >= Precise Pangolin / 12.04 (with updates applied)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (with updates applied)
 * [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
@@ -67,4 +67,4 @@ validate Let's Encrypt certificates.
 
 # ISRG Root X2 (new ECDSA root) - coming soon
 
-We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion. ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. For more information, check our our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
+We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion. ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. For more information, check out our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).

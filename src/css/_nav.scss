@@ -2,156 +2,176 @@
  * Site nav
  */
 html[dir="rtl"] .site-nav {
-    float: left;
+  float: left;
 }
 .site-nav {
-    float: right;
-    margin-top: 29px;
+  float: right;
+  margin-top: 29px;
 
-    // Below this width the menu items may wrap below the logo.
-    // Have them wrap at a predictable width, justify left,
-    // and get rid of the top margin. Also eliminate left margin
-    // on first menu item because of left justification.
-    @media screen and (max-width: 1050px) {
-      html[dir="rtl"] {
-           float: right;
-           clear: right;
-      }
-      clear: left;
-      float: left;
-      margin-top: 0px;
-
-      .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:first-child > a.pure-menu-link {
-        padding-left: 0;
-      }
+  // Below this width the menu items may wrap below the logo.
+  // Have them wrap at a predictable width, justify left,
+  // and get rid of the top margin. Also eliminate left margin
+  // on first menu item because of left justification.
+  @media screen and (max-width: 1050px) {
+    html[dir="rtl"] {
+      float: right;
+      clear: right;
     }
+    clear: left;
+    float: left;
+    margin-top: 0px;
 
-    #menuIcon {
-        display: none;
+    .pure-menu-horizontal
+      > .pure-menu-list
+      > .pure-menu-item:first-child
+      > a.pure-menu-link {
+      padding-left: 0;
     }
+  }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+  #menuIcon {
+    display: none;
+  }
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 20px;
     }
+  }
 
-    .pure-menu-horizontal > .pure-menu-list > .pure-menu-item:last-child > a.pure-menu-link {
-        padding-right: 0;
-    }
+  .pure-menu-horizontal
+    > .pure-menu-list
+    > .pure-menu-item:last-child
+    > a.pure-menu-link {
+    padding-right: 0;
+  }
 }
 
 #menuIcon {
-    display: none;
+  display: none;
 }
 
 /**
  * Pure menu customizations
  */
 
-.pure-menu-active > .pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+.pure-menu-active > .pure-menu-link,
+.pure-menu-link:hover,
+.pure-menu-link:focus {
   background-color: transparent;
 }
 
 .pure-menu-children {
-    padding-bottom: 0.5em;
-    border-radius: 0 0 10px 10px;
+  padding-bottom: 0.5em;
+  border-radius: 0 0 10px 10px;
 }
 
 .pure-menu-children .pure-menu-link {
-    line-height: 1.3;
+  line-height: 1.3;
 }
 
 a.pure-menu-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .pure-menu-link {
+  color: darken($brand-color, 20%);
+  &:visited {
     color: darken($brand-color, 20%);
-    &:visited {
-        color: darken($brand-color, 20%);
-    }
+  }
 }
+
+.pure-menu-active > .pure-menu-children.menu-for-languages,
+.pure-menu-allow-hover:hover > .pure-menu-children.menu-for-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pure-menu-horizontal .pure-menu-children.menu-for-languages {
+  left: auto;
+  right: 0;
+}
+
 
 // Mobile nav styles
 @include media-query($on-palm) {
-    html[dir="rtl"] #menuIcon {
-        float: left;
-    }
-    #menuIcon {
-        color: $grey-color-dark;
-        font-size: 20px;
-        display: block;
-        float: right;
-        width: 36px;
-        line-height: 0;
-        padding-top: 5px;
-        text-align: center;
-        cursor: pointer;
-        margin-top: 30px;
-    }
-    html[dir="rtl"] .site-nav {
-        text-align: right;
-        left: 18px;
-        left: 0;
-    }
-    .site-nav {
-        text-align: left;
-        margin-top: 20px;
-        right: 18px;
-        position: relative;
-        margin-bottom: 10px;
-        right: 0;
-        width: 100%;
-        margin-top: 0;
-        top: 0px;
-    }
+  html[dir="rtl"] #menuIcon {
+    float: left;
+  }
+  #menuIcon {
+    color: $grey-color-dark;
+    font-size: 20px;
+    display: block;
+    float: right;
+    width: 36px;
+    line-height: 0;
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  html[dir="rtl"] .site-nav {
+    text-align: right;
+    left: 18px;
+    left: 0;
+  }
+  .site-nav {
+    text-align: left;
+    margin-top: 20px;
+    right: 18px;
+    position: relative;
+    margin-bottom: 10px;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+    top: 0px;
+  }
 
-    .pure-menu {
-        clear: both;
-        display: none;
-        position:relative;
-        padding-bottom:20px;
-    }
+  .pure-menu {
+    clear: both;
+    display: none;
+    position: relative;
+    padding-bottom: 20px;
+  }
 
-    .pure-menu-allow-hover:hover > .pure-menu-children,
-    .pure-menu-active > .pure-menu-children {
-      position: unset;
-    }
+  .pure-menu-allow-hover:hover > .pure-menu-children,
+  .pure-menu-active > .pure-menu-children {
+    position: unset;
+  }
 
-    .pure-menu-has-children.pure-menu-active > .pure-menu-link:after {
-        content: "\25BE";
-    }
+  .pure-menu-has-children.pure-menu-active > .pure-menu-link:after {
+    content: "\25BE";
+  }
 
-    html[dir="rtl"] .pure-menu-children {
-        right: 0;
-        margin-right: 20px;
-    }
-    .pure-menu-children {
-        display: none;
-        left: 0;
-        position: relative;
-        margin-left:20px;
-    }
-    .pure-menu-children.show-children {
-        display: block;
-    }
+  html[dir="rtl"] .pure-menu-children {
+    right: 0;
+    margin-right: 20px;
+  }
+  .pure-menu-children {
+    display: none;
+    left: 0;
+    position: relative;
+    margin-left: 20px;
+  }
+  .pure-menu-children.show-children {
+    display: block;
+  }
 
-    .page-link {
-        display: block;
-        padding: 5px 10px;
-    }
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+  }
 }
 
 #menu.open {
-    .pure-menu-item {
-        line-height: 1.5;
-    }
-    .pure-menu {
-        display: block;
-    }
+  .pure-menu-item {
+    line-height: 1.5;
+  }
+  .pure-menu {
+    display: block;
+  }
 }

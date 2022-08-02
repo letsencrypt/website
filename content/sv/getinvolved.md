@@ -29,4 +29,4 @@ Vi kan också behöva hjälp med mjukvaruutveckling. All vår kod finns på [Git
 
 ### letsencrypt.org
 
-Du kan förbättra denna webbplats och dess dokumentation [här](https://github.com/letsencrypt/website) eller hjälpa till med dess [översättning](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md).
+Du kan förbättra denna webbplats och dess dokumentation [här](https://github.com/letsencrypt/website) eller hjälpa till med dess [översättning](https://crowdin.com/project/lets-encrypt-website).

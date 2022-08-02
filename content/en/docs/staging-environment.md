@@ -3,7 +3,7 @@ title: Staging Environment
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2021-11-09
+lastmod: 2022-06-13
 show_lastmod: 1
 ---
 
@@ -42,7 +42,7 @@ The staging environment has two active root certificates which are **not present
 
 # Certificate Transparency
 
-The staging environment submits pre-certificates to the Let's Encrypt [Testflume](/docs/ct-logs) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
+The staging environment submits pre-certificates to the Let's Encrypt [Sapling](/docs/ct-logs) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
 
 # Continuous Integration / Development Testing
 

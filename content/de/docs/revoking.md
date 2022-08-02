@@ -3,7 +3,7 @@ title: Zertifikate sperren
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2020-02-22
+lastmod: 2021-08-03
 show_lastmod: 1
 ---
 
@@ -19,7 +19,7 @@ Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME API](https:
 Wenn Sie ursprünglich das Zertifikat ausgestellt haben und weiterhin Kontrolle über das Konto, welches Sie benutzten, haben, können Sie Ihre Kontoanmeldeinformationen benutzen, welches das Zertifikat ausgestellt hat. Certbot wird das standardmässig machen. Beispiel:
 
 ```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
 ```
 
 # Benutzen des privaten Schlüssels des Zertifikats
@@ -31,12 +31,12 @@ Um diese Methode zu benutzen, müssen Sie zuerst das Zertifikat, welches gesperr
 Sie brauchen auch eine Kopie des privaten Schlüssels im PEM Format. Wenn Sie alles zusammen haben, können Sie das Zertifikat sperren:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
 ```
 
 # Benutzung eines unterschiedlich autorisierten Kontos
 
-Wenn irgendjemand ein Zertifikat ausgestellt hat, nachdem Ihr Server oder Ihr DNS kompromitiert wurde, möchten Sie das Zertifikat erneut sperren. Um die Richtigkeit der Sperrung sicherzustellen, brauch Let's Encrypt die Sicherheit, dass Sie die Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)! Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT ](https://tools.ietf.org/html/rfc8555#section-8.4) machen, eine [Datei auf Ihren HTTP Server](https://tools.ietf.org/html/rfc8555#section-8.3) ablegen oder bieten ein [spezielles TLS Zertifikat](https://tools.ietf.org/html/rfc8737#section-3). Im Allgemeinen wird ein ACME Client das alles für Sie erledigen. Beachten Sie, dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung. Sie können das Zertifikat im Ergebnis wieder sperren, wenn Sie es nicht möchten oder zerstören Sie einfach den privaten Schlüssel. Wenn Sie die Ausstellung eines Zertifikats im Allgemeinen verhindern möchten, können Sie eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt, dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen existierenden Domainnamen. Um dies zu tun, führen Sie dies aus:
+Wenn irgendjemand ein Zertifikat ausgestellt hat, nachdem Ihr Server oder Ihr DNS kompromitiert wurde, möchten Sie das Zertifikat erneut sperren. Um die Richtigkeit der Sperrung sicherzustellen, brauch Let's Encrypt die Sicherheit, dass Sie die Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)! Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT ](https://tools.ietf.org/html/rfc8555#section-8.4) machen, eine [Datei auf Ihren HTTP Server](https://tools.ietf.org/html/rfc8555#section-8.3) ablegen oder bieten ein [spezielles TLS Zertifikat](https://tools.ietf.org/html/rfc8737#section-3). Im Allgemeinen wird ein ACME Client das alles für Sie erledigen. Beachten Sie, dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung. Sie können das Zertifikat im Ergebnis wieder sperren, wenn Sie es nicht möchten oder zerstören Sie einfach den privaten Schlüssel. Wenn Sie die Ausstellung eines Zertifikats im Allgemeinen verhindern möchten, können Sie eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt, dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen existierenden Domainnamen. Um dies zu tun, führen:
 
 ```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
@@ -47,5 +47,5 @@ Und folgen Sie den Anweisungen. Wenn Sie die Validierung über HTTP dem DNS bevo
 Nur wenn Sie validierte Kontrolle über all die Domainnamen in dem Zertifikat, welches Sie sperren möchten, haben, können Sie das Zertifikat herunterladen von [crt.sh](https://crt.sh/), und fahren Sie mit dem Sperren des Zertifikats fort, als wenn Sie es ausgestellt haben:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
 ```

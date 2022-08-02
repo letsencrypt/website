@@ -34,4 +34,4 @@ show_lastmod: 1
 
 ## קבלת עזרה
 
-אם ברצונך לקבל סיוע בניתוח תקלה שקשורה ב־IPv6 נא לבקר ב[פורום הקהילתי](https://community.letsencrypt.org) שלנו.
+לקבלת סיוע בניתוח תקלה שקשורה ב־IPv6 נא לבקר ב[פורום הקהילתי](https://community.letsencrypt.org) שלנו.

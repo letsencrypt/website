@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt adalah Otoritas Sertifikasi yang <span>gratis</span>, <span>terotomatisasi</span>, dan <span>terbuka</span>."
+other = "Organisasi Otoritasi Sertifikat (CA) Non-profit yang menyediakan sertifikat TLS untuk lebih dari <span>225 juta</span> website."
 
 [home_hero_getting_started]
 other = "Memulai"
@@ -22,10 +20,10 @@ other = "Dari blog kami"
 other = "Baca lebih lanjut"
 
 [subscribe_rss]
-other = "Langganan <a href=\"{{ .Permalink }}\">via RSS</a>"
+other = 'Langganan <a href="{{ .Permalink }}">via RSS</a>'
 
 [footer_support_us]
-other = "Dukung Web yang lebih aman dan lebih menghormati privasi."
+other = "Mendukung Web yang lebih aman dan lebih menghargai privasi."
 
 [footer_donate]
 other = "Donasi"
@@ -40,43 +38,46 @@ Lihat <a href="https://www.abetterinternet.org/trademarks/">kebijakan merek</a> 
 """
 
 [linux_foundation_trademark]
-other = "Linux Foundation adalah merek dagang terdaftar milik The Linux Foundation. Linux dalah merk dagang terdaftar milik Linus Torvalds."
+other = "Linux Foundation adalah merek dagang milik The Linux Foundation. Linux adalah merek dagang milik Linus Torvalds."
 
 [header_skip_nav]
 other = "Lewati tautan navigasi"
 
 [last_updated]
-other = "Terakhir diperbaharui:"
+other = "Pembaruan terakhir: "
 
 [see_all_doc]
-other = "Lihat semua dokumentasi"
+other = "Lihat semua Dokumentasi"
 
 [blog_feed]
-other = "Umpan dari Blog Let's Encrypt"
+other = "Umpan Blog Let's Encrypt"
 
 [platinum]
 other = "Platinum"
 
 [gold]
-other = "Gold"
+other = "Emas"
+
+[gold_basic]
+other = "Emas Dasar"
 
 [silver]
-other = "Silver"
+other = "Perak"
 
 [languages]
-other = "Bahasa"
+other = "Daftar Bahasa"
 
 [view_in_english]
 other = "Lihat dalam Bahasa Ingris"
 
 [old_version]
-other = "Catatan: Versi pada Bahasa Ingris telah diperbaharui ketimbang terjemahan ini."
+other = "Catatan: Versi Bahasa Inggris telah diperbaharui sejak translasi ini dibuat"
 
 [not_yet_translated]
-other = "Laman ini belum diterjemahkan. Anda dapat ikut berkontribusi <a href=\"https://github.com/letsencrypt/website\">di sini</a>."
+other = 'Laman web ini belum di terjemahkan. Anda dapat ikut berkontribusi <a href="https://github.com/letsencrypt/website">di sini</a>.'
 
 [english_is_canonical]
-other = "The English version is authoritative"
+other = "Versi Bahasa Inggris lebih Otoritatif"
 
 [graph_issued]
 other = "Terbit"
@@ -85,7 +86,7 @@ other = "Terbit"
 other = "Sertifikat Aktif"
 
 [graph_fully_qualified_domains_active]
-other = "Domain Terkualifikasi Aktif"
+other = "FQDN Aktif"
 
 [graph_registered_domains_active]
 other = "Domain Terdaftar Aktif"
@@ -94,34 +95,94 @@ other = "Domain Terdaftar Aktif"
 other = "Jumlah Aktif"
 
 [graph_issued_per_day]
-other = "Penerbitan Per Hari"
+other = "Terbit Per Hari"
 
 [graph_all_users]
-other = "Semua Pengguna"
+other = "Semua pengguna"
 
 [graph_usa_users]
-other = "Pengguna dari Amerika"
+other = "Pengguna Amerika"
 
 [graph_japan_users]
-other = "Pengguna dari Jepang"
+other = "Pengguna Jepang"
 
 [graph_percent_https]
-other = "Persentase Pageload lewat HTTPS (per 14 hari moving average)"
+other = "Persentase dari Pageloads lewat HTTPS (Rata-rata bergerak per 14 hari)"
+
+[certificate_policy]
+other = "Kebijakan Sertifikat"
+
+[certificate_transparency_name]
+other = "Nama"
+
+[certificate_transparency_role_production]
+other = "Produksi"
+
+[certificate_transparency_role_testing]
+other = "Uji coba"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Kunci publik"
+
+[certificate_transparency_log_id]
+other = "ID Log"
+
+[certificate_transparency_state]
+other = "Status"
+
+[certificate_transparency_window_start]
+other = "Mulai Periode"
+
+[certificate_transparency_window_end]
+other = "Akhir Periode"
+
+[certification_practices_statement]
+other = "Pernyataan Praktik Sertifikasi"
 
 [overview]
-other = "Ringkasan"
+other = "Pratinjau"
 
 [subscriber_information]
-other = "Informasi untuk Pelanggan (*Subcriber*)"
+other = "Informasi Langganan"
 
 [advanced_subscriber_information]
-other = "Informasi untuk Pelanggan Tingkat Lanjut"
+other = "Informasi Pelanggan Tingkat Lanjut"
 
 [client_developer_information]
-other = "Informasi untuk Pengembang Klien (*Client Developer*)"
+other = "Informasi Pengembang Klien"
 
 [acme_divergences]
-other = "Perbedaan dari draf ACME terkini"
+other = "Perbedaan dari Draf ACME Saat Ini"
+
+[acme_divergences_rfc]
+other = "Perbedaan dari RFC ACME"
+
+[onboarding_customers]
+other = "Mulai Melibatkan Pelanggan Anda dengan Let's Encrypt dan ACME"
 
 [paypal_donate_alt]
-other = "Donate with PayPal button"
+other = "Tombol Donasi dengan PayPal"
+
+[paypal_donate_title]
+other = "Donasi dengan PayPal"
+
+[not_found]
+other = "Halaman itu tidak ada, harap periksa alamatnya."
+
+[amount_per_year]
+other = "${{ .nb }}/th (USD)"
+
+[3y_commitment]
+other = "dengan komitmen 3 tahun"
+
+[1_99_employees]
+other = "1-99 pegawai"
+
+[100_999_employees]
+other = "100-999 pegawai"
+
+[1000_employees]
+other = "1000+ pegawai"

@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Tài liệu
 top_graphic: 1
 menu:
   main:

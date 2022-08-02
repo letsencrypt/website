@@ -17,7 +17,7 @@ show_lastmod: 1
 * Активний
   * ISRG Root X1 (`RSA 4096, O = Internet Security Research Group, CN = ISRG Root X1`)
     * [Підписаний особисто](https://crt.sh/?id=9314791): [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
-    * схрещений з DST Root CA X3: [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt)
+    * [схрещений з DST Root CA X3](https://crt.sh/?id=3958242236): [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt)
 * Активна, обмежена доступність(перспективність)
   * ISRG Root X2 (`ECDSA P-384, O = Internet Security Research Group, CN = ISRG Root X2`)
     * [Самопідписаний](https://crt.sh/?id=3335562555)[](/certs/isrg-root-x2.der)[pem](/certs/isrg-root-x2.pem)[](/certs/isrg-root-x2.txt)

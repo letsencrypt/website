@@ -1,10 +1,9 @@
 ---
 title: FAQ
-linkTitle: Frequently Asked Questions (FAQ)
+linkTitle: 자주 묻는 질문
 slug: faq
 top_graphic: 1
-date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2020-04-23
 menu:
   main:
     weight: 30
@@ -16,7 +15,7 @@ show_lastmod: 1
 FAQ는 다음의 두 개로 나누어 집니다:
 
 * [일반적인 질문](#general)
-* [기술적인 질문](#technical)
+* [기술 질문](#technical)
 
 # <a id="general">일반적인 질문</a>
 
@@ -32,7 +31,7 @@ Let’s Encrypt를 사용하려면 [시작하기](/getting-started) 페이지를
 
 인증서 이용은 무료입니다. Let’s Encrypt는 비영리이며, 임무는 HTTPS를 널리 채택케 하여 더욱 안전하고 사생활이 보호되는 웹을 만드는 것입니다. 서비스는 무료이며 모든 웹 사이트가 HTTPS를 배포하기도 쉽습니다.
 
-전 세계에 무료 서비스를 제공하기 위해 양질의 스폰서, 후원 기관, 개인으로부터의 후원이 필요합니다. 만약 후원에 관심 있으시다면, [기부](/donate/) 또는 [스폰서가 되는 법](https://www.abetterinternet.org/sponsor/)을 고려해 주십시오.
+전 세계에 무료 서비스를 제공하기 위해 양질의 스폰서, 후원 기관, 개인으로부터의 후원이 필요합니다. 만약 후원에 관심 있으시다면, [기부](/donate/) 또는 [스폰서가 되는 법](https://www.abetterinternet.org/sponsor//)을 고려해 주십시오.
 
 경우에 따라, 통합 서비스 제공자(예:호스팅 공급자)는 Let’s Encrypt 인증서를 제공하는데 발생하는데 계상된 행정 관리 비용만을 반영하는 방식으로 명목상 비용만을 부담할 수 있습니다.
 
@@ -44,6 +43,17 @@ Let’s Encrypt는 소규모 조직이 운영하며 비용을 줄이기 위한 �
 2. 아주 활발하고 유용한 [커뮤니티 지원 포럼](https://community.letsencrypt.org/)이 있습니다. 커뮤니티 회원들은 질의 응답 전문가이면서, 대부분의 공통적인 질문들은 이미 답변이 되었습니다.
 
 [비디오](https://www.youtube.com/watch?v=Xe1TZaElTAs)를 통해 방대한 커뮤니티 지원력을 확인하시기 바랍니다.
+
+## Let's Encrypt를 사용하는 웹사이트가 피싱/멀웨어/스캠 등에 연루되어 있습니다. 저는 어떻게 해야 할까요?
+
+사용자를 더욱 효과적으로 보호할 수 있는 Google 세이프 브라우징이나 Microsoft 스마트 스크린 프로그램에 해당 사이트를 신고하시길 추천드립니다. 아래는 신고 URL입니다.
+
+* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
+
+If you'd like to read more about our policies and rationale, you can do so here:
+
+https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 # <a id="technical">기술 질문</a>
 
@@ -73,7 +83,7 @@ Let's Encrypt 인증서는 일반적인 도메인 검증 인증서이므로 귀�
 
 OV 또는 EV 인증서를 발급할 계획이 없습니다.
 
-## 여러 도메인 이름(SAN 인증서 또는 UCC 인증서)에 대한 인증서를 받을 수 있습니까?
+## 여러 도메인 이름 (SAN 인증서 또는 UCC 인증서) 에 대한 인증서를 받을 수 있습니까?
 
 네, 같은 인증서는 Subject Alternative Name(SAN) 메커니즘을 이용하여 여러 개의 다른 이름이 포함될 수 있습니다.
 
@@ -85,7 +95,7 @@ OV 또는 EV 인증서를 발급할 계획이 없습니다.
 
 사용 가능한 [ACME 클라이언트](/docs/client-options/)가 많습니다. 운영체제에서 잘 작동될 가능성이 높습니다. [Certbot](https://certbot.eff.org/)부터 시작하는 것이 좋습니다.
 
-## 기존 키 혹은 CSR(인증서 서명 요청)을 사용할 수 있습니까?
+## 기존 키 혹은 CSR (인증서 서명 요청) 을 사용할 수 있습니까?
 
 네, 하지만 모든 클라이언트가 이 기능을 지원하는 것은 아닙니다. [Certbot](https://certbot.eff.org/)을 참고하십시오.
 
@@ -95,7 +105,4 @@ IP 주소는 언제든지 변경될 수 있기 때문에 검증하는데 사용�
 
 ## 인증서를 성공적으로 갱신했지만, 검증이 실행되지 않았습니다 - 어떻게 그게 가능합니까?
 
-도메인에 대한 과제를 성공적으로 완료하면, 나중에 귀하의 계정에서 다시 사용될 수 있도록 인증이 캐시에 저장됩니다. 캐시에 저장된 인증은 유효성 검사 시점으로부터 30일 동안 지속합니다.
-요청한 인증서에 필요한 모든 권한이 캐시에 저장된 경우 캐시에 저장된 관련 권한이 만료될 때까지 유효성 검사가 다시 수행되지 않습니다.
-
-캐시에 저장된 권한은 유효성 검사 시점으로부터 30일 동안 지속됩니다. 요청한 인증서에 필요한 모든 권한이 캐시에 저장된 경우 캐시에 저장된 관련 인증이 만료될 때까지 유효성 검사가 다시 수행되지 않습니다.
+도메인에 대한 과제를 성공적으로 완료하면, 나중에 귀하의 계정에서 다시 사용될 수 있도록 인증이 캐시에 저장됩니다. 캐시에 저장된 인증은 유효성 검사 시점으로부터 30일 동안 지속합니다. 요청한 인증서에 필요한 모든 권한이 캐시에 저장된 경우 캐시에 저장된 관련 권한이 만료될 때까지 유효성 검사가 다시 수행되지 않습니다.
