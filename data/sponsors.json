@@ -434,6 +434,8 @@
       "name": "Plat.ai",
       "url": "https://plat.ai/",
       "image": "plat-ai-logo.svg"
-    }
+    },
+
+    { "name": "Cryptotracker.com", "url": "https://cryptotracker.com/", "image": "cryptotracker-logo.svg" }
   ]
 }
