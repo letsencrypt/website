@@ -75,7 +75,8 @@ directory & subdirectories have an Overall Requests limit of 40 requests per sec
 
 We have two other limits that you're very unlikely to run into.
 
-You can create a maximum of 10 <a id="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
+You can create a maximum of 10 <a id="accounts-per-ip-address"></a>[**Accounts
+per IP Address**](/docs/too-many-registrations-for-this-ip) per 3 hours. You can
 create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
 3 hours. Hitting either account rate limit is very rare, and we recommend that
 large integrators prefer a design [using one account for many customers](/docs/integration-guide).
