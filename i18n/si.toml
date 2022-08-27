@@ -1,0 +1,194 @@
+[home_hero_title]
+other = "වියමන අඩවි <span>දශලක්‍ෂ 260</span> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
+
+[home_hero_getting_started]
+other = "පටන්ගන්න"
+
+[home_hero_donate]
+other = "පරිත්‍යාග"
+
+[home_hero_sponsor]
+other = "අනුග්‍රහය"
+
+[home_hero_annual_report]
+other = "අපගේ 2020 <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>වාර්ෂික වාර්තාව</a> කියවන්න"
+
+[home_major_sponsors]
+other = "ප්‍රධාන අනුග්‍රාහකයින් සහ මූල්‍යදායකයින්"
+
+[home_from_our_blog]
+other = "සටහන්පත වෙතින්"
+
+[read_more]
+other = "තව කියවන්න"
+
+[subscribe_rss]
+other = '<a href="{{ .Permalink }}">RSS</a> අනුසන් කරන්න'
+
+[footer_support_us]
+other = "වඩාත් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට ගරු කරන වියමනකට සහාය වන්න."
+
+[footer_donate]
+other = "පරිත්‍යාග"
+
+[footer_mailing]
+other = "වෙත සියළුම තැපැල් හෝ විමසීම් යවන්න:"
+
+[footer_policies]
+other = """
+අපගේ <a href="/privacy/">රහස්‍යතා ප්‍රතිපත්තිය</a> දකින්න.<br>
+අපගේ <a href="https://www.abetterinternet.org/trademarks">වෙළඳලකුණු ප්‍රතිපත්තිය</a> දකින්න.
+"""
+
+[linux_foundation_trademark]
+other = "ලිනක්ස් ෆවුන්ඩේෂන් යනු ද ලිනක්ස් ෆවුන්ඩේෂන් හි ලියාපදිංචි වෙළඳ ලකුණයි. ලිනක්ස් යනු ලිනස් ටොර්වල්ඩ්ස් ගේ ලියාපදිංචි වෙළඳ ලකුණකි."
+
+[header_skip_nav]
+other = "යාත්‍රණ සබැඳි මඟහරින්න"
+
+[last_updated]
+other = "අවසන් යාවත්කාලය: "
+
+[see_all_doc]
+other = "සියළුම ප්‍රලේඛන දකින්න"
+
+[blog_feed]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් සටහන් සංග්‍රහය"
+
+[platinum]
+other = "ප්ලැටිනම්"
+
+[gold]
+other = "රන්"
+
+[gold_basic]
+other = "රන් මූලික"
+
+[silver]
+other = "රිදී"
+
+[languages]
+other = "භාෂා"
+
+[view_in_english]
+other = "ඉංග්‍රීසියෙන් දකින්න"
+
+[view_in_xxx]
+other = "සිංහලෙන් දකින්න"
+
+[old_version]
+other = "සටහන: පරිවර්තනයෙන් පසු ඉංග්‍රීසි අනුවාදය යාවත්කාල වී ඇත"
+
+[not_yet_translated]
+other = 'මෙම වියමන පිටුව තවමත් පරිවර්තනය කර නැත. ඔබට <a href="https://github.com/letsencrypt/website">මෙතැනින්</a> දායක විය හැකිය.'
+
+[english_is_canonical]
+other = "ඉංග්‍රීසි අනුවාදය ප්‍රාමාණිකයි"
+
+[graph_issued]
+other = "නිකුත් කළ"
+
+[graph_certificates_active]
+other = "ක්‍රියාත්මක සහතික"
+
+[graph_fully_qualified_domains_active]
+other = "පූර්ණ-සුදුසුකම්ලත් වසම් ක්‍රියාත්මකයි"
+
+[graph_registered_domains_active]
+other = "ක්‍රියාත්මක ලියාපදිංචි වසම්"
+
+[graph_active_count]
+other = "ක්‍රියාත්මක ගණන"
+
+[graph_issued_per_day]
+other = "දිනකට නිකුත් කිරීම්"
+
+[graph_all_users]
+other = "සියළුම පරිශීලකයින්"
+
+[graph_usa_users]
+other = "එ.ජන. පරිශීලකයින්"
+
+[graph_japan_users]
+other = "ජපන් පරිශීලකයින්"
+
+[graph_percent_https]
+other = "HTTPS හරහා පූරණය වූ පිටු ප්‍රතිශතය (දවස් 14 චල මධ්‍යකය)"
+
+[certificate_policy]
+other = "සහතික ප්‍රතිපත්තිය"
+
+[certificate_transparency_name]
+other = "නම"
+
+[certificate_transparency_role_production]
+other = "නිෂ්පාදන"
+
+[certificate_transparency_role_testing]
+other = "අත්හදා බැලීම"
+
+[certificate_transparency_uri]
+other = "ඒ.ස.හ."
+
+[certificate_transparency_public_key]
+other = "ප්‍රසිද්ධ යතුර"
+
+[certificate_transparency_log_id]
+other = "සටහනේ හැඳු."
+
+[certificate_transparency_state]
+other = "තත්‍වය"
+
+[certificate_transparency_window_start]
+other = "කවුළුව ආරම්භය"
+
+[certificate_transparency_window_end]
+other = "කවුළුව අවසානය"
+
+[certification_practices_statement]
+other = "සහතික කිරීමේ පරිචය ප්‍රකාශය"
+
+[overview]
+other = "දළ විශ්ලේෂණය"
+
+[subscriber_information]
+other = "අනුසන්කරුගේ තොරතුරු"
+
+[advanced_subscriber_information]
+other = "අනුසන්කරුගේ වැඩිදුර තොරතුරු"
+
+[client_developer_information]
+other = "අනුග්‍රාහක සංවර්ධකගේ තොරතුරු"
+
+[acme_divergences]
+other = "වත්මන් ACME කටුපිටපත අතර වෙනස්කම්"
+
+[acme_divergences_rfc]
+other = "ACME RFC වෙතින් වෙනස්කම්"
+
+[onboarding_customers]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් හා ඒ.සී.එම්.ඊ. සමඟින් පාරිභෝගිකයින් එක් කරන්න"
+
+[paypal_donate_alt]
+other = "පේපෑල් බොත්තම සමඟින් පරිත්‍යාග"
+
+[paypal_donate_title]
+other = "පේපෑල් සමඟින් පරිත්‍යාග"
+
+[not_found]
+other = "මෙම පිටුව නොපවතී, ලිපිනය පරීක්‍ෂා කරන්න."
+
+[amount_per_year]
+other = "${{ .nb }}/අවු. (USD)"
+
+[3y_commitment]
+other = "අවුරුදු 3 ක බැඳීමක් සමඟ"
+
+[1_99_employees]
+other = "සේවයකයින් 1-99"
+
+[100_999_employees]
+other = "සේවයකයින් 100-999"
+
+[1000_employees]
+other = "සේවයකයින් 1000+"
