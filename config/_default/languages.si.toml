@@ -1,0 +1,12 @@
+
+title = "Let's Encrypt"
+contentDir = "content/si"
+languageName = "සිංහල"
+languageCode = "si"
+beforeColon = ""
+weight = 590
+description = """
+Let's Encrypt යනු නොමිලේ, ස්වයංක්‍රීය සහ විවෘත සහතික අධිකාරියකි. ලාභ නොලබන අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහය (අයි.එස්.ආර්.ජී.) විසින් මෙහෙයවයි.
+"""
+numberFormat = "-|.|,"
+viewInThatLanguage = "සිංහලෙන් දකින්න"
