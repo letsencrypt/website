@@ -3,7 +3,7 @@ title: Expiration Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2021-09-25
+lastmod: 2022-08-31
 show_lastmod: 1
 ---
 
@@ -27,6 +27,9 @@ If you've issued a new certificate that adds or removes a name relative to your
 old certificate, you will get expiration email about your old certificate.
 If you check the certificate currently running on your website, and it
 shows the correct date, no further action is needed.
+To see a history of issued certificates for your domain, you could search for
+your domain on certificate transparancy log monitors such as
+[crt.sh](https://crt.sh/).
 
 # Unsubscribing
 
