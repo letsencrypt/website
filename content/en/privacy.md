@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2022-03-11
+lastmod: 2022-08-29
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -31,7 +31,7 @@ You may need to download client software from a repository such as those run by 
 
 ## Visitor
 
-When you are a Visitor browsing the Let's Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, PayPal, The Giving Block, and Gemini depending on the payment method selected, and stored in ISRG's Salesforce database. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), and [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. Our shipping fulfillment partners are Shopify and SHIPHERO.
+When you are a Visitor browsing the Let's Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, SendOwl, PayPal, The Giving Block, and Gemini depending on the payment method selected, and stored in ISRG's Salesforce database. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, SendOwl, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), and [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. Our shipping fulfillment partners are Shopify, SendOwl, and SHIPHERO.
 
 You may have the option to provide your email address to receive communications related to ISRG projects through a signup on an ISRG web site and via other marketing materials. Any communication delivered via MailChimp or Salesforce and your interactions with [MailChimp](https://www.intuit.com/privacy/statement/) and [Salesforce](https://www.salesforce.com/company/privacy/) are governed by their privacy policies. We may occasionally use your email address to send personalized communications related to Let's Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at press@letsencrypt.org.
 
