@@ -2,7 +2,7 @@
 title: ACME Client Implementations
 slug: client-options
 top_graphic: 1
-lastmod: 2021-06-12
+lastmod: 2022-09-07
 ---
 
 {{< clientslastmod >}}
@@ -42,5 +42,6 @@ Before submitting a pull request please make sure:
 
 1. The client respects the [Let's Encrypt trademark policy](https://www.abetterinternet.org/trademarks).
 1. The client is not browser-based and supports automatic renewals.
+1. The client performs [routine renewals at randomized times](/docs/integration-guide#when-to-renew), or encourages that configuration.
 1. Your commit adds your client to the **end** of the relevant sections (Don't forget the "acme_v2" if appropriate!).
 1. Your commit updates the `lastmod` date stamp at the top of `clients.json`.
