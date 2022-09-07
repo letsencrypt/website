@@ -3,7 +3,7 @@ author: Aaron Gable
 date: 2022-09-07T00:00:00Z
 slug: new-life-for-CRLs
 title: "A New Life for Certificate Revocation Lists"
-excerpt: "Let’s Encrypt has developed new infrastructure to make CRLs a practical tool for our 200M active certs."
+excerpt: "Let's Encrypt has developed new infrastructure to make CRLs a practical tool for our 200M active certs."
 ---
 
 This month, Let's Encrypt is turning on new infrastructure to support revoking certificates via Certificate Revocation Lists. Despite having been largely supplanted by the Online Certificate Status Protocol for over a decade now, CRLs are gaining new life with recent browser updates. By collecting and summarizing CRLs for their users, browsers are making reliable revocation of certificates a reality, improving both security and privacy on the web. Let's talk about exactly what this new infrastructure does, and why it's important.
