@@ -3,7 +3,7 @@ title: Expiration Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2022-09-02
+lastmod: 2022-09-06
 show_lastmod: 1
 ---
 
@@ -13,8 +13,8 @@ show_lastmod: 1
 If you provide an email address to Let's Encrypt when you create your
 account, we'll do our best to automatically send you expiry notices
 when your certificate is coming up for renewal. We try to send the first
-notice at 20 days before your certificate expires, and more notices
-at 10 days and 1 day before it expires. We recommend that you rely on
+notice at 20 days before your certificate expires, and the second and final notice
+at 10 days before it expires. We recommend that you rely on
 your ACME client to automatically renew your certificates, and only use
 these expiry notices as a warning to check on your automation.
 
