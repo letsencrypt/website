@@ -67,11 +67,6 @@
       "url": "https://www.akamai.com/",
       "image": "akamai-logo.png"
     },
-    {
-      "name": "American Library Association",
-      "url": "http://www.ala.org/offices/oif",
-      "image": "ala-logo.png"
-    },
     { "name": "Cyon", "url": "https://www.cyon.ch/", "image": "cyon-logo.png" },
     {
       "name": "Infomaniak",
@@ -184,12 +179,6 @@
       "url": "https://www.duocircle.com/",
       "image": "duocircle-logo.png"
     },
-    { "name": "ISE", "url": "https://www.ise.de/", "image": "ise-logo.png" },
-    {
-      "name": "Private Internet Access",
-      "url": "https://www.privateinternetaccess.com/",
-      "image": "privateinternetaccess-logo.png"
-    },
     { "name": "Brave", "url": "https://brave.com/", "image": "brave-logo.png" },
     {
       "name": "ServerPilot",
@@ -232,11 +221,6 @@
       "image": "datto-logo.png"
     },
     { "name": "Axiom", "url": "https://axiom.co/", "image": "axiom-logo.png" },
-    {
-      "name": "Verizon Digital Media Services",
-      "url": "https://www.verizondigitalmedia.com/",
-      "image": "vdms-logo.png"
-    },
     {
       "name": "MongoDB",
       "url": "https://www.mongodb.com/",
@@ -348,11 +332,6 @@
       "name": "Hack the Box",
       "url": "https://www.hackthebox.eu/",
       "image": "hackthebox-logo.png"
-    },
-    {
-      "name": "Line Corp",
-      "url": "https://linecorp.com/",
-      "image": "line-logo.png"
     },
     {
       "name": "Cargo",
