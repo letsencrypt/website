@@ -432,6 +432,13 @@ html[dir="rtl"] a.autoanchor {
   list-style-type: none;
 }
 
+.pic-quote-right__caption {
+  margin: 10px auto;
+  text-align: center;
+  color: #6c7686;
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .pic-quote-right {
     float: right !important;
