@@ -432,6 +432,19 @@ html[dir="rtl"] a.autoanchor {
   list-style-type: none;
 }
 
+.pic-quote-right {
+
+}
+
+
+
+.pic-quote-right__caption {
+  margin: 10px auto;
+  text-align: center;
+  color: #6c7686;
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .pic-quote-right {
     float: right !important;
@@ -442,6 +455,7 @@ html[dir="rtl"] a.autoanchor {
     flex: 0 0 33.33333%;
   }
 }
+
 
 .img-fluid {
   max-width: 100%;
