@@ -1095,6 +1095,18 @@
 				"DNS-01": "true",
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
+			},
+		{
+			"name": "General Music",
+			"url": "http://g-music.ru",
+			"category": "Music",
+			"comments": "Find music genre",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
 			}
 		}
 	]
