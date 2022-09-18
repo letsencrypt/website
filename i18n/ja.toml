@@ -48,9 +48,6 @@ other = """
 <a href="https://www.abetterinternet.org/trademarks/">トレードマーク・ポリシー</a>を読む。
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation は The Linux Foundation の登録商標です。Linux は Linus Torvalds の登録商標です。"
-
 [header_skip_nav]
 other = "ナビゲーション・リンクをスキップ"
 

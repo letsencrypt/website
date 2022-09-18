@@ -39,9 +39,6 @@ Mira nuestra <a href="/es/privacy/">política de privacidad</a>.<br>
 Mira nuestra <a href="https://www.abetterinternet.org/trademarks/">política de marca</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation es una marca registrada de The Linux Foundation. Linux es una marca registrada de Linus Torvalds."
-
 [header_skip_nav]
 other = "Saltar enlaces de navegación"
 

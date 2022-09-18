@@ -40,9 +40,6 @@ Se vores <a href="/privacy/">privatlivspolitik</a>.<br>
 Se vores <a href="https://www.abetterinternet.org/trademarks">varemærkepolitik</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation er et registreret varemærke tilhørende Linux-fonden. Linux er et registreret varemærke tilhørende Linus Torvalds."
-
 [header_skip_nav]
 other = "Spring navigation links over"
 

@@ -40,9 +40,6 @@ Tekintse meg <a href="/privacy/">Adatvédelmi irányelveinket</a>.<br>
 Tekintse meg <a href="https://www.abetterinternet.org/trademarks">Védjegypolitikánkat</a>.
 """
 
-[linux_foundation_trademark]
-other = "A Linux Foundation a The Linux Foundation bejegyzett védjegye. A Linux Linus Torvalds bejegyzett védjegye."
-
 [header_skip_nav]
 other = "Navigációs linkek átugrása"
 

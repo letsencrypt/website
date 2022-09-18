@@ -42,9 +42,6 @@ View our <a href="/privacy/">privacy policy</a>.<br>
 View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered trademark of Linus Torvalds."
-
 [header_skip_nav]
 other = "Skip navigation links"
 

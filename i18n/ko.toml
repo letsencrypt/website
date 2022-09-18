@@ -37,9 +37,6 @@ other = """
 <a href="https://www.abetterinternet.org/trademarks/">상표권 정책</a>을 확인하십시오.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation은 Linux Foundation의 등록 상표입니다. Linux는 Linus Torvalds의 등록 상표입니다."
-
 [header_skip_nav]
 other = "탐색 링크 건너뛰기"
 

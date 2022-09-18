@@ -40,9 +40,6 @@ other = """
 Переглянути <a href="/uk/trademarks/">правила користування торговою маркою</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation є зареєстрованою торговою маркою The Linux Foundation. Linux є зареєстрованою торговою маркою Лінуса Торвальдса."
-
 [header_skip_nav]
 other = "Пропустити навігаційні посилання"
 

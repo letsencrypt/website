@@ -48,9 +48,6 @@ Ta del av vår <a href="/privacy/">integritetspolicy</a>.<br>
 Ta del av vår <a href="https://www.abetterinternet.org/trademarks/">varumärkespolicy</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation är ett varumärke registrerat av The Linux Foundation. Linux är ett varumärke registrerat av Linus Torvalds."
-
 [header_skip_nav]
 other = "Hoppa över navigeringslänkar"
 

@@ -46,9 +46,6 @@ other = """
 Ознакомьтесь с нашей <a href="https://www.abetterinternet.org/trademarks/">политикой в отношении товарных знаков</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation является зарегистрированным товарным знаком The Linux Foundation. Linux является зарегистрированным товарным знаком, принадлежащим Линусу Торвальдсу."
-
 [header_skip_nav]
 other = "Пропустить навигационные ссылки"
 

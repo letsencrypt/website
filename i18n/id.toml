@@ -37,9 +37,6 @@ Lihat <a href="/id/privacy/">kebijakan privasi</a> kami.<br>
 Lihat <a href="https://www.abetterinternet.org/trademarks/">kebijakan merek</a> kami.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation adalah merek dagang milik The Linux Foundation. Linux adalah merek dagang milik Linus Torvalds."
-
 [header_skip_nav]
 other = "Lewati tautan navigasi"
 

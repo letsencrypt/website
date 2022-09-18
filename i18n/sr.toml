@@ -39,9 +39,6 @@ Pročitaj našu <a href="/sr/privacy/">politiku privatnosti</a>.<br>
 Pročitaj našu <a href="https://www.abetterinternet.org/trademarks/">politiku brenda</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation je registrovani brend od The Linux Foundation. Linux je registrovani brend od strane Linus Torvaldsa."
-
 [header_skip_nav]
 other = "Preskoči navigacione linkove"
 

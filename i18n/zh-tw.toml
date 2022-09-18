@@ -39,9 +39,6 @@ other = """
 查看我們的<a href="https://www.abetterinternet.org/trademarks/">商標政策</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation 是 The Linux Foundation 的註冊商標。 Linux 是 Linus Torvalds 的註冊商標."
-
 [header_skip_nav]
 other = "跳過導航連結"
 

@@ -39,9 +39,6 @@ other = """
 Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="https://www.abetterinternet.org/trademarks/">Markenbestimmungen</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation ist eine registrierte Marke der Linux Foundation. Linux ist eine registrierte Marke von Linus Torvalds."
-
 [header_skip_nav]
 other = "Navigation überspringen"
 

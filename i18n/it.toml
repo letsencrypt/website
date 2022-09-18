@@ -45,9 +45,6 @@ Vedi la nostra <a href="/privacy/">privacy policy</a>.<br>
 Vedi la nostra <a href="/trademarks/">trademark policy</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation è un marchio registrato di The Linux Foundation. Linux è un marchio registrato di Linus Torvalds."
-
 [header_skip_nav]
 other = "Salta i link di navigazione"
 

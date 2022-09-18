@@ -40,9 +40,6 @@ Katso <a href="/privacy/">yksityisyyskäytäntömme</a>.<br>
 Katso <a href="https://www.abetterinternet.org/trademarks">tavaramerkkikäytäntömme</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation on Linux Foundationin rekisteröity tavaramerkki. Linux on Linus Torvaldsin rekisteröity tavaramerkki."
-
 [header_skip_nav]
 other = "Ohita navigointilinkit"
 

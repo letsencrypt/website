@@ -48,9 +48,6 @@ other = """
 לצפייה ב<a href="https://www.abetterinternet.org/trademarks/">מדיניות זכויות היוצרים</a> שלנו.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation הוא סימן מסחר רשום לטובת The Linux Foundation. Linux הוא סימן מסחר רשום לטובת Linus Torvalds."
-
 [header_skip_nav]
 other = "דילוג על קישורי הניווט"
 

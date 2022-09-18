@@ -40,9 +40,6 @@ other = """
 අපගේ <a href="https://www.abetterinternet.org/trademarks">වෙළඳලකුණු ප්‍රතිපත්තිය</a> දකින්න.
 """
 
-[linux_foundation_trademark]
-other = "ලිනක්ස් ෆවුන්ඩේෂන් යනු ද ලිනක්ස් ෆවුන්ඩේෂන් හි ලියාපදිංචි වෙළඳ ලකුණයි. ලිනක්ස් යනු ලිනස් ටොර්වල්ඩ්ස් ගේ ලියාපදිංචි වෙළඳ ලකුණකි."
-
 [header_skip_nav]
 other = "යාත්‍රණ සබැඳි මඟහරින්න"
 
