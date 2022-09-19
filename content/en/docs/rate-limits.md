@@ -102,7 +102,7 @@ logs.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
-form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
+form](https://forms.gle/JVKTgfMYUm7dLjfq5)
 that can be used to request a higher rate limit. It takes a few weeks to process
 requests, so this form is not suitable if you just need to reset a rate limit
 faster than it resets on its own.
