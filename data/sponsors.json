@@ -416,6 +416,7 @@
     },
 
     { "name": "Crypto Tracker", "url": "https://cryptotracker.com/", "image": "cryptotracker-logo.svg" },
-    { "name": "Tailscale", "url": "https://tailscale.com/", "image": "tailscale-logo.svg" }
+    { "name": "Tailscale", "url": "https://tailscale.com/", "image": "tailscale-logo.svg" },
+    { "name": "BitLaunch", "url": "https://bitlaunch.io/", "image": "bitlaunch-logo.svg" }
   ]
 }
