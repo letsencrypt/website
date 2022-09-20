@@ -2,7 +2,7 @@
 <div class="sponsors">
   <div>
     <h2>{{ i18n "platinum" }}</h2>
-    <div class="text-center">
+    <div class="text-center sponsor-flex">
 {{ range $.Site.Data.sponsors.platinum }}
       <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" class="sponsor-logo-large"></a>
 {{ end }}
@@ -11,7 +11,7 @@
 
   <div>
     <h2>{{ i18n "gold" }}</h2>
-    <div class="text-center">
+    <div class="text-center sponsor-flex">
 {{ range $.Site.Data.sponsors.gold }}
       <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" class="sponsor-logo-large"></a>
 {{ end }}
@@ -20,7 +20,7 @@
 
   <div>
     <h2>{{ i18n "silver" }}</h2>
-    <div class="text-center">
+    <div class="text-center sponsor-flex">
 {{ range $.Site.Data.sponsors.silver }}
       <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/{{ .image }}" alt="{{ .name }}" width="180" height="108" class="sponsor-logo-large"></a>
 {{ end }}
