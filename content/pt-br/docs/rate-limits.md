@@ -96,7 +96,7 @@ na emissão de certificados já foram consumidos.
 
 Se você for um provedor de hospedagem grande ou uma organização trabalhando na integração
 com a Let's Encrypt, temos um [formulário de 
-limite de requisições](https://goo.gl/forms/plqRgFVnZbdGhE9n1) (Inglês)
+limite de requisições](https://forms.gle/JVKTgfMYUm7dLjfq5) (Inglês)
 que pode ser usado para solicitar um limite maior de requisições. Leva algumas semanas para processar 
 as solicitações, então este formulário não é adequado se você precisa zerar o limite de requisições
 mais rápido do que ele zera automaticamente.
