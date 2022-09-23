@@ -35,12 +35,12 @@ E-mail: [press@letsencrypt.org](mailto:security@letsencrypt.org)
 Anvend venligst vores GPG-nøgle for at kommunikere sikkert med Sikkerhedsteamet. Den består af flere undernøgler signeret af en offline master nøgle. Enhver nyere version af GnuPG vil støtte denne form for hybrid nøgle. Den aktuelle nøglestruktur er:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 Du kan downloade [GPG Public Key](/security_letsencrypt.org-publickey.asc) her, eller bruge din foretrukne nøgleserver.

@@ -35,12 +35,12 @@ Courriel : [security@letsencrypt.org](mailto:security@letsencrypt.org)
 Pour communiquer en toute confidentialité avec l'équipe qui s'occupe de la sécurité, veuillez utiliser notre clé GPG. Elle se compose de plusieurs sous-clés signées par un passe-partout hors ligne. Toute version récente de GnuPG supportera ce type de clé hybride. La structure de la clé actuelle est la suivante :
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 Vous pouvez télécharger la [clé publique GPG](/security_letsencrypt.org-publickey.asc) ici, ou utiliser votre serveur de clés préféré.

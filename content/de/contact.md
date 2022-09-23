@@ -35,12 +35,12 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 Verwenden Sie unseren GPG-Schlüssel, um sicher mit unserem Sicherheitsteam zu kommunizieren. Er ist durch einen Offline-Master-Schlüssel mit verschiedenen Unterschlüsseln signiert. Jede bestehende Version von GnuPG wird diese Art von Hybrid-Schlüsseln unterstützen. Die derzeitige Schlüsselstruktur ist:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 Sie können den [öffentlichen GPG-Schlüssel](/security_letsencrypt.org-publickey.asc) hier herunterladen, oder Sie verwenden Ihren favorisierten Schlüsselserver.

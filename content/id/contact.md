@@ -35,12 +35,12 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 Untuk menghubungi Tim Keamanan kami dengan aman, mohon pergunakan GPG *key* kami. Kunci kami terdiri dari beberapa subkunci yang ditanda-tangani oleh kunci master luring kami. Versi terkini apapun dari GnuPG akan mendukung kunci *hybrid* ini. Struktur kunci kami saat ini adalah:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 Anda dapat mengunduh [kunci publik GPG kami di sini](/security_letsencrypt.org-publickey.asc), atau pergunakan server kunci favorit anda.
