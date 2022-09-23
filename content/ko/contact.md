@@ -35,12 +35,12 @@ menu:
 보안 팀과 안전하게 통신하려면 GPG 키를 사용해 주십시오. 오프라인 마스터 키로 서명한 여러 하위 키로 구성됩니다. 모든 최신 버전의 GnuPG는 이러한 종류의 하이브리드 키를 지원합니다. 현재 키 구조는 다음과 같습니다.:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 여기에서 [GPG 공용 키](/security_letsencrypt.org-publickey.asc)를 다운로드하거나 즐겨찾는 키 서버를 사용할 수 있습니다.

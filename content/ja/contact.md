@@ -35,12 +35,12 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 セキュリティチームと安全に通信するには、私たちの GPG キーを利用してください。 以下のキーはいくつかのサブキーからなり、オフラインのマスターキーで署名されています。 最近のバージョンの GnuPG はこの種のハイブリットキーをサポートしています。 現在のキーの構成は以下のとおりです。
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 あなたはここから [GPG 公開鍵](/security_letsencrypt.org-publickey.asc)をダウンロードできます。また、あなたのお気に入りのキーサーバーからも利用できます。

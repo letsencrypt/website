@@ -35,12 +35,12 @@ Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 Để liên hệ với Đội ngũ An ninh của chúng tôi một cách bảo mật, vui lòng sử dụng khóa GPG của chúng tôi. Nó bao gồm một số khóa con được ký bởi một khóa chính ngoại tuyến. Bất kỳ phiên bản GnuPG nào gần đây sẽ hỗ trợ loại khóa lai này. Cấu trúc chính hiện tại là:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
+pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
 ```
 
 Bạn có thể tải [GPG Public Key](/security_letsencrypt.org-publickey.asc) ở đây, hoặc sử dụng máy chủ yêu thích của bạn.
