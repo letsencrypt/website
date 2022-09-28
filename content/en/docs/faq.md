@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2022-09-07
+lastmod: 2022-09-28
 menu:
   main:
     weight: 30
@@ -109,7 +109,7 @@ If the certificate you requested has all of the necessary authorizations cached 
 
 ## Why should my Let's Encrypt (ACME) client run at a random time?
 
-We ask that [ACME clients perform routine renewals at random times](https://letsencrypt.org/docs/integration-guide/#when-to-renew) to avoid spikes in traffic at set times of the day, such as exactly midnight UTC, or the first second of each hour or minute. When the service is too busy, clients will be asked to [try again later](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429), so randomizing renewal times can help avoid unnecessary retries.
+We ask that [ACME clients perform routine renewals at random times](https://letsencrypt.org/docs/integration-guide/#when-to-renew) to avoid spikes in traffic at set times of the day, such as exactly midnight UTC, or the first second of each hour or minute. When the service is too busy, clients will be asked to [try again later](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503), so randomizing renewal times can help avoid unnecessary retries.
 
 ## Where can I learn more about TLS/SSL and PKI in general?
 
