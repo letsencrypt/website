@@ -3,7 +3,7 @@ title: lencr.org
 slug: lencr.org
 top_graphic: 1
 date: 2021-11-30
-lastmod: 2021-11-30
+lastmod: 2022-09-30
 show_lastmod: 1
 ---
 
@@ -42,11 +42,7 @@ certificate that we issued is still valid, or was revoked. (This is only for
 of our intermediate certificates.)
 
 * Under `c.lencr.org`, we provide Certificate Revocation Lists (CRLs) listing
-all the unexpired certificates that we issued and later revoked. (This is only
-for our intermediate certificates, which we've issued from one of our root
-certificates; not for certificates that we've issued to subscribers.) A client
-may use this data to verify that our intermediate certificate, which issued the
-end-entity certificate it's verifying, has not been revoked.
+all the unexpired certificates that we issued and later revoked.
 
 * Under `i.lencr.org`, we provide copies of our intermediate "issuer"
 certificates, which are either signed by one of our root certificates or
