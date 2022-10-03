@@ -2,199 +2,99 @@
 title: Datenschutzerklärung
 slug: privacy
 top_graphic: 4
-date: 2019-09-19
-lastmod: 2019-09-19
+lastmod: 2022-03-11
 english_is_canonical: 1
 show_lastmod: 1
 ---
 
+In der Datenschutzerklärung von Let's Encrypt wird beschrieben, wie wir Ihre Informationen in drei verschiedenen Kontexten erfassen, verwenden und weitergeben:
 
-In der Datenschutzerklärung von Let's Encrypt wird beschrieben, wie wir
-Ihre Informationen in drei verschiedenen Kontexten erfassen, verwenden
-und weitergeben:
+- Wenn Sie als Relying Party (im Folgenden vertrauende Partei genannt) eine mit HTTPS gesicherte Website besuchen, die ein Zertifikat von Let’s Encrypt verwendet,
+- Wenn Sie ein Abonnent sind, d.h. wenn Sie Zertifikate von Let's Encrypt anfordern und verwenden,
+- Wenn Sie Besucher der Let’s Encrypt-Webseite, des Community-Diskussionsforums, anderer Websites unter letsencrypt.org und von Social Media-Websites von Drittanbietern sind, auf denen Let’s Encrypt ein Konto unterhält.
 
-* Wenn Sie als Relying Party eine mit HTTPS gesicherte Website besuchen,
-die ein Zertifikat von Let’s Encrypt verwendet, 
-* Wenn Sie ein Abonnent sind, d. h. wenn Sie Zertifikate von Let's Encrypt anfordern und
-verwenden, 
-* Wenn Sie Besucher der Let's Encrypt-Webseite, des
-Community-Diskussionsforums, anderer Websites unter letsencrypt.org und
-von Social Media-Websites von Drittanbietern sind, auf denen Let’s Encrypt ein Konto unterhält.
+Let's Encrypt wird Ihnen von der [Internet Security Research Group](https://www.abetterinternet.org/) zur Verfügung gestellt, einer gemeinnützigen Organisation (Nonprofit Public Benefit Corporation) aus Kalifornien.
 
 ## Vertrauende Partei
 
-Wenn Sie eine HTTPS-Website oder einen anderen TLS-Dienst mit einem
-Let's Encrypt-Zertifikat verwenden, fragt Ihr Browser (oder TLS-Client)
-möglicherweise ab, ob das Zertifikat gesperrt wurde
-("OCSP-Anforderung"). Wenn Ihr Browser eine OCSP-Anforderung stellt,
-zeichnen unsere Server Ihre IP-Adresse, Ihren Browser und Ihr
-Betriebssystem automatisch in temporären Serverprotokolldateien auf. Wir
-verwenden keine Daten aus OCSP-Anforderungen, um Profile zu erstellen
-oder Personen zu identifizieren. Temporäre Serverprotokolle werden nur
-für betriebliche Zwecke verwendet und werden normalerweise innerhalb von
-weniger als sieben Tagen gelöscht. Wir können eine Teilmenge von
-Serverprotokollen für längere Zeit aufbewahren, um Softwarefehler oder
-Missbrauch zu untersuchen. In diesem Fall werden alle gespeicherten
-Protokolle gelöscht, wenn die Untersuchung abgeschlossen ist. Wir können
-auch gesammelte Informationen aus Serverprotokollen berechnen,
-aufbewahren und veröffentlichen, z. B. welche Zertifikate das grösste
-Volumen an Anforderungen generieren. Wir sind stets bemüht
-sicherzustellen, dass diese Datensätze keine Informationen über die
-Aktivitäten identifizierbarer Benutzer oder Geräte enthalten.
+Wenn Sie eine HTTPS-Website oder einen anderen TLS-Dienst mit einem Let’s Encrypt-Zertifikat verwenden, fragt Ihr Browser (oder TLS-Client) möglicherweise ab, ob das Zertifikat gesperrt wurde (“OCSP-Anforderung"). Wenn Ihr Browser eine OCSP-Anforderung stellt, zeichnen unsere Server Ihre IP-Adresse, Ihren Browser und Ihr Betriebssystem automatisch in temporären Serverprotokolldateien auf. Wir verwenden keine Daten aus OCSP-Anforderungen, um Profile zu erstellen oder Personen zu identifizieren. Temporäre Serverprotokolle werden nur zu operativen Zwecken verwendet und werden normalerweise innerhalb von weniger als sieben Tagen gelöscht. Wir können eine Teilmenge von Serverprotokollen für längere Zeit aufbewahren, um Softwarefehler oder Missbrauch zu untersuchen. In diesem Fall werden alle gespeicherten Protokolle gelöscht, wenn die Untersuchung abgeschlossen ist. Wir können auch gesammelte Informationen aus Serverprotokollen berechnen, aufbewahren und veröffentlichen, z. B. welche Zertifikate das größte Volumen an Anfragen generieren. Wir sind stets bemüht sicherzustellen, dass diese Datensätze keine Informationen über die Aktivitäten identifizierbarer Benutzer oder Geräte enthalten.
 
 ## Abonnent
 
-Wenn Sie ein Abonnent sind, fordern Sie ein vertrauenswürdiges
-Zertifikat von Let's Encrypt an, mit dem öffentlich bestätigt werden
-soll, dass Sie einen bestimmten Domainnnamen oder Namen kontrollieren,
-die im Internet erreichbar sind. Let's Encrypt sammelt im Rahmen des
-Nachweises dieser Kontrolle verschiedene Informationen, die sich auf die
-Authentifizierung und Verwaltung von Zertifikaten beziehen. Zu diesen
-Informationen gehören die IP-Adressen, von denen aus Sie auf den Let's
-Encrypt-Dienst zugreifen; alle aufgelösten IP-Adressen für angeforderte
-Domainnamen; Serverinformationen in Bezug auf Validierungsanfragen;
-vollständige Protokolle aller eingehenden HTTP/ACME-Anforderungen,
-aller ausgehenden Validierungsanforderungen; und Informationen, die von
-Ihrer Client-Software gesendet oder abgeleitet werden. Wir bewahren
-diese Informationen mindestens sieben Jahre lang auf, je nach
-vertraglicher Notwendigkeit und im öffentlichen Interesse. Wir müssen in
-der Lage sein, der Öffentlichkeit, einschliesslich derjenigen, die sich
-auf die Vertrauenswürdigkeit unserer Zertifikate verlassen, zu zeigen,
-dass unsere Dienstleistungen wie erwartet funktionieren. Daher können
-wir Informationen, einschliesslich IP-Adressen, möglicherweise nicht
-löschen. Diese Informationen können auf verschiedene Weise
-veröffentlicht werden, z.B. über eine öffentliche API, öffentliche
-Repositories und/oder öffentliche Diskussionen.
+Wenn Sie ein Abonnent sind, fordern Sie ein vertrauenswürdiges Zertifikat von Let's Encrypt an, das öffentlich garantieren soll, dass Sie einen bestimmten Domainnamen oder mehrere Domainnamen kontrollieren, die im Internet erreichbar sind. Let's Encrypt sammelt im Rahmen des Nachweises dieser Kontrolle verschiedene Informationen, die sich auf die Authentifizierung und Verwaltung von Zertifikaten beziehen. Zu diesen Informationen gehören die IP-Adressen, von denen aus Sie auf den Dienst von Let's Encrypt zugreifen; alle aufgelösten IP-Adressen für angeforderte Domainnamen; Serverinformationen in Bezug auf Validierungsanfragen; vollständige Protokolle aller ein- und ausgehenden HTTP/ACME-Validierungsanfragen; und Informationen, die von Ihrer Client-Software gesendet oder abgeleitet werden. Laut "trusted root program" Anforderungen speichern wir diese Informationen mindestens sieben Jahre. Die Daten werden für maximal zehn Jahre gespeichert.
 
-Möglicherweise haben Sie die Möglichkeit, Kontaktinformationen wie Ihre
-E-Mail-Adresse für Kontodienst und Wiederherstellungszwecke anzugeben.
-Ihre Kontaktinformationen werden nicht veröffentlicht und nur über
-"Strafverfolgung und mildernde Umstände" weitergegeben. Durch die Angabe
-Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden,
-Service-bezogene E-Mails von uns zu erhalten. Sie können sich jederzeit
-von E-Mails mit Dienstbezug abmelden, indem Sie auf den Link „Abmelden“
-unten in unseren E-Mails klicken oder uns unter
-[security@letsencrypt.org](mailto:security@letsencrypt.org)
-kontaktieren. Wir werden Ihre Kontaktdaten nicht für Marketing- oder
-Werbezwecke verwenden.
+Wir müssen in der Lage sein, der Öffentlichkeit, einschließlich denen, die sich auf die Vertrauenswürdigkeit unserer Zertifikate verlassen, zu zeigen, dass unsere Dienste wie erwartet funktionieren. Aus diesem Grund sind wir möglicherweise nicht in der Lage, Informationen, einschließlich IP-Adressen, zu löschen. Diese Informationen können auf verschiedene Art und Weise öffentlich zugänglich gemacht werden, unter anderem über öffentliche APIs, öffentliche Repositories und/oder öffentliche Gespräche.
 
-Sie müssen möglicherweise Client-Software von einem Repository
-herunterladen, das beispielsweise von Debian, Ubuntu, Red Hat oder
-Github betrieben wird. Ihre Interaktion mit einem solchen
-Software-Repository unterliegt den eigenen Datenschutzrichtlinien und /
-oder Nutzungsbedingungen dieses Repositorys.
+Sie haben unter Umständen die Möglichkeit, Kontaktinformationen wie Ihre E-Mail-Adresse für Kontoservice- und Wiederherstellungszwecke anzugeben. Ihre Kontaktinformationen werden nicht veröffentlicht und nur gemäß den nachstehenden Abschnitten „Anfragen von Strafverfolgungsbehörden und mildernde Umstände“ weitergegeben. Durch die Angabe Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden, Service-bezogene E-Mails von uns zu erhalten. Sie können sich jederzeit von Service-bezogenen E-Mails abmelden, indem Sie auf den "Abmelden"-Link am unteren Ende unserer E-Mails klicken oder uns unter security@letsencrypt.org kontaktieren. Wir werden Ihre Kontaktdaten nicht zu Marketing- oder Werbezwecken verwenden.
+
+Sie müssen möglicherweise Client-Software von einem Repository herunterladen, welches beispielsweise von Debian, Ubuntu, Red Hat oder GitHub betrieben wird. Ihre Interaktion mit einem solchen Software-Repository unterliegt den eigenen Datenschutzrichtlinien und/oder Nutzungsbedingungen dieses Projektes.
 
 ## Besucher
 
-Wenn Sie als Besucher die Let's Encrypt-Website besuchen, haben Sie die
-Möglichkeit, eine Spende zu tätigen. Spenden werden von unseren
-vertrauenswürdigen Zahlungspartnern wie DonorBox, Stripe und PayPal
-verarbeitet, abhängig von der ausgewählten Zahlungsmethode. Wir sammeln
-Ihren Namen und Ihre E-Mail-Adresse, wenn Sie spenden. Wir werden Ihre
-E-Mail-Adresse nicht dazu verwenden, Sie ohne Ihre Zustimmung zu
-kontaktieren. Ihre Interaktionen mit [DonorBox](https://donorbox.org/privacy), 
-[Stripe](https://stripe.com/privacy/) und [PayPal](https://www.paypal.com/us)
-unterliegen den jeweiligen Datenschutzbestimmungen. Wir
-sammeln oder speichern keine Kreditkarten- oder Bankdaten im
-Zusammenhang mit Spenden. Wenn wir eine physische Adresse sammeln,
-werden wir Ihre physischen Adressdaten nur so lange aufbewahren, wie es
-vernünftigerweise erforderlich ist, um die angeforderte Sendung
-durchzuführen.
+Wenn Sie ein Besucher der Let's Encrypt-Website sind, haben Sie die Möglichkeit, eine Spende zu machen. Spenden werden von unseren vertrauenswürdigen Zahlungspartnern bearbeitet, einschließlich DonorBox, Stripe, Shopify, PayPal, The Giving Block, und Gemini abhängig von der gewählten Zahlungsmethode, und werden in der ISRG Salesforce-Datenbank gespeichert. Wir erfassen Ihren Namen und Ihre E-Mail-Adresse, wenn Sie spenden. Wir werden Ihre E-Mail-Adresse nicht verwenden, um Sie ohne Ihre Zustimmung zu kontaktieren, es sei denn, wir halten es für notwendig, ein Problem im Zusammenhang mit einer bestimmten Spende zu lösen. Ihre Interaktionen mit [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/)und [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) unterliegen ihren jeweiligen Datenschutzrichtlinien. Wir erheben oder speichern keine Kreditkarten- oder Bankdaten im Zusammenhang mit Spenden. Unsere Versandabwicklungspartner sind Shopify und SHIPHERO.
 
-Sie haben die Möglichkeit, Ihre E-Mail-Adresse anzugeben,
-um den Let's Encrypt-Newsletter über eine Registrierung auf dieser Website
-und über andere Marketingmaterialien zu erhalten. Der Newsletter wird über
-MailChimp versendet und Ihre Interaktionen mit MailChimp unterliegen den
-Datenschutzbestimmungen. Gelegentlich verwenden wir Ihre E-Mail-Adresse,
-um personalisierte Mitteilungen zu Let’s Encrypt zu senden. Wir verkaufen
-Ihre Informationen nicht. Sie können die Entfernung Ihrer E-Mail-Adresse
-von unserer Liste beantragen, indem Sie sich über MailChimp abmelden oder
-eine E-Mail an [press@letsencrypt.org](mailto:press@letsencrypt.org) senden.
+Sie haben unter Umständen die Möglichkeit, Ihre E-Mail-Adresse anzugeben, um Mitteilungen über ISRG-Projekte durch eine Anmeldung auf einer ISRG-Website und über andere Marketingmaterialien zu erhalten. Jede über MailChimp oder Salesforce übermittelte Kommunikation und Ihre Interaktionen mit [MailChimp](https://www.intuit.com/privacy/statement/) und [Salesforce](https://www.salesforce.com/company/privacy/) unterliegen deren Datenschutzrichtlinien. Wir können gelegentlich Ihre E-Mail-Adresse verwenden, um personalisierte Mitteilungen im Zusammenhang mit Let's Encrypt an Sie zu versenden. Sie können Ihre E-Mail-Adresse von unserer Liste entfernen, indem Sie sich über MailChimp oder per E-Mail an press@letsencrypt.org melden.
 
-Wenn Sie sich registrieren, um das Support-Forum „Let's Encrypt“ zu
-nutzen, unterliegen die persönlichen Informationen, die Sie
-bereitstellen, und Ihre Massnahmen dort den Datenschutzbestimmungen
-unseres Hosting- und Softwareanbieters für das Forum 
-[Civilized Discourse Construction Kit](https://www.discourse.org/privacy).
-Wir erheben oder speichern keine personenbezogenen Daten durch unsere
-Mitarbeiter des Support-Forums.
+Wenn Sie sich registrieren, um das Support-Forum der "Let's Encrypt Community" zu nutzen, unterliegen Ihre angegebenen persönlichen Informationen und Ihre Handlungen den Datenschutzrichtlinien unseres Hosting- und Softwareanbieters für das Forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). Durch unser Angebot dieses Support-Forums werden keine persönlichen Daten von uns erfasst oder gespeichert.
 
-Darüber hinaus verwenden wir Google Analytics, um den Verkehr und
-beliebte Seiten unserer Website zu ermitteln. Als Teil dieses Services
-platzieren wir Google Analytics-Cookies auf unserer Website. Diese
-Cookies enthalten keine persönlichen Informationen, können Ihre
-Browser-Software jedoch im Laufe der Zeit auf unserer Website eindeutig
-identifizieren. Wir respektieren den Header 
-[Do Not Track](http://donottrack.us/), indem wir die Informationen, die unsere
-Analysedienste für alle Besucher sammeln und freigeben können, streng
-einschränken.
+## Wir verkaufen Ihre Daten oder Informationen nicht
 
-## Strafverfolgungsersuchen und mildernde Umstände
+Wir verkaufen Ihre Daten und Informationen nicht. Dazu gehören Vertrauenspersonen, Abonnenten- und Besucherdaten sowie andere Informationen.
 
-Soweit wir über sie verfügen, können wir unter bestimmten Umständen
-personenbezogene Daten über Sie an Dritte weitergeben. Zu diesen
-Umständen gehört es, wenn wir Ihre Zustimmung haben oder wenn wir nach
-Treu und Glauben glauben, dass dies gesetzlich vorgeschrieben ist,
-beispielsweise aufgrund einer Vorladung oder einer anderen gerichtlichen
-oder behördlichen Anordnung. Wir können Kontoinformationen auch offen
-legen, wenn wir in gutem Glauben der Ansicht sind, dass es notwendig
-ist, den Verlust von Leben, Körperverletzungen, Sachschäden oder
-erheblichen finanziellen Schaden zu verhindern.
+## Anfragen von Strafverfolgungsbehörden und mildernde Umstände
 
-Wenn wir gesetzlich dazu verpflichtet sind, die von Ihnen übermittelten
-Informationen offenzulegen, werden wir versuchen, Ihnen eine
-Vorankündigung mitzuteilen (es sei denn, es ist uns verboten oder es wäre
-zwecklos), dass eine Anfrage nach Ihren Informationen vorliegt und
-wir Ihnen eine Gelegenheit geben, der Offenlegung zu widersprechen. 
-Wir werden versuchen, diese Mitteilung mit den zumutbaren Mitteln aufzustellen.
-Wenn Sie die Offenlegungsanfrage nicht anfechten, können wir gesetzlich
-dazu verpflichtet sein, Ihre Informationen weiterzugeben.
+Soweit wir darüber verfügen, können wir unter bestimmten Umständen personenbezogene Daten über Sie an Dritte weitergeben. Zu diesen Umständen gehören Fälle, in denen wir Ihre Zustimmung haben oder von der Vermutung ausgehen, dass wir gesetzlich dazu verpflichtet sind, wie z. B. aufgrund einer Vorladung oder einer anderen gerichtlichen oder behördlichen Anordnung. Wir können auch Informationen zur Kontowiederherstellung offenlegen, wenn wir vermuten, dass dies erforderlich ist, um den Verlust von Leben, Personenschäden, Sachschäden oder erheblichen finanziellen Schäden zu verhindern.
 
-Darüber hinaus behalten wir uns das Recht vor, nach eigenem Ermessen
-bestimmten Anfragen (Zugang zu Informationen über Benutzer unserer
-Produkte und Technologien), die wir für unangemessen halten,
-eigenständig zu widersprechen.
+Wenn wir gesetzlich verpflichtet sind, die von Ihnen übermittelten Informationen offenzulegen, werden wir versuchen, Sie im Voraus darüber zu informieren (es sei denn, es ist uns untersagt oder es wäre sinnlos), dass eine Anfrage nach Ihren Informationen gestellt wurde, um Ihnen die Möglichkeit zu geben, der Offenlegung zu widersprechen. Wir werden versuchen, diese Mitteilung mit allen angemessen verfügbaren Mitteln bereitzustellen. Wenn Sie der Offenlegungsanfrage nicht widersprechen, sind wir möglicherweise gesetzlich verpflichtet, Ihre Daten weiterzugeben.
 
-## Welche Rechte haben beteiligte Parteien, Abonnenten und Besucher des Europäischen Wirtschaftsraums im Rahmen der DSGVO und wie kann ich sie wahrnehmen?
+Darüber hinaus behalten wir uns das Recht vor, nach eigenem Ermessen bestimmten Anfragen (auf Zugang zu Informationen über Benutzer unserer Produkte und Technologien), die wir für unangemessen halten, unabhängig zu widersprechen.
 
-Wir verarbeiten personenbezogene Daten wie in dieser Richtlinie
-beschrieben. Wir sind auf Ihre Zustimmung zum Versenden von E-Mails
-angewiesen. Wenn wir eine IP-Adresse erfassen, verarbeiten wir diese
-Daten aufgrund der vertraglichen Notwendigkeit, den Nachweis zu
-erbringen, dass der Dienst wie erwartet funktioniert. Bitte beachten
-Sie, dass wir Informationen, einschliesslich IP-Adressen, möglicherweise
-nicht löschen können, da diese Informationen erforderlich sind, damit
-andere Personen die Vertrauenswürdigkeit unserer Zertifikate ermitteln
-können. In einigen Fällen verarbeiten wir personenbezogene Daten
-möglicherweise aufgrund gesetzlicher Verpflichtungen oder zum Schutz
-Ihrer Lebensinteressen oder der Interessen einer anderen Person.
+## Welche Rechte haben im Europäischen Wirtschaftsraum ansässige Parteien, Abonnenten und Besucher gemäß der DSGVO und wie können Sie diese ausüben?
 
-Personen, die im Europäischen Wirtschaftsraum (EWR) ansässig sind, haben
-bestimmte Rechte in Bezug auf ihre personenbezogenen Daten,
-einschliesslich des Rechts, auf personenbezogene Daten zuzugreifen, sie
-zu korrigieren oder zu löschen, die wir durch Ihre Nutzung der Website
-verarbeiten. Wenn Sie als beteiligte Partei, Abonnent oder Besucher im EWR
-ansässig sind, gilt:
+Wir verarbeiten personenbezogene Daten gemäß dieser Richtlinie. Zweck und rechtmäßige Grundlage für die Informationsverarbeitung ist folgende:
 
-* Fordern Sie einen Bericht zu persönlichen Daten an, indem Sie uns eine
-E-Mail an security@letsencrypt.org senden. Dieser Bericht enthält die
-personenbezogenen Daten, die wir über Sie haben, und zwar in
-strukturierter, häufig verwendeter und tragbarer Form. Bitte beachten
-Sie, dass wir möglicherweise zusätzliche Informationen von Ihnen
-anfordern, um Ihre Identität zu überprüfen, bevor wir Informationen
-offenlegen.  
-* Fordern Sie die Korrektur oder Löschung Ihrer Daten an,
-indem Sie uns unter security@letsencrypt.org kontaktieren.  
-* Widersprechen Sie uns bei der Verarbeitung Ihrer Daten. Sie können uns
-auffordern, Ihre Daten nicht mehr zu verwenden, auch wenn wir Ihre
-Informationen verwenden, um Ihnen Service-E-Mails zu senden. Sie können
-Ihre Einwilligung zum Erhalt von Service-E-Mails jederzeit widerrufen,
-indem Sie auf den Link "Abbestellen" klicken, der sich unter Let's
-Encrypt E-Mails befindet.  
-* Beschwerde bei einer Regulierungsbehörde.
-Wenn Sie im EWR ansässig sind und der Meinung sind, dass wir die
-Datenschutzgesetze nicht einhalten, haben Sie das Recht, bei Ihrer
-lokalen Aufsichtsbehörde Beschwerde einzulegen.
+**Zweck:** Zertifikatsstatus (OCSP) Informationen bereitstellen
 
-Für weitere Informationen oder zur Meldung eines Datenschutzproblems
-wenden Sie sich bitte an: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+**Rechtsgrundlage:** Berechtigte Interessen
+
+**Zusätzliche Informationen:** Wir erfassen und verarbeiten Informationen von vertrauenden Parteien, um zuverlässig Informationen zum Zertifikatsstatus bereitzustellen.
+
+**Zweck:** Bereitstellung von Zertifikatausstellungs- und Verwaltungsdiensten
+
+**Rechtsgrundlage:** Vertrag, berechtigte Interessen
+
+**Zusätzliche Informationen:** Wir erfassen und verarbeiten Informationen von Abonnenten, um zuverlässige und sichere Ausstellungs- und Verwaltungsdienste für Zertifikate bereitzustellen und der Öffentlichkeit zu zeigen, dass unsere Dienste wie erwartet funktionieren.
+
+**Zweck:** Informationen für Besucher bereitstellen
+
+**Rechtsgrundlage:** Einwilligung, berechtigte Interessen
+
+**Zusätzliche Informationen:** Wir sammeln und verarbeiten Informationen von Besuchern, um Informationen über das Web und per E-Mail zuverlässig und effizient zur Verfügung zu stellen.
+
+**Zweck:** Spenden und Sponsorenanfragen bearbeiten
+
+**Rechtsgrundlage:** Berechtigte Interessen
+
+**Zusätzliche Informationen:** Wir sammeln und verarbeiten Informationen, um Spenden entgegenzunehmen und zu verarbeiten.
+
+**Zweck:** Rechtliche Verpflichtungen und mildernde Umstände
+
+**Rechtsgrundlage:** Gesetzliche Verpflichtung, berechtigte Interessen
+
+**Zusätzliche Informationen:** Wir können Informationen sammeln und verarbeiten, um gesetzlichen Verpflichtungen nachzukommen und wenn wir glauben, dass dies notwendig ist, um den Verlust von Leben, Personenschäden, Sachschäden oder erheblichen finanziellen Schäden zu verhindern.
+
+Bitte beachten Sie, dass wir Informationen, einschließlich IP-Adressen, möglicherweise nicht löschen können, da diese Informationen erforderlich sind, damit die Vertrauenswürdigkeit unserer Zertifikate von dritten geprüft werden kann. In einigen Fällen können wir personenbezogene Daten aufgrund einer gesetzlichen Verpflichtung verarbeiten oder um Ihre lebenswichtigen Interessen oder die einer anderen Person zu schützen.
+
+Ihre personenbezogenen Daten können aus verschiedenen Ländern erhoben oder dorthin übertragen werden, wo wir und unsere Dienstleister Daten speichern oder verarbeiten, einschließlich der Vereinigten Staaten. Diese Rechtsprechungen bieten möglicherweise nicht das gleiche Datenschutzniveau wie Ihre Gerichtsbarkeit, einschließlich des EWR. Wir haben Maßnahmen ergriffen, um sicherzustellen, dass unsere Dienstleister ein angemessenes Schutzniveau für die personenbezogenen Daten von EWR-Bürgern bieten, einschließlich durch den Abschluss von Datenverarbeitungsvereinbarungen unter Verwendung der von der Europäischen Kommission genehmigten Standardvertragsklauseln oder durch die Verwendung anderer von der Europäischen Kommission genehmigter Sicherheitsvorkehrungen. Sie haben das Recht, Einzelheiten über die Verfahren zu erhalten, mit denen Ihre personenbezogenen Daten außerhalb der EU übertragen werden, indem Sie uns unter den unten stehenden Kontaktinformationen verständigen.
+
+Personen im Europäischen Wirtschaftsraum (EWR) haben bestimmte Rechte in Bezug auf ihre personenbezogenen Daten, einschließlich des Rechts auf Zugang, Berichtigung oder Löschung personenbezogener Daten, die wir durch Ihre Nutzung unserer Websites und Dienste verarbeiten. Wenn Sie eine Person sind, die eine vertrauende Partei, ein Abonnent oder ein Besucher mit Sitz im EWR ist, können Sie:
+
+- Einen Bericht zu personenbezogenen Daten anfordern, indem Sie uns eine E-Mail an security@letsencrypt.org senden. Dieser Bericht enthält die personenbezogenen Daten, die wir über Sie gespeichert haben, und wird Ihnen in einem strukturierten, allgemein verwendeten und tragbaren Format zur Verfügung gestellt. Bitte beachten Sie, dass wir möglicherweise zusätzliche Informationen von Ihnen anfordern, um Ihre Identität zu überprüfen, bevor wir Informationen offenlegen.
+
+- Anfordern, dass Ihre Daten korrigiert oder gelöscht werden, indem Sie uns unter security@letsencrypt.org kontaktieren.
+
+- Der Datenverarbeitung durch uns widersprechen. Sie können uns bitten, die Verwendung Ihrer Daten einzustellen, auch wenn wir Ihre Daten verwenden, um Ihnen Service-basierte E-Mails zu senden. Sie können Ihre Zustimmung zum Erhalt von Service-E-Mails jederzeit widerrufen, indem Sie auf den Link „Abmelden“ klicken, der sich in den E-Mails von Let’s Encrypt befindet.
+
+- Bei einer Aufsichtsbehörde beschweren. Wenn Sie im EWR ansässig sind und der Meinung sind, dass wir die Datenschutzgesetze nicht eingehalten haben, haben Sie das Recht, eine Beschwerde bei Ihrer örtlichen Aufsichtsbehörde einzureichen.
+
+Für weitere Informationen oder zur Meldung eines Datenschutzproblems wenden Sie sich bitte an: security@letsencrypt.org.

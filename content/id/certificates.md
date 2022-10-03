@@ -3,7 +3,7 @@ title: Rantai Kepercayaan
 linkTitle: Rantai Kepercayaan (Sertifikat Root dan Perantara)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-09-24
+lastmod: 2021-10-02
 show_lastmod: 1
 ---
 
