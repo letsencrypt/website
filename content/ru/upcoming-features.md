@@ -20,9 +20,9 @@ show_lastmod: 1
 
 * Запущено: 19 февраля 2020
 
-Теперь мы права на домен с [нескольких сетевых ракурсов](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Теперь мы проверяем права на домен с [нескольких сетевых ракурсов](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
-## Интеграция с журналом Certificate Transparency
+## Журнал Certificate Transparency
 
 * Запущено: 15 мая 2019
 

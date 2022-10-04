@@ -3,7 +3,7 @@ title: Цепочка доверия
 linkTitle: Цепочка доверия (Корневые и промежуточные сертификаты)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-09-24
+lastmod: 2021-10-02
 show_lastmod: 1
 ---
 
@@ -96,7 +96,7 @@ IdenTrust кросс-подписал наши промежуточные сер
 
 # Прозрачность сертификата
 
-В Let's Encrypt мы в нацелены на прозрачность в наших процессах и в сертификатах, которые выпускаем. Мы записываем сертификаты в [журнал Certificate Transparency](https://www.certificate-transparency.org/) сразу, как только выпускаем их. Все наши сертификаты доступны по ссылкам:
+В Let's Encrypt мы в нацелены на прозрачность в наших процессах и в сертификатах, которые выпускаем. Мы записываем сертификаты в \[журнал Certificate Transparency\](https://www.certificate-transparency.org/) сразу, как только выпускаем их. Все наши сертификаты доступны по ссылкам:
 
 * [Выпущены Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
 * [Выпущены Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)

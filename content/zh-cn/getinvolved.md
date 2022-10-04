@@ -21,12 +21,12 @@ show_lastmod: 1
 
 ### 客户端软件
 
-[Certbot](https://github.com/certbot/certbot)是使用 Python 编写的帮助 Web 服务器自动获取证书并配置 HTTPS 的实用程序。 Certbot 是我们建议大多数人使用的客户端。 还提供许多其他 [第三方客户端选项](/docs/client-options) 。
+[Certbot](https://github.com/certbot/certbot) 是一款使用 Python 语言编写的实用程序，能够与服务器软件协同运作，自动获取证书并为网站部署 HTTPS 协议。 我们建议大多数用户都使用 Certbot 作为客户端， 但也有众多[第三方客户端](/docs/client-options)可供选择。
 
-### 服务器端 CA 软件
+### 服务器端证书签发软件
 
-Let’s Encrypt CA 使用[Boulder](https://github.com/letsencrypt/boulder)签发证书。 该软件基于[ACME](https://tools.ietf.org/html/rfc8555)协议并主要使用Go语言编写。 [标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)都是一个很好的起点。
+Let's Encrypt 的证书签发过程由 [Boulder](https://github.com/letsencrypt/boulder) 实现。 该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议，主要使用 Go 语言编写。 [标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)都是一个很好的起点。
 
 ### letsencrypt.org
 
-您可以在[此处](https://github.com/letsencrypt/website)改进本网站和文档或帮助我们[翻译](https://crowdin.com/project/lets-encrypt-website)网站。
+您可以在[此处](https://github.com/letsencrypt/website)改进本网站及其文档，也可以为我们贡献[翻译](https://crowdin.com/project/lets-encrypt-website)。

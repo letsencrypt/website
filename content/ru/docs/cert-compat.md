@@ -2,12 +2,12 @@
 title: Совместимость сертификатов
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-05-12
+lastmod: 2021-10-31
 show_lastmod: 1
 ---
 
 
-Главным определяющим фактором для того, может ли платформа проверить сертификаты шифрования является то, доверяет ли эта платформа сертификату ISRG "ISRG Root X1". Некоторые платформы могут принимать наши сертификаты, даже если они не включают ISRG Root X1, поскольку они доверяют сертификату IdenTrust "DST Root CA X3". После сентября 2021 года только те платформы, которые доверяют ISRG Root X1, продолжат принимать сертификаты Let's Encrypt ([за исключением Android](/2020/12/21/extending-android-compatibility.html)).
+Главным определяющим фактором для того, может ли платформа проверить сертификаты шифрования является то, доверяет ли эта платформа сертификату ISRG "ISRG Root X1". До сентября 2021 г. некоторые платформы могли подтверждать наши сертификаты, даже если они не включали ISRG Root X1, поскольку они доверяли сертификату "DST Root CA X3" IdenTrust. С октября 2021 г., только те платформы, которые доверяют ISRG Root X1 подтвердят сертификаты Let's Encrypt ([за исключением Android](/2020/12/21/extending-android-compatibility.html)).
 
 Если ваш сертификат работает лишь на некоторых платформах из списка "Известные совместимые платформы", но не на всех, проблема может быть в неправильных настройках сервера. Если у вас есть проблемы с современными платформами, наиболее распространенной причиной является невозможность предоставить правильную цепочку сертификатов. Протестируйте ваш сайт с помощью [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Если это не поможет определить проблему, обратитесь за помощью на [Форумы сообщества](https://community.letsencrypt.org/).
 
@@ -19,34 +19,32 @@ show_lastmod: 1
 * [iPhone 5 и выше можно обновить до iOS 10](https://en.wikipedia.org/wiki/IPhone_5) и таким образом будет доверять ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (но Android >= 2.3.6 будет работать по умолчанию [из-за нашей специальной кросс-подписи](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (с обновлениями)
-* [Ubuntu >= xenial / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (с обновлениями)
+* Ubuntu >= Precise Pangolin/12.04 (с примененными обновлениями)
+* [Debian >= jessie/8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (с обновлениями)
 * [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
 Браузеры (Chrome, Safari, Edge, Opera), как правило, доверяют тем же корневым сертификатам, что и операционная система, на которой они работают. Firefox является исключением: у него есть собственное хранилище корневых сертификатов. Скоро у новых версий Chrome [будет собственное хранилище корневых сертификатов](https://www.chromium.org/Home/chromium-security/root-ca-policy).
 
-# Платформы, которые доверяют DST Root CA X3
+# Платформы, которые доверяют DST Root CA X3, но не ISRG Root X1
 
-* Windows >= XP SP3
-* macOS (большинство версий)
-* iOS (большинство версий)
-* [Android >= v2.3.6](https://twitter.com/Tutancagamon/status/600783165087752192)
-* Mozilla Firefox >= v2.0
-* Ubuntu >= Precise Pangolin/12.04
-* [Debian >= Squeeze/6](https://twitter.com/TokenScandi/status/600806080684359680)
-* Java 8 >= 8u101
-* Java 7 >= 7u111
-* NSS >= v3.11.9
-* Amazon FireOS (Silk Browser)
-* Cyanogen > v10
-* Jolla Sailfish OS > v1.1.2.16
-* Kindle > v3.4.1
-* Blackberry >= 10.3.3
-* Игровая консоль PS4 с версией прошивки >= 5.00
+Эти платформы работали до сентября 2021 года, но больше не будут подтверждать сертификаты Let's Encrypt.
 
-Вы можете посетить [это обсуждение 2015-2017 гг. на форуме сообщества](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/), чтобы получить больше информации о совместимости.
+* macOS < 10.12.1
+* iOS < 10
+* Mozilla Firefox < 50
+* Ubuntu >= Intrepid/8.10
+* [Debian >= squeeze/6](https://twitter.com/TokenScandi/status/600806080684359680) и < jessie/8
+* Java 8 >= 8u101 и < 8u141
+* Java 7 >= 7u111 и < 7u151
+* NSS >= v3.11.9 и < 3.26
+* Amazon FireOS (Silk Browser) (версии неизвестны)
+* Cyanogen > v10 (версия, добавившая ISRG Root X1 неизвестна)
+* Jolla Sailfish OS > v1.1.2.16 (версия, добавившая ISRG Root X1 неизвестна)
+* Kindle > v3.4.1 (версия, добавившая ISRG Root X1 неизвестна)
+* Blackberry >= 10.3.3 (версия, добавившая ISRG Root X1 неизвестна)
+* Игровая консоль PS4 с прошивкой >= 5.00 (версия, добавившая ISRG Root X1 неизвестна)
 
 # Известные несовместимые платформы
 
@@ -63,6 +61,5 @@ show_lastmod: 1
 * Игровая консоль PS4 с версией прошивки < 5.00
 
 # ISRG Root X2 (новый корневой ECDSA) — скоро
-Мы представили ISRG Root X2 для включения в программы Microsoft, Apple, Google, Mozilla и Oracle. ISRG Root X2 уже пользуется большим доверием благодаря кросс-подписи от нашего ISRG Root X1. Для получения дополнительной информации обратитесь к нашему сообщению [форума сообщества](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
 
-
+Мы представили ISRG Root X2 для включения в программы Microsoft, Apple, Google, Mozilla и Oracle. ISRG Root X2 уже пользуется большим доверием благодаря кросс-подписи от нашего ISRG Root X1. Для получения дополнительной информации ознакомьтесь с нашим [сообщением на форуме сообщества](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).

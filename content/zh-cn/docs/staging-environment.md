@@ -3,7 +3,7 @@ title: 测试环境
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2021-05-13
+lastmod: 2022-06-13
 show_lastmod: 1
 ---
 
@@ -14,7 +14,7 @@ show_lastmod: 1
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-如果您使用的是 Certbot，则可以通过 `--dry-run` 命令行标志来使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。 请注意，只有兼容 ACME v2 的客户端才能使用 v2 测试环境。
+如果您使用的是 Certbot，则可以通过 `--test-cert` 命令行标志来使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。 请注意，只有兼容 ACME v2 的客户端才能使用 v2 测试环境。
 
 # 速率限制
 
@@ -34,15 +34,15 @@ show_lastmod: 1
 
 在测试环境中有两个有效的中间证书：一个 RSA 算法 [(STAGING) Artificial Apicot R3](/certs/staging/letsencrypt-stg-int-r3.pem) 和 ECDSA 算法 ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem)
 
-在2021年3月24日，ECDSA 签发在 [测试环境](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) 中启用，所有带有ECDSA 密钥的暂存证书请求都由 "(STAGING) Ersatz Edamame E1" 签名，并使用 ECDSA 算法。 同样，所有带有RSA密钥的测试证书请求都由"(STAGING) Artificial Apicot R3"颁发，并使用RSA算法。 没有办法为ECDSA 密钥获得经RSA颁发的证书，反之亦然； 控制您获取哪个发行者的方法是控制您本地生成哪种密钥。
+2021年3月24日，ECDSA 签发在 [测试环境](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) 中启用，所有使用ECDSA 密钥的测试证书请求都由 "(STAGING) Ersatz Edamame E1" 签名，并使用 ECDSA 证书链。 同样，所有使用RSA密钥的测试证书请求都由"(STAGING) Artificial Apicot R3"颁发，并使用RSA证书链。 无法使用 ECDSA 密钥获取使用 RSA 颁发的证书，反之亦然； 控制您获得哪个颁发者的方法是控制您在本地生成什么样的密钥。
 
 ## 根证书
 
-测试环境有两个活动的根证书，它们**不在**浏览器/客户端的信任存储中:“(STAGING) Pretend Pear X1和"(STAGING) Bogus Brocoli X2"。 如果您想修改仅测试的客户端以信任测试环境，您可以通过添加 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 和/或 ["(STAGING) Bogus Brocoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) 证书到您的证书信任列表。 你可以[在这](https://github.com/letsencrypt/website/tree/master/static/certs/staging)找到我们所有的测试证书。  请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
+测试环境有两个活跃的根证书，它们**不在**浏览器/客户端的信任存储中:“(STAGING) Pretend Pear X1和"(STAGING) Bogus Brocoli X2"。 如果您想修改测试客户端以信任测试环境，您可以通过添加 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 和/或 ["(STAGING) Bogus Brocoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) 证书到您的测试证书信任列表。 您可以[在这](https://github.com/letsencrypt/website/tree/master/static/certs/staging)找到我们所有的测试证书。  请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
 
 # 证书透明度日志
 
-测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志[Testflume](/docs/ct-logs) 和Google 的测试用证书透明度日志[testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
+测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志[Sapling](/docs/ct-logs) 和Google 的测试用证书透明度日志[testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
 
 # 持续集成/开发测试
 
