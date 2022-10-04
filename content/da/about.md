@@ -14,7 +14,7 @@ Let's Encrypt er en gratis, automatiseret og åben certifikatmyndighed (CA), dre
 
 Vi giver folk de digitale certifikater, de har brug for for at aktivere HTTPS (SSL / TLS) til hjemmesider, gratis, på den mest brugervenlige måde, vi kan. Det gør vi, fordi vi ønsker at skabe et mere sikkert og privatlivets fred med respekt for internettet.
 
-Du kan læse om vores seneste år ved at downloade vores [årsrapport](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
+Du kan læse om vores seneste år ved at downloade vores [årsrapport](https://www.abetterinternet.org/annual-reports/).
 
 Nøgleprincipperne bag Let's Encypt er:
 

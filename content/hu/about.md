@@ -14,7 +14,7 @@ A Let's Encrypt egy ingyenes, automatizált és nyílt tanúsító hatóság (CA
 
 A HTTPS (SSL/TLS) engedélyezéséhez szükséges digitális tanúsítványokat ingyenesen, a lehető legfelhasználóbarátabb módon biztosítjuk a weboldalak számára. Ezt azért tesszük, mert egy biztonságosabb és az adatvédelmet tiszteletben tartó webet szeretnénk létrehozni.
 
-Legutóbbi évünkről szóló beszámolónkról az [Éves jelentésünk](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf) letöltésével olvashat.
+Legutóbbi évünkről szóló beszámolónkról az [Éves jelentésünk](https://www.abetterinternet.org/annual-reports/) letöltésével olvashat.
 
 A Let's Encrypt alapelvei a következők:
 
