@@ -143,6 +143,10 @@
 			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
 		},
 		{
+			"name": "WordOps",
+			"url": "https://wordops.net/"
+		},
+		{
 			"name": "Zappa",
 			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
 		}
