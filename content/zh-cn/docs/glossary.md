@@ -47,7 +47,7 @@ Note for translators:
 
 {{% def id="certificate" name="证书" english="Certificate" %}} 包含公钥以及其他一些描述何时使用该公钥的信息的[特定格式](#def-X509)的文件。 [叶证书](#def-leaf)是最常见的证书类型。 另外还有[中间证书](#def-intermediate)和[根证书](#def-root)这两种证书。 {{% /def %}}
 
-{{% def id="extension" name="证书扩展" english="Certificate extension" %}} 在证书中，大多数字段都是由扩展来定义的。 例如，[主体备用名称](#def-SAN)和 </0>AIA</a>都是扩展。 扩展机制使得添加并非原始[X.509](#def-X509)标准一部分的新字段成为可能。 {{% /def %}}
+{{% def id="extension" name="证书扩展" english="Certificate extension" %}} 在证书中，大多数字段都是由扩展来定义的。 例如，[主体备用名称](#def-SAN)和 AIA 都是扩展。 扩展机制使得添加并非原始[X.509](#def-X509)标准一部分的新字段成为可能。 {{% /def %}}
 
 {{% def id="CABF" name="CA/浏览器论坛" english="CA/Browser Forum" %}} 由证书颁发机构、互联网浏览器软件的供应商、操作系统和其他使用 PKI 的应用程序组成的志愿团体。 CA/浏览器论坛发布了[底线要求](#def-BRs)。 [Let's Encrypt](#def-LE)是 CA/浏览器论坛的成员。 [维基百科条目](https://en.wikipedia.org/wiki/CA/Browser_Forum){{% /def %}}
 
