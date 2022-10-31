@@ -97,4 +97,4 @@ Let's Encrypt是由 [互联网安全调查小组](https://www.abetterinternet.or
 
 - 向监管机构投诉。 如果您位于欧洲经济区，并认为我们没有遵守数据保护法，您有权向当地监管机构提出投诉。
 
-了解更多信息或报告隐私问题，请联系：security@letsencrypt.org 。
+了解更多信息或报告隐私问题，请联系：[security@letsencrypt.org](mailto:security@letsencrypt.org)。

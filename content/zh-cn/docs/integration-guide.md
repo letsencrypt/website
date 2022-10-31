@@ -30,7 +30,7 @@ Let's Encrypt 和 Web PKI 都将随着时间的推移而不断发展。  您应�
 
 # 获取更新
 
-要接收有关上述重要更改的小批量更新，请订阅我们的 \[API 公告\](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836)分类。 这对客户端开发人员和托管提供商都很有用。
+要接收有关上述重要更改的小批量更新，请订阅我们的 [API 公告](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836)分类。 这对客户端开发人员和托管提供商都很有用。
 
 有关维护和停机的更高容量更新，请访问我们的\[状态页面\](https://letsencrypt.status.io/)并点击右上方的"订阅"按钮。 这对托管服务提供商最为有用。
 
