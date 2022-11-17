@@ -1,8 +1,10 @@
 ---
 author: J.C. Jones
 date: 2022-05-19T00:00:00Z
-slug: database-to-app-TLS
+slug: nurturing-ct-log-growth
 title: "Nurturing Continued Growth of Our Oak CT Log"
+aliases:
+    - /2022/05/19/database-to-app-tls.html
 excerpt: "Only five organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack."
 ---
 
