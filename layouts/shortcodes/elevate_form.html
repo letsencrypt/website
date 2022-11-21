@@ -1,0 +1,14 @@
+<div id="donate-via-elevate">
+  <script src="https://static.elevate.salesforce.org/donation-widget/sdk.js"></script>
+  <div
+    id="donation-widget-placeholder"
+    style="transform: translateY(-60px)"
+  ></div>
+  <script>
+    var sdk = new ElevateDonationWidgetSDK({
+      elementId: "donation-widget-placeholder",
+      givingPageId: "6542842c-6e2c-48b1-bc86-bd4944387740",
+    });
+    sdk.mount();
+  </script>
+</div>
