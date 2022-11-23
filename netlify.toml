@@ -40,7 +40,6 @@ Content-Security-Policy = """
     default-src 'none';
     font-src 'self';
     style-src 'unsafe-inline' 'self';
-    script-src-elem 'unsafe-inline' https://static.elevate.salesforce.org;
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
@@ -50,6 +49,7 @@ Content-Security-Policy = """
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
+        https://static.elevate.salesforce.org
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
