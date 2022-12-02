@@ -3,6 +3,8 @@ title: Thank you
 slug: thankyou
 top_graphic: 2
 date: 2022-12-02
+aliases:
+    - /thank-you
 ---
 
 
@@ -12,10 +14,8 @@ date: 2022-12-02
     <p>A donation receipt has been sent to the email address you provided. Internet Security Research Group is a 501(c)(3) nonprofit public benefit organization.</p>
     <p class="pt-2"><strong>Double your donation</strong></p>
     <p>Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!</p>
-    <div id=dd-wrapper class="pt-2">
-      <div id=dd-container>
-        <script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/company_matching/let-s-encrypt/embed" style="border:0;width:100%;margin:0 auto;min-width:310px;min-height:330px!important" scrolling="no" name="donorbox"></iframe>
-      </div>
+    <div class="pt-2">
+      {{< double_donation >}}
     </div>
     <p>Internet Security Research Group is the 501(c)(3) public benefit organization behind Let's Encrypt. Our EIN is: 46-3344200.</p>
   </div>
