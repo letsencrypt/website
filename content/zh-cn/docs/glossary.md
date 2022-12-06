@@ -13,7 +13,7 @@ show_lastmod: 1
 
 {{% def id="ACME-client" name="ACME 客户端" english="ACME Client" %}} 能够与 ACME 服务器通信以获取[证书](#def-leaf)的程序。 {{% /def %}}
 
-{{% def id="ACME-server" name="ACME 服务器" english="ACME Server" %}} 与 ACME 协议兼容的能生成[证书](#def-leaf)的服务器。Let's Encrypt 开发的软件 [Boulder](#def-boulder) 与 ACME 协议兼容，但[有一些差异](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)。 {{% /def %}}
+{{% def id="ACME-server" name="ACME 服务器" english="ACME Server" %}} 与 ACME 协议兼容的能生成[证书](#def-leaf)的服务器。Let's Encrypt 开发的软件 [Boulder](#def-boulder) 与 ACME 协议兼容，但[有一些差异](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)。 {{% /def %}}
 
 {{% def id="boulder" english="Boulder" %}} 由 [Let's Encrypt](#def-LE) 开发并使用的实现了 ACME 协议的软件。[GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
