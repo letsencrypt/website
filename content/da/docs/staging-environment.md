@@ -3,7 +3,7 @@ title: Stagning Miljø
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2021-05-13
+lastmod: 2022-06-13
 show_lastmod: 1
 ---
 
@@ -42,7 +42,7 @@ Staging miljøet har to aktive rodcertifikater, som **ikke er til stede** i brow
 
 # Certifikatets Gennemsigtighed
 
-Staging miljøet indsender for-certifikater til Let's Encrypt [Testflume](/docs/ct-logs) og Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT-testlogs og omfatter returnerede SCT'er i de udstedte certifikater.
+Staging miljøet indsender præ-certifikater til Let's Encrypt [Testflume](/docs/ct-logs) og Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT-testlogs og omfatter returnerede SCT'er i de udstedte certifikater.
 
 # Løbende Integration / Udviklingstest
 

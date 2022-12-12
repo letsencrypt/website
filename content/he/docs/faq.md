@@ -3,7 +3,7 @@ title: שו״ת
 linkTitle: שאלות ותשובות (שו״ת)
 slug: faq
 top_graphic: 1
-lastmod: 2020-04-23
+lastmod: 2022-06-15
 menu:
   main:
     weight: 30
@@ -11,11 +11,10 @@ menu:
 show_lastmod: 1
 ---
 
-
 שו״ת זה מפוצל לסעיפים הבאים:
 
-* [שאלות כלליות](#general)
-* [שאלות טכניות](#technical)
+- [שאלות כלליות](#general)
+- [שאלות טכניות](#technical)
 
 # <a id="general">שאלות כלליות</a>
 
@@ -31,7 +30,7 @@ Let's Encrypt מציעה אישורי תיקוף שם תחום (DV - Domain Vali
 
 איננו גובים עמלה על האישורים שלנו. Let's Encrypt אינה למטרות רווח, המשימה שלנו היא ליצור רשת אינטרנט מאובטחת ומכבדת פרטיות יותר על ידי קידום אימוץ HTTPS על ידי הקהל הרחב. השירותים שלנו הם בחינם וקלים לשימוש כדי שכל אתר יוכל להטמיע HTTPS.
 
-אנו דורשים תרומות מתורמים נדיבים, נותני מענקים ואנשים פרטיים כדי לספק את השירותים שלנו בחינם בכל רחבי העולם. אם מעניין אותך לתמוך בנו, נא לשקול [לתרום](/donate) או [לתת חסות](https://www.abetterinternet.org/sponsor/).
+אנו דורשים תרומות מתורמים נדיבים, נותני מענקים ואנשים פרטיים כדי לספק את השירותים שלנו בחינם בכל רחבי העולם. אם מעניין אותך לתמוך בנו, נא לשקול [לתרום](/donate) או [לתת חסות](https://www.abetterinternet.org/sponsor).
 
 בחלק מהמקרים, גופים שמשלבים את המוצרים שלנו בשלהם (כמו למשל, ספקי אחסון) ייגבו עמלה סמלית שמשקפת את העלויות התפעוליות והניהוליות שהם נוטלים כדי לספק אישורים של Let's Encrypt.
 
@@ -48,8 +47,8 @@ Let's Encrypt מופעלת על ידי קבוצה קטנה ונסמכת על א�
 
 אנו ממליצים לדווח על אתרים כאלה ל־Google Safe Browsing (גלישה בטוחה בחסות Google) ולתכנית SmartScreen מבית Microsoft שיכולות להגן על משתמשים בצורה יעילה יותר. הנה הכתובות לדיווח:
 
-* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
-* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
+- [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+- [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 אם מעניין אותך לקרוא עוד על מסמכי המדיניות שלנו ומה עומד מאחוריהם, ניתן לעשות זאת כאן:
 
@@ -89,7 +88,7 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## האם Let's Encrypt מנפיקה אישורים כוללניים?
 
-כן. הנפקה כוללנית חובה לבצע דרך ACMEv2 באמצעות אתגר DNS-01. ב[רשומה הזאת](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) יש קצת יותר פירוט טכני.
+כן. הנפקת אישורים כוללניים חייבת להתבצע דרך ACMEv2 באמצעות [האתגר DNS-01](/docs/challenge-types/#dns-01-challenge). ב[רשומה הזאת](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) יש קצת יותר פירוט טכני.
 
 ## האם יש לקוח של Let's Encrypt‏ (ACME) למערכת ההפעלה שלי?
 
@@ -106,3 +105,9 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 ## חידשתי אישור בהצלחה אך התיקוף לא התרחש כרגע - איך זה יתכן?
 
 לאחר השלמת האתגרים לשם תחום, ההרשאה שמתקבלת נשמרת במטמון של החשבון שלך לשימוש חוזר בעתיד. הרשאות נשמרות למשך 30 יום מרגע התיקוף. אם לאישור שביקשת יש את כל ההרשאות השמורות הנחוצות אז התיקוף לא יתרחש שוב עד לתפוגת תוקף ההרשאות הנוכחיות.
+
+## איפה אפשר ללמוד עוד על TLS/SSL ועל PKI באופן כללי?
+
+חוקר ומיישם אבטחת המידע, איוון ריסטיץ׳, פרסם מדריך הגדרות שמספק מידע חיוני על מה כדאי להתמקד בעת <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">הגדרת ה־TLS שלך</a>.
+
+לרקע נרחב יותר ופירוט עמוק יותר, אנו ממליצים על <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">TLS ו־PKI חסינים לגמרי</a>, שגם כן נכתב על ידי ריסטיץ׳.

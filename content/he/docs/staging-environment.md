@@ -3,7 +3,7 @@ title: סביבת הכנה להקמה
 slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
-lastmod: 2021-05-13
+lastmod: 2022-06-13
 show_lastmod: 1
 ---
 
@@ -14,7 +14,7 @@ show_lastmod: 1
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-אם נעשה שימוש ב־Certbot, ניתן להשתמש בסביבת ההכנה להקמה שלנו עם הדגלון `‎--dry-run`. ללקוחות ACME אחרים, נא לקרוא את ההנחיות שלהם לקבלת מידע על בדיקת מול סביבת ההכנה להקמה שלנו. נא לשים לב שגרסה 2 (v2) של סביבת ההכנה להקמה שלנו דורשת לקוח ACME תומך גרסה 2.
+אם נעשה שימוש ב־Certbot, ניתן להשתמש בסביבת ההכנה להקמה שלנו עם הדגלון `‎--test-cert`. ללקוחות ACME אחרים, נא לקרוא את ההנחיות שלהם לקבלת מידע על בדיקת מול סביבת ההכנה להקמה שלנו. נא לשים לב שגרסה 2 (v2) של סביבת ההכנה להקמה שלנו דורשת לקוח ACME תומך גרסה 2.
 
 # מגבלות מיכסה
 
@@ -42,7 +42,7 @@ show_lastmod: 1
 
 # שקיפות אישורים
 
-סביבת ההכנה להקמה מגישה טרום אישורים ל־[Testflume](/docs/ct-logs) מבית Let's Encrypt וליומני בדיקות שקיפות האישורים של [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) מבית Google וכוללת את ה־SCTs (חותמות זמן של אישור חתום) שהוחזרו באישורים שמונפקים.
+סביבת ההכנה להקמה מגישה טרום אישורים ל־[Sapling](/docs/ct-logs) מבית Let's Encrypt וליומני בדיקות שקיפות האישורים של [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) מבית Google וכוללת את ה־SCTs (חותמות זמן של אישור חתום) שהוחזרו באישורים שמונפקים.
 
 # שילוב רציף / בדיקת פיתוח
 

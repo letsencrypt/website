@@ -3,7 +3,7 @@ title: Ланцюг довіри
 linkTitle: Ланцюг довіри (кореневий і проміжний сертифікати)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-09-24
+lastmod: 2021-10-02
 show_lastmod: 1
 ---
 
@@ -44,11 +44,9 @@ IdenTrust підписав наші проміжні продукти RSA для
 
 * Активність
   * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
-    * [підписаний  ISRG коренем X1 ](https://crt.sh/?id=3334561879)[](/certs/lets-encrypt-r3.der)[](/certs/lets-encrypt-r3.pem)[](/certs/lets-encrypt-r3.txt)
-    * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778542)[](/certs/lets-encrypt-r3-cross-signed.der)
-[](/certs/lets-encrypt-r3-cross-signed.txt) На пенсії
-      
-      * Активна, обмежена доступність 
+    * [підписаний  ISRG коренем X1 ](https://crt.sh/?id=3334561879): [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
+    * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (На пенсії)    
+* Активна, обмежена доступність 
     * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`) 
         * [підписаний ISRG коренем Х2](https://crt.sh/?id=3334671964)[der](/certs/lets-encrypt-e1.der)[pem](/certs/lets-encrypt-e1.pem)[txt](/certs/lets-encrypt-e1.txt)
 * Резервне копіювання 
@@ -72,13 +70,9 @@ IdenTrust підписав наші проміжні продукти RSA для
     * [перехресно підписаний IdenTrust](https://crt.sh/?id=15706126): [der](/certs/lets-encrypt-x3-cross-signed.der), [pem](/certs/lets-encrypt-x3-cross-signed.pem), [txt](/certs/lets-encrypt-x3-cross-signed.txt)
   * Let's Encrypt Authority X4 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X4`) 
         * [підписаний ISRG Root X1](https://crt.sh/?id=47997546): [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
-    * [перехресно підписаний IdenTrust](https://crt.sh/?id=15710291): [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
-
-
+    * [перехресно підписаний IdenTrust](https://crt.sh/?id=15710291): [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt) 
 
 # Перехресне підписання
-
-
 
 ## Проміжні речі
 
@@ -90,15 +84,11 @@ IdenTrust підписав наші проміжні продукти RSA для
 
 При налаштуванні веб -сервера оператор сервера налаштовує не тільки сертифікат кінцевої сутності, а також список проміжних продуктів, які допоможуть браузерам перевірити, що сертифікат кінцевої сутності має ланцюжок довіри, що веде до надійності сертифікату. Майже всі оператори серверів вирішать обслуговувати ланцюг, у тому числі проміжний сертифікат з предметом "R3" і видавцем "ISRG Root X1". Рекомендація клієнта програмного забезпечення Let's Encrypt [бот комп'ютерної допомоги](https://certbot.org)зробить конфігурацію без проблем.
 
-
-
 ## Корені
 
 Подібно до проміжних продуктів, сертифікати можуть бути перехресними, часто для збільшення сумісності клієнта. Наш корінь ECDSA, ISRG Root X2 був створений восени 2020 року і є коренем сертифікату для ієрархії ECDSA. Він представлений двома сертифікатами: одним, який є самопідписаним і той, який підписаний ISRG Root X1.
 
 Усі сертифікати, підписані проміжним ECDSA "E1", будуть поставлені з ланцюжком, включаючи проміжний сертифікат, предметом якого є "ISRG Root X2", а емітентом - "ISRG Root X1". Майже всі оператори серверів вирішать обслуговувати цей ланцюжок, оскільки він пропонує найбільшу сумісність до ISRG Root X2, який користується широкою довірою.
-
-
 
 # OCSP Підписання Сертифікатів
 
