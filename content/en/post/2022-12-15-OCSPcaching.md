@@ -1,6 +1,6 @@
 ---
 author: Kiel Christofferson
-date: 2022-12-14T00:00:00Z
+date: 2022-12-15T00:00:00Z
 slug: OCSPcaching
 title: "Let’s Encrypt improves how we manage OCSP responses"
 excerpt: "By deploying Redis, Let’s Encrypt has improved our OCSP responses and increased reliability."
