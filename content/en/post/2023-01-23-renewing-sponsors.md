@@ -1,6 +1,6 @@
 ---
 author: Dan Fernelius
-date: 2023-01-13T12:00:00Z
+date: 2023-01-12T12:01:00Z
 slug: renewing-sponsors
 title: "Thank you to our 2023 renewing sponsors"
 excerpt: "Let’s Encrypt is a nonprofit service and our longtime and renewing sponsors play a major role in making that possible."
