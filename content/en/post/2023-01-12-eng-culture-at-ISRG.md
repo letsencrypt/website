@@ -1,6 +1,6 @@
 ---
 author: Carrissa Hsieh
-date: 2023-01-11T12:00:00Z
+date: 2023-01-12T12:00:00Z
 slug: eng-culture-at-ISRG
 title: "A Look into the Engineering Culture at ISRG"
 excerpt: "ISRG has implemented several practices that aim to create a workplace where engineers can thrive."
