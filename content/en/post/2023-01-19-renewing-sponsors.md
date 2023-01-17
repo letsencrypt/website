@@ -7,9 +7,6 @@ excerpt: "Let’s Encrypt is a nonprofit service and our longtime and renewing s
 data_file: sponsor_renewing_2023.html
 ---
 
-_Note to SM: Change date to 1/19 on date published_
-
-
 At ISRG, we often say, "as a nonprofit, 100% of our funding comes from charitable contributions." But what does that actually look like? For nearly a decade, the vast majority of our funding has come from sponsorships---in fact, more than $17 million dollars has been donated to ISRG since 2015. Looking to the year ahead, we wanted to take a moment to thank our renewing sponsors who, quite literally, make our work possible: 
 
 ## With us since the beginning
