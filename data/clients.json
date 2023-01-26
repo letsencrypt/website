@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-06-29",
+	"lastmod": "2023-01-26",
 	"categories": [
 		"Bash",
 		"C",
@@ -1096,6 +1096,12 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
-		}
+                },
+                {
+                        "name": "MyACME",
+                        "url": "https://github.com/declassed-art/myacme",
+                        "category": "Python",
+                        "acme_v2": "true"
+                }
 	]
 }
