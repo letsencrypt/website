@@ -3,7 +3,7 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-12-08
+lastmod: 2023-02-13
 show_lastmod: 1
 ---
 
@@ -73,7 +73,7 @@ might be different. If you want to change your DNS provider, you just
 need to make some small changes at your registrar. You don’t need to
 wait for your domain to be close to expiration to do so.
 
-Note that putting your fully DNS API credentials on your web server
+Note that putting your full DNS API credentials on your web server
 significantly increases the impact if that web server is hacked. Best
 practice is to use [more narrowly scoped API
 credentials][securing-dns-credentials], or perform DNS
