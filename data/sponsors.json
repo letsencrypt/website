@@ -54,7 +54,9 @@
       "url": "https://www.shopify.com/",
       "image": "shopify-logo.png"
     },
-    { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.png" }
+    { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
+    { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.png" },
+    { "name": "Squarespace", "url": "https://www.squarespace.com/", "image": "squarespace-logo.png" }
   ],
   "silver": [
     {
@@ -100,11 +102,6 @@
     },
     { "name": "3CX", "url": "https://www.3cx.com/", "image": "3cx-logo.png" },
     {
-      "name": "Squarespace",
-      "url": "https://www.squarespace.com/",
-      "image": "squarespace-logo.png"
-    },
-    {
       "name": "Hawk Host",
       "url": "https://www.hawkhost.com/",
       "image": "hawkhost-logo.png"
@@ -123,11 +120,6 @@
       "name": "VTEX",
       "url": "https://www.vtex.com/",
       "image": "vtex-logo.png"
-    },
-    {
-      "name": "Digital Ocean",
-      "url": "https://www.digitalocean.com/",
-      "image": "digital-ocean-logo.png"
     },
     {
       "name": "Zendesk",
@@ -211,17 +203,10 @@
       "image": "haproxy-logo.png"
     },
     {
-      "name": "Datto",
-      "url": "https://www.datto.com/",
-      "image": "datto-logo.png"
-    },
-    { "name": "Axiom", "url": "https://axiom.co/", "image": "axiom-logo.png" },
-    {
       "name": "MongoDB",
       "url": "https://www.mongodb.com/",
       "image": "mongodb-logo.png"
     },
-    { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
     {
       "name": "Livesport",
       "url": "https://www.livesport.eu/",
@@ -293,11 +278,6 @@
       "name": "Redacted",
       "url": "https://www.redacted.com/",
       "image": "redacted-logo.png"
-    },
-    {
-      "name": "VMWare",
-      "url": "https://www.vmware.com/",
-      "image": "vmware-logo.png"
     },
     {
       "name": "one.com",
