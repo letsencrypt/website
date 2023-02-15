@@ -22,7 +22,7 @@ menu:
 
 ## 메일링 리스트
 
-뉴스레터를 구독하려면[여기를 클릭하세요.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+뉴스레터를 구독하려면[여기를 클릭하세요.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
 
 ## 보안
 

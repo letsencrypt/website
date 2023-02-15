@@ -22,7 +22,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Milis
 
-Untuk mendapatkan berita kami, [klik di sini.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+Untuk mendapatkan berita kami, [klik di sini.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
 
 ## Keamanan
 

@@ -22,7 +22,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Danh Sách Gửi Thư
 
-Để đăng ký cho tin tức của chúng tôi, [nhấn vào đây.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+Để đăng ký cho tin tức của chúng tôi, [nhấn vào đây.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
 
 ## An Ninh
 

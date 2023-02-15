@@ -22,7 +22,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailinglisten
 
-Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
 
 ## Sicherheit
 
