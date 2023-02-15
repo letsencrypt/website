@@ -22,7 +22,7 @@ menu:
 
 ## 邮件列表
 
-[点击此处](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)注册我们的新闻通讯邮件。
+[点击此处](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)注册我们的新闻通讯邮件。
 
 ## 安全问题
 

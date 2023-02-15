@@ -22,7 +22,7 @@ menu:
 
 ## Почтовая рассылка
 
-Чтобы подписаться на нашу рассылку, [нажмите здесь](https://mailchi.mp/letsencrypt.org/fjp6ha1gad).
+Чтобы подписаться на нашу рассылку, [нажмите здесь](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681).
 
 ## Безопасность
 

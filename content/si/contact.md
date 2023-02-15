@@ -22,7 +22,7 @@ menu:
 
 ## තැපැල් ලේඛනය
 
-අපගේ ප්‍රවෘත්තිපත්‍රිකා සඳහා ලියාපදිංචි වීමට, [මෙතැන ඔබන්න.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+අපගේ ප්‍රවෘත්තිපත්‍රිකා සඳහා ලියාපදිංචි වීමට, [මෙතැන ඔබන්න.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
 
 ## ආරක්‍ෂාව
 
