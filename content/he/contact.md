@@ -22,7 +22,7 @@ menu:
 
 ## רשימת דיוור
 
-כדי להירשם לרשימת הדיוור שלנו, נא [ללחוץ כאן.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
+כדי להירשם לרשימת הדיוור שלנו, נא [ללחוץ כאן.](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
 
 ## אבטחה
 

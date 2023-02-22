@@ -22,7 +22,7 @@ menu:
 
 ## 邮件列表
 
-[点击此处](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)注册我们的新闻通讯邮件。
+[点击此处](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)注册我们的新闻通讯邮件。
 
 ## 安全问题
 

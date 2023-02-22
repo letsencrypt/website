@@ -22,7 +22,7 @@ E-post: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## E-postlista
 
-Du kan [prenumerera på vårt nyhetsbrev](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681) (engelska).
+Du kan [prenumerera på vårt nyhetsbrev](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51) (engelska).
 
 ## Säkerhet
 

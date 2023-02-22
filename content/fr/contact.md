@@ -22,7 +22,7 @@ Courriel : [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Liste de diffusion
 
-Pour vous inscrire à notre newsletter, [cliquez ici.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
+Pour vous inscrire à notre newsletter, [cliquez ici.](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
 
 ## Sécurité
 
