@@ -22,7 +22,7 @@ Sähköposti: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Postituslista
 
-Tilataksesi uutiskirjeemme, [paina tätä.](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
+Tilataksesi uutiskirjeemme, [paina tätä.](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
 
 ## Turvallisuus
 

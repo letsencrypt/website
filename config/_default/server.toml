@@ -59,6 +59,7 @@ Content-Security-Policy = """
         https://js.stripe.com/v3/
         https://js.stripe.com/v2/
         https://www.paypal.com
+        https://outreach.abetterinternet.org
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/

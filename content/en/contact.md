@@ -22,7 +22,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailing List
 
-To sign up for our newsletter, [click here](https://outreach.abetterinternet.org/emailPreference/e/epc/1011011/YNQ8y1PjGzzyTtRkhCIs0tvAUtc0WRz56GY_3MMv4tE/681)
+To sign up for our newsletter, [click here](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
 
 ## Security
 

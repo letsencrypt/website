@@ -14,6 +14,29 @@
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-2">
+        <p>{{ .Site.Params.description | safeHTML }}</p>
+        <p>
+          <span itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">548 Market St, PMB 77519</span>,
+            <span itemprop="addressLocality">San Francisco</span>,
+            <span itemprop="addressRegion">CA</span>
+            <span itemprop="postalCode">94104-5401</span>,
+            <span itemprop="addressCountry">USA</span>
+          </span>
+        </p>
+        <p>{{ i18n "footer_mailing" }}</p>
+        <p>
+          <span itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">PO Box 18666</span>,
+            <span itemprop="addressLocality">Minneapolis</span>,
+            <span itemprop="addressRegion">MN</span>
+            <span itemprop="postalCode">55418-0666</span>,
+            <span itemprop="addressCountry">USA</span>
+          </span>
+        </p>
+      </div>
+
       <div class="footer-col  footer-col-1">
         <ul class="social-media-list">
           {{ with .Site.Params.github_username }}
@@ -37,27 +60,10 @@
         {{ i18n "footer_policies" | safeHTML }}
       </div>
 
-      <div class="footer-col  footer-col-2">
-        <p>{{ .Site.Params.description | safeHTML }}</p>
-        <p>
-          <span itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">548 Market St, PMB 77519</span>,
-            <span itemprop="addressLocality">San Francisco</span>,
-            <span itemprop="addressRegion">CA</span>
-            <span itemprop="postalCode">94104-5401</span>,
-            <span itemprop="addressCountry">USA</span>
-          </span>
-        </p>
-        <p>{{ i18n "footer_mailing" }}</p>
-        <p>
-          <span itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">PO Box 18666</span>,
-            <span itemprop="addressLocality">Minneapolis</span>,
-            <span itemprop="addressRegion">MN</span>
-            <span itemprop="postalCode">55418-0666</span>,
-            <span itemprop="addressCountry">USA</span>
-          </span>
-        </p>
+      <div class="footer-col footer-newsletter-col  footer-col-3">
+        <h6>Subscribe to our Newsletter</h6>
+        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
       </div>
     </div>
 

@@ -297,6 +297,7 @@ html[dir="rtl"] .social-media-list {
     padding-left: $spacing-unit / 2;
 }
 
+/* 2 Column Version
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
@@ -314,12 +315,53 @@ html[dir="rtl"] .social-media-list {
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
 }
+*/
+
+// 3 column version
+
+.footer-col-1 {
+    width: -webkit-calc(25% - (#{$footer-spacing-unit} / 3));
+    width:         calc(25% - (#{$footer-spacing-unit} / 3));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(40% - (#{$footer-spacing-unit} / 3));
+    width:         calc(40% - (#{$footer-spacing-unit} / 3));
+}
+.footer-col-3 {
+    width: -webkit-calc(33.3% - (#{$footer-spacing-unit} / 3));
+    width:         calc(33.3% - (#{$footer-spacing-unit} / 3));
+}
+
+.footer-newsletter-col {
+    h6 {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-newsletter-col {
+        margin-top: 40px;
+    }
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        width: -webkit-calc(33.3% - (#{$footer-spacing-unit} / 3));
+        width:         calc(33.3% - (#{$footer-spacing-unit} / 3));
+    }
+}
 
 @include media-query($on-palm) {
     .footer-col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - (#{$footer-spacing-unit} / 3));
+        width:         calc(100% - (#{$footer-spacing-unit} / 3));
     }
 }
 
