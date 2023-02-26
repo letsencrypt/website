@@ -67,7 +67,7 @@ Note for translators:
 
 {{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”字段指明其内容 它通产包含[通用名称](#def-CN)、国家以及组织等字段。 {{% /def %}}
 
-{{% def id="CT" name="证书透明度" english="Certificate Transparency" abbr="CT" %}} 为了增强安全性，证书（或[准证书](#def-precertificate)）必须被发布到证书透明度日志上：[https://www.certificate-transparency.org/]。 [Let's Encrypt](#def-LE)生成并发布[准证书](#def-precertificate)并在之后的[证书](#def-leaf)中包含了准证书的 [SCT](#def-SCT)列表。 部分[浏览器](#def-web-browser)（如 Google Chrome）要求这一可验证的承诺必须出现在证书中，以便其验证该证书。 [维基百科条目](https://en.wikipedia.org/wiki/Certificate_Transparency){{% /def %}}
+{{% def id="CT" name="证书透明度" english="Certificate Transparency" abbr="CT" %}} 为了增强安全性，证书（或[准证书](#def-precertificate)）必须被发布到证书透明度日志上：[https://www.certificate-transparency.org/](https://www.certificate-transparency.org/)。 [Let's Encrypt](#def-LE)生成并发布[准证书](#def-precertificate)并在之后的[证书](#def-leaf)中包含了准证书的 [SCT](#def-SCT)列表。 部分[浏览器](#def-web-browser)（如 Google Chrome）要求这一可验证的承诺必须出现在证书中，以便其验证该证书。 [维基百科条目](https://en.wikipedia.org/wiki/Certificate_Transparency){{% /def %}}
 
 {{% def id="CT-log" name="证书透明度日志" english="Certificate Transparency Log" %}} [证书透明度](#def-CT)的一个组件。它接收证书和[准证书](#def-precertificate)并将它们添加到一个永久、可验证、公开的列表中。  {{% /def %}}
 
@@ -79,7 +79,7 @@ Note for translators:
 
 {{% def id="DNSSEC" name="域名系统安全扩展" english="Domain Name System Security Extensions" abbr="DNSSEC" %}} 使用密码学认证 DNS 回复的机制。 要使 DNSSEC 生效，必须在 TLD、域名所有者以及递归解析服务器上都进行部署。 目前其采用率较低。 [维基百科条目](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions){{% /def %}}
 
-{{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。 [Let's Encrypt](#def-LE)仅提供 DV 证书，不提供 [OV](#def-OV)或 [EV](#def-EV)证书：[常见问题]](/docs/faq) - [维基百科条目](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
+{{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。 [Let's Encrypt](#def-LE)仅提供 DV 证书，不提供 [OV](#def-OV)或 [EV](#def-EV)证书：[常见问题](/docs/faq) - [维基百科条目](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
 
 {{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。  [维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持使用 ECDSA 的[叶证书（终端实体证书）](#def-leaf)，但没有全部使用 ECDSA 的完整[证书链](#def-chain)：[/upcoming-features](/upcoming-features) {{% /def %}}
 
