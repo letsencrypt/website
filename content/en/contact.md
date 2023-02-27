@@ -3,7 +3,7 @@ title: Contact
 slug: contact
 description: How to contact us
 top_graphic: 1
-lastmod: 2022-09-23
+lastmod: 2023-02-26
 menu:
   main:
     weight: 90
@@ -20,9 +20,9 @@ Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mailing List
+## Subscribe to our Newsletter
 
-To sign up for our newsletter, [click here](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
 
 ## Security
 
