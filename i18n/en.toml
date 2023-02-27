@@ -191,3 +191,6 @@ other = "100-999 employees"
 
 [1000_employees]
 other = "1000+ employees"
+
+[subscribe_to_newsletter_headline]
+other = "Subscribe to our Newsletter"
