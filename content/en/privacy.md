@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2022-08-29
+lastmod: 2023-02-28
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -31,11 +31,11 @@ You may need to download client software from a repository such as those run by 
 
 ## Visitor
 
-When you are a Visitor browsing the Let's Encrypt web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, SendOwl, PayPal, The Giving Block, and Gemini depending on the payment method selected, and stored in ISRG's Salesforce database. We collect your name and email address when you donate. We will not use your email address to contact you without your consent unless we feel it's necessary to resolve an issue related to a particular donation. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, SendOwl, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), and [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations. Our shipping fulfillment partners are Shopify, SendOwl, and SHIPHERO.
+When you are a Visitor browsing an ISRG web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, and PayPal, depending on the payment method selected, and stored in ISRG's Salesforce database and Sage Intacct as necessary. We collect your name and email address, and, if you provide it, your mailing address when you donate. Once you donate, we will use your information for our legitimate interest in processing and managing your contribution, including fundraising reminders and renewals. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), and [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations.
 
-You may have the option to provide your email address to receive communications related to ISRG projects through a signup on an ISRG web site and via other marketing materials. Any communication delivered via MailChimp or Salesforce and your interactions with [MailChimp](https://www.intuit.com/privacy/statement/) and [Salesforce](https://www.salesforce.com/company/privacy/) are governed by their privacy policies. We may occasionally use your email address to send personalized communications related to Let's Encrypt. You can request to have your email address removed from our list by opting out via MailChimp or emailing us at press@letsencrypt.org.
+You may provide your email address to receive communications related to ISRG projects through a signup on an ISRG web site and via other marketing materials. Any communication delivered via Salesforce and your interactions with [Salesforce](https://www.salesforce.com/company/privacy/) are governed by their privacy policies. We may occasionally use your email address to send personalized communications related to ISRG and its projects. You can request to have your email address removed by opting out via the footer of our emails or emailing us at press@abetterinternet.org
 
-If you register to use the Let's Encrypt community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
+If you register to use an ISRG community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
 
 ## We Do Not Sell Your Data or Information
 
