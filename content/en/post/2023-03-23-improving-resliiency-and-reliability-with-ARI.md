@@ -1,6 +1,6 @@
 ---
 author: Josh Aas
-date: 2023-03-21T00:00:00Z
+date: 2023-03-23T00:00:00Z
 slug: improving-resliiency-and-reliability-with-ARI
 title: "Improving Resiliency and Reliability for Let’s Encrypt with ARI"
 excerpt: "The ACME Renewal Information (ARI) protocol extension enables certificate revocation and renewal at scale. "
