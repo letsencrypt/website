@@ -56,6 +56,14 @@
             </a>
           </li>
          {{ end }}
+          {{ with .Site.Params.mastodon_username }}
+          <li>
+            <i class="fab fa-mastodon" aria-hidden="true"></i>
+            <a rel="me" href="https://infosec.exchange/@{{ . }}">
+              <span class="username">Mastodon</span>
+            </a>
+          </li>
+         {{ end }}
         </ul>
         {{ i18n "footer_policies" | safeHTML }}
       </div>
