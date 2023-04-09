@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-06-29",
+	"lastmod": "2023-04-09",
 	"categories": [
 		"Bash",
 		"C",
@@ -57,7 +57,7 @@
 		{
 			"name": "ApisCP",
 			"url": "https://apiscp.com"
-		},		
+		},
 		{
 			"name": "Caddy",
 			"url": "https://caddyserver.com/"
@@ -89,7 +89,7 @@
 		{
 			"name": "Gitlab",
 			"url": "https://about.gitlab.com"
-    },
+    		},
 		{
 			"name": "ISPConfig",
 			"url": "https://www.ispconfig.org/"
@@ -129,6 +129,10 @@
 		{
 			"name": "Synchronet BBS System",
 			"url": "http://www.synchro.net"
+		},
+		{
+			"name": "traefik proxy",
+			"url": "https://traefik.io/traefik/"
 		},
 		{
 			"name": "Vesta Control Panel",
@@ -949,7 +953,7 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-    },
+    		},
 		{
 			"name": "acmetk",
 			"url": "https://github.com/noahkw/acmetk",
@@ -959,8 +963,8 @@
 				"DNS-01": "true"
 			},
 			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
-    },
-    {
+    		},
+    		{
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
