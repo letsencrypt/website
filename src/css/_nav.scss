@@ -175,3 +175,20 @@ a.pure-menu-link:hover {
     display: block;
   }
 }
+
+
+#site-banner {
+  a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $logo-yellow-color;
+    color: $logo-blue-color;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+      background-color: darken($logo-yellow-color, 10%);
+    }
+  }
+}
