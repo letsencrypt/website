@@ -12,15 +12,29 @@ do_not_translate: 1
 
     <div class="le-newsletter-form-container">
         <!-- OSN event specific form -->
-        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-05-18/ftf7" height="200" style="width: 100%; border: 0"></iframe>
+        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-05-18/ftf7?sourceValue=osn-event" height="200" style="width: 100%; border: 0"></iframe>
     </div>
 </div>
 
 <script>
-    window.addEventListener('message', function(event) {
-        if (event.origin !== 'https://outreach.abetterinternet.org') return;
-        if (event.data === 'refresh') {
-            window.location.reload();
-        }
-    }, false);
+// Receive refresh command from iframe
+window.addEventListener('message', function(event) {
+  // Check the origin of the message, to ensure it's from a trusted source
+  console.log("Message received from: " + event.origin, event)
+  if (event.origin !== 'https://outreach.abetterinternet.org') return;
+
+  if (event.data === 'refresh') {
+    window.location.reload();
+  }
+}, false);
+
+// Tell iframe to autofocus on the text field on load
+window.addEventListener('DOMContentLoaded', (event) => {
+    var iframe = document.querySelector('iframe');
+    iframe.addEventListener('load', function() {
+        iframe.contentWindow.postMessage('focusOnInput', 'https://outreach.abetterinternet.org');
+    });
+});
+
+
 </script>
