@@ -1,0 +1,40 @@
+---
+title: Newsletter Signup
+slug: osn-event
+top_graphic: 1
+date: 2023-05-18
+do_not_translate: 1
+---
+
+<div class="text-center">
+    <h2 class="larger-h2">Sign up for our Newsletter, <br />enter to win a Let’s Encrypt hoodie!</h2>
+    <p class="larger-p">Help us kick off our celebration of our parent nonprofit’s 10th anniversary by signing up for the Let’s Encrypt newsletter. Anyone who signs up today at OSN will enter for the chance to win a 2023 Let’s Encrypt hoodie!</p>
+
+    <div class="le-newsletter-form-container">
+        <!-- OSN event specific form -->
+        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-05-18/ftf7?sourceValue=osn-event" height="200" style="width: 100%; border: 0"></iframe>
+    </div>
+</div>
+
+<script>
+// Receive refresh command from iframe
+window.addEventListener('message', function(event) {
+  // Check the origin of the message, to ensure it's from a trusted source
+  console.log("Message received from: " + event.origin, event)
+  if (event.origin !== 'https://outreach.abetterinternet.org') return;
+
+  if (event.data === 'refresh') {
+    window.location.reload();
+  }
+}, false);
+
+// Tell iframe to autofocus on the text field on load
+window.addEventListener('DOMContentLoaded', (event) => {
+    var iframe = document.querySelector('iframe');
+    iframe.addEventListener('load', function() {
+        iframe.contentWindow.postMessage('focusOnInput', 'https://outreach.abetterinternet.org');
+    });
+});
+
+
+</script>
