@@ -1,6 +1,6 @@
 ---
 author: Josh Aas
-date: 2023-05-18T12:00:00Z
+date: 2023-05-24T00:00:00Z
 slug: isrg-10th-anniversary
 title: "ISRG’s 10th Anniversary"
 excerpt: "As ISRG celebrates its 10th anniversary, Co-founder and Executive Director Josh Aas reflects on the accomplishments of the nonprofit and looks ahead to its continued impact in the years to come."
@@ -14,7 +14,7 @@ It's hard to believe 10 years have passed since Eric Rescorla, Alex Halderman, P
 
 Since its founding in 2013, ISRG's [Let's Encrypt](https://letsencrypt.org/) certificate authority has come to serve hundreds of millions of websites and protect just about everyone who uses the Web. Our [Prossimo](https://www.memorysafety.org/) project has brought the urgent issue of memory safety to the fore, and [Divvi Up](https://divviup.org/) is set to revolutionize the way apps collect metrics while preserving user privacy. I've tried to comprehend how much data about peoples' lives our work has and will protect, and tried even harder to comprehend what that means if one could quantify privacy. It's simply beyond my ability.
 
-Some of the highlights from the past ten years include:
+[Some of the highlights](https://www.abetterinternet.org/tenth-anniversary/) from the past ten years include:
 
 - May 24, 2013: ISRG is incorporated, intending to build Let's Encrypt
 
