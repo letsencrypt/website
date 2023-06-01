@@ -39,6 +39,7 @@ Permissions-Policy = """
 Content-Security-Policy = """
     default-src 'none';
     font-src 'self';
+    frame-ancestors 'self' https://isrg.formstack.com;
     style-src 'unsafe-inline' 'self';
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
