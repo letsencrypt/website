@@ -3,7 +3,7 @@ title: Határértékek
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2021-07-12
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -42,7 +42,7 @@ id="new-orders"></a>**új megbízást** hozhat létre. Minden alkalommal új meg
 
 Ha elért egy határértéket, nem áll módunkban, hogy ideiglenesen visszaállítsuk azt az eredeti értékre. Meg kell várnia, amíg a határérték érvényessége egy hét múlva lejár. Mozgó időszakot veszünk figyelembe, így ha hétfőn 25 tanúsítványt állított ki, pénteken pedig további 25 tanúsítványt, akkor hétfőtől újra kiállíthat. A regisztrált domainhez kiállított tanúsítványok listáját a [crt.sh-n való kereséssel](https://crt.sh) kaphatja meg, amely a nyilvános [Certificate Transparency](https://www.certificate-transparency.org) naplót használja.
 
-Ha Ön egy nagy tárhelyszolgáltató vagy szervezet, amely Let's Encrypt integráción dolgozik, akkor van egy [határérték űrlapunk](https://forms.gle/JVKTgfMYUm7dLjfq5), amely kitöltésével magasabb határértékeket igényelhet. A kérelmek feldolgozása néhány hetet vesz igénybe, ezért az űrlap kitöltése arra nem alkalmas, ha gyorsan szeretné visszaállítani a határértéket, mint ahogy az magától visszaáll az eredeti értékre.
+Ha Ön egy nagy tárhelyszolgáltató vagy szervezet, amely Let's Encrypt integráción dolgozik, akkor van egy [határérték űrlapunk](https://isrg.formstack.com/forms/rate_limit_adjustment_request), amely kitöltésével magasabb határértékeket igényelhet. A kérelmek feldolgozása néhány hetet vesz igénybe, ezért az űrlap kitöltése arra nem alkalmas, ha gyorsan szeretné visszaállítani a határértéket, mint ahogy az magától visszaáll az eredeti értékre.
 
 Ne feledje, hogy a legtöbb tárhelyszolgáltatónak nincs szüksége határérték növelésre, mivel nincs korlátozva a különböző regisztrált domainek száma, amelyekhez kiadhat tanúsítványt. So long as most of your customers don't have more than 2,000 subdomains on a registered domain, you most likely do not need an increase. További tanácsokért lásd [integrációs útmutatót](/docs/integration-guide).
 

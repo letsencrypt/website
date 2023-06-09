@@ -3,7 +3,7 @@ title: Limites de Requisições
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-04-15
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -96,7 +96,7 @@ na emissão de certificados já foram consumidos.
 
 Se você for um provedor de hospedagem grande ou uma organização trabalhando na integração
 com a Let's Encrypt, temos um [formulário de 
-limite de requisições](https://forms.gle/JVKTgfMYUm7dLjfq5) (Inglês)
+limite de requisições](https://isrg.formstack.com/forms/rate_limit_adjustment_request) (Inglês)
 que pode ser usado para solicitar um limite maior de requisições. Leva algumas semanas para processar 
 as solicitações, então este formulário não é adequado se você precisa zerar o limite de requisições
 mais rápido do que ele zera automaticamente.

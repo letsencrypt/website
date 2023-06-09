@@ -3,7 +3,7 @@ title: 速率限制
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2021-10-05
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -42,7 +42,7 @@ id="overall-requests"></a>**总请求数**限制为每秒 20 次。 "/directory"
 
 如果您达到了速率限制，我们没有办法帮助您暂时重置它。 您需要等待一周，直到这些速率限制过期。 我们使用了滑动窗口的方式，因此如果你在周一申请签发了25张证书，并且在周五又申请签发了25张证书，那么下周一起你将可以再次申请签发证书。 你可以在利用公开[证书透明度](https://www.certificate-transparency.org)记录的 [ crt.sh ](https://crt.sh) 网站上搜索获取你已经申请签发的证书列表。
 
-如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://goo.gl/forms/plqRgFVnZbdGhE9n1)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
+如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://isrg.formstack.com/forms/rate_limit_adjustment_request)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
 
 # <a id="clearing-pending"></a>清除待验证的授权
 

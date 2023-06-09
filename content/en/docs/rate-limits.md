@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2021-10-05
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -102,7 +102,7 @@ logs.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
-form](https://forms.gle/JVKTgfMYUm7dLjfq5)
+form](https://isrg.formstack.com/forms/rate_limit_adjustment_request)
 that can be used to request a higher rate limit. It takes a few weeks to process
 requests, so this form is not suitable if you just need to reset a rate limit
 faster than it resets on its own.
