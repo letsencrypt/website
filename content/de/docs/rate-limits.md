@@ -3,7 +3,7 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2019-06-04
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -101,7 +101,7 @@ Logs benutzt.
 
 Wenn Sie ein grosser Hosting-Provider sind oder eine Organisation, die an
 einer Let's Encrypt Integration arbeitet, haben wir ein
-[Rate Limit Formular](https://forms.gle/JVKTgfMYUm7dLjfq5), welches zur
+[Rate Limit Formular](https://isrg.formstack.com/forms/rate_limit_adjustment_request), welches zur
 Anfrage nach höheren Limits benutzt werden kann. Die Bearbeitung der Anfrage
 dauert ein paar Wochen, das heisst das Formular ist nicht zweckdienlich zum
 Zurücksetzen eines bestehendes Rate Limits, in das Sie reingelaufen sind.

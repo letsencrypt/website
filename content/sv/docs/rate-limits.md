@@ -3,7 +3,7 @@ title: Taktbegränsningar
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-02-24
+lastmod: 2023-06-09
 show_lastmod: 1
 ---
 
@@ -100,7 +100,7 @@ genom att [söka på crt.sh](https://crt.sh), vilken använder de publika
 
 Om ni är ett stort webbhotell eller en organisation som arbetar på en Let's
 Encrypt-integration så har vi ett
-[taktbegränsningsformulär](https://forms.gle/JVKTgfMYUm7dLjfq5) som kan
+[taktbegränsningsformulär](https://isrg.formstack.com/forms/rate_limit_adjustment_request) som kan
 användas för att begära en högre gräns. Det tar några veckor att behandla
 förfrågningar så formuläret är inte lämpligt att använda om ni bara vill
 återställa en gräns snabbare än den återställs på egen hand.
