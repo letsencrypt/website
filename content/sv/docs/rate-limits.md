@@ -3,7 +3,7 @@ title: Taktbegränsningar
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2023-06-09
+lastmod: 2020-02-24
 show_lastmod: 1
 ---
 
