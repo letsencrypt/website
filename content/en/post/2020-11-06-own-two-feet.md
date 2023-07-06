@@ -4,12 +4,12 @@ date: 2020-11-06T00:00:00Z
 excerpt: "When a new Certificate Authority (CA) comes on the scene, it faces a conundrum: In order to be useful to people, it needs its root certificate to be trusted by a wide variety of operating systems (OSes) and browsers. However, it can take years for the OSes and browsers to accept the new root certificate, and even longer for people to upgrade their devices to the newer versions that include that change."
 title: "Standing on Our Own Two Feet [Updated]"
 slug: own-two-feet
-lastmod: 2023-07-10
+lastmod: 2023-07-06
 ---
 
-> **Update, July 10, 2023**
+> **Update, July 6, 2023**
 >
-> See our [new blog post](/2023/07/10/cross-sign-expiration.html) for details on the September 2024 expiration of the newer cross-sign from IdenTrust.
+> See our [new blog post](/2023/07/6/cross-sign-expiration.html) for details on the September 2024 expiration of the newer cross-sign from IdenTrust.
 
 > **Update, December 21, 2020**
 >
