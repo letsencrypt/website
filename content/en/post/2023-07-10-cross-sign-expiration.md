@@ -17,8 +17,6 @@ In the last three years, the percentage of Android devices which trust our ISRG 
 
 For these reasons, we will not be getting a new cross-sign to extend compatibility any further.
 
-![Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above.](/images/2023.07.08-android-version-distribution.png)
-
 The transition will roll out as follows:
 
 - On **Thursday, Feb 8th, 2024**, we will stop providing the cross-sign by default in requests made to our /acme/certificate API endpoint. For most Subscribers, this means that your ACME client will configure a chain which terminates at ISRG Root X1, and your webserver will begin providing this shorter chain in all TLS handshakes. The longer chain, terminating at the soon-to-expire cross-sign, will still be available as an alternate chain which you can configure your client to request.
@@ -26,6 +24,12 @@ The transition will roll out as follows:
 - On **Thursday, June 6th, 2024**, we will stop providing the longer cross-signed chain entirely. This is just over [90 days](https://letsencrypt.org/2015/11/09/why-90-days.html) (the lifetime of one certificate) before the cross-sign expires, and we need to make sure subscribers have had at least one full issuance cycle to migrate off of the cross-signed chain.
 
 - On **Monday, September 30th, 2024**, the cross-signed certificate will expire. This should be a non-event for most people, as any client breakages should have occurred over the preceding six months.
+
+<img
+  alt="Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above."
+  src="/images/2023.07.08-android-version-distribution.png"
+  style="width: 50%"
+/>
 
 **If you use Android 7.0 or earlier**, you may need to take action to ensure you can still access websites secured by Let's Encrypt certificates. We recommend installing and using [Firefox Mobile](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/), which uses its own trust store instead of the Android OS trust store, and therefore trusts ISRG Root X1.
 
