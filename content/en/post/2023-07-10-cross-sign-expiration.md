@@ -1,6 +1,6 @@
 ---
 author: Aaron Gable
-date: 2023-07-10T00:00:00Z
+date: 2023-07-06T00:00:00Z
 slug: cross-sign-expiration
 title: "Shortening the Let's Encrypt Chain of Trust"
 excerpt: "In late 2024, Let's Encrypt's cross-sign from IdenTrust will expire. Here's everything you need to know about the upcoming transition, and why it will be a non-event for most people."
