@@ -1,9 +1,10 @@
 ---
 author: Aaron Gable
 date: 2023-07-10T00:00:00Z
-slug: cross-sign-expiration.md
+slug: cross-sign-expiration
 title: "Shortening the Let's Encrypt Chain of Trust"
 excerpt: "In late 2024, Let's Encrypt's cross-sign from IdenTrust will expire. Here's everything you need to know about the upcoming transition, and why it will be a non-event for most people."
+lastmod: 2023-07-10
 ---
 
 When Let's Encrypt first launched, we needed to ensure that our certificates were widely trusted. To that end, we arranged to have our intermediate certificates [cross-signed by IdenTrust's DST Root CA X3](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html). This meant that all certificates issued by those intermediates would be trusted, even while our own ISRG Root X1 wasn't yet. During subsequent years, our Root X1 became [widely trusted](https://letsencrypt.org/docs/certificate-compatibility/) on its own. 
