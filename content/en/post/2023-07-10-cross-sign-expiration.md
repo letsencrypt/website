@@ -16,7 +16,7 @@ In the last three years, the percentage of Android devices which trust our ISRG 
 
 For these reasons, we will not be getting a new cross-sign to extend compatibility any further.
 
-![Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above.](//static/images/2023.07.08-android-version-distribution.png)
+![Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above.](/images/2023.07.08-android-version-distribution.png)
 
 The transition will roll out as follows:
 
