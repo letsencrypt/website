@@ -25,11 +25,11 @@ The transition will roll out as follows:
 
 - On **Monday, September 30th, 2024**, the cross-signed certificate will expire. This should be a non-event for most people, as any client breakages should have occurred over the preceding six months.
 
-<img
-  alt="Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above."
-  src="/images/2023.07.08-android-version-distribution.png"
-  style="width: 50%"
-/>
+<div class="howitworks-figure">
+<img alt="Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above."
+     src="/images/2023.07.08-android-version-distribution.png"
+     style="width: 50%"/>
+</div>
 
 **If you use Android 7.0 or earlier**, you may need to take action to ensure you can still access websites secured by Let's Encrypt certificates. We recommend installing and using [Firefox Mobile](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/), which uses its own trust store instead of the Android OS trust store, and therefore trusts ISRG Root X1.
 
