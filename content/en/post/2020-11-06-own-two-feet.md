@@ -9,7 +9,7 @@ lastmod: 2023-07-10
 
 > **Update, July 10, 2023**
 >
-> See our [new blog post](/2023/07/10/cross-sign-expiration.html) for details on the September 2024 expiration of the newer cross-sign from IdenTrust.
+> See our [new blog post](/2023/07/10/cross-sign-expiration.html) for details on the September 2024 expiration of the newer ISRG Root X1 cross-sign from IdenTrust.
 
 > **Update, December 21, 2020**
 >
