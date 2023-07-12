@@ -25,7 +25,7 @@ Voit myös auttaa ohjelmistokehityksessä. Kaikki koodimme on [GitHubissa](https
 
 ### Palvelinpuoleinen varmentajaohjelmisto
 
-<a href="https://gi[Boulder](https://github.com/letsencrypt/boulder) on toteutus varmentajaa Let's Encrypt. Se perustuu [ACME](https://tools.ietf.org/html/rfc8555) protokollaan, ja on kirjoitettu ensisijaisesti Go:ksi. Hyvä paikka aloittaa on luettelo ["apua tarvitaan'-ongelmista](https://github.com/letsencrypt/boulder/labels/help%20wanted) ja [avustajien opas](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+<a href="https://gi[Boulder](https://github.com/letsencrypt/boulder) on toteutus varmentajaa Let's Encrypt. Se perustuu [ACME](https://tools.ietf.org/html/rfc8555) protokollaan, ja on kirjoitettu ensisijaisesti Go:ksi. Hyvä paikka aloittaa on luettelo ["apua tarvitaan'-ongelmista](https://github.com/letsencrypt/boulder/labels/help%20wanted) ja [avustajien opas](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 
