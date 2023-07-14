@@ -1,4 +1,17 @@
 {
+  "diamond": [
+    {
+      "name": "Google Chrome",
+      "url": "https://www.google.com/chrome/",
+      "image": "chrome-logo.png",
+      "nofollow": true
+    },
+    {
+      "name": "Amazon Web Services",
+      "url": "https://aws.amazon.com/",
+      "image": "aws-logo-2.png"
+    }
+  ],
   "platinum": [
     {
       "name": "Mozilla",
@@ -17,25 +30,9 @@
     },
     { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" },
     {
-      "name": "Google Chrome",
-      "url": "https://www.google.com/chrome/",
-      "image": "chrome-logo.png",
-      "nofollow": true
-    },
-    {
-      "name": "Internet Society",
-      "url": "https://www.internetsociety.org/",
-      "image": "isoc-logo.png"
-    },
-    {
       "name": "Meta",
       "url": "https://www.meta.com/",
       "image": "meta-logo.png"
-    },
-    {
-      "name": "Amazon Web Services",
-      "url": "https://aws.amazon.com/",
-      "image": "aws-logo.png"
     }
   ],
   "gold": [
