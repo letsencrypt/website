@@ -25,7 +25,7 @@ A [Certbot](https://github.com/certbot/certbot) a webszerver mellett működő P
 
 ### Szerveroldali hitelesítés szolgáltató  (CE) szoftver
 
-[Boulder](https://github.com/letsencrypt/boulder) a Let's Encrypt CA implementációja. Az [ACME](https://tools.ietf.org/html/rfc8555) protokollon alapul, és nagyrészt Go nyelven íródott. Remek kiindulópont lehet a ['help wanted' taggel ellátott issue-k](https://github.com/letsencrypt/boulder/labels/help%20wanted) és a [közreműködők számára készült útmutató](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) a Let's Encrypt CA implementációja. Az [ACME](https://tools.ietf.org/html/rfc8555) protokollon alapul, és nagyrészt Go nyelven íródott. Remek kiindulópont lehet a ['help wanted' taggel ellátott issue-k](https://github.com/letsencrypt/boulder/labels/help%20wanted) és a [közreműködők számára készült útmutató](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

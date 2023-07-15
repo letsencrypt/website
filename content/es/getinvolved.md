@@ -25,7 +25,7 @@ Siempre podemos usar ayuda para el desarrollo de software. Todo nuestro código 
 
 ### Software AC del lado del servidor
 
-[Boulder](https://github.com/letsencrypt/boulder) es la implementación AC de Let's Encrypt. Está basado en el protocolo [ACME](https://tools.ietf.org/html/rfc8555), y escrito primariamente en Go. Un gran lugar para comenzar es con la lista de problemas ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) y la [guía de contribuyentes](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) es la implementación AC de Let's Encrypt. Está basado en el protocolo [ACME](https://tools.ietf.org/html/rfc8555), y escrito primariamente en Go. Un gran lugar para comenzar es con la lista de problemas ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) y la [guía de contribuyentes](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

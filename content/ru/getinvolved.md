@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### Серверное программное обеспечение ЦС
 
-[Boulder](https://github.com/letsencrypt/boulder) — это реализация Центра сертификации (ЦС) Let's Encrypt. Он основан на протоколе [ACME](https://tools.ietf.org/html/rfc8555), и написан в основном на Go. Отличный способ начать — ознакомиться со списком [проблем 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) и [инструкцией для участников](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) — это реализация Центра сертификации (ЦС) Let's Encrypt. Он основан на протоколе [ACME](https://tools.ietf.org/html/rfc8555), и написан в основном на Go. Отличный способ начать — ознакомиться со списком [проблем 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) и [инструкцией для участников](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### Сайт letsencrypt.org
 

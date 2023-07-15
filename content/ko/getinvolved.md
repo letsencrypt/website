@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### 서버단 CA 소프트웨어
 
-[Boulder](https://github.com/letsencrypt/boulder)는 Let’s Encrypt CA를 구현하기 위한 도구입니다. [ACME](https://tools.ietf.org/html/rfc8555) 프로토콜 기반이고, 우선은 Go 프로그램 언어로 작성되었습니다. 시작하기에 좋은 곳은 ['도움을 원해요' 목록](https://github.com/letsencrypt/boulder/labels/help%20wanted)과 [공헌자 가이드](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)입니다.
+[Boulder](https://github.com/letsencrypt/boulder)는 Let’s Encrypt CA를 구현하기 위한 도구입니다. [ACME](https://tools.ietf.org/html/rfc8555) 프로토콜 기반이고, 우선은 Go 프로그램 언어로 작성되었습니다. 시작하기에 좋은 곳은 ['도움을 원해요' 목록](https://github.com/letsencrypt/boulder/labels/help%20wanted)과 [공헌자 가이드](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)입니다.
 
 ### letsencrypt.org
 
