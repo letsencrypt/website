@@ -1,3 +1,6 @@
+Canonical: https://letsencrypt.org/.well-known/security.txt
 Contact: mailto:security@letsencrypt.org
 Encryption: https://letsencrypt.org/contact/
+Expires: 2026-07-15T16:59:59z
+Hiring: https://abetterinternet.org/careers/
 Preferred-Languages: en
