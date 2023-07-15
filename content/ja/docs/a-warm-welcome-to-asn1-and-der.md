@@ -91,7 +91,7 @@ GeneralizedTime は、4桁の数字で年を表す単純な方法で 2050年以�
 OBJECT IDENTIFIER
 -----------------
 
-Object Identifier (オブジェクト識別子) は、整数のシーケンスで構成される世界的に一意な階層識別子です。 これらはあらゆる種類の「もの」を指しますが、一般的には、標準、アルゴリズム、証明書拡張、組織、またはポリシー文書を識別するために使用されます。 例えば、[1.2.840.113549](http://oid-info.com/get/1.2.840.113549)は RSA Security LLC を識別します。 RSA は、[RFC 8017](https://tools.ietf.org/html/rfc8017#page-69)で定義されている sha256WithRSAEncryption を識別する [1.2.840.113549.1.1.11](1.2.840.113549.1.1.11)のように、そのプレフィックスから始まる OID を割り当てることができます。
+Object Identifier (オブジェクト識別子) は、整数のシーケンスで構成される世界的に一意な階層識別子です。 これらはあらゆる種類の「もの」を指しますが、一般的には、標準、アルゴリズム、証明書拡張、組織、またはポリシー文書を識別するために使用されます。 例えば、[1.2.840.113549](http://oid-info.com/get/1.2.840.113549)は RSA Security LLC を識別します。 RSA は、[RFC 8017](https://tools.ietf.org/html/rfc8017#page-69)で定義されている sha256WithRSAEncryption を識別する [1.2.840.113549.1.1.11](http://oid-info.com/get/1.2.840.113549.1.1.11)のように、そのプレフィックスから始まる OID を割り当てることができます。
 
 同様に、[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129)は Google,Inc. を識別します。Google は、[RFC 6962](https://tools.ietf.org/html/rfc6962)で定義されているように、証明書の透過性 ( Google で最初に開発された) で使用される[ SCT リスト拡張](https://letsencrypt.org/2018/04/04/sct-encoding.html)を識別するために[1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2)を割り当てました。
 
