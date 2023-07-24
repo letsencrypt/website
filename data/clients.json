@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-06-29",
+	"lastmod": "2023-07-24",
 	"categories": [
 		"Bash",
 		"C",
@@ -145,6 +145,10 @@
 		{
 			"name": "Zappa",
 			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
+		},
+		{
+			"name": "Domain Admin",
+			"url": "https://github.com/mouday/domain-admin"
 		}
 	],
 	"list": [
