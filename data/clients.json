@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-06-29",
+	"lastmod": "2023-07-22",
 	"categories": [
 		"Bash",
 		"C",
@@ -145,6 +145,10 @@
 		{
 			"name": "Zappa",
 			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
+		},
+		{
+			"name": "Proxmox Virtual Environment",
+			"url": "https://pve.proxmox.com/wiki/Certificate_Management#sysadmin_certs_get_trusted_acme_cert"
 		}
 	],
 	"list": [
