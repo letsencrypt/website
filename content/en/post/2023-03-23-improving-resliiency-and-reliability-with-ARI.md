@@ -8,7 +8,7 @@ excerpt: "The ACME Renewal Information (ARI) protocol extension enables certific
 
 The Let's Encrypt team is excited to announce that [ACME Renewal Information (ARI)](https://datatracker.ietf.org/doc/draft-ietf-acme-ari/) is live in production! ARI makes it possible for our subscribers to handle certificate revocation and renewal as easily and automatically as the process of getting a certificate in the first place.
 
-With ARI, Let's Encrypt can signal to ACME clients when they should renew certificates. In the normal case of a certificate with a 90 day lifetime, ARI might signal for renewal at 60 days. If Let's Encrypted needs to revoke a certificate for some reason, ARI can signal that renewal needs to happen prior to the revocation. This means that even in extenuating circumstances, renewal can happen in an entirely automated way without disrupting subscriber services.
+With ARI, Let's Encrypt can signal to ACME clients when they should renew certificates. In the normal case of a certificate with a 90 day lifetime, ARI might signal for renewal at 60 days. If Let's Encrypt needs to revoke a certificate for some reason, ARI can signal that renewal needs to happen prior to the revocation. This means that even in extenuating circumstances, renewal can happen in an entirely automated way without disrupting subscriber services.
 
 Without ARI, an unexpected revocation event might mean that Let's Encrypt would have to send emails to affected subscribers, maybe those emails are read in time to avoid a service disruption, maybe they aren't, and engineers have to manually take action to trigger early renewals, possibly in the middle of the night. We can't wait for ARI to make this scenario a thing of the past.
 
