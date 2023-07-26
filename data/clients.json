@@ -1,5 +1,5 @@
 {
-	"lastmod": "2022-06-29",
+	"lastmod": "2022-10-06",
 	"categories": [
 		"Bash",
 		"C",
@@ -141,6 +141,10 @@
 		{
 			"name": "WildFly Application Server",
 			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+		},
+		{
+			"name": "WordOps",
+			"url": "https://wordops.net/"
 		},
 		{
 			"name": "Zappa",
