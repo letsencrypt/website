@@ -73,4 +73,4 @@ ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. A
 
 For more information about inclusion status, check out our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
 
-While we wait for ISRG Root X2 to become widely trusted, it's possible to opt-in to use ISRG Root X2 for your ECDSA certificates. For more information, see our [community forum post](BLAH).
+While we wait for ISRG Root X2 to become widely trusted, it's possible to opt-in to use ISRG Root X2 for your ECDSA certificates. For more information, see our [community forum post](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
