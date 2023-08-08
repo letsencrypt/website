@@ -19,7 +19,7 @@
   {{ $scratch.Set "lang" "sv" }}
 {{ end }}
 
-<div class="text-center">
-  <script src="https://donorbox.org/widget.js"></script>
-  <iframe src="https://donorbox.org/embed/support-lets-encrypt?recurring=true&hide_donation_meter=true&language={{ $scratch.Get "lang" }}" height="685px" width="100%" allowpaymentrequest="allowpaymentrequest"  style="max-width:423px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>
+<div class="text-center mb-4">
+  <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+  <iframe src="https://donorbox.org/embed/support-lets-encrypt?hide_donation_meter=true&language={{ $scratch.Get "lang" }}" name="donorbox" id="dbox-form-embed"  name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="685px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important"></iframe>
 </div>
