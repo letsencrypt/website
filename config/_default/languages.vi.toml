@@ -2,8 +2,9 @@ title = "Let's Encrypt - Chứng Chỉ SSL/TLS Certificates Miễn Phí"
 contentDir = "content/vi"
 languageName = "Tiếng Việt"
 languageCode = "vi-VN"
-beforeColon = ""
 weight = 700
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt là một chứng nhận mở, miễn phí và tự động
   được cung cấp bởi tổ chức phi lợi nhuận <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.

@@ -2,8 +2,9 @@ title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
 languageName = "Deutsch"
 languageCode = "de-DE"
-beforeColon = ""
 weight = 200
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle,
   herausgebracht für Sie durch <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.

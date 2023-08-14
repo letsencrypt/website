@@ -3,7 +3,7 @@ baseURL = "https://letsencrypt.org/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "term"]
 
 enableRobotsTXT = true
 
