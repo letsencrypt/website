@@ -25,7 +25,7 @@ Wenn Sie ein Abonnent sind, fordern Sie ein vertrauenswürdiges Zertifikat von L
 
 Wir müssen in der Lage sein, der Öffentlichkeit, einschließlich denen, die sich auf die Vertrauenswürdigkeit unserer Zertifikate verlassen, zu zeigen, dass unsere Dienste wie erwartet funktionieren. Aus diesem Grund sind wir möglicherweise nicht in der Lage, Informationen, einschließlich IP-Adressen, zu löschen. Diese Informationen können auf verschiedene Art und Weise öffentlich zugänglich gemacht werden, unter anderem über öffentliche APIs, öffentliche Repositories und/oder öffentliche Gespräche.
 
-Sie haben unter Umständen die Möglichkeit, Kontaktinformationen wie Ihre E-Mail-Adresse für Kontoservice- und Wiederherstellungszwecke anzugeben. Ihre Kontaktinformationen werden nicht veröffentlicht und nur gemäß den nachstehenden Abschnitten „Anfragen von Strafverfolgungsbehörden und mildernde Umstände“ weitergegeben. Durch die Angabe Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden, Service-bezogene E-Mails von uns zu erhalten. Sie können sich jederzeit von Service-bezogenen E-Mails abmelden, indem Sie auf den "Abmelden"-Link am unteren Ende unserer E-Mails klicken oder uns unter security@letsencrypt.org kontaktieren. Wir werden Ihre Kontaktdaten nicht zu Marketing- oder Werbezwecken verwenden.
+Sie haben unter Umständen die Möglichkeit, Kontaktinformationen wie Ihre E-Mail-Adresse für Kontoservice- und Wiederherstellungszwecke anzugeben. Ihre Kontaktinformationen werden nicht veröffentlicht und nur gemäß den nachstehenden Abschnitten „Anfragen von Strafverfolgungsbehörden und mildernde Umstände“ weitergegeben. Durch die Angabe Ihrer E-Mail-Adresse erklären Sie sich damit einverstanden, Service-bezogene E-Mails von uns zu erhalten. Sie können sich jederzeit von Service-bezogenen E-Mails abmelden, indem Sie auf den "Abmelden"-Link am unteren Ende unserer E-Mails klicken oder uns unter privacy@abetterinternet.org kontaktieren. Wir werden Ihre Kontaktdaten nicht zu Marketing- oder Werbezwecken verwenden.
 
 Sie müssen möglicherweise Client-Software von einem Repository herunterladen, welches beispielsweise von Debian, Ubuntu, Red Hat oder GitHub betrieben wird. Ihre Interaktion mit einem solchen Software-Repository unterliegt den eigenen Datenschutzrichtlinien und/oder Nutzungsbedingungen dieses Projektes.
 
@@ -89,12 +89,12 @@ Ihre personenbezogenen Daten können aus verschiedenen Ländern erhoben oder dor
 
 Personen im Europäischen Wirtschaftsraum (EWR) haben bestimmte Rechte in Bezug auf ihre personenbezogenen Daten, einschließlich des Rechts auf Zugang, Berichtigung oder Löschung personenbezogener Daten, die wir durch Ihre Nutzung unserer Websites und Dienste verarbeiten. Wenn Sie eine Person sind, die eine vertrauende Partei, ein Abonnent oder ein Besucher mit Sitz im EWR ist, können Sie:
 
-- Einen Bericht zu personenbezogenen Daten anfordern, indem Sie uns eine E-Mail an security@letsencrypt.org senden. Dieser Bericht enthält die personenbezogenen Daten, die wir über Sie gespeichert haben, und wird Ihnen in einem strukturierten, allgemein verwendeten und tragbaren Format zur Verfügung gestellt. Bitte beachten Sie, dass wir möglicherweise zusätzliche Informationen von Ihnen anfordern, um Ihre Identität zu überprüfen, bevor wir Informationen offenlegen.
+- Einen Bericht zu personenbezogenen Daten anfordern, indem Sie uns eine E-Mail an privacy@abetterinternet.org senden. Dieser Bericht enthält die personenbezogenen Daten, die wir über Sie gespeichert haben, und wird Ihnen in einem strukturierten, allgemein verwendeten und tragbaren Format zur Verfügung gestellt. Bitte beachten Sie, dass wir möglicherweise zusätzliche Informationen von Ihnen anfordern, um Ihre Identität zu überprüfen, bevor wir Informationen offenlegen.
 
-- Anfordern, dass Ihre Daten korrigiert oder gelöscht werden, indem Sie uns unter security@letsencrypt.org kontaktieren.
+- Anfordern, dass Ihre Daten korrigiert oder gelöscht werden, indem Sie uns unter privacy@abetterinternet.org kontaktieren.
 
 - Der Datenverarbeitung durch uns widersprechen. Sie können uns bitten, die Verwendung Ihrer Daten einzustellen, auch wenn wir Ihre Daten verwenden, um Ihnen Service-basierte E-Mails zu senden. Sie können Ihre Zustimmung zum Erhalt von Service-E-Mails jederzeit widerrufen, indem Sie auf den Link „Abmelden“ klicken, der sich in den E-Mails von Let’s Encrypt befindet.
 
 - Bei einer Aufsichtsbehörde beschweren. Wenn Sie im EWR ansässig sind und der Meinung sind, dass wir die Datenschutzgesetze nicht eingehalten haben, haben Sie das Recht, eine Beschwerde bei Ihrer örtlichen Aufsichtsbehörde einzureichen.
 
-Für weitere Informationen oder zur Meldung eines Datenschutzproblems wenden Sie sich bitte an: security@letsencrypt.org.
+Für weitere Informationen oder zur Meldung eines Datenschutzproblems wenden Sie sich bitte an: privacy@abetterinternet.org.
