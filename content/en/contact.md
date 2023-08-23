@@ -26,7 +26,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Privacy
 
-Email: [privacy@abetterinternet.org](mailtor:privacy@abetterinternet.org)
+Email: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Security
 
