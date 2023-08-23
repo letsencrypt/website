@@ -28,7 +28,15 @@ Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://outreach.a
 
 **Bitte schreiben Sie nicht an diese Adresse, es sei denn, Ihre Nachricht betrifft ein Sicherheitsproblem mit Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Verschlüsselte Kommunikation
 

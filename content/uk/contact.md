@@ -28,7 +28,15 @@ menu:
 
 **Будь ласка, не пишіть на цю адресу, якщо ваше повідомлення не стосується проблеми безпеки Let's Encrypt.**
 
-Електронна пошта: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Електронна пошта: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Шифроване спілкування
 

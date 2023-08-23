@@ -28,7 +28,15 @@ menu:
 
 **除非您的消息涉及 Let's Encrypt 的安全问题，否则请勿向此地址发送邮件。**
 
-发送邮件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">发送邮件至 </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### 通讯加密
 
