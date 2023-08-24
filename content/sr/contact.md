@@ -28,7 +28,15 @@ Za informaciju oko raznoraznih tehničkih biltena, molimo vas da posetite [Prikl
 
 **Molimo Vas da ne šaljete upite na ovu e-adresu, osim u slučajevima ako imate nedoumica oko bezbednostnih problema vezanih za Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Zaštićena komunikacija
 

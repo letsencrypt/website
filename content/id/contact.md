@@ -28,7 +28,15 @@ Untuk mendapatkan berita kami, [klik di sini.](https://outreach.abetterinternet.
 
 **Tolong jangan menghubungi alamat ini kecuali jika bersangkutan dengan masalah keamanan pada Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Komunikasi Terenkripsi
 

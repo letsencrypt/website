@@ -28,7 +28,15 @@ Para información sobre varias listas de correo ténicas, por favor visita nuest
 
 **Por favor no escriba a esta dirección de correo electrónico al menos que tu mensaje se refiera a un problema de seguridad con Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Comunicaciones Encriptadas
 

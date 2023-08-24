@@ -28,7 +28,15 @@ Ha szeretne feliratkozni hírlevelünkre, [kattintson ide.](https://outreach.abe
 
 **Kérjük, ne írjon erre a címre, kivéve, ha üzenete a Let's Encrypt biztonsági problémájával kapcsolatos.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Titkosított kommunikáció
 

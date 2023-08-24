@@ -28,7 +28,15 @@ menu:
 
 **ඔබගේ පණිවිඩය ලෙට්'ස් එන්ක්‍රිප්ට් හි ආරක්‍ෂක ගැටලුවකට අදාළ වන්නේ නම් මිස මෙම ලිපිනයට ලියන්න එපා.**
 
-වි-තැපෑල: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">වි-තැපෑල: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### සංකේතාංකිත සන්නිවේදනය
 

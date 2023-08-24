@@ -28,7 +28,15 @@ menu:
 
 **Let's Encrypt와 관련된 보안 이슈 내용이 아니라면 이 주소로 메세지를 보내지 말아주세요.**
 
-이메일: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">이메일: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### 안전한 통신
 

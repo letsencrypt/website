@@ -28,7 +28,15 @@ Pour vous inscrire à notre newsletter, [cliquez ici.](https://outreach.abetteri
 
 **Veuillez ne pas écrire à cette adresse à moins que votre message ne concerne un problème de sécurité avec Let's Encrypt.**
 
-Courriel : [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Courriel : </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Communication cryptée
 

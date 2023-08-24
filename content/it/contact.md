@@ -28,7 +28,15 @@ Per iscriverti alla nostra newsletter, [clicca qui.](https://outreach.abetterint
 
 **Non scrivere a questo indirizzo a meno che il messaggio non riguardi un problema di sicurezza con Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Comunicazione Criptata
 

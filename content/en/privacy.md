@@ -2,7 +2,7 @@
 title: Privacy Policy
 slug: privacy
 top_graphic: 4
-lastmod: 2023-02-28
+lastmod: 2023-08-23
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -25,7 +25,7 @@ If you are a Subscriber, you are requesting a trusted certificate from Let's Enc
 
 We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories, and/or public discussions.
 
-You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per "Law Enforcement and Extenuating Circumstances," below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the "unsubscribe" link at the bottom of our emails or by contacting us at security@letsencrypt.org. We will not use your contact information for marketing or promotional purposes.
+You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per "Law Enforcement and Extenuating Circumstances," below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the "unsubscribe" link at the bottom of our emails or by contacting us at privacy@abetterinternet.org. We will not use your contact information for marketing or promotional purposes.
 
 You may need to download client software from a repository such as those run by Debian, Ubuntu, Red Hat, or Github. Your interaction with such a software repository is governed by that repository's own privacy policy and/or Terms of Use.
 
@@ -89,12 +89,12 @@ Your personal data may be collected from or transferred to jurisdictions where w
 
 Individuals located in the European Economic Area (EEA) have certain rights in respect to their personal information, including the right to access, correct, or delete personal data we process through your use of our sites and services. If you're an individual who is a relying party, subscriber, or visitor based in the EEA, you can:
 
-- Request a personal data report by emailing us at security@letsencrypt.org. This report will include the personal data we have about you, provided to you in a structured, commonly used, and portable format. Please note that we may request additional information from you to verify your identity before we disclose any information.
+- Request a personal data report by emailing us at privacy@abetterinternet.org. This report will include the personal data we have about you, provided to you in a structured, commonly used, and portable format. Please note that we may request additional information from you to verify your identity before we disclose any information.
 
-- Request that your information be corrected or deleted by contacting us at security@letsencrypt.org.
+- Request that your information be corrected or deleted by contacting us at privacy@abetterinternet.org.
 
 - Object to us processing your information. You can ask us to stop using your information, including when we use your information to send you service emails. You may withdraw your consent to receive service emails at any time by clicking the "unsubscribe" link found within Let's Encrypt emails.
 
 - Complain to a regulator. If you're based in the EEA and think that we haven't complied with data protection laws, you have a right to lodge a complaint with your local supervisory authority.
 
-For more information, or to report a privacy issue, please contact: security@letsencrypt.org.
+For more information, or to report a privacy issue, please contact: privacy@abetterinternet.org.
