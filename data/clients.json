@@ -57,7 +57,7 @@
 		{
 			"name": "ApisCP",
 			"url": "https://apiscp.com"
-		},		
+		},
 		{
 			"name": "Caddy",
 			"url": "https://caddyserver.com/"
@@ -89,7 +89,7 @@
 		{
 			"name": "Gitlab",
 			"url": "https://about.gitlab.com"
-    },
+		},
 		{
 			"name": "ISPConfig",
 			"url": "https://www.ispconfig.org/"
@@ -324,6 +324,16 @@
 			"url": "https://www.powershellgallery.com/packages/GetSSL-LetsEncrypt/",
 			"category": "Microsoft Azure",
 			"comments": "(Compatible with any App Service)"
+		},
+		{
+			"name": "njs-acme",
+			"url": "https://github.com/nginx/njs-acme",
+			"acme_v2": "true",
+			"category": "nginx",
+			"comments": "JavaScript library compatible with the 'ngx_http_js_module' runtime (NJS), allows for the automatic issue of TLS/SSL certificates for NGINX without restarts",
+			"challenges": {
+				"HTTP-01": "true"
+			}
 		},
 		{
 			"name": "lua-resty-auto-ssl",
