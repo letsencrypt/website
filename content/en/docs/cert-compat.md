@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
@@ -67,4 +67,10 @@ validate Let's Encrypt certificates.
 
 # ISRG Root X2 (new ECDSA root) - coming soon
 
-We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion. ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. For more information, check out our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion.
+
+ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. Additionally, several root programs have already added ISRG Root X2 as a trust anchor.
+
+For more information about inclusion status, check out our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+
+While we wait for ISRG Root X2 to become widely trusted, it's possible to opt-in to use ISRG Root X2 for your ECDSA certificates. For more information, see our [community forum post](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).

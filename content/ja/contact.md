@@ -28,7 +28,15 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 **下記のアドレスには、Let's Encrypt に関係するセキュリティ上の問題に関係しないメッセージは決して送信しないでください。**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### 暗号化通信
 

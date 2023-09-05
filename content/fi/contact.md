@@ -28,7 +28,15 @@ Tilataksesi uutiskirjeemme, [paina tätä.](https://outreach.abetterinternet.org
 
 **Ethän kirjoita sähköpostia tähän osoitteeseen, ellei sähköpostisi koske turvallisuusongelmaa Let's Encryptissä.**
 
-Sähköposti: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Sähköposti: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Salattu viestintä
 

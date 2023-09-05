@@ -1,0 +1,40 @@
+---
+title: Newsletter Signup
+slug: opt-in
+top_graphic: 1
+date: 2023-05-30
+do_not_translate: 1
+---
+
+<div class="text-left">
+    <h2 class="larger-h2">Sign up for the ISRG Newsletter</h2>
+    <p>ISRG's monthly newsletter recaps what we're up to and shares recent security and privacy news that caught our attention. </p>
+
+    <div class="le-newsletter-form-container left-aligned">
+        <!-- Newsletter segment specific form -->
+        <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-08-30/phzn" height="200" style="width: 100%; border: 0"></iframe>
+    </div>
+</div>
+
+<script>
+// Receive refresh command from iframe
+window.addEventListener('message', function(event) {
+  // Check the origin of the message, to ensure it's from a trusted source
+  console.log("Message received from: " + event.origin, event)
+  if (event.origin !== 'https://outreach.abetterinternet.org') return;
+
+  if (event.data === 'refresh') {
+    window.location.reload();
+  }
+}, false);
+
+// Tell iframe to autofocus on the text field on load
+window.addEventListener('DOMContentLoaded', (event) => {
+    var iframe = document.querySelector('iframe');
+    iframe.addEventListener('load', function() {
+        iframe.contentWindow.postMessage('focusOnInput', 'https://outreach.abetterinternet.org');
+    });
+});
+
+
+</script>

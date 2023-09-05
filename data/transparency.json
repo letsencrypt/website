@@ -38,7 +38,7 @@
         {
             "log": "oak",
             "shard": "2022",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==",
             "logID": "DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73",
@@ -58,7 +58,7 @@
         {
             "log": "oak",
             "shard": "2024h1",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVkPXfnvUcre6qVG9NpO36bWSD+pet0Wjkv3JpTyArBog7yUvuOEg96g6LgeN5uuk4n0kY59Gv5RzUo2Wrqkm/Q==",
             "logID": "3B:53:77:75:3E:2D:B9:80:4E:8B:30:5B:06:FE:40:3B:67:D8:4F:C3:F4:C7:BD:00:0D:2D:72:6F:E1:FA:D4:17",
@@ -68,12 +68,32 @@
         {
             "log": "oak",
             "shard": "2024h2",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE13PWU0fp88nVfBbC1o9wZfryUTapE4Av7fmU01qL6E8zz8PTidRfWmaJuiAfccvKu5+f81wtHqOBWa+Ss20waA==",
             "logID": "3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E",
             "windowStart": "1718841600",
             "windowEnd": "1737331200"
+        },
+        {
+            "log": "oak",
+            "shard": "2025h1",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKeBpU9ejnCaIZeX39EsdF5vDvf8ELTHdLPxikl4y4EiROIQfS4ercpnMHfh8+TxYVFs3ELGr2IP7hPGVPy4vHA==",
+            "logID": "A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7",
+            "windowStart": "1734652800",
+            "windowEnd": "1752969600"
+        },
+        {
+            "log": "oak",
+            "shard": "2025h2",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtXYwB63GyNLkS9L1vqKNnP10+jrW+lldthxg090fY4eG40Xg1RvANWqrJ5GVydc9u8H3cYZp9LNfkAmqrr2NqQ==",
+            "logID": "0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34",
+            "windowStart": "1750377600",
+            "windowEnd": "1768867200"
         },
         {
             "log": "sapling",
@@ -92,6 +112,33 @@
             "logID": "C1:83:24:0B:F1:A4:50:C7:6F:BB:00:72:69:DC:AC:3B:E2:2A:48:05:D4:db:E0:49:66:C3:C8:ab:C4:47:B0:0C",
             "windowStart": "1671062400",
             "windowEnd": "1689379200"
+        },
+        {
+            "log": "sapling",
+            "shard": "2023h2",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEbdCykRsTPRgfjKVQvINRLJk3gy+2qNKOU48bo/sWO0ko75S92C+PBDxsqMEd0YpCYYLogCt2LAK/U4H7UwHsjA==",
+            "logID": "ED:AB:9D:1D:DD:83:73:95:9F:F5:2A:88:E4:6B:B4:BC:C3:C4:CC:4D:76:8A:60:CC:FF:4E:36:2D:7F:B8:D6:68",
+            "windowStart": "1686787200",
+            "windowEnd": "1705276800"
+        },
+        {
+            "log": "sapling",
+            "shard": "2024h1",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1Yn4OKJQuwEwo1/BeVBh1NYkQBnS8sYmMfQr/VdXOGqPcbwcpw0TtjJBYmn8FA+ZT7hnt7OfF4RTjLNW3bWOkw==",
+            "logID": "AA:6C:B0:C5:C9:F4:C4:9D:8D:8E:A9:0C:39:17:E0:D7:0A:D9:22:10:BF:05:7F:41:50:93:82:CC:35:0C:98:46",
+            "windowStart": "1702598400",
+            "windowEnd": "1721001600"
+        },
+        {
+            "log": "sapling",
+            "shard": "2024h2",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWipy8ZdRGs2Y5tBb8h8c4UUREnT/YMbm+FEUQBBScf85txhGRHNN/sNN0L/KDiGu/GsrOBCkDruDfHkD42eZXQ==",
+            "logID": "85:1B:AE:8E:EE:33:C1:B9:87:3F:C4:9C:7A:7C:27:65:66:3B:6B:80:63:03:04:0A:EC:A6:C1:11:A5:AB:E9:D7",
+            "windowStart": "1718409600",
+            "windowEnd": "1736899200"
         }
     ]
 }

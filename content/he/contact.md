@@ -28,7 +28,15 @@ menu:
 
 **נא לא לכתוב אל הכתובת הזו אלא אם כן ההודעה שלך נוגעת לבעיית אבטחה ב־Let's Encrypt.**
 
-דוא״ל: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">דוא״ל: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### תקשורת מוצפנת
 

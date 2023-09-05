@@ -28,7 +28,15 @@ Du kan [prenumerera på vårt nyhetsbrev](https://outreach.abetterinternet.org/l
 
 **Vänligen skicka inte till denna adress om inte ditt meddelande berör ett säkerhetsproblem med Let's Encrypt.**
 
-E-post: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">E-post: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Krypterad kommunikation
 

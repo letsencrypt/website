@@ -3,7 +3,7 @@ title: Contact
 slug: contact
 description: How to contact us
 top_graphic: 1
-lastmod: 2023-02-26
+lastmod: 2023-08-23
 menu:
   main:
     weight: 90
@@ -24,11 +24,23 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
 
+## Privacy
+
+Email: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
+
 ## Security
 
 **Please do not write to this address unless your message concerns a security issue with Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Encrypted Communication
 

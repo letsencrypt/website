@@ -28,7 +28,15 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 **Vui lòng không gửi thư điện tử đến địa chỉ này trừ khi bạn có vấn đề về bảo mật với Let's Encrypt.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
+
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>
 
 ### Giao Tiếp Mã Hóa
 
