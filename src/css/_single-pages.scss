@@ -17,3 +17,15 @@
         margin: 0;
     }
 }
+
+   .sixty-percentage-wide-image img {
+    max-width: 60%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .sixty-percentage-wide-image img {
+      max-width: 100%;
+    }
+  }
