@@ -138,6 +138,12 @@ status = 302
 force = false
 
 [[redirects]]
+from = "/ca/*"
+to = "/ca/404.html"
+status = 404
+force = false
+
+[[redirects]]
 from = "/de/*"
 to = "/de/404.html"
 status = 404
