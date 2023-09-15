@@ -39,8 +39,8 @@ To help with translation, please see [TRANSLATION.md].
 [Hugo]: https://gohugo.io/
 [install Hugo Extended]: https://gohugo.io/getting-started/installing
 [http://localhost:1313/]: http://localhost:1313/
-[TRANSLATION.md]: https://github.com/letsencrypt/website/blob/master/TRANSLATION.md
-[netlify.toml]: https://github.com/letsencrypt/website/blob/master/netlify.toml
+[TRANSLATION.md]: https://github.com/letsencrypt/website/blob/main/TRANSLATION.md
+[netlify.toml]: https://github.com/letsencrypt/website/blob/main/netlify.toml
 
 # Creating new pages
 
