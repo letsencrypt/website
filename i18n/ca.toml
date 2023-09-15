@@ -1,0 +1,202 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "A nonprofit Certificate Authority providing TLS certificates to <span>300 million</span> websites."
+
+[home_hero_getting_started]
+other = "Get Started"
+
+[home_hero_donate]
+other = "Donate"
+
+[home_hero_sponsor]
+other = "Sponsor"
+
+[home_hero_annual_report]
+other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2022 Annual Report</a>."
+
+[home_major_sponsors]
+other = "Major Sponsors and Funders"
+
+[home_from_our_blog]
+other = "From our blog"
+
+[read_more]
+other = "Read more"
+
+[subscribe_rss]
+other = "Subscribe <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Support a more secure and privacy-respecting Web."
+
+[footer_donate]
+other = "Donate"
+
+[footer_mailing]
+other = "Send all mail or inquiries to:"
+
+[footer_policies]
+other = """
+View our <a href="/privacy/">privacy policy</a>.<br>
+View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.
+"""
+
+[header_skip_nav]
+other = "Skip navigation links"
+
+[last_updated]
+other = "Last updated: "
+
+[see_all_doc]
+other = "See all Documentation"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[diamond]
+other = "Diamond"
+
+[platinum]
+other = "Platinum"
+
+[gold]
+other = "Gold"
+
+[gold_basic]
+other = "Gold Basic"
+
+[silver]
+other = "Silver"
+
+[languages]
+other = "Languages"
+
+[view_in_english]
+other = "View in English"
+
+[old_version]
+other = "Note: The English version has been updated since the translation"
+
+[not_yet_translated]
+other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+
+[english_is_canonical]
+other = "The English version is authoritative"
+
+[graph_issued]
+other = "Issued"
+
+[graph_certificates_active]
+other = "Certificates Active"
+
+[graph_fully_qualified_domains_active]
+other = "Fully-Qualified Domains Active"
+
+[graph_registered_domains_active]
+other = "Registered Domains Active"
+
+[graph_active_count]
+other = "Active Count"
+
+[graph_issued_per_day]
+other = "Issued Per Day"
+
+[graph_all_users]
+other = "All users"
+
+[graph_usa_users]
+other = "USA users"
+
+[graph_japan_users]
+other = "Japan users"
+
+[graph_percent_https]
+other = "Percent of Pageloads over HTTPS (14 day moving average)"
+
+[certificate_policy]
+other = "Certificate Policy"
+
+[certificate_transparency_name]
+other = "Name"
+
+[certificate_transparency_role_production]
+other = "Production"
+
+[certificate_transparency_role_testing]
+other = "Testing"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Public Key"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "State"
+
+[certificate_transparency_window_start]
+other = "Window Start"
+
+[certificate_transparency_window_end]
+other = "Window End"
+
+[certification_practices_statement]
+other = "Certification Practices Statement"
+
+[overview]
+other = "Overview"
+
+[subscriber_information]
+other = "Subscriber Information"
+
+[advanced_subscriber_information]
+other = "Advanced Subscriber Information"
+
+[client_developer_information]
+other = "Client Developer Information"
+
+[acme_divergences]
+other = "Differences from Current ACME Draft"
+
+[acme_divergences_rfc]
+other = "Differences from ACME RFC"
+
+[onboarding_customers]
+other = "Onboarding Your Customers with Let's Encrypt and ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Donate with PayPal button"
+
+[paypal_donate_title]
+other = "Donate with PayPal"
+
+[not_found]
+other = "That page doesn't exist, please check the address."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/yr (USD)"
+
+[3y_commitment]
+other = "with a 3-year commitment"
+
+[1_99_employees]
+other = "1-99 employees"
+
+[100_999_employees]
+other = "100-999 employees"
+
+[1000_employees]
+other = "1000+ employees"
+
+[subscribe_to_newsletter_headline]
+other = "Subscribe to our Newsletter"
+
+[site_banner_text]
+other = "ISRG celebrates 10 years of helping build a brighter Internet →"

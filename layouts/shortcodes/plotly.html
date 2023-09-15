@@ -16,6 +16,8 @@
 {{/* translations uploaded from https://github.com/plotly/plotly.js/tree/master/dist */}}
 {{ if eq "en" .Page.Language.Lang }}
     {{/* nothing to do */}}
+{{ else if eq "ca" .Page.Language.Lang }}
+    <script src="/js/plotly-locale-ca.js" defer></script>
 {{ else if eq "de" .Page.Language.Lang }}
     <script src="/js/plotly-locale-de.js" defer></script>
 {{ else if eq "fr" .Page.Language.Lang }}
