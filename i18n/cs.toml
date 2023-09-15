@@ -1,0 +1,202 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Nezisková certifikační autorita poskytující certifikáty TLS pro <span>300 milionů</span> webových stránek."
+
+[home_hero_getting_started]
+other = "Začínáme"
+
+[home_hero_donate]
+other = "Přispět"
+
+[home_hero_sponsor]
+other = "Sponzorovat"
+
+[home_hero_annual_report]
+other = "Přečtěte si vše o naší letošní práci pro neziskové organizace v naší <a href='https://abetterinternet.org/annual-reports/'>Výroční zprávě za rok 2022</a>."
+
+[home_major_sponsors]
+other = "Hlavní sponzoři a přispěvatelé"
+
+[home_from_our_blog]
+other = "Z našeho blogu"
+
+[read_more]
+other = "Více"
+
+[subscribe_rss]
+other = "Přihlásit <a href=\"{{ .Permalink }}\">přes RSS</a>"
+
+[footer_support_us]
+other = "Podpora bezpečnějšího webu respektujícího soukromí."
+
+[footer_donate]
+other = "Přispět"
+
+[footer_mailing]
+other = "Veškerou poštu nebo dotazy zasílejte na:"
+
+[footer_policies]
+other = """
+View our <a href="/privacy/">zásady ochrany osobních ú</a>.<br>
+View our <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranných známek</a>.
+"""
+
+[header_skip_nav]
+other = "Přeskočit navigační "
+
+[last_updated]
+other = "Poslední update: "
+
+[see_all_doc]
+other = "Zobrazit všechny dokumenty"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[diamond]
+other = "Diamantový"
+
+[platinum]
+other = "Platinový"
+
+[gold]
+other = "Zlatý"
+
+[gold_basic]
+other = "Zlatý základ"
+
+[silver]
+other = "Stříbrný"
+
+[languages]
+other = "Jazyky"
+
+[view_in_english]
+other = "Zobraz v angličtině"
+
+[old_version]
+other = "Poznámka: Anglická verze byla od překladu aktualizována."
+
+[not_yet_translated]
+other = "Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href=\"https://github.com/letsencrypt/website\">zde</a>."
+
+[english_is_canonical]
+other = "Anglická verze je směrodatná"
+
+[graph_issued]
+other = "Vydáno"
+
+[graph_certificates_active]
+other = "Certifikáty aktivní"
+
+[graph_fully_qualified_domains_active]
+other = "Plně kvalifikované domény aktivní"
+
+[graph_registered_domains_active]
+other = "Registrované domény aktivní"
+
+[graph_active_count]
+other = "Aktivní počet"
+
+[graph_issued_per_day]
+other = "Vydáno za den"
+
+[graph_all_users]
+other = "Všichni uživatelé"
+
+[graph_usa_users]
+other = "Uživatelé v USA"
+
+[graph_japan_users]
+other = "Uživatelé v Japonsku"
+
+[graph_percent_https]
+other = "Procento načtených stránek přes HTTPS (14denní klouzavý průměr)"
+
+[certificate_policy]
+other = "Zásady pro vydávání certifikátů"
+
+[certificate_transparency_name]
+other = "Jméno"
+
+[certificate_transparency_role_production]
+other = "Produkce"
+
+[certificate_transparency_role_testing]
+other = "Testování"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Veřejný klíč"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "Stát"
+
+[certificate_transparency_window_start]
+other = "Okno startuje"
+
+[certificate_transparency_window_end]
+other = "Okno končéí"
+
+[certification_practices_statement]
+other = "Prohlášení o certifikačních postupech"
+
+[overview]
+other = "Přehled"
+
+[subscriber_information]
+other = "Informace pro předplatitele"
+
+[advanced_subscriber_information]
+other = "Rozšířené informace pro předplatitele"
+
+[client_developer_information]
+other = "Informace pro vývojáře klienta"
+
+[acme_divergences]
+other = "Rozdíly oproti současnému návrhu ACME"
+
+[acme_divergences_rfc]
+other = "Rozdíly oproti ACME RFC"
+
+[onboarding_customers]
+other = "Onboarding vašich zákazníků pomocí Let's Encrypt a ACME"
+
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
+[paypal_donate_alt]
+other = "Přispějte pomocí tlačítka Paypal"
+
+[paypal_donate_title]
+other = "Přispějte pomocí PayPal"
+
+[not_found]
+other = "Tato stránka neexistuje, zkontrolujte prosím adresu."
+
+[amount_per_year]
+# Ex. $10.000/yr (USD)
+other = "${{ .nb }}/rok (USD)"
+
+[3y_commitment]
+other = "s 3-letým závazkem"
+
+[1_99_employees]
+other = "1-99 zaměstnanců"
+
+[100_999_employees]
+other = "100-999 zaměstnanců"
+
+[1000_employees]
+other = "1000+ zaměstnanců"
+
+[subscribe_to_newsletter_headline]
+other = "Přihlaste se k odběru našeho newsletteru"
+
+[site_banner_text]
+other = "Společnost ISRG už 10 let pomáhá budovat lepší internet →"
