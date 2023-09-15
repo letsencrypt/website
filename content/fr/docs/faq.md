@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Foire aux questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-04-23
+lastmod: 2022-06-15
 menu:
   main:
     weight: 30
@@ -11,11 +11,10 @@ menu:
 show_lastmod: 1
 ---
 
-
 Cette FAQ est divisée en deux sections:
 
-* [Questions générales](#general)
-* [Questions techniques](#technical)
+- [Questions générales](#general)
+- [Questions techniques](#technical)
 
 # <a id="general">Questions générales</a>
 
@@ -31,7 +30,7 @@ Pour commencer à utiliser Let's Encrypt, veuillez visiter notre page [Commencer
 
 Nous ne facturons pas de frais pour nos certificats. Let's Encrypt est un organisme à but non lucratif, notre mission est de créer un Web plus sécurisé et respectueux de la vie privée en promouvant l'adoption généralisée de HTTPS. Nos services sont gratuits et faciles à utiliser afin que chaque site web puisse déployer HTTPS.
 
-Nous avons besoin du soutien de mécènes, de subventions d'organismes et particuliers généreux afin de fournir nos services gratuitement dans le monde entier. Si vous êtes intéressé à nous soutenir, pensez à [faire un don](/donate) ou à [devenir sponsor](https://www.abetterinternet.org/sponsor/).
+Nous avons besoin du soutien de mécènes, de subventions d'organismes et particuliers généreux afin de fournir nos services gratuitement dans le monde entier. Si vous souhaitez nous soutenir, pensez à faire un [don](/donate) ou [à devenir un sponsor](https://www.abetterinternet.org/sponsor).
 
 Dans certains cas, les intégrateurs (par exemple, les hébergeurs) factureront des frais nominaux qui reflètent les coûts administratifs et de gestion qu'ils encourent pour fournir des certificats Let's Encrypt.
 
@@ -48,8 +47,8 @@ Voici une [vidéo que nous aimons](https://www.youtube.com/watch?v=Xe1TZaElTAs) 
 
 Nous recommandons de signaler ces sites à Google Safe Browsing et au programme Microsoft Smart Screen, qui sont en mesure de protéger plus efficacement les utilisateurs. Voici les URL de rapport :
 
-* [https://safebrowsing.google.com/safebrowsing/report_badware/?hl=fr](https://safebrowsing.google.com/safebrowsing/report_badware/)
-* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
+- [https://safebrowsing.google.com/safebrowsing/report_badware/?hl=fr](https://safebrowsing.google.com/safebrowsing/report_badware/)
+- [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 Si vous souhaitez en savoir plus sur nos politiques et nos raisons, vous pouvez le faire ici :
 
@@ -89,7 +88,7 @@ Oui, le même certificat peut contenir plusieurs noms différents en utilisant l
 
 ## Est-ce que Let's Encrypt émet des certificats génériques ?
 
-Oui. L'émission de certificats génériques doit être effectuée via ACMEv2 en utilisant le défi DNS-01. Consultez [ce message](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus d'informations techniques.
+Oui. L'émission de Wildcard doit se faire via ACMEv2 en utilisant le [challenge DNS-01](/docs/challenge-types/#dns-01-challenge). Consultez [ce message](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus d'informations techniques.
 
 ## Y a-t-il un client Let's Encrypt (ACME) pour mon système d'exploitation ?
 
@@ -106,3 +105,9 @@ Nous ne publions pas de liste d'adresses IP que nous utilisons pour valider, et 
 ## J'ai renouvelé avec succès un certificat mais la validation n'a pas eu lieu cette fois-ci - comment cela est-il possible ?
 
 Dès que vous avez terminé avec succès les challenges pour un domaine, l'autorisation résultante est mise en cache pour que votre compte puisse être réutilisé plus tard. Les autorisations mises en cache ont une durée de 30 jours à compter de la validation. Si le certificat que vous avez demandé comporte toutes les autorisations nécessaires mises en cache, la validation ne se fera plus jusqu'à l'expiration des autorisations mises en cache correspondantes.
+
+## Où puis-je en savoir plus sur TLS/SSL et PKI en général ?
+
+Ivan Ristić, chercheur et praticien de la sécurité de longue date, a publié un guide de configuration qui fournit des informations utiles sur ce que vous devez prendre en compte lors de la <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">mise en place de votre configuration TLS</a>.
+
+Pour un contenu plus complet et plus détaillé, nous recommandons <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, également écrit par Ristić.

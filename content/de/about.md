@@ -14,7 +14,7 @@ Let's Encrypt ist eine freie, automatisierte und offene Zertifizierungsstelle (C
 
 Wir geben Menschen die digitalen Zertifikate, die sie zur Aktivierung von HTTPS (SSL/TLS) auf ihrer Webseite benötigen, kostenlos und in der benutzerfreundlichsten Variante, die uns möglich ist. Wir machen das, um ein noch sicheres Web zu erstellen, das die Privatsphäre akzeptiert.
 
-Lesen Sie über die Ereignisse des vergangenen Jahres durch Herunterladen des [Jahresberichts](https://www.abetterinternet.org/annual-reports/).
+Lesen Sie über die Ereignisse des vergangenen Jahres durch Herunterladen des [Jahresberichts](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf).
 
 Die Schlüsselprinzipien hinter Let's Encrypt sind:
 

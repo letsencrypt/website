@@ -14,7 +14,7 @@ Let's Encrypt は、公共の利益のために運営されている、フリー
 
 私たちは人々のために、ウェブサイトで HTTPS (SSL/TLS) を有効にするために必要なデジタル証明書を、無料で、私たちにできる最もユーザーフレンドリーな方法で発行しています。 私たちがこのようなことをする理由は、よりセキュアでプライバシーを尊重するウェブを作りたいと願っているからです。
 
-Let's Encrypt の最新のレビューについては、[年次レポート](https://www.abetterinternet.org/annual-reports/)を読んでください。
+Let's Encrypt の最新のレビューについては、[年次レポート](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf)を読んでください。
 
 Let's Encrypt の背景にあるキーとなる原則は次のとおりです。
 

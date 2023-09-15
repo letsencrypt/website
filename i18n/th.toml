@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "ผู้ให้หนังสือรับรองที่ไม่แสวงผลกำไร ซึ่งออกหนังสือรับรองประเภท TLS ให้แก่ <span>260 ล้าน</span> เว็บไซต์"
+
+[home_hero_getting_started]
+other = "เริ่มต้น​ใช้งาน​"
+
+[home_hero_donate]
+other = "บริจาค"
+
+[home_hero_sponsor]
+other = "ผู้สนับสนุน"
+
+[home_hero_annual_report]
+other = "เราได้รับรางวัลเลฟชิน (Levchin Prize) สำหรับการเข้ารหัสลับที่ใช้งานได้จริง <a href='https://abetterinternet.org/levchin-prize'>ศึกษาต่อ</a>"
+
+[home_major_sponsors]
+other = "ผู้สนับสนุนหลักและผู้ให้ทุน"
+
+[home_from_our_blog]
+other = "จากเว็บบล็อกของเรา"
+
+[read_more]
+other = "อ่านเพิ่มเติม"
+
+[subscribe_rss]
+other = 'เป็นสมาชิก <a href="{{ .Permalink }}">ทาง RSS</a>'
+
+[footer_support_us]
+other = "รองรับระบบเว็บที่มีความปลอดภัยและเคารพความเป็นส่วนตัวมากขึ้น"
+
+[footer_donate]
+other = "บริจาค"
+
+[footer_mailing]
+other = "ส่งจดหมายหรือการสอบถามทั้งหมดมาที่:"
+
+[footer_policies]
+other = """
+ดู <a href="/privacy/">นโยบายความปลอดภัย</a> ของเรา<br>
+ดู <a href="https://www.abetterinternet.org/trademarks">นโยบายเครื่องหมายการค้า</a> ของเรา
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation เป็นเครื่องหมายการค้าที่ได้รับการจดทะเบียนของสถาบันลีนุกซ์ Linux เป็นเครื่องหมายการค้าที่ได้รับการจดทะเบียนของไลนุซ ทอรวาลด์"
+
+[header_skip_nav]
+other = "ข้ามลิงก์"
+
+[last_updated]
+other = "ปรับปรุงครั้งสุดท้าย: "
+
+[see_all_doc]
+other = "ดูเอกสารทั้งหมด"
+
+[blog_feed]
+other = "เล็ท'ส เอ็นคริปต์ บล็อกฟีด"
+
+[platinum]
+other = "แพลทินัม"
+
+[gold]
+other = "ทอง"
+
+[gold_basic]
+other = "ทอง พื้นฐาน"
+
+[silver]
+other = "เงิน"
+
+[languages]
+other = "ภาษา"
+
+[view_in_english]
+other = "แสดงเป็นภาษาอังกฤษ"
+
+[old_version]
+other = "หมายเหตุ: เวอร์ชั่นภาษาอังกฤษถูกปรับปรุงหลังจากการแปลภาษา"
+
+[not_yet_translated]
+other = 'หน้าเว็บนี้ยังไม่ได้รับการแปล คุณสามารถมีส่วนช่วยได้ <a href="https://github.com/letsencrypt/website">ที่นี่</a>'
+
+[english_is_canonical]
+other = "เวอร์ชั่นภาษาอังกฤษเชื่อถือได้"
+
+[graph_issued]
+other = "แจกแล้ว"
+
+[graph_certificates_active]
+other = "หนังสือรับรอง มีการใช้งานอยู่"
+
+[graph_fully_qualified_domains_active]
+other = "โดเมนที่มีคุณสมบัติเหมาะสมครบถ้วน มีการใช้งานอยู่"
+
+[graph_registered_domains_active]
+other = "โดเมนที่ได้รับการจดทะเบียน มีการใช้งานอยู่"
+
+[graph_active_count]
+other = "จำนวนที่มีการใช้งานอยู่"
+
+[graph_issued_per_day]
+other = "แจกแล้วต่อวัน"
+
+[graph_all_users]
+other = "ผู้ใช้ทั้งหมด"
+
+[graph_usa_users]
+other = "ผู้ใช้ประเทศสหรัฐอเมริกา"
+
+[graph_japan_users]
+other = "ผู้ใช้ประเทศญี่ปุ่น"
+
+[graph_percent_https]
+other = "เปอร์เซ็นต์ของการดึงหน้าเว็บด้วย HTTPS (ค่าเฉลี่ยในช่วง 14 วัน)"
+
+[certificate_policy]
+other = "นโยบายหนังสือรับรอง"
+
+[certificate_transparency_name]
+other = "ชื่อ"
+
+[certificate_transparency_role_production]
+other = "การผลิต"
+
+[certificate_transparency_role_testing]
+other = "กำลังทดสอบ"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "รหัสสาธารณะ"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "สถานะ"
+
+[certificate_transparency_window_start]
+other = "เวลาเริ่มต้น"
+
+[certificate_transparency_window_end]
+other = "เวลาสิ้นสุด"
+
+[certification_practices_statement]
+other = "คำแถลงวิธีปฏิบัติด้านการรับรอง"
+
+[overview]
+other = "ภาพรวม"
+
+[subscriber_information]
+other = "ข้อมูลผู้สมัคร"
+
+[advanced_subscriber_information]
+other = "ข้อมูลผู้สมัครขั้นสูง"
+
+[client_developer_information]
+other = "ข้อมูลผู้พัฒนา"
+
+[acme_divergences]
+other = "ความแตกต่างจากดราฟต์ ACME ปัจจุบัน"
+
+[acme_divergences_rfc]
+other = "ความแตกต่างจาก ACME RFC"
+
+[onboarding_customers]
+other = "การดูแลลูกค้าของท่านด้วยเล็ท'ส เอ็นคริปต์ และ ACME"
+
+[paypal_donate_alt]
+other = "บริจาคด้วยปุ่ม PayPal"
+
+[paypal_donate_title]
+other = "บริจาคด้วย PayPal"
+
+[not_found]
+other = "หน้าเว็บนี้ไม่มีอยู่, กรุณาตรวจสอบที่อยู่"
+
+[amount_per_year]
+other = "${{ .nb }}/ปี (USD)"
+
+[3y_commitment]
+other = "ด้วยพันธสัญญา 3 ปี"
+
+[1_99_employees]
+other = "พนักงาน 1-99 คน"
+
+[100_999_employees]
+other = "พนักงาน 100-999 คน"
+
+[1000_employees]
+other = "พนักงาน 1000+ คน"

@@ -2,56 +2,117 @@
 title: Journaux de transparence des certificats (TC)
 slug: ct-logs
 top_graphic: 4
-lastmod: 2020-02-25
+lastmod: 2022-06-17
 show_lastmod: 1
 ---
 
 
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >Certificate Transparency (CT)</a
+>
+  est un système pour enregistrer et surveiller la délivrance des certificats TLS. CT
+  améliore considérablement la capacité de chacun à surveiller et à étudier l'émission de certificats,
+  et ces capacités ont conduit à de nombreuses améliorations de l'écosystème CA et de la sécurité du Web. En conséquence, le CT devient rapidement une infrastructure critique.
+</p>
 
-<p><a href="https://www.certificate-transparency.org/what-is-ct">La Transparence des Certificats (TC)</a> est un système pour enregistrer et surveiller l'émission de certificats TLS. TC améliore grandement la capacité de tous à surveiller et étudier l'émission de certificats, et ces capacités ont permis de nombreuses améliorations à l'écosystème AC et la sécurité du Web. En conséquence, TC est rapidement devenu une infrastructure critique.</p>
+<p>
+  Let's Encrypt soumet tous les certificats que nous délivrons aux journaux TC. Nous exploitons également
+  deux journaux annuels de CT nommés
+  <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
+    >Oak</a
+>
+  et Sapling. Toutes les autorités de certification publiquement reconnues sont les bienvenues pour
+contribuer à nos journaux. De nombreux certificats racine d'autorité de certification ont déjà été inclus dans nos journaux CT. Si vous exploitez une autorité de certification et que votre émetteur n'est pas dans notre liste d'émetteurs acceptés, veuillez déposer un message <a href="https://github.com/letsencrypt/ct-log-metadata">ici</a>.
+</p>
 
-<p>Let's Encrypt soumet tous les certificats que nous délivrons aux journaux TC. Nous utilisons également deux journaux TC partagés annuellement nommés <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> et Testflume. Toutes les autorités de certification de confiance publique sont les bienvenues pour participer à nos journaux. De nombreux certificats racine d'autorité de certification ont déjà été inclus dans nos journaux TC. <a href="/contact">Contactez-nous par email</a> pour ajouter de nouveaux certificats racines dans nos journaux si les votre n'y sont pas.</p>
-
-<p>Inscrivez-vous pour recevoir des notifications dans la <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">catégorie d'annonces TC</a> sur notre forum communautaire pour voir les annonces majeures concernant nos journaux TC.</p>
+<p>
+  Inscrivez-vous pour recevoir des notifications dans le <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">catégorie des annonces CT</a> de notre forum communautaire pour voir les annonces majeures concernant nos journaux CT.
+</p>
 
 <h2>Financement</h2>
 
-<p>Nous voulons remercier les partenaires suivants pour leur généreuse contribution au journal TC de Let's Encrypt. Si votre organisation souhaite nous aider à continuer ce travail, veuillez considérer <a href="https://www.abetterinternet.org/sponsor/">le sponsoring ou une donation</a>.</p>
+<p>
+  Nous tenons à remercier les partenaires suivants qui ont généreusement sponsorisé le journal Let's
+  Encrypt CT. Si votre organisation souhaite nous aider à poursuivre ce travail,
+  nous vous invitons à envisager un
+  <a href="https://www.abetterinternet.org/sponsor/">parrainage ou un don</a>.
+</p>
 
-<p class="text-center"><a href="https://sectigo.com/"><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"></a></p>
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
 
 <h2>Architecture</h2>
 
-<p>Rendez-vous sur notre blog pour voir <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">Comment Fonctionne les Journaux TC de Let's Encrypt</a> !</p>
+<p>
+  Consultez notre blog pour voir 
+  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >comment Let's Encrypt exécute les journaux CT </a
+>!
+</p>
 
 <h2>Surveillance du journal</h2>
 
-<p>Let's Encrypt a créé un outil open-source de surveillance du journal TC appelé <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Nous utilisons cet outil pour monitorer la stabilité et la conformité de nos propres journaux, et nous espérons que d'autres y trouveront également une utilité.</p>
+<p>
+  Let's Encrypt a créé un outil de surveillance des journaux CT open-source appelé <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Nous
+  utilisons cet outil pour contrôler la stabilité et la conformité de nos propres journaux, et nous
+  espérons que d'autres le trouveront également utile.
+</p>
 
 <h2>Journaux TC</h2>
+<p>
+Des informations sur les différents états du cycle de vie par lesquels progresse un journal CT peuvent être trouvées <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">ici</a>.
+</p>
 
 {{< ct_logs data="production" >}}
-    <li>Oak est embarqué dans les logiciels TC de <a href="https://support.apple.com/en-us/HT209255">Apple</a> et <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">Google</a>.</li>
-    <li>Notre environnement de production de l'API ACME soumet les certificats ici.</li>
+<li>
+  Oak est intégré dans les programmes CT d'
+  <a href="https://support.apple.com/en-us/HT209255">Apple</a> et de 
+  <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
+    >Google</a
+>.
+</li>
+<li>Notre environnement de production de l'API ACME soumet les certificats ici.</li>
+{{< /ct_logs >}} {{< ct_logs data="testing" >}}
+<li>
+  Les SCT de ces journaux <b>NE DOIVENT PAS</b> être incorporés dans des certificats de confiance publics.
+</li>
+<li>
+  Les environnements Let's Encrypt de production et de 
+  <a href="/docs/staging-environment">développement</a> de l'API ACME soumettent tous deux des certificats à Sapling, mais l'environnement de production n'utilise pas les SCTs résultants.
+</li>
+<li>
+  Nous testons ici les nouvelles versions de Trillian et de certificate-transparency-go 
+  <a href="http://github.com/google/trillian">Trillian</a> et de 
+  <a href="https://github.com/google/certificate-transparency-go"
+    >certificate-transparency-go</a
+>
+  avant de les déployer en production.
+</li>
+<li>
+  La liste des racines acceptées par Sapling comprend toutes les racines acceptées par Oak, plus des racines de test supplémentaires.
+</li>
+<li>
+  Sapling peut être utilisé par d'autres autorités de certification à des fins de test.
+</li>
 {{< /ct_logs >}}
-
-{{< ct_logs data="testing" >}}
-    <li>Les SCT de ces journaux <b>NE DOIVENT PAS</b> être incorporés dans des certificats de confiance publique.</li>
-    <li>Les environnements Let's Encrypt de production et de <a href="/docs/staging-environment">test</a> de l'API ACME envoient tous deux les certificats à Testflume, mais l'environnement de production n'utilise pas les SCT résultants.</li>
-    <li>Nous testons ici de nouvelles versions versions de <a href="http://github.com/google/trillian">Trillian</a> et <a href="https://github.com/google/certificate-transparency-go">certificate-transparency-go</a> avant de les déployer en production.</li>
-    <li>La liste des racines acceptées par Testflume comprend toutes les racines acceptées de Oak, ainsi que des racines de test supplémentaires.</li>
-    <li>Testflume peut être utilisé par d'autres autorités de certification à des fins d'essai.</li>
-{{< /ct_logs >}}
-<br>
+<br />
 <h2>Opérations de journalisation</h2>
-<p>Pour énumérer les racines incluses pour un Certificate Transparency Log particulier, vous pouvez exécuter la commande suivante dans le terminal de votre choix :</p>
+<p>
+  Pour énumérer les racines incluses pour un journal CT particulier, vous pouvez exécuter la commande suivante dans le terminal de votre choix :
+</p>
 <pre>
 $ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
     echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
 done
 </pre>
 
-<p>La soumission de certificats à un Certificate Transparency Log est généralement traitée par les autorités de certification. Si vous souhaitez en faire l'expérience, commencez par récupérer un certificat arbitraire codé PEM sur notre site web préféré. Copiez et collez le bloc suivant dans votre terminal.</p>
+<p>
+  La soumission des certificats à un journal CT est généralement gérée par les autorités de certification. Si vous souhaitez expérimenter avec ceci, commencez par récupérer un certificat arbitraire encodé en PEM à partir de notre site web préféré. Copiez et collez le bloc suivant dans votre terminal.
+</p>
 <pre>
 $ echo | \
 openssl s_client \
@@ -61,7 +122,12 @@ openssl s_client \
 sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
-<p>Avant qu'un certificat puisse être soumis, il doit être encodé en JSON dans une structure spéciale. Vous pouvez utiliser le générateur JSON fourni par <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> pour effectuer cette tâche. L'utilitaire crt.sh retournera un paquet JSON. Téléchargez le paquet sur votre ordinateur, renommez le fichier si nécessaire, et lancez la commande suivante pour effectuer l'opération d'ajout de chaîne (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a>) pour soumettre le certificat à un Certificate Transparency Log. La sortie contiendra une signature qui est en fait une <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. Plus d'informations sur la signature dans un instant.</p>
+<p>
+  Avant qu'un certificat ne puisse être soumis, il doit être encodé en JSON dans une structure spéciale. Vous pouvez utiliser le générateur JSON fourni par
+  <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> pour effectuer cette opération. L'utilitaire crt.sh renverra un paquet JSON. Téléchargez le paquet sur votre ordinateur, renommez le fichier si nécessaire et lancez la commande suivante
+ pour effectuer l'opération add-chain (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 section 4.1</a
+>) pour soumettre le certificat à un journal CT. La sortie contiendra une signature qui est en fait un <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. Nous reviendrons sur la signature dans un moment.
+</p>
 <pre>
 $ curl \
     -X POST \
@@ -72,13 +138,19 @@ $ curl \
 {"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
 </pre>
 
-<p>Pour confirmer que le Certificate Transparency Log a été signé par le bloc Oak 2020, nous utilisons le champ id de la commande ci-dessus et nous le passons à la commande suivante. Le résultat de cette opération produira le Log ID du Certificate Transparency Log.</p>
+<p>
+  Pour confirmer que le journal CT a été signé par le shard Oak 2020, nous utilisons le champ id de la commande ci-dessus et l'exécutons avec la commande suivante. Le résultat de cette opération sera l'ID du journal du CT.
+</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
 </pre>
 
-<p>En utilisant le champ de signature, nous pouvons vérifier que le certificat a été soumis à un journal. En utilisant notre guide <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>, vous pourriez décoder davantage cette valeur.</p>
+<p>
+  En utilisant le champ de signature, nous pouvons vérifier que le certificat a été soumis à un journal. En utilisant notre <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >guide d'approfondissement SCT</a
+>, vous pouvez décoder plus en profondeur cette valeur.
+</p>
 <pre>
 $ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
 04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4

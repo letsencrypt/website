@@ -3,14 +3,14 @@ title: Vanhentumissähköpostit
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2020-10-28
+lastmod: 2021-09-25
 show_lastmod: 1
 ---
 
 
 # Tilaaminen
 
-Jos annat Let's Encryptille sähköpostiosoitteen, kun luot tiliäsi, lähetämme sinulle automaattisesti vanhenemisilmoitukset, kun varmenteesi on uusittava. Lähetämme ensimmäisen ilmoituksen 20 päivää ennen varmenteen voimassaolon päättymistä ja lisää ilmoituksia kymmenen päivää ennen ja päivää ennen sen voimassaolon päättymistä.
+Jos ilmoitat Let's Encryptille sähköpostiosoitteen, kun luot tiliäsi, teemme parhaamme lähettääksemme sinulle automaattisesti vanhenemisilmoitukset, kun varmennetta on tulossa uusittavaksi. Pyrimme lähettämään ensimmäisen ilmoituksen 20 päivää ennen varmenteen voimassaolon päättymistä ja lisää ilmoituksia kymmenen päivää ja yksi päivä ennen sen vanhenemista. Suosittelemme, että luotat siihen, että ACME-asiakasohjelmasi uusii varmenteet automaattisesti, ja käytät näitä vanhenemisilmoituksia vain varoituksena automaation tarkistamiseen.
 
 # Kun saat vanhentumissähköpostin
 

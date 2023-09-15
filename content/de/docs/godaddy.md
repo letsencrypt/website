@@ -14,4 +14,4 @@ Wir empfehlen, bei Hosting-Anbietern, die das ACME-Protokoll nicht direkt implem
 
 Weil wir so stark an die automatisierte Erneuerung glauben, entwerfen wir unsere Zertifikate für die Verwendung mit ACME-Automatisierung. Ein Let's Encrypt-Zertifikat wird nach 60 Tagen automatisch erneuert und funktioniert nach 90 Tagen nicht mehr, wenn es nicht erneuert wird.
 
-Wenn Sie immer ein Let’s Encrypt Zertifikat auf GoDaddy Shared Hosting verwenden möchten, lesen Sie die von GoDaddy [bereitgestellten Anweisungen](https://www.godaddy.com/help/install-a-lets-encrypt-certificate-on-your-cpanel-hosting-account-28023). Beachten Sie, dass diese Anweisungen zeitintensiv sind und Sie dies alle 60 Tage machen müssen (und nicht 90 Tage wie im Link beschrieben).
+Wenn Sie immer ein Let’s Encrypt Zertifikat auf GoDaddy Shared Hosting verwenden möchten, lesen Sie die von GoDaddy [bereitgestellten Anweisungen](https://www.godaddy.com/help/install-a-lets-encrypt-certificate-on-your-cpanel-hosting-account-28023). Beachten Sie, dass diese Anweisungen zeitintensiv sind und Sie dies alle 60 Tage tun müssen (und nicht alle 90 Tage wie im Link beschrieben).

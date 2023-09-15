@@ -25,7 +25,7 @@ Vi kan også bruge hjælp til softwareudvikling. Al vores kode er på [GitHub](h
 
 ### CA-software på Serversiden
 
-[Boulder](https://github.com/letsencrypt/boulder) er Let's Encrypt CA implementering. Den er baseret på [ACME](https://tools.ietf.org/html/rfc8555) -protokollen, og er primært skrevet i Go. Et godt sted at starte er med listen over ['help wanted' issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) og [bidragsydere guiden](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) er Let's Encrypt CA implementering. Den er baseret på [ACME](https://tools.ietf.org/html/rfc8555) -protokollen, og er primært skrevet i Go. Et godt sted at starte er med listen over ['help wanted' issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) og [bidragsydere guiden](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

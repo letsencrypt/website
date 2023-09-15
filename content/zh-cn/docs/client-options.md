@@ -21,7 +21,7 @@ Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您
 
 # 其他客户端
 
-此列表上的所有客户端都支持ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  我们将很快[淘汰ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)。 如果您使用的客户端在该列表中，请确保您将其升级到最新版本。  如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
+下列客户端均支持 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  我们即将[淘汰 ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)， 如果您使用的客户端在该列表中，请确保您将其升级到最新版本。  如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
 
 {{< clients libraries="库" projects="集成了 Let’s Encrypt 的项目" >}}
 

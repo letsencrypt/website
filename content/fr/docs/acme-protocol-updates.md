@@ -6,11 +6,12 @@ lastmod: 2019-10-07
 show_lastmod: 1
 ---
 
-Le [protocole ACME](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) standardisé à l'IETF, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire de la manière dont Let's Encrypt fonctionne.
+
+Le protocole ACME [normalisé par l'IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html), [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire du fonctionnement de Let's Encrypt.
 
 # Points d'entré de l'API
 
-Nous avons actuellement les points d'entré d'API suivants. Veuillez consulter [notre documentation sur les divergences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) pour comparer leur implémentation aux spécifications ACME.
+Nous disposons actuellement des points de terminaison API suivants. Veuillez consulter [notre documentation sur les différences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) pour comparer leur mise en œuvre à la spécification ACME.
 
 ## ACME v2 (RFC 8555)
 
@@ -24,10 +25,10 @@ Nous avons actuellement les points d'entré d'API suivants. Veuillez consulter [
 
 # Nouvelles fonctionnalités ACME rétro-compatibles
 
-De temps en temps, Let's Encrypt peut implémenter de nouvelles fonctionnalités compatibles avec les versions antérieures des API existantes. Généralement, de nouvelles fonctionnalités rétrocompatibles sont introduites car nous avons décidé d'implémenter une partie de la spécification ACME que nous n'avions pas implémentée auparavant.
+De temps à autre, Let's Encrypt peut mettre en œuvre de nouvelles fonctionnalités rétrocompatibles pour les points de terminaison API existants. En général, les nouvelles fonctionnalités rétrocompatibles sont introduites parce que nous avons décidé d'implémenter une partie de la spécification ACME que nous n'avions pas implémentée auparavant.
 
-Lorsque de nouvelles fonctionnalités seront introduites dans les API existantes, les fonctionnalités seront toujours clairement spécifiées dans une spécification publique ACME et ne casseront pas les clients correctement implémentés.
+Lorsque de nouvelles fonctionnalités sont introduites dans des points de terminaison d'API existants, elles seront toujours clairement spécifiées dans une spécification ACME publique et ne perturberont pas les clients correctement implémentés.
 
-# Nouvelles versions d'ACME avec des changements non rétro-compatibles
+# Nouvelles versions d'ACME avec des modifications importantes
 
-Nous n'avons pas l'intention de modifier notre support ACME, mais si nous pensons qu'il est important de le faire, nous nous efforcerons de permettre une transition en douceur au fil du temps et de communiquer aussi à l'avance que possible. Les administrateurs système devraient maintenir la possibilité de déployer des mises à jour de leurs clients ACME si un changement est nécessaire.
+Nous ne prévoyons pas d'apporter des changements radicaux à notre support ACME, mais si nous estimons qu'il est important de le faire, nous nous efforcerons d'assurer une transition en douceur sur une période suffisante et nous communiquerons le plus longtemps possible à l'avance. Les administrateurs système doivent maintenir la capacité de déployer des mises à jour en temps utile à leurs clients ACME dans le cas où une modification importante est nécessaire.

@@ -25,7 +25,7 @@ Si vous êtes un abonné, vous demandez à Let's Encrypt un certificat de confia
 
 Nous devons être en mesure de démontrer au public, y compris ceux qui comptent sur la fiabilité de nos certificats, que nos services fonctionnent comme prévu. Par conséquent, nous pouvons être dans l'incapacité de supprimer des informations, y compris les adresses IP. Ces informations peuvent être rendues publiques de plusieurs façons, notamment par le biais d'API publiques, de référentiels publics et/ou de discussions publiques.
 
-Vous pouvez avoir la possibilité de fournir des informations de contact, telles que votre adresse électronique, à des fins de service et de récupération du compte. Vos coordonnées ne seront pas rendues publiques et ne seront partagées qu'en vertu de la section "Application de la loi et circonstances atténuantes" ci-dessous. En fournissant votre adresse électronique, vous acceptez de recevoir de notre part des courriers électroniques relatifs à nos services. Vous pouvez vous désinscrire des courriers électroniques relatifs aux services à tout moment en cliquant sur le lien "désinscription" figurant au bas de nos courriers électroniques ou en nous contactant à l'adresse privacy@abetterinternet.org. Nous n'utiliserons pas vos coordonnées à des fins de marketing ou de promotion.
+Vous pouvez avoir la possibilité de fournir des informations de contact, telles que votre adresse électronique, à des fins de service et de récupération du compte. Vos coordonnées ne seront pas rendues publiques et ne seront partagées qu'en vertu de la section "Application de la loi et circonstances atténuantes" ci-dessous. En fournissant votre adresse électronique, vous acceptez de recevoir de notre part des courriers électroniques relatifs à nos services. Vous pouvez vous désinscrire des courriers électroniques relatifs aux services à tout moment en cliquant sur le lien "désinscription" figurant au bas de nos courriers électroniques ou en nous contactant à l'adresse security@letsencrypt.org. Nous n'utiliserons pas vos coordonnées à des fins de marketing ou de promotion.
 
 Vous devrez peut-être télécharger le logiciel client à partir d'un dépôt tel que ceux gérés par Debian, Ubuntu, Red Hat ou Github. Votre interaction avec un tel dépôt de logiciels est régie par la politique de confidentialité et/ou les conditions d'utilisation de ce dépôt.
 
@@ -89,12 +89,12 @@ Vos données personnelles peuvent être collectées depuis ou transférées vers
 
 Les personnes situées dans l'Espace économique européen (EEE) ont certains droits concernant leurs informations personnelles, notamment le droit d'accéder, de corriger ou de supprimer les données personnelles que nous traitons par le biais de votre utilisation de nos sites et services. Si vous êtes un individu qui est une partie adverse, un abonné ou un visiteur basé dans l'EEE, vous pouvez :
 
-- Demandez un rapport sur vos données personnelles en nous envoyant un courriel à privacy@abetterinternet.org. Ce rapport comprendra les données personnelles dont nous disposons à votre sujet, fournies dans un format structuré, couramment utilisé et portable. Veuillez noter que nous pouvons vous demander des informations supplémentaires pour vérifier votre identité avant de divulguer toute information.
+- Demandez un rapport sur vos données personnelles en nous envoyant un courriel à security@letsencrypt.org. Ce rapport comprendra les données personnelles dont nous disposons à votre sujet, fournies dans un format structuré, couramment utilisé et portable. Veuillez noter que nous pouvons vous demander des informations supplémentaires pour vérifier votre identité avant de divulguer toute information.
 
-- Demandez que vos informations soient corrigées ou supprimées en nous contactant à l'adresse privacy@abetterinternet.org.
+- Demandez que vos informations soient corrigées ou supprimées en nous contactant à l'adresse security@letsencrypt.org.
 
 - S'opposer à ce que nous traitions vos informations. Vous pouvez nous demander de cesser d'utiliser vos informations, y compris lorsque nous les utilisons pour vous envoyer des courriels de service. Vous pouvez retirer votre consentement à recevoir des courriels de service à tout moment en cliquant sur le lien "unsubscribe" qui se trouve dans les courriels de Let's Encrypt.
 
 - Se plaindre auprès d'un autorité de réglementation. Si vous êtes basé dans l'EEE et que vous pensez que nous n'avons pas respecté les lois sur la protection des données, vous avez le droit de déposer une plainte auprès de votre autorité de surveillance locale.
 
-Pour plus d'informations, ou pour signaler un problème de confidentialité, veuillez contacter : privacy@abetterinternet.org.
+Pour plus d'informations, ou pour signaler un problème de confidentialité, veuillez contacter : security@letsencrypt.org.

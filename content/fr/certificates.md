@@ -3,7 +3,7 @@ title: La chaîne de confiance
 linkTitle: Chaîne de confiance (certificats racine et intermédiaire)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-09-24
+lastmod: 2021-10-02
 show_lastmod: 1
 ---
 

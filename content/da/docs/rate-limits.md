@@ -44,7 +44,7 @@ Du kan maksimalt have 300 <a id="pending-authorizations"></a>**Afventende godken
 
 Hvis du har ramt en kaldsgrænse, har vi ikke en måde at nulstille den midlertidigt. Du skal vente indtil kaldsgrænsen udløber efter en uge. Vi bruger et glidende vindue,, så hvis du har udstedt 25 certifikater mandag og 25 flere certifikater fredag, du vil kunne udstede igen fra mandag. Du kan få en liste over certifikater udstedt for dit registrerede domæne ved [at søge på crt.sh](https://crt.sh), som bruger det offentlige [Certificate Transparency](https://www.certificate-transparency.org) logs.
 
-Hvis du er en stor hosting udbyder eller organisation, der arbejder på en Let's Encrypt integration, vi har en [kalds begrænsnings ansøgnings formular](https://isrg.formstack.com/forms/rate_limit_adjustment_request), der kan bruges til at anmode om en højere kalds grænser. Det tager et par uger at behandle anmodninger, så denne formular er ikke egnet, hvis du blot skal nulstille en hastighedsgrænse hurtigere end den nulstiller på egen hånd.
+Hvis du er en stor hosting udbyder eller organisation, der arbejder på en Let's Encrypt integration, vi har en [kalds begrænsnings ansøgnings formular](https://goo.gl/forms/plqRgFVnZbdGhE9n1), der kan bruges til at anmode om en højere kalds grænser. Det tager et par uger at behandle anmodninger, så denne formular er ikke egnet, hvis du blot skal nulstille en hastighedsgrænse hurtigere end den nulstiller på egen hånd.
 
 # <a id="clearing-pending"></a>Ryd Afventende Autorisationer
 

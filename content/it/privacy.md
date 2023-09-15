@@ -25,7 +25,7 @@ Se sei un Abbonato, stai richiedendo un certificato affidabile da Let's Encrypt,
 
 Dobbiamo poter dimostrare al pubblico, compresi coloro che si affidano sull'affidabilità dei nostri certificati, che i nostri servizi operino come previsto. Di conseguenza, potremmo non essere in grado di eliminare le informazioni, inclusi gli indirizzi IP. Queste informazioni potrebbero esser rese pubbliche in numerosi modi diversi, incluso tramite API pubblica, repository pubbliche e/o discussioni pubbliche.
 
-Potresti avere l'opzione di fornire le informazioni di contatto, quali il tuo indirizzo email, per il servizio del profilo e per scopi di recupero. Le tue informazioni di contatto non saranno rese pubbliche e saranno condivise solo per "Applicazione della Legge e Circostanze Estenuanti," di seguito. Fornendo il tuo indirizzo email, acconsenti a ricevere email correlate al servizio da noi. Potresti disiscriverti dalle email correlate al servizio in qualsiasi momento cliccando il link "disiscriviti" in fondo alle nostre email o contattnadoci a privacy@abetterinternet.org. Non utilizzeremo le tue informazioni di contatto per scopi di marketing o promozionali.
+Potresti avere l'opzione di fornire le informazioni di contatto, quali il tuo indirizzo email, per il servizio del profilo e per scopi di recupero. Le tue informazioni di contatto non saranno rese pubbliche e saranno condivise solo per "Applicazione della Legge e Circostanze Estenuanti," di seguito. Fornendo il tuo indirizzo email, acconsenti a ricevere email correlate al servizio da noi. Potresti disiscriverti dalle email correlate al servizio in qualsiasi momento cliccando il link "disiscriviti" in fondo alle nostre email o contattnadoci a security@letsencrypt.org. Non utilizzeremo le tue informazioni di contatto per scopi di marketing o promozionali.
 
 Potresti dover scaricare il software del client da una repository come quelle operate da Debian, Ubuntu, Red Hat o GitHub. La tua interazione con la repository di un tale software è governata dalla politica sulla privacy e/o dai Termini d'Uso di quella repository.
 
@@ -89,12 +89,12 @@ I tuoi dati personali potrebbero esser raccolti o trasferiti alle giurisdizioni 
 
 Gli individui situati nello Spazio Economico Europeo (SEE) hanno certi diritti rispetto alle loro informazioni personali, incluso il diritto di accedere, correggere o eliminare i dati personali che elaboriamo tramite l'uso dei nostri siti e servizi. Se sei una parte facente affidamento, abbonato o visitatore situato nel SEE, puoi:
 
-- Richiedere un rapporto sui dati personali inviandoci un'email a privacy@abetterinternet.org. Questo rapporto includerà i dati personali che abbiamo su di te, forniti a te in un formato strutturato, usato comunemente e portatile. Sei pregato di notare che potremmo richiedere informazioni aggiuntive da te per verificare la tua identità prima di divulgare qualsiasi informazione.
+- Richiedere un rapporto sui dati personali inviandoci un'email a security@letsencrypt.org. Questo rapporto includerà i dati personali che abbiamo su di te, forniti a te in un formato strutturato, usato comunemente e portatile. Sei pregato di notare che potremmo richiedere informazioni aggiuntive da te per verificare la tua identità prima di divulgare qualsiasi informazione.
 
-- Richiedere che le tue informazioni siano corrette o eliminate contattandoci a privacy@abetterinternet.org.
+- Richiedere che le tue informazioni siano corrette o eliminate contattandoci a security@letsencrypt.org.
 
 - Contestare la nostra elaborazione delle tue informazioni. Puoi chiederci di interrompere l'utilizzo delle tue informazioni, incluso quando le adoperiamo per inviarti email del servizio. Puoi revocare il tuo consenso a ricevere le email del servizio in qualsiasi momento cliccando il link "disiscriviti", situato nelle email di Let's Encrypt.
 
 - Fare reclamo a un regolatore. Se ti trovi nel SEE e pensi che non abbiamo rispettato le leggi di protezione dei dati, hai il diritto a presentare un reclamo con la tua autorità di supervisione locale.
 
-Per ulteriori informazioni o per segnalare un problema della privacy, sei pregato di contattare: privacy@abetterinternet.org.
+Per ulteriori informazioni o per segnalare un problema della privacy, sei pregato di contattare: security@letsencrypt.org.

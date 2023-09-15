@@ -10,6 +10,9 @@ other = "Donasi"
 [home_hero_sponsor]
 other = "Sponsor"
 
+[home_hero_annual_report]
+other = "Kami dianugerahi Levchin Prize for Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Pelajari lebih lanjut</a>"
+
 [home_major_sponsors]
 other = "Sponsor dan Donatur Utama"
 
@@ -33,9 +36,12 @@ other = "Kirim semua surat atau pertanyaan ke:"
 
 [footer_policies]
 other = """
-Lihat <a href="/id/privacy/">kebijakan privasi</a> kami.<br>
-Lihat <a href="https://www.abetterinternet.org/trademarks/">kebijakan merek</a> kami.
+Lihat <a href="/privacy/">kebijakan privasi</a> kami.<br>
+Lihat <a href="/trademarks/">kebijakan merek dagang</a> kami.
 """
+
+[linux_foundation_trademark]
+other = "Linux Foundation adalah merek dagang milik The Linux Foundation. Linux adalah merek dagang milik Linus Torvalds."
 
 [header_skip_nav]
 other = "Lewati tautan navigasi"

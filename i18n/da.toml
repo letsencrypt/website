@@ -11,7 +11,7 @@ other = "Donér"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Læs vores 2020 <a href='https://www.abetterinternet.org/annual-reports/'>Årsberetning</a>"
+other = "Vi blev tildelt Levchin-prisen for praktisk anvendt kryptografi! <a href='https://abetterinternet.org/levchin-prize'>Læs mere</a>"
 
 [home_major_sponsors]
 other = "Store sponsorer og finansieringskilder"
@@ -39,6 +39,9 @@ other = """
 Se vores <a href="/privacy/">privatlivspolitik</a>.<br>
 Se vores <a href="https://www.abetterinternet.org/trademarks">varemærkepolitik</a>.
 """
+
+[linux_foundation_trademark]
+other = "Linux Foundation er et registreret varemærke tilhørende Linux-fonden. Linux er et registreret varemærke tilhørende Linus Torvalds."
 
 [header_skip_nav]
 other = "Spring navigation links over"
@@ -68,9 +71,6 @@ other = "Sølv"
 other = "Sprog"
 
 [view_in_english]
-other = "Se på engelsk"
-
-[view_in_xxx]
 other = "Se på engelsk"
 
 [old_version]

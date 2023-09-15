@@ -3,14 +3,14 @@ title: Emails d'expiration
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2020-10-28
+lastmod: 2021-09-25
 show_lastmod: 1
 ---
 
 
 # S'abonner
 
-Si vous fournissez une adresse électronique à Let's Encrypt lors de la création de votre compte, nous vous enverrons automatiquement des avis d'expiration lorsque votre certificat arrivera à échéance. Nous envoyons le premier avis 20 jours avant l'expiration de votre certificat, et d'autres avis à 10 jours et 1 jour avant qu'il expire.
+Si vous fournissez une adresse e-mail à Let's Encrypt lorsque vous créez votre compte, nous ferons de notre mieux pour vous envoyer automatiquement des avis d'expiration lorsque votre certificat doit être renouvelé. Nous essayons d'envoyer le premier avis 20 jours avant l'expiration de votre certificat, puis d'autres avis 10 jours et 1 jour avant son expiration. Nous vous recommandons de vous fier à votre client ACME pour renouveler automatiquement vos certificats, et d'utiliser ces avis d'expiration comme un rappel pour vérifier votre automatisation.
 
 # Quand vous recevez un courriel d'expiration
 
