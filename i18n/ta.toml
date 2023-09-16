@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "<span>260 மில்லியன்</span> வலைத்தளங்களுக்கு TLS சான்றிதழ்களை வழங்கும் இலாப நோக்கற்ற சான்றிதழ் அதிகார சபை."
+
+[home_hero_getting_started]
+other = "ஆரம்பிக்கவும்"
+
+[home_hero_donate]
+other = "நன்கொடையளிக்க"
+
+[home_hero_sponsor]
+other = "அனுசரணையாளர்"
+
+[home_hero_annual_report]
+other = "மெய்-உலக குறியாக்கவியலுக்கான லெவ்சின் பரிசு எங்களுக்கு வழங்கப்பட்டது! <a href='https://abetterinternet.org/levchin-prize'>மேலும் அறிக</a>"
+
+[home_major_sponsors]
+other = "முக்கிய அனுசரணையாளர்கள் மற்றும் நிதியளிப்பவர்கள்"
+
+[home_from_our_blog]
+other = "எமது வலைப்பதிவிலிருந்து"
+
+[read_more]
+other = "மேலும் படிக்க"
+
+[subscribe_rss]
+other = '<a href="{{ .Permalink }}">RSS மூலம்</a> குழுசேர்'
+
+[footer_support_us]
+other = "மிகவும் பாதுகாப்பான மற்றும் தனியுரிமையை மதிக்கும் இணையத்தை ஆதரிக்கவும்."
+
+[footer_donate]
+other = "நன்கொடையளிக்க"
+
+[footer_mailing]
+other = "அனைத்து வகையான அஞ்சல் அல்லது விசாரணைகளை அனுப்ப:"
+
+[footer_policies]
+other = """
+எமது <a href="/privacy/">தனியுரிமைக் கொள்கையைப்</a> பார்க்கவும்.<br>
+எமது <a href="https://www.abetterinternet.org/trademarks">வர்த்தக முத்திரைக் கொள்கையைப்</a> பார்க்கவும்.
+"""
+
+[linux_foundation_trademark]
+other = "லினக்ஸ் அறக்கட்டளை என்பது லினக்ஸ் அறக்கட்டளையின் பதிவு செய்யப்பட்ட வர்த்தக முத்திரையாகும். லினக்ஸ் என்பது லினஸ் டொர்வால்ட்ஸினால் பதிவு செய்யப்பட்ட வர்த்தக முத்திரையாகும்."
+
+[header_skip_nav]
+other = "வழிச்செலுத்தல் இணைப்புக்களைத் தவிர்க்கவும்"
+
+[last_updated]
+other = "இறுதியாகப் புதுப்பிக்கப்பட்டது: "
+
+[see_all_doc]
+other = "அனைத்து ஆவணங்களையும் பார்க்கவும்"
+
+[blog_feed]
+other = "Let's Encrypt வலைப்பதிவு ஊட்டம்"
+
+[platinum]
+other = "வன்பொன்"
+
+[gold]
+other = "தங்கம்"
+
+[gold_basic]
+other = "தங்க அடிப்படை"
+
+[silver]
+other = "வெள்ளி"
+
+[languages]
+other = "மொழிகள்"
+
+[view_in_english]
+other = "ஆங்கிலத்தில் பார்க்க"
+
+[old_version]
+other = "குறிப்பு: மொழிபெயர்ப்பிலிருந்து ஆங்கிலப் பதிப்பு புதுப்பிக்கப்பட்டது"
+
+[not_yet_translated]
+other = 'இவ்வலைப்பக்கம் இன்னும் மொழிபெயர்க்கப்படவில்லை. நீங்கள் <a href="https://github.com/letsencrypt/website">இங்கே</a> பங்களிக்கலாம்.'
+
+[english_is_canonical]
+other = "ஆங்கிலப் பதிப்பு அதிகாரப்பூர்வமானது"
+
+[graph_issued]
+other = "வழங்கப்பட்டுள்ளது"
+
+[graph_certificates_active]
+other = "செயலில் உள்ள சான்றிதழ்கள்"
+
+[graph_fully_qualified_domains_active]
+other = "செயலில் உள்ள முழு-தகுதியான டொமைன்கள்"
+
+[graph_registered_domains_active]
+other = "செயலில் உள்ள பதிவு செய்யப்பட்ட டொமைன்கள்"
+
+[graph_active_count]
+other = "செயலில் உள்ள எண்ணிக்கை"
+
+[graph_issued_per_day]
+other = "ஒரு நாளுக்கு வழங்கப்பட்டது"
+
+[graph_all_users]
+other = "அனைத்து பயனாளர்கள்"
+
+[graph_usa_users]
+other = "அமெரிக்க பயனாளர்கள்"
+
+[graph_japan_users]
+other = "ஜப்பான் பயனாளர்கள்"
+
+[graph_percent_https]
+other = "HTTPS மூலம் ஏற்றப்பட்ட பக்கங்களின் சதவீதம் (14 நாள் சராசரி நகர்வு)"
+
+[certificate_policy]
+other = "சான்றிதழ் கொள்கை"
+
+[certificate_transparency_name]
+other = "பெயர்"
+
+[certificate_transparency_role_production]
+other = "தயாரிப்பு"
+
+[certificate_transparency_role_testing]
+other = "சோதனை"
+
+[certificate_transparency_uri]
+other = "உரலி"
+
+[certificate_transparency_public_key]
+other = "பொதுத் திறவி"
+
+[certificate_transparency_log_id]
+other = "பதிவேட்டு அடையாளம்"
+
+[certificate_transparency_state]
+other = "நிலை"
+
+[certificate_transparency_window_start]
+other = "சாளர தொடக்கம்"
+
+[certificate_transparency_window_end]
+other = "சாளர முடிவு"
+
+[certification_practices_statement]
+other = "சான்றளிப்பு நடைமுறைகளின் அறிக்கை"
+
+[overview]
+other = "மேலோட்டம்"
+
+[subscriber_information]
+other = "சந்தாதாரர் தகவல்"
+
+[advanced_subscriber_information]
+other = "மேம்பட்ட சந்தாதாரர் தகவல்"
+
+[client_developer_information]
+other = "கிளையன் உருவாக்குநர் தகவல்கள்"
+
+[acme_divergences]
+other = "தற்போதைய ACME வரைவிலிருந்து வேறுபடுபவை"
+
+[acme_divergences_rfc]
+other = "ACME RFC இல் இருந்து வேறுபடுபவை"
+
+[onboarding_customers]
+other = "Let's Encrypt மற்றும் ACME மூலம் உங்கள் வாடிக்கையாளர்களை உள்வாங்குதல்"
+
+[paypal_donate_alt]
+other = "PayPal பொத்தான் மூலம் நன்கொடை அளிக்க"
+
+[paypal_donate_title]
+other = "PayPal மூலம் நன்கொடை அளிக்க"
+
+[not_found]
+other = "அந்தப் பக்கம் இல்லை, தயவுசெய்து முகவரியைச் சரிபார்க்கவும்."
+
+[amount_per_year]
+other = "${{ .nb }}/ஆண்டு (USD)"
+
+[3y_commitment]
+other = "3 வருட உறுதியுடன்"
+
+[1_99_employees]
+other = "1-99 ஊழியர்கள்"
+
+[100_999_employees]
+other = "100-999 ஊழியர்கள்"
+
+[1000_employees]
+other = "1000+ ஊழியர்கள்"

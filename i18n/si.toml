@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "වියමන අඩවි <span>දශලක්‍ෂ 260</span> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
+other = "වියමන අඩවි <span>දශලක්‍ෂ 300</span> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
 
 [home_hero_getting_started]
 other = "පටන්ගන්න"
@@ -11,13 +11,13 @@ other = "පරිත්‍යාග"
 other = "අනුග්‍රහය"
 
 [home_hero_annual_report]
-other = "අපගේ 2020 <a href='https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf'>වාර්ෂික වාර්තාව</a> කියවන්න"
+other = "අපට සැබෑ ලොව සංකේතන කලාව සඳහා වන ලෙව්චින් ත්‍යාගය හිමි විය! <a href='https://abetterinternet.org/levchin-prize'>තව දැනගන්න</a>"
 
 [home_major_sponsors]
 other = "ප්‍රධාන අනුග්‍රාහකයින් සහ මූල්‍යදායකයින්"
 
 [home_from_our_blog]
-other = "සටහන්පත වෙතින්"
+other = "ලිපිපෙළ වෙතින්"
 
 [read_more]
 other = "තව කියවන්න"
@@ -40,6 +40,9 @@ other = """
 අපගේ <a href="https://www.abetterinternet.org/trademarks">වෙළඳලකුණු ප්‍රතිපත්තිය</a> දකින්න.
 """
 
+[linux_foundation_trademark]
+other = "ලිනක්ස් ෆවුන්ඩේෂන් යනු ද ලිනක්ස් ෆවුන්ඩේෂන් හි ලියාපදිංචි වෙළඳ ලකුණයි. ලිනක්ස් යනු ලිනස් ටොර්වල්ඩ්ස් ගේ ලියාපදිංචි වෙළඳ ලකුණකි."
+
 [header_skip_nav]
 other = "යාත්‍රණ සබැඳි මඟහරින්න"
 
@@ -50,7 +53,7 @@ other = "අවසන් යාවත්කාලය: "
 other = "සියළුම ප්‍රලේඛන දකින්න"
 
 [blog_feed]
-other = "ලෙට්'ස් එන්ක්‍රිප්ට් සටහන් සංග්‍රහය"
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් ලිපි සංග්‍රහය"
 
 [platinum]
 other = "ප්ලැටිනම්"
@@ -69,9 +72,6 @@ other = "භාෂා"
 
 [view_in_english]
 other = "ඉංග්‍රීසියෙන් දකින්න"
-
-[view_in_xxx]
-other = "සිංහලෙන් දකින්න"
 
 [old_version]
 other = "සටහන: පරිවර්තනයෙන් පසු ඉංග්‍රීසි අනුවාදය යාවත්කාල වී ඇත"

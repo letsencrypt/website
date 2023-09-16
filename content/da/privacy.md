@@ -25,7 +25,7 @@ Hvis du er abonnent, anmoder du om et betroet certifikat fra Let's Encrypt som h
 
 Vi skal kunne demonstrere over for offentligheden herunder dem, der er afhængige af vores certifikaters troværdighed, at vores tjenester fungerer som forventet. Som følge heraf kan vi ikke slette oplysninger, herunder IP-adresser. Disse oplysninger kan offentliggøres på en række måder, herunder via offentlige API, offentlige registre og/eller offentlige diskussioner.
 
-Du kan have mulighed for at give kontaktoplysninger, såsom din e-mail-adresse, til kontoservice og genoprettelsesformål. Dine kontaktoplysninger vil ikke blive offentliggjort, og det vil kun blive delt pr. "Lov Håndhævelse og Udvidelse Omstændigheder", nedenfor. Ved at angive din e-mailadresse, er du indforstået med at modtage service-relaterede e-mails fra os. Du kan til enhver tid afmelde dig service-relaterede e-mails ved at klikke på linket "Afmeld" nederst på vores e-mails eller ved at kontakte os på privacy@abetterinternet.org. Vi vil ikke bruge dine kontaktoplysninger til markedsføring eller salgsfremmende formål.
+Du kan have mulighed for at give kontaktoplysninger, såsom din e-mail-adresse, til kontoservice og genoprettelsesformål. Dine kontaktoplysninger vil ikke blive offentliggjort, og det vil kun blive delt pr. "Lov Håndhævelse og Udvidelse Omstændigheder", nedenfor. Ved at angive din e-mailadresse, er du indforstået med at modtage service-relaterede e-mails fra os. Du kan til enhver tid afmelde dig service-relaterede e-mails ved at klikke på linket "Afmeld" nederst på vores e-mails eller ved at kontakte os på security@letsencrypt.org. Vi vil ikke bruge dine kontaktoplysninger til markedsføring eller salgsfremmende formål.
 
 Det kan være nødvendigt at downloade klientsoftware fra et depot såsom Debian, Ubuntu, Red Hat eller Github. Din interaktion med et sådant software-repository er underlagt dette repositorys egen privatlivspolitik og/eller Vilkår for anvendelse.
 
@@ -81,7 +81,7 @@ Vi behandler personoplysninger som beskrevet i denne politik. Formålet med og r
 
 **Lov grundlag:** Aftalegrundlag, legitime interesser
 
-**Yderligere oplysnigner:** Vi kan også videregive oplysninger om kontogendannelse, når vi har en god tro opfattelse af, at det er nødvendigt at forhindre tab af liv, personskade, skade på ejendom eller betydelig økonomisk skade.
+**Yderligere oplysnigner**: Vi kan også videregive oplysninger om kontogendannelse, når vi har en god tro opfattelse af, at det er nødvendigt at forhindre tab af liv, personskade, skade på ejendom eller betydelig økonomisk skade.
 
 Bemærk venligst, at vi muligvis ikke kan slette oplysninger, herunder IP-adresser da disse oplysninger er nødvendige for andre at stole på i at fastslå pålideligheden af vores certifikater. I nogle tilfælde kan vi behandle personoplysninger i henhold til lovpligtig forpligtelse eller beskytte dine vitale interesser eller en anden persons interesser.
 
@@ -89,12 +89,12 @@ Dine personoplysninger kan blive indsamlet fra eller overført til jurisdiktione
 
 Enkeltpersoner i Det Europæiske Økonomiske Samarbejdsområde (EØS) har visse rettigheder med hensyn til deres personlige oplysninger, herunder retten til at få adgang til, rette eller slette personoplysninger, som vi behandler gennem din brug af vores websteder og tjenester. Hvis du er en person, der er en deltagende part, abonnent eller besøgende baseret på EØS, kan du:
 
-- Anmod om en persondatarapport ved at sende en e-mail til os på privacy@abetterinternet.org. Denne rapport vil indeholde de personoplysninger, vi har om dig, givet dig i et struktureret, almindeligt anvendt og overførbart format. Bemærk venligst, at vi kan anmode dig om yderligere oplysninger for at bekræfte din identitet, før vi videregiver oplysninger.
+- Anmod om en persondatarapport ved at sende en e-mail til os på security@letsencrypt.org. Denne rapport vil indeholde de personoplysninger, vi har om dig, givet dig i et struktureret, almindeligt anvendt og overførbart format. Bemærk venligst, at vi kan anmode dig om yderligere oplysninger for at bekræfte din identitet, før vi videregiver oplysninger.
 
-- Anmod om, at dine oplysninger bliver rettet eller slettet ved at kontakte os på privacy@abetterinternet.org.
+- Anmod om, at dine oplysninger bliver rettet eller slettet ved at kontakte os på security@letsencrypt.org.
 
 - Protester mod brugen af oplysninger om dig. Du kan bede os om at holde op med at bruge dine oplysninger, herunder når vi bruger dine oplysninger til at sende dig e-mails. Du kan til enhver tid tilbagekalde dit samtykke til at modtage service emails ved at klikke på linket "Afmeld" fundet i Let's Encrypt e-mails.
 
 - Klag til en myndighed. Hvis du er baseret i EØS og tror, at vi ikke har overholdt databeskyttelseslovene. De har ret til at indgive en klage til din lokale tilsynsmyndighed.
 
-For mere information, eller for at rapportere et privatlivsproblem, kontakt venligst: privacy@abetterinternet.org.
+For mere information, eller for at rapportere et privatlivsproblem, kontakt venligst: security@letsencrypt.org.

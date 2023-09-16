@@ -9,14 +9,14 @@ show_lastmod: 1
 
 平台能否验证Let's Encrypt证书的主要决定因素是，该平台是否信任ISRG的“ISRG Root X1”证书。 在2021年9月之前， 有些平台即使未信任 ISRG Root X1 证书也可以验证我们的证书，因为它们信任IdenTrust的 "DST Root CA X3" 证书。 自2021年10月起，只有那些信任ISRG Root X1的平台才能验证Let's Encrypt证书([Android平台除外](/2020/12/21/extending-android-compatibility.html))。
 
-如果您的证书在仅能够在一部分（而不是全部）“已知兼容”的平台上通过验证，则问题可能在于 Web 服务器配置错误。 如果您在较新的系统中遇到问题，最常见的原因是网站没有提供正确的证书链。 您可以使用 [SSL Labs 的服务器测试](https://www.ssllabs.com/ssltest/)来测试您站点的兼容性。 如果这个测试仍旧不能帮助您确定问题所在，您可以在我们的[社区论坛](https://community.letsencrypt.org/)中寻求帮助。
+如果您的证书只能在部分已知的兼容平台上通过验证，原因可能是网站服务器配置不当。 如果您在较新的系统中遇到问题，最常见的原因是网站没有提供正确的证书链。 您可以使用 [SSL Labs 的服务器测试](https://www.ssllabs.com/ssltest/)来测试您站点的兼容性。 如果这个测试仍旧不能帮助您确定问题所在，您可以在我们的[社区论坛](https://community.letsencrypt.org/)中寻求帮助。
 
 # 信任ISRG RootX1的平台
 
-* Windows >= XP SP3 ([如果自动 Root 证书更新没有手动禁用的话](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/))
+* Windows >= XP SP3（[如果没有手动关闭“自动更新根证书”功能](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/)）
 * [macOS >= 10.12.1](https://twitter.com/letsencrypt/status/790960929504497665?lang=en)
 * [iOS >= 10](https://support.apple.com/en-us/HT207177) ([不包括 iOS 9](https://support.apple.com/en-us/HT205205))
-* [iPhone 5 及更新的手机可以升级到 iOS 10](https://en.wikipedia.org/wiki/IPhone_5) ，因此可以信任ISRG Root X1
+* [iPhone 5 及更新款可升级至 iOS 10](https://en.wikipedia.org/wiki/IPhone_5) ，因此可以信任 ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) ([由于我们的特殊交互签名证书](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html)，安卓 >= 2.3.6 默认情况下可信任)
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
 * Ubuntu >= Precise Pangolin / 12.04（安装更新后）
@@ -25,7 +25,7 @@ show_lastmod: 1
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-浏览器(Chrome、Safari、Edge、Opera) 一般都信任他们所运行于的操作系统的根证书。 Firefox 是例外：它有自己的根证书列表。 不久，Chrome的新版本将 [也有自己的根证书列表](https://www.chromium.org/Home/chromium-security/root-ca-policy)。
+Chrome、Safari、Edge、Opera 浏览器信任的根证书通常与操作系统一致。 Firefox 是例外：它有自己的根证书列表。 不久以后 Chrome 也将有[独立的根证书列表](https://www.chromium.org/Home/chromium-security/root-ca-policy)。
 
 # 信任DST Root CA X3但不信任ISRG Root X1的平台
 
@@ -60,6 +60,6 @@ show_lastmod: 1
 * PS3 游戏机
 * PS4 游戏机（固件版本 < 5.00 ）
 
-# ISRG Root X2 (新 ECDSA root) - 即将推出
+# ISRG Root X2（新 ECDSA 根证书）：即将推出
 
-我们已经将ISRG Root X2提交给微软、苹果、谷歌、Mozilla和Oracle根证书程序以供兼容。 ISRG Root X2已经通过我们的 ISRG Root X1 的交叉签名得到广泛信任。 欲了解更多信息，请查看我们的 [社区论坛帖子](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+我们已将 ISRG Root X2 提交至 Microsoft、Apple、Google、Mozilla 和 Oracle 的根证书项目， ISRG Root X2 也已经通过 ISRG Root X1 的交叉签名得到了广泛信任。 如需了解更多信息，请参阅我们的[社群论坛讨论帖](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)。

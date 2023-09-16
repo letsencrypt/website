@@ -3,14 +3,14 @@ title: Udløbs E-Mail
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2020-10-28
+lastmod: 2021-09-25
 show_lastmod: 1
 ---
 
 
 # Abonnér
 
-Hvis du angiver en e-mailadresse til Let's Encrypt når du opretter din konto, vil vi automatisk sende dig udløbs varsler, når dit certifikat snart skal fornyes. Vi sender den første besked 20 dage før dit certifikat udløber, og flere beskeder ved 10 dage og 1 dag før det udløber.
+Hvis du angiver en e-mailadresse til Let's Encrypt når du opretter din konto, vil vi automatisk sende dig udløbs varsler, når dit certifikat snart skal fornyes. Vi sender den første besked 20 dage før dit certifikat udløber, og flere beskeder ved 10 dage og 1 dag før det udløber. Vi anbefaler, at du stoler på din ACME-klient til automatisk at forny dine certifikater, og brug kun disse udløbsmeddelelser som en advarsel til at tjekke din automatisering.
 
 # Når du får en udløbs e-mail
 

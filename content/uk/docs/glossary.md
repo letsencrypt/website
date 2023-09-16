@@ -67,7 +67,7 @@ Note for translators:
 
 {{% def id="subject" name="Certificate subject" %}} Поле "Суб'єкт" сертифіката вказує, про що йдеться у сертифікаті. Воно зазвичай містить такі поля, як [ Загальна назва ](#def-CN), Країна та Організація. {{% /def %}}
 
-{{% def id="CT" name="Certificate Transparency" abbr="CT" %}}Для підвищення безпеки сертифікати (або [ precertificates](#def-precertificate)) мають бути опубліковані у журналах прозорості сертифікатів: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) генерує та публікує [пресертифікати](#def-precertificate), та включає до наступного [сертифікату](#def-leaf) перелік [SCT](#def-SCT) для пресертифіката. Деякі [браузери](#def-web-browser), як Google Chrome, вимагають наявності цієї обіцяної перевірки для підтвердження сертифіката. [Вікіпедія](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
+{{% def id="CT" name="Certificate Transparency" abbr="CT" %}} Для підвищення безпеки сертифікати (або [ precertificates](#def-precertificate)) мають бути опубліковані у журналах прозорості сертифікатів: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) генерує та публікує [пресертифікати](#def-precertificate), та включає до наступного [сертифікату](#def-leaf) перелік [SCT](#def-SCT) для пресертифіката. Деякі [браузери](#def-web-browser), як Google Chrome, вимагають наявності цієї обіцяної перевірки для підтвердження сертифіката. [Вікіпедія](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} Компонент[ Прозорості сертифікату](#def-CT), який приймає сертифікати і [пресертифікати](#def-precertificate) та включає їх до постійного, загальнодоступного переліку, що перевіряється. {{% /def %}}
 
@@ -79,13 +79,13 @@ Note for translators:
 
 {{% def id="DNSSEC" name="Domain Name System Security Extensions" abbr="DNSSEC" %}} Механізм криптографічної автентифікації відповідей DNS. DNSSEC вимагає розгортання TLD, власниками імен доменів та рекурсивними резольверами для набуття чинності. Ухвалення поки що на досить низькому рівні. [Вікіпедія](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) {{% /def %}}
 
-{{% def id="DV" name="Domain-validated certificate" %}}[ сертифікат ](#def-leaf), де заявник лише довів свій контроль над доменним іменем (а не ідентифікаційні дані запитуючої організації). [Let's Encrypt](#def-LE) пропонує лише сертифікати DV (не [ OV ](#def-OV) або [ EV ](#def-EV)): [FAQ](/docs/faq) - [Вікіпедія](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
+{{% def id="DV" name="Domain-validated certificate" %}} [ сертифікат ](#def-leaf), де заявник лише довів свій контроль над доменним іменем (а не ідентифікаційні дані запитуючої організації). [Let's Encrypt](#def-LE) пропонує лише сертифікати DV (не [ OV ](#def-OV) або [ EV ](#def-EV)): <a[FAQ](/docs/faq) - [Вікіпедія](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
 {{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Варіант алгоритму цифрового підпису (DSA), який використовує криптографію з еліптичною кривою.  [Вікіпедія](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) підтримує ECDSA для [сертифікатів кінцевого користувача або листових сертифікатів](#def-leaf), але не для всього [ланцюжка](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} Особливий тип [EdDSA](#def-EdDSA), разом із Ed448. {{% /def %}}
 
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}Сучасна система підпису відкритих ключів на основі еліптичних кривих, призначена для вирішення кількох поширених [ проблем впровадження ](https://ed25519.cr.yp.to/)  криптографії на еліптичній кривій. Центри сертифікації, такі як [ Let's Encrypt ](#def-LE), ще не можуть надавати сертифікати EdDSA. [Вікіпедія](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} Сучасна система підпису відкритих ключів на основі еліптичних кривих, призначена для вирішення кількох поширених [ проблем впровадження ](https://ed25519.cr.yp.to/)  криптографії на еліптичній кривій. Центри сертифікації, такі як [ Let's Encrypt ](#def-LE), ще не можуть надавати сертифікати EdDSA. [Вікіпедія](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} Тип криптографії з відкритим ключем на основі еліптичних кривих. ECC використовує менші ключі порівняно з криптографією, що не належить до ЄС, забезпечуючи при цьому еквівалентну безпеку. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Вікіпедія](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
@@ -109,7 +109,7 @@ Note for translators:
 
 {{% def id="leaf" name="Leaf certificate (end-entity certificate)" %}} Найчастіше сертифікат, підписаний[intermediate](#def-intermediate), дійсний для набору доменів і не може підписувати інші сертифікати. Це тип сертифіката, який [ACME clients](#def-ACME-client) запрошує і використовує [web servers](#def-web-server). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#End-entity_or_leaf_certificate) {{% /def %}}
 
-{{% def id="LE" name="Let's Encrypt" abbr="LE" %}}[ ЦС ](#def-CA), яким керує [ ISRG ](#def-ISRG). [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
+{{% def id="LE" name="Let's Encrypt" abbr="LE" %}} [ ЦС ](#def-CA), яким керує [ ISRG ](#def-ISRG). [Wikipedia](https://en.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
 {{% def id="mixed-content" name="Mixed content" %}} Коли веб-сторінка HTTPS завантажує суб-ресурси (Javascript, CSS або зображення) через HTTP. [Браузери](#def-web-browser) можуть блокувати змішаний вміст або позначати сторінку як менш безпечну, якщо присутній змішаний вміст:https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. Щоб вирішити проблему змішаного вмісту, веб -розробник повинен змінити свої сторінки, щоб усі ресурси використовували URL -адреси HTTPS. [Інструменти розробника ](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools), вбудовані у браузери і можуть використовуватися, щоб з'ясувати, які ресурси викликають проблеми зі змішаним вмістом. {{% /def %}}
 
@@ -123,7 +123,7 @@ Note for translators:
 
 {{% def id="OV" name="Organization Validation" abbr="OV" %}} Сертифікати для яких [CA](#def-CA) підтвердив юридичну особу [Subscriber](#def-subscriber). Вони містять інформацію про цю організацію. [Let's Encrypt](#def-LE) не пропонує OV сертифікатів. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
-{{% def id="pem" name="PEM file (.pem)" %}}Формат криптографічної інформації (спочатку вказано як частина Покращених Поштових Інтернет-стандартів для безпечної електронної пошти). Документ PEM може представляти інформацію таку як приватний ключ, відкритий ключ або цифровий сертифікат. Ці файли починаються на "-\-\-\-BEGIN", а потім тип даних. [Wikipedia](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) {{% /def %}}
+{{% def id="pem" name="PEM file (.pem)" %}} Формат криптографічної інформації (спочатку вказано як частина Покращених Поштових Інтернет-стандартів для безпечної електронної пошти). Документ PEM може представляти інформацію таку як приватний ключ, відкритий ключ або цифровий сертифікат. Ці файли починаються на "-\-\-\-BEGIN", а потім тип даних. [Wikipedia](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) {{% /def %}}
 
 {{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} Файл, який може містити [лист сертифікату](#def-leaf), його [ланцюжок](#def-chain) до кореня і закритий ключ листа. Дивіться також https://uk.wikipedia.org/wiki/PKCS_12. [Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
@@ -137,7 +137,7 @@ Note for translators:
 
 {{% def id="revocation" name="Revocation" %}} Сертифікат чинний до завершення терміну його дії, якщо [ЦС](#def-CA) не стверджує, що його відкликано. Сертифікат може бути відкликаний з різних причин, наприклад, компрометація приватного ключа. Веб-переглядачі можуть перевірити, чи відкликано сертифікат, використовуючи [CRL](#def-CRL), [OCSP](#def-OCSP) або новіші методи, як-от [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) і [CRLSets](https://dev.chromium .org/Home/chromium-security/crlsets). Зауважте, що в багатьох ситуаціях [відкликання не працює](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
-{{% def id="root" name="Root certificate" %}} [самопідписаний](#def-self-signed) сертифікат, контрольований за допомогою [центр сертифікації](#def-CA), який використовується для підписання його [проміжних](#def-intermediate) сертифікатів і включений до [сховища сертифікатів](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
+{{% def id="root" name="Root certificate" %}} [самопідписаний](#def-self-signed) сертифікат, контрольований за допомогою [центр сертифікації](#def-CA), який використовується для підписання його [проміжних](#def-intermediate) сертифікатів і включений до [сховища сертифікатів](#def-store) a>. [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
 {{% def id="root-program" name="Root Program" %}} Політики, які організація використовує, щоб вирішити, які сертифікати включити до свого [сховища сертифікатів](#def-store) , а отже, яким ЦС довіряє їх програмне забезпечення. {{% /def %}}
 
@@ -165,7 +165,7 @@ Note for translators:
 
 {{% def id="UCC" name="Unified Communications Certificate" abbr="UCC" %}} Опис сертифікату, що містить кілька [Альтернативних імен суб'єкта (SAN)](#def-SAN). {{% /def %}}
 
-{{% def id="web-browser" name="Web Browser" %}} } Користувач [](#def-user-agent) використовується для відображення веб-сторінок. Приклади: *Mozilla Firefox*, *Google Chrome* або *Internet Explorer format@@*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
+{{% def id="web-browser" name="Web Browser" %}} Користувач [](#def-user-agent) використовується для відображення веб-сторінок. Приклади: *Mozilla Firefox*, *Google Chrome* або *Internet Explorer format@@*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
 {{% def id="user-agent" name="User Agent" %}} Програмне забезпечення для обміну даними з [вебсервером](#def-web-server). Наприклад: [браузер](#def-web-browser) або [cURL](https://uk.wikipedia.org/wiki/CURL).{{% /def %}}
 

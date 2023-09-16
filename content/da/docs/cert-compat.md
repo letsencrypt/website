@@ -2,12 +2,12 @@
 title: Certifikatets Kompatilitet
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-05-12
+lastmod: 2021-10-31
 show_lastmod: 1
 ---
 
 
-Den vigtigste afgørende faktor for, om en platform kan validere Let's Encrypt certifikater er, om platformen stoler på ISRG's "ISRG Root X1" certifikat. Nogle platforme kan validere vores certifikater, selvom de ikke inkluderer ISRG Root X1, fordi de stoler på IdenTrust's "DST Root CA X3" certifikat. Efter September 2021 kun de platforme, der stoler på ISRG Root X1 vil fortsætte med at validere Lad os Kryptere certifikater ([med undtagelse af Android](/2020/12/21/extending-android-compatibility.html)).
+Den vigtigste afgørende faktor for, om en platform kan validere Let's Encrypt certifikater er, om platformen stoler på ISRG's "ISRG Root X1" certifikat. Før september 2021 kunne nogle platforme validere vores certifikater, selvom de ikke inkluderer ISRG Root X1, fordi de stolede på IdenTrust's "DST Root CA X3" certifikat. Efter September 2021 og fremadrettet vil kun de platforme, der stoler på ISRG Root X1 vil fortsætte med at validere Let's Encrypt certifikater ([med undtagelse af Android](/2020/12/21/extending-android-compatibility.html)).
 
 Hvis dit certifikat validerer på nogle af de "kendte kompatible" platforme, men ikke andre, kan problemet være en webserver fejlkonfiguration. Hvis du har et problem med moderne platforme, er den mest almindelige årsag ikke at levere den korrekte certifikatkæde. Test dit websted med [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Hvis det ikke identificerer problemet, så spørg om hjælp i vores [Community Forums](https://community.letsencrypt.org/).
 
@@ -19,7 +19,7 @@ Hvis dit certifikat validerer på nogle af de "kendte kompatible" platforme, men
 * [iPhone 5 og derover kan opgradere til iOS 10](https://en.wikipedia.org/wiki/IPhone_5) og kan dermed stole på ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (men Android >= 2.3.6 vil fungere som standard [på grund af vores specielle krydssignatur](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (med opdateringer indlæst)
+* Ubuntu >= Præcise Pangolin / 12.04 (med opdateringer anvendt)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (med opdateringer indlæst)
 * [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
@@ -27,26 +27,24 @@ Hvis dit certifikat validerer på nogle af de "kendte kompatible" platforme, men
 
 Browsere (Chrome, Safari, Edge, Opera) stoler generelt på de samme rodcertifikater som det styresystem, de kører på. Firefox er undtagelsen: det har sin egne rodcertifikater. Snart vil nye versioner af Chrome [også have deres egne rodcertifikater](https://www.chromium.org/Home/chromium-security/root-ca-policy).
 
-# Platforme der stoler på DST Root CA X3
+# Platforme der stoler DST Root CA X3, men ikke ISRG Root X1
 
-* Windows >= XP SP3
-* macOS (de fleste versioner)
-* iOS (de fleste versioner)
-* [Android >= v2.3.6](https://twitter.com/Tutancagamon/status/600783165087752192)
-* Mozilla Firefox >= v2.0
-* Ubuntu >= precise / 12.04
-* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680)
-* Java 8 >= 8u101
-* Java 7 >= 7u111
-* NSS >= v3.11.9
-* Amazon FireOS (Silk Browser)
-* Cyanogen > v10
-* Jolla Sailfish OS > v1.1.2.16
-* Kindle > v3.4.1
-* Blackberry >= 10,3,3
-* PS4-spillekonsol med firmware >= 5,00
+Disse platforme ville have fungeret frem til september 2021, men vil ikke længere validere Let's Encrypt certifikater.
 
-Du kan evnetuelt besøge [denne 2015-2017 community forum diskussion](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) for mere information om kompatibilitet.
+* macOS <= 10.12.1
+* iOS < 10
+* Mozilla Firefox <= 50
+* Ubuntu >= intrepid / 8,10
+* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) og < jessie /8
+* Java 8 >= 8u101 og < 8u141
+* Java 7 >= 7u111 og < 7u151
+* NSS >= v3. 11, 9 og < 3, 26
+* Amazon FireOS (Silk Browser) (ukendte versionsnumre)
+* Cyanogen > v10 (version der tilføjede ISRG Root X1 ukendt)
+* Jolla Sailfish OS > v1.1.2.16 (version der tilføjede ISRG Root X1 ukendt)
+* Kindle > v3.4.1 (version der tilføjede ISRG Root X1 ukendt)
+* Brombær >= 10.3.3 (version, der tilføjede ISRG Root X1 ukendt)
+* PS4-spillekonsol med firmware >= 5.00 (version, der tilføjede ISRG Root X1 ukendt)
 
 # Kendte Inkompatible
 
@@ -63,6 +61,5 @@ Du kan evnetuelt besøge [denne 2015-2017 community forum diskussion](https://co
 * PS4-spillekonsol med firmware < 5.00
 
 # ISRG Root X2 (ny ECDSA root) - kommer snart
-Vi har indsendt ISRG Root X2 til Microsoft, Apple, Google, Mozilla, og Oracle rod-certifikat-programmer med henblik på tilføjelse. ISRG Root X2 er allerede bredt betroet via et krydssignatur fra vores ISRG Root X1. For yderligere information, tjek vores [community forum indlæg](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
 
-
+Vi har indsendt ISRG Root X2 til Microsoft, Apple, Google, Mozilla, og Oracle rod-certifikat-programmer med henblik på tilføjelse. ISRG Root X2 er allerede bredt betroet via et krydssignatur fra vores ISRG Root X1. For yderligere information, tjek vores [community forum indlæg](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).

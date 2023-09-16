@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Un'autorità di certificazione non-profit che fornisce certificati TLS a <span>200 milioni</span> di siti web."
+other = "Un'autorità di certificazione senza scopo di lucro che fornisce certificati TLS a <span>260 milioni</span> di siti web."
 
 [home_hero_getting_started]
 other = "Come iniziare"
@@ -13,40 +11,40 @@ other = "Dona"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Leggi il nostro <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>Report annuale del 2021</a>"
-
-[home_hero_desktop]
-other = "Desktop"
-
-[home_hero_mobile]
-other = "Mobile"
+other = "Abbiamo ricevuto il Premio Levchin per la Crittografia del Mondo Reale! <a href='https://abetterinternet.org/levchin-prize'>Scopri di più</a>"
 
 [home_major_sponsors]
-other = "Grandi Sponsor e Donatori"
+other = "Sponsor principali e finanziatori"
 
 [home_from_our_blog]
 other = "Dal nostro blog"
 
 [read_more]
-other = "Leggi di più"
+other = "Leggi altro"
 
 [subscribe_rss]
-other = "Abbonati <a href=\"{{ .Permalink }}\">via RSS</a>"
+other = 'Abbonati <a href="{{ .Permalink }}">tramite RSS</a>'
 
 [footer_support_us]
-other = "Supporta un web più sicuro e rispettoso della privacy."
+other = "Supporta un Web più sicuro e rispettoso della privacy."
 
 [footer_donate]
 other = "Dona"
 
+[footer_mailing]
+other = "Invia tutte le email o richieste a:"
+
 [footer_policies]
 other = """
-Vedi la nostra <a href="/privacy/">privacy policy</a>.<br>
-Vedi la nostra <a href="/trademarks/">trademark policy</a>.
+Vedi la nostra politica <a href="/privacy/">sulla privacy</a>.<br>
+Vedi la nostra <a href="https://www.abetterinternet.org/trademarks">politica sui marchi</a>.
 """
 
+[linux_foundation_trademark]
+other = "Linux Foundation è un marchio registrato di The Linux Foundation. Linux è un marchio registrato di Linus Torvalds."
+
 [header_skip_nav]
-other = "Salta i link di navigazione"
+other = "Salta link di navigazione"
 
 [last_updated]
 other = "Ultimo aggiornamento: "
@@ -55,64 +53,67 @@ other = "Ultimo aggiornamento: "
 other = "Vedi tutta la documentazione"
 
 [blog_feed]
-other = "Feed dal blog di Let's Encrypt"
+other = "Feed del blog di Let's Encrypt"
 
 [platinum]
-other = "Platinum"
+other = "Platino"
 
 [gold]
-other = "Gold"
+other = "Oro"
 
 [gold_basic]
-other = "Gold Basic"
+other = "Oro Base"
 
 [silver]
-other = "Silver"
+other = "Argento"
 
 [languages]
 other = "Lingue"
 
 [view_in_english]
-other = "Visualizza in inglese"
+other = "Mostra in Inglese"
 
 [old_version]
-other = "Nota: La versione inglese è stata aggiornata dopo l'ultima traduzione"
+other = "Nota: La versione inglese è stata aggiornata dalla traduzione"
 
 [not_yet_translated]
-other = "Questa pagina non è ancora stata tradotta. Puoi dare il tuo contributo <a href=\"https://github.com/letsencrypt/website\">qui</a>."
+other = 'Questa pagina web non è ancora stata tradotta. Puoi contribuire <a href="https://github.com/letsencrypt/website">qui</a>.'
 
 [english_is_canonical]
-other = "La versione inglese è quella autorevole"
+other = "La versione inglese è autorevole"
 
 [graph_issued]
 other = "Emesso"
 
 [graph_certificates_active]
-other = "Certificati attivi"
+other = "Certificati Attivi"
 
 [graph_fully_qualified_domains_active]
-other = "Domini completamente qualificati (FQ) attivi"
+other = "Fully Qualified Domain Name"
 
 [graph_registered_domains_active]
-other = "Domini attivi registrati"
+other = "Domini Registrati Attivi"
 
 [graph_active_count]
-other = "Contatore attivi"
+other = "Conteggio Attività"
 
 [graph_issued_per_day]
-other = "Emessi al giorno"
+other = "Emessi Al Giorno"
 
 [graph_all_users]
-other = "Tutti gli utenti"
+other = "Tutti gli Utenti"
 
 [graph_usa_users]
-other = "Utenti degli Stati uniti d'America"
+other = "Utenti USA"
 
 [graph_japan_users]
-other = "Utenti giapponesi"
+other = "Utenti del Giappone"
 
 [graph_percent_https]
-other = "Percentuale di pagine caricate via HTTPS (14 media giornaliera)"
+other = "Percentuale di Pageloads su HTTPS (media mobile di 14 giorni)"
+
+[certificate_policy]
+other = "Politica Del Certificato"
 
 [certificate_transparency_name]
 other = "Nome"
@@ -141,32 +142,32 @@ other = "Inizio finestra"
 [certificate_transparency_window_end]
 other = "Fine finestra"
 
+[certification_practices_statement]
+other = "Dichiarazione sulle pratiche di certificazione"
+
 [overview]
-other = "Panoramica"
+other = "Sommario"
 
 [subscriber_information]
-other = "Informazioni per gli abbonati"
+other = "Informazioni sull'abbonato"
 
 [advanced_subscriber_information]
-other = "Informazioni avanzate per gli abbonati"
+other = "Informazioni avanzate sull'abbonato"
 
 [client_developer_information]
-other = "Informazioni per gli sviluppatori del client"
+other = "Informazioni Sviluppatore Client"
 
 [acme_divergences]
-other = "Differenze dall'attuale bozza di ACME"
+other = "Differenze rispetto alla bozza ACME attuale"
 
 [acme_divergences_rfc]
-other = "Differenze dall'RFC ACME"
+other = "Differenze rispetto all'RFC di ACME"
 
 [onboarding_customers]
-# I have no idea how to translate this
-other = "Onboarding Your Customers with Let's Encrypt and ACME"
-
-# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+other = "Onboarding dei tuoi clienti con Let's Encrypt e ACME"
 
 [paypal_donate_alt]
-other = "Bottone dona con PayPal"
+other = "Dona con PayPal"
 
 [paypal_donate_title]
 other = "Dona con PayPal"
@@ -175,7 +176,6 @@ other = "Dona con PayPal"
 other = "Quella pagina non esiste, per favore controlla l'indirizzo."
 
 [amount_per_year]
-# Ex. $10.000/yr (USD)
 other = "${{ .nb }}/anno (USD)"
 
 [3y_commitment]

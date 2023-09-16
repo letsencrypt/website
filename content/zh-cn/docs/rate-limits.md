@@ -8,16 +8,16 @@ show_lastmod: 1
 ---
 
 
-为保证尽可能多的人可以公平使用服务，Let's Encrypt 提供了速率限制措施。 我们相信这些速率限制已经高到足以让大多数人在默认情况下使用。 Let's Encrypt 对证书颁发进行速率限制以确保尽可能多的人能合理使用我们的服务。我们相信这些速率限制在大多数情况下足以满足用户的需求。同时续期证书几乎不受速率限制的影响，所以大型组织可以逐步增加他们可以发布的证书数量，而无需Let's Encrypt的干预。
+为保证尽可能多的人可以公平使用我们的服务，Let's Encrypt 采取了速率限制措施。 我们相信这一限制足以满足大多数人的正常需求。 此外，我们的设计使得证书续期几乎不可能触发速率限制，大型机构也可以逐步增加证书数量，无需 Let's Encrypt 干预。
 
-如果你正活跃于开发或测试一款 Let's Encrypt 客户端，请使用我们的[测试环境](/docs/staging-environment)而不是生产环境 API. 如果您正在将 Let's Encrypt 作为提供商或与大型网站进行整合，请[查看我们的集成指南](/docs/integration-guide)。
+如果您正在积极开发或测试一款 Let's Encrypt 客户端，请使用我们的[测试环境](/docs/staging-environment)，不要使用生产环境 API。 如果您正在将 Let's Encrypt 作为提供商或与大型网站进行整合，请[查看我们的集成指南](/docs/integration-guide)。
 
-我们的主要限制为<a id="certificates-per-registered-domain"></a>**每个注册域名可签发证书数量**（每周50张）。 一般而言，注册域名是您从域名注册商处购买的那一部分域名。 例如，在 `www.example.com` 中，注册域名为 `example.com`. 在 `new.blog.example.co.uk` 中，注册域名为 `example.co.uk`. 我们将使用[公共后缀列表](https://publicsuffix.org)来计算注册域名。 超出每个注册域名可签发证书数量限制的请求，将会得到 `too many certificates already issued` 的报错信息，同时可能提其他信息。
+我们最主要的限制是<a id="certificates-per-registered-domain"></a>**每个注册域名可签发的证书数量**（每周 50 份）。 一般而言，注册域名是您从域名注册商处购买的那一部分域名。 例如，`www.example.com` 对应的注册域名为 `example.com`， 而 `new.blog.example.co.uk` 对应的注册域名为 `example.co.uk`。 我们会借助[公共后缀列表](https://publicsuffix.org)确定注册域名。 如果超出每个注册域名可签发证书数量的限制，就会得到 `too many certificates already issued` 的报错信息，同时可能附有详细的错误说明。
 
-您在3小时之内每个账户最多可以创建300个<a
-id="new-orders"></a>**新订单**。 每次您从 Boulder CA 请求证书时，都会创建一个新订单，这意味着每个证书请求中都会产生一个新订单。 超出新订单数量限制的请求，将会得到`too many new orders recently`的报错信息。
+每个账户三小时内最多可创建 300 份<a
+id="new-orders"></a>**订单**。 每次向 Boulder CA 申请证书都会创建一份新订单，也就是说每次证书请求都会生成一份新订单。 如果超出订单数量限制，就会得到 `too many new orders recently` 的报错信息。
 
-如果您拥有很多子域名，您可能会希望将它们整合到一张证书中，限制为<a id="names-per-certificate"></a>**每份证书最多100个域名**。 出于性能和可靠性角度的考虑，建议您在每张证书中包含尽可能少的域名。  含有多个域名的证书常被称为主题备用名称 (SAN) 证书，有时或被称作统一通讯证书 (UCC).
+您可以在一份证书中置入多个域名，<a id="names-per-certificate"></a>**每份证书的域名数量**最多为 100 个。 出于性能和可靠性角度的考虑，建议您在每张证书中包含尽可能少的域名。  含有多个域名的证书常称为 SAN 证书或 UCC 证书。
 
 续期证书遵守特殊规则：它们不计入您的**每个注册域名的证书数量**的限制，但它们受到每周最多 5 张[**重复证书**](/docs/duplicate-certificate-limit) 的限制。 一旦超过重复证书数量的限制，将会得到`too many certificates already issued for exact set of domains` 的报错信息。
 
@@ -42,7 +42,7 @@ id="overall-requests"></a>**总请求数**限制为每秒 20 次。 "/directory"
 
 如果您达到了速率限制，我们没有办法帮助您暂时重置它。 您需要等待一周，直到这些速率限制过期。 我们使用了滑动窗口的方式，因此如果你在周一申请签发了25张证书，并且在周五又申请签发了25张证书，那么下周一起你将可以再次申请签发证书。 你可以在利用公开[证书透明度](https://www.certificate-transparency.org)记录的 [ crt.sh ](https://crt.sh) 网站上搜索获取你已经申请签发的证书列表。
 
-如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://isrg.formstack.com/forms/rate_limit_adjustment_request)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
+如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://goo.gl/forms/plqRgFVnZbdGhE9n1)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
 
 # <a id="clearing-pending"></a>清除待验证的授权
 

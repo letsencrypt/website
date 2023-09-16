@@ -3,7 +3,7 @@ title: Bienvenue à l'ASN.1 et au DER
 slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
-lastmod: 2020-10-07
+lastmod: 2021-03-21
 ---
 
 Ce document fournit une introduction aux structures de données et aux formats qui définissent les certificats utilisés dans HTTPS. Il devrait être accessible à toute personne ayant un peu d'expérience en informatique et un peu de familiarité avec les certificats.
@@ -467,7 +467,7 @@ En développant cela, on obtient -2<sup>15</sup> + 2<sup>14</sup> + 2<sup>13</
 
 Il s'agit d'une transformation générique : Pour tout nombre négatif codé en BER (ou DER), vous pouvez le préfixer avec 11111111 et obtenir le même nombre. Cela s'appelle [l'extension du signe](https://andybargh.com/binary-sign-extension/). Ou, de manière équivalente, s'il existe un nombre négatif dont le codage de la valeur commence par 11111111, vous pouvez supprimer cet octet et obtenir le même nombre. Par conséquent, BER et DER utilisent le codage le plus court.
 
-Le codage en complément à deux des INTEGERs a [un impact pratique dans la l'émission de certificats](https://groups.google.com/forum/#!topic/mozilla.dev.security.policy/nnLVNfqgz7g%255B26-50%255D) : La RFC 5280 exige que les numéros de série soient positifs. Comme le premier bit est toujours un bit de signe, cela signifie que les numéros de série codés en DER sur 8 octets peuvent avoir une longueur maximale de 63 bits. Le codage d'un numéro de série positif de 64 bits nécessite une valeur codée de 9 octets (le premier octet étant zéro).
+Le codage en complément à deux des INTEGER a un [impact réel sur la délivrance des certificats](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758) : la RFC 5280 exige que les numéros de série soient positifs. Comme le premier bit est toujours un bit de signe, cela signifie que les numéros de série codés en DER sur 8 octets peuvent avoir une longueur maximale de 63 bits. Le codage d'un numéro de série positif de 64 bits nécessite une valeur codée de 9 octets (le premier octet étant zéro).
 
 Voici le codage d'un INTEGER avec la valeur 2<sup>63</sup>+1 (qui se trouve être un nombre positif de 64 bits) :
 
@@ -584,7 +584,7 @@ Comme la SEQUENCE, un SET est construit, ce qui signifie que ses octets de valeu
 
 L'encodage d'un SET, comme celui d'une SEQUENCE, omet les champs OPTIONAL et DEFAULT s'ils sont absents ou ont la valeur par défaut. Toute ambiguïté résultant de champs ayant le même type doit être résolue par le module ASN.1, et les champs DEFAULT DOIVENT être omis du codage DER s'ils ont la valeur par défaut.
 
-En BER, un SET peut être codé dans n'importe quel ordre. En DER, un SET doit être codé dans l'ordre croissant par tag.
+En BER, un SET peut être codé dans n'importe quel ordre. En DER, un SET doit être encodé dans l'ordre croissant de la valeur sérialisée de chaque élément.
 
 Encodage SET OF
 ---------------
@@ -671,6 +671,6 @@ Maintenant, vous en savez assez pour expliquer pourquoi ! Un [Certificat est une
 
 Nous savons donc maintenant que les deux premiers octets de l'encodage DER d'un certificat sont 0x30 0x82. [L'encodage PEM](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) utilise la [base64](https://en.wikipedia.org/wiki/Base64), qui encode 3 octets d'entrée binaire en 4 caractères ASCII de sortie. Ou, pour le dire autrement : la base64 transforme 24 bits d'entrée binaire en 4 caractères ASCII de sortie, 6 bits de l'entrée étant affectés à chaque caractère. Nous savons ce que seront les 16 premiers bits de chaque certificat. Pour prouver que les premiers caractères de (presque) tous les certificats seront "MII", nous devons regarder les 2 bits suivants. Ce seront les bits les plus significatifs de l'octet le plus significatif des deux octets de longueur. Ces bits seront-ils jamais mis à 1 ? Non, sauf si le certificat fait plus de 16 383 octets ! On peut donc prédire que les premiers caractères d'un certificat PEM seront toujours les mêmes. Essayez-le vous-même :
 
-```
+```bash
 xxd -r -p <<<308200 | base64
 ```

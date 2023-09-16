@@ -14,7 +14,7 @@ Let's Encrypt adalah otoritas sertifikat (Certificate Authority/CA) yang gratis,
 
 Kami memberikan ke orang-orang, sertifikat digital yang mereka perlukan untuk mengaktifkan HTTPS (SSL/TLS) untuk situs-situs web, secara gratis, dengan cara semudah mungkin yang kami bisa. Kami melakukan ini karena kami ingin membuat Web yang lebih aman dan yang lebih menghormati privasi.
 
-Anda dapat membaca mengenai ulasan tahunan terbaru kami dengan mengunduh [laporan tahunan](https://www.abetterinternet.org/annual-reports/) kami.
+Anda dapat membaca mengenai ulasan tahunan terbaru kami dengan mengunduh [laporan tahunan](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf) kami.
 
 Prinsip-prinsip kunci di balik Let's Encrypt adalah:
 
