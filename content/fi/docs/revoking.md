@@ -43,29 +43,21 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 
 Jos joku on myöntänyt varmenteen vaarantuttuasi isäntäsi tai DNS: si, haluat kumota varmenteen, kun saat hallinnan takaisin. Varmenteen kumoamiseksi Let's Encryptin on varmistettava, että hallitset varmenteen toimialueen nimiä (muuten ihmiset voivat kumota toistensa varmenteet ilman lupaa)!
 
-Tämän hallinnan vahvistamiseksi Let's Encrypt käyttää samoja menetelmiä, joita se käyttää ohjauksen vahvistamiseen myöntämistä varten: voit laittaa [arvon DNS TXT -tietueeseen](https://tools.ietf.org/html/rfc8555#section-8.4) tai laittaatiedoston HTTP-palvelimeen</1 >. Yleensä ACME-asiakas tulee käsittelemään näitä sinun puolestasi. Huomaa, että useimmat ACME-asiakkaat yhdistävät validoinnin ja myöntämisen, joten ainoa tapa pyytää vahvistuksia on yrittää myöntämistä. Voit sitten kumota tuloksena olevan varmenteen, jos et halua sitä, tai yksinkertaisesti tuhota yksityisen avaimen.</p> 
+Tämän hallinnan vahvistamiseksi Let's Encrypt käyttää samoja menetelmiä, joita se käyttää ohjauksen vahvistamiseen myöntämistä varten: voit laittaa [arvon DNS TXT -tietueeseen](https://tools.ietf.org/html/rfc8555#section-8.4) tai laittaa [tiedoston HTTP-palvelimeen](https://tools.ietf.org/html/rfc8555#section-8.3). Yleensä ACME-asiakas tulee käsittelemään näitä sinun puolestasi. Huomaa, että useimmat ACME-asiakkaat yhdistävät validoinnin ja myöntämisen, joten ainoa tapa pyytää vahvistuksia on yrittää myöntämistä. Voit sitten kumota tuloksena olevan varmenteen, jos et halua sitä, tai yksinkertaisesti tuhota yksityisen avaimen.
 
 Jos haluat välttää varmenteen myöntämisen ollenkaan, voit sisällyttää komentorivillesi olemattoman toimialueen nimen, mikä aiheuttaa sen, että myöntäminen epäonnistuu, mutta silti muut olemassa olevat toimialueiden nimet tarkistetaan. Esimerkki:
-
-
 
 ```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-
 Ja noudata ohjeita. Jos haluat vahvistaa mieluummin HTTP:n kuin DNS:n välityksellä, korvaa lippu `--preferred-challenges` tuolla `--preferred-challenges=http`.
 
 Kun olet vahvistanut kaikkien kumottavan varmenteen verkkotunnusten hallinnan, voit ladata varmenteen [crt.sh](https://crt.sh/):sta ja jatkaa sitten varmenteen kumottamista aivan kuin olisit myöntänyt sen:
 
-
-
 ```bash
 certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 ```
-
-
-
 
 # Varmenteen yksityistä avainta käyttäen
 
@@ -74,16 +66,11 @@ Jos et alun perin myöntänyt varmennetta, mutta sinulla on kopio vastaavasta yk
 Jotta voit käyttää tätä menetelmää, tarvitset ensin kopion yksityisestä avaimesta PEM-muodossa.
 
 Sitten, jos sinulla ei vielä ole sitä, lataa kumotettava varmenne. Let's Encrypt kirjoittaa lokit kaikista varmenteista [Certificate Transparency](https://www.certificate-transparency.org/) -lokeihin, joten voit etsiä ja ladata varmenteita lokivalvonnasta, kuten [crt.sh](https://crt.sh/). Vastaavan `SubjectPublicKeyInfo` (SPKI)-kentän etsiminen hakee kaikki yksityistä avainta käyttävät varmenteet. SPKI-tiivisteen purkaminen yksityisestä avaimesta:
-
-
 ```bash
 openssl pkey -outform DER -in /PATH/TO/privkey.pem -pubout | openssl sha256
 ```
 
-
 Kun sinulla on yksityinen avain ja varmenne, voit kumota varmenteen kuten näin:
-
-
 
 ```bash
 certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/privkey.pem --reason keyCompromise

@@ -110,4 +110,4 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 Давний исследователь и практик в области безопасности, Иван Ристич, опубликовал руководство по настройке, содержащее полезную информацию о том, что следует учитывать при <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">настройке конфигурации TLS</a>.
 
-Для получения более обширной информации и подробностей мы рекомендуем <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer" mark=" crwd-mark">Bulletproof TLS и PKI</a>, написал также Ристич.
+Для получения более обширной информации и подробностей мы рекомендуем <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS и PKI</a>, написал также Ристич.
