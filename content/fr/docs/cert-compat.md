@@ -2,12 +2,12 @@
 title: Compatibilité du certificat
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-05-12
+lastmod: 2021-10-31
 show_lastmod: 1
 ---
 
 
-Le facteur déterminant pour savoir si une plateforme peut valider les certificats Let's Encrypt est de savoir si cette plateforme fait confiance au certificat "ISRG Root X1" de l'ISRG. Certaines plateformes peuvent valider nos certificats même si elles n'incluent pas l'ISRG Root X1, car elles font confiance au certificat "DST Root CA X3" d'IdenTrust. Après septembre 2021, seules les plateformes qui font confiance à ISRG Root X1 continueront à valider les certificats Let's Encrypt ([à l'exception d'Android](/2020/12/21/extending-android-compatibility.html)).
+Le facteur déterminant pour savoir si une plateforme peut valider les certificats Let's Encrypt est de savoir si cette plateforme fait confiance au certificat "ISRG Root X1" de l'ISRG. Avant septembre 2021, certaines plateformes pouvaient valider nos certificats bien que ceux-ci n'incluent pas ISRG Root X1, car elles faisaient confiance au certificat "DST Root CA X3" de IdenTrust. À partir d'octobre 2021, seules les plateformes qui font confiance à ISRG Root X1 valideront les certificats Let's Encrypt ([ à l'exception d'Android ](/2020/12/21/extending-android-compatibility.html)).
 
 Si votre certificat est validé sur certaines des plates-formes "compatibles connues" mais pas sur d'autres, le problème peut provenir d'une mauvaise configuration du serveur web. Si vous avez un problème avec les plateformes modernes, la cause la plus fréquente est l'incapacité à fournir la chaîne de certificats correcte. Testez votre site avec le [serveur de test de SSL Labs](https://www.ssllabs.com/ssltest/). Si cela ne permet pas d'identifier le problème, demandez de l'aide dans nos [forums communautaires](https://community.letsencrypt.org/).
 
@@ -19,7 +19,7 @@ Si votre certificat est validé sur certaines des plates-formes "compatibles con
 * [Les iPhone 5 et plus peuvent être mis à jour vers iOS 10](https://en.wikipedia.org/wiki/IPhone_5) et peuvent donc faire confiance à ISRG Root X1
 * [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (mais Android >= 2.3.6 fonctionnera par défaut [](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
 * [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* [Ubuntu >= xenial / 16.04](https://packages.ubuntu.com/xenial/all/ca-certificates/filelist) (avec mises à jour installées)
+* Ubuntu >= Pangolin Précis / 12.04 (avec application des mises à jour)
 * [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (avec mises à jour installées)
 * [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
@@ -27,26 +27,24 @@ Si votre certificat est validé sur certaines des plates-formes "compatibles con
 
 Les navigateurs (Chrome, Safari, Edge, Opera) font généralement confiance aux mêmes certificats racine que le système d'exploitation sur lequel ils fonctionnent. Firefox est l'exception : il a son propre magasin racine. Bientôt, les nouvelles versions de Chrome [auront également leur propre magasin racine](https://www.chromium.org/Home/chromium-security/root-ca-policy).
 
-# Plateformes qui font confiance à DST Root CA X3
+# Plateformes qui font confiance à l'AC Root DST X3 mais pas à l'ISRG Root X1
 
-* Windows >= XP SP3
-* macOS (la plupart des versions)
-* iOS (la plupart des versions)
-* [Android >= v2.3.6](https://twitter.com/Tutancagamon/status/600783165087752192)
-* Mozilla Firefox >= v2.0
-* Ubuntu >= precise / 12.04
-* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680)
-* Java 8 >= 8u101
-* Java 7 >= 7u111
-* NSS >= v3.11.9
-* Amazon FireOS (navigateur Silk)
-* Cyanogen > v10
-* Jolla Sailfish OS > v1.1.2.16
-* Kindle > v3.4.1
-* BlackBerry >= 10.3.3
-* Console de jeu PS4 avec firmware >= 5.00
+Ces plateformes ont fonctionné jusqu'en septembre 2021, mais ne valideront plus les certificats Let's Encrypt.
 
-Vous pouvez consulter [cette discussion du forum de la communauté 2015-2017](https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/) pour plus d'informations sur la compatibilité.
+* macOS < 10.12.1
+* iOS < 10
+* Mozilla Firefox < 50
+* Ubuntu >= intrepid / 8.10
+* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) et < jessie /8
+* Java 8 >= 8u101 et < 8u141
+* Java 7 >= 7u111 et < 7u151
+* NSS >= v3.11.9 et < 3.26
+* Amazon FireOS (Silk Browser) (numéro de version inconnue)
+* Cyanogen > v10 (version qui a ajouté ISRG Root X1 inconnu)
+* Jolla Sailfish OS > v1.1.2.16 (version qui a ajouté ISRG Root X1 inconnu)
+* Kindle > v3.4.1 (version qui a ajouté ISRG Root X1 inconnu)
+* Blackberry >= 10.3.3 (version qui a ajouté ISRG Root X1 inconnu)
+* Console de jeu PS4 avec firmware >= 5.00 (version qui a ajouté ISRG Root X1 inconnu)
 
 # Incompatibilité connue
 
@@ -63,6 +61,5 @@ Vous pouvez consulter [cette discussion du forum de la communauté 2015-2017](ht
 * Console de jeu PS4 avec firmware < 5.00
 
 # ISRG Root X2 (nouvelle racine ECDSA) - bientôt disponible
-Nous avons soumis ISRG Root X2 aux programmes root de Microsoft, Apple, Google, Mozilla et Oracle pour inclusion. ISRG Root X2 jouit déjà d'une grande confiance grâce à la signature croisée de notre ISRG Root X1. Pour plus d'informations, consultez notre [message sur le forum de la communauté](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)
 
-
+Nous avons soumis ISRG Root X2 aux programmes root de Microsoft, Apple, Google, Mozilla et Oracle pour inclusion. ISRG Root X2 jouit déjà d'une grande confiance grâce à la signature croisée de notre ISRG Root X1. Pour plus d'informations, consultez notre [message sur le forum de la communauté](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).

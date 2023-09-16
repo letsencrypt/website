@@ -22,33 +22,25 @@ menu:
 
 ## තැපැල් ලේඛනය
 
-අපගේ ප්‍රවෘත්තිපත්‍රිකා සඳහා ලියාපදිංචි වීමට, [මෙතැන ඔබන්න.](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
+අපගේ ප්‍රවෘත්තිපත්‍රිකා සඳහා ලියාපදිංචි වීමට, [මෙතැන ඔබන්න.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
 ## ආරක්‍ෂාව
 
 **ඔබගේ පණිවිඩය ලෙට්'ස් එන්ක්‍රිප්ට් හි ආරක්‍ෂක ගැටලුවකට අදාළ වන්නේ නම් මිස මෙම ලිපිනයට ලියන්න එපා.**
 
-<span id="email">වි-තැපෑල: </span>
-
-<script>
-  var parts = ["security", '@', "letsencrypt", ".", "org"];
-  var anchor = document.createElement("a");
-  anchor.href = "mailto:" + parts.join("");
-  anchor.text = parts.join("");
-  document.getElementById("email").appendChild(anchor)
-</script>
+වි-තැපෑල: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### සංකේතාංකිත සන්නිවේදනය
 
 ආරක්‍ෂක කණ්ඩායම සමඟ ආරක්‍ෂිතව සන්නිවේදනයට, කරුණාකර අපගේ ජීපීජී යතුර ප්‍රයෝජනයට ගන්න. එය මාර්ගඅපගත ප්‍රධාන යතුරකින් අත්සන් කරන ලද උප යතුරු කිහිපයකින් සමන්විත වේ. GnuPG හි ඕනෑම මෑත අනුවාදයක් මෙවැනි දෙමුහුන් යතුරකට සහාය දක්වයි. වත්මන් යතුරෙහි ව්යුහය වන්නේ:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
+pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
 ඔබට [ජීපීජී ප්‍රසිද්ධ යතුර](/security_letsencrypt.org-publickey.asc) මෙතැනින් බාගැනීමට හැකිය, හෝ ඔබගේ ප්‍රියතම යතුරු සේවාදායකය ප්‍රයෝජනයට ගන්න.

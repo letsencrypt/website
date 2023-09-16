@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### תכנית רשות אישורים מצד השרת
 
-[Boulder](https://github.com/letsencrypt/boulder) הוא המימוש של Let's Encrypt לרשות אישורים. הוא מבוסס על פרוטוקול [ACME](https://tools.ietf.org/html/rfc8555) וכתוב בעיקר ב־Go. מקום טוב להתחיל בו הוא רשימת [התקלות שמסומנות בתור ‚help wanted’ (דרושה עזרה)](https://github.com/letsencrypt/boulder/labels/help%20wanted) לצד [המדריך למתנדבים](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) הוא המימוש של Let's Encrypt לרשות אישורים. הוא מבוסס על פרוטוקול [ACME](https://tools.ietf.org/html/rfc8555) וכתוב בעיקר ב־Go. מקום טוב להתחיל בו הוא רשימת [התקלות שמסומנות בתור ‚help wanted’ (דרושה עזרה)](https://github.com/letsencrypt/boulder/labels/help%20wanted) לצד [המדריך למתנדבים](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

@@ -28,27 +28,19 @@ menu:
 
 **除非您的消息涉及 Let's Encrypt 的安全問題，否則請勿向此地址發送郵件。**
 
-<span id="email">發送郵件至 </span>
-
-<script>
-  var parts = ["security", '@', "letsencrypt", ".", "org"];
-  var anchor = document.createElement("a");
-  anchor.href = "mailto:" + parts.join("");
-  anchor.text = parts.join("");
-  document.getElementById("email").appendChild(anchor)
-</script>
+發送郵件至 [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### 通訊加密
 
 為了安全地和我們的安全團隊溝通，請使用我們的 GPG 金鑰； 它們是由一個離線的主金鑰簽名後產生的子金鑰。 任何最新版本的 GnuPG 都支持這種混合式金鑰， 目前金鑰的結構為：
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
+pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
 您可以在此處下載 [GPG 公鑰](/security_letsencrypt.org-publickey.asc)，或使用您喜歡的密鑰伺服器。

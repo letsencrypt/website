@@ -11,7 +11,7 @@ Untuk mengetahui metode terbaik untuk anda, anda harus mengetahui apakah anda me
 
 # Dengan Akses *Shell*
 
-Kami merekomendasikan kebanyakan orang dengan akses *shell* untuk menggunakan Klien ACME, [Certbot]. Dia dapat mengotomatisasi penerbitan sertifikat dan memasangnya tanpa *downtime*. Certbot juga memiliki mode *expert* untuk orang-orang yang tidak mau menggunakan konfigurasi otomatis. Mudah digunakan, bekerja pada banyak sistem operasi, dan memiliki dokumentasi yang bagus. [Kunjungi situs Certbot][Certbot] untuk melihat instruksi kostumisasi untuk sistem operasi dan web server anda.
+Kami merekomendasikan kebanyakan orang dengan akses *shell* untuk menggunakan Klien ACME, \[Certbot]. Dia dapat mengotomatisasi penerbitan sertifikat dan memasangnya tanpa *downtime*. Certbot juga memiliki mode *expert* untuk orang-orang yang tidak mau menggunakan konfigurasi otomatis. Mudah digunakan, bekerja pada banyak sistem operasi, dan memiliki dokumentasi yang bagus. [Kunjungi situs Certbot\]\[Certbot\] untuk melihat instruksi kostumisasi untuk sistem operasi dan web server anda.
 
 Jika [Certbot](https://certbot.eff.org/ "Certbot") tidak sesuai dengan kebutuhan anda, atau anda ingin mencoba yang lain, ada [banyak Klien ACME yang dapat anda pilih](/docs/client-options).  Setelah anda memili Klien ACME anda, lihat dokumentasi untuk klien tersebut untuk melanjutkan.
 

@@ -22,33 +22,25 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Mailinglisten
 
-Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51)
+Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
 
 ## Sicherheit
 
 **Bitte schreiben Sie nicht an diese Adresse, es sei denn, Ihre Nachricht betrifft ein Sicherheitsproblem mit Let's Encrypt.**
 
-<span id="email">Email: </span>
-
-<script>
-  var parts = ["security", '@', "letsencrypt", ".", "org"];
-  var anchor = document.createElement("a");
-  anchor.href = "mailto:" + parts.join("");
-  anchor.text = parts.join("");
-  document.getElementById("email").appendChild(anchor)
-</script>
+Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
 
 ### Verschlüsselte Kommunikation
 
 Verwenden Sie unseren GPG-Schlüssel, um sicher mit unserem Sicherheitsteam zu kommunizieren. Er ist durch einen Offline-Master-Schlüssel mit verschiedenen Unterschlüsseln signiert. Jede bestehende Version von GnuPG wird diese Art von Hybrid-Schlüsseln unterstützen. Die derzeitige Schlüsselstruktur ist:
 
 ```
-pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
+pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
       0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
 uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
+sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
+sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
 ```
 
 Sie können den [öffentlichen GPG-Schlüssel](/security_letsencrypt.org-publickey.asc) hier herunterladen, oder Sie verwenden Ihren favorisierten Schlüsselserver.

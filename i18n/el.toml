@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Μια μη κερδοσκοπική αρχή έκδοσης πιστοποιητικών που παρέχει πιστοποιητικά TLS σε <span>260 εκατομμύρια</span> ιστότοπους."
+
+[home_hero_getting_started]
+other = "Ξεκινήστε"
+
+[home_hero_donate]
+other = "Δωρεά"
+
+[home_hero_sponsor]
+other = "Χορηγός"
+
+[home_hero_annual_report]
+other = "Μας απονεμήθηκε το βραβείο Levchin Prize for Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Μάθετε περισσότερα</a>"
+
+[home_major_sponsors]
+other = "Σημαντικοί Χορηγοί και Χρηματοδότες"
+
+[home_from_our_blog]
+other = "Από το blog μας"
+
+[read_more]
+other = "Διαβάστε περισσότερα"
+
+[subscribe_rss]
+other = 'Εγγραφείτε <a href="{{ .Permalink }}">μέσω RSS</a>'
+
+[footer_support_us]
+other = "Υποστηρίξτε έναν πιο ασφαλή και σεβόμενο το απόρρητο Ιστού."
+
+[footer_donate]
+other = "Δωρεά"
+
+[footer_mailing]
+other = "Στείλτε όλα τα μηνύματα ή τις ερωτήσεις σας στη διεύθυνση:"
+
+[footer_policies]
+other = """
+Δείτε την <a href="/privacy/">πολιτική απορρήτου μας</a>.<br>
+Δείτε την <a href="https://www.abetterinternet.org/trademarks">πολιτική εμπορικών σημάτων</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Το Linux Foundation είναι σήμα κατατεθέν του The Linux Foundation. Το Linux είναι σήμα κατατεθέν του Linus Torvalds."
+
+[header_skip_nav]
+other = "Παράλειψη συνδέσμων πλοήγησης"
+
+[last_updated]
+other = "Τελευταία ενημέρωση: "
+
+[see_all_doc]
+other = "Δείτε όλη την τεκμηρίωση"
+
+[blog_feed]
+other = "Let's Encrypt Ροή Ιστολογίου"
+
+[platinum]
+other = "Πλατινένιος"
+
+[gold]
+other = "Χρυσός"
+
+[gold_basic]
+other = "Βασική Χρυσή"
+
+[silver]
+other = "Ασημένιος"
+
+[languages]
+other = "Γλώσσες"
+
+[view_in_english]
+other = "Εμφάνιση στα Αγγλικά"
+
+[old_version]
+other = "Σημείωση: Η Αγγλική έκδοση έχει ενημερωθεί από τη μετάφραση"
+
+[not_yet_translated]
+other = 'Αυτή η ιστοσελίδα δεν έχει μεταφραστεί ακόμα. Μπορείτε να συνεισφέρετε <a href="https://github.com/letsencrypt/website">εδώ</a>.'
+
+[english_is_canonical]
+other = "Η αγγλική έκδοση είναι έγκυρη"
+
+[graph_issued]
+other = "Εκδόθηκε"
+
+[graph_certificates_active]
+other = "Ενεργά Πιστοποιητικά"
+
+[graph_fully_qualified_domains_active]
+other = "Πλήρως Πιστοποιημένοι Τομείς Ενεργοί"
+
+[graph_registered_domains_active]
+other = "Εγγεγραμμένοι Τομείς Ενεργοί"
+
+[graph_active_count]
+other = "Ενεργός Αριθμός"
+
+[graph_issued_per_day]
+other = "Εκδίδεται ανά ημέρα"
+
+[graph_all_users]
+other = "Όλοι οι χρήστες"
+
+[graph_usa_users]
+other = "Χρήστες των ΗΠΑ"
+
+[graph_japan_users]
+other = "Χρήστες στην Ιαπωνία"
+
+[graph_percent_https]
+other = "Ποσοστό φορτώσεων σελίδων μέσω HTTPS (κινούμενος μέσος όρος 14 ημερών)"
+
+[certificate_policy]
+other = "Πολιτική Πιστοποιητικού"
+
+[certificate_transparency_name]
+other = "Όνομα"
+
+[certificate_transparency_role_production]
+other = "Παραγωγή"
+
+[certificate_transparency_role_testing]
+other = "Δοκιμή"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Δημόσιο Κλειδί"
+
+[certificate_transparency_log_id]
+other = "Αναγνωριστικό Καταγραφής"
+
+[certificate_transparency_state]
+other = "Κατάσταση"
+
+[certificate_transparency_window_start]
+other = "Έναρξη Παραθύρου"
+
+[certificate_transparency_window_end]
+other = "Τέλος Παραθύρου"
+
+[certification_practices_statement]
+other = "Δήλωση Πρακτικών Πιστοποίησης"
+
+[overview]
+other = "Επισκόπηση"
+
+[subscriber_information]
+other = "Πληροφορίες Συνδρομητή"
+
+[advanced_subscriber_information]
+other = "Προηγμένες Πληροφορίες Συνδρομητή"
+
+[client_developer_information]
+other = "Πληροφορίες Προγραμματιστή Πελάτη"
+
+[acme_divergences]
+other = "Διαφορές από το τρέχον προσχέδιο ACME"
+
+[acme_divergences_rfc]
+other = "Διαφορές από το ACME RFC"
+
+[onboarding_customers]
+other = "Ενσωμάτωση των πελατών σας με Let's Encrypt και ACME"
+
+[paypal_donate_alt]
+other = "Δωρεά με το κουμπί PayPal"
+
+[paypal_donate_title]
+other = "Δωρεά μέσω PayPal"
+
+[not_found]
+other = "Αυτή η σελίδα δεν υπάρχει, ελέγξτε τη διεύθυνση."
+
+[amount_per_year]
+other = "${{ .nb }}/yr (USD)"
+
+[3y_commitment]
+other = "με τριετή δέσμευση"
+
+[1_99_employees]
+other = "1-99 υπάλληλοι"
+
+[100_999_employees]
+other = "100-999 υπάλληλοι"
+
+[1000_employees]
+other = "1000+ υπάλληλοι"

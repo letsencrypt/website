@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### සේවාදායක පාදක ස.අධි. (CA) මෘදුකාංගය
 
-[බෝල්ඩර්](https://github.com/letsencrypt/boulder) යනු ලෙට්'ස් එන්ක්‍රිප්ට් ස.අධි. (CA) ක්‍රියාවට නැංවීමකි. එය [ACME](https://tools.ietf.org/html/rfc8555) කෙටුම්පත මත පදනම් වන අතර මූලිකව ගෝ භාවිතයෙන් ලියා ඇත. මූලාරම්භයට සුදුසු තැන් ලෙස ['උදව් අවශ්‍ය' ගැටළු](https://github.com/letsencrypt/boulder/labels/help%20wanted) සහ [දායකත්ව මාර්ගෝපදේශය](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md) දැක්වීමට හැකිය.
+[බෝල්ඩර්](https://github.com/letsencrypt/boulder) යනු ලෙට්'ස් එන්ක්‍රිප්ට් ස.අධි. (CA) ක්‍රියාවට නැංවීමකි. එය [ACME](https://tools.ietf.org/html/rfc8555) කෙටුම්පත මත පදනම් වන අතර මූලිකව ගෝ භාවිතයෙන් ලියා ඇත. මූලාරම්භයට සුදුසු තැන් ලෙස ['උදව් අවශ්‍ය' ගැටළු](https://github.com/letsencrypt/boulder/labels/help%20wanted) සහ [දායකත්ව මාර්ගෝපදේශය](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md) දැක්වීමට හැකිය.
 
 ### letsencrypt.org
 

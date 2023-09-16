@@ -45,6 +45,6 @@ show_lastmod: 1
 
 你可以透過使用 localhost.crt 和 localhost.key 設定本地網頁伺服器，並在將 localhost.crt 安裝到受信任的本地根憑證中。
 
-如果你想要更真實的本地端憑證，你可以使用 [minica](https://github.com/jsha/minica) 產生你的本地根憑證，並利用它頒發終端憑證（子葉憑證）。 你就可以引入根憑證而不是引入自簽的終端憑證。
+如果你想要更真實的本地端憑證，你可以使用 [minica]](https://github.com/jsha/minica) 產生你的本地根憑證，並利用它頒發終端憑證（子葉憑證）。 你就可以引入根憑證而不是引入自簽的終端憑證。
 
 你也可以透過 /etc/hosts 將 `www.localhost` 設定為 `127.0.0.1` 的別名。 這會讓瀏覽器儲存 cookie 的方式有一點改變。

@@ -11,7 +11,7 @@ other = "Spenden"
 other = "Sponsern"
 
 [home_hero_annual_report]
-other = "Lesen Sie unseren <a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>Jahresbericht 2021</a>"
+other = "Wir wurden mit dem Levchin-Preis für echte Kryptografie ausgezeichnet! <a href='https://abetterinternet.org/levchin-prize'>Mehr erfahren</a>"
 
 [home_major_sponsors]
 other = "Hauptsponsoren und Spender"
@@ -36,8 +36,11 @@ other = "Senden Sie alle Briefe oder Anfragen an:"
 
 [footer_policies]
 other = """
-Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="https://www.abetterinternet.org/trademarks/">Markenbestimmungen</a>.
+Lesen Sie unsere <a href="/privacy/">Datenschutzerklärung</a>.<br> Lesen Sie unsere <a href="/trademarks/">Markenbestimmungen</a>.
 """
+
+[linux_foundation_trademark]
+other = "Linux Foundation ist eine registrierte Marke der Linux Foundation. Linux ist eine registrierte Marke von Linus Torvalds."
 
 [header_skip_nav]
 other = "Navigation überspringen"

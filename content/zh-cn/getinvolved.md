@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### 服务器端证书签发软件
 
-Let's Encrypt 的证书签发过程由 [Boulder](https://github.com/letsencrypt/boulder) 实现。 该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议，主要使用 Go 语言编写。 [标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)都是一个很好的起点。
+Let's Encrypt 的证书签发过程由 [Boulder](https://github.com/letsencrypt/boulder) 实现。 该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议，主要使用 Go 语言编写。 [标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)都是一个很好的起点。
 
 ### letsencrypt.org
 

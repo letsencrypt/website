@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Voittoa tavoittelematon varmenteita myöntävä organisaatio, joka antaa TLS-sertifikaatin <span>260 miljoonalle</span> verkkosivulle."
+other = "Voittoa tavoittelematon varmennemyöntäjä, joka tarjoaa TLS-sertifikaatteja <span>260 miljoonalle</span> verkkosivustolle."
 
 [home_hero_getting_started]
 other = "Aloita"
@@ -11,7 +11,7 @@ other = "Lahjoita"
 other = "Sponsoroi"
 
 [home_hero_annual_report]
-other = "Lue vuoden 2020 <a href='https://www.abetterinternet.org/annual-reports/'>vuosittainen raportti</a>"
+other = "Meille myönnettiin Levchin-palkinto reaalimaailman salauksesta! <a href='https://abetterinternet.org/levchin-prize'>Lue lisää</a>"
 
 [home_major_sponsors]
 other = "Merkittävät sponsorit ja rahoittajat"
@@ -20,10 +20,10 @@ other = "Merkittävät sponsorit ja rahoittajat"
 other = "Blogistamme"
 
 [read_more]
-other = "Lisätietoja"
+other = "Lue lisää"
 
 [subscribe_rss]
-other = 'Tilaa <a href="{{ .Permalink }}">RSS:n kautta</a>'
+other = 'Tilaa <a href="{{ .Permalink }}">RSS-syötteenä</a>'
 
 [footer_support_us]
 other = "Tue turvallisempaa ja yksityisyyttä arvostavampaa verkkoa."
@@ -36,9 +36,12 @@ other = "Lähetä kaikki sähköpostit tai tiedustelut osoitteeseen:"
 
 [footer_policies]
 other = """
-Katso <a href="/privacy/">yksityisyyskäytäntömme</a>.<br>
-Katso <a href="https://www.abetterinternet.org/trademarks">tavaramerkkikäytäntömme</a>.
+Tutustu <a href="/privacy/">tietosuojakäytäntöömme</a>.<br>
+Tutustu <a href="https://www.abetterinternet.org/trademarks">tavaramerkkikäytäntöömme</a>.
 """
+
+[linux_foundation_trademark]
+other = "Linux Foundation on Linux Foundationin rekisteröity tavaramerkki. Linux on Linus Torvaldsin rekisteröity tavaramerkki."
 
 [header_skip_nav]
 other = "Ohita navigointilinkit"
@@ -50,7 +53,7 @@ other = "Viimeksi päivitetty: "
 other = "Näytä koko dokumentaatio"
 
 [blog_feed]
-other = "Let's Encryptin blogisyöte"
+other = "Let's Encrypt -blogin syöte"
 
 [platinum]
 other = "Platina"
@@ -68,19 +71,16 @@ other = "Hopea"
 other = "Kielet"
 
 [view_in_english]
-other = "Näytä englanninkielisenä"
-
-[view_in_xxx]
-other = "Katso suomeksi"
+other = "Näytä englanniniksi"
 
 [old_version]
-other = "Huomaa: Englanninkielistä versiota on päivitetty käännöksen jälkeen."
+other = "Huomioi: Englanninkielinen versio on muuttunut käännöksen jälkeen"
 
 [not_yet_translated]
 other = 'Tätä verkkosivua ei ole vielä käännetty. Voit osallistua <a href="https://github.com/letsencrypt/website">täällä</a>.'
 
 [english_is_canonical]
-other = "Englanninkielinen versio on arvovaltainen"
+other = "Englanninkielinen versio on määräävä"
 
 [graph_issued]
 other = "Myönnetty"
@@ -131,16 +131,16 @@ other = "URI"
 other = "Julkinen avain"
 
 [certificate_transparency_log_id]
-other = "Lokin tunnus"
+other = "Kirjaustunniste"
 
 [certificate_transparency_state]
-other = "Valtio"
+other = "Tila"
 
 [certificate_transparency_window_start]
-other = "Ikkunan Aloitus"
+other = "Aikajakson alku"
 
 [certificate_transparency_window_end]
-other = "Ikkunan Päättymä"
+other = "Aikajakson loppu"
 
 [certification_practices_statement]
 other = "Sertifiointikäytäntöjä koskeva lausuma"
@@ -176,7 +176,7 @@ other = "Lahjoita PayPalilla"
 other = "Sivua ei ole olemassa, tarkista osoite."
 
 [amount_per_year]
-other = "{{ .nb }} $ (USD) per vuosi"
+other = "{{ .nb }} $ (USD) vuodessa"
 
 [3y_commitment]
 other = "kolmen vuoden sitoumuksella"
@@ -185,7 +185,7 @@ other = "kolmen vuoden sitoumuksella"
 other = "1-99 työntekijää"
 
 [100_999_employees]
-other = "100–999 työntekijää"
+other = "100-999 työntekijää"
 
 [1000_employees]
 other = "1000+ työntekijää"
