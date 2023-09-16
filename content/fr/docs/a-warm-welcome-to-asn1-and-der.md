@@ -1,6 +1,6 @@
 ---
 title: Bienvenue à l'ASN.1 et au DER
-slug: un-accueil-chaleureux-a-asn1-et-der
+slug: a-warm-welcome-to-asn1-and-der
 top_graphic: 1
 date: 2020-04-23
 lastmod: 2021-03-21
@@ -467,7 +467,7 @@ En développant cela, on obtient -2<sup>15</sup> + 2<sup>14</sup> + 2<sup>13</
 
 Il s'agit d'une transformation générique : Pour tout nombre négatif codé en BER (ou DER), vous pouvez le préfixer avec 11111111 et obtenir le même nombre. Cela s'appelle [l'extension du signe](https://andybargh.com/binary-sign-extension/). Ou, de manière équivalente, s'il existe un nombre négatif dont le codage de la valeur commence par 11111111, vous pouvez supprimer cet octet et obtenir le même nombre. Par conséquent, BER et DER utilisent le codage le plus court.
 
-Le codage en complément à deux des INTEGR a un [impact réel sur la délivrance des certificats](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758) : la RFC 5280 exige que les numéros de série soient positifs. Comme le premier bit est toujours un bit de signe, cela signifie que les numéros de série codés en DER sur 8 octets peuvent avoir une longueur maximale de 63 bits. Le codage d'un numéro de série positif de 64 bits nécessite une valeur codée de 9 octets (le premier octet étant zéro).
+Le codage en complément à deux des INTEGER a un [impact réel sur la délivrance des certificats](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758) : la RFC 5280 exige que les numéros de série soient positifs. Comme le premier bit est toujours un bit de signe, cela signifie que les numéros de série codés en DER sur 8 octets peuvent avoir une longueur maximale de 63 bits. Le codage d'un numéro de série positif de 64 bits nécessite une valeur codée de 9 octets (le premier octet étant zéro).
 
 Voici le codage d'un INTEGER avec la valeur 2<sup>63</sup>+1 (qui se trouve être un nombre positif de 64 bits) :
 
