@@ -81,7 +81,7 @@ Vi behandler personoplysninger som beskrevet i denne politik. Formålet med og r
 
 **Lov grundlag:** Aftalegrundlag, legitime interesser
 
-<strong x-id"1">Yderligere oplysnigner</strong>: Vi kan også videregive oplysninger om kontogendannelse, når vi har en god tro opfattelse af, at det er nødvendigt at forhindre tab af liv, personskade, skade på ejendom eller betydelig økonomisk skade.
+**Yderligere oplysnigner**: Vi kan også videregive oplysninger om kontogendannelse, når vi har en god tro opfattelse af, at det er nødvendigt at forhindre tab af liv, personskade, skade på ejendom eller betydelig økonomisk skade.
 
 Bemærk venligst, at vi muligvis ikke kan slette oplysninger, herunder IP-adresser da disse oplysninger er nødvendige for andre at stole på i at fastslå pålideligheden af vores certifikater. I nogle tilfælde kan vi behandle personoplysninger i henhold til lovpligtig forpligtelse eller beskytte dine vitale interesser eller en anden persons interesser.
 

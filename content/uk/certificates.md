@@ -45,17 +45,16 @@ IdenTrust підписав наші проміжні продукти RSA для
 * Активність
   * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
     * [підписаний  ISRG коренем X1 ](https://crt.sh/?id=3334561879)[](/certs/lets-encrypt-r3.der)[](/certs/lets-encrypt-r3.pem)[](/certs/lets-encrypt-r3.txt)
-    * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778542)[](/certs/lets-encrypt-r3-cross-signed.der)
-[](/certs/lets-encrypt-r3-cross-signed.txt) На пенсії</li> </ul></li> </ul></li> 
+    * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (На пенсії)
+* Активна, обмежена доступність
+  * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`)
+    * [підписаний ISRG коренем Х2](https://crt.sh/?id=3334671964)[der](/certs/lets-encrypt-e1.der)[pem](/certs/lets-encrypt-e1.pem)[txt](/certs/lets-encrypt-e1.txt)
+* Резервне копіювання
+  * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`)
+    * [підписаний ISRG корінь Х1](https://crt.sh/?id=3334561877)[der](/certs/lets-encrypt-r4.der)[pem](/certs/lets-encrypt-r4.pem)
+[txt](/certs/lets-encrypt-r4.txt)</li> 
       
-      * Активна, обмежена доступність 
-    * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`) 
-        * [підписаний ISRG коренем Х2](https://crt.sh/?id=3334671964)[der](/certs/lets-encrypt-e1.der)[pem](/certs/lets-encrypt-e1.pem)[txt](/certs/lets-encrypt-e1.txt)
-* Резервне копіювання 
-    * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`) 
-        * [підписаний ISRG корінь Х1](https://crt.sh/?id=3334561877)[der](/certs/lets-encrypt-r4.der)[pem](/certs/lets-encrypt-r4.pem)[txt](/certs/lets-encrypt-r4.txt)</li> 
-      
-          * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778543)[der](/certs/lets-encrypt-r4-cross-signed.der)[pem](/certs/lets-encrypt-r4-cross-signed.pem)[txt](/certs/lets-encrypt-r4-cross-signed.txt) (На пенсії)</ul></li> 
+          * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778543):[der](/certs/lets-encrypt-r4-cross-signed.der),[pem](/certs/lets-encrypt-r4-cross-signed.pem),[txt](/certs/lets-encrypt-r4-cross-signed.txt) (На пенсії)</ul></li> 
 
   * Let's Encrypt E2 (`ECDSA P-384, O = Let's Encrypt, CN = E2`) 
         * [підписаний ISRG коренем Х2](https://crt.sh/?id=3334671963)[der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)</ul></li> 

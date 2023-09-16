@@ -12,32 +12,27 @@ Kun hankit varmenteen Let's Encryptiltä, ​​palvelimemme vahvistavat, että 
 
 # HTTP-01-haaste
 
-Tämä on yleisin tämänpäiväinen haaste. Let's Encrypt antaa tunnuksen ACME-asiakkaallesi, ja ACME-asiakassi asettaa tiedoston verkkopalvelimellesi `http://&lt;YOUR_DOMAIN&gt;/.well-known/acme-challenge/&lt;TOKEN&gt;</code. >:ssa. Tuo tiedosto sisältää tunnuksen sekä tilisi avaimen peukalonjäljen. Kun ACME-asiakkaasi kertoo Let's Encryptille, että tiedosto on valmis, Let's Encrypt yrittää noutaa sen (mahdollisesti useita kertoja useista näkökulmista). Jos vahvistustarkistuksemme saavat oikeat vastaukset verkkopalvelimeltasi, validointi katsotaan onnistuneeksi ja voit jatkaa varmenteen myöntämistä. Jos vahvistustarkastukset epäonnistuvat, sinun on yritettävä uudelleen uudella varmenteella.</p>
+Tämä on yleisin tämänpäiväinen haaste. Let's Encrypt antaa tunnuksen ACME-asiakkaallesi, ja ACME-asiakassi asettaa tiedoston verkkopalvelimellesi `http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`. Tuo tiedosto sisältää tunnuksen sekä tilisi avaimen peukalonjäljen. Kun ACME-asiakkaasi kertoo Let's Encryptille, että tiedosto on valmis, Let's Encrypt yrittää noutaa sen (mahdollisesti useita kertoja useista näkökulmista). Jos vahvistustarkistuksemme saavat oikeat vastaukset verkkopalvelimeltasi, validointi katsotaan onnistuneeksi ja voit jatkaa varmenteen myöntämistä. Jos vahvistustarkastukset epäonnistuvat, sinun on yritettävä uudelleen uudella varmenteella.
 
-<p spaces-before="0">HTTP-01-haasteen toteutuksemme seuraa uudelleenohjauksia, jopa kymmenen uudelleenohjausta. Se hyväksyy vain uudelleenohjaukset "http:": een ja "https:": een, ja vain portteihin 80 ja 443. Se ei hyväksy uudelleenohjauksia IP-osoitteisiin. Kun se ohjataan uudelleen HTTPS-URL: een, se ei vahvista varmenteita (koska tämä haaste on tarkoitettu kelvollisten varmenteiden käynnistämiseen, se saattaa kohdata itse-allekirjoitettuja tai vanhentuneita varmenteita matkan varrella).</p>
+HTTP-01-haasteen toteutuksemme seuraa uudelleenohjauksia, jopa kymmenen uudelleenohjausta. Se hyväksyy vain uudelleenohjaukset "http:": een ja "https:": een, ja vain portteihin 80 ja 443. Se ei hyväksy uudelleenohjauksia IP-osoitteisiin. Kun se ohjataan uudelleen HTTPS-URL: een, se ei vahvista varmenteita (koska tämä haaste on tarkoitettu kelvollisten varmenteiden käynnistämiseen, se saattaa kohdata itse-allekirjoitettuja tai vanhentuneita varmenteita matkan varrella).
 
-<p spaces-before="0">HTTP-01-haaste voidaan suorita ainoastaan portissa 80. Asiakkaiden salliminen määrittää mielivaltaisia ​​portteja tekisi haasteesta vähemmän turvallisen, joten ACME-standardi ei salli sitä.</p>
+HTTP-01-haaste voidaan suorita ainoastaan portissa 80. Asiakkaiden salliminen määrittää mielivaltaisia ​​portteja tekisi haasteesta vähemmän turvallisen, joten ACME-standardi ei salli sitä.
 
-<p spaces-before="0">Hyödyt:</p>
+Hyödyt:
 
-<ul>
-<li>Se on helppo automatisoida ilman lisätietoa toimialueen kokoonpanosta.</li>
-<li>Sen avulla isännöintipalveluntarjoajat voivat myöntää niille CNAMEd-toimialueille soveltuvia varmenteita.</li>
-<li>Se toimii valmiiden verkkopalvelimien kanssa.</li>
-</ul>
+ - Se on helppo automatisoida ilman lisätietoa toimialueen kokoonpanosta.
+ - Sen avulla isännöintipalveluntarjoajat voivat myöntää niille CNAMEd-toimialueille soveltuvia varmenteita.
+ - Se toimii valmiiden verkkopalvelimien kanssa.
 
-<p spaces-before="0">Haitat:</p>
+Haitat:
 
-<ul>
-<li>Se ei toimi, jos Internet-palveluntarjoajasi estää portin 80 (tämä on harvinaista, mutta jotkut kotimaiset Internet-palveluntarjoajat tekevät tämän).</li>
-<li>Let's Encrypt ei anna sinun käyttää tätä haastetta jokerimerkkivarmenteiden myöntämiseen.</li>
-<li>Jos sinulla on useita verkkopalvelimia, sinun on varmistettava, että tiedosto on saatavilla näissä kaikissa.</li>
-</ul>
+ - Se ei toimi, jos Internet-palveluntarjoajasi estää portin 80 (tämä on harvinaista, mutta jotkut kotimaiset Internet-palveluntarjoajat tekevät tämän).
+ - Let's Encrypt ei anna sinun käyttää tätä haastetta jokerimerkkivarmenteiden myöntämiseen.
+ - Jos sinulla on useita verkkopalvelimia, sinun on varmistettava, että tiedosto on saatavilla näissä kaikissa.
 
-<h1 spaces-before="0">DNS-01-haaste</h1>
+# DNS-01-haaste
 
-<p spaces-before="0">Tämä haaste pyytää sinua todistamaan, että hallitset toimialueesi DNS: ää asettamalla tietyn arvon TXT-tietueeseen kyseisen toimialueen nimen alle. Se on vaikeampi määrittää kuin HTTP-01, mutta se voi toimia skenaarioissa, joissa HTTP-01 ei pysty. Sen avulla voit myös myöntää jokerimerkkivarmenteita.
-Kun Let's Encrypt on antanut ACME-asiakkaallesi tunnuksen, asiakkaasi luo TXT-tietueen, joka on johdettu kyseisestä tunnuksesta ja tiliavaimesta, ja asettaa tietueen <code>_acme-challenge.<YOUR_DOMAIN>`:een. Sitten Let's Encrypt kysyy DNS-järjestelmältä tätä tietuetta. Jos se löytää osuman, voit jatkaa varmenteen myöntämistä!
+Tämä haaste pyytää sinua todistamaan, että hallitset toimialueesi DNS: ää asettamalla tietyn arvon TXT-tietueeseen kyseisen toimialueen nimen alle. Se on vaikeampi määrittää kuin HTTP-01, mutta se voi toimia skenaarioissa, joissa HTTP-01 ei pysty. Sen avulla voit myös myöntää jokerimerkkivarmenteita. Kun Let's Encrypt on antanut ACME-asiakkaallesi tunnuksen, asiakkaasi luo TXT-tietueen, joka on johdettu kyseisestä tunnuksesta ja tiliavaimesta, ja asettaa tietueen `_acme-challenge.<YOUR_DOMAIN>`:een. Sitten Let's Encrypt kysyy DNS-järjestelmältä tätä tietuetta. Jos se löytää osuman, voit jatkaa varmenteen myöntämistä!
 
 Koska myöntämisen ja uusimisen automatisointi on todella tärkeää, DNS-01-haasteiden käyttäminen on järkevää vain, jos DNS-palveluntarjoajallasi on API, jolla voit automatisoida päivitykset. Yhteisömme on aloittanut [luettelon tällaisista DNS-palveluntarjoajista täällä](https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438). DNS-palveluntarjoajasi voi olla sama kuin rekisteröijäsi (yritys, jolta ostit verkkotunnuksesi), tai se voi olla erilainen. Jos haluat vaihtaa DNS-palveluntarjoajaasi, sinun tarvitsee vain tehdä pieniä muutoksia rekisterinpitäjässäsi. Sinun ei tarvitse odottaa verkkotunnuksesi vanhenemista.
 
