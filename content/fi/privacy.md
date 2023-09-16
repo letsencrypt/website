@@ -89,12 +89,12 @@ Henkilötietojasi voidaan kerätä tai siirtää lainkäyttöalueilta, joilla me
 
 Euroopan talousalueella (ETA) sijaitsevilla henkilöillä on tiettyjä henkilökohtaisia tietojaan koskevia oikeuksia, mukaan lukien oikeus käyttää, korjata tai poistaa henkilötietoja, joita käsittelemme käyttäessäsi sivustojamme ja palveluitamme. Jos olet henkilö, joka on luottava osapuoli, tilaaja tai vierailija, joka sijaitsee ETA-alueella, voit:
 
-- Pyydä henkilökohtainen tietojen raportti lähettämällä meille sähköpostia security@letsencrypt.org:een. Tämä raportti sisältää henkilötiedot, joita meillä on sinusta ja jotka toimitetaan sinulle jäsennellyssä, yleisesti käytettävässä ja kannettavassa muodossa. Huomioithan, että voimme pyytää sinulta lisätietoja henkilöllisyytesi vahvistamiseksi ennen kuin luovutamme mitään tietoja.
+- Pyydä henkilökohtainen tietojen raportti lähettämällä meille sähköpostia privacy@abetterinternet.org:een. Tämä raportti sisältää henkilötiedot, joita meillä on sinusta ja jotka toimitetaan sinulle jäsennellyssä, yleisesti käytettävässä ja kannettavassa muodossa. Huomioithan, että voimme pyytää sinulta lisätietoja henkilöllisyytesi vahvistamiseksi ennen kuin luovutamme mitään tietoja.
 
-- Pyydä tietojen korjaamista tai poistamista ottamalla meihin yhteyttä security@letsencrypt.org:een.
+- Pyydä tietojen korjaamista tai poistamista ottamalla meihin yhteyttä privacy@abetterinternet.org:een.
 
 - Vastusta meille tietojasi käsittelystä. Voit pyytää meitä lopettamaan tietojesi käytön, myös silloin, kun käytämme tietojasi lähettääksemme sinulle sähköpostia. Voit peruuttaa suostumuksesi vastaanottaa palvelusähköposteja milloin tahansa klikkaamalla "lopeta tilaus" -linkkiä, joka löytyi Let's Encrypt -sähköposteista.
 
 - Valitus sääntelyviranomaiselle. Jos asut ETA:ssa ja ajattelet, että emme ole noudattaneet tietosuojalakeja, sinulla on oikeus tehdä valitus paikalliselle valvontaviranomaisellesi.
 
-Saadaksesi lisätietoja tai ilmoittaaksesi tietosuojaongelmasta, ota yhteyttä: security@letsencrypt.org:een.
+Saadaksesi lisätietoja tai ilmoittaaksesi tietosuojaongelmasta, ota yhteyttä: privacy@abetterinternet.org:een.

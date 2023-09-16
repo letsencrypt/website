@@ -25,7 +25,7 @@ Chúng ta cũng có thể sử dụng trợ giúp về phát triển phần mề
 
 ### Phần mềm CA phía máy chủ
 
-[Boulder](https://github.com/letsencrypt/boulder) là triển khai Let's Encrypt CA. Nó dựa trên giao thức [ACME](https://tools.ietf.org/html/rfc8555) và được viết chủ yếu bằng ngôn ngữ Go. Một nơi tuyệt vời để bắt đầu là với danh sách [các vấn đề 'cần trợ giúp'](https://github.com/letsencrypt/boulder/labels/help%20wanted) và [hướng dẫn dành cho cộng tác viên](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) là triển khai Let's Encrypt CA. Nó dựa trên giao thức [ACME](https://tools.ietf.org/html/rfc8555) và được viết chủ yếu bằng ngôn ngữ Go. Một nơi tuyệt vời để bắt đầu là với danh sách [các vấn đề 'cần trợ giúp'](https://github.com/letsencrypt/boulder/labels/help%20wanted) và [hướng dẫn dành cho cộng tác viên](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

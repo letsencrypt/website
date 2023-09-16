@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### サーバーサイドの CA ソフトウェア
 
-[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。 Boulder は [ACME](https://tools.ietf.org/html/rfc8555) プロトコルに基づいており、主に Go 言語で書かれています。 コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)も忘れずに読んでください。
+[Boulder](https://github.com/letsencrypt/boulder) は、Let's Encrypt CA の実装です。 Boulder は [ACME](https://tools.ietf.org/html/rfc8555) プロトコルに基づいており、主に Go 言語で書かれています。 コントリビューションを行うには、['help wanted' のラベルがついた issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) から始めるのがおすすめです。コントリビューションを行う際には、[コントリビューター・ガイド](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)も忘れずに読んでください。
 
 ### letsencrypt.org
 

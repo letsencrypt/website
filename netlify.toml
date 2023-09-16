@@ -156,12 +156,6 @@ status = 404
 force = false
 
 [[redirects]]
-from = "/el/*"
-to = "/el/404.html"
-status = 404
-force = false
-
-[[redirects]]
 from = "/fr/*"
 to = "/fr/404.html"
 status = 404
@@ -192,12 +186,6 @@ status = 404
 force = false
 
 [[redirects]]
-from = "/pl/*"
-to = "/pl/404.html"
-status = 404
-force = false
-
-[[redirects]]
 from = "/pt-br/*"
 to = "/pt-br/404.html"
 status = 404
@@ -218,18 +206,6 @@ force = false
 [[redirects]]
 from = "/sv/*"
 to = "/sv/404.html"
-status = 404
-force = false
-
-[[redirects]]
-from = "/ta/*"
-to = "/ta/404.html"
-status = 404
-force = false
-
-[[redirects]]
-from = "/th/*"
-to = "/th/404.html"
 status = 404
 force = false
 

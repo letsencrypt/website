@@ -1,8 +1,10 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
 [home_hero_title]
 other = "Nezisková certifikační autorita poskytující certifikáty TLS pro <span>300 milionů</span> webových stránek."
 
 [home_hero_getting_started]
-other = "Začít"
+other = "Začínáme"
 
 [home_hero_donate]
 other = "Přispět"
@@ -11,22 +13,22 @@ other = "Přispět"
 other = "Sponzorovat"
 
 [home_hero_annual_report]
-other = "Získali jsme Levchin Prize za Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Více info</a>"
+other = "Přečtěte si vše o naší letošní práci pro neziskové organizace v naší <a href='https://abetterinternet.org/annual-reports/'>Výroční zprávě za rok 2022</a>."
 
 [home_major_sponsors]
-other = "Důležití sponzoři a investoři"
+other = "Hlavní sponzoři a přispěvatelé"
 
 [home_from_our_blog]
 other = "Z našeho blogu"
 
 [read_more]
-other = "Zobrazit více"
+other = "Více"
 
 [subscribe_rss]
-other = 'Odebírat <a href="{{ .Permalink }}">přes RSS</a>'
+other = "Přihlásit <a href=\"{{ .Permalink }}\">přes RSS</a>"
 
 [footer_support_us]
-other = "Podpořte bezpečnější web, který respektuje soukromí."
+other = "Podpora bezpečnějšího webu respektujícího soukromí."
 
 [footer_donate]
 other = "Přispět"
@@ -36,36 +38,36 @@ other = "Veškerou poštu nebo dotazy zasílejte na:"
 
 [footer_policies]
 other = """
-Zobrazit naše <a href="/privacy/">zásady ochrany osobních údajů</a>.<br>
-Zobrazit naše <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranných známek</a>.
+View our <a href="/privacy/">zásady ochrany osobních ú</a>.<br>
+View our <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranných známek</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation je registrovaná známka The Linux Foundation. Linux je registorvaná známka Linuse Torvaldse."
-
 [header_skip_nav]
-other = "Přeskočit odkazy navigace"
+other = "Přeskočit navigační "
 
 [last_updated]
-other = "Poslední úprava: "
+other = "Poslední update: "
 
 [see_all_doc]
-other = "Zobrazit celou dokumentaci"
+other = "Zobrazit všechny dokumenty"
 
 [blog_feed]
 other = "Let's Encrypt Blog Feed"
 
+[diamond]
+other = "Diamantový"
+
 [platinum]
-other = "Platinová"
+other = "Platinový"
 
 [gold]
-other = "Zlatá"
+other = "Zlatý"
 
 [gold_basic]
-other = "Zlatá základní"
+other = "Zlatý základ"
 
 [silver]
-other = "Stříbrná"
+other = "Stříbrný"
 
 [languages]
 other = "Jazyky"
@@ -74,10 +76,10 @@ other = "Jazyky"
 other = "Zobraz v angličtině"
 
 [old_version]
-other = "Poznámka: Anglická verze byla od překladu aktualizována"
+other = "Poznámka: Anglická verze byla od překladu aktualizována."
 
 [not_yet_translated]
-other = 'Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href="https://github.com/letsencrypt/website">zde</a>.'
+other = "Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href=\"https://github.com/letsencrypt/website\">zde</a>."
 
 [english_is_canonical]
 other = "Anglická verze je směrodatná"
@@ -134,13 +136,13 @@ other = "Veřejný klíč"
 other = "Log ID"
 
 [certificate_transparency_state]
-other = "Stav"
+other = "Stát"
 
 [certificate_transparency_window_start]
-other = "Začátek okna"
+other = "Okno startuje"
 
 [certificate_transparency_window_end]
-other = "Konec okna"
+other = "Okno končéí"
 
 [certification_practices_statement]
 other = "Prohlášení o certifikačních postupech"
@@ -166,16 +168,19 @@ other = "Rozdíly oproti ACME RFC"
 [onboarding_customers]
 other = "Onboarding vašich zákazníků pomocí Let's Encrypt a ACME"
 
+# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+
 [paypal_donate_alt]
-other = "tlačítko Přispět přes PayPal"
+other = "Přispějte pomocí tlačítka Paypal"
 
 [paypal_donate_title]
-other = "Přispět přes PayPal"
+other = "Přispějte pomocí PayPal"
 
 [not_found]
-other = "Tato stránka neexistuje, zkontrolujte prosím zadanou adresu."
+other = "Tato stránka neexistuje, zkontrolujte prosím adresu."
 
 [amount_per_year]
+# Ex. $10.000/yr (USD)
 other = "${{ .nb }}/rok (USD)"
 
 [3y_commitment]
@@ -189,3 +194,9 @@ other = "100-999 zaměstnanců"
 
 [1000_employees]
 other = "1000+ zaměstnanců"
+
+[subscribe_to_newsletter_headline]
+other = "Přihlaste se k odběru našeho newsletteru"
+
+[site_banner_text]
+other = "Společnost ISRG už 10 let pomáhá budovat lepší internet →"
