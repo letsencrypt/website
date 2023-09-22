@@ -61,7 +61,7 @@ INTEGER
 字符串
 -------
 
-ASN.1 有很多字符串类型：BMPString、GeneralString、GraphicString、IA5String、ISO646String、NumericString、PrintableString、TeletexString、T61String、UniversalString、UTF8String、VideotexString，还有 VisibleString。 对于 HTTPS 证书来说基本只需要关心 PrintableString、UTF8String 和 [IA5String](https://en.wikipedia.org/wiki/IA5STRING)。 一个字段使用的字符串类型与该字段本身共同定义于 ASN.1 模块中。 [例如](https://tools.ietf.org/html/rfc5280#page-127)：
+ASN.1 有很多字符串类型：BMPString、GeneralString、GraphicString、IA5String、ISO646String、NumericString、PrintableString、TeletexString、T61String、UniversalString、UTF8String、VideotexString，还有 VisibleString。 对于 HTTPS 证书来说基本只需要关心 PrintableString、UTF8String 和 [IA5String](https://en.wikipedia.org/wiki/IA5STRING)。 ASN.1 模块定义字段的时候也会定义其应当使用的字符串类型。 [例如](https://tools.ietf.org/html/rfc5280#page-127)：
 
 ```
 CPSuri ::= IA5String
