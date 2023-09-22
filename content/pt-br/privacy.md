@@ -25,7 +25,7 @@ Se você é um assinante, está solicitando um certificado confiável do Let's E
 
 Precisamos conseguir demonstrar ao público. Incluindo aqueles que dependem da credibilidade dos nossos certificados, que os nossos serviços funcionam como esperado. Como resultado, podemos não ser capazes de excluir informações, incluindo endereços IP. Essa informação pode ser tornada pública de várias formas, incluindo através de API pública, repositórios públicos e/ou discussões públicas.
 
-Você pode ter a opção de fornecer informações de contato, como o seu endereço de e-mail, para o serviço de conta e para fins de recuperação. Suas informações de contato não serão tornadas públicas, e serão compartilhadas apenas por "Aplicação da Lei e Prolongamento de Circunstâncias" abaixo. Ao fornecer seu endereço de e-mail, você está consentindo em receber notícias relacionadas ao serviço. Você pode cancelar a assinatura de e-mails relacionados ao serviço a qualquer momento, clicando no link "cancelar a assinatura" na parte inferior de nossos e-mails ou entrando em contato conosco em privacy@abetterinternet.org. Não utilizaremos suas informações de contato para marketing ou fins promocionais.
+Você pode ter a opção de fornecer informações de contato, como o seu endereço de e-mail, para o serviço de conta e para fins de recuperação. Suas informações de contato não serão tornadas públicas, e serão compartilhadas apenas por "Aplicação da Lei e Prolongamento de Circunstâncias" abaixo. Ao fornecer seu endereço de e-mail, você está consentindo em receber notícias relacionadas ao serviço. Você pode cancelar a assinatura de e-mails relacionados ao serviço a qualquer momento, clicando no link "cancelar a assinatura" na parte inferior de nossos e-mails ou entrando em contato conosco em security@letsencrypt.org. Não utilizaremos suas informações de contato para marketing ou fins promocionais.
 
 Você pode precisar baixar um software de cliente de um repositório como o Debian, Ubuntu, Red Hat ou Github. Sua interação com tal repositório de software é regida pela própria política de privacidade e/ou termos de uso do repositório.
 
@@ -89,7 +89,7 @@ Seus dados pessoais podem ser coletados ou transferidos para jurisdições, onde
 
 Os indivíduos localizados no Espaço Econômico Europeu (EEE) têm certos direitos no que se refere à sua informação pessoal. incluindo o direito de acessar, corrigir ou excluir dados pessoais que processamos por meio de seu uso de nossos sites e serviços. Se você é um usuário autenticado, assinante ou visitante baseado no EEE, você pode:
 
-- Solicitar um relatório de dados pessoais enviando um e-mail para privacy@abetterinternet.org. Este relatório incluirá os dados pessoais que temos sobre você, fornecido a você em um formato estruturado, comumente usado e portátil. Por favor, note que podemos solicitar informações adicionais de você para verificar sua identidade antes de divulgarmos qualquer informação.
+- Solicitar um relatório de dados pessoais enviando um e-mail para security@letsencrypt.org. Este relatório incluirá os dados pessoais que temos sobre você, fornecido a você em um formato estruturado, comumente usado e portátil. Por favor, note que podemos solicitar informações adicionais de você para verificar sua identidade antes de divulgarmos qualquer informação.
 
 - Peça que a sua informação seja corrigida ou excluída, entrando em contato conosco pelo email security@letcrypt.org.
 

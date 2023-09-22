@@ -14,7 +14,7 @@ Let's Encrypt는 공공의 이익을 위해 실행되는 무료, 자동화된 �
 
 웹 사이트에 대해 SSL/TLS(HTTPS)를 가장 사용자 친화적인 방법으로 무료로 활성화하기 위해 필요한 디지털 인증서를 제공합니다. 우리는 더 안전하고 프라이버시를 존중하는 웹을 만들고 싶기 때문에 이 작업을 합니다.
 
-[연간 보고서](https://www.abetterinternet.org/annual-reports/)를 내려받아서 최근 연도의 정보를 열람할 수 있습니다.
+[연간 보고서](https://abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf)를 내려받아서 최근 연도의 정보를 열람할 수 있습니다.
 
 Let's Encrypt의 주요 원칙은 다음과 같습니다:
 

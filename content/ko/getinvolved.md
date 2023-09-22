@@ -13,7 +13,7 @@ show_lastmod: 1
 
 ## 커뮤니티
 
-언제나 [Let’s Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)을 활용하고 있습니다. 왜 커뮤니티 지원 기여가 중요한지는 [이 블로그 포스팅](https://letsencrypt.org/2015/08/13/lets-encrypt-community-support.html)을 확인하세요.
+언제나 [Let’s Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)을 활용하고 있습니다. 왜 커뮤니티 지원 기여가 중요한지는 [이 블로그 포스팅](/2015/08/13/lets-encrypt-community-support.html)을 확인하세요.
 
 ## 코드
 
@@ -25,7 +25,7 @@ show_lastmod: 1
 
 ### 서버단 CA 소프트웨어
 
-[Boulder](https://github.com/letsencrypt/boulder)는 Let’s Encrypt CA를 구현하기 위한 도구입니다. [ACME](https://tools.ietf.org/html/rfc8555) 프로토콜 기반이고, 우선은 Go 프로그램 언어로 작성되었습니다. 시작하기에 좋은 곳은 ['도움을 원해요' 목록](https://github.com/letsencrypt/boulder/labels/help%20wanted)과 [공헌자 가이드](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)입니다.
+[Boulder](https://github.com/letsencrypt/boulder)는 Let’s Encrypt CA를 구현하기 위한 도구입니다. [ACME](https://tools.ietf.org/html/rfc8555) 프로토콜 기반이고, 우선은 Go 프로그램 언어로 작성되었습니다. 시작하기에 좋은 곳은 ['도움을 원해요' 목록](https://github.com/letsencrypt/boulder/labels/help%20wanted)과 [공헌자 가이드](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)입니다.
 
 ### letsencrypt.org
 
