@@ -1,5 +1,5 @@
 ---
-title: Mitmachen
+title: 참여
 slug: getinvolved
 top_graphic: 5
 lastmod: 2019-11-04
@@ -11,22 +11,22 @@ show_lastmod: 1
 ---
 
 
-## Community
+## 커뮤니티
 
-Bei der Beantwortung von Fragen im [Let’s Encrypt Community Support](https://community.letsencrypt.org/) können wir immer Hilfe gebrauchen. Lesen Sie in [diesem Blog-Eintrag](/2015/08/13/lets-encrypt-community-support.html), warum Community-Beiträge so wichtig sind.
+언제나 [Let’s Encrypt 커뮤니티 지원](https://community.letsencrypt.org/)을 활용하고 있습니다. 왜 커뮤니티 지원 기여가 중요한지는 [이 블로그 포스팅](/2015/08/13/lets-encrypt-community-support.html)을 확인하세요.
 
-## Programmieren
+## 코드
 
-Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. Unser gesamter Code ist auf [GitHub](https://github.com/letsencrypt/).
+또한 소프트웨어 개발을 이용하고 있습니다. 모든 코드는 [GitHub](https://github.com/letsencrypt/)에 있습니다.
 
-### Client Software
+### 클라이언트 소프트웨어
 
-[Certbot](https://github.com/certbot/certbot) ist ein auf Python basierendes Werkzeug, welches auf Ihrem Webserver arbeitet, um automatisch ein Zertifikat abzuholen und die Website zu HTTPS zu konvertieren. Certbot ist der Client, den wir den meisten Leuten zum Starten empfehlen. Viele andere [Drittanbieterwerkzeuge](/docs/client-options) sind verfügbar.
+[Certbot](https://github.com/certbot/certbot)은 당신의 웹 사이트가 인증서를 취득하고 HTTPS로 자동 전환될 수 있도록 동작하는 파이선 기반 도구입니다. Certbot은 새로 시작하는 대부분의 사람들에게 권장하는 클라이언트입니다. 다양한 [써드파티 선택지](/docs/client-options)도 있습니다.
 
-### Serverseitige CA-Software
+### 서버단 CA 소프트웨어
 
-[Boulder](https://github.com/letsencrypt/boulder) ist die Let's Encrypt CA-Implementierung. Sie basiert auf dem [ACME](https://tools.ietf.org/html/rfc8555)-Protokoll und ist hauptsächlich in Go geschrieben. Ein großartiger Platz zum Starten ist die Liste der ['help wanted'-Issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) und der [Leitfaden für Mitwirkende](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder)는 Let’s Encrypt CA를 구현하기 위한 도구입니다. [ACME](https://tools.ietf.org/html/rfc8555) 프로토콜 기반이고, 우선은 Go 프로그램 언어로 작성되었습니다. 시작하기에 좋은 곳은 ['도움을 원해요' 목록](https://github.com/letsencrypt/boulder/labels/help%20wanted)과 [공헌자 가이드](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md)입니다.
 
 ### letsencrypt.org
 
-Sie können diese Webseite und die Dokumentation [hier](https://github.com/letsencrypt/website) verbessern oder Sie helfen mit bei den [Übersetzungen](https://crowdin.com/project/lets-encrypt-website).
+[여기](https://github.com/letsencrypt/website)에서 이 웹사이트의 문서를 개선하거나 [번역](https://crowdin.com/project/lets-encrypt-website)에 도움을 줄 수 있습니다.
