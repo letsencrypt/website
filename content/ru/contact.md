@@ -28,21 +28,12 @@ menu:
 
 **Пожалуйста, не пишите на этот адрес, если ваше сообщение не касается проблем с безопасностью Let's Encrypt.**
 
-Электронная почта: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Электронная почта: </span>
 
-### Зашифрованный обмен информацией
-
-Для защищённой переписки с группой безопасности, используйте наш GPG ключ. Он состоит из нескольких частей, каждая из которых подписана оффлайновым мастер-ключом. Этот гибридный ключ поддерживает любая из недавних версий GnuPG. Текущая структура ключа:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-Вы можете загрузить [открытый ключ GPG здесь](/security_letsencrypt.org-publickey.asc) или использовать ваш любимый сервер ключей.
-
-Отпечаток ключа должен соответствовать `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

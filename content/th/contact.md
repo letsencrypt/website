@@ -28,21 +28,12 @@ menu:
 
 **กรุณาอย่าเขียนอีเมลถึงที่อยู่นี้ นอกจากว่าข้อความของคุณเกี่ยวข้องกับประเด็นปัญหาด้านความปลอดภัยของเล็ท'ส เอ็นคริปต์**
 
-อีเมล: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">อีเมล: </span>
 
-### การสื่อสารแบบเข้ารหัส
-
-ในการสื่อสารอย่างปลอดภัยกับทีมงานด้านความปลอดภัย, กรุณาใช้ประโยชน์จาก GPG key ของเรา มันประกอบด้วยกุญแจย่อยหลายๆตัว ที่ถูกเซ็นรับรองด้วยมาสเตอร์คีย์ที่ออฟไลน์ เวอร์ชั่นใหม่ๆของ GnuPG จะรองรับคีย์ประเภทนี้ โครงสร้างของกุญแจปัจจุบันเป็นดังนี้:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-คุณสามารถดาวน์โหลด [GPG Public Key](/security_letsencrypt.org-publickey.asc) ที่นี่, หรือใช้ประโยชน์จากเซิร์ฟเวอร์กุญแจอื่นที่คุณชอบ
-
-key fingerprint ต้องตรงกับ `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

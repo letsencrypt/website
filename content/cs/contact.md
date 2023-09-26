@@ -28,21 +28,12 @@ Chcete-li se přihlásit k odběru novinek, [klikněte zde](https://mailchi.mp/l
 
 **Prosím, nepište na tuto adresu, pokud se vaše zpráva netýká bezpečnostních problémů s Let's Encrypt.**
 
-E-mail: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">E-mail: </span>
 
-### Šifrovaná komunikace
-
-Chcete-li bezpečně komunikovat s bezpečnostním týmem použijte GPG klíč. Skládá se z několika podklíčů podepsaných hlavním offline klíčem. Jakákoliv nedávná verze GnuPG bude tento typ hybridního klíče podporovat. Současná struktura klíče je:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-Zde si můžete stáhnout [GPG Public Key](/security_letsencrypt.org-publickey.asc) nebo použít váš oblíbený klíčový server.
-
-Otisk klíče se musí shodovat s `0148 3B31 D8F9 DBA2 5D41 4DAA 718E 9F6D 10EC 230B`.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

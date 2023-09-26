@@ -39,20 +39,3 @@ menu:
   anchor.text = parts.join("");
   document.getElementById("email").appendChild(anchor)
 </script>
-
-### תקשורת מוצפנת
-
-כדי לתקשר בבטחה מול צוות האבטחה שלנו, נא להשתמש במפתח ה־GPG שלנו. הוא מורכב ממספר תת־מפתחות שנחתמו על ידי מפתח על בלתי מקוון. כל גרסה עדכנית של GnuPG תתמוך בסוג כזה של מפתח משולב. מבנה המפתח הנוכחי הוא:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2025-09-25]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2023-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2023-09-25]
-```
-
-אפשר להוריד את [מפתח ה־GPG הציבורי](/security_letsencrypt.org-publickey.asc) מכאן.
-
-טביעת האצבע של המפתח חייבת להיות תואמת ל־`0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.

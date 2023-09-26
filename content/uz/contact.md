@@ -28,21 +28,12 @@ Bizning xabarnomalarimizga obuna bo‘lish uchun, [bu yerni bosing.](https://mai
 
 **Agar muammoinggiz Let's Encrypt xavfsizlik masalalariga aloqador bo‘lmasa, bu emailga murojaat qilmang.**
 
-Email: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">Email: </span>
 
-### Shifrlangan muloqot
-
-Xavfsizlik bo‘yicha guruh bilan xavfsiz bog‘lanmoqchi bo‘lsanggiz, bizning GPG kalitimizdan foydalaning. U offline asosiy kalit yordamida imzolangan bir nechta kalitlardan iborat. GnuPGning istalgan versiyasi bu turdagi gibrid kalitlarni qo‘llab-quvvatlaydi. Ayni paytdagi kalit tuzilishi:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-Kalitni bu yerdan [GPG Ochiq Kalit](/security_letsencrypt.org-publickey.asc) yuklab olishinggiz mumkin, yoki ma'qul ko‘radigan kalitlar serverida foydalanishinggiz mumkin.
-
-Kalit fingerprinti `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B` bilan bir xil bo‘lishi shart.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

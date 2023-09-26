@@ -28,21 +28,12 @@ menu:
 
 **ඔබගේ පණිවිඩය ලෙට්'ස් එන්ක්‍රිප්ට් හි ආරක්‍ෂක ගැටලුවකට අදාළ වන්නේ නම් මිස මෙම ලිපිනයට ලියන්න එපා.**
 
-වි-තැපෑල: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">වි-තැපෑල: </span>
 
-### සංකේතාංකිත සන්නිවේදනය
-
-ආරක්‍ෂක කණ්ඩායම සමඟ ආරක්‍ෂිතව සන්නිවේදනයට, කරුණාකර අපගේ ජීපීජී යතුර ප්‍රයෝජනයට ගන්න. එය මාර්ගඅපගත ප්‍රධාන යතුරකින් අත්සන් කරන ලද උප යතුරු කිහිපයකින් සමන්විත වේ. GnuPG හි ඕනෑම මෑත අනුවාදයක් මෙවැනි දෙමුහුන් යතුරකට සහාය දක්වයි. වත්මන් යතුරෙහි ව්යුහය වන්නේ:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-ඔබට [ජීපීජී ප්‍රසිද්ධ යතුර](/security_letsencrypt.org-publickey.asc) මෙතැනින් බාගැනීමට හැකිය, හෝ ඔබගේ ප්‍රියතම යතුරු සේවාදායකය ප්‍රයෝජනයට ගන්න.
-
-යතුරෙහි ඇඟිලි සටහන ගැළපිය යුතුමය `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

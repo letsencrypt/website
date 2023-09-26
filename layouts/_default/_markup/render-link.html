@@ -1,4 +1,4 @@
-{{- if  and (findRE "^/(docs/)?[^/]+/?$" .Destination) (ne .Destination "/security_letsencrypt.org-publickey.asc") -}}
+{{- if (findRE "^/(docs/)?[^/]+/?$" .Destination) -}}
 	{{- $tmp := split .Destination "#" -}}
 	{{- $pagename := index $tmp 0 -}}
 	{{- $anchor := index $tmp 1 -}}

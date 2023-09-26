@@ -28,21 +28,12 @@ Du kan [prenumerera på vårt nyhetsbrev](https://mailchi.mp/letsencrypt.org/fjp
 
 **Vänligen skicka inte till denna adress om inte ditt meddelande berör ett säkerhetsproblem med Let's Encrypt.**
 
-E-post: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">E-post: </span>
 
-### Krypterad kommunikation
-
-För att kommunicera säkert med vårt säkerhetsteam, vänligen använd vår GPG-nyckel. Den består av flera undernycklar signerade av en icke-uppkopplad huvudnyckel. Alla senare versioner av GnuPG stöder denna typ av hybridnyckel. Detta är den nuvarande nyckelstrukturen:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-Du kan ladda ner den [publika GPG-nyckeln](/security_letsencrypt.org-publickey.asc) eller använda din favoritnyckelserver.
-
-Nyckelns fingeravtryck måste överensstämma med `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

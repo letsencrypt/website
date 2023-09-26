@@ -28,21 +28,12 @@ Za prijavu na naš newsletter [kliknite ovdje.](https://mailchi.mp/letsencrypt.o
 
 **Molimo nemojte pisati na ovu adresu ukoliko vaša poruka nije vezana za sigurnosni problem sa Let's Encrypt.**
 
-E-pošta: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">E-pošta: </span>
 
-### Enkriptirana komunikacija
-
-Za sigurnu komunikaciju sa sigurnosnim timom, molimo koristite naš GPG ključ. On se sastoji od nekoliko podključeva potpisanih sa vanmrežnim glavnim ključem. Bilo koja novija verzija GnuPG-a podržavati će ovu vrstu hibridnog ključa. Trenutna struktura ključa je:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-Ovdje možete preuzeti [GPG javni ključ](/security_letsencrypt.org-publickey.asc) ili koristite vaš omiljeni poslužitelj ključeva.
-
-Otisak ključa mora odgovarati `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B`.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

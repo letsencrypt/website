@@ -39,20 +39,3 @@ E-mail: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
   anchor.text = parts.join("");
   document.getElementById("email").appendChild(anchor)
 </script>
-
-### Comunicazione Criptata
-
-Per comunicare in modo sicuro con il Team di Sicurezza, utilizza la nostra chiave GPG. Consiste in diverse sottochiavi firmate da una chiave master offline. Qualsiasi versione recente di GnuPG supporta questo tipo di chiave ibride. La struttura attuale delle chiavi è:
-
-```
-pub rsa4096 2015-11-24 [CE] [Scadenza: 2025-09-25]
-      0148 3B31 D8F9 DBA2 5D41 4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt. rg) <security@letsencrypt.org>
-sub rsa4096 2015-11-24 [E] [Scadenza: 2023-09-25]
-sub rsa4096 2015-11-24 [A] [Scadenza: 2023-09-25]
-sub rsa4096 2015-11-24 [S] [Scadenza: 2023-09-25]
-```
-
-Puoi scaricare la [chiave pubblica GPG](/security_letsencrypt.org-publickey.asc) qui, o utilizzare il tuo server di chiave preferita.
-
-La chiave digitale deve corrispondere a `0148 3B31 D8F9 DBA2 5D41 4DAA 718E 9F6D 10EC 230B`.
