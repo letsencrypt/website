@@ -52,7 +52,6 @@
       "image": "shopify-logo.png"
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
-    { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.png" },
     { "name": "Squarespace", "url": "https://www.squarespace.com/", "image": "squarespace-logo.png" }
   ],
   "silver": [
@@ -114,11 +113,6 @@
       "image": "jimdo-logo.png"
     },
     {
-      "name": "VTEX",
-      "url": "https://www.vtex.com/",
-      "image": "vtex-logo.png"
-    },
-    {
       "name": "Zendesk",
       "url": "https://www.zendesk.com/",
       "image": "zendesk-logo.png"
@@ -132,11 +126,6 @@
       "name": "HostPapa",
       "url": "https://www.hostpapa.com/lets-encrypt-hosting?utm_source=letsencrypt.org&utm_medium=referral&utm_campaign=us-seo&utm_term=web-hosting&utm_content=180x108-logo",
       "image": "hostpapa-logo.png"
-    },
-    {
-      "name": "Pantheon Website Management Platform",
-      "url": "https://pantheon.io/",
-      "image": "pantheon-logo.png"
     },
     {
       "name": "dnsimple",
@@ -282,21 +271,6 @@
       "image": "one-com-logo.png"
     },
     {
-      "name": "Dan.com",
-      "url": "https://dan.com/",
-      "image": "dan-com-logo.png"
-    },
-    {
-      "name": "Cloudera",
-      "url": "https://www.cloudera.com/",
-      "image": "cloudera-logo.png"
-    },
-    {
-      "name": "Hack the Box",
-      "url": "https://www.hackthebox.eu/",
-      "image": "hackthebox-logo.png"
-    },
-    {
       "name": "Cargo",
       "url": "https://cargo.site/",
       "image": "cargo-logo.png"
@@ -341,11 +315,6 @@
       "name": "Acton Family Giving",
       "url": "https://actonfamilygiving.org/",
       "image": "acton-family-giving-logo.png"
-    },
-    {
-      "name": "Plat.ai",
-      "url": "https://plat.ai/",
-      "image": "plat-ai-logo.svg"
     },
 
     { "name": "Crypto Tracker", "url": "https://cryptotracker.com/", "image": "cryptotracker-logo.svg" },
