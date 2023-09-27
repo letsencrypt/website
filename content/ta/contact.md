@@ -28,21 +28,12 @@ menu:
 
 **Let's Encrypt உடன் பாதுகாப்புச் சிக்கல் இருந்தாலே தவிர இந்த முகவரிக்கு எழுத வேண்டாம்.**
 
-மின்னஞ்சல்: [security@letsencrypt.org](mailto:security@letsencrypt.org)
+<span id="email">மின்னஞ்சல்: </span>
 
-### மறையாக்கப்பட்ட தொடர்பு
-
-பாதுகாப்புக் குழுவுடன் பாதுகாப்பாகத் தொடர்புகொள்ள, எமது GPG திறவியைப் பயன்படுத்தவும். இது இணைய தொடர்பற்ற முதன்மை திறவியால் ஒப்பமிடப்பட்ட பல துணை திறவிகளைக் கொண்டுள்ளது. GnuPG இன் எந்தச் சமீபத்திய பதிப்பும் இந்த வகையான கலப்பு திறவியை ஆதரிக்கும். தற்போதைய திறவி அமைப்பு:
-
-```
-pub   rsa4096 2015-11-24 [CE] [expires: 2023-09-18]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ultimate] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [A] [expires: 2022-09-25]
-sub   rsa4096 2015-11-24 [S] [expires: 2022-09-25]
-```
-
-நீங்கள் [GPG பொது திறவியை](/security_letsencrypt.org-publickey.asc) இங்கே பதிவிறக்கலாம், அல்லது உங்களுக்குப் பிடித்த திறவி வழங்கனை பயன்படுத்தலாம்.
-
-திறவியின் கைரேகை `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B` உடன் ஒத்துப்போக வேண்டும்.
+<script>
+  var parts = ["security", '@', "letsencrypt", ".", "org"];
+  var anchor = document.createElement("a");
+  anchor.href = "mailto:" + parts.join("");
+  anchor.text = parts.join("");
+  document.getElementById("email").appendChild(anchor)
+</script>

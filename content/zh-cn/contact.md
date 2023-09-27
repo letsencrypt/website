@@ -39,20 +39,3 @@ menu:
   anchor.text = parts.join("");
   document.getElementById("email").appendChild(anchor)
 </script>
-
-### 通讯加密
-
-请使用 GPG 公钥与我们的安全团队加密沟通。 我们的 GPG 公钥包含多个子密钥，并由一个离线主密钥对所有子密钥予以数字签名， 较新版本的 GnuPG 都支持这种混合密钥。 目前的密钥结构为：
-
-```
-pub   rsa4096 2015-11-24 [CE] [有效至：2025-09-25]
-      0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B
-uid           [ 绝对 ] ISRG Security Team (letsencrypt.org) <security@letsencrypt.org>
-sub   rsa4096 2015-11-24 [E] [有效至：2023-09-25]
-sub   rsa4096 2015-11-24 [A] [有效至：2023-09-25]
-sub   rsa4096 2015-11-24 [S] [有效至：2023-09-25]
-```
-
-您可以在此处下载 [GPG 公钥](/security_letsencrypt.org-publickey.asc)。
-
-请确保公钥指纹与 `0148 3B31 D8F9 DBA2 5D41  4DAA 718E 9F6D 10EC 230B` 一致。
