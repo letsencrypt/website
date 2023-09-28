@@ -3,10 +3,10 @@ title: Rate Limits
 slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
-lastmod: 2020-03-05
+lastmod: 2021-10-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt provides rate limits to ensure fair usage by as
 many people as possible. We believe these rate limits are high enough to work
@@ -30,21 +30,23 @@ domain. Exceeding the Certificates Per Registered Domain limit is reported with 
 error message `too many certificates already issued`, possibly with additional
 details.
 
-If you have a lot of subdomains, you may want to combine them into a single
-certificate, up to a limit of 100 <a id="names-per-certificate"></a>**Names per Certificate**. Combined with the
-above limit, that means you can issue certificates containing up to 5,000 unique
-subdomains per week. A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate. Note: For performance and
-reliability reasons, it's better to use fewer names per certificate whenever you
-can.
+You can create a maximum of 300 <a
+id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created
+each time you request a certificate from the Boulder CA, meaning that one new order
+is produced in each certificate request. Exceeding the New Orders
+limit is reported with the error message `too many new orders recently`.
+
+You can combine multiple hostnames into a single
+certificate, up to a limit of 100 <a id="names-per-certificate"></a>**Names per Certificate**.
+For performance and reliability reasons, it's better to use fewer names per certificate
+whenever you can.  A certificate with multiple names is often called a SAN
+certificate, or sometimes a UCC certificate.
 
 Renewals are treated specially: they don't count against your **Certificates per
-Registered Domain** limit, but they are subject to a **Duplicate Certificate**
-limit of 5 per week. Note: renewals used to count against your Certificate per
-Registered Domain limit until March 2019, [but they don't
-anymore](https://community.letsencrypt.org/t/rate-limits-fixing-certs-per-name-rate-limit-order-of-operations-gotcha/88189).
-Exceeding the Duplicate Certificate limit is reported with the error message
-`too many certificates already issued for exact set of domains`.
+Registered Domain** limit, but they are subject to a [**Duplicate Certificate**](
+/docs/duplicate-certificate-limit) limit of 5 per week. Exceeding the Duplicate Certificate
+limit is reported with the error message `too many certificates already issued for exact 
+set of domains`.
 
 A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
 the exact same set of hostnames, ignoring capitalization and ordering of
@@ -60,20 +62,21 @@ can be considered a renewal even if you are using a new key.
 **Revoking certificates does not reset rate limits**, because the resources used to
 issue those certificates have already been consumed.
 
-There is a <a id="failed-validations"></a>**Failed Validation** limit of 5 failures
-per account, per hostname, per hour. This limit is higher on our
-[staging environment](/docs/staging-environment), so you
-can use that environment to debug connectivity problems. Exceeding the Failed
-Validations limit is reported with the error message `too many failed authorizations recently`.
+There is a <a id="failed-validations"></a>[**Failed Validation**](/docs/failed-validation-limit) 
+limit of 5 failures per account, per hostname, per hour. This limit is higher on our
+[staging environment](/docs/staging-environment), so you can use that environment to debug connectivity
+problems. Exceeding the Failed Validations limit is reported with the error message `too many failed
+authorizations recently`.
 
-The "new-reg", "new-authz", and "new-cert" endpoints on the v1 API and the "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the v2 API have an <a
+The "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the API have an <a
 id="overall-requests"></a>**Overall
 Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
 directory & subdirectories have an Overall Requests limit of 40 requests per second.
 
 We have two other limits that you're very unlikely to run into.
 
-You can create a maximum of 10 <a id="accounts-per-ip-address"></a>**Accounts per IP Address** per 3 hours. You can
+You can create a maximum of 10 <a id="accounts-per-ip-address"></a>[**Accounts
+per IP Address**](/docs/too-many-registrations-for-this-ip) per 3 hours. You can
 create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
 3 hours. Hitting either account rate limit is very rare, and we recommend that
 large integrators prefer a design [using one account for many customers](/docs/integration-guide).
@@ -87,10 +90,6 @@ Please utilize our [staging environment](/docs/staging-environment) if you’re
 developing an ACME client. Exceeding the Pending Authorizations limit is
 reported with the error message `too many currently pending authorizations`.
 
-For users of the ACME v2 API you can create a maximum of 300 <a
-id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created each time you request a certificate from the Boulder CA, meaning that one new order is produced in each certificate request. Exceeding the New Orders
-limit is reported with the error message `too many new orders recently`.
-
 # <a id="overrides"></a>Overrides
 
 If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
@@ -103,15 +102,10 @@ logs.
 
 If you are a large hosting provider or organization working on a Let's Encrypt
 integration, we have a [rate limiting
-form](https://goo.gl/forms/plqRgFVnZbdGhE9n1)
+form](https://isrg.formstack.com/forms/rate_limit_adjustment_request)
 that can be used to request a higher rate limit. It takes a few weeks to process
 requests, so this form is not suitable if you just need to reset a rate limit
 faster than it resets on its own.
-
-Note that most hosting providers don't need rate limit increases, because
-there's no limit on the number of distinct registered domains for which you can issue.
-So long as most of your customers don't have more than 2,000 subdomains on a
-registered domain, you most likely do not need an increase. See our [Integration Guide](/docs/integration-guide) for more advice.
 
 # <a id="clearing-pending"></a>Clearing Pending Authorizations
 

@@ -1,5 +1,5 @@
 {
-	"lastmod": "2020-05-01",
+	"lastmod": "2023-07-22",
 	"categories": [
 		"Bash",
 		"C",
@@ -12,6 +12,7 @@
 		"Go",
 		"HAProxy",
 		"Java",
+		"Kubernetes",
 		"Lua",
 		"Microsoft Azure",
 		"nginx",
@@ -22,7 +23,8 @@
 		"Python",
 		"Ruby",
 		"Rust",
-		"Windows / IIS"
+		"Windows / IIS",
+		"Server"
 	],
 	"libraries": [
 		"4D",
@@ -41,72 +43,52 @@
 	],
 	"projects": [
 		{
-			"name": "Ponzu CMS",
-			"url": "https://ponzu-cms.org"
-		},
-		{
-			"name": "Caddy",
-			"url": "https://caddyserver.com/"
-		},
-		{
-			"name": "cPanel",
-			"url": "https://cpanel.net/"
-		},
-		{
-			"name": "Own-Mailbox",
-			"url": "https://www.own-mailbox.com/"
-		},
-		{
-			"name": "Cloudfleet",
-			"url": "https://cloudfleet.io/"
+			"name": "Aegir",
+			"url": "https://gitlab.com/aegir/hosting_https"
 		},
 		{
 			"name": "Aerys",
 			"url": "https://github.com/kelunik/aerys-acme"
 		},
 		{
+			"name": "Apache HTTP Server",
+			"url": "https://httpd.apache.org"
+		},
+		{
+			"name": "ApisCP",
+			"url": "https://apiscp.com"
+		},
+		{
+			"name": "Caddy",
+			"url": "https://caddyserver.com/"
+		},
+		{
 			"name": "CentminMod LEMP Stack",
 			"url": "https://centminmod.com/acmetool"
 		},
 		{
-			"name": "Mail-in-a-Box",
-			"url": "https://mailinabox.email/"
+			"name": "Certhub",
+			"url": "https://certhub.io/"
 		},
 		{
-			"name": "Froxlor Server Management Panel",
-			"url": "https://www.froxlor.org/"
-		},
-		{
-			"name": "Virtualmin Web Hosting Control Panel",
-			"url": "https://www.virtualmin.com/"
-		},
-		{
-			"name": "Plesk Web Hosting Control Panel",
-			"url": "https://www.plesk.com/"
-		},
-		{
-			"name": "Zappa",
-			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
-		},
-		{
-			"name": "pfSense",
-			"url": "https://www.pfsense.org/"
+			"name": "Cloudfleet",
+			"url": "https://cloudfleet.io/"
 		},
 		{
 			"name": "Cloudron",
 			"url": "https://cloudron.io"
 		},
 		{
-			"name": "Aegir",
-			"url": "https://gitlab.com/aegir/hosting_https"
+			"name": "cPanel",
+			"url": "https://cpanel.net/"
 		},
 		{
-			"name": "Synchronet BBS System",
-			"url": "http://www.synchro.net"
+			"name": "Froxlor Server Management Panel",
+			"url": "https://www.froxlor.org/"
 		},
 		{
-			"name": "ruxy",
-			"url": "https://ruxyserver.com"
+			"name": "Gitlab",
+			"url": "https://about.gitlab.com"
 		},
 		{
 			"name": "ISPConfig",
@@ -117,20 +99,56 @@
 			"url": "https://www.liveconfig.com/"
 		},
 		{
-			"name": "WildFly Application Server",
-			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+			"name": "Mail-in-a-Box",
+			"url": "https://mailinabox.email/"
 		},
 		{
-			"name": "Certhub",
-			"url": "https://certhub.io/"
+			"name": "Own-Mailbox",
+			"url": "https://www.own-mailbox.com/"
+		},
+		{
+			"name": "pfSense",
+			"url": "https://www.pfsense.org/"
+		},
+		{
+			"name": "Plesk Web Hosting Control Panel",
+			"url": "https://www.plesk.com/"
+		},
+		{
+			"name": "Ponzu CMS",
+			"url": "https://ponzu-cms.org"
+		},
+		{
+			"name": "ruxy",
+			"url": "https://ruxyserver.com"
+		},
+		{
+			"name": "SWAG - Secure Web Application Gateway",
+			"url": "https://github.com/linuxserver/docker-swag"
+		},
+		{
+			"name": "Synchronet BBS System",
+			"url": "http://www.synchro.net"
 		},
 		{
 			"name": "Vesta Control Panel",
 			"url": "https://vestacp.com/"
 		},
 		{
-			"name": "Apache HTTP Server",
-			"url": "https://httpd.apache.org"
+			"name": "Virtualmin Web Hosting Control Panel",
+			"url": "https://www.virtualmin.com/"
+		},
+		{
+			"name": "WildFly Application Server",
+			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+		},
+		{
+			"name": "Zappa",
+			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
+		},
+		{
+			"name": "Proxmox Virtual Environment",
+			"url": "https://pve.proxmox.com/wiki/Certificate_Management#sysadmin_certs_get_trusted_acme_cert"
 		}
 	],
 	"list": [
@@ -200,8 +218,20 @@
 			"category": "Docker"
 		},
 		{
-			"name": "ZeroSSL",
+			"name": "Crypt::LE",
 			"url": "https://hub.docker.com/r/zerossl/client/",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+		{
+			"name": "acme.sh",
+			"url": "https://hub.docker.com/r/neilpang/acme.sh",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+	        {
+			"name": "letsproxy",
+			"url": "https://hub.docker.com/r/neilpang/letsproxy",
 			"acme_v2": "true",
 			"category": "Docker"
 		},
@@ -209,7 +239,12 @@
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
 			"acme_v2": "Caddy >= 0.10.12",
-			"category": "Go"
+			"category": "Go",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		},
 		{
 			"name": "Lego",
@@ -291,6 +326,16 @@
 			"comments": "(Compatible with any App Service)"
 		},
 		{
+			"name": "njs-acme",
+			"url": "https://github.com/nginx/njs-acme",
+			"acme_v2": "true",
+			"category": "nginx",
+			"comments": "JavaScript library compatible with the 'ngx_http_js_module' runtime (NJS), allows for the automatic issue of TLS/SSL certificates for NGINX without restarts",
+			"challenges": {
+				"HTTP-01": "true"
+			}
+		},
+		{
 			"name": "lua-resty-auto-ssl",
 			"url": "https://github.com/GUI/lua-resty-auto-ssl",
 			"acme_v2": "lua-resty-auto-ssl >= 0.13.0",
@@ -336,23 +381,16 @@
 			"category": "Node.js"
 		},
 		{
-			"name": "ocelotconsulting/node-acme-lambda",
-			"url": "https://github.com/ocelotconsulting/node-acme-lambda",
-			"acme_v2": "true",
-			"category": "Node.js"
-		},
-		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
 			"acme_v2": "true",
 			"category": "OpenShift"
 		},
 		{
-			"name": "ZeroSSL project",
+			"name": "Crypt::LE (previously ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"acme_v2": "true",
-			"category": "Windows / IIS",
-			"library": "Perl"
+			"category": "Windows / IIS"
 		},
 		{
 			"name": "Crypt::LE",
@@ -375,6 +413,7 @@
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "PHP"
 		},
 		{
@@ -630,11 +669,13 @@
 		{
 			"name": "kelunik/acme",
 			"url": "https://github.com/kelunik/acme",
+			"acme_v2": "true",
 			"library": "PHP"
 		},
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
+			"acme_v2": "true",
 			"category": "Windows / IIS",
 			"comments": "(PHP)"
 		},
@@ -702,7 +743,7 @@
 		},
 		{
 			"name": "Ansible acme_certificate module",
-			"url": "https://docs.ansible.com/ansible/latest/modules/acme_certificate_module.html",
+			"url": "https://docs.ansible.com/ansible/latest/collections/community/crypto/acme_certificate_module.html",
 			"acme_v2": "ansible >= 2.6",
 			"challenges": {
 				"TLS-ALPN-01": "ansible >= 2.7"
@@ -753,7 +794,7 @@
 		},
 		{
 			"name": "acme-client-portable",
-			"url": "https://github.com/graywolf/acme-client-portable",
+			"url": "https://sr.ht/~graywolf/acme-client-portable/",
 			"category": "C",
 			"acme_v2": "true"
 		},
@@ -886,6 +927,189 @@
 			"url": "https://github.com/RogierW/rw-acme-client",
 			"category": "PHP",
 			"acme_v2": "true"
+		},
+		{
+			"name": "cert-manager",
+			"url": "https://github.com/jetstack/cert-manager",
+			"category": "Kubernetes",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "Certera",
+			"url": "https://certera.io",
+			"acme_v2": "true",
+			"comments": "(Crossplatform PKI to centrally manage keys and certificates)",
+			"category": "Server"
+		},
+		{
+			"name": "TekCERT",
+			"url": "https://www.kaplansoft.com/tekcert/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "serverPKI",
+			"url": "https://github.com/mc3/serverPKI",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
+    },
+		{
+			"name": "acmetk",
+			"url": "https://github.com/noahkw/acmetk",
+			"acme_v2": "true",
+			"category": "Python",
+			"challenges": {
+				"DNS-01": "true"
+			},
+			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
+    },
+    {
+			"name": "ACMEz",
+			"url": "https://github.com/mholt/acmez",
+			"category": "Go",
+			"library": "Go",
+			"acme_v2": "true"
+		},
+		{
+			"name": "Step CLI",
+			"url": "https://smallstep.com/cli/",
+			"acme_v2": "true",
+			"category": "Go"
+		},
+		{
+			"name": "J8a",
+			"url": "https://github.com/simonmittag/j8a",
+			"category": "Go",
+			"comments": "(Reverse proxy for JSON APIs with auto-renewing TLS 1.3)",
+			"acme_v2": "true"
+		},
+		{
+			"name": "CycloneACME",
+			"url": "https://oryx-embedded.com/products/CycloneACME",
+			"category": "C",
+			"acme_v2": "true",
+			"comments": "(client implementation of ACME dedicated to microcontrollers)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "acme-redirect",
+			"url": "https://github.com/kpcyrd/acme-redirect",
+			"acme_v2": "true",
+			"category": "Rust"
+		},
+		{
+			"name": "acme-http-01-azure-key-vault-middleware",
+			"url": "https://github.com/compulim/acme-http-01-azure-key-vault-middleware",
+			"acme_v2": "true",
+			"category": "Node.js",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)"
+		},
+		{
+			"name": "Terraform ACME Provider",
+			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
+			"acme_v2": "terraform-provider-acme >= 1.0.0",
+			"challenges": {
+				"HTTP-01": "terraform-provider-acme >= 2.4.0",
+				"DNS-01": "terraform-provider-acme >= 1.0.0",
+				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
+			},
+			"category": "Configuration management tools"
+		},
+		{
+			"name": "wdfcert.sh",
+			"url": "https://github.com/WolfWings/wdfcert.sh",
+			"acme_v2": "true",
+			"category": "Bash",
+			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus roor domain support for single-TXT-record DNS providers)",
+			"library": "Perl",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false",
+				"TLS-ALPN-01": "false"
+			}
+		},
+		{
+			"name": "HCL Domino",
+			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
+			"category": "Domino",
+			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Ansible collection: acme",
+			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
+			"category": "Configuration management tools",
+			"comments": "(ACME V2 integration with acme_certificate module. Supports multiple providers for challenges)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "certmanager",
+			"url": "https://github.com/Cloud-Foundations/golib/tree/master/cmd/certmanager",
+			"category": "Go",
+			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
+			"library": "Go",
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"acme_v2": "true"
+		},
+		{
+			"name": "KCert",
+			"url": "https://github.com/nabsul/kcert",
+			"category": "Kubernetes",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Az-Acme",
+			"url": "https://github.com/az-acme/az-acme-cli",
+			"category": "Microsoft Azure",
+			"comments": "(The simplest ACME Issuer for Azure Key Vault)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
 		}
 	]
 }

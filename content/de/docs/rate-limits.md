@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2019-06-04
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt erstellt Rate Limits, um eine faire Benutzung durch so viele
 Leute wie möglich sicherzustellen. Wir glauben, dass Rate Limits hoch genug
@@ -101,7 +101,7 @@ Logs benutzt.
 
 Wenn Sie ein grosser Hosting-Provider sind oder eine Organisation, die an
 einer Let's Encrypt Integration arbeitet, haben wir ein
-[Rate Limit Formular](https://goo.gl/forms/plqRgFVnZbdGhE9n1), welches zur
+[Rate Limit Formular](https://isrg.formstack.com/forms/rate_limit_adjustment_request), welches zur
 Anfrage nach höheren Limits benutzt werden kann. Die Bearbeitung der Anfrage
 dauert ein paar Wochen, das heisst das Formular ist nicht zweckdienlich zum
 Zurücksetzen eines bestehendes Rate Limits, in das Sie reingelaufen sind.

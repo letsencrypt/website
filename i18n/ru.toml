@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt &mdash; это <span>бесплатный</span>, <span>автоматизированный</span> и <span>открытый</span> Центр Сертификации."
+other = "Некоммерческий Центр сертификации, предоставляющий сертификаты TLS для <span>260 миллионов</span> веб-сайтов."
 
 [home_hero_getting_started]
 other = "Приступить"
@@ -13,31 +11,28 @@ other = "Поддержать нас"
 other = "Поддержать"
 
 [home_hero_annual_report]
-other = "Ознакомьтесь с нашим годовым отчётом за 2019 г."
-
-[home_hero_desktop]
-other = "на десктопе"
-
-[home_hero_mobile]
-other = "на мобильном"
+other = "Мы получили премию Levchin Prize за Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Подробнее</a>"
 
 [home_major_sponsors]
-other = "Основные спонсоры и дарители"
+other = "Основные спонсоры и инвесторы"
 
 [home_from_our_blog]
-other = "В нашем блоге (на английском)"
+other = "В нашем блоге"
 
 [read_more]
 other = "Ещё..."
 
 [subscribe_rss]
-other = "Подписаться <a href=\"{{ .Permalink }}\">на RSS</a>"
+other = 'Подписаться <a href="{{ .Permalink }}">на RSS</a>'
 
 [footer_support_us]
 other = "Помогите сделать Интернет безопасным и уважающим вашу конфиденциальность."
 
 [footer_donate]
 other = "Поддержите нас"
+
+[footer_mailing]
+other = "Все письма и запросы отправляйте по адресу:"
 
 [footer_policies]
 other = """
@@ -66,6 +61,9 @@ other = "Платиновые"
 [gold]
 other = "Золотые"
 
+[gold_basic]
+other = "Простые Золотые"
+
 [silver]
 other = "Серебряные"
 
@@ -75,19 +73,14 @@ other = "Язык"
 [view_in_english]
 other = "Просмотреть на английском"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Просмотреть на русском"
-
 [old_version]
 other = "Внимание! Английская версия сайта была обновлена, перевод неактуален"
 
 [not_yet_translated]
-other = "Эта страница ещё не переведена. Вы можете внести свой вклад <a href=\"https://github.com/letsencrypt/website\">здесь</a>."
+other = 'Эта страница ещё не переведена. Вы можете внести свой вклад <a href="https://github.com/letsencrypt/website">здесь</a>.'
 
 [english_is_canonical]
-other = "Английская версия является каноничной"
+other = "Версия на английском является официальной"
 
 [graph_issued]
 other = "Выпущено"
@@ -119,6 +112,9 @@ other = "Пользователи из Японии"
 [graph_percent_https]
 other = "Доля страниц, в %, загруженных по HTTPS (скользящая средняя за 14 дней)"
 
+[certificate_policy]
+other = "Политика сертификатов"
+
 [certificate_transparency_name]
 other = "Название"
 
@@ -134,6 +130,21 @@ other = "URI"
 [certificate_transparency_public_key]
 other = "Открытый ключ"
 
+[certificate_transparency_log_id]
+other = "ID записи"
+
+[certificate_transparency_state]
+other = "Статус"
+
+[certificate_transparency_window_start]
+other = "Дата начала"
+
+[certificate_transparency_window_end]
+other = "Дата окончания"
+
+[certification_practices_statement]
+other = "Заявление о практике сертификации"
+
 [overview]
 other = "Обзор"
 
@@ -144,10 +155,10 @@ other = "Информация для пользователей"
 other = "Расширенная информация для пользователей"
 
 [client_developer_information]
-other = "Информация для разработчиков"
+other = "Информация о разработчике"
 
 [acme_divergences]
-other = "Отступления от текущего черновика ACME"
+other = "Отличия от текущего проекта ACME"
 
 [acme_divergences_rfc]
 other = "Отступления от ACME RFC"
@@ -168,7 +179,7 @@ other = "Этой страницы не существует. Пожалуйст
 other = "{{ .nb }} долларов США в год"
 
 [3y_commitment]
-other = "на протяжении 3 лёт"
+other = "на протяжении 3 лет"
 
 [1_99_employees]
 other = "число сотрудников от 1 до 99"

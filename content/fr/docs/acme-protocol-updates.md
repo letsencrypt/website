@@ -1,35 +1,34 @@
 ---
-title: Mise à jour du protocole ACME
+title: Mises à jour du protocol ACME
 slug: acme-protocol-updates
 top_graphic: 1
 lastmod: 2019-10-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
-Le [standard IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) du protocole ACME, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire du fonctionnement de Let's Encrypt.
+Le protocole ACME [normalisé par l'IETF](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html), [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), est la pierre angulaire du fonctionnement de Let's Encrypt.
 
-# Terminaisons API
+# Points d'entré de l'API
 
-Nous avons, à ce jour, les points de terminaisons API (Application Programming Interface) suivants. Veuillez consulter [notre documentation sur les  divergences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) afin de comparer leur implémentation par rapport à la spécification ACME.
+Nous disposons actuellement des points de terminaison API suivants. Veuillez consulter [notre documentation sur les différences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) pour comparer leur mise en œuvre à la spécification ACME.
 
 ## ACME v2 (RFC 8555)
 
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
-* [Qualification] `https://acme-staging-v02.api.letsencrypt.org/directory`
+* [Bac à sable] `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-## ACME v1 (Obsolète)
+## ACME v1 (obsolète)
 
 * [Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [Qualification] `https://acme-staging.api.letsencrypt.org/directory`
+* [Bac à sable] `https://acme-staging-v02.api.letsencrypt.org/directory`
 
 # Nouvelles fonctionnalités ACME rétro-compatibles
 
-De temps en temps Let's Encrypt peut développer de nouvelles fonctions rétro-compatibles pour ses API. Typiquement de telles fonctions sont introduites car nous avons décidé d'implémenter une partie des specifications ACME qui n'ont encore jamais été implémententées.
+De temps à autre, Let's Encrypt peut mettre en œuvre de nouvelles fonctionnalités rétrocompatibles pour les points de terminaison API existants. En général, les nouvelles fonctionnalités rétrocompatibles sont introduites parce que nous avons décidé d'implémenter une partie de la spécification ACME que nous n'avions pas implémentée auparavant.
 
-Lorsque de telles fonctionnalités dont ajoutées à des API existantes, les fonctionnalitées seront toujours clairement indiquées dans les spécifications de l'ACME et n'auront aucun impact négatif sur des clients ACME correctement mis en oeuvre.
+Lorsque de nouvelles fonctionnalités sont introduites dans des points de terminaison d'API existants, elles seront toujours clairement spécifiées dans une spécification ACME publique et ne perturberont pas les clients correctement implémentés.
 
-# Nouvelles versions d'ACME avec de profondes modifications
+# Nouvelles versions d'ACME avec des modifications importantes
 
-Nous ne prévoyons pas d'apporter des modifications profondes de notre implémentation d'ACME, mais si nous estimons qu'il est important de le faire, alors nous travaillerions à une évolution en douceur, dans un délai sufisant et en anticipant au maximum la communication sur ce sujet. Les administrateurs système doivent maintenir une capacité à déployer rapidement des mises à jour sur leurs clients ACME dans le cas où des modifications profondes seraient nécéssaires.
-
+Nous ne prévoyons pas d'apporter des changements radicaux à notre support ACME, mais si nous estimons qu'il est important de le faire, nous nous efforcerons d'assurer une transition en douceur sur une période suffisante et nous communiquerons le plus longtemps possible à l'avance. Les administrateurs système doivent maintenir la capacité de déployer des mises à jour en temps utile à leurs clients ACME dans le cas où une modification importante est nécessaire.

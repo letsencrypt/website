@@ -1,0 +1,149 @@
+---
+title: Журнал прозорості сертифіката (CT)
+slug: ct-logs
+top_graphic: 4
+lastmod: 2022-06-17
+show_lastmod: 1
+---
+
+
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct"
+    >Прозорість сертифікатів (CT)</a
+> це система для реєстрації та моніторингу видачі сертифікатів TLS. CT значно підвищує здатність кожного контролювати та вивчати видачу сертифікатів, і ці можливості призвели до численних поліпшень екосистеми ЦС та безпеки Інтернету. В результаті СТ стрімко стає критичною інфраструктурою.
+</p>
+
+<p>
+  Let's Encrypt надсилає всі видані нами сертифікати до журналів CT. Ми також видаємо два щорічно розподілені журнали прозорості сертифіката з назвою <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
+    >Oak</a
+> і Sapling. Усі публічні довірені центри сертифікації можуть реєструватися в наших журналах. Багато кореневих сертифікатів довірених центрів вже включено до наших журналів СТ. Якщо ви керуєте центром сертифікації, а вашого видавця
+  немає у списку прийнятих видавців, будь ласка, повідомте про проблему <a href="https://github.com/letsencrypt/ct-log-metadata">тут</a>.
+</p>
+
+<p>
+  Підпишіться на сповіщення в <a
+    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
+    >категорії оголошень CT</a
+> на форумі нашої спільноти, щоб побачити основні оголошення про наші  журнали CT.
+</p>
+
+<h2>Фінансування</h2>
+
+<p>
+  Ми хотіли б подякувати наступним партнерам за щедру спонсорську підтримку журналу Let's   Encrypt CT log. Якщо ваша організація бажає допомогти нам продовжувати цю роботу, ви можете розглянути такі варіанти, як <a href="https://www.abetterinternet.org/sponsor/">спонсорство або пожертвування</a>.
+</p>
+
+<p class="text-center">
+  <a href="https://sectigo.com/"
+    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
+  /></a>
+</p>
+
+<h2>Архітектура</h2>
+
+<p>
+  Завітайте до нашого блогу, щоб побачити <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >Як Let's Encrypt Керує CT Logs</a
+>!
+</p>
+
+<h2>Моніторинг журналу</h2>
+
+<p>
+  Let's Encrypt створив інструмент моніторингу журналів CT з відкритим вихідним кодом під назвою <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Ми використовуємо цей інструмент для моніторингу стабільності та узгодженості власних журналів, і сподіваємось, що іншим він також стане в пригоді.
+</p>
+
+<h2>Журнали CT</h2>
+<p>
+Інформацію про різні стани життєвого циклу, через які проходить журнал CТ, можна знайти <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">тут</a>.
+</p>
+
+{{< ct_logs data="production" >}}
+<li>
+  Oak включено до складу CT програм <a href="https://support.apple.com/en-us/HT209255">Apple</a> і <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
+    >Google</a
+>.
+</li>
+<li>Наше виробниче середовище API ACME подає сертифікати тут.</li>
+{{< /ct_logs >}} {{< ct_logs data="testing" >}}
+<li>
+  SCT з цих журналів <b>НЕ ПОВИННІ</b> бути включені до загальнодоступних довірених сертифікатів.
+</li>
+<li>
+  Виробниче середовище Let's Encrypt і проміжне середовище ACME API обидва подають сертифікати до Sapling, але виробниче середовище не використовує результати SCT.
+</li>
+<li>
+  Ми тестуємо нові версії <a href="http://github.com/google/trillian">Trillian</a> і <a href="https://github.com/google/certificate-transparency-go"
+    >certificate-transparency-go</a
+> тут, перш ніж запустити їх у виробництво.
+</li>
+<li>
+  Список прийнятих коренів Sapling містить усі прийняті корені Oak, а також додаткові тестові корені.
+</li>
+<li>
+  Sapling може бути використаний іншими центрами сертифікації для тестування.
+</li>
+{{< /ct_logs >}}
+<br />
+<h2>Операції журналу</h2>
+<p>
+  Щоб перелічити включені корені для певного журналу CT, можна виконати таку команду у вибраному вами терміналі:
+</p>
+<pre>
+$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>
+  Надсилання сертифікатів до журналу CT зазвичай обробляється центрами сертифікації. Якщо бажаєте поекспериментувати з цим, почніть з отримання довільного закодованого сертифіката PEM з нашого улюбленого вебсайту. Скопіюйте та вставте
+  наступний блок до вашого терміналу.
+</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>
+  Перш ніж подавати сертифікат, він повинен бути закодований JSON у спеціальній структурі. Щоб виконати це завдання, ви можете скористатися генератором JSON тут: <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>. Утиліта crt.sh поверне пакет JSON. Завантажте пакет на свій комп'ютер, перейменуйте файл, якщо потрібно, і виконайте наступну команду, щоб здійснити операцію додавання ланцюжка (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962, розділ 4.1</a
+>) і відправити сертифікат до журналу CT. Результат буде містити підпис, який насправді є <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. Детальніше про підпис за мить.
+</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
+{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+</pre>
+
+<p>
+  Щоб підтвердити, що журнал CT підписано фрагментом Oak 2020, ми використовуємо поле id з наведеної вище команди та запускаємо його за допомогою наведеної нижче команди. Результатом цього буде вихідний ідентифікатор журналу CT.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+</pre>
+
+<p>
+  Використовуючи поле підпису, можна перевірити, що сертифікат було надіслано до
+  журналу. Використавши наш
+  <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >Посібник з глибокого занурення SCT</a
+>, можна продовжити декодувати це значення.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
+9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
+5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
+2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
+47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+</pre>

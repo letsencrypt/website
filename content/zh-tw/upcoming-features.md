@@ -3,9 +3,9 @@ title: 即將推出的功能
 slug: upcoming-features
 top_graphic: 1
 lastmod: 2019-07-03
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## 多點驗證
 

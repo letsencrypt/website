@@ -12,13 +12,26 @@
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/client-options") }}</li>
-    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}</li>
+    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}
+        <ul>
+            <li>{{ template "link" (dict "context" . "page" "/docs/duplicate-certificate-limit") }}</li>
+        </ul>
+        <ul>
+            <li>{{ template "link" (dict "context" . "page" "/docs/failed-validation-limit") }}</li>
+        </ul>
+        <ul>
+            <li>{{ template "link" (dict "context" . "page" "/docs/too-many-registrations-for-this-ip") }}</li>
+        </ul>
+    </li>
     <li>{{ template "link" (dict "context" . "page" "/docs/expiration-emails") }}</li>
+    <li>{{ template "link" (dict "context" . "page" "/docs/dst-root-ca-x3-expiration-september-2021") }}</li>
 </ul>
 
 <h1 id="{{ anchorize (i18n "advanced_subscriber_information") }}">{{ i18n "advanced_subscriber_information" }}</h1>
 
 <ul>
+    <li><a href="https://cp.letsencrypt.org">{{ i18n "certificate_policy" }}</a></li>
+    <li><a href="https://cps.letsencrypt.org">{{ i18n "certification_practices_statement" }}</a></li>
     <li>{{ template "link" (dict "context" . "page" "/docs/staging-environment") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/docs/cert-compat") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/certificates") }}</li>
@@ -33,6 +46,7 @@
     <li>{{ template "link" (dict "context" . "page" "/docs/ipv6") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/docs/a-warm-welcome-to-asn1-and-der") }}</li>
     <li><a href="/2019/10/09/onboarding-your-customers-with-lets-encrypt-and-acme.html">{{ i18n "onboarding_customers" }}</a></li>
+    <li>{{ template "link" (dict "context" . "page" "/docs/lencr-org.md") }}</li>
 </ul>
 
 <h1 id="{{ anchorize (i18n "client_developer_information") }}">{{ i18n "client_developer_information" }}</h1>

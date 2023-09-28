@@ -4,9 +4,9 @@ slug: godaddy
 top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 We get a lot of questions about how to use Let’s Encrypt on GoDaddy. If you use
 GoDaddy shared web hosting, it’s currently very difficult to install a Let’s

@@ -32,7 +32,7 @@ Python 模組 [acme](https://github.com/certbot/certbot/tree/master/acme) 是 Ce
 
 在你提出 pull request 之前，請先確認：
 
-1. 你的客戶端尊重 [Let's Encrypt 商標](/trademarks)
+1. 你的客戶端尊重 [Let's Encrypt 商標](https://www.abetterinternet.org/trademarks)
 1. 你的客戶端不是使用網頁版，並且支援自動更新憑證
 1. 請將你的客戶端名稱透過添加到該分類的**最後面**（如果該軟體支援 ACMEv2 協定，別忘了添加 "acme_v2"）
 1. 請將 `clients.json` 文件上方中的 `lastmod` 日期更新

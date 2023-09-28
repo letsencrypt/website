@@ -4,9 +4,9 @@ slug: ipv6-support
 top_graphic: 1
 date: 2020-02-07
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt supports IPv6 both for accessing the ACME API using an ACME
 client, and for the DNS lookups and HTTP requests we make when validating your

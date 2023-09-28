@@ -1,0 +1,34 @@
+---
+title: Статистика Let's Encrypt
+linkTitle: Статистика
+slug: stats
+top_graphic: 3
+excerpt: Let's Encrypt статистика сертифікації.
+lastmod: 2019-08-22
+menu:
+  main:
+    weight: 70
+    parent: about
+---
+
+
+<div class="figure">
+  <h2><a id="growth" href="#growth"
+    >Зростання Let's Encrypt</a></h2>
+  <div id="activeUsage" title="Зростання Let's Encrypt" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="percent-pageloads" href="#percent-pageloads"
+    >Відсоток веб-сторінок завантажений через Firefox, використовуючи HTTPS</a></h2>
+  <p>(14-денне рухоме середнє, джерело: <a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Телеметрія Firefox</a>)</p>
+  <div id="pageloadPercent" title="Відсоток веб-сторінок завантажений через Firefox, використовуючи HTTPS" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="daily-issuance" href="#daily-issuance"
+    >Кількість сертифікатів Let's Encrypt, виданих за добу</a></h2>
+  <div id="issuancePerDay" title="Кількість сертифікатів Let's Encrypt, виданих за добу" class="statsgraph"></div>
+</div>
+
+{{< plotly >}}

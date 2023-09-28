@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2016-12-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt 盡力地在不影響安全性的前提下相容各種軟體。一個平台是否能驗證 Let's Encrypt 的憑證，主要取決於平台的憑證信任倉庫中是否包含 IdenTrust DST Root X3 憑證。另外平台也得支援 [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) 憑證，因為 Let's Encrypt 所有的憑證都使用 SHA-2。
 

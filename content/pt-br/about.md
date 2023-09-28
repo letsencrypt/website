@@ -16,11 +16,11 @@ Nós fornecemos gratuitamente os certificados digitais necessários para habilit
 
 Os princípios chave da Let's Encrypt são: 
 
-* <strong>Gratuita:</strong> Qualquer pessoa que possui um nome de domínio pode usar a Let's Encrypt para obter um certificado confiável com custo zero.
-* <strong>Automatizada:</strong> Um software no servidor web pode interagir com a Let's Encrypt para obter um certificado, configurá-lo de maneira segura para uso e cuidar da sua renovação automaticamente. 
-* <strong>Segura:</strong> A Let's Encrypt servirá como plataforma para avançar as melhores práticas do TLS, tanto no lado da Autoridade Certificadora quanto ajudando operadores de sites a configurarem corretamente seus servidores. 
-* <strong>Transparente:</strong> Todos os certificados emitidos ou revogados estarão disponíveis publicamente para que qualquer pessoa possa inspecioná-los.
-* <strong>Aberta:</strong> O protocolo de emissão e renovação serão publicados como um padrão aberto que outros podem adotar.
-* <strong>Cooperativa:</strong> Assim como os protocolos de Internet, a Let's Encrypt é uma junção de esforços para beneficiar a comunidade, além do controle de qualquer organização centralizada. 
+* **Gratuita:** Qualquer pessoa que possui um nome de domínio pode usar a Let's Encrypt para obter um certificado confiável com custo zero.
+* **Automatizada:** Um software no servidor web pode interagir com a Let's Encrypt para obter um certificado, configurá-lo de maneira segura para uso e cuidar da sua renovação automaticamente. 
+* **Segura:** A Let's Encrypt servirá como plataforma para avançar as melhores práticas do TLS, tanto no lado da Autoridade Certificadora quanto ajudando operadores de sites a configurarem corretamente seus servidores. 
+* **Transparente:** Todos os certificados emitidos ou revogados estarão disponíveis publicamente para que qualquer pessoa possa inspecioná-los.
+* **Aberta:** O protocolo de emissão e renovação serão publicados como um padrão aberto que outros podem adotar.
+* **Cooperativa:** Assim como os protocolos de Internet, a Let's Encrypt é uma junção de esforços para beneficiar a comunidade, além do controle de qualquer organização centralizada. 
 
 Temos uma página com informações mais detalhadas sobre [como a Autoridade Certificadora Let's Encrypt funciona](/how-it-works).

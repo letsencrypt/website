@@ -45,7 +45,7 @@ The `lastmod` is localized using javascript (see `i18n.js`)
 
 ## How to inform visitors about the translations
 
-On the top of each English pages with translations (pages really translated, not with the `untranslated` attribute), for each languages a messages says "See this page in XXX". The javascript (`i18n.js`) only displays the languages relevant for the visitor (see `layouts/_default/single.html`).
+On the top of each English page with translations (pages really translated, not with the `untranslated` attribute), for each language, a message says "See this page in XXX". The javascript (`i18n.js`) only displays the languages relevant to the visitor (see `layouts/_default/single.html`).
 
 # Glossary
 
@@ -71,11 +71,11 @@ Ex.: amount_per_year="${{ .nb }}/yr (USD)"
 
 To construct "$10.000/yr (USD)"
 
-The shortcode is called in the `.md` template with the translations for Platin/Gold/Silver as parameter. They are **not** in `i18n/` because there already are translations for those words for the **list** of sponsors, and sometimes the translation differs (Ex. in `ru`).
+The shortcode is called in the `.md` template with the translations for Platin/Gold/Silver as a parameter. They are **not** in `i18n/` because there already are translations for those words for the **list** of sponsors, and sometimes the translation differs (Ex. in `ru`).
 
 # How to add a new page
 
-## If that page must appears in other language than English
+## If that page must appear in languages other than English
 
 ### If that page may be translated
 
@@ -104,7 +104,7 @@ do_not_translate: 1
 
 ```
 
-## If that page must appears in the docs index
+## If that page must appear in the docs index
 
 The file `layouts/_default/shortcodes/docs_index.md` must be updated.
 
@@ -117,6 +117,6 @@ https://github.com/gohugoio/hugo/releases
 1. Generate the website using the current version: `hugo -d /tmp/current`
 2. Generate the website using the updated version: `hugo -d /tmp/updated`
 3. Check the diff to be sure nothing is broken: `diff -r /tmp/current /tmp/updated` (the diff is **never** empty, you must see at least the version updated in two files per languages)
-4. If necessary, updates the code to be compatible with the new hugo version
-5. Update `netlify.toml` and `.travis.yml` to the new hugo version
-6. After opening the PR, check the Netlify preview: in the source you need to check in the `<head>` the meta tag `<meta name="generator" content="Hugo 0.XX.X">` to be sure that version of Hugo is avaliable on Netlify.
+4. If necessary, updates the code to be compatible with the new Hugo version
+5. Update `netlify.toml` and `.travis.yml` to the new Hugo version
+6. After opening the PR, check the Netlify preview: in the source, you need to check in the `<head>` the meta tag `<meta name="generator" content="Hugo 0.XX.X">` to be sure that version of Hugo is available on Netlify.

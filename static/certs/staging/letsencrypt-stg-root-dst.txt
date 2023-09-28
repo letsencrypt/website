@@ -1,0 +1,57 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            ba:8c:66:24:4d:69:11:78:10:66:52:f6:ea:e5:8f:ed
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Doctored Durian Root CA X3
+        Validity
+            Not Before: Sep 30 21:12:19 2000 GMT
+            Not After : Jan 30 14:01:15 2021 GMT
+        Subject: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Doctored Durian Root CA X3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:a9:46:63:a1:16:e3:81:77:9c:3d:6c:57:90:60:
+                    94:11:77:0d:ae:ea:4b:ed:d9:1b:c1:cd:23:51:32:
+                    c5:10:3b:dc:c9:f0:f5:81:87:a4:63:9b:8b:0f:5f:
+                    6e:cd:84:e5:d2:92:99:cf:30:d7:1c:93:e7:25:8e:
+                    44:12:9d:bb:9c:00:85:3a:6f:17:cd:7f:6c:39:10:
+                    1a:9e:03:f4:3a:71:94:91:72:59:0c:73:3e:f1:c5:
+                    f6:10:72:5b:7e:3d:25:83:52:62:ad:11:77:c3:6b:
+                    b5:fc:a4:6e:14:4b:c8:95:68:37:15:d5:dd:b1:21:
+                    47:04:5e:73:d4:88:fb:30:b9:fb:4a:46:b9:73:fe:
+                    5f:2a:c0:d6:11:8c:ce:30:1e:84:05:6d:53:f5:10:
+                    e4:56:4f:d0:f7:ae:44:c0:34:f8:6d:1e:81:39:76:
+                    a4:6a:c8:1f:2a:b1:fd:9b:57:fa:97:d3:26:03:45:
+                    67:5d:dc:3d:ad:9f:ac:4e:f3:07:1b:5c:96:06:a3:
+                    4c:4a:a0:8a:7b:78:c6:e9:c6:96:80:de:e5:94:46:
+                    e3:e5:8b:02:5a:cd:f6:6f:3d:9d:31:fb:46:91:70:
+                    4f:73:2d:5f:35:6b:e9:79:3e:c6:0f:3d:99:d1:05:
+                    93:94:79:32:5c:0d:a4:1b:0d:f6:7d:da:17:2c:75:
+                    8e:13
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                08:57:DA:89:C7:A2:53:79:0C:4F:DD:E0:90:8F:74:BA:E2:27:73:44
+    Signature Algorithm: sha256WithRSAEncryption
+         5e:e5:12:d1:ee:48:de:23:fb:11:50:b0:cf:ee:8d:a5:4a:72:
+         7e:7b:55:ba:db:4d:e7:27:b2:99:89:24:0e:c7:ae:7e:8e:12:
+         bb:21:18:d3:b4:a7:5f:ee:d7:87:3b:b4:61:ca:8e:d1:75:b4:
+         41:45:49:58:5b:35:79:4a:c3:d3:bd:f4:07:e1:9a:51:60:74:
+         67:09:28:41:e7:65:cb:41:07:c6:e1:34:ed:fc:ee:f6:e2:09:
+         82:07:75:4f:e7:49:b6:bd:30:20:d8:c3:6f:d4:0a:da:1b:67:
+         a6:a8:f8:a2:40:dc:82:a6:3e:2c:5c:b4:06:e7:d8:89:2b:10:
+         df:57:d1:25:cd:3f:58:27:a9:03:f8:56:16:49:22:1e:9c:77:
+         ba:e0:f4:c8:a6:ce:82:e5:30:8d:e6:db:3d:75:75:21:98:6e:
+         1f:0e:59:27:6f:03:b6:8b:6d:21:a8:80:33:b9:1f:85:83:f1:
+         f8:2a:10:6d:2b:79:20:4e:f3:d7:9e:1f:ec:1e:f8:16:71:42:
+         d0:62:53:76:fd:54:c5:74:76:b7:3e:ef:30:b6:35:b5:ea:79:
+         0c:2e:e9:04:e5:7d:b2:7c:ca:da:9c:a9:4c:b4:83:95:d2:13:
+         a5:82:cc:f3:8b:dc:7f:6b:d2:3f:46:eb:87:5f:a2:d1:a5:04:
+         0e:6d:1b:ac

@@ -1,3 +1,7 @@
+
+{{ $LanguageDirection := or .Page.Language.LanguageDirection "ltr" }}
+
+<div dir="ltr">
 {{ range $.Site.Data.clients.categories }}
     <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
     {{ $category := . }}
@@ -17,16 +21,16 @@
     </ul>
 {{ end }}
 
-<h1 id="libraries">{{ .Get "libraries" }}</h1>
+<h1 dir="{{ $LanguageDirection }}" id="libraries">{{ .Get "libraries" }}</h1>
 
 {{ $certbot := .Inner }}
 
 {{ range $.Site.Data.clients.libraries }}
     <h2 id="libraries-{{ urlize . }}">{{ . }}</h2>
     {{ $library := . }}
-    <ul>
+    <ul dir="ltr">
     {{ if eq . "Python"}}
-        <li>{{ $certbot | markdownify }}</li>
+        <li dir="{{ $LanguageDirection }}">{{ $certbot | markdownify }}</li>
     {{ end }}
     {{ range $.Site.Data.clients.list }}
         {{ if and .acme_v2 (eq $library .library) }}
@@ -43,11 +47,11 @@
     </ul>
 {{ end }}
 
-<h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
+<h1 dir="{{ $LanguageDirection }}" id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
 
 <ul>
 {{ range $.Site.Data.clients.projects }}
-        <li>
+        <li dir="ltr">
             <a href="{{ .url }}">{{ .name }}</a>
             {{ if .comments }}
                 {{ .comments | markdownify }}
@@ -55,6 +59,7 @@
         </li>
 {{ end }}
 </ul>
+</div>
 
 {{ range $.Site.Data.clients.list }}
     {{ if and (not .category) (not .library) }}

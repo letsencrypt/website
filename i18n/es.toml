@@ -30,14 +30,14 @@ other = "Apoya una Web más segura y respetuosa de la privacidad."
 [footer_donate]
 other = "Donar"
 
+[footer_mailing]
+other = "Envíe todo el correo o consultas a:"
+
 [footer_policies]
 other = """
 Mira nuestra <a href="/es/privacy/">política de privacidad</a>.<br>
-Mira nuestra <a href="/es/trademarks/">política de marca</a>.
+Mira nuestra <a href="https://www.abetterinternet.org/trademarks/">política de marca</a>.
 """
-
-[linux_foundation_trademark]
-other = "Linux Foundation es una marca registrada de The Linux Foundation. Linux es una marca registrada de Linus Torvalds."
 
 [header_skip_nav]
 other = "Saltar enlaces de navegación"
@@ -65,11 +65,6 @@ other = "Lenguajes"
 
 [view_in_english]
 other = "Ver en inglés"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/single.html)
-other = "Ver en español"
 
 [old_version]
 other = "Nota: La versión en inglés ha sido actualizada desde está traducción"

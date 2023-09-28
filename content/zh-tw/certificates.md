@@ -4,9 +4,9 @@ linkTitle: 憑證信任鏈（根憑證與中間憑證）
 slug: certificates
 top_graphic: 5
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # 根憑證
 

@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Voittoa tavoittelematon varmennemyöntäjä, joka tarjoaa TLS-sertifikaatteja <span>260 miljoonalle</span> verkkosivustolle."
+
+[home_hero_getting_started]
+other = "Aloita"
+
+[home_hero_donate]
+other = "Lahjoita"
+
+[home_hero_sponsor]
+other = "Sponsoroi"
+
+[home_hero_annual_report]
+other = "Meille myönnettiin Levchin-palkinto reaalimaailman salauksesta! <a href='https://abetterinternet.org/levchin-prize'>Lue lisää</a>"
+
+[home_major_sponsors]
+other = "Merkittävät sponsorit ja rahoittajat"
+
+[home_from_our_blog]
+other = "Blogistamme"
+
+[read_more]
+other = "Lue lisää"
+
+[subscribe_rss]
+other = 'Tilaa <a href="{{ .Permalink }}">RSS-syötteenä</a>'
+
+[footer_support_us]
+other = "Tue turvallisempaa ja yksityisyyttä arvostavampaa verkkoa."
+
+[footer_donate]
+other = "Lahjoita"
+
+[footer_mailing]
+other = "Lähetä kaikki sähköpostit tai tiedustelut osoitteeseen:"
+
+[footer_policies]
+other = """
+Tutustu <a href="/privacy/">tietosuojakäytäntöömme</a>.<br>
+Tutustu <a href="https://www.abetterinternet.org/trademarks">tavaramerkkikäytäntöömme</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation on Linux Foundationin rekisteröity tavaramerkki. Linux on Linus Torvaldsin rekisteröity tavaramerkki."
+
+[header_skip_nav]
+other = "Ohita navigointilinkit"
+
+[last_updated]
+other = "Viimeksi päivitetty: "
+
+[see_all_doc]
+other = "Näytä koko dokumentaatio"
+
+[blog_feed]
+other = "Let's Encrypt -blogin syöte"
+
+[platinum]
+other = "Platina"
+
+[gold]
+other = "Kulta"
+
+[gold_basic]
+other = "Kulta (Perus)"
+
+[silver]
+other = "Hopea"
+
+[languages]
+other = "Kielet"
+
+[view_in_english]
+other = "Näytä englanniniksi"
+
+[old_version]
+other = "Huomioi: Englanninkielinen versio on muuttunut käännöksen jälkeen"
+
+[not_yet_translated]
+other = 'Tätä verkkosivua ei ole vielä käännetty. Voit osallistua <a href="https://github.com/letsencrypt/website">täällä</a>.'
+
+[english_is_canonical]
+other = "Englanninkielinen versio on määräävä"
+
+[graph_issued]
+other = "Myönnetty"
+
+[graph_certificates_active]
+other = "Varmenteet aktiivisina"
+
+[graph_fully_qualified_domains_active]
+other = "Täysin Pätevät Verkkotunnukset Aktiivinen"
+
+[graph_registered_domains_active]
+other = "Rekisteröidyt verkkotunnukset käytössä"
+
+[graph_active_count]
+other = "Aktiivisten lukumäärä"
+
+[graph_issued_per_day]
+other = "Myönnetty päivässä"
+
+[graph_all_users]
+other = "Kaikki käyttäjät"
+
+[graph_usa_users]
+other = "Yhdysvaltojen käyttäjät"
+
+[graph_japan_users]
+other = "Japanin käyttäjät"
+
+[graph_percent_https]
+other = "Prosenttiosuus sivujen latauksista HTTPS:n välityksellä (14 päivän liukuva keskiarvo)"
+
+[certificate_policy]
+other = "Varmennekäytäntö"
+
+[certificate_transparency_name]
+other = "Nimi"
+
+[certificate_transparency_role_production]
+other = "Tuotanto"
+
+[certificate_transparency_role_testing]
+other = "Testaus"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Julkinen avain"
+
+[certificate_transparency_log_id]
+other = "Kirjaustunniste"
+
+[certificate_transparency_state]
+other = "Tila"
+
+[certificate_transparency_window_start]
+other = "Aikajakson alku"
+
+[certificate_transparency_window_end]
+other = "Aikajakson loppu"
+
+[certification_practices_statement]
+other = "Sertifiointikäytäntöjä koskeva lausuma"
+
+[overview]
+other = "Yleiskatsaus"
+
+[subscriber_information]
+other = "Tilaajan tiedot"
+
+[advanced_subscriber_information]
+other = "Tilaajan Kehittyneet Tiedot"
+
+[client_developer_information]
+other = "Asiakaskehittäjän tiedot"
+
+[acme_divergences]
+other = "Erot nykyiseen ACME-luonnokseen verrattuna"
+
+[acme_divergences_rfc]
+other = "Erot ACME RFC -luokitukseen verrattuna"
+
+[onboarding_customers]
+other = "Ota asiakkaasi mukaan Let's Encryptillä ja ACME:lla"
+
+[paypal_donate_alt]
+other = "Lahjoita PayPal-painikkeella"
+
+[paypal_donate_title]
+other = "Lahjoita PayPalilla"
+
+[not_found]
+other = "Sivua ei ole olemassa, tarkista osoite."
+
+[amount_per_year]
+other = "{{ .nb }} $ (USD) vuodessa"
+
+[3y_commitment]
+other = "kolmen vuoden sitoumuksella"
+
+[1_99_employees]
+other = "1-99 työntekijää"
+
+[100_999_employees]
+other = "100-999 työntekijää"
+
+[1000_employees]
+other = "1000+ työntekijää"

@@ -1,0 +1,38 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            83:e0:73:79:39:2e:52:d5:2e:d5:14:be:ce:0a:fd:07
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Validity
+            Not Before: Sep  4 00:00:00 2020 GMT
+            Not After : Sep 17 16:00:00 2040 GMT
+        Subject: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:3a:f4:be:c3:59:02:cc:0c:58:38:96:c0:d3:a0:
+                    30:d0:71:4f:da:d2:c1:2c:a3:e8:15:0a:91:f4:03:
+                    2c:92:5d:67:0b:6f:7b:e5:e4:2a:c9:c4:7e:00:2b:
+                    d8:7a:50:3c:ad:fc:05:5c:e6:cc:1d:85:c9:db:75:
+                    cb:07:e7:40:8c:f2:55:38:9d:8e:72:c8:d3:56:a3:
+                    b8:75:c0:d6:bb:ea:d0:d9:52:0b:76:72:51:63:2a:
+                    67:57:53:0c:4e:15:71
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                DE:D1:A3:59:64:0E:C1:9A:36:A3:46:EE:B0:10:76:EF:AE:97:95:66
+    Signature Algorithm: ecdsa-with-SHA384
+         30:65:02:30:45:ca:78:64:a0:6c:ab:d5:e4:52:e3:7c:c1:f5:
+         fe:18:46:d8:d4:de:67:98:24:5c:f1:ef:34:91:49:2e:01:e7:
+         e8:b9:cd:a3:dd:c2:02:79:7a:35:70:ec:9b:43:58:96:02:31:
+         00:dc:ea:1a:c2:5f:1e:43:24:78:c2:b8:c2:a1:f5:04:f2:1e:
+         38:a7:48:fb:62:5f:e4:06:52:59:4f:cf:bd:bd:bb:47:ed:08:
+         95:cd:e2:82:39:34:0f:20:dc:91:aa:5e:8f

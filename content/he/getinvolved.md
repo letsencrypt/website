@@ -7,9 +7,9 @@ menu:
   main:
     weight: 60
     parent: donate
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 ## קהילה
 
@@ -29,4 +29,4 @@ menu:
 
 ### letsencrypt.org
 
-ניתן לשפר את האתר הזה ואת התיעוד דרך [כאן](https://github.com/letsencrypt/website) או לסייע ב[תרגומים](https://github.com/letsencrypt/website/blob/master/TRANSLATION.md) עבורו.
+ניתן לשפר את האתר הזה ואת התיעוד דרך [כאן](https://github.com/letsencrypt/website) או לסייע ב[תרגומים](https://crowdin.com/project/lets-encrypt-website) עבורו.

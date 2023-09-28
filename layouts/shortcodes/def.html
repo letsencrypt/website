@@ -35,30 +35,26 @@ Notes:
 	lang="en" is used for the accent for screen readers
 -->
 
-<p class="definition">
-	<a href="#def-{{.Get "id" }}">
-	{{- if and (.Get "abbr") (eq (.Get "abbr_first") "1") -}}
-			<dfn id="def-{{.Get "id" }}"><abbr lang="en">{{ .Get "abbr" }}</abbr></dfn>
-				{{- if .Get "name" }} ({{.Get "name" }}{{ if .Get "english" }} - <i lang="en">{{ .Get "english" }}</i>{{ end }})
-				{{- else }}{{ if .Get "english" -}} (<i lang="en">{{ .Get "english" }}</i>{{ end }})
-				{{- end }}
-	{{- else -}}
-		{{- if .Get "name" -}}
-			<dfn id="def-{{.Get "id" }}">{{.Get "name" }}</dfn>
-			{{- if or (.Get "abbr") (.Get "english") -}}
-				{{- if .Get "english" }} ({{ with .Get "abbr" }}<abbr lang="en">{{ . }}</abbr> - {{ end -}}<i lang="en">{{ .Get "english" }}</i>)
-				{{- else }} (<abbr>{{ .Get "abbr" }}</abbr>)
-				{{- end }}
-			{{- end }}
-		{{- else -}}
-			{{- if .Get "english" -}}
-				<dfn id="def-{{.Get "id" }}" lang="en">{{.Get "english" }}</dfn>
-				{{- if .Get "abbr" }} (<abbr lang="en">{{ .Get "abbr" }}</abbr>){{- end }}
-			{{- else -}}
-				<dfn id="def-{{.Get "id" }}"><abbr>{{.Get "abbr" }}</abbr></dfn>
-			{{- end -}}
-		{{- end -}}
-	{{- end -}}
-	</a>
-	{{ .Site.Params.beforeColon | safeHTML }}: {{ .Inner }}
-</p>
+{{ $id := .Get "id" }}
+{{ $name := .Get "name" }}
+{{ $english := .Get "english" }}
+{{ $abbr := .Get "abbr" }}
+{{ $abbr_first := .Get "abbr_first" }}
+{{ $content := .Inner }}
+
+{{ $sortname := "" }}
+{{- if and ($abbr) (eq ($abbr_first) "1") -}}
+	{{ $sortname = $abbr }}
+{{- else -}}
+{{- if $name -}}
+	{{ $sortname = $name }}
+{{- else -}}
+{{- if $english -}}
+	{{ $sortname = $english }}
+{{- else -}}
+	{{ $sortname = $abbr }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+{{ .Page.Scratch.SetInMap "glossary" $sortname (dict "id" $id "name" $name "english" $english "abbr" $abbr "abbr_first" $abbr_first "content" $content) }}

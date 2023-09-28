@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Un'autorità di certificazione senza scopo di lucro che fornisce certificati TLS a <span>260 milioni</span> di siti web."
+
+[home_hero_getting_started]
+other = "Come iniziare"
+
+[home_hero_donate]
+other = "Dona"
+
+[home_hero_sponsor]
+other = "Sponsor"
+
+[home_hero_annual_report]
+other = "Abbiamo ricevuto il Premio Levchin per la Crittografia del Mondo Reale! <a href='https://abetterinternet.org/levchin-prize'>Scopri di più</a>"
+
+[home_major_sponsors]
+other = "Sponsor principali e finanziatori"
+
+[home_from_our_blog]
+other = "Dal nostro blog"
+
+[read_more]
+other = "Leggi altro"
+
+[subscribe_rss]
+other = 'Abbonati <a href="{{ .Permalink }}">tramite RSS</a>'
+
+[footer_support_us]
+other = "Supporta un Web più sicuro e rispettoso della privacy."
+
+[footer_donate]
+other = "Dona"
+
+[footer_mailing]
+other = "Invia tutte le email o richieste a:"
+
+[footer_policies]
+other = """
+Vedi la nostra politica <a href="/privacy/">sulla privacy</a>.<br>
+Vedi la nostra <a href="https://www.abetterinternet.org/trademarks">politica sui marchi</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation è un marchio registrato di The Linux Foundation. Linux è un marchio registrato di Linus Torvalds."
+
+[header_skip_nav]
+other = "Salta link di navigazione"
+
+[last_updated]
+other = "Ultimo aggiornamento: "
+
+[see_all_doc]
+other = "Vedi tutta la documentazione"
+
+[blog_feed]
+other = "Feed del blog di Let's Encrypt"
+
+[platinum]
+other = "Platino"
+
+[gold]
+other = "Oro"
+
+[gold_basic]
+other = "Oro Base"
+
+[silver]
+other = "Argento"
+
+[languages]
+other = "Lingue"
+
+[view_in_english]
+other = "Mostra in Inglese"
+
+[old_version]
+other = "Nota: La versione inglese è stata aggiornata dalla traduzione"
+
+[not_yet_translated]
+other = 'Questa pagina web non è ancora stata tradotta. Puoi contribuire <a href="https://github.com/letsencrypt/website">qui</a>.'
+
+[english_is_canonical]
+other = "La versione inglese è autorevole"
+
+[graph_issued]
+other = "Emesso"
+
+[graph_certificates_active]
+other = "Certificati Attivi"
+
+[graph_fully_qualified_domains_active]
+other = "Fully Qualified Domain Name"
+
+[graph_registered_domains_active]
+other = "Domini Registrati Attivi"
+
+[graph_active_count]
+other = "Conteggio Attività"
+
+[graph_issued_per_day]
+other = "Emessi Al Giorno"
+
+[graph_all_users]
+other = "Tutti gli Utenti"
+
+[graph_usa_users]
+other = "Utenti USA"
+
+[graph_japan_users]
+other = "Utenti del Giappone"
+
+[graph_percent_https]
+other = "Percentuale di Pageloads su HTTPS (media mobile di 14 giorni)"
+
+[certificate_policy]
+other = "Politica Del Certificato"
+
+[certificate_transparency_name]
+other = "Nome"
+
+[certificate_transparency_role_production]
+other = "Produzione"
+
+[certificate_transparency_role_testing]
+other = "Testing"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Chiave pubblica"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "Stato"
+
+[certificate_transparency_window_start]
+other = "Inizio finestra"
+
+[certificate_transparency_window_end]
+other = "Fine finestra"
+
+[certification_practices_statement]
+other = "Dichiarazione sulle pratiche di certificazione"
+
+[overview]
+other = "Sommario"
+
+[subscriber_information]
+other = "Informazioni sull'abbonato"
+
+[advanced_subscriber_information]
+other = "Informazioni avanzate sull'abbonato"
+
+[client_developer_information]
+other = "Informazioni Sviluppatore Client"
+
+[acme_divergences]
+other = "Differenze rispetto alla bozza ACME attuale"
+
+[acme_divergences_rfc]
+other = "Differenze rispetto all'RFC di ACME"
+
+[onboarding_customers]
+other = "Onboarding dei tuoi clienti con Let's Encrypt e ACME"
+
+[paypal_donate_alt]
+other = "Dona con PayPal"
+
+[paypal_donate_title]
+other = "Dona con PayPal"
+
+[not_found]
+other = "Quella pagina non esiste, per favore controlla l'indirizzo."
+
+[amount_per_year]
+other = "${{ .nb }}/anno (USD)"
+
+[3y_commitment]
+other = "con un impegno di 3 anni"
+
+[1_99_employees]
+other = "1-99 dipendenti"
+
+[100_999_employees]
+other = "100-999 dipendenti"
+
+[1000_employees]
+other = "1000+ dipendenti"

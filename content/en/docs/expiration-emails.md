@@ -3,18 +3,20 @@ title: Expiration Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2019-04-18
+lastmod: 2023-01-09
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # Subscribing
 
 If you provide an email address to Let's Encrypt when you create your
-account, we'll automatically send you expiry notices when your certificate
-is coming up for renewal. We send the first notice at 20 days before
-your certificate expires, and more notices at 10 days and 1 day before
-it expires.
+account, we'll do our best to automatically send you expiry notices
+when your certificate is coming up for renewal. We try to send the first
+notice at 20 days before your certificate expires, and the second and final notice
+at 7 days before it expires. We recommend that you rely on
+your ACME client to automatically renew your certificates, and only use
+these expiry notices as a warning to check on your automation.
 
 # When You Get an Expiration Email
 
@@ -25,6 +27,9 @@ If you've issued a new certificate that adds or removes a name relative to your
 old certificate, you will get expiration email about your old certificate.
 If you check the certificate currently running on your website, and it
 shows the correct date, no further action is needed.
+To see a history of issued certificates for your domain, you could search for
+your domain on certificate transparency log monitors such as
+[crt.sh](https://crt.sh/).
 
 # Unsubscribing
 
@@ -40,7 +45,7 @@ renew it every year.
 There's not yet a way for us to efficiently re-subscribe
 you if you unsubscribe. Our email provider, Mandrill,
 [has a manual mechanism that we still need to
-automate](https://mandrill.zendesk.com/hc/en-us/articles/205582947-About-Unsubscribes).
+automate](https://mandrill.zendesk.com/hc/en-us/articles/360039299913).
 
 However, you can change the email address on your account, which effectively
 re-subscribes you. Many common email services treat `yourname+1@example.com` the

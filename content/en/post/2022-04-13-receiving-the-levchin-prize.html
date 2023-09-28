@@ -1,0 +1,177 @@
+---
+author: Josh Aas
+date: 2022-04-13T00:00:00Z
+slug: receiving-the-levchin-prize
+title: "Let’s Encrypt Receives the Levchin Prize for Real-World Cryptography"
+excerpt: "We are honored to be recognized for the impact on the field of cryptography."
+---
+
+<p>
+  <em
+    >On April 13, 2022, the Real World Crypto steering committee presented the
+    Max Levchin Prize for Real-World Cryptography to Let’s Encrypt. The
+    following is the speech delivered by our Executive Director, Josh Aas upon
+    receiving the award. We’d like to
+    <a href="https://abetterinternet.org/levchin-prize"
+      >thank our community for supporting us and invite you to join us</a
+    >
+    in making the Internet more secure and privacy-respecting for everyone.</em
+  >
+</p>
+
+<div class="main-article">
+  <p>
+    Thank you to the
+    <a href="http://rwc.iacr.org/2022/">Real World Crypto</a> steering committee
+    and to <a href="https://rwc.iacr.org/LevchinPrize/">Max Levchin</a> for this
+    recognition. I couldn’t be more proud of what our team has accomplished
+    since we started working on Let’s Encrypt back in 2013.
+  </p>
+
+  <p>
+    My first temptation is to name some names, but there are so many people who
+    have given a significant portion of their lives to this work over the years
+    that the list would be too long. You know who you are. I hope you’re as
+    proud as I am at this moment.
+  </p>
+
+  <p>
+    Let’s Encrypt is currently used by more than
+    <a href="https://letsencrypt.org/stats/#growth">280 million websites</a>,
+    <a href="https://letsencrypt.org/stats/#daily-issuance"
+      >issuing between two and three million certificates per day</a
+    >. I often think about how we got here, looking for some nugget of wisdom
+    that might be useful to others. I’m not sure I’ve really come up with
+    anything particularly profound, but I’m going to give you my thoughts
+    anyway. Generally speaking: we started with a pretty good idea, built a
+    strong team, stayed focused on what’s important, and kept ease of use in
+    mind every step of the way.
+  </p>
+
+  <p>
+    Let’s Encrypt ultimately came from a group of people thinking about a pretty
+    daunting challenge. The billions of people living increasingly large
+    portions of their lives online deserved better privacy and security, but in
+    order to do that we needed to convince hundreds of millions of websites to
+    switch to HTTPS. Not only did we want them to make that change, we wanted
+    most of them to make the change within the next three to five years.
+  </p>
+
+  <div class="card border-0 pic-quote-right">
+    <img
+      alt="Levchin Prize Trophy"
+      class="rounded mx-auto img-fluid mb-4"
+      src="/images/2022.04.13.Levchin-Prize.jpg"
+    />
+  </div>
+
+  <p>
+    We thought through a lot of options but in the end we just didn’t see any
+    other way than to build what became Let’s Encrypt. In hindsight building
+    Let’s Encrypt seems like it was a good and rewarding idea, but at the time
+    it was a frustrating conclusion in many ways. It’s not an easy solution to
+    commit to. It meant standing up a new organization, hiring at least a dozen
+    people, understanding a lot of details about how to operate a CA, building
+    some fairly intense technical systems, and setting all of it up to operate
+    for decades. Many of us wanted to work on this interesting problem for a
+    bit, solve it or at least put a big dent in it, and then move on to other
+    interesting problems. I don’t know about you, but I certainly didn’t dream
+    about building and operating a CA when I was younger.
+  </p>
+
+  <p>
+    It needed to be done though, so we got to work. We built a great team that
+    initially consisted of mostly volunteers and very few staff. Over time that
+    ratio reversed itself such that most people working on Let’s Encrypt on a
+    daily basis are staff, but we’re fortunate to continue to have a vibrant
+    community of volunteers who do work ranging from translating our website and
+    providing assistance on our community forums, to maintaining the dozens
+    (maybe hundreds?) of client software options out there.
+  </p>
+
+  <p>
+    Today there are just 11 engineers working on Let’s Encrypt, as well as a
+    small team handling fundraising, communication, and administrative tasks.
+    That’s not a lot of people for an organization serving hundreds of millions
+    of websites in every country on the globe, subject to a fairly intense set
+    of industry rules, audits, and high expectations for security and
+    reliability. The team is preparing to serve as many as 1 billion websites.
+    When that day comes to pass the team will be larger, but probably not much
+    larger. Efficiency is important to us, for a couple of reasons. The first is
+    principle - we believe it’s our obligation to do the most good we can with
+    every dollar entrusted to us. The second reason is necessity - it’s not easy
+    to raise money, and we need to do our best to accomplish our mission with
+    what’s available to us.
+  </p>
+
+  <p>
+    It probably doesn’t come as a surprise to anyone here at Real World Crypto
+    that ease of use was critical to any success we’ve had in applying
+    cryptography more widely. Let’s Encrypt has a fair amount of internal
+    complexity, but we expose users to as little of that as possible. Ideally
+    it’s a fully automated and forgettable background task even to the people
+    running servers.
+  </p>
+
+  <p>
+    The fact that Let’s Encrypt is free is a huge factor in ease of use. It
+    isn’t even about how much money people might be willing or able to pay, but
+    any financial transaction requirement would make it impossible to fully
+    automate our service. At some point someone would have to get a credit card
+    and manage payment information. That task ranges in complexity from finding
+    your wallet to obtaining corporate approval. The existence of a payment in
+    any amount would also greatly limit our geographic availability because of
+    sanctions and financial logistics.
+  </p>
+
+  <p>
+    All of these factors led to the decision to form
+    <a href="https://abetterinternet.org/">ISRG, a nonprofit entity</a> to
+    support Let’s Encrypt. Our ability to provide this global, reliable service
+    is all thanks to the people and companies who believe in TLS everywhere and
+    have supported us financially. I’m so grateful to all of our contributors
+    for helping us.
+  </p>
+
+  <p>
+    Our service is pretty easy to use under normal circumstances, but we’re not
+    done yet. We can be better about handling exceptional circumstances such as
+    large revocation events. Resiliency is good. Automated, smooth resiliency is
+    even better. That’s why I’m so excited about the
+    <a href="https://www.ietf.org/id/draft-aaron-acme-ari-02.txt"
+      >ACME Renewal Info</a
+    >
+    work we’re doing in the IETF now, which will go into production over the
+    next year.
+  </p>
+
+  <p>
+    Everyone here has heard it before, but I’ll say it again because we can’t
+    afford to let it slip our minds. Ease of use is critical for widespread
+    adoption of real world cryptography. As we look toward the future of ISRG,
+    our new projects will have ease of use at their core. In fact, you can learn
+    about our newest project related to privacy-preserving measurement at two of
+    this afternoon’s sessions! Getting ease of use right is not just about the
+    software though. It’s a sort of pas de trois, a dance for three, between
+    software, legal, and finance, in order to achieve a great outcome.
+  </p>
+
+  <p>Thank you again. This recognition means so much to us.</p>
+</div>
+
+<hr style="height: 1px; margin: 40px 0; border: 0; background-color: #e8e8e8" />
+<div>
+  <h4>Supporting Let’s Encrypt</h4>
+  <p>
+    As a nonprofit project, 100% of our funding comes from contributions from
+    our community of users and supporters. We depend on their support in order
+    to provide our services for the public benefit. If your company or
+    organization would like to
+    <a href="https://www.abetterinternet.org/sponsor/">sponsor</a> Let’s Encrypt
+    please email us at
+    <a href="mailto:sponsor@letsencrypt.org">sponsor@letsencrypt.org</a>. If you
+    can support us with a
+    <a href="https://letsencrypt.org/donate/">donation</a>, we ask that you make
+    an individual contribution.
+  </p>
+</div>

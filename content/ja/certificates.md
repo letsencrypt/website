@@ -4,9 +4,9 @@ linkTitle: Chain of Trust (ルートおよび中間証明書)
 slug: certificates
 top_graphic: 5
 lastmod: 2019-10-18
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 # ルート証明書
 

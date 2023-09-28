@@ -1,7 +1,5 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>190 מיליון</span> אתרים."
+other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<span>260 מיליון</span> אתרים."
 
 [home_hero_getting_started]
 other = "איך מתחילים"
@@ -13,16 +11,10 @@ other = "תרומה"
 other = "מתן חסות"
 
 [home_hero_annual_report]
-other = "לקריאת הדוח לשנת 2019"
-
-[home_hero_desktop]
-other = "שולחן עבודה"
-
-[home_hero_mobile]
-other = "מכשיר נייד"
+other = "הוענק לנו פרס לבצ׳ין לקריפטוגרפיה בחיים האמתיים! <a href='https://abetterinternet.org/levchin-prize'>מידע נוסף</a>"
 
 [home_major_sponsors]
-other = "נותני חסות ותורמים עיקריים"
+other = "נותני חסות ומממנים עיקריים"
 
 [home_from_our_blog]
 other = "מהבלוג שלנו"
@@ -31,13 +23,16 @@ other = "מהבלוג שלנו"
 other = "מידע נוסף"
 
 [subscribe_rss]
-other = "הרשמה <a href=\"{{ .Permalink }}\">דרך RSS</a>"
+other = 'הרשמה <a href="{{ .Permalink }}">דרך RSS</a>'
 
 [footer_support_us]
 other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבדת פרטיות."
 
 [footer_donate]
 other = "תרומה"
+
+[footer_mailing]
+other = "יש לשלוח הודעות או בקשות אל:"
 
 [footer_policies]
 other = """
@@ -78,16 +73,11 @@ other = "שפות"
 [view_in_english]
 other = "מעבר לאנגלית"
 
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "מעבר לעברית"
-
 [old_version]
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"
 
 [not_yet_translated]
-other = "עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href=\"https://github.com/letsencrypt/website\">כאן</a>."
+other = 'עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href="https://github.com/letsencrypt/website">כאן</a>.'
 
 [english_is_canonical]
 other = "הגרסה האנגלית היא הסמכות העליונה"
@@ -122,11 +112,14 @@ other = "משתמשים יפניים"
 [graph_percent_https]
 other = "אחוז עמודים שנטענו עם HTTPS (ממוצע נע על פני 14 ימים)"
 
+[certificate_policy]
+other = "מדיניות אישורים"
+
 [certificate_transparency_name]
 other = "שם"
 
 [certificate_transparency_role_production]
-other = "הפעלה מלאה (Production)"
+other = "פעילות מלאה (Production)"
 
 [certificate_transparency_role_testing]
 other = "בדיקה (Testing)"
@@ -149,6 +142,9 @@ other = "תחילת החלון"
 [certificate_transparency_window_end]
 other = "סוף החלון"
 
+[certification_practices_statement]
+other = "Certification Practices Statement - הצהרת תרגולות ניהול אישורים"
+
 [overview]
 other = "סקירה"
 
@@ -170,8 +166,6 @@ other = "הבדלים מה־RFC של ACME"
 [onboarding_customers]
 other = "צירוף הלקוחות שלך עם Let's Encrypt ו־ACME"
 
-# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
-
 [paypal_donate_alt]
 other = "תרומה עם כפתור PayPal"
 
@@ -182,7 +176,6 @@ other = "תרומה עם PayPal"
 other = "העמוד הזה לא נמצא, נא לבדוק שהכתובת נכונה."
 
 [amount_per_year]
-# Ex. $10.000/yr (USD)
 other = "${{ .nb }} לשנה (דולר ארה״ב)"
 
 [3y_commitment]

@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Nezisková certifikační autorita poskytující certifikáty TLS pro <span>300 milionů</span> webových stránek."
+
+[home_hero_getting_started]
+other = "Začít"
+
+[home_hero_donate]
+other = "Přispět"
+
+[home_hero_sponsor]
+other = "Sponzorovat"
+
+[home_hero_annual_report]
+other = "Získali jsme Levchin Prize za Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Více info</a>"
+
+[home_major_sponsors]
+other = "Důležití sponzoři a investoři"
+
+[home_from_our_blog]
+other = "Z našeho blogu"
+
+[read_more]
+other = "Zobrazit více"
+
+[subscribe_rss]
+other = 'Odebírat <a href="{{ .Permalink }}">přes RSS</a>'
+
+[footer_support_us]
+other = "Podpořte bezpečnější web, který respektuje soukromí."
+
+[footer_donate]
+other = "Přispět"
+
+[footer_mailing]
+other = "Veškerou poštu nebo dotazy zasílejte na:"
+
+[footer_policies]
+other = """
+Zobrazit naše <a href="/privacy/">zásady ochrany osobních údajů</a>.<br>
+Zobrazit naše <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranných známek</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation je registrovaná známka The Linux Foundation. Linux je registorvaná známka Linuse Torvaldse."
+
+[header_skip_nav]
+other = "Přeskočit odkazy navigace"
+
+[last_updated]
+other = "Poslední úprava: "
+
+[see_all_doc]
+other = "Zobrazit celou dokumentaci"
+
+[blog_feed]
+other = "Let's Encrypt Blog Feed"
+
+[platinum]
+other = "Platinová"
+
+[gold]
+other = "Zlatá"
+
+[gold_basic]
+other = "Zlatá základní"
+
+[silver]
+other = "Stříbrná"
+
+[languages]
+other = "Jazyky"
+
+[view_in_english]
+other = "Zobraz v angličtině"
+
+[old_version]
+other = "Poznámka: Anglická verze byla od překladu aktualizována"
+
+[not_yet_translated]
+other = 'Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href="https://github.com/letsencrypt/website">zde</a>.'
+
+[english_is_canonical]
+other = "Anglická verze je směrodatná"
+
+[graph_issued]
+other = "Vydáno"
+
+[graph_certificates_active]
+other = "Certifikáty aktivní"
+
+[graph_fully_qualified_domains_active]
+other = "Plně kvalifikované domény aktivní"
+
+[graph_registered_domains_active]
+other = "Registrované domény aktivní"
+
+[graph_active_count]
+other = "Aktivní počet"
+
+[graph_issued_per_day]
+other = "Vydáno za den"
+
+[graph_all_users]
+other = "Všichni uživatelé"
+
+[graph_usa_users]
+other = "Uživatelé v USA"
+
+[graph_japan_users]
+other = "Uživatelé v Japonsku"
+
+[graph_percent_https]
+other = "Procento načtených stránek přes HTTPS (14denní klouzavý průměr)"
+
+[certificate_policy]
+other = "Zásady pro vydávání certifikátů"
+
+[certificate_transparency_name]
+other = "Jméno"
+
+[certificate_transparency_role_production]
+other = "Produkce"
+
+[certificate_transparency_role_testing]
+other = "Testování"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Veřejný klíč"
+
+[certificate_transparency_log_id]
+other = "Log ID"
+
+[certificate_transparency_state]
+other = "Stav"
+
+[certificate_transparency_window_start]
+other = "Začátek okna"
+
+[certificate_transparency_window_end]
+other = "Konec okna"
+
+[certification_practices_statement]
+other = "Prohlášení o certifikačních postupech"
+
+[overview]
+other = "Přehled"
+
+[subscriber_information]
+other = "Informace pro předplatitele"
+
+[advanced_subscriber_information]
+other = "Rozšířené informace pro předplatitele"
+
+[client_developer_information]
+other = "Informace pro vývojáře klienta"
+
+[acme_divergences]
+other = "Rozdíly oproti současnému návrhu ACME"
+
+[acme_divergences_rfc]
+other = "Rozdíly oproti ACME RFC"
+
+[onboarding_customers]
+other = "Onboarding vašich zákazníků pomocí Let's Encrypt a ACME"
+
+[paypal_donate_alt]
+other = "tlačítko Přispět přes PayPal"
+
+[paypal_donate_title]
+other = "Přispět přes PayPal"
+
+[not_found]
+other = "Tato stránka neexistuje, zkontrolujte prosím zadanou adresu."
+
+[amount_per_year]
+other = "${{ .nb }}/rok (USD)"
+
+[3y_commitment]
+other = "s 3-letým závazkem"
+
+[1_99_employees]
+other = "1-99 zaměstnanců"
+
+[100_999_employees]
+other = "100-999 zaměstnanců"
+
+[1000_employees]
+other = "1000+ zaměstnanců"

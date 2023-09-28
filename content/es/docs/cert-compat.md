@@ -4,9 +4,9 @@ slug: certificate-compatibility
 top_graphic: 1
 date: 2016-12-05
 lastmod: 2016-12-05
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt pretende ser compatible con la mayor cantidad de software posible sin comprometer la seguridad. El principal factor determinante para determinar si una plataforma puede validar los certificados Let’s Encrypt es si esa plataforma incluye el certificado DST Root X3 de IdenTrust en su almacén de confianza. Un factor secundario es si la plataforma admite dispositivos modernos [SHA-2](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1) ya que todos los certificados Let's Encrypt usan SHA-2.
 

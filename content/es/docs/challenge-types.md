@@ -4,9 +4,9 @@ slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
 lastmod: 2019-02-25
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Cuando solicita un certificado a Let’s Encrypt, nuestros servidores comprueba que usted está autorizado o controla los nombres de dominio en ese certificado utilizando "desafíos", según lo define el estándar ACME. La mayoría de las veces, esta validación es manejada automáticamente por su cliente ACME, pero si necesita tomar algunas decisiones de configuración más complejas, es útil saber más sobre ellas. Si no está seguro, use los valores predeterminados de su cliente o HTTP-01.
 

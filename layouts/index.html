@@ -2,13 +2,13 @@
 <div class="hero tall">
   <div class="container">
     <h1>{{ i18n "home_hero_title" | safeHTML }}</h1>
-    <h2>{{ i18n "home_hero_annual_report" | safeHTML }} (<a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Desktop.pdf">{{ i18n "home_hero_desktop" | safeHTML }}</a>, <a href="https://abetterinternet.org/documents/2019-ISRG-Annual-Report-Mobile.pdf">{{ i18n "home_hero_mobile" | safeHTML }}</a>)</h2>
+    <h2>{{ i18n "home_hero_annual_report" | safeHTML }}</h2>
     <div class="buttons flex">
       <div class="flex1 tar mr1m">
         <a class="dib" href="{{ "getting-started/" | relLangURL }}">{{ i18n "home_hero_getting_started" | safeHTML }}</a>
       </div>
       <div class="flex1 tal ml1m">
-        <a class="dib" href="{{ "become-a-sponsor/" | relLangURL }}">{{ i18n "home_hero_sponsor" | safeHTML }}</a>
+        <a class="dib" href="https://www.abetterinternet.org/sponsor/">{{ i18n "home_hero_sponsor" | safeHTML }}</a>
       </div>
     </div>
   </div>
@@ -21,11 +21,11 @@
           <div class="grid-container">
             <h2 class="through-line"><a href="/blog/">{{ i18n "home_from_our_blog" }}</a></h2>
               <ul class="post-list">
-                {{ $enPosts := where .Sites.First.RegularPages "Type" "in" (slice "post") | first 3 }}
-                {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 3 | lang.Merge $enPosts }}
+                {{ $enPosts := where .Sites.First.RegularPages "Type" "in" (slice "post") | first 5 }}
+                {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 5 | lang.Merge $enPosts }}
                 {{ range $posts }}
                   <li>
-                    <span class="post-meta">{{ .Date.Format $.Site.Params.time_format_default }}</span>
+                    <span class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}</span>
                     <h2>
                       <a class="post-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ .Title }}</a>
                     </h2>
@@ -50,6 +50,9 @@
           <div class='grid-container'>
             <h2 class="through-line"><a href="{{ "sponsors/" | relLangURL }}">{{ i18n "home_major_sponsors" }}</a></h2>
             <div class="text-center home_sponsors">
+{{ range $.Site.Data.sponsors.diamond }}
+              <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" class="sponsor-logo-small"></a>
+{{ end }}
 {{ range $.Site.Data.sponsors.platinum }}
               <a href="{{ .url }}" {{ if .id }}id="{{ .id }}"{{ end }} {{ if .nofollow }}rel="nofollow"{{ end }}{{ if .sponsored }}rel="sponsored"{{ end }}><img src="/images/sponsors/small/{{ .image }}" alt="{{ .name }}" width="80" height="48" class="sponsor-logo-small"></a>
 {{ end }}

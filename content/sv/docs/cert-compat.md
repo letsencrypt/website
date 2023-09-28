@@ -3,9 +3,9 @@ title: Certifikatkompabilitet
 slug: certificate-compatibility
 top_graphic: 1
 lastmod: 2020-02-07
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt siktar på att vara kompatibla med så mycket mjukvara som möjligt
 utan att tumma på säkerheten. Den avgörande faktorn för huruvida en plattform

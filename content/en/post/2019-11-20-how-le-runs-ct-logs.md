@@ -65,7 +65,7 @@ Kubernetes provides abstractions for operators such as [deployments](https://kub
 
 A Kubernetes cluster is comprised of two main components: the control plane which handles the Kubernetes APIs, and worker nodes where containerized applications run. We chose to have Amazon EKS manage our Kubernetes control plane.
 
-We use 4x c5.2xlarge EC2 instances for the worker node pool for each CT log. Each of these instances contains 8 CPU cores and 16GB of RAM. 
+We use 4x c5.2xlarge EC2 instances for the worker node pool for each CT log. Each of these instances contains 8 CPU cores and 16GB of RAM.
 
 # Application Software
 
@@ -97,4 +97,4 @@ Here are some ways we may be able to improve the efficiency of our system in the
 
 # Support Let’s Encrypt
 
-We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization is interested in learning more about [sponsorship](https://letsencrypt.org/become-a-sponsor/), please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our community of users and supporters in order to provide our services. If your company or organization is interested in learning more about [sponsorship](https://www.abetterinternet.org/sponsor/), please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.

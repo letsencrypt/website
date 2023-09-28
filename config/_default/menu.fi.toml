@@ -1,0 +1,38 @@
+[[main]]
+name = "Hanki apua"
+weight = 20
+url = "https://community.letsencrypt.org/"
+[[main]]
+name = "Lahjoita"
+weight = 30
+identifier = "donate"
+url = "/donate/"
+[[main]]
+name = "Tietoa meistä"
+weight = 40
+identifier = "about"
+url = "/about/"
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+[[main]]
+name = "Palvelun tila"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+[[main]]
+name = "Työpaikat"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+[[main]]
+name = "Ryhdy sponsoriksi"
+weight = 40
+identifier = "ryhdy-sponsoriksi"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"

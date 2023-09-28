@@ -1,0 +1,31 @@
+{{ range (.Page.Scratch.GetSortedMapValues "glossary") }}
+<p class="definition">
+	<a href="#def-{{.id }}">
+	{{- if and (.abbr) (eq (.abbr_first) "1") -}}
+			<dfn id="def-{{.id }}"><abbr lang="en">{{ .abbr }}</abbr></dfn>
+				{{- if .name }} ({{.name }}{{ if .english }} - <i lang="en">{{ .english }}</i>{{ end }})
+				{{- else }}{{ if .english -}} (<i lang="en">{{ .english }}</i>{{ end }})
+				{{- end }}
+	{{- else -}}
+		{{- if .name -}}
+			<dfn id="def-{{.id }}">{{.name }}</dfn>
+			{{- if or (.abbr) (.english) -}}
+				{{- if .english }} ({{ with .abbr }}<abbr lang="en">{{ . }}</abbr> - {{ end -}}<i lang="en">{{ .english }}</i>)
+				{{- else }} (<abbr>{{ .abbr }}</abbr>)
+				{{- end }}
+			{{- end }}
+		{{- else -}}
+			{{- if .english -}}
+				<dfn id="def-{{.id }}" lang="en">{{.english }}</dfn>
+				{{- if .abbr }} (<abbr lang="en">{{ .abbr }}</abbr>){{- end }}
+			{{- else -}}
+				<dfn id="def-{{.id }}"><abbr>{{.abbr }}</abbr></dfn>
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+	</a>
+	{{ .Site.Params.beforeColon | safeHTML }}: {{ .content }}
+</p>
+
+{{ end }}
+

@@ -3,19 +3,18 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2020-04-23
+lastmod: 2022-09-28
 menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
-
-{{< lastmod >}}
 
 This FAQ is divided into the following sections:
 
-* [General Questions](#general)
-* [Technical Questions](#technical)
+- [General Questions](#general)
+- [Technical Questions](#technical)
 
 # <a id="general">General Questions</a>
 
@@ -31,7 +30,7 @@ To get started using Let's Encrypt, please visit our [Getting Started](/getting-
 
 We do not charge a fee for our certificates. Let's Encrypt is a nonprofit, our mission is to create a more secure and privacy-respecting Web by promoting the widespread adoption of HTTPS. Our services are free and easy to use so that every website can deploy HTTPS.
 
-We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate) or [becoming a sponsor](/become-a-sponsor).
+We require support from generous sponsors, grantmakers, and individuals in order to provide our services for free across the globe. If you're interested in supporting us please consider [donating](/donate) or [becoming a sponsor](https://www.abetterinternet.org/sponsor).
 
 In some cases, integrators (e.g. hosting providers) will charge a nominal fee that reflects the administrative and management costs they incur to provide Let's Encrypt certificates.
 
@@ -48,8 +47,8 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here are the reporting URLs:
 
-* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
-* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
+- [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+- [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 If you'd like to read more about our policies and rationale, you can do so here:
 
@@ -89,7 +88,7 @@ Yes, the same certificate can contain several different names using the Subject 
 
 ## Does Let's Encrypt issue wildcard certificates?
 
-Yes. Wildcard issuance must be done via ACMEv2 using the DNS-01 challenge. See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
+Yes. Wildcard issuance must be done via ACMEv2 using the [DNS-01 challenge](/docs/challenge-types/#dns-01-challenge). See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
@@ -107,3 +106,13 @@ We don't publish a list of IP addresses we use to validate, and these IP address
 
 Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
 If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
+
+## Why should my Let's Encrypt (ACME) client run at a random time?
+
+We ask that [ACME clients perform routine renewals at random times](https://letsencrypt.org/docs/integration-guide/#when-to-renew) to avoid spikes in traffic at set times of the day, such as exactly midnight UTC, or the first second of each hour or minute. When the service is too busy, clients will be asked to [try again later](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503), so randomizing renewal times can help avoid unnecessary retries.
+
+## Where can I learn more about TLS/SSL and PKI in general?
+
+Longtime security researcher and practitioner, Ivan Ristić, published a configuration guide that provides useful information about what you should consider as you <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">set up your TLS configuration</a>.
+
+For more extensive background and greater detail, we recommend <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, also written by Ristić.

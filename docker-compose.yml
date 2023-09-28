@@ -1,3 +1,4 @@
+services:
   server:
     image: klakegg/hugo:ext-alpine
     command: server

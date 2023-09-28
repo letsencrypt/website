@@ -13,7 +13,7 @@ other = "寄付"
 other = "スポンサー"
 
 [home_hero_annual_report]
-other = "2019 年の年次レポートを読む"
+other = "<a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> 年の年次レポートを読む"
 
 [home_hero_desktop]
 other = "デスクトップ"
@@ -39,14 +39,14 @@ other = "よりセキュアでプライバシーを尊重するウェブを支�
 [footer_donate]
 other = "寄付する"
 
+[footer_mailing]
+other = "すべての手紙またはお問い合わせを以下に送ってください："
+
 [footer_policies]
 other = """
 <a href="/ja/privacy/">プライバシー・ポリシー</a>を読む。<br>
-<a href="/ja/trademarks/">トレードマーク・ポリシー</a>を読む。
+<a href="https://www.abetterinternet.org/trademarks/">トレードマーク・ポリシー</a>を読む。
 """
-
-[linux_foundation_trademark]
-other = "Linux Foundation は The Linux Foundation の登録商標です。Linux は Linus Torvalds の登録商標です。"
 
 [header_skip_nav]
 other = "ナビゲーション・リンクをスキップ"
@@ -74,11 +74,6 @@ other = "言語"
 
 [view_in_english]
 other = "英語で表示する"
-
-[view_in_xxx]
-# In translation, replace "English" by your language FULL name. see other langs for example.
-# (nb: used manually in layout/partials/langs.html)
-other = "日本語で表示する"
 
 [old_version]
 other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"

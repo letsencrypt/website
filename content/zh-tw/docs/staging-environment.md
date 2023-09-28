@@ -4,9 +4,9 @@ slug: staging-environment
 top_graphic: 1
 date: 2018-01-05
 lastmod: 2019-09-16
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 在使用我們的正式環境前，我們強烈建議你先使用我們的測試環境進行布署。這樣能確保你在申請頒發憑證前一切正常，以避免受到憑證的速率限制。
 
@@ -29,7 +29,7 @@ lastmod: 2019-09-16
 
 # 根憑證
 
-測試環境中的中間憑證 (["Fake LE Intermediate X1"](/certs/fakeleintermediatex1.pem))，是使用**不在**瀏覽器或客戶端信任憑證倉庫中的根憑證所頒發的。如果你希望測試用客戶端能信任測試環境所頒發的憑證，你可以手動安裝 ["Fake LE Root X1"](/certs/fakelerootx1.pem) 到測試用客戶端的信任憑證倉庫中。請注意：不要將測試用的根憑證或中間憑證安裝到日常使用的客戶端信任倉庫中，因為它們沒有達到上線環境的標準，將他們用於測試環境外的客戶端會造成安全性問題。
+測試環境中的中間憑證 (["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem))，是使用**不在**瀏覽器或客戶端信任憑證倉庫中的根憑證所頒發的。如果你希望測試用客戶端能信任測試環境所頒發的憑證，你可以手動安裝 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 到測試用客戶端的信任憑證倉庫中。請注意：不要將測試用的根憑證或中間憑證安裝到日常使用的客戶端信任倉庫中，因為它們沒有達到上線環境的標準，將他們用於測試環境外的客戶端會造成安全性問題。
 
 # 憑證透明度
 

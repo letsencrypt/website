@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0a:01:41:42:00:00:01:53:85:73:6a:0b:85:ec:a7:08
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: O = Digital Signature Trust Co., CN = DST Root CA X3
+        Validity
+            Not Before: Mar 17 16:40:46 2016 GMT
+            Not After : Mar 17 16:40:46 2021 GMT
+        Subject: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:9c:d3:0c:f0:5a:e5:2e:47:b7:72:5d:37:83:b3:
+                    68:63:30:ea:d7:35:26:19:25:e1:bd:be:35:f1:70:
+                    92:2f:b7:b8:4b:41:05:ab:a9:9e:35:08:58:ec:b1:
+                    2a:c4:68:87:0b:a3:e3:75:e4:e6:f3:a7:62:71:ba:
+                    79:81:60:1f:d7:91:9a:9f:f3:d0:78:67:71:c8:69:
+                    0e:95:91:cf:fe:e6:99:e9:60:3c:48:cc:7e:ca:4d:
+                    77:12:24:9d:47:1b:5a:eb:b9:ec:1e:37:00:1c:9c:
+                    ac:7b:a7:05:ea:ce:4a:eb:bd:41:e5:36:98:b9:cb:
+                    fd:6d:3c:96:68:df:23:2a:42:90:0c:86:74:67:c8:
+                    7f:a5:9a:b8:52:61:14:13:3f:65:e9:82:87:cb:db:
+                    fa:0e:56:f6:86:89:f3:85:3f:97:86:af:b0:dc:1a:
+                    ef:6b:0d:95:16:7d:c4:2b:a0:65:b2:99:04:36:75:
+                    80:6b:ac:4a:f3:1b:90:49:78:2f:a2:96:4f:2a:20:
+                    25:29:04:c6:74:c0:d0:31:cd:8f:31:38:95:16:ba:
+                    a8:33:b8:43:f1:b1:1f:c3:30:7f:a2:79:31:13:3d:
+                    2d:36:f8:e3:fc:f2:33:6a:b9:39:31:c5:af:c4:8d:
+                    0d:1d:64:16:33:aa:fa:84:29:b6:d4:0b:c0:d8:7d:
+                    c3:93
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            Authority Information Access: 
+                OCSP - URI:http://isrg.trustid.ocsp.identrust.com
+                CA Issuers - URI:http://apps.identrust.com/roots/dstrootcax3.p7c
+
+            X509v3 Authority Key Identifier: 
+                keyid:C4:A7:B1:A4:7B:2C:71:FA:DB:E1:4B:90:75:FF:C4:15:60:85:89:10
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+                  CPS: http://cps.root-x1.letsencrypt.org
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.identrust.com/DSTROOTCAX3CRL.crl
+
+            X509v3 Subject Key Identifier: 
+                A8:4A:6A:63:04:7D:DD:BA:E6:D1:39:B7:A6:45:65:EF:F3:A8:EC:A1
+    Signature Algorithm: sha256WithRSAEncryption
+         dd:33:d7:11:f3:63:58:38:dd:18:15:fb:09:55:be:76:56:b9:
+         70:48:a5:69:47:27:7b:c2:24:08:92:f1:5a:1f:4a:12:29:37:
+         24:74:51:1c:62:68:b8:cd:95:70:67:e5:f7:a4:bc:4e:28:51:
+         cd:9b:e8:ae:87:9d:ea:d8:ba:5a:a1:01:9a:dc:f0:dd:6a:1d:
+         6a:d8:3e:57:23:9e:a6:1e:04:62:9a:ff:d7:05:ca:b7:1f:3f:
+         c0:0a:48:bc:94:b0:b6:65:62:e0:c1:54:e5:a3:2a:ad:20:c4:
+         e9:e6:bb:dc:c8:f6:b5:c3:32:a3:98:cc:77:a8:e6:79:65:07:
+         2b:cb:28:fe:3a:16:52:81:ce:52:0c:2e:5f:83:e8:d5:06:33:
+         fb:77:6c:ce:40:ea:32:9e:1f:92:5c:41:c1:74:6c:5b:5d:0a:
+         5f:33:cc:4d:9f:ac:38:f0:2f:7b:2c:62:9d:d9:a3:91:6f:25:
+         1b:2f:90:b1:19:46:3d:f6:7e:1b:a6:7a:87:b9:a3:7a:6d:18:
+         fa:25:a5:91:87:15:e0:f2:16:2f:58:b0:06:2f:2c:68:26:c6:
+         4b:98:cd:da:9f:0c:f9:7f:90:ed:43:4a:12:44:4e:6f:73:7a:
+         28:ea:a4:aa:6e:7b:4c:7d:87:dd:e0:c9:02:44:a7:87:af:c3:
+         34:5b:b4:42

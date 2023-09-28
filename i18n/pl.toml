@@ -1,0 +1,191 @@
+[home_hero_title]
+other = "Niekomercyjny Urząd Certyfikacji dostarczający certyfikaty TLS do <span>225 milionów</span> stron internetowych."
+
+[home_hero_getting_started]
+other = "Rozpocznij"
+
+[home_hero_donate]
+other = "Wesprzyj nas"
+
+[home_hero_sponsor]
+other = "Sponsoruj"
+
+[home_hero_annual_report]
+other = "Przyznano nam Nagrodę Levchina na rzecz Rzeczywistej Kryptografii! <a href='https://abetterinternet.org/levchin-prize'>Dowiedz się więcej</a>"
+
+[home_major_sponsors]
+other = "Główni Sponsorzy i Fundatorzy"
+
+[home_from_our_blog]
+other = "Z naszego bloga"
+
+[read_more]
+other = "Czytaj dalej"
+
+[subscribe_rss]
+other = 'Subskrybuj <a href="{{ .Permalink }}">przez RSS</a>'
+
+[footer_support_us]
+other = "Wspieraj bezpieczniejszy i szanujący prywatność Internet."
+
+[footer_donate]
+other = "Wesprzyj nas"
+
+[footer_mailing]
+other = "Wszelkie zapytania prosimy kierować na:"
+
+[footer_policies]
+other = """
+Zobacz naszą <a href="/privacy/">politykę prywatności</a>.<br>
+Zobacz naszą <a href="/trademarks/">politykę znaku towarowego</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation jest zarejestrowanym znakiem towarowym należącym do The Linux Foundation. Linux jest zarejestrowanym znakiem towarowym należącym do Linus Torvalds."
+
+[header_skip_nav]
+other = "Pomiń odnośniki nawigacyjne"
+
+[last_updated]
+other = "Ostania aktualizacja: "
+
+[see_all_doc]
+other = "Zobacz całą dokumentację"
+
+[blog_feed]
+other = "Treści bloga Let's Encrypt"
+
+[platinum]
+other = "Platynowy"
+
+[gold]
+other = "Złoty"
+
+[gold_basic]
+other = "Złoty Podstawowy"
+
+[silver]
+other = "Srebrny"
+
+[languages]
+other = "Języki"
+
+[view_in_english]
+other = "Pokaż w języku polskim"
+
+[old_version]
+other = "Uwaga: Wersja angielska została zaktualizowana od czasu tłumaczenia"
+
+[not_yet_translated]
+other = 'Ta strona nie została jeszcze przetłumaczona. Możesz pomóc w tłumaczeniu klikając <a href="https://github.com/letsencrypt/website">tutaj</a>.'
+
+[english_is_canonical]
+other = "Wersja w języku angielskim jest wiarygodna"
+
+[graph_issued]
+other = "Wydany"
+
+[graph_certificates_active]
+other = "Certyfikaty aktywne"
+
+[graph_fully_qualified_domains_active]
+other = "Aktywne w pełni kwalifikowane domeny"
+
+[graph_registered_domains_active]
+other = "Zarejestrowane domeny są aktywne"
+
+[graph_active_count]
+other = "Liczba aktywności"
+
+[graph_issued_per_day]
+other = "Wystawione na dzień"
+
+[graph_all_users]
+other = "Wszyscy użytkownicy"
+
+[graph_usa_users]
+other = "Użytkownicy z USA"
+
+[graph_japan_users]
+other = "Japońscy użytkownicy"
+
+[graph_percent_https]
+other = "Procent odwiedzin strony przez HTTPS (14-dniowa średnia ważona)"
+
+[certificate_policy]
+other = "Zasady certyfikacji"
+
+[certificate_transparency_name]
+other = "Nazwa"
+
+[certificate_transparency_role_production]
+other = "Produkcja"
+
+[certificate_transparency_role_testing]
+other = "Testowanie..."
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Klucz Publiczny"
+
+[certificate_transparency_log_id]
+other = "ID logowania"
+
+[certificate_transparency_state]
+other = "Województwo"
+
+[certificate_transparency_window_start]
+other = "Początek okna"
+
+[certificate_transparency_window_end]
+other = "Koniec okna"
+
+[certification_practices_statement]
+other = "Oświadczenie dotyczące praktyk certyfikacyjnych"
+
+[overview]
+other = "Przegląd"
+
+[subscriber_information]
+other = "Informacje subskrybenta"
+
+[advanced_subscriber_information]
+other = "Zaawansowane informacje subskrybenta"
+
+[client_developer_information]
+other = "Informacje dla programistów"
+
+[acme_divergences]
+other = "Różnice w stosunku do bieżącej wersji roboczej ACME"
+
+[acme_divergences_rfc]
+other = "Różnice w stosunku do ACME RFC"
+
+[onboarding_customers]
+other = "Wdrażanie Twoich klientów dzięki Let's Encrypt i ACME"
+
+[paypal_donate_alt]
+other = "Wesprzyj za pomocą przycisku PayPal"
+
+[paypal_donate_title]
+other = "Wesprzyj za pomocą PayPal"
+
+[not_found]
+other = "Ta strona nie istnieje, proszę sprawdzić adres."
+
+[amount_per_year]
+other = "${{ .nb }}/rok (USD)"
+
+[3y_commitment]
+other = "z trzyletnim zobowiązaniem"
+
+[1_99_employees]
+other = "1-99 pracowników"
+
+[100_999_employees]
+other = "100-999 pracowników"
+
+[1000_employees]
+other = "Ponad 1000 pracowników"

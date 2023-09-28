@@ -1,5 +1,5 @@
 {
-    "lastmod": "2020-02-05",
+    "lastmod": "2022-06-13",
     "categories": [
         "production",
         "testing"
@@ -18,7 +18,7 @@
         {
             "log": "oak",
             "shard": "2020",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfzb42Zdr/h7hgqgDCo1vrNJqGqbcUvJGJEER9DDqp19W/wFSB0l166hD+U5cAXchpH8ZkBNUuvOHS0OnJ4oJrQ==",
             "logID": "E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E",
@@ -28,7 +28,7 @@
         {
             "log": "oak",
             "shard": "2021",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELsYzGMNwo8rBIlaklBIdmD2Ofn6HkfrjK0Ukz1uOIUC6Lm0jTITCXhoIdjs7JkyXnwuwYiJYiH7sE1YeKu8k9w==",
             "logID": "94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2",
@@ -38,7 +38,7 @@
         {
             "log": "oak",
             "shard": "2022",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhjyxDVIjWt5u9sB/o2S8rcGJ2pdZTGA8+IpXhI/tvKBjElGE5r3de4yAfeOPhqTqqc+o7vPgXnDgu/a9/B+RLg==",
             "logID": "DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73",
@@ -48,7 +48,7 @@
         {
             "log": "oak",
             "shard": "2023",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsz0OeL7jrVxEXJu+o4QWQYLKyokXHiPOOKVUL3/TNFFquVzDSer7kZ3gijxzBp98ZTgRgMSaWgCmZ8OD74mFUQ==",
             "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99",
@@ -56,49 +56,89 @@
             "windowEnd": "1704585600"
         },
         {
-            "log": "testflume",
-            "shard": "2019",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEAg3+vFOesFW51rKECekioAt9Zo50atRoOJ0qLxF7DIEHsHneXLEpgO1WMreleRy1vEbUJD7TXoH9r8qSDGvyew==",
-            "logID": "84:9F:5F:7F:58:D2:BF:7B:54:EC:BD:74:61:1C:EA:45:C4:9C:98:F1:D6:48:1B:C6:F6:9E:8C:17:4F:24:F3:CF",
-            "windowStart": "1546300800",
-            "windowEnd": "1578355200"
+            "log": "oak",
+            "shard": "2024h1",
+            "state": "Usable",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVkPXfnvUcre6qVG9NpO36bWSD+pet0Wjkv3JpTyArBog7yUvuOEg96g6LgeN5uuk4n0kY59Gv5RzUo2Wrqkm/Q==",
+            "logID": "3B:53:77:75:3E:2D:B9:80:4E:8B:30:5B:06:FE:40:3B:67:D8:4F:C3:F4:C7:BD:00:0D:2D:72:6F:E1:FA:D4:17",
+            "windowStart": "1703030400",
+            "windowEnd": "1721433600"
         },
         {
-            "log": "testflume",
-            "shard": "2020",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjdjcoKpeBShHgHvRm3BxD5+l+eHZudv3KmD5SDcLcI01Vj5TDTmxanQKCgpvm9pfnfB6URMQV3hhU1I02jRoRw==",
-            "logID": "C6:3F:22:18:C3:7D:56:A6:AA:06:B5:96:DA:8E:53:D4:D7:15:6D:1E:9B:AC:8E:44:D2:20:2D:E6:4D:69:D9:DC",
-            "windowStart": "1577836800",
-            "windowEnd": "1609977600"
+            "log": "oak",
+            "shard": "2024h2",
+            "state": "Usable",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE13PWU0fp88nVfBbC1o9wZfryUTapE4Av7fmU01qL6E8zz8PTidRfWmaJuiAfccvKu5+f81wtHqOBWa+Ss20waA==",
+            "logID": "3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E",
+            "windowStart": "1718841600",
+            "windowEnd": "1737331200"
         },
         {
-            "log": "testflume",
-            "shard": "2021",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdCLoJNt1QcNa7sNDp7g7oTJ+o/UIYEM6N/IZWT+dhdqtJZC+AODJ/4exdOwG04B4K6WrN1VB2ELKQIc/wU1lCw==",
-            "logID": "03:ED:F1:DA:97:76:B6:F3:8C:34:1E:39:ED:9D:70:7A:75:70:36:9C:F9:84:4F:32:7F:E9:E1:41:38:36:1B:60",
-            "windowStart": "1609459200",
-            "windowEnd": "1641513600"
+            "log": "oak",
+            "shard": "2025h1",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKeBpU9ejnCaIZeX39EsdF5vDvf8ELTHdLPxikl4y4EiROIQfS4ercpnMHfh8+TxYVFs3ELGr2IP7hPGVPy4vHA==",
+            "logID": "A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7",
+            "windowStart": "1734652800",
+            "windowEnd": "1752969600"
         },
         {
-            "log": "testflume",
-            "shard": "2022",
-            "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjy/rXcABuf0yhrm1+XgjDnh4XPD7vfMoyJOyT+KA+c2zuXVR98yQmp/Bl5ZFdGFwJuFcVrCw7IDo0EGKs7UCww==",
-            "logID": "23:27:EF:DA:35:25:10:DB:C0:19:EF:49:1A:E3:FF:1C:C5:A4:79:BC:E3:78:78:36:0E:E3:18:CF:FB:64:F8:C8",
-            "windowStart": "1640995200",
-            "windowEnd": "1673049600"
+            "log": "oak",
+            "shard": "2025h2",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtXYwB63GyNLkS9L1vqKNnP10+jrW+lldthxg090fY4eG40Xg1RvANWqrJ5GVydc9u8H3cYZp9LNfkAmqrr2NqQ==",
+            "logID": "0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34",
+            "windowStart": "1750377600",
+            "windowEnd": "1768867200"
         },
         {
-            "log": "testflume",
-            "shard": "2023",
+            "log": "sapling",
+            "shard": "2022h2",
             "role": "testing",
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8aLpnumqeISmQEB3hKPgtPJQG3jP2IftfaUQ4WPUihNBwUOEk1R9BMg5RGQwebWSsRlGIRiCvtE97Q45Vh3mqA==",
-            "logID": "55:34:B7:AB:5A:6A:C3:A7:CB:EB:A6:54:87:B2:A2:D7:1B:48:F6:50:FA:17:C5:19:7C:97:A0:CB:20:76:F3:C6",
-            "windowStart": "1672531200",
-            "windowEnd": "1704585600"
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6m0gtMM2pcVTxVjkztm/ByNrF32xacdVnbsYwlzwtqN0vOwqcXLtPkfYqH+q93hlJwEBsX1MnRXDdlMHkkmZJg==",
+            "logID": "23:2D:41:A4:CD:AC:87:CE:D9:F9:43:F4:68:C2:82:09:5A:E0:9D:30:D6:2E:2F:A6:5D:DC:3B:91:9C:2E:46:8F",
+            "windowStart": "1655251200",
+            "windowEnd": "1673740800"
+        },
+        {
+            "log": "sapling",
+            "shard": "2023h1",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE09jAcGbw5CDCK2Kg0kkmmDydfDfZAA8K64BufU37yx3Jcy/ePy1EjAi2wUPVJ0xsaNMCU37mh+fBV3+K/cSG8A==",
+            "logID": "C1:83:24:0B:F1:A4:50:C7:6F:BB:00:72:69:DC:AC:3B:E2:2A:48:05:D4:db:E0:49:66:C3:C8:ab:C4:47:B0:0C",
+            "windowStart": "1671062400",
+            "windowEnd": "1689379200"
+        },
+        {
+            "log": "sapling",
+            "shard": "2023h2",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEbdCykRsTPRgfjKVQvINRLJk3gy+2qNKOU48bo/sWO0ko75S92C+PBDxsqMEd0YpCYYLogCt2LAK/U4H7UwHsjA==",
+            "logID": "ED:AB:9D:1D:DD:83:73:95:9F:F5:2A:88:E4:6B:B4:BC:C3:C4:CC:4D:76:8A:60:CC:FF:4E:36:2D:7F:B8:D6:68",
+            "windowStart": "1686787200",
+            "windowEnd": "1705276800"
+        },
+        {
+            "log": "sapling",
+            "shard": "2024h1",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1Yn4OKJQuwEwo1/BeVBh1NYkQBnS8sYmMfQr/VdXOGqPcbwcpw0TtjJBYmn8FA+ZT7hnt7OfF4RTjLNW3bWOkw==",
+            "logID": "AA:6C:B0:C5:C9:F4:C4:9D:8D:8E:A9:0C:39:17:E0:D7:0A:D9:22:10:BF:05:7F:41:50:93:82:CC:35:0C:98:46",
+            "windowStart": "1702598400",
+            "windowEnd": "1721001600"
+        },
+        {
+            "log": "sapling",
+            "shard": "2024h2",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWipy8ZdRGs2Y5tBb8h8c4UUREnT/YMbm+FEUQBBScf85txhGRHNN/sNN0L/KDiGu/GsrOBCkDruDfHkD42eZXQ==",
+            "logID": "85:1B:AE:8E:EE:33:C1:B9:87:3F:C4:9C:7A:7C:27:65:66:3B:6B:80:63:03:04:0A:EC:A6:C1:11:A5:AB:E9:D7",
+            "windowStart": "1718409600",
+            "windowEnd": "1736899200"
         }
     ]
 }

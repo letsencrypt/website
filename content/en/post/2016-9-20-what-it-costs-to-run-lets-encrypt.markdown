@@ -12,7 +12,7 @@ Today we’d like to explain what it costs to run Let’s Encrypt. We’re doing
 
 Let’s Encrypt will require about $2.9M USD to operate in 2017. We believe this is an incredible value for a secure and reliable service that is capable of issuing certificates globally, to every server on the Web free of charge.
 
-We’re currently working to raise the money we need to operate through the next year. Please consider [donating](https://letsencrypt.org/donate/) or [becoming a sponsor](https://letsencrypt.org/become-a-sponsor/) if you’re able to do so! In the event that we end up being able to raise more money than we need to just keep Let’s Encrypt running we can look into adding other services to improve access to a more secure and privacy-respecting Web.
+We’re currently working to raise the money we need to operate through the next year. Please consider [donating](https://letsencrypt.org/donate/) or [becoming a sponsor](https://www.abetterinternet.org/sponsor/) if you’re able to do so! In the event that we end up being able to raise more money than we need to just keep Let’s Encrypt running we can look into adding other services to improve access to a more secure and privacy-respecting Web.
 
 Here’s how our 2017 budget breaks down:
 
@@ -41,7 +41,7 @@ Here’s how our 2017 budget breaks down:
   <tr>
     <th style="font-weight: bold; text-align: left; padding: 5px; border: 1px solid gray;">Total</th>
     <th style="font-weight: bold; text-align: left; padding: 5px; border: 1px solid gray;">$2.91M USD</th>
-  </tr>  
+  </tr>
 </table>
 <p></p>
 

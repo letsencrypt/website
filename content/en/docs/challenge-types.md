@@ -3,10 +3,10 @@ title: Challenge Types
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-02-24
+lastmod: 2023-02-13
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 When you get a certificate from Let’s Encrypt, our servers validate that
 you control the domain names in that certificate using “challenges,”
@@ -73,7 +73,7 @@ might be different. If you want to change your DNS provider, you just
 need to make some small changes at your registrar. You don’t need to
 wait for your domain to be close to expiration to do so.
 
-Note that putting your fully DNS API credentials on your web server
+Note that putting your full DNS API credentials on your web server
 significantly increases the impact if that web server is hacked. Best
 practice is to use [more narrowly scoped API
 credentials][securing-dns-credentials], or perform DNS
@@ -94,7 +94,7 @@ of their servers. It can be hard to measure this because they often also
 use [anycast], which means multiple servers can have the same IP address,
 and depending on where you are in the world you might talk to a different
 server (and get a different answer) than Let’s Encrypt does. The best
-DNS APIs provide a way for you to automatically check whether and update
+DNS APIs provide a way for you to automatically check whether an update
 is fully propagated. If your DNS provider doesn’t have this, you just
 have to configure your client to wait long enough (often as much as an
 hour) to ensure the update is propagated before triggering validation.
@@ -150,6 +150,7 @@ Cons:
 
  - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
  - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+ - This method cannot be used to validate wildcard domains.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation

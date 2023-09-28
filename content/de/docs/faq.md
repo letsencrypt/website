@@ -3,15 +3,14 @@ title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
 top_graphic: 1
-date: 2017-07-06
-lastmod: 2017-07-06
+lastmod: 2020-04-23
 menu:
   main:
     weight: 30
     parent: about
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Diese FAQ ist in folgende Sektionen unterteilt:
 
@@ -32,7 +31,7 @@ Um mit Let's Encrypt zu beginnen, besuchen Sie bitte [Erste Schritte](/getting-s
 
 Wir erheben keine Gebühr für unsere Zertifikate. Let's Encrypt ist gemeinnützig, unsere Mission ist die Erstellung eines sicheren Webs, welches die Privatsphäre akzeptiert durch weite Verbreitung von HTTPS. Unsere Dienste sind frei und einfach zu benutzen, sodass jede Webseite HTTPS bereitstellen kann.
 
-Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine [Spende](/donate) oder [werden Sie Sponsor](/become-a-sponsor).
+Wir brauchen Unterstützung von grosszügigen Sponsoren, Stipendiaten und Einzelpersonen, um unsere Dienste frei rund um den Globus bereitzustellen. Wenn Sie interessiert sind, uns zu unterstützen, bitte machen Sie eine [Spende](/donate) oder [werden Sie Sponsor](https://www.abetterinternet.org/sponsor).
 
 In einigen Fällen wird Integratoren (z.B. Hosting-Provider) eine geringe Gebühr für Verwaltungsaufwand berechnet.
 
@@ -47,9 +46,10 @@ Hier ist ein [Video, was wir mögen](https://www.youtube.com/watch?v=Xe1TZaElTAs
 
 ## Eine Webseite, die Let's Encrypt benutzt, ist an Phishing/Malware/Scam/... beteiligt, was sollte ich tun?
 
-Wir empfehlen das Melden solcher Seiten bei Google Safe Browsing und dem Microsoft Smart Screen Programm, welche die Benutzer mehr schützen kann. Hier ist eine Meldeseite von Google:
+Wir empfehlen das Melden solcher Seiten bei Google Safe Browsing und dem Microsoft Smart Screen Programm, welche die Benutzer mehr schützen kann. Hier sind die Reporting-URLs:
 
-[https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
+* [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 Wenn Sie mehr über Regeln und Gründe lesen wollen, so können Sie das hier (in englisch):
 
@@ -70,11 +70,14 @@ Email-Verschlüsselung und Code-Signierung sind unterschiedliche Typen von Zerti
 ## Generiert oder speichert Let's Encrypt private Schlüssel von meinen Zertifikaten auf Let's Encrypt Servern?
 
 Nein. Niemals.
+
 Der private Schlüssel wird immer auf Ihrem eigenen Server generiert und verwaltet, nicht bei der Let's Encrypt Zertifikat Verwaltung.
 
 ## Was ist die Laufzeit der Let's Encrypt Zertifikate? Für wie lange sind diese gültig?
 
-Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](/2015/11/09/why-90-days.html) lesen, warum das so ist.Da ist kein Weg das zu ändern, es gibt keine Ausnahme. Wir empfehlen die automatische Erneuerung Ihrer Zertifikate alle 60 Tage.
+Unsere Zertifikate sind 90 Tage gültig. Sie können [hier](/2015/11/09/why-90-days.html) darüber lesen warum.
+
+Es gibt keine Möglichkeit, das zu ändern, es gibt keine Ausnahmen. Wir empfehlen die automatische Erneuerung Ihrer Zertifikate alle 60 Tage.
 
 ## Wird Let's Encrypt Organisations-Validierung (OV) oder Erweiterte Validierung (EV) Zertifikate anbieten?
 
@@ -98,8 +101,8 @@ Ja, aber nicht alle Clients unterstützen diese Funktion. [Certbot](https://cert
 
 ## Welche IP-Adressen benutzt Let's Encrypt zur Validierung meines Webservers?
 
-Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung benutzen, weil diese ändern sich zu jeder Zeit. In der Zukunft validieren wir möglichweise von verschiedenen IP-Adressen zur selben Zeit. Lesen Sie [diese Nachricht](https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points) für mehr Details.
+Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung benutzen, weil diese ändern sich zu jeder Zeit. Beachten Sie, dass wir jetzt [von mehreren IP-Adressen validieren](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
 
-## Ich habe erfolgreich ein Zertifikat erneuert, aber die Validierung funktioniert jetzt nicht mehr - wie ist das möglich?
+## Ich habe erfolgreich ein Zertifikat erneuert, aber die Validierung ist nicht geschehen - wie ist das möglich?
 
 Wenn Sie den Austausch für eine Domain erfolgreich abgeschlossen haben, wird die resultierende Autorisierung zwischengespeichert, damit Ihr Konto später erneut verwendet werden kann. Die zwischengespeicherten Berechtigungen sind 30 Tage ab dem Zeitpunkt der Validierung gültig. Wenn das angeforderte Zertifikat alle erforderlichen Berechtigungen zwischengespeichert hat, wird die Validierung erst nach Ablauf der relevanten zwischengespeicherten Berechtigungen erneut durchgeführt.

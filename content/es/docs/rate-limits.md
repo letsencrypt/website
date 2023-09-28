@@ -4,9 +4,9 @@ slug: rate-limits
 top_graphic: 1
 date: 2018-01-04
 lastmod: 2019-06-04
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 Let's Encrypt proporciona límites de solicitudes para garantizar un uso justo por parte de todos los solicitantes de certificados. Creemos que estos límites de solicitud son lo suficientemente altos como para funcionar de manera predeterminada con la mayoría de las personas. También los hemos diseñado para que la renovación de un certificado casi nunca alcance un límite de solicitudes y por lo tanto las organizaciones pueden aumentar gradualmente la cantidad de certificados que pueden emitir sin requerir la intervención de Let's Encrypt.
 
@@ -44,7 +44,7 @@ Los usuarios de la API ACME v2, puede crear un máximo de 300 <a id="new-orders"
 Si ha alcanzado un límite de solicitudes, no tenemos forma de restablecerlo temporalmente. Tendrá que esperar hasta que el límite de la tarifa caduque después de una semana. Utilizamos una ventana deslizante, por lo que si emitió 25 certificados el lunes y 25 certificados más el viernes, podrá emitir nuevamente a partir del lunes. Puede obtener una lista de certificados emitidos para su dominio registrado al [buscar en crt.sh](https://crt.sh), que utiliza los registros públicos [Transparencia de certificado](https://www.certificate-transparency.org).
 
 Si es un gran proveedor o proveedor de hosting que trabaja en una integración Let's Encrypt, disponemos de un 
-[formulario](https://goo.gl/forms/plqRgFVnZbdGhE9n1) que se puede utilizar para solicitar un límite de tarifa más alto. El procesamiento de solicitudes demora algunas semanas, por lo que este formulario no es adecuado si solo necesita restablecer un límite de solicitudes más rápido del que se restablece por sí solo.
+[formulario](https://isrg.formstack.com/forms/rate_limit_adjustment_request) que se puede utilizar para solicitar un límite de tarifa más alto. El procesamiento de solicitudes demora algunas semanas, por lo que este formulario no es adecuado si solo necesita restablecer un límite de solicitudes más rápido del que se restablece por sí solo.
 
 Tenga en cuenta que la mayoría de los proveedores de alojamiento no necesitan aumentos de límite de solicitudes, porque no hay límite en la cantidad de dominios registrados distintos para los que puede emitir. Mientras la mayoría de sus clientes no tengan más de 2,000 subdominios en un dominio registrado, lo más probable es que no necesite un aumento. Consulte nuestra [Guía de integración](/docs/integration-guide) para obtener más consejos.
 

@@ -3,9 +3,9 @@ title: 入門
 slug: getting-started
 top_graphic: 3
 date: 2018-04-12
+show_lastmod: 1
 ---
 
-{{< lastmod >}}
 
 為了在你的網站上設定 HTTPS，你需要從憑證頒發機構 (Certificate Authority, CA) 獲取憑證，而 Let's Encrypt 就是一個憑證頒發機構。要從 Let's Encrypt 上獲得屬於你網站的憑證，你必須證明你對域名的控制權。你可以在你的主機上運行使用 [ACME 協議](https://tools.ietf.org/html/rfc8555)的軟體，來獲取 Let's Encrypt 的憑證
 
