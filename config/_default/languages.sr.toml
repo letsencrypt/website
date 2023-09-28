@@ -2,8 +2,9 @@ title = "Let's Encrypt - Besplatni SSL/TLS Sertifikati"
 contentDir = "content/sr"
 languageName = "Srpski"
 languageCode = "sr"
-beforeColon = ""
 weight = 600
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt je besplatno, automatizovano, i otvoreno sertifikaciono
   telo omogućeno od strane ne profitne <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> grupe.

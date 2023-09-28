@@ -2,8 +2,9 @@ title = "Let's Encrypt - Certificados SSL/TLS Gratuitos"
 contentDir = "content/pt-br"
 languageName = "Português do Brasil"
 languageCode = "pt-BR"
-beforeColon = ""
 weight = 500
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt é uma autoridade certificadora gratuita, automatizada e aberta
   que se tornou possível graças à organização sem fins lucrativos <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>

@@ -2,8 +2,9 @@ title = "Let's Encrypt"
 contentDir = "content/he"
 languageName = "עברית"
 languageCode = "he"
-beforeColon = ""
 weight = 325
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt היא רשות אישורים חופשית, אוטומטית ופתוחה
   שמוגשת לך באדיבות <a href="https://www.abetterinternet.org/">קבוצת מחקר אבטחת האינטרנט (ISRG)</a>.

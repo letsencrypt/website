@@ -2,8 +2,9 @@ title = "Let's Encrypt"
 contentDir = "content/fi"
 languageName = "Suomi"
 languageCode = "fi"
-beforeColon = ""
 weight = 275
+[params]
+beforeColon = ""
 description = """
   Let's Encrypt on ilmainen, automatisoitu, ja avoin varmenteita myöntävä organisaatio, jonka on perustanut voittoa tavoittelematon organisaatio <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
 """

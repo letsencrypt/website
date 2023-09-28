@@ -2,8 +2,9 @@ title = "Let's Encrypt - フリーな SSL/TLS 証明書"
 contentDir = "content/ja"
 languageName = "日本語"
 languageCode = "ja"
-beforeColon = ""
 weight = 400
+[params]
+beforeColon = ""
 description = """
   Let's Encryptは、非営利団体の <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> が提供する自動化されたフリーでオープンな認証局です。
 """

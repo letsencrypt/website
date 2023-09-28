@@ -4,12 +4,13 @@ contentDir = "content/it"
 languageName = "Italiano"
 #The language code. Usually two lower-case letters. It that language is spoken in more than one country, the country-code can be added, uppercase. To check it: https://r12a.github.io/app-subtags/?check=pt-BR
 languageCode = "it-IT"
-#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
-beforeColon = ""
 # Weight used for sorting.
 # 10 for English
 # Other languages from 100 to 999, alphabetical order using languageCode.
 weight = 375
+[params]
+#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
+beforeColon = ""
 description = """
   Let's Encrypt è un'autorità di certificazione gratuita, automatica
   ed open source messa a disposizione dall'organizzazione non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
