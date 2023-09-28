@@ -2,8 +2,8 @@
 title: Download affected certificate serials for 2022.01.25 TLS-ALPN-01 Incident
 slug: tlsalpnrevocation
 top_graphic: 4
-date: 2022-01-27
-lastmod: 2022-04-26
+date: 2022-01-26
+lastmod: 2022-08-02
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -35,9 +35,9 @@ Alternatively, the data set is available for download and local searching.
 The file tls-alpn-01-incident-affected-certs-by-regID.csv.gz was a gzipped CSV containing rows in the following format, but is no longer available.
 
 ```csv
-123456,"03e1ce2c0324f9ca93417fc8886f87f34857","2022-01-25T18:25:29Z","letsencrypt.org","www.letsencrypt.org","status.letsencrypt.org"
+123456,"03e1ce2c0324f9ca93417fc8886f87f34857","2022-02-25T18:25:29Z","letsencrypt.org","www.letsencrypt.org","status.letsencrypt.org"
 ```
 
-The first column is the [ID number](https://letsencrypt.org/docs/account-id/) of the account which requested issuance of the certificate. The file is sorted by account ID, so all certs issued by a single account are grouped together. The second column is the unique hexadecimal serial number of the certificate. The third column is the time at which the certificate was issued (in RFC3339 format, i.e. YYYY-MM-DDTHH:MM:SSZ, all times UTC). The remaining columns are all identifiers (DNS hostnames) that the certificate was issued for.
+The first column is the [ID number](https://letsencrypt.org/docs/account-id/) of the account which requested issuance of the certificate. The file is sorted by account ID, so all certs issued by a single account are grouped together. The second column is the unique hexadecimal serial number of the certificate. The third column is the expiration time of the certificate (in RFC3339 format, i.e. YYYY-MM-DDTHH:MM:SSZ, all times UTC). The remaining columns are all identifiers (DNS hostnames) that the certificate was issued for.
 
 You can download this file, unzip it with `gunzip` or the equivalent utility on your computer, and look up your account id(s). You need to renew and replace each certificate listed, unless you have already done so more recently than Jan 26, 2022, 00:48 UTC.
