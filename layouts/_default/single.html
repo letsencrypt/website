@@ -85,6 +85,8 @@
 		{{- if.Page.Params.show_lastmod -}}
 			{{- partial "lastmod" . -}}
 		{{- end -}}
+		
+		{{- partial "outdated_translation" . -}}
 
 		{{- $scratch := newScratch -}}
 		{{- $lang := .Page.Language.Lang -}}
