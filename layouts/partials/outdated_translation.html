@@ -1,0 +1,22 @@
+<!--googleoff: all-->
+{{ $curpage := .Page }}
+{{ if and (ne $curpage.Language.Lang "en") (not .Page.Params.untranslated) }}
+{{/* If we are not in English we search for the English version */}}
+{{ range $curpage.Translations }}
+    {{ if eq "en" .Language.Lang }}
+        {{ if .Page.Lastmod }}
+            {{/* To compare the Lastmod with the current translation */}}   
+            {{ if ne $curpage.Lastmod .Page.Lastmod }}
+            <p>
+                <i>
+                    {{ i18n "old_version" }}
+                    (<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}">{{ .Page.Lastmod | time.Format $.Site.Params.time_format_default }}</time>)
+                    <a href="{{ .Page.RelPermalink }}">{{ i18n "view_in_english" }}</a>
+                </i>
+            </p>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ end }}
+<!--googleon: all-->
