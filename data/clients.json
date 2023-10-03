@@ -381,6 +381,17 @@
 			"category": "Node.js"
 		},
 		{
+			"name": "acme-bot",
+			"url": "https://git.serenity-island.net/sie-foss/acme-bot",
+			"category": "Node.js",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "false"
+			}
+		},		
+		{
 			"name": "openshift-acme",
 			"url": "https://github.com/tnozicka/openshift-acme",
 			"acme_v2": "true",
