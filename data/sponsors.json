@@ -327,6 +327,7 @@
     { "name": "Entri", "url": "https://www.entri.com/", "image": "entri-logo.svg" },
     { "name": "Confluent", "url": "https://www.confluent.io/", "image": "confluent-logo.svg" },
     { "name": "Jet Brains", "url": "https://www.jetbrains.com/", "image": "jetbrains-logo.png" },
-    { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" }
+    { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" },
+    { "name": "SecureW2", "url": "https://www.securew2.com/", "image": "securew2-logo.svg" }
   ]
 }
