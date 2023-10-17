@@ -42,7 +42,7 @@ show_lastmod: 1
 
 IdenTrust підписав наші проміжні продукти RSA для додаткової сумісності.
 
-* Активність
+* Активний
   * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
     * [підписаний  ISRG коренем X1 ](https://crt.sh/?id=3334561879)[](/certs/lets-encrypt-r3.der)[](/certs/lets-encrypt-r3.pem)[](/certs/lets-encrypt-r3.txt)
     * [Перехресно підписаний IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (На пенсії)
