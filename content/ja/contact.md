@@ -3,7 +3,7 @@ title: 連絡先
 slug: contact
 description: 1
 top_graphic: 1
-lastmod: 2021-08-31
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,9 +20,13 @@ Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## メーリングリスト
+## ニュースレターを購読
 
-ニュースレターのサインアップには、[こちらをクリック](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)してください。
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
+## プライバシー
+
+Email: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## セキュリティ
 
