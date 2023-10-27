@@ -11,9 +11,9 @@ Para identificar qual método vai funcionar melhor para você, você precisa det
 
 # Com Acesso ao Shell
 
-Recomendamos às pessoas que possuem acesso ao shell utilizar o cliente ACME [Certbot](https://certbot.eff.org/ "Certbot"). Ele pode automatizar a emissão de certificado e instalações sem a necessidade de interromper o serviço. Ele também possui um modo expert para pessoas que não querem autoconfiguração. É fácil de usar, funciona com muitos sistemas operacionais e possui uma ótima documentação. [Visite o site do Certbot](https://certbot.eff.org/ "Certbot") para obter instruções indicadas para o seu sistema operacional e servidor web.
+Recomendamos às pessoas que possuem acesso ao shell utilizar o cliente ACME [Certbot][]. Ele pode automatizar a emissão de certificado e instalações sem a necessidade de interromper o serviço. Ele também possui um modo expert para pessoas que não querem autoconfiguração. É fácil de usar, funciona com muitos sistemas operacionais e possui uma ótima documentação. [Visite o site do Certbot][Certbot] para obter instruções indicadas para o seu sistema operacional e servidor web.
 
-Se o [Certbot](https://certbot.eff.org/ "Certbot") não suprir suas necessidades ou você prefere usar outra coisa, existem [muitos outros clientes ACME para se usar](/docs/client-options).  Uma vez que você tenha escolhido um cliente ACME , veja a documentação do cliente escolhido para prosseguir.
+Se o [Certbot][] não suprir suas necessidades ou você prefere usar outra coisa, existem [muitos outros clientes ACME para se usar](/docs/client-options).  Uma vez que você tenha escolhido um cliente ACME , veja a documentação do cliente escolhido para prosseguir.
 
 Se você está experimentando diferentes clientes ACME, use nosso [ambiente de testes](/docs/staging-environment) para evitar atingir nossos [limites de uso](/docs/rate-limits).
 
@@ -30,3 +30,7 @@ Se o seu provedor de hospedagem não quiser integrar a Let's Encrypt, mas suport
 # Obtendo Ajuda
 
 Se você possui questões sobre a escolha de clientes ACME ou sobre como usar um cliente em particular, ou qualquer outra coisa relacionada à Let's Encrypt, por favor experimente usar nossos [úteis fóruns da comunidade](https://community.letsencrypt.org/c/help/ajuda-em-portugues).
+
+[Certbot]: https://certbot.eff.org/ "Certbot"
+
+[Certbot]: https://certbot.eff.org/ "Certbot"
