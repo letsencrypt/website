@@ -3,7 +3,7 @@ title: Duplikat Certifikat Grænse
 slug: duplicate-certificate-limit
 top_graphic: 1
 date: 2022-06-16
-lastmod: 2022-06-16
+lastmod: 2022-06-10
 show_lastmod: 1
 ---
 
@@ -11,8 +11,8 @@ show_lastmod: 1
 # Beskrivelse
 Alle anmodninger om udstedelse er underlagt et *Duplikat Certifikat* loft på 5 pr. uge. Du bør modtage en fejlmeddelelse som det følgende fra din ACME klient, når du har overskredet Duplikat certifikatgrænsen:
 ```
-too many certificates (5) already issued for this exact set of domains in the
-last 168 hours: example.com login.example.com: see https://letsencrypt.org/docs/duplicate-certificate-limit
+for mange certifikater (5) allerede udstedt for dette eksakte sæt domæner i
+sidste 168 timer: example.com login.example.com: se https://letsencrypt.org/docs/duplicate-certificate-limit
 ```
 Det "eksakte sæt", som denne fejl henviser til, er det sæt værtsnavne, der anmodes om for dette certifikat: i dette eksempel, `eksempel. om` og `login.example.com`. Hvis dit certifikat kun er udstedt for 1 navn, såsom eksempel. Om så ville det "eksakte sæt" af værtsnavne for dit certifikat være `[example.com]`. Denne sats grænse overskrides, når en abonnent anmoder om et certifikat for det samme "eksakt sæt" af værtsnavne mere end 5 gange i en enkelt uge.
 

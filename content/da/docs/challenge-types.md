@@ -1,9 +1,9 @@
 ---
-title: Challenge Typer
+title: Udfordringstyper
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-12-08
+lastmod: 2023-02-13
 show_lastmod: 1
 ---
 
@@ -34,13 +34,13 @@ Ulemper:
 
 Denne udfordring beder dig om at bevise, at du styrer DNS for det domænenavn ved at sætte en specifik værdi i en TXT-post under dette domænenavn. Det er sværere at konfigurere end HTTP-01, men kan fungere i scenarier, hvor HTTP-01 ikke kan. Det giver dig også mulighed for at udstede wildcard certifikater. Efter Let's Encrypt giver din ACME-klient et token, vil din klient oprette en TXT-post, der baseret på denne token og din kontonøgle, og lægge den record på `_acme-challenge.<YOUR_DOMAIN>`. Så vil Let's Encrypt forespørge DNS-systemet for denne post. Hvis den finder et match, kan du fortsætte med at udstede et certifikat!
 
-Da automatisering af udstedelse og fornyelser er meget vigtigt, giver det kun giver mening at bruge DNS-01 udfordringer, hvis din DNS-udbyder har et API, du kan bruge til at automatisere opdateringer. Vores community har startet en [liste over sådanne DNS- udbydere her](https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438). Din DNS-udbyder kan være den samme som din registrator (den virksomhed, hvor du købte dit domænenavn fra), eller den kan være en anden. Hvis du ønsker at ændre din DNS-udbyder, skal du blot foretage nogle små ændringer hos din registrator. Du behøver ikke at vente på, at dit domæne er tæt på udløb for at gøre det.
+Da automatisering af udstedelse og fornyelser er meget vigtigt, giver det kun giver mening at bruge DNS-01 udfordringer, hvis din DNS-udbyder har et API, du kan bruge til at automatisere opdateringer. Vores community har startet en [liste over sådanne DNS- udbydere her][dns-api-providers]. Din DNS-udbyder kan være den samme som din registrator (den virksomhed, hvor du købte dit domænenavn fra), eller den kan være en anden. Hvis du ønsker at ændre din DNS-udbyder, skal du blot foretage nogle små ændringer hos din registrator. Du behøver ikke at vente på, at dit domæne er tæt på udløb for at gøre det.
 
-Bemærk, at lægge dine login oplysninger til DNS API på din webserver væsentligt øger påvirkningen, hvis webserveren bliver hacket. Beste praksis er at bruge [mere snævert afgrænset API legitimationsoplysninger](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation), eller udføre DNS -validering fra en separat server og automatisk kopiere certifikater til din webserver.
+Bemærk, at sætte din fulde DNS API legitimationsoplysninger på din webserver væsentligt øger indvirkningen, hvis denne webserver er hacket. Beste praksis er at bruge [mere snævert afgrænset API legitimationsoplysninger][securing-dns-credentials], eller udføre DNS -validering fra en separat server og automatisk kopiere certifikater til din webserver.
 
-Da Let's encrypt følger DNS standarder, til at søge TXT poster for DNS-01 validering, du kan bruge CNAME-posteringer eller NS-posteringer til at uddelegere udfordringen til andre DNS-zoner. Dette kan bruges til at [uddelegere `_acme-challenge` subdomæne](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation) til en valideringsspecifik server eller zone. Det kan også bruges, hvis din DNS udbyder er langsom til at opdatere, og du ønsker at delegere til en hurtigere opdaterende server.
+Da Let's encrypt følger DNS standarder, til at søge TXT poster for DNS-01 validering, du kan bruge CNAME-posteringer eller NS-posteringer til at uddelegere udfordringen til andre DNS-zoner. Dette kan bruges til at [uddelegere `_acme-challenge` subdomæne][securing-dns-credentials] til en valideringsspecifik server eller zone. Det kan også bruges, hvis din DNS udbyder er langsom til at opdatere, og du ønsker at delegere til en hurtigere opdaterende server.
 
-De fleste DNS-udbydere har en “udsprednings tid”, der regulerer, hvor lang tid det tager fra den tid, du opdaterer en DNS-post, indtil det er tilgængeligt på alle af deres servere. Det kan være svært at måle dette, fordi de ofte også bruge [anycast](https://en.wikipedia.org/wiki/Anycast), hvilket betyder, at flere servere kan have den samme IP-adresse, og afhængigt af hvor du befinder dig i verden, kan du tale med en anden server (og få et andet svar) end Let's Encrypt gør. De bedste DNS API'er giver dig en måde at automatisk kontrollere, om en opdatering er fuldt udrullet. Hvis din DNS-udbyder ikke har dette, du skal blot konfigurere din klient til at vente længe nok (ofte så meget som en time) for at sikre, at opdateringen bliver udrullet, før validering udføres.
+De fleste DNS-udbydere har en “udsprednings tid”, der regulerer, hvor lang tid det tager fra den tid, du opdaterer en DNS-post, indtil det er tilgængeligt på alle af deres servere. Det kan være svært at måle dette, fordi de ofte også bruge [anycast][], hvilket betyder, at flere servere kan have den samme IP-adresse, og afhængigt af hvor du befinder dig i verden, kan du tale med en anden server (og få et andet svar) end Let's Encrypt gør. De bedste DNS API'er giver dig en måde at automatisk kontrollere, om en opdatering er fuldt udrullet. Hvis din DNS-udbyder ikke har dette, du skal blot konfigurere din klient til at vente længe nok (ofte så meget som en time) for at sikre, at opdateringen bliver udrullet, før validering udføres.
 
 Du kan have flere TXT poster på plads for samme navn. For eksempel, kan dette ske, hvis du validerer en udfordring for et wildcard og et ikke-wildcard certifikat på samme tid. Du bør dog sørge for at rydde op i gamle TXT-poster, fordi hvis svarstørrelsen bliver for stor vil Let's encrypt begynde at afvise det.
 
@@ -57,13 +57,13 @@ Ulemper:
 
 # TLS-SNI-01
 
-Denne udfordring blev defineret i udkast til versioner af ACME. Det gjorde en TLS håndtryk på port 443 og sendte en specifik [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) header, på udkig efter certifikat, der indeholdt token. Den [blev deaktiveret i marts 2019](https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209), fordi den ikke var sikker nok.
+Denne udfordring blev defineret i udkast til versioner af ACME. Det gjorde en TLS håndtryk på port 443 og sendte en specifik [SNI][] header, på udkig efter certifikat, der indeholdt token. Den [blev deaktiveret i marts 2019][tls-sni-disablement], fordi den ikke var sikker nok.
 
 # TLS-ALPN-01
 
-Denne udfordring blev udviklet efter at TLS-SNI-01 blev udfaset, og er ved at blive udviklet som [en separat standard](https://tools.ietf.org/html/rfc8737). I lighed med TLS-SNI-01 udføres det via TLS på port 443. Imidlertid det bruger en brugerdefineret ALPN-protokol til at sikre, at kun servere, der er klar over denne challengetype, vil reagere på valideringsanmodninger. Dette gør det også muligt for valideringsanmodninger for denne challenge type at bruge et SNI felt, der matcher domænenavnet valideret at gøre det mere sikkert.
+Denne udfordring blev udviklet efter at TLS-SNI-01 blev udfaset, og er ved at blive udviklet som [en separat standard][tls-alpn]. I lighed med TLS-SNI-01 udføres det via TLS på port 443. Imidlertid det bruger en brugerdefineret ALPN-protokol til at sikre, at kun servere, der er klar over denne challengetype, vil reagere på valideringsanmodninger. Dette gør det også muligt for valideringsanmodninger for denne challenge type at bruge et SNI felt, der matcher domænenavnet valideret at gøre det mere sikkert.
 
-Denne udfordring er ikke egnet til de fleste mennesker. Det er bedst egnet til forfattere af TLS-terminating reverse proxies, der ønsker at udføre værtbaseret validering som HTTP-01, men ønsker at gøre det helt på TLS lag for at separere bekymringer. Lige nu betyder det hovedsageligt store hosting udbydere men almindelige webservere som Apache og Nginx kunne en dag implementere dette (og [Caddy allerede gør](https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860)).
+Denne udfordring er ikke egnet til de fleste mennesker. Det er bedst egnet til forfattere af TLS-terminating reverse proxies, der ønsker at udføre værtbaseret validering som HTTP-01, men ønsker at gøre det helt på TLS lag for at separere bekymringer. Lige nu betyder det hovedsageligt store hosting udbydere men almindelige webservere som Apache og Nginx kunne en dag implementere dette (og [Caddy allerede gør][caddy-tls-alpn]).
 
 Fordele:
 
@@ -75,3 +75,12 @@ Ulemper:
  - Det er ikke understøttet af Apache, Nginx eller Certbot, og bliver det sandsynligvis ikke snart.
  - Ligesom HTTP-01, hvis du har flere servere, de har brug for til alle svar med det samme indhold.
  - Denne metode kan ikke bruges til at validere wildcard domæner.
+
+[dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[anycast]: https://en.wikipedia.org/wiki/Anycast
+[SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
+[tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
+[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

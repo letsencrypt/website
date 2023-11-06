@@ -28,7 +28,7 @@ Fornyelse af håndtering ignorerer den offentlige nøgle og de udvidelser, der e
 
 **Tilbagekaldelse af certifikater nulstiller ikke kaldsgrænser**, fordi ressourcerne til udstedelse af disse certifikater allerede er blevet forbrugt.
 
-There is a!!crwdBlockTags_34_sgaTkcolBdwrc!![**Failed Validation**](/docs/failed-validation-limit) limit of 5 failures per account, per hostname, per hour. Denne grænse er højere på vores [staging miljø](/docs/staging-environment), så du kan bruge dette miljø til at løse forbindelsesproblemer. Overskridelse af grænsen for mislykkede Valideringer er rapporteres med fejlmeddelelsen `too many failed
+Der er en <a id="failed-validations"></a>[**Mislykket Validering**](/docs/failed-validation-limit) grænse på 5 fejl pr. konto, pr. værtsnavn, pr. time. Denne grænse er højere på vores [staging miljø](/docs/staging-environment), så du kan bruge dette miljø til at løse forbindelsesproblemer. Overskridelse af grænsen for mislykkede Valideringer er rapporteres med fejlmeddelelsen `too many failed
 authorizations recently`.
 
 Særligt for API-kaldene "new-nonce", "new-account", "new-order" og "revoke-cert" gælder en <a
@@ -36,7 +36,7 @@ id="overall-requests"></a>**Samlet Kaldsgrænse** på 20 per sekund. Api-kaldet 
 
 Vi har to andre grænser, som du højst sandsynligt ikke vil løbe ind i.
 
-Du kan maksimalt oprette 10 <a id="accounts-per-ip-address"></a>**Konti pr. IP-adresse** pr. 3 timer. Du kan oprette et maksimum på 500 **konti pr. IP-interval** inden for en IPv6 /48 pr. 3 timer. At ramme begge konto kalds grænse er meget sjældent, og vi anbefaler, at store integratører anvender et design [som benytter én konto til mange kunder](/docs/integration-guide). Overskridelse af disse grænser rapporteres med fejlmeddelelsen `too many registrations for this IP` eller `too many registrations for this IP range`.
+Du kan maksimalt oprette 10 <a id="accounts-per-ip-address"></a>[**Konti pr. IP-adresse**](/docs/too-many-registrations-for-this-ip) pr. 3 timer. Du kan oprette et maksimum på 500 **konti pr. IP-interval** inden for en IPv6 /48 pr. 3 timer. At ramme begge konto kalds grænse er meget sjældent, og vi anbefaler, at store integratører anvender et design [som benytter én konto til mange kunder](/docs/integration-guide). Overskridelse af disse grænser rapporteres med fejlmeddelelsen `too many registrations for this IP` eller `too many registrations for this IP range`.
 
 Du kan maksimalt have 300 <a id="pending-authorizations"></a>**Afventende godkendelser** på din konto. At ramme denne kalds grænse er sjældent, og sker oftest hvis du udvikler ACME-klienter. Det normalt betyder, at din klient skaber autorisationer og ikke opfylder dem. Benyt venligst vores [staging miljø](/docs/staging-environment), hvis du udvikler en ACME-klient. Overskridelse af grænsen for Afventende Autorisationer er rapporteret med fejlmeddelelsen `too many currently pending authorizations`.
 
@@ -44,7 +44,7 @@ Du kan maksimalt have 300 <a id="pending-authorizations"></a>**Afventende godken
 
 Hvis du har ramt en kaldsgrænse, har vi ikke en måde at nulstille den midlertidigt. Du skal vente indtil kaldsgrænsen udløber efter en uge. Vi bruger et glidende vindue,, så hvis du har udstedt 25 certifikater mandag og 25 flere certifikater fredag, du vil kunne udstede igen fra mandag. Du kan få en liste over certifikater udstedt for dit registrerede domæne ved [at søge på crt.sh](https://crt.sh), som bruger det offentlige [Certificate Transparency](https://www.certificate-transparency.org) logs.
 
-Hvis du er en stor hosting udbyder eller organisation, der arbejder på en Let's Encrypt integration, vi har en [kalds begrænsnings ansøgnings formular](https://goo.gl/forms/plqRgFVnZbdGhE9n1), der kan bruges til at anmode om en højere kalds grænser. Det tager et par uger at behandle anmodninger, så denne formular er ikke egnet, hvis du blot skal nulstille en hastighedsgrænse hurtigere end den nulstiller på egen hånd.
+Hvis du er en stor hosting udbyder eller organisation, der arbejder på en Let's Encrypt integration, vi har en [kalds begrænsnings ansøgnings formular](https://isrg.formstack.com/forms/rate_limit_adjustment_request), der kan bruges til at anmode om en højere kalds grænser. Det tager et par uger at behandle anmodninger, så denne formular er ikke egnet, hvis du blot skal nulstille en hastighedsgrænse hurtigere end den nulstiller på egen hånd.
 
 # <a id="clearing-pending"></a>Ryd Afventende Autorisationer
 
