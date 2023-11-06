@@ -11,7 +11,7 @@ show_lastmod: false
 Alle forespørgsler om udstedelse er underlagt en *Mislykket Validering* grænse på 5 fejl pr. konto, pr. værtsnavn, pr. time. Du bør modtage følgende fejlmeddelelse fra din ACME-klient, når du har overskredet grænsen for fejlvalidering:
 
 ```
-too many failed authorizations recently: see https://letsencrypt.org/docs/failed-validation-limit/
+for mange mislykkede godkendelser for nylig: se https://letsencrypt.org/docs/failed-validation-limit/
 ```
 
 De »tilladelser«, som denne fejl henviser til, er resultatet af anmodninger om tilladelse sendt af din ACME-klient, for at validere kontrollen over et domænenavn, før vi kan udstede eller forny et certifikat. Denne fejl indikerer, at flere anmodninger om validering blev sendt med succes, men alle forsøg på validering er mislykkedes.
