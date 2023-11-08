@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-	dir="{{  with .Language.LanguageDirection }}{{ . }}{{ else }}ltr{{ end }}"
+	dir="{{  with $.Site.Language.LanguageDirection }}{{ . }}{{ else }}ltr{{ end }}"
 	lang="{{ if and $.Site.LanguageCode (not .Page.Params.untranslated) }}{{ $.Site.LanguageCode }}{{ else }}en-US{{ end }}">
 	
 	{{/* For untranslated page, we use the English header. */}}
