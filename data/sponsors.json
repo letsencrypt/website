@@ -328,6 +328,7 @@
     { "name": "Confluent", "url": "https://www.confluent.io/", "image": "confluent-logo.svg" },
     { "name": "Jet Brains", "url": "https://www.jetbrains.com/", "image": "jetbrains-logo.png" },
     { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" },
-    { "name": "SecureW2", "url": "https://www.securew2.com/", "image": "securew2-logo.svg" }
+    { "name": "SecureW2", "url": "https://www.securew2.com/", "image": "securew2-logo.svg" },
+    { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" }
   ]
 }
