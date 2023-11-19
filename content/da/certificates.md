@@ -94,7 +94,7 @@ Dette certifikat bruges til at signere OCSP-svar for Let's Encrypt sinatur inter
 
 Vores nyere intermedia certifikater har ikke OCSP-URL'er (deres tilbagekaldelsesoplysninger er anvendes i stedet via CRL), så vi har ikke udstedt et OCSP-signeringscertifikat fra ISRG Root X2.
 
-# Certificate Transparency
+# Certifikatets Gennemsigtighed
 
 Vi er dedikeret til gennemsigtighed i vores driftsanliggender og i de certifikater, vi udsteder. Vi sender alle certifikater til [Certifikat Gennemsigtighed Logen](https://www.certificate-transparency.org/) når vi udsteder dem. Du kan se alle udstedte Let's Encrypt certifikater via disse links:
 

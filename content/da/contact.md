@@ -1,9 +1,9 @@
 ---
 title: Kontakt
 slug: contact
-description: How to contact us
+description: Sådan kontakter du os
 top_graphic: 1
-lastmod: 2023-08-23
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,7 +20,9 @@ E-mail: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 E-mail: [press@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Abonner på vores nyhedsbrev <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+## Abonner på vores nyhedsbrev
+
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
 
 ## Privatlivspolitik
 
