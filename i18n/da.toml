@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "En nonprofit Certificat udsteder leverer TLS-certifikater til <span>260 millioner</span> hjemmesider."
+other = "En nonprofit Certificat udsteder leverer TLS-certifikater til <span>300 millioner</span> hjemmesider."
 
 [home_hero_getting_started]
 other = "Kom i gang"
@@ -11,7 +11,7 @@ other = "Donér"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Vi blev tildelt Levchin-prisen for praktisk anvendt kryptografi! <a href='https://abetterinternet.org/levchin-prize'>Læs mere</a>"
+other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abetterinternet.org/annual-reports/'>2022 årsberetning</a>."
 
 [home_major_sponsors]
 other = "Store sponsorer og finansieringskilder"
@@ -40,9 +40,6 @@ Se vores <a href="/privacy/">privatlivspolitik</a>.<br>
 Se vores <a href="https://www.abetterinternet.org/trademarks">varemærkepolitik</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation er et registreret varemærke tilhørende Linux-fonden. Linux er et registreret varemærke tilhørende Linus Torvalds."
-
 [header_skip_nav]
 other = "Spring navigation links over"
 
@@ -54,6 +51,9 @@ other = "Se al dokumentation"
 
 [blog_feed]
 other = "Let's Encrypt Blog Feed"
+
+[diamond]
+other = "Diamant"
 
 [platinum]
 other = "Platinum"
@@ -189,3 +189,9 @@ other = "100-999 ansatte"
 
 [1000_employees]
 other = "1000 + ansatte"
+
+[subscribe_to_newsletter_headline]
+other = "Abonner på vores nyhedsbrev"
+
+[site_banner_text]
+other = "ISRG fejrer 10 år for at hjælpe med at opbygge et lysere internet →"

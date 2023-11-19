@@ -2,12 +2,12 @@
 title: Certifikatets Kompatilitet
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
 
-Den vigtigste afgørende faktor for, om en platform kan validere Let's Encrypt certifikater er, om platformen stoler på ISRG's "ISRG Root X1" certifikat. Før september 2021 kunne nogle platforme validere vores certifikater, selvom de ikke inkluderer ISRG Root X1, fordi de stolede på IdenTrust's "DST Root CA X3" certifikat. Efter September 2021 og fremadrettet vil kun de platforme, der stoler på ISRG Root X1 vil fortsætte med at validere Let's Encrypt certifikater ([med undtagelse af Android](/2020/12/21/extending-android-compatibility.html)).
+Den vigtigste afgørende faktor for, om en platform kan validere Let's Encrypt certifikater er, om platformen stoler på ISRG's "ISRG Root X1" certifikat. Før september 2021 kunne nogle platforme validere vores certifikater, selvom de ikke inkluderer ISRG Root X1, fordi de stolede på IdenTrust's "DST Root CA X3" certifikat. Efter September 2021 og fremadrettet vil kun de platforme, der stoler på ISRG Root X1 vil fortsætte med at validere Let's Encrypt certifikater ([med undtagelse af Android][android-compat]).
 
 Hvis dit certifikat validerer på nogle af de "kendte kompatible" platforme, men ikke andre, kan problemet være en webserver fejlkonfiguration. Hvis du har et problem med moderne platforme, er den mest almindelige årsag ikke at levere den korrekte certifikatkæde. Test dit websted med [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). Hvis det ikke identificerer problemet, så spørg om hjælp i vores [Community Forums](https://community.letsencrypt.org/).
 
@@ -25,7 +25,7 @@ Hvis dit certifikat validerer på nogle af de "kendte kompatible" platforme, men
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3,26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-Browsere (Chrome, Safari, Edge, Opera) stoler generelt på de samme rodcertifikater som det styresystem, de kører på. Firefox er undtagelsen: det har sin egne rodcertifikater. Snart vil nye versioner af Chrome [også have deres egne rodcertifikater](https://www.chromium.org/Home/chromium-security/root-ca-policy).
+Browsere (Chrome, Safari, Edge, Opera) stoler generelt på de samme rodcertifikater som det styresystem, de kører på. Firefox er undtagelsen: det har sin egne rodcertifikater. Snart vil nye versioner af Chrome [også have deres egne rodcertifikater][chrome-root-store].
 
 # Platforme der stoler DST Root CA X3, men ikke ISRG Root X1
 
@@ -62,4 +62,14 @@ Disse platforme ville have fungeret frem til september 2021, men vil ikke længe
 
 # ISRG Root X2 (ny ECDSA root) - kommer snart
 
-Vi har indsendt ISRG Root X2 til Microsoft, Apple, Google, Mozilla, og Oracle rod-certifikat-programmer med henblik på tilføjelse. ISRG Root X2 er allerede bredt betroet via et krydssignatur fra vores ISRG Root X1. For yderligere information, tjek vores [community forum indlæg](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+Vi har indsendt ISRG Root X2 til Microsoft, Apple, Google, Mozilla, og Oracle rod-certifikat-programmer med henblik på tilføjelse.
+
+ISRG Root X2 er allerede bredt betroet via et krydssignatur fra vores ISRG Root X1. Derudover har flere rodprogrammer allerede tilføjet ISRG Root X2 som et trust anchor.
+
+For yderligere information, tjek vores [community forum indlæg](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+
+Mens vi venter på, at ISRG Root X2 bliver bredt betroet, er det muligt at opt-in at bruge ISRG Root X2 til dine ECDSA-certifikater. For mere information, se vores [community forum indlæg](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
+
+[android-compat]: /2020/12/21/extending-android-compatibility.html
+
+[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy
