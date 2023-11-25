@@ -2,19 +2,21 @@
 title: Kommende Funktioner
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2021-09-16
+lastmod: 2023-06-20
 show_lastmod: 1
 ---
-
-## ACME Fornyelsesinformation (ARI)
-
-Vi arbejder på et system, der vil give os mulighed for at underrette abonnenter via API, når de har brug for at forny. Dette system vil give os mulighed for at signalere til abonnenter, at de skal forny før inden for eksempel en tilbagekaldelse begivenhed.
 
 ## ECDSA Root og intermediates
 
 Vi udsteder certifikater fra vores produktion ECDSA intermediate til [allow-listed accounts](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). Der er ingen planlagt dato for at fjerne tilladelseslisten.
 
 # Fuldførte Funktioner
+
+## ACME Fornyelsesinformation (ARI)
+
+* Aktiveret: 23. Maj 2023
+
+Vi kører nu [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html), et system, der giver os mulighed for at underrette abonnenter via API, når de skal fornyes.
 
 ## Multi-Perspektiv Validering
 
