@@ -320,7 +320,7 @@
     { "name": "Crypto Tracker", "url": "https://cryptotracker.com/", "image": "cryptotracker-logo.svg" },
     { "name": "Tailscale", "url": "https://tailscale.com/", "image": "tailscale-logo.svg" },
     { "name": "BitLaunch", "url": "https://bitlaunch.io/", "image": "bitlaunch-logo.svg" },
-    { "name": "IBAN", "url": "https://iban.com/", "image": "iban-logo.png" },
+    { "name": "IBAN", "url": "https://www.iban.com/", "image": "iban-logo.png" },
     { "name": "Yubico", "url": "https://yubico.com/", "image": "yubico-logo.png" },
     { "name": "Video Downloader", "url": "https://www.4kdownload.com/-1uvr6/video-downloader", "image": "4kdownload-logo.png" },
     { "name": "VPSServer.com", "url": "https://www.vpsserver.com/", "image": "VPSServer-logo.svg" },
