@@ -469,3 +469,65 @@ html[dir="rtl"] a.autoanchor {
   margin-right: auto;
   display: block;
 }
+
+.footer-option {
+  margin: 100px 0;
+}
+.footer-option h6 {
+  font-size: 20px;
+  // font-weight: bold;
+}
+
+.footer-option-1 {
+  font-style: italic;
+  color: #6c7686;
+}
+
+.footer-option-2 {
+  color: #6c7686;
+  padding-top: 0.5rem;
+}
+
+.footer-option-2 h6 span {
+  border-top: 3px solid #ffd43b;
+  padding-top: 1rem;
+}
+
+.footer-option-3 {
+  background-color: #ffd43b;
+  color: #2b3c69;
+  padding: 1rem;
+  border: 1px solid #6c7686;
+
+}
+
+.footer-option-4 {
+  background-color: #2b3c69;
+  color: #ffd43b;
+  padding: 1rem;
+  border-top: 1px solid #6c7686;
+}
+
+.footer-option-4 a {
+  color: #ffd43b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #fff;
+}
+
+.footer-option-5 {
+  background-color: #2b3c69;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer-option-5 a {
+  color: #ffd43b;
+}
+.footer-option-3 h6,
+.footer-option-4 h6,
+.footer-option-5 h6 {
+  font-weight: bold;
+}
+
+
