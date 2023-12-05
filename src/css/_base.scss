@@ -470,63 +470,27 @@ html[dir="rtl"] a.autoanchor {
   display: block;
 }
 
-.footer-option {
-  margin: 100px 0;
-}
-.footer-option h6 {
-  font-size: 20px;
-  // font-weight: bold;
-}
-
-.footer-option-1 {
-  font-style: italic;
-  color: #6c7686;
-}
-
-.footer-option-2 {
-  color: #6c7686;
-  padding-top: 0.5rem;
-}
-
-.footer-option-2 h6 span {
-  border-top: 3px solid #eca541;
-  padding-top: 1rem;
-}
-
-.footer-option-3 {
-  background-color: #eca541;
-  color: #2b3c69;
-  padding: 1rem;
-  border: 1px solid #6c7686;
-
-}
-
-.footer-option-4 {
-  background-color: #2b3c69;
-  color: #eca541;
-  padding: 1rem;
-  border-top: 1px solid #6c7686;
-}
-
-.footer-option-4 a {
-  color: #eca541;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-}
-
-.footer-option-5 {
+.post-footer {
   background-color: #2b3c69;
   color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
 
-.footer-option-5 a {
+.post-footer a {
   color: #eca541;
 }
-.footer-option-3 h6,
-.footer-option-4 h6,
-.footer-option-5 h6 {
+
+.post-footer h6 {
+  font-size: 20px;
+  line-height: 1;
   font-weight: bold;
+  margin-top: 0;
+}
+
+
+.post-footer p:last-child {
+  margin-bottom: 0;
 }
 
 
