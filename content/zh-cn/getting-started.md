@@ -11,9 +11,9 @@ date: 2020-02-11
 
 # 拥有命令行访问权限
 
-我们建议大多数具有命令行访问权限的人使用 [Certbot](https://certbot.eff.org/ "Certbot") ACME 客户端。 它可以在不下线您的服务器的前提下自动执行证书颁发和安装。 对于不需要自动配置的用户，Certbot 还提供专家模式。 它易于使用，适用于许多操作系统，并且具有出色的（注：英文）文档。 前往 [Certbot 官网](https://certbot.eff.org/ "Certbot")即可获取针对各类操作系统与服务器软件的使用说明。
+我们建议大多数具有命令行访问权限的人使用 [Certbot][] ACME 客户端。 它可以在不下线您的服务器的前提下自动执行证书颁发和安装。 对于不需要自动配置的用户，Certbot 还提供专家模式。 它易于使用，适用于许多操作系统，并且具有出色的（注：英文）文档。 前往 [Certbot 官网][Certbot]即可获取针对各类操作系统与服务器软件的使用说明。
 
-如果 [Certbot](https://certbot.eff.org/ "Certbot") 不能满足您的需求，或者您想尝试别的客户端，还有[更多 ACME 客户端](/docs/client-options)可供选择。  选定 ACME 客户端软件后，请参阅该客户端的文档。
+如果 [Certbot][] 不能满足您的需求，或者您想尝试别的客户端，还有[更多 ACME 客户端](/docs/client-options)可供选择。  选定 ACME 客户端软件后，请参阅该客户端的文档。
 
 如果您正在尝试不同的 ACME 客户端，请使用我们的[临时环境](/docs/staging-environment)以避免遭到[速率限制](/docs/rate-limits)。
 
@@ -30,3 +30,7 @@ date: 2020-02-11
 # 获取帮助
 
 如果您对选择 ACME 客户端，使用特定客户端或与 Let's Encrypt 相关的任何其他内容有疑问，请前往我们的[社区论坛](https://community.letsencrypt.org/)获取帮助。
+
+[Certbot]: https://certbot.eff.org/ "Certbot"
+
+[Certbot]: https://certbot.eff.org/ "Certbot"

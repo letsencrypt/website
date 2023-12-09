@@ -26,7 +26,7 @@ For at starte processen, spørger agenten Let's Encrypt CA, hvad den skal gøre 
 Sammen med udfordringerne Let's Encrypt CA giver også en nonce at agenten skal underskrive med sin private nøgle par for at bevise, at det styrer nøglen parret.
 
 <div class="howitworks-figure">
-<img alt="Requesting challenges to validate example.com"
+<img alt="Anmoder om udfordringer til at validere example.com"
      src="/images/howitworks_challenge.png"/>
 </div>
 
@@ -35,7 +35,7 @@ Agent software fuldender en af de leverede sæt af udfordringer.   Lad os antage
 Derefter er det CA's opgave at kontrollere, at udfordringerne er blevet imødekommet.  CA verificerer underskriften på nonce, og det forsøger at hente filen fra webserveren og bekræfter at den har det forventede indhold.
 
 <div class="howitworks-figure">
-<img alt="Requesting authorization to act for example.com"
+<img alt="Anmoder om tilladelse til at agere for example.com"
      src="/images/howitworks_authorization.png"/>
 </div>
 
@@ -51,16 +51,14 @@ For at få et certifikat for domænet konstruerer agenten en PKCS#10 [Certifikat
 Når Let's&nbsp;Encrypt CA modtager anmodningen, verificerer den begge underskrifter.  Hvis alt ser godt ud, udsteder det et certifikat for `example.com` med den offentlige nøgle fra CSR og returnerer det til agenten.
 
 <div class="howitworks-figure">
-<img alt="Requesting a certificate for example.com"
+<img alt="Anmod om et certifikat til example.com"
      src="/images/howitworks_certificate.png"/>
 </div>
 
-Tilbagekaldelse virker på en lignende måde.  Agenten underskriver en tilbagekaldelsesanmodning med nøgleparret godkendt for `eksempel.com`, og Let's&nbsp;Encrypt CA bekræfter, at anmodningen er autoriseret.  I så fald offentliggør den tilbagekaldelsesoplysninger i de normale tilbagekaldelseskanaler (dvs. OCSP), så afhængige parter såsom browsere kan vide, at de ikke bør acceptere det tilbagekaldte certifikat.
+Tilbagekaldelse virker på en lignende måde.  Agenten underskriver en tilbagekaldelsesanmodning med nøgleparret godkendt for `eksempel.com`, og Let's&nbsp;Encrypt CA bekræfter, at anmodningen er autoriseret.  I så fald offentliggør den tilbagekaldelsesoplysninger i de normale tilbagekaldelseskanaler (dvs. OCSP), således at afhængige parter såsom browsere kan vide, at de ikke bør acceptere det tilbagekaldte certifikat.
 
 <div class="howitworks-figure">
-<img alt="Requesting revocation of a certificate for example.com"
+<img alt="Anmodning om tilbagekaldelse af et certifikat for example.com"
      src="/images/howitworks_revocation.png"/>
 </div>
-
-
 

@@ -2,7 +2,7 @@
 title: Politik om beskyttelse af personlige oplysninger
 slug: privacy
 top_graphic: 4
-lastmod: 2022-03-11
+lastmod: 2023-08-23
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -25,15 +25,15 @@ Hvis du er abonnent, anmoder du om et betroet certifikat fra Let's Encrypt som h
 
 Vi skal kunne demonstrere over for offentligheden herunder dem, der er afhængige af vores certifikaters troværdighed, at vores tjenester fungerer som forventet. Som følge heraf kan vi ikke slette oplysninger, herunder IP-adresser. Disse oplysninger kan offentliggøres på en række måder, herunder via offentlige API, offentlige registre og/eller offentlige diskussioner.
 
-Du kan have mulighed for at give kontaktoplysninger, såsom din e-mail-adresse, til kontoservice og genoprettelsesformål. Dine kontaktoplysninger vil ikke blive offentliggjort, og det vil kun blive delt pr. "Lov Håndhævelse og Udvidelse Omstændigheder", nedenfor. Ved at angive din e-mailadresse, er du indforstået med at modtage service-relaterede e-mails fra os. Du kan til enhver tid afmelde dig service-relaterede e-mails ved at klikke på linket "Afmeld" nederst på vores e-mails eller ved at kontakte os på security@letsencrypt.org. Vi vil ikke bruge dine kontaktoplysninger til markedsføring eller salgsfremmende formål.
+Du kan have mulighed for at give kontaktoplysninger, såsom din e-mail-adresse, til kontoservice og genoprettelsesformål. Dine kontaktoplysninger vil ikke blive offentliggjort, og det vil kun blive delt pr. "Lov Håndhævelse og Udvidelse Omstændigheder", nedenfor. Ved at angive din e-mailadresse, er du indforstået med at modtage service-relaterede e-mails fra os. Du kan til enhver tid afmelde dig service-relaterede e-mails ved at klikke på linket "Afmeld" nederst på vores e-mails eller ved at kontakte os på privacy@abetterinternet.org. Vi vil ikke bruge dine kontaktoplysninger til markedsføring eller salgsfremmende formål.
 
 Det kan være nødvendigt at downloade klientsoftware fra et depot såsom Debian, Ubuntu, Red Hat eller Github. Din interaktion med et sådant software-repository er underlagt dette repositorys egen privatlivspolitik og/eller Vilkår for anvendelse.
 
 ## Besøgende
 
-Når du er en besøgende gennemser Let's Encrypts hjemmeside, har du mulighed for at gøre en donation. Donationer behandles af vores betroede betalingspartnere, herunder DonorBox, Stripe, Shopify, PayPal, Den Giving Block, og Gemini afhængigt af den valgte betalingsmetode og gemt i ISRG's Salesforce database. Vi indsamler dit navn og din e-mailadresse, når du donerer. Vi vil ikke bruge din e-mailadresse til at kontakte dig uden dit samtykke, medmindre vi mener, at det er nødvendigt at løse et problem i forbindelse med en bestemt donation. Dine interaktioner med [DonorBox](https://donorbox.org/privacy), [Stribe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [Den Givende blok](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), og [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) er underlagt deres respektive privatlivspolitikker. Vi indsamler eller opbevarer ikke kreditkort eller bankoplysninger relateret til donationer. Vores leveringspartnere er Shopify og SHIPHERO.
+Når du som besøgende gennemser ISRG hjemmeside, har du mulighed for at lave en donation. Donationer behandles af vores betroede betalingspartnere, herunder DonorBox, Stripe, Shopify, og PayPal, afhængigt af den valgte betalingsmetode og opbevares i ISRG's Salesforce database og Sage Intacct som nødvendigt. Vi indsamler dit navn og din e-mailadresse, og hvis du angiver det, din postadresse, når du donerer. Når du donerer, vil vi bruge dine oplysninger til vores legitime interesse i at behandle og administrere dit bidrag, herunder fundraising påmindelser og fornyelser. Dine interaktioner med [DonorBox](https://donorbox.org/privacy), [Stribe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [Den Givende blok](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), og [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) er underlagt deres respektive privatlivspolitikker. Vi indsamler eller opbevarer ikke kreditkort eller bankoplysninger relateret til donationer.
 
-Du kan have mulighed for at give din e-mail-adresse til at modtage meddelelser i forbindelse med ISRG-projekter gennem en tilmelding på en ISRG hjemmeside og via andre markedsføringsmaterialer. Enhver kommunikation leveret via MailChimp eller Salesforce og dine interaktioner med [MailChimp](https://www.intuit.com/privacy/statement/) og [Salesforce](https://www.salesforce.com/company/privacy/) er underlagt deres privatlivspolitikker. Vi kan lejlighedsvis bruge din e-mailadresse til at sende personlig kommunikation relateret til Let's Encrypt. Du kan anmode om at få din e-mailadresse fjernet fra vores liste ved at afmelde via MailChimp eller emaile os på press@letsencrypt.org.
+Du kan have mulighed for at give din e-mail-adresse til at modtage meddelelser i forbindelse med ISRG-projekter gennem en tilmelding på en ISRG hjemmeside og via andre markedsføringsmaterialer. Enhver kommunikation leveret via Salesforce og dine interaktioner med [Salesforce](https://www.salesforce.com/company/privacy/) er underlagt deres privatlivspolitikker. Vi kan lejlighedsvis bruge din e-mail-adresse til at sende personlige meddelelser relateret til ISRG og dets projekter. Du kan anmode om at få din e-mailadresse fjernet ved at fravælge via sidefoden af vores e-mails eller sende os en e-mail på press@abetterinternet.org
 
 Hvis du registrerer dig for at bruge Let's Encrypt community support forum, er de personlige oplysninger, du giver, og dine handlinger der er underlagt fortrolighedspolitikken af vores hosting og softwareudbyder for forummet, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). Vi indsamler eller vedligeholder ikke personlige oplysninger via vores tilbud om dette supportforum.
 
@@ -89,12 +89,12 @@ Dine personoplysninger kan blive indsamlet fra eller overført til jurisdiktione
 
 Enkeltpersoner i Det Europæiske Økonomiske Samarbejdsområde (EØS) har visse rettigheder med hensyn til deres personlige oplysninger, herunder retten til at få adgang til, rette eller slette personoplysninger, som vi behandler gennem din brug af vores websteder og tjenester. Hvis du er en person, der er en deltagende part, abonnent eller besøgende baseret på EØS, kan du:
 
-- Anmod om en persondatarapport ved at sende en e-mail til os på security@letsencrypt.org. Denne rapport vil indeholde de personoplysninger, vi har om dig, givet dig i et struktureret, almindeligt anvendt og overførbart format. Bemærk venligst, at vi kan anmode dig om yderligere oplysninger for at bekræfte din identitet, før vi videregiver oplysninger.
+- Anmod om en persondatarapport ved at sende en e-mail til os på privacy@abetterinternet.org. Denne rapport vil indeholde de personoplysninger, vi har om dig, givet dig i et struktureret, almindeligt anvendt og overførbart format. Bemærk venligst, at vi kan anmode dig om yderligere oplysninger for at bekræfte din identitet, før vi videregiver oplysninger.
 
-- Anmod om, at dine oplysninger bliver rettet eller slettet ved at kontakte os på security@letsencrypt.org.
+- Anmod om, at dine oplysninger bliver rettet eller slettet ved at kontakte os på privacy@abetterinternet.org.
 
 - Protester mod brugen af oplysninger om dig. Du kan bede os om at holde op med at bruge dine oplysninger, herunder når vi bruger dine oplysninger til at sende dig e-mails. Du kan til enhver tid tilbagekalde dit samtykke til at modtage service emails ved at klikke på linket "Afmeld" fundet i Let's Encrypt e-mails.
 
 - Klag til en myndighed. Hvis du er baseret i EØS og tror, at vi ikke har overholdt databeskyttelseslovene. De har ret til at indgive en klage til din lokale tilsynsmyndighed.
 
-For mere information, eller for at rapportere et privatlivsproblem, kontakt venligst: security@letsencrypt.org.
+For mere information, eller for at rapportere et privatlivsproblem, kontakt venligst: privacy@abetterinternet.org.
