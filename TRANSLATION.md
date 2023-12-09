@@ -21,7 +21,7 @@ If you are interested to add a new language, please open an issue with the infor
 Someone from Let's Encrypt will add the language to Crowdin so you can start translating on https://crowdin.com/project/lets-encrypt-website
 
 The first files that needs to be translated on Crowdin are:
-- `en.toml`
+- `i18n/en.toml`
 - `content/about.md`
 - `content/getting-started.md`
 

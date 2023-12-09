@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Niekomercyjny Urząd Certyfikacji dostarczający certyfikaty TLS do <span>225 milionów</span> stron internetowych."
+other = "Niekomercyjny Urząd Certyfikacji dostarczający certyfikaty TLS do <span>300 milionów</span> stron internetowych."
 
 [home_hero_getting_started]
 other = "Rozpocznij"
@@ -11,7 +11,7 @@ other = "Wesprzyj nas"
 other = "Sponsoruj"
 
 [home_hero_annual_report]
-other = "Przyznano nam Nagrodę Levchina na rzecz Rzeczywistej Kryptografii! <a href='https://abetterinternet.org/levchin-prize'>Dowiedz się więcej</a>"
+other = "Przeczytaj wszystko o naszej tegorocznej działalności non-profit  <a href='https://abetterinternet.org/annual-reports/'> w Rocznym Raporcie za rok 2022</a>."
 
 [home_major_sponsors]
 other = "Główni Sponsorzy i Fundatorzy"
@@ -40,9 +40,6 @@ Zobacz naszą <a href="/privacy/">politykę prywatności</a>.<br>
 Zobacz naszą <a href="/trademarks/">politykę znaku towarowego</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation jest zarejestrowanym znakiem towarowym należącym do The Linux Foundation. Linux jest zarejestrowanym znakiem towarowym należącym do Linus Torvalds."
-
 [header_skip_nav]
 other = "Pomiń odnośniki nawigacyjne"
 
@@ -54,6 +51,9 @@ other = "Zobacz całą dokumentację"
 
 [blog_feed]
 other = "Treści bloga Let's Encrypt"
+
+[diamond]
+other = "Diament"
 
 [platinum]
 other = "Platynowy"
@@ -189,3 +189,9 @@ other = "100-999 pracowników"
 
 [1000_employees]
 other = "Ponad 1000 pracowników"
+
+[subscribe_to_newsletter_headline]
+other = "Zapisz się do naszego newslettera"
+
+[site_banner_text]
+other = "ISRG świętuje 10 lat pomagania w budowaniu jaśniejszego Internetu →"

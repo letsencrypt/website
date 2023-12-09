@@ -3,7 +3,7 @@ title: 联系我们
 slug: contact
 description: 如何联系我们
 top_graphic: 1
-lastmod: 2023-08-23
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,7 +20,9 @@ menu:
 
 邮箱：[sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## 订阅我们的新闻资讯 <iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+## 订阅我们的新闻资讯
+
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
 
 ## 隐私问题
 

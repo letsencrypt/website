@@ -2,7 +2,7 @@
 title: ACME 客户端
 slug: client-options
 top_graphic: 1
-lastmod: 2020-12-18
+lastmod: 2022-09-07
 ---
 
 {{< clientslastmod >}}
@@ -21,7 +21,7 @@ Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您
 
 # 其他客户端
 
-下列客户端均支持 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  我们即将[淘汰 ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/)， 如果您使用的客户端在该列表中，请确保您将其升级到最新版本。  如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
+下列客户端均支持 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  2021 年 6 月起我们已[彻底废除 ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27)。 如果您使用的客户端在该列表中，请确保您将其升级到最新版本。  如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
 
 {{< clients libraries="库" projects="集成了 Let’s Encrypt 的项目" >}}
 
@@ -35,7 +35,8 @@ Python 模块 [acme](https://github.com/certbot/certbot/tree/master/acme) 是 Ce
 
 在提交拉取请求之前，请确保：
 
-1. 该客户端尊重 [Let's Encrypt 商标政策](/trademarks)。
+1. 该客户端尊重 [Let's Encrypt 商标政策](https://www.abetterinternet.org/trademarks)。
 1. 该客户端不是基于浏览器使用的，并且支持自动续期。
+1. 该客户端的[自动续期时间点是随机的](/docs/integration-guide#when-to-renew)，或鼓励按这种方式配置。
 1. 您的提交把该软件加至相关列表的**末尾**（如果该软件支持 ACMEv2 协议，请不要忘记添加“acme_v2”）。
 1. 您的提交更新了 `clients.json` 顶部的 `lastmod` 日期戳。
