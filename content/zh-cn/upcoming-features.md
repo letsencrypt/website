@@ -2,31 +2,33 @@
 title: 即将推出的功能
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2021-09-16
+lastmod: 2023-06-20
 show_lastmod: 1
 ---
 
-## ACME更新信息 (ARI)
-
-我们正在开发一个系统，使我们能够通过 API 通知订阅者需要更新证书。 这个系统将使我们能够通知订阅者，例如，他们需要在证书被吊销之前更新证书。
-
 ## ECDSA根证书和中间证书
 
-我们正在从我们的生产环境中 [允许列出的账户](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679) 签发ECDSA证书。 不能确定何时取消白名单。
+我们已经通过生产环境的 ECDSA 中间证书为[一批特定账户](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679)签发了证书， 但目前还没有推广至所有账户的计划。
 
 # 已实现的功能
+
+## ACME更新信息 (ARI)
+
+* 启用时间: 2023 年 3 月 23 日
+
+我们的 [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html) 系统已经上线，能够通过 API 提醒用户及时更新证书。
 
 ## 多视角验证
 
 * 启用时间: 2020 年 2 月 19 日
 
-我们已通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
+我们已支持通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
 
 ## 证书透明度（CT）日志
 
 * 启用时间：2019 年 5 月 15 日
 
-我们正在运作一个[证书透明度日志服务器](/docs/ct-logs).
+我们的[证书透明度日志](/docs/ct-logs)系统已开始运作。
 
 ## 支持 TLS ALPN 验证
 

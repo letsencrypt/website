@@ -19,7 +19,7 @@ De »registreringer«, denne fejl henviser til, er anmodninger, der sendes fra d
 
 # Almindelige Årsager
 
-Abonnenter, der rammer grænsen for fejlvalidering, gør det ofte på grund af en fejlkonfiguration i deres miljø.
+Abonnenter, der rammer grænsen for registreringer per IP, gør det ofte på grund af en fejlopsætning i deres miljø.
 
 ## Gentagne Udrulninger
 
