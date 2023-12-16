@@ -3,18 +3,18 @@ title: Udløbs E-Mail
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2021-09-25
+lastmod: 2023-01-09
 show_lastmod: 1
 ---
 
 
 # Abonnér
 
-Hvis du angiver en e-mailadresse til Let's Encrypt når du opretter din konto, vil vi automatisk sende dig udløbs varsler, når dit certifikat snart skal fornyes. Vi sender den første besked 20 dage før dit certifikat udløber, og flere beskeder ved 10 dage og 1 dag før det udløber. Vi anbefaler, at du stoler på din ACME-klient til automatisk at forny dine certifikater, og brug kun disse udløbsmeddelelser som en advarsel til at tjekke din automatisering.
+Hvis du angiver en e-mailadresse til Let's Encrypt når du opretter din konto, vil vi automatisk sende dig udløbs varsler, når dit certifikat snart skal fornyes. Vi forsøger at sende den første meddelelse 20 dage før dit certifikat udløber, og den anden og sidste meddelelse 7 dage før det udløber. Vi anbefaler, at du stoler på din ACME-klient til automatisk at forny dine certifikater, og brug kun disse udløbsmeddelelser som en advarsel til at tjekke din automatisering.
 
 # Når du får en udløbs e-mail
 
-Hvis dit certifikat allerede er fornyet, sender vi ikke en udløbsbesked. Vi anser et certifikat for at blive fornyet, hvis der er et nyere certifikat med det nøjagtige samme sæt navne, uanset hvilken konto der har oprettet den. Hvis du har udstedt et nyt certifikat, der tilføjer eller fjerner et navn i forhold til dit gamle certifikat, vil du få udløbs-e-mail om dit gamle certifikat. Hvis du tjekker certifikatet, der aktuelt kører på din hjemmeside, og det viser den korrekte dato, er der ikke behov for yderligere handling.
+Hvis dit certifikat allerede er fornyet, sender vi ikke en udløbsbesked. Vi anser et certifikat for at blive fornyet, hvis der er et nyere certifikat med det nøjagtige samme sæt navne, uanset hvilken konto der har oprettet den. Hvis du har udstedt et nyt certifikat, der tilføjer eller fjerner et navn i forhold til dit gamle certifikat, vil du få udløbs-e-mail om dit gamle certifikat. Hvis du tjekker certifikatet, der aktuelt kører på din hjemmeside, og det viser den korrekte dato, er der ikke behov for yderligere handling. For at se en historik af udstedte certifikater for dit domæne, du kan søge efter dit domæne på certifikatgennemsigtighed log overvågere såsom [crt.sh](https://crt.sh/).
 
 # Afmeld abonnement
 

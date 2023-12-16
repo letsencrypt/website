@@ -8,7 +8,7 @@ show_lastmod: 1
 ---
 
 
-Stanowczo zalecamy przeprowadzenie testów z naszym środowiskiem testowym przez użyciem naszego oficjalnego środowiska. Pozwoli to na sprawdzenie poprawności przed wydaniem zaufanych certyfikatów oraz zmniejszy szansę na osiągnięcie limitów przesyłu.
+Stanowczo zalecamy przeprowadzenie testów z naszym środowiskiem testowym przed użyciem naszego oficjalnego środowiska. Pozwoli to na sprawdzenie poprawności przed wydaniem zaufanych certyfikatów oraz zmniejszy szansę na osiągnięcie limitów przesyłu.
 
 Adres URL ACME dla naszego [środowiska testowego ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) to:
 
@@ -42,10 +42,10 @@ Wydawanie ECDSA zostało [włączone dla testowania](https://community.letsencry
 
 # Przejrzystość certyfikatów
 
-Środowisko testowe przesyła wstępne certyfikaty do dzienników testów CT Let's Encrypt Sapling i Google testtube i uwzględnia zwrócone SCT w wystawionych certyfikatach.
+Środowisko testowe przesyła wstępne certyfikaty do dzienników testów CT Let's Encrypt [Sapling](/docs/ct-logs) i Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) i uwzględnia zwrócone SCT w wystawionych certyfikatach.
 
 # Ciągła Integracja / Testowanie Rozwojowe
 
 Środowisko testowe generuje limity szybkości, aby umożliwić testowanie, ale nie sprzyja to integracji ze środowiskami programistycznymi lub ciągłej integracji (CI). Wysyłanie żądań sieciowych do serwerów zewnętrznych może spowodować niestabilność, a środowisko testowe nie pozwala na „sfałszowanie” DNS ani zakwestionowanie powodzenia walidacji, co powoduje bardziej skomplikowane konfiguracje testów.
 
-Oprócz środowiska testowego Let's Encrypt oferuje mały serwer ACME zbudowany specjalnie dla CI i środowisk programistycznych o nazwie Pebble. Uruchamianie Pebble na komputerze programistycznym lub w środowisku CI jest szybkie i łatwe.
+Oprócz środowiska testowego Let's Encrypt oferuje mały serwer ACME zbudowany specjalnie dla CI i środowisk programistycznych o nazwie [Pebble](https://github.com/letsencrypt/pebble). Uruchamianie Pebble na komputerze programistycznym lub w środowisku CI jest [szybkie i łatwe](https://github.com/letsencrypt/pebble#docker).

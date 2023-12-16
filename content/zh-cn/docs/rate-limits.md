@@ -27,14 +27,14 @@ id="new-orders"></a>**订单**。 每次向 Boulder CA 申请证书都会创建�
 
 **请求吊销证书不会重设速率限制**，因为申请证书所使用的资源已经被消耗了。
 
-There is a!!crwdBlockTags_34_sgaTkcolBdwrc!![**Failed Validation**](/docs/failed-validation-limit) limit of 5 failures per account, per hostname, per hour. 这个限制在我们的[测试环境](/docs/staging-environment)中更高，因此您可以使用它来调试连接性问题。 超出验证失败限制将会得到 `too many failed authorizations recently` 的报错信息。
+<a id="failed-validations"></a>[**验证失败**](/docs/failed-validation-limit)的限制为每个账户、每个域名、每小时 5 次。 这个限制在我们的[测试环境](/docs/staging-environment)中更高，因此您可以使用它来调试连接性问题。 超出验证失败限制将会得到 `too many failed authorizations recently` 的报错信息。
 
 API 的"new-nonce"、"new-account"、"new-order"和"revoke-cert"接口<a
 id="overall-requests"></a>**总请求数**限制为每秒 20 次。 "/directory"端点和"/acme"目录及其子目录的总请求数限制为每秒 40 次。
 
 此外还有两个您不太可能遇到的限制。
 
-您在3小时之内每个IP地址最多可以创建10个<a id="accounts-per-ip-address"></a>**账户**。 **每个 IPv6 /48 地址段**每 3 小时最多可以创建 500 个账户。 达到这两个账户限制是十分罕见的，我们建议我们建议大型集成商[使用一个帐户为多个客户提供服务](/docs/integration-guide)。 超过这些限制的请求，将会得到 `too many registrations for this IP` 或者 `too many registrations for this IP range`的报错信息。
+<a id="accounts-per-ip-address"></a>[**每个 IP 地址**](/docs/too-many-registrations-for-this-ip)每 3 个小时最多可创建 10 个账户。 **每个 IPv6 /48 地址段**每 3 小时最多可以创建 500 个账户。 达到这两个账户限制是十分罕见的，我们建议我们建议大型集成商[使用一个帐户为多个客户提供服务](/docs/integration-guide)。 超过这些限制的请求，将会得到 `too many registrations for this IP` 或者 `too many registrations for this IP range`的报错信息。
 
 您的帐户最多可以有 300 个<a id="pending-authorizations"></a>**待验证授权**。 达到此速率限制很少见，并且通常在开发 ACME 客户端时发生。 到达此限制通常意味着您的客户正在创建授权但没有验证授权。 如果您正在开发 ACME 客户端，请使用我们的[测试环境](/docs/staging-environment)。 超出待验证授权数量限制的请求，将会得到 `too many currently pending authorizations`的报错信息。
 
@@ -42,7 +42,7 @@ id="overall-requests"></a>**总请求数**限制为每秒 20 次。 "/directory"
 
 如果您达到了速率限制，我们没有办法帮助您暂时重置它。 您需要等待一周，直到这些速率限制过期。 我们使用了滑动窗口的方式，因此如果你在周一申请签发了25张证书，并且在周五又申请签发了25张证书，那么下周一起你将可以再次申请签发证书。 你可以在利用公开[证书透明度](https://www.certificate-transparency.org)记录的 [ crt.sh ](https://crt.sh) 网站上搜索获取你已经申请签发的证书列表。
 
-如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://goo.gl/forms/plqRgFVnZbdGhE9n1)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
+如果您是需要集成 Let's Encrypt 的大型托管服务提供商或组织，您可以使用[速率限制表单](https://isrg.formstack.com/forms/rate_limit_adjustment_request)请求更高的速率限制。 处理请求需要几周时间。因此，如果您只是不想等待一周，想要提前进行速率限制重置，请不要使用该表单。
 
 # <a id="clearing-pending"></a>清除待验证的授权
 
