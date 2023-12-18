@@ -2,15 +2,16 @@
 title: Failed Validation Limit
 slug: failed-validation-limit
 top_graphic: 1
-lastmod: 2022-06-30
+lastmod: 2023-12-18
 show_lastmod: false
 ---
 
 
 # Description
 All issuance requests are subject to a *Failed Validation* limit of 5 failures
-per account, per hostname, per hour. You should receive the following error
-message from your ACME client when you’ve exceeded the Failed Validation limit:
+per account, per hostname, per hour (using a sliding window). You should
+receive the following error message from your ACME client when you’ve exceeded
+the Failed Validation limit:
 
 ```
 too many failed authorizations recently: see https://letsencrypt.org/docs/failed-validation-limit/
