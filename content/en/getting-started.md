@@ -5,6 +5,11 @@ top_graphic: 3
 date: 2020-02-11
 ---
 
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>The Let's Encrypt ACME Directory URL is:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
+
 To enable HTTPS on your website, you need to get a certificate (a type of file)
 from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
 certificate for your website's domain from Let's Encrypt, you have to demonstrate
