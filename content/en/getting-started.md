@@ -2,7 +2,8 @@
 title: Getting Started
 slug: getting-started
 top_graphic: 3
-date: 2023-12-20
+date: 2020-02-11
+lastmod: 2023-12-20
 ---
 
 <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
