@@ -55,12 +55,10 @@ Quando la CA Let's&nbsp;Encrypt riceve la richiesta, verifica entrambe le firme.
      src="/images/howitworks_certificate.png"/>
 </div>
 
-La revoca funziona in modo simile.  L'agente firma una richiesta di revoca con la coppia di chiavi autorizzata per `esempio.com`e la CA Let's&nbsp;Encrypt verifica che la richiesta sia autorizzata.  In caso affermativo, pubblica le informazioni sulla revoca nei normali canali di revoca (es. OCSP), in modo che tutti sappiano che non dovrebbero accettare il certificato revocato.
+La revoca funziona in modo simile.  L'agente firma una richiesta di revoca con la coppia di chiavi autorizzata per `esempio.com` e la CA Let's&nbsp;Encrypt verifica che la richiesta sia autorizzata.  In caso affermativo, pubblica le informazioni sulla revoca nei normali canali di revoca (es. OCSP), in modo che le parti che fanno affidamento come i browsers possano sapere che non dovrebbero accettare il certificato revocato.
 
 <div class="howitworks-figure">
 <img alt="Richiesta della revoca di un certificato per esempio.com"
      src="/images/howitworks_revocation.png"/>
 </div>
-
-
 

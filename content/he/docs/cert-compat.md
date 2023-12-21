@@ -2,12 +2,12 @@
 title: תאימות אישורים
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
 
-הגורם מכריע ביכולת של פלטפורמה לתקף את האישורים של Let's Encrypt היא האם הפלטפורמה נותנת אמון באישור „ISRG Root X1” מבית ISRG. לפני ספטמבר 2021, חלק מהפלטפורמות יכלו לתקף את האישורים שלנו אפילו אם אינן כוללות את ISRG Root X1 כיוון שהן נותנות אמון באישור „DST Root CA X3” מבית IdenTrust. מאוקטובר 2021 ואילך, רק הפלטפורמות האלו שיכולות לתת אמון ב־ISRG Root X1 תתקפנה את אישורי Let's Encrypt ([למעט Android](/2020/12/21/extending-android-compatibility.html)).
+הגורם מכריע ביכולת של פלטפורמה לתקף את האישורים של Let's Encrypt היא האם הפלטפורמה נותנת אמון באישור „ISRG Root X1” מבית ISRG. לפני ספטמבר 2021, חלק מהפלטפורמות יכלו לתקף את האישורים שלנו אפילו אם אינן כוללות את ISRG Root X1 כיוון שהן נותנות אמון באישור „DST Root CA X3” מבית IdenTrust. מאוקטובר 2021 ואילך, רק הפלטפורמות האלו שיכולות לתת אמון ב־ISRG Root X1 תתקפנה את אישורי Let's Encrypt ([למעט Android][android-compat]).
 
 אם האישור שלך עובר תיקוף על כמה מהפלטפורמות תחת הרשימה „ידועים כנתמכים” אך לא עובר באחרות, יכול להיות שמדובר בהגדרות שגויות מצד השרת. אם נתקלת בתקלה עם פלטפורמות מודרניות, אחד הגורמים הנפוצים ביותר היא כשל באספקת שרשרת האישורים הנכונה. ניתן לבדוק את האתר שלך עם [שרת הבדיקה של SSL Labs](https://www.ssllabs.com/ssltest/). אם המערכת לא הצליחה לזהות את התקלה שלך, ניתן לבקש עזרה ב[פורומים הקהילתיים](https://community.letsencrypt.org/) שלנו.
 
@@ -25,7 +25,7 @@ show_lastmod: 1
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-דפדפנים (Chrome,‏ Safari,‏ Edge,‏ Opera) בדרך כלל נותנים אמון באותם אישורי העל כמו מערכת ההפעלה עליהם הם פועלים. Firefox חורג מהדרך הזאת: יש לו מאגר אישורי על משלו. בקרוב, גם בגרסאות חדשות של Chrome [יהיה מאגר אישורי על עצמאי](https://www.chromium.org/Home/chromium-security/root-ca-policy).
+דפדפנים (Chrome,‏ Safari,‏ Edge,‏ Opera) בדרך כלל נותנים אמון באותם אישורי העל כמו מערכת ההפעלה עליהם הם פועלים. Firefox חורג מהדרך הזאת: יש לו מאגר אישורי על משלו. בקרוב, גם בגרסאות חדשות של Chrome [יהיה מאגר אישורי על עצמאי][chrome-root-store].
 
 # פלטפורמות שנותנות אמון ב־DST Root CA X3 אך לא ב־ISRG Root X1
 
@@ -62,4 +62,14 @@ show_lastmod: 1
 
 # ISRG Root X2 (אישור עליון חדש מסוג ECDSA) - בקרוב
 
-הגשנו את ISRG Root X2 לתכניות אישורי העל של Microsoft,‏ Apple,‏ Google,‏ Mozilla ו־Oracle כדי שיכללו אותו. ISRG Root X2 כבר נחשב למהימן בקרב חוגים רבים עקב חתימה צולבת מול האישור ISRG Root X1. למידע נוסף, ניתן לעיין ב[רשומה בפורום הקהילתי שלנו](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+הגשנו את ISRG Root X2 לתכניות אישורי העל של Microsoft,‏ Apple,‏ Google,‏ Mozilla ו־Oracle כדי שיכללו אותו.
+
+ISRG Root X2 כבר נחשב למהימן בקרב חוגים רבים עקב חתימה צולבת מול האישור ISRG Root X1. בנוסף, מגוון תוכניות כבר הוסיפו את ISRG Root X2 כעוגן מהימן.
+
+למידע נוסף על מצב הכללה, ניתן לעיין ב[רשומה בפורום הקהילתי שלנו](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+
+בזמן שאנו ממתינים ש־ISRG Root X2 יהפוך למהימן בצורה נרחבת, אפשר להירשם להשתמש ב־ISRG Root X2 לאישורי ה־ECDSA שלך. למידע נוסף, ניתן לעיין ב[רשומה בפורום הקהילתי שלנו](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
+
+[android-compat]: /2020/12/21/extending-android-compatibility.html
+
+[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy
