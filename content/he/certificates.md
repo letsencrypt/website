@@ -1,7 +1,7 @@
 ---
 title: שרשרת אמון
 linkTitle: שרשרת אמון (אישורים עליונים ומתווכים)
-slug: certificates
+slug: אישורים
 top_graphic: 5
 lastmod: 2021-10-02
 show_lastmod: 1
