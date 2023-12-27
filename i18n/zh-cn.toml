@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "为 <span>2.6 亿</span> 网站提供 TLS 证书的非营利证书颁发机构"
+other = "为 <span>3.63 亿</span>网站提供 TLS 证书的非营利证书颁发机构"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -11,7 +11,7 @@ other = "捐款"
 other = "成为赞助商"
 
 [home_hero_annual_report]
-other = "本机构荣获 Levchin 现实密码学奖！<a href='https://abetterinternet.org/levchin-prize'>了解详情</a>"
+other = "我们今年的非营利工作详情可在 <a href='https://abetterinternet.org/annual-reports/'>2023 年度报告</a>中查阅。"
 
 [home_major_sponsors]
 other = "核心赞助商"
@@ -40,9 +40,6 @@ other = """
 查看我们的<a href="/zh-cn/trademarks/">商标政策</a>
 """
 
-[linux_foundation_trademark]
-other = "“Linux Foundation”是 Linux 基金会的注册商标。 “Linux”是 Linus Torvalds 的注册商标。"
-
 [header_skip_nav]
 other = "跳过导航链接"
 
@@ -55,17 +52,20 @@ other = "所有文档"
 [blog_feed]
 other = "Let's Encrypt 博客订阅源"
 
+[diamond]
+other = "钻石级"
+
 [platinum]
 other = "铂金"
 
 [gold]
-other = "金"
+other = "黄金级"
 
 [gold_basic]
-other = "金（基础）"
+other = "普通黄金级"
 
 [silver]
-other = "银"
+other = "白银级"
 
 [languages]
 other = "切换语言"
@@ -189,3 +189,9 @@ other = "（员工人数在 100 到 999 之间）"
 
 [1000_employees]
 other = "（员工人数大于 1000 人）"
+
+[subscribe_to_newsletter_headline]
+other = "订阅我们的新闻资讯"
+
+[site_banner_text]
+other = "推动构建更加光明的互联网，ISRG 成立十周年庆 →"

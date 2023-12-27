@@ -2,12 +2,12 @@
 title: 证书兼容性
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
 
-平台能否验证Let's Encrypt证书的主要决定因素是，该平台是否信任ISRG的“ISRG Root X1”证书。 在2021年9月之前， 有些平台即使未信任 ISRG Root X1 证书也可以验证我们的证书，因为它们信任IdenTrust的 "DST Root CA X3" 证书。 自2021年10月起，只有那些信任ISRG Root X1的平台才能验证Let's Encrypt证书([Android平台除外](/2020/12/21/extending-android-compatibility.html))。
+平台能否验证Let's Encrypt证书的主要决定因素是，该平台是否信任ISRG的“ISRG Root X1”证书。 在2021年9月之前， 有些平台即使未信任 ISRG Root X1 证书也可以验证我们的证书，因为它们信任IdenTrust的 "DST Root CA X3" 证书。 自2021年10月起，只有那些信任ISRG Root X1的平台才能验证Let's Encrypt证书([Android平台除外][android-compat])。
 
 如果您的证书只能在部分已知的兼容平台上通过验证，原因可能是网站服务器配置不当。 如果您在较新的系统中遇到问题，最常见的原因是网站没有提供正确的证书链。 您可以使用 [SSL Labs 的服务器测试](https://www.ssllabs.com/ssltest/)来测试您站点的兼容性。 如果这个测试仍旧不能帮助您确定问题所在，您可以在我们的[社区论坛](https://community.letsencrypt.org/)中寻求帮助。
 
@@ -25,7 +25,7 @@ show_lastmod: 1
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-Chrome、Safari、Edge、Opera 浏览器信任的根证书通常与操作系统一致。 Firefox 是例外：它有自己的根证书列表。 不久以后 Chrome 也将有[独立的根证书列表](https://www.chromium.org/Home/chromium-security/root-ca-policy)。
+Chrome、Safari、Edge、Opera 浏览器信任的根证书通常与操作系统一致。 Firefox 是例外：它有自己的根证书列表。 不久以后 Chrome 也将有[独立的根证书列表][chrome-root-store]。
 
 # 信任DST Root CA X3但不信任ISRG Root X1的平台
 
@@ -62,4 +62,14 @@ Chrome、Safari、Edge、Opera 浏览器信任的根证书通常与操作系统�
 
 # ISRG Root X2（新 ECDSA 根证书）：即将推出
 
-我们已将 ISRG Root X2 提交至 Microsoft、Apple、Google、Mozilla 和 Oracle 的根证书项目， ISRG Root X2 也已经通过 ISRG Root X1 的交叉签名得到了广泛信任。 如需了解更多信息，请参阅我们的[社群论坛讨论帖](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)。
+我们已将 ISRG Root X2 提交至 Microsoft、Apple、Google、Mozilla 和 Oracle 的根证书项目。
+
+此前 ISRG Root X2 就已经通过 ISRG Root X1 的交叉签名得到了广泛信任， 多个根证书项目也已接纳 ISRG Root X2 作为可信根证书。
+
+关于根证书的准入进展，请查阅我们的[社群论坛讨论帖](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385)。
+
+在等待 ISRG Root X2 根证书得到广泛信任的同时，您也可以主动选择由 ISRG Root X2 为您颁发 ECDSA 证书。 详情请见我们的[社群论坛讨论帖](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884)。
+
+[android-compat]: /2020/12/21/extending-android-compatibility.html
+
+[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy

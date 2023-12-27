@@ -57,7 +57,7 @@ Note for translators:
 
 {{% def id="CPS" english="Certification Practice Statement" abbr="CPS" name="הצהרת אופן אישור" %}} הצהרה של דרכי הפעולה בהן נוקטת רשות אישורים לטובת הנפקה, ניהול, שלילה וחיפוש או החלפת מפתח לאישורים. [הצהרת אופן האישור של ISRG](/repository#isrg-certification-practice-statement)‏ - [RFC 3647 סעיף 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) - [ויקיפדיה](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" english="Critical extension" name="הרחבה קריטית" %}} אישור יכול להכיל [הרחבות](#def-extension) שמסומנות כ„קריטיות”. משמעות הדבר היא שתכניות חייבות לדחות את האישור הזה אלא אם כן התכניות מבינות איך לעבד את ההרחבה הזאת. מאפשר להציג הרחבות חדשות שחשובות לאבטחה מבלי ליצור סיכונים לתכניות ישנות. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}} אישור יכול להכיל [הרחבות](#def-extension) שמסומנות כ„משמעותיות” (critical). משמעות הדבר היא שתוכנה חייבת לדחות את האישור הזה אלמלא התוכנה מבינה איך לעבד את ההרחבה הזאת. מאפשר להציג הרחבות חדשות שחשובות לאבטחה מבלי ליצור סיכונים לתכניות ישנות. {{% /def %}}
 
 {{% def id="CRL" english="Certificate Revocation List" abbr="CRL" name="רשימת אישורים שנשללו" %}} שיטה ליידע את [סוכני המשתמש](#def-user-agent) על מצב [שלילת](#def-revocation) [אישור](#def-leaf). זו רשימת המספרים הסידוריים של כל האישורים שנשללו על ידי רשות אישורים מסוימת ונחתמו קודם על ידיה. [ויקיפדיה](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
@@ -165,7 +165,7 @@ Note for translators:
 
 {{% def id="UCC" english="Unified Communications Certificate" abbr="UCC" name="אישור דרכי תקשורת מאוגדות" %}} תיאור של אישור שמכיל מספר [Subject Alternative Names - שמות נושא חלופיים (SANs)](#def-SAN). {{% /def %}}
 
-{{% def id="web-browser" english="Web Browser" name="דפדפן אינטרנט" %}} [סוכן משתמש](#def-user-agent) שמשמש להצגת עמודי תוכן מהאינטרנט. דוגמאות: *Firefox מבית Mozilla*,‏ *Chrome מבית Google* או *Internet Explorer*. [ויקיפדיה](https://he.wikipedia.org/wiki/דפדפן) {{% /def %}}
+{{% def id="web-browser" english="Web Browser" name="דפדפן אינטרנט" %}} [סוכן משתמש](#def-user-agent) שמשמש להצגת עמודי תוכן מהאינטרנט. דוגמאות: *Firefox מבית Mozilla*,‏ *Chrome מבית Google* או *Safari*. [ויקיפדיה](https://he.wikipedia.org/wiki/דפדפן) {{% /def %}}
 
 {{% def id="user-agent" english="User Agent" name="סוכן משתמש" %}} תכנית שמסוגלת לתקשר עם [שרת אינטרנט](#def-web-server). לדוגמה: [דפדפן אינטרנט](#def-web-browser) או [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
 
@@ -177,6 +177,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-

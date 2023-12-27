@@ -3,7 +3,7 @@ title: Контакти
 slug: contact
 description: Як з нами зв'язатися
 top_graphic: 1
-lastmod: 2021-08-31
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,9 +20,13 @@ menu:
 
 Електронна пошта: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Розсилка
+## Підписуйтеся на наші новини
 
-Щоб підписатися на нашу розсилку, [натисніть тут.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
+## Приватність
+
+Електронна пошта: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Безпека
 

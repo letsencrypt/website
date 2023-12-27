@@ -57,7 +57,7 @@ Note for translators:
 
 {{% def id="CPS" name="证书实践声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对证书进行颁发、管理、吊销、续期、更换密钥时所采用的实践的声明。 [ISRG 证书实践声明](/repository#isrg-certification-practice-statement) - [RFC 3647 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4) [维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement){{% /def %}}
 
-{{% def id="critical" name="关键扩展" english="Critical extension" %}} 证书中可以包含被标记为“关键”的[扩展](#def-extension)。这意味着软件如果不知道如何处理该扩展，就必须拒绝该证书。 这使得引入对于安全性十分重要的新扩展时不在较老的软件上造成风险成为可能。  {{% /def %}}
+{{% def id="critical" name="关键扩展" %}} 证书中的[扩展](#def-extension)可以标记为“关键”扩展， 如果软件不知道如何处理此扩展，就必须拒绝使用该证书。 这使得引入对于安全性十分重要的新扩展时不在较老的软件上造成风险成为可能。 {{% /def %}}
 
 {{% def id="CRL" name="证书吊销列表" english="Certificate Revocation List" abbr="CRL" %}} 通知[用户代理](#def-user-agent)[证书](#def-leaf)的[吊销](#def-revocation)状态的方法。 这是一个由 CA 签名的，包含了所有已被该 CA 吊销的证书的序列号的列表。 [维基百科条目](https://en.wikipedia.org/wiki/Certificate_revocation_list){{% /def %}}
 
@@ -81,13 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" %}} 申请者仅证明了其对域名（而非申请的组织）的控制权的[证书](#def-leaf)。 [Let's Encrypt](#def-LE)仅提供 DV 证书，不提供 [OV](#def-OV)或 [EV](#def-EV)证书：[常见问题]](/docs/faq) - [维基百科条目](https://en.wikipedia.org/wiki/Domain-validated_certificate){{% /def %}}
 
-{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。  \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 \[Let's Encrypt\](#def-LE) 支持使用 ECDSA 的\[叶证书（终端实体证书）\](#def-leaf)，但没有全部使用 ECDSA 的完整\[证书链\](#def-chain)：\[/upcoming-features\](/upcoming-features) {{% /def %}}
+{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 使用椭圆曲线加密的数字签名算法（DSA）的变体。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
 
-{{% def id="Ed25519" english="Ed25519" %}} 一种特殊类型的 \[EdDSA\](#def-EdDSA)，类似的还有 Ed448。   {{% /def %}}
+{{% def id="Ed25519" name="Ed25519" %}} [EdDSA](#def-EdDSA) 的一种类型，类似的还有 Ed448。  {{% /def %}}
 
-{{% def id="EdDSA" name="爱德华兹曲线数字签名算法" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} 基于椭圆曲线的现代公钥签名系统。它是为了解决一些常见的椭圆曲线加密的\[实现问题\](https://ed25519.cr.yp.to/)而被设计出来的。 \[Let's Encrypt\](#def-LE) 等证书颁发机构暂时还不能提供 EdDSA 证书。 \[维基百科条目\](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="EdDSA" name="爱德华兹曲线数字签名算法" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} 基于椭圆曲线的现代公钥签名系统，其设计旨在解决椭圆曲线密码的一些常见[实现问题](https://ed25519.cr.yp.to/)。 [Let's Encrypt](#def-LE) 这样的证书颁发机构暂时还不能提供 EdDSA 证书。 参见[维基百科条目](https://en.wikipedia.org/wiki/EdDSA)。{{% /def %}}
 
-{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。 相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。 \[Cloudflare\](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6) {{% /def %}}
+{{% def id="ECC" name="椭圆曲线加密" english="Elliptic Curve Cryptography" abbr="ECC" %}} 基于椭圆曲线的公钥密码学。 相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。 参见 [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) 和[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6)。{{% /def %}}
 
 {{% def id="EV" name="扩展验证" english="Extended Validation" abbr="EV" %}} \[CA\](#def-CA) 验证对网站有控制权的法律实体的证书验证方式。 此类证书包含有该实体的相关信息。 \[CA\](#def-CA) 对此类证书的控制比 \[OV\](#def-OV) 证书要更严格。 \[Let's Encrypt\](#def-LE) 不提供 EV 证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%89%A9%E5%B1%95%E9%AA%8C%E8%AF%81%E8%AF%81%E4%B9%A6) {{% /def %}}
 
@@ -165,7 +165,7 @@ Note for translators:
 
 {{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" %}} 包含多个\[主体备用名称（SAN）\](#def-SAN)的证书。  {{% /def %}}
 
-{{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 用于显示网页的\[用户代理\](#def-user-agent)。 例如： *Mozilla Firefox* ， *Google Chrome* 和 *Internet Explorer* 。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8) {{% /def %}}
+{{% def id="web-browser" name="网页浏览器" %}} 一类用于显示网页内容的[用户代理](#def-user-agent)， 例如 *Mozilla Firefox*、*Google Chrome* 和 *Safari*。 参见[维基百科条目](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8)。{{% /def %}}
 
 {{% def id="user-agent" name="用户代理" english="User Agent" %}} 能够与\[Web 服务器\](#def-web-server)通信的软件。 例如：\[网页浏览器\](#def-web-browser)和 \[cURL\](https://zh.wikipedia.org/wiki/CURL)。 {{% /def %}}
 
@@ -177,6 +177,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-
