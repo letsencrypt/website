@@ -469,3 +469,28 @@ html[dir="rtl"] a.autoanchor {
   margin-right: auto;
   display: block;
 }
+
+.post-footer {
+  background-color: #2b3c69;
+  color: #fff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.post-footer a {
+  color: #eca541;
+}
+
+.post-footer h6 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+.post-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
