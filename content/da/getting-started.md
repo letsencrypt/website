@@ -3,7 +3,13 @@ title: Kom godt i gang
 slug: getting-started
 top_graphic: 3
 date: 2020-02-11
+lastmod: 2023-12-20
 ---
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>Let's Encrypt ACME Ordbogens URL er:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
 
 For at aktivere HTTPS på din hjemmeside, skal du have et certifikat (en type fil) fra en certifikatmyndighed (CA). Let's Encrypt er en CA. For at få et certifikat til dit websteds domæne fra Let's Encrypt skal du demonstrere kontrol over domænet. Med Let's Encrypt gør du dette ved hjælp af software, der bruger den [ACME-protokol](https://tools.ietf.org/html/rfc8555), som typisk kører på din webhost.
 
