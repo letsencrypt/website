@@ -57,7 +57,7 @@ Note for translators:
 
 {{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} En erklæring om den praksis, som en certificeringsmyndighed anvender ved udstedelse, ledelse, tilbagekaldelse og fornyelse eller genregistrering af certifikater. [ISRG Certificate Policy](/repository#isrg-certification-practice-statement) - [RFC 3647](https://tools.ietf.org/html/rfc3647#section-3.4) - [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" name="Critical extension" %}} Et certifikat kan indeholde [udvidelser](#def-extension) markeret "kritisk. Det betyder, at software skal afvise dette certifikat, medmindre softwaren forstår, hvordan den pågældende udvidelse. Det gør det muligt at indføre nye udvidelser, der er vigtige for sikkerheden uden at skabe risici for ældre software. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}} Et certifikat kan indeholde [udvidelser](#def-extension) markeret "kritisk." Det betyder, at softwaren skal afvise dette certifikat, medmindre softwaren forstår, hvordan denne udvidelse skal behandles. Det gør det muligt at indføre nye udvidelser, der er vigtige for sikkerheden uden at skabe risici for ældre software. {{% /def %}}
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} En metode til at informere [bruger programmer](#def-user-agent) om [tilbagekaldelse](#def-revocation) status af et [certifikat](#def-leaf). Dette er en liste over løbenumrene for alle tilbagekaldte certifikater fra en given CA, underskrevet af den pågældende CA. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
@@ -177,6 +177,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-
