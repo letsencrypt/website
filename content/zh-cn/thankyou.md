@@ -5,8 +5,6 @@ top_graphic: 2
 date: 2022-12-02
 ---
 
-
-
   <div class="container">
     <p><strong>感谢您的捐款</strong></p>
     <p>谨代表互联网安全研究小组（ISRG）所有成员，我们在此感谢您对该项目的认可与支持。</p>

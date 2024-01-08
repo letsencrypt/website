@@ -8,7 +8,7 @@ show_lastmod: 1
 ---
 
 
-CAA er en type DNS-post, der giver ejere af webstedet mulighed for at angive, hvilket certifikat myndigheder (CAs) har lov til at udstede certifikater, der indeholder deres domænenavne. Den blev først standardiseret i 2013, og den version, vi bruger i dag, blev standardiseret i 2019 af [RFC 8659](https://datatracker.ietf.org/doc/html/rfc8659) og [RFC 8657](https://datatracker.ietf.org/doc/html/rfc8657). Som standard må alle offentlige CA udstede certifikater for ethvert domænenavn i den offentlige DNS forudsat at de validerer kontrollen med det pågældende domænenavn. That means that if there's a bug in any one of the many public CAs' validation processes, every domain name is potentially affected. CAA giver mulighed for, at indehavere af domæner kan reducere denne risiko.
+CAA er en type DNS-post, der giver ejere af webstedet mulighed for at angive, hvilket certifikat myndigheder (CAs) har lov til at udstede certifikater, der indeholder deres domænenavne. Den blev først standardiseret i 2013, og den version, vi bruger i dag, blev standardiseret i 2019 af [RFC 8659](https://datatracker.ietf.org/doc/html/rfc8659) og [RFC 8657](https://datatracker.ietf.org/doc/html/rfc8657). Som standard må alle offentlige CA udstede certifikater for ethvert domænenavn i den offentlige DNS forudsat at de validerer kontrollen med det pågældende domænenavn. Det betyder, at, hvis der er en fejl i en af de mange offentlige CA'ers valideringsprocesser, er hvert domænenavn potentielt påvirket. CAA giver mulighed for, at indehavere af domæner kan reducere denne risiko.
 
 # Brug Af CAA
 
