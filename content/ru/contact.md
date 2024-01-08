@@ -3,7 +3,7 @@ title: Контакты
 slug: contact
 description: Как с нами связаться
 top_graphic: 1
-lastmod: 2021-08-31
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,15 +20,19 @@ menu:
 
 Электронная почта: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Почтовая рассылка
+## Подпишитесь на нашу рассылку
 
-Чтобы подписаться на нашу рассылку, [нажмите здесь](https://mailchi.mp/letsencrypt.org/fjp6ha1gad).
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
+## Конфиденциальность
+
+Эл. почта: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Безопасность
 
 **Пожалуйста, не пишите на этот адрес, если ваше сообщение не касается проблем с безопасностью Let's Encrypt.**
 
-<span id="email">Электронная почта: </span>
+<span id="email">Эл. почта: </span>
 
 <script>
   var parts = ["security", '@', "letsencrypt", ".", "org"];

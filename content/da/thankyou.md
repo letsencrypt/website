@@ -5,8 +5,6 @@ top_graphic: 2
 date: 2022-12-02
 ---
 
-
-
   <div class="container">
     <p><strong>Tak for dit bidrag</strong></p>
     <p>På vegne af alle på ISRG, tak for dit bidrag til at støtte vores arbejde.</p>

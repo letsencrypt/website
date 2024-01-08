@@ -2,7 +2,7 @@
 title: 隐私政策
 slug: privacy
 top_graphic: 4
-lastmod: 2022-03-11
+lastmod: 2023-08-23
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -25,17 +25,17 @@ Let's Encrypt 服务由美国加利福尼亚州的非盈利公益组织[互联�
 
 我们需要能够向公众（包括那些依赖我们证书可信度的人）展示我们的服务正常运行。 因此，我们可能无法删除包括 IP 地址在内的某些信息。 该信息可能以多种方式公开，包括通过公共 API、公共存储库和/或公共讨论。
 
-您可以选择提供邮箱地址等联系方式，以便获得账户服务或找回账户。 您的联系信息不会被公开，而且它只会根据下文提到的“执法请求与情有可原的情况”被分享。 提供邮箱地址即表示您同意收取我们的服务相关邮件。 您可以随时通过点击我们电子邮件底部的“取消订阅”链接，或通过 security@letsencrypt.org 与我们联系，来取消订阅与服务相关的电子邮件。 我们不会将您的联系信息用于营销或促销目的。
+您可以选择提供邮箱地址等联系方式，以便获得账户服务或找回账户。 您的联系信息不会被公开，而且它只会根据下文提到的“执法请求与情有可原的情况”被分享。 提供邮箱地址即表示您同意收取我们的服务相关邮件。 您随时可以点击我们邮件底部的 “unsubscribe” 链接取消邮件订阅，或者您可以通过privacy@abetterinternet.org 随时联系我们 我们不会将您的联系信息用于营销或促销目的。
 
 您可能需要从存储库（例如由 Debian、Ubuntu、RedHat 或 GitHub 运营的存储库）下载客户端软件。 您与此类软件存储库的交互，受该存储库自己的隐私政策和/或使用条款的约束。
 
 ## 访客
 
-如果您是浏览 Let's Encrypt 网站的访客，您可以选择为我们捐款。 款项由我们信任的支付合作伙伴处理，包括 DonorBox、Stripe、Shopify、PayPal、The Giving Block 和 Gemini，具体取决于您所选的支付方式，并存储在 ISRG 的 Salesforce 数据库中。 捐款时我们会收集您的姓名和电子邮箱地址。 我们不会在未经您同意的情况下通过该电子邮箱地址联系您，除非是为了解决某次捐款出现的问题我们认为确有必要与您联系。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、Gemini、[SHIPHERO](https://shiphero.com/privacy-data-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/) 以及 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自的隐私协议约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。 我们的运输合作商是 Shopify 和 SHIPHERO。
+如果您在访问由 Let`s Encrypt 提供服务的网站，或许您可以考虑捐赠下我们。 捐赠将由我们信任的支付合作伙伴处理，并存储在 ISRG 的 Salesforce 数据库中。支付合作伙伴包括 DonorBox、Stripe、Shopify、PayPal、The Giving Block 和 Gemini 具体取决于您所选的支付方式。 我们收集您的姓名和邮箱（如果您捐赠时提供了）。 您捐赠后，我们会将您的信息您的贡献关联，并在后续通过邮箱发送通知，包括筹款提醒和续期。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、Gemini、[SHIPHERO](https://shiphero.com/privacy-data-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/) 以及 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自的隐私协议约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。
 
-您可以选择通过 ISRG 网站或其他营销渠道注册您的邮箱地址，以接收与 ISRG 项目相关的通讯邮件。 MailChimp 和 Salesforce 发送的所有信息以及您与 [MailChimp](https://www.intuit.com/privacy/statement/) 和 [Salesforce](https://www.salesforce.com/company/privacy/) 的交互受其各自的隐私协议约束。 我们可能不定期向您的邮箱地址发送定制化的 Let's Encrypt 相关通讯邮件。 您可以在 MailChimp 中选择退订，或发送电子邮件至 press@letsencrypt.org 要求我们将您的邮箱从订阅列表中删除。
+您可以选择 ISRG 网站或其他网站注册您的邮箱，以便接收与 ISRG 项目相关的邮件。 通过Salesforce发生的任何通信以及您与 [Salesforce](https://www.salesforce.com/company/privacy/) 的互动都受其隐私政策的制约。 我们偶尔会向您的邮箱发送与 Let's Encrypt 相关的推荐信息。 您可以通过邮件底部链接或者邮件联系 press@abetterinternet.org，取消订阅。
 
-如果您注册使用 Let's Encrypt 社群支持论坛，则您提供的个人信息和您在该论坛的行为受我们的服务托管商兼软件提供商 [Civilized Discourse Construction Kit](https://www.discourse.org/privacy) 的隐私协议约束。 我们不会通过提供此支持论坛来收集或维护个人信息。
+如果您注册使用 Let's Encrypt 社区论坛，则您的个人信息和在论坛的行为受我们的服务托管商兼软件提供商 [Civilized Discourse Construction Kit](https://www.discourse.org/privacy) 的隐私协议约束。 我们不会通过提供此支持论坛来收集或维护个人信息。
 
 ## 我们不会出售您的数据或信息
 
@@ -89,12 +89,12 @@ Let's Encrypt 服务由美国加利福尼亚州的非盈利公益组织[互联�
 
 位于欧洲经济区的个人对其个人信息享有法定权利，包括获取、更正、删除您在使用我们的网站和服务时由我们处理的个人数据。 如果您是位于欧洲经济区的依赖方、用户或访客，您可以：
 
-- 通过发送电子邮件至 security@letsencrypt.org 索取个人数据报告。 该报告包括我们所掌握的您的个人数据，并且以一种结构化、常用且便捷的格式提供。 请注意，在我们披露任何信息之前，我们可能会要求您提供其他信息以验证您的身份。
+- 您可通过邮件联系： privacy@abetterinternet.org，获取您的个人数据报告 该报告包括我们所掌握的您的个人数据，并且以一种结构化、常用且便捷的格式提供。 请注意，在我们披露任何信息之前，我们可能会要求您提供其他信息以验证您的身份。
 
-- 通过发送电子邮件至 security@letsencrypt.org 联系我们，要求更正或删除您的信息。
+- 如您想修改或删除您的信息，请邮箱联系： privacy@abetterinternet.org。
 
 - 反对我们处理您的信息。 您可以要求我们停止使用您的信息，包括使用您的信息向您发送服务相关的电子邮件。 您可以随时通过点击 Let's Encrypt 电子邮件中的“取消订阅”链接，撤销对于接收服务电子邮件的许可。
 
 - 向监管机构投诉。 如果您位于欧洲经济区，并认为我们没有遵守数据保护法，您有权向当地监管机构提出投诉。
 
-如需了解更多信息或反馈隐私问题，请联系 security@letsencrypt.org。
+想了解更多信息，或者有隐私相关建议，请邮件联系： privacy@abetterinternet.org.
