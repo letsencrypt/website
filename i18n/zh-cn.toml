@@ -11,7 +11,7 @@ other = "捐款"
 other = "成为赞助商"
 
 [home_hero_annual_report]
-other = "我们今年的非营利工作详情可在 <a href='https://abetterinternet.org/annual-reports/'>2023 年度报告</a>中查阅。"
+other = "我们这一年来的非营利工作详情可在 <a href='https://abetterinternet.org/annual-reports/'>2023 年度报告</a>中查阅。"
 
 [home_major_sponsors]
 other = "核心赞助商"
@@ -56,7 +56,7 @@ other = "Let's Encrypt 博客订阅源"
 other = "钻石级"
 
 [platinum]
-other = "铂金"
+other = "白金级"
 
 [gold]
 other = "黄金级"

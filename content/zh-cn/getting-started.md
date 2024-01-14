@@ -3,7 +3,13 @@ title: 入门指南
 slug: getting-started
 top_graphic: 3
 date: 2020-02-11
+lastmod: 2023-12-20
 ---
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>Let's Encrypt ACME 地址如下:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
 
 为了在您的网站上启用 HTTPS，您需要从证书颁发机构（CA）获取证书（一种文件）。 Let's Encrypt 正是其中一家证书颁发机构。 要从 Let's Encrypt 获取您网站域名的证书，您必须证明您对域名的实际控制权。 这一过程通常由 Web 主机上运行的 [ACME 协议](https://tools.ietf.org/html/rfc8555)客户端完成。
 
