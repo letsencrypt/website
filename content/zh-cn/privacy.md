@@ -13,7 +13,7 @@ Let's Encrypt 隐私政策将从以下三种场景描述我们如何收集、使
 - 当您是我们的用户，申请并使用 Let's Encrypt 证书时；
 - 当您作为访客，访问 Let's Encrypt 网站、社群论坛、letsencrypt.org 下其他网页以及 Let's Encrypt 在第三方社交平台上运营的账户时。
 
-Let's Encrypt 服务由美国加利福尼亚州的非盈利公益组织[互联网安全研究组](https://www.abetterinternet.org/)（ISRG）提供。
+Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联网安全研究组](https://www.abetterinternet.org/)（ISRG）提供。
 
 ## 依赖方
 
@@ -31,11 +31,11 @@ Let's Encrypt 服务由美国加利福尼亚州的非盈利公益组织[互联�
 
 ## 访客
 
-如果您在访问由 Let`s Encrypt 提供服务的网站，或许您可以考虑捐赠下我们。 捐赠将由我们信任的支付合作伙伴处理，并存储在 ISRG 的 Salesforce 数据库中。支付合作伙伴包括 DonorBox、Stripe、Shopify、PayPal、The Giving Block 和 Gemini 具体取决于您所选的支付方式。 我们收集您的姓名和邮箱（如果您捐赠时提供了）。 您捐赠后，我们会将您的信息您的贡献关联，并在后续通过邮箱发送通知，包括筹款提醒和续期。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、Gemini、[SHIPHERO](https://shiphero.com/privacy-data-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/) 以及 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自的隐私协议约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。
+如果您是浏览 ISRG 网站的访客，您可以选择为我们捐款。 款项由我们信任的支付合作伙伴处理，包括 DonorBox、Stripe、Shopify 和 PayPal，具体取决于您所选的支付方式。捐款信息将存储在 ISRG 的 Salesforce 数据库中，如有必要还会录入 Sage Intacct 系统。 捐款时我们会收集您的姓名和电子邮箱，此外您还可以选择是否提供邮寄地址。 捐款完成后，我们会出于自身的正当利益使用您的信息，包括管理您的贡献、向您发送筹款提醒以及定期收取约定的款项。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、Gemini、[SHIPHERO](https://shiphero.com/privacy-data-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/) 以及 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自的隐私协议约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。
 
-您可以选择 ISRG 网站或其他网站注册您的邮箱，以便接收与 ISRG 项目相关的邮件。 通过Salesforce发生的任何通信以及您与 [Salesforce](https://www.salesforce.com/company/privacy/) 的互动都受其隐私政策的制约。 我们偶尔会向您的邮箱发送与 Let's Encrypt 相关的推荐信息。 您可以通过邮件底部链接或者邮件联系 press@abetterinternet.org，取消订阅。
+您可以选择通过 ISRG 网站或其他营销渠道注册您的邮箱地址，以接收与 ISRG 项目相关的通讯邮件。 通过Salesforce发生的任何通信以及您与 [Salesforce](https://www.salesforce.com/company/privacy/) 的互动都受其隐私政策的制约。 我们偶尔会向您的邮箱发送与 ISRG 相关的推荐信息。 您可以通过邮件底部的链接或者联系 press@abetterinternet.org 取消订阅，从而将您的邮箱地址从我们的系统中删除。
 
-如果您注册使用 Let's Encrypt 社区论坛，则您的个人信息和在论坛的行为受我们的服务托管商兼软件提供商 [Civilized Discourse Construction Kit](https://www.discourse.org/privacy) 的隐私协议约束。 我们不会通过提供此支持论坛来收集或维护个人信息。
+如果您注册使用 ISRG 社区论坛，则您的个人信息和在论坛的行为受我们的服务托管兼软件提供商 [Civilized Discourse Construction Kit](https://www.discourse.org/privacy) 的隐私协议约束。 我们不会通过提供此支持论坛来收集或维护个人信息。
 
 ## 我们不会出售您的数据或信息
 
@@ -89,12 +89,12 @@ Let's Encrypt 服务由美国加利福尼亚州的非盈利公益组织[互联�
 
 位于欧洲经济区的个人对其个人信息享有法定权利，包括获取、更正、删除您在使用我们的网站和服务时由我们处理的个人数据。 如果您是位于欧洲经济区的依赖方、用户或访客，您可以：
 
-- 您可通过邮件联系： privacy@abetterinternet.org，获取您的个人数据报告 该报告包括我们所掌握的您的个人数据，并且以一种结构化、常用且便捷的格式提供。 请注意，在我们披露任何信息之前，我们可能会要求您提供其他信息以验证您的身份。
+- 邮件联系 privacy@abetterinternet.org 获取个人数据报告。 该报告包括我们所掌握的您的个人数据，并且以一种结构化、常用且便捷的格式提供。 请注意，在我们披露任何信息之前，我们可能会要求您提供其他信息以验证您的身份。
 
-- 如您想修改或删除您的信息，请邮箱联系： privacy@abetterinternet.org。
+- 邮件联系 privacy@abetterinternet.org 要求更正或删除您的个人信息。
 
 - 反对我们处理您的信息。 您可以要求我们停止使用您的信息，包括使用您的信息向您发送服务相关的电子邮件。 您可以随时通过点击 Let's Encrypt 电子邮件中的“取消订阅”链接，撤销对于接收服务电子邮件的许可。
 
 - 向监管机构投诉。 如果您位于欧洲经济区，并认为我们没有遵守数据保护法，您有权向当地监管机构提出投诉。
 
-想了解更多信息，或者有隐私相关建议，请邮件联系： privacy@abetterinternet.org.
+如需了解更多信息或反馈隐私问题，请联系 privacy@abetterinternet.org。

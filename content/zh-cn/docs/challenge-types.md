@@ -3,7 +3,7 @@ title: 验证方式
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-12-08
+lastmod: 2023-02-13
 show_lastmod: 1
 ---
 
@@ -34,13 +34,13 @@ HTTP-01 验证只能使用 80 端口。 因为允许客户端指定任意端口�
 
 此验证方式要求您在该域名下的 TXT 记录中放置特定值来证明您控制域名的 DNS 系统。 该配置比 HTTP-01 略困难，但可以在某些 HTTP-01 不可用的情况下工作。 它还允许您颁发通配符证书。 在 Let’s Encrypt 为您的 ACME 客户端提供令牌后，您的客户端将创建从该令牌和您的帐户密钥派生的 TXT 记录，并将该记录放在 `_acme-challenge.<YOUR_DOMAIN>` 下。 然后 Let’s Encrypt 将向 DNS 系统查询该记录。 如果找到匹配项，您就可以继续颁发证书！
 
-由于颁发和续期的自动化非常重要，只有当您的 DNS 提供商拥有可用于自动更新的 API 时，使用 DNS-01 验证方式才有意义。 我们的社区在[此处提供了此类 DNS 提供商的列表](https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438)。 您的 DNS 提供商可能与您的域名注册商（您从中购买域名的公司）相同或不同。 如果您想更改 DNS 提供商，只需在注册商处进行一些小的更改， 无需等待域名即将到期。
+由于颁发和续期的自动化非常重要，只有当您的 DNS 提供商拥有可用于自动更新的 API 时，使用 DNS-01 验证方式才有意义。 我们的社区在[此处提供了此类 DNS 提供商的列表][dns-api-providers]。 您的 DNS 提供商与域名注册商（即向您出售域名的公司）可能相同，也可能不同。 如果您想更改 DNS 提供商，只需在注册商处进行一些小的更改， 无需等待域名即将到期。
 
-请注意，将完整的 DNS API 凭据放在 Web 服务器上会显着增加该服务器被黑客攻击造成的影响。 最佳做法是使用[权限范围受限的 API 凭据](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation)，或在单独的服务器上执行 DNS 验证并自动将证书复制到 Web 服务器上。
+需要注意的是，如果将具备完整权限的 DNS API 凭据置于网页服务器上，服务器一旦被黑客攻破会造成更为严重的影响。 最佳做法是使用[权限范围受限的 API 凭据][securing-dns-credentials]，或在单独的服务器上执行 DNS 验证并自动将证书复制到 Web 服务器上。
 
-由于 Let’s Encrypt 在查找用于 DNS-01 验证的 TXT 记录时遵循 DNS 标准，因此您可以使用 CNAME 记录或 NS 记录将验证工作委派给其他 DNS 区域。 这可以用于[将 `_acme-challenge` 子域名委派](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation)给验证专用的服务器或区域。 如果您的 DNS 提供商更新速度很慢，那么您也可以使用此方法把验证工作委派给更新速度更快的服务器。
+由于 Let’s Encrypt 在查找用于 DNS-01 验证的 TXT 记录时遵循 DNS 标准，因此您可以使用 CNAME 记录或 NS 记录将验证工作委派给其他 DNS 区域。 这可以用于[将 `_acme-challenge` 子域名委派][securing-dns-credentials]给验证专用的服务器或区域。 如果您的 DNS 提供商更新速度很慢，那么您也可以使用此方法把验证工作委派给更新速度更快的服务器。
 
-大多数 DNS 提供商都有一个“更新时间”，它反映了从更新 DNS 记录到其在所有服务器上都可用所需的时间。 这个时间可能很难测量，因为这些提供商通常也使用[任播](https://en.wikipedia.org/wiki/Anycast)，这意味着多个服务器可以拥有相同的 IP 地址，并且根据您在世界上的位置，您和 Let’s Encrypt 可能会与不同的服务器通信（并获得不同的应答）。 最好的情况是 DNS API 为您提供了自动检查更新是否完成的方法。 如果您的 DNS 提供商没有这样的方法，您只需将客户端配置为等待足够长的时间（通常多达一个小时），以确保在触发验证之前更新已经完全完成。
+大多数 DNS 提供商都有一个“更新时间”，它反映了从更新 DNS 记录到其在所有服务器上都可用所需的时间。 这个时间可能很难测量，因为这些提供商通常也使用[任播][]，这意味着多个服务器可以拥有相同的 IP 地址，并且根据您在世界上的位置，您和 Let’s Encrypt 可能会与不同的服务器通信（并获得不同的应答）。 最好的情况是 DNS API 为您提供了自动检查更新是否完成的方法。 如果您的 DNS 提供商没有这样的方法，您只需将客户端配置为等待足够长的时间（通常多达一个小时），以确保在触发验证之前更新已经完全完成。
 
 您可以为同一名称提供多个 TXT 记录。 例如，如果您同时验证通配符和非通配符证书，那么这种情况可能会发生。 但是，您应该确保清理旧的 TXT 记录，因为如果响应大小太大，Let's Encrypt 将拒绝该记录。
 
@@ -57,13 +57,13 @@ HTTP-01 验证只能使用 80 端口。 因为允许客户端指定任意端口�
 
 # TLS-SNI-01验证
 
-ACME 的草案版本中定义了这一验证方式。 它在 443 端口上进行 TLS 握手，并发送了一个特定的 [SNI] 标头以获取包含令牌的证书。 由于安全原因，该验证[已于 2019 年 3 月禁用](https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209)。
+ACME 的草案版本中定义了这一验证方式。 其原理是与 443 端口执行 TLS 握手时使用特殊的 [SNI][] 字段，并验证证书是否包含特定信息。 这种方式不够安全，因此已[于 2019 年 3 月被废除][tls-sni-disablement]。
 
 # TLS-ALPN-01验证
 
-这一验证类型是在 TLS-SNI-01 被弃用后开发的，并且已经开发为[单独的标准](https://tools.ietf.org/html/rfc8737)。 与 TLS-SNI-01 一样，它通过 443 端口上的 TLS 执行。 但是，它使用自定义的 ALPN 协议来确保只有知道此验证类型的服务器才会响应验证请求。 这还允许对此质询类型的验证请求使用与要验证的域名匹配的SNI字段，从而使其更安全。
+这一验证类型是在 TLS-SNI-01 被弃用后开发的，并且已经开发为[单独的标准][tls-alpn]。 与 TLS-SNI-01 一样，它通过 443 端口上的 TLS 执行。 但是，它使用自定义的 ALPN 协议来确保只有知道此验证类型的服务器才会响应验证请求。 这还允许对此质询类型的验证请求使用与要验证的域名匹配的SNI字段，从而使其更安全。
 
-这一验证类型并不适合大多数人。 它最适合那些想要执行类似于 HTTP-01 的基于主机的验证，但希望它完全在 TLS 层进行以分离关注点的 TLS 反向代理的作者。 现在其主要使用者为大型托管服务提供商，但 Apache 和 Nginx 等主流 Web 服务器有朝一日可能会实现对其的支持（[Caddy已经支持了这一验证类型](https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860)）。
+这一验证类型并不适合大多数人。 它最适合那些想要执行类似于 HTTP-01 的基于主机的验证，但希望它完全在 TLS 层进行以分离关注点的 TLS 反向代理的作者。 现在其主要使用者为大型托管服务提供商，但 Apache 和 Nginx 等主流 Web 服务器有朝一日可能会实现对其的支持（[Caddy已经支持了这一验证类型][caddy-tls-alpn]）。
 
 优点：
 
@@ -75,3 +75,12 @@ ACME 的草案版本中定义了这一验证方式。 它在 443 端口上进行
  - 它不支持 Apache、Nginx 和 Certbot，且很可能短期内不会兼容这些软件。
  - 与 HTTP-01 一样，如果您有多台服务器，则它们需要使用相同的内容进行应答。
  - 此方法不能用于验证通配符域名。
+
+[dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[任播]: https://en.wikipedia.org/wiki/Anycast
+[SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
+[tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
+[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860
