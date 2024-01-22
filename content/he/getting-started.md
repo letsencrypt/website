@@ -3,7 +3,13 @@ title: איך מתחילים
 slug: getting-started
 top_graphic: 3
 date: 2020-02-11
+lastmod: 2023-12-20
 ---
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>כתובת ספריית ACME של Let's Encrypt היא:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
 
 כדי להפעיל HTTPS באתר שלך, עליך לקבל אישור (סוג של קובץ) מרשות אישורים (CA). Let's Encrypt היא למעשה רשות אישורים. כדי לקבל אישור לשם תחום האתר שלך מ־Let's Encrypt, עליך להדגים שיש לך שליטה על שם התחום המדובר. עם Let's Encrypt, ניתן לעשות זאת בעזרת תכנית שמשתמשת ב[פרוטוקול ACME](https://tools.ietf.org/html/rfc8555) שבדרך כלל פועל על מה שמארח את האתר שלך.
 
