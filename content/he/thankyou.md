@@ -5,8 +5,6 @@ top_graphic: 2
 date: 2022-12-02
 ---
 
-
-
   <div class="container">
     <p><strong>תודה רבה על תרומתך</strong></p>
     <p>בשם כולנו ב־ISRG, תודה רבה לך על תרומתך ותמיכתך בעבודה שלנו.</p>
