@@ -3,7 +3,7 @@ title: Kontakt
 slug: contact
 description: Wie Sie uns erreichen
 top_graphic: 1
-lastmod: 2021-08-31
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,15 +20,19 @@ Email: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Mailinglisten
+## Abonnieren Sie unseren Newsletter
 
-Um sich zu unserem Newsletter anzumelden, [klicken Sie hier.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
+## Privatsphäre
+
+E-Mail: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Sicherheit
 
 **Bitte schreiben Sie nicht an diese Adresse, es sei denn, Ihre Nachricht betrifft ein Sicherheitsproblem mit Let's Encrypt.**
 
-<span id="email">Email: </span>
+<span id="email">E-Mail: </span>
 
 <script>
   var parts = ["security", '@', "letsencrypt", ".", "org"];

@@ -2,7 +2,7 @@
 title: ACME Client Implementierungen
 slug: client-options
 top_graphic: 1
-lastmod: 2020-12-18
+lastmod: 2022-09-07
 ---
 
 {{< clientslastmod >}}
@@ -21,7 +21,7 @@ Wenn certbot nicht Ihren Anforderungen entspricht oder Sie einfach etwas anderes
 
 # ACMEv1 und ACMEv2
 
-Let's Encrypt unterstützt die ACMEv2 API, welche kompatibel ist mit dem [finalisierten ACME Standard](https://tools.ietf.org/html/rfc8555). Wir [bauen langsam die ältere ACMEv1 API](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/) in 2020 und 2021 ab. Wenn Sie bereits einen dieser Clients verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren. Wenn der von Ihnen verwendete Client unten nicht aufgeführt ist, wenden Sie sich an die Projektbetreuer, oder wechseln Sie zu einem anderen Client.
+Let's Encrypt unterstützt die ACMEv2 API, welche kompatibel ist mit dem [finalisierten ACME Standard](https://tools.ietf.org/html/rfc8555). Im Juni 2021 haben wir [die Unterstützung für ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27) eingestellt. Wenn Sie bereits einen dieser Clients verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren. Wenn der von Ihnen verwendete Client unten nicht aufgeführt ist, wenden Sie sich an die Projektbetreuer, oder wechseln Sie zu einem anderen Client.
 
 {{< clients acme_v2="ACME v2 kompatible Clients" libraries="Bibliotheken" projects="Projektintegration mit Let's Encrypt" >}}
 
@@ -35,7 +35,8 @@ Wenn Sie wissen, dass ein ACME-Client oder ein Projekt in Let's Encrypt ACMEv2 A
 
 Bevor Sie den Pull-Request absenden, stellen Sie bitte folgendes sicher:
 
-1. Ihr Client respektiert die [Let's Encrypt Markenrichtlinien](/trademarks).
+1. Ihr Client respektiert die [Let's Encrypt Markenrichtlinien](https://www.abetterinternet.org/trademarks).
 1. Ihr Client ist nicht Browser-basiert und unterstützt automatische Erneuerung.
+1. Der Client führt [routinemäßige Erneuerungen zu zufälligen Zeitpunkten](/docs/integration-guide#when-to-renew) durch, oder er unterstützt diese Konfiguration.
 1. Ihr Commit fügt Ihren Client ans **Ende** der relevanten Sektion (Vergessen Sie nicht die "acme_v2" , wenn es angemessen ist!).
 1. Ihr Commit aktualisiert den `lastmod` Zeitstempel in `clients.json` oben.

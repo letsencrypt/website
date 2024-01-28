@@ -2,12 +2,12 @@
 title: Kompatibilität der Zertifikate
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
 
-Der wichtigste entscheidende Faktor dafür, ob eine Plattform Let's Encrypt Zertifikate validieren kann, ist, ob diese Plattform dem "ISRG Root X1"-Zertifikat von ISRG vertraut. Vor September 2021 konnten einige Plattformen unsere Zertifikate validieren, obwohl sie ISRG Root X1 nicht enthalten, da sie dem „DST Root CA X3“-Zertifikat von IdenTrust vertrauten. Ab Oktober 2021 validieren nur die Plattformen, die ISRG Root X1 vertrauen, Let's Encrypt-Zertifikate ([mit Ausnahme von Android](/2020/12/21/extending-android-compatibility.html)).
+Der wichtigste entscheidende Faktor dafür, ob eine Plattform Let's Encrypt Zertifikate validieren kann, ist, ob diese Plattform dem "ISRG Root X1"-Zertifikat von ISRG vertraut. Vor September 2021 konnten einige Plattformen unsere Zertifikate validieren, obwohl sie ISRG Root X1 nicht enthalten, da sie dem „DST Root CA X3“-Zertifikat von IdenTrust vertrauten. Ab Oktober 2021 validieren nur die Plattformen, die ISRG Root X1 vertrauen, Let's Encrypt-Zertifikate ([mit Ausnahme von Android][android-compat]).
 
 Wenn Ihr Zertifikat auf einigen bekannten kompatiblen Plattformen, aber auf anderen Plattformen nicht validiert wird, kann das Problem eine falsche Konfiguration des Webservers sein. Wenn Sie ein Problem mit modernen Plattformen haben, liegt die häufigste Ursache darin, dass Sie nicht die richtige Zertifikatskette bereitstellen. Testen Sie Ihre Seite mit dem [SSL Labs Server Test](https://www.ssllabs.com/ssltest/). Wenn das Problem dadurch nicht erkannt wird, bitten Sie um Hilfe in unseren [Community-Foren](https://community.letsencrypt.org/).
 
@@ -25,7 +25,7 @@ Wenn Ihr Zertifikat auf einigen bekannten kompatiblen Plattformen, aber auf ande
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-Browser (Chrome, Safari, Edge, Opera) vertrauen im Allgemeinen den gleichen Root-Zertifikaten wie das Betriebssystem, auf dem sie laufen. Firefox ist die Ausnahme: Es hat seinen eigenen Root-Store. Bald werden neue Versionen von Chrome [auch einen eigenen Root-Store](https://www.chromium.org/Home/chromium-security/root-ca-policy) haben.
+Browser (Chrome, Safari, Edge, Opera) vertrauen im Allgemeinen den gleichen Root-Zertifikaten wie das Betriebssystem, auf dem sie laufen. Firefox ist die Ausnahme: Es hat seinen eigenen Root-Store. Bald werden neue Versionen von Chrome [auch einen eigenen Root-Store][chrome-root-store] haben.
 
 # Plattformen, die DST Root CA X3 vertrauen, aber nicht ISRG Root X1
 
@@ -62,4 +62,14 @@ Diese Plattformen haben bis September 2021 funktioniert, validieren aber keine L
 
 # ISRG Root X2 (neuer ECDSA Root) - bald verfügbar
 
-Wir haben ISRG Root X2 bei den Microsoft, Apple, Google, Mozilla und Oracle Root-Programmen für die Integration eingereicht. ISRG Root X2 ist bereits über ein Cross-Sign von unserem ISRG Root X1 weitgehend vertraut. Weitere Informationen finden Sie in unserem [Beitrag im Community-Forum](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+Wir haben ISRG Root X2 bei den Microsoft, Apple, Google, Mozilla und Oracle Root-Programmen für die Integration eingereicht.
+
+ISRG Root X2 ist bereits über ein Cross-Sign von unserem ISRG Root X1 weitgehend vertraut. Außerdem haben mehrere Root-Programme ISRG Root X2 bereits als Vertrauensanker hinzugefügt.
+
+Weitere Informationen zum Status der Aufnahme finden Sie in [unserem Community-Forum](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+
+Während wir darauf warten, dass ISRG Root X2 weithin vertrauenswürdig wird, ist es möglich, ISRG Root X2 für Ihre ECDSA-Zertifikate zu verwenden. Weitere Informationen finden Sie in [unserem Beitrag im Community-Forum](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
+
+[android-compat]: /2020/12/21/extending-android-compatibility.html
+
+[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy

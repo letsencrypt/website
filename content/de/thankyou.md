@@ -1,10 +1,17 @@
 ---
-title: Danke für Ihre Spende an die ISRG
+title: Dankeschön
 slug: thankyou
 top_graphic: 2
-date: 2018-04-12
+date: 2022-12-02
 ---
 
-Danke für Ihre Unterstützung für ein noch sichereres Web, welches die Privatsphäre von allen respektiert. Folgen Sie uns auf [Twitter @letsencrypt](https://twitter.com/letsencrypt), um auf dem Laufenden zu bleiben.
-
-Ihre Transaktion ist abgeschlossen und eine Rechnung wurde per Email verschickt. Möglicherweise müssen Sie sich in Ihren [www.paypal.com](https://www.paypal.com) Account für eine Detailansicht dieser Transaktion einloggen.
+  <div class="container">
+    <p><strong>Dankeschön für Ihre Spende</strong></p>
+    <p>Im Namen aller Mitarbeiter der ISRG danken wir Ihnen für Ihren Beitrag zur Unterstützung unserer Arbeit.</p>
+    <p>Eine Spendenbescheinigung wurde an die von Ihnen angegebene E-Mail-Adresse gesendet. Die Internet Security Research Group ist eine 501(c)(3) gemeinnützige Organisation. Unser EIN ist: 46-3344200.</p>
+    <p class="pt-2"><strong>Verdoppeln Sie Ihre Spende</strong></p>
+    <p>Viele Unternehmen verdoppeln die Spenden ihrer Mitarbeiter an gemeinnützige Organisationen. Prüfen Sie, ob Ihre Organisation ein entsprechendes Programm anbietet und verdoppeln Sie Ihre Wirkung!</p>
+    <div class="pt-2">
+      {{< double_donation >}}
+    </div>
+  </div>

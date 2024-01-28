@@ -7,11 +7,11 @@ show_lastmod: 1
 ---
 
 
-Das [IETF-standardisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME-Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für Let's Encrypt.
+Das [IETF-standardisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME-Protokoll, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), ist der Grundstein für die Funktionsweise von Let's Encrypt.
 
 # API-Endpunkte
 
-Momentan haben wir folgende API-Endpunkte. Bitte verwenden Sie [unser Diagramm der Unterschiede](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) zum Vergleich der Implementierung mit der ACME-Spezifikation.
+Wir haben derzeit die folgenden API-Endpunkte. Bitte lesen Sie [unsere Dokumentation zu den Abweichungen](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), um deren Umsetzung mit der ACME-Spezifikation zu vergleichen.
 
 ## ACME v2 (RFC 8555)
 
@@ -25,10 +25,10 @@ Momentan haben wir folgende API-Endpunkte. Bitte verwenden Sie [unser Diagramm d
 
 # Neue abwärtskompatible ACME-Funktionen
 
-Von Zeit zu Zeit implementiert Let's Encrypt neue abwärtskompatible Funktionen in existierende API-Endpunkte. Typischerweise werden neue abwärtskompatible Funktionen eingeführt, weil wir uns entschieden haben, einen Teil der ACME-Spezifikation zu implementieren, die wir vorher noch nicht implementiert hatten.
+Von Zeit zu Zeit kann Let's Encrypt neue abwärtskompatible Funktionen für bestehende API-Endpunkte implementieren. Normalerweise werden neue, abwärtskompatible Funktionen eingeführt, weil wir uns entschlossen haben, einen Teil der ACME-Spezifikation zu implementieren, den wir zuvor noch nicht implementiert hatten.
 
-Wenn neue Funktionen zu existierenden API-Endpunkten vorgestellt werden, sind die Funktionen bereits in einer öffentlichen ACME-Spezifikation spezifiziert und stören keine implementierten Clients.
+Wenn neue Funktionen für bestehende API-Endpunkte eingeführt werden, sind diese Funktionen immer klar in einer öffentlichen ACME-Spezifikation spezifiziert und werden ordnungsgemäß implementierte Clients nicht stören.
 
 # Neue Versionen von ACME mit Inkompatibilitäten
 
-Wir planen keine wesentlichen Änderungen an unserer ACME-Unterstützung. Wenn wir dies jedoch für wichtig halten, werden wir uns bemühen, einen reibungslosen Übergang über einen ausreichenden Zeitraum hinweg zu ermöglichen und so früh wie möglich zu kommunizieren. Systemadministratoren sollten die Möglichkeit behalten, zeitnahe Aktualisierungen für ihre ACME-Clients bereitzustellen, falls eine grundlegende Änderung erforderlich ist.
+Wir planen keine einschneidenden Änderungen an unserem ACME-Support, aber wenn wir es für wichtig halten, werden wir uns bemühen, einen reibungslosen Übergang über einen ausreichenden Zeitraum zu ermöglichen und so weit wie möglich im Voraus zu kommunizieren. Systemadministratoren sollten in der Lage sein, ihre ACME-Clients rechtzeitig zu aktualisieren, falls eine grundlegende Änderung erforderlich ist.

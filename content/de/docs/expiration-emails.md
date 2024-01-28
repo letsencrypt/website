@@ -3,18 +3,18 @@ title: Ablauf-Emails
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2020-10-28
+lastmod: 2023-01-09
 show_lastmod: 1
 ---
 
 
 # Abonnieren
 
-Wenn Sie bei der Erstellung Ihres Kontos eine E-Mail-Adresse für Let's Encrypt angeben, senden wir Ihnen automatisch Benachrichtigungen über das Ablaufdatum, wenn Ihr Zertifikat zur Erneuerung ansteht. Wir senden die erste Benachrichtigung 20 Tage vor Ablauf des Zertifikats und weitere Benachrichtigungen 10 Tage und 1 Tag vor Ablauf.
+Wenn Sie Let's Encrypt bei der Erstellung Ihres Kontos eine E-Mail-Adresse angeben, werden wir unser Bestes tun, um Ihnen automatisch Benachrichtigungen über das Auslaufen Ihres Zertifikats zu senden, wenn es zur Erneuerung ansteht. Wir versuchen, die erste Benachrichtigung 20 Tage vor Ablauf des Zertifikats und die zweite und letzte Benachrichtigung 7 Tage vor Ablauf des Zertifikats zu versenden. Wir empfehlen Ihnen, sich darauf zu verlassen, dass Ihr ACME-Client Ihre Zertifikate automatisch erneuert, und diese Ablaufmitteilungen nur als Warnung zu verwenden, um Ihre Automatisierung zu überprüfen.
 
 # Wenn Sie eine Ablauf-E-Mail erhalten
 
-Wenn Ihr Zertifikat bereits verlängert wurde, senden wir keine Verfallserklärung. Wir betrachten ein Zertifikat als erneuert, wenn ein neueres Zertifikat mit genau denselben Namen vorhanden ist, unabhängig davon, von welchem Konto es erstellt wurde. Wenn Sie ein neues Zertifikat ausgestellt haben, das einen Namen relativ zu Ihrem alten Zertifikat hinzufügt oder entfernt, erhalten Sie eine Ablauf-E-Mail zu Ihrem alten Zertifikat. Wenn Sie das aktuell auf Ihrer Website ausgeführte Zertifikat überprüfen und das korrekte Datum anzeigt, sind keine weiteren Massnahmen erforderlich.
+Wenn Ihr Zertifikat bereits verlängert wurde, senden wir keine Verfallserklärung. Wir betrachten ein Zertifikat als erneuert, wenn ein neueres Zertifikat mit genau denselben Namen vorhanden ist, unabhängig davon, von welchem Konto es erstellt wurde. Wenn Sie ein neues Zertifikat ausgestellt haben, das einen Namen relativ zu Ihrem alten Zertifikat hinzufügt oder entfernt, erhalten Sie eine Ablauf-E-Mail zu Ihrem alten Zertifikat. Wenn Sie das aktuell auf Ihrer Website ausgeführte Zertifikat überprüfen und das korrekte Datum anzeigt, sind keine weiteren Massnahmen erforderlich. Um einen Überblick über die ausgestellten Zertifikate für Ihre Domäne zu erhalten, können Sie Ihre Domäne in den Protokollmonitoren für die Zertifikatstransparenz wie [crt.sh](https://crt.sh/) suchen.
 
 # Abbestellung
 

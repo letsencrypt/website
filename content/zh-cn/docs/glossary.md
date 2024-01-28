@@ -99,11 +99,11 @@ Note for translators:
 
 {{% def id="IDNA" english="Internationalized Domain Names for Applications" abbr="IDNA" abbr_first="1" %}} 参见[国际化域名](#def-IDN)。  {{% /def %}}
 
-{{% def id="IDN" name="国际化域名" english="Internationalized Domain Name" abbr="IDN" %}} 含有除了 `a` 到 `z`、`0` 到 `9` 以及短横线（`-`）以外字符的域名。 比如，它们可以使用阿拉伯文、中文、西里尔文、泰米尔文、希伯来文或其他基于拉丁字母表的使用变音符号或连体字母的字符。 编码后的 IDN 域名以 `xn--` 开头。 \[Let's Encrypt\](#def-LE) 支持 IDN：\[https://letsencrypt.org/2016/10/21/introducing-idn-support.html\](https://letsencrypt.org/2016/10/21/introducing-idn-support.html)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E5%9F%9F%E5%90%8D) - \[RFC 5890\](https://tools.ietf.org/html/rfc5890) - \[RFC 5891\](https://tools.ietf.org/html/rfc5891) {{% /def %}}
+{{% def id="IDN" name="国际化域名" english="Internationalized Domain Name" abbr="IDN" abbr_first="1" %}} 含有 `a` 到 `z`、`0` 到 `9`、短横线（`-`）以外字符的域名。 此类域名中可以使用带有变音符或连字的拉丁字母，也可以使用汉字、阿拉伯文、西里尔文、泰米尔文、希伯来文等文字。 编码后的 IDN 以 `xn--` 开头。 [Let's Encrypt](#def-LE) 支持 IDN：https://letsencrypt.org/2016/10/21/introducing-idn-support.html。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E5%9F%9F%E5%90%8D) - \[RFC 5890\](https://tools.ietf.org/html/rfc5890) - \[RFC 5891\](https://tools.ietf.org/html/rfc5891) {{% /def %}}
 
-{{% def id="ISRG" name="互联网安全研究组" english="Internet Security Research Group" abbr="ISRG" %}} 运营 \[Let's Encrypt\](#def-LE) 的组织：\[https://www.abetterinternet.org/about/\](https://www.abetterinternet.org/about/)。 \[维基百科条目\](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
+{{% def id="ISRG" name="互联网安全研究组" english="Internet Security Research Group" abbr="ISRG" abbr_first="1" %}} [Let's Encrypt](#def-LE) 背后的运作机构：[https://www.abetterinternet.org/about/](https://www.abetterinternet.org/about/)。 \[维基百科条目\](https://en.wikipedia.org/wiki/Internet_Security_Research_Group) {{% /def %}}
 
-{{% def id="issuer" name="证书颁发者" english="Certificate issuer" %}} 证书中的"颁发者"字段描述了对该证书进行签名的证书。 例如，Let's Encrypt 颁发的终端实体证书的颁发者字段可能是：“Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3”。 它通常包含\[通用名称\](#def-CN)、国家、组织等字段。 颁发者字段必须与某个证书的\[主体\](#def-subject)字段一致。 对于\[自签名证书\](#def-self-signed)（例如\[根证书\](#def-root)）来说，颁发者字段和其主体字段内容相同。 “颁发者”这个词也可以被用于指代颁发其他证书的证书（\[中间证书\](#def-intermediate)或根证书)或组织。 {{% /def %}}
+{{% def id="issuer" name="证书颁发者" english="Certificate issuer" %}} 证书的“颁发者”字段表示这份证书是由谁签名的。 例如，Let's Encrypt 颁发的终端实体证书的颁发者字段可能是：“Issuer: C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3”。 颁发者通常包含[通用名称](#def-CN)、国家、组织等字段， 且必须和某一份证书的[主体](#def-subject)字段一致。 [自签名](#def-self-signed)证书（如[根证书](#def-root)）的颁发者与主体字段内容相同。 “颁发者”一词也泛指所有能够签发其他证书的证书（包括[中间证书](#def-intermediate)和根证书），或者有资格颁发证书的机构。 {{% /def %}}
 
 {{% def id="key-pair" name="密钥对" english="Key-pair" %}} 用于签名或加密的公钥和私钥的组合。 公钥通常嵌入在证书中，而私钥则独立保密存储。 根据不同的应用情况，密钥对可以用于加密和解密、签名和验证数据或是协商二级密钥。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86) {{% /def %}}
 
