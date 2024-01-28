@@ -3,7 +3,13 @@ title: Erste Schritte
 slug: getting-started
 top_graphic: 3
 date: 2020-02-11
+lastmod: 2023-12-20
 ---
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>Die Let's Encrypt ACME Directory URL ist:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
 
 Um HTTPS auf Ihrer Website zu aktivieren, brauchen Sie ein Zertifikat (eine Datei) von einer Zertifizierungsstelle (CA). Let's Encrypt ist eine CA. Um für Ihre Domain ein Zertifikat von Let's Encrypt zu bekommen, müssen Sie nachweisen, dass Sie die Kontrolle über diese Domain haben. Mit Let's Encrypt benutzen Sie Software, die das [ACME-Protokoll](https://tools.ietf.org/html/rfc8555) benutzt, welches typischerweise auf Ihrem Web-Host läuft.
 
@@ -11,9 +17,9 @@ Um herauszufinden, welche Methode für Sie die richtige ist, ist es wichtig hera
 
 # Mit Shell-Zugang
 
-Wir empfehlen den meisten Leuten mit Shell-Zugang die Benutzung des ACME [Certbots](https://certbot.eff.org/ "Certbot"). Er kann Zertifikate automatisch ohne Ausfallzeit erstellen und installieren. Er hat auch einen Expertenmodus für Leute, die keine Autokonfiguration möchten. Er ist einfach zu benutzen, funktioniert auf vielen Betriebssystemen und hat eine großartige Dokumentation. [Besuchen Sie die Seite von Certbot](https://certbot.eff.org/ "Certbot"), um passende Anleitungen für Ihr Betriebssystem und ihren Server zu erhalten.
+Wir empfehlen den meisten Leuten mit Shell-Zugang die Benutzung des ACME [Certbots][]. Er kann Zertifikate automatisch ohne Ausfallzeit erstellen und installieren. Er hat auch einen Expertenmodus für Leute, die keine Autokonfiguration möchten. Er ist einfach zu benutzen, funktioniert auf vielen Betriebssystemen und hat eine großartige Dokumentation. [Besuchen Sie die Seite von Certbot][Certbot], um passende Anleitungen für Ihr Betriebssystem und ihren Server zu erhalten.
 
-Wenn [Certbot](https://certbot.eff.org/ "Certbot") nicht ihren Anforderungen entspricht, oder Sie einen anderen Client verwenden möchten, gibt es [ viele weitere ACME-Clients zur Auswahl](/docs/client-options).  Sobald Sie einen ACME-Client gewählt haben, können Sie in die dazugehörige Dokumentation verwenden.
+Wenn [Certbot][] nicht ihren Anforderungen entspricht, oder Sie einen anderen Client verwenden möchten, gibt es [ viele weitere ACME-Clients zur Auswahl](/docs/client-options).  Sobald Sie einen ACME-Client gewählt haben, können Sie in die dazugehörige Dokumentation verwenden.
 
 Wenn Sie mit unterschiedlichen ACME-Clients experimentieren, benutzen Sie [die Staging-Umgebung](/docs/staging-environment), um zu verhindern, dass die [Anfragelimits](/docs/rate-limits) überschritten werden.
 
@@ -30,3 +36,9 @@ Wenn Ihr Hosting-Provider Let's Encrypt nicht integrieren möchte, aber das Hoch
 # Hilfe erhalten
 
 Wenn Sie Fragen haben zur Auswahl eines ACME-Clients, zur Benutzung eines besonderen Clients oder eine andere Frage bezüglich Let's Encrypt haben, können Sie gerne unser [hilfreiches Community Forum](https://community.letsencrypt.org/) besuchen.
+
+[Certbots]: https://certbot.eff.org/ "Certbot"
+
+[Certbot]: https://certbot.eff.org/ "Certbot"
+
+[Certbot]: https://certbot.eff.org/ "Certbot"

@@ -1,51 +1,77 @@
 ---
-title: Zertifikate sperren
+title: Widerruf von Zertifikaten
 slug: revoking
 top_graphic: 1
 date: 2017-06-08
-lastmod: 2021-08-03
+lastmod: 2021-10-15
 show_lastmod: 1
 ---
 
 
-Wenn ein zu einem Zertifikat dazugehöriger privater Schlüssel nicht länger sicher ist, sollten Sie das Zertifikat sperren. Das kann aus unterschiedlichen Gründen passieren. Zum Beispiel, Sie haben unglücklicherweise den privaten Schlüssel auf einer öffentlichen Webseite geteilt; Hacker haben Ihren privaten Schlüssel von Ihren Servern kopiert; oder Hacker haben temporär Kontrolle über Ihre Server oder Ihre DNS Konfiguration erhalten und benutzten das zum Validieren und Ausstellen eines Zertifikats, für den sie den privaten Schlüssel besitzen.
+Wenn ein Zertifikat nicht mehr sicher zu verwenden ist, sollten Sie es widerrufen. Dafür kann es verschiedene Gründe geben. So könnten Sie beispielsweise den privaten Schlüssel versehentlich auf einer öffentlichen Website weitergeben; Hacker könnten den privaten Schlüssel von Ihren Servern kopieren; oder Hacker könnten vorübergehend die Kontrolle über Ihre Server oder Ihre DNS-Konfiguration übernehmen und diese zur Validierung und Ausstellung eines Zertifikats verwenden, für das sie den privaten Schlüssel besitzen.
 
-Wenn Sie ein Let's Encrypt Zertifikat sperren, wird Let's Encrypt die Sperrinformationen durch das [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) veröffentlichen und einige Browser werden OCSP überprüfen, ob sie einem Zertifikat vertrauen sollten. Beachten Sie, dass OCSP [einige grundlegende Probleme hat](https://www.imperialviolet.org/2011/03/18/revocation.html), sodass nicht alle Browser diese Überprüfung machen werden. Trotzdem, Sperren von Zertifikaten, die einen kompromitierten privaten Schlüssel haben, ist eine wichtige Praxis und ist erforderlich vom Let's Encrypt's [Subscriber Agreement](/repository).
+Wenn Sie ein Let's Encrypt-Zertifikat widerrufen, veröffentlicht Let's Encrypt diese Widerrufsinformationen über das [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), und einige Browser überprüfen OCSP, um festzustellen, ob sie einem Zertifikat vertrauen sollten. Beachten Sie, dass OCSP [einige grundsätzliche Probleme hat](https://www.imperialviolet.org/2011/03/18/revocation.html), so dass nicht alle Browser diese Prüfung durchführen. Dennoch ist der Widerruf von Zertifikaten, die kompromittierten privaten Schlüsseln zuzuordnen sind, eine wichtige Praxis und wird in der [Teilnehmervereinbarung](/repository) von Let's Encrypt gefordert.
 
-Um ein Zertifikat mit Let's Encrypt zu sperren, werden Sie die [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) benutzen, meist durch einen ACME Client wie [Certbot](https://certbot.eff.org/). Sie müssen gegenüber Let's Encrypt bestätigen, dass Sie die Berechtigung zum Sperren des Zertifikats haben. Es gibt drei Wege, das zu tun:
+Um ein Zertifikat mit Let's Encrypt zu widerrufen, verwenden Sie die [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), höchstwahrscheinlich über einen ACME Client wie [Certbot](https://certbot.eff.org/). Sie müssen Let's Encrypt gegenüber nachweisen, dass Sie berechtigt sind, das Zertifikat zu widerrufen. Es gibt drei Möglichkeiten, dies zu tun: über das Konto, das das Zertifikat ausgestellt hat, über ein anderes autorisiertes Konto oder über den privaten Schlüssel des Zertifikats.
 
-# Vom Konto, dass das Zertifikat ausgestellt hat.
+# Angabe einer Begründung
 
-Wenn Sie ursprünglich das Zertifikat ausgestellt haben und weiterhin Kontrolle über das Konto, welches Sie benutzten, haben, können Sie Ihre Kontoanmeldeinformationen benutzen, welches das Zertifikat ausgestellt hat. Certbot wird das standardmässig machen. Beispiel:
+Bei der Sperrung eines Zertifikats sollten Let's Encrypt-Abonnenten einen Grund angeben, der wie folgt lautet:
+
+* Kein Grund angegeben oder `unspecified` (RFC 5280 CRLReason #0)
+  - Wenn die nachstehenden Begründungen nicht auf den Antrag auf Widerruf zutreffen, darf der Teilnehmer keinen andere Begründung als "unspecified" angeben.
+* `keyCompromise` (RFC 5280 CRLReason #1)
+  - Der Zertifikatsabonnent muss den Sperrgrund "keyCompromise" wählen, wenn er Grund zu der Annahme hat, dass der private Schlüssel seines Zertifikats kompromittiert wurde, z. B. wenn eine unbefugte Person Zugriff auf den privaten Schlüssel seines Zertifikats hatte.
+  - Wenn die Widerrufsanforderung mit dem privaten Schlüssel des Zertifikats und nicht mit dem privaten Schlüssel eines Abonnentenkontos signiert wird, ignoriert Let's Encrypt möglicherweise den Widerrufsgrund in der Anforderung und setzt den Grund auf "keyCompromise".
+* `superseded` (RFC 5280 CRLReason #4)
+  - Der Zertifikatsabonnent sollte den Sperrgrund " superseded" wählen, wenn er ein neues Zertifikat beantragt, um sein bestehendes Zertifikat zu ersetzen.
+* `cessationOfOperation` (RFC 5280 CRLReason #5)
+  - Der Zertifikatsabonnent sollte den Sperrgrund "cessationOfOperation" wählen, wenn er nicht mehr im Besitz aller Domainnamen des Zertifikats ist oder wenn er das Zertifikat nicht mehr verwenden wird, weil er seine Website einstellt.
+  - Wenn die Widerrufsanforderung von einem Abonnentenkonto stammt, das das betreffende Zertifikat nicht bestellt hat, aber die Kontrolle über alle Identifikatoren im Zertifikat nachweist, kann Let's Encrypt den Widerrufsgrund in der Anforderung ignorieren und den Grund auf "cessationOfOperation" setzen.
+
+Löschungsanträge, die einen anderen als den oben genannten Grund angeben, werden abgelehnt.
+
+# Von dem Account, der das Zertifikat ausgestellt hat
+
+Wenn Sie das Zertifikat ursprünglich ausgestellt haben und noch die Kontrolle über den Account haben, mit dem Sie es ausgestellt haben, können Sie es mit Ihren Account-Anmeldedaten widerrufen. Certbot wird dies standardmäßig versuchen. Beispiel:
 
 ```bash
-certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem --reason keycompromise
-```
-
-# Benutzen des privaten Schlüssels des Zertifikats
-
-Wenn Sie nicht das Zertifikat ausgestellt haben, aber noch eine Kopie des zugehörigen privaten Schlüssels haben, können Sie das Zertifikat unter Benutzung des privaten Schlüssels sperren, indem Sie den Sperrauftrag signieren. Zum Beispiel, wenn Sie sehen, dass der private Schlüssel unglücklicherweise veröffentlicht wurde, können Sie diese Methode zum Sperren des Zertifikats benutzen, wenn Sie nicht die Person sind, die das Zertifikat ursprünglich ausgestellt hat.
-
-Um diese Methode zu benutzen, müssen Sie zuerst das Zertifikat, welches gesperrt werden soll, herunterladen. Let's Encrypt speichert alle Logs zu Zertifikaten auf [Certificate Transparency](https://www.certificate-transparency.org/), so finden Sie es und können das Zertifikat von einem Logmonitor herunterladen, wie [crt.sh](https://crt.sh/).
-
-Sie brauchen auch eine Kopie des privaten Schlüssels im PEM Format. Wenn Sie alles zusammen haben, können Sie das Zertifikat sperren:
-
-```bash
-certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/key.pem --reason keycompromise
+certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 ```
 
 # Benutzung eines unterschiedlich autorisierten Kontos
 
-Wenn irgendjemand ein Zertifikat ausgestellt hat, nachdem Ihr Server oder Ihr DNS kompromitiert wurde, möchten Sie das Zertifikat erneut sperren. Um die Richtigkeit der Sperrung sicherzustellen, brauch Let's Encrypt die Sicherheit, dass Sie die Kontrolle über Ihren Domainamen, in dem sich das Zertifikat befindet, haben (andererseits könnten Leute jede anderen Zertifikate ohne Erlaubnis sperren)! Zur Überprüfung dieser Kontrolle benutzt Let's Encrypt dieselben Methoden wie unter Validierung bei der Ausstellung. Sie können einen [Eintrag in DNS TXT ](https://tools.ietf.org/html/rfc8555#section-8.4) machen, eine [Datei auf Ihren HTTP Server](https://tools.ietf.org/html/rfc8555#section-8.3) ablegen oder bieten ein [spezielles TLS Zertifikat](https://tools.ietf.org/html/rfc8737#section-3). Im Allgemeinen wird ein ACME Client das alles für Sie erledigen. Beachten Sie, dass die meisten ACME CLients Validierung und Ausstellung kombinieren, der einzige Weg nach einer Validierung zu fragen, ist der Weg der Ausstellung. Sie können das Zertifikat im Ergebnis wieder sperren, wenn Sie es nicht möchten oder zerstören Sie einfach den privaten Schlüssel. Wenn Sie die Ausstellung eines Zertifikats im Allgemeinen verhindern möchten, können Sie eine nichtexistierende Domain auf der Kommandozeile verwenden, was dazu führt, dass die Ausstellung fehlschlägt bei gleichzeitiger Validierung der anderen existierenden Domainnamen. Um dies zu tun, führen:
+Wenn jemand ein Zertifikat ausgestellt hat, nachdem er Ihren Host oder Ihr DNS kompromittiert hat, müssen Sie dieses Zertifikat widerrufen, sobald Sie die Kontrolle wiedererlangt haben. Um das Zertifikat zu widerrufen, muss Let's Encrypt sicherstellen, dass Sie die Kontrolle über die Domänennamen in diesem Zertifikat haben (andernfalls könnten sich die Leute gegenseitig die Zertifikate widerrufen, ohne die Erlaubnis zu haben)!
+
+Um dieses Steuerelement zu validieren, verwendet Let's Encrypt die gleichen Methoden wie bei der Validierung von Steuerelementen für die Ausgabe: Sie können einen [Wert in einen DNS-TXT-Eintrag](https://tools.ietf.org/html/rfc8555#section-8.4) oder eine [Datei auf einem HTTP-Server](https://tools.ietf.org/html/rfc8555#section-8.3) einfügen. In der Regel übernimmt ein ACME Client diese Aufgabe für Sie. Beachten Sie, dass die meisten ACME-Clients Validierung und Ausstellung kombinieren, so dass die einzige Möglichkeit, nach Validierungen zu fragen, darin besteht, die Ausstellung zu versuchen. Sie können dann das resultierende Zertifikat widerrufen, wenn Sie es nicht mehr benötigen, oder den privaten Schlüssel einfach vernichten.
+
+Wenn Sie die Ausstellung eines Zertifikats vermeiden möchten, können Sie einen nicht existierenden Domänennamen in Ihre Befehlszeile einfügen, was dazu führt, dass die Ausstellung fehlschlägt, während die anderen, existierenden Domänennamen weiterhin überprüft werden. Beispiel:
 
 ```bash
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-Und folgen Sie den Anweisungen. Wenn Sie die Validierung über HTTP dem DNS bevorzugen, ersetzen Sie  das `--preferred-challenges` Flag mit `--preferred-challenges=http`.
+Und folgen Sie den Anweisungen. Wenn Sie lieber über HTTP als über DNS validieren möchten, ersetzen Sie das Flag `--preferred-challenges` durch `--preferred-challenges=http`.
 
-Nur wenn Sie validierte Kontrolle über all die Domainnamen in dem Zertifikat, welches Sie sperren möchten, haben, können Sie das Zertifikat herunterladen von [crt.sh](https://crt.sh/), und fahren Sie mit dem Sperren des Zertifikats fort, als wenn Sie es ausgestellt haben:
+Sobald Sie die Kontrolle über alle Domänennamen in dem zu widerrufenden Zertifikat validiert haben, können Sie das Zertifikat von [crt.sh](https://crt.sh/) herunterladen und das Zertifikat widerrufen, als ob Sie es ausgestellt hätten:
 
 ```bash
-certbot revoke --cert-path /PATH/TO/downloaded-cert.pem --reason keycompromise
+certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
+```
+
+# Verwendung des privaten Schlüssels des Zertifikats
+
+Wenn Sie das Zertifikat ursprünglich nicht ausgestellt haben, aber über eine Kopie des zugehörigen privaten Schlüssels verfügen, können Sie es widerrufen, indem Sie diesen privaten Schlüssel zum Signieren des Widerrufsantrags verwenden. Wenn Sie z. B. feststellen, dass ein privater Schlüssel versehentlich veröffentlicht wurde, können Sie diese Methode verwenden, um Zertifikate zu widerrufen, die diesen privaten Schlüssel verwenden, auch wenn Sie nicht die Person sind, die diese Zertifikate ursprünglich erstellt hat.
+
+Um diese Methode zu verwenden, benötigen Sie zunächst eine Kopie des privaten Schlüssels im PEM-Format.
+
+Laden Sie dann das zu widerrufende Zertifikat herunter, falls Sie es noch nicht haben. Let's Encrypt protokolliert alle Zertifikate in [Certificate Transparency](https://www.certificate-transparency.org/)-Protokollen, so dass Sie Zertifikate über einen Protokollmonitor wie [crt.sh](https://crt.sh/) finden und herunterladen können. Die Suche nach einem passenden `SubjectPublicKeyInfo` (SPKI) Feld findet alle Zertifikate, die den privaten Schlüssel verwenden. Um den SPKI-Hash aus einem privaten Schlüssel zu extrahieren:
+```bash
+openssl pkey -outform DER -in /PATH/TO/privkey.pem -pubout | openssl sha256
+```
+
+Sobald Sie den privaten Schlüssel und das Zertifikat haben, können Sie das Zertifikat wie folgt widerrufen:
+
+```bash
+certbot revoke --cert-path /PATH/TO/cert.pem --key-path /PATH/TO/privkey.pem --reason keyCompromise
 ```

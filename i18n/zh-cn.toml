@@ -44,7 +44,7 @@ other = """
 other = "跳过导航链接"
 
 [last_updated]
-other = "最后更新："
+other = "最近更新："
 
 [see_all_doc]
 other = "所有文档"
