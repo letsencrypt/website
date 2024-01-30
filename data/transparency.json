@@ -1,5 +1,5 @@
 {
-    "lastmod": "2022-06-13",
+    "lastmod": "2024-01-30",
     "categories": [
         "production",
         "testing"
@@ -48,7 +48,7 @@
         {
             "log": "oak",
             "shard": "2023",
-            "state": "Usable",
+            "state": "Rejected - Shard Expired",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsz0OeL7jrVxEXJu+o4QWQYLKyokXHiPOOKVUL3/TNFFquVzDSer7kZ3gijxzBp98ZTgRgMSaWgCmZ8OD74mFUQ==",
             "logID": "B7:3E:FB:24:DF:9C:4D:BA:75:F2:39:C5:BA:58:F4:6C:5D:FC:42:CF:7A:9F:35:C4:9E:1D:09:81:25:ED:B4:99",
@@ -78,7 +78,7 @@
         {
             "log": "oak",
             "shard": "2025h1",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKeBpU9ejnCaIZeX39EsdF5vDvf8ELTHdLPxikl4y4EiROIQfS4ercpnMHfh8+TxYVFs3ELGr2IP7hPGVPy4vHA==",
             "logID": "A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7",
@@ -88,7 +88,7 @@
         {
             "log": "oak",
             "shard": "2025h2",
-            "state": "Pending",
+            "state": "Usable",
             "role": "production",
             "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtXYwB63GyNLkS9L1vqKNnP10+jrW+lldthxg090fY4eG40Xg1RvANWqrJ5GVydc9u8H3cYZp9LNfkAmqrr2NqQ==",
             "logID": "0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34",
