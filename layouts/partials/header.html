@@ -53,8 +53,12 @@
     </nav>
   </div>
 </header>
-<div id="site-banner">
-  <a href="https://abetterinternet.org/tenth-anniversary">{{ i18n "site_banner_text" }}</a>
-</div>
+
+{{ if .Site.Params.site_banner_enabled }}
+  <div id="site-banner">
+    <a href="{{ .Site.Params.site_banner_href }}">{{ i18n "site_banner_text" }}</a>
+  </div>
+{{ end }}
+
 <div id="main-content"></div>
 {{ end }}{{/* if ne .Section "documents" */}}
