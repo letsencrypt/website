@@ -18,6 +18,8 @@ assetDir = "src"
 # See the JPEG files below /static/images.
 top_graphic = 5
 
+site_banner_enabled = false
+
 github_username = "letsencrypt"
 twitter_username = "letsencrypt"
 mastodon_username = "letsencrypt"
