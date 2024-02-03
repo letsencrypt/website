@@ -108,6 +108,12 @@ status = 302
 force = false
 
 [[redirects]]
+from = "/fosdem"
+to = "https://www.isrg.org/fosdem"
+status = 302
+force = false
+
+[[redirects]]
 from = "/become-a-sponsor"
 to = "https://www.abetterinternet.org/sponsor"
 status = 302
