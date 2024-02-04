@@ -107,55 +107,55 @@ Note for translators:
 
 {{% def id="key-pair" name="密钥对" english="Key-pair" %}} 用于签名或加密的公钥和私钥的组合。 公钥通常嵌入在证书中，而私钥则独立保密存储。 根据不同的应用情况，密钥对可以用于加密和解密、签名和验证数据或是协商二级密钥。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86) {{% /def %}}
 
-{{% def id="leaf" name="叶证书（终端实体证书）" english="Leaf certificate (end-entity certificate)" %}} 大多数情况下，证书由\[中间证书\](#def-intermediate)签名，对一组域名有效，且不能对其他证书签名。 由 \[ACME 客户端\](#def-ACME-client)请求并由\[Web 服务器\](#def-web-server)使用的就是此类证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%82%E7%AB%AF%E5%AF%A6%E9%AB%94%E8%AD%89%E6%9B%B8) {{% /def %}}
+{{% def id="leaf" name="叶证书（最终实体证书）" english="Leaf certificate (end-entity certificate)" %}} 一般是由[中间证书](#def-intermediate)签名的一份证书，仅对一系列域名有效，且不能用于签发其他证书。 [ACME 客户端](#def-ACME-client)申请及[网页服务器](#def-web-server)使用的都是此类证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%82%E7%AB%AF%E5%AF%A6%E9%AB%94%E8%AD%89%E6%9B%B8) {{% /def %}}
 
-{{% def id="LE" english="Let's Encrypt" abbr="LE" %}} 由 \[ISRG\](#def-ISRG) 运营的\[证书颁发机构\](#def-CA)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
+{{% def id="LE" english="Let's Encrypt" abbr="LE" %}} 一家由 [ISRG](#def-ISRG) 运营的[证书颁发机构](#def-CA)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/Let%27s_Encrypt) {{% /def %}}
 
-{{% def id="mixed-content" name="混合内容" english="Mixed content" %}} 在 HTTPS 网页中通过 HTTP 加载子资源（JavaScript、CSS 或图片）。 \[浏览器\](#def-web-browser)可能会阻止加载混合内容，或者在有混合内容时将页面标记为较不安全：\[https://developer.mozilla.org/zh-CN/docs/Security/MixedContent\](https://developer.mozilla.org/zh-CN/docs/Security/MixedContent)。 要解决混合内容的问题，网页开发者必须把所有资源都改为使用 HTTPS 链接。 浏览器中的\[开发者工具\](https://developer.mozilla.org/zh-CN/docs/Learn/Discover_browser_developer_tools)可以用于帮助找出导致混合内容问题的资源。  {{% /def %}}
+{{% def id="mixed-content" name="混合内容" english="Mixed content" %}} 在 HTTPS 网页中通过 HTTP 加载子资源（JavaScript、CSS 或图片）。 [浏览器](#def-web-browser)可能会屏蔽混合内容，或将含有混合内容的页面标为不安全：https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content。 要解决混合内容的问题，网页开发者必须把所有资源都改为使用 HTTPS 链接。 通过浏览器内置的[开发者工具](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)可以找到哪些资源存在混合内容的问题。  {{% /def %}}
 
-{{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 检查\[证书\](#def-leaf)的\[吊销\](#def-revocation)状态的方法。 也就是说，这是一个检查\[证书颁发机构\](#def-CA)是否表明证书不再有效（即使还没有到过期日期）的方法。 这种请求可能会造成隐私问题，因为它允许证书颁发机构的互联网服务提供商直接得知谁在在访问哪些网站。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE) {{% /def %}}
+{{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 一种检查[证书](#def-leaf)是否已被[吊销](#def-revocation)的方式。 也就是询问[证书颁发机构](#def-CA)，某一份证书是否尚未到期就已提前失效。 这种方式存在隐私问题，因为证书颁发机构和网络运营商都能得知谁访问了哪些网站。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP 必须装订" english="OCSP Must-Staple" %}} 告知\[浏览器\](#def-web-browser)使用该证书的\[Web 服务器\](#def-web-server)必须使用 \[OCSP 装订\](#def-OCSP-stapling)的\[证书\](#def-leaf)扩展。 它被用于确保浏览器在每次连接到 Web 服务器时都确认\[证书\](#def-leaf)的最新\[吊销\](#def-revocation)状态，以使吊销操作更加可靠。 如果被请求这么做，\[Let's Encrypt\](#def-LE) 可以颁发带有“OCSP 必须装订”\[扩展\](#def-extension)的证书。 \[Mozilla 安全博客文章\](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) \[RFC 7633\](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP 强制装订" english="OCSP Must-Staple" %}} 一种[证书](#def-leaf)扩展，告知[浏览器](#def-web-browser)使用此证书的[网页服务器](#def-web-server)必须采用 [OCSP 装订](#def-OCSP-stapling)。 这能保证每次连接时[证书](#def-leaf)的实时[吊销](#def-revocation)状态都能得到服务器确认，使吊销机制更加可靠。 [Let's Encrypt](#def-LE) 可以根据申请颁发带有 OCSP 强制装订[扩展](#def-extension)的证书。 \[Mozilla 安全博客文章\](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) \[RFC 7633\](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP 装订" english="OCSP stapling" %}} [Web 服务器](#def-web-server)向[浏览器](#def-web-browser)发送由[证书颁发机构](#def-CA)签名的 [OCSP](#def-OCSP) 回复的方法。 该方法使得浏览器自身不必单独向 CA 发送 OCSP 请求，能够加快网页加载速度并增强安全性。 [维基百科条目](https://zh.wikipedia.org/wiki/OCSP%E8%A3%85%E8%AE%A2) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP 装订" english="OCSP stapling" %}} [网页服务器](#def-web-server)将[证书颁发机构](#def-CA)签名的 [OCSP](#def-OCSP) 响应直接发送给[浏览器](#def-web-browser)，使浏览器不必再自行询问证书颁发机构，从而提升网页加载速度并保护用户隐私。 这种方式也称为 TLS 证书状态请求扩展。 [维基百科条目](https://zh.wikipedia.org/wiki/OCSP%E8%A3%85%E8%AE%A2) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
-{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" %}} OID 是由国际电信联盟（ITU）和 ISO/IEC 标准化的具有唯一性的数字标识符。 在证书中，OID 被用于定义扩展、字段和政策断言。 互联网协议、\[证书政策\](#def-CP)和\[证书实践声明\](#def-CPS)文档定义了 OID 的使用情况。 \[维基百科条目\](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" abbr_first="1" %}} 一种全球唯一的数字型标识符，由国际电信联盟（ITU）和 ISO/IEC 标准化。 OID 在证书中用于定义扩展、字段和制度声明， 具体用法由互联网协议、[证书颁发制度](#def-CP)和[证书运作声明](#def-CPS)规定。 \[维基百科条目\](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
-{{% def id="OV" name="组织验证" english="Organization Validation" abbr="OV" %}} \[CA\](#def-CA) 验证了\[用户\](#def-subscriber)的法律实体后颁发的证书。 此类证书包含有该实体的相关信息。 \[Let's Encrypt\](#def-LE) 不提供 OV 证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%84%E7%B9%94%E9%A9%97%E8%AD%89%EF%BC%88OV%EF%BC%89) {{% /def %}}
+{{% def id="OV" name="组织验证" english="Organization Validation" abbr="OV" abbr_first="1" %}} [CA](#def-CA) 核实[用户](#def-subscriber)的法人身份后颁发的证书， 此类证书含有该法人的相关信息。 [Let's Encrypt](#def-LE) 不提供 OV 证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%84%E7%B9%94%E9%A9%97%E8%AD%89%EF%BC%88OV%EF%BC%89) {{% /def %}}
 
 {{% def id="pem" name="PEM 文件（.pem）" english="PEM file (.pem)" %}} 一种密码学信息的格式（原来作为“隐私增强型邮件”互联网标准的一部分被用于保护电子邮件）。 PEM 文档可以用于表示私钥、公钥、数字证书等信息。 这些文件以“-----BEGIN”加上数据类型开头。 \[维基百科条目\](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) {{% /def %}}
 
-{{% def id="pfx" name="个人信息交换文件（.pfx）" english="Personal Information Exchange Files (.pfx)" %}} 可以包含\[叶证书\](#def-leaf)、其链接至根证书的\[证书链\](#def-chain)以及叶证书的私钥的文件。 详见 \[https://en.wikipedia.org/wiki/PKCS_12\](https://en.wikipedia.org/wiki/PKCS_12)。 \[微软硬件开发者中心\](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
+{{% def id="pfx" name="个人信息交换文件（.pfx）" english="Personal Information Exchange Files" %}} 一种文件格式，其中可包含[叶证书](#def-leaf)及其私钥，以及该证书到根证书的[证书链](#def-chain)。 详见 \[https://en.wikipedia.org/wiki/PKCS_12\](https://en.wikipedia.org/wiki/PKCS_12)。 \[微软硬件开发者中心\](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
-{{% def id="precertificate" name="准证书" english="Precertificate" %}} 准证书时\[证书透明度\](#def-CT)的一部分。 准证书是CA想要颁发的\[证书\](#def-leaf)一份拷贝，但它带有一个\[关键\](#def-critical)的有毒扩展以防止它被其他软件接受。 CA 将准证书提交到 \[CT 日志\](#def-CT-log)以取得 \[SCT\](#def-SCT)。 由于准证书和它对应的证书并不完全相同，证书透明度日志可能最终会同时包含两者。 \[RFC 6962 3.1 节\]( https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
+{{% def id="precertificate" name="准证书" english="Precertificate" %}} [证书透明化](#def-CT)系统的一部分。 准证书由 CA 即将颁发的[证书](#def-leaf)外加一项[关键](#def-critical)扩展组成，该扩展用于防止一般软件将准证书作为正常证书使用。 CA 将生成的准证书提交至 [CT 日志](#def-CT-log)系统，从而获得 [SCT](#def-SCT)。 由于准证书与其对应的证书并不完全相同，二者最终可能都会录入证书透明化日志系统中。 \[RFC 6962 3.1 节\]( https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
-{{% def id="HPKP" name="HTTP公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 要求浏览器在将来加载网页时确保网站的\[证书链\](#def-chain)使用特定公钥的安全机制。 Chrome 引入了这项机制来应对 CA 被入侵的情况，但是它会导致网站停止工作，所以 Chrome 又\[弃用并移除了它\](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
+{{% def id="HPKP" name="HTTP 公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 一种安全机制，要求浏览器连接网站时确保[证书链](#def-chain)必须使用特定的公钥。 Chrome 浏览器曾引入这一机制应对 CA 被入侵的情况，但网站常因此出现问题，最终 Chrome [废除了该功能](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
 
-{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。 例如，这个列表同时包含了 `com`和 `co.uk`，尽管 `co.uk` 不是 TLD。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 \[Let's Encrypt\](#def-LE) 也使用这个列表来计算速率限制：\[/rate-limits\](/rate-limits)。  https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。 例如，这个列表同时包含了 `com`和 `co.uk`，尽管 `co.uk` 不是 TLD。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 [Let's Encrypt](#def-LE) 也使用了这一列表，用于实施[速率限制](/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
 
-{{% def id="relying-party" name="信任方" english="Relying Party" %}} 依赖证书中的信息的人。 例如，访问 HTTPS 网站的人是一个信任方。  {{% /def %}}
+{{% def id="relying-party" name="依赖方" english="Relying Party" %}} 需要使用证书中的信息的人， 例如 HTTPS 网站的用户。  {{% /def %}}
 
-{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在其到期之前一直有效，除非 \[CA\](#def-CA) 声明它被吊销了。 证书可能因包括私钥泄露在内的多种原因被吊销。 浏览器可以通过 \[CRL\](#def-CRL)、\[OCSP\](#def-OCSP) 或像 \[OneCRL\](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) 和 \[CRLSets\](https://dev.chromium.org/Home/chromium-security/crlsets) 一类的较新的方法来检查证书是否被吊销。 注意在许多情况下，\[吊销证书是没有用的\](https://www.imperialviolet.org/2011/03/18/revocation.html)。 \[/docs/revoking\](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在到期前始终有效，除非 [CA](#def-CA) 声明该证书已被提前吊销。 吊销的原因有很多种，比如私钥泄露。 浏览器可以通过 [CRL](#def-CRL)、[OCSP](#def-OCSP) 或 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/)、[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) 等较新的方式核实证书是否已被吊销。 需要注意的是，[吊销证书经常无法起到作用](https://www.imperialviolet.org/2011/03/18/revocation.html)。 \[/docs/revoking\](/docs/revoking) {{% /def %}}
 
-{{% def id="root" name="根证书" english="Root certificate" %}} 由\[证书颁发机构\](#def-CA)控制，用于对\[中间证书\](#def-intermediate)签名且包含在\[证书存储\](#def-store)内的\[自签名\](#def-self-signed)证书。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%A0%B9%E8%AF%81%E4%B9%A6) {{% /def %}}
+{{% def id="root" name="根证书" english="Root certificate" %}} 一份由[证书颁发机构](#def-CA)控制的[自签名证书](#def-self-signed)，收录于各[证书库](#def-store)中，用于签发其[中间证书](#def-intermediate)。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%A0%B9%E8%AF%81%E4%B9%A6) {{% /def %}}
 
-{{% def id="root-program" name="根证书项目" english="Root Program" %}} 有关组织用于确定在其\[证书存储\](#def-store)中包含哪些证书（即哪些 CA 被其软件信任）的政策。   {{% /def %}}
+{{% def id="root-program" name="根证书项目" english="Root Program" %}} 组织机构对于哪些证书可收录于其[证书库](#def-store)中所作的规定，即哪些 CA 可得到其软件的信任。  {{% /def %}}
 
 {{% def id="RSA" abbr="RSA" %}} 一种用于加密和数字签名证书的公钥加密算法。 \[维基百科条目\](https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95) {{% /def %}}
 
-{{% def id="self-signed" name="自签名证书" english="Self-signed certificate" %}} 由其自己的私钥签名，并且\[主体\](#def-subject)与\[颁发者\](#def-issuer)相同的证书。 自签名证书仅会因为现实世界的事先安排（例如加入到\[受信任的根证书列表\](#def-store)中）而被信任。 \[根证书\](#def-root)都是自签名的。 \[维基百科条目\](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
+{{% def id="self-signed" name="自签名证书" english="Self-signed certificate" %}} 一份[主体](#def-subject)和[颁发者](#def-issuer)相同的证书，由其自身的私钥签名。 自签名证书只能通过现实中的事先安排得到信任，例如收录于[可信根证书列表](#def-store)中。 所有[根证书](#def-root)都是自签名证书。 \[维基百科条目\](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
 
-{{% def id="SNI" name="服务器名称指示" english="Server Name Indication" abbr="SNI" %}} 在 \[TLS\](#def-TLS) 握手时由\[用户代理\](#def-user-agent)发送给\[服务器\](#def-web-server)，用于指定要连接的域名的字段。 当同一个 IP 地址下有多个域名时，它允许服务器能够使用正确的\[证书\](#def-leaf)回应请求。 Web 服务器可能会根据客户端用 SNI 指定的域名发送不同证书并且显示不同的内容。 SNI 没有被加密，但它的实验性的替代品 ESNI 是被加密的。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) {{% /def %}}
+{{% def id="SNI" name="服务器名称指示" english="Server Name Indication" abbr="SNI" abbr_first="1" %}} [用户代理](#def-user-agent)在 [TLS](#def-TLS) 握手过程中发送给[服务器](#def-web-server)的一个字段，表示其正在连接的域名。 如果一个 IP 地址有多个域名，服务器可以借助 SNI 提供合适的[证书](#def-leaf)。 例如，网页服务器可以根据客户端指定的 SNI 域名发送不同的证书并展示相应的内容。 SNI 没有加密，但其尚处实验阶段的替代品 ESNI 是加密的。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) {{% /def %}}
 
-{{% def id="SCT" name="签名证书时间戳" english="Signed Certificate Timestamp" abbr="SCT" %}} \[证书透明度日志\](#def-CT-log)提供的经过签名且可验证的对发布证书的承诺。 使用 \[CT\](#def-CT) 浏览器会在网站的证书或是 \[TLS\](#def-TLS) 握手消息中检查 SCT 是否存在，并拒绝连接到不符合其日志要求的网站。 这使得欺诈性的或错误的证书更容易被检测出来。  https://www.certificate-transparency.org/how-ct-works {{% /def %}}
+{{% def id="SCT" name="签名证书时间戳" english="Signed Certificate Timestamp" abbr="SCT" abbr_first="1" %}} 一种经过数字签名的、可验证的承诺，保证将证书发布至[证书透明化日志](#def-CT-log)系统。 严格遵循 [CT](#def-CT) 的浏览器会检查所有网站证书或 [TLS](#def-TLS) 握手过程中的 SCT 字段，如果不符合其日志要求则拒绝连接。 这使得欺诈性的或错误的证书更容易被检测出来。  https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
-{{% def id="SSL" name="安全套接字层" english="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} \[TLS\](#def-TLS) 以前的名字，仍旧很常用。  {{% /def %}}
+{{% def id="SSL" name="安全套接字层" english="Secure Sockets Layer" abbr="SSL" abbr_first="1" %}} [TLS](#def-TLS) 的原名，至今仍然很常用。  {{% /def %}}
 
-{{% def id="staging" name="测试" english="Staging" %}} \[Let's Encrypt\](#def-LE) 提供了用于在不会影响速率限制的前提下测试证书请求的测试 API。 由测试环境生成的证书是*不* 被信任的。 测试环境应仅用于测试、调试和 ACME 客户端开发的目的。 \[/docs/staging-environment\](/docs/staging-environment) {{% /def %}}
+{{% def id="staging" name="测试环境" english="Staging" %}} [Let's Encrypt](#def-LE) 提供的接口，可用于调试证书申请流程，避免触发速率限制。 测试环境中生成的证书是*不会*被广泛信任的， 因此测试环境只应在测试、调试和 ACME 客户端开发过程中使用。 \[/docs/staging-environment\](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} \[证书\](#def-leaf)中用于指定其对哪些域名有效的字段。 它代替了\[通用名称\](#def-CN)字段（后者现在仅因兼容性原因而提供）。 单个证书可能包含多个 SAN 以使其对多个不同域名生效。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中的一个字段，表明该证书对哪些域名有效。 这一功能原先由[通用名称](#def-CN)提供，但该字段已取而代之，通用名称的这一功能也只因兼容性得以保留。 一份证书可以包含多个 SAN，从而对多个域名有效。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
 
-{{% def id="subscriber" name="用户" english="Subscriber" %}} 请求证书的个人或组织。  {{% /def %}}
+{{% def id="subscriber" name="用户" english="Subscriber" %}} 申请证书的个人或组织。  {{% /def %}}
 
 {{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" %}} 分级域名系统中的最高等级，例如 `.de`（德国）、`.cn`（中国）一类的国家顶级域名（ccTLD）和 `.com`、`.org` 一类的通用顶级域名（gTLD）。 \[维基百科条目\](https://zh.wikipedia.org/wiki/%E9%A0%82%E7%B4%9A%E5%9F%9F) {{% /def %}}
 
