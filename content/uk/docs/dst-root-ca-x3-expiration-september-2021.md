@@ -3,10 +3,6 @@ title: Закінчення DST Root ЦС X3 (вересень 2021 року)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
 lastmod: 2021-05-07
-menu:
-  main:
-    weight: 30
-    parent: about
 show_lastmod: 1
 ---
 
