@@ -21,21 +21,34 @@
           <div class="grid-container">
             <h2 class="through-line"><a href="/blog/">{{ i18n "home_from_our_blog" }}</a></h2>
               <ul class="post-list">
-                {{ $enPosts := where .Sites.First.RegularPages "Type" "in" (slice "post") | first 5 }}
-                {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 5 | lang.Merge $enPosts }}
-                {{ range $posts }}
-                  <li>
-                    <span class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}</span>
-                    <h2>
-                      <a class="post-link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ .Title }}</a>
-                    </h2>
-                    {{ with .Params.excerpt }}
-                      {{ . | markdownify }}
-                    {{ else }}
-                      {{ .Summary }}
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ range site.Home.AllTranslations }}
+                  {{ range .Pages }}
+                    {{ range where .Pages "Type" "post" | first 5 }}
+                      <li>
+                        <span class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}</span>
+                        <h2>
+                          {{ if ne $currentLang "en" }}
+                            <a class="post-link" href="{{ .RelPermalink }}" hreflang="en" target="_blank">{{ .Title }}</a>
+                          {{ else }}
+                            <a class="post-link" href="{{ .RelPermalink }}" hreflang="en">{{ .Title }}</a>
+                          {{ end }}
+                        </h2>
+                        {{ with .Params.excerpt }}
+                          {{ . | markdownify }}
+                        {{ else }}
+                          {{ .Summary }}
+                        {{ end }}
+                        <p>
+                          {{ if ne $currentLang "en" }}
+                            <a href="{{ .RelPermalink }}" hreflang="en" target="_blank">{{ i18n "read_more" }}</a>
+                          {{ else }}
+                            <a href="{{ .RelPermalink }}" hreflang="en">{{ i18n "read_more" }}</a>
+                          {{ end }}
+                        </p>
+                      </li>
                     {{ end }}
-                    <p><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Params.languageCode }}">{{ i18n "read_more" }}</a></p>
-                  </li>
+                  {{ end }}
                 {{ end }}
               </ul>
               {{ with .OutputFormats.Get "RSS" -}}
