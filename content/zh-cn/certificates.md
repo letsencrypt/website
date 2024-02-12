@@ -94,9 +94,9 @@ IdenTrust 已对我们的 RSA 中间证书进行了交叉签名，以提高兼�
 
 我们较新的中间证书没有OCSP URLs(而是通过CRL提供吊销信息)，因此我们尚未从ISRG Root X2发行OCSP签名证书。
 
-# 证书透明度日志
+# 证书透明化
 
-我们努力对我们的运营及证书颁发过程保持透明。 我们在颁发证书时会将该证书发送到[证书透明度日志](https://www.certificate-transparency.org/)。 您可以通过以下链接查看所有 Let's Encrypt 颁发的证书：
+我们努力对我们的运营及证书颁发过程保持透明。 因此，我们颁发的所有证书都会录入[证书透明化日志](https://www.certificate-transparency.org/)系统中。 您可以通过以下链接查看所有 Let's Encrypt 颁发的证书：
 
 * [由 Let's Encrypt Authority X1 颁发的证书](https://crt.sh/?Identity=%25&iCAID=7395)
 * [由 Let's Encrypt Authority X3 颁发的证书](https://crt.sh/?Identity=%25&iCAID=16418)

@@ -24,11 +24,11 @@ show_lastmod: 1
 
 我们已支持通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
 
-## 证书透明度（CT）日志
+## 证书透明化日志
 
 * 启用时间：2019 年 5 月 15 日
 
-我们的[证书透明度日志](/docs/ct-logs)系统已开始运作。
+我们的[证书透明化日志](/docs/ct-logs)系统已开始运作。
 
 ## 支持 TLS ALPN 验证
 

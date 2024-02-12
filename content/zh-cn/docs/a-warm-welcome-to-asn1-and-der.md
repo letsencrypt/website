@@ -93,7 +93,7 @@ OBJECT IDENTIFIER
 
 Object identifier (OID) 是一种全球唯一的层状标识符，由一串整数组成。 它可以用来标识任何东西，但通常用于指代标准、算法、证书扩展、组织机构或政策文件。 例如 [1.2.840.113549](http://oid-info.com/get/1.2.840.113549) 表示的是 RSA 安全公司， 因此该公司有权分配以这一串数字开头的 OID，比如 [RFC 8017](https://tools.ietf.org/html/rfc8017#page-69) 定义的 [1.2.840.113549.1.1.11](http://oid-info.com/get/1.2.840.113549.1.1.11) 表示 sha256WithRSAEncryption。
 
-类似地，[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129) 指的是 Google 公司，Google 则在 [RFC 6962](https://tools.ietf.org/html/rfc6962) 中将 [1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) 分配给了证书透明度系统中的 [ SCT 列表扩展](https://letsencrypt.org/2018/04/04/sct-encoding.html)，因为该系统最初便是由 Google 研发的。
+类似地，[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129) 指的是 Google 公司，Google 则在 [RFC 6962](https://tools.ietf.org/html/rfc6962) 中将 [1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) 分配给了证书透明化系统中的 [SCT 列表扩展](https://letsencrypt.org/2018/04/04/sct-encoding.html)，因为该系统最初便是由 Google 研发的。
 
 同一前缀下的所有 OID 在英文中又称为 OID arc。 OID 越短，占据的空间就越小，价值也就越高，对于大量使用 OID 的格式尤为如此。 OID 前缀 [2.5](http://oid-info.com/get/2.5) 分配给了 Directory Services，指的是一系列的标准文档，在 HTTPS 证书中处于核心地位的 X.509 标准也位列其中。 证书中有很多字段用的都是这个简短的前缀。 例如，[2.5.4.6](http://oid-info.com/get/2.5.4.6) 表示国家名称（countryName），[2.5.4.10](http://oid-info.com/get/2.5.4.10) 则表示机构名称（organizationName）。 这些 OID 在绝大多数证书中至少都会出现一次，自然越短越好。
 

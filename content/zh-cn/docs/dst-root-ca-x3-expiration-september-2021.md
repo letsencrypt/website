@@ -3,6 +3,10 @@ title: DST Root CA X3 到期(2021年9月)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
 lastmod: 2021-09-30
+menu:
+  main:
+    weight: 30
+    parent: about
 show_lastmod: 1
 ---
 

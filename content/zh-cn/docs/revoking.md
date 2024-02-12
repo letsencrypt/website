@@ -65,7 +65,7 @@ certbot revoke --cert-path /PATH/TO/downloaded-cert.pem
 
 若要使用此方法，您将首先需要以PEM格式复制私钥。
 
-然后，如果您还没做，请下载要吊销的证书。 Let's Encrypt 将所有颁发的证书记录到[证书透明度](https://www.certificate-transparency.org/)日志中，所以您可以从日志监视器（例如 [crt.sh](https://crt.sh/)中查找并下载证书。 搜索匹配 `SubjectPublicKeyInfo` (SPKI) 字段将找到使用私钥的所有证书。 从私钥中提取SPKI哈希值：
+然后，如果您还没做，请下载要吊销的证书。 Let's Encrypt 颁发的所有证书都会录入[证书透明化](https://www.certificate-transparency.org/)日志，所以您可以在 [crt.sh](https://crt.sh/) 等日志监视系统中查找并下载证书。 搜索匹配 `SubjectPublicKeyInfo` (SPKI) 字段将找到使用私钥的所有证书。 从私钥中提取SPKI哈希值：
 ```bash
 openssl pkey -outform DER -in /PATH/TO/privkey.pem -pubout | openssl sha256
 ```

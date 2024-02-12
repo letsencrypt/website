@@ -40,9 +40,9 @@ show_lastmod: 1
 
 测试环境有两个活跃的根证书，它们**不在**浏览器/客户端的信任存储中:“(STAGING) Pretend Pear X1和"(STAGING) Bogus Brocoli X2"。 如果您想修改测试客户端以信任测试环境，您可以通过添加 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 和/或 ["(STAGING) Bogus Brocoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) 证书到您的测试证书信任列表。 您可以[在这](https://github.com/letsencrypt/website/tree/master/static/certs/staging)找到我们所有的测试证书。  请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
 
-# 证书透明度日志
+# 证书透明化
 
-测试环境将准证书提交给 Let's Encrypt 的测试用证书透明度日志[Sapling](/docs/ct-logs) 和Google 的测试用证书透明度日志[testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs)，并在颁发的证书中包含其返回的 SCT。
+测试环境中的准证书会录入 Let's Encrypt 的 [Sapling](/docs/ct-logs) 以及 Google 的 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 两套证书透明化日志测试系统，产生的 SCT 将包含在颁发的证书中。
 
 # 持续集成/开发测试
 
