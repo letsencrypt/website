@@ -53,6 +53,7 @@ Content-Security-Policy = """
         https://www.paypal.com
         https://isrg.formstack.com
         https://static.formstack.com
+        https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
@@ -63,7 +64,7 @@ Content-Security-Policy = """
         https://www.google.com
         https://cdn.shopify.com
         https://v.shopify.com
-        https://s3.amazonaws.com/files.formstack.com
+        https://s3.amazonaws.com/files.formstack.com/*
     ;
     frame-src
         https://donorbox.org
@@ -80,6 +81,7 @@ Content-Security-Policy = """
         https://letsencrypt-merch.myshopify.com
         https://monorail-edge.shopifysvc.com
         https://www.paypal.com
+        https://isrg.formstack.com
     ;
 """
 
