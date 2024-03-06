@@ -49,6 +49,7 @@ Content-Security-Policy = """
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
+        https://isrg.formstack.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
