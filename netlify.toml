@@ -56,6 +56,7 @@ Content-Security-Policy = """
         https://isrg.formstack.com
         https://static.formstack.com
         https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
+        https://js.stripe.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
