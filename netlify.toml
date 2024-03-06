@@ -39,7 +39,9 @@ Permissions-Policy = """
 Content-Security-Policy = """
     default-src 'none';
     font-src 'self';
-    style-src 'unsafe-inline' 'self';
+    style-src 'unsafe-inline' 'self' data:
+        https://isrg.formstack.com
+    ;
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
@@ -50,6 +52,7 @@ Content-Security-Policy = """
         https://sdks.shopifycdn.com
         https://www.paypal.com
         https://isrg.formstack.com
+        https://static.formstack.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
@@ -60,6 +63,7 @@ Content-Security-Policy = """
         https://www.google.com
         https://cdn.shopify.com
         https://v.shopify.com
+        https://s3.amazonaws.com/files.formstack.com
     ;
     frame-src
         https://donorbox.org
