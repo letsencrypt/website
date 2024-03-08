@@ -3,7 +3,7 @@ title: Contact
 slug: contact
 description: Comment nous contacter
 top_graphic: 1
-lastmod: 2021-08-31
+lastmod: 2023-09-26
 menu:
   main:
     weight: 90
@@ -20,9 +20,13 @@ Courriel : [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 Courriel : [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## Liste de diffusion
+## Abonnez-vous à notre newsletter
 
-Pour vous inscrire à notre newsletter, [cliquez ici.](https://mailchi.mp/letsencrypt.org/fjp6ha1gad)
+<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+
+## Confidentialité
+
+Courriel : [ privacy@abetterinternet.org ](mailto:privacy@abetterinternet.org)
 
 ## Sécurité
 

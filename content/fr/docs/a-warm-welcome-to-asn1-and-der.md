@@ -244,7 +244,7 @@ table {
 
 | Tag (décimal) |      Tag (hex) | Type                    |
 | -------------:| --------------:| ----------------------- |
-|             2 |             02 | INTEGER                 |
+|             2 |             02 | ENTIER                  |
 |             3 |             03 | BIT STRING              |
 |             4 |             04 | OCTET STRING            |
 |             5 |             05 | NULL                    |
