@@ -71,3 +71,28 @@
 }
 
 .pt-2 { padding-top: .5rem !important; }
+
+
+/* For formstack March 2024 form */
+#donate_form_container {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+
+}
+#donate_form_container .fsSectionHeader {
+  display: none;
+}
+
+#donate_form_container .fsBody {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#donate_form_container form {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
