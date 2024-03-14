@@ -39,7 +39,7 @@
                         {{ else }}
                           {{ .Summary }}
                         {{ end }}
-                        <p>
+                        <p class="post-excerpt">
                           {{ if ne $currentLang "en" }}
                             <a href="{{ .RelPermalink }}" hreflang="en" target="_blank">{{ i18n "read_more" }}</a>
                           {{ else }}
