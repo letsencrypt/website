@@ -1,9 +1,10 @@
 ---
 author: Matthew McPherrin & Filippo Valsorda
-date: 2024-03-15T00:00:00Z
+date: 2024-03-14T00:00:00Z
 slug: introducing-sunlight
 title: "Introducing Sunlight, a CT implementation built for scalability, ease of operation, and reduced cost"
 excerpt: "New software, specification, and logs for Certificate Transparency."
+lastmod: 2024-03-15
 ---
 
 <div class="card border-0 pic-quote-right">
