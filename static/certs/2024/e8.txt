@@ -1,0 +1,54 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            7e:8f:14:5f:87:b1:59:33:2d:7f:d4:08:2b:82:6b:69
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = Internet Security Research Group, CN = ISRG Root X2
+        Validity
+            Not Before: Mar 13 00:00:00 2024 GMT
+            Not After : Mar 12 23:59:59 2027 GMT
+        Subject: C = US, O = Let's Encrypt, CN = E8
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:d1:65:f2:5e:dc:4b:b4:0c:02:9c:d2:b2:fa:ee:
+                    e9:6c:ab:3a:ae:38:a1:f4:d4:39:32:33:c5:42:d4:
+                    cc:33:0c:34:c7:21:20:90:70:5c:e8:62:2f:1c:71:
+                    b3:42:d7:79:be:46:0d:c1:db:47:a1:13:a0:c7:df:
+                    81:26:63:3b:d4:8d:1d:f6:3d:82:33:32:f6:f4:2b:
+                    e7:f5:96:3a:b4:13:67:18:7b:6b:3e:8d:48:d9:ea:
+                    de:ed:ae:6d:3e:87:4c
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                8F:0D:13:A2:F6:2E:7E:D1:50:6C:33:18:38:5D:59:8E:23:72:91:CA
+            X509v3 Authority Key Identifier: 
+                keyid:7C:42:96:AE:DE:4B:48:3B:FA:92:F8:9E:8C:CF:6D:8B:A9:72:37:95
+
+            Authority Information Access: 
+                CA Issuers - URI:http://x2.i.lencr.org/
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://x2.c.lencr.org/
+
+    Signature Algorithm: ecdsa-with-SHA384
+         30:65:02:31:00:a5:b1:43:49:75:7d:fa:18:4f:a8:db:20:df:
+         ec:bd:36:9b:73:f7:12:55:56:44:b9:6c:e5:9c:8b:60:f8:dc:
+         35:a9:81:c5:10:7d:81:96:28:8f:6e:26:19:9b:4f:dc:69:02:
+         30:04:99:70:02:e0:ea:4a:52:72:89:aa:20:88:d5:1d:74:54:
+         43:9d:34:71:d9:78:e2:7e:df:87:1c:28:90:ba:3f:95:59:4e:
+         f1:8c:87:c0:08:bb:7a:34:c7:b6:fc:3d:56
