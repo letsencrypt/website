@@ -1,5 +1,5 @@
 {
-	"lastmod": "2023-07-22",
+	"lastmod": "2024-03-18",
 	"categories": [
 		"Bash",
 		"C",
@@ -1041,7 +1041,7 @@
 			"url": "https://github.com/WolfWings/wdfcert.sh",
 			"acme_v2": "true",
 			"category": "Bash",
-			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus roor domain support for single-TXT-record DNS providers)",
+			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus root domain support for single-TXT-record DNS providers)",
 			"library": "Perl",
 			"challenges": {
 				"HTTP-01": "false",
