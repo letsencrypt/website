@@ -62,16 +62,16 @@ IdenTrust has cross-signed our RSA intermediates for additional compatibility.
   * Let's Encrypt E5 (`ECDSA P-384, O = Let's Encrypt, CN = E5`)
     * Signed by ISRG Root X2: [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
-  * Let's Encrypt E6 (`ECDSA P-384, O = Let's Encrypt, CN = e6`)
+  * Let's Encrypt E6 (`ECDSA P-384, O = Let's Encrypt, CN = E6`)
     * Signed by ISRG Root X2: [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
-  * Let's Encrypt E7 (`ECDSA P-384, O = Let's Encrypt, CN = e7`)
+  * Let's Encrypt E7 (`ECDSA P-384, O = Let's Encrypt, CN = E7`)
     * Signed by ISRG Root X2: [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
-  * Let's Encrypt E8 (`ECDSA P-384, O = Let's Encrypt, CN = e8`)
+  * Let's Encrypt E8 (`ECDSA P-384, O = Let's Encrypt, CN = E8`)
     * Signed by ISRG Root X2: [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
-  * Let's Encrypt E9 (`ECDSA P-384, O = Let's Encrypt, CN = e9`)
+  * Let's Encrypt E9 (`ECDSA P-384, O = Let's Encrypt, CN = E9`)
     * Signed by ISRG Root X2: [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
     * Cross-signed by ISRG Root X1: [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
   * Let's Encrypt R10 (`RSA 2048, O = Let's Encrypt, CN = R10`)
@@ -149,7 +149,7 @@ included here for informational purposes only.
 
 * ISRG Root OCSP X1 ([Signed by ISRG Root X1](https://crt.sh/?id=2929281974)): [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
 
-Our newer intermediates do not have OCSP URLs (their revocation information is 
+Our newer intermediates do not have OCSP URLs (their revocation information is
 instead served via CRL), so we have not issued an OCSP Signing Cert from ISRG Root X2.
 
 # Certificate Transparency
