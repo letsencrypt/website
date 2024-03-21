@@ -1,5 +1,5 @@
 {
-	"lastmod": "2023-07-22",
+	"lastmod": "2024-01-07",
 	"categories": [
 		"Bash",
 		"C",
@@ -121,6 +121,10 @@
 		{
 			"name": "ruxy",
 			"url": "https://ruxyserver.com"
+		},
+		{
+			"name": "Stalwart Mail Server",
+			"url": "https://stalw.art"
 		},
 		{
 			"name": "SWAG - Secure Web Application Gateway",
