@@ -4,6 +4,7 @@ date: 2024-03-14T00:00:00Z
 slug: introducing-sunlight
 title: "Introducing Sunlight, a CT implementation built for scalability, ease of operation, and reduced cost"
 excerpt: "New software, specification, and logs for Certificate Transparency."
+lastmod: 2024-03-15
 ---
 
 <div class="card border-0 pic-quote-right">
@@ -38,14 +39,14 @@ Unlike the dynamic endpoints in previous CT APIs, serving a tree as tiles doesn'
 
 The idea of exposing the log as a series of static tiles is motivated by our desire to scale out the read path horizontally and relatively inexpensively. We can directly expose tiles in cloud object storage like S3, use a caching CDN, or use a webserver and a filesystem.
 
-Object or file storage is readily available, can scale up easily, and costs significantly less than databases from cloud providers. It seemed like the obvious path forward. In fact, we already have an S3-backed cache in front of our existing CT logs, which means we are currently storing our data twice.
+Object or file storage is readily available, can scale up easily, and costs significantly less than databases from cloud providers. It seemed like the obvious path forward. In fact, [we already have an S3-backed cache](https://github.com/letsencrypt/ctile) in front of our existing CT logs, which means we are currently storing our data twice.
 
 Running More Logs
 -----------------
 
 The tiles API improves the read path, but we also wanted to simplify our architecture on the write path. With Trillian, we run a collection of nodes along with etcd for leader election to choose which will handle writing. This is somewhat complex, and we believe the CT ecosystem allows a different tradeoff.
 
-The key realization is that Certificate Transparency is already a distributed system, with clients submitting certificates to multiple logs, and gracefully failing over from any unavailable ones to the others. Each individual log's write path doesn't require a highly available leader election system. A simple single-node writer can meet the 99% Service Level Objective of a CT log.
+The key realization is that Certificate Transparency is already a distributed system, with clients submitting certificates to multiple logs, and gracefully failing over from any unavailable ones to the others. Each individual log's write path doesn't require a highly available leader election system. A simple single-node writer can meet the 99% Service Level Objective required by [CT log](https://googlechrome.github.io/CertificateTransparency/log_policy.html) [programs](https://support.apple.com/en-us/103703).
 
 The single-node Sunlight architecture lets us run multiple independent logs with the same amount of computing power. This increases the system's overall robustness, even if each individual log has lower potential uptime. No more leader election needed. We use a simple compare-and-swap mechanism to store checkpoints and prevent accidentally running two instances at once, which could result in a forked tree, but that has much less overhead than leader election.
 
