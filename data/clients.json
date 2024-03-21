@@ -235,6 +235,18 @@
 			"acme_v2": "true",
 			"category": "Docker"
 		},
+	        {
+			"name": "docker-nginx",
+			"url": "https://hub.docker.com/r/xiaojun207/nginx",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+	        {
+			"name": "docker-openresty",
+			"url": "https://hub.docker.com/r/xiaojun207/openresty",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
 		{
 			"name": "Caddy",
 			"url": "https://caddyserver.com",
