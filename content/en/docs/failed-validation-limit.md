@@ -2,7 +2,7 @@
 title: Failed Validation Limit
 slug: failed-validation-limit
 top_graphic: 1
-lastmod: 2022-06-30
+lastmod: 2024-03-22
 show_lastmod: false
 ---
 
@@ -27,9 +27,9 @@ validate have failed.
 Subscribers who hit the Failed Validation limit often do so due to a
 misconfiguration in their environment.
 
-## HTTP-01 or TLS-APLN-01
+## HTTP-01 or TLS-ALPN-01
 
-For ACME clients requesting authorization via the HTTP-01 or TLS-APLN-01
+For ACME clients requesting authorization via the HTTP-01 or TLS-ALPN-01
 validation methods, the problem usually stems from a network or firewall
 configuration which makes it impossible for our validation servers to reach the
 server that the request was sent from.
