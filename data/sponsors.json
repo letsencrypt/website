@@ -52,6 +52,7 @@
       "image": "shopify-logo.png"
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
+    { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.svg" },
     { "name": "Squarespace", "url": "https://www.squarespace.com/", "image": "squarespace-logo.png" }
   ],
   "silver": [

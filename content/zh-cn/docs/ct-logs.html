@@ -76,6 +76,17 @@ CT 日志在其生命期内所经历的各种状态可在<a href="https://google
 <li>
   其他证书颁发机构也可以使用 Sapling 进行测试。
 </li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  Let's Encrypt 正在测试基于 <a href="https://sunlight.dev">Sunlight</a> 运作的日志系统。
+</li>
+<li>
+  公开可信的证书<b>不应</b>含有此日志系统的 SCT。
+</li>
+<li>Twig 将继续作为测试日志，所接受的 CA 与 Sapling 相同。
+</li>
+<li>Willow 与 Sycamore 所接受的 CA 与 Oak 相同，最终计划作为生产环境日志。
+</li>
 {{< /ct_logs >}}
 <br />
 <h2>日志操作</h2>

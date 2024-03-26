@@ -79,6 +79,17 @@ Oplysninger om de forskellige livscyklusser tilstande, som en CT log går gennem
 <li>
   Sapling kan bruges af andre certifikatmyndigheder til testformål.
 </li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  Let's Encrypt tester kørende logs baseret på <a href="https://sunlight.dev">Sunlight</a>.
+</li>
+<li>
+  SCT'er fra disse logs <b>MÅ IKKE</b> indgå i offentligt betroede certifikater.
+</li>
+<li>Twig vil forblive en test-log, og accepterer de samme CA'er som Sapling.
+</li>
+<li>Willow og Sycamore accepterer det samme som Oak, og forventes at blive produktionslogs.
+</li>
 {{< /ct_logs >}}
 <br />
 <h2>Log Handlinger</h2>

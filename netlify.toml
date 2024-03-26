@@ -38,8 +38,15 @@ Permissions-Policy = """
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
-    font-src 'self';
-    style-src 'unsafe-inline' 'self';
+    font-src 'self' data:
+        https://fonts.gstatic.com
+        https://static.formstack.com
+    ;
+    style-src 'unsafe-inline' 'self' data:
+        https://isrg.formstack.com
+        https://static.formstack.com
+        https://fonts.googleapis.com
+    ;
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
@@ -49,6 +56,10 @@ Content-Security-Policy = """
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
+        https://isrg.formstack.com
+        https://static.formstack.com
+        https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
+        https://js.stripe.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
@@ -59,6 +70,7 @@ Content-Security-Policy = """
         https://www.google.com
         https://cdn.shopify.com
         https://v.shopify.com
+        https://s3.amazonaws.com
     ;
     frame-src
         https://donorbox.org
@@ -75,6 +87,7 @@ Content-Security-Policy = """
         https://letsencrypt-merch.myshopify.com
         https://monorail-edge.shopifysvc.com
         https://www.paypal.com
+        https://isrg.formstack.com
     ;
 """
 
