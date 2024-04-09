@@ -3,7 +3,7 @@ title: Vertrauenskette
 linkTitle: Vertrauenskette (Root- und Intermediate-Zertifikate)
 slug: certificates
 top_graphic: 5
-lastmod: 2021-10-02
+lastmod: 2024-03-15
 show_lastmod: 1
 ---
 
@@ -45,16 +45,42 @@ IdenTrust hat unsere RSA-Zwischenzertifikate für zusätzliche Kompatibilität q
 * Aktiv
   * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
     * [Signiert durch ISRG Root X1](https://crt.sh/?id=3334561879): [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
-    * [Quersigniert durch IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt))
+    * [Quersigniert durch IdenTrust](https://crt.sh/?id=3479778542): [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (Außer Betrieb)
 * Aktiv, begrenzte Verfügbarkeit
   * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`)
     * [Signiert durch ISRG Root X2](https://crt.sh/?id=3334671964): [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
 * Reserviert für Disaster-Recovery
   * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`)
     * [Signiert durch ISRG Root X1](https://crt.sh/?id=3334561877): [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
-    * [Quersigniert durch IdenTrust](https://crt.sh/?id=3479778543): [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt))
+    * [Quersigniert durch IdenTrust](https://crt.sh/?id=3479778543): [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt) (Außer Betrieb)
   * Let's Encrypt E2 (`ECDSA P-384, O = Let's Encrypt, CN = E2`)
     * [Signiert durch ISRG Root X2](https://crt.sh/?id=3334671963): [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+* Ausstehend
+  * Let's Encrypt E5 (`ECDSA P-384, O = Let's Encrypt, CN = E5`)
+    * Signed by ISRG Root X2: [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
+    * Cross-signed by ISRG Root X1: [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+  * Let's Encrypt E6 (`ECDSA P-384, O = Let's Encrypt, CN = E6`)
+    * Signed by ISRG Root X2: [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+    * Cross-signed by ISRG Root X1: [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
+  * Let's Encrypt E7 (`ECDSA P-384, O = Let's Encrypt, CN = E7`)
+    * Signed by ISRG Root X2: [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
+    * Cross-signed by ISRG Root X1: [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
+  * Let's Encrypt E8 (`ECDSA P-384, O = Let's Encrypt, CN = E8`)
+    * Signed by ISRG Root X2: [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
+    * Cross-signed by ISRG Root X1: [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
+  * Let's Encrypt E9 (`ECDSA P-384, O = Let's Encrypt, CN = E9`)
+    * Signed by ISRG Root X2: [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+    * Cross-signed by ISRG Root X1: [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
+  * Let's Encrypt R10 (`RSA 2048, O = Let's Encrypt, CN = R10`)
+    * Signed by ISRG Root X1: [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+  * Let's Encrypt R11 (`RSA 2048, O = Let's Encrypt, CN = R11`)
+    * Signed by ISRG Root X1: [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
+  * Let's Encrypt R12 (`RSA 2048, O = Let's Encrypt, CN = R12`)
+    * Signed by ISRG Root X1: [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
+  * Let's Encrypt R13 (`RSA 2048, O = Let's Encrypt, CN = R13`)
+    * Signed by ISRG Root X1: [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+  * Let's Encrypt R14 (`RSA 2048, O = Let's Encrypt, CN = R14`)
+    * Signed by ISRG Root X1: [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)     
 * Außer Betrieb
   * Let's Encrypt Authority X1 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X1`)
     * [Signiert durch ISRG Root X1](https://crt.sh/?id=9314792): [der](/certs/letsencryptauthorityx1.der), [pem](/certs/letsencryptauthorityx1.pem), [txt](/certs/letsencryptauthorityx1.txt)
@@ -68,7 +94,7 @@ IdenTrust hat unsere RSA-Zwischenzertifikate für zusätzliche Kompatibilität q
   * Let's Encrypt Authority X4 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X4`)
     * [Signiert durch ISRG Root X1](https://crt.sh/?id=47997546): [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
     * [Quersigniert durch IdenTrust](https://crt.sh/?id=15710291): [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
-
+    
 # Quersignaturen (Cross-Signaturen)
 
 ## Intermediates
