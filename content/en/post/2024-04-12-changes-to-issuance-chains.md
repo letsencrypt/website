@@ -1,6 +1,6 @@
 ---
 author: Kruti Sutaria
-date: 2024-04-11T00:00:00Z
+date: 2024-04-12T00:00:00Z
 slug: changes-to-issuance-chains
 title: "Deploying Let's Encrypt's New Issuance Chains"
 excerpt: "Using our new RSA & ECDSA intermediates to sign certificates starting June 6th."
