@@ -33,6 +33,19 @@ The best option: Generate your own certificate, either self-signed or signed by
 a local root, and trust it in your operating system's trust store. Then use that
 certificate in your local web server. See below for details.
 
+## You can use a dynamic DNS domain
+
+There are a plenty of free Dynamic DNS domains services, such as [freemyip.com](https://www.freemyip.com), that you able to use for your local development in https.
+
+1. Register a free domain, for example, mydomain.freemyip.com,
+2. Update it with your current public IP address
+3. Make sure that your LAN's default gateway has a port 80 forwarding to your local development machine
+4. Make sure that your local web server works properly
+5. In your local server configuration's either the default website or any other virtual host add the new registered, `mydomain.freemyip.com`, free dynamic dns domain as a site name or as an alias, then restart your server
+6. Run the Let's Encrypt script to get the certifications, you should see the registered domain listed. choose its number and complete the process.
+7. In your OS `hosts` file add the following entry: 127.0.0.1 mydomain.freemyip.com
+8. That's all, now, you are able to access your local development server via HTTPs
+
 # For native apps talking to web apps
 
 Sometimes developers want to offer a downloadable native app that can be
