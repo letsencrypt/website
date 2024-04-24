@@ -28,14 +28,14 @@ In Lego, we added a 'renewalInfo' field to the Directory struct, which is access
 
 ```
 type Directory struct {
-  NewNonceURL string `json:"newNonce"`
-  NewAccountURL string `json:"newAccount"`
-  NewOrderURL string `json:"newOrder"`
-  NewAuthzURL string `json:"newAuthz"`
-  RevokeCertURL string `json:"revokeCert"`
-  KeyChangeURL string `json:"keyChange"`
-  Meta Meta `json:"meta"`
-  RenewalInfo string `json:"renewalInfo"`
+    NewNonceURL    string `json:"newNonce"`
+    NewAccountURL  string `json:"newAccount"`
+    NewOrderURL    string `json:"newOrder"`
+    NewAuthzURL    string `json:"newAuthz"`
+    RevokeCertURL  string `json:"revokeCert"`
+    KeyChangeURL   string `json:"keyChange"`
+    Meta           Meta   `json:"meta"`
+    RenewalInfo    string `json:"renewalInfo"`
 }
 ```
 
