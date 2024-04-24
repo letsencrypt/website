@@ -18,7 +18,7 @@ In May 2023, we contributed a [pull request](https://github.com/go-acme/lego/pul
 
 *Note:* the code snippets in this post are written in Golang. We've structured and contextualized them for clarity, so that they might be easily adapted to other programming languages as well.
 
-### Step 1: Detecting support for ARI
+### **Step 1**: Detecting support for ARI
 
 While Let's Encrypt first enabled ARI in [Staging](https://letsencrypt.org/docs/staging-environment/) and Production environments in March 2023, many ACME clients are used with a variety of CAs, so it's crucial to ascertain if a CA supports ARI. This can be easily determined: if a 'renewalInfo' endpoint is included in the CA's directory object, then the CA supports ARI.
 
@@ -49,13 +49,13 @@ func (c *CertificateService) GetRenewalInfo(certID string) (*http.Response, erro
 }
 ```
 
-### Step 2: Determining where ARI fits into the renewal lifecycle of your client
+### **Step 2**: Determining where ARI fits into the renewal lifecycle of your client
 
 The next step involves selecting the optimal place in the client's workflow to integrate ARI support. ACME clients can either run persistently or be executed on-demand. ARI is particularly beneficial for clients that operate persistently or for on-demand clients that are scheduled to run at least daily.
 
 In the case of Lego, it falls into the latter category. Its renew command is executed on-demand, typically through a job scheduler like cron. Therefore, incorporating ARI support into the renew command was the logical choice. Like many ACME clients, Lego already has a mechanism to decide when to renew certificates, based on the certificate's remaining validity period and the user's configured renewal timeframe. Introducing calls to ARI should take precedence over this mechanism, leading to a modification of the renew command to consult ARI before resorting to the built-in logic.
 
-### Step 3: Constructing the ARI CertID
+### **Step 3**: Constructing the ARI CertID
 
 The composition of the ARI CertID is a crucial part of the ARI specification. This identifier, unique to each certificate, is derived by combining the base64url encoded bytes of the certificate's Authority Key Identifier (AKI) extension and its Serial Number, separated by a period. The approach of combining AKI and serial number is strategic: the AKI is specific to an issuing intermediate certificate, and a CA may have multiple intermediates. A certificate's serial number is required to be unique per issuing intermediate, but serials can be reused between intermediates. Thus the combination of AKI and serial uniquely identifies a certificate. With this covered, let's move on to constructing an ARI CertID using only the contents of the certificate being replaced.
 
@@ -100,7 +100,7 @@ func MakeARICertID(leaf *x509.Certificate) (string, error) {
 
 Note: In the provided code, we utilize the RawURLEncoding, which is the unpadded base64 encoding as defined in [RFC 4648](https://datatracker.ietf.org/doc/html/rfc4648#section-5). This encoding is similar to URLEncoding but excludes padding characters, such as "=". Should your programming language's base64 package only support URLEncoding, it will be necessary to remove any trailing padding characters from the encoded strings before combining them.
 
-### Step 4: Requesting a suggested renewal window
+### **Step 4**: Requesting a suggested renewal window
 
 With the ARI CertID in hand, we can now request renewal information from the CA. This is done by sending a GET request to the 'renewalInfo' endpoint, including the ARI CertID in the URL path.
 
@@ -124,7 +124,7 @@ The 'explanationURL' is optional. However, if it's provided, it's recommended to
 
 Next, we'll cover how to use the 'suggestedWindow' to determine the best time to renew the certificate.
 
-### Step 5: Selecting a specific renewal time
+### **Step 5**: Selecting a specific renewal time
 
 [draft-ietf-acme-ari](https://datatracker.ietf.org/doc/draft-ietf-acme-ari/) provides a suggested algorithm for determining when to renew a certificate. This algorithm is not mandatory, but it is recommended.
 
@@ -173,7 +173,7 @@ func (r *RenewalInfoResponse) ShouldRenewAt(now time.Time, willingToSleep time.D
 }
 ```
 
-### Step 6: Indicating which certificate is replaced by this new order
+### **Step 6**: Indicating which certificate is replaced by this new order
 
 To signal that a renewal was suggested by ARI, a new 'replaces' field has been added to the ACME Order object. The ACME client should populate this field when creating a new order, as shown in the following example:
 ```
