@@ -1,6 +1,6 @@
 ---
 author: Samantha Frank
-date: 2024-04-24T00:00:00Z
+date: 2024-04-25T00:00:00Z
 slug: guide-to-integrating-ari-into-existing-acme-clients
 title: "An Engineer’s Guide to Integrating ARI into Existing ACME Clients"
 excerpt: "Six steps developers can take to integrate ARI into an existing ACME client."
