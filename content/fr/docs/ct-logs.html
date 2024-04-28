@@ -2,7 +2,7 @@
 title: Journaux de transparence des certificats (TC)
 slug: ct-logs
 top_graphic: 4
-lastmod: 2022-06-17
+lastmod: 2023-09-25
 show_lastmod: 1
 ---
 
@@ -33,16 +33,9 @@ contribuer à nos journaux. De nombreux certificats racine d'autorité de certif
 <h2>Financement</h2>
 
 <p>
-  Nous tenons à remercier les partenaires suivants qui ont généreusement sponsorisé le journal Let's
-  Encrypt CT. Si votre organisation souhaite nous aider à poursuivre ce travail,
+  Si votre organisation souhaite nous aider à poursuivre ce travail,
   nous vous invitons à envisager un
   <a href="https://www.abetterinternet.org/sponsor/">parrainage ou un don</a>.
-</p>
-
-<p class="text-center">
-  <a href="https://sectigo.com/"
-    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
-  /></a>
 </p>
 
 <h2>Architecture</h2>
@@ -64,7 +57,7 @@ contribuer à nos journaux. De nombreux certificats racine d'autorité de certif
 
 <h2>Journaux TC</h2>
 <p>
-Des informations sur les différents états du cycle de vie par lesquels progresse un journal CT peuvent être trouvées <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">ici</a>.
+Des informations sur les différents états du cycle de vie d'un journal de CT peuvent être trouvées <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">ici</a>.
 </p>
 
 {{< ct_logs data="production" >}}
@@ -97,6 +90,17 @@ Des informations sur les différents états du cycle de vie par lesquels progres
 </li>
 <li>
   Sapling peut être utilisé par d'autres autorités de certification à des fins de test.
+</li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  Let's Encrypt teste des journaux d'exécution basés sur <a href="https://sunlight.dev">Sunlight</a>.
+</li>
+<li>
+  Les SCT de ces journaux <b>NE DOIVENT PAS</b> être incorporés dans des certificats de confiance publics.
+</li>
+<li>Twig restera un journal de test, et accepte les mêmes AC que Sapling.
+</li>
+<li>Willow et Sycamore acceptent la même chose que Oak et sont destinés à devenir des logs de production.
 </li>
 {{< /ct_logs >}}
 <br />

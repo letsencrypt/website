@@ -1,10 +1,17 @@
 ---
-title: Merci pour votre don à l'ISRG
+title: Merci
 slug: thankyou
 top_graphic: 2
-date: 2018-04-12
+date: 2022-12-02
 ---
 
-Nous vous remercions de soutenir un Web plus sûr et plus respectueux de la vie privée pour tous. Suivez-nous sur [Twitter @letsencrypt](https://twitter.com/letsencrypt) pour rester informé de nos progrès.
-
-Votre transaction est terminée, et un reçu vous a été envoyé par e-mail. Vous pouvez vous connecter à votre compte [www.paypal.com/fr](https://www.paypal.com/fr) pour consulter les détails de cette transaction.
+  <div class="container">
+    <p><strong>Merci pour votre don</strong></p>
+    <p>Au nom de toute l'équipe de l'ISRG, nous vous remercions pour votre contribution au soutien de notre travail.</p>
+    <p>Un reçu de don a été envoyé à l'adresse électronique que vous avez fournie. Le Groupe de recherche sur la sécurité Internet est une organisation d'utilité publique à but non lucratif de type 501(c)(3). Notre EIN est le : 46-3344200.</p>
+    <p class="pt-2"><strong>Doublez votre don</strong></p>
+    <p>De nombreuses entreprises doublent les dons faits par leurs employés à des organisations à but non lucratif. Vérifiez si votre organisation dispose d'un programme de jumelage et doublez votre impact !</p>
+    <div class="pt-2">
+      {{< double_donation >}}
+    </div>
+  </div>

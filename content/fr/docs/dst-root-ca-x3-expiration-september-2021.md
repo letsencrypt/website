@@ -2,10 +2,15 @@
 title: Expiration de l'AC racine X3 de DST (septembre 2021)
 slug: dst-root-ca-x3-expiration-september-2021
 top_graphic: 1
-lastmod: 2021-05-07
+lastmod: 2021-09-30
+menu:
+  main:
+    weight: 30
+    parent: about
 show_lastmod: 1
 ---
 
+> **Mise à jour le 30 septembre 2021** Comme prévu, la signature croisée de l'autorité de certification racine X3 de DST a expiré, et nous utilisons désormais notre propre autorité de certification racine X1 de l'ISRG pour la confiance sur presque tous les appareils. Pour plus de détails sur le plan, lisez la suite ! Nous avons également mis à jour notre fil de discussion sur les changements dans la chaîne de production sur notre forum communautaire - [notre équipe et notre communauté sont là et prêtes à vous aider](https://community.letsencrypt.org/t/production-chain-changes/150739/4) pour toutes les questions que vous pourriez avoir à propos de cette expiration.
 
 Le 30 septembre 2021, il y aura un petit changement dans la façon dont les navigateurs et les appareils plus anciens font confiance aux certificats de Let's Encrypt. Si vous gérez un site Web classique, vous ne remarquerez aucune différence : la grande majorité de vos visiteurs accepteront toujours votre certificat Let's Encrypt. Si vous fournissez une API ou devez prendre en charge des appareils IoT, vous devrez peut-être prêter un peu plus attention à ce changement.
 

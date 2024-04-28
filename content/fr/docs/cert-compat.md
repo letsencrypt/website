@@ -2,12 +2,12 @@
 title: Compatibilité du certificat
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2021-10-31
+lastmod: 2023-08-02
 show_lastmod: 1
 ---
 
 
-Le facteur déterminant pour savoir si une plateforme peut valider les certificats Let's Encrypt est de savoir si cette plateforme fait confiance au certificat "ISRG Root X1" de l'ISRG. Avant septembre 2021, certaines plateformes pouvaient valider nos certificats bien que ceux-ci n'incluent pas ISRG Root X1, car elles faisaient confiance au certificat "DST Root CA X3" de IdenTrust. À partir d'octobre 2021, seules les plateformes qui font confiance à ISRG Root X1 valideront les certificats Let's Encrypt ([ à l'exception d'Android ](/2020/12/21/extending-android-compatibility.html)).
+Le facteur déterminant pour savoir si une plateforme peut valider les certificats Let's Encrypt est de savoir si cette plateforme fait confiance au certificat "ISRG Root X1" de l'ISRG. Avant septembre 2021, certaines plateformes pouvaient valider nos certificats bien que ceux-ci n'incluent pas ISRG Root X1, car elles faisaient confiance au certificat "DST Root CA X3" de IdenTrust. À partir d'octobre 2021, seules les plateformes qui font confiance à ISRG Root X1 valideront les certificats Let's Encrypt ([ à l'exception d'Android ][android-compat]).
 
 Si votre certificat est validé sur certaines des plates-formes "compatibles connues" mais pas sur d'autres, le problème peut provenir d'une mauvaise configuration du serveur web. Si vous avez un problème avec les plateformes modernes, la cause la plus fréquente est l'incapacité à fournir la chaîne de certificats correcte. Testez votre site avec le [serveur de test de SSL Labs](https://www.ssllabs.com/ssltest/). Si cela ne permet pas d'identifier le problème, demandez de l'aide dans nos [forums communautaires](https://community.letsencrypt.org/).
 
@@ -25,7 +25,7 @@ Si votre certificat est validé sur certaines des plates-formes "compatibles con
 * [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
 * [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
 
-Les navigateurs (Chrome, Safari, Edge, Opera) font généralement confiance aux mêmes certificats racine que le système d'exploitation sur lequel ils fonctionnent. Firefox est l'exception : il a son propre magasin racine. Bientôt, les nouvelles versions de Chrome [auront également leur propre magasin racine](https://www.chromium.org/Home/chromium-security/root-ca-policy).
+Les navigateurs (Chrome, Safari, Edge, Opera) font généralement confiance aux mêmes certificats racine que le système d'exploitation sur lequel ils fonctionnent. Firefox est l'exception : il a son propre magasin racine. Bientôt, les nouvelles versions de Chrome [auront également leur propre magasin racine][chrome-root-store].
 
 # Plateformes qui font confiance à l'AC Root DST X3 mais pas à l'ISRG Root X1
 
@@ -62,4 +62,14 @@ Ces plateformes ont fonctionné jusqu'en septembre 2021, mais ne valideront plus
 
 # ISRG Root X2 (nouvelle racine ECDSA) - bientôt disponible
 
-Nous avons soumis ISRG Root X2 aux programmes root de Microsoft, Apple, Google, Mozilla et Oracle pour inclusion. ISRG Root X2 jouit déjà d'une grande confiance grâce à la signature croisée de notre ISRG Root X1. Pour plus d'informations, consultez notre [message sur le forum de la communauté](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+Nous avons soumis ISRG Root X2 aux programmes root de Microsoft, Apple, Google, Mozilla et Oracle pour inclusion.
+
+ISRG Root X2 jouit déjà d'une grande confiance grâce à la signature croisée de notre ISRG Root X1. En outre, plusieurs programmes racine ont déjà ajouté l'ISRG Root X2 en tant que chaîne de confiance.
+
+Pour plus d'informations sur le statut d'inclusion, consultez notre [post sur le forum communautaire](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
+
+En attendant que l'ISRG Root X2 soit largement reconnu, il est possible d'opter pour l'utilisation de l'ISRG Root X2 pour vos certificats ECDSA. Pour plus d'informations, consultez notre [post sur le forum de la communauté](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
+
+[android-compat]: /2020/12/21/extending-android-compatibility.html
+
+[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy

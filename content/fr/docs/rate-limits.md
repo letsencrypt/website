@@ -27,14 +27,14 @@ Le traitement du renouvellement ignore la clé publique et les extensions demand
 
 **La révocation des certificats ne réinitialise pas les limites d'utilisation**, car les ressources utilisées pour délivrer ces certificats ont déjà été consommées.
 
-There is a!!crwdBlockTags_34_sgaTkcolBdwrc!![**Failed Validation**](/docs/failed-validation-limit) limit of 5 failures per account, per hostname, per hour. Cette limite est plus élevée sur notre [environnement de test](/docs/staging-environment), vous pouvez donc utiliser cet environnement pour déboguer les problèmes de connectivité. Le dépassement de la limite de validations échouées est signalé par le message d'erreur `too many failed authorizations recently`.
+Le nombre d<a id="failed-validations"></a>[**'échecs de validation**](/docs/failed-validation-limit) est limité à 5 par compte, par nom d'hôte et par heure. Cette limite est plus élevée sur notre [environnement de test](/docs/staging-environment), vous pouvez donc utiliser cet environnement pour déboguer les problèmes de connectivité. Le dépassement de la limite de validations échouées est signalé par le message d'erreur `too many failed authorizations recently`.
 
 Les points d'accès "new-nonce", "new-account", "new-order" et "revoke-cert" de l'API ont une <a
 id="overall-requests"></a>**limite globale** de 20 requêtes par seconde. Le point d'accès "/directory" et le répertoire & sous-répertoires "/acme" ont une limite globale de 40 requêtes par seconde.
 
 Nous avons deux autres limites que vous avez très peu de chances de rencontrer.
 
-Vous pouvez créer un maximum de 10 <a id="accounts-per-ip-address"></a>**comptes par adresse IP** par période de 3 heures. Vous pouvez créer un maximum de 500 **comptes par plage d'adresses IP** dans une zone IPv6 /48 par période de 3 heures. Le dépassement de l'une ou l'autre de ces limites est très rare, et nous recommandons aux grands intégrateurs de préférer une conception [utilisant un seul compte pour de nombreux clients](/docs/integration-guide). Le dépassement de ces limites est signalé par le message d'erreur `too many registrations for this IP` ou `too many registrations for this IP range`.
+Vous pouvez créer un maximum de 10 <a id="accounts-per-ip-address"></a>[**Comptes par adresse IP**](/docs/too-many-registrations-for-this-ip) par 3 heures. Vous pouvez créer un maximum de 500 **comptes par plage d'adresses IP** dans une zone IPv6 /48 par période de 3 heures. Le dépassement de l'une ou l'autre de ces limites est très rare, et nous recommandons aux grands intégrateurs de préférer une conception [utilisant un seul compte pour de nombreux clients](/docs/integration-guide). Le dépassement de ces limites est signalé par le message d'erreur `too many registrations for this IP` ou `too many registrations for this IP range`.
 
 Vous pouvez avoir un maximum de 300 <a id="pending-authorizations"></a>**autorisations en attente** sur votre compte. Atteindre cette limite est rare, et se produit le plus souvent lors du développement de clients ACME. Cela signifie généralement que votre client crée des autorisations et ne les remplit pas. Veuillez utiliser notre [environnement de test](/docs/staging-environment) si vous développez un client ACME. Le dépassement de la limite des autorisations en attente est signalé par le message d'erreur `too many currently pending authorizations`.
 
@@ -42,7 +42,7 @@ Vous pouvez avoir un maximum de 300 <a id="pending-authorizations"></a>**autoris
 
 Si vous avez atteint une limite d'utilisation, nous n'avons aucun moyen de la réinitialiser temporairement. Vous devrez attendre que la limite d'utilisation expire au bout d'une semaine. Nous utilisons une période glissante, donc si vous avez émis 25 certificats le lundi et 25 autres le vendredi, vous pourrez en émettre de nouveau à partir du lundi. Vous pouvez obtenir une liste des certificats émis pour votre domaine enregistré [en effectuant une recherche sur crt.sh](https://crt.sh), qui utilise les journaux publics de [Certificate Transparency](https://www.certificate-transparency.org).
 
-Si vous êtes un grand hébergeur ou une organisation travaillant sur une intégration Let's Encrypt, nous avons un [formulaire concernant les limites d'utilisation](https://goo.gl/forms/plqRgFVnZbdGhE9n1) qui peut être utilisé pour demander une limite d'utilisation supérieure. Le traitement des demandes prend quelques semaines. Ce formulaire n'est donc pas adapté si vous devez simplement réinitialiser une limite d'utilisation plus rapidement qu'elle ne le fait elle-même.
+Si vous êtes un grand hébergeur ou une organisation travaillant sur une intégration Let's Encrypt, nous avons un [formulaire concernant les limites d'utilisation](https://isrg.formstack.com/forms/rate_limit_adjustment_request) qui peut être utilisé pour demander une limite d'utilisation supérieure. Le traitement des demandes prend quelques semaines. Ce formulaire n'est donc pas adapté si vous devez simplement réinitialiser une limite d'utilisation plus rapidement qu'elle ne le fait elle-même.
 
 # <a id="clearing-pending"></a>Effacer les autorisations en attente
 

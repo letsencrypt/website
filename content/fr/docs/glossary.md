@@ -57,7 +57,7 @@ Note for translators:
 
 {{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} Une déclaration des pratiques qu'une autorité de certification emploie pour délivrer, gérer, révoquer et renouveler ou re-coder les certificats. [ISRG Certification Practice Statement](/repository#isrg-certification-practice-statement) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" name="Critical extension" %}} Un certificat peut contenir des [extensions](#def-extension) marquées "critical". Cela signifie que le logiciel doit rejeter ce certificat à moins qu'il ne comprenne comment traiter cette extension. Cela permet d'introduire de nouvelles extensions qui sont importantes pour la sécurité sans créer de risques pour les anciens logiciels. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}} Un certificat peut contenir des [extensions](#def-extension) marquées "critiques" Cela signifie que le logiciel doit rejeter ce certificat, à moins qu'il ne comprenne comment traiter cette extension. Cela permet d'introduire de nouvelles extensions qui sont importantes pour la sécurité sans créer de risques pour les anciens logiciels. {{% /def %}}
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} Une méthode pour informer les [agents utilisateurs](#def-user-agent) sur le statut de [revocation](#def-révocation) d'un [certificat](#def-leaf). Il s'agit d'une liste des numéros de série de tous les certificats révoqués d'une AC donnée, signée par cette AC. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
@@ -165,7 +165,7 @@ Note for translators:
 
 {{% def id="UCC" name="Unified Communications Certificate" abbr="UCC" %}} Une description d'un certificat contenant plusieurs [Subject Alternative Names (SANs)](#def-SAN). {{% /def %}}
 
-{{% def id="web-browser" name="Web Browser" %}} Un [agent](#def-user-agent) utilisé pour afficher des pages web. Exemples: *Mozilla Firefox*, *Google Chrome* ou *Internet Explorer*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
+{{% def id="web-browser" name="Web Browser" %}} Un [agent](#def-user-agent) utilisé pour afficher des pages web. Exemples : *Mozilla Firefox*, *Google Chrome* ou *Safari*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
 {{% def id="user-agent" name="User Agent" %}} Logiciel capable de communiquer avec un [serveur web](#def-web-server). Exemple: [Navigateur web](#def-web-browser) ou [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
 
@@ -177,6 +177,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-

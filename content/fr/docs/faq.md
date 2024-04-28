@@ -3,7 +3,7 @@ title: FAQ
 linkTitle: Foire aux questions (FAQ)
 slug: faq
 top_graphic: 1
-lastmod: 2022-06-15
+lastmod: 2022-09-28
 menu:
   main:
     weight: 30
@@ -43,11 +43,11 @@ Let's Encrypt est géré par une petite équipe et s'appuie sur l'automatisation
 
 Voici une [vidéo que nous aimons](https://www.youtube.com/watch?v=Xe1TZaElTAs) à propos de la puissance du grand support de la communauté.
 
-## Un site web utilisant Let's Encrypt est impliqué dans du hameçonnage, des logiciels malveillants, des arnaques...  Que devrais-je faire ?
+## Un site web utilisant Let's Encrypt se livre à des activités d'hameçonnage/de malveillance/d'escroquerie/... que dois-je faire ?
 
 Nous recommandons de signaler ces sites à Google Safe Browsing et au programme Microsoft Smart Screen, qui sont en mesure de protéger plus efficacement les utilisateurs. Voici les URL de rapport :
 
-- [https://safebrowsing.google.com/safebrowsing/report_badware/?hl=fr](https://safebrowsing.google.com/safebrowsing/report_badware/)
+- [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
 
 Si vous souhaitez en savoir plus sur nos politiques et nos raisons, vous pouvez le faire ici :
@@ -105,6 +105,10 @@ Nous ne publions pas de liste d'adresses IP que nous utilisons pour valider, et 
 ## J'ai renouvelé avec succès un certificat mais la validation n'a pas eu lieu cette fois-ci - comment cela est-il possible ?
 
 Dès que vous avez terminé avec succès les challenges pour un domaine, l'autorisation résultante est mise en cache pour que votre compte puisse être réutilisé plus tard. Les autorisations mises en cache ont une durée de 30 jours à compter de la validation. Si le certificat que vous avez demandé comporte toutes les autorisations nécessaires mises en cache, la validation ne se fera plus jusqu'à l'expiration des autorisations mises en cache correspondantes.
+
+## Pourquoi mon client Let's Encrypt (ACME) doit-il s'exécuter à une heure aléatoire ?
+
+Nous demandons aux clients [ACME d'effectuer les renouvellements de routine à des moments aléatoires](https://letsencrypt.org/docs/integration-guide/#when-to-renew) afin d'éviter les pics de trafic à des moments précis de la journée, tels que minuit UTC, ou la première seconde de chaque heure ou minute. Lorsque le service est trop occupé, les clients sont invités à [réessayer plus tard](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503), de sorte que la randomisation des délais de renouvellement permet d'éviter les tentatives inutiles.
 
 ## Où puis-je en savoir plus sur TLS/SSL et PKI en général ?
 

@@ -3,7 +3,7 @@ title: Types de Challenges
 slug: challenge-types
 top_graphic: 1
 date: 2019-02-25
-lastmod: 2020-12-08
+lastmod: 2023-02-13
 show_lastmod: 1
 ---
 
@@ -34,13 +34,13 @@ Inconvénients :
 
 Ce challenge vous demande de prouver que vous contrôlez le DNS pour votre nom de domaine en mettant une valeur spécifique dans un enregistrement TXT sous ce nom de domaine. Il est plus difficile à configurer que HTTP-01, mais peut fonctionner dans des scénarios où HTTP-01 ne peut pas. Il vous permet également de délivrer des certificats de type "wildcard". Après que Let's Encrypt ait donné un jeton à votre client ACME, votre client créera un enregistrement TXT dérivé de ce jeton et de votre clé de compte, et mettra cet enregistrement sous `_acme-challenge.<YOUR_DOMAIN>`. Ensuite, Let's Encrypt interrogera le système DNS pour cet enregistrement. Si il trouve une correspondance, vous pouvez procéder à la délivrance d'un certificat !
 
-Comme l'automatisation de l'émission et des renouvellements est vraiment importante, il n'a de sens d'utiliser les challenges DNS-01 que si votre fournisseur de DNS dispose d'une API que vous pouvez utiliser pour automatiser les mises à jour. Notre communauté a commencé à dresser une [ liste de ces fournisseurs de DNS ici](https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438). Votre fournisseur de DNS peut être le même que votre bureau d'enregistrement (la société à laquelle vous avez acheté votre nom de domaine), ou il peut être différent. Si vous souhaitez changer de fournisseur DNS, il vous suffit d'effectuer quelques petits changements auprès de votre bureau d'enregistrement. Vous n'avez pas besoin d'attendre que votre domaine soit proche de l'expiration pour le faire.
+Comme l'automatisation de l'émission et des renouvellements est vraiment importante, il n'a de sens d'utiliser les challenges DNS-01 que si votre fournisseur de DNS dispose d'une API que vous pouvez utiliser pour automatiser les mises à jour. Notre communauté a commencé à dresser une [ liste de ces fournisseurs de DNS ici][dns-api-providers]. Votre fournisseur de DNS peut être le même que votre bureau d'enregistrement (la société à laquelle vous avez acheté votre nom de domaine), ou il peut être différent. Si vous souhaitez changer de fournisseur DNS, il vous suffit d'effectuer quelques petits changements auprès de votre bureau d'enregistrement. Vous n'avez pas besoin d'attendre que votre domaine soit proche de l'expiration pour le faire.
 
-Notez que le fait de placer vos informations d'identification complètes DNS API sur votre serveur web augmente considérablement les conséquences si ce serveur web est piraté. La meilleure pratique consiste à utiliser des [références API de portée plus étroite](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation), ou à effectuer une validation DNS à partir d'un serveur séparé et à copier automatiquement les certificats sur votre serveur web.
+Notez que le fait de placer vos identifiants API DNS complets sur votre serveur web augmente considérablement l'impact en cas de piratage de ce serveur web. La meilleure pratique consiste à utiliser des [références API de portée plus étroite][securing-dns-credentials], ou à effectuer une validation DNS à partir d'un serveur séparé et à copier automatiquement les certificats sur votre serveur web.
 
-Puisque Let's Encrypt suit les normes DNS lors de la recherche d'enregistrements TXT pour la validation DNS-01, vous pouvez utiliser les enregistrements CNAME ou NS pour déléguer la réponse au challenge à d'autres zones DNS. Cela peut être utilisé pour [déléguer le `_acme-challenge` sous-domaine](https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation) à un serveur ou une zone spécifique à la validation. Il peut également être utilisé si votre fournisseur de DNS est lent à se mettre à jour, et que vous souhaitez déléguer à un serveur de mise à jour plus rapide.
+Puisque Let's Encrypt suit les normes DNS lors de la recherche d'enregistrements TXT pour la validation DNS-01, vous pouvez utiliser les enregistrements CNAME ou NS pour déléguer la réponse au challenge à d'autres zones DNS. Cela peut être utilisé pour [déléguer le `_acme-challenge` sous-domaine][securing-dns-credentials] à un serveur ou une zone spécifique à la validation. Il peut également être utilisé si votre fournisseur de DNS est lent à se mettre à jour, et que vous souhaitez déléguer à un serveur de mise à jour plus rapide.
 
-La plupart des fournisseurs de DNS ont un "temps de propagation" qui régit le temps qu'il faut entre le moment où vous mettez à jour un enregistrement DNS et celui où il est disponible sur tous leurs serveurs. Il peut être difficile de le mesurer car ils utilisent souvent aussi [anycast](https://en.wikipedia.org/wiki/Anycast), ce qui signifie que plusieurs serveurs peuvent avoir la même adresse IP, et selon l'endroit où vous vous trouvez dans le monde, vous pouvez parler à un serveur différent (et obtenir une réponse différente) que celle de Let's Encrypt. Les meilleures API DNS vous fournissent un moyen d’automatiquement vérifier si une mise à jour est pleinement propagée. Si votre fournisseur de DNS ne dispose pas de cette fonctionnalité, il vous suffit de configurer votre client pour qu'il attende suffisamment longtemps (souvent jusqu'à une heure) pour que la mise à jour se propage avant de déclencher la validation.
+La plupart des fournisseurs de DNS ont un "temps de propagation" qui régit le temps qu'il faut entre le moment où vous mettez à jour un enregistrement DNS et celui où il est disponible sur tous leurs serveurs. Il peut être difficile de le mesurer car ils utilisent souvent aussi [anycast][], ce qui signifie que plusieurs serveurs peuvent avoir la même adresse IP, et selon l'endroit où vous vous trouvez dans le monde, vous pouvez parler à un serveur différent (et obtenir une réponse différente) que celle de Let's Encrypt. Les meilleures API DNS vous fournissent un moyen d’automatiquement vérifier si une mise à jour est pleinement propagée. Si votre fournisseur de DNS ne dispose pas de cette fonctionnalité, il vous suffit de configurer votre client pour qu'il attende suffisamment longtemps (souvent jusqu'à une heure) pour que la mise à jour se propage avant de déclencher la validation.
 
 Vous pouvez avoir plusieurs enregistrements TXT en place pour le même nom. Par exemple, cela peut se produire si vous validez un challenge pour un certificat "wildcard" et un certificat "non-wildcard" en même temps. Cependant, vous devez veiller à nettoyer les anciens enregistrements TXT, car si la taille de la réponse devient trop importante, Let's Encrypt commencera à la rejeter.
 
@@ -57,13 +57,13 @@ Inconvénients :
 
 # TLS-SNI-01
 
-Ce challenge a été défini dans les versions préliminaires d'ACME. Il faisait un handshake TLS sur le port 443 et envoyait un en-tête spécifique [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication), à la recherche du certificat qui contenait le jeton. Il a été [désactivé en mars 2019](https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209) parce qu'il n'était pas assez sécurisé.
+Ce challenge a été défini dans les versions préliminaires d'ACME. Il faisait un handshake TLS sur le port 443 et envoyait un en-tête spécifique [SNI][], à la recherche du certificat qui contenait le jeton. Il a été [désactivé en mars 2019][tls-sni-disablement] parce qu'il n'était pas assez sécurisé.
 
 # TLS-ALPN-01
 
-Ce challenge a été développé après que la norme TLS-SNI-01 soit devenue obsolète, et est développé en tant que [norme distincte](https://tools.ietf.org/html/rfc8737). Comme TLS-SNI-01, il est effectué via TLS sur le port 443. Toutefois, elle utilise un protocole ALPN personnalisé pour garantir que seuls les serveurs qui sont informés de ce type de challenge répondront aux requêtes de validation. Cela permet également aux demandes de validation pour ce type de challenge d'utiliser un champ SNI qui correspond au nom de domaine en cours de validation, ce qui le rend plus sûr.
+Ce challenge a été développé après que la norme TLS-SNI-01 soit devenue obsolète, et est développé en tant que [norme distincte][tls-alpn]. Comme TLS-SNI-01, il est effectué via TLS sur le port 443. Toutefois, elle utilise un protocole ALPN personnalisé pour garantir que seuls les serveurs qui sont informés de ce type de challenge répondront aux requêtes de validation. Cela permet également aux demandes de validation pour ce type de challenge d'utiliser un champ SNI qui correspond au nom de domaine en cours de validation, ce qui le rend plus sûr.
 
-Ce challenge n'est pas adapté à la plupart des gens. Il est mieux adapté aux auteurs de "TLS-terminating reverse proxies" qui veulent effectuer une validation basée sur l'hôte comme HTTP-01, mais qui veulent le faire entièrement au niveau de la couche TLS afin de séparer les problèmes. Pour l'instant, il s'agit principalement de grands fournisseurs d'hébergement, mais les principaux serveurs web comme Apache et Nginx pourraient un jour mettre cela en œuvre (et [Caddy le fait déjà](https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860)).
+Ce challenge n'est pas adapté à la plupart des gens. Il est mieux adapté aux auteurs de "TLS-terminating reverse proxies" qui veulent effectuer une validation basée sur l'hôte comme HTTP-01, mais qui veulent le faire entièrement au niveau de la couche TLS afin de séparer les problèmes. Pour l'instant, il s'agit principalement de grands fournisseurs d'hébergement, mais les principaux serveurs web comme Apache et Nginx pourraient un jour mettre cela en œuvre (et [Caddy le fait déjà][caddy-tls-alpn]).
 
 Avantages :
 
@@ -75,3 +75,12 @@ Inconvénients :
  - Il n'est pas supporté par Apache, Nginx ou Certbot, et ne le sera probablement pas de sitôt.
  - Comme pour HTTP-01, si vous avez plusieurs serveurs, ils doivent tous répondre avec le même contenu.
  - Cette méthode ne peut pas être utilisée pour valider les domaines génériques.
+
+[dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
+[anycast]: https://en.wikipedia.org/wiki/Anycast
+[SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
+[tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
+[tls-alpn]: https://tools.ietf.org/html/rfc8737
+[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860
