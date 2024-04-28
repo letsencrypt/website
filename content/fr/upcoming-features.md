@@ -2,19 +2,21 @@
 title: Fonctionnalités à venir
 slug: upcoming-features
 top_graphic: 1
-lastmod: 2021-09-16
+lastmod: 2023-06-20
 show_lastmod: 1
 ---
-
-## Informations de renouvellement de l'ACME (ARI)
-
-Nous travaillons sur un système qui nous permettra de notifier les abonnés via une API lorsqu'ils ont besoin de renouveler. Ce système nous permettra de signaler aux abonnés qu'ils ont besoin de renouveler avant, par exemple, un évènement de révocation.
 
 ## Certificats Racine et Intermédiaires ECDSA
 
 Nous délivrons des certificats depuis notre ECDSA intermédiaire de protection aux [comptes autorisés](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). Il n’y a pas de date planifiée pour supprimer la liste d’autorisation.
 
 # Fonctionnalités achevées
+
+## Informations de renouvellement de l'ACME (ARI)
+
+* Activé : 23 mars 2023
+
+Nous gérons maintenant [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html), un système qui nous permet d'avertir les abonnés par API lorsqu'ils doivent renouveler leur abonnement.
 
 ## Validation multi-perspectives
 

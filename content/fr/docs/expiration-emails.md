@@ -3,18 +3,18 @@ title: Emails d'expiration
 slug: expiration-emails
 top_graphic: 1
 date: 2016-07-02
-lastmod: 2021-09-25
+lastmod: 2023-01-09
 show_lastmod: 1
 ---
 
 
 # S'abonner
 
-Si vous fournissez une adresse e-mail à Let's Encrypt lorsque vous créez votre compte, nous ferons de notre mieux pour vous envoyer automatiquement des avis d'expiration lorsque votre certificat doit être renouvelé. Nous essayons d'envoyer le premier avis 20 jours avant l'expiration de votre certificat, puis d'autres avis 10 jours et 1 jour avant son expiration. Nous vous recommandons de vous fier à votre client ACME pour renouveler automatiquement vos certificats, et d'utiliser ces avis d'expiration comme un rappel pour vérifier votre automatisation.
+Si vous fournissez une adresse e-mail à Let's Encrypt lorsque vous créez votre compte, nous ferons de notre mieux pour vous envoyer automatiquement des avis d'expiration lorsque votre certificat doit être renouvelé. Nous essayons d'envoyer le premier avis 20 jours avant l'expiration de votre certificat, et le deuxième et dernier avis 7 jours avant son expiration. Nous vous recommandons de vous fier à votre client ACME pour renouveler automatiquement vos certificats, et d'utiliser ces avis d'expiration comme un rappel pour vérifier votre automatisation.
 
 # Quand vous recevez un courriel d'expiration
 
-Si votre certificat est déjà renouvelé, nous n'enverrons pas d'avis d'expiration. Nous considérons qu'un certificat est renouvelé s'il existe un certificat plus récent avec exactement le même ensemble de noms, quel que soit le compte qui l'a créé. Si vous avez émis un nouveau certificat qui ajoute ou supprime un nom par rapport à votre ancien certificat, vous recevrez un courriel d'expiration concernant votre ancien certificat. Si vous vérifiez le certificat en cours d'exécution sur votre site web et qu'il indique la date correcte, aucune autre action n'est nécessaire.
+Si votre certificat est déjà renouvelé, nous n'enverrons pas d'avis d'expiration. Nous considérons qu'un certificat est renouvelé s'il existe un certificat plus récent avec exactement le même ensemble de noms, quel que soit le compte qui l'a créé. Si vous avez émis un nouveau certificat qui ajoute ou supprime un nom par rapport à votre ancien certificat, vous recevrez un courriel d'expiration concernant votre ancien certificat. Si vous vérifiez le certificat en cours d'exécution sur votre site web et qu'il indique la date correcte, aucune autre action n'est nécessaire. Pour consulter l'historique des certificats émis pour votre domaine, vous pouvez rechercher votre domaine sur les moniteurs du journal de transparence des certificats tels que [crt.sh](https://crt.sh/).
 
 # Désabonnement
 
