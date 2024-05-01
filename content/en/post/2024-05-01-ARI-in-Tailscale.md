@@ -1,6 +1,6 @@
 ---
 author: Sarah McClure (Let’s Encrypt) & Andrew Lytvynov (Tailscale)
-date: 2024-04-29T00:00:00Z
+date: 2024-05-01T00:00:00Z
 slug: ARI-in-Tailscale
 title: "Takeaways from Tailscale’s Adoption of ARI"
 excerpt: "ACME Renewal Info (ARI) enables easy and automated cert revocation and replacement."
