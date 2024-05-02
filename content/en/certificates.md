@@ -69,13 +69,17 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295815), [issued certs](https://crt.sh/?Identity=%25&iCAID=295815)
   * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 
-Details on additional intermediates which have expired, been retired, or are
-being held in reserve as backups can be found here:
+Click below for details on additional intermediates which are not part of the active issuance hierarchy:
+
+<style>
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
 
 <details>
-  <summary data-open="Click to hide" data-closed="Click to show"></summary>
-
-## Backup
+<summary>Backup</summary>
 
 These certificates are currently valid, but are not being issued from. We may begin issuing Subscriber certificates from them at any time, without warning.
 
@@ -119,7 +123,10 @@ These certificates are currently valid, but are not being issued from. We may be
   * CA details: [crt.sh](https://crt.sh/?caid=295818), [issued certs](https://crt.sh/?Identity=%25&iCAID=295818)
   * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
 
-## Retired
+</details>
+
+<details>
+<summary>Retired</summary>
 
 These certificates are no longer being used to issue Subscriber certificates. If they are still valid, they may still be producing OCSP responses or CRLs.
 
@@ -178,7 +185,10 @@ These certificates are no longer being used to issue Subscriber certificates. If
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=47997546), [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=15710291), [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
 
-## Delegated OCSP Responder
+</details>
+
+<details>
+<summary> Delegated OCSP Responder</summary>
 
 This keypair was previously used to sign OCSP responses regarding the status of Let's Encrypt's intermediates on behalf of Let's Encrypt's root, so that the root could remain safely offline. We no longer issue OCSP responses for our intermediates; we instead periodically issue CRLs from our root to convey the revocation status of our intermediates.
 
@@ -189,8 +199,8 @@ This keypair was previously used to sign OCSP responses regarding the status of 
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=2929281974), [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=142051103) (expired)
 
-
 </details>
+<p><!-- to get the right line spacing after a details element --></p>
 
 # Cross Signing
 

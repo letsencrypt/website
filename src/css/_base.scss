@@ -492,11 +492,3 @@ html[dir="rtl"] a.autoanchor {
 .post-footer p:last-child {
   margin-bottom: 0;
 }
-
-details.description[open] summary::after {
-  content: attr(data-open);
-}
-
-details.description:not([open]) summary::after {
-  content: attr(data-closed);
-}
