@@ -493,4 +493,10 @@ html[dir="rtl"] a.autoanchor {
   margin-bottom: 0;
 }
 
+details.description[open] summary::after {
+  content: attr(data-open);
+}
 
+details.description:not([open]) summary::after {
+  content: attr(data-closed);
+}
