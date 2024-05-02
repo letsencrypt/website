@@ -81,7 +81,7 @@ summary {
 <details>
 <summary>Backup</summary>
 
-These certificates are currently valid, but are not being issued from. We may begin issuing Subscriber certificates from them at any time, without warning.
+These intermediate CAs have currently-valid certificates, but are not being issued from. We may begin issuing Subscriber certificates from them at any time, without warning.
 
 * **Let's Encrypt E7**
   * Subject: `O = Let's Encrypt, CN = E7`
@@ -128,7 +128,7 @@ These certificates are currently valid, but are not being issued from. We may be
 <details>
 <summary>Retired</summary>
 
-These certificates are no longer being used to issue Subscriber certificates. If they are still valid, they may still be producing OCSP responses or CRLs.
+These intermediate CAs are no longer being used to issue Subscriber certificates. Those which still have valid certificates may be producing OCSP responses and/or CRLs.
 
 * **Let's Encrypt E1**
   * Subject: `O = Let's Encrypt, CN = E1`
@@ -202,55 +202,23 @@ This keypair was previously used to sign OCSP responses regarding the status of 
 </details>
 <p><!-- to get the right line spacing after a details element --></p>
 
-# Cross Signing
+# Chains
 
-## Intermediates
+When an ACME client downloads a newly-issued certificate from Let's Encrypt's ACME API, that certificate comes with a "chain" of one or more intermediates. Usually this chain consists of just the Subscriber certificate itself and the one intermediate which issued it, but it could contain three or more certs, each having issued the previous certificate in the chain. The idea is that, by presenting this whole chain of certificates to a website visitor's browser, the browser will be able to validate the signatures all the way up to a root that browser trusts without having to download any additional intermediates.
 
-Each of our intermediates represents a single public/private
-key pair. The private key of that pair generates the signature for all end-entity
-certificates (also known as leaf certificates), i.e. the certificates we issue
-for use on your server.
+Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
 
-Our RSA intermediates are signed by ISRG Root X1. ISRG Root X1 is widely trusted at this
-point, but our RSA intermediates are still cross-signed by IdenTrust's "[DST Root CA X3](https://crt.sh/?id=8395)"
-(now called "TrustID X3 Root") for additional client compatibility. The IdenTrust
-root has been around longer and thus has better compatibility with older devices
-and operating systems (e.g. Windows XP, Android 7). You can [download "TrustID X3 Root" from
-IdenTrust](https://www.identrust.com/support/downloads) (or, alternatively,
-you can [download a copy from us](/certs/trustid-x3-root.pem.txt)).
+Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain:
 
-Having cross-signatures means that each of our RSA intermediates has two
-certificates representing the same signing key. One is signed by DST Root
-CA X3 and the other is signed by ISRG Root X1. The easiest way to distinguish
-the two is by looking at their Issuer field.
+<center>
+<b>Default</b>: RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+</center>
 
-When configuring a web server, the server operator configures not only the
-end-entity certificate, but also a list of intermediates to help browsers verify
-that the end-entity certificate has a trust chain leading to a trusted root
-certificate. Almost all server operators will choose to serve a chain including
-the intermediate certificate with Subject "R3" and
-Issuer "ISRG Root X1". The recommended Let's Encrypt client software,
-[Certbot](https://certbot.org), will make this configuration seamlessly.
+Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
 
-## Roots
-Similar to intermediates, root certificates can be cross-signed, often to increase client
-compatibility. Our ECDSA root, ISRG Root X2 was generated in fall 2020 and is the root
-certificate for the ECDSA hierarchy. It is represented by two certificates: one that is
-self-signed and one that is signed by ISRG Root X1.
+<center>
+<b>Default</b>: ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1<br>
+<b>Alternate</b>: ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
+</center>
 
-All certificates signed by the ECDSA intermediate "E1" will come with a chain including an intermediate
-certificate whose Subject is "ISRG Root X2" and whose Issuer is "ISRG Root X1". Almost all server operators
-will choose to serve this chain as it offers the most compatibility until ISRG Root X2
-is widely trusted.
-
-# Certificate Transparency
-
-We are dedicated to transparency in our operations and in the certificates we
-issue. We submit all certificates to [Certificate Transparency
-logs](https://www.certificate-transparency.org/) as we issue them. You can view all
-issued Let's Encrypt certificates via these links:
-
-* [Issued by Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
-* [Issued by Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
-* [Issued by E1](https://crt.sh/?Identity=%25&iCAID=183283)
-* [Issued by R3](https://crt.sh/?Identity=%25&iCAID=183267)
+The first chain, up to ISRG Root X1, provides the greatest compatibility because that root certificate is included in the most trust stores. The second chain, up to ISRG Root X2, consumes fewer bytes of network bandwidth in each TLS handshake. We provide the first chain by default, to ensure the widest compatibility. Subscribers who wish to prioritize size over compatibility can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
