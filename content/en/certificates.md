@@ -71,13 +71,6 @@ All intermediate certificate Subjects have a Country field of `C = US`.
 
 Click below for details on additional intermediates which are not part of the active issuance hierarchy:
 
-<style>
-summary {
-  display: list-item;
-  cursor: pointer;
-}
-</style>
-
 <details>
 <summary>Backup</summary>
 
@@ -210,23 +203,16 @@ Sometimes there's more than one valid chain for a given certificate: for example
 
 Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain:
 
-<style>
-div.chain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-</style>
-<div class="chain">
+<div style="text-align: center">
 RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
 
-<div class="chain">
-ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1<br>
+<div style="text-align: center">
+ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
