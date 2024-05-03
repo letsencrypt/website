@@ -1,6 +1,6 @@
 ---
-title: Chain of Trust
-linkTitle: Chain of Trust (Root and Intermediate Certificates)
+title: Chains of Trust
+linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
 top_graphic: 5
 lastmod: 2024-05-03
@@ -9,7 +9,7 @@ show_lastmod: 1
 
 <div style="text-align: center">
 
-_**Note:** This section describes Let's Encrypt's hierarchy as it will be on June 6, 2024._
+_**Note:** This section describes Let's Encrypt's hierarchy as of June 6, 2024. For the hierarchy in use prior to June 6, [see below](#old-content)._
 
 </div>
 
@@ -26,7 +26,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
 * **ISRG Root X1**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X1`
   * Key type: `RSA 4096`
-  * Validity: until 2030-06-04
+  * Validity: until 2030-06-04 (generated 2015-06-04)
   * CA details: [crt.sh](https://crt.sh/?caid=7394), [issued certs](https://crt.sh/?Identity=%25&iCAID=7394)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certificate details (cross-signed by DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retired)
@@ -34,7 +34,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
 * **ISRG Root X2**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Key type: `ECDSA P-384`
-  * Validity: until 2035-09-04
+  * Validity: until 2035-09-04 (generated 2020-09-04)
   * CA details: [crt.sh](https://crt.sh/?caid=183269), [issued certs](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
@@ -203,7 +203,7 @@ This keypair was previously used to sign OCSP responses regarding the status of 
 
 # Chains
 
-When an ACME client downloads a newly-issued certificate from Let's Encrypt's ACME API, that certificate comes with a "chain" of one or more intermediates. Usually this chain consists of just the Subscriber certificate itself and the one intermediate which issued it, but it could contain three or more certs, each having issued the previous certificate in the chain. The idea is that, by presenting this whole chain of certificates to a website visitor's browser, the browser will be able to validate the signatures all the way up to a root that browser trusts without having to download any additional intermediates.
+When an ACME client downloads a newly-issued certificate from Let's Encrypt's ACME API, that certificate comes with a "chain" of one or more additional certificates. Usually this chain consists of just the Subscriber certificate itself and one intermediate, but it could contain additional intermediates. The idea is that, by presenting this whole chain of certificates to a website visitor's browser, the browser will be able to validate the signatures all the way up to a root that browser trusts without having to download any additional intermediates.
 
 Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
 
@@ -231,7 +231,7 @@ The first chain, up to ISRG Root X1, provides the greatest compatibility because
 
 ------
 
-<div style="text-align: center">
+<div style="text-align: center" id="old-content">
 
 _**Note:** This section describes Let's Encrypt's hierarchy as it historically has been, prior to the the changes on June 6, 2024._
 
