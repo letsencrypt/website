@@ -2,7 +2,7 @@
 title: Certificate Compatibility
 slug: certificate-compatibility
 top_graphic: 1
-lastmod: 2024-06-15
+lastmod: 2024-05-03
 show_lastmod: 1
 ---
 
