@@ -2,7 +2,6 @@
 title: GYIK
 linkTitle: Gyakran Ismételt Kérdések (GYIK)
 slug: faq
-top_graphic: 1
 lastmod: 2020-04-23
 menu:
   main:

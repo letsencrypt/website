@@ -1,7 +1,6 @@
 ---
 title: 术语表
 slug: glossary
-top_graphic: 1
 date: 2018-12-30
 show_lastmod: 1
 ---

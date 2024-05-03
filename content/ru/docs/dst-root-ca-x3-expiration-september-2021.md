@@ -1,7 +1,6 @@
 ---
 title: Окончание срока действия DST Root CA X3 (сентябрь 2021 г.)
 slug: dst-root-ca-x3-expiration-september-2021
-top_graphic: 1
 lastmod: 2021-09-30
 menu:
   main:

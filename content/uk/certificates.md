@@ -2,7 +2,6 @@
 title: Ланцюг довіри
 linkTitle: Ланцюг довіри (кореневий і проміжний сертифікати)
 slug: сертифікати
-top_graphic: 5
 lastmod: 2021-10-02
 show_lastmod: 1
 ---

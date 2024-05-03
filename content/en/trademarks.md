@@ -1,7 +1,6 @@
 ---
 title: Trademark Policy
 slug: trademarks
-top_graphic: 1
 lastmod: 2021-08-11
 english_is_canonical: 1
 show_lastmod: 1

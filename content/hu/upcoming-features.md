@@ -1,7 +1,6 @@
 ---
 title: Hamarosan megjelenő funkciók
 slug: upcoming-features
-top_graphic: 1
 lastmod: 2021-09-16
 show_lastmod: 1
 ---

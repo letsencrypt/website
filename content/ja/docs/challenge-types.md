@@ -1,7 +1,6 @@
 ---
 title: チャレンジの種類
 slug: challenge-types
-top_graphic: 1
 date: 2019-02-25
 lastmod: 2020-12-08
 show_lastmod: 1

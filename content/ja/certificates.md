@@ -2,7 +2,6 @@
 title: Chain of Trust
 linkTitle: Chain of Trust (ルートおよび中間証明書)
 slug: certificates
-top_graphic: 5
 lastmod: 2021-10-02
 show_lastmod: 1
 ---

@@ -2,7 +2,6 @@
 title: FAQ
 linkTitle: Ofte stillede spørgsmål (FAQ)
 slug: faq
-top_graphic: 1
 lastmod: 2022-09-28
 menu:
   main:

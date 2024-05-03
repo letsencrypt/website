@@ -2,7 +2,6 @@
 title: Contact
 slug: contact
 description: Comment nous contacter
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

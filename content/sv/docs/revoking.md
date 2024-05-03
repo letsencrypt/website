@@ -1,7 +1,6 @@
 ---
 title: Återkallande av certifikat
 slug: revoking
-top_graphic: 1
 date: 2017-06-08
 lastmod: 2021-08-03
 show_lastmod: 1

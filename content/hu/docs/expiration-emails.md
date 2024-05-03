@@ -1,7 +1,6 @@
 ---
 title: Lejáratról szóló e-mailek
 slug: expiration-emails
-top_graphic: 1
 date: 2016-07-02
 lastmod: 2020-10-28
 show_lastmod: 1

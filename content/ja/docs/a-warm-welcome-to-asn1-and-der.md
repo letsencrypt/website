@@ -1,7 +1,6 @@
 ---
 title: ASN.1 と DER へようこそ
 slug: a-warm-welcome-to-asn1-and-der
-top_graphic: 1
 date: 2020-04-23
 lastmod: 2021-03-21
 ---

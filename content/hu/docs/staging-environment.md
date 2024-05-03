@@ -1,7 +1,6 @@
 ---
 title: Staging környezet
 slug: staging-environment
-top_graphic: 1
 date: 2018-01-05
 lastmod: 2021-05-13
 show_lastmod: 1

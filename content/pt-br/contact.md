@@ -2,7 +2,6 @@
 title: Contato
 slug: contact
 description: Fale conosco
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

@@ -2,7 +2,6 @@
 title: Vanliga frågor
 linkTitle: Vanliga frågor (FAQ)
 slug: faq
-top_graphic: 1
 lastmod: 2020-02-20
 menu:
   main:

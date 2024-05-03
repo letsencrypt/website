@@ -2,7 +2,6 @@
 title: Bog‘lanish
 slug: contact
 description: Biz bilan qanday bog‘lanish mumkin
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

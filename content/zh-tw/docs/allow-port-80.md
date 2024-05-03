@@ -1,7 +1,6 @@
 ---
 title: 最佳實踐 – 保持通訊埠 80 為開啟狀態
 slug: allow-port-80
-top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1

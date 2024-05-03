@@ -1,7 +1,6 @@
 ---
 title: Cảm Ơn Bạn Đã Đóng Góp Cho ISRG
 slug: thankyou
-top_graphic: 2
 date: 2018-04-12
 ---
 

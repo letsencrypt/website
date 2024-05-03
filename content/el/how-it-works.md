@@ -2,7 +2,6 @@
 title: Πως δουλεύει
 linkTitle: Πώς λειτουργεί το Let's Encrypt
 slug: how-it-works
-top_graphic: 3
 lastmod: 2019-10-18
 show_lastmod: 1
 ---

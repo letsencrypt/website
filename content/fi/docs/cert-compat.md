@@ -1,7 +1,6 @@
 ---
 title: Varmenneyhteensopivuus
 slug: certificate-compatibility
-top_graphic: 1
 lastmod: 2021-05-12
 show_lastmod: 1
 ---

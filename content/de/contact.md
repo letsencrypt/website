@@ -2,7 +2,6 @@
 title: Kontakt
 slug: contact
 description: Wie Sie uns erreichen
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

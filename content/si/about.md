@@ -2,7 +2,6 @@
 title: ලෙට්'ස් එන්ක්‍රිප්ට් පිළිබඳව
 linkTitle: ලෙට්'ස් එන්ක්‍රිප්ට්
 slug: about
-top_graphic: 1
 lastmod: 2021-02-12
 menu:
   main:

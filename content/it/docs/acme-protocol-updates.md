@@ -1,7 +1,6 @@
 ---
 title: Aggiornamenti del protocollo ACME
 slug: acme-protocol-updates
-top_graphic: 1
 lastmod: 2019-10-07
 show_lastmod: 1
 ---

@@ -1,7 +1,6 @@
 ---
 title: Майбутні можливості
 slug: upcoming-features
-top_graphic: 1
 lastmod: 2023-06-20
 show_lastmod: 1
 ---

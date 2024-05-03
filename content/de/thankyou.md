@@ -1,7 +1,6 @@
 ---
 title: Dankeschön
 slug: thankyou
-top_graphic: 2
 date: 2022-12-02
 ---
 

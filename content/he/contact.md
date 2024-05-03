@@ -2,7 +2,6 @@
 title: יצירת קשר
 slug: contact
 description: איך ליצור אתנו קשר
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

@@ -1,7 +1,6 @@
 ---
 title: 参加する
 slug: getinvolved
-top_graphic: 5
 lastmod: 2019-11-04
 menu:
   main:

@@ -1,7 +1,6 @@
 ---
 title: ACME kliens implementációk
 slug: client-options
-top_graphic: 1
 lastmod: 2020-12-18
 ---
 

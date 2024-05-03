@@ -2,7 +2,6 @@
 title: เกี่ยวกับเล็ท'ส เอ็นคริปต์
 linkTitle: เล็ท'ส เอ็นคริปต์
 slug: about
-top_graphic: 1
 lastmod: 2021-02-12
 menu:
   main:
