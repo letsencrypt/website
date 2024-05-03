@@ -29,7 +29,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Key type: `ECDSA P-384`
   * Validity: until 2035-09-04
-  * CA details: [crt.sh](https://crt.sh/?caid=7394), [issued certs](https://crt.sh/?Identity=%25&iCAID=7394)
+  * CA details: [crt.sh](https://crt.sh/?caid=183269), [issued certs](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Test websites: [valid](https://valid-isrgrootx2.letsencrypt.org/), [revoked](https://revoked-isrgrootx2.letsencrypt.org/), [expired](https://expired-isrgrootx2.letsencrypt.org/)
@@ -211,7 +211,7 @@ RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
 Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
 
 <div style="text-align: center">
-ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
 
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
 </div>
