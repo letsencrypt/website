@@ -203,11 +203,11 @@ This keypair was previously used to sign OCSP responses regarding the status of 
 
 # Chains
 
-When an ACME client downloads a newly-issued certificate from Let's Encrypt's ACME API, that certificate comes with a "chain" of one or more additional certificates. Usually this chain consists of just the Subscriber certificate itself and one intermediate, but it could contain additional intermediates. The idea is that, by presenting this whole chain of certificates to a website visitor's browser, the browser will be able to validate the signatures all the way up to a root that browser trusts without having to download any additional intermediates.
+When an ACME client downloads a newly-issued certificate from Let's Encrypt's ACME API, that certificate comes as part of a "chain" that also includes more or more intermediates. Usually this chain consists of just the end-entity certificate and one intermediate, but it could contain additional intermediates. The idea is that, by presenting this whole chain of certificates to a website visitor's browser, the browser will be able to validate the signatures all the way up to a root that browser trusts without having to download any additional intermediates.
 
-Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
+Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those two certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
 
-Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain:
+Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain available:
 
 <div style="text-align: center">
 RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
