@@ -9,7 +9,7 @@ show_lastmod: 1
 
 This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA.
 
-[![ISRG Certificate Hierarchy Diagram, as of December 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG Certificate Hierarchy Diagram, as of June 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Root CAs
 
@@ -200,7 +200,7 @@ This keypair was previously used to sign OCSP responses regarding the status of 
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=142051103) (expired)
 
 </details>
-<p><!-- to get the right line spacing after a details element --></p>
+<p><!-- to get the right line spacing after a block element --></p>
 
 # Chains
 
@@ -210,15 +210,25 @@ Sometimes there's more than one valid chain for a given certificate: for example
 
 Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain:
 
-<center>
-<b>Default</b>: RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
-</center>
+<style>
+div.chain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+<div class="chain">
+RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+</div>
+<p><!-- to get the right line spacing after a block element --></p>
 
 Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
 
-<center>
-<b>Default</b>: ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1<br>
-<b>Alternate</b>: ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
-</center>
+<div class="chain">
+ECDSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1<br>
+ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
+</div>
+<p><!-- to get the right line spacing after a block element --></p>
 
 The first chain, up to ISRG Root X1, provides the greatest compatibility because that root certificate is included in the most trust stores. The second chain, up to ISRG Root X2, consumes fewer bytes of network bandwidth in each TLS handshake. We provide the first chain by default, to ensure the widest compatibility. Subscribers who wish to prioritize size over compatibility can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
