@@ -279,6 +279,18 @@ html[dir="rtl"] .social-media-list {
     margin-left: 0;
 }
 
+.social-media-list a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.social-media-list a:hover {
+    text-decoration: none;
+}
+.social-media-list a:hover span {
+    text-decoration: underline;
+}
+
 .social-media-list i {
     color: $grey-color;
     vertical-align: middle;
