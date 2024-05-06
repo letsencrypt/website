@@ -1,7 +1,6 @@
 ---
 title: lencr.org
 slug: lencr.org
-top_graphic: 1
 date: 2021-11-30
 lastmod: 2022-09-30
 show_lastmod: 1

@@ -1,7 +1,6 @@
 ---
 title: 测试环境
 slug: staging-environment
-top_graphic: 1
 date: 2018-01-05
 lastmod: 2022-06-13
 show_lastmod: 1

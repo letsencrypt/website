@@ -1,7 +1,6 @@
 ---
 title: ACME 協定更新紀錄
 slug: acme-protocol-updates
-top_graphic: 1
 lastmod: 2019-10-07
 show_lastmod: 1
 ---

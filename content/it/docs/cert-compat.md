@@ -1,7 +1,6 @@
 ---
 title: Compatibilità del certificato
 slug: certificate-compatibility
-top_graphic: 1
 lastmod: 2021-10-31
 show_lastmod: 1
 ---

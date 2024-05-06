@@ -2,7 +2,6 @@
 title: Sådan fungerer det
 linkTitle: Sådan virker Let's Encrypt
 slug: how-it-works
-top_graphic: 3
 lastmod: 2019-10-18
 show_lastmod: 1
 ---

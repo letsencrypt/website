@@ -2,7 +2,6 @@
 title: නිති පැණ
 linkTitle: නිතර අසන පැණ (නිති පැණ)
 slug: faq
-top_graphic: 1
 lastmod: 2022-06-15
 menu:
   main:

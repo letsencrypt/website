@@ -1,7 +1,6 @@
 ---
 title: 시작하기
 slug: getting-started
-top_graphic: 3
 date: 2020-02-11
 ---
 

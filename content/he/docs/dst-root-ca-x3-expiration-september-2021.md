@@ -1,7 +1,6 @@
 ---
 title: תפוגת התוקף של DST Root CA X3 (ספטמבר 2021)
 slug: dst-root-ca-x3-expiration-september-2021
-top_graphic: 1
 lastmod: 2021-09-30
 menu:
   main:

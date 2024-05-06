@@ -1,7 +1,6 @@
 ---
 title: DST Root CA X3 の失効 (2021年9月)
 slug: dst-root-ca-x3-expiration-september-2021
-top_graphic: 1
 lastmod: 2021-05-07
 show_lastmod: 1
 ---

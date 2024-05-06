@@ -1,7 +1,6 @@
 ---
 title: Ласкаво просимо в ASN.1 і DER
 slug: a-warm-welcome-to-asn1-and-der
-top_graphic: 1
 date: 2020-04-23
 lastmod: 2021-03-21
 ---

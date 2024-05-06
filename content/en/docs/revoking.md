@@ -1,7 +1,6 @@
 ---
 title: Revoking Certificates
 slug: revoking
-top_graphic: 1
 date: 2017-06-08
 lastmod: 2021-10-15
 show_lastmod: 1

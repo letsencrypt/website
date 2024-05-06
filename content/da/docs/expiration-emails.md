@@ -1,7 +1,6 @@
 ---
 title: Udløbs E-Mail
 slug: expiration-emails
-top_graphic: 1
 date: 2016-07-02
 lastmod: 2023-01-09
 show_lastmod: 1

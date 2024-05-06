@@ -2,7 +2,6 @@
 title: Часто поставлені питання
 linkTitle: Часто поставлені питання (FAQ)
 slug: faq
-top_graphic: 1
 lastmod: 2022-06-15
 menu:
   main:

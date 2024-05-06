@@ -1,7 +1,6 @@
 ---
 title: Erste Schritte
 slug: getting-started
-top_graphic: 3
 date: 2020-02-11
 lastmod: 2023-12-20
 ---

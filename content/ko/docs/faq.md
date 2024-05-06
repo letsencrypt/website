@@ -2,7 +2,6 @@
 title: FAQ
 linkTitle: 자주 묻는 질문
 slug: faq
-top_graphic: 1
 lastmod: 2020-04-23
 menu:
   main:

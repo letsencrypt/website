@@ -2,7 +2,6 @@
 title: 联系我们
 slug: contact
 description: 如何联系我们
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

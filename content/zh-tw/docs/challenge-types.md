@@ -1,7 +1,6 @@
 ---
 title: ACME 驗證方式
 slug: challenge-types
-top_graphic: 1
 date: 2019-02-25
 lastmod: 2019-02-25
 ---

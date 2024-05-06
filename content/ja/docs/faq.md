@@ -2,7 +2,6 @@
 title: よくある質問 (FAQ)
 linkTitle: よくある質問 (FAQ)
 slug: faq
-top_graphic: 1
 lastmod: 2020-04-23
 menu:
   main:

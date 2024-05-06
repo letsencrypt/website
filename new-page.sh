@@ -34,7 +34,6 @@ do
 ---
 title: ${title}
 slug: ${slug}
-top_graphic: 1
 lastmod: ${date}
 show_lastmod: false
 ---
@@ -58,7 +57,6 @@ EOF
 ---
 title: ${title}
 slug: ${slug}
-top_graphic: 1
 lastmod: ${date}
 show_lastmod: false
 untranslated: 1

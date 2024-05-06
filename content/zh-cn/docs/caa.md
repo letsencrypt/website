@@ -1,7 +1,6 @@
 ---
 title: 证书颁发机构授权（CAA）
 slug: caa
-top_graphic: 1
 date: 2017-07-27
 lastmod: 2023-08-16
 show_lastmod: 1

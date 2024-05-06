@@ -1,7 +1,6 @@
 ---
 title: Zertifikate für localhost
 slug: certificates-for-localhost
-top_graphic: 1
 date: 2017-12-21
 lastmod: 2017-12-21
 show_lastmod: 1
