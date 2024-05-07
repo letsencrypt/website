@@ -111,6 +111,12 @@ other = "USA users"
 [graph_japan_users]
 other = "Japan users"
 
+[graph_india_users]
+other = "Indian users"
+
+[graph_germany_users]
+other = "German users"
+
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
