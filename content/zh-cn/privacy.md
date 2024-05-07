@@ -1,7 +1,6 @@
 ---
 title: 隐私政策
 slug: privacy
-top_graphic: 4
 lastmod: 2023-08-23
 english_is_canonical: 1
 show_lastmod: 1

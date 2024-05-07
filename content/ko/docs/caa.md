@@ -1,7 +1,6 @@
 ---
 title: 인증기관 허가(CAA, Certificate Authority Authorization)
 slug: caa
-top_graphic: 1
 date: 2017-07-27
 lastmod: 2017-07-27
 show_lastmod: 1

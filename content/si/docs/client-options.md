@@ -1,7 +1,6 @@
 ---
 title: ACME අනුග්‍රාහකය ක්‍රියාවට නැංවීම්
 slug: client-options
-top_graphic: 1
 lastmod: 2020-12-18
 ---
 

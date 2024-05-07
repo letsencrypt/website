@@ -2,7 +2,6 @@
 title: தொடர்பு கொள்ள
 slug: contact
 description: How to contact us
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

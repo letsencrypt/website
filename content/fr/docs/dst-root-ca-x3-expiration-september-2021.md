@@ -1,7 +1,6 @@
 ---
 title: Expiration de l'AC racine X3 de DST (septembre 2021)
 slug: dst-root-ca-x3-expiration-september-2021
-top_graphic: 1
 lastmod: 2021-09-30
 menu:
   main:

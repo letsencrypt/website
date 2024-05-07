@@ -1,7 +1,6 @@
 ---
 title: Implémentations du client ACME
 slug: client-options
-top_graphic: 1
 lastmod: 2022-09-07
 ---
 

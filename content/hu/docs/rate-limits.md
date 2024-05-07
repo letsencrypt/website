@@ -1,7 +1,6 @@
 ---
 title: Határértékek
 slug: rate-limits
-top_graphic: 1
 date: 2018-01-04
 lastmod: 2021-07-12
 show_lastmod: 1

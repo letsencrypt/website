@@ -1,7 +1,6 @@
 ---
 title: Entorno de prueba
 slug: staging-environment
-top_graphic: 1
 date: 2018-01-05
 lastmod: 2019-09-16
 show_lastmod: 1

@@ -1,7 +1,6 @@
 ---
 title: Електронні листи про закінчення терміну дії
 slug: expiration-emails
-top_graphic: 1
 date: 2016-07-02
 lastmod: 2021-09-25
 show_lastmod: 1

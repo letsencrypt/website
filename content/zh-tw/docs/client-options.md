@@ -1,7 +1,6 @@
 ---
 title: ACME 客戶端
 slug: client-options
-top_graphic: 1
 lastmod: 2019-05-24
 ---
 

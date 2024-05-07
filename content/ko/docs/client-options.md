@@ -1,7 +1,6 @@
 ---
 title: ACME 클라이언트 구현
 slug: client-options
-top_graphic: 1
 lastmod: 2020-12-18
 ---
 

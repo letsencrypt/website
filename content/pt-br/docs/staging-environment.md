@@ -1,7 +1,6 @@
 ---
 title: Ambiente de Testes
 slug: staging-environment
-top_graphic: 1
 date: 2018-01-05
 lastmod: 2018-03-12
 show_lastmod: 1

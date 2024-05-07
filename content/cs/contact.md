@@ -2,7 +2,6 @@
 title: Kontakt
 slug: contact
 description: Jak nás kontaktovat
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

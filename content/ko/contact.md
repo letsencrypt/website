@@ -2,7 +2,6 @@
 title: 연락처
 slug: contact
 description: 연락 방법
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

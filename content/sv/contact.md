@@ -2,7 +2,6 @@
 title: Kontakt
 slug: contact
 description: Hur man kontaktar oss
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

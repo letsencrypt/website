@@ -1,7 +1,6 @@
 ---
 title: Pronalaženje ID -ova računa
 slug: account-id
-top_graphic: 1
 date: 2016-08-10
 lastmod: 2019-07-30
 show_lastmod: 1

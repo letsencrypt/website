@@ -2,7 +2,6 @@
 title: 常見問題
 linkTitle: 常見問題 (FAQ)
 slug: faq
-top_graphic: 1
 date: 2017-07-06
 lastmod: 2017-07-06
 menu:

@@ -1,7 +1,6 @@
 ---
 title: 도전 유형
 slug: challenge-types
-top_graphic: 1
 date: 2019-02-25
 lastmod: 2019-02-25
 show_lastmod: 1

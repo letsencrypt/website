@@ -1,7 +1,6 @@
 ---
 title: DST Root CA X3 Expiration (September 2021)
 slug: dst-root-ca-x3-expiration-september-2021
-top_graphic: 1
 lastmod: 2024-02-05
 show_lastmod: 1
 ---

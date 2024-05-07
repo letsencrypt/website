@@ -1,7 +1,6 @@
 ---
 title: Lanac poverenja
 slug: certificates
-top_graphic: 5
 lastmod: 2019-05-01
 show_lastmod: 1
 ---

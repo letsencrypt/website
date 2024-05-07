@@ -1,7 +1,6 @@
 ---
 title: Certifikatets Kompatilitet
 slug: certificate-compatibility
-top_graphic: 1
 lastmod: 2023-08-02
 show_lastmod: 1
 ---

@@ -2,7 +2,6 @@
 title: එය වැඩ කරන්නේ කෙසේද
 linkTitle: ලෙට්'ස් එන්ක්‍රිප්ට් වැඩ කරන්නේ කෙසේද
 slug: how-it-works
-top_graphic: 3
 lastmod: 2019-10-18
 show_lastmod: 1
 ---

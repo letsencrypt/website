@@ -1,7 +1,6 @@
 ---
 title: 验证方式
 slug: challenge-types
-top_graphic: 1
 date: 2019-02-25
 lastmod: 2023-02-13
 show_lastmod: 1

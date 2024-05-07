@@ -2,7 +2,6 @@
 title: Контакти
 slug: contact
 description: Як з нами зв'язатися
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

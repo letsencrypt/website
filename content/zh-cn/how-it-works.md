@@ -2,7 +2,6 @@
 title: Let's Encrypt 的运作方式
 linkTitle: Let's Encrypt 的运作方式
 slug: how-it-works
-top_graphic: 3
 lastmod: 2019-10-18
 show_lastmod: 1
 ---

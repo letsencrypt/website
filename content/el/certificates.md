@@ -2,7 +2,6 @@
 title: Αλυσίδα της Εμπιστοσύνης
 linkTitle: Αλυσίδα εμπιστοσύνης (Πιστοποιητικά Root και Intermediate)
 slug: certificates
-top_graphic: 5
 lastmod: 2021-10-02
 show_lastmod: 1
 ---

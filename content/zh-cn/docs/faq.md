@@ -2,7 +2,6 @@
 title: 常见问题
 linkTitle: 常见问题（FAQ）
 slug: faq
-top_graphic: 1
 lastmod: 2022-09-28
 menu:
   main:

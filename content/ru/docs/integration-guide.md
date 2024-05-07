@@ -2,7 +2,6 @@
 title: Руководство по интеграции
 linkTitle: Руководство по интеграции для клиентов и крупных провайдеров
 slug: integration-guide
-top_graphic: 1
 date: 2016-08-08
 lastmod: 2020-12-8
 show_lastmod: 1

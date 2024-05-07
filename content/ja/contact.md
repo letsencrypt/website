@@ -2,7 +2,6 @@
 title: 連絡先
 slug: contact
 description: 1
-top_graphic: 1
 lastmod: 2023-09-26
 menu:
   main:

@@ -1,7 +1,6 @@
 ---
 title: Σας ευχαριστούμε για τη δωρεά σας στο ISRG
 slug: thankyou
-top_graphic: 2
 date: 2018-04-12
 ---
 
