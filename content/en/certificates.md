@@ -186,7 +186,7 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
 </details>
 
 <details>
-<summary> Delegated OCSP Responder</summary>
+<summary>Delegated OCSP Responder</summary>
 
 This keypair was previously used to sign OCSP responses regarding the status of Let's Encrypt's intermediates on behalf of Let's Encrypt's root, so that the root could remain safely offline. We no longer issue OCSP responses for our intermediates; we instead periodically issue CRLs from our root to convey the revocation status of our intermediates.
 
