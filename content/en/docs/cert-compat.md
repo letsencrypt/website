@@ -1,75 +1,42 @@
 ---
 title: Certificate Compatibility
 slug: certificate-compatibility
-lastmod: 2023-08-02
+lastmod: 2024-05-07
 show_lastmod: 1
 ---
 
 
-The main determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform trusts ISRG's "ISRG Root X1" certificate. Prior to September 2021, some platforms could validate our certificates even though they don't include ISRG Root X1, because they trusted IdenTrust's "DST Root CA X3" certificate. From October 2021 onwards, only those platforms that trust ISRG Root X1 will validate Let's Encrypt certificates ([with the exception of Android][android-compat]).
-
-[android-compat]: /2020/12/21/extending-android-compatibility.html
+The determining factor for whether a platform can validate Let's Encrypt certificates is whether that platform trusts ISRG's "ISRG Root X1" or "ISRG Root X2" certificates. Both of these roots have been included in platform trust stores for several years now (ISRG Root X1 since late 2016, ISRG Root X2 since mid 2022), but it can take much longer for platform updates to be widely installed. Today, trust in ISRG Root X1 is nearly ubiquitous, while trust in ISRG Root X2 is still propagating.
 
 If your certificate validates on some of the "Known Compatible" platforms but not others, the problem may be a web server misconfiguration. If you're having an issue with modern platforms, the most common cause is failure to provide the correct certificate chain. Test your site with [SSL Labs' Server Test](https://www.ssllabs.com/ssltest/). If that doesn't identify the problem, ask for help in our [Community Forums](https://community.letsencrypt.org/).
 
+If your platform is not listed here, we appreciate [pull requests](https://github.com/letsencrypt/website/blob/main/content/en/docs/cert-compat.md) that include documentation of when each root was added to that platform's trust store.
+
 # Platforms that trust ISRG Root X1
 
-* Windows >= XP SP3 ([assuming Automatic Root Certificate Update isn't manually disabled](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/))
-* [macOS >= 10.12.1](https://twitter.com/letsencrypt/status/790960929504497665?lang=en)
-* [iOS >= 10](https://support.apple.com/en-us/HT207177) ([iOS 9 does not include it](https://support.apple.com/en-us/HT205205))
-* [iPhone 5 and above can upgrade to iOS 10](https://en.wikipedia.org/wiki/IPhone_5) and can thus trust ISRG Root X1
-* [Android >= 7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15) (but Android >= 2.3.6 will work by default [due to our special cross-sign](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html))
-* [Mozilla Firefox >= 50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
-* Ubuntu >= Precise Pangolin / 12.04 (with updates applied)
-* [Debian >= jessie / 8](https://packages.debian.org/jessie/all/ca-certificates/filelist) (with updates applied)
-* [Java 8 >= 8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html)
-* [Java 7 >= 7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html)
-* [NSS >= 3.26](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.26_release_notes)
+* Windows >= [XP SP3, Server 2008](https://learn.microsoft.com/en-us/security/trusted-root/participants-list) (unless [Automatic Root Certificate Updates](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733922(v=ws.10)) have been disabled)
+* macOS >= [10.12.1 Sierra](https://support.apple.com/en-us/103425)
+* iOS >= [10](https://support.apple.com/en-us/HT207177)
+* Android >= [7.1.1](https://android.googlesource.com/platform/system/ca-certificates/+/android-7.1.1_r15)
+* Firefox >= [50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
+* Ubuntu >= [12.04 Precise Pangolin](https://launchpad.net/ubuntu/+source/ca-certificates/20161102) (with updates applied)
+* Debian >= [8 / Jessie](https://tracker.debian.org/news/812114/accepted-ca-certificates-20161102-source-all-into-unstable/) (with updates applied)
+* Java >= [7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html), [8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html), [9+](https://www.oracle.com/java/technologies/javase/9-all-relnotes.html#JDK-8177539)
+* NSS >= [3.26](https://nss-crypto.org/reference/security/nss/legacy/nss_releases/nss_3.26_release_notes/index.html)
+* Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (earlier versions use the operating system trust store)
+* PlayStation >= [PS4 v8.0.0](https://web.archive.org/web/20210306180757/https://www.sie.com/content/dam/corporate/jp/guideline/PS4_Web_Content-Guidelines_e.pdf)
 
-Browsers (Chrome, Safari, Edge, Opera) generally trust the same root certificates as the operating system they are running on. Firefox is the exception: it has its own root store. Soon, new versions of Chrome will [also have their own root store][chrome-root-store].
+# Platforms that trust ISRG Root X2
 
-[chrome-root-store]: https://www.chromium.org/Home/chromium-security/root-ca-policy
+* Windows >= [XP SP3, Server 2008](https://learn.microsoft.com/en-us/security/trusted-root/2021/may2021) (unless [Automatic Root Certificate Updates](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733922(v=ws.10)) have been disabled)
+* macOS >= [13](https://support.apple.com/en-us/103100)
+* iOS >= [16](https://support.apple.com/en-us/103100)
+* Android >= [14](https://android.googlesource.com/platform/system/ca-certificates/+/c8d7f51bbb3de2c40a0d868972be008070eb25d8)
+* Firefox >= [97](https://bugzilla.mozilla.org/show_bug.cgi?id=1701317)
+* Ubuntu >= [18.04 Bionic Beaver](https://launchpad.net/ubuntu/+source/ca-certificates/20230311) (with updates applied)
+* Debian >= [11 / Bullseye](https://tracker.debian.org/news/1426477/accepted-ca-certificates-20230311-source-into-unstable/) (with updates applied)
+* Java >= [21.0.2](https://jdk.java.net/21/release-notes)
+* NSS >= [3.74](https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html)
+* Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (earlier versions use the operating system trust store)
 
-# Platforms that trust DST Root CA X3 but not ISRG Root X1
-
-These platforms would have worked up to September 2021 but will no longer
-validate Let's Encrypt certificates.
-
-* macOS < 10.12.1
-* iOS < 10
-* Mozilla Firefox < 50
-* Ubuntu >= intrepid / 8.10
-* [Debian >= squeeze / 6](https://twitter.com/TokenScandi/status/600806080684359680) and < jessie /8
-* Java 8 >= 8u101 and < 8u141
-* Java 7 >= 7u111 and < 7u151
-* NSS >= v3.11.9 and < 3.26
-* Amazon FireOS (Silk Browser) (version range unknown)
-* Cyanogen > v10 (version that added ISRG Root X1 unknown)
-* Jolla Sailfish OS > v1.1.2.16 (version that added ISRG Root X1 unknown)
-* Kindle > v3.4.1 (version that added ISRG Root X1 unknown)
-* Blackberry >= 10.3.3 (version that added ISRG Root X1 unknown)
-* PS4 game console with firmware >= 5.00 (version that added ISRG Root X1 unknown)
-
-# Known Incompatible
-
-* Blackberry < v10.3.3
-* Android < v2.3.6
-* Nintendo 3DS
-* Windows XP prior to SP3
-  * cannot handle SHA-2 signed certificates
-* Java 7 < 7u111
-* Java 8 < 8u101
-* Windows Live Mail (2012 mail client, not webmail)
-  * cannot handle certificates without a CRL
-* PS3 game console
-* PS4 game console with firmware < 5.00
-
-# ISRG Root X2 (new ECDSA root) - coming soon
-
-We have submitted ISRG Root X2 to the Microsoft, Apple, Google, Mozilla, and Oracle root programs for inclusion.
-
-ISRG Root X2 is already widely trusted via a cross-sign from our ISRG Root X1. Additionally, several root programs have already added ISRG Root X2 as a trust anchor.
-
-For more information about inclusion status, check out our [community forum post](https://community.letsencrypt.org/t/isrg-root-x2-submitted-to-root-programs/149385).
-
-While we wait for ISRG Root X2 to become widely trusted, it's possible to opt-in to use ISRG Root X2 for your ECDSA certificates. For more information, see our [community forum post](https://community.letsencrypt.org/t/root-x2-alternate-chain-for-ecdsa-opt-in-accounts/202884).
+In addition, all platforms which trust ISRG Root X1 also trust the [cross-signed version of ISRG Root X2](/certificates#root-cas).
