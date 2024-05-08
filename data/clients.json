@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-03-18",
+	"lastmod": "2024-05-08",
 	"categories": [
 		"Bash",
 		"C",
@@ -357,6 +357,22 @@
 			"url": "https://github.com/jpawlowski/acme_proxy.php",
 			"category": "nginx",
 			"comments": "(Reverse proxy to serve multiple internal servers based on internal DNS)"
+		},
+		{
+			"name": "lua-resty-acme",
+			"url": "https://github.com/fffonion/lua-resty-acme",
+			"category": "nginx",
+			"acme_v2": "true",
+			"challenges": {
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "Angie ACME",
+			"url": "https://angie.software/en/configuration/modules/http_acme/",
+			"category": "nginx",
+			"comments": "(built-in module, no extra dependencies, simple configuration, reload-less auto retrieval)",
+			"acme_v2": "true"
 		},
 		{
 			"name": "Greenlock for Commandline",
@@ -851,15 +867,6 @@
 			"url": "https://github.com/acmephp/core",
 			"library": "PHP",
 			"acme_v2": "true"
-		},
-		{
-			"name": "lua-resty-acme",
-			"url": "https://github.com/fffonion/lua-resty-acme",
-			"category": "nginx",
-			"acme_v2": "true",
-			"challenges": {
-				"TLS-ALPN-01": "true"
-			}
 		},
 		{
 			"name": "acertmgr",
