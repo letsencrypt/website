@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2024-05-07
+lastmod: 2024-05-09
 show_lastmod: 1
 ---
 
@@ -25,7 +25,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
 * **ISRG Root X1**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X1`
   * Key type: `RSA 4096`
-  * Validity: until 2030-06-04 (generated 2015-06-04)
+  * Validity: until 2035-06-04 (generated 2015-06-04)
   * CA details: [crt.sh](https://crt.sh/?caid=7394), [issued certs](https://crt.sh/?Identity=%25&iCAID=7394)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certificate details (cross-signed by DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retired)
@@ -33,7 +33,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
 * **ISRG Root X2**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Key type: `ECDSA P-384`
-  * Validity: until 2035-09-04 (generated 2020-09-04)
+  * Validity: until 2040-09-17 (generated 2020-09-04)
   * CA details: [crt.sh](https://crt.sh/?caid=183269), [issued certs](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
