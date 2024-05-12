@@ -2,7 +2,13 @@
 title: Початок роботи
 slug: getting-started
 date: 2020-02-11
+lastmod: 2023-12-20
 ---
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+  <div>URL-адреса каталогу Let's Encrypt ACME наступна:</div>
+  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
+</div>
 
 Для ввімкнення HTTPS на вашому сайті, вам потрібно отримати сертифікат (тип файлу) від Центру сертифікації (ЦС). Let's Encrypt - це ЦС. Для того, щоб отримати сертифікат для домену вашого сайту від Let's Encrypt, вам потрібно продемонструвати контроль над доменом. За допомогою Let's Encrypt ви робите це за допомогою програмного забезпечення, яке використовує протокол [ACME](https://tools.ietf.org/html/rfc8555), який зазвичай працює на вашому веб-хостингу.
 
