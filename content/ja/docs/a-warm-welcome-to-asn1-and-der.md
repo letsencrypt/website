@@ -465,7 +465,7 @@ BER および DER はどちらも、整数を可能な限り最短の形式で�
 
 これは一般的な変換です。BER (または DER) としてエンコードされた負の数に対しては、その前にプレフィックスとして11111111を付けると同じ数になります。 これは[符号拡張](https://andybargh.com/binary-sign-extension/)と呼ばれます。 また、値のエンコーディングが11111111で始まる負の数がある場合は、そのバイトを削除しても同じ値になります。 そのため、BER と DER には最短のエンコーディングが必要です。
 
-INTEGER の2の補数のエンコーディングは[証明書発行に実際的な影響](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758)を与えます。 最初のビットは常に符号ビットであるため、8バイトとして DER でエンコードされたシリアル番号の長さは最大で63ビットになることを意味します。 64ビットの正のシリアル番号をエンコードするには、9バイトのエンコードされた値(最初のバイトはゼロ) が必要です。
+INTEGER の 2 の補数のエンコーディングは[証明書発行に実際的な影響](https://bugzilla.mozilla.org/buglist.cgi?query_format=specific&order=relevance%20desc&bug_status=__closed__&product=NSS&content=%E2%80%9CSerial%20entropy%E2%80%9D&comments=0&list_id=16028758)を与えます: RFC 5280 によりシリアル番号は正でなければなりません。 最初のビットは常に符号ビットであるため、8バイトとして DER でエンコードされたシリアル番号の長さは最大で63ビットになることを意味します。 64ビットの正のシリアル番号をエンコードするには、9バイトのエンコードされた値(最初のバイトはゼロ) が必要です。
 
 以下に、値が2<sup>63</sup>+1 の INTEGER のエンコーディング (これは64ビットの正の数です) の例を示します。
 
