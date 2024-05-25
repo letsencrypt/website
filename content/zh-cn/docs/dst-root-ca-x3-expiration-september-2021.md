@@ -1,15 +1,13 @@
 ---
 title: DST Root CA X3 到期(2021年9月)
 slug: dst-root-ca-x3-expiration-september-2021
-lastmod: 2021-09-30
-menu:
-  main:
-    weight: 30
-    parent: about
+lastmod: 2024-02-05
 show_lastmod: 1
 ---
 
-> **2021年9月30日更新** 按计划 DST Root CA X3 交叉签名已经过期，现在将由我们的 ISRG Root X1 提供受所有设备信任的服务 详细计划，请见下文！ 当然，我们也在社区论坛上更新了我们的生产流程信息 —— 如果对此有任何问题或者疑问 [请点击这里，我们将随时等候您的到来](https://community.letsencrypt.org/t/production-chain-changes/150739/4)。
+> **2024 年 2 月 5 日更新**：经过了两年的时间，下文所述用于兼容 Android 的交叉签名也已临近到期。 请参阅[我们近期的博客文章](https://letsencrypt.org/2023/07/10/cross-sign-expiration)详细了解 2024 年将要发生的变化。
+
+> **2021 年 9 月 30 日更新**：DST Root CA X3 的交叉签名已如期失效，现在几乎所有设备的证书信任都由我们自己的 ISRG Root X1 根证书实现。 详细计划，请见下文！ 我们也在社群论坛上更新了关于生产环境证书链变化的讨论帖，如果您对此有任何疑问，[我们的团队和社群都将倾力相助](https://community.letsencrypt.org/t/production-chain-changes/150739/4)。
 
 2021年9月30日，旧浏览器和设备信任Let’s Encrypt 证书的方式会有一些微小的变化。 如果您运行的是一个常规的网站， 您不会注意到任何变化，绝大多数访客仍然会接受您的 Let’s Encrypt 证书。 如果您提供 API 或必须支持物联网设备，您可能需要多注意更改。
 

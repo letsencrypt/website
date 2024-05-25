@@ -2,7 +2,7 @@
 title: アカウント ID を見つける
 slug: account-id
 date: 2016-08-10
-lastmod: 2019-07-30
+lastmod: 2021-12-27
 show_lastmod: 1
 ---
 
@@ -11,6 +11,6 @@ show_lastmod: 1
 
 あなたのアカウント ID は、`https://acme-v02.api.letsencrypt.org/acme/acct/12345678` という形式の URL で表されます。
 
-Certbot を使用している場合、`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` ファイル内の "uri" フィールドを見ると確認できます。
+[Certbot](https://certbot.eff.org/) のバージョン 1.23.0 以上を使用している場合、`certbot show_account` サブコマンドを実行してください。 バージョン 1.23.0 未満の Certbot を使用している場合、アカウント ID は`/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` ファイル内の "uri" フィールドを見ると確認できます。
 
 その他の ACME クライアントを使用している場合は、確認するために必要な操作はクライアントに依存します。 上記の形式の URL を log から探してみてください。 ACME クライアントがアカウント ID を記録していない場合でも、同一のキーを使用して新規登録リクエストを送信することで ID を取得できます。 詳しくは、[ ACME の仕様](https://tools.ietf.org/html/rfc8555#section-7.3)を読んでください。 ACME クライアントが生成する各 POST に対するレスポンスの中の Boulder-Requester ヘッダでも、数値形式の ID が確認できます。
