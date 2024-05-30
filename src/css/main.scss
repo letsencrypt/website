@@ -69,6 +69,12 @@ article.post-content p img {
   display: block;
 }
 
+.blog-post-image figcaption {
+  font-size: 80%;
+  color: #888;
+  text-align: center;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "fundraiser", "waiting", "single-pages";
