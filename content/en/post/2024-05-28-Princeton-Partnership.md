@@ -1,6 +1,6 @@
 ---
 author: Sarah McClure
-date: 2024-05-28T00:00:00Z
+date: 2024-05-30T00:00:00Z
 slug: Princeton-Partnership
 title: "Let’s Encrypt Continues Partnership with Princeton to Bolster Internet Security"
 excerpt: "Increasing defense against BGP attacks thanks to support from the Open Technology Fund."
