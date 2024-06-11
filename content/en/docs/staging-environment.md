@@ -27,7 +27,7 @@ The staging environment uses the same rate limits as [described for the producti
 
 # Staging Certificate Hierarchy
 
-The staging environment has a certificate hierarchy that [mimics production](/certificates).
+The staging environment has a certificate hierarchy that [mimics production](/certificates). The names have been modified with a prefix of (STAGING) and unique name to make them clearly distinct from their production counterparts.
 
 ## Root CAs
 
@@ -49,10 +49,16 @@ If you wish to modify a test-only client to trust the staging environment for te
 
 The staging environment has four active intermediate certificates, issued from the untrusted roots detailed above. Currently, these are:
 
-* (STAGING) Psuedo Plum E5
+* (STAGING) Pseudo Plum E5
 * (STAGING) False Fennel E6
+* (STAGING) Puzzling Parsnip E7
+* (STAGING) Mysterious Mulberry E8
+* (STAGING) Fake Fig E9
 * (STAGING) Counterfeit Cashew R10
 * (STAGING) Wannabe Watercress R11
+* (STAGING) Riddling Rhubarb R12
+* (STAGING) Tenuous Tomato R13
+* (STAGING) Not Nectarine R14
 
 These intermediates are subject to change at any time, and should not be pinned or trusted by any system. In general, you can expect the staging intermediates to parallel the corresponding production (trusted) intermediates. If strictly necessary, you can get full certificate details [here](https://github.com/letsencrypt/website/blob/main/static/certs/staging).
 
