@@ -1,0 +1,50 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            bb:0b:32:66:26:ba:66:57:3c:bc:65:7e:58:be:4c:f6
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Validity
+            Not Before: Mar 13 00:00:00 2024 GMT
+            Not After : Mar 12 23:59:59 2027 GMT
+        Subject: C = US, O = (STAGING) Let's Encrypt, CN = (STAGING) Pseudo Plum E5
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:e5:8d:b6:dc:57:e9:aa:59:96:b7:83:ec:f4:6c:
+                    33:ae:06:96:4e:b5:b8:b8:f2:22:bd:ae:32:ed:3d:
+                    d4:54:d1:6b:20:56:9e:77:31:6d:e7:5c:55:3a:a9:
+                    56:15:cc:46:1a:61:de:8f:4a:67:9c:d1:38:f7:47:
+                    9c:c4:a7:9f:c5:f9:cb:8e:8d:37:61:dc:09:13:33:
+                    36:26:d6:d9:1f:96:87:0f:04:de:40:3c:76:19:fb:
+                    be:96:c5:96:9d:ab:e5
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                FC:46:D1:01:43:5F:BB:7B:A6:3D:30:68:AE:11:BA:E0:BC:6D:C9:D3
+            X509v3 Authority Key Identifier: 
+                DE:D1:A3:59:64:0E:C1:9A:36:A3:46:EE:B0:10:76:EF:AE:97:95:66
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x2.i.lencr.org/
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://stg-x2.c.lencr.org/
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:66:02:31:00:98:61:b0:6b:92:02:c0:59:ab:a4:f2:74:75:
+        d6:a2:00:b8:f8:5f:c3:86:fa:76:89:5c:a7:1c:86:6a:46:56:
+        24:c2:ff:6f:f0:17:67:29:7c:a3:3d:57:eb:89:15:e9:3a:02:
+        31:00:a1:1b:d0:58:a9:ce:29:9e:ca:b5:f5:fc:a3:31:24:c1:
+        0d:33:c8:a6:12:5b:af:9e:55:fa:db:e2:fd:cf:81:e5:df:74:
+        33:23:44:af:64:98:4e:53:7f:f4:8f:f8:40:84
