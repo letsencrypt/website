@@ -47,7 +47,7 @@ If you wish to modify a test-only client to trust the staging environment for te
 
 ## Subordinate (Intermediate) CAs
 
-The staging environment has four active intermediate certificates, issued from the untrusted roots detailed above. Currently, these are:
+The staging environment has intermediate certificates that mimic production, issued from the untrusted roots detailed above. Like in production, not all are in use at any time. The full list of current intermediates is:
 
 * (STAGING) Pseudo Plum E5
 * (STAGING) False Fennel E6
