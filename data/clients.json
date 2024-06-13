@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-03-18",
+	"lastmod": "2024-04-19",
 	"categories": [
 		"Bash",
 		"C",
@@ -1106,6 +1106,19 @@
 			"acme_v2": "true",
 			"challenges": {
 				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Cert Warden",
+			"url": "https://www.certwarden.com",
+			"category": "Go",
+			"comments": "(Server to centrally manage and serve certificates)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
 				"DNS-01": "true",
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
