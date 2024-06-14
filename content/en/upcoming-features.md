@@ -1,7 +1,7 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2023-06-14
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
