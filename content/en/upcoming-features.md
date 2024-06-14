@@ -13,7 +13,7 @@ For announcements of upcoming changes, please see the [API Announcements](https:
 
 * Enabled: June 06, 2024
 
-We are issuing certificates from our production ECDSA intermediates to ECDSA leaf certificates. See the [Certificates](/certificates/) documentation for full details on our PKI hierarchy.
+We are issuing certificates from our production ECDSA intermediates to ECDSA leaf certificates. See the [Chains of Trust](/certificates/) documentation for full details on our PKI hierarchy.
 
 ## ACME Renewal Information (ARI)
 
