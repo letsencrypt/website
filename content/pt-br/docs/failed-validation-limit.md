@@ -1,7 +1,7 @@
 ---
 title: Limite de Validação Mal-sucedida
 slug: failed-validation-limit
-lastmod: 2022-06-30
+lastmod: 2024-06-21
 show_lastmod: false
 ---
 
@@ -19,7 +19,7 @@ As 'autorizações' a que esse erro se refere são o resultado de solicitações
 
 Os assinantes que atingem o limite de Validação Mal-sucedida frequentemente o fazem devido a uma má configuração em seu ambiente.
 
-## HTTP-01 ou TLS-APLN-01
+## HTTP-01 ou TLS-ALPN-01
 
 Para cliente ACME que solicitam autorização por meio dos métodos de validação HTTP-01 ou TLS-APLN-01, o problema geralmente decorre de uma configuração de rede ou firewall que impede que nossos servidores de validação alcancem o servidor a partir do qual a solicitação foi enviada.
 

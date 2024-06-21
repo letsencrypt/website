@@ -1,7 +1,7 @@
 ---
 title: 验证失败限制
 slug: failed-validation-limit
-lastmod: 2022-06-30
+lastmod: 2024-06-21
 show_lastmod: false
 ---
 
@@ -19,7 +19,7 @@ too many failed authorizations recently: see https://letsencrypt.org/docs/failed
 
 订阅者由于环境中的配置错误，常常触及失败的验证限制。
 
-## HTTP-01或TLS-APLN-01
+## HTTP-01或TLS-ALPN-01
 
 对于通过 HTTP-01 或 TLS-APLN-01 验证方法请求授权的 ACME 客户端，问题通常源于网络或防火墙配置，这使得我们的验证服务器无法访问发送请求的服务器。
 

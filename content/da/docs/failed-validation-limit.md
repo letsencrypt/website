@@ -1,7 +1,7 @@
 ---
 title: Grænse For Mislykket Validering
 slug: failed-validation-limit
-lastmod: 2022-06-30
+lastmod: 2024-06-21
 show_lastmod: false
 ---
 
@@ -19,7 +19,7 @@ De »tilladelser«, som denne fejl henviser til, er resultatet af anmodninger om
 
 Abonnenter, der rammer grænsen for fejlvalidering, gør det ofte på grund af en fejlkonfiguration i deres miljø.
 
-## HTTP-01 eller TLS-APLN-01
+## HTTP-01 eller TLS-ALPN-01
 
 For ACME-klienter, der anmoder om tilladelse via HTTP-01 eller TLS-APLN-01 valideringsmetoderne problemet stammer normalt fra et netværk eller en firewall konfiguration, som gør det umuligt for vores valideringsservere at nå frem til den server, som anmodningen blev sendt fra.
 

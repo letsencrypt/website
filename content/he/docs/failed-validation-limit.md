@@ -1,7 +1,7 @@
 ---
 title: מגבלת אימות כושל
 slug: failed-validation-limit
-lastmod: 2022-06-30
+lastmod: 2024-06-21
 show_lastmod: false
 ---
 
@@ -19,7 +19,7 @@ too many failed authorizations recently: see https://letsencrypt.org/docs/failed
 
 מנויים שניצלו את מיכסת האימותים הכושלים שלהם בדרך כלל הגיעו לכך עקב הגדרות שגויות בסביבה שלהם.
 
-## HTTP-01 או TLS-APLN-01
+## HTTP-01 או TLS-ALPN-01
 
 ללקוחות ACME שדורשים אימות דרך שיטות התיקוף HTTP-01 או TLS-APLN-01, הבעיה בדרך כלל נגרמת מהגדרות רשת או חומת אש שגויות שלא מאפשרים לשרתי התיקוף שלנו להגיע לשרת ממנו נשלחה הבקשה.
 
