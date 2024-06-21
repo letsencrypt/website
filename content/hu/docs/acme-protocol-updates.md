@@ -9,7 +9,7 @@ A Let's Encrypt működésének alapköve a [IETF-szabványosított](https://let
 
 # API endpointok
 
-Jelenleg a következő API endpointokkal rendelkezünk. Kérjük, tekintse meg [a különbözőségekről szóló dokumentációt](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), hogy összehasonlítsa a megvalósításukat az ACME specifikációval.
+Jelenleg a következő API endpointokkal rendelkezünk. Kérjük, tekintse meg [a különbözőségekről szóló dokumentációt](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), hogy összehasonlítsa a megvalósításukat az ACME specifikációval.
 
 ## ACME v2 (RFC 8555)
 

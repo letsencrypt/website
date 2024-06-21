@@ -9,7 +9,7 @@ ACME 프로토콜은 Let's Encrypt가 작동하는 방식의 기초입니다. �
 
 # 현재 구현된 ACME 버전
 
-저희는 다음과 같은 API 엔드포인트를 가지고 있습니다. 이들은 프로토콜 문서 초안과 함께 발전하면서 하나로 고정된 ACME 사양의 초안을 구현하는 것은 아닙니다. 현재 구현된 ACME 초안과 비교하기 위해[각기 다른 문서](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 참조하십시오.
+저희는 다음과 같은 API 엔드포인트를 가지고 있습니다. 이들은 프로토콜 문서 초안과 함께 발전하면서 하나로 고정된 ACME 사양의 초안을 구현하는 것은 아닙니다. 현재 구현된 ACME 초안과 비교하기 위해[각기 다른 문서](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)를 참조하십시오.
 
 ## ACME v2
 

@@ -11,7 +11,7 @@ show_lastmod: 1
 
 Let's Encrypt の証明書を失効すると、Let's Encrypt は失効情報を [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) を用いて公開します。一部のブラウザは OCSP をチェックして証明書が信頼するべきかどうか確認します。 ただし、OCSP には[いくつかの基礎的な問題](https://www.imperialviolet.org/2011/03/18/revocation.html)があるため、すべてのブラウザがチェックするわけではないことに注意してください。 それでも、侵害された秘密鍵に対応する証明書を失効することは重要です。また、Let's Encrypt の [Subscriber Agreement](/repository) でも義務づけられています。
 
-Let's Encrypt で証明書を失効するには、[ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) を使用しますが、通常は [Certbot](https://certbot.eff.org/) などのACME クライアントを使用します。 証明書の失効をするには、Let's Encrypt に対して失効の権限があることを証明しなければなりません。 証明の方法は３つあります。
+Let's Encrypt で証明書を失効するには、[ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) を使用しますが、通常は [Certbot](https://certbot.eff.org/) などのACME クライアントを使用します。 証明書の失効をするには、Let's Encrypt に対して失効の権限があることを証明しなければなりません。 証明の方法は３つあります。
 
 # 証明書を発行したアカウントから行う方法
 

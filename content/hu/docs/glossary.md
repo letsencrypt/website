@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} Egy olyan program, amely képes kommunikálni egy ACME szerverrel, hogy [tanúsítványt](#def-leaf) kérjen. {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} Egy ACME-kompatibilis szerver, amely képes [tanúsítványokat](#def-leaf) generálni. A Let's Encrypt szoftvere, a [Boulder](#def-boulder) ACME-kompatibilis, [némi eltéréssel](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} Egy ACME-kompatibilis szerver, amely képes [tanúsítványokat](#def-leaf) generálni. A Let's Encrypt szoftvere, a [Boulder](#def-boulder) ACME-kompatibilis, [némi eltéréssel](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} Az ACME-t alkalmazó szoftver, amelyet a [Let's Encrypt](#def-LE) fejlesztett ki és használ. [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 

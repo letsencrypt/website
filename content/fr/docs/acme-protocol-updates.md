@@ -10,7 +10,7 @@ Le protocole ACME [normalisé par l'IETF](https://letsencrypt.org/2019/03/11/acm
 
 # Points d'entré de l'API
 
-Nous disposons actuellement des points de terminaison API suivants. Veuillez consulter [notre documentation sur les différences](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) pour comparer leur mise en œuvre à la spécification ACME.
+Nous disposons actuellement des points de terminaison API suivants. Veuillez consulter [notre documentation sur les différences](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) pour comparer leur mise en œuvre à la spécification ACME.
 
 ## ACME v2 (RFC 8555)
 

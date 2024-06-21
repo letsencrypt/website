@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} ACME 客戶端。能 ACME 伺服器溝通，以請求[憑證](#def-leaf)的軟體。{{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} ACME 伺服器。相容 ACME 協定的伺服器。Let's Encrypt 的軟體 [Boulder](#def-boulder) 相容 ACME 協定，但是還[是有一些差異](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)。 {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} ACME 伺服器。相容 ACME 協定的伺服器。Let's Encrypt 的軟體 [Boulder](#def-boulder) 相容 ACME 協定，但是還[是有一些差異](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)。 {{% /def %}}
 
 
 {{% def id="boulder" name="Boulder" %}} 由 [Let's Encrypt](#def-LE) 開發和使用，以實作 ACME 協議的軟體。[GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
