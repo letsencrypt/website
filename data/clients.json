@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-03-18",
+	"lastmod": "2024-05-08",
 	"categories": [
 		"Bash",
 		"C",
@@ -429,12 +429,6 @@
 		{
 			"name": "LE Manager",
 			"url": "https://github.com/analogic/lemanager",
-			"category": "PHP"
-		},
-		{
-			"name": "Hiawatha",
-			"url": "https://www.hiawatha-webserver.org/letsencrypt",
-			"acme_v2": "true",
 			"category": "PHP"
 		},
 		{
