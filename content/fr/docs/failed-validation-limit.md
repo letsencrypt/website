@@ -1,7 +1,7 @@
 ---
 title: Limite de validation dépassée
 slug: failed-validation-limit
-lastmod: 2022-06-30
+lastmod: 2024-06-21
 show_lastmod: false
 ---
 
@@ -19,7 +19,7 @@ Les "autorisations" auxquelles cette erreur fait référence sont le résultat d
 
 Les abonnés qui dépassent la limite de validation le font souvent en raison d'une mauvaise configuration de leur environnement.
 
-## HTTP-01 ou TLS-APLN-01
+## HTTP-01 ou TLS-ALPN-01
 
 Pour les clients ACME qui demandent une autorisation via les méthodes de validation HTTP-01 ou TLS-APLN-01, le problème provient généralement d'une configuration de réseau ou de pare-feu qui empêche nos serveurs de validation d'atteindre le serveur d'où provient la demande.
 
