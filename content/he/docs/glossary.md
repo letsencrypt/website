@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" english="ACME Client" name="לקוח ACME‏" %}} תכנית שיכולה לתקשר עם שרת ACME כדי לבקש [אישור](#def-leaf). {{% /def %}}
 
-{{% def id="ACME-server" english="ACME Server" name="שרת ACME‏" %}} שרת תואם ACME שיכול לייצר [אישורים](#def-leaf). התכנית שלLet's Encrypt,‏ [Boulder](#def-boulder), היא תואמת ACME [עם מספר שינויים קלים](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" english="ACME Server" name="שרת ACME‏" %}} שרת תואם ACME שיכול לייצר [אישורים](#def-leaf). התכנית שלLet's Encrypt,‏ [Boulder](#def-boulder), היא תואמת ACME [עם מספר שינויים קלים](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="בולדר" english="Boulder" %}} התכנית שמממשת את ACME, בפיתוח ובשימוש של [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 

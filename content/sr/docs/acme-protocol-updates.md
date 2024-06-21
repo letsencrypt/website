@@ -9,7 +9,7 @@ show_lastmod: 1
 
 # Krajnje tačke API-a
 
-Trenutno raspolažemo sa sledećim API okruženjem. Molimo Vas da pogledate [našu dokumentaciju o razlikama](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) kako bi ste bili u mogućnosti da izvršite poređenje implementacije u skladu sa ACME specifikacijom.
+Trenutno raspolažemo sa sledećim API okruženjem. Molimo Vas da pogledate [našu dokumentaciju o razlikama](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) kako bi ste bili u mogućnosti da izvršite poređenje implementacije u skladu sa ACME specifikacijom.
 
 ## ACME v2 (RFC 8555)
 

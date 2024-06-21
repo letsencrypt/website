@@ -11,7 +11,7 @@ Kun varmenne ei ole enää turvallista käyttää, sinun pitäisi kumota se. Nä
 
 Kun kumoat Let's Encrypt -varmenteen, Let's Encrypt julkaisee kumoamistiedot [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)-protokollan välityksellä ja eräät verkkoselaimet tarkistavat OCSP:ta nähdäkseen, pitäisikö niiden luottaa varmenteeseen. Huomaa, että OCSP [kärsii joistakin perustavanlaatuisista ongelmista](https://www.imperialviolet.org/2011/03/18/revocation.html), joten kaikki verkkoselaimet eivät suorita tätä tarkistusta. Silti, vaarantuneita yksityisiä avaimia vastaavien varmenteiden kumoaminen on tärkeä käytäntö ja Let's Encryptin [tilaajasopimus](/repository) edellyttää sitä.
 
-Kumottaaksesi varmenteen Let's Encryptillä, käytä [ACME-API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), todennäköisimmin ACME-asiakasohjelman välityksellä, kuten [Certbot](https://certbot.eff.org/). Sinun täytyy todistaa Let's Encryptille, että sinulla on valtuudet varmenteen kumoamiseen. Voit tehdä tämän kolmella tavalla: varmenteen myöntäneeltä tililtä, käyttämällä eri valtuutettua tiliä tai käyttämällä varmenteen yksityistä avainta.
+Kumottaaksesi varmenteen Let's Encryptillä, käytä [ACME-API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), todennäköisimmin ACME-asiakasohjelman välityksellä, kuten [Certbot](https://certbot.eff.org/). Sinun täytyy todistaa Let's Encryptille, että sinulla on valtuudet varmenteen kumoamiseen. Voit tehdä tämän kolmella tavalla: varmenteen myöntäneeltä tililtä, käyttämällä eri valtuutettua tiliä tai käyttämällä varmenteen yksityistä avainta.
 
 # Syykoodin määrittäminen
 

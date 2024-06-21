@@ -11,7 +11,7 @@ Ha egy tanúsítványhoz tartozó privát kulcs már nem biztonságos, akkor a t
 
 Amikor Ön visszavonja a Let's Encrypt tanúsítványt, a Let's Encrypt közzéteszi a visszavonási információt az [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) protokollon keresztül, egyes böngészők pedig ellenőrzik az OCSP-t, hogy megállapítsák, meg kell-e bízniuk a tanúsítványban. Vegye figyelembe, hogy az OCSP-nek [van néhány alapvető problémája](https://www.imperialviolet.org/2011/03/18/revocation.html), ezért nem minden böngésző végzi el ezt az ellenőrzést. Ennek ellenére a veszélyeztetett privát kulcsokhoz tartozó tanúsítványok visszavonása fontos gyakorlat, és a Let's Encrypt [előfizetői megállapodása](/repository) előírja.
 
-A tanúsítvány visszavonásához a Let's Encrypt segítségével használja a [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)-t, egy ACME kliensen keresztül, mint amilyen például [Certbot](https://certbot.eff.org/). Bizonyítania szükséges a Let's Encrypt számára, hogy jogosult a tanúsítvány visszavonására. Ennek háromféle módja van:
+A tanúsítvány visszavonásához a Let's Encrypt segítségével használja a [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)-t, egy ACME kliensen keresztül, mint amilyen például [Certbot](https://certbot.eff.org/). Bizonyítania szükséges a Let's Encrypt számára, hogy jogosult a tanúsítvány visszavonására. Ennek háromféle módja van:
 
 # A tanúsítványt kiállító fiókból
 

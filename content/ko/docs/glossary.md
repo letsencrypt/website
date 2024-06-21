@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} ACME 서버와 통신하여 [인증서](#def-leaf)를 요청할 수 있는 프로그램입니다. {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} [인증서](#def-leaf)를 생성할 수 있는 ACME 호환 서버입니다. Let's Encrypt의 소프트웨어인 [Bolder](#def-boulder)는 ACME와 호환되며, [일부 차이점이 있습니다](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} [인증서](#def-leaf)를 생성할 수 있는 ACME 호환 서버입니다. Let's Encrypt의 소프트웨어인 [Bolder](#def-boulder)는 ACME와 호환되며, [일부 차이점이 있습니다](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} [Let's Encrypt](#def-LE)에서 개발하고 사용하는 ACME를 구현하는 소프트웨어입니다. [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 

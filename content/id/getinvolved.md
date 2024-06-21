@@ -24,7 +24,7 @@ Kita juga bisa menggunakan bantuan dengan pengembangan perangkat lunak. Semua ko
 
 ### Perangkat Lunak CA Sisi Peladen
 
-[Boulder](https://github.com/letsencrypt/boulder) adalah implementasi CA Let's Encrypt. Ini berdasarkan pada protokol [ACME](https://tools.ietf.org/html/rfc8555) dan ditulis terutama dalam Go. Sebuah tempat yang bagus untuk memulai adalah dengan daftar [masalah 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) dan [petunjuk kontributor](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) adalah implementasi CA Let's Encrypt. Ini berdasarkan pada protokol [ACME](https://tools.ietf.org/html/rfc8555) dan ditulis terutama dalam Go. Sebuah tempat yang bagus untuk memulai adalah dengan daftar [masalah 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) dan [petunjuk kontributor](https://github.com/letsencrypt/boulder/blob/main/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

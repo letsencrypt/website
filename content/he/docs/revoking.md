@@ -11,7 +11,7 @@ show_lastmod: 1
 
 בעת שלילת אישור של Let's Encrypt, פרטים על השלילה הזאת יפורסמו על ידיLet's Encrypt דרך [Online Certificate Status Protocol(פרוטוקול מצב אישור מקוון - OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), וחלק מהדפדפנים יבדקו את OCSP כדי לבדוק האם עליהם לתת אמון באישור. נא לשים לב של־OCSP [יש כמה תקלות יסודיות](https://www.imperialviolet.org/2011/03/18/revocation.html), לכן לא כל הדפדפנים יבצעו את הבדיקה הזו. עם זאת, שלילת אישורים בתגובה למפתחות פרטיים שנפגעו היא דרך התנהלות חשובה והיא נדרשת על ידי [הסכם המנוי](/repository) של Let's Encrypt.
 
-כדי לשלול אישור עם Let's Encrypt, יהיה עליך להשתמש ב־[API של ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), ככל הנראה דרך לקוח ACME כגון [Certbot](https://certbot.eff.org/). יהיה עליך להוכיח ל־Let's Encrypt שיש לך הרשאה לשלול את האישור. יש שלוש דרכים לעשות זאת: מהחשבון שהנפיק את האישור באמצעות חשבון מאומת אחר או באמצעות המפתח הפרטי של האישור.
+כדי לשלול אישור עם Let's Encrypt, יהיה עליך להשתמש ב־[API של ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), ככל הנראה דרך לקוח ACME כגון [Certbot](https://certbot.eff.org/). יהיה עליך להוכיח ל־Let's Encrypt שיש לך הרשאה לשלול את האישור. יש שלוש דרכים לעשות זאת: מהחשבון שהנפיק את האישור באמצעות חשבון מאומת אחר או באמצעות המפתח הפרטי של האישור.
 
 # ציון קוד סיבה
 

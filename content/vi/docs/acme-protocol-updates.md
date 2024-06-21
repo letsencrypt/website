@@ -13,7 +13,7 @@ tiêu chuẩn hoá theo IETF, [RFC 8555](https://datatracker.ietf.org/doc/rfc855
 
 # API Endpoints
 
-Chúng tôi hiện có các API endpoint sau. Vui lòng xem [tài liệu phân kỳ của chúng tôi](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) Để so sánh việc triển khai chúng với tài liệu đặc tả ACME.
+Chúng tôi hiện có các API endpoint sau. Vui lòng xem [tài liệu phân kỳ của chúng tôi](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) Để so sánh việc triển khai chúng với tài liệu đặc tả ACME.
 
 
 

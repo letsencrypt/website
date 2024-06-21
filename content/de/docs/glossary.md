@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} Ein Programmm, das fähig ist, mit einem ACME-Server zu kommunizieren, und nach einem [Zertifikat](#def-leaf) zu fragen. {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} Ein ACME-kompatibler Server, der [Zertifikate](#def-leaf) generieren kann. [Boulder](#def-boulder), eine Software von Let's Encrypt, ist ACME-kompatibel [aber nicht identisch zu ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} Ein ACME-kompatibler Server, der [Zertifikate](#def-leaf) generieren kann. [Boulder](#def-boulder), eine Software von Let's Encrypt, ist ACME-kompatibel [aber nicht identisch zu ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} Die Software, die ACME implementiert, entwickelt und benutzt von [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 

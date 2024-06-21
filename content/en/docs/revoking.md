@@ -11,7 +11,7 @@ When a certificate is no longer safe to use, you should revoke it. This can happ
 
 When you revoke a Let's Encrypt certificate, Let's Encrypt will publish that revocation information through the [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), and some browsers will check OCSP to see whether they should trust a certificate. Note that OCSP [has some fundamental problems](https://www.imperialviolet.org/2011/03/18/revocation.html), so not all browsers will do this check. Still, revoking certificates that correspond to compromised private keys is an important practice, and is required by Let's Encrypt's [Subscriber Agreement](/repository).
 
-To revoke a certificate with Let's Encrypt, you will use the [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), most likely through an ACME client like [Certbot](https://certbot.eff.org/). You will need to prove to Let’s Encrypt that you are authorized to revoke the certificate. There are three ways to do this: from the account that issued the certificate, using a different authorized account, or using the certificate private key.
+To revoke a certificate with Let's Encrypt, you will use the [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), most likely through an ACME client like [Certbot](https://certbot.eff.org/). You will need to prove to Let’s Encrypt that you are authorized to revoke the certificate. There are three ways to do this: from the account that issued the certificate, using a different authorized account, or using the certificate private key.
 
 # Specifying a reason code
 

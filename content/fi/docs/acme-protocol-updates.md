@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # Sovelluksen rajapinnan päätepisteet
 
-Tällä hetkellä meillä on seuraavat API-päätepisteet. Katso [poikkeavuuksia koskeva dokumentaatiomme](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), jotta voit verrata niiden toteutusta ACME-spesifikaatioihin.
+Tällä hetkellä meillä on seuraavat API-päätepisteet. Katso [poikkeavuuksia koskeva dokumentaatiomme](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), jotta voit verrata niiden toteutusta ACME-spesifikaatioihin.
 
 ## ACME versio 2 (RFC 8555)
 

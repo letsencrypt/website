@@ -11,7 +11,7 @@ show_lastmod: 1
 
 Let's Encrypt 인증서를 취소하면 Let's Encrypt는 [OCSP (온라인 인증서 상태 프로토콜)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)를 통해 해당 해지 정보를 게시하고, 일부 브라우저는 OCSP에서 인증서를 신뢰해야 하는지 여부를 확인합니다. OCSP에는 [근본적인 문제가 있으므로](https://www.imperialviolet.org/2011/03/18/revocation.html) 모든 브라우저가 이 검사를 수행하지는 않습니다. 이 작업에는 세 가지 방법이 있습니다. 그러나 손상된 개인 키에 대응하는 인증서를 해지하는 것은 중요한 실천이며 Let's Encrypt의 [구독자 계약](/repository)에 따라 필요합니다.
 
-Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbot.eff.org/)과 같은 ACME 클라이언트를 통해 [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)를 사용하게 됩니다. 귀하에게 인증서를 철회할 수있는 권한이 있음을 Let's Encrypt에 증명해야 합니다. 이 작업에는 세 가지 방법이 있습니다.
+Let's Encrypt로 인증서를 취소하려면 대부분 [Certbot](https://certbot.eff.org/)과 같은 ACME 클라이언트를 통해 [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)를 사용하게 됩니다. 귀하에게 인증서를 철회할 수있는 권한이 있음을 Let's Encrypt에 증명해야 합니다. 이 작업에는 세 가지 방법이 있습니다.
 
 # 인증서를 발급한 계정에서 하는 경우
 

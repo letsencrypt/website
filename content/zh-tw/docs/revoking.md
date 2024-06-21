@@ -11,7 +11,7 @@ show_lastmod: 1
 
 當你註銷 Let's Encrypt 憑證，Let's Encrypt 透過 [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) 發布註銷憑證的訊息，有些瀏覽器會檢查 OCSP 來確定是否該信任這張憑證。 請注意，OCSP 有一些[根本上的問題](https://www.imperialviolet.org/2011/03/18/revocation.html)，因此不是所有瀏覽器都會檢查它。 將洩漏私鑰的憑證註銷非常重要，並且在 Let's Encrypt 的[使用者協議](/repository)中要求使用者執行。
 
-你需要使用 [ACME API](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) 來註銷憑證，通常使用者會使用 ACME 客戶端，例如：[Certbot](https://certbot.eff.org/)。 你必須向 Let's Encrypt 證明你有權限註銷憑證， 我們有三種方法讓你註銷憑證：
+你需要使用 [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) 來註銷憑證，通常使用者會使用 ACME 客戶端，例如：[Certbot](https://certbot.eff.org/)。 你必須向 Let's Encrypt 證明你有權限註銷憑證， 我們有三種方法讓你註銷憑證：
 
 # 使用申請頒發憑證的帳號註銷憑證
 

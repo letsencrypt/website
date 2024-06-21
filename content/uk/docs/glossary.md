@@ -30,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} Програма зв‘язку з сервером ACME для запиту[ сертифікату](#def-leaf). {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} ACME-це сумісний сервер, що може генерувати[ сертифікати](#def-leaf). Програмне забезпечення, яке належить Let’s Encrypt [Boulder](#def-boulder), є ACME-сумісним, [ з деякими відхиленнями ](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} ACME-це сумісний сервер, що може генерувати[ сертифікати](#def-leaf). Програмне забезпечення, яке належить Let’s Encrypt [Boulder](#def-boulder), є ACME-сумісним, [ з деякими відхиленнями ](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} Програмне забезпечення, що реалізує ACME, розроблене та використовується [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 

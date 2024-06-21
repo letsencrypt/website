@@ -10,7 +10,7 @@ Das [IETF-standardisierte](https://letsencrypt.org/2019/03/11/acme-protocol-ietf
 
 # API-Endpunkte
 
-Wir haben derzeit die folgenden API-Endpunkte. Bitte lesen Sie [unsere Dokumentation zu den Abweichungen](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md), um deren Umsetzung mit der ACME-Spezifikation zu vergleichen.
+Wir haben derzeit die folgenden API-Endpunkte. Bitte lesen Sie [unsere Dokumentation zu den Abweichungen](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), um deren Umsetzung mit der ACME-Spezifikation zu vergleichen.
 
 ## ACME v2 (RFC 8555)
 
