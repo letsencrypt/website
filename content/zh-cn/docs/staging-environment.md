@@ -2,18 +2,18 @@
 title: 测试环境
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2022-06-13
+lastmod: 2024-06-11
 show_lastmod: 1
 ---
 
 
 在使用我们的正式环境以前，我们强烈建议您使用我们的测试环境进行测试性部署， 这将允许您在颁发受信任的证书前确保一切正常，并且降低您受到速率限制的可能性。
 
-我们的[ACME V2 测试环境](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605)为：
+我们的 [ACME v2 测试环境](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605)的网址为：
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-如果您使用的是 Certbot，则可以通过 `--test-cert` 命令行标志来使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。 请注意，只有兼容 ACME v2 的客户端才能使用 v2 测试环境。
+如果您使用的是 Certbot，可以通过 `--test-cert` 或 `--dry-run` 命令行选项使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。
 
 # 速率限制
 
@@ -27,17 +27,40 @@ show_lastmod: 1
 
 # 测试证书层次结构
 
-测试环境的证书层次结构为 [mimics production](/certificates)。
+测试环境的证书结构[与生产环境相似](/certificates)。 但测试证书的名称开头有 (STAGING) 字样，且命名方式也与生产环境中的证书截然不同，以示区分。
 
-## 中间证书
+## 根证书颁发机构
 
-在测试环境中有两个有效的中间证书：一个 RSA 算法 [(STAGING) Artificial Apicot R3](/certs/staging/letsencrypt-stg-int-r3.pem) 和 ECDSA 算法 ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem)
+测试环境目前启用了两份根证书“(STAGING) Pretend Pear X1”和“(STAGING) Bogus Broccoli X2”，这两份根证书**没有收录**至各类浏览器和客户端的证书库中。
 
-2021年3月24日，ECDSA 签发在 [测试环境](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) 中启用，所有使用ECDSA 密钥的测试证书请求都由 "(STAGING) Ersatz Edamame E1" 签名，并使用 ECDSA 证书链。 同样，所有使用RSA密钥的测试证书请求都由"(STAGING) Artificial Apicot R3"颁发，并使用RSA证书链。 无法使用 ECDSA 密钥获取使用 RSA 颁发的证书，反之亦然； 控制您获得哪个颁发者的方法是控制您在本地生成什么样的密钥。
+如果您想在仅用作测试的客户端软件中信任测试环境的证书，可以将证书加入该客户端的证书库中。 **重要提示**：请勿将测试环境的根证书或中间证书加入您日常使用的证书库中，因为这些证书没有经过审计，安全标准也不及生产环境的根证书，用于测试以外的任何目的都是不安全的。
 
-## 根证书
+* **Pretend Pear X1**
+  * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
+  * 密钥类型：`RSA 4096`
+  * 证书详细信息：[der](/certs/staging/letsencrypt-stg-root-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+* **Bogus Broccoli X2**
+  * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
+  * 密钥类型：`ECDSA P-384`
+  * 证书详细信息（自签名版本）：[der](/certs/staging/letsencrypt-stg-root-x2.der)、[pem](/certs/staging/letsencrypt-stg-root-x2.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2.txt)
+  * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
 
-测试环境目前启用了两份根证书“(STAGING) Pretend Pear X1”和“(STAGING) Bogus Broccoli X2”，这两份根证书**没有收录**至各类浏览器和客户端的证书库中。 如果您想修改测试客户端以信任测试环境，您可以通过添加 ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) 和/或 ["(STAGING) Bogus Brocoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) 证书到您的测试证书信任列表。 您可以[在这](https://github.com/letsencrypt/website/tree/master/static/certs/staging)找到我们所有的测试证书。  请注意：请不要将测试环境的根证书或中间证书安装进日常使用的受信证书存储中，因为这些证书没有受到 Let's Encrypt 的审计，也没有达到我们生产环境证书的标准，因此将其用于非测试环境可能会造成安全隐患。
+## 中间证书颁发机构
+
+测试环境的中间证书与生产环境类似，但由上述的不可信根证书签发。 和生产环境一样，并非所有中间证书都会同时投入使用。 当前所有的中间证书如下：
+
+* (STAGING) Pseudo Plum E5
+* (STAGING) False Fennel E6
+* (STAGING) Puzzling Parsnip E7
+* (STAGING) Mysterious Mulberry E8
+* (STAGING) Fake Fig E9
+* (STAGING) Counterfeit Cashew R10
+* (STAGING) Wannabe Watercress R11
+* (STAGING) Riddling Rhubarb R12
+* (STAGING) Tenuous Tomato R13
+* (STAGING) Not Nectarine R14
+
+这些中间证书随时可能变更，任何系统都不应加以固定或信任。 一般而言，您可以认为测试环境的中间证书与生产环境中可信的中间证书一一对应。 如果确有必要，您还可以在[此处](https://github.com/letsencrypt/website/blob/main/static/certs/staging)获取详尽的证书信息。
 
 # 证书透明化
 
