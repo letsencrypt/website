@@ -1,6 +1,6 @@
 ---
 author: Josh Aas
-date: 2024-06-10T00:00:00Z
+date: 2024-06-24T00:00:00Z
 slug: ntpd-rs-deployment
 title: "More Memory Safety for Let’s Encrypt: Deploying ntpd-rs"
 excerpt: "NTP is critical to how TLS works, and now it’s memory safe at Let’s Encrypt."
