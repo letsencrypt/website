@@ -2,7 +2,7 @@
 title: Challenge Types
 slug: challenge-types
 date: 2019-02-25
-lastmod: 2023-02-13
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -50,6 +50,7 @@ Cons:
  - It doesn’t work if your ISP blocks port 80 (this is rare, but some residential ISPs do this).
  - Let’s Encrypt doesn’t let you use this challenge to issue wildcard certificates.
  - If you have multiple web servers, you have to make sure the file is available on all of them.
+ - Your domain name can be extracted from the public [CT logs](/docs/ct-logs)
 
 # DNS-01 challenge
 
@@ -149,6 +150,7 @@ Cons:
 
  - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
  - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+ - Like HTTP-01, your domain name can be extracted from the public [CT logs](/docs/ct-logs)
  - This method cannot be used to validate wildcard domains.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
