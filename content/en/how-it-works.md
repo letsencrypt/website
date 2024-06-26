@@ -2,7 +2,7 @@
 title: How It Works
 linkTitle: How Let's Encrypt Works
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ Along with the challenges, the Let's Encrypt CA also provides a nonce that the a
 
 The agent software completes one of the provided sets of challenges.   Let's say it is able to accomplish the second task above: it creates a file on a specified path on the `http://example.com` site.  The agent also signs the provided nonce with its private key.  Once the agent has completed these steps, it notifies the CA that it's ready to complete validation.
 
-Then, it's the CA's job to check that the challenges have been satisfied.  The CA verifies the signature on the nonce, and it attempts to download the file from the web server and make sure it has the expected content.
+Then, it's the CA's job to check that the challenges have been satisfied from [multiple network perspectives](/2020/02/19/multi-perspective-validation).  The CA verifies the signature on the nonce, and it attempts to download the file from the web server and make sure it has the expected content.
 
 <div class="howitworks-figure">
 <img alt="Requesting authorization to act for example.com"
@@ -47,7 +47,7 @@ Once the agent has an authorized key pair, requesting, renewing, and revoking ce
 
 To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) that asks the Let's&nbsp;Encrypt CA to issue a certificate for `example.com` with a specified public key.  As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR.  The agent also signs the whole CSR with the authorized key for `example.com` so that the Let's&nbsp;Encrypt CA knows it's authorized.
 
-When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures.  If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent.
+When the Let's&nbsp;Encrypt CA receives the request, it verifies both signatures.  If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent. The CA will also submit the certificate to numerous public Certificate Transparency (CT) logs. See [here](https://certificate.transparency.dev/howctworks/#pki) for more details.
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
