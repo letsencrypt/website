@@ -8,7 +8,7 @@ show_lastmod: 1
 
 The Let's Encrypt Privacy Policy describes how we collect, use, and disclose your information in three different contexts:
 
-- When, as a Relying Party, you vi`sit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
+- When, as a Relying Party, you visit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
 - When you are a Subscriber, i.e., when you request and use certificates from Let's Encrypt,
 - When you are a Visitor to the Let's Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let's Encrypt operates an account.
 
@@ -22,7 +22,7 @@ When you use an HTTPS web site or other TLS service with a Let's Encrypt certifi
 
 If you are a Subscriber, you are requesting a trusted certificate from Let's Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let's Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let's Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. This information will be stored for a maximum of ten years.
 
-We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories such as Certificate Transparency (CT) log, and/or public discussions.
+We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories such as Certificate Transparency (CT) logs, and/or public discussions.
 
 You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per "Law Enforcement and Extenuating Circumstances," below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the "unsubscribe" link at the bottom of our emails or by contacting us at privacy@abetterinternet.org. We will not use your contact information for marketing or promotional purposes.
 
