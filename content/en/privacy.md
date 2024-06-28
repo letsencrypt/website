@@ -8,7 +8,7 @@ show_lastmod: 1
 
 The Let's Encrypt Privacy Policy describes how we collect, use, and disclose your information in three different contexts:
 
-- When, as a Relying Party, you vi`sit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
+- When, as a Relying Party, you visit a web site secured with HTTPS that uses a certificate from Let's Encrypt,
 - When you are a Subscriber, i.e., when you request and use certificates from Let's Encrypt,
 - When you are a Visitor to the Let's Encrypt web site, community discussion forum, other web pages under letsencrypt.org, and third-party social media sites on which Let's Encrypt operates an account.
 
