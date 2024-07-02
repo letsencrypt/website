@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-05-08",
+	"lastmod": "2024-07-02",
 	"categories": [
 		"Bash",
 		"C",
@@ -38,7 +38,8 @@
 		"Perl",
 		"PHP",
 		"Python",
-		"Ruby"
+		"Ruby",
+		"Rust"
 	],
 	"projects": [
 		{
@@ -821,6 +822,24 @@
 				"TLS-SNI-01": "false",
 				"TLS-SNI-02": "false"
 			}
+		},
+		{
+			"name": "instant-acme",
+			"library": "Rust",
+			"library_url": "https://github.com/instant-labs/instant-acme",
+			"comments": "is an async, pure-Rust ACME (RFC 8555) client which relies on Tokio"
+		},
+		{
+			"name": "rustls-acme",
+			"library": "Rust",
+			"library_url": "https://github.com/FlorianUekermann/rustls-acme",
+			"comments": "provides TLS certificate management and serving using rustls"
+		},
+		{
+			"name": "tokio-rustls-acme",
+			"library": "Rust",
+			"library_url": "https://github.com/n0-computer/tokio-rustls-acme",
+			"comments": "is an easy-to-use, async ACME client library for rustls"
 		}
 	]
 }
