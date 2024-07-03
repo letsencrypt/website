@@ -291,7 +291,7 @@ force = true
 # Certbot (and other) clients link to the Terms of Service with a `.` after them
 # This is a convenience to allow copying the URL with that `.`
 # It should be updated on ToS changes, but is not a compliance-critical path.
-from = "https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf."
-to = "https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf"
+from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
+to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
 status = 302
 force = true
