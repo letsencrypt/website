@@ -293,5 +293,5 @@ force = true
 # It should be updated on ToS changes, but is not a compliance-critical path.
 from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
 to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
-status = 302
+status = 301
 force = true
