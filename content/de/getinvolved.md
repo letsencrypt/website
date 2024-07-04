@@ -1,7 +1,6 @@
 ---
 title: Mitmachen
 slug: getinvolved
-top_graphic: 5
 lastmod: 2019-11-04
 menu:
   main:
@@ -25,7 +24,7 @@ Wir können auch Hilfe bei der Softwareentwicklung gebrauchen. Unser gesamter Co
 
 ### Serverseitige CA-Software
 
-[Boulder](https://github.com/letsencrypt/boulder) ist die Let's Encrypt CA-Implementierung. Sie basiert auf dem [ACME](https://tools.ietf.org/html/rfc8555)-Protokoll und ist hauptsächlich in Go geschrieben. Ein großartiger Platz zum Starten ist die Liste der ['help wanted'-Issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) und der [Leitfaden für Mitwirkende](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) ist die Let's Encrypt CA-Implementierung. Sie basiert auf dem [ACME](https://tools.ietf.org/html/rfc8555)-Protokoll und ist hauptsächlich in Go geschrieben. Ein großartiger Platz zum Starten ist die Liste der ['help wanted'-Issues](https://github.com/letsencrypt/boulder/labels/help%20wanted) und der [Leitfaden für Mitwirkende](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

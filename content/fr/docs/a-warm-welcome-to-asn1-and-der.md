@@ -1,7 +1,6 @@
 ---
 title: Bienvenue à l'ASN.1 et au DER
 slug: a-warm-welcome-to-asn1-and-der
-top_graphic: 1
 date: 2020-04-23
 lastmod: 2021-03-21
 ---
@@ -244,7 +243,7 @@ table {
 
 | Tag (décimal) |      Tag (hex) | Type                    |
 | -------------:| --------------:| ----------------------- |
-|             2 |             02 | INTEGER                 |
+|             2 |             02 | ENTIER                  |
 |             3 |             03 | BIT STRING              |
 |             4 |             04 | OCTET STRING            |
 |             5 |             05 | NULL                    |

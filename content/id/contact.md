@@ -2,7 +2,6 @@
 title: Kontak
 slug: contact
 description: Cara untuk menghubungi kami
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

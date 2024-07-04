@@ -1,7 +1,6 @@
 ---
 title: Opslag
 slug: glossary
-top_graphic: 1
 date: 2018-12-30
 show_lastmod: 1
 ---
@@ -31,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} Et program, der kan kommunikere med en ACME-server, for at bede om et [certifikat](#def-leaf). {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} En ACME-kompatibel server, der kan generere [certifikater](#def-leaf). Let's Encrypt software, [Boulder](#def-boulder), er ACME-kompatibel, [med nogle afvigelser](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} En ACME-kompatibel server, der kan generere [certifikater](#def-leaf). Let's Encrypt software, [Boulder](#def-boulder), er ACME-kompatibel, [med nogle afvigelser](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} Den software, der implementerer ACME, udviklet og anvendt af [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
@@ -57,7 +56,7 @@ Note for translators:
 
 {{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} En erklæring om den praksis, som en certificeringsmyndighed anvender ved udstedelse, ledelse, tilbagekaldelse og fornyelse eller genregistrering af certifikater. [ISRG Certificate Policy](/repository#isrg-certification-practice-statement) - [RFC 3647](https://tools.ietf.org/html/rfc3647#section-3.4) - [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" name="Critical extension" %}} Et certifikat kan indeholde [udvidelser](#def-extension) markeret "kritisk. Det betyder, at software skal afvise dette certifikat, medmindre softwaren forstår, hvordan den pågældende udvidelse. Det gør det muligt at indføre nye udvidelser, der er vigtige for sikkerheden uden at skabe risici for ældre software. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}} Et certifikat kan indeholde [udvidelser](#def-extension) markeret "kritisk." Det betyder, at softwaren skal afvise dette certifikat, medmindre softwaren forstår, hvordan denne udvidelse skal behandles. Det gør det muligt at indføre nye udvidelser, der er vigtige for sikkerheden uden at skabe risici for ældre software. {{% /def %}}
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} En metode til at informere [bruger programmer](#def-user-agent) om [tilbagekaldelse](#def-revocation) status af et [certifikat](#def-leaf). Dette er en liste over løbenumrene for alle tilbagekaldte certifikater fra en given CA, underskrevet af den pågældende CA. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
@@ -177,6 +176,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-

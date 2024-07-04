@@ -1,7 +1,6 @@
 ---
 title: 入門
 slug: getting-started
-top_graphic: 3
 date: 2018-04-12
 show_lastmod: 1
 ---

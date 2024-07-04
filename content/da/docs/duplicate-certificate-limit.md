@@ -1,9 +1,8 @@
 ---
 title: Duplikat Certifikat Grænse
 slug: duplicate-certificate-limit
-top_graphic: 1
-date: 2022-06-16
-lastmod: 2022-06-10
+date: 2022-06-10
+lastmod: 2022-06-16
 show_lastmod: 1
 ---
 

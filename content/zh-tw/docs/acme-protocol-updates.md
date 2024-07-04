@@ -1,7 +1,6 @@
 ---
 title: ACME 協定更新紀錄
 slug: acme-protocol-updates
-top_graphic: 1
 lastmod: 2019-10-07
 show_lastmod: 1
 ---
@@ -11,7 +10,7 @@ show_lastmod: 1
 
 # API Endpoints
 
-目前我們有以下的 API endpoint。請參閱我們的[文檔](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md)，以比較實作與當前標準的差異。
+目前我們有以下的 API endpoint。請參閱我們的[文檔](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)，以比較實作與當前標準的差異。
 
 ## ACME v2 (RFC 8555)
 

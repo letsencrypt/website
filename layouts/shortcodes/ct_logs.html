@@ -1,9 +1,13 @@
 {{ $category := .Get "data" }}
+<h3 id="{{ $category }}">
 {{ if eq $category "production" }}
-    <h3>{{ i18n "certificate_transparency_role_production"}}</h3>
+    {{ i18n "certificate_transparency_role_production"}}
+{{ else if eq $category "testing" }}
+    {{ i18n "certificate_transparency_role_testing"}}
 {{ else }}
-    <h3>{{ i18n "certificate_transparency_role_testing"}}</h3>
+ {{ $category }}
 {{ end }}
+</h3>
 <ul>
     {{ .Inner }}
     <li class="list-style-none">

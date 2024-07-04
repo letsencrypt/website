@@ -1,7 +1,6 @@
 ---
 title: Dziękujemy za Twoją darowiznę dla ISRG
 slug: thankyou
-top_graphic: 2
 date: 2018-04-12
 ---
 

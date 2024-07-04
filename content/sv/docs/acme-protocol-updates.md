@@ -1,7 +1,6 @@
 ---
 title: ACME Protokoll Uppdateringar
 slug: acme-protocol-updates
-top_graphic: 1
 lastmod: 2019-10-07
 show_lastmod: 1
 ---
@@ -10,7 +9,7 @@ show_lastmod: 1
 
 # API-slutpunkter
 
-Vi har för närvarande följande API-slutpunkter. Se [våran avvikelser dokumentation](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) för att jämföra deras genomförande med ACME-specifikationen.
+Vi har för närvarande följande API-slutpunkter. Se [våran avvikelser dokumentation](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) för att jämföra deras genomförande med ACME-specifikationen.
 
 ## ACME v2 (RFC 8555)
 

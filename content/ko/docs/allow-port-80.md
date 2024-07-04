@@ -1,7 +1,6 @@
 ---
 title: 모범 사례 - 80번 포트를 열어 두십시오.
 slug: allow-port-80
-top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1

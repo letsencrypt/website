@@ -2,7 +2,6 @@
 title: Tietoa Let's Encryptistä
 linkTitle: Let's Encrypt
 slug: about
-top_graphic: 1
 lastmod: 2021-02-12
 menu:
   main:

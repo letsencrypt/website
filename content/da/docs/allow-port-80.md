@@ -1,7 +1,6 @@
 ---
 title: Bedste Praksis - Hold Port 80 Åben
 slug: allow-port-80
-top_graphic: 1
 date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1

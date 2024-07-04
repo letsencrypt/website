@@ -1,7 +1,6 @@
 ---
 title: ISRGக்கு நீங்கள் அளித்த நன்கொடைக்கு நன்றி
 slug: thankyou
-top_graphic: 2
 date: 2018-04-12
 ---
 

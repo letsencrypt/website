@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Une autorité de certification à but non lucratif fournissant des certificats TLS à <span>225 millions</span> de sites Web."
+other = "Une autorité de certification à but non lucratif fournissant des certificats TLS à <span>363 millions</span> de sites Web."
 
 [home_hero_getting_started]
 other = "Commencer"
@@ -11,7 +11,7 @@ other = "Faire un don"
 other = "Sponsoriser"
 
 [home_hero_annual_report]
-other = "Nous avons reçu le prix Levchin pour la cryptographie du monde réel ! <a href='https://abetterinternet.org/levchin-prize'>En savoir plus</a>"
+other = "Pour en savoir plus sur nos activités à but non lucratif cette année, consultez notre <a href='https://abetterinternet.org/annual-reports/'>2023 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Principaux Sponsors et Donateurs"
@@ -40,9 +40,6 @@ Voir notre <a href="/fr/privacy/">politique de confidentialité</a>.<br>
 Voir notre <a href="/fr/trademarks/">politique en matière de copyright</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation est une marque déposée de The Linux Foundation. Linux est une marque déposée de Linus Torvalds."
-
 [header_skip_nav]
 other = "Passer les liens de navigation"
 
@@ -54,6 +51,9 @@ other = "Voir toute la documentation"
 
 [blog_feed]
 other = "Flux du blog de Let's Encrypt"
+
+[diamond]
+other = "Diamant"
 
 [platinum]
 other = "Platine"
@@ -189,3 +189,9 @@ other = "100-999 employés"
 
 [1000_employees]
 other = "1000+ employés"
+
+[subscribe_to_newsletter_headline]
+other = "Abonnez-vous à notre newsletter"
+
+[site_banner_text]
+other = "Le GIS fête ses 10 ans d'aide à la construction d'un Internet plus performant →"

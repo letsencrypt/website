@@ -1,7 +1,6 @@
 ---
 title: Glossar
 slug: glossary
-top_graphic: 1
 date: 2018-12-30
 show_lastmod: 1
 ---
@@ -31,7 +30,7 @@ Note for translators:
 
 {{% def id="ACME-client" name="ACME Client" %}} Ein Programmm, das fähig ist, mit einem ACME-Server zu kommunizieren, und nach einem [Zertifikat](#def-leaf) zu fragen. {{% /def %}}
 
-{{% def id="ACME-server" name="ACME Server" %}} Ein ACME-kompatibler Server, der [Zertifikate](#def-leaf) generieren kann. [Boulder](#def-boulder), eine Software von Let's Encrypt, ist ACME-kompatibel [aber nicht identisch zu ACME](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md). {{% /def %}}
+{{% def id="ACME-server" name="ACME Server" %}} Ein ACME-kompatibler Server, der [Zertifikate](#def-leaf) generieren kann. [Boulder](#def-boulder), eine Software von Let's Encrypt, ist ACME-kompatibel [aber nicht identisch zu ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md). {{% /def %}}
 
 {{% def id="boulder" name="Boulder" %}} Die Software, die ACME implementiert, entwickelt und benutzt von [Let's Encrypt](#def-LE). [GitHub](https://github.com/letsencrypt/boulder) {{% /def %}}
 
@@ -57,7 +56,7 @@ Note for translators:
 
 {{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} Eine Aussage über die Vorgänge, die eine Zertifizierungsstelle beim Ausstellen, Verwalten, Sperren und Erneuern von Zertifikaten ausübt. [ISRG Certification Practice Statement](/repository#isrg-certification-practice-statement) - [RFC 3647, Abschnitt 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
-{{% def id="critical" name="Critical extension" %}} Ein Zertifikat enthält möglicherweise [Erweiterungen](#def-extension), die als "kritisch" markiert sind. Das bedeutet, dass Software ein Zertifikat abweisen muss, bis die Software versteht, wie mit diesen Erweiterungen umzugehen ist. Das macht es möglich, neue Erweiterungen zu entwickeln, die wichtig für die Sicherheit sind, ohne ein Risiko für alte Software zu schaffen. {{% /def %}}
+{{% def id="critical" name="Critical extension" %}}} Ein Zertifikat kann [Erweiterungen](#def-extension) enthalten, die als "kritisch" gekennzeichnet sind Das bedeutet, dass die Software dieses Zertifikat ablehnen muss, es sei denn, die Software weiß, wie sie diese Erweiterung verarbeiten kann. Das macht es möglich, neue Erweiterungen zu entwickeln, die wichtig für die Sicherheit sind, ohne ein Risiko für alte Software zu schaffen. {{% /def %}}
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} Eine Methode, um [User Agents](#def-user-agent) über das [Sperren](#def-revocation) von [Zertifikaten](#def-leaf) zu informieren. Dies ist eine Liste von Seriennummern von allen gesperrten Zertifikaten, ausgestellt von der angegebenen CA und von dieser CA signiert. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
@@ -165,7 +164,7 @@ Note for translators:
 
 {{% def id="UCC" name="Unified Communications Certificate" abbr="UCC" %}} Eine Beschreibung von einem Zertifikat, was mehrere [Subject Alternative Names (SANs)](#def-SAN) enthält. {{% /def %}}
 
-{{% def id="web-browser" name="Web Browser" %}} Ein [User Agent](#def-user-agent) zum Anzeigen von Webseiten. Beispiele: *Mozilla Firefox*, *Google Chrome* oder *Internet Explorer*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
+{{% def id="web-browser" name="Web Browser" %}} Ein [User Agent](#def-user-agent) zum Anzeigen von Webseiten. Beispiele: *Mozilla Firefox*, *Google Chrome* oder *Safari*. [Wikipedia](https://en.wikipedia.org/wiki/Web_browser) {{% /def %}}
 
 {{% def id="user-agent" name="User Agent" %}} Software, fähig zur Kommunikation mit einem [Web Server](#def-web-server). Beispiel: ein [Web Browser](#def-web-browser) oder [cURL](https://en.wikipedia.org/wiki/CURL).{{% /def %}}
 
@@ -177,6 +176,5 @@ Note for translators:
 
 {{% renderglossary %}}
 
-<link rel="stylesheet" href="/css/glossary.css" />
+<link rel="stylesheet" href="/css/glossary.css">
 <script src="/js/glossary.js" async></script>
-

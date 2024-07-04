@@ -1,7 +1,6 @@
 ---
 title: 인증서 호환성
 slug: certificate-compatibility
-top_graphic: 1
 lastmod: 2021-05-12
 show_lastmod: 1
 ---

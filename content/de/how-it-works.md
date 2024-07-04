@@ -2,7 +2,6 @@
 title: Wie es funktioniert
 linkTitle: Wie Let’s Encrypt funktioniert
 slug: how-it-works
-top_graphic: 3
 lastmod: 2019-10-18
 show_lastmod: 1
 ---
@@ -55,12 +54,10 @@ Wenn die Let's&nbsp;Encrypt-Zertifizierungsstelle die Anforderung erhält, werde
      src="/images/howitworks_certificate.png"/>
 </div>
 
-Der Widerruf funktioniert auf ähnliche Weise.  Der Agent unterzeichnet eine Sperranforderung mit dem für `example.com` autorisierten Schlüsselpaar, und die Let's&nbsp;Encrypt-Zertifizierungsstelle überprüft, ob die Anforderung autorisiert ist.  In diesem Fall werden Sperrinformationen in den normalen Sperrkanälen (z.B. OCSP) veröffentlicht, sodass vertrauende Parteien wie Browser wissen können, dass sie das widerrufene Zertifikat nicht akzeptieren sollten.
+Der Widerruf funktioniert auf ähnliche Weise.  Der Agent unterzeichnet eine Sperranforderung mit dem für `example.com` autorisierten Schlüsselpaar, und die Let's&nbsp;Encrypt-Zertifizierungsstelle überprüft, ob die Anforderung autorisiert ist.  Wenn dies der Fall ist, veröffentlicht es die Sperrinformationen in den normalen Sperrkanälen (d. h. OCSP), so dass vertrauende Parteien wie Browser wissen, dass sie das widerrufene Zertifikat nicht akzeptieren sollten.
 
 <div class="howitworks-figure">
 <img alt="Anfrage zum Widerruf eines Zertifikats für example.com"
      src="/images/howitworks_revocation.png"/>
 </div>
-
-
 

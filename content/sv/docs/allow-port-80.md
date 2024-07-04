@@ -1,7 +1,6 @@
 ---
 title: Bästa praxis - Håll hamnen 80 öppen
-slug: 1
-top_graphic: 1
+slug: allow-port-80
 date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1

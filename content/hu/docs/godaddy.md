@@ -1,7 +1,6 @@
 ---
 title: "Let's Encrypt tanúsítványok GoDaddy tárhelyen"
 slug: godaddy
-top_graphic: 1
 date: 2019-12-02
 lastmod: 2019-12-02
 show_lastmod: 1

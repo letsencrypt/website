@@ -1,7 +1,6 @@
 ---
 title: Actualizaciones del protocolo ACME
 slug: acme-protocol-updates
-top_graphic: 1
 lastmod: 2019-10-07
 show_lastmod: 1
 ---
@@ -10,7 +9,7 @@ El protocolo [IETF estandarizado](https://letsencrypt. org/2019/03/11/acme-proto
 
 # API Endpoints
 
-Actualmente tenemos los siguientes puntos finales de la API. Consulte [nuestra documentación de divergencias](https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md) para comparar su implementación con la especificación ACME.
+Actualmente tenemos los siguientes puntos finales de la API. Consulte [nuestra documentación de divergencias](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) para comparar su implementación con la especificación ACME.
 
 ## ACME v2 (RFC 8555)
 

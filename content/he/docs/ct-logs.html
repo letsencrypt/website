@@ -1,8 +1,7 @@
 ---
 title: יומני שקיפות אישורים (CT)
 slug: ct-logs
-top_graphic: 4
-lastmod: 2022-06-17
+lastmod: 2023-09-25
 show_lastmod: 1
 ---
 
@@ -30,13 +29,7 @@ show_lastmod: 1
 <h2>מימון</h2>
 
 <p>
-  אנו מעוניינים להודות לשותפים הבאים על נדיבותם במימון יומן שקיפות האישורים (CT) של Let's Encrypt. אם הארגון שלך מעוניין לסייע לנו להמשיך בעבודה הזאת, נא לשקול <a href="https://www.abetterinternet.org/sponsor/">להעניק חסות או לתרום</a>.
-</p>
-
-<p class="text-center">
-  <a href="https://sectigo.com/"
-    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
-  /></a>
+  אם הארגון שלך מעוניין לסייע לנו להמשיך בעבודה הזאת, נא לשקול <a href="https://www.abetterinternet.org/sponsor/">להעניק חסות או לתרום</a>.
 </p>
 
 <h2>ארכיטקטורה</h2>
@@ -82,6 +75,17 @@ show_lastmod: 1
 </li>
 <li>
   רשויות אישורים אחרות יכולות להשתמש ב־Sapling למטרות בדיקות.
+</li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  ב־Let's Encrypt אנו בוחנים יומנים רציפים על בסיס <a href="https://sunlight.dev">Sunlight</a>.
+</li>
+<li>
+  חותמות זמן של אישורים חתומים (SCTs) מהיומנים האלו <b>לא אמורים</b> להשתלב באישורים מהימנים ציבוריים.
+</li>
+<li>Twig יישאר יומן בדיקות ויקבל את אותה רשות אישורים כמו Sapling.
+</li>
+<li>Willow ו־Sycamore מקבלים את אותו הדבר כמו Oak ואמורים להפוך ליומנים מבצעיים.
 </li>
 {{< /ct_logs >}}
 <br />

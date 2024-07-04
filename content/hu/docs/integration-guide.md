@@ -2,7 +2,6 @@
 title: Integrációs útmutató
 linkTitle: Kliens és szolgáltató integrációs útmutató
 slug: integration-guide
-top_graphic: 1
 date: 2016-08-08
 lastmod: 2020-12-8
 show_lastmod: 1

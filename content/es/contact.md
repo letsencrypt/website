@@ -2,7 +2,6 @@
 title: Contactar
 slug: contact
 description: Cómo contactar con nosotros
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

@@ -1,0 +1,73 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            26:d9:25:64:b4:0b:b2:78:30:a7:40:c3:e1:c9:5b:6a
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1
+        Validity
+            Not Before: Mar 13 00:00:00 2024 GMT
+            Not After : Mar 12 23:59:59 2027 GMT
+        Subject: C = US, O = (STAGING) Let's Encrypt, CN = (STAGING) False Fennel E6
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:ee:62:2c:84:40:1b:7e:76:61:5c:79:82:2d:38:
+                    5a:80:1a:bc:c0:d2:98:f3:86:24:53:29:d8:f3:7b:
+                    c1:a3:c1:46:20:57:41:43:bc:50:57:73:6b:3e:48:
+                    62:74:c5:f2:5b:86:90:70:00:f1:17:fb:24:02:76:
+                    40:b2:f9:e3:c5:1f:a8:0a:76:19:02:d0:57:81:e1:
+                    3e:58:50:3a:14:4e:ff:7e:bf:de:71:b4:e0:96:c0:
+                    20:a7:9f:5e:00:36:43
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                A1:74:1A:06:6D:50:B7:86:2D:4A:2C:C1:7E:B4:8D:88:49:6C:CD:16
+            X509v3 Authority Key Identifier: 
+                B5:F3:65:F2:FE:B0:0A:92:1F:FB:3C:7D:F3:44:A0:AC:63:25:C3:14
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x1.i.lencr.org/
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://stg-x1.c.lencr.org/
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        51:a3:3a:b7:3e:1a:56:58:0a:ec:4d:29:2f:6e:fb:89:7a:a4:
+        3b:b1:fb:e0:a0:dc:55:f7:85:1d:10:84:26:4f:28:e4:71:9e:
+        e6:bd:74:99:65:7a:ce:4d:05:c2:1f:e5:6d:58:d8:e5:bb:d4:
+        49:7e:a2:af:b4:70:24:b7:f5:ba:9f:1b:77:7e:f6:c4:5b:aa:
+        72:e5:a8:1f:71:ca:c4:5f:a4:63:e6:63:62:11:43:86:05:ba:
+        b2:33:ba:b1:70:fd:3b:21:a0:61:b0:2f:be:15:b4:18:26:c5:
+        e3:b5:7e:13:fc:39:62:5f:9c:c0:77:10:82:dd:cf:a8:71:12:
+        a6:d0:b4:29:94:ff:67:a3:41:34:04:2b:a7:10:b4:18:f7:dd:
+        af:8c:50:8e:e2:62:74:4f:f8:e4:cb:d4:cf:35:b6:66:51:91:
+        45:98:ed:62:2d:30:60:cf:21:a6:e1:5d:f1:ea:be:a6:17:87:
+        48:6e:c6:a5:03:96:cd:15:8c:2e:76:c6:98:8a:e9:ed:85:f9:
+        9c:68:bb:09:81:c1:09:71:48:bf:69:25:63:2f:85:11:89:74:
+        50:88:06:e9:50:3e:6f:f4:b5:bb:76:b1:e0:71:90:52:96:21:
+        89:a8:b8:38:7e:db:cb:30:91:34:a5:7f:c9:95:d0:a1:a6:11:
+        59:8f:91:ae:42:42:48:12:83:86:ed:34:75:28:67:5c:70:b7:
+        ef:9f:e0:dd:76:01:aa:52:7c:f0:d8:57:22:7a:f5:cf:5f:c3:
+        e9:1b:15:31:5a:f4:6d:64:78:de:f9:48:82:68:bd:65:a1:cb:
+        85:d4:11:c1:a4:22:70:cc:e0:6c:b2:11:f7:f5:92:97:84:79:
+        96:8e:41:97:b6:52:88:e7:a6:d7:e6:a8:b7:f4:a8:38:fa:9f:
+        4d:80:05:47:43:88:78:50:4f:b6:5a:eb:7e:1b:d2:9c:4a:00:
+        f5:d6:da:94:85:7e:5a:c6:65:cd:9e:fa:92:a9:20:6e:2e:8b:
+        ff:34:ba:af:00:1b:26:de:1d:d6:b5:0e:5e:e2:4b:63:2c:bf:
+        8c:29:06:28:b8:8f:54:2c:f2:05:c0:6f:bc:88:f6:8c:d2:db:
+        07:82:9a:ee:68:a8:33:78:4a:76:19:05:8a:22:ad:3f:2c:79:
+        48:9a:eb:66:b0:5c:c5:73:92:44:14:b2:34:50:cf:6a:2a:42:
+        c4:d4:67:1b:43:b8:85:34:54:23:58:3d:8d:14:81:e4:8b:8d:
+        dc:e8:f9:c5:08:6d:aa:0e:e8:cf:2b:00:ae:36:b6:af:f5:8c:
+        9f:b4:46:5b:54:14:f1:f1:2d:7c:62:d0:b2:00:57:4b:45:27:
+        11:09:55:46:e9:bf:b3:6d

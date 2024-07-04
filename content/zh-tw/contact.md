@@ -2,7 +2,6 @@
 title: 聯繫我們
 slug: contact
 description: 1
-top_graphic: 1
 lastmod: 2021-08-31
 menu:
   main:

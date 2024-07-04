@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Некоммерческий Центр сертификации, предоставляющий сертификаты TLS для <span>260 миллионов</span> веб-сайтов."
+other = "Некоммерческий Центр сертификации, предоставляющий сертификаты TLS для <span>363 миллионов</span> веб-сайтов."
 
 [home_hero_getting_started]
 other = "Приступить"
@@ -11,7 +11,7 @@ other = "Поддержать нас"
 other = "Поддержать"
 
 [home_hero_annual_report]
-other = "Мы получили премию Levchin Prize за Real-World Cryptography! <a href='https://abetterinternet.org/levchin-prize'>Подробнее</a>"
+other = "Читайте о нашей некоммерческой деятельности в этом году в нашем <a href='https://abetterinternet.org/annual-reports/'>Годовом отчете за 2023 год</a>."
 
 [home_major_sponsors]
 other = "Основные спонсоры и инвесторы"
@@ -40,9 +40,6 @@ other = """
 Ознакомьтесь с нашей <a href="/ru/trademarks/">политикой в отношении товарных знаков</a>.
 """
 
-[linux_foundation_trademark]
-other = "Linux Foundation является зарегистрированным товарным знаком The Linux Foundation. Linux является зарегистрированным товарным знаком, принадлежащим Линусу Торвальдсу."
-
 [header_skip_nav]
 other = "Пропустить навигационные ссылки"
 
@@ -54,6 +51,9 @@ other = "Вся документация"
 
 [blog_feed]
 other = "Блог Let's Encrypt"
+
+[diamond]
+other = "Алмаз"
 
 [platinum]
 other = "Платиновые"
@@ -189,3 +189,9 @@ other = "число сотрудников от 100 до 999"
 
 [1000_employees]
 other = "число сотрудников более 1000"
+
+[subscribe_to_newsletter_headline]
+other = "Подпишитесь на нашу рассылку"
+
+[site_banner_text]
+other = "ISRG отмечает 10 лет оказания помощи в создании более светлого Интернета →"

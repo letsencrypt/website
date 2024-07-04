@@ -1,7 +1,6 @@
 ---
 title: ISRG에 기부해 주셔서 감사합니다
 slug: thankyou
-top_graphic: 2
 date: 2018-04-12
 ---
 

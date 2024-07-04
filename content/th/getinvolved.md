@@ -1,7 +1,6 @@
 ---
 title: เข้าร่วมกับเรา
 slug: getinvolved
-top_graphic: 5
 lastmod: 2019-11-04
 menu:
   main:
@@ -25,7 +24,7 @@ show_lastmod: 1
 
 ### ซอฟต์แวร์​ CA ฝั่งเซิร์ฟเวอร์
 
-[Boulder](https://github.com/letsencrypt/boulder) เป็นระบบที่ถูกนำมาใช้ของเล็ท'ส เอ็นคริปต์ สร้างขึ้นมาด้วยพื้นฐานของโปรโตคอล [ACME](https://tools.ietf.org/html/rfc8555), และเขียนด้วยภาษา Go เป็นหลัก ที่เริ่มต้นที่ดีคือเริ่มจากรายการ [ประเด็นปัญหา 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) และที่ [แนวทางสำหรับผู้ที่ต้องการช่วยเหลือ](https://github.com/letsencrypt/boulder/blob/master/CONTRIBUTING.md).
+[Boulder](https://github.com/letsencrypt/boulder) เป็นระบบที่ถูกนำมาใช้ของเล็ท'ส เอ็นคริปต์ สร้างขึ้นมาด้วยพื้นฐานของโปรโตคอล [ACME](https://tools.ietf.org/html/rfc8555), และเขียนด้วยภาษา Go เป็นหลัก ที่เริ่มต้นที่ดีคือเริ่มจากรายการ [ประเด็นปัญหา 'help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) และที่ [แนวทางสำหรับผู้ที่ต้องการช่วยเหลือ](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
 
 ### letsencrypt.org
 

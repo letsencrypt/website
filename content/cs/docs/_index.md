@@ -1,6 +1,5 @@
 ---
-title: Documentation
-top_graphic: 1
+title: Dokumentace
 menu:
   main:
     weight: 10

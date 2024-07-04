@@ -4,7 +4,11 @@ date: 2023-07-10T00:00:00Z
 slug: cross-sign-expiration
 title: "Shortening the Let's Encrypt Chain of Trust"
 excerpt: "In late 2024, Let's Encrypt's cross-sign from IdenTrust will expire. Here's everything you need to know about the upcoming transition, and why it will be a non-event for most people."
-lastmod: 2023-07-10
+menu:
+  main:
+    weight: 30
+    parent: about
+lastmod: 2024-02-08
 ---
 
 When Let's Encrypt first launched, we needed to ensure that our certificates were widely trusted. To that end, we arranged to have our intermediate certificates [cross-signed by IdenTrust's DST Root CA X3](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html). This meant that all certificates issued by those intermediates would be trusted, even while our own ISRG Root X1 wasn't yet. During subsequent years, our Root X1 became [widely trusted](https://letsencrypt.org/docs/certificate-compatibility/) on its own. 
@@ -19,7 +23,7 @@ For these reasons, we will not be getting a new cross-sign to extend compatibili
 
 The transition will roll out as follows:
 
-- On **Thursday, Feb 8th, 2024**, we will stop providing the cross-sign by default in requests made to our /acme/certificate API endpoint. For most Subscribers, this means that your ACME client will configure a chain which terminates at ISRG Root X1, and your webserver will begin providing this shorter chain in all TLS handshakes. The longer chain, terminating at the soon-to-expire cross-sign, will still be available as an alternate chain which you can configure your client to request.
+- On **Thursday, Feb 8th, 2024**, we stopped providing the cross-sign by default in requests made to our /acme/certificate API endpoint. For most Subscribers, this means that your ACME client will configure a chain which terminates at ISRG Root X1, and your webserver will begin providing this shorter chain in all TLS handshakes. The longer chain, terminating at the soon-to-expire cross-sign, will still be available as an alternate chain which you can configure your client to request.
 
 - On **Thursday, June 6th, 2024**, we will stop providing the longer cross-signed chain entirely. This is just over [90 days](https://letsencrypt.org/2015/11/09/why-90-days.html) (the lifetime of one certificate) before the cross-sign expires, and we need to make sure subscribers have had at least one full issuance cycle to migrate off of the cross-signed chain.
 

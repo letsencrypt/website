@@ -1,16 +1,19 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-top_graphic: 1
-lastmod: 2023-06-20
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
-## ECDSA根证书和中间证书
-
-我们已经通过生产环境的 ECDSA 中间证书为[一批特定账户](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679)签发了证书， 但目前还没有推广至所有账户的计划。
+请在 Let's Encrypt 社群论坛的 [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) 分类中查阅功能更新公告。
 
 # 已实现的功能
+
+## ECDSA根证书和中间证书
+
+* 启用时间：2024 年 6 月 6 日
+
+从现在起 ECDSA 叶证书将由我们的生产环境 ECDSA 中间证书签发。 请参阅[证书信任链](/certificates/)详细了解我们的 PKI 证书结构。
 
 ## ACME更新信息 (ARI)
 
@@ -24,11 +27,11 @@ show_lastmod: 1
 
 我们已支持通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
 
-## 证书透明度（CT）日志
+## 证书透明化日志
 
 * 启用时间：2019 年 5 月 15 日
 
-我们的[证书透明度日志](/docs/ct-logs)系统已开始运作。
+我们的[证书透明化日志](/docs/ct-logs)系统已开始运作。
 
 ## 支持 TLS ALPN 验证
 
