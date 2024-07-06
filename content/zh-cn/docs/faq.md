@@ -2,7 +2,7 @@
 title: 常见问题
 linkTitle: 常见问题（FAQ）
 slug: faq
-lastmod: 2022-09-28
+lastmod: 2024-06-26
 menu:
   main:
     weight: 30
@@ -97,9 +97,13 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 是的，但并非所有客户端都支持此功能。 [Certbot](https://certbot.eff.org/) 是支持的。
 
+## 申请证书后我的域名流量剧增！ 为什么会这样？
+
+这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
+
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
-我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。 请注意，我们目前有[多个用于验证的 IP 地址](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)。
+我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。 请注意，我们目前有[多个用于验证的 IP 地址](/2020/02/19/multi-perspective-validation.html)。
 
 ## 我的证书成功续期，但这次却不需要验证，为什么？
 

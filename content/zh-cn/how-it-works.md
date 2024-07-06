@@ -2,7 +2,7 @@
 title: Let's Encrypt 的运作方式
 linkTitle: Let's Encrypt 的运作方式
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ Let's&nbsp;Encrypt 通过公钥识别服务器管理员。  证书管理软件�
 
 证书管理软件需要选择一种验证方式完成验证。   假设它选择了第二种方式，在 `http://example.com` 的指定路径创建了一份文件，  并用私钥对收到的 nonce 进行数字签名。  完成这些步骤后，证书管理软件会通知 CA 它已准备好完成验证。
 
-然后，CA 的工作就是检查验证是否已经完成。  CA 会验证 nonce 的签名，并尝试从 Web 服务器下载指定文件，确认内容准确无误。
+接下来 CA 需要从[多个网络位置](/2020/02/19/multi-perspective-validation)进行核验。  CA 会验证 nonce 的签名，并尝试从 Web 服务器下载指定文件，确认内容准确无误。
 
 <div class="howitworks-figure">
 <img alt="申请验证对 example.com 的控制权"
@@ -47,7 +47,7 @@ Let's&nbsp;Encrypt 通过公钥识别服务器管理员。  证书管理软件�
 
 为了获得该域名的证书，证书管理软件将创建一个 PKCS#10 [证书签名请求（CSR）](https://tools.ietf.org/html/rfc2986)，要求 Let's&nbsp;Encrypt CA 为指定的公钥颁发 `example.com` 的证书。  CSR 本身已经由其私钥进行了一次签名，  而证书管理软件还会用 `example.com` 的授权密钥对整个 CSR 再进行一次签名，以便 Let's&nbsp;Encrypt CA 验证其来源。
 
-Let's&nbsp;Encrypt CA 收到请求后对这两份签名进行验证，  如果全部通过，就为 CSR 中的公钥颁发 `example.com` 的证书，并将证书文件发给管理软件。
+Let's&nbsp;Encrypt CA 收到请求后对这两份签名进行验证，  如果全部通过，就为 CSR 中的公钥颁发 `example.com` 的证书，并将证书文件发给管理软件。 CA 还会将证书上传至各类公开的证书透明化日志系统中， 详情可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解。
 
 <div class="howitworks-figure">
 <img alt="为 example.com 申请证书"
