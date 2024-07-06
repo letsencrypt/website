@@ -2,7 +2,7 @@
 title: Stagning Miljø
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2022-06-13
+lastmod: 2024-06-11
 show_lastmod: 1
 ---
 
@@ -13,7 +13,7 @@ ACME-URL'en til vores [ACME v2 staging miljø](https://community.letsencrypt.org
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Hvis du bruger Certbot, kan du bruge vores staging miljø med flaget `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø. Bemærk venligst, at v2 staging miljøet kræver en v2 kompatibel ACME-klient.
+Hvis du bruger Certbot, kan du bruge vores staging miljø med flaget `--test-cert` eller `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø.
 
 # Grænser For kald
 
@@ -27,17 +27,40 @@ Staging miljøet bruger de samme kaldsbegrænsninger som [beskrevet for produkti
 
 # Staging miljøets Certifikat Hierarki
 
-Staging miljøet har et certifikathierarki, der [efterligner produktion](/certificates).
+Staging miljøet har et certifikathierarki, der [efterligner produktion](/certificates). Navnene er blevet ændret med et præfiks af (STAGING) og unikke navn for at gøre dem klart adskilt fra deres produktions modparter.
 
-## Intermediate Certifikater
+## Root CAs
 
-Staging miljøet har to aktive mellemliggende certifikater: en RSA intermediate ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) og en ECDSA intermediate ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
+Staging miljøet har to aktive rodcertifikater, som **ikke er til stede** i browser/klient trust stores: "(STAGING) Pretend Pear X1" og "(STAGING) Bogus Broccoli X2".
 
-ECDSA-udstedelse blev [aktiveret i Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) den 24. marts 2021, og alle anmodninger om Staging-certifikater med ECDSA-nøgler er underskrevet af "(STAGING) Ersatz Edamame E1" og anvender ECDSA-hierarkiet. Tilsvarende er alle anmodninger om staging certifikater med RSA-nøgler underskrevet af "(STAGING) Artificial Apricot R3" og bruger RSA-hierarkiet. Der er ingen måde at få et RSA-signeret certifikat til en ECDSA-nøgle på, eller omvendt. Måden du kan kontrollere, hvilken udsteder du får, er ved kontrollere, hvilken slags nøgle du genererer lokalt.
+Hvis du ønsker at ændre en "kun test"-klient til at stole på staging til testformål, kan du gøre det ved at tilføje deres certifikater til din test trust butik. **Vigtigt**: Du må ikke tilføje staging rod-certifikatet eller intermediates til en trust store, som du bruger til almindelig browsing eller andre aktiviteter, da de ikke revideres eller holdes i overensstemmelse med de samme standarder som vores Root certifikater, og det er ikke sikkert at bruge til andet end test.
 
-## Root Certifikater
+* **Pretend Pear X1**
+  * Emne: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
+  * Nøgletype: `RSA 4096`
+  * Certifikat detaljer: [der](/certs/staging/letsencrypt-stg-root-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+* **Bogus Broccoli X2**
+  * Emne: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
+  * Nøgletype: `ECDSA P-384`
+  * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/letsencrypt-stg-root-x2.der) [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
+  * Certifikat deltaljer (krydsunderskrevet af Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
 
-Staging miljøet har to aktive rodcertifikater, som **ikke er til stede** i browser/klient trust stores: "(STAGING) Forestil Pære X1" og "(STAGING) Bogus Broccoli X2". Hvis du ønsker at ændre en kun testklient til at stole på staging miljøet til testformål, kan du gøre det ved at tilføje ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) og/eller ["(STAGING) Bogus Broccoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) certifikatet til din test trust store. Du kan finde alle vores staging certifikater [her](https://github.com/letsencrypt/website/tree/master/static/certs/staging).  Vigtigt: Du må ikke tilføje staging rod-certifikatet eller intermediates til en trust store, som du bruger til almindelig browsing eller andre aktiviteter, da de ikke revideres eller holdes i overensstemmelse med de samme standarder som vores Root certifikater, og det er ikke sikkert at bruge til andet end test.
+## Underordnede (CA'er)
+
+Staging miljøet har mellemliggende certifikater, der efterligner produktion, udstedt fra de ikke-betroede root certifikater beskrevet ovenfor. Ligesom i produktionen, er ikke alle i brug på noget tidspunkt. Den fuldstændige liste over aktuelle mellemliggende certifikater er:
+
+* (STAGING) Pseudo Plum E5
+* (STAGING) False Fennel E6
+* (STAGING) Puzzling Parsnip E7
+* (STAGING) Mysterious Mulberry E8
+* (STAGING) Fake Fig E9
+* (STAGING) Counterfeit Cashew R10
+* (STAGING) Wannabe Watercress R11
+* (STAGING) Riddling Rhubarb R12
+* (STAGING) Tenuous Tomato R13
+* (STAGING) Not Nectarine R14
+
+Disse mellemliggende certifikater er under forandring når som helst, og bør ikke være fastgjort eller betroet af noget system. Generelt kan du forvente mellemliggende certifikater sin er parallelle de tilsvarende produktion (betroet) mellemliggende certifikater. Hvis strengt nødvendigt, kan du få fulde certifikat detaljer [her](https://github.com/letsencrypt/website/blob/main/static/certs/staging).
 
 # Certifikatets Gennemsigtighed
 

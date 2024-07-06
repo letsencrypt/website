@@ -1,4 +1,35 @@
 ---
+title: Statistiky Let's Encrypt
+linkTitle: Statistika
 slug: stats
-untranslated: 1
+excerpt: Statistika o Let's Encrypt certifikátech.
+lastmod: 2023-02-28
+menu:
+  main:
+    weight: 70
+    parent: about
 ---
+
+
+<p><em>Upozorňujeme, že grafy Růstu Let's Encrypt a Certifikáty Let's Encrypt vydané za den jsou průběžně aktualizovány a nemusí odrážet nejnovější údaje.</em></p>
+
+<div class="figure">
+  <h2><a id="growth" href="#growth"
+    >Růst Let's Encrypt</a></h2>
+  <div id="activeUsage" title="Růst Let's Encrypt" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="percent-pageloads" href="#percent-pageloads"
+    >Procento webových stránek načtených Firefoxem pomocí protokolu HTTPS</a></h2>
+  <p>14denní klouzavý průměr: <a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Telemetrie Firefoxu</a>)</p>
+  <div id="pageloadPercent" title="Procento webových stránek načtených Firefoxem pomocí protokolu HTTPS" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="daily-issuance" href="#daily-issuance"
+    >Certifikáty Let's Encrypt vydané za den</a></h2>
+  <div id="issuancePerDay" title="Certifikáty Let's Encrypt vydané za den" class="statsgraph"></div>
+</div>
+
+{{< plotly >}}

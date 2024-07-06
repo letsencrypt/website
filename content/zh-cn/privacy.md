@@ -1,7 +1,7 @@
 ---
 title: 隐私政策
 slug: privacy
-lastmod: 2023-08-23
+lastmod: 2024-06-28
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -22,7 +22,7 @@ Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联�
 
 作为用户，您向 Let's Encrypt 申请可信数字证书，用于公开证实您对互联网上可寻址的若干域名拥有控制权。 在证明该控制权的流程中，Let's Encrypt 将收集各种与证书认证和管理相关的信息。 该信息包括：您访问 Let's Encrypt 服务所用的 IP 地址；所有请求证书的域名解析得到的所有 IP 地址；与所有验证请求相关的服务器信息；所有入站 HTTP/ACME 请求和所有出站验证请求的完整日志；以及从您的客户端软件发送，或推断自您的客户端软件的信息。 我们将根据受信根证书项目要求将此信息存储至少七年。 这种信息将最多储存十年。
 
-我们需要能够向公众（包括那些依赖我们证书可信度的人）展示我们的服务正常运行。 因此，我们可能无法删除包括 IP 地址在内的某些信息。 该信息可能以多种方式公开，包括通过公共 API、公共存储库和/或公共讨论。
+我们需要能够向公众（包括那些依赖我们证书可信度的人）展示我们的服务正常运行。 因此，我们可能无法删除包括 IP 地址在内的某些信息。 此类信息可能以多种方式公开，包括开放的应用程序接口、证书透明化日志等公开信息系统和/或公共论坛。
 
 您可以选择提供邮箱地址等联系方式，以便获得账户服务或找回账户。 您的联系信息不会被公开，而且它只会根据下文提到的“执法请求与情有可原的情况”被分享。 提供邮箱地址即表示您同意收取我们的服务相关邮件。 您随时可以点击我们邮件底部的 “unsubscribe” 链接取消邮件订阅，或者您可以通过privacy@abetterinternet.org 随时联系我们 我们不会将您的联系信息用于营销或促销目的。
 
@@ -30,7 +30,7 @@ Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联�
 
 ## 访客
 
-如果您是浏览 ISRG 网站的访客，您可以选择为我们捐款。 款项由我们信任的支付合作伙伴处理，包括 DonorBox、Stripe、Shopify 和 PayPal，具体取决于您所选的支付方式。捐款信息将存储在 ISRG 的 Salesforce 数据库中，如有必要还会录入 Sage Intacct 系统。 捐款时我们会收集您的姓名和电子邮箱，此外您还可以选择是否提供邮寄地址。 捐款完成后，我们会出于自身的正当利益使用您的信息，包括管理您的贡献、向您发送筹款提醒以及定期收取约定的款项。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、Gemini、[SHIPHERO](https://shiphero.com/privacy-data-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/) 以及 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自的隐私协议约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。
+如果您是浏览 ISRG 网站的访客，您可以选择为我们捐款。 款项由我们信任的支付合作伙伴处理，包括 DonorBox、Stripe、Shopify 和 PayPal，具体取决于您所选的支付方式。捐款信息将存储在 ISRG 的 Salesforce 数据库中，如有必要还会录入 Sage Intacct 系统。 捐款时我们会收集您的姓名和电子邮箱，此外您还可以选择是否提供邮寄地址。 捐款完成后，我们会出于自身的正当利益使用您的信息，包括管理您的贡献、向您发送筹款提醒以及定期收取约定的款项。 您与 [DonorBox](https://donorbox.org/privacy)、[Stripe](https://stripe.com/privacy/)、[PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full)、[Shopify](https://www.shopify.com/legal/privacy)、[The Giving Block](https://thegivingblock.com/about/privacy-policy/)、[Salesforce](https://www.salesforce.com/company/privacy/)、[Printful](https://www.printful.com/policies/privacy)、[Formstack](https://www.formstack.com/legal) 和 [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) 之间的交互受其各自隐私协议的约束。 我们不收集或保留与捐款有关的任何信用卡或银行信息。
 
 您可以选择通过 ISRG 网站或其他营销渠道注册您的邮箱地址，以接收与 ISRG 项目相关的通讯邮件。 通过Salesforce发生的任何通信以及您与 [Salesforce](https://www.salesforce.com/company/privacy/) 的互动都受其隐私政策的制约。 我们偶尔会向您的邮箱发送与 ISRG 相关的推荐信息。 您可以通过邮件底部的链接或者联系 press@abetterinternet.org 取消订阅，从而将您的邮箱地址从我们的系统中删除。
 
@@ -40,7 +40,14 @@ Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联�
 
 我们不会出售您的数据与信息。 包括所有依赖方、用户和访客的数据与信息。
 
-## 执法请求与情有可原的情况
+## 第三方数据分析和邮件营销工具的使用
+
+为了进一步了解访客如何与我们的网站和邮件交互，以及改进集资和营销策略，ISRG 可能会不定期使用第三方的网页与邮件数据分析工具。我们的网站实际使用的是 Google Analytics，而营销邮件实际使用的是 Salesforce Account Engagement。
+
+- Google Analytics：此工具会收集访客与我们的网站之间的交互方式，包括浏览过的页面、在页面和网站停留的时间，以及打开页面的顺序。 我们使用此信息分析网站的性能以及用户的操作。 出于流量分析的目的，我们可能根据需要无限期保留 Google Analytics 收集的数据。 您可以在 Google 的广告设置页面停止将 Google Analytics 用于展示广告并调整 Google 展示广告网络的设置。 另外，您还可以下载并安装[“停用 Google Analytics”浏览器插件](https://support.google.com/analytics/answer/181881?hl=en)阻止 Google Analytics 收集您的数据。 您可以前往 [Google 如何利用从使用 Google 服务的网站和应用中收集的信息](https://www.google.com/policies/privacy/partners/)详细了解 Google 如何利用您在使用我们的网站时产生的数据。
+- Salesforce Account Engagement：对于我们的营销邮件，Salesforce Account Engagement 能帮助我们了解收件方的反应，例如打开邮件和点击链接的操作。 我们使用此类交互信息评估邮件宣传的效果，并了解受众的行为。 使用 Salesforce Account Engagement 期间，我们可能会无限期保留交互数据。 您可以随时点击我们邮件中的退订链接或直接联系 press@abetterinternet.org 要求我们停止投递营销信息。
+
+## 执法诉求与情有可原的情况
 
 在我们拥有您的个人身份信息的期间内，我们可能会在有限的情况下向第三方披露这些信息。 此类情况包括：我们已经征得您的同意，或我们有充分理由相信披露信息属于法律义务（例如有传票或其他司法及行政命令为依据）。 如果为了防止生命财产损失、人身伤害或重大经济损失，我们有充分理由认为此举存在必要性，也可能会披露账户恢复信息。
 
@@ -89,11 +96,8 @@ Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联�
 位于欧洲经济区的个人对其个人信息享有法定权利，包括获取、更正、删除您在使用我们的网站和服务时由我们处理的个人数据。 如果您是位于欧洲经济区的依赖方、用户或访客，您可以：
 
 - 邮件联系 privacy@abetterinternet.org 获取个人数据报告。 该报告包括我们所掌握的您的个人数据，并且以一种结构化、常用且便捷的格式提供。 请注意，在我们披露任何信息之前，我们可能会要求您提供其他信息以验证您的身份。
-
 - 邮件联系 privacy@abetterinternet.org 要求更正或删除您的个人信息。
-
 - 反对我们处理您的信息。 您可以要求我们停止使用您的信息，包括使用您的信息向您发送服务相关的电子邮件。 您可以随时通过点击 Let's Encrypt 电子邮件中的“取消订阅”链接，撤销对于接收服务电子邮件的许可。
-
 - 向监管机构投诉。 如果您位于欧洲经济区，并认为我们没有遵守数据保护法，您有权向当地监管机构提出投诉。
 
 如需了解更多信息或反馈隐私问题，请联系 privacy@abetterinternet.org。

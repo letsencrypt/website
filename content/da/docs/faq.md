@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Ofte stillede spørgsmål (FAQ)
 slug: faq
-lastmod: 2022-09-28
+lastmod: 2024-06-26
 menu:
   main:
     weight: 30
@@ -97,9 +97,13 @@ Der er et stort antal [ACME-klienter](/docs/client-options) tilgængelige. Chanc
 
 Ja, men ikke alle klienter understøtter denne funktion. [Certbot](https://certbot.eff.org/) gør.
 
+## Jeg anmodede om et certifikat, og nu modtager mit domæne en masse trafik! Hvorfor sker dette?
+
+Det er normalt og forventet. Under [-certifikatudstedelsesprocessen](/how-it-works)vil Let's Encrypt validere dit domæne fra [flere netværksperspektiver](/2020/02/19/multi-perspective-validation). Efter en vellykket validering vil dit certifikat blive indsendt til talrige [Certificate Transparency (CT) logs](/docs/ct-logs). Se [her](https://certificate.transparency.dev/howctworks/#pki) for flere detaljer om, hvorfor dette er nødvendigt. Kort efter certifikatet er indsendt til CT, vil automatiserede CT crawling bots være i stand til at opdage dit domæne, forsøge at få adgang til det, og generere yderligere trafik i dine webserver logs.
+
 ## Hvilke IP-adresser bruger Let's Encrypt til at validere min webserver?
 
-Vi offentliggør ikke en liste over IP-adresser, som vi bruger til at validere, og disse IP-adresser kan ændre sig til enhver tid. Bemærk, at vi nu [validerer fra flere IP-adresser](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Vi offentliggør ikke en liste over IP-adresser, som vi bruger til at validere, og disse IP-adresser kan ændre sig til enhver tid. Bemærk, at vi nu [validerer fra flere IP-adresser](/2020/02/19/multi-perspective-validation.html).
 
 ## Jeg har succesfuldt fornyet et certifikat, men validering skete ikke denne gang - hvordan er det muligt?
 
