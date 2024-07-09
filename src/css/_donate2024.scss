@@ -35,7 +35,7 @@
   font-size: 37px;
   line-height: 44.4px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .donate-2024-item-desc {
@@ -52,7 +52,7 @@
 }
 
 .gap-4 {
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 $md-breakpoint: 768px;
@@ -63,5 +63,23 @@ $md-breakpoint: 768px;
   }
   .md\:min-width-425 {
     min-width: 425px;
+  }
+  .md\:min-width-250 {
+    min-width: 250px;
+  }
+  .md\:min-width-325 {
+    min-width: 325px;
+  }
+}
+
+.sticky-when-screen-height-more-than-600 {
+  position: relative;
+}
+
+@media (min-height: 600px) {
+  .sticky-when-screen-height-more-than-600 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
