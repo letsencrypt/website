@@ -80,6 +80,6 @@ $md-breakpoint: 768px;
   .sticky-when-screen-height-more-than-600 {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 16px;
   }
 }
