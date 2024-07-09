@@ -1,0 +1,67 @@
+.donate-2024-headline {
+  color: #1a3e6f;
+  font-size: 59px;
+  line-height: 70.8px;
+  font-weight: medium;
+  margin-bottom: 48px;
+}
+
+.donate-2024-text {
+  font-size: 14px;
+  color: #000;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+}
+
+.donate-2024-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.donate-2024-item-eyebrow {
+  color: rgb(237, 166, 65);
+  font-size: 17px;
+  line-height: 20.4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.donate-2024-item-title {
+  color: #1a3e6f;
+  font-size: 37px;
+  line-height: 44.4px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.donate-2024-item-desc {
+}
+
+.donate-2024-item-column-image img {
+  aspect-ratio: 1/1;
+}
+
+.donate-2024-item-image-placeholder {
+  aspect-ratio: 1/1;
+  width: 160px;
+  background: #ccc;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+$md-breakpoint: 768px;
+
+@media (min-width: $md-breakpoint) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:min-width-425 {
+    min-width: 425px;
+  }
+}
