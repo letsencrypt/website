@@ -1,30 +1,55 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@letsencrypt">
-    <meta name="twitter:title" content="{{ .Title }}">
-    <meta name="twitter:url" content="{{ .Permalink }}">
-    <meta name="twitter:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}">
-    <meta name="twitter:image:src" content="{{ "images/le-logo-twitter-noalpha.png" | absURL }}">
-    <meta name="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>
+    {{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
+  </title>
+  <meta
+    name="description"
+    content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}"
+  />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@letsencrypt" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:url" content="{{ .Permalink }}" />
+  <meta
+    name="twitter:description"
+    content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}"
+  />
+  <meta name="twitter:image:src" content="{{
+  "images/le-logo-twitter-noalpha.png" | absURL }}"> <meta name="og:image"
+  content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 
-    {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify | fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XEJKGKMHBK"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-XEJKGKMHBK");
+  </script>
 
-    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css" />
-    {{ if .Params.canonicalUrl }}
-    <link rel="canonical" href="{{ .Params.canonicalUrl }}">
-    {{ else }}
-    <link rel="canonical" href="{{ .RelPermalink }}">
-    {{ end }}
-    {{ with .Site.Home.OutputFormats.Get "RSS" -}}
-    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
-    {{ end  }}
-    {{ if .Page.Params.do_not_index }}
-    <meta name="robots" content="noindex">
-    {{ end }}
+  {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify |
+  fingerprint "sha512" }}
+  <link
+    rel="stylesheet"
+    href="{{ $style.RelPermalink }}"
+    integrity="{{ $style.Data.Integrity }}"
+  />
+
+  <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css" />
+  {{ if .Params.canonicalUrl }}
+  <link rel="canonical" href="{{ .Params.canonicalUrl }}" />
+  {{ else }}
+  <link rel="canonical" href="{{ .RelPermalink }}" />
+  {{ end }} {{ with .Site.Home.OutputFormats.Get "RSS" -}} <link rel="alternate"
+  href="/feed.xml" type="application/rss+xml" title="{{ i18n "blog_feed" }}" />
+  {{ end }} {{ if .Page.Params.do_not_index }}
+  <meta name="robots" content="noindex" />
+  {{ end }}
 </head>
