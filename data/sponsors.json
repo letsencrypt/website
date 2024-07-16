@@ -53,7 +53,11 @@
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
     { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.svg" },
-    { "name": "Squarespace", "url": "https://www.squarespace.com/", "image": "squarespace-logo.png" }
+    {
+      "name": "Squarespace",
+      "url": "https://www.squarespace.com/",
+      "image": "squarespace-logo.png"
+    }
   ],
   "silver": [
     {
@@ -318,19 +322,68 @@
       "image": "acton-family-giving-logo.png"
     },
 
-    { "name": "Crypto Tracker", "url": "https://cryptotracker.com/", "image": "cryptotracker-logo.svg" },
-    { "name": "Tailscale", "url": "https://tailscale.com/", "image": "tailscale-logo.svg" },
-    { "name": "BitLaunch", "url": "https://bitlaunch.io/", "image": "bitlaunch-logo.svg" },
-    { "name": "IBAN", "url": "https://www.iban.com/", "image": "iban-logo.png" },
-    { "name": "Yubico", "url": "https://yubico.com/", "image": "yubico-logo.png" },
-    { "name": "Video Downloader", "url": "https://www.4kdownload.com/-1uvr6/video-downloader", "image": "4kdownload-logo.png" },
-    { "name": "VPSServer.com", "url": "https://www.vpsserver.com/", "image": "VPSServer-logo.svg" },
-    { "name": "Entri", "url": "https://www.entri.com/", "image": "entri-logo.svg" },
-    { "name": "Confluent", "url": "https://www.confluent.io/", "image": "confluent-logo.svg" },
-    { "name": "Jet Brains", "url": "https://www.jetbrains.com/", "image": "jetbrains-logo.png" },
+    {
+      "name": "Crypto Tracker",
+      "url": "https://cryptotracker.com/",
+      "image": "cryptotracker-logo.svg"
+    },
+    {
+      "name": "Tailscale",
+      "url": "https://tailscale.com/",
+      "image": "tailscale-logo.svg"
+    },
+    {
+      "name": "BitLaunch",
+      "url": "https://bitlaunch.io/",
+      "image": "bitlaunch-logo.svg"
+    },
+    {
+      "name": "IBAN",
+      "url": "https://www.iban.com/",
+      "image": "iban-logo.png"
+    },
+    {
+      "name": "Yubico",
+      "url": "https://yubico.com/",
+      "image": "yubico-logo.png"
+    },
+    {
+      "name": "Video Downloader",
+      "url": "https://www.4kdownload.com/-1uvr6/video-downloader",
+      "image": "4kdownload-logo.png"
+    },
+    {
+      "name": "VPSServer.com",
+      "url": "https://www.vpsserver.com/",
+      "image": "VPSServer-logo.svg"
+    },
+    {
+      "name": "Entri",
+      "url": "https://www.entri.com/",
+      "image": "entri-logo.svg"
+    },
+    {
+      "name": "Confluent",
+      "url": "https://www.confluent.io/",
+      "image": "confluent-logo.svg"
+    },
+    {
+      "name": "Jet Brains",
+      "url": "https://www.jetbrains.com/",
+      "image": "jetbrains-logo.png"
+    },
     { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" },
-    { "name": "SecureW2", "url": "https://www.securew2.com/", "image": "securew2-logo.svg" },
+    {
+      "name": "SecureW2",
+      "url": "https://www.securew2.com/",
+      "image": "securew2-logo.svg"
+    },
     { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
-    { "name": "SerpApi", "url": "https://serpapi.com/", "image": "SerpApi-black.png" }
+    {
+      "name": "SerpApi",
+      "url": "https://serpapi.com/",
+      "image": "SerpApi-black.png"
+    },
+    { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" }
   ]
 }
