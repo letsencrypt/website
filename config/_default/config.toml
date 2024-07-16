@@ -19,6 +19,7 @@ site_banner_enabled = false
 github_username = "letsencrypt"
 twitter_username = "letsencrypt"
 mastodon_username = "letsencrypt"
+linkedin_url = "https://www.linkedin.com/company/lets-encrypt/"
 crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more-secure-web-with-let-s-encrypt"
 
 # Date and time formatting, see https://gohugo.io/functions/format/
