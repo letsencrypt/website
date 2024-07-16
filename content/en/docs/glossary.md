@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-date: 2018-12-30
+date: 2024-07-16
 show_lastmod: 1
 ---
 
@@ -54,7 +54,7 @@ Note for translators:
 
 {{% def id="CP" name="Certificate Policy" abbr="CP" %}} A named set of rules that indicates the applicability of a certificate to a particular community and/or class of applications with common security requirements. Specific details of issuance are outlined in a [CPS](#def-CPS). CP and CPS documents may be combined into a single document. [ISRG Combined CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} A statement of the practices that a certification authority employs in issuing, managing, revoking, and renewing or re-keying certificates. CP and CPS documents may be combined into a single document. [ISRG Combined CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} A statement of the practices that a certification authority employs in issuing, managing, revoking, and renewing or re-keying certificates. A CPS must be compliant with associated [Certificate Policy](#def-CP). CP and CPS documents may be combined into a single document. [ISRG Combined CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} A certificate may contain [extensions](#def-extension) marked "critical." This means that software must reject that certificate unless the software understands how to process that extension. This makes it possible to introduce new extensions that are important for security without creating risks for older software. {{% /def %}}
 
