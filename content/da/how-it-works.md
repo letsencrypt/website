@@ -2,7 +2,7 @@
 title: Sådan fungerer det
 linkTitle: Sådan virker Let's Encrypt
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ Sammen med udfordringerne Let's Encrypt CA giver også en nonce at agenten skal 
 
 Agent software fuldender en af de leverede sæt af udfordringer.   Lad os antage, at den er i stand til at udføre den anden opgave ovenfor: der oprettes en fil på en bestemt sti på `http://example.com` webstedet.  Agenten underskriver også den medfølgende nonce med sin private nøgle.  Når agenten har fuldført disse trin, underretter den CA, at den er klar til at fuldføre valideringen.
 
-Derefter er det CA's opgave at kontrollere, at udfordringerne er blevet imødekommet.  CA verificerer underskriften på nonce, og det forsøger at hente filen fra webserveren og bekræfter at den har det forventede indhold.
+Derefter er det CA's opgave at kontrollere, at udfordringerne er blevet opfyldt fra [flere netværksperspektiver](/2020/02/19/multi-perspective-validation).  CA verificerer underskriften på nonce, og det forsøger at hente filen fra webserveren og bekræfter at den har det forventede indhold.
 
 <div class="howitworks-figure">
 <img alt="Anmoder om tilladelse til at agere for example.com"
@@ -47,7 +47,7 @@ Når agenten har et autoriseret nøglepar er anmodning, fornyelse, og tilbagekal
 
 For at få et certifikat for domænet konstruerer agenten en PKCS#10 [Certifikatsigneringsanmodning](https://tools.ietf.org/html/rfc2986), der beder Let's&nbsp;Encrypt CA om at udstede et certifikat for `. om` med en bestemt offentlig nøgle.  Som sædvanlig indeholder CSR en underskrift fra den private nøgle, der svarer til den offentlige nøgle i CSR.  Agenten underskriver også hele CSR med den autoriserede nøgle for `example.com`, så Let's&nbsp;Encrypt CA ved, at det er autoriseret.
 
-Når Let's&nbsp;Encrypt CA modtager anmodningen, verificerer den begge underskrifter.  Hvis alt ser godt ud, udsteder det et certifikat for `example.com` med den offentlige nøgle fra CSR og returnerer det til agenten.
+Når Let's&nbsp;Encrypt CA modtager anmodningen, verificerer den begge underskrifter.  Hvis alt ser godt ud, udsteder det et certifikat for `example.com` med den offentlige nøgle fra CSR og returnerer det til agenten. CA'en vil også indsende certifikatet til talrige offentlige Certifikat Transparency (CT) logs. Se [her](https://certificate.transparency.dev/howctworks/#pki) for flere detaljer.
 
 <div class="howitworks-figure">
 <img alt="Anmod om et certifikat til example.com"

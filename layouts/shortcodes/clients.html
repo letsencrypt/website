@@ -7,7 +7,7 @@
     {{ $category := . }}
     <ul>
     {{ range $.Site.Data.clients.list }}
-        {{ if and .acme_v2 (eq $category .category) }}
+        {{ if (eq $category .category) }}
         <li>
             <a href="{{ .url }}">{{ .name }}</a>
             {{ if .category_comments }}
@@ -33,7 +33,7 @@
         <li dir="{{ $LanguageDirection }}">{{ $certbot | markdownify }}</li>
     {{ end }}
     {{ range $.Site.Data.clients.list }}
-        {{ if and .acme_v2 (eq $library .library) }}
+        {{ if (eq $library .library) }}
         <li>
             <a href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
             {{ if .library_comments }}

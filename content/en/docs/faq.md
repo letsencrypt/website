@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
-lastmod: 2022-09-28
+lastmod: 2024-06-26
 menu:
   main:
     weight: 30
@@ -97,9 +97,13 @@ There are a large number of [ACME clients](/docs/client-options) available. Chan
 
 Yes, but not all clients support this feature. [Certbot](https://certbot.eff.org/) does.
 
+## I requested a certificate and now my domain is receiving a lot of traffic! Why is this happening?
+
+This is normal and anticipated. During the [certificate issuance process](/how-it-works), Let's Encrypt will validate control of your domain from [multiple network perspectives](/2020/02/19/multi-perspective-validation). After successful validation, your certificate will be submitted to numerous [Certificate Transparency (CT) logs](/docs/ct-logs). See [here](https://certificate.transparency.dev/howctworks/#pki) for more details about why this is necessary. Shortly after the certificate is submitted to CT, automated CT crawling bots will be able to discover your domain, attempt to access it, and generate further traffic in your webserver logs.
+
 ## What IP addresses does Let's Encrypt use to validate my web server?
 
-We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. Note that we now [validate from multiple IP addresses](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+We don't publish a list of IP addresses we use to validate, and these IP addresses may change at any time. Note that we now [validate from multiple IP addresses](/2020/02/19/multi-perspective-validation.html).
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 

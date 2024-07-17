@@ -48,6 +48,14 @@
           </li>
           {{ end }}
 
+          {{ with .Site.Params.linkedin_url }}
+          <li>
+            <a href="{{ . }}">
+              <i class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="username">LinkedIn</span>
+            </a>
+          </li>
+         {{ end }}
           {{ with .Site.Params.twitter_username }}
           <li>
             <a href="https://x.com/{{ . }}">
