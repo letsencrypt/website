@@ -16,18 +16,19 @@
 .donate-2024-item {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 40px;
 }
 
 .donate-2024-item-eyebrow {
+  // font-family: Futura;
   color: rgb(237, 166, 65);
   font-size: 17px;
   line-height: 20.4px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .donate-2024-item-title {
@@ -45,10 +46,12 @@
   aspect-ratio: 1/1;
 }
 
-.donate-2024-item-image-placeholder {
-  aspect-ratio: 1/1;
-  width: 160px;
-  background: #ccc;
+.donate-2024-item-image {
+  // aspect-ratio: 1/1;
+  max-width: 150px;
+  width: 150px;
+  background: #fff;
+  // object-fit: contain;
 }
 
 .gap-4 {
