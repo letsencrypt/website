@@ -101,7 +101,7 @@ show_hero: false
         <div class="donate-2024-item">
           <div class="donate-2024-item-column-image">
             <img
-              src="/images/donate-2024/Donate-2024-Gift-Bowl.png"
+              src="/images/donate-2024/Donate-2024-Gift-Bowl.jpg"
               alt="Pet Bowl"
               class="donate-2024-item-image"
             />
@@ -117,15 +117,10 @@ show_hero: false
           </div>
         </div>
       </section>
-      <p>
-        LEGAL TEXT: lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        ut purus eget sapien egestas fermentum. Nullam nec amet. <br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus
-        eget sapien egestas fermentum. Nullam nec amet. <br /><br />
-      </p>
     </div>
 
     <div class="md:min-width-325 md:w-1/3 md:pl-8 mt-8 md:mt-0">
+      <a name="donate-form" id="donate-form"></a>
       <div
         class="sticky-when-screen-height-more-than-600 bg-white p-4 rounded shadow mx-auto"
       >
@@ -153,3 +148,36 @@ show_hero: false
     </div>
   </div>
 </div>
+
+<div class="fixed-donate-btn" id="donate-button">
+  <a href="#donate-form">Donate Now</a>
+</div>
+
+<script>
+  function isElementInViewport(el, buffer = 100) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= -buffer &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) +
+          buffer &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  const donateForm = document.getElementById("donate-form");
+  const donateButton = document.getElementById("donate-button");
+
+  function checkVisibility() {
+    if (isElementInViewport(donateForm, 100)) {
+      donateButton.style.display = "none";
+    } else {
+      donateButton.style.display = "block";
+    }
+  }
+
+  document.addEventListener("scroll", checkVisibility);
+  window.addEventListener("resize", checkVisibility);
+  window.addEventListener("load", checkVisibility);
+</script>

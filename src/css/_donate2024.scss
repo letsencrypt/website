@@ -86,3 +86,38 @@ $md-breakpoint: 768px;
     top: 16px;
   }
 }
+
+.fixed-donate-btn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.fixed-donate-btn a {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white;
+  background-color: #f9a825;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fixed-donate-btn a:hover {
+  background-color: #e69100;
+}
+
+@media (max-width: 768px) {
+  .fixed-donate-btn {
+    display: block;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
