@@ -181,3 +181,14 @@ show_hero: false
   window.addEventListener("resize", checkVisibility);
   window.addEventListener("load", checkVisibility);
 </script>
+
+<script>
+  document
+    .querySelector(".fixed-donate-btn a")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      document
+        .querySelector("#donate-form")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+</script>
