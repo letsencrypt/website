@@ -97,6 +97,26 @@
             "windowEnd": "1768867200"
         },
         {
+            "log": "oak",
+            "shard": "2026h1",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmdRhcCL6d5MNs8eAliJRvyV5sQFC6UF7iwzHsmVaifT64gJG1IrHzBAHESdFSJAjQN56TYky+9cK616MovH2SQ==",
+            "logID": "19:86:D4:C7:28:AA:6F:FE:BA:03:6F:78:2A:4D:01:91:AA:CE:2D:72:31:0F:AE:CE:5D:70:41:2D:25:4C:C7:D4",
+            "windowStart": "1766188800",
+            "windowEnd": "1784505600"
+        },
+        {
+            "log": "oak",
+            "shard": "2026h2",
+            "state": "Pending",
+            "role": "production",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEanCds5bj7IU2lcNPnIvZfMnVkSmu69aH3AS8O/Y0D/bbCPdSqYjvuz9Z1tT29PxcqYxf+w1g5CwPFuwqsm3rFQ==",
+            "logID": "AC:AB:30:70:6C:EB:EC:84:31:F4:13:D2:F4:91:5F:11:1E:42:24:43:B1:F2:A6:8C:4F:3C:2B:3B:A7:1E:02:C3",
+            "windowStart": "1781913600",
+            "windowEnd": "1800403200"
+        },
+        {
             "log": "sapling",
             "shard": "2022h2",
             "role": "testing",
