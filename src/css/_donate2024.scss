@@ -114,6 +114,13 @@ $md-breakpoint: 768px;
   }
 }
 
+@media (min-height: 600px) {
+  /* Hide donate button when sticky version of form exists */
+  .fixed-donate-btn {
+    display: none !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
