@@ -130,9 +130,12 @@ html {
 .next {
   cursor: pointer;
   width: 30px;
+  padding: 0;
+  text-align: center;
   font-weight: bold;
   border: 0;
   font-size: 18px;
+  line-height: 30px;
   transition: 0.1s ease;
   border-radius: 0;
   user-select: none;
