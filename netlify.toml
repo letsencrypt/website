@@ -51,10 +51,11 @@ Content-Security-Policy = """
         https://www.paypal.com
         https://www.paypalobjects.com
         https://widget.thegivingblock.com
+        https://*.shift4.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
-        https://www.paypal.com
+        https://*.paypal.com
         https://www.paypalobjects.com
         https://ak2s.abmr.net
         https://ak1s.abmr.net

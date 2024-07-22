@@ -75,6 +75,12 @@ article.post-content p img {
   text-align: center;
 }
 
+div[data-netlify-site-id] {
+  /* Netlify Collaborate Drawer */
+  display: none;
+  pointer-events: none;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "donate2024", "fundraiser", "waiting",
