@@ -129,7 +129,7 @@ html {
 .prev,
 .next {
   cursor: pointer;
-  width: auto;
+  width: 30px;
   font-weight: bold;
   border: 0;
   font-size: 18px;
@@ -142,16 +142,6 @@ html {
 .prev:hover,
 .next:hover {
   background-color: #aaa;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .lightbox:hover {
