@@ -1,0 +1,206 @@
+.donate-2024-headline {
+  color: #1a3e6f;
+  font-size: 59px;
+  line-height: 70.8px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.donate-2024-text {
+  font-size: 14px;
+  color: #000;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+}
+
+.donate-2024-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.donate-2024-item-eyebrow {
+  // font-family: Futura;
+  color: rgb(237, 166, 65);
+  font-size: 17px;
+  line-height: 20.4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.donate-2024-item-title {
+  color: #1a3e6f;
+  font-size: 37px;
+  line-height: 44.4px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.donate-2024-item-image {
+  max-width: 150px;
+  width: 150px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.gap-4 {
+  gap: 1.25rem;
+}
+
+$md-breakpoint: 768px;
+
+@media (min-width: $md-breakpoint) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:min-width-425 {
+    min-width: 425px;
+  }
+  .md\:min-width-250 {
+    min-width: 250px;
+  }
+  .md\:min-width-325 {
+    min-width: 325px;
+  }
+}
+
+.sticky-when-screen-height-more-than-600 {
+  position: relative;
+}
+
+@media (min-height: 600px) {
+  .sticky-when-screen-height-more-than-600 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+  }
+}
+
+.lightbox-open .fixed-donate-btn {
+  display: none !important;
+}
+
+.fixed-donate-btn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.fixed-donate-btn a {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white;
+  background-color: #f9a825;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fixed-donate-btn a:hover {
+  background-color: #e69100;
+}
+
+@media (max-width: 768px) {
+  .fixed-donate-btn {
+    display: block;
+  }
+}
+
+@media (min-height: 600px) {
+  /* Hide donate button when sticky version of form exists */
+  .fixed-donate-btn {
+    display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.donate-2024-item-image {
+  display: none;
+}
+
+.donate-2024-item-image.active {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: 30px;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  font-size: 18px;
+  line-height: 30px;
+  transition: 0.1s ease;
+  border-radius: 0;
+  user-select: none;
+  background-color: #ddd;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #aaa;
+}
+
+.lightbox:hover {
+  cursor: pointer;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  cursor: zoom-in;
+}
+
+.donate-pagination-controls {
+  text-align: center;
+  padding: 5px 0;
+}

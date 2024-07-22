@@ -20,7 +20,7 @@ We also created 5 new P-384 ECDSA intermediate certificates named in sequence fr
 
 You can see details of all of the certificates on our [updated hierarchy page](https://letsencrypt.org/certificates/).
 
-![](/images/blog/ChainofTrust2024CeremonyBlogPost.png)
+![Let's Encrypt 2024 Ceremony](/images/blog/ChainofTrust2024CeremonyBlogPost.png)
 
 ## Rotating Issuance
 
@@ -28,7 +28,7 @@ Rotating the set of intermediates we issue from helps keep the Internet agile an
 
 Intermediates usually change only every five years, so this joint is exercised infrequently and client software keeps making the same mistakes. Shortening the lifetime from five years to three years means we will be conducting another ceremony in just two years, ahead of the expiration date on these recently created certificates. This ensures we exercise the joint more frequently than in the past.
 
-We also issued *more* intermediates this time around. Historically, we've had two of each key type (RSA and ECDSA): one for active issuance, and one held as a backup for emergencies. Moving forward we will have five: two conducting active issuance, two waiting in the wings to be introduced in about one year, and one for emergency backup. Randomizing the selected issuer for a given key type means it will be impossible to predict which intermediate a certificate will be issued from. We are very hopeful that these steps will prevent intermediate key pinning altogether, and help the WebPKI remain agile moving forward.
+We also issued _more_ intermediates this time around. Historically, we've had two of each key type (RSA and ECDSA): one for active issuance, and one held as a backup for emergencies. Moving forward we will have five: two conducting active issuance, two waiting in the wings to be introduced in about one year, and one for emergency backup. Randomizing the selected issuer for a given key type means it will be impossible to predict which intermediate a certificate will be issued from. We are very hopeful that these steps will prevent intermediate key pinning altogether, and help the WebPKI remain agile moving forward.
 
 These shorter intermediate lifetimes and randomized intermediate issuance shouldn't impact the online experience of the general Internet user. Subscribers may be impacted if they are pinning one of our intermediates, though this should be incredibly rare.
 
@@ -44,9 +44,9 @@ This reduces the size of our default ECDSA chain by about a third, and is an imp
 
 We've made two other tiny changes that are worth mentioning, but will have no impact on how Subscribers and clients use our certificates:
 
--   We've changed how the Subject Key ID field is calculated, from a SHA-1 hash of the public key, to a [truncated SHA-256 hash](https://datatracker.ietf.org/doc/html/rfc7093#section-2) of the same data. Although this use of SHA-1 was not cryptographically relevant, it is still nice to remove one more usage of that [broken algorithm](https://shattered.io/), helping move towards a world where cryptography libraries don't need to include SHA-1 support at all.
+- We've changed how the Subject Key ID field is calculated, from a SHA-1 hash of the public key, to a [truncated SHA-256 hash](https://datatracker.ietf.org/doc/html/rfc7093#section-2) of the same data. Although this use of SHA-1 was not cryptographically relevant, it is still nice to remove one more usage of that [broken algorithm](https://shattered.io/), helping move towards a world where cryptography libraries don't need to include SHA-1 support at all.
 
--   We have removed our CPS OID from the Certificate Policies extension. This saves a few bytes in the certificate, which can add up to a lot of bandwidth saved over the course of billions of TLS handshakes.
+- We have removed our CPS OID from the Certificate Policies extension. This saves a few bytes in the certificate, which can add up to a lot of bandwidth saved over the course of billions of TLS handshakes.
 
 Both of these mirror two [identical](https://community.letsencrypt.org/t/enabling-sha256-subject-key-identifiers-for-end-entity-certificates/211453/4) [changes](https://community.letsencrypt.org/t/small-change-to-end-entity-certificates-cps-url-and-oid-will-not-be-included-from-june-15/198206/5) that we made for our Subscriber Certificates in the past year.
 

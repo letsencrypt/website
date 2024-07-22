@@ -1,7 +1,8 @@
-{{ if ne .Section "documents" }}
-<div class="hero slim" style="background-image: url('/images/hero.jpg');">
-<div class="container">
-	<h1>{{ .Title }}</h1>
-</div>
+{{ if and (ne .Section "documents") (ne (.Param "show_hero" | default true)
+false) }}
+<div class="hero slim" style="background-image: url('/images/hero.jpg')">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+  </div>
 </div>
 {{ end }}

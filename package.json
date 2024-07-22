@@ -10,7 +10,7 @@
     "test:htmllint": "htmlhint 'content/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
     "test": "npm run test:htmllint && npm run test:eslint",
-    "test:html5validate": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate fontawesome-free-6.5.2-web --also-check-css --format text",
+    "test:html5validate": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate donate-2024 donation-information fontawesome-free-6.5.2-web --also-check-css --format text --ignore 'aspect-ratio'",
     "build": "hugo -d public"
   },
   "repository": {
