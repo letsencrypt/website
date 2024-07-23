@@ -12,8 +12,8 @@ $text-color: #000;
 $background-color: #fdfdfd;
 $brand-color: #2a7ae2;
 $secondary-color: #1678d3;
-$logo-yellow-color: rgb(236,165,65);
-$logo-blue-color: rgb(47,60,102);
+$logo-yellow-color: rgb(236, 165, 65);
+$logo-blue-color: rgb(47, 60, 102);
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -75,6 +75,13 @@ article.post-content p img {
   text-align: center;
 }
 
+div[data-netlify-site-id] {
+  /* Netlify Collaborate Drawer */
+  display: none;
+  pointer-events: none;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
-  "syntax-highlighting", "donate", "fundraiser", "waiting", "single-pages";
+  "syntax-highlighting", "donate", "donate2024", "fundraiser", "waiting",
+  "single-pages";

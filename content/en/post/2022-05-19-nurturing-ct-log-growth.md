@@ -4,7 +4,7 @@ date: 2022-05-19T00:00:00Z
 slug: nurturing-ct-log-growth
 title: "Nurturing Continued Growth of Our Oak CT Log"
 aliases:
-    - /2022/05/19/database-to-app-tls.html
+  - /2022/05/19/database-to-app-tls.html
 excerpt: "Only five organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack."
 ---
 
@@ -22,7 +22,7 @@ This post will update some of the information from the previous post [How Let's 
 
 Oak runs on a free and open source stack: Google's Trillian data store, backed by MariaDB, running at Amazon Web Services (AWS) via [Amazon's Relational Database Service](https://aws.amazon.com/rds/) (RDS). To our knowledge, Oak is the only trusted CT log without closed-source components <sup id="fnref:3-second"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.
 
-![](/images/2022.05.19-open_source_stack.png)
+![Open Source Stack](/images/2022.05.19-open_source_stack.png)
 
 <div class='blog-image-caption'>Open Source Stack</div>
 
@@ -48,7 +48,7 @@ The [Trillian database schema](https://github.com/google/trillian/blob/master/st
 
 - Once sequenced, entries are removed from the Unsequenced table and added as a row in SequencedLeafData.
 
-![](/images/2022.05.19-database_layout.png)
+![Database Layout](/images/2022.05.19-database_layout.png)
 
 <div class='blog-image-caption'>Database Layout</div>
 
@@ -72,7 +72,7 @@ Since Trillian's MySQL-compatible backend does not support splitting the LeafDat
 
 We considered adding new database schemas to our existing MariaDB-backed Amazon RDS instance. In this design, we would run a Trillian CT Front-End (CTFE) instance per temporal log shard, each pointing to individual Trillian Log Server and Log Signer instances, which themselves point to a specific temporally-identified database schema name and tablespace. This is cost-effective, and it gives us ample room to avoid the 16 TB limit.
 
-![](/images/2022.05.19-one_schema_per_shard.png)
+![One Schema per Shard](/images/2022.05.19-one_schema_per_shard.png)
 
 <div class='blog-image-caption'>Distinct Schema per Log Shard in a Single Database</div>
 
@@ -84,7 +84,7 @@ Since we wish to clear out old data regularly as a matter of data hygiene, and t
 
 While it increases the number of managed system components, it is much cleaner to give each temporal log shard its own database instance. Like the Distinct Schema per Log Shard model, we now run Trillian CTFE, Log Server, and Log Signer instances for each temporal log shard. However, each log shard gets its own RDS instance for the active life of the log [^5]. At log shutdown, the RDS instance is simply deprovisioned.
 
-![](/images/2022.05.19-database_per_shard.png)
+![Database per shard](/images/2022.05.19-database_per_shard.png)
 
 <div class='blog-image-caption'>Using Distinct Databases Per Log</div>
 
