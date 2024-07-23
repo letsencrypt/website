@@ -1,6 +1,6 @@
 ---
 author: Josh Aas
-date: 2024-07-22T00:00:00Z
+date: 2024-07-23T00:00:00Z
 title: "Moving to a more privacy-respecting and efficient method of checking certificate revocation"
 excerpt: "Intent to end OCSP service."
 display_default_footer: false
