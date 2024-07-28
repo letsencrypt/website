@@ -1,7 +1,7 @@
 ---
 title: 术语表
 slug: glossary
-date: 2018-12-30
+date: 2024-07-16
 show_lastmod: 1
 ---
 
@@ -52,9 +52,9 @@ Note for translators:
 
 {{% def id="chain" name="证书链" english="Certificate chain" %}} 包含一系列[中间证书](#def-intermediate)，将[叶证书](#def-leaf)逐步连接到[证书库](#def-store)中的[根证书](#def-root)，从而协助[用户代理](#def-user-agent)确认叶证书是否可信。 注意：证书链并不总是唯一的，即使网站提供了一条证书链，用户代理也可以选择另一条证书链执行验证。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89)。 {{% /def %}}
 
-{{% def id="CP" name="证书管理制度" english="Certificate Policy" abbr="CP" %}} 一系列具体的规定，表明证书是否适用于具备同等安全需求的特定社群和/或特定应用类型。 证书颁发流程的细节则由 [CPS](#def-CPS) 描述。 参见 [ISRG 证书管理制度](/repository#isrg-certificate-policy)、[RFC 3647](https://tools.ietf.org/html/rfc3647) 和[英文维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy)。 {{% /def %}}
+{{% def id="CP" name="证书管理制度" english="Certificate Policy" abbr="CP" %}} 一系列具体的规定，表明证书是否适用于具备一定安全需求的某一类社群和/或应用类型。 证书颁发流程的细节则由 [CPS](#def-CPS) 描述。 CP 和 CPS 可以合并为一份文档。 参见 [ISRG 合并后的 CP/CPS 文件](/repository#isrg-certificate-policy)、[RFC 3647](https://tools.ietf.org/html/rfc3647) 和[英文维基百科条目](https://en.wikipedia.org/wiki/Certificate_policy)。 {{% /def %}}
 
-{{% def id="CPS" name="证书运作声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对于证书颁发、管理、吊销、续期、更换密钥的流程所作的声明。 参见 [ISRG 证书运作声明](/repository#isrg-certification-practice-statement)、[RFC 3647 第 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4)和[英文维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement)。 {{% /def %}}
+{{% def id="CPS" name="证书运作声明" english="Certification Practice Statement" abbr="CPS" %}} 证书颁发机构对于证书颁发、管理、吊销、续期、更换密钥的流程所作的声明。 CPS 必须遵循[证书管理制度](#def-CP)的规定。 CP 和 CPS 可以合并为一份文档。 参见 [ISRG 合并后的 CP/CPS 文件](/repository#isrg-certificate-policy)、[RFC 3647 第 3.4 节](https://tools.ietf.org/html/rfc3647#section-3.4)和[英文维基百科条目](https://en.wikipedia.org/wiki/Certification_Practice_Statement)。 {{% /def %}}
 
 {{% def id="critical" name="关键扩展" english="Critical extension" %}} 证书中的[扩展](#def-extension)可以标记为“关键”扩展， 如果软件不知道如何处理此扩展，就必须拒绝使用该证书。 这使得对于安全性至关重要的功能也可以通过扩展的形式实现，不会在旧版本软件中造成风险。 {{% /def %}}
 
@@ -64,7 +64,7 @@ Note for translators:
 
 {{% def id="store" name="证书库" english="Certificate Store" %}} 证书库包含一系列受信任的[根证书](#def-root)。 操作系统（如 Windows、Android、Debian）和[网页浏览器](#def-web-browser)（如 Firefox）厂商通常会维护各自的证书库， 但也有一些浏览器直接使用操作系统的证书库。 [Let's Encrypt](#def-LE) 提供的[证书](#def-leaf)已得到[大多数证书库的信任](/certificates)。  {{% /def %}}
 
-{{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”表示这份证书是授予谁的， 其中常包括[通用名称](#def-CN)、国家、组织等字段。 {{% /def %}}
+{{% def id="subject" name="证书主体" english="Certificate subject" %}} 证书的“主体”表示这份证书是授予谁的， 其中常包括[通用名称](#def-CN)、国家、组织等字段。  {{% /def %}}
 
 {{% def id="CT" name="证书透明化" english="Certificate Transparency" abbr="CT" %}} 为了增强安全性，证书（以及[准证书](#def-precertificate)）必须通过证书透明化日志公开发布：https://www.certificate-transparency.org/。 [Let's Encrypt](#def-LE) 会先生成并发布[准证书](#def-precertificate)，随后在实际[证书](#def-leaf)中列出准证书的 [SCT](#def-SCT)。 部分[浏览器](#def-web-browser)（如 Google Chrome）要求这一可验证的承诺必须出现在证书中，以便其验证该证书。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E8%AF%81%E4%B9%A6%E9%80%8F%E6%98%8E%E5%BA%A6)。 {{% /def %}}
 

@@ -1,5 +1,5 @@
 ---
-title: Τεκμηρίωση
+title: Εγχειρίδιο
 menu:
   main:
     weight: 10
