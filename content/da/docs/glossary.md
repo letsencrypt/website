@@ -1,7 +1,7 @@
 ---
 title: Opslag
 slug: glossary
-date: 2018-12-30
+date: 2024-07-16
 show_lastmod: 1
 ---
 
@@ -52,9 +52,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} En liste over [intermediate certifikater](#def-intermediate), der hjælper et [brugerprogram](#def-user-agent) til at bestemmer, om den kan stole på en slutenhed eller [leaf-certifikat](#def-leaf), ved at forbinde det til et [root-certifikat](#def-root) i dets [certifikatsamling](#def-store). Bemærk: kæden er ikke altid unik, og når en hjemmeside præsenterer en certifikatkæde, der fører til én rod, brugerprogrammet kan beslutte at anvende en anden kæde til at validere certifikatet. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} Et navngivet regelsæt, der angiver anvendeligheden af et certifikat for et bestemt fællesskab og/eller en gruppe af applikationer med fælles sikkerhedskrav. Specifikke detaljer vedrørende udstedelsen er beskrevet i en [CPS](#def-CPS). [ISRG Certificate Policy](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} Et navngivet regelsæt, der angiver anvendeligheden af et certifikat for et bestemt fællesskab og/eller en gruppe af applikationer med fælles sikkerhedskrav. Specifikke detaljer vedrørende udstedelsen er beskrevet i en [CPS](#def-CPS). CP- og CPS-dokumenter kan kombineres til et enkelt dokument. [ISRG Combined CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} En erklæring om den praksis, som en certificeringsmyndighed anvender ved udstedelse, ledelse, tilbagekaldelse og fornyelse eller genregistrering af certifikater. [ISRG Certificate Policy](/repository#isrg-certification-practice-statement) - [RFC 3647](https://tools.ietf.org/html/rfc3647#section-3.4) - [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} En erklæring om den praksis, som en certificeringsmyndighed anvender ved udstedelse, ledelse, tilbagekaldelse og fornyelse eller genregistrering af certifikater. En CPS skal være i overensstemmelse med dens tilknyttede [Certificate Policy](#def-CP). CP- og CPS-dokumenter kan kombineres til et enkelt dokument. [ISRG Combined CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647 section 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} Et certifikat kan indeholde [udvidelser](#def-extension) markeret "kritisk." Det betyder, at softwaren skal afvise dette certifikat, medmindre softwaren forstår, hvordan denne udvidelse skal behandles. Det gør det muligt at indføre nye udvidelser, der er vigtige for sikkerheden uden at skabe risici for ældre software. {{% /def %}}
 

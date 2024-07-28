@@ -1,7 +1,7 @@
 ---
 title: Certifikatets Kompatilitet
 slug: certificate-compatibility
-lastmod: 2024-05-07
+lastmod: 2024-07-04
 show_lastmod: 1
 ---
 
@@ -34,7 +34,7 @@ Hvis din platform ikke er angivet her, vi værdsætter [pull requests](https://g
 * Android >= [14](https://android.googlesource.com/platform/system/ca-certificates/+/c8d7f51bbb3de2c40a0d868972be008070eb25d8)
 * Firefox >= [97](https://bugzilla.mozilla.org/show_bug.cgi?id=1701317)
 * Ubuntu >= [18.04 Bionic Beaver](https://launchpad.net/ubuntu/+source/ca-certificates/20230311) (med opdateringer installeret)
-* Debian >= [11 / Bullseye](https://tracker.debian.org/news/1426477/accepted-ca-certificates-20230311-source-into-unstable/) (med opdateringer installeret)
+* Debian >= [12 / Bookworm](https://tracker.debian.org/news/1426477/accepted-ca-certificates-20230311-source-into-unstable/)
 * Java >= [21.0.2](https://jdk.java.net/21/release-notes)
 * NSS >= [3.74](https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html)
 * Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (tidligere versioner bruger operativsystemets trust store)
