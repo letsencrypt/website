@@ -103,16 +103,6 @@
     },
     { "name": "3CX", "url": "https://www.3cx.com/", "image": "3cx-logo.png" },
     {
-      "name": "Hawk Host",
-      "url": "https://www.hawkhost.com/",
-      "image": "hawkhost-logo.png"
-    },
-    {
-      "name": "The Best VPN",
-      "url": "https://thebestvpn.com/",
-      "image": "thebestvpn-logo.png"
-    },
-    {
       "name": "Jimdo",
       "url": "https://www.jimdo.com/",
       "image": "jimdo-logo.png"
@@ -209,11 +199,6 @@
       "image": "clevercloud-logo.png"
     },
     {
-      "name": "Render",
-      "url": "https://render.com/",
-      "image": "render-logo.png"
-    },
-    {
       "name": "IPInfo",
       "url": "https://ipinfo.io/",
       "image": "ipinfo-logo.png"
@@ -241,34 +226,14 @@
       "image": "heroku-logo.png"
     },
     {
-      "name": "Snipe-IT",
-      "url": "https://snipeitapp.com/",
-      "image": "snipe-it-logo.png"
-    },
-    {
-      "name": "Smallstep",
-      "url": "https://smallstep.com/",
-      "image": "smallstep-logo.png"
-    },
-    {
       "name": "WPBeginner",
       "url": "https://www.wpbeginner.com/",
       "image": "wpbeginner-logo.png"
     },
     {
-      "name": "HostScore",
-      "url": "https://www.hostscore.net/",
-      "image": "hostscore-logo.png"
-    },
-    {
       "name": "Hoststar",
       "url": "https://www.hoststar.ch/",
       "image": "hoststar-logo.png"
-    },
-    {
-      "name": "Redacted",
-      "url": "https://www.redacted.com/",
-      "image": "redacted-logo.png"
     },
     {
       "name": "one.com",
@@ -279,11 +244,6 @@
       "name": "Cargo",
       "url": "https://cargo.site/",
       "image": "cargo-logo.png"
-    },
-    {
-      "name": "ManualsBrain",
-      "url": "https://manualsbrain.com/",
-      "image": "manualsbrain-logo.png"
     },
     {
       "name": "RACK::SPEED",
@@ -312,21 +272,11 @@
       "image": "nginx-logo.png"
     },
     {
-      "name": "Vilros",
-      "url": "https://vilros.com/",
-      "image": "vilros-logo.png"
-    },
-    {
       "name": "Acton Family Giving",
       "url": "https://actonfamilygiving.org/",
       "image": "acton-family-giving-logo.png"
     },
 
-    {
-      "name": "Crypto Tracker",
-      "url": "https://cryptotracker.com/",
-      "image": "cryptotracker-logo.svg"
-    },
     {
       "name": "Tailscale",
       "url": "https://tailscale.com/",
@@ -351,11 +301,6 @@
       "name": "Video Downloader",
       "url": "https://www.4kdownload.com/-1uvr6/video-downloader",
       "image": "4kdownload-logo.png"
-    },
-    {
-      "name": "VPSServer.com",
-      "url": "https://www.vpsserver.com/",
-      "image": "VPSServer-logo.svg"
     },
     {
       "name": "Entri",
