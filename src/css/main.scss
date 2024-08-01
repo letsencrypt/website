@@ -81,6 +81,39 @@ div[data-netlify-site-id] {
   pointer-events: none;
 }
 
+.related-posts {
+  background: #eee;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 30px;
+
+  .related-posts-flex-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  h6 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .blog-date {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .related-posts .related-posts-flex-container {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "donate2024", "fundraiser", "waiting",
