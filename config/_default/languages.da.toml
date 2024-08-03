@@ -2,12 +2,12 @@ title = "Let's Encrypt"
 contentDir = "content/da"
 languageName = "Dansk"
 languageCode = "da"
-weight = 190
+weight = 10
+
 [params]
 beforeColon = ""
 description = """
-  Let's Encrypt er en gratis, automatisk og åben certifikat
- udsteeder bragt til dig af nonprofit organisationen <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+Let's Encrypt er en gratis, automatiseret og åben certifikatmyndighed bragt til dig af non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Læs alt om vores non-profit arbejde i år i vores <a href="https://www.abetterinternet.org/annual-reports/">2023 Årsrapport</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "DK"

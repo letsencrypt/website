@@ -1,33 +1,39 @@
 [[main]]
-name = "社区"
+name = "获取帮助"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
-name = "捐赠"
+name = "捐款"
 weight = 30
 identifier = "donate"
+
 [[main]]
-name = "关于"
+name = "关于我们"
 weight = 40
 identifier = "about"
+
 [[main]]
-name = "互联网安全研究小组（ISRG）"
+name = "互联网安全研究组（ISRG）"
 weight = 20
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
+
 [[main]]
 name = "服务状态"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
+
 [[main]]
 name = "招贤纳士"
 weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "成为赞助商"
 weight = 40

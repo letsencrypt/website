@@ -2,7 +2,8 @@ title = "Let's Encrypt"
 contentDir = "content/he"
 languageName = "עברית"
 languageCode = "he"
-weight = 325
+weight = 10
+
 [params]
 beforeColon = ""
 description = """
@@ -12,5 +13,4 @@ description = """
 paypalDonateImage = "https://www.paypalobjects.com/he_IL/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "IL"
 numberFormat = "-|.|,"
-languagedirection = "rtl"
 viewInThatLanguage = "לעבור לעברית"
