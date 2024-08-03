@@ -1,0 +1,42 @@
+[[main]]
+name = "Yardım Alın"
+weight = 20
+url = "https://community.letsencrypt.org/"
+
+[[main]]
+name = "Bağış Yap"
+weight = 30
+identifier = "donate"
+
+[[main]]
+name = "Hakkımızda"
+weight = 40
+identifier = "about"
+
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 20
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+
+[[main]]
+name = "Servis Durumu"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+
+[[main]]
+name = "Kariyer"
+weight = 80
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+
+[[main]]
+name = "Sponsor Olun"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"

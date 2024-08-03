@@ -1,15 +1,13 @@
-title = "Let's Encrypt - 免费的SSL/TLS证书"
+title = "Let's Encrypt"
 contentDir = "content/zh-cn"
 languageName = "简体中文"
 languageCode = "zh-Hans-CN"
-weight = 750
+weight = 10
+
 [params]
 beforeColon = ""
-description = """
-  Let's Encrypt 是免费、开放和自动化的证书颁发机构。由非盈利组织<a href="https://www.abetterinternet.org/"
-  style="white-space:nowrap;">互联网安全研究小组（ISRG）</a>运营。
-"""
-paypalDonateImage = "https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif"
+description = "Let's Encrypt 是一家免费、开放、自动化的证书颁发机构，由非营利组织<a href=\"https://www.abetterinternet.org/\">互联网安全研究组</a>（ISRG）运作。我们这一年来的非营利工作详情可在 <a href=\"https://www.abetterinternet.org/annual-reports/\">2023 年度报告</a>中查阅。"
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|"
-viewInThatLanguage = "使用简体中文阅读本网页。"
+viewInThatLanguage = "阅读简体中文页面"

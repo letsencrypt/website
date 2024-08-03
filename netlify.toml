@@ -246,6 +246,12 @@ status = 404
 force = false
 
 [[redirects]]
+from = "/tr/*"
+to = "/tr/404.html"
+status = 404
+force = false
+
+[[redirects]]
 from = "/zh-cn/*"
 to = "/zh-cn/404.html"
 status = 404

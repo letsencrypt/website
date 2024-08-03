@@ -2,37 +2,41 @@
 name = "Få hjælp"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Doner"
 weight = 30
 identifier = "donate"
-url = "/donate/"
+
 [[main]]
 name = "Om os"
 weight = 40
 identifier = "about"
-url = "/about/"
+
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
+
 [[main]]
-name = "Service Status"
+name = "Tjeneste Status"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
+
 [[main]]
 name = "Karriere"
 weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "Bliv sponsor"
 weight = 40
-identifier = "bliv-sponsor"
-parent = "donere"
+identifier = "become-a-sponsor"
+parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"

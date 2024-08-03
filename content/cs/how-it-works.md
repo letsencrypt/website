@@ -2,7 +2,7 @@
 title: Jak to funguje
 linkTitle: Jak funguje Let's Encrypt
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ Spolu s výzvami poskytuje certifikační autorita Let's Encrypt také nonce, kt
 
 Softwarový agenta dokončí jednu z poskytnutých sad výzev.   Řekněme, že je schopen splnit druhou výše uvedenou úlohu: vytvoří soubor na zadané cestě na webu `http://example.com`.  Agent také podepíše poskytnutou nonce svým soukromým klíčem.  Jakmile agent dokončí tyto kroky, oznámí certifikační autoritě, že je připraven dokončit ověřování.
 
-Poté je úkolem certifikační autority zkontrolovat, zda byly výzvy splněny.  Certifikační autorita ověří podpis na nonce a pokusí se stáhnout soubor z webového serveru a ujistí se, že má očekávaný obsah.
+Úkolem CA je pak zkontrolovat, zda byly výzvy splněny z [více perspektiv sítě](/2020/02/19/multi-perspective-validation).  Certifikační autorita ověří podpis na nonce a pokusí se stáhnout soubor z webového serveru a ujistí se, že má očekávaný obsah.
 
 <div class="howitworks-figure">
 <img alt="Žádost o oprávnění jednat za example.com"
@@ -47,7 +47,7 @@ Jakmile má agent autorizovaný pár klíčů, je žádání o certifikáty, jej
 
 Pro získání certifikátu pro doménu agent sestaví [žádost o podepsání certifikátu](https://tools.ietf.org/html/rfc2986) PKCS#10, která žádá certifikační autoritu Let's&nbsp;Encrypt o vystavení certifikátu pro `example.com` se zadaným veřejným klíčem.  Jako obvykle CSR obsahuje podpis soukromým klíčem odpovídajícím veřejnému klíči v CSR.  Agent také podepíše celý CSR autorizovaným klíčem pro `example.com`, aby certifikační autorita Let's&nbsp;Encrypt věděla, že je autorizovaná.
 
-Když certifikační autorita Let's&nbsp;Encrypt obdrží požadavek, ověří oba podpisy.  Pokud vše vypadá v pořádku, vydá certifikát pro `example.com` s veřejným klíčem z CSR a vrátí jej agentovi.
+Když certifikační autorita Let's&nbsp;Encrypt obdrží požadavek, ověří oba podpisy.  Pokud vše vypadá v pořádku, vydá certifikát pro `example.com` s veřejným klíčem z CSR a vrátí jej agentovi. CA také odešle certifikát do mnoha veřejných protokolů transparentnosti certifikátů (CT). Více informací najdete [zde](https://certificate.transparency.dev/howctworks/#pki).
 
 <div class="howitworks-figure">
 <img alt="Žádost o certifikát pro example.com"

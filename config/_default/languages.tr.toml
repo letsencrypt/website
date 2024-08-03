@@ -1,0 +1,15 @@
+title = "Let's Encrypt"
+contentDir = "content/tr"
+languageName = "Türkçe"
+languageCode = "tr-TR"
+weight = 10
+
+[params]
+beforeColon = ""
+description = """
+Let's Encrypt kar amacı gütmeyen <a href="https://www.abetterinternet.org/">İnternet Güvenliği Araştırma Topluluğu (ISRG)</a> tarafından ücretsiz, otomatikleştirilmiş ve açık bir sertifika yetkilisidir. Bu yılki kar amacı gütmeyen çalışmalarımız hakkında detaylı bilgiye <a href="https://www.abetterinternet.org/annual-reports/">2023 Yıllık Faaliyet Raporumuzdan</a> ulaşabilirsiniz.
+"""
+paypalDonateImage = "https://www.paypalobjects.com/tr_TR/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
+numberFormat = "-|,|."
+viewInThatLanguage = "Türkçe olarak görüntüle"
