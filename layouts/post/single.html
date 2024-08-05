@@ -1,11 +1,20 @@
 {{ define "main" }}
 <div class="post">
-	<header class="post-header">
-		<h1 class="post-title">{{ .Title }}</h1>
-		<p class="post-meta">{{ .Date | time.Format $.Site.Params.time_format_default }}{{ with .Params.author }} • {{ . }}{{ end }}{{ with .Params.meta }} • {{ . }}{{ end }}</p>
-	</header>
-	<article class="post-content">
-		{{ .Content }}
-	</article>
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-meta">
+      {{ .Date | time.Format $.Site.Params.time_format_default }}{{ with
+      .Params.author }} • {{ . }}{{ end }}{{ with .Params.meta }} • {{ . }}{{
+      end }}
+    </p>
+  </header>
+  {{if isset .Params "related_posts"}}
+  <div class="row">
+    <div class="offset-md-2 col-md-8">
+      {{ partial "blog_list_section.html" . }}
+    </div>
+  </div>
+  {{end}}
+  <article class="post-content">{{ .Content }}</article>
 </div>
 {{ end }}

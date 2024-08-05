@@ -9,9 +9,14 @@ menu:
     weight: 30
     parent: about
 lastmod: 2024-02-08
+related_posts:
+  [
+    "2024-04-12-changes-to-issuance-chains.md",
+    "2024-03-19-new-intermediate-certificates.md",
+  ]
 ---
 
-When Let's Encrypt first launched, we needed to ensure that our certificates were widely trusted. To that end, we arranged to have our intermediate certificates [cross-signed by IdenTrust's DST Root CA X3](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html). This meant that all certificates issued by those intermediates would be trusted, even while our own ISRG Root X1 wasn't yet. During subsequent years, our Root X1 became [widely trusted](https://letsencrypt.org/docs/certificate-compatibility/) on its own. 
+When Let's Encrypt first launched, we needed to ensure that our certificates were widely trusted. To that end, we arranged to have our intermediate certificates [cross-signed by IdenTrust's DST Root CA X3](https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html). This meant that all certificates issued by those intermediates would be trusted, even while our own ISRG Root X1 wasn't yet. During subsequent years, our Root X1 became [widely trusted](https://letsencrypt.org/docs/certificate-compatibility/) on its own.
 
 Come late 2021, our cross-signed intermediates and DST Root CA X3 itself were expiring. And while all up-to-date browsers at that time trusted our root, [over a third of Android devices](https://letsencrypt.org/2020/11/06/own-two-feet.html) were still running old versions of the OS which would suddenly stop trusting websites using our certificates. That breakage would have been too widespread, so we arranged for a new cross-sign -- this time [directly onto our root](https://letsencrypt.org/2020/12/21/extending-android-compatibility.html) rather than our intermediates -- which would outlive DST Root CA X3 itself. This stopgap allowed those old Android devices to continue trusting our certificates for three more years.
 
@@ -43,6 +48,6 @@ The transition will roll out as follows:
 
 We appreciate your understanding and support, both now and in the years to come as we provide safe and secure communication to everyone who uses the web. If you have any questions about this transition or any of the other work we do, please ask on our [community forum](https://community.letsencrypt.org).
 
-We'd like to thank IdenTrust for their years of partnership. They played an important role in helping Let's Encrypt get to where we are today and their willingness to arrange a stopgap cross sign in 2021 demonstrated a true commitment to creating a secure Web. 
+We'd like to thank IdenTrust for their years of partnership. They played an important role in helping Let's Encrypt get to where we are today and their willingness to arrange a stopgap cross sign in 2021 demonstrated a true commitment to creating a secure Web.
 
 We depend on contributions from our supporters in order to provide our services. If your company or organization can help our work by becoming a [sponsor](https://www.abetterinternet.org/sponsor/) of Let's Encrypt please email us at sponsor@letsencrypt.org. We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.

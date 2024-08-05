@@ -1,0 +1,12 @@
+{{ if isset .Params "related_posts" }}
+<div class="related-posts">
+  <div class="related-posts-flex-container">
+    <h6>Related Posts</h6>
+    {{ range .Params.related_posts }} {{ $logicalName := . }} {{ $page := (index
+    (where $.Site.RegularPages "File.LogicalName" $logicalName) 0) }} {{ if
+    $page }}
+    <div>{{ partial "blog_list_item.html" $page }}</div>
+    {{ end }} {{ end }}
+  </div>
+</div>
+{{ end }}
