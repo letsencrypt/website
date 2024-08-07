@@ -81,6 +81,11 @@ div[data-netlify-site-id] {
   pointer-events: none;
 }
 
+.footer-copyright {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "donate2024", "fundraiser", "waiting",
