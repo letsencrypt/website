@@ -191,7 +191,10 @@ other = "100-999 zaměstnanců"
 other = "1000+ zaměstnanců"
 
 [subscribe_to_newsletter_headline]
-other = "Přihlásit se k odběru novinek"
+other = "Přihlaste se k odběru e-mailových novinek o Let's Encrypt a dalších projektech ISRG"
 
 [site_banner_text]
 other = "ISRG už 10 let pomáhá vytvářet lepší internet →"
+
+[footer_copyright]
+other = "Internet Security Research Group"
