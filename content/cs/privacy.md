@@ -1,7 +1,7 @@
 ---
 title: Zásady ochrany osobních údajů
 slug: privacy
-lastmod: 2023-08-23
+lastmod: 2024-06-28
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -22,7 +22,7 @@ Když používáte webovou stránku HTTPS nebo jinou službu TLS s certifikátem
 
 Pokud jste odběratel, žádáte společnost Let's Encrypt o důvěryhodný certifikát, který má veřejně zaručit, že ovládáte určité doménové jméno nebo jména, která jsou dostupná na internetu. V rámci procesu prokazování této kontroly bude Let's Encrypt shromažďovat různé informace týkající se ověřování a správy certifikátů. Tyto informace zahrnují IP adresy, ze kterých přistupujete ke službě Let's Encrypt, všechny adresy IP pro všechny požadované názvy domén, informace o serveru týkající se všech požadavků na ověření, úplné protokoly všech příchozích požadavků HTTP / ACME, všechny odchozí požadavky na ověření a informace odeslané nebo odvozené z vašeho klientského softwaru. Tyto informace budeme uchovávat minimálně po dobu sedmi let podle požadavků programu důvěryhodného roota. Tyto informace budou uchovávány po dobu až deseti let.
 
-Musíme být schopni prokázat veřejnosti, včetně těch, kteří se spoléhají na důvěryhodnost našich certifikátů, že naše služby fungují podle očekávání. V důsledku toho se může stát, že nebudeme moci odstranit informace včetně IP adres. Tyto informace mohou být zveřejněny různými způsoby, včetně veřejných rozhraní API, veřejných úložišť a/nebo veřejných diskusí.
+Musíme být schopni prokázat veřejnosti, včetně těch, kteří se spoléhají na důvěryhodnost našich certifikátů, že naše služby fungují podle očekávání. V důsledku toho se může stát, že nebudeme moci odstranit informace včetně IP adres. Tyto informace mohou být zveřejněny různými způsoby, například prostřednictvím veřejného rozhraní API, veřejných úložišť, jako jsou logy transparentnosti certifikátů (CT), nebo veřejných diskusí.
 
 Můžete mít možnost poskytnout kontaktní údaje, například e-mailovou adresu, pro účely servisu a obnovy účtu. Vaše kontaktní údaje nebudou zveřejněny a budou sdíleny pouze v souladu s níže uvedeným odstavcem „Vymáhání práva a polehčující okolnosti“. Poskytnutím své e-mailové adresy souhlasíte s tím, že od nás budete dostávat e-maily týkající se našich služeb. Z odběru e-mailů souvisejících se službami se můžete kdykoli odhlásit kliknutím na odkaz „unsubscribe“ v dolní části našich e-mailů nebo nás můžete kontaktovat na adrese privacy@abetterinternet.org. Vaše kontaktní údaje nebudeme používat k marketingovým nebo propagačním účelům.
 
@@ -30,7 +30,7 @@ Možná budete muset stáhnout klientský software z úložiště, které provoz
 
 ## Návštěvník
 
-Pokud jako návštěvník procházíte webové stránky ISRG, máte možnost přispět. Dary jsou zpracovávány našimi důvěryhodnými platebními partnery, jako jsou DonorBox, Stripe, Shopify a PayPal, v závislosti na zvolené platební metodě, a podle potřeby jsou ukládány do databáze Salesforce a Sage Intacct společnosti ISRG. Při darování shromažďujeme vaše jméno a e-mailovou adresu, a pokud nám ji poskytnete, také vaši poštovní adresu. Jakmile nám přispějete, použijeme vaše údaje pro účely našeho oprávněného záměru zpracovávat a spravovat váš příspěvek, včetně připomínek a obnovení sbírky. Vaše interakce s [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), Gemini, [SHIPHERO](https://shiphero.com/privacy-data-policy/), [Salesforce](https://www.salesforce.com/company/privacy/) a [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) se řídí jejich příslušnými zásadami ochrany osobních údajů. Neshromažďujeme ani neuchováváme žádné informace o kreditních kartách nebo bankovních údajích spojených s dary.
+Pokud jako návštěvník procházíte webové stránky ISRG, máte možnost přispět. Dary jsou zpracovávány našimi důvěryhodnými platebními partnery, jako jsou DonorBox, Stripe, Shopify a PayPal, v závislosti na zvolené platební metodě, a podle potřeby jsou ukládány do databáze Salesforce a Sage Intacct společnosti ISRG. Při darování shromažďujeme vaše jméno a e-mailovou adresu, a pokud nám ji poskytnete, také vaši poštovní adresu. Jakmile nám přispějete, použijeme vaše údaje pro účely našeho oprávněného záměru zpracovávat a spravovat váš příspěvek, včetně připomínek a obnovení sbírky. Vaše interakce s [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Printful](https://www.printful.com/policies/privacy), [Formstack](https://www.formstack.com/legal) a [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) řídí jejich příslušnými zásadami ochrany osobních údajů. Neshromažďujeme ani neuchováváme žádné informace o kreditních kartách nebo bankovních údajích spojených s dary.
 
 Můžete poskytnout svou e-mailovou adresu pro zasílání sdělení týkajících se projektů ISRG prostřednictvím registrace na webu ISRG a prostřednictvím dalších marketingových materiálů. Veškerá komunikace doručená prostřednictvím Salesforce a vaše interakce se [Salesforce](https://www.salesforce.com/company/privacy/) se řídí jejich zásadami ochrany osobních údajů. Vaši e-mailovou adresu můžeme příležitostně použít k zasílání personalizovaných sdělení týkajících se ISRG a našich projektů. Můžete požádat o odstranění své e-mailové adresy tak, že se odhlásíte v patičce našich e-mailů nebo nám napíšete na adresu press@abetterinternet.org
 
@@ -39,6 +39,13 @@ Pokud se zaregistrujete k používání fóra podpory komunity ISRG, řídí se 
 ## Vaše údaje ani informace neprodáváme
 
 Vaše údaje ani informace neprodáváme. To zahrnuje údaje a informace o předávající straně, odběrateli a návštěvníkovi.
+
+## Používání nástrojů pro analýzu a e-mailový marketing třetích stran
+
+Abychom lépe porozuměli tomu, jak naši návštěvníci využívají naše webové stránky a e-maily, a abychom zlepšili naše fundraisingové a marketingové strategie, může společnost ISRG čas od času nasadit webové a e-mailové analytické nástroje třetích stran, konkrétně Google Analytics pro naše webové stránky a Salesforce Account Engagement pro naše marketingové e-maily.
+
+- Google Analytics: Tento nástroj shromažďuje údaje o tom, jak návštěvníci interagují s našimi webovými stránkami, včetně návštěv stránek, doby trvání návštěv stránek a webu a navigačních cest. Tyto informace používáme k analýze výkonu webových stránek a zapojení uživatelů. Údaje shromážděné službou Google Analytics uchováváme tak dlouho, jak je to nezbytné pro účely analýzy návštěvnosti. Pomocí stránky Nastavení reklam Google můžete odhlásit službu Google Analytics pro zobrazování reklamy a přizpůsobit si reklamy v Google Display Network. Kromě toho můžete zabránit shromažďování svých údajů službou Google Analytics stažením a instalací doplňku [Google Analytics Opt-out Browser Add-on](https://support.google.com/analytics/answer/181881?hl=en). Více informací o tom, jak Google používá data při používání našich stránek, najdete na stránce [ How Google uses information from sites or apps that use their services ](https://www.google.com/policies/privacy/partners/).
+- Salesforce Account Engagement: Pro naše marketingové e-maily nám Salesforce Account Engagement pomáhá porozumět aktivitám příjemců, jako jsou otevření e-mailů a kliknutí na ně. Tyto údaje o nasazení používáme k vyhodnocování výkonnosti našich e-mailových kampaní a k pochopení chování našeho publika. Údaje o nasazení uchováváme po dobu, po kterou využíváme Salesforce Account Engagement. Odběr marketingových sdělení od nás můžete kdykoli odmítnout pomocí odhlašovacího odkazu uvedeného v našich e-mailech nebo nás můžete kontaktovat přímo na adrese press@abetterinternet.org.
 
 ## Žádosti orgánů činných v trestním řízení a polehčující okolnosti
 
@@ -89,11 +96,8 @@ Vaše osobní údaje mohou být shromažďovány nebo předávány do jurisdikc�
 Osoby nacházející se v Evropském hospodářském prostoru (EHP) mají určitá práva týkající se jejich osobních údajů, včetně práva na přístup, opravu nebo vymazání osobních údajů, které zpracováváme při používání našich stránek a služeb. Pokud jste fyzická osoba, která je předávající stranou, předplatitelem nebo návštěvníkem se sídlem v EHP, můžete:
 
 - Vyžádat si e-mailem zprávu o osobních údajích na privacy@abetterinternet.org. Tato zpráva bude obsahovat osobní údaje, které o vás máme, a bude vám poskytnuta ve strukturovaném, běžně používaném a přenosném formátu. Vezměte prosím na vědomí, že před zveřejněním jakýchkoli informací si od vás můžeme vyžádat další informace k ověření vaší totožnosti.
-
 - Požádat o opravu nebo vymazání svých údajů na adrese privacy@abetterinternet.org.
-
 - Vznést námitku proti zpracování vašich údajů. Můžete nás požádat, abychom vaše údaje přestali používat, včetně používání vašich údajů k zasílání servisních e-mailů. Svůj souhlas se zasíláním servisních e-mailů můžete kdykoli odvolat kliknutím na odkaz „unsubscribe“, který najdete v e-mailech Let's Encrypt.
-
 - Podat stížnost regulačnímu orgánu. Pokud se nacházíte v EHP a domníváte se, že jsme nedodrželi zákony o ochraně osobních údajů, máte právo podat stížnost u místního dozorového úřadu.
 
 Chcete-li získat další informace nebo nahlásit problém s ochranou osobních údajů, obraťe se prosím na privacy@abetterinternet.org.

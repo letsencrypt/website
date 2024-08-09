@@ -191,7 +191,10 @@ other = "100-999 ansatte"
 other = "1000 + ansatte"
 
 [subscribe_to_newsletter_headline]
-other = "Abonner på vores nyhedsbrev"
+other = "Abonner på e-mail opdateringer om Let's Encrypt og andre ISRG projekter"
 
 [site_banner_text]
 other = "ISRG fejrer 10 år for at hjælpe med at opbygge et lysere internet →"
+
+[footer_copyright]
+other = "Internet Security Research Group"
