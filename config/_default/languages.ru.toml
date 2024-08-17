@@ -1,14 +1,12 @@
-title = "Let's Encrypt"
+title = "Что такое Let's Encrypt"
 contentDir = "content/ru"
 languageName = "Русский"
 languageCode = "ru-RU"
-weight = 550
+weight = 10
+
 [params]
 beforeColon = ""
-description = """
-  Let's Encrypt - это бесплатный, автоматизированный и открытый Центр Сертификации, созданный для вас
-  некоммерческой организацией <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
-"""
+description = "Let's Encrypt – это бесплатный, автоматизированный и открытый центр сертификации, созданный некоммерческой <a href=\"https://www.abetterinternet.org/\">Internet Security Research Group (ISRG)</a>. Подробную информацию о нашей некоммерческой работе в этом году можно найти в нашем <a href=\"https://www.abetterinternet.org/annual-reports/\">Годовом отчете за 2023 год</a>."
 paypalDonateImage = "https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|,"

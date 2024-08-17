@@ -1,15 +1,19 @@
 ---
 title: יכולות מתוכננות
 slug: upcoming-features
-lastmod: 2023-06-20
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
-## אישור ECDSA עליון ואישורי תווך
-
-אנו מנפיקים אישורים מאישור התווך מסוג ECDSA שמשמש אותנו לפעילות השוטפת לטובת [חשבונות שנמצאים ברשימת היתר](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). אין תאריך מתוכנן להסרת רשימת ההיתר.
+להכרזות על שינויים עתידיים, נא לגשת לקטגוריה [הכרזות/Annoucements](https://community.letsencrypt.org/c/api-announcements/18) בפורום הקהילתי של Let's Encrypt.
 
 # תכונות שהושלמו
+
+## אישור ECDSA עליון ואישורי תווך
+
+* הופעל: 06 ביוני, 2024
+
+אנו מנפיקים אישורים מאישורי תווך ה־ECDSA של הסביבה המבצעית שלנו לאישורי עלה מסוג ECDSA. פרטים מלאים על היררכיית ה־PKI (תשתית מפתחות ציבורית) שלנו ניתן למצוא בתיעוד על [שרשראות האמון](/certificates/).
 
 ## פרטי חידוש ל־ACME ‏(ARI)
 
