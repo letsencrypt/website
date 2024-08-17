@@ -10,7 +10,7 @@ show_lastmod: 1
 
 # Конечные точки API
 
-В настоящее время у нас есть следующие конечные точки API. Ознакомьтесь с [нашей документацией по расхождениям](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), чтобы сравнить их реализацию со спецификацией ACME.
+В настоящее время у нас есть следующие конечные точки API. Пожалуйста, ознакомьтесь с [отступлениями от протокола ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) для сравнения реализаций.
 
 ## ACME v2 (RFC 8555)
 
