@@ -191,7 +191,10 @@ other = "число сотрудников от 100 до 999"
 other = "число сотрудников более 1000"
 
 [subscribe_to_newsletter_headline]
-other = "Подпишитесь на нашу рассылку"
+other = "Подпишитесь на обновления по электронной почте о Let's Encrypt и других проектах ISRG"
 
 [site_banner_text]
 other = "ISRG отмечает 10 лет оказания помощи в создании более светлого Интернета →"
+
+[footer_copyright]
+other = "Internet Security Research Group"
