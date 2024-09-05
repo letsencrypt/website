@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "为 <span>3.63 亿</span>网站提供 TLS 证书的非营利证书颁发机构"
+other = "为 <span>4.5 亿</span>网站提供 TLS 证书的非营利证书颁发机构"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -190,7 +190,10 @@ other = "（员工人数在 100 到 999 之间）"
 other = "（员工人数大于 1000 人）"
 
 [subscribe_to_newsletter_headline]
-other = "订阅我们的新闻资讯"
+other = "订阅 Let's Encrypt 和其他 ISRG 项目的最新资讯"
 
 [site_banner_text]
 other = "推动构建更加光明的互联网，ISRG 成立十周年庆 →"
+
+[footer_copyright]
+other = "互联网安全研究组"

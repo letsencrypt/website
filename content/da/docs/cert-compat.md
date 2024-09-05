@@ -1,7 +1,7 @@
 ---
 title: Certifikatets Kompatilitet
 slug: certificate-compatibility
-lastmod: 2024-07-04
+lastmod: 2024-08-25
 show_lastmod: 1
 ---
 
@@ -21,6 +21,7 @@ Hvis din platform ikke er angivet her, vi værdsætter [pull requests](https://g
 * Firefox >= [50.0](https://bugzilla.mozilla.org/show_bug.cgi?id=1204656)
 * Ubuntu >= [12.04 Precise Pangolin](https://launchpad.net/ubuntu/+source/ca-certificates/20161102) (med opdateringer installeret)
 * Debian >= [8 / Jessie](https://tracker.debian.org/news/812114/accepted-ca-certificates-20161102-source-all-into-unstable/) (med opdateringer installeret)
+* RHEL >= 6.10, 7.4 ([med opdateringer anvendt](https://src.fedoraproject.org/rpms/ca-certificates/c/02204a071d2effe7cdb840c1a2763bcdc396c4be)), 8+
 * Java >= [7u151](https://www.oracle.com/java/technologies/javase/7u151-relnotes.html), [8u141](https://www.oracle.com/java/technologies/javase/8u141-relnotes.html), [9+](https://www.oracle.com/java/technologies/javase/9-all-relnotes.html#JDK-8177539)
 * NSS >= [3.26](https://nss-crypto.org/reference/security/nss/legacy/nss_releases/nss_3.26_release_notes/index.html)
 * Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (tidligere versioner bruger operativsystemets trust store)
@@ -35,6 +36,7 @@ Hvis din platform ikke er angivet her, vi værdsætter [pull requests](https://g
 * Firefox >= [97](https://bugzilla.mozilla.org/show_bug.cgi?id=1701317)
 * Ubuntu >= [18.04 Bionic Beaver](https://launchpad.net/ubuntu/+source/ca-certificates/20230311) (med opdateringer installeret)
 * Debian >= [12 / Bookworm](https://tracker.debian.org/news/1426477/accepted-ca-certificates-20230311-source-into-unstable/)
+* RHEL >= 7.9, 8.6, 9.1 ([med opdateringer anvendt](https://src.fedoraproject.org/rpms/ca-certificates/c/f6b8f45e836dfc9c69585bf7ef0250ad734b086a))
 * Java >= [21.0.2](https://jdk.java.net/21/release-notes)
 * NSS >= [3.74](https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html)
 * Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (tidligere versioner bruger operativsystemets trust store)
