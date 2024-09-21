@@ -130,7 +130,7 @@ Note for translators:
 
 {{% def id="HPKP" name="HTTP 公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 一种安全机制，要求浏览器连接网站时确保[证书链](#def-chain)必须使用特定的公钥。 Chrome 浏览器曾引入这一机制应对 CA 被入侵的情况，但网站常因此出现问题，最终 Chrome [废除了该功能](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
 
-{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。 例如，这个列表同时包含了 `com`和 `co.uk`，尽管 `co.uk` 不是 TLD。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 [Let's Encrypt](#def-LE) 也使用了这一列表，用于实施[速率限制](/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。 例如，这个列表同时包含了 `com`和 `co.uk`，尽管 `co.uk` 不是 TLD。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 [Let's Encrypt](#def-LE) 也使用了这一列表，用于实施[速率限制](/docs/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="依赖方" english="Relying Party" %}} 需要使用证书中的信息的人， 例如 HTTPS 网站的用户。  {{% /def %}}
 
