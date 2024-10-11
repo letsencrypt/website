@@ -19,17 +19,17 @@ show_lastmod: 1
 
 開発者は、ダウンロード可能なネイティブアプリを提供して、ウェブサイトとともに追加機能を提供したい場合があります。 たとえば、Dropbox や Spotify のデスクトップアプリは、マシン上のファイルをスキャンできますが、このような動作はウェブアプリでは可能ではありません。 このようなネイティブアプリでよくあるアプローチの1つは、localhost でウェブサーバーを起動し、ウェブアプリからはそのサーバーに XMLHTTPRequest (XHR) または WebSocket でリクエストを送るという方法です。 ほとんどのウェブアプリは常に HTTPS を使用します。つまり、ブラウザーはセキュアではない URL に XHR や WebSocket のリクエストを送ることを禁止します。 このようなリクエストのブロックを、混合コンテンツブロック (Mixed Content Blocking) と呼びます。 ウェブアプリと通信できるようにするには、ネイティブアプリがセキュアなウェブサーバーを提供する必要があります。
 
-幸い、モダンなウェブブラウザは `http://127.0.0.1:8000/` を [「潜在的に信頼することができる」](https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy)URL であると[見做してくれます](https://bugs.chromium.org/p/chromium/issues/detail?id=607878)。この URL はループバックアドレスを指すためです。 `127.0.0.1` に送られたトラフィックは、マシンの外部に送られないことが保証されているため、ネットワークの傍受に対して安全であることが自明だとみなされます。 つまり、ウェブアプリが HTTPS を使い、ネイティブアプリのウェブサービスが `127.0.0.1` でウェブサービスを提供する場合、XHR による2者間の通信はめでたく成功するということです。 残念ながら、[localhost という名前は、まだ同じようには扱われません](https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost-02)。 また、WebSocket にはいずれの名前に対しても同様の扱いはありません。
+幸い、モダンなウェブブラウザは `http://127.0.0.1:8000/` を [「潜在的に信頼することができる」][secure-contexts]URL であると[見做してくれます][mcb-localhost]。この URL はループバックアドレスを指すためです。 `127.0.0.1` に送られたトラフィックは、マシンの外部に送られないことが保証されているため、ネットワークの傍受に対して安全であることが自明だとみなされます。 つまり、ウェブアプリが HTTPS を使い、ネイティブアプリのウェブサービスが `127.0.0.1` でウェブサービスを提供する場合、XHR による2者間の通信はめでたく成功するということです。 残念ながら、[localhost という名前は、まだ同じようには扱われません][let-localhost]。 また、WebSocket にはいずれの名前に対しても同様の扱いはありません。
 
 この制限を回避するために、グローバルの DNS に `127.0.0.1` に解決するドメイン名 (たとえば、`localhost.example.com`) をセットアップして、そのドメイン名に対する証明書を取得し、その証明書を対応する秘密鍵と一緒にネイティブアプリに含めて配布したあと、ウェブアプリが `http://127.0.0.1:8000/` の代わりに `https://localhost.example.com:8000/` と通信するように設定しようとするかもしれません。 *このようなことは絶対にしてはいけません。*ユーザーをリスクに晒すことになるため、署名書が取り消される可能性があります。
 
 IP アドレスの代わりにドメイン名を導入してしまうと、攻撃者が DNS ルックアップに対して中間者攻撃 (Man in the Middle; MitM) して、別の IP アドレスを指すレスポンスを挿入することを可能にしてしまいます。 攻撃者はローカルアプリのふりをして、偽のレスポンスをウェブアプリに送り返すことができます。これにより、実装の仕方によっては、ウェブアプリ側のあなたのアカウントが偽装されることもあります。
 
-このような場合、アプリが正しく動作するためには証明書の秘密鍵をネイティブアプリ内に同梱することが不可欠であるため、中間者攻撃が成功する可能性があります。つまり、ネイティブアプリをダウンロードすれば、攻撃者を含む誰もが秘密鍵のコピーを取得できてしまうからです。 これは秘密鍵が流出している状況と見做せるため、認証局 (CA) がこのことを検出した場合には、証明書を無効化する必要があります。 [多くのネイティブアプリ](https://groups.google.com/d/msg/mozilla.dev.security.policy/eV89JXcsBC0/wsj5zpbbAQAJ)で、[秘密鍵を含めて配布したこと](https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ)が原因で[アプリの証明書](https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ)が無効化されています。
+このような場合、アプリが正しく動作するためには証明書の秘密鍵をネイティブアプリ内に同梱することが不可欠であるため、中間者攻撃が成功する可能性があります。 つまり、ネイティブアプリをダウンロードすれば、攻撃者を含む誰もが秘密鍵のコピーを取得できてしまうからです。 これは秘密鍵が流出している状況と見做せるため、認証局 (CA) がこのことを検出した場合には、証明書を無効化する必要があります。 [多くのネイティブアプリ][mdsp1]で、[秘密鍵を含めて配布したこと][mdsp3]が原因で[アプリの証明書][mdsp2]が無効化されています。
 
-残念ながら、この方法では、多くの優れたセキュアなオプションなしでネイティブアプリが対応するウェブサイトと通信することになってしまします。 ブラウザがさらに[ウェブから localhost へのアクセス制限を強化](https://bugs.chromium.org/p/chromium/issues/detail?id=378566)した場合、将来の状況はさらに面倒になる可能性があります。
+残念ながら、この方法では、多くの優れたセキュアなオプションなしでネイティブアプリが対応するウェブサイトと通信することになってしまします。 ブラウザがさらに[ウェブから localhost へのアクセス制限を強化][tighten-access]した場合、将来の状況はさらに面倒になる可能性があります。
 
-また、特権を持つネイティブの API を提供するウェブサービスを公開することも本質的にリスクがあることにも注意が必要です。権限を与えるつもりのないウェブサイトからのアクセスを許してしまう可能性があるからです。 それでもこの方法を使いたい場合は、[Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を熟読して、Access-Control-Allow-Origin を利用し、メモリセーフな HTTP パーサーを使用してください。アクセスを許可していないオリジンからでも preflight request を送信することが可能でああるため、パーサーのバグを悪用できてしまう可能性があるからです。
+また、特権を持つネイティブの API を提供するウェブサービスを公開することも本質的にリスクがあることにも注意が必要です。権限を与えるつもりのないウェブサイトからのアクセスを許してしまう可能性があるからです。 それでもこの方法を使いたい場合は、[Cross-Origin Resource Sharing][cors] を熟読して、Access-Control-Allow-Origin を利用し、メモリセーフな HTTP パーサーを使用してください。アクセスを許可していないオリジンからでも preflight request を送信することが可能でああるため、パーサーのバグを悪用できてしまう可能性があるからです。
 
 # 自分の証明書を作成して信頼する
 
@@ -44,6 +44,16 @@ localhost の秘密鍵と自己署名証明書を生成する最も簡単な方�
 
 その後、localhost.crt と localhost.key を使ってローカルのウェブサーバーを設定し、localhost.crt をローカルのトラストルートのリストにインストールできます。
 
-開発用の証明書をより現実的に管理したい場合、[minica](https://github.com/jsha/minica) を使うことができます。minica を使うと、ローカルのルート証明書を生成して、end-entity (または leaf) 証明書をそのルート証明書で署名することができます。 そして、自己署名の end-entity 証明書ではなく、ルート証明書をインポートします。
+開発用の証明書をより現実的に管理したい場合、[minica][minica] を使うことができます。minica を使うと、ローカルのルート証明書を生成して、end-entity (または leaf) 証明書をそのルート証明書で署名することができます。 そして、自己署名の end-entity 証明書ではなく、ルート証明書をインポートします。
 
 `127.0.0.1` へのエイリアスとして /etc/hosts を追加すれば、`www.localhost` のようなドットを含むドメインを使うこともできます。 この方法を採用した場合、ブラウザの cookie storage の扱い方が微妙に変わります。
+
+[mcb-localhost]: https://bugs.chromium.org/p/chromium/issues/detail?id=607878
+[secure-contexts]: https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy
+[let-localhost]: https://tools.ietf.org/html/draft-ietf-dnsop-let-localhost-be-localhost-02
+[mdsp1]: https://groups.google.com/d/msg/mozilla.dev.security.policy/eV89JXcsBC0/wsj5zpbbAQAJ
+[mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
+[mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
+[tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
+[minica]: https://github.com/jsha/minica
+[cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
