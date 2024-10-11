@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>
     {{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
@@ -21,6 +21,11 @@
   "images/le-logo-twitter-noalpha.png" | absURL }}"> <meta name="og:image"
   content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-XEJKGKMHBK"
@@ -36,6 +41,8 @@
 
   {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify |
   fingerprint "sha512" }}
+  <link rel="preload" href="{{ $style.RelPermalink }}" as="style" />
+  <link rel="preload" href="/fontawesome-free-6.5.2-web/css/all.min.css" as="style" />
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
