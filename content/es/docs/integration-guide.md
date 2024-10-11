@@ -3,7 +3,7 @@ title: Guia de Integración
 linkTitle: Guía de integración de clientes y proveedores grandes
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-8
+lastmod: 2020-12-08
 show_lastmod: 1
 ---
 

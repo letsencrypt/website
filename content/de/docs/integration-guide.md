@@ -3,7 +3,7 @@ title: Integrationsanleitung
 linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-8
+lastmod: 2020-12-08
 show_lastmod: 1
 ---
 

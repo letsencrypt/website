@@ -3,7 +3,7 @@ title: Integration Guide
 linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-8
+lastmod: 2020-12-08
 show_lastmod: 1
 ---
 
