@@ -162,6 +162,15 @@
             "windowEnd": "1736899200"
         },
         {
+            "log": "sapling",
+            "shard": "2025h1",
+            "role": "testing",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0orejUR5RSyoqJ0Hyu2gAwO6d9OPGtKgqQwdBMNGkKY1Bms1vzrHaUD5LDEvjB7Ug/ThaXz9eQH03w3jFii0uw==",
+            "logID": "21:E5:1A:44:D8:B9:E7:54:0E:A7:FB:E0:BA:D7:77:36:15:60:66:84:D1:5A:EB:33:E6:45:B4:E9:55:F3:88:83",
+            "windowStart": "1734220800",
+            "windowEnd": "1752537600"
+        },
+        {
             "log": "twig",
             "shard": "2025h1b",
             "role": "Sunlight",
