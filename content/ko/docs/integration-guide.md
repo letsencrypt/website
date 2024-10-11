@@ -3,7 +3,7 @@ title: 통합 가이드
 linkTitle: 클라이언트 및 대규모 제공자 통합 안내서
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-8
+lastmod: 2020-12-08
 show_lastmod: 1
 ---
 
