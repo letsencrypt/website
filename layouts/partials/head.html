@@ -9,18 +9,8 @@
     name="description"
     content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}"
   />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@letsencrypt" />
-  <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:url" content="{{ .Permalink }}" />
-  <meta
-    name="twitter:description"
-    content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}"
-  />
-  <meta name="twitter:image:src" content="{{
-  "images/le-logo-twitter-noalpha.png" | absURL }}"> <meta name="og:image"
-  content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 
+  <meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end }}" />
