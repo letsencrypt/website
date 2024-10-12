@@ -41,8 +41,6 @@
 
   {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify |
   fingerprint "sha512" }}
-  <link rel="preload" href="{{ $style.RelPermalink }}" as="style" />
-  <link rel="preload" href="/fontawesome-free-6.5.2-web/css/all.min.css" as="style" />
   <link
     rel="stylesheet"
     href="{{ $style.RelPermalink }}"
