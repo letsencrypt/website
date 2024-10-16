@@ -28,12 +28,7 @@
       "url": "https://www.eff.org/",
       "image": "eff-logo.png"
     },
-    { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" },
-    {
-      "name": "Meta",
-      "url": "https://www.meta.com/",
-      "image": "meta-logo.png"
-    }
+    { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" }
   ],
   "gold": [
     {
@@ -329,6 +324,7 @@
       "url": "https://serpapi.com/",
       "image": "SerpApi-black.png"
     },
-    { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" }
+    { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" },
+    { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" }
   ]
 }
