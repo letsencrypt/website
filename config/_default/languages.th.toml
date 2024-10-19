@@ -2,7 +2,7 @@ title = "Let's Encrypt"
 contentDir = "content/th"
 languageName = "Thai"
 languageCode = "th"
-weight = 10
+weight = 700
 
 [params]
 

@@ -2,7 +2,7 @@ title = "Что такое Let's Encrypt"
 contentDir = "content/ru"
 languageName = "Русский"
 languageCode = "ru-RU"
-weight = 10
+weight = 550
 
 [params]
 beforeColon = ""

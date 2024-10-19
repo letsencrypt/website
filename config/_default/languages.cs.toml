@@ -2,7 +2,7 @@ title = "Let's Encrypt"
 contentDir = "content/cs"
 languageName = "Čeština"
 languageCode = "cs-CZ"
-weight = 10
+weight = 150
 
 [params]
 beforeColon = ""

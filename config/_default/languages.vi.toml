@@ -2,7 +2,7 @@ title = "Let's Encrypt - Chứng Chỉ SSL/TLS Certificates Miễn Phí"
 contentDir = "content/vi"
 languageName = "Tiếng Việt"
 languageCode = "vi-VN"
-weight = 700
+weight = 850
 [params]
 beforeColon = ""
 description = """

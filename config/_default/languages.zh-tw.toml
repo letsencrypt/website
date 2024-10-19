@@ -2,7 +2,7 @@ title = "Let's Encrypt - 免費的 SSL/TLS 憑證"
 languageName = "繁體中文"
 contentDir = "content/zh-tw"
 languageCode = "zh-Hant-TW"
-weight = 800
+weight = 950
 [params]
 beforeColon = ""
 description = """
