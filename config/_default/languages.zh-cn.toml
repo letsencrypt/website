@@ -2,7 +2,7 @@ title = "Let's Encrypt"
 contentDir = "content/zh-cn"
 languageName = "简体中文"
 languageCode = "zh-Hans-CN"
-weight = 10
+weight = 900
 
 [params]
 beforeColon = ""
