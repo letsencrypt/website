@@ -2,125 +2,243 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2021-10-05
-show_lastmod: 1
+lastmod: 2024-10-22
+show_lastmod: true
 ---
 
+Let’s Encrypt provides rate limits to ensure fair usage by as many people as
+possible. We believe these rate limits are high enough to work for most people
+by default. We’ve also designed them so that renewing a certificate almost never
+hits a rate limit, and so that large organizations can gradually increase the
+number of certificates they can issue without requiring intervention from Let’s
+Encrypt.
 
-Let's Encrypt provides rate limits to ensure fair usage by as
-many people as possible. We believe these rate limits are high enough to work
-for most people by default. We've also designed them so renewing a
-certificate almost never hits a rate limit, and so that large
-organizations can gradually increase the number of certificates they can issue
-without requiring intervention from Let's Encrypt.
+If you’re actively developing or testing a Let’s Encrypt client, please utilize
+our [staging environment](/docs/staging-environment) instead of the production
+API. If you’re working on integrating Let’s Encrypt as a provider or with a
+large website please review our [Integration Guide](/docs/integration-guide).
 
-If you're actively developing or testing a Let's Encrypt client, please utilize
-our [staging environment](/docs/staging-environment) instead of the production API.
-If you're working on integrating Let's Encrypt as a provider or with a large
-website please [review our Integration Guide](/docs/integration-guide).
+# How Our Rate Limits Work
+Limits are calculated, per request, using a [leaky
+bucket](https://en.wikipedia.org/wiki/Leaky_bucket#As_a_meter) algorithm. This
+approach provides flexibility in how you use your allotted requests. You can
+either make requests in bursts—up to the full limit—or space out your requests
+to avoid the risk of being limited.
 
-The main limit is <a id="certificates-per-registered-domain"></a>**Certificates per Registered Domain** (50 per week). A
-registered domain is, generally speaking, the part of the domain you purchased
-from your domain name registrar. For instance, in the name `www.example.com`,
-the registered domain is `example.com`. In `new.blog.example.co.uk`,
-the registered domain is `example.co.uk`. We use the
-[Public Suffix List](https://publicsuffix.org) to calculate the registered
-domain. Exceeding the Certificates Per Registered Domain limit is reported with the
-error message `too many certificates already issued`, possibly with additional
-details.
+If you’ve hit a rate limit, we don’t have a way to temporarily reset it. Don't
+worry, your capacity for that limit will gradually refill over time, allowing
+you to make more requests without any additional action on your part. Revoking
+certificates does **not** reset rate limits, because the resources used to issue
+those certificates have already been consumed. For more information please see
+[Retrying After Hitting Rate Limits](#retrying-after-hitting-rate-limits).
 
-You can create a maximum of 300 <a
-id="new-orders"></a>**New Orders** per account per 3 hours. A new order is created
-each time you request a certificate from the Boulder CA, meaning that one new order
-is produced in each certificate request. Exceeding the New Orders
-limit is reported with the error message `too many new orders recently`.
+# Account Registration Limits
+The following limits apply when subscribers request a new account using the
+new-account API endpoint. Exceeding these limits is very rare. We recommend that
+large integrators prefer a design which [uses one account for many
+customers](/docs/integration-guide).
 
-You can combine multiple hostnames into a single
-certificate, up to a limit of 100 <a id="names-per-certificate"></a>**Names per Certificate**.
-For performance and reliability reasons, it's better to use fewer names per certificate
-whenever you can.  A certificate with multiple names is often called a SAN
-certificate, or sometimes a UCC certificate.
+<div class="boxed">
 
-Renewals are treated specially: they don't count against your **Certificates per
-Registered Domain** limit, but they are subject to a [**Duplicate Certificate**](
-/docs/duplicate-certificate-limit) limit of 5 per week. Exceeding the Duplicate Certificate
-limit is reported with the error message `too many certificates already issued for exact 
-set of domains`.
+## New Registrations per IP Address
+Up to 10 accounts can be created from a single IP address every 3 hours. The
+ability to create new accounts refills at a rate of 1 account every 18 minutes.
 
-A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains
-the exact same set of hostnames, ignoring capitalization and ordering of
-hostnames.  For instance, if you requested a certificate for the names
-[`www.example.com`, `example.com`], you could request four more certificates for
-[`www.example.com`, `example.com`] during the week. If you changed the set of hostnames
-by adding [`blog.example.com`], you would be able to request additional
-certificates.
+### Overrides
+We do **not** offer overrides for this limit.
 
-Renewal handling ignores the public key and extensions requested. A certificate issuance
-can be considered a renewal even if you are using a new key.
+</div>
+<div class="boxed">
 
-**Revoking certificates does not reset rate limits**, because the resources used to
-issue those certificates have already been consumed.
+## New Registrations per IPv6 Range
+Up to 500 accounts can be created from a single /48 IPv6 subnet every 3 hours.
+The ability to create new accounts refills at a rate of 1 account every 22
+seconds.
 
-There is a <a id="failed-validations"></a>[**Failed Validation**](/docs/failed-validation-limit) 
-limit of 5 failures per account, per hostname, per hour. This limit is higher on our
-[staging environment](/docs/staging-environment), so you can use that environment to debug connectivity
-problems. Exceeding the Failed Validations limit is reported with the error message `too many failed
-authorizations recently`.
+### Overrides
+We do **not** offer overrides for this limit.
 
-The "new-nonce", "new-account", "new-order", and "revoke-cert" endpoints on the API have an <a
-id="overall-requests"></a>**Overall
-Requests** limit of 20 per second. The "/directory" endpoint and the "/acme" 
-directory & subdirectories have an Overall Requests limit of 40 requests per second.
+</div>
 
-We have two other limits that you're very unlikely to run into.
+# Certificate Issuance Limits
+The following limits apply when subscribers request a new certificate using the
+`new-order` API endpoint. Exceeding these limits is more common, especially for
+large hosting providers or organizations issuing certificates for many
+hostnames.
 
-You can create a maximum of 10 <a id="accounts-per-ip-address"></a>[**Accounts
-per IP Address**](/docs/too-many-registrations-for-this-ip) per 3 hours. You can
-create a maximum of 500 **Accounts per IP Range** within an IPv6 /48 per
-3 hours. Hitting either account rate limit is very rare, and we recommend that
-large integrators prefer a design [using one account for many customers](/docs/integration-guide).
-Exceeding these limits is reported with the error message `too many registrations for this IP`
-or `too many registrations for this IP range`.
+<div class="boxed">
 
-You can have a maximum of 300 <a id="pending-authorizations"></a>**Pending Authorizations** on your account. Hitting
-this rate limit is rare, and happens most often when developing ACME clients. It
-usually means that your client is creating authorizations and not fulfilling them.
-Please utilize our [staging environment](/docs/staging-environment) if you’re
-developing an ACME client. Exceeding the Pending Authorizations limit is
-reported with the error message `too many currently pending authorizations`.
+## New Orders per Account
+Each time you request a certificate from Let’s Encrypt, a new order is created.
+A single certificate can include up to 100 hostnames. For performance reasons,
+it's better to use fewer hostnames per certificate whenever you can.
 
-# <a id="overrides"></a>Overrides
+### Limit
+Up to 300 new orders can be created by a single account every 3 hours. The
+ability to create new orders refills at a rate of 1 order every 36 seconds.
 
-If you've hit a rate limit, we don't have a way to temporarily reset it. You'll
-need to wait until the rate limit expires after a week. We use a sliding window,
-so if you issued 25 certificates on Monday and 25 more certificates on Friday,
-you'll be able to issue again starting Monday. You can get a list of certificates
-issued for your registered domain by [searching on crt.sh](https://crt.sh), which
-uses the public [Certificate Transparency](https://www.certificate-transparency.org)
-logs.
+### Overrides
+To exceed this limit, you must [request an
+override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for a
+specific account.
 
-If you are a large hosting provider or organization working on a Let's Encrypt
+</div>
+<div class="boxed">
+
+## New Certificates per Registered Domain
+A registered domain is, generally speaking, the part of the domain you purchased
+from your domain name registrar. For instance, in `www.example.com`, the
+registered domain is `example.com`. In `new.blog.example.co.uk`, the registered
+domain is `example.co.uk`. We use the [Public Suffix
+List](https://publicsuffix.org/) to identify registered domains.
+
+### Limit
+Up to 50 certificates can be issued per registered domain every 7 days. This is
+a global limit, and all new order requests, regardless of which account submits
+them, count towards this limit. The ability to issue new certificates for the
+same registered domain refills at a rate of 1 certificate every 202 minutes.
+
+### Overrides
+To exceed this limit, you must [request an
+override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for
+the specific registered domain or an account.
+
+</div>
+<div class="boxed">
+
+## New Certificates per Exact Set of Hostnames
+If you request a certificate for `example.com` and `login.example.com`, the
+“exact set of hostnames” is `[example.com, login.example.com]`. If you request a
+certificate for only 1 hostname, such as `example.co.uk`, then the unique set of
+hostnames would be `[example.co.uk]`.
+
+### Limit
+Up to 5 certificates can be issued per exact same set of hostnames every 7 days.
+This is a global limit, and all new order requests, regardless of which account
+submits them, count towards this limit. The ability to request new certificates
+for the same exact set of hostnames refills at a rate of 1 certificate every 34
+hours.
+
+### Common Causes
+
+Reinstalling your client multiple times to troubleshoot an unknown error, or
+deleting your ACME client's configuration data each time you deploy your
+application, are common ways to hit this limit. We have intentionally set this
+limit relatively low to prevent buggy systems or software under development from
+rapidly consuming the capacity of other rate limits.
+
+When testing or troubleshooting your applications, we recommend configuring your
+client to use our [staging environment](/docs/staging-environment), which has
+[significantly higher](/docs/staging-environment/#rate-limits) limits.
+
+### Workaround
+If you've hit this limit, you can change the set of hostnames by adding
+`blog.example.com`, to request additional certificates. Be aware that these new
+orders would not be considered renewals. Therefore, they would be subject to the
+[New Orders per Account](#new-orders-per-account) and [New Certificates per
+Registered Domain](#new-certificates-per-registered-domain) rate limits.
+
+### Overrides
+We do **not** offer overrides for this limit.
+
+</div>
+<div class="boxed">
+
+## Authorization Failures per Hostname per Account
+An authorization is generated for each hostname included in an order. Before a
+certificate can be issued, all authorizations in the order must be successfully
+validated. A failed authorization means that, although the requests for
+validation were sent successfully, all attempts by Let’s Encrypt to validate
+control of the hostname have failed.
+
+### Limit
+Up to 5 authorization failures per hostname can be incurred by one account every
+hour. The ability to incur authorization failures refills at a rate of 1 per
+hostname every 12 minutes. Once exceeded, this limit is enforced by preventing
+any new orders for the same hostname, by the same account until the limit
+resets.
+
+### Common Causes
+Before you begin troubleshooting, we recommend you set your client to use our
+[staging environment](/docs/staging-environment). This environment has
+[significantly higher](/docs/staging-environment/#rate-limits) limits, which can
+help you identify and resolve issues without consuming your production limits.
+
+- Validation failures when using the `HTTP-01` and `TLS-ALPN-01` methods usually
+  stem from network or firewall configurations that prevent Let's Encrypt
+  validation servers from reaching your server.
+
+- Validation failures when using the `DNS-01` method often result from missed
+  steps or typos during the initial setup process. Typically, this validation
+  method requires you to create a CNAME record in your main DNS zone, enabling
+  your client to set the necessary DNS records during the validation process.
+
+### Overrides
+To exceed this limit, you must [request an
+override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for a
+specific account.
+
+</div>
+
+# Limit Exemptions for Renewals
+Let's Encrypt recognizes a new certificate order as a "renewal" in two ways: the
+preferred method is through ACME Renewal Info (ARI), which is exempt from all
+rate limits, and the other relies on older renewal detection logic that
+considers orders with the exact same set of hostnames as renewals but may still
+be subject to certain rate limits.
+
+## ARI Renewals
+Renewals coordinated by ARI offer the unique benefit of being exempt from all
+rate limits. Clients that support ARI periodically check with Let’s Encrypt
+servers to determine if your existing certificate should be renewed. When the
+optimal renewal window is reached the client requests a new order explicitly
+indicating the certificate it replaces. If the new order includes at least one
+hostname matching the certificate it intends to replace and the certificate has
+not been previously replaced using ARI, the order will not be subject to any
+rate limits.
+
+## Non-ARI Renewals
+If your client or hosting provider has yet to add support for ARI, your order
+can still be considered a renewal of an earlier certificate if it contains the
+exact same set of hostnames, ignoring capitalization and the order of hostnames.
+For example, if you requested a certificate for the hostnames `[www.example.com,
+example.com]`, you could request four more certificates for `[www.example.com,
+example.com]` before hitting the [New Certificates per Exact Set of
+Hostnames](#new-certificates-per-exact-set-of-hostnames) rate limit. Each of
+these new orders would be considered renewals and would be exempt from the [New
+Orders per Account](#new-orders-per-account) and [New Certificates per
+Registered Domain](#new-certificates-per-registered-domain) rate limits.
+However, unlike ARI renewals, these orders would still be subject to
+[Authorization Failures per Hostname per
+Account](#authorization-failures-per-hostname-per-account) and [New Certificates
+per Exact Set of Hostnames](#new-certificates-per-exact-set-of-hostnames).
+
+# Retrying After Hitting Rate Limits
+All of our rate limit error messages follow the same format. For example:
+
+```
+too many new registrations (10) from this IP address in the last 3h0m0s,
+retry after 1970-01-01 00:18:15 UTC.
+```
+
+You should be able to successfully make the same request after the provided date
+and time. If your request exceeds the capacity of more than one of our limits,
+we will always return the error message for the limit that resets furthest in
+the future.
+
+## Retry-After Header
+We include a `Retry-After` header in all rate limit error responses, indicating
+the duration your client should wait before retrying.
+
+You can get a list of certificates issued for your registered domain by
+searching [crt.sh](https://crt.sh/) or [Censys](https://search.censys.io/#),
+which use the public [Certificate
+Transparency](https://www.certificate-transparency.org/) logs.
+
+# Requesting an Override
+If you are a large hosting provider or organization working on a Let’s Encrypt
 integration, we have a [rate limiting
-form](https://isrg.formstack.com/forms/rate_limit_adjustment_request)
-that can be used to request a higher rate limit. It takes a few weeks to process
-requests, so this form is not suitable if you just need to reset a rate limit
-faster than it resets on its own.
-
-# <a id="clearing-pending"></a>Clearing Pending Authorizations
-
-If you have a large number of pending authorization objects and are getting a
-Pending Authorizations rate limiting error, you can trigger a validation attempt for those
-authorization objects by submitting a JWS-signed POST to one of its challenges, as
-described in the
-[ACME spec](https://tools.ietf.org/html/rfc8555#section-7.5.1).
-The pending authorization objects are represented by URLs of the form
-`https://acme-v02.api.letsencrypt.org/acme/authz/XYZ`, and should show up in your
-client logs. Note that it doesn't matter whether validation succeeds or fails.
-Either will take the authorization out of 'pending' state. If you do not
-have logs containing the relevant authorization URLs, you need to wait for the
-rate limit to expire. As described above, there is a sliding window, so this may
-take less than a week depending on your pattern of issuance.
-
-Note that having a large number of pending authorizations is generally the
-result of a buggy client. If you're hitting this rate limit frequently you
-should double-check your client code.
+form](https://isrg.formstack.com/forms/rate_limit_adjustment_request) that can
+be used to request higher rate limits. It takes a few weeks to process requests,
+so this form is not suitable if you just need to reset a rate limit faster than
+it resets on its own.
