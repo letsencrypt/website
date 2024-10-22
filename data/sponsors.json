@@ -47,6 +47,11 @@
       "image": "shopify-logo.png"
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
+    {
+      "name": "Heroku",
+      "url": "https://www.heroku.com/",
+      "image": "heroku-logo.png"
+    },
     { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.svg" },
     {
       "name": "Squarespace",
@@ -215,11 +220,7 @@
     },
     { "name": "Wix", "url": "https://www.wix.com/", "image": "wix-logo.png" },
 
-    {
-      "name": "Heroku",
-      "url": "https://www.heroku.com/",
-      "image": "heroku-logo.png"
-    },
+
     {
       "name": "WPBeginner",
       "url": "https://www.wpbeginner.com/",
