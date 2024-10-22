@@ -174,9 +174,7 @@ help you identify and resolve issues without consuming your production limits.
   your client to set the necessary DNS records during the validation process.
 
 ### Overrides
-To exceed this limit, you must [request an
-override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for a
-specific account.
+We do **not** offer overrides for this limit.
 
 </div>
 
