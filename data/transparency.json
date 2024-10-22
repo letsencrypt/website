@@ -217,12 +217,12 @@
         },
         {
             "log": "willow",
-            "shard": "2025h2b",
+            "shard": "2025h2c",
             "role": "Sunlight",
             "windowStart": 1750305600,
-            "windowEnd": 1797570000,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExOxwfLJ0aPb/4ykj0Zv476xGyhs8jCqisDWLnDigV9GAz3tmPvDBT5UwpIlVwWrIF6vjGE1Ics1hDwCsyHZoIg==",
-            "logID": "5e8hdnsVqhuSh8Bn9rml8aUjEHJ9u4on/u6dHIdJ27g="
+            "windowEnd": 1766034000,
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaUvzqBm/C9pNUsVI1jqpms5OkW3Kk+Eb3/veW6P3ogOItkqqEvkZfU7zBbsvm1j1Ep003iNUGFOrilPl5TpCRg==",
+            "logID": "kqECxXwi2rGMzCrnH9TMWcBdJR2hbHPiKBvT8LBImIc="
         }
     ]
 }
