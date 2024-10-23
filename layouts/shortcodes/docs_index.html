@@ -12,17 +12,7 @@
 
 <ul>
     <li>{{ template "link" (dict "context" . "page" "/docs/client-options") }}</li>
-    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}
-        <ul>
-            <li>{{ template "link" (dict "context" . "page" "/docs/duplicate-certificate-limit") }}</li>
-        </ul>
-        <ul>
-            <li>{{ template "link" (dict "context" . "page" "/docs/failed-validation-limit") }}</li>
-        </ul>
-        <ul>
-            <li>{{ template "link" (dict "context" . "page" "/docs/too-many-registrations-for-this-ip") }}</li>
-        </ul>
-    </li>
+    <li>{{ template "link" (dict "context" . "page" "/docs/rate-limits") }}</li>
     <li>{{ template "link" (dict "context" . "page" "/docs/expiration-emails") }}</li>
 </ul>
 
