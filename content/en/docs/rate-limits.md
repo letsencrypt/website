@@ -109,7 +109,7 @@ the specific registered domain or an account.
 ## New Certificates per Exact Set of Hostnames
 If you request a certificate for `example.com` and `login.example.com`, the
 “exact set of hostnames” is `[example.com, login.example.com]`. If you request a
-certificate for only 1 hostname, such as `example.co.uk`, then the unique set of
+certificate for only 1 hostname, such as `example.co.uk`, then the exact set of
 hostnames would be `[example.co.uk]`.
 
 ### Limit
