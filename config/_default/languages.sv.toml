@@ -2,7 +2,7 @@ title = "Let's Encrypt - Gratis SSL/TLS-certifikat"
 contentDir = "content/sv"
 languageName = "Svenska"
 languageCode = "sv"
-weight = 650
+weight = 625
 [params]
 beforeColon = ""
 description = """
