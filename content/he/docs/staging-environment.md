@@ -2,7 +2,7 @@
 title: סביבת הכנה להקמה
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2022-06-13
+lastmod: 2024-06-11
 show_lastmod: 1
 ---
 
@@ -13,7 +13,7 @@ show_lastmod: 1
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-אם נעשה שימוש ב־Certbot, ניתן להשתמש בסביבת ההכנה להקמה שלנו עם הדגלון `‎--test-cert`. ללקוחות ACME אחרים, נא לקרוא את ההנחיות שלהם לקבלת מידע על בדיקת מול סביבת ההכנה להקמה שלנו. נא לשים לב שגרסה 2 (v2) של סביבת ההכנה להקמה שלנו דורשת לקוח ACME תומך גרסה 2.
+אם נעשה שימוש ב־Certbot, ניתן להשתמש בסביבת ההכנה להקמה שלנו עם הדגלונים `‎--test-cert` או `‎--dry-run`. ללקוחות ACME אחרים, נא לקרוא את ההנחיות שלהם לקבלת מידע על בדיקת מול סביבת ההכנה להקמה שלנו.
 
 # מגבלות מיכסה
 
@@ -27,17 +27,40 @@ show_lastmod: 1
 
 # היררכיית האישורים להכנה להקמה
 
-לסביבת ההכנה להקמה יש היררכיית אישורים ש[מחקה את סביבת הפעילות המלאה](/certificates).
+לסביבת ההכנה להקמה יש היררכיית אישורים ש[מחקה את סביבת הפעילות המלאה](/certificates). השמות השתנו ונוספה לפניהם הקידומת (STAGING) (הכנה להקמה) ושם ייחודי כדי שאפשר יהיה להבחין ביניהם לבין המקבילות שלהם בסביבה המבצעית.
 
-## אישורי תווך
+## רשויות אישורים עליונות
 
-לסביבת ההכנה להקמה יש שני אישורי תווך פעילים: אישור תווך מסוג RSA בשם [„‎(STAGING) Artificial Apricot R3”](/certs/staging/letsencrypt-stg-int-r3.pem) ואישור תווך מסוג ECDSA בשם [„‎(STAGING) Ersatz Edamame E1”](/certs/staging/letsencrypt-stg-int-e1.pem).
+לסביבת ההכנה להקמה יש שני אישורי על פעילים ש**אינם נמצאים** במאגר המהימנות של הדפדפן/לקוח: „(STAGING) Pretend Pear X1” ו־„(STAGING) Bogus Broccoli X2”.
 
-הנפקת ECDSA [הופעלה בסביבת ההכנה להקמה](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) ב־24 במרץ 2021 וכל הבקשות לאישורי הכנה להקמה עם מפתחות ECDSA חתומות על ידי „‎(STAGING) Ersatz Edamame E1” ומשתמשות בהיררכיה של ECDSA. בדומה, כל הבקשות לאישורי סביבת הכנה להקמה עם מפתחות RSA חתומות על ידי „‎(STAGING) Artificial Apricot R3” ומשתמשות בהיררכיה של RSA. אין דרך לקבל אישור חתום ב־RSA למפתח ECDSA ולהיפך, הדרך לבחור את הגוף המנפיק היא לשלוט בתצורת המפתח שנוצר מקומית.
+כדי לשנות לקוח לבדיקות בלבד כך שיסמוך על סביבת ההכנה להקמה למטרות בדיקה, ניתן לעשות זאת על ידי הוספת האישורים שלהם למאגר המהימנים שלך למטרות בדיקה. **חשוב:** אין להוסיף את האישור העליון או המתווך של סביבת ההכנה להקמה למאגר המהימנות שמשמש אותך לגלישה רגילה באינטרנט או לפעילויות אחרות מאחר שאין עליהן פיקוח או עומדות באותם תקנים מחמירים כמו האישורים העליונים של סביבת הפעילות המלאה שלנו ולכן אינם בטוחים לשימוש לאף מטרה למעט בדיקות.
 
-## אישורים עליונים
+* **Pretend Pear X1**
+  * נושא: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
+  * סוג מפתח: `RSA 4096`
+  * פרטי האישור: [der](/certs/staging/letsencrypt-stg-root-x1.der),‏ [pem](/certs/staging/letsencrypt-stg-root-x1.pem),‏ [txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+* **Bogus Broccoli X2**
+  * נושא: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
+  * סוג מפתח: `ECDSA P-384`
+  * פרטי אישור (חתימה עצמית): [der](/certs/staging/letsencrypt-stg-root-x2.der),‏ [pem](/certs/staging/letsencrypt-stg-root-x2.pem),‏ [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
+  * פרטי אישור (חתימה צולבת על ידי Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der),‏ [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem),‏ [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
 
-לסביבת ההכנה להקמה יש שני אישורי על פעילים ש**אינם נמצאים** במאגר המהימנות של הדפדפן/לקוח: „(STAGING) Pretend Pear X1” ו־„(STAGING) Bogus Brocoli X2”. כדי לשנות לקוח לבדיקה בלבד כך שיתן אמון בסביבת ההכנה להקמה למטרות בדיקה ניתן להוסיף את האישורים [„(STAGING) Pretend Pear X1”](/certs/staging/letsencrypt-stg-root-x1.pem) ו/או [„(STAGING) Bogus Broccoli X2”](/certs/staging/letsencrypt-stg-root-x2.pem) למאגר המהימנות שלך למטרות בדיקה. את כל אישורי ההכנה להקמה שלנו ניתן למצוא [כאן](https://github.com/letsencrypt/website/tree/master/static/certs/staging).  חשוב: אין להוסיף את האישור העליון או המתווך של סביבת ההכנה להקמה למאגר המהימנות שמשמש אותך לגלישה רגילה באינטרנט או לפעילויות אחרות מאחר שאין עליהן פיקוח או עומדות באותם תקנים מחמירים כמו האישורים העליונים של סביבת הפעילות המלאה שלנו ולכן אינם בטוחים לשימוש לאף מטרה למעט בדיקות.
+## רשויות אישורים כפופות (ביניים)
+
+לסביבת ההכנה להקמה יש אישורי ביניים שמחקים את הסביבה המבצעית, הונפקו מאישורי העל הלא אמינים שמפורטים להלן. כמו בסביבה המבצעית, לא כולם בשימוש כל הזמן. רשימת אישורי הביניים העדכניים המלאה היא:
+
+* (STAGING) Pseudo Plum E5
+* (STAGING) False Fennel E6
+* (STAGING) Puzzling Parsnip E7
+* (STAGING) Mysterious Mulberry E8
+* (STAGING) Fake Fig E9
+* (STAGING) Counterfeit Cashew R10
+* (STAGING) Wannabe Watercress R11
+* (STAGING) Riddling Rhubarb R12
+* (STAGING) Tenuous Tomato R13
+* (STAGING) Not Nectarine R14
+
+אישורי הביניים האלה נתונים לשינוי בכל רגע נתון ושום מערכת לא אמורה להצמיד או לתת בהם אמון. באופן כללי, אפשר לצפות מאישורי הביניים להיות מקבילים לאישורי הביניים התואמים (אמינים) בסביבה המבצעית. במקרה הצורך, אפשר לקבל [כאן](https://github.com/letsencrypt/website/blob/main/static/certs/staging) את פרטי האישור המלאים.
 
 # שקיפות אישורים
 

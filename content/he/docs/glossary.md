@@ -1,7 +1,7 @@
 ---
 title: מונחון
 slug: glossary
-date: 2018-12-30
+date: 2024-07-16
 show_lastmod: 1
 ---
 
@@ -52,9 +52,9 @@ Note for translators:
 
 {{% def id="chain" english="Certificate chain" name="שרשרת אישורים" %}} רשימה של [אישורי תווך](#def-intermediate) שמסייעים ל[סוכן משתמש](#def-user-agent) לקבוע שיוכל לתת אמון ביישות קצה או ב[אישור עלה](#def-leaf), על ידי חיבורו אל [אישור עליון](#def-root) ב[מאגר האישורים](#def-store) שלו. נא לשים לב: השרשרת אינה תמיד ייחודית וכאשר אתר מציג שרשרת אישורים שמובילה לאישור עליון אחד, סוכן המשתמש עשוי להחליט להשתמש בשרשרת אחרת כדי לתקף את האישור. [ויקיפדיה](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" english="Certificate Policy" abbr="CP" name="מדיניות אישורים" %}} סדרה שמית של כללים שמציינים את יישימותו של אישור לקהילה ו/או מחלקה של יישומים מסוימים עם דרישות אבטחה משותפות. פרטים נקודתיים על הנפקה מפורטים תחת [CPS](#def-CPS) (הכרזת מדיניות אישור). [מדיניות האישורים של ISRG](/repository#isrg-certificate-policy)‏ - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [ויקיפדיה](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" english="Certificate Policy" abbr="CP" name="מדיניות אישורים" %}} סדרה שמית של כללים שמציינים את יישימותו של אישור לקהילה ו/או מחלקה של יישומים מסוימים עם דרישות אבטחה משותפות. פרטים נקודתיים על הנפקה מפורטים תחת [CPS](#def-CPS) (הכרזת מדיניות אישור). אפשר לשלב מסמכי CP (מדיניות אישורים) ו־CPS (הכרזת מדיניות אישור) למסמך בודד. [ISRG CP/CPS משולבים](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [ויקיפדיה](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" english="Certification Practice Statement" abbr="CPS" name="הצהרת אופן אישור" %}} הצהרה של דרכי הפעולה בהן נוקטת רשות אישורים לטובת הנפקה, ניהול, שלילה וחיפוש או החלפת מפתח לאישורים. [הצהרת אופן האישור של ISRG](/repository#isrg-certification-practice-statement)‏ - [RFC 3647 סעיף 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) - [ויקיפדיה](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" english="Certification Practice Statement" abbr="CPS" name="הצהרת אופן אישור" %}} הצהרה של דרכי הפעולה בהן נוקטת רשות אישורים לטובת הנפקה, ניהול, שלילה וחיפוש או החלפת מפתח לאישורים. הכרזת מדיניות אישור (CPS) חייבת להיות תואמת ל[מדיניות האישורים](#def-CP) שמשויכת אליה. אפשר לשלב מסמכי CP (מדיניות אישורים) ו־CPS (הכרזת מדיניות אישור) למסמך בודד. [ISRG CP/CPS משולב](/repository#isrg-certificate-policy) - [RFC 3647 סעיף 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [ויקיפדיה](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}} אישור יכול להכיל [הרחבות](#def-extension) שמסומנות כ„משמעותיות” (critical). משמעות הדבר היא שתוכנה חייבת לדחות את האישור הזה אלמלא התוכנה מבינה איך לעבד את ההרחבה הזאת. מאפשר להציג הרחבות חדשות שחשובות לאבטחה מבלי ליצור סיכונים לתכניות ישנות. {{% /def %}}
 
@@ -130,7 +130,7 @@ Note for translators:
 
 {{% def id="HPKP" english="HTTP Public Key Pinning" abbr="HPKP" name="נעיצת מפתח ציבורי עם HTTP‏" %}} מנגנון אבטחה שמבקש מהדפדפן לדרוש ש[שרשרת אישורים](#def-chain) תשתמש במפתחות ציבוריים מסוימים בטעינות עתידיות. Chrome הציג את המנגנון הזה כדי להגן מפני חבלות מצד רשות האישורים אך זה גרם לתקלות גישה לאתרים, מה שהוביל את Chrome [לצמצם את השימוש בו ולהסיר אותו](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [ויקיפדיה](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
-{{% def id="PSL" english="Public Suffix List" abbr="PSL" name="רשימת סיומות ציבורית" %}} רשימה של *סיומות ציבוריות* שמתוחזקת על ידי Mozilla ומציינת אילו שמות תחום באינטרנט זמינים לטובת יישויות שונות כדי לרשום תת־מתחמים. למשל, הרשימה מציינת שגם `com` וגם `co.uk` הן סיומות ציבוריות למרות ש־`co.uk` אינו שם תחום עליון. דפדפנים משתמשים ברשימה הזאת, לצד מקורות נוספים, כדי למנוע מאתרים שכפי הנראה מופעלים על ידי יישויות שונות לשתף ביניהם עוגיות. [Let's Encrypt](#def-LE) משתמשת ברשימה גם כדי לחשב מגבלת מיכסות: [מגבלת-מיכסות](/docs/rate-limits). https://publicsuffix.org/‎ {{% /def %}}
+{{% def id="PSL" english="Public Suffix List" abbr="PSL" name="רשימת סיומות ציבורית" %}} רשימה של *סיומות ציבוריות* שמתוחזקת על ידי Mozilla ומציינת אילו שמות תחום באינטרנט זמינים לטובת יישויות שונות כדי לרשום תת־מתחמים. למשל, הרשימה מציינת שגם `com` וגם `co.uk` הן סיומות ציבוריות למרות ש־`co.uk` אינו שם תחום עליון. דפדפנים משתמשים ברשימה הזאת, לצד מקורות נוספים, כדי למנוע מאתרים שכפי הנראה מופעלים על ידי יישויות שונות לשתף ביניהם עוגיות. [Let's Encrypt](#def-LE) משתמשת ברשימה גם כדי לחשב מגבלת מיכסות: [מגבלת-מיכסות](/rate-limits). https://publicsuffix.org/‎ {{% /def %}}
 
 {{% def id="relying-party" english="Relying Party" name="גוף נסמך" %}} הגוף שסומך על המידע שבאישור. למשל, מבקר באתר HTTPS הוא גוף נסמך. {{% /def %}}
 
