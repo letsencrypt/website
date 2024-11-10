@@ -1,7 +1,7 @@
 ---
 title: Glossar
 slug: glossary
-date: 2018-12-30
+date: 2024-07-16
 show_lastmod: 1
 ---
 
@@ -52,9 +52,9 @@ Note for translators:
 
 {{% def id="chain" name="Certificate chain" %}} Eine Liste von [Zwischenzertifikaten](#def-intermediate), die einem [User Agent](#def-user-agent), durch Verbindung zu einem [Root Zertifikat](#def-root) in seinem [Zertifikatspeicher](#def-store), helfen zu unterscheiden, ob sie einem End-Zertifikat oder [Leaf-Zertifikat](#def-leaf) vertrauen. Zu beachten: Die Kette ist nicht immer dieselbe und wenn eine Website eine Zertifikatkette zu einem Root präsentiert, kann der User Agent entscheiden, trotzdem eine andere Kette zur Validierung des Zertifikats zu benutzen. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate) {{% /def %}}
 
-{{% def id="CP" name="Certificate Policy" abbr="CP" %}} Ein Satz von Regeln, die die Anwendbarkeit von Zertifikaten zu einer bestimmten Gemeinschaft und/oder Klasse von Applikationen mit gemeingültigen Sicherheitsanforderungen vereint. Spezifische Details sind beschrieben in [CPS](#def-CPS). [ISRG Certificate Policy](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
+{{% def id="CP" name="Certificate Policy" abbr="CP" %}} Ein Satz von Regeln, die die Anwendbarkeit von Zertifikaten zu einer bestimmten Gemeinschaft und/oder Klasse von Applikationen mit gemeingültigen Sicherheitsanforderungen vereint. Spezifische Details sind beschrieben in [CPS](#def-CPS). CP- und CPS-Dokumente können zu einem einzigen Dokument zusammengefasst werden. [ISRG Kombinierte CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647](https://tools.ietf.org/html/rfc3647) - [Wikipedia](https://en.wikipedia.org/wiki/Certificate_policy) {{% /def %}}
 
-{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} Eine Aussage über die Vorgänge, die eine Zertifizierungsstelle beim Ausstellen, Verwalten, Sperren und Erneuern von Zertifikaten ausübt. [ISRG Certification Practice Statement](/repository#isrg-certification-practice-statement) - [RFC 3647, Abschnitt 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
+{{% def id="CPS" name="Certification Practice Statement" abbr="CPS" %}} Eine Aussage über die Vorgänge, die eine Zertifizierungsstelle beim Ausstellen, Verwalten, Sperren und Erneuern von Zertifikaten ausübt. Ein CPS muss mit den dazugehörigen [Zertifikatsrichtlinien](#def-CP) konform sein. CP- und CPS-Dokumente können zu einem einzigen Dokument zusammengefasst werden. [ISRG Kombinierte CP/CPS](/repository#isrg-certificate-policy) - [RFC 3647 Abschnitt 3.4](https://tools.ietf.org/html/rfc3647#section-3.4) [Wikipedia](https://en.wikipedia.org/wiki/Certification_Practice_Statement) {{% /def %}}
 
 {{% def id="critical" name="Critical extension" %}}} Ein Zertifikat kann [Erweiterungen](#def-extension) enthalten, die als "kritisch" gekennzeichnet sind Das bedeutet, dass die Software dieses Zertifikat ablehnen muss, es sei denn, die Software weiß, wie sie diese Erweiterung verarbeiten kann. Das macht es möglich, neue Erweiterungen zu entwickeln, die wichtig für die Sicherheit sind, ohne ein Risiko für alte Software zu schaffen. {{% /def %}}
 

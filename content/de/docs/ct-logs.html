@@ -1,66 +1,148 @@
 ---
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
-lastmod: 2019-11-20
+lastmod: 2023-09-25
 show_lastmod: 1
 ---
+
 
 <p>
   <a href="https://www.certificate-transparency.org/what-is-ct"
     >Certificate Transparency (CT)</a
-  >
-  ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS
-  Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen
-  und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des
-  CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr
-  schnell zu einem kritischen Teil der Infrastruktur geworden.
+> ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr schnell zu einem kritischen Teil der Infrastruktur geworden.
 </p>
 
 <p>
-  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben
-  auch CT Log für uns selber und möchten alle öffentlichen Zertifikatsaussteller
-  ermutigen, dasselbe zu tun.
+  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben auch zwei öffentliche CT Log namens <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
+    >Oak</a
+> und Sapling. Alle öffentlich vertrauenswürdigen Zertifizierungsstellen sind herzlich willkommen, an unsere Log zu senden. Viele Zertifikate der Zertifizierungsstelle wurden bereits in unsere CT-Protokolle aufgenommen. Wenn Sie eine Zertifizierungsstelle betreiben und Ihr Aussteller nicht in unserer Liste der akzeptierten Emittenten ist, schreiben Sie bitte ein Problem <a href="https://github.com/letsencrypt/ct-log-metadata">hier</a> ein.
+</p>
+
+<p>
+  Melden Sie sich für Benachrichtigungen in der <a
+    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
+    >CT-Ankündigungen Kategorie</a
+> unseres Community-Forums an, um wichtige Ankündigungen über unsere CT-Protokolle zu sehen.
 </p>
 
 <h2>Finanzierung</h2>
 
 <p>
-  Wir möchten folgenden Partnern für die grossartige Unterstützung von Let's
-  Encrypt CT Log danken. Wenn Ihre Organisation helfen möchte, diese Arbeit
-  fortzusetzen, bitte besuchen Sie
-  <a href="https://www.abetterinternet.org/sponsor/">Sponsor werden</a>.
-</p>
-
-<p class="text-center">
-  <a href="https://sectigo.com/"
-    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
-  /></a>
+  Wenn Ihre Organisation helfen möchte, diese Arbeit fortzusetzen, bitte besuchen Sie <a href="https://www.abetterinternet.org/sponsor/">Sponsor werden</a>.
 </p>
 
 <h2>Architektur</h2>
 
 <p>
-  Unsere Logs benutzen Google
-  <a href="https://github.com/google/trillian/">Trillian Software</a>, betrieben
-  auf AWS Infrastruktur. Wir benutzen
-  <a href="https://kubernetes.io/">Kubernetes</a> zur Container Orchestrierung
-  und Aufgabenplanung und AWS RDS zur Datenbankverwaltung. Für mehr
-  Informationen lesen Sie
-  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >"How Let's Encrypt Runs CT Logs"</a
-  >.
+  Schauen Sie sich unseren Blog an und sehen Sie <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >Wie Let's Encrypt Runs CT Logs</a
+>!
 </p>
 
 <h2>Log Monitoring</h2>
 
 <p>
-  Let's Encrypt hat ein Open-Source CT log Monitoringtool entwickelt namens
-  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Wir
-  benutzen das Tool, um die Stabilität und Integrität unser eigenen Logs zu
-  überwachen und wir hoffen, dass andere es als nützlich empfinden.
+  Let's Encrypt hat ein Open-Source CT log Monitoringtool entwickelt namens <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Wir benutzen das Tool, um die Stabilität und Integrität unser eigenen Logs zu überwachen und wir hoffen, dass andere es als nützlich empfinden.
 </p>
 
 <h2>CT Logs</h2>
+<p>
+Informationen über den verschiedenen Lebenszyklus finden Sie <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">hier</a>.
+</p>
 
-{{< ct_logs data="production" >}} {{< /ct_logs >}} {{< ct_logs data="testing"
->}} {{< /ct_logs >}}
+{{< ct_logs data="production" >}}
+<li>
+  Oak ist in <a href="https://support.apple.com/en-us/HT209255">Apple</a> und <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md">Google</a> CT Programme integriert.
+</li>
+<li>Unsere Produktion ACME API Umwelt übermittelt Zertifikate hier.</li>
+{{< /ct_logs >}} {{< ct_logs data="testing" >}}
+<li>
+  SCTs aus diesen Protokollen <b>SHOULD NOT</b> werden in öffentlich vertrauenswürdige
+  Zertifikate eingefügt.
+</li>
+<li>
+  Die Let's Encrypt Produktion und <a href="/docs/staging-environment">Staging</a> ACME API Umgebungen beide senden Zertifikate an Sapling, aber die Produktionsumgebung verwendet nicht die resultierenden SCTs.
+</li>
+<li>
+  Wir testen neue Versionen von <a href="http://github.com/google/trillian">Trillian</a> und <a href="https://github.com/google/certificate-transparency-go">Zertifikattransparenz-go</a> bevor wir sie in die Produktion einbringen.
+</li>
+<li>
+  Saplings akzeptierte Root-Liste enthält alle akzeptierten Oak plus zusätzliche Test-Roots.
+</li>
+<li>
+  Sapling kann von anderen Zertifizierungsstellen für Testzwecke verwendet werden.
+</li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  Let's Encrypt testet laufende Logs basierend auf <a href="https://sunlight.dev">Sunlight</a>.
+</li>
+<li>
+  SCTs aus diesen Protokollen <b>SHOULD NOT</b> werden in öffentlich vertrauenswürdige
+  Zertifikate eingefügt.
+</li>
+<li>Twig bleibt als Testprotokoll und akzeptiert die gleichen CAs wie Sapling.
+</li>
+<li>Willow und Sycamore akzeptieren das Gleiche wie Eak und werden voraussichtlich zu Produktionsprotokollen werden.
+</li>
+{{< /ct_logs >}}
+<br />
+<h2>Log-Operationen</h2>
+<p>
+  Um die enthaltenen Wurzeln für ein bestimmtes CT-Log aufzuzählen, können Sie den folgenden Befehl im Terminal Ihrer Wahl ausführen:
+</p>
+<pre>
+$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>
+  Das Senden von Zertifikaten in ein CT-Log wird normalerweise von den Behörden des Zertifikats bearbeitet. Wenn Sie damit experimentieren möchten, holen Sie zunächst ein beliebiges PEM kodiertes Zertifikat von unserer Lieblings-Website. Kopieren und fügen Sie den folgenden Block in Ihr Terminal ein.
+</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>
+  Bevor ein Zertifikat eingereicht werden kann, muss es in einer speziellen Struktur JSON kodiert sein. Du kannst den JSON Generator zur Verfügung gestellt von <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> zur Durchführung dieser Aufgabe benutzen. Das Dienstprogramm crt.sh gibt ein JSON-Paket zurück. Laden Sie das Bundle auf Ihren Computer herunter, benennen Sie die Datei um, falls nötig und führen den folgenden Befehl aus, um die Add-chain-Operation auszuführen (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962 Abschnitt 4.1</a
+>), um das Zertifikat in ein CT-Log einzureichen. Die Ausgabe enthält eine Signatur, die tatsächlich ein <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a> ist. Mehr zur Unterschrift in einem Moment.
+</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
+{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+</pre>
+
+<p>
+  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben auch CT Log für uns selber und möchten alle öffentlichen Zertifikatsaussteller ermutigen, dasselbe zu tun.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+</pre>
+
+<p>
+  Mit Hilfe des Unterschriftsfeldes können wir überprüfen, ob das Zertifikat bei ein Log eingereicht wurde. Mit unserem
+  <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >SCT Führer</a
+>können Sie diesen Wert weiter dekodieren.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
+9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
+5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
+2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
+47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+</pre>

@@ -1,15 +1,19 @@
 ---
 title: Zukünftige Funktionen
 slug: upcoming-features
-lastmod: 2023-06-20
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
-## ECDSA Root and Intermediates
-
-Wir stellen Zertifikate von unserer Produktions-ECDSA intermediate zu [zugelassenen Konten](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679) aus. Es gibt kein geplantes Datum zum Entfernen der Zulassungsliste.
+Für Ankündigungen zukünftiger Änderungen lesen Sie bitte die [API-Ankündigungen](https://community.letsencrypt.org/c/api-announcements/18) Kategorie im Let's Encrypt Community-Forum.
 
 # Implementierte Funktionen
+
+## ECDSA Root and Intermediates
+
+* Aktiviert: 06. Juli 2024
+
+Wir stellen Zertifikate aus unserer Produktion ECDSA Zwischenprodukte zu ECDSA Blattzertifikaten aus. Lesen Sie die [Ketten des Vertrauens](/certificates/) Dokumentation für alle Details über unsere PKI Hierarchie.
 
 ## ACME Erneuerungsinformationen (ARI)
 

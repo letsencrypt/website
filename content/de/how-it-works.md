@@ -2,7 +2,7 @@
 title: Wie es funktioniert
 linkTitle: Wie Let’s Encrypt funktioniert
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ Neben den Herausforderungen bietet die Let's Encrypt-Zertifizierungsstelle auch 
 
 Die Agentensoftware erfüllt eine der gestellten Herausforderungen.   Nehmen wir an, sie ist in der Lage, die zweite Aufgabe oben auszuführen: Sie erstellt eine Datei in einem angegebenen Pfad auf der Website `http://example.com`.  Der Agent signiert die bereitgestellte Nonce außerdem mit seinem privaten Schlüssel.  Nachdem der Agent diese Schritte ausgeführt hat, benachrichtigt er die Zertifizierungsstelle, dass sie zur Validierung bereit ist.
 
-Dann ist es die Aufgabe der Zertifizierungsstelle, zu überprüfen, ob die Aufforderungen erfüllt sind.  Die Zertifizierungsstelle überprüft die Signatur auf der Nonce und versucht, die Datei vom Webserver herunterzuladen und sicherzustellen, dass sie den erwarteten Inhalt hat.
+Dann ist es Aufgabe der CA zu überprüfen, ob die Herausforderungen von [aus mehreren Netzwerkperspektiven](/2020/02/19/multi-perspective-validation) erfüllt wurden.  Die Zertifizierungsstelle überprüft die Signatur auf der Nonce und versucht, die Datei vom Webserver herunterzuladen und sicherzustellen, dass sie den erwarteten Inhalt hat.
 
 <div class="howitworks-figure">
 <img alt="Erfordert Autorisierung um für example.com zu agieren"
@@ -47,7 +47,7 @@ Wenn der Agent über ein autorisiertes Schlüsselpaar verfügt, ist das Anforder
 
 Um ein Zertifikat für die Domain zu erhalten, erstellt der Agent eine PKCS#10-Anforderung [Zertifikatsignierungsanforderung](https://tools.ietf.org/html/rfc2986), in der die Let's&nbsp;Encrypt-Zertifizierungsstelle aufgefordert wird, ein Zertifikat für `example.com` mit einem angegebenen öffentlichen Schlüssel auszustellen.  Wie üblich enthält der CSR eine Signatur des privaten Schlüssels, der dem öffentlichen Schlüssel in dem CSR entspricht.  Der Agent signiert außerdem die gesamte CSR mit dem autorisierten Schlüssel für `example.com`, damit die Let's&nbsp;Encrypt-Zertifizierungsstelle weiß, dass sie autorisiert ist.
 
-Wenn die Let's&nbsp;Encrypt-Zertifizierungsstelle die Anforderung erhält, werden beide Signaturen überprüft.  Wenn alles gut aussieht, wird ein Zertifikat für `example.com` mit dem öffentlichen Schlüssel aus dem CSR ausgestellt und an den Agenten zurückgegeben.
+Wenn die Let's&nbsp;Encrypt-Zertifizierungsstelle die Anforderung erhält, werden beide Signaturen überprüft.  Wenn alles gut aussieht, wird ein Zertifikat für `example.com` mit dem öffentlichen Schlüssel aus dem CSR ausgestellt und an den Agenten zurückgegeben. Darüber hinaus wird die CA das Zertifikat in zahlreiche öffentliche Zertifikattransparenz-Protokolle (CT) einreichen. Siehe [hier](https://certificate.transparency.dev/howctworks/#pki) für weitere Details.
 
 <div class="howitworks-figure">
 <img alt="Anfordern eines Zertifikats für example.com"
