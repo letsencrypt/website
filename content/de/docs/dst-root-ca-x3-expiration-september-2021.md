@@ -1,13 +1,11 @@
 ---
 title: DST Root CA X3 Ablaufdatum (September 2021)
 slug: dst-root-ca-x3-expiration-september-2021
-lastmod: 2021-09-30
-menu:
-  main:
-    weight: 30
-    parent: about
+lastmod: 2024-02-05
 show_lastmod: 1
 ---
+
+> **Update 5. Februar 2024** Es ist zwei Jahre her und das unten erwähnte Android-Kompatibilitätskreuzzeichen steht kurz vor dem Ablauf. Lesen Sie [in unserem letzten Blog schreiben Sie](https://letsencrypt.org/2023/07/10/cross-sign-expiration) für eine detaillierte Erklärung der Änderungen, die im Laufe des Jahres 2024 kommen.
 
 > **Aktualisierung am 30. September 2021** Wie geplant, ist die DST Root CA X3 Cross-Signatur abgelaufen, und wir verwenden jetzt unsere eigene ISRG Root X1 für das Vertrauen auf fast allen Geräten. Lesen Sie weiter, um mehr über den Plan zu erfahren! Wir haben auch unseren Thread zu den Änderungen an der Produktionskette in unserem Community-Forum aktualisiert - [unser Team und unsere Community sind hier und helfen gerne](https://community.letsencrypt.org/t/production-chain-changes/150739/4) bei allen Fragen, die Sie zu diesem Ablauf haben.
 

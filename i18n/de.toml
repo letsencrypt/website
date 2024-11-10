@@ -190,7 +190,10 @@ other = "100-999 Mitarbeitende"
 other = "1000+ Mitarbeitende"
 
 [subscribe_to_newsletter_headline]
-other = "Abonnieren Sie unseren Newsletter"
+other = "Abonnieren Sie E-Mail-Updates zu Let's Encrypt und anderen ISRG-Projekten"
 
 [site_banner_text]
 other = "ISRG feiert sein 10-jähriges Bestehen und trägt zum Aufbau eines besseren Internets bei →"
+
+[footer_copyright]
+other = "Forschungsgruppe für Internet-Sicherheit"

@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
-lastmod: 2022-09-28
+lastmod: 2024-06-26
 menu:
   main:
     weight: 30
@@ -97,9 +97,13 @@ Es ist eine grosse Anzahl von [ACME Clients](/docs/client-options) verfügbar. D
 
 Ja, aber nicht alle Clients unterstützen diese Funktion. [Certbot](https://certbot.eff.org/) tut das.
 
+## Ich habe ein Zertifikat beantragt und jetzt erhält meine Domain eine Menge Traffic! Warum ist das so?
+
+Das ist normal und wird vorausgesehen. Während des [-Zertifikatausstellungsverfahrens](/how-it-works)prüft Encrypt die Kontrolle Ihrer Domäne aus [mehreren Netzwerkperspektiven](/2020/02/19/multi-perspective-validation). Nach erfolgreicher Validierung wird Ihr Zertifikat in zahlreiche [Zertifikattransparenz (CT) Protokolle](/docs/ct-logs) eingereicht. Siehe [hier](https://certificate.transparency.dev/howctworks/#pki) für weitere Details, warum dies notwendig ist. Kurz nachdem das Zertifikat bei CT eingereicht wurde, können automatisierte CT-Crawling-Bots Ihre Domain entdecken, versuchen Sie darauf zuzugreifen und generieren Sie weiteren Traffic in Ihren Webserver-Logs.
+
 ## Welche IP-Adressen benutzt Let's Encrypt zur Validierung meines Webservers?
 
-Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung benutzen, weil diese ändern sich zu jeder Zeit. Beachten Sie, dass wir jetzt [von mehreren IP-Adressen validieren](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+Wir veröffentlichen keine Liste von IP-Adressen, die wir bei der Validierung benutzen, weil diese ändern sich zu jeder Zeit. Beachten Sie, dass wir jetzt [von mehreren IP-Adressen](/2020/02/19/multi-perspective-validation.html) validieren.
 
 ## Ich habe erfolgreich ein Zertifikat erneuert, aber die Validierung ist nicht geschehen - wie ist das möglich?
 
