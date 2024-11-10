@@ -8,15 +8,21 @@ show_lastmod: 1
 
 <p>
   <a href="https://www.certificate-transparency.org/what-is-ct"
-    >Certificate Transparency (CT)</a> ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr schnell zu einem kritischen Teil der Infrastruktur geworden.
+    >Certificate Transparency (CT)</a
+> ist ein System zur Protokollierung und Überwachung der Ausstellung eines TLS Zertfikates. CT ermöglicht es jederman, Zertifikatsausstellungen zu überprüfen und zu überwachen und diese Funktionen haben zu zahlreichen Verbesserungen des CA-Ökosystems und der Websicherheit geführt. Aus diesem Ergebnis ist CT sehr schnell zu einem kritischen Teil der Infrastruktur geworden.
 </p>
 
 <p>
-  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben auch zwei öffentliche CT Log namens <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html">Oak</a> und Sapling. Alle öffentlich vertrauenswürdigen Zertifizierungsstellen sind herzlich willkommen, an unsere Log zu senden. Viele Zertifikate der Zertifizierungsstelle wurden bereits in unsere CT-Protokolle aufgenommen. Wenn Sie eine Zertifizierungsstelle betreiben und Ihr Aussteller nicht in unserer Liste der akzeptierten Emittenten ist, schreiben Sie bitte ein Problem <a href="https://github.com/letsencrypt/ct-log-metadata">hier</a> ein.
+  Let's Encrypt sendet alle ausgestellten Zertifikate zu CT Logs. Wir betreiben auch zwei öffentliche CT Log namens <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
+    >Oak</a
+> und Sapling. Alle öffentlich vertrauenswürdigen Zertifizierungsstellen sind herzlich willkommen, an unsere Log zu senden. Viele Zertifikate der Zertifizierungsstelle wurden bereits in unsere CT-Protokolle aufgenommen. Wenn Sie eine Zertifizierungsstelle betreiben und Ihr Aussteller nicht in unserer Liste der akzeptierten Emittenten ist, schreiben Sie bitte ein Problem <a href="https://github.com/letsencrypt/ct-log-metadata">hier</a> ein.
 </p>
 
 <p>
-  Melden Sie sich für Benachrichtigungen in der <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">CT-Ankündigungen Kategorie</a> unseres Community-Forums an, um wichtige Ankündigungen über unsere CT-Protokolle zu sehen.
+  Melden Sie sich für Benachrichtigungen in der <a
+    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
+    >CT-Ankündigungen Kategorie</a
+> unseres Community-Forums an, um wichtige Ankündigungen über unsere CT-Protokolle zu sehen.
 </p>
 
 <h2>Finanzierung</h2>
@@ -28,7 +34,9 @@ show_lastmod: 1
 <h2>Architektur</h2>
 
 <p>
-  Schauen Sie sich unseren Blog an und sehen Sie <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html">Wie Let's Encrypt Runs CT Logs</a>!
+  Schauen Sie sich unseren Blog an und sehen Sie <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
+    >Wie Let's Encrypt Runs CT Logs</a
+>!
 </p>
 
 <h2>Log Monitoring</h2>
@@ -56,7 +64,7 @@ Informationen über den verschiedenen Lebenszyklus finden Sie <a href="https://g
   Die Let's Encrypt Produktion und <a href="/docs/staging-environment">Staging</a> ACME API Umgebungen beide senden Zertifikate an Sapling, aber die Produktionsumgebung verwendet nicht die resultierenden SCTs.
 </li>
 <li>
-  Wir testen neue Versionen von <a ref="http://github.com/google/trillian">Trillian</a> und <a href="https://github.com/google/certificate-transparency-go">Zertifikattransparenz-go</a> bevor wir sie in die Produktion einbringen.
+  Wir testen neue Versionen von <a href="http://github.com/google/trillian">Trillian</a> und <a href="https://github.com/google/certificate-transparency-go">Zertifikattransparenz-go</a> bevor wir sie in die Produktion einbringen.
 </li>
 <li>
   Saplings akzeptierte Root-Liste enthält alle akzeptierten Oak plus zusätzliche Test-Roots.
@@ -101,7 +109,10 @@ sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
 <p>
-  Bevor ein Zertifikat eingereicht werden kann, muss es in einer speziellen Struktur JSON kodiert sein. Du kannst den JSON Generator zur Verfügung gestellt von <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> zur Durchführung dieser Aufgabe benutzen. Das Dienstprogramm crt.sh gibt ein JSON-Paket zurück. Laden Sie das Bundle auf Ihren Computer herunter, benennen Sie die Datei um, falls nötig und führen den folgenden Befehl aus, um die Add-chain-Operation auszuführen (<a href="https://tools.ietf.org/html/rfc6962#section-4.1">RFC 6962 Abschnitt 4.</a>), um das Zertifikat in ein CT-Log einzureichen. Die Ausgabe enthält eine Signatur, die tatsächlich ein <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a> ist. Mehr zur Unterschrift in einem Moment.
+  Bevor ein Zertifikat eingereicht werden kann, muss es in einer speziellen Struktur JSON kodiert sein. Du kannst den JSON Generator zur Verfügung gestellt von <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> zur Durchführung dieser Aufgabe benutzen. Das Dienstprogramm crt.sh gibt ein JSON-Paket zurück. Laden Sie das Bundle auf Ihren Computer herunter, benennen Sie die Datei um, falls nötig und führen den folgenden Befehl aus, um die Add-chain-Operation auszuführen (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962 Abschnitt 4.1</a
+>), um das Zertifikat in ein CT-Log einzureichen. Die Ausgabe enthält eine Signatur, die tatsächlich ein <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a> ist. Mehr zur Unterschrift in einem Moment.
 </p>
 <pre>
 $ curl \
