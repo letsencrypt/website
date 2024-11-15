@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-07-02",
+	"lastmod": "2024-11-12",
 	"categories": [
 		"Bash",
 		"C",
@@ -298,6 +298,26 @@
 			"name": "Nginx ACME",
 			"url": "https://github.com/kshcherban/acme-nginx",
 			"category": "nginx"
+		},
+	        {
+			"name": "docker-openresty",
+			"url": "https://github.com/xiaojun207/docker-openresty⁠",
+			"category": "nginx",
+			"comments": "An Openresty image with auto ssl, using acme.sh",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "docker-nginx",
+			"url": "https://github.com/xiaojun207/docker-nginx",
+			"category": "nginx",
+			"comments": "An Nginx image with auto ssl, using acme.sh",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
 		},
 		{
 			"name": "Greenlock for Express.js",
