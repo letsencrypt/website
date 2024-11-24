@@ -872,6 +872,6 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "(Easy to configure SSL Web Server for development or production)"
-		},
+		}
 	]
 }
