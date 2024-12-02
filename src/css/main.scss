@@ -100,8 +100,14 @@ div[data-netlify-site-id] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0;
   z-index: 1000;
+  font-size: 16px;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+  }
 
   &:hover {
     text-decoration: none;
