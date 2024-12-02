@@ -161,3 +161,5 @@ document.querySelectorAll("code.language-der").forEach(r => {
 });
 
 })(this, this.document);
+
+window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' }
