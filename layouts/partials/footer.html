@@ -87,10 +87,3 @@
 
 {{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-
-<div style="height: 44px;"></div>
-<a class="custom-dbox-popup" href="https://donorbox.org/support-lets-encrypt" style="">
-  It's Giving Tuesday! Donate Now.
-</a>
-
-<script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js" id="donorbox-popup-button-installer"> </script>
