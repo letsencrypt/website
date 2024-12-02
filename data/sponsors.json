@@ -152,12 +152,7 @@
       "url": "https://www.duocircle.com/",
       "image": "duocircle-logo.png"
     },
-    { "name": "Brave", "url": "https://brave.com/", "image": "brave-logo.png" },
-    {
-      "name": "ServerPilot",
-      "url": "https://serverpilot.io/",
-      "image": "serverpilot-logo.png"
-    },
+    { "name": "ServerPilot", "url": "https://serverpilot.io/", "image": "serverpilot-logo.png" },
     {
       "name": "DomainName.Shop",
       "url": "https://domainname.shop/",
@@ -289,11 +284,6 @@
       "image": "iban-logo.png"
     },
     {
-      "name": "Yubico",
-      "url": "https://yubico.com/",
-      "image": "yubico-logo.png"
-    },
-    {
       "name": "Video Downloader",
       "url": "https://www.4kdownload.com/-1uvr6/video-downloader",
       "image": "4kdownload-logo.png"
@@ -317,7 +307,7 @@
     {
       "name": "SecureW2",
       "url": "https://www.securew2.com/",
-      "image": "securew2-logo.svg"
+      "image": "securew2-logo.png"
     },
     { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
     {
@@ -327,6 +317,7 @@
     },
     { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
-    { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" }
+    { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
+    { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" }
   ]
 }
