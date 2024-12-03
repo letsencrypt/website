@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "为 <span>4.5 亿</span>网站提供 TLS 证书的非营利证书颁发机构"
+other = "为 <a href='/stats/'>5 亿</a>网站提供 TLS 证书的非营利证书颁发机构"
 
 [home_hero_getting_started]
 other = "快速入门"
