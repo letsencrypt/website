@@ -313,6 +313,16 @@
     { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
-    { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" }
+    { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
+    {
+      "name": "CDN77",
+      "url": "https://www.cdn77.com/",
+      "image": "cdn77-logo.png"
+    },
+    {
+      "name": "Snipe-IT",
+      "url": "https://snipeitapp.com/",
+      "image": "snipeit-logo.png"
+    }
   ]
 }
