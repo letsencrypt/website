@@ -10,9 +10,12 @@ slug: Ending-OCSP
 
 Earlier this year we [announced](https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls/) our intent to provide certificate revocation information exclusively via [Certificate Revocation Lists (CRLs)](https://letsencrypt.org/2022/09/07/new-life-for-crls), ending support for providing certificate revocation information via the [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol). Today we are providing a timeline for ending OCSP services:
 
+- January 30, 2025
+  - OCSP Must-Staple requests will fail, unless the requesting account has previously issued a certificate containing the OCSP Must Staple extension
 - May 7, 2025
   - Prior to this date we will have added CRL URLs to certificates
   - On this date we will drop OCSP URLs from certificates
+  - On this date all requests including the OCSP Must Staple extension will fail
 - August 6, 2025
   - On this date we will turn off our OCSP responders
 
