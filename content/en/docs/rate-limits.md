@@ -2,7 +2,7 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-10-22
+lastmod: 2024-12-05
 show_lastmod: true
 ---
 
@@ -176,6 +176,60 @@ hour. The ability to incur authorization failures refills at a rate of 1 per
 hostname every 12 minutes. Once exceeded, this limit is enforced by preventing
 any new orders for the same hostname, by the same account until the limit
 resets.
+
+### Common Causes
+
+Before you begin troubleshooting, we recommend you set your client to use our
+[staging environment](/docs/staging-environment). This environment has
+[significantly higher](/docs/staging-environment/#rate-limits) limits, which can
+help you identify and resolve issues without consuming your production limits.
+
+- Validation failures when using the `HTTP-01` and `TLS-ALPN-01` methods usually
+  stem from network or firewall configurations that prevent Let's Encrypt
+  validation servers from reaching your server.
+
+- Validation failures when using the `DNS-01` method often result from missed
+  steps or typos during the initial setup process. Typically, this validation
+  method requires you to create a CNAME record in your main DNS zone, enabling
+  your client to set the necessary DNS records during the validation process.
+
+### Overrides
+
+We do **not** offer overrides for this limit.
+
+</div>
+<div class="boxed">
+
+## Consecutive Authorization Failures per Hostname per Account
+
+Similar to [Authorization Failures per Hostname per
+Account](#authorization-failures-per-hostname-per-account) but only applies to
+consecutive failures. This limit is designed to prevent clients from getting
+stuck forever in a loop of failed validations.
+
+### Limit
+
+Up to 3,600 consecutive authorization failures per hostname can be incurred by
+one account. The ability to incur authorization failures refills at a rate of 1
+per hostname every day and resets to zero if an authorization for that hostname
+is successfully validated. Once exceeded, the account is prevented from
+requesting new certificates for that hostname. Each time the subscriber attempts
+to request a certificate they will receive an error containing a link to our
+Self-Service Portal where they can unpause issuance for the paused hostname and
+up to 50,000 additional paused hostnames associated with their account.
+
+| Failures per Day             | Time to Pause           |
+|------------------------------|-------------------------|
+| 1                            | ∞ (never paused)        |
+| 2                            | 3,600 days (9.86 years) |
+| 5                            | 900 days (2.46 years)   |
+| 10                           | 400 days (1.10 years)   |
+| 15                           | 257 days (8.45 months)  |
+| 20                           | 189 days (6.22 months)  |
+| 30                           | 124 days (4.08 months)  |
+| 40                           | 92 days (3.03 months)   |
+| 120                          | 30 days                 |
+<p></p>
 
 ### Common Causes
 
