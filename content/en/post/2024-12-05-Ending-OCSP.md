@@ -15,6 +15,7 @@ Earlier this year we [announced](https://letsencrypt.org/2024/07/23/replacing-oc
 - May 7, 2025
   - Prior to this date we will have added CRL URLs to certificates
   - On this date we will drop OCSP URLs from certificates
+  - All requests including the OCSP Must Staple extension will fail
 - August 6, 2025
   - On this date we will turn off our OCSP responders
 
