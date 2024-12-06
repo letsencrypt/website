@@ -1,15 +1,15 @@
-title = "Let's Encrypt - Certificats SSL/TLS gratuits"
-languageName = "Français"
+title = "Let's Encrypt"
 contentDir = "content/fr"
+languageName = "Français"
 languageCode = "fr-FR"
 weight = 300
+
 [params]
-beforeColon = "&nbsp;"
+beforeColon = ""
 description = """
-  Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte
-  mise à votre disposition par la société d'utilité publique <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte, proposée par le <a href="https://www.abetterinternet.org/">Groupe de Recherche sur la Sécurité Internet (ISRG)</a>, une organisation à but non lucratif. Pour en savoir plus sur notre travail à but non lucratif cette année, consultez notre <a href="https://www.abetterinternet.org/annual-reports/">rapport annuel 2023</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "FR"
 numberFormat = "-|,| "
-viewInThatLanguage = "Voir en Français"
+viewInThatLanguage = "Voir en français"
