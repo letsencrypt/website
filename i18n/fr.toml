@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Une autorité de certification à but non lucratif fournissant des certificats TLS à <a href='/stats/'>500 millions</a> de sites Web."
+other = "Autorité de certification à but non lucratif fournissant des certificats TLS à <a href='/stats/'>500 millions</a> de sites web."
 
 [home_hero_getting_started]
 other = "Commencer"
@@ -191,7 +191,10 @@ other = "100-999 employés"
 other = "1000+ employés"
 
 [subscribe_to_newsletter_headline]
-other = "Abonnez-vous à notre newsletter"
+other = "S'abonner pour recevoir des mises à jour par courriel sur Let's Encrypt et d'autres projets de l'ISRG"
 
 [site_banner_text]
-other = "Le GIS fête ses 10 ans d'aide à la construction d'un Internet plus performant →"
+other = "L'ISRG fête ses 10 ans de contribution à la construction d'un internet plus éclairé →"
+
+[footer_copyright]
+other = "Groupe de Recherche sur la Sécurité d'Internet"

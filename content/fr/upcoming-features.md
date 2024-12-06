@@ -1,15 +1,19 @@
 ---
 title: Fonctionnalités à venir
 slug: upcoming-features
-lastmod: 2023-06-20
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
-## Certificats Racine et Intermédiaires ECDSA
-
-Nous délivrons des certificats depuis notre ECDSA intermédiaire de protection aux [comptes autorisés](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). Il n’y a pas de date planifiée pour supprimer la liste d’autorisation.
+Pour les annonces de prochains développements, veuillez consulter la catégorie [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) (Annonces API) sur le forum communautaire de Let's Encrypt.
 
 # Fonctionnalités achevées
+
+## Certificats Racine et Intermédiaires ECDSA
+
+* Activé : 06 juin 2024
+
+Nous émettons des certificats à partir de nos intermédiaires ECDSA de production vers des certificats ECDSA leaf. Voir la documentation sur les [chaînes de confiance](/certificates/) pour plus de détails sur notre hiérarchie PKI.
 
 ## Informations de renouvellement de l'ACME (ARI)
 

@@ -1,7 +1,7 @@
 ---
 title: Журнал прозорості сертифіката (CT)
 slug: ct-logs
-lastmod: 2022-06-17
+lastmod: 2023-09-25
 show_lastmod: 1
 ---
 
@@ -29,13 +29,7 @@ show_lastmod: 1
 <h2>Фінансування</h2>
 
 <p>
-  Ми хотіли б подякувати наступним партнерам за щедру спонсорську підтримку журналу Let's   Encrypt CT log. Якщо ваша організація бажає допомогти нам продовжувати цю роботу, ви можете розглянути такі варіанти, як <a href="https://www.abetterinternet.org/sponsor/">спонсорство або пожертвування</a>.
-</p>
-
-<p class="text-center">
-  <a href="https://sectigo.com/"
-    ><img src="/images/sectigo_logo_color.svg" width="240" alt="Sectigo"
-  /></a>
+  Якщо ваша організація бажає допомогти нам продовжувати цю роботу, ви можете розглянути такі варіанти, як <a href="https://www.abetterinternet.org/sponsor/">спонсорство або пожертвування</a>.
 </p>
 
 <h2>Архітектура</h2>
@@ -54,7 +48,7 @@ show_lastmod: 1
 
 <h2>Журнали CT</h2>
 <p>
-Інформацію про різні стани життєвого циклу, через які проходить журнал CТ, можна знайти <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">тут</a>.
+Інформацію про різні стани життєвого циклу, через які проходить журнал КТ, можна знайти <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">тут</a>.
 </p>
 
 {{< ct_logs data="production" >}}
@@ -81,6 +75,17 @@ show_lastmod: 1
 </li>
 <li>
   Sapling може бути використаний іншими центрами сертифікації для тестування.
+</li>
+{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
+<li>
+  Let's Encrypt тестує журнали роботи на основі <a href="https://sunlight.dev">Sunlight</a>.
+</li>
+<li>
+  SCT з цих журналів <b>НЕ ПОВИННІ</b> бути включені до загальнодоступних довірених сертифікатів.
+</li>
+<li>Twig залишиться тестовим журналом і прийматиме ті ж самі CA, що і Sapling.
+</li>
+<li>Willow та Sycamore сприймаються так само, як і Oak, і, як очікується, стануть виробничими журналами.
 </li>
 {{< /ct_logs >}}
 <br />
