@@ -2,18 +2,18 @@
 title: Environnement de pré-production
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2022-06-13
+lastmod: 2024-06-11
 show_lastmod: 1
 ---
 
 
-Nous recommandons vivement de procéder à des tests dans notre environnement de pré-production avant d'utiliser notre environnement de production. Cela vous permettra de faire les choses correctement avant d'émettre des certificats de confiance et de réduire le risque de vous heurter à des limites de taux.
+Nous recommandons vivement de procéder à des tests dans notre environnement de pré-production avant d'utiliser notre environnement de production. Cela vous permettra de faire les choses correctement avant d'émettre des certificats de confiance et de réduire le risque de vous heurter à des limites d'utilisation.
 
-L'URL d'ACME pour notre [environnement de pré-production d'ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) est :
+L'URL d'ACME pour notre [environnement de préproduction d'ACME v2](https://community.letsencrypt.org/t/staging-endpoint-for-acme-v2/49605) est :
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Si vous utilisez Certbot, vous pouvez utiliser notre environnement de préproduction avec le flag `--test-cert`. Pour les autres clients d'ACME, veuillez lire leurs instructions pour obtenir des informations sur les tests avec notre environnement pré-production. Veuillez noter que l'environnement de pré-production v2 nécessite un client ACME compatible v2.
+Si vous utilisez Certbot, vous pouvez utiliser notre environnement de pré-production avec l'option `--test-cert` ou `--dry-run`. Pour les autres clients d'ACME, veuillez lire leurs instructions pour obtenir des informations sur les tests avec notre environnement de pré-production.
 
 # Limites d'utilisation
 
@@ -27,17 +27,40 @@ L'environnement de pré-production utilise les mêmes limites d'utilisation que 
 
 # Hiérarchie des certificats de préproduction
 
-L'environnement de préproduction possède une hiérarchie de certificats qui [imite la production](/certificates).
+L'environnement de préproduction possède une hiérarchie de certificats qui [imite la production](/certificates). Les noms ont été modifiés par l'ajout du préfixe (STAGING) et d'un nom unique afin de les distinguer clairement de leurs homologues de production.
 
-## Certificats intermédiaires
+## AC racine
 
-L'environnement de préproduction a deux certificats intermédiaires actifs : un intermédiaire RSA ["(STAGING) Artificial Apricot R3"](/certs/staging/letsencrypt-stg-int-r3.pem) et un intermédiaire ECDSA ["(STAGING) Ersatz Edamame E1"](/certs/staging/letsencrypt-stg-int-e1.pem).
+L'environnement de préproduction comporte deux certificats racine actifs qui sont **absents** des magasins de confiance des navigateurs/clients : « (STAGING) Pretend Pear X1 » et “(STAGING) Bogus Broccoli X2”.
 
-L'émission ECDSA a été [activée dans Staging](https://community.letsencrypt.org/t/ecdsa-issuance-available-in-staging-march-24/147839) le 24 mars 2021 et toutes les demandes de certificats Staging avec des clés ECDSA sont signées par "(STAGING) Ersatz Edamame E1" et utilisent la hiérarchie ECDSA. De même, toutes les demandes de certificats de préproduction avec des clés RSA sont signées par "(STAGING) Artificial Apricot R3" et utilisent la hiérarchie RSA. Il n'y a aucun moyen d'obtenir un certificat signé par RSA pour une clé ECDSA, ni vice versa ; le seul moyen de contrôler l'émetteur est de contrôler le type de clé que vous générez localement.
+Si vous souhaitez modifier un client test uniquement pour qu'il fasse confiance à l'environnement de préproduction à des fins de test, vous pouvez le faire en ajoutant ses certificats magasin de confiance de l'environnement de test. **Note importante:** N'ajoutez pas la racine ou l'intermédiaire de préproduction à un magasin de confiance que vous utilisez pour la navigation ordinaire ou d'autres activités, car ils ne sont pas audités ou soumis aux mêmes normes que nos racines de production, et ne sont donc pas sûrs à utiliser pour autre chose que des tests.
 
-## Certificats racine
+* **Pretend Pear X1**
+  * Objet : `O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
+  * Type de clé : `RSA 4096`
+  * Détails du certificat : [der](/certs/staging/letsencrypt-stg-root-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+* **Bogus Broccoli X2**
+  * Objet : `O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
+  * Type de clé : `ECDSA P-384`
+  * Détails du certificat (auto-signé) : [der](/certs/staging/letsencrypt-stg-root-x2.der), [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
+  * Détails du certificat (signé par Pretend Pear X1) : [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
 
-L'environnement de préproduction a deux certificats racine actifs qui sont **non présents** dans les magasins de confiance des navigateurs/clients : "(STAGING) Pretend Pear X1" et "(STAGING) Bogus Brocoli X2". Si vous souhaitez modifier un client de test uniquement pour qu'il fasse confiance à l'environnement de préproduction à des fins de test, vous pouvez le faire en ajoutant le certificat ["(STAGING) Pretend Pear X1"](/certs/staging/letsencrypt-stg-root-x1.pem) et/ou ["(STAGING) Bogus Broccoli X2"](/certs/staging/letsencrypt-stg-root-x2.pem) à votre magasin de certificats. Vous pouvez trouver tous nos certificats de préproduction [ici](https://github.com/letsencrypt/website/tree/master/static/certs/staging).  Important : N'ajoutez pas le certificat racine ou intermédiaire de pré-production à un magasin de confiance que vous utilisez pour la navigation ordinaire ou d'autres activités, car ils ne sont pas audités ou tenus aux mêmes normes que nos certificats racines de production, et ne sont donc pas sûrs à utiliser pour autre chose que des tests.
+## AC subalternes (intermédiaires)
+
+L'environnement de préproduction dispose de certificats intermédiaires qui imitent la production, émis à partir des racines non fiables décrites ci-dessus. Comme dans le cas de la production, tous ne sont pas utilisés à tout moment. La liste complète des intermédiaires actuels est la suivante :
+
+* (STAGING) Pseudo Plum E5
+* (STAGING) False Fennel E6
+* (STAGING) Puzzling Parsnip E7
+* (STAGING) Mysterious Mulberry E8
+* (STAGING) Fake Fig E9
+* (STAGING) Counterfeit Cashew R10
+* (STAGING) Wannabe Watercress R11
+* (STAGING) Riddling Rhubarb R12
+* (STAGING) Tenuous Tomato R13
+* (STAGING) Not Nectarine R14
+
+Ces intermédiaires sont susceptibles d'être modifiés à tout moment et ne doivent pas faire l'objet d'une quelconque confiance de la part d'un système. En général, on peut s'attendre à ce que les intermédiaires de préproduction soient comparables aux intermédiaires de production (de confiance) correspondants. Si cela est strictement nécessaire, vous pouvez obtenir tous les détails du certificat [ici](https://github.com/letsencrypt/website/blob/main/static/certs/staging).
 
 # Transparence des Certificats
 

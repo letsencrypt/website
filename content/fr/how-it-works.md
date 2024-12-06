@@ -2,7 +2,7 @@
 title: Comment ça marche
 linkTitle: Comment fonctionne Let's Encrypt
 slug: how-it-works
-lastmod: 2019-10-18
+lastmod: 2024-06-26
 show_lastmod: 1
 ---
 
@@ -31,7 +31,7 @@ En plus des challenges, l'AC "Let's Encrypt" fournit également un nonce que l'a
 
 Le logiciel d'agent complète l'un des challenges fournis.   Supposons qu'il soit capable d'accomplir la deuxième tâche ci-dessus : il crée un fichier sur un chemin spécifié sur le site `http://example.com`.  L'agent signe également le nonce fourni avec sa clé privée.  Une fois que l'agent a terminé ces étapes, il notifie à l'AC qu'il est prêt à terminer la validation.
 
-Ensuite, c'est le travail de l'AC de vérifier que les challenges ont été satisfaits.  L'AC vérifie la signature sur le nonce, et elle tente de télécharger le fichier du serveur web et de s'assurer qu'il a le contenu attendu.
+Il incombe ensuite à l'AC de vérifier que les challenges ont été relevés du point de vue de [multiples réseaux](/2020/02/19/multi-perspective-validation).  L'AC vérifie la signature sur le nonce, et elle tente de télécharger le fichier du serveur web et de s'assurer qu'il a le contenu attendu.
 
 <div class="howitworks-figure">
 <img alt="Demander l'autorisation pour example.com"
@@ -47,7 +47,7 @@ Une fois que l'agent dispose d'une paire de clés autorisée, la demande, le ren
 
 Pour obtenir un certificat pour le domaine, l'agent fait une [demande de signature de certificat (CSR) au format PKCS#10 ](https://tools.ietf.org/html/rfc2986) qui demande à l'AC Let's&nbsp;Encrypt de délivrer un certificat pour `exemple.com` avec une clé publique spécifique.  Comme d'habitude, la demande de signature de certificat (CSR) comprend une signature par la clé privée correspondant à la clé publique dans la CSR.  L'agent signe également l'ensemble de la demande de signature de certificat (CSR) avec la clé autorisée pour `exemple.com` afin que l'AC Let's&nbsp;Encrypt sache qu'il est autorisé.
 
-Lorsque l'AC "Let's&nbsp;Encrypt" reçoit la demande, elle vérifie les deux signatures.  Si tout semble bon, il délivre un certificat pour `exemple.com` avec la clé publique du CSR et le renvoie à l'agent.
+Lorsque l'AC "Let's&nbsp;Encrypt" reçoit la demande, elle vérifie les deux signatures.  Si tout semble bon, il délivre un certificat pour `exemple.com` avec la clé publique du CSR et le renvoie à l'agent. L'AC soumettra également le certificat à de nombreux journaux publics de transparence des certificats (CT). Voir [ici](https://certificate.transparency.dev/howctworks/#pki) pour plus de détails.
 
 <div class="howitworks-figure">
 <img alt="Demander un certificat par exemple.com"

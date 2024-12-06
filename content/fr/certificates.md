@@ -1,103 +1,219 @@
 ---
-title: La chaîne de confiance
-linkTitle: Chaîne de confiance (certificats racine et intermédiaire)
+title: Chaînes de confiance
+linkTitle: Chaînes de confiance (Certificats Racines et Intermédiaires)
 slug: certificates
-lastmod: 2021-10-02
+lastmod: 2024-06-11
 show_lastmod: 1
 ---
 
+Cette page décrit toutes les autorités de certification actuelles et historiques gérées par Let's Encrypt. Notez qu'une AC est plus correctement considérée comme une clé et un nom : une AC donnée peut être représentée par _plusieurs_ certificats qui contiennent tous les mêmes informations sur le sujet et la clé publique. Dans ce cas, nous avons fourni les détails de tous les certificats qui représentent l'AC.
 
-[![ISRG Certificate Hierarchy Diagram, as of December 2020](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![Diagramme de la hiérarchie des certificats de l'ISRG, à partir de juin 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
-# Certificats racine
+# AC racine
 
-Nos certificats racine sont maintenus hors ligne en toute sécurité. Nous délivrons des certificats d'entité finale aux souscripteurs des certificats intermédiaires dans la section suivante. Pour une compatibilité supplémentaire lorsque nous soumettons notre nouveau Root X2 à divers programmes racine, nous l'avons également signé de manière croisée à partir de Root X1.
+Notre clé racine est conservé en toute sécurité hors ligne. Nous délivrons des certificats d'entité finale aux abonnés des intermédiaires décrits dans la section suivante. Tous les objets des certificats racine ont un champ Pays de `C = US`.
 
-* Actif
-  * ISRG Root X1 (`RSA 4096, O = Internet Security Research Group, CN = ISRG Root X1`)
-    * [Auto-signé](https://crt.sh/?id=9314791): [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
-    * [Signé par DST Racine CA X3](https://crt.sh/?id=3958242236): [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt)
-* Disponibilité active et limitée
-  * ISRG Root X2 (`ECDSA P-384, O = Internet Security Research Group, CN = ISRG Root X2`)
-    * [Auto-signé](https://crt.sh/?id=3335562555): [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-    * [Signé par DST Racine CA X3](https://crt.sh/?id=3334561878): [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
+Notez que les AC racines n'ont pas de date d'expiration comme les autres certificats. Bien que leurs certificats auto-signés contiennent une date `notAfter`, les programmes racines et les magasins de confiance peuvent décider de faire confiance à une autorité de certification racine au-delà de cette date ou de mettre fin à la confiance qu'ils lui accordent avant cette date. Les dates de fin de validité indiquées ci-dessous sont donc approximatives et se fondent sur les politiques actuelles du programme Root.
 
-Nous avons mis en place des sites web pour tester les certificats qui enchaînent vers nos racines actives.
+* **Racine ISRG X1**
+  * Objet : `O = Internet Security Research Group, CN = ISRG Root X1`
+  * Type de clé : `RSA 4096`
+  * Validité : jusqu'en 2030-06-04 (généré en 2015-06-04)
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=7394), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=7394)
+  * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
+  * Détails du certificat (signé par l'AC racine DST X3) : [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retiré)
+  * Test de sites web : [valide](https://valid-isrgrootx1.letsencrypt.org/), [révoqué](https://revoked-isrgrootx1.letsencrypt.org/), [expiré](https://expired-isrgrootx1.letsencrypt.org/)
+* **Racine ISRG X2**
+  * Objet : `O = Internet Security Research Group, CN = ISRG Root X2`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2035-09-04 (généré le 2020-09-04)
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183269), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183269)
+  * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
+  * Test de sites web : [valide](https://valid-isrgrootx2.letsencrypt.org/), [révoqué](https://revoked-isrgrootx2.letsencrypt.org/), [expiré](https://expired-isrgrootx2.letsencrypt.org/)
 
-* Racine ISRG X1
-  * [Valide](https://valid-isrgrootx1.letsencrypt.org/)
-  * [Révoqué](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [Expiré](https://expired-isrgrootx1.letsencrypt.org/)
-* Racine ISRG X2
-  * [Valide](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Révoqué](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Expiré](https://expired-isrgrootx2.letsencrypt.org/)
+Pour de plus amples informations sur la compatibilité de nos certificats racine avec divers appareils et magasins de confiance, voir [Compatibilité des certificats](/docs/cert-compat).
 
-# Certificats intermédiaires
+# AC subordonnées (intermédiaires)
 
-Dans des circonstances normales, les certificats émis par Let's Encrypt proviendront de "R3", un intermédiaire RSA. À l'heure actuelle, l'émission depuis "E1", un intermédiaire ECDSA, est possible uniquement pour les clés d'abonnés ECDSA pour les [comptes autorisés](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679). À l'avenir, l'émission depuis "E1" sera disponible pour tout le monde.
+Nous avons actuellement quatre intermédiaires en circulation active. Les certificats d'abonné contenant une clé publique ECDSA seront délivrés par l'un des intermédiaires ECDSA ; de même, les certificats d'abonné contenant une clé publique RSA seront délivrés par l'un des intermédiaires RSA.
 
-Nos autres intermédiaires ("R4" et "E2") sont réservés à la reprise en cas de catastrophe et ne seront utilisés que si nous perdons notre capacité à émettre des problèmes avec nos principaux intermédiaires. Nous n'utilisons plus les intermédiaires X1, X2, X3 et X4.
+Tous les objets de certificats intermédiaires ont un champ Pays (Country) de `C = US`.
 
-IdenTrust a signé la signature croisée de nos intermédiaires RSA pour une compatibilité supplémentaire.
+* **Let's Encrypt E5**
+  * Objet : `O = Let's Encrypt, CN = E5`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295810), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295810)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * Objet : `O = Let's Encrypt, CN = E6`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295819), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295819)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
+* **Let's Encrypt R10**
+  * Objet : `O = Let's Encrypt, CN = R10`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295814), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295814)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * Objet : `O = Let's Encrypt, CN = R11`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295815), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295815)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 
-* Actif
-  * Let's Encrypt R3 (`RSA 2048, O = Let's Encrypt, CN = R3`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=3334561879) : [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=3479778542) : [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt) (retiré)
-* Disponibilité active et limitée
-  * Let's Encrypt E1 (`ECDSA P-384, O = Let's Encrypt, CN = E1`)
-    * [Signé par ISRG Root X2](https://crt.sh/?id=3334671964) : [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
-* Sauvegarde
-  * Let's Encrypt R4 (`RSA 2048, O = Let's Encrypt, CN = R4`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=3334561877) : [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=3479778543) : [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt) (retiré)
-  * Let's Encrypt E2 (`ECDSA P-384, O = Let's Encrypt, CN = E2`)
-    * [Signé par ISRG Root X2](https://crt.sh/?id=3334671963) : [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
-* Retiré
-  * Let's Encrypt Authority X1 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X1`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=9314792) : [der](/certs/letsencryptauthorityx1.der), [pem](/certs/letsencryptauthorityx1.pem), [txt](/certs/letsencryptauthorityx1.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=10235198) : [der](/certs/lets-encrypt-x1-cross-signed.der), [pem](/certs/lets-encrypt-x1-cross-signed.pem), [txt](/certs/lets-encrypt-x1-cross-signed.txt)
-  * Let's Encrypt Authority X2 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X2`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=12721505) : [der](/certs/letsencryptauthorityx2.der), [pem](/certs/letsencryptauthorityx2.pem), [txt](/certs/letsencryptauthorityx2.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=10970235) : [der](/certs/lets-encrypt-x2-cross-signed.der), [pem](/certs/lets-encrypt-x2-cross-signed.pem), [txt](/certs/lets-encrypt-x2-cross-signed.txt)
-  * Let's Encrypt Authority X3 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X3`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=47997543) : [der](/certs/letsencryptauthorityx3.der), [pem](/certs/letsencryptauthorityx3.pem), [txt](/certs/letsencryptauthorityx3.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=15706126) : [der](/certs/lets-encrypt-x3-cross-signed.der), [pem](/certs/lets-encrypt-x3-cross-signed.pem), [txt](/certs/lets-encrypt-x3-cross-signed.txt)
-  * Let's Encrypt Authority X4 (`RSA 2048, O = Let's Encrypt, CN = Let's Encrypt Authority X4`)
-    * [Signé par ISRG Root X1](https://crt.sh/?id=47997546) : [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
-    * [Contre-signé par IdenTrust](https://crt.sh/?id=15710291) : [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
+Cliquez ci-dessous pour plus de détails sur les intermédiaires supplémentaires qui ne font pas partie de la hiérarchie des émissions actives :
 
-# Signature croisée
+<details>
+<summary>Sauvegarde</summary>
 
-## Intermédiaire
+Ces autorités de certification intermédiaires disposent de certificats en cours de validité, mais ne sont pas émises par elles. Nous pouvons commencer à émettre des certificats d'abonné à partir de ces derniers à tout moment, sans avertissement.
 
-Chacun de nos intermédiaires représente une seule paire de clés publique/privée. La clé privée de cette paire génère la signature de tous les certificats d'entité finale (également appelés certificats leaf), c'est-à-dire les certificats que nous émettons pour utilisation sur votre serveur.
+* **Let's Encrypt E7**
+  * Objet : `O = Let's Encrypt, CN = E7`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295813), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295813)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
+* **Let's Encrypt E8**
+  * Objet : `O = Let's Encrypt, CN = E8`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295809), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295809)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
+* **Let's Encrypt E9**
+  * Objet : `O = Let's Encrypt, CN = E9`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295812), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295812)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
+* **Let's Encrypt R12**
+  * Objet : `O = Let's Encrypt, CN = R12`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295816), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295816)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
+* **Let's Encrypt R13**
+  * Objet : `O = Let's Encrypt, CN = R13`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295817), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295817)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+* **Let's Encrypt R14**
+  * Objet : `O = Let's Encrypt, CN = R14`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2027-03-12
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=295818), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=295818)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
 
-Nos intermédiaires RSA sont signés par ISRG Root X1. ISRG Root X1 est largement fiable à ce point, mais nos intermédiaires RSA sont encore croisés signés par IdenTrust[DST Root CA X3](https://crt.sh/?id=8395)" (maintenant appelé "TrustID X3 Root") pour une compatibilité client supplémentaire. L'IdenTrust root existe depuis plus longtemps et a donc une meilleure compatibilité avec les appareils plus anciens et les systèmes d'exploitation (par exemple Windows XP, Android 7). Vous pouvez [télécharger "TrustID X3 Root" depuis IdenTrust](https://www.identrust.com/support/downloads) (ou, alternativement, vous pouvez [télécharger une copie de notre site](/certs/trustid-x3-root.pem.txt)).
+</details>
 
-Avoir des signatures croisées signifie que chacun de nos intermédiaires RSA ont deux certificats représentant la même clé de signature. L'un est signé par DST Root CA X3 et l'autre est signé par ISRG Root X1. La façon la plus simple de distinguer les deux est d'examiner leur champ émetteur.
+<details>
+<summary>Retiré</summary>
 
-Lors de la configuration d'un serveur web, l'opérateur du serveur configure non seulement le certificat de l'entité finale, mais aussi une liste d'intermédiaires pour aider les navigateurs à vérifier que le certificat de l'entité finale possède une chaîne de confiance menant à un certificat racine de confiance. Pratiquement tous les opérateurs de serveurs choisiront de servir une chaîne incluant le certificat intermédiaire avec l’Objet "R3" et l’émetteur "ISRG Root X1". Le logiciel client recommandé par Let's Encrypt, [Certbot](https://certbot.org), fera cette configuration de manière transparente.
+Ces autorités de certification intermédiaires ne sont plus utilisées pour émettre des certificats pour les souscripteurs. Ceux qui ont encore des certificats valides peuvent produire des réponses OCSP et/ou des CRL.
 
-## Racines
-Similaire aux intermédiaires, les certificats racine peuvent être signés croisés, souvent pour augmenter la compatibilité du client. Notre racine ECDSA, ISRG Root X2 a été généré à l'automne 2020 et est le certificat racine pour la hiérarchie ECDSA. Il est représenté par deux certificats : un qui est auto-signé et un qui est signé par ISRG Root X1.
+* **Let's Encrypt E1**
+  * Objet : `O = Let's Encrypt, CN = E1`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2025-09-15
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183283), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183283)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
+* **Let's Encrypt E2**
+  * Objet : `O = Let's Encrypt, CN = E2`
+  * Type de clé : `ECDSA P-384`
+  * Validité : jusqu'au 2025-09-15
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183284), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183284)
+  * Détails du certificat (signé par l'AC racine ISRG X2) : [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt R3**
+  * Objet : `O = Let's Encrypt, CN = R3`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2025-09-15
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183267), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183267)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
+* **Let's Encrypt R4**
+  * Objet : `O = Let's Encrypt, CN = R4`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2025-09-15
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183268), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183268)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+* **Let's Encrypt Authority X1**
+  * Objet : `O = Let's Encrypt, CN = Let's Encrypt Authority X1`
+  * Type de clé : `RSA 2048`
+  * Validité : expiré le 2020-06-04
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=7395), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=7395)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=9314792), [der](/certs/letsencryptauthorityx1.der), [pem](/certs/letsencryptauthorityx1.pem), [txt](/certs/letsencryptauthorityx1.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=10235198), [der](/certs/lets-encrypt-x1-cross-signed.der), [pem](/certs/lets-encrypt-x1-cross-signed.pem), [txt](/certs/lets-encrypt-x1-cross-signed.txt)
+* **Let's Encrypt Authority X2**
+  * Objet : `O = Let's Encrypt, CN = Let's Encrypt Authority X2`
+  * Type de clé : `RSA 2048`
+  * Validité : expiré le 2020-06-04
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=9745), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=9745)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=12721505), [der](/certs/letsencryptauthorityx2.der), [pem](/certs/letsencryptauthorityx2.pem), [txt](/certs/letsencryptauthorityx2.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=10970235), [der](/certs/lets-encrypt-x2-cross-signed.der), [pem](/certs/lets-encrypt-x2-cross-signed.pem), [txt](/certs/lets-encrypt-x2-cross-signed.txt)
+* **Let's Encrypt Authority X3**
+  * Objet : `O = Let's Encrypt, CN = Let's Encrypt Authority X3`
+  * Type de clé : `RSA 2048`
+  * Validité : expiré le 2021-10-06
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=16418), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=16418)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=47997543), [der](/certs/letsencryptauthorityx3.der), [pem](/certs/letsencryptauthorityx3.pem), [txt](/certs/letsencryptauthorityx3.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=15706126), [der](/certs/lets-encrypt-x3-cross-signed.der), [pem](/certs/lets-encrypt-x3-cross-signed.pem), [txt](/certs/lets-encrypt-x3-cross-signed.txt)
+* **Let's Encrypt Authority X4**
+  * Objet : `O = Let's Encrypt, CN = Let's Encrypt Authority X4`
+  * Type de clé : `RSA 2048`
+  * Validité : expiré le 2021-10-06
+  * Détails de l'AC : [crt.sh](https://crt.sh/?caid=16429), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=16429)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=47997546), [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
+  * Détails du certificat (signé par IdenTrust) : [crt.sh](https://crt.sh/?id=15710291), [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
 
-Tous les certificats signés par l'ECDSA intermédiaire "E1" viendront avec une chaîne incluant un certificat intermédiaire dont le sujet est "ISRG Root X2" et dont l'émetteur est "ISRG Root X1". Presque tous les opérateurs de serveurs choisiront de servir cette chaîne car elle offre la plus compatabilité jusqu'à ce que ISRG Root X2 soit largement fiable.
+</details>
 
-# Certificat de signature pour OCSP
+<details>
+<summary>Protocole de Vérification de Certificat en Ligne (Online Certificate Status Protocol : OCSP)</summary>
 
-Ce certificat est utilisé pour signer les réponses OCSP pour les intermédiaires de l'autorité de cryptage Let's Encrypt Authority, de sorte que nous n'avons pas besoin de mettre la clé racine en ligne pour signer ces réponses. Une copie de ce certificat est automatiquement incluse dans ces réponses OCSP, de sorte que les abonnés n'ont rien à faire. Il est inclus ici à titre d'information uniquement.
+Cette paire de clés était auparavant utilisée pour signer les réponses OCSP concernant l'état des intermédiaires de Let's Encrypt au nom de la racine de Let's Encrypt, afin que la racine puisse rester hors ligne en toute sécurité. Nous n'émettons plus de réponses OCSP pour nos intermédiaires ; à la place, nous émettons périodiquement des CRL à partir de notre racine pour communiquer l'état de révocation de nos intermédiaires.
 
-* ISRG Root OCSP X1 ([Signé par ISRG Root X1](https://crt.sh/?id=2929281974)) : [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
+* **Racine ISRG OCSP X1**
+  * Objet : `O = Internet Security Research Group, CN = ISRG Root OCSP X1`
+  * Type de clé : `RSA 2048`
+  * Validité : jusqu'au 2025-06-10
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=2929281974), [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
+  * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=142051103) (expiré)
 
-Nos nouveaux intermédiaires n'ont pas d'URL OCSP (leurs informations de révocation sont à la place servies via CRL), donc nous n'avons pas émis un certificat de signature OCSP de ISRG Root X2.
+</details>
+<p><!-- to get the right line spacing after a block element --></p>
 
-# Transparence des certificats
+# Chaînes
 
-Nous sommes attachés à la transparence dans nos opérations et dans les certificats que nous délivrons. Nous soumettons tous les certificats à [Certificate Transparency logs](https://www.certificate-transparency.org/) au fur et à mesure que nous les délivrons. Vous pouvez consulter tous les certificats Let's Encrypt émis via ces liens :
+Lorsqu'un client ACME télécharge un certificat nouvellement émis à partir de l'API ACME de Let's Encrypt, ce certificat fait partie d'une « chaîne » qui comprend également un ou plusieurs intermédiaires. En général, cette chaîne se compose uniquement du certificat de l'entité finale et d'un intermédiaire, mais elle peut contenir des intermédiaires supplémentaires. L'idée est qu'en présentant toute cette chaîne de certificats au navigateur du visiteur d'un site web, ce dernier pourra valider les signatures jusqu'à une racine en laquelle il a confiance, sans avoir à télécharger d'intermédiaires supplémentaires.
 
-* [Publiés par Let's Encrypt Authority X1](https://crt.sh/?Identity=%25&iCAID=7395)
-* [Publiés par Let's Encrypt Authority X3](https://crt.sh/?Identity=%25&iCAID=16418)
-* [Délivré par E1](https://crt.sh/?Identity=%25&iCAID=183283)
-* [Délivré par R3](https://crt.sh/?Identity=%25&iCAID=183267)
+Il existe parfois plus d'une chaîne valide pour un certificat donné : par exemple, si un certificat intermédiaire a fait l'objet d'une signature croisée, l'un ou l'autre de ces deux certificats peut constituer la deuxième entrée, « remontant » jusqu'à l'une ou l'autre des deux racines différentes. Dans ce cas, différents opérateurs de sites web peuvent vouloir sélectionner différentes chaînes en fonction des propriétés qui leur tiennent le plus à cœur.
+
+Les certificats d'abonné avec des clés publiques RSA sont délivrés par nos intermédiaires RSA, qui sont délivrés uniquement par notre racine RSA ISRG Root X1 (c'est-à-dire qu'ils ne font pas l'objet d'une signature croisée). Par conséquent, tous les certificats d'abonné RSA ne disposent que d'une seule chaîne :
+
+<div style="text-align: center">
+RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+</div>
+<p><!-- to get the right line spacing after a block element --></p>
+
+Les certificats d'abonné avec des clés publiques ECDSA sont délivrés par nos intermédiaires ECDSA, qui sont délivrés à la fois par notre racine RSA de l'ISRG X1 et par notre racine ECDSA de l'ISRG X2 (c'est-à-dire qu'ils font l'objet d'une signature croisée). C'est pourquoi nous proposons deux chaînes pour ces certificats :
+
+<div style="text-align: center">
+ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
+
+ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
+</div>
+<p><!-- to get the right line spacing after a block element --></p>
+
+La première chaîne, jusqu'à l'ISRG Root X1, offre la plus grande compatibilité, car ce certificat racine est inclus dans la plupart des magasins de confiance. La deuxième chaîne, jusqu'à l'ISRG Root X2, consomme moins d'octets de la bande passante du réseau lors de chaque handshake TLS. Nous fournissons la première chaîne par défaut, afin d'assurer la plus grande compatibilité possible. Les utilisateurs qui souhaitent privilégier la taille plutôt que la compatibilité peuvent consulter la documentation de leur client ACME pour savoir comment demander la chaîne alternative (par exemple, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).

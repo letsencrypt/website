@@ -1,13 +1,11 @@
 ---
 title: Expiration de l'AC racine X3 de DST (septembre 2021)
 slug: dst-root-ca-x3-expiration-september-2021
-lastmod: 2021-09-30
-menu:
-  main:
-    weight: 30
-    parent: about
+lastmod: 2024-02-05
 show_lastmod: 1
 ---
+
+> **Mise à jour le 05 février 2024** Cela fait deux ans, et la compatibilité croisée avec Android, mentionnée ci-dessous, est sur le point d'expirer. Voir [notre récent article de blog](https://letsencrypt.org/2023/07/10/cross-sign-expiration) pour une explication détaillée des changements à venir au cours de l'année 2024.
 
 > **Mise à jour le 30 septembre 2021** Comme prévu, la signature croisée de l'autorité de certification racine X3 de DST a expiré, et nous utilisons désormais notre propre autorité de certification racine X1 de l'ISRG pour la confiance sur presque tous les appareils. Pour plus de détails sur le plan, lisez la suite ! Nous avons également mis à jour notre fil de discussion sur les changements dans la chaîne de production sur notre forum communautaire - [notre équipe et notre communauté sont là et prêtes à vous aider](https://community.letsencrypt.org/t/production-chain-changes/150739/4) pour toutes les questions que vous pourriez avoir à propos de cette expiration.
 
