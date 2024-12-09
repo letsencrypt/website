@@ -3,7 +3,7 @@ title: Integration Guide
 linkTitle: Client and Large Provider Integration Guide
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -87,12 +87,6 @@ If you want to use the http-01 challenge anyhow, you may want to take advantage 
 # Central Validation Servers
 
 Related to the above two points, it may make sense, if you have a lot of frontends, to use a smaller subset of servers to manage issuance. This makes it easier to use redirects for http-01 validation, and provides a place to store certificates and keys durably.
-
-# Implement OCSP Stapling
-
-Many browsers will fetch OCSP from Let's Encrypt when they load your site. This is a [performance and privacy problem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideally, connections to your site should not wait for a secondary connection to Let's Encrypt. Also, OCSP requests tell Let's Encrypt which sites people are visiting. We have a good privacy policy and do not record individually identifying details from OCSP requests, we'd rather not even receive the data in the first place. Additionally, we anticipate our bandwidth costs for serving OCSP every time a browser visits a Let's Encrypt site for the first time will be a big part of our infrastructure expense.
-
-By turning on OCSP Stapling, you can improve the performance of your website, provide better privacy protections for your users, and help Let's Encrypt efficiently serve as many people as possible.
 
 # Firewall Configuration
 
