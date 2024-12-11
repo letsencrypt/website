@@ -2,7 +2,7 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-05
+lastmod: 2024-12-10
 show_lastmod: true
 ---
 
@@ -20,8 +20,8 @@ large website please review our [Integration Guide](/docs/integration-guide).
 
 # How Our Rate Limits Work
 
-Limits are calculated, per request, using a [leaky
-bucket](https://en.wikipedia.org/wiki/Leaky_bucket#As_a_meter) algorithm. This
+Limits are calculated, per request, using a [token
+bucket](https://en.wikipedia.org/wiki/Token_bucket) algorithm. This
 approach provides flexibility in how you use your allotted requests. You can
 either make requests in bursts—up to the full limit—or space out your requests
 to avoid the risk of being limited.
