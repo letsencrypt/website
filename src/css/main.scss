@@ -115,6 +115,20 @@ div[data-netlify-site-id] {
   }
 }
 
+@media (min-width: 768px)
+{
+    .pic-quote-right
+    {
+        float: right !important;
+
+        max-width: 33.33333%;
+        margin-left: 25px;
+
+        flex: 0 0 33.33333%;
+    }
+}
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",
   "syntax-highlighting", "donate", "donate2024", "fundraiser", "waiting",
