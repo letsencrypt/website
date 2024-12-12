@@ -2,7 +2,7 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-10
+lastmod: 2024-12-12
 show_lastmod: true
 ---
 
@@ -229,7 +229,6 @@ up to 50,000 additional paused hostnames associated with their account.
 | 30                           | 124 days (4.08 months)  |
 | 40                           | 92 days (3.03 months)   |
 | 120                          | 30 days                 |
-<p></p>
 
 ### Common Causes
 
@@ -252,6 +251,27 @@ help you identify and resolve issues without consuming your production limits.
 We do **not** offer overrides for this limit.
 
 </div>
+
+# Overall Requests Limit
+
+In addition to our [account registration](#account-registration-limits) and
+[certificate issuance](#certificate-issuance-limits) limits, there are
+per-endpoint overall request limits that apply per-IP address. These are
+enforced by our load balancers and are designed to protect the ACME API from
+being overwhelmed by clients that make too many requests at once.
+
+Endpoint             | Requests per IP  | Burst Capacity
+|--------------------|------------------|-----------------|
+| /acme/new-nonce	   | 20	              | 10              |
+| /acme/new-account	 | 5	              | 15              |
+| /acme/new-order	   | 300	            | 200             |
+| /acme/revoke-cert	 | 10	              | 100             |
+| /acme/renewal-info | 1000             | 100             |
+| /acme/*            | 250	            | 125             |
+| /directory	       | 40	              | N/A             |
+
+Subscribers who exceed these limits will receive a `503 Service Unavailable` HTTP
+response code. The response will include a `Retry-After` header 
 
 # Limit Exemptions for Renewals
 
