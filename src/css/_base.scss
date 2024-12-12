@@ -226,6 +226,29 @@ code.language-der {
   background-color: #dee;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: $spacing-unit 0;
+  font-size: 16px;
+  color: $text-color;
+  border-radius: 8px;
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid $grey-color-light;
+  }
+  
+  th {
+      background-color: $grey-color-dark;
+      color: #fff;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.025em;
+    }
+}
+
 /**
  * Wrapper
  */
