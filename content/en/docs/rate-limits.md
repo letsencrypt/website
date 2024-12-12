@@ -270,8 +270,8 @@ Endpoint             | Requests per IP  | Burst Capacity
 | /acme/*            | 250	            | 125             |
 | /directory	       | 40	              | N/A             |
 
-Subscribers who exceed these limits will receive a `503 Service Unavailable` HTTP
-response code. The response will include a `Retry-After` header 
+Subscribers who exceed these limits will receive a `503 Service Unavailable`
+HTTP response code. The response will include a `Retry-After` header.
 
 # Limit Exemptions for Renewals
 
