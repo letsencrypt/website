@@ -260,15 +260,15 @@ per-endpoint overall request limits that apply per-IP address. These are
 enforced by our load balancers and are designed to protect the ACME API from
 being overwhelmed by clients that make too many requests at once.
 
-Endpoint             | Requests per IP  | Burst Capacity
-|--------------------|------------------|-----------------|
-| /acme/new-nonce	   | 20	              | 10              |
-| /acme/new-account	 | 5	              | 15              |
-| /acme/new-order	   | 300	            | 200             |
-| /acme/revoke-cert	 | 10	              | 100             |
-| /acme/renewal-info | 1000             | 100             |
-| /acme/*            | 250	            | 125             |
-| /directory	       | 40	              | N/A             |
+| Endpoint           | Requests per IP (per second) | Burst Capacity |
+|--------------------|------------------------------|----------------|
+| /acme/new-nonce    | 20                           | 10             |
+| /acme/new-account  | 5                            | 15             |
+| /acme/new-order    | 300                          | 200            |
+| /acme/revoke-cert  | 10                           | 100            |
+| /acme/renewal-info | 1000                         | 100            |
+| /acme/*            | 250                          | 125            |
+| /directory         | 40                           | N/A            |
 
 Subscribers who exceed these limits will receive a `503 Service Unavailable`
 HTTP response code. The response will include a `Retry-After` header.
