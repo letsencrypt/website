@@ -3,7 +3,7 @@ title: Integrationsvejledning
 linkTitle: Klient og store udbyders integrationsguide
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -80,12 +80,6 @@ Hvis du ønsker at bruge http-01 challenge alligevel, kan du ønske at drage for
 # Centrale Valideringsservere
 
 I forhold til ovenstående to punkter, kan det give mening, hvis du har en masse frontends, at bruge en mindre delmængde af servere til at håndtere certifikat udstedelse. Dette gør det lettere at bruge omdirigeringer til http-01 validering, og giver et sted at gemme certifikater og nøgler robust.
-
-# Implementere OCSP-hæftning
-
-Mange browsere vil hente OCSP'en fra Let's Encrypt når de indlæser dit websted. Dette er et [performance- og privatlivsproblem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideelt set bør forbindelser til dit websted ikke vente på en sekundær forbindelse til Let's Encrypt. OCSP anmodninger fortælle også Let's Encrypt hvilke websteder folk besøger. Vi har en god fortrolighedspolitik og registrerer ikke individuelt identificerende oplysninger fra OCSP anmodninger, men vi vil fortrække ikke engang modtage data i første omgang. Derudover forenter vi at vores båndbreddeomkostninger til at betjene OCSP, hver gang en browser besøger et Let's Encrypt websted for første gang vil være en stor del af vores infrastruktur udgifter.
-
-Ved at aktivere OCSP-hæftning kan du forbedre ydeevnen på din hjemmeside, yde bedre beskyttelse af personlige oplysninger for dine brugere, og hjælpe Let's Encrypt effektivt tjene så mange mennesker som muligt.
 
 # Firewall Konfiguration
 

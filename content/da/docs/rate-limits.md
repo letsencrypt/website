@@ -2,7 +2,7 @@
 title: Grænser For kald
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-10-22
+lastmod: 2024-12-05
 show_lastmod: true
 ---
 
@@ -165,6 +165,61 @@ Op til 5 godkendelsesfejl pr. værtsnavn kan påføres af en konto hver
 time. Evnen til at pådrage sig godkendelsesfejl genfylder med en hastighed på 1 per værtsnavn hver 12 minutter. Når den er overskredet, håndhæves denne grænse ved at forhindre
 nye ordrer på samme værtsnavn, af den samme konto indtil grænsen
 nulstilles.
+
+### Almindelige Årsager
+
+Før du begynder fejlfinding, anbefaler vi, at du sætter din klient til at bruge vores
+[iscenesættelse miljø](/docs/staging-environment). Dette miljø har
+[væsentligt højere](/docs/staging-environment/#rate-limits) grænser, som kan
+hjælpe dig med at identificere og løse problemer uden at forbruge dine produktionsgrænser.
+
+- Valideringsfejl ved brug af metoderne `HTTP-01` og `TLS-ALPN-01` stammer normalt
+  fra netværks- eller firewall-konfigurationer, der forhindrer Let's Encrypt
+  -valideringsservere i at nå frem til din server.
+
+- Valideringsfejl ved brug af 'DNS-01'-metoden skyldes ofte manglende
+  trin eller stavefejl under den indledende opsætningsproces. Typisk kræver denne validering
+  metode, at du opretter en CNAME-post i din primære DNS-zone, aktivere
+  din klient til at indstille de nødvendige DNS-poster under valideringsprocessen.
+
+### Overstyringer
+
+Vi tilbyder **ikke** overskridelser af denne grænse.
+
+</div>
+<div class="boxed">
+
+## Fortløbende autorisationsfejl pr. værtsnavn pr. konto
+
+Svarende til Authorization Failures per Hostname per
+Account, men gælder kun for
+på hinanden følgende fejl. Denne grænse er tilføjet med henblik på at forhindre kunder i at få
+fast for evigt i en løkke af fejlede valideringer.
+
+### Grænse
+
+Op til 3.600 fortløbende godkendelsesfejl pr. værtsnavn kan påføres af en konto hver
+time. Evnen til at pådrage sig autorisationsfejl genfylder med en hastighed på 1
+pr. værtsnavn hver dag og nulstiller til nul, hvis en autorisation til at værtsnavn
+er valideret med succes. Når den er overskredet, er kontoen forhindret i at
+anmoder om nye certifikater for det værtsnavn. Hver gang abonnenten forsøger
+at anmode om et certifikat, vil de modtage en fejl med et link til vores
+Self-Service Portal hvor de kan genoptage udstedelsen for den pausede værtsnavn og
+op til 50.000 yderligere pausede værtsnavne tilknyttet deres konto.
+
+| Fejl pr. dag | Pause tid                                               |
+| ---------------------------- | ------------------------------------------------------- |
+| 1                            | ∞ (aldrig sat på pause)              |
+| 2                            | 3.600 dage (9,86 år) |
+| 5                            | 900 dage (2,46 år)                   |
+| 10                           | 400 dage (1,10 år)                   |
+| 15                           | 257 dage (8,45 måneder)              |
+| 20                           | 189 dage (6,22 måneder)              |
+| 30                           | 124 dage (4,08 måneder)              |
+| 40                           | 92 dage (3,03 måneder)               |
+| 120                          | 30 dage                                                 |
+
+<p></p>
 
 ### Almindelige Årsager
 

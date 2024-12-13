@@ -3,7 +3,7 @@ title: 集成指南
 linkTitle: 客户端和大型提供商集成指南
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -80,12 +80,6 @@ Let's Encrypt 的主要价值在于我们允许在创建新网站时自动颁发
 # 中央验证服务器
 
 与上述两点相关，您如果有很多前端服务器，可能需要使用较小的服务器子集来管理证书颁发。 这样可以更轻松地使用重定向进行 http-01 验证，并提供长期存储证书和密钥的位置。
-
-# 使用 OCSP 装订
-
-很多浏览器在加载您的网页时会尝试从 Let's Encrypt 的 OCSP 服务器获取响应。 这会导致一些[性能和隐私问题](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/)。  理想情况下，连接到网站不应需要等待到 Let's Encrypt 服务器的辅助连接。 此外，OCSP 请求会向 Let's Encrypt 泄露用户访问的网站名称。 我们有良好的隐私权政策，所以不会记录 OCSP 请求中能够用于识别个人的信息，如果可以的话我们本不想收到这些数据。 此外我们预计，如果每次浏览器首次访问使用 Let's Encrypt 证书的站点都会发送 OCSP 请求，为这些请求提供服务的带宽成本将占去我们基础设施支出的一大部分。
-
-通过启用 OCSP 装订，您可以提高网站的性能，为用户提供更好的隐私保护，并帮助 Let's Encrypt 为尽可能多的人高效地提供服务。
 
 # 防火墙配置
 

@@ -3,7 +3,7 @@ title: Integrációs útmutató
 linkTitle: Kliens és szolgáltató integrációs útmutató
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -80,12 +80,6 @@ Ha mindenképpen használni szeretné a http-01 kihívást, akkor érdemes kihas
 # Központi validációs szerverek
 
 A fenti két ponthoz kapcsolódóan, ha sok frontenddel rendelkezik, érdemes lehet a szerverek egy kisebb részhalmazát használni a kiadás kezelésére. Ez megkönnyíti az átirányítások használatát a http-01 validáláshoz, és helyet biztosít a tanúsítványok és kulcsok tartós tárolására.
-
-# OCSP Stapling implementálása
-
-Sok böngésző lekérdezi az OCSP-t a Let's Encrypt-től, amikor betöltik az Ön weboldalát. Ez egy [teljesítmény és adatvédelmi probléma](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Ideális esetben a weboldalához való kapcsolódások nem várhatnak a Let's Encrypthez való másodlagos kapcsolódásra. Az OCSP kérelmek azt is elárulják a Let's Encryptnek, hogy mely oldalakat látogatják az emberek. Egy jó adatvédelmi politikával rendelkezünk, és nem rögzítünk személyazonosító adatokat az OCSP kérésekből, inkább nem is kapjuk meg az adatokat. Ezen túlmenően, az OCSP kiszolgálásával kapcsolatos sávszélességi költségek minden alkalommal, amikor egy böngésző először látogat el egy Let's Encrypt oldalra, várhatóan az infrastrukturális költségeink nagy részét teszik majd ki.
-
-Az OCSP Stapling bekapcsolásával javíthatja weboldala teljesítményét, jobb adatvédelmet biztosíthat a felhasználók számára, és segíthet a Let's Encryptnek, hogy minél több embert szolgáljon ki hatékonyan.
 
 # Tűzfal konfiguráció
 
