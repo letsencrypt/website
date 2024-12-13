@@ -3,7 +3,7 @@ title: Integrationsanleitung
 linkTitle: Client und Provider Integrationsleitfaden
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -80,12 +80,6 @@ Wenn Sie die Challenge http-01 trotzdem verwenden möchten, können Sie HTTP-Wei
 # Zentrale Validierungsserver
 
 In Verbindung mit den beiden oben genannten Punkten kann es sinnvoll sein, bei vielen Frontends eine kleinere Teilmenge von Servern zur Verwaltung der Ausgabe zu verwenden. Dies erleichtert die Verwendung von Weiterleitungen für die http-01-Validierung und bietet die Möglichkeit, Zertifikate und Schlüssel dauerhaft zu speichern.
-
-# Implementieren Sie OCSP-Stapling
-
-Viele Browser rufen OCSP von Let's Encrypt ab, wenn sie Ihre Site laden. Dies ist ein [Leistungs- und Datenschutzproblem](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Idealerweise sollten Verbindungen zu Ihrer Site nicht auf eine sekundäre Verbindung zu Let's Encrypt warten. Darüber hinaus teilen OCSP-Anforderungen Let's Encrypt mit, welche Websites von Personen besucht werden. Wir haben eine gute Datenschutzrichtlinie und erfassen keine Einzelangaben zur Identifizierung von OCSP-Anfragen. Wir möchten die Daten lieber gar nicht erst erhalten. Darüber hinaus gehen wir davon aus, dass unsere Bandbreitenkosten für die Bereitstellung von OCSP bei jedem ersten Besuch einer Let's Encrypt-Site durch einen Browser einen grossen Teil unserer Infrastrukturkosten ausmachen.
-
-Durch Aktivieren von OCSP Stapling können Sie die Leistung Ihrer Website verbessern, den Schutz Ihrer Daten für Ihre Benutzer verbessern und Let's Encrypt dabei helfen, möglichst viele Personen effizient zu bedienen.
 
 # Firewall-Konfiguration
 

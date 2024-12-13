@@ -3,7 +3,7 @@ title: Guide d'intégration
 linkTitle: Guide d'intégration du client et des grands fournisseurs de services
 slug: integration-guide
 date: 2016-08-08
-lastmod: 2020-12-08
+lastmod: 2024-12-09
 show_lastmod: 1
 ---
 
@@ -80,12 +80,6 @@ Si vous souhaitez utiliser le challenge http-01 de toute façon, vous pouvez tir
 # Serveurs centraux de validation
 
 En rapport avec les deux points ci-dessus, il peut être judicieux, si vous avez beaucoup de frontends, d'utiliser un sous-ensemble de serveurs plus petits pour gérer l'émission. Cela facilite l'utilisation des redirections pour la validation http-01, et fournit un endroit pour stocker durablement les certificats et les clés.
-
-# Mettre en service l'agrafage OCSP
-
-De nombreux navigateurs vont extraire OCSP de Let's Encrypt lorsqu'ils chargent votre site. Il s'agit d'un [problème de performance et de respect de la vie privée](https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/).  Idéalement, les connexions à votre site ne devraient pas attendre une connexion secondaire à Let's Encrypt. De plus, les demandes de l'OCSP indiquent à Let's Encrypt quels sites les gens visitent. Nous avons une bonne politique de confidentialité et n'enregistrons pas les détails d'identification individuelle des demandes de l'OCSP, nous préférons même ne pas recevoir les données en premier lieu. En outre, nous prévoyons que les coûts de la bande passante pour desservir l'OCSP chaque fois qu'un navigateur visite un site Let's Encrypt pour la première fois représenteront une grande partie de nos dépenses d'infrastructure.
-
-En activant l'agrafage OCSP, vous pouvez améliorer les performances de votre site web, offrir une meilleure protection de la vie privée à vos utilisateurs et aider Let's Encrypt à servir efficacement le plus grand nombre de personnes possible.
 
 # Configuration du pare-feu
 
