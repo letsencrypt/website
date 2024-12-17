@@ -2,7 +2,7 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-12
+lastmod: 2024-12-17
 show_lastmod: true
 ---
 
@@ -216,7 +216,7 @@ is successfully validated. Once exceeded, the account is prevented from
 requesting new certificates for that hostname. Each time the subscriber attempts
 to request a certificate they will receive an error containing a link to our
 Self-Service Portal where they can unpause issuance for the paused hostname and
-up to 50,000 additional paused hostnames associated with their account.
+up to 49,999 additional paused hostnames associated with their account.
 
 | Failures per Day             | Time to Pause           |
 |------------------------------|-------------------------|
