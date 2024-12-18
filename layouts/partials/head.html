@@ -29,7 +29,7 @@
     gtag("config", "G-XEJKGKMHBK");
   </script>
 
-  {{ $style := resources.Get "css/main.scss" | resources.ToCSS | minify |
+  {{ $style := resources.Get "css/main.scss" | css.Sass | minify |
   fingerprint "sha512" }}
   <link
     rel="stylesheet"
