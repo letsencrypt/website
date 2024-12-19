@@ -7,8 +7,6 @@ excerpt: "New extension makes it possible for site operators and ACME clients to
 display_default_footer: true
 ---
 
-## Announcing Certificate Profile Selection
-
 We are excited to announce a new extension to Let's Encrypt's implementation of the ACME protocol that we are calling "profile selection." This new feature will allow site operators and ACME clients to opt in to the next evolution of Let's Encrypt.
 
 As of today, the [staging environment](https://letsencrypt.org/docs/staging-environment/) is advertising a new field in its directory resource:
