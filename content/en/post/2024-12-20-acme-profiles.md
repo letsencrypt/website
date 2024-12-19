@@ -50,7 +50,7 @@ Content-Type: application/jose+json
 {
     "protected": base64url(...),
     "payload": base64url({
-    "profile": "tlsserver",
+        "profile": "tlsserver",
         "identifiers": [
             { "type": "dns", "value": "www.example.org" },
             { "type": "dns", "value": "example.org" }
