@@ -323,6 +323,21 @@
       "name": "Snipe-IT",
       "url": "https://snipeitapp.com/",
       "image": "snipeit-logo.png"
+    },
+    {
+      "name": "Showit",
+      "url": "https://showit.com/",
+      "image": "showit-logo.png"
+    },
+    {
+      "name": "ClouDNS",
+      "url": "https://www.cloudns.net/",
+      "image": "cloudns-logo.png"
+    },
+    {
+      "name": "SMTP2GO",
+      "url": "https://www.smtp2go.com/",
+      "image": "smtp2go-logo.png"
     }
   ]
 }
