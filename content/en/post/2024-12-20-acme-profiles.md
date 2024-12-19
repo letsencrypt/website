@@ -70,6 +70,6 @@ If you are a site operator or ACME client user, we encourage you to keep an eye 
 
 ### What's next?
 
-Obviously there is more work to be done here. We are in the process of writing a formal specification of this ACME extension, and have [submitted it to the IETF ACME Working Group](https://datatracker.ietf.org/doc/draft-aaron-acme-profiles/) for standardization. Over the coming weeks and months we will also be providing more information about when we enable profile selection in our production environment, and what our production profile options will be.
+Obviously there is more work to be done here. The draft standard will go through multiple rounds of review and tweaks before becoming an IETF RFC, and our implementation will evolve along with it if necessary. Over the coming weeks and months we will also be providing more information about when we enable profile selection in our production environment, and what our production profile options will be.
 
 Thank you for coming along with us on this journey into the future of the Web PKI. We look forward to your testing and feedback!
