@@ -53,12 +53,12 @@ Content-Type: application/jose+json
     "protected": base64url(...),
     "payload": base64url({
     "profile": "tlsserver",
-    "identifiers": [
-        { "type": "dns", "value": "www.example.org" },
-        { "type": "dns", "value": "example.org" }
-    ],
-}),
-"signature": "H6ZXtGjTZyUnPeKn...wEA4TklBdh3e454g"
+        "identifiers": [
+            { "type": "dns", "value": "www.example.org" },
+            { "type": "dns", "value": "example.org" }
+        ],
+    }),
+    "signature": "H6ZXtGjTZyUnPeKn...wEA4TklBdh3e454g"
 }
 ```
 
