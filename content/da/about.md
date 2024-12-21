@@ -1,5 +1,5 @@
 ---
-title: Om Let's Encrypt
+title: Om Let's encrypt
 linkTitle: Let's Encrypt
 slug: about
 lastmod: 2021-02-12
