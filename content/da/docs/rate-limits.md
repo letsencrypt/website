@@ -2,7 +2,7 @@
 title: Grænser For kald
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-05
+lastmod: 2024-12-17
 show_lastmod: true
 ---
 
@@ -19,7 +19,7 @@ websted, bedes du gennemgå vores [Integrations Guide](/docs/integration-guide).
 
 # Hvordan vores kald begrænsninger virker
 
-Grænser beregnes, per anmodning, ved hjælp af en utæt
+Grænser beregnes, per kald, ved hjælp af en utæt
 spand algoritme. Denne
 tilgang giver fleksibilitet i, hvordan du bruger dine tildelte kald. Du kan
 enten fremsætte anmodninger i fuld fart – op til den fulde grænse – eller udjævne dine anmodninger
@@ -205,7 +205,7 @@ er valideret med succes. Når den er overskredet, er kontoen forhindret i at
 anmoder om nye certifikater for det værtsnavn. Hver gang abonnenten forsøger
 at anmode om et certifikat, vil de modtage en fejl med et link til vores
 Self-Service Portal hvor de kan genoptage udstedelsen for den pausede værtsnavn og
-op til 50.000 yderligere pausede værtsnavne tilknyttet deres konto.
+op til 49.999 yderligere pausede værtsnavne tilknyttet deres konto.
 
 | Fejl pr. dag | Pause tid                                               |
 | ---------------------------- | ------------------------------------------------------- |
@@ -218,8 +218,6 @@ op til 50.000 yderligere pausede værtsnavne tilknyttet deres konto.
 | 30                           | 124 dage (4,08 måneder)              |
 | 40                           | 92 dage (3,03 måneder)               |
 | 120                          | 30 dage                                                 |
-
-<p></p>
 
 ### Almindelige Årsager
 
@@ -242,6 +240,27 @@ hjælpe dig med at identificere og løse problemer uden at forbruge dine produkt
 Vi tilbyder **ikke** overskridelser af denne grænse.
 
 </div>
+
+# Generelle grænser for kald
+
+Udover vores [kontoregistrering](#account-registration-limits) og
+[udstedelse af certifikat](#certificate-issuance-limits) grænser, er der
+per API kald overordnede forespørgselsgrænser, der gælder per-IP-adresse. Disse
+håndhæves af vores load balancers og er designet til at beskytte ACME API mod
+bliver overvældet af klienter, der foretager for mange anmodninger på én gang.
+
+| Endpoint           | Anmodninger pr. IP (pr. sekund) | Maksimal kaldskapacitet |
+| ------------------ | ---------------------------------------------------------------------------------- | ----------------------- |
+| /acme/new-nonce    | 20                                                                                 | 10                      |
+| /acme/new-account  | 5                                                                                  | 15                      |
+| /acme/new-order    | 300                                                                                | 200                     |
+| /acme/revoke-cert  | 10                                                                                 | 100                     |
+| /acme/renewal-info | 1000                                                                               | 100                     |
+| /acme/\*           | 250                                                                                | 125                     |
+| /directory         | 40                                                                                 | Ikke tilgængelig        |
+
+Abonnenter, der overskrider disse grænser, vil modtage en '503 tjeneste utilgængelig'
+HTTP svarkode. Svaret vil indeholde en `Retry-After` header.
 
 # Begrænsnings undtagelser for fornyelser
 
