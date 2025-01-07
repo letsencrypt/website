@@ -2,7 +2,7 @@
 title: Challenge Types
 slug: challenge-types
 date: 2019-02-25
-lastmod: 2023-02-13
+lastmod: 2025-01-07
 show_lastmod: 1
 ---
 
@@ -41,15 +41,16 @@ is not allowed by the ACME standard.
 
 Pros:
 
- - It’s easy to automate without extra knowledge about a domain’s configuration.
- - It allows hosting providers to issue certificates for domains CNAMEd to them.
- - It works with off-the-shelf web servers.
+- It’s easy to automate without extra knowledge about a domain’s configuration.
+- It allows hosting providers to issue certificates for domains CNAMEd to them.
+- It works with off-the-shelf web servers.
+- It can be used to validate IP Addresses as well.
 
 Cons:
 
- - It doesn’t work if your ISP blocks port 80 (this is rare, but some residential ISPs do this).
- - Let’s Encrypt doesn’t let you use this challenge to issue wildcard certificates.
- - If you have multiple web servers, you have to make sure the file is available on all of them.
+- It doesn’t work if your ISP blocks port 80 (this is rare, but some residential ISPs do this).
+- Let’s Encrypt doesn’t let you use this challenge to issue wildcard certificates.
+- If you have multiple web servers, you have to make sure the file is available on all of them.
 
 # DNS-01 challenge
 
@@ -106,22 +107,16 @@ size gets too big Let’s Encrypt will start rejecting it.
 
 Pros:
 
- - You can use this challenge to issue certificates containing wildcard domain names.
- - It works well even if you have multiple web servers.
+- You can use this challenge to issue certificates containing wildcard domain names.
+- It works well even if you have multiple web servers.
+- You can use this challenge to domain names whose webservers aren't exposed to the public internet.
 
 Cons:
 
- - Keeping API credentials on your web server is risky.
- - Your DNS provider might not offer an API.
- - Your DNS API may not provide information on propagation times.
-
-# TLS-SNI-01
-
-This challenge was defined in draft versions of ACME. It did a TLS
-handshake on port 443 and sent a specific [SNI] header, looking for
-certificate that contained the token. It [was disabled in March
-2019][tls-sni-disablement]
-because it was not secure enough.
+- Keeping API credentials on your web server is risky.
+- Your DNS provider might not offer an API.
+- Your DNS API may not provide information on propagation times.
+- It cannot be used to validate IP Addresses.
 
 # TLS-ALPN-01
 
@@ -142,14 +137,22 @@ Nginx could someday implement this (and [Caddy already does][caddy-tls-alpn]).
 
 Pros:
 
- - It works if port 80 is unavailable to you.
- - It can be performed purely at the TLS layer.
+- It works if port 80 is unavailable to you.
+- It can be performed purely at the TLS layer.
+- It can be used to validate IP Addresses as well.
 
 Cons:
 
- - It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
- - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
- - This method cannot be used to validate wildcard domains.
+- It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
+- Like HTTP-01, if you have multiple servers they need to all answer with the same content.
+- This method cannot be used to validate wildcard domains.
+
+# TLS-SNI-01
+
+This challenge was defined in draft versions of ACME. It did a TLS
+handshake on port 443 and sent a specific [SNI] header, looking for
+certificate that contained the token. It [was removed in March
+2019][tls-sni-disablement] because it was not secure enough.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
