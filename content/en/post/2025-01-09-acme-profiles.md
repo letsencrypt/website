@@ -1,6 +1,6 @@
 ---
 author: Aaron Gable
-date: 2024-12-19T00:00:00Z
+date: 2025-01-09T00:00:00Z
 slug: acme-profiles
 title: "Announcing Certificate Profile Selection"
 excerpt: "New extension makes it possible for site operators and ACME clients to select new profile options for Let's Encrypt certificates."
