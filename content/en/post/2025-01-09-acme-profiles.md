@@ -21,7 +21,7 @@ Content-Type: application/json
     "meta": {
         "profiles": {
             "classic": "The same profile you're accustomed to",
-            "tlsserver": "https://letsencrypt.org/2024/12/20/acme-profiles/"
+            "tlsserver": "https://letsencrypt.org/2025/01/09/acme-profiles/"
         }
     }
 }
