@@ -16,3 +16,5 @@ There are a number of other monitoring options out there, including:
 * [TrackSSL](https://trackssl.com/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
+
+The options listed on this page are provided for informational purposes only. ISRG does not endorse or guarantee the safety, reliability, or effectiveness of any particular service. Users are encouraged to conduct their own research and due diligence before selecting any option. ISRG is not responsible for any outcomes resulting from the use of these services.
