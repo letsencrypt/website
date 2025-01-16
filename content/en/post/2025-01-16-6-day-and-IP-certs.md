@@ -37,4 +37,4 @@ Once IP address support is an option for you, requesting an IP address in a cert
 
 The best way to prepare to take advantage of short-lived certificates is to make sure your ACME client is reliably renewing certificates in an automated fashion. If that's working well then there should be no costs to switching to short-lived certificates.
 
-If you have questions or comments about our plans, feel free to let us know on our [community forums](https://community.letsencrypt.org/).
+If you have questions or comments about our plans, feel free to let us know on our [community forums](https://community.letsencrypt.org/t/questions-regarding-announcing-six-day-and-ip-address-certificate-options-in-2025/232043).
