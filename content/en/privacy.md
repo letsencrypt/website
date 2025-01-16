@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 slug: privacy
-lastmod: 2024-06-28
+lastmod: 2025-01-15
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -16,23 +16,23 @@ Let's Encrypt is a service provided by [Internet Security Research Group](https:
 
 ## Relying Party
 
-When you use an HTTPS web site or other TLS service with a Let's Encrypt certificate, your browser (or TLS client) may query Let's Encrypt to check whether the certificate has been revoked ("OCSP request"). If your browser makes an OCSP request, our servers will automatically record your IP address, browser, and operating system in temporary server log files. We do not use data from OCSP requests to build profiles or identify individuals. Temporary server logs are used for operational purposes only and are normally deleted in less than seven days. We may retain a subset of server logs for longer periods in order to investigate software failures or abuse. If we do so, we will delete any stored logs when we are done investigating. We may also compute, retain and publish aggregate information from server logs, such as which certificates generate the largest volume of requests. We will always strive to ensure that such datasets do not contain information about the activities of identifiable users or devices.
+When you use an HTTPS web site or other TLS service with a Let's Encrypt certificate, your browser (or TLS client) may query Let's Encrypt to check whether the certificate has been revoked. If your browser makes such a request, our servers may automatically record your IP address, browser, and operating system in temporary server log files. We do not use this data to build profiles or identify individuals. Temporary server logs are used for operational purposes only and are normally deleted in less than seven days. We may retain a subset of server logs for longer periods in order to investigate software failures or abuse. If we do so, we will delete any stored logs when we are done investigating. We may also compute, retain and publish aggregate information from server logs, such as which certificates generate the largest volume of requests. We will always strive to ensure that such datasets do not contain information about the activities of identifiable users or devices.
 
 ## Subscriber
 
-If you are a Subscriber, you are requesting a trusted certificate from Let's Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let's Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let's Encrypt service; all resolved IP addresses for any domain names requested; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of seven years per trusted root program requirements. This information will be stored for a maximum of ten years.
+If you are a Subscriber, you are requesting a trusted certificate from Let's Encrypt intended to publicly vouch that you control a certain domain name or names that are reachable on the Internet. As part of the process of proving that control, Let's Encrypt will collect various information related to certificate authentication and management. That information includes the IP addresses from which you access the Let's Encrypt service; all resolved IP addresses for any requested identifiers; server information related to any validation requests; full logs of all inbound HTTP / ACME requests, all outbound validation requests; and information sent by or inferred from your client software. We will store this information for a minimum of two years per trusted root program requirements.
 
 We need to be able to demonstrate to the public, including those who rely on the trustworthiness of our certificates, that our services perform as expected. As a result, we may be unable to delete information, including IP addresses. This information may be made public in a number of ways, including via public API, public repositories such as Certificate Transparency (CT) logs, and/or public discussions.
 
-You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per "Law Enforcement and Extenuating Circumstances," below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the "unsubscribe" link at the bottom of our emails or by contacting us at privacy@abetterinternet.org. We will not use your contact information for marketing or promotional purposes.
+You may have the option to provide contact information, such as your email address, for account service and recovery purposes. Your contact information will not be made public, and it will only be shared per "Law Enforcement and Extenuating Circumstances," below. By providing your email address, you are consenting to receive service-related emails from us. You may unsubscribe from service-related emails at any time by clicking the "unsubscribe" link at the bottom of our emails or by contacting us at privacy@abetterinternet.org. We will not use your contact information for marketing or promotional purposes without your consent.
 
-You may need to download client software from a repository such as those run by Debian, Ubuntu, Red Hat, or Github. Your interaction with such a software repository is governed by that repository's own privacy policy and/or Terms of Use.
+You may need to download client software from a repository such as those run by Debian, Ubuntu, Red Hat, or GitHub. Your interaction with such a software repository is governed by that repository's own privacy policy and/or Terms of Use.
 
 ## Visitor
 
 When you are a Visitor browsing an ISRG web site, you have the option to make a donation. Donations are processed by our trusted payment partners including DonorBox, Stripe, Shopify, and PayPal, depending on the payment method selected, and stored in ISRG's Salesforce database and Sage Intacct as necessary. We collect your name and email address, and, if you provide it, your mailing address when you donate. Once you donate, we will use your information for our legitimate interest in processing and managing your contribution, including fundraising reminders and renewals. Your interactions with [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Printful](https://www.printful.com/policies/privacy), [Formstack](https://www.formstack.com/legal), and [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) are governed by their respective privacy policies. We do not collect or retain any credit card or bank information related to donations.
 
-You may provide your email address to receive communications related to ISRG projects through a signup on an ISRG web site and via other marketing materials. Any communication delivered via Salesforce and your interactions with [Salesforce](https://www.salesforce.com/company/privacy/) are governed by their privacy policies. We may occasionally use your email address to send personalized communications related to ISRG and its projects. You can request to have your email address removed by opting out via the footer of our emails or emailing us at press@abetterinternet.org
+You may provide your email address to receive communications related to ISRG projects through a signup on an ISRG web site and via other marketing materials. Any communication delivered via Salesforce and your interactions with [Salesforce](https://www.salesforce.com/company/privacy/) are governed by their privacy policies. With your consent, we may occasionally use your email address to send personalized communications related to ISRG and its projects. You can withdraw this consent by opting out via the footer of our emails or emailing us at press@abetterinternet.org.
 
 If you register to use an ISRG community support forum, the personal information you provide and your actions there are governed by the privacy policy of our hosting and software provider for the forum, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). We do not collect or maintain personal information through our offering of this support forum.
 
@@ -59,7 +59,7 @@ In addition, we reserve the right, solely at our discretion, to independently ob
 
 We process personal data as described in this policy. The purpose and lawful basis for information processing is as follows:
 
-**Purpose:** Providing Certificate Status (OCSP) Information
+**Purpose:** Providing Certificate Status Information
 
 **Lawful Basis:** Legitimate Interests
 
