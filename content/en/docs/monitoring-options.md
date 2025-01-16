@@ -1,13 +1,13 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2025-01-09
+lastmod: 2025-01-16
 show_lastmod: 1
 ---
 
 Being able to monitor TLS certificate status is helpful for many of our subscribers. Monitoring services can assist with things like expiration notifications and keeping an eye out for unwanted issuance.
 
-Let’s Encrypt can recommend [Red Sift Certificates (formerly Hardenize)](https://redsift.com/pulse-platform/certificates). You can monitor up to 250 certificates for free through Red Sift.
+Let’s Encrypt can recommend [Red Sift Certificates Lite (formerly Hardenize)](https://redsift.com/pulse-platform/certificates-lite). You can monitor up to 250 certificates for free through Red Sift.
 
 There are a number of other monitoring options out there, including:
 
