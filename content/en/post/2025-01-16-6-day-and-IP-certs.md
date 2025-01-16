@@ -1,6 +1,6 @@
 ---
 author: Josh Aas
-date: 2025-01-14T00:00:00Z
+date: 2025-01-16T00:00:00Z
 slug: 6-day-and-IP-certs
 title: "Announcing Six Day and IP Address Certificate Options in 2025"
 excerpt: "In addition to our standard certificates, Let’s Encrypt will introduce new short-lived certificates to improve security and agility for the Web PKI."
