@@ -1,4 +1,20 @@
 ---
+title: Indstillinger For Overvågningstjeneste
 slug: monitoring-options
-untranslated: 1
+lastmod: 2025-01-09
+show_lastmod: 1
 ---
+
+At kunne overvåge TLS-certifikatstatus er nyttigt for mange af vores brugere. Overvågningstjenester kan hjælpe med ting som udløbsmeddelelser og holde øje med uønsket udstedelse.
+
+Let's Encrypt kan anbefale [Red Sift Certifikater (tidligere Hardenize)](https://redsift.com/pulse-platform/certificates). Du kan overvåge op til 250 certifikater gratis gennem Red Sift.
+
+Der er en række andre overvågningsmuligheder derude, herunder:
+
+- [UptimeRobot](https://uptimerobot.com/ssl-monitoring/)
+- [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
+- [TrackSSL](https://trackssl.com/)
+
+Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
+
+Indstillingerne på denne side er kun angivet til oplysningsformål. ISRG støtter eller garanterer ikke sikkerheden, pålideligheden eller effektiviteten af en bestemt tjeneste. Brugerne opfordres til at foretage deres egen undersøgelser og due diligence, før de vælger nogen mulighed. ISRG er ikke ansvarlig for nogen resultater som følge af brugen af disse tjenester.
