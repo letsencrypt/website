@@ -2,7 +2,7 @@
 title: Udfordringstyper
 slug: challenge-types
 date: 2019-02-25
-lastmod: 2023-02-13
+lastmod: 2025-01-07
 show_lastmod: 1
 ---
 
@@ -19,15 +19,16 @@ HTTP-01 udfordring kan kun gøres på port 80. At tillade kunder at angive vilk�
 
 Fordele:
 
- - Det er nemt at automatisere uden ekstra viden om et domæne opsætningen.
- - Det gør det muligt for hosting-udbydere at udstede certifikater for domæner CNAMEde til dem.
- - Det fungerer med alle standard webservere.
+- Det er nemt at automatisere uden ekstra viden om et domæne opsætningen.
+- Det gør det muligt for hosting-udbydere at udstede certifikater for domæner CNAMEde til dem.
+- Det fungerer med alle standard webservere.
+- Det kan også bruges til at validere IP-adresser.
 
 Ulemper:
 
- - Det virker ikke, hvis din ISP blokke port 80 (dette er sjældent, men nogle få internetudbydere gør dette).
- - Let's Encrypt lader dig ikke bruge denne udfordring til at udstede wildcard certifikater.
- - Hvis du har flere webservere, skal du sørge for, at filen er tilgængelig på dem alle.
+- Det virker ikke, hvis din ISP blokke port 80 (dette er sjældent, men nogle få internetudbydere gør dette).
+- Let's Encrypt lader dig ikke bruge denne udfordring til at udstede wildcard certifikater.
+- Hvis du har flere webservere, skal du sørge for, at filen er tilgængelig på dem alle.
 
 # DNS-01 challenge
 
@@ -45,18 +46,16 @@ Du kan have flere TXT poster på plads for samme navn. For eksempel, kan dette s
 
 Fordele:
 
- - Du kan bruge denne udfordring til at udstede certifikater indeholdende wildcard domænenavne.
- - Det fungerer godt, selvom du har flere webservere.
+- Du kan bruge denne udfordring til at udstede certifikater indeholdende wildcard domænenavne.
+- Det fungerer godt, selvom du har flere webservere.
+- Du kan bruge denne udfordring til domænenavne, hvis webservere ikke er tilgængelig for det offentlige internet.
 
 Ulemper:
 
- - At holde API-legitimationsoplysninger på din webserver er risikabelt.
- - Din DNS-udbyder tilbyder muligvis ikke en API.
- - Din DNS API giver muligvis ikke oplysninger om udrulningstider.
-
-# TLS-SNI-01
-
-Denne udfordring blev defineret i udkast til versioner af ACME. Det gjorde en TLS håndtryk på port 443 og sendte en specifik [SNI][] header, på udkig efter certifikat, der indeholdt token. Den [blev deaktiveret i marts 2019][tls-sni-disablement], fordi den ikke var sikker nok.
+- At holde API-legitimationsoplysninger på din webserver er risikabelt.
+- Din DNS-udbyder tilbyder muligvis ikke en API.
+- Din DNS API giver muligvis ikke oplysninger om udrulningstider.
+- Det kan ikke bruges til at validere IP-adresser.
 
 # TLS-ALPN-01
 
@@ -66,14 +65,19 @@ Denne udfordring er ikke egnet til de fleste mennesker. Det er bedst egnet til f
 
 Fordele:
 
- - Det virker, hvis port 80 ikke er tilgængelig for dig.
- - Det kan udføres udelukkende på TLS-laget.
+- Det virker, hvis port 80 ikke er tilgængelig for dig.
+- Det kan udføres udelukkende på TLS-laget.
+- Det kan også bruges til at validere IP-adresser.
 
 Ulemper:
 
- - Det er ikke understøttet af Apache, Nginx eller Certbot, og bliver det sandsynligvis ikke snart.
- - Ligesom HTTP-01, hvis du har flere servere, de har brug for til alle svar med det samme indhold.
- - Denne metode kan ikke bruges til at validere wildcard domæner.
+- Det er ikke understøttet af Apache, Nginx eller Certbot, og bliver det sandsynligvis ikke snart.
+- Ligesom HTTP-01, hvis du har flere servere, de har brug for til alle svar med det samme indhold.
+- Denne metode kan ikke bruges til at validere wildcard domæner.
+
+# TLS-SNI-01
+
+Denne udfordring blev defineret i udkast til versioner af ACME. Det gjorde en TLS håndtryk på port 443 og sendte en specifik [SNI][] header, på udkig efter certifikat, der indeholdt token. Det [blev fjernet i marts 2019][tls-sni-disablement], fordi det ikke var sikkert nok.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
