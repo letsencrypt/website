@@ -29,7 +29,7 @@
 		{{- range .Page.Translations -}}
 			{{- if eq "en" .Language.Lang -}}
 			{{- $currentpage_en := .Page -}}
-			
+
 			{{- if.Page.Params.show_lastmod -}}
 				{{- partial "lastmod" . -}}
 			{{- end -}}
@@ -81,11 +81,11 @@
 			{{- i18n "english_is_canonical" | safeHTML -}}
 		</div>
 		{{- end -}}
-			
+
 		{{- if.Page.Params.show_lastmod -}}
 			{{- partial "lastmod" . -}}
 		{{- end -}}
-		
+
 		{{- partial "outdated_translation" . -}}
 
 		{{- $scratch := newScratch -}}
