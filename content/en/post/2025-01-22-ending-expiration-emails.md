@@ -2,7 +2,7 @@
 author: Josh Aas
 date: 2025-01-17T00:00:00Z
 slug: ending-expiration-emails
-title: "Ending Support for Expiration Emails"
+title: "Ending Support for Expiration Notification Emails"
 excerpt: "We will no longer send email reminders about upcoming certificate expirations."
 display_default_footer: true
 display_newsletter_embed: true
