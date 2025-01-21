@@ -128,6 +128,12 @@ div[data-netlify-site-id] {
     }
 }
 
+.newsletter-form-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "fonts", "pure", "pure-fix", "base", "layout", "nav",

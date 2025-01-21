@@ -1,3 +1,12 @@
+{{ if and (ne .Section "documents") (.Page.Params.display_newsletter_embed) }}
+<div class="wrapper">
+<div class="newsletter-form-wrapper">
+  {{ partial "newsletter-form" . }}
+</div>
+</div>
+{{ end }}
+
+
 {{ if and (ne .Section "docs") (ne .Section "documents") (not .Params.no_donate_footer) }}
 <div class="donate-footer">
   <div class="wrapper text-center">
@@ -8,6 +17,8 @@
   </div>
 </div>
 {{ end }}
+
+
 
 {{ if ne .Section "documents" }}
 <footer class="site-footer">
@@ -35,9 +46,6 @@
             <span itemprop="addressCountry">USA</span>
           </span>
         </p>
-      </div>
-
-      <div class="footer-col  footer-col-1">
         <ul class="social-media-list">
           {{ with .Site.Params.github_username }}
           <li>
@@ -56,20 +64,12 @@
             </a>
           </li>
          {{ end }}
-          {{ with .Site.Params.mastodon_username }}
-          <li>
-            <a rel="me" href="https://infosec.exchange/@{{ . }}">
-              <i class="fab fa-mastodon" aria-hidden="true"></i>
-              <span class="username">Mastodon</span>
-            </a>
-          </li>
-         {{ end }}
         </ul>
         {{ i18n "footer_policies" | safeHTML }}
       </div>
 
       <div class="footer-col footer-newsletter-col  footer-col-3">
-        {{ if not .Page.Params.should_display_prominent_newsletter_form }}
+        {{ if and (not .Page.Params.should_display_prominent_newsletter_form) (not .Page.Params.display_newsletter_embed) }}
           <h6>{{ i18n "subscribe_to_newsletter_headline" }}</h6>
           {{ partial "newsletter-form" . }}
         {{ end }}

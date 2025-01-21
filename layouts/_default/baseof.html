@@ -16,9 +16,6 @@
 	<body>
 		{{ partial "header" . }}
 		{{ block "main" . }}{{ end }}
-		{{ if .Page.Params.should_display_prominent_newsletter_form }}
-			{{ partial "newsletter-form" . }}
-		{{ end }}
 		{{ partial "footer" . }}
 	</body>
 </html>
