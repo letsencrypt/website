@@ -14,6 +14,7 @@ There are a number of other monitoring options out there, including:
 * [UptimeRobot](https://uptimerobot.com/ssl-monitoring/)
 * [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 * [TrackSSL](https://trackssl.com/)
+* [Host-Tracker](https://www.host-tracker.com/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
