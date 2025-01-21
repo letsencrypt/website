@@ -9,11 +9,13 @@ Being able to monitor TLS certificate status is helpful for many of our subscrib
 
 Let’s Encrypt can recommend [Red Sift Certificates Lite (formerly Hardenize)](https://redsift.com/pulse-platform/certificates-lite). You can monitor up to 250 certificates for free through Red Sift.
 
-There are a number of other monitoring options out there, including:
+There are a number of monitoring options out there, including:
 
+* [Red Sift Certificates (formerly Hardenize)](https://redsift.com/pulse-platform/certificates-lite)
 * [UptimeRobot](https://uptimerobot.com/ssl-monitoring/)
 * [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 * [TrackSSL](https://trackssl.com/)
+* [Host-Tracker](https://www.host-tracker.com/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 

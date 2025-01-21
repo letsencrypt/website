@@ -299,50 +299,17 @@ html[dir="rtl"] .social-media-list {
 .footer-col-wrapper {
     font-size: 15px;
     color: $text-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-unit;
+
+    @include media-query($on-palm) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer-col {
-    float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-/* 2 Column Version
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
-    width:         calc(65% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-}
-*/
-
-// 3 column version
-
-.footer-col-1 {
-    width: -webkit-calc(25% - (#{$footer-spacing-unit} / 3));
-    width:         calc(25% - (#{$footer-spacing-unit} / 3));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(40% - (#{$footer-spacing-unit} / 3));
-    width:         calc(40% - (#{$footer-spacing-unit} / 3));
-}
-.footer-col-3 {
-    width: -webkit-calc(33.3% - (#{$footer-spacing-unit} / 3));
-    width:         calc(33.3% - (#{$footer-spacing-unit} / 3));
 }
 
 .footer-newsletter-col {
@@ -359,25 +326,6 @@ html[dir="rtl"] .social-media-list {
         margin-top: 40px;
     }
 }
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2,
-    .footer-col-3 {
-        width: -webkit-calc(33.3% - (#{$footer-spacing-unit} / 3));
-        width:         calc(33.3% - (#{$footer-spacing-unit} / 3));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$footer-spacing-unit} / 3));
-        width:         calc(100% - (#{$footer-spacing-unit} / 3));
-    }
-}
-
-
 
 /**
  * Page content

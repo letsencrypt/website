@@ -46,9 +46,6 @@
             <span itemprop="addressCountry">USA</span>
           </span>
         </p>
-      </div>
-
-      <div class="footer-col  footer-col-1">
         <ul class="social-media-list">
           {{ with .Site.Params.github_username }}
           <li>
@@ -64,14 +61,6 @@
             <a href="{{ . }}">
               <i class="fab fa-brands fa-linkedin-in" aria-hidden="true"></i>
               <span class="username">LinkedIn</span>
-            </a>
-          </li>
-         {{ end }}
-          {{ with .Site.Params.mastodon_username }}
-          <li>
-            <a rel="me" href="https://infosec.exchange/@{{ . }}">
-              <i class="fab fa-mastodon" aria-hidden="true"></i>
-              <span class="username">Mastodon</span>
             </a>
           </li>
          {{ end }}
