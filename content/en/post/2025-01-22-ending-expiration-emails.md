@@ -20,4 +20,4 @@ Since its inception, Let's Encrypt has been sending expiration notification emai
 
 For those who would like to continue receiving expiration notifications, we recommend using a third party service such as [Red Sift Certificates Lite](https://redsift.com/pulse-platform/certificates-lite) (formerly Hardenize). Red Sift's monitoring service providing expiration emails is free of charge for up to 250 certificates. More monitoring options can be found [here](/docs/monitoring-options).
 
-While we will be minimizing the email addresses we retain connected to issuance data, we will continue to offer options for staying in touch. If you would like to receive information about API changes, major incidents, or our newsletter, you can sign up for various email lists below.
+While we will be minimizing the email addresses we retain connected to issuance data, you can opt in to receive other emails. We’ll keep you informed about technical updates, and other news about Let’s Encrypt and our parent nonprofit, [ISRG](http://abetterinternet.org), based on the preferences you choose.  You can sign up for our email lists below:
