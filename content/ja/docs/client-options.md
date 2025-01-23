@@ -1,7 +1,7 @@
 ---
 title: ACME クライアント実装
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Certbot があなたが求める要件を満たさない場合や、単に他の
 
 {{< clients acme_v2="ACME v2 Compatible Clients" libraries="ライブラリ" projects="Let's Encrypt と連携できるプロジェクト" >}}
 
-Python の [acme](https://github.com/certbot/certbot/tree/master/acme) モジュールは、Certbot tree の一部として含まれているものですが、スタンドアローンのパッケージとしても公開されています。[PyPI](https://pypi.python.org/pypi/acme) や [Debian](https://packages.debian.org/search?keywords=python-acme)、[Ubuntu](https://launchpad.net/ubuntu/+source/python-acme)、[Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) などのディストリビューションでも配布されており、他の多数のクライアントでも利用されています。
+Python の [acme](https://github.com/certbot/certbot/tree/main/acme) モジュールは、Certbot tree の一部として含まれているものですが、スタンドアローンのパッケージとしても公開されています。[PyPI](https://pypi.python.org/pypi/acme) や [Debian](https://packages.debian.org/search?keywords=python-acme)、[Ubuntu](https://launchpad.net/ubuntu/+source/python-acme)、[Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) などのディストリビューションでも配布されており、他の多数のクライアントでも利用されています。
 
 {{< /clients >}}
 

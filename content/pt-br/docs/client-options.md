@@ -1,7 +1,7 @@
 ---
 title: Implementações de Clientes ACME
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Todos os seguintes clientes suportam a API ACMEv2 ([RFC 8555](https://tools.ietf
 
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
-O módulo Python [acme](https://github.com/certbot/certbot/tree/master/acme) faz parte do Certbot, mas também é usado por vários outros clientes e está disponível como um pacote autônomo via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) e outras distribuições.
+O módulo Python [acme](https://github.com/certbot/certbot/tree/main/acme) faz parte do Certbot, mas também é usado por vários outros clientes e está disponível como um pacote autônomo via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) e outras distribuições.
 
 {{< /clients >}}
 

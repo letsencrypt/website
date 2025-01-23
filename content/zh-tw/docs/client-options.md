@@ -1,7 +1,7 @@
 ---
 title: ACME 客戶端
 slug: client-options
-lastmod: 2019-05-24
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -20,7 +20,7 @@ Let's Encrypt 使用 ACME 協定，來驗證你所申請憑證中的網域控制
 
 {{< clients acme_v2="相容 ACME v2 的客戶端" libraries="Libraries" projects="整合了 Let’s Encrypt 的專案" >}}
 
-Python 模組 [acme](https://github.com/certbot/certbot/tree/master/acme) 是 Certbot 的一部分，但它也被其他許多客戶端所使用，請且在 [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 和其他的 Linux 版本中作為獨立軟體提供。
+Python 模組 [acme](https://github.com/certbot/certbot/tree/main/acme) 是 Certbot 的一部分，但它也被其他許多客戶端所使用，請且在 [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 和其他的 Linux 版本中作為獨立軟體提供。
 
 {{< /clients >}}
 

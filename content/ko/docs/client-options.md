@@ -1,7 +1,7 @@
 ---
 title: ACME 클라이언트 구현
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Certbot이 사용자의 요구를 충족하지 못하거나 다른 작업을 수
 
 {{< clients acme_v2="ACME v2 Compatible Clients" libraries="Libraries" projects="Projects integrating with Let’s Encrypt" >}}
 
-Python [acme](https://github.com/certbot/certbot/tree/master/acme) 모듈은 Certbot 트리의 일부이지만 다른 여러 클라이언트에서도 사용되며 [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 및 여러 배포판에서 독립 실행형 패키지로 사용할 수 있습니다.
+Python [acme](https://github.com/certbot/certbot/tree/main/acme) 모듈은 Certbot 트리의 일부이지만 다른 여러 클라이언트에서도 사용되며 [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 및 여러 배포판에서 독립 실행형 패키지로 사용할 수 있습니다.
 
 {{< /clients >}}
 

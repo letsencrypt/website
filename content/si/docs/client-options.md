@@ -1,7 +1,7 @@
 ---
 title: ACME අනුග්‍රාහකය ක්‍රියාවට නැංවීම්
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ lastmod: 2020-12-18
 
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
-පයිතන් [acme](https://github.com/certbot/certbot/tree/master/acme) ඒකකය සර්ට්බොට් හි කොටසකි, නමුත් එය අනුග්‍රාහක ගණනාවක් විසින් භාවිතා කරන අතර තනි ඇසුරුමක් ලෙස ද [PyPI](https://pypi.python.org/pypi/acme), [ඩෙබියන්](https://packages.debian.org/search?keywords=python-acme), [උබුන්ටු](https://launchpad.net/ubuntu/+source/python-acme), [ෆෙඩෝරා](https://bodhi.fedoraproject.org/updates/?packages=python-acme) සහ අනෙකුත් බෙදාහැරීම් වලද ඇත.
+පයිතන් [acme](https://github.com/certbot/certbot/tree/main/acme) ඒකකය සර්ට්බොට් හි කොටසකි, නමුත් එය අනුග්‍රාහක ගණනාවක් විසින් භාවිතා කරන අතර තනි ඇසුරුමක් ලෙස ද [PyPI](https://pypi.python.org/pypi/acme), [ඩෙබියන්](https://packages.debian.org/search?keywords=python-acme), [උබුන්ටු](https://launchpad.net/ubuntu/+source/python-acme), [ෆෙඩෝරා](https://bodhi.fedoraproject.org/updates/?packages=python-acme) සහ අනෙකුත් බෙදාහැරීම් වලද ඇත.
 
 {{< /clients >}}
 

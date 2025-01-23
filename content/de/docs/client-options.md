@@ -1,7 +1,7 @@
 ---
 title: ACME Client Implementierungen
 slug: client-options
-lastmod: 2022-09-07
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Let's Encrypt unterstützt die ACMEv2 API, welche kompatibel ist mit dem [finali
 
 {{< clients acme_v2="ACME v2 kompatible Clients" libraries="Bibliotheken" projects="Projektintegration mit Let's Encrypt" >}}
 
-Das Python [acme](https://github.com/certbot/certbot/tree/master/acme) Modul ist Teil des Certbot-Baums, wird aber auch in anderen Clients benutzt und ist als eigenes Paket verfügbar über [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) und andere Distributionen.
+Das Python [acme](https://github.com/certbot/certbot/tree/main/acme) Modul ist Teil des Certbot-Baums, wird aber auch in anderen Clients benutzt und ist als eigenes Paket verfügbar über [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) und andere Distributionen.
 
 {{< /clients >}}
 
