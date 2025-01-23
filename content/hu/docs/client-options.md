@@ -1,7 +1,7 @@
 ---
 title: ACME kliens implementációk
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Az alábbi kliensek mindegyike támogatja az ACMEv2 API-t ([RFC 8555](https://to
 
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
-A Python [acme](https://github.com/certbot/certbot/tree/master/acme) modul a Certbot része, de számos más kliens is használja, és önálló csomagként is elérhető [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) és más disztribúciókban.
+A Python [acme](https://github.com/certbot/certbot/tree/main/acme) modul a Certbot része, de számos más kliens is használja, és önálló csomagként is elérhető [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) és más disztribúciókban.
 
 {{< /clients >}}
 

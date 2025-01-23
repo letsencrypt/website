@@ -1,7 +1,7 @@
 ---
 title: Implementaciones de cliente ACME
 slug: client-options
-lastmod: 2019-05-24
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -26,7 +26,7 @@ Si certbot no llega a sus necesidades, o simplemente le gustaría tratar algo di
 
 {{< clients acme_v2="Clientes Compatibles con ACME v2" libraries="Libraries" projects="Proyectos con integración Let’s Encrypt" >}}
 
-el modulo en Python de [acme](https://github.com/certbot/certbot/tree/master/acme) es parte del *tree* de Certbot, pero también es utilizado por un numero de clientes y está disponible como un paquete en si por [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) y otras distribuciones.
+el modulo en Python de [acme](https://github.com/certbot/certbot/tree/main/acme) es parte del *tree* de Certbot, pero también es utilizado por un numero de clientes y está disponible como un paquete en si por [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) y otras distribuciones.
 
 {{< /clients >}}
 

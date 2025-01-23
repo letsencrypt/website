@@ -1,7 +1,7 @@
 ---
 title: ACME-asiakkaan toteutukset
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Kaikki seuraavat asiakkaat tukevat ACMEv2 API:ta ([RFC 8555](https://tools.ietf.
 
 {{< clients libraries="Kirjastot" projects="Let's Encryptiin integroitavat projektit" >}}
 
-Pythonin [acme](https://github.com/certbot/certbot/tree/master/acme)-moduuli on osa Certbotia, mutta sitä käyttävät myös monet muut asiakkaat ja se on saatavilla erillisenä pakettina [PyPI](https://pypi.python.org/pypi/acme):n, [Debian](https://packages.debian.org/search?keywords= python-acme):n, [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme):n, [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme):n ja muiden jakelujen kautta.
+Pythonin [acme](https://github.com/certbot/certbot/tree/main/acme)-moduuli on osa Certbotia, mutta sitä käyttävät myös monet muut asiakkaat ja se on saatavilla erillisenä pakettina [PyPI](https://pypi.python.org/pypi/acme):n, [Debian](https://packages.debian.org/search?keywords= python-acme):n, [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme):n, [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme):n ja muiden jakelujen kautta.
 
 {{< /clients >}}
 

@@ -1,7 +1,7 @@
 ---
 title: Реализации ACME-клиента
 slug: client-options
-lastmod: 2022-09-07
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Let's Encrypt использует ACME-протокол для подтверж
 
 {{< clients libraries="Библиотеки" projects="Проекты интеграции с Let's Encrypt" >}}
 
-Модуль Python [acme](https://github.com/certbot/certbot/tree/master/acme) является частью Certbot, но также используется рядом других клиентов и доступен как отдельный пакет в [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) и других дистрибутивах.
+Модуль Python [acme](https://github.com/certbot/certbot/tree/main/acme) является частью Certbot, но также используется рядом других клиентов и доступен как отдельный пакет в [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) и других дистрибутивах.
 
 {{< /clients >}}
 

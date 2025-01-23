@@ -1,7 +1,7 @@
 ---
 title: Klientimplementationer av ACME
 slug: client-options
-lastmod: 2020-12-18
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -30,7 +30,7 @@ Eventuella beskrivningar av klienterna och projekten nedan erbjuds endast på en
 
 # Lägg till en klient eller ett projekt
 
-Python-modulen [acme](https://github.com/certbot/certbot/tree/master/acme) är en del av Certbot, men används även av ett antal andra klienter och tillhandahålls som ett separat paket via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) och andra distributioner.
+Python-modulen [acme](https://github.com/certbot/certbot/tree/main/acme) är en del av Certbot, men används även av ett antal andra klienter och tillhandahålls som ett separat paket via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) och andra distributioner.
 
 Innan du skickar in en pull-förfrågan var god säker:
 
