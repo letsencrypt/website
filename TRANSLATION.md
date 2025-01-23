@@ -14,8 +14,8 @@ How to use Crowdin: https://support.crowdin.com/online-editor/
 ## How to add a new language
 
 If you are interested to add a new language, please open an issue with the information requested in:
-- `languageName`, `languageCode`, `beforeColon`, `description` and `numberFormat` in https://github.com/letsencrypt/website/blob/master/config/_default/languages.en.toml
-- `name` entries in https://github.com/letsencrypt/website/blob/master/config/_default/menu.en.toml
+- `languageName`, `languageCode`, `beforeColon`, `description` and `numberFormat` in https://github.com/letsencrypt/website/blob/main/config/_default/languages.en.toml
+- `name` entries in https://github.com/letsencrypt/website/blob/main/config/_default/menu.en.toml
 
 
 Someone from Let's Encrypt will add the language to Crowdin so you can start translating on https://crowdin.com/project/lets-encrypt-website
