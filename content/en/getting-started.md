@@ -12,9 +12,9 @@ The first question to answer for people who want to get started with Let's Encry
 
 # Getting certificates through your hosting provider
 
-For many people, their hosting provider get and manage certificates from Let's Encrypt for them. In such cases, the hosting provider is operating an ACME client and you don't need to think about getting or operating ACME client software yourself.
+For many people, their hosting provider will get and manage certificates from Let's Encrypt for them. If this is your situation, your provider is operating an ACME client and you don't need to think about getting or operating ACME client software yourself.
 
-If your provider does this for you, it will either happen automatically or there will be a configuration option that you will need to enable. Check your provider's documentation and configuration options.
+If your provider gets and manages certificates for you, it will either happen automatically or there will be a configuration option that you will need to enable. Check your provider's documentation and configuration options.
 
 # Selecting and operating an ACME client yourself
 
