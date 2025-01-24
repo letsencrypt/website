@@ -22,10 +22,10 @@ If your hosting provider does not handle getting and managing certificates for y
 
 For most people we recommend the [Certbot ACME client](https://certbot.eff.org/). The Certbot website has excellent documentation and instructions for operating Certbot.
 
-There are [many more options for ACME client software](https://letsencrypt.org/docs/client-options/) if for some reason Certbot does not meet your needs.
+There are [many more options for ACME client software](/docs/client-options/) if for some reason Certbot does not meet your needs.
 
 # Getting Help
 
 If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
 
-Our website also has [extensive documentation](https://letsencrypt.org/docs/) if you need more details.
+Our website also has [extensive documentation](/docs/) if you need more details.
