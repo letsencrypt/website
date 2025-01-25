@@ -1,7 +1,7 @@
 ---
 title: Politik om beskyttelse af personlige oplysninger
 slug: privacy
-lastmod: 2024-06-28
+lastmod: 2025-01-15
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -16,11 +16,11 @@ Let's Encrypt er en tjeneste, der leveres af [Internet Security Research Group](
 
 ## Deltagende part
 
-Når du bruger et HTTPS-websted eller en anden TLS-tjeneste med et Lad os kryptere certifikat, din browser (eller TLS-klient) kan forespørge Let's Encrypt for at kontrollere, om certifikatet er blevet tilbagekaldt ("OCSP-anmodning"). Hvis din browser fremsætter en OCSP-anmodning, vil vores servere automatisk optage din IP-adresse, browser og operativsystem i midlertidige serverlogfiler. Vi bruger ikke data fra OCSP-anmodninger til at opbygge profiler eller identificere enkeltpersoner. Midlertidige serverlogfiler anvendes kun til operationelle formål og slettes normalt på mindre end syv dage. Vi kan opbevare en del af serverlogs i længere perioder for at undersøge software fejl eller misbrug. Hvis vi gør det, sletter vi eventuelle gemte logs, når vi er færdige med at undersøge. Vi kan også beregne, opbevare og offentliggøre samlede oplysninger fra serverlogs, såsom hvilke certifikater genererer den største mængde af anmodninger. Vi vil altid bestræbe os på at sikre, at sådanne datasæt ikke indeholder oplysninger om aktiviteterne af identificerbare brugere eller enheder.
+Når du bruger et HTTPS-websted eller en anden TLS-tjeneste med et Let's Encrypt certifikat, din browser (eller TLS-klient) kan forespørge Let's Encrypt for at kontrollere, om certifikatet er blevet tilbagekaldt. Hvis din browser fremsætter en OCSP-anmodning, vil vores servere automatisk skrive din IP-adresse, browser og operativsystem i midlertidige serverlogfiler. Vi bruger ikke disse data til at opbygge profiler eller identificere enkeltpersoner. Midlertidige serverlogfiler anvendes kun til operationelle formål og slettes normalt på mindre end syv dage. Vi kan opbevare en del af serverlogs i længere perioder for at undersøge software fejl eller misbrug. Hvis vi gør det, sletter vi eventuelle gemte logs, når vi er færdige med at undersøge. Vi kan også beregne, opbevare og offentliggøre samlede oplysninger fra serverlogs, såsom hvilke certifikater genererer den største mængde af anmodninger. Vi vil altid bestræbe os på at sikre, at sådanne datasæt ikke indeholder oplysninger om aktiviteterne af identificerbare brugere eller enheder.
 
 ## Abonnent
 
-Hvis du er abonnent, anmoder du om et betroet certifikat fra Let's Encrypt som har til formål offentligt at bekræfte, at du kontrollerer et bestemt domænenavn eller navne, der kan nås på internettet. Som en del af processen med at bevise denne kontrol, vil Let's Encrypt indsamle forskellige oplysninger vedrørende certifikatgodkendelse og administration. Disse oplysninger omfatter de IP-adresser, hvorfra du får adgang til Lad os Kryptere tjenesten; alle tilknyttede IP-adresser for ethvert domænenavn, der ønskes serveroplysninger vedrørende eventuelle valideringsanmodninger; fuldstændige logninger af alle indgående HTTP / ACME-anmodninger, alle udgående valideringsanmodninger; og oplysninger sendt af eller udledt af din klient software. Vi vil gemme disse oplysninger i et minimum på syv år per betroede rodprogram krav. Disse oplysninger vil blive opbevaret i højst ti år.
+Hvis du er abonnent, anmoder du om et betroet certifikat fra Let's Encrypt som har til formål offentligt at bekræfte, at du kontrollerer et bestemt domænenavn eller navne, der kan nås på internettet. Som en del af processen med at bevise denne kontrol, vil Let's Encrypt indsamle forskellige oplysninger vedrørende certifikatgodkendelse og administration. Disse oplysninger omfatter de IP-adresser, hvorfra du får adgang til Let's Encrypt tjenesten; alle tilknyttede IP-adresser for ethvert domænenavn, der ønskes serveroplysninger vedrørende eventuelle valideringsanmodninger; fuldstændige logninger af alle indgående HTTP / ACME-anmodninger, alle udgående valideringsanmodninger; og oplysninger sendt af eller udledt af din klient software. Vi vil gemme disse oplysninger i et minimum på to år per trusted root program krav.
 
 Vi skal kunne demonstrere over for offentligheden herunder dem, der er afhængige af vores certifikaters troværdighed, at vores tjenester fungerer som forventet. Som følge heraf kan vi ikke slette oplysninger, herunder IP-adresser. Disse oplysninger kan offentliggøres på en række måder, herunder via offentlige API, offentlige registre så som Certificate Transparency (CT) logge og/eller offentlige diskussioner.
 
@@ -32,7 +32,7 @@ Det kan være nødvendigt at downloade klientsoftware fra et depot såsom Debian
 
 Når du som besøgende gennemser ISRG hjemmeside, har du mulighed for at lave en donation. Donationer behandles af vores betroede betalingspartnere, herunder DonorBox, Stripe, Shopify, og PayPal, afhængigt af den valgte betalingsmetode og opbevares i ISRG's Salesforce database og Sage Intacct som nødvendigt. Vi indsamler dit navn og din e-mailadresse, og hvis du angiver det, din postadresse, når du donerer. Når du donerer, vil vi bruge dine oplysninger til vores legitime interesse i at behandle og administrere dit bidrag, herunder fundraising påmindelser og fornyelser. Dine interaktioner med [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Printful](https://www.printful.com/policies/privacy), [Formstack](https://www.formstack.com/legal), [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) er underlagt deres respektive privatlivspolitikker. Vi indsamler eller opbevarer ikke kreditkort eller bankoplysninger relateret til donationer.
 
-Du kan have mulighed for at give din e-mail-adresse til at modtage meddelelser i forbindelse med ISRG-projekter gennem en tilmelding på en ISRG hjemmeside og via andre markedsføringsmaterialer. Enhver kommunikation leveret via Salesforce og dine interaktioner med [Salesforce](https://www.salesforce.com/company/privacy/) er underlagt deres privatlivspolitikker. Vi kan lejlighedsvis bruge din e-mail-adresse til at sende personlige meddelelser relateret til ISRG og dets projekter. Du kan anmode om at få din e-mailadresse fjernet ved at fravælge via sidefoden af vores e-mails eller sende os en e-mail på press@abetterinternet.org
+Du kan have mulighed for at give din e-mail-adresse til at modtage meddelelser i forbindelse med ISRG-projekter gennem en tilmelding på en ISRG hjemmeside og via andre markedsføringsmaterialer. Enhver kommunikation leveret via Salesforce og dine interaktioner med [Salesforce](https://www.salesforce.com/company/privacy/) er underlagt deres privatlivspolitikker. Vi kan lejlighedsvis bruge din e-mail-adresse til at sende personlige meddelelser relateret til ISRG og dets projekter. Du kan anmode om at få din e-mailadresse fjernet ved at fravælge via sidefoden af vores e-mails eller sende os en e-mail på press@abetterinternet.org.
 
 Hvis du registrerer dig for at bruge Let's Encrypt community support forum, er de personlige oplysninger, du giver, og dine handlinger der er underlagt fortrolighedspolitikken af vores hosting og softwareudbyder for forummet, [Civilized Discourse Construction Kit](https://www.discourse.org/privacy). Vi indsamler eller vedligeholder ikke personlige oplysninger via vores tilbud om dette supportforum.
 
@@ -59,7 +59,7 @@ Desuden forbeholder vi os retten efter eget skøn selvstændigt at gøre indsige
 
 Vi behandler personoplysninger som beskrevet i denne politik. Formålet med og retsgrundlaget for behandling af oplysninger er følgende:
 
-**Formål:** Giver Certifikatstatus (OCSP) Information
+**Formål:** Give Certifikatstatus (Ocsp) Information
 
 **Lov grundlag:** Legitime interesser
 

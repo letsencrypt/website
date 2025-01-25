@@ -1,13 +1,13 @@
 ---
 title: 可供选择的证书监测服务
 slug: monitoring-options
-lastmod: 2025-01-09
+lastmod: 2025-01-16
 show_lastmod: 1
 ---
 
 许多用户都希望能够监测 TLS 证书的状态， 这时专业的证书监测服务就可以派上用场，例如在证书即将到期时发出提醒，并为您留意是否有异常的证书签发活动。
 
-Let’s Encrypt 较为推荐的服务是 [Red Sift Certificates](https://redsift.com/pulse-platform/certificates)（过去名为 Hardenize）， 您可以通过 Red Sift 免费监测 250 份证书。
+Let’s Encrypt 较为推荐的服务是 [Red Sift Certificates Lite](https://redsift.com/pulse-platform/certificates-lite)（过去名为 Hardenize）， 您可以通过 Red Sift 免费监测 250 份证书。
 
 另外还有一些监测服务可供选择，包括：
 

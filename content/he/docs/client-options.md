@@ -1,7 +1,7 @@
 ---
 title: מימושי לקוחות ACME
 slug: client-options
-lastmod: 2025-01-22
+lastmod: 2022-09-07
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ lastmod: 2025-01-22
 
 {{< clients libraries="ספריות" projects="מיזמים שיודעים להשתלב מול Let's Encrypt" >}}
 
-המודול [acme](https://github.com/certbot/certbot/tree/main/acme) ל־Python הוא חלק מ־Certbot, אך נעשה בו שימוש גם בלקוחות אחרים והוא גם זמין כחבילה עצמאית דרך [PyPI](https://pypi.python.org/pypi/acme),‏ [Debian](https://packages.debian.org/search?keywords=python-acme),‏ [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme),‏ [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) ומגוון הפצות נוספות.
+המודול [acme](https://github.com/certbot/certbot/tree/master/acme) ל־Python הוא חלק מ־Certbot, אך נעשה בו שימוש גם בלקוחות אחרים והוא גם זמין כחבילה עצמאית דרך [PyPI](https://pypi.python.org/pypi/acme),‏ [Debian](https://packages.debian.org/search?keywords=python-acme),‏ [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme),‏ [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) ומגוון הפצות נוספות.
 
 {{< /clients >}}
 

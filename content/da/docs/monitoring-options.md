@@ -1,13 +1,13 @@
 ---
 title: Indstillinger For Overvågningstjeneste
 slug: monitoring-options
-lastmod: 2025-01-09
+lastmod: 2025-01-16
 show_lastmod: 1
 ---
 
 At kunne overvåge TLS-certifikatstatus er nyttigt for mange af vores brugere. Overvågningstjenester kan hjælpe med ting som udløbsmeddelelser og holde øje med uønsket udstedelse.
 
-Let's Encrypt kan anbefale [Red Sift Certifikater (tidligere Hardenize)](https://redsift.com/pulse-platform/certificates). Du kan overvåge op til 250 certifikater gratis gennem Red Sift.
+Let's Encrypt kan anbefale [Red Sift Certifikater Lite (tidligere Hardenize)](https://redsift.com/pulse-platform/certificates-lite). Du kan overvåge op til 250 certifikater gratis gennem Red Sift.
 
 Der er en række andre overvågningsmuligheder derude, herunder:
 
