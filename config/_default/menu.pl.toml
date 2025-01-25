@@ -1,37 +1,42 @@
 [[main]]
-name = "Get Help"
+name = "Uzyskaj pomoc"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
-name = "Donate"
+name = "Wesprzyj nas"
 weight = 30
 identifier = "donate"
+
 [[main]]
-name = "About Us"
+name = "O Nas"
 weight = 40
 identifier = "about"
+
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 20
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
+
 [[main]]
-name = "Service Status"
+name = "Status usługi"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
+
 [[main]]
-name = "Careers"
+name = "Kariera"
 weight = 80
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
-name = "Become a Sponsor"
+name = "Zostań sponsorem"
 weight = 40
 identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
-

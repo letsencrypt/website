@@ -7,7 +7,7 @@ weight = 475
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt to bezpłatny, zautomatyzowany i otwarty urząd certyfikacji udostępniany przez organizację non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Przeczytaj wszystkie tegoroczne informacje o nas w naszym <a href="https://www.abetterinternet.org/annual-reports/"> 2023 Rocznym Sprawozdaniu</a>.
+Let's Encrypt to bezpłatny, zautomatyzowany i otwarty urząd certyfikacji udostępniany przez organizację non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Przeczytaj wszystkie tegoroczne informacje o nas w naszym <a href="https://www.abetterinternet.org/annual-reports/"> 2024 Rocznym Sprawozdaniu</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/pl_PL/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "PL"
