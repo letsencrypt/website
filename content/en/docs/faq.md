@@ -69,7 +69,7 @@ Email encryption and code signing require a different type of certificate that L
 
 No. Never.
 
-The private key is always generated and managed on your own servers, not by the Let's Encrypt certificate authority.
+The private key is always generated and managed on your own servers, not by the Let's Encrypt Certificate Authority.
 
 ## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
 
