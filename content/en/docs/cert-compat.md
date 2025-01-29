@@ -1,7 +1,7 @@
 ---
 title: Certificate Compatibility
 slug: certificate-compatibility
-lastmod: 2024-08-25
+lastmod: 2025-01-19
 show_lastmod: 1
 ---
 
@@ -37,7 +37,7 @@ If your platform is not listed here, we appreciate [pull requests](https://githu
 * Ubuntu >= [18.04 Bionic Beaver](https://launchpad.net/ubuntu/+source/ca-certificates/20230311) (with updates applied)
 * Debian >= [12 / Bookworm](https://tracker.debian.org/news/1426477/accepted-ca-certificates-20230311-source-into-unstable/)
 * RHEL >= 7.9, 8.6, 9.1 ([with updates applied](https://src.fedoraproject.org/rpms/ca-certificates/c/f6b8f45e836dfc9c69585bf7ef0250ad734b086a))
-* Java >= [21.0.2](https://jdk.java.net/21/release-notes)
+* Java >= [8u401](https://www.oracle.com/java/technologies/javase/8u401-relnotes.html#JDK-8317374), [11.0.22](https://www.oracle.com/java/technologies/javase/11-0-22-relnotes.html#JDK-8317374), [17.0.10](https://www.oracle.com/java/technologies/javase/17-0-10-relnotes.html#JDK-8317374), [21.0.2](https://www.oracle.com/java/technologies/javase/21-0-2-relnotes.html#JDK-8317374), [22+](https://www.oracle.com/java/technologies/javase/22-relnote-issues.html#JDK-8317374)
 * NSS >= [3.74](https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html)
 * Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (earlier versions use the operating system trust store)
 
