@@ -88,21 +88,21 @@ The transition to Redis and GCRA brought immediate, measurable improvements. We 
 
 Check latency is the extra time added to each request while verifying rate limit compliance. Under the old MariaDB-based system, these checks slowed noticeably during peak traffic, when database contention caused significant delays. Our new Redis-based system dramatically reduced this overhead. The high-traffic "new-order" endpoint saw the greatest improvement, while the "new-account" endpoint&mdash;though considerably lighter in traffic&mdash;also benefited, especially callers with IPv6 addresses. These results show that our subscribers now experience consistent response times, even under peak load.
 
-![](/images/blog/blog-2025-01-30--image1.png)
+![Rate Limit Check Latency Before and After chart](/images/blog/blog-2025-01-30--image1.png)
 
 ### Database Health
 
 Our once strained [database servers](https://letsencrypt.org/2021/01/21/next-gen-database-servers/) are now operating with ample headroom. In total, MariaDB operations have dropped by 80%, improving responsiveness, reducing contention, and freeing up resources for mission-critical issuance workflows.
 
-![](/images/blog/blog-2025-01-30--image2.png)
+![Chart showing performance improvement for InnoDB Row Operations](/images/blog/blog-2025-01-30--image2.png)
 
 Buffer pool requests have decreased by more than 50%, improving caching efficiency and reducing overall memory pressure.
 
-![](/images/blog/blog-2025-01-30--image3.png)
+![Chart showing performance improvement for InnoDB Buffer Pool Requests](/images/blog/blog-2025-01-30--image3.png)
 
 Reads of the authorizations table&mdash;a notorious bottleneck&mdash;have dropped by over 99%. Previously, this table outpaced all others by more than two orders of magnitude; now it ranks second (the green line below), just narrowly surpassing our third most-read table.
 
-![](/images/blog/blog-2025-01-30--image4.png)
+![Chart showing Top Tables by Rows Read](/images/blog/blog-2025-01-30--image4.png)
 
 ### Tracking Zombie Clients
 
