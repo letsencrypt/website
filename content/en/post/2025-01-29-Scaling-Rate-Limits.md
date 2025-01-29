@@ -94,11 +94,11 @@ Check latency is the extra time added to each request while verifying rate limit
 
 Our once strained [database servers](https://letsencrypt.org/2021/01/21/next-gen-database-servers/) are now operating with ample headroom. In total, MariaDB operations have dropped by 80%, improving responsiveness, reducing contention, and freeing up resources for mission-critical issuance workflows.
 
-![Chart showing performance improvement for InnoDB Row Operations](/images/blog/blog-2025-01-30--image2.png)
+![Chart showing reduction in InnoDB Row Operations](/images/blog/blog-2025-01-30--image2.png)
 
 Buffer pool requests have decreased by more than 50%, improving caching efficiency and reducing overall memory pressure.
 
-![Chart showing performance improvement for InnoDB Buffer Pool Requests](/images/blog/blog-2025-01-30--image3.png)
+![Chart showing reduction in InnoDB Buffer Pool Requests](/images/blog/blog-2025-01-30--image3.png)
 
 Reads of the authorizations table&mdash;a notorious bottleneck&mdash;have dropped by over 99%. Previously, this table outpaced all others by more than two orders of magnitude; now it ranks second (the green line below), just narrowly surpassing our third most-read table.
 
