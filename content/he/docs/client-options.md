@@ -1,7 +1,7 @@
 ---
 title: מימושי לקוחות ACME
 slug: client-options
-lastmod: 2022-09-07
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}

@@ -9,11 +9,13 @@ show_lastmod: 1
 
 Let’s Encrypt 较为推荐的服务是 [Red Sift Certificates Lite](https://redsift.com/pulse-platform/certificates-lite)（过去名为 Hardenize）， 您可以通过 Red Sift 免费监测 250 份证书。
 
-另外还有一些监测服务可供选择，包括：
+市面上有多款监测服务可供选择，包括：
 
+- [Red Sift Certificates](https://redsift.com/pulse-platform/certificates-lite)（过去名为 Hardenize）
 - [UptimeRobot](https://uptimerobot.com/ssl-monitoring/)
 - [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 - [TrackSSL](https://trackssl.com/)
+- [Host-Tracker](https://www.host-tracker.com/)
 
 请注意，以上服务均由第三方提供，与 ISRG / Let's Encrypt 无关。
 

@@ -1,7 +1,7 @@
 ---
 title: ACME 客户端
 slug: client-options
-lastmod: 2022-09-07
+lastmod: 2025-01-22
 ---
 
 {{< clientslastmod >}}
@@ -24,7 +24,7 @@ Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您
 
 {{< clients libraries="库" projects="集成了 Let’s Encrypt 的项目" >}}
 
-Python 模块 [acme](https://github.com/certbot/certbot/tree/master/acme) 是 Certbot 的一部分，但它也被许多其他客户端使用，并在 [PyPI](https://pypi.python.org/pypi/acme)、[Debian](https://packages.debian.org/search?keywords=python-acme)、[Ubuntu](https://launchpad.net/ubuntu/+source/python-acme)、[Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 和其他一些发行版中作为独立软件包提供。
+Python 模块[acme](https://github.com/certbot/certbot/tree/main/acme) 是 Certbot 的一部分，但它也被许多其他客户端使用，并在 [PyPI](https://pypi.python.org/pypi/acme)、[Debian](https://packages.debian.org/search?keywords=python-acme)、[Ubuntu](https://launchpad.net/ubuntu/+source/python-acme)、[Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) 和其他一些发行版中作为独立软件包提供。
 
 {{< /clients >}}
 
