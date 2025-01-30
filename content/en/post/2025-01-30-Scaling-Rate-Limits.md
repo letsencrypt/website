@@ -1,6 +1,6 @@
 ---
 author: Samantha Frank
-date: 2025-01-29T00:00:00Z
+date: 2025-01-30T00:00:00Z
 slug: Scaling-Rate-Limits
 title: "Scaling Our Rate Limits to Prepare for a Billion Active Certificates"
 excerpt: "We've evolved our rate limits to better serve our subscribers and keep our service healthy."
