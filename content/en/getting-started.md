@@ -1,74 +1,37 @@
 ---
 title: Getting Started
 slug: getting-started
-date: 2020-02-11
-lastmod: 2023-12-20
+lastmod: 2025-01-23
 ---
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
-  <div>The Let's Encrypt ACME Directory URL is:</div>
-  <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
-</div>
+Let's Encrypt issues certificates through an automated API based on the [ACME protocol](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment).
 
-To enable HTTPS on your website, you need to get a certificate (a type of file)
-from a Certificate Authority (CA). Let's Encrypt is a CA. In order to get a
-certificate for your website's domain from Let's Encrypt, you have to demonstrate
-control over the domain. With Let's Encrypt, you do this using software that uses
-the [ACME protocol](https://tools.ietf.org/html/rfc8555) which typically runs
-on your web host.
+In order to interact with the Let's Encrypt API and get a certificate, a piece of software called an "ACME client" is required. No part of the process for getting a certificate happens on this website, which is merely informational.
 
-To figure out what method will work best for you, you will need to know whether
-you have [shell access](https://en.wikipedia.org/wiki/Shell_account) (also known
-as SSH access) to your web host. If you manage your website entirely through a
-control panel like [cPanel](https://cpanel.net/), [Plesk](https://www.plesk.com/), or
-[WordPress](https://wordpress.org/), there's a good chance you don't have shell
-access. You can ask your hosting provider to be sure.
+The first question to answer for people who want to get started with Let's Encrypt is: will my hosting provider get and manage certificates from Let's Encrypt for me, or do I need to run an ACME client myself?
 
-# With Shell Access
+# Getting certificates through your hosting provider
 
-We recommend that most people with shell access use the
-[Certbot] ACME client. It can automate certificate issuance and installation with no downtime.
-It also has expert modes for people who don't want autoconfiguration. It's easy to use,
-works on many operating systems, and has great documentation. [Visit the
-Certbot site][Certbot] to get customized instructions for your operating system and web server.
+For many people, their hosting provider will get and manage certificates from Let's Encrypt for them. If this is your situation, your provider is operating an ACME client and you don't need to think about getting or operating ACME client software yourself.
 
-If [Certbot] does not meet your needs, or you'd like to try something else, there are
-[many more ACME clients to choose from](/docs/client-options).  Once you've chosen ACME client
-software, see the documentation for that client to proceed.
+If your provider gets and manages certificates for you, it will either happen automatically or there will be a configuration option that you will need to enable. Check your provider's documentation and configuration options.
 
-If you're experimenting with different ACME clients, use our
-[staging environment](/docs/staging-environment) to avoid hitting
-[rate limits](/docs/rate-limits).
+# Selecting and operating an ACME client yourself
 
-[Certbot]: https://certbot.eff.org/  "Certbot"
+If your hosting provider does not handle getting and managing certificates for you, and if you have the ability to run commands on your server with sufficient privileges, you can select an ACME client and run it yourself to get certificates from Let's Encrypt.
 
-# Without Shell Access
+For most people we recommend the [Certbot ACME client](https://certbot.eff.org/). The Certbot website has excellent documentation and instructions for operating Certbot.
 
-The best way to use Let's Encrypt without shell access is by using built-in support
-from your hosting provider. If your hosting provider offers Let's Encrypt
-support, they can request a free certificate on your behalf, install it, and
-keep it up-to-date automatically. For some hosting providers, this is a
-configuration setting you need to turn on. Other providers automatically
-request and install certificates for all their customers.
+There are [many more options for ACME client software](/docs/client-options/) if for some reason Certbot does not meet your needs.
 
-[Check our list of hosting providers](https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/6920)
-to see if yours is on it. If so, follow their documentation to set up your
-Let's Encrypt certificate.
+If your client needs to be configured with the Let's Encrypt ACME API endpoint, it is:
 
-If your hosting provider does not support Let's Encrypt, you can contact them to
-request support. We do our best to make it very easy to add Let's Encrypt
-support, and providers are often happy to hear suggestions from customers!
+<code>[https://acme-v02.api.letsencrypt.org/directory](https://acme-v02.api.letsencrypt.org/directory)</code>
 
-If your hosting provider doesn't want to integrate Let's Encrypt, but does
-support uploading custom certificates, you can install Certbot on your own
-computer and use it in [manual mode](https://certbot.eff.org/docs/using.html#manual).
-In manual mode, you upload a specific file to your website to prove your
-control. Certbot will then retrieve a certificate that you can upload to your
-hosting provider. We don't recommend this option because it is time-consuming
-and you will need to repeat it several times per year as your certificate
-expires. For most people it is better to request Let's Encrypt support from your
-hosting provider, or switch providers if they do not plan to implement it.
+We recommend running tests against our [staging API](/docs/staging-environment/) first.
 
 # Getting Help
 
 If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
+
+Our website also has [extensive documentation](/docs/) if you need more details.
