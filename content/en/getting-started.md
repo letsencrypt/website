@@ -28,7 +28,7 @@ If your client needs to be configured with the Let's Encrypt ACME API endpoint, 
 
 <code>[https://acme-v02.api.letsencrypt.org/directory](https://acme-v02.api.letsencrypt.org/directory)</code>
 
-We recommend running tests against our [staging API](https://letsencrypt.org/docs/staging-environment/) first.
+We recommend running tests against our [staging API](/docs/staging-environment/) first.
 
 # Getting Help
 
