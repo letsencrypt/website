@@ -24,6 +24,12 @@ For most people we recommend the [Certbot ACME client](https://certbot.eff.org/)
 
 There are [many more options for ACME client software](/docs/client-options/) if for some reason Certbot does not meet your needs.
 
+If your client needs to be configured with the Let's Encrypt ACME API endpoint, it is:
+
+<code>[https://acme-v02.api.letsencrypt.org/directory](https://acme-v02.api.letsencrypt.org/directory)</code>
+
+We recommend running tests against our [staging API](https://letsencrypt.org/docs/staging-environment/) first.
+
 # Getting Help
 
 If you have questions about selecting an ACME client, or about using a particular client, or anything else related to Let's Encrypt, please try our [helpful community forums](https://community.letsencrypt.org/).
