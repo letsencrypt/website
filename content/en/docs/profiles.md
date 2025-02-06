@@ -8,6 +8,8 @@ show_lastmod: false
 
 A profile is a collection of characteristics that describe both the validation process required to get a certificate, and the final contents of that certificate. For the vast majority of Let's Encrypt subscribers, you should never have to worry about this: we automatically select the best profile for you, and ensure that it complies with all of the requirements and best practices that govern the Web PKI. But some people might be interested in proactively selecting a specific profile, so this page exists to provide the information necessary to make that choice.
 
+Note that not all profiles are available in all environments: some may be available only in Staging or only in Production, and some may be (temporarily) locked behind an allowlist so we can roll them out slowly. The list of profiles advertised in the ACME Server's `directory` endpoint is the canonical list.
+
 If you'd like to learn about the specifics of the profiles we offer and our reasoning for choosing them, read on. If you just need a quick reference, here's a table:
 
 | Property | classic | tlsserver | shortlived |
@@ -27,6 +29,14 @@ If you'd like to learn about the specifics of the profiles we offer and our reas
 
 # Selecting a Profile
 
+Here's a quick summary of each profile and who should choose it:
+
+**classic**: The classic profile is the default profile selected for all orders which do not request a specific profile. The validation process and resulting certificate are the same as you're used to from the last several years of Let's Encrypt operation. We recommend using this profile for subscribers who are happy to let others try new things first.
+
+**tlsserver**: The tlsserver profile is a new profile which updates several of these validation and certificate properties in order to reflect the latest recommendations from the CA/Browser Forum Baseline Requirements, as well as general trends within the WebPKI community. We recommend selecting this profile for subscribers who want smaller certificates and who fully embrace automation.
+
+**shortlived**: The shortlived profile is identical to the tlsserver profile, with two exceptions: certificates are only valid for roughly 6 days and they contain no revocation information. We recommend this profile for those who fully trust their automation to renew their certificates on time.
+
 The process for selecting a profile is described in [this Internet-Draft](https://datatracker.ietf.org/doc/draft-aaron-acme-profiles/), which we plan to work with the IETF ACME Working Group to turn into a full RFC. Not all ACME Clients have implemented this draft, so the client you use may not yet be able to select a profile.
 
 In general, if you want to select a profile, you should:
@@ -35,17 +45,11 @@ In general, if you want to select a profile, you should:
 2. Fetch the Let's Encrypt [production](https://acme-v02.api.letsencrypt.org/directory) or [staging](https://acme-staging-v02.api.letsencrypt.org/directory) directory object to see which profiles are available.
 3. Configure your desired profile within your ACME client.
 
-# More About Our Profiles
+# Non-default Profiles
 
-Below are descriptions of each profile, including what effects they have on both the validation process and the contents of the issued certificate. Note that not all profiles are available in all environments: some may be available only in Staging or only in Production, and some may be (temporarily) locked behind an allowlist so we can roll them out slowly. The list of profiles advertised in the ACME Server's `directory` endpoint is the canonical list.
-
-## classic
-
-The classic profile is the default profile selected for all orders which do not request a specific profile. The validation process and resulting certificate are the same as you're used to from the last several years of Let's Encrypt operation. We recommend using this profile for subscribers who are happy to let others try new things first.
+If you don't select a profile, you're automatically using our classic profile, which gives you the same reliable certificates Let's Encrypt has been issuing for the last several years. If you select one of the non-default profiles, you'll notice a few differences, including changes to the validation process and the contents of the issued certificate.
 
 ## tlsserver
-
-The tlsserver profile is a new profile which updates several of these validation and certificate properties in order to reflect the latest recommendations from the CA/Browser Forum Baseline Requirements, as well as general trends within the WebPKI community. We recommend selecting this profile for subscribers who want smaller certificates and who fully embrace automation.
 
 The pending authorization lifetime has been reduced to further encourage automation: fully automated systems can complete a validation challenge within seconds, so a lifetime of just one hour is more than enough. The authorization reuse period has been reduced to seven hours. This is because the Baseline Requirements require that we re-check Certificate Authority Authorization (CAA) after eight hours, so limiting the reuse period means that we don't have to perform rechecks. The order lifetime has been reduced to the sum of two authorization lifetimes, because there is little purpose to having an order that outlives the authorizations it depends on.
 
