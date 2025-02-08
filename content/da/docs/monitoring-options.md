@@ -11,9 +11,11 @@ Let's Encrypt kan anbefale [Red Sift Certifikater Lite (tidligere Hardenize)](ht
 
 Der er en række andre overvågningsmuligheder derude, herunder:
 
+- [Red Sift Certificates (tidligere Hardenize)](https://redsift.com/pulse-platform/certificates-lite)
 - [UptimeRobot](https://uptimerobot.com/ssl-monitoring/)
 - [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 - [TrackSSL](https://trackssl.com/)
+- [Host-Tracker](https://www.host-tracker.com/)
 
 Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
 
