@@ -93,7 +93,7 @@ In general, if you want to select a profile, you should:
 
 ## Validation Properties
 
-The following validation properties can be controlled by our profiles:
+Below are descriptions of the validation properties that can be controlled by our profiles.
 
 ### Pending Authorization Lifetime
 
@@ -109,7 +109,7 @@ This is how long an ACME client has to complete the whole process of ordering a 
 
 ## Certificate Properties
 
-The following certificate properties can be controlled by our profiles:
+Below are descriptions of the certificate properties that can be controlled by our profiles.
 
 ### Certificate Common Name
 
