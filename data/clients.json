@@ -1,5 +1,5 @@
 {
-	"lastmod": "2024-11-12",
+	"lastmod": "2025-02-11",
 	"categories": [
 		"Bash",
 		"C",
@@ -10,7 +10,6 @@
 		"Domino",
 		"Docker",
 		"Go",
-		"HAProxy",
 		"Java",
 		"Kubernetes",
 		"Lua",
@@ -264,11 +263,6 @@
 			"name": "Traefik",
 			"url": "https://traefik.io/",
 			"category": "Go"
-		},
-		{
-			"name": "HAProxy client",
-			"url": "https://github.com/haproxytech/haproxy-lua-acme",
-			"category": "HAProxy"
 		},
 		{
 			"name": "PJAC",
