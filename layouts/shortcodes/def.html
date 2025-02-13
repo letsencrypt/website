@@ -1,4 +1,3 @@
-{{ $_hugo_config := `{ "version": 1 }` }}
 <!--
 Usage (in english):
 	{% def
@@ -6,16 +5,16 @@ Usage (in english):
 		name="The term to define (optional if abbr is provided)"
 		abbr="an acronym (optional)"
 		abbr_first="1 (When the acronym is more important, such as RSA or SSL)" %}
-			the definition 
+			the definition
 	{% /def %}
-	
+
 	<p><dfn id="a unique id for anchor">The term to define</dfn>: the definition</p>
 	<p><dfn id="a unique id for anchor"><abbr>an acronym</abbr</dfn>: the definition</p>
 	<p><dfn id="a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr>): the definition</p>
 
 Usage (in other languages):
-	{% def 
-		id="a unique id for anchor - the SAME than for english" 
+	{% def
+		id="a unique id for anchor - the SAME than for english"
 		name="The term to define (optional if english or abbr is provided)"
 		abbr="an acronym (optional)"
 		english="the english term (optional - if present the abbr is in english too)"
