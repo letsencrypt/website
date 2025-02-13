@@ -10,7 +10,7 @@ display_newsletter_embed: false
 
 
 <div class="card border-0 pic-quote-right">
-    <img alt="Josh Aas" class="mx-auto img-fluid" src="/images/blog/10A Logo.png" />
+    <img alt="Josh Aas" class="mx-auto img-fluid" src="/images/blog/10A-Logo.png" />
 </div>
 
 2025 marks ten years of Let's Encrypt. Already this year we've taken steps to continue to deliver on our values of [user privacy](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), [efficiency](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and innovation ([1](https://letsencrypt.org/2025/01/30/scaling-rate-limits/)), ([2](https://letsencrypt.org/2025/01/09/acme-profiles/)), all with the intent of continuing to deliver free TLS certificates to as many people as possible; to deliver encryption for everybody.
