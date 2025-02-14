@@ -16,7 +16,7 @@ When digital security and privacy is your goal, ease of use has to be your focus
 
 HTTPS has been around since the mid-90s but uptake was abysmally slow because SSL/TLS certificates weren’t easy to get or manage. Let’s Encrypt made getting and managing certificates easy and as a result HTTPS adoption rates shot up. Critically, the answer wasn’t to get people to think more about their certificates—we needed to make it possible for people to spend much less time thinking about certificates. Ideally we’d be invisible—server software should just get and manage certificates automatically.
 
-Our next project after Let’s Encrypt is going live shortly: [ISRG Prio Services](https://www.abetterinternet.org/prio/). It’s a system for collecting digital metrics that allows organizations to collect the information they need without any entity having the ability to access any individual user’s data. Much like Let’s Encrypt, it protects people without them having to know anything about it.
+Our next project after Let’s Encrypt is going live shortly: [Divvi Up](https://divviup.org/). It’s a system for collecting digital metrics that allows organizations to collect the information they need without any entity having the ability to access any individual user’s data. Much like Let’s Encrypt, it protects people without them having to know anything about it.
 
 Despite 2020 being a year of unprecedented, global challenges, ISRG is well positioned for the years ahead. Our current momentum is possible through new major in-kind donations, nearly 90% of our existing sponsors renewing their support for 2020, funding from the Ford Foundation and the Bill & Melinda Gates Foundation, and by welcoming new major sponsors, including AWS, Thales, and Avast.
 

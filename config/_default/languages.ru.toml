@@ -6,7 +6,7 @@ weight = 550
 
 [params]
 beforeColon = ""
-description = "Let's Encrypt – это бесплатный, автоматизированный и открытый центр сертификации, созданный некоммерческой <a href=\"https://www.abetterinternet.org/\">Internet Security Research Group (ISRG)</a>. Подробную информацию о нашей некоммерческой работе в этом году можно найти в нашем <a href=\"https://www.abetterinternet.org/annual-reports/\">Годовом отчете за 2023 год</a>."
+description = "Let's Encrypt – это бесплатный, автоматизированный и открытый центр сертификации, созданный некоммерческой <a href=\"https://www.abetterinternet.org/\">Internet Security Research Group (ISRG)</a>. Подробную информацию о нашей некоммерческой работе в этом году можно найти в нашем <a href=\"https://www.abetterinternet.org/annual-reports/\">Годовом отчете за 2024 год</a>."
 paypalDonateImage = "https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|,"
