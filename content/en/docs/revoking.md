@@ -2,7 +2,7 @@
 title: Revoking Certificates
 slug: revoking
 date: 2017-06-08
-lastmod: 2021-10-15
+lastmod: 2025-02-14
 show_lastmod: 1
 ---
 
