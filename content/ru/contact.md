@@ -25,13 +25,13 @@ menu:
 
 ## Конфиденциальность
 
-Эл. почта: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
+Электронная почта: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Безопасность
 
 **Пожалуйста, не пишите на этот адрес, если ваше сообщение не касается проблем с безопасностью Let's Encrypt.**
 
-<span id="email">Эл. почта: </span>
+<span id="email">Электронная почта: </span>
 
 <script>
   var parts = ["security", '@', "letsencrypt", ".", "org"];
