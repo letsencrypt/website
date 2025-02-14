@@ -12,6 +12,10 @@ dfn {
   padding-right: .25em; /* Prevent italics text from hitting the ":" */
 }
 
+.definition {
+  margin-bottom: 1em;
+}
+
 .definition>a:first-child {
   text-decoration: none;
   color: inherit;

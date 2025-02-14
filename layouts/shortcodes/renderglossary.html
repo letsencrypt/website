@@ -1,5 +1,6 @@
+<dl>
 {{ range (.Page.Scratch.GetSortedMapValues "glossary") }}
-<p class="definition">
+<dt class="term">
 	<a href="#def-{{.id }}">
 	{{- if and (.abbr) (eq (.abbr_first) "1") -}}
 			<dfn id="def-{{.id }}"><abbr lang="en">{{ .abbr }}</abbr></dfn>
@@ -24,8 +25,8 @@
 		{{- end -}}
 	{{- end -}}
 	</a>
-	{{ .Site.Params.beforeColon | safeHTML }}: {{ .content }}
-</p>
-
+</dt>
+<dd class="definition">{{ .content | markdownify }}</dd>
 {{ end }}
 
+</dl>
