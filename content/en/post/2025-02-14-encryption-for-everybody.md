@@ -1,6 +1,6 @@
 ---
 author: Dan Fernelius
-date: 2025-02-13T00:00:00Z
+date: 2025-02-14T00:00:00Z
 slug: encryption-for-everybody
 title: "Encryption for Everybody"
 excerpt: "Celebrating ten years of Let's Encrypt."
