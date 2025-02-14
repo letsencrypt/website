@@ -50,7 +50,7 @@ If you want to avoid issuing a certificate at all, you can include a non-existen
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-And follow the instructions. If you'd prefer to validate using HTTP rather than DNS, replace the `--preferred-challenges` flag with `--preferred-challenges=http`.
+And follow the instructions, skipping the validation step for `nonexistent.${YOUR_DOMAIN}`. If you'd prefer to validate using HTTP rather than DNS, replace the `--preferred-challenges` flag with `--preferred-challenges=http`. Note that in many cases, the DNS version of these steps will not work if you replace `--manual` with a certbot plugin to fulfill DNS-01 challenges automatically, since certbot will happily place a TXT record at `_acme-challenge.nonexistent.${YOUR_DOMAIN}` if it has the ability to do so.
 
 Once you've validated control of all the domain names in the certificate you want to revoke, you can download the certificate from [crt.sh](https://crt.sh/), then proceed to revoke the certificate as if you had issued it:
 
