@@ -62,7 +62,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 
 ## shortlived
 
-The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. This makes the certificates even smaller, and removes any possibility of a client accidentally trusting a certificate after it has been revoked.
+The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. This means the certificates can be even smaller, and removes any possibility of a client accidentally trusting a certificate after it has been revoked.
 
 We recommend this profile for those who fully trust their automation to renew their certificates on time. This profile is not for everyone. Because this profile results in much higher issuance volume (since certificates need to be renewed every few days, instead of every few months), it is currently locked behind an allowlist.
 
