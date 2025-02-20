@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-02-11",
+	"lastmod": "2025-02-20",
 	"categories": [
 		"Bash",
 		"C",
@@ -342,11 +342,6 @@
 		{
 			"name": "kelunik/acme-client",
 			"url": "https://github.com/kelunik/acme-client",
-			"category": "PHP"
-		},
-		{
-			"name": "AcmePHP",
-			"url": "https://github.com/acmephp/acmephp",
 			"category": "PHP"
 		},
 		{
