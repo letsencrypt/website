@@ -86,6 +86,10 @@ div[data-netlify-site-id] {
   line-height: 20px;
 }
 
+html {
+  scroll-padding-top: 44px;
+}
+
 .custom-dbox-popup {
   text-decoration: none;
   color: #2C3E50;
@@ -114,6 +118,8 @@ div[data-netlify-site-id] {
     background: rgb(211, 148, 58);
   }
 }
+
+
 
 @media (min-width: 768px)
 {
