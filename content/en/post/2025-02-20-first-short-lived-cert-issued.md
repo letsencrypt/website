@@ -8,7 +8,7 @@ display_default_footer: true
 display_newsletter_embed: false
 ---
 
-Earlier this year we [announced](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) our intention to introduce short-lived certificates with lifetimes of six days as an option for our subscribers. Yesterday we issued our first short-lived certificate. You can see the certificate at the bottom of our post, or [here](https://search.censys.io/certificates/8265479af7bb04b347260a54db915fb294ebaacd79cdb43d86d27336b690ad26) thanks to Certificate Transparency logs. We issued it to ourselves and then immediately revoked it so we can observe the certificate's whole lifecycle. This is the first step towards making short-lived certificates available to all subscribers.
+Earlier this year we [announced](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) our intention to introduce short-lived certificates with lifetimes of six days as an option for our subscribers. Yesterday we issued our first short-lived certificate. You can see the certificate at the bottom of our post, or [here](https://crt.sh/?sha256=8265479AF7BB04B347260A54DB915FB294EBAACD79CDB43D86D27336B690AD26) thanks to Certificate Transparency logs. We issued it to ourselves and then immediately revoked it so we can observe the certificate's whole lifecycle. This is the first step towards making short-lived certificates available to all subscribers.
 
 The next step is for us to make short-lived certificates available to a small set of our subscribers so we can make sure our systems scale as expected prior to general availability. We expect this next phase to begin during Q2 of this year.
 
