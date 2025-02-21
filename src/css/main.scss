@@ -86,7 +86,6 @@ div[data-netlify-site-id] {
   line-height: 20px;
 }
 
-// Add scroll padding only when donation banner is present
 html:has(.custom-dbox-popup) {
   scroll-padding-top: 44px;
 }
@@ -119,6 +118,8 @@ html:has(.custom-dbox-popup) {
     background: rgb(211, 148, 58);
   }
 }
+
+
 
 @media (min-width: 768px)
 {
