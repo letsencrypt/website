@@ -16,6 +16,7 @@ There are a number of monitoring options out there, including:
 * [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 * [TrackSSL](https://trackssl.com/)
 * [Host-Tracker](https://www.host-tracker.com/)
+* [Watch My SSL](https://watchmyssl.com/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
