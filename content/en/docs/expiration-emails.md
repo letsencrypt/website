@@ -7,7 +7,7 @@ show_lastmod: 1
 
 # Notice: End of Life for Expiration Emails Announced
 
-Please note that Let's Encrypt will be ending its email expiration service per [this blog post](https://letsencrypt.org/docs/expiration-emails/).
+Please note that Let's Encrypt will be ending its email expiration service per [this blog post](/docs/expiration-emails/).
 
 # Subscribing
 
