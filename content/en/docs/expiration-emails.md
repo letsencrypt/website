@@ -1,11 +1,13 @@
 ---
 title: Expiration Emails
 slug: expiration-emails
-date: 2016-07-02
-lastmod: 2023-01-09
+lastmod: 2025-02-27
 show_lastmod: 1
 ---
 
+# Notice: End of Life for Expiration Emails Announced
+
+Please note that Let's Encrypt will be ending its email expiration service per [this blog post](/docs/expiration-emails/).
 
 # Subscribing
 
