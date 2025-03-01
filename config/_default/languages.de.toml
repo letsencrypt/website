@@ -7,7 +7,7 @@ weight = 200
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt ist eine gratis, automatisierte, und offene Zertifizierungsstelle, die Ihnen von der gemeinnützigen <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Lesen Sie alles über unsere gemeinnützige Arbeit in diesem Jahr in unserem <a href="https://www.abetterinternet.org/annual-reports/"> jährlichen Geschäftsbericht 2023</a>.
+Let's Encrypt ist eine gratis, automatisierte, und offene Zertifizierungsstelle, die Ihnen von der gemeinnützigen <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Lesen Sie alles über unsere gemeinnützige Arbeit in diesem Jahr in unserem <a href="https://www.abetterinternet.org/annual-reports/"> jährlichen Geschäftsbericht 2024</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "DE"
