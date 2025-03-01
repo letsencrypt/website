@@ -1,19 +1,25 @@
 ---
 title: 今後追加される機能
 slug: upcoming-features
-lastmod: 2021-09-16
+lastmod: 2024-06-14
 show_lastmod: 1
 ---
 
-## ACME Renewal Information (ARI)
+今後の変更のお知らせについては、Let's Encrypt コミュニティフォーラムの [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) カテゴリを参照してください。
 
-サブスクライバに更新時期が来たことをAPIで通知するシステムを構築中です。 このシステムにより、例えば失効イベントの前に、サブスクライバに更新が必要であることを知らせることができるようになります。
+# 実装済みの機能
 
 ## ECDSA を用いたルートおよび中間証明書
 
-Let's EncryptではプロダクションECDSA中間証明書から [許可されたアカウント](https://community.letsencrypt.org/t/ecdsa-availability-in-production-environment/150679)へ証明書を発行しています。 許可リストを削除する予定日はありません。
+* 有効化: 2024年6月6日
 
-# 実装済みの機能
+Let's Encrypt の本番用 ECDSA 中間証明書から ECDSA リーフ証明書への証明書を発行しています。 PKI 階層の完全な詳細については、[Chain of Trust](/certificates/) ドキュメントを参照してください。
+
+## ACME Renewal Information (ARI)
+
+* 有効化: 2023年3月23日
+
+現在、購読者に更新する必要なときに API で通知するシステム [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html) が稼働中です。
 
 ## 多視点検証 (Multi-Perspective Validation)
 

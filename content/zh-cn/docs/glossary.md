@@ -128,9 +128,11 @@ Note for translators:
 
 {{% def id="precertificate" name="准证书" english="Precertificate" %}} [证书透明化](#def-CT)系统的一部分。 准证书由 CA 即将颁发的[证书](#def-leaf)外加一项[关键](#def-critical)扩展组成，该扩展用于防止一般软件将准证书作为正常证书使用。 CA 将生成的准证书提交至 [CT 日志](#def-CT-log)系统，从而获得 [SCT](#def-SCT)。 由于准证书与其对应的证书并不完全相同，二者最终可能都会录入证书透明化日志系统中。 参见 [RFC 6962 第 3.1 节](https://tools.ietf.org/html/rfc6962#section-3.1)。 {{% /def %}}
 
+{{% def id="profile" name="证书配置" english="Profile" %}} 证书的配置包含一系列属性，对证书的验证流程和最终内容都有影响。 请参阅[证书配置文档](/docs/profiles)了解各种可用的配置及其影响，以及如何选择配置。  {{% /def %}}
+
 {{% def id="HPKP" name="HTTP 公钥固定" english="HTTP Public Key Pinning" abbr="HPKP" %}} 一种安全机制，要求浏览器连接网站时确保[证书链](#def-chain)必须使用特定的公钥。 Chrome 浏览器曾引入这一机制应对 CA 被入侵的情况，但网站常因此出现问题，最终 Chrome [废除了该功能](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/HTTP%E5%85%AC%E9%92%A5%E5%9B%BA%E5%AE%9A)。 {{% /def %}}
 
-{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 维护的公共后缀的列表，它包含了那些可供大量实体注册的互联网域名。 例如，`com` 和 `co.uk` 都在这一列表中，虽然 `co.uk` 并不是顶级域名。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 [Let's Encrypt](#def-LE) 也使用了这一列表，用于实施[速率限制](/docs/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
+{{% def id="PSL" name="公共后缀列表" english="Public Suffix List" abbr="PSL" %}} 由 Mozilla 整理并维护的一份*公共域名后缀*的名单，这些域名的子域名是对外开放注册的，可以由大量不相关的团体和个人使用。 例如，`com` 和 `co.uk` 都在这一列表中，虽然 `co.uk` 并不是顶级域名。 网页浏览器使用这个列表和其他一些方法来防止可能是不同实体运营的网站互相共享 Cookies。 [Let's Encrypt](#def-LE) 也使用了这一列表，用于实施[速率限制](/docs/rate-limits)。 https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="依赖方" english="Relying Party" %}} 需要使用证书中的信息的人， 例如 HTTPS 网站的用户。  {{% /def %}}
 
@@ -160,9 +162,9 @@ Note for translators:
 
 {{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。  {{% /def %}}
 
-{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。  {{% /def %}}
+{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。 {{% /def %}}
 
-{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称（SAN）](#def-SAN)的证书的一种称呼。 {{% /def %}}
+{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称（SAN）](#def-SAN)的证书的一种称呼。  {{% /def %}}
 
 {{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 一类用于显示网页内容的[用户代理](#def-user-agent)， 例如 *Mozilla Firefox*、*Google Chrome* 和 *Safari*。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8)。{{% /def %}}
 
