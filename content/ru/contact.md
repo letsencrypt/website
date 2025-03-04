@@ -7,6 +7,7 @@ menu:
   main:
     weight: 90
     parent: about
+should_hide_footer_newsletter: true
 ---
 
 **Мы не предоставляем поддержку по электронной почте. Если у вас возникли вопросы, пожалуйста, обратитесь на наш [форум сообщества](https://community.letsencrypt.org/). Приведенные ниже адреса электронной почты предназначены только для указанных тем.**
@@ -21,7 +22,18 @@ menu:
 
 ## Подпишитесь на нашу рассылку
 
-<iframe src="https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51" height="200" style="width: 100%; border: 0"></iframe>
+<iframe id="newsletter-iframe" src="https://outreach.abetterinternet.org/l/1011011/2025-01-14/31v6r" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+<script>
+let hasResized = false;
+window.addEventListener('message', function(e) {
+    if (hasResized) return; // Only allow one resize
+    if (e.origin !== 'https://outreach.abetterinternet.org') return;
+    if (e.data && typeof e.data === 'object' && e.data.type === 'resize' && e.data.height) {
+        hasResized = true;
+        document.getElementById('newsletter-iframe').style.height = (e.data.height + 20) + 'px';
+    }
+});
+</script>
 
 ## Конфиденциальность
 
