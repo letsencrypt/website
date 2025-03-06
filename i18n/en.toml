@@ -309,7 +309,10 @@ other = "Join our community forum for technical assistance and knowledge sharing
 [getting_started_help_link]
 other = "Visit the Forum"
 
-# Support Section
+# Support Section - support_heading_entire_sentence used if language does not follow English word order
+[support_heading_entire_sentence]
+other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+
 [support_heading_base]
 other = "Global impact made possible by"
 
@@ -398,6 +401,10 @@ other = "Visit"
 
 [internet_security_research_group_initials]
 other = "ISRG"
+
+# Home Hero - home_hero_nonprofit_sentence used if language does not follow English word order
+[home_hero_nonprofit_sentence]
+other = "A nonprofit providing free TLS certificates to more than ### websites"
 
 [home_hero_nonprofit_prefix]
 other = "A nonprofit providing free TLS certificates to more than"
