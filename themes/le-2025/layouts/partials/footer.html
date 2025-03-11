@@ -1,0 +1,92 @@
+{{ if ne .Section "documents" }}
+<footer class="bg-white text-gray-800 pt-10 pb-4">
+  <div class="container">
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-24">
+      <div>
+        <img src="/images/ISRG-Logo-Blue.svg"
+             alt="{{ i18n "internet_security_research_group" }} ({{ i18n "internet_security_research_group_initials" }})"
+             class="h-12 w-auto mb-6">
+        <p class="mb-6">{{ .Site.Params.description | safeHTML }}</p>
+        <div class="grid md:grid-cols-2 gap-6 mt-10">
+          <div>
+            <div class="text-eyebrow text-eyebrow-sm">{{ i18n "footer_legal_address" }}</div>
+          <div itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">548 Market St, PMB 77519</span><br />
+            <span itemprop="addressLocality">San Francisco</span>,
+            <span itemprop="addressRegion">CA</span>
+            <span itemprop="postalCode">94104-5401</span><br />
+            <span itemprop="addressCountry">USA</span>
+          </div>
+          </div>
+          <div>
+
+            <div class="text-eyebrow text-eyebrow-sm">{{ i18n "footer_mailing" }}</div>
+            <div itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="streetAddress">PO Box 18666</span><br />
+              <span itemprop="addressLocality">Minneapolis</span>,
+              <span itemprop="addressRegion">MN</span>
+              <span itemprop="postalCode">55418-0666</span><br />
+              <span itemprop="addressCountry">USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-0 md:pt-[70px]">
+        <div class="border border-gray-300 rounded-lg pt-3 pb-0 px-2">
+          <h6 class="text-eyebrow mb-5">{{ i18n "newsletter_subscribe_heading" }}</h6>
+          {{ partial "newsletter-form" . }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<div class="footer-copyright-bar bg-le-blue text-white py-6">
+  <div class="container">
+    <div class="flex flex-col md:flex-row md:justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        &copy; {{ now.Format "2006" }} <a href="https://www.abetterinternet.org" target="_blank" rel="noopener noreferrer">{{ i18n "internet_security_research_group" }}</a>
+      </div>
+      <ul class="flex space-x-6">
+        {{ with .Site.Params.github_username }}
+        <li>
+          <a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">
+            <span>{{ i18n "footer_nav_github" }}</span>
+          </a>
+        </li>
+        {{ end }}
+
+        {{ with .Site.Params.linkedin_url }}
+        <li>
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+            <span>{{ i18n "footer_nav_linkedin" }}</span>
+          </a>
+        </li>
+        {{ end }}
+
+        <li>
+          <a href="/terms/">
+            <span>{{ i18n "footer_nav_terms" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="/privacy/">
+            <span>{{ i18n "footer_nav_privacy" }}</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.abetterinternet.org/trademarks" target="_blank" rel="noopener noreferrer">
+            <span>{{ i18n "footer_nav_trademark" }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ $js := resources.Get "js/main.js" | fingerprint "sha512" }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

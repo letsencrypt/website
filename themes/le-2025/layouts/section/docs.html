@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ partial "components/post-hero" (dict
+    "title" .Title
+    "style" (dict
+      "background" "transparent"
+      "padding" "small"
+    )
+  ) }}
+
+  <div class="narrow-container prose-content mx-auto px-4 py-12">
+    {{ .Content }}
+  </div>
+{{ end }}

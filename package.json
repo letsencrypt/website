@@ -4,14 +4,21 @@
   "description": "Let's Encrypt website",
   "devDependencies": {
     "eslint": "^8.1.0",
-    "htmlhint": "^0.16.3"
+    "htmlhint": "^0.16.3",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.1"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'content/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
     "test": "npm run test:htmllint && npm run test:eslint",
     "test:html5validate": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate donate-2024 donate fontawesome-free-6.5.2-web --also-check-css --format text --ignore 'aspect-ratio'",
-    "build": "hugo -d public"
+    "build": "hugo -d public",
+    "tailwind:watch": "tailwindcss -i ./themes/le-2025/assets/css/le-2025-theme-input.css -o ./themes/le-2025/assets/css/le-2025-theme-output.css --watch",
+    "tailwind:build": "tailwindcss -i ./themes/le-2025/assets/css/le-2025-theme-input.css -o ./themes/le-2025/assets/css/le-2025-theme-output.css --minify"
   },
   "repository": {
     "type": "git",

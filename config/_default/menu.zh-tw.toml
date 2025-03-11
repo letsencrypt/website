@@ -2,6 +2,10 @@
 name = "獲取幫助"
 weight = 20
 url = "https://community.letsencrypt.org/"
+[[main]]
+name = "網誌"
+weight = 25
+url = "/blog/"
 
 [[main]]
 name = "捐贈"
@@ -15,7 +19,7 @@ identifier = "about"
 
 [[main]]
 name = "Internet Security Research Group (ISRG)"
-weight = 20
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -29,7 +33,7 @@ url = "https://letsencrypt.status.io/"
 
 [[main]]
 name = "招募"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"

@@ -1,0 +1,48 @@
+<div class="text-white section-padding-xl relative overflow-hidden">
+  <div class="hero-bg bg-[position:top_left] md:bg-[position:top_center]"></div>
+  <div class="relative z-10 pb-5">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <div class="text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-3">
+              {{ safeHTML (T "home_hero_heading") }}
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-balance">
+              {{ T "home_hero_nonprofit_prefix" }} <span class="relative inline-block"><span class="invisible text-4xl">{{ T "home_hero_certificate_count" }}</span><span id="certificate-count" class="text-4xl absolute left-0">{{ T "home_hero_certificate_count" }}</span></span> {{ T "home_hero_nonprofit_suffix" }}.
+            </h2>
+            <hr class="w-20 border-le-yellow border-2 mb-7">
+            <div class="flex flex-wrap gap-4">
+              <a href="/getting-started" class="btn btn-primary">
+                {{ T "home_hero_get_started" }}
+              </a>
+              <a href="/sponsor" class="btn btn-outline-white">
+                {{ T "home_hero_sponsor" }}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-4">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="bg-gray-800 text-white p-5 border-1 border-gr ay-500 shado w-lg ">
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <h2 class="text-base font-bold mb-2">{{ T "home_hero_annual_report_title" }}</h2>
+          <p class="mb-0 text-sm">{{ T "home_hero_annual_report_description" }}</p>
+        </div>
+        <div class="md:col-span-4 text-right">
+          <a href="/documents/annual-report-2024.pdf" class="text-sm btn btn-primary">
+            {{ T "home_hero_annual_report_button" }} →
+          </a>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>

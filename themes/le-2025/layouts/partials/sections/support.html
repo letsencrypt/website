@@ -1,0 +1,60 @@
+<section class="support-section pt-16 section-padding relative">
+  <div class="relative z-10">
+    <div class="container mx-auto">
+      <h2 class="text-left text-3xl md:text-4xl font-bold mb-8">
+        {{ i18n "support_heading_base" }} <span class="text-le-blue rotate-words"
+          data-word1="{{ i18n "support_heading_word1" }}"
+          data-word2="{{ i18n "support_heading_word2" }}"
+          data-word3="{{ i18n "support_heading_word3" }}"
+          data-word4="{{ i18n "support_heading_word4" }}">{{ i18n "support_heading_word1" }}</span>
+      </h2>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const rotator = document.querySelector('.rotate-words');
+          const words = [
+            rotator.dataset.word1,
+            rotator.dataset.word2,
+            rotator.dataset.word3,
+            rotator.dataset.word4
+          ];
+          let currentIndex = 0;
+
+          setInterval(() => {
+            currentIndex = (currentIndex + 1) % words.length;
+            rotator.style.opacity = 0;
+            setTimeout(() => {
+              rotator.textContent = words[currentIndex];
+              rotator.style.opacity = 1;
+            }, 200);
+          }, 3000);
+        });
+      </script>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="donate-column -ml-4">
+          {{ partial "components/basic-hero" (dict
+            "title" (T "support_donate_section_title")
+            "description" (T "support_donate_section_description")
+            "buttonText" (T "support_donate_section_button")
+            "buttonUrl" "/donate"
+            "class" "h-full bg-transparent"
+            "headingLevel" "h3"
+            "fullWidth" true
+          ) }}
+        </div>
+        <div class="sponsorship-column -mr-4">
+          {{ partial "components/basic-hero" (dict
+            "title" (T "support_sponsor_section_title")
+            "description" (T "support_sponsor_section_description")
+            "buttonText" (T "support_sponsor_section_button")
+            "buttonUrl" "/sponsor"
+            "class" "h-full"
+            "headingLevel" "h3"
+            "fullWidth" true
+          ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
