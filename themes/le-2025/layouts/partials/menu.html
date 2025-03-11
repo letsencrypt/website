@@ -19,11 +19,11 @@ Renders a menu for the given menu ID with dropdown support and keyboard navigati
 {{- define "partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
+    {{- $attrs := dict "href" .URL "class" "nav-item" }}
     {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+      {{- $attrs = merge $attrs (dict "class" "nav-item active" "aria-current" "page") }}
     {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+      {{- $attrs = merge $attrs (dict "class" "nav-item ancestor" "aria-current" "true") }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}
@@ -62,9 +62,7 @@ Renders a menu for the given menu ID with dropdown support and keyboard navigati
           </ul>
         </div>
       {{- else }}
-        <a href="{{ .URL }}"
-           class="nav-item"
-           role="menuitem"
+        <a role="menuitem"
            {{- range $k, $v := $attrs }}
              {{- with $v }}
                {{- printf " %s=%q" $k $v | safeHTMLAttr }}

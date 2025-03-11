@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 /* Component imports */
-/* @import "./components/post.css";
-@import "./components/post-hero.css"; */
+@import "components/post.css";
+@import "components/post-hero.css";
 
 /* Base styles */
 @layer base {
@@ -292,6 +292,87 @@
   .nav-dropdown-item {
     /* @apply block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100; */
     @apply nav-item whitespace-nowrap md:min-h-[44px] px-4;
+  }
+
+  /* Post hero component - used at the top of posts and pages */
+
+
+  .narrow-container {
+    @apply max-w-[calc(1000px-60px)] mx-auto px-[30px];
+  }
+  .post-hero {
+      @apply py-16 bg-le-blue text-white;
+  }
+
+  .post-hero__inner {
+      @apply narrow-container mx-auto text-left pb-0.5;
+  }
+
+  .post-hero__breadcrumb {
+      @apply text-sm text-gray-600;
+  }
+
+  .post-hero__breadcrumb a {
+      @apply hover:text-gray-900 transition-colors;
+  }
+
+  .post-hero__title {
+      @apply text-4xl font-bold mb-4;
+  }
+
+  .post-hero__meta {
+      @apply text-sm;
+  }
+
+  /* Post */
+    /* Right-aligned image with caption */
+    .pic-quote-right {
+      @apply w-full mb-6;
+    }
+
+    .pic-quote-right__caption {
+      @apply text-sm text-gray-600 text-center mt-2;
+    }
+
+
+  .annual-report-section  img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .about-section img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+    @screen md {
+      .pic-quote-right {
+        @apply float-right max-w-[33.33333%] ml-[25px] flex-[0_0_33.33333%];
+      }
+    }
+
+  /* Glossary */
+  @keyframes fadeIt {
+    0%   { background-color: #FFCE00; }
+    100% { /* back to normal */ }
+  }
+
+  dfn:target{
+    /* highlight for 3 seconds the selected definition target */
+    animation: fadeIt 3s ease-out;
+  }
+  dfn {
+    font-weight: bold;
+    padding-right: .25em; /* Prevent italics text from hitting the ":" */
+  }
+
+  .definition {
+    margin-bottom: 1em;
+  }
+
+  .definition>a:first-child {
+    text-decoration: none;
+    color: inherit;
   }
 }
 

@@ -1365,6 +1365,174 @@ table th, table td {
   }
 }
 
+/* Post hero component - used at the top of posts and pages */
+
+.narrow-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1000px - 60px);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.post-hero a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.post-hero a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 229 229 / var(--tw-text-opacity, 1));
+  text-decoration-line: underline;
+  text-decoration-color: #FFA300;
+}
+
+.post-hero a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):active {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity, 1));
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  text-decoration-line: underline;
+  text-decoration-color: #ffffff;
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover {
+  text-decoration-color: #FFA300;
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  text-decoration-line: underline;
+  text-decoration-color: #ffffff;
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover {
+  text-decoration-color: #FFA300;
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  text-decoration-line: underline;
+  text-decoration-color: #ffffff;
+}
+
+.post-hero p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover,.post-hero .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item):hover {
+  text-decoration-color: #FFA300;
+}
+
+.post-hero .bg-white a:not(.btn) {
+  font-weight: 500;
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 58 112 / var(--tw-text-opacity, 1)) !important;
+}
+
+.post-hero {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 58 112 / var(--tw-bg-opacity, 1));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.post-hero__inner {
+  max-width: calc(1000px - 60px);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.125rem;
+  text-align: left;
+}
+
+.post-hero__breadcrumb {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.post-hero__breadcrumb a {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.post-hero__breadcrumb a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+.post-hero__title {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.post-hero__meta {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Post */
+
+/* Right-aligned image with caption */
+
+.pic-quote-right {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.pic-quote-right__caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .pic-quote-right {
+    float: right;
+    margin-left: 25px;
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+}
+
+/* Glossary */
+
+@keyframes fadeIt {
+  0%   {
+    background-color: #FFCE00;
+  }
+
+  100% {
+    /* back to normal */
+  }
+}
+
+dfn:target{
+  /* highlight for 3 seconds the selected definition target */
+  animation: fadeIt 3s ease-out;
+}
+
+dfn {
+  font-weight: bold;
+  padding-right: .25em;
+  /* Prevent italics text from hitting the ":" */
+}
+
+.definition {
+  margin-bottom: 1em;
+}
+
+.definition>a:first-child {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1434,10 +1602,6 @@ table th, table td {
   z-index: 60;
 }
 
-.float-right {
-  float: right;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1497,10 +1661,6 @@ table th, table td {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-\[25px\] {
-  margin-left: 25px;
 }
 
 .ml-auto {
@@ -1655,24 +1815,12 @@ table th, table td {
   max-width: 56rem;
 }
 
-.max-w-\[33\.33333\%\] {
-  max-width: 33.33333%;
-}
-
-.max-w-\[calc\(1000px-60px\)\] {
-  max-width: calc(1000px - 60px);
-}
-
 .max-w-md {
   max-width: 28rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.flex-\[0_0_33\.33333\%\] {
-  flex: 0 0 33.33333%;
 }
 
 .flex-shrink-0 {
@@ -1935,11 +2083,6 @@ table th, table td {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .py-1 {
@@ -2244,9 +2387,6 @@ table th, table td {
 }
 
 /* Component imports */
-
-/* @import "./components/post.css";
-@import "./components/post-hero.css"; */
 
 /* Base styles */
 
