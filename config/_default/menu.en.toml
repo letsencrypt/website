@@ -11,6 +11,18 @@ name = "Donate"
 weight = 30
 identifier = "donate"
 [[main]]
+name = "Become a Sponsor"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+[[main]]
+name = "Current Sponsors & Funders"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+[[main]]
 name = "About Us"
 weight = 40
 identifier = "about"
@@ -32,18 +44,6 @@ weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
-[[main]]
-name = "Become a Sponsor"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
-[[main]]
-name = "Current Sponsors & Funders"
-weight = 40
-identifier = "sponsors"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsors/"
 [[main]]
 name = "Annual reports"
 weight = 140

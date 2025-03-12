@@ -1365,14 +1365,50 @@ table th, table td {
   }
 }
 
+/* Menu responsive gap */
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .site-main-nav {
+    gap: 0.625rem !important;
+  }
+}
+
 /* Post hero component - used at the top of posts and pages */
 
 .narrow-container {
   margin-left: auto;
   margin-right: auto;
   max-width: calc(1000px - 60px);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .narrow-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* Logo responsive sizing */
+
+.site-logo img {
+  height: 3rem;
+}
+
+@media (min-width: 768px) {
+  .site-logo img {
+    --tw-translate-y: -7px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .site-logo img {
+    height: 2rem;
+    --tw-translate-y: -5px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
 }
 
 .post-hero a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
@@ -1435,9 +1471,21 @@ table th, table td {
 }
 
 .post-hero__inner {
+  margin-left: auto;
+  margin-right: auto;
   max-width: calc(1000px - 60px);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .post-hero__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.post-hero__inner {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0.125rem;
@@ -1531,6 +1579,12 @@ dfn {
 .definition>a:first-child {
   text-decoration: none;
   color: inherit;
+}
+
+/* Hide Netlify preview bar */
+
+div[data-netlify-deploy-id] {
+  display: none;
 }
 
 .sr-only {
@@ -1932,12 +1986,6 @@ dfn {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2062,10 +2110,6 @@ dfn {
   padding: 0.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -2118,6 +2162,11 @@ dfn {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-6 {
@@ -2180,10 +2229,6 @@ dfn {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-2xl {
@@ -2560,13 +2605,6 @@ dfn {
   color: rgb(0 43 84 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 640px) {
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -2590,6 +2628,10 @@ dfn {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:ml-8 {
@@ -2616,11 +2658,6 @@ dfn {
     flex-grow: 1;
   }
 
-  .md\:-translate-y-\[7px\] {
-    --tw-translate-y: -7px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -2643,6 +2680,10 @@ dfn {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-center {
@@ -2700,6 +2741,14 @@ dfn {
     padding-top: 70px;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-right {
+    text-align: right;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2739,10 +2788,5 @@ dfn {
 
   .lg\:gap-24 {
     gap: 6rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }

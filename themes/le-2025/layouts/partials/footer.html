@@ -7,7 +7,7 @@
              alt="{{ i18n "internet_security_research_group" }} ({{ i18n "internet_security_research_group_initials" }})"
              class="h-12 w-auto mb-6">
         <p class="mb-6">{{ .Site.Params.description | safeHTML }}</p>
-        <div class="grid md:grid-cols-2 gap-6 mt-10">
+        <div class="grid grid-cols-2 gap-6 mt-10">
           <div>
             <div class="text-eyebrow text-eyebrow-sm">{{ i18n "footer_legal_address" }}</div>
           <div itemscope itemtype="http://schema.org/PostalAddress">
@@ -45,11 +45,11 @@
 
 <div class="footer-copyright-bar bg-le-blue text-white py-6">
   <div class="container">
-    <div class="flex flex-col md:flex-row md:justify-between items-center">
-      <div class="mb-4 md:mb-0">
+    <div class="flex flex-col md:flex-row md:justify-between items-center justify-center">
+      <div class="mb-4 text-center md:text-left md:mb-0">
         &copy; {{ now.Format "2006" }} <a href="https://www.abetterinternet.org" target="_blank" rel="noopener noreferrer">{{ i18n "internet_security_research_group" }}</a>
       </div>
-      <ul class="flex space-x-6">
+      <ul class="flex flex-wrap gap-4 justify-center md:justify-end">
         {{ with .Site.Params.github_username }}
         <li>
           <a href="https://github.com/{{ . }}" target="_blank" rel="noopener noreferrer">

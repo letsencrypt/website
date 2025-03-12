@@ -11,7 +11,7 @@ Renders a menu for the given menu ID with dropdown support and keyboard navigati
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <ul class="flex flex-col md:flex-row md:justify-center md:gap-5 py-2 md:py-0 w-full" role="menubar">
+  <ul class="site-main-nav flex flex-col md:flex-row md:justify-center md:gap-5 py-2 md:py-0 w-full" role="menubar">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
 {{- end }}

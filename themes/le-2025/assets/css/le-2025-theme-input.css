@@ -294,12 +294,31 @@
     @apply nav-item whitespace-nowrap md:min-h-[44px] px-4;
   }
 
+  /* Menu responsive gap */
+  @media (min-width: 768px) and (max-width: 900px) {
+    .site-main-nav {
+      @apply gap-2.5 !important;
+    }
+  }
+
   /* Post hero component - used at the top of posts and pages */
 
 
   .narrow-container {
-    @apply max-w-[calc(1000px-60px)] mx-auto px-[30px];
+    @apply max-w-[calc(1000px-60px)] mx-auto px-4 md:px-[30px];
   }
+
+  /* Logo responsive sizing */
+  .site-logo img {
+    @apply h-12 md:-translate-y-[7px];
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    .site-logo img {
+      @apply h-8 -translate-y-[5px];
+    }
+  }
+
   .post-hero {
       @apply py-16 bg-le-blue text-white;
   }
@@ -374,6 +393,12 @@
     text-decoration: none;
     color: inherit;
   }
+
+  /* Hide Netlify preview bar */
+  div[data-netlify-deploy-id] {
+    display: none;
+  }
+
 }
 
 /* Utility styles */

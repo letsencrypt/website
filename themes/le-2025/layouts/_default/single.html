@@ -20,10 +20,10 @@
 
   {{ partial "components/post-hero" $heroParams }}
 
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="narrow-container prose-content">
+
+    <div class="narrow-container mx-auto py-8 prose-content">
       {{ .Content }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-  </div>
+
 {{ end }}

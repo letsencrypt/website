@@ -302,11 +302,17 @@ const Menu = {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         const isDesktop = window.innerWidth >= 1024;
+        const isMobile = window.innerWidth < 768;
+
         if (isDesktop && mainNav && mobileMenuToggle) {
           mainNav.classList.remove('hidden');
           mobileMenuToggle.setAttribute('aria-expanded', 'false');
-        } else if (mainNav && mobileMenuToggle) {
+        } else if (isMobile && mainNav && mobileMenuToggle) {
+          // Only hide the nav when in true mobile mode (< 768px)
           mainNav.classList.add('hidden');
+        } else {
+          // For tablet sizes (768px-1023px), keep the nav visible
+          mainNav.classList.remove('hidden');
         }
 
         // Adjust any visible dropdowns

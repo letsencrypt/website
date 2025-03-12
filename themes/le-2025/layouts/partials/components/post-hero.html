@@ -10,8 +10,8 @@
 {{ $paddingClass := cond (eq $padding "large") "py-16" "py-8" }}
 
 <section class="post-hero {{ $backgroundClass }} {{ $paddingClass }}">
-  <div class="container mx-auto px-4">
-    <div class="narrow-container">
+
+    <div class="narrow-container mx-auto">
     <div class="post-hero__inner border-l border-le-yellow box-border pl-4 flex flex-col gap-2">
       {{ with .breadcrumb }}
         <div class="post-hero__breadcrumb">
@@ -37,5 +37,5 @@
       {{ end }}
     </div>
     </div>
-  </div>
+
 </section>
