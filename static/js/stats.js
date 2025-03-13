@@ -275,8 +275,14 @@ function doPlot() {
   // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
   function httpsPlot(dom) {
 
-    let traces = [];
+    let countries = [
+      { "code": "US", "name": loc.usa_users, "line": { color: leOrange, dash: "dot" } },
+      { "code": "JP", "name": loc.japan_users, "line": { color: someGreen, dash: "dash" } },
+      { "code": "DE", "name": loc.germany_users, "line": { color: "#FF0000", dash: "dash" } },
+      { "code": "IN", "name": loc.india_users, "line": { color: "#00F0F0", dash: "dot" } },
+    ];
 
+    let traces = [];
     {
       let traceObj = { type: "scatter", x:[], y:[], name: loc.all_users, line: { color: leBlue } };
       let stackMovingAvg = [];
@@ -286,17 +292,10 @@ function doPlot() {
       }, stackMovingAvg);
       traces.push(traceObj);
     }
-    {
-      let traceObj = { type: "scatter", x:[], y:[], name: loc.usa_users, line: { color: leOrange, dash: "dot" } };
+    for (let country_idx in countries) {
+      let traceObj = { type: "scatter", x:[], y:[], name: countries[country_idx]["name"], line: countries[country_idx]["line"] };
       httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-        return (country == "US");
-      });
-      traces.push(traceObj);
-    }
-    {
-      let traceObj = { type: "scatter", x:[], y:[], name: loc.japan_users, line: { color: someGreen, dash: "dash" } };
-      httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-        return (country == "JP");
+        return (country == countries[country_idx]["code"]);
       });
       traces.push(traceObj);
     }
