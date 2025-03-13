@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ if eq .Section "post" }}
+    {{ partial "components/post-hero" (dict
+      "title" .Title
+      "style" (dict
+        "background" "transparent"
+        "padding" "small"
+      )
+    ) }}
+    <div class="mx-auto">
+    {{ partial "sections/blog-list" (dict "Site" .Site "is_homepage" false) }}
+    </div>
+  {{ else }}
+    {{ partial "components/post-hero" (dict
+      "title" .Title
+      "style" (dict
+        "background" "transparent"
+        "padding" "small"
+      )
+    ) }}
+    <div class="container mx-auto py-12">
+      {{ .Content }}
+    </div>
+  {{ end }}
+{{ end }}

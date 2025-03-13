@@ -1,0 +1,106 @@
+{{ $home := .Site.Home }}
+{{ $langs := slice }}
+{{ if .Translations }}
+  {{ range .AllTranslations }}
+    {{ $langs = $langs | append . }}
+  {{ end }}
+{{ else }}
+  {{ range $home.AllTranslations }}
+    {{ $langs = $langs | append . }}
+  {{ end }}
+{{ end }}
+
+<header class="relative bg-white shadow-sm">
+  {{ if gt (len $langs ) 1 }}
+    <div class="language-section">
+      <div class="language-bar bg-gray-100 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-end">
+            <button
+              id="language-toggle"
+              aria-expanded="false"
+              aria-controls="language-section"
+              class="flex items-center space-x-2 py-1 text-xstext-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="text-xs">{{ i18n "languages" }}</span>
+              <img src="/images/language-icon128px-black.png" class="w-3 h-3" alt="" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="language-section"
+           class="hidden h-0 opacity-0 border-b border-gray-200 bg-white"
+           role="region"
+           aria-labelledby="language-toggle">
+        <div class="container mx-auto px-4 py-4">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+            {{ range $langs }}
+            {{ $isCurrentLang := eq $home.Language .Language }}
+            <a href="{{ .RelPermalink }}"
+               lang="{{ .Language.Params.languageCode }}"
+               hreflang="{{ .Language.Params.languageCode }}"
+               {{ if $isCurrentLang }}aria-current="true"{{ end }}
+               class="flex items-start lg:items-center space-x-2 px-4 py-2 rounded-md {{ if $isCurrentLang }}bg-blue-50 text-blue-700{{ else }}text-gray-700 hover:bg-gray-50{{ end }}">
+              {{ if $isCurrentLang }}
+                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              {{ end }}
+              <span>{{ .Language.LanguageName }}</span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
+  <div id="main-header" class="container mx-auto px-4 py-3 md:py-4">
+    <a id="skiplink"
+       href="#main-content"
+       class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white px-4 py-2 rounded-md shadow-md">
+      {{ i18n "header_skip_nav" }}
+    </a>
+
+    <div class="flex items-center justify-between">
+      <a class="site-logo flex-shrink-0" href="{{ .Site.Home.RelPermalink }}">
+        <!-- <img src="/images/le-logo-standard.png" alt="Let's Encrypt" class="h-14"> -->
+        <img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt">
+      </a>
+
+      <button
+        id="mobile-menu-toggle"
+        class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <nav id="main-nav"
+           class="md:flex absolute md:!relative inset-x-0 top-full md:top-auto bg-white md:bg-transparent border-b md:border-b-0 border-gray-200 shadow-lg md:shadow-none md:flex-grow md:ml-8 z-50">
+        <div class="container mx-auto">
+          <div class="md:p-0 flex justify-center">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+          </div>
+        </div>
+      </nav>
+
+      <a class="btn btn-yellow hidden md:block flex-shrink-0" href="/donate/">{{ i18n "header_donate_now" }}</a>
+    </div>
+  </div>
+</header>
+
+{{ if .Site.Params.site_banner_enabled }}
+  <div class="bg-blue-600 text-white py-2">
+    <div class="container mx-auto px-4">
+      <div class="text-center">
+        <a href="{{ .Site.Params.site_banner_href }}" class="hover:underline">{{ i18n "site_banner_text" }}</a>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+<div id="main-content"></div>

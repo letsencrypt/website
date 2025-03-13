@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ $heroParams := dict "title" .Title }}
+
+  {{ if eq .Section "post" }}
+    {{ $heroParams = merge $heroParams (dict
+      "breadcrumb" (dict
+        "text" (i18n "post_hero_breadcrumb_blog")
+        "href" "/blog/"
+      )
+      "meta" (dict
+        "date" .Date
+        "author" .Params.author
+      )
+    ) }}
+  {{ end }}
+
+  {{ if not .Lastmod.IsZero }}
+    {{ $heroParams = merge $heroParams (dict "lastUpdated" (.Lastmod.Format "January 2, 2006") "section" .Section) }}
+  {{ end }}
+
+  {{ partial "components/post-hero" $heroParams }}
+
+
+    <div class="narrow-container mx-auto py-8 prose-content">
+      {{ .Content }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </div>
+
+{{ end }}

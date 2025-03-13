@@ -1,0 +1,59 @@
+<!--
+Usage (in english):
+	{% def
+		id="a unique id for anchor"
+		name="The term to define (optional if abbr is provided)"
+		abbr="an acronym (optional)"
+		abbr_first="1 (When the acronym is more important, such as RSA or SSL)" %}
+			the definition
+	{% /def %}
+
+	<p><dfn id="a unique id for anchor">The term to define</dfn>: the definition</p>
+	<p><dfn id="a unique id for anchor"><abbr>an acronym</abbr</dfn>: the definition</p>
+	<p><dfn id="a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr>): the definition</p>
+
+Usage (in other languages):
+	{% def
+		id="a unique id for anchor - the SAME than for english"
+		name="The term to define (optional if english or abbr is provided)"
+		abbr="an acronym (optional)"
+		english="the english term (optional - if present the abbr is in english too)"
+		abbr_first="1 (When the acronym is more important, such as RSA or SSL)" %}}
+			the definition
+	{% /def %}
+
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn>: the definition</p>
+	<p><dfn id="def-a unique id for anchor"><abbr>an acronym</abbr></dfn>: the definition</p>
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr>): the definition</p>
+	<p><dfn id="def-a unique id for anchor" lang="en">the english term</dfn> (<abbr>an acronym</abbr>): the definition</p>
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<i lang="en">the english term</i>): the definition</p>
+	<p><dfn id="def-a unique id for anchor">The term to define</dfn> (<abbr>an acronym</abbr> - <i lang="en">the english term</i>): the definition</p>
+
+Notes:
+	<abbr> is used to spell out for screen readers
+	lang="en" is used for the accent for screen readers
+-->
+
+{{ $id := .Get "id" }}
+{{ $name := .Get "name" }}
+{{ $english := .Get "english" }}
+{{ $abbr := .Get "abbr" }}
+{{ $abbr_first := .Get "abbr_first" }}
+{{ $content := .Inner }}
+
+{{ $sortname := "" }}
+{{- if and ($abbr) (eq ($abbr_first) "1") -}}
+	{{ $sortname = $abbr }}
+{{- else -}}
+{{- if $name -}}
+	{{ $sortname = $name }}
+{{- else -}}
+{{- if $english -}}
+	{{ $sortname = $english }}
+{{- else -}}
+	{{ $sortname = $abbr }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+{{ .Page.Scratch.SetInMap "glossary" $sortname (dict "id" $id "name" $name "english" $english "abbr" $abbr "abbr_first" $abbr_first "content" $content) }}

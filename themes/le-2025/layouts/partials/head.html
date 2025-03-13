@@ -1,0 +1,15 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+{{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
+</title>
+<meta name="description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}" />
+
+<meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}

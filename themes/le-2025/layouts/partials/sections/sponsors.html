@@ -1,0 +1,52 @@
+<div id="sponsors" class="bg-gray-50 section-padding-lg">
+  <div class="container mx-auto">
+    <div class="mb-10">
+      <h2 class="text-hero-heading mb-6">{{ i18n "sponsors_heading" }}</h2>
+
+    </div>
+
+    {{ with $.Site.Data.sponsors.diamond }}
+    <div class="mb-12">
+      <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_diamond" }}</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
+        {{ range $sponsor := . }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[80px]") }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ with $.Site.Data.sponsors.platinum }}
+    <div class="mb-12">
+      <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_platinum" }}</h3>
+      <div class="grid grid-cols-3 md:grid-cols-4 gap-1">
+        {{ range $sponsor := . }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[64px]") }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ with $.Site.Data.sponsors.gold }}
+    <div class="mb-12">
+      <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_gold" }}</h3>
+      <div class="grid grid-cols-4 md:grid-cols-6 gap-1">
+        {{ range $sponsor := . }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ with $.Site.Data.sponsors.silver }}
+    <div>
+      <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_silver" }}</h3>
+      <div class="grid grid-cols-4 md:grid-cols-6 gap-1">
+        {{ range $sponsor := . }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

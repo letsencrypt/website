@@ -1,0 +1,38 @@
+{{- with resources.Get "js/le-2025-theme.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with resources.Get "js/autoanchor.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{/* Number animation script */}}
+{{ $numberAnimation := resources.Get "js/number-animation.js" }}
+{{ if $numberAnimation }}
+  {{ $opts := dict "minify" true }}
+  {{ $numberAnimationJS := $numberAnimation | js.Build $opts }}
+  {{ if eq hugo.Environment "development" }}
+    <script src="{{ $numberAnimationJS.RelPermalink }}"></script>
+  {{ else }}
+    {{ $numberAnimationJS := $numberAnimationJS | fingerprint }}
+    <script src="{{ $numberAnimationJS.RelPermalink }}" integrity="{{ $numberAnimationJS.Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ end }}
+{{ end }}

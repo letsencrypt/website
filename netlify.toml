@@ -307,3 +307,9 @@ from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
 to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
 status = 301
 force = true
+
+[[redirects]]
+from = "/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true

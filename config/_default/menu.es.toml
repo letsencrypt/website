@@ -12,7 +12,7 @@ weight = 40
 identifier = "about"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
-weight = 20
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -24,7 +24,7 @@ parent = "about"
 url = "https://letsencrypt.status.io/"
 [[main]]
 name = "Trabajos"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
@@ -34,3 +34,7 @@ weight = 40
 identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
+[[main]]
+name = "Blog"
+weight = 25
+url = "/blog/"

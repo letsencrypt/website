@@ -1,0 +1,12 @@
+<a href="{{ .url }}"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="block no-underline rounded-lg border border-1 border-gray-100 shadow-lg p-8 flex flex-col items-center text-center {{ with .class }}{{ . }}{{ end }}">
+  <img src="{{ .logo }}"
+       alt="{{ .name }} logo"
+       class="h-16 w-auto mb-6">
+<p class="mb-6 text-black">{{ .description }}</p>
+  <span class="font-medium inline-flex items-center text-black">
+    {{ i18n "project_card_visit" }} {{ .name }}
+  </span>
+</a>

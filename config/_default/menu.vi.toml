@@ -3,6 +3,10 @@ name = "Trợ Giúp"
 weight = 20
 url = "https://community.letsencrypt.org/"
 [[main]]
+name = "Blog"
+weight = 25
+url = "/blog/"
+[[main]]
 name = "Quyên Góp"
 weight = 30
 identifier = "donate"
@@ -12,7 +16,7 @@ weight = 40
 identifier = "about"
 [[main]]
 name = "Internet Security Research Group (ISRG)"
-weight = 20
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -24,7 +28,7 @@ parent = "about"
 url = "https://letsencrypt.status.io/"
 [[main]]
 name = "Nghề Nghiệp"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"

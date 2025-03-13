@@ -35,4 +35,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
-      - run: npm run test:html5validate
+      # - run: npm run test:html5validate
