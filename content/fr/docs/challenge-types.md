@@ -2,7 +2,7 @@
 title: Types de Challenges
 slug: challenge-types
 date: 2019-02-25
-lastmod: 2023-02-13
+lastmod: 2025-01-07
 show_lastmod: 1
 ---
 
@@ -19,15 +19,16 @@ Le challenge HTTP-01 ne peut se faire que sur le port 80. Permettre aux clients 
 
 Avantages :
 
- - Il est facile à automatiser sans connaissances supplémentaires sur la configuration d'un domaine.
- - Il permet aux hébergeurs de délivrer des certificats pour les domaines CNAME.
- - Il fonctionne avec des serveurs web prêts à l'emploi.
+- Il est facile à automatiser sans connaissances supplémentaires sur la configuration d'un domaine.
+- Il permet aux hébergeurs de délivrer des certificats pour les domaines CNAME.
+- Il fonctionne avec des serveurs web prêts à l'emploi.
+- Il peut également être utilisé pour valider les adresses IP.
 
 Inconvénients :
 
- - Cela ne fonctionne pas si votre FAI bloque le port 80 (c'est rare, mais certains FAI résidentiels le font).
- - Let's Encrypt ne vous permet pas d'utiliser ce défi pour délivrer des certificats de type "wildcard".
- - Si vous disposez de plusieurs serveurs web, vous devez vous assurer que le fichier est disponible sur chacun d'eux.
+- Cela ne fonctionne pas si votre FAI bloque le port 80 (c'est rare, mais certains FAI résidentiels le font).
+- Let's Encrypt ne vous permet pas d'utiliser ce défi pour délivrer des certificats de type "wildcard".
+- Si vous disposez de plusieurs serveurs web, vous devez vous assurer que le fichier est disponible sur chacun d'eux.
 
 # Challenge DNS-01
 
@@ -45,18 +46,16 @@ Vous pouvez avoir plusieurs enregistrements TXT en place pour le même nom. Par 
 
 Avantages :
 
- - Vous pouvez utiliser ce challenge pour délivrer des certificats contenant des noms de domaine "wildcard".
- - Ça fonctionne bien même si vous avez plusieurs serveurs web.
+- Vous pouvez utiliser ce challenge pour délivrer des certificats contenant des noms de domaine "wildcard".
+- Ça fonctionne bien même si vous avez plusieurs serveurs web.
+- Vous pouvez utiliser ce challenge pour les noms de domaine dont les serveurs web ne sont pas exposés à l'internet public.
 
 Inconvénients :
 
- - Il est risqué de conserver les identifiants API sur votre serveur web.
- - Il se peut que votre fournisseur de DNS ne propose pas d'API.
- - Votre API DNS peut ne pas fournir d'informations sur les délais de propagation.
-
-# TLS-SNI-01
-
-Ce challenge a été défini dans les versions préliminaires d'ACME. Il faisait un handshake TLS sur le port 443 et envoyait un en-tête spécifique [SNI][], à la recherche du certificat qui contenait le jeton. Il a été [désactivé en mars 2019][tls-sni-disablement] parce qu'il n'était pas assez sécurisé.
+- Il est risqué de conserver les identifiants API sur votre serveur web.
+- Il se peut que votre fournisseur de DNS ne propose pas d'API.
+- Votre API DNS peut ne pas fournir d'informations sur les délais de propagation.
+- Il ne peut pas être utilisé pour valider les adresses IP.
 
 # TLS-ALPN-01
 
@@ -66,14 +65,19 @@ Ce challenge n'est pas adapté à la plupart des gens. Il est mieux adapté aux 
 
 Avantages :
 
- - Il fonctionne si le port 80 n'est pas disponible pour vous.
- - Il peut être effectué uniquement au niveau de la couche TLS.
+- Il fonctionne si le port 80 n'est pas disponible pour vous.
+- Il peut être effectué uniquement au niveau de la couche TLS.
+- Il peut également être utilisé pour valider les adresses IP.
 
 Inconvénients :
 
- - Il n'est pas supporté par Apache, Nginx ou Certbot, et ne le sera probablement pas de sitôt.
- - Comme pour HTTP-01, si vous avez plusieurs serveurs, ils doivent tous répondre avec le même contenu.
- - Cette méthode ne peut pas être utilisée pour valider les domaines génériques.
+- Il n'est pas supporté par Apache, Nginx ou Certbot, et ne le sera probablement pas de sitôt.
+- Comme pour HTTP-01, si vous avez plusieurs serveurs, ils doivent tous répondre avec le même contenu.
+- Cette méthode ne peut pas être utilisée pour valider les domaines génériques.
+
+# TLS-SNI-01
+
+Ce challenge a été défini dans les versions préliminaires d'ACME. Il faisait un handshake TLS sur le port 443 et envoyait un en-tête spécifique [SNI][], à la recherche du certificat qui contenait le jeton. Il [a été supprimé en mars 2019][tls-sni-disablement] car il n'était pas assez sécurisé.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
