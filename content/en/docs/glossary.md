@@ -1,23 +1,24 @@
 ---
 title: Glossary
 slug: glossary
-date: 2024-07-16
+date: 2025-03-17
 show_lastmod: 1
+description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
 	name="The term to define (optional if english or abbr is provided)"
 	abbr="an accronym (optional)"
 	english="the english term (optional - if present the abbr is in english too)" %}}
 		the definition
 {% /def %}
-	
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
