@@ -2,7 +2,7 @@
 title: How It Works
 linkTitle: How Let's Encrypt Works
 slug: how-it-works
-lastmod: 2024-06-26
+lastmod: 2025-03-16
 show_lastmod: 1
 ---
 
