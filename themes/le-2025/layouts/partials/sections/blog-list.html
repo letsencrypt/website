@@ -1,0 +1,30 @@
+<div class="{{ if .is_homepage }}bg-le-blue py-10{{ end }}">
+  <div class="container section-padding mx-auto">
+    {{ if .is_homepage }}
+      <h2 class="text-eyebrow text-white text-center mb-10">{{ i18n "blog_section_heading" }}</h2>
+    {{ end }}
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {{ $currentLang := .Site.Language.Lang }}
+      {{ $count := 0 }}
+      {{ range site.Home.AllTranslations }}
+        {{ range .Pages }}
+          {{ range where .Pages "Type" "post" }}
+            {{ if or (not $.is_homepage) (lt $count 3) }}
+              {{ partial "components/blog-grid-item" (dict "page" . "currentLang" $currentLang) }}
+              {{ $count = add $count 1 }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ if .is_homepage }}
+      <div class="flex justify-center mt-10">
+        <a href="/blog" class="btn btn-outline btn-outline-white">
+          {{ i18n "blog_section_see_all" }}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</div>

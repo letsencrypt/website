@@ -1,5 +1,5 @@
 baseURL = "https://letsencrypt.org/"
-
+theme="le-2025"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 

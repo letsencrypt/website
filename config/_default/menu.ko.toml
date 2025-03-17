@@ -3,6 +3,10 @@ name = "도움말"
 weight = 20
 url = "https://community.letsencrypt.org/"
 [[main]]
+name = "블로그"
+weight = 25
+url = "/blog/"
+[[main]]
 name = "후원"
 weight = 30
 identifier = "donate"
@@ -12,7 +16,7 @@ weight = 40
 identifier = "about"
 [[main]]
 name = "비영리 인터넷 보안 연구 그룹 (ISRG)"
-weight = 20
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -24,7 +28,7 @@ parent = "about"
 url = "https://letsencrypt.status.io/"
 [[main]]
 name = "채용"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"

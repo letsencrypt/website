@@ -1,0 +1,20 @@
+{{ $title := .title }}
+{{ $description := .description }}
+{{ $link_url := .link_url }}
+{{ $link_text := .link_text }}
+{{ $is_button := .is_button | default false }}
+
+<div class="bg-white rounded-lg shadow-lg p-8">
+  <h3 class="text-xl font-semibold mb-4">{{ $title }}</h3>
+  <p class="text-gray-600 mb-6">{{ $description }}</p>
+  {{ if $is_button }}
+    <a href="{{ $link_url }}" class="btn btn-primary">{{ $link_text }}</a>
+  {{ else }}
+    <a href="{{ $link_url }}" class="font-medium inline-flex items-center">
+      {{ $link_text }}
+      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  {{ end }}
+</div>

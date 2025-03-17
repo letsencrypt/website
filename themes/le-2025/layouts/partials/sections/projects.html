@@ -1,0 +1,30 @@
+<section class="section-padding bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        {{ T "projects_section_title" }}
+      </h2>
+      <p class="text-lg text-gray-600">
+        {{ T "projects_section_description" }}
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      {{ partial "components/project-card" (dict
+        "name" (T "project_prossimo_name")
+        "description" (T "project_prossimo_description")
+        "url" "https://memorysafety.org"
+        "logo" "/images/Prossimo Horizontal Full Color.svg"
+        "class" "bg-white text-black"
+        ) }}
+
+        {{ partial "components/project-card" (dict
+        "name" (T "project_divviup_name")
+        "description" (T "project_divviup_description")
+        "url" "https://divviup.org"
+        "logo" "/images/Divvi-Up-Large-Full-Color-Logo.png"
+        "class" "bg-white text-black"
+      ) }}
+    </div>
+  </div>
+</section>
