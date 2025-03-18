@@ -1587,6 +1587,10 @@ div[data-netlify-deploy-id] {
   display: none;
 }
 
+.pull-quote p:last-child {
+  margin-bottom: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1809,20 +1813,12 @@ div[data-netlify-deploy-id] {
   height: 400px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[90px\] {
-  height: 90px;
-}
-
-.h-\[80px\] {
-  height: 80px;
-}
-
 .h-\[70px\] {
   height: 70px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[48px\] {
@@ -1833,20 +1829,12 @@ div[data-netlify-deploy-id] {
   max-height: 64px;
 }
 
-.max-h-\[80px\] {
-  max-height: 80px;
-}
-
 .max-h-\[80\%\] {
   max-height: 80%;
 }
 
-.max-h-\[200px\] {
-  max-height: 200px;
-}
-
-.max-h-\[90px\] {
-  max-height: 90px;
+.max-h-\[80px\] {
+  max-height: 80px;
 }
 
 .min-h-full {
@@ -1893,20 +1881,16 @@ div[data-netlify-deploy-id] {
   max-width: 56rem;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
-.max-w-\[80\%\] {
-  max-width: 80%;
 }
 
 .flex-shrink-0 {

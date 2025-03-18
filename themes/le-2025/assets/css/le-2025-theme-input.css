@@ -399,6 +399,10 @@
     display: none;
   }
 
+  .pull-quote p:last-child {
+    margin-bottom: 0;
+  }
+
 }
 
 /* Utility styles */
