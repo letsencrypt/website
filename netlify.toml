@@ -1,7 +1,7 @@
 [build]
 
 publish = "./public/"
-command = "hugo -d public"
+command = "hugo -d -F public"
 
 [build.environment]
 # same as .github/workflows/test.yaml
