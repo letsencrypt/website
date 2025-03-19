@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-02-20",
+	"lastmod": "2025-03-12",
 	"categories": [
 		"Bash",
 		"C",
@@ -287,6 +287,13 @@
 			"name": "lua-resty-auto-ssl",
 			"url": "https://github.com/GUI/lua-resty-auto-ssl",
 			"category": "nginx"
+		},
+		{
+			"name": "Angie ACME module",
+			"url": "https://en.angie.software/angie/docs/configuration/modules/http/http_acme/",
+			"category": "nginx",
+			"comments": "(built-in module, no extra dependencies, simple configuration, reload-less auto retrieval)",
+			"acme_v2": "true"
 		},
 		{
 			"name": "Nginx ACME",
