@@ -1,11 +1,13 @@
 ---
 title: Udløbs E-Mail
 slug: expiration-emails
-date: 2016-07-02
-lastmod: 2023-01-09
+lastmod: 2025-03-02
 show_lastmod: 1
 ---
 
+# Bemærk: Slut for Udløb E-mails annonceret
+
+Bemærk venligst, at Let's Encrypt vil afslutte sin e-mail udløbsservice pr [dette blogindlæg](/2025/01/22/ending-expiration-emails/).
 
 # Abonnér
 
