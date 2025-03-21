@@ -1,11 +1,13 @@
 ---
 title: 过期提醒邮件
 slug: expiration-emails
-date: 2016-07-02
-lastmod: 2023-01-09
+lastmod: 2025-03-02
 show_lastmod: 1
 ---
 
+# 注意：过期提醒邮件服务即将终止
+
+请注意，如先前发布的[博客文章](/2025/01/22/ending-expiration-emails/)所述，Let's Encrypt 即将停止通过邮件提醒用户为证书续期。
 
 # 订阅邮件提醒
 
