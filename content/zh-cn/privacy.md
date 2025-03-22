@@ -12,7 +12,7 @@ Let's Encrypt 隐私政策将从以下三种场景描述我们如何收集、使
 - 当您是我们的用户，申请并使用 Let's Encrypt 证书时；
 - 当您作为访客，访问 Let's Encrypt 网站、社群论坛、letsencrypt.org 下其他网页以及 Let's Encrypt 在第三方社交平台上运营的账户时。
 
-Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联网安全研究组](https://www.abetterinternet.org/)（ISRG）提供。
+Let's Encrypt 服务由美国加利福尼亚州的非营利公益组织[互联网安全研究组](https://www.abetterinternet.org/) (ISRG) 提供。
 
 ## 依赖方
 

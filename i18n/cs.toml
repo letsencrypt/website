@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Nezisková certifikační autorita poskytující certifikáty TLS pro <a href='/stats/'>550 milionů</a> webových stránek."
+other = "Šifrování pro všechny. Nezisková organizace poskytující bezplatné TLS certifikáty pro více než 500m webových stránek."
 
 [home_hero_getting_started]
 other = "Začít"
@@ -17,7 +17,7 @@ other = "Přečtěte si vše o naší neziskové práci v letošním roce v naš
 other = "Důležití sponzoři a investoři"
 
 [home_from_our_blog]
-other = "Z našeho blogu"
+other = "Blog"
 
 [read_more]
 other = "Zobrazit více"
@@ -29,15 +29,24 @@ other = 'Odebírat <a href="{{ .Permalink }}">přes RSS</a>'
 other = "Podpořte bezpečnější web, který respektuje soukromí."
 
 [footer_donate]
-other = "Přispět"
+other = "Přispějte nyní"
 
 [footer_mailing]
 other = "Veškerou poštu nebo dotazy zasílejte na:"
 
+[footer_legal_address]
+other = "Oficiální adresa"
+
 [footer_policies]
 other = """
-Zobrazit naše <a href="/privacy/">zásady ochrany osobních údajů</a>.<br>
-Zobrazit naše <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranných známek</a>.
+Přečtěte si naše <a href="/privacy/">zásady ochrany osobních údajů</a>.<br>
+Přečtěte si naše <a href="https://www.abetterinternet.org/trademarks">zásady používání ochranné známky</a>.
+Přečtěte si naše <a href="https://www.abetterinternet.org/terms-of-service">podmínky poskytování služeb</a>.
+"""
+
+[footer_links]
+other = """
+<a href="/privacy/">Zásady ochrany osobních údajů</a> <a href="https://www.abetterinternet.org/trademarks">Pravidla používání ochranné známky</a>
 """
 
 [header_skip_nav]
@@ -196,5 +205,236 @@ other = "Přihlaste se k odběru e-mailových novinek o Let's Encrypt a dalšíc
 [site_banner_text]
 other = "ISRG už 10 let pomáhá vytvářet lepší internet →"
 
-[footer_copyright]
+[internet_security_research_group]
 other = "Internet Security Research Group"
+
+[header_donate_now]
+other = "Přispějte nyní"
+
+[toggle_menu_aria_label]
+other = "Přepnout menu"
+
+[isrg_legal_address_label]
+other = "Oficiální adresa"
+
+[isrg_mailing_label]
+other = "Veškerou poštu nebo dotazy zasílejte na:"
+
+[newsletter_subscribe_heading]
+other = "Přihlaste se k odběru e-mailových novinek o Let's Encrypt a dalších projektech ISRG"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "Podmínky"
+
+[footer_nav_privacy]
+other = "Zásady ochrany osobních údajů"
+
+[footer_nav_trademark]
+other = "Pravidla ochranných známek"
+
+[home_hero_heading]
+other = "Šifrování pro <br />všechny"
+
+[home_hero_subheading]
+other = 'Nezisková organizace poskytující bezplatné TLS certifikáty pro více než <span class="relative inline-block"><span class="invisible text-4xl">550m</span><span id="certificate-count" class="text-4xl absolute left-0">550m</span></span> webových stránek.'
+
+[home_hero_get_started]
+other = "Začít"
+
+[home_hero_annual_report_title]
+other = "Zjistěte, jak naše práce přispívá k zlepšení bezpečnosti a ochrany soukromí"
+
+[home_hero_annual_report_description]
+other = "V naší výroční zprávě za 2024 se dozvíte, čeho jsme dosáhli na cestě k lepšímu internetu."
+
+[home_hero_annual_report_button]
+other = "Přečtěte si výroční zprávu"
+
+[getting_started_eyebrow]
+other = "Bezplatné automatizované certifikáty TLS"
+
+[getting_started_heading]
+other = "Jak začít"
+
+[getting_started_description]
+other = "Let's Encrypt je certifikační autorita, která poskytuje bezplatné TLS certifikáty. Díky nim webové stránky snadno zapnou šifrování HTTPS a internet se tak stane bezpečnější pro všechny. Let's Encrypt je projekt neziskové organizace Internet Security Research Group."
+
+[getting_started_ready_title]
+other = "Jste připraveni začít?"
+
+[getting_started_ready_content]
+other = "Začněte zabezpečovat své webové stránky pomocí bezplatných certifikátů SSL/TLS od společnosti Let's Encrypt. Chcete-li získat certifikát pro doménu svých webových stránek, musíte prokázat kontrolu nad doménou."
+
+[getting_started_ready_link]
+other = "Pojďme začít"
+
+[getting_started_docs_title]
+other = "Dokumentace"
+
+[getting_started_docs_content]
+other = "Seznamte se s naším procesem vydávání certifikátů a osvědčenými postupy."
+
+[getting_started_docs_link]
+other = "Přečtěte si dokumentaci"
+
+[getting_started_clients_title]
+other = "ACME klienti"
+
+[getting_started_clients_content]
+other = "Vyberte si některého z doporučených ACME klientů pro automatickou správu certifikátů."
+
+[getting_started_clients_link]
+other = "Procházet ACME klienty"
+
+[getting_started_help_title]
+other = "Získejte pomoc od komunity Let's Encrypt"
+
+[getting_started_help_content]
+other = "Připojte se k našemu komunitnímu fóru pro technickou pomoc a sdílení znalostí s odborníky, dobrovolníky a pracovníky ISRG."
+
+[getting_started_help_link]
+other = "Navštivte fórum"
+
+[support_heading_entire_sentence]
+other = "Globální dopad umožněný štědrostí, příspěvky, sponzorstvím a Vámi"
+
+[support_heading_base]
+other = "Globální dopad umožněný"
+
+[support_heading_word1]
+other = "štědrostí"
+
+[support_heading_word2]
+other = "příspěvky"
+
+[support_heading_word3]
+other = "sponzorstvím"
+
+[support_heading_word4]
+other = "Vámi"
+
+[support_donate_title]
+other = "Podpora šifrování pro všechny"
+
+[support_donate_description]
+other = "Váš dar pomáhá udržet Let's Encrypt zdarma a přístupný milionům webových stránek po celém světě. Připojte se k nám a zabezpečte internet, web za webem. Každý příspěvek má význam, ať už jste jednotlivec nebo firma."
+
+[support_donate_button]
+other = "Přispějte nyní"
+
+[support_sponsor_title]
+other = "Vedení prostřednictvím sponzorství"
+
+[support_sponsor_description]
+other = "Společnosti, které se spoléhají na naši práci na šifrování webu nebo si jí cení, mohou finančně podpořit Let's Encrypt. Připojte se k velkým i malým společnostem a přispějte nám na naši práci!"
+
+[support_sponsor_button]
+other = "Zjistěte více o sponzorství"
+
+[sponsors_heading]
+other = "Důležití sponzoři a investoři"
+
+[sponsors_diamond]
+other = "Diamantoví sponzoři"
+
+[sponsors_platinum]
+other = "Platinoví sponzoři"
+
+[sponsors_gold]
+other = "Zlatí sponzoři"
+
+[sponsors_silver]
+other = "Stříbrní sponzoři"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "Přihlašovací formulář k odběru novinek"
+
+[blog_section_heading]
+other = "Z našeho blogu"
+
+[blog_section_see_all]
+other = "Zobrazit všechny naše příspěvky na blogu"
+
+[post_hero_last_updated]
+other = "Poslední úprava:"
+
+[post_hero_breadcrumb_blog]
+other = "Blog"
+
+[donate_get_involved_button]
+other = "Zapojte se"
+
+[donate_individual_impact_eyebrow]
+other = "Individuální dopad"
+
+[donate_encryption_everybody_alt]
+other = "Šifrování pro všechny"
+
+[project_card_visit]
+other = "Navštívit"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro více než ### webových stránek"
+
+[home_hero_nonprofit_prefix]
+other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro více než"
+
+[home_hero_certificate_count]
+other = "550 m"
+
+[home_hero_nonprofit_suffix]
+other = "webových stránek"
+
+[projects_section_title]
+other = "Více způsobů, jak zlepšujeme bezpečnost a soukromí"
+
+[projects_section_description]
+other = "Věděli jste, že Let's Encrypt má dva sourozenecké projekty? Let's Encrypt a tyto dva projekty provozuje Internet Security Research Group (ISRG), veřejně prospěšná organizace 501(c)(3) zaměřená na zvýšení bezpečnosti internetu a respektování soukromí."
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "Zaměřuje se na paměťovou bezpečnost v kritické internetové infrastruktuře pomocí programovacích jazyků bezpečných pro paměť."
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "Systém pro sběr a agregaci metrik respektující soukromí, postavený na počítání s více stranami."
+
+[support_donate_section_title]
+other = "Podpora šifrování pro všechny"
+
+[support_donate_section_description]
+other = "Váš dar pomáhá udržet Let's Encrypt zdarma a přístupný milionům webových stránek po celém světě. Připojte se k nám a zabezpečte internet, web za webem. Každý příspěvek má význam, ať už jste jednotlivec nebo firma."
+
+[support_donate_section_button]
+other = "Přispějte nyní"
+
+[support_sponsor_section_title]
+other = "Vedení prostřednictvím sponzorství"
+
+[support_sponsor_section_description]
+other = "Společnosti, které se spoléhají na naši práci na šifrování webu nebo si jí cení, mohou finančně podpořit Let's Encrypt. Připojte se k velkým i malým společnostem a přispějte nám na naši práci!"
+
+[support_sponsor_section_button]
+other = "Zjistěte více o sponzorství"
+
+[stats_section_title]
+other = "Růst Let's Encrypt"
+
+[stats_section_button]
+other = "Další statistiky"
