@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "为 <a href='/stats/'>5.5 亿</a>网站提供 TLS 证书的非营利证书颁发机构"
+other = "面向所有人的数据加密。为超过五亿网站免费提供 TLS 证书的非营利组织。"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -17,7 +17,7 @@ other = "我们这一年来的非营利工作详情可在 <a href='https://abett
 other = "核心赞助商"
 
 [home_from_our_blog]
-other = "博客文章"
+other = "博客"
 
 [read_more]
 other = "阅读全文"
@@ -29,15 +29,22 @@ other = '<a href="{{ .Permalink }}">RSS 订阅</a>'
 other = "支持更安全、更尊重隐私的互联网。"
 
 [footer_donate]
-other = "捐款"
+other = "立即捐款"
 
 [footer_mailing]
 other = "邮件咨询可发送至："
 
+[footer_legal_address]
+other = "注册地址"
+
 [footer_policies]
 other = """
 阅读我们的<a href="/zh-cn/privacy/">隐私政策</a>。<br>
-阅读我们的<a href="https://www.abetterinternet.org/trademarks">商标政策</a>。"""
+阅读我们的<a href="https://www.abetterinternet.org/trademarks">商标政策</a>。
+阅读我们的<a href="https://www.abetterinternet.org/terms-of-service">服务条款</a>。"""
+
+[footer_links]
+other = '<a href="/privacy/">隐私政策</a> <a href="https://www.abetterinternet.org/trademarks">商标政策</a>'
 
 [header_skip_nav]
 other = "跳过导航链接"
@@ -195,5 +202,236 @@ other = "订阅 Let's Encrypt 和其他 ISRG 项目的最新资讯"
 [site_banner_text]
 other = "推动构建更加光明的互联网，ISRG 成立十周年庆 →"
 
-[footer_copyright]
+[internet_security_research_group]
 other = "互联网安全研究组"
+
+[header_donate_now]
+other = "立即捐款"
+
+[toggle_menu_aria_label]
+other = "切换菜单"
+
+[isrg_legal_address_label]
+other = "注册地址"
+
+[isrg_mailing_label]
+other = "邮件咨询可发送至："
+
+[newsletter_subscribe_heading]
+other = "订阅 Let's Encrypt 和其他 ISRG 项目的最新资讯"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "服务条款"
+
+[footer_nav_privacy]
+other = "隐私政策"
+
+[footer_nav_trademark]
+other = "商标政策"
+
+[home_hero_heading]
+other = "面向所有人的<br />数据加密"
+
+[home_hero_subheading]
+other = '我们是一家非营利机构，为全球逾 <span class="relative inline-block"><span class="invisible text-4xl">5.5 亿</span><span id="certificate-count" class="text-4xl absolute left-0">5.5 亿</span></span> 网站提供了免费的 TLS 证书。'
+
+[home_hero_get_started]
+other = "快速入门"
+
+[home_hero_annual_report_title]
+other = "深入了解我们促进安全与隐私的事业"
+
+[home_hero_annual_report_description]
+other = "我们的 2024 年度报告突出体现了在促进互联网良性发展方面我们所作出的贡献。"
+
+[home_hero_annual_report_button]
+other = "阅读年度报告"
+
+[getting_started_eyebrow]
+other = "免费且自动化的 TLS 证书"
+
+[getting_started_heading]
+other = "入门指南"
+
+[getting_started_description]
+other = "Let's Encrypt 是一家免费提供 TLS 证书的证书颁发机构，简化了网站开启 HTTPS 加密的流程，从而为所有人构建更加安全的互联网。Let's Encrypt 项目由非营利组织互联网安全研究组发起。"
+
+[getting_started_ready_title]
+other = "准备就绪？"
+
+[getting_started_ready_content]
+other = "使用 Let's Encrypt 提供的免费 SSL/TLS 证书为您的网站增强安全性。在获得证书之前，您需要先证明您对网站域名的控制权。"
+
+[getting_started_ready_link]
+other = "立即开始"
+
+[getting_started_docs_title]
+other = "文档"
+
+[getting_started_docs_content]
+other = "了解我们的证书签发流程和最佳实践。"
+
+[getting_started_docs_link]
+other = "阅读文档"
+
+[getting_started_clients_title]
+other = "ACME 客户端"
+
+[getting_started_clients_content]
+other = "使用我们推荐的 ACME 客户端程序自动管理您的证书。"
+
+[getting_started_clients_link]
+other = "浏览 ACME 客户端"
+
+[getting_started_help_title]
+other = "获取 Let's Encrypt 社群协助"
+
+[getting_started_help_content]
+other = "加入我们的社群论坛即可与各方专家、志愿者以及 ISRG 团队成员交流、分享经验或寻求技术支持。"
+
+[getting_started_help_link]
+other = "前往论坛"
+
+[support_heading_entire_sentence]
+other = "全球影响力的形成离不开公益理念、社群贡献、各方资助与您的支持"
+
+[support_heading_base]
+other = "全球影响力的形成离不开"
+
+[support_heading_word1]
+other = "公益理念"
+
+[support_heading_word2]
+other = "社群贡献"
+
+[support_heading_word3]
+other = "各方资助"
+
+[support_heading_word4]
+other = "您的支持"
+
+[support_donate_title]
+other = "支持面向所有人的数据加密"
+
+[support_donate_description]
+other = "您的捐款将帮助 Let's Encrypt 持续为全球数百万网站提供免费而可靠的服务。无论您是个人还是企业，都可以贡献一份宝贵的力量，与我们共同构建更加安全的互联网。"
+
+[support_donate_button]
+other = "立即捐款"
+
+[support_sponsor_title]
+other = "领先得益于赞助"
+
+[support_sponsor_description]
+other = "对我们的网络加密工作有所依赖或重视的企业都可以考虑在经济上资助 Let's Encrypt。正是依靠大大小小的企业慷慨相助，我们的事业才得以延续至今！"
+
+[support_sponsor_button]
+other = "了解如何赞助"
+
+[sponsors_heading]
+other = "核心赞助商"
+
+[sponsors_diamond]
+other = "钻石级赞助商"
+
+[sponsors_platinum]
+other = "白金级赞助商"
+
+[sponsors_gold]
+other = "黄金级赞助商"
+
+[sponsors_silver]
+other = "白银级赞助商"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "邮件订阅表单"
+
+[blog_section_heading]
+other = "博客精选"
+
+[blog_section_see_all]
+other = "浏览所有博客文章"
+
+[post_hero_last_updated]
+other = "最近更新："
+
+[post_hero_breadcrumb_blog]
+other = "博客"
+
+[donate_get_involved_button]
+other = "帮助 Let's Encrypt"
+
+[donate_individual_impact_eyebrow]
+other = "个人的力量"
+
+[donate_encryption_everybody_alt]
+other = "面向所有人的数据加密"
+
+[project_card_visit]
+other = "前往"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "为超过 ### 网站免费提供 TLS 证书的非营利证书颁发机构"
+
+[home_hero_nonprofit_prefix]
+other = "A nonprofit providing free TLS certificates to more than"
+
+[home_hero_certificate_count]
+other = "550M"
+
+[home_hero_nonprofit_suffix]
+other = "websites"
+
+[projects_section_title]
+other = "我们促进互联网安全与隐私的其他方式"
+
+[projects_section_description]
+other = "您知道 Let's Encrypt 还有两个孪生项目吗？这两个项目与 Let's Encrypt 的运营方都是互联网安全研究组 (ISRG)，一家致力于使互联网更加安全且尊重隐私的 501(c)(3) 公益组织。"
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "致力于推动互联网关键基础设施使用内存安全的编程语言，从而增强网络安全性。"
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "一套基于多方协同计算以尊重隐私的指标采集与汇总系统。"
+
+[support_donate_section_title]
+other = "支持面向所有人的数据加密"
+
+[support_donate_section_description]
+other = "您的捐款将帮助 Let's Encrypt 持续为全球数百万网站提供免费而可靠的服务。无论您是个人还是企业，都可以贡献一份宝贵的力量，与我们共同构建更加安全的互联网。"
+
+[support_donate_section_button]
+other = "立即捐款"
+
+[support_sponsor_section_title]
+other = "领先得益于赞助"
+
+[support_sponsor_section_description]
+other = "对我们的网络加密工作有所依赖或重视的企业都可以考虑在经济上资助 Let's Encrypt。正是依靠大大小小的企业慷慨相助，我们的事业才得以延续至今！"
+
+[support_sponsor_section_button]
+other = "了解如何赞助"
+
+[stats_section_title]
+other = "Let's Encrypt 发展趋势"
+
+[stats_section_button]
+other = "更多统计数据"
