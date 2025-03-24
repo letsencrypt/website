@@ -414,7 +414,7 @@ other = "A nonprofit providing free TLS certificates to more than"
 other = "550M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "websites."
 
 [projects_section_title]
 other = "More ways we're improving security and privacy"

@@ -1813,28 +1813,28 @@ div[data-netlify-deploy-id] {
   height: 400px;
 }
 
+.h-\[48px\] {
+  height: 48px;
+}
+
+.h-\[64px\] {
+  height: 64px;
+}
+
 .h-\[70px\] {
   height: 70px;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-full {
   height: 100%;
 }
 
-.max-h-\[48px\] {
-  max-height: 48px;
-}
-
-.max-h-\[64px\] {
-  max-height: 64px;
-}
-
 .max-h-\[80\%\] {
   max-height: 80%;
-}
-
-.max-h-\[80px\] {
-  max-height: 80px;
 }
 
 .min-h-full {
