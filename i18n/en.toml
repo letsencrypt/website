@@ -405,7 +405,7 @@ other = "ISRG"
 
 # Home Hero - home_hero_nonprofit_sentence used if language does not follow English word order
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "A nonprofit providing free TLS certificates to more than ### websites."
 
 [home_hero_nonprofit_prefix]
 other = "A nonprofit providing free TLS certificates to more than"

@@ -9,7 +9,11 @@
               {{ safeHTML (T "home_hero_heading") }}
             </h1>
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-balance">
-              {{ T "home_hero_nonprofit_prefix" }} <span class="relative inline-block"><span class="invisible text-4xl">{{ T "home_hero_certificate_count" }}</span><span id="certificate-count" class="text-4xl absolute left-0">{{ T "home_hero_certificate_count" }}</span></span> {{ T "home_hero_nonprofit_suffix" }}
+              {{ if and (T "home_hero_nonprofit_prefix") (T "home_hero_certificate_count") (T "home_hero_nonprofit_suffix") }}
+                {{ T "home_hero_nonprofit_prefix" }} <span class="relative inline-block"><span class="invisible text-4xl">{{ T "home_hero_certificate_count" }}</span><span id="certificate-count" class="text-4xl absolute left-0">{{ T "home_hero_certificate_count" }}</span></span> {{ T "home_hero_nonprofit_suffix" }}
+              {{ else if and (T "home_hero_nonprofit_sentence") (T "home_hero_certificate_count") }}
+                {{ replace (T "home_hero_nonprofit_sentence") "###" (T "home_hero_certificate_count") }}
+              {{ end }}
             </h2>
             <hr class="w-20 border-le-yellow border-2 mb-7">
             <div class="flex flex-wrap gap-4">
