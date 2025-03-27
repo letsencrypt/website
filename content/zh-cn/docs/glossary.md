@@ -81,7 +81,7 @@ Note for translators:
 
 {{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" abbr="DV 证书" abbr_first="1" %}} 此类[证书](#def-leaf)的申请者仅证明了其对域名（而非自称的组织团体）的控制权。 [Let's Encrypt](#def-LE) 只提供 DV 证书，不提供 [OV](#def-OV) 及 [EV](#def-EV) 证书。参见[常见问题](/docs/faq)和[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
-{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用椭圆曲线密码学的数字签名算法（DSA）。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
+{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用椭圆曲线密码学的数字签名算法 (DSA)。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} [EdDSA](#def-EdDSA) 的一种类型，类似的还有 Ed448。  {{% /def %}}
 
@@ -119,7 +119,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP 装订" english="OCSP stapling" %}} [网页服务器](#def-web-server)将[证书颁发机构](#def-CA)签名的 [OCSP](#def-OCSP) 响应直接发送给[浏览器](#def-web-browser)，使浏览器不必再自行询问证书颁发机构，从而提升网页加载速度并保护用户隐私。 这种方式也称为 TLS 证书状态请求扩展。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/OCSP%E8%A3%85%E8%AE%A2)和 [Cloudflare 博客文章](https://blog.cloudflare.com/high-reliability-ocsp-stapling/)。 {{% /def %}}
 
-{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" abbr_first="1" %}} 一种全球唯一的数字型标识符，由国际电信联盟（ITU）和 ISO/IEC 标准化。 OID 在证书中用于定义扩展、字段和制度声明， 具体用法由互联网协议、[证书颁发制度](#def-CP)和[证书运作声明](#def-CPS)规定。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%89%A9%E4%BB%B6%E8%AD%98%E8%BE%A8%E7%AC%A6)。 {{% /def %}}
+{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" abbr_first="1" %}} 一种全球唯一的数字型标识符，由国际电信联盟 (ITU) 和 ISO/IEC 标准化。 OID 在证书中用于定义扩展、字段和制度声明， 具体用法由互联网协议、[证书颁发制度](#def-CP)和[证书运作声明](#def-CPS)规定。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%89%A9%E4%BB%B6%E8%AD%98%E8%BE%A8%E7%AC%A6)。 {{% /def %}}
 
 {{% def id="OV" name="组织验证" english="Organization Validation" abbr="OV" abbr_first="1" %}} [CA](#def-CA) 核实[用户](#def-subscriber)的法人身份后颁发的证书， 此类证书含有该法人的相关信息。 [Let's Encrypt](#def-LE) 不提供 OV 证书。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%84%E7%B9%94%E9%A9%97%E8%AD%89%EF%BC%88OV%EF%BC%89)。 {{% /def %}}
 
@@ -159,13 +159,13 @@ Note for translators:
 
 {{% def id="subscriber" name="用户" english="Subscriber" %}} 申请证书的个人或组织。  {{% /def %}}
 
-{{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名（ccTLD），又如 `.com`、`.org` 等通用顶级域名（gTLD）。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
+{{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名 (ccTLD)，又如 `.com`、`.org` 等通用顶级域名 (gTLD)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
 
 {{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。  {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。 {{% /def %}}
 
-{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称（SAN）](#def-SAN)的证书的一种称呼。  {{% /def %}}
+{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称 (SAN)](#def-SAN) 的证书的一种称呼。  {{% /def %}}
 
 {{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 一类用于显示网页内容的[用户代理](#def-user-agent)， 例如 *Mozilla Firefox*、*Google Chrome* 和 *Safari*。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8)。{{% /def %}}
 

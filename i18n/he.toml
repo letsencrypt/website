@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "רשות אישורים ללא מטרות רווח המספקת אישורי TLS לכ־<a href='/stats/'>550 מיליון</a> אתרים."
+other = "הצפנה לכולם. ארגון ללא מטרות רווח שמספק אישורי TLS ליותר מ־500 מיליון אתרים."
 
 [home_hero_getting_started]
 other = "איך מתחילים"
@@ -17,7 +17,7 @@ other = "אפשר לקרוא את העבודה שעשינו ללא מטרות ר
 other = "נותני חסות ומממנים עיקריים"
 
 [home_from_our_blog]
-other = "מהבלוג שלנו"
+other = "בלוג"
 
 [read_more]
 other = "מידע נוסף"
@@ -29,15 +29,24 @@ other = 'הרשמה <a href="{{ .Permalink }}">דרך RSS</a>'
 other = "לתמיכה ברשת אינטרנט מאובטחת יותר ומכבדת פרטיות."
 
 [footer_donate]
-other = "תרומה"
+other = "לתרום כעת"
 
 [footer_mailing]
 other = "יש לשלוח הודעות או בקשות אל:"
 
+[footer_legal_address]
+other = "כתובת חוקית"
+
 [footer_policies]
 other = """
-לצפייה ב<a href="/privacy/">מדיניות הפרטיות</a> שלנו.<br>
-לצפייה ב<a href="/trademarks/">מדיניות זכויות היוצרים</a> שלנו.
+הצגת <a href="/privacy/">מדיניות הפרטיות</a> שלנו.<br>
+הצגת <a href="https://www.abetterinternet.org/trademarks">מדיניות סימני המסחר</a> שלנו.<br>
+הצגת <a href="https://www.abetterinternet.org/terms-of-service">תנאי השירות</a> שלנו.
+"""
+
+[footer_links]
+other = """
+<a href="/privacy/">מדיניות פרטיות</a> <a href="https://www.abetterinternet.org/trademarks">מדיניות סימני מסחר</a>
 """
 
 [header_skip_nav]
@@ -196,5 +205,236 @@ other = "אפשר להירשם לעדכונים שלנו בדוא״ל בנוגע
 [site_banner_text]
 other = "ISRG חוגגים 10 שנות סיוע בבניית אינטרנט טוב יותר ←"
 
-[footer_copyright]
+[internet_security_research_group]
 other = "קבוצת מחקר אבטחת האינטרנט"
+
+[header_donate_now]
+other = "לתרום כעת"
+
+[toggle_menu_aria_label]
+other = "הצגת/הסתרת תפריט"
+
+[isrg_legal_address_label]
+other = "כתובת חוקית"
+
+[isrg_mailing_label]
+other = "יש לשלוח הודעות או בקשות אל:"
+
+[newsletter_subscribe_heading]
+other = "אפשר להירשם לעדכונים שלנו בדוא״ל בנוגע ל־Let's Encrypt ומיזמים נוספים של ISRG"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "תנאים"
+
+[footer_nav_privacy]
+other = "מדיניות פרטיות"
+
+[footer_nav_trademark]
+other = "מדיניות סימני מסחר"
+
+[home_hero_heading]
+other = "הצפנה<br />לכולם"
+
+[home_hero_subheading]
+other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">550 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">550 מיליון</span></span> אתרים.'
+
+[home_hero_get_started]
+other = "איך מתחילים"
+
+[home_hero_annual_report_title]
+other = "אפשר לחקור את העבודה שלנו לשיפור האבטחה והפרטיות"
+
+[home_hero_annual_report_description]
+other = "הדוח שלנו לשנת 2024 מדגיש את התהליך שעשינו לעבר רשת אינטרנט טובה יותר."
+
+[home_hero_annual_report_button]
+other = "לקריאת הדוח השנתי"
+
+[getting_started_eyebrow]
+other = "אישורי TLS חינמיים ואוטומטיים"
+
+[getting_started_heading]
+other = "מתחילים"
+
+[getting_started_description]
+other = "Let's Encrypt היא רשות אישורים שמספקת אישורי TLS בחינם, ובכך מקלה על אתרים להפעיל הצפנת HTTPS וליצור רשת אינטרנט מאובטחת יותר עבור כולם. Let's Encrypt הוא מיזם מבית המלכ״ר קבוצת מחקר אבטחת האינטרנט."
+
+[getting_started_ready_title]
+other = "שנתחיל?"
+
+[getting_started_ready_content]
+other = "אפשר להתחיל לאבטח את האתרים שלך עם אישורי SSL/TLS מבית Let's Encrypt. כדי לקבל אישור לשם התחום של האתר שלך, עליך לאמת שאכן יש לך שליטה בשם התחום."
+
+[getting_started_ready_link]
+other = "מתחילים"
+
+[getting_started_docs_title]
+other = "תיעוד"
+
+[getting_started_docs_content]
+other = "מידע על תהליך הנפקת האישורים ועל ההמלצות שלנו."
+
+[getting_started_docs_link]
+other = "לקריאת התיעוד"
+
+[getting_started_clients_title]
+other = "לקוחות ACME"
+
+[getting_started_clients_content]
+other = "אפשר לבחור מבין לקוחות ה־ACME המומלצים שלנו כדי לנהל את האישורים שלך אוטומטית."
+
+[getting_started_clients_link]
+other = "עיון בלקוחות ACME"
+
+[getting_started_help_title]
+other = "קבלת עזרה מקהילת Let's Encrypt"
+
+[getting_started_help_content]
+other = "אפשר להצטרף לפורום הקהילתי שלנו כדי לקבל עזרה טכנית ולשיתוף ידע עם מומחים, מתנדבים והסגל של ISRG."
+
+[getting_started_help_link]
+other = "ביקור בפורום"
+
+[support_heading_entire_sentence]
+other = "ההשפעה הבינלאומית מתאפשרת בזכות נדיבות, תרומות, מימון והמשתמשים"
+
+[support_heading_base]
+other = "ההשפעה הבינלאומית מתאפשרת בזכות"
+
+[support_heading_word1]
+other = "נדיבות"
+
+[support_heading_word2]
+other = "תרומות"
+
+[support_heading_word3]
+other = "מימון"
+
+[support_heading_word4]
+other = "המשתמשים"
+
+[support_donate_title]
+other = "תמיכה בהצפנה לכולם"
+
+[support_donate_description]
+other = "התרומה שלך מסייעת לכך שהשירות של Let's Encrypt יישאר בחינם ונגיש למיליוני אתרים בכל רחבי העולם. מזמינים אותך להצטרף אלינו כדי לאבטח את האינטרנט, אתר אחד בכל פעם. כל תרומה יוצרת שינוי, אנשים פרטיים וחברות כאחד."
+
+[support_donate_button]
+other = "לתרום כעת"
+
+[support_sponsor_title]
+other = "מובילים באמצעות מימון"
+
+[support_sponsor_description]
+other = "חברות שמסתמכות על או מעריכות את פועלנו בהצפנת האינטרנט יכולות לתמוך ב־Let's Encrypt. לצד חברות גדולות וקטנות שעוזרות לחזון הזה להתממש!"
+
+[support_sponsor_button]
+other = "פרטים על מימון"
+
+[sponsors_heading]
+other = "נותני חסות ומממנים עיקריים"
+
+[sponsors_diamond]
+other = "מממני יהלום"
+
+[sponsors_platinum]
+other = "מממני פלטינה"
+
+[sponsors_gold]
+other = "מממני זהב"
+
+[sponsors_silver]
+other = "מממני כסף"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "טופס הרשמה לרשימת הדיוור"
+
+[blog_section_heading]
+other = "מהבלוג שלנו"
+
+[blog_section_see_all]
+other = "הצגת כל הרשומות בבלוג שלנו"
+
+[post_hero_last_updated]
+other = "עדכון אחרון:"
+
+[post_hero_breadcrumb_blog]
+other = "בלוג"
+
+[donate_get_involved_button]
+other = "להצטרף למאמץ"
+
+[donate_individual_impact_eyebrow]
+other = "השפעה פרטית"
+
+[donate_encryption_everybody_alt]
+other = "הצפנה לכולם"
+
+[project_card_visit]
+other = "ביקור"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "ארגון ללא מטרות רווח שמספק אישורי TLS בחינם ליותר מ־### אתרים"
+
+[home_hero_nonprofit_prefix]
+other = "ארגון ללא מטרות רווח שמספק אישורי TLS בחינם ליותר מ־"
+
+[home_hero_certificate_count]
+other = "550 מיליון"
+
+[home_hero_nonprofit_suffix]
+other = "אתרים"
+
+[projects_section_title]
+other = "דרכים נוספות שבהן אנו משפרים אבטחה ופרטיות"
+
+[projects_section_description]
+other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "ממוקד בבטיחות זיכרון בתשתיות אינטרנט הרות גורל דרך שימוש בשפות תכנות בטוחות לזיכרון."
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "מערכת שמכבדת פרטיות לאיסוף וצבירה של מדדים, נבנתה על גבי חישוב רב־גורמים."
+
+[support_donate_section_title]
+other = "תמיכה בהצפנה לכולם"
+
+[support_donate_section_description]
+other = "התרומה שלך מסייעת לכך שהשירות של Let's Encrypt יישאר בחינם ונגיש למיליוני אתרים בכל רחבי העולם. מזמינים אותך להצטרף אלינו כדי לאבטח את האינטרנט, אתר אחד בכל פעם. כל תרומה יוצרת שינוי, אנשים פרטיים וחברות כאחד."
+
+[support_donate_section_button]
+other = "לתרום כעת"
+
+[support_sponsor_section_title]
+other = "מובילים באמצעות מימון"
+
+[support_sponsor_section_description]
+other = "חברות שמסתמכות על או מעריכות את פועלנו בהצפנת האינטרנט יכולות לתמוך ב־Let's Encrypt. לצד חברות גדולות וקטנות שעוזרות לחזון הזה להתממש!"
+
+[support_sponsor_section_button]
+other = "פרטים על מימון"
+
+[stats_section_title]
+other = "הצמיחה של Let's Encrypt"
+
+[stats_section_button]
+other = "עוד סטטיסטיקה"

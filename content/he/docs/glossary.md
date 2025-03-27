@@ -1,23 +1,24 @@
 ---
 title: מונחון
 slug: glossary
-date: 2024-07-16
+date: 2025-03-17
 show_lastmod: 1
+description: "מונחון למונחים שקשורים באישורי SSL/TLS,‏ HTTPS ובאבטחת אתרים בכפוף לשימוש ב־Let's Encrypt."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
     abbr="an accronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
-    
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
@@ -127,6 +128,8 @@ Note for translators:
 {{% def id="pfx" english="Personal Information Exchange Files (.pfx)" name="קובצי החלפת פרטים אישיים (‎.pfx)" %}} קובץ שמכיל [אישור עלה](#def-leaf), את ה[שרשרת](#def-chain) שלו עד האישור העליון ואת המפתח הפרטי של אישור העלה. ניתן גם לקרוא את https://en.wikipedia.org/wiki/PKCS_12. [מרכז פיתוח החומרה של Microsoft](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
 {{% def id="precertificate" english="Precertificate" name="אישור קדם" %}} אישורי קדם הם חלק מ[שקיפות אישורים](#def-CT). אישור קדם הוא עותק של ה[אישור](#def-leaf) שרשות האישורים מתכננת להנפיק, עם תוספת הרחבת רעל a [חמורה](#def-critical) כדי להגן מפני מצב בו האישור יתקבל על ידי תכנה כלשהי. רשות אישורים מגישה אישור קדם ל[יומני רשות אישורים](#def-CT-log) בתמורה ל־[SCTs](#def-SCT). מאחר שאישור קדם אינו זהה לאישור התואם שלך, יכול להיות שביומני שקיפות האישורים יופיעו שניהם. [RFC 6962 סעיף 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
+
+{{% def id="profile" name="Profile" %}} פרופיל הוא אוסף של מאפיינים שמשפיעים גם על האימות וגם על התוכן הסופי של האישור. ב[תיעוד על פרופילים](/docs/profiles) מופיע תיאור על כל אחד מהפרופילים, על מה הם משפיעים ואיך לבחור אותם. {{% /def %}}
 
 {{% def id="HPKP" english="HTTP Public Key Pinning" abbr="HPKP" name="נעיצת מפתח ציבורי עם HTTP‏" %}} מנגנון אבטחה שמבקש מהדפדפן לדרוש ש[שרשרת אישורים](#def-chain) תשתמש במפתחות ציבוריים מסוימים בטעינות עתידיות. Chrome הציג את המנגנון הזה כדי להגן מפני חבלות מצד רשות האישורים אך זה גרם לתקלות גישה לאתרים, מה שהוביל את Chrome [לצמצם את השימוש בו ולהסיר אותו](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [ויקיפדיה](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 

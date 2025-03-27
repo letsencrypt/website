@@ -1,5 +1,5 @@
 ---
-title: 最佳实践——开放 80 端口
+title: 最佳实践：开放 80 端口
 slug: allow-port-80
 date: 2019-01-24
 lastmod: 2019-01-24

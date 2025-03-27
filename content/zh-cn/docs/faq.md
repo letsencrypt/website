@@ -1,6 +1,6 @@
 ---
 title: 常见问题
-linkTitle: 常见问题（FAQ）
+linkTitle: 常见问题 (FAQ)
 slug: faq
 lastmod: 2024-06-26
 menu:
@@ -19,9 +19,9 @@ show_lastmod: 1
 
 ## Let's Encrypt 提供哪些服务？
 
-Let's Encrypt 是一家全球性的证书颁发机构（CA）， 为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。 网站可以使用我们的证书来启用安全的 HTTPS 连接。
+Let's Encrypt 是一家全球性的证书颁发机构 (CA)， 为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。 网站可以使用我们的证书来启用安全的 HTTPS 连接。
 
-Let's Encrypt 提供域名验证型（DV）证书。 我们不提供组织验证（OV）或扩展验证（EV），这主要是因为我们无法自动化地颁发这些类型的证书。
+Let's Encrypt 仅提供域名验证 (DV) 证书， 不提供组织验证 (OV) 和扩展验证 (EV) 证书，主要原因是我们无法自动颁发这两类证书。
 
 前往我们的[快速入门](/getting-started)页面即可开始使用 Let's Encrypt。
 
@@ -77,29 +77,29 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 这一期限不能调整，也没有例外。 我们建议您每 60 天自动续期一次证书。
 
-## Let's Encrypt 能颁发组织验证（OV）或扩展验证（EV）型证书吗？
+## Let's Encrypt 能颁发组织验证 (OV) 或扩展验证 (EV) 证书吗？
 
 我们没有计划颁发 OV 或 EV 证书。
 
 ## 我可以获得针对多个域名的证书（SAN 证书或 UCC 证书）吗？
 
-是的，可以使用主体备用名称（SAN）机制使同一份证书包含多个不同的名称。
+是的，同一份证书可以通过主体备用名称 (SAN) 机制包含多个不同的名称。
 
 ## Let's Encrypt 颁发通配符证书吗？
 
 是的。 通配符证书必须通过 ACMEv2 采用 [DNS-01 质询](/docs/challenge-types/#dns-01-challenge)签发。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
-## 是否有 Let's Encrypt（ACME）客户端支持我的操作系统？
+## 我的操作系统有可以使用的 Let's Encrypt (ACME) 客户端吗？
 
 您有大量的 [ACME 客户端](/docs/client-options)可以选择。 其中很可能就有支持您操作系统的客户端。 我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
 
-## 我可以使用现有的私钥或证书签名请求（CSR）吗？
+## 我可以使用已有的私钥或证书签名请求 (CSR) 吗？
 
 是的，但并非所有客户端都支持此功能。 [Certbot](https://certbot.eff.org/) 是支持的。
 
 ## 申请证书后我的域名流量剧增！ 为什么会这样？
 
-这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
+这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化 (CT) 日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 

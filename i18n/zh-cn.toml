@@ -167,10 +167,10 @@ other = "客户端开发者信息"
 other = "与当前 ACME 草案的不同"
 
 [acme_divergences_rfc]
-other = "与ACME RFC的区别"
+other = "与 ACME RFC 规范的区别"
 
 [onboarding_customers]
-other = "利用Let's Encrypt和ACME自动化吸引客户"
+other = "引导您的新客户使用 Let's Encrypt 和 ACME"
 
 [paypal_donate_alt]
 other = "PayPal 捐款"

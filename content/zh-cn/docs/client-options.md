@@ -30,9 +30,9 @@ Python 模块[acme](https://github.com/certbot/certbot/tree/main/acme) 是 Certb
 
 # 添加客户端/项目
 
-如果您知道在以上列表中没有列出的 ACME 客户端或集成了 Let's Encrypt 的项目，您可以在我们网站的 GitHub [代码仓库](https://github.com/letsencrypt/website/)中更新 `data/clients.json` 文件并提交拉取请求（Pull Request）。
+如果您发现某些 ACME 客户端或项目已经集成了 Let's Encrypt 的 ACMEv2 接口，但本页面尚未列出，请在我们网站的 GitHub [代码仓库](https://github.com/letsencrypt/website/)中更新 `data/clients.json` 文件，并发起 Pull Request。
 
-在提交拉取请求之前，请确保：
+在发起 Pull Request 之前，请确保：
 
 1. 该客户端尊重 [Let's Encrypt 商标政策](https://www.abetterinternet.org/trademarks)。
 1. 该客户端不是基于浏览器使用的，并且支持自动续期。
