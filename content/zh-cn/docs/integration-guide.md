@@ -23,7 +23,7 @@ Let's Encrypt 和 Web PKI 都将随着时间的推移而不断发展。  您应�
 
 我们将始终尽可能提前通知此类更改，但如果在某些组件中发现严重的安全漏洞，我们可能需要在短期内或立即进行更改。 特别是对于中间证书改变，你不应该硬编码中间证书，而应该使用 ACME 协议中的 [`Link: rel="up"`](https://tools.ietf.org/html/rfc8555#section-7.4.2)标头，因为中间证书很可能会改变。
 
-同样，我们可能会在更新服务条款（ToS）时更改其链接。 请避免硬编码 ToS 链接，而是使用 [`Link：rel =“terms-of-service”`](https://tools.ietf.org/html/rfc8555#section-7.3.3) 标头确定要使用的 ToS 链接。
+类似地，服务条款 (ToS) 变更时，其网址也很有可能发生变化。 请避免硬编码 ToS 链接，而是使用 [`Link：rel =“terms-of-service”`](https://tools.ietf.org/html/rfc8555#section-7.3.3) 标头确定要使用的 ToS 链接。
 
 要接收有关上述重要更改的小批量更新，请订阅我们的 [API 公告](https://community.letsencrypt.org/t/about-the-api-announcements-category/23836)分类。这对客户端开发人员和托管提供商都很有用。
 
@@ -49,7 +49,7 @@ Let's Encrypt 和 Web PKI 都将随着时间的推移而不断发展。  您应�
 
 但是，对于大多数大型托管服务提供商，我们建议使用单个帐户并保护相应的帐户密钥。 这样可以更轻松地识别属于同一实体的证书，更容易保持联系信息处于最新状态，并在需要时更轻松地提供速率限制调整。 如果您使用许多不同的帐户，我们将无法有效调整速率限制。
 
-# 多域名（SAN）证书
+# 多域名 (SAN) 证书
 
 我们的\[颁发政策\](/docs/rate-limits)允许每个证书最多包含 100 个域名。 无论您是为每个主机名使用单独的证书，还是将许多主机名组合在少量证书上，这都取决于您。
 

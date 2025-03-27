@@ -17,7 +17,7 @@ Let's&nbsp;Encrypt 和 [ACME 协议](https://tools.ietf.org/html/rfc8555)的目�
 
 Let's&nbsp;Encrypt 通过公钥识别服务器管理员。  证书管理软件首次与 Let's&nbsp;Encrypt 交互时，会生成新的密钥对，并向 Let's&nbsp;Encrypt CA 证明服务器控制着一个或多个域名。  这类似于创建帐户和向该帐户添加域名的传统证书颁发流程。
 
-为了启动该过程，证书管理软件向 Let's Encrypt CA 询问它需要做什么才能证明它控制 `example.com`。  Let's Encrypt CA 会根据申请的域名提供一种或多种验证方式，   管理软件可以任选其一证明域名控制权。  例如，CA 可能会让证书管理软件（Agent）选择：
+为了启动该过程，证书管理软件向 Let's Encrypt CA 询问它需要做什么才能证明它控制 `example.com`。  Let's Encrypt CA 会根据申请的域名提供一种或多种验证方式，   管理软件可以任选其一证明域名控制权。  例如，CA 可能会让证书管理软件选择：
 
 * 在 `example.com` 下配置 DNS 记录，或者
 * 在 `http://example.com/` 下的指定网址放置一项 HTTP 资源
@@ -45,9 +45,9 @@ Let's&nbsp;Encrypt 通过公钥识别服务器管理员。  证书管理软件�
 
 管理软件具备授权密钥后，证书的申请、续期、吊销操作就简单了，只需将各类证书管理指令用授权密钥签名后发给 CA 即可。
 
-为了获得该域名的证书，证书管理软件将创建一个 PKCS#10 [证书签名请求（CSR）](https://tools.ietf.org/html/rfc2986)，要求 Let's&nbsp;Encrypt CA 为指定的公钥颁发 `example.com` 的证书。  CSR 本身已经由其私钥进行了一次签名，  而证书管理软件还会用 `example.com` 的授权密钥对整个 CSR 再进行一次签名，以便 Let's&nbsp;Encrypt CA 验证其来源。
+为了获得该域名的证书，证书管理软件将创建一份 PKCS#10 [证书签名请求 (CSR)](https://tools.ietf.org/html/rfc2986)，向 Let's&nbsp;Encrypt CA 申请为 `example.com` 颁发一份使用指定公钥的证书。  CSR 本身已经由其私钥进行了一次签名，  而证书管理软件还会用 `example.com` 的授权密钥对整个 CSR 再进行一次签名，以便 Let's&nbsp;Encrypt CA 验证其来源。
 
-Let's&nbsp;Encrypt CA 收到请求后对这两份签名进行验证，  如果全部通过，就为 CSR 中的公钥颁发 `example.com` 的证书，并将证书文件发给管理软件。 CA 还会将证书上传至各类公开的证书透明化日志系统中， 详情可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解。
+Let's&nbsp;Encrypt CA 收到请求后对这两份签名进行验证，  如果全部通过，就为 CSR 中的公钥颁发 `example.com` 的证书，并将证书文件发给管理软件。 CA 还会将证书上传至各类公开的证书透明化 (CT) 日志系统中， 详情可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解。
 
 <div class="howitworks-figure">
 <img alt="为 example.com 申请证书"

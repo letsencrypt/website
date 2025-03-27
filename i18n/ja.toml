@@ -1,70 +1,77 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt は<span>フリー</span>で<span>自動化</span>された<span>オープン</span>な認証局です。"
+other = "みんなが使える暗号化。5億以上のウェブサイトに無料の TLS 証明書を提供している非営利団体です。"
 
 [home_hero_getting_started]
-other = "はじめる"
+other = "はじめよう"
 
 [home_hero_donate]
-other = "寄付"
+other = "寄付する"
 
 [home_hero_sponsor]
 other = "スポンサー"
 
 [home_hero_annual_report]
-other = "<a href='https://abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf'>2021</a> 年の年次レポートを読む"
-
-[home_hero_desktop]
-other = "デスクトップ"
-
-[home_hero_mobile]
-other = "モバイル"
+other = "今年の非営利団体のすべての活動については、<a href='https://abetterinternet.org/annual-reports/'>2024年 年間報告書</a>を読んでください。"
 
 [home_major_sponsors]
-other = "主要なスポンサーと寄付者"
+other = "主なスポンサーと資金提供者"
 
 [home_from_our_blog]
-other = "ブログ記事より"
+other = "ブログ"
 
 [read_more]
-other = "もっと読む"
+other = "続きを読む"
 
 [subscribe_rss]
-other = "<a href=\"{{ .Permalink }}\">RSS</a> を購読する"
+other = 'RSSで <a href="{{ .Permalink }}">を購読する</a>'
 
 [footer_support_us]
-other = "よりセキュアでプライバシーを尊重するウェブを支援してください。"
+other = "より安全でプライバシーを尊重するWebをサポートします。"
 
 [footer_donate]
-other = "寄付する"
+other = "今すぐ寄付"
 
 [footer_mailing]
-other = "すべての手紙またはお問い合わせを以下に送ってください："
+other = "全てのメールや問い合わせを送信:"
+
+[footer_legal_address]
+other = "法的住所"
 
 [footer_policies]
 other = """
-<a href="/ja/privacy/">プライバシー・ポリシー</a>を読む。<br>
-<a href="https://www.abetterinternet.org/trademarks/">トレードマーク・ポリシー</a>を読む。
+<a href="/privacy/">プライバシーポリシー</a>を読む。<br>
+<a href="https://www.abetterinternet.org/trademarks">商標ポリシー</a>を読む。<br>
+<a href="https://www.abetterinternet.org/terms-of-service">利用規約</a>を読む。
+"""
+
+[footer_links]
+other = """
+<a href="/privacy/">プライバシーポリシー</a> <a href="https://www.abetterinternet.org/trademarks">商標ポリシー</a>
 """
 
 [header_skip_nav]
-other = "ナビゲーション・リンクをスキップ"
+other = "ナビゲーションリンクをスキップ"
 
 [last_updated]
-other = "最終更新日:"
+other = "最終更新日: "
 
 [see_all_doc]
-other = "すべてのドキュメントを読む"
+other = "ドキュメンテーションを見る"
 
 [blog_feed]
 other = "Let's Encrypt ブログフィード"
+
+[diamond]
+other = "ダイヤモンド"
 
 [platinum]
 other = "プラチナ"
 
 [gold]
 other = "ゴールド"
+
+[gold_basic]
+other = "ゴールドベーシック"
 
 [silver]
 other = "シルバー"
@@ -73,55 +80,58 @@ other = "シルバー"
 other = "言語"
 
 [view_in_english]
-other = "英語で表示する"
+other = "英語で表示"
 
 [old_version]
-other = "注意: このページが翻訳された後、英語バージョンのページがアップデートされています。"
+other = "注: 英語版は翻訳版から更新されました。"
 
 [not_yet_translated]
-other = "このウェブページはまだ翻訳されていません。<a href=\"https://github.com/letsencrypt/website\">このページ</a>から誰でも翻訳にコントリビュートできます。"
+other = 'このWebページはまだ翻訳されていません。<a href="https://github.com/letsencrypt/website">こちら</a>から翻訳を投稿できます。'
 
 [english_is_canonical]
-other = "英語バージョンが正式な文章です"
+other = "英語版は信頼できます。"
 
 [graph_issued]
-other = "発行数"
+other = "発行済み"
 
 [graph_certificates_active]
-other = "有効な証明書"
+other = "証明書が有効です"
 
 [graph_fully_qualified_domains_active]
-other = "有効な完全修飾ドメイン"
+other = "完全適格ドメインが有効です"
 
 [graph_registered_domains_active]
-other = "有効な登録ドメイン"
+other = "登録されたドメインが有効です"
 
 [graph_active_count]
-other = "有効な数"
+other = "アクティブ数"
 
 [graph_issued_per_day]
-other = "1日の発行数"
+other = "1日当たりの発行数"
 
 [graph_all_users]
-other = "全ユーザー"
+other = "すべてのユーザー"
 
 [graph_usa_users]
-other = "アメリカ合衆国のユーザー"
+other = "アメリカのユーザー"
 
 [graph_japan_users]
 other = "日本のユーザー"
 
 [graph_percent_https]
-other = "HTTPS で読み込まれたページの割合 (14 日間の平均)"
+other = "HTTPS 経由のページロードの割合 (14日間の移動平均)"
+
+[certificate_policy]
+other = "証明書ポリシー"
 
 [certificate_transparency_name]
-other = "名称"
+other = "名前"
 
 [certificate_transparency_role_production]
-other = "プロダクション用"
+other = "製品"
 
 [certificate_transparency_role_testing]
-other = "テスト用"
+other = "テスト中"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -129,49 +139,302 @@ other = "URI"
 [certificate_transparency_public_key]
 other = "公開鍵"
 
+[certificate_transparency_log_id]
+other = "ログID"
+
+[certificate_transparency_state]
+other = "ステータス"
+
+[certificate_transparency_window_start]
+other = "ウィンドウの起動"
+
+[certificate_transparency_window_end]
+other = "ウィンドウの終了"
+
+[certification_practices_statement]
+other = "Certification Practices ステートメント"
+
 [overview]
 other = "概要"
 
 [subscriber_information]
-other = "利用者向けの情報"
+other = "お客様情報"
 
 [advanced_subscriber_information]
-other = "利用者向けの発展的な情報"
+other = "詳細なお客様情報"
 
 [client_developer_information]
-other = "クライアント開発者向けの情報"
+other = "クライアント開発者情報"
 
 [acme_divergences]
-other = "現在の ACME ドラフトとの違い"
+other = "現行のACMEドラフトとの違い"
 
 [acme_divergences_rfc]
 other = "ACME RFC との違い"
 
 [onboarding_customers]
-other = "あなたの顧客のオンボーディングを Let's Encrypt と ACME で助ける"
-
-# Paypal texts from https://www.paypal.com/donate/buttons/unhosted
+other = "Let's Encrypt と ACME でお客様を新規登録"
 
 [paypal_donate_alt]
-other = "[PayPalで寄付する] ボタン"
+other = "PayPal ボタンで寄付する"
 
 [paypal_donate_title]
-other = "PayPal で寄付する"
+other = "PayPalで寄付"
 
 [not_found]
-other = "このページは見つかりません。アドレスを確認してみてください。"
+other = "このページは存在しません。アドレスを確認してください。"
 
 [amount_per_year]
-other = "${{ .nb }}/年 (USD)"
+other = "${{ .nb }}/年（USドル）"
 
 [3y_commitment]
-other = "3年間のコミット"
+other = "3年間のコミットメントで"
 
 [1_99_employees]
-other = "従業員数 1-99 人"
+other = "100 人未満の従業員"
 
 [100_999_employees]
-other = "従業員数 100-999 人"
+other = "100 以上 1000 未満の従業員"
 
 [1000_employees]
-other = "従業員数 1000+ 人"
+other = "1000 人以上の従業員"
+
+[subscribe_to_newsletter_headline]
+other = "Let's Encrypt やその他の ISRG プロジェクトに関するメールの更新情報を購読する"
+
+[site_banner_text]
+other = "ISRG は、より明るいインターネットの構築を10年間支援してきたことをお祝いしています →"
+
+[internet_security_research_group]
+other = "Internet Security Research Group"
+
+[header_donate_now]
+other = "今すぐ寄付"
+
+[toggle_menu_aria_label]
+other = "メニューを切り替え"
+
+[isrg_legal_address_label]
+other = "法的住所"
+
+[isrg_mailing_label]
+other = "全てのメールや問い合わせを送信:"
+
+[newsletter_subscribe_heading]
+other = "Let's Encrypt やその他の ISRG プロジェクトに関するメールの更新情報を購読する"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "規約"
+
+[footer_nav_privacy]
+other = "プライバシー・ポリシー"
+
+[footer_nav_trademark]
+other = "商標ポリシー"
+
+[home_hero_heading]
+other = "みんなが使える<br />暗号化"
+
+[home_hero_subheading]
+other = '<span class="relative inline-block"><span class="invisible text-4xl">5億5,000万</span><span id="certificate-count" class="text-4xl absolute left-0">5億5,000万</span></span>以上のウェブサイトに無料の TLS 証明書を提供している非営利団体です。'
+
+[home_hero_get_started]
+other = "はじめよう"
+
+[home_hero_annual_report_title]
+other = "セキュリティとプライバシーを向上させるために行った Let's Encrypt の仕事を確認してください"
+
+[home_hero_annual_report_description]
+other = "Let's Encrypt の2024年次レポートでは、より良いインターネットに向けた進展を紹介しています。"
+
+[home_hero_annual_report_button]
+other = "年次レポートを読む"
+
+[getting_started_eyebrow]
+other = "無料の自動化された TLS 証明書"
+
+[getting_started_heading]
+other = "はじめる"
+
+[getting_started_description]
+other = "Let's Encrypt は無料の TLS 証明書を提供する認証局です。ウェブサイトでの HTTPS 暗号化を容易にすることで、誰もがより安全なインターネットを作れるようにします。Let's Encrypt は、非営利の Internet Security Research Group のプロジェクトです。"
+
+[getting_started_ready_title]
+other = "始める準備はできましたか？"
+
+[getting_started_ready_content]
+other = "Let's Encrypt の無料の SSL/TLS 証明書でウェブサイトのセキュリティ保護をはじめましょう。ウェブサイトのドメイン証明書を取得するには、あなたがドメインを所有していることを証明する必要があります。"
+
+[getting_started_ready_link]
+other = "さあ、はじめましょう"
+
+[getting_started_docs_title]
+other = "ドキュメント"
+
+[getting_started_docs_content]
+other = "証明書の発行プロセスと、ベストプラクティスについて学びます。"
+
+[getting_started_docs_link]
+other = "ドキュメントを読む"
+
+[getting_started_clients_title]
+other = "ACME クライアント"
+
+[getting_started_clients_content]
+other = "証明書を自動的に管理するために、推奨される ACME クライアントから選択してください。"
+
+[getting_started_clients_link]
+other = "ACME クライアントを参照"
+
+[getting_started_help_title]
+other = "Let's Encrypt コミュニティに助けてもらう"
+
+[getting_started_help_content]
+other = "Let's Encrypt のコミュニティフォーラムに参加して、専門家、ボランティア、ISRG スタッフとともに、技術支援や知識を共有しましょう。"
+
+[getting_started_help_link]
+other = "フォーラムにアクセス"
+
+[support_heading_entire_sentence]
+other = "世界的な影響は、寛大さ、貢献、スポンサー、そしてあなたによって可能になりました。"
+
+[support_heading_base]
+other = "世界規模の影響は以下によって可能になりました。"
+
+[support_heading_word1]
+other = "寛大さ"
+
+[support_heading_word2]
+other = "貢献"
+
+[support_heading_word3]
+other = "スポンサー"
+
+[support_heading_word4]
+other = "あなた"
+
+[support_donate_title]
+other = "みんなが使える暗号化をサポート"
+
+[support_donate_description]
+other = "あなたの寄付により、Let's Encrypt は無料で提供し続けることができ、世界中の何百万ものウェブサイトへのアクセスが可能になります。インターネットのセキュリティを確保するために、1度に1ウェブサイトずつ、私たちに参加してください。あなたが個人でも会社でも、すべての貢献は違いを生みます。"
+
+[support_donate_button]
+other = "今すぐ寄付"
+
+[support_sponsor_title]
+other = "スポンサーについて学ぶ"
+
+[support_sponsor_description]
+other = "Let's Encrypt のウェブ暗号化の取り組みを信頼・評価してくれる企業は、Let's Encrypt を財政的にサポートすることができます。この仕事を可能にしている大小さまざまな企業にぜひ参加してください！"
+
+[support_sponsor_button]
+other = "スポンサーについて学ぶ"
+
+[sponsors_heading]
+other = "主なスポンサーと資金提供者"
+
+[sponsors_diamond]
+other = "ダイアモンド・スポンサー"
+
+[sponsors_platinum]
+other = "プラチナ・スポンサー"
+
+[sponsors_gold]
+other = "ゴールド・スポンサー"
+
+[sponsors_silver]
+other = "シルバー・スポンサー"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "ニュースレターの登録フォーム"
+
+[blog_section_heading]
+other = "ブログより"
+
+[blog_section_see_all]
+other = "すべてのブログ記事を表示"
+
+[post_hero_last_updated]
+other = "最終更新日:"
+
+[post_hero_breadcrumb_blog]
+other = "ブログ"
+
+[donate_get_involved_button]
+other = "参加する"
+
+[donate_individual_impact_eyebrow]
+other = "個人による支援"
+
+[donate_encryption_everybody_alt]
+other = "みんなが使える暗号化"
+
+[project_card_visit]
+other = "アクセスする"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "### 以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
+
+[home_hero_nonprofit_prefix]
+other = "以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
+
+[home_hero_certificate_count]
+other = "5億5,000万"
+
+[home_hero_nonprofit_suffix]
+other = "ウェブサイト"
+
+[projects_section_title]
+other = "セキュリティとプライバシーを向上させるその他の方法"
+
+[projects_section_description]
+other = "Let's Encrypt には2つの親戚プロジェクトがあることを知っていましたか？ Let's Encrypt とこれら2つのプロジェクトは、Internet Security Research Group (ISRG) が運営しています。インターネットの安全性とプライバシーの尊重に焦点を当てた 501(c)(3) 公益組織 (public benefit organization) です。"
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "メモリ安全なプログラミング言語の使用を通じて、重要なインターネットインフラにおけるメモリ安全性に焦点を当てています。"
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "メトリックを収集し、集計するためのプライバシーを尊重するシステム。マルチパーティーコンピューティングに基づいて構築されました。"
+
+[support_donate_section_title]
+other = "みんなが使える暗号化をサポート"
+
+[support_donate_section_description]
+other = "あなたの寄付により、Let's Encrypt は無料で提供し続けることができ、世界中の何百万ものウェブサイトへのアクセスが可能になります。インターネットのセキュリティを確保するために、1度に1ウェブサイトずつ、私たちに参加してください。あなたが個人でも会社でも、すべての貢献は違いを生みます。"
+
+[support_donate_section_button]
+other = "今すぐ寄付"
+
+[support_sponsor_section_title]
+other = "スポンサーについて学ぶ"
+
+[support_sponsor_section_description]
+other = "Let's Encrypt のウェブ暗号化の取り組みを信頼・評価してくれる企業は、Let's Encrypt を財政的にサポートすることができます。この仕事を可能にしている大小さまざまな企業にぜひ参加してください！"
+
+[support_sponsor_section_button]
+other = "スポンサーについて学ぶ"
+
+[stats_section_title]
+other = "Let's Encrypt の成長"
+
+[stats_section_button]
+other = "その他の統計情報"

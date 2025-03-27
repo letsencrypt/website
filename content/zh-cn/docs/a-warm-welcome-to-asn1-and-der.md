@@ -41,9 +41,9 @@ ASN.1 的另一特点在于它有各种序列化格式，也就是说数据可�
 
 还有一些语言也能起到与 ASN.1 [同样的作用](https://en.wikipedia.org/wiki/Interface_description_language)。 例如，Protocol Buffers 也提供了一门定义类型的[语言](https://developers.google.com/protocol-buffers/docs/proto3)，以及负责将各类对象编码的[序列化格式](https://developers.google.com/protocol-buffers/docs/encoding)。 [Thrift](https://thrift.apache.org/) 同样具备类似的语言和序列化格式。 Protocol Buffers 和 Thrift 完全可以胜任定义 HTTPS 证书的职责，只不过 ASN.1 早在 1984 年就已诞生，对于数字证书（1988 年）和 HTTPS（1994 年）技术来说具备先天优势。
 
-多年来 ASN.1 标准几经修订，各修订版本通常以发布年份加以区分。 本文介绍 ASN.1 旨在帮助读者准确理解 RFC 5280 及其他 HTTPS 证书相关标准，所以我们将着重探讨 1988 年版，并简要提及后续版本引入的功能。 各版本的标准文档可以直接在国际电信联盟（ITU）的网站上下载，不过部分文件只对 ITU 成员开放。 相关标准包括 [X.680](https://www.itu.int/rec/T-REC-X.680)（定义了 ASN.1 语言）和 [X.690](https://www.itu.int/rec/T-REC-X.690)（定义了 DER 和 BER 序列化格式）， 其前身分别是 [X.208](https://www.itu.int/rec/T-REC-X.208/en) 与 [X.209](https://www.itu.int/rec/T-REC-X.209/en)。
+多年来 ASN.1 标准几经修订，各修订版本通常以发布年份加以区分。 本文介绍 ASN.1 旨在帮助读者准确理解 RFC 5280 及其他 HTTPS 证书相关标准，所以我们将着重探讨 1988 年版，并简要提及后续版本引入的功能。 各版本的标准文档可以直接在国际电信联盟 (ITU) 的网站上下载，不过部分文件只对 ITU 成员开放。 相关标准包括 [X.680](https://www.itu.int/rec/T-REC-X.680)（定义了 ASN.1 语言）和 [X.690](https://www.itu.int/rec/T-REC-X.690)（定义了 DER 和 BER 序列化格式）， 其前身分别是 [X.208](https://www.itu.int/rec/T-REC-X.208/en) 与 [X.209](https://www.itu.int/rec/T-REC-X.209/en)。
 
-ASN.1 最主要的序列化格式称为 Distinguished Encoding Rules (DER)。 它是对 Basic Encoding Rules (BER) 格式加以严格规范化而成的一种变体。 例如，在 DER 格式中，即使是集合类型（SET OF）的元素也必须有序排列。
+ASN.1 最主要的序列化格式称为 Distinguished Encoding Rules (DER)。 它是对 Basic Encoding Rules (BER) 格式加以严格规范化而成的一种变体。 例如，在 DER 格式中，即使是集合类型 (SET OF) 的元素也必须有序排列。
 
 DER 格式的证书通常会进一步转换成 PEM 格式，这一过程采用 [Base64](https://en.wikipedia.org/wiki/Base64) 编码将二进制字节转化为一连串的字母、数字、“+”和“/”符号，并在头尾加入“\-\-\-\--BEGIN CERTIFICATE\-\-\-\--”与“\-\-\-\--END CERTIFICATE\-\-\-\--”两行文字以示分隔。 PEM 格式的优点在于方便复制与粘贴。
 
@@ -81,7 +81,7 @@ TeletexString、BMPString 和 UniversalString 对 HTTPS 证书来说都已过时
 
 时间类型也有不少：UTCTime、GeneralizedTime、DATE、TIME-OF-DAY、DATE-TIME 以及 DURATION。 但在 HTTPS 证书中只需关心 UTCTime 和 GeneralizedTime。
 
-UTCTime 采用 YYMMDDhhmm[ss] 的格式表示日期和时间，末尾还可以加上时区，或者加上“Z”表示协调世界时（UTC）。 例如，UTCTime 的 820102120000Z 和 820102070000-0500 表示同一时刻：1982 年 1 月 2 日纽约（UTC−5）的早晨七点，即协调世界时的正午十二点。
+UTCTime 采用 YYMMDDhhmm[ss] 的格式表示日期和时间，末尾还可以加上时区，或者加上“Z”表示协调世界时 (UTC)。 例如，UTCTime 的 820102120000Z 和 820102070000-0500 表示同一时刻：1982 年 1 月 2 日纽约 (UTC−5) 的早晨七点，即协调世界时的正午十二点。
 
 因为 UTCTime 没有写明是 20 世纪还是 21 世纪，[RFC 5280](https://tools.ietf.org/html/rfc5280#section-4.1.2.5.1) 补充规定了其范围是 1950 至 2050 年。 RFC 5280 还规定时区必须为“Z”，且秒数不能省略。
 
@@ -94,7 +94,7 @@ Object identifier (OID) 是一种全球唯一的层状标识符，由一串整�
 
 类似地，[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129) 指的是 Google 公司，Google 则在 [RFC 6962](https://tools.ietf.org/html/rfc6962) 中将 [1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) 分配给了证书透明化系统中的 [SCT 列表扩展](https://letsencrypt.org/2018/04/04/sct-encoding.html)，因为该系统最初便是由 Google 研发的。
 
-同一前缀下的所有 OID 在英文中又称为 OID arc。 OID 越短，占据的空间就越小，价值也就越高，对于大量使用 OID 的格式尤为如此。 OID 前缀 [2.5](http://oid-info.com/get/2.5) 分配给了 Directory Services，指的是一系列的标准文档，在 HTTPS 证书中处于核心地位的 X.509 标准也位列其中。 证书中有很多字段用的都是这个简短的前缀。 例如，[2.5.4.6](http://oid-info.com/get/2.5.4.6) 表示国家名称（countryName），[2.5.4.10](http://oid-info.com/get/2.5.4.10) 则表示机构名称（organizationName）。 这些 OID 在绝大多数证书中至少都会出现一次，自然越短越好。
+同一前缀下的所有 OID 在英文中又称为 OID arc。 OID 越短，占据的空间就越小，价值也就越高，对于大量使用 OID 的格式尤为如此。 OID 前缀 [2.5](http://oid-info.com/get/2.5) 分配给了 Directory Services，指的是一系列的标准文档，在 HTTPS 证书中处于核心地位的 X.509 标准也位列其中。 证书中有很多字段用的都是这个简短的前缀。 例如，[2.5.4.6](http://oid-info.com/get/2.5.4.6) 表示国家名称 (countryName)，[2.5.4.10](http://oid-info.com/get/2.5.4.10) 则表示机构名称 (organizationName)。 这些 OID 在绝大多数证书中至少都会出现一次，自然越短越好。
 
 标准文件中的 OID 常用英文词汇表示以便阅读，有时还会拼接形成新的 OID。 [以 RFC 8017 为例](https://tools.ietf.org/html/rfc8017#page-68)：
 
@@ -142,7 +142,7 @@ RelativeDistinguishedName ::=
 BIT STRING 和 OCTET STRING
 ---------------------------
 
-前者表示一段任意的二进制位，而后者表示一段任意的字节。 这两种类型可以存放无特殊结构的数据，比如密码学中的 nonce 和散列值。 它们也可以当作 C 语言中的 void 指针或 Go 语言中的空接口（interface{}）使用，表示数据虽然存在内部结构，但该结构只在别处定义，与 ASN.1 的类型系统无关。 [例如](https://tools.ietf.org/html/rfc5280#page-116)，证书的数字签名就是用 BIT STRING 定义的：
+前者表示一段任意的二进制位，而后者表示一段任意的字节。 这两种类型可以存放无特殊结构的数据，比如密码学中的 nonce 和散列值。 它们也可以当作 C 语言中的 void 指针或 Go 语言中的空接口 (interface{}) 使用，表示数据虽然存在内部结构，但该结构只在别处定义，与 ASN.1 的类型系统无关。 [例如](https://tools.ietf.org/html/rfc5280#page-116)，证书的数字签名就是用 BIT STRING 定义的：
 
 ```
 Certificate  ::=  SEQUENCE  {
@@ -256,7 +256,7 @@ table {
 |      23 |           17 | UTCTime                |
 |      24 |           18 | GeneralizedTime        |
 
-这些标签都属于“通用”标签（universal tags），由 ASN.1 核心规范定义，在所有 ASN.1 模块中都有着相同的含义。此外还有一些无关紧要的通用标签，这里略去不表。
+这些标签都属于“通用”标签 (universal tags)，由 ASN.1 核心规范定义，在所有 ASN.1 模块中都有着相同的含义。此外还有一些无关紧要的通用标签，这里略去不表。
 
 这些标签的值都小于 31（0x1F），其实是有原因的。第 8、7、6 位（也就是标签字节的最高三位）有着特殊含义，所以大于 31 的通用标签只能用多字节标签表示。 有一小部分通用标签的值大于 31，但是数量很少。
 
@@ -267,12 +267,12 @@ table {
 
 通用标签把“好用”的数字都用光了，但这并不妨碍我们定义自己的标签。 除了通用标签外还有三种标签：程序内部标签、特定语境标签和私有标签。 标签类别可通过第 7 位和第 8 位区分：
 
-| 类别                     | 第 8 位 | 第 7 位 |
-| ---------------------- | -----:| -----:|
-| 通用（Universal）          |     0 |     0 |
-| 程序内部（Application）      |     0 |     1 |
-| 特定语境（Context-specific） |     1 |     0 |
-| 私有（Private）            |     1 |     1 |
+| 类别                      | 第 8 位 | 第 7 位 |
+| ----------------------- | -----:| -----:|
+| 通用 (Universal)          |     0 |     0 |
+| 程序内部 (Application)      |     0 |     1 |
+| 特定语境 (Context-specific) |     1 |     0 |
+| 私有 (Private)            |     1 |     1 |
 
 标准规范中使用的大多是通用标签，因为通用标签已经涵盖了所有常用数据结构。 例如，证书序列号就是用朴实无华的 INTEGER 类型编码的，标签值为 0x02。 但有时标准中也需要定义特定语境标签来区分 SET 和 SEQUENCE 中的可省略元素，或者区分 CHOICE 中同类型的选项。 以下述定义为例：
 
@@ -359,7 +359,7 @@ DER 禁止使用不定长编码， 所以必须使用定长编码，提前写明
 单一字段与复合字段
 ------------------------
 
-标签中第一个字节的第 6 位表示该字段是单一（primitive）字段还是复合（constructed）字段。 单一字段中存储的就是数据本身，比如 UTF8String 的数据就是经过 UTF-8 编码的字符串。 复合字段存储的则是若干其他字段，经过编码后拼接在一起。 例如“不定长编码”一节中提到的不定长 UTF8String 就会有多个 UTF8String 字段（各有标签和长度）编码后连在一起，形成复合字段。 复合字段的长度便是拼接后各字段的总字节数。 复合字段可以采用定长或不定长编码， 而单一字段只能用定长编码，因为其数据中没有其他字段，也就无法表明数据该在哪里结束。
+标签中第一个字节的第 6 位表示该字段是单一 (primitive) 字段还是复合 (constructed) 字段。 单一字段中存储的就是数据本身，比如 UTF8String 的数据就是经过 UTF-8 编码的字符串。 复合字段存储的则是若干其他字段，经过编码后拼接在一起。 例如“不定长编码”一节中提到的不定长 UTF8String 就会有多个 UTF8String 字段（各有标签和长度）编码后连在一起，形成复合字段。 复合字段的长度便是拼接后各字段的总字节数。 复合字段可以采用定长或不定长编码， 而单一字段只能用定长编码，因为其数据中没有其他字段，也就无法表明数据该在哪里结束。
 
 INTEGER、OBJECT IDENTIFIER 和 NULL 类型必须是单一字段， 而 SEQUENCE、SEQUENCE OF、SET 和 SET OF 类型必须是复合字段（因为它们的作用本来就是存放多个元素）。 BIT STRING、OCTET STRING、UTCTime、GeneralizedTime 还有各种字符串类型既可以是单一字段，也可以是复合字段，在 BER 中编码者可以自行决定， 但在 DER 中凡是单一、复合均可的类型都必须用单一字段。
 
@@ -491,7 +491,7 @@ PrintableString 的“hi”编码为：
 16 02 68 69
 ```
 
-UTF8String 也类似，但它能表示的字符更多。 例如，表情“😎”（U+1F60E Smiling Face With Sunglasses）的编码是：
+UTF8String 也类似，但它能表示的字符更多。 例如，表情“😎” (U+1F60E Smiling Face With Sunglasses) 的编码是：
 
 ```der
 0c 04 f0 9f 98 8e
@@ -500,7 +500,7 @@ UTF8String 也类似，但它能表示的字符更多。 例如，表情“😎�
 日期和时间的编码
 ----------------------
 
-出人意料的是，UTCTime 和 GeneralizedTime 的编码方式其实和字符串一样。 正如上文“类型”一章所述，UTCTime 表示时间的格式是 YYMMDDhhmmss， GeneralizedTime 则在其基础上将 YY 改成了四位年份 YYYY。 二者最后都可以加上时区，或者加一个 Z 表示协调世界时（UTC）。
+出人意料的是，UTCTime 和 GeneralizedTime 的编码方式其实和字符串一样。 正如上文“类型”一章所述，UTCTime 表示时间的格式是 YYMMDDhhmmss， GeneralizedTime 则在其基础上将 YY 改成了四位年份 YYYY。 二者最后都可以加上时区，或者加一个 Z 表示协调世界时 (UTC)。
 
 例如，太平洋标准时间（PST，即 UTC−8）的 2019 年 12 月 15 日 19:02:10 用 UTCTime 表示为 191215190210-0800， 用 BER 编码就是：
 

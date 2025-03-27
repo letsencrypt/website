@@ -20,7 +20,7 @@ Certbot があなたが求める要件を満たさない場合や、単に他の
 
 # その他のクライアントの選択肢
 
-以下のクライアントはすべて ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555)) をサポートしています。 まもなく [phasing out support for ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/) のサポートは完全に終了する予定です。 すでに以下のクライアントのいずれかを使用しているなら、最新バージョンにアップグレードするようにしてください。 あなたが使用しているクライアントが以下のリストにない場合、ACMEv2 をサポートしていない可能性があります。もしその場合、プロジェクトのメンテナに連絡するか、他のクライアントに切り替えることをおすすめします。
+以下のクライアントはすべて ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555)) をサポートしています。 2021年6月、Let's Encrypt は [ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27) のサポートを廃止しました。 すでに以下のクライアントのいずれかを使用しているなら、最新バージョンにアップグレードするようにしてください。 あなたが使用しているクライアントが以下のリストにない場合、ACMEv2 をサポートしていない可能性があります。もしその場合、プロジェクトのメンテナに連絡するか、他のクライアントに切り替えることをおすすめします。
 
 {{< clients acme_v2="ACME v2 Compatible Clients" libraries="ライブラリ" projects="Let's Encrypt と連携できるプロジェクト" >}}
 
@@ -34,7 +34,8 @@ Python の [acme](https://github.com/certbot/certbot/tree/main/acme) モジュ�
 
 プルリクエストを送る前に、以下の点を確認してください。
 
-1. クライアントは [Let's Encrypt trademark policy](/trademarks) を遵守しているか。
+1. クライアントは [Let's Encrypt trademark policy](https://www.abetterinternet.org/trademarks) を遵守しているか。
 1. クライアントは、ブラウザベースのものではなく、自動更新に対応しているか。
+1. クライアントは、[定期的な更新をランダム化された時間間隔](/docs/integration-guide#when-to-renew)で実行しているか、あるいはそのように設定することを奨励しているか。
 1. あなたのコミットは、関連するセクションの**一番最後**に追加するものであるか (もし対応する場合は、「acme_v2」セクションの記入を忘れないでください！)。
 1. あなたのコミットは、`clients.json` のヘッダの `lastmod` の日付を更新しているか。

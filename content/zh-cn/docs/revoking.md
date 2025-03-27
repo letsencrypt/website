@@ -9,7 +9,7 @@ show_lastmod: 1
 
 当证书不再安全使用时，您应该吊销它。 该情况可能由很多原因造成。 例如， 您可能意外的在某些公共网站上上传了您的私钥信息；黑客可能进入了您的服务器并复制了私钥；黑客可能暂时获取了您的服务器或 DNS 配置的控制权，并验证、颁发了他们控制私钥的证书。
 
-当您在吊销 Let's Encrypt 证书时，Let's Encrypt 将使用[在线证书状态协议（OCSP）](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)发布该吊销信息，有些浏览器会检查 OCSP 并决定是否信任该证书。 请注意，OCSP 有些[根本性问题](https://www.imperialviolet.org/2011/03/18/revocation.html)，所以不是所有浏览器都将检查 OCSP 信息。 但是，吊销私钥已经泄露的证书十分重要，并且也是 Let's Encrypt 的[用户协议](/repository)中强制要求的。
+当您吊销 Let's Encrypt 证书时，Let's Encrypt 将通过[在线证书状态协议 (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) 发布吊销信息，有些浏览器会根据 OCSP 决定是否信任该证书。 请注意，OCSP 有些[根本性问题](https://www.imperialviolet.org/2011/03/18/revocation.html)，所以不是所有浏览器都将检查 OCSP 信息。 但是，吊销私钥已经泄露的证书十分重要，并且也是 Let's Encrypt 的[用户协议](/repository)中强制要求的。
 
 若您要吊销 Let's Encrypt 颁发的证书，您需要通过 [Certbot](https://certbot.eff.org/) 之类的 ACME 客户端使用 [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) 进行操作。 您需要向 Let's Encrypt 证明您有权吊销证书。 有三种方法可以验证所有权：使用签发证书的原帐户，使用另一个授权签发的帐户，或使用证书私钥。
 

@@ -1,5 +1,5 @@
 ---
-title: "在GoDaddy服务器内使用Let's Encrypt证书"
+title: "在 GoDaddy 主机中使用 Let's Encrypt 证书"
 slug: godaddy
 date: 2019-12-02
 lastmod: 2019-12-02
