@@ -2,7 +2,7 @@
 title: Rate Limits
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-17
+lastmod: 2025-04-01
 show_lastmod: true
 ---
 
@@ -268,7 +268,7 @@ being overwhelmed by clients that make too many requests at once.
 | /acme/revoke-cert  | 10                           | 100            |
 | /acme/renewal-info | 1000                         | 100            |
 | /acme/*            | 250                          | 125            |
-| /directory         | 40                           | N/A            |
+| /directory         | 40                           | 40             |
 
 Subscribers who exceed these limits will receive a `503 Service Unavailable`
 HTTP response code. The response will include a `Retry-After` header.
