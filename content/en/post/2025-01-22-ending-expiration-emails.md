@@ -5,7 +5,7 @@ slug: ending-expiration-emails
 title: "Ending Support for Expiration Notification Emails"
 excerpt: "We will no longer send email reminders about upcoming certificate expirations."
 display_default_footer: true
-display_newsletter_embed: true
+display_inline_newsletter_embed: true
 ---
 
 Since its inception, Let's Encrypt has been sending expiration notification emails to subscribers that have provided an email address to us. We will be ending this service on June 4, 2025. The decision to end this service is the result of the following factors:

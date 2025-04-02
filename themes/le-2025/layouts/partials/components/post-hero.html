@@ -1,6 +1,6 @@
 {{ $style := .style | default dict }}
 {{ $background := index $style "background" | default "gray" }}
-{{ $padding := index $style "padding" | default "large" }}
+{{ $padding := index $style "padding" | default "small" }}
 
 {{ $backgroundClass := "" }}
 {{ if eq $background "gray" }}

@@ -5,7 +5,7 @@ slug: first-short-lived-cert-issued
 title: "We Issued Our First Six Day Cert"
 excerpt: "Hitting a milestone on our path toward optional shorter-lived certs."
 display_default_footer: true
-display_newsletter_embed: false
+display_inline_newsletter_embed: false
 ---
 
 Earlier this year we [announced](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) our intention to introduce short-lived certificates with lifetimes of six days as an option for our subscribers. Yesterday we issued our first short-lived certificate. You can see the certificate at the bottom of our post, or [here](https://crt.sh/?sha256=8265479AF7BB04B347260A54DB915FB294EBAACD79CDB43D86D27336B690AD26) thanks to Certificate Transparency logs. We issued it to ourselves and then immediately revoked it so we can observe the certificate's whole lifecycle. This is the first step towards making short-lived certificates available to all subscribers.

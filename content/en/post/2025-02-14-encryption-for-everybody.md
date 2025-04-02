@@ -5,7 +5,7 @@ slug: encryption-for-everybody
 title: "Encryption for Everybody"
 excerpt: "Celebrating ten years of Let's Encrypt."
 display_default_footer: true
-display_newsletter_embed: false
+display_inline_newsletter_embed: false
 ---
 
 
