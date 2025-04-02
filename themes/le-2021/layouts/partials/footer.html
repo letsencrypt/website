@@ -1,4 +1,4 @@
-{{ if and (ne .Section "documents") (.Page.Params.display_newsletter_embed) }}
+{{ if and (ne .Section "documents") (.Page.Params.display_inline_newsletter_embed) }}
 <div class="wrapper">
 <div class="newsletter-form-wrapper">
   {{ partial "newsletter-form" . }}
@@ -69,7 +69,7 @@
       </div>
 
       <div class="footer-col footer-newsletter-col  footer-col-3">
-        {{ if and (not .Page.Params.should_display_prominent_newsletter_form) (not .Page.Params.display_newsletter_embed) }}
+        {{ if and (not .Page.Params.should_display_prominent_newsletter_form) (not .Page.Params.display_inline_newsletter_embed) }}
           <h6>{{ i18n "subscribe_to_newsletter_headline" }}</h6>
           {{ partial "newsletter-form" . }}
         {{ end }}
