@@ -2321,6 +2321,14 @@ div[data-netlify-deploy-id] {
   line-height: 1.625;
 }
 
+.leading-\[1\.1\] {
+  line-height: 1.1;
+}
+
+.leading-\[1\.05\] {
+  line-height: 1.05;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -2793,6 +2801,14 @@ div[data-netlify-deploy-id] {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:leading-\[1\.1\] {
+    line-height: 1.1;
+  }
+
+  .md\:leading-\[1\.05\] {
+    line-height: 1.05;
   }
 
   .md\:shadow-lg {
