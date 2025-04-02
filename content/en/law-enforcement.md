@@ -1,7 +1,7 @@
 ---
 title: Law Enforcement Request Guidelines
 slug: law-enforcement
-lastmod: 2021-08-17
+lastmod: 2025-04-02
 do_not_translate: 1
 ---
 
@@ -17,7 +17,7 @@ What we do collect is described in our Privacy Policy: [https://letsencrypt.org/
 
 Mainly we can provide:
 
-* Account registration date and time, as well as the IP address used to create an account.
+* Account registration date and time used to create an account.
 * An optionally provided contact email address associated with accounts.
 * API transaction logs with domain names, IP addresses, and timestamps.
 * Lists of SSL/TLS certificates issued.
