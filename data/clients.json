@@ -849,6 +849,17 @@
 			"library": "Rust",
 			"library_url": "https://github.com/n0-computer/tokio-rustls-acme",
 			"comments": "is an easy-to-use, async ACME client library for rustls"
+		},
+		{
+			"name": "simple-acme",
+			"url": "https://www.simple-acme.com",
+			"category": "Windows / IIS",
+			"comments": "Spiritual successor to win-acme, also works on Linux!",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
 		}
 	]
 }
