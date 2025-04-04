@@ -2,15 +2,30 @@
 name = "Obter Ajuda"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Blog"
 weight = 25
 url = "/blog/"
 
 [[main]]
-name = "Doar"
+name = "Doações"
 weight = 30
 identifier = "donate"
+
+[[main]]
+name = "Torne-se um Patrocinador"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Patrocinadores e Doadores Atuais"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
 
 [[main]]
 name = "Sobre Nós"
@@ -18,7 +33,7 @@ weight = 40
 identifier = "about"
 
 [[main]]
-name = "Internet Security Research Group (ISRG)"
+name = "Grupo de Pesquisa em Segurança da Internet (ISRG)"
 weight = 200
 identifier = "isrg"
 parent = "about"
@@ -39,8 +54,8 @@ parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Torne-se um Patrocinador"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
+name = "Relatórios Anuais"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
