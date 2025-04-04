@@ -2,7 +2,7 @@
 title: 速率限制
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-17
+lastmod: 2025-04-01
 show_lastmod: true
 ---
 
@@ -176,7 +176,7 @@ show_lastmod: true
 | /acme/revoke-cert  | 10          | 100  |
 | /acme/renewal-info | 1000        | 100  |
 | /acme/\*           | 250         | 125  |
-| /directory         | 40          | 无    |
+| /directory         | 40          | 40   |
 
 超过以上限制的请求将收到代码为 `503 Service Unavailable` 的 HTTP 响应， 响应中包含 `Retry-After` 标头。
 
