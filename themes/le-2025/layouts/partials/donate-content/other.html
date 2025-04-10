@@ -1,0 +1,28 @@
+<div>
+    <div>
+      <h3>{{ T "donate_page_other_daf_heading" }}</h3>
+    </div>
+    <div>
+      <p>
+        {{ T "donate_page_other_daf_text" | safeHTML }}
+      </p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3>{{ T "donate_page_other_workplace_heading" }}</h3>
+    </div>
+    <div>
+      <p>
+        {{ $sponsorshipURL := site.Params.sponsorshipURL }}
+        {{ $sponsorshipLinkText := T "donate_page_other_workplace_sponsorship_link_text" }}
+        {{ $sponsorshipLink := printf "<a href='%s'>%s</a>" $sponsorshipURL $sponsorshipLinkText }}
+        {{ T "donate_page_other_workplace_recommend_sponsorship" (dict "sponsorshipLink" $sponsorshipLink) | safeHTML }}
+      </p>
+      <a name="double-donation"></a>
+      <p>
+        {{ T "donate_page_other_workplace_matching_gifts" | safeHTML }}
+      </p>
+      {{ .Render "double_donation" }}
+    </div>
+  </div>

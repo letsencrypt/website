@@ -1,0 +1,32 @@
+    <div>
+      <p>
+        {{ T "donate_page_stock_intro_text" | safeHTML }}
+      </p>
+      <table class="key-value-table key-value-table-blue">
+        <tr>
+          <th>{{ T "donate_page_stock_table_brokerage_firm" }}</th>
+          <td>Vanguard</td>
+        </tr>
+        <tr>
+          <th>{{ T "donate_page_stock_table_account_name" }}</th>
+          <td>Internet Security Research Group</td>
+        </tr>
+        <tr>
+          <th>{{ T "donate_page_stock_table_account_number" }}</th>
+          <td>44865458</td>
+        </tr>
+        <tr>
+          <th>{{ T "donate_page_stock_table_dtc_number" }}</th>
+          <td>0062</td>
+        </tr>
+        <tr>
+          <th>{{ T "donate_page_stock_table_tax_id" }}</th>
+          <td>46-3344200</td>
+        </tr>
+      </table>
+      <p>
+        {{ $sponsorEmail := site.Params.sponsorEmail }}
+        {{ $sponsorEmailLink := printf "<a href='mailto:%s'>%s</a>" $sponsorEmail $sponsorEmail }}
+        {{ T "donate_page_stock_outro_text" (dict "sponsorEmailLink" $sponsorEmailLink) | safeHTML }}
+      </p>
+    </div>

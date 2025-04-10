@@ -1,0 +1,17 @@
+<div class="w-full accordion-container">
+  <h2 class="text-heading-yellow">{{ T "donate_page_ways_to_give_heading" }}</h2>
+  {{ $page_context := .Page }} {{ partial "components/accordion-item" (dict "id"
+  "recurring" "title" (T "donate_page_make_recurring_donation_title") "content"
+  (T "donate_page_make_recurring_donation_content") "link_url" "#" "link_text"
+  (T "donate_page_make_recurring_donation_link") "is_open" true "page_context"
+  $page_context ) }} {{ partial "components/accordion-item" (dict "id" "stock"
+  "title" (T "donate_page_stock_donations_title") "content_partial"
+  "donate-content/stock.html" "link_url" nil "link_text" nil "page_context"
+  $page_context ) }} {{ partial "components/accordion-item" (dict "id" "crypto"
+  "title" (T "donate_page_crypto_gifts_title") "content_partial"
+  "donate-content/crypto.html" "link_url" nil "link_text" nil "page_context"
+  $page_context ) }} {{ partial "components/accordion-item" (dict "id" "other"
+  "title" (T "donate_page_other_ways_title") "content_partial"
+  "donate-content/other.html" "link_url" nil "link_text" nil "last" true
+  "page_context" $page_context ) }}
+</div>
