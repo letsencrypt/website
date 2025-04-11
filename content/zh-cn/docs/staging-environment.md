@@ -2,7 +2,7 @@
 title: 测试环境
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2024-06-11
+lastmod: 2025-04-01
 show_lastmod: 1
 ---
 
@@ -17,13 +17,27 @@ show_lastmod: 1
 
 # 速率限制
 
-测试环境使用与[生产环境类似](/docs/rate-limits)的速率限制，但具体数据有所变化：
+测试环境与[生产环境的速率限制](/docs/rate-limits)类似，但具体数值有所不同：
 
-* **每个注册域名允许颁发的证书数量**限制为每周 30000 张。
-* **重复证书**限制为每周 30000 张。
-* 每小时允许 60 次**验证失败**。
-* **每个 IP 地址注册账户数量**限制为每个 IP 每 3 小时允许注册 50 个账户。
-* 对于 ACME v2，**新订单**限制为每个帐户每 3 小时 1500 个。
+* **[单个 IP 地址注册限制](/docs/rate-limits/#new-registrations-per-ip-address)**为每 3 小时 50 次。
+* **[单个 IPv6 子网注册限制](/docs/rate-limits/#new-registrations-per-ipv6-range)**为每 3 小时 500 次（与生产环境相同）。
+* **[单个账户证书申请限制](/docs/rate-limits/#new-orders-per-account)**为每 3 小时 1500 次。
+* **[单个注册域名证书申请限制](/docs/rate-limits/#new-certificates-per-registered-domain)**为每秒 30000 次。
+* **[相同域名集合证书申请限制](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)**为每周 30000 次。
+* **[单个账户同一域名验证失败次数限制](/docs/rate-limits/#authorization-failures-per-hostname-per-account)**为每小时 200 次。
+* **[单个账户同一域名连续验证失败次数限制](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)**为每 6 小时 3600 次。
+
+[整体请求频率限制](/docs/rate-limits/#overall-requests-limit)为：
+
+| 接口                 | 单 IP 每秒请求上限 | 突发容量 |
+| ------------------ | ----------- | ---- |
+| /acme/new-nonce    | 20          | 10   |
+| /acme/new-account  | 5           | 15   |
+| /acme/new-order    | 20          | 40   |
+| /acme/revoke-cert  | 10          | 100  |
+| /acme/renewal-info | 1000        | 100  |
+| /acme/*            | 20          | 20   |
+| /directory         | 40          | 40   |
 
 # 测试证书层次结构
 
