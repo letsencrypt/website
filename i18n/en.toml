@@ -530,7 +530,7 @@ other = "here"
 other = "&ldquo;"
 
 [testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a giant nerd.&rdquo;"
+other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
 
 [testimonial_section_button_text]
 other = "JOIN TIMMY. BE A NERD."
