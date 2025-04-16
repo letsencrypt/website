@@ -1,0 +1,11 @@
+<div>
+
+    <div>
+      <p>
+        {{ $cryptoURL := site.Params.cryptoDonationURL }}
+        {{ $cryptoLinkText := T "donate_page_crypto_link_text" }}
+        {{ $cryptoLink := printf "<a href='%s'>%s</a>" $cryptoURL $cryptoLinkText }}
+        {{ T "donate_page_crypto_text" (dict "cryptoLink" $cryptoLink) | safeHTML }}
+      </p>
+    </div>
+  </div>

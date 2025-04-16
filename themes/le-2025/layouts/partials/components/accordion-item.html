@@ -1,5 +1,5 @@
 <div class="accordion-item rounded-lg bg-gray-200 overflow-hidden {{ if not .last }}mb-4{{ end }}{{ if .is_open }} is-open{{ end }}">
-  <button type="button" class="accordion-button w-full px-6 py-4 flex items-center gap-3  hover:bg-gray-300" id="{{ .id }}-accordion">
+  <button type="button" class="accordion-button w-full px-6 py-4 flex items-center gap-3  hover:bg-gray-300{{ if .is_open }} active{{ end }}" id="{{ .id }}-accordion">
     <img src="/images/le-logo-lockonly.svg" class="w-5 h-5 transform -translate-y-0.5">
     <span class="text-left text-xl text-le-blue font-bold">{{ .title }}</span>
     <div class="ml-auto flex items-center">
@@ -8,12 +8,18 @@
   </button>
   <div id="{{ .id }}-content" class="accordion-content{{ if not .is_open }} hidden{{ end }} bg-white px-6 py-4">
     <div class="space-y-4">
-      <p class="text-le-blue mb-8">
-        {{ .content }}
-      </p>
-      <a href="{{ .link_url }}" class="text-link hover:text-link-hover active:text-link-active underline">
-        {{ .link_text }} →
-      </a>
+      {{ if .content_partial }}
+        {{ partial .content_partial .page_context }}
+      {{ else if .content }}
+        <p class="text-le-blue mb-8">
+          {{ .content }}
+        </p>
+      {{ end }}
+      {{ if and .link_url .link_text }}
+        <a href="{{ .link_url }}" class="text-link hover:text-link-hover active:text-link-active underline">
+          {{ .link_text }} →
+        </a>
+      {{ end }}
     </div>
   </div>
 </div>

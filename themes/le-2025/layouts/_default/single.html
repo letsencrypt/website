@@ -18,12 +18,21 @@
     {{ $heroParams = merge $heroParams (dict "lastUpdated" (.Lastmod.Format "January 2, 2006") "section" .Section) }}
   {{ end }}
 
-  {{ partial "components/post-hero" $heroParams }}
+  {{/* Conditionally choose the hero partial */}}
+  {{ if eq .Params.imageHero true }}
+    {{ partial "components/post-hero-image" $heroParams }}
+  {{ else }}
+    {{ partial "components/post-hero" $heroParams }}
+  {{ end }}
 
-
+  {{ if ne .Params.useContainer false }}
     <div class="narrow-container mx-auto py-8 prose-content">
       {{ .Content }}
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
+  {{ else }}
+    {{ .Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ end }}
 
 {{ end }}

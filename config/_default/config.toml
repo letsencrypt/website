@@ -16,6 +16,10 @@ assetDir = "src"
 
 site_banner_enabled = false
 
+sponsorEmail = "sponsor@abetterinternet.org"
+sponsorshipURL = "https://www.abetterinternet.org/sponsor/"
+cryptoDonationURL = "https://thegivingblock.com/donate/internet-security-research-group/"
+
 github_username = "letsencrypt"
 linkedin_url = "https://www.linkedin.com/company/lets-encrypt/"
 crowdfunding_url = "https://www.generosity.com/community-fundraising/make-a-more-secure-web-with-let-s-encrypt"

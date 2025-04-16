@@ -324,3 +324,92 @@ const Menu = {
 };
 
 Menu.init();
+const Accordion = {
+  init() {
+    const accordionContainers = document.querySelectorAll('.accordion-container');
+    if (accordionContainers.length === 0) {
+      return;
+    }
+
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+
+    accordionButtons.forEach(button => {
+        const accordionItem = button.closest('.accordion-item');
+        const contentId = button.getAttribute('aria-controls') || button.id.replace('accordion', 'content');
+        const content = contentId ? document.getElementById(contentId) : null;
+        const icon = button.querySelector('.accordion-icon');
+
+        const hasIsOpenClass = accordionItem ? accordionItem.classList.contains('is-open') : false;
+        const hasActiveClass = button.classList.contains('active');
+
+        const shouldBeOpen = accordionItem && hasIsOpenClass && hasActiveClass;
+
+        if (shouldBeOpen) {
+            if (content) content.classList.remove('hidden');
+            if (icon) icon.textContent = '−';
+            button.setAttribute('aria-expanded', 'true');
+            button.classList.add('active');
+            if(accordionItem) accordionItem.classList.add('is-open');
+        } else {
+            if (content) content.classList.add('hidden');
+            if (icon) icon.textContent = '+';
+            button.setAttribute('aria-expanded', 'false');
+            button.classList.remove('active');
+            if(accordionItem) accordionItem.classList.remove('is-open');
+        }
+    });
+
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const clickedItem = this.closest('.accordion-item');
+        if (!clickedItem) return;
+
+        const contentId = this.getAttribute('aria-controls') || this.id.replace('accordion', 'content');
+        const clickedContent = contentId ? document.getElementById(contentId) : null;
+        const clickedIcon = this.querySelector('.accordion-icon');
+        const accordionContainer = this.closest('.accordion-container');
+        const wasActive = this.classList.contains('active');
+
+        if (accordionContainer) {
+          const siblingButtons = accordionContainer.querySelectorAll('.accordion-button');
+          siblingButtons.forEach(otherButton => {
+            if (otherButton !== this) {
+              const otherItem = otherButton.closest('.accordion-item');
+              if (!otherItem) return;
+
+              const otherContentId = otherButton.getAttribute('aria-controls') || otherButton.id.replace('accordion', 'content');
+              const otherContent = otherContentId ? document.getElementById(otherContentId) : null;
+              const otherIcon = otherButton.querySelector('.accordion-icon');
+
+              otherButton.classList.remove('active');
+              otherItem.classList.remove('is-open');
+              if (otherContent) otherContent.classList.add('hidden');
+              if (otherIcon) otherIcon.textContent = '+';
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
+
+        if (wasActive) {
+            this.classList.remove('active');
+            clickedItem.classList.remove('is-open');
+            if (clickedContent) clickedContent.classList.add('hidden');
+            if (clickedIcon) clickedIcon.textContent = '+';
+            this.setAttribute('aria-expanded', 'false');
+        } else {
+            this.classList.add('active');
+            clickedItem.classList.add('is-open');
+            if (clickedContent) clickedContent.classList.remove('hidden');
+            if (clickedIcon) clickedIcon.textContent = '−';
+            this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  Accordion.init();
+});

@@ -1,0 +1,37 @@
+<section class="py-32">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="md:col-span-2">
+
+      <div class="text-[128px] text-le-blue leading-[0px] mb-[-20px]">{{ T "testimonial_section_quote_open" | safeHTML }}</div>
+        <h3 class="donate-2025-quote">
+          {{ T "testimonial_section_quote_text" | safeHTML }}
+        </h3>
+        <a
+          href="#donate-form-anchor"
+          class="bg-[#F5A623] hover:bg-[#e09620] !text-white font-[700] text-[24px] leading-[80px] tracking-[0.13em] mt-6 px-10 py-2 rounded-[22px] inline-block"
+        >
+          {{ T "testimonial_section_button_text" }}
+        </a>
+
+    </div>
+    <div>
+      <img
+        src="/images/donate-2025/donate-timmy-photo.jpg"
+        srcset="
+          /images/donate-2025/donate-timmy-photo.jpg    1x,
+          /images/donate-2025/donate-timmy-photo@2x.jpg 2x
+        "
+        alt="{{ T "testimonial_section_image_alt" }}"
+        class=""
+      />
+    </div>
+
+  </div>
+  <div class="pt-32">
+    <p
+      class="mx-auto text-center max-w-[900px] font-normal text-[20px] leading-[26px] tracking-[0.05em] text-[#585858]"
+    >
+     {{ T "testimonial_section_footer_text" | safeHTML }}
+    </p>
+  </div>
+</section>
