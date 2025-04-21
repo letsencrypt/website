@@ -242,7 +242,7 @@ other = "trademarks"
 other = "Encryption for<br /> Everybody"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">550M</span><span id="certificate-count" class="text-4xl absolute left-0">550M</span></span> websites.'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">600M</span><span id="certificate-count" class="text-4xl absolute left-0">600M</span></span> websites.'
 
 [home_hero_get_started]
 other = "Commencer"
@@ -392,7 +392,7 @@ other = "A nonprofit providing free TLS certificates to more than ### websites"
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "550M"
+other = "600M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"
