@@ -242,7 +242,7 @@ other = "Varemærke-politik"
 other = "Kryptering<br /> for alle"
 
 [home_hero_subheading]
-other = 'En nonprofit, der leverer gratis TLS-certifikater til mere end <span class="relative inline-block"><span class="invisible text-4xl">550M</span><span id="certificate-count" class="text-4xl absolute left-0">550M</span></span> hjemmesider.'
+other = 'En nonprofit, der leverer gratis TLS-certifikater til mere end <span class="relative inline-block"><span class="invisible text-4xl">600M</span><span id="certificate-count" class="text-4xl absolute left-0">600M</span></span> hjemmesider.'
 
 [home_hero_get_started]
 other = "Kom i gang"
@@ -392,7 +392,7 @@ other = "En nonprofit, der leverer gratis TLS-certifikater til mere end ### hjem
 other = "En nonprofit, der leverer gratis TLS-certifikater til mere end"
 
 [home_hero_certificate_count]
-other = "550M"
+other = "600M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"
