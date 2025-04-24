@@ -30,6 +30,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Yes |
 | [Subject Key ID](#subject-key-identifier-extension) | Yes |
 | [Validity Period](#validity-period) | 90 days |
+| [Revocation Information](#revocation-information) | OCSP and CRL |
 | [Max Names](#max-names) | 100 |
 
 <sup>\*</sup>: If the CSR submitted at finalize time requests a specific Common Name, that request is honored. If the the CSR does not request a specific Common Name, the first Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
@@ -57,6 +58,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No |
 | [Subject Key ID](#subject-key-identifier-extension) | No |
 | [Validity Period](#validity-period) | 90 days |
+| [Revocation Information](#revocation-information) | CRL |
 | [Max Names](#max-names) | 25 |
 
 </div>
@@ -78,6 +80,7 @@ We recommend this profile for those who fully trust their automation to renew th
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No |
 | [Subject Key ID](#subject-key-identifier-extension) | No |
 | [Validity Period](#validity-period) | 160 hours |
+| [Revocation Information](#revocation-information) | CRL |
 | [Max Names](#max-names) | 25 |
 
 </div>
@@ -133,6 +136,10 @@ TLS Certificates can have a ["Subject Key Identifier" extension](https://datatra
 ### Validity Period
 
 This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 398 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
+
+### Revocation Information
+
+TLS clients need a way to determine whether a certificate has been revoked. Generally there are three mechanisms for this in the Web PKI: the Online Certificate Status Protocol (OCSP), Certificate Revocation Lists (CRLs), and having a validity period so short that revocation is unnecessary. This field indicates whether certificates issued under a given profile have an OCSP URL, a CRL URL, both, or neither.
 
 ### Max Names
 
