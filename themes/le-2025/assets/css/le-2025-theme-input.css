@@ -115,7 +115,7 @@
   }
 
   #donate-2025-page .donorbox-container iframe {
-    @apply ml-auto w-full;
+    @apply md:ml-auto w-full;
   }
 
 

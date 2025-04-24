@@ -449,10 +449,10 @@ other = "More stats"
 other = "Make a Recurring Donation"
 
 [donate_page_make_recurring_donation_content]
-other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
 
 [donate_page_make_recurring_donation_link]
-other = "Learn More"
+other = "Start your recurring donation now"
 
 [donate_page_stock_donations_title]
 other = "Donations of Stock"
@@ -472,14 +472,23 @@ other = "100%"
 [donate_page_funding_details_stat_text]
 other = "of the funding for Let's Encrypt comes from charitable contributions."
 
-[donate_page_funding_details_paragraph]
-other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+# [donate_page_funding_details_paragraph]
+# other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 [donate_page_funding_details_why_support_heading]
 other = "WHY SUPPORT?"
 
-[donate_page_funding_details_list_item]
-other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+[donate_page_funding_details_list_item1]
+other = "Free, automated, and easy to use TLS certificates."
+
+[donate_page_funding_details_list_item2]
+other = "We make it easy to use one or one million certs."
+
+[donate_page_funding_details_list_item3]
+other = "You make HTTPS possible for people all around the world."
+
+[donate_page_funding_details_list_item4]
+other = "Help us continue operating at a truly global scale."
 
 [donate_page_stock_intro_text]
 other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
@@ -538,5 +547,11 @@ other = "JOIN TIMMY. BE A NERD."
 [testimonial_section_image_alt]
 other = "Timmy, a supporter of Let's Encrypt"
 
-[testimonial_section_footer_text]
-other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE.<br />THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE<br />ENCRYPTION FOR EVERYBODY."
+[testimonial_section_footer_line1]
+other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
+
+[testimonial_section_footer_line2]
+other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
+
+[testimonial_section_footer_line3]
+other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

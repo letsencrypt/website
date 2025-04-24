@@ -2,7 +2,7 @@
   <h2 class="text-heading-yellow">{{ T "donate_page_ways_to_give_heading" }}</h2>
   {{ $page_context := .Page }} {{ partial "components/accordion-item" (dict "id"
   "recurring" "title" (T "donate_page_make_recurring_donation_title") "content"
-  (T "donate_page_make_recurring_donation_content") "link_url" "#" "link_text"
+  (T "donate_page_make_recurring_donation_content") "link_url" "#donate-form-anchor" "link_text"
   (T "donate_page_make_recurring_donation_link") "is_open" true "page_context"
   $page_context ) }} {{ partial "components/accordion-item" (dict "id" "stock"
   "title" (T "donate_page_stock_donations_title") "content_partial"

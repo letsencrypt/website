@@ -917,8 +917,13 @@ a.text-eyebrow:hover {
 }
 
 #donate-2025-page .donorbox-container iframe {
-  margin-left: auto;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  #donate-2025-page .donorbox-container iframe {
+    margin-left: auto;
+  }
 }
 
 .donate-2025-stat {
@@ -1900,6 +1905,10 @@ div[data-netlify-deploy-id] {
   margin-top: 1.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2044,8 +2053,8 @@ div[data-netlify-deploy-id] {
   max-width: 80%;
 }
 
-.max-w-\[900px\] {
-  max-width: 900px;
+.max-w-\[836px\] {
+  max-width: 836px;
 }
 
 .max-w-md {
