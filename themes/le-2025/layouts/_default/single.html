@@ -1,29 +1,68 @@
 {{ define "main" }}
-  {{ $heroParams := dict "title" .Title }}
+  {{ $currentPage := . }}
+  {{ $isUntranslated := false }}
+  {{ if .Params.untranslated }}
+    {{ $isUntranslated = true }}
+    {{ range .Translations }}
+      {{ if eq .Language.Lang "en" }}
+        {{ $currentPage = . }}
+      {{ end }}
+    {{ end }}
+    {{/* Fallback if no English translation found? For now, assumes it exists */}}
+  {{ end }}
 
-  {{ if eq .Section "post" }}
+  {{ $heroParams := dict "title" $currentPage.Title }}
+
+  {{ if eq $currentPage.Section "post" }}
     {{ $heroParams = merge $heroParams (dict
       "breadcrumb" (dict
         "text" (i18n "post_hero_breadcrumb_blog")
         "href" "/blog/"
       )
       "meta" (dict
-        "date" .Date
-        "author" .Params.author
+        "date" $currentPage.Date
+        "author" $currentPage.Params.author
       )
     ) }}
   {{ end }}
 
-  {{ if not .Lastmod.IsZero }}
-    {{ $heroParams = merge $heroParams (dict "lastUpdated" (.Lastmod.Format "January 2, 2006") "section" .Section) }}
+  {{ if not $currentPage.Lastmod.IsZero }}
+    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod.Format "January 2, 2006") "section" $currentPage.Section) }}
   {{ end }}
 
-  {{ partial "components/post-hero" $heroParams }}
+  {{ if eq $currentPage.Params.imageHero true }}
+    {{ partial "components/post-hero-image" $heroParams }}
+  {{ else }}
+    {{ partial "components/post-hero" $heroParams }}
+  {{ end }}
 
-
-    <div class="narrow-container mx-auto py-8 prose-content">
-      {{ .Content }}
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ if and .Params.english_is_canonical (ne .Language.Lang "en") }}
+    <div class="narrow-container mx-auto">
+      <div class="canonical-warning my-4 p-4 border border-orange-300 bg-orange-50 text-orange-700 rounded">
+        <i class="fas fa-exclamation-circle mr-2" aria-hidden="true"></i>
+        {{ i18n "english_is_canonical" | safeHTML }}
+      </div>
     </div>
+  {{ end }}
+
+  {{ if $isUntranslated }}
+    {{ if not .Params.do_not_translate }}
+      <div class="narrow-container mx-auto">
+        <!--googleoff: all-->
+        <div class="translation-warning my-4 p-4 border border-blue-300 bg-blue-50 text-blue-700">{{ i18n "not_yet_translated" | safeHTML }}</div>
+        <!--googleon: all-->
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if ne $currentPage.Params.useContainer false }}
+    <div class="narrow-container mx-auto py-8 prose-content">
+      {{ $currentPage.Content }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
+    </div>
+  {{ else }}
+    {{ $currentPage.Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
+  {{ end }}
 
 {{ end }}
