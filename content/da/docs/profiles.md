@@ -1,8 +1,8 @@
 ---
 title: Profiler
 slug: profiles
-date: 2025-02-05
-lastmod: 2025-02-05
+date: 2025-04-21
+lastmod: 2025-04-21
 show_lastmod: false
 ---
 
@@ -30,6 +30,8 @@ Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Ja              |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Ja              |
 | [Validity Period](#validity-period)                                  | 90 dage         |
+| [Revocation Information](#revocation-information)                    | OCSP og CRL     |
+| [Max Names](#max-names)                                              | 100             |
 
 <sup>\*</sup>: Hvis CSR indsendt ved afslutningen af tiden anmoder om et specifikt fælles navn, er denne anmodning opfyldt. Hvis CSR ikke anmoder om et specifikt fælles navn, vil det første emnealternativ blive forfremmet til emnefællesnavnet. Hvis enten det ønskede navn eller det to-be-forfremmede navn er for langt til at passe i Common Name feltet (64+ tegn), vil fællesnavnet blive efterladt tomt.
 
@@ -56,6 +58,8 @@ Det udstedte certifikat indeholder ikke længere nogen af de felter, der er næv
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej     |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Nej     |
 | [Validity Period](#validity-period)                                  | 90 dage |
+| [Revocation Information](#revocation-information)                    | CRL     |
+| [Max Names](#max-names)                                              | 25      |
 
 </div>
 <div class="boxed">
@@ -76,6 +80,8 @@ Vi anbefaler denne profil for dem, der fuldt ud stoler på deres automatisering 
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej       |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Nej       |
 | [Validity Period](#validity-period)                                  | 160 timer |
+| [Revocation Information](#revocation-information)                    | CRL       |
+| [Max Names](#max-names)                                              | 25        |
 
 </div>
 
@@ -130,3 +136,11 @@ TLS certifikater kan have en ["Emne Key Identifier" udvidelse] (https://datatrac
 ### Gyldighedsperiode
 
 Dette regulerer mængden af tid mellem [`notBefore` og `notAfter` tidsstempler](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) der er indlejret i et TLS-certifikat med andre ord, hvor længe certifikatet vil være betroet før det udløber. Denne værdi er begrænset til [højst 398 dage](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) af baseline-kravene.
+
+### Tilbagekaldelsesoplysninger
+
+TLS klienter har brug for en måde at afgøre, om et certifikat er blevet tilbagekaldt. Generelt er der tre mekanismer til dette i Web PKI: Online Certificate Status Protocol (OCSP), Certifikattilbagekaldelseslister (CRL), og med en gyldighedsperiode så kort, at tilbagekaldelse er unødvendig. Dette felt angiver, om certifikater udstedt under en given profil har en OCSP-URL, en CRL-URL, begge dele eller ingen af dem.
+
+### Maks Navne
+
+Dette er det maksimale antal af ["Emne Alternative Navne"](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6) for hvilket vi vil udstede et certifikat.
