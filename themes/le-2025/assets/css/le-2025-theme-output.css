@@ -1817,6 +1817,11 @@ div[data-netlify-deploy-id] {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -1883,6 +1888,10 @@ div[data-netlify-deploy-id] {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-1 {
@@ -2230,6 +2239,11 @@ div[data-netlify-deploy-id] {
   border-left-width: 1px;
 }
 
+.border-blue-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 197 253 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
@@ -2248,6 +2262,11 @@ div[data-netlify-deploy-id] {
 .border-le-yellow {
   --tw-border-opacity: 1;
   border-color: rgb(255 163 0 / var(--tw-border-opacity, 1));
+}
+
+.border-orange-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 186 116 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#F5A623\] {
@@ -2290,6 +2309,11 @@ div[data-netlify-deploy-id] {
   background-color: rgb(0 58 112 / var(--tw-bg-opacity, 1));
 }
 
+.bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -2310,6 +2334,10 @@ div[data-netlify-deploy-id] {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -2623,6 +2651,11 @@ div[data-netlify-deploy-id] {
 .text-link {
   --tw-text-opacity: 1;
   color: rgb(0 58 112 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
