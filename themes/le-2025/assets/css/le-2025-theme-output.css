@@ -1205,13 +1205,6 @@ a.text-eyebrow:hover {
 
 .prose-content li {
   margin-bottom: 0.5rem;
-  min-height: 43px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  --tw-text-opacity: 1;
-  color: rgb(0 58 112 / var(--tw-text-opacity, 1));
 }
 
 .prose-content li > ul {
@@ -1233,9 +1226,16 @@ a.text-eyebrow:hover {
 .list-lock-icon li {
   position: relative;
   margin-bottom: 1.75rem;
+  min-height: 43px;
   list-style-type: none;
   padding-left: 53px;
   padding-top: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(0 58 112 / var(--tw-text-opacity, 1));
   /* Add list-none to li */
 }
 
@@ -1286,6 +1286,8 @@ pre {
 
 pre code {
   border: 0;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 code {
