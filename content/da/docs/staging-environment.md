@@ -2,7 +2,7 @@
 title: Stagning Miljø
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2024-06-11
+lastmod: 2025-04-01
 show_lastmod: 1
 ---
 
@@ -19,11 +19,25 @@ Hvis du bruger Certbot, kan du bruge vores staging miljø med flaget `--test-cer
 
 Staging miljøet bruger de samme kaldsbegrænsninger som [beskrevet for produktionsmiljøet](/docs/rate-limits) med følgende undtagelser:
 
-* Grænsen for **Certifikater pr. registreret domæne** er 30.000 pr. uge.
-* Grænsen for **Duplikat certifikater** er 30.000 om ugen.
-* Grænsen for **Mislykkede Valideringer** er 60 i timen.
-* Grænsen for **Konti pr. IP-adresse** er 50 konti pr. 3 timers periode pr. IP.
-* For ACME v2 er grænsen på **nye ordrer** 1.500 nye ordrer pr. 3 timers periode pr. konto.
+* **[Nye Registreringer pr. IP-adresse](/docs/rate-limits/#new-registrations-per-ip-address)** grænsen er 50 pr 3 timer.
+* **[Nye Registreringer pr. IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** grænsen er 500 pr 3 timer (samme som produktion).
+* **[Nye Ordrer pr. konto](/docs/rate-limits/#new-orders-per-account)** grænsen er 1500 pr 3 timer.
+* Grænsen for **[Certifikater pr. registreret domæne](/docs/rate-limits/#new-certificates-per-registered-domain)** er 30000 pr sekund.
+* **[Nye Certifikater pr. eksakt sæt værtsnavne](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** grænsen er 30000 om ugen.
+* **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** grænsen er 200 pr time.
+* **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** grænsen er 3600 pr 6 timer.
+
+De samlede [forespørgsler grænser](/docs/rate-limits/#overall-requests-limit) er:
+
+| Endpoint           | Anmodninger pr. IP (pr. sekund) | Maksimal kaldskapacitet |
+| ------------------ | ------------------------------- | ----------------------- |
+| /acme/new-nonce    | 20                              | 10                      |
+| /acme/new-account  | 5                               | 15                      |
+| /acme/new-order    | 20                              | 40                      |
+| /acme/revoke-cert  | 10                              | 100                     |
+| /acme/renewal-info | 1000                            | 100                     |
+| /acme/*            | 20                              | 20                      |
+| /directory         | 40                              | 40                      |
 
 # Staging miljøets Certifikat Hierarki
 

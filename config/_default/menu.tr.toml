@@ -2,15 +2,30 @@
 name = "Yardım Alın"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Blog"
 weight = 25
 url = "/blog/"
 
 [[main]]
-name = "Bağış Yap"
+name = "Bağış Yapın"
 weight = 30
 identifier = "donate"
+
+[[main]]
+name = "Sponsor Olun"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Mevcut Sponsorlar & Fonlayıcılar"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
 
 [[main]]
 name = "Hakkımızda"
@@ -39,8 +54,8 @@ parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Sponsor Olun"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
+name = "Yıllık raporlar"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
