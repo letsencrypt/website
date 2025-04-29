@@ -2,7 +2,7 @@
 title: Grænser For kald
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2024-12-17
+lastmod: 2025-04-01
 show_lastmod: true
 ---
 
@@ -257,7 +257,7 @@ bliver overvældet af klienter, der foretager for mange anmodninger på én gang
 | /acme/revoke-cert  | 10                                                                                 | 100                     |
 | /acme/renewal-info | 1000                                                                               | 100                     |
 | /acme/\*           | 250                                                                                | 125                     |
-| /directory         | 40                                                                                 | Ikke tilgængelig        |
+| /directory         | 40                                                                                 | 40                      |
 
 Abonnenter, der overskrider disse grænser, vil modtage en '503 tjeneste utilgængelig'
 HTTP svarkode. Svaret vil indeholde en `Retry-After` header.

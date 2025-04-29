@@ -1,19 +1,16 @@
-<!-- Getting Started Section -->
-<div class="bg-le-blue">
+<div class="bg-gray-50">
   <div class="container mx-auto section-padding-2xl px-4">
     <div class="grid gap-16 md:grid-cols-2">
-      <!-- Left column -->
       <div class="flex flex-col min-h-full">
         <div class="space-y-6">
-          <div class="text-eyebrow text-white">{{ T "getting_started_eyebrow" }}</div>
-          <h1 class="text-4xl font-bold text-white">{{ T "getting_started_heading" }}</h1>
-          <p class="text-white text-lg leading-relaxed">
+          <div class="text-eyebrow text-black">{{ T "getting_started_eyebrow" }}</div>
+          <h1 class="text-4xl font-bold text-black">{{ T "getting_started_heading" }}</h1>
+          <p class="text-black text-lg leading-relaxed">
             {{ T "getting_started_description" }}
           </p>
         </div>
       </div>
 
-      <!-- Right column -->
       <div class="space-y-4">
         <div class="w-full accordion-container">
           {{ partial "components/accordion-item" (dict
@@ -54,56 +51,4 @@
     </div>
   </div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionButtons = document.querySelectorAll('.accordion-button');
-
-  // Open first accordion by default
-  const firstButton = accordionButtons[0];
-  if (firstButton) {
-    firstButton.classList.add('active');
-    firstButton.closest('.accordion-item').classList.add('is-open');
-    firstButton.querySelector('.accordion-icon').textContent = '−';
-  }
-
-  accordionButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const accordionItem = this.closest('.accordion-item');
-      const accordionContainer = this.closest('.accordion-container');
-
-      // Toggle active state
-      this.classList.toggle('active');
-      accordionItem.classList.toggle('is-open');
-
-      // Toggle plus/minus icon
-      const icon = this.querySelector('.accordion-icon');
-      icon.textContent = this.classList.contains('active') ? '−' : '+';
-
-      // Toggle content visibility
-      const content = document.getElementById(this.id.replace('accordion', 'content'));
-      if (content) {
-        content.classList.toggle('hidden');
-      }
-
-      // Close other accordions within the same container
-      if (accordionContainer) {
-        const siblingButtons = accordionContainer.querySelectorAll('.accordion-button');
-        siblingButtons.forEach(otherButton => {
-          if (otherButton !== this && otherButton.classList.contains('active')) {
-            const otherAccordionItem = otherButton.closest('.accordion-item');
-            otherButton.classList.remove('active');
-            otherAccordionItem.classList.remove('is-open');
-            otherButton.querySelector('.accordion-icon').textContent = '+';
-            const otherContent = document.getElementById(otherButton.id.replace('accordion', 'content'));
-            if (otherContent) {
-              otherContent.classList.add('hidden');
-            }
-          }
-        });
-      }
-    });
-  });
-});
-</script>
 

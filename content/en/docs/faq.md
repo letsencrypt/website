@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -107,7 +107,7 @@ We don't publish a list of IP addresses we use to validate, and these IP address
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
+Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for up to 30 days from the time of validation, depending on the associated [profile](/docs/profiles).
 If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
 
 ## Why should my Let's Encrypt (ACME) client run at a random time?

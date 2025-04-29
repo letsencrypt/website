@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "En nonprofit Certificate Authority som leverer TLS certifikater til <a href='/stats/'>550 millioner</a> hjemmesider."
+other = "Kryptering for alle. En nonprofit giver gratis TLS certifikater til mere end 500M hjemmesider."
 
 [home_hero_getting_started]
 other = "Kom i gang"
@@ -17,7 +17,7 @@ other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abe
 other = "Store sponsorer og finansieringskilder"
 
 [home_from_our_blog]
-other = "Fra vores blog"
+other = "Blog"
 
 [read_more]
 other = "Læs mere"
@@ -29,15 +29,24 @@ other = 'Abonnér <a href="{{ .Permalink }}">via RSS</a>'
 other = "Støt et mere sikkert og privatlivets respektiverede internettet."
 
 [footer_donate]
-other = "Donér"
+other = "Donér nu"
 
 [footer_mailing]
 other = "Send alle mails eller forespørgsler til:"
 
+[footer_legal_address]
+other = "Juridisk Adresse"
+
 [footer_policies]
 other = """
 Se vores <a href="/privacy/">privatlivspolitik</a>.<br>
-Se vores <a href="https://www.abetterinternet.org/trademarks">varemærkepolitik</a>.
+Se vores <a href="https://www.abetterinternet.org/trademarks">varemærke politik</a>.<br>
+Se vores <a href="https://www.abetterinternet.org/terms-of-service">vilkår for service</a>.
+"""
+
+[footer_links]
+other = """
+<a href="/privacy/">Privatlivspolitik</a> <a href="https://www.abetterinternet.org/trademarks">Varemærkepolitik</a>
 """
 
 [header_skip_nav]
@@ -196,5 +205,236 @@ other = "Abonner på e-mail opdateringer om Let's Encrypt og andre ISRG projekte
 [site_banner_text]
 other = "ISRG fejrer 10 år for at hjælpe med at opbygge et lysere internet →"
 
-[footer_copyright]
+[internet_security_research_group]
 other = "Internet Security Research Group"
+
+[header_donate_now]
+other = "Donér nu"
+
+[toggle_menu_aria_label]
+other = "Åbn/luk menu"
+
+[isrg_legal_address_label]
+other = "Juridisk Adresse"
+
+[isrg_mailing_label]
+other = "Send alle mails eller forespørgsler til:"
+
+[newsletter_subscribe_heading]
+other = "Abonner på e-mail opdateringer om Let's Encrypt og andre ISRG projekter"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "Vilkår"
+
+[footer_nav_privacy]
+other = "Politik om beskyttelse af personlige oplysninger"
+
+[footer_nav_trademark]
+other = "Varemærke-politik"
+
+[home_hero_heading]
+other = "Kryptering<br /> for alle"
+
+[home_hero_subheading]
+other = 'En nonprofit, der leverer gratis TLS-certifikater til mere end <span class="relative inline-block"><span class="invisible text-4xl">600M</span><span id="certificate-count" class="text-4xl absolute left-0">600M</span></span> hjemmesider.'
+
+[home_hero_get_started]
+other = "Kom i gang"
+
+[home_hero_annual_report_title]
+other = "Udforsk vores arbejde for at forbedre sikkerheden og privatlivets fred"
+
+[home_hero_annual_report_description]
+other = "Vores 2024 Årsrapport fremhæver de fremskridt, vi har gjort mod et bedre internet."
+
+[home_hero_annual_report_button]
+other = "Læs årsrapporten"
+
+[getting_started_eyebrow]
+other = "Gratis, Automatiserede TLS Certifikater"
+
+[getting_started_heading]
+other = "Kom i gang"
+
+[getting_started_description]
+other = "Let's Encrypt er en certifikatautoritet, der leverer gratis TLS-certifikater, gør det nemt for hjemmesider at aktivere HTTPS-kryptering og oprette et mere sikkert internet for alle. Let's Encrypt er et projekt af nonprofit Internet Security Research Group."
+
+[getting_started_ready_title]
+other = "Klar til at begynde?"
+
+[getting_started_ready_content]
+other = "Begynd at sikre dine hjemmesider med gratis SSL/TLS-certifikater fra Let's Encrypt. For at få et certifikat til dit websteds domæne, skal du demonstrere kontrol over domænet."
+
+[getting_started_ready_link]
+other = "Lad os komme i gang"
+
+[getting_started_docs_title]
+other = "Dokumentation"
+
+[getting_started_docs_content]
+other = "Lær om vores certifikatudstedelsesproces og bedste praksis."
+
+[getting_started_docs_link]
+other = "Læs dokumentation"
+
+[getting_started_clients_title]
+other = "ACME-klienter"
+
+[getting_started_clients_content]
+other = "Vælg mellem vores anbefalede ACME-klienter til automatisk at administrere dine certifikater."
+
+[getting_started_clients_link]
+other = "Gennemse ACME-klienter"
+
+[getting_started_help_title]
+other = "Få hjælp fra Let's Encrypt fællesskabet"
+
+[getting_started_help_content]
+other = "Tilmeld dig vores forum for teknisk bistand og vidensdeling med eksperter, frivillige og ISRG personale."
+
+[getting_started_help_link]
+other = "Besøg forummet"
+
+[support_heading_entire_sentence]
+other = "Global effekt gjort mulig af generøsitet, bidrag, sponsorering og dig"
+
+[support_heading_base]
+other = "Global effekt gjort mulig af"
+
+[support_heading_word1]
+other = "gavmildhed"
+
+[support_heading_word2]
+other = "bidrag"
+
+[support_heading_word3]
+other = "sponsorat"
+
+[support_heading_word4]
+other = "dig"
+
+[support_donate_title]
+other = "Støt Kryptering til alle"
+
+[support_donate_description]
+other = "Din donation hjælper med at holde Let's Encrypt gratis og tilgængelig for millioner af hjemmesider rundt om i verden. Deltag i at sikre internettet, en hjemmeside ad gangen. Hvert bidrag gør en forskel, uanset om du er en person eller en virksomhed."
+
+[support_donate_button]
+other = "Donér nu"
+
+[support_sponsor_title]
+other = "Førende Gennem Sponsorater"
+
+[support_sponsor_description]
+other = "Virksomheder, der er afhængige af eller værdsætter vores arbejde for at kryptere internettet, kan yde økonomisk støtte til Let's Encrypt. Støt virksomheder store og små for at gøre dette arbejde muligt!"
+
+[support_sponsor_button]
+other = "Lær om Sponsorater"
+
+[sponsors_heading]
+other = "Store sponsorer og finansieringskilder"
+
+[sponsors_diamond]
+other = "Diamant Sponsorer"
+
+[sponsors_platinum]
+other = "Platin Sponsorer"
+
+[sponsors_gold]
+other = "Guld Sponsorer"
+
+[sponsors_silver]
+other = "Sølv Sponsorer"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "Nyhedsbrev tilmeldingsblanket"
+
+[blog_section_heading]
+other = "Fra vores blog"
+
+[blog_section_see_all]
+other = "Se alle vores blogindlæg"
+
+[post_hero_last_updated]
+other = "Senest opdateret:"
+
+[post_hero_breadcrumb_blog]
+other = "Blog"
+
+[donate_get_involved_button]
+other = "Bliv en del af det"
+
+[donate_individual_impact_eyebrow]
+other = "Individuel Effekt"
+
+[donate_encryption_everybody_alt]
+other = "Kryptering for alle"
+
+[project_card_visit]
+other = "Besøg"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "En nonprofit, der leverer gratis TLS-certifikater til mere end ### hjemmesider"
+
+[home_hero_nonprofit_prefix]
+other = "En nonprofit, der leverer gratis TLS-certifikater til mere end"
+
+[home_hero_certificate_count]
+other = "600M"
+
+[home_hero_nonprofit_suffix]
+other = "websites"
+
+[projects_section_title]
+other = "Flere måder vi forbedrer sikkerheden og privatlivet"
+
+[projects_section_description]
+other = "Vidste du, at Let's Encrypt har to søskende projekter? Lad os kryptere og disse to projekter drives af Internet Security Research Group (ISRG), en organisation for offentlige goder 501(c)(3) med fokus på at gøre internettet mere sikkert og respektere privatlivets fred."
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "Fokuseret på hukommelsessikkerhed i kritisk internetinfrastruktur gennem brug af hukommelsessikre programmeringssprog."
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "Et system til beskyttelse af privatlivets fred for indsamling og sammenlægning af målinger, der er bygget på flerpartsdatabehandling."
+
+[support_donate_section_title]
+other = "Støt Kryptering til alle"
+
+[support_donate_section_description]
+other = "Din donation hjælper med at holde Let's Encrypt gratis og tilgængelig for millioner af hjemmesider rundt om i verden. Deltag i at sikre internettet, en hjemmeside ad gangen. Hvert bidrag gør en forskel, uanset om du er en person eller en virksomhed."
+
+[support_donate_section_button]
+other = "Donér nu"
+
+[support_sponsor_section_title]
+other = "Førende Gennem Sponsorater"
+
+[support_sponsor_section_description]
+other = "Virksomheder, der er afhængige af eller værdsætter vores arbejde for at kryptere internettet, kan yde økonomisk støtte til Let's Encrypt. Støt virksomheder store og små for at gøre dette arbejde muligt!"
+
+[support_sponsor_section_button]
+other = "Lær om Sponsorater"
+
+[stats_section_title]
+other = "Let's Encrypt Vækst"
+
+[stats_section_button]
+other = "Flere statistikker"

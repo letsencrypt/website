@@ -1,23 +1,24 @@
 ---
 title: Opslag
 slug: glossary
-date: 2024-07-16
+date: 2025-03-17
 show_lastmod: 1
+description: "En ordliste over termer relateret til SSL/TLS-certifikater, HTTPS og websikkerhed, der bruges af Let's Encrypt."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
     abbr="an accronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
-    
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
@@ -127,6 +128,8 @@ Note for translators:
 {{% def id="pfx" name="Personal Information Exchange Files (.pfx)" %}} En fil, der kan indeholde et [leaf certifikat](#def-leaf), dens [kæde](#def-chain) op til roden og den private nøgle af leaf certifikatet. Se også https://en.wikipedia.org/wiki/PKCS_12. [Microsoft Hardware Dev Center](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) {{% /def %}}
 
 {{% def id="precertificate" name="Precertificate" %}} Præ-certificater er en del af [Certifikatgennemsigtighed](#def-CT). Et præcertifikat er en kopi af det [certifikat](#def-leaf), som et CA har til hensigt at udstede med en [kritisk](#def-critical)-gift udvidelse tilføjet for at forhindre præcertifikatet i at blive accepteret af software på nettet. En CA indgiver en præcertifikat til [CT-logfiler](#def-CT-log) til gengæld for [SCT'er](#def-SCT). Da en præcertifikat ikke er identisk med det tilsvarende certifikat, kan logfiler om gennemsigtighed ende med at indeholde begge dele. [RFC 6962 Afsnit 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
+
+{{% def id="profile" name="Profile" %}} En profil er en samling af egenskaber, der påvirker både valideringen af og det endelige indhold af et certifikat. Se [profiler dokumentation](/docs/profiles) for beskrivelser af hver profil, hvad de påvirker, og hvordan du vælger dem. {{% /def %}}
 
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} En sikkerhedsmekanisme, der beder en browser om at kræve, at et websteds [certifikatkæde](#def-chain) bruger visse offentlige nøgler på fremtidige anvendelser. Chrome introducerede denne mekanisme for at beskytte mod CA-kompromiser, men den forårsagede udfald af webstedet, hvilket førte til [udfasning og fjernelse af denne](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [Wikipedia](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 

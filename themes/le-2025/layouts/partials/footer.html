@@ -1,3 +1,10 @@
+{{ if and (.Page.Params.display_inline_newsletter_embed) }}
+<div class="narrow-container mx-auto">
+  <div class="newsletter-form-wrapper">
+    {{ partial "newsletter-form" . }}
+  </div>
+</div>
+{{ end }}
 {{ if ne .Section "documents" }}
 <footer class="bg-white text-gray-800 pt-10 pb-4">
   <div class="container">
@@ -32,13 +39,14 @@
         </div>
       </div>
 
+      {{ if not (.Page.Params.display_inline_newsletter_embed) }}
       <div class="pt-0 md:pt-[70px]">
         <div class="border border-gray-300 rounded-lg pt-3 pb-0 px-2">
           <h6 class="text-eyebrow mb-5">{{ i18n "newsletter_subscribe_heading" }}</h6>
           {{ partial "newsletter-form" . }}
         </div>
       </div>
-
+      {{ end }}
     </div>
   </div>
 </footer>

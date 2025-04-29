@@ -389,7 +389,7 @@ other = "为超过 ### 网站免费提供 TLS 证书的非营利证书颁发机�
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "550M"
+other = "600M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

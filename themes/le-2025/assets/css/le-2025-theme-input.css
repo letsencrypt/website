@@ -107,6 +107,51 @@
     @apply text-lg text-black;
   }
 
+  .text-heading-yellow {
+
+    @apply font-bold text-[24px] leading-[31px] tracking-[0.13em] text-[#FFA300];
+
+
+  }
+
+  #donate-2025-page .donorbox-container iframe {
+    @apply md:ml-auto w-full;
+  }
+
+
+
+  .donate-2025-stat {
+    @apply font-bold text-[128px] leading-[167px];
+  }
+
+  .donate-2025-stat-text {
+    @apply font-bold text-[40px] leading-[52px];
+
+  }
+
+  .donate-2025-stat-paragraph {
+
+    @apply text-[20px] leading-[26px] font-medium;
+  }
+  .donate-2025-quote {
+    @apply font-bold text-[64px] leading-[83px] text-le-blue;
+  }
+
+
+
+  .key-value-table-blue th {
+    @apply bg-le-blue;
+  }
+
+  .key-value-table-blue td {
+    @apply border-le-blue;
+  }
+
+  .key-value-table-blue tr:last-child td {
+    @apply border-b-0;
+  }
+
+
 
   .rotate-words {
     display: inline-block;
@@ -179,7 +224,7 @@
   }
 
   .prose-content li {
-    @apply mb-2;
+    @apply mb-2 min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue;
   }
 
   .prose-content li > ul {
@@ -189,6 +234,20 @@
 
   .prose-content li > ol {
     @apply mt-2 mb-2;
+  }
+
+  .list-lock-icon {
+    @apply list-none !pl-0;
+  }
+
+  .list-lock-icon li {
+    @apply relative pl-[53px] mb-7 list-none pt-2; /* Add list-none to li */
+  }
+
+  .list-lock-icon li::before {
+    content: '';
+    @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
+    background-image: url('/images/le-logo-lockonly-black-cropped.svg');
   }
 
   .prose-content blockquote {

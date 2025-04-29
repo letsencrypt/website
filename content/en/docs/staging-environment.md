@@ -2,7 +2,7 @@
 title: Staging Environment
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2024-06-11
+lastmod: 2025-04-01
 show_lastmod: 1
 ---
 
@@ -17,13 +17,27 @@ If you're using Certbot, you can use our staging environment with the `--test-ce
 
 # Rate Limits
 
-The staging environment uses the same rate limits as [described for the production environment](/docs/rate-limits) with the following exceptions:
+The staging environment uses the same rate limits as [described for the production environment](/docs/rate-limits) but with different values:
 
-* The **Certificates per Registered Domain** limit is 30,000 per week.
-* The **Duplicate Certificate** limit is 30,000 per week.
-* The **Failed Validations** limit is 60 per hour.
-* The **Accounts per IP Address** limit is 50 accounts per 3 hour period per IP.
-* For ACME v2, the **New Orders** limit is 1,500 new orders per 3 hour period per account.
+* The **[New Registrations per IP Address](/docs/rate-limits/#new-registrations-per-ip-address)** limit is 50 per 3 hours.
+* The **[New Registrations per IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** limit is 500 per 3 hours (the same as production).
+* The **[New Orders per Account](/docs/rate-limits/#new-orders-per-account)** limit is 1500 per 3 hours.
+* The **[New Certificates per Registered Domain](/docs/rate-limits/#new-certificates-per-registered-domain)** limit is 30000 per second.
+* The **[New Certificates per Exact Set of Hostnames](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** limit is 30000 per week.
+* The **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** limit is 200 per hour.
+* The **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** limit is 3600 per 6 hours.
+
+The [Overall Requests Limits](/docs/rate-limits/#overall-requests-limit) are:
+
+| Endpoint           | Requests per IP (per second) | Burst Capacity |
+|--------------------|------------------------------|----------------|
+| /acme/new-nonce    | 20                           | 10             |
+| /acme/new-account  | 5                            | 15             |
+| /acme/new-order    | 20                           | 40             |
+| /acme/revoke-cert  | 10                           | 100            |
+| /acme/renewal-info | 1000                         | 100            |
+| /acme/*            | 20                           | 20             |
+| /directory         | 40                           | 40             |
 
 # Staging Certificate Hierarchy
 
