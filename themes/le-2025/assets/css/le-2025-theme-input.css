@@ -224,7 +224,7 @@
   }
 
   .prose-content li {
-    @apply mb-2 min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue;
+    @apply mb-2;
   }
 
   .prose-content li > ul {
@@ -241,7 +241,7 @@
   }
 
   .list-lock-icon li {
-    @apply relative pl-[53px] mb-7 list-none pt-2; /* Add list-none to li */
+    @apply relative pl-[53px] mb-7 list-none pt-2  min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue; /* Add list-none to li */
   }
 
   .list-lock-icon li::before {
@@ -267,6 +267,7 @@
 
   pre code {
     border: 0;
+    @apply px-0;
   }
 
   code {
