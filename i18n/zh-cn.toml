@@ -239,7 +239,7 @@ other = "商标政策"
 other = "面向所有人的<br />数据加密"
 
 [home_hero_subheading]
-other = '我们是一家非营利机构，为全球逾 <span class="relative inline-block"><span class="invisible text-4xl">5.5 亿</span><span id="certificate-count" class="text-4xl absolute left-0">5.5 亿</span></span> 网站提供了免费的 TLS 证书。'
+other = '一个向超过<span class="relative inline-block"><span class="invisible text-4xl">6亿</span><span id="certificate-count" class="text-4xl absolute left-0">6亿</span></span>网站提供免费TLS证书的非营利组织。'
 
 [home_hero_get_started]
 other = "快速入门"
@@ -435,3 +435,111 @@ other = "Let's Encrypt 发展趋势"
 
 [stats_section_button]
 other = "更多统计数据"
+
+[donate_page_make_recurring_donation_title]
+other = "定期捐款"
+
+[donate_page_make_recurring_donation_content]
+other = "网络信息加密非一日之功，每天都有无数证书需要续期！您的长期支持是我们持续广泛提供证书服务的坚实后盾。"
+
+[donate_page_make_recurring_donation_link]
+other = "立即开通定期捐款"
+
+[donate_page_stock_donations_title]
+other = "捐赠股权"
+
+[donate_page_crypto_gifts_title]
+other = "捐赠加密货币"
+
+[donate_page_other_ways_title]
+other = "其他贡献方式"
+
+[donate_page_ways_to_give_heading]
+other = "如何支持我们"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "的 Let's Encrypt 运作资金来自慈善捐款。"
+
+[donate_page_funding_details_why_support_heading]
+other = "为什么要支持我们？"
+
+[donate_page_funding_details_list_item1]
+other = "免费、易用且自动化的 TLS 证书。"
+
+[donate_page_funding_details_list_item2]
+other = "无论您需要一份还是一百万份证书，在我们这里都易如反掌。"
+
+[donate_page_funding_details_list_item3]
+other = "您的支持能将 HTTPS 推向全世界。"
+
+[donate_page_funding_details_list_item4]
+other = "协助我们持续向全球提供服务。"
+
+[donate_page_stock_intro_text]
+other = "您已持有超过一年的增值证券 (appreciated securities) 或共同基金 (mutual fund) 也是很好的慈善馈赠。"
+
+[donate_page_stock_table_brokerage_firm]
+other = "经纪公司："
+
+[donate_page_stock_table_account_name]
+other = "账户名称："
+
+[donate_page_stock_table_account_number]
+other = "ISRG 账户号码："
+
+[donate_page_stock_table_dtc_number]
+other = "DTC 号码："
+
+[donate_page_stock_table_tax_id]
+other = "税号："
+
+[donate_page_stock_outro_text]
+other = "如果您要转让证券，请通过 {{ .sponsorEmailLink }} 告知我们。您可能还需要附上证券经纪人的授权书。"
+
+[donate_page_other_daf_heading]
+other = "捐赠人建议基金 (DAF)"
+
+[donate_page_other_daf_text]
+other = "您可以建议基金管理方将资金定向捐给互联网安全研究组（我们的上级机构），确保您所捐款项 100% 用于支持更加安全、更加尊重隐私的互联网。"
+
+[donate_page_other_workplace_heading]
+other = "代表工作单位捐款"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "您可以建议您的雇主通过{{ .sponsorshipLink }}的形式支持我们。"
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "赞助"
+
+[donate_page_other_workplace_matching_gifts]
+other = "有些单位会有“员工捐多少，单位捐多少”的政策，您可留意贵司是否有类似的政策，并让您的影响力加倍！"
+
+[donate_page_crypto_text]
+other = "大多数类型的加密货币也可以通过{{ .cryptoLink }}捐给我们。"
+
+[donate_page_crypto_link_text]
+other = "此处"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "我支持 Let's Encrypt，<br />因为我热衷于信息安全。&rdquo;"
+
+[testimonial_section_button_text]
+other = "成为像 Timmy 一样的安全达人"
+
+[testimonial_section_image_alt]
+other = "Timmy，Let's Encrypt 的支持者之一"
+
+[testimonial_section_footer_line1]
+other = "作为一家尊重隐私的机构，我们对所有支持者和用户都知之甚少。虽然世上可能真的有一位 Timmy 热衷于信息安全并且支持我们，但上方这位 Timmy 并非真人，他的观点也纯属虚构。"
+
+[testimonial_section_footer_line2]
+other = "事实上，我们的影响力是由全球成百上千的支持者共同铸就的。"
+
+[testimonial_section_footer_line3]
+other = "感谢您考虑支持我们的事业，支持面向所有人的数据加密服务。"
