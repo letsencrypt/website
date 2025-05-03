@@ -438,3 +438,111 @@ other = "Let's Encrypt Vækst"
 
 [stats_section_button]
 other = "Flere statistikker"
+
+[donate_page_make_recurring_donation_title]
+other = "Foretag en gentagende Donation"
+
+[donate_page_make_recurring_donation_content]
+other = "Kryptering af internettet kræver dagligt arbejde - certifikater skal fornyes! Din opretholdelse støtte sikrer, at vi kan opretholde fornyelse af certifikater i skala."
+
+[donate_page_make_recurring_donation_link]
+other = "Start dit gentagende donation nu"
+
+[donate_page_stock_donations_title]
+other = "Værdipapir donationer"
+
+[donate_page_crypto_gifts_title]
+other = "Kryptovaluta Gaver"
+
+[donate_page_other_ways_title]
+other = "Andre måder at give"
+
+[donate_page_ways_to_give_heading]
+other = "VEJE TIL AT GIVE"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "af finansieringen af Let's Encrypt kommer fra velgørende bidrag."
+
+[donate_page_funding_details_why_support_heading]
+other = "HVORFOR STØTTE?"
+
+[donate_page_funding_details_list_item1]
+other = "Gratis, automatiseret og nemme at bruge TLS-certifikater."
+
+[donate_page_funding_details_list_item2]
+other = "Vi gør det nemt at bruge et eller en million certifikater."
+
+[donate_page_funding_details_list_item3]
+other = "Du gør HTTPS muligt for mennesker over hele verden."
+
+[donate_page_funding_details_list_item4]
+other = "Hjælp os med at fortsat at kunne operere på et virkeligt globalt niveau."
+
+[donate_page_stock_intro_text]
+other = "Værdipapirer eller investeringsforeningsandele, som du har ejet i mere end et år, kan være fremragende velgørenhedsgaver."
+
+[donate_page_stock_table_brokerage_firm]
+other = "Købsmæglerfirma:"
+
+[donate_page_stock_table_account_name]
+other = "Kontonavn:"
+
+[donate_page_stock_table_account_number]
+other = "ISRG Konto Nummer:"
+
+[donate_page_stock_table_dtc_number]
+other = "DTC #:"
+
+[donate_page_stock_table_tax_id]
+other = "US Skatte ID #:"
+
+[donate_page_stock_outro_text]
+other = "Lad os venligst vide, om du overfører værdipapirer på {{ .sponsorEmailLink }}. Du kan også ønske at e-maile brevet med bemyndigelse fra din mægler."
+
+[donate_page_other_daf_heading]
+other = "Donorforvaltede Fonde"
+
+[donate_page_other_daf_text]
+other = "Anbefal en donation til Internet Security Research Group (vores moderorgan) fra din gavefond. 100% af din donation vil gå til at støtte en sikker og privatlivets fred respekterende internet."
+
+[donate_page_other_workplace_heading]
+other = "På Din Arbejdsplads"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "Anbefal at din arbejdsgiver understøtter vores arbejde via {{ .sponsorshipLink }}."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "Sponsorering"
+
+[donate_page_other_workplace_matching_gifts]
+other = "Mange organisationer matcher donationer til nonprofit foretaget af medarbejdere. Tjek om din organisation har et matchende program og fordobler din virkning!"
+
+[donate_page_crypto_text]
+other = "Vi er i stand til at acceptere de fleste kryptovaluta donationer {{ .cryptoLink }}."
+
+[donate_page_crypto_link_text]
+other = "her"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "Jeg understøtter<br />Let's Encrypt fordi<br />er en sikkerhedsnørd.&rdquo;"
+
+[testimonial_section_button_text]
+other = "GØR SOM TIMMY. VÆR EN NØRD."
+
+[testimonial_section_image_alt]
+other = "Timmy, en støtte af Let's Encrypt"
+
+[testimonial_section_footer_line1]
+other = "SOM EN PRIVATLIVSRESPEKTERENDE ORGANISATION, ØNSKER VI AT KENDE SÅ LIDT SOM MULIGT OM ALLE VORES STØTTER OG ABONNENTER. DERFOR, SÅ SELVOM DER MÅSKE ER EN NØRD, DER HEDDER TIMMMY, SOM STØTTER OS, SÅ ER TIMMY OVENFOR IKKE EN RIGTIG PERSON OG DET ER IKKE ET RIGTIGT VIDENSBYRD."
+
+[testimonial_section_footer_line2]
+other = "TUSINDER AF PERSON OVERALT I VERDEN GØR VORES INDFLYDELSE MULIG."
+
+[testimonial_section_footer_line3]
+other = "TAK FOR AT OVERVEJE AT STØTTE VORES ARBEJDE MED KRYPTERING FOR ALLE."
