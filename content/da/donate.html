@@ -1,4 +1,37 @@
 ---
+title: Støt Kryptering til alle
+linkTitle: "Donér"
 slug: donate
-untranslated: 1
+no_donate_footer: true
+useContainer: false
+imageHero: true
+lastmod: 2025-04-27
+menu:
+  main:
+    weight: 90
+    parent: donate
 ---
+
+
+<div id="donate-2025-page">
+  <div class="container mx-auto py-8 prose-content">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+      <div>{{< funding-details >}}</div>
+      <div class="relative">
+        <div id="donate-form-anchor"></div>
+        <div class="md:absolute right-0 top-0 w-full z-50">{{< donorbox >}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-le-blue">
+    <div class="container mx-auto py-8 prose-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+        <div>{{< donate-accordion >}}</div>
+        <div class="relative">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto py-8 prose-content">
+    {{< testimonial-section >}}
+  </div>
+</div>
