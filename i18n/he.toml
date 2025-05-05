@@ -242,7 +242,7 @@ other = "מדיניות סימני מסחר"
 other = "הצפנה<br />לכולם"
 
 [home_hero_subheading]
-other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">550 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">550 מיליון</span></span> אתרים.'
+other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">600 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">600 מיליון</span></span> אתרים.'
 
 [home_hero_get_started]
 other = "איך מתחילים"
@@ -392,7 +392,7 @@ other = "ארגון ללא מטרות רווח שמספק אישורי TLS בח�
 other = "ארגון ללא מטרות רווח שמספק אישורי TLS בחינם ליותר מ־"
 
 [home_hero_certificate_count]
-other = "550 מיליון"
+other = "600 מיליון"
 
 [home_hero_nonprofit_suffix]
 other = "אתרים"
@@ -438,3 +438,111 @@ other = "הצמיחה של Let's Encrypt"
 
 [stats_section_button]
 other = "עוד סטטיסטיקה"
+
+[donate_page_make_recurring_donation_title]
+other = "Make a Recurring Donation"
+
+[donate_page_make_recurring_donation_content]
+other = "הצפנת האינטרנט היא משימה יומיומית - אישורים דורשים חידוש! התמיכה המקיימת שלך עוזרת לוודא שאנחנו מצליחים להחזיק חידוש אישורים בקנה מידה ענק."
+
+[donate_page_make_recurring_donation_link]
+other = "Start your recurring donation now"
+
+[donate_page_stock_donations_title]
+other = "תרומת מניות"
+
+[donate_page_crypto_gifts_title]
+other = "מתנות במטבעות דיגיטליים"
+
+[donate_page_other_ways_title]
+other = "דרכות נוספות להעניק"
+
+[donate_page_ways_to_give_heading]
+other = "דרכים להעניק"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "מהמימון של Let's Encrypt מקורו בתרומות."
+
+[donate_page_funding_details_why_support_heading]
+other = "למה לי לתמוך?"
+
+[donate_page_funding_details_list_item1]
+other = "אישורי TLS חינמיים, אוטומטיים וקלים לשימוש."
+
+[donate_page_funding_details_list_item2]
+other = "אנחנו מקלים על שימוש באישור או במילון אישורים."
+
+[donate_page_funding_details_list_item3]
+other = "בזכותך HTTPS אפשרי בכל רחבי העולם."
+
+[donate_page_funding_details_list_item4]
+other = "נשמח לעזרה בהמשך התפעול בקנה מידה בינלאומי באמת."
+
+[donate_page_stock_intro_text]
+other = "ניירות ערך (Appreciated securities) או קרנות נאמנות (mutual fund shares) שהיו בבעלותך למשך יותר משנה יכולות להיות מתנות נהדרות."
+
+[donate_page_stock_table_brokerage_firm]
+other = "חברת ברוקרים:"
+
+[donate_page_stock_table_account_name]
+other = "שם חשבון:"
+
+[donate_page_stock_table_account_number]
+other = "מס׳ חשבון של ה־ISRG:"
+
+[donate_page_stock_table_dtc_number]
+other = "מס׳ DTC:"
+
+[donate_page_stock_table_tax_id]
+other = "מס׳ זיהוי מס:"
+
+[donate_page_stock_outro_text]
+other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+
+[donate_page_other_daf_heading]
+other = "Donor Advised Funds"
+
+[donate_page_other_daf_text]
+other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+
+[donate_page_other_workplace_heading]
+other = "במקום העבודה שלך"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "אפשר להמליץ למעסיק לך לתמוך בעבודה שלנו דרך {{ .sponsorshipLink }}."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "חסות"
+
+[donate_page_other_workplace_matching_gifts]
+other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+
+[donate_page_crypto_text]
+other = "אנחנו יכולים לקבל את רוב סוגי המטבעות הדיגיטליים כתרומה {{ .cryptoLink }}."
+
+[donate_page_crypto_link_text]
+other = "כאן"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
+
+[testimonial_section_button_text]
+other = "JOIN TIMMY. BE A NERD."
+
+[testimonial_section_image_alt]
+other = "Timmy, a supporter of Let's Encrypt"
+
+[testimonial_section_footer_line1]
+other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
+
+[testimonial_section_footer_line2]
+other = "אלפי אנשים מכל רחבי העולם הופכים את ההשפעה שלנו למציאות."
+
+[testimonial_section_footer_line3]
+other = "תודה על כך ששקלת לתמוך בעבודה שלנו לספק הצפנה לכולם."
