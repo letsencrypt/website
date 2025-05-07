@@ -108,7 +108,7 @@ For all challenges, you need to allow inbound port 53 traffic
 
 # Supported Key Algorithms
 
-For ACME accounts, Let's Encrypt accepts RSA keys that are 2048 bits in length, and ECDSA keys using the P-256, P-384, and P-521 named curves. For certificate public keys, Let's Encrypt accepts RSA keys that are 2048, 3072, or 4096 bits in length, and ECDSA keys using the P-256, P-384, and P-521 named curves. You cannot reuse an account key as a certificate key.
+Let's Encrypt accepts RSA keys that are 2048, 3072, or 4096 bits in length and ECDSA keys using the P-256, P-384, or P-521 named curves. That's true for both account keys and certificate keys. You can't reuse an account key as a certificate key.
 
 Our recommendation is to serve a dual-cert config, offering an RSA certificate by default, and a (much smaller) ECDSA certificate to those clients that indicate support.
 
