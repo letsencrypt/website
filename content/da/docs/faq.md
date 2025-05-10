@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Ofte stillede spørgsmål (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -107,7 +107,7 @@ Vi offentliggør ikke en liste over IP-adresser, som vi bruger til at validere, 
 
 ## Jeg har succesfuldt fornyet et certifikat, men validering skete ikke denne gang - hvordan er det muligt?
 
-Når du har fuldført udfordringerne for et domæne, bliver den resulterende godkendelse cachet for din konto til at bruge igen senere. Cachelagrede godkendelser varer i 30 dage fra valideringstidspunktet. Hvis det certifikat, du har anmodet om, har alle de nødvendige godkendelser cachet, vil valideringen ikke ske igen, før de relevante cachede tilladelser udløber.
+Når du har fuldført udfordringerne for et domæne, bliver den resulterende godkendelse cachet for din konto til at bruge igen senere. Cachelagrede godkendelser varer op til 30 dage fra valideringstidspunktet, afhængigt af den tilknyttede [profil](/docs/profiles). Hvis det certifikat, du har anmodet om, har alle de nødvendige godkendelser cachet, vil valideringen ikke ske igen, før de relevante cachede tilladelser udløber.
 
 ## Hvorfor skal min Let's Encrypt (ACME) klient køre på et tilfældigt tidspunkt?
 

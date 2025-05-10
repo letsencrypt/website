@@ -2,7 +2,7 @@
 title: 常见问题
 linkTitle: 常见问题 (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -107,11 +107,11 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## 我的证书成功续期，但这次却不需要验证，为什么？
 
-域名验证通过后，结果会保留一段时间， 30 天内有效。 如果您申请证书时所有验证结果都还未过期，就无需重复验证。
+域名验证通过后，结果会保留一段时间， 根据所选的[证书配置](/docs/profiles)，最长可以保留 30 天。 如果您申请证书时所有验证结果都还未过期，就无需重复验证。
 
 ## 为什么我的 Let's Encrypt (ACME) 客户端启动时间应当随机？
 
-我们要求 [ACME 客户端在随机的时间点执行证书续期](https://letsencrypt.org/docs/integration-guide/#when-to-renew)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时会要求客户端[稍后重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
+我们要求 [ACME 客户端在随机的时间点执行证书续期](https://letsencrypt.org/docs/integration-guide/#when-to-renew)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
 
 ## 在哪里可以深入了解 TLS/SSL 与 PKI 的相关知识？
 

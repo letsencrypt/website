@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "面向所有人的数据加密。为超过五亿网站免费提供 TLS 证书的非营利组织。"
+other = "为所有人提供的数据加密服务。向超过五亿网站免费提供 TLS 证书的非营利组织。"
 
 [home_hero_getting_started]
 other = "快速入门"
@@ -236,7 +236,7 @@ other = "隐私政策"
 other = "商标政策"
 
 [home_hero_heading]
-other = "面向所有人的<br />数据加密"
+other = "为所有人提供的<br />数据加密服务"
 
 [home_hero_subheading]
 other = '一个向超过<span class="relative inline-block"><span class="invisible text-4xl">6亿</span><span id="certificate-count" class="text-4xl absolute left-0">6亿</span></span>网站提供免费TLS证书的非营利组织。'
@@ -317,7 +317,7 @@ other = "各方资助"
 other = "您的支持"
 
 [support_donate_title]
-other = "支持面向所有人的数据加密"
+other = "支持为所有人提供的数据加密服务"
 
 [support_donate_description]
 other = "您的捐款将帮助 Let's Encrypt 持续为全球数百万网站提供免费而可靠的服务。无论您是个人还是企业，都可以贡献一份宝贵的力量，与我们共同构建更加安全的互联网。"
@@ -374,7 +374,7 @@ other = "帮助 Let's Encrypt"
 other = "个人的力量"
 
 [donate_encryption_everybody_alt]
-other = "面向所有人的数据加密"
+other = "为所有人提供的数据加密服务"
 
 [project_card_visit]
 other = "前往"
@@ -413,7 +413,7 @@ other = "Divvi Up"
 other = "一套基于多方协同计算以尊重隐私的指标采集与汇总系统。"
 
 [support_donate_section_title]
-other = "支持面向所有人的数据加密"
+other = "支持为所有人提供的数据加密服务"
 
 [support_donate_section_description]
 other = "您的捐款将帮助 Let's Encrypt 持续为全球数百万网站提供免费而可靠的服务。无论您是个人还是企业，都可以贡献一份宝贵的力量，与我们共同构建更加安全的互联网。"
@@ -542,4 +542,4 @@ other = "作为一家尊重隐私的机构，我们对所有支持者和用户�
 other = "事实上，我们的影响力是由全球成百上千的支持者共同铸就的。"
 
 [testimonial_section_footer_line3]
-other = "感谢您考虑支持我们的事业，支持面向所有人的数据加密服务。"
+other = "感谢您考虑支持我们的事业，支持为所有人提供的数据加密服务。"
