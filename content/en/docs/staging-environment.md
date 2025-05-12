@@ -78,7 +78,14 @@ These intermediates are subject to change at any time, and should not be pinned 
 
 # Certificate Transparency
 
-The staging environment submits pre-certificates to the Let's Encrypt [Sapling](/docs/ct-logs) and Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT test logs and includes returned SCTs in the issued certificates.
+The staging environment uses several test CT logs. SCTs from these logs are included in staging certificates. However,
+as staging is a test environment only, CT cannot be used to observe staging issued certificates reliably.
+
+These logs include Let's Encrypt [Testing Logs](/docs/ct-logs#testing), as well as test logs from other Certificate
+Transparency log operators.
+
+Additionally, some [ct-test-srv](https://pkg.go.dev/github.com/letsencrypt/boulder/test/ct-test-srv) logs may be used,
+which are not actual logs and do not store issued certificates.
 
 # Continuous Integration / Development Testing
 
