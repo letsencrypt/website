@@ -2,7 +2,7 @@
 title: Profiles
 slug: profiles
 date: 2025-04-21
-lastmod: 2025-04-21
+lastmod: 2025-05-12
 show_lastmod: false
 ---
 
@@ -30,7 +30,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Yes |
 | [Subject Key ID](#subject-key-identifier-extension) | Yes |
 | [Validity Period](#validity-period) | 90 days |
-| [Revocation Information](#revocation-information) | OCSP and CRL |
+| [Revocation Information](#revocation-information) | CRL |
 | [Max Names](#max-names) | 100 |
 
 <sup>\*</sup>: If the CSR submitted at finalize time requests a specific Common Name, that request is honored. If the the CSR does not request a specific Common Name, the first Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
