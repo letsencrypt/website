@@ -1290,6 +1290,10 @@ pre code {
   padding-right: 0px;
 }
 
+a code {
+  text-decoration-line: underline;
+}
+
 code {
   padding-left: 5px;
   padding-right: 5px;
