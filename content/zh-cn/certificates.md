@@ -19,7 +19,7 @@ show_lastmod: 1
 * **ISRG Root X1**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root X1`
   * 密钥类型：`RSA 4096`
-  * 有效期限：2015-06-04 至 2030-06-04
+  * 在此时间范围内有效：2015-06-04 至 2030-06-04
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=7394)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=7394)
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=9314791)、[der](/certs/isrgrootx1.der)、[pem](/certs/isrgrootx1.pem)、[txt](/certs/isrgrootx1.txt)
   * 证书详细信息（DST Root CA X3 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3958242236)、[der](/certs/isrg-root-x1-cross-signed.der)、[pem](/certs/isrg-root-x1-cross-signed.pem)、[txt](/certs/isrg-root-x1-cross-signed.txt)（现已不再使用）
@@ -27,7 +27,7 @@ show_lastmod: 1
 * **ISRG Root X2**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root X2`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：2020-09-04 至 2035-09-04
+  * 在此时间范围内有效：2020-09-04 至 2035-09-04
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183269)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183269)
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=3335562555)、[der](/certs/isrg-root-x2.der)、[pem](/certs/isrg-root-x2.pem)、[txt](/certs/isrg-root-x2.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3334561878)、[der](/certs/isrg-root-x2-cross-signed.der)、[pem](/certs/isrg-root-x2-cross-signed.pem)、[txt](/certs/isrg-root-x2-cross-signed.txt)
@@ -44,27 +44,27 @@ show_lastmod: 1
 * **Let's Encrypt E5**
   * 主体：`O = Let's Encrypt, CN = E5`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295810)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295810)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e5.der)、[pem](/certs/2024/e5.pem)、[txt](/certs/2024/e5.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e5-cross.der)、[pem](/certs/2024/e5-cross.pem)、[txt](/certs/2024/e5-cross.txt)
 * **Let's Encrypt E6**
   * 主体：`O = Let's Encrypt, CN = E6`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295819)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295819)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e6.der)、[pem](/certs/2024/e6.pem)、[txt](/certs/2024/e6.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e6-cross.der)、[pem](/certs/2024/e6-cross.pem)、[txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R10**
   * 主体：`O = Let's Encrypt, CN = R10`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295814)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295814)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r10.der)、[pem](/certs/2024/r10.pem)、[txt](/certs/2024/r10.txt)
 * **Let's Encrypt R11**
   * 主体：`O = Let's Encrypt, CN = R11`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295815)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295815)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r11.der)、[pem](/certs/2024/r11.pem)、[txt](/certs/2024/r11.txt)
 
@@ -78,40 +78,40 @@ show_lastmod: 1
 * **Let's Encrypt E7**
   * 主体：`O = Let's Encrypt, CN = E7`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295813)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295813)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e7.der)、[pem](/certs/2024/e7.pem)、[txt](/certs/2024/e7.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e7-cross.der)、[pem](/certs/2024/e7-cross.pem)、[txt](/certs/2024/e7-cross.txt)
 * **Let's Encrypt E8**
   * 主体：`O = Let's Encrypt, CN = E8`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295809)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295809)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e8.der)、[pem](/certs/2024/e8.pem)、[txt](/certs/2024/e8.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e8-cross.der)、[pem](/certs/2024/e8-cross.pem)、[txt](/certs/2024/e8-cross.txt)
 * **Let's Encrypt E9**
   * 主体：`O = Let's Encrypt, CN = E9`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295812)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295812)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e9.der)、[pem](/certs/2024/e9.pem)、[txt](/certs/2024/e9.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e9-cross.der)、[pem](/certs/2024/e9-cross.pem)、[txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R12**
   * 主体：`O = Let's Encrypt, CN = R12`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295816)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295816)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r12.der)、[pem](/certs/2024/r12.pem)、[txt](/certs/2024/r12.txt)
 * **Let's Encrypt R13**
   * 主体：`O = Let's Encrypt, CN = R13`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295817)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295817)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r13.der)、[pem](/certs/2024/r13.pem)、[txt](/certs/2024/r13.txt)
 * **Let's Encrypt R14**
   * 主体：`O = Let's Encrypt, CN = R14`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2027-03-12
+  * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295818)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295818)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r14.der)、[pem](/certs/2024/r14.pem)、[txt](/certs/2024/r14.txt)
 
@@ -125,54 +125,54 @@ show_lastmod: 1
 * **Let's Encrypt E1**
   * 主体：`O = Let's Encrypt, CN = E1`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2025-09-15
+  * 有效期至：2025-09-15
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183283)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183283)
   * 证书详细信息（ISRG Root X2 签名的版本）：[crt.sh](https://crt.sh/?id=3334671964)、[der](/certs/lets-encrypt-e1.der)、[pem](/certs/lets-encrypt-e1.pem)、[txt](/certs/lets-encrypt-e1.txt)
 * **Let's Encrypt E2**
   * 主体：`O = Let's Encrypt, CN = E2`
   * 密钥类型：`ECDSA P-384`
-  * 有效期限：至 2025-09-15
+  * 有效期至：2025-09-15
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183284)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183284)
   * 证书详细信息（ISRG Root X2 签名的版本）：[crt.sh](https://crt.sh/?id=3334671963)、[der](/certs/lets-encrypt-e2.der)、[pem](/certs/lets-encrypt-e2.pem)、[txt](/certs/lets-encrypt-e2.txt)
 * **Let's Encrypt R3**
   * 主体：`O = Let's Encrypt, CN = R3`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2025-09-15
+  * 有效期至：2025-09-15
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183267)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183267)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=3334561879)、[der](/certs/lets-encrypt-r3.der)、[pem](/certs/lets-encrypt-r3.pem)、[txt](/certs/lets-encrypt-r3.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3479778542)、[der](/certs/lets-encrypt-r3-cross-signed.der)、[pem](/certs/lets-encrypt-r3-cross-signed.pem)、[txt](/certs/lets-encrypt-r3-cross-signed.txt)
 * **Let's Encrypt R4**
   * 主体：`O = Let's Encrypt, CN = R4`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2025-09-15
+  * 有效期至：2025-09-15
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183268)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183268)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=3334561877)、[der](/certs/lets-encrypt-r4.der)、[pem](/certs/lets-encrypt-r4.pem)、[txt](/certs/lets-encrypt-r4.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3479778543)、[der](/certs/lets-encrypt-r4-cross-signed.der)、[pem](/certs/lets-encrypt-r4-cross-signed.pem)、[txt](/certs/lets-encrypt-r4-cross-signed.txt)
 * **Let's Encrypt Authority X1**
   * 主体：`O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2020-06-04
+  * 有效期至：2020-06-04（已过期）
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=7395)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=7395)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=9314792)、[der](/certs/letsencryptauthorityx1.der)、[pem](/certs/letsencryptauthorityx1.pem)、[txt](/certs/letsencryptauthorityx1.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=10235198)、[der](/certs/lets-encrypt-x1-cross-signed.der)、[pem](/certs/lets-encrypt-x1-cross-signed.pem)、[txt](/certs/lets-encrypt-x1-cross-signed.txt)
 * **Let's Encrypt Authority X2**
   * 主体：`O = Let's Encrypt, CN = Let's Encrypt Authority X2`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2020-06-04
+  * 有效期至：2020-06-04（已过期）
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=9745)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=9745)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=12721505)、[der](/certs/letsencryptauthorityx2.der)、[pem](/certs/letsencryptauthorityx2.pem)、[txt](/certs/letsencryptauthorityx2.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=10970235)、[der](/certs/lets-encrypt-x2-cross-signed.der)、[pem](/certs/lets-encrypt-x2-cross-signed.pem)、[txt](/certs/lets-encrypt-x2-cross-signed.txt)
 * **Let's Encrypt Authority X3**
   * 主体：`O = Let's Encrypt, CN = Let's Encrypt Authority X3`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2021-10-06
+  * 有效期至：2021-10-06（已过期）
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=16418)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=16418)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=47997543)、[der](/certs/letsencryptauthorityx3.der)、[pem](/certs/letsencryptauthorityx3.pem)、[txt](/certs/letsencryptauthorityx3.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=15706126)、[der](/certs/lets-encrypt-x3-cross-signed.der)、[pem](/certs/lets-encrypt-x3-cross-signed.pem)、[txt](/certs/lets-encrypt-x3-cross-signed.txt)
 * **Let's Encrypt Authority X4**
   * 主体：`O = Let's Encrypt, CN = Let's Encrypt Authority X4`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2021-10-06
+  * 有效期至：2021-10-06（已过期）
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=16429)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=16429)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=47997546)、[der](/certs/letsencryptauthorityx4.der)、[pem](/certs/letsencryptauthorityx4.pem)、[txt](/certs/letsencryptauthorityx4.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=15710291)、[der](/certs/lets-encrypt-x4-cross-signed.der)、[pem](/certs/lets-encrypt-x4-cross-signed.pem)、[txt](/certs/lets-encrypt-x4-cross-signed.txt)
@@ -187,7 +187,7 @@ show_lastmod: 1
 * **ISRG Root OCSP X1**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root OCSP X1`
   * 密钥类型：`RSA 2048`
-  * 有效期限：至 2025-06-10
+  * 有效期至：2025-06-10
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=2929281974)、[der](/certs/isrg-root-ocsp-x1.der)、[pem](/certs/isrg-root-ocsp-x1.pem)、[txt](/certs/isrg-root-ocsp-x1.txt)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=142051103)（现已不再使用）
 
