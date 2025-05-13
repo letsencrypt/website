@@ -5,7 +5,7 @@ lastmod: 2025-05-13
 show_lastmod: 1
 ---
 
-For announcements of upcoming changes, please see the [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) category on the Let's Encrypt community forum.
+For announcements of upcoming changes, please [subscribe to the Technical Updates mailing list](https://letsencrypt.org/opt-in/) or see the [API Announcements category](https://community.letsencrypt.org/c/api-announcements/18) on the Let's Encrypt community forum.
 
 # Upcoming Features
 
@@ -41,7 +41,7 @@ Clients which support the [draft ACME Profiles extension](https://www.ietf.org/a
 
 ## Static CT Logs
 
-Enabled: [March 14, 2024](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)
+Enabled: [March 14, 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
 
 We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. Now that various CT log programs have updated their policies to accept this new kind of log, we intend to submit our logs for inclusion in those programs soon.
 
