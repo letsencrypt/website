@@ -1,52 +1,52 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2024-06-14
+lastmod: 2025-05-13
 show_lastmod: 1
 ---
 
 For announcements of upcoming changes, please see the [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) category on the Let's Encrypt community forum.
 
+# Upcoming Features
+
+## Shutdown of Expiration Notification Emails
+
+On June 4, 2025, we intend to [turn off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database. 
+
+## Short-lived Certificates
+
+Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information (such as OCSP, see below) embedded in them at all. 
+
+## IP Address Certificates
+
+Around the end of 2025, we intend to allow any client which requests a shortlived certificate (see above) to also request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
+
+## Removal of TLS Client Authentication EKU
+
+On Feb 11, 2026, we intend to [remove the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. Prior to that date, we will offer an alternative profile which will still contain that EKU, but note that this will be a temporary stop-gap for clients that need more time to migrate away from needing it: that alternate profile will go away on May 13, 2026.
+
 # Completed Features
 
-## ECDSA Root and Intermediates
+## Removal of OCSP URLs
 
-* Enabled: June 06, 2024
+Enabled: [May 7, 2025](https://letsencrypt.org/2024/12/05/ending-ocsp/).
 
-We are issuing certificates from our production ECDSA intermediates to ECDSA leaf certificates. See the [Chains of Trust](/certificates/) documentation for full details on our PKI hierarchy.
+Our certificates no longer contain an Authority Information Access (AIA) Online Certificate Status Protocol (OCSP) URL. Instead, they contain a Certificate Revocation List (CRL) Distribution Point (CRLDP) URL. Relying parties can retrieve revocation status information via CRLs, and ACME clients can obtain renewal hints via ARI (see below).
+
+## ACME Profiles
+
+Enabled: [January 9, 2025](https://letsencrypt.org/2025/01/09/acme-profiles/).
+
+Clients which support the [draft ACME Profiles extension](https://www.ietf.org/archive/id/draft-aaron-acme-profiles-01.html) can now request that their certificate conform to [one of our supported profiles](https://letsencrypt.org/docs/profiles/).
+
+## Static CT Logs
+
+Enabled: [March 14, 2024](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)
+
+We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. Now that various CT log programs have updated their policies to accept this new kind of log, we intend to submit our logs for inclusion in those programs soon.
 
 ## ACME Renewal Information (ARI)
 
-* Enabled: March 23, 2023
+Enabled: [March 23, 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
-We now run [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html), a system that allows us to notify subscribers via API when they need to renew.
-
-## Multi-Perspective Validation
-
-* Enabled: February 19, 2020
-
-We now validate domain control from [multiple network perspectives](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
-
-## Certificate Transparency Log
-
-* Enabled: May 15, 2019
-
-We now operate a [Certificate Transparency log](/docs/ct-logs).
-
-## TLS ALPN Challenge Support
-
-* Enabled: July 12, 2018
-
-We've specified and implemented a [replacement](https://tools.ietf.org/html/rfc8737) for the TLS-SNI validation method, which was [discontinued for security reasons](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). Introducing a replacement was important for subscribers who only want to use port 443 for validation.
-
-## Wildcard Certificates
-
-* Enabled: March 13, 2018
-
-## ACME v2 API
-
-* Enabled: March 13, 2018
-
-## Full IPv6 Support
-
-* Enabled: July 26, 2016
+We now provide suggested renewal windows for all issued certificates, which clients can query using the [ACME ARI extension](https://www.ietf.org/archive/id/draft-ietf-acme-ari-08.html).
