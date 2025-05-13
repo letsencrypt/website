@@ -37,7 +37,7 @@ The classic profile is the default profile selected for all orders which do not 
 
 <sup id="footnote-2">2</sup>: Only included for certificates with RSA public keys.
 
-<sup id="footnote-3">3</sup>: Until February 11, 2026. [See deprecation timeline](/2025/05/14/ending-tls-client-authentication/)
+<sup id="footnote-3">3</sup>: Until February 11, 2026. See [deprecation timeline information](/2025/05/14/ending-tls-client-authentication/) for a full timeline.
 </div>
 <div class="boxed">
 
