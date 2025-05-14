@@ -270,6 +270,10 @@
     @apply px-0;
   }
 
+  a code {
+    @apply underline;
+  }
+
   code {
     @apply px-[5px] py-[1px];
   }
