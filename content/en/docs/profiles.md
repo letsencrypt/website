@@ -2,7 +2,7 @@
 title: Profiles
 slug: profiles
 date: 2025-04-21
-lastmod: 2025-05-12
+lastmod: 2025-05-14
 show_lastmod: false
 ---
 
@@ -20,23 +20,24 @@ You can find detailed definitions of the properties discussed in each profile at
 
 The classic profile is the default profile selected for all orders which do not request a specific profile. The validation process and resulting certificate are the same as you're used to from the last several years of Let's Encrypt operation. We recommend using this profile for subscribers who are happy to let others try new things first.
 
-| Property | Value |
-| -------- | ----- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime) | 7 days |
-| [Authorization Reuse Period](#authorization-reuse-period) | 30 days |
-| [Order Lifetime](#order-lifetime) | 7 days |
-| [Certificate Common Name](#certificate-common-name) | Yes<sup>*</sup> |
-| [Key Encipherment KU](#key-encipherment-key-usage) | Yes<sup>†</sup> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Yes |
-| [Subject Key ID](#subject-key-identifier-extension) | Yes |
-| [Validity Period](#validity-period) | 90 days |
-| [Revocation Information](#revocation-information) | CRL |
-| [Max Names](#max-names) | 100 |
+| Property                                                             | Value                                     |
+|----------------------------------------------------------------------|-------------------------------------------|
+| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 7 days                                    |
+| [Authorization Reuse Period](#authorization-reuse-period)            | 30 days                                   |
+| [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
+| [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
+| [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | <a href="#footnote-3">Yes<sup>‡</sup></a> |
+| [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
+| [Validity Period](#validity-period)                                  | 90 days                                   |
+| [Revocation Information](#revocation-information)                    | CRL                                       |
+| [Max Names](#max-names)                                              | 100                                       |
 
-<sup>\*</sup>: If the CSR submitted at finalize time requests a specific Common Name, that request is honored. If the the CSR does not request a specific Common Name, the first Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name, that request is honored. If the the CSR does not request a specific Common Name, the first Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
 
-<sup>†</sup>: Only included for certificates with RSA public keys.
+<sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
+<sup id="footnote-3">‡</sup>: Until February 11, 2026. See [deprecation timeline information](/2025/05/14/ending-tls-client-authentication/) for a full timeline.
 </div>
 <div class="boxed">
 
@@ -48,18 +49,18 @@ The pending authorization lifetime has been reduced to further encourage automat
 
 The issued certificate no longer contains any of the fields discussed above. The Common Name has been omitted, as it is redundant with the Subject Alternative Names and is marked as NOT RECOMMENDED by the Baseline Requirements. The Key Encipherment key usage is omitted because it is only relevant when using non-forward-secret TLS cipher suites, which have been removed by all major browsers due to the importance of forward-secrecy. The TLS Client Auth extended key usage is omitted to comply with upcoming root program requirements that require "single-purpose" (i.e. single EKU) certificates. And the Subject Key ID extension is omitted because it serves no purpose in end-entity certificates and is NOT RECOMMENDED by the Baseline Requirements.
 
-| Property | Value |
-| -------- | ----- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime) | 1 hour |
-| [Authorization Reuse Period](#authorization-reuse-period) | 7 hours |
-| [Order Lifetime](#order-lifetime) | 8 hours |
-| [Certificate Common Name](#certificate-common-name) | No |
-| [Key Encipherment KU](#key-encipherment-key-usage) | No |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No |
-| [Subject Key ID](#subject-key-identifier-extension) | No |
-| [Validity Period](#validity-period) | 90 days |
-| [Revocation Information](#revocation-information) | CRL |
-| [Max Names](#max-names) | 25 |
+| Property                                                             | Value   |
+|----------------------------------------------------------------------|---------|
+| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 1 hour  |
+| [Authorization Reuse Period](#authorization-reuse-period)            | 7 hours |
+| [Order Lifetime](#order-lifetime)                                    | 8 hours |
+| [Certificate Common Name](#certificate-common-name)                  | No      |
+| [Key Encipherment KU](#key-encipherment-key-usage)                   | No      |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No      |
+| [Subject Key ID](#subject-key-identifier-extension)                  | No      |
+| [Validity Period](#validity-period)                                  | 90 days |
+| [Revocation Information](#revocation-information)                    | CRL     |
+| [Max Names](#max-names)                                              | 25      |
 
 </div>
 <div class="boxed">
@@ -70,18 +71,18 @@ The shortlived profile is identical to the tlsserver profile, with one key disti
 
 We recommend this profile for those who fully trust their automation to renew their certificates on time. This profile is not for everyone. Because this profile results in much higher issuance volume (since certificates need to be renewed every few days, instead of every few months), it is currently locked behind an allowlist.
 
-| Property | Value |
-| -------- | ----- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime) | 1 hour |
-| [Authorization Reuse Period](#authorization-reuse-period) | 7 hours |
-| [Order Lifetime](#order-lifetime) | 8 hours |
-| [Certificate Common Name](#certificate-common-name) | No |
-| [Key Encipherment KU](#key-encipherment-key-usage) | No |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No |
-| [Subject Key ID](#subject-key-identifier-extension) | No |
-| [Validity Period](#validity-period) | 160 hours |
-| [Revocation Information](#revocation-information) | CRL |
-| [Max Names](#max-names) | 25 |
+| Property                                                             | Value     |
+|----------------------------------------------------------------------|-----------|
+| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 1 hour    |
+| [Authorization Reuse Period](#authorization-reuse-period)            | 7 hours   |
+| [Order Lifetime](#order-lifetime)                                    | 8 hours   |
+| [Certificate Common Name](#certificate-common-name)                  | No        |
+| [Key Encipherment KU](#key-encipherment-key-usage)                   | No        |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No        |
+| [Subject Key ID](#subject-key-identifier-extension)                  | No        |
+| [Validity Period](#validity-period)                                  | 160 hours |
+| [Revocation Information](#revocation-information)                    | CRL       |
+| [Max Names](#max-names)                                              | 25        |
 
 </div>
 
@@ -127,7 +128,7 @@ TLS Certificates have a ["Key Usage" extension](https://datatracker.ietf.org/doc
 
 ### TLS Client Authentication Extended Key Usage
 
-In addition to the above, TLS Certificates also have an ["Extended Key Usage" extension](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12), which provides an extra layer of granularity to the Key Usage extension described above. The two most common extended key usages are TLS Server Auth (which allows the certificate to be presented by a server during a TLS handshake) and TLS Client Auth (which allows the certificate to be presented by a _client_ during a TLS handshake). The latter is very rare, and root programs are [moving towards](https://www.chromium.org/Home/chromium-security/root-ca-policy/moving-forward-together/#phase-out-multi-purpose-roots-from-the-chrome-root-store) requiring that the TLS Client Auth EKU be omitted from certificates.
+In addition to the above, TLS Certificates also have an ["Extended Key Usage" extension](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12), which provides an extra layer of granularity to the Key Usage extension described above. The two most common extended key usages are TLS Server Auth (which allows the certificate to be presented by a server during a TLS handshake) and TLS Client Auth (which allows the certificate to be presented by a _client_ during a TLS handshake). Support for [TLS Client Authentication is being phased out](/2025/05/14/ending-tls-client-authentication/) in 2026.
 
 ### Subject Key Identifier Extension
 
