@@ -440,13 +440,13 @@ other = "הצמיחה של Let's Encrypt"
 other = "עוד סטטיסטיקה"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "לתרום באופן קבוע"
 
 [donate_page_make_recurring_donation_content]
 other = "הצפנת האינטרנט היא משימה יומיומית - אישורים דורשים חידוש! התמיכה המקיימת שלך עוזרת לוודא שאנחנו מצליחים להחזיק חידוש אישורים בקנה מידה ענק."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "להתחיל את התרומה הקבועה שלך עכשיו"
 
 [donate_page_stock_donations_title]
 other = "תרומת מניות"
@@ -530,13 +530,13 @@ other = "כאן"
 other = "&ldquo;"
 
 [testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
+other = "אני חובב מושבע של<br />Let's Encrypt כי<br />אני חנון אבטחת מידע.&rdquo;"
 
 [testimonial_section_button_text]
-other = "JOIN TIMMY. BE A NERD."
+other = "הצטרפו לטימי. תהיו חנונים."
 
 [testimonial_section_image_alt]
-other = "Timmy, a supporter of Let's Encrypt"
+other = "טימי, חובב מושבע של Let's Encrypt"
 
 [testimonial_section_footer_line1]
 other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
