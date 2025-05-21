@@ -218,7 +218,7 @@ stuck forever in a loop of failed validations.
 
 ### Limit
 
-Up to 3,600 consecutive authorization failures per identifier can be incurred by
+Up to 1,152 consecutive authorization failures per identifier can be incurred by
 one account. The ability to incur authorization failures refills at a rate of 1
 per identifier every day and resets to zero if an authorization for that
 identifier is successfully validated. Once exceeded, the account is prevented
@@ -231,14 +231,14 @@ account.
 | Failures per Day             | Time to Pause           |
 |------------------------------|-------------------------|
 | 1                            | ∞ (never paused)        |
-| 2                            | 3,600 days (9.86 years) |
-| 5                            | 900 days (2.46 years)   |
-| 10                           | 400 days (1.10 years)   |
-| 15                           | 257 days (8.45 months)  |
-| 20                           | 189 days (6.22 months)  |
-| 30                           | 124 days (4.08 months)  |
-| 40                           | 92 days (3.03 months)   |
-| 120                          | 30 days                 |
+| 2                            | 1,152 days (3.16 years) |
+| 5                            | 288 days (9.46 months)  |
+| 10                           | 128 days (4.21 months)  |
+| 15                           | 82 days (2.70 months)   |
+| 20                           | 61 days (1.99 months)   |
+| 30                           | 40 days                 |
+| 40                           | 30 days                 |
+| 120                          | 10 days                 |
 
 ### Common Causes
 
