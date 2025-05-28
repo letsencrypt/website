@@ -148,6 +148,10 @@
 		{
 			"name": "Proxmox Virtual Environment",
 			"url": "https://pve.proxmox.com/wiki/Certificate_Management#sysadmin_certs_get_trusted_acme_cert"
+		},
+		{
+			"name": "Kitten",
+			"url": "https://kitten.small-web.org"
 		}
 	],
 	"list": [
