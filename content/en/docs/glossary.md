@@ -14,7 +14,7 @@ Note for translators:
 {% def
 	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
 	name="The term to define (optional if english or abbr is provided)"
-	abbr="an accronym (optional)"
+	abbr="an acronym (optional)"
 	english="the english term (optional - if present the abbr is in english too)" %}}
 		the definition
 {% /def %}
