@@ -61,7 +61,7 @@ So every rejection comes with an error message explaining what has happened and 
 
 Currently, the user interface for an affected subscriber looks like this:
 
-![](/images/blog/blog-2025-06-04--image1.jpg)
+<img src="/images/blog/blog-2025-06-04--image1.jpg" class="blog-image-constrained my-5" alt="Let's Encrypt unpause interface">
 
 This link would be provided via an ACME error message in response to any request that was blocked due to a pause account-hostname pair.
 

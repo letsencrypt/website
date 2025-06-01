@@ -467,6 +467,11 @@
     margin-bottom: 0;
   }
 
+  /* Blog image styling */
+  .blog-image-constrained {
+    @apply w-2/3 max-h-[90vh] object-contain mx-auto block;
+  }
+
 }
 
 /* Utility styles */
