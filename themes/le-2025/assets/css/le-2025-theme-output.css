@@ -1741,6 +1741,18 @@ div[data-netlify-deploy-id] {
   margin-bottom: 0;
 }
 
+/* Blog image styling */
+
+.blog-image-constrained {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-height: 90vh;
+  width: 66.666667%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1826,6 +1838,11 @@ div[data-netlify-deploy-id] {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .-ml-4 {
