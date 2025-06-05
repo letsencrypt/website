@@ -2,11 +2,16 @@
   <div class="relative z-10">
     <div class="container mx-auto">
       <h2 class="text-left text-3xl md:text-4xl font-bold mb-8">
-        {{ i18n "support_heading_base" }} <span class="text-le-blue rotate-words"
-          data-word1="{{ i18n "support_heading_word1" }}"
-          data-word2="{{ i18n "support_heading_word2" }}"
-          data-word3="{{ i18n "support_heading_word3" }}"
-          data-word4="{{ i18n "support_heading_word4" }}">{{ i18n "support_heading_word1" }}</span>
+        {{ if and (i18n "support_heading_base") (i18n "support_heading_word1") (i18n "support_heading_word2") (i18n "support_heading_word3") (i18n "support_heading_word4") }}
+          {{ i18n "support_heading_base" }}
+          <span class="text-le-blue rotate-words"
+            data-word1="{{ i18n "support_heading_word1" }}"
+            data-word2="{{ i18n "support_heading_word2" }}"
+            data-word3="{{ i18n "support_heading_word3" }}"
+            data-word4="{{ i18n "support_heading_word4" }}">{{ i18n "support_heading_word1" }}</span>
+        {{ else if i18n "support_heading_entire_sentence" }}
+          {{ i18n "support_heading_entire_sentence" }}
+        {{ end }}
       </h2>
 
       <script>
