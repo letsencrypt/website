@@ -233,6 +233,14 @@ to = "/sv/404.html"
 status = 404
 force = false
 
+# Fix for Google SERP issue: /ta/sponsors/ was showing in search results but leading to 404
+# This specific redirect must come before the catch-all /ta/* rule to be processed first
+[[redirects]]
+from = "/ta/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true
+
 [[redirects]]
 from = "/ta/*"
 to = "/ta/404.html"
