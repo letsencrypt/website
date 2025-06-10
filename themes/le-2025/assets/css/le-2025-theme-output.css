@@ -1753,6 +1753,15 @@ div[data-netlify-deploy-id] {
      object-fit: contain;
 }
 
+.image-caption {
+  margin-top: 0.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
