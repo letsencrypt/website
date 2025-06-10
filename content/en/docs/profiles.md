@@ -85,7 +85,7 @@ We recommend this profile for those who fully trust their automation to renew th
 | [Validity Period](#validity-period)                                  | 160 hours |
 | [Revocation Information](#revocation-information)                    | CRL       |
 | [Max Names](#max-names)                                              | 25        |
-| [Identifier Types](#identifier-types)                                | DNS       |
+| [Identifier Types](#identifier-types)                                | DNS, IP   |
 
 </div>
 
