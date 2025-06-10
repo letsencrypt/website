@@ -2,7 +2,7 @@
 title: Profiles
 slug: profiles
 date: 2025-04-21
-lastmod: 2025-05-14
+lastmod: 2025-06-09
 show_lastmod: false
 ---
 
@@ -32,8 +32,9 @@ The classic profile is the default profile selected for all orders which do not 
 | [Validity Period](#validity-period)                                  | 90 days                                   |
 | [Revocation Information](#revocation-information)                    | CRL                                       |
 | [Max Names](#max-names)                                              | 100                                       |
+| [Identifier Types](#identifier-types)                                | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name, that request is honored. If the the CSR does not request a specific Common Name, the first Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
@@ -61,6 +62,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 | [Validity Period](#validity-period)                                  | 90 days |
 | [Revocation Information](#revocation-information)                    | CRL     |
 | [Max Names](#max-names)                                              | 25      |
+| [Identifier Types](#identifier-types)                                | DNS     |
 
 </div>
 <div class="boxed">
@@ -83,6 +85,7 @@ We recommend this profile for those who fully trust their automation to renew th
 | [Validity Period](#validity-period)                                  | 160 hours |
 | [Revocation Information](#revocation-information)                    | CRL       |
 | [Max Names](#max-names)                                              | 25        |
+| [Identifier Types](#identifier-types)                                | DNS, IP   |
 
 </div>
 
@@ -145,3 +148,7 @@ TLS clients need a way to determine whether a certificate has been revoked. Gene
 ### Max Names
 
 This is the maximum number of ["Subject Alternative Names"](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6) for which we will issue a certificate.
+
+### Identifier Types
+
+This governs which types of ["Subject Alternative Names"](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6) (`dnsName` or `iPAddress`) a certificate may contain.
