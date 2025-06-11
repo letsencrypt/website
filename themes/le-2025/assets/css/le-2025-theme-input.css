@@ -472,6 +472,10 @@
     @apply w-2/3 max-h-[90vh] object-contain mx-auto block;
   }
 
+  .image-caption {
+    @apply text-sm text-gray-600 text-center mt-1;
+  }
+
 }
 
 /* Utility styles */
