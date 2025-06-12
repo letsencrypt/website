@@ -1,7 +1,7 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2025-06-05
+lastmod: 2025-01-16
 show_lastmod: 1
 ---
 
@@ -16,7 +16,6 @@ There are a number of monitoring options out there, including:
 * [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 * [TrackSSL](https://trackssl.com/)
 * [Host-Tracker](https://www.host-tracker.com/)
-* [Chill SSL](https://www.chillssl.com/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
