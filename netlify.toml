@@ -150,6 +150,28 @@ status = 302
 force = false
 
 [[redirects]]
+from = "/*/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true
+
+
+[[redirects]]
+# Certbot (and other) clients link to the Terms of Service with a `.` after them
+# This is a convenience to allow copying the URL with that `.`
+# It should be updated on ToS changes, but is not a compliance-critical path.
+from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
+to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true
+
+[[redirects]]
 from = "/ca/*"
 to = "/ca/404.html"
 status = 404
@@ -297,19 +319,4 @@ force = true
 from = "https://www.letsencrypt.com/*"
 to = "https://letsencrypt.org/"
 status = 302
-force = true
-
-[[redirects]]
-# Certbot (and other) clients link to the Terms of Service with a `.` after them
-# This is a convenience to allow copying the URL with that `.`
-# It should be updated on ToS changes, but is not a compliance-critical path.
-from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
-to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
-status = 301
-force = true
-
-[[redirects]]
-from = "/sponsors"
-to = "https://www.abetterinternet.org/sponsors/"
-status = 301
 force = true
