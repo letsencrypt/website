@@ -78,7 +78,7 @@ hostnames.
 ## New Orders per Account
 
 Each time you request a certificate from Let's Encrypt, a new order is created.
-A single certificate can include up to 100 identifiers (hostnames or IP
+A single certificate can include up to 100 identifiers (DNS names or IP
 addresses). For performance reasons, it's better to use fewer identifiers per
 certificate whenever you can.
 
@@ -104,9 +104,11 @@ registered domain is `example.com`. In `new.blog.example.co.uk`, the registered
 domain is `example.co.uk`. We use the [Public Suffix
 List](https://publicsuffix.org/) to identify registered domains.
 
-If you're requesting a certificate for an IP address, this rate limit evaluates
-an IPv4 address as if it's a registered domain. For IPv6 addresses, it evaluates
-the /64 range that contains the address.
+If you're requesting a certificate for an IP address, we also try to treat the
+most common allocation (what you'd get from your ISP or hosting provider) as the
+"registered domain." For IPv4 addresses, we treat the exact address as the
+registered domain. For IPv6 addresses, we treat the containing /64 range as the
+registered domain.
 
 ### Limit
 
@@ -128,7 +130,7 @@ the specific registered domain or an account.
 ## New Certificates per Exact Set of Identifiers
 
 If you request a certificate for `192.168.1.1`, `example.com` and
-`login.example.com`, the “exact set of identifiers” is `[192.168.1.1,
+`login.example.com`, the "exact set of identifiers" is `[192.168.1.1,
 example.com, login.example.com]`. If you request a certificate for only 1
 identifier, such as `example.co.uk`, then the exact set of identifiers would be
 `[example.co.uk]`.
@@ -170,7 +172,7 @@ We do **not** offer overrides for this limit.
 
 ## Authorization Failures per Identifier per Account
 
-An authorization is generated for each identifier (domain or IP address)
+An authorization is generated for each identifier (DNS name or IP address)
 included in an order. Before a certificate can be issued, all authorizations in
 the order must be successfully validated. A failed authorization means that,
 although the requests for validation were sent successfully, all of Let's
