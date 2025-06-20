@@ -2,7 +2,7 @@
 title: Stagning Miljø
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2025-04-01
+lastmod: 2025-05-12
 show_lastmod: 1
 ---
 
@@ -78,7 +78,11 @@ Disse mellemliggende certifikater er under forandring når som helst, og bør ik
 
 # Certifikatets Gennemsigtighed
 
-Staging miljøet indsender præ-certifikater til Let's Encrypt [Testflume](/docs/ct-logs) og Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT-testlogs og omfatter returnerede SCT'er i de udstedte certifikater.
+Staging miljøet bruger flere test CT logs. SCT'er fra disse logs er inkluderet i staging certifikater. Bemærk at staging kun er et testmiljø, og CT kan ikke bruges til at observere udstedte staging certifikater pålideligt.
+
+Disse logs omfatter Let's Encrypt [Testing Logs](/docs/ct-logs#testing)samt test logs fra andre Certificate Transparency Log-operatører.
+
+Desuden kan nogle [ct-test-srv](https://pkg.go.dev/github.com/letsencrypt/boulder/test/ct-test-srv) logs bruges, som ikke er faktiske logs og ikke lagrer udstedte certifikater.
 
 # Løbende Integration / Udviklingstest
 
