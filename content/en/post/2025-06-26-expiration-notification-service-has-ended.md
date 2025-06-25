@@ -15,10 +15,10 @@ Since its inception, Let’s Encrypt has been sending expiration notification em
 3. Providing expiration notifications costs Let's Encrypt tens of thousands of dollars per year, money that we believe can be better spent on other aspects of our infrastructure.
 4. Providing expiration notifications adds complexity to our infrastructure, which takes time and attention to manage and increases the likelihood of mistakes being made. Over the long term, particularly as we add support for new service components, we need to manage overall complexity by phasing out system components that can no longer be justified.
 
-For those who would like to continue receiving expiration notifications, we recommend using a third party service such as Red Sift Certificates Lite (formerly Hardenize). Red Sift’s monitoring service providing expiration emails is free of charge for up to 250 certificates. More monitoring options can be found here.
+For those who would like to continue receiving expiration notifications, we recommend using a third party service such as [Red Sift Certificates Lite](https://redsift.com/pulse-platform/certificates-lite) (formerly Hardenize). Red Sift's monitoring service providing expiration emails is free of charge for up to 250 certificates. More monitoring options can be found [here](/docs/monitoring-options).
 
 We have deleted the email addresses provided to Let’s Encrypt via the ACME API that were stored in our CA database in association with issuance data. This doesn't affect addresses signed up to mailing lists and other systems. They are managed in a separate ISRG system unassociated with issuance data.
 
 Going forward, if an email address is provided to Let’s Encrypt via the ACME API, Let’s Encrypt will not store the address but will instead forward it to the general ISRG mailing list system unassociated with any account data. If the email address has not been seen before, that system may send an onboarding email with information about how to subscribe to various sources of updates.
 
-If you’d like to stay informed about technical updates and other news about Let’s Encrypt and our parent nonprofit, ISRG, based on the preferences you choose, you can sign up for our email lists below:
+If you’d like to stay informed about technical updates and other news about Let’s Encrypt and our parent nonprofit, [ISRG](https://abetterinternet.org), based on the preferences you choose, you can sign up for our email lists below:
