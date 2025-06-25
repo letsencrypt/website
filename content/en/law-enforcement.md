@@ -18,7 +18,6 @@ What we do collect is described in our Privacy Policy: [https://letsencrypt.org/
 Mainly we can provide:
 
 * Account registration date and time used to create an account.
-* An optionally provided contact email address associated with accounts.
 * API transaction logs with domain names, IP addresses, and timestamps.
 * Lists of SSL/TLS certificates issued.
 
@@ -38,11 +37,11 @@ ISRG and its Let’s Encrypt service are based in the United States. Generally, 
 
 When crafting a subpoena or preservation request, our primary ask is that you limit requests for transaction log data to the 90 days prior to retrieval. That is what we have active and searchable. To go back further than that requires retrieval and review of off-site backups that are not reasonably accessible and involves substantial staff time and expense.
 
-Some account data, such as contact email addresses, remain active and searchable past 90 days and are included in reports limited to the past 90 days.
+Some account data remain active and searchable past 90 days and are included in reports limited to the past 90 days.
 
 ## Non Disclosure Orders
 
-Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (assuming the subscriber has provided a contact email address), unless we are prohibited from doing so by law. We may also provide delayed notice upon expiration of a specific non-disclosure period in a court order.
+Our policy is to notify subscribers about law enforcement requests if we plan to produce subscriber data (if we have contact information), unless we are prohibited from doing so by law. We may also provide delayed notice upon expiration of a specific non-disclosure period in a court order.
 
 If you believe that notification would jeopardize an investigation, you should obtain an appropriate court order or other valid process establishing that notice is prohibited.
 
