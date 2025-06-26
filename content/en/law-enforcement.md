@@ -9,7 +9,7 @@ do_not_translate: 1
 
 These guidelines are for law enforcement officials seeking records from Internet Security Research Group (ISRG) concerning users of our Let’s Encrypt service, in connection with an official investigation or proceeding.
 
-ISRG is a California nonprofit corporation with a mission to reduce financial, technological, and educational barriers to secure communication over the Internet. As a privacy-focused organization, we carefully balance our commitment to user privacy with our legal obligations to respond to valid law enforcement requests.
+ISRG is a California nonprofit corporation with a mission to protect Internet users by lowering monetary, technological, and informational barriers to a more secure and privacy-respecting Internet. As a privacy-focused organization, we carefully balance our commitment to user privacy with our legal obligations to respond to valid law enforcement requests.
 
 Acceptance of legal process by any means discussed in these guidelines is for convenience only, and does not waive any objections, including lack of jurisdiction or proper service. 
 
@@ -21,7 +21,7 @@ What we do collect is described in our Privacy Policy: [https://letsencrypt.org/
 
 Mainly we can provide:
 
-* Account registration date and time used to create an account.
+* Account registration date and time.
 * API transaction logs with domain names, IP addresses, and timestamps.
 * Lists of TLS certificates issued.
 
@@ -82,4 +82,4 @@ ISRG reserves the right to seek reimbursement for costs in responding to request
 
 ## Transparency Reporting
 
-ISRG publishes transparency reports every six months detailing the number and types of law enforcement requests received and how they were processed. All data in transparency reports is aggregated and does not identify specific investigations or requesting agencies. Current and past transparency reports are available at [https://letsencrypt.org/repository/](/repository/).
+ISRG publishes transparency reports every six months detailing the number and types of law enforcement requests received. All data in transparency reports is aggregated and does not identify specific investigations or requesting agencies. Current and past transparency reports are available at [https://letsencrypt.org/repository/](/repository/).
