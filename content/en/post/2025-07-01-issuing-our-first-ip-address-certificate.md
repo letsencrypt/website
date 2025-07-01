@@ -10,7 +10,7 @@ display_inline_newsletter_embed: false
 
 Since Let's Encrypt started issuing certificates in 2015, people have repeatedly requested the ability to get certificates for IP addresses, an option that only a few certificate authorities have offered. Until now, they've had to look elsewhere, because we haven't provided that feature.
 
-Today, we've issued our [first certificate for an IP address](#), as we [announced we would](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) in January. As with other new certificate features on our engineering roadmap, we'll now start gradually rolling out this option to more and more of our subscribers.
+Today, we've issued our [first certificate for an IP address](https://crt.sh/?id=19376952215), as we [announced we would](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) in January. As with other new certificate features on our engineering roadmap, we'll now start gradually rolling out this option to more and more of our subscribers.
 
 ### Some Background on IP Address Certs
 
