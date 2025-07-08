@@ -2,6 +2,7 @@
 name = "Hilfe bekommen"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Blog"
 weight = 25
@@ -11,6 +12,20 @@ url = "/blog/"
 name = "Spenden"
 weight = 30
 identifier = "donate"
+
+[[main]]
+name = "Sponsor werden"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Current Sponsors & Funders"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
 
 [[main]]
 name = "Über uns"
@@ -39,8 +54,8 @@ parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Sponsor werden"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
+name = "Annual reports"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
