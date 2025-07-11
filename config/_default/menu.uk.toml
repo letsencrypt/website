@@ -2,39 +2,60 @@
 name = "Допомога"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Блог"
 weight = 25
 url = "/blog/"
+
 [[main]]
 name = "Підтримати"
 weight = 30
 identifier = "donate"
-[[main]]
-name = "Про сервіс"
-weight = 40
-identifier = "about"
-[[main]]
-name = "Internet Security Research Group (ISRG)"
-weight = 200
-identifier = "isrg"
-parent = "about"
-url = "https://www.abetterinternet.org/about/"
-[[main]]
-name = "Стан сервісу"
-weight = 60
-identifier = "status"
-parent = "about"
-url = "https://letsencrypt.status.io/"
-[[main]]
-name = "Кар'єра"
-weight = 110
-identifier = "careers"
-parent = "about"
-url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "Стати спонсором"
 weight = 40
 identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Спонсори та фонди"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+
+[[main]]
+name = "Про сервіс"
+weight = 40
+identifier = "about"
+
+[[main]]
+name = "Дослідницька група з питань інтернет-безпеки (ISRG)"
+weight = 200
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+
+[[main]]
+name = "Стан сервісу"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+
+[[main]]
+name = "Кар'єра"
+weight = 110
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+
+[[main]]
+name = "Річні звіти"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"

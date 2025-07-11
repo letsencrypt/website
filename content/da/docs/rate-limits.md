@@ -212,11 +212,10 @@ Op til 3.600 på hinanden følgende godkendelsesfejl per identifikator kan være
 én konto. Evnen til at pådrage sig autorisationsfejl genfylder med en hastighed på 1
 pr. værtsnavn hver dag og nulstiller til nul, hvis en autorisation til at værtsnavn
 er valideret med succes. Når den er overskredet, er kontoen forhindret i at
-anmoder om nye certifikater for det værtsnavn. Each time the subscriber
-attempts to request a certificate they will receive an error containing a link
-to our Self-Service Portal where they can unpause issuance for the paused
-identifier and up to 49,999 additional paused identifiers associated with their
-account.
+anmoder om nye certifikater for det værtsnavn. Hver gang abonnenten forsøger
+at anmode om et certifikat, vil de modtage en fejl med et link til vores
+Selvbetjenings Portal hvor de kan genoptage udstedelsen for den pausede værtsnavn og
+op til 49.999 yderligere pausede værtsnavne tilknyttet deres konto.
 
 | Fejl pr. dag | Pause tid                                               |
 | ---------------------------- | ------------------------------------------------------- |
