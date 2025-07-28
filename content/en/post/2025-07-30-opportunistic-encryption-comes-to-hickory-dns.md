@@ -1,0 +1,19 @@
+---
+author: Josh Aas
+date: 2025-07-30T00:00:00Z
+slug: opportunistic-encryption-comes-to-hickory-dns
+title: "Opportunistic Encryption Comes to Hickory DNS"
+excerpt: "Hickory DNS is getting support for RFC 9539 opportunistic encryption."
+display_default_footer: true
+display_inline_newsletter_embed: false
+---
+
+ISRG creates more secure Internet infrastructure by operating the [Let's Encrypt](https://letsencrypt.org/) certificate authority, and also by promoting the creation and adoption of memory safe software via the [Prossimo](https://www.memorysafety.org/) project. Prossimo projects, most of which relate to critical Internet functionality, avoid memory corruption vulnerabilities that have plagued Internet server software for decades. We work to make Prossimo projects more secure in other ways as well, which is why we're going to be adding support for [RFC 9539](https://www.rfc-editor.org/rfc/rfc9539.html) opportunistic encryption to [Hickory DNS](https://hickory-dns.org/).
+
+Prossimo invests heavily in the Hickory DNS project, in part because we believe the Internet needs a high performance and memory safe [Domain Name System (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System) resolver, but also because we want to use it for Let's Encrypt. DNS is a fundamental but subtle part of the Internet infrastructure, governed by a long list of protocol specifications, involving interactions among clients and servers run by many different organizations. DNS implementations have to parse protocol traffic to extract the data they need and have been a recurrent source of exploitable security vulnerabilities. With Hickory, we are mitigating many of these risks with a modern clean-slate DNS implementation in Rust.
+
+As part of our commitment to security and privacy, Hickory DNS will be adding support for [RFC 9539](https://www.rfc-editor.org/rfc/rfc9539.html). DNS was historically entirely unencrypted, and DNS traffic can reveal a lot of metadata about specific users' or networks' interactions with particular Internet services. Several encrypted upgrades to DNS have been created by the Internet standards community, but their rollout has been uneven. With regards to authoritative servers, there is a discoverability problem: there isn't yet a widely-agreed or widely-implemented way to tell DNS clients that a specific DNS server can be accessed by an encrypted mechanism. RFC 9539 is a specification that explains how DNS clients can "opportunistically" try to connect to authoritative servers via the encrypted [DoT](https://en.wikipedia.org/wiki/DNS_over_TLS) and [DoQ](https://www.rfc-editor.org/rfc/rfc9250) protocols, remembering their success or failure for reference when repeating connections to those same servers. In the future, we expect this discoverability problem will be addressed by specifications from the [DNS Delegation working group](https://datatracker.ietf.org/wg/deleg/about/). Once those are available and deployed, there will be a natural upgrade path from unencrypted DNS, to opportunistically encrypted protocols, to authenticated indication of encrypted protocol support.
+
+Support for RFC 9539 opportunistic encryption provides a path toward more routinely protecting the privacy of DNS queries, and a chance to give the DNS community more experience with routine use of DoT and DoQ. Proactively encrypting DNS queries will also improve privacy and security for DNS users in the future when, we hope, Hickory is used by Internet service providers and others as a DNS resolver. We look forward to a future where we can encrypt a significant fraction of the DNS traffic that Let's Encrypt generates.
+
+Hickory's opportunistic encryption functionality is expected to be completed in Q4 of 2025. Financial support for RFC 9539 implementation is provided by [ICANN](https://www.icann.org/).
