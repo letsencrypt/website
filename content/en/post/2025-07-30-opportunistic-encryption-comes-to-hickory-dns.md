@@ -1,14 +1,14 @@
 ---
 author: Josh Aas
 date: 2025-07-30T00:00:00Z
-slug: opportunistic-encryption-comes-to-hickory-dns
-title: "Opportunistic Encryption Comes to Hickory DNS"
+slug: opportunistic-encryption-is-coming-to-hickory-dns
+title: "Opportunistic Encryption Is Coming to Hickory DNS"
 excerpt: "Hickory DNS is getting support for RFC 9539 opportunistic encryption."
 display_default_footer: true
 display_inline_newsletter_embed: false
 ---
 
-ISRG creates more secure Internet infrastructure by operating the [Let's Encrypt](https://letsencrypt.org/) certificate authority, and also by promoting the creation and adoption of memory safe software via the [Prossimo](https://www.memorysafety.org/) project. Prossimo projects, most of which relate to critical Internet functionality, avoid memory corruption vulnerabilities that have plagued Internet server software for decades. We work to make Prossimo projects more secure in other ways as well, which is why we're going to be adding support for [RFC 9539](https://www.rfc-editor.org/rfc/rfc9539.html) opportunistic encryption to [Hickory DNS](https://hickory-dns.org/).
+ISRG creates more secure Internet infrastructure by operating the [Let's Encrypt](https://letsencrypt.org/) certificate authority, and also by promoting the creation and adoption of memory safe software via the [Prossimo](https://www.memorysafety.org/) project. Prossimo projects, most of which relate to critical Internet functionality, avoid memory corruption vulnerabilities that have plagued Internet server software for decades. We work to make Prossimo projects more secure in other ways as well, which is why we're going to be adding support for [RFC 9539](https://www.rfc-editor.org/rfc/rfc9539.html) opportunistic encryption to [Hickory DNS](https://github.com/hickory-dns/hickory-dns).
 
 Prossimo invests heavily in the Hickory DNS project, in part because we believe the Internet needs a high performance and memory safe [Domain Name System (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System) resolver, but also because we want to use it for Let's Encrypt. DNS is a fundamental but subtle part of the Internet infrastructure, governed by a long list of protocol specifications, involving interactions among clients and servers run by many different organizations. DNS implementations have to parse protocol traffic to extract the data they need and have been a recurrent source of exploitable security vulnerabilities. With Hickory, we are mitigating many of these risks with a modern clean-slate DNS implementation in Rust.
 
