@@ -132,8 +132,7 @@ This challenge is not suitable for most people. It is best suited
 to authors of TLS-terminating reverse proxies that want to perform
 host-based validation like HTTP-01, but want to do it entirely at the
 TLS layer in order to separate concerns. Right now that mainly means
-large hosting providers, but mainstream web servers like Apache and
-Nginx could someday implement this (and [Caddy already does][caddy-tls-alpn]).
+large hosting providers.
 
 Pros:
 
@@ -143,7 +142,7 @@ Pros:
 
 Cons:
 
-- It’s not supported by Apache, Nginx, or Certbot, and probably won’t be soon.
+- ACME client support is limited.
 - Like HTTP-01, if you have multiple servers they need to all answer with the same content.
 - This method cannot be used to validate wildcard domains.
 
