@@ -69,6 +69,11 @@
 			"name": "Certhub",
 			"url": "https://certhub.io/"
 		},
+
+		{
+			"name": "cert-manager",
+			"url": "https://cert-manager.io/"
+		},
 		{
 			"name": "Cloudfleet",
 			"url": "https://cloudfleet.io/"
@@ -116,6 +121,10 @@
 		{
 			"name": "Ponzu CMS",
 			"url": "https://ponzu-cms.org"
+		},
+		{
+			"name": "pric",
+			"url": "https://github.com/pric/pric"
 		},
 		{
 			"name": "ruxy",
@@ -832,6 +841,30 @@
 				"TLS-SNI-02": "false"
 			}
 		},
+		{
+			"name": "cert-manager",
+			"url": "https://github.com/cert-manager/cert-manager",
+			"category": "Kubernetes",
+			"comments": "(Cloud native certificate management)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		}
+		{
+			"name": "pric",
+			"url": "https://github.com/pric/pric",
+			"category": "PHP",
+			"comments": "(Simple zero-config tool to create SSL certificates for development purposes)",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+			}
+		}
 		{
 			"name": "Az-Acme",
 			"url": "https://github.com/az-acme/az-acme-cli",
