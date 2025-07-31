@@ -8,7 +8,7 @@ slug: extending-android-compatibility
 
 > **Update, May 13, 2021**
 >
-> Please visit [this post] (https://community.letsencrypt.org/t/production-chain-changes/150739) on our community forum for the latest information about chain changes as some information about the changes and dates in this blog post are outdated.
+> Please visit [this post](https://community.letsencrypt.org/t/production-chain-changes/150739) on our community forum for the latest information about chain changes as some information about the changes and dates in this blog post are outdated.
 
 We’re happy to announce that we have developed a way for older Android devices to retain their ability to visit sites that use Let's Encrypt certificates after our cross-signed intermediates expire. We are no longer planning any changes in January that may cause compatibility issues for Let’s Encrypt subscribers.
 
