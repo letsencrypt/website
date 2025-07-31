@@ -1,17 +1,13 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2025-05-13
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 For announcements of upcoming changes, please [subscribe to the Technical Updates mailing list](https://letsencrypt.org/opt-in/) or see the [API Announcements category](https://community.letsencrypt.org/c/api-announcements/18) on the Let's Encrypt community forum.
 
 # Upcoming Features
-
-## Shutdown of Expiration Notification Emails
-
-On June 4, 2025, we intend to [turn off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database. 
 
 ## Short-lived Certificates
 
@@ -26,6 +22,10 @@ Around the end of 2025, we intend to allow any client which requests a shortlive
 On Feb 11, 2026, we intend to [remove the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. Prior to that date, we will offer an alternative profile which will still contain that EKU, but note that this will be a temporary stop-gap for clients that need more time to migrate away from needing it: that alternate profile will go away on May 13, 2026.
 
 # Completed Features
+
+## Shutdown of Expiration Notification Emails
+
+On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database.
 
 ## Removal of OCSP URLs
 
