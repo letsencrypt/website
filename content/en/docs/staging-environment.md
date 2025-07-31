@@ -15,7 +15,7 @@ The ACME URL for our [ACME v2 staging environment](https://community.letsencrypt
 
 If you're using [Certbot](https://certbot.eff.org/), you can use our staging environment with the `--test-cert` or `--dry-run` flag. For other ACME clients, please read their instructions for information on testing with our staging environment.
 
-Note that ACME accounts are scoped to each environment, and thus a separate account on the staging environment is required. Certbot handles this for you.
+Note that ACME accounts are scoped to each environment, and thus a separate account for the staging environment is required. Certbot handles this for you.
 
 # Rate Limits
 
