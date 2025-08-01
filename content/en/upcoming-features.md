@@ -11,7 +11,7 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 ## Short-lived Certificates
 
-Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information (such as OCSP, see below) embedded in them at all. 
+Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all. 
 
 ## IP Address Certificates
 
