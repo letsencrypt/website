@@ -1,7 +1,6 @@
 ---
 title: Challenge Types
 slug: challenge-types
-date: 2019-02-25
 lastmod: 2025-01-07
 show_lastmod: 1
 ---
