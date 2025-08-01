@@ -1,8 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-date: 2025-04-21
-lastmod: 2025-06-09
+lastmod: 2025-07-31
 show_lastmod: false
 ---
 
@@ -143,7 +142,7 @@ This governs the amount of time between the [`notBefore` and `notAfter` timestam
 
 ### Revocation Information
 
-TLS clients need a way to determine whether a certificate has been revoked. Generally there are three mechanisms for this in the Web PKI: the Online Certificate Status Protocol (OCSP), Certificate Revocation Lists (CRLs), and having a validity period so short that revocation is unnecessary. This field indicates whether certificates issued under a given profile have an OCSP URL, a CRL URL, both, or neither.
+TLS clients need a way to determine whether a certificate has been revoked. Generally there are three mechanisms for this in the Web PKI: the Online Certificate Status Protocol (OCSP), Certificate Revocation Lists (CRLs), and having a validity period so short that revocation is unnecessary. Let's Encrypt does not support OCSP. This field indicates whether certificates issued under a given profile have a CRL URL or not.
 
 ### Max Names
 
