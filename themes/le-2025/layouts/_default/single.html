@@ -13,13 +13,15 @@
 
   {{ $heroParams := dict "title" $currentPage.Title }}
 
-  {{ $p := . }}
-  {{ with .Translations }}
-    {{ $first := index . 0 }}
-    {{ with $first }}
-      {{ if eq .Lang "en" }}
-        {{ if .Lastmod.After $p.Lastmod }}
-          {{ $heroParams = merge $heroParams (dict "fresherEnglishURL" .RelPermalink) }}
+  {{ if not $isUntranslated }}
+    {{ $p := . }}
+    {{ with .Translations }}
+      {{ $first := index . 0 }}
+      {{ with $first }}
+        {{ if eq .Lang "en" }}
+          {{ if .Lastmod.After $p.Lastmod }}
+            {{ $heroParams = merge $heroParams (dict "fresherEnglishURL" .RelPermalink) }}
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
