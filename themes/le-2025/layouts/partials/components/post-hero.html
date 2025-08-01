@@ -32,7 +32,8 @@
       {{ if and .lastUpdated (ne .section "post") }}
         <div class="post-hero__last-updated text-xs text-gray-100">
           {{ i18n "post_hero_last_updated" }} {{ .lastUpdated }}
-          {{ if eq .section "docs" }} | <a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
+          {{ if .fresherEnglishURL }}<br><a href="{{ .fresherEnglishURL }}">{{ i18n "post_hero_fresher_english" }}</a>{{ end }}
+          {{ if eq .section "docs" }}<br><a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
         </div>
       {{ end }}
     </div>

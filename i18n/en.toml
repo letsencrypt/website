@@ -373,6 +373,9 @@ other = "See all our blog posts"
 [post_hero_last_updated]
 other = "Last updated:"
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "Blog"
 

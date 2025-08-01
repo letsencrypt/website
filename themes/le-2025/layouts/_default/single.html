@@ -13,6 +13,18 @@
 
   {{ $heroParams := dict "title" $currentPage.Title }}
 
+  {{ $p := . }}
+  {{ with .Translations }}
+    {{ $first := index . 0 }}
+    {{ with $first }}
+      {{ if eq .Lang "en" }}
+        {{ if .Lastmod.After $p.Lastmod }}
+          {{ $heroParams = merge $heroParams (dict "fresherEnglishURL" .RelPermalink) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{ if eq $currentPage.Section "post" }}
     {{ $heroParams = merge $heroParams (dict
       "breadcrumb" (dict
