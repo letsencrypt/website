@@ -2,7 +2,7 @@
 title: Profiler
 slug: profiles
 date: 2025-04-21
-lastmod: 2025-04-21
+lastmod: 2025-06-09
 show_lastmod: false
 ---
 
@@ -20,22 +20,25 @@ Du kan finde detaljerede definitioner af egenskaberne diskuteret i hver profil n
 
 Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder om en bestemt profil. Valideringsprocessen og det resulterende certifikat er de samme som du er vant til fra de sidste mange år af Let's Encrypt driften. Vi anbefaler at bruge denne profil til abonnenter, der gerne vil lade andre prøve nye ting først.
 
-| Egenskaber                                                           | Værdi           |
-| -------------------------------------------------------------------- | --------------- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 7 dage          |
-| [Authorization Reuse Period](#authorization-reuse-period)            | 30 dage         |
-| [Order Lifetime](#order-lifetime)                                    | 7 dage          |
-| [Certificate Common Name](#certificate-common-name)                  | Ja<sup>\*</sup> |
-| [Key Encipherment KU](#key-encipherment-key-usage)                   | Ja<sup>†</sup>  |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Ja              |
-| [Subject Key ID](#subject-key-identifier-extension)                  | Ja              |
-| [Validity Period](#validity-period)                                  | 90 dage         |
-| [Revocation Information](#revocation-information)                    | OCSP og CRL     |
-| [Max Names](#max-names)                                              | 100             |
+| Egenskaber                                                                                               | Værdi                                     |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [Afventende Godkendelseslevetid](#pending-authorization-lifetime)                                        | 7 dage                                    |
+| [Autorisation Genbrug Periode](#authorization-reuse-period)                                              | 30 dage                                   |
+| [Ordre Livstid] (#order-lifetime) | 7 dage                                    |
+| [Certificate Common Name](#certificate-common-name)                                                      | <a href="#footnote-1">Ja<sup>\*</sup></a> |
+| [Key Encipherment KU](#key-encipherment-key-usage)                                                       | <a href="#footnote-2">Ja<sup>†</sup></a>  |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage)                                     | <a href="#footnote-3">Ja<sup>‡</sup></a>  |
+| [Emne Nøgle ID](#subject-key-identifier-extension)                                                       | Ja                                        |
+| [Gyldighedsperiode](#validity-period)                                                                    | 90 dage                                   |
+| [Revocation Information](#revocation-information)                                                        | CRL                                       |
+| [Max Names](#max-names)                                                                                  | 100                                       |
+| [Identifikationstyper](#identifier-types)                                                                | DNS                                       |
 
-<sup>\*</sup>: Hvis CSR indsendt ved afslutningen af tiden anmoder om et specifikt fælles navn, er denne anmodning opfyldt. Hvis CSR ikke anmoder om et specifikt fælles navn, vil det første emnealternativ blive forfremmet til emnefællesnavnet. Hvis enten det ønskede navn eller det to-be-forfremmede navn er for langt til at passe i Common Name feltet (64+ tegn), vil fællesnavnet blive efterladt tomt.
+<sup id="footnote-1">\*</sup>: Hvis CSR indsendt ved afslutningen af tiden anmoder om et specifikt fælles navn, der svarer til et dNSName Emne Alternativt Navn, at anmodningen er imødekommet. Hvis CSR ikke anmoder om et specifikt fælles navn, vil det første emnealternativ blive forfremmet til emnefællesnavnet. Hvis enten det ønskede navn eller det to-be-forfremmede navn er for langt til at passe i Common Name feltet (64+ tegn), vil fællesnavnet blive efterladt tomt.
 
-<sup>†</sup>: Kun inkluderet for certifikater med RSA offentlige nøgler.
+<sup id="footnote-2">†</sup>: Kun inkluderet for certifikater med RSA offentlige nøgler.
+
+<sup id="footnote-3">‡</sup>: Indtil 11. Februar 2026. Se [udfasnings tidslinje oplysninger](/2025/05/14/ending-tls-client-authentication/) for en fuld tidslinje.
 
 </div>
 <div class="boxed">
@@ -48,18 +51,19 @@ Den afventende tilladelse levetid er blevet reduceret for yderligere at fremme a
 
 Det udstedte certifikat indeholder ikke længere nogen af de felter, der er nævnt ovenfor. Det fælles navn er blevet udeladt, da det er overflødigt med emnets alternative navne og er markeret som IKKE ANBEFALET ved baseline-kravene. Nøgle krypteringsnøgle anvendelsen udelades fordi det kun er relevant ved brug af ikke-fremadrettede hemmelige TLS-chiffersuiter, som er blevet fjernet af alle større browsere på grund af betydningen af fremadrettet. Den udvidede TLS-klient Auth nøgleanvendelse udelades for at overholde kommende krav til rodprogrammer, der kræver "single-purpose "(dvs. single EKU) certifikater. Og udvidelsen af Suybject Key ID er udeladt, fordi det ikke tjener noget formål i end-entity certifikater og er IKKE ANBEFALET af Baseline Krav.
 
-| Egenskaber                                                           | Værdi   |
-| -------------------------------------------------------------------- | ------- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 1 time  |
-| [Authorization Reuse Period](#authorization-reuse-period)            | 7 timer |
-| [Order Lifetime](#order-lifetime)                                    | 8 timer |
-| [Certificate Common Name](#certificate-common-name)                  | Nej     |
-| [Key Encipherment KU](#key-encipherment-key-usage)                   | Nej     |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej     |
-| [Subject Key ID](#subject-key-identifier-extension)                  | Nej     |
-| [Validity Period](#validity-period)                                  | 90 dage |
-| [Revocation Information](#revocation-information)                    | CRL     |
-| [Max Names](#max-names)                                              | 25      |
+| Egenskaber                                                                                               | Værdi   |
+| -------------------------------------------------------------------------------------------------------- | ------- |
+| [Afventende Godkendelseslevetid](#pending-authorization-lifetime)                                        | 1 time  |
+| [Autorisation Genbrug Periode](#authorization-reuse-period)                                              | 7 timer |
+| [Ordre Livstid] (#order-lifetime) | 8 timer |
+| [Certificate Common Name](#certificate-common-name)                                                      | Nej     |
+| [Key Encipherment KU](#key-encipherment-key-usage)                                                       | Nej     |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage)                                     | Nej     |
+| [Emne Nøgle ID](#subject-key-identifier-extension)                                                       | Nej     |
+| [Gyldighedsperiode](#validity-period)                                                                    | 90 dage |
+| [Revocation Information](#revocation-information)                                                        | CRL     |
+| [Max Names](#max-names)                                                                                  | 25      |
+| [Identifikationstyper](#identifier-types)                                                                | DNS     |
 
 </div>
 <div class="boxed">
@@ -70,18 +74,19 @@ Den kortlivede profil er identisk med tlsserver profil, med en hoved forskel, de
 
 Vi anbefaler denne profil for dem, der fuldt ud stoler på deres automatisering til at forny deres certifikater til tiden. Denne profil er ikke for alle. Fordi denne profil resulterer i meget højere udstedelsesvolumen (da certifikater skal fornyes hvert par dage, i stedet for hvert par måneder), er det i øjeblikket låst bag en tilladelse.
 
-| Egenskaber                                                           | Værdi     |
-| -------------------------------------------------------------------- | --------- |
-| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 1 time    |
-| [Authorization Reuse Period](#authorization-reuse-period)            | 7 timer   |
-| [Order Lifetime](#order-lifetime)                                    | 8 timer   |
-| [Certificate Common Name](#certificate-common-name)                  | Nej       |
-| [Key Encipherment KU](#key-encipherment-key-usage)                   | Nej       |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej       |
-| [Subject Key ID](#subject-key-identifier-extension)                  | Nej       |
-| [Validity Period](#validity-period)                                  | 160 timer |
-| [Revocation Information](#revocation-information)                    | CRL       |
-| [Max Names](#max-names)                                              | 25        |
+| Egenskaber                                                                                               | Værdi     |
+| -------------------------------------------------------------------------------------------------------- | --------- |
+| [Afventende Godkendelseslevetid](#pending-authorization-lifetime)                                        | 1 time    |
+| [Autorisation Genbrug Periode](#authorization-reuse-period)                                              | 7 timer   |
+| [Ordre Livstid] (#order-lifetime) | 8 timer   |
+| [Certificate Common Name](#certificate-common-name)                                                      | Nej       |
+| [Key Encipherment KU](#key-encipherment-key-usage)                                                       | Nej       |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage)                                     | Nej       |
+| [Emne Nøgle ID](#subject-key-identifier-extension)                                                       | Nej       |
+| [Gyldighedsperiode](#validity-period)                                                                    | 160 timer |
+| [Revocation Information](#revocation-information)                                                        | CRL       |
+| [Max Names](#max-names)                                                                                  | 25        |
+| [Identifikationstyper](#identifier-types)                                                                | DNS, IP   |
 
 </div>
 
@@ -127,7 +132,7 @@ TLS-certifikater har en ["Nøgleanvendelse"-udvidelse](https://datatracker.ietf.
 
 ### TLS- Klientgodkendelse Udvidet Nøglebrug
 
-Ud over ovenstående har TLS-certifikater også en ["Udvidet nøglebrug"-udvidelse](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12), som giver et ekstra lag af opløsning til Key Usage forlængelse beskrevet ovenfor. De to mest almindelige udvidede nøgleanvendelser er TLS Server Auth (som tillader certifikatet at blive præsenteret af en server under en TLS-håndtrykke) og TLS-klient Auth (som tillader certifikatet at blive præsenteret af en _client_ under en TLS-håndtrykke). Sidstnævnte er meget sjældent, og rodprogrammer er [flytter til](https://www.chromium.org/Home/chromium-security/root-ca-policy/moving-forward-together/#phase-out-multi-purpose-roots-from-the-chrome-root-store) kræver, at TLS Client Auth EKU udelades fra certifikater.
+Ud over ovenstående har TLS-certifikater også en ["Udvidet nøglebrug"-udvidelse](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12), som giver et ekstra lag af opløsning til Key Usage forlængelse beskrevet ovenfor. De to mest almindelige udvidede nøgleanvendelser er TLS Server Auth (som tillader certifikatet at blive præsenteret af en server under en TLS-håndtrykke) og TLS-klient Auth (som tillader certifikatet at blive præsenteret af en _client_ under en TLS-håndtrykke). Understøttelse af [TLS Client Authentication bliver udfaset](/2025/05/14/ending-tls-client-authentication/) i 2026.
 
 ### Subject Key Identifier Udvidelsen
 
@@ -144,3 +149,7 @@ TLS klienter har brug for en måde at afgøre, om et certifikat er blevet tilbag
 ### Maks Navne
 
 Dette er det maksimale antal af ["Emne Alternative Navne"](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6) for hvilket vi vil udstede et certifikat.
+
+### Identifikationstyper
+
+Dette regulerer, hvilke typer af ["Emne Alternative Navne"](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6) (`dnsName` eller `iPAddress`) et certifikat kan indeholde.

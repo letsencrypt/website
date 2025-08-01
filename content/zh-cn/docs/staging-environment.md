@@ -2,7 +2,7 @@
 title: 测试环境
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2025-04-01
+lastmod: 2025-05-12
 show_lastmod: 1
 ---
 
@@ -78,7 +78,11 @@ show_lastmod: 1
 
 # 证书透明化
 
-测试环境中的准证书会录入 Let's Encrypt 的 [Sapling](/docs/ct-logs) 以及 Google 的 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 两套证书透明化日志测试系统，产生的 SCT 将包含在颁发的证书中。
+测试环境也有专门用于测试的证书透明化日志系统， 为测试环境签发的证书提供 SCT。 但由于该环境仅供测试，通过证书透明化系统追踪证书的签发流程并不可靠。
+
+测试环境中的日志系统既包括 Let's Encrypt 自身运作的[测试日志](/docs/ct-logs#testing)，也包括其他团体运作的用于测试目的的证书透明化日志。
+
+此外，测试环境还可能包含某些 [ct-test-srv](https://pkg.go.dev/github.com/letsencrypt/boulder/test/ct-test-srv) 日志，但这些日志并非真实的日志系统，也不会存储签发的证书。
 
 # 持续集成/开发测试
 

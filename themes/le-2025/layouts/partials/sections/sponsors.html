@@ -10,7 +10,7 @@
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_diamond" }}</h3>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
         {{ range $sponsor := . }}
-        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[80px]") }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-full") }}
         {{ end }}
       </div>
     </div>
@@ -21,7 +21,7 @@
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_platinum" }}</h3>
       <div class="grid grid-cols-3 md:grid-cols-4 gap-1">
         {{ range $sponsor := . }}
-        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[64px]") }}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-full") }}
         {{ end }}
       </div>
     </div>
@@ -32,7 +32,8 @@
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_gold" }}</h3>
       <div class="grid grid-cols-4 md:grid-cols-6 gap-1">
         {{ range $sponsor := . }}
-        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }}
+        {{/* Original: {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }} */}}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-full") }}
         {{ end }}
       </div>
     </div>
@@ -43,7 +44,8 @@
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_silver" }}</h3>
       <div class="grid grid-cols-4 md:grid-cols-6 gap-1">
         {{ range $sponsor := . }}
-        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }}
+        {{/* Original: {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-[48px]") }} */}}
+        {{ partial "components/sponsor-item" (dict "url" .url "id" .id "nofollow" .nofollow "sponsored" .sponsored "image" .image "name" .name "class" "max-h-full") }}
         {{ end }}
       </div>
     </div>

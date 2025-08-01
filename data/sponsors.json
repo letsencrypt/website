@@ -338,6 +338,11 @@
       "name": "SMTP2GO",
       "url": "https://www.smtp2go.com/",
       "image": "smtp2go-logo.png"
+    },
+    {
+      "name": "Gamma",
+      "url": "https://gamma.app/",
+      "image": "gamma-logo.png"
     }
   ]
 }

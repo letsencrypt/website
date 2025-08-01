@@ -1,12 +1,15 @@
-title = "Let's Encrypt"
+title = "ලෙට්'ස් එන්ක්‍රිප්ට්"
 contentDir = "content/si"
 languageName = "සිංහල"
 languageCode = "si"
 weight = 590
+
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt යනු නොමිලේ, ස්වයංක්‍රීය සහ විවෘත සහතික අධිකාරියකි. ලාභ නොලබන අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහය (අයි.එස්.ආර්.ජී.) විසින් මෙහෙයවයි.
+ලෙට්'ස් එන්ක්‍රිප්ට් යනු ලාභ නොලබන සංවිධානයක් වන <a href="https://www.abetterinternet.org/">අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහය (ISRG)</a> විසින් ඔබ වෙත ගෙන එන නොමිලේ, ස්වයංක්‍රීය සහ විවෘත සහතික අධිකාරියකි. මෙම වසරේ අපගේ ලාභ නොලබන වැඩ සියල්ල <a href="https://www.abetterinternet.org/annual-reports/">2024 වාර්ෂික වාර්තාවේ</a> කියවන්න.
 """
+paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+paypalCountry = "US"
 numberFormat = "-|.|,"
 viewInThatLanguage = "සිංහලෙන් දකින්න"

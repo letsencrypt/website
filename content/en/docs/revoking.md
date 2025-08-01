@@ -1,15 +1,14 @@
 ---
 title: Revoking Certificates
 slug: revoking
-date: 2017-06-08
-lastmod: 2025-02-14
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 
 When a certificate is no longer safe to use, you should revoke it. This can happen for a few different reasons. For instance, you might accidentally share the private key on a public website; hackers might copy the private key off of your servers; or hackers might take temporary control over your servers or your DNS configuration, and use that to validate and issue a certificate for which they hold the private key.
 
-When you revoke a Let's Encrypt certificate, Let's Encrypt will publish that revocation information through the [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), and some browsers will check OCSP to see whether they should trust a certificate. Note that OCSP [has some fundamental problems](https://www.imperialviolet.org/2011/03/18/revocation.html), so not all browsers will do this check. Still, revoking certificates that correspond to compromised private keys is an important practice, and is required by Let's Encrypt's [Subscriber Agreement](/repository).
+When you revoke a Let's Encrypt certificate, Let's Encrypt may publish revocation information in [Certificate Revocation Lists (CRLs)](https://en.wikipedia.org/wiki/Certificate_revocation_list), and some browsers will check CRLs to see whether they should trust a certificate. Revoking certificates that correspond to compromised private keys is an important practice, and is required by Let's Encrypt's [Subscriber Agreement](/repository).
 
 To revoke a certificate with Let's Encrypt, you will use the [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), most likely through an ACME client like [Certbot](https://certbot.eff.org/). You will need to prove to Let’s Encrypt that you are authorized to revoke the certificate. There are three ways to do this: from the account that issued the certificate, using a different authorized account, or using the certificate private key.
 

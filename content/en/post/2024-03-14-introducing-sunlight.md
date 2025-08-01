@@ -4,7 +4,7 @@ date: 2024-03-14T00:00:00Z
 slug: introducing-sunlight
 title: "Introducing Sunlight, a CT implementation built for scalability, ease of operation, and reduced cost"
 excerpt: "New software, specification, and logs for Certificate Transparency."
-lastmod: 2024-03-15
+lastmod: 2025-07-15
 ---
 
 <div class="card border-0 pic-quote-right">
@@ -66,6 +66,6 @@ Today's announcement of Sunlight is just the beginning. We've released [software
 
 We've gotten positive feedback so far, with comments such as "Google's TrustFabric team, maintainers of Trillian, are supportive of this direction and the Sunlight spec. We have been working towards the same goal of cacheable tile-based logs for other ecosystems with [serverless tooling](https://github.com/transparency-dev/serverless-log), and will be folding this into Trillian and ctfe, along with adding support for the Sunlight API."
 
-If you have feedback on the design, please join in the conversation on the [ct-policy mailing list](https://groups.google.com/a/chromium.org/g/ct-policy), or in the [#sunlight](https://transparency-dev.slack.com/archives/C06PCS2P75Y) channel on the transparency-dev Slack ([invitation](https://join.slack.com/t/transparency-dev/shared_invite/zt-27pkqo21d-okUFhur7YZ0rFoJVIOPznQ) to join).
+If you have feedback on the design, please join in the conversation on the [ct-policy mailing list](https://groups.google.com/a/chromium.org/g/ct-policy), or in the #sunlight channel on the [transparency-dev Slack](https://transparency.dev/slack/).
 
 We'd like to thank Chrome for supporting the development of Sunlight, and Amazon Web Services for their ongoing support for our CT log operation. If your organization monitors or values CT, please consider a financial gift of support. Learn more at <https://www.abetterinternet.org/sponsor/> or contact us at: sponsor@abetterinternet.org.

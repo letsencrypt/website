@@ -20,11 +20,11 @@ lastmod: 2025-01-22
 
 # වෙනත් අනුග්‍රාහක විකල්ප
 
-පහත සියළුම අනුග්‍රාහක යෙ.ක්‍ර.මු. ACMEv2 සඳහා සහය දක්වයි ([RFC 8555](https://tools.ietf.org/html/rfc8555)). අපි ළඟදීම [ACMEv1 සඳහා වන සහාය මුළුමනින්ම කලාස්ථ කරන්නෙමු](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/). දැනටමත් පහත අනුග්‍රාහක වලින් එකක් භාවිතා කරන්නේ නම්, නවතම අනුවාදයට උත්ශ්‍රේණි කිරීමට වග බලා ගන්න. ඔබ භාවිතා කරන අනුග්‍රාහකය පහත දක්වා නැති නම් එය ACMEv2 සඳහා සහය නොදැක්විය හැකිය, අපි එවැනි අවස්ථාවක ව්‍යාපෘති නඩත්තුකරුවන් සම්බන්ධ කර ගැනීමට හෝ වෙනත් අනුග්‍රාහකයක් වෙත මාරු වීමට නිර්දේශ කරන්නෙමු.
+පහත සියළුම අනුග්‍රාහක යෙ.ක්‍ර.මු. ACMEv2 සඳහා සහය දක්වයි ([RFC 8555](https://tools.ietf.org/html/rfc8555)). 2021 පොසොන් මාසයේ දී අපි [ACMEv1 සඳහා සහාය ඉවත් කළෙමු](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27). දැනටමත් පහත අනුග්‍රාහක වලින් එකක් භාවිතා කරන්නේ නම්, නවතම අනුවාදයට උත්ශ්‍රේණි කිරීමට වග බලා ගන්න. ඔබ භාවිතා කරන අනුග්‍රාහකය පහත දක්වා නැති නම් එය ACMEv2 සඳහා සහය නොදැක්විය හැකිය, අපි එවැනි අවස්ථාවක ව්‍යාපෘති නඩත්තුකරුවන් සම්බන්ධ කර ගැනීමට හෝ වෙනත් අනුග්‍රාහකයක් වෙත මාරු වීමට නිර්දේශ කරන්නෙමු.
 
 {{< clients libraries="Libraries" projects="Projects integrating with Let's Encrypt" >}}
 
-පයිතන් [acme](https://github.com/certbot/certbot/tree/main/acme) ඒකකය සර්ට්බොට් හි කොටසකි, නමුත් එය අනුග්‍රාහක ගණනාවක් විසින් භාවිතා කරන අතර තනි ඇසුරුමක් ලෙස ද [PyPI](https://pypi.python.org/pypi/acme), [ඩෙබියන්](https://packages.debian.org/search?keywords=python-acme), [උබුන්ටු](https://launchpad.net/ubuntu/+source/python-acme), [ෆෙඩෝරා](https://bodhi.fedoraproject.org/updates/?packages=python-acme) සහ අනෙකුත් බෙදාහැරීම් වලද ඇත.
+පයිතන් [acme](https://github.com/certbot/certbot/tree/main/acme) ඒකකය සර්ට්බොට් හි කොටසකි, නමුත් එය අනුග්‍රාහක ගණනාවක් භාවිතා කරන අතර තනි ඇසුරුමක් ලෙස ද [PyPI](https://pypi.python.org/pypi/acme), [ඩෙබියන්](https://packages.debian.org/search?keywords=python-acme), [උබුන්ටු](https://launchpad.net/ubuntu/+source/python-acme), [ෆෙඩෝරා](https://bodhi.fedoraproject.org/updates/?packages=python-acme) සහ අනෙකුත් බෙදාහැරීම් වල ඇත.
 
 {{< /clients >}}
 
@@ -34,7 +34,8 @@ lastmod: 2025-01-22
 
 ඇදීමේ ඉල්ලීමක් යොමු කිරීමට පෙර පහත දෑ ගැන සැලකිලිමත් වන්න:
 
-1. අනුග්‍රාහකය [ලෙට්'ස් එන්ක්‍රිප්ට් වෙළඳලකුණු ප්‍රතිපත්තියට](/trademarks) ගරු කරයි.
+1. අනුග්‍රාහකය [ලෙට්'ස් එන්ක්‍රිප්ට් වෙළඳලකුණු ප්‍රතිපත්තියට](https://www.abetterinternet.org/trademarks) ගරු කරයි.
 1. අනුග්‍රාහකය අතිරික්සුව මත පදනම් නොවීම හා ස්වයංක්‍රීය අළුත් කිරීම් සඳහා සහය දක්වයි.
+1. අනුග්‍රාහකය අහඹු ලෙස[ආකාරිකව නැවත අළුත් කරයි](/docs/integration-guide#when-to-renew) හෝ එම වින්‍යාසයට පොළඹවයි.
 1. ඔබගේ එකතු කිරීමේදී අනුග්‍රාහකය අදාල කොටස්වල **අගට** යෙදීම (සුදුසු නම් "acme_v2" අමතක නොකරන්න!).
 1. ඔබගේ එකතු කිරීම `clients.json` හි ඉහළින් ඇති `lastmod` දින මුද්දරය යාවත්කාල කරයි.

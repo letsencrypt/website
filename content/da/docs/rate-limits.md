@@ -2,7 +2,7 @@
 title: Grænser For kald
 slug: rate-limits
 date: 2018-01-04
-lastmod: 2025-04-01
+lastmod: 2025-06-12
 show_lastmod: true
 ---
 
@@ -75,7 +75,8 @@ værtsnavne.
 
 Nye ordrer pr. konto
 Hver gang du anmoder om et certifikat fra Let's Encrypt, oprettes en ny ordre.
-Et enkelt certifikat kan indeholde op til 100 værtsnavne. Af hensyn til ydeevne og pålidelighed er det bedre at bruge færre navne pr certifikat, når det er muligt.
+Et enkelt certifikat kan indeholde op til 100 identifikatorer (DNS-navne eller IP
+adresser). Af hensyn til ydeevne og pålidelighed er det bedre at bruge færre navne pr certifikat, når det er muligt.
 
 ### Grænse
 
@@ -99,12 +100,20 @@ registrerede domæne `example.com`. I `new.blog.example.co.uk`, er det registrer
 domæne `eksempel.co.uk`. Vi bruger [Public Suffix
 List] (https://publicsuffix.org/) til at identificere registrerede domæner.
 
+Hvis du anmoder om et certifikat til en IP-adresse, vi forsøger også at behandle
+mest almindelige allokering (hvad du ville få fra din internetudbyder eller hosting-udbyder) som
+"registreret domæne." For IPv4-adresser behandler vi den nøjagtige adresse som det
+registrerede domæne. For IPv6-adresser, behandler vi det indeholdende /64 område som
+registrerede domæne.
+
 ### Grænse
 
-Der kan udstedes op til 50 certifikater pr. registreret domæne hver 7. dag. Dette er
+Op til 50 certifikater kan udstedes pr. registreret domæne (eller IPv4 adresse, eller
+IPv6 /64 område) hver 7. dag. Dette er
 en global grænse, og alle nye ordreanmodninger, uanset hvilken konto der indsender
-dem, tæller med i denne grænse. Evnen til at udstede nye certifikater for
-samme registrerede domæne genfylder med en sats på 1 certifikat hvert 202 minutter.
+dem, tæller med i denne grænse.
+Evnen til at udstede nye certifikater for
+samme registrerede domæne genfyldes med en sats på 1 certifikat hvert 202 minutter.
 
 ### Overstyringer
 
@@ -114,17 +123,17 @@ tilsidesættelse for det specifikke registrerede domæne eller en konto.
 </div>
 <div class="boxed">
 
-## Nye certifikater pr eksakt sæt af værtsnavne
+## Nye certifikater pr. nøjagtige sæt af identifikatorer
 
-Hvis du anmoder om et certifikat for `example.com` og `login.example.com`, det
-“eksakte sæt af værtsnavne” er `[example.com, login.example.com]`. Hvis du anmoder om et
+Hvis du anmoder om et certifikat for `192.168.1.1`, `example.com` og
+`login.example.com`, er "exact set of identifiers" `[192.168.1.1,
+example.com, login.example.com]`. Hvis du anmoder om et
 certifikat for kun 1 værtsnavn, såsom `eksempel.co.uk`, så ville det nøjagtige sæt af
 værtsnavne være `[example.co.uk]`.
 
 ### Grænse
 
-Op til 5 certifikater kan udstedes pr. nøjagtig samme sæt af værtsnavne hver 7 dage.
-Dette er
+Op til 5 certifikater kan udstedes pr. nøjagtig samme sæt af værtsnavne hver 7 dage. Dette er
 en global grænse, og alle nye ordreanmodninger, uanset hvilken konto der indsender
 dem, tæller med i denne grænse. Evnen til at udstede nye certifikater for
 samme sæt af værtsnavne genfyldes med en sats på 1 certifikat hvert 34 timer.
@@ -155,7 +164,8 @@ Vi tilbyder **ikke** tilsidesættelser af denne grænse.
 
 ## Godkendelsesfejl pr. værtsnavn pr. konto
 
-En godkendelse er genereret for hvert værtsnavn inkluderet i en ordre. Før et
+Der genereres en tilladelse for hver identifikator (DNS-navn eller IP-adresse)
+inkluderet i en ordre. Før et
 certifikat kan udstedes, skal alle godkendelser i ordren valideres med succes. En mislykket godkendelse betyder, at selv om anmodninger om
 validering blev sendt med succes, alle forsøg med Let's Encrypt for at valideringskontrollen af værtsnavnet mislykkedes.
 
@@ -191,20 +201,20 @@ Vi tilbyder **ikke** overskridelser af denne grænse.
 
 ## Fortløbende autorisationsfejl pr. værtsnavn pr. konto
 
-Svarende til Authorization Failures per Hostname per
+I lighed med Authorization Failures per Identifier per
 Account, men gælder kun for
 på hinanden følgende fejl. Denne grænse er tilføjet med henblik på at forhindre kunder i at få
 fast for evigt i en løkke af fejlede valideringer.
 
 ### Grænse
 
-Op til 3.600 fortløbende godkendelsesfejl pr. værtsnavn kan påføres af en konto hver
-time. Evnen til at pådrage sig autorisationsfejl genfylder med en hastighed på 1
+Op til 3.600 på hinanden følgende godkendelsesfejl per identifikator kan være afholdt af
+én konto. Evnen til at pådrage sig autorisationsfejl genfylder med en hastighed på 1
 pr. værtsnavn hver dag og nulstiller til nul, hvis en autorisation til at værtsnavn
 er valideret med succes. Når den er overskredet, er kontoen forhindret i at
 anmoder om nye certifikater for det værtsnavn. Hver gang abonnenten forsøger
 at anmode om et certifikat, vil de modtage en fejl med et link til vores
-Self-Service Portal hvor de kan genoptage udstedelsen for den pausede værtsnavn og
+Selvbetjenings Portal hvor de kan genoptage udstedelsen for den pausede værtsnavn og
 op til 49.999 yderligere pausede værtsnavne tilknyttet deres konto.
 
 | Fejl pr. dag | Pause tid                                               |
@@ -283,8 +293,11 @@ satsgrænser.
 
 Hvis din klient eller hostingudbyder endnu ikke har tilføjet support til ARI, din ordre
 kan stadig betragtes som en fornyelse af et tidligere certifikat, hvis det indeholder
-nøjagtig samme sæt værtsnavne, ignorerer kapitalisering og rækkefølgen af værtsnavne.
-For eksempel, hvis du har anmodet om et certifikat for værtsnavne [www.eksempel.com, example.com], kan du anmode om fire yderligere certifikater for [www. example.com, example.com] før du rammer på [Nye certifikater pr. eksakt sæt af Værtsnavne](#new-certificates-per-exact-set-of-hostnames) kapacitetsgrænse. Hver af
+nøjagtig samme sæt værtsnavne, ignorerer kapitalisering og rækkefølgen af værtsnavne. Hvis du f.eks. har anmodet om et certifikat for identifikatorerne
+`[192.168.1.1, www.example.com, example.com]`, kan du anmode om fire
+-certifikater til `[192. 68.1.1, www.example.com, example.com]` før du trykker på
+satsgrænsen for Nye Certifikater pr. eksakt sæt af
+Identifikatorer. Hver af
 disse nye ordrer vil blive betragtet som fornyelser og ville være fritaget fra Nye
 Ordrer per konto og Nye Certifikater per
 Registreret Domæne satsgrænser.
@@ -318,8 +331,9 @@ Transparency logs.
 
 # Anmodning om overskridning
 
-Hvis du er en stor værtsudbyder eller organisation, der arbejder på integrationen til Let's encrypt, har vi en [kaldsbegrænsende
--form] (https://isrg. ormstack.com/forms/rate_limit_adjustment_request), der kan
-bruges til at anmode om højere satsgrænser. Det tager et par uger at behandle
+Hvis du er en stor hosting udbyder eller organisation, der arbejder på en Let's Encrypt
+integration, vi har en hastighedsbegrænsende
+-form der kan
+bruges til at anmode om højere hastighedsgrænser. Det tager et par uger at behandle
 anmodninger, så denne formular er ikke egnet, hvis du blot skal nulstille en hastighedsgrænse
 hurtigere end den nulstiller på egen hånd.
