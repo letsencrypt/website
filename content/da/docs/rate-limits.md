@@ -98,7 +98,7 @@ Et registreret domæne er generelt den del af domænet, du har købt
 hos din domænenavnsregistrant. For eksempel på `www.example.com`, er det
 registrerede domæne `example.com`. I `new.blog.example.co.uk`, er det registrerede
 domæne `eksempel.co.uk`. Vi bruger [Public Suffix
-List] (https://publicsuffix.org/) til at identificere registrerede domæner.
+List](https://publicsuffix.org/) til at identificere registrerede domæner.
 
 Hvis du anmoder om et certifikat til en IP-adresse, vi forsøger også at behandle
 mest almindelige allokering (hvad du ville få fra din internetudbyder eller hosting-udbyder) som

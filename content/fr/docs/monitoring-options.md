@@ -7,7 +7,7 @@ show_lastmod: 1
 
 Être en mesure de surveiller le statut de certificat TLS est utile pour bon nombre de nos abonnés. Les services de surveillance peuvent vous aider à envoyer des notifications d'expiration et à surveiller les émissions non désirées.
 
-Let's Encrypt peut recommander [Red Sift Certificates Lite (anciennement Hardenize)] (https://redsift.com/pulse-platform/certificates-lite). Vous pouvez surveiller gratuitement jusqu'à 250 certificats par le biais de Red Sift.
+Let's Encrypt peut recommander [Red Sift Certificates Lite (anciennement Hardenize)](https://redsift.com/pulse-platform/certificates-lite). Vous pouvez surveiller gratuitement jusqu'à 250 certificats par le biais de Red Sift.
 
 Il existe un certain nombre d'options de surveillance, notamment :
 
