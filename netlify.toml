@@ -5,7 +5,8 @@ command = "hugo -D -F -d public"
 
 [build.environment]
 # same as .github/workflows/test.yaml
-HUGO_VERSION = "0.130.0"
+HUGO_VERSION = "0.148.2"
+NODE_VERSION = "24.5.0"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 # headers must be the same than in config/_default/server.toml (for Hugo)
