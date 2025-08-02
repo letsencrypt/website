@@ -88,7 +88,7 @@ other = "View in English"
 other = "Note: The English version has been updated since the translation"
 
 [not_yet_translated]
-other = "This webpage has not been translated yet. You can contribute <a href=\"https://github.com/letsencrypt/website\">here</a>."
+other = "This webpage has not been translated yet. You can contribute <a href=\"https://crowdin.com/project/lets-encrypt-website\">here</a>."
 
 [english_is_canonical]
 other = "The English version is authoritative"
