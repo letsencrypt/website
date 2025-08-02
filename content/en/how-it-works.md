@@ -2,7 +2,7 @@
 title: How It Works
 linkTitle: How Let's Encrypt Works
 slug: how-it-works
-lastmod: 2025-07-31
+lastmod: 2025-08-02
 show_lastmod: 1
 ---
 
@@ -10,7 +10,7 @@ The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/ht
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with an ACME client.
 
-There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://simple.wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. Then, the agent can request, renew, and revoke certificates for that domain.
+There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://simple.wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. After that the client can request or revoke certificates for that domain.
 
 ## Domain Validation
 
@@ -44,14 +44,16 @@ Once the client is authorized, requesting, renewing, and revoking certificates i
 
 ### Issuance
 
-To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) (CSR) that asks the Let's Encrypt CA to issue a certificate for `example.com` with a specified public key. As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR. The agent also signs the whole CSR with the authorized key for `example.com` so that the Let's Encrypt CA knows it's authorized.
+To obtain a certificate for the domain, the client constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) (CSR) that asks the Let's Encrypt CA to issue a certificate for `example.com` with a specified public key. As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR. The client also signs the whole CSR with the authorized key for `example.com` so that the Let's Encrypt CA knows it's authorized.
 
-When the Let's Encrypt CA receives the request, it verifies both signatures. If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent. The CA will also submit the certificate to numerous public Certificate Transparency (CT) logs. See [here](https://certificate.transparency.dev/howctworks/#pki) for more details.
+When the Let's Encrypt CA receives the request, it verifies both signatures. If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the client. The CA will also submit the certificate to numerous public Certificate Transparency (CT) logs. See [here](https://certificate.transparency.dev/howctworks/#pki) for more details.
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
      src="/images/howitworks_certificate.png"/>
 </div>
+
+Renewing a certificate at a later time means repeating the issuance process over again - performing domain validation and then requesting a new certificate.
 
 ### Revocation
 
