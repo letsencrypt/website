@@ -1,7 +1,7 @@
 ---
 title: Děkujeme
 slug: thankyou
-date: 2022-12-02
+lastmod: 2022-12-02
 ---
 
   <div class="container">

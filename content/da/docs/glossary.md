@@ -1,7 +1,7 @@
 ---
 title: Opslag
 slug: glossary
-date: 2025-03-17
+lastmod: 2025-07-31
 show_lastmod: 1
 description: "En ordliste over termer relateret til SSL/TLS-certifikater, HTTPS og websikkerhed, der bruges af Let's Encrypt."
 ---
@@ -14,7 +14,7 @@ Note for translators:
 {% def
     id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
-    abbr="an accronym (optional)"
+    abbr="an acronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
@@ -25,7 +25,7 @@ Note for translators:
 
 -->
 
-{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Et certifikat [udvidelse](#def-extension), der bruges til at angive til [brugeragenter](#def-user-agent) hvordan man kan indhente oplysninger om udstederen af [-certifikatet](#def-certificate). Den specificerer typisk [OCSP](#def-OCSP) -URI og [udsteders URI](#def-CAI). {{% /def %}}
+{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Et certifikat [udvidelse](#def-extension), der bruges til at angive til [brugeragenter](#def-user-agent) hvordan man kan indhente oplysninger om udstederen af [-certifikatet](#def-certificate). Den angiver typisk [udstederens URI](#def-CAI). {{% /def %}}
 
 {{% def id="ACME" name="Automatisk Certifikat Kontrol Miljø" abbr="ACME" abbr_first="1" %}} Protokol implementeret af [Let's Encrypt](#def-LE). Software, som er kompatibel med denne protokol, kan kommunikere med Let's Encrypt og bede om et [certifikat](#def-leaf). [ACKM RFC (da)](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://da.wikipedia.org/wiki/Automatisk_ Certifikat_Kontrol_Miljø) {{% /def %}}
 
@@ -113,11 +113,11 @@ Note for translators:
 
 {{% def id="mixed-content" name="Mixed content" %}} Når en HTTPS webside indlæser underressourcer (Javascript, CSS eller billeder) via HTTP. [Browsere](#def-web-browser) kan blokere blandet indhold, eller markere siden som mindre sikker, når blandet indhold er til stede: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. For at løse et problem med blandet indhold, skal en webudvikler ændre deres sider, så alle ressourcer bruger HTTPS-URL'er. [Udviklerværktøjer](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) indbygget i browsere kan bruges til at finde ud af, hvilke ressourcer der forårsager problemer med blandet indhold. {{% /def %}}
 
-{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} En metode til at kontrollere [tilbagekaldelsen](#def-revocation) status for et [certifikat](#def-leaf). Med andre ord en måde at kontrollere, om en [Certifikatmyndighed](#def-CA) angiver, at certifikatet ikke længere skal betragtes som gyldigt, selv om udløbsdatoen endnu ikke er nået. Denne anmodning kan skabe privatlivs problemer, fordi det giver certifikatmyndigheden og internetudbyderne mulighed for direkte at observere, hvem der besøger hvilke websteder. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} En metode til at kontrollere [tilbagekaldelsen](#def-revocation) status for et [certifikat](#def-leaf). Med andre ord en måde at kontrollere, om en [Certifikatmyndighed](#def-CA) angiver, at certifikatet ikke længere skal betragtes som gyldigt, selv om udløbsdatoen endnu ikke er nået. Denne anmodning kan skabe privatlivs problemer, fordi det giver certifikatmyndigheden og internetudbyderne mulighed for direkte at observere, hvem der besøger hvilke websteder. [Let's Encrypt](#def-LE) tilbyder ikke længere en OCSP-tjeneste. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} En [certifikat](#def-leaf) udvidelse, som informerer [-browseren](#def-web-browser) om, at [-webserveren](#def-web-server) med dette certifikat skal anvende [OCSP-hæftning](#def-OCSP-stapling). Det bruges til at kræve, at en opdateret [tilbagekaldelse](#def-revocation) status for [certifikatet](#def-leaf) bekræftes af webserveren ved hver forbindelse, gøre tilbagekaldelse mere pålidelig. [Let's Encrypt](#def-LE) kan udstede certifikater med OCSP Must-Staple [udvidelsen](#def-extension) efter anmodning. [Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} En [certifikat](#def-leaf) udvidelse, som informerer [-browseren](#def-web-browser) om, at [-webserveren](#def-web-server) med dette certifikat skal anvende [OCSP-hæftning](#def-OCSP-stapling). Det bruges til at kræve, at en opdateret [tilbagekaldelse](#def-revocation) status for [certifikatet](#def-leaf) bekræftes af webserveren ved hver forbindelse, gøre tilbagekaldelse mere pålidelig. [Let's Encrypt](#def-LE) understøtter ikke længere dette. [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP stapling" %}} En måde for en [webserver](#def-web-server) at sende en [browser](#def-web-browser) et [OCSP](#def-OCSP) svar signeret af [Certificate Authority](#def-CA), så browseren selv behøver ikke at foretage en sekundær OCSP-anmodning til CA, forbedre hastighed og privatliv. Også kendt som TLS Certificate Status Request forlængelse. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP stapling" %}} En måde for en [webserver](#def-web-server) at sende en [browser](#def-web-browser) et [OCSP](#def-OCSP) svar signeret af [Certificate Authority](#def-CA), så browseren selv behøver ikke at foretage en sekundær OCSP-anmodning til CA, forbedre hastighed og privatliv. Også kendt som TLS Certificate Status Request forlængelse. Bemærk, at [Let's Encrypt](#def-LE) ikke understøtter OCSP. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" name="Object identifier" abbr="OID" %}} OID'er er unikke numeriske identifikatorer standardiseret af Den Internationale Telekommunikationsunion (ITU) og ISO/IEC. OID'er bruges i certifikater til at definere udvidelser, felter eller politiske påstande. Internetstandarder og [Certificate Policy](#def-CP) og [Certification Practice Statement](#def-CPS) dokumenter definerer OID brug. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
@@ -137,7 +137,7 @@ Note for translators:
 
 {{% def id="relying-party" name="Relying Party" %}} Den person, der stoler på oplysninger i et certifikat. For eksempel, en person, der besøger en HTTPS hjemmeside er en Relying Party. {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} Et certifikat er gyldigt indtil udløbsdatoen, medmindre [CA](#def-CA) siger, at det er blevet tilbagekaldt. Certifikatet kan tilbagekaldes af forskellige grunde såsom kompromittering af den private nøgle. Browsere kan kontrollere, om et certifikat tilbagekaldes ved hjælp af [CRL](#def-CRL), [OCSP](#def-OCSP), eller nyere metoder som [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) og [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Bemærk at i mange situationer virker [tilbagekaldelse ikke](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} Et certifikat er gyldigt indtil udløbsdatoen, medmindre [CA](#def-CA) siger, at det er blevet tilbagekaldt. Certifikatet kan tilbagekaldes af forskellige grunde såsom kompromittering af den private nøgle. Browsere kan kontrollere, om et certifikat er tilbagekaldt ved hjælp af en [CRL](#def-CRL) eller nyere metoder som [CRLite](https://github.com/mozilla/crlite/) og [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Bemærk at i mange situationer virker [tilbagekaldelse ikke](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} Et [selvsigneret](#def-self-signed) certifikat kontrolleret af en [certifikatmyndighed](#def-CA), bruges til at underskrive sine [intermediate](#def-intermediate) certifikater og inkluderet i [certifikater](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 

@@ -83,7 +83,7 @@ other = "阅读英文页面"
 other = "注意：本页面有较新的英文版本。"
 
 [not_yet_translated]
-other = '此页面尚未翻译。 要贡献翻译，请<a href="https://github.com/letsencrypt/website">点击此处</a>。'
+other = '此页面尚未翻译。 要贡献翻译，请<a href="https://crowdin.com/project/lets-encrypt-website">点击此处</a>。'
 
 [english_is_canonical]
 other = "此页内容请以英文页面为准"
@@ -239,7 +239,7 @@ other = "商标政策"
 other = "为所有人提供的<br />数据加密服务"
 
 [home_hero_subheading]
-other = '一个向超过<span class="relative inline-block"><span class="invisible text-4xl">6亿</span><span id="certificate-count" class="text-4xl absolute left-0">6亿</span></span>网站提供免费TLS证书的非营利组织。'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
 other = "快速入门"
@@ -364,6 +364,9 @@ other = "浏览所有博客文章"
 [post_hero_last_updated]
 other = "最近更新："
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "博客"
 
@@ -389,7 +392,7 @@ other = "为超过 ### 网站免费提供 TLS 证书的非营利证书颁发机�
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "600M"
+other = "650M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

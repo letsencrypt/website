@@ -1,11 +1,9 @@
 ---
 title: Certifikater til localhost
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 Nogle gange ønsker folk at få et certifikat for værtsnavnet "localhost", enten til brug i lokal udvikling, eller til distribution med en lokal applikation, som har brug for at kommunikere med en webapplikation. Lad os kryptere kan ikke levere certifikater til "localhost", fordi ingen entydigt ejer det, og det har ikke rod i et top level domæne som ".com" eller ".net". Det er muligt at opsætte dit eget domænenavn, der tilfældigvis peger på `127.. 0.1`, og få et certifikat til det ved hjælp af DNS-udfordringen. Dette er dog generelt en dårlig idé, og der findes bedre alternativer.
 
@@ -44,7 +42,7 @@ Den simpleste måde at generere en privat nøgle og et selv-signeret certifikat 
 
 Du kan så konfigurere din lokale web server med localhost.crt og localhost.key, og så installere localhost.crt i din liste af lokalt betroede "roots".
 
-Hvis du ønsker lidt mere realisme i din udviklingscertifikater, så kan du anvende [minica][minica] til at generere din egen lokale root certifikat og udsteede slut-bruger (kendt som leaf) certifikater, der er signet af denne. Du vil da skulle importere root certifikatet i stedet for det selv-signerede slut certifikat.
+Hvis du ønsker lidt mere realisme i din udviklingscertifikater, så kan du anvende [ mkcert ][mkcert] til at generere din egen lokale root certifikat og udsteede slut-bruger (kendt som leaf) certifikater, der er signet af denne. Du vil da skulle importere root certifikatet i stedet for det selv-signerede slut certifikat.
 
 Kan kan også vælge at anvende et domæne med punktum i det, såsom `www.localhost`, ved at tilføje det til /etc/hosts som et alias til `127.0.0.1`. Dette ændrer subtilt hvordan browsere håndterer lagring af cookies.
 
@@ -55,5 +53,5 @@ Kan kan også vælge at anvende et domæne med punktum i det, såsom `www.localh
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

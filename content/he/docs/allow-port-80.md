@@ -1,7 +1,6 @@
 ---
 title: המלצה מניסיון - יש להשאיר את פתחה 80 נגישה
 slug: allow-port-80
-date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1
 ---
