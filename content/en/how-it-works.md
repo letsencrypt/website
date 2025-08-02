@@ -6,7 +6,7 @@ lastmod: 2025-08-02
 show_lastmod: 1
 ---
 
-The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/html/rfc8555) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention. This is accomplished by running an ACME client on the web server.
+The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/html/rfc8555) is to make it possible to set up an HTTPS server and have it automatically obtain browser-trusted certificates without any human intervention. This is accomplished by running an ACME client on a web server.
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with an ACME client.
 
@@ -37,6 +37,7 @@ Then, it's the CA's job to check that the challenges have been satisfied from [m
 
 If the challenges check out, then the client identified by the public key is authorized to do certificate management for `example.com`.
 
+Note that this process cannot use HTTPS, which makes it vulnerable to certain attacks. In order to mitigate the issue, Let's Encrypt actually performs multiple validations in parallel from different network perspectives. This makes it significantly harder for an attacker to successfully subvert the validation process.
 
 ## Certificate Issuance and Revocation
 
