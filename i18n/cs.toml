@@ -86,7 +86,7 @@ other = "Zobraz v angličtině"
 other = "Poznámka: Anglická verze byla od překladu aktualizována"
 
 [not_yet_translated]
-other = 'Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href="https://github.com/letsencrypt/website">zde</a>.'
+other = 'Tato webová stránka ještě nebyla přeložena. Můžete přispět <a href="https://crowdin.com/project/lets-encrypt-website">zde</a>.'
 
 [english_is_canonical]
 other = "Anglická verze je směrodatná"
@@ -242,7 +242,7 @@ other = "Pravidla ochranných známek"
 other = "Šifrování pro <br />všechny"
 
 [home_hero_subheading]
-other = 'Nezisková organizace poskytující bezplatné TLS certifikáty pro více než <span class="relative inline-block"><span class="invisible text-4xl">600m</span><span id="certificate-count" class="text-4xl absolute left-0">600m</span></span> webových stránek.'
+other = 'Nezisková organizace poskytující bezplatné TLS certifikáty pro více než <span class="relative inline-block"><span class="invisible text-4xl">650m</span><span id="certificate-count" class="text-4xl absolute left-0">650m</span></span> webových stránek.'
 
 [home_hero_get_started]
 other = "Začít"
@@ -367,6 +367,9 @@ other = "Zobrazit všechny naše příspěvky na blogu"
 [post_hero_last_updated]
 other = "Poslední úprava:"
 
+[post_hero_fresher_english]
+other = "V angličtině je k dispozici novější aktualizovaná stránka"
+
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
@@ -392,7 +395,7 @@ other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro ví
 other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro více než"
 
 [home_hero_certificate_count]
-other = "600m"
+other = "650m"
 
 [home_hero_nonprofit_suffix]
 other = "webových stránek"

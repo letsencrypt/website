@@ -83,7 +83,7 @@ other = "閱讀英文頁面"
 other = "注意：本頁面有較新的英文版本。"
 
 [not_yet_translated]
-other = '此頁面尚未翻譯。 要貢獻翻譯，請<a href="https://github.com/letsencrypt/website">點擊此處</a>。'
+other = '此頁面尚未翻譯。 要貢獻翻譯，請<a href="https://crowdin.com/project/lets-encrypt-website">點擊此處</a>。'
 
 [english_is_canonical]
 other = "此頁內容請以英文頁面為準"
@@ -239,7 +239,7 @@ other = "商標政策"
 other = "面向所有人的<br />資料加密"
 
 [home_hero_subheading]
-other = '我們是一家非營利機構，為全球逾 <span class="relative inline-block"><span class="invisible text-4xl">6 億</span><span id="certificate-count" class="text-4xl absolute left-0">6 億</span></span> 網站提供了免費的 TLS 證書。'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
 other = "快速入門"
@@ -364,6 +364,9 @@ other = "瀏覽所有部落格文章"
 [post_hero_last_updated]
 other = "最近更新："
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "部落格"
 
@@ -389,7 +392,7 @@ other = "為超過 ### 網站免費提供 TLS 證書的非營利證書頒發機�
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "600M"
+other = "650M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"
@@ -435,3 +438,111 @@ other = "Let's Encrypt 發展趨勢"
 
 [stats_section_button]
 other = "更多統計資料"
+
+[donate_page_make_recurring_donation_title]
+other = "Make a Recurring Donation"
+
+[donate_page_make_recurring_donation_content]
+other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+
+[donate_page_make_recurring_donation_link]
+other = "Start your recurring donation now"
+
+[donate_page_stock_donations_title]
+other = "Donations of Stock"
+
+[donate_page_crypto_gifts_title]
+other = "Gifts of Cryptocurrency"
+
+[donate_page_other_ways_title]
+other = "Other Ways to Give"
+
+[donate_page_ways_to_give_heading]
+other = "WAYS TO GIVE"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "of the funding for Let's Encrypt comes from charitable contributions."
+
+[donate_page_funding_details_why_support_heading]
+other = "WHY SUPPORT?"
+
+[donate_page_funding_details_list_item1]
+other = "Free, automated, and easy to use TLS certificates."
+
+[donate_page_funding_details_list_item2]
+other = "We make it easy to use one or one million certs."
+
+[donate_page_funding_details_list_item3]
+other = "You make HTTPS possible all around the world."
+
+[donate_page_funding_details_list_item4]
+other = "Help us continue operating at a truly global scale."
+
+[donate_page_stock_intro_text]
+other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+
+[donate_page_stock_table_brokerage_firm]
+other = "Brokerage Firm:"
+
+[donate_page_stock_table_account_name]
+other = "Account Name:"
+
+[donate_page_stock_table_account_number]
+other = "ISRG Account #:"
+
+[donate_page_stock_table_dtc_number]
+other = "DTC #:"
+
+[donate_page_stock_table_tax_id]
+other = "Tax ID #:"
+
+[donate_page_stock_outro_text]
+other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+
+[donate_page_other_daf_heading]
+other = "Donor Advised Funds"
+
+[donate_page_other_daf_text]
+other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+
+[donate_page_other_workplace_heading]
+other = "In Your Workplace"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "贊助"
+
+[donate_page_other_workplace_matching_gifts]
+other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+
+[donate_page_crypto_text]
+other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+
+[donate_page_crypto_link_text]
+other = "here"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
+
+[testimonial_section_button_text]
+other = "JOIN TIMMY. BE A NERD."
+
+[testimonial_section_image_alt]
+other = "Timmy, a supporter of Let's Encrypt"
+
+[testimonial_section_footer_line1]
+other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
+
+[testimonial_section_footer_line2]
+other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
+
+[testimonial_section_footer_line3]
+other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

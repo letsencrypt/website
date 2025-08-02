@@ -1,7 +1,6 @@
 ---
 title: En varm velkomst til ASN.1 og DER
 slug: a-warm-welcome-to-asn1-and-der
-date: 2020-04-23
 lastmod: 2021-03-21
 ---
 

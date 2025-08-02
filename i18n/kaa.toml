@@ -2,37 +2,37 @@
 other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
 
 [home_hero_getting_started]
-other = "ஆரம்பிக்க"
+other = "Baslaw"
 
 [home_hero_donate]
-other = "நன்கொடையளிக்க"
+other = "Qollap-quwatlaw"
 
 [home_hero_sponsor]
-other = "அனுசரணை"
+other = "Qollap-quwatlaw"
 
 [home_hero_annual_report]
 other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
 
 [home_major_sponsors]
-other = "முக்கிய அனுசரணையாளர்கள் மற்றும் நிதியளிப்பவர்கள்"
+other = "Major Sponsors and Funders"
 
 [home_from_our_blog]
 other = "Blog"
 
 [read_more]
-other = "மேலும் படிக்க"
+other = "Read more"
 
 [subscribe_rss]
-other = '<a href="{{ .Permalink }}">RSS மூலம்</a> குழுசேர்'
+other = 'Subscribe <a href="{{ .Permalink }}">via RSS</a>'
 
 [footer_support_us]
-other = "மிகவும் பாதுகாப்பான மற்றும் தனியுரிமையை மதிக்கும் இணையத்தை ஆதரிக்கவும்."
+other = "Support a more secure and privacy-respecting Web."
 
 [footer_donate]
 other = "Donate Now"
 
 [footer_mailing]
-other = "அனைத்து வகையான அஞ்சல் அல்லது விசாரணைகளை அனுப்ப:"
+other = "Send all mail or inquiries to:"
 
 [footer_legal_address]
 other = "Legal Address"
@@ -50,154 +50,154 @@ other = """
 """
 
 [header_skip_nav]
-other = "வழிச்செலுத்தல் இணைப்புக்களைத் தவிர்க்கவும்"
+other = "Skip navigation links"
 
 [last_updated]
-other = "இறுதியாகப் புதுப்பிக்கப்பட்டது: "
+other = "Sońǵı jańalanıw: "
 
 [see_all_doc]
-other = "அனைத்து ஆவணங்களையும் பார்க்கவும்"
+other = "See all Documentation"
 
 [blog_feed]
-other = "Let's Encrypt வலைப்பதிவு ஊட்டம்"
+other = "Blog Let's Encrypt"
 
 [diamond]
 other = "Diamond"
 
 [platinum]
-other = "வன்பொன்"
+other = "Platinum"
 
 [gold]
-other = "தங்கம்"
+other = "Altın"
 
 [gold_basic]
-other = "தங்க அடிப்படை"
+other = "Gold Basic"
 
 [silver]
-other = "வெள்ளி"
+other = "Silver"
 
 [languages]
-other = "மொழிகள்"
+other = "Tiller"
 
 [view_in_english]
-other = "ஆங்கிலத்தில் பார்க்க"
+other = "Inglis tilinde kóriw"
 
 [old_version]
-other = "குறிப்பு: மொழிபெயர்ப்பிலிருந்து ஆங்கிலப் பதிப்பு புதுப்பிக்கப்பட்டது"
+other = "Dıqqat! Inglis tilindegi sayt versiyasi jańalandı, awdarma ahmiyetsiz"
 
 [not_yet_translated]
-other = 'இவ்வலைப்பக்கம் இன்னும் மொழிபெயர்க்கப்படவில்லை. நீங்கள் <a href="https://crowdin.com/project/lets-encrypt-website">இங்கே</a> பங்களிக்கலாம்.'
+other = 'Bul bet ele awdarılmaǵan. Siz usı <a href="https://crowdin.com/project/lets-encrypt-website"> jerde </a> óz úlesıńizdi qosıwıńız múmkin.'
 
 [english_is_canonical]
-other = "ஆங்கிலப் பதிப்பு அதிகாரப்பூர்வமானது"
+other = "Inglis tilindegi versiyasi rásmiy bolıp esaplanadı"
 
 [graph_issued]
-other = "வழங்கப்பட்டுள்ளது"
+other = "Issued"
 
 [graph_certificates_active]
-other = "செயலில் உள்ள சான்றிதழ்கள்"
+other = "Certificates Active"
 
 [graph_fully_qualified_domains_active]
-other = "செயலில் உள்ள முழு-தகுதியான டொமைன்கள்"
+other = "Fully-Qualified Domains Active"
 
 [graph_registered_domains_active]
-other = "செயலில் உள்ள பதிவு செய்யப்பட்ட டொமைன்கள்"
+other = "Registered Domains Active"
 
 [graph_active_count]
-other = "செயலில் உள்ள எண்ணிக்கை"
+other = "Active Count"
 
 [graph_issued_per_day]
-other = "ஒரு நாளுக்கு வழங்கப்பட்டது"
+other = "Issued Per Day"
 
 [graph_all_users]
-other = "அனைத்து பயனாளர்கள்"
+other = "Hámme paydalanıwshılar"
 
 [graph_usa_users]
-other = "அமெரிக்க பயனாளர்கள்"
+other = "USA users"
 
 [graph_japan_users]
-other = "ஜப்பான் பயனாளர்கள்"
+other = "Japan users"
 
 [graph_percent_https]
-other = "HTTPS மூலம் ஏற்றப்பட்ட பக்கங்களின் சதவீதம் (14 நாள் சராசரி நகர்வு)"
+other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
 [certificate_policy]
-other = "சான்றிதழ் கொள்கை"
+other = "Certificate Policy"
 
 [certificate_transparency_name]
-other = "பெயர்"
+other = "Atı"
 
 [certificate_transparency_role_production]
-other = "தயாரிப்பு"
+other = "Rásmıy qollanıw"
 
 [certificate_transparency_role_testing]
-other = "சோதனை"
+other = "Testing"
 
 [certificate_transparency_uri]
-other = "உரலி"
+other = "URI"
 
 [certificate_transparency_public_key]
-other = "பொதுத் திறவி"
+other = "Ashıq gilit"
 
 [certificate_transparency_log_id]
-other = "பதிவேட்டு அடையாளம்"
+other = "Log ID"
 
 [certificate_transparency_state]
-other = "நிலை"
+other = "State"
 
 [certificate_transparency_window_start]
-other = "சாளர தொடக்கம்"
+other = "Baslanıw waqtı"
 
 [certificate_transparency_window_end]
-other = "சாளர முடிவு"
+other = "Tamamlanıw waqtı"
 
 [certification_practices_statement]
-other = "சான்றளிப்பு நடைமுறைகளின் அறிக்கை"
+other = "Certification Practices Statement"
 
 [overview]
-other = "மேலோட்டம்"
+other = "Overview"
 
 [subscriber_information]
-other = "சந்தாதாரர் தகவல்"
+other = "Subscriber Information"
 
 [advanced_subscriber_information]
-other = "மேம்பட்ட சந்தாதாரர் தகவல்"
+other = "Advanced Subscriber Information"
 
 [client_developer_information]
-other = "கிளையன் உருவாக்குநர் தகவல்கள்"
+other = "Baǵdarlamashı tuwralı maǵlıwmat"
 
 [acme_divergences]
-other = "தற்போதைய ACME வரைவிலிருந்து வேறுபடுபவை"
+other = "Differences from Current ACME Draft"
 
 [acme_divergences_rfc]
-other = "ACME RFC இல் இருந்து வேறுபடுபவை"
+other = "Differences from ACME RFC"
 
 [onboarding_customers]
-other = "Let's Encrypt மற்றும் ACME மூலம் உங்கள் வாடிக்கையாளர்களை உள்வாங்குதல்"
+other = "Onboarding Your Customers with Let's Encrypt and ACME"
 
 [paypal_donate_alt]
-other = "PayPal பொத்தான் மூலம் நன்கொடை அளிக்க"
+other = "Donate with PayPal button"
 
 [paypal_donate_title]
-other = "PayPal மூலம் நன்கொடை அளிக்க"
+other = "Donate with PayPal"
 
 [not_found]
-other = "அந்தப் பக்கம் இல்லை, தயவுசெய்து முகவரியைச் சரிபார்க்கவும்."
+other = "Bul bet joq. Ótinish, mánzildi anıqlastırıń."
 
 [amount_per_year]
-other = "${{ .nb }}/ஆண்டு (USD)"
+other = "Jılına ${{ .nb }} AQSH dolları"
 
 [3y_commitment]
-other = "3 வருட உறுதியுடன்"
+other = "3 jıl aralıǵında"
 
 [1_99_employees]
-other = "1-99 ஊழியர்கள்"
+other = "Jumısshılar sanı 1 den 99 deyin"
 
 [100_999_employees]
-other = "100-999 ஊழியர்கள்"
+other = "Jumısshılar sanı 100 den 999 deyin"
 
 [1000_employees]
-other = "1000+ ஊழியர்கள்"
+other = "Jumısshılar sanı 1000 den kóp"
 
 [subscribe_to_newsletter_headline]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -218,7 +218,7 @@ other = "Toggle menu"
 other = "Legal Address"
 
 [isrg_mailing_label]
-other = "அனைத்து வகையான அஞ்சல் அல்லது விசாரணைகளை அனுப்ப:"
+other = "Send all mail or inquiries to:"
 
 [newsletter_subscribe_heading]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -233,7 +233,7 @@ other = "LinkedIn"
 other = "Terms"
 
 [footer_nav_privacy]
-other = "தனியுரிமைக் கொள்கை"
+other = "Privacy Policy"
 
 [footer_nav_trademark]
 other = "Trademark Policy"
@@ -245,7 +245,7 @@ other = "Encryption for<br /> Everybody"
 other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
-other = "ஆரம்பிக்க"
+other = "Baslaw"
 
 [home_hero_annual_report_title]
 other = "Explore our work to improve security and privacy"
@@ -338,7 +338,7 @@ other = "Companies who rely on or value our work to encrypt the Web can financia
 other = "Learn about Sponsorship"
 
 [sponsors_heading]
-other = "முக்கிய அனுசரணையாளர்கள் மற்றும் நிதியளிப்பவர்கள்"
+other = "Major Sponsors and Funders"
 
 [sponsors_diamond]
 other = "Diamond Sponsors"
@@ -518,7 +518,7 @@ other = "In Your Workplace"
 other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
 
 [donate_page_other_workplace_sponsorship_link_text]
-other = "நல்கை"
+other = "Sponsorship"
 
 [donate_page_other_workplace_matching_gifts]
 other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"

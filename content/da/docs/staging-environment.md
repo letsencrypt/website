@@ -13,7 +13,9 @@ ACME-URL'en til vores [ACME v2 staging miljø](https://community.letsencrypt.org
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Hvis du bruger Certbot, kan du bruge vores staging miljø med flaget `--test-cert` eller `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø.
+Hvis du bruger [Certbot](https://certbot.eff.org/), kan du bruge vores staging miljø med flaget `--test-cert` eller `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø.
+
+Bemærk, at ACME-konti er begrænset til hvert miljø, og derfor er der brug for en separat konto til staging miljøet. Certbot håndterer dette for dig.
 
 # Grænser For kald
 

@@ -1,7 +1,6 @@
 ---
 title: Udfordringstyper
 slug: challenge-types
-date: 2019-02-25
 lastmod: 2025-01-07
 show_lastmod: 1
 ---
@@ -61,7 +60,7 @@ Ulemper:
 
 Denne udfordring blev udviklet efter at TLS-SNI-01 blev udfaset, og er ved at blive udviklet som [en separat standard][tls-alpn]. I lighed med TLS-SNI-01 udføres det via TLS på port 443. Imidlertid det bruger en brugerdefineret ALPN-protokol til at sikre, at kun servere, der er klar over denne challengetype, vil reagere på valideringsanmodninger. Dette gør det også muligt for valideringsanmodninger for denne challenge type at bruge et SNI felt, der matcher domænenavnet valideret at gøre det mere sikkert.
 
-Denne udfordring er ikke egnet til de fleste mennesker. Det er bedst egnet til forfattere af TLS-terminating reverse proxies, der ønsker at udføre værtbaseret validering som HTTP-01, men ønsker at gøre det helt på TLS lag for at separere bekymringer. Lige nu betyder det hovedsageligt store hosting udbydere men almindelige webservere som Apache og Nginx kunne en dag implementere dette (og [Caddy allerede gør][caddy-tls-alpn]).
+Denne udfordring er ikke egnet til de fleste mennesker. Det er bedst egnet til forfattere af TLS-terminating reverse proxies, der ønsker at udføre værtbaseret validering som HTTP-01, men ønsker at gøre det helt på TLS lag for at separere bekymringer. Lige nu betyder det hovedsageligt store hosting udbydere.
 
 Fordele:
 
@@ -71,7 +70,7 @@ Fordele:
 
 Ulemper:
 
-- Det er ikke understøttet af Apache, Nginx eller Certbot, og bliver det sandsynligvis ikke snart.
+- ACME-klientsupport er begrænset.
 - Ligesom HTTP-01, hvis du har flere servere, de har brug for til alle svar med det samme indhold.
 - Denne metode kan ikke bruges til at validere wildcard domæner.
 
@@ -86,4 +85,3 @@ Denne udfordring blev defineret i udkast til versioner af ACME. Det gjorde en TL
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
-[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

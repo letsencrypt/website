@@ -1,7 +1,7 @@
 ---
 title: Připravované funkce
 slug: upcoming-features
-lastmod: 2025-05-13
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
@@ -9,13 +9,9 @@ Oznámení o nadcházejících změnách najdete [v mailing listu Technické akt
 
 # Připravované funkce
 
-## Vypnutí e-mailů o vypršení platnosti
-
-Dne 4. června 2025 máme v úmyslu [vypnout naši službu e-mailových oznámení o vypršení platnosti](https://letsencrypt.org/2025/01/22/ending-expiration-emails/) a odstranit všechny e-mailové adresy spojené s účty ACME z naší produkční databáze.
-
 ## Krátkodobé certifikáty
 
-Kolem konce roku 2025 hodláme umožnit všem klientům, kteří podporují profily ACME (viz níže), [požádat o „krátkodobý“ certifikát](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Tyto certifikáty jsou platné po tak krátkou dobu, že není nutné, aby obsahovaly informace o zrušení (například OCSP, viz níže).
+Kolem konce roku 2025 hodláme umožnit všem klientům, kteří podporují profily ACME (viz níže), [požádat o „krátkodobý“ certifikát](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Tyto certifikáty jsou platné po tak krátkou dobu, že není vůbec nutné, aby obsahovaly informace o zrušení.
 
 ## Certifikáty IP adresy
 
@@ -26,6 +22,10 @@ Kolem konce roku 2025 hodláme umožnit všem klientům, kteří požádají o k
 11. února 2026 hodláme <a href=„https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/“>odstranit z našeho výchozího profilu certifikátu rozšířené použití klíče (EKU) „TLS Client Authentication“</a>. Před tímto datem nabídneme alternativní profil, který bude stále obsahovat tuto jednotku EKU, ale upozorňujeme, že se bude jednat o dočasné provizorium pro klienty, kteří potřebují více času na migraci, aby ji nepotřebovali: tento alternativní profil zanikne 13. května 2026.
 
 # Dokončené funkce
+
+## Vypnutí e-mailů o vypršení platnosti
+
+4. června 2025 jsme [vypnuli naši službu upozornění na vypršení platnosti e-mailů](https://letsencrypt.org/2025/01/22/ending-expiration-emails/) a odstranili všechny e-mailové adresy spojené s účty ACME z naší produkční databáze.
 
 ## Odstranění OCSP adres
 
