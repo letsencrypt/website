@@ -117,6 +117,6 @@ https://github.com/gohugoio/hugo/releases
 1. Generate the website using the current version: `hugo -d /tmp/current`
 2. Generate the website using the updated version: `hugo -d /tmp/updated`
 3. Check the diff to be sure nothing is broken: `diff -r /tmp/current /tmp/updated` (the diff is **never** empty, you must see at least the version updated in two files per languages)
-4. If necessary, updates the code to be compatible with the new Hugo version
-5. Update `netlify.toml` and `.travis.yml` to the new Hugo version
+4. If necessary, update the code to be compatible with the new Hugo version
+5. Update `netlify.toml` and `.github/workflows/test.yaml` to the new Hugo version
 6. After opening the PR, check the Netlify preview: in the source, you need to check in the `<head>` the meta tag `<meta name="generator" content="Hugo 0.XX.X">` to be sure that version of Hugo is available on Netlify.
