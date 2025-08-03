@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Let's Encrypt website",
   "devDependencies": {
-    "eslint": "^8.1.0",
+    "eslint": "^9.32.0",
     "htmlhint": "^0.16.3",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
