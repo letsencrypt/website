@@ -1,11 +1,9 @@
 ---
 title: localhost 向けの証明書
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 ローカルの開発で使用したり、ウェブアプリケーションとの通信が必要なネイティブ・アプリケーションに配布するために、"localhost" というホスト名に対する証明書を発行したい場合もあると思います。 Let's Encrypt は、"localhost" に対する証明書を提供することはできません。理由は、その証明書をユニークに所有することができる主体が存在せず、".com" や ".net" のようなトップレベルのドメインをルートに持つことができないからです。 `127.0.0.1` に解決するドメインを自分自身でセットアップして、DNS チャレンジを使用して証明書を取得することは技術的には可能ではあります。 しかし、これは一般的に悪いアイデアであり、それよりも良い選択肢があります。
 
@@ -44,7 +42,7 @@ localhost の秘密鍵と自己署名証明書を生成する最も簡単な方�
 
 その後、localhost.crt と localhost.key を使ってローカルのウェブサーバーを設定し、localhost.crt をローカルのトラストルートのリストにインストールできます。
 
-開発用の証明書をより現実的に管理したい場合、[minica][minica] を使うことができます。minica を使うと、ローカルのルート証明書を生成して、end-entity (または leaf) 証明書をそのルート証明書で署名することができます。 そして、自己署名の end-entity 証明書ではなく、ルート証明書をインポートします。
+開発用の証明書をより現実的に管理したい場合、[ mkcert ][mkcert] を使うことができます。mkcert を使うと、ローカルのルート証明書を生成して、end-entity (または leaf) 証明書をそのルート証明書で署名することができます。 そして、自己署名の end-entity 証明書ではなく、ルート証明書をインポートします。
 
 `127.0.0.1` へのエイリアスとして /etc/hosts を追加すれば、`www.localhost` のようなドットを含むドメインを使うこともできます。 この方法を採用した場合、ブラウザの cookie storage の扱い方が微妙に変わります。
 
@@ -55,5 +53,5 @@ localhost の秘密鍵と自己署名証明書を生成する最も簡単な方�
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
