@@ -2,15 +2,15 @@
 title: How It Works
 linkTitle: How Let's Encrypt Works
 slug: how-it-works
-lastmod: 2025-07-31
+lastmod: 2025-08-02
 show_lastmod: 1
 ---
 
-The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/html/rfc8555) is to make it possible to set up an HTTPS server and have it automatically obtain a browser-trusted certificate, without any human intervention. This is accomplished by running an ACME client on the web server.
+The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/html/rfc8555) is to make it possible to set up an HTTPS server and have it automatically obtain browser-trusted certificates without any human intervention. This is accomplished by running an ACME client on a web server.
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with an ACME client.
 
-There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://simple.wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. Then, the agent can request, renew, and revoke certificates for that domain.
+There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://simple.wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. After that the client can request or revoke certificates for that domain.
 
 ## Domain Validation
 
@@ -37,6 +37,7 @@ Then, it's the CA's job to check that the challenges have been satisfied from [m
 
 If the challenges check out, then the client identified by the public key is authorized to do certificate management for `example.com`.
 
+Note that this process cannot use HTTPS, which makes it vulnerable to certain attacks. In order to mitigate the issue, Let's Encrypt actually performs multiple validations in parallel from different network perspectives. This makes it significantly harder for an attacker to successfully subvert the validation process.
 
 ## Certificate Issuance and Revocation
 
@@ -44,14 +45,16 @@ Once the client is authorized, requesting, renewing, and revoking certificates i
 
 ### Issuance
 
-To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) (CSR) that asks the Let's Encrypt CA to issue a certificate for `example.com` with a specified public key. As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR. The agent also signs the whole CSR with the authorized key for `example.com` so that the Let's Encrypt CA knows it's authorized.
+To obtain a certificate for the domain, the client constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) (CSR) that asks the Let's Encrypt CA to issue a certificate for `example.com` with a specified public key. As usual, the CSR includes a signature by the private key corresponding to the public key in the CSR. The client also signs the whole CSR with the authorized key for `example.com` so that the Let's Encrypt CA knows it's authorized.
 
-When the Let's Encrypt CA receives the request, it verifies both signatures. If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the agent. The CA will also submit the certificate to numerous public Certificate Transparency (CT) logs. See [here](https://certificate.transparency.dev/howctworks/#pki) for more details.
+When the Let's Encrypt CA receives the request, it verifies both signatures. If everything looks good, it issues a certificate for `example.com` with the public key from the CSR and returns it to the client. The CA will also submit the certificate to numerous public Certificate Transparency (CT) logs. See [here](https://certificate.transparency.dev/howctworks/#pki) for more details.
 
 <div class="howitworks-figure">
 <img alt="Requesting a certificate for example.com"
      src="/images/howitworks_certificate.png"/>
 </div>
+
+Renewing a certificate at a later time means repeating the issuance process over again - performing domain validation and then requesting a new certificate.
 
 ### Revocation
 
