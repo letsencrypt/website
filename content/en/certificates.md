@@ -75,27 +75,6 @@ Click below for details on additional intermediates which are not part of the ac
 
 These intermediate CAs have currently-valid certificates, but are not being issued from. We may begin issuing Subscriber certificates from them at any time, without warning.
 
-* **Let's Encrypt E5**
-  * Subject: `O = Let's Encrypt, CN = E5`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2027-03-12
-  * CA details: [crt.sh](https://crt.sh/?caid=295810), [issued certs](https://crt.sh/?Identity=%25&iCAID=295810)
-  * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
-  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
-* **Let's Encrypt E6**
-  * Subject: `O = Let's Encrypt, CN = E6`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2027-03-12
-  * CA details: [crt.sh](https://crt.sh/?caid=295819), [issued certs](https://crt.sh/?Identity=%25&iCAID=295819)
-  * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
-  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
-* **Let's Encrypt E8**
-  * Subject: `O = Let's Encrypt, CN = E8`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2027-03-12
-  * CA details: [crt.sh](https://crt.sh/?caid=295809), [issued certs](https://crt.sh/?Identity=%25&iCAID=295809)
-  * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
-  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
 * **Let's Encrypt E9**
   * Subject: `O = Let's Encrypt, CN = E9`
   * Key type: `ECDSA P-384`
@@ -103,18 +82,6 @@ These intermediate CAs have currently-valid certificates, but are not being issu
   * CA details: [crt.sh](https://crt.sh/?caid=295812), [issued certs](https://crt.sh/?Identity=%25&iCAID=295812)
   * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
   * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
-* **Let's Encrypt R10**
-  * Subject: `O = Let's Encrypt, CN = R10`
-  * Key type: `RSA 2048`
-  * Valid until: 2027-03-12
-  * CA details: [crt.sh](https://crt.sh/?caid=295814), [issued certs](https://crt.sh/?Identity=%25&iCAID=295814)
-  * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
-* **Let's Encrypt R11**
-  * Subject: `O = Let's Encrypt, CN = R11`
-  * Key type: `RSA 2048`
-  * Valid until: 2027-03-12
-  * CA details: [crt.sh](https://crt.sh/?caid=295815), [issued certs](https://crt.sh/?Identity=%25&iCAID=295815)
-  * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 * **Let's Encrypt R14**
   * Subject: `O = Let's Encrypt, CN = R14`
   * Key type: `RSA 2048`
@@ -141,6 +108,20 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * Valid until: 2025-09-15
   * CA details: [crt.sh](https://crt.sh/?caid=183284), [issued certs](https://crt.sh/?Identity=%25&iCAID=183284)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt E5**
+  * Subject: `O = Let's Encrypt, CN = E5`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2027-03-12
+  * CA details: [crt.sh](https://crt.sh/?caid=295810), [issued certs](https://crt.sh/?Identity=%25&iCAID=295810)
+  * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
+  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * Subject: `O = Let's Encrypt, CN = E6`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2027-03-12
+  * CA details: [crt.sh](https://crt.sh/?caid=295819), [issued certs](https://crt.sh/?Identity=%25&iCAID=295819)
+  * Certificate details (signed by ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * Subject: `O = Let's Encrypt, CN = R3`
   * Key type: `RSA 2048`
@@ -155,6 +136,18 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * CA details: [crt.sh](https://crt.sh/?caid=183268), [issued certs](https://crt.sh/?Identity=%25&iCAID=183268)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+* **Let's Encrypt R10**
+  * Subject: `O = Let's Encrypt, CN = R10`
+  * Key type: `RSA 2048`
+  * Valid until: 2027-03-12
+  * CA details: [crt.sh](https://crt.sh/?caid=295814), [issued certs](https://crt.sh/?Identity=%25&iCAID=295814)
+  * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * Subject: `O = Let's Encrypt, CN = R11`
+  * Key type: `RSA 2048`
+  * Valid until: 2027-03-12
+  * CA details: [crt.sh](https://crt.sh/?caid=295815), [issued certs](https://crt.sh/?Identity=%25&iCAID=295815)
+  * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 * **Let's Encrypt Authority X1**
   * Subject: `O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * Key type: `RSA 2048`
