@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const countElement = document.getElementById('certificate-count');
     if (!countElement) return;
 
-    const finalNumber = 600;
+    const finalNumber = 650;
     const duration = 1000;
 
     countElement.textContent = '0M';

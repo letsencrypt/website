@@ -1,15 +1,14 @@
 ---
 title: Tilbagekaldelse af certifikater
 slug: revoking
-date: 2017-06-08
-lastmod: 2021-10-15
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 
 Når et certifikat ikke længere er sikkert at bruge, bør du tilbagekalde det. Dette kan ske for et par forskellige årsager. Du har, som eksempel, ved et uheld have fået delt den private nøgle på et offenligt website; hackere kan have kopieret den private nøgle fra dine servere; eller hackere har måske midlertidigt fået kontrol over dine servere eller DNS opsætning, og brugt det til at validere og udsteede et certifikat til hvilket de har den private nøgle.
 
-Når du tilbagekalder et Let's Encrypt certifikat, vil Let's Encrypt vil offentliggøre denne tilbagekaldelseinformation via [Online Certificate Status Protocol(OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), og nogle browsere vil tjekke OCSP, for at se, om de bør have tillid til et certifikat. Bemærk, at OCSP [har nogle grundlæggende problemer](https://www.imperialviolet.org/2011/03/18/revocation.html), så ikke alle browsere udfører denne kontrol. Alligevel er tilbagekaldelse af certifikater, der tilhører kompromitterede private nøgler en vigtig praksis og er påkrævet af Let's Encrypts [Abonnentaftale](/repository).
+Når du tilbagekalder et Let's Encrypt certifikat, vil Let's Encrypt vil offentliggøre denne tilbagekaldelseinformation i [Certifikat Tilbagekaldelses Lister (CRLs)](https://en.wikipedia.org/wiki/Certificate_revocation_list), og nogle browsere vil tjekke CRLs, for at se, om de bør have tillid til et certifikat. Tilbagekaldelse af certifikater, der har en kompromitteret privat nøgle, er en vigtig praksis, og er påkrævet af Let's Encrypts [Abonnementsaftale](/repository).
 
 For at tilbagekalde et certifikat via Let's Encrypt, skal du bruge [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), sandsynligvis gennem en ACME-klient som [Certbot](https://certbot.eff.org/). Du bliver nødt til at bevise overfor Let's Encrypt, at du er autoriseret til at tilbagekalde certifikatet. Der er tre måder at gøre dette: fra den konto, der udstedte certifikatet, ved hjælp af en anden autoriseret konto, eller ved hjælp af certifikatets private nøgle.
 
@@ -50,7 +49,7 @@ Hvis du vil undgå at udstede et certifikat overhovedet, kan du inkludere et ikk
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-Og følg instruktionerne. Hvis du foretrækker at validere brugen af HTTP i stedet for DNS, skal du erstatte `--preferred-challenges` flaget med `--preferred-challenges=http`.
+Og følg instruktionerne, spring over valideringstrinnet for `ikkeeksisterende.${YOUR_DOMAIN}`. Hvis du foretrækker at validere brugen af HTTP i stedet for DNS, skal du erstatte `--preferred-challenges` flaget med `--preferred-challenges=http`. Bemærk, at i mange tilfælde DNS-versionen af disse trin vil ikke fungere, hvis du erstatter `--manual` med en certbot plugin til at opfylde DNS-01 udfordringer automatisk, da certbot med glæde vil placere en TXT-post på `_acme-challenge. onexistent.${YOUR_DOMAIN}` hvis det har evnen til at gøre det.
 
 Når du har valideret kontrollen over alle domænenavne i det certifikat, du vil tilbagekalde, du kan downloade certifikatet fra [crt. h](https://crt.sh/), derefter fortsætte med at tilbagekalde certifikatet, som om du havde udstedt det:
 

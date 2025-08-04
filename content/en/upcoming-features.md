@@ -1,7 +1,7 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2025-05-13
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
@@ -9,13 +9,9 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 # Upcoming Features
 
-## Shutdown of Expiration Notification Emails
-
-On June 4, 2025, we intend to [turn off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database. 
-
 ## Short-lived Certificates
 
-Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information (such as OCSP, see below) embedded in them at all. 
+Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all. 
 
 ## IP Address Certificates
 
@@ -26,6 +22,10 @@ Around the end of 2025, we intend to allow any client which requests a shortlive
 On Feb 11, 2026, we intend to [remove the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. Prior to that date, we will offer an alternative profile which will still contain that EKU, but note that this will be a temporary stop-gap for clients that need more time to migrate away from needing it: that alternate profile will go away on May 13, 2026.
 
 # Completed Features
+
+## Shutdown of Expiration Notification Emails
+
+On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database.
 
 ## Removal of OCSP URLs
 

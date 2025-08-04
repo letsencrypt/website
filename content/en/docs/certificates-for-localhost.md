@@ -1,11 +1,9 @@
 ---
 title: Certificates for localhost
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 Sometimes people want to get a certificate for the hostname "localhost", either
 for use in local development, or for distribution with a native application that
@@ -105,7 +103,7 @@ You can then configure your local web server with localhost.crt and
 localhost.key, and install localhost.crt in your list of locally trusted roots.
 
 If you want a little more realism in your development certificates, you can use
-[minica][minica] to generate your own local root certificate, and issue
+[mkcert][mkcert] to generate your own local root certificate, and issue
 end-entity (aka leaf) certificates signed by it. You would then import the root
 certificate rather than a self-signed end-entity certificate.
 
@@ -120,5 +118,5 @@ browsers handle cookie storage.
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

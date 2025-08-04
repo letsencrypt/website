@@ -86,7 +86,7 @@ other = "מעבר לאנגלית"
 other = "לתשומת לבך: הגרסה האנגלית נערכה מאז שתורגמה"
 
 [not_yet_translated]
-other = 'עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href="https://github.com/letsencrypt/website">כאן</a>.'
+other = 'עמוד זה לא תורגם עדיין. ניתן לתרום למאמץ <a href="https://crowdin.com/project/lets-encrypt-website">כאן</a>.'
 
 [english_is_canonical]
 other = "הגרסה האנגלית היא הסמכות העליונה"
@@ -242,7 +242,7 @@ other = "מדיניות סימני מסחר"
 other = "הצפנה<br />לכולם"
 
 [home_hero_subheading]
-other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">600 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">600 מיליון</span></span> אתרים.'
+other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">650 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">650 מיליון</span></span> אתרים.'
 
 [home_hero_get_started]
 other = "איך מתחילים"
@@ -367,6 +367,9 @@ other = "הצגת כל הרשומות בבלוג שלנו"
 [post_hero_last_updated]
 other = "עדכון אחרון:"
 
+[post_hero_fresher_english]
+other = "יש עמוד עדכני יותר באנגלית"
+
 [post_hero_breadcrumb_blog]
 other = "בלוג"
 
@@ -392,7 +395,7 @@ other = "ארגון ללא מטרות רווח שמספק אישורי TLS בח�
 other = "ארגון ללא מטרות רווח שמספק אישורי TLS בחינם ליותר מ־"
 
 [home_hero_certificate_count]
-other = "600 מיליון"
+other = "650 מיליון"
 
 [home_hero_nonprofit_suffix]
 other = "אתרים"

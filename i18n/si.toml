@@ -86,7 +86,7 @@ other = "ඉංග්‍රීසියෙන් දකින්න"
 other = "සටහන: පරිවර්තනයෙන් පසු ඉංග්‍රීසි අනුවාදය යාවත්කාල වී ඇත"
 
 [not_yet_translated]
-other = 'මෙම වියමන පිටුව තවමත් පරිවර්තනය කර නැත. ඔබට <a href="https://github.com/letsencrypt/website">මෙතැනින්</a> දායක විය හැකිය.'
+other = 'මෙම වියමන පිටුව තවමත් පරිවර්තනය කර නැත. ඔබට <a href="https://crowdin.com/project/lets-encrypt-website">මෙතැනින්</a> දායක විය හැකිය.'
 
 [english_is_canonical]
 other = "ඉංග්‍රීසි අනුවාදය ප්‍රාමාණිකයි"
@@ -242,7 +242,7 @@ other = "වෙළඳ ලකුණු ප්‍රතිපත්තිය"
 other = "සැමට <br /> සංකේතනය"
 
 [home_hero_subheading]
-other = 'වියමන අඩවි <span class="relative inline-block"><span class="invisible text-4xl">දශලක්‍ෂ 600</span><span id="certificate-count" class="text-4xl absolute left-0">දශලක්‍ෂ 600</span></span> කට වඩා නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි.'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
 other = "පටන්ගන්න"
@@ -367,6 +367,9 @@ other = "අපගේ සියළුම ලඝුපත් බලන්න"
 [post_hero_last_updated]
 other = "අවසන් යාවත්කාලය:"
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "ලඝුපත"
 
@@ -392,7 +395,7 @@ other = "වියමන අඩවි ### කට වඩා නොමිලේ TL
 other = "නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි"
 
 [home_hero_certificate_count]
-other = "දශලක්‍ෂ 600"
+other = "650M"
 
 [home_hero_nonprofit_suffix]
 other = "වියමන අඩවි"

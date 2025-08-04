@@ -1,11 +1,9 @@
 ---
 title: Zertifikate für localhost
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 Manchmal möchten Leute ein Zertifikat für den Hostnamen "localhost" bekommen, entweder um ihre lokale Entwicklungsumgebung zu nutzen oder zur Verteilung einer nativen Applikation, die Kommunikation mit einer Webapplikation benötigt. Let's Encrypt kann keine Zertifikate für "localhost" zur Verfügung stellen, da es keinen alleinigen Eigentümer gibt und es nicht zu einer Toplevel-Domain gehört, wie ".com" oder ".net". Es ist möglich, ihre eigene Domain so zu konfigurieren, dass sie auf `127.0.0.1` zeigt und hierfür ein Zertifkat erhalten, welches in der DNS-Challenge verwendet werden kann. Aber dies es nicht empfehlenswert und es gibt es bessere Optionen.
 
@@ -44,7 +42,7 @@ Der einfachste Weg, um einem privaten Schlüssel und ein selbst-signiertes Zerti
 
 Sie können Ihren lokalen Webserver mit localhost.crt und localhost.key konfigurieren und installieren localhost.crt in Ihrer Liste von lokalen vertrauenden Roots.
 
-Wenn Sie etwas mehr Realität in Ihre Entwicklerzertifikate bringen möchten, können Sie auch [minica][minica] zur Generierung Ihres eigenen lokalen Root Zertifikat benutzen und Endzertifikate ausstellen. Sie würden dann das Root Zertifikat importieren, bevor selbst-signierte Endzertifikate importiert werden.
+Wenn Sie etwas mehr Realität in Ihre Entwicklerzertifikate bringen möchten, können Sie auch [ mkcert][mkcert] zur Generierung Ihres eigenen lokalen Root Zertifikat benutzen und Endzertifikate ausstellen. Sie würden dann das Root Zertifikat importieren, bevor selbst-signierte Endzertifikate importiert werden.
 
 Sie können auch eine Domain mit Punkten wählen, wie `www.localhost`, und diese in /etc/hosts als Alias für `127.0.0.1` hinzufügen. Dies ändert auf subtile Weise, wie Browser mit der Speicherung von Cookies umgehen.
 
@@ -55,5 +53,5 @@ Sie können auch eine Domain mit Punkten wählen, wie `www.localhost`, und diese
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

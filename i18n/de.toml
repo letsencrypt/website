@@ -86,7 +86,7 @@ other = "Auf Englisch anzeigen"
 other = "Hinweis: Die englische Version wurde seit der Übersetzung aktualisiert"
 
 [not_yet_translated]
-other = 'Diese Webseite wurde noch nicht übersetzt. Sie können <a href="https://github.com/letsencrypt/website">hier beim Übersetzen helfen</a>.'
+other = 'Diese Webseite wurde noch nicht übersetzt. Sie können <a href="https://crowdin.com/project/lets-encrypt-website">hier beim Übersetzen helfen</a>.'
 
 [english_is_canonical]
 other = "Die englische Fassung ist maßgeblich"
@@ -242,7 +242,7 @@ other = "Markenschutzrichtlinie"
 other = "Verschlüsselung für<br /> alle"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">600M</span><span id="certificate-count" class="text-4xl absolute left-0">600M</span></span> websites.'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
 other = "Loslegen"
@@ -367,6 +367,9 @@ other = "Alle Blog-Posts ansehen"
 [post_hero_last_updated]
 other = "Zuletzt aktualisiert:"
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
@@ -392,7 +395,7 @@ other = "A nonprofit providing free TLS certificates to more than ### websites"
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "600M"
+other = "650M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

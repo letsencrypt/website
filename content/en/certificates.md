@@ -94,7 +94,7 @@ These intermediate CAs have currently-valid certificates, but are not being issu
 <details>
 <summary>Retired</summary>
 
-These intermediate CAs are no longer being used to issue Subscriber certificates. Those which still have valid certificates may be producing OCSP responses and/or CRLs.
+These intermediate CAs are no longer being used to issue Subscriber certificates. Those which still have valid certificates may be producing CRLs.
 
 * **Let's Encrypt E1**
   * Subject: `O = Let's Encrypt, CN = E1`

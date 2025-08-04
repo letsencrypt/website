@@ -12,7 +12,7 @@ Lidé kteří chtějí začít používat Let's Encrypt, se nejdříve ptají: Z
 
 # Získání certifikátů přes poskytovatele hostingu
 
-Pro mnoho lidí získá a spravuje certifikáty od společnosti Let's Encrypt jejich poskytovatel hostingu. Pokud je to vás případ, váš poskytovatel použije ACME klienta a vy nemusíte přemýšlet o tom, jak získat nebo provozovat klientský software ACME.
+Pro mnoho lidí [získá a spravuje certifikáty od společnosti Let's Encrypt jejich poskytovatel hostingu](https://certbot.eff.org/hosting_providers). Pokud je to vás případ, váš poskytovatel použije ACME klienta a vy nemusíte přemýšlet o tom, jak získat nebo provozovat klientský software ACME.
 
 Pokud pro vás poskytovatel získává a spravuje certifikáty, děje se tak buď automaticky, nebo je třeba povolit možnost konfigurace. Zkontrolujte dokumentaci poskytovatele a možnosti konfigurace.
 

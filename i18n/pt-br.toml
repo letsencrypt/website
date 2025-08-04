@@ -1,61 +1,77 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt é uma Autoridade Certificadora <span>gratuita</span>, <span>automatizada</span> e <span>aberta</span>."
+other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
 
 [home_hero_getting_started]
-other = "Começar"
+other = "Primeiros passos"
 
 [home_hero_donate]
-other = "Doar"
+other = "Doações"
 
 [home_hero_sponsor]
-other = "Patrocinar"
+other = "Patrocinadores"
+
+[home_hero_annual_report]
+other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Principais Patrocinadores e Doadores"
 
 [home_from_our_blog]
-other = "Do nosso blog"
+other = "Blog"
 
 [read_more]
-other = "Leia mais"
+other = "Saiba mais"
 
 [subscribe_rss]
-other = "Assine <a href=\"{{ .Permalink }}\">via RSS</a>"
+other = 'Inscreva-se <a href="{{ .Permalink }}">via RSS</a>'
 
 [footer_support_us]
-other = "Apoie uma Web mais segura e que respeita a privacidade."
+other = "Apoie uma Web mais segura e com respeito pela privacidade."
 
 [footer_donate]
-other = "Doar"
+other = "Donate Now"
 
 [footer_mailing]
-other = "Envie todas as cartas ou perguntas para:"
+other = "Send all mail or inquiries to:"
+
+[footer_legal_address]
+other = "Legal Address"
 
 [footer_policies]
 other = """
-Veja nossa <a href="/pt-br/privacy/">política de privacidade</a>.<br>
-Veja nossa <a href="https://www.abetterinternet.org/trademarks/">política de direitos autorais</a>.
+View our <a href="/privacy/">privacy policy</a>.<br>
+View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
+View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
+"""
+
+[footer_links]
+other = """
+<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
 """
 
 [header_skip_nav]
-other = "Pular links de navegação"
+other = "Ignorar links de navegação"
 
 [last_updated]
 other = "Última atualização: "
 
 [see_all_doc]
-other = "Ver Documentação completa"
+other = "Ver toda a documentação"
 
 [blog_feed]
-other = "Feed do blog Let's Encrypt"
+other = "Let's Encrypt Blog Feed"
+
+[diamond]
+other = "Diamond"
 
 [platinum]
 other = "Platina"
 
 [gold]
 other = "Ouro"
+
+[gold_basic]
+other = "Ouro Básico"
 
 [silver]
 other = "Prata"
@@ -67,70 +83,469 @@ other = "Idiomas"
 other = "Visualizar em Inglês"
 
 [old_version]
-other = "Nota: A versão em Inglês foi atualizada desde a última tradução desta página."
+other = "Nota: A versão em Inglês foi atualizada desde a tradução"
 
 [not_yet_translated]
-other = "Esta página ainda não foi traduzida. Você pode contribuir <a href=\"https://github.com/letsencrypt/website\">aqui</a>."
+other = 'Esta página ainda não foi traduzida. Você pode contribuir <a href="https://crowdin.com/project/lets-encrypt-website">aqui</a>.'
 
 [english_is_canonical]
-other = "A versão em Inglês é canônica"
+other = "A versão em inglês é a oficial"
 
 [graph_issued]
-other = "Emitidos"
+other = "Emitido"
 
 [graph_certificates_active]
 other = "Certificados Ativos"
 
 [graph_fully_qualified_domains_active]
-other = "Domínios Completamente Qualificados Ativos"
+other = "Domínios devidamente qualificados ativos"
 
 [graph_registered_domains_active]
-other = "Domínios Registrados Ativos"
+other = "Domínios Ativos registrados"
 
 [graph_active_count]
-other = "Contagem de Ativos"
+other = "Contagem de atividade"
 
 [graph_issued_per_day]
-other = "Emitidos por dia"
+other = "Emitido por Dia"
 
 [graph_all_users]
 other = "Todos os usuários"
 
 [graph_usa_users]
-other = "Usuários dos Estados Unidos"
+other = "Usuários dos EUA"
 
 [graph_japan_users]
 other = "Usuários do Japão"
 
 [graph_percent_https]
-other = "Porcentagem de páginas carregadas usando HTTPS (média de 14 dias)"
+other = "Porcentagem de páginas utilizando HTTPS (média móvel de 14 dias)"
+
+[certificate_policy]
+other = "Política de Certificado"
+
+[certificate_transparency_name]
+other = "Nome"
+
+[certificate_transparency_role_production]
+other = "Produção"
+
+[certificate_transparency_role_testing]
+other = "Em testes"
+
+[certificate_transparency_uri]
+other = "URI"
+
+[certificate_transparency_public_key]
+other = "Chave Pública"
+
+[certificate_transparency_log_id]
+other = "ID do registro"
+
+[certificate_transparency_state]
+other = "Estado"
+
+[certificate_transparency_window_start]
+other = "Início da Janela"
+
+[certificate_transparency_window_end]
+other = "Fim da Janela"
+
+[certification_practices_statement]
+other = "Declaração de Práticas de Certificação"
 
 [overview]
-other = "Visão Geral"
+other = "Visão geral"
 
 [subscriber_information]
-other = "Informações Para Usuário"
+other = "Informação do Assinante"
 
 [advanced_subscriber_information]
-other = "Informações Para Usuários Avançados"
+other = "Informações dos Assinantes Avançados"
 
 [client_developer_information]
-other = "Informações Para Desenvolvedores de Clientes"
+other = "Informações do Desenvolver de Clientes"
+
+[acme_divergences]
+other = "Diferenças do atual Rascunho da ACME"
+
+[acme_divergences_rfc]
+other = "Diferenças do RFC ACME"
+
+[onboarding_customers]
+other = "Integração de seus clientes com Let's Encrypt e ACME"
 
 [paypal_donate_alt]
-other = "Faça doações com o botão do PayPal"
+other = "Doar com o botão PayPal"
+
+[paypal_donate_title]
+other = "Doê com PayPal"
+
+[not_found]
+other = "Essa página não existe, por favor, verifique o endereço."
 
 [amount_per_year]
 other = "${{ .nb }}/ano (USD)"
 
 [3y_commitment]
-other = "com um compromisso de 3 anos"
+other = "com compromisso de 3 anos"
 
 [1_99_employees]
-other = "1-99 empregados"
+other = "1 a 99 funcionários"
 
 [100_999_employees]
-other = "100-999 empregados"
+other = "100 a 999 funcionários"
 
 [1000_employees]
-other = "1000+ empregados"
+other = "Mais de 1000 funcionários"
+
+[subscribe_to_newsletter_headline]
+other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+
+[site_banner_text]
+other = "ISRG celebrates 10 years of helping build a brighter Internet →"
+
+[internet_security_research_group]
+other = "Internet Security Research Group"
+
+[header_donate_now]
+other = "Donate Now"
+
+[toggle_menu_aria_label]
+other = "Toggle menu"
+
+[isrg_legal_address_label]
+other = "Legal Address"
+
+[isrg_mailing_label]
+other = "Send all mail or inquiries to:"
+
+[newsletter_subscribe_heading]
+other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "Terms"
+
+[footer_nav_privacy]
+other = "Política de Privacidade"
+
+[footer_nav_trademark]
+other = "trademarks"
+
+[home_hero_heading]
+other = "Encryption for<br /> Everybody"
+
+[home_hero_subheading]
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+
+[home_hero_get_started]
+other = "Primeiros passos"
+
+[home_hero_annual_report_title]
+other = "Explore our work to improve security and privacy"
+
+[home_hero_annual_report_description]
+other = "Our 2024 Annual Report highlights the progress we've made toward a better Internet."
+
+[home_hero_annual_report_button]
+other = "Read the Annual Report"
+
+[getting_started_eyebrow]
+other = "Free, Automated TLS Certificates"
+
+[getting_started_heading]
+other = "Getting started"
+
+[getting_started_description]
+other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+
+[getting_started_ready_title]
+other = "Ready to begin?"
+
+[getting_started_ready_content]
+other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+
+[getting_started_ready_link]
+other = "Let's Get Started"
+
+[getting_started_docs_title]
+other = "Documentação"
+
+[getting_started_docs_content]
+other = "Learn about our certificate issuance process and best practices."
+
+[getting_started_docs_link]
+other = "Read Documentation"
+
+[getting_started_clients_title]
+other = "ACME Clients"
+
+[getting_started_clients_content]
+other = "Choose from our recommended ACME clients to automatically manage your certificates."
+
+[getting_started_clients_link]
+other = "Browse ACME Clients"
+
+[getting_started_help_title]
+other = "Get help from the Let's Encrypt Community"
+
+[getting_started_help_content]
+other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
+
+[getting_started_help_link]
+other = "Visit the Forum"
+
+[support_heading_entire_sentence]
+other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+
+[support_heading_base]
+other = "Global impact made possible by"
+
+[support_heading_word1]
+other = "generosity"
+
+[support_heading_word2]
+other = "contributions"
+
+[support_heading_word3]
+other = "sponsorship"
+
+[support_heading_word4]
+other = "you"
+
+[support_donate_title]
+other = "Support Encryption for Everybody"
+
+[support_donate_description]
+other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+
+[support_donate_button]
+other = "Donate Now"
+
+[support_sponsor_title]
+other = "Leading Through Sponsorship"
+
+[support_sponsor_description]
+other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+
+[support_sponsor_button]
+other = "Learn about Sponsorship"
+
+[sponsors_heading]
+other = "Principais Patrocinadores e Doadores"
+
+[sponsors_diamond]
+other = "Diamond Sponsors"
+
+[sponsors_platinum]
+other = "Platinum Sponsors"
+
+[sponsors_gold]
+other = "Gold Sponsors"
+
+[sponsors_silver]
+other = "Silver Sponsors"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "Newsletter signup form"
+
+[blog_section_heading]
+other = "From our blog"
+
+[blog_section_see_all]
+other = "See all our blog posts"
+
+[post_hero_last_updated]
+other = "Last updated:"
+
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
+[post_hero_breadcrumb_blog]
+other = "Blog"
+
+[donate_get_involved_button]
+other = "Participar"
+
+[donate_individual_impact_eyebrow]
+other = "Individual Impact"
+
+[donate_encryption_everybody_alt]
+other = "Encryption for Everybody"
+
+[project_card_visit]
+other = "Visit"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "A nonprofit providing free TLS certificates to more than ### websites"
+
+[home_hero_nonprofit_prefix]
+other = "A nonprofit providing free TLS certificates to more than"
+
+[home_hero_certificate_count]
+other = "650M"
+
+[home_hero_nonprofit_suffix]
+other = "websites"
+
+[projects_section_title]
+other = "More ways we're improving security and privacy"
+
+[projects_section_description]
+other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+
+[support_donate_section_title]
+other = "Support Encryption for Everybody"
+
+[support_donate_section_description]
+other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+
+[support_donate_section_button]
+other = "Donate Now"
+
+[support_sponsor_section_title]
+other = "Leading Through Sponsorship"
+
+[support_sponsor_section_description]
+other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+
+[support_sponsor_section_button]
+other = "Learn about Sponsorship"
+
+[stats_section_title]
+other = "Let's Encrypt Growth"
+
+[stats_section_button]
+other = "More stats"
+
+[donate_page_make_recurring_donation_title]
+other = "Make a Recurring Donation"
+
+[donate_page_make_recurring_donation_content]
+other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+
+[donate_page_make_recurring_donation_link]
+other = "Start your recurring donation now"
+
+[donate_page_stock_donations_title]
+other = "Donations of Stock"
+
+[donate_page_crypto_gifts_title]
+other = "Gifts of Cryptocurrency"
+
+[donate_page_other_ways_title]
+other = "Other Ways to Give"
+
+[donate_page_ways_to_give_heading]
+other = "WAYS TO GIVE"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "of the funding for Let's Encrypt comes from charitable contributions."
+
+[donate_page_funding_details_why_support_heading]
+other = "WHY SUPPORT?"
+
+[donate_page_funding_details_list_item1]
+other = "Free, automated, and easy to use TLS certificates."
+
+[donate_page_funding_details_list_item2]
+other = "We make it easy to use one or one million certs."
+
+[donate_page_funding_details_list_item3]
+other = "You make HTTPS possible all around the world."
+
+[donate_page_funding_details_list_item4]
+other = "Help us continue operating at a truly global scale."
+
+[donate_page_stock_intro_text]
+other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+
+[donate_page_stock_table_brokerage_firm]
+other = "Brokerage Firm:"
+
+[donate_page_stock_table_account_name]
+other = "Account Name:"
+
+[donate_page_stock_table_account_number]
+other = "ISRG Account #:"
+
+[donate_page_stock_table_dtc_number]
+other = "DTC #:"
+
+[donate_page_stock_table_tax_id]
+other = "Tax ID #:"
+
+[donate_page_stock_outro_text]
+other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+
+[donate_page_other_daf_heading]
+other = "Donor Advised Funds"
+
+[donate_page_other_daf_text]
+other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+
+[donate_page_other_workplace_heading]
+other = "In Your Workplace"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "Patrocinadores"
+
+[donate_page_other_workplace_matching_gifts]
+other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+
+[donate_page_crypto_text]
+other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+
+[donate_page_crypto_link_text]
+other = "here"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
+
+[testimonial_section_button_text]
+other = "JOIN TIMMY. BE A NERD."
+
+[testimonial_section_image_alt]
+other = "Timmy, a supporter of Let's Encrypt"
+
+[testimonial_section_footer_line1]
+other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
+
+[testimonial_section_footer_line2]
+other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
+
+[testimonial_section_footer_line3]
+other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

@@ -86,7 +86,7 @@ other = "Переглянути англійською"
 other = "Примітка: Англійська версія була оновлена з моменту перекладу"
 
 [not_yet_translated]
-other = 'Ця сторінка ще не перекладена. Ви можете долучитися до перекладу <a href="https://github.com/letsencrypt/website">тут</a>.'
+other = 'Ця сторінка ще не перекладена. Ви можете долучитися до перекладу <a href="https://crowdin.com/project/lets-encrypt-website">тут</a>.'
 
 [english_is_canonical]
 other = "Англійська версія є авторитетною"
@@ -242,7 +242,7 @@ other = "Політика щодо товарних знаків"
 other = "Encryption for<br /> Everybody"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">600M</span><span id="certificate-count" class="text-4xl absolute left-0">600M</span></span> websites.'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
 other = "Розпочати"
@@ -367,6 +367,9 @@ other = "See all our blog posts"
 [post_hero_last_updated]
 other = "Last updated:"
 
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
@@ -392,7 +395,7 @@ other = "A nonprofit providing free TLS certificates to more than ### websites"
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "600M"
+other = "650M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

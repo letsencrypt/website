@@ -1,11 +1,9 @@
 ---
 title: localhost 证书
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 有时，人们希望获得主机名为“localhost”的证书，以用于本地开发或与需要与 Web 应用程序通信的原生应用程序一同分发。 Let’s Encrypt 不能为“localhost”提供证书，因为没有人唯一地拥有它，并且它不在“.com”或“.net”等顶级域名下。 您可以将您自己的域名设置为解析至“127.0.0.1”，并使用 DNS 验证获取证书。 然而，通常情况下这是个坏主意，您其实有更好的选择。
 
@@ -44,7 +42,7 @@ show_lastmod: 1
 
 然后，您就可以使用 localhost.crt 和 localhost.key 配置本地 Web 服务器，并在本地的受信任根证书列表中安装 localhost.crt。
 
-如果您希望您的开发用证书更加逼真，您可以使用 [minica][minica] 生成自己的本地根证书，并颁发由其签名的终端实体证书（又称叶证书）。 然后，您就可以导入根证书而不是自签名的终端实体证书。
+如果您希望您的开发用证书更加逼真，您可以使用 [ mkcert ][mkcert] 生成自己的本地根证书，并颁发由其签名的终端实体证书（又称叶证书）。 然后，您就可以导入根证书而不是自签名的终端实体证书。
 
 您还可以选择使用多级域名，例如将 `www.localhost` 作为 `127.0.0.1` 的别名加入 /etc/hosts 中， 这对于浏览器处理 Cookie 的方式有一定的影响。
 
@@ -55,5 +53,5 @@ show_lastmod: 1
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
