@@ -5,7 +5,6 @@
 {{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
 </title>
 <meta name="description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}" />
-<meta name="algolia-site-verification"  content="2D6ADB266D7016D7" />
 
 <meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 <meta property="og:type" content="website" />
