@@ -10,11 +10,11 @@ The objective of Let's Encrypt and the [ACME protocol](https://tools.ietf.org/ht
 
 To understand how the technology works, let's walk through the process of setting up `https://example.com/` with an ACME client.
 
-There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://simple.wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. After that the client can request or revoke certificates for that domain.
+There are two steps to this process. First, the ACME client proves to the [Certificate Authority](https://wikipedia.org/wiki/Certificate_authority) (CA) that the web server controls a domain. After that the client can request or revoke certificates for that domain.
 
 ## Domain Validation
 
-Let's Encrypt identifies the ACME client software by [public key](https://simple.wikipedia.org/wiki/Public-key_cryptography). The first time the ACME client interacts with Let's Encrypt, it generates a new account key pair and proves to the Let's Encrypt CA that the operator controls one or more domains. This is similar to the traditional CA process of creating an account and adding domains to that account.
+Let's Encrypt identifies the ACME client software by [public key](https://wikipedia.org/wiki/Public-key_cryptography). The first time the ACME client interacts with Let's Encrypt, it generates a new account key pair and proves to the Let's Encrypt CA that the operator controls one or more domains. This is similar to the traditional CA process of creating an account and adding domains to that account.
 
 To kick off the process, the client asks the Let's Encrypt CA what it needs to do in order to prove that it controls `example.com`. The Let's Encrypt CA will look at the domain name being requested and issue one or more sets of challenges. There are different ways that the client can prove control of the domain. For example, the CA might give the client a choice of either:
 
