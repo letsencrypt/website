@@ -343,6 +343,11 @@
       "name": "Gamma",
       "url": "https://gamma.app/",
       "image": "gamma-logo.png"
+    },
+    {
+      "name": "Slide",
+      "url": "https://slide.tech/",
+      "image": "slide-logo.svg"
     }
   ]
 }
