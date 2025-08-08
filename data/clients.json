@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-07-11",
+	"lastmod": "2025-08-06",
 	"categories": [
 		"Bash",
 		"C",
@@ -861,6 +861,18 @@
 			"library": "Rust",
 			"library_url": "https://github.com/n0-computer/tokio-rustls-acme",
 			"comments": "is an easy-to-use, async ACME client library for rustls"
-		}
+		},
+		{
+			"name": "Certimate",
+			"url": "https://github.com/certimate-go/certimate",
+			"category": "Go",
+			"comments": "manage certificates for multiple platforms with a visual workflow"
+		},
+		{
+			"name": "Certimate",
+			"url": "https://hub.docker.com/r/certimate/certimate",
+			"category": "Docker",
+			"comments": "manage certificates for multiple platforms with a visual workflow"
+		},
 	]
 }
