@@ -69,13 +69,15 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 不会。 永远不会。
 
-私钥的生成和管理始终由您自己的服务器而不是 Let's Encrypt 证书颁发机构进行。
+私钥只能由您自己的服务器生成并管理，与 Let's Encrypt 无关。
 
 ## Let's Encrypt 证书的有效期有多长？ 能够使用多久？
 
-我们的证书有效期为 90 天。 其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
+我们的证书有效期默认为 90 天， 其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
 
-这一期限不能调整，也没有例外。 我们建议您每 60 天自动续期一次证书。
+用户也可以选择有效期为 6 天的短期证书， 详见[此处](/2025/02/20/first-short-lived-cert-issued.html)。
+
+除上述情形外证书有效期不能随意调整，任何用户都不例外。 我们建议有效期为 90 天的证书每 60 天续期一次，有效期为 6 天的证书每 3 天续期一次。
 
 ## Let's Encrypt 能颁发组织验证 (OV) 或扩展验证 (EV) 证书吗？
 
@@ -87,7 +89,7 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## Let's Encrypt 颁发通配符证书吗？
 
-是的。 通配符证书必须通过 ACMEv2 采用 [DNS-01 质询](/docs/challenge-types/#dns-01-challenge)签发。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+是的。 申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-challenge)。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## 我的操作系统有可以使用的 Let's Encrypt (ACME) 客户端吗？
 

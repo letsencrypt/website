@@ -1,7 +1,7 @@
 ---
 title: Kommende Funktioner
 slug: upcoming-features
-lastmod: 2025-05-13
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
@@ -9,13 +9,9 @@ For meddelelser om kommende ændringer, venligst [abonnér på postlisten Teknis
 
 # Kommende Funktioner
 
-## Afslutning af Udløb Notifikation E-mails
-
-Den 4. juni 2025 har vi til hensigt at [slukke vores udløbs-e-mail-notifikationstjeneste](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), og slette alle e-mailadresser tilknyttet ACME-konti fra vores produktionsdatabase.
-
 ## Kortlevende Certifikater
 
-Omkring slutningen af 2025 agter vi at tillade enhver klient, der understøtter ACME-profiler (se nedenfor) til [anmode om et "shortlived" certifikat](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Disse certifikater er gyldige i så kort tid, at de ikke behøver at have tilbagekaldelsesoplysninger (f. eks. OCSP se nedenfor) overhovedet indlejret i dem.
+Omkring slutningen af 2025 agter vi at tillade enhver klient, der understøtter ACME-profiler (se nedenfor) til [anmode om et "shortlived" certifikat](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Disse certifikater er gyldige i så kort tid, at de ikke behøver at have tilbagekaldelsesoplysninger overhovedet indlejret i dem.
 
 ## Ip Adresse Certifikater
 
@@ -26,6 +22,10 @@ Omkring slutningen af 2025, Vi har til hensigt at tillade enhver klient, der anm
 11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Før denne dato vil vi tilbyde en alternativ profil, som stadig vil indeholde den EKU men bemærk, at dette vil være en midlertidig stop-gap for kunder, der har brug for mere tid til at migrere væk fra at have brug for det: at alternativ profil vil gå væk den 13. maj, 2026.
 
 # Fuldførte Funktioner
+
+## Afslutning af Udløb Notifikation E-mails
+
+Den 4. juni 2025 har vi [slukket vores udløbs-e-mail-notifikationstjeneste](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), og slette alle e-mailadresser tilknyttet ACME-konti fra vores produktionsdatabase.
 
 ## Fjernelse af OCSP- URL' er
 
