@@ -1,17 +1,13 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-lastmod: 2025-05-13
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 如需及时获取未来的功能更新公告，请[订阅 Technical Updates 邮件通知](https://letsencrypt.org/opt-in/)，或关注 Let's Encrypt 社群论坛的 [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) 分类。
 
 # 即将推出的功能
-
-## 停止发送临期证书提醒邮件
-
-我们计划于 2025 年 6 月 4 日[关停临期证书提醒邮件服务](https://letsencrypt.org/2025/01/22/ending-expiration-emails/)，并从生产环境数据库中删除所有 ACME 账户关联的电子邮箱地址。
 
 ## 短期证书
 
@@ -26,6 +22,10 @@ show_lastmod: 1
 我们计划于 2026 年 2 月 11 日从我们的默认证书配置中[移除“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 在此之前，我们会临时提供另一种仍包含该 EKU 的证书配置，但这只是为无法及时迁移的客户端提供的过渡措施，并且将于 2026 年 5 月 13 日截止。
 
 # 已实现的功能
+
+## 停止发送临期证书提醒邮件
+
+我们已于 2025 年 6 月 4 日[终止临期证书提醒邮件服务](https://letsencrypt.org/2025/01/22/ending-expiration-emails/)，并从生产环境数据库中删除所有 ACME 账户关联的电子邮箱地址。
 
 ## 移除 OCSP 网址
 

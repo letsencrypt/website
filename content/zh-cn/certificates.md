@@ -2,7 +2,7 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2024-06-11
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
@@ -120,7 +120,7 @@ show_lastmod: 1
 <details>
 <summary>已不再使用的证书</summary>
 
-这些中间证书已不再用于签发用户证书。 其中尚未过期的中间证书仍有可能产生 OCSP 应答和/或 CRL。
+这些中间证书已不再用于签发用户证书。 但如果过去签发过的部分用户证书尚未过期，则该中间证书仍有可能产生 CRL。
 
 * **Let's Encrypt E1**
   * 主体：`O = Let's Encrypt, CN = E1`

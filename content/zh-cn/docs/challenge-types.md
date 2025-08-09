@@ -1,7 +1,6 @@
 ---
 title: 验证方式
 slug: challenge-types
-date: 2019-02-25
 lastmod: 2025-01-07
 show_lastmod: 1
 ---
@@ -61,7 +60,7 @@ HTTP-01 验证只能使用 80 端口。 因为允许客户端指定任意端口�
 
 这一验证类型是在 TLS-SNI-01 被弃用后开发的，并且已经开发为[单独的标准][tls-alpn]。 与 TLS-SNI-01 一样，它通过 443 端口上的 TLS 执行。 但是，它使用自定义的 ALPN 协议来确保只有知道此验证类型的服务器才会响应验证请求。 这还允许对此质询类型的验证请求使用与要验证的域名匹配的SNI字段，从而使其更安全。
 
-这一验证类型并不适合大多数人。 它最适合那些想要执行类似于 HTTP-01 的基于主机的验证，但希望它完全在 TLS 层进行以分离关注点的 TLS 反向代理的作者。 现在其主要使用者为大型托管服务提供商，但 Apache 和 Nginx 等主流 Web 服务器有朝一日可能会实现对其的支持（[Caddy已经支持了这一验证类型][caddy-tls-alpn]）。
+这一验证类型并不适合大多数人。 它最适合那些想要执行类似于 HTTP-01 的基于主机的验证，但希望它完全在 TLS 层进行以分离关注点的 TLS 反向代理的作者。 目前这一群体主要是大型的网站托管服务商。
 
 优点：
 
@@ -71,7 +70,7 @@ HTTP-01 验证只能使用 80 端口。 因为允许客户端指定任意端口�
 
 缺点：
 
-- 它不支持 Apache、Nginx 和 Certbot，且很可能短期内不会兼容这些软件。
+- ACME 客户端对这种方式的支持较为有限。
 - 与 HTTP-01 一样，如果您有多台服务器，则它们需要使用相同的内容进行应答。
 - 此方法不能用于验证通配符域名。
 
@@ -86,4 +85,3 @@ ACME 的草案版本中定义了这一验证方式。 其原理是与 443 端口
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
-[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

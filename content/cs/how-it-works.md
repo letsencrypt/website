@@ -2,19 +2,19 @@
 title: Jak to funguje
 linkTitle: Jak funguje Let's Encrypt
 slug: how-it-works
-lastmod: 2025-07-31
+lastmod: 2025-08-02
 show_lastmod: 1
 ---
 
-Cílem Let's Encrypt a [protokolu ACME](https://tools.ietf.org/html/rfc8555) je umožnit nastavení serveru HTTPS a automatické získání důvěryhodného certifikátu prohlížeče bez zásahu člověka. Toho se dosáhne spuštěním klienta ACME na webovém serveru.
+Cílem Let's Encrypt a [protokolu ACME](https://tools.ietf.org/html/rfc8555) je umožnit nastavení serveru HTTPS a automatické získávání certifikátů důvěryhodných pro prohlížeče bez jakéhokoli zásahu člověka. Toho se dosáhne spuštěním ACME klienta na webovém serveru.
 
 Abychom pochopili, jak tato technologie funguje, projdeme si proces nastavení `https://example.com/` s klientem ACME.
 
-Tento proces má dva kroky. Nejprve klient ACME prokáže [certifikační autoritě](https://simple.wikipedia.org/wiki/Certificate_authority) (CA), že webový server ovládá doménu. Poté může agent žádat o certifikáty pro tuto doménu, obnovovat je a odebírat.
+Tento proces má dva kroky. Nejprve klient ACME prokáže [certifikační autoritě](https://wikipedia.org/wiki/Certificate_authority) (CA), že webový server ovládá doménu. Poté může klient požádat o certifikáty pro danou doménu nebo je zrušit.
 
 ## Ověřování domén
 
-Let's Encrypt identifikuje klientský software ACME pomocí [veřejného klíče](https://simple.wikipedia.org/wiki/Public-key_cryptography). Při první interakci klienta ACME s Let's Encrypt se vygeneruje nový pár klíčů účtu a ověří se certifikační autoritě Let's Encrypt, že provozovatel spravuje jednu nebo více domén. To se podobá tradičnímu procesu certifikační autority, kdy se vytvoří účet a přidají se k němu domény.
+Let's Encrypt identifikuje klientský software ACME pomocí [veřejného klíče](https://wikipedia.org/wiki/Public-key_cryptography). Při první interakci klienta ACME s Let's Encrypt se vygeneruje nový pár klíčů účtu a ověří se certifikační autoritě Let's Encrypt, že provozovatel spravuje jednu nebo více domén. To se podobá tradičnímu procesu certifikační autority, kdy se vytvoří účet a přidají se k němu domény.
 
 Na začátku procesu se klient zeptá certifikační autority Let's Encrypt, co musí udělat, aby prokázal, že spravuje doménu `example.com`. Certifikační autorita Let's Encrypt se podívá na požadovaný název domény a vydá jednu nebo více sad výzev. Klient může prokázat kontrolu nad doménou různými způsoby. Například CA může klientovi nabídnout jednu z následujících možností:
 
@@ -37,6 +37,7 @@ Klientský software dokončí jednu z poskytnutých sad úkolů. Řekněme, že 
 
 Pokud jsou výzvy splněny, je klient identifikovaný veřejným klíčem oprávněn provádět správu certifikátů pro `example.com`.
 
+Upozorňujeme, že tento proces nemůže používat protokol HTTPS, což ho činí zranitelným vůči určitým útokům. Aby se tento problém zmírnil, provádí Let's Encrypt ve skutečnosti několik ověření současně z různých síťových perspektiv. To výrazně ztěžuje útočníkovi úspěšné narušení procesu ověřování.
 
 ## Vydání a odvolání certifikátu
 
@@ -44,14 +45,16 @@ Jakmile je klient autorizován, jsou žádosti o certifikáty, jejich obnovován
 
 ### Vydání
 
-To obtain a certificate for the domain, the agent constructs a PKCS#10 [Certificate Signing Request](https://tools.ietf.org/html/rfc2986) (CSR) that asks the Let's Encrypt CA to issue a certificate for `example.com` with a specified public key. Jako obvykle CSR obsahuje podpis soukromým klíčem odpovídajícím veřejnému klíči v CSR. Agent také podepisuje celý CSR autorizovaným klíčem pro `example.com`, aby certifikační autorita Let's Encrypt věděla, že je autorizován.
+Aby klient získal certifikát pro doménu, vytvoří [žádost o podpis certifikátu](https://tools.ietf.org/html/rfc2986) (CSR) PKCS#10, která požádá certifikační autoritu Let's Encrypt o vydání certifikátu pro `example.com` s určeným veřejným klíčem. Jako obvykle CSR obsahuje podpis soukromým klíčem odpovídajícím veřejnému klíči v CSR. Klient také podepíše celý CSR autorizovaným klíčem pro `example.com`, aby certifikační autorita Let's Encrypt věděla, že je autorizovaný.
 
-Když certifikační autorita Let's Encrypt obdrží požadavek, ověří oba podpisy. Pokud vše vypadá v pořádku, vydá certifikát pro `example.com` s veřejným klíčem z CSR a vrátí jej agentovi. CA také odešle certifikát do mnoha veřejných protokolů transparentnosti certifikátů (CT). Více informací najdete [zde](https://certificate.transparency.dev/howctworks/#pki).
+Když certifikační autorita Let's Encrypt obdrží požadavek, ověří oba podpisy. Pokud vše vypadá v pořádku, vystaví certifikát pro `example.com` s veřejným klíčem z CSR a vrátí jej klientovi. CA také odešle certifikát do mnoha veřejných protokolů transparentnosti certifikátů (CT). Více informací najdete [zde](https://certificate.transparency.dev/howctworks/#pki).
 
 <div class="howitworks-figure">
 <img alt="Žádost o certifikát pro example.com"
      src="/images/howitworks_certificate.png"/>
 </div>
+
+Obnovení certifikátu v pozdějším termínu znamená opakování celého procesu vydávání – provedení ověření domény a následnou žádost o nový certifikát.
 
 ### Zrušení
 
