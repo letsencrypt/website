@@ -239,7 +239,7 @@ other = "商标政策"
 other = "为所有人提供的<br />数据加密服务"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+other = '一个向超过<span class="relative inline-block"><span class="invisible text-4xl">6.5 亿</span><span id="certificate-count" class="text-4xl absolute left-0">6.5 亿</span></span>网站提供免费TLS证书的非营利组织。'
 
 [home_hero_get_started]
 other = "快速入门"
@@ -365,7 +365,7 @@ other = "浏览所有博客文章"
 other = "最近更新："
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "查看尚未完成翻译的最新英文页面"
 
 [post_hero_breadcrumb_blog]
 other = "博客"

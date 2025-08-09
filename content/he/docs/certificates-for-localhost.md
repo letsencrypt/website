@@ -1,11 +1,9 @@
 ---
 title: אישורים למחשב המקומי (localhost)
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 לפעמים יש אנשים המעוניינים לקבל אישור לשם המארח „localhost”, או לשימוש בפיתוח מקומי או להפצה עם יישומון טבעי שדורש תקשורת לשרת אינטרנט. ל־Let's Encrypt אין אפשרות לספק אישורים ל־„localhost” כיוון שלאף אחד אין בעלות ייחודית עליו ואין לו מקור בשם תחום עליון כגון „‎.com” או „‎.net”. אפשרי להקים שם תחום משלך שבמקרה מתפענח לכתובת `127.0.0.1` ולקבל אישור עבורו באמצעות אתגר ה־DNS. עם זאת, באופן כללי מדובר ברעיון די גרוע וישנן אפשרויות מוצלחות יותר.
 
@@ -44,7 +42,7 @@ show_lastmod: 1
 
 לאחר מכן אפשר להגדיר את השרת המקומי שלך עם localhost.crt ועם localhost.key, ולהתקין את localhost.crt ברשימת האישורים העליונים המהימנים שלך.
 
-אם מעניין אותך להעניק ממד מוחשי לאישור שלך למטרות פיתוח, ניתן להשתמש ב־[minica][minica] כדי לייצר אישור עליון מקומי משלך, ולהנפיק אישורי יישות קצה (ידועים בשם עלה) שנחתמו על ידה. לאחר מכן יהיה עליך לייבא את האישור העליון במקום את אישור יישות הקצה שנחתם עצמית.
+אם מעניין אותך להעניק ממד מוחשי לאישור שלך למטרות פיתוח, ניתן להשתמש ב־[mkcert][mkcert] כדי לייצר אישור על מקומי משלך, ולהנפיק אישורי יישות קצה (ידועים בשם עלה) שנחתמו על ידה. לאחר מכן יהיה עליך לייבא את האישור העליון במקום את אישור יישות הקצה שנחתם עצמית.
 
 ניתן גם לבחור להשתמש בשם תחום עם הפרדה בנקודות, כגון `www.localhost`, על ידי הוספתו ל־‎/etc/hosts ככינוי ל־`127.0.0.1`. זה משנה במעט את איך שהדפדפנים מטפלים באחסון עוגיות.
 
@@ -55,5 +53,5 @@ show_lastmod: 1
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
