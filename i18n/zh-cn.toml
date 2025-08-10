@@ -389,13 +389,13 @@ other = "ISRG"
 other = "为超过 ### 网站免费提供 TLS 证书的非营利证书颁发机构"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = "为超过"
 
 [home_hero_certificate_count]
 other = "650M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "网站免费提供 TLS 证书的非营利证书颁发机构"
 
 [projects_section_title]
 other = "我们促进互联网安全与隐私的其他方式"
