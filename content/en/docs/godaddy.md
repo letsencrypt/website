@@ -1,7 +1,7 @@
 ---
 title: "Let's Encrypt Certificates on GoDaddy Hosting"
 slug: godaddy
-lastmod: 2025-08-12
+lastmod: 2025-08-11
 show_lastmod: 1
 ---
 
