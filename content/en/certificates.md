@@ -8,7 +8,7 @@ show_lastmod: 1
 
 This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA.
 
-[![ISRG Certificate Hierarchy Diagram, as of June 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG Certificate Hierarchy Diagram, as of August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Root CAs
 
