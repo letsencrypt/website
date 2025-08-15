@@ -327,9 +327,9 @@ status = 301
 force = true
 
 [[redirects]]
-from = "https://cp-test.letsencrypt.org/"
+from = "https://cp-test.letsencrypt.org/*"
 to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.8/"
 
 [[redirects]]
-from = "https://cps-test.letsencrypt.org/"
+from = "https://cps-test.letsencrypt.org/*"
 to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.8/"
