@@ -1,7 +1,6 @@
 ---
 title: Grænser For kald
 slug: rate-limits
-date: 2018-01-04
 lastmod: 2025-06-12
 show_lastmod: true
 ---
@@ -97,8 +96,8 @@ overskridelse for en specifik konto.
 Et registreret domæne er generelt den del af domænet, du har købt
 hos din domænenavnsregistrant. For eksempel på `www.example.com`, er det
 registrerede domæne `example.com`. I `new.blog.example.co.uk`, er det registrerede
-domæne `eksempel.co.uk`. Vi bruger [Public Suffix
-List](https://publicsuffix.org/) til at identificere registrerede domæner.
+domæne `eksempel.co.uk`. Vi bruger Public Suffix
+List til at identificere registrerede domæner.
 
 Hvis du anmoder om et certifikat til en IP-adresse, vi forsøger også at behandle
 mest almindelige allokering (hvad du ville få fra din internetudbyder eller hosting-udbyder) som
@@ -208,7 +207,7 @@ fast for evigt i en løkke af fejlede valideringer.
 
 ### Grænse
 
-Op til 3.600 på hinanden følgende godkendelsesfejl per identifikator kan være afholdt af
+Op til 1.152 på hinanden følgende godkendelsesfejl per identifikator kan afholdes af
 én konto. Evnen til at pådrage sig autorisationsfejl genfylder med en hastighed på 1
 pr. værtsnavn hver dag og nulstiller til nul, hvis en autorisation til at værtsnavn
 er valideret med succes. Når den er overskredet, er kontoen forhindret i at
@@ -220,14 +219,14 @@ op til 49.999 yderligere pausede værtsnavne tilknyttet deres konto.
 | Fejl pr. dag | Pause tid                                               |
 | ---------------------------- | ------------------------------------------------------- |
 | 1                            | ∞ (aldrig sat på pause)              |
-| 2                            | 3.600 dage (9,86 år) |
-| 5                            | 900 dage (2,46 år)                   |
-| 10                           | 400 dage (1,10 år)                   |
-| 15                           | 257 dage (8,45 måneder)              |
-| 20                           | 189 dage (6,22 måneder)              |
-| 30                           | 124 dage (4,08 måneder)              |
-| 40                           | 92 dage (3,03 måneder)               |
-| 120                          | 30 dage                                                 |
+| 2                            | 1.152 dage (3,16 år) |
+| 5                            | 288 dage (9,46 måneder)              |
+| 10                           | 128 dage (4,21 måneder)              |
+| 15                           | 82 dage (2,70 måneder)               |
+| 20                           | 61 dage (1,99 måneder)               |
+| 30                           | 40 dage                                                 |
+| 40                           | 30 dage                                                 |
+| 120                          | 10 dage                                                 |
 
 ### Almindelige Årsager
 

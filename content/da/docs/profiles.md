@@ -1,8 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-date: 2025-04-21
-lastmod: 2025-06-09
+lastmod: 2025-07-31
 show_lastmod: false
 ---
 
@@ -144,7 +143,7 @@ Dette regulerer mængden af tid mellem [`notBefore` og `notAfter` tidsstempler](
 
 ### Tilbagekaldelsesoplysninger
 
-TLS klienter har brug for en måde at afgøre, om et certifikat er blevet tilbagekaldt. Generelt er der tre mekanismer til dette i Web PKI: Online Certificate Status Protocol (OCSP), Certifikattilbagekaldelseslister (CRL), og med en gyldighedsperiode så kort, at tilbagekaldelse er unødvendig. Dette felt angiver, om certifikater udstedt under en given profil har en OCSP-URL, en CRL-URL, begge dele eller ingen af dem.
+TLS klienter har brug for en måde at afgøre, om et certifikat er blevet tilbagekaldt. Generelt er der tre mekanismer til dette i Web PKI: Online Certificate Status Protocol (OCSP), Certifikattilbagekaldelseslister (CRL), og med en gyldighedsperiode så kort, at tilbagekaldelse er unødvendig. Bemærk, at Let's Encrypt ikke understøtter OCSP. Dette felt angiver, om certifikater udstedt under en given profil har en CRL URL eller ej.
 
 ### Maks Navne
 
