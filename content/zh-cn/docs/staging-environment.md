@@ -13,7 +13,9 @@ show_lastmod: 1
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-如果您使用的是 Certbot，可以通过 `--test-cert` 或 `--dry-run` 命令行选项使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。
+如果您使用的是 [Certbot](https://certbot.eff.org/)，可以通过 `--test-cert` 或 `--dry-run` 命令行选项使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。
+
+注意：不同环境的 ACME 账户也是独立的，因此使用测试环境需要另外注册账户。 Certbot 会自动为您处理这一问题。
 
 # 速率限制
 

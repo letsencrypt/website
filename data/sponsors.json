@@ -18,11 +18,7 @@
       "url": "https://www.mozilla.org/",
       "image": "mozilla-logo.png"
     },
-    {
-      "name": "Cisco",
-      "url": "https://www.cisco.com/",
-      "image": "cisco-logo.png"
-    },
+
     {
       "name": "Electronic Frontier Foundation",
       "url": "https://www.eff.org/",
@@ -31,6 +27,11 @@
     { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" }
   ],
   "gold": [
+    {
+      "name": "Cisco",
+      "url": "https://www.cisco.com/",
+      "image": "cisco-logo.png"
+    },
     {
       "name": "IdenTrust",
       "url": "https://www.identrust.com/",
@@ -343,6 +344,16 @@
       "name": "Gamma",
       "url": "https://gamma.app/",
       "image": "gamma-logo.png"
+    },
+    {
+      "name": "Slide",
+      "url": "https://slide.tech/",
+      "image": "slide-logo.svg"
+    },
+    {
+      "name": "Staffbase",
+      "url": "https://staffbase.com/",
+      "image": "staffbase-logo.png"
     }
   ]
 }
