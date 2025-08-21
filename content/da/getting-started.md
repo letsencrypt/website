@@ -12,7 +12,7 @@ Det første spørgsmål, der skal besvares for folk, der ønsker at komme i gang
 
 # At få certifikater via din værtsudbyder
 
-For mange mennesker, deres hosting udbyder vil få og administrere certifikater fra Let's Encrypt for dem. Hvis dette er din situation, vil din udbyder håndtere en ACME-klient, og du behøver ikke selv at tænke på at få eller håndtere ACME-klientsoftware.
+[For mange mennesker, deres hosting udbyder vil få og administrere certifikater fra Let's Encrypt for dem](https://certbot.eff.org/hosting_providers). Hvis dette er din situation, vil din udbyder håndtere en ACME-klient, og du behøver ikke selv at tænke på at få eller håndtere ACME-klientsoftware.
 
 Hvis din udbyder får og administrerer certifikater for dig, det vil enten ske automatisk, eller der vil være en konfigurationsmulighed, som du bliver nødt til at aktivere. Tjek din udbyders dokumentation og konfigurationsmuligheder.
 

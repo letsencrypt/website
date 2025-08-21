@@ -4,9 +4,28 @@ weight = 20
 url = "https://community.letsencrypt.org/"
 
 [[main]]
+name = "博客"
+weight = 25
+url = "/blog/"
+
+[[main]]
 name = "捐款"
 weight = 30
 identifier = "donate"
+
+[[main]]
+name = "成为赞助商"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "当前的赞助商和资助者"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
 
 [[main]]
 name = "关于我们"
@@ -14,8 +33,8 @@ weight = 40
 identifier = "about"
 
 [[main]]
-name = "互联网安全研究组（ISRG）"
-weight = 20
+name = "互联网安全研究组 (ISRG)"
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -29,14 +48,14 @@ url = "https://letsencrypt.status.io/"
 
 [[main]]
 name = "招贤纳士"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "成为赞助商"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
+name = "年度报告"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"

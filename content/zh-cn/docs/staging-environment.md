@@ -2,7 +2,7 @@
 title: 测试环境
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2024-06-11
+lastmod: 2025-05-12
 show_lastmod: 1
 ---
 
@@ -13,17 +13,33 @@ show_lastmod: 1
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-如果您使用的是 Certbot，可以通过 `--test-cert` 或 `--dry-run` 命令行选项使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。
+如果您使用的是 [Certbot](https://certbot.eff.org/)，可以通过 `--test-cert` 或 `--dry-run` 命令行选项使用我们的测试环境。 如果您使用的是其他 ACME 客户端，请阅读他们有关使用我们的测试环境进行测试的说明。
+
+注意：不同环境的 ACME 账户也是独立的，因此使用测试环境需要另外注册账户。 Certbot 会自动为您处理这一问题。
 
 # 速率限制
 
-测试环境使用与[生产环境类似](/docs/rate-limits)的速率限制，但具体数据有所变化：
+测试环境与[生产环境的速率限制](/docs/rate-limits)类似，但具体数值有所不同：
 
-* **每个注册域名允许颁发的证书数量**限制为每周 30000 张。
-* **重复证书**限制为每周 30000 张。
-* 每小时允许 60 次**验证失败**。
-* **每个 IP 地址注册账户数量**限制为每个 IP 每 3 小时允许注册 50 个账户。
-* 对于 ACME v2，**新订单**限制为每个帐户每 3 小时 1500 个。
+* **[单个 IP 地址注册限制](/docs/rate-limits/#new-registrations-per-ip-address)**为每 3 小时 50 次。
+* **[单个 IPv6 子网注册限制](/docs/rate-limits/#new-registrations-per-ipv6-range)**为每 3 小时 500 次（与生产环境相同）。
+* **[单个账户证书申请限制](/docs/rate-limits/#new-orders-per-account)**为每 3 小时 1500 次。
+* **[单个注册域名证书申请限制](/docs/rate-limits/#new-certificates-per-registered-domain)**为每秒 30000 次。
+* **[相同域名集合证书申请限制](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)**为每周 30000 次。
+* **[单个账户同一域名验证失败次数限制](/docs/rate-limits/#authorization-failures-per-hostname-per-account)**为每小时 200 次。
+* **[单个账户同一域名连续验证失败次数限制](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)**为每 6 小时 3600 次。
+
+[整体请求频率限制](/docs/rate-limits/#overall-requests-limit)为：
+
+| 接口                 | 单 IP 每秒请求上限 | 突发容量 |
+| ------------------ | ----------- | ---- |
+| /acme/new-nonce    | 20          | 10   |
+| /acme/new-account  | 5           | 15   |
+| /acme/new-order    | 20          | 40   |
+| /acme/revoke-cert  | 10          | 100  |
+| /acme/renewal-info | 1000        | 100  |
+| /acme/*            | 20          | 20   |
+| /directory         | 40          | 40   |
 
 # 测试证书层次结构
 
@@ -64,10 +80,14 @@ show_lastmod: 1
 
 # 证书透明化
 
-测试环境中的准证书会录入 Let's Encrypt 的 [Sapling](/docs/ct-logs) 以及 Google 的 [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) 两套证书透明化日志测试系统，产生的 SCT 将包含在颁发的证书中。
+测试环境也有专门用于测试的证书透明化日志系统， 为测试环境签发的证书提供 SCT。 但由于该环境仅供测试，通过证书透明化系统追踪证书的签发流程并不可靠。
+
+测试环境中的日志系统既包括 Let's Encrypt 自身运作的[测试日志](/docs/ct-logs#testing)，也包括其他团体运作的用于测试目的的证书透明化日志。
+
+此外，测试环境还可能包含某些 [ct-test-srv](https://pkg.go.dev/github.com/letsencrypt/boulder/test/ct-test-srv) 日志，但这些日志并非真实的日志系统，也不会存储签发的证书。
 
 # 持续集成/开发测试
 
-测试环境具有允许进行测试的更高速率限制，但是不建议与开发环境或持续集成服务（CI）集成。  向外部服务器发出网络请求可能会导致网络不稳定，并且测试环境无法“伪造” DNS或强制其他验证成功通过，这会使测试设置更加复杂。
+测试环境的速率限制较为宽松，但并不适合用于软件开发或持续集成 (CI)。 向外部服务器发出网络请求可能会导致网络不稳定，并且测试环境无法“伪造” DNS或强制其他验证成功通过，这会使测试设置更加复杂。
 
 除了测试环境外，Let's Encrypt还提供了一个专用于CI和开发环境的小型ACME服务器，称为[Pebble](https://github.com/letsencrypt/pebble)。  您可以[快速而简单的](https://github.com/letsencrypt/pebble#docker)在开发机器或CI环境中运行Pebble。

@@ -1,30 +1,31 @@
 ---
 title: 术语表
 slug: glossary
-date: 2024-07-16
+lastmod: 2025-07-31
 show_lastmod: 1
+description: "Let's Encrypt 所使用的 SSL/TLS 证书、HTTPS 以及网络安全相关术语的汇总表。"
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
-    abbr="an accronym (optional)"
+    abbr="an acronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
-    
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
 
 -->
 
-{{% def id="AIA" name="颁发机构信息访问" english="Authority Information Access" abbr="AIA" %}} 用于提示[用户代理](#def-user-agent)获取[证书](#def-certificate)颁发者信息的方法的证书[扩展](#def-extension)。 它通常会指定用于 [OCSP](#def-OCSP) 的 URI 地址和[颁发者的 URI 地址](#def-CAI)。  {{% /def %}}
+{{% def id="AIA" name="颁发机构信息访问" english="Authority Information Access" abbr="AIA" %}} 用于提示[用户代理](#def-user-agent)获取[证书](#def-certificate)颁发者信息的方法的证书[扩展](#def-extension)。 通常包含[证书颁发机构的网址](#def-CAI)。  {{% /def %}}
 
 {{% def id="ACME" name="自动证书管理环境" english="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} 由 [Let's Encrypt](#def-LE) 实现的协议。 与该协议兼容的软件可以用它与 Let's Encrypt 通信以获取[证书](#def-leaf)。 参见 [ACME RFC](https://tools.ietf.org/html/rfc8555) 和[维基百科条目](https://zh.wikipedia.org/zh-cn/%E8%87%AA%E5%8B%95%E6%86%91%E8%AD%89%E6%9B%B4%E6%96%B0%E7%92%B0%E5%A2%83)。 {{% /def %}}
 
@@ -80,7 +81,7 @@ Note for translators:
 
 {{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" abbr="DV 证书" abbr_first="1" %}} 此类[证书](#def-leaf)的申请者仅证明了其对域名（而非自称的组织团体）的控制权。 [Let's Encrypt](#def-LE) 只提供 DV 证书，不提供 [OV](#def-OV) 及 [EV](#def-EV) 证书。参见[常见问题](/docs/faq)和[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
-{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用椭圆曲线密码学的数字签名算法（DSA）。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
+{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用椭圆曲线密码学的数字签名算法 (DSA)。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} [EdDSA](#def-EdDSA) 的一种类型，类似的还有 Ed448。  {{% /def %}}
 
@@ -112,13 +113,13 @@ Note for translators:
 
 {{% def id="mixed-content" name="混合内容" english="Mixed content" %}} 在 HTTPS 网页中通过 HTTP 加载子资源（JavaScript、CSS 或图片）。 [浏览器](#def-web-browser)可能会屏蔽混合内容，或将含有混合内容的页面标为不安全：https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content。 要解决混合内容的问题，网页开发者必须把所有资源都改为使用 HTTPS 链接。 通过浏览器内置的[开发者工具](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)可以找到哪些资源存在混合内容的问题。  {{% /def %}}
 
-{{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 一种检查[证书](#def-leaf)是否已被[吊销](#def-revocation)的方式。 也就是询问[证书颁发机构](#def-CA)，某一份证书是否尚未到期就已提前失效。 这种方式存在隐私问题，因为证书颁发机构和网络运营商都能得知谁访问了哪些网站。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE)。 {{% /def %}}
+{{% def id="OCSP" name="在线证书状态协议" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} 一种检查[证书](#def-leaf)是否已被[吊销](#def-revocation)的方式。 也就是询问[证书颁发机构](#def-CA)，某一份证书是否尚未到期就已提前失效。 这种方式存在隐私问题，因为证书颁发机构和网络运营商都能得知谁访问了哪些网站。 [Let's Encrypt](#def-LE) 现已停止提供 OCSP 服务。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%9C%A8%E7%BA%BF%E8%AF%81%E4%B9%A6%E7%8A%B6%E6%80%81%E5%8D%8F%E8%AE%AE)。 {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP 强制装订" english="OCSP Must-Staple" %}} 一种[证书](#def-leaf)扩展，告知[浏览器](#def-web-browser)使用此证书的[网页服务器](#def-web-server)必须采用 [OCSP 装订](#def-OCSP-stapling)。 这能保证每次连接时[证书](#def-leaf)的实时[吊销](#def-revocation)状态都能得到服务器确认，使吊销机制更加可靠。 [Let's Encrypt](#def-LE) 可以根据申请颁发带有 OCSP 强制装订[扩展](#def-extension)的证书。 参见 [Mozilla 安全博客文章](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/)和 [RFC 7633](https://tools.ietf.org/html/rfc7633)。 {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP 强制装订" english="OCSP Must-Staple" %}} 一种[证书](#def-leaf)扩展，告知[浏览器](#def-web-browser)使用此证书的[网页服务器](#def-web-server)必须采用 [OCSP 装订](#def-OCSP-stapling)。 这能保证每次连接时[证书](#def-leaf)的实时[吊销](#def-revocation)状态都能得到服务器确认，使吊销机制更加可靠。 [Let's Encrypt](#def-LE) 现已不再支持此功能。 [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP 装订" english="OCSP stapling" %}} [网页服务器](#def-web-server)将[证书颁发机构](#def-CA)签名的 [OCSP](#def-OCSP) 响应直接发送给[浏览器](#def-web-browser)，使浏览器不必再自行询问证书颁发机构，从而提升网页加载速度并保护用户隐私。 这种方式也称为 TLS 证书状态请求扩展。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/OCSP%E8%A3%85%E8%AE%A2)和 [Cloudflare 博客文章](https://blog.cloudflare.com/high-reliability-ocsp-stapling/)。 {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP 装订" english="OCSP stapling" %}} [网页服务器](#def-web-server)将[证书颁发机构](#def-CA)签名的 [OCSP](#def-OCSP) 响应直接发送给[浏览器](#def-web-browser)，使浏览器不必再自行询问证书颁发机构，从而提升网页加载速度并保护用户隐私。 这种方式也称为 TLS 证书状态请求扩展。 需要注意的是 [Let's Encrypt](#def-LE) 现已不再支持 OCSP。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/OCSP%E8%A3%85%E8%AE%A2)和 [Cloudflare 博客文章](https://blog.cloudflare.com/high-reliability-ocsp-stapling/)。 {{% /def %}}
 
-{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" abbr_first="1" %}} 一种全球唯一的数字型标识符，由国际电信联盟（ITU）和 ISO/IEC 标准化。 OID 在证书中用于定义扩展、字段和制度声明， 具体用法由互联网协议、[证书颁发制度](#def-CP)和[证书运作声明](#def-CPS)规定。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%89%A9%E4%BB%B6%E8%AD%98%E8%BE%A8%E7%AC%A6)。 {{% /def %}}
+{{% def id="OID" name="对象标识符" english="Object identifier" abbr="OID" abbr_first="1" %}} 一种全球唯一的数字型标识符，由国际电信联盟 (ITU) 和 ISO/IEC 标准化。 OID 在证书中用于定义扩展、字段和制度声明， 具体用法由互联网协议、[证书颁发制度](#def-CP)和[证书运作声明](#def-CPS)规定。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%89%A9%E4%BB%B6%E8%AD%98%E8%BE%A8%E7%AC%A6)。 {{% /def %}}
 
 {{% def id="OV" name="组织验证" english="Organization Validation" abbr="OV" abbr_first="1" %}} [CA](#def-CA) 核实[用户](#def-subscriber)的法人身份后颁发的证书， 此类证书含有该法人的相关信息。 [Let's Encrypt](#def-LE) 不提供 OV 证书。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E7%B5%84%E7%B9%94%E9%A9%97%E8%AD%89%EF%BC%88OV%EF%BC%89)。 {{% /def %}}
 
@@ -136,7 +137,7 @@ Note for translators:
 
 {{% def id="relying-party" name="依赖方" english="Relying Party" %}} 需要使用证书中的信息的人， 例如 HTTPS 网站的用户。  {{% /def %}}
 
-{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在到期前始终有效，除非 [CA](#def-CA) 声明该证书已被提前吊销。 吊销的原因有很多种，比如私钥泄露。 浏览器可以通过 [CRL](#def-CRL)、[OCSP](#def-OCSP) 或 [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/)、[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) 等较新的方式核实证书是否已被吊销。 需要注意的是，[吊销证书经常无法起到作用](https://www.imperialviolet.org/2011/03/18/revocation.html)。 \[/docs/revoking\](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="吊销" english="Revocation" %}} 证书在到期前始终有效，除非 [CA](#def-CA) 声明该证书已被提前吊销。 吊销的原因有很多种，比如私钥泄露。 浏览器可以通过 [CRL](#def-CRL) 或 [CRLite](https://github.com/mozilla/crlite/)、[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) 等新兴的方式核实证书是否已被吊销。 需要注意的是，[证书吊销在很多情况下达不到预期的效果](https://www.imperialviolet.org/2011/03/18/revocation.html)。 \[/docs/revoking\](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="根证书" english="Root certificate" %}} 一份由[证书颁发机构](#def-CA)控制的[自签名证书](#def-self-signed)，收录于各[证书库](#def-store)中，用于签发其[中间证书](#def-intermediate)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E6%A0%B9%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
@@ -158,13 +159,13 @@ Note for translators:
 
 {{% def id="subscriber" name="用户" english="Subscriber" %}} 申请证书的个人或组织。  {{% /def %}}
 
-{{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名（ccTLD），又如 `.com`、`.org` 等通用顶级域名（gTLD）。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
+{{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名 (ccTLD)，又如 `.com`、`.org` 等通用顶级域名 (gTLD)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
 
 {{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。  {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。 {{% /def %}}
 
-{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称（SAN）](#def-SAN)的证书的一种称呼。  {{% /def %}}
+{{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称 (SAN)](#def-SAN) 的证书的一种称呼。  {{% /def %}}
 
 {{% def id="web-browser" name="网页浏览器" english="Web Browser" %}} 一类用于显示网页内容的[用户代理](#def-user-agent)， 例如 *Mozilla Firefox*、*Google Chrome* 和 *Safari*。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E7%BD%91%E9%A1%B5%E6%B5%8F%E8%A7%88%E5%99%A8)。{{% /def %}}
 

@@ -1,13 +1,12 @@
 ---
-title: 证书颁发机构授权（CAA）
+title: 证书颁发机构授权 (CAA)
 slug: caa
-date: 2017-07-27
 lastmod: 2023-08-16
 show_lastmod: 1
 ---
 
 
-CAA 是一类 DNS 记录，网站所有者可以通过它规定哪些证书颁发机构（CA）有权为其域名颁发证书。 2013 年 CAA 首次实现标准化，我们现在使用的则是 2019 年由 [RFC 8659](https://datatracker.ietf.org/doc/html/rfc8659) 和 [RFC 8657](https://datatracker.ietf.org/doc/html/rfc8657) 修订的版本。 默认情况下，只要核验了域名归属，所有公共 CA 都能为任一公开 DNS 域名颁发证书。 这意味着但凡有一家 CA 的验证流程出现问题，全球所有域名的安全性都将受其影响。 而 CAA 能帮助域名持有者减轻这一风险。
+CAA 是一类 DNS 记录，网站所有者可以通过它规定哪些证书颁发机构 (CA) 有权为其域名颁发证书。 2013 年 CAA 首次实现标准化，我们现在使用的则是 2019 年由 [RFC 8659](https://datatracker.ietf.org/doc/html/rfc8659) 和 [RFC 8657](https://datatracker.ietf.org/doc/html/rfc8657) 修订的版本。 默认情况下，只要核验了域名归属，所有公共 CA 都能为任一公开 DNS 域名颁发证书。 这意味着但凡有一家 CA 的验证流程出现问题，全球所有域名的安全性都将受其影响。 而 CAA 能帮助域名持有者减轻这一风险。
 
 # 使用 CAA 记录
 

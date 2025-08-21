@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "components/post-hero-image" (dict "page" . "image" "images/donate-hero.jpg" "title" .Title) }}
+<div id="donate-2025-page">
+  <div class="container mx-auto py-8 prose-content">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+      <div>{{ partial "funding-details.html" . }}</div>
+      <div class="relative">
+        <div id="donate-form-anchor"></div>
+        <div class="md:absolute right-0 top-0 w-full z-50">{{ partial "donorbox.html" . }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-le-blue">
+    <div class="container mx-auto py-8 prose-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+        <div>{{ partial "donate-accordion.html" . }}</div>
+        <div class="relative">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto py-8 prose-content">
+    {{ partial "testimonial-section.html" . }}
+  </div>
+</div>
+{{ end }}

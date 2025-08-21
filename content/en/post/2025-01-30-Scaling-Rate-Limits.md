@@ -5,7 +5,7 @@ slug: Scaling-Rate-Limits
 title: "Scaling Our Rate Limits to Prepare for a Billion Active Certificates"
 excerpt: "We've evolved our rate limits to better serve our subscribers and keep our service healthy."
 display_default_footer: true
-display_newsletter_embed: false
+display_inline_newsletter_embed: false
 ---
 
 Let's Encrypt protects a vast portion of the Web by providing TLS certificates to over [550 million websites](https://letsencrypt.org/stats/)&mdash;a figure that has grown by 42% in the last year alone. We currently issue over 340,000 certificates per hour. To manage this immense traffic and maintain responsiveness under high demand, our infrastructure relies on [rate limiting](https://letsencrypt.org/docs/rate-limits/). In 2015, we introduced our first rate limiting system, built on MariaDB. It evolved alongside our rapidly growing service but eventually revealed its limits: straining database servers, forcing long reset times on subscribers, and slowing down every request.

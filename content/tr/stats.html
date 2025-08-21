@@ -1,4 +1,35 @@
 ---
+title: Let's Encrypt İstatistikleri
+linkTitle: İstatistikler
 slug: stats
-untranslated: 1
+excerpt: Let's Encrypt sertifika istatistikleri.
+lastmod: 2023-02-28
+menu:
+  main:
+    weight: 70
+    parent: about
 ---
+
+
+<p><em>Let's Encrypt Büyüme ve Verilen Günlük Let's Encrypt Sertifika Sayısı çizelgelerinin güncellemeden geçtiğini ve en yakın zamandaki verileri yansıtmayabileceğini lütfen göz önünde bulundurun.</em></p>
+
+<div class="figure">
+  <h2><a id="growth" href="#growth"
+    >Let's Encrypt Büyüme</a></h2>
+  <div id="activeUsage" title="Let's Encrypt Büyüme" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="percent-pageloads" href="#percent-pageloads"
+    >HTTPS Kullanarak Firefox Tarafından Yüklenmiş Web Sayfası Yüzdesi</a></h2>
+  <p>(14-günlük hareketli ortalama, kaynak:<a href="https://docs.telemetry.mozilla.org/datasets/other/ssl/reference.html">Firefox Telemetry</a>)</p>
+  <div id="pageloadPercent" title="HTTPS Kullanarak Firefox Tarafından Yüklenmiş Web Sayfası Yüzdesi" class="statsgraph"></div>
+</div>
+
+<div class="figure">
+  <h2><a id="daily-issuance" href="#daily-issuance"
+    >Verilen Günlük Let's Encrypt Sertifika Sayısı</a></h2>
+  <div id="issuancePerDay" title="Verilen Günlük Let's Encrypt Sertifika Sayısı" class="statsgraph"></div>
+</div>
+
+{{< plotly >}}

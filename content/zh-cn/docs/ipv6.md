@@ -1,7 +1,6 @@
 ---
-title: IPv6支持
+title: IPv6 支持
 slug: ipv6-support
-date: 2020-02-07
 lastmod: 2020-02-07
 show_lastmod: 1
 ---

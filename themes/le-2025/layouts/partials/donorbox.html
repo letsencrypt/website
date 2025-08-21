@@ -1,0 +1,25 @@
+{{ $scratch := newScratch }}
+
+<!-- note for translators: please test the url https://donorbox.org/embed/support-lets-encrypt?recurring=true&hide_donation_meter=true&language=XXX before adding a new language -->
+{{ if eq .Page.Language.Lang "fr"  }}
+  {{ $scratch.Set "lang" "fr" }}
+{{ else if eq .Page.Language.Lang "de" }}
+  {{ $scratch.Set "lang" "de" }}
+{{ else if eq .Page.Language.Lang "pt-br" }}
+  {{ $scratch.Set "lang" "pt" }}
+{{ else if eq .Page.Language.Lang "zh-cn" }}
+  {{ $scratch.Set "lang" "zh" }}
+{{ else if eq .Page.Language.Lang "zh-tw" }}
+  {{ $scratch.Set "lang" "zh" }}
+{{ else if eq .Page.Language.Lang "es" }}
+  {{ $scratch.Set "lang" "es" }}
+{{ else if eq .Page.Language.Lang "ja" }}
+  {{ $scratch.Set "lang" "ja" }}
+{{ else if eq .Page.Language.Lang "sv" }}
+  {{ $scratch.Set "lang" "sv" }}
+{{ end }}
+
+<div class="text-center mb-4 donorbox-container">
+  <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+  <iframe src="https://donorbox.org/embed/support-lets-encrypt?hide_donation_meter=true&language={{ $scratch.Get "lang" }}" name="donorbox" id="dbox-form-embed"  name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="685px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important"></iframe>
+</div>

@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Frequently Asked Questions (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -69,13 +69,15 @@ Email encryption and code signing require a different type of certificate that L
 
 No. Never.
 
-The private key is always generated and managed on your own servers, not by the Let's Encrypt Certificate Authority.
+The private key is always generated and managed on your own servers, not by Let's Encrypt.
 
 ## What is the lifetime for Let's Encrypt certificates? For how long are they valid?
 
-Our certificates are valid for 90 days. You can read about why [here](/2015/11/09/why-90-days.html).
+Our default certificates are valid for 90 days. You can read about why [here](/2015/11/09/why-90-days.html).
 
-There is no way to adjust this, there are no exceptions. We recommend automatically renewing your certificates every 60 days.
+Subscribers can opt in to short-lived certificates which are valid for six days. You can read about these [here](/2025/02/20/first-short-lived-cert-issued.html).
+
+There is no way to adjust these lifetimes, there are no exceptions. We recommend renewing 90 day certificates every 60 days and six day certificates every three days.
 
 ## Will Let's Encrypt issue Organization Validation (OV) or Extended Validation (EV) certificates?
 
@@ -87,7 +89,7 @@ Yes, the same certificate can contain several different names using the Subject 
 
 ## Does Let's Encrypt issue wildcard certificates?
 
-Yes. Wildcard issuance must be done via ACMEv2 using the [DNS-01 challenge](/docs/challenge-types/#dns-01-challenge). See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
+Yes. Wildcard issuance must use the [DNS-01 challenge](/docs/challenge-types/#dns-01-challenge). See [this post](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for more technical information.
 
 ## Is there a Let's Encrypt (ACME) client for my operating system?
 
@@ -107,7 +109,7 @@ We don't publish a list of IP addresses we use to validate, and these IP address
 
 ## I successfully renewed a certificate but validation didn't happen this time - how is that possible?
 
-Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for 30 days from the time of validation.
+Once you successfully complete the challenges for a domain, the resulting authorization is cached for your account to use again later. Cached authorizations last for up to 30 days from the time of validation, depending on the associated [profile](/docs/profiles).
 If the certificate you requested has all of the necessary authorizations cached then validation will not happen again until the relevant cached authorizations expire.
 
 ## Why should my Let's Encrypt (ACME) client run at a random time?

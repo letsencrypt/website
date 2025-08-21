@@ -6,7 +6,7 @@ title: "An Engineer’s Guide to Integrating ARI into Existing ACME Clients"
 excerpt: "Six steps developers can take to integrate ARI into an existing ACME client."
 ---
 
-Following our [previous](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari) post on the foundational benefits of ACME Renewal Information ([ARI](https://datatracker.ietf.org/doc/draft-ietf-acme-ari/)), this one offers a detailed technical guide for incorporating ARI into existing ACME clients.
+Following our [previous](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari) post on the foundational benefits of ACME Renewal Information ([ARI](https://datatracker.ietf.org/doc/rfc9773/)), this one offers a detailed technical guide for incorporating ARI into existing ACME clients.
 
 Since its introduction in March 2023, ARI has significantly enhanced the resiliency and reliability of certificate revocation and renewal for a growing number of Subscribers. To extend these benefits to an even broader audience, incorporating ARI into more ACME clients is essential.
 
@@ -126,7 +126,7 @@ Next, we'll cover how to use the 'suggestedWindow' to determine the best time to
 
 ### **Step 5: Selecting a specific renewal time**
 
-[draft-ietf-acme-ari](https://datatracker.ietf.org/doc/draft-ietf-acme-ari/) provides a suggested algorithm for determining when to renew a certificate. This algorithm is not mandatory, but it is recommended.
+[RFC 9773](https://datatracker.ietf.org/doc/rfc9773/) provides a suggested algorithm for determining when to renew a certificate. This algorithm is not mandatory, but it is recommended.
 
 1. Select a uniform random time within the suggested window.
 

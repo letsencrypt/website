@@ -1,0 +1,45 @@
+<section class="section-padding {{ .class }}">
+  <div class="section-container">
+    <div class="{{ if not (eq .textAlign "center") }}{{ if and (not .imageSrc) .fullWidth }}{{ else }}grid md:grid-cols-2 gap-12 items-center{{ end }}{{ end }}">
+      <div class="{{ if eq .textAlign "center" }}text-center max-w-2xl mx-auto{{ else if and (not .imageSrc) .fullWidth }}max-w-3xl{{ else }}max-w-xl{{ end }}">
+        {{ with .eyebrow }}
+          <div class="text-eyebrow mb-4">{{ . }}</div>
+        {{ end }}
+        {{ $headingLevel := default "h2" .headingLevel }}
+        {{ if eq $headingLevel "h1" }}<h1 class="text-hero-heading mb-6">{{ .title }}</h1>{{ end }}
+        {{ if eq $headingLevel "h2" }}<h2 class="text-hero-heading mb-6">{{ .title }}</h2>{{ end }}
+        {{ if eq $headingLevel "h3" }}<h3 class="text-hero-heading-md mb-6">{{ .title }}</h3>{{ end }}
+        {{ if eq $headingLevel "h4" }}<h4 class="text-hero-heading mb-6">{{ .title }}</h4>{{ end }}
+        {{ if eq $headingLevel "h5" }}<h5 class="text-hero-heading mb-6">{{ .title }}</h5>{{ end }}
+        {{ if eq $headingLevel "h6" }}<h6 class="text-hero-heading mb-6">{{ .title }}</h6>{{ end }}
+        <p class="text-hero-body mb-8">{{ .description }}</p>
+        <div class="flex flex-wrap gap-4 {{ if eq .textAlign "center" }}justify-center{{ end }}">
+          {{ if and .buttonText .buttonUrl }}
+            <a href="{{ .buttonUrl }}" class="btn btn-primary">
+              {{ .buttonText }}
+            </a>
+          {{ end }}
+          {{ if and .secondaryButtonText .secondaryButtonUrl }}
+            <a href="{{ .secondaryButtonUrl }}" class="btn btn-secondary">
+              {{ .secondaryButtonText }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ if and .imageSrc (not (eq .textAlign "center")) }}
+        <div class="relative">
+          <img src="{{ .imageSrc }}"
+               alt="{{ .imageAlt }}"
+               class="rounded-lg object-cover w-full">
+        </div>
+      {{ end }}
+    </div>
+    {{ if and .imageSrc (eq .textAlign "center") }}
+      <div class="mt-12 max-w-md mx-auto">
+        <img src="{{ .imageSrc }}"
+             alt="{{ .imageAlt }}"
+             class="rounded-lg object-cover w-full">
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,82 +1,158 @@
-# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
-
 [home_hero_title]
-other = "Let&rsquo;s Encrypt 是<span>免費</span>、<span>自動化</span>和<span>開放</span>的憑證頒發機構"
+other = "面向所有人的資料加密。為超過五億網站免費提供 TLS 證書的非營利組織。"
 
 [home_hero_getting_started]
-other = "入門"
+other = "開始入門"
 
 [home_hero_donate]
 other = "捐贈"
 
 [home_hero_sponsor]
-other = "贊助"
+other = "贊助者"
+
+[home_hero_annual_report]
+other = "我們這一年來的非營利工作詳情可在 <a href='https://abetterinternet.org/annual-reports/'>2024 年度報告</a>中查閱。"
 
 [home_major_sponsors]
-other = "主要贊助商和捐助者"
+other = "核心贊助商"
 
 [home_from_our_blog]
-other = "部落格文章"
+other = "部落格"
 
 [read_more]
-other = "閱讀更多"
+other = "閱讀全文"
 
 [subscribe_rss]
-other = "通過<a href=\"{{ .Permalink }}\">RSS</a>訂閱"
+other = '<a href="{{ .Permalink }}">RSS 訂閱</a>'
 
 [footer_support_us]
-other = "支持更安全，更尊重私隱的網際網路."
+other = "支援更安全、更尊重隱私的網路。"
 
 [footer_donate]
-other = "捐贈"
+other = "立即捐款"
 
 [footer_mailing]
-other = "將所有信件和問題發送至："
+other = "郵件諮詢可發送至："
+
+[footer_legal_address]
+other = "註冊地址"
 
 [footer_policies]
 other = """
-查看我們的<a href="/zh-tw/privacy/">私隱政策</a>.<br>
-查看我們的<a href="https://www.abetterinternet.org/trademarks/">商標政策</a>.
-"""
+閱讀我們的<a href="/zh-tw/privacy/">隱私政策</a>。<br>
+閱讀我們的<a href="https://www.abetterinternet.org/trademarks">商標政策</a>。
+閱讀我們的<a href="https://www.abetterinternet.org/terms-of-service">服務條款</a>。"""
+
+[footer_links]
+other = '<a href="/privacy/">隱私政策</a> <a href="https://www.abetterinternet.org/trademarks">商標政策</a>'
 
 [header_skip_nav]
 other = "跳過導航連結"
 
 [last_updated]
-other = "最後更新於"
+other = "最近更新："
 
 [see_all_doc]
-other = "查看所有文件"
+other = "所有文件"
 
 [blog_feed]
-other = "Let's Encrypt部落格動態消息"
+other = "Let's Encrypt 部落格訂閱源"
+
+[diamond]
+other = "鑽石級"
 
 [platinum]
-other = "白金"
+other = "白金級"
 
 [gold]
-other = "金"
+other = "黃金級"
+
+[gold_basic]
+other = "普通黃金級"
 
 [silver]
-other = "銀"
+other = "白銀級"
 
 [languages]
 other = "語言"
 
 [view_in_english]
-other = "查看英文版本"
+other = "閱讀英文頁面"
 
 [old_version]
-other = "請注意：英文版本（原版）在本翻譯後有改動"
+other = "注意：本頁面有較新的英文版本。"
 
 [not_yet_translated]
-other = "該網頁暫時未被翻譯。 您可以點擊 <a href=\"https://github.com/letsencrypt/website\">此處</a> 幫助我們翻譯此網頁。"
+other = '此頁面尚未翻譯。 要貢獻翻譯，請<a href="https://crowdin.com/project/lets-encrypt-website">點擊此處</a>。'
 
 [english_is_canonical]
 other = "此頁內容請以英文頁面為準"
 
+[graph_issued]
+other = "頒發數量"
+
+[graph_certificates_active]
+other = "活躍證書數量"
+
+[graph_fully_qualified_domains_active]
+other = "活躍的完全限定域名數量"
+
+[graph_registered_domains_active]
+other = "活躍的註冊域名數量"
+
+[graph_active_count]
+other = "活躍數量"
+
+[graph_issued_per_day]
+other = "每日頒發數量"
+
+[graph_all_users]
+other = "所有使用者"
+
+[graph_usa_users]
+other = "美國使用者"
+
+[graph_japan_users]
+other = "日本使用者"
+
+[graph_percent_https]
+other = "通過 HTTPS 載入的頁面百分比（14日移動平均）"
+
+[certificate_policy]
+other = "證書策略"
+
+[certificate_transparency_name]
+other = "名稱"
+
+[certificate_transparency_role_production]
+other = "生產環境日誌"
+
+[certificate_transparency_role_testing]
+other = "測試環境日誌"
+
+[certificate_transparency_uri]
+other = "連結"
+
+[certificate_transparency_public_key]
+other = "公鑰"
+
+[certificate_transparency_log_id]
+other = "日誌 ID"
+
+[certificate_transparency_state]
+other = "狀態"
+
+[certificate_transparency_window_start]
+other = "開始視窗"
+
+[certificate_transparency_window_end]
+other = "結束視窗"
+
+[certification_practices_statement]
+other = "證書實踐宣告"
+
 [overview]
-other = "總覽"
+other = "概述"
 
 [subscriber_information]
 other = "使用者資訊"
@@ -85,23 +161,388 @@ other = "使用者資訊"
 other = "進階使用者資訊"
 
 [client_developer_information]
-other = "客戶端開發資訊"
+other = "用戶端開發者資訊"
 
 [acme_divergences]
-other = "當前ACME草案變化"
+other = "與目前 ACME 草案的不同"
+
+[acme_divergences_rfc]
+other = "與 ACME RFC 規範的區別"
+
+[onboarding_customers]
+other = "引導您的新客戶使用 Let's Encrypt 和 ACME"
+
+[paypal_donate_alt]
+other = "PayPal 捐款"
+
+[paypal_donate_title]
+other = "使用PayPal捐款"
+
+[not_found]
+other = "這個頁面不存在，請檢查網址。"
 
 [amount_per_year]
-# Ex. $10.000/yr (USD)
-other = "每年 ${{ .nb }} (USD)"
+other = "每年 ${{ .nb }} （美元）"
 
 [3y_commitment]
 other = "（三年承諾捐助）"
 
 [1_99_employees]
-other = "（1-99 位員工）"
+other = "（員工人數小於 100 人）"
 
 [100_999_employees]
-other = "（100-1000 位員工）"
+other = "（員工人數在 100 到 999 之間）"
 
 [1000_employees]
-other = "（大於 1000 位員工）"
+other = "（員工人數大於 1000 人）"
+
+[subscribe_to_newsletter_headline]
+other = "訂閱 Let's Encrypt 和其他 ISRG 項目的最新資訊"
+
+[site_banner_text]
+other = "推動構建更加光明的網路，ISRG 成立十周年慶 →"
+
+[internet_security_research_group]
+other = "網路安全研究組"
+
+[header_donate_now]
+other = "立即捐款"
+
+[toggle_menu_aria_label]
+other = "切換選單"
+
+[isrg_legal_address_label]
+other = "註冊地址"
+
+[isrg_mailing_label]
+other = "郵件諮詢可發送至："
+
+[newsletter_subscribe_heading]
+other = "訂閱 Let's Encrypt 和其他 ISRG 項目的最新資訊"
+
+[footer_nav_github]
+other = "GitHub"
+
+[footer_nav_linkedin]
+other = "LinkedIn"
+
+[footer_nav_terms]
+other = "服務條款"
+
+[footer_nav_privacy]
+other = "隱私政策"
+
+[footer_nav_trademark]
+other = "商標政策"
+
+[home_hero_heading]
+other = "面向所有人的<br />資料加密"
+
+[home_hero_subheading]
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+
+[home_hero_get_started]
+other = "快速入門"
+
+[home_hero_annual_report_title]
+other = "深入了解我們促進安全與隱私的事業"
+
+[home_hero_annual_report_description]
+other = "我們的 2024 年度報告突出體現了在促進網路良性發展方面我們所作出的貢獻。"
+
+[home_hero_annual_report_button]
+other = "閱讀年度報告"
+
+[getting_started_eyebrow]
+other = "免費且自動化的 TLS 證書"
+
+[getting_started_heading]
+other = "入門指南"
+
+[getting_started_description]
+other = "Let's Encrypt 是一家免費提供 TLS 證書的證書頒發機構，簡化了網站開啟 HTTPS 加密的流程，從而為所有人構建更加安全的網路。Let's Encrypt 項目由非營利組織網路安全研究組發起。"
+
+[getting_started_ready_title]
+other = "準備就緒？"
+
+[getting_started_ready_content]
+other = "使用 Let's Encrypt 提供的免費 SSL/TLS 證書為您的網站增強安全性。在獲得證書之前，您需要先證明您對網站域名的控制權。"
+
+[getting_started_ready_link]
+other = "立即開始"
+
+[getting_started_docs_title]
+other = "文件"
+
+[getting_started_docs_content]
+other = "了解我們的證書籤發流程和最佳實踐。"
+
+[getting_started_docs_link]
+other = "閱讀文件"
+
+[getting_started_clients_title]
+other = "ACME 用戶端"
+
+[getting_started_clients_content]
+other = "使用我們推薦的 ACME 用戶端程式自動管理您的證書。"
+
+[getting_started_clients_link]
+other = "瀏覽 ACME 用戶端"
+
+[getting_started_help_title]
+other = "獲取 Let's Encrypt 社群協助"
+
+[getting_started_help_content]
+other = "加入我們的社群論壇即可與各方專家、志願者以及 ISRG 團隊成員交流、分享經驗或尋求技術支援。"
+
+[getting_started_help_link]
+other = "前往論壇"
+
+[support_heading_entire_sentence]
+other = "全球影響力的形成離不開公益理念、社群貢獻、各方資助與您的支援"
+
+[support_heading_base]
+other = "全球影響力的形成離不開"
+
+[support_heading_word1]
+other = "公益理念"
+
+[support_heading_word2]
+other = "社群貢獻"
+
+[support_heading_word3]
+other = "各方資助"
+
+[support_heading_word4]
+other = "您的支援"
+
+[support_donate_title]
+other = "支援面向所有人的資料加密"
+
+[support_donate_description]
+other = "您的捐款將幫助 Let's Encrypt 持續為全球數百萬網站提供免費而可靠的服務。無論您是個人還是企業，都可以貢獻一份寶貴的力量，與我們共同構建更加安全的網路。"
+
+[support_donate_button]
+other = "立即捐款"
+
+[support_sponsor_title]
+other = "領先得益於贊助"
+
+[support_sponsor_description]
+other = "對我們的網路加密工作有所依賴或重視的企業都可以考慮在經濟上資助 Let's Encrypt。正是依靠大大小小的企業慷慨相助，我們的事業才得以延續至今！"
+
+[support_sponsor_button]
+other = "了解如何贊助"
+
+[sponsors_heading]
+other = "核心贊助商"
+
+[sponsors_diamond]
+other = "鑽石級贊助商"
+
+[sponsors_platinum]
+other = "白金級贊助商"
+
+[sponsors_gold]
+other = "黃金級贊助商"
+
+[sponsors_silver]
+other = "白銀級贊助商"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "郵件訂閱表單"
+
+[blog_section_heading]
+other = "部落格精選"
+
+[blog_section_see_all]
+other = "瀏覽所有部落格文章"
+
+[post_hero_last_updated]
+other = "最近更新："
+
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
+[post_hero_breadcrumb_blog]
+other = "部落格"
+
+[donate_get_involved_button]
+other = "幫助 Let's Encrypt"
+
+[donate_individual_impact_eyebrow]
+other = "個人的力量"
+
+[donate_encryption_everybody_alt]
+other = "面向所有人的資料加密"
+
+[project_card_visit]
+other = "前往"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "為超過 ### 網站免費提供 TLS 證書的非營利證書頒發機構"
+
+[home_hero_nonprofit_prefix]
+other = "A nonprofit providing free TLS certificates to more than"
+
+[home_hero_certificate_count]
+other = "650M"
+
+[home_hero_nonprofit_suffix]
+other = "websites"
+
+[projects_section_title]
+other = "我們促進網路安全與隱私的其他方式"
+
+[projects_section_description]
+other = "您知道 Let's Encrypt 還有兩個孿生項目嗎？這兩個項目與 Let's Encrypt 的運營方都是網路安全研究組 (ISRG)，一家致力於使網路更加安全且尊重隱私的 501(c)(3) 公益組織。"
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "致力於推動網路關鍵基礎設施使用記憶體安全的程式語言，從而增強網路安全性。"
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "一套基於多方協同計算以尊重隱私的指標採集與匯總系統。"
+
+[support_donate_section_title]
+other = "支援面向所有人的資料加密"
+
+[support_donate_section_description]
+other = "您的捐款將幫助 Let's Encrypt 持續為全球數百萬網站提供免費而可靠的服務。無論您是個人還是企業，都可以貢獻一份寶貴的力量，與我們共同構建更加安全的網路。"
+
+[support_donate_section_button]
+other = "立即捐款"
+
+[support_sponsor_section_title]
+other = "領先得益於贊助"
+
+[support_sponsor_section_description]
+other = "對我們的網路加密工作有所依賴或重視的企業都可以考慮在經濟上資助 Let's Encrypt。正是依靠大大小小的企業慷慨相助，我們的事業才得以延續至今！"
+
+[support_sponsor_section_button]
+other = "了解如何贊助"
+
+[stats_section_title]
+other = "Let's Encrypt 發展趨勢"
+
+[stats_section_button]
+other = "更多統計資料"
+
+[donate_page_make_recurring_donation_title]
+other = "Make a Recurring Donation"
+
+[donate_page_make_recurring_donation_content]
+other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+
+[donate_page_make_recurring_donation_link]
+other = "Start your recurring donation now"
+
+[donate_page_stock_donations_title]
+other = "Donations of Stock"
+
+[donate_page_crypto_gifts_title]
+other = "Gifts of Cryptocurrency"
+
+[donate_page_other_ways_title]
+other = "Other Ways to Give"
+
+[donate_page_ways_to_give_heading]
+other = "WAYS TO GIVE"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "of the funding for Let's Encrypt comes from charitable contributions."
+
+[donate_page_funding_details_why_support_heading]
+other = "WHY SUPPORT?"
+
+[donate_page_funding_details_list_item1]
+other = "Free, automated, and easy to use TLS certificates."
+
+[donate_page_funding_details_list_item2]
+other = "We make it easy to use one or one million certs."
+
+[donate_page_funding_details_list_item3]
+other = "You make HTTPS possible all around the world."
+
+[donate_page_funding_details_list_item4]
+other = "Help us continue operating at a truly global scale."
+
+[donate_page_stock_intro_text]
+other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+
+[donate_page_stock_table_brokerage_firm]
+other = "Brokerage Firm:"
+
+[donate_page_stock_table_account_name]
+other = "Account Name:"
+
+[donate_page_stock_table_account_number]
+other = "ISRG Account #:"
+
+[donate_page_stock_table_dtc_number]
+other = "DTC #:"
+
+[donate_page_stock_table_tax_id]
+other = "Tax ID #:"
+
+[donate_page_stock_outro_text]
+other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+
+[donate_page_other_daf_heading]
+other = "Donor Advised Funds"
+
+[donate_page_other_daf_text]
+other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+
+[donate_page_other_workplace_heading]
+other = "In Your Workplace"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "贊助"
+
+[donate_page_other_workplace_matching_gifts]
+other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+
+[donate_page_crypto_text]
+other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+
+[donate_page_crypto_link_text]
+other = "here"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
+
+[testimonial_section_button_text]
+other = "JOIN TIMMY. BE A NERD."
+
+[testimonial_section_image_alt]
+other = "Timmy, a supporter of Let's Encrypt"
+
+[testimonial_section_footer_line1]
+other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
+
+[testimonial_section_footer_line2]
+other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
+
+[testimonial_section_footer_line3]
+other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

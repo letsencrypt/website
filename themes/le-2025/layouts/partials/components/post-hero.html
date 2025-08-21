@@ -1,0 +1,42 @@
+{{ $style := .style | default dict }}
+{{ $background := index $style "background" | default "gray" }}
+{{ $padding := index $style "padding" | default "small" }}
+
+{{ $backgroundClass := "" }}
+{{ if eq $background "gray" }}
+  {{ $backgroundClass = "" }}
+{{ end }}
+
+{{ $paddingClass := cond (eq $padding "large") "py-16" "py-8" }}
+
+<section class="post-hero {{ $backgroundClass }} {{ $paddingClass }}">
+
+    <div class="narrow-container mx-auto">
+    <div class="post-hero__inner border-l border-le-yellow box-border pl-4 flex flex-col gap-2">
+      {{ with .breadcrumb }}
+        <div class="post-hero__breadcrumb">
+          <a class="" href="{{ .href }}">{{ .text }}</a>
+        </div>
+      {{ end }}
+      <h1 class="post-hero__title mb-0">{{ .title }}</h1>
+      {{ with .meta }}
+        <div class="post-hero__meta">
+          {{ with .author }}By {{ . }} · {{ end }}
+          {{ with .date }}
+            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := . | time.Format ":date_long" }}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if and .lastUpdated (ne .section "post") }}
+        <div class="post-hero__last-updated text-xs text-gray-100">
+          {{ i18n "post_hero_last_updated" }} {{ .lastUpdated }}
+          {{ if .fresherEnglishURL }}<br><a href="{{ .fresherEnglishURL }}">{{ i18n "post_hero_fresher_english" }}</a>{{ end }}
+          {{ if eq .section "docs" }}<br><a href="{{ "docs" | relLangURL }}">{{ i18n "see_all_doc" }}</a>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+    </div>
+
+</section>

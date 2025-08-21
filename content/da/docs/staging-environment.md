@@ -2,7 +2,7 @@
 title: Stagning Miljø
 slug: staging-environment
 date: 2018-01-05
-lastmod: 2024-06-11
+lastmod: 2025-05-12
 show_lastmod: 1
 ---
 
@@ -13,17 +13,33 @@ ACME-URL'en til vores [ACME v2 staging miljø](https://community.letsencrypt.org
 
 `https://acme-staging-v02.api.letsencrypt.org/directory`
 
-Hvis du bruger Certbot, kan du bruge vores staging miljø med flaget `--test-cert` eller `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø.
+Hvis du bruger [Certbot](https://certbot.eff.org/), kan du bruge vores staging miljø med flaget `--test-cert` eller `--dry-run`. For andre ACME-klienter bedes du læse deres anvisninger for information om test med vores staging miljø.
+
+Bemærk, at ACME-konti er begrænset til hvert miljø, og derfor er der brug for en separat konto til staging miljøet. Certbot håndterer dette for dig.
 
 # Grænser For kald
 
 Staging miljøet bruger de samme kaldsbegrænsninger som [beskrevet for produktionsmiljøet](/docs/rate-limits) med følgende undtagelser:
 
-* Grænsen for **Certifikater pr. registreret domæne** er 30.000 pr. uge.
-* Grænsen for **Duplikat certifikater** er 30.000 om ugen.
-* Grænsen for **Mislykkede Valideringer** er 60 i timen.
-* Grænsen for **Konti pr. IP-adresse** er 50 konti pr. 3 timers periode pr. IP.
-* For ACME v2 er grænsen på **nye ordrer** 1.500 nye ordrer pr. 3 timers periode pr. konto.
+* **[Nye Registreringer pr. IP-adresse](/docs/rate-limits/#new-registrations-per-ip-address)** grænsen er 50 pr 3 timer.
+* **[Nye Registreringer pr. IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** grænsen er 500 pr 3 timer (samme som produktion).
+* **[Nye Ordrer pr. konto](/docs/rate-limits/#new-orders-per-account)** grænsen er 1500 pr 3 timer.
+* Grænsen for **[Certifikater pr. registreret domæne](/docs/rate-limits/#new-certificates-per-registered-domain)** er 30000 pr sekund.
+* **[Nye Certifikater pr. eksakt sæt værtsnavne](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** grænsen er 30000 om ugen.
+* **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** grænsen er 200 pr time.
+* **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** grænsen er 3600 pr 6 timer.
+
+De samlede [forespørgsler grænser](/docs/rate-limits/#overall-requests-limit) er:
+
+| Endpoint           | Anmodninger pr. IP (pr. sekund) | Maksimal kaldskapacitet |
+| ------------------ | ------------------------------- | ----------------------- |
+| /acme/new-nonce    | 20                              | 10                      |
+| /acme/new-account  | 5                               | 15                      |
+| /acme/new-order    | 20                              | 40                      |
+| /acme/revoke-cert  | 10                              | 100                     |
+| /acme/renewal-info | 1000                            | 100                     |
+| /acme/*            | 20                              | 20                      |
+| /directory         | 40                              | 40                      |
 
 # Staging miljøets Certifikat Hierarki
 
@@ -64,7 +80,11 @@ Disse mellemliggende certifikater er under forandring når som helst, og bør ik
 
 # Certifikatets Gennemsigtighed
 
-Staging miljøet indsender præ-certifikater til Let's Encrypt [Testflume](/docs/ct-logs) og Google [testtube](http://www.certificate-transparency.org/known-logs#TOC-Test-Logs) CT-testlogs og omfatter returnerede SCT'er i de udstedte certifikater.
+Staging miljøet bruger flere test CT logs. SCT'er fra disse logs er inkluderet i staging certifikater. Bemærk at staging kun er et testmiljø, og CT kan ikke bruges til at observere udstedte staging certifikater pålideligt.
+
+Disse logs omfatter Let's Encrypt [Testing Logs](/docs/ct-logs#testing)samt test logs fra andre Certificate Transparency Log-operatører.
+
+Desuden kan nogle [ct-test-srv](https://pkg.go.dev/github.com/letsencrypt/boulder/test/ct-test-srv) logs bruges, som ikke er faktiske logs og ikke lagrer udstedte certifikater.
 
 # Løbende Integration / Udviklingstest
 

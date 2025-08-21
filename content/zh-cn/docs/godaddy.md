@@ -1,20 +1,15 @@
 ---
-title: "在GoDaddy服务器内使用Let's Encrypt证书"
+title: "在 GoDaddy 平台上使用 Let's Encrypt 证书"
 slug: godaddy
-date: 2019-12-02
-lastmod: 2019-12-02
+lastmod: 2025-08-11
 show_lastmod: 1
 ---
 
+我们收到了很多关于如何在 GoDaddy 平台上使用 Let’s Encrypt 证书的问题。 GoDaddy 不支持通过 [ACME 协议](https://tools.ietf.org/html/rfc8555)自动完成证书的申请与续期， 而是提供了一项自动续期的[付费功能](https://www.godaddy.com/web-security/ssl-certificate)，只能用于由他们所签发的证书。
 
-我们收到了很多关于如何在GoDaddy服务器内使用Let's Encrypt证书的问题。 目前GoDaddy共享主机很难安装Let's Encrypt证书，所以我们不建议您在GoDaddy服务内使用Let's Encrypt证书。 这是因为GoDaddy不支持使用[ACME协议][1]进行自动化的证书颁发和续签。 因为GoDaddy对自己的证书颁发机构签发的证书提供自动续订服务，这是一项[附加功能][2]。（注： GoDaddy证书为付费证书）
+目前我们不建议在 GoDaddy 上使用我们的证书，因为其操作流程复杂，且无法自动化实现。 但我们认为，自动续期是证书管理中至关重要的一部分， 由软件实现的自动续期能够大幅降低证书过期失效的风险。
 
-我们不建议在不直接支持ACME协议的托管服务商内使用Let's Encrypt证书， 因为这意味着您无法完全自动续期证书。 自动证书续期是使用Let's Encrypt证书必不可少的部分。 使用软件进行证书的自动续期和更新可以大大减少您忘记续期证书而导致网站证书过期的可能性。 如果您的证书过期，那么用户将无法访问您的网站，这会负面影响您网站的用户。
+如果您仍想尝试在 GoDaddy 平台上使用 Let’s Encrypt 证书，有以下途径可以考虑：
 
-因为我们坚信自动续期的必要性，所以我们在设计签发证书流程时把ACME自动化铭记在心。 Let's Encrypt证书旨在颁发60天后自动续订，如果没有成功续订将在签发后90天停止工作（过期）。
-
-如果您在了解了上述问题后仍旧决定尝试在GoDaddy共享主机内安装并维护Let's Encrypt证书，您可以遵循GoDaddy提供的[操作流程][3]。 请注意，该流程十分复杂且耗时，并且您应该每60天（而不是链接页面上描述的每90天）执行一次。
-
-[1]: https://tools.ietf.org/html/rfc8555
-[2]: https://www.godaddy.com/web-security/ssl-certificate
-[3]: https://www.godaddy.com/help/install-a-lets-encrypt-certificate-on-your-cpanel-hosting-account-28023
+1. 使用 Griffin Software 开发的 [CertSage](https://certsage.com/) 软件。 GoDaddy 平台上的其他 Let's Encrypt 用户已有成功的先例。
+2. 遵循 GoDaddy 提供的[操作指引](https://www.godaddy.com/help/install-a-lets-encrypt-certificate-on-your-cpanel-hosting-account-28023)， 但我们无法保证其信息的准确性和正确性。 请注意，该流程非常耗时，并且每次证书到期前都需要您手动执行。

@@ -1,0 +1,54 @@
+<div class="bg-gray-50">
+  <div class="container mx-auto section-padding-2xl px-4">
+    <div class="grid gap-16 md:grid-cols-2">
+      <div class="flex flex-col min-h-full">
+        <div class="space-y-6">
+          <div class="text-eyebrow text-black">{{ T "getting_started_eyebrow" }}</div>
+          <h1 class="text-4xl font-bold text-black">{{ T "getting_started_heading" }}</h1>
+          <p class="text-black text-lg leading-relaxed">
+            {{ T "getting_started_description" }}
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="w-full accordion-container">
+          {{ partial "components/accordion-item" (dict
+            "id" "ready"
+            "title" (T "getting_started_ready_title")
+            "content" (T "getting_started_ready_content")
+            "link_url" "/getting-started"
+            "link_text" (T "getting_started_ready_link")
+            "is_open" true
+          ) }}
+
+          {{ partial "components/accordion-item" (dict
+            "id" "docs"
+            "title" (T "getting_started_docs_title")
+            "content" (T "getting_started_docs_content")
+            "link_url" "/docs"
+            "link_text" (T "getting_started_docs_link")
+          ) }}
+
+          {{ partial "components/accordion-item" (dict
+            "id" "clients"
+            "title" (T "getting_started_clients_title")
+            "content" (T "getting_started_clients_content")
+            "link_url" "/docs/client-options"
+            "link_text" (T "getting_started_clients_link")
+          ) }}
+
+          {{ partial "components/accordion-item" (dict
+            "id" "help"
+            "title" (T "getting_started_help_title")
+            "content" (T "getting_started_help_content")
+            "link_url" "https://community.letsencrypt.org/"
+            "link_text" (T "getting_started_help_link")
+            "last" true
+          ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

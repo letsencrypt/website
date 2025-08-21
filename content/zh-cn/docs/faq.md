@@ -1,8 +1,8 @@
 ---
 title: 常见问题
-linkTitle: 常见问题（FAQ）
+linkTitle: 常见问题 (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -19,9 +19,9 @@ show_lastmod: 1
 
 ## Let's Encrypt 提供哪些服务？
 
-Let's Encrypt 是一家全球性的证书颁发机构（CA）， 为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。 网站可以使用我们的证书来启用安全的 HTTPS 连接。
+Let's Encrypt 是一家全球性的证书颁发机构 (CA)， 为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。 网站可以使用我们的证书来启用安全的 HTTPS 连接。
 
-Let's Encrypt 提供域名验证型（DV）证书。 我们不提供组织验证（OV）或扩展验证（EV），这主要是因为我们无法自动化地颁发这些类型的证书。
+Let's Encrypt 仅提供域名验证 (DV) 证书， 不提供组织验证 (OV) 和扩展验证 (EV) 证书，主要原因是我们无法自动颁发这两类证书。
 
 前往我们的[快速入门](/getting-started)页面即可开始使用 Let's Encrypt。
 
@@ -69,37 +69,39 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 不会。 永远不会。
 
-私钥的生成和管理始终由您自己的服务器而不是 Let's Encrypt 证书颁发机构进行。
+私钥只能由您自己的服务器生成并管理，与 Let's Encrypt 无关。
 
 ## Let's Encrypt 证书的有效期有多长？ 能够使用多久？
 
-我们的证书有效期为 90 天。 其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
+我们的证书有效期默认为 90 天， 其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
 
-这一期限不能调整，也没有例外。 我们建议您每 60 天自动续期一次证书。
+用户也可以选择有效期为 6 天的短期证书， 详见[此处](/2025/02/20/first-short-lived-cert-issued.html)。
 
-## Let's Encrypt 能颁发组织验证（OV）或扩展验证（EV）型证书吗？
+除上述情形外证书有效期不能随意调整，任何用户都不例外。 我们建议有效期为 90 天的证书每 60 天续期一次，有效期为 6 天的证书每 3 天续期一次。
+
+## Let's Encrypt 能颁发组织验证 (OV) 或扩展验证 (EV) 证书吗？
 
 我们没有计划颁发 OV 或 EV 证书。
 
 ## 我可以获得针对多个域名的证书（SAN 证书或 UCC 证书）吗？
 
-是的，可以使用主体备用名称（SAN）机制使同一份证书包含多个不同的名称。
+是的，同一份证书可以通过主体备用名称 (SAN) 机制包含多个不同的名称。
 
 ## Let's Encrypt 颁发通配符证书吗？
 
-是的。 通配符证书必须通过 ACMEv2 采用 [DNS-01 质询](/docs/challenge-types/#dns-01-challenge)签发。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+是的。 申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-challenge)。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
-## 是否有 Let's Encrypt（ACME）客户端支持我的操作系统？
+## 我的操作系统有可以使用的 Let's Encrypt (ACME) 客户端吗？
 
 您有大量的 [ACME 客户端](/docs/client-options)可以选择。 其中很可能就有支持您操作系统的客户端。 我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
 
-## 我可以使用现有的私钥或证书签名请求（CSR）吗？
+## 我可以使用已有的私钥或证书签名请求 (CSR) 吗？
 
 是的，但并非所有客户端都支持此功能。 [Certbot](https://certbot.eff.org/) 是支持的。
 
 ## 申请证书后我的域名流量剧增！ 为什么会这样？
 
-这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
+这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化 (CT) 日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
@@ -107,11 +109,11 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## 我的证书成功续期，但这次却不需要验证，为什么？
 
-域名验证通过后，结果会保留一段时间， 30 天内有效。 如果您申请证书时所有验证结果都还未过期，就无需重复验证。
+域名验证通过后，结果会保留一段时间， 根据所选的[证书配置](/docs/profiles)，最长可以保留 30 天。 如果您申请证书时所有验证结果都还未过期，就无需重复验证。
 
 ## 为什么我的 Let's Encrypt (ACME) 客户端启动时间应当随机？
 
-我们要求 [ACME 客户端在随机的时间点执行证书续期](https://letsencrypt.org/docs/integration-guide/#when-to-renew)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时会要求客户端[稍后重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
+我们要求 [ACME 客户端在随机的时间点执行证书续期](https://letsencrypt.org/docs/integration-guide/#when-to-renew)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
 
 ## 在哪里可以深入了解 TLS/SSL 与 PKI 的相关知识？
 

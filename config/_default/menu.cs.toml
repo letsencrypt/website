@@ -4,9 +4,28 @@ weight = 20
 url = "https://community.letsencrypt.org/"
 
 [[main]]
-name = "Přispějte"
+name = "Blog"
+weight = 25
+url = "/blog/"
+
+[[main]]
+name = "Přispět"
 weight = 30
 identifier = "donate"
+
+[[main]]
+name = "Staňte se sponzory"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Současní sponzoři a investoři"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
 
 [[main]]
 name = "O nás"
@@ -15,7 +34,7 @@ identifier = "about"
 
 [[main]]
 name = "Internet Security Research Group (ISRG)"
-weight = 20
+weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
@@ -29,14 +48,14 @@ url = "https://letsencrypt.status.io/"
 
 [[main]]
 name = "Zaměstnání"
-weight = 80
+weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Staňte se sponzory"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
+name = "Výroční zprávy"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"

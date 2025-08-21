@@ -1,0 +1,19 @@
+{{ $currentLang := .currentLang }}
+{{ if ne $currentLang "en" }}
+  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en" target="_blank">
+{{ else }}
+  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en">
+{{ end }}
+  <time class="text-gray-500 text-sm">{{ .page.Date.Format "January 2, 2006" }}</time>
+  <h3 class="text-xl font-bold mt-2 mb-3 text-gray-900">{{ .page.Title }}</h3>
+  <div class="text-gray-600">
+    {{ with .page.Params.excerpt }}
+      {{ . | markdownify }}
+    {{ else }}
+      {{ .page.Summary }}
+    {{ end }}
+  </div>
+  <div class="absolute bottom-6 left-6">
+    <span class="font-medium text-link group-hover:text-link-hover">{{ i18n "read_more" }}{{ i18n "common_read_more_arrow" }}</span>
+  </div>
+</a>

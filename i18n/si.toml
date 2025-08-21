@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "වියමන අඩවි <a href='/stats/'>දශලක්‍ෂ 500</a> කට ටීඑල්එස් සහතික ලබා දෙන ලාභ නොලබන සහතික අධිකාරියකි."
+other = "සැමට සංකේතනය. වියමන අඩවි දශලක්‍ෂ 500 කට වඩා නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි."
 
 [home_hero_getting_started]
 other = "පටන්ගන්න"
@@ -11,13 +11,13 @@ other = "පරිත්‍යාග"
 other = "අනුග්‍රහය"
 
 [home_hero_annual_report]
-other = "අපට සැබෑ ලොව සංකේතන කලාව සඳහා වන ලෙව්චින් ත්‍යාගය හිමි විය! <a href='https://abetterinternet.org/levchin-prize'>තව දැනගන්න</a>"
+other = "මෙම වසරේ අපගේ ලාභ නොලබන වැඩ සියල්ල <a href='https://abetterinternet.org/annual-reports/'>2024 වාර්ෂික වාර්තාවේ</a> කියවන්න."
 
 [home_major_sponsors]
-other = "ප්‍රධාන අනුග්‍රාහකයින් සහ මූල්‍යදායකයින්"
+other = "ප්‍රධාන අනුග්‍රහකයින් සහ මූල්‍යදායකයින්"
 
 [home_from_our_blog]
-other = "ලිපිපෙළ වෙතින්"
+other = "ලඝුපත"
 
 [read_more]
 other = "තව කියවන්න"
@@ -29,19 +29,25 @@ other = '<a href="{{ .Permalink }}">RSS</a> අනුසන් කරන්න'
 other = "වඩාත් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට ගරු කරන වියමනකට සහාය වන්න."
 
 [footer_donate]
-other = "පරිත්‍යාග"
+other = "පරිත්‍යාග කරන්න"
 
 [footer_mailing]
-other = "වෙත සියළුම තැපැල් හෝ විමසීම් යවන්න:"
+other = "සියළුම තැපැල් හෝ විමසීම්:"
+
+[footer_legal_address]
+other = "නෛතික ලිපිනය"
 
 [footer_policies]
 other = """
-අපගේ <a href="/privacy/">රහස්‍යතා ප්‍රතිපත්තිය</a> දකින්න.<br>
-අපගේ <a href="https://www.abetterinternet.org/trademarks">වෙළඳලකුණු ප්‍රතිපත්තිය</a> දකින්න.
+අපගේ <a href="/privacy/">රහස්‍යතා ප්‍රතිපත්තිය බලන්න</a>.<br>
+අපගේ <a href="https://www.abetterinternet.org/trademarks">වෙළඳ ලකුණු ප්‍රතිපත්තිය බලන්න</a>.<br>
+අපගේ <a href="https://www.abetterinternet.org/terms-of-service">සේවා නියම බලන්න</a>.
 """
 
-[linux_foundation_trademark]
-other = "ලිනක්ස් ෆවුන්ඩේෂන් යනු ද ලිනක්ස් ෆවුන්ඩේෂන් හි ලියාපදිංචි වෙළඳ ලකුණයි. ලිනක්ස් යනු ලිනස් ටොර්වල්ඩ්ස් ගේ ලියාපදිංචි වෙළඳ ලකුණකි."
+[footer_links]
+other = """
+<a href="/privacy/">රහස්‍යතා ප්‍රතිපත්තිය</a> <a href="https://www.abetterinternet.org/trademarks">වෙළඳ ලකුණු ප්‍රතිපත්තිය</a>
+"""
 
 [header_skip_nav]
 other = "යාත්‍රණ සබැඳි මඟහරින්න"
@@ -53,7 +59,10 @@ other = "අවසන් යාවත්කාලය: "
 other = "සියළුම ප්‍රලේඛන දකින්න"
 
 [blog_feed]
-other = "ලෙට්'ස් එන්ක්‍රිප්ට් ලිපි සංග්‍රහය"
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් ලඝුපත් සංග්‍රහය"
+
+[diamond]
+other = "දියමන්ති"
 
 [platinum]
 other = "ප්ලැටිනම්"
@@ -77,7 +86,7 @@ other = "ඉංග්‍රීසියෙන් දකින්න"
 other = "සටහන: පරිවර්තනයෙන් පසු ඉංග්‍රීසි අනුවාදය යාවත්කාල වී ඇත"
 
 [not_yet_translated]
-other = 'මෙම වියමන පිටුව තවමත් පරිවර්තනය කර නැත. ඔබට <a href="https://github.com/letsencrypt/website">මෙතැනින්</a> දායක විය හැකිය.'
+other = 'මෙම වියමන පිටුව තවමත් පරිවර්තනය කර නැත. ඔබට <a href="https://crowdin.com/project/lets-encrypt-website">මෙතැනින්</a> දායක විය හැකිය.'
 
 [english_is_canonical]
 other = "ඉංග්‍රීසි අනුවාදය ප්‍රාමාණිකයි"
@@ -101,13 +110,13 @@ other = "ක්‍රියාත්මක ගණන"
 other = "දිනකට නිකුත් කිරීම්"
 
 [graph_all_users]
-other = "සියළුම පරිශීලකයින්"
+other = "සියළු පරිශ්‍රීලකයින්"
 
 [graph_usa_users]
-other = "එ.ජන. පරිශීලකයින්"
+other = "එ.ජන. පරිශ්‍රීලකයින්"
 
 [graph_japan_users]
-other = "ජපන් පරිශීලකයින්"
+other = "ජපන් පරිශ්‍රීලකයින්"
 
 [graph_percent_https]
 other = "HTTPS හරහා පූරණය වූ පිටු ප්‍රතිශතය (දවස් 14 චල මධ්‍යකය)"
@@ -189,3 +198,354 @@ other = "සේවයකයින් 100-999"
 
 [1000_employees]
 other = "සේවයකයින් 1000+"
+
+[subscribe_to_newsletter_headline]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් සහ අනෙකුත් ISRG ව්‍යාපෘති පිළිබඳ වි-තැපැල් යාවත්කාල ලබා ගන්න"
+
+[site_banner_text]
+other = "දීප්තිමත් අන්තර්ජාලයක් තැනීමට උදව් කිරීමේ 10 වන සංවත්සරය ISRG සමරයි →"
+
+[internet_security_research_group]
+other = "අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහය"
+
+[header_donate_now]
+other = "පරිත්‍යාග කරන්න"
+
+[toggle_menu_aria_label]
+other = "තේරීම් වට්ටෝරුව"
+
+[isrg_legal_address_label]
+other = "නෛතික ලිපිනය"
+
+[isrg_mailing_label]
+other = "සියළුම තැපැල් හෝ විමසීම්:"
+
+[newsletter_subscribe_heading]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් සහ අනෙකුත් ISRG ව්‍යාපෘති පිළිබඳ වි-තැපැල් යාවත්කාල ලබා ගන්න"
+
+[footer_nav_github]
+other = "ගිට්හබ්"
+
+[footer_nav_linkedin]
+other = "ලින්ක්ඩින්"
+
+[footer_nav_terms]
+other = "නියම"
+
+[footer_nav_privacy]
+other = "රහස්‍යතා ප්‍රතිපත්තිය"
+
+[footer_nav_trademark]
+other = "වෙළඳ ලකුණු ප්‍රතිපත්තිය"
+
+[home_hero_heading]
+other = "සැමට <br /> සංකේතනය"
+
+[home_hero_subheading]
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+
+[home_hero_get_started]
+other = "පටන්ගන්න"
+
+[home_hero_annual_report_title]
+other = "ආරක්‍ෂාව සහ පෞද්ගලිකත්‍වය වැඩි දියුණුව උදෙසා අපගේ කාර්ය ගවේශනය කරන්න"
+
+[home_hero_annual_report_description]
+other = "යහපත් අන්තර්ජාලයක් උදෙසා අප ලද ප්‍රගතිය අපගේ 2024 වාර්ෂික වාර්තාවෙන් ඉස්මතු කරයි."
+
+[home_hero_annual_report_button]
+other = "වාර්ෂික වාර්තාව කියවන්න"
+
+[getting_started_eyebrow]
+other = "නොමිලේ, ස්වයංක්‍රීය TLS සහතික"
+
+[getting_started_heading]
+other = "පටන් ගන්න"
+
+[getting_started_description]
+other = "වියමන අඩවි වලට HTTPS සංකේතනය සබල කිරීමට සහ සැමට වඩාත් ආරක්‍ෂිත අන්තර්ජාලයක් සෑදීමට පහසු කරන ලෙට්'ස් එන්ක්‍රිප්ට් යනු නොමිලේ TLS සහතික සපයන සහතික අධිකාරියකි. ලෙට්'ස් එන්ක්‍රිප්ට් යනු ලාභ නොලබන අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහයේ ව්‍යාපෘතියකි."
+
+[getting_started_ready_title]
+other = "ආරම්භයට සූදානම්ද?"
+
+[getting_started_ready_content]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් නොමිලේ SSL/TLS සහතික සමඟ ඔබගේ වියමන අඩවි සුරක්‍ෂිත කරන්න. ඔබගේ අඩවියේ වසම සඳහා සහතිකයක් ලබා ගැනීමට ඔබ වසම කෙරෙහි පාලනය ආදර්ශනය කළ යුතුය."
+
+[getting_started_ready_link]
+other = "අපි පටන් ගනිමු"
+
+[getting_started_docs_title]
+other = "ප්‍රලේඛනය"
+
+[getting_started_docs_content]
+other = "අපගේ සහතික නිකුත් කරන ක්‍රියාවලිය සහ හොඳම පිළිවෙත් ගැන දැනගන්න."
+
+[getting_started_docs_link]
+other = "ප්‍රලේඛනය කියවන්න"
+
+[getting_started_clients_title]
+other = "ACME අනුග්‍රාහකයින්"
+
+[getting_started_clients_content]
+other = "ඔබගේ සහතික ස්වයංක්‍රීයව කළමනාකරණයට අපගේ නිර්දේශිත ACME අනුග්‍රාහකයක් තෝරන්න."
+
+[getting_started_clients_link]
+other = "ACME අනුග්‍රාහකයින් පිරික්සන්න"
+
+[getting_started_help_title]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් ප්‍රජාවෙන් උදව් ගන්න"
+
+[getting_started_help_content]
+other = "ප්‍රවීණයින්, ස්වේච්ඡයින් සහ ISRG කාර්ය මණ්ඩලය සමඟ තාක්‍ෂණික සහාය සහ දැනුම බෙදා ගැනීමට අපගේ ප්‍රජා සංසදයට එක්වන්න."
+
+[getting_started_help_link]
+other = "සංසදයට ගොඩවදින්න"
+
+[support_heading_entire_sentence]
+other = "ත්‍යාගශ්‍රීලීත්‍වය, දායකත්‍ව, අනුග්‍රහකත්‍ව සහ ඔබ නිසා ගෝලීය බලපෑමක් කළ හැකි විය"
+
+[support_heading_base]
+other = "ගෝලීය බලපෑම කළ හැකි වූයේ"
+
+[support_heading_word1]
+other = "ත්‍යාගශ්‍රීලීත්‍වය"
+
+[support_heading_word2]
+other = "දායකත්‍ව"
+
+[support_heading_word3]
+other = "අනුග්‍රහකත්‍වය"
+
+[support_heading_word4]
+other = "ඔබ"
+
+[support_donate_title]
+other = "සැමට සංකේතනයට සහාය වන්න"
+
+[support_donate_description]
+other = "ඔබගේ පරිත්‍යාගය ලොව පුරා දශලක්‍ෂ ගණනක් අඩවි වලට ලෙට්'ස් එන්ක්‍රිප්ට් නොමිලේ සහ ප්‍රවේශ්‍යව තබා ගැනීමට උපකාරී වේ. අන්තර්ජාලය ආරක්‍ෂා කිරීමට අප සමඟ එක්වන්න, වරකට එක් අඩවියක්. ඔබ පුද්ගලයෙක් හෝ සමාගමක් වුවත් සෑම දායකත්‍වයක්ම වෙනසක් ඇති කරයි."
+
+[support_donate_button]
+other = "පරිත්‍යාග කරන්න"
+
+[support_sponsor_title]
+other = "අනුග්‍රහකත්‍වයෙන් පෙරටුව"
+
+[support_sponsor_description]
+other = "වියමන සංකේතනයට අපගේ කර්තව්‍යය මත විශ්වාසය තබන හෝ අගය කරන සමාගම් වලට ලෙට්'ස් එන්ක්‍රිප්ට් සමඟ මූල්‍යමය වශයෙන් සහාය විය හැකිය. මෙහි සාර්ථකත්‍වය වෙනුවෙන් විශාල හා කුඩා සමාගම් එක්වන්න!"
+
+[support_sponsor_button]
+other = "අනුග්‍රහකත්‍වය ගැන දැනගන්න"
+
+[sponsors_heading]
+other = "ප්‍රධාන අනුග්‍රහකයින් සහ මූල්‍යදායකයින්"
+
+[sponsors_diamond]
+other = "දියමන්ති අනුග්‍රහකයින්"
+
+[sponsors_platinum]
+other = "ප්ලැටිනම් අනුග්‍රහකයින්"
+
+[sponsors_gold]
+other = "රන් අනුග්‍රහකයින්"
+
+[sponsors_silver]
+other = "රිදී අනුග්‍රහකයින්"
+
+[common_read_more_arrow]
+other = " →"
+
+[newsletter_iframe_title]
+other = "පුවත් පත්‍රිකා ලියාපදිංචි ආකෘතිපත්‍රය"
+
+[blog_section_heading]
+other = "ලඝුපත වෙතින්"
+
+[blog_section_see_all]
+other = "අපගේ සියළුම ලඝුපත් බලන්න"
+
+[post_hero_last_updated]
+other = "අවසන් යාවත්කාලය:"
+
+[post_hero_fresher_english]
+other = "More recently updated page available in English"
+
+[post_hero_breadcrumb_blog]
+other = "ලඝුපත"
+
+[donate_get_involved_button]
+other = "එක් වන්න"
+
+[donate_individual_impact_eyebrow]
+other = "පුද්ගල බලපෑම"
+
+[donate_encryption_everybody_alt]
+other = "සැමට සංකේතනය"
+
+[project_card_visit]
+other = "ගොඩවදින්න"
+
+[internet_security_research_group_initials]
+other = "ISRG"
+
+[home_hero_nonprofit_sentence]
+other = "වියමන අඩවි ### කට වඩා නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි"
+
+[home_hero_nonprofit_prefix]
+other = "නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි"
+
+[home_hero_certificate_count]
+other = "650M"
+
+[home_hero_nonprofit_suffix]
+other = "වියමන අඩවි"
+
+[projects_section_title]
+other = "අපි ආරක්‍ෂාව සහ පෞද්ගලිකත්‍වය වැඩි දියුණු කරන තවත් ක්‍රම"
+
+[projects_section_description]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් සතුව සහෝදර ව්‍යාපෘති දෙකක් තිබෙන බව ඔබ දැන සිටියාද? අන්තර්ජාලය වඩාත් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට නැඹුරුව කෙරෙහි අවධානය යොමු කරන 501(c)(3) මහජන ප්‍රතිලාභ සංවිධානයක් වන අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහය (ISRG) යටතේ ලෙට්'ස් එන්ක්‍රිප්ට් සහ මෙම ව්‍යාපෘති දෙක නඩත්තු වේ."
+
+[project_prossimo_name]
+other = "Prossimo"
+
+[project_prossimo_description]
+other = "මතක ආරක්‍ෂිත ක්‍රමලේඛන භාෂා භාවිතයෙන් තීරණාත්මක අන්තර්ජාල යටිතල ව්‍යුහ වල මතක ආරක්‍ෂාව කෙරෙහි අවධානය යොමු කරයි."
+
+[project_divviup_name]
+other = "Divvi Up"
+
+[project_divviup_description]
+other = "බහු-පාර්ශ්ව පරිගණනය මත තනන ලද ප්‍රමිතික සංග්‍රහණ සමාහරණ රහස්‍යතා හිතකාමී පද්ධතියකි."
+
+[support_donate_section_title]
+other = "සැමට සංකේතනයට සහාය වන්න"
+
+[support_donate_section_description]
+other = "ඔබගේ පරිත්‍යාගය ලොව පුරා දශලක්‍ෂ ගණනක් අඩවි වලට ලෙට්'ස් එන්ක්‍රිප්ට් නොමිලේ සහ ප්‍රවේශ්‍යව තබා ගැනීමට උපකාරී වේ. අන්තර්ජාලය ආරක්‍ෂා කිරීමට අප සමඟ එක්වන්න, වරකට එක් අඩවියක්. ඔබ පුද්ගලයෙක් හෝ සමාගමක් වුවත් සෑම දායකත්‍වයක්ම වෙනසක් ඇති කරයි."
+
+[support_donate_section_button]
+other = "පරිත්‍යාග කරන්න"
+
+[support_sponsor_section_title]
+other = "අනුග්‍රහකත්‍වයෙන් පෙරටුව"
+
+[support_sponsor_section_description]
+other = "වියමන සංකේතනයට අපගේ කර්තව්‍යය මත විශ්වාසය තබන හෝ අගය කරන සමාගම් වලට ලෙට්'ස් එන්ක්‍රිප්ට් සමඟ මූල්‍යමය වශයෙන් සහාය විය හැකිය. මෙහි සාර්ථකත්‍වය වෙනුවෙන් විශාල හා කුඩා සමාගම් එක්වන්න!"
+
+[support_sponsor_section_button]
+other = "අනුග්‍රහකත්‍වය ගැන දැනගන්න"
+
+[stats_section_title]
+other = "ලෙට්'ස් එන්ක්‍රිප්ට් වර්ධනය"
+
+[stats_section_button]
+other = "තවත් සංඛ්‍යාලේඛන"
+
+[donate_page_make_recurring_donation_title]
+other = "පුනරාවර්තන පරිත්‍යාගයක් කරන්න"
+
+[donate_page_make_recurring_donation_content]
+other = "වියමන සංකේතනය දෛනික කාර්යකි — සහතික නැවත අළුත් කළ යුතුය! ඔබගේ පෝෂණ සහාය අපට පරිමාණයෙන් සහතික අළුත් කිරීම දරා ගත හැකි බව සහතික කරයි."
+
+[donate_page_make_recurring_donation_link]
+other = "ඔබගේ පුනරාවර්තන පරිත්‍යාගය දැන් අරඹන්න"
+
+[donate_page_stock_donations_title]
+other = "කොටස් පරිත්‍යාගය"
+
+[donate_page_crypto_gifts_title]
+other = "ක්‍රිප්ටෝ ත්‍යාග"
+
+[donate_page_other_ways_title]
+other = "දීමට වෙනත් ක්‍රම"
+
+[donate_page_ways_to_give_heading]
+other = "දෙන ක්‍රම"
+
+[donate_page_funding_details_stat_percentage]
+other = "100%"
+
+[donate_page_funding_details_stat_text]
+other = "අරමුදල් වලින් වැඩි ප්‍රමාණයක් ලෙට්'ස් එන්ක්‍රිප්ට් වෙත ලැබෙන්නේ පුණ්‍යාධාර මගිනි."
+
+[donate_page_funding_details_why_support_heading]
+other = "සහාය දක්වන්නේ ඇයි?"
+
+[donate_page_funding_details_list_item1]
+other = "නොමිලේ, ස්වයංක්‍රීය සහ භාවිතයට පහසු TLS සහතික."
+
+[donate_page_funding_details_list_item2]
+other = "අපි සහතිකයක් හෝ දශලක්‍ෂයක් භාවිතය පහසු කරන්නෙමු."
+
+[donate_page_funding_details_list_item3]
+other = "ඔබ ලොව පුරා HTTPS භාව්‍ය කරවයි."
+
+[donate_page_funding_details_list_item4]
+other = "සැබවින්ම ගෝලීය පරිමාණයෙන් මෙහෙයවීමට අපට උදව් කරන්න."
+
+[donate_page_stock_intro_text]
+other = "වසරකට වැඩි කාලයක් ඔබ සතු අගය කරන ලද සුරැකුම්පත් හෝ අන්‍යෝන්‍ය අරමුදල් කොටස් උත්තම පුණ්‍යාධාර විය හැකිය."
+
+[donate_page_stock_table_brokerage_firm]
+other = "තැරැව්කාර ව්‍යාපාරය:"
+
+[donate_page_stock_table_account_name]
+other = "ගිණුමේ නම:"
+
+[donate_page_stock_table_account_number]
+other = "ISRG ගිණුම #:"
+
+[donate_page_stock_table_dtc_number]
+other = "DTC #:"
+
+[donate_page_stock_table_tax_id]
+other = "බදු හැඳු. #:"
+
+[donate_page_stock_outro_text]
+other = "ඔබ සුරැකුම්පත් පවරනවා නම් කරුණාකර {{ .sponsorEmailLink }} හරහා අපට දන්වන්න. ඔබගේ තැරැව්කරුගෙන් ලැබෙන බල පත්‍රය වි-තැපෑලෙන් එවීමට ද අවශ්‍ය විය හැකිය."
+
+[donate_page_other_daf_heading]
+other = "දානදායක අරමුදල්"
+
+[donate_page_other_daf_text]
+other = "ඔබගේ ත්‍යාග අරමුදලෙන් අන්තර්ජාල ආරක්‍ෂණ පර්යේෂණ සමූහයට (අපගේ මව් සංවිධානය) පරිත්‍යාගයක් නිර්දේශ කරන්න. ඔබගේ පරිත්‍යාගයෙන් 100% ක් ආරක්‍ෂිත සහ පෞද්ගලිකත්‍වයට ගරු කරන අන්තර්ජාලයකට සහාය වීමට යොදා ගැනෙයි."
+
+[donate_page_other_workplace_heading]
+other = "ඔබගේ වැඩබිමේ"
+
+[donate_page_other_workplace_recommend_sponsorship]
+other = "{{ .sponsorshipLink }} හරහා ඔබගේ සේවායෝජකයාට අපගේ කාර්යට සහාය වන ලෙස නිර්දේශ කරන්න."
+
+[donate_page_other_workplace_sponsorship_link_text]
+other = "අනුග්‍රහකත්වය"
+
+[donate_page_other_workplace_matching_gifts]
+other = "බොහෝ සංවිධාන සේවකයින් ලාභ නොලබන සංවිධාන සඳහා කරන පරිත්‍යාග ගළපයි (සීහුම). ඔබගේ සංවිධානයේ ගළපන (සීහුම) වැඩසටහනක් තිබේදැයි පරීක්‍ෂා කර ඔබගේ බලපෑම දෙගුණ කරන්න!"
+
+[donate_page_crypto_text]
+other = "අපට බොහෝ ගුප්ත මුදල් (ක්‍රිප්ටෝ) පරිත්‍යාග {{ .cryptoLink }} පිළිගැනීමට හැකියාව ඇත."
+
+[donate_page_crypto_link_text]
+other = "මෙතැන"
+
+[testimonial_section_quote_open]
+other = "&ldquo;"
+
+[testimonial_section_quote_text]
+other = "මම ආරක්‍ෂණ උද්‍යෝගියෙක් නිසා<br />ලෙට්'ස් එන්ක්‍රිප්ට්<br />වෙත සහාය දෙමි&rdquo;"
+
+[testimonial_section_button_text]
+other = "ටිමී සමඟ එකතු වී උද්‍යෝගවත් වෙන්න."
+
+[testimonial_section_image_alt]
+other = "ටිමී, ලෙට්'ස් එන්ක්‍රිප්ට් ආධාරකරුවෙක්"
+
+[testimonial_section_footer_line1]
+other = "පෞද්ගලිකත්‍වයට ගරු කරන සංවිධානයක් ලෙස අපගේ සියලුම ආධාරකරුවන් සහ ග්‍රාහකයින් ගැන අපි එතරම් දන්නේ නැහැ. ටිමී නම් කෙනෙක් ඇත්ත වශයෙන්ම උද්‍යෝගවත් වී අපට සහාය දක්වන නමුත් ඉහත සඳහන් ටිමී සැබෑ පුද්ගලයෙක් නොවන අතර ඔහුගේ සාක්‍ෂාත්කරය සත්‍ය නොවේ."
+
+[testimonial_section_footer_line2]
+other = "ලොව පුරා දහස් ගණනක් මිනිසුන් අපගේ බලපෑම කළ හැකි කරයි."
+
+[testimonial_section_footer_line3]
+other = "සැමට සංකේතනය සපයන අපගේ කාර්ය සඳහා සහායට සලකා බැලීම ගැන ඔබට ස්තූතියි."

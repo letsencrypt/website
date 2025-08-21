@@ -1,11 +1,12 @@
 [build]
 
 publish = "./public/"
-command = "hugo -d public"
+command = "hugo -D -F -d public"
 
 [build.environment]
 # same as .github/workflows/test.yaml
-HUGO_VERSION = "0.130.0"
+HUGO_VERSION = "0.148.2"
+NODE_VERSION = "24.5.0"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 # headers must be the same than in config/_default/server.toml (for Hugo)
@@ -148,6 +149,18 @@ from = "/ct-logs"
 to = "/docs/ct-logs"
 status = 302
 force = false
+
+[[redirects]]
+from = "/*/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/sponsors"
+to = "https://www.abetterinternet.org/sponsors/"
+status = 301
+force = true
 
 [[redirects]]
 from = "/ca/*"
@@ -303,7 +316,25 @@ force = true
 # Certbot (and other) clients link to the Terms of Service with a `.` after them
 # This is a convenience to allow copying the URL with that `.`
 # It should be updated on ToS changes, but is not a compliance-critical path.
-from = "/documents/LE-SA-v1.4-April-3-2024.pdf."
-to = "/documents/LE-SA-v1.4-April-3-2024.pdf"
+from = "/documents/LE-SA-v1.5-February-24-2025.pdf."
+to = "/documents/LE-SA-v1.5-February-24-2025.pdf"
 status = 301
+force = true
+
+[[redirects]]
+from = "/documents/LE-SA-v1.6-August-18-2025.pdf."
+to = "/documents/LE-SA-v1.6-August-18-2025.pdf"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://cp-test.letsencrypt.org/*"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.8/"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://cps-test.letsencrypt.org/*"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.8/"
+status = 302
 force = true

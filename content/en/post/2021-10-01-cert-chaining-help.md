@@ -14,7 +14,7 @@ You may also find these links helpful:
 
 [Our certificate compatibility page.](https://letsencrypt.org/docs/certificate-compatibility/)
 
-[Workarounds for OpenSSL 1.0.2.](https://www.openssl.org/blog/blog/2021/09/13/LetsEncryptRootCertExpire/)
+[Workarounds for OpenSSL 1.0.2.](https://openssl-library.org/post/2021-09-13-letsencryptrootcertexpire/)
 
 Whenever there is a significant change to our API, we post in the [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) category in our community forum. Sign in and click the bell for notifications to be sent to your email! If you want to hear even more from Let’s Encrypt and the nonprofit team behind it, [subscribe to our newsletter](https://outreach.abetterinternet.org/l/1011011/2023-02-16/6l51). You’ll only receive a handful of emails each year.
 

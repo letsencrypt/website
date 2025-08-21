@@ -1,0 +1,9 @@
+<a href="{{ .url }}"
+   {{ with .id }}id="{{ . }}"{{ end }}
+   {{ with .nofollow }}rel="nofollow"{{ end }}
+   {{ with .sponsored }}rel="sponsored"{{ end }}
+   class="border bg-white border-gray-200 rounded-lg p-2 flex items-center h-[70px] justify-center hover:border-gray-300 transition group overflow-hidden">
+  <img src="/images/sponsors/small/{{ .image }}"
+       alt="{{ .name }}"
+       class="w- max-w-[80%] max-h-[80%] transition-transform duration-200 ease-in-out group-hover:scale-105 {{ .class }}">
+</a>

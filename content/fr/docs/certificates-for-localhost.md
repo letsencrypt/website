@@ -1,11 +1,9 @@
 ---
 title: Certificats pour localhost
 slug: certificates-for-localhost
-date: 2017-12-21
-lastmod: 2017-12-21
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
-
 
 Parfois, les gens veulent obtenir un certificat pour le nom d'hôte "localhost", soit pour une utilisation dans le développement local, soit pour une distribution avec une application native qui a besoin de communiquer avec une application web. Let's Encrypt ne peut pas fournir de certificats pour "localhost" parce que personne n'en est le seul propriétaire et qu'il ne s'agit pas d'un domaine de premier niveau comme ".com" ou ".net". Il est possible de configurer votre propre nom de domaine qui se trouve à l'adresse `127.0.0.1`, et d'obtenir un certificat pour celui-ci en utilisant le challenge DNS. Cependant, c'est généralement une mauvaise idée et il existe de meilleures options.
 
@@ -44,7 +42,7 @@ La façon la plus simple de générer une clé privée et un certificat auto-sig
 
 Vous pouvez ensuite configurer votre serveur web local avec localhost.crt et localhost.key, et installer localhost.crt dans votre liste de racines locales de confiance.
 
-Si vous voulez un peu plus de réalisme dans vos certificats de développement, vous pouvez utiliser [minica][minica] pour générer votre propre certificat racine local, et émettre les certificats d'entité finale (alias leaf) signés par elle. Vous importeriez alors le certificat racine plutôt qu'un certificat d'entité finale auto-signé.
+Si vous voulez un peu plus de réalisme dans vos certificats de développement, vous pouvez utiliser [ mkcert][mkcert] pour générer votre propre certificat racine local, et émettre les certificats d'entité finale (alias leaf) signés par elle. Vous importeriez alors le certificat racine plutôt qu'un certificat d'entité finale auto-signé.
 
 Vous pouvez également choisir d'utiliser un domaine contenant des points, comme `www.localhost`, en l'ajoutant à /etc/hosts comme alias de `127.0.0.1`. Cela modifie subtilement la façon dont les navigateurs gèrent le stockage des cookies.
 
@@ -55,5 +53,5 @@ Vous pouvez également choisir d'utiliser un domaine contenant des points, comme
 [mdsp2]: https://groups.google.com/d/msg/mozilla.dev.security.policy/T6emeoE-lCU/-k-A2dEdAQAJ
 [mdsp3]: https://groups.google.com/d/msg/mozilla.dev.security.policy/pk039T_wPrI/tGnFDFTnCQAJ
 [tighten-access]: https://bugs.chromium.org/p/chromium/issues/detail?id=378566
-[minica]: https://github.com/jsha/minica
+[mkcert]: https://github.com/FiloSottile/mkcert
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

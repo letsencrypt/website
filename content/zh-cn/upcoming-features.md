@@ -1,52 +1,52 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-lastmod: 2024-06-14
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
-请在 Let's Encrypt 社群论坛的 [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) 分类中查阅功能更新公告。
+如需及时获取未来的功能更新公告，请[订阅 Technical Updates 邮件通知](https://letsencrypt.org/opt-in/)，或关注 Let's Encrypt 社群论坛的 [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) 分类。
+
+# 即将推出的功能
+
+## 短期证书
+
+我们计划于 2025 年末对所有支持 ACME 证书配置（见下）的客户端开放[“短期”证书的申请](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)。 此类证书的有效期极短，因此不需要包含任何吊销相关的信息（如 OCSP，见下）。
+
+## IP 地址证书
+
+我们计划于 2025 年末允许所有申请短期证书（见上）的客户端在其主体备用名称中[包含 IP 地址](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)， 其[验证方式](https://www.rfc-editor.org/rfc/rfc8738.html)与当下 DNS 域名的验证方式大体相同。
+
+## 移除“TLS 客户端身份验证”扩展密钥用途
+
+我们计划于 2026 年 2 月 11 日从我们的默认证书配置中[移除“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 在此之前，我们会临时提供另一种仍包含该 EKU 的证书配置，但这只是为无法及时迁移的客户端提供的过渡措施，并且将于 2026 年 5 月 13 日截止。
 
 # 已实现的功能
 
-## ECDSA根证书和中间证书
+## 停止发送临期证书提醒邮件
 
-* 启用时间：2024 年 6 月 6 日
+我们已于 2025 年 6 月 4 日[终止临期证书提醒邮件服务](https://letsencrypt.org/2025/01/22/ending-expiration-emails/)，并从生产环境数据库中删除所有 ACME 账户关联的电子邮箱地址。
 
-从现在起 ECDSA 叶证书将由我们的生产环境 ECDSA 中间证书签发。 请参阅[证书信任链](/certificates/)详细了解我们的 PKI 证书结构。
+## 移除 OCSP 网址
+
+上线日期：[2025 年 5 月 7 日](https://letsencrypt.org/2024/12/05/ending-ocsp/)。
+
+我们签发的证书已不再包含颁发机构信息访问 (AIA) 在线证书状态协议 (OCSP) 网址， 而是提供证书吊销列表 (CRL) 发布点 (CRLDP) 网址。 证书使用者可以通过 CRL 获取证书吊销状态信息，ACME 客户端则可以通过 ARI（见下）获取证书续期建议。
+
+## ACME 证书配置
+
+上线日期：[2025 年 1 月 9 日](https://letsencrypt.org/2025/01/09/acme-profiles/)。
+
+支持 [ACME 证书配置扩展草案](https://www.ietf.org/archive/id/draft-aaron-acme-profiles-01.html)的客户端现在可以在申请证书时选择[我们所支持的任一证书配置](https://letsencrypt.org/docs/profiles/)。
+
+## 静态证书透明化日志
+
+上线日期：[2024 年 3 月 14 日](https://letsencrypt.org/2024/03/14/introducing-sunlight/)。
+
+我们运作的证书透明化 (CT) 日志现已遵循新的[静态证书透明化接口规范](https://c2sp.org/static-ct-api)，由 [Sunlight](https://github.com/FiloSottile/sunlight) 软件提供服务。 考虑到多个 CT 日志项目都已更新其规则并接受此类日志，我们计划近期申请加入这些项目。
 
 ## ACME更新信息 (ARI)
 
-* 启用时间: 2023 年 3 月 23 日
+上线日期：[2023 年 3 月 23 日](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/)。
 
-我们的 [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html) 系统已经上线，能够通过 API 提醒用户及时更新证书。
-
-## 多视角验证
-
-* 启用时间: 2020 年 2 月 19 日
-
-我们已支持通过[多个网络视角](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html)对域名所有权进行验证。
-
-## 证书透明化日志
-
-* 启用时间：2019 年 5 月 15 日
-
-我们的[证书透明化日志](/docs/ct-logs)系统已开始运作。
-
-## 支持 TLS ALPN 验证
-
-* 启用时间：2018 年 7 月 12 日
-
-我们为被[出于安全原因停止使用](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811)的 TLS-SNI 验证方法制定并实现了一个[替代方法](https://tools.ietf.org/html/rfc8737)。 这个替代方法对于只想使用 443 端口进行验证的用户来说十分重要。
-
-## 通配符证书
-
-* 启用时间：2018 年 3 月 13 日
-
-## ACME v2 API
-
-* 启用时间：2018 年 3 月 13 日
-
-## 完全 IPv6 支持
-
-* 启用时间：2016 年 7 月 26 日
+我们现已为签发的所有证书提供推荐的续期时间窗口，客户端可以通过 [ACME ARI 扩展](https://www.ietf.org/archive/id/draft-ietf-acme-ari-08.html)查询。

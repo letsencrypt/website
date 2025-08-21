@@ -1,30 +1,31 @@
 ---
 title: Glossary
 slug: glossary
-date: 2024-07-16
+lastmod: 2025-07-31
 show_lastmod: 1
+description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+	id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
 	name="The term to define (optional if english or abbr is provided)"
-	abbr="an accronym (optional)"
+	abbr="an acronym (optional)"
 	english="the english term (optional - if present the abbr is in english too)" %}}
 		the definition
 {% /def %}
-	
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
 
 -->
 
-{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} A certificate [extension](#def-extension) used to indicate to [user agents](#def-user-agent) how to obtain information about the issuer of the [certificate](#def-certificate). It typically specifies the [OCSP](#def-OCSP) URI and the [issuer URI](#def-CAI). {{% /def %}}
+{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} A certificate [extension](#def-extension) used to indicate to [user agents](#def-user-agent) how to obtain information about the issuer of the [certificate](#def-certificate). It typically specifies the [issuer URI](#def-CAI). {{% /def %}}
 
 {{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} The protocol implemented by [Let's Encrypt](#def-LE). Software compatible with that protocol can use it to communicate with Let's Encrypt to ask for a [certificate](#def-leaf). [ACME RFC](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
@@ -112,11 +113,11 @@ Note for translators:
 
 {{% def id="mixed-content" name="Mixed content" %}} When an HTTPS webpage loads sub-resources (Javascript, CSS or images) over HTTP. [Browsers](#def-web-browser) may block mixed content, or mark the page as less secure when mixed content is present: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. To fix a mixed content problem, a web developer must change their pages so all resources use HTTPS URLs. [Developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) built into browsers can be used to find out which resources are causing mixed content problems. {{% /def %}}
 
-{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} A method to check the [revocation](#def-revocation) status of a [certificate](#def-leaf). In other words, a way to check whether a [Certificate Authority](#def-CA) indicates that the certificate should no longer be considered valid, even though its expiration date has not yet been reached. This request can create privacy problems because it allows the certificate authority, and Internet service providers, to directly observe who is visiting which sites. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} A method to check the [revocation](#def-revocation) status of a [certificate](#def-leaf). In other words, a way to check whether a [Certificate Authority](#def-CA) indicates that the certificate should no longer be considered valid, even though its expiration date has not yet been reached. This request can create privacy problems because it allows the certificate authority, and Internet service providers, to directly observe who is visiting which sites. [Let's Encrypt](#def-LE) no longer provides an OCSP service. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} A [certificate](#def-leaf) extension, informing the [browser](#def-web-browser) that the [web server](#def-web-server) with that certificate must use [OCSP stapling](#def-OCSP-stapling). It's used to require that an up-to-date [revocation](#def-revocation) status of the [certificate](#def-leaf) is confirmed by the web server on every connection, making revocation more reliable. [Let's Encrypt](#def-LE) can issue certificates with the OCSP Must-Staple [extension](#def-extension) upon request. [Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} A [certificate](#def-leaf) extension, informing the [browser](#def-web-browser) that the [web server](#def-web-server) with that certificate must use [OCSP stapling](#def-OCSP-stapling). It's used to require that an up-to-date [revocation](#def-revocation) status of the [certificate](#def-leaf) is confirmed by the web server on every connection, making revocation more reliable. [Let's Encrypt](#def-LE) no longer supports this. [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP stapling" %}} A way for a [web server](#def-web-server) to send a [browser](#def-web-browser) an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the browser itself doesn’t need to make a secondary OCSP request to the CA, improving speed and privacy. Also known as TLS Certificate Status Request extension. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP stapling" %}} A way for a [web server](#def-web-server) to send a [browser](#def-web-browser) an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the browser itself doesn’t need to make a secondary OCSP request to the CA, improving speed and privacy. Also known as TLS Certificate Status Request extension. Note that [Let's Encrypt](#def-LE) does not support OCSP. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs are unique numeric identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
@@ -136,7 +137,7 @@ Note for translators:
 
 {{% def id="relying-party" name="Relying Party" %}} The person relying on information in a certificate. For instance, someone who visits an HTTPS web site is a Relying Party. {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} A certificate is valid until its expiration date, unless the [CA](#def-CA) says it's been revoked. The certificate may be revoked for various reasons such as the compromise of the private key. Browsers may check if a certificate is revoked using [CRL](#def-CRL), [OCSP](#def-OCSP), or newer methods like [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) and [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Note that in many situations, [revocation doesn't work](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} A certificate is valid until its expiration date, unless the [CA](#def-CA) says it has been revoked. The certificate may be revoked for various reasons such as the compromise of the private key. Browsers may check if a certificate is revoked using a [CRL](#def-CRL) or newer methods like [CRLite](https://github.com/mozilla/crlite/) and [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Note that in many situations, [revocation doesn't work](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} A [self-signed](#def-self-signed) certificate controlled by a [certificate authority](#def-CA), used to sign its [intermediate](#def-intermediate) certificates and included in [certificate stores](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
