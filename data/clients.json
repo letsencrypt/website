@@ -263,14 +263,6 @@
 			}
 		},
 		{
-			"name": "acmetool",
-			"url": "https://github.com/hlandau/acmetool",
-			"category": "Go",
-			"library": "Go",
-			"library_url": "https://github.com/hlandau/acmeapi",
-			"last_commit": 1673175643
-		},
-		{
 			"name": "Lets-proxy2",
 			"url": "https://github.com/rekby/lets-proxy2",
 			"category": "Go",
@@ -310,12 +302,6 @@
 				"HTTP-01": "true"
 			},
 			"last_commit": 1734020437
-		},
-		{
-			"name": "lua-resty-auto-ssl",
-			"url": "https://github.com/GUI/lua-resty-auto-ssl",
-			"category": "nginx",
-			"last_commit": 1611444054
 		},
 		{
 			"name": "Angie ACME module",
@@ -359,24 +345,6 @@
 			"last_commit": 1731400480
 		},
 		{
-			"name": "Greenlock for Express.js",
-			"url": "https://git.coolaj86.com/coolaj86/greenlock-express.js",
-			"category": "Node.js",
-			"last_commit": 1596518306
-		},
-		{
-			"name": "Greenlock for node.js",
-			"url": "https://git.coolaj86.com/coolaj86/greenlock.js",
-			"library": "Node.js",
-			"last_commit": 1596518079
-		},
-		{
-			"name": "openshift-acme",
-			"url": "https://github.com/tnozicka/openshift-acme",
-			"category": "OpenShift",
-			"last_commit": 1618242901
-		},
-		{
 			"name": "Crypt::LE (previously ZeroSSL project)",
 			"url": "https://github.com/do-know/Crypt-LE",
 			"category": "Windows / IIS",
@@ -412,12 +380,6 @@
 			"last_commit": 1750172572
 		},
 		{
-			"name": "simp_le",
-			"url": "https://github.com/zenhack/simp_le",
-			"category": "Python",
-			"last_commit": 1681761430
-		},
-		{
 			"name": "acmebot",
 			"url": "https://github.com/plinss/acmebot",
 			"category": "Python",
@@ -450,18 +412,6 @@
 			"last_commit": 1755010866
 		},
 		{
-			"name": "acme-distributed",
-			"url": "https://github.com/jannfis/acme-distributed",
-			"category": "Ruby",
-			"last_commit": 1595248357
-		},
-		{
-			"name": "Combine-acme: Generate and upload crt to CloudFlare(enterprise) and GCP.",
-			"url": "https://gitlab.com/6318613/combine-acme",
-			"category": "Ruby",
-			"last_commit": 1590509247
-		},
-		{
 			"name": "win-acme",
 			"url": "https://www.win-acme.com",
 			"category": "Windows / IIS",
@@ -478,26 +428,11 @@
 			"last_commit": 1755926018
 		},
 		{
-			"name": "Certes",
-			"url": "https://github.com/fszlin/certes",
-			"category": "Windows / IIS",
-			"library": ".NET",
-			"library_comments": "(.NET Standard)",
-			"last_commit": 1672779593
-		},
-		{
 			"name": "ACME-PS",
 			"url": "https://github.com/PKISharp/ACMESharpCore-PowerShell",
 			"category": "Windows / IIS",
 			"category_comments": "(PowerShell)",
 			"last_commit": 1718865358
-		},
-		{
-			"name": "PKISharp/ACMESharpCore",
-			"url": "https://github.com/PKISharp/acmesharpcore",
-			"library": ".NET",
-			"library_comments": "(.NET Standard)",
-			"last_commit": 1653344648
 		},
 		{
 			"name": "DelphiACME",
@@ -562,22 +497,10 @@
 			}
 		},
 		{
-			"name": "LEClient PHP library",
-			"url": "https://github.com/yourivw/LEClient",
-			"library": "PHP",
-			"last_commit": 1624186302
-		},
-		{
 			"name": "le-acme2-php library",
 			"url": "https://github.com/fbett/le-acme2-php",
 			"library": "PHP",
 			"last_commit": 1733958006
-		},
-		{
-			"name": "stonemax/acme2 PHP client",
-			"url": "https://github.com/stonemax/acme2",
-			"library": "PHP",
-			"last_commit": 1558079364
 		},
 		{
 			"name": "itr-acme-client PHP library",
@@ -654,13 +577,6 @@
 			"last_commit": 1755595500
 		},
 		{
-			"name": "Azure WebApp SSL Manager",
-			"url": "https://github.com/n3wt0n/AzureWebAppSSLManager",
-			"category": "Microsoft Azure",
-			"comments": "(Serverless, Compatible with any App Service, requires Azure DNS)",
-			"last_commit": 1622446679
-		},
-		{
 			"name": "App Service Acmebot",
 			"url": "https://github.com/shibayan/appservice-acmebot",
 			"category": "Microsoft Azure",
@@ -679,12 +595,6 @@
 			"url": "https://github.com/acmephp/acmephp",
 			"category": "PHP",
 			"last_commit": 1732189591
-		},
-		{
-			"name": "Acme PHP Library",
-			"url": "https://github.com/acmephp/core",
-			"library": "PHP",
-			"last_commit": 1654018600
 		},
 		{
 			"name": "lua-resty-acme",
@@ -781,17 +691,6 @@
 			"comments": "(GUI, CLI)"
 		},
 		{
-			"name": "serverPKI",
-			"url": "https://github.com/mc3/serverPKI",
-			"category": "Python",
-			"challenges": {
-				"HTTP-01": "false",
-				"DNS-01": "true"
-			},
-			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support",
-			"last_commit": 1597158843
-		},
-		{
 			"name": "acmetk",
 			"url": "https://github.com/noahkw/acmetk",
 			"category": "Python",
@@ -838,17 +737,6 @@
 			"last_commit": 1739033891
 		},
 		{
-			"name": "acme-http-01-azure-key-vault-middleware",
-			"url": "https://github.com/compulim/acme-http-01-azure-key-vault-middleware",
-			"category": "Node.js",
-			"challenges": {
-				"HTTP-01": "true",
-				"DNS-01": "false"
-			},
-			"comments": "(Express middleware for storing certificates securely on Azure Key Vault)",
-			"last_commit": 1610261413
-		},
-		{
 			"name": "Ansible collection: acme",
 			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
 			"category": "Configuration management tools",
@@ -878,19 +766,6 @@
 				"TLS-ALPN-01": "true"
 			},
 			"category": "Configuration management tools"
-		},
-		{
-			"name": "wdfcert.sh",
-			"url": "https://github.com/WolfWings/wdfcert.sh",
-			"category": "Bash",
-			"comments": "(Only supports DNS-01 challenges and ECDSA-384 bit keys for both accounts and certificates, native Joker DNS support including wildcard plus root domain support for single-TXT-record DNS providers)",
-			"library": "Perl",
-			"challenges": {
-				"HTTP-01": "false",
-				"DNS-01": "true",
-				"TLS-ALPN-01": "false"
-			},
-			"last_commit": 1619846494
 		},
 		{
 			"name": "HCL Domino",
