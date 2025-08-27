@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-07-11",
+	"lastmod": "2025-08-27",
 	"categories": [
 		"Bash",
 		"C",
@@ -139,15 +139,23 @@
 		},
 		{
 			"name": "WildFly Application Server",
-			"url": "https://developer.jboss.org/people/fjuma/blog/2018/08/31/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
+			"url": "https://wildfly-security.github.io/wildfly-elytron/blog/obtaining-certificates-from-lets-encrypt-using-the-wildfly-cli"
 		},
 		{
 			"name": "Zappa",
 			"url": "https://github.com/Miserlou/Zappa#lets-encrypt-ssl-domain-certification-and-installation"
 		},
 		{
+			"name": "Domain Admin",
+			"url": "https://github.com/mouday/domain-admin"
+		},
+		{
 			"name": "Proxmox Virtual Environment",
 			"url": "https://pve.proxmox.com/wiki/Certificate_Management#sysadmin_certs_get_trusted_acme_cert"
+		},
+		{
+			"name": "Pomerium",
+			"url": "https://www.pomerium.com/"
 		}
 	],
 	"list": [
@@ -214,14 +222,28 @@
 			"url": "https://hub.docker.com/r/neilpang/acme.sh",
 			"category": "Docker"
 		},
-	        {
+		{
 			"name": "letsproxy",
 			"url": "https://hub.docker.com/r/neilpang/letsproxy",
 			"category": "Docker"
 		},
 		{
+			"name": "docker-nginx",
+			"comment": "Chinese language",
+			"url": "https://hub.docker.com/r/xiaojun207/nginx",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+		{
+			"name": "docker-openresty",
+			"comment": "Chinese language",
+			"url": "https://hub.docker.com/r/xiaojun207/openresty",
+			"acme_v2": "true",
+			"category": "Docker"
+		},
+		{
 			"name": "Caddy",
-			"url": "https://caddyserver.com",
+			"url": "https://caddyserver.com/",
 			"category": "Go",
 			"challenges": {
 				"HTTP-01": "true",
@@ -289,19 +311,34 @@
 			"category": "nginx"
 		},
 		{
-			"name": "Nginx ACME",
+			"name": "Angie ACME module",
+			"url": "https://en.angie.software/angie/docs/configuration/modules/http/http_acme/",
+			"category": "nginx",
+			"comments": "built-in module for Angie server, no extra dependencies, simple configuration, reload-less auto retrieval",
+			"acme_v2": "true"
+		},
+		{
+			"name": "ngx_http_acme_module",
+			"url": "https://github.com/nginx/nginx-acme",
+			"category": "nginx",
+			"comments": "built-in ACME module from upstream nginx developers",
+			"acme_v2": "true"
+		},
+		{
+			"name": "acme-nginx",
 			"url": "https://github.com/kshcherban/acme-nginx",
 			"category": "nginx"
 		},
-	        {
+		{
 			"name": "docker-openresty",
-			"url": "https://github.com/xiaojun207/docker-openresty⁠",
+			"url": "https://github.com/xiaojun207/docker-openresty\u2060",
 			"category": "nginx",
 			"comments": "An Openresty image with auto ssl, using acme.sh",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
-			}
+			},
+			"repo_error": 1
 		},
 		{
 			"name": "docker-nginx",
@@ -588,7 +625,7 @@
 			"name": "Key Vault Acmebot",
 			"url": "https://github.com/shibayan/keyvault-acmebot",
 			"category": "Microsoft Azure",
-			"comments": "(Work with Azure Key Vault Certificates)"
+			"comments": "(Works with Azure Key Vault Certificates)"
 		},
 		{
 			"name": "Acme PHP",
@@ -647,7 +684,7 @@
 			"name": "CertMatica",
 			"url": "https://www.rhpconsult.com/products.html",
 			"category": "Domino",
-			"comments": "(ACME certificate installation and renewals for HCL Domino™ servers)"
+			"comments": "(ACME certificate installation and renewals for HCL Domino\u2122 servers)"
 		},
 		{
 			"name": "acme component",
@@ -698,7 +735,7 @@
 				"TLS-SNI-02": "false"
 			},
 			"comments": "PKI for internet server infrastructure, supporting distribution of certs, FreeBSD jails, DNS DANE support"
-    },
+		},
 		{
 			"name": "acmetk",
 			"url": "https://github.com/noahkw/acmetk",
@@ -707,8 +744,8 @@
 				"DNS-01": "true"
 			},
 			"comments": "acmetk is an ACMEv2 proxy to centralize certificate requests and challenges within an organisation and direct them using a single account to Let's Encrypt or other ACMEv2 capable CA's."
-    },
-    {
+		},
+		{
 			"name": "ACMEz",
 			"url": "https://github.com/mholt/acmez",
 			"category": "Go",
@@ -805,7 +842,7 @@
 			"name": "HCL Domino",
 			"url": "https://help.hcltechsw.com/domino/12.0.0/admin/secu_le_using_certificate_manager.html",
 			"category": "Domino",
-			"comments": "(Full ACME V2 flow integration for HCL Domino™ servers)",
+			"comments": "(Full ACME V2 flow integration for HCL Domino\u2122 servers)",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true",
@@ -819,7 +856,8 @@
 			"category": "Go",
 			"comments": "(Supports certificate sharing across instances/pods and split-horizon DNS with acme-proxy)",
 			"library": "Go",
-			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager"
+			"library_url": "https://github.com/Cloud-Foundations/golib/blob/master/pkg/crypto/certmanager",
+			"repo_error": 1
 		},
 		{
 			"name": "KCert",
@@ -845,10 +883,46 @@
 			}
 		},
 		{
+			"name": "Cert Warden",
+			"url": "https://github.com/gregtwallace/certwarden",
+			"category": "Go",
+			"comments": "(Server to centrally manage and serve certificates)",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "acme-bot",
+			"url": "https://git.serenity-island.net/sie-foss/acme-bot",
+			"category": "Node.js",
+			"acme_v2": "true",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
 			"name": "instant-acme",
 			"library": "Rust",
 			"library_url": "https://github.com/instant-labs/instant-acme",
 			"comments": "is an async, pure-Rust ACME (RFC 8555) client which relies on Tokio"
+		},
+		{
+			"name": "Server-SSL.js",
+			"url": "https://github.com/FirstTimeEZ/server-ssl",
+			"category": "Node.js",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "(Easy to configure SSL Web Server for development or production)"
 		},
 		{
 			"name": "rustls-acme",
@@ -857,10 +931,58 @@
 			"comments": "provides TLS certificate management and serving using rustls"
 		},
 		{
+			"name": "renewc",
+			"url": "https://github.com/dvdsk/renewc",
+			"category": "Rust",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			},
+			"comments": "Easy certificate tool: helpful diagnostics, no requirements, no installation needed"
+		},
+		{
 			"name": "tokio-rustls-acme",
 			"library": "Rust",
 			"library_url": "https://github.com/n0-computer/tokio-rustls-acme",
 			"comments": "is an easy-to-use, async ACME client library for rustls"
+		},
+		{
+			"name": "simple-acme",
+			"url": "https://www.simple-acme.com/",
+			"category": "Windows / IIS",
+			"comments": "Spiritual successor to win-acme, also works on Linux!",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
+			}
+		},
+		{
+			"name": "Auto Encrypt",
+			"url": "https://codeberg.org/small-tech/auto-encrypt",
+			"category": "Node.js",
+			"library": "Node.js",
+			"comments": "Automatically provisions and renews TLS certificates from Let\u2019s Encrypt on Node.js https servers",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false",
+				"TLS-SNI-01": "false",
+				"TLS-SNI-02": "false"
+			}
+		},
+		{
+			"name": "Certimate",
+			"url": "https://github.com/certimate-go/certimate",
+			"category": "Go",
+			"comments": "manage certificates for multiple platforms with a visual workflow"
+		},
+		{
+			"name": "Certimate",
+			"url": "https://hub.docker.com/r/certimate/certimate",
+			"category": "Docker",
+			"comments": "manage certificates for multiple platforms with a visual workflow"
 		}
 	]
 }
