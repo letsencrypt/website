@@ -344,14 +344,14 @@
 		},
 		{
 			"name": "docker-openresty",
-			"url": "https://github.com/xiaojun207/docker-openresty\u2060",
+			"url": "https://github.com/xiaojun207/docker-openresty",
 			"category": "nginx",
 			"comments": "An Openresty image with auto ssl, using acme.sh",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			},
-			"repo_error": 1
+			"last_commit": 1731303904
 		},
 		{
 			"name": "docker-nginx",
