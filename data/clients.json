@@ -237,14 +237,12 @@
 			"name": "docker-nginx",
 			"comment": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/nginx",
-			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
 			"name": "docker-openresty",
 			"comment": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/openresty",
-			"acme_v2": "true",
 			"category": "Docker"
 		},
 		{
@@ -325,15 +323,13 @@
 			"name": "Angie ACME module",
 			"url": "https://en.angie.software/angie/docs/configuration/modules/http/http_acme/",
 			"category": "nginx",
-			"comments": "built-in module for Angie server, no extra dependencies, simple configuration, reload-less auto retrieval",
-			"acme_v2": "true"
+			"comments": "built-in module for Angie server, no extra dependencies, simple configuration, reload-less auto retrieval"
 		},
 		{
 			"name": "ngx_http_acme_module",
 			"url": "https://github.com/nginx/nginx-acme",
 			"category": "nginx",
 			"comments": "built-in ACME module from upstream nginx developers",
-			"acme_v2": "true",
 			"last_commit": 1756222263
 		},
 		{
@@ -600,7 +596,7 @@
 			"name": "Ansible acme_certificate module",
 			"url": "https://docs.ansible.com/ansible/latest/collections/community/crypto/acme_certificate_module.html",
 			"challenges": {
-				"TLS-ALPN-01": "ansible >= 2.7"
+				"TLS-ALPN-01": "true"
 			},
 			"category": "Configuration management tools"
 		},
@@ -865,7 +861,6 @@
 			"url": "https://github.com/T-Systems-MMS/ansible-collection-acme",
 			"category": "Configuration management tools",
 			"comments": "(ACME V2 integration with acme_certificate module. Supports multiple providers for challenges)",
-			"acme_v2": "true",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true",
@@ -877,11 +872,10 @@
 		{
 			"name": "Pulumi ACME Provider",
 			"url": "https://www.pulumi.com/registry/packages/acme/",
-			"acme_v2": "pulumi-acme >= 0.0.1",
 			"challenges": {
-				"HTTP-01": "pulumi-acme >= 0.0.1",
-				"DNS-01": "pulumi-acme >= 0.0.1",
-				"TLS-ALPN-01": "pulumi-acme >= 0.0.1"
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
 			},
 			"category": "Configuration management tools"
 		},
@@ -889,9 +883,9 @@
 			"name": "Terraform ACME Provider",
 			"url": "https://registry.terraform.io/providers/vancluever/acme/latest",
 			"challenges": {
-				"HTTP-01": "terraform-provider-acme >= 2.4.0",
-				"DNS-01": "terraform-provider-acme >= 1.0.0",
-				"TLS-ALPN-01": "terraform-provider-acme >= 2.4.0"
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
 			},
 			"category": "Configuration management tools"
 		},
@@ -961,7 +955,6 @@
 			"url": "https://github.com/gregtwallace/certwarden",
 			"category": "Go",
 			"comments": "(Server to centrally manage and serve certificates)",
-			"acme_v2": "true",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true",
@@ -974,7 +967,6 @@
 			"name": "acme-bot",
 			"url": "https://git.serenity-island.net/sie-foss/acme-bot",
 			"category": "Node.js",
-			"acme_v2": "true",
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true",
