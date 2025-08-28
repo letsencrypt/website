@@ -2,8 +2,7 @@
     "lastmod": "2025-07-24",
     "categories": [
         "production",
-        "testing",
-        "Sunlight"
+        "testing"
     ],
     "transparencyLogs": [
         {
@@ -178,60 +177,6 @@
             "logID": "08:98:24:4B:02:C7:9F:6B:6B:27:CC:4E:95:36:A1:ED:40:36:54:21:9A:C7:8A:C1:78:95:72:9C:3E:4E:8C:87",
             "windowStart": "1718841600",
             "windowEnd": "1768867200"
-        },
-        {
-            "log": "twig",
-            "shard": "2025h1b",
-            "role": "Sunlight",
-            "windowStart": 1734411600,
-            "windowEnd": 1750132800,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/d6uF9Yw5/3Lo4nJIdWqY0D9H/v/J/WHWqgl8gmTa6AKiBo5CFddHwlU3wj+pgaQm2OhzV2MnXZCOpbLxyk8LA==",
-            "logID": "lZC9hfLPxQZJmKurW7JsLnoXZwKRHBO2i0gF4euUJ+8="
-        },
-        {
-            "log": "twig",
-            "shard": "2025h2b",
-            "role": "Sunlight",
-            "windowStart": 1750132800,
-            "windowEnd": 1765861200,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1WZDmBaw9OoQTk8Yf/IvYkXPw6R6A+uBwHf1L4OrI4gsf/g5s9qtFEF6/NhG3R0+nxfha3apbUjdtNWln9yvkg==",
-            "logID": "wF0gVDhcss+yF5INLw3Hg1JhR7GqT++Xynjh8LuE/O0="
-        },
-        {
-            "log": "sycamore",
-            "shard": "2025h1b",
-            "role": "Sunlight",
-            "windowStart": 1734498000,
-            "windowEnd": 1750219200,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELnRI9kk9Ahd4T2qNIrqLPvf5lO44NBYwD9lwoV9MqerizPLRDEjzLw2GXa7MonZEXhcMABNHgViY6kb1LeBDJg==",
-            "logID": "TgJ3oMtvarf2feceaghbLRgMKXeCS/tMK72dLNQR874="
-        },
-        {
-            "log": "sycamore",
-            "shard": "2025h2b",
-            "role": "Sunlight",
-            "windowStart": 1750219200,
-            "windowEnd": 1765947600,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEocuurm/JTMcynwKIeUHntdBm8OuLHcK6HgWD5wkE6JCcsPx1i1jAnULV8TSrzdzb8YSIx+VgFp+/YmqGUMHE5w==",
-            "logID": "94/yCGmtl2pDc7SsqLOyAxSOFO3mi+FBU1uhNot7qAY="
-        },
-        {
-            "log": "willow",
-            "shard": "2025h1b",
-            "role": "Sunlight",
-            "windowStart": 1734584400,
-            "windowEnd": 1750305600,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEbNmWXyYsF2pohGOAiNELea6UL4/XioI3w6ChE5Udlos0HUqM7KOHIP9qBuWCVs6VAdtDXrvanmxKq52Whh2+2w==",
-            "logID": "IX7IijpQPODOtMQx74xNVMHVjB9SuiP0KekrE2jAgWE="
-        },
-        {
-            "log": "willow",
-            "shard": "2025h2c",
-            "role": "Sunlight",
-            "windowStart": 1750305600,
-            "windowEnd": 1766034000,
-            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaUvzqBm/C9pNUsVI1jqpms5OkW3Kk+Eb3/veW6P3ogOItkqqEvkZfU7zBbsvm1j1Ep003iNUGFOrilPl5TpCRg==",
-            "logID": "kqECxXwi2rGMzCrnH9TMWcBdJR2hbHPiKBvT8LBImIc="
         }
     ]
 }
