@@ -1,7 +1,7 @@
 ---
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
-lastmod: 2023-09-25
+lastmod: 2025-08-27
 show_lastmod: 1
 ---
 
@@ -16,12 +16,8 @@ show_lastmod: 1
 </p>
 
 <p>
-  Let's Encrypt submits all certificates we issue to CT logs. We also operate
-  two annually sharded CT logs named
-  <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
-    >Oak</a
-  >
-  and Sapling. All publicly trusted certificate authorities are welcome to
+  Let's Encrypt submits all certificates we issue to CT logs. We also operate CT logs.
+  All publicly trusted certificate authorities are welcome to
   submit to our logs. Many certificate authority root certificates have already
   been included in our CT logs. If you operate a Certificate Authority and your issuer
   is not in our accepted issuers list, please file an issue <a href="https://github.com/letsencrypt/ct-log-metadata">here</a>.
@@ -67,6 +63,24 @@ show_lastmod: 1
 Information about the various lifecycle states that a CT log progresses through can be found <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">here</a>.
 </p>
 
+<h3>Sunlight</h3>
+<p>
+  Let's Encrypt is transitioning to operating logs based on <a href="https://sunlight.dev">Sunlight</a>.
+  Information including accepted roots, public keys, log IDs, and shard intervals are available at each log's
+  landing page, linked below.
+</p>
+<p>Sycamore and Willow are our new production CT logs, accepting certificates from trusted CAs.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>Twig is a test log, accepting certificates from trusted CAs as well as some additional test CAs, including the Let's
+  Encrypt staging environment.</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
 {{< ct_logs data="production" >}}
 <li>
   Oak is incorporated into the
@@ -103,20 +117,8 @@ Information about the various lifecycle states that a CT log progresses through 
 <li>
   Sapling can be used by other certificate authorities for testing purposes.
 </li>
-{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
-<li>
-  Let's Encrypt is testing running logs based on <a href="https://sunlight.dev">Sunlight</a>.
-</li>
-<li>
-  SCTs from these logs <b>SHOULD NOT</b> be incorporated into publicly trusted
-  certificates.
-</li>
-<li>Twig will stay as a test log, and accepts the same CAs as Sapling.
-</li>
-<li>Willow and Sycamore accept the same as Oak, and are anticipated to become production logs.
-</li>
 {{< /ct_logs >}}
-<br />
+
 <h2>Log Operations</h2>
 <p>
   To enumerate the included roots for a particular CT log, you can run the
