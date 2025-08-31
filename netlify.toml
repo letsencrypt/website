@@ -338,3 +338,15 @@ from = "https://cps.letsencrypt.org/*"
 to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
 status = 302
 force = true
+
+[[redirects]]
+from = "https://cp.root-x1.letsencrypt.org/*"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://cps.root-x1.letsencrypt.org/*"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+status = 302
+force = true
