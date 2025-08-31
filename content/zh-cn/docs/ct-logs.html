@@ -1,7 +1,7 @@
 ---
 title: 证书透明化 (CT) 日志
 slug: ct-logs
-lastmod: 2023-09-25
+lastmod: 2025-08-27
 show_lastmod: 1
 ---
 
@@ -13,9 +13,8 @@ show_lastmod: 1
 </p>
 
 <p>
-  Let's Encrypt 签发的所有证书都会录入 CT 日志。 我们还有两套按年度分片的自营 CT 系统，<a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
-    >Oak</a
-> 和 Sapling。 欢迎所有可信的证书颁发机构将证书提交至我们的日志。 我们的CT日志中已包含许多证书颁发机构的根证书。 如果您所经营的证书颁发机构不在我们的可信颁发者列表中，请在<a href="https://github.com/letsencrypt/ct-log-metadata">此处</a>发起 Issue。
+  Let's Encrypt 签发的所有证书都会录入 CT 日志。 同时我们也运作着若干 CT 日志系统，
+  欢迎所有可信的证书颁发机构将证书提交至我们的日志。 我们的CT日志中已包含许多证书颁发机构的根证书。 如果您所经营的证书颁发机构不在我们的可信颁发者列表中，请在<a href="https://github.com/letsencrypt/ct-log-metadata">此处</a>发起 Issue。
 </p>
 
 <p>
@@ -50,6 +49,22 @@ show_lastmod: 1
 CT 日志在其生命期内所经历的各种状态可在<a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">此处</a>详细了解。
 </p>
 
+<h3>Sunlight</h3>
+<p>
+  Let's Encrypt 正在逐步将日志系统转移至 <a href="https://sunlight.dev">Sunlight</a>。
+  各日志系统接受的根证书、公钥、日志 ID、分片间隔等信息可以在下方列出的各系统首页中查询。
+</p>
+<p>我们新部署的生产环境 CT 日志系统是 Sycamore 和 Willow，只接受由可信的 CA 颁发的证书。</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>用于测试日志系统为 Twig，既接受由可信 CA 颁发的证书，也接受由某些测试 CA 颁发的证书，包括 Let's Encrypt 测试环境的证书。</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
 {{< ct_logs data="production" >}}
 <li>
   Oak 已被 <a href="https://support.apple.com/en-us/HT209255">Apple</a> 和 <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
@@ -75,19 +90,8 @@ CT 日志在其生命期内所经历的各种状态可在<a href="https://google
 <li>
   其他证书颁发机构也可以使用 Sapling 进行测试。
 </li>
-{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
-<li>
-  Let's Encrypt 正在测试基于 <a href="https://sunlight.dev">Sunlight</a> 运作的日志系统。
-</li>
-<li>
-  公开可信的证书<b>不应</b>含有此日志系统的 SCT。
-</li>
-<li>Twig 将继续作为测试日志，所接受的 CA 与 Sapling 相同。
-</li>
-<li>Willow 与 Sycamore 所接受的 CA 与 Oak 相同，最终计划作为生产环境日志。
-</li>
 {{< /ct_logs >}}
-<br />
+
 <h2>日志操作</h2>
 <p>
   如需查看某一 CT 日志系统包含的所有根证书，可以在任意 UNIX 命令行中执行以下命令：

@@ -37,5 +37,7 @@ Python 模块[acme](https://github.com/certbot/certbot/tree/main/acme) 是 Certb
 1. 该客户端尊重 [Let's Encrypt 商标政策](https://www.abetterinternet.org/trademarks)。
 1. 该客户端不是基于浏览器使用的，并且支持自动续期。
 1. 该客户端的[自动续期时间点是随机的](/docs/integration-guide#when-to-renew)，或鼓励按这种方式配置。
-1. 您的提交把该软件加至相关列表的**末尾**（如果该软件支持 ACMEv2 协议，请不要忘记添加“acme_v2”）。
+1. 您在修改代码时将该客户端添加至相关列表的**末尾**。
 1. 您的提交更新了 `clients.json` 顶部的 `lastmod` 日期戳。
+
+我们可能会定期移除停止维护的客户端或项目。 如果将来开发进程恢复，欢迎再次发起 Pull Request 重新将该项目加入列表中。
