@@ -37,5 +37,7 @@ Inden du indsender en pull-anmodning, bedes du sikre:
 1. Klienten respekterer [Let's Encrypts varemærkepolitik](https://www.abetterinternet.org/trademarks).
 1. Klienten er ikke browserbaseret og understøtter automatiske fornyelser.
 1. Klienten udfører [rutinemæssige fornyelser på tilfældige tidspunkter](/docs/integration-guide#when-to-renew) eller opfordre til denne opsætning.
-1. Dit commit tilføjer din klient til **slutningen** af de relevante sektioner (glem ikke "acme_v2", hvis det er aktuelt!).
+1. Dit commit tilføjer din klient til **end** af de relevante afsnit.
 1. Dit commit opdaterer `lastmod` dato stempel øverst på `clients.json`.
+
+Vi kan med jævne mellemrum fjerne lister over projekter, der synes ikke længere udvikles. Hvis udviklingsarbejdet på et projekt genoptages, er du velkommen til at indsende en ny pull request for at tilføje dette projekt igen.
