@@ -21,7 +21,7 @@ parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
 
 [[main]]
-name = "Current Sponsors & Funders"
+name = "Derzeitige Sponsoren und Spender"
 weight = 40
 identifier = "sponsors"
 parent = "donate"
@@ -54,7 +54,7 @@ parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Annual reports"
+name = "Jahresberichte"
 weight = 140
 identifier = "annual-reports"
 parent = "about"
