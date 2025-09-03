@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2025-08-19
+lastmod: 2025-09-03
 show_lastmod: 1
 ---
 
@@ -203,16 +203,16 @@ Sometimes there's more than one valid chain for a given certificate: for example
 Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain available:
 
 <div style="text-align: center">
-RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
+RSA Subcriber Cert ← RSA Intermediate (R12 or R13) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
 
 <div style="text-align: center">
-ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
+ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X1
 
-ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2
+ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X2
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
