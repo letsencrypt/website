@@ -144,11 +144,6 @@
       "image": "driving-tests-logo.png"
     },
     {
-      "name": "Sakura Internet",
-      "url": "https://www.sakura.ad.jp/",
-      "image": "sakura-logo.png"
-    },
-    {
       "name": "DuoCircle",
       "url": "https://www.duocircle.com/",
       "image": "duocircle-logo.png"
@@ -173,11 +168,6 @@
       "name": "Keenetic",
       "url": "https://keenetic.com/",
       "image": "keenetic-logo.png"
-    },
-    {
-      "name": "HAProxy",
-      "url": "https://www.haproxy.com/",
-      "image": "haproxy-logo.png"
     },
     {
       "name": "MongoDB",
@@ -311,7 +301,6 @@
       "url": "https://serpapi.com/",
       "image": "SerpApi-black.png"
     },
-    { "name": "IPv6rs", "url": "https://ipv6.rs/", "image": "ipv6rs-logo.png" },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
     { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
