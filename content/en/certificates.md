@@ -31,7 +31,25 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * CA details: [crt.sh](https://crt.sh/?caid=183269), [issued certs](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
+  * Certificate details (second cross-sign by ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * Test websites: [valid](https://valid-isrgrootx2.letsencrypt.org/), [revoked](https://revoked-isrgrootx2.letsencrypt.org/), [expired](https://expired-isrgrootx2.letsencrypt.org/)
+
+These roots are not yet included in Root Program Trust Stores, but will be submitted for inclusion soon:
+
+* **ISRG Root YE**
+  * Subject: `O = ISRG, CN = Root YE`
+  * Key type: `ECDSA P-384`
+  * Trusted until: N/A (generated 2025-09-03)
+  * Certificate details (self-signed): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
+  * Certificate details (cross-signed by ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
+  * Test websites: Forthcoming
+* **ISRG Root YR**
+  * Subject: `O = ISRG, CN = Root YR`
+  * Key type: `RSA 4096`
+  * Trusted until: N/A (generated 2025-09-03)
+  * Certificate details (self-signed): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
+  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
+  * Test websites: Forthcoming
 
 For additional information on the compatibility of our root certificates with various devices and trust stores, see [Certificate Compatibility](/docs/cert-compat).
 
@@ -88,6 +106,44 @@ These intermediate CAs have currently-valid certificates, but are not being issu
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295818), [issued certs](https://crt.sh/?Identity=%25&iCAID=295818)
   * Certificate details (signed by ISRG Root X1): [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
+
+</details>
+
+<details>
+<summary>Upcoming</summary>
+
+These intermediate CAs were issued in 2025, and we expect to begin issuing from them in 2026.
+
+* **Let's Encrypt YE1**
+  * Subject: `O = Let's Encrypt, CN = YE1`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * Subject: `O = Let's Encrypt, CN = YE2`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
+* **Let's Encrypt YE3**
+  * Subject: `O = Let's Encrypt, CN = YE3`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-ye3.der), [pem](/certs/gen-y/int-ye3.pem), [txt](/certs/gen-y/int-ye3.txt)
+* **Let's Encrypt YR1**
+  * Subject: `O = Let's Encrypt, CN = YR1`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * Subject: `O = Let's Encrypt, CN = YR2`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
+* **Let's Encrypt YR3**
+  * Subject: `O = Let's Encrypt, CN = YR3`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * Certificate details: [der](/certs/gen-y/int-yr3.der), [pem](/certs/gen-y/int-yr3.pem), [txt](/certs/gen-y/int-yr3.txt)
 
 </details>
 
@@ -179,19 +235,6 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
 
 </details>
 
-<details>
-<summary>Delegated OCSP Responder</summary>
-
-This keypair was previously used to sign OCSP responses regarding the status of Let's Encrypt's intermediates on behalf of Let's Encrypt's root, so that the root could remain safely offline. We no longer issue OCSP responses for our intermediates; we instead periodically issue CRLs from our root to convey the revocation status of our intermediates.
-
-* **ISRG Root OCSP X1**
-  * Subject: `O = Internet Security Research Group, CN = ISRG Root OCSP X1`
-  * Key type: `RSA 2048`
-  * Valid until: 2025-06-10
-  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=2929281974), [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
-  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=142051103) (expired)
-
-</details>
 <p><!-- to get the right line spacing after a block element --></p>
 
 # Chains
