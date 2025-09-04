@@ -1,0 +1,51 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            2d:33:3b:73:70:c4:26:af:b7:93:a8:57:54:10:30:67
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C=US, O=ISRG, CN=Root YE
+        Validity
+            Not Before: Sep  3 00:00:00 2025 GMT
+            Not After : Sep  2 23:59:59 2028 GMT
+        Subject: C=US, O=Let's Encrypt, CN=YE3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:bb:1d:a0:af:0c:cf:58:dd:a6:0f:5b:e8:87:ea:
+                    e5:13:2b:62:85:51:8c:74:bf:27:b9:c4:ad:4a:35:
+                    35:99:52:09:68:89:6d:9b:b9:da:b3:bc:24:1a:6a:
+                    b9:89:4c:db:a3:89:5f:99:ad:6a:ce:a6:8c:7e:37:
+                    89:13:b2:20:9e:73:ac:9f:c3:b5:46:98:4a:cb:0b:
+                    96:52:ab:65:f8:77:6b:c9:73:58:3c:54:85:37:7d:
+                    be:c2:bb:32:7f:6c:33
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                F6:A2:7E:D6:5E:23:6F:DD:DD:45:46:61:1E:82:15:75:CD:F1:E6:8E
+            X509v3 Authority Key Identifier: 
+                A3:C8:26:5A:8E:A1:4C:D0:35:63:FC:9B:23:C8:3A:AE:56:F3:4F:56
+            Authority Information Access: 
+                CA Issuers - URI:http://ye.i.lencr.org/
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://ye.c.lencr.org/
+
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:65:02:30:70:f9:fb:89:54:ea:2f:64:ee:29:c4:e0:ea:64:
+        79:bb:3e:20:58:d8:8e:50:fd:04:d6:8f:c9:07:bd:fe:10:52:
+        8c:e3:93:68:5e:54:67:39:4d:cb:ae:09:20:3e:95:53:02:31:
+        00:da:fb:95:3b:d6:5b:39:46:53:53:e9:09:1e:e5:7c:35:57:
+        b6:61:a0:af:77:4f:1e:48:a0:51:76:93:59:b6:cb:af:1f:38:
+        a4:e0:1d:77:71:44:18:93:36:29:fe:5e:b4
