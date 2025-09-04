@@ -41,14 +41,14 @@ These roots are not yet included in Root Program Trust Stores, but will be submi
   * Key type: `ECDSA P-384`
   * Trusted until: N/A (generated 2025-09-03)
   * Certificate details (self-signed): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
-  * Certificate details (cros-signed by ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
+  * Certificate details (cross-signed by ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * Test websites: Forthcoming
 * **ISRG Root YR**
   * Subject: `O = ISRG, CN = Root YR`
   * Key type: `RSA 4096`
   * Trusted until: N/A (generated 2025-09-03)
   * Certificate details (self-signed): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
-  * Certificate details (cros-signed by ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
+  * Certificate details (cross-signed by ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * Test websites: Forthcoming
 
 For additional information on the compatibility of our root certificates with various devices and trust stores, see [Certificate Compatibility](/docs/cert-compat).
