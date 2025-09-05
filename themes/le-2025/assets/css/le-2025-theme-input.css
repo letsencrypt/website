@@ -487,62 +487,92 @@
 
 .hero-bg {
   @apply absolute top-0 left-0 w-full h-full bg-cover opacity-85 z-0;
-  background-image: url('/images/radiant_london_resized/radiant_london_5_480w.jpg');
+  background-image: image-set(
+    url('/images/radiant_london_resized/radiant_london_5_480w.webp') type("image/webp"),
+    url('/images/radiant_london_resized/radiant_london_5_480w.jpg') type("image/jpeg")
+  );
   background-position: top left;
 }
 
 @screen sm {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_640w.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_640w.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_640w.jpg') type("image/jpeg")
+    );
     background-position: top center;
   }
 }
 
 @screen lg {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1080w.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1080w.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1080w.jpg') type("image/jpeg")
+    );
   }
 }
 
 @screen xl {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1280w.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1280w.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1280w.jpg') type("image/jpeg")
+    );
   }
 }
 
 @screen 2xl {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1920w.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1920w.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1920w.jpg') type("image/jpeg")
+    );
   }
 }
 
 @media (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_480w@2x.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_480w@2x.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_480w@2x.jpg') type("image/jpeg")
+    );
   }
 }
 
 @media (min-width: 640px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_640w@2x.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_640w@2x.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_640w@2x.jpg') type("image/jpeg")
+    );
     background-position: top center;
   }
 }
 
 @media (min-width: 1080px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1080w@2x.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1080w@2x.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1080w@2x.jpg') type("image/jpeg")
+    );
   }
 }
 
 @media (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1280w@2x.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1280w@2x.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1280w@2x.jpg') type("image/jpeg")
+    );
   }
 }
 
 @media (min-width: 1920px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url('/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg');
+    background-image: image-set(
+      url('/images/radiant_london_resized/radiant_london_5_1920w@2x.webp') type("image/webp"),
+      url('/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg') type("image/jpeg")
+    );
   }
 }
