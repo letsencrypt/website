@@ -1,7 +1,7 @@
 ---
 title: מונחון
 slug: glossary
-date: 2025-03-17
+lastmod: 2025-07-31
 show_lastmod: 1
 description: "מונחון למונחים שקשורים באישורי SSL/TLS,‏ HTTPS ובאבטחת אתרים בכפוף לשימוש ב־Let's Encrypt."
 ---
@@ -14,7 +14,7 @@ Note for translators:
 {% def
     id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
-    abbr="an accronym (optional)"
+    abbr="an acronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
@@ -25,7 +25,7 @@ Note for translators:
 
 -->
 
-{{% def id="AIA" english="Authority Information Access" name="גישה למידע של הרשות" abbr="AIA" %}} [הרחבה](#def-extension) לאישור שייעודה לסמן ל[סוכני משתמש](#def-user-agent) איך לקבל מידע על מנפיק ה[אישור](#def-certificate). היא בדרך כלל מציינת את כתובת ה־[OCSP](#def-OCSP) ואת [כתובת המנפיק](#def-CAI). {{% /def %}}
+{{% def id="AIA" english="Authority Information Access" name="גישה למידע של הרשות" abbr="AIA" %}} [הרחבה](#def-extension) לאישור שייעודה לסמן ל[סוכני משתמש](#def-user-agent) איך לקבל מידע על מנפיק ה[אישור](#def-certificate). היא בדרך כלל מציינת את [כתובת המנפיק המלאה](#def-CAI). {{% /def %}}
 
 {{% def id="ACME" english="Automatic Certificate Management Environment" name="סביבת ניהול אישורים אוטומטית" abbr="ACME" abbr_first="1" %}} הפרוטוקול שממומש על ידי [Let's Encrypt](#def-LE). תכניות שתואמות לפרוטוקול הזה יכולות להשתמש בו על מנת לתקשר עם Let's Encrypt ולבקש [אישור](#def-leaf). [ה־RFC של ACME](https://tools.ietf.org/html/rfc8555) - [ויקיפדיה](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
@@ -113,11 +113,11 @@ Note for translators:
 
 {{% def id="mixed-content" english="Mixed content" name="תוכן מעורב" %}} כאשר עמוד HTTPS טוען תת־משאבים (Javascript,‏ CSS או תמונות) על גבי HTTP. [דפדפנים](#def-web-browser) עשויים לחסום תוכן מעורב או לסמן את העמוד הזה כפחות מאובטח כאשר קיים תוכן מעורב: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. כדי לתקן בעיית תוכן מעורב, על גורם פיתוח האתר להחליף את העמודים שלהם כדי שכל המשאבים יהיו בכתובות HTTPS. [כלי מפתחים](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) שמובנים בתוך הדפדפנים עשויים לשמש כדי לאתר אילו משאבים גורמים לבעיית התוכן המעורב. {{% /def %}}
 
-{{% def id="OCSP" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" name="פרוטוקול מצב אישורים מקוון" %}} שיטה לבדוק את מצב ה[שלילה](#def-revocation) של [אישור](#def-leaf). במילים אחרות, דרך לבדוק האם [רשות אישורים](#def-CA) מציינת שהאישור לא אמור להיחשב עוד כתקף, על אף שתאריך התפוגה שלו לא הגיע עדיין. הבקשה הזאת יכולה להוביל לבעיות פרטיות כיוון שהיא מרשה לרשות האישורים ולספקיות האינטרנט לצפות באופן ישיר מי מבקר ובאיזה אתרים. [ויקיפדיה](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+{{% def id="OCSP" english="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" name="פרוטוקול מצב אישורים מקוון" %}} שיטה לבדוק את מצב ה[שלילה](#def-revocation) של [אישור](#def-leaf). במילים אחרות, דרך לבדוק האם [רשות אישורים](#def-CA) מציינת שהאישור לא אמור להיחשב עוד כתקף, על אף שתאריך התפוגה שלו לא הגיע עדיין. הבקשה הזאת יכולה להוביל לבעיות פרטיות כיוון שהיא מרשה לרשות האישורים ולספקיות האינטרנט לצפות באופן ישיר מי מבקר ובאיזה אתרים. [Let's Encrypt](#def-LE) לא מספקת שירות OCSP יותר. [ויקיפדיה](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" english="OCSP Must-Staple" name="חובת שידוך OCSP‏" %}} הרחבת [אישור](#def-leaf) שמודיעה ל[דפדפן](#def-web-browser) ש[שרת האינטרנט](#def-web-server) עם האישור הזה חייב להשתמש ב[שידוך OCSP](#def-OCSP-stapling). ההרחבה משמשת לדרוש שמצב [שלילה](#def-revocation) עדכני של ה[אישור](#def-leaf) יאומת על ידי שרת האינטרנט עם כל חיבור, מה שהופך את השלילה ליותר אמינה. ל־[Let's Encrypt](#def-LE) יש אפשרות להנפיק אישורים עם [הרחבת](#def-extension) חובת שידוך OCSP לפי בקשה. [בלוג האבטחה של Mozilla‏](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" english="OCSP Must-Staple" name="חובת שידוך OCSP‏" %}} הרחבת [אישור](#def-leaf) שמודיעה ל[דפדפן](#def-web-browser) ש[שרת האינטרנט](#def-web-server) עם האישור הזה חייב להשתמש ב[שידוך OCSP](#def-OCSP-stapling). ההרחבה משמשת לדרוש שמצב [שלילה](#def-revocation) עדכני של ה[אישור](#def-leaf) יאומת על ידי שרת האינטרנט עם כל חיבור, מה שהופך את השלילה ליותר אמינה. [Let's Encrypt](#def-LE) לא תומכת בזה יותר. [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" english="OCSP stapling" name="שידוך פרוטוקול מצב אישורים מקוון" %}} דרך ל[שרת האינטרנט](#def-web-server) לשלוח ל[דפדפן](#def-web-browser) תגובת [OCSP](#def-OCSP) שחתומה על ידי [רשות אישורים](#def-CA), כדי שהדפדפן עצמו לא יצטרך לבצע בקשת OCSP (פרוטוקול מצב אישור מקוון) משנית אל רשות האישורים, מציג שיפור במהירות ובפרטיות. מוכר גם בתור הרחבת בקשת מצב אישור TLS. [ויקיפדיה](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" english="OCSP stapling" name="שידוך פרוטוקול מצב אישורים מקוון" %}} דרך ל[שרת האינטרנט](#def-web-server) לשלוח ל[דפדפן](#def-web-browser) תגובת [OCSP](#def-OCSP) שחתומה על ידי [רשות אישורים](#def-CA), כדי שהדפדפן עצמו לא יצטרך לבצע בקשת OCSP (פרוטוקול מצב אישור מקוון) משנית אל רשות האישורים, מציג שיפור במהירות ובפרטיות. מוכר גם בתור הרחבת בקשת מצב אישור TLS. כדאי לשים לב ש־[Let's Encrypt](#def-LE) לא תומכת ב־OCSP. [ויקיפדיה](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" english="Object identifier" abbr="OID" name="מזהה עצם" %}} OIDs (מזהי עצמים) הם מזהים מספריים ייחודיים שתוקננו על ידי International Telecommunications Union ‏(ITU - איגוד הטלקומוניקציה הבינלאומי) וגם על ידי ISO/IEC (ארגון התקינה הבינלאומי/הנציבות הבין-לאומית לאלקטרוטכניקה). במזהי עצמים נעשה שימוש בתוך אישורים כדי להגדיר הרחבות, שדות או קביעות מדיניות. תקני אינטרנט ו[מדיניות אישורים](#def-CP) ומסמכי [הצהרת מדיניות אישורים](#def-CPS) מגדירים את אופן השימוש במזהי עצמים. [ויקיפדיה](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
@@ -137,7 +137,7 @@ Note for translators:
 
 {{% def id="relying-party" english="Relying Party" name="גוף נסמך" %}} הגוף שסומך על המידע שבאישור. למשל, מבקר באתר HTTPS הוא גוף נסמך. {{% /def %}}
 
-{{% def id="revocation" english="Revocation" name="שלילה" %}} אישור תקף עד למועד תפוגת תוקפו, אלא אם כן [רשות האישורים](#def-CA) מכריזה שהוא נשלל. האישור עשוי להישלל ממגוון סיבות כגון פגיעה במפתח הפרטי. דפדפנים יכולים לבדוק אם אישור נשלל בעזרת [CRL](#def-CRL),‏ [OCSP](#def-OCSP) או שיטות חדשות יותר כגון [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) ו־[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). כדאי לשים לב שבמקרים רבים, [שלילה לא עובדת](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
+{{% def id="revocation" english="Revocation" name="שלילה" %}} אישור תקף עד למועד תפוגת תוקפו, אלא אם כן [רשות האישורים](#def-CA) מכריזה שהוא נשלל. האישור עשוי להישלל ממגוון סיבות כגון פגיעה במפתח הפרטי. דפדפנים יכולים לבדוק אם אישור נשלל באמצעות [CRL](#def-CRL) או שיטות עדכניות יותר כגון [CRLite](https://github.com/mozilla/crlite/) ו־[CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). כדאי לשים לב שבמקרים רבים, [שלילה לא עובדת](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" english="Root certificate" name="אישור עליון" %}} אישור ש[נחתם עצמית](#def-self-signed) שנשלט על ידי [רשות אישורים](#def-CA), משמש לחתימה על אישורי ה[תווך](#def-intermediate) ונכלל ב[מאגרי המהימנים](#def-store). [ויקיפדיה](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 

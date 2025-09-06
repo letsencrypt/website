@@ -1,15 +1,14 @@
 ---
 title: שלילת אישורים
 slug: revoking
-date: 2017-06-08
-lastmod: 2021-10-15
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 
 כאשר אישור אינו בטוח עוד לשימוש, יש לשלול אותו. זה יכול לקרות ממגוון סיבות שונות. למשל, יכול להיות ששיתפת בטעות את המפתח הפרטי באתר ציבורי, או שאולי האקרים העתיקו את המפתח הפרטי מהשרתים שלך או השתלטו באופן זמני על השרתים שלך או על הגדרות ה־DNS שלך והשתמש בזה כדי לתקף ולהנפיק אישור שעבורו הם מחזיקים במפתח הפרטי.
 
-בעת שלילת אישור של Let's Encrypt, פרטים על השלילה הזאת יפורסמו על ידיLet's Encrypt דרך [Online Certificate Status Protocol(פרוטוקול מצב אישור מקוון - OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), וחלק מהדפדפנים יבדקו את OCSP כדי לבדוק האם עליהם לתת אמון באישור. נא לשים לב של־OCSP [יש כמה תקלות יסודיות](https://www.imperialviolet.org/2011/03/18/revocation.html), לכן לא כל הדפדפנים יבצעו את הבדיקה הזו. עם זאת, שלילת אישורים בתגובה למפתחות פרטיים שנפגעו היא דרך התנהלות חשובה והיא נדרשת על ידי [הסכם המנוי](/repository) של Let's Encrypt.
+בעת שלילת אישור של Let's Encrypt, פרטים על השלילה הזאת כנראה יפורסמו על ידי Let's Encrypt דרך [רשימות שלילת אישורים (CRLs)](https://en.wikipedia.org/wiki/Certificate_revocation_list), וחלק מהדפדפנים יבדקו את ה־CRLs כדי לבדוק האם עליהם להאמין לאישור. שלילת אישורים בתגובה למפתחות פרטיים שנפגעו היא דרך התנהלות חשובה והיא נדרשת על ידי [הסכם המנוי](/repository) של Let's Encrypt.
 
 כדי לשלול אישור עם Let's Encrypt, יהיה עליך להשתמש ב־[API של ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), ככל הנראה דרך לקוח ACME כגון [Certbot](https://certbot.eff.org/). יהיה עליך להוכיח ל־Let's Encrypt שיש לך הרשאה לשלול את האישור. יש שלוש דרכים לעשות זאת: מהחשבון שהנפיק את האישור באמצעות חשבון מאומת אחר או באמצעות המפתח הפרטי של האישור.
 
@@ -50,7 +49,7 @@ certbot revoke --cert-path /etc/letsencrypt/archive/${YOUR_DOMAIN}/cert1.pem
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-ולעקוב אחר ההוראות. אם עדיף לך לתקף באמצעות HTTP במקום באמצעות DNS, יש להחליף את הדגלון `‎--preferred-challenges` ב־`‎--preferred-challenges=http`.
+ולעקוב אחר ההנחיות, תוך דילוג על שלב התיקוף עבור `nonexistent.${YOUR_DOMAIN}`. אם עדיף לך לתקף באמצעות HTTP במקום באמצעות DNS, יש להחליף את הדגלון `‎--preferred-challenges` ב־`‎--preferred-challenges=http`. נא לשים לב שבמקרים רבים, גרסת ה־DNS של השלבים האלה תעבוד אם `--manual` יוחלף בתוסף certbot כדי לעמוד באתגרי DNS-01 אוטומטית מאחר ש־certbot ישמח להחליף רשומת TXT תחת `_acme-challenge.nonexistent.${YOUR_DOMAIN}` אם יש לו איך לבצע זאת.
 
 לאחר תיקוף שהשליטה בכל שמות התחום באישור שברצונך לשלול בידיך, ניתן להוריד את האישור מ־[crt.sh](https://crt.sh/) ואז להמשיך לשלול את האישור כאילו הוא הונפק על ידיך:
 
