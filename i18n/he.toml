@@ -503,10 +503,10 @@ other = "מס׳ DTC:"
 other = "מס׳ זיהוי מס:"
 
 [donate_page_stock_outro_text]
-other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+other = "נא לעדכן אותנו אם בחרת לתרום ניירות ערך דרך {{ .sponsorEmailLink }}. אפשר גם לשלוח מכתב אישור מסוכן ההשקעות או הברוקר שלך."
 
 [donate_page_other_daf_heading]
-other = "Donor Advised Funds"
+other = "קרנות המייעצות לתורמים"
 
 [donate_page_other_daf_text]
 other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."

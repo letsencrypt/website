@@ -2,13 +2,13 @@
 title: שרשראות אמון
 linkTitle: שרשראות אמון (אישורים עליונים ומתווכים)
 slug: certificates
-lastmod: 2025-07-31
+lastmod: 2025-09-03
 show_lastmod: 1
 ---
 
 העמוד הזה מתאר את המצב הנוכחי ואת ההיסטוריה המתאימה של רשויות אישורים שמופעלים על ידי Let's Encrypt. נא לשים לב שנהוג לחשוב על רשות אישורים בדרך כלל כעל מפתח ושם: כל רשות אישורים יכולה להיות מיוצגת על ידי _מגוון_ אישורים שכולם מכילים את אותו הנושא ואת אותם פרטי המפתח הציבורי. במקרים כאלה, סיפקנו את פרטי כל האישורים שמייצגים את רשות האישורים.
 
-[![תרשים היררכיית אישורי ISRG, נכון ליוני 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![תרשים היררכיית אישורי ISRG, נכון לאוגוסט 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # רשויות אישורים עליונות
 
@@ -41,40 +41,6 @@ show_lastmod: 1
 
 לכל נושאי (Subjects) אישורי הביניים שדה המדינה (Country) מוגדר בתור `C = US`.
 
-* **Let's Encrypt E5**
-  * נושא: `O = Let's Encrypt,‏ CN = E5`
-  * סוג מפתח: `ECDSA P-384`
-  * תקף עד: 2027-03-12
-  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295810),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295810)
-  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e5.der),‏ [pem](/certs/2024/e5.pem),‏ [txt](/certs/2024/e5.txt)
-  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e5-cross.der),‏ [pem](/certs/2024/e5-cross.pem),‏ [txt](/certs/2024/e5-cross.txt)
-* **Let's Encrypt E6**
-  * נושא: `O = Let's Encrypt,‏ CN = E7`
-  * סוג מפתח: `ECDSA P-384`
-  * תקף עד: 2027-03-12
-  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295819),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295819)
-  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e6.der),‏ [pem](/certs/2024/e6.pem),‏ [txt](/certs/2024/e6.txt)
-  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e6-cross.der),‏ [pem](/certs/2024/e6-cross.pem),‏ [txt](/certs/2024/e6-cross.txt)
-* **Let's Encrypt R10**
-  * נושא: `O = Let's Encrypt,‏ CN = R10`
-  * סוג מפתח: `RSA 2048`
-  * תקף עד: 2027-03-12
-  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295814),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295814)
-  * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r10.der),‏ [pem](/certs/2024/r10.pem),‏ [txt](/certs/2024/r10.txt)
-* **Let's Encrypt R11**
-  * נושא: `O = Let's Encrypt,‏ CN = R11`
-  * סוג מפתח: `RSA 2048`
-  * תקף עד: 2027-03-12
-  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295815),‏ [רשות אישורים](https://crt.sh/?Identity=%25&iCAID=295815)
-  * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r11.der),‏ [pem](/certs/2024/r11.pem),‏ [txt](/certs/2024/r11.txt)
-
-לחיצה להלן תציג פרטים על אישורי תווך נוספים שאינם חלק משושלת ההנפקה הפעילה:
-
-<details>
-<summary>גיבוי</summary>
-
-לרשויות אישורי הביניים האלה יש אישורים שתקפים כרגע, אך לא מתבצעת מהם הנפקה עוד. אנו עשויים להתחיל להנפיק אישורי מנויים מהם בכל זמן נתון, ללא אזהרה.
-
 * **Let's Encrypt E7**
   * נושא: `O = Let's Encrypt,‏ CN = E7`
   * סוג מפתח: `ECDSA P-384`
@@ -89,13 +55,6 @@ show_lastmod: 1
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295809),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295809)
   * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e8.der),‏ [pem](/certs/2024/e8.pem),‏ [txt](/certs/2024/e8.txt)
   * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e8-cross.der),‏ [pem](/certs/2024/e8-cross.pem),‏ [txt](/certs/2024/e8-cross.txt)
-* **Let's Encrypt E9**
-  * נושא: `O = Let's Encrypt,‏ CN = E9`
-  * סוג מפתח: `ECDSA P-384`
-  * תקף עד: 2027-03-12
-  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295812),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295812)
-  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e9.der),‏ [pem](/certs/2024/e9.pem),‏ [txt](/certs/2024/e9.txt)
-  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e9-cross.der),‏ [pem](/certs/2024/e9-cross.pem),‏ [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R12**
   * נושא: `O = Let's Encrypt,‏ CN = R12`
   * סוג מפתח: `RSA 2048`
@@ -108,6 +67,21 @@ show_lastmod: 1
   * תקף עד: 2027-03-12
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295817),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295817)
   * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r13.der),‏ [pem](/certs/2024/r13.pem),‏ [txt](/certs/2024/r13.txt)
+
+לחיצה להלן תציג פרטים על אישורי תווך נוספים שאינם חלק משושלת ההנפקה הפעילה:
+
+<details>
+<summary>גיבוי</summary>
+
+לרשויות אישורי הביניים האלה יש אישורים שתקפים כרגע, אך לא מתבצעת מהם הנפקה עוד. אנו עשויים להתחיל להנפיק אישורי מנויים מהם בכל זמן נתון, ללא אזהרה.
+
+* **Let's Encrypt E9**
+  * נושא: `O = Let's Encrypt,‏ CN = E9`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2027-03-12
+  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295812),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295812)
+  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e9.der),‏ [pem](/certs/2024/e9.pem),‏ [txt](/certs/2024/e9.txt)
+  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e9-cross.der),‏ [pem](/certs/2024/e9-cross.pem),‏ [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R14**
   * נושא: `O = Let's Encrypt,‏ CN = R14`
   * סוג מפתח: `RSA 2048`
@@ -134,6 +108,20 @@ show_lastmod: 1
   * תקף עד: 2025-09-15
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=183284),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=183284)
   * פרטי אישורים (נחתם על ידי ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963),‏ [der](/certs/lets-encrypt-e2.der),‏ [pem](/certs/lets-encrypt-e2.pem),‏ [txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt E5**
+  * נושא: `O = Let's Encrypt,‏ CN = E5`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2027-03-12
+  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295810),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295810)
+  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e5.der),‏ [pem](/certs/2024/e5.pem),‏ [txt](/certs/2024/e5.txt)
+  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e5-cross.der),‏ [pem](/certs/2024/e5-cross.pem),‏ [txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * נושא: `O = Let's Encrypt,‏ CN = E7`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2027-03-12
+  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295819),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295819)
+  * פרטי אישור (נחתם על ידי ISRG Root X2): [der](/certs/2024/e6.der),‏ [pem](/certs/2024/e6.pem),‏ [txt](/certs/2024/e6.txt)
+  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/2024/e6-cross.der),‏ [pem](/certs/2024/e6-cross.pem),‏ [txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * נושא: `O = Let's Encrypt,‏ CN = R3`
   * סוג מפתח: `RSA 2048`
@@ -148,6 +136,18 @@ show_lastmod: 1
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=183268),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=183268)
   * פרטי אישור (נחתם על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877),‏ [der](/certs/lets-encrypt-r4.der),‏ [pem](/certs/lets-encrypt-r4.pem),‏ [txt](/certs/lets-encrypt-r4.txt)
   * פרטי אישור (חתימה צולבת על ידי IdenTrust): [crt.sh](https://crt.sh/?id=3479778543),‏ [der](/certs/lets-encrypt-r4-cross-signed.der),‏ [pem](/certs/lets-encrypt-r4-cross-signed.pem),‏ [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+* **Let's Encrypt R10**
+  * נושא: `O = Let's Encrypt,‏ CN = R10`
+  * סוג מפתח: `RSA 2048`
+  * תקף עד: 2027-03-12
+  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295814),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295814)
+  * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r10.der),‏ [pem](/certs/2024/r10.pem),‏ [txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * נושא: `O = Let's Encrypt,‏ CN = R11`
+  * סוג מפתח: `RSA 2048`
+  * תקף עד: 2027-03-12
+  * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295815),‏ [רשות אישורים](https://crt.sh/?Identity=%25&iCAID=295815)
+  * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r11.der),‏ [pem](/certs/2024/r11.pem),‏ [txt](/certs/2024/r11.txt)
 * **רשות Let's Encrypt X1**
   * נושא: `O = Let's Encrypt,‏ CN = Let's Encrypt Authority X1`
   * סוג מפתח: `RSA 2048`
@@ -203,16 +203,16 @@ show_lastmod: 1
 אישורי מנויים עם מפתחות RSA ציבוריים מונפקים מאישורי RSA הביניים שלנו, שמונפקים רק מאישור RSA העל שלנו ISRG Root X1 (כלומר הם אינם חתומים באופן צולב). לכן, לכל אישורי המנויים מסוג RSA יש רק שרשרת אחת זמינה:
 
 <div style="text-align: center">
-אישור מנוי RSA → RSA ביניים (R10 או R11) → ISRG Root X1
+אישור מנוי RSA → RSA ביניים (R13 או R12) → ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 אישורי מנויים עם מפתחות ECDSA ציבוריים מונפקים מאישורי ה־ECDSA שלנו, שמונפקים שניהם (כלומר נחתמים באופן צולב) מ־ISRG Root X1 העל ב־RSA ומ־ISRG Root X2 העל ב־ECDSA שלנו. לכן אנחנו מציעים שתי שרשראות לאישורים האלה:
 
 <div style="text-align: center">
-אישור מנוי ECDSA → ECDSA ביניים (E5 או E6) → ISRG Root X1
+אישור מנוי ECDSA → ECDSA ביניים (E8 או E7) → ISRG Root X1
 
-אישור מנוי ECDSA → ECDSA ביניים (E5 או E6) → ISRG Root X2
+אישור מנוי ECDSA → ECDSA ביניים (E8 או E7) → ISRG Root X2
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
