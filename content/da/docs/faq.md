@@ -73,9 +73,11 @@ Den private nøgle er altid genereret og administreres på dine egne servere, ik
 
 ## Hvad er levetiden for Let's Encrypt certifikater? Hvor længe er de gyldige?
 
-Vores certifikater er gyldige i 90 dage. Du kan læse om hvorfor [her](/2015/11/09/why-90-days.html).
+Vores standard certifikater er gyldige i 90 dage. Du kan læse om hvorfor [her](/2015/11/09/why-90-days.html).
 
-Der er ingen måde at justere dette på, der er ingen undtagelser. Vi anbefaler at du automatisk fornyer dine certifikater hver 60 dage.
+Abonnenter kan tilmelde sig kortvarige certifikater, som er gyldige i seks dage. Du kan læse om disse [her](/2025/02/20/first-short-lived-cert-issued.html).
+
+Der er ingen måde at tilpasse disse livstider på, der er ingen undtagelser. Vi anbefaler at forny 90 dages certifikater hver 60 dage og seks dages certifikater hver tredje dag.
 
 ## Vil Let's Encrypt udstede Organisationsvalidering (OV) eller udvidet validering (EV) certifikater?
 
@@ -87,7 +89,7 @@ Ja, det samme certifikat kan indeholde flere forskellige navne ved hjælp af Sub
 
 ## Udsteder Let's Encrypt wildcard certifikater?
 
-Ja. Wildcard udstedelse skal ske via ACMEv2 ved hjælp af [DNS-01 challenge](/docs/challenge-types/#dns-01-challenge). Se [dette indlæg](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for mere teknisk information.
+Ja. Wildcard udstedelse skal anvende [DNS-01 challenge](/docs/challenge-types/#dns-01-challenge). Se [dette indlæg](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) for mere teknisk information.
 
 ## Er der en Let's Encrypt (ACME) klient til mit operativsystem?
 

@@ -1,7 +1,7 @@
 ---
 title: יומני שקיפות אישורים (CT)
 slug: ct-logs
-lastmod: 2023-09-25
+lastmod: 2025-08-27
 show_lastmod: 1
 ---
 
@@ -14,9 +14,8 @@ show_lastmod: 1
 </p>
 
 <p>
-  מערכת Let's Encrypt מגישה את כל האישורים שאנו מנפיקים ליומני שקיפות אישורים. אנו מפעילים בנוסף שני יומני שקיפות אישורים שנתיים בחלוקה ליחידות גיבוי בשמות <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
-    >Oak</a
-> ו־Sapling. כל רשויות האישורים שנחשבות למהימנות בעיני הציבור מוזמנות לתעד ליומנים שלנו. אישורים עליונים רבים של מגוון רשויות אישורים כבר נכללו ביומני שקיפות האישורים שלנו. אם יש לך רשות אישורים שמתופעלת על ידיך והמנפיק שלך אינו ברשימת המנפיקים המורשים, נא לפתוח בקשה <a href="https://github.com/letsencrypt/ct-log-metadata">כאן</a>.
+  מערכת Let's Encrypt מגישה את כל האישורים שאנו מנפיקים ליומני שקיפות אישורים. אנחנו גם מפעילים יומני שקיפות אישורים (CT).
+  כל רשויות האישורים שנחשבות למהימנות בעיני הציבור מוזמנות לתעד ליומנים שלנו. אישורים עליונים רבים של מגוון רשויות אישורים כבר נכללו ביומני שקיפות האישורים שלנו. אם יש לך רשות אישורים שמתופעלת על ידיך והמנפיק שלך אינו ברשימת המנפיקים המורשים, נא לפתוח בקשה <a href="https://github.com/letsencrypt/ct-log-metadata">כאן</a>.
 </p>
 
 <p>
@@ -51,6 +50,22 @@ show_lastmod: 1
 המידע על מגוון מצבי מחזורי החיים שיומן שקיפות אישורים יכול לעבור ביניהם נמצא <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">כאן</a>.
 </p>
 
+<h3>Sunlight</h3>
+<p>
+  Let's Encrypt בתהליך הסבה ליומני פעילות מבוססי <a href="https://sunlight.dev">Sunlight</a>.
+  הפרטים כוללים אישורי על מקובלים, מפתחות ציבוריים, מזהי יומנים וזמני חלוקה שזמינים בכל עמוד נחיתה של יומן, קישור להלן.
+</p>
+<p>Sycamore ו־Willow הם יומני שקיפות האישורים לסביבה המבצעית שלנו, הם מקבלים אישורים מרשויות אישורים אמינות.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>Twig הוא יומן בדיקה שמקבל אישורים מרשויות אישורים אמינות לרבות כמה רשויות אישורים לבדיקה, כולל סביבת ההכנה להקמה של Let's Encrypt.</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
 {{< ct_logs data="production" >}}
 <li>
   Oak משולב לתוך תכניות שקיפות האישורים של <a href="https://support.apple.com/en-us/HT209255">Apple</a> ושל <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
@@ -76,19 +91,8 @@ show_lastmod: 1
 <li>
   רשויות אישורים אחרות יכולות להשתמש ב־Sapling למטרות בדיקות.
 </li>
-{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
-<li>
-  ב־Let's Encrypt אנו בוחנים יומנים רציפים על בסיס <a href="https://sunlight.dev">Sunlight</a>.
-</li>
-<li>
-  חותמות זמן של אישורים חתומים (SCTs) מהיומנים האלו <b>לא אמורים</b> להשתלב באישורים מהימנים ציבוריים.
-</li>
-<li>Twig יישאר יומן בדיקות ויקבל את אותה רשות אישורים כמו Sapling.
-</li>
-<li>Willow ו־Sycamore מקבלים את אותו הדבר כמו Oak ואמורים להפוך ליומנים מבצעיים.
-</li>
 {{< /ct_logs >}}
-<br />
+
 <h2>פעולות על היומן</h2>
 <p>
   כדי למנות את האישורים העליונים הנכללים ליומן שקיפות אישורים מסוים עליך להריץ את הפקודה הבאה במסוף החביב עליך:

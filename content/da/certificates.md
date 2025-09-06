@@ -2,13 +2,13 @@
 title: Chains of Trust
 linkTitle: Tillidskæder (Root og Intermediate Certifikater)
 slug: certificates
-lastmod: 2024-06-11
+lastmod: 2025-09-03
 show_lastmod: 1
 ---
 
 Denne side beskriver alle de nuværende og relevante historiske certificeringsmyndigheder, som drives af Let's Encrypt. Bemærk, at en Certifikatmyndighed - CA - mest korrekt opfattes som en nøgle og et navn: enhver given CA kan være repræsenteret af _flere_ certifikater, som alle indeholder den samme Emne og Offentlige nøgle Information. I sådanne tilfælde har vi givet nærmere oplysninger om alle de certifikater, der repræsenterer CA'en.
 
-[![ISRG Certifikate Hierarki Diagram, fra juni 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG Certifikat Hierarki Diagram, fra August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Root CAs
 
@@ -41,40 +41,6 @@ Vi vedligeholder i øjeblikket fire mellemled i aktiv rotation. Abonnementscerti
 
 Alle underordnede certifikatemner har et landefelt på `C = US`.
 
-* **Let's Encrypt E5**
-  * Emne: `O = Let's Encrypt, CN = E5`
-  * Nøgletype: `ECDSA P-384`
-  * Gyldig indtil: 2027-03-12
-  * CA-detaljer: [crt.sh](https://crt.sh/?caid=295810), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295810)
-  * Certifikatdetaljer (krydsunderskrevet af ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem),[txt](/certs/2024/e5.txt)
-  * Certifikatdetaljer (krydsunderskrevet af ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
-* **Let's Encrypt E6**
-  * Emne: `O = Let's Encrypt, CN = E6`
-  * Nøgletype: `ECDSA P-384`
-  * Gyldig indtil: 2027-03-12
-  * CA-detaljer: [crt.sh](https://crt.sh/?caid=295819), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295819)
-  * Certifikatdetaljer (underskrevet af ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
-  * Certifikatdetaljer (Krydsunderskrevet af ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
-* **Let's Encrypt R10**
-  * Emne: `O = Let's Encrypt, CN = R10`
-  * Nøgletype: `RSA 2048`
-  * Gyldig indtil: 2027-03-12
-  * CA detaljer: [crt.sh](https://crt.sh/?caid=295814), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295814)
-  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
-* **Let's Encrypt R11**
-  * Emne: `O = Let's Encrypt, CN = R11`
-  * Nøgletype: `RSA 2048`
-  * Gyldig indtil: 2027-03-12
-  * CA detaljer: [crt.sh](https://crt.sh/?caid=295815), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295815)
-  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
-
-Klik nedenfor for oplysninger om yderligere under ordnede Ca'er, som ikke er en del af det aktive udstedelseshierarki:
-
-<details>
-<summary>Backup</summary>
-
-Disse underliggende CA'er har gyldige certifikater, men anvendes ikke til udstedelse. Vi kan til enhver tid begynde at udstede abonnentcertifikater fra dem uden varsel.
-
 * **Let's Encrypt E7**
   * Emne: `O = Let's Encrypt, CN = E7`
   * Nøgletype: `ECDSA P-384`
@@ -89,13 +55,6 @@ Disse underliggende CA'er har gyldige certifikater, men anvendes ikke til udsted
   * CA detaljer: [crt.sh](https://crt.sh/?caid=295809), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295809)
   * Certifikatdetaljer (underskrevet af ISRG Root X2): [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
   * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
-* **Let's Encrypt E9**
-  * Emne: `O = Let's Encrypt, CN = E9`
-  * Nøgletype: `ECDSA P-384`
-  * Gyldig indtil: 2027-03-12
-  * CA detaljer: [crt.sh](https://crt.sh/?caid=295812), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295812)
-  * Certifikatdetaljer (underskrevet af ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
-  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R12**
   * Emne: `O = Let's Encrypt, CN = R12`
   * Nøgletype: `RSA 2048`
@@ -108,6 +67,21 @@ Disse underliggende CA'er har gyldige certifikater, men anvendes ikke til udsted
   * Gyldig indtil: 2027-03-12
   * CA detaljer: [crt.sh](https://crt.sh/?caid=295817), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295817)
   * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+
+Klik nedenfor for oplysninger om yderligere under ordnede Ca'er, som ikke er en del af det aktive udstedelseshierarki:
+
+<details>
+<summary>Backup</summary>
+
+Disse underliggende CA'er har gyldige certifikater, men anvendes ikke til udstedelse. Vi kan til enhver tid begynde at udstede abonnentcertifikater fra dem uden varsel.
+
+* **Let's Encrypt E9**
+  * Emne: `O = Let's Encrypt, CN = E9`
+  * Nøgletype: `ECDSA P-384`
+  * Gyldig indtil: 2027-03-12
+  * CA detaljer: [crt.sh](https://crt.sh/?caid=295812), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295812)
+  * Certifikatdetaljer (underskrevet af ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R14**
   * Emne: `O = Let's Encrypt, CN = R14`
   * Nøgletype: `RSA 2048`
@@ -120,7 +94,7 @@ Disse underliggende CA'er har gyldige certifikater, men anvendes ikke til udsted
 <details>
 <summary>Trukket tilbage</summary>
 
-Disse underordnede CA'er bruges ikke længere til at udstede Abonnentcertifikater. De, der stadig har gyldige certifikater, kan producere OCSP-svar og/eller CRL'er.
+Disse underordnede CA'er bruges ikke længere til at udstede Abonnentcertifikater. De, der stadig har gyldige certifikater, kan producere CRL'er.
 
 * **Let's Encrypt E1**
   * Emne: `O = Let's Encrypt, CN = E1`
@@ -134,6 +108,20 @@ Disse underordnede CA'er bruges ikke længere til at udstede Abonnentcertifikate
   * Gyldig indtil: 2025-09-15
   * CA detaljer: [crt.sh](https://crt.sh/?caid=183284), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=183284)
   * Certifikatdetaljer (underskrevet af ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem),[txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt E5**
+  * Emne: `O = Let's Encrypt, CN = E5`
+  * Nøgletype: `ECDSA P-384`
+  * Gyldig indtil: 2027-03-12
+  * CA-detaljer: [crt.sh](https://crt.sh/?caid=295810), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295810)
+  * Certifikatdetaljer (krydsunderskrevet af ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem),[txt](/certs/2024/e5.txt)
+  * Certifikatdetaljer (krydsunderskrevet af ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * Emne: `O = Let's Encrypt, CN = E6`
+  * Nøgletype: `ECDSA P-384`
+  * Gyldig indtil: 2027-03-12
+  * CA-detaljer: [crt.sh](https://crt.sh/?caid=295819), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295819)
+  * Certifikatdetaljer (underskrevet af ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+  * Certifikatdetaljer (Krydsunderskrevet af ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * Emne: `O = Let's Encrypt, CN = R3`
   * Nøgletype: `RSA 2048`
@@ -148,6 +136,18 @@ Disse underordnede CA'er bruges ikke længere til at udstede Abonnentcertifikate
   * CA detaljer: [crt.sh](https://crt.sh/?caid=183268), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=183268)
   * Certifikat detaljer (underskrevet af ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Certifikat detaljer (krydsunderskrevet af IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
+* **Let's Encrypt R10**
+  * Emne: `O = Let's Encrypt, CN = R10`
+  * Nøgletype: `RSA 2048`
+  * Gyldig indtil: 2027-03-12
+  * CA detaljer: [crt.sh](https://crt.sh/?caid=295814), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295814)
+  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * Emne: `O = Let's Encrypt, CN = R11`
+  * Nøgletype: `RSA 2048`
+  * Gyldig indtil: 2027-03-12
+  * CA detaljer: [crt.sh](https://crt.sh/?caid=295815), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=295815)
+  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 * **Let's Encrypt Autoriteten X1**
   * Om: `O = Let's Encrypt, CN = Let's Encrypt Autoriteten X1`
   * Nøgletype: `RSA 2048`
@@ -210,9 +210,9 @@ RSA Abonnementcert ← RSA underordnet (R10 eller R11) ← ISRG Root X1
 Abonnentcertifikater med offentlige ECDSA-nøgler udstedes fra vores ECDSA-underordnede CA, som udstedes begge (i.. krydssigneres) fra vores RSA-rod ISRG Root X1 og vores ECDSA-rod ISRG Root X2. Derfor tilbyder vi to kæder til disse certifikater:
 
 <div style="text-align: center">
-ECDSA Abonnementcert ← ECDSA Underordnet (E5 eller E6) ← ISRG Root X1
+ECDSA Abonnementcert ← ECDSA mellemliggende (E7 eller E8) ← ISRG Root X1
 
-ECDSA Abonnementcert ← ECDSA Underordnet (E5 eller E6) ← ISRG Root X2
+ECDSA Abonnementcert ← ECDSA mellemliggende (E7 eller E8) ← ISRG Root X2
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 

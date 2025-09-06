@@ -2,13 +2,13 @@
 title: Vertrauensketten
 linkTitle: Vertrauensketten (Root und Zwischenzertifikate)
 slug: certificates
-lastmod: 2025-07-31
+lastmod: 2025-09-03
 show_lastmod: 1
 ---
 
 Diese Seite beschreibt alle aktuellen und relevanten historischen Zertifizierungsstellen, die von Let's Encrypt betrieben werden. Beachten Sie, dass eine CA am korrektsten als Schlüssel und Name gedacht ist: jede CA kann durch _Viel_ Zertifikate, die alle die gleichen Betreff und Public Key Information enthalten. In diesen Fällen haben wir die Details aller Zertifikate zur Verfügung gestellt, die die CA repräsentieren.
 
-[![ISRG-Zertifikatshierarchiediagramm, Stand Juni 2024](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG-Zertifikatshierarchiediagramm, Stand August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # Wurzelzertifikate (Root-Zertifikate)
 
@@ -41,40 +41,6 @@ Derzeit unterhalten wir vier Zwischenprodukte in der aktiven Rotation. Abonnente
 
 Alle Zwischenzertifikate haben ein Länderfeld von `C = US`.
 
-* **Let's Encrypt E5**
-  * Betreff: `O = Let's Encrypt, CN = E5`
-  * Schlüsseltyp: `ECDSA P-384`
-  * Gültig bis: 2027-03-12
-  * CA Details: [crt.sh](https://crt.sh/?caid=295810), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295810)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
-  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
-* **Let's Encrypt E6**
-  * Betreff: `O = Let's Encrypt, CN = E6`
-  * Schlüsseltyp: `ECDSA P-384`
-  * Gültig bis: 2027-03-12
-  * CA Details: [crt.sh](https://crt.sh/?caid=295819), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295819)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
-  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
-* **Let's Encrypt R10**
-  * Betreff: `O = Let's Encrypt, CN = R10`
-  * Schlüsseltyp: `RSA 2048`
-  * Gültig bis: 2027-03-12
-  * CA Details: [crt.sh](https://crt.sh/?caid=295814), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295814)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
-* **Let's Encrypt R11**
-  * Betreff: `O = Let's Encrypt, CN = R11`
-  * Schlüsseltyp: `RSA 2048`
-  * Gültig bis: 2027-03-12
-  * CA Details: [crt.sh](https://crt.sh/?caid=295815), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295815)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
-
-Klicken Sie unten für Details zu weiteren Zwischenzertifikaten, die nicht Teil der aktiven Zertifikatsausstellung sind:
-
-<details>
-<summary>Reserviert für Disaster-Recovery</summary>
-
-Diese Zwischenzertifikate besitzen derzeit gültige Zertifikate, werden aber nicht ausgestellt. Wir können jederzeit ohne Vorwarnung mit der Ausgabe von Abonnentenzertifikaten beginnen.
-
 * **Let's Encrypt E7**
   * Betreff: `O = Let's Encrypt, CN = E7`
   * Schlüsseltyp: `ECDSA P-384`
@@ -89,13 +55,6 @@ Diese Zwischenzertifikate besitzen derzeit gültige Zertifikate, werden aber nic
   * CA Details: [crt.sh](https://crt.sh/?caid=295809), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295809)
   * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
   * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
-* **Let's Encrypt E9**
-  * Betreff: `O = Let's Encrypt, CN = E9`
-  * Schlüsseltyp: `ECDSA P-384`
-  * Gültig bis: 2027-03-12
-  * CA Details: [crt.sh](https://crt.sh/?caid=295812), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295812)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
-  * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R12**
   * Betreff: `O = Let's Encrypt, CN = R12`
   * Schlüsseltyp: `RSA 2048`
@@ -108,6 +67,21 @@ Diese Zwischenzertifikate besitzen derzeit gültige Zertifikate, werden aber nic
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295817), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295817)
   * Zertifikatsdetails (signiert durch ISRG Root X1): [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+
+Klicken Sie unten für Details zu weiteren Zwischenzertifikaten, die nicht Teil der aktiven Zertifikatsausstellung sind:
+
+<details>
+<summary>Reserviert für Disaster-Recovery</summary>
+
+Diese Zwischenzertifikate besitzen derzeit gültige Zertifikate, werden aber nicht ausgestellt. Wir können jederzeit ohne Vorwarnung mit der Ausgabe von Abonnentenzertifikaten beginnen.
+
+* **Let's Encrypt E9**
+  * Betreff: `O = Let's Encrypt, CN = E9`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2027-03-12
+  * CA Details: [crt.sh](https://crt.sh/?caid=295812), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295812)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+  * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R14**
   * Betreff: `O = Let's Encrypt, CN = R14`
   * Schlüsseltyp: `RSA 2048`
@@ -134,6 +108,20 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
   * Gültig bis: 2025-09-15
   * CA Details: [crt.sh](https://crt.sh/?caid=183284), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183284)
   * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt E5**
+  * Betreff: `O = Let's Encrypt, CN = E5`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2027-03-12
+  * CA Details: [crt.sh](https://crt.sh/?caid=295810), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295810)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
+  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * Betreff: `O = Let's Encrypt, CN = E6`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2027-03-12
+  * CA Details: [crt.sh](https://crt.sh/?caid=295819), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295819)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * Betreff: `O = Let's Encrypt, CN = R3`
   * Schlüsseltyp: `RSA 2048`
@@ -148,6 +136,18 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
   * CA Details: [crt.sh](https://crt.sh/?caid=183268), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183268)
   * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Zertifikatsdetails (Cross-signed von IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+* **Let's Encrypt R10**
+  * Betreff: `O = Let's Encrypt, CN = R10`
+  * Schlüsseltyp: `RSA 2048`
+  * Gültig bis: 2027-03-12
+  * CA Details: [crt.sh](https://crt.sh/?caid=295814), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295814)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * Betreff: `O = Let's Encrypt, CN = R11`
+  * Schlüsseltyp: `RSA 2048`
+  * Gültig bis: 2027-03-12
+  * CA Details: [crt.sh](https://crt.sh/?caid=295815), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295815)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 * **Let's Encrypt Authority X1**
   * Betreff: `O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * Schlüsseltyp: `RSA 2048`
@@ -203,7 +203,7 @@ Manchmal gibt es mehr als eine gültige Kette für ein bestimmtes Zertifikat: We
 Endentitätszertifikate mit RSA-öffentlichen Schlüsseln werden von unseren RSA-Zwischenzertifikaten ausgestellt, die nur von unserem RSA Wurzelzertifikat ISRG Root X1 signiert wurden (d.h. sie sind nicht gegenseitig signiert). Daher haben alle RSA-Abonnenten-Zertifikate nur eine einzige Kette zur Verfügung:
 
 <div style="text-align: center">
-RSA Endentitätszertifikat ← RSA Intermediate (R10 oder R11) ← ISRG Root X1
+RSA Endentitätszertifikat ← RSA Zwischenzertifikat (R12 oder R13) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
