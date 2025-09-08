@@ -1,176 +1,176 @@
 [home_hero_title]
-other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
+other = "Herkes İçin Şifreleme. 500 milyondan fazla web sitesine ücretsiz TLS sertifikaları sağlayan kar amacı gütmeyen bir kuruluş."
 
 [home_hero_getting_started]
-other = "Get Started"
+other = "Başlayın"
 
 [home_hero_donate]
-other = "Donate"
+other = "Bağış Yapın"
 
 [home_hero_sponsor]
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
+other = "Bu yılki kar amacı gütmeyen çalışmalarımız hakkında her şeyi <a href='https://abetterinternet.org/annual-reports/'>2024 Yıllık Raporumuzda</a> okuyabilirsiniz."
 
 [home_major_sponsors]
-other = "Major Sponsors and Funders"
+other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
 
 [home_from_our_blog]
 other = "Blog"
 
 [read_more]
-other = "Read more"
+other = "Daha Fazlası"
 
 [subscribe_rss]
-other = 'Subscribe <a href="{{ .Permalink }}">via RSS</a>'
+other = '<a href="{{ .Permalink }}">RSS aracılığıyla</a> Abonelik'
 
 [footer_support_us]
-other = "Support a more secure and privacy-respecting Web."
+other = "Daha güvenli ve gizliliğe duyarlı bir Web'i destekleyin."
 
 [footer_donate]
-other = "Donate Now"
+other = "Şimdi Bağış Yapın"
 
 [footer_mailing]
-other = "Send all mail or inquiries to:"
+other = "Tüm posta ve sorularınızı şu adrese gönderin:"
 
 [footer_legal_address]
-other = "Legal Address"
+other = "Legal Adres"
 
 [footer_policies]
 other = """
-View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
+<a href="/privacy/">Gizlilik politikamızı</a> inceleyin.<br>
+<a href="https://www.abetterinternet.org/trademarks">Ticari marka politikamızı</a> inceleyin.<br>
+<a href="https://www.abetterinternet.org/terms-of-service">Hizmet şartlarımızı</a> inceleyin.
 """
 
 [footer_links]
 other = """
-<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
+<a href="/privacy/">Gizlilik Politikası</a><a href="https://www.abetterinternet.org/trademarks">Ticari Marka Politikası</a>
 """
 
 [header_skip_nav]
-other = "Skip navigation links"
+other = "Navigasyon Bağlantılarını Atla"
 
 [last_updated]
-other = "Last updated: "
+other = "Son Güncelleme: "
 
 [see_all_doc]
-other = "See all Documentation"
+other = "Bütün Dokümantasyonu Görün"
 
 [blog_feed]
 other = "Let's Encrypt Blog Akışı"
 
 [diamond]
-other = "Diamond"
+other = "Elmas"
 
 [platinum]
-other = "Platinum"
+other = "Platinyum"
 
 [gold]
-other = "Gold"
+other = "Altın"
 
 [gold_basic]
-other = "Gold Basic"
+other = "Basit Altın"
 
 [silver]
-other = "Silver"
+other = "Gümüş"
 
 [languages]
 other = "Diller"
 
 [view_in_english]
-other = "View in English"
+other = "İngilizce Görüntüle"
 
 [old_version]
 other = "Not: İngilizce versiyon çeviriden sonra güncellenmiş olabilir, lütfen kontrol edin"
 
 [not_yet_translated]
-other = 'This webpage has not been translated yet. You can contribute <a href="https://crowdin.com/project/lets-encrypt-website">here</a>.'
+other = 'Bu sayfa henüz çevirilmedi. <a href="https://crowdin.com/project/lets-encrypt-website">Buradan</a> sayfanın çevirisinde katkıda bulunabilirsiniz.'
 
 [english_is_canonical]
-other = "The English version is authoritative"
+other = "İngilizce versiyon geçerlidir"
 
 [graph_issued]
-other = "Issued"
+other = "Yayınlandı"
 
 [graph_certificates_active]
-other = "Certificates Active"
+other = "Sertifikalar Aktif"
 
 [graph_fully_qualified_domains_active]
-other = "Fully-Qualified Domains Active"
+other = "Tam Nitelikli Domainler Aktif"
 
 [graph_registered_domains_active]
-other = "Registered Domains Active"
+other = "Kayıtlı Alan Adları Aktif"
 
 [graph_active_count]
-other = "Active Count"
+other = "Aktif Sayısı"
 
 [graph_issued_per_day]
-other = "Issued Per Day"
+other = "Günlük Verilen"
 
 [graph_all_users]
 other = "Tüm kullanıcılar"
 
 [graph_usa_users]
-other = "USA users"
+other = "ABD kullanıcıları"
 
 [graph_japan_users]
-other = "Japan users"
+other = "Japon kullanıcılar"
 
 [graph_percent_https]
-other = "Percent of Pageloads over HTTPS (14 day moving average)"
+other = "HTTPS üzerinden sayfa yükleme yüzdesi (14 günlük hareketli ortalama)"
 
 [certificate_policy]
-other = "Certificate Policy"
+other = "Sertifika Politikası"
 
 [certificate_transparency_name]
-other = "Name"
+other = "İsim"
 
 [certificate_transparency_role_production]
-other = "Production"
+other = "Üretim"
 
 [certificate_transparency_role_testing]
-other = "Testing"
+other = "Test etme"
 
 [certificate_transparency_uri]
-other = "URI"
+other = "Birleşik Kaynak Tanımlayıcı"
 
 [certificate_transparency_public_key]
-other = "Public Key"
+other = "Açık Anahtar"
 
 [certificate_transparency_log_id]
-other = "Log ID"
+other = "Kayıt ID"
 
 [certificate_transparency_state]
-other = "State"
+other = "Durum"
 
 [certificate_transparency_window_start]
-other = "Window Start"
+other = "Pencere Başlangıçı"
 
 [certificate_transparency_window_end]
-other = "Window End"
+other = "Pencere Bitişi"
 
 [certification_practices_statement]
-other = "Certification Practices Statement"
+other = "Sertifika Uygulama Beyanı"
 
 [overview]
-other = "Overview"
+other = "Genel Bakış"
 
 [subscriber_information]
-other = "Subscriber Information"
+other = "Abonelik Bilgisi"
 
 [advanced_subscriber_information]
-other = "Advanced Subscriber Information"
+other = "Gelişmiş Abonelik Bilgisi"
 
 [client_developer_information]
-other = "Client Developer Information"
+other = "İstemci Geliştirici Bilgileri"
 
 [acme_divergences]
-other = "Differences from Current ACME Draft"
+other = "Mevcut ACME Taslağından Farklar"
 
 [acme_divergences_rfc]
-other = "Differences from ACME RFC"
+other = "ACME RFC den Farklar"
 
 [onboarding_customers]
 other = "Onboarding Your Customers with Let's Encrypt and ACME"
@@ -209,16 +209,16 @@ other = "ISRG celebrates 10 years of helping build a brighter Internet →"
 other = "Internet Security Research Group"
 
 [header_donate_now]
-other = "Donate Now"
+other = "Şimdi Bağış Yapın"
 
 [toggle_menu_aria_label]
 other = "Toggle menu"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "Legal Adres"
 
 [isrg_mailing_label]
-other = "Send all mail or inquiries to:"
+other = "Tüm posta ve sorularınızı şu adrese gönderin:"
 
 [newsletter_subscribe_heading]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -230,22 +230,22 @@ other = "GitHub"
 other = "LinkedIn"
 
 [footer_nav_terms]
-other = "Terms"
+other = "Şartlar"
 
 [footer_nav_privacy]
-other = "Privacy Policy"
+other = "Gizlilik Politikası"
 
 [footer_nav_trademark]
 other = "Ticari Marka Politikası"
 
 [home_hero_heading]
-other = "Encryption for<br /> Everybody"
+other = "Herkes için <br /> Şifreleme"
 
 [home_hero_subheading]
 other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
 
 [home_hero_get_started]
-other = "Get Started"
+other = "Başlayın"
 
 [home_hero_annual_report_title]
 other = "Explore our work to improve security and privacy"
@@ -260,7 +260,7 @@ other = "Read the Annual Report"
 other = "Free, Automated TLS Certificates"
 
 [getting_started_heading]
-other = "Getting started"
+other = "Başlamak"
 
 [getting_started_description]
 other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
@@ -326,7 +326,7 @@ other = "Support Encryption for Everybody"
 other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
 
 [support_donate_button]
-other = "Donate Now"
+other = "Şimdi Bağış Yapın"
 
 [support_sponsor_title]
 other = "Leading Through Sponsorship"
@@ -338,7 +338,7 @@ other = "Companies who rely on or value our work to encrypt the Web can financia
 other = "Learn about Sponsorship"
 
 [sponsors_heading]
-other = "Major Sponsors and Funders"
+other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
 
 [sponsors_diamond]
 other = "Diamond Sponsors"
@@ -380,7 +380,7 @@ other = "Dahil Olun"
 other = "Individual Impact"
 
 [donate_encryption_everybody_alt]
-other = "Encryption for Everybody"
+other = "Herkes için Şifreleme"
 
 [project_card_visit]
 other = "Visit"
@@ -425,7 +425,7 @@ other = "Support Encryption for Everybody"
 other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
 
 [support_donate_section_button]
-other = "Donate Now"
+other = "Şimdi Bağış Yapın"
 
 [support_sponsor_section_title]
 other = "Leading Through Sponsorship"
@@ -464,7 +464,7 @@ other = "Other Ways to Give"
 other = "WAYS TO GIVE"
 
 [donate_page_funding_details_stat_percentage]
-other = "100%"
+other = "%100"
 
 [donate_page_funding_details_stat_text]
 other = "of the funding for Let's Encrypt comes from charitable contributions."
