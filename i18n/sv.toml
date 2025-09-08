@@ -17,7 +17,7 @@ other = "Read all about our nonprofit work this year in our  <a href='https://ab
 other = "Största sponsorer och bidragsgivare"
 
 [home_from_our_blog]
-other = "Blog"
+other = "Blogg"
 
 [read_more]
 other = "Läs mer"
@@ -29,7 +29,7 @@ other = 'Prenumerera <a href="{{ .Permalink }}">via RSS</a>'
 other = "Support a more secure and privacy-respecting Web."
 
 [footer_donate]
-other = "Donate Now"
+other = "Donera nu"
 
 [footer_mailing]
 other = "Send all mail or inquiries to:"
@@ -46,29 +46,29 @@ View our <a href="https://www.abetterinternet.org/terms-of-service">terms of ser
 
 [footer_links]
 other = """
-<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
+<a href="/privacy/">Integritetspolicy</a> <a href="https://www.abetterinternet.org/trademarks">Varumärkespolicy</a>
 """
 
 [header_skip_nav]
-other = "Skip navigation links"
+other = "Hoppa över navigeringslänkar"
 
 [last_updated]
-other = "Last updated: "
+other = "Senast uppdaterad: "
 
 [see_all_doc]
-other = "See all Documentation"
+other = "Visa all dokumentation"
 
 [blog_feed]
 other = "Let's Encrypt Blog Feed"
 
 [diamond]
-other = "Diamond"
+other = "Diamant"
 
 [platinum]
-other = "Platinum"
+other = "Platina"
 
 [gold]
-other = "Gold"
+other = "Guld"
 
 [gold_basic]
 other = "Gold Basic"
@@ -80,7 +80,7 @@ other = "Silver"
 other = "Språk"
 
 [view_in_english]
-other = "View in English"
+other = "Visa på engelska"
 
 [old_version]
 other = "Note: The English version has been updated since the translation"
@@ -95,13 +95,13 @@ other = "The English version is authoritative"
 other = "Issued"
 
 [graph_certificates_active]
-other = "Certificates Active"
+other = "Certifikat aktiva"
 
 [graph_fully_qualified_domains_active]
 other = "Fully-Qualified Domains Active"
 
 [graph_registered_domains_active]
-other = "Registered Domains Active"
+other = "Registrerade domäner aktiva"
 
 [graph_active_count]
 other = "Active Count"
@@ -113,22 +113,22 @@ other = "Issued Per Day"
 other = "Alla användare"
 
 [graph_usa_users]
-other = "USA users"
+other = "USA-användare"
 
 [graph_japan_users]
-other = "Japan users"
+other = "Japan-användare"
 
 [graph_percent_https]
 other = "Percent of Pageloads over HTTPS (14 day moving average)"
 
 [certificate_policy]
-other = "Certificate Policy"
+other = "Certifikatpolicy"
 
 [certificate_transparency_name]
 other = "Namn"
 
 [certificate_transparency_role_production]
-other = "Production"
+other = "Produktion"
 
 [certificate_transparency_role_testing]
 other = "Testing"
@@ -137,10 +137,10 @@ other = "Testing"
 other = "URI"
 
 [certificate_transparency_public_key]
-other = "Public Key"
+other = "Publik nyckel"
 
 [certificate_transparency_log_id]
-other = "Log ID"
+other = "Logg-ID"
 
 [certificate_transparency_state]
 other = "State"
@@ -155,13 +155,13 @@ other = "Window End"
 other = "Certification Practices Statement"
 
 [overview]
-other = "Overview"
+other = "Översikt"
 
 [subscriber_information]
-other = "Subscriber Information"
+other = "Prenumerantinformation"
 
 [advanced_subscriber_information]
-other = "Advanced Subscriber Information"
+other = "Avancerade prenumerantinformation"
 
 [client_developer_information]
 other = "Client Developer Information"
@@ -176,7 +176,7 @@ other = "Differences from ACME RFC"
 other = "Onboarding Your Customers with Let's Encrypt and ACME"
 
 [paypal_donate_alt]
-other = "Donate with PayPal button"
+other = "Donera med PayPal-knapp"
 
 [paypal_donate_title]
 other = "Donera med PayPal"
@@ -191,13 +191,13 @@ other = "${{ .nb }}/år (USD)"
 other = "with a 3-year commitment"
 
 [1_99_employees]
-other = "1-99 employees"
+other = "1-99 anställda"
 
 [100_999_employees]
-other = "100-999 employees"
+other = "100-999 anställda"
 
 [1000_employees]
-other = "1000+ employees"
+other = "1000+ anställda"
 
 [subscribe_to_newsletter_headline]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -209,7 +209,7 @@ other = "ISRG celebrates 10 years of helping build a brighter Internet →"
 other = "Internet Security Research Group"
 
 [header_donate_now]
-other = "Donate Now"
+other = "Donera nu"
 
 [toggle_menu_aria_label]
 other = "Toggle menu"
@@ -230,7 +230,7 @@ other = "GitHub"
 other = "LinkedIn"
 
 [footer_nav_terms]
-other = "Terms"
+other = "Villkor"
 
 [footer_nav_privacy]
 other = "Integritetspolicy"
@@ -260,19 +260,19 @@ other = "Read the Annual Report"
 other = "Free, Automated TLS Certificates"
 
 [getting_started_heading]
-other = "Getting started"
+other = "Komma igång"
 
 [getting_started_description]
 other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
 
 [getting_started_ready_title]
-other = "Ready to begin?"
+other = "Redo att börja?"
 
 [getting_started_ready_content]
 other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
 
 [getting_started_ready_link]
-other = "Let's Get Started"
+other = "Låt oss komma igång"
 
 [getting_started_docs_title]
 other = "Dokumentation"
@@ -281,10 +281,10 @@ other = "Dokumentation"
 other = "Learn about our certificate issuance process and best practices."
 
 [getting_started_docs_link]
-other = "Read Documentation"
+other = "Läs dokumentation"
 
 [getting_started_clients_title]
-other = "ACME Clients"
+other = "ACME-klienter"
 
 [getting_started_clients_content]
 other = "Choose from our recommended ACME clients to automatically manage your certificates."
@@ -299,7 +299,7 @@ other = "Get help from the Let's Encrypt Community"
 other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
 
 [getting_started_help_link]
-other = "Visit the Forum"
+other = "Besök forumet"
 
 [support_heading_entire_sentence]
 other = "Global impact made possible by generosity, contributions, sponsorship, and you"
@@ -308,16 +308,16 @@ other = "Global impact made possible by generosity, contributions, sponsorship, 
 other = "Global impact made possible by"
 
 [support_heading_word1]
-other = "generosity"
+other = "generositet"
 
 [support_heading_word2]
-other = "contributions"
+other = "bidrag"
 
 [support_heading_word3]
-other = "sponsorship"
+other = "sponsorskap"
 
 [support_heading_word4]
-other = "you"
+other = "du"
 
 [support_donate_title]
 other = "Support Encryption for Everybody"
@@ -326,7 +326,7 @@ other = "Support Encryption for Everybody"
 other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
 
 [support_donate_button]
-other = "Donate Now"
+other = "Donera nu"
 
 [support_sponsor_title]
 other = "Leading Through Sponsorship"
@@ -335,7 +335,7 @@ other = "Leading Through Sponsorship"
 other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
 
 [support_sponsor_button]
-other = "Learn about Sponsorship"
+other = "Läs mer om sponsring"
 
 [sponsors_heading]
 other = "Största sponsorer och bidragsgivare"
@@ -347,10 +347,10 @@ other = "Diamond Sponsors"
 other = "Platinum Sponsors"
 
 [sponsors_gold]
-other = "Gold Sponsors"
+other = "Guldsponsorer"
 
 [sponsors_silver]
-other = "Silver Sponsors"
+other = "Silversponsorer"
 
 [common_read_more_arrow]
 other = " →"
@@ -359,19 +359,19 @@ other = " →"
 other = "Newsletter signup form"
 
 [blog_section_heading]
-other = "From our blog"
+other = "Från vår blogg"
 
 [blog_section_see_all]
-other = "See all our blog posts"
+other = "Visa alla våra blogginlägg"
 
 [post_hero_last_updated]
-other = "Last updated:"
+other = "Senast uppdaterad:"
 
 [post_hero_fresher_english]
 other = "More recently updated page available in English"
 
 [post_hero_breadcrumb_blog]
-other = "Blog"
+other = "Blogg"
 
 [donate_get_involved_button]
 other = "Engagera dig"
@@ -380,10 +380,10 @@ other = "Engagera dig"
 other = "Individual Impact"
 
 [donate_encryption_everybody_alt]
-other = "Encryption for Everybody"
+other = "Kryptering för alla"
 
 [project_card_visit]
-other = "Visit"
+other = "Besök"
 
 [internet_security_research_group_initials]
 other = "ISRG"
@@ -398,7 +398,7 @@ other = "A nonprofit providing free TLS certificates to more than"
 other = "650M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "webbplatser"
 
 [projects_section_title]
 other = "More ways we're improving security and privacy"
@@ -425,7 +425,7 @@ other = "Support Encryption for Everybody"
 other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
 
 [support_donate_section_button]
-other = "Donate Now"
+other = "Donera nu"
 
 [support_sponsor_section_title]
 other = "Leading Through Sponsorship"
@@ -434,16 +434,16 @@ other = "Leading Through Sponsorship"
 other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
 
 [support_sponsor_section_button]
-other = "Learn about Sponsorship"
+other = "Läs mer om sponsring"
 
 [stats_section_title]
 other = "Let's Encrypt Growth"
 
 [stats_section_button]
-other = "More stats"
+other = "Mer statistik"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "Gör en återkommande donation"
 
 [donate_page_make_recurring_donation_content]
 other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
@@ -458,7 +458,7 @@ other = "Donations of Stock"
 other = "Gifts of Cryptocurrency"
 
 [donate_page_other_ways_title]
-other = "Other Ways to Give"
+other = "Andra sätt att ge"
 
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
@@ -491,10 +491,10 @@ other = "Appreciated securities or mutual fund shares that you've owned for more
 other = "Brokerage Firm:"
 
 [donate_page_stock_table_account_name]
-other = "Account Name:"
+other = "Kontonamn:"
 
 [donate_page_stock_table_account_number]
-other = "ISRG Account #:"
+other = "ISRG-konto #:"
 
 [donate_page_stock_table_dtc_number]
 other = "DTC #:"
@@ -527,7 +527,7 @@ other = "Many organizations match donations to nonprofits made by employees. Che
 other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
-other = "here"
+other = "här"
 
 [testimonial_section_quote_open]
 other = "&ldquo;"
