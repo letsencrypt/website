@@ -1,7 +1,7 @@
 ---
 title: Dahil Olun
 slug: getinvolved
-lastmod: 2019-11-04
+lastmod: 2025-07-31
 menu:
   main:
     weight: 60
@@ -9,23 +9,18 @@ menu:
 show_lastmod: 1
 ---
 
-
-## Topluluk
+## Topluluk Desteği
 
 [Let's Encrypt Topluluk Desteğinde](https://community.letsencrypt.org/) sorulara cevap vermekte yardım her zaman işimize yarar. Toplum destek katkılarının neden bu kadar önemli olduğunu görmek için [bu blog gönderisine](/2015/08/13/lets-encrypt-community-support.html) bakın.
 
-## Kod
+## ACME İstemcisi
 
-Ayrıca yazılım gelişiminde yardım işimize gelir. Kodumuzun tamamı [Githubta](https://github.com/letsencrypt/).
+Let's Encrypt'e yardımcı olmak için yapabileceğiniz en iyi şeylerden biri, [topluluk tarafından yönetilen ACME istemcileri](/docs/client-options)ne katkıda bulunmaktır.
 
-### İstemci Yazılımı
+## letsencrypt.org
 
-[Certbot](https://github.com/certbot/certbot) otomatik olarak sertifika elde etmek ve bir websiteyi HTTPS'e çevirmek için web sunucunuzun yanında çalışan Python temelli bir araçtır. Çoğu kişinin başlarken kullanmasını önerdiğimiz istemci Certbot'tur. Daha birçok [üçüncü parti istemci seçenekleri](/docs/client-options) mevcuttur.
+Bu web sitesini, belgeler ve [çeviriler](https://crowdin.com/project/lets-encrypt-website) dahil olmak üzere [GitHub deposu](https://github.com/letsencrypt/website) aracılığıyla iyileştirmeye yardımcı olabilirsiniz.
 
-### Sunucu taraflı CA Yazılımı
+## Sunucu taraflı CA Yazılımı
 
-[Boulder](https://github.com/letsencrypt/boulder) Let's Encrypt'in CA implementasyonu. [ACME](https://tools.ietf.org/html/rfc8555) protokolünden temelli ve ana olarak Go dilinde yazılı. Başlamak için ['yardım istenen sorunlar'](https://github.com/letsencrypt/boulder/labels/help%20wanted) listesi ve [destekçinin rehberi](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md) harika yerler.
-
-### letsencrypt.org
-
-Bu websiteyi ve dokümentasyonu [buradan](https://github.com/letsencrypt/website) iyileştirebilirsiniz ya da [ çevirisiyle](https://crowdin.com/project/lets-encrypt-website) yardımcı olabilirsiniz.
+Sunucu taraflı CA yazılımımız olan [Boulder](https://github.com/letsencrypt/boulder) açık kaynaklıdır. [ACME](https://tools.ietf.org/html/rfc8555) protokolünden temelli ve ana olarak Go dilinde yazılı. Başlamak için harika olan yerler, [‘yardım aranıyor’ sorunları](https://github.com/letsencrypt/boulder/labels/help%20wanted) listesi ve [katkıda bulunanlar kılavuzu](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)dur.
