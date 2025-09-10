@@ -2,13 +2,13 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2025-07-31
+lastmod: 2025-09-03
 show_lastmod: 1
 ---
 
 本页面描述了 Let's Encrypt 过往及当前运作的所有证书颁发机构 (CA)。 所谓的 CA 应当理解为一组名称和密钥：一家 CA 可以由 _很多_ 证书表示，只要所有证书的主体和公钥信息相同即可。 对于这种情形，我们也提供了 CA 对应的所有证书的详细信息。
 
-[![2024 年 6 月起的 ISRG 证书层级图示](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![2025 年 8 月起的 ISRG 证书层级图示](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
 # 根证书颁发机构
 
@@ -19,7 +19,7 @@ show_lastmod: 1
 * **ISRG Root X1**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root X1`
   * 密钥类型：`RSA 4096`
-  * 在此时间范围内有效：2015-06-04 至 2030-06-04
+  * 有效期限：2015-06-04 至 2030-06-04
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=7394)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=7394)
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=9314791)、[der](/certs/isrgrootx1.der)、[pem](/certs/isrgrootx1.pem)、[txt](/certs/isrgrootx1.txt)
   * 证书详细信息（DST Root CA X3 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3958242236)、[der](/certs/isrg-root-x1-cross-signed.der)、[pem](/certs/isrg-root-x1-cross-signed.pem)、[txt](/certs/isrg-root-x1-cross-signed.txt)（现已不再使用）
@@ -27,11 +27,29 @@ show_lastmod: 1
 * **ISRG Root X2**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root X2`
   * 密钥类型：`ECDSA P-384`
-  * 在此时间范围内有效：2020-09-04 至 2035-09-04
+  * 有效期限：2020-09-04 至 2035-09-04
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183269)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183269)
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=3335562555)、[der](/certs/isrg-root-x2.der)、[pem](/certs/isrg-root-x2.pem)、[txt](/certs/isrg-root-x2.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3334561878)、[der](/certs/isrg-root-x2-cross-signed.der)、[pem](/certs/isrg-root-x2-cross-signed.pem)、[txt](/certs/isrg-root-x2-cross-signed.txt)
+  * 证书详细信息（ISRG Root X1 第二次交叉签名的版本）：[der](/certs/gen-y/root-x2-by-x1.der)、[pem](/certs/gen-y/root-x2-by-x1.pem)、[txt](/certs/gen-y/root-x2-by-x1.txt)
   * 测试网站：[正常证书](https://valid-isrgrootx2.letsencrypt.org/)、[已吊销证书](https://revoked-isrgrootx2.letsencrypt.org/)、[已过期证书](https://expired-isrgrootx2.letsencrypt.org/)
+
+下列根证书尚未加入各类可信证书库，但近期将进入申请阶段：
+
+* **ISRG Root YE**
+  * 主体：`O = ISRG, CN = Root YE`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期限：暂无（2025-09-03 生成）
+  * 证书详细信息（自签名版本）：[der](/certs/gen-y/root-ye.der)、[pem](/certs/gen-y/root-ye.pem)、[txt](/certs/gen-y/root-ye.txt)
+  * 证书详细信息（ISRG Root X2 交叉签名的版本）：[der](/certs/gen-y/root-ye-by-x2.der)、[pem](/certs/gen-y/root-ye-by-x2.pem)、[txt](/certs/gen-y/root-ye-by-x2.txt)
+  * 测试网站：即将上线
+* **ISRG Root YR**
+  * 主体：`O = ISRG, CN = Root YR`
+  * 密钥类型：`RSA 4096`
+  * 有效期限：暂无（2025-09-03 生成）
+  * 证书详细信息（自签名版本）：[der](/certs/gen-y/root-yr.der)、[pem](/certs/gen-y/root-yr.pem)、[txt](/certs/gen-y/root-yr.txt)
+  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/gen-y/root-yr-by-x1.der)、[pem](/certs/gen-y/root-yr-by-x1.pem)、[txt](/certs/gen-y/root-yr-by-x1.txt)
+  * 测试网站：即将上线
 
 关于我们的根证书与各类设备及证书库的兼容性，详见[证书兼容性](/docs/cert-compat)页面。
 
@@ -40,40 +58,6 @@ show_lastmod: 1
 我们目前有四份中间证书供轮转使用。 包含 ECDSA 公钥的用户证书由其中一份 ECDSA 中间证书签发，包含 RSA 公钥的用户证书则由其中一份 RSA 中间证书签发。
 
 所有中间证书中主体的国家字段均为 `C = US`。
-
-* **Let's Encrypt E5**
-  * 主体：`O = Let's Encrypt, CN = E5`
-  * 密钥类型：`ECDSA P-384`
-  * 有效期至：2027-03-12
-  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295810)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295810)
-  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e5.der)、[pem](/certs/2024/e5.pem)、[txt](/certs/2024/e5.txt)
-  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e5-cross.der)、[pem](/certs/2024/e5-cross.pem)、[txt](/certs/2024/e5-cross.txt)
-* **Let's Encrypt E6**
-  * 主体：`O = Let's Encrypt, CN = E6`
-  * 密钥类型：`ECDSA P-384`
-  * 有效期至：2027-03-12
-  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295819)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295819)
-  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e6.der)、[pem](/certs/2024/e6.pem)、[txt](/certs/2024/e6.txt)
-  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e6-cross.der)、[pem](/certs/2024/e6-cross.pem)、[txt](/certs/2024/e6-cross.txt)
-* **Let's Encrypt R10**
-  * 主体：`O = Let's Encrypt, CN = R10`
-  * 密钥类型：`RSA 2048`
-  * 有效期至：2027-03-12
-  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295814)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295814)
-  * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r10.der)、[pem](/certs/2024/r10.pem)、[txt](/certs/2024/r10.txt)
-* **Let's Encrypt R11**
-  * 主体：`O = Let's Encrypt, CN = R11`
-  * 密钥类型：`RSA 2048`
-  * 有效期至：2027-03-12
-  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295815)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295815)
-  * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r11.der)、[pem](/certs/2024/r11.pem)、[txt](/certs/2024/r11.txt)
-
-点击下方展开当前签发层级外的其他中间证书颁发机构：
-
-<details>
-<summary>备用证书</summary>
-
-这些中间证书已经生效，但尚未用于签发其他证书。 我们随时可能在无预先告知的情况下将下列证书用于签发流程。
 
 * **Let's Encrypt E7**
   * 主体：`O = Let's Encrypt, CN = E7`
@@ -89,13 +73,6 @@ show_lastmod: 1
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295809)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295809)
   * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e8.der)、[pem](/certs/2024/e8.pem)、[txt](/certs/2024/e8.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e8-cross.der)、[pem](/certs/2024/e8-cross.pem)、[txt](/certs/2024/e8-cross.txt)
-* **Let's Encrypt E9**
-  * 主体：`O = Let's Encrypt, CN = E9`
-  * 密钥类型：`ECDSA P-384`
-  * 有效期至：2027-03-12
-  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295812)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295812)
-  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e9.der)、[pem](/certs/2024/e9.pem)、[txt](/certs/2024/e9.txt)
-  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e9-cross.der)、[pem](/certs/2024/e9-cross.pem)、[txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R12**
   * 主体：`O = Let's Encrypt, CN = R12`
   * 密钥类型：`RSA 2048`
@@ -108,12 +85,65 @@ show_lastmod: 1
   * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295817)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295817)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r13.der)、[pem](/certs/2024/r13.pem)、[txt](/certs/2024/r13.txt)
+
+点击下方展开目前未用于常规签发流程的其他中间证书：
+
+<details>
+<summary>备用证书</summary>
+
+这些中间证书已经生效，但尚未用于签发其他证书。 我们随时可能在无预先告知的情况下将下列证书用于签发流程。
+
+* **Let's Encrypt E9**
+  * 主体：`O = Let's Encrypt, CN = E9`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2027-03-12
+  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295812)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295812)
+  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e9.der)、[pem](/certs/2024/e9.pem)、[txt](/certs/2024/e9.txt)
+  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e9-cross.der)、[pem](/certs/2024/e9-cross.pem)、[txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R14**
   * 主体：`O = Let's Encrypt, CN = R14`
   * 密钥类型：`RSA 2048`
   * 有效期至：2027-03-12
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=295818)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295818)
   * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r14.der)、[pem](/certs/2024/r14.pem)、[txt](/certs/2024/r14.txt)
+
+</details>
+
+<details>
+<summary>即将上线的证书</summary>
+
+下列中间证书于 2025 年签发，预计将于 2026 年投入使用。
+
+* **Let's Encrypt YE1**
+  * 主体：`O = Let's Encrypt, CN = YE1`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-ye1.der)、[pem](/certs/gen-y/int-ye1.pem)、[txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * 主体：`O = Let's Encrypt, CN = YE2`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-ye2.der)、[pem](/certs/gen-y/int-ye2.pem)、[txt](/certs/gen-y/int-ye2.txt)
+* **Let's Encrypt YE3**
+  * 主体：`O = Let's Encrypt, CN = YE3`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-ye3.der)、[pem](/certs/gen-y/int-ye3.pem)、[txt](/certs/gen-y/int-ye3.txt)
+* **Let's Encrypt YR1**
+  * 主体：`O = Let's Encrypt, CN = YR1`
+  * 密钥类型：`RSA 2048`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-yr1.der)、[pem](/certs/gen-y/int-yr1.pem)、[txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * 主体：`O = Let's Encrypt, CN = YR2`
+  * 密钥类型：`RSA 2048`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-yr2.der)、[pem](/certs/gen-y/int-yr2.pem)、[txt](/certs/gen-y/int-yr2.txt)
+* **Let's Encrypt YR3**
+  * 主体：`O = Let's Encrypt, CN = YR3`
+  * 密钥类型：`RSA 2048`
+  * 有效期至：2028-09-02
+  * 证书详细信息：[der](/certs/gen-y/int-yr3.der)、[pem](/certs/gen-y/int-yr3.pem)、[txt](/certs/gen-y/int-yr3.txt)
 
 </details>
 
@@ -134,6 +164,20 @@ show_lastmod: 1
   * 有效期至：2025-09-15
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183284)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183284)
   * 证书详细信息（ISRG Root X2 签名的版本）：[crt.sh](https://crt.sh/?id=3334671963)、[der](/certs/lets-encrypt-e2.der)、[pem](/certs/lets-encrypt-e2.pem)、[txt](/certs/lets-encrypt-e2.txt)
+* **Let's Encrypt E5**
+  * 主体：`O = Let's Encrypt, CN = E5`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2027-03-12
+  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295810)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295810)
+  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e5.der)、[pem](/certs/2024/e5.pem)、[txt](/certs/2024/e5.txt)
+  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e5-cross.der)、[pem](/certs/2024/e5-cross.pem)、[txt](/certs/2024/e5-cross.txt)
+* **Let's Encrypt E6**
+  * 主体：`O = Let's Encrypt, CN = E6`
+  * 密钥类型：`ECDSA P-384`
+  * 有效期至：2027-03-12
+  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295819)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295819)
+  * 证书详细信息（ISRG Root X2 签名的版本）：[der](/certs/2024/e6.der)、[pem](/certs/2024/e6.pem)、[txt](/certs/2024/e6.txt)
+  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/2024/e6-cross.der)、[pem](/certs/2024/e6-cross.pem)、[txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * 主体：`O = Let's Encrypt, CN = R3`
   * 密钥类型：`RSA 2048`
@@ -148,6 +192,18 @@ show_lastmod: 1
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183268)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183268)
   * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=3334561877)、[der](/certs/lets-encrypt-r4.der)、[pem](/certs/lets-encrypt-r4.pem)、[txt](/certs/lets-encrypt-r4.txt)
   * 证书详细信息（IdenTrust 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3479778543)、[der](/certs/lets-encrypt-r4-cross-signed.der)、[pem](/certs/lets-encrypt-r4-cross-signed.pem)、[txt](/certs/lets-encrypt-r4-cross-signed.txt)
+* **Let's Encrypt R10**
+  * 主体：`O = Let's Encrypt, CN = R10`
+  * 密钥类型：`RSA 2048`
+  * 有效期至：2027-03-12
+  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295814)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295814)
+  * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r10.der)、[pem](/certs/2024/r10.pem)、[txt](/certs/2024/r10.txt)
+* **Let's Encrypt R11**
+  * 主体：`O = Let's Encrypt, CN = R11`
+  * 密钥类型：`RSA 2048`
+  * 有效期至：2027-03-12
+  * CA 详细信息：[crt.sh](https://crt.sh/?caid=295815)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=295815)
+  * 证书详细信息（ISRG Root X1 签名的版本）：[der](/certs/2024/r11.der)、[pem](/certs/2024/r11.pem)、[txt](/certs/2024/r11.txt)
 * **Let's Encrypt Authority X1**
   * 主体：`O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * 密钥类型：`RSA 2048`
@@ -179,19 +235,6 @@ show_lastmod: 1
 
 </details>
 
-<details>
-<summary>OCSP 响应专用证书</summary>
-
-此证书曾代替 Let's Encrypt 的根证书用于签发 OCSP 响应，传达 Let's Encrypt 中间证书的状态，从而使根证书能够以离线的形式安全存储。 现在我们已不再为中间证书提供 OCSP 响应，而是定期使用根证书发布 CRL 通告各中间证书的吊销情况。
-
-* **ISRG Root OCSP X1**
-  * 主体：`O = Internet Security Research Group, CN = ISRG Root OCSP X1`
-  * 密钥类型：`RSA 2048`
-  * 有效期至：2025-06-10
-  * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=2929281974)、[der](/certs/isrg-root-ocsp-x1.der)、[pem](/certs/isrg-root-ocsp-x1.pem)、[txt](/certs/isrg-root-ocsp-x1.txt)
-  * 证书详细信息（ISRG Root X1 签名的版本）：[crt.sh](https://crt.sh/?id=142051103)（现已不再使用）
-
-</details>
 <p><!-- to get the right line spacing after a block element --></p>
 
 # 证书链
@@ -203,16 +246,16 @@ ACME 客户端通过 Let's Encrypt 的 ACME 接口下载的新证书实际上是
 使用 RSA 公钥的用户证书均由我们的 RSA 中间证书签发，对应的根证书也只有使用 RSA 的 ISRG Root X1（即不存在交叉签名）。 因此，所有 RSA 用户证书都只有一条证书链：
 
 <div style="text-align: center">
-RSA 用户证书 ← RSA 中间证书（R10 或 R11）← ISRG Root X1
+RSA 用户证书 ← RSA 中间证书（R12 或 R13）← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 使用 ECDSA 公钥的用户证书则由我们的 ECDSA 中间证书签发，对应的根证书既有使用 RSA 的 ISRG Root X1，也有使用 ECDSA 的 ISRG Root X2（即存在交叉签名）。 所以我们为此类证书提供了两条证书链：
 
 <div style="text-align: center">
-ECDSA 用户证书 ← ECDSA 中间证书（E5 或 E6）← ISRG Root X1
+ECDSA 用户证书 ← ECDSA 中间证书（E7 或 E8）← ISRG Root X1
 
-ECDSA 用户证书 ← ECDSA 中间证书（E5 或 E6）← ISRG Root X2
+ECDSA 用户证书 ← ECDSA 中间证书（E7 或 E8）← ISRG Root X2
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
