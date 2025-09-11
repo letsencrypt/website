@@ -2034,16 +2034,12 @@ div[data-netlify-deploy-id] {
   max-height: 48px;
 }
 
-.max-h-\[64px\] {
-  max-height: 64px;
-}
-
 .max-h-\[80\%\] {
   max-height: 80%;
 }
 
-.max-h-\[80px\] {
-  max-height: 80px;
+.max-h-full {
+  max-height: 100%;
 }
 
 .min-h-full {
@@ -2846,6 +2842,37 @@ div[data-netlify-deploy-id] {
   .hero-bg {
     background-image: url('/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg');
   }
+}
+
+.pull-quote-right {
+  float: right;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .pull-quote-right {
+    margin-left: 25px;
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+}
+
+.pull-quote-right .quote-text-value {
+  &::before {
+    content: '\201C';
+    font-family: inherit;
+  }
+  &::after {
+    content: '\201D';
+    font-family: inherit;
+  }
+}
+
+.prose-content .pull-quote-right blockquote {
+  margin-top: 0px;
+  border-width: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 @media (min-width: 768px) {
