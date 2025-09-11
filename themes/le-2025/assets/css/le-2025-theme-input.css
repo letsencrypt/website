@@ -546,3 +546,22 @@
     background-image: url('/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg');
   }
 }
+
+.pull-quote-right {
+  @apply float-right md:ml-[25px] w-full md:max-w-[33.33333%] md:flex-[0_0_33.33333%];
+}
+
+.pull-quote-right .quote-text-value {
+  &::before {
+    content: '\201C';
+    font-family: inherit;
+  }
+  &::after {
+    content: '\201D';
+    font-family: inherit;
+  }
+}
+
+.prose-content .pull-quote-right blockquote {
+  @apply mt-0 pt-0 border-0 pl-0;
+}
