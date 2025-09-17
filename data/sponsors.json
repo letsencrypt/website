@@ -343,6 +343,11 @@
       "name": "Staffbase",
       "url": "https://staffbase.com/",
       "image": "staffbase-logo.png"
+    },
+    {
+      "name": "Tithely",
+      "url": "https://get.tithe.ly/",
+      "image": "tithely-logo.png"
     }
   ]
 }
