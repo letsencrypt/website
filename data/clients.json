@@ -90,6 +90,10 @@
 			"url": "https://about.gitlab.com"
 		},
 		{
+			"name": "HAproxy",
+			"url": "https://docs.haproxy.org/3.2/configuration.html#12.8"
+		},
+		{
 			"name": "ISPConfig",
 			"url": "https://www.ispconfig.org/"
 		},
