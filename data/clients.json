@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-08-28",
+	"lastmod": "2025-09-05",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,16 @@
 			"url": "https://hub.docker.com/r/certimate/certimate",
 			"category": "Docker",
 			"comments": "manage certificates for multiple platforms with a visual workflow"
+		},
+		{
+			"name": "CertKit",
+			"url": "https://www.certkit.io/",
+			"comments": "Deployable and SaaS certificate lifecycle management and monotoring",
+			"category": "Server",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
 		}
 	]
 }
