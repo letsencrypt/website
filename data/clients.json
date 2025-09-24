@@ -298,6 +298,15 @@
 			"category": "Java"
 		},
 		{
+			"name": "nginx-acme",
+			"url": "https://nginx.org/en/docs/http/ngx_http_acme_module.html",
+			"category": "nginx",
+			"comments": "The ngx_http_acme_module module is the original implementation of ACME included in the NGINX web server",
+			"challenges": {
+				"HTTP-01": "true"
+			}
+		},
+		{
 			"name": "njs-acme",
 			"url": "https://github.com/nginx/njs-acme",
 			"category": "nginx",
