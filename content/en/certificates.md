@@ -2,11 +2,11 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2025-09-03
+lastmod: 2025-09-25
 show_lastmod: 1
 ---
 
-This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA.
+This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA. If you're looking for the Trust Anchor IDs associated with these CAs, see our page on [Object Identifiers](/docs/oids).
 
 [![ISRG Certificate Hierarchy Diagram, as of August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
