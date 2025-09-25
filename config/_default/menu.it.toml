@@ -2,39 +2,60 @@
 name = "Ottenere Aiuto"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Blog"
 weight = 25
 url = "/blog/"
+
 [[main]]
-name = "Donare"
+name = "Dona"
 weight = 30
 identifier = "donate"
-[[main]]
-name = "Chi Siamo"
-weight = 40
-identifier = "about"
-[[main]]
-name = "Internet Security Research Group (ISRG)"
-weight = 200
-identifier = "isrg"
-parent = "about"
-url = "https://www.abetterinternet.org/about/"
-[[main]]
-name = "Stato del Servizio"
-weight = 60
-identifier = "status"
-parent = "about"
-url = "https://letsencrypt.status.io/"
-[[main]]
-name = "Carriere"
-weight = 110
-identifier = "careers"
-parent = "about"
-url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "Diventa un sostenitore"
 weight = 40
 identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "Sponsor e finanziatori attuali"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+
+[[main]]
+name = "Chi Siamo"
+weight = 40
+identifier = "about"
+
+[[main]]
+name = "Internet Security Research Group (ISRG)"
+weight = 200
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+
+[[main]]
+name = "Stato del Servizio"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+
+[[main]]
+name = "Carriere"
+weight = 110
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+
+[[main]]
+name = "Resoconti annuali"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
