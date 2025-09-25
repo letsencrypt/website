@@ -5,7 +5,7 @@ lastmod: 2025-09-25
 show_lastmod: false
 ---
 
-An Object Identifier (OID) is a dotted-separated sequence of numbers used to uniquely identify various objects within the WebPKI. For example, every _extension_ within an X.509 certificate is identified by an OID, and the OID `2.5.29.15` is defined to represent the [Key Usage](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) extension.  Similarly, the OID `2.23.140.1.2.1` can be placed within the body of the [Certificate Policies](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.4) extension to indicate that the certificate was validated according to the [CA/Browser Forum's "Domain Validated" criteria](https://github.com/cabforum/servercert/blob/main/docs/BR.md#12-document-name-and-identification).
+An Object Identifier (OID) is a dot-separated sequence of numbers used to uniquely identify various objects within the WebPKI. For example, every extension within an X.509 certificate is uniquely identified by an OID, and the OID `2.5.29.15` identifies the [Key Usage](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) extension. Similarly, the OID `2.23.140.1.2.1` can be placed within the body of the [Certificate Policies](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.4) extension to indicate that the certificate was validated according to the [CA/Browser Forum's "Domain Validated" criteria](https://github.com/cabforum/servercert/blob/main/docs/BR.md#12-document-name-and-identification).
 
 This page lists the OIDs used by Let's Encrypt, documents what each OID means, and points to where we use them.
 
@@ -14,7 +14,7 @@ This page lists the OIDs used by Let's Encrypt, documents what each OID means, a
 | <code><b>1.3.6.1.4.1.44947</b></code> | Internet Security Research Group. Parent arc for all ISRG OIDs. |
 | <code>1.3.6.1.4.1.44947.<b>1</b></code> | No meaning assigned. This legacy OID never had a standalone purpose. |
 | <code>1.3.6.1.4.1.44947.1.<b>1</b></code> | No meaning assigned. This legacy OID never had a standalone purpose. |
-| <code>1.3.6.1.4.1.44947.1.1.<b>1</b></code> | ISRG Domain Validated. This legacy OID was equivalent to 2.23.140.1.2.1, the [CA/BF Domain Validated Certificate Policy OID](https://github.com/cabforum/servercert/blob/main/docs/BR.md#12-document-name-and-identification). We [used to include it in our issuing intermediates](/certs/lets-encrypt-e1.txt), but we have stopped doing so to reduce certificate size. |
+| <code>1.3.6.1.4.1.44947.1.1.<b>1</b></code> | ISRG Domain Validated. This legacy OID was equivalent to 2.23.140.1.2.1, the [CA/BF Domain Validated Certificate Policy OID](https://github.com/cabforum/servercert/blob/main/docs/BR.md#12-document-name-and-identification). We used to include it in [our issuing intermediates](/certs/lets-encrypt-e1.txt), but stopped doing so to reduce certificate size. |
 | <code>1.3.6.1.4.1.44947.<b>2</b></code> | Let's Encrypt Trust Anchor IDs. Parent arc for all "trust anchors" ([CA keypairs](/certificates)), which can be used in the [Trust Anchor Identifiers](https://datatracker.ietf.org/doc/draft-ietf-tls-trust-anchor-ids/) and [Merkle Tree Certificates](https://datatracker.ietf.org/doc/draft-davidben-tls-merkle-tree-certs/) internet draft standards. OIDs in this arc are assigned approximately chronologically by issuance date. |
 | <code>1.3.6.1.4.1.44947.2.<b>1</b></code>  | ISRG Root X1               |
 | <code>1.3.6.1.4.1.44947.2.<b>2</b></code>  | Let's Encrypt Authority X1 |
