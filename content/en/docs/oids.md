@@ -1,7 +1,7 @@
 ---
 title: Object Identifiers
 slug: oids
-lastmod: 2025-09-08
+lastmod: 2025-09-25
 show_lastmod: false
 ---
 
