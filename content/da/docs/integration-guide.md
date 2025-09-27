@@ -2,11 +2,9 @@
 title: Integrationsvejledning
 linkTitle: Klient og store udbyders integrationsguide
 slug: integration-guide
-date: 2016-08-08
-lastmod: 2024-12-09
+lastmod: 2025-06-23
 show_lastmod: 1
 ---
-
 
 Dette dokument indeholder nyttige råd, hvis du er en hostingudbyder eller et stort websted, der integrerer Let's Encrypt eller du skriver klientsoftware til Let's Encrypt.
 
@@ -33,13 +31,9 @@ For at modtage lav-volumen opdateringer om vigtige ændringer som dem, der er be
 
 For opdateringer med højere volumen om vedligeholdelse og afbrydelser, besøg vores [status side](https://letsencrypt.status.io/) og tryk på Abonner øverst til højre. Dette er mest nyttigt for hosting-udbydere.
 
-Sørg også for at bruge en gyldig e-mail-adresse til din ACME-konto. Vi vil bruge denne e-mail til at sende dig udløbsbeskeder og kommunikere om eventuelle problemer specifikt til din konto.
-
 # Hvem er abonnenten
 
 Vores [CPS og Abonnentaftale](/repository) angiver, at Abonnenten er den, der har den private nøgle til et certifikat. For hosting-udbydere, det er udbyderen, ikke udbyderens kunde. Hvis du skriver software, som folk selv anvender, det er den, der anvender softwaren.
-
-Kontakt-e-mailen, der er angivet, når du opretter konti (aka registreringer), skal gå til Abonnenten. Vi sender e-mail til denne adresse for at advare om udløb af certifikater og giver besked om ændringer i vores [privatlivspolitik](/privacy).  Hvis du er en hosting-udbyder, bør disse meddelelser gå til dig i stedet for en kunde. Ideelt set, oprette en mailingliste eller alias, så flere personer kan reagere på meddelelser, hvis du er på ferie.
 
 Resultatet af dette er, at, hvis du er en hosting udbyder, du behøver ikke at sende os dine kunders e-mailadresser eller få dem til at acceptere vores abonnentaftale. Du kan simpelthen udstede certifikater for de domæner, du styrer og begynde at anvende dem.
 
@@ -47,7 +41,7 @@ Resultatet af dette er, at, hvis du er en hosting udbyder, du behøver ikke at s
 
 I ACME, det er muligt at oprette en konto og bruge den til alle autorisationer og udstedelser, eller oprette en konto pr. kunde. Denne fleksibilitet kan være værdifuld. For eksempel, nogle hosting-udbydere måske ønsker at bruge en konto pr. kunde, og gemme kontonøgler i forskellige steder, så en kontonøgle kompromis ikke tillader udstedelse for alle deres kunder.
 
-Men for de fleste større hosting-udbydere anbefaler vi at bruge en enkelt konto og beskytte den tilsvarende konto nøgle godt. Dette gør det lettere at identificere certifikater, der tilhører samme enhed, lettere at holde kontaktoplysninger ajour, og lettere at give kaldsgrænse justeringer, hvis det er nødvendigt. Vi vil ikke være i stand til effektivt at justere kaldsgrænserne, hvis der anvendes mange forskellige konti.
+Men for de fleste større hosting-udbydere anbefaler vi at bruge en enkelt konto og beskytte den tilsvarende konto nøgle godt. Dette gør det lettere at identificere certifikater, der tilhører samme enhed, og lettere at give kaldsbegrænsning justeringer, hvis det er nødvendigt. Vi vil ikke være i stand til effektivt at justere kaldsgrænserne, hvis der anvendes mange forskellige konti.
 
 # Multi-domæne (SAN) Certifikater
 
@@ -61,11 +55,11 @@ For de fleste udrulninger giver begge valg den samme sikkerhed.
 
 # Opbevaring og genbrug af certifikater og nøgler
 
-En stor del af Let's Encrypts værdi er, at det giver mulighed for automatisk udstedelse som en del af opsætning af en ny hjemmeside.  Men hvis du har infrastruktur, der gentagne gange kan skabe nye frontends for samme hjemmeside, disse frontends bør først forsøge at bruge et certifikat og en privat nøgle fra en data-server og kun udstede et nyt certifikat, hvis der ikke foreligger noget certifikat, eller alle eksisterende certifikater er udløbet.
+En stor del af Let's Encrypts værdi er, at det giver mulighed for automatisk udstedelse som en del af opsætning af en ny hjemmeside. Men hvis du har infrastruktur, der gentagne gange kan skabe nye frontends for samme hjemmeside, disse frontends bør først forsøge at bruge et certifikat og en privat nøgle fra en data-server og kun udstede et nyt certifikat, hvis der ikke foreligger noget certifikat, eller alle eksisterende certifikater er udløbet.
 
 For Let's Encrypt, dette hjælper os med at levere tjenester effektivt til så mange mennesker som muligt. For dig, dette sikrer, at du er i stand til at implementere din hjemmeside, når du har brug for, uanset tilstanden af Let's Encrypt.
 
-Som et eksempel, mange steder er begyndt at bruge Docker til at levere nye frontend tilfælde efter behov. Hvis du konfigurerer dine Docker containere til at udstede, når de starter, og du ikke gemme dine certifikater og nøgler på datadrev, du er tilbøjelige til at ramme satsgrænser, hvis du tilføjer for mange containere på én gang. I værste fald, hvis du er nødt til at ødelægge og genskabe alle dine forekomster på én gang, du kan ende i en situation, hvor ingen af dine tilfælde er i stand til at få et certifikat og dit websted er nede i flere dage, indtil kaldsgrænsen udløber. Denne type problem er ikke unikt for kaldsgrænser alene. Hvis Let's Encrypt er utilgængelig af en eller anden grund, når du har brug for at udrulle dine frontends, vil du opleve samme problem.
+Som et eksempel, mange steder er begyndt at bruge Docker til at levere nye frontend tilfælde efter behov. Hvis du konfigurerer dine Docker containere til at udstede, når de starter, og du ikke gemme dine certifikater og nøgler på datadrev, du er tilbøjelige til at ramme satsgrænser, hvis du tilføjer for mange containere på én gang. I værste fald, hvis du er nødt til at ødelægge og genskabe alle dine instanser på én gang, du kan ende i en situation, hvor ingen af dine instanser er i stand til at få et certifikat og dit websted er nede i flere dage, indtil kaldsgrænsen udløber. Denne type problem er ikke unikt for kaldsgrænser alene. Hvis Let's Encrypt er utilgængelig af en eller anden grund, når du har brug for at udrulle dine frontends, vil du opleve samme problem.
 
 Bemærk, at nogle implementering filosofier angiver, at krypto-nøgler aldrig bør forlade den fysiske maskine, hvor de blev genereret. Denne model kan fungere fint med Let's Encrypt, når du blot sørger for, at maskinerne og deres data er langvarige, og du håndterer kaldsgrænser omhyggeligt.
 
@@ -75,7 +69,7 @@ Hvis du bruger http-01 ACME-udfordring, du bliver nødt til at sørge for challe
 
 Desuden, når du bruger dns-01 udfordring, skal du sørge for at rydde op gamle TXT poster, så svaret på Let's Encrypt forespørgslen ikke bliver for stor.
 
-Hvis du ønsker at bruge http-01 challenge alligevel, kan du ønske at drage fordel af HTTP redirects. Du kan konfigurere hver af dine frontends til at omdirigere /.well-known/acme-validation/XYZ til validation-server.example.com/XYZ for alle XYZ. Dette uddelegerer ansvaret for udstedelse til validerings-server, så du bør beskytte denne server godt.
+Hvis du ønsker at bruge http-01 challenge alligevel, kan du ønske at drage fordel af HTTP redirects. Du kan konfigurere hver af dine frontends til at omdirigere `/.well-known/acme-validation/XYZ` til `validation-server.example.com/XYZ` for alle `XYZ`. Dette uddelegerer ansvaret for udstedelse til `validerings-server`, så du bør beskytte denne server godt.
 
 # Centrale Valideringsservere
 
@@ -83,9 +77,9 @@ I forhold til ovenstående to punkter, kan det give mening, hvis du har en masse
 
 # Firewall Konfiguration
 
-For at bruge Let's Encrypt, skal du tillade udgående port 443 trafik fra maskiner, der kører din ACME-klient. Vi offentliggør ikke IP-intervallerne for vores ACME-tjeneste, og de vil ændre sig uden varsel.
+For at bruge Let's Encrypt, skal du tillade udgående port 443 trafik fra maskiner, der kører din ACME-klient. Vi offentliggør ikke IP-nummer intervallerne for vores ACME-tjeneste, og de vil ændre sig uden varsel.
 
-For ACME-udfordringen "http-01" skal du tillade indgående port 80-trafik. Vi offentliggør ikke IP-intervallerne, hvorfra vi udfører validering, og de vil ændre sig uden varsel.
+For ACME-udfordringen "http-01" skal du tillade indgående port 80-trafik. Vi offentliggør ikke IP-adresse intervallerne, hvorfra vi udfører validering, og de vil ændre sig uden varsel.
 
 Bemærk: Vi anbefaler altid at tillade almindelig HTTP adgang til din webserver, med en omdirigering til HTTPS. Dette giver en bedre bruger oplevelse end en webserver, der nægter eller slipper port 80 forbindelser, og giver det samme sikkerhedsniveau.
 
@@ -103,11 +97,13 @@ For hosting udbydere, vores anbefaling er at automatisk udstede certifikater og 
 
 Årsag: Eksisterende websteder vil sandsynligvis omfatte nogle HTTP delressourcer (scripts, CSS og billeder). Hvis disse websteder automatisk omdirigeres til deres HTTPS-versioner, vil browsere blokere nogle af disse subressourcer på grund af Mixed Content Blocking. Dette kan ødelægge funktionaliteten på webstedet. Men for nogen, der opretter et nyt websted og finder, at det at omdirigere til HTTPS vil højst sandsynligt kun indeholde HTTPS-underressourcer, og hvis de forsøger at inkludere en HTTP underressource vil de bemærke med det samme, at det ikke virker.
 
-Vi anbefaler at tillade kunder at indstille en HTTP Strict-Transport-Security (HSTS) header med en standard max-alder på 60 dage. Imidlertid skal denne indstilling være ledsaget af en advarsel om, at hvis kunden skal flytte til en hostingudbyder, der ikke tilbyder HTTPS, vil den cachede HSTS indstilling i browsere vil gøre deres websted utilgængeligt. Både kunde og hosting udbyder bør også være opmærksomme på, at HSTS header vil lave certifikatfejl til hårde fejl og sitet kan ikke anvendes. For eksempel, mens folk normalt kan klikke gennem en browser advarsel om et navn uoverensstemmelse eller udløbet certifikat, browsere tillader ikke sådan et klik igennem for værtsnavne med en aktiv HSTS-header.
+Vi anbefaler at tillade kunder at indstille en HTTP Strict-Transport-Security (HSTS) header med en standard max-alder på 60 dage. Denne indstilling bør dog ledsages af en advarsel om, at hvis kunden skal flytte til en hostingudbyder, der ikke tilbyder HTTPS, den cachede HSTS-indstilling i browsere vil gøre deres websted utilgængeligt. Både kunde og hosting udbyder bør også være opmærksomme på, at HSTS header vil gøre certifikatfejl i hårde fejl. For eksempel, mens folk normalt kan klikke gennem en browser advarsel om et navn uoverensstemmelse eller udløbet certifikat, browsere tillader ikke sådan et klik igennem for værtsnavne med en aktiv HSTS-header.
 
 # Hvornår skal der fornyes
 
-Vi anbefaler automatisk fornyelse af certifikater, når de har en tredjedel af deres samlede levetid tilbage. For Let's Encrypts aktuelle 90-dages certifikater, betyder det, at man bør forny 30 dage før udløb.
+Vi anbefaler, at [kontrollerer ACME Fornyelses Information](https://letsencrypt.org/2024/04/25/guide-to-integrating-ari-into-existing-acme-clients/) for hvert certifikat mindst to gange om dagen. ARI-endepunktet vil anbefale, når det skal fornyes.
+
+Som backstop til ARI anbefaler vi automatisk fornyelse af certifikater, når de har en tredjedel af deres samlede levetid tilbage. For certifikater med en gyldighedsperiode på under 10 dage, anbefaler vi at forny halvvejs gennem deres samlede levetid. For Let's Encrypts nuværende 90-dages certifikater, betyder det at forny 30 dage før udløb.
 
 Hvis du udsteder for mere end 10.000 værtsnavne, anbefaler vi også automatiseret fornyelse i små bidder, i stedet for at samle fornyelser i store runder. Dette reducerer risikoen: Hvis Let's Encrypt har et udfald på det tidspunkt, du skal forny eller der er en midlertidig fejl i dine fornyelsessystemer, det vil kun påvirke nogle få af dine certifikater i stedet for dem alle. Det gør også vores kapacitetsplanlægning lettere.
 
@@ -117,7 +113,7 @@ Hvis du tilbyder klientsoftware, der automatisk konfigurerer en periodisk batch 
 
 # Prøv igen fejl
 
-Fornyelses fejl bør ikke behandles som en fatal fejl. Du bør implementere yndefuld gentagelse logik i dine udstedende tjenester ved hjælp af en eksponentiel backoff mønster, maks ud på én gang om dagen pr. certifikat. For eksempel, en rimelig backoff tidsplan ville være: 1. prøve efter et minut, 2. prøve igen efter ti minutter, tredje prøve efter 100 minutter, 4. og efterfølgende forsøg efter en dag. Du bør naturligvis have en måde for administratorer at anmode om tidlige forsøg på en per-domain eller global basis.
+Fornyelses fejl bør ikke behandles som en fatal fejl. Du bør implementere yndefuld prøv-igen logik i dine udstedende tjenester ved hjælp af en eksponentiel backoff mønster, Toppende med én gang om dagen per certifikat. For eksempel, en rimelig backoff tidsplan ville være: første forsøg efter et minut, andet forsøg igen efter ti minutter, tredje forsøg efter 100 minutter, fjerde og efterfølgende forsøg efter en dag. Du bør naturligvis have en måde for administratorer at anmode om tidlige forsøg på en per-domain eller global basis.
 
 Backoffs på genforsøg betyder, at din udstedelse software skal holde styr på fejl samt succeser, og tjek om der opstod en fejl for nylig før forsøg på en ny udstedelse. Der er ingen mening i at forsøge udstedelse hundredvis af gange i timen, da gentagne fejl sandsynligvis vil være vedvarende.
 

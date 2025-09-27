@@ -242,7 +242,7 @@ other = "Pravidla ochranných známek"
 other = "Šifrování pro <br />všechny"
 
 [home_hero_subheading]
-other = 'Nezisková organizace poskytující bezplatné TLS certifikáty pro více než <span class="relative inline-block"><span class="invisible text-4xl">650m</span><span id="certificate-count" class="text-4xl absolute left-0">650m</span></span> webových stránek.'
+other = 'Nezisková organizace poskytující bezplatné TLS certifikáty pro více než <span class="relative inline-block"><span class="invisible text-4xl">700m</span><span id="certificate-count" class="text-4xl absolute left-0">700m</span></span> webových stránek.'
 
 [home_hero_get_started]
 other = "Začít"
@@ -395,7 +395,7 @@ other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro ví
 other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro více než"
 
 [home_hero_certificate_count]
-other = "650m"
+other = "700m"
 
 [home_hero_nonprofit_suffix]
 other = "webových stránek"
