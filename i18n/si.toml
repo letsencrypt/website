@@ -242,7 +242,7 @@ other = "වෙළඳ ලකුණු ප්‍රතිපත්තිය"
 other = "සැමට <br /> සංකේතනය"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+other = 'වියමන අඩවි <span class="relative inline-block"><span class="invisible text-4xl">දශලක්‍ෂ 700</span><span id="certificate-count" class="text-4xl absolute left-0">දශලක්‍ෂ 700</span></span> කට වඩා නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි.'
 
 [home_hero_get_started]
 other = "පටන්ගන්න"
@@ -395,7 +395,7 @@ other = "වියමන අඩවි ### කට වඩා නොමිලේ TL
 other = "නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි"
 
 [home_hero_certificate_count]
-other = "650M"
+other = "දශලක්‍ෂ 700"
 
 [home_hero_nonprofit_suffix]
 other = "වියමන අඩවි"

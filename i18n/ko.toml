@@ -242,7 +242,7 @@ other = "상표 정책"
 other = "Encryption for<br /> Everybody"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
 
 [home_hero_get_started]
 other = "시작하기"
@@ -395,7 +395,7 @@ other = "A nonprofit providing free TLS certificates to more than ### websites"
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "650M"
+other = "700M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

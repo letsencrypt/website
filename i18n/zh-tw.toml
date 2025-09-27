@@ -239,7 +239,7 @@ other = "商標政策"
 other = "面向所有人的<br />資料加密"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">650M</span><span id="certificate-count" class="text-4xl absolute left-0">650M</span></span> websites.'
+other = '我們是一家非營利機構，為全球逾 <span class="relative inline-block"><span class="invisible text-4xl">7 億</span><span id="certificate-count" class="text-4xl absolute left-0">7 億</span></span> 網站提供了免費的 TLS 證書。'
 
 [home_hero_get_started]
 other = "快速入門"
@@ -392,7 +392,7 @@ other = "為超過 ### 網站免費提供 TLS 證書的非營利證書頒發機�
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "650M"
+other = "700M"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

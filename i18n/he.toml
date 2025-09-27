@@ -242,7 +242,7 @@ other = "מדיניות סימני מסחר"
 other = "הצפנה<br />לכולם"
 
 [home_hero_subheading]
-other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">650 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">650 מיליון</span></span> אתרים.'
+other = 'ארגון ללא מטרות רווח שמספקת אישורי TLS ליותר מ־<span class="relative inline-block"><span class="invisible text-4xl">700 מיליון</span><span id="certificate-count" class="text-4xl absolute left-0">700 מיליון</span></span> אתרים.'
 
 [home_hero_get_started]
 other = "איך מתחילים"
@@ -395,7 +395,7 @@ other = "ארגון ללא מטרות רווח שמספק אישורי TLS בח�
 other = "ארגון ללא מטרות רווח שמספק אישורי TLS בחינם ליותר מ־"
 
 [home_hero_certificate_count]
-other = "650 מיליון"
+other = "700 מיליון"
 
 [home_hero_nonprofit_suffix]
 other = "אתרים"
