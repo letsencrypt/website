@@ -348,6 +348,11 @@
       "name": "Tithely",
       "url": "https://get.tithe.ly/",
       "image": "tithely-logo.png"
+    },
+    {
+      "name": "DuckDuckGo",
+      "url": "https://duckduckgo.com/",
+      "image": "duckduckgo-logo.svg"
     }
   ]
 }
