@@ -1,7 +1,6 @@
 ---
 title: アカウント ID を見つける
 slug: account-id
-date: 2016-08-10
 lastmod: 2021-12-27
 show_lastmod: 1
 ---
