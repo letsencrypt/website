@@ -484,6 +484,10 @@
     @apply mt-16;
   }
 
+  article figure p {
+    margin-bottom: 0;
+  }
+
   .prose-content figure img {
     @apply mx-auto;
   }
