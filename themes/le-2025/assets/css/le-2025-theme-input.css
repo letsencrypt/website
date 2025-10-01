@@ -476,6 +476,26 @@
     @apply text-sm text-gray-600 text-center mt-1;
   }
 
+  /* Blog post figures with captions */
+  .prose-content figure {
+    @apply flex flex-col items-center text-center my-6;
+  }
+  .prose-content figure + figure {
+    @apply mt-16;
+  }
+
+  article figure p {
+    margin-bottom: 0;
+  }
+
+  .prose-content figure img {
+    @apply mx-auto;
+  }
+
+  .prose-content figcaption {
+    @apply text-sm text-gray-600 text-center mt-2;
+  }
+
 }
 
 /* Utility styles */
