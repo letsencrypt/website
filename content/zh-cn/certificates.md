@@ -2,11 +2,11 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2025-09-03
+lastmod: 2025-09-25
 show_lastmod: 1
 ---
 
-本页面描述了 Let's Encrypt 过往及当前运作的所有证书颁发机构 (CA)。 所谓的 CA 应当理解为一组名称和密钥：一家 CA 可以由 _很多_ 证书表示，只要所有证书的主体和公钥信息相同即可。 对于这种情形，我们也提供了 CA 对应的所有证书的详细信息。
+本页面描述了 Let's Encrypt 过往及当前运作的所有证书颁发机构 (CA)。 所谓的 CA 应当理解为一组名称和密钥：一家 CA 可以由 _很多_ 证书表示，只要所有证书的主体和公钥信息相同即可。 对于这种情形，我们也提供了 CA 对应的所有证书的详细信息。 如果您需要查询下列 CA 对应的信任锚点 ID，请参见[对象标识符](/docs/oids)。
 
 [![2025 年 8 月起的 ISRG 证书层级图示](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
