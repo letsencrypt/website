@@ -1774,7 +1774,7 @@ div[data-netlify-deploy-id] {
 }
 
 .prose-content figure + figure {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 
 .prose-content figure img {
