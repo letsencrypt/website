@@ -1,6 +1,6 @@
 ---
 author: Seth Schoen
-date: 2025-10-02T00:00:00Z
+date: 2025-10-07T00:00:00Z
 slug: Ten-yrs-community-forum
 title: "Ten Years of Community Support"
 excerpt: "In its first decade, the Let's Encrypt Community Forum has helped tens of thousands of users, kept Let's Encrypt staff in touch with the community, and spurred new tools and projects."
@@ -13,7 +13,7 @@ display_inline_newsletter_embed: false
     <span class="quote"></span>
     <div class="quote-text">
       <p class="quote-text-value">Seth Schoen was an early contributor to Let's Encrypt through his work at the Electronic Frontier Foundation. He's also one of the longest standing participants in the Let's Encrypt community support forum, so we asked him to offer his thoughts on the role and impact of the forum as a resource for our users. Thank you for your many years of expertise and participation, Seth!</p>
-      <footer class="blockquote-footer"><span class="blockquote-mdash">&mdash;</span> <cite title="Source Title">Josh Aas</cite>, Head of ISRG's Prossimo project</footer>
+      <footer class="blockquote-footer"><span class="blockquote-mdash">&mdash;</span> <cite title="Source Title">Josh Aas</cite>, Head of Let's Encrypt</footer>
     </div>
   </blockquote>
 </div>
