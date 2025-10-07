@@ -1762,6 +1762,35 @@ div[data-netlify-deploy-id] {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
+/* Blog post figures with captions */
+
+.prose-content figure {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.prose-content figure + figure {
+  margin-top: 4rem;
+}
+
+.prose-content figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose-content figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
