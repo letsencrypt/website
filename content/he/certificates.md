@@ -2,11 +2,11 @@
 title: שרשראות אמון
 linkTitle: שרשראות אמון (אישורים עליונים ומתווכים)
 slug: certificates
-lastmod: 2025-09-03
+lastmod: 2025-09-25
 show_lastmod: 1
 ---
 
-העמוד הזה מתאר את המצב הנוכחי ואת ההיסטוריה המתאימה של רשויות אישורים שמופעלים על ידי Let's Encrypt. נא לשים לב שנהוג לחשוב על רשות אישורים בדרך כלל כעל מפתח ושם: כל רשות אישורים יכולה להיות מיוצגת על ידי _מגוון_ אישורים שכולם מכילים את אותו הנושא ואת אותם פרטי המפתח הציבורי. במקרים כאלה, סיפקנו את פרטי כל האישורים שמייצגים את רשות האישורים.
+העמוד הזה מתאר את המצב הנוכחי ואת ההיסטוריה המתאימה של רשויות אישורים שמופעלים על ידי Let's Encrypt. נא לשים לב שנהוג לחשוב על רשות אישורים בדרך כלל כעל מפתח ושם: כל רשות אישורים יכולה להיות מיוצגת על ידי _מגוון_ אישורים שכולם מכילים את אותו הנושא ואת אותם פרטי המפתח הציבורי. במקרים כאלה, סיפקנו את פרטי כל האישורים שמייצגים את רשות האישורים. אם חיפשת את מזהי עוגן האמון (Trust Anchor IDs) עם רשויות האישורים האלה, כדאי לעיין בעמוד שלנו על [מזהי עצמים](/docs/oids).
 
 [![תרשים היררכיית אישורי ISRG, נכון לאוגוסט 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
@@ -31,7 +31,25 @@ show_lastmod: 1
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=183269),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=183269)
   * פרטי אישורים (נחתמו עצמאית): [crt.sh](https://crt.sh/?id=3335562555),‏ [der](/certs/isrg-root-x2.der),‏ [pem](/certs/isrg-root-x2.pem),‏ [txt](/certs/isrg-root-x2.txt)
   * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878),‏ [der](/certs/isrg-root-x2-cross-signed.der),‏ [pem](/certs/isrg-root-x2-cross-signed.pem),‏ [txt](/certs/isrg-root-x2-cross-signed.txt)
+  * פרטי האישור (חתימה צולבת שנייה על ידי ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der),‏ [pem](/certs/gen-y/root-x2-by-x1.pem),‏ [txt](/certs/gen-y/root-x2-by-x1.txt)
   * אתרי בדיקה: [תקף](https://valid-isrgrootx2.letsencrypt.org/), [נשלל](https://revoked-isrgrootx2.letsencrypt.org/), [פג תוקף](https://expired-isrgrootx2.letsencrypt.org/)
+
+אישורי העל האלה לא נכללים במאגרי האמון של תוכנית אישורי העל, אך תוגש להוספה בקרוב:
+
+* **ISRG Root YE**
+  * נושא: `O = ISRG, CN = Root YE`
+  * סוג מפתח: `ECDSA P-384`
+  * אמין עד: לא ידוע (נוצר ב־2025-09-03)
+  * פרטי אישור (חתימה עצמית): [der](/certs/gen-y/root-ye.der),‏ [pem](/certs/gen-y/root-ye.pem),‏ [txt](/certs/gen-y/root-ye.txt)
+  * פרטי האישור (חתימה צולבת על ידי ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der),‏ [pem](/certs/gen-y/root-ye-by-x2.pem),‏ [txt](/certs/gen-y/root-ye-by-x2.txt)
+  * אתרי בדיקה: יתווספו בהמשך
+* **ISRG Root YR**
+  * נושא: `O = ISRG, CN = Root YR`
+  * סוג מפתח: `RSA 4096`
+  * אמין עד: לא ידוע (נוצר ב־2025-09-03)
+  * פרטי אישור (חתימה עצמית): [der](/certs/gen-y/root-yr.der),‏ [pem](/certs/gen-y/root-yr.pem),‏ [txt](/certs/gen-y/root-yr.txt)
+  * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der),‏ [pem](/certs/gen-y/root-yr-by-x1.pem),‏ [txt](/certs/gen-y/root-yr-by-x1.txt)
+  * אתרי בדיקה: יתווספו בהמשך
 
 לפרטים נוספים על תאימות אישורי העל שלנו מול מגוון מכשירים ומאגרי אמון, יש לפנות אל [תאימות האישורים](/docs/cert-compat).
 
@@ -88,6 +106,44 @@ show_lastmod: 1
   * תקף עד: 2027-03-12
   * פרטי רשות אישורים: [crt.sh](https://crt.sh/?caid=295818),‏ [אישורים שהונפקו](https://crt.sh/?Identity=%25&iCAID=295818)
   * פרטי אישור (נחתם על ידי ISRG Root X1): [der](/certs/2024/r14.der),‏ [pem](/certs/2024/r14.pem),‏ [txt](/certs/2024/r14.txt)
+
+</details>
+
+<details>
+<summary>בקרוב</summary>
+
+אישורי הביניים מסוג רשות אישורים הונפקו ב־2025 ואנו צפויים להתחיל להנפיק מהם ב־2026.
+
+* **Let's Encrypt YE1**
+  * נושא: `O = Let's Encrypt,‏ CN = YE1`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-ye1.der),‏ [pem](/certs/gen-y/int-ye1.pem),‏ [txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * נושא: `O = Let's Encrypt,‏ CN = YE2`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-ye2.der),‏ [pem](/certs/gen-y/int-ye2.pem),‏ [txt](/certs/gen-y/int-ye2.txt)
+* **Let's Encrypt YE3**
+  * נושא: `O = Let's Encrypt,‏ CN = YE3`
+  * סוג מפתח: `ECDSA P-384`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-ye3.der),‏ [pem](/certs/gen-y/int-ye3.pem),‏ [txt](/certs/gen-y/int-ye3.txt)
+* **Let's Encrypt YR1**
+  * נושא: `O = Let's Encrypt,‏ CN = YR1`
+  * סוג מפתח: `RSA 2048`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-yr1.der),‏ [pem](/certs/gen-y/int-yr1.pem),‏ [txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * נושא: `O = Let's Encrypt,‏ CN = YR2`
+  * סוג מפתח: `RSA 2048`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-yr2.der),‏ [pem](/certs/gen-y/int-yr2.pem),‏ [txt](/certs/gen-y/int-yr2.txt)
+* **Let's Encrypt YR3**
+  * נושא: `O = Let's Encrypt,‏ CN = YR3`
+  * סוג מפתח: `RSA 2048`
+  * תקף עד: 2028-09-02
+  * פרטי האישור: [der](/certs/gen-y/int-yr3.der),‏ [pem](/certs/gen-y/int-yr3.pem),‏ [txt](/certs/gen-y/int-yr3.txt)
 
 </details>
 
@@ -179,19 +235,6 @@ show_lastmod: 1
 
 </details>
 
-<details>
-<summary>מגיב OCSP (פרוטוקול מצב אישורים מקוון) מיופה כוח</summary>
-
-צמד מפתחות זה שימש בעבר לחתום על בקשות OCSP בנוגע למצב אישורי הביניים של Let's Encrypt מטעם אישור העל של Let's Encrypt כך שניתן יהיה לשמור על מפתח העל באופן מאובטח בניתוק מוחלט מהאינטרנט. איננו מנפיקים עוד תגובות OCSP לאישורי הביניים שלנו, במקום אנו מנפיקים רשימות שלילה מאישור העל שלנו כדי למסור את מצב שלילת אישורי הביניים.
-
-* **ISRG Root OCSP X1**
-  * נושא: `O = Internet Security Research Group,‏ CN = ISRG Root OCSP X1`
-  * סוג מפתח: `RSA 2048`
-  * תקף עד: 2025-06-10
-  * פרטי אישור (נחתם על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=2929281974),‏ [der](/certs/isrg-root-ocsp-x1.der),‏ [pem](/certs/isrg-root-ocsp-x1.pem),‏ [txt](/certs/isrg-root-ocsp-x1.txt)
-  * פרטי אישור (נחתם על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=142051103) (התוקף פג)
-
-</details>
 <p><!-- to get the right line spacing after a block element --></p>
 
 # שרשראות
