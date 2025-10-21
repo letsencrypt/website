@@ -2,39 +2,60 @@
 name = "도움말"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "블로그"
 weight = 25
 url = "/blog/"
+
 [[main]]
-name = "후원"
+name = "기부"
 weight = 30
 identifier = "donate"
-[[main]]
-name = "소개"
-weight = 40
-identifier = "about"
-[[main]]
-name = "비영리 인터넷 보안 연구 그룹 (ISRG)"
-weight = 200
-identifier = "isrg"
-parent = "about"
-url = "https://www.abetterinternet.org/about/"
-[[main]]
-name = "서비스 상태"
-weight = 60
-identifier = "status"
-parent = "about"
-url = "https://letsencrypt.status.io/"
-[[main]]
-name = "채용"
-weight = 110
-identifier = "careers"
-parent = "about"
-url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "스폰서 되기"
 weight = 40
 identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "현재 스폰서 및 기부자"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+
+[[main]]
+name = "소개"
+weight = 40
+identifier = "about"
+
+[[main]]
+name = "인터넷 보안 연구 그룹 (ISRG)"
+weight = 200
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+
+[[main]]
+name = "서비스 상태"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+
+[[main]]
+name = "채용"
+weight = 110
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+
+[[main]]
+name = "연간 보고서"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
