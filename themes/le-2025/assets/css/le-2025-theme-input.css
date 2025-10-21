@@ -1,9 +1,5 @@
 @import 'tailwindcss';
 
-/* Component imports */
-@import 'components/post.css' layer(utilities);
-@import 'components/post-hero.css' layer(utilities);
-
 @theme {
   --color-isrg-blue: #c2e9e9;
   --color-prossimo-bg-blue: #dce0e9;
