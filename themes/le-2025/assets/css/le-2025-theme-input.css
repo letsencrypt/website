@@ -1,10 +1,424 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-/* Component imports */
-@import "components/post.css";
-@import "components/post-hero.css";
+@theme {
+  --color-isrg-blue: #c2e9e9;
+  --color-prossimo-bg-blue: #dce0e9;
+  --color-divviup-dark-blue: #0015a7;
+  --color-le-yellow: #ffa300;
+  --color-le-blue: #003a70;
+  --color-le-blue-green: #5f868e;
+  --color-le-light-blue: #9adbe8;
+  --color-primary-button: #003a70;
+  --color-primary-button-hover: #002b54;
+  --color-primary-button-active: #001f3d;
+  --color-link: #003a70;
+  --color-link-hover: #002b54;
+  --color-link-active: #001f3d;
+
+  --color-link-on-dark: #ffffff;
+  --color-link-on-dark-hover: #e5e5e5;
+  --color-link-on-dark-active: #cccccc;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility btn {
+  /* Button styles */
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-150 ease-in-out;
+}
+@utility btn-primary {
+  @apply btn bg-primary-button text-white hover:bg-primary-button-hover active:bg-primary-button-active;
+}
+@utility btn-outline {
+  @apply btn border-2 border-primary-button text-primary-button hover:bg-blue-50;
+}
+@utility btn-secondary {
+  @apply btn border-2 border-gray-200 text-gray-600 hover:bg-gray-50;
+}
+@utility btn-white {
+  @apply btn bg-white text-gray-900 hover:bg-gray-100 font-medium;
+}
+@utility btn-outline-white {
+  @apply btn border-2 border-white text-white hover:bg-white/20 active:bg-white/30;
+}
+@utility btn-outline-blue {
+  @apply btn border-2 border-le-blue text-le-blue hover:bg-le-blue/20 active:bg-le-blue/30;
+}
+@utility btn-yellow {
+  @apply btn bg-le-yellow text-le-blue hover:bg-le-yellow/90 active:bg-le-yellow/80 border border-le-blue;
+}
+@utility btn-sm {
+  @apply px-3 py-1.5;
+}
+@utility container {
+  /* Layout styles */
+  @apply mx-auto px-4 max-w-7xl;
+}
+@utility text-eyebrow {
+  /* Typography styles */
+  @apply uppercase tracking-wider text-sm font-medium;
+  &a:hover {
+    @apply text-link-hover;
+  }
+}
+@utility text-eyebrow-sm {
+  @apply text-xs! font-medium text-gray-900!;
+}
+@utility text-hero-heading {
+  @apply text-3xl md:text-4xl font-bold;
+}
+@utility text-hero-heading-md {
+  @apply text-2xl md:text-3xl font-bold;
+}
+@utility text-hero-body {
+  @apply text-lg text-black;
+}
+@utility text-heading-yellow {
+  @apply font-bold text-[24px] leading-[31px] tracking-[0.13em] text-[#FFA300];
+}
+@utility donorbox-container {
+  #donate-2025-page & iframe {
+    @apply md:ml-auto w-full;
+  }
+}
+@utility donate-2025-stat {
+  @apply font-bold text-[128px] leading-[167px];
+}
+@utility donate-2025-stat-text {
+  @apply font-bold text-[40px] leading-[52px];
+}
+@utility donate-2025-stat-paragraph {
+  @apply text-[20px] leading-[26px] font-medium;
+}
+@utility donate-2025-quote {
+  @apply font-bold text-[64px] leading-[83px] text-le-blue;
+}
+@utility key-value-table-blue {
+  & th {
+    @apply bg-le-blue;
+  }
+
+  & td {
+    @apply border-le-blue;
+  }
+
+  & tr:last-child td {
+    @apply border-b-0;
+  }
+}
+@utility rotate-words {
+  display: inline-block;
+  transition: opacity 0.2s ease-in-out;
+}
+@utility section-padding {
+  /* Additional common patterns */
+  @apply py-5 md:py-10;
+}
+@utility section-padding-lg {
+  @apply py-10 md:py-16;
+}
+@utility section-padding-xl {
+  @apply py-16 md:py-24;
+}
+@utility section-padding-2xl {
+  @apply py-20 md:py-28;
+}
+@utility section-container {
+  @apply container mx-auto px-4;
+}
+@utility card-shadow {
+  @apply shadow-md rounded-lg;
+}
+@utility footer-copyright-bar {
+  & a {
+    @apply no-underline text-white hover:text-gray-300 transition-colors duration-200;
+  }
+}
+@utility blog-grid-item {
+  /* Blog Grid Item */
+  @apply block bg-white p-6 rounded-lg shadow-xs relative pb-16 hover:shadow-md transition-all duration-200 no-underline border border-transparent hover:border-le-blue;
+}
+@utility child-links-are-white {
+  /* Link color utilities */
+  & a:not(.btn):not(nav a):not(.no-underline) {
+    @apply text-white hover:text-gray-200 active:text-gray-300;
+  }
+  & p a:not(.btn):not(nav a):not(.no-underline) {
+    @apply underline decoration-white hover:decoration-gray-200;
+  }
+  & .prose a:not(.btn):not(nav a):not(.no-underline) {
+    @apply underline decoration-white hover:decoration-gray-200;
+  }
+}
+@utility prose {
+  .child-links-are-white & a:not(.btn):not(nav a):not(.no-underline) {
+    @apply underline decoration-white hover:decoration-gray-200;
+  }
+}
+@utility accordion-item {
+  &.is-open button {
+    @apply bg-gray-200;
+  }
+}
+@utility is-open {
+  &.accordion-item button {
+    @apply bg-gray-200;
+  }
+}
+@utility prose-content {
+  & h1:not(:first-child) {
+    @apply mt-8;
+  }
+  & h2:not(:first-child) {
+    @apply mt-8;
+  }
+  & h3:not(:first-child) {
+    @apply mt-8;
+  }
+  & h4:not(:first-child) {
+    @apply mt-8;
+  }
+  & h5:not(:first-child) {
+    @apply mt-8;
+  }
+  & h6:not(:first-child) {
+    @apply mt-8;
+  }
+
+  & ul {
+    @apply mb-6 pl-5;
+  }
+
+  & ol {
+    @apply mb-6 pl-5;
+  }
+
+  & ul {
+    @apply list-disc;
+  }
+
+  & ol {
+    @apply list-decimal;
+  }
+
+  & li {
+    @apply mb-2;
+  }
+
+  & li > ul {
+    @apply mt-2 mb-2;
+    list-style-type: circle;
+  }
+
+  & li > ol {
+    @apply mt-2 mb-2;
+  }
+
+  & blockquote {
+    @apply pl-4 py-1 my-6 border-l-4 border-gray-300 text-gray-700 italic;
+  }
+
+  & h1 {
+    .autoanchor {
+      @apply hidden;
+    }
+    &:hover {
+      .autoanchor {
+        @apply inline;
+      }
+    }
+  }
+
+  & h2 {
+    .autoanchor {
+      @apply hidden;
+    }
+    &:hover {
+      .autoanchor {
+        @apply inline;
+      }
+    }
+  }
+
+  & h3 {
+    .autoanchor {
+      @apply hidden;
+    }
+    &:hover {
+      .autoanchor {
+        @apply inline;
+      }
+    }
+  }
+
+  /* Blog post figures with captions */
+  & figure {
+    @apply flex flex-col items-center text-center my-6;
+  }
+  & figure + figure {
+    @apply mt-16;
+  }
+
+  & figure img {
+    @apply mx-auto;
+  }
+
+  & figcaption {
+    @apply text-sm text-gray-600 text-center mt-2;
+  }
+}
+@utility list-lock-icon {
+  @apply list-none pl-0!;
+
+  & li {
+    @apply relative pl-[53px] mb-7 list-none pt-2  min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue; /* Add list-none to li */
+  }
+
+  & li::before {
+    content: '';
+    @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
+    background-image: url('/images/le-logo-lockonly-black-cropped.svg');
+  }
+}
+@utility howitworks-figure {
+  & img {
+    @apply mx-auto my-5;
+  }
+}
+@utility autoanchor {
+  /* Autoanchor styles */
+  &a {
+    @apply no-underline text-gray-400! text-[0.8em] ml-2;
+  }
+}
+@utility boxed {
+  @apply border border-[#e0e0e0] bg-[#f9f9f9] p-[15px] my-[15px] rounded-lg;
+
+  & p:last-child {
+    @apply mb-0;
+  }
+}
+@utility hidden {
+  &#main-nav {
+    @apply max-h-0 opacity-0;
+    visibility: hidden;
+  }
+}
+@utility nav-item {
+  /* Navigation styles */
+  @apply block w-full md:w-auto min-h-[44px] flex items-center justify-between md:min-h-0 text-gray-700 rounded-md hover:underline focus:outline-hidden focus:ring-2 focus:ring-blue-500;
+}
+@utility nav-dropdown-item {
+  /* @apply block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100; */
+  @apply nav-item whitespace-nowrap md:min-h-[44px] px-4;
+}
+@utility site-main-nav {
+  @media (min-width: 768px) and (max-width: 900px) {
+    @apply gap-2.5!;
+  }
+}
+@utility narrow-container {
+  /* Menu responsive gap */
+
+  /* Post hero component - used at the top of posts and pages */
+  @apply max-w-[calc(1000px-60px)] mx-auto px-4 md:px-[30px];
+}
+@utility site-logo {
+  /* Logo responsive sizing */
+  & img {
+    @apply h-12 md:-translate-y-[7px];
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    & img {
+      @apply h-8 -translate-y-[5px];
+    }
+  }
+}
+@utility post-hero {
+  @apply py-16 bg-le-blue text-white;
+}
+@utility post-hero__inner {
+  @apply narrow-container mx-auto text-left pb-0.5;
+}
+@utility post-hero__breadcrumb {
+  @apply text-sm text-gray-600;
+
+  & a {
+    @apply hover:text-gray-900 transition-colors;
+  }
+}
+@utility post-hero__title {
+  @apply text-4xl font-bold mb-4;
+}
+@utility post-hero__meta {
+  @apply text-sm;
+}
+@utility pic-quote-right {
+  /* Post */
+  /* Right-aligned image with caption */
+  @apply w-full mb-6;
+
+  @media (width >= theme(--breakpoint-md)) {
+    @apply float-right max-w-[33.33333%] ml-[25px] flex-[0_0_33.33333%];
+  }
+}
+@utility pic-quote-right__caption {
+  @apply text-sm text-gray-600 text-center mt-2;
+}
+@utility annual-report-section {
+  & img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+@utility about-section {
+  & img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+@utility definition {
+  margin-bottom: 1em;
+
+  & > a:first-child {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+@utility pull-quote {
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}
+@utility blog-image-constrained {
+  /* Blog image styling */
+  @apply w-2/3 max-h-[90vh] object-contain mx-auto block;
+}
+@utility image-caption {
+  @apply text-sm text-gray-600 text-center mt-1;
+}
+
+/* Utility styles */
+@utility text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* Base styles */
 @layer base {
@@ -41,218 +455,12 @@
   }
 
   .bg-le-blue .bg-white a:not(.btn) {
-    @apply !text-le-blue font-medium;
+    @apply text-le-blue! font-medium;
   }
 }
 
 /* Component styles */
 @layer components {
-
-  /* Button styles */
-  .btn {
-    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-150 ease-in-out;
-  }
-  .btn-primary {
-    @apply btn bg-primary-button text-white hover:bg-primary-button-hover active:bg-primary-button-active;
-  }
-  .btn-outline {
-    @apply btn border-2 border-primary-button text-primary-button hover:bg-blue-50;
-  }
-  .btn-secondary {
-    @apply btn border-2 border-gray-200 text-gray-600 hover:bg-gray-50;
-  }
-  .btn-white {
-    @apply btn bg-white text-gray-900 hover:bg-gray-100 font-medium;
-  }
-
-  .btn-outline-white {
-    @apply btn border-2 border-white text-white hover:bg-white/20 active:bg-white/30;
-  }
-  .btn-outline-blue {
-    @apply btn border-2 border-le-blue text-le-blue hover:bg-le-blue/20 active:bg-le-blue/30;
-  }
-
-  .btn-yellow {
-    @apply btn bg-le-yellow text-le-blue hover:bg-le-yellow/90 active:bg-le-yellow/80 border border-le-blue;
-  }
-
-  .btn-sm {
-    @apply px-3 py-1.5;
-  }
-
-  /* Layout styles */
-  .container {
-    @apply mx-auto px-4 max-w-7xl;
-  }
-
-  /* Typography styles */
-  .text-eyebrow {
-    @apply uppercase tracking-wider text-sm font-medium;
-  }
-  .text-eyebrow-sm {
-    @apply !text-xs font-medium !text-gray-900;
-  }
-  a.text-eyebrow:hover {
-    @apply text-link-hover;
-  }
-
-  .text-hero-heading {
-    @apply text-3xl md:text-4xl font-bold;
-  }
-  .text-hero-heading-md {
-    @apply text-2xl md:text-3xl font-bold;
-  }
-
-  .text-hero-body {
-    @apply text-lg text-black;
-  }
-
-  .text-heading-yellow {
-
-    @apply font-bold text-[24px] leading-[31px] tracking-[0.13em] text-[#FFA300];
-
-
-  }
-
-  #donate-2025-page .donorbox-container iframe {
-    @apply md:ml-auto w-full;
-  }
-
-
-
-  .donate-2025-stat {
-    @apply font-bold text-[128px] leading-[167px];
-  }
-
-  .donate-2025-stat-text {
-    @apply font-bold text-[40px] leading-[52px];
-
-  }
-
-  .donate-2025-stat-paragraph {
-
-    @apply text-[20px] leading-[26px] font-medium;
-  }
-  .donate-2025-quote {
-    @apply font-bold text-[64px] leading-[83px] text-le-blue;
-  }
-
-
-
-  .key-value-table-blue th {
-    @apply bg-le-blue;
-  }
-
-  .key-value-table-blue td {
-    @apply border-le-blue;
-  }
-
-  .key-value-table-blue tr:last-child td {
-    @apply border-b-0;
-  }
-
-
-
-  .rotate-words {
-    display: inline-block;
-    transition: opacity 0.2s ease-in-out;
-  }
-
-  /* Additional common patterns */
-  .section-padding {
-    @apply py-5 md:py-10;
-  }
-  .section-padding-lg {
-    @apply py-10 md:py-16;
-  }
-  .section-padding-xl {
-    @apply py-16 md:py-24;
-  }
-  .section-padding-2xl {
-    @apply py-20 md:py-28;
-  }
-
-  .section-container {
-    @apply container mx-auto px-4;
-  }
-
-  .card-shadow {
-    @apply shadow-md rounded-lg;
-  }
-
-  .footer-copyright-bar a {
-    @apply no-underline text-white hover:text-gray-300 transition-colors duration-200;
-  }
-
-  /* Blog Grid Item */
-  .blog-grid-item {
-    @apply block bg-white p-6 rounded-lg shadow-sm relative pb-16 hover:shadow-md transition-all duration-200 no-underline border border-transparent hover:border-le-blue;
-  }
-
-  /* Link color utilities */
-  .child-links-are-white a:not(.btn):not(nav a):not(.no-underline) {
-    @apply text-white hover:text-gray-200 active:text-gray-300;
-  }
-  .child-links-are-white p a:not(.btn):not(nav a):not(.no-underline),
-  .child-links-are-white .prose a:not(.btn):not(nav a):not(.no-underline) {
-    @apply underline decoration-white hover:decoration-gray-200;
-  }
-
-  .accordion-item.is-open button {
-    @apply bg-gray-200;
-  }
-  .prose-content h1:not(:first-child),
-  .prose-content h2:not(:first-child),
-  .prose-content h3:not(:first-child),
-  .prose-content h4:not(:first-child),
-  .prose-content h5:not(:first-child),
-  .prose-content h6:not(:first-child) {
-    @apply mt-8;
-  }
-
-  .prose-content ul,
-  .prose-content ol {
-    @apply mb-6 pl-5;
-  }
-
-  .prose-content ul {
-    @apply list-disc;
-  }
-
-  .prose-content ol {
-    @apply list-decimal;
-  }
-
-  .prose-content li {
-    @apply mb-2;
-  }
-
-  .prose-content li > ul {
-    @apply mt-2 mb-2;
-    list-style-type: circle;
-  }
-
-  .prose-content li > ol {
-    @apply mt-2 mb-2;
-  }
-
-  .list-lock-icon {
-    @apply list-none !pl-0;
-  }
-
-  .list-lock-icon li {
-    @apply relative pl-[53px] mb-7 list-none pt-2  min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue; /* Add list-none to li */
-  }
-
-  .list-lock-icon li::before {
-    content: '';
-    @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
-    background-image: url('/images/le-logo-lockonly-black-cropped.svg');
-  }
-
-  .prose-content blockquote {
-    @apply pl-4 py-1 my-6 border-l-4 border-gray-300 text-gray-700 italic;
-  }
 
   pre, code {
     @apply text-[15px] border border-[#e8e8e8] rounded-[3px] bg-[#eef];
@@ -275,37 +483,7 @@
   }
 
   code {
-    @apply px-[5px] py-[1px];
-  }
-
-  .howitworks-figure img {
-    @apply mx-auto my-5;
-  }
-
-  /* Autoanchor styles */
-  a.autoanchor {
-    @apply no-underline !text-gray-400 text-[0.8em] ml-2;
-  }
-
-  .prose-content h1,
-  .prose-content h2,
-  .prose-content h3 {
-    .autoanchor {
-      @apply hidden;
-    }
-    &:hover {
-      .autoanchor {
-        @apply inline;
-      }
-    }
-  }
-
-  .boxed {
-      @apply border border-[#e0e0e0] bg-[#f9f9f9] p-[15px] my-[15px] rounded-lg;
-  }
-
-  .boxed p:last-child {
-    @apply mb-0;
+    @apply px-[5px] py-px;
   }
 
   table {
@@ -323,11 +501,6 @@
   /* Mobile Navigation */
   #main-nav {
     @apply transition-all duration-300 ease-in-out max-h-0 overflow-hidden opacity-0 md:max-h-none md:overflow-visible md:opacity-100;
-  }
-
-  #main-nav.hidden {
-    @apply max-h-0 opacity-0;
-    visibility: hidden;
   }
 
   #main-nav:not(.hidden) {
@@ -348,92 +521,6 @@
     }
   }
 
-  /* Navigation styles */
-  .nav-item {
-    @apply block w-full md:w-auto min-h-[44px] flex items-center justify-between md:min-h-0 text-gray-700 rounded-md hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500;
-  }
-
-  .nav-dropdown-item {
-    /* @apply block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100; */
-    @apply nav-item whitespace-nowrap md:min-h-[44px] px-4;
-  }
-
-  /* Menu responsive gap */
-  @media (min-width: 768px) and (max-width: 900px) {
-    .site-main-nav {
-      @apply gap-2.5 !important;
-    }
-  }
-
-  /* Post hero component - used at the top of posts and pages */
-
-
-  .narrow-container {
-    @apply max-w-[calc(1000px-60px)] mx-auto px-4 md:px-[30px];
-  }
-
-  /* Logo responsive sizing */
-  .site-logo img {
-    @apply h-12 md:-translate-y-[7px];
-  }
-
-  @media (min-width: 768px) and (max-width: 900px) {
-    .site-logo img {
-      @apply h-8 -translate-y-[5px];
-    }
-  }
-
-  .post-hero {
-      @apply py-16 bg-le-blue text-white;
-  }
-
-  .post-hero__inner {
-      @apply narrow-container mx-auto text-left pb-0.5;
-  }
-
-  .post-hero__breadcrumb {
-      @apply text-sm text-gray-600;
-  }
-
-  .post-hero__breadcrumb a {
-      @apply hover:text-gray-900 transition-colors;
-  }
-
-  .post-hero__title {
-      @apply text-4xl font-bold mb-4;
-  }
-
-  .post-hero__meta {
-      @apply text-sm;
-  }
-
-  /* Post */
-    /* Right-aligned image with caption */
-    .pic-quote-right {
-      @apply w-full mb-6;
-    }
-
-    .pic-quote-right__caption {
-      @apply text-sm text-gray-600 text-center mt-2;
-    }
-
-
-  .annual-report-section  img {
-    max-height: 300px;
-    object-fit: contain;
-  }
-
-  .about-section img {
-    max-height: 300px;
-    object-fit: contain;
-  }
-
-    @screen md {
-      .pic-quote-right {
-        @apply float-right max-w-[33.33333%] ml-[25px] flex-[0_0_33.33333%];
-      }
-    }
-
   /* Glossary */
   @keyframes fadeIt {
     0%   { background-color: #FFCE00; }
@@ -449,60 +536,15 @@
     padding-right: .25em; /* Prevent italics text from hitting the ":" */
   }
 
-  .definition {
-    margin-bottom: 1em;
-  }
-
-  .definition>a:first-child {
-    text-decoration: none;
-    color: inherit;
-  }
-
   /* Hide Netlify preview bar */
   div[data-netlify-deploy-id] {
     display: none;
-  }
-
-  .pull-quote p:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Blog image styling */
-  .blog-image-constrained {
-    @apply w-2/3 max-h-[90vh] object-contain mx-auto block;
-  }
-
-  .image-caption {
-    @apply text-sm text-gray-600 text-center mt-1;
-  }
-
-  /* Blog post figures with captions */
-  .prose-content figure {
-    @apply flex flex-col items-center text-center my-6;
-  }
-  .prose-content figure + figure {
-    @apply mt-16;
   }
 
   article figure p {
     margin-bottom: 0;
   }
 
-  .prose-content figure img {
-    @apply mx-auto;
-  }
-
-  .prose-content figcaption {
-    @apply text-sm text-gray-600 text-center mt-2;
-  }
-
-}
-
-/* Utility styles */
-@layer utilities {
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
 }
 
 .hero-bg {
@@ -511,26 +553,26 @@
   background-position: top left;
 }
 
-@screen sm {
+@media (width >= theme(--breakpoint-sm)) {
   .hero-bg {
     background-image: url('/images/radiant_london_resized/radiant_london_5_640w.jpg');
     background-position: top center;
   }
 }
 
-@screen lg {
+@media (width >= theme(--breakpoint-lg)) {
   .hero-bg {
     background-image: url('/images/radiant_london_resized/radiant_london_5_1080w.jpg');
   }
 }
 
-@screen xl {
+@media (width >= theme(--breakpoint-xl)) {
   .hero-bg {
     background-image: url('/images/radiant_london_resized/radiant_london_5_1280w.jpg');
   }
 }
 
-@screen 2xl {
+@media (width >= theme(--breakpoint-2xl)) {
   .hero-bg {
     background-image: url('/images/radiant_london_resized/radiant_london_5_1920w.jpg');
   }
