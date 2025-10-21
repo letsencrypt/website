@@ -63,7 +63,7 @@
     </a>
 
     <div class="flex items-center justify-between">
-      <a class="site-logo flex-shrink-0" href="{{ .Site.Home.RelPermalink }}">
+      <a class="site-logo shrink-0" href="{{ .Site.Home.RelPermalink }}">
         <!-- <img src="/images/le-logo-standard.png" alt="Let's Encrypt" class="h-14"> -->
         <img src="/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt">
       </a>
@@ -80,7 +80,7 @@
       </button>
 
       <nav id="main-nav"
-           class="md:flex absolute md:!relative inset-x-0 top-full md:top-auto bg-white md:bg-transparent border-b md:border-b-0 border-gray-200 shadow-lg md:shadow-none md:flex-grow md:ml-8 z-50">
+           class="md:flex absolute md:!relative inset-x-0 top-full md:top-auto bg-white md:bg-transparent border-b md:border-b-0 border-gray-200 shadow-lg md:shadow-none md:grow md:ml-8 z-50">
         <div class="container mx-auto">
           <div class="md:p-0 flex justify-center">
             {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
@@ -88,7 +88,7 @@
         </div>
       </nav>
 
-      <a class="btn btn-yellow hidden md:block flex-shrink-0" href="{{ relLangURL "/donate/" }}">{{ i18n "header_donate_now" }}</a>
+      <a class="btn btn-yellow hidden md:block shrink-0" href="{{ relLangURL "/donate/" }}">{{ i18n "header_donate_now" }}</a>
     </div>
   </div>
 </header>
