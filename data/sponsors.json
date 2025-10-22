@@ -353,6 +353,11 @@
       "name": "DuckDuckGo",
       "url": "https://duckduckgo.com/",
       "image": "duckduckgo-logo.svg"
+    },
+    {
+      "name": "Zoho",
+      "url": "https://zoho.com/",
+      "image": "zoho-logo-web.svg"
     }
   ]
 }
