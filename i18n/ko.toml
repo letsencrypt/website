@@ -389,16 +389,16 @@ other = "방문"
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "### 개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
+other = "###개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
 
 [home_hero_nonprofit_prefix]
-other = "개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
+other = " "
 
 [home_hero_certificate_count]
-other = "7억"
+other = "700M"
 
 [home_hero_nonprofit_suffix]
-other = "웹사이트"
+other = "개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
 
 [projects_section_title]
 other = "보안 및 개인 정보 보호를 개선하는 더 많은 방법"
