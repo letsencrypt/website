@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "../notwatching/hugo_stats.json";
 
 @theme {
   --color-isrg-blue: #c2e9e9;

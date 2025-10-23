@@ -1,9 +1,14 @@
-{{ $styles := resources.Get "css/le-2025-theme-output.css" }}
-{{ if hugo.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-{{ else }}
-  {{ $styles := $styles | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ with resources.Get "css/le-2025-theme-input.css" }}
+  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css" />
