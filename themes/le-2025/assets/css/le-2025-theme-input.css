@@ -628,7 +628,3 @@
 .prose-content .pull-quote-right blockquote {
   @apply mt-0 pt-0 border-0 pl-0;
 }
-
-.donate-2025-stat {
-  color: red !important;
-}
