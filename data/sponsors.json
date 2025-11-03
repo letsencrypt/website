@@ -58,6 +58,11 @@
       "name": "Squarespace",
       "url": "https://www.squarespace.com/",
       "image": "squarespace-logo.png"
+    },
+    {
+      "name": "SerpApi",
+      "url": "https://serpapi.com/",
+      "image": "SerpApi-black.png"
     }
   ],
   "silver": [
@@ -296,11 +301,6 @@
       "image": "securew2-logo.png"
     },
     { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
-    {
-      "name": "SerpApi",
-      "url": "https://serpapi.com/",
-      "image": "SerpApi-black.png"
-    },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
     { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
