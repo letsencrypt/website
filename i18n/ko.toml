@@ -529,23 +529,3 @@ other = "저희는 대부분의 암호화폐 기부{{ .cryptoLink }}를 받습�
 [donate_page_crypto_link_text]
 other = "여기"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "저는 보안에 진심이기 때문에<br />Let's Encrypt<br />를 후원합니다.&rdquo;"
-
-[testimonial_section_button_text]
-other = "TIMMY와 함께 너드가 되세요."
-
-[testimonial_section_image_alt]
-other = "티미, Let's Encrypt의 지지자"
-
-[testimonial_section_footer_line1]
-other = "개인정보 보호를 중시하는 기관으로서, 저희는 모든 후원자와 구독자에 대해 가능한 한 적게 알고 있습니다. 따라서 Timmy라는 사람이 실제로 괴짜이고 저희를 지지해 주실 수도 있지만, 위의 Timmy는 실존 인물이 아니며 그의 후기 또한 사실이 아닙니다."
-
-[testimonial_section_footer_line2]
-other = "전 세계 수천 명의 사람들이 우리의 영향력을 가능하게 합니다."
-
-[testimonial_section_footer_line3]
-other = "모두에게 암호화를 제공하기 위한 우리의 작업을 지원해 주셔서 감사합니다."
