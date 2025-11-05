@@ -529,23 +529,3 @@ other = "אנחנו יכולים לקבל את רוב סוגי המטבעות ה
 [donate_page_crypto_link_text]
 other = "כאן"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "אני חובב מושבע של<br />Let's Encrypt כי<br />אני חנון אבטחת מידע.&rdquo;"
-
-[testimonial_section_button_text]
-other = "הצטרפו לטימי. תהיו חנונים."
-
-[testimonial_section_image_alt]
-other = "טימי, חובב מושבע של Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "אלפי אנשים מכל רחבי העולם הופכים את ההשפעה שלנו למציאות."
-
-[testimonial_section_footer_line3]
-other = "תודה על כך ששקלת לתמוך בעבודה שלנו לספק הצפנה לכולם."

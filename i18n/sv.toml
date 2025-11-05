@@ -529,23 +529,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 [donate_page_crypto_link_text]
 other = "här"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "JOIN TIMMY. BE A NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy, a supporter of Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
-
-[testimonial_section_footer_line3]
-other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

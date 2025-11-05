@@ -529,23 +529,3 @@ other = "Vi er i stand til at acceptere de fleste kryptovaluta donationer {{ .cr
 [donate_page_crypto_link_text]
 other = "her"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "Jeg understøtter<br />Let's Encrypt fordi<br />er en sikkerhedsnørd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "GØR SOM TIMMY. VÆR EN NØRD."
-
-[testimonial_section_image_alt]
-other = "Timmy, en støtte af Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "SOM EN PRIVATLIVSRESPEKTERENDE ORGANISATION, ØNSKER VI AT KENDE SÅ LIDT SOM MULIGT OM ALLE VORES STØTTER OG ABONNENTER. DERFOR, SÅ SELVOM DER MÅSKE ER EN NØRD, DER HEDDER TIMMMY, SOM STØTTER OS, SÅ ER TIMMY OVENFOR IKKE EN RIGTIG PERSON OG DET ER IKKE ET RIGTIGT VIDENSBYRD."
-
-[testimonial_section_footer_line2]
-other = "TUSINDER AF PERSON OVERALT I VERDEN GØR VORES INDFLYDELSE MULIG."
-
-[testimonial_section_footer_line3]
-other = "TAK FOR AT OVERVEJE AT STØTTE VORES ARBEJDE MED KRYPTERING FOR ALLE."
