@@ -329,24 +329,24 @@ force = true
 
 [[redirects]]
 from = "https://cp.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.0/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cps.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.0/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cp.root-x1.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.0/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cps.root-x1.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v5.9/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.0/"
 status = 302
 force = true
