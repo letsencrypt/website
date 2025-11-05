@@ -529,23 +529,3 @@ other = "Jsme schopni přijímat dary ve většině kryptoměn {{ .cryptoLink }}
 [donate_page_crypto_link_text]
 other = "zde"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "Podporuji<br /> Let's Encrypt, protože<br /> jsem bezpečnostní nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "PŘIPOJTE SE K TIMMYMU. BUĎTE NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy podporuje Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "JAKO ORGANIZACE RESPEKTUJÍCÍ SOUKROMÍ VÍME O VŠECH NAŠICH PŘÍZNIVCÍCH A ODBĚRATELÍCH CO NEJMÉNĚ. PROTO, I KDYŽ NĚKDO JMÉNEM TIMMY MŮŽE BÝT SKUTEČNĚ ŠPRT A PODPOROVAT NÁS, VÝŠE UVEDENÝ TIMMY NENÍ SKUTEČNÁ OSOBA A JEHO SVĚDECTVÍ NENÍ SKUTEČNÉ."
-
-[testimonial_section_footer_line2]
-other = "TISÍCE LIDÍ PO CELÉM SVĚTĚ PŘISPÍVAJÍ K NAŠEMU PROVOZU."
-
-[testimonial_section_footer_line3]
-other = "DĚKUJEME, ŽE JSTE ZVÁŽILI PODPORU NAŠÍ PRÁCE NA ZAJIŠTĚNÍ ŠIFROVÁNÍ PRO VŠECHNY."

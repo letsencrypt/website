@@ -526,23 +526,3 @@ other = "大多数类型的加密货币也可以通过{{ .cryptoLink }}捐给我
 [donate_page_crypto_link_text]
 other = "此处"
 
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "我支持 Let's Encrypt，<br />因为我热衷于信息安全。&rdquo;"
-
-[testimonial_section_button_text]
-other = "成为像 Timmy 一样的安全达人"
-
-[testimonial_section_image_alt]
-other = "Timmy，Let's Encrypt 的支持者之一"
-
-[testimonial_section_footer_line1]
-other = "作为一家尊重隐私的机构，我们对所有支持者和用户都知之甚少。虽然世上可能真的有一位 Timmy 热衷于信息安全并且支持我们，但上方这位 Timmy 并非真人，他的观点也纯属虚构。"
-
-[testimonial_section_footer_line2]
-other = "事实上，我们的影响力是由全球成百上千的支持者共同铸就的。"
-
-[testimonial_section_footer_line3]
-other = "感谢您考虑支持我们的事业，支持为所有人提供的数据加密服务。"
