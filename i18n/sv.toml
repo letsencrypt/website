@@ -32,7 +32,7 @@ other = "Support a more secure and privacy-respecting Web."
 other = "Donera nu"
 
 [footer_mailing]
-other = "Send all mail or inquiries to:"
+other = "Skicka alla mail eller förfrågningar till:"
 
 [footer_legal_address]
 other = "Legal Address"
@@ -212,13 +212,13 @@ other = "Internet Security Research Group"
 other = "Donera nu"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "Växla meny"
 
 [isrg_legal_address_label]
 other = "Legal Address"
 
 [isrg_mailing_label]
-other = "Send all mail or inquiries to:"
+other = "Skicka alla mail eller förfrågningar till:"
 
 [newsletter_subscribe_heading]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -528,4 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "här"
-
