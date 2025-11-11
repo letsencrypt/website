@@ -1,7 +1,6 @@
 ---
 title: Paras käytäntö - Pidä portti 80 auki
 slug: allow-port-80
-date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1
 ---
