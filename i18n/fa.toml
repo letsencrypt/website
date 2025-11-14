@@ -155,8 +155,8 @@ other = "Window Start"
 [certificate_transparency_window_end]
 other = "Window End"
 
-[certification_practices_statement]
-other = "Certification Practices Statement"
+[certification_practice_statement]
+other = "Certification Practice Statement"
 
 [overview]
 other = "Overview"
