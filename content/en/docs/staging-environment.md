@@ -1,7 +1,7 @@
 ---
 title: Staging Environment
 slug: staging-environment
-lastmod: 2025-05-12
+lastmod: 2025-11-14
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ The staging environment has a certificate hierarchy that [mimics production](/ce
 
 ## Root CAs
 
-The staging environment has two active root certificates which are **not present** in browser/client trust stores: "(STAGING) Pretend Pear X1" and "(STAGING) Bogus Broccoli X2".
+The staging environment has four active root certificates which are **not present** in browser/client trust stores: "(STAGING) Pretend Pear X1", "(STAGING) Bogus Broccoli X2", "(STAGING) Yearning Yucca Root YE", and "(STAGING) Yonder Yam Root YR".
 
 If you wish to modify a test-only client to trust the staging environment for testing purposes you can do so by adding their certificates to your testing trust store. **Important note:** Do not add the staging root or intermediate to a trust store that you use for ordinary browsing or other activities, since they are not audited or held to the same standards as our production roots, and so are not safe to use for anything other than testing.
 
@@ -59,6 +59,16 @@ If you wish to modify a test-only client to trust the staging environment for te
   * Key type: `ECDSA P-384`
   * Certificate details (self-signed): [der](/certs/staging/letsencrypt-stg-root-x2.der), [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * Certificate details (cross-signed by Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+* **Yearning Yucca Root YE**
+  * Subject: `O = (STAGING) ISRG, CN = (STAGING) Yearning Yucca Root YE`
+  * Key type: `ECDSA P-384`
+  * Certificate details (self-signed): [der](/certs/staging/gen-y/root-ye.der), [pem](/certs/staging/gen-y/root-ye.pem), [txt](/certs/staging/gen-y/root-ye.txt)
+  * Certificate details (cross-signed by Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der), [pem](/certs/staging/gen-y/root-ye-by-x2.pem), [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
+* **Yearning Yonder Yam Root YR**
+  * Subject: `O = (STAGING) ISRG, CN = (STAGING) Yonder Yam Root YR`
+  * Key type: `ECDSA P-384`
+  * Certificate details (self-signed): [der](/certs/staging/gen-y/root-yr.der), [pem](/certs/staging/gen-y/root-yr.pem), [txt](/certs/staging/gen-y/root-yr.txt)
+  * Certificate details (cross-signed by Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der), [pem](/certs/staging/gen-y/root-yr-by-x1.pem), [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
 
 ## Subordinate (Intermediate) CAs
 
@@ -74,6 +84,12 @@ The staging environment has intermediate certificates that mimic production, iss
 * (STAGING) Riddling Rhubarb R12
 * (STAGING) Tenuous Tomato R13
 * (STAGING) Not Nectarine R14
+* (STAGING) Artificial Amaranth YE1
+* (STAGING) Baloney Bulgur YE2
+* (STAGING) Cad Corn YE3
+* (STAGING) Dastardly Durum YR1
+* (STAGING) Ersatz Emmer YR2
+* (STAGING) Fake Farro YR3
 
 These intermediates are subject to change at any time, and should not be pinned or trusted by any system. In general, you can expect the staging intermediates to parallel the corresponding production (trusted) intermediates. If strictly necessary, you can get full certificate details [here](https://github.com/letsencrypt/website/blob/main/static/certs/staging).
 
