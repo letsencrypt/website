@@ -341,16 +341,16 @@ other = "スポンサーについて学ぶ"
 other = "主なスポンサーと資金提供者"
 
 [sponsors_diamond]
-other = "ダイアモンド・スポンサー"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "プラチナ・スポンサー"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "ゴールド・スポンサー"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "シルバー・スポンサー"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "here"
-

@@ -341,16 +341,16 @@ other = "후원에 대해 알아보세요"
 other = "주요 스폰서 및 후원자"
 
 [sponsors_diamond]
-other = "다이아몬드 스폰서"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "플레티넘 스폰서"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "골드 스폰서"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "실버 스폰서"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "저희는 대부분의 암호화폐 기부{{ .cryptoLink }}를 받습�
 
 [donate_page_crypto_link_text]
 other = "여기"
-
