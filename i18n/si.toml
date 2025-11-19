@@ -341,16 +341,16 @@ other = "අනුග්‍රහකත්‍වය ගැන දැනගන්
 other = "ප්‍රධාන අනුග්‍රහකයින් සහ මූල්‍යදායකයින්"
 
 [sponsors_diamond]
-other = "දියමන්ති අනුග්‍රහකයින්"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "ප්ලැටිනම් අනුග්‍රහකයින්"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "රන් අනුග්‍රහකයින්"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "රිදී අනුග්‍රහකයින්"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "අපට බොහෝ ගුප්ත මුදල් (ක්‍රි
 
 [donate_page_crypto_link_text]
 other = "මෙතැන"
-

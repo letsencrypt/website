@@ -341,16 +341,16 @@ other = "פרטים על מימון"
 other = "נותני חסות ומממנים עיקריים"
 
 [sponsors_diamond]
-other = "מממני יהלום"
+other = "דרגת יהלום"
 
 [sponsors_platinum]
-other = "מממני פלטינה"
+other = "דרגת פלטינה"
 
 [sponsors_gold]
-other = "מממני זהב"
+other = "דרגת זהב"
 
 [sponsors_silver]
-other = "מממני כסף"
+other = "דרגת כסף"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "אנחנו יכולים לקבל את רוב סוגי המטבעות ה
 
 [donate_page_crypto_link_text]
 other = "כאן"
-

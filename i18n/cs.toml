@@ -341,16 +341,16 @@ other = "Zjistěte více o sponzorství"
 other = "Důležití sponzoři a investoři"
 
 [sponsors_diamond]
-other = "Diamantoví sponzoři"
+other = "Diamantová úroveň"
 
 [sponsors_platinum]
-other = "Platinoví sponzoři"
+other = "Platinová úroveň"
 
 [sponsors_gold]
-other = "Zlatí sponzoři"
+other = "Zlatá úroveň"
 
 [sponsors_silver]
-other = "Stříbrní sponzoři"
+other = "Stříbrná úroveň"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "Jsme schopni přijímat dary ve většině kryptoměn {{ .cryptoLink }}
 
 [donate_page_crypto_link_text]
 other = "zde"
-
