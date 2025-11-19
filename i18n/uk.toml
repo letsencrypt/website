@@ -341,16 +341,16 @@ other = "Learn about Sponsorship"
 other = "Основні спонсори та фонди"
 
 [sponsors_diamond]
-other = "Diamond Sponsors"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platinum Sponsors"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Gold Sponsors"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Silver Sponsors"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "here"
-

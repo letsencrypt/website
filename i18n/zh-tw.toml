@@ -338,16 +338,16 @@ other = "了解如何贊助"
 other = "核心贊助商"
 
 [sponsors_diamond]
-other = "鑽石級贊助商"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "白金級贊助商"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "黃金級贊助商"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "白銀級贊助商"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -525,4 +525,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "here"
-

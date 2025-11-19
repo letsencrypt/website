@@ -341,16 +341,16 @@ other = "Läs mer om sponsring"
 other = "Största sponsorer och bidragsgivare"
 
 [sponsors_diamond]
-other = "Diamond Sponsors"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platinum Sponsors"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Guldsponsorer"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Silversponsorer"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
