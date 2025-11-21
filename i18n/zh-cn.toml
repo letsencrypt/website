@@ -338,16 +338,16 @@ other = "了解如何赞助"
 other = "核心赞助商"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "钻石级"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "白金级"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "黄金级"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "白银级"
 
 [common_read_more_arrow]
 other = " →"
