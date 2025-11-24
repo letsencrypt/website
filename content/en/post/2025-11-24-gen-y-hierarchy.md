@@ -1,6 +1,6 @@
 ---
 author: Aaron Gable
-date: 2025-11-14T00:00:00Z
+date: 2025-11-24T00:00:00Z
 slug: gen-y-hierarchy
 title: "New \"Generation Y\" Hierarchy of Root and Intermediate Certificates"
 excerpt: "Let's Encrypt is beginning issuance from our new hierarchy of root and intermediate certificates."
@@ -12,7 +12,7 @@ In a ceremony held in September, Let’s Encrypt generated two new Root Certific
 
 <figure>
 
-![Diagram of the new Generation Y Root and Intermediate CAs](/images/blog/2025-11-14-gen-y-hierarchy.png)
+![Diagram of the new Generation Y Root and Intermediate CAs](/images/blog/2025-11-24-gen-y-hierarchy.png)
 
 </figure>
 
