@@ -1,0 +1,98 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            68:84:a9:d4:2d:57:db:b8:f3:2a:b3:6d:78:cb:7d:a6
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1
+        Validity
+            Not Before: Sep  3 00:00:00 2025 GMT
+            Not After : Sep  2 23:59:59 2032 GMT
+        Subject: C = US, O = ISRG, CN = (STAGING) Yonder Yam Root YR
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b6:9e:ef:ea:d0:69:f6:00:e9:88:65:4b:3a:33:
+                    2c:d5:e4:bd:0e:02:2d:a6:01:54:f5:17:89:c1:bf:
+                    d2:ca:0b:3a:ab:ee:84:50:2c:5f:8b:9a:83:38:a9:
+                    03:95:d8:95:3a:d9:63:bb:00:05:bf:ce:b6:d6:a3:
+                    38:ba:46:3a:3a:64:41:20:0f:61:9c:2b:ae:9c:99:
+                    4a:34:48:d0:7d:60:2b:ab:03:0e:a2:8e:62:2d:9e:
+                    29:ab:45:0f:e2:1b:56:26:5b:a4:3a:85:68:ad:2a:
+                    2e:2b:fd:c4:d5:75:93:47:76:70:22:62:28:7c:2d:
+                    3e:a7:6d:b4:dd:3a:43:6d:38:61:80:fc:d3:fd:98:
+                    ef:31:41:36:e2:a4:13:05:c4:2d:27:cc:08:27:b9:
+                    f3:fe:4e:81:fc:dc:8c:db:e1:a6:10:c3:45:17:5d:
+                    41:b5:b5:1a:99:51:49:5c:c4:62:f8:a6:5e:46:82:
+                    bf:6d:04:c0:8d:e3:e9:63:fd:01:d4:30:dc:aa:04:
+                    1c:c0:26:f7:b0:83:a3:e7:2b:05:50:ae:ea:27:27:
+                    1a:f1:79:39:6c:5f:30:14:e1:71:18:72:a6:45:13:
+                    eb:32:96:fb:b5:77:53:5c:79:52:ca:60:c2:b5:4c:
+                    7d:f0:20:9f:c2:9a:fe:ef:eb:e7:1e:06:aa:b1:6e:
+                    58:7e:bd:c0:1a:df:4f:e5:22:fe:de:17:26:c3:0e:
+                    23:d1:7c:7a:07:71:38:9b:41:3e:f2:0f:66:b4:9d:
+                    4b:d6:4e:c2:69:aa:70:81:e4:56:d2:08:62:74:a2:
+                    66:37:ee:60:63:7a:76:1b:b3:fc:1e:ae:32:58:2f:
+                    9f:98:9c:b5:39:60:a0:e8:60:f0:66:60:8c:42:ef:
+                    c0:31:46:b0:45:5e:34:01:46:19:65:80:40:7a:86:
+                    d9:53:fb:8a:72:66:d6:29:45:ee:6a:4d:5b:69:95:
+                    a9:ee:8a:a3:72:c2:03:2b:16:cc:92:0e:8a:1a:38:
+                    4b:6d:57:21:1d:c6:14:b2:50:a8:2f:e0:23:4a:17:
+                    c0:03:79:fc:58:9d:1c:8d:4d:e9:f8:13:24:5a:34:
+                    ca:56:e0:1f:2d:83:7f:0c:0e:fa:0a:f7:d1:59:7d:
+                    36:0f:ea:e2:1b:3d:d5:b0:55:c2:c3:d9:39:98:51:
+                    34:ce:6f:95:85:cf:31:23:74:d6:36:15:3a:42:6e:
+                    91:d4:aa:e0:09:4d:aa:3a:98:1a:27:c4:65:a2:45:
+                    0a:dd:01:56:ac:87:4e:00:84:30:3b:49:5e:7b:28:
+                    d3:77:f3:1e:be:cc:3a:d8:1c:e0:d2:b6:d0:d6:44:
+                    b7:87:e7:96:05:c0:6c:90:d0:85:24:a0:ee:8f:3b:
+                    46:78:27
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                50:B1:D7:98:02:50:5F:DB:32:46:1B:58:C1:68:40:72:24:6F:4A:C1
+            X509v3 Authority Key Identifier: 
+                B5:F3:65:F2:FE:B0:0A:92:1F:FB:3C:7D:F3:44:A0:AC:63:25:C3:14
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x1.i.lencr.org/
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://stg-x1.c.lencr.org/
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        ad:bc:10:83:1c:4f:dc:2f:e7:83:ca:48:12:4c:00:1d:b1:47:
+        46:51:6e:d3:b4:cc:fb:7d:81:f7:b1:10:ca:53:1d:c2:58:67:
+        21:d0:63:c4:9d:aa:2c:39:25:c9:af:a8:17:e8:60:0e:89:9c:
+        59:91:ca:fd:96:2f:d1:3e:79:44:25:e7:e3:d5:b6:5a:c4:b7:
+        f7:93:9e:cc:b0:12:3a:d5:88:bd:74:ef:db:a1:4c:24:57:61:
+        99:68:8e:a0:52:7c:16:52:b0:b2:48:88:bf:43:c2:c1:0b:bb:
+        5e:52:14:5b:09:c3:51:cb:18:33:9c:05:12:d4:f6:ac:ab:64:
+        6b:9f:dd:10:0a:d3:46:6c:c2:33:92:91:2c:ae:dc:89:73:b2:
+        2f:a2:8e:0a:23:be:10:f7:1b:a4:14:bf:34:69:ba:7c:fd:a7:
+        99:4f:5e:a7:73:c2:3e:47:81:8a:0d:40:db:bc:c1:85:97:34:
+        22:d3:79:9a:2f:61:86:e1:97:5c:00:64:23:e5:ca:49:b5:62:
+        c0:81:12:1c:60:96:68:78:08:94:99:84:6e:fd:31:f3:7b:40:
+        a3:ad:fb:d3:d1:50:fb:f4:94:33:67:70:99:32:c1:3a:6d:c5:
+        26:39:96:b0:a7:20:1c:25:56:ec:18:23:88:de:81:79:da:50:
+        c6:e0:7b:bc:15:41:51:22:f0:64:e9:69:65:05:ef:92:a0:d5:
+        0b:d3:eb:02:27:28:f0:2c:e6:6d:74:eb:5a:ef:e2:cf:7f:bd:
+        26:67:1d:02:4f:79:6e:f2:0d:24:67:91:29:c8:3b:11:7f:b5:
+        ce:e8:83:da:8d:a1:67:f7:c3:0c:8c:ca:39:7f:27:a3:80:97:
+        d9:8c:4f:7e:64:12:57:8e:1b:41:13:0e:70:0f:f6:02:9c:bc:
+        30:36:1f:ee:b8:86:36:46:fb:31:cc:ef:f0:1f:2e:1c:52:6f:
+        d5:e5:03:46:5b:f3:40:96:52:9d:e1:7a:b7:39:6b:36:85:f5:
+        d0:c5:3b:0f:63:75:aa:85:1b:d4:06:a3:82:bf:32:31:8e:e5:
+        dd:47:c1:84:06:45:9c:6f:a9:7f:4d:7c:40:19:d7:d7:71:95:
+        16:5c:b7:b9:63:54:ed:e1:78:27:5b:b3:d5:a7:4a:9b:3b:f4:
+        02:04:09:50:9b:3e:9f:56:bc:38:9a:f8:36:2e:af:8b:34:f7:
+        31:e1:9d:97:f3:f9:af:02:e6:a3:ef:4c:c8:fb:a1:67:b9:ab:
+        1a:c8:98:95:61:df:36:64:fa:81:96:3b:79:dd:0e:3c:6e:7d:
+        d8:79:2e:a2:a7:0a:77:ca:a9:81:a4:d4:5e:fc:46:1e:4a:6b:
+        9c:61:f6:a1:97:27:4e:06
