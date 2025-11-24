@@ -1,0 +1,48 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            4a:02:3e:c6:db:21:f3:de:83:a6:8e:56:37:08:64:b0
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2
+        Validity
+            Not Before: Sep  3 00:00:00 2025 GMT
+            Not After : Sep  2 23:59:59 2032 GMT
+        Subject: C = US, O = ISRG, CN = (STAGING) Yearning Yucca Root YE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:f4:b1:b1:c9:72:d1:21:48:4d:68:26:ae:7e:3c:
+                    ed:80:b4:18:4b:04:c3:6a:a3:61:90:3f:67:ad:fd:
+                    c8:3a:43:35:a3:98:6a:29:44:c6:3a:6d:d2:b8:95:
+                    6a:cf:32:eb:45:74:fb:24:bf:94:0a:db:21:60:f8:
+                    b9:55:26:f2:68:7f:09:5e:0a:20:13:e1:e5:cc:c3:
+                    ca:fe:34:04:b2:36:28:f7:52:7d:98:48:e7:97:54:
+                    50:ca:13:32:23:7c:25
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                93:3B:1B:94:28:62:81:F9:1F:27:EB:AA:DF:9A:30:0D:5A:AE:7F:EC
+            X509v3 Authority Key Identifier: 
+                DE:D1:A3:59:64:0E:C1:9A:36:A3:46:EE:B0:10:76:EF:AE:97:95:66
+            Authority Information Access: 
+                CA Issuers - URI:http://stg-x2.i.lencr.org/
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://stg-x2.c.lencr.org/
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:64:02:30:79:33:e8:76:ec:4c:e5:8c:01:63:32:9b:91:1f:
+        fe:d2:54:14:9c:0d:07:15:97:74:88:7d:57:5d:4b:31:ac:80:
+        5c:cc:05:8c:e3:db:92:8f:8a:bd:11:e6:38:66:12:82:02:30:
+        39:55:d7:6d:da:e4:c5:ea:11:5e:26:15:48:9b:44:1e:7a:f2:
+        c9:7a:23:e3:6b:02:7f:dc:40:d1:8d:52:9d:cb:a9:73:71:2a:
+        a0:0f:8b:f9:d4:a2:c8:63:07:d4:2f:83
