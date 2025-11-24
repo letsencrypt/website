@@ -1,0 +1,39 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            96:9c:41:0c:c4:29:37:4b:3b:c2:5b:73:c0:87:56:54
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C = US, O = ISRG, CN = (STAGING) Yearning Yucca Root YE
+        Validity
+            Not Before: Sep  3 00:00:00 2025 GMT
+            Not After : Sep  2 23:59:59 2045 GMT
+        Subject: C = US, O = ISRG, CN = (STAGING) Yearning Yucca Root YE
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:f4:b1:b1:c9:72:d1:21:48:4d:68:26:ae:7e:3c:
+                    ed:80:b4:18:4b:04:c3:6a:a3:61:90:3f:67:ad:fd:
+                    c8:3a:43:35:a3:98:6a:29:44:c6:3a:6d:d2:b8:95:
+                    6a:cf:32:eb:45:74:fb:24:bf:94:0a:db:21:60:f8:
+                    b9:55:26:f2:68:7f:09:5e:0a:20:13:e1:e5:cc:c3:
+                    ca:fe:34:04:b2:36:28:f7:52:7d:98:48:e7:97:54:
+                    50:ca:13:32:23:7c:25
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                93:3B:1B:94:28:62:81:F9:1F:27:EB:AA:DF:9A:30:0D:5A:AE:7F:EC
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:65:02:30:0e:58:39:65:19:27:cf:f4:0e:76:e3:72:83:ce:
+        03:cb:7a:19:c2:c3:30:d0:8d:11:d7:cd:19:07:34:3a:61:53:
+        59:65:56:e6:ca:2a:cd:83:73:49:dc:d3:ff:92:44:b9:02:31:
+        00:db:86:fc:55:ae:93:e8:b9:92:5d:9a:80:26:39:d0:8c:be:
+        f5:21:9d:b4:2f:a3:6d:ef:f8:3d:f2:ff:61:3f:17:7e:8e:ae:
+        21:4a:e1:af:9b:ce:63:29:03:59:74:ae:b9

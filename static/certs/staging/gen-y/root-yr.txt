@@ -1,0 +1,89 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            e9:69:7d:77:f1:3a:bc:91:2b:1c:66:e9:86:80:bd:2d
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = ISRG, CN = (STAGING) Yonder Yam Root YR
+        Validity
+            Not Before: Sep  3 00:00:00 2025 GMT
+            Not After : Sep  2 23:59:59 2045 GMT
+        Subject: C = US, O = ISRG, CN = (STAGING) Yonder Yam Root YR
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+                Modulus:
+                    00:b6:9e:ef:ea:d0:69:f6:00:e9:88:65:4b:3a:33:
+                    2c:d5:e4:bd:0e:02:2d:a6:01:54:f5:17:89:c1:bf:
+                    d2:ca:0b:3a:ab:ee:84:50:2c:5f:8b:9a:83:38:a9:
+                    03:95:d8:95:3a:d9:63:bb:00:05:bf:ce:b6:d6:a3:
+                    38:ba:46:3a:3a:64:41:20:0f:61:9c:2b:ae:9c:99:
+                    4a:34:48:d0:7d:60:2b:ab:03:0e:a2:8e:62:2d:9e:
+                    29:ab:45:0f:e2:1b:56:26:5b:a4:3a:85:68:ad:2a:
+                    2e:2b:fd:c4:d5:75:93:47:76:70:22:62:28:7c:2d:
+                    3e:a7:6d:b4:dd:3a:43:6d:38:61:80:fc:d3:fd:98:
+                    ef:31:41:36:e2:a4:13:05:c4:2d:27:cc:08:27:b9:
+                    f3:fe:4e:81:fc:dc:8c:db:e1:a6:10:c3:45:17:5d:
+                    41:b5:b5:1a:99:51:49:5c:c4:62:f8:a6:5e:46:82:
+                    bf:6d:04:c0:8d:e3:e9:63:fd:01:d4:30:dc:aa:04:
+                    1c:c0:26:f7:b0:83:a3:e7:2b:05:50:ae:ea:27:27:
+                    1a:f1:79:39:6c:5f:30:14:e1:71:18:72:a6:45:13:
+                    eb:32:96:fb:b5:77:53:5c:79:52:ca:60:c2:b5:4c:
+                    7d:f0:20:9f:c2:9a:fe:ef:eb:e7:1e:06:aa:b1:6e:
+                    58:7e:bd:c0:1a:df:4f:e5:22:fe:de:17:26:c3:0e:
+                    23:d1:7c:7a:07:71:38:9b:41:3e:f2:0f:66:b4:9d:
+                    4b:d6:4e:c2:69:aa:70:81:e4:56:d2:08:62:74:a2:
+                    66:37:ee:60:63:7a:76:1b:b3:fc:1e:ae:32:58:2f:
+                    9f:98:9c:b5:39:60:a0:e8:60:f0:66:60:8c:42:ef:
+                    c0:31:46:b0:45:5e:34:01:46:19:65:80:40:7a:86:
+                    d9:53:fb:8a:72:66:d6:29:45:ee:6a:4d:5b:69:95:
+                    a9:ee:8a:a3:72:c2:03:2b:16:cc:92:0e:8a:1a:38:
+                    4b:6d:57:21:1d:c6:14:b2:50:a8:2f:e0:23:4a:17:
+                    c0:03:79:fc:58:9d:1c:8d:4d:e9:f8:13:24:5a:34:
+                    ca:56:e0:1f:2d:83:7f:0c:0e:fa:0a:f7:d1:59:7d:
+                    36:0f:ea:e2:1b:3d:d5:b0:55:c2:c3:d9:39:98:51:
+                    34:ce:6f:95:85:cf:31:23:74:d6:36:15:3a:42:6e:
+                    91:d4:aa:e0:09:4d:aa:3a:98:1a:27:c4:65:a2:45:
+                    0a:dd:01:56:ac:87:4e:00:84:30:3b:49:5e:7b:28:
+                    d3:77:f3:1e:be:cc:3a:d8:1c:e0:d2:b6:d0:d6:44:
+                    b7:87:e7:96:05:c0:6c:90:d0:85:24:a0:ee:8f:3b:
+                    46:78:27
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                50:B1:D7:98:02:50:5F:DB:32:46:1B:58:C1:68:40:72:24:6F:4A:C1
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        6f:5e:fb:6d:eb:f4:b6:a5:43:25:4d:69:bb:62:a0:a6:7f:34:
+        d3:b2:d7:7d:c8:df:6a:d2:53:67:80:3c:4c:5b:e0:b6:47:f6:
+        03:21:fd:42:ed:c0:32:ea:ab:f6:93:1e:7b:b0:91:54:cb:c0:
+        f0:08:69:32:1a:d6:4c:7c:b3:c4:fc:85:1a:5b:7c:b7:f5:3e:
+        ef:9c:ea:f6:61:3d:21:63:57:32:45:96:ad:fa:61:df:07:0d:
+        14:31:64:ac:48:7a:1d:f8:5d:d5:d7:7c:51:ca:94:3f:a9:c9:
+        02:e6:58:53:af:4d:55:24:1e:82:d8:6a:79:a6:72:03:aa:30:
+        60:33:66:09:ca:27:e0:57:38:9e:e7:66:7c:4c:99:b1:d4:d1:
+        5d:cb:5b:87:2f:50:69:72:a7:74:8c:90:da:70:56:97:23:4b:
+        3a:05:4b:2c:c4:87:7e:e9:37:92:c8:0d:3b:94:7a:f2:d7:e1:
+        7a:fb:51:f6:70:52:50:e4:59:1d:07:34:41:cd:be:cc:19:44:
+        ee:d5:61:4b:0b:64:c9:f8:51:6b:6f:73:43:2f:17:91:c8:c6:
+        dc:45:fa:a4:b3:20:3e:42:48:30:a8:68:ba:bd:66:0e:e7:5e:
+        27:78:24:7c:09:62:f5:13:12:50:a7:46:46:73:fa:fc:99:92:
+        3e:dd:62:4e:74:2c:b4:6f:8b:e5:a6:ea:d5:05:4b:ca:69:31:
+        c7:e8:0b:2f:93:fb:b2:2c:56:a3:ba:57:99:79:de:8d:a7:d8:
+        c4:af:1d:62:00:15:60:5f:f0:1d:5f:c4:88:85:9c:c6:47:d4:
+        1b:ca:54:e1:2a:c2:ff:3d:18:af:ae:82:e6:ea:2f:b6:fa:73:
+        bd:cc:40:8d:5e:18:60:d2:cd:26:0d:9c:ad:b0:7d:5a:2a:e2:
+        04:8e:1b:f7:f2:f5:61:36:f0:3e:fa:f1:8d:ca:10:f3:f5:d0:
+        67:58:10:20:85:09:02:2e:f0:dd:97:9c:39:d3:56:5f:e4:b7:
+        e4:48:8d:a6:35:00:ac:21:0b:44:f0:32:62:1e:20:77:75:9e:
+        45:2d:70:a0:7f:5a:22:be:ea:12:40:56:5b:a2:21:6c:b3:a7:
+        b6:b3:6f:ae:0b:8f:a6:bb:2f:7f:97:65:27:dd:c4:01:52:7c:
+        7e:03:a3:25:30:5b:97:9f:ed:ba:1c:5a:d0:88:4e:c0:06:92:
+        0c:cd:c4:a7:52:7c:21:bc:d3:32:0c:ce:a1:f4:6d:ad:67:13:
+        32:6b:4a:91:a5:62:89:d4:05:14:2b:3c:8e:ab:c1:dd:e0:62:
+        32:75:90:76:53:a1:73:a7:fa:57:06:cf:c1:de:f4:0f:26:d5:
+        d8:99:56:7a:55:e5:2f:2b
