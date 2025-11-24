@@ -358,6 +358,11 @@
       "name": "Zoho",
       "url": "https://zoho.com/",
       "image": "zoho-logo-web.svg"
+    },
+    {
+      "name": "Okta",
+      "url": "https://www.okta.com/",
+      "image": "okta-logo.png"
     }
   ]
 }

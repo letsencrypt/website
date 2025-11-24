@@ -341,16 +341,16 @@ other = "Lue lisää sponsoroinnista"
 other = "Merkittävät sponsorit ja rahoittajat"
 
 [sponsors_diamond]
-other = "Timantti-sponsorit"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platina-sponsorit"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Kulta-sponsorit"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Hopea-sponsorit"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
