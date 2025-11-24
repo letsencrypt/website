@@ -341,16 +341,16 @@ other = "Lær om Sponsorater"
 other = "Store sponsorer og finansieringskilder"
 
 [sponsors_diamond]
-other = "Diamant Sponsorer"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platin Sponsorer"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Guld Sponsorer"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Sølv Sponsorer"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "Vi er i stand til at acceptere de fleste kryptovaluta donationer {{ .cr
 
 [donate_page_crypto_link_text]
 other = "her"
-

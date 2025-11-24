@@ -338,16 +338,16 @@ other = "了解如何赞助"
 other = "核心赞助商"
 
 [sponsors_diamond]
-other = "钻石级赞助商"
+other = "钻石级"
 
 [sponsors_platinum]
-other = "白金级赞助商"
+other = "白金级"
 
 [sponsors_gold]
-other = "黄金级赞助商"
+other = "黄金级"
 
 [sponsors_silver]
-other = "白银级赞助商"
+other = "白银级"
 
 [common_read_more_arrow]
 other = " →"
@@ -525,4 +525,3 @@ other = "大多数类型的加密货币也可以通过{{ .cryptoLink }}捐给我
 
 [donate_page_crypto_link_text]
 other = "此处"
-

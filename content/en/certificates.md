@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2025-11-14
+lastmod: 2025-11-24
 show_lastmod: 1
 ---
 
@@ -155,13 +155,13 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
 * **Let's Encrypt E1**
   * Subject: `O = Let's Encrypt, CN = E1`
   * Key type: `ECDSA P-384`
-  * Valid until: 2025-09-15
+  * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183283), [issued certs](https://crt.sh/?Identity=%25&iCAID=183283)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
 * **Let's Encrypt E2**
   * Subject: `O = Let's Encrypt, CN = E2`
   * Key type: `ECDSA P-384`
-  * Valid until: 2025-09-15
+  * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183284), [issued certs](https://crt.sh/?Identity=%25&iCAID=183284)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
 * **Let's Encrypt E5**
@@ -181,14 +181,14 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
 * **Let's Encrypt R3**
   * Subject: `O = Let's Encrypt, CN = R3`
   * Key type: `RSA 2048`
-  * Valid until: 2025-09-15
+  * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183267), [issued certs](https://crt.sh/?Identity=%25&iCAID=183267)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
 * **Let's Encrypt R4**
   * Subject: `O = Let's Encrypt, CN = R4`
   * Key type: `RSA 2048`
-  * Valid until: 2025-09-15
+  * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183268), [issued certs](https://crt.sh/?Identity=%25&iCAID=183268)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)

@@ -341,16 +341,16 @@ other = "Erfahre mehr über Sponsoring"
 other = "Hauptsponsoren und Spender"
 
 [sponsors_diamond]
-other = "Diamond-Sponsoren"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platin-Sponsoren"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Gold-Sponsoren"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Silber-Sponsoren"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "hier"
-

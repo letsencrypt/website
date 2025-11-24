@@ -341,16 +341,16 @@ other = "Sponsorluk hakkında daha fazlasını öğrenin"
 other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
 
 [sponsors_diamond]
-other = "Elmas Sponsorlar"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platinyum Sponsorlar"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Altın Sponsorlar"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Gümüş Sponsorlar"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,4 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "burada"
-
