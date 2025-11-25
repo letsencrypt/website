@@ -66,7 +66,7 @@ If you wish to modify a test-only client to trust the staging environment for te
   * Certificate details (cross-signed by Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der), [pem](/certs/staging/gen-y/root-ye-by-x2.pem), [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
 * **Yearning Yonder Yam Root YR**
   * Subject: `O = (STAGING) ISRG, CN = (STAGING) Yonder Yam Root YR`
-  * Key type: `ECDSA P-384`
+  * Key type: `RSA 4096`
   * Certificate details (self-signed): [der](/certs/staging/gen-y/root-yr.der), [pem](/certs/staging/gen-y/root-yr.pem), [txt](/certs/staging/gen-y/root-yr.txt)
   * Certificate details (cross-signed by Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der), [pem](/certs/staging/gen-y/root-yr-by-x1.pem), [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
 
