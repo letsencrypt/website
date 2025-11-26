@@ -2,11 +2,11 @@
 title: Vertrauensketten
 linkTitle: Vertrauensketten (Root und Zwischenzertifikate)
 slug: certificates
-lastmod: 2025-09-03
+lastmod: 2025-11-20
 show_lastmod: 1
 ---
 
-Diese Seite beschreibt alle aktuellen und relevanten historischen Zertifizierungsstellen, die von Let's Encrypt betrieben werden. Beachten Sie, dass eine CA am korrektsten als Schlüssel und Name gedacht ist: jede CA kann durch _Viel_ Zertifikate, die alle die gleichen Betreff und Public Key Information enthalten. In diesen Fällen haben wir die Details aller Zertifikate zur Verfügung gestellt, die die CA repräsentieren.
+Diese Seite beschreibt alle aktuellen und relevanten historischen Zertifizierungsstellen, die von Let's Encrypt betrieben werden. Beachten Sie, dass eine CA am korrektsten als Schlüssel und Name gedacht ist: jede CA kann durch _Viel_ Zertifikate, die alle die gleichen Betreff und Public Key Information enthalten. In diesen Fällen haben wir die Details aller Zertifikate zur Verfügung gestellt, die die CA repräsentieren. Wenn Sie die Trust Anker-IDs für diese CAs suchen, besuchen Sie unsere Seite auf [Objekt-Identifikatoren](/docs/oids).
 
 [![ISRG-Zertifikatshierarchiediagramm, Stand August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
 
@@ -31,7 +31,27 @@ Beachten Sie, dass Root CAs keine Verfallsdaten haben, so wie andere Zertifikate
   * CA Details: [crt.sh](https://crt.sh/?caid=183269), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183269)
   * Zertifikatsdetails (selbstsigniert): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Zertifikatsdetails (Quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
+  * Zertifikatsdetails (zweites quersigniertes von ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * Webseiten testen: [gültig](https://valid-isrgrootx2.letsencrypt.org/), [widerrufen](https://revoked-isrgrootx2.letsencrypt.org/), [abgelaufen](https://expired-isrgrootx2.letsencrypt.org/)
+
+Diese Root CAs sind noch nicht in Root Programme und Trust Stores enthalten, werden aber bald zur Aufnahme eingereicht:
+
+* **ISRG Root YE**
+  * Betreff: `O = ISRG, CN = Root YE`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Vertrauenswürdig bis: N/A (generiert 2025-09-03)
+  * CA Details: [crt.sh](https://crt.sh/?caid=430535), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=430535)
+  * Zertifikatsdetails (selbstsigniert): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
+  * Zertifikatsdetails (Quersigniert von ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
+  * Test-Webseiten: Bald verfügbar
+* **ISRG Root YR**
+  * Betreff: `O = ISRG, CN = Root YR`
+  * Schlüsseltyp: `RSA 4096`
+  * Vertrauenswürdig bis: N/A (generiert 2025-09-03)
+  * CA Details: [crt.sh](https://crt.sh/?caid=430543), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=430543)
+  * Zertifikatsdetails (selbstsigniert): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
+  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
+  * Test-Webseiten: Bald verfügbar
 
 Weitere Informationen zur Kompatibilität unserer Root-Zertifikate mit verschiedenen Geräten und TrustStores finden Sie unter [Zertifikatskompatibilität](/docs/cert-compat).
 
@@ -46,27 +66,27 @@ Alle Zwischenzertifikate haben ein Länderfeld von `C = US`.
   * Schlüsseltyp: `ECDSA P-384`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295813), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295813)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
-  * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132900), [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
+  * Zertifikatsdetails (quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132895), [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
 * **Let's Encrypt E8**
   * Betreff: `O = Let's Encrypt, CN = E8`
   * Schlüsseltyp: `ECDSA P-384`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295809), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295809)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
-  * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132890), [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
+  * Zertifikatsdetails (quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132901), [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
 * **Let's Encrypt R12**
   * Betreff: `O = Let's Encrypt, CN = R12`
   * Schlüsseltyp: `RSA 2048`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295816), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295816)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132898), [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
 * **Let's Encrypt R13**
   * Betreff: `O = Let's Encrypt, CN = R13`
   * Schlüsseltyp: `RSA 2048`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295817), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295817)
-  * Zertifikatsdetails (signiert durch ISRG Root X1): [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132902), [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
 
 Klicken Sie unten für Details zu weiteren Zwischenzertifikaten, die nicht Teil der aktiven Zertifikatsausstellung sind:
 
@@ -80,14 +100,58 @@ Diese Zwischenzertifikate besitzen derzeit gültige Zertifikate, werden aber nic
   * Schlüsseltyp: `ECDSA P-384`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295812), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295812)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
-  * Zertifikatsdetails (cross-signed von ISRG Root X1): [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+  * Zertifikatsdetails (quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
 * **Let's Encrypt R14**
   * Betreff: `O = Let's Encrypt, CN = R14`
   * Schlüsseltyp: `RSA 2048`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295818), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295818)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132903), [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
+
+</details>
+
+<details>
+<summary>Zukünftig</summary>
+
+Diese Zwischenzertifikate wurden 2025 ausgestellt und wir gehen davon aus, dass wir ab 2026 von ihnen Zertifikate ausstellen werden.
+
+* **Let's Encrypt YE1**
+  * Betrifft: `O = Let's Encrypt, CN = YE1`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=432952), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=432952)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * Betreff: `O = Let's Encrypt, CN = YE2`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=431054), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=431054)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
+* **Let's Encrypt YE3**
+  * Betreff: `O = Let's Encrypt, CN = YE3`
+  * Schlüsseltyp: `ECDSA P-384`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=432914), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=432914)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-ye3.der), [pem](/certs/gen-y/int-ye3.pem), [txt](/certs/gen-y/int-ye3.txt)
+* **Let's Encrypt YR1**
+  * Betreff: `O = Let's Encrypt, CN = YR1`
+  * Schlüsseltyp: `RSA 2048`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=432476), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=432476)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * Betreff: `O = Let's Encrypt, CN = YR2`
+  * Schlüsseltyp: `RSA 2048`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=432477), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=432477)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
+* **Let's Encrypt YR3**
+  * Betreff: `O = Let's Encrypt, CN = YR3`
+  * Schlüsseltyp: `RSA 2048`
+  * Gültig bis: 2028-09-02
+  * CA Details: [crt.sh](https://crt.sh/?caid=432480), [issued certs](https://crt.sh/?Identity=%25&iCAID=432480)
+  * Zertifikatsdetails: [der](/certs/gen-y/int-yr3.der), [pem](/certs/gen-y/int-yr3.pem), [txt](/certs/gen-y/int-yr3.txt)
 
 </details>
 
@@ -99,13 +163,13 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
 * **Let's Encrypt E1**
   * Betrifft: `O = Let's Encrypt, CN = E1`
   * Schlüsseltyp: `ECDSA P-384`
-  * Gültig bis: 2025-09-15
+  * Gültig bis: 2025-09-15 (abgelaufen)
   * CA Details: [crt.sh](https://crt.sh/?caid=183283), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183283)
   * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
 * **Let's Encrypt E2**
   * Betrifft: `O = Let's Encrypt, CN = E2`
   * Schlüsseltyp: `ECDSA P-384`
-  * Gültig bis: 2025-09-15
+  * Gültig bis: 2025-09-15 (abgelaufen)
   * CA Details: [crt.sh](https://crt.sh/?caid=183284), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183284)
   * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
 * **Let's Encrypt E5**
@@ -113,26 +177,26 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
   * Schlüsseltyp: `ECDSA P-384`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295810), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295810)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
-  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132891), [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
+  * Zertifikatsdetails (quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132892), [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
 * **Let's Encrypt E6**
   * Betreff: `O = Let's Encrypt, CN = E6`
   * Schlüsseltyp: `ECDSA P-384`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295819), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295819)
-  * Zertifikatsdetails (signiert von ISRG Root X2): [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
-  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132905), [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
+  * Zertifikatsdetails (quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132904), [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
 * **Let's Encrypt R3**
   * Betreff: `O = Let's Encrypt, CN = R3`
   * Schlüsseltyp: `RSA 2048`
-  * Gültig bis: 2025-09-15
+  * Gültig bis: 2025-09-15 (abgelaufen)
   * CA Details: [crt.sh](https://crt.sh/?caid=183267), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183267)
   * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
   * Zertifikatsdetails (Cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
 * **Let's Encrypt R4**
   * Betreff: `O = Let's Encrypt, CN = R4`
   * Schlüsseltyp: `RSA 2048`
-  * Gültig bis: 2025-09-15
+  * Gültig bis: 2025-09-15 (abgelaufen)
   * CA Details: [crt.sh](https://crt.sh/?caid=183268), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183268)
   * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Zertifikatsdetails (Cross-signed von IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
@@ -141,13 +205,13 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
   * Schlüsseltyp: `RSA 2048`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295814), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295814)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132896), [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
 * **Let's Encrypt R11**
   * Betreff: `O = Let's Encrypt, CN = R11`
   * Schlüsseltyp: `RSA 2048`
   * Gültig bis: 2027-03-12
   * CA Details: [crt.sh](https://crt.sh/?caid=295815), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=295815)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
+  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132897), [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
 * **Let's Encrypt Authority X1**
   * Betreff: `O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * Schlüsseltyp: `RSA 2048`
@@ -179,19 +243,6 @@ Diese Zwischenzertifikate werden nicht mehr verwendet, um Abonnentenzertifikate 
 
 </details>
 
-<details>
-<summary>Delegierter OCSP-Responder</summary>
-
-Dieses Schlüsselpaar wurde zuvor verwendet, um OCSP-Antworten bezüglich des Status der Zwischenzertifikate von Let's Encrypt im Namen der Root von Let's Encrypt zu signieren, damit die Root sicher offline bleiben konnte. Wir geben keine OCSP-Antworten mehr für unsere Zwischenzertifikate aus. Stattdessen geben wir regelmäßig CRLs von unserer Root aus, um den Widerrufsstatus unserer Zwischenzertifikate zu übermitteln.
-
-* **ISRG Root OCSP X1**
-  * Betrifft: `O = Internet Security Research Group, CN = ISRG Root OCSP X1`
-  * Schlüsseltyp: `RSA 2048`
-  * Gültig bis: 2025-06-10
-  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=2929281974), [der](/certs/isrg-root-ocsp-x1.der), [pem](/certs/isrg-root-ocsp-x1.pem), [txt](/certs/isrg-root-ocsp-x1.txt)
-  * Zertifikatsdetails (signiert von ISRG Root X1): [crt.sh](https://crt.sh/?id=142051103) (abgelaufen)
-
-</details>
 <p><!-- to get the right line spacing after a block element --></p>
 
 # Vertrauensketten
