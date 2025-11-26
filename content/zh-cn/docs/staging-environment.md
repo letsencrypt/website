@@ -1,8 +1,7 @@
 ---
 title: 测试环境
 slug: staging-environment
-date: 2018-01-05
-lastmod: 2025-05-12
+lastmod: 2025-11-25
 show_lastmod: 1
 ---
 
@@ -47,7 +46,7 @@ show_lastmod: 1
 
 ## 根证书颁发机构
 
-测试环境目前启用了两份根证书“(STAGING) Pretend Pear X1”和“(STAGING) Bogus Broccoli X2”，这两份根证书**没有收录**至各类浏览器和客户端的证书库中。
+测试环境目前启用了四份根证书：“(STAGING) Pretend Pear X1”、“(STAGING) Bogus Broccoli X2”、“(STAGING) Yearning Yucca Root YE”和“(STAGING) Yonder Yam Root YR”。这些根证书**没有收录**至各类浏览器和客户端的证书库中。
 
 如果您想在仅用作测试的客户端软件中信任测试环境的证书，可以将证书加入该客户端的证书库中。 **重要提示**：请勿将测试环境的根证书或中间证书加入您日常使用的证书库中，因为这些证书没有经过审计，安全标准也不及生产环境的根证书，用于测试以外的任何目的都是不安全的。
 
@@ -60,10 +59,20 @@ show_lastmod: 1
   * 密钥类型：`ECDSA P-384`
   * 证书详细信息（自签名版本）：[der](/certs/staging/letsencrypt-stg-root-x2.der)、[pem](/certs/staging/letsencrypt-stg-root-x2.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+* **Yearning Yucca Root YE**
+  * 证书主体：`O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
+  * 密钥类型：`ECDSA P-384`
+  * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-ye.der)、[pem](/certs/staging/gen-y/root-ye.pem)、[txt](/certs/staging/gen-y/root-ye.txt)
+  * 证书详细信息（Bogus Broccoli X2 交叉签名的版本）：[der](/certs/staging/gen-y/root-ye-by-x2.der)、[pem](/certs/staging/gen-y/root-ye-by-x2.pem)、[txt](/certs/staging/gen-y/root-ye-by-x2.txt)
+* **Yearning Yonder Yam Root YR**
+  * 证书主体：`O = ISRG, CN = (STAGING) Yonder Yam Root YR`
+  * 密钥类型：`RSA 4096`
+  * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-yr.der)、[pem](/certs/staging/gen-y/root-yr.pem)、[txt](/certs/staging/gen-y/root-yr.txt)
+  * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/gen-y/root-yr-by-x1.der)、[pem](/certs/staging/gen-y/root-yr-by-x1.pem)、[txt](/certs/staging/gen-y/root-yr-by-x1.txt)
 
 ## 中间证书颁发机构
 
-测试环境的中间证书与生产环境类似，但由上述的不可信根证书签发。 和生产环境一样，并非所有中间证书都会同时投入使用。 当前所有的中间证书如下：
+测试环境的中间证书与生产环境类似，但由上述的不可信根证书签发。 和生产环境一样，并非所有中间证书都会同时投入使用。 以下是现存的所有中间证书：
 
 * (STAGING) Pseudo Plum E5
 * (STAGING) False Fennel E6
@@ -75,6 +84,12 @@ show_lastmod: 1
 * (STAGING) Riddling Rhubarb R12
 * (STAGING) Tenuous Tomato R13
 * (STAGING) Not Nectarine R14
+* (STAGING) Artificial Amaranth YE1
+* (STAGING) Baloney Bulgur YE2
+* (STAGING) Cad Corn YE3
+* (STAGING) Dastardly Durum YR1
+* (STAGING) Ersatz Emmer YR2
+* (STAGING) Fake Farro YR3
 
 这些中间证书随时可能变更，任何系统都不应加以固定或信任。 一般而言，您可以认为测试环境的中间证书与生产环境中可信的中间证书一一对应。 如果确有必要，您还可以在[此处](https://github.com/letsencrypt/website/blob/main/static/certs/staging)获取详尽的证书信息。
 
