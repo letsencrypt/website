@@ -2,7 +2,7 @@
 title: Contact
 slug: contact
 description: How to contact us
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
