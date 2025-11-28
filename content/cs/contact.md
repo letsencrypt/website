@@ -2,7 +2,7 @@
 title: Kontakt
 slug: contact
 description: Jak nás kontaktovat
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**Neposkytujeme podporu prostřednictvím e-mailu. Pokud máte dotaz na podporu, použijte prosím naše [komunitní fóra](https://community.letsencrypt.org). Níže uvedené e-mailové adresy jsou pouze pro konkrétní popsaná témata.**
+## Nápověda a podpora
+
+**Neposkytujeme podporu prostřednictvím e-mailu.**
+
+Pokud potřebujete pomoc nebo máte dotaz na podporu, použijte prosím naše [komunitní fóra](https://community.letsencrypt.org).
+
+Níže uvedené e-mailové adresy jsou pouze pro konkrétní popsaná témata.
 
 ## Média
 
