@@ -151,7 +151,7 @@ other = "Početak perioda"
 [certificate_transparency_window_end]
 other = "Kraj perioda"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Izjava o certifikacijskim praksama"
 
 [overview]
