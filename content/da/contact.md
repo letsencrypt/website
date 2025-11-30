@@ -2,7 +2,7 @@
 title: Kontakt
 slug: contact
 description: Sådan kontakter du os
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**Vi yder ikke support via e-mail. Hvis du har et spørgsmål om support, så brug venligst vores [community fora](https://community.letsencrypt.org). Nedenstående e-mail-adresser er kun for de specifikke emner, der er angivet.**
+## Hjælp og support
+
+**Vi yder ikke support via e-mail.**
+
+Hvis du har et spørgsmål om support, så brug venligst vores [community fora](https://community.letsencrypt.org).
+
+Nedenstående e-mail-adresser er kun for de specifikke emner, der er angivet.
 
 ## Pressehenvendelser
 
