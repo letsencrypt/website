@@ -1,8 +1,7 @@
 ---
 title: Stagning Miljø
 slug: staging-environment
-date: 2018-01-05
-lastmod: 2025-05-12
+lastmod: 2025-11-25
 show_lastmod: 1
 ---
 
@@ -47,7 +46,7 @@ Staging miljøet har et certifikathierarki, der [efterligner produktion](/certif
 
 ## Root CAs
 
-Staging miljøet har to aktive rodcertifikater, som **ikke er til stede** i browser/klient trust stores: "(STAGING) Pretend Pear X1" og "(STAGING) Bogus Broccoli X2".
+Staging miljøet har fire aktive root certifikater, som er **ikke er til stede** i browser/klient trust butikker: "(STAGING) Pretend Pear X1", "(STAGING) Bogus Broccoli X2", "(STAGING) Yearning Yucca Root YE" og "(STAGING) Yonder Yam Root YR".
 
 Hvis du ønsker at ændre en "kun test"-klient til at stole på staging til testformål, kan du gøre det ved at tilføje deres certifikater til din test trust butik. **Vigtigt**: Du må ikke tilføje staging rod-certifikatet eller intermediates til en trust store, som du bruger til almindelig browsing eller andre aktiviteter, da de ikke revideres eller holdes i overensstemmelse med de samme standarder som vores Root certifikater, og det er ikke sikkert at bruge til andet end test.
 
@@ -60,6 +59,16 @@ Hvis du ønsker at ændre en "kun test"-klient til at stole på staging til test
   * Nøgletype: `ECDSA P-384`
   * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/letsencrypt-stg-root-x2.der) [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * Certifikat deltaljer (krydsunderskrevet af Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+* **Yearning Yucca Root YE**
+  * Emne: `O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
+  * Nøgletype: `ECDSA P-384`
+  * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/gen-y/root-ye.der) [pem](/certs/staging/gen-y/root-ye.pem), [txt](/certs/staging/gen-y/root-ye.txt)
+  * Certifikatdetaljer (kryds underskrevet af Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der), [pem](/certs/staging/gen-y/root-ye-by-x2.pem), [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
+* **Yearning Yonder Yam Root YR**
+  * Emne: `O = ISRG, CN = (STAGING) Yonder Yam Root YR`
+  * Nøgletype: `RSA 4096`
+  * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/gen-y/root-yr.der) [pem](/certs/staging/gen-y/root-yr.pem), [txt](/certs/staging/gen-y/root-yr.txt)
+  * Certifikat deltaljer (krydsunderskrevet af Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der), [pem](/certs/staging/gen-y/root-yr-by-x1.pem), [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
 
 ## Underordnede (CA'er)
 
@@ -75,6 +84,12 @@ Staging miljøet har mellemliggende certifikater, der efterligner produktion, ud
 * (STAGING) Riddling Rhubarb R12
 * (STAGING) Tenuous Tomato R13
 * (STAGING) Not Nectarine R14
+* (STAGING) Artificial Amaranth YE1
+* (STAGING) Baloney Bulgur YE2
+* (STAGING) Cad Corn YE3
+* (STAGING) Dastardly Durum YR1
+* (STAGING) Ersatz Emmer YR2
+* (STAGING) Fake Farro YR3
 
 Disse mellemliggende certifikater er under forandring når som helst, og bør ikke være fastgjort eller betroet af noget system. Generelt kan du forvente mellemliggende certifikater sin er parallelle de tilsvarende produktion (betroet) mellemliggende certifikater. Hvis strengt nødvendigt, kan du få fulde certifikat detaljer [her](https://github.com/letsencrypt/website/blob/main/static/certs/staging).
 
