@@ -341,16 +341,16 @@ other = "Lær om Sponsorater"
 other = "Store sponsorer og finansieringskilder"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Diamant Niveau"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Platin Niveau"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Guld Niveau"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Sølv Niveau"
 
 [common_read_more_arrow]
 other = " →"
