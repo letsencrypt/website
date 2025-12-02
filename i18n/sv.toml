@@ -11,7 +11,7 @@ other = "Donera"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
+other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Största sponsorer och bidragsgivare"
@@ -251,7 +251,7 @@ other = "Kom igång"
 other = "Explore our work to improve security and privacy"
 
 [home_hero_annual_report_description]
-other = "Our 2024 Annual Report highlights the progress we've made toward a better Internet."
+other = "Our 2025 Annual Report highlights the progress we've made toward a better Internet."
 
 [home_hero_annual_report_button]
 other = "Read the Annual Report"
