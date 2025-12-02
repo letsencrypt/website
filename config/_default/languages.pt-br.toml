@@ -7,7 +7,7 @@ weight = 500
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt é uma autoridade certificadora gratuita e automatizada trazida para você pelo grupo beneficente <a href="https://www.abetterinternet.org/">Grupo de Pesquisa em Segurança da Internet (ISRG)</a>. Leia sobre nosso trabalho beneficente deste ano em nosso <a href="https://www.abetterinternet.org/annual-reports/">Relatório Anual 2024</a>.
+Let's Encrypt é uma autoridade certificadora gratuita e automatizada trazida para você pelo grupo beneficente <a href="https://www.abetterinternet.org/">Grupo de Pesquisa em Segurança da Internet (ISRG)</a>. Leia sobre nosso trabalho beneficente deste ano em nosso <a href="https://www.abetterinternet.org/annual-reports/">Relatório Anual 2025</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "BR"

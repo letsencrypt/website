@@ -2,7 +2,7 @@
 title: 联系我们
 slug: contact
 description: 如何联系我们
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**我们不通过电子邮件提供支持服务。 如果您遇到问题需要帮助，请前往我们的[社群论坛](https://community.letsencrypt.org)。 以下邮箱仅用于描述中注明的特定用途。**
+## 帮助与支持
+
+**我们不通过电子邮件提供支持服务。**
+
+如果您在使用过程中遇到问题或需要帮助，请前往我们的[社群论坛](https://community.letsencrypt.org)。
+
+以下各邮箱仅用于所述的特定用途。
 
 ## 新闻咨询
 

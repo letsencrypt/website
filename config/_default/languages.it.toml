@@ -8,7 +8,7 @@ weight = 375
 beforeColon = ""
 description = """
 Let's Encrypt è un'autorità di certificazione gratuita, automatica
- ed open source messa a disposizione dall'organizzazione non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Leggi tutto sul nostro lavoro non-profit di quest'anno nel nostro <a href="https://www.abetterinternet.org/annual-reports/">Rapporto annuale 2024</a>.
+ ed open source messa a disposizione dall'organizzazione non-profit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Leggi tutto sul nostro lavoro non-profit di quest'anno nel nostro <a href="https://www.abetterinternet.org/annual-reports/">Rapporto annuale 2025</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "IT"
