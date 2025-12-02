@@ -1,13 +1,14 @@
-title = "Let's Encrypt - 免費的 SSL/TLS 憑證"
-languageName = "繁體中文"
+title = "Let's Encrypt"
 contentDir = "content/zh-tw"
+languageName = "繁體中文"
 languageCode = "zh-Hant-TW"
 weight = 950
+
 [params]
 beforeColon = ""
 description = """
-  Let's Encrypt 是免費、自動化和開放的憑證頒發機構，由非營利組織<a href="https://www.abetterinternet.org/">網路安全研究小組 (Internet Security Research Group, ISRG)</a> 營運。
-  """
+Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Read all about our nonprofit work this year in our <a href="https://www.abetterinternet.org/annual-reports/">2025 Annual Report</a>.
+"""
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|,"
