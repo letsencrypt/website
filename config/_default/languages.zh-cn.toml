@@ -6,7 +6,9 @@ weight = 900
 
 [params]
 beforeColon = ""
-description = "Let's Encrypt 是一家免费、开放、自动化的证书颁发机构，由非营利组织<a href=\"https://www.abetterinternet.org/\">互联网安全研究组</a> (ISRG) 运作。我们这一年来的非营利工作详情可在 <a href=\"https://www.abetterinternet.org/annual-reports/\">2024 年度报告</a>中查阅。"
+description = """
+Let's Encrypt 是一家免费、开放、自动化的证书颁发机构，由非营利组织<a href="https://www.abetterinternet.org/">互联网安全研究组</a> (ISRG) 运作。我们这一年来的非营利工作详情可在 <a href="https://www.abetterinternet.org/annual-reports/">2025 年度报告</a>中查阅。
+"""
 paypalDonateImage = "https://www.paypalobjects.com/zh_CN/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|.|"

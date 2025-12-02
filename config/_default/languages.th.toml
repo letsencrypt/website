@@ -1,28 +1,15 @@
-title = "Let's Encrypt"
+title = "เล็ท'ส เอ็นคริปต์"
 contentDir = "content/th"
 languageName = "Thai"
 languageCode = "th"
 weight = 700
 
 [params]
-
-#if colon ":" must be prefixed with a space : "&nbsp;" (example in [fr])
 beforeColon = ""
-
 description = """
-  Let's Encrypt is a free, automated, and open certificate
-  authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>.
+Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Read all about our nonprofit work this year in our <a href="https://www.abetterinternet.org/annual-reports/">2025 Annual Report</a>.
 """
-
-# PayPal image url from https://www.paypal.com/donate/buttons/unhosted
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-
-# A country where PayPal has support for the language must be chosen. Click a Donate button and modify the GET parameters "country.x" and "locale.x" to find what is supported.
 paypalCountry = "US"
-
-# Number format : <negative>|<decimal>|<grouping>
-# Ex. for -1 2345.67 -> "-|.| "
-# Doc: https://gohugo.io/functions/numfmt/
 numberFormat = "-|.|,"
-
-viewInThatLanguage = "View in Thai"
+viewInThatLanguage = "แสดงเป็นภาษาอังกฤษ"
