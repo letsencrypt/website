@@ -1,7 +1,7 @@
 ---
 title: Challenge Types
 slug: challenge-types
-lastmod: 2025-01-07
+lastmod: 2025-12-03
 show_lastmod: 1
 ---
 
@@ -29,7 +29,7 @@ you’ll have to try again with a new certificate.
 
 Our implementation of the HTTP-01 challenge follows redirects, up to 10
 redirects deep. It only accepts redirects to “http:” or “https:”,
-and only to ports 80 or 443. It does not accept redirects to IP addresses. When
+and only to ports 80 or 443. When
 redirected to an HTTPS URL, it does not validate certificates (since this
 challenge is intended to bootstrap valid certificates, it may encounter
 self-signed or expired certificates along the way).
