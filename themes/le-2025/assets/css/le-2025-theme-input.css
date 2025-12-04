@@ -58,6 +58,9 @@
 @utility btn-outline-white {
   @apply btn border-2 border-white text-white hover:bg-white/20 active:bg-white/30;
 }
+@utility btn-outline-white-invert {
+  @apply btn border-2 border-white text-white hover:bg-white hover:text-le-blue active:bg-white/90 hover:no-underline focus:no-underline;
+}
 @utility btn-outline-blue {
   @apply btn border-2 border-le-blue text-le-blue hover:bg-le-blue/20 active:bg-le-blue/30;
 }
