@@ -341,16 +341,16 @@ other = "후원에 대해 알아보세요"
 other = "주요 스폰서 및 후원자"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "다이몬드 레벨"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "플래티넘 레벨"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "골드 레벨"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "실버 레벨"
 
 [common_read_more_arrow]
 other = " →"
