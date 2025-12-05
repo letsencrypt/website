@@ -1,8 +1,7 @@
 ---
 title: סביבת הכנה להקמה
 slug: staging-environment
-date: 2018-01-05
-lastmod: 2025-05-12
+lastmod: 2025-11-25
 show_lastmod: 1
 ---
 
@@ -47,7 +46,7 @@ show_lastmod: 1
 
 ## רשויות אישורים עליונות
 
-לסביבת ההכנה להקמה יש שני אישורי על פעילים ש**אינם נמצאים** במאגר המהימנות של הדפדפן/לקוח: „(STAGING) Pretend Pear X1” ו־„(STAGING) Bogus Broccoli X2”.
+לסביבת ההכנה להקמה יש ארבעה אישורי על ש**אינם קיימים** במאגר האמון של הדפדפנים/לקוחות: „‎(STAGING) Pretend Pear X1”,‏ „‎(STAGING) Bogus Broccoli X2”,‏ „‎(STAGING) Yearning Yucca Root YE”, ו־„‎(STAGING) Yonder Yam Root YR”.
 
 כדי לשנות לקוח לבדיקות בלבד כך שיסמוך על סביבת ההכנה להקמה למטרות בדיקה, ניתן לעשות זאת על ידי הוספת האישורים שלהם למאגר המהימנים שלך למטרות בדיקה. **חשוב:** אין להוסיף את האישור העליון או המתווך של סביבת ההכנה להקמה למאגר המהימנות שמשמש אותך לגלישה רגילה באינטרנט או לפעילויות אחרות מאחר שאין עליהן פיקוח או עומדות באותם תקנים מחמירים כמו האישורים העליונים של סביבת הפעילות המלאה שלנו ולכן אינם בטוחים לשימוש לאף מטרה למעט בדיקות.
 
@@ -60,6 +59,16 @@ show_lastmod: 1
   * סוג מפתח: `ECDSA P-384`
   * פרטי אישור (חתימה עצמית): [der](/certs/staging/letsencrypt-stg-root-x2.der),‏ [pem](/certs/staging/letsencrypt-stg-root-x2.pem),‏ [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * פרטי אישור (חתימה צולבת על ידי Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der),‏ [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem),‏ [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+* **Yearning Yucca Root YE**
+  * נושא: `O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
+  * סוג מפתח: `ECDSA P-384`
+  * פרטי אישור (חתימה עצמית): [der](/certs/staging/gen-y/root-ye.der),‏ [pem](/certs/staging/gen-y/root-ye.pem),‏ [txt](/certs/staging/gen-y/root-ye.txt)
+  * פרטי האישור (חתימה צולבת על ידי Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der),‏ [pem](/certs/staging/gen-y/root-ye-by-x2.pem),‏ [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
+* **Yearning Yonder Yam Root YR**
+  * נושא: `O = ISRG, CN = (STAGING) Yonder Yam Root YR`
+  * סוג מפתח: `RSA 4096`
+  * פרטי אישור (חתימה עצמית): [der](/certs/staging/gen-y/root-yr.der),‏ [pem](/certs/staging/gen-y/root-yr.pem),‏ [txt](/certs/staging/gen-y/root-yr.txt)
+  * פרטי אישור (חתימה צולבת על ידי Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der),‏ [pem](/certs/staging/gen-y/root-yr-by-x1.pem),‏ [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
 
 ## רשויות אישורים כפופות (ביניים)
 
@@ -75,6 +84,12 @@ show_lastmod: 1
 * (STAGING) Riddling Rhubarb R12
 * (STAGING) Tenuous Tomato R13
 * (STAGING) Not Nectarine R14
+* (STAGING) Artificial Amaranth YE1
+* (STAGING) Baloney Bulgur YE2
+* (STAGING) Cad Corn YE3
+* (STAGING) Dastardly Durum YR1
+* (STAGING) Ersatz Emmer YR2
+* (STAGING) Fake Farro YR3
 
 אישורי הביניים האלה נתונים לשינוי בכל רגע נתון ושום מערכת לא אמורה להצמיד או לתת בהם אמון. באופן כללי, אפשר לצפות מאישורי הביניים להיות מקבילים לאישורי הביניים התואמים (אמינים) בסביבה המבצעית. במקרה הצורך, אפשר לקבל [כאן](https://github.com/letsencrypt/website/blob/main/static/certs/staging) את פרטי האישור המלאים.
 
