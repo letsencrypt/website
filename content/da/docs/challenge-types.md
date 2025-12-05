@@ -1,7 +1,7 @@
 ---
 title: Udfordringstyper
 slug: challenge-types
-lastmod: 2025-01-07
+lastmod: 2025-12-03
 show_lastmod: 1
 ---
 
@@ -12,7 +12,7 @@ Når du får et certifikat fra Let's Encrypt, bekræfter vores servere, at du ko
 
 Det er den mest almindelige challenge type i dag. Let's Encrypt giver en token til din ACME-klient, og din ACME-klient placerer en fil på din web -server på `http://<YOUR_DOMAIN>/. ell-known/acme-challenge/<TOKEN>`. At filen indeholder token, plus et fingeraftryk af din kontonøgle. Når din ACME-klient fortæller Let's Encrypt, at filen er klar, forsøger Let's Encrypt at hente det (potentielt flere gange fra flere kaldspunkter). Hvis vores valideringstjek får det rigtige svar fra din webserver, valideringen betragtes som vellykket, og du kan gå videre og udstede dit certifikat. Hvis valideringskontrollen mislykkes, skal du prøve igen med et nyt certifikat.
 
-Vores implementering af HTTP-01 udfordring følger omdirigeringer, op til 10 redirects dyb. Den accepterer kun omdirigeringer til “http:” eller “https:”, og kun til port 80 eller 443. Det accepterer ikke redirects til IP-adresser. Når redirectet sker til en HTTPS-URL, validerer den ikke certifikater (da denne challenge er beregnet til at starte gyldige certifikater, det kan støde på selvsignerede eller udløbne certifikater undervejs).
+Vores implementering af HTTP-01 udfordring følger omdirigeringer, op til 10 redirects dyb. Den accepterer kun omdirigeringer til “http:” eller “https:”, og kun til port 80 eller 443. Når redirectet sker til en HTTPS-URL, validerer den ikke certifikater (da denne challenge er beregnet til at starte gyldige certifikater, det kan støde på selvsignerede eller udløbne certifikater undervejs).
 
 HTTP-01 udfordring kan kun gøres på port 80. At tillade kunder at angive vilkårlige havne vil gøre udfordringen mindre sikker, og derfor er det ikke tilladt af ACME-standarden.
 
