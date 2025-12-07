@@ -27,8 +27,10 @@ Permissions-Policy = """
 # "img-src data: blob:" is for Plotly download feature
 # "script-src unsafe-eval unsafe-inline data:": For Google Analytics
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
+# "frame-ancestors" is a modern equivalent and successor to the X-Frame-Options header
 Content-Security-Policy = """
     default-src 'none';
+    frame-ancestors 'none';
     font-src 'self';
     style-src 'unsafe-inline' 'self';
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
