@@ -363,6 +363,11 @@
       "name": "Okta",
       "url": "https://www.okta.com/",
       "image": "okta-logo.png"
+    },
+    {
+      "name": "Replit",
+      "url": "https://replit.com/",
+      "image": "replit-logo.svg"
     }
   ]
 }
