@@ -65,17 +65,22 @@ Information about the various lifecycle states that a CT log progresses through 
 
 <h3>Sunlight</h3>
 <p>
-  Let's Encrypt is transitioning to operating logs based on <a href="https://sunlight.dev">Sunlight</a>.
+  Let's Encrypt currently operates <a href="https://c2sp.org/static-ct-api">static-ct</a> logs based on
+  <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
   Information including accepted roots, public keys, log IDs, and shard intervals are available at each log's
   landing page, linked below.
 </p>
-<p>Sycamore and Willow are our new production CT logs, accepting certificates from trusted CAs.</p>
+<p>Sycamore and Willow are our production CT logs, accepting certificates from trusted CAs.</p>
 <ul>
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>Twig is a test log, accepting certificates from trusted CAs as well as some additional test CAs, including the Let's
-  Encrypt staging environment.</p>
+<p>
+  Twig is a test log, accepting certificates from trusted CAs as well as some additional test CAs, including the Let's
+  Encrypt staging environment.
+</p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
