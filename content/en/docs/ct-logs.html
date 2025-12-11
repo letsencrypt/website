@@ -86,43 +86,18 @@ Information about the various lifecycle states that a CT log progresses through 
 </ul>
 
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak is incorporated into the
-  <a href="https://support.apple.com/en-us/HT209255">Apple</a> and
-  <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
-  >
-  CT programs.
-</li>
-<li>Our production ACME API environment submits certificates here.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  SCTs from these logs <b>SHOULD NOT</b> be incorporated into publicly trusted
-  certificates.
-</li>
-<li>
-  The Let's Encrypt production and
-  <a href="/docs/staging-environment">staging</a> ACME API environments both
-  submit certificates to Sapling, but the production environment does not use
-  the resulting SCTs.
-</li>
-<li>
-  We test new versions of
-  <a href="http://github.com/google/trillian">Trillian</a> and
-  <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
-  >
-  here before deploying them to production.
-</li>
-<li>
-  Sapling's accepted roots list includes all of the Oak accepted roots, plus
-  additional test roots.
-</li>
-<li>
-  Sapling can be used by other certificate authorities for testing purposes.
-</li>
-{{< /ct_logs >}}
+<h3>RFC 6962 Logs EOL</h3>
+<p>
+  Let's Encrypt formerly ran a log based on Trillian, implementing the RFC 6962 API. It is currently available
+  read-only, and will be shut down in February 2026. For more information, see the
+  <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">
+    end of life plan for our RFC 6962 Certificate Transparency logs
+  </a>. URLs and log keys can be found in Google and Apple's CT log lists, if required.
+  The old production log was called Oak.
+</p>
+<p>
+  We also ran test logs called Testflume and Sapling, which are no longer
+</p>
 
 <h2>Log Operations</h2>
 <p>
