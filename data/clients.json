@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2025-11-24",
 	"categories": [
 		"Bash",
 		"C",
@@ -918,6 +918,28 @@
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			}
+		},
+		{
+			"name": "MaksIT CertsUI",
+			"url": "https://github.com/MAKS-IT-COM/maksit-certs-ui",
+			"category": "Docker",
+			"comments": "ACMEv2 client with WebAPI, WebUI and Agent for automated certificate management.",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false"
+			},
+			"last_commit": 1764004202
+		},
+		{
+			"name": "MaksIT CertsUI",
+			"url": "https://github.com/MAKS-IT-COM/maksit-certs-ui",
+			"category": "Kubernetes",
+			"comments": "ACMEv2 client for Kubernetes with WebAPI, WebUI and Agent for automated certificate management.",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false"
+			},
+			"last_commit": 1764004202
 		}
 	]
 }
