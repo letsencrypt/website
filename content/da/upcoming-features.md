@@ -1,7 +1,7 @@
 ---
 title: Kommende Funktioner
 slug: upcoming-features
-lastmod: 2025-07-31
+lastmod: 2025-12-12
 show_lastmod: 1
 ---
 
@@ -20,6 +20,10 @@ Omkring slutningen af 2025, Vi har til hensigt at tillade enhver klient, der anm
 ## Fjernelse af TLS Client Authentication EKU
 
 11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Før denne dato vil vi tilbyde en alternativ profil, som stadig vil indeholde den EKU men bemærk, at dette vil være en midlertidig stop-gap for kunder, der har brug for mere tid til at migrere væk fra at have brug for det: at alternativ profil vil gå væk den 13. maj, 2026.
+
+## Reduceret certifikatet levetider til 45 dage
+
+For at overholde CA/Browser Forum Baseline Krav ændringer, ændrer vi [certifikaters livstider til 45 dage](https://letsencrypt.org/2025/12/02/from-90-to-45). Vi vil først reducere til 64 dage den 10. februar 2027, og derefter til 45 dage den 16. februar 2028. Vi reducerer også tilladelsen genbrug periode til 10 dage, derefter 7 timer.
 
 # Fuldførte Funktioner
 
@@ -43,10 +47,10 @@ Kunder, der understøtter [udkast til ACME-profiler forlængelse](https://www.ie
 
 Aktiveret: [14. Maj 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
 
-Vi driver nu Certificate Transparency (CT) logs, som er i overensstemmelse med den nye [Static CT API Spec](https://c2sp.org/static-ct-api), kører [Sunlight](https://github.com/FiloSottile/sunlight) software. Nu, hvor forskellige CT log programmer har opdateret deres politikker til at acceptere denne nye form for log, vi agter at indsende vores logs til optagelse i disse programmer snart.
+Vi driver nu Certificate Transparency (CT) logs, som er i overensstemmelse med den nye [Static CT API Spec](https://c2sp.org/static-ct-api), kører [Sunlight](https://github.com/FiloSottile/sunlight) software. Disse logs er nu brugbare til at opfylde browserens CT-krav. [CT Logs Documentation](https://letsencrypt.org/docs/ct-logs/) har en liste over vores nuværende logs.
 
 ## ACME Fornyelsesinformation (ARI)
 
 Aktiveret: [23. Maj 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
-Vi leverer nu foreslåede fornyelsesvinduer til alle udstedte certifikater, som kunder kan forespørge ved hjælp af [ACME ARI udvidelse](https://www.ietf.org/archive/id/draft-ietf-acme-ari-08.html).
+Vi leverer nu foreslåede fornyelsesvinduer til alle udstedte certifikater, som kunder kan forespørge ved hjælp af [ACME ARI udvidelse](https://www.rfc-editor.org/rfc/rfc9773.html).
