@@ -1,21 +1,13 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2025-12-12
+lastmod: 2025-12-17
 show_lastmod: 1
 ---
 
 For announcements of upcoming changes, please [subscribe to the Technical Updates mailing list](https://letsencrypt.org/opt-in/) or see the [API Announcements category](https://community.letsencrypt.org/c/api-announcements/18) on the Let's Encrypt community forum.
 
 # Upcoming Features
-
-## Short-lived Certificates
-
-Around the end of 2025, we intend to allow any client which supports ACME Profiles (see below) to [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all. 
-
-## IP Address Certificates
-
-Around the end of 2025, we intend to allow any client which requests a shortlived certificate (see above) to also request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
 
 ## Removal of TLS Client Authentication EKU
 
@@ -55,3 +47,12 @@ We now operate Certificate Transparency (CT) logs which conform to the new [Stat
 Enabled: [March 23, 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
 We now provide suggested renewal windows for all issued certificates, which clients can query using the [ACME ARI extension](https://www.rfc-editor.org/rfc/rfc9773.html).
+
+## Short-lived Certificates
+
+Client may [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) using ACME Profiles. These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all.
+
+## IP Address Certificates
+
+Shortlived certificates (see above) can request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
+
