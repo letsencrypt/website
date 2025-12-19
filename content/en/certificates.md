@@ -68,7 +68,7 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295813), [issued certs](https://crt.sh/?Identity=%25&iCAID=295813)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132900), [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132895), [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
-  * Revocation details (sharded CRL): <details><summary>crl</summary>{{< crl issuer="e7" count="128" >}}</details>
+  <details><summary>Revocation details (sharded CRL)</summary>{{< crl issuer="e7" count="128" >}}</details>
 * **Let's Encrypt E8**
   * Subject: `O = Let's Encrypt, CN = E8`
   * Key type: `ECDSA P-384`
