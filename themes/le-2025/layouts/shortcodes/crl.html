@@ -1,0 +1,7 @@
+{{ $issuer := .Get "issuer" }}
+
+{{ range seq 128 }}
+<tr>
+    <td><a href="http://{{ $issuer }}.c.lencr.org/{{ . }}.crl">CRL {{ . }}</a></td>
+</tr>
+{{ end }}
