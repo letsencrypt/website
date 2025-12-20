@@ -16,6 +16,7 @@ show_lastmod: 1
 - [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 - [TrackSSL](https://trackssl.com/)
 - [Host-Tracker](https://www.host-tracker.com/)
+- [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (סקריפטים באירוח עצמי)
 - [CertKit](https://www.certkit.io/)
 
 נא לשים לב שכל השירותים האלה אינם קשורים ל־ISRG / Let's Encrypt.

@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2025-09-23
+lastmod: 2025-12-19
 show_lastmod: false
 ---
 
@@ -71,7 +71,7 @@ Det udstedte certifikat indeholder ikke længere nogen af de felter, der er næv
 
 Den kortlivede profil er identisk med tlsserver profil, med en hoved forskel, det resulterende certifikat er kun gyldigt i 6 dage. Dette gør det muligt for disse certifikater at kvalificere sig som "Kortlevende Abonnementscertifikater" i henhold til basiskravene, hvilket betyder, at de ikke behøver at indeholde tilbagekaldelsesoplysninger. Det betyder, at certifikaterne kan være endnu mindre, og fjerner enhver mulighed for, at en klient ved et uheld stoler på et certifikat, efter at det er blevet tilbagekaldt.
 
-Vi anbefaler denne profil for dem, der fuldt ud stoler på deres automatisering til at forny deres certifikater til tiden. Denne profil er ikke for alle. Fordi denne profil resulterer i meget højere udstedelsesvolumen (da certifikater skal fornyes hvert par dage, i stedet for hvert par måneder), er det i øjeblikket låst bag en tilladelse.
+Vi anbefaler denne profil for dem, der fuldt ud stoler på deres automatisering til at forny deres certifikater til tiden. Denne profil er ikke for alle.
 
 | Egenskaber                                                           | Værdi     |
 | -------------------------------------------------------------------- | --------- |
