@@ -1,21 +1,13 @@
 ---
 title: Připravované funkce
 slug: upcoming-features
-lastmod: 2025-12-12
+lastmod: 2025-12-17
 show_lastmod: 1
 ---
 
 Oznámení o nadcházejících změnách najdete [v mailing listu Technické aktualizace](https://letsencrypt.org/opt-in/) nebo v kategorii [Oznámení API](https://community.letsencrypt.org/c/api-announcements/18) na komunitním fóru Let's Encrypt.
 
 # Připravované funkce
-
-## Krátkodobé certifikáty
-
-Kolem konce roku 2025 hodláme umožnit všem klientům, kteří podporují profily ACME (viz níže), [požádat o „krátkodobý“ certifikát](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Tyto certifikáty jsou platné po tak krátkou dobu, že není vůbec nutné, aby obsahovaly informace o zrušení.
-
-## Certifikáty IP adresy
-
-Kolem konce roku 2025 hodláme umožnit všem klientům, kteří požádají o krátkodobý certifikát (viz výše), aby mohli také požádat o to, aby certifikát [obsahoval IP adresy](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) v alternativních názvech subjektu. Tyto adresy budou [ověřovány podobným způsobem jako dnes DNS jména](https://www.rfc-editor.org/rfc/rfc8738.html).
 
 ## Odstranění EKU ověřování klienta TLS
 
@@ -54,3 +46,12 @@ Nyní provozujeme protokoly Certificate Transparency (CT), které odpovídají n
 Spuštěno: [23. března 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
 Nyní poskytujeme doporučené termíny pro obnovení všech vydaných certifikátů, které mohou klienti vyhledat pomocí [rozšíření ACME ARI](https://www.rfc-editor.org/rfc/rfc9773.html).
+
+## Krátkodobé certifikáty
+
+Klient může [požádat o „krátkodobý“ (shortlived) certifikát](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) pomocí profilů ACME. Tyto certifikáty jsou platné po tak krátkou dobu, že není vůbec nutné, aby obsahovaly informace o zrušení.
+
+## Certifikáty IP adresy
+
+Krátkodobé certifikáty (viz výše) mohou požadovat, aby certifikát [obsahoval IP adresy](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) ve svých alternativních názvech subjektu (SAN). Tyto adresy budou [ověřovány podobným způsobem jako dnes DNS jména](https://www.rfc-editor.org/rfc/rfc8738.html).
+
