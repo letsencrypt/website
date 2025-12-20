@@ -1,21 +1,13 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-lastmod: 2025-12-12
+lastmod: 2025-12-17
 show_lastmod: 1
 ---
 
 如需及时获取未来的功能更新公告，请[订阅 Technical Updates 邮件通知](https://letsencrypt.org/opt-in/)，或关注 Let's Encrypt 社群论坛的 [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) 分类。
 
 # 即将推出的功能
-
-## 短期证书
-
-我们计划于 2025 年末对所有支持 ACME 证书配置（见下）的客户端开放[“短期”证书的申请](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)。 此类证书的有效期极短，因此不需要包含任何吊销相关的信息（如 OCSP，见下）。
-
-## IP 地址证书
-
-我们计划于 2025 年末允许所有申请短期证书（见上）的客户端在其主体备用名称中[包含 IP 地址](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)， 其[验证方式](https://www.rfc-editor.org/rfc/rfc8738.html)与当下 DNS 域名的验证方式大体相同。
 
 ## 移除“TLS 客户端身份验证”扩展密钥用途
 
@@ -54,3 +46,12 @@ show_lastmod: 1
 上线日期：[2023 年 3 月 23 日](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/)。
 
 我们现已为签发的所有证书提供推荐的续期时间窗口，客户端可以通过 [ACME ARI 扩展](https://www.rfc-editor.org/rfc/rfc9773.html)查询。
+
+## 短期证书
+
+用户可以通过更改 ACME 配置[申请“短期”证书](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)。 此类证书的有效期极短，因此不需要包含任何吊销相关的信息。
+
+## IP 地址证书
+
+申请短期证书（见上）时可以在主体备用名称中[包含 IP 地址](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)。 其[验证方式](https://www.rfc-editor.org/rfc/rfc8738.html)与当下 DNS 域名的验证方式大体相同。
+
