@@ -11,7 +11,7 @@ other = "Donera"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
+other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Största sponsorer och bidragsgivare"
@@ -32,7 +32,7 @@ other = "Support a more secure and privacy-respecting Web."
 other = "Donera nu"
 
 [footer_mailing]
-other = "Send all mail or inquiries to:"
+other = "Skicka alla mail eller förfrågningar till:"
 
 [footer_legal_address]
 other = "Legal Address"
@@ -212,13 +212,13 @@ other = "Internet Security Research Group"
 other = "Donera nu"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "Växla meny"
 
 [isrg_legal_address_label]
 other = "Legal Address"
 
 [isrg_mailing_label]
-other = "Send all mail or inquiries to:"
+other = "Skicka alla mail eller förfrågningar till:"
 
 [newsletter_subscribe_heading]
 other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
@@ -251,7 +251,7 @@ other = "Kom igång"
 other = "Explore our work to improve security and privacy"
 
 [home_hero_annual_report_description]
-other = "Our 2024 Annual Report highlights the progress we've made toward a better Internet."
+other = "Our 2025 Annual Report highlights the progress we've made toward a better Internet."
 
 [home_hero_annual_report_button]
 other = "Read the Annual Report"
@@ -341,16 +341,16 @@ other = "Läs mer om sponsring"
 other = "Största sponsorer och bidragsgivare"
 
 [sponsors_diamond]
-other = "Diamond Sponsors"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platinum Sponsors"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Guldsponsorer"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Silversponsorer"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,24 +528,3 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "här"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "JOIN TIMMY. BE A NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy, a supporter of Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
-
-[testimonial_section_footer_line3]
-other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."

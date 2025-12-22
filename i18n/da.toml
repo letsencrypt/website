@@ -11,7 +11,7 @@ other = "Donér"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abetterinternet.org/annual-reports/'>2024 årsberetning</a>."
+other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abetterinternet.org/annual-reports/'>2025 årsberetning</a>."
 
 [home_major_sponsors]
 other = "Store sponsorer og finansieringskilder"
@@ -251,7 +251,7 @@ other = "Kom i gang"
 other = "Udforsk vores arbejde for at forbedre sikkerheden og privatlivets fred"
 
 [home_hero_annual_report_description]
-other = "Vores 2024 Årsrapport fremhæver de fremskridt, vi har gjort mod et bedre internet."
+other = "Vores 2025 Årsrapport fremhæver de fremskridt, vi har gjort mod et bedre internet."
 
 [home_hero_annual_report_button]
 other = "Læs årsrapporten"
@@ -341,16 +341,16 @@ other = "Lær om Sponsorater"
 other = "Store sponsorer og finansieringskilder"
 
 [sponsors_diamond]
-other = "Diamant Sponsorer"
+other = "Diamant Niveau"
 
 [sponsors_platinum]
-other = "Platin Sponsorer"
+other = "Platin Niveau"
 
 [sponsors_gold]
-other = "Guld Sponsorer"
+other = "Guld Niveau"
 
 [sponsors_silver]
-other = "Sølv Sponsorer"
+other = "Sølv Niveau"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,24 +528,3 @@ other = "Vi er i stand til at acceptere de fleste kryptovaluta donationer {{ .cr
 
 [donate_page_crypto_link_text]
 other = "her"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "Jeg understøtter<br />Let's Encrypt fordi<br />er en sikkerhedsnørd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "GØR SOM TIMMY. VÆR EN NØRD."
-
-[testimonial_section_image_alt]
-other = "Timmy, en støtte af Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "SOM EN PRIVATLIVSRESPEKTERENDE ORGANISATION, ØNSKER VI AT KENDE SÅ LIDT SOM MULIGT OM ALLE VORES STØTTER OG ABONNENTER. DERFOR, SÅ SELVOM DER MÅSKE ER EN NØRD, DER HEDDER TIMMMY, SOM STØTTER OS, SÅ ER TIMMY OVENFOR IKKE EN RIGTIG PERSON OG DET ER IKKE ET RIGTIGT VIDENSBYRD."
-
-[testimonial_section_footer_line2]
-other = "TUSINDER AF PERSON OVERALT I VERDEN GØR VORES INDFLYDELSE MULIG."
-
-[testimonial_section_footer_line3]
-other = "TAK FOR AT OVERVEJE AT STØTTE VORES ARBEJDE MED KRYPTERING FOR ALLE."

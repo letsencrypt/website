@@ -11,7 +11,7 @@ other = "תרומה"
 other = "מתן חסות"
 
 [home_hero_annual_report]
-other = "אפשר לקרוא את העבודה שעשינו ללא מטרות רווח השנה ב<a href='https://abetterinternet.org/annual-reports/'>דוח שנת 2024</a>."
+other = "אפשר לקרוא את העבודה שעשינו ללא מטרות רווח השנה ב<a href='https://abetterinternet.org/annual-reports/'>דוח שנת 2025</a>."
 
 [home_major_sponsors]
 other = "נותני חסות ומממנים עיקריים"
@@ -251,7 +251,7 @@ other = "איך מתחילים"
 other = "אפשר לחקור את העבודה שלנו לשיפור האבטחה והפרטיות"
 
 [home_hero_annual_report_description]
-other = "הדוח שלנו לשנת 2024 מדגיש את התהליך שעשינו לעבר רשת אינטרנט טובה יותר."
+other = "הדוח שלנו לשנת 2025 מדגיש את התהליך שעשינו לעבר רשת אינטרנט טובה יותר."
 
 [home_hero_annual_report_button]
 other = "לקריאת הדוח השנתי"
@@ -341,16 +341,16 @@ other = "פרטים על מימון"
 other = "נותני חסות ומממנים עיקריים"
 
 [sponsors_diamond]
-other = "מממני יהלום"
+other = "דרגת יהלום"
 
 [sponsors_platinum]
-other = "מממני פלטינה"
+other = "דרגת פלטינה"
 
 [sponsors_gold]
-other = "מממני זהב"
+other = "דרגת זהב"
 
 [sponsors_silver]
-other = "מממני כסף"
+other = "דרגת כסף"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,24 +528,3 @@ other = "אנחנו יכולים לקבל את רוב סוגי המטבעות ה
 
 [donate_page_crypto_link_text]
 other = "כאן"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "אני חובב מושבע של<br />Let's Encrypt כי<br />אני חנון אבטחת מידע.&rdquo;"
-
-[testimonial_section_button_text]
-other = "הצטרפו לטימי. תהיו חנונים."
-
-[testimonial_section_image_alt]
-other = "טימי, חובב מושבע של Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "אלפי אנשים מכל רחבי העולם הופכים את ההשפעה שלנו למציאות."
-
-[testimonial_section_footer_line3]
-other = "תודה על כך ששקלת לתמוך בעבודה שלנו לספק הצפנה לכולם."

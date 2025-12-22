@@ -11,7 +11,7 @@ other = "Bağış Yapın"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Bu yılki kar amacı gütmeyen çalışmalarımız hakkında her şeyi <a href='https://abetterinternet.org/annual-reports/'>2024 Yıllık Raporumuzda</a> okuyabilirsiniz."
+other = "Bu yılki kar amacı gütmeyen çalışmalarımız hakkında her şeyi <a href='https://abetterinternet.org/annual-reports/'>2025 Yıllık Raporumuzda</a> okuyabilirsiniz."
 
 [home_major_sponsors]
 other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
@@ -173,46 +173,46 @@ other = "Mevcut ACME Taslağından Farklar"
 other = "ACME RFC den Farklar"
 
 [onboarding_customers]
-other = "Onboarding Your Customers with Let's Encrypt and ACME"
+other = "Let's Encrypt ve ACME ile Müşterilerinizi Kazanın"
 
 [paypal_donate_alt]
-other = "Donate with PayPal button"
+other = "PayPal ile bağış yap butonu"
 
 [paypal_donate_title]
-other = "Donate with PayPal"
+other = "PayPal ile bağış yapın"
 
 [not_found]
-other = "That page doesn't exist, please check the address."
+other = "Bu sayfa mevcut değil, lütfen adresi kontrol edin."
 
 [amount_per_year]
-other = "${{ .nb }}/yr (USD)"
+other = "${{ .nb }}/yıl (USD)"
 
 [3y_commitment]
-other = "with a 3-year commitment"
+other = "3 yıllık taahhütle"
 
 [1_99_employees]
-other = "1-99 employees"
+other = "1-99 çalışan"
 
 [100_999_employees]
-other = "100-999 employees"
+other = "100-999 çalışan"
 
 [1000_employees]
-other = "1000+ employees"
+other = "1000+ çalışan"
 
 [subscribe_to_newsletter_headline]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Let's Encrypt ve diğer ISRG projeleri hakkında e-posta güncellemelerine abone olun"
 
 [site_banner_text]
-other = "ISRG celebrates 10 years of helping build a brighter Internet →"
+other = "ISRG, daha parlak bir internetin oluşturulmasına yardımcı olmanın 10. yılını kutluyor →"
 
 [internet_security_research_group]
-other = "Internet Security Research Group"
+other = "İnternet Güvenliği Araştırma Grubu"
 
 [header_donate_now]
 other = "Şimdi Bağış Yapın"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "Menüyü aç/kapat"
 
 [isrg_legal_address_label]
 other = "Legal Adres"
@@ -221,7 +221,7 @@ other = "Legal Adres"
 other = "Tüm posta ve sorularınızı şu adrese gönderin:"
 
 [newsletter_subscribe_heading]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Let's Encrypt ve diğer ISRG projeleri hakkında e-posta güncellemelerine abone olun"
 
 [footer_nav_github]
 other = "GitHub"
@@ -242,46 +242,46 @@ other = "Ticari Marka Politikası"
 other = "Herkes için <br /> Şifreleme"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
+other = '<span class="relative inline-block"><span class="invisible text-4xl">700</span><span id="certificate-count" class="text-4xl absolute left-0">700</span></span> milyondan fazla web sitesine ücretsiz TLS sertifikaları sağlayan kar amacı gütmeyen bir kuruluş.'
 
 [home_hero_get_started]
 other = "Başlayın"
 
 [home_hero_annual_report_title]
-other = "Explore our work to improve security and privacy"
+other = "Güvenlik ve gizliliği iyileştirmek için yaptığımız çalışmaları keşfedin"
 
 [home_hero_annual_report_description]
-other = "Our 2024 Annual Report highlights the progress we've made toward a better Internet."
+other = "2025 Faaliyet Raporumuz, daha iyi bir internet için kaydettiğimiz ilerlemeyi vurgulamaktadır."
 
 [home_hero_annual_report_button]
-other = "Read the Annual Report"
+other = "Faaliyet Raporunu Okuyun"
 
 [getting_started_eyebrow]
-other = "Free, Automated TLS Certificates"
+other = "Ücretsiz, Otomatik TLS Sertifikaları"
 
 [getting_started_heading]
 other = "Başlamak"
 
 [getting_started_description]
-other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+other = "Let's Encrypt, ücretsiz TLS sertifikaları sağlayan bir Sertifika Yetkilisi olup, web sitelerinin HTTPS şifrelemesini etkinleştirmesini ve herkes için daha güvenli bir İnternet ortamı yaratmasını kolaylaştırır. Let's Encrypt, kar amacı gütmeyen İnternet Güvenliği Araştırma Grubu'nun bir projesidir."
 
 [getting_started_ready_title]
-other = "Ready to begin?"
+other = "Başlamaya hazır mısınız?"
 
 [getting_started_ready_content]
-other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+other = "Let's Encrypt'in ücretsiz SSL/TLS sertifikalarıyla web sitelerinizi güvenli hale getirmeye başlayın. Web sitenizin alan adı için sertifika almak için, alan adı üzerinde kontrol sahibi olduğunuzu kanıtlamanız gerekir."
 
 [getting_started_ready_link]
-other = "Let's Get Started"
+other = "Hadi Başlayalım"
 
 [getting_started_docs_title]
 other = "Dökümantasyon"
 
 [getting_started_docs_content]
-other = "Learn about our certificate issuance process and best practices."
+other = "Sertifika verme sürecimiz ve en iyi uygulamalar hakkında bilgi edinin."
 
 [getting_started_docs_link]
-other = "Read Documentation"
+other = "Dokümantasyonu Okuyun"
 
 [getting_started_clients_title]
 other = "ACME Clients"
@@ -299,7 +299,7 @@ other = "Get help from the Let's Encrypt Community"
 other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
 
 [getting_started_help_link]
-other = "Visit the Forum"
+other = "Forumu Ziyaret Edin"
 
 [support_heading_entire_sentence]
 other = "Global impact made possible by generosity, contributions, sponsorship, and you"
@@ -311,16 +311,16 @@ other = "Global impact made possible by"
 other = "generosity"
 
 [support_heading_word2]
-other = "contributions"
+other = "katkılar"
 
 [support_heading_word3]
-other = "sponsorship"
+other = "sponsorluk"
 
 [support_heading_word4]
-other = "you"
+other = "sen"
 
 [support_donate_title]
-other = "Support Encryption for Everybody"
+other = "Herkes için Şifrelemeyi Destekleyin"
 
 [support_donate_description]
 other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
@@ -335,40 +335,40 @@ other = "Leading Through Sponsorship"
 other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
 
 [support_sponsor_button]
-other = "Learn about Sponsorship"
+other = "Sponsorluk hakkında daha fazlasını öğrenin"
 
 [sponsors_heading]
 other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
 
 [sponsors_diamond]
-other = "Diamond Sponsors"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "Platinum Sponsors"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "Gold Sponsors"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "Silver Sponsors"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
 
 [newsletter_iframe_title]
-other = "Newsletter signup form"
+other = "Haber bülteni kayıt formu"
 
 [blog_section_heading]
-other = "From our blog"
+other = "Blog sayfamızdan"
 
 [blog_section_see_all]
-other = "See all our blog posts"
+other = "Bütün blog paylaşımlarımızı görün"
 
 [post_hero_last_updated]
-other = "Last updated:"
+other = "Son Güncelleme:"
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "Daha yakın zamanda güncellenen sayfa İngilizce olarak mevcuttur"
 
 [post_hero_breadcrumb_blog]
 other = "Blog"
@@ -377,79 +377,79 @@ other = "Blog"
 other = "Dahil Olun"
 
 [donate_individual_impact_eyebrow]
-other = "Individual Impact"
+other = "Bireysel Etki"
 
 [donate_encryption_everybody_alt]
 other = "Herkes için Şifreleme"
 
 [project_card_visit]
-other = "Visit"
+other = "Ziyaret edin"
 
 [internet_security_research_group_initials]
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "### 'dan fazla web sitesine ücretsiz TLS sertifikaları sağlayan kar amacı gütmeyen bir kuruluş"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = "den fazla kuruluşa ücretsiz TLS sertifikaları sağlayan kar amacı gütmeyen bir kuruluş"
 
 [home_hero_certificate_count]
 other = "700M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "web siteleri"
 
 [projects_section_title]
-other = "More ways we're improving security and privacy"
+other = "Güvenlik ve gizliliği iyileştirmek için uyguladığımız diğer yöntemler"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "Let's Encrypt'in iki kardeş projesi olduğunu biliyor muydunuz? Let's Encrypt ve bu iki proje, interneti daha güvenli ve gizliliğe saygılı hale getirmeye odaklanan 501(c)(3) kamu yararı kuruluşu Internet Security Research Group (ISRG) tarafından yürütülmektedir."
 
 [project_prossimo_name]
 other = "Prossimo"
 
 [project_prossimo_description]
-other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+other = "Bellek güvenliği sağlayan programlama dillerinin kullanımıyla kritik İnternet altyapısında bellek güvenliğine odaklanmıştır."
 
 [project_divviup_name]
 other = "Divvi Up"
 
 [project_divviup_description]
-other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+other = "Çok Taraflı Hesaplama üzerine kurulu, metrikleri toplamak ve birleştirmek için gizliliğe saygılı bir sistem."
 
 [support_donate_section_title]
-other = "Support Encryption for Everybody"
+other = "Herkes için Şifrelemeyi Destekleyin"
 
 [support_donate_section_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Bağışınız, Let's Encrypt'in ücretsiz kalmasına ve dünya çapında milyonlarca web sitesine erişilebilir olmasına yardımcı olur. İnterneti güvenli hale getirmek için bize katılın, tek tek her siteyi. İster birey ister şirket olun, her katkı fark yaratır."
 
 [support_donate_section_button]
 other = "Şimdi Bağış Yapın"
 
 [support_sponsor_section_title]
-other = "Leading Through Sponsorship"
+other = "Sponsorluk yoluyla liderlik"
 
 [support_sponsor_section_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Web'i şifrelemek için çalışmalarımıza güvenen veya değer veren şirketler, Let's Encrypt'e finansal olarak destek olabilirler. Bu çalışmayı mümkün kılmak için büyük ve küçük şirketlere katılın!"
 
 [support_sponsor_section_button]
-other = "Learn about Sponsorship"
+other = "Sponsorluk hakkında daha fazlasını öğrenin"
 
 [stats_section_title]
 other = "Let's Encrypt Büyüme"
 
 [stats_section_button]
-other = "More stats"
+other = "Daha fazla istatistik"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "Düzenli Bağış Yapın"
 
 [donate_page_make_recurring_donation_content]
-other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+other = "Web'i şifrelemek günlük bir iştir — sertifikaların yenilenmesi gerekir! Sürdürülebilir desteğiniz, sertifikaları büyük ölçekte yenilemeye devam etmemizi sağlar."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "Düzenli bağışınızı şimdi başlatın"
 
 [donate_page_stock_donations_title]
 other = "Donations of Stock"
@@ -491,7 +491,7 @@ other = "Appreciated securities or mutual fund shares that you've owned for more
 other = "Brokerage Firm:"
 
 [donate_page_stock_table_account_name]
-other = "Account Name:"
+other = "Hesap İsmi:"
 
 [donate_page_stock_table_account_number]
 other = "ISRG Account #:"
@@ -512,7 +512,7 @@ other = "Donor Advised Funds"
 other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
 
 [donate_page_other_workplace_heading]
-other = "In Your Workplace"
+other = "Çalışma Alanınızda"
 
 [donate_page_other_workplace_recommend_sponsorship]
 other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
@@ -527,25 +527,4 @@ other = "Many organizations match donations to nonprofits made by employees. Che
 other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
-other = "here"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "JOIN TIMMY. BE A NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy, a supporter of Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
-
-[testimonial_section_footer_line3]
-other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."
+other = "burada"

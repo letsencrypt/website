@@ -11,7 +11,7 @@ other = "පරිත්‍යාග"
 other = "අනුග්‍රහය"
 
 [home_hero_annual_report]
-other = "මෙම වසරේ අපගේ ලාභ නොලබන වැඩ සියල්ල <a href='https://abetterinternet.org/annual-reports/'>2024 වාර්ෂික වාර්තාවේ</a> කියවන්න."
+other = "මෙම වසරේ අපගේ ලාභ නොලබන වැඩ සියල්ල <a href='https://abetterinternet.org/annual-reports/'>2025 වාර්ෂික වාර්තාවේ</a> කියවන්න."
 
 [home_major_sponsors]
 other = "ප්‍රධාන අනුග්‍රහකයින් සහ මූල්‍යදායකයින්"
@@ -251,7 +251,7 @@ other = "පටන්ගන්න"
 other = "ආරක්‍ෂාව සහ පෞද්ගලිකත්‍වය වැඩි දියුණුව උදෙසා අපගේ කාර්ය ගවේශනය කරන්න"
 
 [home_hero_annual_report_description]
-other = "යහපත් අන්තර්ජාලයක් උදෙසා අප ලද ප්‍රගතිය අපගේ 2024 වාර්ෂික වාර්තාවෙන් ඉස්මතු කරයි."
+other = "යහපත් අන්තර්ජාලයක් උදෙසා අප ලද ප්‍රගතිය අපගේ 2025 වාර්ෂික වාර්තාවෙන් ඉස්මතු කරයි."
 
 [home_hero_annual_report_button]
 other = "වාර්ෂික වාර්තාව කියවන්න"
@@ -341,16 +341,16 @@ other = "අනුග්‍රහකත්‍වය ගැන දැනගන්
 other = "ප්‍රධාන අනුග්‍රහකයින් සහ මූල්‍යදායකයින්"
 
 [sponsors_diamond]
-other = "දියමන්ති අනුග්‍රහකයින්"
+other = "Diamond Level"
 
 [sponsors_platinum]
-other = "ප්ලැටිනම් අනුග්‍රහකයින්"
+other = "Platinum Level"
 
 [sponsors_gold]
-other = "රන් අනුග්‍රහකයින්"
+other = "Gold Level"
 
 [sponsors_silver]
-other = "රිදී අනුග්‍රහකයින්"
+other = "Silver Level"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,24 +528,3 @@ other = "අපට බොහෝ ගුප්ත මුදල් (ක්‍රි
 
 [donate_page_crypto_link_text]
 other = "මෙතැන"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "මම ආරක්‍ෂණ උද්‍යෝගියෙක් නිසා<br />ලෙට්'ස් එන්ක්‍රිප්ට්<br />වෙත සහාය දෙමි&rdquo;"
-
-[testimonial_section_button_text]
-other = "ටිමී සමඟ එකතු වී උද්‍යෝගවත් වෙන්න."
-
-[testimonial_section_image_alt]
-other = "ටිමී, ලෙට්'ස් එන්ක්‍රිප්ට් ආධාරකරුවෙක්"
-
-[testimonial_section_footer_line1]
-other = "පෞද්ගලිකත්‍වයට ගරු කරන සංවිධානයක් ලෙස අපගේ සියලුම ආධාරකරුවන් සහ ග්‍රාහකයින් ගැන අපි එතරම් දන්නේ නැහැ. ටිමී නම් කෙනෙක් ඇත්ත වශයෙන්ම උද්‍යෝගවත් වී අපට සහාය දක්වන නමුත් ඉහත සඳහන් ටිමී සැබෑ පුද්ගලයෙක් නොවන අතර ඔහුගේ සාක්‍ෂාත්කරය සත්‍ය නොවේ."
-
-[testimonial_section_footer_line2]
-other = "ලොව පුරා දහස් ගණනක් මිනිසුන් අපගේ බලපෑම කළ හැකි කරයි."
-
-[testimonial_section_footer_line3]
-other = "සැමට සංකේතනය සපයන අපගේ කාර්ය සඳහා සහායට සලකා බැලීම ගැන ඔබට ස්තූතියි."

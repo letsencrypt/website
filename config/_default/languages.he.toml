@@ -8,7 +8,7 @@ weight = 325
 beforeColon = ""
 description = """
 Let's Encrypt היא רשות אישורים חופשית, אוטומטית ופתוחה
- שמוגשת לך באדיבות <a href="https://www.abetterinternet.org/">קבוצת מחקר אבטחת האינטרנט (ISRG)</a>. למידע נוסף על הפעילות שאנו עושים ללא מטרות רווח ניתן לקרוא את <a href="https://www.abetterinternet.org/annual-reports/">דוח שנת 2024</a>.
+ שמוגשת לך באדיבות <a href="https://www.abetterinternet.org/">קבוצת מחקר אבטחת האינטרנט (ISRG)</a>. למידע נוסף על הפעילות שאנו עושים ללא מטרות רווח ניתן לקרוא את <a href="https://www.abetterinternet.org/annual-reports/">דוח שנת 2025</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/he_IL/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "IL"

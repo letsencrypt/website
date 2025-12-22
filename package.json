@@ -3,22 +3,21 @@
   "version": "1.0.0",
   "description": "Let's Encrypt website",
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.36.0",
     "htmlhint": "^1.6.3",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.15"
   },
   "scripts": {
     "test:htmllint": "htmlhint 'content/**/*.html'",
     "test:eslint": "eslint static/js --ext .js",
     "test": "npm run test:htmllint && npm run test:eslint",
     "test:html5validate": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate donate-2024 donate fontawesome-free-6.5.2-web --format text --ignore 'aspect-ratio'",
-    "build": "hugo -d public",
-    "tailwind:watch": "tailwindcss -i ./themes/le-2025/assets/css/le-2025-theme-input.css -o ./themes/le-2025/assets/css/le-2025-theme-output.css --watch",
-    "tailwind:build": "tailwindcss -i ./themes/le-2025/assets/css/le-2025-theme-input.css -o ./themes/le-2025/assets/css/le-2025-theme-output.css --minify"
+    "build": "hugo -d public"
   },
   "repository": {
     "type": "git",

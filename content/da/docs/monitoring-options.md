@@ -1,7 +1,7 @@
 ---
 title: Indstillinger For Overvågningstjeneste
 slug: monitoring-options
-lastmod: 2025-01-16
+lastmod: 2025-12-09
 show_lastmod: 1
 ---
 
@@ -16,6 +16,8 @@ Der er en række andre overvågningsmuligheder derude, herunder:
 - [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 - [TrackSSL](https://trackssl.com/)
 - [Host-Tracker](https://www.host-tracker.com/)
+- [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (selvhostede scripts)
+- [CertKit](https://www.certkit.io/)
 
 Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
 

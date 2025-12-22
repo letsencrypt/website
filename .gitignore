@@ -13,3 +13,5 @@ resources/_gen/
 .hugo_build.lock
 .vscode/
 **/.DS_Store
+hugo_stats.json
+themes/le-2025/assets/css/le-2025-theme-output.css

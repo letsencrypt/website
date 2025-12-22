@@ -58,6 +58,11 @@
       "name": "Squarespace",
       "url": "https://www.squarespace.com/",
       "image": "squarespace-logo.png"
+    },
+    {
+      "name": "SerpApi",
+      "url": "https://serpapi.com/",
+      "image": "SerpApi-black.png"
     }
   ],
   "silver": [
@@ -119,11 +124,6 @@
       "image": "netlify-logo.png"
     },
     {
-      "name": "HostPapa",
-      "url": "https://www.hostpapa.com/lets-encrypt-hosting?utm_source=letsencrypt.org&utm_medium=referral&utm_campaign=us-seo&utm_term=web-hosting&utm_content=180x108-logo",
-      "image": "hostpapa-logo.png"
-    },
-    {
       "name": "dnsimple",
       "url": "https://dnsimple.com/letsencrypt",
       "image": "dnsimple-logo.png"
@@ -183,11 +183,6 @@
       "name": "Clever Cloud",
       "url": "https://www.clever-cloud.com/",
       "image": "clevercloud-logo.png"
-    },
-    {
-      "name": "IPInfo",
-      "url": "https://ipinfo.io/",
-      "image": "ipinfo-logo.png"
     },
     {
       "name": "GreenGeeks",
@@ -296,11 +291,6 @@
       "image": "securew2-logo.png"
     },
     { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
-    {
-      "name": "SerpApi",
-      "url": "https://serpapi.com/",
-      "image": "SerpApi-black.png"
-    },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
     { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
@@ -353,6 +343,21 @@
       "name": "DuckDuckGo",
       "url": "https://duckduckgo.com/",
       "image": "duckduckgo-logo.svg"
+    },
+    {
+      "name": "Zoho",
+      "url": "https://zoho.com/",
+      "image": "zoho-logo-web.svg"
+    },
+    {
+      "name": "Okta",
+      "url": "https://www.okta.com/",
+      "image": "okta-logo.png"
+    },
+    {
+      "name": "Replit",
+      "url": "https://replit.com/",
+      "image": "replit-logo.svg"
     }
   ]
 }

@@ -11,7 +11,7 @@ other = "Přispět"
 other = "Sponzorovat"
 
 [home_hero_annual_report]
-other = "Přečtěte si vše o naší neziskové práci v letošním roce v naší <a href='https://abetterinternet.org/annual-reports/'>Výroční zprávě za rok 2024</a>."
+other = "Přečtěte si vše o naší neziskové práci v letošním roce v naší <a href='https://abetterinternet.org/annual-reports/'>Výroční zprávě za rok 2025</a>."
 
 [home_major_sponsors]
 other = "Důležití sponzoři a investoři"
@@ -251,7 +251,7 @@ other = "Začít"
 other = "Zjistěte, jak naše práce přispívá k zlepšení bezpečnosti a ochrany soukromí"
 
 [home_hero_annual_report_description]
-other = "V naší výroční zprávě za 2024 se dozvíte, čeho jsme dosáhli na cestě k lepšímu internetu."
+other = "V naší výroční zprávě za 2025 se dozvíte, čeho jsme dosáhli na cestě k lepšímu internetu."
 
 [home_hero_annual_report_button]
 other = "Přečtěte si výroční zprávu"
@@ -341,16 +341,16 @@ other = "Zjistěte více o sponzorství"
 other = "Důležití sponzoři a investoři"
 
 [sponsors_diamond]
-other = "Diamantoví sponzoři"
+other = "Diamantová úroveň"
 
 [sponsors_platinum]
-other = "Platinoví sponzoři"
+other = "Platinová úroveň"
 
 [sponsors_gold]
-other = "Zlatí sponzoři"
+other = "Zlatá úroveň"
 
 [sponsors_silver]
-other = "Stříbrní sponzoři"
+other = "Stříbrná úroveň"
 
 [common_read_more_arrow]
 other = " →"
@@ -528,24 +528,3 @@ other = "Jsme schopni přijímat dary ve většině kryptoměn {{ .cryptoLink }}
 
 [donate_page_crypto_link_text]
 other = "zde"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "Podporuji<br /> Let's Encrypt, protože<br /> jsem bezpečnostní nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "PŘIPOJTE SE K TIMMYMU. BUĎTE NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy podporuje Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "JAKO ORGANIZACE RESPEKTUJÍCÍ SOUKROMÍ VÍME O VŠECH NAŠICH PŘÍZNIVCÍCH A ODBĚRATELÍCH CO NEJMÉNĚ. PROTO, I KDYŽ NĚKDO JMÉNEM TIMMY MŮŽE BÝT SKUTEČNĚ ŠPRT A PODPOROVAT NÁS, VÝŠE UVEDENÝ TIMMY NENÍ SKUTEČNÁ OSOBA A JEHO SVĚDECTVÍ NENÍ SKUTEČNÉ."
-
-[testimonial_section_footer_line2]
-other = "TISÍCE LIDÍ PO CELÉM SVĚTĚ PŘISPÍVAJÍ K NAŠEMU PROVOZU."
-
-[testimonial_section_footer_line3]
-other = "DĚKUJEME, ŽE JSTE ZVÁŽILI PODPORU NAŠÍ PRÁCE NA ZAJIŠTĚNÍ ŠIFROVÁNÍ PRO VŠECHNY."

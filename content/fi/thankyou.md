@@ -1,9 +1,16 @@
 ---
-title: Kiitos lahjoituksestasi ISRG:lle
+title: Kiitos
 slug: thankyou
-date: 2018-04-12
+lastmod: 2022-12-02
 ---
 
-Kiitos tukemisesta turvallisempaa ja yksityisyyttä arvostavampaa verkkoa kaikille meistä. Seuraa [@letsencrypt-tiliämme Twitterissä](https://twitter.com/letsencrypt) pysyäksesi ajan tasalla kehityksestämme.
-
-Siirto onnistui ja ostoksesi kuitti lähetettiin sähköpostiisi. Voit kirjautua tilillesi [www.paypal.com/us](https://www.paypal.com/us):een nähdäksesi tämän siirron tiedot.
+  <div class="container">
+    <p><strong>Kiitos lahjoituksestasi</strong></p>
+    <p>Kiitän teitä kaikkien ISRG:n jäsenten puolesta panoksestanne työmme tukemiseen.</p>
+    <p>Lahjoituskuitti on lähetetty ilmoittamaasi sähköpostiosoitteeseen. Internet Security Research Group on voittoa tavoittelematon 501(c)(3) -organisaatio. EIN-tunnisteemme on: 46-3344200.</p>
+    <p class="pt-2"><strong>Kaksinkertaista lahjoituksesi</strong></p>
+    <p>Monet organisaatiot vastaavat lahjoituksia voittoa tavoittelematonta tekeville työntekijöille. Tarkistathan, onko organisaatiollasi vastaava ohjelma ja kaksinkertaista vaikutuksesi!</p>
+    <div class="pt-2">
+      {{< double_donation >}}
+    </div>
+  </div>

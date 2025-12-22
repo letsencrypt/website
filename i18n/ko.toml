@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
+other = "모두를 위한 암호화. 5억 개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체입니다."
 
 [home_hero_getting_started]
 other = "시작하기"
@@ -11,13 +11,13 @@ other = "기부"
 other = "스폰서"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2024 Annual Report</a>."
+other = "올해 비영리 단체 활동에 대한 자세한 내용은 <a href='https://abetterinternet.org/annual-reports/'> 2025 연례 보고서</a>에서 확인하세요."
 
 [home_major_sponsors]
 other = "주요 스폰서 및 후원자"
 
 [home_from_our_blog]
-other = "Blog"
+other = "블로그"
 
 [read_more]
 other = "더보기"
@@ -29,24 +29,24 @@ other = '<a href="{{ .Permalink }}">RSS</a>를 통해 구독하기'
 other = "더욱 안전하고 프라이버시를 존중하는 웹을 지원하여 주십시오."
 
 [footer_donate]
-other = "Donate Now"
+other = "지금 기부하기"
 
 [footer_mailing]
 other = "모든 문의 및 질문:"
 
 [footer_legal_address]
-other = "Legal Address"
+other = "법적 주소"
 
 [footer_policies]
 other = """
-View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
+<a href="/privacy/">개인정보처리방침</a>을 확인하세요.<br>
+<a href="https://www.abetterinternet.org/trademarks">상표정책</a>을 확인하세요.<br>
+<a href="https://www.abetterinternet.org/terms-of-service">서비스 약관</a>을 확인하세요.
 """
 
 [footer_links]
 other = """
-<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
+<a href="/privacy/">개인정보처리방침</a> <a href="https://www.abetterinternet.org/trademarks">상표정책</a>
 """
 
 [header_skip_nav]
@@ -62,7 +62,7 @@ other = "모든 문서 보기"
 other = "Let's Encrypt 블로그 피드"
 
 [diamond]
-other = "Diamond"
+other = "다이아몬드"
 
 [platinum]
 other = "플래티넘"
@@ -200,28 +200,28 @@ other = "직원 100-999명"
 other = "직원 1000명 이상"
 
 [subscribe_to_newsletter_headline]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Let's Encrypt 및 기타 ISRG 프로젝트에 대한 이메일 업데이트를 구독하세요"
 
 [site_banner_text]
-other = "ISRG celebrates 10 years of helping build a brighter Internet →"
+other = "ISRG가 더 나은 인터넷을 만들어온 10년의 여정을 함께 축하합니다 →"
 
 [internet_security_research_group]
-other = "Internet Security Research Group"
+other = "인터넷 보안 연구 그룹"
 
 [header_donate_now]
-other = "Donate Now"
+other = "지금 기부하기"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "메뉴 토글"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "법적 주소"
 
 [isrg_mailing_label]
 other = "모든 문의 및 질문:"
 
 [newsletter_subscribe_heading]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Let's Encrypt 및 기타 ISRG 프로젝트에 대한 이메일 업데이트를 구독하세요"
 
 [footer_nav_github]
 other = "GitHub"
@@ -230,271 +230,271 @@ other = "GitHub"
 other = "LinkedIn"
 
 [footer_nav_terms]
-other = "Terms"
+other = "약관"
 
 [footer_nav_privacy]
-other = "Privacy Policy"
+other = "개인정보처리방침"
 
 [footer_nav_trademark]
 other = "상표 정책"
 
 [home_hero_heading]
-other = "Encryption for<br /> Everybody"
+other = "모두를 위한<br />암호화"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
+other = '<span class="relative inline-block"><span class="invisible text-4xl">7억</span><span id="certificate-count" class="text-4xl absolute left-0">7억</span></span>개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체입니다.'
 
 [home_hero_get_started]
 other = "시작하기"
 
 [home_hero_annual_report_title]
-other = "Explore our work to improve security and privacy"
+other = "보안 및 개인정보 보호를 개선하기 위한 작업 살펴보세요"
 
 [home_hero_annual_report_description]
-other = "Our 2024 Annual Report highlights the progress we've made toward a better Internet."
+other = "우리의 2025년 연례 보고서는 더 나은 인터넷을 향한 우리의 발전을 강조하고 있습니다."
 
 [home_hero_annual_report_button]
-other = "Read the Annual Report"
+other = "연례 보고서 읽기"
 
 [getting_started_eyebrow]
-other = "Free, Automated TLS Certificates"
+other = "무료 자동화된 TLS 인증서"
 
 [getting_started_heading]
-other = "Getting started"
+other = "시작하기"
 
 [getting_started_description]
-other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+other = "Let's Encrypt는 무료 TLS 인증서를 제공하는 인증 기관으로, 웹사이트에서 HTTPS 암호화를 활성화하고 모든 사용자에게 더욱 안전한 인터넷을 구축할 수 있도록 지원합니다. Let's Encrypt는 비영리 단체인 인터넷 보안 연구 그룹의 프로젝트입니다."
 
 [getting_started_ready_title]
-other = "Ready to begin?"
+other = "시작할 준비가 되었나요?"
 
 [getting_started_ready_content]
-other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+other = "Let's Encrypt의 무료 SSL/TLS 인증서로 웹사이트 보안을 시작하세요. 웹사이트 도메인에 대한 인증서를 받으려면 도메인에 대한 제어권을 입증해야 합니다."
 
 [getting_started_ready_link]
-other = "Let's Get Started"
+other = "시작해 봅시다"
 
 [getting_started_docs_title]
 other = "문서"
 
 [getting_started_docs_content]
-other = "Learn about our certificate issuance process and best practices."
+other = "인증서 발급 프로세스와 모범 사례에 대해 알아보세요."
 
 [getting_started_docs_link]
-other = "Read Documentation"
+other = "문서 읽기"
 
 [getting_started_clients_title]
-other = "ACME Clients"
+other = "ACME 클라이언트"
 
 [getting_started_clients_content]
-other = "Choose from our recommended ACME clients to automatically manage your certificates."
+other = "권장하는 ACME 클라이언트를 이용하여 인증서 관리를 자동화하세요."
 
 [getting_started_clients_link]
-other = "Browse ACME Clients"
+other = "ACME 클라이언트 찾아보기"
 
 [getting_started_help_title]
-other = "Get help from the Let's Encrypt Community"
+other = "Let's Encrypt 커뮤니티에서 도움을 받으세요"
 
 [getting_started_help_content]
-other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
+other = "전문가, 자원봉사자, ISRG 스태프들과 함께 기술 지원 및 지식 공유를 위한 커뮤니티 포럼에 참여하세요."
 
 [getting_started_help_link]
-other = "Visit the Forum"
+other = "포럼 방문"
 
 [support_heading_entire_sentence]
-other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+other = "관대함, 기여, 후원, 그리고 여러분 덕분에 가능해진 전 세계적인 영향력"
 
 [support_heading_base]
-other = "Global impact made possible by"
+other = "다음에 의해 가능해진 글로벌 영향력"
 
 [support_heading_word1]
-other = "generosity"
+other = "관대함"
 
 [support_heading_word2]
-other = "contributions"
+other = "기여"
 
 [support_heading_word3]
-other = "sponsorship"
+other = "후원"
 
 [support_heading_word4]
-other = "you"
+other = "여러분"
 
 [support_donate_title]
-other = "Support Encryption for Everybody"
+other = "모두를 위한 암호화 지원"
 
 [support_donate_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "여러분의 기부는 Let's Encrypt를 전 세계 수백만 개의 웹사이트에서 무료로 이용할 수 있도록 하는 데 도움이 됩니다. 한 번에 한 사이트씩 인터넷 보안에 동참해 주세요. 개인이든 기업이든 모든 기부는 큰 변화를 가져옵니다."
 
 [support_donate_button]
-other = "Donate Now"
+other = "지금 기부하기"
 
 [support_sponsor_title]
-other = "Leading Through Sponsorship"
+other = "후원을 통한 선도"
 
 [support_sponsor_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "웹 암호화를 위해 저희의 노력에 의존하거나 가치를 두는 기업은 Let's Encrypt를 재정적으로 지원할 수 있습니다. 크고 작은 기업들과 함께 이 목표를 실현해 보세요!"
 
 [support_sponsor_button]
-other = "Learn about Sponsorship"
+other = "후원에 대해 알아보세요"
 
 [sponsors_heading]
 other = "주요 스폰서 및 후원자"
 
 [sponsors_diamond]
-other = "Diamond Sponsors"
+other = "다이몬드 레벨"
 
 [sponsors_platinum]
-other = "Platinum Sponsors"
+other = "플래티넘 레벨"
 
 [sponsors_gold]
-other = "Gold Sponsors"
+other = "골드 레벨"
 
 [sponsors_silver]
-other = "Silver Sponsors"
+other = "실버 레벨"
 
 [common_read_more_arrow]
 other = " →"
 
 [newsletter_iframe_title]
-other = "Newsletter signup form"
+other = "뉴스레터 가입 양식"
 
 [blog_section_heading]
-other = "From our blog"
+other = "블로그에서"
 
 [blog_section_see_all]
-other = "See all our blog posts"
+other = "모든 블로그 게시물 보기"
 
 [post_hero_last_updated]
-other = "Last updated:"
+other = "최근 업데이트:"
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "최근 업데이트된 페이지가 영어로 제공됩니다"
 
 [post_hero_breadcrumb_blog]
-other = "Blog"
+other = "블로그"
 
 [donate_get_involved_button]
 other = "참여"
 
 [donate_individual_impact_eyebrow]
-other = "Individual Impact"
+other = "개별 영향력"
 
 [donate_encryption_everybody_alt]
-other = "Encryption for Everybody"
+other = "모두를 위한 암호화"
 
 [project_card_visit]
-other = "Visit"
+other = "방문"
 
 [internet_security_research_group_initials]
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "###개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = " "
 
 [home_hero_certificate_count]
 other = "700M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "개 이상의 웹사이트에 무료 TLS 인증서를 제공하는 비영리 단체"
 
 [projects_section_title]
-other = "More ways we're improving security and privacy"
+other = "보안 및 개인 정보 보호를 개선하는 더 많은 방법"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "혹시 아셨나요? Let's Encrypt에는 두 개의 자매 프로젝트가 있습니다. Let's Encrypt와 이 두 프로젝트는 모두 Internet Security Research Group(ISRG)에서 운영하며, ISRG는 인터넷을 보다 안전하고 개인정보를 존중하는 환경으로 만들기 위해 활동하는 501(c)(3) 공익 단체입니다."
 
 [project_prossimo_name]
 other = "Prossimo"
 
 [project_prossimo_description]
-other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+other = "중요한 인터넷 인프라에서 메모리 안전 프로그래밍 언어를 사용하여 메모리 안전에 중점을 둡니다."
 
 [project_divviup_name]
 other = "Divvi Up"
 
 [project_divviup_description]
-other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+other = "다자간 컴퓨팅을 기반으로 지표를 수집하고 집계하는 개인 정보 보호 시스템입니다."
 
 [support_donate_section_title]
-other = "Support Encryption for Everybody"
+other = "모두를 위한 암호화 지원"
 
 [support_donate_section_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "여러분의 기부는 Let's Encrypt를 전 세계 수백만 개의 웹사이트에서 무료로 이용할 수 있도록 하는 데 도움이 됩니다. 한 번에 한 사이트씩 인터넷 보안에 동참해 주세요. 개인이든 기업이든 모든 기부는 큰 변화를 가져옵니다."
 
 [support_donate_section_button]
-other = "Donate Now"
+other = "지금 기부하기"
 
 [support_sponsor_section_title]
-other = "Leading Through Sponsorship"
+other = "후원을 통한 선도"
 
 [support_sponsor_section_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "웹 암호화를 위해 저희의 노력에 의존하거나 가치를 두는 기업은 Let's Encrypt를 재정적으로 지원할 수 있습니다. 크고 작은 기업들과 함께 이 목표를 실현해 보세요!"
 
 [support_sponsor_section_button]
-other = "Learn about Sponsorship"
+other = "후원에 대해 알아보세요"
 
 [stats_section_title]
-other = "Let's Encrypt Growth"
+other = "Let's Encrypt 성장률"
 
 [stats_section_button]
-other = "More stats"
+other = "더 많은 통계"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "정기 기부하기"
 
 [donate_page_make_recurring_donation_content]
-other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+other = "웹 암호화는 일상적인 작업이므로 인증서를 갱신해야 합니다! 여러분의 지속적인 지원 덕분에 대규모로 인증서를 갱신할 수 있습니다."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "지금 정기 후원을 시작하세요"
 
 [donate_page_stock_donations_title]
-other = "Donations of Stock"
+other = "주식 기부"
 
 [donate_page_crypto_gifts_title]
-other = "Gifts of Cryptocurrency"
+other = "암호화폐 선물"
 
 [donate_page_other_ways_title]
-other = "Other Ways to Give"
+other = "기부할 수 있는 다른 방법"
 
 [donate_page_ways_to_give_heading]
-other = "WAYS TO GIVE"
+other = "기부 방법"
 
 [donate_page_funding_details_stat_percentage]
 other = "100%"
 
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Let's Encrypt의 자금 조달은 자선 기부금으로 이루어집니다."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "왜 지원해야 하나요?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "무료이며 자동화되고 사용하기 쉬운 TLS 인증서입니다."
 
 [donate_page_funding_details_list_item2]
-other = "We make it easy to use one or one million certs."
+other = "우리는 1개 또는 100만 개의 인증서를 사용하기 쉽게 만들었습니다."
 
 [donate_page_funding_details_list_item3]
-other = "You make HTTPS possible all around the world."
+other = "여러분 덕분에 전 세계에서 HTTPS가 가능해졌습니다."
 
 [donate_page_funding_details_list_item4]
-other = "Help us continue operating at a truly global scale."
+other = "우리가 진정한 글로벌 규모로 운영을 지속할 수 있도록 도와주세요."
 
 [donate_page_stock_intro_text]
-other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+other = "1년 이상 소유한 유가증권이나 뮤추얼 펀드 주식은 훌륭한 자선 선물이 될 수 있습니다."
 
 [donate_page_stock_table_brokerage_firm]
-other = "Brokerage Firm:"
+other = "중개 회사:"
 
 [donate_page_stock_table_account_name]
-other = "Account Name:"
+other = "계정 이름:"
 
 [donate_page_stock_table_account_number]
-other = "ISRG Account #:"
+other = "ISRG 계정 #:"
 
 [donate_page_stock_table_dtc_number]
 other = "DTC #:"
@@ -503,49 +503,28 @@ other = "DTC #:"
 other = "Tax ID #:"
 
 [donate_page_stock_outro_text]
-other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+other = "{{ .sponsorEmailLink }}에서 증권을 양도하시는지 알려주시기 바랍니다. 중개인의 승인서를 이메일로 보내실 수도 있습니다."
 
 [donate_page_other_daf_heading]
-other = "Donor Advised Funds"
+other = "기부자 자문 기금"
 
 [donate_page_other_daf_text]
-other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+other = "기부금에서 인터넷 보안 연구 그룹(모회사)에 기부를 추천해 주세요. 기부금의 100%는 안전하고 개인 정보를 존중하는 인터넷을 지원하는 데 사용됩니다."
 
 [donate_page_other_workplace_heading]
-other = "In Your Workplace"
+other = "직장에서"
 
 [donate_page_other_workplace_recommend_sponsorship]
-other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+other = "여러분의 고용주가 {{ .sponsorshipLink }}를 통해 당사의 활동을 지원하도록 권장해 주세요."
 
 [donate_page_other_workplace_sponsorship_link_text]
 other = "후원"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "많은 기관에서는 직원이 비영리단체에 기부한 금액을 매칭해 줍니다. 소속 기관에 매칭 프로그램이 있는지 확인하고, 여러분의 기부 효과를 두 배로 늘리세요!"
 
 [donate_page_crypto_text]
-other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+other = "저희는 대부분의 암호화폐 기부{{ .cryptoLink }}를 받습니다."
 
 [donate_page_crypto_link_text]
-other = "here"
-
-[testimonial_section_quote_open]
-other = "&ldquo;"
-
-[testimonial_section_quote_text]
-other = "I support<br />Let's Encrypt because<br />I'm a security nerd.&rdquo;"
-
-[testimonial_section_button_text]
-other = "JOIN TIMMY. BE A NERD."
-
-[testimonial_section_image_alt]
-other = "Timmy, a supporter of Let's Encrypt"
-
-[testimonial_section_footer_line1]
-other = "AS A PRIVACY-RESPECTING ORGANIZATION, WE KNOW AS LITTLE AS POSSIBLE ABOUT ALL OF OUR SUPPORTERS AND SUBSCRIBERS. AS SUCH, WHILE SOMEONE NAMED TIMMY MAY INDEED BE A NERD AND SUPPORT US, THE TIMMY ABOVE ISN'T A REAL PERSON AND HIS TESTIMONIAL IS NOT AN ACTUAL ONE."
-
-[testimonial_section_footer_line2]
-other = "THOUSANDS OF PEOPLE AROUND THE WORLD MAKE OUR IMPACT POSSIBLE."
-
-[testimonial_section_footer_line3]
-other = "THANK YOU FOR CONSIDERING SUPPORTING OUR WORK TO PROVIDE ENCRYPTION FOR EVERYBODY."
+other = "여기"
