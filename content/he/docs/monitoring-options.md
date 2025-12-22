@@ -1,7 +1,7 @@
 ---
 title: אפשרויות שירותי מעקב
 slug: monitoring-options
-lastmod: 2025-12-09
+lastmod: 2025-12-22
 show_lastmod: 1
 ---
 

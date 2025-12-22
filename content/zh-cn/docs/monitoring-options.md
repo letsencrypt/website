@@ -1,7 +1,7 @@
 ---
 title: 可供选择的证书监测服务
 slug: monitoring-options
-lastmod: 2025-12-09
+lastmod: 2025-12-22
 show_lastmod: 1
 ---
 
