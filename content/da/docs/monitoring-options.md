@@ -18,6 +18,7 @@ Der er en række andre overvågningsmuligheder derude, herunder:
 - [Host-Tracker](https://www.host-tracker.com/)
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (selvhostede scripts)
 - [CertKit](https://www.certkit.io/)
+- [MyTLS Certificate Monitor](https://cm.mytls.com)
 
 Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
 
