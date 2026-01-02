@@ -2,7 +2,7 @@
 title: İletişim
 slug: contact
 description: Bizimle nasıl iletişime geçilir
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**Eposta yoluyla destek sunmuyoruz. Eğer bir destek sorunuz varsa lütfen [topluluk forumlarımızı](https://community.letsencrypt.org) kullanın. Aşağıdaki eposta adresleri yalnızca belirtilen konular içindir.**
+## Yardım ve Destek
+
+**Eposta yoluyla destek sunmuyoruz.**
+
+Yardıma ihtiyacınız varsa veya destekle ilgili bir sorunuz varsa, lütfen [topluluk forumlarımızı](https://community.letsencrypt.org) kullanın.
+
+Aşağıdaki eposta adresleri yalnızca belirtilen konular içindir.
 
 ## Basın Soruları
 

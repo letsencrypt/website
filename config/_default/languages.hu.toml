@@ -1,13 +1,13 @@
 title = "Let's Encrypt"
 contentDir = "content/hu"
-languageName = "Hungarian"
+languageName = "Magyar"
 languageCode = "hu"
 weight = 330
 
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Read all about our nonprofit work this year in our <a href="https://www.abetterinternet.org/annual-reports/">2025 Annual Report</a>.
+A Let’s Encrypt egy ingyenes, automatizált és nyílt hitelesítésszolgáltató (Certificate Authority), amelyet a nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a> működtet. Tudj meg többet idei nonprofit tevékenységünkről a <a href="https://www.abetterinternet.org/annual-reports/">2025-ös éves jelentésünkben</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
