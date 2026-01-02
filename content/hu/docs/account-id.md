@@ -1,8 +1,7 @@
 ---
 title: Fiók azonosítók keresése
 slug: account-id
-date: 2016-08-10
-lastmod: 2019-07-30
+lastmod: 2021-12-27
 show_lastmod: 1
 ---
 
@@ -11,6 +10,6 @@ A problémák bejelentésekor hasznos lehet megadni a Let's Encrypt fiókjának 
 
 A fiókazonosítója egy `https://acme-v02.api.letsencrypt.org/acme/acct/12345678` URL formájában jelenik meg.
 
-Ha Certbotot használ, a fiókazonosítóját a `/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` "uri" mezőjében találja meg.
+Ha a [Certbotot](https://certbot.eff.org/) használod, és az 1.23.0-s vagy újabb verzió fut, a fiókazonosítód a `certbot show_account` alparancs futtatásával található meg. Ha a Certbot verziója régebbi, mint 1.23.0, akkor a fiókazonosító a `/etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/*/regr.json` fájl `„uri”` mezőjében található meg.
 
 Ha egy másik ACME klienst használ, akkor az adott kliens instrukciói az irányadók. Keresse logjaiban a fent leírt formátumú URL-eket. Ha az ACME kliense nem rögzíti a fiók azonosítóját, akkor azt egy új regisztrációs kérelem benyújtásával szerezheti be ugyanazzal a kulccsal. További részletekért lásd az [ACME specifikációt](https://tools.ietf.org/html/rfc8555#section-7.3). Az Ön azonosítójának numerikus formáját a Boulder-Requester fejlécben is megtalálhatja az ACME kliens minden egyes POST-jára adott válaszban.
