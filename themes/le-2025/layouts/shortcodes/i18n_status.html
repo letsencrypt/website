@@ -30,7 +30,7 @@
           {{ .RelPermalink }}
         </td>
         <td>
-          <a href='https://github.com/letsencrypt/website/commits/master/content/en/{{ replace .File "\\" "/" }}'>GitHub history</a>
+          <a href='https://github.com/letsencrypt/website/commits/main/content/en/{{ replace .File.Path "\\" "/" }}'>GitHub history</a>
         </td>
         {{ $lastmod := .Lastmod }}
 
