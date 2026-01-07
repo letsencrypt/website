@@ -2,13 +2,13 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2025-11-20
+lastmod: 2026-01-07
 show_lastmod: 1
 ---
 
 This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA. If you're looking for the Trust Anchor IDs associated with these CAs, see our page on [Object Identifiers](/docs/oids).
 
-[![ISRG Certificate Hierarchy Diagram, as of August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG Certificate Hierarchy Diagram, as of January 2026](/images/isrg-hierarchy.png)](/images/isrg-hierarchy-full.png)
 
 # Root CAs
 
@@ -57,7 +57,7 @@ For additional information on the compatibility of our root certificates with va
 
 # Subordinate (Intermediate) CAs
 
-We currently maintain four intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates.
+We currently maintain eight intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates. Subscriber certificates issued under the "classic" and "tlsclient" [profiles](/docs/profiles) will be issued from one of the first four intermediates listed (E7 through R13); conversely, Subscriber certificates issued under the "tlsserver" and "shortlived" profiles will be issued from one of the latter four intermediates (YE1 through YR2).
 
 All intermediate certificate Subjects have a Country field of `C = US`.
 
@@ -87,6 +87,30 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295817), [issued certs](https://crt.sh/?Identity=%25&iCAID=295817)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132902), [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+* **Let's Encrypt YE1**
+  * Subject: `O = Let's Encrypt, CN = YE1`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432952), [issued certs](https://crt.sh/?Identity=%25&iCAID=432952)
+  * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * Subject: `O = Let's Encrypt, CN = YE2`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
+  * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
+* **Let's Encrypt YR1**
+  * Subject: `O = Let's Encrypt, CN = YR1`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432476), [issued certs](https://crt.sh/?Identity=%25&iCAID=432476)
+  * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * Subject: `O = Let's Encrypt, CN = YR2`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
+  * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
 
 Click below for details on additional intermediates which are not part of the active issuance hierarchy:
 
@@ -108,44 +132,12 @@ These intermediate CAs have currently-valid certificates, but are not being issu
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295818), [issued certs](https://crt.sh/?Identity=%25&iCAID=295818)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132903), [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
-
-</details>
-
-<details>
-<summary>Upcoming</summary>
-
-These intermediate CAs were issued in 2025, and we expect to begin issuing from them in 2026.
-
-* **Let's Encrypt YE1**
-  * Subject: `O = Let's Encrypt, CN = YE1`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2028-09-02
-  * CA details: [crt.sh](https://crt.sh/?caid=432952), [issued certs](https://crt.sh/?Identity=%25&iCAID=432952)
-  * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
-* **Let's Encrypt YE2**
-  * Subject: `O = Let's Encrypt, CN = YE2`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2028-09-02
-  * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
-  * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
 * **Let's Encrypt YE3**
   * Subject: `O = Let's Encrypt, CN = YE3`
   * Key type: `ECDSA P-384`
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=432914), [issued certs](https://crt.sh/?Identity=%25&iCAID=432914)
   * Certificate details: [der](/certs/gen-y/int-ye3.der), [pem](/certs/gen-y/int-ye3.pem), [txt](/certs/gen-y/int-ye3.txt)
-* **Let's Encrypt YR1**
-  * Subject: `O = Let's Encrypt, CN = YR1`
-  * Key type: `RSA 2048`
-  * Valid until: 2028-09-02
-  * CA details: [crt.sh](https://crt.sh/?caid=432476), [issued certs](https://crt.sh/?Identity=%25&iCAID=432476)
-  * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
-* **Let's Encrypt YR2**
-  * Subject: `O = Let's Encrypt, CN = YR2`
-  * Key type: `RSA 2048`
-  * Valid until: 2028-09-02
-  * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
-  * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
 * **Let's Encrypt YR3**
   * Subject: `O = Let's Encrypt, CN = YR3`
   * Key type: `RSA 2048`
