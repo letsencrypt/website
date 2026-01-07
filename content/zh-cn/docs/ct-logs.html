@@ -1,15 +1,14 @@
 ---
 title: 证书透明化 (CT) 日志
 slug: ct-logs
-lastmod: 2025-08-27
+lastmod: 2026-01-04
 show_lastmod: 1
 ---
 
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >证书透明化 (CT)</a
-> 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。 因此，CT 正迅速成为关键基础设施。
+  <a href="https://www.certificate-transparency.org/what-is-ct">证书透明化 (CT)</a>
+ 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。 因此，CT 正迅速成为关键基础设施。
 </p>
 
 <p>
@@ -30,20 +29,6 @@ show_lastmod: 1
   如果您所属的机构有意支持我们持续开展这项事业，请考虑<a href="https://www.abetterinternet.org/sponsor/">捐款或成为赞助商</a>。
 </p>
 
-<h2>技术架构</h2>
-
-<p>
-  请参阅我们的英文博客文章 <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >How Let's Encrypt Runs CT Logs</a
->。
-</p>
-
-<h2>日志监控</h2>
-
-<p>
-  Let's Encrypt 研发了一款开源的 CT 日志监控工具 <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>。 我们使用这一工具监控自营日志系统的稳定性和准确性，期待它能在更多场合发挥作用。
-</p>
-
 <h2>CT 日志服务器</h2>
 <p>
 CT 日志在其生命期内所经历的各种状态可在<a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">此处</a>详细了解。
@@ -51,46 +36,32 @@ CT 日志在其生命期内所经历的各种状态可在<a href="https://google
 
 <h3>Sunlight</h3>
 <p>
-  Let's Encrypt 正在逐步将日志系统转移至 <a href="https://sunlight.dev">Sunlight</a>。
+  Let's Encrypt 目前使用 <a href="https://sunlight.dev">Sunlight</a> 软件运行 <a href="https://c2sp.org/static-ct-api">static-ct</a> 日志。
+</p>
+<p>
   各日志系统接受的根证书、公钥、日志 ID、分片间隔等信息可以在下方列出的各系统首页中查询。
 </p>
-<p>我们新部署的生产环境 CT 日志系统是 Sycamore 和 Willow，只接受由可信的 CA 颁发的证书。</p>
+<p>我们的生产环境 CT 日志称为 Sycamore 和 Willow，只接受由可信的 CA 颁发的证书。</p>
 <ul>
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>用于测试日志系统为 Twig，既接受由可信 CA 颁发的证书，也接受由某些测试 CA 颁发的证书，包括 Let's Encrypt 测试环境的证书。</p>
+<p>
+  用于测试日志系统为 Twig，既接受由可信 CA 颁发的证书，也接受由某些测试 CA 颁发的证书，包括 Let's Encrypt 测试环境的证书。
+</p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
 
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak 已被 <a href="https://support.apple.com/en-us/HT209255">Apple</a> 和 <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
-> 的 CT 项目收录。
-</li>
-<li>我们的生产环境 ACME 接口签发的证书也会提交至此系统。</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  公开可信的证书<b>不应</b>含有此日志系统的 SCT。
-</li>
-<li>
-  Let's Encrypt 的生产和<a href="/docs/staging-environment">测试</a>环境 ACME 接口签发的证书都会提交至 Sapling，但生产环境不会使用该系统的 SCT。
-</li>
-<li>
-  我们在将新版本的 <a href="http://github.com/google/trillian">Trillian</a> 和 <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
-> 部署到生产环境前会先在此系统中测试。
-</li>
-<li>
-  Sapling 不仅接受 Oak 所包含的全部根证书，还接受部分用于测试的根证书。
-</li>
-<li>
-  其他证书颁发机构也可以使用 Sapling 进行测试。
-</li>
-{{< /ct_logs >}}
+<h3>已停止服务的 RFC 6962 日志系统</h3>
+<p>
+  Let's Encrypt 曾有一套基于 Trillian 的日志系统，实现了 RFC 6962 接口。 该系统现已转为只读状态，并且将于 2026 年 2 月彻底停运。 详情参见 <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">RFC 6962 证书透明化日志停运计划</a>。 如需获取其网址和日志密钥，可以在 Google 或 Apple 的 CT 日志列表中查询。
+  这套旧的日志系统名为 Oak。
+</p>
+<p>
+  我们也曾在测试环境中运行过名为 Testflume 和 Sapling 的日志系统，这两套系统都已下线。
+</p>
 
 <h2>日志操作</h2>
 <p>

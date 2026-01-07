@@ -11,7 +11,7 @@ other = "Spenden"
 other = "Sponsern"
 
 [home_hero_annual_report]
-other = "Lesen Sie alles über unsere diesjährige gemeinnützige Arbeit in unserem <a href='https://abetterinternet.org/annual-reports/'>Jahresbericht 2024</a>."
+other = "Lesen Sie alles über unsere diesjährige gemeinnützige Arbeit in unserem <a href='https://abetterinternet.org/annual-reports/'>Jahresbericht 2025</a>."
 
 [home_major_sponsors]
 other = "Hauptsponsoren und Spender"
@@ -251,7 +251,7 @@ other = "Loslegen"
 other = "Entdecke unsere Arbeit für mehr Sicherheit und Datenschutz"
 
 [home_hero_annual_report_description]
-other = "Unser Jahresbericht 2024 zeigt, welche Fortschritte wir auf dem Weg zu einem besseren Internet gemacht haben."
+other = "Unser Jahresbericht 2025 zeigt, welche Fortschritte wir auf dem Weg zu einem besseren Internet gemacht haben."
 
 [home_hero_annual_report_button]
 other = "Jahresbericht lesen"

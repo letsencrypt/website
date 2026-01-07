@@ -1,14 +1,12 @@
 ---
 title: Certificate Transparency (CT) Logs
 slug: ct-logs
-lastmod: 2025-08-27
+lastmod: 2026-01-04
 show_lastmod: 1
 ---
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >Certificate Transparency (CT)</a
-  >
+  <a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a>
   is a system for logging and monitoring the issuance of TLS certificates. CT
   greatly enhances everyone's ability to monitor and study certificate issuance,
   and these capabilities have led to numerous improvements to the CA ecosystem
@@ -40,24 +38,6 @@ show_lastmod: 1
   <a href="https://www.abetterinternet.org/sponsor/">sponsoring or donating</a>.
 </p>
 
-<h2>Architecture</h2>
-
-<p>
-  Check out our blog to see
-  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >How Let's Encrypt Runs CT Logs</a
-  >!
-</p>
-
-<h2>Log Monitoring</h2>
-
-<p>
-  Let's Encrypt has created an open-source CT log monitoring tool called
-  <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. We
-  use this tool to monitor the stability and compliance of our own logs, and we
-  hope others will find it to be useful as well.
-</p>
-
 <h2>CT Logs</h2>
 <p>
 Information about the various lifecycle states that a CT log progresses through can be found <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">here</a>.
@@ -65,59 +45,39 @@ Information about the various lifecycle states that a CT log progresses through 
 
 <h3>Sunlight</h3>
 <p>
-  Let's Encrypt is transitioning to operating logs based on <a href="https://sunlight.dev">Sunlight</a>.
+  Let's Encrypt currently operates <a href="https://c2sp.org/static-ct-api">static-ct</a> logs based on
+  <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
   Information including accepted roots, public keys, log IDs, and shard intervals are available at each log's
   landing page, linked below.
 </p>
-<p>Sycamore and Willow are our new production CT logs, accepting certificates from trusted CAs.</p>
+<p>Sycamore and Willow are our production CT logs, accepting certificates from trusted CAs.</p>
 <ul>
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>Twig is a test log, accepting certificates from trusted CAs as well as some additional test CAs, including the Let's
-  Encrypt staging environment.</p>
+<p>
+  Twig is a test log, accepting certificates from trusted CAs as well as some additional test CAs, including the Let's
+  Encrypt staging environment.
+</p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
 
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak is incorporated into the
-  <a href="https://support.apple.com/en-us/HT209255">Apple</a> and
-  <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
-  >
-  CT programs.
-</li>
-<li>Our production ACME API environment submits certificates here.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  SCTs from these logs <b>SHOULD NOT</b> be incorporated into publicly trusted
-  certificates.
-</li>
-<li>
-  The Let's Encrypt production and
-  <a href="/docs/staging-environment">staging</a> ACME API environments both
-  submit certificates to Sapling, but the production environment does not use
-  the resulting SCTs.
-</li>
-<li>
-  We test new versions of
-  <a href="http://github.com/google/trillian">Trillian</a> and
-  <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
-  >
-  here before deploying them to production.
-</li>
-<li>
-  Sapling's accepted roots list includes all of the Oak accepted roots, plus
-  additional test roots.
-</li>
-<li>
-  Sapling can be used by other certificate authorities for testing purposes.
-</li>
-{{< /ct_logs >}}
+<h3>RFC 6962 Logs EOL</h3>
+<p>
+  Let's Encrypt formerly ran a log based on Trillian, implementing the RFC 6962 API. It is currently available
+  read-only, and will be shut down in February 2026. For more information, see the
+  <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">
+    end of life plan for our RFC 6962 Certificate Transparency logs
+  </a>. URLs and log keys can be found in Google and Apple's CT log lists, if required.
+  The old production log was called Oak.
+</p>
+<p>
+  We also ran test logs called Testflume and Sapling, which are no longer available.
+</p>
 
 <h2>Log Operations</h2>
 <p>

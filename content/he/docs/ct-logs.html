@@ -1,16 +1,13 @@
 ---
 title: יומני שקיפות אישורים (CT)
 slug: ct-logs
-lastmod: 2025-08-27
+lastmod: 2026-01-04
 show_lastmod: 1
 ---
 
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >שקיפות אישורים (CT)</a
->
-  היא מערכת לתיעוד ומעקב של הנפקת אישורי TLS. מערכת שקיפות האישורים מרחיבה את היכולת של כל אחד לעקוב ולחקור הנפקות אישורים והיכולות האלו הובילו למגוון שיפורים בסביבת הפעילות של רשויות האישורים ובאבטחת האינטרנט. כתוצאה מכך, שקיפות האישורים הופכת במהרה לתשתית חיונית.
+  <a href="https://www.certificate-transparency.org/what-is-ct">שקיפות אישורים (CT)</a> היא מערכת לתיעוד ומעקב אחר הנפקת אישורי TLS. מערכת שקיפות האישורים מרחיבה את היכולת של כל אחד לעקוב ולחקור הנפקות אישורים והיכולות האלו הובילו למגוון שיפורים בסביבת הפעילות של רשויות האישורים ובאבטחת האינטרנט. כתוצאה מכך, שקיפות האישורים הופכת במהרה לתשתית חיונית.
 </p>
 
 <p>
@@ -31,20 +28,6 @@ show_lastmod: 1
   אם הארגון שלך מעוניין לסייע לנו להמשיך בעבודה הזאת, נא לשקול <a href="https://www.abetterinternet.org/sponsor/">להעניק חסות או לתרום</a>.
 </p>
 
-<h2>ארכיטקטורה</h2>
-
-<p>
-  בבלוג שלנו ניתן לראות <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >כיצד Let's Encrypt מריץ יומני שקיפות אישורים</a
->!
-</p>
-
-<h2>מעקב אחר יומנים</h2>
-
-<p>
-  ארגון Let's Encrypt יצר כלי מעקב יומני שקיפות אישורים בקוד פתוח בשם <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a> (נקר יומני אישורים). אנו משתמשים בכלי הזה כדי לעקוב אחר יציבות ותאימות היומנים שלנו עצמנו ומקווים שגם אחרים יעזרו בו.
-</p>
-
 <h2>יומני שקיפות אישורים</h2>
 <p>
 המידע על מגוון מצבי מחזורי החיים שיומן שקיפות אישורים יכול לעבור ביניהם נמצא <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">כאן</a>.
@@ -52,7 +35,9 @@ show_lastmod: 1
 
 <h3>Sunlight</h3>
 <p>
-  Let's Encrypt בתהליך הסבה ליומני פעילות מבוססי <a href="https://sunlight.dev">Sunlight</a>.
+  מיזם Let's Encrypt מפעיל יומני <a href="https://c2sp.org/static-ct-api">static-ct</a> שמבוססים על <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
   הפרטים כוללים אישורי על מקובלים, מפתחות ציבוריים, מזהי יומנים וזמני חלוקה שזמינים בכל עמוד נחיתה של יומן, קישור להלן.
 </p>
 <p>Sycamore ו־Willow הם יומני שקיפות האישורים לסביבה המבצעית שלנו, הם מקבלים אישורים מרשויות אישורים אמינות.</p>
@@ -60,38 +45,24 @@ show_lastmod: 1
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>Twig הוא יומן בדיקה שמקבל אישורים מרשויות אישורים אמינות לרבות כמה רשויות אישורים לבדיקה, כולל סביבת ההכנה להקמה של Let's Encrypt.</p>
+<p>
+  Twig הוא יומן בדיקה שמקבל אישורים מרשויות אישורים אמינות לרבות כמה רשויות אישורים לבדיקה, כולל סביבת ההכנה להקמה של Let's Encrypt.
+</p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
 
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak משולב לתוך תכניות שקיפות האישורים של <a href="https://support.apple.com/en-us/HT209255">Apple</a> ושל <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
->.
-</li>
-<li>ה־API של סביבת הפעילות המלאה של ACME מגישה את האישורים כאן.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  חותמות זמן של אישורים חתומים (SCTs) מהיומנים האלו <b>לא אמורים</b> להשתלב באישורים מהימנים ציבוריים.
-</li>
-<li>
-  סביבות הפעילות המלאה וה<a href="/docs/staging-environment">הכנה להקמה</a> של ה־API של ACME שתיהן מגישות אישורים ל־Sapling, אבל סביבת הפעילות המלאה לא משתמשת ב־SCTs שנוצרים.
-</li>
-<li>
-  כאן אנחנו בודקים גרסאות חדשות של <a href="http://github.com/google/trillian">Trillian</a> ושל <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
-> בטרם הטמעתן לסביבת הפעילות המלאה.
-</li>
-<li>
-  רשימת האישורים העליונים המקובלים של Sapling כוללים את כל האישורים העליונים שמקובלים על Oak בנוסף לאישורים עליונים לצורכי בדיקות.
-</li>
-<li>
-  רשויות אישורים אחרות יכולות להשתמש ב־Sapling למטרות בדיקות.
-</li>
-{{< /ct_logs >}}
+<h3>תום חיי יומני RFC 6962</h3>
+<p>
+  מיזם Let's Encrypt הריץ בעבר יומן שמבוסס על Trillian, שממש API לפי RFC 6962. הוא זמין כרגע לקריאה בלבד ויושבת סופית בפברואר 2026. למידע נוסף אפשר לפנות ל<a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">
+    תוכנית ההשבתה הסופית של יומני שקיפות האישורים מסוג RFC 6962
+  </a>. כתובות ומפתחות יומנים ניתן למצוא ביומני שקיפות האישורים של Google ושל Apple במקרה הצורך.
+  היומן המבצעי הישן נקרא Oak.
+</p>
+<p>
+  הרצנו גם יומני בדיקה שנקראים Testflue ו־Sapling, שאינם זמינים עוד.
+</p>
 
 <h2>פעולות על היומן</h2>
 <p>

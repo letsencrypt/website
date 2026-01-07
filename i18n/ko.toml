@@ -11,7 +11,7 @@ other = "기부"
 other = "스폰서"
 
 [home_hero_annual_report]
-other = "올해 비영리 단체 활동에 대한 자세한 내용은 <a href='https://abetterinternet.org/annual-reports/'> 2024 연례 보고서</a>에서 확인하세요."
+other = "올해 비영리 단체 활동에 대한 자세한 내용은 <a href='https://abetterinternet.org/annual-reports/'> 2025 연례 보고서</a>에서 확인하세요."
 
 [home_major_sponsors]
 other = "주요 스폰서 및 후원자"
@@ -251,7 +251,7 @@ other = "시작하기"
 other = "보안 및 개인정보 보호를 개선하기 위한 작업 살펴보세요"
 
 [home_hero_annual_report_description]
-other = "우리의 2024년 연례 보고서는 더 나은 인터넷을 향한 우리의 발전을 강조하고 있습니다."
+other = "우리의 2025년 연례 보고서는 더 나은 인터넷을 향한 우리의 발전을 강조하고 있습니다."
 
 [home_hero_annual_report_button]
 other = "연례 보고서 읽기"
@@ -341,16 +341,16 @@ other = "후원에 대해 알아보세요"
 other = "주요 스폰서 및 후원자"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "다이몬드 레벨"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "플래티넘 레벨"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "골드 레벨"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "실버 레벨"
 
 [common_read_more_arrow]
 other = " →"

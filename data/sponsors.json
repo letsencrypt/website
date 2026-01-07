@@ -124,11 +124,6 @@
       "image": "netlify-logo.png"
     },
     {
-      "name": "HostPapa",
-      "url": "https://www.hostpapa.com/lets-encrypt-hosting?utm_source=letsencrypt.org&utm_medium=referral&utm_campaign=us-seo&utm_term=web-hosting&utm_content=180x108-logo",
-      "image": "hostpapa-logo.png"
-    },
-    {
       "name": "dnsimple",
       "url": "https://dnsimple.com/letsencrypt",
       "image": "dnsimple-logo.png"
@@ -186,13 +181,8 @@
     },
     {
       "name": "Clever Cloud",
-      "url": "https://www.clever-cloud.com/",
+      "url": "https://www.clever.cloud/",
       "image": "clevercloud-logo.png"
-    },
-    {
-      "name": "IPInfo",
-      "url": "https://ipinfo.io/",
-      "image": "ipinfo-logo.png"
     },
     {
       "name": "GreenGeeks",
@@ -363,6 +353,11 @@
       "name": "Okta",
       "url": "https://www.okta.com/",
       "image": "okta-logo.png"
+    },
+    {
+      "name": "Replit",
+      "url": "https://replit.com/",
+      "image": "replit-logo.svg"
     }
   ]
 }

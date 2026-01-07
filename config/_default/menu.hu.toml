@@ -2,36 +2,17 @@
 name = "Segítség"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "Blog"
 weight = 25
 url = "/blog/"
+
 [[main]]
-name = "Adományozok"
+name = "Adományozz"
 weight = 30
 identifier = "donate"
-[[main]]
-name = "Rólunk"
-weight = 40
-identifier = "about"
-[[main]]
-name = "Internet Security Research Group (ISRG)"
-weight = 200
-identifier = "isrg"
-parent = "about"
-url = "https://www.abetterinternet.org/about/"
-[[main]]
-name = "Szolgáltatás státusza"
-weight = 60
-identifier = "status"
-parent = "about"
-url = "https://letsencrypt.status.io/"
-[[main]]
-name = "Karrier"
-weight = 110
-identifier = "careers"
-parent = "about"
-url = "https://www.abetterinternet.org/careers/"
+
 [[main]]
 name = "Legyen a támogatónk"
 weight = 40
@@ -39,3 +20,42 @@ identifier = "become-a-sponsor"
 parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
 
+[[main]]
+name = "Jelenlegi szponzorok és támogatók"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+
+[[main]]
+name = "Rólunk"
+weight = 40
+identifier = "about"
+
+[[main]]
+name = "Internetbiztonsági Kutatócsoport (ISRG)"
+weight = 200
+identifier = "isrg"
+parent = "about"
+url = "https://www.abetterinternet.org/about/"
+
+[[main]]
+name = "Szolgáltatás státusza"
+weight = 60
+identifier = "status"
+parent = "about"
+url = "https://letsencrypt.status.io/"
+
+[[main]]
+name = "Karrier"
+weight = 110
+identifier = "careers"
+parent = "about"
+url = "https://www.abetterinternet.org/careers/"
+
+[[main]]
+name = "Évi jelentések"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"

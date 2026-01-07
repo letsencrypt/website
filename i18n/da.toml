@@ -11,7 +11,7 @@ other = "Donér"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abetterinternet.org/annual-reports/'>2024 årsberetning</a>."
+other = "Læs alt om vores nonprofit arbejde i år i vores  <a href='https://abetterinternet.org/annual-reports/'>2025 årsberetning</a>."
 
 [home_major_sponsors]
 other = "Store sponsorer og finansieringskilder"
@@ -251,7 +251,7 @@ other = "Kom i gang"
 other = "Udforsk vores arbejde for at forbedre sikkerheden og privatlivets fred"
 
 [home_hero_annual_report_description]
-other = "Vores 2024 Årsrapport fremhæver de fremskridt, vi har gjort mod et bedre internet."
+other = "Vores 2025 Årsrapport fremhæver de fremskridt, vi har gjort mod et bedre internet."
 
 [home_hero_annual_report_button]
 other = "Læs årsrapporten"
@@ -341,16 +341,16 @@ other = "Lær om Sponsorater"
 other = "Store sponsorer og finansieringskilder"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Diamant Niveau"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Platin Niveau"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Guld Niveau"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Sølv Niveau"
 
 [common_read_more_arrow]
 other = " →"

@@ -1,16 +1,13 @@
 ---
 title: Certifikat Gennemsigtighed (CT) Logs
 slug: ct-logs
-lastmod: 2025-08-27
+lastmod: 2026-01-04
 show_lastmod: 1
 ---
 
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >Certifikat gennemsigtighed (CT)</a
->
-  er et system til logning og overvågning af udstedelsen af TLS-certifikater. CT forbedrer i høj grad alles evne til at overvåge og studere udstedelse af certifikater, og disse evner har ført til talrige forbedringer af CA-økosystemet og websikkerhed. Som følge heraf er CT hurtigt ved at blive kritisk infrastruktur.
+  <a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> er et system til logning og overvågning af udstedelsen af TLS-certifikater. CT forbedrer i høj grad alles evne til at overvåge og studere udstedelse af certifikater, og disse evner har ført til talrige forbedringer af CA-økosystemet og websikkerhed. Som følge heraf er CT hurtigt ved at blive kritisk infrastruktur.
 </p>
 
 <p>
@@ -32,20 +29,6 @@ show_lastmod: 1
   Hvis din organisation gerne vil hjælpe os med at fortsætte dette arbejde, så overvej venligst <a href="https://www.abetterinternet.org/sponsor/">sponsorering eller donering</a>.
 </p>
 
-<h2>Arkitektur</h2>
-
-<p>
-  Tjek vores blog for at se <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >Hvordan Let's Encrypt driver CT Logs</a
->!
-</p>
-
-<h2>Log Overvågning</h2>
-
-<p>
-  Let's Encrypt har oprettet et open source CT-logovervågningsværktøj kaldet <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Vi anvender dette værktøj til at overvåge stabiliteten og overholdelsen af vores egne logs, og vi håber, at andre også vil finde det nyttigt.
-</p>
-
 <h2>CT Logs</h2>
 <p>
 Oplysninger om de forskellige livscyklusser tilstande, som en CT log går gennem kan findes <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">her</a>.
@@ -53,48 +36,38 @@ Oplysninger om de forskellige livscyklusser tilstande, som en CT log går gennem
 
 <h3>Sunlight</h3>
 <p>
-  Let's Encrypt tester kørende logs baseret på <a href="https://sunlight.dev">Sunlight</a>.
+  Let's Encrypt anvender i øjeblikket <a href="https://c2sp.org/static-ct-api">static-ct</a> logs baseret på
+  <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
   Oplysninger, herunder accepterede roots, offentlige nøgler, log ID'er og shard intervaller er tilgængelige på hver log's
   landingsside, der er linket nedenfor.
 </p>
-<p>Sycamore og Pil er vores nye produktion CT logs, accepterer certifikater fra betroede CA'er.</p>
+<p>Sycamore og Willow er vores nye produktions CT logs, accepterer certifikater fra betroede CA'er.</p>
 <ul>
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>Twig er en test log, accepterer certifikater fra betroede CAs samt nogle yderligere test CA'er, herunder Let's Encrypts staging-miljø.</p>
+<p>
+  Twig er en test log, accepterer certifikater fra betroede CAs samt nogle yderligere test CA'er, herunder Let's Encrypts staging-miljø.
+</p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
 
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak er indarbejdet i <a href="https://support.apple.com/en-us/HT209255">Apple</a> og <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
-> CT-programmerne.
-</li>
-<li>Vores produktions ACME API miljø indsender certifikater her.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  SCT'er fra disse logs <b>MÅ IKKE</b> indgå i offentligt betroede certifikater.
-</li>
-<li>
-  Let's Encrypt produktion og <a href="/docs/staging-environment">staging</a> ACME API miljøer indsender begge certifikater til Testflume, men produktionsmiljøet anvender ikke de resulterende SCT'er.
-</li>
-<li>
-  Vi tester nye versioner af <a href="http://github.com/google/trillian">Trillian</a> og <a href="https://github.com/google/certificate-transparency-go"
-    >certifikat-gennemsigtighed-go</a
-> her, før vi anvender dem til produktion.
-</li>
-<li>
-  Sapling's accepterede root-liste omfatter alle de Oak-accepterede rødder plus
-  yderligere test-roots.
-</li>
-<li>
-  Sapling kan bruges af andre certifikatmyndigheder til testformål.
-</li>
-{{< /ct_logs >}}
+<h3>RFC 6962 Logs EOL</h3>
+<p>
+  Let's Encrypt anvendte tidligere en log baseret på Trillian, der implementerer RFC 6962 API. Den er i øjeblikket tilgængelig som
+kun-læsbar, og vil blive lukket ned i februar 2026. For mere information, se
+  <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">
+    end of life plan for vores RFC 6962 Certificate Transparency logs
+  </a>. Webadresser og lognøgler kan findes i Google og Apples CT log lister, hvis det kræves.
+  Den gamle produktionslog blev kaldt Oak.
+</p>
+<p>
+  Vi kørte også test logs kaldet Testflume og Sapling, som ikke længere er tilgængelige.
+</p>
 
 <h2>Log Handlinger</h2>
 <p>

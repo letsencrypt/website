@@ -7,7 +7,7 @@ weight = 150
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt je bezplatná, automatizovaná a otevřená certifikační autorita, kterou vám přináší nezisková organizace <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Vše o naší letošní neziskové práci si můžete přečíst v naší <a href="https://www.abetterinternet.org/annual-reports/">výroční zprávě za rok 2024</a>.
+Let's Encrypt je bezplatná, automatizovaná a otevřená certifikační autorita, kterou vám přináší nezisková organizace <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Vše o naší letošní neziskové práci si můžete přečíst v naší <a href="https://www.abetterinternet.org/annual-reports/">výroční zprávě za rok 2025</a>.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
