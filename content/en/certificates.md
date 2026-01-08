@@ -73,6 +73,10 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132900), [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132895), [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
   * CRL hostname: `e7.c.lencr.org`
+  * Chains:
+    * Default: EE ← E7 ← ISRG Root X1
+    * Alt 1: EE ← E7 ← ISRG Root X2
+    * Alt 2: EE ← E7 ← ISRG Root X2 ← ISRG Root X1
 * **Let's Encrypt E8**
   * Subject: `O = Let's Encrypt, CN = E8`
   * Key type: `ECDSA P-384`
@@ -81,6 +85,10 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132890), [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132901), [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
   * CRL hostname: `e8.c.lencr.org`
+  * Chains:
+    * Default: EE ← E8 ← ISRG Root X1
+    * Alt 1: EE ← E8 ← ISRG Root X2
+    * Alt 2: EE ← E8 ← ISRG Root X2 ← ISRG Root X1
 * **Let's Encrypt R12**
   * Subject: `O = Let's Encrypt, CN = R12`
   * Key type: `RSA 2048`
@@ -88,6 +96,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295816), [issued certs](https://crt.sh/?Identity=%25&iCAID=295816)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132898), [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
   * CRL hostname: `r12.c.lencr.org`
+  * Chains:
+    * Default: EE ← R12 ← ISRG Root X1
 * **Let's Encrypt R13**
   * Subject: `O = Let's Encrypt, CN = R13`
   * Key type: `RSA 2048`
@@ -95,6 +105,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295817), [issued certs](https://crt.sh/?Identity=%25&iCAID=295817)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132902), [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
   * CRL hostname: `r13.c.lencr.org`
+  * Chains:
+    * Default: EE ← R13 ← ISRG Root X1
 * **Let's Encrypt YE1**
   * Subject: `O = Let's Encrypt, CN = YE1`
   * Key type: `ECDSA P-384`
@@ -102,6 +114,10 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=432952), [issued certs](https://crt.sh/?Identity=%25&iCAID=432952)
   * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
   * CRL hostname: `ye1.c.lencr.org`
+  * Chains:
+    * Default: EE ← YE1 ← Root YE ← ISRG Root X2 ← ISRG Root X1
+    * Alt 1: EE ← YE1 ← Root YE ← ISRG Root X2
+    * Alt 2: EE ← YE1 ← Root YE
 * **Let's Encrypt YE2**
   * Subject: `O = Let's Encrypt, CN = YE2`
   * Key type: `ECDSA P-384`
@@ -109,6 +125,10 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
   * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
   * CRL hostname: `ye2.c.lencr.org`
+  * Chains:
+    * Default: EE ← YE2 ← Root YE ← ISRG Root X2 ← ISRG Root X1
+    * Alt 1: EE ← YE2 ← Root YE ← ISRG Root X2
+    * Alt 2: EE ← YE2 ← Root YE
 * **Let's Encrypt YR1**
   * Subject: `O = Let's Encrypt, CN = YR1`
   * Key type: `RSA 2048`
@@ -116,6 +136,9 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=432476), [issued certs](https://crt.sh/?Identity=%25&iCAID=432476)
   * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
   * CRL hostname: `yr1.c.lencr.org`
+  * Chains:
+    * Default: EE ← YR1 ← ISRG Root X2 ← ISRG Root X1
+    * Alt 1: EE ← YR1 ← ISRG Root X2
 * **Let's Encrypt YR2**
   * Subject: `O = Let's Encrypt, CN = YR2`
   * Key type: `RSA 2048`
@@ -123,6 +146,9 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
   * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
   * CRL hostname: `yr2.c.lencr.org`
+  * Chains:
+    * Default: EE ← YR2 ← ISRG Root X2 ← ISRG Root X1
+    * Alt 1: EE ← YR2 ← ISRG Root X2
 
 Click below for details on additional intermediates which are not part of the active issuance hierarchy:
 
@@ -267,20 +293,6 @@ When an ACME client downloads a newly-issued certificate from Let's Encrypt's AC
 
 Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those two certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
 
-Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain available:
+Each of the active intermediates above documents which chain is offered by default, and which (if any) additional chains may be requested by ACME clients. In general, chains which terminate at ISRG Root X1 have the largest size but also the greatest compatibility with older clients. Chains which terminate at ISRG Root X2 (only offered for ECDSA certificates) are smaller, but will only work with clients that have received an update to their trust store after 2022 or so. Chains which terminate at Root YE or Root YR will are not expected to work with any of the major trust stores, as those roots have not yet been incorporated.
 
-<div style="text-align: center">
-RSA Subcriber Cert ← RSA Intermediate (R12 or R13) ← ISRG Root X1
-</div>
-<p><!-- to get the right line spacing after a block element --></p>
-
-Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
-
-<div style="text-align: center">
-ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X1
-
-ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X2
-</div>
-<p><!-- to get the right line spacing after a block element --></p>
-
-The first chain, up to ISRG Root X1, provides the greatest compatibility because that root certificate is included in the most trust stores. The second chain, up to ISRG Root X2, consumes fewer bytes of network bandwidth in each TLS handshake. We provide the first chain by default, to ensure the widest compatibility. Subscribers who wish to prioritize size over compatibility can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
+Subscribers who wish to use one of the alternate chains can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
