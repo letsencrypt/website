@@ -1,21 +1,13 @@
 ---
 title: Kommende Funktioner
 slug: upcoming-features
-lastmod: 2025-12-12
+lastmod: 2025-12-17
 show_lastmod: 1
 ---
 
 For meddelelser om kommende ændringer, venligst [abonnér på postlisten Tekniske opdateringer](https://letsencrypt.org/opt-in/) eller se [API-annonceringer kategori](https://community.letsencrypt.org/c/api-announcements/18) på Let's Encrypt community forum.
 
 # Kommende Funktioner
-
-## Kortlevende Certifikater
-
-Omkring slutningen af 2025 agter vi at tillade enhver klient, der understøtter ACME-profiler (se nedenfor) til [anmode om et "shortlived" certifikat](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). Disse certifikater er gyldige i så kort tid, at de ikke behøver at have tilbagekaldelsesoplysninger overhovedet indlejret i dem.
-
-## Ip Adresse Certifikater
-
-Omkring slutningen af 2025, Vi har til hensigt at tillade enhver klient, der anmoder om et kortvarigt certifikat (se ovenfor) også at anmode om, at certifikatet [indeholder IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i dets Emne Alternative Navne. Disse adresser vil blive [valideret på samme måde som DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) er i dag.
 
 ## Fjernelse af TLS Client Authentication EKU
 
@@ -54,3 +46,12 @@ Vi driver nu Certificate Transparency (CT) logs, som er i overensstemmelse med d
 Aktiveret: [23. Maj 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
 Vi leverer nu foreslåede fornyelsesvinduer til alle udstedte certifikater, som kunder kan forespørge ved hjælp af [ACME ARI udvidelse](https://www.rfc-editor.org/rfc/rfc9773.html).
+
+## Kortlevende Certifikater
+
+Klienten kan [anmode om et "shortlived" certifikat](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) ved hjælp af ACME-profiler. Disse certifikater er gyldige i så kort tid, at de ikke behøver at have tilbagekaldelsesoplysninger overhovedet indlejret i dem.
+
+## Ip Adresse Certifikater
+
+Kortlivede ("shortlived") certifikater (se ovenfor) kan anmode om, at certifikatet [indeholder IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i dets Emne Alternative Navne. Disse adresser vil blive [valideret på samme måde som DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) er i dag.
+
