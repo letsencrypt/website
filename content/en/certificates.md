@@ -74,9 +74,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132895), [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
   * CRL hostname: `e7.c.lencr.org`
   * Chains:
-    * Default: EE ← E7 ← ISRG Root X1
-    * Alt 1: EE ← E7 ← ISRG Root X2
-    * Alt 2: EE ← E7 ← ISRG Root X2 ← ISRG Root X1
+    * EE ← E7 ← ISRG Root X1 (Default)
+    * EE ← E7 ← ISRG Root X2
 * **Let's Encrypt E8**
   * Subject: `O = Let's Encrypt, CN = E8`
   * Key type: `ECDSA P-384`
@@ -86,9 +85,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132901), [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
   * CRL hostname: `e8.c.lencr.org`
   * Chains:
-    * Default: EE ← E8 ← ISRG Root X1
-    * Alt 1: EE ← E8 ← ISRG Root X2
-    * Alt 2: EE ← E8 ← ISRG Root X2 ← ISRG Root X1
+    * EE ← E8 ← ISRG Root X1 (Default)
+    * EE ← E8 ← ISRG Root X2
 * **Let's Encrypt R12**
   * Subject: `O = Let's Encrypt, CN = R12`
   * Key type: `RSA 2048`
@@ -97,7 +95,7 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132898), [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
   * CRL hostname: `r12.c.lencr.org`
   * Chains:
-    * Default: EE ← R12 ← ISRG Root X1
+    * EE ← R12 ← ISRG Root X1 (Default)
 * **Let's Encrypt R13**
   * Subject: `O = Let's Encrypt, CN = R13`
   * Key type: `RSA 2048`
@@ -106,7 +104,7 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132902), [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
   * CRL hostname: `r13.c.lencr.org`
   * Chains:
-    * Default: EE ← R13 ← ISRG Root X1
+    * EE ← R13 ← ISRG Root X1 (Default)
 * **Let's Encrypt YE1**
   * Subject: `O = Let's Encrypt, CN = YE1`
   * Key type: `ECDSA P-384`
@@ -115,9 +113,9 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
   * CRL hostname: `ye1.c.lencr.org`
   * Chains:
-    * Default: EE ← YE1 ← Root YE ← ISRG Root X2 ← ISRG Root X1
-    * Alt 1: EE ← YE1 ← Root YE ← ISRG Root X2
-    * Alt 2: EE ← YE1 ← Root YE
+    * EE ← YE1 ← Root YE ← ISRG Root X2 ← ISRG Root X1 (Default)
+    * EE ← YE1 ← Root YE ← ISRG Root X2
+    * EE ← YE1 ← Root YE
 * **Let's Encrypt YE2**
   * Subject: `O = Let's Encrypt, CN = YE2`
   * Key type: `ECDSA P-384`
@@ -126,9 +124,9 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
   * CRL hostname: `ye2.c.lencr.org`
   * Chains:
-    * Default: EE ← YE2 ← Root YE ← ISRG Root X2 ← ISRG Root X1
-    * Alt 1: EE ← YE2 ← Root YE ← ISRG Root X2
-    * Alt 2: EE ← YE2 ← Root YE
+    * EE ← YE2 ← Root YE ← ISRG Root X2 ← ISRG Root X1 (Default)
+    * EE ← YE2 ← Root YE ← ISRG Root X2
+    * EE ← YE2 ← Root YE
 * **Let's Encrypt YR1**
   * Subject: `O = Let's Encrypt, CN = YR1`
   * Key type: `RSA 2048`
@@ -137,8 +135,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
   * CRL hostname: `yr1.c.lencr.org`
   * Chains:
-    * Default: EE ← YR1 ← ISRG Root X2 ← ISRG Root X1
-    * Alt 1: EE ← YR1 ← ISRG Root X2
+    * EE ← YR1 ← Root YR ← ISRG Root X1 (Default)
+    * EE ← YR1 ← Root YR
 * **Let's Encrypt YR2**
   * Subject: `O = Let's Encrypt, CN = YR2`
   * Key type: `RSA 2048`
@@ -147,8 +145,8 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
   * CRL hostname: `yr2.c.lencr.org`
   * Chains:
-    * Default: EE ← YR2 ← ISRG Root X2 ← ISRG Root X1
-    * Alt 1: EE ← YR2 ← ISRG Root X2
+    * EE ← YR2 ← Root YR ← ISRG Root X1 (Default)
+    * EE ← YR2 ← Root YR
 
 Click below for details on additional intermediates which are not part of the active issuance hierarchy:
 
