@@ -521,7 +521,7 @@ other = "אפשר להמליץ למעסיק לך לתמוך בעבודה שלנ�
 other = "חסות"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "ארגונים רבים מכפילים את תרומות העובדים למלכ״רים. כדאי לבדוק אם לארגון שלך יש תוכנית הכפלה וכך אפשר להכפיל את ההשפעה שלך!"
 
 [donate_page_crypto_text]
 other = "אנחנו יכולים לקבל את רוב סוגי המטבעות הדיגיטליים כתרומה {{ .cryptoLink }}."
