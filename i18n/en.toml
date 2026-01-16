@@ -185,8 +185,14 @@ other = "Donate with PayPal button"
 [paypal_donate_title]
 other = "Donate with PayPal"
 
-[not_found]
-other = "That page doesn't exist, please check the address."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 # Ex. $10.000/yr (USD)
