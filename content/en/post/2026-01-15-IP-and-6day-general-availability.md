@@ -1,7 +1,7 @@
 ---
 author: Matthew McPherrin
 date: 2026-01-15T00:00:00Z
-slug: IP-and-6day-general-availability
+slug: 6day-and-ip-general-availability
 title: "6-day and IP Address Certificates are Generally Available"
 excerpt: "Short certificates are good for security and now available to all Let's Encrypt subscribers."
 display_default_footer: true
