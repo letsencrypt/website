@@ -178,8 +178,14 @@ other = "PayPal 捐款"
 [paypal_donate_title]
 other = "使用PayPal捐款"
 
-[not_found]
-other = "该页面不存在，请检查地址。"
+[not_found_title]
+other = "404 - 页面未找到"
+
+[not_found_message]
+other = "您查找的页面不存在或已移至别处。"
+
+[not_found_button]
+other = "返回首页"
 
 [amount_per_year]
 other = "每年 ${{ .nb }} （美元）"

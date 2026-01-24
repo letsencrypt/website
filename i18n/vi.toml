@@ -181,8 +181,14 @@ other = "Đóng góp với nút PayPal"
 [paypal_donate_title]
 other = "Đóng góp với PayPal"
 
-[not_found]
-other = "Trang này không tồn tại, hãy kiểm tra lại địa chỉ."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/yr (USD)"

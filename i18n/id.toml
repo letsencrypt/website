@@ -181,8 +181,14 @@ other = "Tombol Donasi dengan PayPal"
 [paypal_donate_title]
 other = "Donasi dengan PayPal"
 
-[not_found]
-other = "Halaman itu tidak ada, harap periksa alamatnya."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/th (USD)"

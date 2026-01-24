@@ -181,8 +181,14 @@ other = "PayPal பொத்தான் மூலம் நன்கொடை �
 [paypal_donate_title]
 other = "PayPal மூலம் நன்கொடை அளிக்க"
 
-[not_found]
-other = "அந்தப் பக்கம் இல்லை, தயவுசெய்து முகவரியைச் சரிபார்க்கவும்."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/ஆண்டு (USD)"
