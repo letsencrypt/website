@@ -181,8 +181,14 @@ other = "Wesprzyj za pomocą przycisku PayPal"
 [paypal_donate_title]
 other = "Wesprzyj za pomocą PayPal"
 
-[not_found]
-other = "Ta strona nie istnieje, proszę sprawdzić adres."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/rok (USD)"
