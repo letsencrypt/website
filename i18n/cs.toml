@@ -181,8 +181,14 @@ other = "tlačítko Přispět přes PayPal"
 [paypal_donate_title]
 other = "Přispět přes PayPal"
 
-[not_found]
-other = "Tato stránka neexistuje, zkontrolujte prosím zadanou adresu."
+[not_found_title]
+other = "404 - Stránka nenalezena"
+
+[not_found_message]
+other = "Stránka, kterou hledáte, neexistuje nebo byla přesunuta."
+
+[not_found_button]
+other = "Návrat na úvodní stranu"
 
 [amount_per_year]
 other = "${{ .nb }}/rok (USD)"
