@@ -182,13 +182,13 @@ other = "Donér med PayPal-knappen"
 other = "Doner via PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 – Side ikke fundet"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Siden, du leder efter, eksisterer ikke eller er blevet flyttet."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Tilbage til forsiden"
 
 [amount_per_year]
 other = "${{ .nb }}/år (USD)"
