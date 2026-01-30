@@ -1,7 +1,7 @@
 ---
 title: 速率限制
 slug: rate-limits
-lastmod: 2025-06-12
+lastmod: 2026-01-30
 show_lastmod: true
 ---
 
