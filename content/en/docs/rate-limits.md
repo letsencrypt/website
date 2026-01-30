@@ -89,7 +89,7 @@ ability to create new orders refills at a rate of 1 order every 36 seconds.
 ### Overrides
 
 To exceed this limit, you must [request an
-override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for a
+override](https://portal.letsencrypt.org/sfe/v1/overrides/new-orders-per-account) for a
 specific account.
 
 </div>
@@ -119,9 +119,12 @@ a rate of 1 certificate every 202 minutes.
 
 ### Overrides
 
-To exceed this limit, you must [request an
-override](https://isrg.formstack.com/forms/rate_limit_adjustment_request) for
-the specific registered domain or an account.
+To exceed this limit, you must request an override for the specific [registered
+domain](https://portal.letsencrypt.org/sfe/v1/overrides/certificates-per-domain),
+[account
+id](https://portal.letsencrypt.org/sfe/v1/overrides/certificates-per-domain-per-account),
+or [IP
+Address](https://portal.letsencrypt.org/sfe/v1/overrides/certificates-per-ip).
 
 </div>
 <div class="boxed">
@@ -346,8 +349,7 @@ Transparency](https://www.certificate-transparency.org/) logs.
 # Requesting an Override
 
 If you are a large hosting provider or organization working on a Let's Encrypt
-integration, we have a [rate limiting
-form](https://isrg.formstack.com/forms/rate_limit_adjustment_request) that can
-be used to request higher rate limits. It takes a few weeks to process requests,
-so this form is not suitable if you just need to reset a rate limit faster than
-it resets on its own.
+integration, please use one or more of the override request links above to
+request higher rate limits. It takes a few weeks to process requests, so these
+forms are not suitable if you just need to reset a rate limit faster than it
+resets on its own.

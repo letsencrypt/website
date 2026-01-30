@@ -60,7 +60,7 @@ show_lastmod: true
 
 ### 豁免
 
-为特定账户[申请豁免](https://isrg.formstack.com/forms/rate_limit_adjustment_request)通过后方可越过此限制。
+为特定账户[申请豁免](https://portal.letsencrypt.org/sfe/v1/overrides/new-orders-per-account)通过后方可越过此限制。
 
 </div>
 <div class="boxed">
@@ -78,7 +78,7 @@ show_lastmod: true
 
 ### 豁免
 
-为特定的注册域名或账户[申请豁免](https://isrg.formstack.com/forms/rate_limit_adjustment_request)通过后方可越过此限制。
+为特定的注册域名或账户[申请豁免](https://portal.letsencrypt.org/sfe/v1/overrides/certificates-per-domain)通过后方可越过此限制。
 
 </div>
 <div class="boxed">
@@ -213,4 +213,4 @@ retry after 1970-01-01 00:18:15 UTC.
 
 # 申请豁免
 
-如果您是需要集成 Let's Encrypt 的大型托管服务提供商或机构，可以通过[速率限制表单](https://isrg.formstack.com/forms/rate_limit_adjustment_request)申请放宽限制。 处理申请需要数周的时间，因此填写此表单并不能为您提前解除已经触发的速率限制。
+如果您是需要集成 Let's Encrypt 的大型托管服务提供商或机构，可以通过速率限制表单申请放宽限制。 处理申请需要数周的时间，因此填写此表单并不能为您提前解除已经触发的速率限制。
