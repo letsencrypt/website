@@ -181,8 +181,14 @@ other = "Кнопка «Поддержать через PayPal»"
 [paypal_donate_title]
 other = "Поддержите нас с помощью PayPal"
 
-[not_found]
-other = "Этой страницы не существует. Пожалуйста, уточните адрес."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "{{ .nb }} долларов США в год"

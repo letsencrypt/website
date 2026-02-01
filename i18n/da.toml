@@ -181,8 +181,14 @@ other = "Donér med PayPal-knappen"
 [paypal_donate_title]
 other = "Doner via PayPal"
 
-[not_found]
-other = "Den side findes ikke, tjek venligst adressen."
+[not_found_title]
+other = "404 – Side ikke fundet"
+
+[not_found_message]
+other = "Siden, du leder efter, eksisterer ikke eller er blevet flyttet."
+
+[not_found_button]
+other = "Tilbage til forsiden"
 
 [amount_per_year]
 other = "${{ .nb }}/år (USD)"

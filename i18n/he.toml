@@ -181,8 +181,14 @@ other = "תרומה עם כפתור PayPal"
 [paypal_donate_title]
 other = "תרומה עם PayPal"
 
-[not_found]
-other = "העמוד הזה לא נמצא, נא לבדוק שהכתובת נכונה."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }} לשנה (דולר ארה״ב)"
@@ -521,7 +527,7 @@ other = "אפשר להמליץ למעסיק לך לתמוך בעבודה שלנ�
 other = "חסות"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "ארגונים רבים מכפילים את תרומות העובדים למלכ״רים. כדאי לבדוק אם לארגון שלך יש תוכנית הכפלה וכך אפשר להכפיל את ההשפעה שלך!"
 
 [donate_page_crypto_text]
 other = "אנחנו יכולים לקבל את רוב סוגי המטבעות הדיגיטליים כתרומה {{ .cryptoLink }}."

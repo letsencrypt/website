@@ -181,8 +181,14 @@ other = "Tipka za doniranje putem PayPal-a"
 [paypal_donate_title]
 other = "Donirajte putem PayPal-a"
 
-[not_found]
-other = "Tražena stranica ne postoji, molimo provjerite adresu."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/god (USD)"

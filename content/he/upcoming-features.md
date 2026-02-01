@@ -1,21 +1,13 @@
 ---
 title: יכולות מתוכננות
 slug: upcoming-features
-lastmod: 2025-12-12
+lastmod: 2025-12-17
 show_lastmod: 1
 ---
 
 לקבלת הכרזות על שינויים קרבים, נא [להירשם לרשימת הדיוור לעדכונים טכניים](https://letsencrypt.org/opt-in/) או לגשת ל[קטגוריית הכרזות ה־API](https://community.letsencrypt.org/c/api-announcements/18) בפורום הקהילתי של Let's Encrypt.
 
 # יכולות מתוכננות
-
-## אישורים קצרי מועד
-
-לקראת סוף 2025, אנו מתכננים לאפשר לכל לקוח שתומך בפרופילי ACME (רשימה להלן) [לבקש אישורים „קצרי מועד”](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/). האישורים האלה תקפים לזמן קצר כך שאין צורך להטמיע בהם פרטי שלילה.
-
-## אישורי כתובות IP
-
-לקראת סוף 2025, אנו מתכוונים לאפשר ללקוחות שמבקשים אישורים לתוקף קצר (פרטים לעיל) לבקש גם שהאישור [יכלול כתובות IP](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) בשמות הנושא החלופיים. הכתובות האלו [תתוקפנה באותו האופן כמו ששמות DNS](https://www.rfc-editor.org/rfc/rfc8738.html) מתוקפים כיום.
 
 ## יומן שקיפות אישורים
 
@@ -54,3 +46,12 @@ show_lastmod: 1
 הופעל: [ב־23 במרץ, 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
 אנו מספקים מעתה חלונות חידוש מומלצים לכל האישורים שנופקו, לקוחות יכולים לתשאל לגביהם דרך [הרחבת ARI שלACME](https://www.rfc-editor.org/rfc/rfc9773.html).
+
+## אישורים קצרי מועד
+
+לקוחות יכולים [לבקש אישור „קצר תוקף” ](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) דרך פרופילים של ACME. האישורים האלה תקפים לזמן קצר כך שאין צורך להטמיע בהם פרטי שלילה.
+
+## אישורי כתובות IP
+
+אישורים קצרי מועד (מידע נוסף לעיל) יכולים לבקש שהאישור [יכיל כתובות IP](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) בשמות הנושא החלופיים שלו. הכתובות האלו [תתוקפנה באותו האופן כמו ששמות DNS](https://www.rfc-editor.org/rfc/rfc8738.html) מתוקפים כיום.
+

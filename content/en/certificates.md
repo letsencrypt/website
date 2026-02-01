@@ -8,7 +8,7 @@ show_lastmod: 1
 
 This page describes all of the current and relevant historical Certification Authorities operated by Let's Encrypt. Note that a CA is most correctly thought of as a key and a name: any given CA may be represented by _multiple_ certificates which all contain the same Subject and Public Key Information. In such cases, we have provided the details of all certificates which represent the CA. If you're looking for the Trust Anchor IDs associated with these CAs, see our page on [Object Identifiers](/docs/oids).
 
-[![ISRG Certificate Hierarchy Diagram, as of August 2025](/images/isrg-hierarchy.png)](/images/isrg-hierarchy.png)
+[![ISRG Certificate Hierarchy Diagram, as of January 2026](/images/isrg-hierarchy.png)](/images/isrg-hierarchy-full.png)
 
 # Root CAs
 
@@ -23,6 +23,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * CA details: [crt.sh](https://crt.sh/?caid=7394), [issued certs](https://crt.sh/?Identity=%25&iCAID=7394)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certificate details (cross-signed by DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retired)
+  * CRL hostname: `x1.c.lencr.org`
   * Test websites: [valid](https://valid-isrgrootx1.letsencrypt.org/), [revoked](https://revoked-isrgrootx1.letsencrypt.org/), [expired](https://expired-isrgrootx1.letsencrypt.org/)
 * **ISRG Root X2**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X2`
@@ -32,6 +33,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Certificate details (second cross-sign by ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
+  * CRL hostname: `x2.c.lencr.org`
   * Test websites: [valid](https://valid-isrgrootx2.letsencrypt.org/), [revoked](https://revoked-isrgrootx2.letsencrypt.org/), [expired](https://expired-isrgrootx2.letsencrypt.org/)
 
 These roots are not yet included in Root Program Trust Stores, but will be submitted for inclusion soon:
@@ -43,6 +45,7 @@ These roots are not yet included in Root Program Trust Stores, but will be submi
   * CA details: [crt.sh](https://crt.sh/?caid=430535), [issued certs](https://crt.sh/?Identity=%25&iCAID=430535)
   * Certificate details (self-signed): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Certificate details (cross-signed by ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
+  * CRL hostname: `ye.c.lencr.org`
   * Test websites: Forthcoming
 * **ISRG Root YR**
   * Subject: `O = ISRG, CN = Root YR`
@@ -51,13 +54,14 @@ These roots are not yet included in Root Program Trust Stores, but will be submi
   * CA details: [crt.sh](https://crt.sh/?caid=430543), [issued certs](https://crt.sh/?Identity=%25&iCAID=430543)
   * Certificate details (self-signed): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Certificate details (cross-signed by ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
+  * CRL hostname: `yr.c.lencr.org`
   * Test websites: Forthcoming
 
 For additional information on the compatibility of our root certificates with various devices and trust stores, see [Certificate Compatibility](/docs/cert-compat).
 
 # Subordinate (Intermediate) CAs
 
-We currently maintain four intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates.
+We currently maintain eight intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates. Subscriber certificates issued under the "classic" and "tlsclient" [profiles](/docs/profiles) will be issued from one of the first four intermediates listed (E7 through R13); conversely, Subscriber certificates issued under the "tlsserver" and "shortlived" profiles will be issued from one of the latter four intermediates (YE1 through YR2).
 
 All intermediate certificate Subjects have a Country field of `C = US`.
 
@@ -68,6 +72,10 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295813), [issued certs](https://crt.sh/?Identity=%25&iCAID=295813)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132900), [der](/certs/2024/e7.der), [pem](/certs/2024/e7.pem), [txt](/certs/2024/e7.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132895), [der](/certs/2024/e7-cross.der), [pem](/certs/2024/e7-cross.pem), [txt](/certs/2024/e7-cross.txt)
+  * CRL hostname: `e7.c.lencr.org`
+  * Chains:
+    * EE ← E7 ← ISRG Root X1 (Default)
+    * EE ← E7 ← ISRG Root X2
 * **Let's Encrypt E8**
   * Subject: `O = Let's Encrypt, CN = E8`
   * Key type: `ECDSA P-384`
@@ -75,18 +83,70 @@ All intermediate certificate Subjects have a Country field of `C = US`.
   * CA details: [crt.sh](https://crt.sh/?caid=295809), [issued certs](https://crt.sh/?Identity=%25&iCAID=295809)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132890), [der](/certs/2024/e8.der), [pem](/certs/2024/e8.pem), [txt](/certs/2024/e8.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132901), [der](/certs/2024/e8-cross.der), [pem](/certs/2024/e8-cross.pem), [txt](/certs/2024/e8-cross.txt)
+  * CRL hostname: `e8.c.lencr.org`
+  * Chains:
+    * EE ← E8 ← ISRG Root X1 (Default)
+    * EE ← E8 ← ISRG Root X2
 * **Let's Encrypt R12**
   * Subject: `O = Let's Encrypt, CN = R12`
   * Key type: `RSA 2048`
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295816), [issued certs](https://crt.sh/?Identity=%25&iCAID=295816)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132898), [der](/certs/2024/r12.der), [pem](/certs/2024/r12.pem), [txt](/certs/2024/r12.txt)
+  * CRL hostname: `r12.c.lencr.org`
+  * Chains:
+    * EE ← R12 ← ISRG Root X1 (Default)
 * **Let's Encrypt R13**
   * Subject: `O = Let's Encrypt, CN = R13`
   * Key type: `RSA 2048`
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295817), [issued certs](https://crt.sh/?Identity=%25&iCAID=295817)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132902), [der](/certs/2024/r13.der), [pem](/certs/2024/r13.pem), [txt](/certs/2024/r13.txt)
+  * CRL hostname: `r13.c.lencr.org`
+  * Chains:
+    * EE ← R13 ← ISRG Root X1 (Default)
+* **Let's Encrypt YE1**
+  * Subject: `O = Let's Encrypt, CN = YE1`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432952), [issued certs](https://crt.sh/?Identity=%25&iCAID=432952)
+  * Certificate details: [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
+  * CRL hostname: `ye1.c.lencr.org`
+  * Chains:
+    * EE ← YE1 ← Root YE ← ISRG Root X2 ← ISRG Root X1 (Default)
+    * EE ← YE1 ← Root YE ← ISRG Root X2
+    * EE ← YE1 ← Root YE
+* **Let's Encrypt YE2**
+  * Subject: `O = Let's Encrypt, CN = YE2`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
+  * Certificate details: [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
+  * CRL hostname: `ye2.c.lencr.org`
+  * Chains:
+    * EE ← YE2 ← Root YE ← ISRG Root X2 ← ISRG Root X1 (Default)
+    * EE ← YE2 ← Root YE ← ISRG Root X2
+    * EE ← YE2 ← Root YE
+* **Let's Encrypt YR1**
+  * Subject: `O = Let's Encrypt, CN = YR1`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432476), [issued certs](https://crt.sh/?Identity=%25&iCAID=432476)
+  * Certificate details: [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
+  * CRL hostname: `yr1.c.lencr.org`
+  * Chains:
+    * EE ← YR1 ← Root YR ← ISRG Root X1 (Default)
+    * EE ← YR1 ← Root YR
+* **Let's Encrypt YR2**
+  * Subject: `O = Let's Encrypt, CN = YR2`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
+  * Certificate details: [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
+  * CRL hostname: `yr2.c.lencr.org`
+  * Chains:
+    * EE ← YR2 ← Root YR ← ISRG Root X1 (Default)
+    * EE ← YR2 ← Root YR
 
 Click below for details on additional intermediates which are not part of the active issuance hierarchy:
 
@@ -102,6 +162,7 @@ These intermediate CAs have currently-valid certificates, but are not being issu
   * CA details: [crt.sh](https://crt.sh/?caid=295812), [issued certs](https://crt.sh/?Identity=%25&iCAID=295812)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
+  * CRL hostname: `e9.c.lencr.org`
 * **Let's Encrypt R14**
   * Subject: `O = Let's Encrypt, CN = R14`
   * Key type: `RSA 2048`
@@ -128,6 +189,7 @@ These intermediate CAs were issued in 2025, and we expect to begin issuing from 
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
   * Certificate details: [crt.sh](https://crt.sh/?id=20947047102), [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
+  * CRL hostname: `r14.c.lencr.org`
 * **Let's Encrypt YE3**
   * Subject: `O = Let's Encrypt, CN = YE3`
   * Key type: `ECDSA P-384`
@@ -146,12 +208,14 @@ These intermediate CAs were issued in 2025, and we expect to begin issuing from 
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
   * Certificate details: [crt.sh](https://crt.sh/?id=21135538542), [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
+  * CRL hostname: `ye3.c.lencr.org`
 * **Let's Encrypt YR3**
   * Subject: `O = Let's Encrypt, CN = YR3`
   * Key type: `RSA 2048`
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=432480), [issued certs](https://crt.sh/?Identity=%25&iCAID=432480)
   * Certificate details: [crt.sh](https://crt.sh/?id=21135539529), [der](/certs/gen-y/int-yr3.der), [pem](/certs/gen-y/int-yr3.pem), [txt](/certs/gen-y/int-yr3.txt)
+  * CRL hostname: `yr3.c.lencr.org`
 
 </details>
 
@@ -166,12 +230,14 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183283), [issued certs](https://crt.sh/?Identity=%25&iCAID=183283)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
+  * CRL hostname: `e1.c.lencr.org`
 * **Let's Encrypt E2**
   * Subject: `O = Let's Encrypt, CN = E2`
   * Key type: `ECDSA P-384`
   * Valid until: 2025-09-15 (expired)
   * CA details: [crt.sh](https://crt.sh/?caid=183284), [issued certs](https://crt.sh/?Identity=%25&iCAID=183284)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+  * CRL hostname: `e2.c.lencr.org`
 * **Let's Encrypt E5**
   * Subject: `O = Let's Encrypt, CN = E5`
   * Key type: `ECDSA P-384`
@@ -179,6 +245,7 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * CA details: [crt.sh](https://crt.sh/?caid=295810), [issued certs](https://crt.sh/?Identity=%25&iCAID=295810)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132891), [der](/certs/2024/e5.der), [pem](/certs/2024/e5.pem), [txt](/certs/2024/e5.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132892), [der](/certs/2024/e5-cross.der), [pem](/certs/2024/e5-cross.pem), [txt](/certs/2024/e5-cross.txt)
+  * CRL hostname: `e5.c.lencr.org`
 * **Let's Encrypt E6**
   * Subject: `O = Let's Encrypt, CN = E6`
   * Key type: `ECDSA P-384`
@@ -186,6 +253,7 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * CA details: [crt.sh](https://crt.sh/?caid=295819), [issued certs](https://crt.sh/?Identity=%25&iCAID=295819)
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132905), [der](/certs/2024/e6.der), [pem](/certs/2024/e6.pem), [txt](/certs/2024/e6.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132904), [der](/certs/2024/e6-cross.der), [pem](/certs/2024/e6-cross.pem), [txt](/certs/2024/e6-cross.txt)
+  * CRL hostname: `e6.c.lencr.org`
 * **Let's Encrypt R3**
   * Subject: `O = Let's Encrypt, CN = R3`
   * Key type: `RSA 2048`
@@ -193,6 +261,7 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * CA details: [crt.sh](https://crt.sh/?caid=183267), [issued certs](https://crt.sh/?Identity=%25&iCAID=183267)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
+  * CRL hostname: `r3.c.lencr.org`
 * **Let's Encrypt R4**
   * Subject: `O = Let's Encrypt, CN = R4`
   * Key type: `RSA 2048`
@@ -200,18 +269,21 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * CA details: [crt.sh](https://crt.sh/?caid=183268), [issued certs](https://crt.sh/?Identity=%25&iCAID=183268)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+  * CRL hostname: `r4.c.lencr.org`
 * **Let's Encrypt R10**
   * Subject: `O = Let's Encrypt, CN = R10`
   * Key type: `RSA 2048`
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295814), [issued certs](https://crt.sh/?Identity=%25&iCAID=295814)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132896), [der](/certs/2024/r10.der), [pem](/certs/2024/r10.pem), [txt](/certs/2024/r10.txt)
+  * CRL hostname: `r10.c.lencr.org`
 * **Let's Encrypt R11**
   * Subject: `O = Let's Encrypt, CN = R11`
   * Key type: `RSA 2048`
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295815), [issued certs](https://crt.sh/?Identity=%25&iCAID=295815)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132897), [der](/certs/2024/r11.der), [pem](/certs/2024/r11.pem), [txt](/certs/2024/r11.txt)
+  * CRL hostname: `r11.c.lencr.org`
 * **Let's Encrypt Authority X1**
   * Subject: `O = Let's Encrypt, CN = Let's Encrypt Authority X1`
   * Key type: `RSA 2048`
@@ -251,20 +323,6 @@ When an ACME client downloads a newly-issued certificate from Let's Encrypt's AC
 
 Sometimes there's more than one valid chain for a given certificate: for example, if an intermediate has been cross-signed, then either one of those two certificates could be the second entry, "chaining up to" either of two different roots. In this case, different website operators may want to select different chains depending on the properties that they care about the most.
 
-Subscriber certificates with RSA public keys are issued from our RSA intermediates, which are issued only from our RSA root ISRG Root X1 (i.e. they are not cross-signed). Therefore, all RSA subscriber certificates have only a single chain available:
+Each of the active intermediates above documents which chain is offered by default, and which (if any) additional chains may be requested by ACME clients. In general, chains which terminate at ISRG Root X1 have the largest size but also the greatest compatibility with older clients. Chains which terminate at ISRG Root X2 (only offered for ECDSA certificates) are smaller, but will only work with clients that have received an update to their trust store after 2022 or so. Chains which terminate at Root YE or Root YR will are not expected to work with any of the major trust stores, as those roots have not yet been incorporated.
 
-<div style="text-align: center">
-RSA Subcriber Cert ← RSA Intermediate (R12 or R13) ← ISRG Root X1
-</div>
-<p><!-- to get the right line spacing after a block element --></p>
-
-Subscriber certificates with ECDSA public keys are issued from our ECDSA intermediates, which are issued both (i.e. are cross-signed) from our RSA root ISRG Root X1 and our ECDSA root ISRG Root X2. Therefore we offer two chains for these certificates:
-
-<div style="text-align: center">
-ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X1
-
-ECDSA Subcriber Cert ← ECDSA Intermediate (E7 or E8) ← ISRG Root X2
-</div>
-<p><!-- to get the right line spacing after a block element --></p>
-
-The first chain, up to ISRG Root X1, provides the greatest compatibility because that root certificate is included in the most trust stores. The second chain, up to ISRG Root X2, consumes fewer bytes of network bandwidth in each TLS handshake. We provide the first chain by default, to ensure the widest compatibility. Subscribers who wish to prioritize size over compatibility can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
+Subscribers who wish to use one of the alternate chains can reference their ACME client's documentation for instructions on how to request the alternate chain (for example, [certbot's `--preferred-chain` flag](https://eff-certbot.readthedocs.io/en/stable/using.html#certbot-command-line-options)).
