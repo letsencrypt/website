@@ -989,7 +989,7 @@ Here is the encoding of a SEQUENCE OF INTEGER containing the numbers 7,
 SET encoding
 ------------
 
-Like SEQUENCE, a SET is Contructed, meaning that its value bytes are the
+Like SEQUENCE, a SET is Constructed, meaning that its value bytes are the
 concatenation of its encoded fields. Its tag number is 0x11. Since the
 [Constructed vs Primitive](#constructed-vs-primitive) bit (bit 6) is
 always set to 1, that means it's encoded with a tag byte of 0x31.

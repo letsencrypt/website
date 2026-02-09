@@ -61,7 +61,7 @@ Note for translators:
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} A method to inform [user agents](#def-user-agent) about the [revocation](#def-revocation) status of a [certificate](#def-leaf). This is a list of the serial numbers of all revoked certificates from a given CA, signed by that CA. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
-{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} A signed file containing the needed information required by the [CA](#def-CA) to generated a certificate. Relevant information for [Let's Encrypt](#def-LE) are the [Common Name](#def-CN), [Subject Alternative Names](#def-SAN), and Subject Public Key Info. Usually, [client applications](#def-ACME-client) automatically generate the CSR for the user, although a web hosting provider or device might also generate a CSR. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
+{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} A signed file containing the needed information required by the [CA](#def-CA) to generate a certificate. Relevant information for [Let's Encrypt](#def-LE) are the [Common Name](#def-CN), [Subject Alternative Names](#def-SAN), and Subject Public Key Info. Usually, [client applications](#def-ACME-client) automatically generate the CSR for the user, although a web hosting provider or device might also generate a CSR. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
 {{% def id="store" name="Certificate Store" %}} A certificate store contains a list of trusted [roots](#def-root). Operating systems (such as Windows, Android or Debian) and [web browsers](#def-web-browser) (such as Firefox) maintain a certificate store. Browsers without one rely on the operating systems' certificate store. [Certificates](#def-leaf) provided by [Let's Encrypt](#def-LE) are [trusted by most certificates stores](/certificates). {{% /def %}}
 
@@ -87,7 +87,7 @@ Note for translators:
 
 {{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities like [Let's Encrypt](#def-LE) can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
 
-{{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} An type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
+{{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} A type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
@@ -141,7 +141,7 @@ Note for translators:
 
 {{% def id="root" name="Root certificate" %}} A [self-signed](#def-self-signed) certificate controlled by a [certificate authority](#def-CA), used to sign its [intermediate](#def-intermediate) certificates and included in [certificate stores](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 
-{{% def id="root-program" name="Root Program" %}} The policies an organization uses to decide which certificates to include in its [certificate store](#def-store), and thereforce which CAs are trusted by their software. {{% /def %}}
+{{% def id="root-program" name="Root Program" %}} The policies an organization uses to decide which certificates to include in its [certificate store](#def-store), and therefore which CAs are trusted by their software. {{% /def %}}
 
 {{% def id="RSA" abbr="RSA" %}} A public-key algorithm used for encryption and to digitally sign certificates. [Wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) {{% /def %}}
 
@@ -161,7 +161,7 @@ Note for translators:
 
 {{% def id="TLD" name="Top-Level Domain" abbr="TLD" %}} Highest level in the hierarchical Domain Name System, such as country-code top-level domains (ccTLDs) like `.de` (Germany), `.cn` (China) and generic top-level domains (gTLDs) like `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transport-Level Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
+{{% def id="TLS" name="Transport-Layer Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} The part of [DANE](#def-DANE) specifically related to validating [TLS](#def-TLS) connections. {{% /def %}}
 

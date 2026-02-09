@@ -131,7 +131,7 @@ The process for selecting a profile is described in [this Internet-Draft](https:
 
 In general, if you want to select a profile, you should:
 
-1. Read your ACME client's documentation to see if it support profile selection, and if it does, how to tell it which profile you want.
+1. Read your ACME client's documentation to see if it supports profile selection, and if it does, how to tell it which profile you want.
 2. Fetch the Let's Encrypt [production](https://acme-v02.api.letsencrypt.org/directory) or [staging](https://acme-staging-v02.api.letsencrypt.org/directory) directory object to see which profiles are available.
 3. Configure your desired profile within your ACME client.
 

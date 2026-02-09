@@ -189,7 +189,7 @@ to issue an OCSP responder signed by ISRG Root X2.
 
 # Putting It All Together
 
-Now that we’ve shared our new certificates look the way they do, there’s one
+Now that we've shared why our new certificates look the way they do, there’s one
 last thing we’d like to mention: how we actually went about issuing them.
 
 The creation of new root and intermediate certificates is a big deal, since
