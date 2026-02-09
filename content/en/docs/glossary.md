@@ -37,7 +37,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} A set of technical and policy requirements for CAs. Since all major [root programs](#def-root-program) incorporate the Baseline Requirements, CAs must follow these requirements to be trusted by most browsers. {{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificate for the corresponding domain name. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](/docs/caa) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificates for the corresponding domain name. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](/docs/caa) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
