@@ -560,7 +560,7 @@ Point ::= SEQUENCE {
 ```
 
 So now, to encode a Point with just an x coordinate of 9, instead of
-encoding x as a UNIVERSAL INTEGER, you'd sets bit 8 and 7 of the encoded
+encoding x as a UNIVERSAL INTEGER, you'd set bits 8 and 7 of the encoded
 tag to (1, 0) to indicate the context specific class, and set the low
 bits to 0, giving this encoding:
 

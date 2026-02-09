@@ -118,6 +118,6 @@ We ask that [ACME clients perform routine renewals at random times](https://lets
 
 ## Where can I learn more about TLS/SSL and PKI in general?
 
-Longtime security researcher and practitioner, Ivan Ristić, published a configuration guide that provides useful information about what you should consider as you <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">set up your TLS configuration</a>.
+Longtime security researcher and practitioner, Ivan Ristić, published a configuration guide that provides useful information about what you should consider as you <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">set up your TLS configuration</a>.
 
-For more extensive background and greater detail, we recommend <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, also written by Ristić.
+For more extensive background and greater detail, we recommend <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>, also written by Ristić.

@@ -119,7 +119,7 @@ their Subject Common Names from “Let’s Encrypt Authority X3” to just “R3
 relying on the previously-redundant Organization Name field to supply the
 words “Let’s Encrypt”. We’ve shortened their Authority Information Access
 Issuer and CRL Distribution Point URLs, and we’ve dropped their CPS and OCSP
-urls entirely. All of this adds up to another approximately 120 bytes of
+URLs entirely. All of this adds up to another approximately 120 bytes of
 savings without making any substantive change to the useful information in
 the certificate.
 
