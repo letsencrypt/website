@@ -22,7 +22,7 @@ To comply with CA/Browser Forum Baseline Requirement changes, we are
 
 ## Shutdown of Expiration Notification Emails
 
-On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database.
+On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and deleted all email addresses associated with ACME accounts from our production database.
 
 ## Removal of OCSP URLs
 

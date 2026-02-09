@@ -62,7 +62,7 @@ directly provision their TXT records is to support the best practice of
 periodically rotating your ACME account key. Because the digest value
 used for DNS-01 validation is computed based on your current ACME
 account key, it will change whenever you rotate your account key. If you
-asked customers to provision their TXT record manually , that means
+asked customers to provision their TXT record manually, that means
 notifying potential new customers that the value you asked them to put
 in DNS isn't valid anymore, and they need to use a different one. That’s pretty
 inconvenient! If you use the CNAME method instead, there’s only one

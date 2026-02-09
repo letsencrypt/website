@@ -33,7 +33,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [Max Names](#max-names)                                              | 100                                       |
 | [Identifier Types](#identifier-types)                                | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
@@ -120,7 +120,7 @@ this profile.
 | [Max Names](#max-names)                                              | 100                                       |
 | [Identifier Types](#identifier-types)                                | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 </div>

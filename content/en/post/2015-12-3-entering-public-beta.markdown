@@ -19,7 +19,7 @@ We have more work to do before we’re comfortable dropping the beta label entir
 
 ~~Instructions for getting a certificate with the *Let's Encrypt client* can be found *here*.~~
 
-Update: Feb. 10 2010, instructions for getting a certificate with [Certbot](https://github.com/certbot/certbot) (Let's Encrypt recommended client) can be found [here](https://certbot.eff.org/).
+Update: Feb. 10 2016, instructions for getting a certificate with [Certbot](https://github.com/certbot/certbot) (Let's Encrypt recommended client) can be found [here](https://certbot.eff.org/).
 
 [Let’s Encrypt Community Support](https://community.letsencrypt.org/) is an invaluable resource for our community, we strongly recommend making use of the site if you have any questions about Let’s Encrypt.
 

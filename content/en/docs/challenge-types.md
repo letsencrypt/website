@@ -108,7 +108,7 @@ Pros:
 
 - You can use this challenge to issue certificates containing wildcard domain names.
 - It works well even if you have multiple web servers.
-- You can use this challenge to domain names whose webservers aren't exposed to the public internet.
+- You can use this challenge to validate domain names whose webservers aren't exposed to the public internet.
 
 Cons:
 
