@@ -26,7 +26,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
 | [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | <a href="#footnote-3">Yes<sup>‡</sup></a> |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No                                        |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
 | [Validity Period](#validity-period)                                  | 90 days                                   |
 | [Revocation Information](#revocation-information)                    | CRL                                       |
@@ -37,8 +37,6 @@ The classic profile is the default profile selected for all orders which do not 
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
-<sup id="footnote-3">‡</sup>: Until February 11, 2026. See [deprecation timeline information](/2025/05/14/ending-tls-client-authentication/) for a full timeline.
-</div>
 <div class="boxed">
 
 ## tlsserver
