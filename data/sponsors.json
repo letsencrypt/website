@@ -358,6 +358,11 @@
       "name": "Replit",
       "url": "https://replit.com/",
       "image": "replit-logo.svg"
+    },
+    {
+      "name": "Railway",
+      "url": "https://railway.com/",
+      "image": "railway-logo-dark.svg"
     }
   ]
 }
