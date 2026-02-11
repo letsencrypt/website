@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2025-12-19
+lastmod: 2026-02-11
 show_lastmod: false
 ---
 
@@ -26,7 +26,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
 | [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | <a href="#footnote-3">Yes<sup>‡</sup></a> |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No                                        |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
 | [Validity Period](#validity-period)                                  | 90 days                                   |
 | [Revocation Information](#revocation-information)                    | CRL                                       |
@@ -37,8 +37,6 @@ The classic profile is the default profile selected for all orders which do not 
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
-<sup id="footnote-3">‡</sup>: Until February 11, 2026. See [deprecation timeline information](/2025/05/14/ending-tls-client-authentication/) for a full timeline.
-</div>
 <div class="boxed">
 
 ## tlsserver
@@ -91,18 +89,16 @@ We recommend this profile for those who fully trust their automation to renew th
 
 ## tlsclient
 
-The tlsclient profile is _currently_ identical to the classic profile. However,
-as [announced on our blog](/2025/05/14/ending-tls-client-authentication):
+Certificates issued with the tlsclient profile contain the TLS Client Auth EKU.
+It is otherwise identical to the classic profile.
 
-- on February 11, 2026, the TLS Client Auth EKU will be removed from the classic
-  profile, but will remain in this profile; and
-- on May 13, 2026, this profile will cease to exist.
+However, as [announced on our blog](/2025/05/14/ending-tls-client-authentication),
+this profile will cease to exist on May 13, 2026.
 
 This profile exists for the sole purpose of allowing Subscribers who need access
 to TLS Client Auth certificates to retain that EKU for slightly longer, to
 ease their transition into a TLS Server Auth-only world. If you do not
-specifically need the TLS Client Auth EKU, or if you do need it but are able to
-migrate away from it before February 2026, then you can and should safely ignore
+specifically need the TLS Client Auth EKU, then you can and should safely ignore
 this profile.
 
 
