@@ -35,4 +35,8 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
+      - name: Install xmllint
+        run: sudo apt-get install -y libxml2-utils
+      - name: Validate RSS feed
+        run: xmllint --noout public/feed.xml
       # - run: npm run test:html5validate

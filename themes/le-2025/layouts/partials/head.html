@@ -11,7 +11,9 @@
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<link rel="alternate" type="application/rss+xml" title="Let's Encrypt Blog" href="/feed.xml">
+{{ with site.Home.OutputFormats.Get "RSS" -}}
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">
+{{- end }}
 {{ with (templates.Defer (dict "key" "global" "ctx" .)) }}
   {{ partial "head/css.html" .ctx }}
 {{ end }}
