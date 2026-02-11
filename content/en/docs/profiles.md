@@ -91,18 +91,16 @@ We recommend this profile for those who fully trust their automation to renew th
 
 ## tlsclient
 
-The tlsclient profile is _currently_ identical to the classic profile. However,
-as [announced on our blog](/2025/05/14/ending-tls-client-authentication):
+Certificates issued with the tlsclient profile contain the TLS Client Auth EKU.
+It is otherwise identical to the classic profile.
 
-- on February 11, 2026, the TLS Client Auth EKU will be removed from the classic
-  profile, but will remain in this profile; and
-- on May 13, 2026, this profile will cease to exist.
+However, as [announced on our blog](/2025/05/14/ending-tls-client-authentication)
+on May 13, 2026, this profile will cease to exist.
 
 This profile exists for the sole purpose of allowing Subscribers who need access
 to TLS Client Auth certificates to retain that EKU for slightly longer, to
 ease their transition into a TLS Server Auth-only world. If you do not
-specifically need the TLS Client Auth EKU, or if you do need it but are able to
-migrate away from it before February 2026, then you can and should safely ignore
+specifically need the TLS Client Auth EKU, then you can and should safely ignore
 this profile.
 
 

@@ -11,7 +11,7 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 ## Removal of TLS Client Authentication EKU
 
-On February 11, 2026, we intend to [remove the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. Prior to that date, we will offer an alternative profile which will still contain that EKU, but note that this will be a temporary stop-gap for clients that need more time to migrate away from needing it: that alternate profile will go away on May 13, 2026.
+On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. As a temporary stop-gap for clients that need more time to migrate, we have a [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile available until May 13, 2026.
 
 ## Decreasing Certificate Lifetimes to 45 Days
 
