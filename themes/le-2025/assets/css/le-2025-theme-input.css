@@ -466,6 +466,20 @@
 /* Component styles */
 @layer components {
 
+  .rss-feed-link .rss-icon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    -webkit-mask-image: url('/images/rss-icon.svg');
+    mask-image: url('/images/rss-icon.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
   pre, code {
     @apply text-[15px] border border-[#e8e8e8] rounded-[3px] bg-[#eef];
     direction: ltr;

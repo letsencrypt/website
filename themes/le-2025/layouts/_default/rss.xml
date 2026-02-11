@@ -7,8 +7,8 @@
     {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     <generator>Hugo v{{ hugo.Version }}</generator>
     {{ with .OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />{{ end }}
-      {{ $posts := where .Site.RegularPages "Type" "in" (slice "post")  | first 10 }}{{ range $posts }}<item>
-        <title>{{ .Title | safeHTML }}</title>
+      {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") }}{{ range $posts }}<item>
+        <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>
         <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
         <description>{{ safeHTML "<![CDATA["}}{{ chomp .Content }}{{ safeHTML "]]>"}}</description>
