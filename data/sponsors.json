@@ -63,6 +63,11 @@
       "name": "SerpApi",
       "url": "https://serpapi.com/",
       "image": "SerpApi-black.png"
+    },
+    {
+      "name": "Snowflake",
+      "url": "https://www.snowflake.com/",
+      "image": "snowflake-logo.png"
     }
   ],
   "silver": [
