@@ -368,6 +368,11 @@
       "name": "Railway",
       "url": "https://railway.com/",
       "image": "railway-logo-dark.svg"
+    },
+    {
+      "name": "Fastmail",
+      "url": "https://www.fastmail.com/",
+      "image": "fastmail-logo.png"
     }
   ]
 }
