@@ -182,13 +182,13 @@ other = "תרומה עם כפתור PayPal"
 other = "תרומה עם PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - העמוד לא נמצא"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "העמוד שחיפשת לא קיים או שהועבר."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "חזרה לעמוד הבית"
 
 [amount_per_year]
 other = "${{ .nb }} לשנה (דולר ארה״ב)"
