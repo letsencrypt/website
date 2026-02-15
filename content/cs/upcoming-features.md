@@ -1,7 +1,7 @@
 ---
 title: Připravované funkce
 slug: upcoming-features
-lastmod: 2025-12-17
+lastmod: 2026-02-11
 show_lastmod: 1
 ---
 
@@ -11,7 +11,7 @@ Oznámení o nadcházejících změnách najdete [v mailing listu Technické akt
 
 ## Odstranění EKU ověřování klienta TLS
 
-11. února 2026 hodláme <a href=„https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/“>odstranit z našeho výchozího profilu certifikátu rozšířené použití klíče (EKU) „TLS Client Authentication“</a>. Před tímto datem nabídneme alternativní profil, který bude stále obsahovat tuto jednotku EKU, ale upozorňujeme, že se bude jednat o dočasné provizorium pro klienty, kteří potřebují více času na migraci, aby ji nepotřebovali: tento alternativní profil zanikne 13. května 2026.
+11. února 2026 <a href=„https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/“>jsme odstranili z našeho výchozího profilu certifikátu rozšířené použití klíče (EKU) „TLS Client Authentication“</a>. Jako dočasné provizorní řešení pro klienty, kteří potřebují více času na migraci, máme k dispozici profil [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient), který bude platný do 13. května 2026.
 
 ## Zkrácení platnosti certifikátů na 45 dní
 
