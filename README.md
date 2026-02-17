@@ -1,5 +1,4 @@
-Let's Encrypt Website
-=====================
+# Let's Encrypt Website
 
 This is the repository for the main [Let's Encrypt website].
 
@@ -42,16 +41,26 @@ To help with translation, please see [TRANSLATION.md].
 [TRANSLATION.md]: https://github.com/letsencrypt/website/blob/main/TRANSLATION.md
 [netlify.toml]: https://github.com/letsencrypt/website/blob/main/netlify.toml
 
+# Importing CPS documents
+
+When importing new CPS (Certification Practice Statement) HTML documents into `content/en/documents/`, run the inline style converter to replace any `style` attributes with Tailwind classes:
+
+```sh
+node scripts/convert-inline-styles.js content/en/documents/ISRG-CPS-v2.9.html
+```
+
 # Creating new pages
 
 When creating new pages you'll need to add a translation stub for each language.
 You can use the `new-page.sh` script to create these automatically:
+
 ```sh
 Usage: ./new-page.sh <page-path> <page title>
 Examples:
 ./new-page.sh my-page "My Page Title"
 ./new-page.sh post/my-post "My Post Title"
 ```
+
 ```sh
 $ ./new-page.sh docs/new-page "My New Page"
 Created page: ./content/vi/docs/new-page.md

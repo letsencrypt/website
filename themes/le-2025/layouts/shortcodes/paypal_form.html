@@ -2,19 +2,19 @@
   <div id="smart-button-container">
     <p
       id="descriptionError"
-      style="visibility: hidden; color: red; text-align: center; display: none"
+      class="hidden invisible text-[red] text-center"
     >
       Please enter a description
     </p>
     <p
       id="priceLabelError"
-      style="visibility: hidden; color: red; text-align: center; display: none"
+      class="hidden invisible text-[red] text-center"
     >
       Please enter a price
     </p>
     <p
       id="invoiceidError"
-      style="visibility: hidden; color: red; text-align: center; display: none"
+      class="hidden invisible text-[red] text-center"
     >
       Please enter an Invoice ID
     </p>
@@ -88,10 +88,6 @@
 
       var elArr = [description, amount];
 
-      // if (invoiceidDiv.firstChild.innerHTML.length > 1) {
-      //   invoiceidDiv.style.display = "block";
-      // }
-
       var purchase_units = [];
       purchase_units[0] = {};
       purchase_units[0].amount = {};
@@ -112,7 +108,7 @@
           onInit: function (data, actions) {
             actions.disable();
 
-            if (invoiceidDiv.style.display === "block") {
+            if (!invoiceidDiv.classList.contains("hidden")) {
               elArr.push(invoiceid);
             }
 
@@ -130,30 +126,24 @@
 
           onClick: function () {
             if (description.value.length < 1) {
-              descriptionError.style.visibility = "visible";
-              descriptionError.style.display = "block";
+              descriptionError.classList.remove("hidden", "invisible");
             } else {
-              descriptionError.style.visibility = "hidden";
-              descriptionError.style.display = "none";
+              descriptionError.classList.add("hidden", "invisible");
             }
 
             if (amount.value.length < 1) {
-              priceError.style.visibility = "visible";
-              priceError.style.display = "block";
+              priceError.classList.remove("hidden", "invisible");
             } else {
-              priceError.style.visibility = "hidden";
-              priceError.style.display = "none";
+              priceError.classList.add("hidden", "invisible");
             }
 
             if (
               invoiceid.value.length < 1 &&
-              invoiceidDiv.style.display === "block"
+              !invoiceidDiv.classList.contains("hidden")
             ) {
-              invoiceidError.style.visibility = "visible";
-              invoiceidError.style.display = "block";
+              invoiceidError.classList.remove("hidden", "invisible");
             } else {
-              invoiceidError.style.visibility = "hidden";
-              invoiceidError.style.display = "none";
+              invoiceidError.classList.add("hidden", "invisible");
             }
 
             purchase_units[0].description = description.value;
