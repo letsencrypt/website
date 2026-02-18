@@ -4,12 +4,12 @@
 <title>
 {{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
 </title>
-<meta name="description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end -}}" />
+<meta name="description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{if .IsPage}}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end -}}" />
 
 <meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ with site.Home.OutputFormats.Get "RSS" -}}
 <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">
