@@ -151,7 +151,7 @@ other = "Začátek okna"
 [certificate_transparency_window_end]
 other = "Konec okna"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Prohlášení o certifikačních postupech"
 
 [overview]

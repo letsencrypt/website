@@ -151,8 +151,8 @@ other = "Begin des Zeitfensters"
 [certificate_transparency_window_end]
 other = "Ende des Zeitfensters"
 
-[certification_practices_statement]
-other = "Certification Practices Statement"
+[certification_practice_statement]
+other = "Certification Practice Statement"
 
 [overview]
 other = "Überblick"

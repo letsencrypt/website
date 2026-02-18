@@ -151,7 +151,7 @@ other = "Дата начала"
 [certificate_transparency_window_end]
 other = "Дата окончания"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Заявление о практике сертификации"
 
 [overview]
