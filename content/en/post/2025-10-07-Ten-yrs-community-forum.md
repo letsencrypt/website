@@ -4,7 +4,7 @@ date: 2025-10-07T00:00:00Z
 slug: Ten-yrs-community-forum
 title: "Ten Years of Community Support"
 excerpt: "In its first decade, the Let's Encrypt Community Forum has helped tens of thousands of users, kept Let's Encrypt staff in touch with the community, and spurred new tools and projects."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

@@ -4,7 +4,7 @@ date: 2025-09-11T00:00:00Z
 slug: native-acme-for-nginx
 title: "Native ACME Support Comes to NGINX"
 excerpt: "The most-used web server and reverse proxy gives users a new certificate option."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 <div class="pull-quote-right">

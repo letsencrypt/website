@@ -4,7 +4,7 @@ date: 2025-01-22T00:00:00Z
 slug: ending-expiration-emails
 title: "Ending Support for Expiration Notification Emails"
 excerpt: "We will no longer send email reminders about upcoming certificate expirations."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: true
 ---
 

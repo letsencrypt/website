@@ -4,7 +4,7 @@ date: 2026-02-24T00:00:00Z
 slug: rate-limits-45-day-certs
 title: "Shorter Certificate Lifetimes and Rate Limits"
 excerpt: "Rate limits will be unaffected because renewals do not count toward limits."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

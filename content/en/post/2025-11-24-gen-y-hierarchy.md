@@ -4,7 +4,7 @@ date: 2025-11-24T00:00:00Z
 slug: gen-y-hierarchy
 title: "New \"Generation Y\" Hierarchy of Root and Intermediate Certificates"
 excerpt: "Let's Encrypt is beginning issuance from our new hierarchy of root and intermediate certificates."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

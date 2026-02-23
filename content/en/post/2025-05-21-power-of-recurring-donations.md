@@ -4,7 +4,7 @@ date: 2025-05-21T00:00:00Z
 slug: power-of-recurring-donations
 title: "Sustaining a More Secure Internet: The Power of Recurring Donations"
 excerpt: "Recurring donations empower Let’s Encrypt to maintain a secure and privacy-respecting Internet, allowing us to innovate and plan for the future with confidence."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
