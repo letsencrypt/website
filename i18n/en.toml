@@ -493,11 +493,11 @@ other = "Other Ways to Give"
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
+# [donate_page_funding_details_stat_percentage]
+# other = "100%"
 
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 # [donate_page_funding_details_paragraph]
 # other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
