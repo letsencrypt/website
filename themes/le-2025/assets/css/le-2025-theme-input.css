@@ -39,6 +39,9 @@
   }
 }
 
+.support-footer {
+  @apply bg-gray-200 p-6 -mx-4 md:mx-0;
+}
 @utility btn {
   /* Button styles */
   @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-150 ease-in-out;
@@ -234,6 +237,10 @@
     @apply mt-2 mb-2;
   }
 
+  & p:last-child {
+    @apply mb-0;
+  }
+
   & blockquote {
     @apply pl-4 py-1 my-6 border-l-4 border-gray-300 text-gray-700 italic;
   }
@@ -362,10 +369,10 @@
   @apply narrow-container mx-auto text-left pb-0.5;
 }
 @utility post-hero__breadcrumb {
-  @apply text-sm text-gray-600;
+  @apply text-sm;
 
   & a {
-    @apply hover:text-gray-900 transition-colors;
+    @apply text-white hover:text-gray-300 transition-colors;
   }
 }
 @utility post-hero__title {

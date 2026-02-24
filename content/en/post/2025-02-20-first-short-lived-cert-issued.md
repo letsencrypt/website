@@ -4,7 +4,7 @@ date: 2025-02-20T00:00:00Z
 slug: first-short-lived-cert-issued
 title: "We Issued Our First Six Day Cert"
 excerpt: "Hitting a milestone on our path toward optional shorter-lived certs."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

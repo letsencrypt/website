@@ -3,7 +3,7 @@ author: Josh Aas
 date: 2024-07-23T00:00:00Z
 excerpt: "Moving to a more privacy-respecting and efficient method of checking certificate revocation."
 title: "Intent to End OCSP Service"
-display_default_footer: false
+display_support_us_footer: false
 slug: replacing-OCSP-with-CRLs
 ---
 

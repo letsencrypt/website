@@ -4,7 +4,7 @@ date: 2025-06-04T00:00:00Z
 slug: how-we-reduced-the-impact-of-zombie-clients
 title: "How We Reduced the Impact of Zombie Clients"
 excerpt: "A new rate limit significantly reduced the load on our infrastructure."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

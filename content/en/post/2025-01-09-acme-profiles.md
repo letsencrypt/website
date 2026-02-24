@@ -4,7 +4,7 @@ date: 2025-01-09T00:00:00Z
 slug: acme-profiles
 title: "Announcing Certificate Profile Selection"
 excerpt: "New extension makes it possible for site operators and ACME clients to select new profile options for Let's Encrypt certificates."
-display_default_footer: true
+display_support_us_footer: true
 ---
 
 We are excited to announce a new extension to Let's Encrypt's implementation of the ACME protocol that we are calling "profile selection." This new feature will allow site operators and ACME clients to opt in to the next evolution of Let's Encrypt.
