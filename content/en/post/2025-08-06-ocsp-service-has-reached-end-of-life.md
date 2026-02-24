@@ -4,7 +4,7 @@ date: 2025-08-06T00:00:00Z
 slug: ocsp-service-has-reached-end-of-life
 title: "OCSP Service Has Reached End of Life"
 excerpt: "Today we turned off our Online Certificate Status Protocol (OCSP) service."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

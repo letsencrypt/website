@@ -4,7 +4,7 @@ date: 2025-05-14T00:00:00Z
 slug: ending-tls-client-authentication
 title: "Ending TLS Client Authentication Certificate Support in 2026"
 excerpt: "Let's Encrypt will no longer include the \"TLS Client Authentication\" Extended Key Usage (EKU) in our certificates beginning in 2026. Most users who use Let's Encrypt to secure websites won't be affected and won't need to take any action."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
