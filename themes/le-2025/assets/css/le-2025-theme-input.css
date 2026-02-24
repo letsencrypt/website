@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @source "../notwatching/hugo_stats.json";
 
 @theme {
@@ -188,11 +188,6 @@
     @apply bg-gray-200;
   }
 }
-@utility post-content {
-  & p:last-child {
-    @apply mb-0;
-  }
-}
 @utility prose-content {
   & h1:not(:first-child) {
     @apply mt-8;
@@ -240,6 +235,10 @@
 
   & li > ol {
     @apply mt-2 mb-2;
+  }
+
+  & p:last-child {
+    @apply mb-0;
   }
 
   & blockquote {
@@ -303,9 +302,9 @@
   }
 
   & li::before {
-    content: "";
+    content: '';
     @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
-    background-image: url("/images/le-logo-lockonly-black-cropped.svg");
+    background-image: url('/images/le-logo-lockonly-black-cropped.svg');
   }
 }
 @utility howitworks-figure {
@@ -434,6 +433,7 @@
 
 /* Base styles */
 @layer base {
+
   body {
     @apply antialiased;
   }
@@ -456,19 +456,12 @@
   .prose a[href]:not(.btn):not(nav a):not(.no-underline) {
     @apply underline decoration-link hover:decoration-black;
   }
-  .bg-le-blue
-    a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  .bg-le-blue a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
     @apply text-link-on-dark hover:text-link-on-dark-hover active:text-link-on-dark-active hover:underline hover:decoration-le-yellow;
   }
-  .bg-le-blue
-    p
-    a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),
-  .bg-le-blue
-    .prose
-    a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),
-  .bg-le-blue
-    .bg-white
-    a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
+  .bg-le-blue p a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),
+  .bg-le-blue .prose a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item),
+  .bg-le-blue .bg-white a[href]:not(.btn):not(nav a):not(.no-underline):not(.blog-grid-item) {
     @apply underline decoration-link-on-dark hover:decoration-le-yellow;
   }
 
@@ -479,30 +472,30 @@
 
 /* Component styles */
 @layer components {
+
   .rss-feed-link .rss-icon {
     display: inline-block;
     flex-shrink: 0;
     width: 14px;
     height: 14px;
     background-color: currentColor;
-    -webkit-mask-image: url("/images/rss-icon.svg");
-    mask-image: url("/images/rss-icon.svg");
+    -webkit-mask-image: url('/images/rss-icon.svg');
+    mask-image: url('/images/rss-icon.svg');
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
   }
 
-  pre,
-  code {
+  pre, code {
     @apply text-[15px] border border-[#e8e8e8] rounded-[3px] bg-[#eef];
     direction: ltr;
   }
 
   pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-    margin-bottom: 1rem;
+      padding: 8px 12px;
+      overflow-x: auto;
+      margin-bottom: 1rem;
   }
 
   pre code {
@@ -526,8 +519,7 @@
     @apply bg-[#424242] text-white font-semibold normal-case tracking-[.025em];
   }
 
-  table th,
-  table td {
+  table th, table td {
     @apply px-[15px] py-3 text-left border-b border-[#e8e8e8];
   }
 
@@ -556,21 +548,17 @@
 
   /* Glossary */
   @keyframes fadeIt {
-    0% {
-      background-color: #ffce00;
-    }
-    100% {
-      /* back to normal */
-    }
+    0%   { background-color: #FFCE00; }
+    100% { /* back to normal */ }
   }
 
-  dfn:target {
+  dfn:target{
     /* highlight for 3 seconds the selected definition target */
     animation: fadeIt 3s ease-out;
   }
   dfn {
     font-weight: bold;
-    padding-right: 0.25em; /* Prevent italics text from hitting the ":" */
+    padding-right: .25em; /* Prevent italics text from hitting the ":" */
   }
 
   /* Hide Netlify preview bar */
@@ -581,67 +569,68 @@
   article figure p {
     margin-bottom: 0;
   }
+
 }
 
 .hero-bg {
   @apply absolute top-0 left-0 w-full h-full bg-cover opacity-85 z-0;
-  background-image: url("/images/radiant_london_resized/radiant_london_5_480w.jpg");
+  background-image: url('/images/radiant_london_resized/radiant_london_5_480w.jpg');
   background-position: top left;
 }
 
 @media (width >= theme(--breakpoint-sm)) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_640w.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_640w.jpg');
     background-position: top center;
   }
 }
 
 @media (width >= theme(--breakpoint-lg)) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1080w.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1080w.jpg');
   }
 }
 
 @media (width >= theme(--breakpoint-xl)) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1280w.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1280w.jpg');
   }
 }
 
 @media (width >= theme(--breakpoint-2xl)) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1920w.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1920w.jpg');
   }
 }
 
 @media (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_480w@2x.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_480w@2x.jpg');
   }
 }
 
 @media (min-width: 640px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_640w@2x.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_640w@2x.jpg');
     background-position: top center;
   }
 }
 
 @media (min-width: 1080px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1080w@2x.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1080w@2x.jpg');
   }
 }
 
 @media (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1280w@2x.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1280w@2x.jpg');
   }
 }
 
 @media (min-width: 1920px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url("/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg");
+    background-image: url('/images/radiant_london_resized/radiant_london_5_1920w@2x.jpg');
   }
 }
 
@@ -651,11 +640,11 @@
 
 .pull-quote-right .quote-text-value {
   &::before {
-    content: "\201C";
+    content: '\201C';
     font-family: inherit;
   }
   &::after {
-    content: "\201D";
+    content: '\201D';
     font-family: inherit;
   }
 }

@@ -1,60 +1,91 @@
-{{ define "main" }} {{ $currentPage := . }} {{ $isUntranslated := false }} {{ if
-.Params.untranslated }} {{ $isUntranslated = true }} {{ range .Translations }}
-{{ if eq .Language.Lang "en" }} {{ $currentPage = . }} {{ end }} {{ end }} {{/*
-Fallback if no English translation found? For now, assumes it exists */}} {{ end
-}} {{ $heroParams := dict "title" $currentPage.Title }} {{ if not
-$isUntranslated }} {{ $p := . }} {{ with .Translations }} {{ $first := index . 0
-}} {{ with $first }} {{ if eq .Lang "en" }} {{ if .Lastmod.After $p.Lastmod }}
-{{ $heroParams = merge $heroParams (dict "fresherEnglishURL" .RelPermalink) }}
-{{ end }} {{ end }} {{ end }} {{ end }} {{ end }} {{ if eq $currentPage.Section
-"post" }} {{ $heroParams = merge $heroParams (dict "breadcrumb" (dict "text"
-(i18n "post_hero_breadcrumb_blog") "href" "/blog/" ) "meta" (dict "date"
-$currentPage.Date "author" $currentPage.Params.author ) ) }} {{ end }} {{ if not
-$currentPage.Lastmod.IsZero }} {{ $heroParams = merge $heroParams (dict
-"lastUpdated" ($currentPage.Lastmod.Format "January 2, 2006") "section"
-$currentPage.Section) }} {{ end }} {{ if eq $currentPage.Params.imageHero true
-}} {{ partial "components/post-hero-image" $heroParams }} {{ else }} {{ partial
-"components/post-hero" $heroParams }} {{ end }} {{ if and
-.Params.english_is_canonical (ne .Language.Lang "en") }}
-<div class="narrow-container mx-auto">
-  <div
-    class="canonical-warning my-4 p-4 border border-orange-300 bg-orange-50 text-orange-700 rounded"
-  >
-    <i class="fas fa-exclamation-circle mr-2" aria-hidden="true"></i>
-    {{ i18n "english_is_canonical" | safeHTML }}
-  </div>
-</div>
-{{ end }} {{ if $isUntranslated }} {{ if not .Params.do_not_translate }}
-<div class="narrow-container mx-auto">
-  <!--googleoff: all-->
-  <div
-    class="translation-warning my-4 p-4 border border-blue-300 bg-blue-50 text-blue-700"
-  >
-    {{ i18n "not_yet_translated" | safeHTML }}
-  </div>
-  <!--googleon: all-->
-</div>
-{{ end }} {{ end }} {{ if ne $currentPage.Params.useContainer false }}
-<div class="post-content narrow-container mx-auto py-8 prose-content">
-  {{ $currentPage.Content }} {{ partial "terms.html" (dict "taxonomy" "tags"
-  "page" $currentPage) }}
-</div>
-{{ else }} {{ $currentPage.Content }} {{ partial "terms.html" (dict "taxonomy"
-"tags" "page" $currentPage) }} {{ end }} {{ if eq
-$currentPage.Params.display_support_us_footer true }}
-<div class="narrow-container mx-auto">
-  <div class="support-footer">
-    <h3>{{ i18n "post_support_heading" }}</h3>
-    <p>
-      {{ i18n "post_support_body" }}
-      <a href="https://www.abetterinternet.org/getinvolved/"
-        >{{ i18n "post_support_link_get_involved" }}</a
-      >, <a href="/donate/">{{ i18n "post_support_link_donate" }}</a>, {{ i18n
-      "post_support_body_continued" }}
-      <a href="https://www.abetterinternet.org/sponsor/"
-        >{{ i18n "post_support_link_sponsor" }}</a
-      >.
-    </p>
-  </div>
-</div>
-{{ end }} {{ end }}
+{{ define "main" }}
+  {{ $currentPage := . }}
+  {{ $isUntranslated := false }}
+  {{ if .Params.untranslated }}
+    {{ $isUntranslated = true }}
+    {{ range .Translations }}
+      {{ if eq .Language.Lang "en" }}
+        {{ $currentPage = . }}
+      {{ end }}
+    {{ end }}
+    {{/* Fallback if no English translation found? For now, assumes it exists */}}
+  {{ end }}
+
+  {{ $heroParams := dict "title" $currentPage.Title }}
+
+  {{ if not $isUntranslated }}
+    {{ $p := . }}
+    {{ with .Translations }}
+      {{ $first := index . 0 }}
+      {{ with $first }}
+        {{ if eq .Lang "en" }}
+          {{ if .Lastmod.After $p.Lastmod }}
+            {{ $heroParams = merge $heroParams (dict "fresherEnglishURL" .RelPermalink) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if eq $currentPage.Section "post" }}
+    {{ $heroParams = merge $heroParams (dict
+      "breadcrumb" (dict
+        "text" (i18n "post_hero_breadcrumb_blog")
+        "href" "/blog/"
+      )
+      "meta" (dict
+        "date" $currentPage.Date
+        "author" $currentPage.Params.author
+      )
+    ) }}
+  {{ end }}
+
+  {{ if not $currentPage.Lastmod.IsZero }}
+    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod.Format "January 2, 2006") "section" $currentPage.Section) }}
+  {{ end }}
+
+  {{ if eq $currentPage.Params.imageHero true }}
+    {{ partial "components/post-hero-image" $heroParams }}
+  {{ else }}
+    {{ partial "components/post-hero" $heroParams }}
+  {{ end }}
+
+  {{ if and .Params.english_is_canonical (ne .Language.Lang "en") }}
+    <div class="narrow-container mx-auto">
+      <div class="canonical-warning my-4 p-4 border border-orange-300 bg-orange-50 text-orange-700 rounded">
+        <i class="fas fa-exclamation-circle mr-2" aria-hidden="true"></i>
+        {{ i18n "english_is_canonical" | safeHTML }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $isUntranslated }}
+    {{ if not .Params.do_not_translate }}
+      <div class="narrow-container mx-auto">
+        <!--googleoff: all-->
+        <div class="translation-warning my-4 p-4 border border-blue-300 bg-blue-50 text-blue-700">{{ i18n "not_yet_translated" | safeHTML }}</div>
+        <!--googleon: all-->
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if ne $currentPage.Params.useContainer false }}
+    <div class="narrow-container mx-auto py-8 prose-content">
+      {{ $currentPage.Content }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
+    </div>
+  {{ else }}
+    {{ $currentPage.Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
+  {{ end }}
+
+  {{ if eq $currentPage.Params.display_support_us_footer true }}
+    <div class="narrow-container mx-auto">
+      <div class="support-footer">
+        <h3>{{ i18n "post_support_heading" }}</h3>
+        <p>{{ i18n "post_support_body" }} <a href="https://www.abetterinternet.org/getinvolved/">{{ i18n "post_support_link_get_involved" }}</a>, <a href="/donate/">{{ i18n "post_support_link_donate" }}</a>, {{ i18n "post_support_body_continued" }} <a href="https://www.abetterinternet.org/sponsor/">{{ i18n "post_support_link_sponsor" }}</a>.</p>
+      </div>
+    </div>
+  {{ end }}
+
+{{ end }}
