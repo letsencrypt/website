@@ -4,7 +4,7 @@ date: 2025-03-18T00:00:00Z
 slug: community-of-funders
 title: "Ten Years of Let's Encrypt: Announcing support from Jeff Atwood"
 excerpt: "Seeking to inspire our community of supporters, Jeff Atwood commits $1M to support Let's Encrypt."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

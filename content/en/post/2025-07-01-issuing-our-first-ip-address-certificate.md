@@ -4,7 +4,7 @@ date: 2025-07-01T00:00:00Z
 slug: issuing-our-first-ip-address-certificate
 title: "We've Issued Our First IP Address Certificate"
 excerpt: "Let's Encrypt now has the ability to issue certificates for both domain names and IP addresses."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
