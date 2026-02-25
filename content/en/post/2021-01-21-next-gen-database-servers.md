@@ -20,33 +20,33 @@ One consequence of this design is that our database machines need to be pretty p
 
 The previous generation of database hardware was powerful but it was regularly being pushed to its limits. For the next generation, we wanted to more than double almost every performance metric in the same 2U form factor. In order to pull that off, we needed AMD EPYC chips and Dell’s [PowerEdge R7525](https://www.dell.com/en-us/work/shop/cty/pdp/spd/poweredge-r7525/) was ideal. Here are the specifications:
 
-<div style="display: flex; flex-direction: column; align-items: center">
+<div class="flex flex-col items-center">
 <table>
 	<tr>
-		<td style="padding: 10px;"></td>
-		<td style="padding: 10px;"><b>Previous Generation</b></td>
-		<td style="padding: 10px;"><b>Next Generation</b></td>
+		<td class="p-[10px]"></td>
+		<td class="p-[10px]"><b>Previous Generation</b></td>
+		<td class="p-[10px]"><b>Next Generation</b></td>
 	</tr>
 	<tr>
-		<td style="padding: 10px; vertical-align: top;"><b>CPU</b></td>
-		<td style="padding: 10px;">2x Intel Xeon E5-2650<br>Total 24 cores / 48 threads</td>
-		<td style="padding: 10px;">2x <a href="https://www.amd.com/en/products/cpu/amd-epyc-7452">AMD EPYC 7542</a><br>Total 64 cores / 128 threads
+		<td class="p-[10px] align-top"><b>CPU</b></td>
+		<td class="p-[10px]">2x Intel Xeon E5-2650<br>Total 24 cores / 48 threads</td>
+		<td class="p-[10px]">2x <a href="https://www.amd.com/en/products/cpu/amd-epyc-7452">AMD EPYC 7542</a><br>Total 64 cores / 128 threads
 </td>
 	</tr>
 	<tr>
-		<td style="padding: 10px; vertical-align: top;"><b>Memory</b></td>
-		<td style="padding: 10px;">1TB 2400MT/s</td>
-		<td style="padding: 10px;">2TB 3200MT/s</td>
+		<td class="p-[10px] align-top"><b>Memory</b></td>
+		<td class="p-[10px]">1TB 2400MT/s</td>
+		<td class="p-[10px]">2TB 3200MT/s</td>
 	</tr>
 	<tr>
-		<td style="padding: 10px; vertical-align: top;"><b>Storage</b></td>
-		<td style="padding: 10px;">24x 3.8TB Samsung PM883<br>SATA SSD<br>560/540 MB/s read/write</td>
-		<td style="padding: 10px;">24x 6.4TB Intel P4610<br>NVMe SSD<br>3200/3200 MB/s read/write</td>
+		<td class="p-[10px] align-top"><b>Storage</b></td>
+		<td class="p-[10px]">24x 3.8TB Samsung PM883<br>SATA SSD<br>560/540 MB/s read/write</td>
+		<td class="p-[10px]">24x 6.4TB Intel P4610<br>NVMe SSD<br>3200/3200 MB/s read/write</td>
 	</tr>
 </table>
 </div>
 
-<figure style="display: flex; flex-direction: column; align-items: center; text-align: center">
+<figure class="flex flex-col items-center text-center">
 <img src="/images/2021.01.21-next-gen-db-chassis.jpg" width="600" alt="Dell PowerEdge R7525 Chassis">
 <figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.</figcaption>
 </figure>

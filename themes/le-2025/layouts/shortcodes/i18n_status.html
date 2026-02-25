@@ -3,7 +3,7 @@
 {{ $scratch_up_to_date := newScratch }}
 
 {{ $scratch.Set "nb_pages" 0 }}
-<table style="border:1px">
+<table class="border">
   <thead>
     <tr>
       <th></th>
@@ -66,10 +66,10 @@
                     {{ if not .Lastmod }}
                       {{ errorf "Missing lastmod in %q" .RelPermalink }}
                     {{ else if ne  .Lastmod $lastmod }}
-                        <span style="color:orange">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                        <span class="text-[orange]">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ else }}
                       {{ $scratch_up_to_date.Set .Lang ( add 1 ( $scratch_up_to_date.Get .Lang ) ) }}
-                        <span style="color:grey">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                        <span class="text-[grey]">{{ .Lastmod.Format "January 2, 2006" }}</span>
                     {{ end }}
                   {{ end }}
                 </a>

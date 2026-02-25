@@ -28,7 +28,7 @@ The transition will roll out as follows:
 <div class="howitworks-figure">
 <img alt="Infographic of the distribution of installed Android versions, showing that 93.9% of the population is running Android 7.1 or above."
      src="/images/2023.07.10-android-version-distribution.png"
-     style="width: 50%"/>
+     class="w-1/2"/>
 </div>
 
 **If you use Android 7.0 or earlier**, you may need to take action to ensure you can still access websites secured by Let's Encrypt certificates. We recommend installing and using [Firefox Mobile](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/), which uses its own trust store instead of the Android OS trust store, and therefore trusts ISRG Root X1.
