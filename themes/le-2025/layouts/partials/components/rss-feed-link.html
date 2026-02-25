@@ -2,7 +2,7 @@
 {{- $isDark := eq $variant "dark" -}}
 {{- with site.Home.OutputFormats.Get "RSS" -}}
 <a href="{{ .RelPermalink }}" class="rss-feed-link no-underline inline-flex items-center gap-1.5 text-sm font-medium {{ if $isDark }}text-white/90 hover:text-white{{ else }}text-le-blue hover:text-le-blue/70{{ end }}" title="Subscribe via RSS">
-  <span class="rss-icon" style="color: red;" aria-hidden="true"></span>
+  <span class="rss-icon" aria-hidden="true"></span>
   RSS Feed
 </a>
 {{- end -}}

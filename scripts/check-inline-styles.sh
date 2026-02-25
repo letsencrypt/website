@@ -30,11 +30,16 @@ done < <(grep -rl 'style=' \
 
 if [ "$FOUND" -eq 1 ]; then
   echo ""
-  echo "ERROR: Inline style= attributes found in the files listed above."
+  echo "ERROR: Inline styles are not allowed on this site."
   echo ""
-  echo "Inline styles are not allowed on this site. They require 'unsafe-inline'"
-  echo "in the Content-Security-Policy style-src directive, which weakens security."
+  echo "The site uses a Content-Security-Policy with style-src 'self', which blocks"
+  echo "inline style= attributes. Adding them would require 'unsafe-inline', weakening"
+  echo "the security policy."
   echo ""
-  echo "Use Tailwind utility classes instead. See https://github.com/letsencrypt/website/issues/950"
+  echo "Instead, use Tailwind utility classes or add CSS to the stylesheet at:"
+  echo "  themes/le-2025/assets/css/le-2025-theme-input.css"
+  echo ""
+  echo "See: https://github.com/letsencrypt/website/issues/950"
+  echo "     https://github.com/letsencrypt/website/pull/2151"
   exit 1
 fi
