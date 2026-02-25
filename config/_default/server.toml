@@ -28,8 +28,8 @@ Permissions-Policy = """
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
-    font-src 'self';
     style-src 'self';
+    font-src 'self';
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
