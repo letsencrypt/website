@@ -388,20 +388,8 @@ other = "Blog"
 [post_support_heading]
 other = "Support Our Work"
 
-[post_support_body]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider"
-
-[post_support_link_get_involved]
-other = "getting involved"
-
-[post_support_link_donate]
-other = "donating"
-
-[post_support_body_continued]
-other = "or encouraging your company to"
-
-[post_support_link_sponsor]
-other = "become a sponsor"
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
 
 [donate_get_involved_button]
 other = "Get Involved"
