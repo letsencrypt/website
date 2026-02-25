@@ -202,14 +202,14 @@ Il existe parfois plus d'une chaîne valide pour un certificat donné : par exem
 
 Les certificats d'abonné avec des clés publiques RSA sont délivrés par nos intermédiaires RSA, qui sont délivrés uniquement par notre racine RSA ISRG Root X1 (c'est-à-dire qu'ils ne font pas l'objet d'une signature croisée). Par conséquent, tous les certificats d'abonné RSA ne disposent que d'une seule chaîne :
 
-<div style="text-align: center">
+<div class="text-center">
 RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 Les certificats d'abonné avec des clés publiques ECDSA sont délivrés par nos intermédiaires ECDSA, qui sont délivrés à la fois par notre racine RSA de l'ISRG X1 et par notre racine ECDSA de l'ISRG X2 (c'est-à-dire qu'ils font l'objet d'une signature croisée). C'est pourquoi nous proposons deux chaînes pour ces certificats :
 
-<div style="text-align: center">
+<div class="text-center">
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
 
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2

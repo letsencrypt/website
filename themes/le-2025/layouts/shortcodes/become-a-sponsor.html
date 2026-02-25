@@ -1,9 +1,9 @@
 {{ $format := .Page.Language.Params.numberFormat }}
 <div>
   <table>
-    <tr style="vertical-align: top;">
+    <tr class="align-top">
       <td>{{ .Get "platinum" }}</td>
-      <td style="padding-left: 15px;">
+      <td class="pl-[15px]">
         {{ $nb := lang.NumFmt 0 350000 $format "|" }}
         {{ i18n "amount_per_year" (dict "nb" $nb) }}
         
@@ -14,23 +14,23 @@
         {{ i18n "3y_commitment" }}
       </td>
     </tr>
-    <tr style="vertical-align: top;">
+    <tr class="align-top">
       <td>{{ .Get "gold" }}</td>
-      <td style="padding-left: 15px;">
+      <td class="pl-[15px]">
         {{ $nb := lang.NumFmt 0 150000 $format "|"}}
         {{ i18n "amount_per_year" (dict "nb" $nb) }}
       </td>
     </tr>
-    <tr style="vertical-align: top;">
+    <tr class="align-top">
       <td>{{ .Get "gold_basic" }}</td>
-      <td style="padding-left: 15px;">
+      <td class="pl-[15px]">
         {{ $nb := lang.NumFmt 0 85000 $format "|"}}
         {{ i18n "amount_per_year" (dict "nb" $nb) }}
       </td>
     </tr>
-    <tr style="vertical-align: top;">
+    <tr class="align-top">
       <td>{{ .Get "silver" }}</td>
-      <td style="padding-left: 15px;">
+      <td class="pl-[15px]">
         {{ $nb := lang.NumFmt 0 50000 $format "|" }}
         {{ i18n "amount_per_year" (dict "nb" $nb) }}
         {{ i18n "1000_employees" }}
