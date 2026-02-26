@@ -113,7 +113,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.plot(dom, traces, layout);
+    Plotly.newPlot(dom, traces, layout);
   }
 
   // Certificates issued over time
@@ -131,7 +131,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.plot(dom, traces, layout);
+    Plotly.newPlot(dom, traces, layout);
   }
 
   // Combined Graph: issuancePerDay + activeUsage
@@ -160,7 +160,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.plot(dom, traces, layout);
+    Plotly.newPlot(dom, traces, layout);
   }
 
   function httpsCsvListener(responseText) {
@@ -315,7 +315,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.plot(dom, traces, layout);
+    Plotly.newPlot(dom, traces, layout);
   }
 
   var path;
