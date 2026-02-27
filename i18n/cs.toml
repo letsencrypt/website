@@ -379,6 +379,12 @@ other = "V angličtině je k dispozici novější aktualizovaná stránka"
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
+[post_support_heading]
+other = "Podpořte naši práci"
+
+[post_support_body_html]
+other = 'ISRG je nezisková organizace typu 501(c)(3), která je stoprocentně financována díky štědrosti těch, kteří sdílejí naši vizi všudypřítomného a otevřeného zabezpečení internetu. Pokud chcete podpořit naši práci, můžete <a href="https://www.abetterinternet.org/getinvolved/">se zapojit</a>, <a href="/donate/">přispět darem</a> nebo povzbudit svou společnost, aby se <a href="https://www.abetterinternet.org/sponsor/">stala sponzorem</a>.'
+
 [donate_get_involved_button]
 other = "Zapojte se"
 
@@ -469,11 +475,8 @@ other = "Jiné druhy darů"
 [donate_page_ways_to_give_heading]
 other = "JAK PŘISPĚT"
 
-[donate_page_funding_details_stat_percentage]
-other = "100 %"
-
 [donate_page_funding_details_stat_text]
-other = "finančních prostředků pro Let's Encrypt pochází z charitativních příspěvků."
+other = "Podpořtě naši práci v Let's Encypt pomocí charitativního příspěvku."
 
 [donate_page_funding_details_why_support_heading]
 other = "PROČ PODPOROVAT?"

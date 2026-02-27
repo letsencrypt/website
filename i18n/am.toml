@@ -11,7 +11,7 @@ other = "ያዋጡ"
 other = "ስፖንሰር"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
+other = "Read all about our nonprofit work this year in our <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Major Sponsors and Funders"
@@ -379,6 +379,12 @@ other = "More recently updated page available in English"
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "Get Involved"
 
@@ -469,11 +475,8 @@ other = "Other Ways to Give"
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "WHY SUPPORT?"

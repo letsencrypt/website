@@ -379,6 +379,12 @@ other = "최근 업데이트된 페이지가 영어로 제공됩니다"
 [post_hero_breadcrumb_blog]
 other = "블로그"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "참여"
 
@@ -469,11 +475,8 @@ other = "기부할 수 있는 다른 방법"
 [donate_page_ways_to_give_heading]
 other = "기부 방법"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "Let's Encrypt의 자금 조달은 자선 기부금으로 이루어집니다."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "왜 지원해야 하나요?"

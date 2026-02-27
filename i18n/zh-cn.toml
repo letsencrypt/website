@@ -376,6 +376,12 @@ other = "查看尚未完成翻译的最新英文页面"
 [post_hero_breadcrumb_blog]
 other = "博客"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "帮助 Let's Encrypt"
 
@@ -466,11 +472,8 @@ other = "其他贡献方式"
 [donate_page_ways_to_give_heading]
 other = "如何支持我们"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "的 Let's Encrypt 运作资金来自慈善捐款。"
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "为什么要支持我们？"
