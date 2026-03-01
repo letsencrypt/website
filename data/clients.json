@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2026-02-18",
 	"categories": [
 		"Bash",
 		"C",
@@ -918,6 +918,18 @@
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			}
+		},
+		{
+			"name": "certx.sh",
+			"url": "https://certx.sh",
+			"category": "Bash",
+			"comments": "~500 lines of POSIX shell includes DNS/PERSIST/HTTP challenges, multi-server deployment (ssh/ftp), account rollover/deactivation, EAB, wildcard/ip/shortlived certs",
+			"challenges": {
+				"DNS-01": "true",
+				"DNS-PERSIST-01": "true",
+				"HTTP-01": "true"
+			},
+			"last_commit": 1771447492
 		}
 	]
 }
