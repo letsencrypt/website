@@ -377,10 +377,10 @@ other = "查看尚未完成翻译的最新英文页面"
 other = "博客"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "支持我们的事业"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG 是一家 501(c)(3) 非营利组织，其资金 100% 来源于认同我们普及开放互联网安全愿景的资助者。如果您也想支持我们的事业，请考虑<a href="https://www.abetterinternet.org/getinvolved/">参与进来</a>、<a href="/donate/">捐款</a>或推动您所属的企业<a href="https://www.abetterinternet.org/sponsor/">成为赞助商</a>。'
 
 [donate_get_involved_button]
 other = "帮助 Let's Encrypt"
@@ -473,7 +473,7 @@ other = "其他贡献方式"
 other = "如何支持我们"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "您的热心资助能够支持 Let's Encrypt 继续开展这项事业。"
 
 [donate_page_funding_details_why_support_heading]
 other = "为什么要支持我们？"
