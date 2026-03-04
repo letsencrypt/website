@@ -20,6 +20,6 @@ That said, the web server ecosystem is complex, and it would be impossible for a
 
 The Let’s Encrypt client goes further than most other clients in terms of end-to-end automation and extensibility, both getting certificates and in many cases installing them. This is an important strategy since major servers don’t yet have built-in support, and we want to make sure it’s given a proper chance to thrive. The EFF has led development of the Let’s Encrypt client from the beginning, and they are well-qualified to continue pursuing this strategy.
 
-The rename is happening for reasons that go beyond the move to the EFF. One additional reason for the rename is that we want the client to be distributable and customisable without having to create a complex process for deciding whether customized variants are appropriate for use with Let’s Encrypt trademarks. Another reason is that we want it to be clear that the client can work with any ACME-enabled CA in the future, not just Let’s Encrypt.
+The rename is happening for reasons that go beyond the move to the EFF. One additional reason for the rename is that we want the client to be distributable and customizable without having to create a complex process for deciding whether customized variants are appropriate for use with Let’s Encrypt trademarks. Another reason is that we want it to be clear that the client can work with any ACME-enabled CA in the future, not just Let’s Encrypt.
 
 We expect the client to do well at the EFF and continue to be used by many people to get certificates from Let’s Encrypt.
