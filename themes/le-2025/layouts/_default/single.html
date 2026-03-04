@@ -79,4 +79,13 @@
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
   {{ end }}
 
+  {{ if eq $currentPage.Params.display_support_us_footer true }}
+    <div class="narrow-container mx-auto">
+      <div class="support-footer">
+        <h3>{{ i18n "post_support_heading" }}</h3>
+        <p>{{ i18n "post_support_body_html" | safeHTML }}</p>
+      </div>
+    </div>
+  {{ end }}
+
 {{ end }}

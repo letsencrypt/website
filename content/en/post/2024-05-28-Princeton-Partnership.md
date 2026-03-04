@@ -12,7 +12,7 @@ Let's Encrypt is proud to have been partnering with the [Center for Information 
 
 To date, [our work with Princeton](https://www.cs.princeton.edu/~jrex/papers/multiva20.pdf) has focused on defending against BGP attacks on domain control validation via [Multi-Perspective Issuance Corroboration (MPIC)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html). This year, Let's Encrypt is adding [two new remote perspectives](https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-new-remote-perspectives-for-domain-validation/214123) for domain validation. This means we will make five total validation requests, one from the primary datacenter and four from remote perspectives (previously two). Increased perspectives provide more domain validation security, thus improving visibility and protection against BGP attacks.
 
-<figure class="blog-post-image" style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; text-align: center">
+<figure class="blog-post-image mb-5 flex flex-col items-center text-center">
 <img src="/images/2024.05.28.le-new-config.png">
 <figcaption>Additional global vantage points increase resilience of Let’s Encrypt issuance. Source: Princeton Center for Information Technology Policy</figcaption>
 </figure>

@@ -202,14 +202,14 @@ show_lastmod: 1
 
 Сертифікати абонентів з відкритими ключами RSA випускаються з наших проміжних RSA-сертифікатів, які випускаються тільки з нашого кореневого RSA-сервера ISRG Root X1 (тобто вони не мають перехресного підпису). Тому для всіх сертифікатів абонентів RSA доступний лише один ланцюжок:
 
-<div style="text-align: center">
+<div class="text-center">
 RSA Subscriber Cert ← RSA Intermediate (R10 або R11) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 Сертифікати підписників з відкритими ключами ECDSA випускаються з наших проміжних ECDSA, які випускаються одночасно (тобто мають перехресний підпис) з нашого RSA кореневого ISRG Root X1 та нашого ECDSA кореневого ISRG Root X2. Тому ми пропонуємо два ланцюжки для цих сертифікатів:
 
-<div style="text-align: center">
+<div class="text-center">
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
 
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2

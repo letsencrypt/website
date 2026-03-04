@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/plotly.css?v=3.4.0" />
+<div id="plotly.js-style-global" class="no-inline-styles"></div>
 <span id="plot-translations"
     data-issued="{{ i18n "graph_issued" }}"
     data-certificates_active="{{ i18n "graph_certificates_active" }}"
@@ -11,63 +13,63 @@
     data-percent_https="{{ i18n "graph_percent_https" }}"
 ></span>
 
-<script src="/js/plotly-min.js" defer></script>
+<script src="/js/plotly-min.js?v=3.4.0" defer></script>
 {{/* translations uploaded from https://github.com/plotly/plotly.js/tree/master/dist */}}
 {{ if eq "en" .Page.Language.Lang }}
     {{/* nothing to do */}}
 {{ else if eq "ca" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-ca.js" defer></script>
+    <script src="/js/plotly-locale-ca.js?v=3.4.0" defer></script>
 {{ else if eq "cs" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-cs.js" defer></script>
+    <script src="/js/plotly-locale-cs.js?v=3.4.0" defer></script>
 {{ else if eq "de" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-de.js" defer></script>
+    <script src="/js/plotly-locale-de.js?v=3.4.0" defer></script>
 {{ else if eq "fr" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-fr.js" defer></script>
+    <script src="/js/plotly-locale-fr.js?v=3.4.0" defer></script>
 {{ else if eq "el" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-el.js" defer></script>
+    <script src="/js/plotly-locale-el.js?v=3.4.0" defer></script>
 {{ else if eq "es" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-es.js" defer></script>
+    <script src="/js/plotly-locale-es.js?v=3.4.0" defer></script>
 {{ else if eq "pl" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-pl.js" defer></script>
+    <script src="/js/plotly-locale-pl.js?v=3.4.0" defer></script>
 {{ else if eq "pt-br" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-pt-br.js" defer></script>
+    <script src="/js/plotly-locale-pt-br.js?v=3.4.0" defer></script>
 {{ else if eq "ru" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-ru.js" defer></script>
+    <script src="/js/plotly-locale-ru.js?v=3.4.0" defer></script>
 {{ else if eq "ta" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-ta.js" defer></script>
+    <script src="/js/plotly-locale-ta.js?v=3.4.0" defer></script>
 {{ else if eq "th" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-th.js" defer></script>
+    <script src="/js/plotly-locale-th.js?v=3.4.0" defer></script>
 {{ else if eq "tr" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-tr.js" defer></script>
+    <script src="/js/plotly-locale-tr.js?v=3.4.0" defer></script>
 {{ else if eq "zh-cn" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-zh-cn.js" defer></script>
+    <script src="/js/plotly-locale-zh-cn.js?v=3.4.0" defer></script>
 {{ else if eq "zh-tw" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-zh-tw.js" defer></script>
+    <script src="/js/plotly-locale-zh-tw.js?v=3.4.0" defer></script>
 {{ else if eq "ja" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-ja.js" defer></script>
+    <script src="/js/plotly-locale-ja.js?v=3.4.0" defer></script>
 {{ else if eq "id" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-id.js" defer></script>
+    <script src="/js/plotly-locale-id.js?v=3.4.0" defer></script>
 {{ else if eq "ko" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-ko.js" defer></script>
+    <script src="/js/plotly-locale-ko.js?v=3.4.0" defer></script>
 {{ else if eq "sr" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-sr.js" defer></script>
+    <script src="/js/plotly-locale-sr.js?v=3.4.0" defer></script>
 {{ else if eq "sv" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-sv.js" defer></script>
+    <script src="/js/plotly-locale-sv.js?v=3.4.0" defer></script>
 {{ else if eq "vi" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-vi.js" defer></script>
+    <script src="/js/plotly-locale-vi.js?v=3.4.0" defer></script>
 {{ else if eq "he" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-he.js" defer></script>
+    <script src="/js/plotly-locale-he.js?v=3.4.0" defer></script>
 {{ else if eq "uk" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-uk.js" defer></script>
+    <script src="/js/plotly-locale-uk.js?v=3.4.0" defer></script>
 {{ else if eq "it" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-it.js" defer></script>
+    <script src="/js/plotly-locale-it.js?v=3.4.0" defer></script>
 {{ else if eq "si" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-si.js" defer></script>
+    <script src="/js/plotly-locale-si.js?v=3.4.0" defer></script>
 {{ else if eq "fi" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-fi.js" defer></script>
+    <script src="/js/plotly-locale-fi.js?v=3.4.0" defer></script>
 {{ else if eq "hu" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-hu.js" defer></script>
+    <script src="/js/plotly-locale-hu.js?v=3.4.0" defer></script>
 {{ else if eq "da" .Page.Language.Lang }}
-    <script src="/js/plotly-locale-da.js" defer></script>
+    <script src="/js/plotly-locale-da.js?v=3.4.0" defer></script>
 {{ end }}
 <script src="/js/stats.js" defer></script>

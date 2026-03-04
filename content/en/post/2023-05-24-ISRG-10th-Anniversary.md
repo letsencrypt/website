@@ -54,6 +54,6 @@ Prossimo is making a huge amount of progress moving critical software infrastruc
 
 Divvi Up is exciting technology with a bright future. Our biggest challenge here, like most things involving cryptography, is to make it easy to use. We also need to make sure we can provide the service at a cost that will allow for widespread adoption, so we'll be doing a lot of optimization. Our hope is that over the next decade we can make privacy respecting metrics the norm, just like we did for HTTPS.
 
-The internet wasn't built with security or privacy in mind, so there is a bountiful opportunity for us to improve its infrastructure. The Internet is also constantly growing and changing, so it is also our job to look into the future and prepare for the next set of threats and challenges as best we can.
+The Internet wasn't built with security or privacy in mind, so there is a bountiful opportunity for us to improve its infrastructure. The Internet is also constantly growing and changing, so it is also our job to look into the future and prepare for the next set of threats and challenges as best we can.
 
 Thanks to our supporters, we'll continue adapting and responding to help ensure the Web is more secure long into the future. Please consider [becoming a sponsor](https://www.abetterinternet.org/sponsor/) or [making a donation](https://www.abetterinternet.org/donate/) in support of our work.

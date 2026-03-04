@@ -27,7 +27,7 @@ validation process.
 
 Commonly the IPv6 address will be a different server than the IPv4 address where
 the ACME client is being run. Since the ACME client only configures the IPv4
-server to respond to the challenge domain validation will fail when the IPv6
+server to respond to the challenge, domain validation will fail when the IPv6
 server is used.
 
 In most cases the correct fix is to update the IPv6 address to point to the

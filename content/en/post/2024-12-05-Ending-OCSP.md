@@ -3,7 +3,7 @@ author: Josh Aas
 date: 2024-12-05T00:00:00Z
 excerpt: "Certificate revocation information will be provided exclusively through CRLs."
 title: "Ending OCSP Support in 2025"
-display_default_footer: false
+display_support_us_footer: false
 slug: Ending-OCSP
 ---
 

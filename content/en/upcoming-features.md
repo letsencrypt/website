@@ -50,7 +50,7 @@ We now provide suggested renewal windows for all issued certificates, which clie
 
 ## Short-lived Certificates
 
-Client may [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) using ACME Profiles. These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all.
+Clients may [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) using ACME Profiles. These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all.
 
 ## IP Address Certificates
 

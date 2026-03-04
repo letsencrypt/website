@@ -4,7 +4,7 @@ date: 2025-01-30T00:00:00Z
 slug: Scaling-Rate-Limits
 title: "Scaling Our Rate Limits to Prepare for a Billion Active Certificates"
 excerpt: "We've evolved our rate limits to better serve our subscribers and keep our service healthy."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 

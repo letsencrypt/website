@@ -379,6 +379,12 @@ other = "יש עמוד עדכני יותר באנגלית"
 [post_hero_breadcrumb_blog]
 other = "בלוג"
 
+[post_support_heading]
+other = "תמיכה במטרה שלנו"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "להצטרף למאמץ"
 
@@ -469,11 +475,8 @@ other = "דרכות נוספות להעניק"
 [donate_page_ways_to_give_heading]
 other = "דרכים להעניק"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "מהמימון של Let's Encrypt מקורו בתרומות."
+other = "אפשר לאפשר את העבודה שלנו ב־Let's Encrypt בזכות תרומות כספיות."
 
 [donate_page_funding_details_why_support_heading]
 other = "למה לי לתמוך?"

@@ -4,7 +4,7 @@ date: 2025-04-30T00:00:00Z
 slug: pebbleacmeimplementation
 title: "How Pebble Supports ACME Client Developers"
 excerpt: "Our tiny ACME implementation is great for testing and debugging."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
