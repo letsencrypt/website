@@ -769,7 +769,7 @@ This one-byte value (represented in binary) encodes decimal -100:
 
 10011100 (== decimal -100)
 
-This five-bytes value (represented in binary) encodes decimal
+This five-byte value (represented in binary) encodes decimal
 -549755813887 (i.e. -2<sup>39</sup> + 1):
 
 10000000 00000000 00000000 00000000 00000001 (== decimal -549755813887)
@@ -1151,7 +1151,7 @@ Or, to put it differently: base64 turns 24 bits of binary input into 4
 ASCII characters of output, with 6 bits of the input assigned to each
 character. We know what the first 16 bits of every certificate will be.
 To prove that the first characters of (almost) every certificate will be
-"MII", we need two to look at the next 2 bits. Those will be the most
+"MII", we need to look at the next 2 bits. Those will be the most
 significant bits of the most significant byte of the two length bytes.
 Will those bits ever be set to 1? Not unless the certificate is more
 than 16,383 bytes long! So we can predict that the first characters of a
