@@ -65,7 +65,7 @@ Note for translators:
 
 {{% def id="store" name="Certificate Store" %}} En certifikatsamling som indeholder med betroede [Rod certifikater](#def-root). Styresystemer (såsom Windows, Android eller Debian) og [webbrowsere](#def-web-browser) (såsom Firefox) vedligeholder en certifikatsamling. Browsere uden egen certifikatsamling anvender operativsystemernes certifikatsamling. [Certifikater](#def-leaf) leveret af [Let's Encrypt](#def-LE) er [betroede af de fleste certifikatsamlinger](/certificates). {{% /def %}}
 
-{{% def id="subject" name="Certificate subject" %}} Feltet "Subject" i et certifikatfelt angiver, hvad certifikatet omhandler. Dette indeholder ofte felter som [Common Name](#def-CN), Country og Organization. {{% /def %}}
+{{% def id="subject" name="Certificate subject" %}} Feltet "Emne" i et certifikatfelt angiver, hvad certifikatet omhandler. Dette indeholder ofte felter som [Common Name](#def-CN), Country og Organization. {{% /def %}}
 
 {{% def id="CT" name="Certificate Transparency" abbr="CT" %}} For at forbedre sikkerheden, skal certifikater (eller [præ-certfikater](#def-precertificate)) offentliggøres i Certifikat Gennemsigtighed Logs: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) genererer og publicerer [precertificates](#def-precertificate), og indeholder i det efterfølgende [certifikat](#def-leaf) en liste over [SCT](#def-SCT) for præ-certifikatet. Nogle [browsere](#def-web-browser), såsom Google Chrome, kræver tilstedeværelsen af dette verificerbare løfte for at validere certifikatet. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 

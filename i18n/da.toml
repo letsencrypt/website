@@ -380,10 +380,10 @@ other = "En nyere opdateret side er tilgængelig på engelsk"
 other = "Blog"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "Støt Vores Arbejde"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG er en 501(c)(3) nonprofit organisation, der er 100% støttet gennem generøsitet af dem, der deler vores vision for allestedsnærværdig, åben internetsikkerhed. Hvis du vil støtte vores arbejde, så overvej venligst <a href="https://www.abetterinternet.org/getinvolved/">at blive involveret</a>, <a href="/donate/">donere</a>eller tilskynde din virksomhed til <a href="https://www.abetterinternet.org/sponsor/">blive en sponsor</a>.'
 
 [donate_get_involved_button]
 other = "Bliv en del af det"
@@ -476,7 +476,7 @@ other = "Andre måder at give"
 other = "VEJE TIL AT GIVE"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "Muliggør vores arbejde på Let's Encrypt gennem dit velgørende bidrag."
 
 [donate_page_funding_details_why_support_heading]
 other = "HVORFOR STØTTE?"
