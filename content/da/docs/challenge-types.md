@@ -1,7 +1,7 @@
 ---
 title: Udfordringstyper
 slug: challenge-types
-lastmod: 2025-12-03
+lastmod: 2026-02-12
 show_lastmod: 1
 ---
 
@@ -26,7 +26,7 @@ Fordele:
 Ulemper:
 
 - Det virker ikke, hvis din ISP blokke port 80 (dette er sjældent, men nogle få internetudbydere gør dette).
-- Let's Encrypt lader dig ikke bruge denne udfordring til at udstede wildcard certifikater.
+- Denne udfordring kan ikke bruges til at udstede wildcard certifikater.
 - Hvis du har flere webservere, skal du sørge for, at filen er tilgængelig på dem alle.
 
 # DNS-01 challenge
