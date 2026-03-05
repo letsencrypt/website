@@ -10,6 +10,11 @@
       "name": "Amazon Web Services",
       "url": "https://aws.amazon.com/",
       "image": "aws-logo-2.png"
+    },
+    {
+      "name": "Open Technology Fund",
+      "url": "https://www.opentech.fund/",
+      "image": "open-technology-fund-logo.png"
     }
   ],
   "platinum": [
@@ -48,11 +53,6 @@
       "image": "shopify-logo.png"
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
-    {
-      "name": "Heroku",
-      "url": "https://www.heroku.com/",
-      "image": "heroku-logo.png"
-    },
     { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.svg" },
     {
       "name": "Squarespace",
@@ -68,6 +68,11 @@
       "name": "Snowflake",
       "url": "https://www.snowflake.com/",
       "image": "snowflake-logo.png"
+    },
+    {
+      "name": "Acton Family Giving",
+      "url": "https://actonfamilygiving.org/",
+      "image": "acton-family-giving-logo.png"
     }
   ],
   "silver": [
@@ -253,12 +258,6 @@
       "url": "https://www.nginx.com/",
       "image": "nginx-logo.png"
     },
-    {
-      "name": "Acton Family Giving",
-      "url": "https://actonfamilygiving.org/",
-      "image": "acton-family-giving-logo.png"
-    },
-
     {
       "name": "Tailscale",
       "url": "https://tailscale.com/",
