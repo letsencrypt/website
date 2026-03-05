@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2025-12-19
+lastmod: 2026-02-11
 show_lastmod: false
 ---
 
@@ -26,7 +26,7 @@ Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder
 | [Ordre Livstid](#order-lifetime)                                     | 7 dage                                    |
 | [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Ja<sup>\*</sup></a> |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Ja<sup>†</sup></a>  |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | <a href="#footnote-3">Ja<sup>‡</sup></a>  |
+| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej                                       |
 | [Emne Nøgle ID](#subject-key-identifier-extension)                   | Ja                                        |
 | [Gyldighedsperiode](#validity-period)                                | 90 dage                                   |
 | [Revocation Information](#revocation-information)                    | CRL                                       |
@@ -37,9 +37,6 @@ Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder
 
 <sup id="footnote-2">†</sup>: Kun inkluderet for certifikater med RSA offentlige nøgler.
 
-<sup id="footnote-3">‡</sup>: Indtil 11. Februar 2026. Se [udfasnings tidslinje oplysninger](/2025/05/14/ending-tls-client-authentication/) for en fuld tidslinje.
-
-</div>
 <div class="boxed">
 
 ## tlsserver
@@ -92,18 +89,16 @@ Vi anbefaler denne profil for dem, der fuldt ud stoler på deres automatisering 
 
 ## tlsclient
 
-Den tlsclient profil er _for nærværende_ identisk med den klassiske profil. Men
-som [annonceret på vores blog](/2025/05/14/ending-tls-client-authentication):
+Certifikater udstedt med tlsclient profil indeholder TLS Client Auth EKU.
+Den er ellers identisk med den klassiske profil.
 
-- 11. februar 2026 vil TLS Client Auth EKU blive fjernet fra den klassiske
-      profil, men vil forblive i denne profil, og
-- 13. maj 2026 vil denne profil ophøre med at eksistere.
+Men som [annonceret på vores blog](/2025/05/14/ending-tls-client-authentication),
+denne profil vil ophøre med at eksistere den 13. maj 2026.
 
 Denne profil findes alene med det formål at give abonnenter, der har brug for adgang til
 til TLS Client Auth certifikater til at beholde den EKU i lidt længere tid at
 lette deres overgang til en TLS Server Auth-only verden. Hvis du ikke
-specifikt har brug for TLS Client Auth EKU, eller hvis du har brug for det, men er i stand til at
-migrere væk fra den inden februar 2026, så kan og skal du sikkert ignorere
+specifikt har brug for TLS-klienten Auth EKU, kan og bør du roligt ignorere
 denne profil.
 
 | Egenskaber                                                           | Værdi                                     |
