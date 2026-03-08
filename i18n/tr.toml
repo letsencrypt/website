@@ -182,13 +182,13 @@ other = "PayPal ile bağış yap butonu"
 other = "PayPal ile bağış yapın"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - Sayfa Bulunamadı"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Aradığınız sayfa mevcut değil veya taşınmış."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Ana sayfaya dön"
 
 [amount_per_year]
 other = "${{ .nb }}/yıl (USD)"
@@ -290,7 +290,7 @@ other = "Sertifika verme sürecimiz ve en iyi uygulamalar hakkında bilgi edinin
 other = "Dokümantasyonu Okuyun"
 
 [getting_started_clients_title]
-other = "ACME Clients"
+other = "ACME İstemcileri"
 
 [getting_started_clients_content]
 other = "Choose from our recommended ACME clients to automatically manage your certificates."
@@ -347,16 +347,16 @@ other = "Sponsorluk hakkında daha fazlasını öğrenin"
 other = "Başlıca Sponsorlar ve Fon Sağlayıcılar"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Diamond Seviye"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Platinum Seviye"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Gold Seviye"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Gümüş Seviye"
 
 [common_read_more_arrow]
 other = " →"
@@ -380,7 +380,7 @@ other = "Daha yakın zamanda güncellenen sayfa İngilizce olarak mevcuttur"
 other = "Blog"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "Çalışmalarımızı Destekleyin"
 
 [post_support_body_html]
 other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
@@ -464,25 +464,25 @@ other = "Web'i şifrelemek günlük bir iştir — sertifikaların yenilenmesi g
 other = "Düzenli bağışınızı şimdi başlatın"
 
 [donate_page_stock_donations_title]
-other = "Donations of Stock"
+other = "Hisse Senedi Bağışları"
 
 [donate_page_crypto_gifts_title]
-other = "Gifts of Cryptocurrency"
+other = "Kripto Para Hediyeleri"
 
 [donate_page_other_ways_title]
-other = "Other Ways to Give"
+other = "Diğer Bağış Yöntemleri"
 
 [donate_page_ways_to_give_heading]
-other = "WAYS TO GIVE"
+other = "BAĞIŞ YAPMANIN YOLLARI"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "Hayırsever bağışlarınızla Let's Encrypt'teki çalışmalarımızı destekleyin."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "NEDEN DESTEK VERMELİSİNİZ?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "Ücretsiz, otomatik ve kullanımı kolay TLS sertifikaları."
 
 [donate_page_funding_details_list_item2]
 other = "We make it easy to use one or one million certs."
