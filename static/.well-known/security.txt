@@ -1,5 +1,6 @@
+Bug-Bounty: False
 Canonical: https://letsencrypt.org/.well-known/security.txt
 Contact: mailto:security@letsencrypt.org
-Expires: 2026-07-15T16:59:59z
+Expires: 2028-03-08T16:59:59z
 Hiring: https://abetterinternet.org/careers/
 Preferred-Languages: en
