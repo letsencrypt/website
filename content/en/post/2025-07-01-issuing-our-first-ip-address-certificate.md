@@ -8,6 +8,10 @@ display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
+> **Update: January 15, 2026**
+>
+> Six-day and IP address certificates are now generally available. See [6-day and IP Address Certificates are Generally Available](/2026/01/15/6day-and-ip-general-availability) for details.
+
 Since Let's Encrypt started issuing certificates in 2015, people have repeatedly requested the ability to get certificates for IP addresses, an option that only a few certificate authorities have offered. Until now, they've had to look elsewhere, because we haven't provided that feature.
 
 Today, we've issued our [first certificate for an IP address](https://crt.sh/?id=19376952215), as we [announced we would](https://letsencrypt.org/2025/01/16/6-day-and-ip-certs/) in January. As with other new certificate features on our engineering roadmap, we'll now start gradually rolling out this option to more and more of our subscribers.
