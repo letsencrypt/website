@@ -100,6 +100,16 @@ for = "/:lang/repository"
 Referrer-Policy = "strict-origin"
 
 [[headers]]
+for = "/2017/10/17/acme-support-in-apache-httpd"
+[headers.values]
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+for = "/2017/10/17/acme-support-in-apache-httpd/"
+[headers.values]
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
 for = "/certs/*.pem"
 [headers.values]
 # Because Netlify defaults to "application/x-x509-ca-cert", which is for DER.
