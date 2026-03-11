@@ -8,6 +8,10 @@ display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
+> **Update: March 11, 2026**
+>
+> If you use Certbot, see [Six-Day and IP Address Certificates Available in Certbot](/2026/03/11/shorter-certs-certbot) for details on requesting these certificates.
+
 Short-lived and IP address certificates are now generally available from Let's Encrypt. These certificates are valid for 160 hours, just over six days. In order to get a short-lived certificate subscribers simply need to select the 'shortlived' [certificate profile](https://letsencrypt.org/docs/profiles/) in their ACME client.
 
 Short-lived certificates improve security by requiring more frequent validation and reducing reliance on unreliable revocation mechanisms. If a certificate's private key is exposed or compromised, revocation has historically been the way to mitigate damage prior to the certificate's expiration. Unfortunately, revocation is an unreliable system so many relying parties continue to be vulnerable until the certificate expires, a period as long as 90 days. With short-lived certificates that vulnerability window is greatly reduced.
