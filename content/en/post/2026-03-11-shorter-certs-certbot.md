@@ -8,6 +8,8 @@ display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
+> This was also posted on [EFF's blog](https://www.eff.org/deeplinks/2026/03/certbot-and-lets-encrypt-now-support-ip-address-certificates).
+
 As we announced earlier this year, Let's Encrypt now [issues IP address and six-day certificates](/2026/01/15/6day-and-ip-general-availability) to the general public. The Certbot team at the [Electronic Frontier Foundation](https://www.eff.org/) has been working on two improvements to support these features: the `--preferred-profile` flag released last year in Certbot 4.0, and the `--ip-address` flag, new in Certbot 5.3. With these improvements together, you can now use [Certbot](https://certbot.eff.org/) to get those IP address certificates!
 
 If you want to try getting an IP address certificate using Certbot, install version 5.4 or higher (for `webroot` support with IP addresses), and run this command:
