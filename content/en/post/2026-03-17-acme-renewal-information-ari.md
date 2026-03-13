@@ -38,7 +38,7 @@ GET /renewal-info/ACME_KEY_IDENTIFIER
 }
 ```
 
-Shopify's certificate management system uses the [acme-client](https://github.com/unixcharles/acme-client) Ruby gem originally authored by another Shopify employee. Despite Let's Encrypt enabling support for ARI in their official software, the Ruby gem did not yet support this feature. Rather than building a custom solution, we decided to enable support for the ARI extension directly in the client.
+Shopify's certificate management system uses the [acme-client](https://github.com/unixcharles/acme-client) Ruby gem originally authored by another Shopify employee. A growing number of ACME clients, including [certbot](https://certbot.eff.org/), have enabled support for ARI, but the Ruby gem did not yet support this feature. Rather than building a custom solution, we decided to enable support for the ARI extension directly in the client.
 
 Let's Encrypt's [guide to integrating ARI](/2024/04/25/guide-to-integrating-ari-into-existing-acme-clients) provided the necessary roadmap, and the implementation was completed with [one PR](https://github.com/unixcharles/acme-client/pull/257). This contribution means that not only Shopify, but also the wider Ruby community, can benefit from the ARI extension.
 
