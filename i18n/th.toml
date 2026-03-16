@@ -151,7 +151,7 @@ other = "เวลาเริ่มต้น"
 [certificate_transparency_window_end]
 other = "เวลาสิ้นสุด"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "คำแถลงวิธีปฏิบัติด้านการรับรอง"
 
 [overview]

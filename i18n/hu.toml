@@ -151,7 +151,7 @@ other = "Időszak kezdete"
 [certificate_transparency_window_end]
 other = "Időszak vége"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Nyilatkozat a tanúsítási gyakorlatról"
 
 [overview]
