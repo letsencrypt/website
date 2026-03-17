@@ -8,6 +8,8 @@ display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
+> Update March 16, 2026: Thanks to some timeline changes in the root program requirements, we have been able to push back the removal of the `tlsclient` profile slightly. If you are already using the `tlsclient` profile before May 13, 2026, now you will be able to continue to do so through July 8, 2026.
+
 Let's Encrypt will no longer include the "TLS Client Authentication" Extended Key Usage (EKU) in our certificates beginning in 2026. Most users who use Let's Encrypt to secure websites won't be affected and won't need to take any action. However, if you use Let's Encrypt certificates as client certificates to authenticate to a server, this change may impact you.
 
 To minimize disruption, Let's Encrypt will roll this change out in multiple stages, using [ACME Profiles](https://letsencrypt.org/docs/profiles/):
@@ -15,7 +17,7 @@ To minimize disruption, Let's Encrypt will roll this change out in multiple stag
 - **Today**: Let's Encrypt already excludes the Client Authentication EKU on our [`tlsserver`](https://letsencrypt.org/docs/profiles/#tlsserver) ACME profile. You can verify compatibility by issuing certificates with this profile now.
 - **October 1, 2025**: Let's Encrypt will launch a new `tlsclient` ACME profile which will retain the TLS Client Authentication EKU. Users who need additional time to migrate can opt-in to this profile.
 - **February 11, 2026**: the default [`classic`](https://letsencrypt.org/docs/profiles/#classic) ACME profile will no longer contain the Client Authentication EKU.
-- **May 13, 2026**: the `tlsclient` ACME profile will no longer be available and no further certificates with the Client Authentication EKU will be issued.
+- **July 8, 2026**: the `tlsclient` ACME profile will no longer be available and no further certificates with the Client Authentication EKU will be issued.
 
 Once this is completed, Let's Encrypt will switch to issuing with new intermediate Certificate Authorities which also do not contain the TLS Client Authentication EKU.
 

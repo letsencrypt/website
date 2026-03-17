@@ -1,7 +1,7 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2026-02-11
+lastmod: 2026-03-16
 show_lastmod: 1
 ---
 
@@ -11,7 +11,7 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 ## Removal of TLS Client Authentication EKU
 
-On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. As a temporary stop-gap for clients that need more time to migrate, we have a [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile available until May 13, 2026.
+On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. As a temporary stop-gap for clients that need more time to migrate, we have a [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile available. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
 
 ## Decreasing Certificate Lifetimes to 45 Days
 
@@ -55,4 +55,3 @@ Clients may [request a "shortlived" certificate](https://letsencrypt.org/2025/02
 ## IP Address Certificates
 
 Shortlived certificates (see above) can request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
-
