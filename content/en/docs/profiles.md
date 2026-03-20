@@ -37,6 +37,7 @@ The classic profile is the default profile selected for all orders which do not 
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
+</div>
 <div class="boxed">
 
 ## tlsserver
