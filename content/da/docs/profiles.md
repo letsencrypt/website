@@ -37,6 +37,7 @@ Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder
 
 <sup id="footnote-2">†</sup>: Kun inkluderet for certifikater med RSA offentlige nøgler.
 
+</div>
 <div class="boxed">
 
 ## tlsserver
