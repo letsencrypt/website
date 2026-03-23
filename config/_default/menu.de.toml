@@ -1,5 +1,5 @@
 [[main]]
-name = "Hilfe bekommen"
+name = "Hilfe erhalten"
 weight = 20
 url = "https://community.letsencrypt.org/"
 
@@ -40,7 +40,7 @@ parent = "about"
 url = "https://www.abetterinternet.org/about/"
 
 [[main]]
-name = "Dienstestatus"
+name = "Dienststatus"
 weight = 60
 identifier = "status"
 parent = "about"
