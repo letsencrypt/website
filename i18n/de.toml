@@ -182,13 +182,13 @@ other = "Mit PayPal spenden"
 other = "Spenden via PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - Seite nicht gefunden"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Die von ihnen aufgerufene Seite existiert nicht oder wurde verschoben."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Zurück zur Startseite"
 
 [amount_per_year]
 other = "{{ .nb }} USD/Jahr"
@@ -221,7 +221,7 @@ other = "Jetzt spenden"
 other = "Toggle menu"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "Rechtsadresse"
 
 [isrg_mailing_label]
 other = "Senden Sie alle Briefe oder Anfragen an:"
@@ -479,16 +479,16 @@ other = "WAYS TO GIVE"
 other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "Wieso Unterstützen?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "Kostenlose, automatisierte und einfach zu verwendende TLS Zertifikate."
 
 [donate_page_funding_details_list_item2]
-other = "We make it easy to use one or one million certs."
+other = "Wir machen es einfach ein oder eine Millionen Zertifikate zu nutzen."
 
 [donate_page_funding_details_list_item3]
-other = "You make HTTPS possible all around the world."
+other = "Ihr macht HTTPS überall auf der Welt möglich."
 
 [donate_page_funding_details_list_item4]
 other = "Help us continue operating at a truly global scale."

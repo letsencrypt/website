@@ -1,8 +1,7 @@
 ---
 title: Challenge Typen
 slug: challenge-types
-date: 2019-02-25
-lastmod: 2023-02-13
+lastmod: 2026-02-12
 show_lastmod: 1
 ---
 
@@ -13,21 +12,22 @@ Wenn Sie ein Zertifikat von Let’s Encrypt erhalten, überprüfen unsere Server
 
 Dies ist heute die häufigste Art der Challenge. Let's Encrypt gibt Ihrem ACME-Client einen Token und Ihr ACME-Client legt eine Datei auf Ihrem Webserver unter `http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>` ab. Diese Datei enthält den Token sowie einen Fingerabdruck Ihres Kontoschlüssels. Sobald Ihr ACME-Client Let’s Encrypt mitteilt, dass die Datei fertig ist, versucht Let’s Encrypt sie abzurufen (möglicherweise mehrmals von mehreren Standorten aus). Wenn unsere Validierungsprüfunge mit den Antworten von Ihrem Webserver übereinstimmen, wird die Validierung als erfolgreich angesehen und Sie können mit der Ausstellung Ihres Zertifikats fortfahren. Wenn die Validierungsprüfungen fehlschlagen, müssen Sie es mit einem neuen Zertifikat erneut versuchen.
 
-Unsere Implementierung der HTTP-01-Challenge folgt Weiterleitungen, bis zu 10 Weiterleitungen tief. Es werden nur Weiterleitungen zu "http:" oder "https:" akzeptiert und nur zu den Ports 80 oder 443. Es werden keine Umleitungen zu IP-Adressen akzeptiert. Bei der Umleitung zu einer HTTPS-URL werden keine Zertifikate überprüft (da diese Abfrage gültige Zertifikate erstellen soll, kann es vorkommen, dass selbstsignierte oder abgelaufene Zertifikate vorhanden sind).
+Unsere Implementierung der HTTP-01-Challenge folgt Weiterleitungen, bis zu 10 Weiterleitungen tief. Es werden nur Weiterleitungen zu "http:" oder "https:" akzeptiert und nur zu den Ports 80 oder 443. Bei der Umleitung zu einer HTTPS-URL werden keine Zertifikate überprüft (da diese Abfrage gültige Zertifikate erstellen soll, kann es vorkommen, dass selbstsignierte oder abgelaufene Zertifikate vorhanden sind).
 
 Die HTTP-01 Challenge kann nur auf Port 80 durchgeführt werden. Erlauben von anderen Ports, würde die Challenge weniger sicher machen und ist nach dem ACME Standard nicht erlaubt.
 
 Vorteile:
 
- - Ohne Fachkenntnisse in der Domainverwaltung einfach zu automatisieren.
- - Erlaubt Hosting Providern das Ausstellen von Zertifikaten für CNAME Domains.
- - Funkioniert mit jedem Standard-Webserver.
+- Ohne Fachkenntnisse in der Domainverwaltung einfach zu automatisieren.
+- Erlaubt Hosting Providern das Ausstellen von Zertifikaten für CNAME Domains.
+- Funkioniert mit jedem Standard-Webserver.
+- Die Methode kann auch genutzt werden, um IP-Adressen zu verifizieren.
 
 Nachteile:
 
- - Funktioniert nicht, wenn Ihr ISP Port 80 blockiert (selten, aber es gibt solche ISPs).
- - Let’s Encrypt erlaubt diese Challenge nicht zum Ausstellen von Wildcard Zertifikaten.
- - Wenn Sie mehrere Webserver haben, müssen Sie sicherstellen, dass die Dateien überall verfügbar sind.
+- Funktioniert nicht, wenn Ihr ISP Port 80 blockiert (selten, aber es gibt solche ISPs).
+- Diese Methode kann nicht genutzt werden, um Wildcard-Zertifikate zu beantragen.
+- Wenn Sie mehrere Webserver haben, müssen Sie sicherstellen, dass die Dateien überall verfügbar sind.
 
 # DNS-01 challenge
 
@@ -45,35 +45,38 @@ Sie können mehrere TXT Einträge für denselben Namen vorhalten. Wenn Sie zum B
 
 Vorteile:
 
- - Sie können diese Challenge zur Ausstellung von Wildcard-Zertifikaten verwenden.
- - Es funtioniert gut, wenn Sie mehrere Webserver verwenden.
+- Sie können diese Challenge zur Ausstellung von Wildcard-Zertifikaten verwenden.
+- Es funtioniert gut, wenn Sie mehrere Webserver verwenden.
+- Sie können diese Methode nutzen, um Domain Namen zu validieren, deren Webserver nicht im öffentlichen Internet erreichbar sind.
 
 Nachteile:
 
- - Das Vorhalten der API Zugriffsinformationen auf dem Webserver ist ein Risiko.
- - Ihr DNS Anbieter bietet vielleicht keine API an.
- - Ihre DNS API stellt vielleicht keine Information über die Propagierungszeit zur Verfügung.
-
-# TLS-SNI-01
-
-Diese Challenge war in einer Entwurfsversion von ACME definiert. Es wurde ein TLS Handshake auf Port 443 durchgeführt und ein spezieller [SNI][] Header gesendet, welches nach einem Zertifikat mit dem Token gesucht hat. Es wurde in [März 2019 deaktiviert][tls-sni-disablement], da es nicht sicher genug war.
+- Das Vorhalten der API Zugriffsinformationen auf dem Webserver ist ein Risiko.
+- Ihr DNS Anbieter bietet vielleicht keine API an.
+- Ihre DNS API stellt vielleicht keine Information über die Propagierungszeit zur Verfügung.
+- Diese Methode kann nicht genutzt werden, um IP-Adressen zu validieren.
 
 # TLS-ALPN-01
 
 Diese Challenge wurde entwickelt, nachdem TLS-SNI-01 veraltet war und ist als [separatater Standard][tls-alpn] definiert. Wie TLS-SNI-01 arbeitet es mit TLS auf Port 443. Es benutzt ein angepasstes ALPN Protokoll, um sicherzustellen, dass nur Server auf eine Validierungsanfrage antworten, die diesen Challenge Typ erwarten. Es erlaubt auch Validierungsanfragen für diesen Challenge Typ mit Benutzung des SNI Felds, das mit dem Domainnamen übereinstimmt, was es wiederum sicherer macht.
 
-Für die meisten Nutzer ist diese Challenge nicht sinnvoll. Es ist die beste Lösung für Entwickler von TLS-terminierenden Reverse-Proxys, die eine host-basierende Validierung wie HTTP-01 durchführen möchten, aber dies aus Separierungsgründen durchgängig als TLS Layer implementieren. Derzeit benutzt bei grossen Hostinganbieter, aber Webserver wie Apache oder Nginx könnten das irgendwann mal ([Caddy kann es jetzt schon][caddy-tls-alpn]).
+Für die meisten Nutzer ist diese Challenge nicht sinnvoll. Es ist die beste Lösung für Entwickler von TLS-terminierenden Reverse-Proxys, die eine host-basierende Validierung wie HTTP-01 durchführen möchten, aber dies aus Separierungsgründen durchgängig als TLS Layer implementieren. Im Moment bedeutet das hauptsächlich große Hosting-Anbieter.
 
 Vorteile:
 
- - Funktioniert wenn Port 80 für Sie nicht erreichbar ist.
- - Es kann als purer TLS Layer arbeiten
+- Funktioniert wenn Port 80 für Sie nicht erreichbar ist.
+- Es kann als purer TLS Layer arbeiten
+- Die Methode kann auch genutzt werden, um IP-Adressen zu verifizieren.
 
 Nachteile:
 
- - Wird nicht unterstützt von Apache, Nginx oder Certbot und wird es auch nicht in naher Zukunft.
- - Wie HTTP-01, wenn Sie mehrere Webserver haben, brauchen zur Antwort alle denselben Content.
- - Diese Methode kann nicht verwendet werden, um Wildcard-Domains zu validieren.
+- ACME-client support ist limitiert.
+- Wie HTTP-01, wenn Sie mehrere Webserver haben, brauchen zur Antwort alle denselben Content.
+- Diese Methode kann nicht verwendet werden, um Wildcard-Domains zu validieren.
+
+# TLS-SNI-01
+
+Diese Challenge war in einer Entwurfsversion von ACME definiert. Es wurde ein TLS Handshake auf Port 443 durchgeführt und ein spezieller [SNI][] Header gesendet, welches nach einem Zertifikat mit dem Token gesucht hat. Es [wurde im März 2019 entfernt][tls-sni-disablement], weil es nicht sicher genug war.
 
 [dns-api-providers]: https://community.letsencrypt.org/t/dns-providers-who-easily-integrate-with-lets-encrypt-dns-validation/86438
 [securing-dns-credentials]: https://www.eff.org/deeplinks/2018/02/technical-deep-dive-securing-automation-acme-dns-challenge-validation
@@ -82,4 +85,3 @@ Nachteile:
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
-[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860
