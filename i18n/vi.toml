@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
+other = "Mã hóa cho Mọi người. Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn phí cho hơn 500 triệu trang web."
 
 [home_hero_getting_started]
 other = "Bắt Đầu"
@@ -11,7 +11,7 @@ other = "Đóng Góp"
 other = "Nhà tài trợ"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
+other = "Đọc tất cả về công việc phi lợi nhuận của chúng tôi trong năm nay tại <a href='https://abetterinternet.org/annual-reports/'>Báo cáo Thường niên năm 2025</a>."
 
 [home_major_sponsors]
 other = "Các nhà tài trợ chính và các nhà tài trợ"
@@ -29,24 +29,24 @@ other = 'Đăng ký <a href="{{ .Permalink }}">qua RSS</a>'
 other = "Hỗ trợ một trang Web an toàn hơn và tôn trọng quyền riêng tư."
 
 [footer_donate]
-other = "Donate Now"
+other = "Quyên Góp Ngay"
 
 [footer_mailing]
 other = "Gửi tất cả thư hoặc thắc mắc đến:"
 
 [footer_legal_address]
-other = "Legal Address"
+other = "Địa chỉ Pháp lý"
 
 [footer_policies]
 other = """
-View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
+Xem <a href="/privacy/">chính sách bảo mật</a> của chúng tôi.<br>
+Xem <a href="https://www.abetterinternet.org/trademarks">chính sách nhãn hiệu</a> của chúng tôi.<br>
+Xem <a href="https://www.abetterinternet.org/terms-of-service">điều khoản dịch vụ</a> của chúng tôi.
 """
 
 [footer_links]
 other = """
-<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
+<a href="/privacy/">Chính sách Bảo mật</a> <a href="https://www.abetterinternet.org/trademarks">Chính sách Nhãn hiệu</a>
 """
 
 [header_skip_nav]
@@ -62,7 +62,7 @@ other = "Xem tất cả Tài liệu"
 other = "Let's Encrypt Blog Feed"
 
 [diamond]
-other = "Diamond"
+other = "Kim cương"
 
 [platinum]
 other = "Platinum"
@@ -182,13 +182,13 @@ other = "Đóng góp với nút PayPal"
 other = "Đóng góp với PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - Không tìm thấy trang"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Quay lại Trang chủ"
 
 [amount_per_year]
 other = "${{ .nb }}/yr (USD)"
@@ -206,28 +206,28 @@ other = "100-999 nhân viên"
 other = "1000+ nhân viên"
 
 [subscribe_to_newsletter_headline]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Đăng ký nhận cập nhật qua email về Let's Encrypt và các dự án khác của ISRG"
 
 [site_banner_text]
-other = "ISRG celebrates 10 years of helping build a brighter Internet →"
+other = "ISRG kỷ niệm 10 năm giúp xây dựng một Internet tươi sáng hơn →"
 
 [internet_security_research_group]
 other = "Internet Security Research Group"
 
 [header_donate_now]
-other = "Donate Now"
+other = "Quyên Góp Ngay"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "Chuyển đổi menu"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "Địa chỉ Pháp lý"
 
 [isrg_mailing_label]
 other = "Gửi tất cả thư hoặc thắc mắc đến:"
 
 [newsletter_subscribe_heading]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Đăng ký nhận cập nhật qua email về Let's Encrypt và các dự án khác của ISRG"
 
 [footer_nav_github]
 other = "GitHub"
@@ -236,304 +236,304 @@ other = "GitHub"
 other = "LinkedIn"
 
 [footer_nav_terms]
-other = "Terms"
+other = "Điều khoản"
 
 [footer_nav_privacy]
-other = "Privacy Policy"
+other = "Chính sách Bảo mật"
 
 [footer_nav_trademark]
-other = "trademarks"
+other = "nhãn hiệu"
 
 [home_hero_heading]
-other = "Encryption for<br /> Everybody"
+other = "Mã hóa cho<br /> Mọi người"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
+other = 'Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn phí cho hơn <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> trang web.'
 
 [home_hero_get_started]
 other = "Bắt Đầu"
 
 [home_hero_annual_report_title]
-other = "Explore our work to improve security and privacy"
+other = "Khám phá công việc của chúng tôi để cải thiện bảo mật và quyền riêng tư"
 
 [home_hero_annual_report_description]
-other = "Our 2025 Annual Report highlights the progress we've made toward a better Internet."
+other = "Báo cáo Thường niên năm 2025 của chúng tôi nêu bật những tiến bộ mà chúng tôi đã đạt được hướng tới một Internet tốt hơn."
 
 [home_hero_annual_report_button]
-other = "Read the Annual Report"
+other = "Đọc Báo cáo Thường niên"
 
 [getting_started_eyebrow]
-other = "Free, Automated TLS Certificates"
+other = "Chứng chỉ TLS Miễn phí, Tự động"
 
 [getting_started_heading]
-other = "Getting started"
+other = "Bắt đầu"
 
 [getting_started_description]
-other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+other = "Let's Encrypt là một Cơ quan Chứng nhận cung cấp chứng chỉ TLS miễn phí, giúp các trang web dễ dàng bật mã hóa HTTPS và tạo ra một Internet an toàn hơn cho mọi người. Let's Encrypt là một dự án của tổ chức phi lợi nhuận Internet Security Research Group (ISRG)."
 
 [getting_started_ready_title]
-other = "Ready to begin?"
+other = "Sẵn sàng để bắt đầu?"
 
 [getting_started_ready_content]
-other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+other = "Bắt đầu bảo mật các trang web của bạn với các chứng chỉ SSL/TLS miễn phí từ Let's Encrypt. Để có được chứng chỉ cho tên miền của trang web, bạn phải chứng minh quyền kiểm soát đối với tên miền đó."
 
 [getting_started_ready_link]
-other = "Let's Get Started"
+other = "Hãy Bắt Đầu"
 
 [getting_started_docs_title]
 other = "Tài liệu"
 
 [getting_started_docs_content]
-other = "Learn about our certificate issuance process and best practices."
+other = "Tìm hiểu về quy trình cấp chứng chỉ của chúng tôi và các phương pháp hay nhất."
 
 [getting_started_docs_link]
-other = "Read Documentation"
+other = "Đọc Tài liệu"
 
 [getting_started_clients_title]
-other = "ACME Clients"
+other = "Máy khách ACME"
 
 [getting_started_clients_content]
-other = "Choose from our recommended ACME clients to automatically manage your certificates."
+other = "Chọn từ các máy khách ACME được đề xuất của chúng tôi để tự động quản lý các chứng chỉ của bạn."
 
 [getting_started_clients_link]
-other = "Browse ACME Clients"
+other = "Duyệt các Máy khách ACME"
 
 [getting_started_help_title]
-other = "Get help from the Let's Encrypt Community"
+other = "Nhận trợ giúp từ Cộng đồng Let's Encrypt"
 
 [getting_started_help_content]
-other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
+other = "Tham gia diễn đàn cộng đồng của chúng tôi để được hỗ trợ kỹ thuật và chia sẻ kiến thức với các chuyên gia, tình nguyện viên và nhân viên ISRG."
 
 [getting_started_help_link]
-other = "Visit the Forum"
+other = "Truy cập Diễn đàn"
 
 [support_heading_entire_sentence]
-other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+other = "Tác động toàn cầu có được nhờ sự hào phóng, đóng góp, tài trợ và chính bạn"
 
 [support_heading_base]
-other = "Global impact made possible by"
+other = "Tác động toàn cầu có được nhờ"
 
 [support_heading_word1]
-other = "generosity"
+other = "sự hào phóng"
 
 [support_heading_word2]
-other = "contributions"
+other = "đóng góp"
 
 [support_heading_word3]
-other = "sponsorship"
+other = "tài trợ"
 
 [support_heading_word4]
-other = "you"
+other = "bạn"
 
 [support_donate_title]
-other = "Support Encryption for Everybody"
+other = "Hỗ trợ Mã hóa cho Mọi người"
 
 [support_donate_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Khoản quyên góp của bạn giúp Let's Encrypt luôn miễn phí và dễ tiếp cận đối với hàng triệu trang web trên toàn thế giới. Hãy cùng chúng tôi bảo mật Internet, cho từng trang web một. Mọi đóng góp đều tạo nên sự khác biệt, cho dù bạn là cá nhân hay công ty."
 
 [support_donate_button]
-other = "Donate Now"
+other = "Quyên Góp Ngay"
 
 [support_sponsor_title]
-other = "Leading Through Sponsorship"
+other = "Dẫn đầu thông qua Tài trợ"
 
 [support_sponsor_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Các công ty tin tưởng hoặc đánh giá cao công việc của chúng tôi trong việc mã hóa Web có thể hỗ trợ tài chính cho Let's Encrypt. Hãy cùng các công ty lớn và nhỏ giúp công việc này trở nên khả thi!"
 
 [support_sponsor_button]
-other = "Learn about Sponsorship"
+other = "Tìm hiểu về Tài trợ"
 
 [sponsors_heading]
 other = "Các nhà tài trợ chính và các nhà tài trợ"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Cấp Kim cương"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Cấp Bạch kim"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Cấp Vàng"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Cấp Bạc"
 
 [common_read_more_arrow]
 other = " →"
 
 [newsletter_iframe_title]
-other = "Newsletter signup form"
+other = "Biểu mẫu đăng ký bản tin"
 
 [blog_section_heading]
-other = "From our blog"
+other = "Từ blog của chúng tôi"
 
 [blog_section_see_all]
-other = "See all our blog posts"
+other = "Xem tất cả các bài đăng trên blog"
 
 [post_hero_last_updated]
-other = "Last updated:"
+other = "Cập nhật lần cuối:"
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "Trang được cập nhật gần đây hơn hiện có sẵn bằng tiếng Anh"
 
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "Hỗ trợ Công việc của chúng tôi"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG là một tổ chức phi lợi nhuận 501(c)(3) được hỗ trợ 100% thông qua sự hào phóng của những người chia sẻ tầm nhìn của chúng tôi về một nền bảo mật Internet mở và phổ biến. Nếu bạn muốn hỗ trợ công việc của chúng tôi, vui lòng cân nhắc <a href="https://www.abetterinternet.org/getinvolved/">tham gia</a>, <a href="/donate/">quyên góp</a>, hoặc khuyến khích công ty của bạn <a href="https://www.abetterinternet.org/sponsor/">trở thành nhà tài trợ</a>.'
 
 [donate_get_involved_button]
 other = "Tham Gia"
 
 [donate_individual_impact_eyebrow]
-other = "Individual Impact"
+other = "Tác động Cá nhân"
 
 [donate_encryption_everybody_alt]
-other = "Encryption for Everybody"
+other = "Mã hóa cho Mọi người"
 
 [project_card_visit]
-other = "Visit"
+other = "Ghé thăm"
 
 [internet_security_research_group_initials]
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn phí cho hơn ### trang web"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = "Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn phí cho hơn"
 
 [home_hero_certificate_count]
 other = "700M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "trang web"
 
 [projects_section_title]
-other = "More ways we're improving security and privacy"
+other = "Thêm nhiều cách chúng tôi đang cải thiện bảo mật và quyền riêng tư"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "Bạn có biết Let's Encrypt có hai dự án anh em? Let's Encrypt và hai dự án này được vận hành bởi Internet Security Research Group (ISRG), một tổ chức lợi ích công cộng 501(c)(3) tập trung vào việc làm cho Internet an toàn hơn và tôn trọng quyền riêng tư hơn."
 
 [project_prossimo_name]
 other = "Prossimo"
 
 [project_prossimo_description]
-other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+other = "Tập trung vào an toàn bộ nhớ trong cơ sở hạ tầng Internet quan trọng thông qua việc sử dụng các ngôn ngữ lập trình an toàn bộ nhớ."
 
 [project_divviup_name]
 other = "Divvi Up"
 
 [project_divviup_description]
-other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+other = "Một hệ thống tôn trọng quyền riêng tư để thu thập và tổng hợp các số liệu, được xây dựng trên Tính toán Đa bên (Multi-Party Computation)."
 
 [support_donate_section_title]
-other = "Support Encryption for Everybody"
+other = "Hỗ trợ Mã hóa cho Mọi người"
 
 [support_donate_section_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Khoản quyên góp của bạn giúp Let's Encrypt luôn miễn phí và dễ tiếp cận đối với hàng triệu trang web trên toàn thế giới. Hãy cùng chúng tôi bảo mật Internet, cho từng trang web một. Mọi đóng góp đều tạo nên sự khác biệt, cho dù bạn là cá nhân hay công ty."
 
 [support_donate_section_button]
-other = "Donate Now"
+other = "Quyên Góp Ngay"
 
 [support_sponsor_section_title]
-other = "Leading Through Sponsorship"
+other = "Dẫn đầu thông qua Tài trợ"
 
 [support_sponsor_section_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Các công ty tin tưởng hoặc đánh giá cao công việc của chúng tôi trong việc mã hóa Web có thể hỗ trợ tài chính cho Let's Encrypt. Hãy cùng các công ty lớn và nhỏ giúp công việc này trở nên khả thi!"
 
 [support_sponsor_section_button]
-other = "Learn about Sponsorship"
+other = "Tìm hiểu về Tài trợ"
 
 [stats_section_title]
-other = "Let's Encrypt Growth"
+other = "Sự tăng trưởng của Let's Encrypt"
 
 [stats_section_button]
-other = "More stats"
+other = "Thêm số liệu"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "Thực hiện Quyên góp Định kỳ"
 
 [donate_page_make_recurring_donation_content]
-other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+other = "Mã hóa Web là công việc hàng ngày—các chứng chỉ cần được gia hạn! Sự hỗ trợ duy trì của bạn đảm bảo chúng tôi có thể duy trì việc gia hạn chứng chỉ ở quy mô lớn."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "Bắt đầu quyên góp định kỳ của bạn ngay bây giờ"
 
 [donate_page_stock_donations_title]
-other = "Donations of Stock"
+other = "Quyên góp bằng Cổ phiếu"
 
 [donate_page_crypto_gifts_title]
-other = "Gifts of Cryptocurrency"
+other = "Quà tặng bằng Tiền điện tử"
 
 [donate_page_other_ways_title]
-other = "Other Ways to Give"
+other = "Các cách khác để Đóng góp"
 
 [donate_page_ways_to_give_heading]
-other = "WAYS TO GIVE"
+other = "CÁC CÁCH ĐÓNG GÓP"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "Thúc đẩy công việc của chúng tôi tại Let's Encrypt thông qua đóng góp từ thiện của bạn."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "TẠI SAO NÊN HỖ TRỢ?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "Chứng chỉ TLS miễn phí, tự động và dễ sử dụng."
 
 [donate_page_funding_details_list_item2]
-other = "We make it easy to use one or one million certs."
+other = "Chúng tôi giúp việc sử dụng một hay một triệu chứng chỉ trở nên dễ dàng."
 
 [donate_page_funding_details_list_item3]
-other = "You make HTTPS possible all around the world."
+other = "Bạn làm cho HTTPS trở nên khả thi trên toàn thế giới."
 
 [donate_page_funding_details_list_item4]
-other = "Help us continue operating at a truly global scale."
+other = "Giúp chúng tôi tiếp tục hoạt động ở quy mô thực sự toàn cầu."
 
 [donate_page_stock_intro_text]
-other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+other = "Các chứng khoán hoặc cổ phiếu quỹ tương hỗ đã tăng giá mà bạn sở hữu trong hơn một năm có thể là những món quà từ thiện tuyệt vời."
 
 [donate_page_stock_table_brokerage_firm]
-other = "Brokerage Firm:"
+other = "Công ty Môi giới:"
 
 [donate_page_stock_table_account_name]
-other = "Account Name:"
+other = "Tên Tài khoản:"
 
 [donate_page_stock_table_account_number]
-other = "ISRG Account #:"
+other = "Số tài khoản ISRG #:"
 
 [donate_page_stock_table_dtc_number]
-other = "DTC #:"
+other = "Số DTC #:"
 
 [donate_page_stock_table_tax_id]
-other = "Tax ID #:"
+other = "Mã số Thuế #:"
 
 [donate_page_stock_outro_text]
-other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+other = "Vui lòng cho chúng tôi biết nếu bạn đang chuyển nhượng chứng khoán tại {{ .sponsorEmailLink }}. Bạn cũng có thể muốn gửi email thư ủy quyền từ người môi giới của mình."
 
 [donate_page_other_daf_heading]
-other = "Donor Advised Funds"
+other = "Quỹ do Nhà tài trợ Tư vấn (DAF)"
 
 [donate_page_other_daf_text]
-other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+other = "Đề xuất một khoản quyên góp cho Internet Security Research Group (tổ chức mẹ của chúng tôi) từ quỹ quà tặng của bạn. 100% khoản quyên góp của bạn sẽ được dùng để hỗ trợ một Internet an toàn và tôn trọng quyền riêng tư."
 
 [donate_page_other_workplace_heading]
-other = "In Your Workplace"
+other = "Tại Nơi làm việc của bạn"
 
 [donate_page_other_workplace_recommend_sponsorship]
-other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+other = "Đề xuất chủ lao động của bạn hỗ trợ công việc của chúng tôi thông qua {{ .sponsorshipLink }}."
 
 [donate_page_other_workplace_sponsorship_link_text]
 other = "Tài Trợ"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "Nhiều tổ chức thực hiện đóng góp tương ứng (matching donations) cho các tổ chức phi lợi nhuận do nhân viên thực hiện. Hãy kiểm tra xem tổ chức của bạn có chương trình tương ứng hay không và nhân đôi tác động của bạn!"
 
 [donate_page_crypto_text]
-other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+other = "Chúng tôi có thể chấp nhận hầu hết các khoản quyên góp bằng tiền điện tử {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
-other = "here"
+other = "tại đây"
