@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2025-02-01
 show_lastmod: 1
 ---
 
@@ -169,20 +169,52 @@ These intermediate CAs have currently-valid certificates, but are not being issu
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295818), [issued certs](https://crt.sh/?Identity=%25&iCAID=295818)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132903), [der](/certs/2024/r14.der), [pem](/certs/2024/r14.pem), [txt](/certs/2024/r14.txt)
+
+</details>
+
+<details>
+<summary>Upcoming</summary>
+
+These intermediate CAs were issued in 2025, and we expect to begin issuing from them in 2026.
+
+* **Let's Encrypt YE1**
+  * Subject: `O = Let's Encrypt, CN = YE1`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432952), [issued certs](https://crt.sh/?Identity=%25&iCAID=432952)
+  * Certificate details: [crt.sh](https://crt.sh/?id=21202439416), [der](/certs/gen-y/int-ye1.der), [pem](/certs/gen-y/int-ye1.pem), [txt](/certs/gen-y/int-ye1.txt)
+* **Let's Encrypt YE2**
+  * Subject: `O = Let's Encrypt, CN = YE2`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=431054), [issued certs](https://crt.sh/?Identity=%25&iCAID=431054)
+  * Certificate details: [crt.sh](https://crt.sh/?id=20947047102), [der](/certs/gen-y/int-ye2.der), [pem](/certs/gen-y/int-ye2.pem), [txt](/certs/gen-y/int-ye2.txt)
   * CRL hostname: `r14.c.lencr.org`
 * **Let's Encrypt YE3**
   * Subject: `O = Let's Encrypt, CN = YE3`
   * Key type: `ECDSA P-384`
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=432914), [issued certs](https://crt.sh/?Identity=%25&iCAID=432914)
-  * Certificate details: [der](/certs/gen-y/int-ye3.der), [pem](/certs/gen-y/int-ye3.pem), [txt](/certs/gen-y/int-ye3.txt)
+  * Certificate details: [crt.sh](https://crt.sh/?id=21198235460), [der](/certs/gen-y/int-ye3.der), [pem](/certs/gen-y/int-ye3.pem), [txt](/certs/gen-y/int-ye3.txt)
+* **Let's Encrypt YR1**
+  * Subject: `O = Let's Encrypt, CN = YR1`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432476), [issued certs](https://crt.sh/?Identity=%25&iCAID=432476)
+  * Certificate details: [crt.sh](https://crt.sh/?id=21135538541), [der](/certs/gen-y/int-yr1.der), [pem](/certs/gen-y/int-yr1.pem), [txt](/certs/gen-y/int-yr1.txt)
+* **Let's Encrypt YR2**
+  * Subject: `O = Let's Encrypt, CN = YR2`
+  * Key type: `RSA 2048`
+  * Valid until: 2028-09-02
+  * CA details: [crt.sh](https://crt.sh/?caid=432477), [issued certs](https://crt.sh/?Identity=%25&iCAID=432477)
+  * Certificate details: [crt.sh](https://crt.sh/?id=21135538542), [der](/certs/gen-y/int-yr2.der), [pem](/certs/gen-y/int-yr2.pem), [txt](/certs/gen-y/int-yr2.txt)
   * CRL hostname: `ye3.c.lencr.org`
 * **Let's Encrypt YR3**
   * Subject: `O = Let's Encrypt, CN = YR3`
   * Key type: `RSA 2048`
   * Valid until: 2028-09-02
   * CA details: [crt.sh](https://crt.sh/?caid=432480), [issued certs](https://crt.sh/?Identity=%25&iCAID=432480)
-  * Certificate details: [der](/certs/gen-y/int-yr3.der), [pem](/certs/gen-y/int-yr3.pem), [txt](/certs/gen-y/int-yr3.txt)
+  * Certificate details: [crt.sh](https://crt.sh/?id=21135539529), [der](/certs/gen-y/int-yr3.der), [pem](/certs/gen-y/int-yr3.pem), [txt](/certs/gen-y/int-yr3.txt)
   * CRL hostname: `yr3.c.lencr.org`
 
 </details>
