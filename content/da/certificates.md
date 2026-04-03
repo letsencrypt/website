@@ -24,7 +24,7 @@ Bemærk, at Root CAs ikke har udløbsdatoer på helt samme måde som andre certi
   * Certifikatoplysninger (selvsigneret): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certifikatdetaljer (krydssigneret af DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (pensioneret)
   * CRL værtsnavn: `x1.c.lencr.org`
-  * Test websteder: [gyldigt](https://valid-isrgrootx1.letsencrypt.org/), [tilbagekaldt](https://revoked-isrgrootx1.letsencrypt.org/), [udløbet](https://expired-isrgrootx1.letsencrypt.org/)
+  * Test websteder: [gyldigt](https://valid.x1.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x1.test-certs.letsencrypt.org/), [udløbet](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * Emne: `O = Research Group, Internet Security Group, CN = ISRG Root X2`
   * Nøgletype: `ECDSA P-384`
@@ -34,7 +34,7 @@ Bemærk, at Root CAs ikke har udløbsdatoer på helt samme måde som andre certi
   * Certifikatoplysninger (krydsunderskrevet af ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Certifikat detaljer (andet kryds underskrevne af ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der),[pem](/certs/gen-y/root-x2-by-x1.pem),[txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL værtsnavn: `x2.c.lencr.org`
-  * Test websteder: [gyldigt](https://valid-isrgrootx2.letsencrypt.org/), [tilbagekaldt](https://revoked-isrgrootx2.letsencrypt.org/), [udløbet](https://expired-isrgrootx2.letsencrypt.org/)
+  * Test websteder: [gyldigt](https://valid.x2.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x2.test-certs.letsencrypt.org/), [udløbet](https://expired.x2.test-certs.letsencrypt.org/)
 
 Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, men vil snart blive indsendt:
 

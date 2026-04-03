@@ -17,11 +17,11 @@ show_lastmod: 1
 저희는 root를 추적하는 인증서를 테스트할 수 있는 웹 사이트를 만들었습니다.
 
 * ISRG Root X1 유효 인증서
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
+  * [https://valid.x1.test-certs.letsencrypt.org/](https://valid.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 해지된 인증서
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [https://revoked.x1.test-certs.letsencrypt.org/](https://revoked.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 만료된 인증서
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+  * [https://expired.x1.test-certs.letsencrypt.org/](https://expired.x1.test-certs.letsencrypt.org/)
 
 # 중간 인증서
 

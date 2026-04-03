@@ -24,7 +24,7 @@ show_lastmod: 1
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=9314791)、[der](/certs/isrgrootx1.der)、[pem](/certs/isrgrootx1.pem)、[txt](/certs/isrgrootx1.txt)
   * 证书详细信息（DST Root CA X3 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3958242236)、[der](/certs/isrg-root-x1-cross-signed.der)、[pem](/certs/isrg-root-x1-cross-signed.pem)、[txt](/certs/isrg-root-x1-cross-signed.txt)（现已不再使用）
   * CRL 域名：`x1.c.lencr.org`
-  * 测试网站：[正常证书](https://valid-isrgrootx1.letsencrypt.org/)、[已吊销证书](https://revoked-isrgrootx1.letsencrypt.org/)、[已过期证书](https://expired-isrgrootx1.letsencrypt.org/)
+  * 测试网站：[正常证书](https://valid.x1.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x1.test-certs.letsencrypt.org/)、[已过期证书](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * 主体：`O = Internet Security Research Group, CN = ISRG Root X2`
   * 密钥类型：`ECDSA P-384`
@@ -34,7 +34,7 @@ show_lastmod: 1
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3334561878)、[der](/certs/isrg-root-x2-cross-signed.der)、[pem](/certs/isrg-root-x2-cross-signed.pem)、[txt](/certs/isrg-root-x2-cross-signed.txt)
   * 证书详细信息（ISRG Root X1 第二次交叉签名的版本）：[crt.sh](https://crt.sh/?id=20878422868)、[der](/certs/gen-y/root-x2-by-x1.der)、[pem](/certs/gen-y/root-x2-by-x1.pem)、[txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL 域名：`x2.c.lencr.org`
-  * 测试网站：[正常证书](https://valid-isrgrootx2.letsencrypt.org/)、[已吊销证书](https://revoked-isrgrootx2.letsencrypt.org/)、[已过期证书](https://expired-isrgrootx2.letsencrypt.org/)
+  * 测试网站：[正常证书](https://valid.x2.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x2.test-certs.letsencrypt.org/)、[已过期证书](https://expired.x2.test-certs.letsencrypt.org/)
 
 下列根证书尚未加入各类可信证书库，但近期将进入申请阶段：
 
