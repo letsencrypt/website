@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2026-02-11
+lastmod: 2026-03-16
 show_lastmod: false
 ---
 
@@ -94,7 +94,7 @@ Certifikater udstedt med tlsclient profil indeholder TLS Client Auth EKU.
 Den er ellers identisk med den klassiske profil.
 
 Men som [annonceret på vores blog](/2025/05/14/ending-tls-client-authentication),
-denne profil vil ophøre med at eksistere den 13. maj 2026.
+vil denne profil snart vil ophøre med at eksistere. Abonnenter, der allerede bruger det før 13. maj 2026 kan fortsætte med at bruge det indtil 8. juli 2026.
 
 Denne profil findes alene med det formål at give abonnenter, der har brug for adgang til
 til TLS Client Auth certifikater til at beholde den EKU i lidt længere tid at
