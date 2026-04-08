@@ -1,7 +1,7 @@
 ---
 title: Kommende Funktioner
 slug: upcoming-features
-lastmod: 2026-02-11
+lastmod: 2026-03-16
 show_lastmod: 1
 ---
 
@@ -11,7 +11,7 @@ For meddelelser om kommende ændringer, venligst [abonnér på postlisten Teknis
 
 ## Fjernelse af TLS Client Authentication EKU
 
-11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Som et midlertidigt stop-gap for kunder, der har brug for mere tid til at migrere, har vi en [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profil tilgængelig indtil 13. maj 2026.
+11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Som en midlertidig løsning for kunder, der har brug for mere tid til at migrere, har vi en [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profil tilgængelig indtil. maj. Abonnenter, der allerede bruger det før 13. maj 2026, kan fortsætte med at bruge det indtil 8. juli 2026.
 
 ## Reduceret certifikatet levetider til 45 dage
 
@@ -54,4 +54,3 @@ Klienten kan [anmode om et "shortlived" certifikat](https://letsencrypt.org/2025
 ## Ip Adresse Certifikater
 
 Kortlivede ("shortlived") certifikater (se ovenfor) kan anmode om, at certifikatet [indeholder IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i dets Emne Alternative Navne. Disse adresser vil blive [valideret på samme måde som DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) er i dag.
-
