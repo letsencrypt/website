@@ -404,7 +404,7 @@ other = "ISRG"
 other = "### 以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
 
 [home_hero_nonprofit_prefix]
-other = "以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
+other = "私たちの非営利団体による無料 TLS 証明書の提供先:"
 
 [home_hero_certificate_count]
 other = "700M"
