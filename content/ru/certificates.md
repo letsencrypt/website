@@ -25,13 +25,13 @@ show_lastmod: 1
 Мы создали сайты для проверки цепочки сертификатов вплоть до активных корневых.
 
 * ISRG Root X1
-  * [Действительный](https://valid-isrgrootx1.letsencrypt.org/)
-  * [Отозванный](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [Срок действия истёк](https://expired-isrgrootx1.letsencrypt.org/)
+  * [Действительный](https://valid.x1.test-certs.letsencrypt.org/)
+  * [Отозванный](https://revoked.x1.test-certs.letsencrypt.org/)
+  * [Срок действия истёк](https://expired.x1.test-certs.letsencrypt.org/)
 * ISRG Root X2
-  * [Действительный](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Отозванный](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Срок действия истёк](https://expired-isrgrootx2.letsencrypt.org/)
+  * [Действительный](https://valid.x2.test-certs.letsencrypt.org/)
+  * [Отозванный](https://revoked.x2.test-certs.letsencrypt.org/)
+  * [Срок действия истёк](https://expired.x2.test-certs.letsencrypt.org/)
 
 # Промежуточные сертификаты
 

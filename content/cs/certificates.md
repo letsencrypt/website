@@ -24,7 +24,7 @@ Upozorňujeme, že kořenové CA nemají datum platnosti ve stejném smyslu jako
   * Podrobnosti certifikátu (podepsaný sám sebou): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Podrobnosti certifikátu (křížově podepsaný DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (ukončeno)
   * CRL hostname: `x1.c.lencr.org`
-  * Testovací webstránky: [platný](https://valid-isrgrootx1.letsencrypt.org/), [odvolaný](https://revoked-isrgrootx1.letsencrypt.org/), [expirovaný](https://expired-isrgrootx1.letsencrypt.org/)
+  * Testovací webstránky: [platný](https://valid.x1.test-certs.letsencrypt.org/), [odvolaný](https://revoked.x1.test-certs.letsencrypt.org/), [expirovaný](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * Předmět: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Typ klíče: `ECDSA P-384`
@@ -34,7 +34,7 @@ Upozorňujeme, že kořenové CA nemají datum platnosti ve stejném smyslu jako
   * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL hostname: `x2.c.lencr.org`
-  * Testovací webstránky: [platný](https://valid-isrgrootx2.letsencrypt.org/), [odvolaný](https://revoked-isrgrootx2.letsencrypt.org/), [expirovaný](https://expired-isrgrootx2.letsencrypt.org/)
+  * Testovací webstránky: [platný](https://valid.x2.test-certs.letsencrypt.org/), [odvolaný](https://revoked.x2.test-certs.letsencrypt.org/), [expirovaný](https://expired.x2.test-certs.letsencrypt.org/)
 
 Tyto kořeny zatím nejsou zahrnuty v úložištích důvěryhodných kořenových programů (Trust Stores), ale brzy budou předloženy k zařazení:
 

@@ -24,7 +24,7 @@ show_lastmod: 1
   * פרטי אישורים (נחתמו עצמאית): [crt.sh](https://crt.sh/?id=9314791),‏ [der](/certs/isrgrootx1.der),‏ [pem](/certs/isrgrootx1.pem),‏ [txt](/certs/isrgrootx1.txt)
   * פרטי אישור (נחתם בהצלבה מול DST Root CA X3):‏ [crt.sh](https://crt.sh/?id=3958242236),‏ [der](/certs/isrg-root-x1-cross-signed.der),‏ [pem](/certs/isrg-root-x1-cross-signed.pem),‏ [txt](/certs/isrg-root-x1-cross-signed.txt) (פרש לגמלאות)
   * שם מארח לרשימת שלילת אישורים (CRL): `x1.c.lencr.org`
-  * אתרי בדיקה: [תקף](https://valid-isrgrootx1.letsencrypt.org/), [נשלל](https://revoked-isrgrootx1.letsencrypt.org/), [פג תוקף](https://expired-isrgrootx1.letsencrypt.org/)
+  * אתרי בדיקה: [תקף](https://valid.x1.test-certs.letsencrypt.org/), [נשלל](https://revoked.x1.test-certs.letsencrypt.org/), [פג תוקף](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * נושא: `O = Internet Security Research Group,‏ CN = ISRG Root X2`
   * סוג מפתח: `ECDSA P-384`
@@ -34,7 +34,7 @@ show_lastmod: 1
   * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878),‏ [der](/certs/isrg-root-x2-cross-signed.der),‏ [pem](/certs/isrg-root-x2-cross-signed.pem),‏ [txt](/certs/isrg-root-x2-cross-signed.txt)
   * פרטי אישור (חתימה צולבת שנייה על ידי ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868),‏ [der](/certs/gen-y/root-x2-by-x1.der),‏ [pem](/certs/gen-y/root-x2-by-x1.pem),‏ [txt](/certs/gen-y/root-x2-by-x1.txt)
   * שם מארח לרשימת שלילת אישורים (CRL): `x2.c.lencr.org`
-  * אתרי בדיקה: [תקף](https://valid-isrgrootx2.letsencrypt.org/), [נשלל](https://revoked-isrgrootx2.letsencrypt.org/), [פג תוקף](https://expired-isrgrootx2.letsencrypt.org/)
+  * אתרי בדיקה: [תקף](https://valid.x2.test-certs.letsencrypt.org/), [נשלל](https://revoked.x2.test-certs.letsencrypt.org/), [פג תוקף](https://expired.x2.test-certs.letsencrypt.org/)
 
 אישורי העל האלה לא נכללים במאגרי האמון של תוכנית אישורי העל, אך תוגש להוספה בקרוב:
 

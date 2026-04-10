@@ -23,7 +23,7 @@ show_lastmod: 1
   * Дані центру сертифікації: [crt.sh](https://crt.sh/?caid=7394), [видані сертифікати](https://crt.sh/?Identity=%25&iCAID=7394)
   * Реквізити сертифіката (само підпис): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Реквізити сертифікатів (підписані перехресним підписом DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (відкликаний)
-  * Тестові сайти: [дійсний](https://valid-isrgrootx1.letsencrypt.org/), [відкликаний](https://revoked-isrgrootx1.letsencrypt.org/), [закінчився](https://expired-isrgrootx1.letsencrypt.org/)
+  * Тестові сайти: [дійсний](https://valid.x1.test-certs.letsencrypt.org/), [відкликаний](https://revoked.x1.test-certs.letsencrypt.org/), [закінчився](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG коріньX2**
   * Тема: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Тип ключа: `ECDSA P-384`
@@ -31,7 +31,7 @@ show_lastmod: 1
   * Дані центру сертифікації: [crt.sh](https://crt.sh/?caid=183269), [видані сертифікати](https://crt.sh/?Identity=%25&iCAID=183269)
   * Реквізити сертифіката (само підпис): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Реквізити сертифіката (з перехресним підписом ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Тестові сайти: [дійсний](https://valid-isrgrootx2.letsencrypt.org/), [відкликаний](https://revoked-isrgrootx2.letsencrypt.org/), [закінчився](https://expired-isrgrootx2.letsencrypt.org/)
+  * Тестові сайти: [дійсний](https://valid.x2.test-certs.letsencrypt.org/), [відкликаний](https://revoked.x2.test-certs.letsencrypt.org/), [закінчився](https://expired.x2.test-certs.letsencrypt.org/)
 
 Додаткову інформацію про сумісність наших кореневих сертифікатів з різними пристроями та сховищами довіри можна знайти в статті [Сумісність сертифікатів](/docs/cert-compat).
 

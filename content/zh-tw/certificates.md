@@ -17,11 +17,11 @@ show_lastmod: 1
 我們設置了以下網站，用來測試由根憑證所簽發的憑證鏈是否有效。
 
 * ISRG Root X1 有效憑證
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
+  * [https://valid.x1.test-certs.letsencrypt.org/](https://valid.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 已註銷憑證
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [https://revoked.x1.test-certs.letsencrypt.org/](https://revoked.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 已過期憑證
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+  * [https://expired.x1.test-certs.letsencrypt.org/](https://expired.x1.test-certs.letsencrypt.org/)
 
 # 中間憑證
 

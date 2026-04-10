@@ -25,13 +25,13 @@ Sertifikat root kami disimpan dengan aman secara luring. Kami menerbitkan sertif
 Kami telah mempersiapkan website untuk pengujian rantai sertifikat menuju root aktif kami.
 
 * ISRG Root X1
-  * [Valid](https://valid-isrgrootx1.letsencrypt.org/)
-  * [Dicabut](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [Kadaluarsa](https://expired-isrgrootx1.letsencrypt.org/)
+  * [Valid](https://valid.x1.test-certs.letsencrypt.org/)
+  * [Dicabut](https://revoked.x1.test-certs.letsencrypt.org/)
+  * [Kadaluarsa](https://expired.x1.test-certs.letsencrypt.org/)
 * ISRG Root X2
-  * [Valid](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Dicabut](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Kadaluarsa](https://expired-isrgrootx2.letsencrypt.org/)
+  * [Valid](https://valid.x2.test-certs.letsencrypt.org/)
+  * [Dicabut](https://revoked.x2.test-certs.letsencrypt.org/)
+  * [Kadaluarsa](https://expired.x2.test-certs.letsencrypt.org/)
 
 # Sertifikat Perantara
 

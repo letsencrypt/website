@@ -25,13 +25,13 @@ show_lastmod: 1
 Έχουμε δημιουργήσει ιστότοπους για να δοκιμάσουμε τα πιστοποιητικά αλυσοπρίονο στις ενεργές ρίζες μας.
 
 * ISRG Root X1
-  * [Έγκυρο](https://valid-isrgrootx1.letsencrypt.org/)
-  * [Ανάκληση](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [Ληγμένο](https://expired-isrgrootx1.letsencrypt.org/)
+  * [Έγκυρο](https://valid.x1.test-certs.letsencrypt.org/)
+  * [Ανάκληση](https://revoked.x1.test-certs.letsencrypt.org/)
+  * [Ληγμένο](https://expired.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1
-  * [Έγκυρο](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Ανάκληση](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Ληγμένο](https://expired-isrgrootx2.letsencrypt.org/)
+  * [Έγκυρο](https://valid.x2.test-certs.letsencrypt.org/)
+  * [Ανάκληση](https://revoked.x2.test-certs.letsencrypt.org/)
+  * [Ληγμένο](https://expired.x2.test-certs.letsencrypt.org/)
 
 # Ενδιάμεσα Πιστοποιητικά
 

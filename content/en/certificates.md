@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -24,7 +24,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certificate details (cross-signed by DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retired)
   * CRL hostname: `x1.c.lencr.org`
-  * Test websites: [valid](https://valid-isrgrootx1.letsencrypt.org/), [revoked](https://revoked-isrgrootx1.letsencrypt.org/), [expired](https://expired-isrgrootx1.letsencrypt.org/)
+  * Test websites: [valid](https://valid.x1.test-certs.letsencrypt.org/), [revoked](https://revoked.x1.test-certs.letsencrypt.org/), [expired](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * Subject: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Key type: `ECDSA P-384`
@@ -34,7 +34,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Certificate details (second cross-sign by ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL hostname: `x2.c.lencr.org`
-  * Test websites: [valid](https://valid-isrgrootx2.letsencrypt.org/), [revoked](https://revoked-isrgrootx2.letsencrypt.org/), [expired](https://expired-isrgrootx2.letsencrypt.org/)
+  * Test websites: [valid](https://valid.x2.test-certs.letsencrypt.org/), [revoked](https://revoked.x2.test-certs.letsencrypt.org/), [expired](https://expired.x2.test-certs.letsencrypt.org/)
 
 These roots are not yet included in Root Program Trust Stores, but will be submitted for inclusion soon:
 
@@ -46,7 +46,7 @@ These roots are not yet included in Root Program Trust Stores, but will be submi
   * Certificate details (self-signed): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Certificate details (cross-signed by ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL hostname: `ye.c.lencr.org`
-  * Test websites: Forthcoming
+  * Test websites: [valid](https://valid.ye.test-certs.letsencrypt.org/), [revoked](https://revoked.ye.test-certs.letsencrypt.org/), [expired](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * Subject: `O = ISRG, CN = Root YR`
   * Key type: `RSA 4096`
@@ -55,7 +55,7 @@ These roots are not yet included in Root Program Trust Stores, but will be submi
   * Certificate details (self-signed): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Certificate details (cross-signed by ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL hostname: `yr.c.lencr.org`
-  * Test websites: Forthcoming
+  * Test websites: [valid](https://valid.yr.test-certs.letsencrypt.org/), [revoked](https://revoked.yr.test-certs.letsencrypt.org/), [expired](https://expired.yr.test-certs.letsencrypt.org/)
 
 For additional information on the compatibility of our root certificates with various devices and trust stores, see [Certificate Compatibility](/docs/cert-compat).
 

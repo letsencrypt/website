@@ -24,7 +24,7 @@ Beachten Sie, dass Root CAs keine Verfallsdaten haben, so wie andere Zertifikate
   * Zertifikatsdetails (selbstsigniert): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Zertifikatsdetails (Crosssigniert von DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (außer Dienst)
   * CRL Hostname: `x1.c.lencr.org`
-  * Webseiten testen: [gültig](https://valid-isrgrootx1.letsencrypt.org/), [widerrufen](https://revoked-isrgrootx1.letsencrypt.org/), [abgelaufen](https://expired-isrgrootx1.letsencrypt.org/)
+  * Webseiten testen: [gültig](https://valid.x1.test-certs.letsencrypt.org/), [widerrufen](https://revoked.x1.test-certs.letsencrypt.org/), [abgelaufen](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * Betreff: `O = Internet Security Research Group, CN = ISRG Root X2`
   * Schlüsseltyp: `ECDSA P-384`
@@ -34,7 +34,7 @@ Beachten Sie, dass Root CAs keine Verfallsdaten haben, so wie andere Zertifikate
   * Zertifikatsdetails (Quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
   * Zertifikatsdetails (zweites quersigniertes von ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL Hostname: `x2.c.lencr.org`
-  * Webseiten testen: [gültig](https://valid-isrgrootx2.letsencrypt.org/), [widerrufen](https://revoked-isrgrootx2.letsencrypt.org/), [abgelaufen](https://expired-isrgrootx2.letsencrypt.org/)
+  * Webseiten testen: [gültig](https://valid.x2.test-certs.letsencrypt.org/), [widerrufen](https://revoked.x2.test-certs.letsencrypt.org/), [abgelaufen](https://expired.x2.test-certs.letsencrypt.org/)
 
 Diese Root CAs sind noch nicht in Root Programme und Trust Stores enthalten, werden aber bald zur Aufnahme eingereicht:
 

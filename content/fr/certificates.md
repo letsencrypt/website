@@ -23,7 +23,7 @@ Notez que les AC racines n'ont pas de date d'expiration comme les autres certifi
   * Détails de l'AC : [crt.sh](https://crt.sh/?caid=7394), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=7394)
   * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Détails du certificat (signé par l'AC racine DST X3) : [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retiré)
-  * Test de sites web : [valide](https://valid-isrgrootx1.letsencrypt.org/), [révoqué](https://revoked-isrgrootx1.letsencrypt.org/), [expiré](https://expired-isrgrootx1.letsencrypt.org/)
+  * Test de sites web : [valide](https://valid.x1.test-certs.letsencrypt.org/), [révoqué](https://revoked.x1.test-certs.letsencrypt.org/), [expiré](https://expired.x1.test-certs.letsencrypt.org/)
 * **Racine ISRG X2**
   * Objet : `O = Internet Security Research Group, CN = ISRG Root X2`
   * Type de clé : `ECDSA P-384`
@@ -31,7 +31,7 @@ Notez que les AC racines n'ont pas de date d'expiration comme les autres certifi
   * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183269), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183269)
   * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Test de sites web : [valide](https://valid-isrgrootx2.letsencrypt.org/), [révoqué](https://revoked-isrgrootx2.letsencrypt.org/), [expiré](https://expired-isrgrootx2.letsencrypt.org/)
+  * Test de sites web : [valide](https://valid.x2.test-certs.letsencrypt.org/), [révoqué](https://revoked.x2.test-certs.letsencrypt.org/), [expiré](https://expired.x2.test-certs.letsencrypt.org/)
 
 Pour de plus amples informations sur la compatibilité de nos certificats racine avec divers appareils et magasins de confiance, voir [Compatibilité des certificats](/docs/cert-compat).
 
