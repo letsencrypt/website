@@ -129,6 +129,24 @@
     @apply border-b-0;
   }
 }
+@utility sites-tables {
+  @apply flex justify-center my-[30px];
+}
+@utility sites-table {
+  @apply my-0;
+
+  & td:first-child {
+    @apply font-bold;
+  }
+
+  & td:not(:last-child) {
+    @apply border-r border-[#e8e8e8];
+  }
+
+  & tr:last-child td {
+    @apply border-b-0;
+  }
+}
 @utility rotate-words {
   display: inline-block;
   transition: opacity 0.2s ease-in-out;
