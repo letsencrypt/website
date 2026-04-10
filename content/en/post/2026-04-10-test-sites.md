@@ -12,13 +12,13 @@ Have you ever needed to make sure your website has a broken certificate? While m
 
 Let's Encrypt is a Certificate Authority, and so we have unusual problems we need to solve.
 
-One of the requirements for publicly trusted Certificate Authorities is to host websites with test certificates, some of which need to be revoked or expired. [This](https://bugzilla.mozilla.org/show_bug.cgi?id=1730291) [is](https://bugzilla.mozilla.org/show_bug.cgi?id=1904038) [a](https://bugzilla.mozilla.org/show_bug.cgi?id=1925239) [surprisingly](https://bugzilla.mozilla.org/show_bug.cgi?id=1947207) [common](https://bugzilla.mozilla.org/show_bug.cgi?id=1962426) [thing](https://bugzilla.mozilla.org/show_bug.cgi?id=1962809) [for](https://bugzilla.mozilla.org/show_bug.cgi?id=2025135) [CAs](https://bugzilla.mozilla.org/show_bug.cgi?id=2025231) [to](https://bugzilla.mozilla.org/show_bug.cgi?id=1988405) [mess](https://bugzilla.mozilla.org/show_bug.cgi?id=2008847) [up](https://bugzilla.mozilla.org/show_bug.cgi?id=2013576). Test certificate sites exist to allow developers to test their clients, so it's important that they're done right.
+One of the requirements for publicly trusted Certificate Authorities is to host websites with test certificates, some of which need to be revoked or expired. This [gets](https://bugzilla.mozilla.org/show_bug.cgi?id=1730291) [messed](https://bugzilla.mozilla.org/show_bug.cgi?id=1904038) [up](https://bugzilla.mozilla.org/show_bug.cgi?id=1947207) more than you might expect, but it's a bit tricky to get right. Test certificate sites exist to allow developers to test their clients, so it's important that they're done right.
 
 We'd previously used certbot, nginx, and some shell scripts, but the shell scripts were getting a bit too complicated. So we wrote a Go program tailored to the specific needs of a CA's test certs site.
 
 ## The websites
 
-We need to host three sites per root certificate: 
+We need to host three sites per root certificate: 
 
 - A **valid** certificate, like any other website.
 - An **expired** certificate, past its expiry date.
