@@ -130,7 +130,7 @@
   }
 }
 @utility sites-tables {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-6 my-[30px];
+  @apply flex justify-center my-[30px];
 }
 @utility sites-table {
   @apply my-0;

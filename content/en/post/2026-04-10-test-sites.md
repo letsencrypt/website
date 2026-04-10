@@ -52,17 +52,9 @@ The actual content of the website isn't terribly important: We just have a littl
 
 As a small easter egg, we added a plain text version of the website with an ASCII art version of our logo that we serve if your HTTP client doesn't include text/html in its `Accept` HTTP header. You can pass a ?txt or ?html URL parameter to specifically request one or the other version of the content, if you just want to [see the ASCII art](https://valid.x2.test-certs.letsencrypt.org/?txt).
 
-Let's Encrypt has four root certificates right now. Each of them have test sites linked both here and from [our documentation](/certificates/). We also have a staging instance which we use for testing, and it has a full set of test sites available.
+Let's Encrypt has four root certificates right now. Each of them have test sites linked both here and from [our documentation](/certificates/).
 
 <div class="sites-tables">
-<table class="sites-table">
-<tbody>
-<tr><td>Staging X1</td><td><a href="https://valid.x1.staging-test-certs.letsencrypt.org">valid</a></td><td><a href="https://expired.x1.staging-test-certs.letsencrypt.org">expired</a></td><td><a href="https://revoked.x1.staging-test-certs.letsencrypt.org">revoked</a></td></tr>
-<tr><td>Staging X2</td><td><a href="https://valid.x2.staging-test-certs.letsencrypt.org">valid</a></td><td><a href="https://expired.x2.staging-test-certs.letsencrypt.org">expired</a></td><td><a href="https://revoked.x2.staging-test-certs.letsencrypt.org">revoked</a></td></tr>
-<tr><td>Staging YE</td><td><a href="https://valid.ye.staging-test-certs.letsencrypt.org">valid</a></td><td><a href="https://expired.ye.staging-test-certs.letsencrypt.org">expired</a></td><td><a href="https://revoked.ye.staging-test-certs.letsencrypt.org">revoked</a></td></tr>
-<tr><td>Staging YR</td><td><a href="https://valid.yr.staging-test-certs.letsencrypt.org">valid</a></td><td><a href="https://expired.yr.staging-test-certs.letsencrypt.org">expired</a></td><td><a href="https://revoked.yr.staging-test-certs.letsencrypt.org">revoked</a></td></tr>
-</tbody>
-</table>
 <table class="sites-table">
 <tbody>
 <tr><td>Root X1</td><td><a href="https://valid.x1.test-certs.letsencrypt.org">valid</a></td><td><a href="https://expired.x1.test-certs.letsencrypt.org">expired</a></td><td><a href="https://revoked.x1.test-certs.letsencrypt.org">revoked</a></td></tr>
