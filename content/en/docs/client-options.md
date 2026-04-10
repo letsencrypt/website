@@ -19,7 +19,7 @@ and increases the risk of missed renewals.
 
 # Recommended: Certbot
 
-We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
+We recommend that most people start with the [Certbot](https://certbot.eff.org/) client. It can simply get a cert for you or also help you install it, depending on what you prefer. It's easy to use, works on many operating systems, and has great documentation.
 
 If Certbot does not meet your needs, or you'd simply like to try something else, there are many more clients to choose from below, grouped by the language or environment they run in.
 

@@ -54,7 +54,7 @@ renewal_info = client.renewal_info(certificate: existing_certificate_pem)
 
 This method generates an ARI certificate identifier that can be used when making the API call. The client also includes a helper method, `suggested_renewal_time`, which chooses a random time between the returned start and end dates. The certificate identifier can be passed to the `new_order` method via the `replaces` key, which can grant a higher priority or bypass rate limits for renewals occurring during the window, depending on the CA's policies.
 
-Critically, Shopify also regularly polls the ARI endpoint for updated renewal timestamps. This allows our systems to rely on those timestamps as the primary renewal timing logic and removes the need for inflexible hard-coded expiry thresholds. This becomes the mechanism that LetsEncrypt uses to dynamically change the renewal time due to a revocation event.
+Critically, Shopify also regularly polls the ARI endpoint for updated renewal timestamps. This allows our systems to rely on those timestamps as the primary renewal timing logic and removes the need for inflexible hard-coded expiry thresholds. This becomes the mechanism that Let's Encrypt uses to dynamically change the renewal time due to a revocation event.
 
 ### Results and rewards
 

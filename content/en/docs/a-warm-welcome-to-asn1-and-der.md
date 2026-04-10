@@ -153,7 +153,7 @@ requirements](https://community.letsencrypt.org/t/2018-03-12-wildcard-certificat
 IA5String, based on [International Alphabet No.
 5](https://en.wikipedia.org/wiki/T.50_(standard)),
 is more permissive: It allows nearly any ASCII character, and is used
-for email address, DNS names, and URLs in certificates. Note that there
+for email addresses, DNS names, and URLs in certificates. Note that there
 are a few byte values where the IA5 meaning of the byte value is
 different than the US-ASCII meaning of that same value.
 
