@@ -148,7 +148,7 @@ Cons:
 # TLS-SNI-01
 
 This challenge was defined in draft versions of ACME. It did a TLS
-handshake on port 443 and sent a specific [SNI] header, looking for
+handshake on port 443 and sent a specific [SNI] header, looking for a
 certificate that contained the token. It [was removed in March
 2019][tls-sni-disablement] because it was not secure enough.
 

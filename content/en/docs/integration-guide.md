@@ -74,7 +74,7 @@ If you're using the http-01 ACME challenge, you will need to provision the chall
 
 Additionally, when using the dns-01 challenge, make sure to clean up old TXT records so the response to Let's Encrypt's query doesn't get too big.
 
-If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect `/.well-known/acme-validation/XYZ` to `validation-server.example.com/XYZ` for all `XYZ`. This delegates responsibility for issuance to `validation-server`, so you should protect that server well.
+If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect `/.well-known/acme-challenge/XYZ` to `validation-server.example.com/XYZ` for all `XYZ`. This delegates responsibility for issuance to `validation-server`, so you should protect that server well.
 
 # Central Validation Servers
 

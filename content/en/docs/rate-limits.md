@@ -157,7 +157,7 @@ client to use our [staging environment](/docs/staging-environment), which has
 ### Workaround
 
 If you've hit this limit, you can change the set of identifiers by adding
-`blog.example.com`, to request additional certificates. Be aware that these new
+`blog.example.com` to request additional certificates. Be aware that these new
 orders would not be considered renewals. Therefore, they would be subject to the
 [New Orders per Account](#new-orders-per-account) and [New Certificates per
 Registered Domain](#new-certificates-per-registered-domain) rate limits.

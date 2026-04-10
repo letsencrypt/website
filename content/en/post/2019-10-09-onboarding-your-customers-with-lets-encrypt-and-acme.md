@@ -77,7 +77,7 @@ change their A records to point at a different CDN, without telling you
 that their plans have changed. You should monitor for this situation and
 stop attempting to issue certificates. If the customer has left behind a
 CNAMEd `_acme-challenge` subdomain that points at you, you should
-contact that and remind them to delete it. The CNAMEd subdomain
+contact them and remind them to delete it. The CNAMEd subdomain
 represents a delegated authorization to issue certificates, and cleaning
 up that delegation improves both the customer’s security posture and
 your own. Similarly, if a customer sets up the CNAME and you issue a

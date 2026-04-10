@@ -40,7 +40,7 @@ Clients which support the [draft ACME Profiles extension](https://www.ietf.org/a
 
 Enabled: [March 14, 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
 
-We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. These logs are now usable to fulfill browser's CT requirements. The [CT Logs Documentation](https://letsencrypt.org/docs/ct-logs/) has a list of our current logs.
+We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. These logs are now usable to fulfill browsers' CT requirements. The [CT Logs Documentation](https://letsencrypt.org/docs/ct-logs/) has a list of our current logs.
 
 ## ACME Renewal Information (ARI)
 
