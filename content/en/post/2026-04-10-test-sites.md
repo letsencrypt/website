@@ -18,7 +18,7 @@ We'd previously used certbot, nginx, and some shell scripts, but the shell scrip
 
 ## The websites
 
-We need to host three sites per root certificate: 
+We need to host three sites per root certificate:
 
 - A **valid** certificate, like any other website.
 - An **expired** certificate, past its expiry date.
@@ -50,7 +50,7 @@ If you visit one of our revoked sites, you might not get an error message. Revoc
 
 The actual content of the website isn't terribly important: We just have a little HTML page explaining what the site is. But since this website is meant for testing clients, there's more than just browsers connecting. In particular, it's pretty routine that I try connecting with `curl` or some other terminal http client, and getting a bunch of HTML spewed to your terminal isn't very nice.
 
-As a small easter egg, we added a plain text version of the website with an ASCII art version of our logo that we serve if your HTTP client doesn't include text/html in its `Accept` HTTP header. You can pass a ?txt or ?html URL parameter to specifically request one or the other version of the content, if you just want to [see the ASCII art](https://valid.x2.test-certs.letsencrypt.org/?txt).
+As a small Easter egg, we added a plain text version of the website with an ASCII art version of our logo that we serve if your HTTP client doesn't include text/html in its `Accept` HTTP header. You can pass a ?txt or ?html URL parameter to specifically request one or the other version of the content, if you just want to [see the ASCII art](https://valid.x2.test-certs.letsencrypt.org/?txt).
 
 Let's Encrypt has four root certificates right now. Each of them have test sites linked both here and from [our documentation](/certificates/).
 
