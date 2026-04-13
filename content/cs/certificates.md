@@ -2,7 +2,7 @@
 title: Řetězce důvěryhodnosti
 linkTitle: Řetězce důvěryhodnosti (Kořenové a zprostředkující certifikáty)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ Tyto kořeny zatím nejsou zahrnuty v úložištích důvěryhodných kořenový
   * Podrobnosti certifikátu (podepsaný sám sebou): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Podrobnosti certifikátu (křížově podepsaný ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL hostname: `ye.c.lencr.org`
-  * Testovací webstránky: Připravuje se
+  * Testovací webstránky: [platný](https://valid.ye.test-certs.letsencrypt.org/), [odvolaný](https://revoked.ye.test-certs.letsencrypt.org/), [expirovaný](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * Předmět: `O = ISRG, CN = Root YR`
   * Typ klíče: ` RSA 4096`
@@ -55,7 +55,7 @@ Tyto kořeny zatím nejsou zahrnuty v úložištích důvěryhodných kořenový
   * Podrobnosti certifikátu (podepsaný sám sebou): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL hostname: `yr.c.lencr.org`
-  * Testovací webstránky: Připravuje se
+  * Testovací webstránky: [platný](https://valid.yr.test-certs.letsencrypt.org/), [odvolaný](https://revoked.yr.test-certs.letsencrypt.org/), [expirovaný](https://expired.yr.test-certs.letsencrypt.org/)
 
 Další informace o kompatibilitě našich kořenových certifikátů s různými zařízeními a úložišti důvěryhodných certifikátů naleznete v části [Kompatibilita certifikátů](/docs/cert-compat).
 

@@ -2,7 +2,7 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ show_lastmod: 1
   * 证书详细信息（自签名版本）：[der](/certs/gen-y/root-ye.der)、[pem](/certs/gen-y/root-ye.pem)、[txt](/certs/gen-y/root-ye.txt)
   * 证书详细信息（ISRG Root X2 交叉签名的版本）：[der](/certs/gen-y/root-ye-by-x2.der)、[pem](/certs/gen-y/root-ye-by-x2.pem)、[txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL 域名：`ye.c.lencr.org`
-  * 测试网站：即将上线
+  * 测试网站：[正常证书](https://valid.ye.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.ye.test-certs.letsencrypt.org/)、[已过期证书](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * 主体：`O = ISRG, CN = Root YR`
   * 密钥类型：`RSA 4096`
@@ -55,7 +55,7 @@ show_lastmod: 1
   * 证书详细信息（自签名版本）：[der](/certs/gen-y/root-yr.der)、[pem](/certs/gen-y/root-yr.pem)、[txt](/certs/gen-y/root-yr.txt)
   * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/gen-y/root-yr-by-x1.der)、[pem](/certs/gen-y/root-yr-by-x1.pem)、[txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL 域名：`yr.c.lencr.org`
-  * 测试网站：即将上线
+  * 测试网站：[正常证书](https://valid.yr.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.yr.test-certs.letsencrypt.org/)、[已过期证书](https://expired.yr.test-certs.letsencrypt.org/)
 
 关于我们的根证书与各类设备及证书库的兼容性，详见[证书兼容性](/docs/cert-compat)页面。
 

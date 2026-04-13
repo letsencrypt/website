@@ -69,7 +69,7 @@ Hvis du bruger http-01 ACME-udfordring, du bliver nødt til at sørge for challe
 
 Desuden, når du bruger dns-01 udfordring, skal du sørge for at rydde op gamle TXT poster, så svaret på Let's Encrypt forespørgslen ikke bliver for stor.
 
-Hvis du ønsker at bruge http-01 challenge alligevel, kan du ønske at drage fordel af HTTP redirects. Du kan konfigurere hver af dine frontends til at omdirigere `/.well-known/acme-validation/XYZ` til `validation-server.example.com/XYZ` for alle `XYZ`. Dette uddelegerer ansvaret for udstedelse til `validerings-server`, så du bør beskytte denne server godt.
+Hvis du ønsker at bruge http-01 challenge alligevel, kan du ønske at drage fordel af HTTP redirects. Du kan konfigurere hver af dine frontends til at omdirigere `/.well-known/acme-challenge/XYZ` til `validation-server.example.com/XYZ` for alle `XYZ`. Dette uddelegerer ansvaret for udstedelse til `validerings-server`, så du bør beskytte denne server godt.
 
 # Centrale Valideringsservere
 

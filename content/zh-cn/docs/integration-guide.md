@@ -69,7 +69,7 @@ Let's Encrypt 的主要价值在于我们允许在创建新网站时自动颁发
 
 此外，在使用 dns-01 进行验证时，请务必清理旧的 TXT 记录，以确保对 Let's Encrypt 的查询的回复不会太大。
 
-如果您想无论如何都要使用 http-01 进行验证，您也许可以利用 HTTP 重定向。 例如，对于任意的 `XYZ` 字符串，您可以让所有前端的 `/.well-known/acme-validation/XYZ` 路径都跳转至 `validation-server.example.com/XYZ`。 此时 `validation-server` 也承担了申请证书的部分职责，故该服务器的安全同样需要妥善保护。
+如果您想无论如何都要使用 http-01 进行验证，您也许可以利用 HTTP 重定向。 例如，对于任意的 `XYZ` 字符串，您可以让所有前端的 `/.well-known/acme-challenge/XYZ` 路径都跳转至 `validation-server.example.com/XYZ`。 此时 `validation-server` 也承担了申请证书的部分职责，故该服务器的安全同样需要妥善保护。
 
 # 中央验证服务器
 
