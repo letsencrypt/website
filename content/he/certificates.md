@@ -2,7 +2,7 @@
 title: שרשראות אמון
 linkTitle: שרשראות אמון (אישורים עליונים ומתווכים)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ show_lastmod: 1
   * פרטי אישור (חתימה עצמית): [der](/certs/gen-y/root-ye.der),‏ [pem](/certs/gen-y/root-ye.pem),‏ [txt](/certs/gen-y/root-ye.txt)
   * פרטי האישור (חתימה צולבת על ידי ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der),‏ [pem](/certs/gen-y/root-ye-by-x2.pem),‏ [txt](/certs/gen-y/root-ye-by-x2.txt)
   * שם מארח לרשימת שלילת אישורים (CRL): `ye.c.lencr.org`
-  * אתרי בדיקה: יתווספו בהמשך
+  * אתרי בדיקה: [תקף](https://valid.ye.test-certs.letsencrypt.org/), [נשלל](https://revoked.ye.test-certs.letsencrypt.org/), [פג תוקף](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * נושא: `O = ISRG, CN = Root YR`
   * סוג מפתח: `RSA 4096`
@@ -55,7 +55,7 @@ show_lastmod: 1
   * פרטי אישור (חתימה עצמית): [der](/certs/gen-y/root-yr.der),‏ [pem](/certs/gen-y/root-yr.pem),‏ [txt](/certs/gen-y/root-yr.txt)
   * פרטי אישור (חתימה צולבת על ידי ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der),‏ [pem](/certs/gen-y/root-yr-by-x1.pem),‏ [txt](/certs/gen-y/root-yr-by-x1.txt)
   * שם מארח לרשימת שלילת אישורים (CRL): `yr.c.lencr.org`
-  * אתרי בדיקה: יתווספו בהמשך
+  * אתרי בדיקה: [תקף](https://valid.yr.test-certs.letsencrypt.org/), [נשלל](https://revoked.yr.test-certs.letsencrypt.org/), [פג תוקף](https://expired.yr.test-certs.letsencrypt.org/)
 
 לפרטים נוספים על תאימות אישורי העל שלנו מול מגוון מכשירים ומאגרי אמון, יש לפנות אל [תאימות האישורים](/docs/cert-compat).
 

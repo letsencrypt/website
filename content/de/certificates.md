@@ -2,7 +2,7 @@
 title: Vertrauensketten
 linkTitle: Vertrauensketten (Root und Zwischenzertifikate)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ Diese Root CAs sind noch nicht in Root Programme und Trust Stores enthalten, wer
   * Zertifikatsdetails (selbstsigniert): [der](/certs/gen-y/root-ye.der), [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Zertifikatsdetails (Quersigniert von ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL Hostname: `ye.c.lencr.org`
-  * Test-Webseiten: Bald verfügbar
+  * Webseiten testen: [gültig](https://valid.ye.test-certs.letsencrypt.org/), [widerrufen](https://revoked.ye.test-certs.letsencrypt.org/), [abgelaufen](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * Betreff: `O = ISRG, CN = Root YR`
   * Schlüsseltyp: `RSA 4096`
@@ -55,7 +55,7 @@ Diese Root CAs sind noch nicht in Root Programme und Trust Stores enthalten, wer
   * Zertifikatsdetails (selbstsigniert): [der](/certs/gen-y/root-yr.der), [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL Hostname: `yr.c.lencr.org`
-  * Test-Webseiten: Bald verfügbar
+  * Webseiten testen: [gültig](https://valid.yr.test-certs.letsencrypt.org/), [widerrufen](https://revoked.yr.test-certs.letsencrypt.org/), [abgelaufen](https://expired.yr.test-certs.letsencrypt.org/)
 
 Weitere Informationen zur Kompatibilität unserer Root-Zertifikate mit verschiedenen Geräten und TrustStores finden Sie unter [Zertifikatskompatibilität](/docs/cert-compat).
 

@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Tillidskæder (Root og Intermediate Certifikater)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-03-27
 show_lastmod: 1
 ---
 
@@ -46,7 +46,7 @@ Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, me
   * Certifikatoplysninger (selvsigneret): [, der](/certs/gen-y/root-ye.der) [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Certifikatdetaljer (kryds underskrevet af ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL værtsnavn: `ye.c.lencr.org`
-  * Test hjemmesider: Kommende mulighed
+  * Test websteder: [gyldigt](https://valid.ye.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.ye.test-certs.letsencrypt.org/), [udløbet](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * Emne: `O = ISRG, CN = Root YR`
   * Nøgletype: `RSA 4096`
@@ -55,7 +55,7 @@ Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, me
   * Certifikatoplysninger (selvsigneret): [, der](/certs/gen-y/root-yr.der) [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL værtsnavn: `yr.c.lencr.org`
-  * Test hjemmesider: Kommende mulighed
+  * Test websteder: [gyldigt](https://valid.yr.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.yr.test-certs.letsencrypt.org/), [udløbet](https://expired.yr.test-certs.letsencrypt.org/)
 
 Se [Certificate Compatibility](/docs/cert-compat) for yderligere information om kompatibiliteten af vores rodcertifikater med forskellige enheder og trust stores.
 
