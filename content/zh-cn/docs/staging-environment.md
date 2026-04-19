@@ -1,7 +1,7 @@
 ---
 title: 测试环境
 slug: staging-environment
-lastmod: 2025-11-25
+lastmod: 2026-04-10
 show_lastmod: 1
 ---
 
@@ -54,21 +54,25 @@ show_lastmod: 1
   * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
   * 密钥类型：`RSA 4096`
   * 证书详细信息：[der](/certs/staging/letsencrypt-stg-root-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+  * 测试网站：[正常证书](https://valid.x1.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x1.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.x1.staging-test-certs.letsencrypt.org/)
 * **Bogus Broccoli X2**
   * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
   * 密钥类型：`ECDSA P-384`
   * 证书详细信息（自签名版本）：[der](/certs/staging/letsencrypt-stg-root-x2.der)、[pem](/certs/staging/letsencrypt-stg-root-x2.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+  * 测试网站：[正常证书](https://valid.x2.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x2.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.x2.staging-test-certs.letsencrypt.org/)
 * **Yearning Yucca Root YE**
   * 证书主体：`O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
   * 密钥类型：`ECDSA P-384`
   * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-ye.der)、[pem](/certs/staging/gen-y/root-ye.pem)、[txt](/certs/staging/gen-y/root-ye.txt)
   * 证书详细信息（Bogus Broccoli X2 交叉签名的版本）：[der](/certs/staging/gen-y/root-ye-by-x2.der)、[pem](/certs/staging/gen-y/root-ye-by-x2.pem)、[txt](/certs/staging/gen-y/root-ye-by-x2.txt)
-* **Yearning Yonder Yam Root YR**
+  * 测试网站：[正常证书](https://valid.ye.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.ye.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.ye.staging-test-certs.letsencrypt.org/)
+* **Yonder Yam Root YR**
   * 证书主体：`O = ISRG, CN = (STAGING) Yonder Yam Root YR`
   * 密钥类型：`RSA 4096`
   * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-yr.der)、[pem](/certs/staging/gen-y/root-yr.pem)、[txt](/certs/staging/gen-y/root-yr.txt)
   * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/gen-y/root-yr-by-x1.der)、[pem](/certs/staging/gen-y/root-yr-by-x1.pem)、[txt](/certs/staging/gen-y/root-yr-by-x1.txt)
+  * 测试网站：[正常证书](https://valid.yr.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.yr.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.yr.staging-test-certs.letsencrypt.org/)
 
 ## 中间证书颁发机构
 

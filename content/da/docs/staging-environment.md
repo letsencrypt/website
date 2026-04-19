@@ -1,7 +1,7 @@
 ---
 title: Stagning Miljø
 slug: staging-environment
-lastmod: 2025-11-25
+lastmod: 2026-04-10
 show_lastmod: 1
 ---
 
@@ -54,21 +54,25 @@ Hvis du ønsker at ændre en "kun test"-klient til at stole på staging til test
   * Emne: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
   * Nøgletype: `RSA 4096`
   * Certifikat detaljer: [der](/certs/staging/letsencrypt-stg-root-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+  * Test websteder: [gyldigt](https://valid.x1.staging-test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x1.staging-test-certs.letsencrypt.org/), [udløbet](https://expired.x1.staging-test-certs.letsencrypt.org/)
 * **Bogus Broccoli X2**
   * Emne: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
   * Nøgletype: `ECDSA P-384`
   * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/letsencrypt-stg-root-x2.der) [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * Certifikat deltaljer (krydsunderskrevet af Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+  * Test websteder: [gyldigt](https://valid.x2.staging-test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x2.staging-test-certs.letsencrypt.org/), [udløbet](https://expired.x2.staging-test-certs.letsencrypt.org/)
 * **Yearning Yucca Root YE**
   * Emne: `O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
   * Nøgletype: `ECDSA P-384`
   * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/gen-y/root-ye.der) [pem](/certs/staging/gen-y/root-ye.pem), [txt](/certs/staging/gen-y/root-ye.txt)
   * Certifikatdetaljer (kryds underskrevet af Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der), [pem](/certs/staging/gen-y/root-ye-by-x2.pem), [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
-* **Yearning Yonder Yam Root YR**
+  * Test websteder: [gyldigt](https://valid.ye.staging-test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.ye.staging-test-certs.letsencrypt.org/), [udløbet](https://expired.ye.staging-test-certs.letsencrypt.org/)
+* **Yonder Yam Root YR**
   * Emne: `O = ISRG, CN = (STAGING) Yonder Yam Root YR`
   * Nøgletype: `RSA 4096`
   * Certifikatoplysninger (selvsigneret): [, der](/certs/staging/gen-y/root-yr.der) [pem](/certs/staging/gen-y/root-yr.pem), [txt](/certs/staging/gen-y/root-yr.txt)
   * Certifikat deltaljer (krydsunderskrevet af Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der), [pem](/certs/staging/gen-y/root-yr-by-x1.pem), [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
+  * Test websteder: [gyldigt](https://valid.yr.staging-test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.yr.staging-test-certs.letsencrypt.org/), [udløbet](https://expired.yr.staging-test-certs.letsencrypt.org/)
 
 ## Underordnede (CA'er)
 

@@ -73,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="通用名称" english="Common Name" abbr="CN" %}} 证书[主体](#def-subject)信息的一部分，表示证书的所有者。 在[根证书](#def-root)和[中间证书](#def-intermediate)中，通用名称即为[证书颁发机构](#def-CA)面向用户的名称， 而在[叶证书](#def-leaf)中则是证书包含的一个域名。 注意：通用名称最长 63 个字符。 在过去，通用名称还用于表示证书对应的域名，但在现行的互联网标准中，软件只会通过[主体备用名称](#def-SAN)确定证书的有效性。 {{% /def %}}
 
-{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一份具备证书签发能力的证书也可以由不同的[根证书](#def-root)签名。 例如，[Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)由 [IdenTrust](#def-IdenTrust) 交叉签名，因为 Let's Encrypt 的根证书在创立初期还没有得到[证书库](#def-store)的广泛信任。 交叉签名在原理上需要两份[主体](#def-subject)和[密钥对](#def-key-pair)都相同的证书，一份由 Let's Encrypt 的私钥签名，另一份则由 IdenTrust 根证书的私钥签名：[/certificates](/certificates)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/X.509#%E8%AF%81%E4%B9%A6%E9%93%BE%E5%92%8C%E4%BA%A4%E5%8F%89%E8%AE%A4%E8%AF%81)。 {{% /def %}}
+{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一份具备证书签发能力的证书可以由若干份[根证书](#def-root)签名，这些根证书也可以来自不同的 CA。 一家 CA 为另一家 CA 的证书签名就称为交叉签名。  {{% /def %}}
 
 {{% def id="DANE" name="基于 DNS 的实体认证" english="DNS-based Authentication of Named Entities" abbr="DANE" abbr_first="1" %}} 一种通过 DNS 表明[证书](#def-leaf)或密钥验证方式的机制。  参见[英文维基百科条目](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities)。 {{% /def %}}
 
@@ -161,9 +161,9 @@ Note for translators:
 
 {{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名 (ccTLD)，又如 `.com`、`.org` 等通用顶级域名 (gTLD)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
 
-{{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。  {{% /def %}}
+{{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。 {{% /def %}}
 
-{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。 {{% /def %}}
+{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。  {{% /def %}}
 
 {{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称 (SAN)](#def-SAN) 的证书的一种称呼。  {{% /def %}}
 
