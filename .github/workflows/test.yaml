@@ -40,3 +40,22 @@ jobs:
       - name: Validate RSS feed
         run: xmllint --noout public/feed.xml
       # - run: npm run test:html5validate
+      - name: Lint for physical directional CSS classes
+        run: |
+          VIOLATIONS=$(grep -rn \
+            -e '\bpl-\|\bpr-' \
+            -e '\bml-\|\bmr-' \
+            -e '\b-ml-\|\b-mr-' \
+            -e '\bleft-\|\bright-' \
+            -e '\btext-left\b\|\btext-right\b' \
+            -e '\bborder-l\b\|\bborder-r\b' \
+            -e '\bfloat-left\b\|\bfloat-right\b' \
+            themes/le-2025/layouts/ themes/le-2025/assets/css/ \
+            --include='*.html' --include='*.css' \
+            | grep -v 'rtl:' \
+            | grep -v 'direction: ltr' || true)
+          if [ -n "$VIOLATIONS" ]; then
+            echo "::error::Physical directional CSS classes found. Use logical equivalents (ps/pe, ms/me, start/end, text-start/text-end, border-s/border-e). See PR #2195."
+            echo "$VIOLATIONS"
+            exit 1
+          fi

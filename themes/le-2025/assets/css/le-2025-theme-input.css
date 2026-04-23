@@ -140,7 +140,7 @@
   }
 
   & td:not(:last-child) {
-    @apply border-r border-[#e8e8e8];
+    @apply border-e border-[#e8e8e8];
   }
 
   & tr:last-child td {
@@ -321,7 +321,7 @@
 
   & li::before {
     content: '';
-    @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
+    @apply absolute start-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
     background-image: url('/images/le-logo-lockonly-black-cropped.svg');
   }
 }
