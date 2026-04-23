@@ -407,7 +407,16 @@ other = "වියමන අඩවි ### කට වඩා නොමිලේ TL
 other = "නොමිලේ TLS සහතික සපයන ලාභ නොලබන සංවිධානයකි"
 
 [home_hero_certificate_count]
-other = "දශලක්‍ෂ 700"
+other = "700"
+
+[abbreviation_million]
+other = "දශලක්‍ෂ"
+
+[abbreviation_billion]
+other = ""
+
+[certificate_count_format]
+other = "[Abbreviation] [Number]"
 
 [home_hero_nonprofit_suffix]
 other = "වියමන අඩවි"

@@ -1,11 +1,9 @@
 
-{{ $LanguageDirection := or .Page.Language.LanguageDirection "ltr" }}
-
-<div dir="ltr">
+<div>
 {{ range $.Site.Data.clients.categories }}
-    <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
+    <h2 dir="auto" id="clients-{{ urlize . }}">{{ . }}</h2>
     {{ $category := . }}
-    <ul>
+    <ul dir="auto">
     {{ range $.Site.Data.clients.list }}
         {{ if (eq $category .category) }}
         <li>
@@ -21,16 +19,16 @@
     </ul>
 {{ end }}
 
-<h1 dir="{{ $LanguageDirection }}" id="libraries">{{ .Get "libraries" }}</h1>
+<h1 id="libraries">{{ .Get "libraries" }}</h1>
 
 {{ $certbot := .Inner }}
 
 {{ range $.Site.Data.clients.libraries }}
-    <h2 id="libraries-{{ urlize . }}">{{ . }}</h2>
+    <h2 dir="auto" id="libraries-{{ urlize . }}">{{ . }}</h2>
     {{ $library := . }}
-    <ul dir="ltr">
+    <ul dir="auto">
     {{ if eq . "Python"}}
-        <li dir="{{ $LanguageDirection }}">{{ $certbot | markdownify }}</li>
+        <li dir="auto">{{ $certbot | markdownify }}</li>
     {{ end }}
     {{ range $.Site.Data.clients.list }}
         {{ if (eq $library .library) }}
@@ -47,11 +45,11 @@
     </ul>
 {{ end }}
 
-<h1 dir="{{ $LanguageDirection }}" id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
+<h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
 
-<ul>
+<ul dir="auto">
 {{ range $.Site.Data.clients.projects }}
-        <li dir="ltr">
+        <li>
             <a href="{{ .url }}">{{ .name }}</a>
             {{ if .comments }}
                 {{ .comments | markdownify }}

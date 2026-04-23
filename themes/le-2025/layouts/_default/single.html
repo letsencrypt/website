@@ -41,7 +41,7 @@
   {{ end }}
 
   {{ if not $currentPage.Lastmod.IsZero }}
-    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod.Format "January 2, 2006") "section" $currentPage.Section) }}
+    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod | time.Format ":date_long") "section" $currentPage.Section) }}
   {{ end }}
 
   {{ if eq $currentPage.Params.imageHero true }}
@@ -53,7 +53,7 @@
   {{ if and .Params.english_is_canonical (ne .Language.Lang "en") }}
     <div class="narrow-container mx-auto">
       <div class="canonical-warning my-4 p-4 border border-orange-300 bg-orange-50 text-orange-700 rounded">
-        <i class="fas fa-exclamation-circle mr-2" aria-hidden="true"></i>
+        <i class="fas fa-exclamation-circle me-2" aria-hidden="true"></i>
         {{ i18n "english_is_canonical" | safeHTML }}
       </div>
     </div>
