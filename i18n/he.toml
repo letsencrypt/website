@@ -151,8 +151,8 @@ other = "תחילת החלון"
 [certificate_transparency_window_end]
 other = "סוף החלון"
 
-[certification_practices_statement]
-other = "Certification Practices Statement - הצהרת תרגולות ניהול אישורים"
+[certification_practice_statement]
+other = "Certification Practice Statement - הצהרת תרגולות ניהול אישורים"
 
 [overview]
 other = "סקירה"

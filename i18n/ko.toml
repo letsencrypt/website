@@ -151,7 +151,7 @@ other = "창 시작"
 [certificate_transparency_window_end]
 other = "창 종료"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "인증서 관행 지침"
 
 [overview]
