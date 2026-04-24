@@ -1,12 +1,12 @@
 {{ $currentLang := .currentLang }}
 {{ if ne $currentLang "en" }}
-  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en" target="_blank">
+  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en" target="_blank" dir="auto">
 {{ else }}
-  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en">
+  <a href="{{ .page.RelPermalink }}" class="blog-grid-item group" hreflang="en" dir="auto">
 {{ end }}
   <time class="text-gray-500 text-sm">{{ .page.Date | time.Format ":date_long" }}</time>
-  <h3 class="text-xl font-bold mt-2 mb-3 text-gray-900">{{ .page.Title }}</h3>
-  <div class="text-gray-600">
+  <h3 class="text-xl font-bold mt-2 mb-3 text-gray-900" dir="auto">{{ .page.Title }}</h3>
+  <div class="text-gray-600" dir="auto">
     {{ with .page.Params.excerpt }}
       {{ . | markdownify }}
     {{ else }}

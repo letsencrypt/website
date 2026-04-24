@@ -39,7 +39,7 @@
         </div>
         <div class="md:col-span-4 md:text-end">
           <a href="https://www.abetterinternet.org/annual-reports" class="text-sm btn btn-primary">
-            {{ T "home_hero_annual_report_button" }} →
+            {{ T "home_hero_annual_report_button" }} {{ if eq (or site.Language.LanguageDirection "ltr") "rtl" }}←{{ else }}→{{ end }}
           </a>
         </div>
         </div>

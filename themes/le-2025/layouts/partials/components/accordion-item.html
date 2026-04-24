@@ -17,7 +17,7 @@
       {{ end }}
       {{ if and .link_url .link_text }}
         <a href="{{ .link_url }}" class="text-link hover:text-link-hover active:text-link-active underline">
-          {{ .link_text }} →
+          {{ .link_text }} {{ if eq (or site.Language.LanguageDirection "ltr") "rtl" }}←{{ else }}→{{ end }}
         </a>
       {{ end }}
     </div>
