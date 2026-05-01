@@ -1,41 +1,61 @@
 [[main]]
-name = "Get Help"
+name = "உதவி பெறுக"
 weight = 20
 url = "https://community.letsencrypt.org/"
+
 [[main]]
 name = "வலைப்பதிவு"
 weight = 25
 url = "/blog/"
+
 [[main]]
-name = "Donate"
+name = "நன்கொடையளிக்க"
 weight = 30
 identifier = "donate"
+
 [[main]]
-name = "About Us"
+name = "ஆதரவாளராகுங்கள்"
+weight = 40
+identifier = "become-a-sponsor"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsor/"
+
+[[main]]
+name = "தற்போதைய ஆதரவாளர்கள் மற்றும் நிதியளிப்பவர்கள்"
+weight = 40
+identifier = "sponsors"
+parent = "donate"
+url = "https://www.abetterinternet.org/sponsors/"
+
+[[main]]
+name = "எம்மைப்பற்றி"
 weight = 40
 identifier = "about"
+
 [[main]]
 name = "Internet Security Research Group (ISRG)"
 weight = 200
 identifier = "isrg"
 parent = "about"
 url = "https://www.abetterinternet.org/about/"
+
 [[main]]
-name = "Service Status"
+name = "சேவை நிலை"
 weight = 60
 identifier = "status"
 parent = "about"
 url = "https://letsencrypt.status.io/"
+
 [[main]]
-name = "Careers"
+name = "தொழில் வாய்ப்புகள்"
 weight = 110
 identifier = "careers"
 parent = "about"
 url = "https://www.abetterinternet.org/careers/"
-[[main]]
-name = "Become a Sponsor"
-weight = 40
-identifier = "become-a-sponsor"
-parent = "donate"
-url = "https://www.abetterinternet.org/sponsor/"
 
+[[main]]
+name = "ஆண்டு அறிக்கைகள்"
+weight = 140
+identifier = "annual-reports"
+parent = "about"
+url = "https://www.abetterinternet.org/annual-reports/"
