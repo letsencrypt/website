@@ -66,9 +66,9 @@
             {{ errorf "Missing Library or Category for %q" .name }}
     {{ end }}
     {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
-            {{ errorf "Category %q Unknow for %q" .category .name }}
+            {{ errorf "Category %q Unknown for %q" .category .name }}
     {{ end }}
     {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
-            {{ errorf "Library %q Unknow for %q" .library .name }}
+            {{ errorf "Library %q Unknown for %q" .library .name }}
     {{ end }}
 {{ end }}
