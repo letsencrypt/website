@@ -15,6 +15,11 @@
       "name": "Open Technology Fund",
       "url": "https://www.opentech.fund/",
       "image": "open-technology-fund-logo.png"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://www.microsoft.com/",
+      "image": "microsoft-logo.png"
     }
   ],
   "platinum": [
