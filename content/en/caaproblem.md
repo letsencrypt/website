@@ -32,8 +32,8 @@ hash of the names on the cert (you can disregard), then the list of names on
 the cert. The date is when the affected cert was issued.
 
 You can download this file and look up your account id(s) (if you received an
-email, your account ids were in that email). For each certificate
-associated you will need to renew and replace it, unless you have renewed it
+email, your account ids were in that email). For each certificate listed,
+you will need to renew and replace it, unless you have renewed it
 more recently than the date listed. For instance, if you know your ACME client
 always renews certificates when they are 30 days from expiration, you can safely
 ignore any entries with a date earlier than 2020-01-02.

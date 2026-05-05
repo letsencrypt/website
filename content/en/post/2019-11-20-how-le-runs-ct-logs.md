@@ -77,7 +77,7 @@ The certificate transparency front end, or [CTFE](https://github.com/google/cert
 
 # Load Balancing
 
-Traffic enters the CT log through an Amazon ELB which is mapped to a Kubernetes Nginx ingress service. The ingress service balances traffic amongst multiple Nginx pods. The Nginx pods proxy traffic to the CTFE service which balance that traffic to CTFE pods.
+Traffic enters the CT log through an Amazon ELB which is mapped to a Kubernetes Nginx ingress service. The ingress service balances traffic amongst multiple Nginx pods. The Nginx pods proxy traffic to the CTFE service which balances that traffic to CTFE pods.
 
 We employ IP and user agent based rate limiting at this Nginx layer.
 
@@ -92,7 +92,7 @@ We developed a free and open source tool named [ct-woodpecker](https://github.co
 Here are some ways we may be able to improve the efficiency of our system in the future:
 
 * Trillian stores a copy of each certificate chain, including many duplicate copies of the same intermediate certificates. Being able to de-duplicate these in Trillian would significantly reduce storage costs. We’re planning to look into whether this is possible and reasonable.
-* See if we can successfully use a cheaper form of storage than IO1 block storage and provisioned IOPs.
+* See if we can successfully use a cheaper form of storage than IO1 block storage and provisioned IOPS.
 * See if we can reduce the Kubernetes worker EC2 instance size or use fewer EC2 instances.
 
 # Support Let’s Encrypt

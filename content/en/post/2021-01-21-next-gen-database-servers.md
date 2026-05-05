@@ -30,7 +30,7 @@ The previous generation of database hardware was powerful but it was regularly b
 	<tr>
 		<td class="p-[10px] align-top"><b>CPU</b></td>
 		<td class="p-[10px]">2x Intel Xeon E5-2650<br>Total 24 cores / 48 threads</td>
-		<td class="p-[10px]">2x <a href="https://www.amd.com/en/products/cpu/amd-epyc-7452">AMD EPYC 7542</a><br>Total 64 cores / 128 threads
+		<td class="p-[10px]">2x <a href="https://www.amd.com/en/products/cpu/amd-epyc-7542">AMD EPYC 7542</a><br>Total 64 cores / 128 threads
 </td>
 	</tr>
 	<tr>
