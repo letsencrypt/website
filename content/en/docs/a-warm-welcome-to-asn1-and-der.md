@@ -587,7 +587,7 @@ Length
 The length in the tag-length-value tuple always represents the total
 number of bytes in the object including all sub-objects. So a SEQUENCE
 with one field doesn't have a length of 1; it has a length of however
-many bytes the encoded form of that field take up.
+many bytes the encoded form of that field takes up.
 
 The encoding of length can take two forms: short or long. The short form
 is a single byte, between 0 and 127.
@@ -733,7 +733,7 @@ and a second one that imports the first, and has [IMPLICIT tags as the
 default](https://tools.ietf.org/html/rfc5280#appendix-A.2).
 Implicit encoding uses fewer bytes than explicit encoding.
 
-AUTOMATIC TAGS is the same as IMPLICIT TAGS, but with additional
+AUTOMATIC TAGS is the same as IMPLICIT TAGS, but with the additional
 property that tag numbers (`[0]`, `[1]`, etc) are automatically assigned
 in places that need them, like SEQUENCEs with optional fields.
 
