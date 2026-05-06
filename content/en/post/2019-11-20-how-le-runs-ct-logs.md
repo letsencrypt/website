@@ -43,7 +43,7 @@ Additionally, AWS provides a solid set of features and our team has experience u
 
 # Terraform
 
-Let’s Encrypt uses Hashicorp [Terraform](https://www.terraform.io/) for a number of cloud-based projects. We were able to bootstrap our CT log infrastructure by reusing our existing Terraform code. There are roughly 50 components in our CT deployments; including EC2, RDS, EKS, IAM, security groups, and routing. Centrally managing this code allows our small team to reproduce a CT infrastructure in any Amazon region of the globe, prevent configuration drift, and easily test infrastructure changes.
+Let’s Encrypt uses Hashicorp [Terraform](https://www.terraform.io/) for a number of cloud-based projects. We were able to bootstrap our CT log infrastructure by reusing our existing Terraform code. There are roughly 50 components in our CT deployments, including EC2, RDS, EKS, IAM, security groups, and routing. Centrally managing this code allows our small team to reproduce a CT infrastructure in any Amazon region of the globe, prevent configuration drift, and easily test infrastructure changes.
 
 # Database
 
@@ -73,7 +73,7 @@ There are three main CT components that we run in a Kubernetes cluster.
 
 The certificate transparency front end, or [CTFE](https://github.com/google/certificate-transparency-go), provides [RFC 6962](https://tools.ietf.org/html/rfc6962) endpoints and translates them to gRPC API requests for the Trillian backend.
 
-[Trillian](https://github.com/google/trillian) describes itself as a “transparent, highly scalable and cryptographically verifiable data store.” Essentially, Trillian implements a generalized verifiable data store via a Merkle tree that can be used as the back-end for a CT log via the CTFE. Trillian consists of two components; the log signer and log server. The [log signer’s function](https://github.com/google/trillian/blob/master/docs/images/LogDesign.png) is to periodically process incoming leaf data (certificates in the case of CT) and incorporate them into a Merkle tree. The log server retrieves objects from a Merkle tree in order to fulfill CT API monitoring requests.
+[Trillian](https://github.com/google/trillian) describes itself as a “transparent, highly scalable and cryptographically verifiable data store.” Essentially, Trillian implements a generalized verifiable data store via a Merkle tree that can be used as the back-end for a CT log via the CTFE. Trillian consists of two components: the log signer and log server. The [log signer’s function](https://github.com/google/trillian/blob/master/docs/images/LogDesign.png) is to periodically process incoming leaf data (certificates in the case of CT) and incorporate them into a Merkle tree. The log server retrieves objects from a Merkle tree in order to fulfill CT API monitoring requests.
 
 # Load Balancing
 

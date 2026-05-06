@@ -912,7 +912,7 @@
 		{
 			"name": "CertKit",
 			"url": "https://www.certkit.io/",
-			"comments": "Deployable and SaaS certificate lifecycle management and monotoring",
+			"comments": "Deployable and SaaS certificate lifecycle management and monitoring",
 			"category": "Server",
 			"challenges": {
 				"HTTP-01": "true",
