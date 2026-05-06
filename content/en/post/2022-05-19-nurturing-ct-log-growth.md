@@ -5,7 +5,7 @@ slug: nurturing-ct-log-growth
 title: "Nurturing Continued Growth of Our Oak CT Log"
 aliases:
   - /2022/05/19/database-to-app-tls.html
-excerpt: "Only five organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack."
+excerpt: "Only six organizations run a Certificate Transparency log, and the Let’s Encrypt log is the only fully open source stack."
 ---
 
 Let's Encrypt has been running a Certificate Transparency (CT) log since 2019 as part of our commitment to keeping the Web PKI ecosystem healthy. CT logs have become important infrastructure for an encrypted Web [^1], but have a well-deserved reputation for being difficult to operate at high levels of trust: Only 6 organizations run logs that are currently considered to be "qualified." [^2]
