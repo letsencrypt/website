@@ -24,9 +24,9 @@ The staging environment uses the same rate limits as [described for the producti
 * The **[New Registrations per IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** limit is 500 per 3 hours (the same as production).
 * The **[New Orders per Account](/docs/rate-limits/#new-orders-per-account)** limit is 1500 per 3 hours.
 * The **[New Certificates per Registered Domain](/docs/rate-limits/#new-certificates-per-registered-domain)** limit is 30000 per second.
-* The **[New Certificates per Exact Set of Hostnames](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** limit is 30000 per week.
-* The **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** limit is 200 per hour.
-* The **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** limit is 3600 per 6 hours.
+* The **[New Certificates per Exact Set of Identifiers](/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)** limit is 30000 per week.
+* The **[Authorization Failures per Identifier per Account](/docs/rate-limits/#authorization-failures-per-identifier-per-account)** limit is 200 per hour.
+* The **[Consecutive Authorization Failures per Identifier per Account](/docs/rate-limits/#consecutive-authorization-failures-per-identifier-per-account)** limit is 3600 per 6 hours.
 
 The [Overall Requests Limits](/docs/rate-limits/#overall-requests-limit) are:
 
