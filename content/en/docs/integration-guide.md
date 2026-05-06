@@ -46,7 +46,7 @@ The upshot of this is that, if you are a hosting provider, you do not need to ge
 
 In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all of their customers.
 
-However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
+However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, and easier to provide rate limit adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
 # Multi-domain (SAN) Certificates
 
