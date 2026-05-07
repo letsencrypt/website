@@ -182,13 +182,13 @@ other = "PayPal로 후원 버튼"
 other = "PayPal로 후원"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - 페이지를 찾을 수 없음"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "찾고 있는 페이지가 없거나 이동되었습니다."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "홈페이지로 돌아가기"
 
 [amount_per_year]
 other = "${{ .nb }}/년 (미국 달러)"
@@ -380,10 +380,10 @@ other = "최근 업데이트된 페이지가 영어로 제공됩니다"
 other = "블로그"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "저희 활동을 후원해 주세요"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG는 보편적이고 개방적인 인터넷 보안에 대한 비전을 공유하는 분들의 후원으로 100% 운영되는 501(c)(3) 비영리 단체입니다. 저희 활동을 후원하고 싶으시다면 <a href="https://www.abetterinternet.org/getinvolved/">참여하기</a>, <a href="/donate/">기부하기</a>, 또는 귀사가 <a href="https://www.abetterinternet.org/sponsor/">후원자가 되도록</a> 권장해 주시기 바랍니다.'
 
 [donate_get_involved_button]
 other = "참여"
@@ -476,7 +476,7 @@ other = "기부할 수 있는 다른 방법"
 other = "기부 방법"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "여러분의 기부를 통해 Let's Encrypt의 활동을 지원해 주세요."
 
 [donate_page_funding_details_why_support_heading]
 other = "왜 지원해야 하나요?"
