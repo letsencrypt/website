@@ -95,7 +95,7 @@ show_lastmod: true
 
 反复重装客户端程序来排查问题或者频繁删除 ACME 客户端配置信息都是触发此限制的常见原因。 为此我们有意将此限制设定得较为严苛，以防故障的系统或不完善的软件将其他速率限制的额度迅速耗尽。
 
-测试或调试应用程序时建议使用[测试环境](/docs/staging-environment)，其速率限制会[宽松很多](/docs/staging-environment/#rate-limits)。
+测试或调试应用程序时建议使用[测试环境](/docs/staging-environment)，其速率限制会[宽松很多](/docs/staging-environment/#速率限制)。
 
 ### 解决方法
 
@@ -118,7 +118,7 @@ show_lastmod: true
 
 ### 常见原因
 
-排查问题前建议先将客户端配置改为使用[测试环境](/docs/staging-environment)， 其速率限制会[宽松很多](/docs/staging-environment/#rate-limits)，可以避免定位及解决问题的过程中消耗生产环境的请求额度。
+排查问题前建议先将客户端配置改为使用[测试环境](/docs/staging-environment)， 其速率限制会[宽松很多](/docs/staging-environment/#速率限制)，可以避免定位及解决问题的过程中消耗生产环境的请求额度。
 
 - `HTTP-01` 和 `TLS-ALPN-01` 验证失败的原因通常是网络或防火墙配置导致 Let's Encrypt 无法与您的服务器建立连接。
 
@@ -153,7 +153,7 @@ show_lastmod: true
 
 ### 常见原因
 
-排查问题前建议先将客户端配置改为使用[测试环境](/docs/staging-environment)， 其速率限制会[宽松很多](/docs/staging-environment/#rate-limits)，可以避免定位及解决问题的过程中消耗生产环境的请求额度。
+排查问题前建议先将客户端配置改为使用[测试环境](/docs/staging-environment)， 其速率限制会[宽松很多](/docs/staging-environment/#速率限制)，可以避免定位及解决问题的过程中消耗生产环境的请求额度。
 
 - `HTTP-01` 和 `TLS-ALPN-01` 验证失败的原因通常是网络或防火墙配置导致 Let's Encrypt 无法与您的服务器建立连接。
 
