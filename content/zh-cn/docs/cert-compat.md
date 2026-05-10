@@ -41,4 +41,4 @@ show_lastmod: 1
 * NSS >= [3.74](https://firefox-source-docs.mozilla.org/security/nss/releases/nss_3_74.html)
 * Chrome >= [105](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#when-are-these-changes-taking-place) (更低版本直接使用操作系统的证书库)
 
-另外，所有信任 ISRG Root X1 的平台都可以信任 [ISRG Root X2 的交叉签名版本](/certificates#root-cas)。
+另外，所有信任 ISRG Root X1 的平台都可以信任 [ISRG Root X2 的交叉签名版本](/certificates#根证书颁发机构)。

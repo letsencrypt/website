@@ -89,7 +89,7 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## Let's Encrypt 颁发通配符证书吗？
 
-是的。 申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-challenge)。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+是的。 申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-验证)。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## 我的操作系统有可以使用的 Let's Encrypt (ACME) 客户端吗？
 
@@ -113,7 +113,7 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## 为什么我的 Let's Encrypt (ACME) 客户端启动时间应当随机？
 
-我们要求 [ACME 客户端在随机的时间点执行证书续期](https://letsencrypt.org/docs/integration-guide/#when-to-renew)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
+我们要求 [ACME 客户端在随机的时间点执行证书续期](/docs/integration-guide/#续期时间)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
 
 ## 在哪里可以深入了解 TLS/SSL 与 PKI 的相关知识？
 
