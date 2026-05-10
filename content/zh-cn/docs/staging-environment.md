@@ -20,15 +20,15 @@ show_lastmod: 1
 
 测试环境与[生产环境的速率限制](/docs/rate-limits)类似，但具体数值有所不同：
 
-* **[单个 IP 地址注册限制](/docs/rate-limits/#new-registrations-per-ip-address)**为每 3 小时 50 次。
-* **[单个 IPv6 子网注册限制](/docs/rate-limits/#new-registrations-per-ipv6-range)**为每 3 小时 500 次（与生产环境相同）。
-* **[单个账户证书申请限制](/docs/rate-limits/#new-orders-per-account)**为每 3 小时 1500 次。
-* **[单个注册域名证书申请限制](/docs/rate-limits/#new-certificates-per-registered-domain)**为每秒 30000 次。
-* **[相同域名集合证书申请限制](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)**为每周 30000 次。
-* **[单个账户同一域名验证失败次数限制](/docs/rate-limits/#authorization-failures-per-hostname-per-account)**为每小时 200 次。
-* **[单个账户同一域名连续验证失败次数限制](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)**为每 6 小时 3600 次。
+* **[单个 IP 地址注册限制](/docs/rate-limits/#单个-ip-地址注册限制)** 为每 3 小时 50 次。
+* **[单个 IPv6 子网注册限制](/docs/rate-limits/#单个-ipv6-子网注册限制)** 为每 3 小时 500 次（与生产环境相同）。
+* **[单个账户证书申请限制](/docs/rate-limits/#单个账户证书申请限制)** 为每 3 小时 1500 次。
+* **[单个注册域名证书申请限制](/docs/rate-limits/#单个注册域名证书申请限制)** 为每秒 30000 次。
+* **[相同标识符集合证书申请限制](/docs/rate-limits/#相同标识符集合证书申请限制)** 为每周 30000 次。
+* **[单个账户同一标识符验证失败次数限制](/docs/rate-limits/#单个账户同一标识符验证失败次数限制)** 为每小时 200 次。
+* **[单个账户同一标识符连续验证失败次数限制](/docs/rate-limits/#单个账户同一标识符连续验证失败次数限制)** 为每 6 小时 3600 次。
 
-[整体请求频率限制](/docs/rate-limits/#overall-requests-limit)为：
+[整体请求频率限制](/docs/rate-limits/#整体请求频率限制)为：
 
 | 接口                 | 单 IP 每秒请求上限 | 突发容量 |
 | ------------------ | ----------- | ---- |
