@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2026-05-09",
 	"categories": [
 		"Bash",
 		"C",
@@ -917,6 +917,17 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "CoyoteCert",
+			"url": "https://github.com/blendbyte/CoyoteCert",
+			"category": "PHP",
+			"comments": "Modern PHP 8.3+ ACME v2 client. Supports HTTP-01, DNS-01, TLS-ALPN-01, wildcards, IP SANs (RFC 8738), EAB, ARI (RFC 9773), and ACME profiles.",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
 			}
 		}
 	]
