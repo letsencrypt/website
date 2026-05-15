@@ -57,7 +57,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | No      |
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No      |
 | [Subject Key ID](#subject-key-identifier-extension)                  | No      |
-| [Validity Period](#validity-period)                                  | 90 days |
+| [Validity Period](#validity-period)                                  | 45 days |
 | [Revocation Information](#revocation-information)                    | CRL     |
 | [Max Names](#max-names)                                              | 25      |
 | [Identifier Types](#identifier-types)                                | DNS     |
@@ -93,8 +93,7 @@ We recommend this profile for those who fully trust their automation to renew th
 Certificates issued with the tlsclient profile contain the TLS Client Auth EKU.
 It is otherwise identical to the classic profile.
 
-However, as [announced on our blog](/2025/05/14/ending-tls-client-authentication),
-this profile will soon cease to exist. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
+However, as [announced on our blog](/2025/05/14/ending-tls-client-authentication), this profile will soon cease to exist. It is no longer generally available. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
 
 This profile exists for the sole purpose of allowing Subscribers who need access
 to TLS Client Auth certificates to retain that EKU for slightly longer, to
