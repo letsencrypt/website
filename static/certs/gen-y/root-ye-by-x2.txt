@@ -2,11 +2,11 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            6f:5e:60:e6:9c:3a:74:69:90:66:19:d5:6e:4f:49:9a
+            87:21:65:fc:34:b6:e5:fb:a8:ad:d5:b3:70:5f:b5:3a
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C=US, O=Internet Security Research Group, CN=ISRG Root X2
         Validity
-            Not Before: Sep  3 00:00:00 2025 GMT
+            Not Before: May 13 00:00:00 2026 GMT
             Not After : Sep  2 23:59:59 2032 GMT
         Subject: C=US, O=ISRG, CN=Root YE
         Subject Public Key Info:
@@ -25,6 +25,8 @@ Certificate:
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
             X509v3 Basic Constraints: critical
                 CA:TRUE
             X509v3 Subject Key Identifier: 
@@ -41,9 +43,9 @@ Certificate:
 
     Signature Algorithm: ecdsa-with-SHA384
     Signature Value:
-        30:66:02:31:00:b4:93:73:51:0e:e0:c7:10:e3:bb:f8:5a:99:
-        99:ce:23:cf:70:3f:3d:2e:88:93:bf:2d:65:2d:3f:cf:eb:0d:
-        89:4c:47:63:b0:e5:4d:61:a7:9c:0b:4b:50:fe:82:cf:72:02:
-        31:00:ba:aa:03:f4:4c:4b:e7:4c:a0:d5:6c:f6:1c:97:f1:a8:
-        50:92:ca:3d:fd:ad:4b:66:f9:b1:b0:f0:6c:1a:c4:01:d5:81:
-        d8:a7:f9:20:25:3b:dd:41:52:17:c5:6e:5b:31
+        30:66:02:31:00:c5:35:f5:60:ad:9b:15:4d:0f:c5:07:05:94:
+        68:99:ae:3d:67:b8:cf:b3:ae:03:99:ad:1e:4e:ed:4e:0a:15:
+        5b:07:fd:89:ec:65:77:9e:f6:0a:03:1e:78:ba:4d:46:f5:02:
+        31:00:ed:26:88:b5:49:bb:c3:cb:36:25:d7:5e:48:84:fe:0b:
+        0a:dc:24:d1:4c:5f:da:7a:8e:1b:31:7e:36:67:0e:34:72:c4:
+        54:e8:00:b6:ea:14:96:d7:f2:16:69:ab:3a:76

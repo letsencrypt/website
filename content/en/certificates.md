@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-03-27
+lastmod: 2026-05-15
 show_lastmod: 1
 ---
 
@@ -31,8 +31,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * Trusted until: 2035-09-04 (generated 2020-09-04)
   * CA details: [crt.sh](https://crt.sh/?caid=183269), [issued certs](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certificate details (self-signed): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-  * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Certificate details (second cross-sign by ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
+  * Certificate details (cross-sign by ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL hostname: `x2.c.lencr.org`
   * Test websites: [valid](https://valid.x2.test-certs.letsencrypt.org/), [revoked](https://revoked.x2.test-certs.letsencrypt.org/), [expired](https://expired.x2.test-certs.letsencrypt.org/)
 
