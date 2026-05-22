@@ -2,7 +2,7 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2026-03-27
+lastmod: 2026-05-15
 show_lastmod: 1
 ---
 
@@ -31,8 +31,7 @@ show_lastmod: 1
   * 有效期限：2020-09-04 至 2035-09-04
   * CA 详细信息：[crt.sh](https://crt.sh/?caid=183269)、[已签发的证书](https://crt.sh/?Identity=%25&iCAID=183269)
   * 证书详细信息（自签名版本）：[crt.sh](https://crt.sh/?id=3335562555)、[der](/certs/isrg-root-x2.der)、[pem](/certs/isrg-root-x2.pem)、[txt](/certs/isrg-root-x2.txt)
-  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[crt.sh](https://crt.sh/?id=3334561878)、[der](/certs/isrg-root-x2-cross-signed.der)、[pem](/certs/isrg-root-x2-cross-signed.pem)、[txt](/certs/isrg-root-x2-cross-signed.txt)
-  * 证书详细信息（ISRG Root X1 第二次交叉签名的版本）：[crt.sh](https://crt.sh/?id=20878422868)、[der](/certs/gen-y/root-x2-by-x1.der)、[pem](/certs/gen-y/root-x2-by-x1.pem)、[txt](/certs/gen-y/root-x2-by-x1.txt)
+  * 证书详细信息（ISRG Root X1 交叉签名的版本）：[der](/certs/gen-y/root-x2-by-x1.der)、[pem](/certs/gen-y/root-x2-by-x1.pem)、[txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL 域名：`x2.c.lencr.org`
   * 测试网站：[正常证书](https://valid.x2.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x2.test-certs.letsencrypt.org/)、[已过期证书](https://expired.x2.test-certs.letsencrypt.org/)
 

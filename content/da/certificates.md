@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Tillidskæder (Root og Intermediate Certifikater)
 slug: certificates
-lastmod: 2026-03-27
+lastmod: 2026-05-15
 show_lastmod: 1
 ---
 
@@ -31,8 +31,7 @@ Bemærk, at Root CAs ikke har udløbsdatoer på helt samme måde som andre certi
   * Gyldigt indtil: 2035-09-04 (genereret 2020-09-04)
   * CA-detaljer: [crt.sh](https://crt.sh/?caid=183269), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certifikatoplysninger (selvsigneret): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-  * Certifikatoplysninger (krydsunderskrevet af ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Certifikat detaljer (andet kryds underskrevne af ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der),[pem](/certs/gen-y/root-x2-by-x1.pem),[txt](/certs/gen-y/root-x2-by-x1.txt)
+  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL værtsnavn: `x2.c.lencr.org`
   * Test websteder: [gyldigt](https://valid.x2.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x2.test-certs.letsencrypt.org/), [udløbet](https://expired.x2.test-certs.letsencrypt.org/)
 
