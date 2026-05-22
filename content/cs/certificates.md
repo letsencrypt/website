@@ -2,7 +2,7 @@
 title: Řetězce důvěryhodnosti
 linkTitle: Řetězce důvěryhodnosti (Kořenové a zprostředkující certifikáty)
 slug: certificates
-lastmod: 2026-03-27
+lastmod: 2026-05-15
 show_lastmod: 1
 ---
 
@@ -31,8 +31,7 @@ Upozorňujeme, že kořenové CA nemají datum platnosti ve stejném smyslu jako
   * Důvěryhodné do: 2035-09-04 (vygenerováno 2020-09-04)
   * Podrobnosti CA: [ crt.sh](https://crt.sh/?caid=183269), [vydané certifikáty](https://crt.sh/?Identity=%25&iCAID=183269)
   * Podrobnosti certifikátu (podepsaný sám sebou): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-  * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
+  * Podrobnosti certifikátu (křížově podepsaný ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL hostname: `x2.c.lencr.org`
   * Testovací webstránky: [platný](https://valid.x2.test-certs.letsencrypt.org/), [odvolaný](https://revoked.x2.test-certs.letsencrypt.org/), [expirovaný](https://expired.x2.test-certs.letsencrypt.org/)
 
