@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-05-15
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
@@ -60,7 +60,7 @@ For additional information on the compatibility of our root certificates with va
 
 # Subordinate (Intermediate) CAs
 
-We currently maintain eight intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates. Subscriber certificates issued under the "classic" and "tlsclient" [profiles](/docs/profiles) will be issued from one of the first four intermediates listed (E7 through R13); conversely, Subscriber certificates issued under the "tlsserver" and "shortlived" profiles will be issued from one of the latter four intermediates (YE1 through YR2).
+We currently maintain eight intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates. Subscriber certificates issued under the "tlsclient" [profile](/docs/profiles) will be issued from one of the first four intermediates listed (E7 through R13); conversely, Subscriber certificates issued under the "classic", "tlsserver", and "shortlived" profiles will be issued from one of the latter four intermediates (YE1 through YR2).
 
 All intermediate certificate Subjects have a Country field of `C = US`.
 
