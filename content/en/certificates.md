@@ -12,7 +12,7 @@ This page describes all of the current and relevant historical Certification Aut
 
 # Root CAs
 
-Our root key material is kept safely offline. We issue end-entity certificates to subscribers from the intermediates described in the next section. All root certificate Subjects have a Country field of `C = US`.
+Our root key material is kept safely offline. We issue end-entity certificates to subscribers from the intermediates described in the next section.
 
 Note that Root CAs don't have expiration dates in quite the same way that other certificates do. Although their self-signed certificates do contain a `notAfter` date, Root Programs and Trust Stores may decide to trust a Root CA beyond that date, or terminate trust in it before that date. As such, the end-of-validity dates given below are approximate, based on current Root Program policies.
 
@@ -60,7 +60,7 @@ For additional information on the compatibility of our root certificates with va
 
 # Subordinate (Intermediate) CAs
 
-We currently maintain eight intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates.
+We currently maintain four intermediates in active rotation. Subscriber certificates containing an ECDSA public key will be issued from one of the ECDSA intermediates; similarly, Subscriber certificates containing an RSA public key will be issued from one of the RSA intermediates.
 
 * **Let's Encrypt YE1**
   * Subject: `C=US, O=Let's Encrypt, CN=YE1`
@@ -134,20 +134,6 @@ These intermediate CAs have currently-valid certificates, but are not being issu
 
 These intermediate CAs are no longer being used to issue Subscriber certificates. Those which issued any certificates will continue producing CRLs until they expire.
 
-* **Let's Encrypt E1**
-  * Subject: `C=US, O=Let's Encrypt, CN=E1`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2025-09-15 (expired)
-  * CA details: [crt.sh](https://crt.sh/?caid=183283), [issued certs](https://crt.sh/?Identity=%25&iCAID=183283)
-  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
-  * CRL hostname: `e1.c.lencr.org`
-* **Let's Encrypt E2**
-  * Subject: `C=US, O=Let's Encrypt, CN=E2`
-  * Key type: `ECDSA P-384`
-  * Valid until: 2025-09-15 (expired)
-  * CA details: [crt.sh](https://crt.sh/?caid=183284), [issued certs](https://crt.sh/?Identity=%25&iCAID=183284)
-  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
-  * CRL hostname: `e2.c.lencr.org`
 * **Let's Encrypt E5**
   * Subject: `C=US, O=Let's Encrypt, CN=E5`
   * Key type: `ECDSA P-384`
@@ -188,22 +174,6 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
   * CRL hostname: `e9.c.lencr.org`
-* **Let's Encrypt R3**
-  * Subject: `C=US, O=Let's Encrypt, CN=R3`
-  * Key type: `RSA 2048`
-  * Valid until: 2025-09-15 (expired)
-  * CA details: [crt.sh](https://crt.sh/?caid=183267), [issued certs](https://crt.sh/?Identity=%25&iCAID=183267)
-  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
-  * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
-  * CRL hostname: `r3.c.lencr.org`
-* **Let's Encrypt R4**
-  * Subject: `C=US, O=Let's Encrypt, CN=R4`
-  * Key type: `RSA 2048`
-  * Valid until: 2025-09-15 (expired)
-  * CA details: [crt.sh](https://crt.sh/?caid=183268), [issued certs](https://crt.sh/?Identity=%25&iCAID=183268)
-  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
-  * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
-  * CRL hostname: `r4.c.lencr.org`
 * **Let's Encrypt R10**
   * Subject: `C=US, O=Let's Encrypt, CN=R10`
   * Key type: `RSA 2048`
@@ -275,6 +245,36 @@ These intermediate CAs cannot issue Subscriber Certificates.
   * CA details: [crt.sh](https://crt.sh/?caid=16429), [issued certs](https://crt.sh/?Identity=%25&iCAID=16429)
   * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=47997546), [der](/certs/letsencryptauthorityx4.der), [pem](/certs/letsencryptauthorityx4.pem), [txt](/certs/letsencryptauthorityx4.txt)
   * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=15710291), [der](/certs/lets-encrypt-x4-cross-signed.der), [pem](/certs/lets-encrypt-x4-cross-signed.pem), [txt](/certs/lets-encrypt-x4-cross-signed.txt)
+* **Let's Encrypt E1**
+  * Subject: `C=US, O=Let's Encrypt, CN=E1`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2025-09-15 (expired)
+  * CA details: [crt.sh](https://crt.sh/?caid=183283), [issued certs](https://crt.sh/?Identity=%25&iCAID=183283)
+  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671964), [der](/certs/lets-encrypt-e1.der), [pem](/certs/lets-encrypt-e1.pem), [txt](/certs/lets-encrypt-e1.txt)
+  * CRL hostname: `e1.c.lencr.org`
+* **Let's Encrypt E2**
+  * Subject: `C=US, O=Let's Encrypt, CN=E2`
+  * Key type: `ECDSA P-384`
+  * Valid until: 2025-09-15 (expired)
+  * CA details: [crt.sh](https://crt.sh/?caid=183284), [issued certs](https://crt.sh/?Identity=%25&iCAID=183284)
+  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=3334671963), [der](/certs/lets-encrypt-e2.der), [pem](/certs/lets-encrypt-e2.pem), [txt](/certs/lets-encrypt-e2.txt)
+  * CRL hostname: `e2.c.lencr.org`
+* **Let's Encrypt R3**
+  * Subject: `C=US, O=Let's Encrypt, CN=R3`
+  * Key type: `RSA 2048`
+  * Valid until: 2025-09-15 (expired)
+  * CA details: [crt.sh](https://crt.sh/?caid=183267), [issued certs](https://crt.sh/?Identity=%25&iCAID=183267)
+  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561879), [der](/certs/lets-encrypt-r3.der), [pem](/certs/lets-encrypt-r3.pem), [txt](/certs/lets-encrypt-r3.txt)
+  * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778542), [der](/certs/lets-encrypt-r3-cross-signed.der), [pem](/certs/lets-encrypt-r3-cross-signed.pem), [txt](/certs/lets-encrypt-r3-cross-signed.txt)
+  * CRL hostname: `r3.c.lencr.org`
+* **Let's Encrypt R4**
+  * Subject: `C=US, O=Let's Encrypt, CN=R4`
+  * Key type: `RSA 2048`
+  * Valid until: 2025-09-15 (expired)
+  * CA details: [crt.sh](https://crt.sh/?caid=183268), [issued certs](https://crt.sh/?Identity=%25&iCAID=183268)
+  * Certificate details (signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561877), [der](/certs/lets-encrypt-r4.der), [pem](/certs/lets-encrypt-r4.pem), [txt](/certs/lets-encrypt-r4.txt)
+  * Certificate details (cross-signed by IdenTrust): [crt.sh](https://crt.sh/?id=3479778543), [der](/certs/lets-encrypt-r4-cross-signed.der), [pem](/certs/lets-encrypt-r4-cross-signed.pem), [txt](/certs/lets-encrypt-r4-cross-signed.txt)
+  * CRL hostname: `r4.c.lencr.org`
 
 </details>
 
