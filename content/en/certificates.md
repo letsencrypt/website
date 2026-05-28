@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-07-08
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
