@@ -2,7 +2,7 @@
 title: Řetězce důvěryhodnosti
 linkTitle: Řetězce důvěryhodnosti (Kořenové a zprostředkující certifikáty)
 slug: certificates
-lastmod: 2026-05-15
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
@@ -60,7 +60,7 @@ Další informace o kompatibilitě našich kořenových certifikátů s různým
 
 # Podřízené (zprostředkující) certifikační autority
 
-V současné době udržujeme osm zprostředkujících certifikátů, které aktivně rotují. Certifikáty odběratelů obsahující veřejný klíč ECDSA budou vydávány jedním ze zprostředkovatelů ECDSA; podobně certifikáty odběratelů obsahující veřejný klíč RSA budou vydávány jedním ze zprostředkovatelů RSA. Certifikáty odběratelů vydané v rámci „classic“ a „tlsclient“ [profilů](/docs/profiles) budou vydávány od jednoho z prvních čtyř uvedených zprostředkovatelů (E7 až R13); naopak certifikáty předplatitelů vydané v rámci profilů „tlsserver“ a „shortlived“ budou vydávány od jednoho ze čtyř posledních zprostředkovatelů (YE1 až YR2).
+V současné době udržujeme osm zprostředkujících certifikátů, které aktivně rotují. Certifikáty odběratelů obsahující veřejný klíč ECDSA budou vydávány jedním ze zprostředkovatelů ECDSA; podobně certifikáty odběratelů obsahující veřejný klíč RSA budou vydávány jedním ze zprostředkovatelů RSA. Certifikáty odběratelů vydané v rámci „tlsclient“ [profilu](/docs/profiles) budou vydávány od jednoho z prvních čtyř uvedených zprostředkovatelů (E7 až R13); naopak certifikáty předplatitelů vydané v rámci profilů „classic“, „tlsserver“ a „shortlived“ budou vydávány od jednoho ze čtyř posledních zprostředkovatelů (YE1 až YR2).
 
 Všechny Subjekty zprostředujících certifikátů mají jako Zemi nastavenou `C = US`.
 
