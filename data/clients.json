@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2026-06-02",
 	"categories": [
 		"Bash",
 		"C",
@@ -917,6 +917,18 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "acme-client-rs",
+			"url": "https://github.com/andrico21/acme-client-rs",
+			"category": "Rust",
+			"comments": "Single-binary CLI client (RFC 8555) with EAB, ARI (RFC 9773), IP identifiers (RFC 8738), and certificate profiles; experimental DNS-PERSIST-01 support",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"DNS-PERSIST-01": "true",
+				"TLS-ALPN-01": "true"
 			}
 		}
 	]
