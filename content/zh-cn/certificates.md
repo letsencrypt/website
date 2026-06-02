@@ -2,7 +2,7 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2026-05-15
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
@@ -60,7 +60,7 @@ show_lastmod: 1
 
 # 中间证书颁发机构
 
-我们目前有八份中间证书供轮转使用。 包含 ECDSA 公钥的用户证书由其中一份 ECDSA 中间证书签发，包含 RSA 公钥的用户证书则由其中一份 RSA 中间证书签发。 用户以“classic”或“tlsclient”[配置](/docs/profiles)申请的证书会由下列前四份中间证书（E7 到 R13）签发，而以“tlsserver”或“shortlived”配置申请的证书则会由后四份中间证书（YE1 到 YR2）签发。
+我们目前有八份中间证书供轮转使用。 包含 ECDSA 公钥的用户证书由其中一份 ECDSA 中间证书签发，包含 RSA 公钥的用户证书则由其中一份 RSA 中间证书签发。 用户以“tlsclient”[配置](/docs/profiles)申请的证书会由下列前四份中间证书（E7 到 R13）签发，而以“classic”、“tlsserver”或“shortlived”配置申请的证书则会由后四份中间证书（YE1 到 YR2）签发。
 
 所有中间证书中主体的国家字段均为 `C = US`。
 
