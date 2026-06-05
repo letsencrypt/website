@@ -1,0 +1,25 @@
+{{- $id := .id -}}
+<div class="donate-2026-item" id="campaign-item-{{ $id }}">
+  <div class="donate-2026-carousel" aria-label="{{ .title }} images">
+    {{- range $i, $img := .images }}
+    <img
+      src="{{ $img.thumb }}"
+      data-full="{{ $img.full }}"
+      alt="{{ $.title }}{{ if gt (len $.images) 1 }} — image {{ add $i 1 }} of {{ len $.images }}{{ end }}"
+      class="donate-2026-carousel-img{{ if eq $i 0 }} active{{ end }}"
+    />
+    {{- end }}
+    {{ if gt (len .images) 1 }}
+    <div class="flex items-center justify-center gap-2 mt-3">
+      <button type="button" class="donate-2026-carousel-prev" aria-label="Previous image">&#10094;</button>
+      <span class="donate-2026-carousel-counter text-sm text-gray-500" aria-live="polite">1 / {{ len .images }}</span>
+      <button type="button" class="donate-2026-carousel-next" aria-label="Next image">&#10095;</button>
+    </div>
+    {{ end }}
+  </div>
+  <div class="donate-2026-item-text">
+    <div class="donate-2026-eyebrow">{{ .eyebrow }}</div>
+    <h2 class="text-2xl font-bold text-le-blue mb-3">{{ .title }}</h2>
+    <p class="text-base text-gray-700">{{ .description }}</p>
+  </div>
+</div>
