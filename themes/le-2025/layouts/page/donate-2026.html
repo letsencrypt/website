@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div id="donate-2026-page">
+  {{ partial "donate-2026/campaign-hero.html" . }}
+
+  <div class="container mx-auto py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 space-y-10">
+        {{ range (index site.Data "donate-2026").items }}
+          {{ partial "donate-2026/campaign-item.html" . }}
+        {{ end }}
+      </div>
+
+      <div class="relative">
+        <div id="donate-2026-form-anchor"></div>
+        <div class="lg:sticky lg:top-4">
+          {{ partial "donorbox.html" $ }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/* ── Lightbox overlay ───────────────────────────────── */}}
+  <div id="donate-2026-lightbox" class="donate-2026-lightbox" aria-hidden="true" role="dialog" aria-label="Enlarged image">
+    <button type="button" class="absolute top-4 right-6 text-white text-4xl font-bold hover:text-gray-300 z-10" aria-label="Close">&times;</button>
+    <img alt="Full size image" class="max-w-full max-h-full object-contain m-auto" id="donate-2026-lightbox-img" />
+  </div>
+
+  {{/* ── Mobile sticky CTA ──────────────────────────────── */}}
+  <div id="donate-2026-sticky-cta" class="donate-2026-sticky-cta">
+    <a href="#donate-2026-form-anchor" class="block w-full text-center py-3 bg-le-yellow text-le-blue font-bold text-lg no-underline hover:bg-le-yellow/90">
+      {{ T "donate_2026_cta_button" }}
+    </a>
+  </div>
+</div>
+
+{{ with resources.Get "js/donate-2026.js" }}
+  {{ if eq hugo.Environment "development" }}
+    {{ with . | js.Build }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  {{ else }}
+    {{ $opts := dict "minify" true }}
+    {{ with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}
