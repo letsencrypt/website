@@ -407,7 +407,13 @@ other = "### 'dan fazla web sitesine ücretsiz TLS sertifikaları sağlayan kar 
 other = "den fazla kuruluşa ücretsiz TLS sertifikaları sağlayan kar amacı gütmeyen bir kuruluş"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "web siteleri"

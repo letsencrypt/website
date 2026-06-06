@@ -407,7 +407,13 @@ other = "Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn
 other = "Một tổ chức phi lợi nhuận cung cấp chứng chỉ TLS miễn phí cho hơn"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "trang web"
