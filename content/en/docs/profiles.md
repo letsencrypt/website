@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-05-15
+lastmod: 2026-06-09
 show_lastmod: false
 ---
 
@@ -171,7 +171,7 @@ TLS Certificates can have a ["Subject Key Identifier" extension](https://datatra
 
 ### Validity Period
 
-This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 398 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
+This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 200 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
 
 ### Revocation Information
 
