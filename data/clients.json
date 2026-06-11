@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2026-11-11",
 	"categories": [
 		"Bash",
 		"C",
@@ -538,12 +538,6 @@
 			"last_commit": 1752945862
 		},
 		{
-			"name": "ACMEd",
-			"url": "https://github.com/breard-r/acmed",
-			"category": "Rust",
-			"last_commit": 1755965014
-		},
-		{
 			"name": "certman-operator",
 			"url": "https://github.com/openshift/certman-operator",
 			"category": "OpenShift",
@@ -572,13 +566,6 @@
 			"url": "https://httpd.apache.org",
 			"comments": "Support via the module mod_md.",
 			"category": "C"
-		},
-		{
-			"name": "mod_md",
-			"url": "https://github.com/icing/mod_md",
-			"comments": "Separate, more frequent releases of the Apache module.",
-			"category": "C",
-			"last_commit": 1755595500
 		},
 		{
 			"name": "App Service Acmebot",
