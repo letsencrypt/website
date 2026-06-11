@@ -538,12 +538,6 @@
 			"last_commit": 1752945862
 		},
 		{
-			"name": "ACMEd",
-			"url": "https://github.com/breard-r/acmed",
-			"category": "Rust",
-			"last_commit": 1755965014
-		},
-		{
 			"name": "certman-operator",
 			"url": "https://github.com/openshift/certman-operator",
 			"category": "OpenShift",
