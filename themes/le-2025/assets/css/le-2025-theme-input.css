@@ -673,3 +673,5 @@
 .prose-content .pull-quote-right blockquote {
   @apply mt-0 pt-0 border-0 pl-0;
 }
+
+@import "./donate-2026.css";
