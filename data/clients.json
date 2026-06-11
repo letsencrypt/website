@@ -568,13 +568,6 @@
 			"category": "C"
 		},
 		{
-			"name": "mod_md",
-			"url": "https://github.com/icing/mod_md",
-			"comments": "Separate, more frequent releases of the Apache module.",
-			"category": "C",
-			"last_commit": 1755595500
-		},
-		{
 			"name": "App Service Acmebot",
 			"url": "https://github.com/shibayan/appservice-acmebot",
 			"category": "Microsoft Azure",
