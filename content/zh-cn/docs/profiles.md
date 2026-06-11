@@ -1,7 +1,7 @@
 ---
 title: 证书配置
 slug: profiles
-lastmod: 2026-05-15
+lastmod: 2026-06-09
 show_lastmod: false
 ---
 
@@ -167,7 +167,7 @@ TLS 证书可以包含一个[“主体密钥标识符”字段](https://datatrac
 
 ### 有效期
 
-有效期决定了 TLS 证书中 [`notBefore` 和 `notAfter` 时间戳](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5)之间的间隔，也就是该证书在多长的时间内能够被信任。 底线要求规定该时长[不得超过 398 天](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods)。
+有效期决定了 TLS 证书中 [`notBefore` 和 `notAfter` 时间戳](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5)之间的间隔，也就是该证书在多长的时间内能够被信任。 底线要求规定该时长[不得超过 200 天](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods)。
 
 ### 吊销信息来源
 
