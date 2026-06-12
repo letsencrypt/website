@@ -18,6 +18,7 @@ There are a number of monitoring options out there, including:
 * [Host-Tracker](https://www.host-tracker.com/)
 * [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (self-hosted scripts)
 * [CertKit](https://www.certkit.io/)
+* [Middleware](https://middleware.io/product/synthetic-monitoring/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
