@@ -83,10 +83,6 @@ Note for translators:
 
 {{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A signature algorithm which uses elliptic curve cryptography. [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA. {{% /def %}}
 
-{{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
-
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities like [Let's Encrypt](#def-LE) can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
-
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} A type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
