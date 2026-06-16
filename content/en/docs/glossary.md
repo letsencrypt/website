@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2025-07-31
+lastmod: 2026-06-16
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
@@ -81,7 +81,7 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} A [certificate](#def-leaf) where the applicant has only proven its control over the domain name (and not the identity of the requesting organization). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) or [EV](#def-EV)): [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA for [end-entity or leaf certificates](#def-leaf), but not yet for the entire [chain](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A signature algorithm which uses elliptic curve cryptography. [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA. {{% /def %}}
 
 {{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
 
