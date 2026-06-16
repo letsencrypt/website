@@ -41,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE), [IdenTrust](#def-IdenTrust), Sectigo, and DigiCert are Certificate Authorities. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
+{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE) is a Certificate Authority. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAI" name="CA Issuers" %}} Part of the [AIA](#def-AIA) field containing information about the issuer of the [certificate](#def-leaf). It may be useful when the [web server](#def-web-server) didn't provide a trusted [certificate chain](#def-chain). {{% /def %}}
 
@@ -88,8 +88,6 @@ Note for translators:
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is an *FQDN*. {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} A [Certificate Authority](#def-CA). IdenTrust has [cross-signed](#def-cross-signing) [Let's Encrypt](#def-LE) [intermediate certificates](#def-intermediate): [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
