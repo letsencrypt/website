@@ -1,0 +1,43 @@
+/* ── Donate 2026 Campaign ──────────────────────────────── */
+@utility donate-2026-item {
+  @apply flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200;
+
+  &:last-child {
+    @apply border-b-0;
+  }
+}
+@utility donate-2026-carousel {
+  @apply w-full md:w-48 flex-shrink-0;
+}
+@utility donate-2026-carousel-img {
+  @apply hidden w-full rounded-lg bg-white object-contain cursor-zoom-in;
+
+  &.active {
+    @apply block;
+  }
+}
+@utility donate-2026-carousel-prev {
+  @apply w-8 h-8 bg-gray-200 rounded text-center font-bold text-base leading-8 hover:bg-gray-300 select-none;
+}
+@utility donate-2026-carousel-next {
+  @apply w-8 h-8 bg-gray-200 rounded text-center font-bold text-base leading-8 hover:bg-gray-300 select-none;
+}
+@utility donate-2026-eyebrow {
+  @apply uppercase tracking-wider text-sm font-bold text-le-yellow mb-2;
+}
+@utility donate-2026-lightbox {
+  @apply hidden fixed inset-0 z-[999] bg-black/70 items-center justify-center;
+
+  &.active {
+    @apply flex;
+  }
+}
+@utility donate-2026-sticky-cta {
+  @apply fixed bottom-0 left-0 w-full z-[1000] lg:hidden;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-in-out;
+
+  &.visible {
+    transform: translateY(0);
+  }
+}

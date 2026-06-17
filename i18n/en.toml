@@ -549,3 +549,14 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "here"
+
+# ── Donate 2026 Campaign ──────────────────────────────────
+
+[donate_2026_hero_title]
+other = "Encryption for Everybody."
+
+[donate_2026_hero_body]
+other = "For over a decade, Let's Encrypt has provided billions of free TLS certificates. Each one made possible thanks to the generosity of people like you. Donate today to help us continue this work, and we'll say thanks with a gift of your choosing."
+
+[donate_2026_cta_button]
+other = "Donate Now"
