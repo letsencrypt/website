@@ -1,7 +1,7 @@
 ---
 title: Optionen zur Überwachung
 slug: monitoring-options
-lastmod: 2025-12-09
+lastmod: 2026-06-01
 show_lastmod: 1
 ---
 
@@ -18,6 +18,7 @@ Es gibt eine Reihe von Überwachungsoptionen, darunter:
 - [Host-Tracker](https://www.host-tracker.com/)
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (selbstgehostete Skripte)
 - [CertKit](https://www.certkit.io/)
+- [Otterwatch](https://otterwatch.dev)
 
 Bitte beachten Sie, dass alle diese Dienste in keiner Verbindung zur ISRG / Let's Encrypt stehen.
 
