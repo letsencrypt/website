@@ -407,7 +407,13 @@ other = "Voittoa tavoittelematon järjestö, joka tarjoaa ilmaisia ​​TLS-var
 other = "Voittoa tavoittelematon järjestö, joka tarjoaa ilmaisia ​​TLS-varmenteita yli"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "verkkosivustoille"
