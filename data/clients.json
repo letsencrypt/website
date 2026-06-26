@@ -1,5 +1,5 @@
 {
-	"lastmod": "2025-09-05",
+	"lastmod": "2026-06-15",
 	"categories": [
 		"Bash",
 		"C",
@@ -918,6 +918,11 @@
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			}
+		},
+		{
+			"name": "EudaCertMgr",
+			"url": "https://eudasystems.com/eudacertmgr",
+			"category": "Server"
 		}
 	]
 }
