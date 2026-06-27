@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2026-03-16
+lastmod: 2026-06-09
 show_lastmod: false
 ---
 
@@ -57,7 +57,7 @@ Det udstedte certifikat indeholder ikke længere nogen af de felter, der er næv
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | Nej     |
 | [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Nej     |
 | [Emne Nøgle ID](#subject-key-identifier-extension)                   | Nej     |
-| [Gyldighedsperiode](#validity-period)                                | 90 dage |
+| [Gyldighedsperiode](#validity-period)                                | 45 dage |
 | [Revocation Information](#revocation-information)                    | CRL     |
 | [Max Names](#max-names)                                              | 25      |
 | [Identifikationstyper](#identifier-types)                            | DNS     |
@@ -94,7 +94,7 @@ Certifikater udstedt med tlsclient profil indeholder TLS Client Auth EKU.
 Den er ellers identisk med den klassiske profil.
 
 Men som [annonceret på vores blog](/2025/05/14/ending-tls-client-authentication),
-vil denne profil snart vil ophøre med at eksistere. Abonnenter, der allerede bruger det før 13. maj 2026 kan fortsætte med at bruge det indtil 8. juli 2026.
+vil denne profil snart vil ophøre med at eksistere. Den er ikke længere generelt tilgængelig. Abonnenter, der allerede bruger det før 13. maj 2026 kan fortsætte med at bruge det indtil 8. juli 2026.
 
 Denne profil findes alene med det formål at give abonnenter, der har brug for adgang til
 til TLS Client Auth certifikater til at beholde den EKU i lidt længere tid at
@@ -172,7 +172,7 @@ TLS certifikater kan have en ["Emne Key Identifier" udvidelse](https://datatrack
 
 ### Gyldighedsperiode
 
-Dette regulerer mængden af tid mellem [`notBefore` og `notAfter` tidsstempler](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) der er indlejret i et TLS-certifikat med andre ord, hvor længe certifikatet vil være betroet før det udløber. Denne værdi er begrænset til [højst 398 dage](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) af baseline-kravene.
+Dette regulerer mængden af tid mellem [`notBefore` og `notAfter` tidsstempler](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) der er indlejret i et TLS-certifikat med andre ord, hvor længe certifikatet vil være betroet før det udløber. Denne værdi er begrænset til [højst 200 dage](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) af baseline-kravene.
 
 ### Tilbagekaldelsesoplysninger
 
