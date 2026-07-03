@@ -332,6 +332,12 @@ status = 301
 force = true
 
 [[redirects]]
+from = "/documents/LE-SA-v1.8-July-06-2026.pdf."
+to = "/documents/LE-SA-v1.8-July-06-2026.pdf"
+status = 301
+force = true
+
+[[redirects]]
 from = "https://cp.letsencrypt.org/*"
 to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.1/"
 status = 302
