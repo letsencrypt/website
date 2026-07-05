@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2026-06-16
+lastmod: 2026-07-04
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
