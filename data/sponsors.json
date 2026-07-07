@@ -387,6 +387,11 @@
       "name": "Porkbun",
       "url": "https://porkbun.com/",
       "image": "porkbun-logo.png"
+    },
+    {
+      "name": "Fly.io",
+      "url": "https://fly.io/",
+      "image": "fly-io-logo.png"
     }
   ]
 }
