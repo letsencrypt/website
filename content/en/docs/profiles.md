@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-06-09
+lastmod: 2026-07-07
 show_lastmod: false
 ---
 
@@ -67,7 +67,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 
 ## shortlived
 
-The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. This means the certificates can be even smaller, and removes any possibility of a client accidentally trusting a certificate after it has been revoked.
+The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. Today, these certificates still include a CRL URL, as shown in the table below, but [that may change in the future](https://github.com/letsencrypt/boulder/issues/7673).
 
 We recommend this profile for those who fully trust their automation to renew their certificates on time. This profile is not for everyone. 
 
