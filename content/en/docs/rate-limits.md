@@ -1,7 +1,7 @@
 ---
 title: Rate Limits
 slug: rate-limits
-lastmod: 2026-07-03
+lastmod: 2026-07-07
 show_lastmod: true
 ---
 
