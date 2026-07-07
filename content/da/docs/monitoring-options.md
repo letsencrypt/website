@@ -1,7 +1,7 @@
 ---
 title: Indstillinger For Overvågningstjeneste
 slug: monitoring-options
-lastmod: 2026-06-20
+lastmod: 2025-12-09
 show_lastmod: 1
 ---
 
@@ -18,7 +18,6 @@ Der er en række andre overvågningsmuligheder derude, herunder:
 - [Host-Tracker](https://www.host-tracker.com/)
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (selvhostede scripts)
 - [CertKit](https://www.certkit.io/)
-- [CertObserver](https://certobserver.com/)
 
 Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
 
