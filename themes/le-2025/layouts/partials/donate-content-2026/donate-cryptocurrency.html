@@ -1,0 +1,6 @@
+<div id="cmp-DonateCryptocurrency2026">
+  {{ $cryptoURL := site.Params.cryptoDonationURL }}
+  {{ $cryptoLinkText := T "donate_2026_donate_cryptocurrency_link_text" }}
+  {{ $cryptoLink := printf "<a href='%s'>%s</a>" $cryptoURL $cryptoLinkText }}
+  <p>{{ T "donate_2026_donate_cryptocurrency_text" (dict "cryptoLink" $cryptoLink) | safeHTML }}</p>
+</div>

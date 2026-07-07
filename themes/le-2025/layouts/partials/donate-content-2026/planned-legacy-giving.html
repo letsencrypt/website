@@ -1,0 +1,8 @@
+<div id="cmp-PlannedLegacyGiving2026">
+  {{ $donateEmail := "donate@abetterinternet.org" }}
+  {{ $donateEmailLink := printf "<a href='mailto:%s'>%s</a>" $donateEmail $donateEmail }}
+  <p>{{ T "donate_2026_planned_legacy_giving_text" }}</p>
+  <p>{{ T "donate_2026_planned_legacy_giving_notify_text" (dict "donateEmailLink" $donateEmailLink) | safeHTML }}</p>
+  <p>{{ T "donate_2026_planned_legacy_giving_confidentiality_text" }}</p>
+  <p>{{ T "donate_2026_planned_legacy_giving_advisor_text" }}</p>
+</div>

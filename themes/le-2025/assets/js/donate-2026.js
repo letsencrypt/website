@@ -1,94 +1,131 @@
 const Donate2026 = {
   init() {
-    const page = document.getElementById('donate-2026-page');
+    const page = document.getElementById('page-Donate2026');
     if (!page) return;
 
-    this.initCarousels();
-    this.initLightbox();
-    this.initStickyCTA();
+    this.page = page;
+    this.forms = page.querySelector('#cmp-DonationForms2026');
+
+    window.addEventListener('hashchange', () => {
+      this.syncAccordionToLocation();
+    });
+
+    window.addEventListener('popstate', () => {
+      this.syncAccordionToLocation();
+    });
+
+    this.bindDonationTabs();
+    this.bindAccordionLinks();
+
+    if (window.location.hash) {
+      this.syncAccordionToLocation();
+    }
   },
 
-  initCarousels() {
-    document.querySelectorAll('.donate-2026-carousel').forEach(carousel => {
-      const images = carousel.querySelectorAll('.donate-2026-carousel-img');
-      const prevBtn = carousel.querySelector('.donate-2026-carousel-prev');
-      const nextBtn = carousel.querySelector('.donate-2026-carousel-next');
-      const counter = carousel.querySelector('.donate-2026-carousel-counter');
-      if (images.length <= 1) return;
+  bindDonationTabs() {
+    if (!this.forms) return;
 
-      let current = 0;
+    this.tabs = Array.from(this.forms.querySelectorAll('.donate-2026-tab'));
+    this.panels = Array.from(this.forms.querySelectorAll('.donate-2026-embed-panel'));
 
-      const show = (index) => {
-        images[current].classList.remove('active');
-        current = (index + images.length) % images.length;
-        images[current].classList.add('active');
-        if (counter) counter.textContent = `${current + 1} / ${images.length}`;
-      };
+    if (!this.tabs.length || !this.panels.length) return;
 
-      prevBtn.addEventListener('click', () => show(current - 1));
-      nextBtn.addEventListener('click', () => show(current + 1));
+    this.tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        this.activateDonationTab(tab.dataset.panel);
+      });
+    });
 
-      images.forEach(img => {
-        img.addEventListener('click', () => {
-          const fullSrc = img.getAttribute('data-full');
-          if (fullSrc) this.openLightbox(fullSrc);
-        });
+    const selectedTab = this.tabs.find(tab => tab.getAttribute('aria-selected') === 'true') || this.tabs[0];
+    this.activateDonationTab(selectedTab.dataset.panel);
+  },
+
+  activateDonationTab(panelName) {
+    if (!panelName || !this.tabs || !this.panels) return;
+
+    this.tabs.forEach(tab => {
+      const isSelected = tab.dataset.panel === panelName;
+      tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+      tab.setAttribute('tabindex', isSelected ? '0' : '-1');
+    });
+
+    this.panels.forEach(panel => {
+      const isActive = panel.id === `donate-2026-panel-${panelName}`;
+      panel.classList.toggle('active', isActive);
+      panel.hidden = !isActive;
+    });
+  },
+
+  bindAccordionLinks() {
+    this.page.querySelectorAll('.accordion-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.accordion-item');
+        if (!item) return;
+
+        const isOpen = item.classList.contains('is-open');
+        this.updateHistory(item.id, isOpen);
       });
     });
   },
 
-  initLightbox() {
-    const lightbox = document.getElementById('donate-2026-lightbox');
-    const lightboxImg = document.getElementById('donate-2026-lightbox-img');
-    if (!lightbox || !lightboxImg) return;
+  updateHistory(id, isOpen) {
+    const url = new URL(window.location.href);
+    url.hash = isOpen ? id : '';
+    window.history.pushState({}, '', `${url.pathname}${url.search}${url.hash}`);
+  },
 
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightboxImg) return;
-      this.closeLightbox();
-    });
+  syncAccordionToLocation() {
+    const hash = window.location.hash.replace(/^#/, '');
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.getAttribute('aria-hidden') === 'false') {
-        this.closeLightbox();
-      }
+    if (!hash) {
+      this.closeAllAccordions();
+      return;
+    }
+
+    this.openAccordionById(hash);
+  },
+
+  closeAllAccordions() {
+    this.page.querySelectorAll('.accordion-item').forEach(item => {
+      const button = item.querySelector('.accordion-button');
+      const content = item.querySelector('.accordion-content');
+      const icon = item.querySelector('.accordion-icon');
+
+      if (!button || !content) return;
+
+      button.classList.remove('active');
+      button.setAttribute('aria-expanded', 'false');
+      content.classList.add('hidden');
+      item.classList.remove('is-open');
+
+      if (icon) icon.textContent = '+';
     });
   },
 
-  openLightbox(src) {
-    const lightbox = document.getElementById('donate-2026-lightbox');
-    const lightboxImg = document.getElementById('donate-2026-lightbox-img');
-    lightboxImg.src = src;
-    lightbox.setAttribute('aria-hidden', 'false');
-    lightbox.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  },
+  openAccordionById(id) {
+    const target = document.getElementById(id);
+    if (!target) return;
 
-  closeLightbox() {
-    const lightbox = document.getElementById('donate-2026-lightbox');
-    lightbox.setAttribute('aria-hidden', 'true');
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
-  },
+    this.closeAllAccordions();
 
-  initStickyCTA() {
-    const cta = document.getElementById('donate-2026-sticky-cta');
-    const anchor = document.getElementById('donate-2026-form-anchor');
-    if (!cta || !anchor) return;
+    const item = target.classList.contains('accordion-item') ? target : target.closest('.accordion-item');
+    if (!item) return;
 
-    const update = () => {
-      const rect = anchor.getBoundingClientRect();
-      const formVisible = rect.top >= -100 && rect.top <= window.innerHeight + 100;
-      cta.classList.toggle('visible', !formVisible);
-    };
+    const button = item.querySelector('.accordion-button');
+    const content = item.querySelector('.accordion-content');
+    const icon = item.querySelector('.accordion-icon');
 
-    cta.querySelector('a').addEventListener('click', (e) => {
-      e.preventDefault();
-      anchor.scrollIntoView({ behavior: 'smooth' });
+    if (!button || !content) return;
+
+    button.classList.add('active');
+    button.setAttribute('aria-expanded', 'true');
+    content.classList.remove('hidden');
+    item.classList.add('is-open');
+    if (icon) icon.textContent = '−';
+
+    requestAnimationFrame(() => {
+      item.scrollIntoView({ block: 'start' });
     });
-
-    document.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-    update();
   }
 };
 

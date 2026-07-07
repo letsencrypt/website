@@ -39,6 +39,8 @@ Content-Security-Policy = """
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
+        https://widget.thegivingblock.com
+        https://js.dev.shift4.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
@@ -59,6 +61,7 @@ Content-Security-Policy = """
         https://js.stripe.com/v2/
         https://www.paypal.com
         https://outreach.abetterinternet.org
+        https://widget.thegivingblock.com/
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/

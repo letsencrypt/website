@@ -1,0 +1,54 @@
+<div id="cmp-DonateAccordion2026" class="w-full accordion-container">
+  <h2 class="text-heading-yellow">{{ T "donate_2026_ways_to_give_heading" }}</h2>
+  {{ $page_context := .Page }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "employer-matching-gifts"
+    "title" (T "donate_2026_employer_matching_gifts_title")
+    "content_partial" "donate-content-2026/employer-matching-gifts.html"
+    "is_open" true
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "become-a-sponsor"
+    "title" (T "donate_2026_become_a_sponsor_title")
+    "content_partial" "donate-content-2026/become-a-sponsor.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "donate-stock"
+    "title" (T "donate_2026_donate_stock_title")
+    "content_partial" "donate-content-2026/donate-stock.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "donate-cryptocurrency"
+    "title" (T "donate_2026_donate_cryptocurrency_title")
+    "content_partial" "donate-content-2026/donate-cryptocurrency.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "donor-advised-funds"
+    "title" (T "donate_2026_donor_advised_funds_title")
+    "content_partial" "donate-content-2026/donor-advised-funds.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "planned-legacy-giving"
+    "title" (T "donate_2026_planned_legacy_giving_title")
+    "content_partial" "donate-content-2026/planned-legacy-giving.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "qualified-charitable-distribution"
+    "title" (T "donate_2026_qualified_charitable_distribution_title")
+    "content_partial" "donate-content-2026/qualified-charitable-distribution.html"
+    "page_context" $page_context
+  ) }}
+  {{ partial "components/accordion-item-2026.html" (dict
+    "id" "donate-by-check"
+    "title" (T "donate_2026_donate_by_check_title")
+    "content_partial" "donate-content-2026/donate-by-check.html"
+    "last" true
+    "page_context" $page_context
+  ) }}
+</div>

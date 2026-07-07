@@ -1,0 +1,44 @@
+{{ $scratch := newScratch }}
+
+{{ if eq .Page.Language.Lang "fr"  }}
+  {{ $scratch.Set "lang" "fr" }}
+{{ else if eq .Page.Language.Lang "de" }}
+  {{ $scratch.Set "lang" "de" }}
+{{ else if eq .Page.Language.Lang "pt-br" }}
+  {{ $scratch.Set "lang" "pt" }}
+{{ else if eq .Page.Language.Lang "zh-cn" }}
+  {{ $scratch.Set "lang" "zh" }}
+{{ else if eq .Page.Language.Lang "zh-tw" }}
+  {{ $scratch.Set "lang" "zh" }}
+{{ else if eq .Page.Language.Lang "es" }}
+  {{ $scratch.Set "lang" "es" }}
+{{ else if eq .Page.Language.Lang "ja" }}
+  {{ $scratch.Set "lang" "ja" }}
+{{ else if eq .Page.Language.Lang "sv" }}
+  {{ $scratch.Set "lang" "sv" }}
+{{ end }}
+
+<div class="donate-2026-embed-frame donate-2026-embed-frame--donorbox text-center mb-4 donorbox-container">
+  <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+  <iframe
+    src="https://donorbox.org/embed/2026-summer-campaign?hide_donation_meter=true&language={{ $scratch.Get "lang" }}"
+    name="donorbox"
+    id="dbox-form-embed-2026"
+    allowpaymentrequest="allowpaymentrequest"
+    seamless="seamless"
+    frameborder="0"
+    scrolling="no"
+    height="685px"
+    width="100%"
+    title="Donate via Donorbox"
+    class="max-w-[500px] min-w-[250px] max-h-none!"
+  ></iframe>
+  <div id="donorbox-fallback-2026" class="mt-2">
+    <a href="https://donorbox.org/2026-summer-campaign" class="btn btn-yellow btn-sm">Donate on Donorbox</a>
+  </div>
+  <script>
+    document.getElementById('dbox-form-embed-2026').addEventListener('load', function() {
+      document.getElementById('donorbox-fallback-2026').style.display = 'none';
+    });
+  </script>
+</div>
