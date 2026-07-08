@@ -1,3 +1,15 @@
+{{ define "head-extra" }}
+{{ with resources.Get "css/donate-2026.css" }}
+  {{ if hugo.IsDevelopment }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ else }}
+    {{ with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
 {{ define "main" }}
 {{ partial "components/post-hero-image" (dict "page" . "image" "images/donate-hero.jpg" "title" (T "donate_2026_page_title")) }}
 <div id="page-Donate2026">

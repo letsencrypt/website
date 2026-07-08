@@ -59,10 +59,10 @@ const Donate2026 = {
     this.panels.forEach(panel => {
       const isActive = panel.id === `donate-2026-panel-${panelName}`;
       panel.classList.toggle('active', isActive);
-      panel.hidden = !isActive;
+      panel.setAttribute('aria-hidden', isActive ? 'false' : 'true');
     });
 
-    this.scheduleFormSpacerHeightSync();
+    this.scheduleFormSpacerHeightSync?.();
   },
 
   bindFormSpacerHeight() {
@@ -158,7 +158,7 @@ const Donate2026 = {
       if (icon) icon.textContent = '+';
     });
 
-    this.scheduleFormSpacerHeightSync();
+    this.scheduleFormSpacerHeightSync?.();
   },
 
   openAccordionById(id) {
@@ -186,7 +186,7 @@ const Donate2026 = {
       item.scrollIntoView({ block: 'start' });
     });
 
-    this.scheduleFormSpacerHeightSync();
+    this.scheduleFormSpacerHeightSync?.();
   }
 };
 

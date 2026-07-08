@@ -150,15 +150,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-#cmp-DonationForms2026 iframe {
-  max-width: 500px;
-  min-width: 250px;
-  max-height: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 @utility donate-2025-stat {
   @apply font-bold text-[128px] leading-[167px];
 }
