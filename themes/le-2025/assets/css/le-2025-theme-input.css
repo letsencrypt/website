@@ -330,6 +330,9 @@
     @apply mx-auto my-5;
   }
 }
+@utility heading-link {
+  @apply text-inherit underline decoration-1 underline-offset-4 hover:text-link;
+}
 @utility autoanchor {
   /* Autoanchor styles */
   &a {

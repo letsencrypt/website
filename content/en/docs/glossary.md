@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2025-07-31
+lastmod: 2026-07-04
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
@@ -41,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE), [IdenTrust](#def-IdenTrust), Sectigo, and DigiCert are Certificate Authorities. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
+{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE) is a Certificate Authority. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAI" name="CA Issuers" %}} Part of the [AIA](#def-AIA) field containing information about the issuer of the [certificate](#def-leaf). It may be useful when the [web server](#def-web-server) didn't provide a trusted [certificate chain](#def-chain). {{% /def %}}
 
@@ -81,19 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} A [certificate](#def-leaf) where the applicant has only proven its control over the domain name (and not the identity of the requesting organization). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) or [EV](#def-EV)): [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA for [end-entity or leaf certificates](#def-leaf), but not yet for the entire [chain](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
-
-{{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
-
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities like [Let's Encrypt](#def-LE) can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A signature algorithm which uses [elliptic curve cryptography](#def-ECC). [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA. {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} A type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is an *FQDN*. {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} A [Certificate Authority](#def-CA). IdenTrust has [cross-signed](#def-cross-signing) [Let's Encrypt](#def-LE) [intermediate certificates](#def-intermediate): [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 

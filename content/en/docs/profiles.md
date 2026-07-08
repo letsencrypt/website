@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-05-28
+lastmod: 2026-07-08
 show_lastmod: false
 ---
 
@@ -85,6 +85,14 @@ We recommend this profile for those who fully trust their automation to renew th
 </div>
 <div class="boxed">
 
+## tlsclient
+
+As of July 8, 2026, this profile is no longer available.
+
+Certificates issued with the tlsclient profile contained the TLS Client Auth EKU.
+It was otherwise identical to the classic profile.
+</div>
+
 # Selecting a Profile
 
 The process for selecting a profile is described in [this Internet-Draft](https://datatracker.ietf.org/doc/draft-aaron-acme-profiles/), which we plan to work with the IETF ACME Working Group to turn into a full RFC. Not all ACME Clients have implemented this draft, so the client you use may not yet be able to select a profile.
@@ -131,7 +139,7 @@ TLS Certificates can have a ["Subject Key Identifier" extension](https://datatra
 
 ### Validity Period
 
-This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 398 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
+This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 200 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
 
 ### Revocation Information
 
