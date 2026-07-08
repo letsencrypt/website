@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-06-09
+lastmod: 2026-07-07
 show_lastmod: false
 ---
 
@@ -90,35 +90,10 @@ We recommend this profile for those who fully trust their automation to renew th
 
 ## tlsclient
 
-Certificates issued with the tlsclient profile contain the TLS Client Auth EKU.
-It is otherwise identical to the classic profile.
+As of July 8, 2026, this profile is no longer available.
 
-However, as [announced on our blog](/2025/05/14/ending-tls-client-authentication), this profile will soon cease to exist. It is no longer generally available. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
-
-This profile exists for the sole purpose of allowing Subscribers who need access
-to TLS Client Auth certificates to retain that EKU for slightly longer, to
-ease their transition into a TLS Server Auth-only world. If you do not
-specifically need the TLS Client Auth EKU, then you can and should safely ignore
-this profile.
-
-
-| Property                                                             | Value                                     |
-|----------------------------------------------------------------------|-------------------------------------------|
-| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 7 days                                    |
-| [Authorization Reuse Period](#authorization-reuse-period)            | 30 days                                   |
-| [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
-| [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
-| [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Yes                                       |
-| [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
-| [Validity Period](#validity-period)                                  | 90 days                                   |
-| [Revocation Information](#revocation-information)                    | CRL                                       |
-| [Max Names](#max-names)                                              | 100                                       |
-| [Identifier Types](#identifier-types)                                | DNS                                       |
-
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
-
-<sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
+Certificates issued with the tlsclient profile contained the TLS Client Auth EKU.
+It was otherwise identical to the classic profile.
 </div>
 
 # Selecting a Profile
