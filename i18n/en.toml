@@ -572,7 +572,10 @@ other = "Become a sponsor"
 other = "Nearly 100 companies and organizations support our work – from two-person businesses to nonprofits to Fortune 100 companies. Join our roster of generous sponsors that are helping to provide a more secure and privacy respecting Internet for billions of people."
 
 [donate_2026_become_a_sponsor_link_text]
-other = "Learn more here."
+other = "here"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Learn more {{ .sponsorshipLink }}."
 
 [donate_2026_donate_stock_title]
 other = "Donate stock"
@@ -613,20 +616,23 @@ other = "46-3344200"
 [donate_2026_donate_stock_outro_text]
 other = "Please contact us if you are transferring securities at {{ .donateEmailLink }} to ensure that we are able to credit you for your gift."
 
+[donate_2026_donate_stock_online_text]
+other = "You can also donate stock in a couple clicks via this page. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+
 [donate_2026_donate_cryptocurrency_title]
 other = "Donate cryptocurrency"
 
-[donate_2026_donate_cryptocurrency_link_text]
-other = "this page"
-
 [donate_2026_donate_cryptocurrency_text]
-other = "We are able to accept most cryptocurrency by visiting {{ .cryptoLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "We are able to accept most cryptocurrency by visiting this page. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_donor_advised_funds_title]
 other = "Donor Advised Funds (DAFs)"
 
 [donate_2026_donor_advised_funds_text]
 other = "Simply inform your DAF sponsor that you’d like to make a gift to:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "You can also donate through your DAF via DAFpay in a couple clicks via this page. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_org_name]
 other = "Internet Security Research Group"
@@ -650,7 +656,7 @@ other = "Planned/Legacy giving"
 other = "Please consider making ISRG a beneficiary of your will or retirement plan to help protect Internet users by lowering monetary, technological, and informational barriers to a more secure and privacy-respecting Internet."
 
 [donate_2026_planned_legacy_giving_notify_text]
-other = "Have you already included ISRG in your estate plans? Let us know at {{ .donateEmailLink }}."
+other = "Have you already included ISRG in your estate plans? {{ .legacyGivingFormLink }}."
 
 [donate_2026_planned_legacy_giving_confidentiality_text]
 other = "While documenting your planned gift is confidential and non-binding, it allows us to plan for the future and thank you for your generosity today."
@@ -668,10 +674,7 @@ other = "If you are 70½ or older, you can give directly from your US-based IRA 
 other = "Please seek the advice of your financial or legal advisor."
 
 [donate_2026_qualified_charitable_distribution_instructions_text]
-other = "To make your gift, ask your IRA administrator to send the distribution directly to ISRG. Give them our legal name and federal tax ID so they can identify us. Please also let us know about your gift at {{ .donateEmailLink }}. Many IRA administrators send distributions without identifying the donor, so a quick note from you lets us thank you and honor your wishes for the gift."
-
-[donate_2026_qualified_charitable_distribution_legal_name_heading]
-other = "Legal details"
+other = "To make your gift, ask your IRA administrator to send the distribution directly to ISRG. Give them our legal name and federal tax ID so they can identify us. Please also let us know about your gift. Many IRA administrators send distributions without identifying the donor, so a quick note from you lets us thank you and honor your wishes for the gift."
 
 [donate_2026_legal_name_label]
 other = "Legal name:"

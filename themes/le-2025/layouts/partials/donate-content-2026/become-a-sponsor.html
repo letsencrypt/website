@@ -1,6 +1,6 @@
 <div id="cmp-BecomeASponsor2026">
   <p>{{ T "donate_2026_become_a_sponsor_text" }}</p>
-  <a href="{{ site.Params.sponsorshipURL }}" class="text-link hover:text-link-hover active:text-link-active underline">
-    {{ T "donate_2026_become_a_sponsor_link_text" }} →
-  </a>
+  {{ $sponsorshipLinkText := T "donate_2026_become_a_sponsor_link_text" }}
+  {{ $sponsorshipLink := printf "<a href='%s' class='text-link hover:text-link-hover active:text-link-active underline'>%s</a>" site.Params.sponsorshipURL $sponsorshipLinkText }}
+  <p>{{ T "donate_2026_become_a_sponsor_link_sentence" (dict "sponsorshipLink" $sponsorshipLink) | safeHTML }}</p>
 </div>

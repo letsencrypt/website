@@ -2,19 +2,21 @@
 {{ partial "components/post-hero-image" (dict "page" . "image" "images/donate-hero.jpg" "title" (T "donate_2026_page_title")) }}
 <div id="page-Donate2026">
   <div class="container mx-auto py-8 prose-content">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
-      <div>{{ partial "funding-details-2026.html" . }}</div>
-      <div class="relative">
+    <div id="cmp-Donate2026TopGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+      <div id="cmp-Donate2026FundingDetails">{{ partial "funding-details-2026.html" . }}</div>
+      <div id="cmp-Donate2026FormColumn" class="relative">
         <div id="donate-form-anchor"></div>
-        <div class="md:absolute right-0 top-0 w-full z-50">{{ partial "donation-forms-2026.html" . }}</div>
+        <div id="cmp-Donate2026FormOverlay" class="md:absolute right-0 top-0 w-full z-50">
+          {{ partial "donation-forms-2026.html" . }}
+        </div>
       </div>
     </div>
   </div>
-  <div class="bg-le-blue">
+  <div id="cmp-Donate2026LowerSection" class="bg-le-blue">
     <div class="container mx-auto py-8 prose-content">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
-        <div>{{ partial "donate-accordion-2026.html" . }}</div>
-        <div class="relative">&nbsp;</div>
+        <div id="cmp-Donate2026WaysToGive">{{ partial "donate-accordion-2026.html" . }}</div>
+        <div id="cmp-Donate2026FormSpacer" class="relative" aria-hidden="true"></div>
       </div>
     </div>
   </div>

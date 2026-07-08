@@ -1,11 +1,8 @@
 <div id="cmp-QualifiedCharitableDistribution2026">
-  {{ $donateEmail := "donate@abetterinternet.org" }}
-  {{ $donateEmailLink := printf "<a href='mailto:%s'>%s</a>" $donateEmail $donateEmail }}
   <p>{{ T "donate_2026_qualified_charitable_distribution_text" }}</p>
-  <p>{{ T "donate_2026_qualified_charitable_distribution_advisor_text" }}</p>
-  <p>{{ T "donate_2026_qualified_charitable_distribution_instructions_text" (dict "donateEmailLink" $donateEmailLink) | safeHTML }}</p>
+  <p><em>{{ T "donate_2026_qualified_charitable_distribution_advisor_text" }}</em></p>
+  <p>{{ T "donate_2026_qualified_charitable_distribution_instructions_text" }}</p>
   <div>
-    <p class="font-bold text-le-blue mb-2">{{ T "donate_2026_qualified_charitable_distribution_legal_name_heading" }}</p>
     {{ partial "donate-content-2026/legal-details.html" . }}
   </div>
   <div>

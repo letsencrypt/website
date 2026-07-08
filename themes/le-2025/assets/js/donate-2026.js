@@ -5,6 +5,10 @@ const Donate2026 = {
 
     this.page = page;
     this.forms = page.querySelector('#cmp-DonationForms2026');
+    this.formOverlay = page.querySelector('#cmp-Donate2026FormOverlay');
+    this.formSpacer = page.querySelector('#cmp-Donate2026FormSpacer');
+    this.lowerContent = page.querySelector('#cmp-Donate2026WaysToGive');
+    this.desktopMediaQuery = window.matchMedia('(min-width: 768px)');
 
     window.addEventListener('hashchange', () => {
       this.syncAccordionToLocation();
@@ -14,12 +18,15 @@ const Donate2026 = {
       this.syncAccordionToLocation();
     });
 
+    this.bindFormSpacerHeight();
     this.bindDonationTabs();
     this.bindAccordionLinks();
 
     if (window.location.hash) {
       this.syncAccordionToLocation();
     }
+
+    this.syncFormSpacerHeight();
   },
 
   bindDonationTabs() {
@@ -54,6 +61,56 @@ const Donate2026 = {
       panel.classList.toggle('active', isActive);
       panel.hidden = !isActive;
     });
+
+    this.scheduleFormSpacerHeightSync();
+  },
+
+  bindFormSpacerHeight() {
+    if (!this.formOverlay || !this.formSpacer) return;
+
+    this.scheduleFormSpacerHeightSync = () => {
+      if (this.formSpacerSyncFrame) return;
+
+      this.formSpacerSyncFrame = requestAnimationFrame(() => {
+        this.formSpacerSyncFrame = null;
+        this.syncFormSpacerHeight();
+      });
+    };
+
+    window.addEventListener('resize', this.scheduleFormSpacerHeightSync);
+    window.addEventListener('load', this.scheduleFormSpacerHeightSync);
+
+    if (this.desktopMediaQuery?.addEventListener) {
+      this.desktopMediaQuery.addEventListener('change', this.scheduleFormSpacerHeightSync);
+    } else if (this.desktopMediaQuery?.addListener) {
+      this.desktopMediaQuery.addListener(this.scheduleFormSpacerHeightSync);
+    }
+
+    if (window.ResizeObserver) {
+      this.formSpacerObserver = new ResizeObserver(this.scheduleFormSpacerHeightSync);
+      this.formSpacerObserver.observe(this.formOverlay);
+
+      if (this.lowerContent) {
+        this.formSpacerObserver.observe(this.lowerContent);
+      }
+    }
+  },
+
+  syncFormSpacerHeight() {
+    if (!this.formOverlay || !this.formSpacer) return;
+
+    if (!this.desktopMediaQuery?.matches) {
+      this.formSpacer.style.minHeight = '';
+      return;
+    }
+
+    this.formSpacer.style.minHeight = '';
+
+    const formBottom = this.formOverlay.getBoundingClientRect().bottom;
+    const spacerTop = this.formSpacer.getBoundingClientRect().top;
+    const shortfall = Math.max(Math.ceil(formBottom - spacerTop), 0);
+
+    this.formSpacer.style.minHeight = shortfall ? `${shortfall}px` : '';
   },
 
   bindAccordionLinks() {
@@ -100,6 +157,8 @@ const Donate2026 = {
 
       if (icon) icon.textContent = '+';
     });
+
+    this.scheduleFormSpacerHeightSync();
   },
 
   openAccordionById(id) {
@@ -126,6 +185,8 @@ const Donate2026 = {
     requestAnimationFrame(() => {
       item.scrollIntoView({ block: 'start' });
     });
+
+    this.scheduleFormSpacerHeightSync();
   }
 };
 
