@@ -1,7 +1,7 @@
 ---
 title: אפשרויות שירותי מעקב
 slug: monitoring-options
-lastmod: 2025-12-09
+lastmod: 2025-12-22
 show_lastmod: 1
 ---
 
@@ -18,6 +18,7 @@ show_lastmod: 1
 - [Host-Tracker](https://www.host-tracker.com/)
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (סקריפטים באירוח עצמי)
 - [CertKit](https://www.certkit.io/)
+- [MyTLS Certificate Monitor](https://cm.mytls.com)
 
 נא לשים לב שכל השירותים האלה אינם קשורים ל־ISRG / Let's Encrypt.
 
