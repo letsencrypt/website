@@ -171,7 +171,7 @@ These intermediate CAs are no longer being used to issue Subscriber certificates
   * Key type: `ECDSA P-384`
   * Valid until: 2027-03-12
   * CA details: [crt.sh](https://crt.sh/?caid=295812), [issued certs](https://crt.sh/?Identity=%25&iCAID=295812)
-  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
+  * Certificate details (signed by ISRG Root X2): [crt.sh](https://crt.sh/?id=12396132899), [der](/certs/2024/e9.der), [pem](/certs/2024/e9.pem), [txt](/certs/2024/e9.txt)
   * Certificate details (cross-signed by ISRG Root X1): [crt.sh](https://crt.sh/?id=12396132894), [der](/certs/2024/e9-cross.der), [pem](/certs/2024/e9-cross.pem), [txt](/certs/2024/e9-cross.txt)
   * CRL hostname: `e9.c.lencr.org`
 * **Let's Encrypt R10**
