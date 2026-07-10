@@ -1,3 +1,9 @@
+#cmp-FundingDetails2026 .donate-2026-stat-text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
 #cmp-DonationForms2026 .btn {
   display: inline-block;
   background: #3a76f0;

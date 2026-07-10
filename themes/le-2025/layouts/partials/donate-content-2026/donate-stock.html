@@ -25,5 +25,6 @@
   {{ $donateEmail := "donate@abetterinternet.org" }}
   {{ $donateEmailLink := printf "<a href='mailto:%s'>%s</a>" $donateEmail $donateEmail }}
   <p>{{ T "donate_2026_donate_stock_outro_text" (dict "donateEmailLink" $donateEmailLink) | safeHTML }}</p>
-  <p>{{ T "donate_2026_donate_stock_online_text" }}</p>
+  {{ $givingBlockLink := "<a href='https://thegivingblock.com/donate/internet-security-research-group/'>this page</a>" }}
+  <p>{{ T "donate_2026_donate_stock_online_text" (dict "givingBlockLink" $givingBlockLink) | safeHTML }}</p>
 </div>

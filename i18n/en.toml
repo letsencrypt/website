@@ -554,7 +554,7 @@ other = "here"
 other = "Support ISRG, the nonprofit behind Let’s Encrypt, Prossimo and Divvi Up today!"
 
 [donate_2026_funding_details_stat_text]
-other = "Donate during our Summer Campaign and receive a limited time only t-shirt, “Preparing for a PQ World.”"
+other = "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer."
 
 [donate_2026_ways_to_give_heading]
 other = "More Ways to Give"
@@ -617,13 +617,13 @@ other = "46-3344200"
 other = "Please contact us if you are transferring securities at {{ .donateEmailLink }} to ensure that we are able to credit you for your gift."
 
 [donate_2026_donate_stock_online_text]
-other = "You can also donate stock in a couple clicks via this page. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "You can also donate stock in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_donate_cryptocurrency_title]
 other = "Donate cryptocurrency"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "We are able to accept most cryptocurrency by visiting this page. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "We are able to accept most cryptocurrency by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_donor_advised_funds_title]
 other = "Donor Advised Funds (DAFs)"
@@ -632,7 +632,7 @@ other = "Donor Advised Funds (DAFs)"
 other = "Simply inform your DAF sponsor that you’d like to make a gift to:"
 
 [donate_2026_donor_advised_funds_online_text]
-other = "You can also donate through your DAF via DAFpay in a couple clicks via this page. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "You can also donate through your DAF via DAFpay in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_org_name]
 other = "Internet Security Research Group"
