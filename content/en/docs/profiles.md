@@ -115,7 +115,7 @@ This is how long an ACME client has to complete a domain control validation chal
 
 ### Authorization Reuse Period
 
-This is how long an already-validated Authorization can be reused by new Orders containing the same identifier. The clock starts when a challenge is successfully fulfilled, and is represented by the [`expires` timestamp](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4) in the valid Authorization object. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions) limit this to 200 days, falling to 100 days for certificates issued from March 15, 2027, and 10 days from March 15, 2029.
+This is how long an already-validated Authorization can be reused by new Orders containing the same identifier. The clock starts when a challenge is successfully fulfilled, and is represented by the [`expires` timestamp](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4) in the valid Authorization object. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions) require this period not to exceed 200 days; the limit falls to 100 days for certificates issued from March 15, 2027, and to 10 days from March 15, 2029.
 
 ### Order Lifetime
 
@@ -139,7 +139,7 @@ TLS Certificates can have a ["Subject Key Identifier" extension](https://datatra
 
 ### Validity Period
 
-This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) limit this to 200 days, falling to 100 days for certificates issued from March 15, 2027, and 47 days from March 15, 2029.
+This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) require this period not to exceed 200 days; the limit falls to 100 days for certificates issued from March 15, 2027, and to 47 days from March 15, 2029.
 
 ### Revocation Information
 
