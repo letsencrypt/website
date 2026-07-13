@@ -551,7 +551,7 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 other = "here"
 
 [donate_2026_page_title]
-other = "Support ISRG, the nonprofit behind Let’s Encrypt, Prossimo and Divvi Up today!"
+other = "Support Our Work!"
 
 [donate_2026_funding_details_stat_text]
 other = "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer."
