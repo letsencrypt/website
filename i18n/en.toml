@@ -556,6 +556,9 @@ other = "Support ISRG, the nonprofit behind Let’s Encrypt, Prossimo and Divvi 
 [donate_2026_funding_details_stat_text]
 other = "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer."
 
+[donate_2026_shirt_image_alt]
+other = "Limited-edition ISRG Root X1 t-shirt"
+
 [donate_2026_ways_to_give_heading]
 other = "More Ways to Give"
 
