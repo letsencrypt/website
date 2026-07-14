@@ -20,15 +20,11 @@ Referrer-Policy = "no-referrer"
 Permissions-Policy = """
     geolocation=(),
     midi=(),
-    notifications=(),
-    push=(),
     sync-xhr=(),
     microphone=(),
     camera=(),
     magnetometer=(),
     gyroscope=(),
-    speaker=(self),
-    vibrate=(),
     fullscreen=(self),
     interest-cohort=()
 """
@@ -38,14 +34,28 @@ Permissions-Policy = """
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
-    font-src 'self';
-    style-src 'self';
+    font-src 'self'
+        https://doublethedonation.com
+        https://rsms.me
+        http://rsms.me
+    ;
+    style-src 'self' 'unsafe-inline'
+        https://donorbox.org
+        https://doublethedonation.com
+        https://rsms.me
+        http://rsms.me
+    ;
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
         https://www.googletagmanager.com
+        https://cdn.jsdelivr.net
+        http://cdn.jsdelivr.net
         https://googleads.g.doubleclick.net
         https://donorbox.org
+        https://doublethedonation.com
+        https://js.stripe.com
+        https://jspm.dev
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
@@ -55,6 +65,8 @@ Content-Security-Policy = """
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
+        https://donorbox.org
+        https://doublethedonation.com
         https://*.paypal.com
         https://www.paypalobjects.com
         https://ak2s.abmr.net
@@ -77,6 +89,8 @@ Content-Security-Policy = """
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/
+        https://donorbox.org
+        https://doublethedonation.com
         https://letsencrypt-merch.myshopify.com
         https://monorail-edge.shopifysvc.com
         https://www.paypal.com
