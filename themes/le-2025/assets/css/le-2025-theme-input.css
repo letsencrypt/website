@@ -104,6 +104,52 @@
     @apply md:ml-auto w-full;
   }
 }
+
+#cmp-DonationForms2026 {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cmp-DonationForms2026 .donate-2026-tabs {
+  display: inline-flex;
+  background: #f6f7f9;
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 2rem;
+}
+
+#cmp-DonationForms2026 .donate-2026-tab {
+  border: 0;
+  background: transparent;
+  color: #6b6f76;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#cmp-DonationForms2026 .donate-2026-tab[aria-selected='true'] {
+  background: #ffffff;
+  color: #1b1b1b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-panel {
+  display: none;
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-panel.active {
+  display: block;
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-frame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @utility donate-2025-stat {
   @apply font-bold text-[128px] leading-[167px];
 }
