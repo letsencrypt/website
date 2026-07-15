@@ -1,7 +1,7 @@
 ---
 title: 可供选择的证书监测服务
 slug: monitoring-options
-lastmod: 2026-07-07
+lastmod: 2026-07-13
 show_lastmod: 1
 ---
 
@@ -19,6 +19,7 @@ Let’s Encrypt 较为推荐的服务是 [Red Sift Certificates Lite](https://re
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring)（可自行部署脚本）
 - [CertKit](https://www.certkit.io/)
 - [CertObserver](https://certobserver.com/)
+- [Chill SSL](https://www.chillssl.com/)
 
 请注意，以上服务均由第三方提供，与 ISRG / Let's Encrypt 无关。
 

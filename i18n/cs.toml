@@ -537,3 +537,171 @@ other = "Jsme schopni přijímat dary ve většině kryptoměn {{ .cryptoLink }}
 
 [donate_page_crypto_link_text]
 other = "zde"
+
+[donate_2026_page_title]
+other = "Podpořte naši práci!"
+
+[donate_2026_funding_details_stat_text]
+other = "Když letos v létě darujete 75 USD nebo více, získáte limitované tričko ISRG Root X1."
+
+[donate_2026_shirt_image_alt]
+other = "Limitované tričko ISRG Root X1"
+
+[donate_2026_ways_to_give_heading]
+other = "Další možnosti darování"
+
+[donate_2026_employer_matching_gifts_title]
+other = "Dary dorovnávané zaměstnavatelem"
+
+[donate_2026_employer_matching_gifts_text]
+other = "Mnoho organizací poskytuje zaměstnancům stejné dary neziskovým organizacím. Zjistěte, zda vaše organizace nemá program matchingu, a zdvojnásobte svůj vliv!"
+
+[donate_2026_become_a_sponsor_title]
+other = "Staňte se sponzorem"
+
+[donate_2026_become_a_sponsor_text]
+other = "Téměř 100 firem a organizací podporuje naši práci – od dvoučlenných firem přes neziskové organizace až po společnosti z žebříčku Fortune 100. Přidejte se k našim štědrým sponzorům, kteří pomáhají zajistit bezpečnější internet respektující soukromí pro miliardy lidí."
+
+[donate_2026_become_a_sponsor_link_text]
+other = "zde"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Více se dozvíte {{ .sponsorshipLink }}."
+
+[donate_2026_donate_stock_title]
+other = "Darovat akcie"
+
+[donate_2026_donate_stock_intro_text]
+other = "Zhodnocené cenné papíry nebo podíly v podílových fondech, které vlastníte déle než jeden rok, mohou být vynikajícím charitativním darem."
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "Brokerská firma:"
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "Název účtu:"
+
+[donate_2026_donate_stock_account_name_value]
+other = "Internet Security Research Group"
+
+[donate_2026_donate_stock_account_number]
+other = "Číslo účtu:"
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC #:"
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "Tax ID #:"
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "Při převodu cenných papírů nás prosím kontaktujte na {{ .donateEmailLink }}, abychom mohli váš dar správně zaevidovat."
+
+[donate_2026_donate_stock_online_text]
+other = "Akcie můžete darovat také několika kliknutími přes {{ .givingBlockLink }}. U těchto transakcí nám vznikají poplatky za zpracování, proto prosím zvažte jejich pokrytí, aby měl váš dar co největší dopad."
+
+[donate_2026_donate_cryptocurrency_title]
+other = "Darovat kryptoměnu"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "Většinu kryptoměn můžeme přijímat prostřednictvím {{ .givingBlockLink }}. U těchto transakcí nám vznikají poplatky za zpracování, proto prosím zvažte, zda je zaplatíte, aby měl váš dar co největší dopad."
+
+[donate_2026_donor_advised_funds_title]
+other = "Fondy spravované podle pokynů dárce (DAF)"
+
+[donate_2026_donor_advised_funds_text]
+other = "Jednoduše informujte správce svého fondu DAF, že chcete darovat organizaci:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "Prostřednictvím svého fondu DAF můžete darovat také několika kliknutími přes DAFpay pomocí {{ .givingBlockLink }}. Tímto způsobem nám vznikají poplatky za zpracování, proto prosím zvažte, zda je zaplatíte, aby měl váš dar co největší dopad."
+
+[donate_2026_org_name]
+other = "Internet Security Research Group"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "Plánované dary a odkazy ze závěti"
+
+[donate_2026_planned_legacy_giving_text]
+other = "Zvažte prosím, zda ISRG neuvedete jako příjemce odkazu ze závěti nebo penzijního plánu. Pomůžete tak chránit uživatele internetu snižováním finančních, technologických a informačních překážek bránících bezpečnějšímu internetu, který respektuje soukromí."
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "Už jste ISRG zahrnuli do svého dědického plánování? {{ .legacyGivingFormLink }}."
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "Informace o plánovaném daru zůstávají důvěrné a nejsou právně závazné. Umožní nám však plánovat budoucnost a poděkovat vám za vaši štědrost již dnes."
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "Poraďte se prosím se svým finančním nebo právním poradcem."
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "Kvalifikovaná charitativní distribuce"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "Pokud je vám 70½ nebo více, můžete darovat přímo ze svého účtu IRA vedeného v USA organizaci ISRG, aniž byste z převedené částky platili daň z příjmu. Tato možnost se často označuje jako charitativní převod z IRA nebo kvalifikovaná charitativní distribuce (QCD). Darovat můžete až do ročního maxima stanoveného úřadem IRS, které se každý rok upravuje. Aktuální částku si proto ověřte u svého poradce."
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "Poraďte se prosím se svým finančním nebo právním poradcem."
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "Chcete-li dar uskutečnit, požádejte správce svého účtu IRA, aby částku poslal přímo organizaci ISRG. Sdělte mu náš právní název a federální daňové identifikační číslo, aby nás mohl identifikovat. Dejte nám prosím o svém daru také vědět. Mnozí správci účtů IRA posílají dary bez identifikace dárce, takže krátká zpráva od vás nám umožní poděkovat vám a respektovat vaše přání ohledně daru."
+
+[donate_2026_legal_name_label]
+other = "Právní název:"
+
+[donate_2026_legal_address_label]
+other = "Adresa:"
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "Poštovní adresa"
+
+[donate_2026_mailing_address_intro]
+other = "(pouze ke zpracování šeků)"
+
+[donate_2026_mailing_address_attention]
+other = "Internet Security Research Group"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "Darovat šekem"
+
+[donate_2026_donate_by_check_text]
+other = "Osobní šek můžete vystavit na „ISRG“ a zaslat ho na níže uvedenou adresu:"
