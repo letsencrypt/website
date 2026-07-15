@@ -1,7 +1,7 @@
 ---
 title: Optionen zur Überwachung
 slug: monitoring-options
-lastmod: 2026-07-07
+lastmod: 2026-07-13
 show_lastmod: 1
 ---
 
@@ -19,6 +19,7 @@ Es gibt eine Reihe von Überwachungsoptionen, darunter:
 - [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (selbstgehostete Skripte)
 - [CertKit](https://www.certkit.io/)
 - [CertObserver](https://certobserver.com/)
+- [Chill SSL](https://www.chillssl.com/)
 
 Bitte beachten Sie, dass alle diese Dienste in keiner Verbindung zur ISRG / Let's Encrypt stehen.
 
