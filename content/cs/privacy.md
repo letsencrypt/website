@@ -1,7 +1,7 @@
 ---
-title: Zásady ochrany osobních údajů
+title: Zásady ochrany osobních údajů společnosti Let's Encrypt
 slug: privacy
-lastmod: 2025-01-15
+lastmod: 2026-07-06
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -30,7 +30,7 @@ Možná bude nutné stáhnout klientský software z úložiště, které provozu
 
 ## Návštěvník
 
-Pokud jako návštěvník procházíte webové stránky ISRG, máte možnost přispět. Dary jsou zpracovávány našimi důvěryhodnými platebními partnery, jako jsou DonorBox, Stripe, Shopify a PayPal, v závislosti na zvolené platební metodě, a podle potřeby jsou ukládány do databáze Salesforce a Sage Intacct společnosti ISRG. Při darování shromažďujeme vaše jméno a e-mailovou adresu, a pokud nám ji poskytnete, také vaši poštovní adresu. Jakmile nám přispějete, použijeme vaše údaje pro účely našeho oprávněného záměru zpracovávat a spravovat váš příspěvek, včetně připomínek a obnovení sbírky. Vaše interakce s [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Printful](https://www.printful.com/policies/privacy), [Formstack](https://www.formstack.com/legal) a [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) řídí jejich příslušnými zásadami ochrany osobních údajů. Neshromažďujeme ani neuchováváme žádné informace o kreditních kartách nebo bankovních údajích spojených s dary.
+Pokud jako návštěvník procházíte webové stránky ISRG, máte možnost přispět. Dary jsou zpracovávány našimi důvěryhodnými platebními partnery, jako jsou DonorBox, The Giving Block, Stripe, Shopify a PayPal, v závislosti na zvolené platební metodě, a podle potřeby jsou ukládány do databáze Salesforce a Sage Intacct společnosti ISRG. Při darování shromažďujeme vaše jméno, poštovní adresu a e-mailovou adresu. Podle toho, co darujete, můžeme také shromažďovat informace o vašich preferencích ohledně zboží (například velikost trička), abychom vám mohli poskytnout příslušné výhody. Jakmile provedete dar, použijeme vaše údaje v rámci našeho oprávněného zájmu ke zpracování a správě vašeho příspěvku, včetně zasílání upomínek a žádostí o obnovení daru či zasílání dárku na poděkování. Vaši poštovní adresu můžeme rovněž použít k identifikaci a sloučení duplicitních záznamů o dárcích, abychom zajistili přesnost naší databáze dárců. Vaše interakce se službami [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Monday Merch](https://www.mondaymerch.com/us/legal/privacy-policy?utm_source=google&utm_medium=cpc&utm_content=617104787162&utm_term=merch+monday&utm_campaign=16492171655&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD2DPUD-_BNhjV74wtBSJ2fKpvd10ZW6UT_JkqRkL0IRmY3G9_I6ljMaAovwEALw_wcB&gbraid=0AAAAAoJDcr6lwITSXqZ0UkPgmXyJpGp8e), [Formstack](https://www.formstack.com/legal), [BoldSign](https://boldsign.com/privacy-policy/) a [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) se řídí svými příslušnými zásadami ochrany osobních údajů. Neshromažďujeme ani neuchováváme žádné informace o kreditních kartách nebo bankovních údajích spojených s dary.
 
 Můžete poskytnout svou e-mailovou adresu pro zasílání sdělení týkajících se projektů ISRG prostřednictvím registrace na webu ISRG a prostřednictvím dalších marketingových materiálů. Veškerá komunikace doručená prostřednictvím Salesforce a vaše interakce se [Salesforce](https://www.salesforce.com/company/privacy/) se řídí jejich zásadami ochrany osobních údajů. S vaším souhlasem můžeme příležitostně použít vaši e-mailovou adresu k zasílání personalizovaných sdělení týkajících se ISRG a jejích projektů. Tento souhlas můžete odvolat podle instrukcí v patičkách našich e-mailů nebo nám napíšete na adresu press@abetterinternet.org.
 
@@ -81,7 +81,7 @@ Osobní údaje zpracováváme způsobem popsaným v těchto zásadách. Účel a
 
 **Právní základ:** Oprávněné zájmy
 
-**Další informace:** Informace shromažďujeme a zpracováváme za účelem zpracování a podpory darů.
+**Další informace:** Shromažďujeme a zpracováváme údaje za účelem zpracování a podpory darů, poskytování výhod dárcům a zajištění přesnosti našich záznamů o dárcích.
 
 **Účel:** Zákonné povinnosti a polehčující okolnosti
 
