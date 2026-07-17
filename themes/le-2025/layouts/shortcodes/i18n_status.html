@@ -37,7 +37,7 @@
         <td>
           <a href="{{ .Permalink }}">
             {{ if $lastmod }}
-              {{ .Lastmod.Format "January 2, 2006" }}
+              {{ .Lastmod | time.Format ":date_long" }}
             {{ else }}
               {{ errorf "Missing lastmod in %q" .RelPermalink }}
             {{ end }}
@@ -66,10 +66,10 @@
                     {{ if not .Lastmod }}
                       {{ errorf "Missing lastmod in %q" .RelPermalink }}
                     {{ else if ne  .Lastmod $lastmod }}
-                        <span class="text-[orange]">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                        <span class="text-[orange]">{{ .Lastmod | time.Format ":date_long" }}</span>
                     {{ else }}
                       {{ $scratch_up_to_date.Set .Lang ( add 1 ( $scratch_up_to_date.Get .Lang ) ) }}
-                        <span class="text-[grey]">{{ .Lastmod.Format "January 2, 2006" }}</span>
+                        <span class="text-[grey]">{{ .Lastmod | time.Format ":date_long" }}</span>
                     {{ end }}
                   {{ end }}
                 </a>

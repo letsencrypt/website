@@ -407,7 +407,13 @@ other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro ví
 other = "Nezisková organizace poskytující bezplatné TLS certifikáty pro více než"
 
 [home_hero_certificate_count]
-other = "700m"
+other = "700"
+
+[abbreviation_million]
+other = "m"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "webových stránek"
