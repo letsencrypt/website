@@ -12,7 +12,7 @@
     {{ .Inner }}
     <li class="list-style-none">
         <ul>
-        {{ range $.Site.Data.transparency.transparencyLogs }}
+        {{ range hugo.Data.transparency.transparencyLogs }}
             {{ if and .role (eq $category .role) }}
             <li>
             <strong>{{ i18n "certificate_transparency_name" }}{{ .Site.Params.beforeColon | safeHTML }}: {{ .log | humanize }} {{ .shard }}</strong><br>

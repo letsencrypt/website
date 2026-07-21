@@ -1,7 +1,7 @@
 title = "Let's Encrypt"
 contentDir = "content/da"
-languageName = "Dansk"
-languageCode = "da"
+label = "Dansk"
+locale = "da"
 weight = 175
 
 [params]

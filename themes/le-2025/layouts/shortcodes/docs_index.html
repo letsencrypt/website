@@ -70,5 +70,5 @@
         {{- end }}
     {{- end }}
 {{- end }}
-<a href="{{ $page.RelPermalink }}" hreflang="{{ $page.Language.Params.languageCode }}">{{$tmp.Get "title"}}</a>
+<a href="{{ $page.RelPermalink }}" hreflang="{{ $page.Language.Locale }}">{{$tmp.Get "title"}}</a>
 {{- end }}
