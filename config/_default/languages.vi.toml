@@ -1,7 +1,7 @@
 title = "Let's Encrypt"
 contentDir = "content/vi"
-languageName = "Tiếng Việt"
-languageCode = "vi"
+label = "Tiếng Việt"
+locale = "vi"
 weight = 850
 
 [params]
