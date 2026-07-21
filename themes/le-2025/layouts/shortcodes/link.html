@@ -39,7 +39,7 @@
 	{{- if not $page }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
 	{{- else if not $page.RelPermalink }}{{ errorf "Missing page %q in %q" $pagename .Position -}}
 	{{- else -}}
-	<a href="{{ $page.RelPermalink }}{{ if $anchor }}#{{ $anchor }}{{ end }}" hreflang="{{ $page.Language.Params.languageCode }}">
+	<a href="{{ $page.RelPermalink }}{{ if $anchor }}#{{ $anchor }}{{ end }}" hreflang="{{ $page.Language.Locale }}">
 		{{- if ($scratch.Get "name") -}}
 			{{- ($scratch.Get "name") | markdownify -}}
 		{{- else -}}
