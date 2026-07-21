@@ -26,7 +26,7 @@ jobs:
         uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
           # same as netlify.toml
-          hugo-version: '0.148.2'
+          hugo-version: '0.162.0'
           extended: true
       - name: Set up Python 3.13
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0

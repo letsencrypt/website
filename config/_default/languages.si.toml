@@ -1,7 +1,7 @@
 title = "ලෙට්'ස් එන්ක්‍රිප්ට්"
 contentDir = "content/si"
-languageName = "සිංහල"
-languageCode = "si"
+label = "සිංහල"
+locale = "si"
 weight = 590
 
 [params]
