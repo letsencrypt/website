@@ -151,7 +151,7 @@ other = "Début de la période"
 [certificate_transparency_window_end]
 other = "Fin de la période"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Déclaration de pratiques de certification"
 
 [overview]

@@ -151,7 +151,7 @@ other = "Início da Janela"
 [certificate_transparency_window_end]
 other = "Fim da Janela"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Declaração de Práticas de Certificação"
 
 [overview]

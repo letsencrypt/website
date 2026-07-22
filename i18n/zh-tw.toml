@@ -148,7 +148,7 @@ other = "開始視窗"
 [certificate_transparency_window_end]
 other = "結束視窗"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "證書實踐宣告"
 
 [overview]
