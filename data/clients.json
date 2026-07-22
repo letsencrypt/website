@@ -237,13 +237,13 @@
 		},
 		{
 			"name": "docker-nginx",
-			"comment": "Chinese language",
+			"comments": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/nginx",
 			"category": "Docker"
 		},
 		{
 			"name": "docker-openresty",
-			"comment": "Chinese language",
+			"comments": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/openresty",
 			"category": "Docker"
 		},
