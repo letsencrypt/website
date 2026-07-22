@@ -1,7 +1,7 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2026-03-16
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
@@ -9,16 +9,16 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 # Upcoming Features
 
-## Removal of TLS Client Authentication EKU
-
-On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. As a temporary stop-gap for clients that need more time to migrate, we have a [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile available. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
-
 ## Decreasing Certificate Lifetimes to 45 Days
 
 To comply with CA/Browser Forum Baseline Requirement changes, we are
 [decreasing certificate lifetimes to 45 days](https://letsencrypt.org/2025/12/02/from-90-to-45). We will first decrease to 64 days on February 10, 2027, and then to 45 days on February 16, 2028. We are also decreasing the authorization reuse period to 10 days, then 7 hours.
 
 # Completed Features
+
+## Removal of TLS Client Authentication EKU
+
+On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. On July 8, 2026, we retired the temporary [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile, completing the removal. Let's Encrypt no longer issues certificates containing the TLS Client Authentication EKU.
 
 ## Shutdown of Expiration Notification Emails
 
