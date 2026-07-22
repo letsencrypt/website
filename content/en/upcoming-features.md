@@ -18,7 +18,7 @@ To comply with CA/Browser Forum Baseline Requirement changes, we are
 
 ## Removal of TLS Client Authentication EKU
 
-On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. On July 8, 2026, we retired the temporary [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile, completing the removal. Let's Encrypt no longer issues certificates containing the TLS Client Authentication EKU.
+On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. On July 8, 2026, we retired the temporary [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile, completing the removal. We no longer issue certificates containing the TLS Client Authentication EKU.
 
 ## Shutdown of Expiration Notification Emails
 
