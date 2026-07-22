@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test:htmllint": "htmlhint 'content/**/*.html'",
-    "test:eslint": "eslint static/js --ext .js",
+    "test:eslint": "eslint static/js src/js --ext .js",
     "test:inline-styles": "bash scripts/check-inline-styles.sh",
     "test": "npm run test:htmllint && npm run test:eslint && npm run test:inline-styles",
     "test:html5validate": "html5validator --root public --blacklist documents a-warm-welcome-to-asn1-and-der donate donate-2024 donate fontawesome-free-6.5.2-web --format text --ignore 'aspect-ratio'",
