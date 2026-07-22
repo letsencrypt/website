@@ -24,13 +24,13 @@ Permissions-Policy = """
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
-    style-src 'self' 'unsafe-inline'
-        https://donorbox.org
+    font-src 'self'
         https://doublethedonation.com
         https://rsms.me
         http://rsms.me
     ;
-    font-src 'self'
+    style-src 'self' 'unsafe-inline'
+        https://donorbox.org
         https://doublethedonation.com
         https://rsms.me
         http://rsms.me
@@ -45,18 +45,19 @@ Content-Security-Policy = """
         https://donorbox.org
         https://doublethedonation.com
         https://js.stripe.com
-        https://js.stripe.com/v3/
         https://jspm.dev
+        https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
+        https://www.paypalobjects.com
         https://widget.thegivingblock.com
-        https://js.dev.shift4.com
+        https://*.shift4.com
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
         https://donorbox.org
         https://doublethedonation.com
-        https://www.paypal.com
+        https://*.paypal.com
         https://www.paypalobjects.com
         https://ak2s.abmr.net
         https://ak1s.abmr.net
@@ -73,6 +74,7 @@ Content-Security-Policy = """
         https://js.stripe.com/v2/
         https://www.paypal.com
         https://outreach.abetterinternet.org
+        https://app.netlify.com
         https://widget.thegivingblock.com/
     ;
     connect-src 'self'
@@ -80,8 +82,9 @@ Content-Security-Policy = """
         https://donorbox.org
         https://doublethedonation.com
         https://letsencrypt-merch.myshopify.com
-        https://www.google-analytics.com
+        https://monorail-edge.shopifysvc.com
         https://www.paypal.com
+        https://www.google-analytics.com
     ;
     frame-ancestors 'none';
 """
