@@ -11,11 +11,11 @@ Since our initial launch in 2015, Let's Encrypt has offered certificates with 90
 
 Short-lived certificates with 6-day lifetimes are optionally available to all of our subscribers.
 
-See our [certificate profiles documentation](https://letsencrypt.org/docs/profiles/) for more information.
+See our [certificate profiles documentation](/docs/profiles/) for more information.
 
 ## Future Plans
 
-[Industry rules](https://cabforum.org/working-groups/server/baseline-requirements/documents/) will limit certificate lifetimes to a maximum of 47 days starting on March 15, 2029. As such, we will be [reducing the maximum lifetime of our certificates to 45 days by February 2028](https://letsencrypt.org/2025/12/02/from-90-to-45).
+[Industry rules](https://cabforum.org/working-groups/server/baseline-requirements/documents/) will limit certificate lifetimes to a maximum of 47 days starting on March 15, 2029. As such, we will be [reducing the maximum lifetime of our certificates to 45 days by February 2028](/2025/12/02/from-90-to-45).
 
 ## Why shorter lifetimes?
 
