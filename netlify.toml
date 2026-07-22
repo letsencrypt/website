@@ -132,6 +132,23 @@ Content-Disposition = "inline"
 
 # https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 
+# Redirect the letsencrypt.com domain (and its www subdomain) to the canonical
+# letsencrypt.org site. These must come first and be forced so they take
+# precedence over the path-based rules below; otherwise those rules serve some
+# .com pages with a 200 instead of redirecting.
+# https://github.com/letsencrypt/website/issues/2266
+[[redirects]]
+from = "https://letsencrypt.com/*"
+to = "https://letsencrypt.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.letsencrypt.com/*"
+to = "https://letsencrypt.org/:splat"
+status = 301
+force = true
+
 [[redirects]]
 from = "/jobs"
 to = "https://www.abetterinternet.org/careers"
@@ -321,18 +338,6 @@ force = true
 [[redirects]]
 from = "https://www.lencr.org/*"
 to = "https://letsencrypt.org/docs/lencr.org"
-status = 302
-force = true
-
-[[redirects]]
-from = "https://letsencrypt.com/*"
-to = "https://letsencrypt.org/"
-status = 302
-force = true
-
-[[redirects]]
-from = "https://www.letsencrypt.com/*"
-to = "https://letsencrypt.org/"
 status = 302
 force = true
 
