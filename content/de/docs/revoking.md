@@ -1,15 +1,14 @@
 ---
 title: Widerruf von Zertifikaten
 slug: revoking
-date: 2017-06-08
-lastmod: 2021-10-15
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 
 Wenn ein Zertifikat nicht mehr sicher zu verwenden ist, sollten Sie es widerrufen. Dafür kann es verschiedene Gründe geben. So könnten Sie beispielsweise den privaten Schlüssel versehentlich auf einer öffentlichen Website weitergeben; Hacker könnten den privaten Schlüssel von Ihren Servern kopieren; oder Hacker könnten vorübergehend die Kontrolle über Ihre Server oder Ihre DNS-Konfiguration übernehmen und diese zur Validierung und Ausstellung eines Zertifikats verwenden, für das sie den privaten Schlüssel besitzen.
 
-Wenn Sie ein Let's Encrypt-Zertifikat widerrufen, veröffentlicht Let's Encrypt diese Widerrufsinformationen über das [Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), und einige Browser überprüfen OCSP, um festzustellen, ob sie einem Zertifikat vertrauen sollten. Beachten Sie, dass OCSP [einige grundsätzliche Probleme hat](https://www.imperialviolet.org/2011/03/18/revocation.html), so dass nicht alle Browser diese Prüfung durchführen. Dennoch ist der Widerruf von Zertifikaten, die kompromittierten privaten Schlüsseln zuzuordnen sind, eine wichtige Praxis und wird in der [Teilnehmervereinbarung](/repository) von Let's Encrypt gefordert.
+Wenn Sie ein Let's Encrypt-Zertifikat widerrufen, kann Let's Encrypt Widerrufsinformationen in [Zertifikatssperrlisten (CRLs)](https://de.wikipedia.org/wiki/Zertifikatsperrliste) veröffentlichen, und einige Browser überprüfen CRLs, um festzustellen, ob sie einem Zertifikat vertrauen können. Das Widerrufen von Zertifikaten, die zu kompromittierten privaten Schlüsseln gehören, ist eine wichtige Vorgehensweise und wird von der [ Let's Encrypt Abonnentenvereinbarung](/repository) verlangt.
 
 Um ein Zertifikat mit Let's Encrypt zu widerrufen, verwenden Sie die [ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), höchstwahrscheinlich über einen ACME Client wie [Certbot](https://certbot.eff.org/). Sie müssen Let's Encrypt gegenüber nachweisen, dass Sie berechtigt sind, das Zertifikat zu widerrufen. Es gibt drei Möglichkeiten, dies zu tun: über das Konto, das das Zertifikat ausgestellt hat, über ein anderes autorisiertes Konto oder über den privaten Schlüssel des Zertifikats.
 
@@ -50,7 +49,7 @@ Wenn Sie die Ausstellung eines Zertifikats vermeiden möchten, können Sie einen
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-Und folgen Sie den Anweisungen. Wenn Sie lieber über HTTP als über DNS validieren möchten, ersetzen Sie das Flag `--preferred-challenges` durch `--preferred-challenges=http`.
+Folgen Sie den Anweisungen und überspringen Sie den Validierungsschritt für `nonexistent.${YOUR_DOMAIN}`. Wenn Sie lieber über HTTP als über DNS validieren möchten, ersetzen Sie das Flag `--preferred-challenges` durch `--preferred-challenges=http`. Beachten Sie, dass die DNS-Version dieser Schritte in vielen Fällen nicht funktioniert, wenn Sie `--manual` durch ein Certbot-Plugin ersetzen, um DNS-01-Herausforderungen automatisch zu erfüllen, da Certbot gerne einen TXT-Eintrag unter `_acme-challenge.nonexistent.${YOUR_DOMAIN}` platziert, sofern es dazu in der Lage ist.
 
 Sobald Sie die Kontrolle über alle Domänennamen in dem zu widerrufenden Zertifikat validiert haben, können Sie das Zertifikat von [crt.sh](https://crt.sh/) herunterladen und das Zertifikat widerrufen, als ob Sie es ausgestellt hätten:
 

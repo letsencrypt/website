@@ -4,9 +4,13 @@ date: 2025-07-01T00:00:00Z
 slug: issuing-our-first-ip-address-certificate
 title: "We've Issued Our First IP Address Certificate"
 excerpt: "Let's Encrypt now has the ability to issue certificates for both domain names and IP addresses."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
+
+> **Update: January 15, 2026**
+>
+> Six-day and IP address certificates are now generally available. See [6-day and IP Address Certificates are Generally Available](/2026/01/15/6day-and-ip-general-availability) for details.
 
 Since Let's Encrypt started issuing certificates in 2015, people have repeatedly requested the ability to get certificates for IP addresses, an option that only a few certificate authorities have offered. Until now, they've had to look elsewhere, because we haven't provided that feature.
 

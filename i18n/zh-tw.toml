@@ -148,7 +148,7 @@ other = "開始視窗"
 [certificate_transparency_window_end]
 other = "結束視窗"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "證書實踐宣告"
 
 [overview]
@@ -178,8 +178,14 @@ other = "PayPal 捐款"
 [paypal_donate_title]
 other = "使用PayPal捐款"
 
-[not_found]
-other = "這個頁面不存在，請檢查網址。"
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "每年 ${{ .nb }} （美元）"
@@ -370,6 +376,12 @@ other = "More recently updated page available in English"
 [post_hero_breadcrumb_blog]
 other = "部落格"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "幫助 Let's Encrypt"
 
@@ -460,11 +472,8 @@ other = "Other Ways to Give"
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "WHY SUPPORT?"

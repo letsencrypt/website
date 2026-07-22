@@ -39,6 +39,9 @@
   }
 }
 
+.support-footer {
+  @apply bg-gray-200 p-6 -mx-4 md:mx-0;
+}
 @utility btn {
   /* Button styles */
   @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-150 ease-in-out;
@@ -101,6 +104,52 @@
     @apply md:ml-auto w-full;
   }
 }
+
+#cmp-DonationForms2026 {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cmp-DonationForms2026 .donate-2026-tabs {
+  display: inline-flex;
+  background: #f6f7f9;
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 2rem;
+}
+
+#cmp-DonationForms2026 .donate-2026-tab {
+  border: 0;
+  background: transparent;
+  color: #6b6f76;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#cmp-DonationForms2026 .donate-2026-tab[aria-selected='true'] {
+  background: #ffffff;
+  color: #1b1b1b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-panel {
+  display: none;
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-panel.active {
+  display: block;
+}
+
+#cmp-DonationForms2026 .donate-2026-embed-frame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @utility donate-2025-stat {
   @apply font-bold text-[128px] leading-[167px];
 }
@@ -120,6 +169,24 @@
 
   & td {
     @apply border-le-blue;
+  }
+
+  & tr:last-child td {
+    @apply border-b-0;
+  }
+}
+@utility sites-tables {
+  @apply flex justify-center my-[30px];
+}
+@utility sites-table {
+  @apply my-0;
+
+  & td:first-child {
+    @apply font-bold;
+  }
+
+  & td:not(:last-child) {
+    @apply border-r border-[#e8e8e8];
   }
 
   & tr:last-child td {
@@ -234,6 +301,10 @@
     @apply mt-2 mb-2;
   }
 
+  & p:last-child {
+    @apply mb-0;
+  }
+
   & blockquote {
     @apply pl-4 py-1 my-6 border-l-4 border-gray-300 text-gray-700 italic;
   }
@@ -305,6 +376,9 @@
     @apply mx-auto my-5;
   }
 }
+@utility heading-link {
+  @apply text-inherit underline decoration-1 underline-offset-4 hover:text-link;
+}
 @utility autoanchor {
   /* Autoanchor styles */
   &a {
@@ -362,10 +436,10 @@
   @apply narrow-container mx-auto text-left pb-0.5;
 }
 @utility post-hero__breadcrumb {
-  @apply text-sm text-gray-600;
+  @apply text-sm;
 
   & a {
-    @apply hover:text-gray-900 transition-colors;
+    @apply text-white hover:text-gray-300 transition-colors;
   }
 }
 @utility post-hero__title {
@@ -465,6 +539,20 @@
 
 /* Component styles */
 @layer components {
+
+  .rss-feed-link .rss-icon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    -webkit-mask-image: url('/images/rss-icon.svg');
+    mask-image: url('/images/rss-icon.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
 
   pre, code {
     @apply text-[15px] border border-[#e8e8e8] rounded-[3px] bg-[#eef];

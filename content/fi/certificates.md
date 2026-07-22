@@ -25,13 +25,13 @@ Meidän juuret pidetään turvallisesti pois verkosta. Myönnämme loppukäyttä
 Olemme asettaneet verkkosivustot testaamaan varmenteiden ketjutusta aktiivisiin juurimme saakka.
 
 * ISRG Root X1
-  * [Kelvollinen](https://valid-isrgrootx1.letsencrypt.org/)
-  * [Kumottu](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [Vanhentunut](https://expired-isrgrootx1.letsencrypt.org/)
+  * [Kelvollinen](https://valid.x1.test-certs.letsencrypt.org/)
+  * [Kumottu](https://revoked.x1.test-certs.letsencrypt.org/)
+  * [Vanhentunut](https://expired.x1.test-certs.letsencrypt.org/)
 * ISRG Root X2
-  * [Kelvollinen](https://valid-isrgrootx2.letsencrypt.org/)
-  * [Kumottu](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [Vanhentunut](https://expired-isrgrootx2.letsencrypt.org/)
+  * [Kelvollinen](https://valid.x2.test-certs.letsencrypt.org/)
+  * [Kumottu](https://revoked.x2.test-certs.letsencrypt.org/)
+  * [Vanhentunut](https://expired.x2.test-certs.letsencrypt.org/)
 
 # Välilliset varmenteet
 

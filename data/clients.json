@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-01-21",
+	"lastmod": "2026-07-22",
 	"categories": [
 		"Bash",
 		"C",
@@ -237,13 +237,13 @@
 		},
 		{
 			"name": "docker-nginx",
-			"comment": "Chinese language",
+			"comments": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/nginx",
 			"category": "Docker"
 		},
 		{
 			"name": "docker-openresty",
-			"comment": "Chinese language",
+			"comments": "Chinese language",
 			"url": "https://hub.docker.com/r/xiaojun207/openresty",
 			"category": "Docker"
 		},
@@ -538,12 +538,6 @@
 			"last_commit": 1752945862
 		},
 		{
-			"name": "ACMEd",
-			"url": "https://github.com/breard-r/acmed",
-			"category": "Rust",
-			"last_commit": 1755965014
-		},
-		{
 			"name": "certman-operator",
 			"url": "https://github.com/openshift/certman-operator",
 			"category": "OpenShift",
@@ -572,13 +566,6 @@
 			"url": "https://httpd.apache.org",
 			"comments": "Support via the module mod_md.",
 			"category": "C"
-		},
-		{
-			"name": "mod_md",
-			"url": "https://github.com/icing/mod_md",
-			"comments": "Separate, more frequent releases of the Apache module.",
-			"category": "C",
-			"last_commit": 1755595500
 		},
 		{
 			"name": "App Service Acmebot",
@@ -912,7 +899,7 @@
 		{
 			"name": "CertKit",
 			"url": "https://www.certkit.io/",
-			"comments": "Deployable and SaaS certificate lifecycle management and monotoring",
+			"comments": "Deployable and SaaS certificate lifecycle management and monitoring",
 			"category": "Server",
 			"challenges": {
 				"HTTP-01": "true",

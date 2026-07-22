@@ -148,7 +148,7 @@ other = "开始窗口"
 [certificate_transparency_window_end]
 other = "结束窗口"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "证书实践声明"
 
 [overview]
@@ -178,8 +178,14 @@ other = "PayPal 捐款"
 [paypal_donate_title]
 other = "使用PayPal捐款"
 
-[not_found]
-other = "该页面不存在，请检查地址。"
+[not_found_title]
+other = "404 - 页面未找到"
+
+[not_found_message]
+other = "您查找的页面不存在或已移至别处。"
+
+[not_found_button]
+other = "返回首页"
 
 [amount_per_year]
 other = "每年 ${{ .nb }} （美元）"
@@ -370,6 +376,12 @@ other = "查看尚未完成翻译的最新英文页面"
 [post_hero_breadcrumb_blog]
 other = "博客"
 
+[post_support_heading]
+other = "支持我们的事业"
+
+[post_support_body_html]
+other = 'ISRG 是一家 501(c)(3) 非营利组织，其资金 100% 来源于认同我们普及开放互联网安全愿景的资助者。如果您也想支持我们的事业，请考虑<a href="https://www.abetterinternet.org/getinvolved/">参与进来</a>、<a href="/donate/">捐款</a>或推动您所属的企业<a href="https://www.abetterinternet.org/sponsor/">成为赞助商</a>。'
+
 [donate_get_involved_button]
 other = "帮助 Let's Encrypt"
 
@@ -460,11 +472,8 @@ other = "其他贡献方式"
 [donate_page_ways_to_give_heading]
 other = "如何支持我们"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "的 Let's Encrypt 运作资金来自慈善捐款。"
+other = "您的热心资助能够支持 Let's Encrypt 继续开展这项事业。"
 
 [donate_page_funding_details_why_support_heading]
 other = "为什么要支持我们？"
@@ -525,3 +534,171 @@ other = "大多数类型的加密货币也可以通过{{ .cryptoLink }}捐给我
 
 [donate_page_crypto_link_text]
 other = "此处"
+
+[donate_2026_page_title]
+other = "支持我们的事业！"
+
+[donate_2026_funding_details_stat_text]
+other = "今年夏天捐款 $75 以上即可获赠 ISRG Root X1 限量版 T 恤。"
+
+[donate_2026_shirt_image_alt]
+other = "ISRG Root X1 限量版 T 恤"
+
+[donate_2026_ways_to_give_heading]
+other = "其他贡献方式"
+
+[donate_2026_employer_matching_gifts_title]
+other = "雇主配捐"
+
+[donate_2026_employer_matching_gifts_text]
+other = "有些单位会有“员工捐多少，单位捐多少”的政策，您可留意贵司是否有类似的政策，并让您的影响力加倍！"
+
+[donate_2026_become_a_sponsor_title]
+other = "成为赞助商"
+
+[donate_2026_become_a_sponsor_text]
+other = "从两个人的小公司，到各类非营利组织，再到全球百强企业，已有将近 100 家商业机构与社会团体选择支持我们的事业。即刻加入我们的赞助商名单，共同为数十亿人提供更加安全、更加尊重隐私的互联网。"
+
+[donate_2026_become_a_sponsor_link_text]
+other = "此处"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "请点击{{ .sponsorshipLink }}了解详情。"
+
+[donate_2026_donate_stock_title]
+other = "捐赠股权"
+
+[donate_2026_donate_stock_intro_text]
+other = "您已持有超过一年的增值证券 (appreciated securities) 或共同基金 (mutual fund) 也是很好的慈善馈赠。"
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "经纪公司："
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "账户名称："
+
+[donate_2026_donate_stock_account_name_value]
+other = "互联网安全研究组"
+
+[donate_2026_donate_stock_account_number]
+other = "账户号码："
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC 号码："
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "税号："
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "如果您要转让证券，请通过 {{ .donateEmailLink }} 联系我们，以确保我们能够将您的贡献准确计入您名下。"
+
+[donate_2026_donate_stock_online_text]
+other = "您也可以通过{{ .givingBlockLink }}更加便捷地捐赠股权，但这种交易方式会产生手续费，因此请考虑补齐差额，以确保您的善款能够最大程度发挥效力。"
+
+[donate_2026_donate_cryptocurrency_title]
+other = "捐赠加密货币"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "我们也支持通过{{ .givingBlockLink }}接收加密货币，但这种交易方式会产生手续费，因此请考虑补齐差额，以确保您的善款能够最大程度发挥效力。"
+
+[donate_2026_donor_advised_funds_title]
+other = "捐赠人建议基金 (DAF)"
+
+[donate_2026_donor_advised_funds_text]
+other = "您只需要告知 DAF 管理方您的捐助对象是："
+
+[donate_2026_donor_advised_funds_online_text]
+other = "您也可以进入{{ .givingBlockLink }}通过 DAFpay 实现 DAF 捐款，但这种交易方式会产生手续费，因此请考虑补齐差额，以确保您的善款能够最大程度发挥效力。"
+
+[donate_2026_org_name]
+other = "互联网安全研究组"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "计划捐赠或遗产捐赠"
+
+[donate_2026_planned_legacy_giving_text]
+other = "请考虑在遗嘱或退休金计划中将 ISRG 列为受益者之一，从而帮助我们进一步保护互联网用户，为构建更加安全、更加尊重隐私的互联网降低资金、技术与信息壁垒。"
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "您是否已经将 ISRG 纳入您的财产规划？请{{ .legacyGivingFormLink }}。"
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "您提交的捐赠计划是保密且没有法律约束力的，但这有助于我们进行长远规划，也使我们能够提前感谢您的慷慨馈赠。"
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "请向您的财务或法律顾问征询意见。"
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "合格慈善分配"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "在美国，如果您年满 70 岁半，可以直接从个人退休账户 (IRA) 向 ISRG 捐款，且该款项无需缴纳所得税。这种方式通常称为 IRA 慈善转赠 (IRA charitable rollover) 或合格慈善分配 (qualified charitable distribution, QCD)。每年可捐出的最高金额由美国国税局 (IRS) 规定，且根据政策逐年调整，因此建议您向财务顾问确认实际限额。"
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "请向您的财务或法律顾问征询意见。"
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "若通过这种方式捐款，请联系您的 IRA 管理机构将款项直接汇给 ISRG，并提供我们的法定名称和联邦税务识别号，以便准确识别收款方。捐款后也请告知我们，因为很多 IRA 管理机构不会透露捐款人身份，只有您打过招呼后我们才能向您致以谢意，并依照您的意愿使用这笔善款。"
+
+[donate_2026_legal_name_label]
+other = "法定名称："
+
+[donate_2026_legal_address_label]
+other = "地址："
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "邮寄地址："
+
+[donate_2026_mailing_address_intro]
+other = "（仅用于支票处理）"
+
+[donate_2026_mailing_address_attention]
+other = "互联网安全研究组"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "捐赠支票"
+
+[donate_2026_donate_by_check_text]
+other = "您也可以通过个人支票捐款，收款人请填写“ISRG”，并寄送至以下地址："

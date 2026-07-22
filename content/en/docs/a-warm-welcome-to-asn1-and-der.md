@@ -153,7 +153,7 @@ requirements](https://community.letsencrypt.org/t/2018-03-12-wildcard-certificat
 IA5String, based on [International Alphabet No.
 5](https://en.wikipedia.org/wiki/T.50_(standard)),
 is more permissive: It allows nearly any ASCII character, and is used
-for email address, DNS names, and URLs in certificates. Note that there
+for email addresses, DNS names, and URLs in certificates. Note that there
 are a few byte values where the IA5 meaning of the byte value is
 different than the US-ASCII meaning of that same value.
 
@@ -560,7 +560,7 @@ Point ::= SEQUENCE {
 ```
 
 So now, to encode a Point with just an x coordinate of 9, instead of
-encoding x as a UNIVERSAL INTEGER, you'd sets bit 8 and 7 of the encoded
+encoding x as a UNIVERSAL INTEGER, you'd set bits 8 and 7 of the encoded
 tag to (1, 0) to indicate the context specific class, and set the low
 bits to 0, giving this encoding:
 
@@ -587,7 +587,7 @@ Length
 The length in the tag-length-value tuple always represents the total
 number of bytes in the object including all sub-objects. So a SEQUENCE
 with one field doesn't have a length of 1; it has a length of however
-many bytes the encoded form of that field take up.
+many bytes the encoded form of that field takes up.
 
 The encoding of length can take two forms: short or long. The short form
 is a single byte, between 0 and 127.
@@ -733,7 +733,7 @@ and a second one that imports the first, and has [IMPLICIT tags as the
 default](https://tools.ietf.org/html/rfc5280#appendix-A.2).
 Implicit encoding uses fewer bytes than explicit encoding.
 
-AUTOMATIC TAGS is the same as IMPLICIT TAGS, but with additional
+AUTOMATIC TAGS is the same as IMPLICIT TAGS, but with the additional
 property that tag numbers (`[0]`, `[1]`, etc) are automatically assigned
 in places that need them, like SEQUENCEs with optional fields.
 
@@ -769,7 +769,7 @@ This one-byte value (represented in binary) encodes decimal -100:
 
 10011100 (== decimal -100)
 
-This five-bytes value (represented in binary) encodes decimal
+This five-byte value (represented in binary) encodes decimal
 -549755813887 (i.e. -2<sup>39</sup> + 1):
 
 10000000 00000000 00000000 00000000 00000001 (== decimal -549755813887)
@@ -989,7 +989,7 @@ Here is the encoding of a SEQUENCE OF INTEGER containing the numbers 7,
 SET encoding
 ------------
 
-Like SEQUENCE, a SET is Contructed, meaning that its value bytes are the
+Like SEQUENCE, a SET is Constructed, meaning that its value bytes are the
 concatenation of its encoded fields. Its tag number is 0x11. Since the
 [Constructed vs Primitive](#constructed-vs-primitive) bit (bit 6) is
 always set to 1, that means it's encoded with a tag byte of 0x31.
@@ -1151,7 +1151,7 @@ Or, to put it differently: base64 turns 24 bits of binary input into 4
 ASCII characters of output, with 6 bits of the input assigned to each
 character. We know what the first 16 bits of every certificate will be.
 To prove that the first characters of (almost) every certificate will be
-"MII", we need two to look at the next 2 bits. Those will be the most
+"MII", we need to look at the next 2 bits. Those will be the most
 significant bits of the most significant byte of the two length bytes.
 Will those bits ever be set to 1? Not unless the certificate is more
 than 16,383 bytes long! So we can predict that the first characters of a

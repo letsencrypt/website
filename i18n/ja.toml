@@ -151,8 +151,8 @@ other = "ウィンドウの起動"
 [certificate_transparency_window_end]
 other = "ウィンドウの終了"
 
-[certification_practices_statement]
-other = "Certification Practices ステートメント"
+[certification_practice_statement]
+other = "Certification Practice ステートメント"
 
 [overview]
 other = "概要"
@@ -181,8 +181,14 @@ other = "PayPal ボタンで寄付する"
 [paypal_donate_title]
 other = "PayPalで寄付"
 
-[not_found]
-other = "このページは存在しません。アドレスを確認してください。"
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/年（USドル）"
@@ -373,6 +379,12 @@ other = "More recently updated page available in English"
 [post_hero_breadcrumb_blog]
 other = "ブログ"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "参加する"
 
@@ -392,7 +404,7 @@ other = "ISRG"
 other = "### 以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
 
 [home_hero_nonprofit_prefix]
-other = "以上のウェブサイトに無料の TLS 証明書を提供している非営利団体"
+other = "私たちの非営利団体による無料 TLS 証明書の提供先:"
 
 [home_hero_certificate_count]
 other = "700M"
@@ -463,11 +475,8 @@ other = "Other Ways to Give"
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "WHY SUPPORT?"

@@ -151,7 +151,7 @@ other = "Visningsvindue Start"
 [certificate_transparency_window_end]
 other = "Visningsvindue Slut"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Erklæring Om Certificeringspraksis"
 
 [overview]
@@ -181,8 +181,14 @@ other = "Donér med PayPal-knappen"
 [paypal_donate_title]
 other = "Doner via PayPal"
 
-[not_found]
-other = "Den side findes ikke, tjek venligst adressen."
+[not_found_title]
+other = "404 – Side ikke fundet"
+
+[not_found_message]
+other = "Siden, du leder efter, eksisterer ikke eller er blevet flyttet."
+
+[not_found_button]
+other = "Tilbage til forsiden"
 
 [amount_per_year]
 other = "${{ .nb }}/år (USD)"
@@ -373,6 +379,12 @@ other = "En nyere opdateret side er tilgængelig på engelsk"
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
+[post_support_heading]
+other = "Støt Vores Arbejde"
+
+[post_support_body_html]
+other = 'ISRG er en 501(c)(3) nonprofit organisation, der er 100% støttet gennem generøsitet af dem, der deler vores vision for allestedsnærværdig, åben internetsikkerhed. Hvis du vil støtte vores arbejde, så overvej venligst <a href="https://www.abetterinternet.org/getinvolved/">at blive involveret</a>, <a href="/donate/">donere</a>eller tilskynde din virksomhed til <a href="https://www.abetterinternet.org/sponsor/">blive en sponsor</a>.'
+
 [donate_get_involved_button]
 other = "Bliv en del af det"
 
@@ -463,11 +475,8 @@ other = "Andre måder at give"
 [donate_page_ways_to_give_heading]
 other = "VEJE TIL AT GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "af finansieringen af Let's Encrypt kommer fra velgørende bidrag."
+other = "Muliggør vores arbejde på Let's Encrypt gennem dit velgørende bidrag."
 
 [donate_page_funding_details_why_support_heading]
 other = "HVORFOR STØTTE?"
@@ -528,3 +537,171 @@ other = "Vi er i stand til at acceptere de fleste kryptovaluta donationer {{ .cr
 
 [donate_page_crypto_link_text]
 other = "her"
+
+[donate_2026_page_title]
+other = "Støt Vores Arbejde!"
+
+[donate_2026_funding_details_stat_text]
+other = "Få den begrænsede udgave ISRG Root X1 t-shirt, når du giver $75 eller mere denne sommer."
+
+[donate_2026_shirt_image_alt]
+other = "Begrænset udgave ISRG Root X1 t-shirt"
+
+[donate_2026_ways_to_give_heading]
+other = "Flere muligheder for at give"
+
+[donate_2026_employer_matching_gifts_title]
+other = "Arbejdsgiver matchende gaver"
+
+[donate_2026_employer_matching_gifts_text]
+other = "Mange organisationer matcher donationer til nonprofit foretaget af medarbejdere. Tjek om din organisation har et matchende program og fordobler din virkning!"
+
+[donate_2026_become_a_sponsor_title]
+other = "Bliv sponsor"
+
+[donate_2026_become_a_sponsor_text]
+other = "Næsten 100 virksomheder og organisationer støtter vores arbejde - fra to-personers virksomheder til nonprofit til Fortune 100 virksomheder. Deltag i vores liste over generøse sponsorer, der hjælper med at give en mere sikker og privatliv respekterer internettet for milliarder af mennesker."
+
+[donate_2026_become_a_sponsor_link_text]
+other = "her"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Læs mere {{ .sponsorshipLink }}."
+
+[donate_2026_donate_stock_title]
+other = "Donate stock"
+
+[donate_2026_donate_stock_intro_text]
+other = "Værdipapirer eller investeringsforeningsandele, som du har ejet i mere end et år, kan være fremragende velgørenhedsgaver."
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "Købsmæglerfirma:"
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "Kontonavn:"
+
+[donate_2026_donate_stock_account_name_value]
+other = "Internet Security Research Group"
+
+[donate_2026_donate_stock_account_number]
+other = "Account #:"
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC #:"
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "US Skatte ID #:"
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "Please contact us if you are transferring securities at {{ .donateEmailLink }} to ensure that we are able to credit you for your gift."
+
+[donate_2026_donate_stock_online_text]
+other = "You can also donate stock in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_donate_cryptocurrency_title]
+other = "Donate cryptocurrency"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "We are able to accept most cryptocurrency by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_donor_advised_funds_title]
+other = "Donor Advised Funds (DAFs)"
+
+[donate_2026_donor_advised_funds_text]
+other = "Simply inform your DAF sponsor that you’d like to make a gift to:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "You can also donate through your DAF via DAFpay in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_org_name]
+other = "Internet Security Research Group"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "Planned/Legacy giving"
+
+[donate_2026_planned_legacy_giving_text]
+other = "Please consider making ISRG a beneficiary of your will or retirement plan to help protect Internet users by lowering monetary, technological, and informational barriers to a more secure and privacy-respecting Internet."
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "Have you already included ISRG in your estate plans? {{ .legacyGivingFormLink }}."
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "While documenting your planned gift is confidential and non-binding, it allows us to plan for the future and thank you for your generosity today."
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "Please seek the advice of your financial or legal advisor."
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "Qualified Charitable Distribution"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "If you are 70½ or older, you can give directly from your US-based IRA to ISRG without paying income tax on the distribution. This option is often called an IRA charitable rollover or a qualified charitable distribution (QCD). You can give up to an annual maximum set by the IRS, which adjusts each year, so confirm the current amount with your advisor."
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "Please seek the advice of your financial or legal advisor."
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "To make your gift, ask your IRA administrator to send the distribution directly to ISRG. Give them our legal name and federal tax ID so they can identify us. Please also let us know about your gift. Many IRA administrators send distributions without identifying the donor, so a quick note from you lets us thank you and honor your wishes for the gift."
+
+[donate_2026_legal_name_label]
+other = "Juridisk navn:"
+
+[donate_2026_legal_address_label]
+other = "Adresse:"
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "Postadresse"
+
+[donate_2026_mailing_address_intro]
+other = "(kun til check-behandling)"
+
+[donate_2026_mailing_address_attention]
+other = "Internet Security Research Group"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "Donér ved check"
+
+[donate_2026_donate_by_check_text]
+other = 'Du kan donere ved personlig check til "ISRG" på nedenstående adresse:'

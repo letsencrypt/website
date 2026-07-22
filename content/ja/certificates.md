@@ -25,13 +25,13 @@ show_lastmod: 1
 Let's Encrypt のルート証明書とチェーンでつながっている証明書をテストするためのウェブサイトを用意しています。
 
 * ISRG Root X1
-  * [有効](https://valid-isrgrootx1.letsencrypt.org/)
-  * [失効済み](https://revoked-isrgrootx1.letsencrypt.org/)
-  * [期限切れ](https://expired-isrgrootx1.letsencrypt.org/)
+  * [有効](https://valid.x1.test-certs.letsencrypt.org/)
+  * [失効済み](https://revoked.x1.test-certs.letsencrypt.org/)
+  * [期限切れ](https://expired.x1.test-certs.letsencrypt.org/)
 * ISRG Root X2
-  * [有効](https://valid-isrgrootx2.letsencrypt.org/)
-  * [失効済み](https://revoked-isrgrootx2.letsencrypt.org/)
-  * [期限切れ](https://expired-isrgrootx2.letsencrypt.org/)
+  * [有効](https://valid.x2.test-certs.letsencrypt.org/)
+  * [失効済み](https://revoked.x2.test-certs.letsencrypt.org/)
+  * [期限切れ](https://expired.x2.test-certs.letsencrypt.org/)
 
 # 中間証明書
 

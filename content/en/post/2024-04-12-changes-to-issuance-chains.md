@@ -8,7 +8,7 @@ excerpt: "Using our new RSA & ECDSA intermediates to sign certificates starting 
 
 On **Thursday, June 6th, 2024**, we will be switching issuance to use our [new intermediate certificates](https://letsencrypt.org/2024/03/19/new-intermediate-certificates). Simultaneously, we are removing the DST Root CA X3 cross-sign from our API, aligning with our strategy to shorten the Let's Encrypt chain of trust. We will begin issuing ECDSA end-entity certificates from a default chain that just contains a single ECDSA intermediate, removing a second intermediate and the option to issue an ECDSA end-entity certificate from an RSA intermediate. The Let's Encrypt staging environment will make an equivalent change on April 24th, 2024.
 
-**Most Let's Encrypt Subscribers will not need to take any action** in response to this change because ACME clients, like [certbot](https://certbot.eff.org/), will automatically configure the new intermediates when certificates are renewed. The Subscribers who will be affected are those who currently pins intermediate certificates (more on that later).
+**Most Let's Encrypt Subscribers will not need to take any action** in response to this change because ACME clients, like [certbot](https://certbot.eff.org/), will automatically configure the new intermediates when certificates are renewed. The Subscribers who will be affected are those who currently pin intermediate certificates (more on that later).
 
 The following diagram depicts what the new hierarchy looks like. You can see details of all of the certificates on our [updated Chain of Trust documentation page](https://letsencrypt.org/certificates/).
 

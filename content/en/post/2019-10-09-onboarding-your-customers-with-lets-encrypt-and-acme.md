@@ -62,7 +62,7 @@ directly provision their TXT records is to support the best practice of
 periodically rotating your ACME account key. Because the digest value
 used for DNS-01 validation is computed based on your current ACME
 account key, it will change whenever you rotate your account key. If you
-asked customers to provision their TXT record manually , that means
+asked customers to provision their TXT record manually, that means
 notifying potential new customers that the value you asked them to put
 in DNS isn't valid anymore, and they need to use a different one. That’s pretty
 inconvenient! If you use the CNAME method instead, there’s only one
@@ -77,7 +77,7 @@ change their A records to point at a different CDN, without telling you
 that their plans have changed. You should monitor for this situation and
 stop attempting to issue certificates. If the customer has left behind a
 CNAMEd `_acme-challenge` subdomain that points at you, you should
-contact that and remind them to delete it. The CNAMEd subdomain
+contact them and remind them to delete it. The CNAMEd subdomain
 represents a delegated authorization to issue certificates, and cleaning
 up that delegation improves both the customer’s security posture and
 your own. Similarly, if a customer sets up the CNAME and you issue a

@@ -16,11 +16,11 @@ Naši root sertifikati se čuvaju na sigurnom "offline" mestu. Mi izdajemo serti
 Postavili smo web sajtove za testiranje sertifikata koji se vezuju za naše root sertifikate.
 
 * ISRG Root X1 Valid Certificate
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
+  * [https://valid.x1.test-certs.letsencrypt.org/](https://valid.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 Revoked Certificate
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [https://revoked.x1.test-certs.letsencrypt.org/](https://revoked.x1.test-certs.letsencrypt.org/)
 * ISRG Root X1 Expired Certificate
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+  * [https://expired.x1.test-certs.letsencrypt.org/](https://expired.x1.test-certs.letsencrypt.org/)
 
 # Posrednički Sertifikati
 

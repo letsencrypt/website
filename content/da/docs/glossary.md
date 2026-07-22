@@ -1,7 +1,7 @@
 ---
 title: Opslag
 slug: glossary
-lastmod: 2025-07-31
+lastmod: 2026-07-04
 show_lastmod: 1
 description: "En ordliste over termer relateret til SSL/TLS-certifikater, HTTPS og websikkerhed, der bruges af Let's Encrypt."
 ---
@@ -41,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} En DNS-post som peger et domænenavn til et andet, der kaldes det kanoniske navn. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} En organisation, der udsteder [certifikater](#def-leaf). [Let's Encrypt](#def-LE), [IdenTrust](#def-IdenTrust), Sectigo og DigiCert er Certifikatmyndigheder. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
+{{% def id="CA" name="Certificate Authority" abbr="CA" %}} En organisation, der udsteder [certifikater](#def-leaf). [Let's Encrypt](#def-LE) er en certifikatautoritet. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAI" name="CA Issuers" %}} Del af feltet [AIA](#def-AIA) med oplysninger om udstederen af [-certifikatet](#def-leaf). Det kan være nyttigt, når [webserveren](#def-web-server) ikke leverer en betroet [certifikatkæde](#def-chain). {{% /def %}}
 
@@ -65,7 +65,7 @@ Note for translators:
 
 {{% def id="store" name="Certificate Store" %}} En certifikatsamling som indeholder med betroede [Rod certifikater](#def-root). Styresystemer (såsom Windows, Android eller Debian) og [webbrowsere](#def-web-browser) (såsom Firefox) vedligeholder en certifikatsamling. Browsere uden egen certifikatsamling anvender operativsystemernes certifikatsamling. [Certifikater](#def-leaf) leveret af [Let's Encrypt](#def-LE) er [betroede af de fleste certifikatsamlinger](/certificates). {{% /def %}}
 
-{{% def id="subject" name="Certificate subject" %}} Feltet "Subject" i et certifikatfelt angiver, hvad certifikatet omhandler. Dette indeholder ofte felter som [Common Name](#def-CN), Country og Organization. {{% /def %}}
+{{% def id="subject" name="Certificate subject" %}} Feltet "Emne" i et certifikatfelt angiver, hvad certifikatet omhandler. Dette indeholder ofte felter som [Common Name](#def-CN), Country og Organization. {{% /def %}}
 
 {{% def id="CT" name="Certificate Transparency" abbr="CT" %}} For at forbedre sikkerheden, skal certifikater (eller [præ-certfikater](#def-precertificate)) offentliggøres i Certifikat Gennemsigtighed Logs: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) genererer og publicerer [precertificates](#def-precertificate), og indeholder i det efterfølgende [certifikat](#def-leaf) en liste over [SCT](#def-SCT) for præ-certifikatet. Nogle [browsere](#def-web-browser), såsom Google Chrome, kræver tilstedeværelsen af dette verificerbare løfte for at validere certifikatet. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
@@ -73,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} Del af et certifikat [Emne](#def-subject) som beskriver hvad certifikatet handler om. For [root](#def-root) og [intermediate](#def-intermediate) er det det menneskeligt læsbare navn på [certifikatmyndighed](#def-CA). For [leaf certifikater](#def-leaf) er det et af domænenavne på certifikatet. Bemærk: Det almindelige navn er begrænset til 63 tegn. Det er en forældet metode til angivelse af et domænenavn, som certifikatet finder anvendelse på da de nuværende internetstandarder forventer, at software kun kontrollerer [Subject Alternative Names](#def-SAN) for at bestemme anvendeligheden af et certifikat. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} Et udstedende certifikat kan underskrives af mere end én [root](#def-root). For eksempel, [Let's Encrypt](#def-LE) [intermediate](#def-intermediate) er krydssigneret af [IdenTrust](#def-IdenTrust), fordi vi ved starten af Let's Encrypt root-ceterifaktet blev det endnu ikke stolt på af [certifikatsamlinger](#def-store). Teknisk opnåes det ved at to udstedende certifikater, ved hjælp af den samme [Emne](#def-subject) og den samme [Key-pair](#def-key-pair), den ene signeret af den private nøgle til en Kryptér rod og den anden signeret af den private nøgle til en IdenTrust's root: [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} Et udstedende certifikat kan underskrives af mere end én [root](#def-root) - muligvis fra andre CAer. Når en CA underskriver en anden CA's certifikat, kaldes det krydssignering. {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} En mekanisme ved hjælp af DNS til at angive, hvordan man verificerer ægtheden af [certifikatet](#def-leaf) eller krypteringsnøglen præsenteret.  [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -81,19 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} Et [certifikat](#def-leaf), hvor ansøgeren kun har bevist sin kontrol med domænenavnet (og ikke den anmodende organisations identitet). [Let's Encrypt](#def-LE) tilbyder kun DV-certifikater (ikke [OV](#def-OV) eller [EV](#def-EV)): [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} En variant af den digitale signaturalgoritme (DSA), der bruger elliptisk kurve kryptografi.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) understøtter ECDSA for [end-entity eller leaf certificates](#def-leaf), men endnu ikke for hele [-kæden](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
-
-{{% def id="Ed25519" name="Ed25519" %}} En bestemt type [EdDSA](#def-EdDSA) sammen med Ed448. {{% /def %}}
-
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} Et moderne offentlig-nøgle signatursystem baseret på elliptiske kurver, designet til at løse flere fælles [implementeringsproblemer](https://ed25519.cr.yp.to/) med elliptisk kurve kryptografi. Certifikatmyndigheder som [Let's Encrypt](#def-LE) kan endnu ikke levere EdDSA-certifikater. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} En digital signaturalgoritme, der bruger [elliptisk kurvekryptografi](#def-ECC). [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) understøtter ECDSA. {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} En type public key kryptografi baseret på elliptiske kurver. ECC bruger mindre nøgler i forhold til ikke-EF-kryptografi samtidig med tilsvarende sikkerhed. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} En type certifikatvalidering, for hvilken [CA](#def-CA) har verificeret den juridiske enhed, der styrer hjemmesiden. De indeholder oplysninger om den pågældende enhed. Kontroller fra [CA](#def-CA) er mere strenge end for [OV](#def-OV) certifikater. [Let's Encrypt](#def-LE) tilbyder ikke EV certifikater. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} Det fuldstændige domænenavn på et websted. For eksempel er `www.example.com` en *FQDN*. {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} En [Certifikatmyndighed](#def-CA). IdenTrust har [krydssigneret](#def-cross-signing) [Let's Encrypt](#def-LE) [intermediatecertifikater](#def-intermediate): [/certificater](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} Et certifikat signeret med en [root](#def-root) eller en anden intermediate, og i stand til at signere andre certifikater. De bruges til at signere leaf-certifikater og samtidig holde den private nøgle til root-certifikat offline. Intermediate-certifikater er inkluderet i [certifikatkæder](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 

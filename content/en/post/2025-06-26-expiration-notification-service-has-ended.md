@@ -4,7 +4,7 @@ date: 2025-06-26T00:00:00Z
 slug: expiration-notification-service-has-ended
 title: "Expiration Notification Service Has Ended"
 excerpt: "Let's Encrypt ended its certificate-expiration notification emails on June 4, 2025."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: true
 ---
 

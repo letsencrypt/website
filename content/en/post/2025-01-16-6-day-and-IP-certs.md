@@ -4,8 +4,12 @@ date: 2025-01-16T00:00:00Z
 slug: 6-day-and-IP-certs
 title: "Announcing Six Day and IP Address Certificate Options in 2025"
 excerpt: "In addition to our standard certificates, Let’s Encrypt will introduce new short-lived certificates to improve security and agility for the Web PKI."
-display_default_footer: true
+display_support_us_footer: true
 ---
+
+> **Update: January 15, 2026**
+>
+> Six-day and IP address certificates are now generally available. See [6-day and IP Address Certificates are Generally Available](/2026/01/15/6day-and-ip-general-availability) for details.
 
 This year we will continue to pursue our commitment to improving the security of the Web PKI by introducing the option to get certificates with six-day lifetimes ("short-lived certificates"). We will also add support for IP addresses in addition to domain names. Our longer-lived certificates, which currently have a lifetime of 90 days, will continue to be available alongside our six-day offering. Subscribers will be able to opt in to short-lived certificates via a certificate profile mechanism being added to our ACME API.
 

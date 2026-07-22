@@ -1,7 +1,7 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-lastmod: 2025-12-17
+lastmod: 2026-03-16
 show_lastmod: 1
 ---
 
@@ -11,7 +11,7 @@ show_lastmod: 1
 
 ## 移除“TLS 客户端身份验证”扩展密钥用途
 
-我们计划于 2026 年 2 月 11 日从我们的默认证书配置中[移除“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 在此之前，我们会临时提供另一种仍包含该 EKU 的证书配置，但这只是为无法及时迁移的客户端提供的过渡措施，并且将于 2026 年 5 月 13 日截止。
+自 2026 年 2 月 11 日起，我们的默认证书配置中[不再包含“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 对于无法及时完成迁移的用户，我们也提供了 [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) 证书配置作为临时的替代方案， 在 2026 年 5 月 13 日前使用过该配置的用户可以继续使用至 2026 年 7 月 8 日。
 
 ## 证书有效期缩短至 45 天
 
@@ -54,4 +54,3 @@ show_lastmod: 1
 ## IP 地址证书
 
 申请短期证书（见上）时可以在主体备用名称中[包含 IP 地址](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/)。 其[验证方式](https://www.rfc-editor.org/rfc/rfc8738.html)与当下 DNS 域名的验证方式大体相同。
-

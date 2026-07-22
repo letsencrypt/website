@@ -1,5 +1,4 @@
-Let's Encrypt Website
-=====================
+# Let's Encrypt Website
 
 This is the repository for the main [Let's Encrypt website].
 
@@ -46,12 +45,14 @@ To help with translation, please see [TRANSLATION.md].
 
 When creating new pages you'll need to add a translation stub for each language.
 You can use the `new-page.sh` script to create these automatically:
+
 ```sh
 Usage: ./new-page.sh <page-path> <page title>
 Examples:
 ./new-page.sh my-page "My Page Title"
 ./new-page.sh post/my-post "My Post Title"
 ```
+
 ```sh
 $ ./new-page.sh docs/new-page "My New Page"
 Created page: ./content/vi/docs/new-page.md

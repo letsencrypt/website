@@ -4,9 +4,13 @@ date: 2026-01-15T00:00:00Z
 slug: 6day-and-ip-general-availability
 title: "6-day and IP Address Certificates are Generally Available"
 excerpt: "Short certificates are good for security and now available to all Let's Encrypt subscribers."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
+
+> **Update: March 11, 2026**
+>
+> If you use Certbot, see [Six-Day and IP Address Certificates Available in Certbot](/2026/03/11/shorter-certs-certbot) for details on requesting these certificates.
 
 Short-lived and IP address certificates are now generally available from Let's Encrypt. These certificates are valid for 160 hours, just over six days. In order to get a short-lived certificate subscribers simply need to select the 'shortlived' [certificate profile](https://letsencrypt.org/docs/profiles/) in their ACME client.
 

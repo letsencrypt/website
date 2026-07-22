@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Tillidskæder (Root og Intermediate Certifikater)
 slug: certificates
-lastmod: 2026-01-08
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
@@ -24,17 +24,16 @@ Bemærk, at Root CAs ikke har udløbsdatoer på helt samme måde som andre certi
   * Certifikatoplysninger (selvsigneret): [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Certifikatdetaljer (krydssigneret af DST Root CA X3): [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (pensioneret)
   * CRL værtsnavn: `x1.c.lencr.org`
-  * Test websteder: [gyldigt](https://valid-isrgrootx1.letsencrypt.org/), [tilbagekaldt](https://revoked-isrgrootx1.letsencrypt.org/), [udløbet](https://expired-isrgrootx1.letsencrypt.org/)
+  * Test websteder: [gyldigt](https://valid.x1.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x1.test-certs.letsencrypt.org/), [udløbet](https://expired.x1.test-certs.letsencrypt.org/)
 * **ISRG Root X2**
   * Emne: `O = Research Group, Internet Security Group, CN = ISRG Root X2`
   * Nøgletype: `ECDSA P-384`
   * Gyldigt indtil: 2035-09-04 (genereret 2020-09-04)
   * CA-detaljer: [crt.sh](https://crt.sh/?caid=183269), [udstedte certifikater](https://crt.sh/?Identity=%25&iCAID=183269)
   * Certifikatoplysninger (selvsigneret): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-  * Certifikatoplysninger (krydsunderskrevet af ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Certifikat detaljer (andet kryds underskrevne af ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der),[pem](/certs/gen-y/root-x2-by-x1.pem),[txt](/certs/gen-y/root-x2-by-x1.txt)
+  * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL værtsnavn: `x2.c.lencr.org`
-  * Test websteder: [gyldigt](https://valid-isrgrootx2.letsencrypt.org/), [tilbagekaldt](https://revoked-isrgrootx2.letsencrypt.org/), [udløbet](https://expired-isrgrootx2.letsencrypt.org/)
+  * Test websteder: [gyldigt](https://valid.x2.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.x2.test-certs.letsencrypt.org/), [udløbet](https://expired.x2.test-certs.letsencrypt.org/)
 
 Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, men vil snart blive indsendt:
 
@@ -46,7 +45,7 @@ Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, me
   * Certifikatoplysninger (selvsigneret): [, der](/certs/gen-y/root-ye.der) [pem](/certs/gen-y/root-ye.pem), [txt](/certs/gen-y/root-ye.txt)
   * Certifikatdetaljer (kryds underskrevet af ISRG Root X2): [der](/certs/gen-y/root-ye-by-x2.der), [pem](/certs/gen-y/root-ye-by-x2.pem), [txt](/certs/gen-y/root-ye-by-x2.txt)
   * CRL værtsnavn: `ye.c.lencr.org`
-  * Test hjemmesider: Kommende mulighed
+  * Test websteder: [gyldigt](https://valid.ye.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.ye.test-certs.letsencrypt.org/), [udløbet](https://expired.ye.test-certs.letsencrypt.org/)
 * **ISRG Root YR**
   * Emne: `O = ISRG, CN = Root YR`
   * Nøgletype: `RSA 4096`
@@ -55,13 +54,13 @@ Disse root certifikater er endnu ikke inkluderet i Root Program Trust Stores, me
   * Certifikatoplysninger (selvsigneret): [, der](/certs/gen-y/root-yr.der) [pem](/certs/gen-y/root-yr.pem), [txt](/certs/gen-y/root-yr.txt)
   * Certifikatdetaljer (underskrevet af ISRG Root X1): [der](/certs/gen-y/root-yr-by-x1.der), [pem](/certs/gen-y/root-yr-by-x1.pem), [txt](/certs/gen-y/root-yr-by-x1.txt)
   * CRL værtsnavn: `yr.c.lencr.org`
-  * Test hjemmesider: Kommende mulighed
+  * Test websteder: [gyldigt](https://valid.yr.test-certs.letsencrypt.org/), [tilbagekaldt](https://revoked.yr.test-certs.letsencrypt.org/), [udløbet](https://expired.yr.test-certs.letsencrypt.org/)
 
 Se [Certificate Compatibility](/docs/cert-compat) for yderligere information om kompatibiliteten af vores rodcertifikater med forskellige enheder og trust stores.
 
 # Underordnede (CA'er)
 
-Vi vedligeholder i øjeblikket otte mellemled i aktiv rotation. Abonnementscertifikater med en offentlig ECDSA-nøgle vil blive udstedt fra en af ECDSA-underordnet CA. Tilsvarende udstedes Abonnementscertifikater med en offentlig RSA-nøgle fra en af RSA-underordnet CA. Abonnentcertifikater udstedt under "classic" og "tlsclient" [profiler](/docs/profiles) vil blive udstedt fra en af de fire første mellemled, der er opført på listen (E7 til R13). Omvendt vil abonnentcertifikater udstedt under "tlsserveren" og "shortlived" profiler blive udstedt fra en af de sidste fire mellemled (YE1 gennem YR2).
+Vi vedligeholder i øjeblikket otte mellemled i aktiv rotation. Abonnementscertifikater med en offentlig ECDSA-nøgle vil blive udstedt fra en af ECDSA-underordnet CA. Tilsvarende udstedes Abonnementscertifikater med en offentlig RSA-nøgle fra en af RSA-underordnet CA. Abonnentcertifikater udstedt under "tlsclient" [profiler](/docs/profiles) vil blive udstedt fra en af de fire første intermediate, der er opført på listen (E7 til R13). Omvendt vil abonnentcertifikater udstedt under "classic, "tlsserveren" og "shortlived" profilerne blive udstedt fra en af de sidste fire intermediate (YE1 gennem YR2).
 
 Alle underordnede certifikatemner har et landefelt på `C = US`.
 

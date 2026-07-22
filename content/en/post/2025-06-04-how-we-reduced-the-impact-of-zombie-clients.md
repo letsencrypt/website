@@ -4,7 +4,7 @@ date: 2025-06-04T00:00:00Z
 slug: how-we-reduced-the-impact-of-zombie-clients
 title: "How We Reduced the Impact of Zombie Clients"
 excerpt: "A new rate limit significantly reduced the load on our infrastructure."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
@@ -63,7 +63,7 @@ Currently, the user interface for an affected subscriber looks like this:
 
 <img src="/images/blog/blog-2025-06-04--image1.jpg" class="blog-image-constrained my-5" alt="Let's Encrypt unpause interface">
 
-This link would be provided via an ACME error message in response to any request that was blocked due to a pause account-hostname pair.
+This link would be provided via an ACME error message in response to any request that was blocked due to a paused account-hostname pair.
 
 As it's turned out, the unpause option shown above has only been used by about 3% of affected accounts! This goes to show that most of the zombies we've paused were, in fact, well and truly forgotten about.
 

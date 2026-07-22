@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2025-12-19
+lastmod: 2026-07-14
 show_lastmod: false
 ---
 
@@ -26,18 +26,16 @@ The classic profile is the default profile selected for all orders which do not 
 | [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
 | [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | <a href="#footnote-3">Yes<sup>‡</sup></a> |
 | [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
 | [Validity Period](#validity-period)                                  | 90 days                                   |
 | [Revocation Information](#revocation-information)                    | CRL                                       |
 | [Max Names](#max-names)                                              | 100                                       |
 | [Identifier Types](#identifier-types)                                | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
-<sup id="footnote-3">‡</sup>: Until February 11, 2026. See [deprecation timeline information](/2025/05/14/ending-tls-client-authentication/) for a full timeline.
 </div>
 <div class="boxed">
 
@@ -47,7 +45,7 @@ The tlsserver profile is a new profile which updates several of these validation
 
 The pending authorization lifetime has been reduced to further encourage automation: fully automated systems can complete a validation challenge within seconds, so a lifetime of just one hour is more than enough. The authorization reuse period has been reduced to seven hours. This is because the Baseline Requirements require that we re-check Certificate Authority Authorization (CAA) after eight hours, so limiting the reuse period means that we don't have to perform rechecks. The order lifetime has been reduced to the sum of two authorization lifetimes, because there is little purpose to having an order that outlives the authorizations it depends on.
 
-The issued certificate no longer contains any of the fields discussed above. The Common Name has been omitted, as it is redundant with the Subject Alternative Names and is marked as NOT RECOMMENDED by the Baseline Requirements. The Key Encipherment key usage is omitted because it is only relevant when using non-forward-secret TLS cipher suites, which have been removed by all major browsers due to the importance of forward-secrecy. The TLS Client Auth extended key usage is omitted to comply with upcoming root program requirements that require "single-purpose" (i.e. single EKU) certificates. And the Subject Key ID extension is omitted because it serves no purpose in end-entity certificates and is NOT RECOMMENDED by the Baseline Requirements.
+The issued certificate omits the Common Name, as it is redundant with the Subject Alternative Names and is marked as NOT RECOMMENDED by the Baseline Requirements. The Key Encipherment key usage is omitted because it is only relevant when using non-forward-secret TLS cipher suites, which have been removed by all major browsers due to the importance of forward-secrecy. The Subject Key ID extension is omitted because it serves no purpose in end-entity certificates and is NOT RECOMMENDED by the Baseline Requirements. And finally the resulting certificate is valid for only 45 days, in preparation for upcoming restrictions that will limit all certificates to at most 47 days.
 
 | Property                                                             | Value   |
 |----------------------------------------------------------------------|---------|
@@ -56,9 +54,8 @@ The issued certificate no longer contains any of the fields discussed above. The
 | [Order Lifetime](#order-lifetime)                                    | 8 hours |
 | [Certificate Common Name](#certificate-common-name)                  | No      |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | No      |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No      |
 | [Subject Key ID](#subject-key-identifier-extension)                  | No      |
-| [Validity Period](#validity-period)                                  | 90 days |
+| [Validity Period](#validity-period)                                  | 45 days |
 | [Revocation Information](#revocation-information)                    | CRL     |
 | [Max Names](#max-names)                                              | 25      |
 | [Identifier Types](#identifier-types)                                | DNS     |
@@ -68,7 +65,7 @@ The issued certificate no longer contains any of the fields discussed above. The
 
 ## shortlived
 
-The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. This means the certificates can be even smaller, and removes any possibility of a client accidentally trusting a certificate after it has been revoked.
+The shortlived profile is identical to the tlsserver profile, with one key distinction: the resulting certificate is only valid for 6ish days. This allows these certificates to qualify as "Short-Lived Subscriber Certificates" under the Baseline Requirements, which means they do not need to contain any revocation information. This means the certificates can be even smaller, and removes any possibility of a client accidentally trusting a certificate after it has been revoked. Today, these certificates still include a CRL URL, as shown in the table below, but [that may change in the future](https://github.com/letsencrypt/boulder/issues/7673).
 
 We recommend this profile for those who fully trust their automation to renew their certificates on time. This profile is not for everyone. 
 
@@ -79,7 +76,6 @@ We recommend this profile for those who fully trust their automation to renew th
 | [Order Lifetime](#order-lifetime)                                    | 8 hours   |
 | [Certificate Common Name](#certificate-common-name)                  | No        |
 | [Key Encipherment KU](#key-encipherment-key-usage)                   | No        |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | No        |
 | [Subject Key ID](#subject-key-identifier-extension)                  | No        |
 | [Validity Period](#validity-period)                                  | 160 hours |
 | [Revocation Information](#revocation-information)                    | CRL       |
@@ -91,38 +87,10 @@ We recommend this profile for those who fully trust their automation to renew th
 
 ## tlsclient
 
-The tlsclient profile is _currently_ identical to the classic profile. However,
-as [announced on our blog](/2025/05/14/ending-tls-client-authentication):
+As of July 8, 2026, this profile is no longer available.
 
-- on February 11, 2026, the TLS Client Auth EKU will be removed from the classic
-  profile, but will remain in this profile; and
-- on May 13, 2026, this profile will cease to exist.
-
-This profile exists for the sole purpose of allowing Subscribers who need access
-to TLS Client Auth certificates to retain that EKU for slightly longer, to
-ease their transition into a TLS Server Auth-only world. If you do not
-specifically need the TLS Client Auth EKU, or if you do need it but are able to
-migrate away from it before February 2026, then you can and should safely ignore
-this profile.
-
-
-| Property                                                             | Value                                     |
-|----------------------------------------------------------------------|-------------------------------------------|
-| [Pending Authorization Lifetime](#pending-authorization-lifetime)    | 7 days                                    |
-| [Authorization Reuse Period](#authorization-reuse-period)            | 30 days                                   |
-| [Order Lifetime](#order-lifetime)                                    | 7 days                                    |
-| [Certificate Common Name](#certificate-common-name)                  | <a href="#footnote-1">Yes<sup>*</sup></a> |
-| [Key Encipherment KU](#key-encipherment-key-usage)                   | <a href="#footnote-2">Yes<sup>†</sup></a> |
-| [TLS Client Auth EKU](#tls-client-authentication-extended-key-usage) | Yes                                       |
-| [Subject Key ID](#subject-key-identifier-extension)                  | Yes                                       |
-| [Validity Period](#validity-period)                                  | 90 days                                   |
-| [Revocation Information](#revocation-information)                    | CRL                                       |
-| [Max Names](#max-names)                                              | 100                                       |
-| [Identifier Types](#identifier-types)                                | DNS                                       |
-
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
-
-<sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
+Certificates issued with the tlsclient profile contained the TLS Client Auth EKU.
+It was otherwise identical to the classic profile.
 </div>
 
 # Selecting a Profile
@@ -131,7 +99,7 @@ The process for selecting a profile is described in [this Internet-Draft](https:
 
 In general, if you want to select a profile, you should:
 
-1. Read your ACME client's documentation to see if it support profile selection, and if it does, how to tell it which profile you want.
+1. Read your ACME client's documentation to see if it supports profile selection, and if it does, how to tell it which profile you want.
 2. Fetch the Let's Encrypt [production](https://acme-v02.api.letsencrypt.org/directory) or [staging](https://acme-staging-v02.api.letsencrypt.org/directory) directory object to see which profiles are available.
 3. Configure your desired profile within your ACME client.
 
@@ -147,7 +115,7 @@ This is how long an ACME client has to complete a domain control validation chal
 
 ### Authorization Reuse Period
 
-This is how long an already-validated Authorization can be reused by new Orders containing the same identifier. The clock starts when a challenge is successfully fulfilled, and is represented by the [`expires` timestamp](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4) in the valid Authorization object. This value is restricted to [at most 398 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions) by the Baseline Requirements.
+This is how long an already-validated Authorization can be reused by new Orders containing the same identifier. The clock starts when a challenge is successfully fulfilled, and is represented by the [`expires` timestamp](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4) in the valid Authorization object. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions) require this period not to exceed 200 days; the limit falls to 100 days for certificates issued from March 15, 2027, and to 10 days from March 15, 2029.
 
 ### Order Lifetime
 
@@ -165,17 +133,13 @@ TLS Certificates can contain names (e.g. domain names or IP addresses) in two pl
 
 TLS Certificates have a ["Key Usage" extension](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3), which determines what sorts of cryptographic operations the key contained in the certificate is allowed to perform. All Let's Encrypt certificates contain the Digital Signature KU, which is necessary to perform TLS handshakes. The Key Encipherment KU was historically required by old versions of TLS to perform certain kinds of handshakes with RSA keys. However, those operations are now known to be insecure, and have been deprecated and removed from browsers for several years now. Including the Key Encipherment key usage is now [NOT RECOMMENDED by the Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#712711-subscriber-certificate-key-usage).
 
-### TLS Client Authentication Extended Key Usage
-
-In addition to the above, TLS Certificates also have an ["Extended Key Usage" extension](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12), which provides an extra layer of granularity to the Key Usage extension described above. The two most common extended key usages are TLS Server Auth (which allows the certificate to be presented by a server during a TLS handshake) and TLS Client Auth (which allows the certificate to be presented by a _client_ during a TLS handshake). Support for [TLS Client Authentication is being phased out](/2025/05/14/ending-tls-client-authentication/) in 2026.
-
 ### Subject Key Identifier Extension
 
 TLS Certificates can have a ["Subject Key Identifier" extension](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2), which provides a short string that uniquely identifies the public key present in the certificate. This extension is very important for CA certificates, because it allows browsers to quickly find the CA certificate which issued the end-entity certificate being presented by a website. However, the extension serves no purpose in end-entity certificates, and including it is now NOT RECOMMENDED by the Baseline Requirements.
 
 ### Validity Period
 
-This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. This value is restricted to [at most 398 days](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) by the Baseline Requirements.
+This governs the amount of time between the [`notBefore` and `notAfter` timestamps](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5) that are embedded in a TLS Certificate, in other words, how long the certificate will be trusted before it expires. The [Baseline Requirements](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods) require this period not to exceed 200 days; the limit falls to 100 days for certificates issued from March 15, 2027, and to 47 days from March 15, 2029.
 
 ### Revocation Information
 

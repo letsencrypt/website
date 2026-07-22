@@ -14,7 +14,7 @@ In total, it took just two Tailscale engineers less than two days to implement A
 
 Tailscale noted that ARI was especially useful to add before certificates' validity period starts shortening, as their client software in charge of requesting and renewing certificates is running on user machines. This makes it so they cannot easily update the whole fleet overnight if any issues come up. Thanks to ARI, they've reduced the risk of not rotating certificates for client machines in time, or causing excessive load on Let's Encrypt's infrastructure with overly-eager rotation logic.
 
-One consideration the Tailscale team factored in deciding to adopt ARI was wanting to avoid adding a hard dependency on the Let's Encrypt infrastructure for renewal. To remedy this, Tailscale certificate renewal logic falls back to local time-based check if the ARI endpoint cannot be reached for any reason.
+One consideration the Tailscale team factored in deciding to adopt ARI was wanting to avoid adding a hard dependency on the Let's Encrypt infrastructure for renewal. To remedy this, Tailscale certificate renewal logic falls back to a local time-based check if the ARI endpoint cannot be reached for any reason.
 
 Tailscale's roadmap for getting ARI in production:
 

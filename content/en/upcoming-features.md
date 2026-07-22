@@ -1,7 +1,7 @@
 ---
 title: Upcoming Features
 slug: upcoming-features
-lastmod: 2025-12-17
+lastmod: 2026-03-16
 show_lastmod: 1
 ---
 
@@ -11,7 +11,7 @@ For announcements of upcoming changes, please [subscribe to the Technical Update
 
 ## Removal of TLS Client Authentication EKU
 
-On February 11, 2026, we intend to [remove the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. Prior to that date, we will offer an alternative profile which will still contain that EKU, but note that this will be a temporary stop-gap for clients that need more time to migrate away from needing it: that alternate profile will go away on May 13, 2026.
+On February 11, 2026, we [removed the "TLS Client Authentication" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) from our default certificate profile. As a temporary stop-gap for clients that need more time to migrate, we have a [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profile available. Subscribers who are already using it prior to May 13, 2026 may continue to use it until July 8, 2026.
 
 ## Decreasing Certificate Lifetimes to 45 Days
 
@@ -22,7 +22,7 @@ To comply with CA/Browser Forum Baseline Requirement changes, we are
 
 ## Shutdown of Expiration Notification Emails
 
-On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and delete all email addresses associated with ACME accounts from our production database.
+On June 4, 2025, we [turned off our expiration email notification service](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), and deleted all email addresses associated with ACME accounts from our production database.
 
 ## Removal of OCSP URLs
 
@@ -40,7 +40,7 @@ Clients which support the [draft ACME Profiles extension](https://www.ietf.org/a
 
 Enabled: [March 14, 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
 
-We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. These logs are now usable to fulfill browser's CT requirements. The [CT Logs Documentation](https://letsencrypt.org/docs/ct-logs/) has a list of our current logs.
+We now operate Certificate Transparency (CT) logs which conform to the new [Static CT API Spec](https://c2sp.org/static-ct-api), running the [Sunlight](https://github.com/FiloSottile/sunlight) software. These logs are now usable to fulfill browsers' CT requirements. The [CT Logs Documentation](https://letsencrypt.org/docs/ct-logs/) has a list of our current logs.
 
 ## ACME Renewal Information (ARI)
 
@@ -50,9 +50,8 @@ We now provide suggested renewal windows for all issued certificates, which clie
 
 ## Short-lived Certificates
 
-Client may [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) using ACME Profiles. These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all.
+Clients may [request a "shortlived" certificate](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) using ACME Profiles. These certificates are valid for such a short time that they do not need to have revocation information embedded in them at all.
 
 ## IP Address Certificates
 
 Shortlived certificates (see above) can request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
-

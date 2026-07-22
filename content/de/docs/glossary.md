@@ -1,30 +1,31 @@
 ---
 title: Glossar
 slug: glossary
-date: 2024-07-16
+lastmod: 2025-07-31
 show_lastmod: 1
+description: "Ein Glossar der von Let's Encrypt verwendeten Begriffe im Zusammenhang mit SSL/TLS-Zertifikaten, HTTPS und Websicherheit."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
-    abbr="an accronym (optional)"
+    abbr="an acronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
-    
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
 
 -->
 
-{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Eine Zertifikat-[Erweiterung](#def-extension) um [User Agents](#def-user-agent) anzuzeigen, wie sie Informationen über den Aussteller des [Zertifikat](#def-certificate) erhalten. Typischerweise spezifiziert sie die [OCSP](#def-OCSP) URI und die [Aussteller-URI](#def-CAI). {{% /def %}}
+{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Eine Zertifikat-[Erweiterung](#def-extension) um [User Agents](#def-user-agent) anzuzeigen, wie sie Informationen über den Aussteller des [Zertifikat](#def-certificate) erhalten. Es gibt typischerweise die [Aussteller-URI](#def-CAI) an. {{% /def %}}
 
 {{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} Das Protokoll, welches [Let's Encrypt](#def-LE) implementiert verwendet. Software, die kompatibel zu diesem Protokoll ist, kann zur Kommunikation mit Let's Encrypt benutzt werden, um nach einem [Zertifikat](#def-leaf) zu fragen. [ACME RFC](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
@@ -60,11 +61,11 @@ Note for translators:
 
 {{% def id="CRL" name="Certificate Revocation List" abbr="CRL" %}} Eine Methode, um [User Agents](#def-user-agent) über das [Sperren](#def-revocation) von [Zertifikaten](#def-leaf) zu informieren. Dies ist eine Liste von Seriennummern von allen gesperrten Zertifikaten, ausgestellt von der angegebenen CA und von dieser CA signiert. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_revocation_list) {{% /def %}}
 
-{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} Eine signierte Datei mit den notwendigen Informationen für eine [CA](#def-CA) zur Generierung eines Zertifikats. Relevante Information für [Let's Encrypt](#def-LE) sind die [Common Name](#def-CN), [Subject Alternative Names](#def-SAN) und Subject Public Key Info. Typischerweise generieren [Client-Anwendungen](#def-ACME-client) automatisch den CSR für den Nutzer, auch ein Web-Hosting Provider oder ein Gerät generieren auch ein CSR. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
+{{% def id="CSR" name="Certificate Signing Request" abbr="CSR" %}} Eine signierte Datei, die die von der [CA](#def-CA) benötigten Informationen zur Erstellung eines Zertifikats enthält. Relevante Information für [Let's Encrypt](#def-LE) sind die [Common Name](#def-CN), [Subject Alternative Names](#def-SAN) und Subject Public Key Info. Typischerweise generieren [Client-Anwendungen](#def-ACME-client) automatisch den CSR für den Nutzer, auch ein Web-Hosting Provider oder ein Gerät generieren auch ein CSR. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_signing_request) {{% /def %}}
 
 {{% def id="store" name="Certificate Store" %}} Ein Zertifikatspeicher enthält eine Liste von [Roots](#def-root), denen vertraut wird. Betriebssysteme (wie Windows, Android oder Debian) und [Web Browser](#def-web-browser) (wie Firefox) verwalten einen Zertifikatspeicher. Browser ohne Zertifikatspeicher halten sich an den des Betriebssystems. Durch [Let's Encrypt](#def-LE) bereitgestellte [Zertifikate](#def-leaf) werden von [den meisten Zertifikatspeichern vertraut](/certificates). {{% /def %}}
 
-{{% def id="subject" name="Certificate subject" %}} Das Betreff-Feld ("Subject") eines Zertifikats zeigt an, wofür ein Zertifikat ist. Es enthät typischerweise Felder wie [Common Name](#def-CN), Land und Organisation. {{% /def %}}
+{{% def id="subject" name="Certificate subject" %}} Das Feld "Betreff" eines Zertifikats gibt an, worum es in dem Zertifikat geht. Es enthät typischerweise Felder wie [Common Name](#def-CN), Land und Organisation. {{% /def %}}
 
 {{% def id="CT" name="Certificate Transparency" abbr="CT" %}} Um die Sicherheit zu verbessern müssen Zertifikate (oder [Vorzertifikate](#def-precertificate)) in Certificate Transparency Logs: https://www.certificate-transparency.org/ veröffentlicht werden. [Let's Encrypt](#def-LE) generiert und veröffentlicht [Vorzertifikate](#def-precertificate) und speichert sie anschliessend zusammen mit dem [Zertifikat](#def-leaf) in einer Liste von [SCTs](#def-SCT). Einige [Browser](#def-web-browser), wie Google Chrome, erfordern das Vorhandensein eines solchen "verifizierbaren Versprechen" um ein Zertifikat zu validieren. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
@@ -112,11 +113,11 @@ Note for translators:
 
 {{% def id="mixed-content" name="Mixed content" %}} Wenn eine HTTPS Webseite Unterresourcen (Javascript, CSS oder Bilder) über HTTP lädt. [Browser](#def-web-browser) blockieren möglicherweise gemischten Inhalt oder markieren die Seite als weniger sicher, wenn gemischter Inhalt vorhanden ist: https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. Um das Problem zu lösen, muss ein Webentwickler die Seite so ändern, dass alle Ressourcen HTTPS URLs benutzen. [Entwicklerwerkzeuge](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools), eingebaut in Browser, können benutzt werden, um herauszufinden, welche Resourcen Probleme mit gemischten Inhalten verursachen. {{% /def %}}
 
-{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} Eine Methode zur Überprüfung des [Sperrstatus](#def-revocation) eines [Zertifikats](#def-leaf). In anderen Worte, ein Weg zu überprüfen, ob eine [Certificate Authority](#def-CA) anzeigt, dass das Zertifikat nicht länger gültig sein sollte, auch wenn das Ablaufdatum noch nicht erreicht ist. Diese Anfragen können Probleme mit der Privatsphäre verursachen, denn es erlaubt der Zertifizierungsstelle und Internet Service Providern direkte Beobachtung, wer welche Seiten besucht hat. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} Eine Methode zur Überprüfung des [Sperrstatus](#def-revocation) eines [Zertifikats](#def-leaf). In anderen Worte, ein Weg zu überprüfen, ob eine [Certificate Authority](#def-CA) anzeigt, dass das Zertifikat nicht länger gültig sein sollte, auch wenn das Ablaufdatum noch nicht erreicht ist. Diese Anfragen können Probleme mit der Privatsphäre verursachen, denn es erlaubt der Zertifizierungsstelle und Internet Service Providern direkte Beobachtung, wer welche Seiten besucht hat. [Let's Encrypt](#def-LE) bietet keinen OCSP Service mehr an. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} Eine [Zertifikat](#def-leaf) Erweiterung, die den [Browser](#def-web-browser) informiert, dass der [Web Server](#def-web-server) mit dem Zertifikat [OCSP Stapling](#def-OCSP-stapling) benutzen muss. Es wird benutzt, um einen aktuellen [Sperrstatus](#def-revocation) des [Zertifikats](#def-leaf) vom Webserver bei jeder Verbindung bestätigt zu bekommen, was Sperrungen mehr sinnvoll macht. [Let's Encrypt](#def-LE) kann Zertifikate mit OCSP Must-Staple [Erweiterung](#def-extension) ausstellen. [Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} Eine [Zertifikat](#def-leaf) Erweiterung, die den [Browser](#def-web-browser) informiert, dass der [Web Server](#def-web-server) mit dem Zertifikat [OCSP Stapling](#def-OCSP-stapling) benutzen muss. Es wird benutzt, um einen aktuellen [Sperrstatus](#def-revocation) des [Zertifikats](#def-leaf) vom Webserver bei jeder Verbindung bestätigt zu bekommen, was Sperrungen mehr sinnvoll macht. [Let's Encrypt](#def-LE) unterstützt dies nicht mehr. [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP stapling" %}} Ein Weg für [Web Server](#def-web-server), um zum [Browser](#def-web-browser) eine [OCSP](#def-OCSP) Antwort signiert von der [Zertifizierungsstelle](#def-CA) zu senden, sodass der Browser nicht selbst eine zweite OCSP Anfrage zur CA senden muss, verbessert Geschwindigkeit und Privatsphäre. Auch bekannt als TLS Certificate Status Request extension. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP stapling" %}} Ein Weg für [Web Server](#def-web-server), um zum [Browser](#def-web-browser) eine [OCSP](#def-OCSP) Antwort signiert von der [Zertifizierungsstelle](#def-CA) zu senden, sodass der Browser nicht selbst eine zweite OCSP Anfrage zur CA senden muss, verbessert Geschwindigkeit und Privatsphäre. Auch bekannt als TLS Certificate Status Request extension. Beachten Sie, dass [Let's Encrypt](#def-LE) OCSP nicht unterstützt. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs sind einzigartige numerische Bezeichner, standardisiert von der International Telecommunications Union (ITU) und ISO/IEC. OIDs werden mit Zertifikaten zur Definition von Erweiterungen, Feldern und Anforderungen. Internet Standards und [Certificate Policy](#def-CP) und [Certification Practice Statement](#def-CPS) dokumentieren die Nutzung von OID. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
@@ -128,13 +129,15 @@ Note for translators:
 
 {{% def id="precertificate" name="Precertificate" %}} Vorzertifikate sind Teil der [Certificate Transparency](#def-CT). Ein Vorzertifikat ist eine Kopie des [Zertifikat](#def-leaf), dass eine CA beabsichtigt auszustellen mit einer  [kritischen](#def-critical) Erweiterung ausgestattet, um zu verhindern, dass das Vorzertifikat von Software in der Welt akzeptiert wird. Eine CA sendet ein Vorzertifikat zum [CT logs](#def-CT-log) in Austausch für [SCTs](#def-SCT). Da ein Vorzertifikat nicht identisch ist mit seinem korrespondierenden Zertifikat, loggt Certificate Transparency am Ende beide. [RFC 6962 Section 3.1](https://tools.ietf.org/html/rfc6962#section-3.1) {{% /def %}}
 
+{{% def id="profile" name="Profile" %}} Ein Profil ist eine Sammlung von Eigenschaften, die sowohl die Validierung als auch den endgültigen Inhalt eines Zertifikats beeinflussen. In der [Profil-Dokumentation](/docs/profiles) finden Sie Beschreibungen der einzelnen Profile, deren Auswirkungen und Hinweise zur Auswahl. {{% /def %}}
+
 {{% def id="HPKP" name="HTTP Public Key Pinning" abbr="HPKP" %}} Ein Sicherheitsmechanismus, der Browser fragt, ob die [Zertifikatkette](#def-chain) eines Webservers für zukünfigte Anfragen benutzt werden soll. Chrome stellte dieses Mechanismus zum Schutz gegen CA Komprimitierungen vor, aber Ausfälle von Seiten verleiteten Chrome dazu, diesen zu [missbilligen und zu löschen](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8). [Wikipedia](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning) {{% /def %}}
 
 {{% def id="PSL" name="Public Suffix List" abbr="PSL" %}} Eine Liste von *Public Suffixes* verwaltet von Mozilla, zeigt an, welche Internet-Domains verfügbar sind für viele separate Entitäten zum Registrieren von Sub-Domains. Zum Beispiel, die Liste zeigt an, dass beide `com` und `co.uk` sind Public Suffixes, wobei  `co.uk` keine TLD ist. Web Browser benutzen die Liste für einige andere Dinge, um zu verhindern, dass Webseiten, die wahrscheinlich von verschiedenen Entitäten betrieben werden, Web-Cookies miteinander teilen. [Let's Encrypt](#def-LE) benutzt die Liste auch zum Berechnen der Rate Limits: [/docs/rate-limits](/docs/rate-limits). https://publicsuffix.org/ {{% /def %}}
 
 {{% def id="relying-party" name="Relying Party" %}} Die Person, die sich auf Information in einem Zertifikat verlässt. Zum Beispiel, jemand, der eine HTTPS Webseite besucht, ist ein Relying Party. {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} Ein Zertifikat ist gültig bis es abläuft, es sei denn, die [CA](#def-CA) sagt, dass es gesperrt ist. Das Zertifikat kann aus verschiedenen Gründen gesperrt sein wie etwa Komprimierung des privaten Schlüssels. Browser können überprüfen, ob ein Zertifikat gesperrt ist durch Benutzung [CRL](#def-CRL), [OCSP](#def-OCSP) oder neueren Methoden wie [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) und [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Beachten Sie, dass [Sperrungen in vielen Situationen nicht funktionieren](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} Ein Zertifikat ist gültig bis es abläuft, es sei denn, die [CA](#def-CA) sagt, dass es gesperrt ist. Das Zertifikat kann aus verschiedenen Gründen gesperrt sein wie etwa Komprimierung des privaten Schlüssels. Browser können mithilfe einer [CRL](#def-CRL) oder neuerer Methoden wie [CRLite](https://github.com/mozilla/crlite/) und [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets) prüfen, ob ein Zertifikat widerrufen wurde. Beachten Sie, dass [Sperrungen in vielen Situationen nicht funktionieren](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} Ein [selbstsigniertes](#def-self-signed) Zertifikat, kontrolliert von einer [Zertifizierungsstelle](#def-CA), benutzt zur Signierung des [Zwischenzertifikats](#def-intermediate) und liegt im [Zertifikatspeicher](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 

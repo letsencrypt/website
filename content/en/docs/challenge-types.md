@@ -1,7 +1,7 @@
 ---
 title: Challenge Types
 slug: challenge-types
-lastmod: 2025-12-03
+lastmod: 2026-02-12
 show_lastmod: 1
 ---
 
@@ -48,7 +48,7 @@ Pros:
 Cons:
 
 - It doesn’t work if your ISP blocks port 80 (this is rare, but some residential ISPs do this).
-- Let’s Encrypt doesn’t let you use this challenge to issue wildcard certificates.
+- This challenge cannot be used to issue wildcard certificates.
 - If you have multiple web servers, you have to make sure the file is available on all of them.
 
 # DNS-01 challenge
@@ -108,7 +108,7 @@ Pros:
 
 - You can use this challenge to issue certificates containing wildcard domain names.
 - It works well even if you have multiple web servers.
-- You can use this challenge to domain names whose webservers aren't exposed to the public internet.
+- You can use this challenge to validate domain names whose webservers aren't exposed to the public internet.
 
 Cons:
 
@@ -148,7 +148,7 @@ Cons:
 # TLS-SNI-01
 
 This challenge was defined in draft versions of ACME. It did a TLS
-handshake on port 443 and sent a specific [SNI] header, looking for
+handshake on port 443 and sent a specific [SNI] header, looking for a
 certificate that contained the token. It [was removed in March
 2019][tls-sni-disablement] because it was not secure enough.
 

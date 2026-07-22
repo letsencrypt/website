@@ -1,7 +1,7 @@
 ---
 title: 测试环境
 slug: staging-environment
-lastmod: 2025-11-25
+lastmod: 2026-04-10
 show_lastmod: 1
 ---
 
@@ -20,15 +20,15 @@ show_lastmod: 1
 
 测试环境与[生产环境的速率限制](/docs/rate-limits)类似，但具体数值有所不同：
 
-* **[单个 IP 地址注册限制](/docs/rate-limits/#new-registrations-per-ip-address)**为每 3 小时 50 次。
-* **[单个 IPv6 子网注册限制](/docs/rate-limits/#new-registrations-per-ipv6-range)**为每 3 小时 500 次（与生产环境相同）。
-* **[单个账户证书申请限制](/docs/rate-limits/#new-orders-per-account)**为每 3 小时 1500 次。
-* **[单个注册域名证书申请限制](/docs/rate-limits/#new-certificates-per-registered-domain)**为每秒 30000 次。
-* **[相同域名集合证书申请限制](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)**为每周 30000 次。
-* **[单个账户同一域名验证失败次数限制](/docs/rate-limits/#authorization-failures-per-hostname-per-account)**为每小时 200 次。
-* **[单个账户同一域名连续验证失败次数限制](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)**为每 6 小时 3600 次。
+* **[单个 IP 地址注册限制](/docs/rate-limits/#单个-ip-地址注册限制)** 为每 3 小时 50 次。
+* **[单个 IPv6 子网注册限制](/docs/rate-limits/#单个-ipv6-子网注册限制)** 为每 3 小时 500 次（与生产环境相同）。
+* **[单个账户证书申请限制](/docs/rate-limits/#单个账户证书申请限制)** 为每 3 小时 1500 次。
+* **[单个注册域名证书申请限制](/docs/rate-limits/#单个注册域名证书申请限制)** 为每秒 30000 次。
+* **[相同标识符集合证书申请限制](/docs/rate-limits/#相同标识符集合证书申请限制)** 为每周 30000 次。
+* **[单个账户同一标识符验证失败次数限制](/docs/rate-limits/#单个账户同一标识符验证失败次数限制)** 为每小时 200 次。
+* **[单个账户同一标识符连续验证失败次数限制](/docs/rate-limits/#单个账户同一标识符连续验证失败次数限制)** 为每 6 小时 3600 次。
 
-[整体请求频率限制](/docs/rate-limits/#overall-requests-limit)为：
+[整体请求频率限制](/docs/rate-limits/#整体请求频率限制)为：
 
 | 接口                 | 单 IP 每秒请求上限 | 突发容量 |
 | ------------------ | ----------- | ---- |
@@ -54,21 +54,25 @@ show_lastmod: 1
   * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
   * 密钥类型：`RSA 4096`
   * 证书详细信息：[der](/certs/staging/letsencrypt-stg-root-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+  * 测试网站：[正常证书](https://valid.x1.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x1.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.x1.staging-test-certs.letsencrypt.org/)
 * **Bogus Broccoli X2**
   * 证书主体：`O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
   * 密钥类型：`ECDSA P-384`
   * 证书详细信息（自签名版本）：[der](/certs/staging/letsencrypt-stg-root-x2.der)、[pem](/certs/staging/letsencrypt-stg-root-x2.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der)、[pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem)、[txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+  * 测试网站：[正常证书](https://valid.x2.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x2.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.x2.staging-test-certs.letsencrypt.org/)
 * **Yearning Yucca Root YE**
   * 证书主体：`O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
   * 密钥类型：`ECDSA P-384`
   * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-ye.der)、[pem](/certs/staging/gen-y/root-ye.pem)、[txt](/certs/staging/gen-y/root-ye.txt)
   * 证书详细信息（Bogus Broccoli X2 交叉签名的版本）：[der](/certs/staging/gen-y/root-ye-by-x2.der)、[pem](/certs/staging/gen-y/root-ye-by-x2.pem)、[txt](/certs/staging/gen-y/root-ye-by-x2.txt)
-* **Yearning Yonder Yam Root YR**
+  * 测试网站：[正常证书](https://valid.ye.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.ye.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.ye.staging-test-certs.letsencrypt.org/)
+* **Yonder Yam Root YR**
   * 证书主体：`O = ISRG, CN = (STAGING) Yonder Yam Root YR`
   * 密钥类型：`RSA 4096`
   * 证书详细信息（自签名版本）：[der](/certs/staging/gen-y/root-yr.der)、[pem](/certs/staging/gen-y/root-yr.pem)、[txt](/certs/staging/gen-y/root-yr.txt)
   * 证书详细信息（Pretend Pear X1 交叉签名的版本）：[der](/certs/staging/gen-y/root-yr-by-x1.der)、[pem](/certs/staging/gen-y/root-yr-by-x1.pem)、[txt](/certs/staging/gen-y/root-yr-by-x1.txt)
+  * 测试网站：[正常证书](https://valid.yr.staging-test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.yr.staging-test-certs.letsencrypt.org/)、[已过期证书](https://expired.yr.staging-test-certs.letsencrypt.org/)
 
 ## 中间证书颁发机构
 

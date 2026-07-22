@@ -20,11 +20,11 @@ Vi har skapat webbsidor för att testa certifikatkedjning till våra
 rotcertifikat.
 
 * Giltigt ISRG Root X1-signerat certifikat
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
+  * [https://valid.x1.test-certs.letsencrypt.org/](https://valid.x1.test-certs.letsencrypt.org/)
 * Återkallat ISRG Root X1-signerat certifikat
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [https://revoked.x1.test-certs.letsencrypt.org/](https://revoked.x1.test-certs.letsencrypt.org/)
 * Utgånget ISRG Root X1-signerat certifikat
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+  * [https://expired.x1.test-certs.letsencrypt.org/](https://expired.x1.test-certs.letsencrypt.org/)
 
 # Mellancertifikat
 

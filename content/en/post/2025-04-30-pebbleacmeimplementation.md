@@ -4,7 +4,7 @@ date: 2025-04-30T00:00:00Z
 slug: pebbleacmeimplementation
 title: "How Pebble Supports ACME Client Developers"
 excerpt: "Our tiny ACME implementation is great for testing and debugging."
-display_default_footer: true
+display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
@@ -39,7 +39,7 @@ Pebble is also deliberately different from Boulder in some places in order to pr
 
 For instance, the Let's Encrypt service currently offers its `newAccount` resource at the path `/acme/new-acct`, whereas Pebble uses a different name `/sign-me-up`, so clients will be reminded to check the directory rather than assuming a specific path. Other substantive differences include:
 
-- Pebble rejects 5% of all requests as having a invalid nonce, even if the nonce was otherwise valid, so clients can test how they respond this error condition
+- Pebble rejects 5% of all requests as having an invalid nonce, even if the nonce was otherwise valid, so clients can test how they respond to this error condition
 - Pebble only reuses valid authorizations 50% of the time, so clients can check their ability to perform validations when they might not have expected to
 - Pebble truncates timestamps to a different degree of precision than Boulder
 - Unlike Boulder, Pebble respects the notBefore and notAfter fields of new-order requests

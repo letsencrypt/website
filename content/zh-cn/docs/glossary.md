@@ -1,7 +1,7 @@
 ---
 title: 术语表
 slug: glossary
-lastmod: 2025-07-31
+lastmod: 2026-07-04
 show_lastmod: 1
 description: "Let's Encrypt 所使用的 SSL/TLS 证书、HTTPS 以及网络安全相关术语的汇总表。"
 ---
@@ -41,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="真实名称记录" english="Canonical Name record" abbr="CNAME" %}} 将一个域名映射到另一个域名（称为真实名称）的 DNS 记录。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/CNAME%E8%AE%B0%E5%BD%95)。 {{% /def %}}
 
-{{% def id="CA" name="证书颁发机构" english="Certificate Authority" abbr="CA" %}} 颁发[证书](#def-leaf)的组织。 [Let's Encrypt](#def-LE)、[IdenTrust](#def-IdenTrust)、Sectigo 和 DigiCert 都是证书颁发机构。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84)。 {{% /def %}}
+{{% def id="CA" name="证书颁发机构" english="Certificate Authority" abbr="CA" %}} 颁发[证书](#def-leaf)的组织。 [Let's Encrypt](#def-LE) 就是一家证书颁发机构。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E8%AF%81%E4%B9%A6%E9%A2%81%E5%8F%91%E6%9C%BA%E6%9E%84)。 {{% /def %}}
 
 {{% def id="CAI" name="CA 颁发者" english="CA Issuers" %}}[AIA](#def-AIA) 字段的一部分，包含[证书](#def-leaf)颁发者的信息。 如果[网页服务器](#def-web-server)没有提供可信的[证书链](#def-chain)，这一信息可能会有用。  {{% /def %}}
 
@@ -73,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="通用名称" english="Common Name" abbr="CN" %}} 证书[主体](#def-subject)信息的一部分，表示证书的所有者。 在[根证书](#def-root)和[中间证书](#def-intermediate)中，通用名称即为[证书颁发机构](#def-CA)面向用户的名称， 而在[叶证书](#def-leaf)中则是证书包含的一个域名。 注意：通用名称最长 63 个字符。 在过去，通用名称还用于表示证书对应的域名，但在现行的互联网标准中，软件只会通过[主体备用名称](#def-SAN)确定证书的有效性。 {{% /def %}}
 
-{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一份具备证书签发能力的证书也可以由不同的[根证书](#def-root)签名。 例如，[Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)由 [IdenTrust](#def-IdenTrust) 交叉签名，因为 Let's Encrypt 的根证书在创立初期还没有得到[证书库](#def-store)的广泛信任。 交叉签名在原理上需要两份[主体](#def-subject)和[密钥对](#def-key-pair)都相同的证书，一份由 Let's Encrypt 的私钥签名，另一份则由 IdenTrust 根证书的私钥签名：[/certificates](/certificates)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/X.509#%E8%AF%81%E4%B9%A6%E9%93%BE%E5%92%8C%E4%BA%A4%E5%8F%89%E8%AE%A4%E8%AF%81)。 {{% /def %}}
+{{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一份具备证书签发能力的证书可以由若干份[根证书](#def-root)签名，这些根证书也可以来自不同的 CA。 一家 CA 为另一家 CA 的证书签名就称为交叉签名。  {{% /def %}}
 
 {{% def id="DANE" name="基于 DNS 的实体认证" english="DNS-based Authentication of Named Entities" abbr="DANE" abbr_first="1" %}} 一种通过 DNS 表明[证书](#def-leaf)或密钥验证方式的机制。  参见[英文维基百科条目](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities)。 {{% /def %}}
 
@@ -81,19 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="域名验证型证书" english="Domain-validated certificate" abbr="DV 证书" abbr_first="1" %}} 此类[证书](#def-leaf)的申请者仅证明了其对域名（而非自称的组织团体）的控制权。 [Let's Encrypt](#def-LE) 只提供 DV 证书，不提供 [OV](#def-OV) 及 [EV](#def-EV) 证书。参见[常见问题](/docs/faq)和[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E5%9E%8B%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
-{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用椭圆曲线密码学的数字签名算法 (DSA)。  参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持在[叶证书（最终实体证书）](#def-leaf)中使用 ECDSA，但暂时没有完整的 ECDSA [证书链](#def-chain)。参见[即将推出的功能](/upcoming-features)。{{% /def %}}
-
-{{% def id="Ed25519" name="Ed25519" %}} [EdDSA](#def-EdDSA) 的一种类型，类似的还有 Ed448。  {{% /def %}}
-
-{{% def id="EdDSA" name="爱德华兹曲线数字签名算法" english="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}} 基于椭圆曲线的现代公钥签名系统，其设计旨在解决椭圆曲线密码的一些常见[实现问题](https://ed25519.cr.yp.to/)。 [Let's Encrypt](#def-LE) 这样的证书颁发机构暂时还不能提供 EdDSA 证书。 参见[英文维基百科条目](https://en.wikipedia.org/wiki/EdDSA)。{{% /def %}}
+{{% def id="ECDSA" name="椭圆曲线数字签名算法" english="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} 一种采用[椭圆曲线密码学](#def-ECC)的数字签名算法。 参见[维基百科条目](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95)。 [Let's Encrypt](#def-LE) 支持 ECDSA。  {{% /def %}}
 
 {{% def id="ECC" name="椭圆曲线密码学" english="Elliptic Curve Cryptography" abbr="ECC" abbr_first="1" %}} 基于椭圆曲线的一种公钥密码学。 相较于非椭圆曲线的加密方式，ECC 在提供同等的安全性的前提下使用更小的密钥。 参见 [Cloudflare 博客文章](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/)和[维基百科条目](https://zh.wikipedia.org/zh-cn/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6)。{{% /def %}}
 
 {{% def id="EV" name="扩展验证" english="Extended Validation" abbr="EV" abbr_first="1" %}} [CA](#def-CA) 在颁发证书前核实对网站具有控制权的法人， 证书中包含法人的具体信息。 [CA](#def-CA) 对此类证书的控制比 [OV](#def-OV) 证书更为严格。 [Let's Encrypt](#def-LE) 不提供 EV 证书。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E6%89%A9%E5%B1%95%E9%AA%8C%E8%AF%81%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
 {{% def id="FQDN" name="完全限定域名" english="Fully qualified domain name" abbr="FQDN" abbr_first="1" %}} 网站的完整域名。 例如，`www.example.com` 就是一个 *FQDN*。  {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} 一家[证书颁发机构](#def-CA)。 IdenTrust 为 [Let's Encrypt](#def-LE) 的[中间证书](#def-intermediate)提供了[交叉签名](#def-cross-signing)：[/certificates](/certificates)。 参见[英文维基百科条目](https://en.wikipedia.org/wiki/IdenTrust)。 {{% /def %}}
 
 {{% def id="intermediate" name="中间证书" english="Intermediate certificate" %}} 由[根证书](#def-root)或另一中间证书签名的、能够为其他证书签名的证书。 此类证书用于为叶证书签名，从而使根证书的私钥可以在离线环境下安全存储。 中间证书会包含在[证书链](#def-chain)中。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89#%E8%AD%89%E6%9B%B8%E7%A8%AE%E9%A1%9E)。 {{% /def %}}
 
@@ -161,9 +155,9 @@ Note for translators:
 
 {{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名 (ccTLD)，又如 `.com`、`.org` 等通用顶级域名 (gTLD)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
 
-{{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。  {{% /def %}}
+{{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。 {{% /def %}}
 
-{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。 {{% /def %}}
+{{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。  {{% /def %}}
 
 {{% def id="UCC" name="统一通信证书" english="Unified Communications Certificate" abbr="UCC" abbr_first="1" %}} 对包含多个[主体备用名称 (SAN)](#def-SAN) 的证书的一种称呼。  {{% /def %}}
 

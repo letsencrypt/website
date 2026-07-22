@@ -13,7 +13,7 @@ other = "Donate"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our  <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
+other = "Read all about our nonprofit work this year in our <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
 
 [home_major_sponsors]
 other = "Major Sponsors and Funders"
@@ -153,8 +153,8 @@ other = "Window Start"
 [certificate_transparency_window_end]
 other = "Window End"
 
-[certification_practices_statement]
-other = "Certification Practices Statement"
+[certification_practice_statement]
+other = "Certification Practice Statement"
 
 [overview]
 other = "Overview"
@@ -385,6 +385,12 @@ other = "More recently updated page available in English"
 [post_hero_breadcrumb_blog]
 other = "Blog"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "Get Involved"
 
@@ -416,7 +422,7 @@ other = "websites"
 other = "More ways we're improving security and privacy"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy-respecting."
 
 [project_prossimo_name]
 other = "Prossimo"
@@ -475,11 +481,11 @@ other = "Other Ways to Give"
 [donate_page_ways_to_give_heading]
 other = "WAYS TO GIVE"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
+# [donate_page_funding_details_stat_percentage]
+# other = "100%"
 
 [donate_page_funding_details_stat_text]
-other = "of the funding for Let's Encrypt comes from charitable contributions."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 # [donate_page_funding_details_paragraph]
 # other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -543,3 +549,171 @@ other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "here"
+
+[donate_2026_page_title]
+other = "Support Our Work!"
+
+[donate_2026_funding_details_stat_text]
+other = "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer."
+
+[donate_2026_shirt_image_alt]
+other = "Limited-edition ISRG Root X1 t-shirt"
+
+[donate_2026_ways_to_give_heading]
+other = "More Ways to Give"
+
+[donate_2026_employer_matching_gifts_title]
+other = "Employer matching gifts"
+
+[donate_2026_employer_matching_gifts_text]
+other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+
+[donate_2026_become_a_sponsor_title]
+other = "Become a sponsor"
+
+[donate_2026_become_a_sponsor_text]
+other = "Nearly 100 companies and organizations support our work – from two-person businesses to nonprofits to Fortune 100 companies. Join our roster of generous sponsors that are helping to provide a more secure and privacy respecting Internet for billions of people."
+
+[donate_2026_become_a_sponsor_link_text]
+other = "here"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Learn more {{ .sponsorshipLink }}."
+
+[donate_2026_donate_stock_title]
+other = "Donate stock"
+
+[donate_2026_donate_stock_intro_text]
+other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "Brokerage Firm:"
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "Account Name:"
+
+[donate_2026_donate_stock_account_name_value]
+other = "Internet Security Research Group"
+
+[donate_2026_donate_stock_account_number]
+other = "Account #:"
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC #:"
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "Tax ID #:"
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "Please contact us if you are transferring securities at {{ .donateEmailLink }} to ensure that we are able to credit you for your gift."
+
+[donate_2026_donate_stock_online_text]
+other = "You can also donate stock in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_donate_cryptocurrency_title]
+other = "Donate cryptocurrency"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "We are able to accept most cryptocurrency by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_donor_advised_funds_title]
+other = "Donor Advised Funds (DAFs)"
+
+[donate_2026_donor_advised_funds_text]
+other = "Simply inform your DAF sponsor that you’d like to make a gift to:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "You can also donate through your DAF via DAFpay in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
+
+[donate_2026_org_name]
+other = "Internet Security Research Group"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "Planned/Legacy giving"
+
+[donate_2026_planned_legacy_giving_text]
+other = "Please consider making ISRG a beneficiary of your will or retirement plan to help protect Internet users by lowering monetary, technological, and informational barriers to a more secure and privacy-respecting Internet."
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "Have you already included ISRG in your estate plans? {{ .legacyGivingFormLink }}."
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "While documenting your planned gift is confidential and non-binding, it allows us to plan for the future and thank you for your generosity today."
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "Please seek the advice of your financial or legal advisor."
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "Qualified Charitable Distribution"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "If you are 70½ or older, you can give directly from your US-based IRA to ISRG without paying income tax on the distribution. This option is often called an IRA charitable rollover or a qualified charitable distribution (QCD). You can give up to an annual maximum set by the IRS, which adjusts each year, so confirm the current amount with your advisor."
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "Please seek the advice of your financial or legal advisor."
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "To make your gift, ask your IRA administrator to send the distribution directly to ISRG. Give them our legal name and federal tax ID so they can identify us. Please also let us know about your gift. Many IRA administrators send distributions without identifying the donor, so a quick note from you lets us thank you and honor your wishes for the gift."
+
+[donate_2026_legal_name_label]
+other = "Legal name:"
+
+[donate_2026_legal_address_label]
+other = "Address:"
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "Mailing Address"
+
+[donate_2026_mailing_address_intro]
+other = "(only for check-processing)"
+
+[donate_2026_mailing_address_attention]
+other = "Internet Security Research Group"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "Donate by check"
+
+[donate_2026_donate_by_check_text]
+other = "You can donate by personal check payable to \"ISRG\" at the address below:"

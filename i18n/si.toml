@@ -151,7 +151,7 @@ other = "කවුළුව ආරම්භය"
 [certificate_transparency_window_end]
 other = "කවුළුව අවසානය"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "සහතික කිරීමේ පරිචය ප්‍රකාශය"
 
 [overview]
@@ -181,8 +181,14 @@ other = "පේපෑල් බොත්තම සමඟින් පරිත�
 [paypal_donate_title]
 other = "පේපෑල් සමඟින් පරිත්‍යාග"
 
-[not_found]
-other = "මෙම පිටුව නොපවතී, ලිපිනය පරීක්‍ෂා කරන්න."
+[not_found_title]
+other = "404 - Page Not Found"
+
+[not_found_message]
+other = "The page you're looking for doesn't exist or has been moved."
+
+[not_found_button]
+other = "Return to Homepage"
 
 [amount_per_year]
 other = "${{ .nb }}/අවු. (USD)"
@@ -373,6 +379,12 @@ other = "More recently updated page available in English"
 [post_hero_breadcrumb_blog]
 other = "ලඝුපත"
 
+[post_support_heading]
+other = "Support Our Work"
+
+[post_support_body_html]
+other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+
 [donate_get_involved_button]
 other = "එක් වන්න"
 
@@ -463,11 +475,8 @@ other = "දීමට වෙනත් ක්‍රම"
 [donate_page_ways_to_give_heading]
 other = "දෙන ක්‍රම"
 
-[donate_page_funding_details_stat_percentage]
-other = "100%"
-
 [donate_page_funding_details_stat_text]
-other = "අරමුදල් වලින් වැඩි ප්‍රමාණයක් ලෙට්'ස් එන්ක්‍රිප්ට් වෙත ලැබෙන්නේ පුණ්‍යාධාර මගිනි."
+other = "Enable our work at Let's Encrypt through your charitable contribution."
 
 [donate_page_funding_details_why_support_heading]
 other = "සහාය දක්වන්නේ ඇයි?"

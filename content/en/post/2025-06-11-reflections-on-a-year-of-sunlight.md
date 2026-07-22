@@ -4,7 +4,7 @@ date: 2025-06-11T00:00:00Z
 slug: reflections-on-a-year-of-sunlight
 title: "Reflections on a Year of Sunlight"
 excerpt: "Our experiment with a new Certificate Transparency architecture has been a success."
-display_default_footer: true
+display_support_us_footer: true
 ---
 
 The Certificate Transparency ecosystem has been improving transparency for the web PKI since 2013. It helps make clear exactly what certificates each certificate authority has issued and makes sure errors or compromises of certificate authorities are detectable.

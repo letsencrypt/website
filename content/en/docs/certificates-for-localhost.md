@@ -37,7 +37,7 @@ used alongside a web site to offer extra features. For instance, the Dropbox
 and Spotify desktop apps scan for files from across your machine, which a
 web app would not be allowed to do. One common approach is for these native
 apps to offer a web service on localhost, and have the web app make requests
-to it via XMLHTTPRequest (XHR) or WebSockets. The web app almost always uses HTTPS, which
+to it via XMLHttpRequest (XHR) or WebSockets. The web app almost always uses HTTPS, which
 means that browsers will forbid it from making XHR or WebSockets requests
 to non-secure URLs. This is called Mixed Content Blocking. To communicate with
 the web app, the native app needs to provide a secure web service.

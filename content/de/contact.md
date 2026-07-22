@@ -2,7 +2,7 @@
 title: Kontakt
 slug: contact
 description: Wie Sie uns erreichen
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**Wir leisten keine Unterstützung per E-Mail. Wenn Sie Fragen haben, nutzen Sie bitte unsere [Community-Foren](https://community.letsencrypt.org). Die unten angegebenen E-Mail-Adressen sind nur für die speziell beschriebenen Aufgaben.**
+## Hilfe und Support
+
+**Wir leisten keine Unterstützung per E-Mail.**
+
+Wenn Sie Hilfe benötigen oder eine Frage haben, nutzen Sie bitte unsere [Community-Foren](https://community.letsencrypt.org).
+
+Die unten angegebenen E-Mail-Adressen sind nur für die speziell beschriebenen Aufgaben.
 
 ## Presseanfragen
 
@@ -22,18 +28,7 @@ Email: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
 ## Abonnieren Sie unseren Newsletter
 
-<iframe id="newsletter-iframe-inline" src="https://outreach.abetterinternet.org/l/1011011/2025-01-14/31v6r" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-<script>
-let hasResized = false;
-window.addEventListener('message', function(e) {
-    if (hasResized) return; // Only allow one resize
-    if (e.origin !== 'https://outreach.abetterinternet.org') return;
-    if (e.data && typeof e.data === 'object' && e.data.type === 'resize' && e.data.height) {
-        hasResized = true;
-        document.getElementById('newsletter-iframe-inline').style.height = (e.data.height + 20) + 'px';
-    }
-});
-</script>
+{{< newsletter-inline >}}
 
 ## Privatsphäre
 

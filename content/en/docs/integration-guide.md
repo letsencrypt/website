@@ -46,7 +46,7 @@ The upshot of this is that, if you are a hosting provider, you do not need to ge
 
 In ACME, it's possible to create one account and use it for all authorizations and issuances, or create one account per customer. This flexibility may be valuable. For instance, some hosting providers may want to use one account per customer, and store the account keys in different contexts, so that an account key compromise doesn't allow issuance for all of their customers.
 
-However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, and easier to provide rate limits adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
+However, for most larger hosting providers we recommend using a single account and guarding the corresponding account key well. This makes it easier to identify certificates belonging to the same entity, and easier to provide rate limit adjustments if needed. We will be unable to effectively adjust rate limits if many different accounts are used.
 
 # Multi-domain (SAN) Certificates
 
@@ -74,7 +74,7 @@ If you're using the http-01 ACME challenge, you will need to provision the chall
 
 Additionally, when using the dns-01 challenge, make sure to clean up old TXT records so the response to Let's Encrypt's query doesn't get too big.
 
-If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect `/.well-known/acme-validation/XYZ` to `validation-server.example.com/XYZ` for all `XYZ`. This delegates responsibility for issuance to `validation-server`, so you should protect that server well.
+If you want to use the http-01 challenge anyhow, you may want to take advantage of HTTP redirects. You can set up each of your frontends to redirect `/.well-known/acme-challenge/XYZ` to `validation-server.example.com/XYZ` for all `XYZ`. This delegates responsibility for issuance to `validation-server`, so you should protect that server well.
 
 # Central Validation Servers
 

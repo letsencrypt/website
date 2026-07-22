@@ -1,7 +1,7 @@
 ---
 title: Staging Environment
 slug: staging-environment
-lastmod: 2025-11-25
+lastmod: 2026-04-10
 show_lastmod: 1
 ---
 
@@ -24,9 +24,9 @@ The staging environment uses the same rate limits as [described for the producti
 * The **[New Registrations per IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** limit is 500 per 3 hours (the same as production).
 * The **[New Orders per Account](/docs/rate-limits/#new-orders-per-account)** limit is 1500 per 3 hours.
 * The **[New Certificates per Registered Domain](/docs/rate-limits/#new-certificates-per-registered-domain)** limit is 30000 per second.
-* The **[New Certificates per Exact Set of Hostnames](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** limit is 30000 per week.
-* The **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** limit is 200 per hour.
-* The **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** limit is 3600 per 6 hours.
+* The **[New Certificates per Exact Set of Identifiers](/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)** limit is 30000 per week.
+* The **[Authorization Failures per Identifier per Account](/docs/rate-limits/#authorization-failures-per-identifier-per-account)** limit is 200 per hour.
+* The **[Consecutive Authorization Failures per Identifier per Account](/docs/rate-limits/#consecutive-authorization-failures-per-identifier-per-account)** limit is 3600 per 6 hours.
 
 The [Overall Requests Limits](/docs/rate-limits/#overall-requests-limit) are:
 
@@ -54,21 +54,25 @@ If you wish to modify a test-only client to trust the staging environment for te
   * Subject: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Pretend Pear X1`
   * Key type: `RSA 4096`
   * Certificate details: [der](/certs/staging/letsencrypt-stg-root-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x1.txt)
+  * Test websites: [valid](https://valid.x1.staging-test-certs.letsencrypt.org/), [revoked](https://revoked.x1.staging-test-certs.letsencrypt.org/), [expired](https://expired.x1.staging-test-certs.letsencrypt.org/)
 * **Bogus Broccoli X2**
   * Subject: `O = (STAGING) Internet Security Research Group, CN = (STAGING) Bogus Broccoli X2`
   * Key type: `ECDSA P-384`
   * Certificate details (self-signed): [der](/certs/staging/letsencrypt-stg-root-x2.der), [pem](/certs/staging/letsencrypt-stg-root-x2.pem), [txt](/certs/staging/letsencrypt-stg-root-x2.txt)
   * Certificate details (cross-signed by Pretend Pear X1): [der](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.der), [pem](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.pem), [txt](/certs/staging/letsencrypt-stg-root-x2-signed-by-x1.txt)
+  * Test websites: [valid](https://valid.x2.staging-test-certs.letsencrypt.org/), [revoked](https://revoked.x2.staging-test-certs.letsencrypt.org/), [expired](https://expired.x2.staging-test-certs.letsencrypt.org/)
 * **Yearning Yucca Root YE**
   * Subject: `O = ISRG, CN = (STAGING) Yearning Yucca Root YE`
   * Key type: `ECDSA P-384`
   * Certificate details (self-signed): [der](/certs/staging/gen-y/root-ye.der), [pem](/certs/staging/gen-y/root-ye.pem), [txt](/certs/staging/gen-y/root-ye.txt)
   * Certificate details (cross-signed by Bogus Broccoli X2): [der](/certs/staging/gen-y/root-ye-by-x2.der), [pem](/certs/staging/gen-y/root-ye-by-x2.pem), [txt](/certs/staging/gen-y/root-ye-by-x2.txt)
-* **Yearning Yonder Yam Root YR**
+  * Test websites: [valid](https://valid.ye.staging-test-certs.letsencrypt.org/), [revoked](https://revoked.ye.staging-test-certs.letsencrypt.org/), [expired](https://expired.ye.staging-test-certs.letsencrypt.org/)
+* **Yonder Yam Root YR**
   * Subject: `O = ISRG, CN = (STAGING) Yonder Yam Root YR`
   * Key type: `RSA 4096`
   * Certificate details (self-signed): [der](/certs/staging/gen-y/root-yr.der), [pem](/certs/staging/gen-y/root-yr.pem), [txt](/certs/staging/gen-y/root-yr.txt)
   * Certificate details (cross-signed by Pretend Pear X1): [der](/certs/staging/gen-y/root-yr-by-x1.der), [pem](/certs/staging/gen-y/root-yr-by-x1.pem), [txt](/certs/staging/gen-y/root-yr-by-x1.txt)
+  * Test websites: [valid](https://valid.yr.staging-test-certs.letsencrypt.org/), [revoked](https://revoked.yr.staging-test-certs.letsencrypt.org/), [expired](https://expired.yr.staging-test-certs.letsencrypt.org/)
 
 ## Subordinate (Intermediate) CAs
 

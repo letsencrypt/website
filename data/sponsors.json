@@ -10,6 +10,16 @@
       "name": "Amazon Web Services",
       "url": "https://aws.amazon.com/",
       "image": "aws-logo-2.png"
+    },
+    {
+      "name": "Open Technology Fund",
+      "url": "https://www.opentech.fund/",
+      "image": "open-technology-fund-logo.png"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://www.microsoft.com/",
+      "image": "microsoft-logo.png"
     }
   ],
   "platinum": [
@@ -48,11 +58,6 @@
       "image": "shopify-logo.png"
     },
     { "name": "IBM", "url": "https://www.ibm.com/", "image": "ibm-logo.png" },
-    {
-      "name": "Heroku",
-      "url": "https://www.heroku.com/",
-      "image": "heroku-logo.png"
-    },
     { "name": "SAP", "url": "https://www.sap.com/", "image": "sap-logo.svg" },
     {
       "name": "Squarespace",
@@ -63,7 +68,23 @@
       "name": "SerpApi",
       "url": "https://serpapi.com/",
       "image": "SerpApi-black.png"
-    }
+    },
+    {
+      "name": "Snowflake",
+      "url": "https://www.snowflake.com/",
+      "image": "snowflake-logo.png"
+    },
+    {
+      "name": "Acton Family Giving",
+      "url": "https://actonfamilygiving.org/",
+      "image": "acton-family-giving-logo.png"
+    },
+    {
+      "name": "ALL-INKL.COM",
+      "url": "https://all-inkl.com/",
+      "image": "all-inkl-com-logo.png"
+    },
+    { "name": "Wix", "url": "https://www.wix.com/", "image": "wix-logo.png" }
   ],
   "silver": [
     {
@@ -93,11 +114,6 @@
       "image": "siteground-logo.png"
     },
     {
-      "name": "Vultr",
-      "url": "https://www.vultr.com",
-      "image": "vultr-logo.png"
-    },
-    {
       "name": "Hébergement web",
       "url": "https://www.planethoster.com/",
       "image": "planethoster-logo.png"
@@ -108,11 +124,6 @@
       "image": "fastly-logo.png"
     },
     { "name": "3CX", "url": "https://www.3cx.com/", "image": "3cx-logo.png" },
-    {
-      "name": "Jimdo",
-      "url": "https://www.jimdo.com/",
-      "image": "jimdo-logo.png"
-    },
     {
       "name": "Zendesk",
       "url": "https://www.zendesk.com/",
@@ -127,11 +138,6 @@
       "name": "dnsimple",
       "url": "https://dnsimple.com/letsencrypt",
       "image": "dnsimple-logo.png"
-    },
-    {
-      "name": "Shiguredo",
-      "url": "https://shiguredo.jp/",
-      "image": "shiguredo-v2-logo.svg"
     },
     {
       "name": "Discourse",
@@ -199,9 +205,6 @@
       "url": "https://www.nabucasa.com/",
       "image": "nabu-casa-logo.png"
     },
-    { "name": "Wix", "url": "https://www.wix.com/", "image": "wix-logo.png" },
-
-
     {
       "name": "WPBeginner",
       "url": "https://www.wpbeginner.com/",
@@ -249,12 +252,6 @@
       "image": "nginx-logo.png"
     },
     {
-      "name": "Acton Family Giving",
-      "url": "https://actonfamilygiving.org/",
-      "image": "acton-family-giving-logo.png"
-    },
-
-    {
       "name": "Tailscale",
       "url": "https://tailscale.com/",
       "image": "tailscale-logo.svg"
@@ -284,7 +281,6 @@
       "url": "https://www.confluent.io/",
       "image": "confluent-logo.svg"
     },
-    { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" },
     {
       "name": "SecureW2",
       "url": "https://www.securew2.com/",
@@ -345,19 +341,44 @@
       "image": "duckduckgo-logo.svg"
     },
     {
-      "name": "Zoho",
-      "url": "https://zoho.com/",
-      "image": "zoho-logo-web.svg"
-    },
-    {
-      "name": "Okta",
-      "url": "https://www.okta.com/",
-      "image": "okta-logo.png"
+      "name": "Auth0",
+      "url": "https://auth0.com/",
+      "image": "auth0-logo.svg"
     },
     {
       "name": "Replit",
       "url": "https://replit.com/",
       "image": "replit-logo.svg"
+    },
+    {
+      "name": "Railway",
+      "url": "https://railway.com/",
+      "image": "railway-logo-dark.svg"
+    },
+    {
+      "name": "Fastmail",
+      "url": "https://www.fastmail.com/",
+      "image": "fastmail-logo.png"
+    },
+    {
+      "name": "RunsOn",
+      "url": "https://runs-on.com/",
+      "image": "logo-runs-on.svg"
+    },
+    {
+      "name": "Porkbun",
+      "url": "https://porkbun.com/",
+      "image": "porkbun-logo.png"
+    },
+    {
+      "name": "Fly.io",
+      "url": "https://fly.io/",
+      "image": "fly-io-logo.png"
+    },
+    {
+      "name": "Red Sift",
+      "url": "https://redsift.com/",
+      "image": "red-sift-wide-logo.svg"
     }
   ]
 }

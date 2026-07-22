@@ -5,7 +5,7 @@ date: 2020-02-11
 lastmod: 2023-12-20
 ---
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 15px;">
+<div class="flex flex-col items-center mb-[15px]">
   <div>URL-адреса каталогу Let's Encrypt ACME наступна:</div>
   <div><a href="https://acme-v02.api.letsencrypt.org"><code>https://acme-v02.api.letsencrypt.org/directory</code></a></div>
 </div>

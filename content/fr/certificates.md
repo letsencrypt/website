@@ -23,7 +23,7 @@ Notez que les AC racines n'ont pas de date d'expiration comme les autres certifi
   * Détails de l'AC : [crt.sh](https://crt.sh/?caid=7394), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=7394)
   * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=9314791), [der](/certs/isrgrootx1.der), [pem](/certs/isrgrootx1.pem), [txt](/certs/isrgrootx1.txt)
   * Détails du certificat (signé par l'AC racine DST X3) : [crt.sh](https://crt.sh/?id=3958242236), [der](/certs/isrg-root-x1-cross-signed.der), [pem](/certs/isrg-root-x1-cross-signed.pem), [txt](/certs/isrg-root-x1-cross-signed.txt) (retiré)
-  * Test de sites web : [valide](https://valid-isrgrootx1.letsencrypt.org/), [révoqué](https://revoked-isrgrootx1.letsencrypt.org/), [expiré](https://expired-isrgrootx1.letsencrypt.org/)
+  * Test de sites web : [valide](https://valid.x1.test-certs.letsencrypt.org/), [révoqué](https://revoked.x1.test-certs.letsencrypt.org/), [expiré](https://expired.x1.test-certs.letsencrypt.org/)
 * **Racine ISRG X2**
   * Objet : `O = Internet Security Research Group, CN = ISRG Root X2`
   * Type de clé : `ECDSA P-384`
@@ -31,7 +31,7 @@ Notez que les AC racines n'ont pas de date d'expiration comme les autres certifi
   * Détails de l'AC : [crt.sh](https://crt.sh/?caid=183269), [certificats délivrés](https://crt.sh/?Identity=%25&iCAID=183269)
   * Détails du certificat (auto-signé) : [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
   * Détails du certificat (signé par l'AC racine ISRG X1) : [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Test de sites web : [valide](https://valid-isrgrootx2.letsencrypt.org/), [révoqué](https://revoked-isrgrootx2.letsencrypt.org/), [expiré](https://expired-isrgrootx2.letsencrypt.org/)
+  * Test de sites web : [valide](https://valid.x2.test-certs.letsencrypt.org/), [révoqué](https://revoked.x2.test-certs.letsencrypt.org/), [expiré](https://expired.x2.test-certs.letsencrypt.org/)
 
 Pour de plus amples informations sur la compatibilité de nos certificats racine avec divers appareils et magasins de confiance, voir [Compatibilité des certificats](/docs/cert-compat).
 
@@ -202,14 +202,14 @@ Il existe parfois plus d'une chaîne valide pour un certificat donné : par exem
 
 Les certificats d'abonné avec des clés publiques RSA sont délivrés par nos intermédiaires RSA, qui sont délivrés uniquement par notre racine RSA ISRG Root X1 (c'est-à-dire qu'ils ne font pas l'objet d'une signature croisée). Par conséquent, tous les certificats d'abonné RSA ne disposent que d'une seule chaîne :
 
-<div style="text-align: center">
+<div class="text-center">
 RSA Subcriber Cert ← RSA Intermediate (R10 or R11) ← ISRG Root X1
 </div>
 <p><!-- to get the right line spacing after a block element --></p>
 
 Les certificats d'abonné avec des clés publiques ECDSA sont délivrés par nos intermédiaires ECDSA, qui sont délivrés à la fois par notre racine RSA de l'ISRG X1 et par notre racine ECDSA de l'ISRG X2 (c'est-à-dire qu'ils font l'objet d'une signature croisée). C'est pourquoi nous proposons deux chaînes pour ces certificats :
 
-<div style="text-align: center">
+<div class="text-center">
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X1
 
 ECDSA Subcriber Cert ← ECDSA Intermediate (E5 or E6) ← ISRG Root X2

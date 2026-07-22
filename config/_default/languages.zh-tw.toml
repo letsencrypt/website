@@ -1,13 +1,13 @@
 title = "Let's Encrypt"
 contentDir = "content/zh-tw"
-languageName = "繁體中文"
-languageCode = "zh-Hant-TW"
+label = "繁體中文"
+locale = "zh-Hant-TW"
 weight = 950
 
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Read all about our nonprofit work this year in our <a href="https://www.abetterinternet.org/annual-reports/">2025 Annual Report</a>.
+Let's Encrypt 是一家免費、開放、自動化的憑證頒發機構，由非營利組織<a href="https://www.abetterinternet.org/">網際網路安全研究組</a> (ISRG) 運作。我們這一年來的非營利工作詳情可在 <a href="https://www.abetterinternet.org/annual-reports/">2025 年度報告</a>中查閱。
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"

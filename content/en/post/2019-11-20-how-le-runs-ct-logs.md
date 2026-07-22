@@ -43,7 +43,7 @@ Additionally, AWS provides a solid set of features and our team has experience u
 
 # Terraform
 
-Let’s Encrypt uses Hashicorp [Terraform](https://www.terraform.io/) for a number of cloud-based projects. We were able to bootstrap our CT log infrastructure by reusing our existing Terraform code. There are roughly 50 components in our CT deployments; including EC2, RDS, EKS, IAM, security groups, and routing. Centrally managing this code allows our small team to reproduce a CT infrastructure in any Amazon region of the globe, prevent configuration drift, and easily test infrastructure changes.
+Let’s Encrypt uses Hashicorp [Terraform](https://www.terraform.io/) for a number of cloud-based projects. We were able to bootstrap our CT log infrastructure by reusing our existing Terraform code. There are roughly 50 components in our CT deployments, including EC2, RDS, EKS, IAM, security groups, and routing. Centrally managing this code allows our small team to reproduce a CT infrastructure in any Amazon region of the globe, prevent configuration drift, and easily test infrastructure changes.
 
 # Database
 
@@ -73,11 +73,11 @@ There are three main CT components that we run in a Kubernetes cluster.
 
 The certificate transparency front end, or [CTFE](https://github.com/google/certificate-transparency-go), provides [RFC 6962](https://tools.ietf.org/html/rfc6962) endpoints and translates them to gRPC API requests for the Trillian backend.
 
-[Trillian](https://github.com/google/trillian) describes itself as a “transparent, highly scalable and cryptographically verifiable data store.” Essentially, Trillian implements a generalized verifiable data store via a Merkle tree that can be used as the back-end for a CT log via the CTFE. Trillian consists of two components; the log signer and log server. The [log signer’s function](https://github.com/google/trillian/blob/master/docs/images/LogDesign.png) is to periodically process incoming leaf data (certificates in the case of CT) and incorporate them into a Merkle tree. The log server retrieves objects from a Merkle tree in order to fulfill CT API monitoring requests.
+[Trillian](https://github.com/google/trillian) describes itself as a “transparent, highly scalable and cryptographically verifiable data store.” Essentially, Trillian implements a generalized verifiable data store via a Merkle tree that can be used as the back-end for a CT log via the CTFE. Trillian consists of two components: the log signer and log server. The [log signer’s function](https://github.com/google/trillian/blob/master/docs/images/LogDesign.png) is to periodically process incoming leaf data (certificates in the case of CT) and incorporate them into a Merkle tree. The log server retrieves objects from a Merkle tree in order to fulfill CT API monitoring requests.
 
 # Load Balancing
 
-Traffic enters the CT log through an Amazon ELB which is mapped to a Kubernetes Nginx ingress service. The ingress service balances traffic amongst multiple Nginx pods. The Nginx pods proxy traffic to the CTFE service which balance that traffic to CTFE pods.
+Traffic enters the CT log through an Amazon ELB which is mapped to a Kubernetes Nginx ingress service. The ingress service balances traffic amongst multiple Nginx pods. The Nginx pods proxy traffic to the CTFE service which balances that traffic to CTFE pods.
 
 We employ IP and user agent based rate limiting at this Nginx layer.
 
@@ -92,7 +92,7 @@ We developed a free and open source tool named [ct-woodpecker](https://github.co
 Here are some ways we may be able to improve the efficiency of our system in the future:
 
 * Trillian stores a copy of each certificate chain, including many duplicate copies of the same intermediate certificates. Being able to de-duplicate these in Trillian would significantly reduce storage costs. We’re planning to look into whether this is possible and reasonable.
-* See if we can successfully use a cheaper form of storage than IO1 block storage and provisioned IOPs.
+* See if we can successfully use a cheaper form of storage than IO1 block storage and provisioned IOPS.
 * See if we can reduce the Kubernetes worker EC2 instance size or use fewer EC2 instances.
 
 # Support Let’s Encrypt

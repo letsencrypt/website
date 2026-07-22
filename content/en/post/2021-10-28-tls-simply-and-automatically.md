@@ -9,7 +9,7 @@ OVHcloud, the largest hosting provider in Europe, has used Let’s Encrypt for T
 
 [OVHcloud](https://ovhcloud.com/) first started looking into using Let’s Encrypt certificates because the team saw a need for the protection provided by TLS for every customer (remember, way back five years ago, when that wasn’t just a thing everybody did?). “Our goal was to deliver TLS simply. We didn’t want to have to write a tutorial for our customers to upload a cert, but instead just click and it works,” said Guillaume Marchand, OVHcloud’s Technical Team Lead.
 
-They considered building their own CA but determined the cost and complexity of doing so would be impractical. Instead, they build an ACME client to prepare for using Let’s Encrypt. It took about six months, “we simply followed the RFC and did a bit of reverse engineering of Certbot,” said Guillaume. In addition to a custom client, OVHcloud automated their Certificate Signing Request (CSR) process and certificate installation process.
+They considered building their own CA but determined the cost and complexity of doing so would be impractical. Instead, they built an ACME client to prepare for using Let’s Encrypt. It took about six months, “we simply followed the RFC and did a bit of reverse engineering of Certbot,” said Guillaume. In addition to a custom client, OVHcloud automated their Certificate Signing Request (CSR) process and certificate installation process.
 
 <p class="text-center"><img src="/images/2021.10.28-OVHcloud-schematic.png" alt="Schematic of how OVHcloud automatically and simply gets Let's Encrypt certificates"></p>
 

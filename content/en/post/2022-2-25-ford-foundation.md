@@ -18,11 +18,11 @@ excerpt: "$1M grant from The Ford Foundation supports ISRG’s security and priv
 
 The Internet has considerable potential to help build a more just, equitable, and sustainable world for all people. Yet for everyone online&mdash;and indeed the billions not yet online&mdash;barriers to secure and privacy-respecting communication remain pervasive.
 
-ISRG was founded in 2013 to find and eliminate these barriers. Today, we&rsquo;re proud to announce a $1M grant from the <a href="https://www.fordfoundation.org/" target="_blank" rel="noopener noreferer">Ford Foundation</a> to continue our efforts.
+ISRG was founded in 2013 to find and eliminate these barriers. Today, we&rsquo;re proud to announce a $1M grant from the <a href="https://www.fordfoundation.org/" target="_blank" rel="noopener noreferrer">Ford Foundation</a> to continue our efforts.
 
 Our first project, Let&rsquo;s Encrypt, leverages technology whose foundation has existed for nearly three decades&mdash;TLS certificates for securely communicating information via HTTP. Yet even for people well-versed in technology, adopting TLS proved daunting.
 
-Before Let&rsquo;s Encrypt, the growth rate for HTTPS page loads merely puttered along. As recently as 2013, just 25% of websites used HTTPS. In order for the Internet to reach its full potential, this glaring risk to peoples&rsquo; security and privacy needed to be mitigated.
+Before Let&rsquo;s Encrypt, the growth rate for HTTPS page loads merely puttered along. As recently as 2013, just 25% of websites used HTTPS. In order for the Internet to reach its full potential, this glaring risk to people&rsquo;s security and privacy needed to be mitigated.
 
 Let&rsquo;s Encrypt changed the paradigm. Today [81%](https://letsencrypt.org/stats/) of website page loads use HTTPS. That means that you and the other 4.9 billion people online can leverage the Internet for your own pursuits with a greater degree of security and privacy than ever before.
 

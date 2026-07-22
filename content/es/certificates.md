@@ -17,11 +17,11 @@ Nuestras raíces son seguramente mantenidas "offline". Emitimos certificados de 
 Hemos configurado sitios web para probar certificados encadenados a nuestras raíces.
 
 * Certificado Válido ISRG Root X1
-  * [https://valid-isrgrootx1.letsencrypt.org/](https://valid-isrgrootx1.letsencrypt.org/)
+  * [https://valid.x1.test-certs.letsencrypt.org/](https://valid.x1.test-certs.letsencrypt.org/)
 * Certificado Revocado ISRG Root X1
-  * [https://revoked-isrgrootx1.letsencrypt.org/](https://revoked-isrgrootx1.letsencrypt.org/)
+  * [https://revoked.x1.test-certs.letsencrypt.org/](https://revoked.x1.test-certs.letsencrypt.org/)
 * Certificado Expirado ISRG Root X1 
-  * [https://expired-isrgrootx1.letsencrypt.org/](https://expired-isrgrootx1.letsencrypt.org/)
+  * [https://expired.x1.test-certs.letsencrypt.org/](https://expired.x1.test-certs.letsencrypt.org/)
 
 # Certificados Intermedios
 
