@@ -15,7 +15,7 @@ See our [certificate profiles documentation](/docs/profiles/) for more informati
 
 ## Future Plans
 
-[Industry rules](https://cabforum.org/working-groups/server/baseline-requirements/documents/) will limit certificate lifetimes to a maximum of 47 days starting on March 15, 2029. As such, we will be [reducing the maximum lifetime of our certificates to 45 days by February 2028](/2025/12/02/from-90-to-45).
+[Industry rules](https://cabforum.org/working-groups/server/baseline-requirements/documents/) will limit certificate lifetimes to a maximum of 47 days starting on March 15, 2029. As such, we will be [reducing the maximum lifetime of our certificates to 45 days by February 2028](/2025/12/02/from-90-to-45.html).
 
 ## Why shorter lifetimes?
 
