@@ -11,7 +11,7 @@
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="{{ if .Description }}summary{{ else }}summary_large_image{{ end }}" />
 <meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end }}" />
 <meta name="twitter:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}" />
