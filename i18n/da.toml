@@ -569,7 +569,7 @@ other = "her"
 other = "Læs mere {{ .sponsorshipLink }}."
 
 [donate_2026_donate_stock_title]
-other = "Donate stock"
+other = "Donér værdipapirer"
 
 [donate_2026_donate_stock_intro_text]
 other = "Værdipapirer eller investeringsforeningsandele, som du har ejet i mere end et år, kan være fremragende velgørenhedsgaver."
@@ -587,7 +587,7 @@ other = "Kontonavn:"
 other = "Internet Security Research Group"
 
 [donate_2026_donate_stock_account_number]
-other = "Account #:"
+other = "Konto #:"
 
 [donate_2026_donate_stock_account_number_value]
 other = "44865458"
@@ -605,25 +605,25 @@ other = "US Skatte ID #:"
 other = "46-3344200"
 
 [donate_2026_donate_stock_outro_text]
-other = "Please contact us if you are transferring securities at {{ .donateEmailLink }} to ensure that we are able to credit you for your gift."
+other = "Kontakt os, hvis du overfører værdipapirer på {{ .donateEmailLink }} for at sikre, at vi er i stand til at kreditere dig for din gave."
 
 [donate_2026_donate_stock_online_text]
-other = "You can also donate stock in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "Du kan også donere værdipapirer med et par klik via {{ .givingBlockLink }}. Vi pådrager os ekspeditionsgebyrer gennem disse transaktioner, så overvej venligst at dække gebyrerne for at sikre, at din gave har den største effekt."
 
 [donate_2026_donate_cryptocurrency_title]
-other = "Donate cryptocurrency"
+other = "Doner kryptovaluta"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "We are able to accept most cryptocurrency by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "Vi kan acceptere de fleste kryptovaluta ved at besøge {{ .givingBlockLink }}. Vi pådrager os ekspeditionsgebyrer gennem disse transaktioner, så overvej venligst at dække gebyrerne for at sikre, at din gave har den største effekt."
 
 [donate_2026_donor_advised_funds_title]
-other = "Donor Advised Funds (DAFs)"
+other = "Donorforvaltede Fonde (DAF)"
 
 [donate_2026_donor_advised_funds_text]
-other = "Simply inform your DAF sponsor that you’d like to make a gift to:"
+other = "Du skal blot informere din DAF sponsor om, at du gerne vil give en gave til:"
 
 [donate_2026_donor_advised_funds_online_text]
-other = "You can also donate through your DAF via DAFpay in a couple clicks via {{ .givingBlockLink }}. We do incur processing fees this way, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "Du kan også donere gennem din DAF via DAFpay med et par klik via {{ .givingBlockLink }}. Vi pådrager os ekspeditionsgebyrer på denne måde, så overvej venligst at dække gebyrerne for at sikre, at din gave har den største effekt."
 
 [donate_2026_org_name]
 other = "Internet Security Research Group"
