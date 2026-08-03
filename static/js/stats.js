@@ -325,7 +325,14 @@ function doPlot() {
     path = "/js/"; // in dev, will use old data.
   }
 
-  fetch(path+"cert-timeline.tsv")
+  var statsPath;
+  if ( location.hostname === "letsencrypt.org" ) {
+    path = "https://dxxxx.cloudfront.net/";
+  } else {
+    path = "/js/"; // in dev, will use old data.
+  }
+
+  fetch(statsPath+"cert-daily-stats.tsv")
   .then(response => {
     return response.text();
   }).then(tsvListener);
