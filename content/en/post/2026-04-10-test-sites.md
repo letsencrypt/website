@@ -3,7 +3,7 @@ author: Matthew McPherrin
 date: 2026-04-10T00:00:00Z
 slug: test-sites
 title: "The difficulty of making sure your website is broken"
-excerpt: "Building automation to ensure having reliably invalid test certificates."
+excerpt: "Building automation to keep our test certificates reliably invalid."
 display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---

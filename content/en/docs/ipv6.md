@@ -53,8 +53,8 @@ redirects will not get retry treatment.
 For example if a domain name has an `AAAA` record that always times out and an
 `A` record with a webserver that redirects from HTTP to HTTPS then the IPv6 to
 IPv4 fallback will not operate correctly. The first request to the domain will
-properly fallback to IPv4, receiving a redirect from HTTP to HTTPS. The
-subsequent request will again prefer the IPv6 address but will timeout without
+properly fall back to IPv4, receiving a redirect from HTTP to HTTPS. The
+subsequent request will again prefer the IPv6 address but will time out without
 falling back to IPv4. You can resolve this situation either by fixing the IPv6
 misconfiguration or removing the HTTP to HTTPS redirect for requests to the ACME
 HTTP-01 challenge path.
