@@ -118,8 +118,8 @@ If you offer client software that automatically configures a periodic batch job,
 
 # Retrying Failures
 
-Renewal failure should not be treated as a fatal error. You should implement graceful retry logic in your issuing services using an exponential backoff pattern, maxing out at once per day per certificate. For instance, a reasonable backoff schedule would be: 1st retry after one minute, 2nd retry after ten minutes, third retry after 100 minutes, 4th and subsequent retries after one day. You should of course have a way for administrators to request early retries on a per-domain or global basis.
+Renewal failure should not be treated as a fatal error. You should implement graceful retry logic in your issuing services using an exponential backoff pattern, maxing out at once per day per certificate. For instance, a reasonable backoff schedule would be: 1st retry after one minute, 2nd retry after ten minutes, 3rd retry after 100 minutes, 4th and subsequent retries after one day. You should of course have a way for administrators to request early retries on a per-domain or global basis.
 
-Backoffs on retry means that your issuance software should keep track of failures as well as successes, and check if there was a recent failure before attempting a fresh issuance. There's no point in attempting issuance hundreds of times per hour, since repeated failures are likely to be persistent.
+Backoffs on retry mean that your issuance software should keep track of failures as well as successes, and check if there was a recent failure before attempting a fresh issuance. There's no point in attempting issuance hundreds of times per hour, since repeated failures are likely to be persistent.
 
 All errors should be sent to the administrator in charge, in order to see if specific problems need fixing.
