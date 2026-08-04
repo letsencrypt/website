@@ -1,7 +1,7 @@
 ---
 title: IPv6 Support
 slug: ipv6-support
-lastmod: 2020-02-07
+lastmod: 2026-08-04
 show_lastmod: 1
 ---
 
@@ -40,11 +40,11 @@ Encrypt prefer IPv4, you must fix the misconfiguration.
 The IPv6 to IPv4 retry only occurs on connection timeouts, not on other types of
 error.
 
-For example in the "Common Pitfalls" scenario above a retry will not occur if
-there is a webserver listening on the IPv6 address, but that webserver is not
-ready to answer the ACME challenge. In this case there would be no connection
-timeout accessing the IPv6 address and the challenge will fail without a retry
-because the incorrect response was returned.
+For example in the scenario above a retry will not occur if there is a webserver
+listening on the IPv6 address, but that webserver is not ready to answer the
+ACME challenge. In this case there would be no connection timeout accessing the
+IPv6 address and the challenge will fail without a retry because the incorrect
+response was returned.
 
 To keep our CA software simple we only perform an IPv6 to IPv4 retry on the
 first request when validating "http-01" challenges. If you use redirects, the
