@@ -50,9 +50,9 @@ However, for most larger hosting providers we recommend using a single account a
 
 # Multi-domain (SAN) Certificates
 
-Our [issuance policy](/docs/rate-limits) allows for up to 100 names per certificate. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
+We allow up to 100 names per certificate depending on the [certificate profile](/docs/profiles/) selected. Whether you use a separate certificate for every hostname, or group together many hostnames on a small number of certificates, is up to you.
 
-Using separate certificates per hostname means fewer moving parts are required to logically add and remove domains as they are provisioned and retired. Separate certificates also minimize certificate size, which can speed up HTTPS handshakes on low-bandwidth networks.
+Using separate certificates per hostname means fewer moving parts are required to logically add and remove domains as they are provisioned and retired. Separate certificates also minimize certificate size, which can speed up HTTPS handshakes on low-bandwidth networks. Check out our [rate limits](/docs/rate-limits) to make sure you can get as many certificates as you need.
 
 On the other hand, using large certificates with many hostnames allows you to manage fewer certificates overall. If you need to support older clients like Windows XP that do not support TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), you'll need a unique IP address for every certificate, so putting more names on each certificate reduces the number of IP addresses you'll need.
 
