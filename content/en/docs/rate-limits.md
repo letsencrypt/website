@@ -78,8 +78,9 @@ hostnames.
 
 Each time you request a certificate from Let's Encrypt, a new order is created.
 A single certificate can include up to 100 identifiers (DNS names or IP
-addresses). For performance reasons, it's better to use fewer identifiers per
-certificate whenever you can.
+addresses) depending on the [certificate profile](/docs/profiles/) selected. For
+performance reasons, it's better to use fewer identifiers per certificate
+whenever you can.
 
 ### Limit
 
