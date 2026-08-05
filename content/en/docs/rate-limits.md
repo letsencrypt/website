@@ -1,7 +1,7 @@
 ---
 title: Rate Limits
 slug: rate-limits
-lastmod: 2025-06-12
+lastmod: 2026-08-05
 show_lastmod: true
 ---
 
@@ -109,6 +109,11 @@ most common allocation (what you'd get from your ISP or hosting provider) as the
 "registered domain." For IPv4 addresses, we treat the exact address as the
 registered domain. For IPv6 addresses, we treat the containing /64 range as the
 registered domain.
+
+You can get a list of certificates issued for your registered domain by
+searching [crt.sh](https://crt.sh/) or [Censys](https://search.censys.io/#),
+which use the public [Certificate
+Transparency](https://www.certificate-transparency.org/) logs.
 
 ### Limit
 
@@ -338,11 +343,6 @@ the future.
 
 We include a `Retry-After` header in all rate limit error responses, indicating
 the duration your client should wait before retrying.
-
-You can get a list of certificates issued for your registered domain by
-searching [crt.sh](https://crt.sh/) or [Censys](https://search.censys.io/#),
-which use the public [Certificate
-Transparency](https://www.certificate-transparency.org/) logs.
 
 # Requesting an Override
 
