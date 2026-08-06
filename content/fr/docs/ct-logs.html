@@ -1,27 +1,20 @@
 ---
 title: Journaux de transparence des certificats (TC)
 slug: ct-logs
-lastmod: 2023-09-25
+lastmod: 2026-06-15
 show_lastmod: 1
 ---
 
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct"
-    >Certificate Transparency (CT)</a
->
-  est un système pour enregistrer et surveiller la délivrance des certificats TLS. CT
+  <a href="https://www.certificate-transparency.org/what-is-ct">La Transparence des Certificats (TC)</a> est un système pour enregistrer et surveiller l'émission de certificats TLS. CT
   améliore considérablement la capacité de chacun à surveiller et à étudier l'émission de certificats,
   et ces capacités ont conduit à de nombreuses améliorations de l'écosystème CA et de la sécurité du Web. En conséquence, le CT devient rapidement une infrastructure critique.
 </p>
 
 <p>
-  Let's Encrypt soumet tous les certificats que nous délivrons aux journaux TC. Nous exploitons également
-  deux journaux annuels de CT nommés
-  <a href="https://letsencrypt.org/2019/05/15/introducing-oak-ct-log.html"
-    >Oak</a
->
-  et Sapling. Toutes les autorités de certification publiquement reconnues sont les bienvenues pour
+  Let's Encrypt soumet tous les certificats que nous délivrons aux journaux TC. Nous gérons également des journaux TC.
+  Toutes les autorités de certification publiquement reconnues sont les bienvenues pour
 contribuer à nos journaux. De nombreux certificats racine d'autorité de certification ont déjà été inclus dans nos journaux CT. Si vous exploitez une autorité de certification et que votre émetteur n'est pas dans notre liste d'émetteurs acceptés, veuillez déposer un message <a href="https://github.com/letsencrypt/ct-log-metadata">ici</a>.
 </p>
 
@@ -37,72 +30,38 @@ contribuer à nos journaux. De nombreux certificats racine d'autorité de certif
   <a href="https://www.abetterinternet.org/sponsor/">parrainage ou un don</a>.
 </p>
 
-<h2>Architecture</h2>
-
-<p>
-  Consultez notre blog pour voir 
-  <a href="https://letsencrypt.org/2019/11/20/how-le-runs-ct-logs.html"
-    >comment Let's Encrypt exécute les journaux CT </a
->!
-</p>
-
-<h2>Surveillance du journal</h2>
-
-<p>
-  Let's Encrypt a créé un outil de surveillance des journaux CT open-source appelé <a href="https://github.com/letsencrypt/ct-woodpecker">CT Woodpecker</a>. Nous
-  utilisons cet outil pour contrôler la stabilité et la conformité de nos propres journaux, et nous
-  espérons que d'autres le trouveront également utile.
-</p>
-
 <h2>Journaux TC</h2>
 <p>
 Des informations sur les différents états du cycle de vie d'un journal de CT peuvent être trouvées <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">ici</a>.
 </p>
 
-{{< ct_logs data="production" >}}
-<li>
-  Oak est intégré dans les programmes CT d'
-  <a href="https://support.apple.com/en-us/HT209255">Apple</a> et de 
-  <a href="https://github.com/chromium/ct-policy/blob/master/ct_policy.md"
-    >Google</a
->.
-</li>
-<li>Notre environnement de production de l'API ACME soumet les certificats ici.</li>
-{{< /ct_logs >}} {{< ct_logs data="testing" >}}
-<li>
-  Les SCT de ces journaux <b>NE DOIVENT PAS</b> être incorporés dans des certificats de confiance publics.
-</li>
-<li>
-  Les environnements Let's Encrypt de production et de 
-  <a href="/docs/staging-environment">développement</a> de l'API ACME soumettent tous deux des certificats à Sapling, mais l'environnement de production n'utilise pas les SCTs résultants.
-</li>
-<li>
-  Nous testons ici les nouvelles versions de Trillian et de certificate-transparency-go 
-  <a href="http://github.com/google/trillian">Trillian</a> et de 
-  <a href="https://github.com/google/certificate-transparency-go"
-    >certificate-transparency-go</a
->
-  avant de les déployer en production.
-</li>
-<li>
-  La liste des racines acceptées par Sapling comprend toutes les racines acceptées par Oak, plus des racines de test supplémentaires.
-</li>
-<li>
-  Sapling peut être utilisé par d'autres autorités de certification à des fins de test.
-</li>
-{{< /ct_logs >}} {{< ct_logs data="Sunlight" >}}
-<li>
-  Let's Encrypt teste des journaux d'exécution basés sur <a href="https://sunlight.dev">Sunlight</a>.
-</li>
-<li>
-  Les SCT de ces journaux <b>NE DOIVENT PAS</b> être incorporés dans des certificats de confiance publics.
-</li>
-<li>Twig restera un journal de test, et accepte les mêmes AC que Sapling.
-</li>
-<li>Willow et Sycamore acceptent la même chose que Oak et sont destinés à devenir des logs de production.
-</li>
-{{< /ct_logs >}}
-<br />
+<h3>Sunlight</h3>
+<p>
+  Let's Encrypt gère actuellement les journaux <a href="https://c2sp.org/static-ct-api">static-ct</a> basés sur <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
+  Les informations incluant les roots acceptées, les clés publiques, les IDs de journaux et les intervales entre les fragments sont disponibles sur chaque
+  page d'accueil de journal, les liens sont ci-dessous.
+</p>
+<p>Sycamore et Willow sont nos journaux de production TC, acceptant les certificats des CAs de confiance.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>
+  Twig est un journal de test, acceptant les certificats des CAs de confiance ainsi que des CAs de test supplémentaires y compris l'environnement de test Let's Encrypt.
+</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
+<h3>RFC 6962 Logs EOL</h3>
+<p>
+  Let's Encrypt exécutait les journaux basés sur Trillian, implémentant l'API RFC 6962.
+  Pour plus d'information, voir le <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">projet de fin de vie de nos journaux de Transparence des Certificats RFC 6962</a>.
+</p>
+
 <h2>Opérations de journalisation</h2>
 <p>
   Pour énumérer les racines incluses pour un journal CT particulier, vous pouvez exécuter la commande suivante dans le terminal de votre choix :

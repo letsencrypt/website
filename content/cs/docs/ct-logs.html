@@ -1,4 +1,122 @@
 ---
+title: Záznamy Certificate Transparency (CT)
 slug: ct-logs
-untranslated: 1
+lastmod: 2026-06-15
+show_lastmod: 1
 ---
+
+
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct">Transparentnost certifikátů (CT)</a> je systém pro zaznamenávání a sledování vydávání certifikátů TLS. CT výrazně zlepšuje možnosti všech uživatelů sledovat a zkoumat vydávání certifikátů. Tyto možnosti vedly k řadě zlepšení ekosystému certifikačních autorit i zabezpečení webu. CT se proto rychle stává kritickou infrastrukturou.
+</p>
+
+<p>
+  Všechny vydané certifikáty odesíláme do logů CT. Logy CT také sami provozujeme.
+  Do našich logů mohou odesílat záznamy všechny veřejně důvěryhodné certifikační autority. Naše logy CT již zahrnují kořenové certifikáty mnoha certifikačních autorit. Pokud provozujete certifikační autoritu a certifikát vašeho vydavatele není v našem seznamu přijímaných vydavatelů, nahlaste problém <a href="https://github.com/letsencrypt/ct-log-metadata">zde</a>.
+</p>
+
+<p>
+  Chcete-li dostávat důležitá oznámení týkající se našich logů CT, přihlaste se na komunitním fóru k odběru
+  <a
+    href="https://community.letsencrypt.org/t/about-the-ct-announcements-category"
+    >kategorie oznámení CT</a
+>.
+</p>
+
+<h2>Financování</h2>
+
+<p>
+  Pokud nám vaše organizace chce pomoci v této práci pokračovat, zvažte <a href="https://www.abetterinternet.org/sponsor/">sponzorský nebo jiný finanční příspěvek</a>.
+</p>
+
+<h2>Logy CT</h2>
+<p>
+Informace o jednotlivých stavech životního cyklu, kterými log CT prochází, najdete <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">zde</a>.
+</p>
+
+<h3>Sunlight</h3>
+<p>
+  Let's Encrypt v současnosti provozuje logy <a href="https://c2sp.org/static-ct-api">static-ct</a> založené na softwaru <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
+  Informace o přijímaných kořenových certifikátech, veřejných klíčích, ID logů a intervalech jednotlivých segmentů najdete na níže odkazovaných úvodních stránkách logů.
+</p>
+<p>Sycamore a Willow jsou naše produkční logy CT, které přijímají certifikáty od důvěryhodných certifikačních autorit.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>
+  Twig je testovací log. Přijímá certifikáty od důvěryhodných certifikačních autorit i od některých dalších testovacích autorit, včetně staging prostředí Let's Encrypt.
+</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
+<h3>Ukončení provozu logů RFC 6962</h3>
+<p>
+  Let's Encrypt dříve provozovala logy založené na systému Trillian, které implementovaly API RFC 6962.
+  Další informace najdete v <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">plánu ukončení provozu našich logů Certificate Transparency podle RFC 6962</a>.
+</p>
+
+<h2>Práce s logy</h2>
+<p>
+  Seznam kořenových certifikátů zahrnutých v konkrétním logu CT získáte spuštěním následujícího příkazu v terminálu:
+</p>
+<pre>
+$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>
+  Odesílání certifikátů do logu CT obvykle zajišťují certifikační autority. Chcete-li si tento postup vyzkoušet, nejprve z našeho oblíbeného webu načtěte libovolný certifikát ve formátu PEM. Zkopírujte následující blok a vložte jej do terminálu.
+</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>
+  Před odesláním musí být certifikát zakódován ve formátu JSON ve speciální struktuře. K tomu můžete použít generátor JSON na adrese <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a>. Nástroj crt.sh vrátí balíček JSON. Stáhněte balíček do počítače, v případě potřeby soubor přejmenujte a následujícím příkazem proveďte operaci add-chain (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962, část 4.1</a
+>), která certifikát odešle do logu CT. Výstup bude obsahovat podpis, který je ve skutečnosti <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. K podpisu se za chvíli vrátíme podrobněji.
+</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
+{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+</pre>
+
+<p>
+  Chceme-li potvrdit, že log CT podepsal segment Oak 2020, použijeme pole id z předchozího příkazu jako vstup následujícího příkazu. Výsledkem bude ID logu CT.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+</pre>
+
+<p>
+  Pomocí pole signature můžeme ověřit, že byl certifikát odeslán do logu. Tuto hodnotu můžete dále dekódovat podle našeho
+  <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >podrobného průvodce SCT</a
+>.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
+9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
+5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
+2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
+47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+</pre>

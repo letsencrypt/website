@@ -1,30 +1,31 @@
 ---
 title: Glossaire
 slug: glossary
-date: 2024-07-16
+lastmod: 2026-07-04
 show_lastmod: 1
+description: "Un glossaire des termes liés aux certificats SSL/TLS, HTTPS et à la sécurité web utilisés par Let's Encrypt."
 ---
 
 
 <!--
 Note for translators:
- 
+
 - Usage of the "def" macro (in other languages than English):
-{% def 
-    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`" 
+{% def
+    id="a unique id for anchor - the SAME than for english. will be prefixed by `def-`"
     name="The term to define (optional if english or abbr is provided)"
-    abbr="an accronym (optional)"
+    abbr="an acronym (optional)"
     english="the english term (optional - if present the abbr is in english too)" %}}
         the definition
 {% /def %}
-    
+
 - Check the javascript console for errors.
 
 - Automatic titles on definition's link cuts everything after the last point (to remove source links)
 
 -->
 
-{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Une [extension](#def-extension) de certificat utilisée pour indiquer aux [agents utilisateurs](#def-user-agent) comment obtenir des informations sur l'émetteur du [certificat](#def-certificate). Il précise généralement l'URI de l'[OCSP](#def-OCSP) et l'[URI de l'émetteur](#def-CAI). {{% /def %}}
+{{% def id="AIA" name="Authority Information Access" abbr="AIA" %}} Une [extension](#def-extension) de certificat utilisée pour indiquer aux [agents utilisateurs](#def-user-agent) comment obtenir des informations sur l'émetteur du [certificat](#def-certificate). Elle spécifie généralement l'[URI de l'émetteur](#def-CAI). {{% /def %}}
 
 {{% def id="ACME" name="Automatic Certificate Management Environment" abbr="ACME" abbr_first="1" %}} Le protocole mis en œuvre par [Let's Encrypt](#def-LE). Les logiciels compatibles avec ce protocole peuvent l'utiliser pour communiquer avec Let's Encrypt pour demander un [certificat](#def-leaf). [ACME RFC](https://tools.ietf.org/html/rfc8555) - [Wikipedia](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) {{% /def %}}
 
@@ -40,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} Une entrée DNS qui fait correspondre un nom de domaine à un autre, appelée "nom canonique". [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} Une organisation qui délivre des [certificats](#def-leaf). [Let's Encrypt](#def-LE), [IdenTrust](#def-IdenTrust), Sectigo, et DigiCert sont des Autorités de Certification. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
+{{% def id="CA" name="Certificate Authority" abbr="CA" %}} Une organisation qui délivre des [certificats](#def-leaf). [Let's Encrypt](#def-LE) est une Autorité de Certification. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAI" name="CA Issuers" %}} Partie du champ [AIA](#def-AIA) contenant des informations sur l'émetteur du [certificat](#def-leaf). Elle peut être utile lorsque le [serveur web](#def-web-server) n'a pas fourni une [chaîne de certificats](#def-chain) de confiance. {{% /def %}}
 
@@ -64,7 +65,7 @@ Note for translators:
 
 {{% def id="store" name="Certificate Store" %}} Un magasin de certificats contient une liste de certificats de confiance ["racines" (roots)](#def-root). Les systèmes d'exploitation (tels que Windows, Android ou Debian) et [les navigateurs web](#def-web-browser) (tels que Firefox) gèrent un magasin de certificats. Les navigateurs qui n'en ont pas utilisent le magasin de certificats des systèmes d'exploitation. Les [certificats](#def-leaf) fournis par [Let's Encrypt](#def-LE) sont [reconnus par la plupart des magasins de certificats](/certificates). {{% /def %}}
 
-{{% def id="subject" name="Certificate subject" %}} Le champ "Subject" d'un certificat indique de quoi il s'agit. Il contient généralement des champs comme [Common Name](#def-CN), Country et Organization. {{% /def %}}
+{{% def id="subject" name="Certificate subject" %}} Le champ "Sujet" d'un certificat indique de quoi il s'agit. Il contient généralement des champs comme [Common Name](#def-CN), Country et Organization. {{% /def %}}
 
 {{% def id="CT" name="Certificate Transparency" abbr="CT" %}} Pour améliorer la sécurité, les certificats (ou [pré-certificats](#def-precertificate)) doivent être publiés dans Certificate Transparency Logs: https://www.certificate-transparency.org/. [Let's Encrypt](#def-LE) génère et publie des [pré-certificat](#def-precertificate), et inclut dans le [certificat suivant](#def-leaf) une liste de [SCT](#def-SCT) pour le pré-certificat. Certains [navigateurs](#def-web-browser), tels que Google Chrome, exigent la présence de cette garantie vérifiable afin de valider le certificat. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency) {{% /def %}}
 
@@ -72,7 +73,7 @@ Note for translators:
 
 {{% def id="CN" name="Common Name" abbr="CN" %}} Partie d'un certificat [Subject](#def-subject) décrivant l'objet du certificat. Pour les ["roots"](#def-root) et les ["intermediates"](#def-intermediate), c'est le nom de l'[Autorité de Certification](#def-CA). Pour les [certificats "leaf"](#def-leaf) il s'agit d'un des noms de domaine figurant sur le certificat. Note : Le nom commun est limité à 63 caractères. Il s'agit d'une méthode obsolète pour indiquer un nom de domaine auquel le certificat s'applique, puisque les normes Internet actuelles attendent des logiciels qu'ils ne vérifient que les [Subject Alternative Names](#def-SAN) afin de déterminer l'applicabilité d'un certificat. {{% /def %}}
 
-{{% def id="cross-signing" name="Cross Signing" %}} Un certificat émis peut être signé par plusieurs [racines](#def-root). Par exemple, les [certificats intermédiaires](#def-intermediate) de [Let's Encrypt](#def-LE)sont signés par [IdenTrust](#def-IdenTrust), car au lancement, la racine de Let's Encrypt n'était pas encore reconnue par les [magasins de certificats](#def-store). Techniquement, cela se fait avec deux certificats émetteurs, utilisant le même [Subject](#def-subject) et la même [paire de clés](#def-key-pair), l'un signé par la clé privée d'une racine Let's Encrypt et l'autre signé par la clé privée d'une racine IdenTrust : [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) {{% /def %}}
+{{% def id="cross-signing" name="Cross Signing" %}} Un certificat émis peut être signé par plusieurs [racines](#def-root), éventuellement par des AC différentes. Lorsqu'une AC signe le certificat d'une autre AC, on l'appelle signature croisée. {{% /def %}}
 
 {{% def id="DANE" name="DNS-based Authentication of Named Entities" abbr="DANE" %}} Un mécanisme utilisant le DNS pour indiquer comment vérifier l'authenticité du [certificat](#def-leaf) ou de la clé de cryptage présenté.  [Wikipedia](https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities) {{% /def %}}
 
@@ -80,19 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} Un [certificat](#def-leaf) où le demandeur n'a fait que prouver son contrôle sur le nom de domaine (et non l'identité de l'organisme demandeur). [Let's Encrypt](#def-LE) ne propose que des certificats DV (pas [OV](#def-OV) ou [EV](#def-EV)) : [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Une variante de l'algorithme de signature numérique (DSA) qui utilise la cryptographie à courbe elliptique.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) prend en charge l'ECDSA pour les [certificats d'entité finale ou "leaf certificates"](#def-leaf), mais pas encore pour l'ensemble de la [chain](#def-chain): [/prochaines fonctionnalités](/upcoming-features) {{% /def %}}
-
-{{% def id="Ed25519" name="Ed25519" %}} Un type spécifique d'[EdDSA](#def-EdDSA), ainsi que l'Ed448. {{% /def %}}
-
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  Un système moderne de signature à clé publique basé sur des courbes elliptiques, conçu pour résoudre plusieurs problèmes courants de [mise en œuvre](https://ed25519.cr.yp.to/) de la cryptographie à courbes elliptiques. Les autorités de certification comme [Let's Encrypt](#def-LE) ne peuvent pas encore fournir de certificats EdDSA. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} Un algorithme de signature qui utilise la [cryptographie à courbe elliptique](#def-ECC). [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) prend en charge l'ECDSA. {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} Un type de cryptographie à clé publique basé sur des courbes elliptiques. L'ECC utilise des clés plus petites que la cryptographie non CE tout en offrant une sécurité équivalente. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} Un type de validation de certificat pour lequel l' [AC](#def-CA) a vérifié l'entité légale contrôlant le site web. Ils contiennent des informations sur cette entité. Les contrôles de l'[AC](#def-CA) sont plus stricts que pour les certificats [OV](#def-OV). [Let's Encrypt](#def-LE) ne propose pas de certificats EV. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} Le nom de domaine complet d'un site web. Par exemple, `www.example.com` est un *FQDN*. {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} Une [Autorité de Certification ](#def-CA). IdenTrust a apposé sa [signature croisée](#def-cross-signing) sur les [certificats intermédiaires](#def-intermediate) de [Let's Encrypt](#def-LE) : [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} Un certificat signé par un ["root"](#def-root) ou autre "intermediate", et capable de signer d'autres certificats. Ils sont utilisés pour signer des certificats "leaf" tout en gardant la clé privée du certificat "root" hors ligne. Les "intermediates" sont inclus dans les [chaînes de certificats](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
@@ -112,11 +107,11 @@ Note for translators:
 
 {{% def id="mixed-content" name="Mixed content" %}} Lorsqu'une page web HTTPS charge des sous-ressources (Javascript, CSS ou images) via HTTP. Les [navigateurs](#def-web-browser) peuvent bloquer les contenus mixtes, ou marquer la page comme étant moins sûre en présence de contenus mixtes : https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content. Pour résoudre un problème de contenu mixte, un développeur web doit modifier ses pages afin que toutes les ressources utilisent des URL HTTPS. [Les outils de développement](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) intégrés aux navigateurs peuvent être utilisés pour déterminer quelles ressources sont à l'origine de problèmes de contenu mixte. {{% /def %}}
 
-{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} Une méthode pour vérifier le statut de [révocation](#def-revocation) d'un [certificat](#def-leaf). En d'autres termes, un moyen de vérifier si une [Autorité de Certification](#def-CA) indique que le certificat ne doit plus être considéré comme valable, même si sa date d'expiration n'est pas encore atteinte. Cette requête peut créer des problèmes de confidentialité car elle permet à l'Autorité de Certification, et aux fournisseurs de services Internet, d'observer directement qui visite quels sites. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
+{{% def id="OCSP" name="Online Certificate Status Protocol" abbr="OCSP" abbr_first="1" %}} Une méthode pour vérifier le statut de [révocation](#def-revocation) d'un [certificat](#def-leaf). En d'autres termes, un moyen de vérifier si une [Autorité de Certification](#def-CA) indique que le certificat ne doit plus être considéré comme valable, même si sa date d'expiration n'est pas encore atteinte. Cette requête peut créer des problèmes de confidentialité car elle permet à l'Autorité de Certification, et aux fournisseurs de services Internet, d'observer directement qui visite quels sites. [Let's Encrypt](#def-LE) ne fournit plus de service de Protocole de vérification de certificat en ligne. [Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) {{% /def %}}
 
-{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} Une extension de [certificat](#def-leaf), informant le [navigateur](#def-web-browser) que le [serveur web](#def-web-server) avec ce certificat doit utiliserl'[OCSP stapling](#def-OCSP-stapling). Il est utilisé pour exiger qu'un statut de [révocation](#def-revocation) du [certificat](#def-leaf) soit confirmé par le serveur web à chaque connexion, ce qui rend la révocation plus fiable. [Let's Encrypt](#def-LE) peut délivrer des certificats avec l'[extension](#def-extension) OCSP Must-Staple sur demande. [Mozilla Security Blog](https://blog.mozilla.org/security/2015/11/23/improving-revocation-ocsp-must-staple-and-short-lived-certificates/) [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
+{{% def id="OCSP-must-staple" name="OCSP Must-Staple" %}} Une extension de [certificat](#def-leaf), informant le [navigateur](#def-web-browser) que le [serveur web](#def-web-server) avec ce certificat doit utiliserl'[OCSP stapling](#def-OCSP-stapling). Il est utilisé pour exiger qu'un statut de [révocation](#def-revocation) du [certificat](#def-leaf) soit confirmé par le serveur web à chaque connexion, ce qui rend la révocation plus fiable. [Let's Encrypt](#def-LE) ne prendre plus cela en charge. [RFC 7633](https://tools.ietf.org/html/rfc7633) {{% /def %}}
 
-{{% def id="OCSP-stapling" name="OCSP stapling" %}} Un moyen pour un [serveur web](#def-web-server) d'envoyer à un [navigateur](#def-web-browser) une réponse [OCSP](#def-OCSP)  ignée par l'[Autorité de Certification](#def-CA), de sorte que le navigateur lui-même n'a pas besoin de faire une demande OCSP secondaire à l'AC, ce qui améliore la vitesse et la confidentialité. Également connu sous le nom de TLS Certificate Status Request extension. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
+{{% def id="OCSP-stapling" name="OCSP stapling" %}} Un moyen pour un [serveur web](#def-web-server) d'envoyer à un [navigateur](#def-web-browser) une réponse [OCSP](#def-OCSP)  ignée par l'[Autorité de Certification](#def-CA), de sorte que le navigateur lui-même n'a pas besoin de faire une demande OCSP secondaire à l'AC, ce qui améliore la vitesse et la confidentialité. Également connu sous le nom de TLS Certificate Status Request extension. Notez que [Let's Encrypt](#def-LE) ne prend pas en charge le Protocole de vérification de certificat en ligne. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
 {{% def id="OID" name="Object identifier" abbr="OID" %}} Les OID sont des identificateurs numériques uniques normalisés par l'Union Internationale des Télécommunications (ITU) et l'ISO/CEI. Les OID sont utilisés dans les certificats pour définir des extensions, des champs ou des "policy assertions". Les normes Internet et les documents "[Politique de Certification](#def-CP)" et "[Déclaration sur les pratiques de certification](#def-CPS)" définissent l'utilisation de l'OID. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
@@ -136,7 +131,7 @@ Note for translators:
 
 {{% def id="relying-party" name="Relying Party" %}} La personne qui s'appuie sur les informations contenues dans un certificat. Par exemple, une personne qui visite un site web HTTPS est "Relying Party". {{% /def %}}
 
-{{% def id="revocation" name="Revocation" %}} Un certificat est valable jusqu'à sa date d'expiration, sauf si le [AC](#def-CA) indique qu'il a été révoqué. Le certificat peut être révoqué pour diverses raisons telles que la compromission de la clé privée. Les navigateurs peuvent vérifier si un certificat est révoqué en utilisant [CRL](#def-CRL), [OCSP](#def-OCSP), ou des méthodes plus récentes comme [OneCRL](https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/) and [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Notez que dans de nombreuses situations, la [révocation ne fonctionne pas](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
+{{% def id="revocation" name="Revocation" %}} Un certificat est valable jusqu'à sa date d'expiration, sauf si le [AC](#def-CA) indique qu'il a été révoqué. Le certificat peut être révoqué pour diverses raisons telles que la compromission de la clé privée. Les navigateurs peuvent vérifier si un certificat est révoqué en utilisant un [CRL](#def-CRL) ou des méthodes plus récentes comme [CRLite](https://github.com/mozilla/crlite/) et [CRLSets](https://dev.chromium.org/Home/chromium-security/crlsets). Notez que dans de nombreuses situations, la [révocation ne fonctionne pas](https://www.imperialviolet.org/2011/03/18/revocation.html). [/docs/revoking](/docs/revoking) {{% /def %}}
 
 {{% def id="root" name="Root certificate" %}} Un certificat [auto-signé](#def-self-signed) contrôlé par une [Autorité de Certification](#def-CA), utilisé pour signer ses certificats [intermédiaires](#def-intermediate) et inclus dans les [magasins de certificats](#def-store). [Wikipedia](https://en.wikipedia.org/wiki/Root_certificate) {{% /def %}}
 

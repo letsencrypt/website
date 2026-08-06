@@ -1,7 +1,7 @@
 ---
-title: Politique de confidentialité
+title: Politique de Confidentialité Let’s Encrypt
 slug: privacy
-lastmod: 2025-01-15
+lastmod: 2026-07-06
 english_is_canonical: 1
 show_lastmod: 1
 ---
@@ -30,7 +30,7 @@ Il se peut que vous deviez télécharger le logiciel client à partir d'un dép�
 
 ## Visiteur
 
-Lorsque vous êtes un visiteur qui parcourt un site web de l'ISRG, vous avez la possibilité de faire un don. Les dons sont traités par nos partenaires de paiement de confiance, notamment DonorBox, Stripe, Shopify et PayPal, en fonction de la méthode de paiement choisie, et stockés dans la base de données Salesforce de l'ISRG et Sage Intacct si nécessaire. Nous recueillons votre nom et votre adresse électronique et, si vous la fournissez, votre adresse postale lorsque vous faites un don. Une fois que vous avez fait un don, nous utiliserons vos informations dans notre intérêt légitime pour traiter et gérer votre contribution, y compris les rappels de collecte de fonds et les renouvellements. Vos interactions avec [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Printful](https://www.printful.com/policies/privacy), [Formstack](https://www.formstack.com/legal), et [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) sont régies par leurs politiques de confidentialité respectives. Nous ne recueillons ni ne conservons aucune information sur les cartes de crédit ou les informations bancaires liées aux dons.
+Lorsque vous êtes un visiteur qui parcourt un site web de l'ISRG, vous avez la possibilité de faire un don. Les dons sont traités par nos partenaires de paiement de confiance, notamment DonorBox, The Giving Block, Stripe, Shopify et PayPal, en fonction de la méthode de paiement choisie, et stockés dans la base de données Salesforce de l'ISRG et Sage Intacct si nécessaire. Nous recueillons votre nom, votre adresse postale et votre adresse électronique lorsque vous faites un don. En fonction de votre don, nous pouvons également recueillir des informations sur vos préférences en matière de produits dérivés (comme la taille de votre t-shirt) afin de vous faire bénéficier des avantages réservés aux donateurs. Une fois que vous avez fait un don, nous utiliserons vos informations dans notre intérêt légitime pour traiter et gérer votre contribution, y compris les rappels de collecte de fonds et les renouvellements ou l'envoi d'un cadeau de remerciement par courrier. Nous pouvons également utiliser votre adresse postale pour identifier et regrouper les fiches de donateurs en double, afin de garantir l'exactitude de notre base de données de donateurs. Vos interactions avec [DonorBox](https://donorbox.org/privacy), [Stripe](https://stripe.com/privacy/), [PayPal](https://www.paypal.com/us/webapps/mpp/ua/privacy-full), [Shopify](https://www.shopify.com/legal/privacy), [The Giving Block](https://thegivingblock.com/about/privacy-policy/), [Salesforce](https://www.salesforce.com/company/privacy/), [Monday Merch](https://www.mondaymerch.com/us/legal/privacy-policy?utm_source=google&utm_medium=cpc&utm_content=617104787162&utm_term=merch+monday&utm_campaign=16492171655&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD2DPUD-_BNhjV74wtBSJ2fKpvd10ZW6UT_JkqRkL0IRmY3G9_I6ljMaAovwEALw_wcB&gbraid=0AAAAAoJDcr6lwITSXqZ0UkPgmXyJpGp8e), [Formstack](https://www.formstack.com/legal), [BoldSign](https://boldsign.com/privacy-policy/) et [Sage Intacct](https://www.sageintacct.com/privacy_policy_website) sont régies par leurs politiques de confidentialité respectives. Nous ne recueillons ni ne conservons aucune information sur les cartes de crédit ou les informations bancaires liées aux dons.
 
 Vous pouvez fournir votre adresse électronique pour recevoir des communications relatives aux projets de l'ISRG par le biais d'une inscription sur un site web de l'ISRG et par le biais d'autres matériels de marketing. Toute communication transmise via Salesforce et vos interactions avec [Salesforce](https://www.salesforce.com/company/privacy/) sont régies par leurs politiques de confidentialité. Avec votre consentement, nous pouvons occasionnellement utiliser votre adresse électronique pour envoyer des communications personnalisées relatives à l'ISRG et à ses projets. Vous pouvez retirer ce consentement en vous désinscrivant via le pied de page de nos courriels ou en nous envoyant un courriel à l'adresse press@abetterinternet.org.
 
@@ -81,7 +81,7 @@ Nous traitons les données personnelles comme décrit dans cette politique de co
 
 **Base légale :** Intérêts légitimes
 
-**Informations supplémentaires :** Nous recueillons et traitons des informations afin de traiter et de faciliter les dons.
+**Informations supplémentaires :** Nous collectons et traitons des informations afin de gérer et d'accompagner les dons, d'offrir les avantages prévus aux donateurs et de garantir l'exactitude de nos fichiers de donateurs.
 
 **Objectif :** Obligations légales et circonstances atténuantes
 

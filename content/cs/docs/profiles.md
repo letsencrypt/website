@@ -101,7 +101,7 @@ Výběr profilu popisuje [tento návrh Internet-Draft](https://datatracker.ietf.
 Chcete-li vybrat konkrétní profil, postupujte obecně takto:
 
 1. V dokumentaci svého klienta ACME zjistěte, zda výběr profilu podporuje a jak v něm požadovaný profil zadat.
-2. Načtěte objekt adresáře z [produkčního](https://acme-v02.api.letsencrypt.org/directory) nebo [testovacího](https://acme-staging-v02.api.letsencrypt.org/directory) prostředí Let's Encrypt a zjistěte, které profily jsou dostupné.
+2. Načtěte objekt adresáře z [produkčního](https://acme-v02.api.letsencrypt.org/directory) nebo [staging](https://acme-staging-v02.api.letsencrypt.org/directory) prostředí Let's Encrypt a zjistěte, které profily jsou dostupné.
 3. Nastavte požadovaný profil v klientovi ACME.
 
 # Glosář
