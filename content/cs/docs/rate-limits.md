@@ -1,7 +1,7 @@
 ---
 title: Limity četnosti požadavků
 slug: rate-limits
-lastmod: 2025-06-12
+lastmod: 2026-08-05
 show_lastmod: true
 ---
 
@@ -52,7 +52,7 @@ Následující limity platí, když odběratelé žádají o nový certifikát p
 ## Nové objednávky na účet
 
 Při každé žádosti o certifikát od Let's Encrypt vznikne nová objednávka.
-Jeden certifikát může obsahovat až 100 identifikátorů (názvů DNS nebo IP adres). Kvůli výkonu je lepší používat méně identifikátorů na certifikát, kdykoliv je to možné.
+Jeden certifikát může obsahovat až 100 identifikátorů (názvů DNS nebo IP adres) v závislosti na zvoleném [profilu certifikátu](/docs/profiles/). Kvůli výkonu je lepší používat méně identifikátorů na certifikát, kdykoliv je to možné.
 
 ### Limit
 
@@ -70,6 +70,8 @@ Chcete-li tento limit překročit, musíte [požádat o jeho navýšení](https:
 Registrovaná doména je obecně ta část domény, kterou jste zakoupili od registrátora doménových jmen. Například u názvu `www.example.com` je registrovanou doménou `example.com`. U názvu `new.blog.example.co.uk` je registrovanou doménou `example.co.uk`. Registrované domény určujeme podle [seznamu Public Suffix List](https://publicsuffix.org/).
 
 Pokud žádáte o certifikát pro IP adresu, snažíme se za „registrovanou doménu“ považovat také nejběžnější přidělovaný rozsah, který obvykle získáte od poskytovatele připojení nebo hostingu. U adres IPv4 považujeme za registrovanou doménu konkrétní adresu. U adres IPv6 považujeme za registrovanou doménu rozsah /64, do kterého adresa patří.
+
+Seznam certifikátů vydaných pro vaši registrovanou doménu najdete pomocí služeb [crt.sh](https://crt.sh/) nebo [Censys](https://search.censys.io/#), které využívají veřejné logy [transparentnosti certifikátů](https://www.certificate-transparency.org/).
 
 ### Limit
 
@@ -209,8 +211,6 @@ Po uvedeném datu a čase by mělo být možné stejný požadavek úspěšně z
 ## Hlavička Retry-After
 
 Ve všech chybových odpovědích souvisejících s limity uvádíme hlavičku `Retry-After`, která určuje, jak dlouho má klient před dalším pokusem čekat.
-
-Seznam certifikátů vydaných pro vaši registrovanou doménu najdete pomocí služeb [crt.sh](https://crt.sh/) nebo [Censys](https://search.censys.io/#), které využívají veřejné logy [transparentnosti certifikátů](https://www.certificate-transparency.org/).
 
 # Žádost o navýšení limitu
 
