@@ -117,6 +117,6 @@ Nous demandons aux clients [ACME d'effectuer les renouvellements de routine à d
 
 ## Où puis-je en savoir plus sur TLS/SSL et PKI en général ?
 
-Ivan Ristić, chercheur et praticien de la sécurité de longue date, a publié un guide de configuration qui fournit des informations utiles sur ce que vous devez prendre en compte lors de la <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">mise en place de votre configuration TLS</a>.
+Ivan Ristić, chercheur et praticien de la sécurité de longue date, a publié un guide de configuration qui fournit des informations utiles sur ce que vous devez prendre en compte lors de la <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">mise en place de votre configuration TLS</a>.
 
-Pour un contenu plus complet et plus détaillé, nous recommandons <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, également écrit par Ristić.
+Pour un aperçu plus complet et des informations plus détaillées, nous vous recommandons l'ouvrage <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>, également rédigé par Ristić.

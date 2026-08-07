@@ -117,6 +117,6 @@ Jakmile úspěšně dokončíte výzvy pro doménu, výsledná autorizace se ulo
 
 ## Kde se mohu dozvědět více o TLS/SSL a PKI obecně?
 
-Dlouholetý bezpečnostní výzkumník a odborník Ivan Ristić vydal průvodce konfigurací s užitečnými informacemi o tom, co je třeba zvážit při <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">nastavování TLS</a>.
+Dlouholetý bezpečnostní výzkumník a odborník Ivan Ristić vydal průvodce konfigurací s užitečnými informacemi o tom, co je třeba zvážit při <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">nastavování TLS</a>.
 
-Pro rozsáhlejší úvod a podrobnější informace doporučujeme knihu <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, jejímž autorem je rovněž Ristić.
+Pro rozsáhlejší úvod a podrobnější informace doporučujeme knihu <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>, jejímž autorem je rovněž Ristić.

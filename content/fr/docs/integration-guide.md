@@ -45,9 +45,9 @@ Toutefois, pour la plupart des grands hébergeurs, nous recommandons d'utiliser 
 
 # Certificats multi-domaines (SAN)
 
-Notre [politique d'émission](/docs/rate-limits) autorise jusqu'à 100 noms par certificat. Il vous appartient d'utiliser un certificat distinct pour chaque nom d'hôte ou de regrouper plusieurs noms d'hôtes sur un petit nombre de certificats.
+Nous autorisons jusqu'à 100 noms par certificat en fonction du [profil de certificat](/docs/profiles/) sélectionné. Il vous appartient d'utiliser un certificat distinct pour chaque nom d'hôte ou de regrouper plusieurs noms d'hôtes sur un petit nombre de certificats.
 
-L'utilisation de certificats distincts par nom d'hôte signifie qu'il faut moins de démarches pour ajouter et retirer des domaines, lorsqu'ils sont attribués et retirés. Des certificats séparés réduisent également la taille des certificats, ce qui peut accélérer les échanges HTTPS sur les réseaux à faible débit.
+L'utilisation de certificats distincts par nom d'hôte signifie qu'il faut moins de démarches pour ajouter et retirer des domaines, lorsqu'ils sont attribués et retirés. Des certificats séparés réduisent également la taille des certificats, ce qui peut accélérer les échanges HTTPS sur les réseaux à faible débit. Vérifiez notre [débit limite](/docs/rate-limits) pour vous assurer que vous pouvez obtenir autant de certificats que nécessaire.
 
 D'autre part, l'utilisation de gros certificats avec de nombreux noms d'hôtes vous permet de gérer globalement moins de certificats. Si vous devez prendre en charge des clients plus anciens comme Windows XP qui ne prennent pas en charge l'indication de nom de serveur TLS ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), vous aurez besoin d'une adresse IP unique pour chaque certificat, de ce fait, mettre plus de noms sur chaque certificat réduit le nombre d'adresses IP dont vous aurez besoin.
 

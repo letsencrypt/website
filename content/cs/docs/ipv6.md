@@ -1,7 +1,7 @@
 ---
 title: Podpora IPv6
 slug: ipv6-support
-lastmod: 2020-02-07
+lastmod: 2026-08-04
 show_lastmod: 1
 ---
 
@@ -24,7 +24,7 @@ Správným řešením je ve většině případů změnit adresu IPv6 tak, aby v
 
 Po neúspěchu přes IPv6 se požadavek zopakuje přes IPv4 pouze tehdy, když vyprší časový limit připojení. U jiných typů chyb se neopakuje.
 
-Například ve výše popsané situaci z oddílu „Časté problémy“ se požadavek nezopakuje, pokud na adrese IPv6 naslouchá webový server, který však není připraven odpovědět na výzvu ACME. Při přístupu na adresu IPv6 v takovém případě nevyprší časový limit připojení. Server vrátí nesprávnou odpověď, výzva selže a požadavek se nezopakuje.
+Například ve výše popsané situaci se požadavek nezopakuje, pokud na adrese IPv6 naslouchá webový server, který však není připraven odpovědět na výzvu ACME. Při přístupu na adresu IPv6 v takovém případě nevyprší časový limit připojení. Výzva selže bez opakování požadavku, protože server vrátil nesprávnou odpověď.
 
 Aby software naší certifikační autority zůstal jednoduchý, opakujeme z IPv6 přes IPv4 pouze první požadavek při ověřování výzvy „http-01“. Na požadavky následující po přesměrování se tento postup nevztahuje.
 
