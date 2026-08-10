@@ -1,52 +1,56 @@
 ---
 title: Fonctionnalités à venir
 slug: upcoming-features
-lastmod: 2024-06-14
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
-Pour les annonces de prochains développements, veuillez consulter la catégorie [API Announcements](https://community.letsencrypt.org/c/api-announcements/18) (Annonces API) sur le forum communautaire de Let's Encrypt.
+Pour les annonces de changements à venir, veuillez [vous abonner à la liste de diffusion des Mises à jour Techniques](https://letsencrypt.org/opt-in/) ou consulter la [catégorie API d'Annonces](https://community.letsencrypt.org/c/api-announcements/18) sur le forum communautaire Let's Encrypt.
+
+# Fonctionnalités à venir
+
+## Diminution de la durée de validité des certificats à 45 jours
+
+Pour se conformer aux changements des Exigences de bases des AC/Forum de Navigateurs, nous allons [diminuer la durée de validité des certificats à 45 jours](https://letsencrypt.org/2025/12/02/from-90-to-45). Nous allons d'abord la diminuer à 64 jours le 10 février 2027, puis à 45 jours le 16 février 2028. Nous allons également réduire la période d'autorisation de réutilisation à 10 jours, puis 7 heures.
 
 # Fonctionnalités achevées
 
-## Certificats Racine et Intermédiaires ECDSA
+## Suppression de l'EKU de l'Authentification des Clients TLS
 
-* Activé : 06 juin 2024
+Le 11 février 2026, nous avons [supprimé l'utilisation de la clé étendue (EKU) de l'"Authentification des Clients TLS"](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) de notre profil de certificat par défaut. Le 8 juillet 2026, nous avons retiré le profil temporaire [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient), complétant ainsi la suppression. Nous ne délivrons plus de certificats contenant l'EKU de l'Authentification de Client TLS.
 
-Nous émettons des certificats à partir de nos intermédiaires ECDSA de production vers des certificats ECDSA leaf. Voir la documentation sur les [chaînes de confiance](/certificates/) pour plus de détails sur notre hiérarchie PKI.
+## Arrêt des Emails de Notification d'Expiration
+
+Le 4 juin 2025, nous avons [arrêté le service d'emails de notification d'expiration](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), et supprimé toutes les adresses email associées aux comptes ACME de notre base de données de production.
+
+## Suppression des URL de Protocole de vérification de certificat en ligne
+
+Activé : [7 mai 2025](https://letsencrypt.org/2024/12/05/ending-ocsp/).
+
+Nos certificats ne contiennent plus d'URL d'Accès aux Informations de l'Autorité (AIA) de Protocole de vérification de certificat en ligne (OCSP). À la place, ils contiennent un URL de Point de Distribution (CRLDP) de Liste de Révocation de Certificat (CRL). Les parties utilisatrices peuvent récupérer les informations de statut de révocation via les CRLs, et les clients ACME peuvent obtenir les indices de renouvellement via ARI (voir ci-dessous).
+
+## Profils ACME
+
+Activé : [9 janvier 2025](https://letsencrypt.org/2025/01/09/acme-profiles/).
+
+Les clients qui prennent en charge l'[ébauche d'extension de Profils ACME](https://www.ietf.org/archive/id/draft-aaron-acme-profiles-01.html) peuvent maintenant demander que leur certificat se conforme à [l'un de nos profils pris en charge](https://letsencrypt.org/docs/profiles/).
+
+## Journaux TC statiques
+
+Activé : [14 mars 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
+
+Nous gérons maintenant des journaux de Transparence des Certificats (TC) qui se conforment aux nouvelles [Spécifications d'API de TC statiques](https://c2sp.org/static-ct-api), exécutant le logiciel [Sunlight](https://github.com/FiloSottile/sunlight). Ces journaux sont désormais utilisables pour répondre aux exigences de TC des navigateurs. La [Documentation des Journaux TC](https://letsencrypt.org/docs/ct-logs/) a une liste de nos journaux actuels.
 
 ## Informations de renouvellement de l'ACME (ARI)
 
-* Activé : 23 mars 2023
+Activé : [23 mars 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
-Nous gérons maintenant [ARI](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari.html), un système qui nous permet d'avertir les abonnés par API lorsqu'ils doivent renouveler leur abonnement.
+Nous fournissons maintenant des fenêtres de suggestion de renouvellement pour tous les certificats délivrés, que les clients peuvent demander en utilisant l'[extension ARI ACME](https://www.rfc-editor.org/rfc/rfc9773.html).
 
-## Validation multi-perspectives
+## Certification à courte durée de vie
 
-* Activé : 19 février 2020
+Les clients peuvent [demander un certificat "à courte durée de vie"](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) en utilisant les Profils ACME. Ces certificats sont valides pour si peu de temps qu'ils n'ont pas besoin d'avoir d'informations de révocation intégrées.
 
-Nous commençons à gérer un [journal de transparence des certificats](/docs/ct-logs).
+## Certificats d'Adresse IP
 
-## Journal de transparence des certificats
-
-* Activé : 15 mai 2019
-
-Nous exploitons maintenant un [journal de transparence des certificats](/docs/ct-logs).
-
-## TLS ALPN Challenge Support
-
-* Activé : 12 juillet 2018
-
-Nous avons spécifié et mis en œuvre un outil pour [remplacer](https://tools.ietf.org/html/rfc8737) la méthode de validation TLS-SNI, qui a été [abandonnée pour des raisons de sécurité](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811). L'introduction d'un outil de remplacement était importante pour les abonnés qui ne veulent utiliser le port 443 que pour la validation.
-
-## Certificats Wildcard
-
-* Activé : 13 mars 2018
-
-## ACME v2 API
-
-* Activé : 13 mars 2018
-
-## Support complet de l'IPv6
-
-* Activé : 26 juillet 2016
+Les certificats à courte durée de vie (voir ci-dessus) peuvent demander que le certificat [contienne une adresse IP](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) dans ses noms alternatifs du sujet. Ces adresses seront [validées de la même manière que les Noms DNS](https://www.rfc-editor.org/rfc/rfc8738.html) le sont aujourd'hui.

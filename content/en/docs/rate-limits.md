@@ -1,7 +1,7 @@
 ---
 title: Rate Limits
 slug: rate-limits
-lastmod: 2026-07-07
+lastmod: 2026-08-05
 show_lastmod: true
 ---
 
@@ -78,8 +78,9 @@ hostnames.
 
 Each time you request a certificate from Let's Encrypt, a new order is created.
 A single certificate can include up to 100 identifiers (DNS names or IP
-addresses). For performance reasons, it's better to use fewer identifiers per
-certificate whenever you can.
+addresses) depending on the [certificate profile](/docs/profiles/) selected. For
+performance reasons, it's better to use fewer identifiers per certificate
+whenever you can.
 
 ### Limit
 
@@ -108,6 +109,12 @@ most common allocation (what you'd get from your ISP or hosting provider) as the
 "registered domain." For IPv4 addresses, we treat the exact address as the
 registered domain. For IPv6 addresses, we treat the containing /64 range as the
 registered domain.
+
+You can get a list of certificates issued for your registered domain by
+searching [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/#),
+or [CertObserver CT search](https://certobserver.com/ct-search),
+which use the public [Certificate
+Transparency](https://www.certificate-transparency.org/) logs.
 
 ### Limit
 
@@ -337,12 +344,6 @@ the future.
 
 We include a `Retry-After` header in all rate limit error responses, indicating
 the duration your client should wait before retrying.
-
-You can get a list of certificates issued for your registered domain by
-searching [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/#),
-or [CertObserver CT search](https://certobserver.com/ct-search),
-which use the public [Certificate
-Transparency](https://www.certificate-transparency.org/) logs.
 
 # Requesting an Override
 

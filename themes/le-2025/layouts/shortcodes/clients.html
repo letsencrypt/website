@@ -1,12 +1,12 @@
 
-{{ $LanguageDirection := or .Page.Language.LanguageDirection "ltr" }}
+{{ $LanguageDirection := or .Page.Language.Direction "ltr" }}
 
 <div dir="ltr">
-{{ range $.Site.Data.clients.categories }}
+{{ range hugo.Data.clients.categories }}
     <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
     {{ $category := . }}
     <ul>
-    {{ range $.Site.Data.clients.list }}
+    {{ range hugo.Data.clients.list }}
         {{ if (eq $category .category) }}
         <li>
             <a href="{{ .url }}">{{ .name }}</a>
@@ -25,14 +25,14 @@
 
 {{ $certbot := .Inner }}
 
-{{ range $.Site.Data.clients.libraries }}
+{{ range hugo.Data.clients.libraries }}
     <h2 id="libraries-{{ urlize . }}">{{ . }}</h2>
     {{ $library := . }}
     <ul dir="ltr">
     {{ if eq . "Python"}}
         <li dir="{{ $LanguageDirection }}">{{ $certbot | markdownify }}</li>
     {{ end }}
-    {{ range $.Site.Data.clients.list }}
+    {{ range hugo.Data.clients.list }}
         {{ if (eq $library .library) }}
         <li>
             <a href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
@@ -50,7 +50,7 @@
 <h1 dir="{{ $LanguageDirection }}" id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
 
 <ul>
-{{ range $.Site.Data.clients.projects }}
+{{ range hugo.Data.clients.projects }}
         <li dir="ltr">
             <a href="{{ .url }}">{{ .name }}</a>
             {{ if .comments }}
@@ -61,14 +61,14 @@
 </ul>
 </div>
 
-{{ range $.Site.Data.clients.list }}
+{{ range hugo.Data.clients.list }}
     {{ if and (not .category) (not .library) }}
             {{ errorf "Missing Library or Category for %q" .name }}
     {{ end }}
-    {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
+    {{ if and .category (not (in hugo.Data.clients.categories .category)) }}
             {{ errorf "Category %q Unknown for %q" .category .name }}
     {{ end }}
-    {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
+    {{ if and .library (not (in hugo.Data.clients.libraries .library)) }}
             {{ errorf "Library %q Unknown for %q" .library .name }}
     {{ end }}
 {{ end }}

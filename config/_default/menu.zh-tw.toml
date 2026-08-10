@@ -21,7 +21,7 @@ parent = "donate"
 url = "https://www.abetterinternet.org/sponsor/"
 
 [[main]]
-name = "Current Sponsors & Funders"
+name = "目前的贊助商和資助者"
 weight = 40
 identifier = "sponsors"
 parent = "donate"
@@ -33,7 +33,7 @@ weight = 40
 identifier = "about"
 
 [[main]]
-name = "Internet Security Research Group (ISRG)"
+name = "網際網路安全研究組 (ISRG)"
 weight = 200
 identifier = "isrg"
 parent = "about"
@@ -54,7 +54,7 @@ parent = "about"
 url = "https://www.abetterinternet.org/careers/"
 
 [[main]]
-name = "Annual reports"
+name = "年度報告"
 weight = 140
 identifier = "annual-reports"
 parent = "about"

@@ -7,6 +7,14 @@ disableKinds = ["taxonomy", "term"]
 
 enableRobotsTXT = true
 
+# This site includes trusted, first-party HTML content files (e.g. the stats,
+# repository, and CP/CPS document pages under content/). As of the pinned
+# 0.162.0, Hugo denies text/html content by default
+# (security.allowContent = ['! ^text/html$']), which fails the build. Allow all
+# content media types to restore the previous behavior.
+[security]
+allowContent = ['.*']
+
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
 

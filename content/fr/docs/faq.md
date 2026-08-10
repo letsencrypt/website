@@ -2,7 +2,7 @@
 title: FAQ
 linkTitle: Foire aux questions (FAQ)
 slug: faq
-lastmod: 2024-06-26
+lastmod: 2025-04-28
 menu:
   main:
     weight: 30
@@ -69,13 +69,15 @@ Le chiffrement de courriel et la signature de code nécessitent un autre type de
 
 Non. Jamais.
 
-La clé privée est toujours générée et gérée par vos propres serveurs, et non pas par l’autorité de certification Let’s Encrypt.
+La clé privée est toujours générée et gérée sur vos propres serveurs, et non par Let's Encrypt.
 
 ## Quelle est la durée de vie des certificats Let’s Encrypt ? Pour combien de temps sont-ils valides ?
 
-Nos certificats sont valides pendant 90 jours. [Cet article](/2015/11/09/why-90-days.html) explique pourquoi.
+Nos certificats par défaut sont valides pendant 90 jours. [Cet article](/2015/11/09/why-90-days.html) explique pourquoi.
 
-Il n'est pas possible d'ajuster cela, et il n'y a aucune exception. Nous recommandons de renouveler automatiquement vos certificats tous les 60 jours.
+Les abonnés peuvent opter pour des certificats de courte durée qui sont valides pendant six jours. Vous pouvez en savoir plus à ce sujet [ici](/2025/02/20/first-short-lived-cert-issued.html).
+
+Il n'est pas possible d'ajuster cela, et il n'y a aucune exception. Nous vous recommandons de renouveler les certificats de 90 jours tous les 60 jours et les certificats de six jours tous les trois jours.
 
 ## Est-ce que Let’s Encrypt va un jour générer des certificats Organization Validation (OV) ou Extended Validation (EV) ?
 
@@ -87,7 +89,7 @@ Oui, le même certificat peut contenir plusieurs noms différents en utilisant l
 
 ## Est-ce que Let's Encrypt émet des certificats génériques ?
 
-Oui. L'émission de Wildcard doit se faire via ACMEv2 en utilisant le [challenge DNS-01](/docs/challenge-types/#dns-01-challenge). Consultez [ce message](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus d'informations techniques.
+Oui. L'émissions génériques doivent utiliser le [défi DNS-01](/docs/challenge-types/#dns-01-challenge). Consultez [ce message](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) pour plus d'informations techniques.
 
 ## Y a-t-il un client Let's Encrypt (ACME) pour mon système d'exploitation ?
 
@@ -107,7 +109,7 @@ Nous ne publions pas de liste d'adresses IP que nous utilisons pour valider, et 
 
 ## J'ai renouvelé avec succès un certificat mais la validation n'a pas eu lieu cette fois-ci - comment cela est-il possible ?
 
-Dès que vous avez terminé avec succès les challenges pour un domaine, l'autorisation résultante est mise en cache pour que votre compte puisse être réutilisé plus tard. Les autorisations mises en cache ont une durée de 30 jours à compter de la validation. Si le certificat que vous avez demandé comporte toutes les autorisations nécessaires mises en cache, la validation ne se fera plus jusqu'à l'expiration des autorisations mises en cache correspondantes.
+Dès que vous avez terminé avec succès les challenges pour un domaine, l'autorisation résultante est mise en cache pour que votre compte puisse être réutilisé plus tard. Les autorisations mises en cache sont valables jusqu’à 30 jours à compter de leur validation, en fonction du [profil](/docs/profiles) associé. Si le certificat que vous avez demandé comporte toutes les autorisations nécessaires mises en cache, la validation ne se fera plus jusqu'à l'expiration des autorisations mises en cache correspondantes.
 
 ## Pourquoi mon client Let's Encrypt (ACME) doit-il s'exécuter à une heure aléatoire ?
 
@@ -115,6 +117,6 @@ Nous demandons aux clients [ACME d'effectuer les renouvellements de routine à d
 
 ## Où puis-je en savoir plus sur TLS/SSL et PKI en général ?
 
-Ivan Ristić, chercheur et praticien de la sécurité de longue date, a publié un guide de configuration qui fournit des informations utiles sur ce que vous devez prendre en compte lors de la <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">mise en place de votre configuration TLS</a>.
+Ivan Ristić, chercheur et praticien de la sécurité de longue date, a publié un guide de configuration qui fournit des informations utiles sur ce que vous devez prendre en compte lors de la <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">mise en place de votre configuration TLS</a>.
 
-Pour un contenu plus complet et plus détaillé, nous recommandons <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>, également écrit par Ristić.
+Pour un aperçu plus complet et des informations plus détaillées, nous vous recommandons l'ouvrage <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>, également rédigé par Ristić.

@@ -1,0 +1,44 @@
+#cmp-FundingDetails2026 .donate-2026-stat-text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+#cmp-DonationForms2026 .btn {
+  display: inline-block;
+  background: #3a76f0;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  margin-top: 0.75rem;
+}
+
+#cmp-DonationForms2026 .btn:hover {
+  background: #2f63cf;
+}
+
+#cmp-DonationForms2026 .blurb {
+  color: #6b6f76;
+  font-size: 0.98rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+#cmp-DonationForms2026 dbox-widget {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cmp-DonationForms2026 iframe {
+  max-width: 500px;
+  min-width: 250px;
+  max-height: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
