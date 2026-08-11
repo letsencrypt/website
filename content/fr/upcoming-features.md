@@ -23,7 +23,7 @@ Le 11 février 2026, nous avons [supprimé l'utilisation de la clé étendue (EK
 
 Le 4 juin 2025, nous avons [arrêté le service d'emails de notification d'expiration](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), et supprimé toutes les adresses email associées aux comptes ACME de notre base de données de production.
 
-## Suppression des URL de Protocole de vérification de certificat en ligne
+## Suppression des URL d'OCSP
 
 Activé : [7 mai 2025](https://letsencrypt.org/2024/12/05/ending-ocsp/).
 
