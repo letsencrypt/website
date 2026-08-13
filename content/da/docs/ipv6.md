@@ -1,7 +1,7 @@
 ---
 title: IPv6-understøttelse
 slug: ipv6-support
-lastmod: 2020-02-07
+lastmod: 2026-08-04
 show_lastmod: 1
 ---
 
@@ -24,7 +24,7 @@ I de fleste tilfælde er den korrekte rettelse at opdatere IPv6-adressen for at 
 
 Ipv6 til IPv4 gentagelse sker kun ved forbindelsestimeouts, ikke på andre typer af fejl.
 
-For eksempel i "Common Pitfalls" scenariet ovenfor vil det ikke ske, hvis der er en webserver, der lytter på IPv6-adressen, men denne webserver er ikke klar til at besvare ACME-udfordringen. I dette tilfælde ville der ikke være nogen timeout i forbindelsen til IPv6-adressen, og udfordringen vil mislykkes uden at prøve igen, fordi det forkerte svar blev returneret.
+For eksempel i scenariet ovenfor vil en gentagelse vil ikke forekomme, hvis der er en webserver lytter på IPv6-adressen, men at webserver ikke er klar til at besvare ACME-udfordringen. I dette tilfælde ville der ikke være nogen timeout i forbindelsen til IPv6-adressen, og udfordringen ville mislykkes uden at prøve igen, fordi det forkerte svar blev returneret.
 
 For at holde vores CA-software enkel, udfører vi kun en IPv6 til IPv4 genkald på den første anmodning, når du validerer "http-01" udfordringer. Hvis du bruger redirects, vil disse ikke blive forsøgt igen.
 
