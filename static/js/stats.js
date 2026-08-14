@@ -319,17 +319,17 @@ function doPlot() {
   }
 
   var path;
-  if ( location.hostname === "letsencrypt.org" ) {
-    path = "https://d4twhgtvn0ff5.cloudfront.net/";
-  } else {
+  if ( location.hostname === "localhost" ) {
     path = "/js/"; // in dev, will use old data.
+  } else {
+    path = "https://d4twhgtvn0ff5.cloudfront.net/";
   }
 
   var statsPath;
-  if ( location.hostname === "letsencrypt.org" ) {
-    statsPath = "https://d1dfn7jg27m4cf.cloudfront.net/";
-  } else {
+  if ( location.hostname === "localhost" ) {
     statsPath = "/js/"; // in dev, will use old data.
+  } else {
+    statsPath = "https://d1dfn7jg27m4cf.cloudfront.net/";
   }
 
   fetch(statsPath+"cert-daily-stats.tsv")
