@@ -327,9 +327,9 @@ function doPlot() {
 
   var statsPath;
   if ( location.hostname === "letsencrypt.org" ) {
-    path = "https://d1dfn7jg27m4cf.cloudfront.net/";
+    statsPath = "https://d1dfn7jg27m4cf.cloudfront.net/";
   } else {
-    path = "/js/"; // in dev, will use old data.
+    statsPath = "/js/"; // in dev, will use old data.
   }
 
   fetch(statsPath+"cert-daily-stats.tsv")
