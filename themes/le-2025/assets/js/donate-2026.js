@@ -5,6 +5,7 @@ const Donate2026 = {
 
     this.page = page;
     this.forms = page.querySelector('#cmp-DonationForms2026');
+    this.topGrid = page.querySelector('#cmp-Donate2026TopGrid');
     this.formOverlay = page.querySelector('#cmp-Donate2026FormOverlay');
     this.formSpacer = page.querySelector('#cmp-Donate2026FormSpacer');
     this.lowerContent = page.querySelector('#cmp-Donate2026WaysToGive');
@@ -99,12 +100,25 @@ const Donate2026 = {
   syncFormSpacerHeight() {
     if (!this.formOverlay || !this.formSpacer) return;
 
+    if (this.topGrid) {
+      this.topGrid.style.paddingBottom = '';
+    }
+
     if (!this.desktopMediaQuery?.matches) {
       this.formSpacer.style.minHeight = '';
       return;
     }
 
     this.formSpacer.style.minHeight = '';
+
+    const otherPanel = this.forms?.querySelector('#donate-2026-panel-other');
+    if (this.topGrid && otherPanel?.classList.contains('active')) {
+      const formBottom = this.formOverlay.getBoundingClientRect().bottom;
+      const gridBottom = this.topGrid.getBoundingClientRect().bottom;
+      const overflow = Math.max(Math.ceil(formBottom - gridBottom), 0);
+
+      this.topGrid.style.paddingBottom = overflow ? `${overflow}px` : '';
+    }
 
     const formBottom = this.formOverlay.getBoundingClientRect().bottom;
     const spacerTop = this.formSpacer.getBoundingClientRect().top;
