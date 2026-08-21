@@ -12,7 +12,7 @@ La première question à laquelle doivent répondre les personnes qui souhaitent
 
 # Obtenir des certificats par l'intermédiaire de votre hébergeur
 
-Pour de nombreuses personnes, leur fournisseur d'hébergement obtiendra et gérera les certificats de Let's Encrypt pour eux. Si c'est le cas, votre fournisseur utilise un client ACME et vous n'avez pas à vous préoccuper d'obtenir ou d'utiliser vous-même le logiciel client ACME.
+Pour de nombreuses personnes, [leur fournisseur d'hébergement obtiendra et gérera les certificats de Let's Encrypt pour eux](https://certbot.eff.org/hosting_providers). Si c'est le cas, votre fournisseur utilise un client ACME et vous n'avez pas à vous préoccuper d'obtenir ou d'utiliser vous-même le logiciel client ACME.
 
 Si votre fournisseur obtient et gère les certificats pour vous, cela se fera automatiquement ou bien vous devrez activer une option de configuration. Consultez la documentation et les options de configuration de votre fournisseur.
 

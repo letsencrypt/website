@@ -78,7 +78,13 @@
       "name": "Acton Family Giving",
       "url": "https://actonfamilygiving.org/",
       "image": "acton-family-giving-logo.png"
-    }
+    },
+    {
+      "name": "ALL-INKL.COM",
+      "url": "https://all-inkl.com/",
+      "image": "all-inkl-com-logo.png"
+    },
+    { "name": "Wix", "url": "https://www.wix.com/", "image": "wix-logo.png" }
   ],
   "silver": [
     {
@@ -119,11 +125,6 @@
     },
     { "name": "3CX", "url": "https://www.3cx.com/", "image": "3cx-logo.png" },
     {
-      "name": "Jimdo",
-      "url": "https://www.jimdo.com/",
-      "image": "jimdo-logo.png"
-    },
-    {
       "name": "Zendesk",
       "url": "https://www.zendesk.com/",
       "image": "zendesk-logo.png"
@@ -139,19 +140,9 @@
       "image": "dnsimple-logo.png"
     },
     {
-      "name": "Shiguredo",
-      "url": "https://shiguredo.jp/",
-      "image": "shiguredo-v2-logo.svg"
-    },
-    {
       "name": "Discourse",
       "url": "https://www.discourse.org/",
       "image": "discourse-logo.png"
-    },
-    {
-      "name": "driving-tests.org",
-      "url": "https://driving-tests.org/",
-      "image": "driving-tests-logo.png"
     },
     {
       "name": "DuoCircle",
@@ -168,11 +159,6 @@
       "name": "GitHub",
       "url": "https://github.com/",
       "image": "github-logo.png"
-    },
-    {
-      "name": "Lime Technology (Unraid)",
-      "url": "https://unraid.net/",
-      "image": "unraid-logo.png"
     },
     {
       "name": "Keenetic",
@@ -209,9 +195,6 @@
       "url": "https://www.nabucasa.com/",
       "image": "nabu-casa-logo.png"
     },
-    { "name": "Wix", "url": "https://www.wix.com/", "image": "wix-logo.png" },
-
-
     {
       "name": "WPBeginner",
       "url": "https://www.wpbeginner.com/",
@@ -238,11 +221,6 @@
       "image": "rack-speed-logo.png"
     },
     { "name": "Duda", "url": "https://www.duda.co/", "image": "duda-logo.png" },
-    {
-      "name": "Ads.com",
-      "url": "https://www.ads.com/",
-      "image": "ads-com-logo.png"
-    },
     {
       "name": "cdmon",
       "url": "https://www.cdmon.com/es/",
@@ -288,13 +266,11 @@
       "url": "https://www.confluent.io/",
       "image": "confluent-logo.svg"
     },
-    { "name": "Ngrok", "url": "https://ngrok.com/", "image": "ngrok-logo.png" },
     {
       "name": "SecureW2",
       "url": "https://www.securew2.com/",
       "image": "securew2-logo.png"
     },
-    { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
     { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
@@ -349,11 +325,6 @@
       "image": "duckduckgo-logo.svg"
     },
     {
-      "name": "Zoho",
-      "url": "https://zoho.com/",
-      "image": "zoho-logo-web.svg"
-    },
-    {
       "name": "Auth0",
       "url": "https://auth0.com/",
       "image": "auth0-logo.svg"
@@ -382,6 +353,26 @@
       "name": "Porkbun",
       "url": "https://porkbun.com/",
       "image": "porkbun-logo.png"
+    },
+    {
+      "name": "Fly.io",
+      "url": "https://fly.io/",
+      "image": "fly-io-logo.png"
+    },
+    {
+      "name": "Red Sift",
+      "url": "https://redsift.com/",
+      "image": "red-sift-wide-logo.svg"
+    },
+    {
+      "name": "Datum",
+      "url": "https://www.datum.net/",
+      "image": "datum-logo.svg"
+    },
+    {
+      "name": "Exclaimer",
+      "url": "https://exclaimer.com/",
+      "image": "exclaimer-logo-dark.svg"
     }
   ]
 }

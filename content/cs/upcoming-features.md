@@ -1,7 +1,7 @@
 ---
 title: Připravované funkce
 slug: upcoming-features
-lastmod: 2026-03-16
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
@@ -9,15 +9,15 @@ Oznámení o nadcházejících změnách najdete [v mailing listu Technické akt
 
 # Připravované funkce
 
-## Odstranění EKU ověřování klienta TLS
-
-11. února 2026 <a href=„https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/“>jsme odstranili z našeho výchozího profilu certifikátu rozšířené použití klíče (EKU) „TLS Client Authentication“</a>. Jako dočasné provizorní řešení pro klienty, kteří potřebují více času na migraci, máme k dispozici profil [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient). Předplatitelé, kteří ho již využívali před 13. květnem 2026, ho mohou nadále využívat až do 8. července 2026.
-
 ## Zkrácení platnosti certifikátů na 45 dní
 
 Abychom vyhověli změnám základních požadavků CA/Browser Forum,[zkrácujeme platnost certifikátů na 45 dní](https://letsencrypt.org/2025/12/02/from-90-to-45). Nejprve se sníží na 64 dní 10. února 2027 a poté na 45 dní 16. února 2028. Zkracujeme také dobu opakovaného použití autorizace na 10 dní, poté na 7 hodin.
 
 # Dokončené funkce
+
+## Odstranění EKU ověřování klienta TLS
+
+11. února 2026 jsme z našeho výchozího profilu certifikátu [odstranili rozšířené použití klíče (EKU) „TLS Client Authentication“](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/). 8. července 2026 jsme vyřadili dočasný profil [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) a tím jsme ho nadobro odstranili. Certifikáty obsahující EKU pro ověřování klienta TLS už nevydáváme.
 
 ## Vypnutí e-mailů o vypršení platnosti
 

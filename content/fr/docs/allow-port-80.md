@@ -1,7 +1,6 @@
 ---
 title: Bonne pratique - Garder le port 80 ouvert
 slug: 1
-date: 2019-01-24
 lastmod: 2019-01-24
 show_lastmod: 1
 ---

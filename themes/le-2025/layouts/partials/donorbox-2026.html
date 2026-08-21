@@ -1,0 +1,21 @@
+<div id="cmp-DonorboxEmbed2026" class="donate-2026-embed-frame donate-2026-embed-frame--donorbox text-center mb-4 donorbox-container">
+  <script type="module" src="https://donorbox.org/widgets.js" async></script>
+  <dbox-widget campaign="2026-summer-campaign" type="donation_form" enable-auto-scroll="true"></dbox-widget>
+  <div id="donorbox-fallback-2026" class="mt-2">
+    <a href="https://donorbox.org/2026-summer-campaign" class="btn">Donate on Donorbox</a>
+  </div>
+  <script>
+    (function attachDonorboxFallbackListener() {
+      const widget = document.querySelector('#cmp-DonorboxEmbed2026 dbox-widget');
+      const fallback = document.getElementById('donorbox-fallback-2026');
+
+      if (!widget || !fallback) return;
+
+      widget.addEventListener('dbox:campaign-loaded', function() {
+        window.requestAnimationFrame(function() {
+          fallback.style.display = 'none';
+        });
+      }, { once: true });
+    }());
+  </script>
+</div>

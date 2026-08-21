@@ -1,7 +1,7 @@
 ---
 title: Options du service de surveillance
 slug: monitoring-options
-lastmod: 2026-05-19
+lastmod: 2026-08-21
 show_lastmod: 1
 ---
 
@@ -16,7 +16,10 @@ Il existe un certain nombre d'options de surveillance, notamment :
 - [Datadog SSL Monitoring](https://www.datadoghq.com/monitoring/ssl-monitoring/)
 - [TrackSSL](https://trackssl.com/)
 - [Host-Tracker](https://www.host-tracker.com/)
+- [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (scripts autohébergés)
 - [CertKit](https://www.certkit.io/)
+- [CertObserver](https://certobserver.com/)
+- [Chill SSL](https://www.chillssl.com/)
 - [SSLreminder](https://sslreminder.pro/)
 
 Veuillez noter que tous ces services ne sont pas affiliés à ISRG / Let's Encrypt.

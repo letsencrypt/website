@@ -1,7 +1,7 @@
 title = "Let's Encrypt - Freie SSL/TLS Zertifikate"
 contentDir = "content/de"
-languageName = "Deutsch"
-languageCode = "de-DE"
+label = "Deutsch"
+locale = "de-DE"
 weight = 200
 
 [params]

@@ -1,7 +1,7 @@
 ---
 title: Participez
 slug: getinvolved
-lastmod: 2019-11-04
+lastmod: 2025-07-31
 menu:
   main:
     weight: 60
@@ -9,23 +9,18 @@ menu:
 show_lastmod: 1
 ---
 
-
-## Communauté
+## Support de la Communauté
 
 Nous pouvons toujours apporter notre aide pour répondre aux questions à [Let's Encrypt Community Support](https://community.letsencrypt.org/). Voir [ce billet de blog](/2015/08/13/lets-encrypt-community-support.html) sur les raisons pour lesquelles les contributions de soutien communautaire sont si importantes.
 
-## Code
+## Logiciel client ACME
 
-Nous pouvons également apporter notre aide pour le développement de logiciels. Tout notre code se trouve sur [GitHub](https://github.com/letsencrypt/).
+L'une des meilleures choses que vous pouvez faire pour aider Let's Encrypt est d'aider aux [clients ACME maintenus par la communauté](/docs/client-options).
 
-### Logiciel client
+## letsencrypt.org
 
-[Certbot](https://github.com/certbot/certbot) est un utilitaire basé sur Python qui fonctionne avec votre serveur web pour obtenir automatiquement un certificat et convertir un site web en HTTPS. Certbot est le client avec lequel nous recommandons à la plupart des gens de commencer. De nombreuses autres [options de clients tiers](/docs/client-options) sont disponibles.
+Vous pouvez aider à améliorer ce site web via son [dépôt GitHub](https://github.com/letsencrypt/website), incluant la documentation et les [traductions](https://crowdin.com/project/lets-encrypt-website).
 
-### Logiciel d'AC côté serveur
+## Logiciel d'AC côté serveur
 
-[Boulder](https://github.com/letsencrypt/boulder) est l'implémentation de l'AC "Let's Encrypt". Il est basé sur le protocole [ACME](https://tools.ietf.org/html/rfc8555) et écrit principalement en Go. Un bon point de départ est la liste des problèmes ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) et le [guide des contributeurs](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
-
-### letsencrypt.org
-
-Vous pouvez améliorer ce site web et la documentation [ici](https://github.com/letsencrypt/website) ou aider pour les [traductions](https://crowdin.com/project/lets-encrypt-website).
+Notre logiciel AC côté serveur, [Boulder](https://github.com/letsencrypt/boulder), est Open Source. Il est basé sur le protocole [ACME](https://tools.ietf.org/html/rfc8555) et écrit principalement en Go. Un bon point de départ est la liste des problèmes ['help wanted'](https://github.com/letsencrypt/boulder/labels/help%20wanted) et le [guide des contributeurs](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).

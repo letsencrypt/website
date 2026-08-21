@@ -21,12 +21,12 @@ Bemærk, at ACME-konti er begrænset til hvert miljø, og derfor er der brug for
 Staging miljøet bruger de samme kaldsbegrænsninger som [beskrevet for produktionsmiljøet](/docs/rate-limits) med følgende undtagelser:
 
 * **[Nye Registreringer pr. IP-adresse](/docs/rate-limits/#new-registrations-per-ip-address)** grænsen er 50 pr 3 timer.
-* **[Nye Registreringer pr. IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** grænsen er 500 pr 3 timer (samme som produktion).
+* **[Nye Registreringer per IPv6 Range](/docs/rate-limits/#new-registrations-per-ipv6-range)** grænsen er 500 pr 3 timer (samme som produktion).
 * **[Nye Ordrer pr. konto](/docs/rate-limits/#new-orders-per-account)** grænsen er 1500 pr 3 timer.
 * Grænsen for **[Certifikater pr. registreret domæne](/docs/rate-limits/#new-certificates-per-registered-domain)** er 30000 pr sekund.
-* **[Nye Certifikater pr. eksakt sæt værtsnavne](/docs/rate-limits/#new-certificates-per-exact-set-of-hostnames)** grænsen er 30000 om ugen.
-* **[Authorization Failures per Hostname per Account](/docs/rate-limits/#authorization-failures-per-hostname-per-account)** grænsen er 200 pr time.
-* **[Consecutive Authorization Failures per Hostname per Account](/docs/rate-limits/#consecutive-authorization-failures-per-hostname-per-account)** grænsen er 3600 pr 6 timer.
+* **[Nye Certifikater pr. eksakt sæt værtsnavne](/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)** grænsen er 30000 om ugen.
+* **[Fejlede godkendelsesforsøg per værstnavn per konto](/docs/rate-limits/#authorization-failures-per-identifier-per-account)** grænsen er 200 per time.
+* **[Gentagne fejlede godkendelsesforsøg per Værtsnavn per konto](/docs/rate-limits/#consecutive-authorization-failures-per-identifier-per-account)** grænsen er 3600 per 6 timer.
 
 De samlede [forespørgsler grænser](/docs/rate-limits/#overall-requests-limit) er:
 

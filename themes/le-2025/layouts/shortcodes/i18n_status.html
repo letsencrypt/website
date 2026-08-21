@@ -2,6 +2,10 @@
 {{ $scratch_translated := newScratch }}
 {{ $scratch_up_to_date := newScratch }}
 
+{{/* .Site.Languages was deprecated in Hugo v0.156.0; build the language list from hugo.Sites instead. */}}
+{{ $languages := slice }}
+{{ range hugo.Sites }}{{ $languages = $languages | append .Language }}{{ end }}
+
 {{ $scratch.Set "nb_pages" 0 }}
 <table class="border">
   <thead>
@@ -9,7 +13,7 @@
       <th></th>
       <th></th>
       <th>English (reference date)</th>
-      {{ range sort $.Site.Languages }}
+      {{ range sort $languages }}
         {{ if ne .Lang "en" }}
           <th>
             {{ .Lang }}
@@ -43,7 +47,7 @@
             {{ end }}
           </a>
         </td>
-        {{ range sort $.Site.Languages }}
+        {{ range sort $languages }}
             {{ if eq .Lang "en" }}
               {{ $scratch.Set "nb_pages" ( add 1 ( $scratch.Get "nb_pages" ) ) }}
             {{ else }}
@@ -90,7 +94,7 @@
         <th></th>
         <th></th>
         <th></th>
-        {{ range sort $.Site.Languages }}
+        {{ range sort $languages }}
           {{ if ne .Lang "en" }}
             <th>
               {{ .Lang }}
@@ -102,7 +106,7 @@
         <th></th>
         <th></th>
         <th>Translated</th>
-        {{ range sort $.Site.Languages }}
+        {{ range sort $languages }}
           {{ if ne .Lang "en" }}
             <th>
                 {{ $scratch_translated.Get .Lang }}/{{ $scratch.Get "nb_pages" }}
@@ -115,7 +119,7 @@
         <th></th>
         <th></th>
         <th>Up-to-date</th>
-        {{ range sort $.Site.Languages }}
+        {{ range sort $languages }}
           {{ if ne .Lang "en" }}
             <th>
               {{ if ($scratch_translated.Get .Lang) }}
