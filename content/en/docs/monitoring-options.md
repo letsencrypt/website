@@ -1,7 +1,7 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2026-07-13
+lastmod: 2026-08-24
 show_lastmod: 1
 ---
 
@@ -19,8 +19,8 @@ There are a number of monitoring options out there, including:
 * [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (self-hosted scripts)
 * [CertKit](https://www.certkit.io/)
 * [CertObserver](https://certobserver.com/)
-* [CertPost](https://www.certpost.ai)
 * [Chill SSL](https://www.chillssl.com/)
+* * [CertPost](https://www.certpost.ai/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
