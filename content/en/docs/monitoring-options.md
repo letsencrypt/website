@@ -20,7 +20,7 @@ There are a number of monitoring options out there, including:
 * [CertKit](https://www.certkit.io/)
 * [CertObserver](https://certobserver.com/)
 * [Chill SSL](https://www.chillssl.com/)
-* * [CertPost](https://www.certpost.ai/)
+* [CertPost](https://www.certpost.ai/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
