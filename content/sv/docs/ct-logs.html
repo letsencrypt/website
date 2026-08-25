@@ -1,4 +1,117 @@
 ---
+title: Certifikattransparens (CT)-loggar
 slug: ct-logs
-untranslated: 1
+lastmod: 2026-06-15
+show_lastmod: 1
 ---
+
+
+<p>
+  <a href="https://www.certificate-transparency.org/what-is-ct">Certificate Transparency (CT)</a> är ett system för att logga och övervaka utfärdandet av TLS-certifikat. CT förbättrar avsevärt allas förmåga att övervaka och studera utfärdande av certifikat, och dessa funktioner har lett till många förbättringar av CA-ekosystemet och webbsäkerheten. Som ett resultat håller CT snabbt på att bli kritisk infrastruktur.
+</p>
+
+<p>
+  Let's Encrypt skickar in alla certifikat vi utfärdar till CT-loggar. Vi driver också CT-loggar.
+  Alla offentligt betrodda certifikatutfärdare är välkomna att lämna in till våra loggar. Många rotcertifikat från certifikatutfärdare har redan inkluderats i våra CT-loggar. Om du driver en certifikatutfärdare och din utfärdare inte finns på vår lista över accepterade utfärdare, vänligen skicka in ett ärende <a href="https://github.com/letsencrypt/ct-log-metadata">här</a>.
+</p>
+
+<p>
+  Registrera dig för aviseringar i <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">kategorin CT announcements</a> på vårt communityforum för att få viktigare meddelanden om våra CT-loggar.
+</p>
+
+<h2>Finansiering</h2>
+
+<p>
+  Om din organisation vill hjälpa oss att fortsätta detta arbete, vänligen överväg <a href="https://www.abetterinternet.org/sponsor/">att sponsra eller donera</a>.
+</p>
+
+<h2>CT-loggar</h2>
+<p>
+Information om de olika livscykelstadier som en CT-logg går igenom kan hittas <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">här</a>.
+</p>
+
+<h3>Solljus</h3>
+<p>
+  Let's Encrypt driver för närvarande <a href="https://c2sp.org/static-ct-api">statiska-ct</a> loggar baserade på <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
+  Information om bland annat godkända rotcertifikat, publika nycklar, logg-ID:n och shardintervall finns på respektive loggs landningssida, som länkas nedan.
+</p>
+<p>Sycamore och Willow är våra produktions-CT-loggar, som accepterar certifikat från betrodda CA:er.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p>
+  Twig är en testlogg som accepterar certifikat från betrodda CA:s samt vissa ytterligare test-CA:s, inklusive Let's Encrypt-stagingmiljön.
+</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
+<h3>RFC 6962 Loggar EOL</h3>
+<p>
+  Let's Encrypt körde tidigare loggar baserade på Trillian och implementerade RFC 6962 API.
+  Mer information finns i <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">planen för utfasning av våra Certificate Transparency-loggar enligt RFC 6962</a>.
+</p>
+
+<h2>Loggoperationer</h2>
+<p>
+  För att lista de inkluderade rötterna för en viss CT-logg kan du köra följande kommando i valfri terminal:
+</p>
+<pre>
+$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>
+  Att skicka in certifikat till en CT-logg hanteras vanligtvis av certifikatutfärdare. Om du vill experimentera med detta, börja med att hämta ett godtyckligt PEM-kodat certifikat från vår favoritwebbplats. Kopiera och klistra in följande block i din terminal.
+</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>
+  Innan ett certifikat kan skickas in måste det vara JSON-kodat inom en speciell struktur. Du kan använda den JSON-generator som tillhandahålls av <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> för att utföra denna uppgift. Verktyget crt.sh kommer att returnera ett JSON-paket. Ladda ner paketet till din dator, byt namn på filen om du måste, och kör följande kommando för att utföra add-chain operationen (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962 avsnitt 4.1 </a
+>) för att skicka certifikatet till en CT-logg. Utdata kommer att innehålla en signatur som faktiskt är ett <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. Mer om signaturen om ett ögonblick.
+</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
+{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+</pre>
+
+<p>
+  För att bekräfta att CT-loggen signerades av Oak 2020 shard, använder vi id-fältet från kommandot ovan och kör det genom följande kommando. Resultatet av detta kommer att visa Log ID för CT-loggen.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+</pre>
+
+<p>
+  Med hjälp av signaturfältet kan vi verifiera att certifikatet skickades till en logg. Med vår <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >SCT-djupdykningsguide </a
+> kan du vidare avkoda detta värde.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
+9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
+5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
+2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
+47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+</pre>
