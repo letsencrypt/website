@@ -5,7 +5,8 @@ lastmod: 2019-10-07
 show_lastmod: 1
 ---
 
-[IETF-standardiseringen](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) av ACME protokollet, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), är grundstenen till hur Let's Encrypt fungerar.
+
+Det [IETF-standardiserade](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-standard.html) ACME-protokollet, [RFC 8555](https://datatracker.ietf.org/doc/rfc8555/), är hörnstenen för hur Let's Encrypt fungerar.
 
 # API-slutpunkter
 
