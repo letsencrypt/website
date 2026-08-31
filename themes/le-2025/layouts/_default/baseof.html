@@ -2,6 +2,7 @@
 <html lang="{{ or site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
 <head>
   {{ partial "head.html" . }}
+  {{ block "head-extra" . }}{{ end }}
 </head>
 <body>
   {{ partial "header.html" . }}
