@@ -149,7 +149,7 @@ Note for translators:
 
 {{% def id="staging" name="Testmiljö" %}} [Let's Encrypt](#def-LE) tillhandahåller ett staging-API för att testa certifikatförfrågningar utan att påverka frekvensbegränsningar. Certifikat som genereras av testmiljön är *inte* offentligt betrodda. Testmiljön bör användas för testning, felsökning och utveckling av ACME-klienter. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Alternativt subjektnamn" abbr="SAN" %}} Ett fält i ett [certifikat](#def-leaf) som anger för vilka domän(er) certifikatet är giltigt. Det ersätter användningen av [Common Name](#def-CN), som nu endast tillhandahålls av kompatibilitetsskäl. Ett enskilt certifikat kan innehålla många SAN:er och vara giltigt för många olika domännamn. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Alternativt subjektnamn" abbr="SAN" %}} Ett fält i ett [certifikat](#def-leaf) som anger för vilka domän(er) certifikatet är giltigt. Det ersätter användningen av [Common Name](#def-CN), som nu endast tillhandahålls av kompatibilitetsskäl. Ett enskilt certifikat kan innehålla många SAN:er och vara giltigt för många olika domännamn. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Prenumerant" %}} Personen eller organisationen som begär ett certifikat. {{% /def %}}
 

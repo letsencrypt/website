@@ -152,7 +152,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} A [Let's Encrypt](#def-LE) egy staging API-t biztosít a tanúsítványkérelmek teszteléséhez a határértékek befolyásolása nélkül. Az staging környezet által generált tanúsítványok *nem* nyilvánosan megbízhatóak. A staging környezet tesztelésre, hibakeresésre és az ACME kliens fejlesztésére használható. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} A [tanúsítvány](#def-leaf) egy mezője, amely jelzi, hogy a tanúsítvány mely domain(ek)re érvényes. Ez helyettesíti a [Common Name](#def-CN) használatát, amely most már csak kompatibilitási okokból van megadva. Egyetlen tanúsítvány több SAN-t is tartalmazhat, és több különböző domain névre is érvényes lehet. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} A [tanúsítvány](#def-leaf) egy mezője, amely jelzi, hogy a tanúsítvány mely domain(ek)re érvényes. Ez helyettesíti a [Common Name](#def-CN) használatát, amely most már csak kompatibilitási okokból van megadva. Egyetlen tanúsítvány több SAN-t is tartalmazhat, és több különböző domain névre is érvényes lehet. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} A tanúsítványt igénylő személy vagy szervezet. {{% /def %}}
 

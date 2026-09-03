@@ -149,7 +149,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) giver et staging API til at teste certifikatforespørgsel uden at påvirke kaldsgrænser. Certifikater genereret af staging miljøet er *ikke* offentligt betroet. Stagingsmiljøet bør anvendes til testning, fejlfinding og ACME-klientudvikling. [/docs/staging-miljø](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Et felt i et [certifikat](#def-leaf), der angiver, for hvilket domæne(r) certifikatet er gyldigt. Det erstatter brugen af [Common Name](#def-CN), som nu kun findes af hensyn til kompatibilitet. Et enkelt certifikat kan indeholde mange SANs og være gyldigt for mange forskellige domænenavne. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Et felt i et [certifikat](#def-leaf), der angiver, for hvilket domæne(r) certifikatet er gyldigt. Det erstatter brugen af [Common Name](#def-CN), som nu kun findes af hensyn til kompatibilitet. Et enkelt certifikat kan indeholde mange SANs og være gyldigt for mange forskellige domænenavne. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} Personen eller organisationen anmoder om et certifikat. {{% /def %}}
 

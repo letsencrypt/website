@@ -152,7 +152,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) надає проміжний API для перевірки запиту сертифіката, не впливаючи на обмеження швидкості. Сертифікати, створені проміжним середовищем, *не* є загальнодоступними. Проміжне середовище має використовуватися для тестування, налагодження та розробки клієнта ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Поле [сертифікату](#def-leaf), яке вказує на який домен( s) сертифікат дійсний. Він замінює використання [Загального імені](#def-CN), яке тепер надається лише з міркувань сумісності. Один сертифікат може містити багато SAN, які дійсні для різних доменних імен. [Вікіпедія](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/uk/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Поле [сертифікату](#def-leaf), яке вказує на який домен( s) сертифікат дійсний. Він замінює використання [Загального імені](#def-CN), яке тепер надається лише з міркувань сумісності. Один сертифікат може містити багато SAN, які дійсні для різних доменних імен. [Вікіпедія](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} Особа або організація, яка запитує сертифікат. {{% /def %}}
 
