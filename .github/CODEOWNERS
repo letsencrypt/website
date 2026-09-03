@@ -3,3 +3,4 @@
 /content/en/documents/ @letsencrypt/pma
 /static/audits/ @letsencrypt/pma
 /static/certs/ @letsencrypt/pma
+netlify.toml @letsencrypt/pma
