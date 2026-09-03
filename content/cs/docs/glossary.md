@@ -149,7 +149,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging prostředí" %}} [Let's Encrypt](#def-LE) poskytuje staging API pro testování požadavků na certifikáty bez ovlivnění limitů požadavků. Certifikáty vygenerované ve staging prostředí *nejsou* veřejně důvěryhodné. Staging prostředí slouží k testování, ladění a vývoji klientů ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Alternativní název subjektu" abbr="SAN" %}} Pole [certifikátu](#def-leaf), které uvádí domény, pro něž je certifikát platný. Nahrazuje použití [Common Name](#def-CN), které se nyní uvádí pouze z důvodu kompatibility. Jeden certifikát může obsahovat mnoho SAN a platit pro mnoho různých názvů domén. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Alternativní název subjektu" abbr="SAN" %}} Pole [certifikátu](#def-leaf), které uvádí domény, pro něž je certifikát platný. Nahrazuje použití [Common Name](#def-CN), které se nyní uvádí pouze z důvodu kompatibility. Jeden certifikát může obsahovat mnoho SAN a platit pro mnoho různých názvů domén. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Odběratel" %}} Osoba nebo organizace žádající o certifikát. {{% /def %}}
 
