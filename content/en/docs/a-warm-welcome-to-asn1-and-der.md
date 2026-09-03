@@ -202,17 +202,17 @@ Object identifiers are globally unique, hierarchical identifiers made of
 a sequence of integers. They can refer to any kind of "thing," but are
 commonly used to identify standards, algorithms, certificate extensions,
 organizations, or policy documents. As an example:
-[1.2.840.113549](http://oid-info.com/get/1.2.840.113549) identifies
+[1.2.840.113549](http://oid-base.com/get/1.2.840.113549) identifies
 RSA Security LLC. RSA can then assign OIDs starting with that prefix,
 like
-[1.2.840.113549.1.1.11](http://oid-info.com/get/1.2.840.113549.1.1.11),
+[1.2.840.113549.1.1.11](http://oid-base.com/get/1.2.840.113549.1.1.11),
 which identifies sha256WithRSAEncryption, as defined in [RFC
 8017](https://tools.ietf.org/html/rfc8017#page-69).
 
 Similarly,
-[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129) identifies
+[1.3.6.1.4.1.11129](http://oid-base.com/get/1.3.6.1.4.1.11129) identifies
 Google, Inc. Google assigned
-[1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) to
+[1.3.6.1.4.1.11129.2.4.2](http://oid-base.com/get/1.3.6.1.4.1.11129.2.4.2) to
 identify the [SCT list
 extension](https://letsencrypt.org/2018/04/04/sct-encoding.html) used
 in Certificate Transparency (which was initially developed at Google),
@@ -224,13 +224,13 @@ The set of child OIDs that can exist under a given prefix is called an
 assignments under shorter arcs are considered more valuable,
 particularly for formats where that OID will have to be sent a lot. The
 OID arc
-[2.5](http://oid-info.com/get/2.5) is
+[2.5](http://oid-base.com/get/2.5) is
 assigned to "Directory Services," the series of specifications that
 includes X.509, which HTTPS certificates are based on. A lot of fields
 in certificates begin with that conveniently short arc. For instance,
-[2.5.4.6](http://oid-info.com/get/2.5.4.6) means
+[2.5.4.6](http://oid-base.com/get/2.5.4.6) means
 "countryName," while
-[2.5.4.10](http://oid-info.com/get/2.5.4.10) means
+[2.5.4.10](http://oid-base.com/get/2.5.4.10) means
 "organizationName." Since most certificates have to encode each of those
 OIDs at least once, it's handy that they are short.
 
