@@ -113,7 +113,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} A way for a [web server](#def-web-server) to send a [browser](#def-web-browser) an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the browser itself doesn’t need to make a secondary OCSP request to the CA, improving speed and privacy. Also known as TLS Certificate Status Request extension. Note that [Let's Encrypt](#def-LE) does not support OCSP. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
-{{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs are unique numeric identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs are unique numeric identifiers standardized by the International Telecommunication Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
 {{% def id="OV" name="Organization Validation" abbr="OV" %}} Certificates for which the [CA](#def-CA) has verified the legal entity of the [Subscriber](#def-subscriber). They contain information about that entity. [Let's Encrypt](#def-LE) doesn't offer OV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
@@ -155,7 +155,7 @@ Note for translators:
 
 {{% def id="TLD" name="Top-Level Domain" abbr="TLD" %}} Highest level in the hierarchical Domain Name System, such as country-code top-level domains (ccTLDs) like `.de` (Germany), `.cn` (China) and generic top-level domains (gTLDs) like `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transport-Layer Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
+{{% def id="TLS" name="Transport Layer Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} The part of [DANE](#def-DANE) specifically related to validating [TLS](#def-TLS) connections. {{% /def %}}
 
