@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2026-07-04
+lastmod: 2026-09-04
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
@@ -141,7 +141,7 @@ Note for translators:
 
 {{% def id="self-signed" name="Self-signed certificate" %}} A certificate signed by its own private key, with its [Subject](#def-subject) equal to its [Issuer](#def-issuer). Self-signed certificates are trusted only due to prior arrangements made in the physical world, such as inclusion on a [trusted root list](#def-store). [Root certificates](#def-root) are self-signed. [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
 
-{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} A field that a [user agent](#def-user-agent) sends to a [server](#def-web-server) during a [TLS](#def-TLS) handshake, specifying the domain name to connect to. This allows the server to answer with the appropriate [certificate](#def-leaf) when multiple domains are hosted behind the same IP. The web server might send a different certificate, and show different content, depending on the name that the client requested by SNI. SNI is not encrypted, but an experimental replacement, ESNI, is. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
+{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} A field that a [user agent](#def-user-agent) sends to a [server](#def-web-server) during a [TLS](#def-TLS) handshake, specifying the domain name to connect to. This allows the server to answer with the appropriate [certificate](#def-leaf) when multiple domains are hosted behind the same IP. The web server might send a different certificate, and show different content, depending on the name that the client requested by SNI. SNI is sent unencrypted, but a newer TLS extension, [Encrypted Client Hello (ECH)](https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello), encrypts it. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
 {{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} A signed, verifiable promise to publish a certificate, from a [Certificate Transparency log](#def-CT-log). Browsers that enforce [CT](#def-CT) check for the presence of SCTs in a site's certificate, or in the [TLS](#def-TLS) handshake, and refuse to connect to sites that don't meet their logging requirements. This increases the likelihood that fraudulent or inaccurate certificates will be detected. https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
