@@ -149,7 +149,7 @@ Note for translators:
 
 {{% def id="staging" name="测试环境" english="Staging" %}} [Let's Encrypt](#def-LE) 提供的接口，可用于调试证书申请流程，避免触发速率限制。 测试环境中生成的证书是*不会*被广泛信任的， 因此测试环境只应在测试、调试和 ACME 客户端开发过程中使用。 参见[测试环境文档](/docs/staging-environment)。 {{% /def %}}
 
-{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中的一个字段，表明该证书对哪些域名有效。 这一功能原先由[通用名称](#def-CN)提供，但该字段已取而代之，通用名称的这一功能也只因兼容性得以保留。 一份证书可以包含多个 SAN，从而对多个域名有效。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0)和[速率限制](/docs/rate-limits/#names-per-certificate)。 {{% /def %}}
+{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中的一个字段，表明该证书对哪些域名有效。 这一功能原先由[通用名称](#def-CN)提供，但该字段已取而代之，通用名称的这一功能也只因兼容性得以保留。 一份证书可以包含多个 SAN，从而对多个域名有效。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0)和[速率限制](https://letsencrypt.org/docs/profiles/#max-names)。 {{% /def %}}
 
 {{% def id="subscriber" name="用户" english="Subscriber" %}} 申请证书的个人或组织。  {{% /def %}}
 

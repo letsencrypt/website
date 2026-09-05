@@ -45,9 +45,9 @@ Většině větších poskytovatelů hostingu však doporučujeme používat jed
 
 # Vícedoménové certifikáty (SAN)
 
-Naše [zásady vydávání certifikátů](/docs/rate-limits) povolují až 100 názvů v jednom certifikátu. Je na vás, zda použijete samostatný certifikát pro každý název hostitele, nebo mnoho názvů hostitelů seskupíte do několika málo certifikátů.
+V závislosti na zvoleném [profilu certifikátu](/docs/profiles/) povolujeme až 100 názvů v jednom certifikátu. Je na vás, zda použijete samostatný certifikát pro každý název hostitele, nebo mnoho názvů hostitelů seskupíte do několika málo certifikátů.
 
-Samostatné certifikáty pro jednotlivé názvy hostitelů zjednodušují přidávání a odebírání domén při jejich zřizování a vyřazování. Samostatné certifikáty jsou také menší, což může urychlit navazování spojení HTTPS v sítích s malou šířkou pásma.
+Samostatné certifikáty pro jednotlivé názvy hostitelů zjednodušují přidávání a odebírání domén při jejich zřizování a vyřazování. Samostatné certifikáty jsou také menší, což může urychlit navazování spojení HTTPS v sítích s malou šířkou pásma. Přečtěte si informace o našich [limitech četnosti požadavků](/docs/rate-limits), abyste měli jistotu, že můžete získat tolik certifikátů, kolik potřebujete.
 
 Velké certifikáty s mnoha názvy hostitelů naopak znamenají, že celkově spravujete méně certifikátů. Pokud potřebujete podporovat starší klienty, jako je Windows XP, které nepodporují rozšíření Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)) protokolu TLS, budete pro každý certifikát potřebovat jedinečnou IP adresu. Více názvů v jednom certifikátu proto snižuje potřebný počet IP adres.
 

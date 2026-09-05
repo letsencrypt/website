@@ -149,7 +149,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) fournit une API de pré-production pour tester la demande de certificat sans impacter les limites d'utilisation. Les certificats générés par l'environnement de pré-production n'ont *pas de confiance publique* . L'environnement de pré-production doit être utilisé à des fins de test, de débogage et de développement du client ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Le champ d'un [certificat](#def-leaf) qui indique pour quel(s) domaine(s) le certificat est valable. Il remplace l'utilisation du [Common Name](#def-CN), qui est désormais fourni uniquement pour des raisons de compatibilité. Un seul certificat peut contenir plusieurs Noms Alternatifs du Serveur (SAN) et être valable pour de nombreux noms de domaine différents. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Le champ d'un [certificat](#def-leaf) qui indique pour quel(s) domaine(s) le certificat est valable. Il remplace l'utilisation du [Common Name](#def-CN), qui est désormais fourni uniquement pour des raisons de compatibilité. Un seul certificat peut contenir plusieurs Noms Alternatifs du Serveur (SAN) et être valable pour de nombreux noms de domaine différents. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} La personne ou l'organisation qui demande un certificat. {{% /def %}}
 

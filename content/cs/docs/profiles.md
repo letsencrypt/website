@@ -89,7 +89,7 @@ Tento profil doporučujeme jen uživatelům, kteří se mohou plně spolehnout, 
 
 Od 8. července 2026 již tento profil není dostupný.
 
-Certifikáty vydané s profilem tlsclient obsahovaly rozšířené použití klíče (EKU) TLS Client Auth.
+Certifikáty vydané s profilem tlsclient obsahovaly rozšířené použití klíče TLS Client Auth EKU.
 V ostatních ohledech byl profil shodný s profilem classic.
 
 </div>

@@ -145,11 +145,6 @@
       "image": "discourse-logo.png"
     },
     {
-      "name": "driving-tests.org",
-      "url": "https://driving-tests.org/",
-      "image": "driving-tests-logo.png"
-    },
-    {
       "name": "DuoCircle",
       "url": "https://www.duocircle.com/",
       "image": "duocircle-logo.png"
@@ -164,11 +159,6 @@
       "name": "GitHub",
       "url": "https://github.com/",
       "image": "github-logo.png"
-    },
-    {
-      "name": "Lime Technology (Unraid)",
-      "url": "https://unraid.net/",
-      "image": "unraid-logo.png"
     },
     {
       "name": "Keenetic",
@@ -232,11 +222,6 @@
     },
     { "name": "Duda", "url": "https://www.duda.co/", "image": "duda-logo.png" },
     {
-      "name": "Ads.com",
-      "url": "https://www.ads.com/",
-      "image": "ads-com-logo.png"
-    },
-    {
       "name": "cdmon",
       "url": "https://www.cdmon.com/es/",
       "image": "cdmon-logo.png"
@@ -286,7 +271,6 @@
       "url": "https://www.securew2.com/",
       "image": "securew2-logo.png"
     },
-    { "name": "20i", "url": "https://www.20i.com/", "image": "20i-logo.svg" },
     { "name": "ICUK", "url": "https://www.icuk.net/", "image": "icuk-logo-red.svg" },
     { "name": "Interserver", "url": "https://www.interserver.net/", "image": "interserver-logo.png" },
     { "name": "DigitalOcean", "url": "https://www.digitalocean.com/", "image": "DigitalOcean_logo.svg" },
@@ -379,6 +363,16 @@
       "name": "Red Sift",
       "url": "https://redsift.com/",
       "image": "red-sift-wide-logo.svg"
+    },
+    {
+      "name": "Datum",
+      "url": "https://www.datum.net/",
+      "image": "datum-logo.svg"
+    },
+    {
+      "name": "Exclaimer",
+      "url": "https://exclaimer.com/",
+      "image": "exclaimer-logo-dark.svg"
     }
   ]
 }

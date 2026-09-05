@@ -155,7 +155,7 @@ Note for translators:
 
 {{% def id="staging" english="Staging" name="הכנה להקמה" %}} מערכת [Let's Encrypt](#def-LE) מספקת API במסגרת הכנה להקמה כדי לבדוק בקשות אישורים מבלי להשפיע על מגבלת המיכסות. אישורים שנוצרו על ידי סביבת ההכנה להקמה *אינם* מהימנים בקרב הציבור. סביבת ההכנה להקמה מיועדת לטובת בדיקות, ניפוי שגיאות ופיתוח לקוח ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" english="Subject Alternative Name" abbr="SAN" name="שם חלופי לנושא" %}} שדה ב[אישור](#def-leaf) שמציין על איזה שם תחום או על אילו שמות תחום האישור תקף. מחליף את השימוש ב־[Common Name](#def-CN) (שם נפוץ), שמסופק כעת מטעמי תאימות בלבד. אישור בודד יכול להכיל מספר SANs ולהיות תקף למספר שמות תחום שונים. [ויקיפדיה](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" english="Subject Alternative Name" abbr="SAN" name="שם חלופי לנושא" %}} שדה ב[אישור](#def-leaf) שמציין על איזה שם תחום או על אילו שמות תחום האישור תקף. מחליף את השימוש ב־[Common Name](#def-CN) (שם נפוץ), שמסופק כעת מטעמי תאימות בלבד. אישור בודד יכול להכיל מספר SANs ולהיות תקף למספר שמות תחום שונים. [ויקיפדיה](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" english="Subscriber" name="מנוי" %}} האדם או הארגון שמבקשים אישור. {{% /def %}}
 

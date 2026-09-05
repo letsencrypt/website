@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
+other = "Kryptering för alla. En ideell organisation som tillhandahåller gratis TLS-certifikat till mer än 500 miljoner webbplatser."
 
 [home_hero_getting_started]
 other = "Kom igång"
@@ -11,7 +11,7 @@ other = "Donera"
 other = "Sponsor"
 
 [home_hero_annual_report]
-other = "Read all about our nonprofit work this year in our <a href='https://abetterinternet.org/annual-reports/'>2025 Annual Report</a>."
+other = "Läs allt om vårt ideella arbete i år i vår <a href='https://abetterinternet.org/annual-reports/'>Årsrapport 2025</a>."
 
 [home_major_sponsors]
 other = "Största sponsorer och bidragsgivare"
@@ -26,7 +26,7 @@ other = "Läs mer"
 other = 'Prenumerera <a href="{{ .Permalink }}">via RSS</a>'
 
 [footer_support_us]
-other = "Support a more secure and privacy-respecting Web."
+other = "Stöd en säkrare och mer integritetsrespekterande Web."
 
 [footer_donate]
 other = "Donera nu"
@@ -35,14 +35,10 @@ other = "Donera nu"
 other = "Skicka alla mail eller förfrågningar till:"
 
 [footer_legal_address]
-other = "Legal Address"
+other = "Juridisk adress"
 
 [footer_policies]
-other = """
-View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
-"""
+other = 'Se vår <a href="/privacy/">integritetspolicy</a>.<br> Se vår <a href="https://www.abetterinternet.org/trademarks">varumärkespolicy</a>.<br> Se våra <a href="https://www.abetterinternet.org/terms-of-service">användarvillkor</a>.'
 
 [footer_links]
 other = """
@@ -59,7 +55,7 @@ other = "Senast uppdaterad: "
 other = "Visa all dokumentation"
 
 [blog_feed]
-other = "Let's Encrypt Blog Feed"
+other = "Let's Encrypt Bloggflöde"
 
 [diamond]
 other = "Diamant"
@@ -71,7 +67,7 @@ other = "Platina"
 other = "Guld"
 
 [gold_basic]
-other = "Gold Basic"
+other = "Guld Basic"
 
 [silver]
 other = "Silver"
@@ -83,31 +79,31 @@ other = "Språk"
 other = "Visa på engelska"
 
 [old_version]
-other = "Note: The English version has been updated since the translation"
+other = "Notera: Den engelska versionen har uppdaterats sedan översättningen"
 
 [not_yet_translated]
-other = 'This webpage has not been translated yet. You can contribute <a href="https://crowdin.com/project/lets-encrypt-website">here</a>.'
+other = 'Denna webbsida har ännu inte översatts. Du kan bidra <a href="https://crowdin.com/project/lets-encrypt-website">här</a>.'
 
 [english_is_canonical]
-other = "The English version is authoritative"
+other = "Den engelska versionen är auktoritativ"
 
 [graph_issued]
-other = "Issued"
+other = "Utfärdat"
 
 [graph_certificates_active]
 other = "Certifikat aktiva"
 
 [graph_fully_qualified_domains_active]
-other = "Fully-Qualified Domains Active"
+other = "Fullständigt kvalificerade domäner aktiva"
 
 [graph_registered_domains_active]
 other = "Registrerade domäner aktiva"
 
 [graph_active_count]
-other = "Active Count"
+other = "Aktivt antal"
 
 [graph_issued_per_day]
-other = "Issued Per Day"
+other = "Utfärdat per dag"
 
 [graph_all_users]
 other = "Alla användare"
@@ -119,7 +115,7 @@ other = "USA-användare"
 other = "Japan-användare"
 
 [graph_percent_https]
-other = "Percent of Pageloads over HTTPS (14 day moving average)"
+other = "Procent av sidladdningar över HTTPS (14 dagars glidande medelvärde)"
 
 [certificate_policy]
 other = "Certifikatpolicy"
@@ -131,7 +127,7 @@ other = "Namn"
 other = "Produktion"
 
 [certificate_transparency_role_testing]
-other = "Testing"
+other = "Testning"
 
 [certificate_transparency_uri]
 other = "URI"
@@ -143,16 +139,16 @@ other = "Publik nyckel"
 other = "Logg-ID"
 
 [certificate_transparency_state]
-other = "State"
+other = "Status"
 
 [certificate_transparency_window_start]
-other = "Window Start"
+other = "Fönsterstart"
 
 [certificate_transparency_window_end]
-other = "Window End"
+other = "Fönsterslut"
 
 [certification_practice_statement]
-other = "Certification Practice Statement"
+other = "Redogörelse för utfärdandepraxis"
 
 [overview]
 other = "Översikt"
@@ -164,16 +160,16 @@ other = "Prenumerantinformation"
 other = "Avancerade prenumerantinformation"
 
 [client_developer_information]
-other = "Client Developer Information"
+other = "Klientutvecklarinformation"
 
 [acme_divergences]
-other = "Differences from Current ACME Draft"
+other = "Skillnader från nuvarande ACME-utkast"
 
 [acme_divergences_rfc]
-other = "Differences from ACME RFC"
+other = "Skillnader från ACME RFC"
 
 [onboarding_customers]
-other = "Onboarding Your Customers with Let's Encrypt and ACME"
+other = "Introducera dina kunder till Let's Encrypt och ACME"
 
 [paypal_donate_alt]
 other = "Donera med PayPal-knapp"
@@ -182,19 +178,19 @@ other = "Donera med PayPal-knapp"
 other = "Donera med PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - Sida ej hittad"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Sidan du letar efter finns inte eller har flyttats."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Tillbaka till startsidan"
 
 [amount_per_year]
 other = "${{ .nb }}/år (USD)"
 
 [3y_commitment]
-other = "with a 3-year commitment"
+other = "med ett 3-årigt åtagande"
 
 [1_99_employees]
 other = "1-99 anställda"
@@ -206,10 +202,10 @@ other = "100-999 anställda"
 other = "1000+ anställda"
 
 [subscribe_to_newsletter_headline]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Prenumerera för e-postuppdateringar om Let's Encrypt och andra ISRG-projekt"
 
 [site_banner_text]
-other = "ISRG celebrates 10 years of helping build a brighter Internet →"
+other = "ISRG firar 10 år av att hjälpa till att bygga ett ljusare Internet →"
 
 [internet_security_research_group]
 other = "Internet Security Research Group"
@@ -221,13 +217,13 @@ other = "Donera nu"
 other = "Växla meny"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "Juridisk adress"
 
 [isrg_mailing_label]
 other = "Skicka alla mail eller förfrågningar till:"
 
 [newsletter_subscribe_heading]
-other = "Subscribe for email updates about Let's Encrypt and other ISRG projects"
+other = "Prenumerera på e-postuppdateringar om Let's Encrypt och andra ISRG-projekt"
 
 [footer_nav_github]
 other = "GitHub"
@@ -245,37 +241,37 @@ other = "Integritetspolicy"
 other = "trademarks"
 
 [home_hero_heading]
-other = "Encryption for<br /> Everybody"
+other = "Kryptering för <br /> alla"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
+other = 'En ideell organisation som tillhandahåller gratis TLS-certifikat till mer än <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> webbplatser.'
 
 [home_hero_get_started]
 other = "Kom igång"
 
 [home_hero_annual_report_title]
-other = "Explore our work to improve security and privacy"
+other = "Utforska vårt arbete för att förbättra säkerhet och integritet"
 
 [home_hero_annual_report_description]
-other = "Our 2025 Annual Report highlights the progress we've made toward a better Internet."
+other = "Vår årsrapport för 2025 lyfter fram framstegen vi har gjort mot ett bättre Internet."
 
 [home_hero_annual_report_button]
-other = "Read the Annual Report"
+other = "Läs årsrapporten"
 
 [getting_started_eyebrow]
-other = "Free, Automated TLS Certificates"
+other = "Gratis, automatiska TLS-certifikat"
 
 [getting_started_heading]
 other = "Komma igång"
 
 [getting_started_description]
-other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+other = "Let's Encrypt är en certifikatutfärdare som tillhandahåller gratis TLS-certifikat, vilket gör det enkelt för webbplatser att aktivera HTTPS-kryptering och skapa ett säkrare Internet för alla. Let's Encrypt är ett projekt från den ideella organisationen Internet Security Research Group."
 
 [getting_started_ready_title]
 other = "Redo att börja?"
 
 [getting_started_ready_content]
-other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+other = "Börja skydda dina webbplatser med gratis SSL/TLS-certifikat från Let's Encrypt. För att få ett certifikat för din webbplatss domän måste du visa kontroll över domänen."
 
 [getting_started_ready_link]
 other = "Låt oss komma igång"
@@ -284,7 +280,7 @@ other = "Låt oss komma igång"
 other = "Dokumentation"
 
 [getting_started_docs_content]
-other = "Learn about our certificate issuance process and best practices."
+other = "Lär dig om vår certifikatutfärdningsprocess och bästa praxis."
 
 [getting_started_docs_link]
 other = "Läs dokumentation"
@@ -293,25 +289,25 @@ other = "Läs dokumentation"
 other = "ACME-klienter"
 
 [getting_started_clients_content]
-other = "Choose from our recommended ACME clients to automatically manage your certificates."
+other = "Välj bland våra rekommenderade ACME-klienter för att automatiskt hantera dina certifikat."
 
 [getting_started_clients_link]
-other = "Browse ACME Clients"
+other = "Bläddra bland ACME-klienter"
 
 [getting_started_help_title]
-other = "Get help from the Let's Encrypt Community"
+other = "Få hjälp från Let's Encrypt-communityn"
 
 [getting_started_help_content]
-other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
+other = "Gå med i vårt communityforum för teknisk assistans och kunskapsdelning med experter, volontärer och ISRG-personal."
 
 [getting_started_help_link]
 other = "Besök forumet"
 
 [support_heading_entire_sentence]
-other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+other = "Global påverkan möjliggjord av generositet, bidrag, sponsring och dig"
 
 [support_heading_base]
-other = "Global impact made possible by"
+other = "Global påverkan möjliggjord av"
 
 [support_heading_word1]
 other = "generositet"
@@ -326,19 +322,19 @@ other = "sponsorskap"
 other = "du"
 
 [support_donate_title]
-other = "Support Encryption for Everybody"
+other = "Stöd kryptering för alla"
 
 [support_donate_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Din donation hjälper till att hålla Let's Encrypt gratis och tillgängligt för miljontals webbplatser runt om i världen. Följ med oss i att säkra Internet, en webbplats i taget. Varje bidrag gör skillnad, vare sig du är en privatperson eller ett företag."
 
 [support_donate_button]
 other = "Donera nu"
 
 [support_sponsor_title]
-other = "Leading Through Sponsorship"
+other = "Ledarskap genom sponsring"
 
 [support_sponsor_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Företag som förlitar sig på eller värderar vårt arbete för att kryptera webben kan ekonomiskt stödja Let's Encrypt. Gå med bland stora och små företag för att göra detta arbete möjligt!"
 
 [support_sponsor_button]
 other = "Läs mer om sponsring"
@@ -347,22 +343,22 @@ other = "Läs mer om sponsring"
 other = "Största sponsorer och bidragsgivare"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Diamantnivå"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Platinumnivå"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Guldnivå"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Silvernivå"
 
 [common_read_more_arrow]
 other = " →"
 
 [newsletter_iframe_title]
-other = "Newsletter signup form"
+other = "Anmälningsformulär för nyhetsbrev"
 
 [blog_section_heading]
 other = "Från vår blogg"
@@ -374,22 +370,22 @@ other = "Visa alla våra blogginlägg"
 other = "Senast uppdaterad:"
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "Nyare uppdaterad sida tillgänglig på engelska"
 
 [post_hero_breadcrumb_blog]
 other = "Blogg"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "Stöd vårt arbete"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG är en 501(c)(3) ideell organisation som får 100 % stöd tack vare generositeten från dem som delar vår vision om allestädes närvarande, öppen internetsäkerhet. Om du vill stödja vårt arbete, överväg <a href="https://www.abetterinternet.org/getinvolved/">att engagera dig</a>, <a href="/donate/">donera</a> eller uppmuntra ditt företag att <a href="https://www.abetterinternet.org/sponsor/">bli sponsor</a>.'
 
 [donate_get_involved_button]
 other = "Engagera dig"
 
 [donate_individual_impact_eyebrow]
-other = "Individual Impact"
+other = "Individens påverkan"
 
 [donate_encryption_everybody_alt]
 other = "Kryptering för alla"
@@ -401,10 +397,10 @@ other = "Besök"
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "En ideell organisation som tillhandahåller gratis TLS-certifikat till mer än ### webbplatser"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = "En ideell organisation som tillhandahåller gratis TLS-certifikat till mer än"
 
 [home_hero_certificate_count]
 other = "700M"
@@ -413,43 +409,43 @@ other = "700M"
 other = "webbplatser"
 
 [projects_section_title]
-other = "More ways we're improving security and privacy"
+other = "Fler sätt vi förbättrar säkerhet och integritet"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "Visste du att Let's Encrypt har två syskonprojekt? Let's Encrypt och dessa två projekt drivs av Internet Security Research Group (ISRG), en 501(c)(3) ideell organisation som fokuserar på att göra Internet mer säkert och integritetsvänligt."
 
 [project_prossimo_name]
 other = "Prossimo"
 
 [project_prossimo_description]
-other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+other = "Fokuserar på minnessäkerhet i kritisk internetinfrastruktur genom användning av minnessäkra programmeringsspråk."
 
 [project_divviup_name]
 other = "Divvi Up"
 
 [project_divviup_description]
-other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+other = "Ett integritetsvänligt system för insamling och aggregering av mätvärden, byggt på Multi-Party Computation."
 
 [support_donate_section_title]
-other = "Support Encryption for Everybody"
+other = "Stöd kryptering för alla"
 
 [support_donate_section_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Din donation hjälper till att hålla Let's Encrypt gratis och tillgängligt för miljontals webbplatser runt om i världen. Följ med oss i att säkra Internet, en webbplats i taget. Varje bidrag gör skillnad, vare sig du är en privatperson eller ett företag."
 
 [support_donate_section_button]
 other = "Donera nu"
 
 [support_sponsor_section_title]
-other = "Leading Through Sponsorship"
+other = "Ledarskap genom sponsring"
 
 [support_sponsor_section_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Företag som förlitar sig på eller värderar vårt arbete för att kryptera webben kan ekonomiskt stödja Let's Encrypt. Gå med bland stora och små företag för att göra detta arbete möjligt!"
 
 [support_sponsor_section_button]
 other = "Läs mer om sponsring"
 
 [stats_section_title]
-other = "Let's Encrypt Growth"
+other = "Let's Encrypt Tillväxt"
 
 [stats_section_button]
 other = "Mer statistik"
@@ -458,46 +454,46 @@ other = "Mer statistik"
 other = "Gör en återkommande donation"
 
 [donate_page_make_recurring_donation_content]
-other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+other = "Kryptering av webben är dagligt arbete—certifikat måste förnyas! Ditt stöd säkerställer att vi kan fortsätta förnya certifikat i stor skala."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "Börja din återkommande donation nu"
 
 [donate_page_stock_donations_title]
-other = "Donations of Stock"
+other = "Donationer av aktier"
 
 [donate_page_crypto_gifts_title]
-other = "Gifts of Cryptocurrency"
+other = "Gåvor av kryptovaluta"
 
 [donate_page_other_ways_title]
 other = "Andra sätt att ge"
 
 [donate_page_ways_to_give_heading]
-other = "WAYS TO GIVE"
+other = "SÄTT ATT GE"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "Möjliggör vårt arbete på Let's Encrypt genom ditt välgörenhetsbidrag."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "VARFÖR STÖDJA?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "Gratis, automatiserade och lätta att använda TLS-certifikat."
 
 [donate_page_funding_details_list_item2]
-other = "We make it easy to use one or one million certs."
+other = "Vi gör det enkelt att använda ett certifikat eller en miljon certifikat."
 
 [donate_page_funding_details_list_item3]
-other = "You make HTTPS possible all around the world."
+other = "Du gör HTTPS möjligt över hela världen."
 
 [donate_page_funding_details_list_item4]
-other = "Help us continue operating at a truly global scale."
+other = "Hjälp oss fortsätta att verka på verkligt global skala."
 
 [donate_page_stock_intro_text]
-other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+other = "Värderade värdepapper eller fondandelar som du har ägt i mer än ett år kan vara utmärkta välgörenhetsgåvor."
 
 [donate_page_stock_table_brokerage_firm]
-other = "Brokerage Firm:"
+other = "Mäklarfirma:"
 
 [donate_page_stock_table_account_name]
 other = "Kontonamn:"
@@ -509,31 +505,199 @@ other = "ISRG-konto #:"
 other = "DTC #:"
 
 [donate_page_stock_table_tax_id]
-other = "Tax ID #:"
+other = "Skatteregistreringsnummer:"
 
 [donate_page_stock_outro_text]
-other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+other = "Vänligen meddela oss om du överför värdepapper till {{ .sponsorEmailLink }}. Du kan också vilja e-posta auktorisationsbrevet från din mäklare."
 
 [donate_page_other_daf_heading]
-other = "Donor Advised Funds"
+other = "Givarstyrda fonder"
 
 [donate_page_other_daf_text]
-other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+other = "Rekommendera en donation till Internet Security Research Group (vår moderorganisation) från din gåvafond. 100% av din donation kommer att stödja ett säkert och integritetsrespekterande Internet."
 
 [donate_page_other_workplace_heading]
-other = "In Your Workplace"
+other = "På din arbetsplats"
 
 [donate_page_other_workplace_recommend_sponsorship]
-other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+other = "Rekommendera att din arbetsgivare stödjer vårt arbete via {{ .sponsorshipLink }}."
 
 [donate_page_other_workplace_sponsorship_link_text]
 other = "Sponsorskap"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "Många organisationer matchar donationer till ideella organisationer som görs av anställda. Kontrollera om din organisation har ett matchningsprogram och fördubbla ditt inflytande!"
 
 [donate_page_crypto_text]
-other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+other = "Vi kan ta emot de flesta kryptovalutadonationer {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
 other = "här"
+
+[donate_2026_page_title]
+other = "Stöd vårt arbete!"
+
+[donate_2026_funding_details_stat_text]
+other = "Få den limiterade upplagan av ISRG Root X1 t-shirten när du ger $75 eller mer denna sommar."
+
+[donate_2026_shirt_image_alt]
+other = "Begränsad upplaga ISRG Root X1 t-shirt"
+
+[donate_2026_ways_to_give_heading]
+other = "Fler sätt att ge"
+
+[donate_2026_employer_matching_gifts_title]
+other = "Arbetsgivarmatchande gåvor"
+
+[donate_2026_employer_matching_gifts_text]
+other = "Många organisationer matchar donationer till ideella organisationer som gjorts av anställda. Kontrollera om din organisation har ett matchningsprogram och dubbla din effekt!"
+
+[donate_2026_become_a_sponsor_title]
+other = "Bli en sponsor"
+
+[donate_2026_become_a_sponsor_text]
+other = "Nästan 100 företag och organisationer stödjer vårt arbete – från tvåpersonersföretag till ideella organisationer och Fortune 100-företag. Gå med i vår lista av generösa sponsorer som hjälper till att erbjuda ett säkrare och mer integritetsrespekterande internet för miljarder människor."
+
+[donate_2026_become_a_sponsor_link_text]
+other = "här"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Läs mer {{ .sponsorshipLink }}."
+
+[donate_2026_donate_stock_title]
+other = "Donera aktier"
+
+[donate_2026_donate_stock_intro_text]
+other = "Värdefulla värdepapper eller fondandelar som du har ägt i mer än ett år kan vara utmärkta välgörenhetsgåvor."
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "Mäklarfirma:"
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "Kontonamn:"
+
+[donate_2026_donate_stock_account_name_value]
+other = "Internet Security Research Group"
+
+[donate_2026_donate_stock_account_number]
+other = "Kontot #:"
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC #:"
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "Skatte-ID #:"
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "Vänligen kontakta oss om du överför värdepapper på {{ .donateEmailLink }} för att säkerställa att vi kan kreditera dig för din gåva."
+
+[donate_2026_donate_stock_online_text]
+other = "Du kan också donera lager med några klick via {{ .givingBlockLink }}. Vi har betalningsavgifter genom dessa transaktioner, så överväg att täcka avgifterna för att säkerställa att din gåva får störst effekt."
+
+[donate_2026_donate_cryptocurrency_title]
+other = "Donera kryptovaluta"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "Vi kan acceptera de flesta kryptovalutor genom att besöka {{ .givingBlockLink }}. Vi har transaktionsavgifter för dessa transaktioner, så överväg att täcka avgifterna för att säkerställa att din gåva får störst effekt."
+
+[donate_2026_donor_advised_funds_title]
+other = "Donatorrådda fonder (DAF)"
+
+[donate_2026_donor_advised_funds_text]
+other = "Informera helt enkelt din DAF-sponsor att du vill ge en gåva till:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "Du kan också donera via din DAF via DAFpay med några klick via {{ .givingBlockLink }}. Vi tar ut behandlingsavgifter på detta sätt, så överväg att täcka avgifterna för att säkerställa att din gåva får störst effekt."
+
+[donate_2026_org_name]
+other = "Internet Security Research Group"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "Planerat/Arvsgivande"
+
+[donate_2026_planned_legacy_giving_text]
+other = "Överväg att göra ISRG till förmånstagare av ditt testamente eller din pensionsplan för att skydda internetanvändare genom att sänka monetära, tekniska och informationsmässiga hinder för ett säkrare och mer integritetsrespekterande internet."
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "Har du redan inkluderat ISRG i dina arvsplaner? {{ .legacyGivingFormLink }}."
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "Även om dokumentationen av din planerade gåva är konfidentiell och icke-bindande, gör det att vi kan planera för framtiden och tacka dig för din generositet idag."
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "Vänligen sök råd från din finansiella eller juridiska rådgivare."
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "Kvalificerad välgörenhetsdistribution"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "Om du är 70½ eller äldre kan du ge direkt från din amerikanska IRA till ISRG utan att betala inkomstskatt på utdelningen. Detta alternativ kallas ofta en IRA välgörenhetsöverföring eller en kvalificerad välgörenhetsutdelning (QCD). Du kan ge upp till en årlig maxgräns som fastställs av IRS, som justeras varje år, så bekräfta det aktuella beloppet med din rådgivare."
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "Vänligen sök råd från din finansiella eller juridiska rådgivare."
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "För att ge din gåva, be din IRA-administratör att skicka utdelningen direkt till ISRG. Ge dem vårt juridiska namn och federala skatte-ID så att de kan identifiera oss. Vänligen låt oss också veta om din gåva. Många IRA-administratörer skickar utdelningar utan att identifiera givaren, så en snabb notis från dig gör att vi kan tacka dig och hedra dina önskemål för gåvan."
+
+[donate_2026_legal_name_label]
+other = "Juridiskt namn:"
+
+[donate_2026_legal_address_label]
+other = "Adress:"
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "Postadress"
+
+[donate_2026_mailing_address_intro]
+other = "(endast för checkhantering)"
+
+[donate_2026_mailing_address_attention]
+other = "Internet Security Research Group"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "Donera med check"
+
+[donate_2026_donate_by_check_text]
+other = 'Du kan donera med personlig check ställd till "ISRG" på adressen nedan:'
