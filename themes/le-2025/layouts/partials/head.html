@@ -4,17 +4,24 @@
 <title>
 {{ if ne .Title .Site.Title }}{{ .Title }} - {{ end }} {{ .Site.Title }}
 </title>
-<meta name="description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{if .IsPage}}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end -}}" />
+{{- /* Description for the meta tag and the Open Graph card: the page's
+     description, else its summary, else the site description. */ -}}
+{{ $description := "" -}}
+{{ if .Description }}{{ $description = .Description }}{{ else if .IsPage }}{{ $description = .Summary }}{{ else }}{{ $description = site.Params.description | default "" }}{{ end -}}
+{{ $description = $description | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace }}
+<meta name="description" content="{{ $description }}" />
 
-<meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}">
-<meta property="og:type" content="website" />
+{{/* Open Graph is what link previews read (Mastodon, Bluesky, LinkedIn,
+    Facebook, Slack, and X, which falls back to it), so it is the only set of
+    social tags we emit. */ -}}
+<meta property="og:site_name" content="{{ site.Title }}" />
+<meta property="og:type" content="{{ if eq .Section "post" }}article{{ else }}website{{ end }}" />
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:description" content="{{ $description }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta name="twitter:card" content="{{ if .Description }}summary{{ else }}summary_large_image{{ end }}" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:description" content="{{ with .Description }}{{ . | plainify | htmlUnescape }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | htmlUnescape }}{{ end }}{{ end }}{{ end }}" />
-<meta name="twitter:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}" />
+<meta property="og:image" content="{{ "images/LetsEncrypt-SocialShare.png" | absURL }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 {{ with site.Home.OutputFormats.Get "RSS" -}}
 <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">
 {{- end }}
