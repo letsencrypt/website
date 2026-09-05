@@ -1,7 +1,7 @@
 ---
 title: Rate Limits
 slug: rate-limits
-lastmod: 2026-08-05
+lastmod: 2026-09-05
 show_lastmod: true
 ---
 
@@ -111,7 +111,8 @@ registered domain. For IPv6 addresses, we treat the containing /64 range as the
 registered domain.
 
 You can get a list of certificates issued for your registered domain by
-searching [crt.sh](https://crt.sh/) or [Censys](https://search.censys.io/#),
+searching [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/#),
+or [CertObserver CT search](https://certobserver.com/ct-search),
 which use the public [Certificate
 Transparency](https://www.certificate-transparency.org/) logs.
 
