@@ -1,7 +1,7 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2026-07-13
+lastmod: 2026-08-24
 show_lastmod: 1
 ---
 
@@ -20,6 +20,7 @@ There are a number of monitoring options out there, including:
 * [CertKit](https://www.certkit.io/)
 * [CertObserver](https://certobserver.com/)
 * [Chill SSL](https://www.chillssl.com/)
+* [CertPost](https://www.certpost.ai/)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
