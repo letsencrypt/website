@@ -15,6 +15,13 @@ enableRobotsTXT = true
 [security]
 allowContent = ['.*']
 
+# Hugo 0.165.0 removed tailwindcss from the default security.exec.allow list
+# (https://github.com/gohugoio/hugo/issues/15178), so css.TailwindCSS fails
+# with "access denied" on newer Hugo versions. Setting `allow` replaces Hugo's
+# defaults rather than extending them, so they are repeated here.
+[security.exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
 

@@ -54,4 +54,4 @@ Clients may [request a "shortlived" certificate](https://letsencrypt.org/2025/02
 
 ## IP Address Certificates
 
-Shortlived certificates (see above) can request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses will be [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
+Shortlived certificates (see above) can request that the certificate [contain IP Addresses](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) in its Subject Alternative Names. These addresses are [validated in much the same way as DNS Names](https://www.rfc-editor.org/rfc/rfc8738.html) are today.
