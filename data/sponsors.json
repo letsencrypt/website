@@ -373,6 +373,11 @@
       "name": "Exclaimer",
       "url": "https://exclaimer.com/",
       "image": "exclaimer-logo-dark.svg"
+    },
+    {
+      "name": "Datadog",
+      "url": "https://www.datadoghq.com/",
+      "image": "datadog-logo.svg"
     }
   ]
 }
