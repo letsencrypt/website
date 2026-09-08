@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-09-08
 show_lastmod: false
 ---
 
