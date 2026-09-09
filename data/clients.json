@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-08-29",
 	"categories": [
 		"Bash",
 		"C",
@@ -905,6 +905,17 @@
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			}
+		},
+		{
+			"name": "CertMate",
+			"url": "https://github.com/fabriziosalmi/certmate",
+			"comments": "Self-hosted certificate lifecycle manager (web UI + REST API) automating issuance and renewal across 20+ DNS providers",
+			"category": "Server",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			},
+			"last_commit": 1788269394
 		}
 	]
 }
