@@ -1,7 +1,7 @@
 ---
 title: ACME 프로토콜 업데이트
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 저희는 다음과 같은 API 엔드포인트를 가지고 있습니다. 현재 구현과 ACME 사양의 차이점을 비교하기 위해 [이 불일치 문서](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)를 참조하십시오.
 
-## ACME v2 (RFC 8555)
-
 * [제작] `https://acme-v02.api.letsencrypt.org/directory`
 * [준비] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (사용 중단)
-
-* [제작] `https://acme-v01.api.letsencrypt.org/directory`
-* [준비] `https://acme-staging.api.letsencrypt.org/directory`
 
 # 새로운 하위 호환 ACME 기능
 
