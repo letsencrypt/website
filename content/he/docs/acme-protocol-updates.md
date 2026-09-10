@@ -1,7 +1,7 @@
 ---
 title: עדכוני פרוטוקול ACME
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 נכון לעכשיו אנחנו מציעים את נקודות הגישה הבאות ל־API. ניתן לעיין ב[מסמך סקירת השינויים שלנו](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) כדי להשוות בין המימושים שלהם למפרט של ACME.
 
-## גרסה 2 של ACME ‏(RFC 8555)
-
 * [פעילות מלאה - Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [הכנה להקמה - Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## גרסה 1 של ACME (נזנחה)
-
-* [פעילות מלאה - Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [הכנה להקמה - Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # תכונות חדשות ב־ACME עם תמיכה לאחור
 
