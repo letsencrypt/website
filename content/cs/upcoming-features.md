@@ -53,4 +53,4 @@ Klienti mohou [požádat o „krátkodobý“ (shortlived) certifikát](https://
 
 ## Certifikáty IP adresy
 
-Krátkodobé certifikáty (viz výše) mohou požadovat, aby certifikát [obsahoval IP adresy](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) ve svých alternativních názvech subjektu (SAN). Tyto adresy budou [ověřovány podobným způsobem jako dnes DNS jména](https://www.rfc-editor.org/rfc/rfc8738.html).
+Krátkodobé certifikáty (viz výše) mohou požadovat, aby certifikát [obsahoval IP adresy](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) ve svých alternativních názvech subjektu (SAN). Tyto adresy se [ověřují podobně jako dnes názvy DNS](https://www.rfc-editor.org/rfc/rfc8738.html).

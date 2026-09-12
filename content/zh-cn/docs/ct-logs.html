@@ -1,14 +1,13 @@
 ---
 title: 证书透明化 (CT) 日志
 slug: ct-logs
-lastmod: 2026-06-15
+lastmod: 2026-09-04
 show_lastmod: 1
 ---
 
 
 <p>
-  <a href="https://www.certificate-transparency.org/what-is-ct">证书透明化 (CT)</a>
- 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。 因此，CT 正迅速成为关键基础设施。
+  <a href="https://certificate.transparency.dev/">证书透明化 (CT)</a> 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。 因此，CT 正迅速成为关键基础设施。
 </p>
 
 <p>
@@ -23,18 +22,18 @@ show_lastmod: 1
 > 分类的推送通知，即可第一时间获取有关 CT 日志的重要公告。
 </p>
 
-<h2>资金来源</h2>
+<h2 id="funding">资金来源</h2>
 
 <p>
   如果您所属的机构有意支持我们持续开展这项事业，请考虑<a href="https://www.abetterinternet.org/sponsor/">捐款或成为赞助商</a>。
 </p>
 
-<h2>CT 日志服务器</h2>
+<h2 id="ct-logs">CT 日志服务器</h2>
 <p>
 CT 日志在其生命期内所经历的各种状态可在<a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">此处</a>详细了解。
 </p>
 
-<h3>Sunlight</h3>
+<h3 id="sunlight">Sunlight</h3>
 <p>
   Let's Encrypt 目前使用 <a href="https://sunlight.dev">Sunlight</a> 软件运行 <a href="https://c2sp.org/static-ct-api">static-ct</a> 日志。
 </p>
@@ -46,26 +45,29 @@ CT 日志在其生命期内所经历的各种状态可在<a href="https://google
   <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
   <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
 </ul>
-<p>
-  用于测试日志系统为 Twig，既接受由可信 CA 颁发的证书，也接受由某些测试 CA 颁发的证书，包括 Let's Encrypt 测试环境的证书。
+<p id="testing">
+  用于测试的日志系统称为 Twig，既接受由可信 CA 颁发的证书，也接受由某些测试 CA 颁发的证书，包括 Let's Encrypt 测试环境的证书。
 </p>
 <ul>
   <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
 </ul>
 
 
-<h3>已停止服务的 RFC 6962 日志系统</h3>
+<h3 id="rfc-6962-logs-eol">已停止服务的 RFC 6962 日志系统</h3>
 <p>
   Let's Encrypt 过去的日志系统由 Trillian 软件运作，实现了 RFC 6962 接口。
   详情可参阅 <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">RFC 6962 证书透明化日志停运计划</a>。
 </p>
 
-<h2>日志操作</h2>
+<h2 id="log-operations">日志操作</h2>
+<p>
+  以下示例使用的是 Sycamore 2026h2 分片。 我们的日志按时间分片，每一片区只包含到期时间落在对应范围内的证书，因此需要先在日志系统首页找到待查询证书所在的分片。
+</p>
 <p>
   如需查看某一 CT 日志系统包含的所有根证书，可以在任意 UNIX 命令行中执行以下命令：
 </p>
 <pre>
-$ for i in $(curl -s https://oak.ct.letsencrypt.org/2020/ct/v1/get-roots | jq -r '.certificates[]'); do
+$ for i in $(curl -s https://log.sycamore.ct.letsencrypt.org/2026h2/ct/v1/get-roots | jq -r '.certificates[]'); do
     echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
 done
 </pre>
@@ -86,7 +88,7 @@ sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
   证书需要以特定的 JSON 格式提交， 您可以使用 <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> 提供的 JSON 生成器完成格式转换。 该页面会生成一份 JSON 文件， 您需要下载并按需重新命名此文件，然后通过以下命令执行证书链添加操作（参见 <a
     href="https://tools.ietf.org/html/rfc6962#section-4.1"
     >RFC 6962 的 4.1 节</a
->），将证书提交至 CT 日志系统。 该命令的输出中有一段数字签名，其内容实际上就是 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>。 下文将进一步介绍这一数字签名。
+>），将证书提交至 CT 日志系统。 我们的静态 CT 日志接口格式与 RFC 6962 一致。 该命令的输出中有一段数字签名，其内容实际上就是 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>。 下文将进一步介绍这一数字签名。
 </p>
 <pre>
 $ curl \
@@ -94,16 +96,17 @@ $ curl \
    --data @example-json-bundle.json \
     -H "Content-Type: application/json" \
     -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
-   https://oak.ct.letsencrypt.org/2020/ct/v1/add-chain
-{"sct_version":0,"id":"5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=","timestamp":1576689972016,"extensions":"","signature":"BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E"}
+   https://log.sycamore.ct.letsencrypt.org/2026h2/ct/v1/add-chain
+{"sct_version":0,"id":"bP5QGUOoXqkWvFLRM+TcyR7xQRx9JYQg0XOAnhgY6zo=","timestamp":1783737642362,"extensions":"AAAFABSjxQU=","signature":"BAMASDBGAiEAzgwvZXjfPivGYoUr2p9yvFsi/vgA3DHUX+vL0Izm2g8CIQCvtWiPPUTYmFztu9ntrtFrg65JVuuCAZKDd+C+QD6wig=="}
 </pre>
 
 <p>
-  为了确认 CT 日志是由 Oak 2020 区块签名的，我们可以使用刚才输出的 id 字段执行以下命令， 结果即为 CT 日志的日志 ID。
+  为确认该 SCT 确实来自 Sycamore 2026h2 分片，我们使用上方得到的 id 字段执行以下命令，
+  所得结果就是分片的日志 ID，可以与日志系统首页显示的日志 ID 比较。
 </p>
 <pre>
-$ base64 -d &lt;&lt;&lt; "5xLysDd+GmL7jskMYYTx6ns3y1YdESZb8+DzS/JBVG4=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
-E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3:4B:F2:41:54:6E
+$ base64 -d &lt;&lt;&lt; "bP5QGUOoXqkWvFLRM+TcyR7xQRx9JYQg0XOAnhgY6zo=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+6C:FE:50:19:43:A8:5E:A9:16:BC:52:D1:33:E4:DC:C9:1E:F1:41:1C:7D:25:84:20:D1:73:80:9E:18:18:EB:3A
 </pre>
 
 <p>
@@ -112,10 +115,10 @@ E7:12:F2:B0:37:7E:1A:62:FB:8E:C9:0C:61:84:F1:EA:7B:37:CB:56:1D:11:26:5B:F3:E0:F3
 > 了解如何进一步解码其内容。
 </p>
 <pre>
-$ base64 -d &lt;&lt;&lt; "BAMARzBFAiEA4OmuTcft9Jq3XLtcdZz9XinXCvYEY1RdSQICXayMJ+0CIHuujkKBLmQz5Cl/VG6C354cP9gxW0dfgMWB+A2yHi+E" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
-04:03:00:47:30:45:02:21:00:E0:E9:AE:4D:C7:ED:F4
-9A:B7:5C:BB:5C:75:9C:FD:5E:29:D7:0A:F6:04:63:54
-5D:49:02:02:5D:AC:8C:27:ED:02:20:7B:AE:8E:42:81
-2E:64:33:E4:29:7F:54:6E:82:DF:9E:1C:3F:D8:31:5B
-47:5F:80:C5:81:F8:0D:B2:1E:2F:84
+$ base64 -d &lt;&lt;&lt; "BAMASDBGAiEAzgwvZXjfPivGYoUr2p9yvFsi/vgA3DHUX+vL0Izm2g8CIQCvtWiPPUTYmFztu9ntrtFrg65JVuuCAZKDd+C+QD6wig==" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:48:30:46:02:21:00:CE:0C:2F:65:78:DF:3E
+2B:C6:62:85:2B:DA:9F:72:BC:5B:22:FE:F8:00:DC:31
+D4:5F:EB:CB:D0:8C:E6:DA:0F:02:21:00:AF:B5:68:8F
+3D:44:D8:98:5C:ED:BB:D9:ED:AE:D1:6B:83:AE:49:56
+EB:82:01:92:83:77:E0:BE:40:3E:B0:8A
 </pre>

@@ -1,7 +1,7 @@
 ---
 title: Slovník pojmů
 slug: glossary
-lastmod: 2026-07-04
+lastmod: 2026-09-08
 show_lastmod: 1
 description: "Slovník pojmů souvisejících s certifikáty SSL/TLS, protokolem HTTPS a zabezpečením webu, které používá Let's Encrypt."
 ---
@@ -71,7 +71,7 @@ Note for translators:
 
 {{% def id="CT-log" name="Protokol Certificate Transparency" %}} Součást systému [Certificate Transparency](#def-CT), která přijímá certifikáty a [předběžné certifikáty](#def-precertificate) a zařazuje je do trvalého, ověřitelného a veřejně přístupného seznamu. {{% /def %}}
 
-{{% def id="CN" name="Common Name" abbr="CN" %}} Část [subjektu](#def-subject) certifikátu, která popisuje, čeho se certifikát týká. U [kořenových](#def-root) a [zprostředkujících](#def-intermediate) certifikátů jde o název [certifikační autority](#def-CA) srozumitelný pro člověka. U [koncových certifikátů](#def-leaf) jde o jeden z názvů domén uvedených v certifikátu. Poznámka: Common Name může mít nejvýše 63 znaků. Jde o zastaralý způsob uvedení názvu domény, pro kterou certifikát platí. Současné internetové standardy totiž očekávají, že software bude při určování platnosti certifikátu kontrolovat pouze [alternativní názvy subjektu](#def-SAN). {{% /def %}}
+{{% def id="CN" name="Common Name" abbr="CN" %}} Část [subjektu](#def-subject) certifikátu, která popisuje, čeho se certifikát týká. U [kořenových](#def-root) a [zprostředkujících](#def-intermediate) certifikátů jde o název [certifikační autority](#def-CA) srozumitelný pro člověka. U [koncových certifikátů](#def-leaf) jde o jeden z názvů domén uvedených v certifikátu. Poznámka: Běžný název (common name) je omezen na 64 znaků. Jde o zastaralý způsob uvedení názvu domény, pro kterou certifikát platí. Současné internetové standardy totiž očekávají, že software bude při určování platnosti certifikátu kontrolovat pouze [alternativní názvy subjektu](#def-SAN). {{% /def %}}
 
 {{% def id="cross-signing" name="Křížové podepisování" %}} Vydávající certifikát může být podepsán více než jedním [kořenovým certifikátem](#def-root), případně od různých certifikačních autorit. Když jedna certifikační autorita podepíše certifikát jiné certifikační autority, označuje se to jako křížové podepisování. {{% /def %}}
 
@@ -113,7 +113,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} Způsob, jakým může [webový server](#def-web-server) odeslat [prohlížeči](#def-web-browser) odpověď [OCSP](#def-OCSP) podepsanou [certifikační autoritou](#def-CA). Prohlížeč pak nemusí certifikační autoritě posílat další požadavek OCSP, což zvyšuje rychlost a chrání soukromí. Označuje se také jako rozšíření TLS Certificate Status Request. Upozorňujeme, že [Let's Encrypt](#def-LE) protokol OCSP nepodporuje. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
-{{% def id="OID" name="Identifikátor objektu" abbr="OID" %}} OID jsou jedinečné číselné identifikátory standardizované Mezinárodní telekomunikační unií (ITU) a organizacemi ISO/IEC. OID se v certifikátech používají k definování rozšíření, polí nebo tvrzení zásad. Použití OID definují internetové standardy a dokumenty [Zásady certifikátů](#def-CP) a [Prohlášení o postupech certifikační autority](#def-CPS). [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="Identifikátor objektu" abbr="OID" %}} OID jsou jedinečné číselné identifikátory standardizované Mezinárodní telekomunikační unií (ITU) a ISO/IEC. OID se v certifikátech používají k definování rozšíření, polí nebo tvrzení zásad. Použití OID definují internetové standardy a dokumenty [Zásady certifikátů](#def-CP) a [Prohlášení o postupech certifikační autority](#def-CPS). [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
 {{% def id="OV" name="Ověření organizace" abbr="OV" %}} Certifikáty, u kterých [certifikační autorita](#def-CA) ověřila právnickou osobu [odběratele](#def-subscriber). Tyto certifikáty obsahují informace o daném subjektu. [Let's Encrypt](#def-LE) certifikáty OV nenabízí. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
@@ -141,7 +141,7 @@ Note for translators:
 
 {{% def id="self-signed" name="Certifikát podepsaný sám sebou" %}} Certifikát podepsaný vlastním soukromým klíčem, jehož pole [Subject](#def-subject) je totožné s polem [Issuer](#def-issuer). Důvěra v certifikáty podepsané samy sebou vychází pouze z předchozích opatření provedených mimo digitální prostředí, například z jejich zařazení na [seznam důvěryhodných kořenů](#def-store). [Kořenové certifikáty](#def-root) jsou podepsané samy sebou. [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
 
-{{% def id="SNI" name="Indikace názvu serveru" abbr="SNI" %}} Pole, které [uživatelský agent](#def-user-agent) odesílá [serveru](#def-web-server) během navazování spojení [TLS](#def-TLS) a uvádí v něm název domény, ke které se chce připojit. Díky tomu může server odpovědět vhodným [certifikátem](#def-leaf), když je za stejnou IP adresou hostováno více domén. Webový server může podle názvu, který klient požadoval prostřednictvím SNI, odeslat jiný certifikát a zobrazit jiný obsah. SNI není šifrované, jeho experimentální náhrada ESNI však ano. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
+{{% def id="SNI" name="Indikace názvu serveru" abbr="SNI" %}} Pole, které [uživatelský agent](#def-user-agent) odesílá [serveru](#def-web-server) během navazování spojení [TLS](#def-TLS) a uvádí v něm název domény, ke které se chce připojit. Díky tomu může server odpovědět vhodným [certifikátem](#def-leaf), když je za stejnou IP adresou hostováno více domén. Webový server může podle názvu, který klient požadoval prostřednictvím SNI, odeslat jiný certifikát a zobrazit jiný obsah. SNI se odesílá nešifrovaně, ale novější rozšíření TLS [Encrypted Client Hello (ECH)](https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello) ho šifruje. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
 {{% def id="SCT" name="Podepsané časové razítko certifikátu" abbr="SCT" %}} Podepsaný a ověřitelný příslib protokolu [Certificate Transparency](#def-CT-log), že certifikát zveřejní. Prohlížeče, které vynucují [CT](#def-CT), kontrolují přítomnost SCT v certifikátu webu nebo při navazování spojení [TLS](#def-TLS) a odmítnou se připojit k webům, které nesplňují jejich požadavky na protokolování. Tím se zvyšuje pravděpodobnost odhalení podvodných nebo nesprávných certifikátů. https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
@@ -149,13 +149,13 @@ Note for translators:
 
 {{% def id="staging" name="Staging prostředí" %}} [Let's Encrypt](#def-LE) poskytuje staging API pro testování požadavků na certifikáty bez ovlivnění limitů požadavků. Certifikáty vygenerované ve staging prostředí *nejsou* veřejně důvěryhodné. Staging prostředí slouží k testování, ladění a vývoji klientů ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Alternativní název subjektu" abbr="SAN" %}} Pole [certifikátu](#def-leaf), které uvádí domény, pro něž je certifikát platný. Nahrazuje použití [Common Name](#def-CN), které se nyní uvádí pouze z důvodu kompatibility. Jeden certifikát může obsahovat mnoho SAN a platit pro mnoho různých názvů domén. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
+{{% def id="SAN" name="Alternativní název subjektu" abbr="SAN" %}} Pole [certifikátu](#def-leaf), které uvádí domény, pro něž je certifikát platný. Nahrazuje použití [Common Name](#def-CN), které se nyní uvádí pouze z důvodu kompatibility. Jeden certifikát může obsahovat mnoho SAN a platit pro mnoho různých názvů domén. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Odběratel" %}} Osoba nebo organizace žádající o certifikát. {{% /def %}}
 
 {{% def id="TLD" name="Doména nejvyšší úrovně" abbr="TLD" %}} Nejvyšší úroveň hierarchického systému doménových jmen, například národní domény nejvyšší úrovně (ccTLD), jako jsou `.de` (Německo) a `.cn` (Čína), a generické domény nejvyšší úrovně (gTLD), jako jsou `.com` a `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transport Layer Security" abbr="TLS" abbr_first="1" %}} Protokol, který HTTPS používá k šifrování a ověřování návštěv webových stránek. {{% /def %}}
+{{% def id="TLS" name="Transport Layer Security" abbr="TLS" abbr_first="1" %}} Protokol, který HTTPS používá k šifrování a ověřování pravosti při návštěvách webových stránek. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} Část systému [DANE](#def-DANE), která se konkrétně týká ověřování připojení [TLS](#def-TLS). {{% /def %}}
 
