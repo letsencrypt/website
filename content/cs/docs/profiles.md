@@ -1,7 +1,7 @@
 ---
 title: Profily
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-09-08
 show_lastmod: false
 ---
 
@@ -32,7 +32,7 @@ Profil classic se použije automaticky u všech objednávek, které výslovně n
 | [Maximální počet názvů](#maximální-počet-názvů)                                                   | 100                                        |
 | [Typy identifikátorů](#typy-identifikátorů)                                                       | DNS                                        |
 
-<sup id="footnote-1">\*</sup>: Pokud CSR odeslaný při finalizaci požaduje konkrétní hodnotu Common Name odpovídající alternativnímu názvu subjektu typu dNSName, požadavek respektujeme. Pokud CSR konkrétní Common Name nepožaduje, použije se jako Subject Common Name první požadovaný alternativní název subjektu typu dNSName. Pokud se požadovaný název nebo název, který by se měl použít, nevejde do pole Common Name (má 64 nebo více znaků), zůstane Common Name prázdné.
+<sup id="footnote-1">\*</sup>: Pokud CSR odeslaný při finalizaci požaduje konkrétní hodnotu Common Name odpovídající alternativnímu názvu subjektu typu dNSName, požadavek respektujeme. Pokud CSR konkrétní Common Name nepožaduje, použije se jako Subject Common Name první požadovaný alternativní název subjektu typu dNSName. Pole Common Name může obsahovat nejvýše 64 znaků. Pokud by Common Name mělo 65 nebo více znaků, tak zůstane prázdné.
 
 <sup id="footnote-2">†</sup>: Pouze u certifikátů s veřejným klíčem RSA.
 

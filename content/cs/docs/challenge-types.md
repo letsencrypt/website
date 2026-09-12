@@ -58,7 +58,7 @@ Nevýhody:
 
 # TLS-ALPN-01
 
-Tato výzva byla vyvinuta po označení TLS-SNI-01 za zastaralou a vzniká jako [samostatný standard][tls-alpn]. Stejně jako TLS-SNI-01 se provádí prostřednictvím TLS na portu 443. Používá však vlastní protokol ALPN, který zajišťuje, že na validační požadavky odpovědí pouze servery podporující tento typ výzvy. Validační požadavky tohoto typu výzvy tak mohou používat pole SNI odpovídající ověřovanému názvu domény, což zvyšuje zabezpečení.
+Tato výzva vznikla po vyřazení TLS-SNI-01 a nyní je standardizována v [RFC 8737][tls-alpn]. Stejně jako TLS-SNI-01 se provádí prostřednictvím TLS na portu 443. Používá však vlastní protokol ALPN, který zajišťuje, že na validační požadavky odpovědí pouze servery podporující tento typ výzvy. Validační požadavky tohoto typu výzvy tak mohou používat pole SNI odpovídající ověřovanému názvu domény, což zvyšuje zabezpečení.
 
 Tato výzva není vhodná pro většinu uživatelů. Nejlépe se hodí pro vývojáře reverzních proxy serverů ukončujících TLS, kteří chtějí provádět ověření založené na názvu hostitele podobně jako u HTTP-01, ale z důvodu oddělení odpovědností chtějí celý postup provést na vrstvě TLS. V současnosti jde především o velké poskytovatele hostingu.
 

@@ -1,7 +1,7 @@
 ---
 title: 术语表
 slug: glossary
-lastmod: 2026-07-04
+lastmod: 2026-09-08
 show_lastmod: 1
 description: "Let's Encrypt 所使用的 SSL/TLS 证书、HTTPS 以及网络安全相关术语的汇总表。"
 ---
@@ -71,7 +71,7 @@ Note for translators:
 
 {{% def id="CT-log" name="证书透明化日志" english="Certificate Transparency Log" %}} [证书透明化](#def-CT)机制的一部分，将接收到的证书和[准证书](#def-precertificate)加入一份永久、公开且可验证的列表中。  {{% /def %}}
 
-{{% def id="CN" name="通用名称" english="Common Name" abbr="CN" %}} 证书[主体](#def-subject)信息的一部分，表示证书的所有者。 在[根证书](#def-root)和[中间证书](#def-intermediate)中，通用名称即为[证书颁发机构](#def-CA)面向用户的名称， 而在[叶证书](#def-leaf)中则是证书包含的一个域名。 注意：通用名称最长 63 个字符。 在过去，通用名称还用于表示证书对应的域名，但在现行的互联网标准中，软件只会通过[主体备用名称](#def-SAN)确定证书的有效性。 {{% /def %}}
+{{% def id="CN" name="通用名称" english="Common Name" abbr="CN" %}} 证书[主体](#def-subject)信息的一部分，表示证书的所有者。 在[根证书](#def-root)和[中间证书](#def-intermediate)中，通用名称即为[证书颁发机构](#def-CA)面向用户的名称， 而在[叶证书](#def-leaf)中则是证书包含的一个域名。 注意：通用名称不能超过 64 个字符。 在过去，通用名称还用于表示证书对应的域名，但在现行的互联网标准中，软件只会通过[主体备用名称](#def-SAN)确定证书的有效性。 {{% /def %}}
 
 {{% def id="cross-signing" name="交叉签名" english="Cross Signing" %}} 一份具备证书签发能力的证书可以由若干份[根证书](#def-root)签名，这些根证书也可以来自不同的 CA。 一家 CA 为另一家 CA 的证书签名就称为交叉签名。  {{% /def %}}
 
@@ -141,7 +141,7 @@ Note for translators:
 
 {{% def id="self-signed" name="自签名证书" english="Self-signed certificate" %}} 一份[主体](#def-subject)和[颁发者](#def-issuer)相同的证书，由其自身的私钥签名。 自签名证书只能通过现实中的事先安排得到信任，例如收录于[可信根证书列表](#def-store)中。 所有[根证书](#def-root)都是自签名证书。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E8%87%AA%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6)。 {{% /def %}}
 
-{{% def id="SNI" name="服务器名称指示" english="Server Name Indication" abbr="SNI" abbr_first="1" %}} [用户代理](#def-user-agent)在 [TLS](#def-TLS) 握手过程中发送给[服务器](#def-web-server)的一个字段，表示其正在连接的域名。 如果一个 IP 地址有多个域名，服务器可以借助 SNI 提供合适的[证书](#def-leaf)。 例如，网页服务器可以根据客户端指定的 SNI 域名发送不同的证书并展示相应的内容。 SNI 没有加密，但其尚处实验阶段的替代品 ESNI 是加密的。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA)。 {{% /def %}}
+{{% def id="SNI" name="服务器名称指示" english="Server Name Indication" abbr="SNI" abbr_first="1" %}} [用户代理](#def-user-agent)在 [TLS](#def-TLS) 握手过程中发送给[服务器](#def-web-server)的一个字段，表示其正在连接的域名。 如果一个 IP 地址有多个域名，服务器可以借助 SNI 提供合适的[证书](#def-leaf)。 例如，网页服务器可以根据客户端指定的 SNI 域名发送不同的证书并展示相应的内容。 SNI 是明文传输的，但新推出的 TLS 扩展[加密服务器名称指示 (ECH)](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA#%E5%8A%A0%E5%AF%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) 能够予以加密。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA)。 {{% /def %}}
 
 {{% def id="SCT" name="签名证书时间戳" english="Signed Certificate Timestamp" abbr="SCT" abbr_first="1" %}} 一种经过数字签名的、可验证的承诺，保证将证书发布至[证书透明化日志](#def-CT-log)系统。 严格遵循 [CT](#def-CT) 的浏览器会检查所有网站证书或 [TLS](#def-TLS) 握手过程中的 SCT 字段，如果不符合其日志要求则拒绝连接。 这使得欺诈性的或错误的证书更容易被检测出来。  https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
@@ -149,13 +149,13 @@ Note for translators:
 
 {{% def id="staging" name="测试环境" english="Staging" %}} [Let's Encrypt](#def-LE) 提供的接口，可用于调试证书申请流程，避免触发速率限制。 测试环境中生成的证书是*不会*被广泛信任的， 因此测试环境只应在测试、调试和 ACME 客户端开发过程中使用。 参见[测试环境文档](/docs/staging-environment)。 {{% /def %}}
 
-{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中的一个字段，表明该证书对哪些域名有效。 这一功能原先由[通用名称](#def-CN)提供，但该字段已取而代之，通用名称的这一功能也只因兼容性得以保留。 一份证书可以包含多个 SAN，从而对多个域名有效。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E4%B8%BB%E9%A2%98%E5%A4%87%E7%94%A8%E5%90%8D%E7%A7%B0)和[速率限制](https://letsencrypt.org/docs/profiles/#max-names)。 {{% /def %}}
+{{% def id="SAN" name="主体备用名称" english="Subject Alternative Name" abbr="SAN" %}} [证书](#def-leaf)中的一个字段，表明该证书对哪些域名有效。 这一功能原先由[通用名称](#def-CN)提供，但该字段已取而代之，通用名称的这一功能也只因兼容性得以保留。 一份证书可以包含多个 SAN，从而对多个域名有效。 [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="用户" english="Subscriber" %}} 申请证书的个人或组织。  {{% /def %}}
 
 {{% def id="TLD" name="顶级域名" english="Top-Level Domain" abbr="TLD" abbr_first="1" %}} 域名系统中的最高层级，例如德国的 `.de`、中国的 `.cn` 等国家顶级域名 (ccTLD)，又如 `.com`、`.org` 等通用顶级域名 (gTLD)。 参见[维基百科条目](https://zh.wikipedia.org/zh-cn/%E9%A0%82%E7%B4%9A%E5%9F%9F)。 {{% /def %}}
 
-{{% def id="TLS" name="传输层安全" english="Transport-Level Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。 {{% /def %}}
+{{% def id="TLS" name="传输层安全" english="Transport Layer Security" abbr="TLS" abbr_first="1" %}} HTTPS 用于加密和认证网页访问的协议。 {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} [DANE](#def-DANE) 的一部分，专门用于验证 [TLS](#def-TLS) 连接。  {{% /def %}}
 
