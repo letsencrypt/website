@@ -45,9 +45,9 @@ Men for de fleste større hosting-udbydere anbefaler vi at bruge en enkelt konto
 
 # Multi-domæne (SAN) Certifikater
 
-Vores [udstedelsespolitik](/docs/rate-limits) giver mulighed for op til 100 navne pr. certifikat. Uanset om du bruger en separat certifikat for hver værtsnavn, eller gruppe sammen mange værtsnavne på et lille antal certifikater, er op til dig.
+Vi tillader op til 100 navne pr. certifikat afhængigt af [certifikatprofil](/docs/profiles/) valgt. Uanset om du bruger en separat certifikat for hver værtsnavn, eller gruppe sammen mange værtsnavne på et lille antal certifikater, er op til dig.
 
-Ved hjælp af separate certifikater per værtsnavn betyder færre bevægelige dele er forpligtet til logisk at tilføje og fjerne domæner, som ikke længere finder anvendelse. Separate certifikater også minimere certifikatets størrelse, som kan fremskynde HTTPS håndtryk på netværk med begrænset båndbredde.
+Ved hjælp af separate certifikater per værtsnavn betyder færre bevægelige dele er forpligtet til logisk at tilføje og fjerne domæner, som ikke længere finder anvendelse. Separate certifikater også minimere certifikatets størrelse, som kan fremskynde HTTPS håndtryk på netværk med begrænset båndbredde. Tjek vores [kalds grænser](/docs/rate-limits) for at sikre, at du kan få så mange certifikater, som du har brug for.
 
 På den anden side, ved hjælp af store certifikater med mange værtsnavne giver dig mulighed for at styre færre certifikater generelt. Hvis du har brug for at understøtte ældre kunder som Windows XP, der ikke understøtter TLS Server Name Indication ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), du skal bruge en unik IP-adresse for hvert certifikat, så ved at sætte flere navne på hvert certifikat reducerer antallet af IP-adresser, du har brug for.
 

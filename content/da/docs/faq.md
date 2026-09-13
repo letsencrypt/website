@@ -117,6 +117,6 @@ Vi beder om, at [ACME-klienter udfører rutinemæssige fornyelser på tilfældig
 
 ## Hvor kan jeg lære mere om TLS/SSL og PKI generelt?
 
-Mangeårige sikkerhedsekspert og praktiker, Ivan Risticţ, offentliggjorde en konfigurationsguide, der giver nyttige oplysninger om, hvad du bør overveje, mens du <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">opsætter din TLS-konfiguration</a>.
+Mangeårige sikkerhedsekspert og praktiker, Ivan Risticţ, offentliggjorde en konfigurationsguide, der giver nyttige oplysninger om, hvad du bør overveje, mens du <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">opsætter din TLS-konfiguration</a>.
 
-For mere omfattende baggrund og flere detaljer, anbefaler vi <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS og PKI</a>, også skrevet af Risticţ.
+For mere omfattende baggrund og flere detaljer, anbefaler vi <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS og PKI</a>, også skrevet af Ristić.
