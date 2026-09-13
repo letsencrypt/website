@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-09-08
 show_lastmod: false
 ---
 
@@ -32,7 +32,7 @@ Den klassiske profil er standardprofilen valgt for alle ordrer, som ikke anmoder
 | [Max Names](#max-names)                                           | 100                                       |
 | [Identifikationstyper](#identifier-types)                         | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: Hvis CSR indsendt ved afslutningen af tiden anmoder om et specifikt fælles navn, der svarer til et dNSName Emne Alternativt Navn, at anmodningen er imødekommet. Hvis CSR ikke anmoder om et specifikt fælles navn, vil det første emnealternativ blive forfremmet til emnefællesnavnet. Hvis enten det ønskede navn eller det to-be-forfremmede navn er for langt til at passe i Common Name feltet (64+ tegn), vil fællesnavnet blive efterladt tomt.
+<sup id="footnote-1">\*</sup>: Hvis CSR indsendt ved afslutningen af tiden anmoder om et specifikt fælles navn, der svarer til et dNSName Emne Alternativt Navn, at anmodningen er imødekommet. Hvis CSR ikke anmoder om et specifikt fælles navn, vil det første emnealternativ blive forfremmet til emnefællesnavnet. Længdegrænsen for feltet Common Name er 64 tegn. Hvis fællesnavnet ville være 65 eller flere tegn, vil det blive efterladt tomt.
 
 <sup id="footnote-2">†</sup>: Kun inkluderet for certifikater med RSA offentlige nøgler.
 

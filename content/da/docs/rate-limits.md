@@ -1,7 +1,7 @@
 ---
 title: Grænser For kald
 slug: rate-limits
-lastmod: 2025-06-12
+lastmod: 2026-08-05
 show_lastmod: true
 ---
 
@@ -75,7 +75,7 @@ værtsnavne.
 Nye ordrer pr. konto
 Hver gang du anmoder om et certifikat fra Let's Encrypt, oprettes en ny ordre.
 Et enkelt certifikat kan indeholde op til 100 identifikatorer (DNS-navne eller IP
-adresser). Af hensyn til ydeevne og pålidelighed er det bedre at bruge færre navne pr certifikat, når det er muligt.
+adresser) afhængigt af valgte [certifikatprofil](/docs/profiles/). Af hensyn til ydeevne og pålidelighed er det bedre at bruge færre navne pr certifikat, når det er muligt.
 
 ### Grænse
 
@@ -104,6 +104,10 @@ mest almindelige allokering (hvad du ville få fra din internetudbyder eller hos
 "registreret domæne." For IPv4-adresser behandler vi den nøjagtige adresse som det
 registrerede domæne. For IPv6-adresser, behandler vi det indeholdende /64 område som
 registrerede domæne.
+
+Du kan få en liste over certifikater udstedt for dit registrerede domæne ved at
+søge [crt.sh](https://crt.sh/) eller [Censys](https://search. ensys.io/#),, der bruger den offentlige Certificate
+Transparency logs.
 
 ### Grænse
 
@@ -323,10 +327,6 @@ fremtiden.
 
 Vi inkluderer en `Retry-After` header i alle rate limit fejlsvar, der angiver
 varigheden af din klient bør vente, før den forsøger igen.
-
-Du kan få en liste over certifikater udstedt for dit registrerede domæne ved at
-søge [crt.sh](https://crt.sh/) eller [Censys](https://search. ensys.io/#),, der bruger den offentlige Certificate
-Transparency logs.
 
 # Anmodning om overskridning
 
