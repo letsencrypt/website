@@ -51,6 +51,16 @@ function doPlot() {
     return total / stack.length;
   }
 
+  // Format an integer with thousands separators in the page's language,
+  // falling back to the browser default if the language tag is unrecognized.
+  function formatCount(n) {
+    try {
+      return n.toLocaleString(document.documentElement.lang);
+    } catch {
+      return n.toLocaleString();
+    }
+  }
+
   // Add an (x,y) point to a Trace object if it is a real point.
   function insertPoint(trace, x, y) {
     if (numFormat.test(y)) {
@@ -79,6 +89,19 @@ function doPlot() {
       insertPoint(tFqdn, row[0], row[3]);
       insertPoint(tRegDom, row[0], row[4]);
     });
+
+    // Headline stat: total certificates issued, summed from the same daily
+    // data used for the issuance graph so the TSV is only fetched once.
+    const totalIssued = document.getElementById("totalIssued");
+    const totalIssuedCount = document.getElementById("totalIssuedCount");
+    if (totalIssued && totalIssuedCount && tIssued.y.length > 0) {
+      let total = 0;
+      for (const daily of tIssued.y) {
+        total += daily;
+      }
+      totalIssuedCount.textContent = formatCount(total);
+      totalIssued.classList.remove("hidden");
+    }
 
     const activeUsage = document.getElementById("activeUsage");
     if (activeUsage) {
