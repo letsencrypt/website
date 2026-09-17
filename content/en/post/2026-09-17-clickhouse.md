@@ -19,7 +19,7 @@ This led us to seek a self-hosted solution with efficient storage for structured
 
 The first step in building our new infrastructure was to purchase new hardware. To back our ClickHouse warehouse, we bought three PowerEdge R7715 servers. Each is equipped with a 32-core AMD EPYC 9355P 3.55GHz processor, 384 GB of RAM and 32 × 3.2TB NVMe drives, working out to roughly 100TB raw storage. With structured data and 100 days’ worth of logs already in our database, we are only at ~14% of total capacity, leaving lots of room for future growth.
 
-Logs are the bulk of our storage use and the foundation of our structured data, as every other table we build is derived from them. When it comes to log search, ClickHouse covers our basic needs with quick ingest and interactive SQL. However, there are query ergonomics that we want to improve, like using [OTel](https://opentelemetry.io/docs/collector/)’s tracing features and ClickHouse’s tokenization settings.
+Logs are the bulk of our storage use and the foundation of our structured data, as every other table we build is derived from them. When it comes to log search, ClickHouse covers our basic needs with quick ingest and interactive SQL. However, there are query ergonomics that we want to improve, like using [OpenTechnology](https://opentelemetry.io/docs/collector/)’s tracing features and ClickHouse’s tokenization settings.
 
 Our primary target for structured data are our issuance records. A materialized view extracts those records from logs into their own table, and further views pre-aggregate from there. One such view counts issuance by day per profile. Now, questions like “what is our issuance by [profile](/docs/profiles/) over the last 180 days” can be answered within milliseconds.
 
@@ -48,9 +48,11 @@ The biggest challenge was backfilling data. While OTel collector handles live lo
 
 One schema decision made these iterations cheap. For tables we anticipated requiring backfilling or recalculation, we deliberately chose the `ReplacingMergeTree` engine, so re-ingesting corrected rows simply replaced the old ones. This also came in handy for a materialized view computing aggregations across other rows. We got the calculations wrong more than once, and each time all we had to do was re-run the query rather than surgically remove bad rows. For tables without the engine, we did `OPTIMIZE TABLE ... DEDUPLICATE BY`, which was expensive, but only needed to be run once.
 
-We hope that this is just the start, especially with our [shorter certificate lifetimes](/2025/12/02/from-90-to-45) and [post-quantum certificates](/2026/06/03/pq-certs) on the horizon. We plan to take full advantage of our new warehouse, extracting and pre-aggregating data that answers questions other teams care about, the way we did for issuance. Better analysis improves our operations and makes transparency cheaper, as our rebuilt stats page shows. With powerful analytics in hand and only ~14% of our storage in use, we have room to store and analyze more than ever before.
+We hope that this is just the start, especially with our [shorter certificate lifetimes](/2025/12/02/from-90-to-45) and [post-quantum certificates](/2026/06/03/pq-certs) on the horizon. We plan to take full advantage of our new warehouse, extracting and pre-aggregating data that answers questions other teams care about, the way we did for issuance. Better analysis improves our operations and makes transparency cheaper, as our rebuilt stats page shows.
 
 <figure class="cmp-BlogFigure">
-<a href="/stats"><img src="/images/blog/2026.09.17-clickhouse-certificate-issuance-since-2016.png" alt="Active certificates and domains since 2016"></a>
+<a href="/stats"><img src="/images/blog/2026.09.17-clickhouse-certificate-issuance-since-2016-cropped.png" alt="Active certificates and domains since 2016"></a>
 <figcaption>Daily certificate issuance stats since 2016</figcaption>
 </figure>
+
+With powerful analytics in hand and only ~14% of our storage in use, we have room to store and analyze more than ever before.
