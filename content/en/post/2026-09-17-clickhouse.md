@@ -19,7 +19,7 @@ This led us to seek a self-hosted solution with efficient storage for structured
 
 The first step in building our new infrastructure was to purchase new hardware. To back our ClickHouse warehouse, we bought three PowerEdge R7715 servers. Each is equipped with a 32-core AMD EPYC 9355P 3.55GHz processor, 384 GB of RAM and 32 × 3.2TB NVMe drives, working out to roughly 100TB raw storage. With structured data and 100 days’ worth of logs already in our database, we are only at ~14% of total capacity, leaving lots of room for future growth.
 
-Logs are the bulk of our storage use and the foundation of our structured data, as every other table we build is derived from them. When it comes to log search, ClickHouse covers our basic needs with quick ingest and interactive SQL. However, there are query ergonomics that we want to improve, like using [OpenTechnology](https://opentelemetry.io/docs/collector/)’s tracing features and ClickHouse’s tokenization settings.
+Logs are the bulk of our storage use and the foundation of our structured data, as every other table we build is derived from them. When it comes to log search, ClickHouse covers our basic needs with quick ingest and interactive SQL. However, there are query ergonomics that we want to improve, like using [OpenTelemetry](https://opentelemetry.io/docs/collector/)’s tracing features and ClickHouse’s tokenization settings.
 
 Our primary target for structured data are our issuance records. A materialized view extracts those records from logs into their own table, and further views pre-aggregate from there. One such view counts issuance by day per profile. Now, questions like “what is our issuance by [profile](/docs/profiles/) over the last 180 days” can be answered within milliseconds.
 
