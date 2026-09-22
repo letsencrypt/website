@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-07-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -900,6 +900,16 @@
 			"name": "CertKit",
 			"url": "https://www.certkit.io/",
 			"comments": "Deployable and SaaS certificate lifecycle management and monitoring",
+			"category": "Server",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "CertLocker",
+			"url": "https://certlocker.io/acme-certificate-automation/",
+			"comments": "ACMEv2 certificate automation with deployment, endpoint probes, RBAC, audit logs, and tamper-evident renewal history",
 			"category": "Server",
 			"challenges": {
 				"HTTP-01": "true",
