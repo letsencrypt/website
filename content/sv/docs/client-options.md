@@ -20,21 +20,24 @@ Om Certbot inte uppfyller dina krav eller om du bara vill testa någon annan så
 
 # Andra klientval
 
-Alla klienter nedan stöder ACMEv2-API:et ([RFC 8555](https://tools.ietf.org/html/rfc8555)). Vi kommer att vara helt [fasa ut stöd för ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/) snart. Om du redan använder någon klient på denna lista, se till att uppgradera till den senaste versionen. Om klienten du använder inte finns listad nedan så kanske den inte stöder ACMEv2. Om så är fallet rekommenderar vi att du kontaktar de projektansvariga eller byter till en annan klient.
+Alla klienter nedan stöder ACMEv2-API:et ([RFC 8555](https://tools.ietf.org/html/rfc8555)). I juni 2021 [fasade vi ut stödet för ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27). Om du redan använder någon klient på denna lista, se till att uppgradera till den senaste versionen. Om klienten du använder inte finns listad nedan så kanske den inte stöder ACMEv2. Om så är fallet rekommenderar vi att du kontaktar de projektansvariga eller byter till en annan klient.
 
 {{< clients libraries="Bibliotek" projects="Projekt som integrarar med Let's Encrypt" >}}
 
-Eventuella beskrivningar av klienterna och projekten nedan erbjuds endast på engelska.
+Python [acme](https://github.com/certbot/certbot/tree/main/acme)-modulen är en del av Certbot, men används också av ett antal andra klienter och finns som ett fristående paket via [PyPI](https://pypi.python.org/pypi/acme) , [Debian](https://packages.debian.org/search?keywords=python-acme) , [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme) , [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) och andra distributioner.
 
 {{< /clients >}}
 
 # Lägg till en klient eller ett projekt
 
-Python-modulen [acme](https://github.com/certbot/certbot/tree/main/acme) är en del av Certbot, men används även av ett antal andra klienter och tillhandahålls som ett separat paket via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) och andra distributioner.
+Python-modulen [acme](https://github.com/certbot/certbot/tree/master/acme) är en del av Certbot, men används även av ett antal andra klienter och tillhandahålls som ett separat paket via [PyPI](https://pypi.python.org/pypi/acme), [Debian](https://packages.debian.org/search?keywords=python-acme), [Ubuntu](https://launchpad.net/ubuntu/+source/python-acme), [Fedora](https://bodhi.fedoraproject.org/updates/?packages=python-acme) och andra distributioner.
 
 Innan du skickar in en pull-förfrågan var god säker:
 
-1. klienten respekterar [Let's Encrypts varumärkespolicy](/trademarks)
+1. klienten respekterar [Let's Encrypts varumärkespolicy](https://www.abetterinternet.org/trademarks)
 1. klienten inte är webbläsarbaserad och att den stöder automatisk förnyelse
-1. din commit lägger till din klient **sist** i relevant sektion (glöm inte `acme_v2` om det är lämpligt!)
+1. Klienten utför [rutinmässiga förnyelser vid slumpmässiga tidpunkter](/docs/integration-guide#when-to-renew), eller uppmuntrar den konfigurationen.
+1. Ditt commit lägger till din klient på **-slutet** av de relevanta sektionerna.
 1. din commit uppdaterar datumfältet `lastmod` i toppen av `clients.json`
+
+Vi kan periodiskt ta bort listningar av projekt som verkar inte längre utvecklas. Om utvecklingsarbete på ett projekt återupptas, tveka inte att skicka en ny pull request för att lägga till projektet igen.

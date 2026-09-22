@@ -1,0 +1,34 @@
+<div
+  id="{{ .id }}"
+  class="accordion-item cmp-AccordionItem2026 rounded-lg bg-gray-200 overflow-hidden {{ if not .last }}mb-4{{ end }}{{ if .is_open }} is-open{{ end }}"
+>
+  <a
+    href="{{ .page_context.RelPermalink }}#{{ .id }}"
+    class="accordion-button block w-full px-6 py-4 flex items-center gap-3 hover:bg-gray-300 no-underline{{ if .is_open }} active{{ end }}"
+    id="{{ .id }}-accordion"
+    aria-controls="{{ .id }}-content"
+    aria-expanded="{{ if .is_open }}true{{ else }}false{{ end }}"
+  >
+    <img src="/images/le-logo-lockonly.svg" class="w-5 h-5 transform -translate-y-0.5" alt="" />
+    <span class="text-left text-xl text-le-blue font-bold">{{ .title }}</span>
+    <div class="ml-auto flex items-center">
+      <span class="text-le-blue text-xl font-medium accordion-icon">{{ if .is_open }}−{{ else }}+{{ end }}</span>
+    </div>
+  </a>
+  <div id="{{ .id }}-content" class="accordion-content{{ if not .is_open }} hidden{{ end }} bg-white px-6 py-4">
+    <div class="space-y-4">
+      {{ if .content_partial }}
+        {{ partial .content_partial .page_context }}
+      {{ else if .content }}
+        <p class="text-le-blue mb-8">
+          {{ .content }}
+        </p>
+      {{ end }}
+      {{ if and .link_url .link_text }}
+        <a href="{{ .link_url }}" class="text-link hover:text-link-hover active:text-link-active underline">
+          {{ .link_text }} →
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>

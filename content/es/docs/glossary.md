@@ -152,7 +152,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) proporciona una API provisional para probar la solicitud de certificado sin afectar los límites de solicitudes. Los certificados generados por el entorno de ensayo *no* son de confianza pública. El entorno de ensayo debe usarse para fines de prueba, depuración y desarrollo de clientes ACME. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Un campo de un [certificado](#def-leaf) que indica para qué dominio(s) es válido el certificado. Reemplaza el uso del [Nombre común](#def-CN), que ahora se proporciona solo por razones de compatibilidad. Un solo certificado puede contener muchas SAN y ser válido para muchos nombres de dominio diferentes. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} Un campo de un [certificado](#def-leaf) que indica para qué dominio(s) es válido el certificado. Reemplaza el uso del [Nombre común](#def-CN), que ahora se proporciona solo por razones de compatibilidad. Un solo certificado puede contener muchas SAN y ser válido para muchos nombres de dominio diferentes. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} La persona u organización que solicita un certificado. {{% /def %}}
 

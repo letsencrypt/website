@@ -1,7 +1,7 @@
 ---
 title: 即将推出的功能
 slug: upcoming-features
-lastmod: 2026-03-16
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
@@ -9,15 +9,15 @@ show_lastmod: 1
 
 # 即将推出的功能
 
-## 移除“TLS 客户端身份验证”扩展密钥用途
-
-自 2026 年 2 月 11 日起，我们的默认证书配置中[不再包含“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 对于无法及时完成迁移的用户，我们也提供了 [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) 证书配置作为临时的替代方案， 在 2026 年 5 月 13 日前使用过该配置的用户可以继续使用至 2026 年 7 月 8 日。
-
 ## 证书有效期缩短至 45 天
 
 为迎合 CA/浏览器论坛新的底线要求，我们计划逐步[将证书有效期缩短至 45 天](https://letsencrypt.org/2025/12/02/from-90-to-45)： 首先于 2027 年 2 月 10 日缩短至 64 天，再于 2028 年 2 月 16 日缩短至 45 天。 域名验证结果复用时限也将首先缩短至 10 天，再进一步缩短至七个小时。
 
 # 已实现的功能
+
+## 移除“TLS 客户端身份验证”扩展密钥用途
+
+自 2026 年 2 月 11 日起，我们的默认证书配置中[不再包含“TLS 客户端身份验证”扩展密钥用途 (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/)。 2026 年 7 月 8 日，我们已将临时的 [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) 证书配置下线，从而彻底废除这一密钥用途。 今后我们签发的所有证书都不再包含 TLS 客户端身份验证 EKU。
 
 ## 停止发送临期证书提醒邮件
 

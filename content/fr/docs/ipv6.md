@@ -1,7 +1,7 @@
 ---
 title: Support IPv6
 slug: ipv6-support
-lastmod: 2020-02-07
+lastmod: 2026-08-04
 show_lastmod: 1
 ---
 
@@ -24,7 +24,7 @@ Dans la plupart des cas, la correction consiste à mettre à jour l'adresse IPv6
 
 La tentative d'IPv6 à IPv4 n'a lieu que lorsque les délais de connexion sont dépassés, et non pour d'autres types d'erreurs.
 
-Par exemple, dans le scénario "Pièges communs" ("Common Pitfalls") ci-dessus, une nouvelle tentative ne se produira pas si un serveur web écoute l'adresse IPv6, mais que ce serveur n'est pas prêt à relever le challenge ACME. Dans ce cas, il n'y aurait pas de délai de connexion pour accéder à l'adresse IPv6 et le challenge échouera sans nouvelle tentative parce qu'une réponse incorrecte a été renvoyée.
+Par exemple, dans le scénario ci-dessus, une nouvelle tentative ne se produira pas si un serveur web écoute l'adresse IPv6, mais que ce serveur n'est pas prêt à relever le défi ACME. Dans ce cas, il n'y aurait pas de délai de connexion pour accéder à l'adresse IPv6 et le défi échouera sans nouvelle tentative parce qu'une réponse incorrecte a été renvoyée.
 
 Pour que notre logiciel d'AC reste simple, nous n'effectuons qu'une nouvelle tentative IPv6 à IPv4 à la première demande lors de la validation des challenges "http-01". Si vous utilisez des redirections, les redirections n'obtiendront pas de nouveau traitement.
 

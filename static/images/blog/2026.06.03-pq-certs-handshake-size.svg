@@ -1,0 +1,39 @@
+<svg viewBox="0 0 720 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t-size d-size" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t-size">Authentication data in a single TLS handshake, by algorithm</title>
+  <desc id="d-size">Horizontal bar chart. ECDSA-P256: 448 bytes. RSA-2048: 1,792 bytes. ML-DSA-44: 14,724 bytes, which crosses the roughly 10 kilobyte point where TLS connections begin to fail.</desc>
+
+  <rect x="1" y="1" width="718" height="313" rx="10" fill="#FFFFFF" stroke="#E3E2DC" stroke-width="1"/>
+
+  <text x="36" y="40" font-size="17" font-weight="600" fill="#2C2C2A">Authentication data in a single TLS handshake</text>
+  <text x="36" y="60" font-size="12.5" fill="#6B6A64">Five signatures and two public keys, by signature algorithm</text>
+
+  <line x1="279.4" y1="92" x2="279.4" y2="250" stroke="#EFEEE9" stroke-width="1"/>
+  <line x1="418.8" y1="92" x2="418.8" y2="250" stroke="#EFEEE9" stroke-width="1"/>
+  <line x1="558.2" y1="92" x2="558.2" y2="250" stroke="#EFEEE9" stroke-width="1"/>
+
+  <rect x="140" y="101" width="12.5" height="30" rx="2" fill="#1D9E75"/>
+  <rect x="140" y="153" width="50" height="30" rx="2" fill="#1D9E75"/>
+  <rect x="140" y="205" width="410.6" height="30" rx="2" fill="#1D9E75"/>
+
+  <text x="132" y="116" font-size="13" fill="#2C2C2A" text-anchor="end" dominant-baseline="middle">ECDSA-P256</text>
+  <text x="132" y="168" font-size="13" fill="#2C2C2A" text-anchor="end" dominant-baseline="middle">RSA-2048</text>
+  <text x="132" y="220" font-size="13" fill="#2C2C2A" text-anchor="end" dominant-baseline="middle">ML-DSA-44</text>
+
+  <text x="159.5" y="116" font-size="13" font-weight="500" fill="#444441" dominant-baseline="middle">448</text>
+  <text x="197" y="168" font-size="13" font-weight="500" fill="#444441" dominant-baseline="middle">1,792</text>
+  <text x="557.5" y="220" font-size="13" font-weight="500" fill="#444441" dominant-baseline="middle">14,724</text>
+
+  <line x1="140" y1="250" x2="600" y2="250" stroke="#C9C8C1" stroke-width="1"/>
+  <line x1="140" y1="250" x2="140" y2="255" stroke="#C9C8C1" stroke-width="1"/>
+  <line x1="279.4" y1="250" x2="279.4" y2="255" stroke="#C9C8C1" stroke-width="1"/>
+  <line x1="418.8" y1="250" x2="418.8" y2="255" stroke="#C9C8C1" stroke-width="1"/>
+  <line x1="558.2" y1="250" x2="558.2" y2="255" stroke="#C9C8C1" stroke-width="1"/>
+  <text x="140" y="269" font-size="11" fill="#6B6A64" text-anchor="middle">0</text>
+  <text x="279.4" y="269" font-size="11" fill="#6B6A64" text-anchor="middle">5,000</text>
+  <text x="418.8" y="269" font-size="11" fill="#6B6A64" text-anchor="middle">10,000</text>
+  <text x="558.2" y="269" font-size="11" fill="#6B6A64" text-anchor="middle">15,000</text>
+  <text x="370" y="293" font-size="12" fill="#6B6A64" text-anchor="middle">size in bytes</text>
+
+  <line x1="418.8" y1="88" x2="418.8" y2="250" stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="418.8" y="80" font-size="12" font-weight="600" fill="#A32D2D" text-anchor="middle">~10 KB</text>
+</svg>

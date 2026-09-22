@@ -1,0 +1,8 @@
+<div id="cmp-PlannedLegacyGiving2026">
+  {{ $legacyGivingFormURL := "https://docs.google.com/forms/d/e/1FAIpQLSehKBhx5Z4s3wRC9RpnS_ivT9w4ftcCyfLo0hswQyZFG3AxiA/viewform?usp=publish-editor" }}
+  {{ $legacyGivingFormLink := printf "<a href='%s' class='text-link hover:text-link-hover active:text-link-active underline'>Let us know here</a>" $legacyGivingFormURL }}
+  <p>{{ T "donate_2026_planned_legacy_giving_text" }}</p>
+  <p>{{ T "donate_2026_planned_legacy_giving_notify_text" (dict "legacyGivingFormLink" $legacyGivingFormLink) | safeHTML }}</p>
+  <p>{{ T "donate_2026_planned_legacy_giving_confidentiality_text" }}</p>
+  <p><em>{{ T "donate_2026_planned_legacy_giving_advisor_text" }}</em></p>
+</div>

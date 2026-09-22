@@ -2,7 +2,7 @@
 title: Vertrauensketten
 linkTitle: Vertrauensketten (Root und Zwischenzertifikate)
 slug: certificates
-lastmod: 2026-03-27
+lastmod: 2026-05-28
 show_lastmod: 1
 ---
 
@@ -31,8 +31,7 @@ Beachten Sie, dass Root CAs keine Verfallsdaten haben, so wie andere Zertifikate
   * Vertrauenswürdig bis: 2035-09-04 (generiert 2020-09-04)
   * CA Details: [crt.sh](https://crt.sh/?caid=183269), [ausgestellte Zertifikate](https://crt.sh/?Identity=%25&iCAID=183269)
   * Zertifikatsdetails (selbstsigniert): [crt.sh](https://crt.sh/?id=3335562555), [der](/certs/isrg-root-x2.der), [pem](/certs/isrg-root-x2.pem), [txt](/certs/isrg-root-x2.txt)
-  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [crt.sh](https://crt.sh/?id=3334561878), [der](/certs/isrg-root-x2-cross-signed.der), [pem](/certs/isrg-root-x2-cross-signed.pem), [txt](/certs/isrg-root-x2-cross-signed.txt)
-  * Zertifikatsdetails (zweites quersigniertes von ISRG Root X1): [crt.sh](https://crt.sh/?id=20878422868), [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
+  * Zertifikatsdetails (Quersigniert von ISRG Root X1): [der](/certs/gen-y/root-x2-by-x1.der), [pem](/certs/gen-y/root-x2-by-x1.pem), [txt](/certs/gen-y/root-x2-by-x1.txt)
   * CRL Hostname: `x2.c.lencr.org`
   * Webseiten testen: [gültig](https://valid.x2.test-certs.letsencrypt.org/), [widerrufen](https://revoked.x2.test-certs.letsencrypt.org/), [abgelaufen](https://expired.x2.test-certs.letsencrypt.org/)
 
@@ -61,7 +60,7 @@ Weitere Informationen zur Kompatibilität unserer Root-Zertifikate mit verschied
 
 # Zwischenzertifikate (Intermediate-Zertifikate)
 
-Wir halten derzeit acht Zwischenzertifikate im aktiven Rotationsbetrieb. Abonnenten-Zertifikate, die einen öffentlichen ECDSA-Schlüssel enthalten, werden von einem der ECDSA-Zwischenzertifikate ausgestellt; in ähnlicher Weise werden Abonnentenzertifikate mit einem RSA-öffentlichen Schlüssel von einem der RSA-Zwischenzertifikate ausgestellt. Abonnenten-Zertifikate, die unter den "classic" und "tlsclient" [Profilen](/docs/profiles) ausgestellt wurden, werden von einem der ersten vier aufgelisteten Zwischenzertifikaten ausgestellt (E7 bis R13); Umgekehrt werden Abonnenten-Zertifikate, die unter den "tlsserver" und "shortlived" Profilen ausgestellt werden, von einem der letzten vier Zwischenzertifikaten (YE1 bis YR2) ausgestellt.
+Wir halten derzeit acht Zwischenzertifikate im aktiven Rotationsbetrieb. Abonnenten-Zertifikate, die einen öffentlichen ECDSA-Schlüssel enthalten, werden von einem der ECDSA-Zwischenzertifikate ausgestellt; in ähnlicher Weise werden Abonnentenzertifikate mit einem RSA-öffentlichen Schlüssel von einem der RSA-Zwischenzertifikate ausgestellt. Abonnentenzertifikate, die unter den "tlsclient" [Profilen](/docs/profiles) ausgestellt wurden, werden von einem der ersten vier aufgelisteten Zwischenzertifikaten ausgestellt (E7 bis R13); Umgekehrt werden Abonnenten-Zertifikate, die unter den "classic", "tlsserver" und "shortlived" Profilen ausgestellt werden, von einem der letzten vier Zwischenzertifikaten (YE1 bis YR2) ausgestellt.
 
 Alle Zwischenzertifikate haben ein Länderfeld von `C = US`.
 

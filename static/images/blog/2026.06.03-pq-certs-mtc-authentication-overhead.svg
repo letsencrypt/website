@@ -1,0 +1,42 @@
+<svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t-mtc d-mtc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t-mtc">Post-quantum authentication overhead: conventional versus Merkle Tree Certificate</title>
+  <desc id="d-mtc">Horizontal bar chart, ML-DSA-44. Conventional post-quantum authentication (two SCTs plus a certificate signature) is 7,260 bytes. A Merkle Tree Certificate needs only a 736-byte inclusion proof, smaller than even a single ML-DSA-44 signature of 2,420 bytes.</desc>
+
+  <rect x="1" y="1" width="718" height="268" rx="10" fill="#FFFFFF" stroke="#E3E2DC" stroke-width="1"/>
+
+  <text x="36" y="38" font-size="17" font-weight="600" fill="#2C2C2A">Authentication overhead with post-quantum signatures</text>
+  <text x="36" y="58" font-size="12.5" fill="#6B6A64">ML-DSA-44 &#8212; bytes to authenticate one certificate</text>
+
+  <line x1="300" y1="84" x2="300" y2="202" stroke="#EFEEE9" stroke-width="1"/>
+  <line x1="400" y1="84" x2="400" y2="202" stroke="#EFEEE9" stroke-width="1"/>
+  <line x1="500" y1="84" x2="500" y2="202" stroke="#EFEEE9" stroke-width="1"/>
+
+  <rect x="200" y="92" width="363" height="36" rx="2" fill="#1D9E75"/>
+  <rect x="200" y="148" width="36.8" height="36" rx="2" fill="#1D9E75"/>
+
+  <text x="190" y="105" font-size="12.5" fill="#2C2C2A" text-anchor="end">Conventional PQ</text>
+  <text x="190" y="121" font-size="10.5" fill="#6B6A64" text-anchor="end">2 SCTs + cert signature</text>
+  <text x="190" y="161" font-size="12.5" fill="#2C2C2A" text-anchor="end">Merkle Tree Cert</text>
+  <text x="190" y="177" font-size="10.5" fill="#6B6A64" text-anchor="end">inclusion proof only</text>
+
+  <text x="571" y="110" font-size="13" font-weight="500" fill="#444441" dominant-baseline="middle">7,260</text>
+  <text x="245" y="166" font-size="13" font-weight="500" fill="#444441" dominant-baseline="middle">736</text>
+
+  <line x1="200" y1="202" x2="600" y2="202" stroke="#C9C8C1" stroke-width="1"/>
+  <g fill="#6B6A64" font-size="11" text-anchor="middle">
+    <line x1="200" y1="202" x2="200" y2="207" stroke="#C9C8C1" stroke-width="1"/>
+    <line x1="300" y1="202" x2="300" y2="207" stroke="#C9C8C1" stroke-width="1"/>
+    <line x1="400" y1="202" x2="400" y2="207" stroke="#C9C8C1" stroke-width="1"/>
+    <line x1="500" y1="202" x2="500" y2="207" stroke="#C9C8C1" stroke-width="1"/>
+    <line x1="600" y1="202" x2="600" y2="207" stroke="#C9C8C1" stroke-width="1"/>
+    <text x="200" y="220">0</text>
+    <text x="300" y="220">2,000</text>
+    <text x="400" y="220">4,000</text>
+    <text x="500" y="220">6,000</text>
+    <text x="600" y="220">8,000</text>
+  </g>
+  <text x="400" y="242" font-size="12" fill="#6B6A64" text-anchor="middle">bytes</text>
+
+  <line x1="321" y1="84" x2="321" y2="202" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="321" y="78" font-size="11" fill="#5F5E5A" text-anchor="middle">one ML-DSA-44 signature</text>
+</svg>

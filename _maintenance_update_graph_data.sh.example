@@ -2,9 +2,9 @@
 
 set -eu
 
-outFile="$(dirname "$0")/js/cert-timeline.tsv"
+outFile="$(dirname "$0")/js/cert-daily-stats.tsv"
 
 # Download to a temp file, then move over-top the original, so that the update is
 # atomic from the perspective of the webserver
-curl --silent https://ct.tacticalsecret.com/cert-timeline.tsv > "${outFile}.bak"
+curl --silent https://ct.tacticalsecret.com/cert-daily-stats.tsv > "${outFile}.bak"
 mv "${outFile}.bak" "${outFile}"

@@ -1,94 +1,56 @@
 ---
 title: Kommande funktioner
 slug: upcoming-features
-lastmod: 2020-02-20
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
+För meddelanden om kommande förändringar, vänligen [prenumerera på Technical Updates-mailinglistan](https://letsencrypt.org/opt-in/) eller se [API Announcements-kategorin](https://community.letsencrypt.org/c/api-announcements/18) på Let's Encrypt communityforum.
 
-## IP-adresser i certifikat
+# Kommande funktioner
 
-Vi planerar införa stöd för att validera och inkludera IP-adresser i
-certifikat.
+## Att minska certifikatets livslängd till 45 dagar
 
-## ECDSA-rot- och mellancertifikat
-
-För tillfället signerar Let's Encrypt bara lövcertifikat med
-RSA-mellancertifikat. Let's Encrypt kommer att generera en ECDSA-rot och
-mellancertifikat som kan användas för att signera lövcertifikat.
+För att följa ändringar i CA/Browser Forum Baseline Requirement minskar vi [certifikatlivslängder till 45 dagar](https://letsencrypt.org/2025/12/02/from-90-to-45). Vi kommer först att minska till 64 dagar den 10 februari 2027, och sedan till 45 dagar den 16 februari 2028. Vi minskar också auktorisationens återanvändningsperiod till 10 dagar, och sedan till 7 timmar.
 
 # Klara funktioner
 
-## Flerperspektivsvalidering
+## Borttagning av EKU:n för TLS-klientautentisering
 
-* Aktiverat: den 19 februari 2020
+Den 11 februari 2026 tog vi [bort "TLS Client Authentication" Extended Key Usage (EKU)-](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) från vår standardcertifikatprofil. Den 8 juli 2026 pensionerade vi den temporära [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient)-profilen och slutförde borttagningen. Vi utfärdar inte längre certifikat som innehåller TLS Client Authentication EKU.
 
-Nu validerar vi kontroll över en domän från [flera nätverksperspektiv
-(engelska)](https://letsencrypt.org/2020/02/19/multi-perspective-validation.html).
+## Avstängning av e-postmeddelanden om utgångsnotifiering
 
-## Certifikattransparenslogg
+Den 4 juni 2025 stängde vi [av vår tjänst för e-postmeddelanden om utgång](https://letsencrypt.org/2025/01/22/ending-expiration-emails/), och raderade alla e-postadresser som är kopplade till ACME-konton från vår produktionsdatabas.
 
-* Aktiverat: den 15 maj 2019
+## Borttagning av OCSP-URL:er
 
-Vi driftar en [certifikattransparenslogg](/docs/ct-logs).
+Aktiverad: [7 maj, 2025](https://letsencrypt.org/2024/12/05/ending-ocsp/).
 
-## Stöd för TLS ALPN-utmaningar
-
-* Aktiverat: den 12 juli 2018
-
-Vi har specificerat och implementerat en
-[ersättare](https://tools.ietf.org/html/rfc8737) till
-TLS-SNI-valideringsmetoden som [stängdes ner av
-säkerhetsskäl](https://community.letsencrypt.org/t/important-what-you-need-to-know-about-tls-sni-validation-issues/50811).
-Att introducera en ersättare var viktigt för prenumeranter som bara vill
-använda port 443 för validering.
-
-## Inbakning av SCT-kvitton i certifikat
-
-* Aktiverat: den 29 mars 2018
+Våra certifikat innehåller inte längre en Authority Information Access (AIA) Online Certificate Status Protocol (OCSP) URL. Istället innehåller de en Certificate Revocation List (CRL) Distribution Point (CRLDP) URL. Betrodda parter kan hämta statusinformation om återkallelser via CRL, och ACME-klienter kan få förnyelsetips via ARI (se nedan).
 
 ## Wildcard-certifikat
 
-* Aktiverat: den 13 mars 2018
+Aktiverad: [9 januari, 2025](https://letsencrypt.org/2025/01/09/acme-profiles/).
 
-## ACME v2-API
+Klienter som stöder [-utkastet ACME Profiles extension](https://www.ietf.org/archive/id/draft-aaron-acme-profiles-01.html) kan nu begära att deras certifikat följer [en av våra stödda profiler](https://letsencrypt.org/docs/profiles/).
 
-* Aktiverat: den 13 mars 2018
+## Statiska CT-loggar
 
-## IDN-stöd
+Aktiverad: [14 mars, 2024](https://letsencrypt.org/2024/03/14/introducing-sunlight/)
 
-* Aktiverat: den 20 oktober 2016
+Vi driver nu Certificate Transparency (CT)-loggar som följer den nya [Static CT API Spec](https://c2sp.org/static-ct-api), med programvaran [Sunlight](https://github.com/FiloSottile/sunlight). Dessa loggar kan nu användas för att uppfylla webbläsarnas CT-krav. [CT-Loggar Dokumentation](https://letsencrypt.org/docs/ct-logs/) har en lista över våra nuvarande loggar.
 
-Let's Encrypt stöder nu utfärdande av certifikat för internationaliserade
-domännamn (IDN).
+## ACME Förnyelseinformation (ARI)
 
-## Fullt IPv6-stöd
+Aktiverad: [23 mars, 2023](https://letsencrypt.org/2023/03/23/improving-resliiency-and-reliability-with-ari/).
 
-* Aktiverat: den 26 juli 2016
+Vi tillhandahåller nu rekommenderade förnyelsefönster för alla utfärdade certifikat. Klienter kan hämta dem via [ACME ARI-tillägget](https://www.rfc-editor.org/rfc/rfc9773.html).
 
-Från början kunde bara delar av Let's Encrypts API-infrastruktur kommunicera
-över IPv6. Detta hindrade system med bara IPv6 från att fullt ut interagera med
-Let's Encrypt. Detta har nu lösts. Nu har IPv6-stöd aktiverats för att
-funktionalitet.
+## Kortlivade certifikat
 
-## Certifikatkompabilitet i Windows XP
+Klienter kan [begära ett kortlivat certifikat](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) med hjälp av ACME-profiler. Dessa certifikat är giltiga under så kort tid att de inte behöver ha information om återkallande inbäddad alls.
 
-* Aktiverat: den 25 mars 2016
+## IP-adresscertifikat
 
-Löste ett problem med vår certifikatkedja som hindrade Let's Encrypt-certifikat
-att accepteras av webbläsare i Windows XP.
-
-## Stöd för signering av ECDSA-nycklar
-
-* Aktiverat: den 10 februari 2016
-
-Lade till stöd för Let's Encrypt att signera ECDSA-nycklar med Let's Encrypts
-RSA-mellancertifikat. Stöd för att signera ECDSA-nycklar med en komplett
-ECDSA-certifikatkedja kommer läggas till senare.
-
-## Stöd för ACME DNS-utmaningar
-
-* Aktiverat: den 20 januari 2016
-
-Let's Encrypt tillåter validering via DNS-poster enligt definitionen i
-ACME-specifikationen.
+Kortlivade certifikat (se ovan) kan begära att certifikatet [innehåller IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i sina Subject Alternative Names. Dessa adresser kommer att [valideras på ungefär samma sätt som DNS-namn](https://www.rfc-editor.org/rfc/rfc8738.html) görs idag.

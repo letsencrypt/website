@@ -1,7 +1,7 @@
 title = "เล็ท'ส เอ็นคริปต์"
 contentDir = "content/th"
-languageName = "Thai"
-languageCode = "th"
+label = "Thai"
+locale = "th"
 weight = 700
 
 [params]

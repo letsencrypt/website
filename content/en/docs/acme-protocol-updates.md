@@ -1,7 +1,7 @@
 ---
 title: ACME Protocol Updates
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ The [IETF-standardized](https://letsencrypt.org/2019/03/11/acme-protocol-ietf-st
 
 We currently have the following API endpoints. Please see [our divergences documentation](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) to compare their implementation to the ACME specification.
 
-## ACME v2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (Deprecated)
-
-* [Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # New Backwards-Compatible ACME Features
 

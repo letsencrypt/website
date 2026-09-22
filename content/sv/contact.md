@@ -2,14 +2,21 @@
 title: Kontakt
 slug: contact
 description: Hur man kontaktar oss
-lastmod: 2021-08-31
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
     parent: about
+should_hide_footer_newsletter: true
 ---
 
-**Vi tillhandahåller inte support via e-post. Om du har en supportfråga vänligen använd vårt engelska [användarforum](https://community.letsencrypt.org). E-postadresserna nedan är bara till för de specifika ärenden som nämns.**
+## Hjälp och stöd
+
+**Vi tillhandahåller inte support via e-post.**
+
+Om du behöver hjälp eller har en supportfråga, vänligen använd våra [communityforum](https://community.letsencrypt.org).
+
+E-postadresserna nedan är bara till för de specifika ärenden som nämns.
 
 ## Pressfrågor
 
@@ -19,9 +26,13 @@ E-post: [press@letsencrypt.org](mailto:press@letsencrypt.org)
 
 E-post: [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org)
 
-## E-postlista
+## Prenumerera på vårt nyhetsbrev
 
-Du kan [prenumerera på vårt nyhetsbrev](https://mailchi.mp/letsencrypt.org/fjp6ha1gad) (engelska).
+{{< newsletter-inline >}}
+
+## Sekretess
+
+E-post: [privacy@abetterinternet.org](mailto:privacy@abetterinternet.org)
 
 ## Säkerhet
 

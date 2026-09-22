@@ -119,8 +119,8 @@ Cons:
 
 # TLS-ALPN-01
 
-This challenge was developed after TLS-SNI-01 became deprecated, and is
-being developed as [a separate standard][tls-alpn]. Like TLS-SNI-01, it is performed
+This challenge was developed after TLS-SNI-01 became deprecated and is
+now standardized as [RFC 8737][tls-alpn]. Like TLS-SNI-01, it is performed
 via TLS on port 443. However, it uses a custom ALPN protocol to ensure
 that only servers that are aware of this challenge type will respond
 to validation requests. This also allows validation requests for this
@@ -158,4 +158,3 @@ certificate that contained the token. It [was removed in March
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
-[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

@@ -5,7 +5,7 @@ command = "hugo -D -F -d public"
 
 [build.environment]
 # same as .github/workflows/test.yaml
-HUGO_VERSION = "0.148.2"
+HUGO_VERSION = "0.162.0"
 NODE_VERSION = "24.5.0"
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
@@ -20,32 +20,42 @@ Referrer-Policy = "no-referrer"
 Permissions-Policy = """
     geolocation=(),
     midi=(),
-    notifications=(),
-    push=(),
     sync-xhr=(),
     microphone=(),
     camera=(),
     magnetometer=(),
     gyroscope=(),
-    speaker=(self),
-    vibrate=(),
     fullscreen=(self),
     interest-cohort=()
 """
-# "connect-src https://d4twhgtvn0ff5.cloudfront.net/" for stats graphs
+# "connect-src https://d4twhgtvn0ff5.cloudfront.net/ and https://d1dfn7jg27m4cf.cloudfront.net/" for stats graphs
 # "img-src data: blob:" is for Plotly download feature
 # "script-src unsafe-eval unsafe-inline data:": For Google Analytics
 # "form-action" is NOT set, so it allows everything (it doesn't default to default-src). If restricted, It must allow at least www.paypal.com and its redirects
 Content-Security-Policy = """
     default-src 'none';
-    font-src 'self';
-    style-src 'self';
+    font-src 'self'
+        https://doublethedonation.com
+        https://rsms.me
+        http://rsms.me
+    ;
+    style-src 'self' 'unsafe-inline'
+        https://donorbox.org
+        https://doublethedonation.com
+        https://rsms.me
+        http://rsms.me
+    ;
     script-src 'unsafe-eval' 'unsafe-inline' 'self' data:
         https://www.google-analytics.com
         https://www.googleadservices.com
         https://www.googletagmanager.com
+        https://cdn.jsdelivr.net
+        http://cdn.jsdelivr.net
         https://googleads.g.doubleclick.net
         https://donorbox.org
+        https://doublethedonation.com
+        https://js.stripe.com
+        https://jspm.dev
         https://js.stripe.com/v3/
         https://sdks.shopifycdn.com
         https://www.paypal.com
@@ -55,6 +65,8 @@ Content-Security-Policy = """
     ;
     img-src 'self' data: blob:
         https://www.google-analytics.com
+        https://donorbox.org
+        https://doublethedonation.com
         https://*.paypal.com
         https://www.paypalobjects.com
         https://ak2s.abmr.net
@@ -77,6 +89,9 @@ Content-Security-Policy = """
     ;
     connect-src 'self'
         https://d4twhgtvn0ff5.cloudfront.net/
+        https://d1dfn7jg27m4cf.cloudfront.net/
+        https://donorbox.org
+        https://doublethedonation.com
         https://letsencrypt-merch.myshopify.com
         https://monorail-edge.shopifysvc.com
         https://www.paypal.com
@@ -117,6 +132,23 @@ Content-Type = "application/x-pem-file"
 Content-Disposition = "inline"
 
 # https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+
+# Redirect the letsencrypt.com domain (and its www subdomain) to the canonical
+# letsencrypt.org site. These must come first and be forced so they take
+# precedence over the path-based rules below; otherwise those rules serve some
+# .com pages with a 200 instead of redirecting.
+# https://github.com/letsencrypt/website/issues/2266
+[[redirects]]
+from = "https://letsencrypt.com/*"
+to = "https://letsencrypt.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.letsencrypt.com/*"
+to = "https://letsencrypt.org/:splat"
+status = 301
+force = true
 
 [[redirects]]
 from = "/jobs"
@@ -311,52 +343,34 @@ status = 302
 force = true
 
 [[redirects]]
-from = "https://letsencrypt.com/*"
-to = "https://letsencrypt.org/"
-status = 302
-force = true
-
-[[redirects]]
-from = "https://www.letsencrypt.com/*"
-to = "https://letsencrypt.org/"
-status = 302
-force = true
-
-[[redirects]]
 # Certbot (and other) clients link to the Terms of Service with a `.` after them
 # This is a convenience to allow copying the URL with that `.`
 # It should be updated on ToS changes, but is not a compliance-critical path.
-from = "/documents/LE-SA-v1.5-February-24-2025.pdf."
-to = "/documents/LE-SA-v1.5-February-24-2025.pdf"
-status = 301
-force = true
-
-[[redirects]]
-from = "/documents/LE-SA-v1.6-August-18-2025.pdf."
-to = "/documents/LE-SA-v1.6-August-18-2025.pdf"
+from = "/documents/LE-SA-v1.8-July-06-2026.pdf."
+to = "/documents/LE-SA-v1.8-July-06-2026.pdf"
 status = 301
 force = true
 
 [[redirects]]
 from = "https://cp.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.1/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.2/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cps.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.1/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.2/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cp.root-x1.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.1/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.2/"
 status = 302
 force = true
 
 [[redirects]]
 from = "https://cps.root-x1.letsencrypt.org/*"
-to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.1/"
+to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.2/"
 status = 302
 force = true

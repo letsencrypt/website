@@ -2,7 +2,7 @@
 title: Contact
 slug: contact
 description: Comment nous contacter
-lastmod: 2023-09-26
+lastmod: 2025-11-26
 menu:
   main:
     weight: 90
@@ -10,7 +10,13 @@ menu:
 should_hide_footer_newsletter: true
 ---
 
-**Nous ne fournissons pas de support par e-mail. Si vous avez une question de support, veuillez utiliser nos [forums de la communauté](https://community.letsencrypt.org). Les adresses e-mail ci-dessous ne sont que pour les sujets spécifiques décrits.**
+## Aide et Soutien
+
+**Nous ne fournissons pas de support par e-mail.**
+
+Si vous avez besoin d'aide ou avez une question de support, veuillez utiliser nos [forums de la communauté](https://community.letsencrypt.org).
+
+Les adresses e-mail ci-dessous ne sont que pour les sujets spécifiques décrits.
 
 ## Demandes de presse
 

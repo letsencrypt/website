@@ -1,7 +1,7 @@
 title = "Let's Encrypt"
 contentDir = "content/cs"
-languageName = "Čeština"
-languageCode = "cs-CZ"
+label = "Čeština"
+locale = "cs-CZ"
 weight = 150
 
 [params]
@@ -12,4 +12,4 @@ Let's Encrypt je bezplatná, automatizovaná a otevřená certifikační autorit
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
 numberFormat = "-|,| "
-viewInThatLanguage = "Zobraz v angličtině"
+viewInThatLanguage = "Zobraz česky"

@@ -151,8 +151,8 @@ other = "ウィンドウの起動"
 [certificate_transparency_window_end]
 other = "ウィンドウの終了"
 
-[certification_practices_statement]
-other = "Certification Practices ステートメント"
+[certification_practice_statement]
+other = "Certification Practice ステートメント"
 
 [overview]
 other = "概要"

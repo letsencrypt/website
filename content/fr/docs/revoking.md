@@ -1,15 +1,14 @@
 ---
 title: Révocation des certificats
 slug: revoking
-date: 2017-06-08
-lastmod: 2021-10-15
+lastmod: 2025-07-31
 show_lastmod: 1
 ---
 
 
 Lorsqu'un certificat n'est plus fiable, vous devez le révoquer. Cela peut se produire pour plusieurs raisons. Par exemple, vous pourriez accidentellement partager la clé privée sur un site Web public ; des pirates pourraient copier la clé privée de vos serveurs ; ou des pirates pourraient prendre le contrôle temporaire de vos serveurs ou de votre configuration DNS, et l'utiliser pour valider et émettre un certificat pour lequel ils détiennent la clé privée.
 
-Lorsque vous révoquez un certificat Let's Encrypt, Let's Encrypt publie ces informations de révocation via le [ Online Certificate Status Protocol (OCSP)](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol), et certains navigateurs vérifient cet OCSP pour savoir s'ils doivent faire confiance à un certificat. Notez que le site OCSP[ a quelques problèmes fondamentaux](https://www.imperialviolet.org/2011/03/18/revocation.html), de sorte que tous les navigateurs ne feront pas cette vérification. Pourtant, la révocation des certificats qui correspondent à des clés privées compromises est une chose importante, et elle est requise par l'[Accord de l'abonné](/repository) de Let's Encrypt.
+Lorsque vous révoquez un certificat Let's Encrypt, Let's Encrypt peut publier ces informations de révocation via la [Liste de Révocation de Certificat (CRLs)](https://en.wikipedia.org/wiki/Certificate_revocation_list), et certains navigateurs vérifient cette CRL pour savoir s'ils doivent faire confiance à un certificat. La révocation des certificats qui correspondent à des clés privées compromises est une chose importante, et elle est requise par l'[Accord de l'abonné](/repository) de Let's Encrypt.
 
 Pour révoquer un certificat avec Let's Encrypt, vous utiliserez l'[ACME API](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), probablement via un client ACME comme [Certbot](https://certbot.eff.org/). Vous devrez prouver à Let's Encrypt que vous êtes autorisé à révoquer le certificat. Il y a trois façons de le faire : à partir du compte qui a émis le certificat, en utilisant un autre compte autorisé, ou en utilisant la clé privée du certificat.
 
@@ -50,7 +49,7 @@ Si vous voulez éviter l'émission d'un certificat, vous pouvez inclure un nom d
 certbot certonly --manual --preferred-challenges=dns -d ${YOUR_DOMAIN} -d nonexistent.${YOUR_DOMAIN}
 ```
 
-Et suivez les instructions. Si vous préférez le valider en utilisant HTTP plutôt que DNS, remplacez l'indicateur `--preferred-challenges` par `--preferred-challenges=http`.
+Et suivre les instructions, en ignorant l'étape de validation pour `nonexistent.${YOUR_DOMAIN}`. Si vous préférez le valider en utilisant HTTP plutôt que DNS, remplacez l'indicateur `--preferred-challenges` par `--preferred-challenges=http`. Notez que dans de nombreux cas, la version DNS de ces étapes ne fonctionnera pas si vous remplacez `--manual` avec une extension certbot pour compléter les défis DNS-01 automatiquement, puisque certbot placera volontiers un enregistrement TXT à `_acme-challenge.nonexistent.${YOUR_DOMAIN}` s'il a la capacité de le faire.
 
 Une fois que vous avez validé le contrôle de tous les noms de domaine du certificat que vous voulez révoquer, vous pouvez télécharger le certificat à partir de [crt.sh](https://crt.sh/), puis procéder à la révocation du certificat comme si vous l'aviez émis :
 
