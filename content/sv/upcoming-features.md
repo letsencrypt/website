@@ -53,4 +53,4 @@ Klienter kan [begära ett kortlivat certifikat](https://letsencrypt.org/2025/02/
 
 ## IP-adresscertifikat
 
-Kortlivade certifikat (se ovan) kan begära att certifikatet [innehåller IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i sina Subject Alternative Names. Dessa adresser kommer att [valideras på ungefär samma sätt som DNS-namn](https://www.rfc-editor.org/rfc/rfc8738.html) görs idag.
+Kortlivade certifikat (se ovan) kan begära att certifikatet [innehåller IP-adresser](https://letsencrypt.org/2025/02/20/first-short-lived-cert-issued/) i sina Subject Alternative Names. Dessa adresser [valideras på ungefär samma sätt som DNS-namn](https://www.rfc-editor.org/rfc/rfc8738.html) gör i dag.

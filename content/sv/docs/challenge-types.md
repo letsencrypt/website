@@ -58,7 +58,7 @@ Nackdelar:
 
 # TLS-ALPN-01
 
-Denna utmaning utvecklades efter att TLS-SNI-01 blev föråldrad och utvecklas nu som [en separat standard][tls-alpn]. Liksom TLS-SNI-01 utförs det via TLS på port 443. Den använder dock ett anpassat ALPN-protokoll för att säkerställa att endast servrar som känner till denna utmaningstyp svarar på valideringsförfrågningar. Detta möjliggör också valideringsförfrågningar för denna utmaningstyp att använda ett SNI-fält som matchar det domännamn som valideras, vilket gör det säkrare.
+Denna verifieringsmetod utvecklades efter att TLS-SNI-01 hade fasats ut och är nu standardiserad som [RFC 8737][tls-alpn]. Liksom TLS-SNI-01 utförs det via TLS på port 443. Den använder dock ett anpassat ALPN-protokoll för att säkerställa att endast servrar som känner till denna utmaningstyp svarar på valideringsförfrågningar. Detta möjliggör också valideringsförfrågningar för denna utmaningstyp att använda ett SNI-fält som matchar det domännamn som valideras, vilket gör det säkrare.
 
 Denna utmaning är inte lämplig för de flesta. Det passar bäst för författare av TLS-terminerande omvända proxyer som vill utföra värdbaserad validering som HTTP-01, men som vill göra det helt på TLS-lagret för att kunna separera bekymmer. Just nu betyder det främst stora hostingleverantörer.
 
