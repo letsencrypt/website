@@ -1,9 +1,16 @@
 ---
-title: Tack för din donation till ISRG
+title: Tack
 slug: thankyou
-date: 2018-04-12
+lastmod: 2022-12-02
 ---
 
-Tack för att du stöder en säkrare och mer integritetsrespekterande webb för oss alla. Följ oss på [Twitter @letsencrypt](https://twitter.com/letsencrypt) för att se hur arbetet går.
-
-Din transaktion är genomförd och ett kvitto på ditt köp har skickats till dig med e-post. Du kan logga in på ditt konto på [www.paypal.com/se](https://www.paypal.com/se) för att se dina transaktionsdetaljer.
+  <div class="container">
+    <p><strong>Tack för din donation</strong></p>
+    <p>Å alla på ISRG:s vägnar, tack för ditt bidrag för att stödja vårt arbete.</p>
+    <p>Ett donationskvitto har skickats till den e-postadress du angav. Internet Security Research Group är en 501(c)(3) ideell offentlig nytta-organisation. Vårt arbetsgivarnummer för allmännyttiga organisationer (EIN) är 46-3344200.</p>
+    <p class="pt-2"><strong>Dubbla din donation</strong></p>
+    <p>Många organisationer matchar donationer till ideella organisationer gjorda av anställda. Kontrollera om din organisation har ett matchningsprogram och fördubbla din påverkan!</p>
+    <div class="pt-2">
+      {{< double_donation >}}
+    </div>
+  </div>

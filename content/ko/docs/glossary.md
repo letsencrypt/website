@@ -152,7 +152,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE)는 속도 제한에 영향을 주지 않고 인증서 요청을 테스트할 수 있는 스테이징 API를 제공합니다. 스테이징 환경에서 생성된 인증서는 공개적으로 신뢰되지 *않습니다*. 준비 환경은 테스트, 디버깅 및 ACME 클라이언트 개발 용도로 사용해야 합니다. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 인증서가 유효한 도메인을 나타내는 [인증서](#def-leaf) 필드입니다. 이제 호환성 문제로만 제공되는 [공통 이름](#def-CN)의 사용을 대체합니다. 단일 인증서는 많은 SAN을 포함할 수 있으며 여러 가지 도메인 이름에 대해 유효합니다. [위키피디아](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 인증서가 유효한 도메인을 나타내는 [인증서](#def-leaf) 필드입니다. 이제 호환성 문제로만 제공되는 [공통 이름](#def-CN)의 사용을 대체합니다. 단일 인증서는 많은 SAN을 포함할 수 있으며 여러 가지 도메인 이름에 대해 유효합니다. [위키피디아](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} 인증서를 요청하는 사용자 또는 조직입니다. {{% /def %}}
 

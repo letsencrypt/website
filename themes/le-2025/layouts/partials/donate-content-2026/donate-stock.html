@@ -1,0 +1,30 @@
+<div id="cmp-DonateStock2026">
+  <p>{{ T "donate_2026_donate_stock_intro_text" }}</p>
+  <table class="key-value-table key-value-table-blue">
+    <tr>
+      <th>{{ T "donate_2026_donate_stock_brokerage_firm" }}</th>
+      <td>{{ T "donate_2026_donate_stock_brokerage_firm_value" }}</td>
+    </tr>
+    <tr>
+      <th>{{ T "donate_2026_donate_stock_account_name" }}</th>
+      <td>{{ T "donate_2026_donate_stock_account_name_value" }}</td>
+    </tr>
+    <tr>
+      <th>{{ T "donate_2026_donate_stock_account_number" }}</th>
+      <td>{{ T "donate_2026_donate_stock_account_number_value" }}</td>
+    </tr>
+    <tr>
+      <th>{{ T "donate_2026_donate_stock_dtc_number" }}</th>
+      <td>{{ T "donate_2026_donate_stock_dtc_number_value" }}</td>
+    </tr>
+    <tr>
+      <th>{{ T "donate_2026_donate_stock_tax_id" }}</th>
+      <td>{{ T "donate_2026_donate_stock_tax_id_value" }}</td>
+    </tr>
+  </table>
+  {{ $donateEmail := "donate@abetterinternet.org" }}
+  {{ $donateEmailLink := printf "<a href='mailto:%s'>%s</a>" $donateEmail $donateEmail }}
+  <p>{{ T "donate_2026_donate_stock_outro_text" (dict "donateEmailLink" $donateEmailLink) | safeHTML }}</p>
+  {{ $givingBlockLink := "<a href='https://thegivingblock.com/donate/internet-security-research-group/'>this page</a>" }}
+  <p>{{ T "donate_2026_donate_stock_online_text" (dict "givingBlockLink" $givingBlockLink) | safeHTML }}</p>
+</div>

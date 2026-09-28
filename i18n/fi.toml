@@ -151,7 +151,7 @@ other = "Aikajakson alku"
 [certificate_transparency_window_end]
 other = "Aikajakson loppu"
 
-[certification_practices_statement]
+[certification_practice_statement]
 other = "Sertifiointikäytäntöjä koskeva lausuma"
 
 [overview]

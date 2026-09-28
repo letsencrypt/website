@@ -1,11 +1,11 @@
-<div id="sponsors" class="bg-gray-50 section-padding-lg">
+<div id="sponsors" class="relative z-10 bg-gray-50 section-padding-lg">
   <div class="container mx-auto">
     <div class="mb-10">
-      <h2 class="text-hero-heading mb-6">{{ i18n "sponsors_heading" }}</h2>
+      <h2 class="text-hero-heading mb-6"><a href="https://www.abetterinternet.org/sponsors/" class="heading-link">{{ i18n "sponsors_heading" }}</a></h2>
 
     </div>
 
-    {{ with $.Site.Data.sponsors.diamond }}
+    {{ with hugo.Data.sponsors.diamond }}
     <div class="mb-12">
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_diamond" }}</h3>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
@@ -16,7 +16,7 @@
     </div>
     {{ end }}
 
-    {{ with $.Site.Data.sponsors.platinum }}
+    {{ with hugo.Data.sponsors.platinum }}
     <div class="mb-12">
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_platinum" }}</h3>
       <div class="grid grid-cols-3 md:grid-cols-4 gap-1">
@@ -27,7 +27,7 @@
     </div>
     {{ end }}
 
-    {{ with $.Site.Data.sponsors.gold }}
+    {{ with hugo.Data.sponsors.gold }}
     <div class="mb-12">
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_gold" }}</h3>
       <div class="grid grid-cols-4 md:grid-cols-6 gap-1">
@@ -39,7 +39,7 @@
     </div>
     {{ end }}
 
-    {{ with $.Site.Data.sponsors.silver }}
+    {{ with hugo.Data.sponsors.silver }}
     <div>
       <h3 class="text-eyebrow mb-6">{{ i18n "sponsors_silver" }}</h3>
       <div class="grid grid-cols-4 md:grid-cols-6 gap-1">

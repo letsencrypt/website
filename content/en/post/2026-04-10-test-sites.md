@@ -3,7 +3,7 @@ author: Matthew McPherrin
 date: 2026-04-10T00:00:00Z
 slug: test-sites
 title: "The difficulty of making sure your website is broken"
-excerpt: "Building automation to ensure having reliably invalid test certificates."
+excerpt: "Building automation to keep our test certificates reliably invalid."
 display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
@@ -52,7 +52,7 @@ The actual content of the website isn't terribly important: We just have a littl
 
 As a small Easter egg, we added a plain text version of the website with an ASCII art version of our logo that we serve if your HTTP client doesn't include text/html in its `Accept` HTTP header. You can pass a ?txt or ?html URL parameter to specifically request one or the other version of the content, if you just want to [see the ASCII art](https://valid.x2.test-certs.letsencrypt.org/?txt).
 
-Let's Encrypt has four root certificates right now. Each of them have test sites linked both here and from [our documentation](/certificates/).
+Let's Encrypt has four root certificates right now. Each of them has test sites linked both here and from [our documentation](/certificates/).
 
 <div class="sites-tables">
 <table class="sites-table">

@@ -1,7 +1,7 @@
 ---
 title: Kommende Funktioner
 slug: upcoming-features
-lastmod: 2026-03-16
+lastmod: 2026-07-22
 show_lastmod: 1
 ---
 
@@ -9,15 +9,15 @@ For meddelelser om kommende ændringer, venligst [abonnér på postlisten Teknis
 
 # Kommende Funktioner
 
-## Fjernelse af TLS Client Authentication EKU
-
-11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Som en midlertidig løsning for kunder, der har brug for mere tid til at migrere, har vi en [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profil tilgængelig indtil. maj. Abonnenter, der allerede bruger det før 13. maj 2026, kan fortsætte med at bruge det indtil 8. juli 2026.
-
 ## Reduceret certifikatet levetider til 45 dage
 
 For at overholde CA/Browser Forum Baseline Krav ændringer, ændrer vi [certifikaters livstider til 45 dage](https://letsencrypt.org/2025/12/02/from-90-to-45). Vi vil først reducere til 64 dage den 10. februar 2027, og derefter til 45 dage den 16. februar 2028. Vi reducerer også tilladelsen genbrug periode til 10 dage, derefter 7 timer.
 
 # Fuldførte Funktioner
+
+## Fjernelse af TLS Client Authentication EKU
+
+11. feb 2026 agter vi at [fjerne "TLS-klientgodkendelse" Extended Key Usage (EKU)](https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/) fra vores standard certifikatprofil. Den 8. juli 2026 pensionerede vi den midlertidige [tlsclient](https://letsencrypt.org/docs/profiles/#tlsclient) profil for at færdiggøre fjernelsen. Vi udsteder ikke længere certifikater med TLS-klientgodkendelse EKU.
 
 ## Afslutning af Udløb Notifikation E-mails
 

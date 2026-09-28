@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2025-07-31
+lastmod: 2026-09-08
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
@@ -41,7 +41,7 @@ Note for translators:
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
-{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE), [IdenTrust](#def-IdenTrust), Sectigo, and DigiCert are Certificate Authorities. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
+{{% def id="CA" name="Certificate Authority" abbr="CA" %}} An organization that issues [certificates](#def-leaf). [Let's Encrypt](#def-LE) is a Certificate Authority. [Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) {{% /def %}}
 
 {{% def id="CAI" name="CA Issuers" %}} Part of the [AIA](#def-AIA) field containing information about the issuer of the [certificate](#def-leaf). It may be useful when the [web server](#def-web-server) didn't provide a trusted [certificate chain](#def-chain). {{% /def %}}
 
@@ -71,7 +71,7 @@ Note for translators:
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} A component of [Certificate Transparency](#def-CT) that accepts submissions of certificates and [precertificates](#def-precertificate) and incorporates them into a permanent, verifiable, publicly-accessible list. {{% /def %}}
 
-{{% def id="CN" name="Common Name" abbr="CN" %}} Part of a certificate's [Subject](#def-subject) describing what the certificate is about. For [roots](#def-root) and [intermediates](#def-intermediate) it's the human-readable name of the [certificate authority](#def-CA). For [leaf certificates](#def-leaf) it's one of the domain names on the certificate. Note: The common name is limited to 63 characters. It is an obsolete method of indicating a domain name to which the certificate applies, since current Internet standards expect software to check only the [Subject Alternative Names](#def-SAN) in order to determine the applicability of a certificate. {{% /def %}}
+{{% def id="CN" name="Common Name" abbr="CN" %}} Part of a certificate's [Subject](#def-subject) describing what the certificate is about. For [roots](#def-root) and [intermediates](#def-intermediate) it's the human-readable name of the [certificate authority](#def-CA). For [leaf certificates](#def-leaf) it's one of the domain names on the certificate. Note: The common name is limited to 64 characters. It is an obsolete method of indicating a domain name to which the certificate applies, since current Internet standards expect software to check only the [Subject Alternative Names](#def-SAN) in order to determine the applicability of a certificate. {{% /def %}}
 
 {{% def id="cross-signing" name="Cross Signing" %}} An issuing certificate may be signed by more than one [root](#def-root), possibly from different CAs. When one CA signs another CA's certificate, it's called cross-signing. {{% /def %}}
 
@@ -81,19 +81,13 @@ Note for translators:
 
 {{% def id="DV" name="Domain-validated certificate" %}} A [certificate](#def-leaf) where the applicant has only proven its control over the domain name (and not the identity of the requesting organization). [Let's Encrypt](#def-LE) offers only DV certificates (not [OV](#def-OV) or [EV](#def-EV)): [FAQ](/docs/faq) - [Wikipedia](https://en.wikipedia.org/wiki/Domain-validated_certificate) {{% /def %}}
 
-{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A variant of the Digital Signature Algorithm (DSA) which uses elliptic curve cryptography.  [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA for [end-entity or leaf certificates](#def-leaf), but not yet for the entire [chain](#def-chain): [/upcoming-features](/upcoming-features) {{% /def %}}
-
-{{% def id="Ed25519" name="Ed25519" %}} A specific type of [EdDSA](#def-EdDSA), along with Ed448. {{% /def %}}
-
-{{% def id="EdDSA" name="Edwards-curve Digital Signature Algorithm" abbr="EdDSA" abbr_first="1" %}}  A modern public-key signature system based on elliptic curves, designed to solve several common [implementation issues](https://ed25519.cr.yp.to/) with elliptic curve cryptography. Certificate Authorities like [Let's Encrypt](#def-LE) can't provide EdDSA certificates yet. [Wikipedia](https://en.wikipedia.org/wiki/EdDSA) {{% /def %}}
+{{% def id="ECDSA" name="Elliptic Curve Digital Signature Algorithm" abbr="ECDSA" abbr_first="1" %}} A signature algorithm which uses [elliptic curve cryptography](#def-ECC). [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). [Let's Encrypt](#def-LE) supports ECDSA. {{% /def %}}
 
 {{% def id="ECC" name="Elliptic Curve Cryptography" abbr="ECC" %}} A type of public-key cryptography based on elliptic curves. ECC uses smaller keys compared to non-EC cryptography while providing equivalent security. [Cloudflare](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/) - [Wikipedia](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) {{% /def %}}
 
 {{% def id="EV" name="Extended Validation" abbr="EV" %}} A type of certificate validation for which the [CA](#def-CA) has verified the legal entity controlling the website. They contain information about that entity. Controls from the [CA](#def-CA) are more strict than for [OV](#def-OV) certificates. [Let's Encrypt](#def-LE) doesn't offer EV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) {{% /def %}}
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is an *FQDN*. {{% /def %}}
-
-{{% def id="IdenTrust" name="IdenTrust" %}} A [Certificate Authority](#def-CA). IdenTrust has [cross-signed](#def-cross-signing) [Let's Encrypt](#def-LE) [intermediate certificates](#def-intermediate): [/certificates](/certificates). [Wikipedia](https://en.wikipedia.org/wiki/IdenTrust) {{% /def %}}
 
 {{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
@@ -119,7 +113,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP stapling" %}} A way for a [web server](#def-web-server) to send a [browser](#def-web-browser) an [OCSP](#def-OCSP) response signed by the [Certificate Authority](#def-CA), so the browser itself doesn’t need to make a secondary OCSP request to the CA, improving speed and privacy. Also known as TLS Certificate Status Request extension. Note that [Let's Encrypt](#def-LE) does not support OCSP. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
-{{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs are unique numeric identifiers standardized by the International Telecommunications Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="Object identifier" abbr="OID" %}} OIDs are unique numeric identifiers standardized by the International Telecommunication Union (ITU) and ISO/IEC. OIDs are used within certificates to define extensions, fields, or policy assertions. Internet standards and [Certificate Policy](#def-CP) and [Certification Practice Statement](#def-CPS) documents define OID usage. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
 {{% def id="OV" name="Organization Validation" abbr="OV" %}} Certificates for which the [CA](#def-CA) has verified the legal entity of the [Subscriber](#def-subscriber). They contain information about that entity. [Let's Encrypt](#def-LE) doesn't offer OV certificates. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
@@ -147,7 +141,7 @@ Note for translators:
 
 {{% def id="self-signed" name="Self-signed certificate" %}} A certificate signed by its own private key, with its [Subject](#def-subject) equal to its [Issuer](#def-issuer). Self-signed certificates are trusted only due to prior arrangements made in the physical world, such as inclusion on a [trusted root list](#def-store). [Root certificates](#def-root) are self-signed. [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
 
-{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} A field that a [user agent](#def-user-agent) sends to a [server](#def-web-server) during a [TLS](#def-TLS) handshake, specifying the domain name to connect to. This allows the server to answer with the appropriate [certificate](#def-leaf) when multiple domains are hosted behind the same IP. The web server might send a different certificate, and show different content, depending on the name that the client requested by SNI. SNI is not encrypted, but an experimental replacement, ESNI, is. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
+{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} A field that a [user agent](#def-user-agent) sends to a [server](#def-web-server) during a [TLS](#def-TLS) handshake, specifying the domain name to connect to. This allows the server to answer with the appropriate [certificate](#def-leaf) when multiple domains are hosted behind the same IP. The web server might send a different certificate, and show different content, depending on the name that the client requested by SNI. SNI is sent unencrypted, but a newer TLS extension, [Encrypted Client Hello (ECH)](https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello), encrypts it. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
 {{% def id="SCT" name="Signed Certificate Timestamp" abbr="SCT" %}} A signed, verifiable promise to publish a certificate, from a [Certificate Transparency log](#def-CT-log). Browsers that enforce [CT](#def-CT) check for the presence of SCTs in a site's certificate, or in the [TLS](#def-TLS) handshake, and refuse to connect to sites that don't meet their logging requirements. This increases the likelihood that fraudulent or inaccurate certificates will be detected. https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
@@ -155,13 +149,13 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} [Let's Encrypt](#def-LE) provides a staging API to test certificate requests without impacting rate limits. Certificates generated by the staging environment are *not* publicly trusted. The staging environment should be used for testing, debugging, and ACME client development purposes. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} A field of a [certificate](#def-leaf) that indicates for which domain(s) the certificate is valid. It replaces the usage of the [Common Name](#def-CN), which is now provided for compatibility reasons only. A single certificate may contain many SANs and be valid for many different domain names. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} A field of a [certificate](#def-leaf) that indicates for which domain(s) the certificate is valid. It replaces the usage of the [Common Name](#def-CN), which is now provided for compatibility reasons only. A single certificate may contain many SANs and be valid for many different domain names. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} The person or organization requesting a certificate. {{% /def %}}
 
 {{% def id="TLD" name="Top-Level Domain" abbr="TLD" %}} Highest level in the hierarchical Domain Name System, such as country-code top-level domains (ccTLDs) like `.de` (Germany), `.cn` (China) and generic top-level domains (gTLDs) like `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transport-Layer Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
+{{% def id="TLS" name="Transport Layer Security" abbr="TLS" abbr_first="1" %}} The protocol used by HTTPS to encrypt and authenticate web page visits. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} The part of [DANE](#def-DANE) specifically related to validating [TLS](#def-TLS) connections. {{% /def %}}
 
@@ -173,7 +167,7 @@ Note for translators:
 
 {{% def id="web-server" name="Web server" %}} Software serving web pages (or, by extension, the hardware server hosting it). [Wikipedia](https://en.wikipedia.org/wiki/Web_server) {{% /def %}}
 
-{{% def id="wildcard" name="Wildcard Certificate" %}} Certificates valid for subdomains one level deep. For instance, a certificate containing a [SAN](#def-SAN) for `*.example.com` is valid for `blog.example.com` and `www.example.com` but **not** for `bork.bork.example.com` or `example.com`). A wildcard is indicated by an asterisk character (*) in place of a subdomain. [Let's Encrypt](#def-LE) [provides Wildcard certificates as of March 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
+{{% def id="wildcard" name="Wildcard Certificate" %}} Certificates valid for subdomains one level deep. For instance, a certificate containing a [SAN](#def-SAN) for `*.example.com` is valid for `blog.example.com` and `www.example.com` but **not** for `bork.bork.example.com` or `example.com`. A wildcard is indicated by an asterisk character (*) in place of a subdomain. [Let's Encrypt](#def-LE) [provides Wildcard certificates as of March 2018](https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579). [Wikipedia](https://en.wikipedia.org/wiki/Wildcard_certificate) {{% /def %}}
 
 {{% def id="X509" abbr="X.509" %}} The standard defining the format of public key certificates. [Wikipedia](https://en.wikipedia.org/wiki/X.509) {{% /def %}}
 

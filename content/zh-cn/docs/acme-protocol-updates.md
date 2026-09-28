@@ -1,7 +1,7 @@
 ---
 title: ACME 协议更新日志
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 我们目前运营的 API 网址如下。 另请查阅[我们的实现差异文档](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)，了解这些接口与 ACME 标准规范之间存在的不同。
 
-## ACME v2 (RFC 8555)
-
 * [生产环境] `https://acme-v02.api.letsencrypt.org/directory`
 * [测试环境] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (已弃用)
-
-* [生产环境] `https://acme-v01.api.letsencrypt.org/directory`
-* [测试环境] `https://acme-staging.api.letsencrypt.org/directory`
 
 # 向后兼容的 ACME 新功能
 

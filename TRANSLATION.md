@@ -14,7 +14,7 @@ How to use Crowdin: https://support.crowdin.com/online-editor/
 ## How to add a new language
 
 If you are interested to add a new language, please open an issue with the information requested in:
-- `languageName`, `languageCode`, `beforeColon`, `description` and `numberFormat` in [/config/_default/languages.en.toml](/config/_default/languages.en.toml)
+- `label`, `locale`, `beforeColon`, `description` and `numberFormat` in [/config/_default/languages.en.toml](/config/_default/languages.en.toml)
 - `name` entries in [/config/_default/menu.en.toml](/config/_default/menu.en.toml)
 
 

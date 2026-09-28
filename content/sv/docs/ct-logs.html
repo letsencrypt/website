@@ -1,4 +1,130 @@
 ---
+title: Certifikattransparens (CT)-loggar
 slug: ct-logs
-untranslated: 1
+lastmod: 2026-09-04
+show_lastmod: 1
 ---
+
+
+<p>
+  <a href="https://certificate.transparency.dev/">Certificate Transparency (CT)</a>
+  är ett system för loggning och övervakning av utfärdandet av TLS-certifikat. CT förbättrar avsevärt allas förmåga att övervaka och studera utfärdande av certifikat, och dessa funktioner har lett till många förbättringar av CA-ekosystemet och webbsäkerheten. Som ett resultat håller CT snabbt på att bli kritisk infrastruktur.
+</p>
+
+<p>
+  Let's Encrypt skickar in alla certifikat vi utfärdar till CT-loggar. Vi driver också CT-loggar.
+  Alla offentligt betrodda certifikatutfärdare är välkomna att lämna in till våra loggar. Många rotcertifikat från certifikatutfärdare har redan inkluderats i våra CT-loggar. Om du driver en certifikatutfärdare och din utfärdare inte finns på vår lista över accepterade utfärdare, vänligen skicka in ett ärende <a href="https://github.com/letsencrypt/ct-log-metadata">här</a>.
+</p>
+
+<p>
+  Registrera dig för aviseringar i <a href="https://community.letsencrypt.org/t/about-the-ct-announcements-category">kategorin CT announcements</a> på vårt communityforum för att få viktigare meddelanden om våra CT-loggar.
+</p>
+
+<h2 id="funding">Finansiering</h2>
+
+<p>
+  Om din organisation vill hjälpa oss att fortsätta detta arbete, vänligen överväg <a href="https://www.abetterinternet.org/sponsor/">att sponsra eller donera</a>.
+</p>
+
+<h2 id="ct-logs">CT-loggar</h2>
+<p>
+Information om de olika livscykelstadier som en CT-logg går igenom kan hittas <a href="https://googlechrome.github.io/CertificateTransparency/log_states.html">här</a>.
+</p>
+
+<h3 id="sunlight">Sunlight</h3>
+<p>
+  Let's Encrypt driver för närvarande <a href="https://c2sp.org/static-ct-api">statiska-ct</a> loggar baserade på <a href="https://sunlight.dev">Sunlight</a>.
+</p>
+<p>
+  Information om bland annat godkända rotcertifikat, publika nycklar, logg-ID:n och delarnas tidsintervall finns på varje loggs
+  presentationssida, som länkas nedan.
+</p>
+<p>Sycamore och Willow är våra produktions-CT-loggar, som accepterar certifikat från betrodda CA:er.</p>
+<ul>
+  <li><b>Sycamore</b>: <a href="https://log.sycamore.ct.letsencrypt.org/">log.sycamore.ct.letsencrypt.org</a></li>
+  <li><b>Willow</b>: <a href="https://log.willow.ct.letsencrypt.org/">log.willow.ct.letsencrypt.org</a></li>
+</ul>
+<p id="testing">
+  Twig är en testlogg som accepterar certifikat från betrodda certifikatutfärdare samt vissa ytterligare testutfärdare, däribland Let’s
+  Encrypts testmiljö.
+</p>
+<ul>
+  <li><b>Twig</b>: <a href="https://log.twig.ct.letsencrypt.org/">log.twig.ct.letsencrypt.org</a></li>
+</ul>
+
+
+<h3 id="rfc-6962-logs-eol">Avveckling av RFC 6962-loggar</h3>
+<p>
+  Let's Encrypt körde tidigare loggar baserade på Trillian och implementerade RFC 6962 API.
+  Mer information finns i <a href="https://letsencrypt.org/2025/08/14/rfc-6962-logs-eol">planen för utfasning av våra Certificate Transparency-loggar enligt RFC 6962</a>.
+</p>
+
+<h2 id="log-operations">Loggoperationer</h2>
+<p>
+  Exemplen nedan använder loggdelen Sycamore 2026h2. Våra loggar är uppdelade i
+  tidsavgränsade delar. Varje del accepterar endast certifikat vars sista giltighetsdag
+  ligger inom delens intervall. Välj därför den del som matchar ditt
+  certifikat på loggens presentationssida.
+</p>
+<p>
+  För att lista de inkluderade rötterna för en viss CT-logg kan du köra följande kommando i valfri terminal:
+</p>
+<pre>
+$ for i in $(curl -s https://log.sycamore.ct.letsencrypt.org/2026h2/ct/v1/get-roots | jq -r '.certificates[]'); do
+    echo '------'; base64 -d &lt;&lt;&lt; "${i}" | openssl x509 -inform der -noout -issuer -serial
+done
+</pre>
+
+<p>
+  Att skicka in certifikat till en CT-logg hanteras vanligtvis av certifikatutfärdare. Om du vill experimentera med detta, börja med att hämta ett godtyckligt PEM-kodat certifikat från vår favoritwebbplats. Kopiera och klistra in följande block i din terminal.
+</p>
+<pre>
+$ echo | \
+openssl s_client \
+    -connect "letsencrypt.org":443 \
+    -servername "letsencrypt.org" \
+    -verify_hostname "letsencrypt.org" 2&gt;/dev/null | \
+sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
+</pre>
+
+<p>
+  Innan ett certifikat kan skickas in måste det vara JSON-kodat inom en speciell struktur. Du kan använda den JSON-generator som tillhandahålls av <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> för att utföra denna uppgift. Verktyget crt.sh kommer att returnera ett JSON-paket. Ladda ner paketet till din dator, byt namn på filen om du måste, och kör följande kommando för att utföra add-chain operationen (<a
+    href="https://tools.ietf.org/html/rfc6962#section-4.1"
+    >RFC 6962 avsnitt 4.1 </a
+>) för att skicka certifikatet till en CT-logg. Våra loggar med Static CT API accepterar
+  samma inlämnings-API som RFC 6962-loggar. Utdata kommer att innehålla en signatur som faktiskt är ett <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>. Mer om signaturen om ett ögonblick.
+</p>
+<pre>
+$ curl \
+    -X POST \
+   --data @example-json-bundle.json \
+    -H "Content-Type: application/json" \
+    -H "User-Agent: lets-encrypt-ct-log-example-1.0" \
+   https://log.sycamore.ct.letsencrypt.org/2026h2/ct/v1/add-chain
+{"sct_version":0,"id":"bP5QGUOoXqkWvFLRM+TcyR7xQRx9JYQg0XOAnhgY6zo=","timestamp":1783737642362,"extensions":"AAAFABSjxQU=","signature":"BAMASDBGAiEAzgwvZXjfPivGYoUr2p9yvFsi/vgA3DHUX+vL0Izm2g8CIQCvtWiPPUTYmFztu9ntrtFrg65JVuuCAZKDd+C+QD6wig=="}
+</pre>
+
+<p>
+  För att bekräfta att SCT:n signerades av loggdelen Sycamore 2026h2 använder vi
+  fältet id från svaret ovan och skickar det till följande kommando.
+  Resultatet är delens logg-ID, som du kan jämföra med det logg-ID
+  som visas på loggens presentationssida.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "bP5QGUOoXqkWvFLRM+TcyR7xQRx9JYQg0XOAnhgY6zo=" | xxd -p -c 64 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+6C:FE:50:19:43:A8:5E:A9:16:BC:52:D1:33:E4:DC:C9:1E:F1:41:1C:7D:25:84:20:D1:73:80:9E:18:18:EB:3A
+</pre>
+
+<p>
+  Med hjälp av signaturfältet kan vi verifiera att certifikatet skickades till en logg. Med vår <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+    >SCT-djupdykningsguide </a
+> kan du vidare avkoda detta värde.
+</p>
+<pre>
+$ base64 -d &lt;&lt;&lt; "BAMASDBGAiEAzgwvZXjfPivGYoUr2p9yvFsi/vgA3DHUX+vL0Izm2g8CIQCvtWiPPUTYmFztu9ntrtFrg65JVuuCAZKDd+C+QD6wig==" | xxd -p -c 16 | sed -e 's/../&:/g' -e 's/:$//' | tr '[:lower:]' '[:upper:]'
+04:03:00:48:30:46:02:21:00:CE:0C:2F:65:78:DF:3E
+2B:C6:62:85:2B:DA:9F:72:BC:5B:22:FE:F8:00:DC:31
+D4:5F:EB:CB:D0:8C:E6:DA:0F:02:21:00:AF:B5:68:8F
+3D:44:D8:98:5C:ED:BB:D9:ED:AE:D1:6B:83:AE:49:56
+EB:82:01:92:83:77:E0:BE:40:3E:B0:8A
+</pre>

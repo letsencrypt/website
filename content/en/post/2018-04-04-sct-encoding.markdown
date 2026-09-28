@@ -358,7 +358,7 @@ extension decoded:
       000001627313EB19
       # CtExtensions extensions (zero-length array)
       0000
-      # digitally-signed struct - RFC 5426
+      # digitally-signed struct - RFC 5246
       # SignatureAndHashAlgorithm (ecdsa-sha256)
       0403
       # opaque signature<0..2^16-1>;
@@ -386,7 +386,7 @@ extension decoded:
       000001627313EB2A
       # CtExtensions extensions (zero-length array)
       0000
-      # digitally-signed struct - RFC 5426
+      # digitally-signed struct - RFC 5246
       # SignatureAndHashAlgorithm (ecdsa-sha256)
       0403
       # opaque signature<0..2^16-1>;

@@ -1,7 +1,7 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2026-06-01
+lastmod: 2026-09-28
 show_lastmod: 1
 ---
 
@@ -18,6 +18,8 @@ There are a number of monitoring options out there, including:
 * [Host-Tracker](https://www.host-tracker.com/)
 * [HeyOnCall](https://heyoncall.com/guides/ssl-certificate-expiration-monitoring) (self-hosted scripts)
 * [CertKit](https://www.certkit.io/)
+* [CertObserver](https://certobserver.com/)
+* [Chill SSL](https://www.chillssl.com/)
 * [Otterwatch](https://otterwatch.dev)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.

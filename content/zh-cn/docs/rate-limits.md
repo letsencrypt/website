@@ -1,7 +1,7 @@
 ---
 title: 速率限制
 slug: rate-limits
-lastmod: 2025-06-12
+lastmod: 2026-08-05
 show_lastmod: true
 ---
 
@@ -52,7 +52,7 @@ show_lastmod: true
 ## 单个账户证书申请限制
 
 每次请求 Let’s Encrypt 签发一份证书即视为一次申请。
-每份证书最多可包含 100 个标识符（域名或 IP 地址）， 但出于性能考虑，一份证书中的标识符越少越好。
+每份证书最多可包含 100 个标识符（域名或 IP 地址），具体取决于所选的[证书配置](/docs/profiles/)。 但出于性能考虑，一份证书中的标识符越少越好。
 
 ### 限制
 
@@ -70,6 +70,8 @@ show_lastmod: true
 一般而言，注册域名即您向域名注册商购买的那一部分域名。 例如，`www.example.com` 对应的注册域名为 `example.com`， 而 `new.blog.example.co.uk` 对应的注册域名则为 `example.co.uk`。 我们依据[公共后缀列表](https://publicsuffix.org/)来确定注册域名。
 
 对于 IP 地址证书，我们将最常见的分配粒度（即您从运营商或托管服务商一次性获得的 IP 地址数量）视作注册域名。 对于 IPv4 地址，每个地址等同于一个注册域名； 而对于 IPv6 地址，每个 /64 子网等同于一个注册域名。
+
+您还可以在 [crt.sh](https://crt.sh/) 或 [Censys](https://search.censys.io/#) 中通过[证书透明化](https://www.certificate-transparency.org/)日志搜索您注册的域名已经获得了哪些证书。
 
 ### 限制
 
@@ -208,8 +210,6 @@ retry after 1970-01-01 00:18:15 UTC.
 ## Retry-After 标头
 
 超过速率限制的失败响应中均带有 `Retry-After` 标头，表示您的客户端应当等待多长时间后再重试。
-
-您还可以在 [crt.sh](https://crt.sh/) 或 [Censys](https://search.censys.io/#) 中通过[证书透明化](https://www.certificate-transparency.org/)日志搜索您注册的域名已经获得了哪些证书。
 
 # 申请豁免
 

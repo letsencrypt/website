@@ -153,7 +153,7 @@ Note for translators:
 
 {{% def id="staging" name="Staging" %}} 開發環境。[Let's Encrypt](#def-LE) 提供一個開發環境的 API 讓你測試憑證請求，以避免達到速率限制。由測試環境所申請的憑證 *不會* 被大眾信任。開發環境僅用於測試、除錯以及 ACME 客戶端軟體的開發。[/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 主體別名。一個憑證擴展中的欄位，用來指名哪些網域可以使用這張憑證。它取代了[通用名稱](#def-CN)欄位，目前通用名稱僅因相容性而添加。一個憑證中可以包含許多的主體別名，讓不同網域名稱使用它。[維基百科](https://en.wikipedia.org/wiki/Subject_Alternative_Name) https://letsencrypt.org/docs/rate-limits/#names-per-certificate {{% /def %}}
+{{% def id="SAN" name="Subject Alternative Name" abbr="SAN" %}} 主體別名。一個憑證擴展中的欄位，用來指名哪些網域可以使用這張憑證。它取代了[通用名稱](#def-CN)欄位，目前通用名稱僅因相容性而添加。一個憑證中可以包含許多的主體別名，讓不同網域名稱使用它。[維基百科](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Subscriber" %}} 訂閱者或使用者。請求憑證的人或機構。{{% /def %}}
 

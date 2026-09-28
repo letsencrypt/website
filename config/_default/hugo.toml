@@ -7,6 +7,21 @@ disableKinds = ["taxonomy", "term"]
 
 enableRobotsTXT = true
 
+# This site includes trusted, first-party HTML content files (e.g. the stats,
+# repository, and CP/CPS document pages under content/). As of the pinned
+# 0.162.0, Hugo denies text/html content by default
+# (security.allowContent = ['! ^text/html$']), which fails the build. Allow all
+# content media types to restore the previous behavior.
+[security]
+allowContent = ['.*']
+
+# Hugo 0.165.0 removed tailwindcss from the default security.exec.allow list
+# (https://github.com/gohugoio/hugo/issues/15178), so css.TailwindCSS fails
+# with "access denied" on newer Hugo versions. Setting `allow` replaces Hugo's
+# defaults rather than extending them, so they are repeated here.
+[security.exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 # Note that this currently has no effect in Hugo.
 timezone = "America/Los_Angeles"
 

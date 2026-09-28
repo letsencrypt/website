@@ -21,4 +21,4 @@ Finally, sometimes the very act of visiting a website can be sensitive informati
 
 Even worse, when traffic is not encrypted it is modifiable in transit. This means that nobody can be sure that what was sent is what was received, in either direction. The connection doesn't just lack privacy, it lacks *integrity*.
 
-A common example of this is the injection of ads and/or malware into server responses. If a website doesn't enable HTTPS they are putting their visitors at risk of this, regardless of the actual content of the website.
+A common example of this is the injection of ads and/or malware into server responses. If a website doesn't enable HTTPS, it is putting its visitors at risk of this, regardless of the actual content of the website.

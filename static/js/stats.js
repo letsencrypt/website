@@ -319,13 +319,13 @@ function doPlot() {
   }
 
   var path;
-  if ( location.hostname === "letsencrypt.org" ) {
-    path = "https://d4twhgtvn0ff5.cloudfront.net/";
-  } else {
+  if ( location.hostname === "localhost" ) {
     path = "/js/"; // in dev, will use old data.
+  } else {
+    path = "https://d1dfn7jg27m4cf.cloudfront.net/";
   }
 
-  fetch(path+"cert-timeline.tsv")
+  fetch(path+"cert-daily-stats.tsv")
   .then(response => {
     return response.text();
   }).then(tsvListener);

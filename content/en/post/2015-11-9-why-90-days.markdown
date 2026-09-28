@@ -8,6 +8,8 @@ title: Why ninety-day lifetimes for certificates?
 slug: why-90-days
 ---
 
+> This is a historic blog post at this point. Please see our [certificate lifetime documentation](/docs/cert-lifetimes) for the current status of certificate lifetimes.
+
 We’re sometimes asked why we only offer certificates with ninety-day lifetimes. People who ask this are usually concerned that ninety days is too short and wish we would offer certificates lasting a year or more, like some other CAs do.
 
 Ninety days is nothing new on the Web. According to Firefox Telemetry, 29% of TLS transactions use ninety-day certificates. That’s more than any other lifetime.  From our perspective, there are two primary advantages to such short certificate lifetimes:

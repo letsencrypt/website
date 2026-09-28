@@ -89,11 +89,11 @@ GeneralizedTime 用四位数字表示年份，从而得以支持 2050 年以后�
 OBJECT IDENTIFIER
 -----------------
 
-Object identifier (OID) 是一种全球唯一的层状标识符，由一串整数组成。 它可以用来标识任何东西，但通常用于指代标准、算法、证书扩展、组织机构或政策文件。 例如 [1.2.840.113549](http://oid-info.com/get/1.2.840.113549) 表示的是 RSA 安全公司， 因此该公司有权分配以这一串数字开头的 OID，比如 [RFC 8017](https://tools.ietf.org/html/rfc8017#page-69) 定义的 [1.2.840.113549.1.1.11](http://oid-info.com/get/1.2.840.113549.1.1.11) 表示 sha256WithRSAEncryption。
+Object identifier (OID) 是一种全球唯一的层状标识符，由一串整数组成。 它可以用来标识任何东西，但通常用于指代标准、算法、证书扩展、组织机构或政策文件。 例如 [1.2.840.113549](https://oid-base.com/get/1.2.840.113549) 表示的是 RSA 安全公司， 因此该公司有权分配以这一串数字开头的 OID，比如 [RFC 8017](https://tools.ietf.org/html/rfc8017#page-69) 定义的 [1.2.840.113549.1.1.11](https://oid-base.com/get/1.2.840.113549.1.1.11) 表示 sha256WithRSAEncryption。
 
-类似地，[1.3.6.1.4.1.11129](http://oid-info.com/get/1.3.6.1.4.1.11129) 指的是 Google 公司，Google 则在 [RFC 6962](https://tools.ietf.org/html/rfc6962) 中将 [1.3.6.1.4.1.11129.2.4.2](http://oid-info.com/get/1.3.6.1.4.1.11129.2.4.2) 分配给了证书透明化系统中的 [SCT 列表扩展](https://letsencrypt.org/2018/04/04/sct-encoding.html)，因为该系统最初便是由 Google 研发的。
+类似地，[1.3.6.1.4.1.11129](https://oid-base.com/get/1.3.6.1.4.1.11129) 指的是 Google 公司，Google 则在 [RFC 6962](https://tools.ietf.org/html/rfc6962) 中将 [1.3.6.1.4.1.11129.2.4.2](https://oid-base.com/get/1.3.6.1.4.1.11129.2.4.2) 分配给了证书透明化系统中的 [SCT 列表扩展](https://letsencrypt.org/2018/04/04/sct-encoding.html)，因为该系统最初便是由 Google 研发的。
 
-同一前缀下的所有 OID 在英文中又称为 OID arc。 OID 越短，占据的空间就越小，价值也就越高，对于大量使用 OID 的格式尤为如此。 OID 前缀 [2.5](http://oid-info.com/get/2.5) 分配给了 Directory Services，指的是一系列的标准文档，在 HTTPS 证书中处于核心地位的 X.509 标准也位列其中。 证书中有很多字段用的都是这个简短的前缀。 例如，[2.5.4.6](http://oid-info.com/get/2.5.4.6) 表示国家名称 (countryName)，[2.5.4.10](http://oid-info.com/get/2.5.4.10) 则表示机构名称 (organizationName)。 这些 OID 在绝大多数证书中至少都会出现一次，自然越短越好。
+同一前缀下的所有 OID 在英文中又称为 OID arc。 OID 越短，占据的空间就越小，价值也就越高，对于大量使用 OID 的格式尤为如此。 OID 前缀 [2.5](https://oid-base.com/get/2.5) 分配给了 Directory Services，指的是一系列的标准文档，在 HTTPS 证书中处于核心地位的 X.509 标准也位列其中。 证书中有很多字段用的都是这个简短的前缀。 例如，[2.5.4.6](https://oid-base.com/get/2.5.4.6) 表示国家名称 (countryName)，[2.5.4.10](https://oid-base.com/get/2.5.4.10) 则表示机构名称 (organizationName)。 这些 OID 在绝大多数证书中至少都会出现一次，自然越短越好。
 
 标准文件中的 OID 常用英文词汇表示以便阅读，有时还会拼接形成新的 OID。 [以 RFC 8017 为例](https://tools.ietf.org/html/rfc8017#page-68)：
 
@@ -644,14 +644,14 @@ CHOICE 和 ANY 的编码与其最终表示的实际类型一致，但也可以�
 安全性
 ======
 
-解码 BER 和 DER 格式时必须格外小心，尤其是在 C、C++ 等非内存安全的编程语言中。 各种解码器的安全漏洞可谓罄竹难书， 而解析用户输入本身就是[安全问题的一大来源](http://langsec.org/)。 ASN.1 编码与漏洞近乎[如影随形](https://bugzilla.redhat.com/show_bug.cgi?id=1300257)， 毕竟这种格式颇为复杂，各种不定长度的字段不计其数， 连长度字段本身都没有固定长度！ 另一方面，ASN.1 格式的数据又往往来自潜在的攻击者， 所以如果要靠数字证书验证用户身份，不能光考虑如何解码正确的证书，还得应对五花八门的恶意输入，以免 ASN.1 代码中存在漏洞而被攻陷。
+解码 BER 和 DER 格式时必须格外小心，尤其是在 C、C++ 等非内存安全的编程语言中。 各种解码器的安全漏洞可谓罄竹难书， 而解析用户输入本身就是[安全问题的一大来源](https://langsec.org/)。 ASN.1 编码与漏洞近乎[如影随形](https://bugzilla.redhat.com/show_bug.cgi?id=1300257)， 毕竟这种格式颇为复杂，各种不定长度的字段不计其数， 连长度字段本身都没有固定长度！ 另一方面，ASN.1 格式的数据又往往来自潜在的攻击者， 所以如果要靠数字证书验证用户身份，不能光考虑如何解码正确的证书，还得应对五花八门的恶意输入，以免 ASN.1 代码中存在漏洞而被攻陷。
 
 面对这些问题，最好的解决办法就是尽可能使用内存安全的编程语言， 并且无论能否使用这类语言，都应当借助现成的 [ASN.1 编译器](https://www.itu.int/en/ITU-T/asn1/Pages/Tools.aspx)生成解析程序，而非闭门造车，自行编写解码器。
 
 致谢
 ================
 
-首先我要向 [A Layman's Guide to a Subset of ASN.1, DER, and BER](http://luca.ntop.org/Teaching/Appunti/asn1.html) 致以诚挚的敬意，本文中的大部分知识我都是从这份材料中学到的。 我还要感谢另一篇佳作 [A warm welcome to DNS](https://powerdns.org/hello-dns/) 的作者，其文风也奠定了本文的笔法基调。
+首先我要向 [A Layman's Guide to a Subset of ASN.1, DER, and BER](https://luca.ntop.org/Teaching/Appunti/asn1.html) 致以诚挚的敬意，本文中的大部分知识我都是从这份材料中学到的。 我还要感谢另一篇佳作 [A warm welcome to DNS](https://powerdns.org/hello-dns/) 的作者，其文风也奠定了本文的笔法基调。
 
 一点题外话
 ==============

@@ -1,7 +1,7 @@
 ---
 title: Mises à jour du protocol ACME
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,14 +12,7 @@ Le protocole ACME [normalisé par l'IETF](https://letsencrypt.org/2019/03/11/acm
 
 Nous disposons actuellement des points de terminaison API suivants. Veuillez consulter [notre documentation sur les divergences](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) pour comparer leur implémentation aux spécifications ACME.
 
-## ACME v2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
-* [Bac à sable] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (obsolète)
-
-* [Production] `https://acme-v01.api.letsencrypt.org/directory`
 * [Bac à sable] `https://acme-staging-v02.api.letsencrypt.org/directory`
 
 # Nouvelles fonctionnalités ACME rétro-compatibles

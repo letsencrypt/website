@@ -1,7 +1,7 @@
 ---
 title: Обновления протокола ACME
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 В настоящее время у нас есть следующие конечные точки API. Пожалуйста, ознакомьтесь с [отступлениями от протокола ACME](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) для сравнения реализаций.
 
-## ACME v2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (устарел)
-
-* [Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # Новые возможности протокола ACME, с обратной совместимостью
 

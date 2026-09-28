@@ -1,8 +1,7 @@
 ---
 title: Types de Challenges
 slug: challenge-types
-date: 2019-02-25
-lastmod: 2025-01-07
+lastmod: 2026-02-12
 show_lastmod: 1
 ---
 
@@ -13,7 +12,7 @@ Lorsque vous obtenez un certificat de Let's Encrypt, nos serveurs valident que v
 
 C'est le type de challenge le plus courant aujourd'hui. Let's Encrypt donne un jeton à votre client ACME, et celui-ci place un fichier sur votre serveur web à l'adresse `http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`. Ce fichier contient le jeton, ainsi qu'une empreinte de votre clé de compte. Une fois que votre client ACME indique à Let's Encrypt que le fichier est prêt, Let's Encrypt tente de le récupérer (potentiellement plusieurs fois à partir de plusieurs endroits). Si nos contrôles de validation obtiennent les bonnes réponses de votre serveur web, la validation est considérée comme réussie et vous pouvez continuer à délivrer votre certificat. Si les contrôles de validation échouent, vous devrez réessayer avec un nouveau certificat.
 
-Notre implémentation du challenge HTTP-01 suit les redirections, jusqu'à 10 niveaux de redirections. Il n'accepte que les redirections vers "http :" ou "https :", et seulement vers les ports 80 ou 443. Il n'accepte pas les redirections vers des adresses IP. Lorsqu'il est redirigé vers une URL HTTPS, il ne valide pas les certificats (puisque ce challenge vise à amorcer les certificats valides, il peut rencontrer des certificats auto-signés ou expirés en cours de route).
+Notre implémentation du challenge HTTP-01 suit les redirections, jusqu'à 10 niveaux de redirections. Il n'accepte que les redirections vers "http :" ou "https :", et seulement vers les ports 80 ou 443. Lorsqu'il est redirigé vers une URL HTTPS, il ne valide pas les certificats (puisque ce challenge vise à amorcer les certificats valides, il peut rencontrer des certificats auto-signés ou expirés en cours de route).
 
 Le challenge HTTP-01 ne peut se faire que sur le port 80. Permettre aux clients de spécifier des ports arbitraires rendrait le défi moins sûr, et ce n'est donc pas autorisé par la norme ACME.
 
@@ -27,7 +26,7 @@ Avantages :
 Inconvénients :
 
 - Cela ne fonctionne pas si votre FAI bloque le port 80 (c'est rare, mais certains FAI résidentiels le font).
-- Let's Encrypt ne vous permet pas d'utiliser ce défi pour délivrer des certificats de type "wildcard".
+- Ce défi ne peut pas être utilisé pour émettre des certificats génériques.
 - Si vous disposez de plusieurs serveurs web, vous devez vous assurer que le fichier est disponible sur chacun d'eux.
 
 # Challenge DNS-01
@@ -61,7 +60,7 @@ Inconvénients :
 
 Ce challenge a été développé après que la norme TLS-SNI-01 soit devenue obsolète, et est développé en tant que [norme distincte][tls-alpn]. Comme TLS-SNI-01, il est effectué via TLS sur le port 443. Toutefois, elle utilise un protocole ALPN personnalisé pour garantir que seuls les serveurs qui sont informés de ce type de challenge répondront aux requêtes de validation. Cela permet également aux demandes de validation pour ce type de challenge d'utiliser un champ SNI qui correspond au nom de domaine en cours de validation, ce qui le rend plus sûr.
 
-Ce challenge n'est pas adapté à la plupart des gens. Il est mieux adapté aux auteurs de "TLS-terminating reverse proxies" qui veulent effectuer une validation basée sur l'hôte comme HTTP-01, mais qui veulent le faire entièrement au niveau de la couche TLS afin de séparer les problèmes. Pour l'instant, il s'agit principalement de grands fournisseurs d'hébergement, mais les principaux serveurs web comme Apache et Nginx pourraient un jour mettre cela en œuvre (et [Caddy le fait déjà][caddy-tls-alpn]).
+Ce challenge n'est pas adapté à la plupart des gens. Il est mieux adapté aux auteurs de "TLS-terminating reverse proxies" qui veulent effectuer une validation basée sur l'hôte comme HTTP-01, mais qui veulent le faire entièrement au niveau de la couche TLS afin de séparer les problèmes. Actuellement, cela signifie principalement de grands fournisseurs d'hébergement.
 
 Avantages :
 
@@ -71,7 +70,7 @@ Avantages :
 
 Inconvénients :
 
-- Il n'est pas supporté par Apache, Nginx ou Certbot, et ne le sera probablement pas de sitôt.
+- La prise en charge de clients ACME est limitée.
 - Comme pour HTTP-01, si vous avez plusieurs serveurs, ils doivent tous répondre avec le même contenu.
 - Cette méthode ne peut pas être utilisée pour valider les domaines génériques.
 
@@ -86,4 +85,3 @@ Ce challenge a été défini dans les versions préliminaires d'ACME. Il faisait
 [SNI]: https://en.wikipedia.org/wiki/Server_Name_Indication
 [tls-sni-disablement]: https://community.letsencrypt.org/t/march-13-2019-end-of-life-for-all-tls-sni-01-validation-support/74209
 [tls-alpn]: https://tools.ietf.org/html/rfc8737
-[caddy-tls-alpn]: https://caddy.community/t/caddy-supports-the-acme-tls-alpn-challenge/4860

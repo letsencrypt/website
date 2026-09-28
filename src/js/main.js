@@ -66,7 +66,7 @@ function closeHamburgerMenu() {
   }
 }
 
-function onMenuItemClick(e) {
+function onMenuItemClick() {
   let shouldOpen = !this.classList.contains(NAV_MENU_ACTIVE_CLASS);
   closeAllNavMenus();
   if (shouldOpen) {
@@ -148,10 +148,10 @@ if (page) {
 // https://lapo.it/asn1js/
 document.querySelectorAll("code.language-der").forEach(r => {
   let pre = r.parentNode;
-  pre.className = 'language-der';
+  pre.className = "language-der";
 
-  let hexBytes = r.textContent.replace(/ /g, '');
-  var wrapper = document.createElement('a');
+  let hexBytes = r.textContent.replace(/ /g, "");
+  var wrapper = document.createElement("a");
   wrapper.href = "https://lapo.it/asn1js/#" + encodeURI(hexBytes);
   wrapper.target = "_blank";
   wrapper.title = "decode";
@@ -162,4 +162,4 @@ document.querySelectorAll("code.language-der").forEach(r => {
 
 })(this, this.document);
 
-window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' }
+window.DonorBox = { widgetLinkClassName: "custom-dbox-popup" };

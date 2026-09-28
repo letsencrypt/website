@@ -117,6 +117,6 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## 在哪里可以深入了解 TLS/SSL 与 PKI 的相关知识？
 
-资深网络安全学者 Ivan Ristić 曾发表过一篇配置指南，列举了<a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">设置 TLS 应注意的事项</a>，参考价值很高。
+资深网络安全学者 Ivan Ristić 曾发表过一篇配置指南，列举了<a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">设置 TLS 应注意的事项</a>，参考价值很高。
 
-如果要更广泛、更深入地学习相关背景知识，推荐 Ristić 的另一部著作 <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS and PKI</a>。
+如果要更广泛、更深入地学习相关背景知识，推荐 Ristić 的另一部著作 <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>。

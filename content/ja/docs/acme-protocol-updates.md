@@ -1,7 +1,7 @@
 ---
 title: ACME プロトコルのアップデート
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 現在、以下の API エンドポイントを運用しています。 ACME 仕様と比較した実装の詳細については、[ divergences ドキュメント](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md)を参照してください。
 
-## ACME v2 (RFC 8555)
-
 * [本番用] `https://acme-v02.api.letsencrypt.org/directory`
 * [ステージング用] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (廃止)
-
-* [本番用] `https://acme-v01.api.letsencrypt.org/directory`
-* [ステージング用] `https://acme-staging.api.letsencrypt.org/directory`
 
 # 新しい後方互換の ACME の機能
 

@@ -1,0 +1,6 @@
+<div id="cmp-DonorAdvisedFunds2026">
+  <p>{{ T "donate_2026_donor_advised_funds_text" }}</p>
+  {{ partial "donate-content-2026/org-address.html" . }}
+  {{ $givingBlockLink := "<a href='https://thegivingblock.com/donate/internet-security-research-group/'>this page</a>" }}
+  <p>{{ T "donate_2026_donor_advised_funds_online_text" (dict "givingBlockLink" $givingBlockLink) | safeHTML }}</p>
+</div>

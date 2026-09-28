@@ -1,0 +1,23 @@
+#cmp-DonationForms2026 .btn {
+  display: inline-block;
+  background: #3a76f0;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  margin-top: 0.75rem;
+}
+
+#cmp-DonationForms2026 .btn:hover {
+  background: #2f63cf;
+}
+
+#cmp-DonationForms2026 iframe {
+  max-width: 500px;
+  min-width: 250px;
+  max-height: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -19,23 +19,23 @@ Our thanks to Akamai, Cisco, Mozilla, Google, OVHcloud, Internet Society, Shopif
 
 <div class="grid-container">
         <div class="text-center home_sponsors">
-                <a href="https://www.akamai.com"><img src="/images/sponsors/small/akamai-logo.png" alt="Akamai" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.cisco.com"><img src="/images/sponsors/small/cisco-logo.png" alt="Cisco" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.mozilla.org"><img src="/images/sponsors/small/mozilla-logo.png" alt="Mozilla" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.google.com/chrome"><img src="/images/sponsors/small/chrome-logo.png" alt="Google Chrome" rel="nofollow" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.ovh.com"><img src="/images/sponsors/small/ovh-logo.png" alt="OVH" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.internetsociety.org"><img src="/images/sponsors/small/isoc-logo.png" alt="Internet Society" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.shopify.com"><img src="/images/sponsors/small/shopify-logo.png" alt="shopify" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.hostpoint.ch"><img src="/images/sponsors/small/hostpoint-logo.png" alt="HostPoint" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.siteground.com"><img src="/images/sponsors/small/siteground-logo.png" alt="SiteGround" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.cyon.ch"><img src="/images/sponsors/small/cyon-logo.png" alt="Cyon" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.identrust.com"><img src="/images/sponsors/small/identrust-logo.png" alt="IdenTrust" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.vultr.com"><img src="/images/sponsors/small/vultr-logo.png" alt="Vultr" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://automattic.com"><img src="/images/sponsors/small/automattic-logo.png" alt="Automattic" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.eff.org"><img src="/images/sponsors/small/eff-logo.png" alt="Electronic Frontier Foundation" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.infomaniak.ch"><img src="/images/sponsors/small/infomaniak-logo.png" alt="Infomaniak" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.planethoster.com"><img src="/images/sponsors/small/planethoster-logo.png" alt="Hébergement web" width="80" height="48" class="sponsor-logo-small"></a>
-                <a href="https://www.discourse.org"><img src="/images/sponsors/small/discourse-logo.png" alt="Discourse" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.akamai.com"><img src="/images/sponsors/akamai-logo.png" alt="Akamai" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.cisco.com"><img src="/images/sponsors/cisco-logo.png" alt="Cisco" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.mozilla.org"><img src="/images/sponsors/mozilla-logo.png" alt="Mozilla" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.google.com/chrome"><img src="/images/sponsors/chrome-logo.png" alt="Google Chrome" rel="nofollow" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.ovh.com"><img src="/images/sponsors/ovh-logo.png" alt="OVH" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.internetsociety.org"><img src="/images/sponsors/isoc-logo.png" alt="Internet Society" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.shopify.com"><img src="/images/sponsors/shopify-logo.png" alt="shopify" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.hostpoint.ch"><img src="/images/sponsors/hostpoint-logo.png" alt="HostPoint" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.siteground.com"><img src="/images/sponsors/siteground-logo.png" alt="SiteGround" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.cyon.ch"><img src="/images/sponsors/cyon-logo.png" alt="Cyon" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.identrust.com"><img src="/images/sponsors/identrust-logo.png" alt="IdenTrust" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.vultr.com"><img src="/images/sponsors/vultr-logo.png" alt="Vultr" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://automattic.com"><img src="/images/sponsors/automattic-logo.png" alt="Automattic" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.eff.org"><img src="/images/sponsors/eff-logo.png" alt="Electronic Frontier Foundation" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.infomaniak.ch"><img src="/images/sponsors/infomaniak-logo.png" alt="Infomaniak" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.planethoster.com"><img src="/images/sponsors/planethoster-logo.png" alt="Hébergement web" width="80" height="48" class="sponsor-logo-small"></a>
+                <a href="https://www.discourse.org"><img src="/images/sponsors/discourse-logo.png" alt="Discourse" width="80" height="48" class="sponsor-logo-small"></a>
         </div>
 </div>
 

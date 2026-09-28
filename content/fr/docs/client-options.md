@@ -37,5 +37,7 @@ Avant de soumettre une "pull request", veuillez vous assurer :
 1. Le client respecte la politique [Let's Encrypt ](https://www.abetterinternet.org/trademarks) en matière de marques
 1. Le client n'est pas basé sur un navigateur et prend en charge les renouvellements automatiques.
 1. Le client effectue des [renouvellements de routine à des moments aléatoires](/docs/integration-guide#when-to-renew), ou encourage cette configuration.
-1. Votre "commit" ajoute votre client à la **fin** des sections concernées (N'oubliez pas le "acme_v2" le cas échéant !).
+1. Votre commit ajoute votre client à la **fin** des sections pertinentes.
 1. Votre "commit" met à jour `lastmod` à la bonne date en haut du  `clients.json`.
+
+Nous pouvons, de temps à autre, supprimer les fiches de projets qui semblent ne plus faire l'objet d'un développement. Si le travail de développement sur un projet reprend, n'hésitez pas à soumettre une nouvelle pull request pour ajouter ce projet à nouveau.

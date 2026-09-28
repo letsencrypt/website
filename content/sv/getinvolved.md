@@ -1,7 +1,7 @@
 ---
 title: Engagera dig
 slug: getinvolved
-lastmod: 2019-11-04
+lastmod: 2025-07-31
 menu:
   main:
     weight: 60
@@ -9,23 +9,18 @@ menu:
 show_lastmod: 1
 ---
 
-
-## Användargemenskap
+## Communitysupport
 
 Vi kan alltid behöva hjälp att besvara frågor på vårt [användarsupportforum](https://community.letsencrypt.org/). Se [detta blogginlägg](/2015/08/13/lets-encrypt-community-support.html) om varför supporthjälp från användargemenskapen är så viktig.
 
-## Kod
+## ACME-klientprogramvara
 
-Vi kan också behöva hjälp med mjukvaruutveckling. All vår kod finns på [GitHub](https://github.com/letsencrypt/).
+En av de bästa saker du kan göra för att hjälpa Let's Encrypt är att bidra till [communityunderhållna ACME-klienter](/docs/client-options).
 
-### Klientmjukvara
+## letsencrypt.org
 
-[Certbot](https://github.com/certbot/certbot) är ett Python-baserat verktyg som arbetar bredvid din webbserver för att automatiskt erhålla ett certifikat och konvertera en webbplats till HTTPS. Certbot är klienten vi rekommenderar de flesta att börja med. Det finns dock många andra [tredjepartsklienter](/docs/client-options) att välja mellan.
+Du kan hjälpa till att förbättra webbplatsen via dess [GitHub-arkiv](https://github.com/letsencrypt/website), bland annat dokumentationen och [översättningarna](https://crowdin.com/project/lets-encrypt-website).
 
-### Server-side CA Software
+## Server-side CA Software
 
-[Boulder](https://github.com/letsencrypt/boulder) är Let's Encrypts CA-implementation. Den bygger på [ACME](https://tools.ietf.org/html/rfc8555)-protokollet och är i huvudsak skriven i Go. Ett bra ställe att börja är i ["hjälp sökes"-listan](https://github.com/letsencrypt/boulder/labels/help%20wanted) och [riktlinjerna för att bidra](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).
-
-### letsencrypt.org
-
-Du kan förbättra denna webbplats och dess dokumentation [här](https://github.com/letsencrypt/website) eller hjälpa till med dess [översättning](https://crowdin.com/project/lets-encrypt-website).
+Vår serversida CA-programvara, [Boulder](https://github.com/letsencrypt/boulder), är öppen källkod. Den bygger på [ACME](https://tools.ietf.org/html/rfc8555)-protokollet och är i huvudsak skriven i Go. Ett bra ställe att börja är i ["hjälp sökes"-listan](https://github.com/letsencrypt/boulder/labels/help%20wanted) och [riktlinjerna för att bidra](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md).

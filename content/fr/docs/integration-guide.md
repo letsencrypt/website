@@ -2,11 +2,9 @@
 title: Guide d'intégration
 linkTitle: Guide d'intégration du client et des grands fournisseurs de services
 slug: integration-guide
-date: 2016-08-08
-lastmod: 2024-12-09
+lastmod: 2025-06-23
 show_lastmod: 1
 ---
-
 
 Ce document contient des conseils utiles si vous êtes un fournisseur d'hébergement ou un important site web intégrant Let's Encrypt, ou si vous écrivez un logiciel client pour Let's Encrypt.
 
@@ -33,27 +31,23 @@ Pour recevoir des mises à jour peu volumineuses sur des changements importants 
 
 Pour des mises à jour plus volumineuses sur les maintenances et les pannes, visitez notre [page d'état](https://letsencrypt.status.io/) et cliquez sur Subscribe en haut à droite. Cela est particulièrement utile pour les fournisseurs d'hébergement.
 
-Assurez-vous également que vous utilisez une adresse électronique valide pour votre compte ACME. Nous utiliserons ce courriel pour vous envoyer des avis d'expiration et communiquer sur tout problème spécifique de votre compte.
-
 # Qui est le souscripteur
 
-Notre [CPS and Subscriber Agreement](/repository) indiquent que le souscripteur est celui qui détient la clé privée d'un certificat. Pour les fournisseurs d'hébergement, c'est le fournisseur et non le client du fournisseur. Si vous écrivez un logiciel que les gens déploient eux-mêmes, c'est celui qui déploie le logiciel.
+Notre [CP/CPS and Subscriber Agreement](/repository) indiquent que le souscripteur est celui qui détient la clé privée d'un certificat. Pour les fournisseurs d'hébergement, c'est le fournisseur et non le client du fournisseur. Si vous écrivez un logiciel que les gens déploient eux-mêmes, c'est celui qui déploie le logiciel.
 
-L'e-mail de contact fourni lors de la création des comptes (alias enregistrements) doit être envoyé à l'abonné. Nous enverrons un courrier électronique à cette adresse pour avertir de l'expiration des certificats et signaler les changements apportés à notre [politique de confidentialité](/privacy).  Si vous êtes un fournisseur d'hébergement, ces notifications doivent vous être adressées plutôt qu'à un client. Idéalement, créez une liste de diffusion ou un alias afin que plusieurs personnes puissent répondre aux notifications, au cas où vous seriez en vacances.
-
-La conséquence est que, si vous êtes un fournisseur d'hébergement, vous n'avez pas besoin de nous envoyer les adresses électroniques de vos clients ou de leur faire accepter notre contrat d'abonnement. Vous pouvez simplement délivrer des certificats pour les domaines que vous contrôlez et commencer à les utiliser.
+La conséquence est que, si vous êtes un fournisseur d’hébergement, vous n'avez pas besoin de faire accepter notre contrat d'abonnement à vos clients. Vous pouvez simplement délivrer des certificats pour les domaines que vous contrôlez et commencer à les utiliser.
 
 # Un ou plusieurs comptes ?
 
 Dans ACME, il est possible de créer un compte et de l'utiliser pour toutes les autorisations et émissions, ou de créer un compte par client. Cette flexibilité peut être appréciable. Par exemple, certains fournisseurs d'hébergement peuvent vouloir utiliser un compte par client et stocker les clés de compte dans des environnements différents, de sorte qu'un compromis sur les clés de compte ne permet pas de les délivrer pour tous leurs clients.
 
-Toutefois, pour la plupart des grands hébergeurs, nous recommandons d'utiliser un seul compte et de bien garder la clé du compte correspondant. Il est ainsi plus facile d'identifier les certificats appartenant à une même entité, de tenir à jour les informations de contact et il est plus facile de procéder à des ajustements des limites de taux si nécessaire. Nous ne serons pas en mesure d'ajuster efficacement les limites de taux si de trop nombreux comptes distincts sont utilisés.
+Toutefois, pour la plupart des grands hébergeurs, nous recommandons d'utiliser un seul compte et de bien garder la clé du compte correspondant. Il est ainsi plus facile d'identifier les certificats appartenant à une même entité et plus facile de procéder à des ajustements des limites de taux si nécessaire. Nous ne serons pas en mesure d'ajuster efficacement les limites de taux si de trop nombreux comptes distincts sont utilisés.
 
 # Certificats multi-domaines (SAN)
 
-Notre [politique d'émission](/docs/rate-limits) autorise jusqu'à 100 noms par certificat. Il vous appartient d'utiliser un certificat distinct pour chaque nom d'hôte ou de regrouper plusieurs noms d'hôtes sur un petit nombre de certificats.
+Nous autorisons jusqu'à 100 noms par certificat en fonction du [profil de certificat](/docs/profiles/) sélectionné. Il vous appartient d'utiliser un certificat distinct pour chaque nom d'hôte ou de regrouper plusieurs noms d'hôtes sur un petit nombre de certificats.
 
-L'utilisation de certificats distincts par nom d'hôte signifie qu'il faut moins de démarches pour ajouter et retirer des domaines, lorsqu'ils sont attribués et retirés. Des certificats séparés réduisent également la taille des certificats, ce qui peut accélérer les échanges HTTPS sur les réseaux à faible débit.
+L'utilisation de certificats distincts par nom d'hôte signifie qu'il faut moins de démarches pour ajouter et retirer des domaines, lorsqu'ils sont attribués et retirés. Des certificats séparés réduisent également la taille des certificats, ce qui peut accélérer les échanges HTTPS sur les réseaux à faible débit. Vérifiez notre [débit limite](/docs/rate-limits) pour vous assurer que vous pouvez obtenir autant de certificats que nécessaire.
 
 D'autre part, l'utilisation de gros certificats avec de nombreux noms d'hôtes vous permet de gérer globalement moins de certificats. Si vous devez prendre en charge des clients plus anciens comme Windows XP qui ne prennent pas en charge l'indication de nom de serveur TLS ([SNI](https://en.wikipedia.org/wiki/Server_Name_Indication)), vous aurez besoin d'une adresse IP unique pour chaque certificat, de ce fait, mettre plus de noms sur chaque certificat réduit le nombre d'adresses IP dont vous aurez besoin.
 
@@ -61,7 +55,7 @@ Pour la plupart des déploiements, les deux choix offrent la même sécurité.
 
 # Stockage et réutilisation des certificats et des clés
 
-Une grande partie de la valeur de Let's Encrypt est qu'il permet une émission automatique dans le cadre de la fourniture d'un nouveau site web.  Toutefois, si votre infrastructure est susceptible de créer à plusieurs reprises de nouvelles interfaces pour le même site web, ces interfaces doivent d'abord essayer d'utiliser un certificat et une clé privée provenant d'un stockage durable, et n'en délivrer une nouvelle que si aucun certificat n'est disponible, ou si tous les certificats existants ont expiré.
+Une grande partie de la valeur de Let's Encrypt est qu'il permet une émission automatique dans le cadre de la fourniture d'un nouveau site web. Toutefois, si votre infrastructure est susceptible de créer à plusieurs reprises de nouvelles interfaces pour le même site web, ces interfaces doivent d'abord essayer d'utiliser un certificat et une clé privée provenant d'un stockage durable, et n'en délivrer une nouvelle que si aucun certificat n'est disponible, ou si tous les certificats existants ont expiré.
 
 Pour Let's Encrypt, cela nous aide à fournir efficacement des services au plus grand nombre de personnes possible. Pour vous, cela garantit que vous êtes en mesure de déployer votre site web chaque fois que vous en avez besoin, quel que soit l'état de Let's Encrypt.
 
@@ -75,7 +69,7 @@ Si vous utilisez le challenge ACME http-01, vous devrez fournir la réponse au c
 
 De plus, lorsque vous utilisez le challenge dns-01, veillez à nettoyer les anciens enregistrements TXT afin que la réponse à la requête de Let's Encrypt ne soit pas trop volumineuse.
 
-Si vous souhaitez utiliser le challenge http-01 de toute façon, vous pouvez tirer profit des redirections HTTP. Vous pouvez configurer chacun de vos frontends pour rediriger /.well-known/acme-validation/XYZ vers validation-server.example.com/XYZ pour tous les XYZ. Cela délègue la responsabilité de la délivrance au serveur de validation, vous devez donc bien protéger ce serveur.
+Si vous souhaitez utiliser le challenge http-01 de toute façon, vous pouvez tirer profit des redirections HTTP. Vous pouvez configurer chacun de vos frontends pour rediriger `/.well-known/acme-challenge/XYZ` vers `validation-server.example.com/XYZ` pour tous les `XYZ`. Cela délègue la responsabilité de la délivrance au `validation-server`, vous devez donc bien protéger ce serveur.
 
 # Serveurs centraux de validation
 
@@ -83,13 +77,13 @@ En rapport avec les deux points ci-dessus, il peut être judicieux, si vous avez
 
 # Configuration du pare-feu
 
-Pour utiliser Let's Encrypt, vous devez autoriser le trafic sortant du port 443 depuis les machines qui exécutent votre client ACME. Nous ne publions pas les plages d'IP pour notre service ACME, et elles seront modifiées sans préavis.
+Pour utiliser Let's Encrypt, vous devez autoriser le trafic sortant du port 443 depuis les machines qui exécutent votre client d'Environnement de Gestion Automatique de Certificat. Nous ne publions pas les plages d'IP pour notre service d'Environnement de Gestion Automatique de Certificat, et elles seront modifiées sans préavis.
 
 Pour le "http-01" ACME challenge, vous devez autoriser le trafic entrant du port 80. Nous ne publions pas les plages d'IP à partir desquelles nous effectuons la validation, et elles seront modifiées sans préavis.
 
 Note : Nous recommandons de toujours autoriser un accès HTTP simple à votre serveur web, avec une redirection vers HTTPS. Cela offre une meilleure expérience à l'utilisateur qu'un serveur web qui refuse ou supprime les connexions du port 80, et offre le même niveau de sécurité.
 
-Pour tous les challenges, vous devez autoriser le trafic du port 53 entrant (TCP et UDP) à vos serveurs DNS faisant autorité.
+Pour tous les défis, vous devez autoriser le trafic du port 53 entrant (TCP et UDP) à vos serveurs DNS faisant autorité.
 
 # Algorithmes de clés supportés
 
@@ -103,17 +97,19 @@ Pour les fournisseurs d'hébergement, nous recommandons de délivrer automatique
 
 Raisonnement : Les sites web existants sont susceptibles d'inclure certaines sous-ressources HTTP (scripts, CSS et images). Si ces sites sont automatiquement redirigés vers leurs versions HTTPS, les navigateurs bloqueront certaines de ces sous-ressources en raison du blocage des contenus mixtes. Cela peut interrompre la fonctionnalité du site. Cependant, une personne qui crée un nouveau site et qui découvre qu'il redirige vers le HTTPS n'inclura très probablement que des sous-ressources HTTPS, car si elle essaie d'inclure une sous-ressource HTTP, elle remarquera immédiatement que cela ne fonctionne pas.
 
-Nous recommandons de permettre aux clients de définir un en-tête HTTP Strict-Transport-Security (HSTS) avec une durée maximale par défaut de soixante jours. Toutefois, ce paramètre doit être accompagné d'un avertissement indiquant que si le client doit passer à un fournisseur d'hébergement qui n'offre pas le HTTPS, le paramètre HSTS mis en cache dans les navigateurs rendra son site indisponible. En outre, le client et le fournisseur d'hébergement doivent savoir que l'en-tête HSTS transformera les erreurs de certificat en défaillances matérielles. Par exemple, alors que les gens peuvent généralement cliquer sur un avertissement du navigateur concernant une non-concordance de nom ou un certificat expiré, les navigateurs ne permettent pas un tel clic pour les noms d'hôtes avec un en-tête HSTS actif.
+Nous recommandons de permettre aux clients de définir un en-tête HTTP Strict-Transport-Security (HSTS) avec une durée maximale par défaut de soixante jours. Toutefois, ce paramètre doit être accompagné d'un avertissement indiquant que si le client doit passer à un fournisseur d’hébergement qui n'offre pas le HTTPS, le paramètre HSTS mis en cache dans les navigateurs rendra son site indisponible. En outre, le client et le fournisseur d’hébergement doivent savoir que l'en-tête HSTS transformera les erreurs de certificat en défaillances matérielles. Par exemple, alors que les gens peuvent généralement cliquer sur un avertissement du navigateur concernant une non-concordance de nom ou un certificat expiré, les navigateurs ne permettent pas un tel clic pour les noms d'hôtes avec un en-tête HSTS actif.
 
 # Quand renouveler
 
-Nous recommandons de renouveler automatiquement les certificats lorsqu'il leur reste un tiers de leur durée de vie totale. For Let's Encrypt's current 90-day certificates, that means renewing 30 days before expiration.
+Nous recommandons de [vérifier les informations de renouvellement d'Environnement de Gestion Automatique de Certificat](https://letsencrypt.org/2024/04/25/guide-to-integrating-ari-into-existing-acme-clients/) pour chaque certificat en tout cas deux fois par jour. Les point de terminaison ARI recommandera quand renouveler.
+
+En guise de filet de sécurité pour ARI, nous recommandons de renouveler automatiquement les certificats lorsqu'il leur reste un tiers de leur durée de vie totale. Pour les certificats avec une période de validité en dessous de 10 jours, nous recommandons le renouvellement à la moitié de leur durée de vie totale. Pour les certificats actuels de 90 jours de Let's Encrypt, cela signifie renouvellement 30 jours avant l'expiration.
 
 Si vous émettez pour plus de 10 000 noms d'hôtes, nous recommandons également un renouvellement automatisé en petites séries, plutôt que de regrouper les renouvellements en gros lots. Cela réduit les risques : Si Let's Encrypt connaît une panne au moment où vous devez renouveler votre certificat, ou s'il y a une défaillance temporaire de vos systèmes de renouvellement, cela ne touchera que quelques-uns de vos certificats, plutôt que la totalité d'entre eux. Cela facilite également la planification de nos ressources.
 
-Vous pouvez émettre des certificats en bloc pour tous vos domaines afin de commencer rapidement, ce qui n'est pas un problème. Vous pouvez ensuite étaler les délais de renouvellement en effectuant un processus unique de renouvellement de certains certificats un jour avant le moment où vous devriez normalement les renouveler, certains deux jours avant, etc.
+Vous pouvez émettre des certificats en bloc pour tous vos domaines afin de commencer rapidement, ce qui n'est pas un problème. Vous pouvez ensuite étaler les délais de renouvellement en effectuant un processus unique de renouvellement de certains certificats 1 jour avant le moment où vous devriez normalement les renouveler, certains 2 jours avant, etc.
 
-Si vous proposez un logiciel client qui configure automatiquement un travail périodique par lots, veillez à ce qu'il fonctionne à une seconde aléatoire dans la journée, plutôt que de toujours fonctionner à un moment précis. Cela permet d'éviter que Let's Encrypt ne reçoive des pics de trafic arbitraires à l'heure ou à la minute précise. Comme Let's Encrypt doit fournir la capacité nécessaire pour répondre aux pics de trafic, la réduction des pics de trafic peut contribuer à maintenir nos coûts à un niveau bas.
+Si vous proposez un logiciel client qui configure automatiquement un travail périodique par lots, veillez à ce qu'il fonctionne à une seconde aléatoire dans la journée, plutôt que de toujours fonctionner à un moment précis. Cela permet d'éviter que Let's Encrypt ne reçoive des pics de trafic arbitraires à l'heure ou à la minute précise. Puisque Let's Encrypt doit fournir la capacité nécessaire pour répondre aux pics de trafic, la réduction des pics de trafic peut contribuer à maintenir nos coûts à un niveau bas.
 
 # Répéter les échecs
 
