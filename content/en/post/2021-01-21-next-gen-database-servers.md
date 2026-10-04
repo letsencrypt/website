@@ -51,7 +51,7 @@ The previous generation of database hardware was powerful but it was regularly b
 <figcaption>Dell PowerEdge R7525 internals. The two silver rectangles in the middle are the CPUs. The RAM sticks, each 64GB, are above and below the CPUs. The 24x NVMe drives are in the front of the server, on the far left.</figcaption>
 </figure>
 
-By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping clock speeds high: 2.9GHz base with 3.4GHz boost. More importantly, EPYC provides 128 PCIe v4.0 lanes, which allows us to put 24 NVMe drives in a single machine. NVMe is incredibly fast (\~5.7x faster than the SATA SSDs in our previous-gen database servers) because it uses PCIe instead of SATA. However, PCIe lanes are typically very limited: modern consumer chips typically have only 16 lanes, and Intel’s Xeon chips have 48. By providing 128 PCI lanes per chip (v4.0, no less), AMD EPYC has made it possible to pack large numbers of NVMe drives into a single machine. We’ll talk more about NVMe later.
+By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping clock speeds high: 2.9GHz base with 3.4GHz boost. More importantly, EPYC provides 128 PCIe v4.0 lanes, which allows us to put 24 NVMe drives in a single machine. NVMe is incredibly fast (\~5.7x faster than the SATA SSDs in our previous-gen database servers) because it uses PCIe instead of SATA. However, PCIe lanes are typically very limited: modern consumer chips typically have only 16 lanes, and Intel’s Xeon chips have 48. By providing 128 PCIe lanes per chip (v4.0, no less), AMD EPYC has made it possible to pack large numbers of NVMe drives into a single machine. We’ll talk more about NVMe later.
 
 ## Performance Impact
 
@@ -79,7 +79,7 @@ Queries now average *three times faster*, about 0.15ms.
 
 NVMe drives are becoming increasingly popular because of their incredible performance. Up until recently, though, it was nearly impossible to get many of them in a single machine because NVMe uses PCIe lanes. Those were very limited: Intel’s Xeon processors come with just 48 PCIe v3 lanes, and a number of those are used up by the chipset and add-on cards such as network adapters and GPUs. You can’t fit many NVMe drives in the remaining lanes.
 
-AMD’s latest generation of EPYC processors come with 128 PCIe lanes - more than double what Intel offers - and they’re PCIe v4! This is enough to pack a 2U server full of NVMe drives (24 in our case).
+AMD’s latest generation of EPYC processors comes with 128 PCIe lanes - more than double what Intel offers - and they’re PCIe v4! This is enough to pack a 2U server full of NVMe drives (24 in our case).
 
 Once you have a server full of NVMe drives, you have to decide how to manage them. Our previous generation of database servers used hardware RAID in a RAID-10 configuration, but there is no effective hardware RAID for NVMe, so we needed another solution. One option was software RAID (Linux mdraid), but we got several recommendations for OpenZFS and decided to give it a shot. We’ve been very happy with it!
 
