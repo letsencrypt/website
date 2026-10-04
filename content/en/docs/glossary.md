@@ -89,7 +89,7 @@ Note for translators:
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is an *FQDN*. {{% /def %}}
 
-{{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
+{{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of the root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
 {{% def id="IDNA" name="Internationalized Domain Names for Applications" abbr="IDNA" %}} See [internationalized domain name](#def-IDN). {{% /def %}}
 

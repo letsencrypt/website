@@ -9,7 +9,7 @@ slug: acme-v2-api
 
 > **Update, April 27, 2018**
 > 
-> ACME v2 and wildcard support are fully available since March 13, 2018.
+> ACME v2 and wildcard support have been fully available since March 13, 2018.
 
 > **Update, January 4, 2018**
 > 

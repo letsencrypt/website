@@ -43,7 +43,7 @@ Our thanks to Akamai, Cisco, Mozilla, Google, OVHcloud, Internet Society, Shopif
 
 We know that finding sponsorship dollars is often anything but a straightforward path. That's why we approach sponsorship as an ongoing conversation, not a one-time transactional interaction. As a result, we're proud that each year we see on average 80% of our sponsors renew their support. From large organizations with thousands of staff to one-person shops, our sponsors come in all shapes and sizes---but all share a common goal of helping to make our work happen. 
 
-We are grateful to the 70 sponsors renewing their support for 2023 who combined provide close to 60% of our operating budget. Their continued support means we begin 2023 well on our way towards our fundraising need for the year. Shopify, a sponsor since 2015 has renewed their Gold sponsorship for 2023. Their Founder and CEO, Tobi Lütke, commented:
+We are grateful to the 70 sponsors renewing their support for 2023 who combined provide close to 60% of our operating budget. Their continued support means we begin 2023 well on our way towards our fundraising need for the year. Shopify, a sponsor since 2015, has renewed their Gold sponsorship for 2023. Their Founder and CEO, Tobi Lütke, commented:
 
 > "Let's Encrypt makes it easy for everyone to do the right thing to secure the Internet. We couldn't be happier to give our support to such a great effort."
 

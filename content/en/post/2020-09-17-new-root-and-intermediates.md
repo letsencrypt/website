@@ -80,7 +80,7 @@ Certificate from ISRG Root X2.
 
 ![Let's Encrypt's hierarchy as of September 2020](/images/2020-09-17-hierarchy-post-sept-2020.png "Let's Encrypt's hierarchy as of September 2020")
 
-Now that we have the technical details out of the way, let’s dive in to _why_
+Now that we have the technical details out of the way, let’s dive into _why_
 the new hierarchy looks the way it does.
 
 # Why We Issued an ECDSA Root and Intermediates

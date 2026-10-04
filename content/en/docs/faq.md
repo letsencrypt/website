@@ -44,7 +44,7 @@ Here's a [video we like](https://www.youtube.com/watch?v=Xe1TZaElTAs) about the 
 
 ## A website using Let's Encrypt is engaged in Phishing/Malware/Scam/..., what should I do?
 
-We recommend reporting such sites to Google Safe Browsing and the Microsoft Smart Screen program, which are able to more effectively protect users. Here are the reporting URLs:
+We recommend reporting such sites to Google Safe Browsing and the Microsoft SmartScreen program, which are able to more effectively protect users. Here are the reporting URLs:
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
