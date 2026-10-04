@@ -8,7 +8,7 @@ display_support_us_footer: true
 display_inline_newsletter_embed: false
 ---
 
-When the scripts that generate the data for [letsencrypt.org/stats](/stats) broke yet again, we decided to retire it rather than repair it. Let’s Encrypt issues six to ten million [certificates each day](/stats/), producing a large volume of logs that keeps growing. It became increasingly time-consuming and difficult to answer questions about our own issuance like “how many certificates use the ‘shortlived’ profile.” Using raw logs, this requires finding, parsing and extracting relevant portions of loglines. Querying the database behind our issuance API is not a practical option, as it’s built for transactions rather than analysis. We’d also used a log search SaaS product, but our bills were growing much faster than we’d like, and while it was fine for searching, it wasn’t able to do the analytic workloads we needed. We knew we could dream bigger and better.
+When the scripts that generate the data for [letsencrypt.org/stats](/stats) broke yet again, we decided to retire them rather than repair it. Let’s Encrypt issues six to ten million [certificates each day](/stats/), producing a large volume of logs that keeps growing. It became increasingly time-consuming and difficult to answer questions about our own issuance like “how many certificates use the ‘shortlived’ profile.” Using raw logs, this requires finding, parsing and extracting relevant portions of loglines. Querying the database behind our issuance API is not a practical option, as it’s built for transactions rather than analysis. We’d also used a log search SaaS product, but our bills were growing much faster than we’d like, and while it was fine for searching, it wasn’t able to do the analytic workloads we needed. We knew we could dream bigger and better.
 
 <figure class="cmp-BlogFigure">
 <img src="/images/blog/2026.09.17-clickhouse-daily-certificate-issuance.png" alt="Daily certificate issuance over the last 180 days">
@@ -21,7 +21,7 @@ The first step in building our new infrastructure was to purchase new hardware. 
 
 Logs are the bulk of our storage use and the foundation of our structured data, as every other table we build is derived from them. When it comes to log search, ClickHouse covers our basic needs with quick ingest and interactive SQL. However, there are query ergonomics that we want to improve, like using [OpenTelemetry](https://opentelemetry.io/docs/collector/)’s tracing features and ClickHouse’s tokenization settings.
 
-Our primary target for structured data are our issuance records. A materialized view extracts those records from logs into their own table, and further views pre-aggregate from there. One such view counts issuance by day per profile. Now, questions like “what is our issuance by [profile](/docs/profiles/) over the last 180 days” can be answered within milliseconds.
+Our primary target for structured data is our issuance records. A materialized view extracts those records from logs into their own table, and further views pre-aggregate from there. One such view counts issuance by day per profile. Now, questions like “what is our issuance by [profile](/docs/profiles/) over the last 180 days” can be answered within milliseconds.
 
 <figure class="cmp-BlogFigure">
 <img src="/images/blog/2026.09.17-clickhouse-issuance-by-profile.png" alt="Daily certificate issuance by profile over the last 180 days">
