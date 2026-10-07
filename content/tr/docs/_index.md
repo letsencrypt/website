@@ -1,5 +1,5 @@
 ---
-title: Dökümantasyon
+title: Dokümantasyon
 menu:
   main:
     weight: 10
