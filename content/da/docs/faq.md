@@ -44,7 +44,7 @@ Her er en [video, vi kan lide](https://www.youtube.com/watch?v=Xe1TZaElTAs) om s
 
 ## En hjemmeside der anvender Let's Encrypt er involveret i Phishing/Malware /?
 
-Vi anbefaler, at sådanne websteder rapporteres til Google Safe Browsing og Microsoft Smart Screen program, som er i stand til mere effektivt at beskytte brugerne. Her er de rapporterings webadresserne:
+Vi anbefaler, at sådanne websteder rapporteres til Google Safe Browsing og Microsoft SmartScreen program, som er i stand til mere effektivt at beskytte brugerne. Her er de rapporterings webadresserne:
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)

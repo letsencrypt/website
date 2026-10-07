@@ -7,12 +7,12 @@ show_lastmod: 1
 
 
 <p>
-  <a href="https://certificate.transparency.dev/">证书透明化 (CT)</a> 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。 因此，CT 正迅速成为关键基础设施。
+  <a href="https://certificate.transparency.dev/">证书透明化 (CT)</a> 是一套记录并监控 TLS 证书颁发流程的系统。 CT 使普通人观察、研究证书颁发过程的能力大幅增强，有力地促进了 CA 生态系统和网络安全的发展。因此，CT 正迅速成为关键基础设施。
 </p>
 
 <p>
-  Let's Encrypt 签发的所有证书都会录入 CT 日志。 同时我们也运作着若干 CT 日志系统，
-  欢迎所有可信的证书颁发机构将证书提交至我们的日志。 我们的CT日志中已包含许多证书颁发机构的根证书。 如果您所经营的证书颁发机构不在我们的可信颁发者列表中，请在<a href="https://github.com/letsencrypt/ct-log-metadata">此处</a>发起 Issue。
+  Let's Encrypt 签发的所有证书都会录入 CT 日志。同时我们也运作着若干 CT 日志系统，
+  欢迎所有可信的证书颁发机构将证书提交至我们的日志。我们的CT日志中已包含许多证书颁发机构的根证书。如果您所经营的证书颁发机构不在我们的可信颁发者列表中，请在<a href="https://github.com/letsencrypt/ct-log-metadata">此处</a>发起 Issue。
 </p>
 
 <p>
@@ -61,7 +61,7 @@ CT 日志在其生命期内所经历的各种状态可在<a href="https://google
 
 <h2 id="log-operations">日志操作</h2>
 <p>
-  以下示例使用的是 Sycamore 2026h2 分片。 我们的日志按时间分片，每一片区只包含到期时间落在对应范围内的证书，因此需要先在日志系统首页找到待查询证书所在的分片。
+  以下示例使用的是 Sycamore 2026h2 分片。我们的日志按时间分片，每一片区只包含到期时间落在对应范围内的证书，因此需要先在日志系统首页找到待查询证书所在的分片。
 </p>
 <p>
   如需查看某一 CT 日志系统包含的所有根证书，可以在任意 UNIX 命令行中执行以下命令：
@@ -73,7 +73,7 @@ done
 </pre>
 
 <p>
-  将证书提交至 CT 日志的操作通常由证书颁发机构完成。 如果您想尝试自行提交，可以先获取任一网站的 PEM 格式证书， 例如执行下列命令：
+  将证书提交至 CT 日志的操作通常由证书颁发机构完成。如果您想尝试自行提交，可以先获取任一网站的 PEM 格式证书，例如执行下列命令：
 </p>
 <pre>
 $ echo | \
@@ -85,10 +85,10 @@ sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' &gt; example.crt
 </pre>
 
 <p>
-  证书需要以特定的 JSON 格式提交， 您可以使用 <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> 提供的 JSON 生成器完成格式转换。 该页面会生成一份 JSON 文件， 您需要下载并按需重新命名此文件，然后通过以下命令执行证书链添加操作（参见 <a
+  证书需要以特定的 JSON 格式提交，您可以使用 <a href="https://crt.sh/gen-add-chain">https://crt.sh/gen-add-chain</a> 提供的 JSON 生成器完成格式转换。该页面会生成一份 JSON 文件，您需要下载并按需重新命名此文件，然后通过以下命令执行证书链添加操作（参见 <a
     href="https://tools.ietf.org/html/rfc6962#section-4.1"
     >RFC 6962 的 4.1 节</a
->），将证书提交至 CT 日志系统。 我们的静态 CT 日志接口格式与 RFC 6962 一致。 该命令的输出中有一段数字签名，其内容实际上就是 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>。 下文将进一步介绍这一数字签名。
+>），将证书提交至 CT 日志系统。我们的静态 CT 日志接口格式与 RFC 6962 一致。该命令的输出中有一段数字签名，其内容实际上就是 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html">SCT</a>。下文将进一步介绍这一数字签名。
 </p>
 <pre>
 $ curl \
@@ -110,7 +110,7 @@ $ base64 -d &lt;&lt;&lt; "bP5QGUOoXqkWvFLRM+TcyR7xQRx9JYQg0XOAnhgY6zo=" | xxd -p
 </pre>
 
 <p>
-  数字签名字段可用于验证证书是否已提交至日志系统。 您可以阅读我们的英文博客 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
+  数字签名字段可用于验证证书是否已提交至日志系统。您可以阅读我们的英文博客 <a href="https://letsencrypt.org/2018/04/04/sct-encoding.html"
     >SCT deep dive guide</a
 > 了解如何进一步解码其内容。
 </p>

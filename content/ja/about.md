@@ -9,9 +9,9 @@ menu:
     parent: about
 ---
 
-Let's Encrypt は、公共の利益のために運営されている、フリーで自動化されたオープンな認証局 (certificate authority; CA) です。 [インターネット・セキュリティ・研究グループ (Internet Security Research Group; ISRG)](https://www.abetterinternet.org/) がサービスを提供しています。
+Let's Encrypt は、公共の利益のために運営されている、フリーで自動化されたオープンな認証局 (certificate authority; CA) です。[インターネット・セキュリティ・研究グループ (Internet Security Research Group; ISRG)](https://www.abetterinternet.org/) がサービスを提供しています。
 
-私たちは人々のために、ウェブサイトで HTTPS (SSL/TLS) を有効にするために必要なデジタル証明書を、無料で、私たちにできる最もユーザーフレンドリーな方法で発行しています。 私たちがこのようなことをする理由は、よりセキュアでプライバシーを尊重するウェブを作りたいと願っているからです。
+私たちは人々のために、ウェブサイトで HTTPS (SSL/TLS) を有効にするために必要なデジタル証明書を、無料で、私たちにできる最もユーザーフレンドリーな方法で発行しています。私たちがこのようなことをする理由は、よりセキュアでプライバシーを尊重するウェブを作りたいと願っているからです。
 
 Let's Encrypt の最新のレビューについては、[年次レポート](https://www.abetterinternet.org/annual-reports/)を読んでください。
 

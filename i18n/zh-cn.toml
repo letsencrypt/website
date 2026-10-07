@@ -611,7 +611,7 @@ other = "您也可以通过{{ .givingBlockLink }}更加便捷地捐赠股权，�
 other = "捐赠加密货币"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "我们也支持通过{{ .givingBlockLink }}接收加密货币，但这种交易方式会产生手续费，因此请考虑补齐差额，以确保您的善款能够最大程度发挥效力。"
+other = "我们也接受大部分类型的加密货币。您可以通过{{ .givingBlockLink }}捐赠加密货币，但这种交易方式会产生手续费，因此请考虑补齐差额，以确保您的善款能够最大程度发挥效力。"
 
 [donate_2026_donor_advised_funds_title]
 other = "捐赠人建议基金 (DAF)"
