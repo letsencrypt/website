@@ -6,4 +6,4 @@ english_is_canonical: 1
 show_lastmod: 1
 ---
 
-我们的商标政策已移至另一页面， 请查阅：[https://www.abetterinternet.org/trademarks](https://www.abetterinternet.org/trademarks)
+我们的商标政策已移至另一页面，请查阅：[https://www.abetterinternet.org/trademarks](https://www.abetterinternet.org/trademarks)

@@ -1,7 +1,7 @@
 ---
 title: Ordlista
 slug: glossary
-lastmod: 2026-09-08
+lastmod: 2026-10-04
 show_lastmod: 1
 description: "En ordlista med termer relaterade till SSL/TLS-certifikat, HTTPS och webbsäkerhet som används av Let's Encrypt."
 ---

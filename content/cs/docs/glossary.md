@@ -1,7 +1,7 @@
 ---
 title: Slovník pojmů
 slug: glossary
-lastmod: 2026-09-08
+lastmod: 2026-10-04
 show_lastmod: 1
 description: "Slovník pojmů souvisejících s certifikáty SSL/TLS, protokolem HTTPS a zabezpečením webu, které používá Let's Encrypt."
 ---

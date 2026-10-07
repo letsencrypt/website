@@ -44,7 +44,7 @@ Let's Encrypt — небольшая компания, мы полагаемся
 
 ## Сайт с сертификатом Let's Encrypt используется для фишинга/вредоносного ПО/мошенничества/..., что мне делать?
 
-Мы рекомендуем сообщить об этом в Google Safe Browsing и Microsoft Smart Screen, которые способны эффективно защищать пользователей Интернета. URL-адреса для отчетов:
+Мы рекомендуем сообщить об этом в Google Safe Browsing и Microsoft SmartScreen, которые способны эффективно защищать пользователей Интернета. URL-адреса для отчетов:
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)

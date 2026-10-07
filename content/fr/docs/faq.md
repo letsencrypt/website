@@ -44,7 +44,7 @@ Voici une [vidéo que nous aimons](https://www.youtube.com/watch?v=Xe1TZaElTAs) 
 
 ## Un site web utilisant Let's Encrypt se livre à des activités d'hameçonnage/de malveillance/d'escroquerie/... que dois-je faire ?
 
-Nous recommandons de signaler ces sites à Google Safe Browsing et au programme Microsoft Smart Screen, qui sont en mesure de protéger plus efficacement les utilisateurs. Voici les URL de rapport :
+Nous recommandons de signaler ces sites à Google Safe Browsing et au programme Microsoft SmartScreen, qui sont en mesure de protéger plus efficacement les utilisateurs. Voici les URL de rapport :
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)

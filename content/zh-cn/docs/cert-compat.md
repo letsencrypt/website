@@ -6,9 +6,9 @@ show_lastmod: 1
 ---
 
 
-一个平台能否验证 Let's Encrypt 颁发的证书，关键在于该平台是否信任 ISRG 的 ISRG Root X1 或 ISRG Root X2 根证书。 这两份根证书在多年前（ISRG Root X1 于 2016 年末，ISRG Root X2 于 2022 年中）就已收录至各平台的证书库中，但用户普遍完成版本更新则可能需要更长的时间。 目前 ISRG Root X1 已经得到了广泛信任，但 ISRG Root X2 仍待普及。
+一个平台能否验证 Let's Encrypt 颁发的证书，关键在于该平台是否信任 ISRG 的 ISRG Root X1 或 ISRG Root X2 根证书。这两份根证书在多年前（ISRG Root X1 于 2016 年末，ISRG Root X2 于 2022 年中）就已收录至各平台的证书库中，但用户普遍完成版本更新则可能需要更长的时间。目前 ISRG Root X1 已经得到了广泛信任，但 ISRG Root X2 仍待普及。
 
-如果您的证书只能在部分已知的兼容平台上通过验证，原因可能是网站服务器配置不当。 如果您在较新的系统中遇到问题，最常见的原因是网站没有提供正确的证书链。 您可以使用 [SSL Labs 的服务器测试](https://www.ssllabs.com/ssltest/)来测试您站点的兼容性。 如果通过这项测试仍不能确定原因，可以在我们的[社群论坛](https://community.letsencrypt.org/)中寻求帮助。
+如果您的证书只能在部分已知的兼容平台上通过验证，原因可能是网站服务器配置不当。如果您在较新的系统中遇到问题，最常见的原因是网站没有提供正确的证书链。您可以使用 [SSL Labs 的服务器测试](https://www.ssllabs.com/ssltest/)来测试您站点的兼容性。如果通过这项测试仍不能确定原因，可以在我们的[社群论坛](https://community.letsencrypt.org/)中寻求帮助。
 
 如果您的平台尚未在下方列出，欢迎提交 [Pull Request](https://github.com/letsencrypt/website/blob/main/content/en/docs/cert-compat.md) 予以补充，同时请引用官方文档注明该平台收录各根证书的时间。
 
