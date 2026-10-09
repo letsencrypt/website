@@ -34,7 +34,8 @@
       "url": "https://www.eff.org/",
       "image": "eff-logo.png"
     },
-    { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" }
+    { "name": "OVH", "url": "https://www.ovh.com/", "image": "ovh-logo.png" },
+    { "name": "Meta", "url": "https://www.meta.com/", "image": "meta-logo.svg" }
   ],
   "gold": [
     {
