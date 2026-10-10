@@ -1,7 +1,7 @@
 ---
 title: Rate Limits
 slug: rate-limits
-lastmod: 2026-09-05
+lastmod: 2026-10-10
 show_lastmod: true
 ---
 
@@ -112,7 +112,7 @@ registered domain.
 
 You can get a list of certificates issued for your registered domain by
 searching [crt.sh](https://crt.sh/), [Censys](https://search.censys.io/#),
-or [CertObserver CT search](https://certobserver.com/ct-search),
+or [CertObserver CT search](https://certobserver.com/ct-search?group=san-issuer-organization&sort=recently-logged),
 which use the public [Certificate
 Transparency](https://www.certificate-transparency.org/) logs.
 
