@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './syntax-highlighting.css';
 @source "../notwatching/hugo_stats.json";
 
 @theme {
@@ -568,6 +569,10 @@
   pre code {
     border: 0;
     @apply px-0;
+  }
+
+  .highlight pre code {
+    background: transparent;
   }
 
   a code {

@@ -1,7 +1,7 @@
 ---
 title: ACME-protokollapäivitykset
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 Tällä hetkellä meillä on seuraavat API-päätepisteet. Katso [poikkeavuuksia koskeva dokumentaatiomme](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), jotta voit verrata niiden toteutusta ACME-spesifikaatioihin.
 
-## ACME versio 2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME versio 1 (poistettu käytöstä)
-
-* [Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # Uudet taaksepäin yhteensopivat ACME-ominaisuudet
 

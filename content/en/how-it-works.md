@@ -58,7 +58,7 @@ Renewing a certificate at a later time means repeating the issuance process over
 
 ### Revocation
 
-Revocation works in a similar manner. The client signs a revocation request with the account key pair authorized for `example.com`, and the Let's Encrypt CA verifies that the request is authorized. If so, it publishes revocation information via [Certificate Revocation List](https://en.wikipedia.org/wiki/Certificate_revocation_list) (CRL), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
+Revocation works in a similar manner. The client signs a revocation request with the account key pair authorized for `example.com`, and the Let's Encrypt CA verifies that the request is authorized. If so, it publishes revocation information via a [Certificate Revocation List](https://en.wikipedia.org/wiki/Certificate_revocation_list) (CRL), so that relying parties such as browsers can know that they shouldn't accept the revoked certificate.
 
 <div class="howitworks-figure">
 <img alt="Requesting revocation of a certificate for example.com"

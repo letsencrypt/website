@@ -626,7 +626,7 @@ other = "You can also donate stock in a couple clicks via {{ .givingBlockLink }}
 other = "Donate cryptocurrency"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "We are able to accept most cryptocurrency by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
+other = "We are able to accept most cryptocurrencies. You can donate by visiting {{ .givingBlockLink }}. We do incur processing fees through these transactions, so please consider covering the fees to help ensure your gift has the greatest impact."
 
 [donate_2026_donor_advised_funds_title]
 other = "Donor Advised Funds (DAFs)"

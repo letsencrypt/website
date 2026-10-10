@@ -1,7 +1,7 @@
 ---
-title: Certificate Authority Authorization (CAA)
+title: Certification Authority Authorization (CAA)
 slug: caa
-lastmod: 2023-08-16
+lastmod: 2026-10-04
 show_lastmod: 1
 ---
 

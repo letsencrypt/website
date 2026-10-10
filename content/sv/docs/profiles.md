@@ -1,7 +1,7 @@
 ---
 title: Profiler
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-10-04
 show_lastmod: false
 ---
 
@@ -32,7 +32,7 @@ Den klassiska profilen är standardprofilen som väljs för alla beställningar 
 | [Max Names](#max-names)                                           | 100                                       |
 | [Identifier Types](#identifier-types)                             | DNS                                       |
 
-<sup id="footnote-1"> \* </sup>: Om CSR som skickas vid slutförandet efterfrågar ett specifikt Common Name som motsvarar ett dNSName Subject Alternative Name, beaktas den begäran. Om CSR inte begär ett specifikt Common Name kommer det första dNSName Subject Alternative Name som begärs att flyttas upp till Subject Common Name. Om antingen det begärda namnet eller det namn som ska flyttas upp är för långt för att passa i Common Name-fältet (64+ tecken) kommer Common Name att lämnas tomt.
+<sup id="footnote-1"> \* </sup>: Om CSR som skickas vid slutförandet efterfrågar ett specifikt Common Name som motsvarar ett dNSName Subject Alternative Name, beaktas den begäran. Om CSR inte begär ett specifikt Common Name kommer det första dNSName Subject Alternative Name som begärs att flyttas upp till Subject Common Name. Fältet Common Name får innehålla högst 64 tecken. Om Common Name skulle innehålla 65 tecken eller fler lämnas fältet tomt.
 
 <sup id="footnote-2"> † </sup>: Endast inkluderat för certifikat med RSA-offentliga nycklar.
 

@@ -1,7 +1,7 @@
 ---
 title: Profiles
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-10-04
 show_lastmod: false
 ---
 
@@ -32,7 +32,7 @@ The classic profile is the default profile selected for all orders which do not 
 | [Max Names](#max-names)                                              | 100                                       |
 | [Identifier Types](#identifier-types)                                | DNS                                       |
 
-<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. If either the requested name or the to-be-promoted name is too long to fit in the Common Name field (64+ characters), the Common Name will be left empty.
+<sup id="footnote-1">\*</sup>: If the CSR submitted at finalize time requests a specific Common Name that corresponds to a dNSName Subject Alternative Name, that request is honored. If the CSR does not request a specific Common Name, the first dNSName Subject Alternative Name requested will be promoted into the Subject Common Name. The length limit on the Common Name field is 64 characters. If the Common Name would be 65 or more characters, it will be left empty.
 
 <sup id="footnote-2">†</sup>: Only included for certificates with RSA public keys.
 
@@ -43,7 +43,7 @@ The classic profile is the default profile selected for all orders which do not 
 
 The tlsserver profile is a new profile which updates several of these validation and certificate properties in order to reflect the latest recommendations from the CA/Browser Forum Baseline Requirements, as well as general trends within the WebPKI community. We recommend selecting this profile for subscribers who want smaller certificates and who fully embrace automation.
 
-The pending authorization lifetime has been reduced to further encourage automation: fully automated systems can complete a validation challenge within seconds, so a lifetime of just one hour is more than enough. The authorization reuse period has been reduced to seven hours. This is because the Baseline Requirements require that we re-check Certificate Authority Authorization (CAA) after eight hours, so limiting the reuse period means that we don't have to perform rechecks. The order lifetime has been reduced to the sum of two authorization lifetimes, because there is little purpose to having an order that outlives the authorizations it depends on.
+The pending authorization lifetime has been reduced to further encourage automation: fully automated systems can complete a validation challenge within seconds, so a lifetime of just one hour is more than enough. The authorization reuse period has been reduced to seven hours. This is because the Baseline Requirements require that we re-check Certification Authority Authorization (CAA) after eight hours, so limiting the reuse period means that we don't have to perform rechecks. The order lifetime has been reduced to the sum of two authorization lifetimes, because there is little purpose to having an order that outlives the authorizations it depends on.
 
 The issued certificate omits the Common Name, as it is redundant with the Subject Alternative Names and is marked as NOT RECOMMENDED by the Baseline Requirements. The Key Encipherment key usage is omitted because it is only relevant when using non-forward-secret TLS cipher suites, which have been removed by all major browsers due to the importance of forward-secrecy. The Subject Key ID extension is omitted because it serves no purpose in end-entity certificates and is NOT RECOMMENDED by the Baseline Requirements. And finally the resulting certificate is valid for only 45 days, in preparation for upcoming restrictions that will limit all certificates to at most 47 days.
 

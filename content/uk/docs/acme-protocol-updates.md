@@ -1,7 +1,7 @@
 ---
 title: Оновлення протоколу ACME
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ show_lastmod: 1
 
 Поки що ми підтримуємо такі межі ППІ. Перегляньте [нашу документацію розбіжностей](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md), щоб порівняти їхнє впровадження зі специфікацією середовища автоматичного управління сертифікатами.
 
-## ACME v2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (нерекомендований)
-
-* [Production] `https://acme-v01.api.letsencrypt.org/directory`
-* [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # Нові зворотно сумісні функції ACME
 

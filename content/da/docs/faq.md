@@ -44,7 +44,7 @@ Her er en [video, vi kan lide](https://www.youtube.com/watch?v=Xe1TZaElTAs) om s
 
 ## En hjemmeside der anvender Let's Encrypt er involveret i Phishing/Malware /?
 
-Vi anbefaler, at sådanne websteder rapporteres til Google Safe Browsing og Microsoft Smart Screen program, som er i stand til mere effektivt at beskytte brugerne. Her er de rapporterings webadresserne:
+Vi anbefaler, at sådanne websteder rapporteres til Google Safe Browsing og Microsoft SmartScreen program, som er i stand til mere effektivt at beskytte brugerne. Her er de rapporterings webadresserne:
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
@@ -117,6 +117,6 @@ Vi beder om, at [ACME-klienter udfører rutinemæssige fornyelser på tilfældig
 
 ## Hvor kan jeg lære mere om TLS/SSL og PKI generelt?
 
-Mangeårige sikkerhedsekspert og praktiker, Ivan Risticţ, offentliggjorde en konfigurationsguide, der giver nyttige oplysninger om, hvad du bør overveje, mens du <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">opsætter din TLS-konfiguration</a>.
+Mangeårige sikkerhedsekspert og praktiker, Ivan Risticţ, offentliggjorde en konfigurationsguide, der giver nyttige oplysninger om, hvad du bør overveje, mens du <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">opsætter din TLS-konfiguration</a>.
 
-For mere omfattende baggrund og flere detaljer, anbefaler vi <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS og PKI</a>, også skrevet af Risticţ.
+For mere omfattende baggrund og flere detaljer, anbefaler vi <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS og PKI</a>, også skrevet af Ristić.

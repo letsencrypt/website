@@ -6,7 +6,7 @@ lastmod: 2025-01-22
 
 {{< clientslastmod >}}
 
-Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您颁发证书。 要获得 Let's Encrypt 证书，您需要选择一个要使用的 ACME 客户端软件。
+Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您颁发证书。要获得 Let's Encrypt 证书，您需要选择一个要使用的 ACME 客户端软件。
 
 下列 ACME 客户端由第三方提供。 Let's Encrypt 不控制或审查第三方客户端，也不能保证其安全性或可靠性。
 
@@ -14,13 +14,13 @@ Let's Encrypt 使用 ACME 协议来验证您对给定域名的控制权并向您
 
 # 推荐客户端：Certbot
 
-我们建议大多数人从 [Certbot](https://certbot.eff.org/) 客户端开始。 它既可以只为您获取证书，也可以帮助您获取并安装证书。 它易于使用，适用于许多操作系统，并且具有出色的文档。
+我们建议大多数人从 [Certbot](https://certbot.eff.org/) 客户端开始。它既可以只为您获取证书，也可以帮助您获取并安装证书。它易于使用，适用于许多操作系统，并且具有出色的文档。
 
 如果 Certbot 不能满足您的需求，或者您只是想尝试其他软件，那么下面有更多的客户端可供选择，这些客户端按照编写所用的语言或是使用环境排序。
 
 # 其他客户端
 
-下列客户端均支持 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  2021 年 6 月起我们已[彻底废除 ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27)。 如果您使用的客户端在该列表中，请确保您将其升级到最新版本。  如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
+下列客户端均支持 ACMEv2 API ([RFC 8555](https://tools.ietf.org/html/rfc8555))。  2021 年 6 月起我们已[彻底废除 ACMEv1](https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/27)。如果您使用的客户端在该列表中，请确保您将其升级到最新版本。如果下面没有列出您正在使用的客户端，则该客户端有几率不支持ACMEv2 API，请与项目维护者联系或更换其他客户端。
 
 {{< clients libraries="库" projects="集成了 Let’s Encrypt 的项目" >}}
 
@@ -40,4 +40,4 @@ Python 模块[acme](https://github.com/certbot/certbot/tree/main/acme) 是 Certb
 1. 您在修改代码时将该客户端添加至相关列表的**末尾**。
 1. 您的提交更新了 `clients.json` 顶部的 `lastmod` 日期戳。
 
-我们可能会定期移除停止维护的客户端或项目。 如果将来开发进程恢复，欢迎再次发起 Pull Request 重新将该项目加入列表中。
+我们可能会定期移除停止维护的客户端或项目。如果将来开发进程恢复，欢迎再次发起 Pull Request 重新将该项目加入列表中。

@@ -1,7 +1,7 @@
 ---
 title: Aggiornamenti del protocollo ACME
 slug: acme-protocol-updates
-lastmod: 2019-10-07
+lastmod: 2026-09-03
 show_lastmod: 1
 ---
 
@@ -12,15 +12,8 @@ Il protocollo [IETF-standardizzato](https://letsencrypt.org/2019/03/11/acme-prot
 
 Al momento abbiamo i seguenti endpoint API. Si prega di consultare [la nostra documentazione sulle divergenze](https://github.com/letsencrypt/boulder/blob/main/docs/acme-divergences.md) per confrontare la loro implementazione con la specifica ACME.
 
-## ACME v2 (RFC 8555)
-
 * [Production] `https://acme-v02.api.letsencrypt.org/directory`
 * [Staging] `https://acme-staging-v02.api.letsencrypt.org/directory`
-
-## ACME v1 (Deprecato)
-
-* [Production]`https://acme-v01.api.letsencrypt.org/directory`
-* [Staging] `https://acme-staging.api.letsencrypt.org/directory`
 
 # Nuove funzionalità ACME retrocompatibili
 

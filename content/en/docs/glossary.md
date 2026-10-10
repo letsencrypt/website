@@ -1,7 +1,7 @@
 ---
 title: Glossary
 slug: glossary
-lastmod: 2026-09-04
+lastmod: 2026-10-04
 show_lastmod: 1
 description: "A glossary of terms related to SSL/TLS certificates, HTTPS, and web security used by Let's Encrypt."
 ---
@@ -37,7 +37,7 @@ Note for translators:
 
 {{% def id="BRs" name="Baseline Requirements" abbr="BRs" %}} A set of technical and policy requirements for CAs. Since all major [root programs](#def-root-program) incorporate the Baseline Requirements, CAs must follow these requirements to be trusted by most browsers. {{% /def %}}
 
-{{% def id="CAA" name="Certificate Authority Authorization" abbr="CAA" abbr_first="1" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificates for the corresponding domain name. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](/docs/caa) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
+{{% def id="CAA" name="Certification Authority Authorization" abbr="CAA" abbr_first="1" %}} A DNS record that specifies which [CAs](#def-CA) are allowed to issue certificates for the corresponding domain name. CAA records are checked by CAs, not by browsers. [Let's Encrypt](#def-LE) [honors CAA records](/docs/caa) as required by the [Baseline Requirements](#def-BRs). - [Wikipedia](https://en.wikipedia.org/wiki/DNS_Certification_Authority_Authorization) {{% /def %}}
 
 {{% def id="CNAME" name="Canonical Name record" abbr="CNAME" %}} A DNS entry which maps one domain name to another, referred to as the Canonical Name. [Wikipedia](https://en.wikipedia.org/wiki/CNAME_record) {{% /def %}}
 
@@ -71,7 +71,7 @@ Note for translators:
 
 {{% def id="CT-log" name="Certificate Transparency Log" %}} A component of [Certificate Transparency](#def-CT) that accepts submissions of certificates and [precertificates](#def-precertificate) and incorporates them into a permanent, verifiable, publicly-accessible list. {{% /def %}}
 
-{{% def id="CN" name="Common Name" abbr="CN" %}} Part of a certificate's [Subject](#def-subject) describing what the certificate is about. For [roots](#def-root) and [intermediates](#def-intermediate) it's the human-readable name of the [certificate authority](#def-CA). For [leaf certificates](#def-leaf) it's one of the domain names on the certificate. Note: The common name is limited to 63 characters. It is an obsolete method of indicating a domain name to which the certificate applies, since current Internet standards expect software to check only the [Subject Alternative Names](#def-SAN) in order to determine the applicability of a certificate. {{% /def %}}
+{{% def id="CN" name="Common Name" abbr="CN" %}} Part of a certificate's [Subject](#def-subject) describing what the certificate is about. For [roots](#def-root) and [intermediates](#def-intermediate) it's the human-readable name of the [certificate authority](#def-CA). For [leaf certificates](#def-leaf) it's one of the domain names on the certificate. Note: The common name is limited to 64 characters. It is an obsolete method of indicating a domain name to which the certificate applies, since current Internet standards expect software to check only the [Subject Alternative Names](#def-SAN) in order to determine the applicability of a certificate. {{% /def %}}
 
 {{% def id="cross-signing" name="Cross Signing" %}} An issuing certificate may be signed by more than one [root](#def-root), possibly from different CAs. When one CA signs another CA's certificate, it's called cross-signing. {{% /def %}}
 
@@ -89,7 +89,7 @@ Note for translators:
 
 {{% def id="FQDN" name="Fully qualified domain name" abbr="FQDN" %}} The complete domain name of a website. For example, `www.example.com` is an *FQDN*. {{% /def %}}
 
-{{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
+{{% def id="intermediate" name="Intermediate certificate" %}} A certificate signed by a [root](#def-root) or another intermediate, and capable of signing other certificates. They are used to sign leaf certificates while keeping the private key of the root certificate offline. Intermediates are included in [certificate chains](#def-chain). [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Types_of_certificate) {{% /def %}}
 
 {{% def id="IDNA" name="Internationalized Domain Names for Applications" abbr="IDNA" %}} See [internationalized domain name](#def-IDN). {{% /def %}}
 

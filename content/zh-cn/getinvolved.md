@@ -11,7 +11,7 @@ show_lastmod: 1
 
 ## 社区支持
 
-您可以帮助我们在[Let’s Encrypt 社区论坛](https://community.letsencrypt.org/)中回答问题。 参见[此博客文章](/2015/08/13/lets-encrypt-community-support.html)以了解社区支持为何如此重要。
+您可以帮助我们在[Let’s Encrypt 社区论坛](https://community.letsencrypt.org/)中回答问题。参见[此博客文章](/2015/08/13/lets-encrypt-community-support.html)以了解社区支持为何如此重要。
 
 ## ACME 客户端软件
 
@@ -23,4 +23,4 @@ show_lastmod: 1
 
 ## 服务器端证书签发软件
 
-我们的服务器端证书签发软件 [Boulder](https://github.com/letsencrypt/boulder) 是开源的， 该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议，主要使用 Go 语言编写。 [标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)都是一个很好的起点。
+我们的服务器端证书签发软件 [Boulder](https://github.com/letsencrypt/boulder) 是开源的，该软件基于 [ACME](https://tools.ietf.org/html/rfc8555) 协议，主要使用 Go 语言编写。[标注为“help wanted”的 issue 列表](https://github.com/letsencrypt/boulder/labels/help%20wanted)和[贡献者指南](https://github.com/letsencrypt/boulder/blob/main/docs/CONTRIBUTING.md)都是一个很好的起点。

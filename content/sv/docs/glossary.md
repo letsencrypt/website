@@ -1,7 +1,7 @@
 ---
 title: Ordlista
 slug: glossary
-lastmod: 2026-07-04
+lastmod: 2026-10-04
 show_lastmod: 1
 description: "En ordlista med termer relaterade till SSL/TLS-certifikat, HTTPS och webbsäkerhet som används av Let's Encrypt."
 ---
@@ -71,7 +71,7 @@ Note for translators:
 
 {{% def id="CT-log" name="Certificate Transparency-logg" %}} En komponent av [Certificate Transparency](#def-CT) som accepterar inlämning av certifikat och [förcertifikat](#def-precertificate) och införlivar dem i en permanent, verifierbar, offentligt tillgänglig lista. {{% /def %}}
 
-{{% def id="CN" name="Common Name" abbr="CN" %}} Del av ett certifikats [Subject](#def-subject) som beskriver vad certifikatet handlar om. För [rötter](#def-root) och [mellanliggande](#def-intermediate) är det det människoläsbara namnet på [certifikatutfärdaren](#def-CA). För [lövcertifikat](#def-leaf) är det ett av domännamnen på certifikatet. Observera: det vanliga namnet är begränsat till 63 tecken. Det är en föråldrad metod för att ange ett domännamn som certifikatet gäller för, eftersom nuvarande internetstandarder förväntar sig att programvara endast kontrollerar [Subject Alternative Names](#def-SAN) för att avgöra certifikatets giltighet. {{% /def %}}
+{{% def id="CN" name="Common Name" abbr="CN" %}} Del av ett certifikats [Subject](#def-subject) som beskriver vad certifikatet handlar om. För [rötter](#def-root) och [mellanliggande](#def-intermediate) är det det människoläsbara namnet på [certifikatutfärdaren](#def-CA). För [lövcertifikat](#def-leaf) är det ett av domännamnen på certifikatet. Obs! Fältet Common Name är begränsat till 64 tecken. Det är en föråldrad metod för att ange ett domännamn som certifikatet gäller för, eftersom nuvarande internetstandarder förväntar sig att programvara endast kontrollerar [Subject Alternative Names](#def-SAN) för att avgöra certifikatets giltighet. {{% /def %}}
 
 {{% def id="cross-signing" name="Korssignering" %}} Ett utfärdande certifikat kan undertecknas av mer än en [root-](#def-root), möjligen från olika CA:er. När en CA undertecknar en annan CA:s certifikat kallas det korssignering. {{% /def %}}
 
@@ -113,7 +113,7 @@ Note for translators:
 
 {{% def id="OCSP-stapling" name="OCSP-häftning" %}} Ett sätt för en [webbserver](#def-web-server) att skicka en [webbläsare](#def-web-browser) ett [OCSP](#def-OCSP)-svar signerat av [-certifikatutfärdaren](#def-CA), så att webbläsaren själv inte behöver göra en sekundär OCSP-förfrågan till CA, vilket förbättrar hastighet och integritet. Även känt som tillägget TLS Certificate Status Request. Observera att [Let's Encrypt](#def-LE) inte stöder OCSP. [Wikipedia](https://en.wikipedia.org/wiki/OCSP_stapling) [Cloudflare](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) {{% /def %}}
 
-{{% def id="OID" name="Objektidentifierare" abbr="OID" %}} OID:er är unika numeriska identifierare som standardiserats av Internationella teleunionen (ITU) och ISO/IEC. OIDs används inom certifikat för att definiera tillägg, fält eller policypåståenden. Dokument om internetstandarder, [certifikatpolicyer](#def-CP) och [utfärdandepraxis](#def-CPS) definierar hur OID:er används. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
+{{% def id="OID" name="Object identifier" abbr="OID" %}} OID:er är unika numeriska identifierare som standardiserats av Internationella teleunionen (ITU) och ISO/IEC. OIDs används inom certifikat för att definiera tillägg, fält eller policypåståenden. Dokument om internetstandarder, [certifikatpolicyer](#def-CP) och [utfärdandepraxis](#def-CPS) definierar hur OID:er används. [Wikipedia](https://en.wikipedia.org/wiki/Object_identifier) {{% /def %}}
 
 {{% def id="OV" name="Organisationsvalidering" abbr="OV" %}} Certifikat för vilka [CA](#def-CA) har verifierat den juridiska personen för [Prenumeranten](#def-subscriber). De innehåller information om den enheten. [Let's Encrypt](#def-LE) erbjuder inte OV-certifikat. [Wikipedia](https://en.wikipedia.org/wiki/Public_key_certificate#Organization_validation) {{% /def %}}
 
@@ -141,7 +141,7 @@ Note for translators:
 
 {{% def id="self-signed" name="Självsignerat certifikat" %}} Ett certifikat som är signerat med sin egen privata nyckel, med dess [Subject](#def-subject) lika med dess [Issuer](#def-issuer). Självsignerade certifikat litas endast på på grund av tidigare arrangemang som gjorts i den fysiska världen, såsom inklusion på en [betrodd rotlista](#def-store). [Rotcertifikat](#def-root) är självsignerade. [Wikipedia](https://en.wikipedia.org/wiki/Self-signed_certificate) {{% /def %}}
 
-{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} Ett fält som en [användaragents](#def-user-agent) skickar till en [server](#def-web-server) under en [TLS](#def-TLS)-handshake, som specificerar domännamnet att ansluta till. Detta gör det möjligt för servern att svara med det lämpliga [certifikatet](#def-leaf) när flera domäner är hostade bakom samma IP. Webbservern kan skicka ett annat certifikat och visa annat innehåll beroende på namnet som klienten begärde via SNI. SNI är inte krypterat, men en experimentell ersättning, ESNI, är det. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
+{{% def id="SNI" name="Server Name Indication" abbr="SNI" %}} Ett fält som en [användaragents](#def-user-agent) skickar till en [server](#def-web-server) under en [TLS](#def-TLS)-handshake, som specificerar domännamnet att ansluta till. Detta gör det möjligt för servern att svara med det lämpliga [certifikatet](#def-leaf) när flera domäner är hostade bakom samma IP. Webbservern kan skicka ett annat certifikat och visa annat innehåll beroende på namnet som klienten begärde via SNI. SNI skickas okrypterat, men ett nyare TLS-tillägg, [Encrypted Client Hello (ECH)](https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello), krypterar det. [Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication) {{% /def %}}
 
 {{% def id="SCT" name="Signerad certifikattidsstämpel" abbr="SCT" %}} Ett signerat och verifierbart löfte från en [Certificate Transparency-logg](#def-CT-log) om att publicera ett certifikat. Webbläsare som upprätthåller [CT](#def-CT) kontrollerar om SCT:er finns i en webbplats certifikat eller i [TLS](#def-TLS)-handshaken och vägrar att ansluta till webbplatser som inte uppfyller deras loggningskrav. Detta ökar sannolikheten att bedrägliga eller felaktiga certifikat upptäcks. https://www.certificate-transparency.org/how-ct-works {{% /def %}}
 
@@ -149,13 +149,13 @@ Note for translators:
 
 {{% def id="staging" name="Testmiljö" %}} [Let's Encrypt](#def-LE) tillhandahåller ett staging-API för att testa certifikatförfrågningar utan att påverka frekvensbegränsningar. Certifikat som genereras av testmiljön är *inte* offentligt betrodda. Testmiljön bör användas för testning, felsökning och utveckling av ACME-klienter. [/docs/staging-environment](/docs/staging-environment) {{% /def %}}
 
-{{% def id="SAN" name="Alternativt subjektnamn" abbr="SAN" %}} Ett fält i ett [certifikat](#def-leaf) som anger för vilka domän(er) certifikatet är giltigt. Det ersätter användningen av [Common Name](#def-CN), som nu endast tillhandahålls av kompatibilitetsskäl. Ett enskilt certifikat kan innehålla många SAN:er och vara giltigt för många olika domännamn. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](https://letsencrypt.org/docs/profiles/#max-names) {{% /def %}}
+{{% def id="SAN" name="Alternativt subjektnamn" abbr="SAN" %}} Ett fält i ett [certifikat](#def-leaf) som anger för vilka domän(er) certifikatet är giltigt. Det ersätter användningen av [Common Name](#def-CN), som nu endast tillhandahålls av kompatibilitetsskäl. Ett enskilt certifikat kan innehålla många SAN:er och vara giltigt för många olika domännamn. [Wikipedia](https://en.wikipedia.org/wiki/Subject_Alternative_Name) [/docs/profiles/#max-names](/docs/profiles/#max-names) {{% /def %}}
 
 {{% def id="subscriber" name="Prenumerant" %}} Personen eller organisationen som begär ett certifikat. {{% /def %}}
 
 {{% def id="TLD" name="Toppdomän" abbr="TLD" %}} Högsta nivån i det hierarkiska Domain Name System, såsom landskodstoppdomäner (ccTLDs) som `.de` (Tyskland), `.cn` (Kina) och generiska toppdomäner (gTLDs) som `.com`, `.org`. [Wikipedia](https://en.wikipedia.org/wiki/Top-level_domain) {{% /def %}}
 
-{{% def id="TLS" name="Transportlagersäkerhet" abbr="TLS" abbr_first="1" %}} Protokollet som används av HTTPS för att kryptera och autentisera webbplatsbesök. {{% /def %}}
+{{% def id="TLS" name="Transport Layer Security" abbr="TLS" abbr_first="1" %}} Protokollet som HTTPS använder för att kryptera och autentisera webbplatsbesök. {{% /def %}}
 
 {{% def id="TLSA" abbr="TLSA" %}} Den del av [DANE](#def-DANE) som specifikt rör validering av [TLS](#def-TLS)-anslutningar. {{% /def %}}
 

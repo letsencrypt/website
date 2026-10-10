@@ -322,17 +322,10 @@ function doPlot() {
   if ( location.hostname === "localhost" ) {
     path = "/js/"; // in dev, will use old data.
   } else {
-    path = "https://d4twhgtvn0ff5.cloudfront.net/";
+    path = "https://d1dfn7jg27m4cf.cloudfront.net/";
   }
 
-  var statsPath;
-  if ( location.hostname === "localhost" ) {
-    statsPath = "/js/"; // in dev, will use old data.
-  } else {
-    statsPath = "https://d1dfn7jg27m4cf.cloudfront.net/";
-  }
-
-  fetch(statsPath+"cert-daily-stats.tsv")
+  fetch(path+"cert-daily-stats.tsv")
   .then(response => {
     return response.text();
   }).then(tsvListener);

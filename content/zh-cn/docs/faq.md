@@ -19,32 +19,32 @@ show_lastmod: 1
 
 ## Let's Encrypt 提供哪些服务？
 
-Let's Encrypt 是一家全球性的证书颁发机构 (CA)， 为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。 网站可以使用我们的证书来启用安全的 HTTPS 连接。
+Let's Encrypt 是一家全球性的证书颁发机构 (CA)，为世界各地的个人和团体提供获取、续期、管理 SSL/TLS 证书的服务。网站可以使用我们的证书来启用安全的 HTTPS 连接。
 
-Let's Encrypt 仅提供域名验证 (DV) 证书， 不提供组织验证 (OV) 和扩展验证 (EV) 证书，主要原因是我们无法自动颁发这两类证书。
+Let's Encrypt 仅提供域名验证 (DV) 证书，不提供组织验证 (OV) 和扩展验证 (EV) 证书，主要原因是我们无法自动颁发这两类证书。
 
 前往我们的[快速入门](/getting-started)页面即可开始使用 Let's Encrypt。
 
-## 使用 Let's Encrypt 的费用是多少？ 真的免费吗？
+## 使用 Let's Encrypt 的费用是多少？真的免费吗？
 
-我们颁发证书不收取任何费用。 Let's Encrypt 属于非营利组织，旨在推广 HTTPS 技术的应用，从而构建更加安全且尊重隐私的互联网环境。 我们致力于提供免费便捷的服务，以此帮助所有网站部署 HTTPS。
+我们颁发证书不收取任何费用。 Let's Encrypt 属于非营利组织，旨在推广 HTTPS 技术的应用，从而构建更加安全且尊重隐私的互联网环境。我们致力于提供免费便捷的服务，以此帮助所有网站部署 HTTPS。
 
-同时，我们也需要个人与赞助商的慷慨援助，才能持续向全球提供免费的服务。 如果您有兴趣支持我们，请考虑[捐款](/donate)或[成为赞助商](https://www.abetterinternet.org/sponsor)。
+同时，我们也需要个人与赞助商的慷慨援助，才能持续向全球提供免费的服务。如果您有兴趣支持我们，请考虑[捐款](/donate)或[成为赞助商](https://www.abetterinternet.org/sponsor)。
 
 部分服务商（如网站托管服务）可能会收取小额费用，以弥补其提供 Let's Encrypt 证书所产生的管理费用。
 
 ## 你们能提供怎样的客户服务？
 
-Let's Encrypt 的运营团队规模较小，依靠自动化来降低成本， 因此无法直接为用户提供客服支持。 不过我们确实有一些很棒的支持服务：
+Let's Encrypt 的运营团队规模较小，依靠自动化来降低成本，因此无法直接为用户提供客服支持。不过我们确实有一些很棒的支持服务：
 
 1. 我们有非常实用的[文档](/docs)。
-2. 我们有非常积极且乐于提供帮助的[社区支持论坛](https://community.letsencrypt.org/)。 我们社区的成员在回答问题方面做得很好，许多最常见的问题已经得到了解答。
+2. 我们有非常积极且乐于提供帮助的[社区支持论坛](https://community.letsencrypt.org/)。我们社区的成员在回答问题方面做得很好，许多最常见的问题已经得到了解答。
 
 [这段影片](https://www.youtube.com/watch?v=Xe1TZaElTAs)充分展现了社群支持的力量，与我们的观念不谋而合。
 
 ## 某个使用 Let's Encrypt 的网站涉嫌欺诈/钓鱼攻击/传播恶意软件……我该怎么办？
 
-我们建议向 Google Safe Browsing 与 Microsoft SmartScreen 项目举报此类网站，以便更为有效地保护用户。 举报网址如下：
+我们建议向 Google Safe Browsing 与 Microsoft SmartScreen 项目举报此类网站，以便更为有效地保护用户。举报网址如下：
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
@@ -67,17 +67,17 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## Let's Encrypt 是否会在其服务器上生成或存储我的证书私钥？
 
-不会。 永远不会。
+不会。永远不会。
 
 私钥只能由您自己的服务器生成并管理，与 Let's Encrypt 无关。
 
-## Let's Encrypt 证书的有效期有多长？ 能够使用多久？
+## Let's Encrypt 证书的有效期有多长？能够使用多久？
 
-我们的证书有效期默认为 90 天， 其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
+我们的证书有效期默认为 90 天，其背后的原因可以从[这里](/2015/11/09/why-90-days.html)了解。
 
-用户也可以选择有效期为 6 天的短期证书， 详见[此处](/2025/02/20/first-short-lived-cert-issued.html)。
+用户也可以选择有效期为 6 天的短期证书，详见[此处](/2025/02/20/first-short-lived-cert-issued.html)。
 
-除上述情形外证书有效期不能随意调整，任何用户都不例外。 我们建议有效期为 90 天的证书每 60 天续期一次，有效期为 6 天的证书每 3 天续期一次。
+除上述情形外证书有效期不能随意调整，任何用户都不例外。我们建议有效期为 90 天的证书每 60 天续期一次，有效期为 6 天的证书每 3 天续期一次。
 
 ## Let's Encrypt 能颁发组织验证 (OV) 或扩展验证 (EV) 证书吗？
 
@@ -89,31 +89,31 @@ Let's Encrypt 颁发的是标准的域名验证型证书，凡是有域名的服
 
 ## Let's Encrypt 颁发通配符证书吗？
 
-是的。 申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-验证)。 有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
+是的。申请通配符证书必须通过 [DNS-01 验证](/docs/challenge-types/#dns-01-验证)。有关更多技术信息，请参阅[该网页](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578)。
 
 ## 我的操作系统有可以使用的 Let's Encrypt (ACME) 客户端吗？
 
-您有大量的 [ACME 客户端](/docs/client-options)可以选择。 其中很可能就有支持您操作系统的客户端。 我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
+您有大量的 [ACME 客户端](/docs/client-options)可以选择。其中很可能就有支持您操作系统的客户端。我们建议您在入门时使用 [Certbot](https://certbot.eff.org/)。
 
 ## 我可以使用已有的私钥或证书签名请求 (CSR) 吗？
 
 是的，但并非所有客户端都支持此功能。 [Certbot](https://certbot.eff.org/) 是支持的。
 
-## 申请证书后我的域名流量剧增！ 为什么会这样？
+## 申请证书后我的域名流量剧增！为什么会这样？
 
-这是意料之中的正常情况。 在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。 验证通过后，您的证书还将录入各类[证书透明化 (CT) 日志系统](/docs/ct-logs)， 您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。 证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
+这是意料之中的正常情况。在[证书颁发流程](/how-it-works)中，Let's Encrypt 会从[多个网络位置](/2020/02/19/multi-perspective-validation)核验您对域名的控制权。验证通过后，您的证书还将录入各类[证书透明化 (CT) 日志系统](/docs/ct-logs)，您可以在[此处](https://certificate.transparency.dev/howctworks/#pki)了解这种做法的必要性。证书录入系统后，系统便会开始自动检测您的域名并尝试访问，在您的服务器日志中产生更多的记录。
 
 ## Let's Encrypt 使用什么 IP 地址来验证我的网站服务器？
 
-我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。 请注意，我们目前有[多个用于验证的 IP 地址](/2020/02/19/multi-perspective-validation.html)。
+我们不会发布用于验证的 IP 地址列表，因为它们随时都可能改变。请注意，我们目前有[多个用于验证的 IP 地址](/2020/02/19/multi-perspective-validation.html)。
 
 ## 我的证书成功续期，但这次却不需要验证，为什么？
 
-域名验证通过后，结果会保留一段时间， 根据所选的[证书配置](/docs/profiles)，最长可以保留 30 天。 如果您申请证书时所有验证结果都还未过期，就无需重复验证。
+域名验证通过后，结果会保留一段时间，根据所选的[证书配置](/docs/profiles)，最长可以保留 30 天。如果您申请证书时所有验证结果都还未过期，就无需重复验证。
 
 ## 为什么我的 Let's Encrypt (ACME) 客户端启动时间应当随机？
 
-我们要求 [ACME 客户端在随机的时间点执行证书续期](/docs/integration-guide/#续期时间)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。 服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
+我们要求 [ACME 客户端在随机的时间点执行证书续期](/docs/integration-guide/#续期时间)，防止每天的特定时刻（例如协调世界时的午夜零点、每小时或每分钟的第一秒）出现流量高峰。服务器繁忙时我们还会要求客户端[等待一段时间再重试](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)，因此将续期时间随机化也能避免不必要的反复请求。
 
 ## 在哪里可以深入了解 TLS/SSL 与 PKI 的相关知识？
 

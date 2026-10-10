@@ -44,7 +44,7 @@ Let's Encrypt — небольшая компания, мы полагаемся
 
 ## Сайт с сертификатом Let's Encrypt используется для фишинга/вредоносного ПО/мошенничества/..., что мне делать?
 
-Мы рекомендуем сообщить об этом в Google Safe Browsing и Microsoft Smart Screen, которые способны эффективно защищать пользователей Интернета. URL-адреса для отчетов:
+Мы рекомендуем сообщить об этом в Google Safe Browsing и Microsoft SmartScreen, которые способны эффективно защищать пользователей Интернета. URL-адреса для отчетов:
 
 - [https://safebrowsing.google.com/safebrowsing/report_badware/](https://safebrowsing.google.com/safebrowsing/report_badware/)
 - [https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest)
@@ -117,6 +117,6 @@ https://letsencrypt.org/2015/10/29/phishing-and-malware.html
 
 ## Где я могу узнать больше о TLS/SSL и PKI в целом?
 
-Давний исследователь и практик в области безопасности, Иван Ристич, опубликовал руководство по настройке, содержащее полезную информацию о том, что следует учитывать при <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferer">настройке конфигурации TLS</a>.
+Многолетний исследователь и практик в области безопасности Ivan Ristić опубликовал руководство по настройке, в котором содержится полезная информация о том, на что следует обращать внимание при <a href="https://www.feistyduck.com/library/bulletproof-tls-guide/online/" target="_blank" rel="noopener noreferrer">настройке вашей TLS-конфигурации</a>.
 
-Для получения более обширной информации и подробностей мы рекомендуем <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferer">Bulletproof TLS и PKI</a>, написал также Ристич.
+Для более полной информации и более глубоких подробностей мы рекомендуем <a href="https://www.feistyduck.com/books/bulletproof-tls-and-pki/" target="_blank" rel="noopener noreferrer">Bulletproof TLS and PKI</a>, также написанную Ristić.

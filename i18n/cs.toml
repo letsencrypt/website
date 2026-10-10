@@ -614,7 +614,7 @@ other = "Akcie můžete darovat také několika kliknutími přes {{ .givingBloc
 other = "Darovat kryptoměnu"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "Většinu kryptoměn můžeme přijímat prostřednictvím {{ .givingBlockLink }}. U těchto transakcí nám vznikají poplatky za zpracování, proto prosím zvažte, zda je zaplatíte, aby měl váš dar co největší dopad."
+other = "Přijímáme většinu kryptoměn. Přispět můžete přes {{ .givingBlockLink }}. Za tyto transakce platíme poplatky za zpracování. Zvažte prosím jejich uhrazení, aby váš dar měl co největší dopad."
 
 [donate_2026_donor_advised_funds_title]
 other = "Fondy spravované podle pokynů dárce (DAF)"

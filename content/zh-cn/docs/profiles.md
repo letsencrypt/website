@@ -1,15 +1,15 @@
 ---
 title: 证书配置
 slug: profiles
-lastmod: 2026-07-14
+lastmod: 2026-10-04
 show_lastmod: false
 ---
 
-证书的配置包含一系列属性，对证书的验证流程和最终内容都有影响。 大多数 Let's Encrypt 用户无需关注于此，我们会自动为您选择最合适的配置，并确保能够满足互联网公钥加密体系的各项要求和最佳实践。 然而，部分用户可能倾向于主动选择某种特定的配置，故此页面提供了相关信息以供参考。
+证书的配置包含一系列属性，对证书的验证流程和最终内容都有影响。大多数 Let's Encrypt 用户无需关注于此，我们会自动为您选择最合适的配置，并确保能够满足互联网公钥加密体系的各项要求和最佳实践。然而，部分用户可能倾向于主动选择某种特定的配置，故此页面提供了相关信息以供参考。
 
 # 我们提供的配置
 
-以下是每种配置的详细信息，包括对于验证流程和证书内容的影响。 请注意，并非所有配置都能在任意环境中使用：部分配置可能只支持测试环境或只支持生产环境，也可能（暂时）受白名单限制，我们将逐步对外开放。 实际可用的配置以 ACME 服务器 `directory` 接口响应的信息为准。
+以下是每种配置的详细信息，包括对于验证流程和证书内容的影响。请注意，并非所有配置都能在任意环境中使用：部分配置可能只支持测试环境或只支持生产环境，也可能（暂时）受白名单限制，我们将逐步对外开放。实际可用的配置以 ACME 服务器 `directory` 接口响应的信息为准。
 
 您可以在本页面的末尾查看配置中各类属性的详细含义。
 
@@ -17,7 +17,7 @@ show_lastmod: false
 
 ## classic
 
-所有未明确指定配置的订单都会采用 classic 作为默认配置， 其验证流程和最终的证书内容延续了近年来 Let's Encrypt 一贯的运作方式。 如果您倾向于先让他人体验新的功能，我们推荐使用这种比较保守的配置。
+所有未明确指定配置的订单都会采用 classic 作为默认配置，其验证流程和最终的证书内容延续了近年来 Let's Encrypt 一贯的运作方式。如果您倾向于先让他人体验新的功能，我们推荐使用这种比较保守的配置。
 
 | 属性                      | 数据                                       |
 | ----------------------- | ---------------------------------------- |
@@ -32,7 +32,7 @@ show_lastmod: false
 | [名称数量上限](#名称数量上限)       | 100                                      |
 | [标识符类型](#标识符类型)         | 域名                                       |
 
-<sup id="footnote-1">\*</sup>: 如果在证书签发的最后阶段提交的 CSR 中指定了通用名称，并且该名称是主体备用名称中的一个域名，则我们将采纳该名称。 反之，如果 CSR 没有指定通用名称，则我们将把主体备用名称中的第一个域名作为主体通用名称。 如果指定的名称或备用名称过长（超过 64 个字符），通用名称将留空。
+<sup id="footnote-1">\*</sup>: 如果在证书签发的最后阶段提交的 CSR 中指定了通用名称，并且该名称是主体备用名称中的一个域名，则我们将采纳该名称。反之，如果 CSR 没有指定通用名称，则我们将把主体备用名称中的第一个域名作为主体通用名称。通用名称不能超过 64 个字符，如果长度达到 65 个字符以上，该字段将被留空。
 
 <sup id="footnote-2">†</sup>: 只包含在使用 RSA 公钥的证书中。
 
@@ -41,11 +41,11 @@ show_lastmod: false
 
 ## tlsserver
 
-新推出的 tlsserver 配置在验证流程和证书内容上有所变化，旨在更好地满足 CA/浏览器论坛最新的底线要求，以及 WebPKI 社群的整体发展态势。 我们建议想压缩证书大小或已具备完善的自动化机制的用户选择此配置。
+新推出的 tlsserver 配置在验证流程和证书内容上有所变化，旨在更好地满足 CA/浏览器论坛最新的底线要求，以及 WebPKI 社群的整体发展态势。我们建议想压缩证书大小或已具备完善的自动化机制的用户选择此配置。
 
-为了进一步鼓励用户实现自动化，域名验证时限相比以往大幅缩短，但自动化完善的系统能够在数秒内完成域名验证，因此一个小时绰绰有余。 验证结果复用时限缩短到了七个小时， 这是因为底线要求规定八小时后我们就必须重新检查证书颁发机构授权 (CAA) 记录，所以缩短复用时限意味着我们可以省去重新检查的步骤。 订单有效期也缩短到了两次域名验证时限的总和，因为验证过期后即使订单有效也没有什么意义。
+为了进一步鼓励用户实现自动化，域名验证时限相比以往大幅缩短，但自动化完善的系统能够在数秒内完成域名验证，因此一个小时绰绰有余。验证结果复用时限缩短到了七个小时，这是因为底线要求规定八小时后我们就必须重新检查证书颁发机构授权 (CAA) 记录，所以缩短复用时限意味着我们可以省去重新检查的步骤。订单有效期也缩短到了两次域名验证时限的总和，因为验证过期后即使订单有效也没有什么意义。
 
-最终发放的证书将省略通用名称，因为有主体备用名称足矣，底线要求也不推荐使用通用名称。 密钥用途中不再包含“密钥加密”，因为该用途只用于非前向保密的 TLS 加密算法，但由于前向保密的重要性，所有主流浏览器都已不再支持这些算法。 主体密钥标识符扩展将被省略，因为它在最终实体证书中并没有作用，底线要求也不推荐保留。 另外，证书有效期也将缩短至 45 天，以应对将来所有证书有效期都不能超过 47 天的限制。
+最终发放的证书将省略通用名称，因为有主体备用名称足矣，底线要求也不推荐使用通用名称。密钥用途中不再包含“密钥加密”，因为该用途只用于非前向保密的 TLS 加密算法，但由于前向保密的重要性，所有主流浏览器都已不再支持这些算法。主体密钥标识符扩展将被省略，因为它在最终实体证书中并没有作用，底线要求也不推荐保留。另外，证书有效期也将缩短至 45 天，以应对将来所有证书有效期都不能超过 47 天的限制。
 
 | 属性                      | 数据   |
 | ----------------------- | ---- |
@@ -65,9 +65,9 @@ show_lastmod: false
 
 ## shortlived
 
-shortlived 配置与 tlsserver 相同，只有一个重要的区别：证书有效期只有大约 6 天。 这样的证书符合底线要求中的“短期用户证书”标准，因此无需包含任何吊销信息。 这意味着证书大小可以进一步压缩，并且杜绝了证书吊销后仍受部分客户端信任的可能性。 如下表所示，目前这些证书仍然带有 CRL 网址，但[未来情况可能会有所变化](https://github.com/letsencrypt/boulder/issues/7673)。
+shortlived 配置与 tlsserver 相同，只有一个重要的区别：证书有效期只有大约 6 天。这样的证书符合底线要求中的“短期用户证书”标准，因此无需包含任何吊销信息。这意味着证书大小可以进一步压缩，并且杜绝了证书吊销后仍受部分客户端信任的可能性。如下表所示，目前这些证书仍然带有 CRL 网址，但[未来情况可能会有所变化](https://github.com/letsencrypt/boulder/issues/7673)。
 
-对于完全信任其自动化机制能够及时为证书续期的用户，我们推荐使用这种配置。 但该配置并不适合所有用户，
+对于完全信任其自动化机制能够及时为证书续期的用户，我们推荐使用这种配置。但该配置并不适合所有用户，
 
 | 属性                      | 数据        |
 | ----------------------- | --------- |
@@ -89,14 +89,13 @@ shortlived 配置与 tlsserver 相同，只有一个重要的区别：证书有�
 
 自 2026 年 7 月 8 日起，此配置已不再可用。
 
-采用 tlsclient 配置颁发的证书带有 TLS 客户端认证 EKU，
-除此之外与 classic 配置完全相同。
+采用 tlsclient 配置颁发的证书带有 TLS 客户端认证 EKU，除此之外与 classic 配置完全相同。
 
 </div>
 
 # 选择配置
 
-[这份互联网标准草案](https://datatracker.ietf.org/doc/draft-aaron-acme-profiles/)描述了选择配置的流程，我们计划与 IETF 的 ACME 工作组共同将该草案进一步转变为完整的 RFC 标准。 并非所有 ACME 客户端都已实现该草案，所以您使用的客户端可能尚不支持选择配置。
+[这份互联网标准草案](https://datatracker.ietf.org/doc/draft-aaron-acme-profiles/)描述了选择配置的流程，我们计划与 IETF 的 ACME 工作组共同将该草案进一步转变为完整的 RFC 标准。并非所有 ACME 客户端都已实现该草案，所以您使用的客户端可能尚不支持选择配置。
 
 一般而言，如果您需要选择配置，应当：
 
@@ -112,15 +111,15 @@ shortlived 配置与 tlsserver 相同，只有一个重要的区别：证书有�
 
 ### 域名验证时限
 
-即 ACME 客户端必须在多长的时间内完成对域名所有权的证明， 从 ACME 协议中 Authorization 对象创建时（通常也是 Order 对象生成时）开始计算，在接口中由处于 pending 状态的 Authorization 对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4)表示。 底线要求规定这一时限[不得超过 30 天](https://github.com/cabforum/servercert/blob/main/docs/BR.md#322419-agreed-upon-change-to-website---acme)。
+即 ACME 客户端必须在多长的时间内完成对域名所有权的证明，从 ACME 协议中 Authorization 对象创建时（通常也是 Order 对象生成时）开始计算，在接口中由处于 pending 状态的 Authorization 对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4)表示。底线要求规定这一时限[不得超过 30 天](https://github.com/cabforum/servercert/blob/main/docs/BR.md#322419-agreed-upon-change-to-website---acme)。
 
 ### 验证结果复用时限
 
-即在多长的时间内对相同域名或 IP 地址的新申请无需重复验证， 从上一次验证通过开始计算，在接口中由处于 valid 状态的 Authorization 对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4)表示。 [底线要求](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions)规定这一时限不得超过 200 天，且对于 2027 年 3 月 15 日起签发的证书而言不得超过 100 天，2029 年 3 月 15 日起还将进一步缩短至 10 天。
+即在多长的时间内对相同域名或 IP 地址的新申请无需重复验证，从上一次验证通过开始计算，在接口中由处于 valid 状态的 Authorization 对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.4)表示。[底线要求](https://github.com/cabforum/servercert/blob/main/docs/BR.md#421-performing-identification-and-authentication-functions)规定这一时限不得超过 200 天，且对于 2027 年 3 月 15 日起签发的证书而言不得超过 100 天，2029 年 3 月 15 日起还将进一步缩短至 10 天。
 
 ### 订单有效期
 
-即 ACME 客户端需要在多长的时间内完成证书申请的全流程，包括提交订单、完成验证并确认签发。 订单的有效期从 ACME 协议中 Order 对象创建开始计算，并由该对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.3)表示。
+即 ACME 客户端需要在多长的时间内完成证书申请的全流程，包括提交订单、完成验证并确认签发。订单的有效期从 ACME 协议中 Order 对象创建开始计算，并由该对象的 [`expires` 时间戳](https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.3)表示。
 
 ## 证书内容属性
 
@@ -128,23 +127,23 @@ shortlived 配置与 tlsserver 相同，只有一个重要的区别：证书有�
 
 ### 证书通用名称
 
-TLS 证书中有两个字段包含所谓的名称（域名和 IP 地址都属于名称）：[主体通用名称](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.6)和[主体备用名称](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6)。 以往域名大多都记录在通用名称中，许多证书解析工具显示的也都是这一名称， 但通用名称只能有一个，而许多证书需要包含多个名称（如 `example.com`、`www.example.com` 和 `blog.example.com`）。 如今通用名称已颇为多余，因为该名称的内容仍需包含在主体备用名称中。 [底线要求现已不再推荐](https://github.com/cabforum/servercert/blob/main/docs/BR.md#71272-domain-validated)在证书中填写通用名称。
+TLS 证书中有两个字段包含所谓的名称（域名和 IP 地址都属于名称）：[主体通用名称](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.6)和[主体备用名称](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.6)。以往域名大多都记录在通用名称中，许多证书解析工具显示的也都是这一名称，但通用名称只能有一个，而许多证书需要包含多个名称（如 `example.com`、`www.example.com` 和 `blog.example.com`）。如今通用名称已颇为多余，因为该名称的内容仍需包含在主体备用名称中。[底线要求现已不再推荐](https://github.com/cabforum/servercert/blob/main/docs/BR.md#71272-domain-validated)在证书中填写通用名称。
 
 ### 密钥的加密用途
 
-TLS 证书包含一个[“密钥用途”字段](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)，表示该证书的密钥允许执行哪些密码学操作。 Let's Encrypt 签发的所有证书都包含“数字签名”用途，这是进行 TLS 握手所必需的。 “密钥加密”这一用途则在旧版本的 TLS 协议中用于某些基于 RSA 密钥的握手机制， 并且这些机制已被证明并不安全，各大浏览器早在数年前就已停止支持。 [底线要求也已经不再推荐](https://github.com/cabforum/servercert/blob/main/docs/BR.md#712711-subscriber-certificate-key-usage)在证书中允许“密钥加密”这一用途。
+TLS 证书包含一个[“密钥用途”字段](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)，表示该证书的密钥允许执行哪些密码学操作。 Let's Encrypt 签发的所有证书都包含“数字签名”用途，这是进行 TLS 握手所必需的。“密钥加密”这一用途则在旧版本的 TLS 协议中用于某些基于 RSA 密钥的握手机制，并且这些机制已被证明并不安全，各大浏览器早在数年前就已停止支持。[底线要求也已经不再推荐](https://github.com/cabforum/servercert/blob/main/docs/BR.md#712711-subscriber-certificate-key-usage)在证书中允许“密钥加密”这一用途。
 
 ### 主体密钥标识符扩展字段
 
-TLS 证书可以包含一个[“主体密钥标识符”字段](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2)，以一个简短的字符串来代表该证书的密钥。 这对于 CA 证书而言至关重要，因为浏览器需要借助这一字段快速判断网站的最终实体证书是由哪一份 CA 证书签发的。 但在最终实体证书中这一字段并没有实际作用，底线要求也不推荐将其加入证书中。
+TLS 证书可以包含一个[“主体密钥标识符”字段](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2)，以一个简短的字符串来代表该证书的密钥。这对于 CA 证书而言至关重要，因为浏览器需要借助这一字段快速判断网站的最终实体证书是由哪一份 CA 证书签发的。但在最终实体证书中这一字段并没有实际作用，底线要求也不推荐将其加入证书中。
 
 ### 有效期
 
-有效期决定了 TLS 证书中 [`notBefore` 和 `notAfter` 时间戳](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5)之间的间隔，也就是该证书在多长的时间内能够被信任。 [底线要求](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods)规定有效期不得超过 200 天，且 2027 年 3 月 15 日起签发的证书不得超过 100 天，2029 年 3 月 15 日起还将进一步缩短至 47 天。
+有效期决定了 TLS 证书中 [`notBefore` 和 `notAfter` 时间戳](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5)之间的间隔，也就是该证书在多长的时间内能够被信任。[底线要求](https://github.com/cabforum/servercert/blob/main/docs/BR.md#632-certificate-operational-periods-and-key-pair-usage-periods)规定有效期不得超过 200 天，且 2027 年 3 月 15 日起签发的证书不得超过 100 天，2029 年 3 月 15 日起还将进一步缩短至 47 天。
 
 ### 吊销信息来源
 
-TLS 客户端需要通过某种方式查询证书是否已被提前吊销。 一般而言，在互联网公钥加密体系中有三种方式可以选择：在线证书状态协议 (OCSP)、证书吊销列表 (CRL)，以及采用极短的有效期来规避吊销证书的必要性。 Let's Encrypt 现已不再支持 OCSP。 此字段仅表明相应配置下生成的证书是否包含 CRL 网址。
+TLS 客户端需要通过某种方式查询证书是否已被提前吊销。一般而言，在互联网公钥加密体系中有三种方式可以选择：在线证书状态协议 (OCSP)、证书吊销列表 (CRL)，以及采用极短的有效期来规避吊销证书的必要性。 Let's Encrypt 现已不再支持 OCSP。此字段仅表明相应配置下生成的证书是否包含 CRL 网址。
 
 ### 名称数量上限
 
