@@ -1,7 +1,7 @@
 ---
 title: A Warm Welcome to ASN.1 and DER
 slug: a-warm-welcome-to-asn1-and-der
-lastmod: 2021-03-21
+lastmod: 2026-09-04
 ---
 This document provides a gentle introduction to the data structures and
 formats that define the certificates used in HTTPS. It should be
@@ -118,8 +118,7 @@ representing things like an RSA modulus, which is much bigger than an
 int64 (like 2<sup>2048</sup> big). Technically there is a maximum integer in DER
 but it's extraordinarily large: The length of any DER field can be
 expressed as a series of up to 126 bytes. So the biggest INTEGER you can
-represent in DER is 256<sup>(2\*\*1008)</sup>-1. For a truly unbounded INTEGER you'd
-have to encode in BER, which allows indefinitely-long fields.
+represent in DER is 256<sup>(2\*\*1008)</sup>-1.
 
 Strings
 -------
@@ -187,10 +186,10 @@ at 7am in New York City (UTC-5) and at 12pm in UTC.
 Since UTCTime is ambiguous as to whether it's the 1900's or 2000's, [RFC
 5280
 clarifies](https://tools.ietf.org/html/rfc5280#section-4.1.2.5.1) that
-it represents dates from 1950 to 2050. RFC 5280 also requires that the
+it represents dates from 1950 through 2049. RFC 5280 also requires that the
 "Z" timezone must be used and seconds must be included.
 
-GeneralizedTime supports dates after 2050 through the simple expedient
+GeneralizedTime supports dates from 2050 onward through the simple expedient
 of representing the year with four digits. It also allows fractional
 seconds (weirdly, with either a comma or a full stop as the decimal
 separator). RFC 5280 forbids fractional seconds and requires the "Z."
@@ -480,9 +479,9 @@ mean the same thing across all ASN.1 modules.
 
 These tags all happen to be under 31 (0x1F), and that's for a good reason: Bits
 8, 7, and 6 (the high bits of the tag byte) are used to encode extra
-information, so any universal tag numbers higher than 31 would need to
+information, so any universal tag numbers of 31 or higher would need to
 use the "high tag number" form, which takes extra bytes. There are a
-small handful of universal tags higher than 31, but they're quite rare.
+small handful of universal tags of 31 or higher, but they're quite rare.
 
 The two tags marked with a `*` are always encoded as 0x30 or 0x31,
 because bit 6 is used to indicate whether a field is Constructed vs
@@ -543,8 +542,8 @@ APPLICATION:
 
 ```asn1
 Point ::= SEQUENCE {
-  x [APPLICATION 0] INTEGER OPTIONAL,
-  y [APPLICATION 1] INTEGER OPTIONAL
+  x [APPLICATION 0] IMPLICIT INTEGER OPTIONAL,
+  y [APPLICATION 1] IMPLICIT INTEGER OPTIONAL
 }
 ```
 
@@ -554,10 +553,14 @@ itself:
 
 ```asn1
 Point ::= SEQUENCE {
-  x [0] INTEGER OPTIONAL,
-  y [1] INTEGER OPTIONAL
+  x [0] IMPLICIT INTEGER OPTIONAL,
+  y [1] IMPLICIT INTEGER OPTIONAL
 }
 ```
+
+(The IMPLICIT keyword is explained under [EXPLICIT vs IMPLICIT](#explicit-vs-implicit)
+below. It matters here: without it the default is EXPLICIT, which produces a
+different, longer encoding.)
 
 So now, to encode a Point with just an x coordinate of 9, instead of
 encoding x as a UNIVERSAL INTEGER, you'd set bits 8 and 7 of the encoded
@@ -804,7 +807,7 @@ However, that could also be encoded as:
 11111111 10000000 (== decimal -128, but an invalid encoding)
 
 Expanding that out, it's -2<sup>15</sup> + 2<sup>14</sup> + 2<sup>13</sup> + 2<sup>12</sup> + 2<sup>11</sup> + 2<sup>10</sup> + 2<sup>9</sup> + 2<sup>8</sup> + 2<sup>7</sup> == -2<sup>7</sup> == -128. Note that the 1 in "10000000" was a sign bit in the
-single-byte encoding, but means 27 in the two-byte encoding.
+single-byte encoding, but means 2<sup>7</sup> in the two-byte encoding.
 
 This is a generic transform: For any negative number encoded as BER (or
 DER) you could prefix it with 11111111 and get the same number. This is called
@@ -1001,7 +1004,8 @@ DEFAULT fields MUST be omitted from DER encoding if they have the
 default value.
 
 In BER, a SET may be encoded in any order. In DER, a SET must be encoded
-in ascending order by the serialized value of each element.
+in ascending order by the tag of each element (first by class, then by tag
+number).
 
 SET OF encoding
 ---------------
@@ -1139,7 +1143,7 @@ field](#length). Certificates are almost always more than 127 bytes, so the leng
 field has to use the long form of the length. That means the first byte
 will be 0x80 + N, where N is the number of length bytes to follow. N is
 almost always 2, since that's how many bytes it takes to encode lengths
-from 128 to 65535, and almost all certificates have lengths in that
+from 256 to 65535, and almost all certificates have lengths in that
 range.
 
 So now we know that the first two bytes of the DER encoding of a
