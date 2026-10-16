@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-08-16",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,28 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "AcmeLib",
+			"url": "https://github.com/lchfj/AcmeLib",
+			"comments": "A modern C# library supporting AOT compilation.",
+			"library": ".NET",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"Tls-Alpn-01": "true",
+				"Dns-Persist-01": "true"
+			}
+		},
+		{
+			"name": "AcmeTool",
+			"url": "https://github.com/lchfj/AcmeTool",
+			"comments": "Cross-platform command-line tool, supporting HTTP-01 and Dns-Persist-01 protocols.",
+			"category": "Bash",
+			"challenges": {
+				"HTTP-01": "true",
+				"Dns-Persist-01": "true"
 			}
 		}
 	]
