@@ -7,7 +7,7 @@ weight = 350
 [params]
 beforeColon = ""
 description = """
-Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Read all about our nonprofit work this year in our <a href="https://www.abetterinternet.org/annual-reports/">2025 Annual Report</a>.
+Let's Encrypt adalah Otoritas Sertifikat (Certificate Authority) yang gratis, otomatis, dan terbuka, yang dihadirkan oleh organisasi nirlaba <a href="https://www.abetterinternet.org/">Internet Security Research Group (ISRG)</a>. Baca selengkapnya mengenai kiprah kami dalam <a href="https://www.abetterinternet.org/annual-reports/">Laporan Tahunan</a> kami.
 """
 paypalDonateImage = "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
 paypalCountry = "US"
