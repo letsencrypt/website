@@ -1,9 +1,16 @@
 ---
-title: Terima Kasih telah Berdonasi ke ISRG
-slug: thankyou
-date: 2018-04-12
+title: Terima kasih
+slug: "1"
+lastmod: 2022-12-02
 ---
 
-Terima kasih telah mendukung Web yang lebih aman dan lebih menghormati privasi untuk kita semua. Ikuti kami di [Twitter @letsencrypt](https://twitter.com/letsencrypt) untuk tetap mengetahui kabar perkembangan terbaru kami.
-
-Transaksi Anda telah komplit dan sebuah struk pembayaran telah diemailkan pada Anda. Anda dapat masuk pada akun Anda di [www.paypal.com/us](https://www.paypal.com/us) untuk melihat detil dari transaksi ini.
+  <div class="container">
+    <p><strong>Terima kasih atas donasi Anda</strong></p>
+    <p>Atas nama seluruh tim di ISRG, terima kasih atas kontribusi Anda dalam mendukung pekerjaan kami.</p>
+    <p>Bukti penerimaan donasi telah dikirimkan ke alamat email yang Anda berikan. Internet Security Research Group adalah organisasi nirlaba untuk kepentingan publik dengan status 501(c)(3). Kode EIN kami adalah: 46-3344200.</p>
+    <p class="pt-2"><strong>Lipat gandakan donasi Anda</strong></p>
+    <p>Banyak organisasi memberikan sumbangan padanan atas donasi yang diberikan karyawan kepada organisasi nirlaba. Cek apakah organisasi Anda memiliki program donasi padanan dan gandakan dampak Anda!</p>
+    <div class="pt-2">
+      {{< double_donation >}}
+    </div>
+  </div>
