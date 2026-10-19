@@ -1,7 +1,7 @@
 ---
 title: Monitoring Service Options
 slug: monitoring-options
-lastmod: 2026-10-18
+lastmod: 2026-10-19
 show_lastmod: 1
 ---
 
@@ -20,7 +20,7 @@ There are a number of monitoring options out there, including:
 * [CertKit](https://www.certkit.io/)
 * [CertObserver](https://certobserver.com/)
 * [Chill SSL](https://www.chillssl.com/)
-* [Boring Utils Expiry Watch](https://boringutils.com/expiry-watch) (free email alerts for up to 3 domains)
+* [Boring Utils Expiry Watch](https://boringutils.com/expiry-watch) (free email alerts for up to 10 domains)
 
 Please note that all of these services are unaffiliated with ISRG / Let's Encrypt.
 
