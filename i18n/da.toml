@@ -614,7 +614,7 @@ other = "Du kan også donere værdipapirer med et par klik via {{ .givingBlockLi
 other = "Doner kryptovaluta"
 
 [donate_2026_donate_cryptocurrency_text]
-other = "Vi kan acceptere de fleste kryptovaluta ved at besøge {{ .givingBlockLink }}. Vi pådrager os ekspeditionsgebyrer gennem disse transaktioner, så overvej venligst at dække gebyrerne for at sikre, at din gave har den største effekt."
+other = "Vi kan acceptere de fleste kryptovalutaer ved at besøge {{ .givingBlockLink }}. Vi pådrager os ekspeditionsgebyrer gennem disse transaktioner, så overvej venligst at dække gebyrerne for at sikre, at din gave har den største effekt."
 
 [donate_2026_donor_advised_funds_title]
 other = "Donorforvaltede Fonde (DAF)"
