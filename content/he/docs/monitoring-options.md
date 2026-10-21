@@ -1,7 +1,7 @@
 ---
 title: אפשרויות שירותי מעקב
 slug: monitoring-options
-lastmod: 2026-07-13
+lastmod: 2026-09-28
 show_lastmod: 1
 ---
 
@@ -20,6 +20,7 @@ show_lastmod: 1
 - [CertKit](https://www.certkit.io/)
 - [CertObserver](https://certobserver.com/)
 - [Chill SSL](https://www.chillssl.com/)
+- [Otterwatch](https://otterwatch.dev)
 
 נא לשים לב שכל השירותים האלה אינם קשורים ל־ISRG / Let's Encrypt.
 
