@@ -3,6 +3,7 @@ contentDir = "content/he"
 label = "עברית"
 locale = "he"
 weight = 325
+direction = "rtl"
 
 [params]
 beforeColon = ""

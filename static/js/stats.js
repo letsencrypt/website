@@ -98,6 +98,25 @@ function doPlot() {
     }
   }
   
+  // Keep long translated legends clear of both the data and the axis labels on phones.
+  function plotResponsive(dom, traces, layout) {
+    const desktopLegend = { ...layout.legend };
+    const desktopMargin = { l: 80, r: 80, b: 80, t: 20 };
+    let narrow = dom.clientWidth < 480;
+    const dimensions = () => ({
+      margin: narrow ? { l: 50, r: 20, b: 120, t: 20 } : desktopMargin,
+      legend: narrow ? { ...desktopLegend, x: 0, y: -0.15 } : desktopLegend
+    });
+    Plotly.newPlot(dom, traces, { ...layout, ...dimensions() }, { responsive: true });
+    window.addEventListener("resize", () => {
+      const nextNarrow = dom.clientWidth < 480;
+      if (nextNarrow !== narrow) {
+        narrow = nextNarrow;
+        Plotly.relayout(dom, dimensions());
+      }
+    });
+  }
+
   // Various running aggregates over time
   function plotActiveUsage(dom, tActive, tFqdn, tRegDom) {
     let traces = [ tActive, tFqdn, tRegDom ];
@@ -113,7 +132,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.newPlot(dom, traces, layout);
+    plotResponsive(dom, traces, layout);
   }
 
   // Certificates issued over time
@@ -131,7 +150,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.newPlot(dom, traces, layout);
+    plotResponsive(dom, traces, layout);
   }
 
   // Combined Graph: issuancePerDay + activeUsage
@@ -160,7 +179,7 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.newPlot(dom, traces, layout);
+    plotResponsive(dom, traces, layout);
   }
 
   function httpsCsvListener(responseText) {
@@ -315,14 +334,15 @@ function doPlot() {
         y: 1
       }
     };
-    Plotly.newPlot(dom, traces, layout);
+    plotResponsive(dom, traces, layout);
   }
 
   var path;
   if ( location.hostname === "localhost" ) {
     path = "/js/"; // in dev, will use old data.
   } else {
-    path = "https://d1dfn7jg27m4cf.cloudfront.net/";
+    // Serve the public datasets through Netlify so previews do not depend on CDN CORS headers.
+    path = "/stats-data/";
   }
 
   fetch(path+"cert-daily-stats.tsv")

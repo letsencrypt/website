@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!countElement) return;
 
     const finalNumber = 700;
+    // Keep translated count text intact.
+    if (countElement.textContent.trim() !== finalNumber + "M") return;
     const duration = 1000;
 
     countElement.textContent = "0M";
