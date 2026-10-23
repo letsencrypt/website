@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-10-23",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,17 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "TLSPilot",
+			"url": "https://tlspilot.com/",
+			"comments": "Certificate lifecycle management with agentless deployment to Windows, Linux, ADC and cloud targets",
+			"category": "Server",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
 			}
 		}
 	]
