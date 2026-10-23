@@ -413,7 +413,16 @@ other = "A nonprofit providing free TLS certificates to more than ### websites"
 other = "A nonprofit providing free TLS certificates to more than"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = "B"
+
+[certificate_count_format]
+other = "[Number][Abbreviation]"
 
 [home_hero_nonprofit_suffix]
 other = "websites"

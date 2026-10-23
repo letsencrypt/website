@@ -373,3 +373,22 @@ from = "https://cps.root-x1.letsencrypt.org/*"
 to = "https://letsencrypt.org/documents/isrg-cp-cps-v6.2/"
 status = 302
 force = true
+
+# Same-origin access to the three public graph datasets, including deploy previews.
+[[redirects]]
+from = "/stats-data/cert-daily-stats.tsv"
+to = "https://d1dfn7jg27m4cf.cloudfront.net/cert-daily-stats.tsv"
+status = 200
+force = true
+
+[[redirects]]
+from = "/stats-data/current-https-adoption.csv"
+to = "https://d1dfn7jg27m4cf.cloudfront.net/current-https-adoption.csv"
+status = 200
+force = true
+
+[[redirects]]
+from = "/stats-data/historical-https-adoption.csv"
+to = "https://d1dfn7jg27m4cf.cloudfront.net/historical-https-adoption.csv"
+status = 200
+force = true
