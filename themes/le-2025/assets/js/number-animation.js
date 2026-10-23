@@ -2,12 +2,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const countElement = document.getElementById("certificate-count");
     if (!countElement) return;
 
-    const finalNumber = 700;
-    // Keep translated count text intact.
-    if (countElement.textContent.trim() !== finalNumber + "M") return;
+    const countStr = (countElement.dataset.count || "").trim();
+    const abbr = countElement.dataset.abbr || "M";
+    const fmt = countElement.dataset.format || "[Number][Abbreviation]";
+
+    if (!/^\d+(?:\.\d+)?$/.test(countStr)) return;
+
+    const finalNumber = Number(countStr);
+    if (!Number.isFinite(finalNumber)) return;
+    const decimalPlaces = countStr.includes(".")
+        ? (countStr.split(".")[1] || "").length : 0;
     const duration = 1000;
 
-    countElement.textContent = "0M";
+    function formatCount(n) {
+        const num = decimalPlaces > 0 ? n.toFixed(decimalPlaces) : Math.round(n).toString();
+        return fmt.replace("[Number]", num).replace("[Abbreviation]", abbr);
+    }
+
+    countElement.textContent = formatCount(0);
 
     setTimeout(() => {
         const startTime = performance.now();
@@ -15,10 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         function updateCount(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            const easeIn = t => t * t;
-            const easedProgress = easeIn(progress);
-            const currentNumber = Math.round(easedProgress * finalNumber);
-            countElement.textContent = currentNumber + "M";
+            const easedProgress = progress * progress;
+            countElement.textContent = formatCount(easedProgress * finalNumber);
 
             if (progress < 1) {
                 requestAnimationFrame(updateCount);

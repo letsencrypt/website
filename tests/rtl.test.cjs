@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const { readFileSync } = require('node:fs');
+const { readFileSync, readdirSync, existsSync } = require('node:fs');
 const { test } = require('node:test');
 const vm = require('node:vm');
 
@@ -72,23 +72,78 @@ test('English fallback content keeps its language and direction inside the Hebre
   assert.match(translated, /<div[^>]*class="[^"]*prose-content[^"]*"[^>]*dir="rtl"[^>]*lang="he"/);
 });
 
-test('the counter preserves translated text without changing translation formats', () => {
-  const source = readFileSync('themes/le-2025/assets/js/number-animation.js', 'utf8');
-  for (const text of ['700M', '700 מיליון', 'දශලක්‍ෂ 700', '7.0 亿', '800M']) {
-    const element = { textContent: text };
-    const frames = [];
-    vm.runInNewContext(source, {
-      document: { addEventListener: (_, fn) => fn(), getElementById: () => element },
-      setTimeout: fn => fn(),
-      performance: { now: () => 0 },
-      requestAnimationFrame: fn => frames.push(fn),
-    });
-    if (text === '700M') {
-      assert.equal(element.textContent, '0M');
-      frames.shift()(1000);
-    } else {
-      assert.equal(frames.length, 0);
+function animateCounter(element) {
+  const frames = [];
+  vm.runInNewContext(readFileSync('themes/le-2025/assets/js/number-animation.js', 'utf8'), {
+    document: { addEventListener: (_, fn) => fn(), getElementById: () => element },
+    setTimeout: fn => fn(),
+    performance: { now: () => 0 },
+    requestAnimationFrame: fn => frames.push(fn),
+  });
+  return frames;
+}
+
+test('all translations and built locales preserve certificate counts through animation', () => {
+  const translated = { cs: '700m', he: '700 מיליון', si: 'දශලක්‍ෂ 700', 'zh-cn': '7.0 亿' };
+  for (const file of readdirSync('i18n').filter(file => file.endsWith('.toml'))) {
+    const locale = file.slice(0, -5);
+    const translation = readFileSync(`i18n/${file}`, 'utf8');
+    const value = key => {
+      const section = translation.split(`[${key}]`)[1];
+      return section ? JSON.parse(section.match(/\nother = ("[^\n]*")/)[1]) : undefined;
+    };
+    const expected = translated[locale] || '700M';
+    const dataset = {
+      count: value('home_hero_certificate_count'),
+      abbr: value('abbreviation_million'),
+      format: value('certificate_count_format') || '[Number][Abbreviation]',
+    };
+    const display = dataset.format.replace('[Number]', dataset.count).replace('[Abbreviation]', dataset.abbr);
+    assert.equal(display, expected, `${locale}: translation changed`);
+    // Some translation catalogs do not yet have an enabled site language.
+    if (existsSync(`config/_default/languages.${locale}.toml`)) {
+      const html = readFileSync(`public/${locale === 'en' ? '' : locale + '/'}index.html`, 'utf8');
+      const match = html.match(/<span id="certificate-count"([^>]*)>([^<]*)<\/span>/);
+      assert.ok(match, `${locale}: missing counter`);
+      assert.equal(match[2], expected, `${locale}: no-JavaScript text`);
+      const builtData = Object.fromEntries([...match[1].matchAll(/data-(count|abbr|format)="([^"]*)"/g)].map(m => [m[1], m[2]]));
+      assert.deepEqual(builtData, dataset, `${locale}: rendered animation data`);
     }
-    assert.equal(element.textContent, text);
+    const element = { textContent: display, dataset };
+    const frames = animateCounter(element);
+    assert.equal(frames.length, 1, `${locale}: animation did not start`);
+    assert.notEqual(element.textContent, expected);
+    frames.shift()(500);
+    assert.ok(!element.textContent.includes('NaN'));
+    assert.notEqual(element.textContent, expected);
+    frames.shift()(1000);
+    assert.equal(element.textContent, expected, `${locale}: final animated text`);
+    assert.equal(frames.length, 0, `${locale}: animation did not stop`);
+  }
+});
+
+test('counter animation preserves decimal precision, unit order and changed totals', () => {
+  for (const [dataset, halfway, final] of [
+    [{ count: '7.0', abbr: '亿', format: '[Number] [Abbreviation]' }, '1.8 亿', '7.0 亿'],
+    [{ count: '700', abbr: 'දශලක්‍ෂ', format: '[Abbreviation] [Number]' }, 'දශලක්‍ෂ 175', 'දශලක්‍ෂ 700'],
+    [{ count: '800', abbr: 'מיליון', format: '[Number] [Abbreviation]' }, '200 מיליון', '800 מיליון'],
+    [{ count: '1.25', abbr: 'B', format: '[Number][Abbreviation]' }, '0.31B', '1.25B'],
+  ]) {
+    const element = { dataset, textContent: final };
+    const frames = animateCounter(element);
+    frames.shift()(500);
+    assert.equal(element.textContent, halfway);
+    frames.shift()(1500);
+    assert.equal(element.textContent, final);
+    assert.equal(frames.length, 0);
+  }
+});
+
+test('invalid or absent counter data leaves the rendered text intact', () => {
+  assert.equal(animateCounter(null).length, 0);
+  for (const count of [undefined, '', '.', '7..0', '7.0.1', '700M', '-1', 'Infinity', '9'.repeat(400)]) {
+    const element = { dataset: { count }, textContent: 'original translation' };
+    assert.equal(animateCounter(element).length, 0);
+    assert.equal(element.textContent, 'original translation');
   }
 });
