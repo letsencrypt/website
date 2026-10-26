@@ -7,9 +7,6 @@ function doPlot() {
   var numFormat = /\d+/;
   var dateFormat = /\d{4}-\d{2}-\d{2}/;
 
-  var gHttpsData = { countryList: [], osList: [], dateToCountryOSPageloadData: {},
-                    dateToHistoricalPageloadData: {} };
-
   Plotly.setPlotConfig({locale: document.documentElement.lang});
 
 
@@ -28,27 +25,6 @@ function doPlot() {
       var row = s.substring(ix, ix_end).trim().split(delim);
       f(row);
     }
-  }
-
-  // Maintain a moving average
-  function movingAvg(stack, value, window=14) {
-    let total = 0;
-    if (numFormat.test(value)) {
-      stack.push(parseFloat(value));
-      while (stack.length > window) {
-        stack.shift(0);
-      }
-    }
-
-    for (let i = 0; i < stack.length; i++) {
-      total = total + stack[i];
-    }
-
-    if (stack.length == 0) {
-      return "NULL";
-    }
-
-    return total / stack.length;
   }
 
   // Add an (x,y) point to a Trace object if it is a real point.
@@ -163,150 +139,50 @@ function doPlot() {
     Plotly.newPlot(dom, traces, layout);
   }
 
-  function httpsCsvListener(responseText) {
-    let countries = {};
-    let operatingSystems = {};
-    let dateToCountryOSPageloadData = {};
-
-    parse_delim(responseText, ",", function(row){
-      let datestamp = row[0].substring(0, 10); // Strip off the timestamp
-      let os = row[1];
-      let country = row[2];
-      let reporting_ratio = row[3];
-      let normalized_pageloads = row[4];
-      let ratio = row[5];
-      if (!dateFormat.test(datestamp)) {
-        return;
-      }
-
-      if (!(datestamp in dateToCountryOSPageloadData)) {
-        dateToCountryOSPageloadData[datestamp] = {};
-      }
-
-      let countryOSPageloadData = dateToCountryOSPageloadData[datestamp];
-      if (!(country in countryOSPageloadData)) {
-        countryOSPageloadData[country] = {};
-      }
-
-      let osPageloadData = countryOSPageloadData[country];
-      osPageloadData[os] = { normalized_pageloads, reporting_ratio, ratio };
-
-      // derive a master list for the UI
-      countries[country] = 1;
-      operatingSystems[os] = 1;
-    });
-
-    gHttpsData.countryList = Object.keys(countries);
-    gHttpsData.osList = Object.keys(operatingSystems);
-    gHttpsData.dateToCountryOSPageloadData = dateToCountryOSPageloadData;
-  }
-
-  function httpsDerivePageloadsFromNormalizedData(traceObj, includeInHttpsAnalysis,
-                                                  stackMovingAverage = []) {
-    let dateToCountryOSPageloadData = gHttpsData.dateToCountryOSPageloadData;
-
-    // Input data is not sorted, and so neither is the dictionary, so we need
-    // to sort it before we continue.
-    let sortedDates = Object.keys(dateToCountryOSPageloadData);
-    sortedDates.sort();
-    for (let datestamp of sortedDates) {
-      // See https://bugzilla.mozilla.org/show_bug.cgi?id=1414839#c19 for
-      // parameter details
-      let totalNormalizedPageloads = 0.0;
-
-      // Preprocess to sum all normalized_pageloads for included rows
-      for (let country in dateToCountryOSPageloadData[datestamp]) {
-        for (let os in dateToCountryOSPageloadData[datestamp][country]) {
-          if (includeInHttpsAnalysis(os, country)) {
-            let row = dateToCountryOSPageloadData[datestamp][country][os];
-            totalNormalizedPageloads += parseFloat(row.normalized_pageloads);
-          }
-        }
-      }
-
-      // Now derive the reporting ratio and secure pageload ratio
-      let totalSecurePageloadRatio = 0.0;
-
-      for (let country in dateToCountryOSPageloadData[datestamp]) {
-        for (let os in dateToCountryOSPageloadData[datestamp][country]) {
-          if (includeInHttpsAnalysis(os, country)) {
-            let row = dateToCountryOSPageloadData[datestamp][country][os];
-            let dimensionNormalizedPageloads = parseFloat(row.normalized_pageloads)
-                                                / totalNormalizedPageloads;
-            totalSecurePageloadRatio += parseFloat(row.ratio)
-                                          * dimensionNormalizedPageloads;
-          }
-        }
-      }
-
-      let securePageloadPercentage = movingAvg(stackMovingAverage,
-                                              totalSecurePageloadRatio * 100);
-      insertPoint(traceObj, datestamp, securePageloadPercentage);
-    }
-  }
-
-  function historicalHttpsCsvListener(responseText) {
-    parse_delim(responseText, ",", function(row){
-      let datestamp = row[0];
-      let pageloads = row[1];
-      if (!dateFormat.test(datestamp)) {
-        return;
-      }
-
-      gHttpsData.dateToHistoricalPageloadData[datestamp] = pageloads;
-    });
-  }
-
-  function importHistoricalGlobalData(traceObj, stackMovingAvg) {
-    let sortedDates = Object.keys(gHttpsData.dateToHistoricalPageloadData);
-    sortedDates.sort();
-    for (let datestamp of sortedDates) {
-      let pageloadPercent = gHttpsData.dateToHistoricalPageloadData[datestamp];
-      let securePageloadPercentage = movingAvg(stackMovingAvg,
-                                              pageloadPercent);
-      insertPoint(traceObj, datestamp, securePageloadPercentage);
-    }
-  }
-
   let leBlue = "#103a71";
   let leOrange = "#ffa409";
   let someGreen = "#2ca02c";
 
-  // Firefox telemetry (HTTP_PAGELOAD_IS_SSL) over time
-  function httpsPlot(dom) {
+  // Line style for each OS column in chrome-https-adoption.csv. Columns not
+  // listed here are still plotted, with Plotly's default style.
+  const chromeOsStyles = {
+    Windows: { color: leBlue },
+    Mac: { color: leOrange, dash: "dot" },
+    Linux: { color: someGreen, dash: "dash" },
+    ChromeOS: { color: "#9467bd", dash: "dashdot" },
+    Android: { color: "#d62728", dash: "longdash" },
+  };
 
+  // Chrome HTTPS page loads per OS over time, from Google's Transparency
+  // Report. The CSV has a date column and one column per OS, each holding the
+  // share (0-1) of that week's page loads that used HTTPS.
+  function chromeHttpsPlot(dom, responseText) {
     let traces = [];
 
-    {
-      let traceObj = { type: "scatter", x:[], y:[], name: loc.all_users, line: { color: leBlue } };
-      let stackMovingAvg = [];
-      importHistoricalGlobalData(traceObj, stackMovingAvg);
-      httpsDerivePageloadsFromNormalizedData(traceObj, () => {
-        return true;
-      }, stackMovingAvg);
-      traces.push(traceObj);
-    }
-    {
-      let traceObj = { type: "scatter", x:[], y:[], name: loc.usa_users, line: { color: leOrange, dash: "dot" } };
-      httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-        return (country == "US");
-      });
-      traces.push(traceObj);
-    }
-    {
-      let traceObj = { type: "scatter", x:[], y:[], name: loc.japan_users, line: { color: someGreen, dash: "dash" } };
-      httpsDerivePageloadsFromNormalizedData(traceObj, (os, country) => {
-        return (country == "JP");
-      });
-      traces.push(traceObj);
-    }
+    parse_delim(responseText, ",", function(row){
+      if (row[0] == "date") {
+        for (let os of row.slice(1)) {
+          traces.push({ type: "scatter", x:[], y:[], name: os,
+                        line: chromeOsStyles[os] });
+        }
+        return;
+      }
+      if (!dateFormat.test(row[0])) {
+        return;
+      }
+
+      for (let i = 0; i < traces.length; i++) {
+        insertPoint(traces[i], row[0], parseFloat(row[i + 1]) * 100);
+      }
+    });
 
     let layout = {
       margin: { t: 20 },
       yaxis: {
         title: loc.percent_https,
         rangemode: "tozero",
-        ticksuffix: "%"
+        ticksuffix: "%",
+        hoverformat: ".1f"
       },
       legend: {
         xanchor: "left",
@@ -345,22 +221,12 @@ function doPlot() {
   const pageloadPercent = document.getElementById("pageloadPercent");
   if ( pageloadPercent ) {
     pageloadPercent.innerHTML = waiting;
-    const currentHttpsReqPromise = fetch(path+"current-https-adoption.csv")
+    fetch(path+"chrome-https-adoption.csv")
     .then(response => {
       return response.text();
-    }).then(httpsCsvListener);
-
-    const historicalHttpsReqPromise = fetch(path+"historical-https-adoption.csv")
-    .then(response => {
-      return response.text();
-    }).then(historicalHttpsCsvListener);
-
-    // We shouldn't try to plot HTTPS until both the current and historical fetches
-    // are completed
-    Promise.all([currentHttpsReqPromise, historicalHttpsReqPromise])
-    .then(function(){
+    }).then(responseText => {
       pageloadPercent.innerHTML = ""; // remove waiting
-      httpsPlot(pageloadPercent);
+      chromeHttpsPlot(pageloadPercent, responseText);
     });
   }
 }
