@@ -109,17 +109,8 @@ other = "Aktivní počet"
 [graph_issued_per_day]
 other = "Vydáno za den"
 
-[graph_all_users]
-other = "Všichni uživatelé"
-
-[graph_usa_users]
-other = "Uživatelé v USA"
-
-[graph_japan_users]
-other = "Uživatelé v Japonsku"
-
 [graph_percent_https]
-other = "Procento načtených stránek přes HTTPS (14denní klouzavý průměr)"
+other = "Procento načtení stránek přes HTTPS"
 
 [certificate_policy]
 other = "Zásady pro vydávání certifikátů"
