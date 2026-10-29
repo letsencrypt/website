@@ -403,7 +403,13 @@ other = "En ideell organisation som tillhandahåller gratis TLS-certifikat till 
 other = "En ideell organisation som tillhandahåller gratis TLS-certifikat till mer än"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "webbplatser"
