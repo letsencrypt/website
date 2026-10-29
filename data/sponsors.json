@@ -379,6 +379,11 @@
       "name": "Datadog",
       "url": "https://www.datadoghq.com/",
       "image": "datadog-logo.svg"
+    },
+    {
+      "name": "NIC.br",
+      "url": "https://www.nic.br/",
+      "image": "nic-br-logo.svg"
     }
   ]
 }
