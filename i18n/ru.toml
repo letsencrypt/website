@@ -1,5 +1,5 @@
 [home_hero_title]
-other = "Encryption for Everybody. A nonprofit providing free TLS certificates to more than 500M websites."
+other = "Шифрование для всех. Некоммерческая организация, предоставляющая бесплатные TLS сертификаты более чем 500М веб-сайтам."
 
 [home_hero_getting_started]
 other = "Приступить"
@@ -17,7 +17,7 @@ other = "Читайте о нашей некоммерческой деятел�
 other = "Основные спонсоры и инвесторы"
 
 [home_from_our_blog]
-other = "Blog"
+other = "Блог"
 
 [read_more]
 other = "Ещё..."
@@ -29,25 +29,22 @@ other = 'Подписаться <a href="{{ .Permalink }}">на RSS</a>'
 other = "Помогите сделать Интернет безопасным и уважающим вашу конфиденциальность."
 
 [footer_donate]
-other = "Donate Now"
+other = "Пожертвовать сейчас"
 
 [footer_mailing]
 other = "Все письма и запросы отправляйте по адресу:"
 
 [footer_legal_address]
-other = "Legal Address"
+other = "Юридический адрес"
 
 [footer_policies]
 other = """
-View our <a href="/privacy/">privacy policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/trademarks">trademark policy</a>.<br>
-View our <a href="https://www.abetterinternet.org/terms-of-service">terms of service</a>.
-"""
+Посмотреть нашу <a href="/privacy/">политику конфиденциальности</a>.<br>
+Посмотреть нашу <a href="https://www.abetterinternet.org/trademarks">политику в отношении товарных знаков</a>.<br>
+Посмотреть наши <a href="https://www.abetterinternet.org/terms-of-service">условия обслуживания</a>."""
 
 [footer_links]
-other = """
-<a href="/privacy/">Privacy Policy</a> <a href="https://www.abetterinternet.org/trademarks">Trademark Policy</a>
-"""
+other = '<a href="/privacy/">Политика конфиденциальности</a> <a href="https://www.abetterinternet.org/trademarks">Политика в отношении товарных знаков</a>'
 
 [header_skip_nav]
 other = "Пропустить навигационные ссылки"
@@ -109,17 +106,8 @@ other = "Количество активных"
 [graph_issued_per_day]
 other = "Выпущено за сутки"
 
-[graph_all_users]
-other = "Все пользователи"
-
-[graph_usa_users]
-other = "Пользователи из США"
-
-[graph_japan_users]
-other = "Пользователи из Японии"
-
 [graph_percent_https]
-other = "Доля страниц, в %, загруженных по HTTPS (скользящая средняя за 14 дней)"
+other = "Доля загрузок страниц по протоколу HTTPS"
 
 [certificate_policy]
 other = "Политика сертификатов"
@@ -152,7 +140,7 @@ other = "Дата начала"
 other = "Дата окончания"
 
 [certification_practice_statement]
-other = "Заявление о практике сертификации"
+other = "Положение о практике сертификации"
 
 [overview]
 other = "Обзор"
@@ -182,13 +170,13 @@ other = "Кнопка «Поддержать через PayPal»"
 other = "Поддержите нас с помощью PayPal"
 
 [not_found_title]
-other = "404 - Page Not Found"
+other = "404 - Страница не найдена"
 
 [not_found_message]
-other = "The page you're looking for doesn't exist or has been moved."
+other = "Страницы, которую вы ищете, не существует или она была перемещена."
 
 [not_found_button]
-other = "Return to Homepage"
+other = "Вернуться на главную"
 
 [amount_per_year]
 other = "{{ .nb }} долларов США в год"
@@ -215,13 +203,13 @@ other = "ISRG отмечает 10 лет оказания помощи в соз
 other = "Internet Security Research Group"
 
 [header_donate_now]
-other = "Donate Now"
+other = "Пожертвовать сейчас"
 
 [toggle_menu_aria_label]
-other = "Toggle menu"
+other = "Переключить меню"
 
 [isrg_legal_address_label]
-other = "Legal Address"
+other = "Юридический адрес"
 
 [isrg_mailing_label]
 other = "Все письма и запросы отправляйте по адресу:"
@@ -236,7 +224,7 @@ other = "GitHub"
 other = "LinkedIn"
 
 [footer_nav_terms]
-other = "Terms"
+other = "Условия"
 
 [footer_nav_privacy]
 other = "Политика конфиденциальности"
@@ -245,295 +233,463 @@ other = "Политика конфиденциальности"
 other = "Политика товарных знаков"
 
 [home_hero_heading]
-other = "Encryption for<br /> Everybody"
+other = "Шифрование для<br /> всех"
 
 [home_hero_subheading]
-other = 'A nonprofit providing free TLS certificates to more than <span class="relative inline-block"><span class="invisible text-4xl">700M</span><span id="certificate-count" class="text-4xl absolute left-0">700M</span></span> websites.'
+other = 'Некоммерческая организация, предоставляющая бесплатные TLS сертификаты для более чем <span class="relative inline-block"><span class="invisible text-4xl">700М</span><span id="certificate-count" class="text-4xl absolute left-0">700М</span></span> веб-сайтам.'
 
 [home_hero_get_started]
 other = "Приступить"
 
 [home_hero_annual_report_title]
-other = "Explore our work to improve security and privacy"
+other = "Изучите нашу работу по повышению безопасности и конфиденциальности"
 
 [home_hero_annual_report_description]
-other = "Our 2025 Annual Report highlights the progress we've made toward a better Internet."
+other = "Наш годовой отчёт 2025 года подчеркивает прогресс, которого мы достигли в направлении улучшения Интернета."
 
 [home_hero_annual_report_button]
-other = "Read the Annual Report"
+other = "Прочитать годовой отчёт"
 
 [getting_started_eyebrow]
-other = "Free, Automated TLS Certificates"
+other = "Бесплатные, автоматизированные TLS сертификаты"
 
 [getting_started_heading]
-other = "Getting started"
+other = "Начало работы"
 
 [getting_started_description]
-other = "Let's Encrypt is a Certificate Authority that provides free TLS certificates, making it easy for websites to enable HTTPS encryption and create a more secure Internet for everyone. Let's Encrypt is a project of the nonprofit Internet Security Research Group."
+other = "Let's Encrypt — это центр сертификации, который предоставляет бесплатные TLS сертификаты, что облегчает веб-сайтам включение шифрования HTTPS и созданию более безопасного Интернета для всех. Let's Encrypt это некоммерческий проект Internet Security Research Group."
 
 [getting_started_ready_title]
-other = "Ready to begin?"
+other = "Готовы начать?"
 
 [getting_started_ready_content]
-other = "Start securing your websites with free SSL/TLS certificates from Let's Encrypt. In order to get a certificate for your website's domain, you have to demonstrate control over the domain."
+other = "Начните защищать свои веб-сайты с помощью бесплатных сертификатов SSL/TLS от Let's Encrypt. Чтобы получить сертификат для домена вашего веб-сайта, вы должны продемонстрировать контроль над доменом."
 
 [getting_started_ready_link]
-other = "Let's Get Started"
+other = "Давайте начнем"
 
 [getting_started_docs_title]
 other = "Документация"
 
 [getting_started_docs_content]
-other = "Learn about our certificate issuance process and best practices."
+other = "Узнайте о нашем процессе выдачи сертификатов и лучших практиках."
 
 [getting_started_docs_link]
-other = "Read Documentation"
+other = "Читать документацию"
 
 [getting_started_clients_title]
-other = "ACME Clients"
+other = "ACME Клиенты"
 
 [getting_started_clients_content]
-other = "Choose from our recommended ACME clients to automatically manage your certificates."
+other = "Выберите рекомендуемый ACME клиент для автоматического управления вашими сертификатами."
 
 [getting_started_clients_link]
-other = "Browse ACME Clients"
+other = "Просмотр ACME клиентов"
 
 [getting_started_help_title]
-other = "Get help from the Let's Encrypt Community"
+other = "Получить помощь от сообщества Let's Encrypt"
 
 [getting_started_help_content]
-other = "Join our community forum for technical assistance and knowledge sharing with experts, volunteers, and ISRG staff."
+other = "Присоединяйтесь к нашему сообществу для оказания технической помощи и обмена знаниями с экспертами, волонтерами и сотрудниками ISRG."
 
 [getting_started_help_link]
-other = "Visit the Forum"
+other = "Посетить форум"
 
 [support_heading_entire_sentence]
-other = "Global impact made possible by generosity, contributions, sponsorship, and you"
+other = "Глобальное воздействие стало возможным благодаря щедрости, вкладу, спонсорству и вам"
 
 [support_heading_base]
-other = "Global impact made possible by"
+other = "Глобальное воздействие стало возможным благодаря"
 
 [support_heading_word1]
-other = "generosity"
+other = "щедрость"
 
 [support_heading_word2]
-other = "contributions"
+other = "вклад"
 
 [support_heading_word3]
-other = "sponsorship"
+other = "спонсорство"
 
 [support_heading_word4]
-other = "you"
+other = "вы"
 
 [support_donate_title]
-other = "Support Encryption for Everybody"
+other = "Поддержите шифрование для всех"
 
 [support_donate_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Ваше пожертвование помогает сохранить Let's Encrypt свободным и доступным для миллионов веб-сайтов по всему миру. Присоединяйтесь к нам в обеспечении безопасности Интернета, по одному сайту за раз. Каждый вклад имеет значение, независимо от того, являетесь ли вы человеком или компанией."
 
 [support_donate_button]
-other = "Donate Now"
+other = "Пожертвовать сейчас"
 
 [support_sponsor_title]
-other = "Leading Through Sponsorship"
+other = "Лидерство через спонсорство"
 
 [support_sponsor_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Компании, которые полагаются или ценят нашу работу по шифрованию Интернета, могут финансово поддерживать Let's Encrypt. Присоединяйтесь к большим и малым компаниям, чтобы сделать это возможным!"
 
 [support_sponsor_button]
-other = "Learn about Sponsorship"
+other = "Узнать о спонсорстве"
 
 [sponsors_heading]
 other = "Основные спонсоры и инвесторы"
 
 [sponsors_diamond]
-other = "Diamond Level"
+other = "Алмазный уровень"
 
 [sponsors_platinum]
-other = "Platinum Level"
+other = "Платиновый уровень"
 
 [sponsors_gold]
-other = "Gold Level"
+other = "Золотой уровень"
 
 [sponsors_silver]
-other = "Silver Level"
+other = "Серебряный уровень"
 
 [common_read_more_arrow]
 other = " →"
 
 [newsletter_iframe_title]
-other = "Newsletter signup form"
+other = "Форма регистрации на рассылку"
 
 [blog_section_heading]
-other = "From our blog"
+other = "В нашем блоге"
 
 [blog_section_see_all]
-other = "See all our blog posts"
+other = "Посмотреть все наши записи в блоге"
 
 [post_hero_last_updated]
-other = "Last updated:"
+other = "Последнее обновление:"
 
 [post_hero_fresher_english]
-other = "More recently updated page available in English"
+other = "Обновленная страница доступна на английском языке"
 
 [post_hero_breadcrumb_blog]
-other = "Blog"
+other = "Блог"
 
 [post_support_heading]
-other = "Support Our Work"
+other = "Поддержать нашу работу"
 
 [post_support_body_html]
-other = "ISRG is a 501(c)(3) nonprofit organization that is 100% supported through the generosity of those who share our vision for ubiquitous, open Internet security. If you'd like to support our work, please consider <a href=\"https://www.abetterinternet.org/getinvolved/\">getting involved</a>, <a href=\"/donate/\">donating</a>, or encouraging your company to <a href=\"https://www.abetterinternet.org/sponsor/\">become a sponsor</a>."
+other = 'ISRG — это некоммерческая организация 501(c)(3), которая на 100% поддерживается щедростью тех, кто разделяет наше видение повсеместной, открытой интернет-безопасности. Если вы хотите поддержать нашу работу, пожалуйста, рассмотрите <a href="https://www.abetterinternet.org/getinvolved/">привлечение участия</a>, <a href="/donate/">пожертвование</a>, или желание вашей компании <a href="https://www.abetterinternet.org/sponsor/">стать спонсором</a>.'
 
 [donate_get_involved_button]
 other = "Внесите свой вклад"
 
 [donate_individual_impact_eyebrow]
-other = "Individual Impact"
+other = "Индивидуальный вклад"
 
 [donate_encryption_everybody_alt]
-other = "Encryption for Everybody"
+other = "Шифрование для всех"
 
 [project_card_visit]
-other = "Visit"
+other = "Перейти"
 
 [internet_security_research_group_initials]
 other = "ISRG"
 
 [home_hero_nonprofit_sentence]
-other = "A nonprofit providing free TLS certificates to more than ### websites"
+other = "Некоммерческая организация, предоставляющая бесплатные TLS сертификаты для более чем ### веб-сайтов"
 
 [home_hero_nonprofit_prefix]
-other = "A nonprofit providing free TLS certificates to more than"
+other = "Некоммерческая организация, предоставляющая бесплатные TLS сертификаты для более чем"
 
 [home_hero_certificate_count]
 other = "700M"
 
 [home_hero_nonprofit_suffix]
-other = "websites"
+other = "веб-сайты"
 
 [projects_section_title]
-other = "More ways we're improving security and privacy"
+other = "Больше способов улучшения безопасности и конфиденциальности"
 
 [projects_section_description]
-other = "Did you know Let's Encrypt has two sibling projects? Let's Encrypt and these two projects are operated by Internet Security Research Group (ISRG), a 501(c)(3) public benefit organization focused on making the Internet more secure and privacy respecting."
+other = "Знаете ли вы, что у Let's Encrypt есть два родственных проекта? Let's Encrypt, и эти два проекта управляются Internet Security Research Group (ISRG), общественной организацией 501(c)(3), ориентированной на то, чтобы сделать Интернет более безопасным и уважающим конфиденциальность."
 
 [project_prossimo_name]
 other = "Prossimo"
 
 [project_prossimo_description]
-other = "Focused on memory safety in critical Internet infrastructure through the use of memory safe programming languages."
+other = "Основное внимание уделяется безопасности памяти в критической инфраструктуре Интернета посредством использования языков для безопасного программирования памяти."
 
 [project_divviup_name]
 other = "Divvi Up"
 
 [project_divviup_description]
-other = "A privacy-respecting system for collecting and aggregating metrics, built on Multi-Party Computation."
+other = "Система уважения к конфиденциальности для сбора и агрегирования показателей, построенная на многопартийных вычислениях."
 
 [support_donate_section_title]
-other = "Support Encryption for Everybody"
+other = "Поддержите шифрование для всех"
 
 [support_donate_section_description]
-other = "Your donation helps keep Let's Encrypt free and accessible to millions of websites around the world. Join us in securing the Internet, one site at a time. Every contribution makes a difference, whether you're an individual or a company."
+other = "Ваше пожертвование помогает сохранить Let's Encrypt свободным и доступным для миллионов веб-сайтов по всему миру. Присоединяйтесь к нам в обеспечении безопасности Интернета, по одному сайту за раз. Каждый вклад имеет значение, независимо от того, являетесь ли вы человеком или компанией."
 
 [support_donate_section_button]
-other = "Donate Now"
+other = "Пожертвовать сейчас"
 
 [support_sponsor_section_title]
-other = "Leading Through Sponsorship"
+other = "Лидерство через спонсорство"
 
 [support_sponsor_section_description]
-other = "Companies who rely on or value our work to encrypt the Web can financially support Let's Encrypt. Join companies big and small to make this work possible!"
+other = "Компании, которые полагаются или ценят нашу работу по шифрованию Интернета, могут финансово поддерживать Let's Encrypt. Присоединяйтесь к большим и малым компаниям, чтобы сделать это возможным!"
 
 [support_sponsor_section_button]
-other = "Learn about Sponsorship"
+other = "Узнать о спонсорстве"
 
 [stats_section_title]
 other = "Развитие Let's Encrypt"
 
 [stats_section_button]
-other = "More stats"
+other = "Больше статистики"
 
 [donate_page_make_recurring_donation_title]
-other = "Make a Recurring Donation"
+other = "Оформить регулярное пожертвование"
 
 [donate_page_make_recurring_donation_content]
-other = "Encrypting the Web is daily work—certs need to be renewed! Your sustaining support ensures we can sustain renewing certs at scale."
+other = "Шифрование интернета — это ежедневная работа: сертификаты нужно регулярно продлевать! Ваша постоянная поддержка позволяет нам и дальше заниматься продлением сертификатов в массовом масштабе."
 
 [donate_page_make_recurring_donation_link]
-other = "Start your recurring donation now"
+other = "Начните ваше регулярное пожертвование сейчас"
 
 [donate_page_stock_donations_title]
-other = "Donations of Stock"
+other = "Пожертвование акций"
 
 [donate_page_crypto_gifts_title]
-other = "Gifts of Cryptocurrency"
+other = "Подарки в виде криптовалюты"
 
 [donate_page_other_ways_title]
-other = "Other Ways to Give"
+other = "Другие способы пожертвования"
 
 [donate_page_ways_to_give_heading]
-other = "WAYS TO GIVE"
+other = "СПОСОБЫ ПОЖЕРТВОВАТЬ"
 
 [donate_page_funding_details_stat_text]
-other = "Enable our work at Let's Encrypt through your charitable contribution."
+other = "Поддержите работу Let's Encrypt своим благотворительным взносом."
 
 [donate_page_funding_details_why_support_heading]
-other = "WHY SUPPORT?"
+other = "ПОЧЕМУ СТОИТ ПОДДЕРЖАТЬ?"
 
 [donate_page_funding_details_list_item1]
-other = "Free, automated, and easy to use TLS certificates."
+other = "Бесплатные, автоматизированные и простые в использовании TLS-сертификаты."
 
 [donate_page_funding_details_list_item2]
-other = "We make it easy to use one or one million certs."
+other = "Мы упрощаем использование как одного, так и миллиона сертификатов."
 
 [donate_page_funding_details_list_item3]
-other = "You make HTTPS possible all around the world."
+other = "Благодаря вам HTTPS работает по всему миру."
 
 [donate_page_funding_details_list_item4]
-other = "Help us continue operating at a truly global scale."
+other = "Помогите нам и дальше работать в по-настоящему глобальном масштабе."
 
 [donate_page_stock_intro_text]
-other = "Appreciated securities or mutual fund shares that you've owned for more than one year can be excellent charitable gifts."
+other = "Ценные бумаги или акции фонда, которыми вы владеете более одного года, могут стать отличным вариантом для благотворительного пожертвования."
 
 [donate_page_stock_table_brokerage_firm]
-other = "Brokerage Firm:"
+other = "Брокерская фирма:"
 
 [donate_page_stock_table_account_name]
-other = "Account Name:"
+other = "Имя учётной записи:"
 
 [donate_page_stock_table_account_number]
-other = "ISRG Account #:"
+other = "Учётная запись ISRG #:"
 
 [donate_page_stock_table_dtc_number]
 other = "DTC #:"
 
 [donate_page_stock_table_tax_id]
-other = "Tax ID #:"
+other = "Налоговый ID:"
 
 [donate_page_stock_outro_text]
-other = "Please let us know if you are transferring securities at {{ .sponsorEmailLink }}. You may also want to email the letter of authorization from your broker."
+other = "Пожалуйста, сообщите нам о переводе ценных бумаг по адресу {{ .sponsorEmailLink }}. Также рекомендуем прислать по электронной почте письмо-авторизацию от вашего брокера."
 
 [donate_page_other_daf_heading]
-other = "Donor Advised Funds"
+other = "Рекомендованные фонды для благотворителей"
 
 [donate_page_other_daf_text]
-other = "Recommend a donation to Internet Security Research Group (our parent org) from your gift fund. 100% of your donation will go to support a secure and privacy-respecting Internet."
+other = "Рекомендуем сделать пожертвование для Internet Security Research Group (нашей головной организации) из вашего благотворительного фонда. 100% суммы пожертвования пойдет на поддержку безопасного Интернета, в котором соблюдается право на конфиденциальность."
 
 [donate_page_other_workplace_heading]
-other = "In Your Workplace"
+other = "На вашем рабочем месте"
 
 [donate_page_other_workplace_recommend_sponsorship]
-other = "Recommend that your employer supports our work through {{ .sponsorshipLink }}."
+other = "Порекомендуйте своему работодателю поддержать нашу работу через {{ .sponsorshipLink }}."
 
 [donate_page_other_workplace_sponsorship_link_text]
 other = "Спонсорство"
 
 [donate_page_other_workplace_matching_gifts]
-other = "Many organizations match donations to nonprofits made by employees. Check if your organization has a matching program and double your impact!"
+other = "Многие организации удваивают пожертвования, которые их сотрудники делают в пользу некоммерческих организаций. Узнайте, есть ли в вашей компании такая программа, — и ваш вклад станет вдвое значимее!"
 
 [donate_page_crypto_text]
-other = "We are able to accept most cryptocurrency donations {{ .cryptoLink }}."
+other = "Мы можем принять большинство пожертвований в криптовалютах {{ .cryptoLink }}."
 
 [donate_page_crypto_link_text]
-other = "here"
+other = "здесь"
+
+[donate_2026_page_title]
+other = "Поддержите нашу работу!"
+
+[donate_2026_funding_details_stat_text]
+other = "Получите футболку из лимитированной серии «ISRG Root X1», сделав пожертвование в размере 75 долларов или больше этим летом."
+
+[donate_2026_shirt_image_alt]
+other = 'Футболка лимитированной серии "ISRG Root X1"'
+
+[donate_2026_ways_to_give_heading]
+other = "Другие способы сделать пожертвование"
+
+[donate_2026_employer_matching_gifts_title]
+other = "Помощь финансированию пожертвований со стороны работодателя"
+
+[donate_2026_employer_matching_gifts_text]
+other = "Многие организации удваивают пожертвования, которые их сотрудники делают в пользу некоммерческих организаций. Узнайте, есть ли в вашей компании такая программа, — и ваш вклад станет вдвое значимее!"
+
+[donate_2026_become_a_sponsor_title]
+other = "Стать спонсором"
+
+[donate_2026_become_a_sponsor_text]
+other = "Нашу деятельность поддерживают почти 100 компаний и организаций — от небольших фирм, состоящих всего из двух человек, до некоммерческих структур и корпораций из списка Fortune 100. Присоединяйтесь к числу наших щедрых спонсоров, которые помогают сделать Интернет более безопасным и уважающим конфиденциальность для миллиардов людей."
+
+[donate_2026_become_a_sponsor_link_text]
+other = "здесь"
+
+[donate_2026_become_a_sponsor_link_sentence]
+other = "Узнать больше {{ .sponsorshipLink }}."
+
+[donate_2026_donate_stock_title]
+other = "Пожертвовать акции"
+
+[donate_2026_donate_stock_intro_text]
+other = "Ценные бумаги или акции фонда, которыми вы владеете более одного года, могут стать отличным вариантом для пожертвования."
+
+[donate_2026_donate_stock_brokerage_firm]
+other = "Брокерская фирма:"
+
+[donate_2026_donate_stock_brokerage_firm_value]
+other = "Vanguard"
+
+[donate_2026_donate_stock_account_name]
+other = "Имя учётной записи:"
+
+[donate_2026_donate_stock_account_name_value]
+other = "Internet Security Research Group"
+
+[donate_2026_donate_stock_account_number]
+other = "Учётная запись #:"
+
+[donate_2026_donate_stock_account_number_value]
+other = "44865458"
+
+[donate_2026_donate_stock_dtc_number]
+other = "DTC #:"
+
+[donate_2026_donate_stock_dtc_number_value]
+other = "0062"
+
+[donate_2026_donate_stock_tax_id]
+other = "Налоговый ID:"
+
+[donate_2026_donate_stock_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_donate_stock_outro_text]
+other = "Если вы планируете передать ценные бумаги, пожалуйста, свяжитесь с нами по адресу {{ .donateEmailLink }} — это позволит нам правильно учесть ваш подарок."
+
+[donate_2026_donate_stock_online_text]
+other = "Вы также можете пожертвовать акции — это делается всего в несколько кликов через {{ .givingBlockLink }}. Поскольку при таких операциях с нас удерживаются комиссии за обработку платежей, пожалуйста, рассмотрите возможность их покрытия: это поможет сделать ваш вклад максимально эффективным."
+
+[donate_2026_donate_cryptocurrency_title]
+other = "Пожертвовать криптовалюту"
+
+[donate_2026_donate_cryptocurrency_text]
+other = "Мы принимаем большинство видов криптовалют. Вы можете сделать пожертвование, перейдя по ссылке: {{ .givingBlockLink }}. Поскольку при проведении таких транзакций взимаются комиссии, просим вас по возможности покрыть их — это поможет вашему пожертвованию принести максимальную пользу."
+
+[donate_2026_donor_advised_funds_title]
+other = "Фонды рекомендуемые благотворителям (DAF)"
+
+[donate_2026_donor_advised_funds_text]
+other = "Просто сообщите рекомендуемому фонду (DAF), что вы хотели бы сделать пожертвование в пользу:"
+
+[donate_2026_donor_advised_funds_online_text]
+other = "Вы также можете сделать пожертвование через свой DAF с помощью сервиса DAFpay — это займет всего пару кликов: {{ .givingBlockLink }}. Поскольку при таком способе оплаты с нас удерживаются комиссионные сборы, пожалуйста, рассмотрите возможность их покрытия — это поможет вашему пожертвованию принести максимальную пользу."
+
+[donate_2026_org_name]
+other = "Internet Security Research Group"
+
+[donate_2026_org_ein]
+other = "EIN: 46-3344200"
+
+[donate_2026_org_address_line1]
+other = "548 Market St"
+
+[donate_2026_org_address_line2]
+other = "PMB 77519"
+
+[donate_2026_org_address_line3]
+other = "San Francisco, California 94104-5401"
+
+[donate_2026_planned_legacy_giving_title]
+other = "Планируемые пожертвования и дары по завещанию"
+
+[donate_2026_planned_legacy_giving_text]
+other = "Пожалуйста, рассмотрите возможность включения ISRG в число бенефициаров вашего завещания или пенсионного плана. Это поможет защитить пользователей Интернета, способствуя снижению финансовых, технологических и информационных барьеров на пути к созданию более безопасной сети, в которой соблюдается право на конфиденциальность."
+
+[donate_2026_planned_legacy_giving_notify_text]
+other = "Включили ли вы ISRG в свои планы по распоряжению имуществом? {{ .legacyGivingFormLink }}."
+
+[donate_2026_planned_legacy_giving_confidentiality_text]
+other = "Хотя оформление документов, касающихся вашего запланированного пожертвования, является конфиденциальным и не накладывает на вас обязательств, это позволяет нам планировать будущее, а также выразить вам благодарность за вашу щедрость уже сегодня."
+
+[donate_2026_planned_legacy_giving_advisor_text]
+other = "Пожалуйста, обратитесь за консультацией к своему финансовому или юридическому консультанту."
+
+[donate_2026_qualified_charitable_distribution_title]
+other = "Квалифицированное благотворительное распределение"
+
+[donate_2026_qualified_charitable_distribution_text]
+other = "Если вам 70½ лет или больше, вы можете сделать пожертвование в пользу ISRG напрямую со своего индивидуального пенсионного счета (IRA), открытого в США, не уплачивая подоходный налог с этой суммы. Такой вариант часто называют «благотворительным переводом из IRA» или «квалифицированным благотворительным распределением» (QCD) Вы можете пожертвовать сумму, не превышающую установленный IRS ежегодный лимит, который пересматривается каждый год, поэтому уточните актуальный размер лимита у своего финансового консультанта."
+
+[donate_2026_qualified_charitable_distribution_advisor_text]
+other = "Пожалуйста, обратитесь за консультацией к своему финансовому или юридическому консультанту."
+
+[donate_2026_qualified_charitable_distribution_instructions_text]
+other = "Чтобы сделать пожертвование, попросите администратора вашего пенсионного счета (IRA) направить средства непосредственно в ISRG. Предоставьте ему наше официальное юридическое имя и федеральный налоговый идентификатор (Federal Tax ID), чтобы нас можно было идентифицировать. Пожалуйста, также сообщите нам о своем пожертвовании. Часто администраторы IRA переводят средства, не указывая имя благотворителя; поэтому, если вы напишете нам короткое сообщение, мы сможем поблагодарить вас и учесть все ваши пожелания относительно этого пожертвования."
+
+[donate_2026_legal_name_label]
+other = "Юридическое имя:"
+
+[donate_2026_legal_address_label]
+other = "Адрес:"
+
+[donate_2026_org_full_address]
+other = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+
+[donate_2026_federal_tax_id_label]
+other = "Federal tax ID number:"
+
+[donate_2026_federal_tax_id_value]
+other = "46-3344200"
+
+[donate_2026_mailing_address_heading]
+other = "Почтовый адрес"
+
+[donate_2026_mailing_address_intro]
+other = "(только для обработки чеков)"
+
+[donate_2026_mailing_address_attention]
+other = "Internet Security Research Group"
+
+[donate_2026_mailing_address_line1]
+other = "ATTN: Advancement Department"
+
+[donate_2026_mailing_address_line2]
+other = "PO Box 18666"
+
+[donate_2026_mailing_address_line3]
+other = "Minneapolis, MN 55418-0666, USA"
+
+[donate_2026_donate_by_check_title]
+other = "Пожертвование чеком"
+
+[donate_2026_donate_by_check_text]
+other = 'Вы можете сделать пожертвование, выписав именной чек на имя "ISRG" и отправив его по указанному ниже адресу:'
