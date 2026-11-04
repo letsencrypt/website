@@ -395,7 +395,13 @@ other = "Некоммерческая организация, предостав
 other = "Некоммерческая организация, предоставляющая бесплатные TLS сертификаты для более чем"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "веб-сайты"

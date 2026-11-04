@@ -407,7 +407,13 @@ other = "En nonprofit, der leverer gratis TLS-certifikater til mere end ### hjem
 other = "En nonprofit, der leverer gratis TLS-certifikater til mere end"
 
 [home_hero_certificate_count]
-other = "700M"
+other = "700"
+
+[abbreviation_million]
+other = "M"
+
+[abbreviation_billion]
+other = ""
 
 [home_hero_nonprofit_suffix]
 other = "websites"

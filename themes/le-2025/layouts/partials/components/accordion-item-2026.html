@@ -10,8 +10,8 @@
     aria-expanded="{{ if .is_open }}true{{ else }}false{{ end }}"
   >
     <img src="/images/le-logo-lockonly.svg" class="w-5 h-5 transform -translate-y-0.5" alt="" />
-    <span class="text-left text-xl text-le-blue font-bold">{{ .title }}</span>
-    <div class="ml-auto flex items-center">
+    <span class="text-start text-xl text-le-blue font-bold">{{ .title }}</span>
+    <div class="ms-auto flex items-center">
       <span class="text-le-blue text-xl font-medium accordion-icon">{{ if .is_open }}−{{ else }}+{{ end }}</span>
     </div>
   </a>
@@ -26,7 +26,7 @@
       {{ end }}
       {{ if and .link_url .link_text }}
         <a href="{{ .link_url }}" class="text-link hover:text-link-hover active:text-link-active underline">
-          {{ .link_text }} →
+          {{ .link_text }} {{ if eq site.Language.Direction "rtl" }}←{{ else }}→{{ end }}
         </a>
       {{ end }}
     </div>
