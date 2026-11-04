@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-11-04",
 	"categories": [
 		"Bash",
 		"C",
@@ -900,6 +900,16 @@
 			"name": "CertKit",
 			"url": "https://www.certkit.io/",
 			"comments": "Deployable and SaaS certificate lifecycle management and monitoring",
+			"category": "Server",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "EverTLS",
+			"url": "https://evertls.com/",
+			"comments": "SaaS and self-hosted certificate lifecycle management, with signed agents for nginx, Apache, HAProxy, Postfix, Dovecot and IIS",
 			"category": "Server",
 			"challenges": {
 				"HTTP-01": "true",
