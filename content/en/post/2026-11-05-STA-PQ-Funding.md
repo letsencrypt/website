@@ -12,7 +12,7 @@ display_inline_newsletter_embed: false
     <img alt="Sovereign Tech Agency logo" class="img-fluid" src="/images/blog/sovereign-tech-agency-logo.png" />
 </div>
 
-Sovereign Tech Agency is investing in the development of a Merkle Tree Certificate Authority at Let’s Encrypt through the end of 2027 with a contract totaling more than €1M. This is the largest single investment in post-quantum readiness at Let’s Encrypt to date. This investment will help pave the path for free post-quantum Merkle Tree Certificates for people globally.
+Sovereign Tech Agency is investing in the development of a Merkle Tree Certificate Authority at Let’s Encrypt through the end of 2027 with a [contract totaling more than €1M](https://www.sovereign.tech/tech/lets-encrypt-pqc). This is the largest single investment in post-quantum readiness at Let’s Encrypt to date. This investment will help pave the path for free post-quantum Merkle Tree Certificates for people globally.
 
 <div class="pull-quote-right">
   <blockquote class="blockquote">
