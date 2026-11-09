@@ -109,17 +109,8 @@ other = "Aktive Antal"
 [graph_issued_per_day]
 other = "Udstedt Per Dag"
 
-[graph_all_users]
-other = "Alle brugere"
-
-[graph_usa_users]
-other = "USA brugere"
-
-[graph_japan_users]
-other = "Japanske brugere"
-
 [graph_percent_https]
-other = "Procent af Sidevisninger over HTTPS (14 dages glidende gennemsnit)"
+other = "Procent af sidebelastninger over HTTPS"
 
 [certificate_policy]
 other = "Certifikatpolitik"
