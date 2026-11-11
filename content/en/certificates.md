@@ -2,7 +2,7 @@
 title: Chains of Trust
 linkTitle: Chains of Trust (Root and Intermediate Certificates)
 slug: certificates
-lastmod: 2026-07-08
+lastmod: 2026-11-11
 show_lastmod: 1
 ---
 
@@ -35,7 +35,7 @@ Note that Root CAs don't have expiration dates in quite the same way that other 
   * CRL hostname: `x2.c.lencr.org`
   * Test websites: [valid](https://valid.x2.test-certs.letsencrypt.org/), [revoked](https://revoked.x2.test-certs.letsencrypt.org/), [expired](https://expired.x2.test-certs.letsencrypt.org/)
 
-These roots are not yet included in Root Program Trust Stores, but will be submitted for inclusion soon:
+These roots have been submitted for inclusion in Root Program Trust Stores, but are not yet widely trusted:
 
 * **ISRG Root YE**
   * Subject: `C=US, O=ISRG, CN=Root YE`
