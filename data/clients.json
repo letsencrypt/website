@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-11-13",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,17 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "Acmefyer",
+			"url": "https://www.wedigo.net/acmefyer",
+			"category": "Windows / IIS",
+			"comments": "Agent-based certificate manager for Windows and Linux, suited to segmented on-premises networks: renews certificates centrally and rolls them out to IIS, Exchange, FortiGate, NGINX and more without open ports on the target servers",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "true"
 			}
 		}
 	]
