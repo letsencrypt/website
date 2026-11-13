@@ -1,0 +1,21 @@
+{{/* Site banner. Settings: site_banner_* params in the site config. Styles: static/site-banner/. See "Site banner" in README.md.
+     Include with the header's container classes so the banner lines up with the navigation:
+     {{ partial "site-banner.html" (dict "page" . "container" "container") }} */}}
+{{ $page := .page }}
+{{ $p := site.Params }}
+{{ $schedule := $p.site_banner_schedule | default slice }}
+{{ if and (eq $page.Language.Lang "en") (or $p.site_banner_enabled $schedule) }}
+  {{ $config := dict "enabled" ($p.site_banner_enabled | default false) "text" ($p.site_banner_text | default "") "href" ($p.site_banner_href | default "") "label" ($p.site_banner_label | default "") "schedule" $schedule }}
+  <link rel="stylesheet" href="{{ "site-banner/site-banner.css" | relURL }}?v={{ readFile "static/site-banner/site-banner.css" | md5 }}">
+  <link rel="stylesheet" href="{{ "site-banner/theme.css" | relURL }}?v={{ readFile "static/site-banner/theme.css" | md5 }}">
+  <aside class="site-banner" aria-label="Announcement" data-site-banner="{{ $config | jsonify }}" hidden>
+    <div class="{{ .container }}">
+      <div class="site-banner__inner">
+        <p class="site-banner__message"></p>
+        <a class="site-banner__cta" hidden></a>
+        <button class="site-banner__close" type="button" aria-label="Dismiss banner"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 5 14 14M19 5 5 19" /></svg></button>
+      </div>
+    </div>
+  </aside>
+  <script src="{{ "site-banner/site-banner.js" | relURL }}?v={{ readFile "static/site-banner/site-banner.js" | md5 }}" defer></script>
+{{ end }}
