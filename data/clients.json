@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-10-31",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,15 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "SSLense",
+			"url": "https://sslense.com/",
+			"category": "Windows / IIS",
+			"comments": "(GUI, CLI and Windows service - .NET, C#)",
+			"challenges": {
+				"HTTP-01": "true"
 			}
 		}
 	]
