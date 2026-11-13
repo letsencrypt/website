@@ -1,0 +1,85 @@
+.site-banner[hidden] { display: none !important; }
+.site-banner {
+  background: var(--site-banner-bg, #12365a);
+  color: var(--site-banner-text, #fff);
+  font-family: inherit;
+  position: relative;
+  z-index: 2;
+  /* Match the navbar's side padding; set per site in theme.css. */
+  padding-inline: var(--site-banner-gutter, 0px);
+}
+.site-banner, .site-banner * { box-sizing: border-box; }
+.site-banner__inner {
+  padding-block: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 44px;
+  align-items: center;
+  gap: 20px;
+}
+.site-banner .site-banner__message {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.site-banner .site-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: var(--site-banner-button, #fff);
+  color: var(--site-banner-button-text, #12365a) !important;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-banner .site-banner__cta:hover { text-decoration: underline; }
+.site-banner .site-banner__cta[hidden] { display: none; }
+.site-banner .site-banner__message a { color: inherit; text-decoration: underline; }
+.site-banner .site-banner__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  /* The X is drawn 14px inside the button; shift it so the X meets the container edge. */
+  margin-right: -14px;
+  justify-self: end;
+}
+.site-banner .site-banner__close:hover { background: color-mix(in srgb, currentColor 14%, transparent); }
+.site-banner .site-banner__close:active { background: color-mix(in srgb, currentColor 24%, transparent); }
+.site-banner .site-banner__close svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+.site-banner .site-banner__cta:focus-visible,
+.site-banner .site-banner__close:focus-visible {
+  outline: 3px solid var(--site-banner-text, #fff);
+  outline-offset: 4px;
+}
+.site-banner__close { grid-column: 3; }
+@media (max-width: 640px) {
+  .site-banner__inner { grid-template-columns: minmax(0, 1fr) 44px; gap: 12px 16px; padding-block: 16px; }
+  .site-banner__message { grid-column: 1; grid-row: 1; }
+  .site-banner__cta { grid-column: 1; grid-row: 2; justify-self: start; }
+  .site-banner__close { grid-column: 2; grid-row: 1; align-self: start; }
+}
