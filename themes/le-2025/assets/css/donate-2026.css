@@ -21,3 +21,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.donation-page-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.donation-page-form { order: 2; width: 100%; max-width: 540px; margin-inline: auto; }
+.donation-page-ways { order: 1; background: #003a70; padding: 24px; border-radius: 8px; min-width: 0; }
+@media (max-width: 767px) {
+  .donation-page-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .donation-page-form { order: 0; }
+  .donation-page-ways { padding: 20px; }
+}

@@ -11,7 +11,22 @@
 {{ end }}
 
 {{ define "main" }}
-{{ partial "components/post-hero-image" (dict "page" . "image" "images/donate-hero.jpg" "title" .Title) }}
+{{ partial "components/post-hero-image" (dict "page" . "image" "images/donate-hero.jpg" "title" .Title "subtitle" .Params.subtitle) }}
+{{ if eq .Language.Lang "en" }}
+<div id="page-Donate2026">
+  <div class="container mx-auto py-8 prose-content">
+    <div class="donation-page-grid">
+      <div class="donation-page-form">
+        <div id="donate-form-anchor"></div>
+        {{ partial "donation-forms-2026.html" . }}
+      </div>
+      <div class="donation-page-ways">
+        {{ partial "donate-accordion-2026.html" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ else }}
 <div id="page-Donate2026">
   <div class="container mx-auto py-8 prose-content">
     <div id="cmp-Donate2026TopGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
@@ -33,6 +48,7 @@
     </div>
   </div>
 </div>
+{{ end }}
 {{ with resources.Get "js/donate-2026.js" }}
   {{ if eq hugo.Environment "development" }}
     {{ with . | js.Build }}
