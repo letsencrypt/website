@@ -2,7 +2,7 @@
 title: 证书信任链
 linkTitle: 证书信任链（根证书和中间证书）
 slug: certificates
-lastmod: 2026-07-08
+lastmod: 2026-11-11
 show_lastmod: 1
 ---
 
@@ -35,7 +35,7 @@ show_lastmod: 1
   * CRL 域名：`x2.c.lencr.org`
   * 测试网站：[正常证书](https://valid.x2.test-certs.letsencrypt.org/)、[已吊销证书](https://revoked.x2.test-certs.letsencrypt.org/)、[已过期证书](https://expired.x2.test-certs.letsencrypt.org/)
 
-下列根证书尚未加入各类可信证书库，但近期将进入申请阶段：
+下列根证书已提交至各类可信证书库，但尚未得到广泛信任：
 
 * **ISRG Root YE**
   * 主体：`C=US, O=ISRG, CN=Root YE`
