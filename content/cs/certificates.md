@@ -2,7 +2,7 @@
 title: Řetězce důvěryhodnosti
 linkTitle: Řetězce důvěryhodnosti (Kořenové a zprostředkující certifikáty)
 slug: certificates
-lastmod: 2026-07-08
+lastmod: 2026-11-11
 show_lastmod: 1
 ---
 
@@ -35,7 +35,7 @@ Upozorňujeme, že kořenové CA nemají datum platnosti ve stejném smyslu jako
   * CRL hostname: `x2.c.lencr.org`
   * Testovací webstránky: [platný](https://valid.x2.test-certs.letsencrypt.org/), [odvolaný](https://revoked.x2.test-certs.letsencrypt.org/), [expirovaný](https://expired.x2.test-certs.letsencrypt.org/)
 
-Tyto kořeny zatím nejsou zahrnuty v úložištích důvěryhodných kořenových programů (Trust Stores), ale brzy budou předloženy k zařazení:
+Tyto kořenové certifikáty už byly předloženy k zařazení do úložišť důvěryhodných certifikátů kořenových programů, zatím jim ale většina systémů nedůvěřuje:
 
 * **ISRG Root YE**
   * Předmět: `C=US, O=ISRG, CN=Root YE`
