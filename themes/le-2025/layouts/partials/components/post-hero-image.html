@@ -10,6 +10,7 @@
             >
               {{ .title }}
             </h1>
+            {{ with .subtitle }}<p class="text-xl md:text-2xl leading-normal">{{ . }}</p>{{ end }}
           </div>
         </div>
         <div class="hidden md:visible md:col-span-4">&nbsp;</div>
