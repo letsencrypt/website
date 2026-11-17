@@ -93,14 +93,6 @@
   </div>
 </header>
 
-{{ if .Site.Params.site_banner_enabled }}
-  <div class="bg-blue-600 text-white py-2">
-    <div class="container mx-auto px-4">
-      <div class="text-center">
-        <a href="{{ .Site.Params.site_banner_href }}" class="hover:underline">{{ i18n "site_banner_text" }}</a>
-      </div>
-    </div>
-  </div>
-{{ end }}
+{{ partial "site-banner.html" (dict "page" . "container" "container mx-auto px-4") }}
 
 <div id="main-content"></div>

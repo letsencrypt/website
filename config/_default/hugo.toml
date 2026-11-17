@@ -106,3 +106,28 @@ autoHeadingIDType = "blackfriday"
 # To avoid inline styles
 noClasses = false
 guessSyntax = false
+
+# Site banner messages with dates; see "Site banner" in README.md.
+[[params.site_banner_schedule]]
+id = "giving-tuesday"
+start = "2026-12-01T00:00:00-06:00"
+end = "2026-12-02T00:00:00-06:00"
+text = "It’s Giving Tuesday! As a nonprofit, we rely on our generous community of donors."
+label = "Donate Today"
+href = "https://letsencrypt.org/donate/"
+
+[[params.site_banner_schedule]]
+id = "monthly"
+start = "2026-12-02T00:00:00-06:00"
+end = "2026-12-26T00:00:00-06:00"
+text = "Your certs auto-renew. Your support can, too. Give to ISRG and help keep the Internet security flowing."
+label = "Donate monthly"
+href = "https://letsencrypt.org/donate/"
+
+[[params.site_banner_schedule]]
+id = "year-end"
+start = "2026-12-26T00:00:00-06:00"
+end = "2027-01-01T00:00:00-06:00"
+text = "ISRG protects billions of people online, every day. Join us by making a donation before December 31 to finish the year strong."
+label = "Donate Today"
+href = "https://letsencrypt.org/donate/"
