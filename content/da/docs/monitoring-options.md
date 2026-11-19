@@ -1,7 +1,7 @@
 ---
 title: Indstillinger For Overvågningstjeneste
 slug: monitoring-options
-lastmod: 2026-07-13
+lastmod: 2026-08-21
 show_lastmod: 1
 ---
 
@@ -20,6 +20,7 @@ Der er en række andre overvågningsmuligheder derude, herunder:
 - [CertKit](https://www.certkit.io/)
 - [CertObserver](https://certobserver.com/)
 - [Chill SSL](https://www.chillssl.com/)
+- [SSLreminder](https://sslreminder.pro/)
 
 Bemærk venligst, at ingen af disse tjenester ikke er tilknyttet ISRG / Let's Encrypt.
 
