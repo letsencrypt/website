@@ -102,7 +102,7 @@
 }
 @utility donorbox-container {
   #donate-2025-page & iframe {
-    @apply md:ml-auto w-full;
+    @apply md:ms-auto w-full;
   }
 }
 
@@ -187,7 +187,7 @@
   }
 
   & td:not(:last-child) {
-    @apply border-r border-[#e8e8e8];
+    @apply border-e border-[#e8e8e8];
   }
 
   & tr:last-child td {
@@ -254,6 +254,21 @@
   }
 }
 @utility prose-content {
+  /* Long URLs and identifiers must not widen translated content. */
+  overflow-wrap: anywhere;
+
+  & code {
+    unicode-bidi: isolate;
+  }
+
+  /* Preserve readable columns; wide tables scroll without moving the page. */
+  & table {
+    display: block;
+    max-inline-size: 100%;
+    overflow-x: auto;
+    overflow-wrap: normal;
+  }
+
   & h1:not(:first-child) {
     @apply mt-8;
   }
@@ -274,11 +289,11 @@
   }
 
   & ul {
-    @apply mb-6 pl-5;
+    @apply mb-6 ps-5;
   }
 
   & ol {
-    @apply mb-6 pl-5;
+    @apply mb-6 ps-5;
   }
 
   & ul {
@@ -307,7 +322,7 @@
   }
 
   & blockquote {
-    @apply pl-4 py-1 my-6 border-l-4 border-gray-300 text-gray-700 italic;
+    @apply ps-4 py-1 my-6 border-s-4 border-gray-300 text-gray-700 italic;
   }
 
   & h1 {
@@ -360,15 +375,15 @@
   }
 }
 @utility list-lock-icon {
-  @apply list-none pl-0!;
+  @apply list-none ps-0!;
 
   & li {
-    @apply relative pl-[53px] mb-7 list-none pt-2  min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue; /* Add list-none to li */
+    @apply relative ps-[53px] mb-7 list-none pt-2  min-h-[43px] font-semibold text-[20px] leading-[26px] tracking-[0.05em] text-le-blue; /* Add list-none to li */
   }
 
   & li::before {
     content: '';
-    @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
+    @apply absolute start-0 top-1/2 transform -translate-y-1/2 w-[40px] h-[43px] bg-no-repeat bg-contain;
     background-image: url('/images/le-logo-lockonly-black-cropped.svg');
   }
 }
@@ -383,7 +398,7 @@
 @utility autoanchor {
   /* Autoanchor styles */
   &a {
-    @apply no-underline text-gray-400! text-[0.8em] ml-2;
+    @apply no-underline text-gray-400! text-[0.8em] ms-2;
   }
 }
 @utility boxed {
@@ -434,7 +449,7 @@
   @apply py-16 bg-le-blue text-white;
 }
 @utility post-hero__inner {
-  @apply narrow-container mx-auto text-left pb-0.5;
+  @apply narrow-container mx-auto text-start pb-0.5;
 }
 @utility post-hero__breadcrumb {
   @apply text-sm;
@@ -455,7 +470,7 @@
   @apply w-full mb-6;
 
   @media (width >= theme(--breakpoint-md)) {
-    @apply float-right max-w-[33.33333%] ml-[25px] flex-[0_0_33.33333%];
+    @apply float-right rtl:float-left max-w-[33.33333%] ms-[25px] flex-[0_0_33.33333%];
   }
 }
 @utility pic-quote-right__caption {
@@ -592,7 +607,7 @@
   }
 
   table th, table td {
-    @apply px-[15px] py-3 text-left border-b border-[#e8e8e8];
+    @apply px-[15px] py-3 text-start border-b border-[#e8e8e8];
   }
 
   /* Mobile Navigation */
@@ -630,7 +645,7 @@
   }
   dfn {
     font-weight: bold;
-    padding-right: .25em; /* Prevent italics text from hitting the ":" */
+    padding-inline-end: .25em; /* Prevent italics text from hitting the ":" */
   }
 
   /* Hide Netlify preview bar */
@@ -645,7 +660,7 @@
 }
 
 .hero-bg {
-  @apply absolute top-0 left-0 w-full h-full bg-cover opacity-85 z-0;
+  @apply absolute top-0 start-0 w-full h-full bg-cover opacity-85 z-0;
   background-image: url('/images/radiant_london_resized/radiant_london_5_480w.jpg');
   background-position: top left;
 }
@@ -707,7 +722,7 @@
 }
 
 .pull-quote-right {
-  @apply float-right md:ml-[25px] w-full md:max-w-[33.33333%] md:flex-[0_0_33.33333%];
+  @apply float-right rtl:float-left md:ms-[25px] w-full md:max-w-[33.33333%] md:flex-[0_0_33.33333%];
 }
 
 .pull-quote-right .quote-text-value {
@@ -722,5 +737,5 @@
 }
 
 .prose-content .pull-quote-right blockquote {
-  @apply mt-0 pt-0 border-0 pl-0;
+  @apply mt-0 pt-0 border-0 ps-0;
 }
