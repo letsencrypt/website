@@ -1,7 +1,7 @@
 ---
 title: Object Identifiers
 slug: oids
-lastmod: 2025-09-25
+lastmod: 2026-11-19
 show_lastmod: false
 ---
 
@@ -44,3 +44,5 @@ This page lists the OIDs used by Let's Encrypt, documents what each OID means, a
 | <code>1.3.6.1.4.1.44947.2.<b>26</b></code> | Let's Encrypt YR1          |
 | <code>1.3.6.1.4.1.44947.2.<b>27</b></code> | Let's Encrypt YR2          |
 | <code>1.3.6.1.4.1.44947.2.<b>28</b></code> | Let's Encrypt YR3          |
+| <code>1.3.6.1.4.1.44947.<b>3</b></code>    | Let's Encrypt staging MTC issuers |
+| <code>1.3.6.1.4.1.44947.<b>4</b></code>    | Reserved for Let's Encrypt internal tests |
