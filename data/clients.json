@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-11-04",
 	"categories": [
 		"Bash",
 		"C",
@@ -904,6 +904,16 @@
 			"challenges": {
 				"HTTP-01": "true",
 				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "acme-az-aca",
+			"url": "https://github.com/emilgruzalski/acme-az-aca",
+			"category": "Microsoft Azure",
+			"comments": "(Sidecar for Azure Container Apps, imports certificates into Azure Key Vault)",
+			"challenges": {
+				"HTTP-01": "true",
+				"DNS-01": "false"
 			}
 		}
 	]
