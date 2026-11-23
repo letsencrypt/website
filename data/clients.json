@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-11-07",
 	"categories": [
 		"Bash",
 		"C",
@@ -903,6 +903,15 @@
 			"category": "Server",
 			"challenges": {
 				"HTTP-01": "true",
+				"DNS-01": "true"
+			}
+		},
+		{
+			"name": "sslbrain",
+			"url": "https://sslbrain.com",
+			"comments": "On-premises appliance automating certificates on Windows and Linux servers (pull agents), network devices and cloud services (push).",
+			"category": "Server",
+			"challenges": {
 				"DNS-01": "true"
 			}
 		}
