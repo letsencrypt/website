@@ -1,5 +1,5 @@
 {
-	"lastmod": "2026-07-22",
+	"lastmod": "2026-10-18",
 	"categories": [
 		"Bash",
 		"C",
@@ -160,6 +160,10 @@
 		{
 			"name": "Pomerium",
 			"url": "https://www.pomerium.com/"
+		},
+		{
+			"name": "Sertican / Ücretsiz SSL",
+			"url": "https://ucretsizssl.tr/acme-entegrasyonu.php"
 		}
 	],
 	"list": [
