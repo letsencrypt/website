@@ -11,7 +11,9 @@
     {{/* Fallback if no English translation found? For now, assumes it exists */}}
   {{ end }}
 
-  {{ $heroParams := dict "title" $currentPage.Title }}
+  {{ $contentDirection := or $currentPage.Language.Direction "ltr" }}
+  {{ $contentLanguage := $currentPage.Language.LanguageCode }}
+  {{ $heroParams := dict "title" $currentPage.Title "contentDirection" $contentDirection "contentLanguage" $contentLanguage }}
 
   {{ if not $isUntranslated }}
     {{ $p := . }}
@@ -41,7 +43,7 @@
   {{ end }}
 
   {{ if not $currentPage.Lastmod.IsZero }}
-    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod.Format "January 2, 2006") "section" $currentPage.Section) }}
+    {{ $heroParams = merge $heroParams (dict "lastUpdated" ($currentPage.Lastmod | time.Format ":date_long") "section" $currentPage.Section) }}
   {{ end }}
 
   {{ if eq $currentPage.Params.imageHero true }}
@@ -53,7 +55,7 @@
   {{ if and .Params.english_is_canonical (ne .Language.Lang "en") }}
     <div class="narrow-container mx-auto">
       <div class="canonical-warning my-4 p-4 border border-orange-300 bg-orange-50 text-orange-700 rounded">
-        <i class="fas fa-exclamation-circle mr-2" aria-hidden="true"></i>
+        <i class="fas fa-exclamation-circle me-2" aria-hidden="true"></i>
         {{ i18n "english_is_canonical" | safeHTML }}
       </div>
     </div>
@@ -70,13 +72,15 @@
   {{ end }}
 
   {{ if ne $currentPage.Params.useContainer false }}
-    <div class="narrow-container mx-auto py-8 prose-content">
+    <div class="narrow-container mx-auto py-8 prose-content" dir="{{ $contentDirection }}" lang="{{ $contentLanguage }}">
       {{ $currentPage.Content }}
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
     </div>
   {{ else }}
+    {{ if $isUntranslated }}<div dir="{{ $contentDirection }}" lang="{{ $contentLanguage }}">{{ end }}
     {{ $currentPage.Content }}
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" $currentPage) }}
+    {{ if $isUntranslated }}</div>{{ end }}
   {{ end }}
 
   {{ if eq $currentPage.Params.display_support_us_footer true }}

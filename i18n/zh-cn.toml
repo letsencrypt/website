@@ -395,7 +395,16 @@ other = "为超过 ### 网站免费提供 TLS 证书的非营利证书颁发机�
 other = "为超过"
 
 [home_hero_certificate_count]
-other = "7.0 亿"
+other = "7.0"
+
+[abbreviation_million]
+other = "亿"
+
+[abbreviation_billion]
+other = ""
+
+[certificate_count_format]
+other = "[Number] [Abbreviation]"
 
 [home_hero_nonprofit_suffix]
 other = "网站免费提供 TLS 证书的非营利证书颁发机构"
