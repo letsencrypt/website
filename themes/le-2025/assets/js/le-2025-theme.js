@@ -308,8 +308,13 @@ const Menu = {
           mainNav.classList.remove('hidden');
           mobileMenuToggle.setAttribute('aria-expanded', 'false');
         } else if (isMobile && mainNav && mobileMenuToggle) {
-          // Only hide the nav when in true mobile mode (< 768px)
-          mainNav.classList.add('hidden');
+          // Only hide the nav when in true mobile mode (< 768px) and the menu
+          // is not intentionally open. On iOS Safari, scrolling fires a resize
+          // event (address bar hide/show changes innerHeight), which would
+          // otherwise collapse an open menu mid-scroll.
+          if (mobileMenuToggle.getAttribute('aria-expanded') !== 'true') {
+            mainNav.classList.add('hidden');
+          }
         } else {
           // For tablet sizes (768px-1023px), keep the nav visible
           mainNav.classList.remove('hidden');
