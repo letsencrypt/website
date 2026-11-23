@@ -905,6 +905,17 @@
 				"HTTP-01": "true",
 				"DNS-01": "true"
 			}
+		},
+		{
+			"name": "acme-agent",
+			"url": "https://github.com/tmhal5l13/acme-agent",
+			"category": "Go",
+			"comments": "Centralized renewal hub for organizations not running Kubernetes: DNS provider credentials stay on one hub, each spoke generates its own key and drives its own ACME order via DNS-01, relayed through the hub.",
+			"challenges": {
+				"HTTP-01": "false",
+				"DNS-01": "true",
+				"TLS-ALPN-01": "false"
+			}
 		}
 	]
 }
