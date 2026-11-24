@@ -670,12 +670,6 @@
 			"last_commit": 1756255143
 		},
 		{
-			"name": "Certera",
-			"url": "https://certera.io",
-			"comments": "(Crossplatform PKI to centrally manage keys and certificates)",
-			"category": "Server"
-		},
-		{
 			"name": "TekCERT",
 			"url": "https://www.kaplansoft.com/tekcert/",
 			"category": "Windows / IIS",
